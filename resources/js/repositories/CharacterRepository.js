@@ -2,6 +2,9 @@ import Character from "../models/Character";
 import {v4 as uuidv4} from 'uuid';
 import GameData from "../services/GameData";
 import SheetRepository from "./SheetRepository";
+import {Game} from "../models/Game";
+import PersonalQuest from "../models/PersonalQuest";
+import PersonalQuestValidator from "../validators/PersonalQuestValidator";
 
 export default class CharacterRepository {
 
@@ -25,8 +28,15 @@ export default class CharacterRepository {
             characters.forget("BS");
         }
 
-        // Hide characters from inactive games
-        const games = _.uniq([app.game, ...app.enabledGames]);
+        // Hide characters from inactive games. Only classes of the campaign's Gloomhaven edition are playable, in every game.
+        // Turning off gh hides both editions.
+        const gloomhavenGame = this.sheetRepository.gloomhavenGame();
+        const gloomhavenEnabled = [Game.gh, Game.gh2].includes(app.game) || app.enabledGames.includes(Game.gh);
+        const games = _.without(
+            _.uniq([app.game, ...app.enabledGames, ...(gloomhavenEnabled ? [gloomhavenGame] : [])]),
+            gloomhavenGame === Game.gh2 ? Game.gh : Game.gh2,
+            ...(gloomhavenEnabled ? [] : [Game.gh2])
+        );
         characters = characters.values().whereIn('game', games);
 
         return characters.keyBy('id');
@@ -54,6 +64,7 @@ export default class CharacterRepository {
         }
     }
 
+    // Pro campaigns archive a retired or abandoned character, it can be restored or removed later.
     archiveCharacter(sheet, character) {
         if (character.uuid in sheet.characters && !(character.uuid in sheet.archivedCharacters)) {
             sheet.archivedCharacters[character.uuid] = {...character}
@@ -70,11 +81,44 @@ export default class CharacterRepository {
         }
     }
 
+    // Retiring adds the class's retirement events and keeps its quest's scenarios.
+    // Pro campaigns archive the character, local campaigns remove it.
+    retireCharacter(sheet, character, archive) {
+        this.applyRetirement(sheet, character);
+        this.archiveOrRemove(sheet, character, archive);
+    }
+
+    // Abandoning adds no events and locks the scenarios its personal quest unlocked again; completed ones stay (FAQ 3.2).
+    abandonCharacter(sheet, character, archive) {
+        if (character.quest instanceof PersonalQuest) {
+            new PersonalQuestValidator().lockScenarios(character.quest, sheet);
+            character.quest.resetProgress();
+            character.store();
+        }
+        this.archiveOrRemove(sheet, character, archive);
+    }
+
     removeCharacter(sheet, character) {
         delete sheet.characters[character.uuid];
         delete sheet.archivedCharacters[character.uuid];
         character.delete();
         sheet.store();
+    }
+
+    archiveOrRemove(sheet, character, archive) {
+        if (archive) {
+            this.archiveCharacter(sheet, character);
+        } else {
+            this.removeCharacter(sheet, character);
+        }
+    }
+
+    applyRetirement(sheet, character) {
+        sheet.addClassEvents(character.id, 'retire');
+        // GH2e campaign sheet unlock: the first retirement reads section 68.4.
+        if (sheet.game === Game.gh2) {
+            sheet.unlocks[this.gameData.sectionsGh2().firstRetirementUnlock] = true;
+        }
     }
 
     get sheetRepository() {

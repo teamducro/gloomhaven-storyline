@@ -1260,14 +1260,16 @@ export default {
         "name": "Zakopane kanały",
         "rewards": [
             "Otrzymujecie wspólnie 3 {LUMBER}",
-            "Otrzymujecie wspólnie 3 {METAL}"
+            "Otrzymujecie wspólnie 3 {METAL}",
+            "Gain “Converging Lenses” (Item 67) blueprint"
         ]
     },
     "fh-37": {
         "name": "Martwa mila",
         "rewards": [
             "Otrzymujecie wspólnie 3 {LUMBER}",
-            "Otrzymujecie wspólnie 3 {METAL}"
+            "Otrzymujecie wspólnie 3 {METAL}",
+            "Gain “Converging Lenses” (Item 67) blueprint"
         ]
     },
     "fh-38": {
@@ -1453,6 +1455,7 @@ export default {
             "+2 do morale",
             "+1 do dobrobytu",
             "Po 30 pkt. doświadczenia dla każdego",
+            "Gain “Armor of Empathy” (Item 224)",
             "Odblokuj pudełko postaci: {CR} lub {DT}",
             "Usuńcie wszystkie wydarzenia {LURKERS} z wszystkich talii wydarzeń posterunków",
             "Dodajcie wydarzenie SO-48 do letniej talii posterunku i wydarzenie B-17 do talii łodzi",
@@ -2775,6 +2778,837 @@ export default {
         "name": "Major Annoyance",
         "rewards": [
             "“No Nonsense Boots” (Item HA)"
+        ]
+    },
+    "gh2-0": {
+        "name": "Training Course",
+        "rewards": [
+            "2 gold each"
+        ]
+    },
+    "gh2-1": {
+        "name": "Bandit Camp",
+        "rewards": [
+            "10 gold each",
+            "+1 Merchant's Guild reputation",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-2": {
+        "name": "Zrujnowana krypta",
+        "rewards": [
+            "10 experience each",
+            "+1 Demons reputation",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-3": {
+        "name": "Lodowa Pieczara",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-4": {
+        "name": "Krypta Potępionych",
+        "rewards": [
+            "10 experience each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-5": {
+        "name": "Zapomniana krypta",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-6": {
+        "name": "Murszejąca krypta",
+        "rewards": [
+            "5 gold each",
+            "10 experience each",
+            "+1 Demons reputation",
+            "Add city event C-51 to the deck"
+        ]
+    },
+    "gh2-7": {
+        "name": "Czarny Kurhan",
+        "rewards": []
+    },
+    "gh2-8": {
+        "name": "Kryjówka w Kurhanie",
+        "rewards": [
+            "15 gold each",
+            "+2 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-9": {
+        "name": "Niebezpieczna szczelina",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation",
+            "Add road event R-30 to the deck"
+        ]
+    },
+    "gh2-10": {
+        "name": "Górska przełęcz",
+        "rewards": []
+    },
+    "gh2-11": {
+        "name": "Ritual Chamber",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-12": {
+        "name": "Obozowisko Inoksów",
+        "rewards": [
+            "20 gold each",
+            "+1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-13": {
+        "name": "Lodowa grań",
+        "rewards": [
+            [],
+            [
+                "30 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-39 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            []
+        ]
+    },
+    "gh2-14": {
+        "name": "Komnata Echa",
+        "rewards": []
+    },
+    "gh2-15": {
+        "name": "Sfera Mocy Żywiołów",
+        "rewards": [
+            "20 experience each",
+            "2 ✔ each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-16": {
+        "name": "Kopalnia Diamentów",
+        "rewards": [
+            "20 gold each",
+            "+1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-17": {
+        "name": "Szczelina Demonów",
+        "rewards": [
+            "+1 prosperity",
+            "-1 Demons reputation",
+            "+2 Military reputation"
+        ]
+    },
+    "gh2-18": {
+        "name": "Dochodzenie",
+        "rewards": [
+            "15 gold each",
+            "+1 prosperity",
+            "-1 Merchant's Guild reputation",
+            "+2 Military reputation"
+        ]
+    },
+    "gh2-19": {
+        "name": "Military Outpost",
+        "rewards": [
+            "25 experience each",
+            "+2 Demons reputation",
+            "-1 Military reputation"
+        ]
+    },
+    "gh2-20": {
+        "name": "Magazyn w Gloomhaven",
+        "rewards": [
+            "25 experience each",
+            "+2 Demons reputation",
+            "-1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-21": {
+        "name": "The Ghost Fortress",
+        "rewards": [
+            "15 gold each",
+            "+2 Merchant's Guild reputation",
+            "-1 Military reputation"
+        ]
+    },
+    "gh2-22": {
+        "name": "Doomcannon Demolition",
+        "rewards": [
+            "15 gold each",
+            "-1 Demons reputation",
+            "+2 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-24": {
+        "name": "Rynek Gloomhaven B",
+        "rewards": []
+    },
+    "gh2-26": {
+        "name": "Blanki Gloomhaven B",
+        "rewards": []
+    },
+    "gh2-27": {
+        "name": "Piekielny Tron",
+        "rewards": [
+            [
+                "25 gold each",
+                "-10 Demons reputation",
+                "+2 Merchant's Guild reputation",
+                "-10 Military reputation",
+                "Add city event C-36 to the deck",
+                "Add city event C-54 to the deck",
+                "Add city event C-55 to the deck",
+                "Add road event R-37 to the deck",
+                "Add road event R-38 to the deck",
+                "Open envelope “Merchant's Guild”"
+            ],
+            [
+                "+1 prosperity",
+                "-10 Demons reputation",
+                "-10 Merchant's Guild reputation",
+                "+2 Military reputation",
+                "Add city event C-36 to the deck",
+                "Add city event C-53 to the deck",
+                "Add city event C-56 to the deck",
+                "Add road event R-38 to the deck",
+                "Open envelope “Military”"
+            ]
+        ]
+    },
+    "gh2-28": {
+        "name": "Świątynia Proroctw",
+        "rewards": [
+            [],
+            [],
+            [
+                "Unlock a random side scenario"
+            ]
+        ]
+    },
+    "gh2-29": {
+        "name": "Spalony Szczyt",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-30": {
+        "name": "Kaplica Głębin",
+        "rewards": []
+    },
+    "gh2-31": {
+        "name": "Próchniejący Las",
+        "rewards": [
+            [],
+            []
+        ]
+    },
+    "gh2-32": {
+        "name": "Zbrojownia Sawasów",
+        "rewards": [
+            [
+                "15 gold each"
+            ],
+            [
+                "15 gold each"
+            ],
+            [
+                "15 gold each"
+            ],
+            [
+                "45 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-38 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            [
+                "45 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-38 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            [
+                "15 gold each"
+            ]
+        ]
+    },
+    "gh2-33": {
+        "name": "Starożytny System Obronny",
+        "rewards": []
+    },
+    "gh2-34": {
+        "name": "Prastary Grobowiec",
+        "rewards": [
+            [
+                "30 gold each"
+            ],
+            [
+                "30 experience each",
+                "2 ✔ each"
+            ]
+        ]
+    },
+    "gh2-35": {
+        "name": "Kraina Głosu",
+        "rewards": [
+            "30 experience each"
+        ]
+    },
+    "gh2-36": {
+        "name": "Opuszczone kanały",
+        "rewards": []
+    },
+    "gh2-37": {
+        "name": "Podziemne ruiny",
+        "rewards": []
+    },
+    "gh2-38": {
+        "name": "Gniazdo Drakona",
+        "rewards": []
+    },
+    "gh2-39": {
+        "name": "Zarośnięta grota",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-40": {
+        "name": "Wetlands Ambush",
+        "rewards": []
+    },
+    "gh2-41": {
+        "name": "Starożytny zbiornik",
+        "rewards": [
+            "+2 prosperity"
+        ]
+    },
+    "gh2-42": {
+        "name": "Secluded Valley",
+        "rewards": []
+    },
+    "gh2-43": {
+        "name": "Chasing Secrets",
+        "rewards": [
+            [
+                "+1 prosperity",
+                "Unlock a random side scenario"
+            ],
+            [
+                "+1 prosperity"
+            ],
+            [
+                "+1 prosperity"
+            ]
+        ]
+    },
+    "gh2-44": {
+        "name": "Temple of the Elements",
+        "rewards": [
+            "100 gold each",
+            "+1 prosperity",
+            "This money must immediately be spent on enhancements"
+        ]
+    },
+    "gh2-45": {
+        "name": "Sfera Nocy",
+        "rewards": [
+            "+1 prosperity",
+            "Open envelope “Candle”"
+        ]
+    },
+    "gh2-46": {
+        "name": "Rów Zagłady",
+        "rewards": []
+    },
+    "gh2-47": {
+        "name": "Obóz Niewolników",
+        "rewards": []
+    },
+    "gh2-48": {
+        "name": "Zdradliwa Przepaść",
+        "rewards": []
+    },
+    "gh2-49": {
+        "name": "Plemienne Natarcie",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-50": {
+        "name": "Koszmarny Wierch",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-51": {
+        "name": "Legowisko Niewidzącego Oka",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-52": {
+        "name": "Głusza Cieni",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-53": {
+        "name": "Kaplica Siły",
+        "rewards": [
+            "30 experience each",
+            "2 ✔ each"
+        ]
+    },
+    "gh2-54": {
+        "name": "Pustka",
+        "rewards": []
+    },
+    "gh2-55": {
+        "name": "The Last Stand",
+        "rewards": []
+    },
+    "gh2-56": {
+        "name": "The Gloom",
+        "rewards": [
+            "50 experience each",
+            "+5 prosperity"
+        ]
+    },
+    "gh2-57": {
+        "name": "Podziemia Krypty",
+        "rewards": [
+            "Gain “Scepter of Xorn” (Item 147)"
+        ]
+    },
+    "gh2-58": {
+        "name": "Lodowy Pałac",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each",
+            "Gain “Scepter of Xorn” (Item 147)",
+            "Add road event R-39 to the deck",
+            "Add city event C-66 to the deck"
+        ]
+    },
+    "gh2-59": {
+        "name": "Zamglony gąszcz",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-60": {
+        "name": "Bandit's Wood",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity",
+            "Personal quest 08 complete"
+        ]
+    },
+    "gh2-61": {
+        "name": "Dangerous Grove",
+        "rewards": []
+    },
+    "gh2-62": {
+        "name": "Laboratorium alchemiczne",
+        "rewards": [
+            "+1 prosperity",
+            "Personal quest 09 complete"
+        ]
+    },
+    "gh2-63": {
+        "name": "Znikająca latarnia",
+        "rewards": [
+            "Personal quest 04 complete"
+        ]
+    },
+    "gh2-64": {
+        "name": "Roots of Chaos",
+        "rewards": [
+            "Personal quest 10 complete"
+        ]
+    },
+    "gh2-65": {
+        "name": "Hero's Mausoleum",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each"
+        ]
+    },
+    "gh2-66": {
+        "name": "A Friend in Need",
+        "rewards": [
+            "15 gold each",
+            "Personal quest 11 complete"
+        ]
+    },
+    "gh2-67": {
+        "name": "Świątynia Zaćmienia",
+        "rewards": [
+            "15 gold each",
+            "10 experience each",
+            "Gain “Helix Ring” (Item 136)"
+        ]
+    },
+    "gh2-68": {
+        "name": "Zatopiony statek",
+        "rewards": [
+            "10 gold each"
+        ]
+    },
+    "gh2-69": {
+        "name": "Skażona Zatoczka",
+        "rewards": [
+            "15 experience each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-70": {
+        "name": "Underwater Lagoon",
+        "rewards": [
+            "10 gold each",
+            "10 experience each"
+        ]
+    },
+    "gh2-71": {
+        "name": "Clockwork Factory",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each"
+        ]
+    },
+    "gh2-72": {
+        "name": "Studnia Nieszczęśników",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-73": {
+        "name": "Wyspa Łańcuchów",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-74": {
+        "name": "Wichrowe Wyżyny",
+        "rewards": [
+            "+1 prosperity",
+            "Gain “Major Power Potion” (Item 53)"
+        ]
+    },
+    "gh2-75": {
+        "name": "Góra Lawin",
+        "rewards": [
+            "Gain “Ruby Talisman” (Item 152)"
+        ]
+    },
+    "gh2-76": {
+        "name": "Zaszlamiony sad",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-77": {
+        "name": "Gniazdo Dreszczowców",
+        "rewards": []
+    },
+    "gh2-78": {
+        "name": "Krypta Tajemnic",
+        "rewards": [
+            "+3 prosperity"
+        ]
+    },
+    "gh2-79": {
+        "name": "Lurker Assault",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-80": {
+        "name": "Zaginiona Świątynia",
+        "rewards": [
+            "100 gold each",
+            "+2 prosperity",
+            "Gain “Heart of the Betrayer” (Item 133)",
+            "This money must immediately be spent on enhancements"
+        ]
+    },
+    "gh2-81": {
+        "name": "Zarośnięty cmentarz",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-82": {
+        "name": "Kryjówka Syndykatu",
+        "rewards": [
+            "+1 prosperity",
+            "Add city event C-72 to the deck"
+        ]
+    },
+    "gh2-83": {
+        "name": "Zaginiona wyspa",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-84": {
+        "name": "Dzika Bijatyka",
+        "rewards": [
+            "15 experience each",
+            "1 ✔ each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-85": {
+        "name": "Crossroads Station",
+        "rewards": [
+            "1 ✔ each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-86": {
+        "name": "Czeluść magmy",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-87": {
+        "name": "Kopalnia Siarki",
+        "rewards": [
+            "Gain “Ancient Drill” (Item 109)"
+        ]
+    },
+    "gh2-88": {
+        "name": "Tajemna Biblioteka",
+        "rewards": [
+            "Add city event C-37 to the deck"
+        ]
+    },
+    "gh2-89": {
+        "name": "Community Service",
+        "rewards": [
+            "Gain 2× “Major Healing Potion” (Item 37)"
+        ]
+    },
+    "gh2-90": {
+        "name": "Płonąca Góra",
+        "rewards": []
+    },
+    "gh2-91": {
+        "name": "Wewnętrzne Cienie",
+        "rewards": []
+    },
+    "gh2-92": {
+        "name": "Chronal Anchor",
+        "rewards": [
+            "10 experience each",
+            "Gain “Temporal Matrix” (Item 144)"
+        ]
+    },
+    "gh2-93": {
+        "name": "Spustoszona Wioska",
+        "rewards": [
+            "1 ✔ each"
+        ]
+    },
+    "gh2-94": {
+        "name": "A Watery Rescue",
+        "rewards": [
+            "10 experience each",
+            "Gain “Otherworldly Scepter” (Item 139)"
+        ]
+    },
+    "gh2-95": {
+        "name": "Cargo Ship",
+        "rewards": []
+    },
+    "gh2-96": {
+        "name": "Bójka w Zaułku",
+        "rewards": [
+            "10 gold each"
+        ]
+    },
+    "gh2-97": {
+        "name": "Vermling Camp",
+        "rewards": [
+            "5 experience each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-98": {
+        "name": "Metamorphic Fault",
+        "rewards": [
+            "10 experience each",
+            "Gain “Skull of Hatred” (Item 111)"
+        ]
+    },
+    "gh2-99": {
+        "name": "Sintering Forge",
+        "rewards": [
+            "Gain “Dawnblade” (Item 117)",
+            "Add road event R-33 to the deck"
+        ]
+    },
+    "gh2-100": {
+        "name": "Silence Falls",
+        "rewards": [
+            "+1 prosperity",
+            "Add city event C-60 to the deck"
+        ]
+    },
+    "gh2-101": {
+        "name": "Gloomhaven Square A (Demon Allies)",
+        "rewards": [
+            "30 experience each",
+            "+2 Demons reputation",
+            "-10 Merchant's Guild reputation",
+            "-10 Military reputation",
+            "Add city event C-36 to the deck",
+            "Add city event C-55 to the deck",
+            "Add city event C-56 to the deck",
+            "Add road event R-36 to the deck",
+            "Open envelope “Demons”"
+        ]
+    },
+    "gh2-102": {
+        "name": "Gloomhaven Square A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-103": {
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
+        "rewards": []
+    },
+    "gh2-104": {
+        "name": "Gloomhaven Battlements A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-201": {
+        "name": "A Night Out",
+        "rewards": [
+            "Gain “Hooked Shield” (Item 153)"
+        ]
+    },
+    "gh2-202": {
+        "name": "Pechowy najazd",
+        "rewards": [
+            "Gain “Focusing Ray” (Item 154)"
+        ]
+    },
+    "gh2-203": {
+        "name": "Corrupted Apothecary",
+        "rewards": [
+            "Gain “Etheric Elixir” (Item 155)"
+        ]
+    },
+    "gh2-204": {
+        "name": "Material Concerns",
+        "rewards": [
+            "Gain “Silent Stiletto” (Item 156)"
+        ]
+    },
+    "gh2-205": {
+        "name": "Kamienna obrona",
+        "rewards": [
+            "Gain “Stone Charm” (Item 157)"
+        ]
+    },
+    "gh2-206": {
+        "name": "Vermling Liberation",
+        "rewards": [
+            "Gain “Psychic Knife” (Item 158)"
+        ]
+    },
+    "gh2-207": {
+        "name": "Ochrona karawany",
+        "rewards": [
+            "Gain “Insignia of the Divine” (Item 159)"
+        ]
+    },
+    "gh2-208": {
+        "name": "Opłata magazynowa",
+        "rewards": [
+            "Gain “Utility Belt” (Item 160)"
+        ]
+    },
+    "gh2-209": {
+        "name": "Strefa dzikich bestii",
+        "rewards": [
+            "Gain “Phasing Idol” (Item 161)"
+        ]
+    },
+    "gh2-210": {
+        "name": "Żniwa nocy",
+        "rewards": [
+            "Gain “The Night's Caress” (Item 162)"
+        ]
+    },
+    "gh2-211": {
+        "name": "Krypta zarazy",
+        "rewards": [
+            "Gain “Pendant of the Plague” (Item 163)"
+        ]
+    },
+    "gh2-212": {
+        "name": "Nienaturalna zniewaga",
+        "rewards": [
+            "Gain “Mask of Death” (Item 164)"
+        ]
+    },
+    "gh2-213": {
+        "name": "Bitwa bardów",
+        "rewards": [
+            "Gain “Master's Lute” (Item 165)"
+        ]
+    },
+    "gh2-214": {
+        "name": "Spaczone łowy",
+        "rewards": [
+            "Gain “Cloak of the Hunter” (Item 166)"
+        ]
+    },
+    "gh2-215": {
+        "name": "Pokłosie",
+        "rewards": [
+            "Gain “Doctor's Coat” (Item 167)"
+        ]
+    },
+    "gh2-216": {
+        "name": "Tajemnice żywiołów",
+        "rewards": [
+            "Gain “Elemental Vest” (Item 168)"
+        ]
+    },
+    "gh2-217": {
+        "name": "Niedźwiedź w klatce",
+        "rewards": [
+            "Gain “Staff of Command” (Item 169)"
+        ]
+    },
+    "gh2-218": {
+        "name": "The Sands of Time",
+        "rewards": [
+            "Gain “Crawling Carapace” (Item 170)"
         ]
     }
 }

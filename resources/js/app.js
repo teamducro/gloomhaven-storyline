@@ -37,6 +37,7 @@ import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
 import {Game} from "./models/Game";
 import GameData from "./services/GameData";
+import SheetRepository from "./repositories/SheetRepository";
 import enableGame from "./services/app/enableGame";
 import registerServiceWorker from "./services/app/RegisterServiceWorker";
 import routes from './routes';
@@ -245,8 +246,16 @@ const vueApp = createApp({
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
             this.game = this.storedGame();
+            const gloomhavenGame = (new SheetRepository).gloomhavenGame();
+            if ([Game.gh, Game.gh2].includes(this.game)) {
+                this.game = gloomhavenGame;
+            }
             if (!this.enabledGames.includes(this.game)) {
                 this.enabledGames = enableGame(this.game);
+            }
+            // gh2 is played in the gh slot, so it's enabled along with gh
+            if (this.enabledGames.includes(Game.gh) && !this.enabledGames.includes(gloomhavenGame)) {
+                this.enabledGames = enableGame(gloomhavenGame);
             }
             this.stories = this.storyRepository.getStories();
             if (Helpers.loggedIn()) {

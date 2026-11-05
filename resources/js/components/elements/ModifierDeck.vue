@@ -7,6 +7,7 @@
 <script>
 
 import {Collection} from "collect.js";
+import ModifierCard from "../../models/ModifierCard";
 
 export default {
     props: {
@@ -28,6 +29,9 @@ export default {
             // Add the default cards to the deck
             let deck = {...this.defaultDeck};
 
+            // Perk cards that have no image (gh2) are shown as text, see ModifierCard.label.
+            const textCards = {};
+
             // Add/Remove the perk cards to the deck
             for (const [index, perkDescription] of this.perkDescriptions.entries()) {
                 this.perks[index].forEach((checked) => {
@@ -38,6 +42,10 @@ export default {
 
                     // If the perk is checked, apply the modifiers
                     perkDescription.cards?.forEach((card, index) => {
+                        if (card.label) {
+                            textCards[card.code] = new ModifierCard({code: card.code, path: card.path, label: card.label});
+                        }
+
                         // Add cards to the deck
                         if (perkDescription.type === 'add') {
                             this.addCard(deck, card);
@@ -48,7 +56,8 @@ export default {
                         }
                         // Replace cards in the deck
                         else if (perkDescription.type === 'replace') {
-                            if (index === 0) {
+                            // The first `replaceCount` cards (default 1) are removed.
+                            if (index < (perkDescription.replaceCount || 1)) {
                                 this.removeCard(deck, card);
                             } else {
                                 this.addCard(deck, card);
@@ -62,7 +71,7 @@ export default {
 
             // Convert the strings to cards so the modal can show the cards as images
             for (const [code, count] of Object.entries(deck)) {
-                const card = this.availableCards.get(code);
+                const card = this.availableCards.get(code) || textCards[code];
                 if (!card) {
                     console.error('Card not found: ' + code);
                     continue;

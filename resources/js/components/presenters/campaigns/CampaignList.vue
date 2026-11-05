@@ -40,8 +40,8 @@
                                 {{ isSelected(story) ? 'radio_button_checked' : 'radio_button_unchecked' }}
                             </span>
                             <h3 class="text-white text-sm font-medium truncate">{{ story.name }}</h3>
-                            <span class="ml-auto material-icons">
-                                {{ story.has_expired ? 'cloud_off' : 'cloud_queue' }}
+                            <span class="ml-auto material-icons" :class="{outlined: !story.has_expired}">
+                                {{ story.has_expired ? 'cloud_off' : 'cloud' }}
                             </span>
                         </div>
                         <div v-if="showPurchaseButton" class="flex items-center">

@@ -43,11 +43,13 @@ https://gloomhaven-storyline.com
 
   Using the filter feature, you can find just the scenario you need to complete your personal quest.
 - **Expansions**\
-  The tracker has support for Forgotten Circles and Jaws of the Lion
+  The tracker supports Gloomhaven with Forgotten Circles, Gloomhaven 2nd Edition, Frosthaven, Jaws of the
+  Lion, Crimson Scales and the Mercenary Pack.
 - **Support for all modern devices**\
   Gloomhaven Storyline supports all modern devices and browsers. Easy to use on your smartphone.
 - **Multi language**\
-  Gloomhaven Storyline is available in English, French, Italian, German and Spanish!
+  Gloomhaven Storyline is available in English, French, Italian, German, Spanish, Polish, Russian, Hungarian and
+  Portuguese!
 
   Please contact me if you like to contribute with translations.
 - **Virtual Gloomhaven Board**\
@@ -71,17 +73,24 @@ Thanks to these creators for their content.
 
 ## How to build the tracker locally?
 
-*Setup local webserver using Laravel Valet* (feel free to use something else like mamp for a local webserver) 
+Install [node](https://nodejs.org/) version 22 (Vite needs at least 20.19), the installation will include `npm`.
 
-- Fork the project and clone it 
+*Quick start (no Valet)*
+
+- Fork the project and clone it
+- run `npm install`
+- run `cp .github/.env .env` (the CI config, pointing at `http://localhost:8080`)
+- run `npm run watch` to build into `public/` and rebuild on every change
+- in a second terminal, run `npx http-server public -p 8080`
+
+Visit the tracker on `http://localhost:8080/tracker`.
+
+*Setup with Laravel Valet* (feel free to use something else like mamp for a local webserver)
+
 - Install [Laravel Valet](https://laravel.com/docs/master/valet)
 - Navigate to project directory
 - run `valet link`
 - run `valet secure`
-
-*Setup project and install dependencies*
-
-- Install [node](https://nodejs.org/) version 22 (Vite needs at least 20.19), the installation will include `npm`.
 - copy `.env.example` to `.env`
 - set the `MIX_WEB_URL` to your local website, for example: `MIX_WEB_URL=https://gloomhaven-storyline.test`
 - set `MIX_APP_URL` to the same domain and append `/tracker`, for example: `MIX_APP_URL=https://gloomhaven-storyline.test/tracker`
@@ -90,21 +99,37 @@ Thanks to these creators for their content.
 
 If everything is working correctly you can visit the tracker locally on: `https://gloomhaven-storyline.test/tracker`
 
+*Setup with Lerd*
+
+`.lerd.yaml` serves `public/` through nginx (`Containerfile.lerd`). `nginx.lerd.conf` has the project path hardcoded
+(`root /Users/daniel/Documents/Projects/gloomhaven-storyline/public;`); change it to your own checkout. `.lerd.yaml`
+also still pins `node_version: "16"`, which is too old for Vite.
+
 *Development*
 
-The project is a Vue 3 app built with [Vite](https://vite.dev). There is no dev server: Vite builds into `public`, which Valet serves.
+The project is a Vue 3 app built with [Vite](https://vite.dev). There is no dev server: Vite builds into `public`, which Valet or http-server serves.
 
 - `npm run watch` rebuilds the tracker and the website on every change; refresh the browser to see it.
 - `npm run dev` builds once (unminified, with source maps).
 - `npm run production` builds for production (minified, hashed file names), `npm run prod-fh` builds the Frosthaven site.
+- Images load from the CDN; set `MIX_CDN_URL=` (empty) to load them from `public/img`.
 - The service worker caches the app; if a change doesn't show up, use a hard reload or unregister it in the browser's dev tools.
+
+*Translations*
+
+Translations live in `resources/js/lang/{locale}/`, one file per topic; `en.js` only combines them.
+
+- Add new keys to the English topic file, e.g. `resources/js/lang/en/scenarios.js`.
+- run `npm run lang` to copy missing keys (in English) to the other locales, then translate them there.
 
 *Tests*
 
-End-to-end tests use [Cypress](https://www.cypress.io) against `https://gloomhaven-storyline.test`, so build first.
+End-to-end tests use [Cypress](https://www.cypress.io).
 
-- `npm test` opens the Cypress runner.
-- `npx cypress run --spec cypress/e2e/tracker/storyline.cy.js` runs one spec headless.
+- `npm test` opens the Cypress runner against `https://gloomhaven-storyline.test` (Valet), so build first.
+- Headless against localhost, like CI: with `http-server` running on port 8080 (see quick start), run
+  `npx cypress run --config baseUrl=http://localhost:8080 --spec cypress/e2e/tracker/storyline.cy.js`.
+- If Cypress complains that its binary is missing, run `npx cypress install`.
 
 After changes are made, open a Pull Request into the develop branch for review. 
 

@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Reputacja drużyny na poziomie 10 lub wyższym",
     "Have a party reputation of 20": "Reputacja drużyny na poziomie 20 lub wyższym",
     "Retire a character": "Postać przechodzi w stan spoczynku",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Zdolności",
     "Achievement": "Osiągnięcie | Osiągnięcia",
     "Achievements": "Osiągnięcia",
@@ -102,6 +103,7 @@ export default {
     "Required": "Wymagany",
     "Requirements": "Wymagania",
     "Retire": "Stan spoczynku",
+    "Abandon": "Abandon",
     "Retired": "Emerytura",
     "Retirement counter": "Licznik emerytur",
     "Reward": "Nagroda | Nagrody",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "Czy na pewno chcesz ustawić tę postać w stan spoczynku? Nie jest usuwana na stałe.",
-        "upgrade": "Czy na pewno chcesz trwale usunąć tę postać? Użytkownicy Pro mogą ustawić postać w stan spoczynku bez usuwania jej na stałe."
+        "upgrade": "Czy na pewno chcesz trwale usunąć tę postać? Użytkownicy Pro mogą ustawić postać w stan spoczynku bez usuwania jej na stałe.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Czy na pewno chcesz trwale usunąć tę postać?"
@@ -298,7 +304,7 @@ export default {
     },
     "games-enabled": {
         "title": "Włączone gry",
-        "text": "Aby ukryć gry i ich postacie, włącz tylko te, które posiadasz."
+        "text": "Aby ukryć gry i ich postacie, włącz tylko te, które posiadasz. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Proszę rozważyć zakup licencji",
     "Danger zone!": "Obszar niebezpieczny!",
@@ -345,6 +351,7 @@ export default {
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven 2nd Edition",
     "Availability": "Dostępność",
     "Sticker": "Naklejka",
     "State": "Stan",
@@ -508,5 +515,16 @@ export default {
     "Spirits": "Spirits",
     "Timed": "Timed",
     "Void": "Void Energy",
-    "Voidsight": "Voidsight"
+    "Voidsight": "Voidsight",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }

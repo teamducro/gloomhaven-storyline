@@ -31,6 +31,87 @@ describe('Character', () => {
         cy.get('li.add-character').contains('Cragheart').contains('Cragheart').parent().should('have.class', 'grayscale');
     });
 
+    it('It can choose a retired character\'s class again', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+
+        // A cloud campaign archives retired characters instead of removing them.
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+
+        utilities.openCharacter();
+        cy.get('button').contains('Retire').click();
+        cy.get('.mdc-dialog.mdc-dialog--open button').contains('Retire').click();
+
+        cy.get('.items-to-add-dropdown').click();
+        cy.get('li.add-character').contains('Cragheart').parent().should('not.have.class', 'grayscale');
+        cy.get('li.add-character').contains('Cragheart').click();
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData.sheet;
+            expect(Object.values(sheet.characters)).to.deep.eq(['CH']);
+            expect(Object.values(sheet.archivedCharacters)).to.deep.eq(['CH']);
+            // The first Cragheart retirement adds City and Road event 46, once
+            expect(sheet.city).to.have.property('46', true);
+            expect(sheet.road).to.have.property('46', true);
+            expect(sheet.classEventsAdded).to.deep.eq({CH: ['retire']});
+        });
+    });
+
+    it('It archives an abandoned character in a cloud campaign', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+
+        utilities.openCharacter();
+        cy.get('button').contains('Abandon').click();
+        cy.get('.mdc-dialog--open').contains('It\'s archived, so you can restore or remove it later.');
+        cy.get('#abandon-character').click();
+
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData.sheet;
+            expect(sheet.characters).to.deep.eq({});
+            expect(Object.values(sheet.archivedCharacters)).to.deep.eq(['CH']);
+            // Abandoning adds no class events
+            expect(sheet).not.to.have.property('classEventsAdded');
+            expect(sheet.city['46']).not.to.eq(true);
+        });
+        cy.get('button').contains('Restore').should('exist');
+    });
+
+    it('It adds the class events when a class is unlocked', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+        cy.get('#character-SK').click();
+
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData.sheet;
+            expect(sheet.city).to.have.property('31', true);
+            expect(sheet.road).to.have.property('31', true);
+        });
+    });
+
+    it('It adds the class events of a chosen Crimson Scales starting class', () => {
+        utilities.enableGame('cs');
+        utilities.switchGame('cs');
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Bombard');
+
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData['sheet-cs'];
+            expect(sheet.city).to.have.property('39', true);
+            expect(sheet.road).to.have.property('39', true);
+        });
+    });
+
     it('It opens the character mat and flips it', () => {
         cy.visit('/tracker/#/characters');
 
@@ -393,4 +474,24 @@ describe('Character', () => {
         });
     });
 
+    it('It keeps a personal quest scenario unlocked when its goal is unchecked, and FH 65 locked until scenario 1', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter('Blinkblade');
+        utilities.scrollTo('60%');
+        cy.get(`input[name="personal-quests"]`).type('Aesther');
+        cy.get('li').contains('Aesther Outpost').click();
+
+        cy.get('#pq-0-0').click();
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 65).state).eq('required');
+        });
+
+        cy.get('#pq-0-0').click();
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 65).state).eq('required');
+        });
+    });
 });

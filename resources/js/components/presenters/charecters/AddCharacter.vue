@@ -15,7 +15,7 @@
                 <h2>{{ $t('Add Character') }}</h2>
                 <ul class="flex flex-col py-4 px-3">
                     <template v-for="(unlocked, id) in sheet.characterUnlocks" :key="id">
-                        <li v-if="unlocked"
+                        <li v-if="unlocked && id in sheet.characterOrder"
                             class="add-character flow-root"
                             :class="['order-'+sheet.characterOrder[id], sheet.characterOrder[id] == 0 ? 'mt-0' : 'mt-6']">
                             <a @click.stop.prevent="$emit('create', id)" href="#"
@@ -32,7 +32,7 @@
                 <h2 v-if="hasLocked">{{ $t('Locked') }}</h2>
                 <ul v-if="hasLocked" class="flex flex-wrap mx-1 py-2">
                     <template v-for="(unlocked, id) in sheet.characterUnlocks" :key="id">
-                        <li v-if="!unlocked" class="flow-root"
+                        <li v-if="!unlocked && id in sheet.characterOrder" class="flow-root"
                             :class="'order-'+sheet.characterOrder[id]">
                             <a @click.stop.prevent="$emit('create', id)" href="#" class="block w-5 m-1">
                                 <character-icon class="flex-shrink-0 w-5" :character="id"/>
@@ -48,7 +48,6 @@
 <script>
 import GameData from "../../../services/GameData";
 import CharacterRepository from "../../../repositories/CharacterRepository";
-import charactersJson from "../../../characters.json";
 import Sheet from "../../../models/Sheet";
 import CampaignSheet from "../../../models/CampaignSheet";
 
@@ -67,8 +66,9 @@ export default {
     },
     computed: {
         hasLocked() {
-            const all = collect(this.sheet.characterUnlocks).count();
-            return all > collect(this.sheet.characterUnlocks).filter().count();
+            return collect(this.sheet.characterUnlocks)
+                .filter((unlocked, id) => !unlocked && id in this.sheet.characterOrder)
+                .isNotEmpty();
         }
     },
     mounted() {

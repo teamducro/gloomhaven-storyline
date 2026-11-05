@@ -1,3 +1,7 @@
+import GameData from "../services/GameData";
+
+const gameData = new GameData();
+
 class Card {
 
     constructor(str, game) {
@@ -16,6 +20,16 @@ class Card {
         // FC uses GH cards
         const gameFolder = this.game === 'fc' ? 'gh' : this.game;
 
+        if (this.game === 'gh2' && ['R', 'C'].includes(this.type)) {
+            const path = `/img/cards/gh2/${this.folder}/${this.id}`;
+            return [`${path}-f.jpg`, ...this.outcomes.map(outcome => `${path}-${outcome.toLowerCase()}.jpg`)];
+        }
+        if (this.game === 'gh2' && this.type === 'Q') {
+            // No GH2e personal quest card back exists, show the front on both sides.
+            const front = `/img/cards/gh2/quest/${this.id}.jpg`;
+            return [front, front];
+        }
+
         if (["R", "C", "RIFT", "SR", "SO", "WR", "WO", "B"].includes(this.type)) {
             return [`/img/cards/${gameFolder}/${this.folder}/${this.id}-f.jpg`, `/img/cards/${gameFolder}/${this.folder}/${this.id}-b.jpg`];
         } else if (this.type === "Q") {
@@ -23,6 +37,10 @@ class Card {
         }
 
         return [];
+    }
+
+    get outcomes() {
+        return this.game === 'gh2' ? (gameData.events(this.game)[`${this.type}-${this.id}`] || ['A']) : ['A', 'B'];
     }
 
     get folder() {

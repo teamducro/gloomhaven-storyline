@@ -996,5 +996,359 @@ export default {
             "Once each scenario, during your turn, all enemies adjacent to a wall suffer {DAMAGE.fh}1",
             "At the start of the first round of each scenario, after all ability cards have been revealed, control one enemy within {RANGE.fh}5: {MOVE.fh}2"
         ]
+    },
+    "BR2": {
+        "name": "Bruiser",
+        "masteries": [
+            "In 3 different scenarios, kill an enemy that you Pushed or Pulled that round",
+            "In a single scenario, across 3 consecutive rounds, play 6 different ability cards and cause enemies to suffer 7 or more damage during each of those rounds"
+        ],
+        "perks": [
+            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+            "Replace one {-1_WHITE} card with one {AGAIN} {SHIELD.fh}1 card",
+            "Replace one {+0_WHITE} card with one {AGAIN} “Add this card to your active area. On the next attack targeting you performed by an adjacent enemy, discard this card to gain {RETALIATE.fh}2 for the attack” card",
+            "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN.fh} card",
+            "Add one {+1_WHITE} “{HEAL.fh}2, self” card",
+            "Add one {+2_WHITE} {PUSH.fh}2 card",
+            "Add one {+3_WHITE} card",
+            "Add one {AGAIN} {DISARM.fh} card and one {AGAIN} {MUDDLE.fh} card",
+            "Ignore item {-1} effects and add two {+1_WHITE} cards",
+            "Once each scenario, during your turn, you may perform: {LOOT 1}, if this ability loots at least one money token, you may {RECOVER.fh} one {BODY} item",
+            "Whenever you long rest, add +1 {MOVE.fh} to your first move ability the following round",
+            "Each character gains advantage on their first attack during the first round of each scenario"
+        ]
+    },
+    "CH2": {
+        "name": "Cragheart",
+        "masteries": [
+            "For an entire scenario, create, destroy, or move at least one obstacle tile each round",
+            "In a single scenario, heal 8 or more hit points during a single round, deal 8 or more damage with a ranged attack ability, and deal 8 or more damage with a melee attack ability"
+        ],
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+            "Replace one {+0_WHITE} card with one {AGAIN} {+1_WHITE} “Create one 1-hex obstacle tile in an empty hex adjacent to the target” card",
+            "Replace one {+0_WHITE} card with two {+1_WHITE} {PUSH.fh}1 cards",
+            "Add one {+2_WHITE} {IMMOBILIZE.fh} card",
+            "Ignore scenario effects and add one {AGAIN} {MUDDLE.fh} card",
+            "Ignore item {-1} effects",
+            "Once each scenario, during your turn, you may destroy one 1-hex obstacle within {RANGE.fh}5 to {TELEPORT.fh} to the hex it occupied",
+            "At the end of each of your rests, you may destroy one 1-hex obstacle within {RANGE.fh}3 to {EARTH}",
+            "Whenever a new room is revealed, control all enemies in the newly revealed room: {MOVE.fh}1, this movement must end in an empty hex"
+        ]
+    },
+    "MT2": {
+        "name": "Mindthief",
+        "masteries": [
+            "In a single scenario, kill 5 or more enemies with control abilities",
+            "In a single scenario, trigger the on-attack effect from four different Augments at least 3 times each"
+        ],
+        "perks": [
+            "Replace two {-1_WHITE} cards with one {+0_WHITE} “After the attack ability, control the target: {MOVE.fh}1” card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} “Add +1 {ATTACK.fh} for each negative condition the target has” card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+            "Add two {+1_WHITE} {IMMOBILIZE.fh} cards",
+            "Add one {+2_WHITE} {ICE} card",
+            "Add one {AGAIN} “{INVISIBLE.fh}, self” card",
+            "Ignore scenario effects and add one {AGAIN} {+1_WHITE} card",
+            "Whenever you control the attack of an enemy, you may have the enemy use your attack modifier deck",
+            "You are considered to be last in initiative order when determining monster focus",
+            "At the end of each of your rests, you may {ICE_X}/{DARK_X} to control one enemy within {RANGE.fh}5: {ATTACK.fh}1"
+        ]
+    },
+    "SC2": {
+        "name": "Silent Knife",
+        "masteries": [
+            "For an entire scenario, only attack enemies that are adjacent to one of your allies or adjacent to none of their allies, and perform at least 10 attacks",
+            "End 3 scenarios with 12 or more money tokens"
+        ],
+        "perks": [
+            "Remove one {-2_WHITE} card",
+            "Remove two {-1_WHITE} cards",
+            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} “Gain one money token if this attack targeted an adjacent enemy” card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+            "Replace one {+1_WHITE} card with one {AGAIN} {+1_WHITE} “{INVISIBLE.fh}, self” card",
+            "Add one {+1_WHITE} {DISARM.fh} card",
+            "At the end of each of your rests, you may place one of your money tokens in the hex occupied by an enemy within {RANGE.fh}3 to perform: {ATTACK.fh}1, {TARGET.fh} that enemy, {RANGE.fh}3",
+            "Whenever you complete a city event, draw an attack modifier card as though you were performing an {ATTACK.fh}4. Gain an amount of gold equal to the {DAMAGE.fh} the attack would have dealt",
+            "Once each scenario, during your turn, you may perform: {INVISIBLE.fh}, self"
+        ]
+    },
+    "SW2": {
+        "name": "Spellweaver",
+        "masteries": [
+            "In a single scenario, consume both {FIRE} and {ICE} during the same turn 6 times",
+            "In a single scenario, perform 4 different {LOST.fh} actions twice each"
+        ],
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {ANY} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} “Add +2 {ATTACK.fh} if drawn during an action with {LOST.fh}” card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {CURSE.fh} card",
+            "Add one {+1_WHITE} {STUN.fh} card",
+            "Add one {+2_WHITE} {FIRE}/{ICE} card",
+            "Ignore scenario effects and remove one {+0_WHITE} card",
+            "Once each scenario, when you would suffer {DAMAGE.fh}, you may gain {INVISIBLE.fh} and {STUN.fh} to negate the {DAMAGE.fh}",
+            "Whenever you short rest, if <i>Reviving Ether</i> is in your discard pile, first {RECOVER.fh} it",
+            "At the end of each of your turns during which you performed an action with {LOST.fh}, gain {BLESS.fh}"
+        ]
+    },
+    "TI2": {
+        "name": "Tinkerer",
+        "masteries": [
+            "For an entire scenario, during each of your turns, give an enemy a negative condition, give an ally a positive condition, heal an ally, or grant an ally shield",
+            "Perform 11 different {LOST.fh} actions"
+        ],
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND.fh} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {POISON.fh} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE.fh} card",
+            "Add one {+2_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 ally” card",
+            "Ignore scenario effects and add one {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” card",
+            "Once each scenario, one adjacent ally may use one of your <i>potion</i> {SMALL-ITEM} items during their turn without it becoming {LOST.fh}",
+            "Whenever you perform an action with {LOST.fh}, you may {ANY}",
+            "Whenever you long rest, you may perform: {HEAL.fh}2, {RANGE.fh}3"
+        ]
+    },
+    "BE2": {
+        "name": "Berserker",
+        "masteries": [
+            "Kill 20 enemies with your retaliate",
+            "In a single scenario, end all your turns with your hit point value at half your maximum or lower without exhausting"
+        ],
+        "perks": [
+            "Remove one {-2_WHITE} card",
+            "Replace one {-1_WHITE} card with one {AGAIN} “{HEAL.fh}1, self” card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “You may suffer {DAMAGE.fh}2 to add +2 {ATTACK.fh}” card",
+            "Replace one {+0_WHITE} card with two {AGAIN} {WOUND.fh} cards",
+            "Add one {+2_WHITE} {FIRE} card",
+            "Add one {AGAIN} {STUN.fh} card",
+            "Add one {2X_MODIFIER} “Suffer {DAMAGE.fh} equal to half your current hit point value (rounded down)” card",
+            "Ignore item {-1} effects and add one {+1_WHITE} card",
+            "Whenever you heal from a long rest, add +1 {HEAL.fh}",
+            "Once each scenario, when {DAMAGE.fh} from an attack would reduce your current hit point value to less than 1, instead set your current hit point value to 1 and perform: {ATTACK.fh}2, {TARGET.fh} the attacker",
+            "At the end of each of your turns, you may control all adjacent enemies: {ATTACK.fh} +0 {TARGET.fh} Berserker"
+        ]
+    },
+    "BS2": {
+        "name": "Bladeswarm",
+        "masteries": [
+            "Perform 6 different {PERSISTENT}{LOST.fh} abilities with no more than 3 of the 6 being summon abilities",
+            "Gain this mastery when you feel you deserve it"
+        ],
+        "perks": [
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {WOUND.fh} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {WIND}/{DARK} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {EARTH}/{LIGHT} card",
+            "Replace one {+0_WHITE} card with one {+0_WHITE} “Add +1 {ATTACK.fh} for each card with a {LOST.fh} in Bladeswarm's active area” card",
+            "Ignore scenario effects and add one {+1_WHITE} card",
+            "Ignore item {-1} effects and add one {+1_WHITE} card",
+            "Whenever you long rest, you may {TELEPORT.fh} to a hex occupied by one of your summons and simultaneously {TELEPORT.fh} that summon to the hex you occupied",
+            "Once each scenario, when you perform an action with {LOST.fh}, you may immediately play one card from your hand to perform an action with {LOST.fh} of the card",
+            "You may additionally bring four {ONE-HAND} items, two {TWO-HANDS} items, or two {ONE-HAND} items and one {TWO-HANDS} item into each scenario."
+        ]
+    },
+    "DS2": {
+        "name": "Doomstalker",
+        "masteries": [
+            "Kill 20 enemies that have {DOOM}",
+            "In a single round, you and one of your summons must perform a combined total of 6 or more attack abilities"
+        ],
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {-1_WHITE} “Doomstalker performs: {ATTACK.fh}2, {RANGE.fh}5” card",
+            "Replace two {+0_WHITE} cards with two {+1_WHITE} cards",
+            "Add one {+0_WHITE} “Grant one of your summons adjacent to the target: {ATTACK.fh}+0” card",
+            "Add one {+3_WHITE} card",
+            "Add one {AGAIN} {STUN.fh} card",
+            "Ignore scenario effects and add one {AGAIN} {+1_WHITE} card",
+            "At the start of each scenario, reveal the top card of each monster ability card deck in the scenario",
+            "Whenever you rest, after you {RECOVER.fh} your cards from your discard pile, you may play one card from your hand to perform a {DOOM} action of the card",
+            "On each of your summons' turns, you may have them skip their turn and instead perform {MOVE.fh}+0 treating you as their focus"
+        ]
+    },
+    "EL2": {
+        "name": "Elementalist",
+        "masteries": [
+            "In a single scenario, consume 4 or more elements in a single turn 5 times",
+            "Once in 3 different scenarios, have all 6 elements strong or waning at the same time"
+        ],
+        "perks": [
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {FIRE}/{WIND} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {FIRE}/{EARTH} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE}/{WIND} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE}/{EARTH} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {FIRE}/{ICE} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {WIND}/{EARTH} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {LIGHT}/{DARK} card",
+            "Add two {AGAIN} {ANY} cards",
+            "Ignore scenario effects and add one {AGAIN} {ANY} card",
+            "At the start of each scenario, you may {ANY}",
+            "Whenever you long rest, {ANY_X}: {ANY}",
+            "{FIRE},{ICE},{WIND}, and {EARTH} do not wane at the end of each round"
+        ]
+    },
+    "NS2": {
+        "name": "Nightshroud",
+        "masteries": [
+            "In a single scenario, infuse or consume {DARK} during each of your turns",
+            "In a single scenario, perform an attack ability during your turn in 5 consecutive rounds"
+        ],
+        "perks": [
+            "Remove one {-2_WHITE} card",
+            "Remove two {-1_WHITE} cards",
+            "Replace one {-1_WHITE} card with two {AGAIN} “After the attack ability, grant one adjacent ally or self: {TELEPORT.fh}2” cards",
+            "Replace one {NULL_MODIFIER} card with one {-2_WHITE} card",
+            "Replace two {+0_WHITE} cards with two {+1_WHITE} “If this attack kills the target, shuffle one {CURSE.fh} card into the monster attack modifier deck” cards",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} {DARK} card",
+            "Replace one {+1_WHITE} card with one {+0_WHITE} “Place one tear in a hex adjacent to the target” card",
+            "Ignore scenario effects and add two {+1_WHITE} cards",
+            "Whenever you long rest, you may {DARK}",
+            "Once each scenario, during your turn, place one tear in an adjacent hex",
+            "If a {CURSE.fh} causes an enemy to deal no {DAMAGE.fh} during its attack, that enemy suffers {DAMAGE.fh}3"
+        ]
+    },
+    "PH2": {
+        "name": "Plagueherald",
+        "masteries": [
+            "In a single turn, kill 3 or more enemies without drawing an attack modifier card",
+            "In a single scenario, either apply or remove {POISON.fh} from an ally or enemy each round"
+        ],
+        "perks": [
+            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “Give the target or one enemy within {RANGE.fh}2 of the target plague” card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {CURSE.fh} card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE.fh} card",
+            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+            "Add one {+1_WHITE} {STUN.fh} card",
+            "Add three {AGAIN} “Give the target or one enemy within {RANGE.fh}2 of the target {POISON.fh}” cards",
+            "Add two {AGAIN} “{HEAL.fh}1, {TARGET.fh}1 ally” cards",
+            "Ignore scenario effects and add one {+1_WHITE} card",
+            "You have {FLYING.fh}",
+            "Whenever you heal from a long rest, you may remove {POISON.fh} from one ally to add +1 {HEAL.fh}",
+            "Once each scenario, when an enemy that has a plague would die, you first control that enemy and have it perform the abilities on its ability card, adding plague to all its attacks, then it dies"
+        ]
+    },
+    "QM2": {
+        "name": "Quartermaster",
+        "masteries": [
+            "In a single scenario, spend 50 supplies to refresh 50 gold of lost items 3 times",
+            "For an entire scenario, give yourself or an ally an item from the Quartermaster Item Supply each round except when performing a long rest"
+        ],
+        "perks": [
+            "Replace two {-1_WHITE} cards with one {+0_WHITE} {MUDDLE.fh} card",
+            "Replace one {+0_WHITE} card with one {+0_WHITE} “Gain 10 supplies” card",
+            "Replace two {+0_WHITE} cards with two {AGAIN} {PIERCE.fh}3 cards",
+            "Replace one {+1_WHITE} card with two {+0_WHITE} “Gain the <i>Barbed Strip</i> or <i>Iron Plate</i> item” cards",
+            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
+            "Add one {AGAIN} “Gain the <i>Scroll of Relocation</i> or <i>Sharpened Dirk</i> item” card",
+            "Add one {AGAIN} {STUN.fh} card",
+            "Ignore item {-1} effects and remove one {+0_WHITE} card",
+            "You may bring one additional {SMALL-ITEM} item into each scenario",
+            "Your party may purchase items from each faction as though the items' costs were five gold less and your reputation with that faction was two greater",
+            "Whenever you long rest, gain 10 supplies"
+        ]
+    },
+    "SB2": {
+        "name": "Sawbones",
+        "masteries": [
+            "In a single scenario, give an ally a medical pack or prescription each round except when performing a long rest",
+            "In a single scenario, never attack an undamaged enemy while there are any damaged monsters alive, and perform at least 10 attacks"
+        ],
+        "perks": [
+            "Remove two {-1_WHITE} cards",
+            "Replace one {-2_WHITE} card with one {-2_WHITE} “Give one adjacent ally or self one medical pack” card",
+            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “You may gain {DISARM.fh} to add {STUN.fh}” card",
+            "Add two {+1_WHITE} “Add +1 {ATTACK.fh} if an ally has an active prescription” cards",
+            "Add one {AGAIN} “{HEAL.fh}3, {RANGE.fh}1” card",
+            "Add +1 {HEAL.fh} to all heal abilities on \"Medical Pack\" ability cards",
+            "Each City Phase after completing a scenario, you or one ally's donation to the Sanctuary of the Great Oak is free",
+            "At the end of each of your rests, if an ally has an active prescription, gain one \"Medical Pack\" ability card and move the token on one ally's active prescription backward one slot"
+        ]
+    },
+    "SK2": {
+        "name": "Sunkeeper",
+        "masteries": [
+            "In a single scenario, infuse or consume {LIGHT} during each of your turns",
+            "In a single scenario, deal 8 or more {DAMAGE.fh} with an attack 3 or more times"
+        ],
+        "perks": [
+            "Replace one {-1_WHITE} card with two {+0_WHITE} {LIGHT} cards",
+            "Replace one {+0_WHITE} card with one {AGAIN} {+1_WHITE} {SHIELD.fh}1 card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} card",
+            "Add two {+1_WHITE} “{HEAL.fh}1, {RANGE.fh}3” cards",
+            "Add one {-1_WHITE} “You or an adjacent ally may {RECOVER.fh} one level 1 card from the discard pile” card",
+            "Add one {AGAIN} {STUN.fh} card",
+            "Ignore scenario effects and add one {+1_WHITE} card",
+            "Ignore item {-1} effects and remove one {-1_WHITE} card",
+            "Whenever you open one or more doors during your turn, gain {SHIELD.fh}1, {RETALIATE.fh}1 for the round",
+            "Whenever you long rest, you may {LIGHT}",
+            "Whenever one of your heals would cause an ally's hit point value to increase beyond their maximum hit point value, that ally gains {WARD.fh}"
+        ]
+    },
+    "SS2": {
+        "name": "Soothsinger",
+        "masteries": [
+            "In a single scenario, perform 7 different {SONG} actions",
+            "In a single scenario, create 20 or more Notes and use each Note you create in a {SONG}"
+        ],
+        "perks": [
+            "Replace one {-2_WHITE} card with one {-2_WHITE} “{BLESS.fh}, {TARGET.fh}2” card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “Skip moving your character tokens on active {SONG} at the end of this round” card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} {STUN.fh} card",
+            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 ally” card",
+            "Replace one {+0_WHITE} card and one {+1_WHITE} card with two {+2_WHITE} cards",
+            "Add one {AGAIN} “Grant one ally: {MOVE.fh}2 or {ATTACK.fh}2” card",
+            "Add three {AGAIN} {CURSE.fh} cards",
+            "At the end of each scenario, each character in that scenario gains 8 XP if you completed your battle goal",
+            "Whenever you perform a {SONG}, if you have any unused Notes, gain one Note of your choice in addition to any other Note gained that round",
+            "During ordering of initiative in rounds in which you declare a long rest, gain one Note of your choice, and each of your allies may decrease their initiative by 10"
+        ]
+    },
+    "ST2": {
+        "name": "Soultether",
+        "masteries": [
+            "Perform 3 different summon actions before your first rest and keep those cards in your active area for the entire scenario",
+            "Perform 6 different summon abilities from your ability cards over the course of the first rounds of 6 scenarios"
+        ],
+        "perks": [
+            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
+            "Replace one {-1_WHITE} card with one {+0_WHITE} “After the attack ability, grant one of your summons: {TELEPORT.fh}2” card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} “{INVISIBLE.fh}, {TARGET.fh}1 of your summons” card",
+            "Replace one {+0_WHITE} card with two {AGAIN} {WOUND.fh} cards",
+            "Replace one {+0_WHITE} card with two {AGAIN} {POISON.fh} cards",
+            "Replace two {+1_WHITE} cards with two {+1_WHITE} {CURSE.fh} cards",
+            "Add one {+2_WHITE} {FIRE}/{WIND} card",
+            "Add one {+2_WHITE} {FIRE}/{DARK} card",
+            "Add one {+2_WHITE} {WIND}/{DARK} card",
+            "Ignore scenario effects and add two {+1_WHITE} cards",
+            "At the beginning of each round in which you long rest, all your summons gain {SHIELD.fh}1 for the round",
+            "Once each scenario, during your turn, {TELEPORT.fh} one of your summons to an empty hex adjacent to you",
+            "Once each scenario, during ordering of initiative, after all ability cards have been revealed, all your summons gain {INVISIBLE.fh}"
+        ]
+    },
+    "WF2": {
+        "name": "Wildfury",
+        "masteries": [
+            "In a single scenario, infuse or consume {WIND} or {EARTH} during each of your turns",
+            "In a single scenario, kill 4 or more enemies with {COMMAND} attacks of 7 or greater (after all bonuses, before attack modifiers)"
+        ],
+        "perks": [
+            "Replace one {-1_WHITE} card with one {AGAIN} “{HEAL.fh}2, {TARGET.fh} Bear” card",
+            "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND.fh} card",
+            "Replace one {+0_WHITE} card with one {+2_WHITE} “Add +1 {ATTACK.fh} if the Wildfury and Bear are within {RANGE.fh}4 of each other” card",
+            "Replace one {+2_WHITE} card with one {+4_WHITE} card",
+            "Add two {+1_WHITE} {WIND}/{EARTH} cards",
+            "Add one {+2_WHITE} {PUSH.fh}2 card",
+            "Ignore scenario effects and add one {+1_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 ally” card",
+            "Whenever Bear is attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as {+0_MODIFIER} instead",
+            "Once each scenario, during your turn, {COMMAND}: {MOVE.fh}4. If Bear exits a hex adjacent to you during this movement, you may {TELEPORT.fh} to an empty hex adjacent to Bear at the end of the movement",
+            "At the start or end of each of your long rests, you may {WIND}/{EARTH} and reduce your current hit point value by X (X must be at least 1) to {COMMAND}: {HEAL.fh}X, self"
+        ]
     }
 }

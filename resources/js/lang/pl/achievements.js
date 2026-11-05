@@ -370,5 +370,89 @@ export default {
     },
     "fh-PHOS": {
         "name": "Heart of Snow"
+    },
+    "gh2-G2ATD": {
+        "name": "Activating the Device"
+    },
+    "gh2-G2AUP": {
+        "name": "An Uneasy Peace"
+    },
+    "gh2-G2AT": {
+        "name": "Starożytna Technologia"
+    },
+    "gh2-G2CRD": {
+        "name": "City Rule: Demons"
+    },
+    "gh2-G2CRME": {
+        "name": "City Rule: Merchants"
+    },
+    "gh2-G2CRMI": {
+        "name": "City Rule: Military"
+    },
+    "gh2-G2EM": {
+        "name": "Elements Mastered"
+    },
+    "gh2-G2EOC": {
+        "name": "Koniec Spaczenia"
+    },
+    "gh2-G2EOG": {
+        "name": "Koniec Mroku"
+    },
+    "gh2-G2HW": {
+        "name": "Hallowed Waters"
+    },
+    "gh2-G2ITD": {
+        "name": "Into the Depths"
+    },
+    "gh2-G2PTB": {
+        "name": "Peace Through Bloodshed"
+    },
+    "gh2-G2TCE": {
+        "name": "The Candle Extinguished"
+    },
+    "gh2-G2TCK": {
+        "name": "The Candle Kept"
+    },
+    "gh2-G2TDR": {
+        "name": "The Darkness Retreats"
+    },
+    "gh2-G2TDA": {
+        "name": "Przysługa dla Drakona"
+    },
+    "gh2-G2TDS": {
+        "name": "Drakon Zabity"
+    },
+    "gh2-G2TPE": {
+        "name": "Potęga Wzmocnienia"
+    },
+    "gh2-G2TVF": {
+        "name": "Głos Uwolniony"
+    },
+    "gh2-G2TVS": {
+        "name": "Głos Uciszony"
+    },
+    "gh2-P2R16": {
+        "name": "Faction Reputation 16"
+    },
+    "gh2-P2R20": {
+        "name": "Faction Reputation 20"
+    },
+    "gh2-P2RD6": {
+        "name": "Demon Reputation 6"
+    },
+    "gh2-P2RD12": {
+        "name": "Demon Reputation 12"
+    },
+    "gh2-P2RME6": {
+        "name": "Merchant Reputation 6"
+    },
+    "gh2-P2RME12": {
+        "name": "Merchant Reputation 12"
+    },
+    "gh2-P2RMI6": {
+        "name": "Military Reputation 6"
+    },
+    "gh2-P2RMI12": {
+        "name": "Military Reputation 12"
     }
 }

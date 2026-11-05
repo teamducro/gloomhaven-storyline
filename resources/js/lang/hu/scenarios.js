@@ -1260,14 +1260,16 @@ export default {
         "name": "Buried Ducts",
         "rewards": [
             "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}"
+            "Gain 3 collective {METAL}",
+            "Gain “Converging Lenses” (Item 67) blueprint"
         ]
     },
     "fh-37": {
         "name": "The Dead Mile",
         "rewards": [
             "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}"
+            "Gain 3 collective {METAL}",
+            "Gain “Converging Lenses” (Item 67) blueprint"
         ]
     },
     "fh-38": {
@@ -1453,6 +1455,7 @@ export default {
             "Gain 2 morale",
             "Gain 1 Városfejlettség",
             "Gain 30 tapasztalati pont mindenkinek",
+            "Gain “Armor of Empathy” (Item 224)",
             "Unlock whichever class box is still locked: {CR} or {DT}",
             "Remove all {LURKERS} events from all outpost event decks",
             "Add event SO-48 to the summer outpost deck and event B-17 to the boat deck",
@@ -2775,6 +2778,837 @@ export default {
         "name": "Major Annoyance",
         "rewards": [
             "“No Nonsense Boots” (Item HA)"
+        ]
+    },
+    "gh2-0": {
+        "name": "Training Course",
+        "rewards": [
+            "2 gold each"
+        ]
+    },
+    "gh2-1": {
+        "name": "Bandit Camp",
+        "rewards": [
+            "10 gold each",
+            "+1 Merchant's Guild reputation",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-2": {
+        "name": "Romos kripta",
+        "rewards": [
+            "10 experience each",
+            "+1 Demons reputation",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-3": {
+        "name": "Fagyos völgy",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-4": {
+        "name": "Kárhozottak kriptája",
+        "rewards": [
+            "10 experience each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-5": {
+        "name": "Elfeledett kripta",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-6": {
+        "name": "Elhagyatott kripta",
+        "rewards": [
+            "5 gold each",
+            "10 experience each",
+            "+1 Demons reputation",
+            "Add city event C-51 to the deck"
+        ]
+    },
+    "gh2-7": {
+        "name": "Fekete sírdomb",
+        "rewards": []
+    },
+    "gh2-8": {
+        "name": "A sírdomb mélyén",
+        "rewards": [
+            "15 gold each",
+            "+2 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-9": {
+        "name": "Romos síkkapu",
+        "rewards": [
+            "+1 prosperity",
+            "+1 Military reputation",
+            "Add road event R-30 to the deck"
+        ]
+    },
+    "gh2-10": {
+        "name": "Hegyi hágó",
+        "rewards": []
+    },
+    "gh2-11": {
+        "name": "Ritual Chamber",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-12": {
+        "name": "Inox tábor",
+        "rewards": [
+            "20 gold each",
+            "+1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-13": {
+        "name": "Fagyhágó meredély",
+        "rewards": [
+            [],
+            [
+                "30 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-39 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            []
+        ]
+    },
+    "gh2-14": {
+        "name": "Visszhangok csarnoka",
+        "rewards": []
+    },
+    "gh2-15": {
+        "name": "Elemk erő létsíkja",
+        "rewards": [
+            "20 experience each",
+            "2 ✔ each",
+            "+1 Demons reputation"
+        ]
+    },
+    "gh2-16": {
+        "name": "Gyémántbánya",
+        "rewards": [
+            "20 gold each",
+            "+1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-17": {
+        "name": "Démoni síkkapu",
+        "rewards": [
+            "+1 prosperity",
+            "-1 Demons reputation",
+            "+2 Military reputation"
+        ]
+    },
+    "gh2-18": {
+        "name": "Nyomozás",
+        "rewards": [
+            "15 gold each",
+            "+1 prosperity",
+            "-1 Merchant's Guild reputation",
+            "+2 Military reputation"
+        ]
+    },
+    "gh2-19": {
+        "name": "Military Outpost",
+        "rewards": [
+            "25 experience each",
+            "+2 Demons reputation",
+            "-1 Military reputation"
+        ]
+    },
+    "gh2-20": {
+        "name": "Raktárház",
+        "rewards": [
+            "25 experience each",
+            "+2 Demons reputation",
+            "-1 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-21": {
+        "name": "The Ghost Fortress",
+        "rewards": [
+            "15 gold each",
+            "+2 Merchant's Guild reputation",
+            "-1 Military reputation"
+        ]
+    },
+    "gh2-22": {
+        "name": "Doomcannon Demolition",
+        "rewards": [
+            "15 gold each",
+            "-1 Demons reputation",
+            "+2 Merchant's Guild reputation"
+        ]
+    },
+    "gh2-24": {
+        "name": "Főtér B",
+        "rewards": []
+    },
+    "gh2-26": {
+        "name": "Városfal B",
+        "rewards": []
+    },
+    "gh2-27": {
+        "name": "A lángtrónus",
+        "rewards": [
+            [
+                "25 gold each",
+                "-10 Demons reputation",
+                "+2 Merchant's Guild reputation",
+                "-10 Military reputation",
+                "Add city event C-36 to the deck",
+                "Add city event C-54 to the deck",
+                "Add city event C-55 to the deck",
+                "Add road event R-37 to the deck",
+                "Add road event R-38 to the deck",
+                "Open envelope “Merchant's Guild”"
+            ],
+            [
+                "+1 prosperity",
+                "-10 Demons reputation",
+                "-10 Merchant's Guild reputation",
+                "+2 Military reputation",
+                "Add city event C-36 to the deck",
+                "Add city event C-53 to the deck",
+                "Add city event C-56 to the deck",
+                "Add road event R-38 to the deck",
+                "Open envelope “Military”"
+            ]
+        ]
+    },
+    "gh2-28": {
+        "name": "A látnok temploma",
+        "rewards": [
+            [],
+            [],
+            [
+                "Unlock a random side scenario"
+            ]
+        ]
+    },
+    "gh2-29": {
+        "name": "Felégetett kripta",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity",
+            "+1 Military reputation"
+        ]
+    },
+    "gh2-30": {
+        "name": "A mélység szentélye",
+        "rewards": []
+    },
+    "gh2-31": {
+        "name": "Lepusztult erdő",
+        "rewards": [
+            [],
+            []
+        ]
+    },
+    "gh2-32": {
+        "name": "Savvas fegyverraktár",
+        "rewards": [
+            [
+                "15 gold each"
+            ],
+            [
+                "15 gold each"
+            ],
+            [
+                "15 gold each"
+            ],
+            [
+                "45 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-38 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            [
+                "45 gold each",
+                "20 experience each",
+                "2 ✔ each",
+                "-1 Military reputation",
+                "Add city event C-38 to the deck",
+                "Add road event R-32 to the deck"
+            ],
+            [
+                "15 gold each"
+            ]
+        ]
+    },
+    "gh2-33": {
+        "name": "Ősi védelmi háló",
+        "rewards": []
+    },
+    "gh2-34": {
+        "name": "Lepusztult kripta",
+        "rewards": [
+            [
+                "30 gold each"
+            ],
+            [
+                "30 experience each",
+                "2 ✔ each"
+            ]
+        ]
+    },
+    "gh2-35": {
+        "name": "A Hang létsíkja",
+        "rewards": [
+            "30 experience each"
+        ]
+    },
+    "gh2-36": {
+        "name": "Elhagyatott csatornarendszer",
+        "rewards": []
+    },
+    "gh2-37": {
+        "name": "Romok a mélyben",
+        "rewards": []
+    },
+    "gh2-38": {
+        "name": "Gyíkfészek",
+        "rewards": []
+    },
+    "gh2-39": {
+        "name": "Életteli barlang",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-40": {
+        "name": "Wetlands Ambush",
+        "rewards": []
+    },
+    "gh2-41": {
+        "name": "Ősi ciszernák",
+        "rewards": [
+            "+2 prosperity"
+        ]
+    },
+    "gh2-42": {
+        "name": "Secluded Valley",
+        "rewards": []
+    },
+    "gh2-43": {
+        "name": "Chasing Secrets",
+        "rewards": [
+            [
+                "+1 prosperity",
+                "Unlock a random side scenario"
+            ],
+            [
+                "+1 prosperity"
+            ],
+            [
+                "+1 prosperity"
+            ]
+        ]
+    },
+    "gh2-44": {
+        "name": "Temple of the Elements",
+        "rewards": [
+            "100 gold each",
+            "+1 prosperity",
+            "This money must immediately be spent on enhancements"
+        ]
+    },
+    "gh2-45": {
+        "name": "Az éj síkja",
+        "rewards": [
+            "+1 prosperity",
+            "Open envelope “Candle”"
+        ]
+    },
+    "gh2-46": {
+        "name": "Átok-árok",
+        "rewards": []
+    },
+    "gh2-47": {
+        "name": "Rabszolgák börtöne",
+        "rewards": []
+    },
+    "gh2-48": {
+        "name": "Veszélyes átkelés",
+        "rewards": []
+    },
+    "gh2-49": {
+        "name": "Törzsi támadás",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-50": {
+        "name": "A hegycsúcs réme",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-51": {
+        "name": "A Világtalan szentélye",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-52": {
+        "name": "Árnyékok erdeje",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-53": {
+        "name": "Az erő szentélye",
+        "rewards": [
+            "30 experience each",
+            "2 ✔ each"
+        ]
+    },
+    "gh2-54": {
+        "name": "Semmiföldje",
+        "rewards": []
+    },
+    "gh2-55": {
+        "name": "The Last Stand",
+        "rewards": []
+    },
+    "gh2-56": {
+        "name": "The Gloom",
+        "rewards": [
+            "50 experience each",
+            "+5 prosperity"
+        ]
+    },
+    "gh2-57": {
+        "name": "Kriptapince",
+        "rewards": [
+            "Gain “Scepter of Xorn” (Item 147)"
+        ]
+    },
+    "gh2-58": {
+        "name": "Jégpalota",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each",
+            "Gain “Scepter of Xorn” (Item 147)",
+            "Add road event R-39 to the deck",
+            "Add city event C-66 to the deck"
+        ]
+    },
+    "gh2-59": {
+        "name": "Ködös erdő",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-60": {
+        "name": "Bandit's Wood",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity",
+            "Personal quest 08 complete"
+        ]
+    },
+    "gh2-61": {
+        "name": "Dangerous Grove",
+        "rewards": []
+    },
+    "gh2-62": {
+        "name": "Alkimista labor",
+        "rewards": [
+            "+1 prosperity",
+            "Personal quest 09 complete"
+        ]
+    },
+    "gh2-63": {
+        "name": "Halovány világítótorony",
+        "rewards": [
+            "Personal quest 04 complete"
+        ]
+    },
+    "gh2-64": {
+        "name": "Roots of Chaos",
+        "rewards": [
+            "Personal quest 10 complete"
+        ]
+    },
+    "gh2-65": {
+        "name": "Hero's Mausoleum",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each"
+        ]
+    },
+    "gh2-66": {
+        "name": "A Friend in Need",
+        "rewards": [
+            "15 gold each",
+            "Personal quest 11 complete"
+        ]
+    },
+    "gh2-67": {
+        "name": "Félhold temploma",
+        "rewards": [
+            "15 gold each",
+            "10 experience each",
+            "Gain “Helix Ring” (Item 136)"
+        ]
+    },
+    "gh2-68": {
+        "name": "Elsüllyedt hajó",
+        "rewards": [
+            "10 gold each"
+        ]
+    },
+    "gh2-69": {
+        "name": "Elátkozott barlang",
+        "rewards": [
+            "15 experience each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-70": {
+        "name": "Underwater Lagoon",
+        "rewards": [
+            "10 gold each",
+            "10 experience each"
+        ]
+    },
+    "gh2-71": {
+        "name": "Clockwork Factory",
+        "rewards": [
+            "10 experience each",
+            "1 ✔ each"
+        ]
+    },
+    "gh2-72": {
+        "name": "Kárhozottak kútja",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-73": {
+        "name": "Rab sziget",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-74": {
+        "name": "Szélfútta felföld",
+        "rewards": [
+            "+1 prosperity",
+            "Gain “Major Power Potion” (Item 53)"
+        ]
+    },
+    "gh2-75": {
+        "name": "Omladozó orom",
+        "rewards": [
+            "Gain “Ruby Talisman” (Item 152)"
+        ]
+    },
+    "gh2-76": {
+        "name": "Maszlagok völgye",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-77": {
+        "name": "Ragályhordozók kaptárja",
+        "rewards": []
+    },
+    "gh2-78": {
+        "name": "Titkos pince",
+        "rewards": [
+            "+3 prosperity"
+        ]
+    },
+    "gh2-79": {
+        "name": "Lurker Assault",
+        "rewards": [
+            "+1 prosperity"
+        ]
+    },
+    "gh2-80": {
+        "name": "Titkos templom",
+        "rewards": [
+            "100 gold each",
+            "+2 prosperity",
+            "Gain “Heart of the Betrayer” (Item 133)",
+            "This money must immediately be spent on enhancements"
+        ]
+    },
+    "gh2-81": {
+        "name": "Gondozatlan sírkert",
+        "rewards": [
+            "10 gold each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-82": {
+        "name": "A szindikátus rejtekhelye",
+        "rewards": [
+            "+1 prosperity",
+            "Add city event C-72 to the deck"
+        ]
+    },
+    "gh2-83": {
+        "name": "Elveszett sziget",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-84": {
+        "name": "Vad csata",
+        "rewards": [
+            "15 experience each",
+            "1 ✔ each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-85": {
+        "name": "Crossroads Station",
+        "rewards": [
+            "1 ✔ each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-86": {
+        "name": "Magvaverem",
+        "rewards": [
+            "15 gold each"
+        ]
+    },
+    "gh2-87": {
+        "name": "Kénbánya",
+        "rewards": [
+            "Gain “Ancient Drill” (Item 109)"
+        ]
+    },
+    "gh2-88": {
+        "name": "Varázskönyvtár",
+        "rewards": [
+            "Add city event C-37 to the deck"
+        ]
+    },
+    "gh2-89": {
+        "name": "Community Service",
+        "rewards": [
+            "Gain 2× “Major Healing Potion” (Item 37)"
+        ]
+    },
+    "gh2-90": {
+        "name": "Lángoló hegy",
+        "rewards": []
+    },
+    "gh2-91": {
+        "name": "Árnyékok nyomában",
+        "rewards": []
+    },
+    "gh2-92": {
+        "name": "Chronal Anchor",
+        "rewards": [
+            "10 experience each",
+            "Gain “Temporal Matrix” (Item 144)"
+        ]
+    },
+    "gh2-93": {
+        "name": "Feldúlt falu",
+        "rewards": [
+            "1 ✔ each"
+        ]
+    },
+    "gh2-94": {
+        "name": "A Watery Rescue",
+        "rewards": [
+            "10 experience each",
+            "Gain “Otherworldly Scepter” (Item 139)"
+        ]
+    },
+    "gh2-95": {
+        "name": "Cargo Ship",
+        "rewards": []
+    },
+    "gh2-96": {
+        "name": "Bunyó a sikátorban",
+        "rewards": [
+            "10 gold each"
+        ]
+    },
+    "gh2-97": {
+        "name": "Vermling Camp",
+        "rewards": [
+            "5 experience each",
+            "+1 prosperity"
+        ]
+    },
+    "gh2-98": {
+        "name": "Metamorphic Fault",
+        "rewards": [
+            "10 experience each",
+            "Gain “Skull of Hatred” (Item 111)"
+        ]
+    },
+    "gh2-99": {
+        "name": "Sintering Forge",
+        "rewards": [
+            "Gain “Dawnblade” (Item 117)",
+            "Add road event R-33 to the deck"
+        ]
+    },
+    "gh2-100": {
+        "name": "Silence Falls",
+        "rewards": [
+            "+1 prosperity",
+            "Add city event C-60 to the deck"
+        ]
+    },
+    "gh2-101": {
+        "name": "Gloomhaven Square A (Demon Allies)",
+        "rewards": [
+            "30 experience each",
+            "+2 Demons reputation",
+            "-10 Merchant's Guild reputation",
+            "-10 Military reputation",
+            "Add city event C-36 to the deck",
+            "Add city event C-55 to the deck",
+            "Add city event C-56 to the deck",
+            "Add road event R-36 to the deck",
+            "Open envelope “Demons”"
+        ]
+    },
+    "gh2-102": {
+        "name": "Gloomhaven Square A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-103": {
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
+        "rewards": []
+    },
+    "gh2-104": {
+        "name": "Gloomhaven Battlements A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-201": {
+        "name": "A Night Out",
+        "rewards": [
+            "Gain “Hooked Shield” (Item 153)"
+        ]
+    },
+    "gh2-202": {
+        "name": "An Unfortunate Intrusion",
+        "rewards": [
+            "Gain “Focusing Ray” (Item 154)"
+        ]
+    },
+    "gh2-203": {
+        "name": "Corrupted Apothecary",
+        "rewards": [
+            "Gain “Etheric Elixir” (Item 155)"
+        ]
+    },
+    "gh2-204": {
+        "name": "Material Concerns",
+        "rewards": [
+            "Gain “Silent Stiletto” (Item 156)"
+        ]
+    },
+    "gh2-205": {
+        "name": "Stone Defense",
+        "rewards": [
+            "Gain “Stone Charm” (Item 157)"
+        ]
+    },
+    "gh2-206": {
+        "name": "Vermling Liberation",
+        "rewards": [
+            "Gain “Psychic Knife” (Item 158)"
+        ]
+    },
+    "gh2-207": {
+        "name": "Caravan Escort",
+        "rewards": [
+            "Gain “Insignia of the Divine” (Item 159)"
+        ]
+    },
+    "gh2-208": {
+        "name": "Storage Fees",
+        "rewards": [
+            "Gain “Utility Belt” (Item 160)"
+        ]
+    },
+    "gh2-209": {
+        "name": "Plane of Wild Beasts",
+        "rewards": [
+            "Gain “Phasing Idol” (Item 161)"
+        ]
+    },
+    "gh2-210": {
+        "name": "Harvesting the Night",
+        "rewards": [
+            "Gain “The Night's Caress” (Item 162)"
+        ]
+    },
+    "gh2-211": {
+        "name": "Plagued Crypt",
+        "rewards": [
+            "Gain “Pendant of the Plague” (Item 163)"
+        ]
+    },
+    "gh2-212": {
+        "name": "Unnatural Insults",
+        "rewards": [
+            "Gain “Mask of Death” (Item 164)"
+        ]
+    },
+    "gh2-213": {
+        "name": "Battle of the Bards",
+        "rewards": [
+            "Gain “Master's Lute” (Item 165)"
+        ]
+    },
+    "gh2-214": {
+        "name": "Corrupted Hunt",
+        "rewards": [
+            "Gain “Cloak of the Hunter” (Item 166)"
+        ]
+    },
+    "gh2-215": {
+        "name": "Aftermath",
+        "rewards": [
+            "Gain “Doctor's Coat” (Item 167)"
+        ]
+    },
+    "gh2-216": {
+        "name": "Elemental Secrets",
+        "rewards": [
+            "Gain “Elemental Vest” (Item 168)"
+        ]
+    },
+    "gh2-217": {
+        "name": "The Caged Bear",
+        "rewards": [
+            "Gain “Staff of Command” (Item 169)"
+        ]
+    },
+    "gh2-218": {
+        "name": "The Sands of Time",
+        "rewards": [
+            "Gain “Crawling Carapace” (Item 170)"
         ]
     }
 }

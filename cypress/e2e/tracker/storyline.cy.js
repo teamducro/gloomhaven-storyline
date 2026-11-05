@@ -443,4 +443,24 @@ describe('Storyline', () => {
         utilities.isNodeRequired(42);
     });
 
+    it('It shows the Converging Lenses blueprint reward for FH 36 and 37', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/story');
+
+        cy.window().then((win) => {
+            [36, 37].forEach((id) => {
+                expect(win.app.$t('scenarios.fh-' + id + '.rewards').join()).contains('Converging Lenses');
+            });
+        });
+    });
+
+    it('It has no Crypt region on Gloomhaven scenario 53', () => {
+        cy.visit('/tracker/#/story');
+
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 53).region_ids).to.have.length(0);
+            expect(scenarios.firstWhere('id', 4).region_ids).to.include(7);
+        });
+    });
 });

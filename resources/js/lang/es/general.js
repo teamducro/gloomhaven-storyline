@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Ten una reputación de Grupo de 10 o más",
     "Have a party reputation of 20": "Ten una reputación de Grupo de 20",
     "Retire a character": "Retira un personaje",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Capacidades",
     "Achievement": "Logro | Logros",
     "Achievements": "Logros",
@@ -102,6 +103,7 @@ export default {
     "Required": "Necesario",
     "Requirements": "Requisitos",
     "Retire": "Retira",
+    "Abandon": "Abandon",
     "Retired": "Retirado",
     "Retirement counter": "Contador de PJ retirados",
     "Reward": "Recompensa | Recompensas",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "¿Estás seguro de que quieres retirar este personaje? No se eliminará de forma permanente.",
-        "upgrade": "¿Estás seguro de que deseas eliminar este personaje de forma permanente? Los usuarios Pro pueden retirar un personaje sin eliminarlo de forma permanente."
+        "upgrade": "¿Estás seguro de que deseas eliminar este personaje de forma permanente? Los usuarios Pro pueden retirar un personaje sin eliminarlo de forma permanente.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "¿Estás seguro de que deseas eliminar este personaje de forma permanente?"
@@ -299,7 +305,7 @@ export default {
     },
     "games-enabled": {
         "title": "Juegos habilitados",
-        "text": "Para ocultar juegos y sus personajes, habilite solo los que posee."
+        "text": "Para ocultar juegos y sus personajes, habilite solo los que posee. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Por favor considere comprar una licencia ",
     "Danger zone!": "Zona Peligrosa!",
@@ -346,6 +352,7 @@ export default {
     "cs": "Escamas carmesís",
     "Crimson Scales": "Escamas carmesís",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven Segunda Edición",
     "Availability": "Disponibilidad",
     "Sticker": "Pegatina",
     "State": "Estado",
@@ -509,5 +516,16 @@ export default {
     "Spirits": "Spirits",
     "Timed": "Timed",
     "Void": "Void Energy",
-    "Voidsight": "Voidsight"
+    "Voidsight": "Voidsight",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }

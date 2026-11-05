@@ -188,5 +188,54 @@ export default {
         "2": "No",
         "title": "Sun Agates Returned",
         "text": "Did you return the sun agates to Derrick?"
+    },
+    "gh2-13": {
+        "1": "Section 18.3",
+        "2": "Section 44.3",
+        "3": "Section 51.1",
+        "title": "Icecrag Ascent",
+        "text": "Which conclusion section did you read?"
+    },
+    "gh2-27": {
+        "1": "Section 10.1",
+        "2": "Section 50.2",
+        "title": "Infernal Throne",
+        "text": "Which conclusion section did you read?"
+    },
+    "gh2-28": {
+        "1": "Section 72.3",
+        "2": "Section 75.3",
+        "3": "Section 76.4",
+        "title": "Temple of the Seer",
+        "text": "Which conclusion section did you read?"
+    },
+    "gh2-31": {
+        "1": "Section 26.6",
+        "2": "Section 76.1",
+        "title": "Decrepit Wood",
+        "text": "Which conclusion section did you read?"
+    },
+    "gh2-32": {
+        "1": "Section 16.3",
+        "2": "Section 16.3 and 81.5",
+        "3": "Section 62.5",
+        "4": "Section 78.6",
+        "5": "Section 78.6 and 81.5",
+        "6": "Section 81.5",
+        "title": "Savvas Armory",
+        "text": "Which conclusion section did you read?"
+    },
+    "gh2-34": {
+        "1": "Section 36.4",
+        "2": "Section 89.2",
+        "title": "Timeworn Tomb",
+        "text": "Which conclusion section did you read?"
+    },
+    "gh2-43": {
+        "1": "Section 80.3",
+        "2": "Section 106.1",
+        "3": "Section 132.4",
+        "title": "Chasing Secrets",
+        "text": "Which conclusion section did you read?"
     }
 }

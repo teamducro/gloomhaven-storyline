@@ -8,7 +8,7 @@
         <aside ref="menu" class="mdc-drawer mdc-drawer--modal">
             <div class="mdc-drawer__header" style="min-height: 0;">
                 <a href="/">
-                    <webp class="w-3/4 mt-4" :alt="$t(appData.mainGame)" :src="'/img/logos/'+appData.mainGame+'.png'"/>
+                    <webp class="w-3/4 mt-4" :alt="$t(game)" :src="'/img/logos/'+game+'.png'"/>
                 </a>
             </div>
             <div class="mdc-drawer__content">
@@ -77,7 +77,7 @@
                             <router-link to="/party" class="mdc-list-item"
                                          active-class="mdc-list-item--activated">
                                 <i class="material-icons mdc-list-item__graphic" aria-hidden="true">assignment</i>
-                                <span class="mdc-list-item__text">{{ game === Game.fh ? $t('Campaign sheet') : $t('Party sheet') }}</span>
+                                <span class="mdc-list-item__text">{{ [Game.fh, Game.gh2].includes(game) ? $t('Campaign sheet') : $t('Party sheet') }}</span>
                             </router-link>
                         </li>
 
@@ -198,7 +198,7 @@ export default {
     inject: ['appData'],
     data() {
         return {
-            game: null,
+            game: this.appData.game,
             hasMap: true,
             hasBuildings: false,
             drawer: null,

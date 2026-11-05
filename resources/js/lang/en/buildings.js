@@ -551,6 +551,7 @@ export default {
             },
             {
                 "level": 3,
+                "requires": "Requires 3 Ancient Coins (Item 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Lose 1 morale",

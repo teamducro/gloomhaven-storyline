@@ -22,18 +22,15 @@
     font-style: normal;
 }
 
+// Material Symbols Outlined, cut down to the icons the app uses: an icon missing from the file renders as its name.
+// Adding an icon: add its name (alphabetical) to icon_names, open the URL with a Chrome user agent and save its woff2:
+// https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&display=block&icon_names=add,api,apps,arrow_downward,arrow_upward,assignment,attach_money,bolt,cancel,check_circle,clear,close,cloud,cloud_off,content_copy,delete,delete_forever,done,error,expand_less,expand_more,filter_list,flip,forward,grid_view,help,home,info,keyboard_arrow_down,keyboard_arrow_up,language,launch,link_off,list,local_offer,map,menu,menu_book,military_tech,open_in_full,person,person_off,public,radio_button_checked,radio_button_unchecked,refresh,remove,replay,report_problem,restore,settings,share,sort,star,style,supervisor_account,text_format,unfold_more
 @font-face {
-    font-family: 'Material Icons';
+    font-family: 'Material Symbols';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Material Icons Fallback';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/Material-Icons-Fallback.woff2') format('woff2');
+    font-display: block;
+    src: url('/fonts/MaterialSymbols.woff2') format('woff2');
 }
 
 @font-face {
@@ -45,7 +42,9 @@
 }
 
 .material-icons {
-    font-family: 'Material Icons', 'Material Icons Fallback', serif;
+    font-family: 'Material Symbols';
+    // Filled, like the classic Material Icons
+    font-variation-settings: 'FILL' 1;
     font-weight: normal;
     font-style: normal;
     font-size: 24px;
@@ -58,6 +57,10 @@
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
+
+    &.outlined {
+        font-variation-settings: 'FILL' 0;
+    }
 }
 
 a.desc-link {

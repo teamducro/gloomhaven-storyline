@@ -14,9 +14,12 @@ jobs:
       - uses: actions/checkout@v7
       - id: split
         run: |
-          files=(cypress/e2e/tracker/*.cy.js)
-          specs=$(printf '%s\n' "${files[@]}" | jq -R . | jq -sc \
-            '[to_entries | group_by(.key % 3)[] | [.[].value] | join(",")]')
+          # ponytail: balances on line count, swap for recorded spec durations if groups drift apart
+          specs=$(wc -l cypress/e2e/tracker/*.cy.js | grep -v ' total$' | sort -rn | jq -Rn '
+            reduce (inputs | capture("(?<lines>\\d+) (?<file>.+)")) as $s ([range(4) | {lines: 0, files: []}];
+              (to_entries | min_by(.value.lines).key) as $i
+              | .[$i].lines += ($s.lines | tonumber) | .[$i].files += [$s.file])
+            | map(.files | join(",")) | tojson' -r)
           echo "specs=$specs" >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-node@v7
@@ -73,4 +76,4 @@ jobs:
           build: npm run production
           start: npx http-server public -p 8080 --silent
           wait-on: 'http://localhost:8080'
-          command: npx cypress run --config baseUrl=http://localhost:8080 --spec "${{ matrix.specs }}"
+          command: npx cypress run --config baseUrl=http://localhost:8080 --spec ${{ matrix.specs }}

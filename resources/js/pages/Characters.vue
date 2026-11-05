@@ -187,8 +187,13 @@
                             <div class="my-8">
                                 <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
                                         class="mr-4 mdc-button mdc-button--raised" :disabled="appData.read_only">
-                                    <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">military_tech</i>
                                     <span class="mdc-button__label">{{ $t('Retire') }}</span>
+                                </button>
+                                <button v-if="!isArchived" @click="$refs['abandon-character'].open()" type="button"
+                                        class="mr-4 mdc-button mdc-button--raised" :disabled="appData.read_only">
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">person_off</i>
+                                    <span class="mdc-button__label">{{ $t('Abandon') }}</span>
                                 </button>
                                 <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
                                         class="mdc-button mdc-button--raised" :disabled="appData.read_only">
@@ -223,19 +228,37 @@
                     </router-link>
                 </p>
                 <p v-else>{{ $t('retire-character.text') }}</p>
+                <p class="mt-2">{{ $t('retire-character.choice') }}</p>
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
-                <button v-if="isLocalCampaign" type="button" class="mdc-button mdc-dialog__button"
-                        data-mdc-dialog-action="yes"
-                        @click="remove">
-                    <span class="mdc-button__label text-red-700">{{ $t('Remove') }}</span>
-                </button>
-                <button v-else type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
-                        @click="archive">
+                <button id="retire-character" type="button" class="mdc-button mdc-dialog__button"
+                        data-mdc-dialog-action="yes" @click="retire">
                     <span class="mdc-button__label text-red-700">{{ $t('Retire') }}</span>
+                </button>
+            </template>
+        </modal>
+        <modal v-if="character" :title="$t('Abandon') + ' ' + character.name"
+               ref="abandon-character">
+            <template v-slot:content>
+                <p v-if="isLocalCampaign">{{ $t('retire-character.upgrade') }}
+                    <router-link to="/campaigns" class="link">
+                        <span @click="$refs['abandon-character'].close()">
+                            {{ $t('Please consider purchasing a license') }}.
+                        </span>
+                    </router-link>
+                </p>
+                <p v-else>{{ $t('abandon-character.text') }}</p>
+            </template>
+            <template v-slot:buttons>
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__label">{{ $t('Cancel') }}</span>
+                </button>
+                <button id="abandon-character" type="button" class="mdc-button mdc-dialog__button"
+                        data-mdc-dialog-action="yes" @click="abandon">
+                    <span class="mdc-button__label text-red-700">{{ $t('Abandon') }}</span>
                 </button>
             </template>
         </modal>
@@ -375,6 +398,9 @@ export default {
                 else if (this.currentGame === Game.fh) {
                     sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
                 }
+                else if (this.currentGame === Game.gh2) {
+                    sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.prosperityIndex);
+                }
                 else {
                     sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
                 }
@@ -503,10 +529,17 @@ export default {
                 return;
             }
 
-            if (!this.sheet.characterUnlocks[id]) {
+            const wasLocked = !this.sheet.characterUnlocks[id];
+            // Unlocking a class, or choosing a Crimson Scales starting class, adds its events.
+            if (wasLocked || this.sheet.game === Game.cs) {
+                this.sheet.addClassEvents(id, 'unlock');
+            }
+            if (wasLocked) {
                 this.sheet.characterUnlocks[id] = true;
                 this.sheet.store();
                 this.scenarioRepository.scenarioValidator.validate();
+            } else if (this.sheet.game === Game.cs) {
+                this.sheet.store();
             }
             const character = this.characterRepository.createCharacter(this.sheet, id);
             this.select(character.uuid);
@@ -532,18 +565,13 @@ export default {
             this.storySyncer.store();
         },
         remove() {
-            if (this.character) {
-                this.characterRepository.removeCharacter(this.sheet, this.character);
-                this.storySyncer.store();
-                this.selectDefault();
-            }
+            this.removeWith('removeCharacter');
         },
-        archive() {
-            if (this.character) {
-                this.characterRepository.archiveCharacter(this.sheet, this.character);
-                this.storySyncer.store();
-                this.rerender();
-            }
+        retire() {
+            this.removeWith('retireCharacter');
+        },
+        abandon() {
+            this.removeWith('abandonCharacter');
         },
         restore() {
             if (this.character) {
@@ -580,7 +608,22 @@ export default {
         },
         openCharacterMat() {
             this.$bus.$emit('open-character-mat', this.character);
-        }
+        },
+        removeWith(repositoryMethod) {
+            if (!this.character) {
+                return;
+            }
+
+            // Pro campaigns keep retired and abandoned characters archived, so they stay selected.
+            const archive = !this.isLocalCampaign && repositoryMethod !== 'removeCharacter';
+            this.characterRepository[repositoryMethod](this.sheet, this.character, archive);
+            this.storySyncer.store();
+            if (archive) {
+                this.rerender();
+            } else {
+                this.selectDefault();
+            }
+        },
     }
 }
 </script>

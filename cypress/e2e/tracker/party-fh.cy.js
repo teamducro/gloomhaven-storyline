@@ -75,4 +75,48 @@ describe('Party FH', () => {
             });
         });
     });
+
+    it('It starts new campaigns with four soldiers', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/party');
+
+        cy.get('#s-4').should('be.checked');
+        cy.get('#s-5').should('not.be.checked');
+    });
+
+    it('It shows the Ancient Coins requirement for upgrading the Tavern to level 3', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/party');
+        cy.window().then((win) => {
+            const tavern = win.app.buildings.firstWhere('id', 74);
+            tavern.state = 'built';
+            tavern.level = 1;
+        });
+        cy.visit('/tracker/#/buildings');
+        cy.contains('Requires 3 Ancient Coins (Item 245)').should('not.exist');
+
+        cy.window().then((win) => {
+            win.app.buildings.firstWhere('id', 74).level = 2;
+        });
+        cy.visit('/tracker/#/buildings');
+        cy.contains('Requires 3 Ancient Coins (Item 245)');
+    });
+
+    it('It uses the same season for a calendar week in the grid and in the week modal', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/party');
+
+        cy.get('.md\\:grid-cols-20 > div').eq(9).should('have.class', 'bg-orange-1000').click();
+        cy.get('.mdc-dialog--open').contains('Week 10 Summer');
+        utilities.closeModel();
+
+        cy.get('.md\\:grid-cols-20 > div').eq(10).should('have.class', 'bg-blue-1000').click();
+        cy.get('.mdc-dialog--open').contains('Week 11 Winter');
+    });
 });

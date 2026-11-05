@@ -1,80 +1,9 @@
 import SheetCalculations from "./SheetCalculations";
 import BuildingRepository from "../repositories/BuildingRepository";
-
-// Base gold cost per enhancement type, classic rules (gh/cs/fc), corebook Appendix (p.47).
-const classicCosts = {
-    move: 30,
-    attack: 50,
-    range: 30,
-    shield: 100,
-    push: 30,
-    pull: 30,
-    pierce: 30,
-    retaliate: 100,
-    heal: 30,
-    target: 50,
-    summon_move: 100,
-    summon_attack: 100,
-    summon_range: 50,
-    summon_hp: 50,
-    poison: 75,
-    wound: 75,
-    muddle: 50,
-    immobilize: 100,
-    disarm: 150,
-    curse: 75,
-    strengthen: 50,
-    bless: 50,
-    jump: 50,
-    fire: 100,
-    ice: 100,
-    air: 100,
-    earth: 100,
-    light: 100,
-    dark: 100,
-    wild_element: 150,
-    attack_hex: 200,
-};
-
-// Base gold cost per enhancement type, Frosthaven rules, Appendix D.
-const frosthavenCosts = {
-    move: 30,
-    attack: 50,
-    range: 30,
-    target: 75,
-    shield: 80,
-    retaliate: 60,
-    pierce: 30,
-    heal: 30,
-    push: 30,
-    pull: 20,
-    teleport: 50,
-    summon_hp: 40,
-    summon_move: 60,
-    summon_attack: 100,
-    summon_range: 50,
-    regenerate: 40,
-    ward: 75,
-    strengthen: 100,
-    bless: 75,
-    wound: 75,
-    poison: 50,
-    immobilize: 150,
-    muddle: 40,
-    curse: 150,
-    fire: 100,
-    ice: 100,
-    air: 100,
-    earth: 100,
-    light: 100,
-    dark: 100,
-    wild_element: 150,
-    jump: 60,
-    attack_hex: 200,
-};
+import GameData from "./GameData";
 
 // Types whose cost doesn't double for multi-target abilities.
-export const noMultiTargetDouble = ['target', 'fire', 'ice', 'air', 'earth', 'light', 'dark', 'wild_element', 'attack_hex'];
+export const noMultiTargetDouble = ['target', 'summon_move', 'summon_attack', 'summon_range', 'summon_hp', 'fire', 'ice', 'air', 'earth', 'light', 'dark', 'wild_element', 'attack_hex'];
 
 // Enhancements that just add +1 to a stat already printed on the card
 export const numericBoostTypes = [
@@ -122,8 +51,10 @@ const labels = {
 
 export default {
     methods: {
+        // Base gold cost per type (`enhancements` in games/<game>.json): classic rules for gh/cs/fc, Frosthaven Appendix D, and
+        // GH2e (rulebook Appendix D, p.65) which is Frosthaven's without Regenerate.
         enhancementBaseCosts(game) {
-            return game === 'fh' ? frosthavenCosts : classicCosts;
+            return new GameData().enhancementCosts(game);
         },
         enhancementLabel(type) {
             return labels[type] || type;
@@ -153,10 +84,15 @@ export default {
                 ? new BuildingRepository().find(44).level
                 : 0;
         },
-        // Frosthaven and Mercenary Pack classes use the Frosthaven card design, where the
+        // Frosthaven, Mercenary Pack and GH2e classes use the Frosthaven card design, where the
         // lost/persistent enhancement cost multipliers apply (Appendix D).
         hasFrosthavenCards(character) {
-            return ['fh', 'mp'].includes(character?.game);
+            return ['fh', 'mp', 'gh2'].includes(character?.game);
+        },
+        // GH2e: a summon's inherent multi-target attack doubles its Attack and Range enhancements (FAQ 4.1).
+        doublesForMultiTarget(type, game) {
+            return !noMultiTargetDouble.includes(type)
+                || (game === 'gh2' && ['summon_attack', 'summon_range'].includes(type));
         },
         calculateEnhancementCost({type, level, multiTarget, abilityProperty, frosthavenCard, previousCount, hexCount}, game) {
             const costs = this.enhancementBaseCosts(game);
@@ -165,17 +101,18 @@ export default {
                 ? Math.ceil(costs.attack_hex / Math.max(1, hexCount || 1))
                 : (costs[type] || 0);
 
-            if (multiTarget && !noMultiTargetDouble.includes(type)) {
+            if (multiTarget && this.doublesForMultiTarget(type, game)) {
                 cost *= 2;
             }
 
             // Lost/persistent multipliers only apply to Frosthaven-style cards.
             if (frosthavenCard) {
-                if (abilityProperty === 'lost') {
+                // GH2e: lost halves, except summon actions, and there is no persistent multiplier.
+                if (abilityProperty === 'lost' && !(game === 'gh2' && type.startsWith('summon_'))) {
                     cost *= 0.5;
                 }
                 // Persistent doesn't triple summon stat enhancements.
-                else if (abilityProperty === 'persistent' && !type.startsWith('summon_')) {
+                else if (abilityProperty === 'persistent' && game !== 'gh2' && !type.startsWith('summon_')) {
                     cost *= 3;
                 }
             }
@@ -196,6 +133,10 @@ export default {
             return !!sheet.enhancementsEnabled;
         },
         maxEnhancedCards(sheet) {
+            if (sheet.game === 'gh2') {
+                return Infinity; // GH2e FAQ 4.1: no limit
+            }
+
             return SheetCalculations.methods.calculateProsperity(sheet.prosperityIndex, sheet.game);
         },
         enhancedCardCount(sheet, characterId) {

@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Репутация отряда равна 10 или больше",
     "Have a party reputation of 20": "Репутация отряда равна 20",
     "Retire a character": "Персонаж ушёл на покой",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Способности",
     "Achievement": "Достижение | Достижения",
     "Achievements": "Достижения",
@@ -102,6 +103,7 @@ export default {
     "Required": "Не доступно",
     "Requirements": "Требования",
     "Retire": "Отправить на покой",
+    "Abandon": "Abandon",
     "Retired": "Ушедшие на покой",
     "Retirement counter": "Ушедшие на покой",
     "Reward": "Награда | Награды",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "Вы уверены, что хотите отправить этого персонажа на покой? Это действие можно будет отменить.",
-        "upgrade": "Вы уверены, что хотите полностью удалить этого персонажа? Владельцы Pro лицензии могут отправить персонажей на покой, не удаляя их."
+        "upgrade": "Вы уверены, что хотите полностью удалить этого персонажа? Владельцы Pro лицензии могут отправить персонажей на покой, не удаляя их.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Вы уверены, что хотите полностью удалить этого персонажа?"
@@ -299,7 +305,7 @@ export default {
     },
     "games-enabled": {
         "title": "Enabled Games",
-        "text": "To hide games and it's characters enable only ones you own."
+        "text": "To hide games and its characters enable only ones you own. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Пожалуйста, подумайте о покупке лицензии",
     "Danger zone!": "Опасная зона!",
@@ -346,6 +352,7 @@ export default {
     "cs": "Багровая чешуя",
     "Crimson Scales": "Багровая чешуя",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven 2nd Edition",
     "Availability": "Доступность",
     "Sticker": "Наклейка",
     "State": "State",
@@ -509,5 +516,16 @@ export default {
     "Spirits": "Spirits",
     "Timed": "Timed",
     "Void": "Void Energy",
-    "Voidsight": "Voidsight"
+    "Voidsight": "Voidsight",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }

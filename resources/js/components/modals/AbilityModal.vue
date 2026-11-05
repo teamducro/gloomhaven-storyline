@@ -61,7 +61,7 @@
                                 <select v-model="abilityProperty" class="bg-dark-gray2-75 p-2 rounded">
                                     <option value="normal">{{ $t('Normal') }}</option>
                                     <option value="lost">{{ $t('Lost (no persistent)') }}</option>
-                                    <option value="persistent">{{ $t('Persistent bonus') }}</option>
+                                    <option v-if="sheet.game !== 'gh2'" value="persistent">{{ $t('Persistent bonus') }}</option>
                                 </select>
                             </label>
 
@@ -108,7 +108,7 @@
 <script>
 import {v4 as uuidv4} from 'uuid';
 import StorySyncer from "../../services/StorySyncer";
-import AbilityEnhancements, {noMultiTargetDouble} from "../../services/AbilityEnhancements";
+import AbilityEnhancements from "../../services/AbilityEnhancements";
 
 export default {
     inject: ['appData'],
@@ -142,7 +142,7 @@ export default {
             return Object.keys(this.enhancementBaseCosts(this.sheet.game));
         },
         canDoubleForMultiTarget() {
-            return !noMultiTargetDouble.includes(this.type);
+            return this.doublesForMultiTarget(this.type, this.sheet.game);
         },
         enhancements() {
             if (!this.sheet.enhancementsEnabled) {
@@ -170,7 +170,9 @@ export default {
             return this.character.gold >= this.cost && this.enhancerUsable(this.sheet.game);
         },
         atEnhancedCardLimit() {
-            return this.enhancements.length === 0
+            // Frosthaven has no enhanced card limit
+            return this.sheet.game !== 'fh'
+                && this.enhancements.length === 0
                 && this.enhancedCardCount(this.sheet, this.character.id) >= this.maxEnhancedCards(this.sheet);
         }
     },

@@ -1668,7 +1668,7 @@ export default {
     },
     "fh-39": {
         "name": "Abyss Axe",
-        "source": "Craftsman 7",
+        "source": "Craftsman 7\nPersonal Quest 19",
         "desc": "During your attack ability, add +3 {ATTACK.fh} and {PIERCE.fh}1 to one attack targeting a Frozen Corpse, Ice Wraith, or Living Doom."
     },
     "fh-40": {
@@ -2599,7 +2599,7 @@ export default {
     },
     "fh-224": {
         "name": "Armor of Empathy",
-        "source": "unknown",
+        "source": "Scenario 60",
         "desc": "After the next three attacks targeting you, flip this card over.",
         "backDesc": "During your turn, perform {HEAL.fh}3 {TARGET.fh}1 ally, {RANGE.fh}3, {BLESS.fh} then flip this card over."
     },
@@ -2833,5 +2833,864 @@ export default {
         "source": "Reward from Solo Scenario - {HA}",
         "desc": "At the end of your turn, if you have spent 3 or more Resolve this turn, flip this card over.",
         "backDesc": "During your turn, if you have an active Irritation, you may move that card to your pool to play a different card from your pool and perform its Irritation action, then flip this card over."
+    },
+    "gh2-1": {
+        "name": "Bottes Patinées",
+        "source": "Prosperity 1",
+        "desc": "During your move ability, add +1 {MOVE.fh}."
+    },
+    "gh2-2": {
+        "name": "Bottines Ailées",
+        "source": "Prosperity 1",
+        "desc": "During your turn, add {JUMP.fh} to all your move abilities."
+    },
+    "gh2-3": {
+        "name": "Armure de Peaux",
+        "source": "Prosperity 1",
+        "desc": "On the next two sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
+    },
+    "gh2-4": {
+        "name": "Armure de Cuir",
+        "source": "Prosperity 1",
+        "desc": "When you are attacked, before drawing an attack modifier card, the attacker gains disadvantage on the attack."
+    },
+    "gh2-5": {
+        "name": "Scouting Lens",
+        "source": "Prosperity 1",
+        "desc": "During your attack ability, add {PIERCE.fh} 1 to one attack."
+    },
+    "gh2-6": {
+        "name": "Amulette de Vie",
+        "source": "Prosperity 1",
+        "desc": "During your turn, perform: {HEAL.fh} 1, Self"
+    },
+    "gh2-7": {
+        "name": "Dague Empoisonnée",
+        "source": "Prosperity 1",
+        "desc": "During your melee attack ability, add {POISON.fh} to one attack."
+    },
+    "gh2-8": {
+        "name": "Écu",
+        "source": "Prosperity 1",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack."
+    },
+    "gh2-9": {
+        "name": "Focusing Rod",
+        "source": "Prosperity 1",
+        "desc": "During your turn, if you've performed an action with {LOST.fh}, perform: {HEAL.fh} 1, {RANGE.fh} 3"
+    },
+    "gh2-10": {
+        "name": "Simple Bow",
+        "source": "Prosperity 1",
+        "desc": "During your ranged attack ability, gain advantage on one attack."
+    },
+    "gh2-11": {
+        "name": "Potion de Soin",
+        "source": "Prosperity 1",
+        "desc": "During your turn, perform: {HEAL.fh} 3, Self"
+    },
+    "gh2-12": {
+        "name": "Potion d'Endurance",
+        "source": "Prosperity 1\nCity Event 84",
+        "desc": "During your turn, {RECOVER.fh} one level 1 card from your discard pile.",
+        "faq": "X cards count as level 1 cards, so they can be recovered too."
+    },
+    "gh2-13": {
+        "name": "Element Potion",
+        "source": "Prosperity 1",
+        "desc": "During your turn, {ANY}."
+    },
+    "gh2-14": {
+        "name": "Cuir Clouté",
+        "source": "Prosperity 1",
+        "desc": "When you are attacked, before drawing an attack modifier card, the attacker gains disadvantage on the attack and you gain {SHIELD.fh} 1 for the attack."
+    },
+    "gh2-15": {
+        "name": "Poulaines Confortables",
+        "source": "Prosperity 1",
+        "desc": "When you use the basic bottom action of an ability card, perform {MOVE.fh} 3 instead of {MOVE.fh} 2."
+    },
+    "gh2-16": {
+        "name": "Bandeau des Éléments",
+        "source": "Prosperity 1",
+        "desc": "During your turn, perform: {ANY_X}: {ANY}"
+    },
+    "gh2-17": {
+        "name": "Bottes de Célérité",
+        "source": "Prosperity 2",
+        "desc": "During ordering of initiative, after all ability cards have been revealed, increase or decrease your initiative by 10."
+    },
+    "gh2-18": {
+        "name": "Bassinet Lourd",
+        "source": "Prosperity 2\nRoad Event 61",
+        "desc": "Whenever an enemy would give you {DISARM.fh}, {STUN.fh} or {MUDDLE.fh}, prevent the condition.",
+        "faq": "Only prevents conditions applied by enemies, not self-inflicted ones."
+    },
+    "gh2-19": {
+        "name": "Warden's Robes",
+        "source": "Prosperity 2",
+        "desc": "When one of your summons suffers {DAMAGE.fh} from an attack, that summon gains {SHIELD.fh} 2 for the attack."
+    },
+    "gh2-20": {
+        "name": "Chaîne à Crochet",
+        "source": "Prosperity 2",
+        "desc": "During your turn, add {PULL.fh} 2 to all your ranged attacks."
+    },
+    "gh2-21": {
+        "name": "Potion de Puissance",
+        "source": "Prosperity 2",
+        "desc": "During your turn, add +1 {ATTACK.fh} to all your attacks."
+    },
+    "gh2-22": {
+        "name": "Lance ferrée",
+        "source": "Prosperity 2",
+        "desc": "During your turn, one of your single-target melee attack abilities may target an enemy two hexes away."
+    },
+    "gh2-23": {
+        "name": "Épée Dentelée",
+        "source": "Prosperity 2",
+        "desc": "During your melee attack ability, add {WOUND.fh} to one attack."
+    },
+    "gh2-24": {
+        "name": "Couteau Noir",
+        "source": "Prosperity 2",
+        "desc": "During your melee attack ability, add {CURSE.fh} to one attack."
+    },
+    "gh2-25": {
+        "name": "Filet Lesté",
+        "source": "Prosperity 3",
+        "desc": "During your ranged attack ability, add {IMMOBILIZE.fh} to one attack."
+    },
+    "gh2-26": {
+        "name": "Jumelles Oeil-de-faucon",
+        "source": "Prosperity 3",
+        "desc": "During your attack ability, gain advantage on all attacks."
+    },
+    "gh2-27": {
+        "name": "Casque de fer",
+        "source": "Prosperity 3",
+        "desc": "When you are attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as a {+0_MODIFIER} instead."
+    },
+    "gh2-28": {
+        "name": "Cotte de Maille",
+        "source": "Prosperity 3",
+        "desc": "On the next three sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
+    },
+    "gh2-29": {
+        "name": "Nimble Legguards",
+        "source": "Prosperity 3",
+        "desc": "When an adjacent ally would be targeted by an attack, you are targeted instead, regardless of range and line-of-sight.",
+        "faq": "If you are invisible and cannot be targeted, you cannot redirect the attack to yourself."
+    },
+    "gh2-30": {
+        "name": "Armorbane Bow",
+        "source": "Prosperity 3",
+        "desc": "During your turn, add {PIERCE.fh} 3 to all your ranged attacks."
+    },
+    "gh2-31": {
+        "name": "Bâton d'Invocation",
+        "source": "Prosperity 3",
+        "desc": "During your turn, grant one of your summons: {MOVE.fh} +0"
+    },
+    "gh2-32": {
+        "name": "Encensoir Noir",
+        "source": "Prosperity 3",
+        "desc": "During your turn, perform: {MUDDLE.fh}, All, {RANGE.fh} 3 All enemies that have {MUDDLE.fh} add -1 {ATTACK.fh} to all their attacks this round."
+    },
+    "gh2-33": {
+        "name": "Deuxième Peau",
+        "source": "Prosperity 4",
+        "desc": "At the start of the scenario, remove one {-1_MODIFIER} attack modifier card from your attack modifier deck."
+    },
+    "gh2-34": {
+        "name": "Battle Axe",
+        "source": "Prosperity 4\nRoad Event 64",
+        "desc": "During your singe-target melee attack ability, change the targeting of the ability to:"
+    },
+    "gh2-35": {
+        "name": "Pavois",
+        "source": "Prosperity 4",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 2 for the attack."
+    },
+    "gh2-36": {
+        "name": "Moon Earing",
+        "source": "Prosperity 4\nCity Event 6",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items."
+    },
+    "gh2-37": {
+        "name": "Potion de Soin Majeure",
+        "source": "Prosperity 4\nReward from {SCENARIO 89}",
+        "desc": "During your turn, perform: {HEAL.fh} 6, Self"
+    },
+    "gh2-38": {
+        "name": "Jambières Lourdes",
+        "source": "Prosperity 4",
+        "desc": "During your move ability, add +1 {MOVE.fh}. After the move ability, perform: {MUDDLE.fh}, {TARGET.fh} all, {RANGE.fh} 1"
+    },
+    "gh2-39": {
+        "name": "Anneau de Crânes",
+        "source": "Prosperity 4",
+        "desc": "Summon Skeleton"
+    },
+    "gh2-40": {
+        "name": "Shadow Amor",
+        "source": "Prosperity 4",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, negate the {DAMAGE.fh} and infuse {DARK}."
+    },
+    "gh2-41": {
+        "name": "Kinetic Treads",
+        "source": "Prosperity 5",
+        "desc": "At the end of your move ability, grant one adjacent ally: {MOVE.fh} 2"
+    },
+    "gh2-42": {
+        "name": "Guêtres d'Endurance",
+        "source": "Prosperity 5",
+        "desc": "After you move 4 or more hexes on your turn, after the move ability, perform: {HEAL.fh} 1, Self"
+    },
+    "gh2-43": {
+        "name": "Casque du faucon",
+        "source": "Prosperity 5",
+        "desc": "During your turn, add +1 {RANGE.fh} to all your ranged attacks."
+    },
+    "gh2-44": {
+        "name": "Precision Bow",
+        "source": "Prosperity 5",
+        "desc": "After your ranged attack ability, perform: {ATTACK.fh} 1, {TARGET.fh} 1 target of the attack ability at any {RANGE.fh}, {PIERCE.fh} 1"
+    },
+    "gh2-45": {
+        "name": "Major Element Potion",
+        "source": "Prosperity 5\nRoad Event 52",
+        "desc": "During your turn, {ANY} {ANY}."
+    },
+    "gh2-46": {
+        "name": "Light Targe",
+        "source": "Prosperity 5",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack. After the attack but before any {RETALIATE.fh}, perform: {MOVE.fh} 1"
+    },
+    "gh2-47": {
+        "name": "Cape Multipoches",
+        "source": "Prosperity 5",
+        "desc": "At the start of the scenario, bring one additional {SMALL-ITEM} item."
+    },
+    "gh2-48": {
+        "name": "Bâton des Éléments",
+        "source": "Prosperity 5",
+        "desc": "During your turn, {ANY}."
+    },
+    "gh2-49": {
+        "name": "Casque à Cornes",
+        "source": "Prosperity 6",
+        "desc": "After you move 4 or more hexes on your turn, add +1 {ATTACK.fh} to your next melee attack this turn."
+    },
+    "gh2-50": {
+        "name": "Robes of the Oak",
+        "source": "Prosperity 6",
+        "desc": "During your turn, perform: {HEAL.fh} 3, One ally, {RANGE.fh} 1"
+    },
+    "gh2-51": {
+        "name": "Heavy Mace",
+        "source": "Prosperity 6\nRoad Event 8",
+        "desc": "After you are attacked by an adjacent enemy, perform: {ATTACK.fh} 1, enemyAttacked This attack is unaffected by {RETALIATE.fh}."
+    },
+    "gh2-52": {
+        "name": "Boucle d'Oreille Solaire",
+        "source": "Prosperity 6",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items and perform: {HEAL.fh} 2, Self"
+    },
+    "gh2-53": {
+        "name": "Potion de Puissance Majeure",
+        "source": "Prosperity 6\nReward from {SCENARIO 74}",
+        "desc": "During your turn, add +2 {ATTACK.fh} to all your attacks."
+    },
+    "gh2-54": {
+        "name": "Circlet of Sanctity",
+        "source": "Prosperity 7",
+        "desc": "After the next three attacks targeting an ally within {RANGE.fh} 2 flip this card over.",
+        "backDesc": "During your turn, perform: {WARD.fh}, {RANGE.fh} 3 then flip this card over."
+    },
+    "gh2-55": {
+        "name": "Bombe Explosive",
+        "source": "Prosperity 7",
+        "desc": "During your single-target ranged attack ability, change the targeting of the ability to:"
+    },
+    "gh2-56": {
+        "name": "Sollerets d'Acier",
+        "source": "Prosperity 7",
+        "desc": "At the end of the turn, if you have moved 1 or fewer hexes during your turn, gain {SHIELD.fh} 1 for the round."
+    },
+    "gh2-57": {
+        "name": "Strategist's Ring",
+        "source": "Prosperity 7",
+        "desc": "At the end of the turn, play one card from your hand and perform all persistent and mandatory abilities on either the top or bottom action of the card."
+    },
+    "gh2-58": {
+        "name": "Potion d'Endurance Majeure",
+        "source": "Prosperity 7",
+        "desc": "During your turn, {RECOVER.fh} one card from your discard pile."
+    },
+    "gh2-59": {
+        "name": "Longue-vue Télescopique",
+        "source": "Prosperity 8",
+        "desc": "During your turn, add +2 {RANGE.fh} to all your ranged attacks."
+    },
+    "gh2-60": {
+        "name": "Bâton d'Éminence",
+        "source": "Prosperity 8",
+        "desc": "During your turn, {ANY_X} to add +1 {ATTACK.fh} to all your attacks."
+    },
+    "gh2-61": {
+        "name": "Marteau de Guerre",
+        "source": "Prosperity 8",
+        "desc": "During your melee attack ability, add {STUN.fh} to all attacks."
+    },
+    "gh2-62": {
+        "name": "Masque de Terreur",
+        "source": "Prosperity 8",
+        "desc": "During your melee attack, add {PUSH.fh} 1."
+    },
+    "gh2-63": {
+        "name": "Boucle d'Oreille Étoilée",
+        "source": "Prosperity 8\n{SCENARIO 54} (Treasure #03)",
+        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items, choose which card to lose during the rest, and perform: {HEAL.fh} 2, Self"
+    },
+    "gh2-64": {
+        "name": "Talisman de Puissance",
+        "source": "Prosperity 9",
+        "desc": "During your turn, {RECOVER.fh} one of your lost {SMALL-ITEM} items."
+    },
+    "gh2-65": {
+        "name": "Pique",
+        "source": "Prosperity 9",
+        "desc": "During your single-target melee attack ability, change the targeting of the ability to:"
+    },
+    "gh2-66": {
+        "name": "Cape d'Invisibilité",
+        "source": "Prosperity 9",
+        "desc": "During your turn, perform: {INVISIBLE.fh}, Self"
+    },
+    "gh2-67": {
+        "name": "Spiked Shoes",
+        "source": "Prosperity 9",
+        "desc": "When you use the basic bottom action of an ability card, you may perform {ATTACK.fh} 3 instead of {MOVE.fh} 2."
+    },
+    "gh2-68": {
+        "name": "Anneau de Hâte",
+        "source": "Prosperity 9",
+        "desc": "At the end of your turn, play one card from your hand and perform the bottom action of the card."
+    },
+    "gh2-69": {
+        "name": "Plate Mail",
+        "source": "Military Reputation 13",
+        "desc": "On the next five sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
+    },
+    "gh2-70": {
+        "name": "Standard Rations",
+        "source": "Military Reputation 15",
+        "desc": "Whenever you heal from a long rest, add +2 {HEAL.fh}."
+    },
+    "gh2-71": {
+        "name": "Mastercraft Crossbow",
+        "source": "Military Reputation 17",
+        "desc": "During your ranged attack ability, add {WOUND.fh} to one attack. One enemy adjacent to that target and further from you than that target suffers {DAMAGE.fh} 2."
+    },
+    "gh2-72": {
+        "name": "Commander's Cap",
+        "source": "Military Reputation 19",
+        "desc": "Allies gain advantage on the next three attacks performed while adjacent to you. Then flip this card over.",
+        "backDesc": "After the next three attack abilities you perform while within {RANGE.fh} 2 of one or more allies, flip this card over."
+    },
+    "gh2-73": {
+        "name": "Mantle of Summoning",
+        "source": "Merchant's Guild Reputation 13",
+        "desc": "During your turn, grant one of your summons: {SHIELD.fh} 2 {ROUND}"
+    },
+    "gh2-74": {
+        "name": "Concealed Dagger",
+        "source": "Merchant's Guild Reputation 15",
+        "desc": "During your turn, place a character token on one adjacent enemy. At the start of each of the enemy's turns, they suffer {DAMAGE.fh} 1. When that enemy dies, flip this card over. {PERSISTENT}",
+        "backDesc": "Place the character token in the hex in which the enemy died. You may loot that token to flip this card over."
+    },
+    "gh2-75": {
+        "name": "Opulent Hood",
+        "source": "Merchant's Guild Reputation 17",
+        "desc": "During your turn, grant one adjacent ally: {ATTACK.fh} 1, {PUSH.fh} 1"
+    },
+    "gh2-76": {
+        "name": "Merchant's Insignia",
+        "source": "Merchant's Guild Reputation 19",
+        "desc": "Whenever you complete a scenario, gain 10 gold."
+    },
+    "gh2-77": {
+        "name": "Robes d'Évocation",
+        "source": "Demons Reputation 13",
+        "desc": "During your attack ability, {ANY_X} to add +1 {ATTACK.fh} to all your attacks."
+    },
+    "gh2-78": {
+        "name": "Faucheuse fatale",
+        "source": "Demons Reputation 15",
+        "desc": "During your melee attack ability, add +1 {ATTACK.fh} and gain advantage on one attack. If this attack kills the target, after the attack perform: {HEAL.fh} 2, Self"
+    },
+    "gh2-79": {
+        "name": "Poudre du Chaos",
+        "source": "Demons Reputation 17",
+        "desc": "During your attack ability, add {POISON.fh}, {STUN.fh}, and {CURSE.fh} to one attack."
+    },
+    "gh2-80": {
+        "name": "Demonic Skull",
+        "source": "Demons Reputation 19",
+        "desc": "During your turn, {ANY} and flip this card over at the end of your turn.",
+        "backDesc": "When you kill a monster, flip this card over at the end of your turn."
+    },
+    "gh2-81": {
+        "name": "Lame Glacée",
+        "source": "Random Item",
+        "desc": "During your melee attack ability, {ICE_X} to add +2 {ATTACK.fh} to one attack."
+    },
+    "gh2-82": {
+        "name": "Lame Tempétueuse",
+        "source": "Random Item",
+        "desc": "During your melee attack ability, {WIND_X} to add +2 {ATTACK.fh} to one attack."
+    },
+    "gh2-83": {
+        "name": "Lame Infernale",
+        "source": "Random Item",
+        "desc": "During your melee attack ability, {FIRE_X} to add +2 {ATTACK.fh} to one attack."
+    },
+    "gh2-84": {
+        "name": "Lame Sismique",
+        "source": "Random Item",
+        "desc": "During your melee attack ability, {EARTH_X} to add +2 {ATTACK.fh} to one attack."
+    },
+    "gh2-85": {
+        "name": "Lame Lumineuse",
+        "source": "Random Item",
+        "desc": "During your melee attack ability, {LIGHT_X} to add +2 {ATTACK.fh} to one attack."
+    },
+    "gh2-86": {
+        "name": "Lame de Ténèbres",
+        "source": "Random Item",
+        "desc": "During your melee attack ability, {DARK_X} to add +2 {ATTACK.fh} to one attack."
+    },
+    "gh2-87": {
+        "name": "Dague Providentielle",
+        "source": "Random Item",
+        "desc": "When you use the basic top action of an ability card, perform {ATTACK.fh} 3 instead of {ATTACK.fh} 2."
+    },
+    "gh2-88": {
+        "name": "Bouclier à Pointes",
+        "source": "Random Item",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 and {RETALIATE.fh} 2 for the attack."
+    },
+    "gh2-89": {
+        "name": "Armure Tranchelame",
+        "source": "Random Item",
+        "desc": "On the next three sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1, {RETALIATE.fh} 1 for the attacks"
+    },
+    "gh2-90": {
+        "name": "Prestecape",
+        "source": "Random Item",
+        "desc": "During your turn, perform: {TELEPORT.fh} 4 This teleport must end in a hex adjacent to an enemy."
+    },
+    "gh2-91": {
+        "name": "Bottes de Rapidité",
+        "source": "Random Item",
+        "desc": "During ordering of initiative, after all ability cards have been revealed, increase or decrease your initiative by 20."
+    },
+    "gh2-92": {
+        "name": "Poudre Étourdissante",
+        "source": "Random Item",
+        "desc": "During your attack ability, add {STUN.fh} to one attack."
+    },
+    "gh2-93": {
+        "name": "Scroll of Ferocity",
+        "source": "Random Item",
+        "desc": "During your turn, grant one ally within {RANGE.fh} 5: {ATTACK.fh} 2"
+    },
+    "gh2-94": {
+        "name": "Parchemin de Soin",
+        "source": "Random Item",
+        "desc": "During your turn, perform: {HEAL.fh} 3, {RANGE.fh} 5"
+    },
+    "gh2-95": {
+        "name": "Scroll of Shielding",
+        "source": "Random Item",
+        "desc": "When one ally within {RANGE.fh} 5 suffers {DAMAGE.fh} from an attack, grant them {SHIELD.fh} 3 for the attack."
+    },
+    "gh2-96": {
+        "name": "Scroll of Swiftness",
+        "source": "Random Item",
+        "desc": "During one ally within {RANGE.fh} 5's move ability, add +1 {MOVE.fh} and {JUMP.fh}."
+    },
+    "gh2-97": {
+        "name": "Brodequins de Bonheur",
+        "source": "{SCENARIO 73} (Treasure #37)",
+        "desc": "During your move ability, add +1 {MOVE.fh}. If you move 4 or more hexes and end on a money token or treasure tile with that move ability, gain 1 XP."
+    },
+    "gh2-98": {
+        "name": "Cape de Phase",
+        "source": "{SCENARIO 3} (Treasure #04)",
+        "desc": "During your turn, designate the hex you are occupying and add {JUMP.fh} to all your move abilities. At the end of your turn, {TELEPORT.fh} to the designated hex.",
+        "faq": "End of turn looting happens in your original hex, after the teleport."
+    },
+    "gh2-99": {
+        "name": "Explosifs Instables",
+        "source": "{SCENARIO 10} (Treasure #18)",
+        "desc": "During your turn, perform: {ATTACK.fh} 2, {RANGE.fh} 3"
+    },
+    "gh2-100": {
+        "name": "Charged Boots",
+        "source": "{SCENARIO 71} (Treasure #29)",
+        "desc": "After your next three turns during which you do not perform a move ability, flip this card over.",
+        "backDesc": "During your move ability, add +2 {MOVE.fh} and flip this card over."
+    },
+    "gh2-101": {
+        "name": "Cure Potion",
+        "source": "{SCENARIO 89} (Treasure #33)",
+        "desc": "During your turn, remove one negative condition you have. This item can be used while you have {STUN.fh}."
+    },
+    "gh2-102": {
+        "name": "Anneau d'Acier",
+        "source": "{SCENARIO 14} (Treasure #54)",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 4 for the attack."
+    },
+    "gh2-103": {
+        "name": "Ranger's Hood",
+        "source": "{SCENARIO 28} (Treasure #65)",
+        "desc": "During one of your summon's attack abilities, before drawing attack modifier cards, reveal the top two cards of your attack modifier deck. You may put any of them on the bottom of your deck."
+    },
+    "gh2-104": {
+        "name": "Warding Rod",
+        "source": "{SCENARIO 4} (Treasure #24)",
+        "desc": "During your turn, perform: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
+    },
+    "gh2-105": {
+        "name": "Oeil Chanceux",
+        "desc": "During your turn, perform: {STRENGTHEN.fh}, All, {RANGE.fh} 1"
+    },
+    "gh2-106": {
+        "name": "Armure à Vapeur",
+        "source": "{SCENARIO 33} (Treasure #50)",
+        "desc": "On the next five sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
+    },
+    "gh2-107": {
+        "name": "Collier de Dents",
+        "source": "{SCENARIO 52} (Treasure #73)",
+        "desc": "Whenever you kill a monster, perform: {HEAL.fh} 1, Self"
+    },
+    "gh2-108": {
+        "name": "Capuche de Voleur",
+        "source": "{SCENARIO 6} (Treasure #07)",
+        "desc": "During your turn, if you've killed an enemy this turn, perform: {LOOT 1}"
+    },
+    "gh2-109": {
+        "name": "Ancienne Chignole",
+        "source": "Reward from {SCENARIO 87}",
+        "desc": "During your melee attack ability, add +2 {ATTACK.fh}, {PIERCE.fh} 2 to all attacks."
+    },
+    "gh2-110": {
+        "name": "Fauchon Attisé",
+        "source": "{SCENARIO 37} {SCENARIO 82} (Treasure #40)",
+        "desc": "During your turn, add +1 {ATTACK.fh} to your next melee attack. If {FIRE} is strong or waning, all enemies adjacent to the target of that attack suffer {DAMAGE.fh} 1."
+    },
+    "gh2-111": {
+        "name": "Crâne de Haine",
+        "source": "Reward from {SCENARIO 98}",
+        "desc": "During your turn, perform: {CURSE.fh}, All, {RANGE.fh} 1"
+    },
+    "gh2-112": {
+        "name": "Rouage Curieux",
+        "desc": "During your turn, destroy one trap within {RANGE.fh} 3. If an enemy is adjacent to that trap, you may instead spring the trap and apply its effects do that enemy."
+    },
+    "gh2-113": {
+        "name": "Carte Noire",
+        "source": "Personal Quest 15",
+        "desc": "During your turn, place a character token on one normal or elite enemy within {RANGE.fh} 3. You and all allies add +1 {ATTACK.fh} to all attacks targeting this enemy. {PERSISTENT}"
+    },
+    "gh2-114": {
+        "name": "Gust Striders",
+        "source": "City Event 17\nCity Event 81",
+        "desc": "During your turn. add {JUMP.fh} to your next move ability. If {WIND} is strong or waning also add +2 {MOVE.fh}."
+    },
+    "gh2-115": {
+        "name": "Rod of Transference",
+        "source": "{SCENARIO 11} (Treasure #35)",
+        "desc": "When an ally within {RANGE.fh} 3 would suffer {DAMAGE.fh}, you suffer the {DAMAGE.fh} instead."
+    },
+    "gh2-116": {
+        "name": "Fated Verses",
+        "source": "Prosperity 1",
+        "desc": "During your attack ability, you may gain disadvantage on one attack to flip this card over at the end of your turn.",
+        "backDesc": "During an ally's attack ability, that ally gains advantage on one of their attacks and you flip this card over.",
+        "faq": "You cannot use the front side if you already have disadvantage on the attack. The front can be used on an attack an ally grants you, but the card only flips at the end of your next turn."
+    },
+    "gh2-117": {
+        "name": "Dawnblade",
+        "source": "Reward from {SCENARIO 99}",
+        "desc": "During your turn, if {DARK} is strong or waning, add +1 {ATTACK.fh} to your next melee attack. If you brought Duskbrand, {LIGHT}."
+    },
+    "gh2-118": {
+        "name": "Duskbrand",
+        "source": "Road Event 33",
+        "desc": "During your turn, if {LIGHT} is strong or waning, add +1 {ATTACK.fh} to your next melee attack. If you brought Dawnblade, {DARK}."
+    },
+    "gh2-119": {
+        "name": "Bottes d'Écailles de Wyverne",
+        "source": "{SCENARIO 13} (Treasure #19)",
+        "desc": "During your move ability, add +1 {MOVE.fh} and ignore difficult and hazardous terrain."
+    },
+    "gh2-120": {
+        "name": "Armure d'Écailles de Wyverne",
+        "source": "{SCENARIO 29} (Treasure #75)\nRoad Event 32",
+        "desc": "Whenever you long rest, gain {STRENGTHEN.fh}."
+    },
+    "gh2-121": {
+        "name": "Heaume d'Écailles de Wyverne",
+        "source": "{SCENARIO 38} (Treasure #34)",
+        "desc": "During your turn, perform: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3 If you brought Drakescale Boots and Drakescale Armor, add +1 {TARGET.fh}."
+    },
+    "gh2-122": {
+        "name": "Frost Beetle Lantern",
+        "desc": "During your turn, perform: {ANY_X}: {ICE}"
+    },
+    "gh2-123": {
+        "name": "Storm Beetle Lantern",
+        "source": "Road Event 30",
+        "desc": "During your turn, perform: {ANY_X}: {WIND}"
+    },
+    "gh2-124": {
+        "name": "Ignition Beetle Lantern",
+        "source": "Road Event 30",
+        "desc": "During your turn, perform: {ANY_X}: {FIRE}"
+    },
+    "gh2-125": {
+        "name": "Tremor Beetle Lantern",
+        "source": "Road Event 30",
+        "desc": "During your turn, perform: {ANY_X}: {EARTH}"
+    },
+    "gh2-126": {
+        "name": "Brilliant Beetle Lantern",
+        "source": "Road Event 30",
+        "desc": "During your turn, perform: {ANY_X}: {LIGHT}"
+    },
+    "gh2-127": {
+        "name": "Twilight Beetle Lantern",
+        "source": "Road Event 30",
+        "desc": "During your turn, perform: {ANY_X}: {DARK}"
+    },
+    "gh2-128": {
+        "name": "Pendentif des Pactes Obscurs",
+        "source": "{SCENARIO 27} (Treasure #05)\nRoad Event 36",
+        "desc": "During your turn, {RECOVER.fh} one of your lost {SMALL-ITEM} items, and flip this card over.",
+        "backDesc": "On your next three rests, gain {CURSE.fh}. After the third rest, flip this card over."
+    },
+    "gh2-129": {
+        "name": "Haume de la Montagne",
+        "source": "{SCENARIO 90} (Treasure #22)",
+        "desc": "When you are attacked, before drawing an attack modifier card, if {EARTH} is strong or waning, gain {WARD.fh}."
+    },
+    "gh2-130": {
+        "name": "Marteau de la Montagne",
+        "source": "{SCENARIO 90} (Treasure #22)",
+        "desc": "Summon Warrior Spirit"
+    },
+    "gh2-131": {
+        "name": "Crête des Vagues",
+        "source": "{SCENARIO 70} (Treasure #31)",
+        "desc": "During your turn, if {ICE} is strong or waning, perform either: {PUSH.fh} 2, One ally, {RANGE.fh} 3 or {PULL.fh} 2, One ally, {RANGE.fh} 3"
+    },
+    "gh2-132": {
+        "name": "Compas Maudit",
+        "source": "{SCENARIO 68} (Treasure #67)",
+        "desc": "During your turn, control one enemy within {RANGE.fh} 5. {MOVE.fh} 2"
+    },
+    "gh2-133": {
+        "name": "Coeur du Traître",
+        "source": "Reward from {SCENARIO 80}",
+        "desc": "When you would be attacked by an adjacent normal enemy, instead control that enemy: {ATTACK.fh} -1",
+        "faq": "Instead of attacking you, the enemy performs an Attack -1 on one of your other enemies. Can also be used just to negate the attack."
+    },
+    "gh2-134": {
+        "name": "Noyau de Puissance",
+        "desc": "Summon Steel Construct"
+    },
+    "gh2-135": {
+        "name": "Cristal Résonnant",
+        "desc": "During your turn, suffer {DAMAGE.fh} 4 or destroy an adjacent obstacle to have an enemy within {RANGE.fh} 3 suffer {DAMAGE.fh} 4."
+    },
+    "gh2-136": {
+        "name": "Anneau Spiralé",
+        "source": "Reward from {SCENARIO 67}",
+        "desc": "During your turn, perform: {LIGHT_X}: {HEAL.fh} 3, Self, {BLESS.fh} {DARK_X}: {ATTACK.fh} 3, {CURSE.fh}"
+    },
+    "gh2-137": {
+        "name": "Châle Mité",
+        "source": "City Event 86",
+        "desc": "All monsters consider you to be last in initiative order when determining their focus.",
+        "faq": "Does not affect your summons."
+    },
+    "gh2-138": {
+        "name": "Hache Sanglante",
+        "source": "Road Event 63",
+        "desc": "During your melee attack ability, suffer {DAMAGE.fh} 2 to add +1 {ATTACK.fh} to all attacks."
+    },
+    "gh2-139": {
+        "name": "Otherworldly Scepter",
+        "source": "Reward from {SCENARIO 94}\nCity Event 85",
+        "desc": "When you perform a summon action, each summon summoned by that action gains {WARD.fh}, {INVISIBLE.fh} and {STRENGTHEN.fh}."
+    },
+    "gh2-140": {
+        "name": "Remote Attack Spider",
+        "source": "City Event 98",
+        "desc": "During your turn, perform: {POISON.fh}, All, {RANGE.fh} 1"
+    },
+    "gh2-141": {
+        "name": "Remote Aid Spider",
+        "source": "City Event 98",
+        "desc": "During your turn, perform: {HEAL.fh} 2, All, {RANGE.fh} 1"
+    },
+    "gh2-142": {
+        "name": "Cuissardes de Magma",
+        "source": "{SCENARIO 86} (Treasure #01)",
+        "desc": "During your move ability, add +1 {MOVE.fh} and create one 1-hex hazardous terrain tile in the featureless hex you end your movement occupying.",
+        "faq": "You do not take damage from the hazardous terrain you create; it only damages figures that enter it."
+    },
+    "gh2-143": {
+        "name": "Boots of Bracing",
+        "source": "{SCENARIO 81} (Treasure #61)",
+        "desc": "During your ranged attack ability, gain {IMMOBILIZE.fh} to add +1 {ATTACK.fh} to one attack."
+    },
+    "gh2-144": {
+        "name": "Temporal Matrix",
+        "source": "Reward from {SCENARIO 92}",
+        "desc": "During ordering of initiative, after all ability cards have been revealed, order initiatives for the round from highest to lowest instead of lowest to highest."
+    },
+    "gh2-145": {
+        "name": "Harrow-Hook",
+        "desc": "During your turn, perform: {MOVE.fh} 2, {JUMP.fh} This movement must end adjacent to an obstacle or wall."
+    },
+    "gh2-146": {
+        "name": "Amberhollow",
+        "source": "Road Event 15\nRoad Event 25\nRoad Event 28\nRoad Event 30\nRoad Event 31",
+        "desc": "This item must be brought into the scenario and is returned to the unavailable item supply at the end of the scenario. During your turn, perform: {STRENGTHEN.fh}, {BLESS.fh}, Self"
+    },
+    "gh2-147": {
+        "name": "Scepter of Xorn",
+        "source": "Reward from {SCENARIO 57}\nReward from {SCENARIO 58}",
+        "desc": "During your turn, if you do not have {POISON.fh}, gain {POISON.fh} to perform: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
+    },
+    "gh2-148": {
+        "name": "Shield of the Righteous",
+        "source": "{SCENARIO 65} (Treasure #59)",
+        "desc": "When you suffer {DAMAGE.fh} from an attack, negate the {DAMAGE.fh} and infuse {LIGHT}"
+    },
+    "gh2-149": {
+        "name": "Aesther Spyglass",
+        "source": "Personal Quest 04",
+        "desc": "This item may only be used if you are adjacent to at least one obstacle. During your turn, perform: {BLESS.fh}, Self"
+    },
+    "gh2-150": {
+        "name": "Experimental Armor",
+        "source": "Personal Quest 17",
+        "desc": "This item cannot be sold and must be brought into each scenario. When you suffer {DAMAGE.fh} from an attack, you may suffer {DAMAGE.fh} 2 to have all adjacent allies and enemies suffer {DAMAGE.fh} 2."
+    },
+    "gh2-151": {
+        "name": "Épée des Sables",
+        "desc": "During your melee attack ability, add {WOUND.fh}, {POISON.fh} to all attacks."
+    },
+    "gh2-152": {
+        "name": "Ruby Talisman",
+        "source": "Reward from {SCENARIO 75}",
+        "desc": "During your turn if, an ally within {RANGE.fh} 3 has a negative condition, you may gain {DISARM.fh} to remove one negative condition from that ally and give them Safeguard, {BLESS.fh}."
+    },
+    "gh2-153": {
+        "name": "Hooked Shield",
+        "source": "Reward from Solo Scenario - {BR2}",
+        "desc": "After you push an enemy, perform: {MOVE.fh} 3, {JUMP.fh} This movement may only enter hexes that the pushed enemy exited."
+    },
+    "gh2-154": {
+        "name": "Rayon de Concentration",
+        "source": "Reward from Solo Scenario - {TI2}",
+        "desc": "During your heal ability, add +1 {HEAL.fh} and {STRENGTHEN.fh} one heal targeting an ally."
+    },
+    "gh2-155": {
+        "name": "Etheric Elixir",
+        "source": "Reward from Solo Scenario - {SW2}",
+        "desc": "When you perform the top {LOST.fh} action of Reviving Ether, remove the {NULL_MODIFIER} card from your attack modifier deck for the remainder of the scenario."
+    },
+    "gh2-156": {
+        "name": "Stylet Silencieux",
+        "source": "Reward from Solo Scenario - {SC2}",
+        "desc": "Add {PIERCE.fh} 1 to all your attacks."
+    },
+    "gh2-157": {
+        "name": "Charme de Pierre",
+        "source": "Reward from Solo Scenario - {CH2}",
+        "desc": "During your turn, perform your next attack or heal ability this turn as if you occupied the same hex as any obstacle. {EARTH}"
+    },
+    "gh2-158": {
+        "name": "Poignard Psychique",
+        "source": "Reward from Solo Scenario - {MT2}",
+        "desc": "Add +1 {ATTACK.fh} to all your attacks from your {AUGMENT} actions."
+    },
+    "gh2-159": {
+        "name": "Insignia of the Divine",
+        "source": "Reward from Solo Scenario - {SK2}",
+        "desc": "During your turn, grant self or one adjacent ally: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
+    },
+    "gh2-160": {
+        "name": "Ceinture Logistique",
+        "source": "Reward from Solo Scenario - {QM2}",
+        "desc": "During your turn, gain 10 Supplies and give one adjacent ally one item of your choice from the {QM2} item supply."
+    },
+    "gh2-161": {
+        "name": "Idole de Phase",
+        "source": "Reward from Solo Scenario - {ST2}",
+        "desc": "When one of your summons suffers {DAMAGE.fh} from an attack, negate the {DAMAGE.fh} and that summon gains {INVISIBLE.fh}."
+    },
+    "gh2-162": {
+        "name": "The Night's Caress",
+        "source": "Reward from Solo Scenario - {NS2}",
+        "desc": "When you lose {INVISIBLE.fh}, flip this card over and perform: {MUDDLE.fh}, {RANGE.fh} 1",
+        "backDesc": "When you gain {INVISIBLE.fh}, flip this card over and look at the top card of your attack modifier deck. You may put that card on the bottom of your deck."
+    },
+    "gh2-163": {
+        "name": "Pendentif du Fléau",
+        "source": "Reward from Solo Scenario - {PH2}",
+        "desc": "During your turn, perform: {CURSE.fh}, Plague, {RANGE.fh} 5 You may give one ally within {RANGE.fh} 3 (of you) {POISON.fh} to add +1 {TARGET.fh}."
+    },
+    "gh2-164": {
+        "name": "Masque de la Mort",
+        "source": "Reward from Solo Scenario - {BE2}",
+        "desc": "When you reveal cards from any deck, reveal one additional card."
+    },
+    "gh2-165": {
+        "name": "Luth du Maître",
+        "source": "Reward from Solo Scenario - {SS2}",
+        "desc": "When you perform a {SONG} action, gain one Note of your choice in addition to any other Note you gain this round."
+    },
+    "gh2-166": {
+        "name": "Cape du Chasseur",
+        "source": "Reward from Solo Scenario - {DS2}",
+        "desc": "Whenever you perform a {DOOM} action, immediately afterwards grant self or one of your summons: {MOVE.fh} 1 This movement must move toward the enemy that has {DOOM}."
+    },
+    "gh2-167": {
+        "name": "Manteau du Docteur",
+        "source": "Reward from Solo Scenario - {SB2}",
+        "desc": "When an ally within {RANGE.fh} 3 suffers {DAMAGE.fh} from an attack, after the attack ability perform: {MOVE.fh} 2 This movement must end adjacent to the attacked ally."
+    },
+    "gh2-168": {
+        "name": "Elemental Vest",
+        "source": "Reward from Solo Scenario - {EL2}",
+        "desc": "At the end of your turn, for every two elements you consumed that turn: {ANY}."
+    },
+    "gh2-169": {
+        "name": "Bâton de Commandement",
+        "source": "Reward from Solo Scenario - {WF2}",
+        "desc": "During your turn, {COMMAND}: {ATTACK.fh} 2"
+    },
+    "gh2-170": {
+        "name": "Crawling Carapace",
+        "source": "Reward from Solo Scenario - {BS2}",
+        "desc": "On the first source of {DAMAGE.fh} from an attack you or one of your summons would suffer each round, the attacked figure gains {SHIELD.fh} 1 for the attack."
     }
 }

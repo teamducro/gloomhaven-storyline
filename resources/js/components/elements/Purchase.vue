@@ -76,7 +76,7 @@
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="purchaseExpand">
-                    <span class="mdc-button__label text-primary">{{ $t('Purchase') +' '+ $t(expand) }}</span>
+                    <span class="mdc-button__label text-primary">{{ $t('Purchase') +' '+ $t(gameData.accessGame(expand)) }}</span>
                 </button>
             </template>
         </modal>
@@ -184,7 +184,7 @@ export default {
             }
         },
         async purchaseExpand() {
-            this.games = [this.expand]
+            this.games = [this.gameData.accessGame(this.expand)]
             await this.purchase()
         },
         async purchase() {

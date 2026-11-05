@@ -3,6 +3,8 @@ import Character from "./Character";
 import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
 import Versionable from "./Versionable";
+import GameData from "../services/GameData";
+import DeckFiller from "../services/DeckFiller";
 
 class Sheet {
 
@@ -25,6 +27,14 @@ class Sheet {
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
 
+        // GH2e
+        this.factionReputation = {...data.factionReputation};
+        this.inspiration = data.inspiration || 0;
+        this.imbuement = data.imbuement || 0;
+
+        // Gloomhaven edition played in this campaign (gh sheet only), 2 = GH2e
+        this.edition = data.edition;
+
         // Items
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
@@ -41,8 +51,12 @@ class Sheet {
         this.enhancementsEnabled = data.enhancementsEnabled || false;
         this.enhancements = {...data.enhancements};
 
+        // Class ids => ['unlock', 'retire'], the class events already added, so they're added once.
+        this.classEventsAdded = {...data.classEventsAdded};
+
         this.game = data.game;
         this.characterRepository = new CharacterRepository();
+        this.gameData = new GameData();
 
         this.fieldsToStore = {
             version: 'version',
@@ -58,6 +72,10 @@ class Sheet {
             notes: {'notes': ''},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
+            factionReputation: {'factionReputation': {}},
+            inspiration: {'inspiration': 0},
+            imbuement: {'imbuement': 0},
+            edition: 'edition',
 
             // Items
             itemDesigns: {'itemDesigns': {}},
@@ -73,6 +91,7 @@ class Sheet {
 
             enhancementsEnabled: 'enhancementsEnabled',
             enhancements: {'enhancements': {}},
+            classEventsAdded: {'classEventsAdded': {}},
         };
 
         this.read();
@@ -86,102 +105,56 @@ class Sheet {
         // Nothing to set up..
     }
 
-    fillBlanksGH() {
-        for (let i = 71; i <= 151; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
+    // Item designs, event decks and campaign sheet unlocks, sized per game by `decks` in games/<game>.json.
+    fillBlanks() {
+        const decks = this.gameData.decks(this.game);
+
+        this.itemDesigns = DeckFiller.fill(this.itemDesigns, decks.itemDesigns);
+
+        if (decks.city) {
+            this.city = DeckFiller.fill(this.city, decks.city);
         }
 
-        // FC
-        for (let i = 152; i <= 164; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
+        if (decks.road) {
+            this.road = DeckFiller.fill(this.road, decks.road);
         }
 
-        if (!Object.keys(this.city).length) {
-            for (let i = 1; i <= 30; i++) {
-                this.city[i] = true;
-            }
+        if (decks.rift) {
+            this.rift = DeckFiller.fill(this.rift, decks.rift);
         }
 
-        if (!Object.keys(this.road).length) {
-            for (let i = 1; i <= 30; i++) {
-                this.road[i] = true;
-            }
+        if (decks.unlocks) {
+            this.unlocks = DeckFiller.fillUnlocks(this.unlocks, decks.unlocks);
         }
-
-        for (let i = 1; i <= 90; i++) {
-            this.city[i] = this.city[i] || false;
-        }
-
-        for (let i = 1; i <= 69; i++) {
-            this.road[i] = this.road[i] || false;
-        }
-
-        for (let i = 1; i <= 20; i++) {
-            this.rift[i] = this.rift[i] || false;
-        }
-
-        // FC
-        this.road[82] = this.road[82] || false;
-        this.road[83] = this.road[83] || false;
-
-        for (let i = 0; i < 9; i++) {
-            this.unlocks[i] = this.unlocks[i] || false;
-        }
-
-        this.itemDesigns = this.removeInvalid(this.itemDesigns, 164);
-        this.city = this.removeInvalid(this.city, 90);
-        this.road = this.removeInvalid(this.road, 83);
-        this.unlocks = this.removeInvalid(this.unlocks, 9);
     }
 
-    fillBlanksJotl() {
-        for (let i = 26; i <= 36; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
+    // moment: 'unlock' when a class is unlocked (or a Crimson Scales starting class is chosen), 'retire' when it retires.
+    addClassEvents(id, moment) {
+        const added = this.classEventsAdded[id] || [];
+        if (added.includes(moment)) {
+            return;
         }
 
-        if (!Object.keys(this.city).length) {
-            for (let i = 1; i <= 22; i++) {
-                this.city[i] = true;
-            }
+        // Only a campaign's own classes add events: a crossover class's numbers refer to its own game's decks.
+        const events = this.gameData.classEvents(this.game === 'fc' ? 'gh' : this.game)[id]?.[moment] || [];
+        if (!events.length) {
+            return;
         }
 
-        this.itemDesigns = this.removeInvalid(this.itemDesigns, 36);
-        this.city = this.removeInvalid(this.city, 22);
+        this.addEvents(events);
+        this.classEventsAdded[id] = [...added, moment];
     }
 
-    fillBlanksCs() {
-        for (let i = 0; i < 15; i++) {
-            this.unlocks[i] = this.unlocks[i] || false;
-        }
-
-        if (!Object.keys(this.city).length) {
-            for (let i = 1; i <= 30; i++) {
-                this.city[i] = true;
+    // Events as 'C-57' / 'R-21'.
+    addEvents(events) {
+        const decks = {C: 'city', R: 'road'};
+        events.forEach((event) => {
+            const [type, number] = event.split('-');
+            if (!decks[type]) {
+                throw new Error(`Unknown event type: ${event}`);
             }
-        }
-
-        if (!Object.keys(this.road).length) {
-            for (let i = 1; i <= 30; i++) {
-                this.road[i] = true;
-            }
-        }
-
-        for (let i = 1; i <= 60; i++) {
-            this.city[i] = this.city[i] || false;
-        }
-
-        for (let i = 1; i <= 60; i++) {
-            this.road[i] = this.road[i] || false;
-        }
-
-        for (let i = 1; i <= 100; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
-        }
-
-        this.itemDesigns = this.removeInvalid(this.itemDesigns, 100);
-        this.city = this.removeInvalid(this.city, 60);
-        this.road = this.removeInvalid(this.road, 60);
-        this.unlocks = this.removeInvalid(this.unlocks, 14);
+            this[decks[type]][parseInt(number)] = true;
+        });
     }
 
     fillRelations() {
@@ -208,10 +181,11 @@ class Sheet {
             }
         }
 
-        // Remove old character unlocks from party sheet, keys are ids now
-        // Remove hidden characters
+        // Remove old character unlocks from party sheet, keys are ids now.
+        // Hidden classes are kept, so switching games or editions doesn't lose their unlocks.
+        const allCharacters = this.characterRepository.gameData.characters();
         this.characterUnlocks = _.each(this.characterUnlocks, (characterUnlock, id) => {
-            if (!characterOrder.includes(id)) {
+            if (!(id in allCharacters)) {
                 delete this.characterUnlocks[id];
             }
         });
@@ -228,25 +202,20 @@ class Sheet {
         }
     }
 
-    removeInvalid(list, maxId) {
-        // Crossover packs (e.g. Mercenary Pack) use non-numeric ids like "AN1",
-        // which the numeric range check below doesn't apply to; keep them as-is.
-        return collect(list).filter((value, key) => isNaN(key) || (key >= 0 && key <= maxId)).all();
-    }
-
     read() {
         this.parentRead();
         this.migrateCharacterUnlocks();
 
+        this.fillBlanks();
+
         switch (this.game) {
             case 'jotl':
-                this.fillBlanksJotl();
-                break;
             case 'cs':
-                this.fillBlanksCs();
+                break;
+            case 'gh2':
+                this.factionReputation = {demons: 0, 'merchant-guild': 0, military: 0, ...this.factionReputation};
                 break;
             default:
-                this.fillBlanksGH();
                 this.migrateEnvelopeXResult();
         }
 
@@ -300,20 +269,23 @@ class Sheet {
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;
         }
+        if (!Object.values(values.factionReputation || {}).some(v => v)) {
+            delete values.factionReputation;
+        }
+        if (!values.inspiration) {
+            delete values.inspiration;
+        }
+        if (!values.imbuement) {
+            delete values.imbuement;
+        }
+        if (!Object.keys(values.classEventsAdded || {}).length) {
+            delete values.classEventsAdded;
+        }
         return values;
     }
 
     get starterCharacters() {
-        switch (this.game) {
-            case 'fc':
-                return ["DR", "BR", "CH", "SW", "TI", "SC", "MT"];
-            case 'jotl':
-                return ["RG", "DM", "HT", "VW"];
-            case 'cs':
-                return ["BM", "BK", "CG", "CT", "FK", "HP", "HO", "LU", "MF", "ST"];
-            default:
-                return ["BR", "CH", "SW", "TI", "SC", "MT"];
-        }
+        return this.gameData.startingClasses(this.game);
     }
 
     get characterOrder() {

@@ -3,7 +3,7 @@
         <button type="button" v-if="s.isVisible() || s.is_side"
                 :class="classes">
             <character-icon class="hover:cursor-pointer" v-if="s.solo" :character="s.solo"/>
-            <span v-else>{{ s.id }}</span>
+            <span v-else>{{ s.displayId }}</span>
         </button>
         <span class="ml-2" v-if="showName">{{ $t(s.name) }}</span>
     </span>
@@ -32,19 +32,14 @@ export default {
     },
     data() {
         return {
-            s: null,
             scenarioRepository: new ScenarioRepository(),
         };
     },
-    mounted() {
-        if (this.scenario) {
-            this.s = this.scenario;
-        }
-        if (!this.scenario && this.id) {
-            this.s = this.scenarioRepository.find(this.id);
-        }
-    },
     computed: {
+        // Computed, not set on mount: reused instances (e.g. in the scenario modal) get new props
+        s() {
+            return this.scenario || (this.id ? this.scenarioRepository.find(this.id) : null);
+        },
         classes() {
             let classes = {
                 'is-small': this.isSmall

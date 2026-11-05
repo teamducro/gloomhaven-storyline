@@ -1,6 +1,8 @@
 export const Game = Object.freeze({
     // Gloomhaven
     "gh": "gh",
+    // Gloomhaven 2nd Edition
+    "gh2": "gh2",
     // Frosthaven
     "fh": "fh",
     // Forgotten Circles

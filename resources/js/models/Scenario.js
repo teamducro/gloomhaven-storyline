@@ -13,7 +13,9 @@ class Scenario {
         this.id = data.id;
         this.version = data.version;
         this.hash = data.hash;
-        this.number = `#${this.id}`;
+        // gh2 variants (e.g. 23A) use an integer id but keep their printed number.
+        this.displayId = data.number || this.id;
+        this.number = `#${this.displayId}`;
         this.root = data.root || false;
         this._name = data.name;
         this._coordinates = data.coordinates || {};
@@ -52,6 +54,7 @@ class Scenario {
         this.achievements_awarded_by_choice = collect(data.achievements_awarded_by_choice);
         this.achievements_lost = collect(data.achievements_lost);
         this.prompt = data.prompt;
+        this.prompt_unlocks = data.prompt_unlocks;
         this._promptChoice = null;
         this.hasPrompt = typeof data.prompt !== 'undefined';
         this.has_boss = data.has_boss || false;

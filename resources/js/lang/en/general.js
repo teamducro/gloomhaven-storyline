@@ -30,6 +30,7 @@ export default {
     "Have a party reputation of 10 or higher": "Have a party reputation of 10 or higher",
     "Have a party reputation of 20": "Have a party reputation of 20",
     "Retire a character": "Retire a character",
+    "When the first character retires": "When the first character retires",
 
     // Storyline App
     "Abilities": "Abilities",
@@ -106,6 +107,7 @@ export default {
     "Required": "Required",
     "Requirements": "Requirements",
     "Retire": "Retire",
+    "Abandon": "Abandon",
     "Retired": "Retired",
     "Retirement counter": "Retirement counter",
     "Reward": "Reward | Rewards",
@@ -133,7 +135,11 @@ export default {
     },
     "retire-character": {
         "text": "Are you sure you want to retire this character? It's not removed permanently.",
-        "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
+        "upgrade": "Retiring or abandoning permanently removes this character. Pro users can retire a character and keep an archived copy.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Are you sure you want to permanently remove this character?"
@@ -149,10 +155,12 @@ export default {
         "expand_title": {
             "gh": "Unlock Gloomhaven for a New Adventure",
             "fh": "Unlock Frosthaven for a New Adventure",
+            "gh2": "Unlock Gloomhaven 2nd Edition for a New Adventure",
         },
         "expand_text": {
             "gh": "You've selected Gloomhaven but you don't have access to it yet.",
             "fh": "You've selected Frosthaven but you don't have access to it yet.",
+            "gh2": "You've selected Gloomhaven 2nd Edition, it's included with Gloomhaven but you don't have access to it yet.",
             "general": "Ready for a new adventure? Add it to your existing shared campaign license."
         },
         "local": "Or use the free local version instead.",
@@ -303,7 +311,7 @@ export default {
     },
     "games-enabled": {
         "title": "Enabled Games",
-        "text": "To hide games and it's characters enable only ones you own."
+        "text": "To hide games and its characters enable only ones you own. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",
@@ -352,6 +360,7 @@ export default {
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven 2nd Edition",
 
     "Availability": "Availability",
     "Sticker": "Sticker",
@@ -529,5 +538,29 @@ export default {
     "Spirits": "Spirits",
     "Timed": "Timed",
     "Void": "Void Energy",
-    "Voidsight": "Voidsight"
+    "Voidsight": "Voidsight",
+
+    "Inspiration": "Inspiration",
+    "Demons": "Demons",
+    "Military": "Military",
+    "Imbuement": "Imbuement",
+    "Read section": "Read section",
+    "Scenario": "Scenario",
+    "13 reputation with any faction": "13 reputation with any faction",
+    "Add City Event 57": "Add City Event 57",
+    "Reputation above 12 unlocked": "Reputation above 12 unlocked",
+    "gained prosperity checkboxes by imbuement.": "gained prosperity checkboxes by imbuement.",
+    "Classes unlocked": "Classes unlocked",
+    "Unlocking a class adds its events to the event decks.": "Unlocking a class adds its events to the event decks.",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }

@@ -524,5 +524,179 @@ export default {
         "progress": [
             "Experience 10 allies exhaust during scenarios you otherwise complete.",
         ]
+    },
+    "gh2-1": {
+        "name": "Political Intrigue",
+        "progress": [
+            "Add City Event 61 to the city event deck.",
+            "Gain 30 votes: three votes whenever you gain reputation, one vote per faction reputation item brought into a completed scenario.",
+            "Read {SECTION} 136.1 during the city phase (success is not guaranteed).",
+        ]
+    },
+    "gh2-2": {
+        "name": "Inn to Hospitality",
+        "progress": [
+            "Loot 60 money tokens.",
+            "Read {SECTION} 125.4.",
+        ]
+    },
+    "gh2-3": {
+        "name": "Augmented Abilities",
+        "progress": [
+            "Purchase five enhancements (requires “The Power of Enhancement” global achievement).",
+            "Read {SECTION} 71.2.",
+        ]
+    },
+    "gh2-4": {
+        "name": "The Fall of Man",
+        "progress": [
+            "Gain “Aesther Spyglass” (Item 149). It cannot be sold.",
+            "Use “Aesther Spyglass” (Item 149) ten times.",
+            "Read {SECTION} 115.2.",
+            "Follow {SCENARIO 63} to a conclusion.",
+        ]
+    },
+    "gh2-5": {
+        "name": "Seeker of Xorn",
+        "progress": [
+            "Gain a level to unlock {SCENARIO 57}.",
+            "Follow {SCENARIO 57} to a conclusion.",
+            "Use the item gained in {SCENARIO 57} to gain {POISON} seven times.",
+            "Follow {SCENARIO 58} to a conclusion.",
+        ]
+    },
+    "gh2-6": {
+        "name": "Zealot of the Blood God",
+        "progress": [
+            "End ten scenarios with your hit points at or below half your maximum without becoming exhausted.",
+            "Read {SECTION} 122.3.",
+        ]
+    },
+    "gh2-7": {
+        "name": "A Tale to Tell",
+        "progress": [
+            "Loot or witness your party loot a treasure tile in ten scenarios.",
+            "Read {SECTION} 12.3.",
+        ]
+    },
+    "gh2-8": {
+        "name": "Take Back the Trees",
+        "progress": [
+            "Experience ten road events with your party.",
+            "Read {SECTION} 64.3.",
+            "Follow {SCENARIO 59} to a conclusion.",
+            "Follow {SCENARIO 60} to a conclusion.",
+        ]
+    },
+    "gh2-9": {
+        "name": "Finding the Cure",
+        "progress": [
+            "Complete scenarios in five of: Copperneck Mountains, Corpsewood, Dagger Forest, Gloomhaven, Lingering Swamp, Misty Sea, Watcher Mountains.",
+            "Read {SECTION} 55.3.",
+            "Follow {SCENARIO 61} to a conclusion.",
+            "Follow {SCENARIO 62} to a conclusion.",
+        ]
+    },
+    "gh2-10": {
+        "name": "Aberrant Slayer",
+        "progress": [
+            "Enhance an ability card (yours or an ally’s) with a {ANY} element (requires “The Power of Enhancement” global achievement).",
+            "Read {SECTION} 14.3.",
+            "Follow {SCENARIO 64} to a conclusion.",
+        ]
+    },
+    "gh2-11": {
+        "name": "Adoptive Parent",
+        "progress": [
+            "Loot three money tokens dropped by enemies in ten scenarios.",
+            "Read {SECTION} 122.5.",
+            "Follow {SCENARIO 66} to a conclusion.",
+        ]
+    },
+    "gh2-12": {
+        "name": "Implement of Light",
+        "progress": [
+            "Immediately unlock {SCENARIO 65}.",
+            "Find “Shield of the Righteous” (Item 148).",
+            "Use “Shield of the Righteous” (Item 148) to negate ten attacks of 4 damage or more.",
+            "Read {SECTION} 82.1.",
+        ]
+    },
+    "gh2-13": {
+        "name": "Merchant Class",
+        "progress": [
+            "Own three {HEAD} items.",
+            "Own three {BODY} items.",
+            "Own three {LEGS} items.",
+            "Own five {ONE-HAND} or {TWO-HANDS} items.",
+            "Own five {SMALL-ITEM} items.",
+            "Read {SECTION} 129.1.",
+        ]
+    },
+    "gh2-14": {
+        "name": "Eternal Wanderer",
+        "progress": [
+            "Complete 12 different scenarios.",
+            "Read {SECTION} 52.2.",
+        ]
+    },
+    "gh2-15": {
+        "name": "Escaping the Sin-Ra",
+        "progress": [
+            "Add City Events 69 and 70 to the city event deck. Gain “Black Card” (Item 113). It cannot be sold.",
+            "Complete six side scenarios (scenario number above 56).",
+            "Read {SECTION} 128.2.",
+        ]
+    },
+    "gh2-16": {
+        "name": "The Perfect Poison",
+        "progress": [
+            "Gain “Poison Dagger” (Item 7).",
+            "Use it to apply {POISON} to an enemy without {POISON} 30 times.",
+            "Read {SECTION} 8.3.",
+        ]
+    },
+    "gh2-17": {
+        "name": "Living on the Edge",
+        "progress": [
+            "Gain “Experimental Armor” (Item 150).",
+            "Use it to cause 20 enemies to suffer damage.",
+            "Read {SECTION} 47.4.",
+        ]
+    },
+    "gh2-18": {
+        "name": "Battle Legend",
+        "progress": [
+            "Earn 12 checkmarks from completed battle goals.",
+            "Read {SECTION} 23.3.",
+        ]
+    },
+    "gh2-19": {
+        "name": "Martial Study",
+        "progress": [
+            "Use eight different {ONE-HAND} or {TWO-HANDS} items during scenarios.",
+            "Read {SECTION} 67.2.",
+        ]
+    },
+    "gh2-20": {
+        "name": "Piety in All Things",
+        "progress": [
+            "Donate 120 gold to the Temple of the Great Oak.",
+            "Read {SECTION} 51.5.",
+        ]
+    },
+    "gh2-21": {
+        "name": "Pursuit of Proficiency",
+        "progress": [
+            "Gain 120 experience from ability cards.",
+            "Read {SECTION} 17.2.",
+        ]
+    },
+    "gh2-22": {
+        "name": "Trophy Hunt",
+        "progress": [
+            "Kill 20 different types of monsters.",
+            "Read {SECTION} 21.1.",
+        ]
     }
 }

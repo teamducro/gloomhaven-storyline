@@ -61,13 +61,13 @@ export default {
     },
     data() {
         return {
-            donationProsperity: this.calculateDonationProsperity(this.sheet.donations),
+            donationProsperity: this.calculateDonationProsperity(this.sheet.donations, this.sheet.game),
             scenarioRepository: new ScenarioRepository
         }
     },
     watch: {
         'sheet.donations': function () {
-            this.donationProsperity = this.calculateDonationProsperity(this.sheet.donations);
+            this.donationProsperity = this.calculateDonationProsperity(this.sheet.donations, this.sheet.game);
         }
     },
     methods: {

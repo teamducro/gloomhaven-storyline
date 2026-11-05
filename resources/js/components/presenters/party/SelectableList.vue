@@ -20,8 +20,8 @@
                         <slot name="label" :item="item">
                             <span>{{ item }}</span>
                         </slot>
-                        <span class="material-icons">
-                            {{ checked ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                        <span class="material-icons outlined">
+                            {{ checked ? 'check_circle' : 'radio_button_unchecked' }}
                         </span>
                     </div>
                 </template>

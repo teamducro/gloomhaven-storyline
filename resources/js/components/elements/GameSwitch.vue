@@ -19,7 +19,6 @@
                     :aria-selected="current === code"
                     :class="[code + (current === code ? 'mdc-list-item--selected': '')]">
                     {{ $t(code) }}
-                    <bedge v-if="beta.includes(code)" class="small white ml-2">BETA</bedge>
                 </li>
             </ul>
         </div>
@@ -33,6 +32,8 @@
 import {MDCSelect} from "@material/select/component"
 import GameData from "../../services/GameData"
 import StoryRepository from "../../repositories/StoryRepository"
+import SheetRepository from "../../repositories/SheetRepository"
+import {Game} from "../../models/Game"
 
 export default {
     inject: ['appData'],
@@ -47,13 +48,12 @@ export default {
             current: null,
             story: null,
             games: [],
-            beta: [],
             storyRepository: new StoryRepository,
+            sheetRepository: new SheetRepository,
             gameData: new GameData
         }
     },
     mounted() {
-        this.beta = this.gameData.beta()
         this.$bus.$on('campaigns-changed', this.setCurrent)
         this.$bus.$on('game-selected', this.setSelected)
         this.$bus.$on('enabled-games-changed', this.setGames)
@@ -73,6 +73,7 @@ export default {
             document.querySelector('.game-switch .mdc-select__selected-text').click()
         },
         setCurrent() {
+            this.setGames()
             this.current = this.appData.game
             this.story = this.storyRepository.current()
 
@@ -82,11 +83,17 @@ export default {
             }
         },
         setGames(enabledGames) {
-            const crossover = this.gameData.crossover()
-            this.games = (enabledGames || app.enabledGames).filter(code => !crossover.includes(code))
+            enabledGames = enabledGames || app.enabledGames
+            const hidden = [...this.gameData.crossover(), this.sheetRepository.gloomhavenGame() === Game.gh2 ? Game.gh : Game.gh2]
+            // gh2 is played in the gh slot, turning off gh hides both editions
+            if (!enabledGames.includes(Game.gh)) {
+                hidden.push(Game.gh2)
+            }
+            this.games = enabledGames.filter(code => !hidden.includes(code))
         },
         isNotAvailable(code) {
-            return this.story && this.gameData.purchasable().includes(code) && !this.story?.games?.includes(code)
+            const accessGame = this.gameData.accessGame(code)
+            return this.story && this.gameData.purchasable().includes(accessGame) && !this.story?.games?.includes(accessGame)
         },
         selected(event) {
             const code = event?.detail?.value

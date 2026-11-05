@@ -5,7 +5,11 @@
                 <div v-if="deck" class="w-full h-full flex flex-col outline-none">
                     <ul class="grid grid-cols-2 xs:grid-cols-3 gap-4 mt-2">
                         <li v-for="(card, i) in deck" class="relative">
-                            <card-stack :src="card.image" :count="card.count"/>
+                            <card-stack v-if="!card.label" :src="card.image" :count="card.count"/>
+                            <div v-else class="rounded-lg bg-dark-gray2-75 border border-white2-25 p-3 flex items-center justify-center text-center"
+                                 style="aspect-ratio: 3 / 2">
+                                <add-links-and-icons :text="card.label"/>
+                            </div>
                             <span class="absolute z-1 bg-dark-gray2-75 bottom-0 left-0 pl-1 pt-2 pr-2 rounded-tr-full font-title text-xl text-white">
                                 {{ card.count }}x
                             </span>

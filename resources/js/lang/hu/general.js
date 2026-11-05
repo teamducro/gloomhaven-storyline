@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Érjetek el 10 vagy magasabb hírnevet",
     "Have a party reputation of 20": "Érjetek el 20 hírnevet",
     "Retire a character": "Az első karakter visszavonul",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Képességek",
     "Achievement": "Eredmény | Eredmények",
     "Achievements": "Eredmények",
@@ -102,6 +103,7 @@ export default {
     "Required": "Kötelező",
     "Requirements": "Előfeltétel",
     "Retire": "Visszavonul",
+    "Abandon": "Abandon",
     "Retired": "Visszavonult",
     "Retirement counter": "Visszavonulás számláló",
     "Reward": "Jutalom | Jutalmak",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "Biztos vagy benne, hogy visszavonulsz ezzel a karakterrel? Nem lesz véglegesen eltávolítva.",
-        "upgrade": "Biztos vagy benne, hogy véglegesen törlöd a karaktert? Pro felhasználók vissza tudnak vonulni anélkül, hogy a karakter eltávolításra kerülne."
+        "upgrade": "Biztos vagy benne, hogy véglegesen törlöd a karaktert? Pro felhasználók vissza tudnak vonulni anélkül, hogy a karakter eltávolításra kerülne.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Biztos vagy benne, hogy véglegesen eltávolítod ezt a karaktert?"
@@ -299,7 +305,7 @@ export default {
     },
     "games-enabled": {
         "title": "Elérhető Játékok",
-        "text": "A játékok és a hozzá tartozó karakterek elrejtéséhez csak azokat engedélyezd, amelyek a tulajdonodban vannak."
+        "text": "A játékok és a hozzá tartozó karakterek elrejtéséhez csak azokat engedélyezd, amelyek a tulajdonodban vannak. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",
@@ -346,6 +352,7 @@ export default {
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven 2nd Edition",
     "Availability": "Elérhetőség",
     "Sticker": "Matrica",
     "State": "Állapot",
@@ -514,5 +521,16 @@ export default {
     "Spirits": "Spirits",
     "Timed": "Timed",
     "Void": "Void Energy",
-    "Voidsight": "Voidsight"
+    "Voidsight": "Voidsight",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }

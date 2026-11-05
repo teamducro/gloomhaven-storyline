@@ -64,7 +64,7 @@
                         <td @click="open(row)" :colspan="row.solo ? 20 : (hasImages ? 2 : 1)"></td>
                         <td @click="open(row)" v-if="!row.solo"
                             colspan="20" class="relative px-1 py-2 md:p-3 overflow-hidden"
-                            :class="{'opacity-50': !row.is_side}">#{{ row.id }}
+                            :class="{'opacity-50': !row.is_side}">{{ row.number }}
                         </td>
                     </template>
                 </template>
@@ -79,11 +79,11 @@
                 </template>
                 <template #state="{value, row}">
                     <i v-if="row.isRequired()"
-                       class="material-icons text-required text-2xl mr-2">error_outline</i>
+                       class="material-icons outlined text-required text-2xl mr-2">error</i>
                     <i v-else-if="row.isBlocked()"
-                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                       class="material-icons outlined text-incomplete text-2xl mr-2">cancel</i>
                     <i v-else-if="row.isComplete()"
-                       class="material-icons text-2xl mr-2">check_circle_outline</i>
+                       class="material-icons outlined text-2xl mr-2">check_circle</i>
                     <i v-else-if="row.isIncomplete()"
                        class="material-icons text-complete text-2xl mr-2">radio_button_unchecked</i>
                 </template>

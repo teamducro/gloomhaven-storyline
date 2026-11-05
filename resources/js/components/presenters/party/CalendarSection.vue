@@ -17,6 +17,7 @@
 <script>
 
 import md5 from 'js-md5';
+import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
     emits: ['change', 'update:calendar'],
@@ -82,8 +83,7 @@ export default {
             this.$emit('change', calendar);
         },
         isSummer(week) {
-            const remainder = week % 20;
-            return (remainder % 20 > 0 && remainder % 20 <= 10);
+            return CampaignSheet.isSummerWeek(week);
         },
         isWinter(week) {
             return !this.isSummer(week);

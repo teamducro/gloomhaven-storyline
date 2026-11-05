@@ -16,12 +16,9 @@ if (!game || !inputFileName) {
 const inputFile = 'resources/js/' + (inputFileName.endsWith('.json') ? inputFileName : inputFileName + '.json')
 const inputData = JSON.parse(fs.readFileSync(inputFile, 'utf-8'));
 
-// Read the scenarios JSON file
-let scenarioFile = 'resources/js/scenarios.json';
-if (game !== 'gh' && game !== 'fc') {
-    scenarioFile = scenarioFile.replace('.json', `-${game}.json`);
-}
-const scenarioData = JSON.parse(fs.readFileSync(scenarioFile, 'utf-8'));
+// Read the game's data file (FC scenarios live in gh.json)
+const gameFile = `resources/js/games/${game === 'fc' ? 'gh' : game}.json`;
+const gameData = JSON.parse(fs.readFileSync(gameFile, 'utf-8'));
 
 // Set this to true to override existing scenario properties, use with caution.
 const overrideProperties = false
@@ -48,10 +45,10 @@ function mergeScenarioData(scenarios, input) {
 }
 
 // Merge the input data into the scenarios
-scenarioData.scenarios = mergeScenarioData(scenarioData.scenarios, inputData.scenarios);
-const output = JSON.stringify(scenarioData, null, 4)
+gameData.scenarios = mergeScenarioData(gameData.scenarios, inputData.scenarios);
+const output = JSON.stringify(gameData, null, 4) + '\n'
 
-// Write the output to the scenarios JSON file
-fs.writeFile(scenarioFile, output, (err) => {
+// Write the output to the game's data file
+fs.writeFile(gameFile, output, (err) => {
     if (err) throw err;
 });

@@ -14,7 +14,7 @@ const URLS_TO_CACHE = [
     '/fonts/PirataOne-Regular.woff2',
     '/fonts/Nyala-Regular.woff2',
     '/fonts/Moyenage.woff2',
-    '/fonts/Material-Icons-Fallback.woff2',
+    '/fonts/MaterialSymbols.woff2',
     '/fonts/ArialMT.woff2',
     'android-chrome-72x72.png',
     'apple-touch-icon.png'

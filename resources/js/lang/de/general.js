@@ -28,6 +28,7 @@ export default {
     "Have a party reputation of 10 or higher": "Erlangt ein Ansehen von 10 oder mehr",
     "Have a party reputation of 20": "Erlangt ein Ansehen von 20",
     "Retire a character": "Einen Charakter in den Ruhestand schicken",
+    "When the first character retires": "When the first character retires",
     "Abilities": "Fähigkeiten",
     "Achievement": "Erfolg",
     "Achievements": "Erfolge",
@@ -102,6 +103,7 @@ export default {
     "Required": "Benötigt",
     "Requirements": "Voraussetzungen",
     "Retire": "in Ruhestand schicken",
+    "Abandon": "Abandon",
     "Retired": "in Ruhestand geschickt",
     "Retirement counter": "Ruhestand-Zähler",
     "Reward": "Belohnung",
@@ -129,7 +131,11 @@ export default {
     },
     "retire-character": {
         "text": "Bist du sicher, dass du diesen Charakter in Ruhestand schicken willst? Er wird nicht endgültig gelöscht.",
-        "upgrade": "Bist du sicher, dass du diesen Charakter endgültig löschen willst? Pro-Lizenz-Nutzer können einen Charakter in Ruhestand schicken ohne dass er endgültig entfernt wird."
+        "upgrade": "Bist du sicher, dass du diesen Charakter endgültig löschen willst? Pro-Lizenz-Nutzer können einen Charakter in Ruhestand schicken ohne dass er endgültig entfernt wird.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Bist du sicher, dass du diesen Charakter endgültig löschen willst?"
@@ -299,7 +305,7 @@ export default {
     },
     "games-enabled": {
         "title": "Aktivierte Spiele",
-        "text": "Um Spiele und ihre Charaktere zu verstecken, aktivieren Sie nur diejenigen, die Sie besitzen."
+        "text": "Um Spiele und ihre Charaktere zu verstecken, aktivieren Sie nur diejenigen, die Sie besitzen. Progress is kept when switching."
     },
     "Please consider purchasing a license": "Bitte zieh den Kauf einer Lizenz in Betracht",
     "Danger zone!": "Gefahrenzone!",
@@ -346,6 +352,7 @@ export default {
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
+    "gh2": "Gloomhaven 2nd Edition",
     "Availability": "Verfügbarkeit",
     "Sticker": "Sticker",
     "State": "Staat/Status",
@@ -509,5 +516,16 @@ export default {
     "Spirits": "Geister",
     "Timed": "getaktet",
     "Void": "Leeren-Energie",
-    "Voidsight": "Leeren-Sicht"
+    "Voidsight": "Leeren-Sicht",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events"
 }
