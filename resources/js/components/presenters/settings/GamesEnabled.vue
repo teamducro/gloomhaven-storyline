@@ -17,7 +17,7 @@
                                      v-model:checked="enabled[code]"
                                      :disabled="disabled[code]"
                                      :auto-disable="false"
-                                     @change="store"/>
+                                     @change="toggle(code)"/>
                 <div v-if="code === Game.gh && enabled[Game.gh]" id="gloomhaven-edition" class="ml-10 mb-2">
                     <radio v-for="edition in [Game.gh, Game.gh2]"
                            :key="edition"
@@ -79,7 +79,7 @@ export default {
                     this.enabled[code] = true;
                     this.disabled[code] = true;
                 } else {
-                    this.enabled[code] = code in enabledGames ? enabledGames[code] : true;
+                    this.enabled[code] = code in enabledGames ? enabledGames[code] : gameData.enabledByDefault(code);
                     this.disabled[code] = false;
                 }
             });
@@ -94,6 +94,13 @@ export default {
             this.enabled[game] = true;
             this.store();
             return this.emit();
+        },
+        toggle(code) {
+            this.store();
+            // Crossover content is merged in when campaign data is fetched
+            if (new GameData().crossover().includes(code)) {
+                app.campaignsChanged();
+            }
         },
         store() {
             store.set('gamesEnabled', this.enabled);

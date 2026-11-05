@@ -5,8 +5,9 @@ import jotl from "../../../resources/js/games/jotl.json";
 import cs from "../../../resources/js/games/cs.json";
 import fc from "../../../resources/js/games/fc.json";
 import mp from "../../../resources/js/games/mp.json";
+import cq from "../../../resources/js/games/cq.json";
 
-const files = {gh, gh2, fh, jotl, cs, fc, mp};
+const files = {gh, gh2, fh, jotl, cs, fc, mp, cq};
 
 // Keys each standalone game has data for.
 const filled = {

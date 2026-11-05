@@ -181,6 +181,7 @@ describe('Enhancements', () => {
     });
 
     it('It offers lost/persistent pricing for Mercenary Pack characters, whose cards use the Frosthaven design', () => {
+        utilities.enableGame('mp');
         // Unlock Satha so she can be added to the (Gloomhaven) party.
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);

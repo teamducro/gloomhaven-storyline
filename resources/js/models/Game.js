@@ -13,4 +13,6 @@ export const Game = Object.freeze({
     "cs": "cs",
     // Mercenary Pack
     "mp": "mp",
+    // ConQuests 2025 promo pack
+    "cq": "cq",
 });

@@ -360,6 +360,7 @@ export default {
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
+    "cq": "ConQuests 2025",
     "gh2": "Gloomhaven 2nd Edition",
 
     "Availability": "Availability",

@@ -2,6 +2,10 @@ import utilities from "../utilities";
 
 describe('Mercenary Pack', () => {
 
+    beforeEach(() => {
+        utilities.enableGame('mp');
+    });
+
     it('It completes a Mercenary Pack solo scenario and unlocks its reward item', () => {
         // Unlock Anaphi so her name (not just her icon) shows up in the add-character dropdown.
         cy.visit('/tracker/#/party');
@@ -100,5 +104,25 @@ describe('Mercenary Pack', () => {
         cy.get('li').contains('Ribbon of Friendship').click();
         utilities.closeModel();
         cy.get('#items-bedges').contains('Ribbon of Friendship');
+    });
+});
+
+describe('Mercenary Pack default', () => {
+
+    it('It is off by default', () => {
+        cy.visit('/tracker/#/settings');
+        cy.get('#mp-enabled').should('not.be.checked');
+    });
+
+    it('It is on by default when the campaign plays a Mercenary Pack class', () => {
+        cy.visit('/tracker/#/settings');
+        cy.window().then((win) => {
+            const data = JSON.parse(win.localStorage.getItem(win.app.campaignId)) || {};
+            data['character-mp-test'] = {uuid: 'mp-test', id: 'AN'};
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(data));
+        });
+        cy.reload();
+
+        cy.get('#mp-enabled').should('be.checked');
     });
 });

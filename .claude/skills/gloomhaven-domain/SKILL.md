@@ -7,13 +7,13 @@ description: How the tracker models each Gloomhaven game in code. Load before to
 
 Terms: [`GLOSSARY.md`](../../../GLOSSARY.md); use them in prose and UI text, keep code names in code. Paths relative to `resources/js/` unless starting with `commands/`, `cypress/`, `plans/`, `docs/`, `resources/`.
 
-Read the reference for every game your change touches: [gh](references/gh.md) (+ FC), [gh2](references/gh2.md), [fh](references/fh.md), [jotl](references/jotl.md), [cs](references/cs.md), [mp](references/mp.md).
+Read the reference for every game your change touches: [gh](references/gh.md) (+ FC), [gh2](references/gh2.md), [fh](references/fh.md), [jotl](references/jotl.md), [cs](references/cs.md), [mp](references/mp.md), [cq](references/cq.md).
 
 ## Term → code
 
 | Glossary | Code |
 |---|---|
-| Game | `models/Game.js`: `gh gh2 fh fc jotl cs mp` (`fc`, `mp` aren't Games); current: `app.game` |
+| Game | `models/Game.js`: `gh gh2 fh fc jotl cs mp cq` (`fc`, `mp`, `cq` aren't Games); current: `app.game` |
 | Campaign | localStorage blob `app.campaignId` / `app.campaignData`; local = `'local'` |
 | Shared campaign / code | `apiModels/Story.js` (`campaignId = '_' + story.id`, `app.story`) / `StoryCode.js` |
 | Party sheet | `models/Sheet.js` (gh, fc, jotl, cs) |

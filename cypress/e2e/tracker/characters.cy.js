@@ -126,6 +126,7 @@ describe('Character', () => {
     });
 
     it('It hides the character mat for characters without one', () => {
+        utilities.enableGame('mp');
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);
         cy.get('#character-SA').click();

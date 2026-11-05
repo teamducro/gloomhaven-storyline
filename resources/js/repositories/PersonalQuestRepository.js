@@ -1,6 +1,8 @@
 import GameData from "../services/GameData";
 import PersonalQuest from "../models/PersonalQuest";
 import BuildingRepository from "./BuildingRepository";
+import SheetCalculations from "../services/SheetCalculations";
+import {Game} from "../models/Game";
 
 export default class PersonalQuestRepository {
 
@@ -14,14 +16,25 @@ export default class PersonalQuestRepository {
         return this.fetch(game).firstWhere('id', id);
     }
     
-    unlockedQuests(game) {
-        return this.fetch(game).filter(quest => {
+    unlockedQuests(game, sheet) {
+        // Not concat(): collect.js flattens objects into their values
+        return collect([...this.fetch(game).all(), ...this.conquests(game, sheet).all()]).filter(quest => {
             if (!quest.requiredBuildingLevel) {
                 return true;
             }
             let requiredBuilding = this.buildingRepository.find(quest.requiredBuildingLevel[0]);
             return requiredBuilding?.isUnlocked() && requiredBuilding.level >= quest.requiredBuildingLevel[1];
         });
+    }
+
+    // ConQuests cards keep game "cq", so a held card still loads after the pack is turned off.
+    conquests(game, sheet) {
+        if (!this.gameData.conquestsGames().includes(game) || !this.gameData.enabledCrossovers().includes(Game.cq)) {
+            return collect();
+        }
+        const prosperity = SheetCalculations.methods.calculateProsperity(sheet.prosperityIndex, game);
+
+        return this.fetch(Game.cq).filter(quest => prosperity >= quest.requiredProsperity);
     }
 
     make(questData) {

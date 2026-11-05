@@ -58,9 +58,8 @@
                     <p v-else-if="quest.building_unlocks">
                         {{ $t('Unlocked: One random scenario and one random item blueprint') }}
                     </p>
-                    <p v-else-if="quest.unlock">
-                        {{ $t(quest.unlock) }}
-                    </p>
+                    <add-links-and-icons v-else-if="quest.unlock" class="children-inline"
+                                         :text="$t(quest.unlock)"/>
                 </div>
 
                 <div>
@@ -125,7 +124,7 @@ export default {
     },
     computed: {
         quests() {
-            return this.personalQuestRepository.unlockedQuests(this.sheet.game).keyBy('id').items;
+            return this.personalQuestRepository.unlockedQuests(this.sheet.game, this.sheet).keyBy('id').items;
         },
         unavailableQuests() {
             let unavailable = [];
@@ -140,8 +139,10 @@ export default {
     },
     methods: {
         random() {
+            // Ids are numbers (510) or strings ("330", "cq01")
+            const unavailable = this.unavailableQuests.map(String);
             const id = [...Object.keys(this.quests)]
-                .filter(id => !this.unavailableQuests.includes(parseInt(id)))
+                .filter(id => !unavailable.includes(id))
                 // GH2e starts with the `starting` quests; the rest join the deck later (FAQ 2.0), so pick those manually.
                 .filter(id => this.sheet.game !== 'gh2' || this.quests[id].starting)
                 .sort((a, b) => 0.5 - Math.random())[0];
@@ -189,7 +190,8 @@ export default {
             // This allows to find personal quests based on id or their name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
-                    || Helpers.sanitize(this.quests[id]._name).startsWith(query);
+                    || Helpers.sanitize(this.quests[id]._name).startsWith(query)
+                    || Helpers.sanitize(this.quests[id].number).startsWith(query);
             }
         },
         unlockedBuildingName() {
