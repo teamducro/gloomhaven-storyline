@@ -1,6 +1,7 @@
 import {Game} from "../models/Game";
 
 // Builds a game file for Gloomhaven Secretariat (GHS): Menu > Data management > Import file.
+// GHS fills missing fields with its GameModel defaults and adds the monsters on "Restart Scenario".
 // Tracker class id => [GHS edition, GHS class, health at level 1]. GHS reads health from the file, not from the class.
 const CLASSES = {
     BR: ['gh', 'brute', 10], CH: ['gh', 'cragheart', 10], SW: ['gh', 'spellweaver', 6], TI: ['gh', 'tinkerer', 8],
@@ -46,47 +47,23 @@ const HEALTH = {
 
 const GHS_GAME_EDITIONS = {[Game.gh]: 'gh', [Game.fc]: 'gh', [Game.gh2]: 'gh2e', [Game.fh]: 'fh', [Game.jotl]: 'jotl', [Game.cs]: 'cs'};
 
-const GHS_SCENARIO_EDITIONS = {[Game.gh]: 'gh', [Game.fc]: 'fc', [Game.gh2]: 'gh2e'};
-
 export default class GhsExport {
 
-    // Returns the GHS game state of the party plus the characters whose class GHS doesn't know.
-    make(sheet, game, scenario = null) {
-        const characters = [];
-        const skipped = [];
-
-        Object.values(sheet.characters).forEach((character) => {
-            const ghsClass = CLASSES[character.id];
-            if (ghsClass) {
-                characters.push(this.character(ghsClass, character));
-            } else {
-                skipped.push(character);
-            }
-        });
-
-        const state = {
+    make(sheet, game, scenario) {
+        return {
             revision: 0,
             edition: GHS_GAME_EDITIONS[game],
-            figures: characters.map(character => character.edition + '-' + character.name),
-            characters,
-            monsters: [],
-            sections: [],
+            characters: Object.values(sheet.characters).filter(character => CLASSES[character.id])
+                .map(character => this.character(CLASSES[character.id], character)),
+            scenario: {
+                index: String(scenario.displayId),
+                edition: scenario.game === Game.gh2 ? 'gh2e' : scenario.game,
+                // Crimson Scales class scenarios (e.g. AA1) are grouped by class in GHS.
+                group: String(scenario.id).match(/^[A-Z]{2}(?=\d)/)?.[0],
+            },
             state: 'draw',
-            round: 0,
-            levelCalculation: true,
             levelAdjustment: sheet.scenarioLevel || 0,
         };
-
-        if (scenario) {
-            state.scenario = {
-                index: String(scenario.id),
-                edition: GHS_SCENARIO_EDITIONS[scenario.game] || scenario.game,
-                isCustom: false,
-                custom: '',
-            };
-        }
-
-        return {state, skipped};
     }
 
     character([edition, name, baseHealth], character) {
@@ -94,8 +71,7 @@ export default class GhsExport {
 
         return {
             name, edition, title: character.name, level: character.level, health, maxHealth: health,
-            initiative: 0, experience: 0, loot: 0, exhausted: false, off: false, active: false,
-            summons: [], entityConditions: [], immunities: [], markers: [], tags: [], lootCards: [], treasures: [],
+            initiative: 0, experience: 0, loot: 0, summons: [],
         };
     }
 }
