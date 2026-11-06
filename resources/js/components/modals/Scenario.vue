@@ -267,6 +267,11 @@
                                         <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
                                     </button>
                                 </a>
+                                <button v-if="!scenario.solo" id="ghs-export-scenario"
+                                        class="mdc-button mdc-button--raised ml-2" @click="openGhsExport">
+                                    <i class="material-icons mdc-button__icon">launch</i>
+                                    <span class="mdc-button__label">{{ $t('ghs-export.button') }}</span>
+                                </button>
                             </div>
                         </div>
                     </template>
@@ -532,6 +537,11 @@ export default {
         },
         unsetScenario() {
             this.scenario = null;
+        },
+        openGhsExport() {
+            const id = this.scenario.id;
+            this.close();
+            this.$bus.$emit('open-ghs-export-modal', id);
         },
         openAchievement(id) {
             this.close();

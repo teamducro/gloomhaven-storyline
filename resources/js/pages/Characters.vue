@@ -39,6 +39,15 @@
 
             <add-character v-if="!appData.read_only" ref="add-character" :sheet="sheet" @create="create"/>
 
+            <!-- Left of the add character button -->
+            <div v-if="Object.keys(sheet.characters).length" class="absolute right-0 top-0 mt-14 sm:mt-4 mr-20 z-5">
+                <button id="ghs-export-party" type="button" @click="$bus.$emit('open-ghs-export-modal')"
+                        :title="$t('ghs-export.title')" :aria-label="$t('ghs-export.title')"
+                        class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-dark-gray2-75 rounded-full">
+                    launch
+                </button>
+            </div>
+
             <div class="sm:mt-4 sm:flex">
                 <character-menu :selected="selected" :abilities="abilities" :sheet="sheet" @select="select"
                                 @store="store" :is-local-campaign="isLocalCampaign"/>

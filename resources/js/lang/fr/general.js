@@ -167,6 +167,17 @@ export default {
         "3": "ou partagez le sur l'une des plateformes suivantes.",
         "title": "Partagez Gloomhaven Storyline"
     },
+    "ghs-export": {
+        "button": "Gloomhaven Secretariat",
+        "title": "Export to Gloomhaven Secretariat",
+        "1": "Preload your party in the combat helper Gloomhaven Secretariat:",
+        "2": "Download or copy the file below. When copying, paste it into a text file and save it as .json.",
+        "3": "Open Gloomhaven Secretariat and choose Menu > Data Management > Import File. Confirm with a second click.",
+        "4": "Select the file. Your characters (class, level and name) and the chosen scenario are loaded. This replaces the current game in Gloomhaven Secretariat.",
+        "skipped": "Not supported by Gloomhaven Secretariat, skipped"
+    },
+    "Download": "Download",
+    "Copy": "Copy",
     "share-campaign-code": {
         "1": "Partagez le code de campagne suivant avec les membres de votre groupe pour activer la synchronisation des progrès sur tous vos appareils !",
         "2": "Valide jusqu'au",
