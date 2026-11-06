@@ -225,6 +225,38 @@ describe('Party', () => {
         });
     });
 
+    [
+        {game: 'cs', list: 'road-events', sheetKey: 'sheet-cs', type: 'R'},
+        {game: 'jotl', list: 'city-events', sheetKey: 'sheet-jotl', type: 'C'},
+        {game: 'fc', list: 'rift-events', sheetKey: 'sheet', type: 'RIFT', deck: {rift: {1: true, 2: true}}},
+    ].forEach(({game, list, sheetKey, type, deck}) => {
+        it(`It draws ${game} ${list} from the deck order`, () => {
+            // Given a party sheet of the game with an event deck
+            utilities.enableGame(game);
+            utilities.switchGame(game);
+            cy.visit('/tracker/#/party');
+            if (deck) {
+                cy.window().then((window) => {
+                    const campaignData = JSON.parse(window.localStorage.getItem(window.app.campaignId));
+                    campaignData[sheetKey] = {...campaignData[sheetKey], ...deck};
+                    window.localStorage.setItem(window.app.campaignId, JSON.stringify(campaignData));
+                });
+                cy.reload();
+            }
+
+            // When drawing a card
+            cy.get(`#${list}-bedges`).prev().find('button').contains('Draw').click();
+
+            // Then the card is shown and the drawn card is stored at the bottom of the deck order
+            cy.get('.mdc-dialog__title').should('be.visible').invoke('text').then((title) => {
+                cy.window().then((window) => {
+                    const order = JSON.parse(window.localStorage.getItem(window.app.campaignId))[sheetKey].deckOrder[type];
+                    expect(title.trim()).to.contain(order[order.length - 1]);
+                });
+            });
+        });
+    });
+
     it('It unlocked solo scenario after character is unlocked', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);
