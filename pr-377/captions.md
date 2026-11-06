@@ -1,0 +1,3 @@
+prompt: Completing FH scenario 102 "Into the Black" (campaign with 99-101 complete). Before: no prompt, the modal just shows 102 as Complete with 103 (The Lead Door) already unlocked in the footer. After: a Yes/No dialog "Did you fulfil the condition in the conclusion to unlock scenario 103?" appears right after pressing Complete.
+list: Scenario list around #102/#103 after answering Yes (before: after completing 102, since there is no prompt). 103 The Lead Door is unlocked in both, so Yes keeps the old behaviour.
+list-no: AFTER ONLY (no before equivalent, the old build has no No option): scenario list after answering No. 102 is complete and #103 stays a locked placeholder row. Before, 103 was always unlocked.

@@ -1,0 +1,2 @@
+scenario-list: FH scenarios list scrolled to #69 (Sacred Soil) after gaining the campaign sticker "Into the Forest" via Achievements > add. Before: #69 is unlocked (sticker image, state circle, name shown). After: #69 stays a locked placeholder row (just "#69"), so gaining the sticker no longer unlocks it.
+achievements: Precondition: Achievements page right after adding "Into the Forest" (Campaign Stickers). Identical before/after; it only shows the state that the scenario-list screens were captured in.
