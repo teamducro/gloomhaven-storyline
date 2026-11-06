@@ -1,0 +1,2 @@
+campaign-list: Campaigns page for a logged-in patron owning one synced campaign ("Doomed"; API stubbed via cy.intercept). After: the campaign card has a new "Delete permanently" action next to Edit/Share. Before: same page without it.
+delete-confirm: (after only; doesn't exist on develop) Confirm dialog after clicking "Delete permanently", warning the deletion is permanent and affects everyone the campaign is shared with.

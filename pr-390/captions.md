@@ -1,0 +1,4 @@
+city-deck: Party page, city event deck. A GH campaign with personal quest #510 (Seeker of Xorn) chosen, "Add city events" filtered on "SoX". After: SoX1–SoX4 are offered, SoX1 already ticked and added to the deck (see the SoX1 bedge) because the quest was chosen. Before: nothing matches "SoX" (same steps).
+event-card: (after only; SoX cards don't exist on develop) City Event #SoX1 card opened from the deck, with the "Fan-made bonus content by Morthai" credit link under the card.
+crypt-scenario: After: scenario modal "#SoX1 Nobles' Crypt" (unlocked via the PSOX1 party achievement) with the fan-content credit line. Before is only an approximation: the scenario list around #52–#67, where #SoX1 does not exist.
+normal-campaign-city-deck: Normal campaign (no personal quest #510), "Add city events" filtered on "SoX". Before and after look the same: the dropdown is empty, so none of the bonus content shows up.
