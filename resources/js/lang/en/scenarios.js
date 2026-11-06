@@ -2283,8 +2283,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "“Minor Mana Potion” (Item gh-12)",
-            "“Minor Healing Potion” (Item gh-20)"
+            "“Minor Healing Potion” (Item gh-12)",
+            "“Minor Mana Potion” (Item gh-20)"
         ]
     },
     "cs-11": {
@@ -2427,7 +2427,7 @@ export default {
     "cs-33": {
         "name": "Siege Tower",
         "rewards": [
-            "“Blazing Boots” (Item 87)",
+            "“Blazing Boots” (Item 90)",
             "+1 reputation"
         ]
     },

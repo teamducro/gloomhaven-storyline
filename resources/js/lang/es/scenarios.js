@@ -2294,8 +2294,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "Gain “Minor Mana Potion” (Item gh-12)",
-            "Gain “Minor Healing Potion” (Item gh-20)"
+            "Gain “Minor Healing Potion” (Item gh-12)",
+            "Gain “Minor Mana Potion” (Item gh-20)"
         ]
     },
     "cs-11": {
@@ -2315,7 +2315,7 @@ export default {
     "cs-14": {
         "name": "Cultist Cave",
         "rewards": [
-            "Gain “Remote Beetle” (Item 86)",
+            "Gain “Remote Beetle” (Item 88)",
             "15 experience each"
         ]
     },
@@ -2436,7 +2436,7 @@ export default {
     "cs-33": {
         "name": "Siege Tower",
         "rewards": [
-            "Gain “Blazing Boots” (Item 87)",
+            "Gain “Blazing Boots” (Item 90)",
             "+1 reputation"
         ]
     },

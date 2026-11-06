@@ -290,8 +290,8 @@
                 10
             ],
             "rewards": [
-                "“Minor Mana Potion” (Item gh-12)",
-                "“Minor Healing Potion” (Item gh-20)"
+                "“Minor Healing Potion” (Item gh-12)",
+                "“Minor Mana Potion” (Item gh-20)"
             ],
             "monsters": [
                 "black-imp",
@@ -390,7 +390,7 @@
                 9
             ],
             "rewards": [
-                "“Remote Beetle” (Item 86)",
+                "“Remote Beetle” (Item 88)",
                 "15 experience each"
             ],
             "monsters": [
@@ -983,7 +983,7 @@
                 34
             ],
             "rewards": [
-                "“Blazing Boots” (Item 87)",
+                "“Blazing Boots” (Item 90)",
                 "+1 reputation"
             ],
             "cards": [

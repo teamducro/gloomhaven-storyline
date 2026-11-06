@@ -336,7 +336,7 @@ export default {
         "name": "«Ring of Restoration» (Предмет 32)"
     },
     "cs-1": {
-        "name": "«Drake's Blood» (Предмет 14)"
+        "name": "«Drake's Blood» (Предмет 59)"
     },
     "cs-2": {
         "name": "«Orb of Fortune» (Предмет 09)"
@@ -426,7 +426,7 @@ export default {
         "name": "«Boneclad Shawl (Предмет 25)"
     },
     "cs-31": {
-        "name": "«Drake's Blood» (Предмет 14)"
+        "name": "«Drake's Blood» (Предмет 59)"
     },
     "cs-32": {
         "name": "«Curious Pendant» (Предмет 20)"
