@@ -39,6 +39,8 @@ class Sheet {
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
         this.crossGameItems = {...data.crossGameItems};
+        // Item id => count removed from the game, e.g. sacrificed in a scenario.
+        this.removedItems = {...data.removedItems};
 
         // Characters
         this.xResult = data.xResult || '';
@@ -81,6 +83,7 @@ class Sheet {
             itemDesigns: {'itemDesigns': {}},
             crossGameItemsEnabled: 'crossGameItemsEnabled',
             crossGameItems: {'crossGameItems': {}},
+            removedItems: {'removedItems': {}},
 
             // Characters
             xResult: {'xResult': ''},

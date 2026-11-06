@@ -2,6 +2,12 @@
     <div>
         <p class="py-4">
             {{ $t('Availability') }}: {{ availability }} / {{ item.count }}
+            <template v-if="removedCount">
+                <br>{{ $t('Removed from game') }}: {{ removedCount }}
+                <button type="button" class="restore-item mdc-button ml-2" :disabled="appData.read_only" @click="restore">
+                    <span class="mdc-button__label">{{ $t('Restore') }}</span>
+                </button>
+            </template>
         </p>
         <div v-if="character">
             <div class="relative pb-2 mb-4 border-b border-white2-25">
@@ -45,6 +51,11 @@
                     <i class="material-icons mdc-button__icon">remove</i>
                     <span class="mdc-button__label">{{ $t('Remove') }}</span>
                 </button>
+                <button v-if="owns" class="remove-from-game mdc-button mdc-button--raised mr-2" :disabled="appData.read_only"
+                        @click="removeFromGame">
+                    <i class="material-icons mdc-button__icon">delete_forever</i>
+                    <span class="mdc-button__label">{{ $t('Remove from game') }}</span>
+                </button>
             </div>
         </div>
     </div>
@@ -73,6 +84,7 @@ export default {
             storedUuid: null,
             characters: collect({}),
             costModifier: 0,
+            removedItems: {},
             sheetRepository: new SheetRepository(),
             storySyncer: new StorySyncer,
         }
@@ -93,7 +105,10 @@ export default {
             return this.item.count - this.characters
                 .filter((character) => {
                     return character.items[this.item.id] === true;
-                }).count()
+                }).count() - this.removedCount
+        },
+        removedCount() {
+            return this.removedItems[this.item.id] || 0;
         },
         owns() {
             return this.character?.items[this.item.id]
@@ -170,6 +185,30 @@ export default {
             this.character.items[this.item.id] = false;
             this.store();
         },
+        // Out of the game for good (e.g. sacrificed in a scenario), unlike remove() which returns it to stock.
+        removeFromGame() {
+            this.updateRemovedItems(1);
+            this.remove();
+        },
+        restore() {
+            this.updateRemovedItems(-1);
+            this.getCharacters();
+            this.$emit('change');
+            this.$bus.$emit('campaigns-changed');
+        },
+        updateRemovedItems(delta) {
+            const sheet = this.sheetRepository.make(this.appData.game);
+            const count = (sheet.removedItems[this.item.id] || 0) + delta;
+
+            if (count > 0) {
+                sheet.removedItems[this.item.id] = count;
+            } else {
+                delete sheet.removedItems[this.item.id];
+            }
+
+            sheet.store();
+            this.storySyncer.store();
+        },
         setUuidToBuy() {
             this.storedUuid = this.readSelected();
             if (this.storedUuid && this.characters.has(this.storedUuid)) {
@@ -187,6 +226,7 @@ export default {
         getCharacters() {
             const sheet = this.sheetRepository.make(this.appData.game);
             this.characters = collect(sheet.characters);
+            this.removedItems = {...sheet.removedItems};
             this.costModifier = this.calculateCostModifier(sheet.reputation, sheet.game);
         },
         store() {
