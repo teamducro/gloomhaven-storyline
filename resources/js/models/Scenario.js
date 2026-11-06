@@ -22,6 +22,7 @@ class Scenario {
         this.is_side = data.is_side || false;
         this.complexity = data.complexity || 0;
         this.solo = data.solo || null;
+        this.requires_event = data.requires_event || null;
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];

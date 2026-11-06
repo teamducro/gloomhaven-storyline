@@ -295,7 +295,7 @@ export default {
         "name": "Flooded Crypt",
         "rewards": [
             "Add City Event SoX3 to the deck",
-            "Choose only one of the following: Frigid Blade (item 077), Wand of Frost (item 083) or Wave Crest (item 111)"
+            "Choose only one of the following: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) or “Wave Crest” (Item 111)"
         ]
     },
     "gh-SoX3": {

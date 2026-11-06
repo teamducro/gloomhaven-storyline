@@ -162,6 +162,7 @@ export default {
 
             const sheet = this.sheetRepository.make(this.appData.game);
             this.partyCharacterIds = collect(sheet.characters).pluck('id').toArray();
+            this.sheet = sheet;
 
             this.columns = (new When).filter([
                 new When(this.hasImages, {id: 'image', name: 'Sticker'}),
@@ -195,6 +196,11 @@ export default {
                 if (!this.crossoverScenarioVisible(scenario)) {
                     return false;
                 }
+            }
+
+            // Bonus content stays out of campaigns that don't play it.
+            if (scenario.requires_event && scenario.isHidden() && !this.sheet.hasEvent(scenario.requires_event)) {
+                return false;
             }
 
             // Filter is not applied

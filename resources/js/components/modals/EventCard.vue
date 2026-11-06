@@ -33,6 +33,9 @@
                             </div>
                         </transition>
                     </div>
+                    <a v-if="String(card.id).startsWith('SoX')" class="block mt-2 text-sm link" target="_blank" rel="noreferrer"
+                       href="https://boardgamegeek.com/thread/2220121/seeker-xorn-bonus-content">
+                        {{ $t('Fan-made bonus content by {author}', {author: 'Morthai'}) }}</a>
                     <div v-if="!choice" class="mt-4 flex justify-between">
                         <button v-for="outcome in card.outcomes" :key="outcome" @click="chose(outcome)"
                                 class="mdc-button origin-left transform scale-90 mdc-button--raised">

@@ -2306,6 +2306,7 @@
         {
             "id": "SoX1",
             "game": "gh",
+            "requires_event": "C-SoX1",
             "name": "Nobles’ Crypt",
             "is_side": true,
             "pages": [
@@ -2331,6 +2332,7 @@
         {
             "id": "SoX2",
             "game": "gh",
+            "requires_event": "C-SoX1",
             "name": "Flooded Crypt",
             "is_side": true,
             "pages": [
@@ -2351,12 +2353,13 @@
             ],
             "rewards": [
                 "Add City Event SoX3 to the deck",
-                "Choose only one of the following: Frigid Blade (item 077), Wand of Frost (item 083) or Wave Crest (item 111)"
+                "Choose only one of the following: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) or “Wave Crest” (Item 111)"
             ]
         },
         {
             "id": "SoX3",
             "game": "gh",
+            "requires_event": "C-SoX1",
             "name": "Crypt of the Ancients",
             "is_side": true,
             "pages": [
@@ -5431,6 +5434,7 @@
         },
         {
             "id": "PSOX1",
+            "requires_event": "C-SoX1",
             "name": "Nobles’ Crypt",
             "type": "Party",
             "game": "gh",
@@ -5441,6 +5445,7 @@
         },
         {
             "id": "PSOX2",
+            "requires_event": "C-SoX1",
             "name": "Flooded Crypt",
             "type": "Party",
             "game": "gh",
@@ -5452,6 +5457,7 @@
         },
         {
             "id": "PSOX3",
+            "requires_event": "C-SoX1",
             "name": "Crypt of the Ancients",
             "type": "Party",
             "game": "gh",
@@ -6163,6 +6169,11 @@
             ],
             "events_on_choose": [
                 "C-SoX1"
+            ],
+            "events_addable_on_choose": [
+                "C-SoX2",
+                "C-SoX3",
+                "C-SoX4"
             ]
         },
         {
@@ -17117,13 +17128,7 @@
         "city": {
             "start": 30,
             "last": 90,
-            "max": 90,
-            "ids": [
-                "SoX1",
-                "SoX2",
-                "SoX3",
-                "SoX4"
-            ]
+            "max": 90
         },
         "road": {
             "start": 30,

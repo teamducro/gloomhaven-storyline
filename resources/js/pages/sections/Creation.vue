@@ -94,6 +94,12 @@
                             Summaries for Forgotten Circles by O.T.Nad
                         </li>
                         <li class="py-1">
+                                <span class="mr-1 block sm:inline">Seeker of Xorn bonus events and scenarios by Morthai:</span>
+                            <a class="link" target="_blank" rel="noreferrer"
+                               href="https://boardgamegeek.com/thread/2220121/seeker-xorn-bonus-content">
+                                Seeker of Xorn bonus content</a>
+                        </li>
+                        <li class="py-1">
                                 <span class="mr-1 block sm:inline">Frosthaven scenario summaries by
                                     <a class="link" target="_blank" rel="noreferrer"
                                        href="https://www.reddit.com/user/dwarf74/">

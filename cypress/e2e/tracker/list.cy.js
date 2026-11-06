@@ -9,7 +9,7 @@ describe('Scenario list', () => {
             cy.contains('#1 Black Barrow');
         });
 
-        utilities.assertTableCount('scenarios', 116);
+        utilities.assertTableCount('scenarios', 113);
     });
 
     it('It opens a scenario', () => {
@@ -80,7 +80,7 @@ describe('Scenario list', () => {
     it('Only show scenarios from selected game', () => {
         cy.visit('/tracker/#/scenarios');
 
-        utilities.assertTableCount('scenarios', 116);
+        utilities.assertTableCount('scenarios', 113);
 
         utilities.switchGame('fc');
         cy.visit('/tracker/#/scenarios');

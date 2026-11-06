@@ -163,10 +163,11 @@ export default {
             this.addEventsOnChoose(quest);
             this.goalMet = false;
         },
-        // Quests like Seeker of Xorn shuffle bonus events into the deck when taken.
+        // Quests like Seeker of Xorn shuffle bonus events into the deck when taken, and make the later ones addable.
         addEventsOnChoose(quest) {
-            if (quest.events_on_choose?.length) {
+            if (quest.events_on_choose.length || quest.events_addable_on_choose.length) {
                 this.sheet.addEvents(quest.events_on_choose);
+                this.sheet.addEvents(quest.events_addable_on_choose, false);
                 this.store();
             }
         },
