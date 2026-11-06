@@ -514,7 +514,7 @@ export default {
             }
 
             if (this.scenario.solo) {
-                this.scenario.requirements = `<div class="flex items-center"><character-icon class="inline-block w-5 mr-2" :character="'${this.scenario.solo}'" :show-name="true"/> level 5</div>`
+                this.scenario.requirements = `<div class="flex items-center"><character-icon class="inline-block w-5 mr-2" :character="'${this.scenario.solo}'" :show-name="true"/> ${this.$t('Level')} 5</div>`
             }
 
             this.rerenderStateSelection();

@@ -108,15 +108,12 @@ describe('Storyline', () => {
     });
 
     it('It translates the personal quest requirement of a scenario', () => {
-        cy.visit('/tracker?states=52_i');
-        cy.window().then((window) => {
-            window.i18n.mergeLocaleMessage('en', {
-                scenarios: {'gh-52': {requirements: 'Persoonlijke missie “Zoeker van Xorn”'}}
-            });
+        cy.visit('/tracker?states=52_i', {
+            onBeforeLoad: (window) => window.localStorage.setItem('lang', '"de"')
         });
 
         utilities.openScenario(52);
-        cy.get('#scenario-content').contains('Persoonlijke missie “Zoeker van Xorn”');
+        cy.get('#scenario-content').contains('Persönliches Ziel „Suche nach Xorn“');
         utilities.closeModel();
     });
 
