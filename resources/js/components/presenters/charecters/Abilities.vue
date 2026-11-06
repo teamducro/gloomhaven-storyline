@@ -72,7 +72,7 @@
             <!-- Available abilities -->
             <div class="order-1 md:order-0"
                  :class="[prefs.deckSide ? 'md:col-span-2 lg:col-span-3' : '']">
-                <div class="available-header flex items-center space-x-4 mb-2">
+                <div class="available-header flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
                     <h2>{{ prefs.showAll ? $t('All') : $t('Available') }}</h2>
                     <i class="material-icons mdc-button__icon hover:cursor-pointer"
                        @click="toggleStackedAvailable">
