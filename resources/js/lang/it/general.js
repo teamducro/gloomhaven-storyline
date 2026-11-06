@@ -83,7 +83,6 @@ export default {
     "Lost": "Perse",
     "Lvl": "Lv",
     "Enable items from other games": "Abilita oggetti da altri giochi",
-    "Available via": "Available via",
     "Shop": "Shop",
     "Item design": "Item design",
     "Other game": "Other game",

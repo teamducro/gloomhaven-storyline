@@ -83,7 +83,6 @@ export default {
     "Lost": "Lost",
     "Lvl": "ур.",
     "Enable items from other games": "Добавить предметы из других игр",
-    "Available via": "Available via",
     "Shop": "Shop",
     "Item design": "Item design",
     "Other game": "Other game",

@@ -74,9 +74,9 @@ describe('Items', () => {
         utilities.closeModel();
         utilities.assertTableCount('items', 15);
 
-        // Then the design is labelled, the others are shop items
+        // Then the design is labelled, shop items are not
         cy.get('#items tbody tr').contains('Boots of Levitation').parents('tr').contains('Item design');
-        cy.get('#items tbody tr:first').contains('Shop');
+        cy.get('#items').contains('Boots of Striding').parents('tr').should('not.contain', 'Item design').and('not.contain', 'Shop');
 
         // When filtering on item designs
         cy.get('#item-source-filters').contains('Item design').click();

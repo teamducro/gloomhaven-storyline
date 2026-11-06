@@ -150,7 +150,10 @@
                 </template>
                 <template #name="{value, row}">
                     <span class="xs:whitespace-nowrap">
-                        {{ $t(value) }}<br>
+                        {{ $t(value) }}
+                        <span v-if="sources[row.id] !== 'shop'" class="ml-1 px-2 text-xs rounded-full bg-black2-75 whitespace-nowrap">
+                            {{ $t(sourceLabels[sources[row.id]]) }}
+                        </span><br>
                         <span class="lg:hidden">
                             <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
                             <span class="inline-block mr-2">
@@ -160,9 +163,6 @@
                             <span v-else class="inline-block md:hidden">{{ isNaN(row.cost) ? '-' : (row.cost + costModifier) }}</span>
                         </span>
                     </span>
-                </template>
-                <template #source="{row}">
-                    {{ $t(sourceLabels[sources[row.id]]) }}
                 </template>
                 <template #cost="{value}">
                     <span>
@@ -252,7 +252,6 @@ export default {
                 {id: 'number', name: 'Nr'},
                 {id: 'name', name: 'Name'},
                 {id: 'game', name: 'Game'},
-                {id: 'source', name: 'Available via', classes: 'hidden sm:table-cell'},
                 {id: 'slot', name: 'Slot', classes: 'hidden lg:table-cell'},
                 {id: 'cost', name: 'Cost', classes: 'hidden md:table-cell'},
                 {id: 'availability', name: 'Avail', classes: 'hidden lg:table-cell'},

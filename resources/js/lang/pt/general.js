@@ -83,7 +83,6 @@ export default {
     "Lost": "Perdido",
     "Lvl": "Nível",
     "Enable items from other games": "Enable items from other games",
-    "Available via": "Available via",
     "Shop": "Shop",
     "Item design": "Item design",
     "Other game": "Other game",
