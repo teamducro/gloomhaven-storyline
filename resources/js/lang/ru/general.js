@@ -99,6 +99,7 @@ export default {
     "Preceding events": "Предшествующие события",
     "Remove": "Убрать",
     "Required by": "Требуется для",
+    "Required when not gained by": "Required when not gained by",
     "required": "required",
     "Required": "Не доступно",
     "Requirements": "Требования",

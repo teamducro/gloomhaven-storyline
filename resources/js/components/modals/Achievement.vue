@@ -26,6 +26,14 @@
                                              data-mdc-dialog-action="close"
                                              :scenario="scenario" :key="scenario.id"/>
                         </h2>
+
+                        <h2 v-if="!requiredIncompleteBy.isEmpty()"
+                            class="text-white mt-2">{{ $t('Required when not gained by') }}:
+                            <scenario-number class="ml-2"
+                                             v-for="scenario in requiredIncompleteBy"
+                                             data-mdc-dialog-action="close"
+                                             :scenario="scenario" :key="scenario.id"/>
+                        </h2>
                     </div>
                     <div>
                         <button v-if="achievement.is_manual && achievement.manual_awarded"
@@ -81,7 +89,10 @@ export default {
             return this.scenarioRepository.awardedFrom(this.achievement);
         },
         requiredBy() {
-            return this.scenarioRepository.requiredBy(this.achievement);
+            return this.scenarioRepository.requiredBy(this.achievement, ['complete']);
+        },
+        requiredIncompleteBy() {
+            return this.scenarioRepository.requiredBy(this.achievement, ['incomplete']);
         },
     },
     methods: {

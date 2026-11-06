@@ -99,6 +99,7 @@ export default {
     "Preceding events": "Eventi Precedenti",
     "Remove": "Rimuovi",
     "Required by": "Richiesto da",
+    "Required when not gained by": "Required when not gained by",
     "required": "richiesto",
     "Required": "Richiesto",
     "Requirements": "Requisiti",

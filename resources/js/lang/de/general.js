@@ -99,6 +99,7 @@ export default {
     "Preceding events": "Vorgeschichte",
     "Remove": "Löschen",
     "Required by": "Benötigt für",
+    "Required when not gained by": "Required when not gained by",
     "required": "benötigt",
     "Required": "Benötigt",
     "Requirements": "Voraussetzungen",

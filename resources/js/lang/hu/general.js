@@ -99,6 +99,7 @@ export default {
     "Preceding events": "Megelőző események",
     "Remove": "Eltávolítás",
     "Required by": "Megköveteli a/az",
+    "Required when not gained by": "Required when not gained by",
     "required": "kötelező",
     "Required": "Kötelező",
     "Requirements": "Előfeltétel",
