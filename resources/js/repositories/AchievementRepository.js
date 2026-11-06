@@ -172,7 +172,7 @@ export default class AchievementRepository {
         scenario.required_by.each((condition) => {
             let complete = condition.complete || [];
             this.findMany(complete)
-                .filter(achievement => achievement.is_manual && achievement.manual_awarded === isAwarded)
+                .filter(achievement => achievement.is_manual && achievement.unlocks_side_scenario && achievement.manual_awarded === isAwarded)
                 .each(achievement => achievements.push(achievement));
         });
 

@@ -346,6 +346,10 @@ export default class ScenarioRepository {
     }
 
     getSideScenarioByManualAchievement(achievement) {
+        if (!achievement.unlocks_side_scenario) {
+            return undefined;
+        }
+
         return this.where((scenario) => {
             return scenario.is_side
                 && !scenario.required_by.isEmpty()
