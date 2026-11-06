@@ -181,6 +181,10 @@ export default {
     },
     mounted() {
         this.abilities = collect(this.abilityRepository.abilities(this.character));
+        // Characters saved before the flag existed keep the milestone card they already picked.
+        if (this.abilities.contains(ability => ability.milestone && this.character.abilities[ability.code])) {
+            this.character.milestone = true;
+        }
 
         this.prefs = this.readPrefs() ?? this.prefs;
     },

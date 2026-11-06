@@ -51,6 +51,26 @@ describe('Abilities', () => {
         cy.get('.deck-header h2').contains('Deck 0 /');
     });
 
+    it('It keeps a milestone card that was in the deck before the milestone flag existed', () => {
+        utilities.enableGame('cs');
+        utilities.switchGame('cs');
+        cy.visit('/tracker/#/characters');
+        utilities.openAbilities('Fire Knight');
+        cy.get('#desktop-milestone-achieved').click();
+        cy.get('#available-improvised-methods').click();
+
+        utilities.store().then((store) => {
+            const campaign = JSON.parse(store.getItem('local'));
+            Object.keys(campaign).filter(key => key.startsWith('character-')).forEach(key => delete campaign[key].milestone);
+            store.setItem('local', JSON.stringify(campaign));
+        });
+        cy.reload();
+        cy.get('#desktop-character-menu').contains('Abilities').click();
+
+        cy.get('#deck-improvised-methods').should('exist');
+        cy.get('#desktop-milestone-achieved').should('be.checked');
+    });
+
     it('It can show all abilities', () => {
         cy.visit('/tracker/#/characters');
 
