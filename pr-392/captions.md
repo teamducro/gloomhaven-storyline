@@ -1,0 +1,2 @@
+scenario-modal: Scenario #1 modal. After: new "Gloomhaven Secretariat" button next to Pages / Virtual Board (not shown for solo scenarios). Before: same modal without it. On mobile the button row wraps onto a second line, so the modal does not scroll sideways.
+export-modal: (after only; the modal doesn't exist on develop) Export modal opened from the new button, with instructions and the Download button. Party in the test: Cragheart "Rocky" L3 + Spellweaver "Sparks" L4.
