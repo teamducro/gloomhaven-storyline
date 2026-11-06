@@ -87,7 +87,9 @@ export default class ScenarioValidator {
 
         if (linkedScenarios.where('hasChoices', true).count()) {
             let chosen = linkedScenarios.filter((s) => {
-                return String(s.choice).split(',').includes(String(scenario.id));
+                // Completed before its prompt existed: keep what it unlocked until the prompt is answered.
+                const unanswered = s.prompt_unlocks && s.isComplete() && !s.promptChoice && s.choices.includes(scenario.id);
+                return unanswered || String(s.choice).split(',').includes(String(scenario.id));
             }).count() > 0;
             let withoutChoicesStates = linkedScenarios.where('hasChoices', false).pluck('state', 'state');
 
