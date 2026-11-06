@@ -77,6 +77,37 @@ describe('Scenario list', () => {
         });
     });
 
+    it('It filters on monster', () => {
+        cy.visit('/tracker?states=1_c');
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('button').contains('filter_list').click();
+        cy.get('input[name="monster-filter"]').type('bandit archer');
+        utilities.closeModel();
+
+        cy.get('#scenarios').within(() => {
+            cy.contains('#1 Black Barrow').should('be.visible');
+        });
+        utilities.assertTableCount('scenarios', 1);
+    });
+
+    it('It does not reveal monsters of hidden scenarios', () => {
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('button').contains('filter_list').click();
+        cy.get('input[name="monster-filter"]').type('vermling');
+        utilities.closeModel();
+
+        utilities.assertTableCount('scenarios', 0);
+    });
+
+    it('It shows the monsters in the scenario modal', () => {
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('td').contains('#1 Black Barrow').click({ scrollBehavior: 'center' });
+        cy.get('#scenario-monsters').should('contain', 'Bandit Archer, Bandit Guard, Living Bones');
+    });
+
     it('Only show scenarios from selected game', () => {
         cy.visit('/tracker/#/scenarios');
 

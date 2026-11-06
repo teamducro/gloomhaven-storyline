@@ -6,6 +6,7 @@ import ItemTextParser from "../services/ItemTextParser";
 import UsesTranslations from "./UsesTranslations";
 import {Requirement} from "./Requirement";
 import Versionable from "./Versionable";
+import Helpers from "../services/Helpers";
 
 class Scenario {
 
@@ -58,6 +59,7 @@ class Scenario {
         this._promptChoice = null;
         this.hasPrompt = typeof data.prompt !== 'undefined';
         this.has_boss = data.has_boss || false;
+        this.monsters = data.monsters || [];
         this.game = data.game;
         this.translationKey = `scenarios.${this.game}-${this.id}`;
 
@@ -189,6 +191,15 @@ class Scenario {
 
     get lootedAllTreasures() {
         return this.treasures.length > 0 && this.treasures.length === this.unlockedTreasures.length;
+    }
+
+    monsterNames() {
+        return this.monsters.map(monster => monster.replaceAll('-', ' ').replace(/\b\w/g, c => c.toUpperCase()));
+    }
+
+    hasMonster(search) {
+        const needle = Helpers.sanitize(search);
+        return this.monsterNames().some(name => Helpers.sanitize(name).includes(needle));
     }
 
     hasCard() {

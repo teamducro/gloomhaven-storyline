@@ -135,6 +135,11 @@
                             {{ $t('No treasures available') }}.
                         </p>
 
+                        <div class="my-2" v-if="scenario.monsters.length" id="scenario-monsters">
+                            <h2 class="text-white">{{ $t('Monsters') }}</h2>
+                            <p>{{ scenario.monsterNames().join(', ') }}</p>
+                        </div>
+
                         <div class="my-2" v-if="scenario.loot && Object.keys(scenario.loot).length > 0">
                             <h2 class="text-white">{{ $t('Loot') }}</h2>
                             <ul class="mt-2">

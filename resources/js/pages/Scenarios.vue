@@ -19,6 +19,12 @@
 
                     <li role="separator" class="mdc-list-divider !my-2"></li>
 
+                    <li class="px-4 py-2">
+                        <input type="text" v-model="monsterFilter" name="monster-filter"
+                               class="w-full rounded bg-black2-50 px-2 py-1 text-white"
+                               :placeholder="$t('Monster')">
+                    </li>
+
                     <li v-for="state in states"
                         class="mdc-list-item cursor-pointer"
                         :class="{'mdc-list-item--activated': stateFilter === state}"
@@ -116,6 +122,7 @@ export default {
                 solo: false
             },
             stateFilter: null,
+            monsterFilter: '',
             partyCharacterIds: [],
             regions: [],
             columns: [],
@@ -146,7 +153,7 @@ export default {
     },
     computed: {
         filterEnabled() {
-            return this.regionFilter.length || Object.values(this.otherFilters).some(enabled => enabled) || this.stateFilter;
+            return this.regionFilter.length || Object.values(this.otherFilters).some(enabled => enabled) || this.stateFilter || this.monsterFilter.trim();
         }
     },
     methods: {
@@ -195,8 +202,14 @@ export default {
             // Filter is not applied
             if (!this.regionFilter.length
                 && !Object.values(this.otherFilters).filter(s => s).length
-                && !this.stateFilter) {
+                && !this.stateFilter
+                && !this.monsterFilter.trim()) {
                 return true;
+            }
+
+            // Hidden scenarios must not reveal their monsters
+            if (this.monsterFilter.trim() && !(scenario.isVisible() && scenario.hasMonster(this.monsterFilter))) {
+                return false;
             }
 
             // Apply region
@@ -269,6 +282,7 @@ export default {
         resetFilter(clearRegions = false) {
             Object.keys(this.otherFilters).forEach(filter => this.otherFilters[filter] = false);
             this.stateFilter = null;
+            this.monsterFilter = '';
             if (clearRegions) {
                 this.$refs['filter-dropdown'].close();
                 this.regionFilter = [];

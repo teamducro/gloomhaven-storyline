@@ -23,7 +23,10 @@
                 "lumber": 2,
                 "metal": 2,
                 "hide": 2
-            }
+            },
+            "monsters": [
+                "hound"
+            ]
         },
         {
             "root": true,
@@ -75,7 +78,13 @@
                 "hide": 3,
                 "rockroot": 1,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "algox-archer",
+                "algox-guard",
+                "algox-priest",
+                "city-guard"
+            ]
         },
         {
             "id": 2,
@@ -118,7 +127,11 @@
                 "arrowvine": 2,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "algox-archer",
+                "algox-guard"
+            ]
         },
         {
             "id": 3,
@@ -161,7 +174,13 @@
                 "arrowvine": 2,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "algox-archer",
+                "algox-guard",
+                "algox-priest",
+                "hound"
+            ]
         },
         {
             "id": 4,
@@ -256,7 +275,10 @@
                 "hide": 1,
                 "corpsecap": 2,
                 "rockroot": 2
-            }
+            },
+            "monsters": [
+                "ice-wraith"
+            ]
         },
         {
             "id": 6,
@@ -290,7 +312,11 @@
                 "arrowvine": 2,
                 "axenut": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "frost-demon",
+                "snow-imp"
+            ]
         },
         {
             "id": 7,
@@ -329,7 +355,11 @@
                 "hide": 3,
                 "axenut": 1,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "lurker-clawcrusher",
+                "lurker-soldier"
+            ]
         },
         {
             "id": 8,
@@ -363,7 +393,11 @@
                 "arrowvine": 1,
                 "axenut": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "polar-bear",
+                "snow-imp"
+            ]
         },
         {
             "id": 9,
@@ -398,7 +432,13 @@
                 "corpsecap": 1,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "ice-wraith",
+                "living-doom",
+                "living-spirit",
+                "ooze"
+            ]
         },
         {
             "id": 10,
@@ -441,7 +481,11 @@
                 "arrowvine": 2,
                 "axenut": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "algox-guard",
+                "algox-priest"
+            ]
         },
         {
             "id": 11,
@@ -486,7 +530,12 @@
                 "flamefruit": 1,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "algox-stormcaller",
+                "frost-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 12,
@@ -521,7 +570,10 @@
                 "corpsecap": 1,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "ancient-artillery"
+            ]
         },
         {
             "id": 13,
@@ -557,7 +609,10 @@
                 "flamefruit": 1,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "shrike-fiend"
+            ]
         },
         {
             "id": 14,
@@ -603,7 +658,12 @@
                 "metal": 2,
                 "hide": 5,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "abael-herder",
+                "lightning-eel",
+                "piranha-pig"
+            ]
         },
         {
             "id": 15,
@@ -642,7 +702,12 @@
                 "corpsecap": 1,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "chaos-lieutenant",
+                "robotic-boltshooter",
+                "ruined-machine"
+            ]
         },
         {
             "id": 16,
@@ -678,7 +743,11 @@
                 "metal": 5,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "ruined-machine"
+            ]
         },
         {
             "id": 17,
@@ -752,7 +821,10 @@
                 "arrowvine": 2,
                 "corpsecap": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "frozen-corpse"
+            ]
         },
         {
             "id": 19,
@@ -788,7 +860,12 @@
                 "corpsecap": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "ice-wraith"
+            ]
         },
         {
             "id": 20,
@@ -819,7 +896,11 @@
                 "metal": 5,
                 "arrowvine": 2,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "forest-imp",
+                "hound"
+            ]
         },
         {
             "id": 21,
@@ -859,7 +940,11 @@
                 "flamefruit": 1,
                 "snowthistle": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "robotic-boltshooter",
+                "ruined-machine"
+            ]
         },
         {
             "id": 22,
@@ -899,7 +984,12 @@
                 "hide": 2,
                 "arrowvine": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "city-guard",
+                "polar-bear",
+                "vermling-scout"
+            ]
         },
         {
             "id": 23,
@@ -931,7 +1021,11 @@
                 "corpsecap": 2,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "night-demon"
+            ]
         },
         {
             "id": 24,
@@ -964,7 +1058,12 @@
                 "axenut": 2,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "hollow-scholar",
+                "snow-imp"
+            ]
         },
         {
             "id": 25,
@@ -1007,7 +1106,15 @@
                 "metal": 4,
                 "arrowvine": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "flaming-bladespinner",
+                "ice-wraith",
+                "lightning-eel",
+                "lurker-soldier",
+                "lurker-wavethrower",
+                "robotic-boltshooter"
+            ]
         },
         {
             "id": 26,
@@ -1049,7 +1156,10 @@
                 "metal": 4,
                 "arrowvine": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "incarnation-of-ancestors"
+            ]
         },
         {
             "id": 27,
@@ -1094,7 +1204,12 @@
                 "metal": 2,
                 "hide": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "burrowing-blade",
+                "mountains-heart",
+                "rending-drake"
+            ]
         },
         {
             "id": 28,
@@ -1150,7 +1265,10 @@
                 "arrowvine": 1,
                 "axenut": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "algox-icespeaker"
+            ]
         },
         {
             "id": 29,
@@ -1205,7 +1323,12 @@
                 "arrowvine": 1,
                 "axenut": 1,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "algox-guard",
+                "algox-snowspeaker",
+                "wind-demon"
+            ]
         },
         {
             "id": 30,
@@ -1260,7 +1383,13 @@
                 "arrowvine": 1,
                 "axenut": 1,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "chaos-demon",
+                "earth-demon",
+                "flame-demon",
+                "sun-demon"
+            ]
         },
         {
             "id": 31,
@@ -1304,6 +1433,11 @@
                         "puzzle"
                     ]
                 }
+            ],
+            "monsters": [
+                "algox-snowspeaker",
+                "frost-demon",
+                "wind-demon"
             ]
         },
         {
@@ -1339,7 +1473,13 @@
                 "axenut": 2,
                 "flamefruit": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "flaming-bladespinner",
+                "ruined-machine",
+                "steel-automaton"
+            ]
         },
         {
             "id": 33,
@@ -1382,7 +1522,13 @@
                 "axenut": 2,
                 "flamefruit": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "energized-corpse",
+                "frozen-corpse",
+                "living-bones",
+                "living-spirit"
+            ]
         },
         {
             "id": 34,
@@ -1406,7 +1552,13 @@
                 "CCCS"
             ],
             "loot": {},
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "ancient-artillery",
+                "flaming-bladespinner",
+                "ruined-machine",
+                "steel-automaton"
+            ]
         },
         {
             "id": 35,
@@ -1450,7 +1602,13 @@
                 "hide": 2,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "abael-scout",
+                "abael-warlord",
+                "burrowing-blade",
+                "piranha-pig"
+            ]
         },
         {
             "id": 36,
@@ -1497,7 +1655,11 @@
                 "metal": 5,
                 "arrowvine": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "lightning-eel",
+                "lost-in-seaweed"
+            ]
         },
         {
             "id": 37,
@@ -1548,7 +1710,11 @@
                 "arrowvine": 2,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "living-bones",
+                "living-spirit"
+            ]
         },
         {
             "id": 38,
@@ -1586,7 +1752,11 @@
                 "arrowvine": 1,
                 "axenut": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "hound",
+                "polar-bear"
+            ]
         },
         {
             "id": 39,
@@ -1631,7 +1801,13 @@
                 "hide": 3,
                 "flamefruit": 1,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "algox-guard",
+                "algox-scout",
+                "black-imp",
+                "frozen-corpse"
+            ]
         },
         {
             "id": 40,
@@ -1674,6 +1850,11 @@
                         "calendar"
                     ]
                 }
+            ],
+            "monsters": [
+                "algox-guard",
+                "ruined-machine",
+                "steel-automaton"
             ]
         },
         {
@@ -1717,7 +1898,12 @@
                 "corpsecap": 2,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "deep-terror",
+                "living-doom",
+                "living-spirit"
+            ]
         },
         {
             "id": 42,
@@ -1763,6 +1949,10 @@
                         "calendar"
                     ]
                 }
+            ],
+            "monsters": [
+                "deep-terror",
+                "ooze"
             ]
         },
         {
@@ -1795,7 +1985,12 @@
                 "arrowvine": 2,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "robotic-boltshooter",
+                "ruined-machine",
+                "steel-automaton"
+            ]
         },
         {
             "id": 44,
@@ -1838,7 +2033,10 @@
                 "arrowvine": 2,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "flaming-bladespinner"
+            ]
         },
         {
             "id": 45,
@@ -1880,7 +2078,13 @@
                 "hide": 5,
                 "flamefruit": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "abael-herder",
+                "abael-scout",
+                "lightning-eel",
+                "piranha-pig"
+            ]
         },
         {
             "id": 46,
@@ -1920,7 +2124,11 @@
                 "hide": 3,
                 "corpsecap": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "burrowing-blade",
+                "shrike-fiend"
+            ]
         },
         {
             "id": 47,
@@ -1956,7 +2164,11 @@
                 "hide": 2,
                 "flamefruit": 2,
                 "rockroot": 2
-            }
+            },
+            "monsters": [
+                "algox-icespeaker",
+                "shrike-fiend"
+            ]
         },
         {
             "id": 48,
@@ -1999,7 +2211,11 @@
                 "hide": 5,
                 "corpsecap": 2,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "abael-scout",
+                "wind-demon"
+            ]
         },
         {
             "id": 49,
@@ -2048,7 +2264,10 @@
                 "metal": 3,
                 "hide": 2,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "deep-terror"
+            ]
         },
         {
             "id": 50,
@@ -2096,7 +2315,13 @@
                 "hide": 3,
                 "arrowvine": 2
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "lightning-eel",
+                "lurker-clawcrusher",
+                "lurker-mindsnipper",
+                "lurker-wavethrower"
+            ]
         },
         {
             "id": 51,
@@ -2137,7 +2362,11 @@
                 "metal": 4,
                 "arrowvine": 1,
                 "flamefruit": 1
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "steel-automaton"
+            ]
         },
         {
             "id": 52,
@@ -2187,7 +2416,11 @@
                 "corpsecap": 2,
                 "snowthistle": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "frost-demon",
+                "snow-imp"
+            ]
         },
         {
             "id": 53,
@@ -2234,7 +2467,13 @@
                 "axenut": 2,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "lurker-clawcrusher",
+                "lurker-mindsnipper",
+                "lurker-soldier",
+                "seeker-of-the-abyss"
+            ]
         },
         {
             "id": 54,
@@ -2281,7 +2520,14 @@
                 "axenut": 2,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "lightning-eel",
+                "lurker-clawcrusher",
+                "lurker-mindsnipper",
+                "lurker-soldier",
+                "lurker-wavethrower"
+            ]
         },
         {
             "id": 55,
@@ -2323,7 +2569,12 @@
                 "rockroot": 2,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "algox-archer",
+                "algox-guard",
+                "algox-priest"
+            ]
         },
         {
             "id": 56,
@@ -2363,7 +2614,12 @@
                 "flamefruit": 2,
                 "rockroot": 2
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "black-imp",
+                "harbinger-of-shadow-2",
+                "harrower-infester"
+            ]
         },
         {
             "id": 57,
@@ -2403,7 +2659,11 @@
                 "CFSS"
             ],
             "loot": {},
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "render",
+                "wind-demon"
+            ]
         },
         {
             "id": 58,
@@ -2454,7 +2714,12 @@
                 "corpsecap": 1,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "flaming-bladespinner",
+                "orphan",
+                "steel-automaton"
+            ]
         },
         {
             "id": 59,
@@ -2502,7 +2767,12 @@
                 "axenut": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "flaming-bladespinner",
+                "robotic-boltshooter",
+                "ruined-machine"
+            ]
         },
         {
             "id": 60,
@@ -2553,7 +2823,14 @@
                 "snowthistle": 1,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "fracture-of-the-deep",
+                "lightning-eel",
+                "lurker-clawcrusher",
+                "lurker-mindsnipper",
+                "lurker-wavethrower"
+            ]
         },
         {
             "id": 61,
@@ -2588,7 +2865,11 @@
                 "corpsecap": 2,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "deep-terror",
+                "harrower-infester"
+            ]
         },
         {
             "id": 62,
@@ -2631,7 +2912,12 @@
                 "arrowvine": 2,
                 "snowthistle": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "chaos-demon",
+                "harrower-infester"
+            ]
         },
         {
             "id": 63,
@@ -2667,7 +2953,15 @@
                 "corpsecap": 2,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "savvas-icestorm",
+                "savvas-lavaflow",
+                "wind-demon"
+            ]
         },
         {
             "id": 64,
@@ -2700,7 +2994,14 @@
                 "flamefruit": 2,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "burrowing-blade",
+                "guard-captain",
+                "living-doom",
+                "living-spirit",
+                "shrike-fiend"
+            ]
         },
         {
             "id": 65,
@@ -2743,7 +3044,12 @@
                 "hide": 4,
                 "arrowvine": 2,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "frozen-corpse",
+                "living-bones",
+                "snow-imp"
+            ]
         },
         {
             "id": 66,
@@ -2826,7 +3132,16 @@
                 "metal": 3,
                 "hide": 3,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "chaos-demon",
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "night-demon",
+                "sun-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 68,
@@ -2857,7 +3172,17 @@
                 "metal": 5,
                 "hide": 5,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "chaos-demon",
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "night-demon",
+                "sun-demon",
+                "tormentor",
+                "wind-demon"
+            ]
         },
         {
             "id": 69,
@@ -2897,7 +3222,12 @@
                 "hide": 4,
                 "axenut": 2,
                 "flamefruit": 1
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "forest-imp",
+                "rending-drake"
+            ]
         },
         {
             "id": 70,
@@ -2937,7 +3267,11 @@
                 "axenut": 2,
                 "flamefruit": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "city-guard",
+                "hound"
+            ]
         },
         {
             "id": 71,
@@ -2971,7 +3305,11 @@
                 "lumber": 4,
                 "metal": 4,
                 "hide": 4
-            }
+            },
+            "monsters": [
+                "abael-scout",
+                "piranha-pig"
+            ]
         },
         {
             "id": 72,
@@ -3012,7 +3350,10 @@
                 "metal": 3,
                 "corpsecap": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "ice-wraith"
+            ]
         },
         {
             "id": 73,
@@ -3055,7 +3396,10 @@
                 "arrowvine": 2,
                 "flamefruit": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "lightning-eel"
+            ]
         },
         {
             "id": 74,
@@ -3146,7 +3490,12 @@
                 "axenut": 1,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "abael-herder",
+                "lightning-eel",
+                "piranha-pig"
+            ]
         },
         {
             "id": 76,
@@ -3205,7 +3554,14 @@
                 "axenut": 1,
                 "snowthistle": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "algox-archer",
+                "algox-guard",
+                "fish-king",
+                "lurker-mindsnipper",
+                "piranha-pig"
+            ]
         },
         {
             "id": 77,
@@ -3246,7 +3602,11 @@
                 "flamefruit": 2,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "fish-king",
+                "piranha-pig"
+            ]
         },
         {
             "id": 78,
@@ -3285,7 +3645,12 @@
                 "hide": 4,
                 "arrowvine": 2,
                 "rockroot": 2
-            }
+            },
+            "monsters": [
+                "lurker-soldier",
+                "lurker-wavethrower",
+                "piranha-pig"
+            ]
         },
         {
             "id": 79,
@@ -3325,7 +3690,11 @@
                 "metal": 5,
                 "hide": 2,
                 "corpsecap": 2
-            }
+            },
+            "monsters": [
+                "ice-wraith",
+                "snow-imp"
+            ]
         },
         {
             "id": 80,
@@ -3370,7 +3739,13 @@
                 "rockroot": 1,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "robotic-boltshooter",
+                "ruined-machine",
+                "steel-automaton",
+                "the-relic"
+            ]
         },
         {
             "id": 81,
@@ -3405,7 +3780,14 @@
                 "hide": 2,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "aesther-ashblade",
+                "aesther-scout",
+                "ancient-artillery",
+                "ruined-machine",
+                "steel-automaton"
+            ]
         },
         {
             "id": 82,
@@ -3439,7 +3821,11 @@
                 "rockroot": 1,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "frost-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 83,
@@ -3474,7 +3860,14 @@
                 "arrowvine": 2,
                 "flamefruit": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "giant-piranha-pig",
+                "giant-piranha-pig-boss",
+                "lurker-mindsnipper",
+                "piranha-pig"
+            ]
         },
         {
             "id": 84,
@@ -3504,7 +3897,11 @@
                 "corpsecap": 2,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "elder-ooze",
+                "ooze"
+            ]
         },
         {
             "id": 85,
@@ -3540,7 +3937,11 @@
                 "rockroot": 2,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "burrowing-blade",
+                "polar-bear"
+            ]
         },
         {
             "id": 86,
@@ -3570,7 +3971,12 @@
                 "arrowvine": 2,
                 "axenut": 1,
                 "flamefruit": 1
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "earth-demon",
+                "ice-wraith"
+            ]
         },
         {
             "id": 87,
@@ -3611,7 +4017,11 @@
                 "arrowvine": 1,
                 "corpsecap": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "algox-archer",
+                "algox-guard"
+            ]
         },
         {
             "id": 88,
@@ -3644,7 +4054,15 @@
                 "corpsecap": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "savvas-icestorm",
+                "savvas-lavaflow",
+                "wind-demon"
+            ]
         },
         {
             "id": 89,
@@ -3676,7 +4094,10 @@
                 "arrowvine": 2,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "algox-guard"
+            ]
         },
         {
             "id": 90,
@@ -3715,7 +4136,13 @@
                 "lumber": 4,
                 "hide": 4,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "frozen-corpse",
+                "ice-wraith",
+                "polar-bear",
+                "snow-imp"
+            ]
         },
         {
             "id": 91,
@@ -3744,7 +4171,13 @@
                 "hide": 4,
                 "flamefruit": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "lightning-eel",
+                "lurker-clawcrusher",
+                "lurker-mindsnipper",
+                "lurker-wavethrower"
+            ]
         },
         {
             "id": 92,
@@ -3780,7 +4213,13 @@
                 "axenut": 2,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "lurker-clawcrusher",
+                "lurker-mindsnipper",
+                "lurker-soldier",
+                "lurker-wavethrower"
+            ]
         },
         {
             "id": 93,
@@ -3860,7 +4299,11 @@
                 "arrowvine": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "ruined-machine"
+            ]
         },
         {
             "id": 95,
@@ -3896,7 +4339,10 @@
                 "metal": 2,
                 "corpsecap": 2,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "ice-wraith"
+            ]
         },
         {
             "id": 96,
@@ -3936,7 +4382,11 @@
                 "metal": 3,
                 "axenut": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "rending-drake"
+            ]
         },
         {
             "id": 97,
@@ -3967,7 +4417,14 @@
                 "metal": 4,
                 "random-item-treasure": 1
             },
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "flaming-bladespinner",
+                "program-director",
+                "robotic-boltshooter",
+                "ruined-machine",
+                "steel-automaton"
+            ]
         },
         {
             "id": 98,
@@ -3999,7 +4456,12 @@
                 "metal": 4,
                 "hide": 3,
                 "rockroot": 2
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "black-imp",
+                "spitting-drake"
+            ]
         },
         {
             "id": 99,
@@ -4028,7 +4490,11 @@
                 "metal": 4,
                 "hide": 2,
                 "arrowvine": 2
-            }
+            },
+            "monsters": [
+                "frozen-corpse",
+                "robotic-boltshooter"
+            ]
         },
         {
             "id": 100,
@@ -4059,7 +4525,11 @@
             ],
             "loot": {
                 "coins": 15
-            }
+            },
+            "monsters": [
+                "lurker-mindsnipper",
+                "shrike-fiend"
+            ]
         },
         {
             "id": 101,
@@ -4101,7 +4571,11 @@
                 "arrowvine": 1,
                 "rockroot": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "algox-archer",
+                "algox-guard"
+            ]
         },
         {
             "id": 102,
@@ -4132,7 +4606,15 @@
             ],
             "loot": {
                 "coins": 15
-            }
+            },
+            "monsters": [
+                "chaos-demon",
+                "frost-demon",
+                "living-spirit",
+                "night-demon",
+                "savvas-icestorm",
+                "wind-demon"
+            ]
         },
         {
             "id": 103,
@@ -4159,7 +4641,13 @@
             "loot": {
                 "coins": 15,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "living-doom",
+                "living-spirit",
+                "lurker-clawcrusher",
+                "shrike-fiend"
+            ]
         },
         {
             "id": 104,
@@ -4197,7 +4685,12 @@
                 "hide": 2,
                 "axenut": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "frost-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 105,
@@ -4237,7 +4730,13 @@
                 "hide": 2,
                 "corpsecap": 1,
                 "flamefruit": 1
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "savvas-lavaflow",
+                "wind-demon"
+            ]
         },
         {
             "id": 106,
@@ -4360,7 +4859,11 @@
                 "arrowvine": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "ice-wraith",
+                "snow-imp"
+            ]
         },
         {
             "id": 109,
@@ -4396,7 +4899,10 @@
                 "metal": 4,
                 "flamefruit": 1,
                 "rockroot": 2
-            }
+            },
+            "monsters": [
+                "ancient-artillery"
+            ]
         },
         {
             "id": 110,
@@ -4433,7 +4939,12 @@
                 "hide": 2,
                 "corpsecap": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "living-spirit",
+                "ruined-machine",
+                "shrike-fiend"
+            ]
         },
         {
             "id": 111,
@@ -4467,7 +4978,11 @@
                 "hide": 3,
                 "arrowvine": 2,
                 "corpsecap": 1
-            }
+            },
+            "monsters": [
+                "frost-demon",
+                "hound"
+            ]
         },
         {
             "id": 112,
@@ -4497,7 +5012,12 @@
                 "hide": 5,
                 "axenut": 1,
                 "rockroot": 2
-            }
+            },
+            "monsters": [
+                "burrowing-blade",
+                "earth-demon",
+                "hound"
+            ]
         },
         {
             "id": 113,
@@ -4526,7 +5046,11 @@
                 "flamefruit": 1,
                 "rockroot": 2,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "chaos-demon",
+                "forest-imp"
+            ]
         },
         {
             "id": 114,
@@ -4556,7 +5080,12 @@
                 "hide": 4,
                 "axenut": 1,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "hound",
+                "polar-bear",
+                "snow-imp"
+            ]
         },
         {
             "id": 115,
@@ -4624,7 +5153,12 @@
                 "arrowvine": 1,
                 "rockroot": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "algox-guard",
+                "algox-snowspeaker",
+                "snow-imp"
+            ]
         },
         {
             "id": 116,
@@ -4698,7 +5232,13 @@
                 "arrowvine": 1,
                 "axenut": 1,
                 "rockroot": 1
-            }
+            },
+            "monsters": [
+                "algox-archer",
+                "algox-guard",
+                "algox-icespeaker",
+                "algox-scout"
+            ]
         },
         {
             "id": 117,
@@ -4733,7 +5273,13 @@
                 "arrowvine": 2,
                 "axenut": 1,
                 "flamefruit": 1
-            }
+            },
+            "monsters": [
+                "hound",
+                "polar-bear",
+                "vermling-priest",
+                "vermling-scout"
+            ]
         },
         {
             "id": 118,
@@ -4769,7 +5315,11 @@
                 "hide": 3,
                 "rockroot": 1,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "frozen-corpse",
+                "living-bones"
+            ]
         },
         {
             "id": 119,
@@ -4800,7 +5350,12 @@
                 "Spend 1 remaining dust to gain any 1 material resource",
                 "Spend 2 remaining dust to gain any 1 herb resource"
             ],
-            "loot": {}
+            "loot": {},
+            "monsters": [
+                "burrowing-blade",
+                "rending-drake",
+                "spitting-drake"
+            ]
         },
         {
             "id": 120,
@@ -4833,7 +5388,11 @@
                 "lumber": 4,
                 "metal": 4,
                 "hide": 4
-            }
+            },
+            "monsters": [
+                "city-guard",
+                "hound"
+            ]
         },
         {
             "id": 121,
@@ -4879,7 +5438,11 @@
                 "axenut": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "vermling-priest",
+                "vermling-scout"
+            ]
         },
         {
             "id": 122,
@@ -4948,7 +5511,10 @@
                 "flamefruit": 1,
                 "snowthistle": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "ancient-artillery"
+            ]
         },
         {
             "id": 124,
@@ -4978,7 +5544,11 @@
                 "hide": 2,
                 "arrowvine": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "living-bones",
+                "living-spirit"
+            ]
         },
         {
             "id": 125,
@@ -5011,7 +5581,11 @@
                 "corpsecap": 1,
                 "rockroot": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "robotic-boltshooter",
+                "ruined-machine"
+            ]
         },
         {
             "id": 126,
@@ -5045,7 +5619,12 @@
                 "hide": 2,
                 "flamefruit": 1,
                 "snowthistle": 2
-            }
+            },
+            "monsters": [
+                "ice-wraith",
+                "living-spirit",
+                "snow-imp"
+            ]
         },
         {
             "id": 127,
@@ -5098,7 +5677,11 @@
                 "lumber": 6,
                 "metal": 4,
                 "hide": 4
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "ice-wraith"
+            ]
         },
         {
             "id": 128,
@@ -5145,7 +5728,12 @@
                 "arrowvine": 1,
                 "flamefruit": 2,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "abael-scout",
+                "lurker-wavethrower",
+                "steel-automaton"
+            ]
         },
         {
             "id": 129,
@@ -5187,7 +5775,10 @@
                 "hide": 2,
                 "axenut": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "city-guard"
+            ]
         },
         {
             "id": 130,
@@ -5228,7 +5819,12 @@
                 "arrowvine": 2,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "frozen-corpse",
+                "lightning-eel",
+                "shrike-fiend"
+            ]
         },
         {
             "id": 131,
@@ -5249,7 +5845,11 @@
                 "Gain 10 experience each",
                 "Gain “Mesmerizing Seashell” (Item 237)"
             ],
-            "loot": {}
+            "loot": {},
+            "monsters": [
+                "lurker-mindsnipper",
+                "lurker-soldier"
+            ]
         },
         {
             "id": 132,
@@ -5286,7 +5886,11 @@
                 "hide": 2,
                 "arrowvine": 1,
                 "corpsecap": 1
-            }
+            },
+            "monsters": [
+                "ice-wraith",
+                "snow-imp"
+            ]
         },
         {
             "id": 133,
@@ -5319,7 +5923,12 @@
                 "corpsecap": 1,
                 "rockroot": 2,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "forest-imp",
+                "rending-drake",
+                "spitting-drake"
+            ]
         },
         {
             "id": 134,
@@ -5354,7 +5963,12 @@
                 "hide": 2,
                 "arrowvine": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "flaming-bladespinner",
+                "robotic-boltshooter",
+                "ruined-machine"
+            ]
         },
         {
             "id": 135,
@@ -5392,7 +6006,13 @@
                 "corpsecap": 1,
                 "flamefruit": 1,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "rending-drake",
+                "sun-demon"
+            ]
         },
         {
             "id": 136,
@@ -5429,7 +6049,11 @@
                 "hide": 4,
                 "arrowvine": 1,
                 "snowthistle": 1
-            }
+            },
+            "monsters": [
+                "lightning-eel",
+                "lurker-wavethrower"
+            ]
         },
         {
             "id": 137,
@@ -5466,7 +6090,12 @@
                 "metal": 4,
                 "hide": 4,
                 "random-item-treasure": 1
-            }
+            },
+            "monsters": [
+                "forest-imp",
+                "piranha-pig",
+                "polar-bear"
+            ]
         },
         {
             "id": 201,

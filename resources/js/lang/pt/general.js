@@ -295,6 +295,8 @@ export default {
     "Settings": "Settings",
     "Clear filter": "Clear filter",
     "Missed Treasures": "Missed Treasures",
+    "Monster": "Monster",
+    "Monsters": "Monsters",
     "transfer": {
         "title": "Transfer campaign data",
         "text": "Copy campaign data between campaigns can be done easily.",
