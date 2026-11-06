@@ -66,7 +66,10 @@
                 "10 gold each",
                 "+1 prosperity"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Boss Special 1: if the boss moves to a door that is already open and the door hex is occupied, it moves to the nearest unoccupied hex instead (players decide on ties)."
+            ]
         },
         {
             "id": 3,
@@ -361,7 +364,10 @@
                 "20 gold each",
                 "+1 prosperity"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Typo: the boss abilities are switched in the scenario book. \"Boss Special 1\" should be \"Boss Special 2\" and vice versa."
+            ]
         },
         {
             "id": 10,
@@ -406,6 +412,9 @@
             ],
             "achievements_awarded": [
                 "PADE"
+            ],
+            "faq": [
+                "Typo: the treasure tile should be labeled 11, not 55."
             ]
         },
         {
@@ -464,7 +473,10 @@
                 "+2 prosperity",
                 "“Skullbane Axe” design (Item 113)"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Typo: ignore the text of \"Boss Special 1\" in the scenario book and go by the boss's stat card."
+            ]
         },
         {
             "id": 12,
@@ -520,7 +532,11 @@
                 "+4 reputation",
                 "“Skullbane Axe” design (Item 113)"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Typo: door marker 1 should be at the southern door, not the northern door. Read the text under \"1\" when the southern door is opened.",
+                "Typo: \"Boss Special 1\" is not listed. It is exactly the same as \"Boss Special 2\", except Living Bones are summoned instead of Living Corpses."
+            ]
         },
         {
             "id": 13,
@@ -757,6 +773,9 @@
             ],
             "rewards": [
                 "+1 prosperity"
+            ],
+            "faq": [
+                "The altar (b) can be affected by abilities that affect obstacles, though destroying it is not recommended since that makes the scenario unwinnable. The NPC treats the altar as a focus when determining movement."
             ]
         },
         {
@@ -801,7 +820,10 @@
                 "+2 reputation",
                 "+1 prosperity"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Typo: \"Boss Special 1\" is not listed. In addition to the abilities on the stat card, it has the same summoning ability as \"Boss Special 2\", except Living Bones are summoned instead of Living Corpses."
+            ]
         },
         {
             "id": 21,
@@ -850,7 +872,11 @@
                 "+1 prosperity",
                 "Add City Event 78 to the deck"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Typo: under \"Special Rules\" the altar should be at \"f\", not \"a\". The demon spawns should be reordered to wind (a), night (b), earth (c), flame (d), sun (e), frost (f).",
+                "The altar acts like a normal obstacle with hit points (immune to all negative conditions), so \"and immunities\" should not be there."
+            ]
         },
         {
             "id": 22,
@@ -1000,7 +1026,10 @@
             "achievements_awarded": [
                 "PTDC"
             ],
-            "prompt": "dragon"
+            "prompt": "dragon",
+            "faq": [
+                "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
+            ]
         },
         {
             "id": 26,
@@ -1089,6 +1118,11 @@
             "rewards": [
                 "+1 prosperity",
                 "100 gold each This money must immediately be spent on enhancements"
+            ],
+            "faq": [
+                "Hail takes a turn at initiative 99 and receives damage if wounded.",
+                "You can add your current money to the reward, but you can't sell items in town because the reward happens immediately after the scenario ends, before you return to town.",
+                "Typo: if the space for the \"The Rift Closed\" global achievement sticker is already filled, don't cover it up. Either skip the sticker or place it to the side of the map."
             ]
         },
         {
@@ -1170,6 +1204,9 @@
             ],
             "rewards": [
                 "15 experience each"
+            ],
+            "faq": [
+                "The door with HP is treated as an obstacle with HP with respect to being targetable: summons can focus on it, it is considered to have initiative 99, etc."
             ]
         },
         {
@@ -1369,7 +1406,11 @@
                 "PTVT",
                 "PTDT"
             ],
-            "prompt": "dragon"
+            "prompt": "dragon",
+            "faq": [
+                "The door with HP is treated as an obstacle with HP with respect to being targetable: summons can focus on it, it is considered to have initiative 99, etc.",
+                "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
+            ]
         },
         {
             "id": 34,
@@ -1425,7 +1466,13 @@
                 "+2 reputation",
                 "+1 prosperity"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Additional special rule: the boss is immune to any ability or effect that would affect its position on the map (push, pull, forced movement, etc.).",
+                "This scenario should have an additional requirement: \"The Drake Aided\" (Global) INCOMPLETE. Completing it should also trigger \"Lost Party Achievement: The Drake's Command\".",
+                "The Zephyrs cannot be affected by any ability, and summons do not focus on them.",
+                "Errata: for Boss Special 2 the correct ability order is first summon, then move. The scenario book is correct, the stat card is not."
+            ]
         },
         {
             "id": 35,
@@ -1493,7 +1540,10 @@
                 "-2 prosperity",
                 "Add City Event 79 to the deck"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "The wall obstacles cannot be destroyed."
+            ]
         },
         {
             "id": 36,
@@ -1601,6 +1651,9 @@
             ],
             "achievements_awarded": [
                 "PTTT"
+            ],
+            "faq": [
+                "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
             ]
         },
         {
@@ -1638,6 +1691,9 @@
             ],
             "rewards": [
                 "+1 reputation"
+            ],
+            "faq": [
+                "The Orchid stops moving if the shaman dies. If the Orchid can't find a viable path to the shaman, it does not move. Per the scenario text, it can move through closed doors, opening them as it moves."
             ]
         },
         {
@@ -1829,6 +1885,10 @@
             ],
             "rewards": [
                 "{NOTE_42}"
+            ],
+            "faq": [
+                "The vocal cords are treated as obstacles with HP with respect to being targetable: summons can focus on them, they are considered to have initiative 99, etc.",
+                "Completing this scenario should award the global achievement \"The Voice Silenced\". It should also require \"The Voice Freed\" INCOMPLETE."
             ]
         },
         {
@@ -1945,6 +2005,9 @@
             "rewards": [
                 "20 gold each",
                 "-2 reputation"
+            ],
+            "faq": [
+                "The totems are considered obstacles, so they cannot be destroyed using abilities, but they may be affected by other non-damaging abilities (like the Cragheart's obstacle manipulation abilities)."
             ]
         },
         {
@@ -1986,7 +2049,11 @@
             "achievements_awarded": [
                 "GEOC"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Typo: Boss Special 2 on the stat card says \"Summon P eggs\". It should read \"Summon C eggs\".",
+                "Errata: the order of the Special 2 abilities should be Move, One Attack, then Summon."
+            ]
         },
         {
             "id": 47,
@@ -2028,7 +2095,10 @@
             "achievements_awarded": [
                 "GEOC"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "Additional special rule: the boss is immune to any ability or effect that would affect its position on the map (push, pull, forced movement, etc.)."
+            ]
         },
         {
             "id": 48,
@@ -2069,7 +2139,10 @@
             "achievements_awarded": [
                 "GEOC"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "faq": [
+                "After the boss's melee attack, it is affected by post-attack effects (retaliate, on death, etc.) before it is removed from the board."
+            ]
         },
         {
             "id": 49,
@@ -2117,6 +2190,10 @@
             "rewards": [
                 "50 gold each",
                 "-3 reputation"
+            ],
+            "faq": [
+                "Additional special rule: the Ancient Artillery is not affected by forced movement (pushed, pulled, switch positions, etc.).",
+                "The special rule damage to all characters is direct damage and is not considered an Attack."
             ]
         },
         {
@@ -2238,6 +2315,10 @@
             ],
             "cards": [
                 "Q-510-Seeker of Xorn"
+            ],
+            "faq": [
+                "Special rule: in this scenario you can use the bottom action of any card to loot a treasure tile within range 1.",
+                "When using Forgotten Circles material, the obstacles in the middle of the starting room can be treated as wall overlay tiles as specified in the Forgotten Circles rules. A character also cannot teleport into the section of the map of another character."
             ]
         },
         {
@@ -2301,6 +2382,10 @@
                 "Immediately retire the Seeker of Xorn",
                 "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
                 "Open envelope {PH}"
+            ],
+            "faq": [
+                "If you start a new Cthulhu-Squid character directly after successfully completing this scenario, that character receives the Staff of Xorn. Otherwise the Staff of Xorn is added to the shop deck.",
+                "The Seeker of Xorn does not get to go back to town to sell items, perform enhancements, etc. As the scenario book states, the character's retirement event card doesn't go into the deck."
             ]
         },
         {
@@ -2423,6 +2508,9 @@
                 "“Vengeance” quest complete",
                 "Open envelope X",
                 "+2 reputation"
+            ],
+            "faq": [
+                "Each bone pile is considered a separately performed heal ability, and they still heal the named monster even if it is stunned."
             ]
         },
         {
@@ -2478,6 +2566,9 @@
                 "“Finding the Cure” quest complete",
                 "Open envelope X",
                 "+1 prosperity"
+            ],
+            "faq": [
+                "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
             ]
         },
         {
@@ -2709,6 +2800,9 @@
             "chapter_id": 102,
             "rewards": [
                 "15 gold each"
+            ],
+            "faq": [
+                "You don't have to end your movement on a hex adjacent to the well, you just have to enter a hex adjacent to it."
             ]
         },
         {
@@ -2734,6 +2828,9 @@
             ],
             "rewards": [
                 "+2 prosperity"
+            ],
+            "faq": [
+                "The living spirits are not affected by instant-kill abilities."
             ]
         },
         {
@@ -2753,6 +2850,10 @@
             "chapter_id": 102,
             "rewards": [
                 "2 “Major Power Potions” (Item 041)"
+            ],
+            "faq": [
+                "Forced movement: if the wind moves a character to the right or left and there is an obstacle or wall in one of the possible hexes, the player may choose to be blocked (not move) or move to the open hex.",
+                "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
             ]
         },
         {
@@ -2775,6 +2876,9 @@
             "rewards": [
                 "+1 reputation",
                 "+1 prosperity"
+            ],
+            "faq": [
+                "Typo: use map tile L1b instead of L2b."
             ]
         },
         {
@@ -2799,6 +2903,9 @@
             ],
             "rewards": [
                 "+1 reputation"
+            ],
+            "faq": [
+                "The boulders damage and force-move flying figures."
             ]
         },
         {
@@ -2835,6 +2942,9 @@
             "rewards": [
                 "10 gold each",
                 "+2 prosperity"
+            ],
+            "faq": [
+                "As specified in the special rules, only characters (not summons) can pick up water. If multiple water hexes are in range of a loot action, you must choose only one to pick up."
             ]
         },
         {
@@ -2867,6 +2977,9 @@
             ],
             "rewards": [
                 "60 gold each"
+            ],
+            "faq": [
+                "The setup calls for 5 stump overlays but there are only 4 in the game. Use another overlay as a substitute."
             ]
         },
         {
@@ -2915,6 +3028,9 @@
             ],
             "rewards": [
                 "5 experience each"
+            ],
+            "faq": [
+                "Characters that can create obstacles cannot block all pressure plates simultaneously."
             ]
         },
         {
@@ -2939,6 +3055,9 @@
             ],
             "rewards": [
                 "+3 reputation"
+            ],
+            "faq": [
+                "The victims are considered figures allied to no one, and therefore restrict movement for monsters and characters."
             ]
         },
         {
@@ -2977,6 +3096,9 @@
             ],
             "rewards": [
                 "15 gold each"
+            ],
+            "faq": [
+                "The boss's two abilities can affect invisible characters. They also require line of sight. The boss's mind control can only be used on characters that have not yet acted in the round."
             ]
         },
         {
@@ -3029,6 +3151,10 @@
             ],
             "rewards": [
                 "10 experience each"
+            ],
+            "faq": [
+                "Typo: in the special rules of section 1, \"the Betrayer\" should be \"the Colorless\". For both of the boss's specials, consuming elements only affects the summoning. The other parts of the specials happen regardless.",
+                "The Crystal of Zenith and Sphere of Midnight are not actual items and have no use outside this scenario. Use numbered tokens to track who has them. At the end of the scenario, win or lose, these two \"goal\" treasures are reset so they can be looted again."
             ]
         },
         {
@@ -3063,7 +3189,10 @@
                     "-2 prosperity"
                 ]
             ],
-            "prompt": "burningMountain"
+            "prompt": "burningMountain",
+            "faq": [
+                "If the player holding the items is exhausted, the scenario is failed. When the scenario is failed, the items are returned to the treasure tile and you can loot it again on your next attempt."
+            ]
         },
         {
             "id": 83,
@@ -3095,6 +3224,9 @@
             ],
             "rewards": [
                 "40 collective gold"
+            ],
+            "faq": [
+                "After reading section 2, the first set of special rules ends and is replaced by the second set. The altar has no HP and cannot be destroyed."
             ]
         },
         {
@@ -3132,6 +3264,9 @@
             "cards": [
                 "R-11",
                 "C-73"
+            ],
+            "faq": [
+                "The crystal is not considered an enemy and is not targeted by character summons."
             ]
         },
         {
@@ -3159,6 +3294,9 @@
             ],
             "rewards": [
                 "“Orb of Dawn” (Item 121)"
+            ],
+            "faq": [
+                "Error in the book: for 4 players, don't place the night demon and sun demons in the final room that are only placed as normal enemies for 4 players (colored black for 2 and 3 players, white for 4 players)."
             ]
         },
         {
@@ -3265,6 +3403,9 @@
             ],
             "rewards": [
                 "“Staff of Summoning” (Item 120)"
+            ],
+            "faq": [
+                "If all lurkers are killed, continue to draw lurker ability cards to determine the direction of the scenario's special effect."
             ]
         },
         {
@@ -3421,6 +3562,9 @@
             ],
             "rewards": [
                 "10 experience each"
+            ],
+            "faq": [
+                "The entire row of starting hexes consists of water hexes."
             ]
         },
         {
