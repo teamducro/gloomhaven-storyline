@@ -192,6 +192,7 @@ export default {
         },
         restore() {
             this.updateRemovedItems(-1);
+            this.storySyncer.store();
             this.getCharacters();
             this.$emit('change');
             this.$bus.$emit('campaigns-changed');
@@ -207,7 +208,6 @@ export default {
             }
 
             sheet.store();
-            this.storySyncer.store();
         },
         setUuidToBuy() {
             this.storedUuid = this.readSelected();
