@@ -1,0 +1,3 @@
+NOTE: this PR is a behaviour change (event deck draw order), not a visual one. Before and after look the same by design; the screenshots are the same state (GH party sheet, city deck 1-3) captured before/after only to show nothing visually regressed.
+event-deck: Party sheet "City Event Decks" / "Road Event Decks" with draw buttons and card chips, identical before and after.
+drawn-card: Modal after clicking Draw on the city deck. Before: the card is picked at random each time (can repeat immediately). After: cards come from a persisted deck order (drawn card goes to the bottom, removed cards leave the deck). The shown card number differs only because before is random; the card UI is unchanged.

@@ -1,0 +1,2 @@
+scenario-rewards: Crimson Scales scenario #13 Corpse Cavern, Rewards section. After: the potion links are cross-game (labelled "Item gh-34", gh-41, gh-48) so they point at the Gloomhaven items; before they read "Item 34/41/48" and resolved to Crimson Scales items.
+item-modal: Modal after clicking "Major Stamina Potion". Before: wrong Crimson Scales item #034 "Claw Trap". After: Gloomhaven #034 "Major Stamina Potion" (Prosperity 4, errata, availability 4/4).

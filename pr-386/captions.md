@@ -1,0 +1,2 @@
+donations: Party sheet (Gloomhaven), Sanctuary section with 100 gold donated (= 1 prosperity checkbox). After: new "Check donation prosperity checkboxes automatically" toggle (turned on) plus the "Untick any prosperity boxes you already ticked by hand..." note. Before: no toggle.
+prosperity: Same state, scrolled to the Prosperity checkboxes. After: box 2 is auto-checked and greyed/disabled (tooltip "Gained from donations"); before: box 2 stays unchecked.
