@@ -40,6 +40,10 @@ export default class ApiClient {
         return this.request('put', url, options, data);
     }
 
+    async delete(url, options) {
+        return this.request('delete', url, options);
+    }
+
     async head(url, options) {
         return this.request('head', url, options);
     }

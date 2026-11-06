@@ -64,6 +64,11 @@ export default class StoryRepository extends ApiRepository {
                 return new Story(storyResponse);
             })
             .catch(e => {
+                if (e.response && e.response.status === 404) {
+                    this.removeDeleted(story);
+                    return;
+                }
+
                 let message = 'Failed to save progress, try again later.';
 
                 if (e.response && e.response.status === 403 && e.response.data.message.includes('expired')) {
@@ -79,7 +84,13 @@ export default class StoryRepository extends ApiRepository {
         let promises = [];
 
         stories.each(story => {
-            promises.push(this.find(story))
+            promises.push(this.find(story).catch(e => {
+                if (e.response && e.response.status === 404) {
+                    this.removeDeleted(story);
+                    return;
+                }
+                throw e;
+            }));
         });
 
         await Promise.all(promises);
@@ -109,6 +120,9 @@ export default class StoryRepository extends ApiRepository {
             && localStory.read_only === false
             && localStory.updated_at.isAfter(remoteStory.updated_at)) {
             remoteStory = await this.update(localStory);
+            if (!remoteStory) {
+                return;
+            }
         } else {
             this.storeStory(response, token);
         }
@@ -142,6 +156,21 @@ export default class StoryRepository extends ApiRepository {
             .toArray();
         const storiesToStore = stories.merge(otherStories);
         store.set('stories', storiesToStore);
+    }
+
+    // Permanently deletes the campaign for all devices (patrons only), then removes it locally.
+    async destroy(story) {
+        await this.api.delete('stories/' + story.id);
+        this.remove(story);
+    }
+
+    // The campaign was deleted by its owner on another device.
+    async removeDeleted(story) {
+        this.remove(story);
+        const campaignId = window.app.campaignId === story.campaignId ? 'local' : window.app.campaignId;
+        // Switching toasts as well, so toast afterwards to keep this message visible.
+        await window.app.switchCampaign(campaignId);
+        window.app.$bus.$emit('toast', window.app.$t('campaign-deleted', {name: _.escape(story.name)}), false);
     }
 
     remove(story) {

@@ -72,6 +72,13 @@
                                 <span class="ml-2 sm:ml-3">{{ $t('Unlink') }}</span>
                             </a>
                         </div>
+                        <div v-if="canDelete(story)" class="mt-px w-0 flex-1 flex">
+                            <a href="#" @click.prevent="confirmDelete(story)" data-test="delete-campaign"
+                               class="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent hover:bg-primary2-30">
+                                <span class="material-icons">delete_forever</span>
+                                <span class="ml-2 sm:ml-3">{{ $t('Delete permanently') }}</span>
+                            </a>
+                        </div>
                         <purchase v-if="!story.is_shared && showPurchaseButton"
                                   :story-id="story.id" class="mt-px w-0 flex-1 flex">
                             <a class="cursor-pointer relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-white font-medium border border-transparent hover:bg-primary2-30">
@@ -95,8 +102,10 @@
 <script>
 import StoryRepository from "../../../repositories/StoryRepository";
 import ApiStoryRepository from "../../../apiRepositories/StoryRepository";
+import Confirm from "../../../mixins/Confirm";
 
 export default {
+    mixins: [Confirm],
     props: {
         user: {
             type: Object
@@ -146,6 +155,26 @@ export default {
         },
         unlink(story) {
             this.apiStoryRepository.remove(story);
+            this.select(this.isSelected(story) ? 'local' : this.campaignId);
+        },
+        canDelete(story) {
+            return !!this.user && this.user.is_patron && !story.is_shared;
+        },
+        confirmDelete(story) {
+            this.confirm(
+                this.$t('Delete permanently'),
+                this.$t('delete-campaign-confirm', {name: story.name}),
+                () => this.destroy(story),
+                this.$t('delete-campaign-note')
+            );
+        },
+        async destroy(story) {
+            try {
+                await this.apiStoryRepository.destroy(story);
+            } catch (e) {
+                this.$bus.$emit('toast', this.$t('delete-campaign-failed'), false);
+                return;
+            }
             this.select(this.isSelected(story) ? 'local' : this.campaignId);
         }
     }
