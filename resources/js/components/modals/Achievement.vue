@@ -5,7 +5,7 @@
                :titleDivider="true">
             <template v-slot:content>
                 <div class="flex flex-row justify-between" v-if="achievement">
-                    <div class="!my-4">
+                    <div class="my-4!">
                         <!-- TODO: Maybe add flavor text/story for the Achievements -->
                         <h2 v-if="!awardedFrom.isEmpty()" class="text-white">{{ $t('Gained from') }}:
                             <scenario-number class="ml-2"
@@ -31,6 +31,7 @@
                         <button v-if="achievement.is_manual && achievement.manual_awarded"
                                 class="mdc-button mdc-button--raised origin-right transform scale-75 my-4"
                                 :disabled="appData.read_only" @click="removeManualAchievement(achievement)">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">delete</i>
                             <span class="mdc-button__label">{{ $t('Remove') }}</span>
                         </button>

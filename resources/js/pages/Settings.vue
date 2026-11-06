@@ -43,6 +43,7 @@
 
             <button @click="$bus.$emit('open-reset-modal')" type="button"
                     class="mt-4 mb-6 mdc-button mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
                 <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                 <span class="mdc-button__label">{{ $t('Reset campaign') }}</span>
             </button>

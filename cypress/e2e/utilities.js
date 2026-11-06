@@ -189,7 +189,7 @@ export default {
                 return;
             }
             cy.get('button').contains('menu').click();
-            cy.get('.game-switch .mdc-select__selected-text').click();
+            cy.get('.game-switch .mdc-select__anchor').click();
             cy.get('.' + game).click();
             cy.reload();
         });

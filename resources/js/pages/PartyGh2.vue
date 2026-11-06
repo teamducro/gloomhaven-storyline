@@ -74,6 +74,7 @@
 
             <router-link to="/items">
                 <button class="mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
+                    <span class="mdc-button__ripple"></span>
                     <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                     <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
                 </button>
@@ -110,6 +111,7 @@
                     <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'C')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -127,6 +129,7 @@
                     <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'R')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>

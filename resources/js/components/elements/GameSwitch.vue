@@ -1,24 +1,29 @@
 <template xmlns="http://www.w3.org/1999/html">
-    <div ref="game-switch" class="game-switch mdc-select w-full"
+    <div ref="game-switch" class="game-switch mdc-select mdc-select--filled w-full"
          :class="{'with-transparency': withTransparency}">
-        <span class="mdc-list-item absolute z-1 pointer-events-none !text-xs !-mt-2 !text-white2-60">
+        <span class="mdc-deprecated-list-item absolute z-1 pointer-events-none text-xs! -mt-2! text-white2-60!">
             {{ $t('Selected Game') }}
         </span>
-        <div class="mdc-select__anchor w-full">
-            <i class="mdc-select__dropdown-icon"></i>
-            <div class="mdc-select__selected-text">
-                {{ current ? $t(current) : $t('gh') }}
-            </div>
+        <div class="mdc-select__anchor w-full" role="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="mdc-select__ripple"></span>
+            <span class="mdc-select__selected-text-container">
+                <span class="mdc-select__selected-text">
+                    {{ current ? $t(current) : $t('gh') }}
+                </span>
+            </span>
+            <select-dropdown-icon></select-dropdown-icon>
+            <span class="mdc-line-ripple"></span>
         </div>
 
         <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible" style="min-width: 240px">
-            <ul class="mdc-list">
-                <li v-for="code in games"
+            <ul class="mdc-deprecated-list" role="listbox">
+                <li role="option" v-for="code in games"
                     :key="code" :data-value="code"
-                    class="mdc-list-item cursor-pointer whitespace-nowrap flex items-center"
+                    class="mdc-deprecated-list-item cursor-pointer whitespace-nowrap flex items-center"
                     :aria-selected="current === code"
-                    :class="[code + (current === code ? 'mdc-list-item--selected': '')]">
-                    {{ $t(code) }}
+                    :class="[code, {'mdc-deprecated-list-item--selected': current === code}]">
+                    <span class="mdc-deprecated-list-item__ripple"></span>
+                    <span class="mdc-deprecated-list-item__text">{{ $t(code) }}</span>
                 </li>
             </ul>
         </div>
@@ -61,6 +66,11 @@ export default {
         this.select = new MDCSelect(this.$refs['game-switch'])
         this.select.listen('MDCSelect:change', this.selected)
     },
+    updated() {
+        // MDC caches option values and owns the selected text, so resync after Vue re-renders the options
+        this.select.layoutOptions()
+        this.select.setSelectedIndex(this.games.indexOf(this.current), true)
+    },
     unmounted() {
         this.select?.destroy()
 
@@ -70,7 +80,7 @@ export default {
     },
     methods: {
         open() {
-            document.querySelector('.game-switch .mdc-select__selected-text').click()
+            document.querySelector('.game-switch .mdc-select__anchor').click()
         },
         setCurrent() {
             this.setGames()

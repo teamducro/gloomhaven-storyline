@@ -36,6 +36,7 @@
     ],
     "homepage": "https://gloomhaven-storyline.com",
     "devDependencies": {
+        "@tailwindcss/postcss": "^4.3.4",
         "@vitejs/plugin-vue": "^6.0.10",
         "autoprefixer": "^10.4.2",
         "cross-env": "^7.0.3",
@@ -44,23 +45,27 @@
         "lodash": "^4.17.21",
         "postcss": "^8.5.27",
         "sass": "^1.107.1",
-        "tailwindcss": "^2.2.19",
+        "tailwindcss": "^4.3.4",
         "vite": "^8.3.5",
         "vue": "^3.5.44"
     },
     "dependencies": {
         "@intlify/core-base": "^11.4.17",
-        "@material/button": "^4.0.0",
-        "@material/checkbox": "^4.0.0",
-        "@material/dialog": "^4.0.0",
-        "@material/drawer": "^4.0.0",
-        "@material/form-field": "^4.0.0",
-        "@material/list": "^4.0.0",
-        "@material/radio": "^4.0.0",
-        "@material/ripple": "^4.0.0",
-        "@material/select": "^4.0.0",
-        "@material/textfield": "^4.0.0",
-        "@material/theme": "^4.0.0",
+        "@material/button": "^14.0.0",
+        "@material/checkbox": "^14.0.0",
+        "@material/dialog": "^14.0.0",
+        "@material/drawer": "^14.0.0",
+        "@material/form-field": "^14.0.0",
+        "@material/line-ripple": "^14.0.0",
+        "@material/list": "^14.0.0",
+        "@material/menu": "^14.0.0",
+        "@material/menu-surface": "^14.0.0",
+        "@material/radio": "^14.0.0",
+        "@material/ripple": "^14.0.0",
+        "@material/select": "^14.0.0",
+        "@material/textfield": "^14.0.0",
+        "@material/theme": "^14.0.0",
+        "@material/typography": "^14.0.0",
         "@sentry/tracing": "^7.120.4",
         "@sentry/vue": "^7.120.4",
         "@stripe/stripe-js": "^1.24.0",
@@ -99,9 +104,6 @@
         },
         "@vue/component-compiler-utils": {
             "postcss": "$postcss"
-        },
-        "purgecss": {
-            "glob": "^14.0.3"
         }
     }
 }

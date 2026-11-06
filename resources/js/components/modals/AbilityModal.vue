@@ -7,7 +7,7 @@
                 </span>
             </template>
             <template #content>
-                <div v-if="ability" class="w-full h-full flex flex-col md:flex-row outline-none">
+                <div v-if="ability" class="w-full h-full flex flex-col md:flex-row outline-hidden">
                     <div class="relative w-full" style="max-width: 300px;">
                         <webp :src="ability.image" :alt="$t(ability.name)"
                               class="w-full rounded-lg sm:rounded-xl"/>
@@ -20,7 +20,7 @@
                     <div v-if="canEnhance" class="md:ml-4 md:mt-0 mb-4 md:w-64 mt-4">
                         <div v-if="enhancements.length" class="mb-4 space-y-1">
                             <div v-for="enhancement in enhancements" :key="enhancement.id"
-                                 class="flex items-center bg-dark-gray2-75 rounded px-2 py-1">
+                                 class="flex items-center bg-dark-gray2-75 rounded-sm px-2 py-1">
                                 <enhancement-icon :type="enhancement.type" :size="16" class="mr-2"/>
                                 <span class="truncate">{{ enhancementDisplayLabel(enhancement.type) }}</span>
                                 <span @click="remove(enhancement.id)"
@@ -31,6 +31,7 @@
 
                         <button v-if="!enhancing" @click="enhancing = true" type="button"
                                 class="mdc-button mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">add</i>
                             <span class="mdc-button__label">{{ $t('Enhance') }}</span>
                         </button>
@@ -40,7 +41,7 @@
                                 {{ $t('Enhancement') }}
                                 <div class="flex items-center gap-2">
                                     <enhancement-icon :type="type" :size="20"/>
-                                    <select id="enhancement-type" v-model="type" class="bg-dark-gray2-75 p-2 rounded flex-1">
+                                    <select id="enhancement-type" v-model="type" class="bg-dark-gray2-75 p-2 rounded-sm flex-1">
                                         <option v-for="option in typeOptions" :value="option">
                                             {{ enhancementDisplayLabel(option) }}
                                         </option>
@@ -50,7 +51,7 @@
 
                             <label class="flex flex-col">
                                 {{ $t('Action') }}
-                                <select id="enhancement-half" v-model="half" class="bg-dark-gray2-75 p-2 rounded">
+                                <select id="enhancement-half" v-model="half" class="bg-dark-gray2-75 p-2 rounded-sm">
                                     <option value="top">{{ $t('Top action') }}</option>
                                     <option value="bottom">{{ $t('Bottom action') }}</option>
                                 </select>
@@ -58,7 +59,7 @@
 
                             <label v-if="hasFrosthavenCards(character)" class="flex flex-col">
                                 {{ $t('Ability property') }}
-                                <select v-model="abilityProperty" class="bg-dark-gray2-75 p-2 rounded">
+                                <select v-model="abilityProperty" class="bg-dark-gray2-75 p-2 rounded-sm">
                                     <option value="normal">{{ $t('Normal') }}</option>
                                     <option value="lost">{{ $t('Lost (no persistent)') }}</option>
                                     <option v-if="sheet.game !== 'gh2'" value="persistent">{{ $t('Persistent bonus') }}</option>
@@ -85,15 +86,18 @@
                             <div class="flex flex-wrap gap-2">
                                 <button @click="buy" type="button" class="mdc-button mdc-button--raised"
                                         :disabled="appData.read_only || !canBuy">
+                                    <span class="mdc-button__ripple"></span>
                                     <add-links-and-icons class="mr-2" :text="'{COINS}'"/>
                                     <span class="mdc-button__label">{{ $t('Buy') }}</span>
                                 </button>
                                 <button @click="addFree" type="button" class="mdc-button mdc-button--raised"
                                         :disabled="appData.read_only">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon">add</i>
                                     <span class="mdc-button__label">{{ $t('Add') }}</span>
                                 </button>
                                 <button @click="enhancing = false" type="button" class="mdc-button">
+                                    <span class="mdc-button__ripple"></span>
                                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                                 </button>
                             </div>

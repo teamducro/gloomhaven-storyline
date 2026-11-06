@@ -51,7 +51,7 @@ describe('Gloomhaven 2nd Edition', () => {
         cy.visit('/tracker');
 
         cy.get('button').contains('menu').click();
-        cy.get('.game-switch .mdc-select__selected-text').click();
+        cy.get('.game-switch .mdc-select__anchor').click();
         cy.get('.gh2').click();
         cy.get('.mdc-dialog--open').contains('Gloomhaven 2nd Edition');
         cy.get('.mdc-dialog--open button').contains('Purchase Gloomhaven');

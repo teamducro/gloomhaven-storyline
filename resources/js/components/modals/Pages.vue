@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal" :title="title" :full-screen="true">
             <template #content>
-                <div class="w-full h-full overflow-y-scroll outline-none">
+                <div class="w-full h-full overflow-y-scroll outline-hidden">
                     <div id="pages" class="grid grid-cols-1 md:grid-cols-2 gap-0">
                         <webp v-for="page in pages"
                               :src="pageSrc(page)"

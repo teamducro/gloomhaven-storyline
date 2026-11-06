@@ -6,10 +6,10 @@
                 <div id="character-art" @click="openCharacterMat" aria-hidden="true"
                      class="character-art-hover hidden sm:block absolute top-0 right-0 z-1 w-80 h-32 cursor-pointer"></div>
                 <!-- Same position and size as the add character button, one row below it -->
-                <div class="character-art-touch character-art-hover absolute right-0 top-0 mt-[7.5rem] sm:mt-[5rem] mr-4 z-5">
+                <div class="character-art-touch character-art-hover absolute right-0 top-0 mt-[7.5rem] sm:mt-20 mr-4 z-5">
                     <button id="character-art-button" type="button" :title="$t('Character mat')"
                             @click="openCharacterMat"
-                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-dark-gray2-75 rounded-full">
+                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 bg-dark-gray2-75! rounded-full">
                         open_in_full
                     </button>
                 </div>
@@ -130,6 +130,7 @@
 
                             <router-link to="/items">
                                 <button class="mb-8 mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                                     <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
                                 </button>
@@ -187,16 +188,19 @@
                             <div class="my-8">
                                 <button v-if="!isArchived" @click="$refs['retire-character'].open()" type="button"
                                         class="mr-4 mdc-button mdc-button--raised" :disabled="appData.read_only">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon" aria-hidden="true">military_tech</i>
                                     <span class="mdc-button__label">{{ $t('Retire') }}</span>
                                 </button>
                                 <button v-if="!isArchived" @click="$refs['abandon-character'].open()" type="button"
                                         class="mr-4 mdc-button mdc-button--raised" :disabled="appData.read_only">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon" aria-hidden="true">person_off</i>
                                     <span class="mdc-button__label">{{ $t('Abandon') }}</span>
                                 </button>
                                 <button v-if="isArchived" @click="$refs['remove-character'].open()" type="button"
                                         class="mdc-button mdc-button--raised" :disabled="appData.read_only">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                                     <span class="mdc-button__label">{{ $t('Remove') }}</span>
                                 </button>
@@ -204,6 +208,7 @@
                                         @click="restore"
                                         :disabled="appData.read_only || characterRepository.partyHasCharacter(sheet, character.id)"
                                         class="ml-4 mdc-button mdc-button--raised">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
                                     <span class="mdc-button__label">{{ $t('Restore') }}</span>
                                 </button>
@@ -232,10 +237,12 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
                 <button id="retire-character" type="button" class="mdc-button mdc-dialog__button"
                         data-mdc-dialog-action="yes" @click="retire">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-red-700">{{ $t('Retire') }}</span>
                 </button>
             </template>
@@ -254,10 +261,12 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
                 <button id="abandon-character" type="button" class="mdc-button mdc-dialog__button"
                         data-mdc-dialog-action="yes" @click="abandon">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-red-700">{{ $t('Abandon') }}</span>
                 </button>
             </template>
@@ -269,10 +278,12 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
                 <button type="button"  class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="remove">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-red-700">{{ $t('Remove') }}</span>
                 </button>
             </template>
@@ -631,7 +642,7 @@ export default {
 <style scoped lang="scss">
 // Two columns; the retirement section sits under the left column so long perk lists don't push it down.
 // Stacked (mobile) it stays last.
-@screen sheet-break-lg {
+@media (min-width: 872px) {
     .character-sheet {
         display: grid;
         grid-template-columns: 1fr 1fr;

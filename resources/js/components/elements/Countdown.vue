@@ -139,12 +139,12 @@
         top: 0;
         left: -100%;
         border-radius: 100%;
-        background: linear-gradient(to bottom, #5da7a7, theme('colors.complete'));
+        background: linear-gradient(to bottom, #5da7a7, var(--color-complete));
         box-shadow: inset 0 1px 0px rgba(255, 255, 255, .5);
     }
 
     .circle-loader.low .circle-loader-circle {
-        background: linear-gradient(to bottom, #c1584a, theme('colors.incomplete'));
+        background: linear-gradient(to bottom, #c1584a, var(--color-incomplete));
     }
 
     .circle-loader-half:first-child .circle-loader-circle {

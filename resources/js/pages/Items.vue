@@ -21,7 +21,7 @@
                           @close="dropDownClose = false">
                     <template v-slot:trigger>
                         <button type="button"
-                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full transform transition-transform"
+                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 bg-black2-50! rounded-full transform transition-transform"
                                 :class="{'rotate-45': dropDownClose}">
                             add
                         </button>
@@ -385,11 +385,12 @@ export default {
 }
 </script>
 <style lang="scss">
+@reference "../../sass/tailwind.css";
 .items-to-add-dropdown .dropdown {
     width: calc(100vw - 4.8rem);
 }
 
-@screen md {
+@media (min-width: 768px) {
     .items-to-add-dropdown .dropdown {
         width: calc(100vw - 6.8rem);
         max-width: 1006px;

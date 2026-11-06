@@ -95,6 +95,7 @@
                     <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'SO')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -112,6 +113,7 @@
                     <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'SR')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -130,6 +132,7 @@
                     <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'B')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -150,6 +153,7 @@
                     <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'WO')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -167,6 +171,7 @@
                     <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'WR')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -185,6 +190,7 @@
                     <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'B')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>

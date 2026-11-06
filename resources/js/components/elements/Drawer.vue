@@ -1,7 +1,7 @@
 <template xmlns="http://www.w3.org/1999/html">
     <div v-cloak>
         <button type="button" @click="toggle"
-                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 !bg-dark-gray2-75 rounded-full">
+                class="mdc-icon-button material-icons mdc-button--raised fixed left-0 top-area-inset-top mt-1 p-2 mt-2 ml-2 z-5 bg-dark-gray2-75! rounded-full">
             menu
         </button>
 
@@ -12,7 +12,7 @@
                 </a>
             </div>
             <div class="mdc-drawer__content">
-                <div class="mdc-list-group">
+                <div class="mdc-deprecated-list-group">
                     <!--
                     <div v-if="user" class="mx-4 mb-4 flex items-center">
                         <span class="inline-block h-10 w-10 rounded-full overflow-hidden bg-gray-50">
@@ -26,126 +26,138 @@
                     </div>
                     -->
 
-                    <ul ref="list" class="mdc-list">
+                    <ul ref="list" class="mdc-deprecated-list">
                         <li @click="toggle">
-                            <router-link to="/campaigns" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic"
+                            <router-link to="/campaigns" class="mdc-deprecated-list-item"
+                                         active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic"
                                    aria-hidden="true">supervisor_account</i>
-                                <span class="mdc-list-item__text">
+                                <span class="mdc-deprecated-list-item__text">
                                     {{ $t('Campaigns') }}
                                     <span v-if="!user" class="ml-2 text-gold font-bold">{{ $t('Pro') }}</span>
                                 </span>
                             </router-link>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                        <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
                         <li @click="toggle">
-                            <router-link to="/story" class="mdc-list-item" active-class="mdc-list-item--activated">
-                                <inline-svg src="icons/story" class="mdc-list-item__graphic" aria-hidden="true"/>
-                                <span class="mdc-list-item__text">{{ $t('Storyline') }}</span>
+                            <router-link to="/story" class="mdc-deprecated-list-item" active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <inline-svg src="icons/story" class="mdc-deprecated-list-item__graphic" aria-hidden="true"/>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Storyline') }}</span>
                             </router-link>
                         </li>
 
                         <li v-if="hasMap" @click="toggle">
-                            <router-link to="/map" class="mdc-list-item" active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">map</i>
-                                <span class="mdc-list-item__text">{{ $t('Map') }}</span>
+                            <router-link to="/map" class="mdc-deprecated-list-item" active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">map</i>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Map') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/scenarios" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">list</i>
-                                <span class="mdc-list-item__text">{{ $t('Scenario list') }}</span>
+                            <router-link to="/scenarios" class="mdc-deprecated-list-item"
+                                         active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">list</i>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Scenario list') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/achievements" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
+                            <router-link to="/achievements" class="mdc-deprecated-list-item"
+                                         active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
                                 <inline-svg style="width: 16px" src="icons/achievements"
-                                            class="mdc-list-item__graphic ml-1"
+                                            class="mdc-deprecated-list-item__graphic ml-1"
                                             aria-hidden="true"/>
-                                <span class="mdc-list-item__text pl-1">{{ $t('Achievements') }}</span>
+                                <span class="mdc-deprecated-list-item__text pl-1">{{ $t('Achievements') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/party" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">assignment</i>
-                                <span class="mdc-list-item__text">{{ [Game.fh, Game.gh2].includes(game) ? $t('Campaign sheet') : $t('Party sheet') }}</span>
+                            <router-link to="/party" class="mdc-deprecated-list-item"
+                                         active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">assignment</i>
+                                <span class="mdc-deprecated-list-item__text">{{ [Game.fh, Game.gh2].includes(game) ? $t('Campaign sheet') : $t('Party sheet') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/characters" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic"
+                            <router-link to="/characters" class="mdc-deprecated-list-item"
+                                         active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic"
                                    aria-hidden="true">person</i>
-                                <span class="mdc-list-item__text">{{ $t('Character sheet') }}</span>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Character sheet') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/items" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic transform rotate-180"
+                            <router-link to="/items" class="mdc-deprecated-list-item"
+                                         active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic transform rotate-180"
                                    aria-hidden="true">style</i>
-                                <span class="mdc-list-item__text">{{ $t('Items') }}</span>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Items') }}</span>
                             </router-link>
                         </li>
 
                         <li v-if="hasBuildings" @click="toggle">
-                            <router-link to="/buildings" class="mdc-list-item" active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-                                <span class="mdc-list-item__text">{{ $t('Buildings') }}</span>
+                            <router-link to="/buildings" class="mdc-deprecated-list-item" active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">home</i>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Buildings') }}</span>
                             </router-link>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                        <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
                     </ul>
                 </div>
-                <div class="mdc-list-group">
+                <div class="mdc-deprecated-list-group">
                     <ul>
                         <li>
-                            <a class="mdc-list-item"
+                            <a class="mdc-deprecated-list-item"
                                @click="shareCurrentStory">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">share</i>
-                                <span class="mdc-list-item__text">{{ $t('Share') }}</span>
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">share</i>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Share') }}</span>
                             </a>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                        <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
                     </ul>
                 </div>
 
                 <links @click="toggle" class="px-4 -my-2"></links>
 
-                <div class="mdc-list-group">
+                <div class="mdc-deprecated-list-group">
                     <ul>
-                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                        <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
                         <li @click="toggle">
-                            <router-link to="/info" class="mdc-list-item" active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic"
+                            <router-link to="/info" class="mdc-deprecated-list-item" active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic"
                                    aria-hidden="true">info</i>
-                                <span class="mdc-list-item__text">{{ $t('Info') }}</span>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Info') }}</span>
                             </router-link>
                         </li>
 
                         <li @click="toggle">
-                            <router-link to="/settings" class="mdc-list-item"
-                                         active-class="mdc-list-item--activated">
-                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
-                                <span class="mdc-list-item__text">{{ $t('Settings') }}</span>
+                            <router-link to="/settings" class="mdc-deprecated-list-item"
+                                         active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">settings</i>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Settings') }}</span>
                             </router-link>
                         </li>
 
-                        <li role="separator" class="mdc-list-divider !my-2"></li>
+                        <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
                     </ul>
                 </div>
@@ -157,7 +169,7 @@
                     <game-switch ref="game-switch"></game-switch>
                 </div>
 
-                <div class="mdc-list-group">
+                <div class="mdc-deprecated-list-group">
                     <ul>
                         <li v-if="!loggedIn" class="py-4 pl-4 flex" @click="toggle">
                             <become-patron-button transparent></become-patron-button>

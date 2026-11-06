@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <li class="col-span-full bg-dark-background rounded-lg shadow divide-y divide-gray-500">
+            <li class="col-span-full bg-dark-background rounded-lg shadow-sm divide-y divide-gray-500">
                 <div class="w-full flex items-center justify-between p-6 space-x-6"
                      @click="select('local')">
                     <div class="flex-1">
@@ -31,7 +31,7 @@
             </li>
 
             <li v-for="story in stories.items" :key="story.id"
-                class="col-span-1 bg-dark-background rounded-lg shadow divide-y divide-gray-500">
+                class="col-span-1 bg-dark-background rounded-lg shadow-sm divide-y divide-gray-500">
                 <div class="w-full flex items-center justify-between p-6 space-x-6"
                      @click="select(story.campaignId)">
                     <div class="flex-1 truncate">

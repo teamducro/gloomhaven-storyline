@@ -15,6 +15,7 @@
             </label>
             <div class="relative">
                 <button type="submit" class="mdc-button mdc-button--raised ml-3">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Add Campaign') }}</span>
                 </button>
             </div>

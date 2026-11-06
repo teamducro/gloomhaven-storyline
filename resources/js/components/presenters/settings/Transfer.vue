@@ -30,10 +30,13 @@
                 </div>
                 <span class="material-icons">forward</span>
                 <div class="mt-4 md:mx-4 md:mt-1">
-                    <div class="copy-switch mdc-select w-full">
-                        <div class="mdc-select__anchor w-full">
-                            <i class="mdc-select__dropdown-icon"></i>
-                            <div class="mdc-select__selected-text"></div>
+                    <div class="copy-switch mdc-select mdc-select--filled w-full">
+                        <div class="mdc-select__anchor w-full" role="button" aria-haspopup="listbox" aria-expanded="false">
+                            <span class="mdc-select__ripple"></span>
+                            <span class="mdc-select__selected-text-container">
+                                <span class="mdc-select__selected-text"></span>
+                            </span>
+                            <select-dropdown-icon></select-dropdown-icon>
                             <span class="mdc-floating-label mdc-floating-label--float-above">
                                 {{ $t('Transfer to') }}
                             </span>
@@ -42,16 +45,18 @@
 
                         <div class="mdc-select__menu mdc-menu mdc-menu-surface overflow-visible"
                              style="min-width: 240px">
-                            <ul class="mdc-list">
-                                <li class="mdc-list-item cursor-pointer whitespace-nowrap"
+                            <ul class="mdc-deprecated-list" role="listbox">
+                                <li role="option" class="mdc-deprecated-list-item cursor-pointer whitespace-nowrap"
                                     data-value="local">
-                                    {{ $t('local') }}
+                                    <span class="mdc-deprecated-list-item__ripple"></span>
+                                    <span class="mdc-deprecated-list-item__text">{{ $t('local') }}</span>
                                     <span class="ml-4 mt-1 cloud-off"></span>
                                 </li>
-                                <li v-for="(story) in stories.items"
+                                <li role="option" v-for="(story) in stories.items"
                                     :key="story.campaignId" :data-value="story.campaignId"
-                                    class="mdc-list-item cursor-pointer whitespace-nowrap flex items-center">
-                                    {{ story.name }}
+                                    class="mdc-deprecated-list-item cursor-pointer whitespace-nowrap flex items-center">
+                                    <span class="mdc-deprecated-list-item__ripple"></span>
+                                    <span class="mdc-deprecated-list-item__text">{{ story.name }}</span>
                                     <span class="ml-4 mt-1 cloud-on"></span>
                                 </li>
                             </ul>
@@ -60,6 +65,7 @@
                 </div>
                 <div>
                     <button @click.stop="transfer" type="button" class="mt-4 mb-6 mdc-button mdc-button--raised">
+                        <span class="mdc-button__ripple"></span>
                         <i class="material-icons mdc-button__icon" aria-hidden="true">content_copy</i>
                         <span class="mdc-button__label">{{ $t('Transfer') }}</span>
                     </button>
@@ -107,6 +113,8 @@ export default {
 
                 if (!this.select) {
                     this.select = new MDCSelect(c('.copy-switch')[0]);
+                } else {
+                    this.select.layoutOptions();
                 }
             }
         },

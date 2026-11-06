@@ -5,45 +5,50 @@
             <dropdown ref="filter-dropdown" align="right">
                 <template v-slot:trigger>
                     <button type="button"
-                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full"
+                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 bg-black2-50! rounded-full"
                             :class="{'text-primary': filterEnabled}">
                         filter_list
                     </button>
                 </template>
 
-                <ul class="mdc-list overflow-y-auto" style="max-height: calc(100vh - 100px)"
+                <ul class="mdc-deprecated-list overflow-y-auto" style="max-height: calc(100vh - 100px)"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                    <li class="mdc-list-item cursor-pointer" @click="resetFilter(true)">
-                        <span class="mdc-list-item__text">{{ $t('Clear filter') }}</span>
+                    <li class="mdc-deprecated-list-item cursor-pointer" @click="resetFilter(true)">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text">{{ $t('Clear filter') }}</span>
                     </li>
 
-                    <li role="separator" class="mdc-list-divider !my-2"></li>
+                    <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
                     <li v-for="state in states"
-                        class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': stateFilter === state}"
+                        class="mdc-deprecated-list-item cursor-pointer"
+                        :class="{'mdc-deprecated-list-item--activated': stateFilter === state}"
                         @click="setStateFilter(state)">
-                        <span class="mdc-list-item__text capitalize">{{ $t(state) }}</span>
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text capitalize">{{ $t(state) }}</span>
                     </li>
-                    <li class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': otherFilters.missedTreasures}"
+                    <li class="mdc-deprecated-list-item cursor-pointer"
+                        :class="{'mdc-deprecated-list-item--activated': otherFilters.missedTreasures}"
                         @click="setOtherFilter('missedTreasures')">
-                        <span class="mdc-list-item__text">{{ $t('Missed Treasures') }}</span>
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text">{{ $t('Missed Treasures') }}</span>
                     </li>
-                    <li class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': otherFilters.solo}"
+                    <li class="mdc-deprecated-list-item cursor-pointer"
+                        :class="{'mdc-deprecated-list-item--activated': otherFilters.solo}"
                         @click="setOtherFilter('solo')">
-                        <span class="mdc-list-item__text">{{ $t('Solo') }}</span>
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text">{{ $t('Solo') }}</span>
                     </li>
 
-                    <li v-if="regions.length" role="separator" class="mdc-list-divider !my-2"></li>
+                    <li v-if="regions.length" role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
                     <template v-if="scenarios && regions.length">
                         <li v-for="region in regions"
-                            class="mdc-list-item cursor-pointer"
-                            :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
+                            class="mdc-deprecated-list-item cursor-pointer"
+                            :class="{'mdc-deprecated-list-item--activated': regionFilter.includes(region.id)}"
                             @click="toggleRegionFilter(region.id)">
-                            <span class="mdc-list-item__text">{{ $t(region.name) }}</span>
+                            <span class="mdc-deprecated-list-item__ripple"></span>
+                            <span class="mdc-deprecated-list-item__text">{{ $t(region.name) }}</span>
                         </li>
                     </template>
                 </ul>

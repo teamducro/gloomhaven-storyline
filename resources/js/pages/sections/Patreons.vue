@@ -1,11 +1,11 @@
 <template>
     <section id="patreons" class="bg-white pt-16">
         <div class="container max-w-3xl mx-auto p-4 sm:p-6">
-            <h1 class="w-full my-2 text-4xl lg:text-5xl font-bold leading-tight text-center text-gray-800">
+            <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-none font-bold leading-tight text-center text-gray-800">
                 Patreon
             </h1>
             <div class="w-full mb-4">
-                <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
+                <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded-sm shadow-sm"></div>
             </div>
 
             <p class="w-full mt-8 text-center text-gray-600">
@@ -41,7 +41,7 @@
             </div>
             <div class="mt-8" v-if="patrons.length > limitedCount">
                 <a href="#" @click.prevent="viewAll = !viewAll"
-                   class="w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                   class="w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-xs text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
                     {{ viewAll ? 'View less' : 'View all' }}
                 </a>
             </div>

@@ -83,7 +83,7 @@
             color: currentColor;
         }
         50% {
-            @apply text-character-#{$character}
+            color: $color;
         }
         55% {
             color: currentColor;

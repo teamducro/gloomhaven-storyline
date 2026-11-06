@@ -4,7 +4,7 @@
                class="character-mat-modal" :class="{portrait: character && character.hasPortraitMat}"
                :overflowHidden="animating">
             <template #content>
-                <div v-if="character" id="character-mat" class="w-full h-full flex flex-col outline-none">
+                <div v-if="character" id="character-mat" class="w-full h-full flex flex-col outline-hidden">
                     <div class="relative w-full cursor-pointer" @click="flip">
                         <flip-card :flipped="flipped">
                             <template v-slot:front>
@@ -24,6 +24,7 @@
             </template>
             <template #buttons>
                 <button id="flip-character-mat" type="button" class="mdc-button" @click="flip">
+                    <span class="mdc-button__ripple"></span>
                     <i class="material-icons mdc-button__icon" aria-hidden="true">flip</i>
                     <span class="mdc-button__label">{{ $t('Flip') }}</span>
                 </button>

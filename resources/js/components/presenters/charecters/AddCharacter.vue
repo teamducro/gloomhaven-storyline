@@ -5,7 +5,7 @@
                   @close="dropDownClose = false">
             <template v-slot:trigger>
                 <button type="button"
-                        class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-dark-gray2-75 rounded-full transform transition-transform"
+                        class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 bg-dark-gray2-75! rounded-full transform transition-transform"
                         :class="{'rotate-45': dropDownClose}">
                     add
                 </button>
@@ -21,7 +21,7 @@
                             <a @click.stop.prevent="$emit('create', id)" href="#"
                                class="-m-3 p-3 whitespace-nowrap flex items-center rounded-md text-base font-medium text-white hover:bg-black2-75 transition ease-in-out duration-150"
                                :class="{'text-white2-50 grayscale cursor-default': characterRepository.partyHasCharacter(sheet, id)}">
-                                <character-icon class="flex-shrink-0 w-5 mr-2"
+                                <character-icon class="shrink-0 w-5 mr-2"
                                                 :class="[!characterRepository.partyHasCharacter(sheet, id) ? 'hover:cursor-pointer': '']"
                                                 :character="id"/>
                                 <span>{{ $t(characterNames[id]) }}</span>
@@ -35,7 +35,7 @@
                         <li v-if="!unlocked && id in sheet.characterOrder" class="flow-root"
                             :class="'order-'+sheet.characterOrder[id]">
                             <a @click.stop.prevent="$emit('create', id)" href="#" class="block w-5 m-1">
-                                <character-icon class="flex-shrink-0 w-5" :character="id"/>
+                                <character-icon class="shrink-0 w-5" :character="id"/>
                             </a>
                         </li>
                     </template>

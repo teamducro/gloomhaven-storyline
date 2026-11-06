@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@reference "../../../sass/tailwind.css";
 .flip-card {
     @apply bg-transparent;
     perspective: 1000px;

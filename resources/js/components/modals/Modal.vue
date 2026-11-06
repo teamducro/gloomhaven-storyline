@@ -12,6 +12,7 @@
                         <span class="absolute right-0 top-0">
                         <button v-if="closeButton" type="button" data-mdc-dialog-action="close"
                                 class="mdc-button mt-4">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons">close</i>
                         </button>
                         </span>

@@ -1,6 +1,6 @@
 import {defineConfig, loadEnv} from 'vite';
 import vue from '@vitejs/plugin-vue';
-import tailwindcss from 'tailwindcss';
+import tailwindcss from '@tailwindcss/postcss';
 import autoprefixer from 'autoprefixer';
 import crypto from 'crypto';
 import fs from 'fs';
@@ -36,7 +36,7 @@ export default defineConfig(({mode}) => {
             ],
         },
         css: {
-            postcss: {plugins: [tailwindcss('./tailwind.config.js'), autoprefixer({remove: false})]},
+            postcss: {plugins: [tailwindcss(), autoprefixer({remove: false})]},
             preprocessorOptions: {
                 scss: {
                     loadPaths: ['node_modules'],

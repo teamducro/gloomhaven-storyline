@@ -19,7 +19,7 @@
 
         <template v-if="!loggedIn && !paymentSuccess && !initCode">
             <div class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
-                <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
+                <div class="bg-white px-6 py-8 lg:shrink lg:p-10 lg:flex-1">
                     <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
                         1 year license
                     </h3>
@@ -30,14 +30,14 @@
                     </p>
                     <div class="mt-8">
                         <div class="flex items-center">
-                            <h4 class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                            <h4 class="shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
                                 What's included
                             </h4>
                             <div class="flex-1 border-t-2 border-gray-100"></div>
                         </div>
                         <ul class="mt-8 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-5">
                             <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-600">
@@ -45,7 +45,7 @@
                                 </p>
                             </li>
                             <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-600">
@@ -53,7 +53,7 @@
                                 </p>
                             </li>
                             <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-600">
@@ -61,7 +61,7 @@
                                 </p>
                             </li>
                             <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-600">
@@ -76,16 +76,16 @@
                     </div>
                 </div>
                 <div
-                    class="py-8 px-6 text-center bg-gray-100 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+                    class="py-8 px-6 text-center bg-gray-100 lg:shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
                     <div class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
                         <span>€4,99</span>
                         <span class="ml-3 text-xl leading-7 font-medium text-gray-400">/ year</span>
                     </div>
                     <div class="mt-6">
                         <purchase>
-                            <div class="rounded-md shadow">
+                            <div class="rounded-md shadow-sm">
                                 <a href="#"
-                                   class="flex items-center justify-center uppercase px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring transition duration-150 ease-in-out">
+                                   class="flex items-center justify-center uppercase px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-hidden focus:ring-3 transition duration-150 ease-in-out">
                                     {{ $t('Buy shared campaign') }}
                                 </a>
                             </div>
@@ -110,6 +110,7 @@
             <div v-if="showPurchaseButton" class="flex items-center">
                 <purchase>
                     <button type="button" class="mt-6 mdc-button mdc-button--raised">
+                        <span class="mdc-button__ripple"></span>
                         {{ $t('Buy shared campaign') }}
                     </button>
                 </purchase>
@@ -131,7 +132,7 @@
 
         <template v-if="showPurchaseButton">
             <div class="mt-8 max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-3xl lg:flex">
-                <div class="bg-white px-6 py-8 lg:flex-shrink-1 lg:p-10 lg:flex-1">
+                <div class="bg-white px-6 py-8 lg:shrink lg:p-10 lg:flex-1">
                     <h3 class="text-2xl text-gray-900 sm:text-3xl sm:leading-9">
                         Patreon
                     </h3>
@@ -141,14 +142,14 @@
                     </p>
                     <div class="mt-8">
                         <div class="flex items-center">
-                            <h4 class="flex-shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                            <h4 class="shrink-0 pr-4 bg-white text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
                                 What's included
                             </h4>
                             <div class="flex-1 border-t-2 border-gray-200"></div>
                         </div>
                         <ul class="mt-8 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:gap-y-5">
                             <li class="flex items-start lg:col-span-1">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-700">
@@ -156,7 +157,7 @@
                                 </p>
                             </li>
                             <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-700">
@@ -164,7 +165,7 @@
                                 </p>
                             </li>
                             <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-700">
@@ -172,7 +173,7 @@
                                 </p>
                             </li>
                             <li class="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                                <div class="flex-shrink-0">
+                                <div class="shrink-0">
                                     <inline-svg src="icons/check"/>
                                 </div>
                                 <p class="ml-3 text-sm leading-5 text-gray-700">
@@ -183,7 +184,7 @@
                     </div>
                 </div>
                 <div
-                    class="py-8 px-6 text-center bg-gray-200 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+                    class="py-8 px-6 text-center bg-gray-200 lg:shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
                     <div class="font-title mt-4 flex items-center justify-center text-5xl leading-none text-gray-900">
                         <span>€3,00</span>
                         <span class="ml-3 text-xl leading-7 font-medium text-gray-500">/ month</span>

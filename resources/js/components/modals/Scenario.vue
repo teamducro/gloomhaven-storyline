@@ -14,6 +14,7 @@
                             <indicators class="items-center hidden xs:flex" :scenario="scenario" :key="'indicators-desktop-' + stateKey"/>
                             <button type="button" data-mdc-dialog-action="close"
                                     class="mdc-button">
+                                <span class="mdc-button__ripple"></span>
                                 <i class="material-icons">close</i>
                             </button>
                         </span>
@@ -108,6 +109,7 @@
                              v-if="scenario.isVisible() && !scenario.isComplete() && !treasuresVisible">
                             <button class="mdc-button origin-left transform scale-75 mdc-button--raised"
                                     @click="treasuresVisible = true">
+                                <span class="mdc-button__ripple"></span>
                                 <i class="material-icons mdc-button__icon">attach_money</i>
                                 <span class="mdc-button__label">{{ $t('Show treasures') }}</span>
                             </button>
@@ -171,6 +173,7 @@
                                         <button type="button"
                                                 class="mdc-button normal-case -ml-2"
                                                 @click="openAchievement(achievement.id)">
+                                            <span class="mdc-button__ripple"></span>
                                             <span class="mdc-button__label">{{ $t(achievement.name) }}</span>
                                         </button>
                                         <scenario-number class="ml-2"
@@ -187,6 +190,7 @@
                             <template v-for="(quest, index) in quests">
                                 <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(index)">
+                                    <span class="mdc-button__ripple"></span>
                                     <span class="mdc-button__label font-title text-white">
                                         <template v-if="questExpand[index] && !$t(quest.name).startsWith('quest')">
                                             {{ $t(quest.name) }}
@@ -219,6 +223,7 @@
                         <div class="mb-3" v-if="showNotes">
                             <button class="mdc-button normal-case -ml-2"
                                     @click="notesIsOpen = !notesIsOpen">
+                                <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label font-title text-white">{{ $t('Notes') }}</span>
                                 <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
                                    :class="{'rotate-0': notesIsOpen, 'rotate-180': !notesIsOpen}">
@@ -231,9 +236,11 @@
                                 @after-enter="notesEntered"
                                 @leave="notesLeft">
                                 <div v-if="notesIsOpen" ref="notes"
-                                     class="mdc-text-field mdc-text-field--textarea w-full">
-                                    <textarea id="notes" @change="noteChanged" v-model="scenario.notes" :disabled="appData.read_only"
-                                              class="mdc-text-field__input" rows="4" cols="40"></textarea>
+                                     class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea w-full">
+                                    <span class="mdc-text-field__resizer">
+                                        <textarea id="notes" @change="noteChanged" v-model="scenario.notes" :disabled="appData.read_only"
+                                                  class="mdc-text-field__input" rows="4" cols="40"></textarea>
+                                    </span>
                                     <div class="mdc-notched-outline">
                                         <div class="mdc-notched-outline__leading"></div>
                                         <div class="mdc-notched-outline__notch">
@@ -249,11 +256,13 @@
                             <div class="flex absolute left-0 top-0 origin-left transform scale-75">
                                 <button v-if="scenario.pages.length" class="mdc-button mdc-button--raised mr-2"
                                         @click="openPages()">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon">menu_book</i>
                                     <span class="mdc-button__label">{{ $t('Pages') }}</span>
                                 </button>
                                 <a v-if="virtualBoardUrl && !scenario.solo" :href="virtualBoardUrl" target="_blank">
                                     <button class="mdc-button mdc-button--raised">
+                                        <span class="mdc-button__ripple"></span>
                                         <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                                         <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
                                     </button>

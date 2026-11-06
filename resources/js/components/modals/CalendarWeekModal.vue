@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal" :title="title">
             <template #content>
-                <div v-if="calendar && week" class="w-full h-full outline-none relative">
+                <div v-if="calendar && week" class="w-full h-full outline-hidden relative">
                     <checkbox-with-label
                         class="mt-4" id="calendar-week-check" group="calendar-week"
                         :label="$t('Has passed')"
@@ -32,6 +32,7 @@
 
                         <button @click="addSection" :disabled="appData.read_only"
                                 class="ml-4 mdc-button mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">add</i>
                             <span class="mdc-button__label">{{ $t('Add') }}</span>
                         </button>
