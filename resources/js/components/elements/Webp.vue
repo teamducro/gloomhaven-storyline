@@ -95,7 +95,8 @@ export default {
             }
         },
         loaded(e) {
-            if (this.retina) {
+            // Only the webp variants are 2x, the png fallbacks stay 1x
+            if (this.retina && this.source.endsWith('.webp')) {
                 this.width = e.target.naturalWidth / 2;
             }
             this.isLoaded = true;

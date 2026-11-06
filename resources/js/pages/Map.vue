@@ -50,6 +50,7 @@
                       :key="game+'-'+scenario.id"
                       :id="'s' + scenario.id"
                       :animate="true"
+                      :retina="game === Game.fh"
                       :alt="$t(scenario.name)"
                       class="absolute scenario"
                       :style="{
