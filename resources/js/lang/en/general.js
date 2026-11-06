@@ -6,6 +6,8 @@ export default {
     "The cost of items displayed is modified by this amount.": "The cost of items displayed is modified by this amount.",
     "When 100 gold is donated, open envelope": "When 100 gold is donated, open envelope",
     "gained prosperity checkbox by donations.": "gained prosperity checkbox by donations.",
+    "Check donation prosperity checkboxes automatically": "Check donation prosperity checkboxes automatically",
+    "Gained from donations": "Gained from donations",
     "City Event Decks": "City Event Decks",
     "Add city events": "Add city events",
     "Road Event Decks": "Road Event Decks",

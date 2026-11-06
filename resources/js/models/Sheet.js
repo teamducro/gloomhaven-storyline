@@ -5,6 +5,7 @@ import CharacterRepository from "../repositories/CharacterRepository";
 import Versionable from "./Versionable";
 import GameData from "../services/GameData";
 import DeckFiller from "../services/DeckFiller";
+import SheetCalculations from "../services/SheetCalculations";
 
 class Sheet {
 
@@ -19,6 +20,7 @@ class Sheet {
         // Sheet fields
         this.reputation = data.reputation || 0;
         this.donations = data.donations || 0;
+        this.autoDonationProsperity = data.autoDonationProsperity || false;
         this.prosperityIndex = data.prosperityIndex || 1;
         this.city = {...data.city};
         this.road = {...data.road};
@@ -65,6 +67,7 @@ class Sheet {
             // Sheet fields
             reputation: 'reputation',
             donations: 'donations',
+            autoDonationProsperity: 'autoDonationProsperity',
             prosperityIndex: 'prosperityIndex',
             city: {'city': {}},
             road: {'road': {}},
@@ -103,6 +106,18 @@ class Sheet {
 
     new() {
         // Nothing to set up..
+    }
+
+    // Prosperity checkboxes gained from donations, only counted when the party opted in so older campaigns that ticked them by hand don't count twice.
+    get donationChecks() {
+        return this.autoDonationProsperity
+            ? SheetCalculations.methods.calculateDonationProsperity(this.donations, this.game)
+            : 0;
+    }
+
+    // prosperityIndex only holds the manually ticked boxes.
+    get effectiveProsperityIndex() {
+        return this.prosperityIndex + this.donationChecks;
     }
 
     // Item designs, event decks and campaign sheet unlocks, sized per game by `decks` in games/<game>.json.

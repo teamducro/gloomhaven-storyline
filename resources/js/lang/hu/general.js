@@ -6,6 +6,8 @@ export default {
     "The cost of items displayed is modified by this amount.": "A felszerelés ára ennyivel módosul",
     "When 100 gold is donated, open envelope": "Mikor 100 aranyat adományoztatok, nyissátok ki a következő borítékot:",
     "gained prosperity checkbox by donations.": "városfejlettség elérve az adományokból.",
+    "Check donation prosperity checkboxes automatically": "Check donation prosperity checkboxes automatically",
+    "Gained from donations": "Gained from donations",
     "City Event Decks": "Városi események paklija",
     "Add city events": "Adj hozzá városi eseményt",
     "Road Event Decks": "Úti események paklija",

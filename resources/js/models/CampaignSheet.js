@@ -108,6 +108,10 @@ class CampaignSheet {
         }
     }
 
+    get effectiveProsperityIndex() {
+        return this.prosperityIndex;
+    }
+
     new() {
         // Nothing to set up...
     }

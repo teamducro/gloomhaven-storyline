@@ -6,6 +6,8 @@ export default {
     "The cost of items displayed is modified by this amount.": "The cost of items displayed is modified by this amount.",
     "When 100 gold is donated, open envelope": "Когда будет пожертвовано 100 золотых - откройте конверт",
     "gained prosperity checkbox by donations.": "процветания получено за пожертвования.",
+    "Check donation prosperity checkboxes automatically": "Check donation prosperity checkboxes automatically",
+    "Gained from donations": "Gained from donations",
     "City Event Decks": "Колода событий «Город»",
     "Add city events": "Добавить карты событий «Город»",
     "Road Event Decks": "Колода событий «Дорога»",

@@ -410,10 +410,10 @@ export default {
                     sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
                 }
                 else if (this.currentGame === Game.gh2) {
-                    sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.prosperityIndex);
+                    sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.effectiveProsperityIndex);
                 }
                 else {
-                    sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
+                    sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.effectiveProsperityIndex);
                 }
 
                 // Find items from base game.

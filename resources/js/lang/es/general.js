@@ -6,6 +6,8 @@ export default {
     "The cost of items displayed is modified by this amount.": "El coste de los artículos mostrados se modifica en esta cantidad.",
     "When 100 gold is donated, open envelope": "Cuando se done 100 de oro, abre el sobre",
     "gained prosperity checkbox by donations.": "de prosperidad ganada mediante donaciones.",
+    "Check donation prosperity checkboxes automatically": "Check donation prosperity checkboxes automatically",
+    "Gained from donations": "Gained from donations",
     "City Event Decks": "Mazo Eventos de Ciudad",
     "Add city events": "Añade Evento de Ciudad",
     "Road Event Decks": "Mazo de Eventos de Camino",
