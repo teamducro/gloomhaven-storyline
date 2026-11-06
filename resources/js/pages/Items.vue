@@ -103,6 +103,14 @@
                 </div>
 
                 <div>
+                    <ul class="flex mb-2" id="item-source-filters">
+                        <li v-for="source in sourceTypes"
+                            class="px-3 py-1 text-sm cursor-pointer rounded-full"
+                            :class="{'bg-black2-75' : selectedSource === source}"
+                            @click="selectedSource = selectedSource === source ? null : source">
+                            {{ $t(sourceLabels[source]) }}
+                        </li>
+                    </ul>
                     <ul class="flex">
                         <li v-for="filter in filters"
                             class="p-2 cursor-pointer rounded-full"
@@ -120,7 +128,7 @@
                         :sortable="sortable"
                         :sortFunctions="{ cost: sortCosts, name: sortNames }"
                         :initialSearch="search"
-                        :data="items.values().items"
+                        :data="shownItems"
                         @rowClick="openItemModel"
                         :translatable="['name', 'desc']"
                         :noResults="$t('No items available')"
@@ -152,6 +160,9 @@
                             <span v-else class="inline-block md:hidden">{{ isNaN(row.cost) ? '-' : (row.cost + costModifier) }}</span>
                         </span>
                     </span>
+                </template>
+                <template #source="{row}">
+                    {{ $t(sourceLabels[sources[row.id]]) }}
                 </template>
                 <template #cost="{value}">
                     <span>
@@ -195,6 +206,10 @@ export default {
             costModifier: 0,
             prosperity: 1,
             items: collect({}),
+            sources: {},
+            sourceTypes: ['shop', 'design', 'cross-game'],
+            sourceLabels: {shop: 'Shop', design: 'Item design', 'cross-game': 'Other game'},
+            selectedSource: null,
             itemAvailability: null,
             campaignName: null,
             loading: true,
@@ -237,6 +252,7 @@ export default {
                 {id: 'number', name: 'Nr'},
                 {id: 'name', name: 'Name'},
                 {id: 'game', name: 'Game'},
+                {id: 'source', name: 'Available via', classes: 'hidden sm:table-cell'},
                 {id: 'slot', name: 'Slot', classes: 'hidden lg:table-cell'},
                 {id: 'cost', name: 'Cost', classes: 'hidden md:table-cell'},
                 {id: 'availability', name: 'Avail', classes: 'hidden lg:table-cell'},
@@ -250,6 +266,10 @@ export default {
             }
 
             return columns;
+        },
+        shownItems() {
+            const items = this.items.values().items;
+            return this.selectedSource ? items.filter(item => this.sources[item.id] === this.selectedSource) : items;
         },
         currentGame() {
             return this.sheet.game === 'fc' ? 'gh' : this.sheet.game;
@@ -271,24 +291,24 @@ export default {
             this.field = new MDCTextField(this.$refs['search-field']);
         },
         refreshItems() {
-            let sheetItems;
-
             // Get all manual unlocked items from the sheet, prefixed with the current game.
             const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
 
-            // Add auto unlocked items, based on prosperity level or completed scenarios.
-            if (this.currentGame === 'jotl') {
-                sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
-            }
-            else if (this.currentGame === 'fh') {
-                sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
-            }
-            else if (this.currentGame === Game.gh2) {
-                sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.prosperityIndex);
-            }
-            else {
-                sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
-            }
+            // Add auto unlocked items, based on prosperity level, buildings or completed scenarios.
+            const withShop = (unlocked) => {
+                if (this.currentGame === 'jotl') {
+                    return this.calculateItemsJotl(unlocked, this.scenarioRepository);
+                }
+                if (this.currentGame === 'fh') {
+                    return this.calculateItemsFh(unlocked, this.buildingRepository);
+                }
+                if (this.currentGame === Game.gh2) {
+                    return this.calculateItemsGh2(unlocked, this.sheet.prosperityIndex);
+                }
+                return this.calculateItemsGh(unlocked, this.sheet.prosperityIndex);
+            };
+            const sheetItems = withShop(unlockedItems);
+            const shopItems = withShop([]);
 
             // Find items from base game.
             let items = this.itemRepository.findMany(sheetItems);
@@ -322,6 +342,10 @@ export default {
                 otherGames.forEach(otherGameHandler);
             }
 
+            this.sources = items.keys().all().reduce((sources, id) => {
+                sources[id] = shopItems.includes(id) ? 'shop' : (sheetItems.includes(id) ? 'design' : 'cross-game');
+                return sources;
+            }, {});
             this.items = items
         },
         changeItem(id, isChecked) {

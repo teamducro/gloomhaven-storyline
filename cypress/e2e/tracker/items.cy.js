@@ -66,6 +66,64 @@ describe('Items', () => {
         utilities.assertTableCount('items', 3);
     });
 
+    it('It shows where items come from and filters on it', () => {
+        // Given a prosperity 1 shop with item design 71 ticked
+        cy.visit('/tracker/#/items');
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#item-71').click();
+        utilities.closeModel();
+        utilities.assertTableCount('items', 15);
+
+        // Then the design is labelled, the others are shop items
+        cy.get('#items tbody tr').contains('Boots of Levitation').parents('tr').contains('Item design');
+        cy.get('#items tbody tr:first').contains('Shop');
+
+        // When filtering on item designs
+        cy.get('#item-source-filters').contains('Item design').click();
+        utilities.assertTableCount('items', 1);
+        cy.get('#items').contains('Boots of Levitation');
+
+        // When filtering on the shop
+        cy.get('#item-source-filters').contains('Shop').click();
+        utilities.assertTableCount('items', 14);
+
+        // When filtering on other games
+        cy.get('#item-source-filters').contains('Other game').click();
+        cy.get('#items').contains('No items available');
+
+        // When the active filter is clicked again
+        cy.get('#item-source-filters').contains('Other game').click();
+        utilities.assertTableCount('items', 15);
+    });
+
+    it('It labels items from other games', () => {
+        cy.visit('/tracker/#/items');
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#cross-game-items-enabled-checkbox').click();
+        cy.get('#jotl-items').click();
+        cy.get('.items-to-add-dropdown button').first().click();
+
+        cy.get('#item-source-filters').contains('Other game').click();
+        cy.get('#items').contains('Jet Boots').parents('tr').contains('Other game');
+
+        cy.get('#item-source-filters').contains('Shop').click();
+        utilities.assertTableCount('items', 14);
+    });
+
+    it('It labels Frosthaven shop items and item designs', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/items');
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#item-67').click();
+        utilities.closeModel();
+
+        cy.get('#items').contains('Converging Lenses').parents('tr').contains('Item design');
+        cy.get('#item-source-filters').contains('Item design').click();
+        utilities.assertTableCount('items', 1);
+    });
+
     it('It opens item modal', () => {
         cy.visit('/tracker/#/items');
 
