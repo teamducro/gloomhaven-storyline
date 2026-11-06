@@ -5,6 +5,7 @@ import fcJson from '../games/fc.json'
 import jotlJson from '../games/jotl.json'
 import csJson from '../games/cs.json'
 import mpJson from '../games/mp.json'
+import cqJson from '../games/cq.json'
 import {Game} from "../models/Game";
 import store from "store/dist/store.modern";
 
@@ -16,6 +17,7 @@ const files = {
     [Game.jotl]: jotlJson,
     [Game.cs]: csJson,
     [Game.mp]: mpJson,
+    [Game.cq]: cqJson,
 }
 
 // Merge order of the lists that span all games; keeps the historical global order.
@@ -62,6 +64,10 @@ export default class GameData {
             [Game.mp]: {
                 scenarios: files[Game.mp].scenarios,
                 items: files[Game.mp].items
+            },
+            [Game.cq]: {
+                scenarios: files[Game.cq].scenarios,
+                items: files[Game.cq].items
             }
         }
     }
@@ -72,7 +78,23 @@ export default class GameData {
 
     enabledCrossovers() {
         const enabled = store.get('gamesEnabled', {})
-        return this.crossover().filter(game => enabled[game] !== false)
+        return this.crossover().filter(game => game in enabled ? enabled[game] : this.enabledByDefault(game))
+    }
+
+    // Crossover packs start off, unless the campaign already uses one: a class (MP) or a personal quest (ConQuests).
+    enabledByDefault(game) {
+        if (!this.crossover().includes(game)) {
+            return true
+        }
+        const campaign = store.get(store.get('campaignId') || 'local') || {}
+
+        return Object.entries(campaign).some(([key, character]) => key.startsWith('character-')
+            && (files[game].characterOrder.includes(character?.id) || character?.quest?.game === game))
+    }
+
+    // Games whose personal quest deck the ConQuests cards can be shuffled into.
+    conquestsGames() {
+        return [Game.gh, Game.fc, Game.gh2, Game.fh]
     }
 
     achievements(game) {

@@ -11,13 +11,13 @@
         </p>
 
         <ul :key="listKey">
-            <li v-for="code in games.filter(code => code !== Game.gh2)">
+            <li v-for="code in games.filter(code => code !== Game.gh2 && !packs.includes(code))">
                 <checkbox-with-label :id="code+'-enabled'"
                                      :label="$t(code)"
                                      v-model:checked="enabled[code]"
                                      :disabled="disabled[code]"
                                      :auto-disable="false"
-                                     @change="store"/>
+                                     @change="toggle(code)"/>
                 <div v-if="code === Game.gh && enabled[Game.gh]" id="gloomhaven-edition" class="ml-10 mb-2">
                     <radio v-for="edition in [Game.gh, Game.gh2]"
                            :key="edition"
@@ -27,6 +27,17 @@
                            :checked="currentEdition === edition"
                            @changed="selectEdition(edition)"/>
                 </div>
+            </li>
+        </ul>
+
+        <h2 class="text-xl mt-4 mb-2">{{ $t('games-enabled.packs') }}</h2>
+        <ul :key="listKey + '-packs'" id="packs-enabled">
+            <li v-for="code in packs">
+                <checkbox-with-label :id="code+'-enabled'"
+                                     :label="$t(code)"
+                                     v-model:checked="enabled[code]"
+                                     :auto-disable="false"
+                                     @change="toggle(code)"/>
             </li>
         </ul>
     </div>
@@ -46,6 +57,7 @@ export default {
     data() {
         return {
             games: [],
+            packs: new GameData().crossover(),
             enabled: {},
             disabled: {},
             listKey: '',
@@ -79,7 +91,7 @@ export default {
                     this.enabled[code] = true;
                     this.disabled[code] = true;
                 } else {
-                    this.enabled[code] = code in enabledGames ? enabledGames[code] : true;
+                    this.enabled[code] = code in enabledGames ? enabledGames[code] : gameData.enabledByDefault(code);
                     this.disabled[code] = false;
                 }
             });
@@ -94,6 +106,13 @@ export default {
             this.enabled[game] = true;
             this.store();
             return this.emit();
+        },
+        toggle(code) {
+            this.store();
+            // Crossover content is merged in when campaign data is fetched
+            if (new GameData().crossover().includes(code)) {
+                app.campaignsChanged();
+            }
         },
         store() {
             store.set('gamesEnabled', this.enabled);

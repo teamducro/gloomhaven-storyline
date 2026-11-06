@@ -65,6 +65,7 @@ describe('GH2 Items', () => {
     });
 
     it('It merges Mercenary Pack items', () => {
+        utilities.enableGame('mp');
         cy.visit('/tracker/#/items');
         cy.window().its('app.items').invoke('has', 'gh2-AN').should('eq', true);
     });

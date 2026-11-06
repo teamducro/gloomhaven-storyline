@@ -245,6 +245,8 @@ const vueApp = createApp({
 
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
+            // Crossover defaults depend on the campaign (MP classes in use)
+            this.enabledGames = getEnabledGames();
             this.game = this.storedGame();
             const gloomhavenGame = (new SheetRepository).gloomhavenGame();
             if ([Game.gh, Game.gh2].includes(this.game)) {
