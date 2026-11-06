@@ -41,6 +41,11 @@ export default {
             type: Boolean,
             default: false
         },
+        // Load the {name}@2x.webp variant at half its natural width; the 1x png stays the fallback
+        retinaWebp: {
+            type: Boolean,
+            default: false
+        },
         lazy: {
             type: Boolean,
             default: true
@@ -87,7 +92,7 @@ export default {
             if (!url) {
                 return '';
             }
-            return url.split('.').slice(0, -1) + '.webp';
+            return url.split('.').slice(0, -1) + (this.retinaWebp ? '@2x' : '') + '.webp';
         },
         error() {
             if (this.source !== this.src) {
@@ -95,8 +100,7 @@ export default {
             }
         },
         loaded(e) {
-            // Only the webp variants are 2x, the png fallbacks stay 1x
-            if (this.retina && this.source.endsWith('.webp')) {
+            if (this.retina || (this.retinaWebp && this.source.endsWith('@2x.webp'))) {
                 this.width = e.target.naturalWidth / 2;
             }
             this.isLoaded = true;

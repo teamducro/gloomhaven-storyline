@@ -25,7 +25,7 @@ describe('Map', () => {
         utilities.switchGame('fh');
         cy.visit('/tracker/#/map');
 
-        cy.get('#map #s1').should('have.attr', 'src').and('match', /\/img\/scenarios\/fh\/1\.webp$/);
+        cy.get('#map #s1').should('have.attr', 'src').and('match', /\/img\/scenarios\/fh\/1@2x\.webp$/);
         // The 1x sticker was 258px wide
         cy.get('#map #s1').should('have.prop', 'naturalWidth', 516).and('have.attr', 'width', '258');
     });
