@@ -165,11 +165,23 @@ describe('Campaigns', () => {
 
         it('It removes a shared campaign that was deleted by its owner', () => {
             const shared = {...ownedStory, id: 8, name: 'Gone', is_shared: true, token: 'shared-token'};
-            cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'No query results for model.'}});
+            cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'No query results for model [App\\Models\\Story] 8'}});
             visitWithStories({isPatron: false, stories: [shared]});
 
             cy.get('.toast').contains('"Gone" was deleted by its owner');
             cy.contains('li', 'Gone').should('not.exist');
+        });
+
+        it('It keeps a shared campaign on a 404 that is not about the campaign', () => {
+            const shared = {...ownedStory, id: 8, name: 'Kept', is_shared: true, token: 'shared-token'};
+            cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'Not Found'}}).as('findStory');
+            visitWithStories({isPatron: false, stories: [shared]});
+
+            cy.wait('@findStory');
+            cy.contains('li', 'Kept').should('exist');
+            cy.window().then(win => {
+                expect(JSON.parse(win.localStorage.getItem('stories'))).to.have.length(1);
+            });
         });
     });
 

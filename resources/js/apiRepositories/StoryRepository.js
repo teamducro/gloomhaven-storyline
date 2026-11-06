@@ -64,7 +64,7 @@ export default class StoryRepository extends ApiRepository {
                 return new Story(storyResponse);
             })
             .catch(e => {
-                if (e.response && e.response.status === 404) {
+                if (this.isDeleted(e)) {
                     this.removeDeleted(story);
                     return;
                 }
@@ -84,20 +84,24 @@ export default class StoryRepository extends ApiRepository {
         let promises = [];
 
         stories.each(story => {
-            promises.push(this.find(story).catch(e => {
-                if (e.response && e.response.status === 404) {
-                    this.removeDeleted(story);
-                    return;
-                }
-                throw e;
-            }));
+            promises.push(this.find(story))
         });
 
         await Promise.all(promises);
     }
 
+    // Resolves null when the story was deleted on the server, it's then removed locally.
     async find(story, updateStoryIfNeeded = true) {
-        const response = await this.api.withToken(story.token).get('stories/' + story.id);
+        let response;
+        try {
+            response = await this.api.withToken(story.token).get('stories/' + story.id);
+        } catch (e) {
+            if (this.isDeleted(e)) {
+                this.removeDeleted(story);
+                return null;
+            }
+            throw e;
+        }
 
         if (updateStoryIfNeeded) {
             return await this.updateStoryIfNeeded(response.data, story.token);
@@ -162,6 +166,11 @@ export default class StoryRepository extends ApiRepository {
     async destroy(story) {
         await this.api.delete('stories/' + story.id);
         this.remove(story);
+    }
+
+    // Only a missing story counts, a 404 from a misrouted request or an outage page must not wipe local progress.
+    isDeleted(e) {
+        return e.response?.status === 404 && /^No query results for model/.test(e.response.data?.message);
     }
 
     // The campaign was deleted by its owner on another device.
