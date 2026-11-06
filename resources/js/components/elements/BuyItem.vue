@@ -26,35 +26,35 @@
                 </label>
             </div>
 
-            <div class="flex">
-                <button v-if="!owns && this.item.cost" class="mdc-button mdc-button--raised mr-2"
+            <div class="flex flex-wrap gap-2">
+                <button v-if="!owns && this.item.cost" class="mdc-button mdc-button--raised"
                         :disabled="appData.read_only || !hasEnoughGold || !availability" @click="buy">
                     <span class="mdc-button__ripple"></span>
                     <add-links-and-icons class="mr-2" :text="'{COINS}'"/>
                     <span class="mdc-button__label">{{ isNaN(cost) ? $t('Craft') : $t('Buy') }}</span>
                 </button>
-                <button v-if="!owns" class="mdc-button mdc-button--raised mr-2"
+                <button v-if="!owns" class="mdc-button mdc-button--raised"
                         :disabled="appData.read_only || !availability" @click="add">
                     <span class="mdc-button__ripple"></span>
                     <i class="material-icons mdc-button__icon">add</i>
                     <span class="mdc-button__label">{{ $t('Add') }}</span>
                 </button>
-                <button v-if="owns" class="mdc-button mdc-button--raised mr-2" :disabled="appData.read_only"
+                <button v-if="owns" class="mdc-button mdc-button--raised" :disabled="appData.read_only"
                         @click="sell">
                     <span class="mdc-button__ripple"></span>
                     <i class="material-icons mdc-button__icon">local_offer</i>
                     <span class="mdc-button__label">{{ $t('Sell') }}</span>
                 </button>
-                <button v-if="owns" class="mdc-button mdc-button--raised mr-2" :disabled="appData.read_only"
+                <button v-if="owns" class="mdc-button mdc-button--raised" :disabled="appData.read_only"
                         @click="remove">
                     <span class="mdc-button__ripple"></span>
                     <i class="material-icons mdc-button__icon">remove</i>
                     <span class="mdc-button__label">{{ $t('Remove') }}</span>
                 </button>
-                <button v-if="owns" class="remove-from-game mdc-button mdc-button--raised mr-2" :disabled="appData.read_only"
+                <button v-if="owns" class="remove-from-game mdc-button mdc-button--raised" :disabled="appData.read_only"
                         @click="removeFromGame">
                     <i class="material-icons mdc-button__icon">delete_forever</i>
-                    <span class="mdc-button__label">{{ $t('Remove from game') }}</span>
+                    <span class="mdc-button__label">{{ $t('Sacrifice') }}</span>
                 </button>
             </div>
         </div>

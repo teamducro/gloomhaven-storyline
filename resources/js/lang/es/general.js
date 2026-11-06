@@ -354,7 +354,7 @@ export default {
     "mp": "Mercenary Pack",
     "gh2": "Gloomhaven Segunda Edición",
     "Availability": "Disponibilidad",
-    "Remove from game": "Remove from game",
+    "Sacrifice": "Sacrifice",
     "Removed from game": "Removed from game",
     "Restore": "Restore",
     "Sticker": "Pegatina",
