@@ -100,6 +100,9 @@
                                     <requirements :conditions="scenario.required_by"
                                                  v-if="scenario.required_by.isNotEmpty()"
                                                  :scenarioState="scenario.state"></requirements>
+                                    <template v-else-if="$te(scenario.$tPrefix('requirements'))">
+                                        {{ $t(scenario.$tPrefix('requirements')) }}
+                                    </template>
                                     <component v-else v-bind:is="renderHtml(scenario.requirements)"></component>
                                 </div>
                             </div>

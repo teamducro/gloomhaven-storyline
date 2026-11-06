@@ -98,6 +98,28 @@ describe('Storyline', () => {
         utilities.closeModel();
     });
 
+    it('It shows the personal quest requirement of a scenario', () => {
+        cy.visit('/tracker?states=52_i');
+
+        utilities.openScenario(52);
+        cy.get('#scenario-content').contains('Requirements:');
+        cy.get('#scenario-content').contains('“Seeker of Xorn” personal quest');
+        utilities.closeModel();
+    });
+
+    it('It translates the personal quest requirement of a scenario', () => {
+        cy.visit('/tracker?states=52_i');
+        cy.window().then((window) => {
+            window.i18n.mergeLocaleMessage('en', {
+                scenarios: {'gh-52': {requirements: 'Persoonlijke missie “Zoeker van Xorn”'}}
+            });
+        });
+
+        utilities.openScenario(52);
+        cy.get('#scenario-content').contains('Persoonlijke missie “Zoeker van Xorn”');
+        utilities.closeModel();
+    });
+
     it('It blocks required scenarios', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-8_c');
 
