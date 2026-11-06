@@ -483,7 +483,7 @@ export default {
         "name": "15 gold"
     },
     "cs-49": {
-        "name": "“Magma Waders” (Item 99)"
+        "name": "“Magma Waders” (Item gh-99)"
     },
     "cs-50": {
         "name": "“Bottled Moonlight” (Item 18)"

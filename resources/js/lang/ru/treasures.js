@@ -480,7 +480,7 @@ export default {
         "name": "15 gold"
     },
     "cs-49": {
-        "name": "«Magma Waders» (Предмет 99)"
+        "name": "«Magma Waders» (Предмет gh-99)"
     },
     "cs-50": {
         "name": "“Bottled Moonlight” (Item 18)"

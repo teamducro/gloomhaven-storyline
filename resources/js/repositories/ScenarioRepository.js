@@ -220,6 +220,9 @@ export default class ScenarioRepository {
     }
 
     processItems(items, checked) {
+        // Game-prefixed ids ("gh-34") are items of another game, not designs of the current game.
+        items = items.filter(item => !isNaN(item) || !/^[a-z]+-/.test(item));
+
         if (!items.isEmpty()) {
             let sheet = this.sheetRepository.make(app.game);
             items.each(item => {
