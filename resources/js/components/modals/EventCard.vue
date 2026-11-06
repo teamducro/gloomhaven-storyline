@@ -42,7 +42,7 @@
                             <span class="mdc-button__ripple"></span>
                             <span class="mdc-button__label">{{ outcome }}</span>
                         </button>
-                        <button v-if="!viaDraw && !appData.read_only" @click="remove"
+                        <button v-if="!viaDraw && !appData.read_only && !fromHistory" @click="remove"
                                 class="mdc-button origin-left transform scale-90 mdc-button--raised">
                             <span class="mdc-button__ripple"></span>
                             <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
@@ -115,7 +115,9 @@ export default {
             this.choice = choice;
             this.animating = true;
             this.blur = true;
-            this.$bus.$emit('event-chosen', this.card, choice);
+            if (!this.fromHistory) {
+                this.$bus.$emit('event-chosen', this.card, choice);
+            }
 
             // animation done
             await Helpers.sleep(600);

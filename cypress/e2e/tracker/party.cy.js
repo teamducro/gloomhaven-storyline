@@ -327,6 +327,21 @@ describe('Party', () => {
         cy.get('.mdc-dialog__content img[alt^="Remove #"]').should('not.exist');
     });
 
+    it('it does not record choices made on a card reopened from the history', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('35%');
+        cy.get('#city-events-bedges .bedge').contains('10').click();
+        cy.get('.mdc-dialog__content button img[alt="Remove #10"]').click();
+
+        cy.get('#event-history').contains('Event history (1)').click();
+        cy.get('#event-history li').first().click();
+        cy.get('.mdc-dialog__content img[alt^="Remove #"]').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        utilities.closeModel();
+
+        cy.get('#event-history').contains('Event history (1)').should('be.visible');
+    });
+
     it('It unlocked solo scenario after character is unlocked', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);
