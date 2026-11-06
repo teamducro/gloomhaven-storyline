@@ -8,6 +8,7 @@ export default {
     "gained prosperity checkbox by donations.": "Erhaltene Wohlstands-Checkbox pro Spende.",
     "Check donation prosperity checkboxes automatically": "Check donation prosperity checkboxes automatically",
     "Gained from donations": "Gained from donations",
+    "Untick any prosperity boxes you already ticked by hand for donations.": "Untick any prosperity boxes you already ticked by hand for donations.",
     "City Event Decks": "Stadt-Ereignis Deck",
     "Add city events": "Fügt Stadt-Ereignisse hinzu",
     "Road Event Decks": "Weg-Ereignis Deck",

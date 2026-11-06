@@ -8,6 +8,7 @@ export default {
     "gained prosperity checkbox by donations.": "pole dobrobytu zdobyte poprzez datki.",
     "Check donation prosperity checkboxes automatically": "Check donation prosperity checkboxes automatically",
     "Gained from donations": "Gained from donations",
+    "Untick any prosperity boxes you already ticked by hand for donations.": "Untick any prosperity boxes you already ticked by hand for donations.",
     "City Event Decks": "Talia zdarzeń miejskich",
     "Add city events": "Dodaj zdarzenie miejskie",
     "Road Event Decks": "Talia zdarzeń na szlaku",

@@ -8,6 +8,7 @@ export default {
     "gained prosperity checkbox by donations.": "városfejlettség elérve az adományokból.",
     "Check donation prosperity checkboxes automatically": "Check donation prosperity checkboxes automatically",
     "Gained from donations": "Gained from donations",
+    "Untick any prosperity boxes you already ticked by hand for donations.": "Untick any prosperity boxes you already ticked by hand for donations.",
     "City Event Decks": "Városi események paklija",
     "Add city events": "Adj hozzá városi eseményt",
     "Road Event Decks": "Úti események paklija",

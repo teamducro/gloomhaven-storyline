@@ -82,6 +82,7 @@ describe('Party', () => {
             cy.get(`input#${id}`).should('be.checked').and('be.disabled');
         });
         cy.get('input#p-2').should('have.attr', 'title', 'Gained from donations');
+        cy.contains('Untick any prosperity boxes you already ticked by hand for donations.');
         cy.get('input#p-5').should('not.be.checked').and('not.be.disabled');
         cy.get('span').contains('015–021').prev().find('input').should('not.be.checked');
 
