@@ -162,6 +162,69 @@ describe('Party', () => {
         cy.get('.mdc-dialog__content button').contains('Toggle B').parent().next().click();
     });
 
+    describe('city event deck order', () => {
+        const drawCity = () => {
+            cy.get('button').contains('Draw').first().click();
+            return cy.get('.mdc-dialog__title').invoke('text').then(title => title.trim());
+        };
+
+        const drawAndClose = (drawn) => {
+            drawCity().then(title => drawn.push(title));
+            cy.get('body').type('{esc}');
+            cy.get('.mdc-dialog__title').should('not.be.visible');
+        };
+
+        beforeEach(() => {
+            // Given a city deck of the cards 1, 2 and 3
+            cy.visit('/tracker/#/party');
+            cy.window().then((window) => {
+                const campaignData = JSON.parse(window.localStorage.getItem(window.app.campaignId));
+                campaignData.sheet = {...campaignData.sheet, city: {1: true, 2: true, 3: true}};
+                window.localStorage.setItem(window.app.campaignId, JSON.stringify(campaignData));
+            });
+            cy.reload();
+            utilities.scrollTo('50%');
+        });
+
+        it('It draws every card once before a kept card comes back', () => {
+            // When drawing four times without removing a card
+            const drawn = [];
+            for (let i = 0; i < 4; i++) {
+                drawAndClose(drawn);
+            }
+
+            // Then the first three draws are all different and the first card went to the bottom, so it's drawn fourth
+            cy.then(() => {
+                expect(new Set(drawn.slice(0, 3)).size).eq(3);
+                expect(drawn[3]).eq(drawn[0]);
+            });
+        });
+
+        it('It no longer draws a removed card', () => {
+            let removed;
+            drawCity().then(title => removed = title);
+            cy.get('.mdc-dialog__content button').contains('A').click();
+            // Removing is ignored while the flip animation runs.
+            cy.wait(700);
+            cy.get('.mdc-dialog__content img[alt^="Remove #"]').click();
+            cy.get('.mdc-dialog__title').should('not.be.visible');
+
+            // When drawing four more times
+            const drawn = [];
+            for (let i = 0; i < 4; i++) {
+                drawAndClose(drawn);
+            }
+
+            // Then the two remaining cards alternate
+            cy.then(() => {
+                expect(drawn).not.to.include(removed);
+                expect(drawn[0]).eq(drawn[2]);
+                expect(drawn[1]).eq(drawn[3]);
+                expect(drawn[0]).not.eq(drawn[1]);
+            });
+        });
+    });
+
     it('It unlocked solo scenario after character is unlocked', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);

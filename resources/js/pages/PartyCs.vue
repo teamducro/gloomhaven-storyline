@@ -40,7 +40,7 @@
                     ref="city-events"
                 >
                     <template #after-field="{checkedItems}">
-                        <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
+                        <button @click="draw(checkedItems, 'C')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
@@ -58,7 +58,7 @@
                     ref="road-events"
                 >
                     <template #after-field="{checkedItems}">
-                        <button @click="draw(checkedItems, false)" :disabled="appData.read_only || !checkedItems.length"
+                        <button @click="draw(checkedItems, 'R')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
                             <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
@@ -125,6 +125,7 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
+import DrawsEventCards from "../services/DrawsEventCards";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ScenarioNumber from "../components/elements/ScenarioNumber";
@@ -132,7 +133,7 @@ import {ScenarioState} from "../models/ScenarioState";
 
 export default {
     components: {ScenarioNumber},
-    mixins: [GetCampaignName, SheetCalculations],
+    mixins: [GetCampaignName, SheetCalculations, DrawsEventCards],
     inject: ['appData'],
     data() {
         return {
@@ -247,13 +248,6 @@ export default {
 
             this.sheet.store();
             this.storySyncer.store();
-        },
-        draw(checkedItems, isCity = true) {
-            let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
-            if (id) {
-                const card = (isCity ? 'C' : 'R') + '-' + id;
-                this.$bus.$emit('open-event-card', {id: card, game: this.game, viaDraw: true});
-            }
         },
         openCard(id, isCity = true) {
             const card = (isCity ? 'C' : 'R') + '-' + id;
