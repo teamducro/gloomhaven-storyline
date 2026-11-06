@@ -153,13 +153,22 @@ export default {
             const quest = this.quests[id];
             this.hidden = false;
             this.update(quest);
+            this.addEventsOnChoose(quest);
             this.goalMet = false;
         },
         select(questId) {
             const quest = this.quests[questId];
             this.hidden = false;
             this.update(quest);
+            this.addEventsOnChoose(quest);
             this.goalMet = false;
+        },
+        // Quests like Seeker of Xorn shuffle bonus events into the deck when taken.
+        addEventsOnChoose(quest) {
+            if (quest.events_on_choose?.length) {
+                this.sheet.addEvents(quest.events_on_choose);
+                this.store();
+            }
         },
         remove() {
             this.quest.resetProgress();

@@ -2304,6 +2304,86 @@
             ]
         },
         {
+            "id": "SoX1",
+            "game": "gh",
+            "name": "Nobles’ Crypt",
+            "is_side": true,
+            "pages": [
+                "gh/SoX1"
+            ],
+            "requirements": "“Seeker of Xorn” personal quest, Nobles’ Crypt (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PSOX1"
+                    ]
+                }
+            ],
+            "chapter_id": 101,
+            "cards": [
+                "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "+1 reputation",
+                "Add City Event SoX2 to the deck"
+            ]
+        },
+        {
+            "id": "SoX2",
+            "game": "gh",
+            "name": "Flooded Crypt",
+            "is_side": true,
+            "pages": [
+                "gh/SoX2"
+            ],
+            "requirements": "“Seeker of Xorn” personal quest, Water-Breathing (Global) and Flooded Crypt (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GWB",
+                        "PSOX2"
+                    ]
+                }
+            ],
+            "chapter_id": 101,
+            "cards": [
+                "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "Add City Event SoX3 to the deck",
+                "Choose only one of the following: Frigid Blade (item 077), Wand of Frost (item 083) or Wave Crest (item 111)"
+            ]
+        },
+        {
+            "id": "SoX3",
+            "game": "gh",
+            "name": "Crypt of the Ancients",
+            "is_side": true,
+            "pages": [
+                "gh/SoX3"
+            ],
+            "requirements": "“Seeker of Xorn” personal quest, Ancient Technology (Global) x3 and Crypt of the Ancients (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GAT3",
+                        "PSOX3"
+                    ]
+                }
+            ],
+            "chapter_id": 101,
+            "cards": [
+                "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "50 collective gold",
+                "Add City Event SoX3 to the deck"
+            ],
+            "achievements_awarded": [
+                "GAT"
+            ]
+        },
+        {
             "id": 55,
             "game": "gh",
             "name": "Foggy Thicket",
@@ -5350,6 +5430,38 @@
             ]
         },
         {
+            "id": "PSOX1",
+            "name": "Nobles’ Crypt",
+            "type": "Party",
+            "game": "gh",
+            "is_manual": true,
+            "cards": [
+                "C-SoX1"
+            ]
+        },
+        {
+            "id": "PSOX2",
+            "name": "Flooded Crypt",
+            "type": "Party",
+            "game": "gh",
+            "is_manual": true,
+            "cards": [
+                "C-SoX2",
+                "C-SoX3"
+            ]
+        },
+        {
+            "id": "PSOX3",
+            "name": "Crypt of the Ancients",
+            "type": "Party",
+            "game": "gh",
+            "is_manual": true,
+            "cards": [
+                "C-SoX2",
+                "C-SoX3"
+            ]
+        },
+        {
             "id": "PTPS",
             "name": "The Poison's Source",
             "type": "Party",
@@ -6048,6 +6160,9 @@
                         0
                     ]
                 }
+            ],
+            "events_on_choose": [
+                "C-SoX1"
             ]
         },
         {
@@ -17002,7 +17117,13 @@
         "city": {
             "start": 30,
             "last": 90,
-            "max": 90
+            "max": 90,
+            "ids": [
+                "SoX1",
+                "SoX2",
+                "SoX3",
+                "SoX4"
+            ]
         },
         "road": {
             "start": 30,

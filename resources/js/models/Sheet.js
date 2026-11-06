@@ -145,7 +145,7 @@ class Sheet {
         this.classEventsAdded[id] = [...added, moment];
     }
 
-    // Events as 'C-57' / 'R-21'.
+    // Events as 'C-57' / 'R-21'; bonus content uses string numbers like 'C-SoX1'.
     addEvents(events) {
         const decks = {C: 'city', R: 'road'};
         events.forEach((event) => {
@@ -153,7 +153,7 @@ class Sheet {
             if (!decks[type]) {
                 throw new Error(`Unknown event type: ${event}`);
             }
-            this[decks[type]][parseInt(number)] = true;
+            this[decks[type]][isNaN(number) ? number : parseInt(number)] = true;
         });
     }
 

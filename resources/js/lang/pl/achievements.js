@@ -140,6 +140,15 @@ export default {
     "gh-PBB": {
         "name": "Kiepska Sprawa"
     },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
+    },
     "gh-PTPS": {
         "name": "Źródło Skażenia"
     },

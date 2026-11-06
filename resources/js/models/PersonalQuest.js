@@ -8,6 +8,7 @@ class PersonalQuest {
         this.number = '#' + String(data.id).padStart(3, '0');
         this._name = data.name;
         this.character_unlock = data.character_unlock;
+        this.events_on_choose = data.events_on_choose || [];
         this.starting = data.starting || false;
         this.building_unlocks = data.building_unlocks;
         this._unlock = data.unlock;
