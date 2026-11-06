@@ -1,0 +1,2 @@
+scenario3: JotL scenario 3 "The Black Ship" modal right after clicking Complete (scenarios 1-2 completed first). Look at "Reward". Before: "1 ✔ each" (checkmark, no perk). After: "1 perk each".
+perks: JotL Red Guard character sheet after completing scenarios 1-3 (mobile is scrolled to Battle Goals, desktop shows the Perks column and Battle Goals). Look under Battle Goals. Before: no hint. After: "You may select an additional perk!".

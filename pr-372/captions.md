@@ -1,0 +1,1 @@
+achievement: GH global achievement 'The Merchant Flees' modal (achievements page, state with scenario 8 completed). Before: one mixed 'Required by' list (3 7 9 20). After: 'Required by' (7, 20) and a separate 'Required when not gained by' (3, 9).
