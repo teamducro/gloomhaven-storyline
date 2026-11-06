@@ -1,0 +1,2 @@
+event-history: GH party page after drawing two city events (one chosen B and removed from the deck, one chosen A and kept). Look at the new expandable "Event history (2)" list under the event decks: newest first, choice letter, trash icon for removed cards (dimmed), date. Before: same steps, no history section.
+history-card: Tapping a history entry reopens the card on its chosen side (blurred other side, "Toggle" button, no choose/remove buttons). Before is only an approximation: there is no history, so it shows a freshly drawn city event card with the A/B choice buttons.

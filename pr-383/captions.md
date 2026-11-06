@@ -1,0 +1,2 @@
+items-filters: GH Items page (prosperity 1 shop + item designs 71-73 ticked), top of page. New source filter chips "Shop / Item design / Other game" above the slot icons. Before: no chips.
+item-design-filter: Same page after clicking the "Item design" chip: only the three designs remain, each with an "Item design" badge next to its name, active chip highlighted. Before is only an approximation: there is no chip or badge, so it shows the same unfiltered top of the page as items-filters.
