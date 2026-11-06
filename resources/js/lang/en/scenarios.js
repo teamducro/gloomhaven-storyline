@@ -7,6 +7,9 @@ export default {
         "rewards": [
             "10 gold each",
             "+1 prosperity"
+        ],
+        "faq": [
+            "Boss Special 1: if the boss moves to a door that is already open and the door hex is occupied, it moves to the nearest unoccupied hex instead (players decide on ties)."
         ]
     },
     "gh-3": {
@@ -42,10 +45,16 @@ export default {
         "rewards": [
             "20 gold each",
             "+1 prosperity"
+        ],
+        "faq": [
+            "Typo: the boss abilities are switched in the scenario book. \"Boss Special 1\" should be \"Boss Special 2\" and vice versa."
         ]
     },
     "gh-10": {
         "name": "Plane of Elemental Power",
+        "faq": [
+            "Typo: the treasure tile should be labeled 11, not 55."
+        ]
     },
     "gh-11": {
         "name": "Gloomhaven Square A",
@@ -54,6 +63,9 @@ export default {
             "-2 reputation",
             "+2 prosperity",
             "“Skullbane Axe” design (Item 113)"
+        ],
+        "faq": [
+            "Typo: ignore the text of \"Boss Special 1\" in the scenario book and go by the boss's stat card."
         ]
     },
     "gh-12": {
@@ -61,6 +73,10 @@ export default {
         "rewards": [
             "+4 reputation",
             "“Skullbane Axe” design (Item 113)"
+        ],
+        "faq": [
+            "Typo: door marker 1 should be at the southern door, not the northern door. Read the text under \"1\" when the southern door is opened.",
+            "Typo: \"Boss Special 1\" is not listed. It is exactly the same as \"Boss Special 2\", except Living Bones are summoned instead of Living Corpses."
         ]
     },
     "gh-13": {
@@ -91,6 +107,9 @@ export default {
         "name": "Forgotten Crypt",
         "rewards": [
             "+1 prosperity"
+        ],
+        "faq": [
+            "The altar (b) can be affected by abilities that affect obstacles, though destroying it is not recommended since that makes the scenario unwinnable. The NPC treats the altar as a focus when determining movement."
         ]
     },
     "gh-20": {
@@ -99,6 +118,9 @@ export default {
             "20 gold each",
             "+2 reputation",
             "+1 prosperity"
+        ],
+        "faq": [
+            "Typo: \"Boss Special 1\" is not listed. In addition to the abilities on the stat card, it has the same summoning ability as \"Boss Special 2\", except Living Bones are summoned instead of Living Corpses."
         ]
     },
     "gh-21": {
@@ -107,6 +129,10 @@ export default {
             "50 gold each",
             "+1 prosperity",
             "Add City Event 78 to the deck"
+        ],
+        "faq": [
+            "Typo: under \"Special Rules\" the altar should be at \"f\", not \"a\". The demon spawns should be reordered to wind (a), night (b), earth (c), flame (d), sun (e), frost (f).",
+            "The altar acts like a normal obstacle with hit points (immune to all negative conditions), so \"and immunities\" should not be there."
         ]
     },
     "gh-22": {
@@ -120,6 +146,9 @@ export default {
     },
     "gh-25": {
         "name": "Icecrag Ascent",
+        "faq": [
+            "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
+        ]
     },
     "gh-26": {
         "name": "Ancient Cistern",
@@ -134,6 +163,11 @@ export default {
         "rewards": [
             "+1 prosperity",
             "100 gold each This money must immediately be spent on enhancements"
+        ],
+        "faq": [
+            "Hail takes a turn at initiative 99 and receives damage if wounded.",
+            "You can add your current money to the reward, but you can't sell items in town because the reward happens immediately after the scenario ends, before you return to town.",
+            "Typo: if the space for the \"The Rift Closed\" global achievement sticker is already filled, don't cover it up. Either skip the sticker or place it to the side of the map."
         ]
     },
     "gh-28": {
@@ -143,6 +177,9 @@ export default {
         "name": "Sanctuary of Gloom",
         "rewards": [
             "15 experience each"
+        ],
+        "faq": [
+            "The door with HP is treated as an obstacle with HP with respect to being targetable: summons can focus on it, it is considered to have initiative 99, etc."
         ]
     },
     "gh-30": {
@@ -159,6 +196,10 @@ export default {
     },
     "gh-33": {
         "name": "Savvas Armory",
+        "faq": [
+            "The door with HP is treated as an obstacle with HP with respect to being targetable: summons can focus on it, it is considered to have initiative 99, etc.",
+            "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
+        ]
     },
     "gh-34": {
         "name": "Scorched Summit",
@@ -166,6 +207,12 @@ export default {
             "20 gold each",
             "+2 reputation",
             "+1 prosperity"
+        ],
+        "faq": [
+            "Additional special rule: the boss is immune to any ability or effect that would affect its position on the map (push, pull, forced movement, etc.).",
+            "This scenario should have an additional requirement: \"The Drake Aided\" (Global) INCOMPLETE. Completing it should also trigger \"Lost Party Achievement: The Drake's Command\".",
+            "The Zephyrs cannot be affected by any ability, and summons do not focus on them.",
+            "Errata: for Boss Special 2 the correct ability order is first summon, then move. The scenario book is correct, the stat card is not."
         ]
     },
     "gh-35": {
@@ -175,6 +222,9 @@ export default {
             "5 reputation",
             "-2 prosperity",
             "Add City Event 79 to the deck"
+        ],
+        "faq": [
+            "The wall obstacles cannot be destroyed."
         ]
     },
     "gh-36": {
@@ -187,11 +237,17 @@ export default {
     },
     "gh-37": {
         "name": "Doom Trench",
+        "faq": [
+            "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
+        ]
     },
     "gh-38": {
         "name": "Slave Pens",
         "rewards": [
             "+1 reputation"
+        ],
+        "faq": [
+            "The Orchid stops moving if the shaman dies. If the Orchid can't find a viable path to the shaman, it does not move. Per the scenario text, it can move through closed doors, opening them as it moves."
         ]
     },
     "gh-39": {
@@ -216,6 +272,10 @@ export default {
         "name": "Realm of the Voice",
         "rewards": [
             "{NOTE_42}"
+        ],
+        "faq": [
+            "The vocal cords are treated as obstacles with HP with respect to being targetable: summons can focus on them, they are considered to have initiative 99, etc.",
+            "Completing this scenario should award the global achievement \"The Voice Silenced\". It should also require \"The Voice Freed\" INCOMPLETE."
         ]
     },
     "gh-43": {
@@ -233,22 +293,39 @@ export default {
         "rewards": [
             "20 gold each",
             "-2 reputation"
+        ],
+        "faq": [
+            "The totems are considered obstacles, so they cannot be destroyed using abilities, but they may be affected by other non-damaging abilities (like the Cragheart's obstacle manipulation abilities)."
         ]
     },
     "gh-46": {
         "name": "Nightmare Peak",
+        "faq": [
+            "Typo: Boss Special 2 on the stat card says \"Summon P eggs\". It should read \"Summon C eggs\".",
+            "Errata: the order of the Special 2 abilities should be Move, One Attack, then Summon."
+        ]
     },
     "gh-47": {
         "name": "Lair of the Unseeing Eye",
+        "faq": [
+            "Additional special rule: the boss is immune to any ability or effect that would affect its position on the map (push, pull, forced movement, etc.)."
+        ]
     },
     "gh-48": {
         "name": "Shadow Weald",
+        "faq": [
+            "After the boss's melee attack, it is affected by post-attack effects (retaliate, on death, etc.) before it is removed from the board."
+        ]
     },
     "gh-49": {
         "name": "Rebels Stand",
         "rewards": [
             "50 gold each",
             "-3 reputation"
+        ],
+        "faq": [
+            "Additional special rule: the Ancient Artillery is not affected by forced movement (pushed, pulled, switch positions, etc.).",
+            "The special rule damage to all characters is direct damage and is not considered an Attack."
         ]
     },
     "gh-50": {
@@ -270,6 +347,10 @@ export default {
     "gh-52": {
         "name": "Noxious Cellar",
         "requirements": "“Seeker of Xorn” personal quest",
+        "faq": [
+            "Special rule: in this scenario you can use the bottom action of any card to loot a treasure tile within range 1.",
+            "When using Forgotten Circles material, the obstacles in the middle of the starting room can be treated as wall overlay tiles as specified in the Forgotten Circles rules. A character also cannot teleport into the section of the map of another character."
+        ]
     },
     "gh-53": {
         "name": "Crypt Basement",
@@ -285,6 +366,10 @@ export default {
             "Immediately retire the Seeker of Xorn",
             "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
             "Open envelope {PH}"
+        ],
+        "faq": [
+            "If you start a new Cthulhu-Squid character directly after successfully completing this scenario, that character receives the Staff of Xorn. Otherwise the Staff of Xorn is added to the shop deck.",
+            "The Seeker of Xorn does not get to go back to town to sell items, perform enhancements, etc. As the scenario book states, the character's retirement event card doesn't go into the deck."
         ]
     },
     "gh-SoX1": {
@@ -339,6 +424,9 @@ export default {
             "“Vengeance” quest complete",
             "Open envelope X",
             "+2 reputation"
+        ],
+        "faq": [
+            "Each bone pile is considered a separately performed heal ability, and they still heal the named monster even if it is stunned."
         ]
     },
     "gh-59": {
@@ -352,6 +440,9 @@ export default {
             "“Finding the Cure” quest complete",
             "Open envelope X",
             "+1 prosperity"
+        ],
+        "faq": [
+            "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
         ]
     },
     "gh-61": {
@@ -404,18 +495,28 @@ export default {
         "name": "Well of the Unfortunate",
         "rewards": [
             "15 gold each"
+        ],
+        "faq": [
+            "You don't have to end your movement on a hex adjacent to the well, you just have to enter a hex adjacent to it."
         ]
     },
     "gh-70": {
         "name": "Chained Isle",
         "rewards": [
             "+2 prosperity"
+        ],
+        "faq": [
+            "The living spirits are not affected by instant-kill abilities."
         ]
     },
     "gh-71": {
         "name": "Windswept Highlands",
         "rewards": [
             "2 “Major Power Potions” (Item 041)"
+        ],
+        "faq": [
+            "Forced movement: if the wind moves a character to the right or left and there is an obstacle or wall in one of the possible hexes, the player may choose to be blocked (not move) or move to the open hex.",
+            "Escaping: you complete the scenario when all characters are either standing on an exit hex or were exhausted while standing on an exit hex."
         ]
     },
     "gh-72": {
@@ -423,12 +524,18 @@ export default {
         "rewards": [
             "+1 reputation",
             "+1 prosperity"
+        ],
+        "faq": [
+            "Typo: use map tile L1b instead of L2b."
         ]
     },
     "gh-73": {
         "name": "Rockslide Ridge",
         "rewards": [
             "+1 reputation"
+        ],
+        "faq": [
+            "The boulders damage and force-move flying figures."
         ]
     },
     "gh-74": {
@@ -436,12 +543,18 @@ export default {
         "rewards": [
             "10 gold each",
             "+2 prosperity"
+        ],
+        "faq": [
+            "As specified in the special rules, only characters (not summons) can pick up water. If multiple water hexes are in range of a loot action, you must choose only one to pick up."
         ]
     },
     "gh-75": {
         "name": "Overgrown Graveyard",
         "rewards": [
             "60 gold each"
+        ],
+        "faq": [
+            "The setup calls for 5 stump overlays but there are only 4 in the game. Use another overlay as a substitute."
         ]
     },
     "gh-76": {
@@ -452,18 +565,27 @@ export default {
         "name": "Vault of Secrets",
         "rewards": [
             "5 experience each"
+        ],
+        "faq": [
+            "Characters that can create obstacles cannot block all pressure plates simultaneously."
         ]
     },
     "gh-78": {
         "name": "Sacrifice Pit",
         "rewards": [
             "+3 reputation"
+        ],
+        "faq": [
+            "The victims are considered figures allied to no one, and therefore restrict movement for monsters and characters."
         ]
     },
     "gh-79": {
         "name": "Lost Temple",
         "rewards": [
             "15 gold each"
+        ],
+        "faq": [
+            "The boss's two abilities can affect invisible characters. They also require line of sight. The boss's mind control can only be used on characters that have not yet acted in the round."
         ]
     },
     "gh-80": {
@@ -476,6 +598,10 @@ export default {
         "name": "Temple of the Eclipse",
         "rewards": [
             "10 experience each"
+        ],
+        "faq": [
+            "Typo: in the special rules of section 1, \"the Betrayer\" should be \"the Colorless\". For both of the boss's specials, consuming elements only affects the summoning. The other parts of the specials happen regardless.",
+            "The Crystal of Zenith and Sphere of Midnight are not actual items and have no use outside this scenario. Use numbered tokens to track who has them. At the end of the scenario, win or lose, these two \"goal\" treasures are reset so they can be looted again."
         ]
     },
     "gh-82": {
@@ -489,11 +615,17 @@ export default {
                 "-2 prosperity"
             ]
         ],
+        "faq": [
+            "If the player holding the items is exhausted, the scenario is failed. When the scenario is failed, the items are returned to the treasure tile and you can loot it again on your next attempt."
+        ]
     },
     "gh-83": {
         "name": "Shadows Within",
         "rewards": [
             "40 collective gold"
+        ],
+        "faq": [
+            "After reading section 2, the first set of special rules ends and is replaced by the second set. The altar has no HP and cannot be destroyed."
         ]
     },
     "gh-84": {
@@ -502,11 +634,17 @@ export default {
             "“Resonant Crystal” (Item 133)",
             "+1 prosperity"
         ],
+        "faq": [
+            "The crystal is not considered an enemy and is not targeted by character summons."
+        ]
     },
     "gh-85": {
         "name": "Sun Temple",
         "rewards": [
             "“Orb of Dawn” (Item 121)"
+        ],
+        "faq": [
+            "Error in the book: for 4 players, don't place the night demon and sun demons in the final room that are only placed as normal enemies for 4 players (colored black for 2 and 3 players, white for 4 players)."
         ]
     },
     "gh-86": {
@@ -526,6 +664,9 @@ export default {
         "name": "Plane of Water",
         "rewards": [
             "“Staff of Summoning” (Item 120)"
+        ],
+        "faq": [
+            "If all lurkers are killed, continue to draw lurker ability cards to determine the direction of the scenario's special effect."
         ]
     },
     "gh-89": {
@@ -557,6 +698,9 @@ export default {
         "name": "Sunken Vessel",
         "rewards": [
             "10 experience each"
+        ],
+        "faq": [
+            "The entire row of starting hexes consists of water hexes."
         ]
     },
     "gh-94": {
