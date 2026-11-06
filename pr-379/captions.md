@@ -1,0 +1,3 @@
+item-modal: Items page, item modal for Boots of Striding owned by a character (Availability 1 / 2). After: new "Sacrifice" button next to Sell/Remove; the action buttons wrap so nothing overflows on mobile and the card image keeps its normal size on desktop.
+item-modal-removed: Same modal after the item is taken out. After: clicked "Sacrifice" -> "Availability: 1 / 2", "Removed from game: 1" and a "Restore" link. Before is an approximation: the feature does not exist, so it shows the result of the plain "Remove" button (copy returns to stock, Availability 2 / 2).
+items-page: Items page list after the action. After: Boots of Striding shows reduced availability 1 / 2 (one copy gone for good). Before is an approximation: plain "Remove" was used, so it shows 2 / 2.
