@@ -10,7 +10,13 @@
             ],
             "loot": {
                 "coins": 15
-            }
+            },
+            "monsters": [
+                "bug-body",
+                "vermling-raider",
+                "vermling-scout",
+                "living-corpse"
+            ]
         },
         {
             "id": "SA1",
@@ -22,7 +28,12 @@
             ],
             "loot": {
                 "coins": 15
-            }
+            },
+            "monsters": [
+                "algox-archer",
+                "algox-scout",
+                "algox-icespeaker"
+            ]
         },
         {
             "id": "CA1",
@@ -35,7 +46,12 @@
             ],
             "loot": {
                 "coins": 15
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "chaos-demon",
+                "harrower-infester"
+            ]
         },
         {
             "id": "HA1",
@@ -47,7 +63,13 @@
             ],
             "loot": {
                 "coins": 15
-            }
+            },
+            "monsters": [
+                "flame-demon",
+                "frost-demon",
+                "wind-demon",
+                "earth-demon"
+            ]
         }
     ],
     "chapters": [],

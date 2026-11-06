@@ -106,6 +106,10 @@
                             </div>
                         </div>
 
+                        <div v-if="scenario.monsters.length" id="scenario-monsters" class="mt-2">
+                            {{ $t('Monsters') }}: {{ scenario.monsters.map(monster => $t('monsters.' + monster)).join(', ') }}
+                        </div>
+
                         <div class="mt-4 mb-2"
                              v-if="scenario.isVisible() && !scenario.isComplete() && !treasuresVisible">
                             <button class="mdc-button origin-left transform scale-75 mdc-button--raised"

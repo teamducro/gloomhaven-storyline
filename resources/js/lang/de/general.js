@@ -301,6 +301,9 @@ export default {
     "Settings": "Einstellungen",
     "Clear filter": "Filter löschen",
     "Missed Treasures": "Verpasste Schätze",
+    "Monster": "Monster",
+    "Monsters": "Monsters",
+    "Monster data": "Monster data",
     "transfer": {
         "title": "Kampagnen-Daten übertragen",
         "text": "Das Kopieren von Kampagnen-Daten zwischen einzelnen Kampagnen ist einfach möglich.",
