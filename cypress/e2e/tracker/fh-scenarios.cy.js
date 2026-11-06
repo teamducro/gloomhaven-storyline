@@ -37,4 +37,9 @@ describe('FH scenarios', () => {
         cy.reload();
         state(103).should('eq', 'complete');
     });
+
+    it('does not unlock The Lead Door of an unanswered Into the Black', () => {
+        cy.visit('/tracker?states=99_c-100_c-101_c-102_c');
+        state(103).should('eq', 'hidden');
+    });
 });
