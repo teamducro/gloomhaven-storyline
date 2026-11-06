@@ -68,6 +68,7 @@ export default {
     "Conclusion": "Epilog",
     "Deck": "Deck",
     "Draw": "Zieht",
+    "Event history": "Event history",
     "Envelope X solution": "Lösung Umschlag X",
     "Envelope": "Umschlag",
     "Gained from": "Erhalten von",

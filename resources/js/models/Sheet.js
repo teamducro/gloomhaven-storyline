@@ -31,6 +31,9 @@ class Sheet {
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
 
+        // Drawn event cards: [{card: 'C-12', choice: 'A', removed: false, date: ISO string}]
+        this.eventHistory = [...(data.eventHistory || [])];
+
         // GH2e
         this.factionReputation = {...data.factionReputation};
         this.inspiration = data.inspiration || 0;
@@ -78,6 +81,7 @@ class Sheet {
             deckOrder: {'deckOrder': {}},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
+            eventHistory: {'eventHistory': []},
             factionReputation: {'factionReputation': {}},
             inspiration: {'inspiration': 0},
             imbuement: {'imbuement': 0},

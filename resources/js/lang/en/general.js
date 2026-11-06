@@ -72,6 +72,7 @@ export default {
     "Conclusion": "Conclusion",
     "Deck": "Deck",
     "Draw": "Draw",
+    "Event history": "Event history",
     "Envelope X solution": "Envelope X solution",
     "Envelope": "Envelope",
     "Gained from": "Gained from",

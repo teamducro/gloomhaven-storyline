@@ -68,6 +68,7 @@ export default {
     "Conclusion": "Conclusion",
     "Deck": "Колода",
     "Draw": "Потянуть карту",
+    "Event history": "Event history",
     "Envelope X solution": "Решение конверта В",
     "Envelope": "Конверт",
     "Gained from": "Получено из",

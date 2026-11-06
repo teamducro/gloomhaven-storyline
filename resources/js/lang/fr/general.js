@@ -68,6 +68,7 @@ export default {
     "Conclusion": "Conclusion",
     "Deck": "Paquet",
     "Draw": "Piocher",
+    "Event history": "Event history",
     "Envelope X solution": "Solution de l'enveloppe X",
     "Envelope": "Enveloppe",
     "Gained from": "Gagné depuis",

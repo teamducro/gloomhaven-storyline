@@ -57,7 +57,7 @@
                             </span>
                         </button>
 
-                        <button v-if="!appData.read_only" @click="remove"
+                        <button v-if="!appData.read_only && !fromHistory" @click="remove"
                                 class="mdc-button origin-left transform scale-90 mdc-button--raised">
                             <span class="mdc-button__ripple"></span>
                             <img width="26" :src="baseUrl+'/img/icons/remove-card.png'" :alt="'Remove #' + card.id"/>
@@ -89,6 +89,7 @@ export default {
             blur: false,
             removed: false,
             viaDraw: false,
+            fromHistory: false,
             preloadImage: new PreloadImage(),
         }
     },
@@ -101,11 +102,12 @@ export default {
     methods: {
         open(card) {
             this.card = card instanceof Card ? card : new Card(card.id, card.game);
-            this.choice = null;
+            this.choice = card.choice || null;
             this.animating = false;
-            this.blur = false;
+            this.blur = !!this.choice;
             this.removed = false;
             this.viaDraw = !!card.viaDraw;
+            this.fromHistory = !!card.fromHistory;
             this.$refs['modal'].open();
             this.preloadImage.handle(this.card.images[1]);
         },
@@ -113,13 +115,14 @@ export default {
             this.choice = choice;
             this.animating = true;
             this.blur = true;
+            this.$bus.$emit('event-chosen', this.card, choice);
 
             // animation done
             await Helpers.sleep(600);
             this.animating = false;
         },
         remove() {
-            if (!this.removed && !this.animating && (this.choice || !this.viaDraw)) {
+            if (!this.removed && !this.animating && !this.fromHistory && (this.choice || !this.viaDraw)) {
                 this.removed = true;
                 this.$bus.$emit('remove-card', this.card);
                 this.close();

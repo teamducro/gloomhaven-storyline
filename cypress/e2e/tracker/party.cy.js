@@ -301,6 +301,32 @@ describe('Party', () => {
         });
     });
 
+    it('it keeps a history of the chosen event cards', () => {
+        cy.visit('/tracker/#/party');
+        cy.get('#event-history').should('not.exist');
+
+        utilities.scrollTo('50%');
+        cy.get('button').contains('Draw').first().click();
+        cy.get('.mdc-dialog__content button').contains('B').click();
+        cy.wait(700); // removing is ignored while the flip animation runs
+        cy.get('.mdc-dialog__content button').contains('Toggle A').parent().next().click();
+
+        cy.get('.mdc-dialog--open').should('not.exist');
+        cy.get('#event-history').contains('Event history (1)').click();
+        cy.get('#event-history li').should('have.length', 1)
+            .and('contain', 'City Event #')
+            .and('contain', 'B')
+            .and('contain', 'delete');
+
+        // Survives a reload and reopens the card on the chosen side
+        cy.reload();
+        cy.get('#event-history').contains('Event history (1)').click();
+        cy.get('#event-history li').first().click();
+        cy.get('.mdc-dialog__title').contains('City Event #').should('be.visible');
+        cy.get('.mdc-dialog__content .blur').should('be.visible');
+        cy.get('.mdc-dialog__content img[alt^="Remove #"]').should('not.exist');
+    });
+
     it('It unlocked solo scenario after character is unlocked', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);

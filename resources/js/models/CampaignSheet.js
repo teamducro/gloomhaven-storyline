@@ -42,6 +42,9 @@ class CampaignSheet {
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
 
+        // Drawn event cards: [{card: 'SO-12', choice: 'A', removed: false, date: ISO string}]
+        this.eventHistory = [...(data.eventHistory || [])];
+
         // Items
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
@@ -87,6 +90,7 @@ class CampaignSheet {
             deckOrder: {'deckOrder': {}},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
+            eventHistory: {'eventHistory': []},
 
             // Items
             itemDesigns: {'itemDesigns': {}},

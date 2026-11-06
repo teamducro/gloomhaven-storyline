@@ -68,6 +68,7 @@ export default {
     "Conclusion": "Végkifejlet",
     "Deck": "Pakli",
     "Draw": "Húzz",
+    "Event history": "Event history",
     "Envelope X solution": "X boríték megoldása",
     "Envelope": "Boríték",
     "Gained from": "Elérve innen:",

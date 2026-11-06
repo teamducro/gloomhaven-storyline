@@ -68,6 +68,7 @@ export default {
     "Conclusion": "Zakończenie",
     "Deck": "Talia",
     "Draw": "Losuj",
+    "Event history": "Event history",
     "Envelope X solution": "Rozwiązanie koperty X",
     "Envelope": "Koperta",
     "Gained from": "Uzyskane z",

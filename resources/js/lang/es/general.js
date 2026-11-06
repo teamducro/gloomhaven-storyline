@@ -68,6 +68,7 @@ export default {
     "Conclusion": "Conclusión",
     "Deck": "Mazo",
     "Draw": "Robar",
+    "Event history": "Event history",
     "Envelope X solution": "Solución sobre X",
     "Envelope": "Sobre",
     "Gained from": "Obtenido en",
