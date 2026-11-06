@@ -112,6 +112,8 @@ describe('Storyline', () => {
             onBeforeLoad: (window) => window.localStorage.setItem('lang', '"de"')
         });
 
+        // German is lazy-loaded; open the modal only once it is active.
+        cy.get('html').should('have.attr', 'lang', 'de');
         utilities.openScenario(52);
         cy.get('#scenario-content').contains('Persönliches Ziel „Suche nach Xorn“');
         utilities.closeModel();
