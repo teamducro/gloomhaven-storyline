@@ -4141,6 +4141,7 @@
             "name": "razorweb puppetry",
             "character_id": "AA",
             "level": 1.5,
+            "milestone": true,
             "initiative": "39"
         },
         {
@@ -4389,6 +4390,7 @@
             "name": "creative sparks",
             "character_id": "BK",
             "level": 1.5,
+            "milestone": true,
             "initiative": "40"
         },
         {
@@ -4621,6 +4623,7 @@
             "name": "pummeling chain",
             "character_id": "BM",
             "level": 1.5,
+            "milestone": true,
             "initiative": "17"
         },
         {
@@ -4861,6 +4864,7 @@
             "name": "rope pit",
             "character_id": "CG",
             "level": 1.5,
+            "milestone": true,
             "initiative": "32"
         },
         {
@@ -5101,6 +5105,7 @@
             "name": "call of the wild",
             "character_id": "CT",
             "level": 1.5,
+            "milestone": true,
             "initiative": "10"
         },
         {
@@ -5341,6 +5346,7 @@
             "name": "improvised methods",
             "character_id": "FK",
             "level": 1.5,
+            "milestone": true,
             "initiative": "16"
         },
         {
@@ -5581,6 +5587,7 @@
             "name": "the void consumes",
             "character_id": "HO",
             "level": 1.5,
+            "milestone": true,
             "initiative": "35"
         },
         {
@@ -5893,6 +5900,7 @@
             "name": "uplifting ascension",
             "character_id": "HP",
             "level": 1.5,
+            "milestone": true,
             "initiative": "80"
         },
         {
@@ -6141,6 +6149,7 @@
             "name": "drawn into the light",
             "character_id": "LU",
             "level": 1.5,
+            "milestone": true,
             "initiative": "47"
         },
         {
@@ -6381,6 +6390,7 @@
             "name": "giant slayer",
             "character_id": "MF",
             "level": 1.5,
+            "milestone": true,
             "initiative": "22"
         },
         {
@@ -6613,6 +6623,7 @@
             "name": "adaptive engineering",
             "character_id": "QA",
             "level": 1.5,
+            "milestone": true,
             "initiative": "75"
         },
         {
@@ -6861,6 +6872,7 @@
             "name": "blood rite",
             "character_id": "RM",
             "level": 1.5,
+            "milestone": true,
             "initiative": "67"
         },
         {
@@ -7101,6 +7113,7 @@
             "name": "terror of the deep",
             "character_id": "SP",
             "level": 1.5,
+            "milestone": true,
             "initiative": "33"
         },
         {
@@ -7341,6 +7354,7 @@
             "name": "deflection",
             "character_id": "ST",
             "level": 1.5,
+            "milestone": true,
             "initiative": "46"
         }
     ],

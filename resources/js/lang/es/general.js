@@ -111,6 +111,7 @@ export default {
     "Search": "Buscar",
     "Set this counter to the amount of characters you have retired": "Fija el contador en la cantidad de personajes que has retirado.",
     "Show all": "Mostrar todo",
+    "Milestone achieved": "Milestone achieved",
     "Manage": "Gestión",
     "Show treasures": "Mostrar los tesoros",
     "solved": "resuelto",

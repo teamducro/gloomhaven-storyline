@@ -26,6 +26,31 @@ describe('Abilities', () => {
         cy.get('#deck-avalanche').should('not.exist');
     });
 
+    it('It only offers Crimson Scales milestone cards once the milestone is achieved', () => {
+        utilities.enableGame('cs');
+        utilities.switchGame('cs');
+        cy.visit('/tracker/#/characters');
+
+        utilities.openAbilities('Fire Knight');
+
+        cy.get('#available-improvised-methods').should('not.exist');
+        cy.get('#available-fiery-charisma').should('exist');
+
+        cy.get('#desktop-milestone-achieved').click();
+
+        cy.get('#available-improvised-methods').should('exist');
+        cy.get('img[src*="/img/abilities/cs/FK/improvised-methods"]').should('have.prop', 'naturalWidth').and('be.greaterThan', 0);
+
+        cy.get('#available-improvised-methods').click();
+        cy.get('#deck-improvised-methods').should('exist');
+
+        cy.get('#desktop-milestone-achieved').click();
+
+        cy.get('#available-improvised-methods').should('not.exist');
+        cy.get('#deck-improvised-methods').should('not.exist');
+        cy.get('.deck-header h2').contains('Deck 0 /');
+    });
+
     it('It can show all abilities', () => {
         cy.visit('/tracker/#/characters');
 

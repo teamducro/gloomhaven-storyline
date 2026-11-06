@@ -9,6 +9,13 @@
                                  v-model:checked="sheet.enhancementsEnabled"
                                  @change="storeSheet"/>
 
+            <!-- Milestone toggle -->
+            <checkbox-with-label v-if="isCs" id="desktop-milestone-achieved"
+                                 class="hidden md:flex" :label="$t('Milestone achieved')"
+                                 v-model:checked="character.milestone"
+                                 :disabled="appData.read_only"
+                                 @change="toggleMilestone"/>
+
             <!-- Show all toggle -->
             <checkbox-with-label id="desktop-show-all-abilities" class="hidden md:flex"
                                  :label="$t('Show all')" :auto-disable="false"
@@ -78,6 +85,12 @@
                     <checkbox-with-label id="mobile-show-all-abilities" class="md:hidden"
                                          :label="$t('Show all')" :auto-disable="false"
                                          v-model:checked="prefs.showAll"/>
+                    <!-- Milestone toggle -->
+                    <checkbox-with-label v-if="isCs" id="mobile-milestone-achieved" class="md:hidden"
+                                         :label="$t('Milestone achieved')"
+                                         v-model:checked="character.milestone"
+                                         :disabled="appData.read_only"
+                                         @change="toggleMilestone"/>
                     <!-- Enhancements toggle -->
                     <checkbox-with-label id="mobile-enable-enhancements" class="md:hidden"
                                          :label="$t('Enhancements')"
@@ -204,13 +217,18 @@ export default {
         selectedAbilities() {
             return Object.values(this.character.abilityPerLevel).filter(a => a);
         },
+        isCs() {
+            return this.character.game === 'cs';
+        },
         filteredAbilities() {
+            const abilities = this.abilities.filter(ability => !ability.milestone || this.character.milestone);
+
             if (!this.prefs.showAll && this.selectedAbilities.length) {
-                return this.abilities.filter((ability) => {
+                return abilities.filter((ability) => {
                     return ability.level < 2 || this.selectedAbilities.includes(ability.code);
                 });
             } else {
-                return this.abilities;
+                return abilities;
             }
         },
         abilityCount() {
@@ -284,6 +302,14 @@ export default {
         },
         openModel(group, ability) {
             this.$bus.$emit('open-ability-card', {ability, character: this.character, sheet: this.sheet});
+        },
+        toggleMilestone() {
+            if (!this.character.milestone) {
+                // A hidden card must not keep taking up a deck slot.
+                this.abilities.filter(ability => ability.milestone)
+                    .each(ability => delete this.character.abilities[ability.code]);
+            }
+            this.store();
         },
         storeSheet() {
             this.sheet.store();

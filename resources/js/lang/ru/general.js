@@ -111,6 +111,7 @@ export default {
     "Search": "Search",
     "Set this counter to the amount of characters you have retired": "Укажите сколько ваших персонажей ушло на покой.",
     "Show all": "Показать всё",
+    "Milestone achieved": "Milestone achieved",
     "Manage": "Изменить",
     "Show treasures": "Показать сокровища",
     "solved": "solved",

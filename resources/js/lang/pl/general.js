@@ -111,6 +111,7 @@ export default {
     "Search": "Szukaj",
     "Set this counter to the amount of characters you have retired": "Ustaw liczbę postaci które przeszły w stan spoczynku.",
     "Show all": "Pokaż wszystkie",
+    "Milestone achieved": "Milestone achieved",
     "Manage": "Zarządzaj",
     "Show treasures": "Pokaż skarby",
     "solved": "rozwiązany",

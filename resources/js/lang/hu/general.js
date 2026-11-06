@@ -111,6 +111,7 @@ export default {
     "Search": "Keresés",
     "Set this counter to the amount of characters you have retired": "Állítsd be a számlálón, hány karakterrel vonultál már vissza",
     "Show all": "Mind mutatása",
+    "Milestone achieved": "Milestone achieved",
     "Manage": "Kezelés",
     "Show treasures": "Kincsek mutatása",
     "solved": "megoldva",
