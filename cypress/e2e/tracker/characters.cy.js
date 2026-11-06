@@ -495,4 +495,23 @@ describe('Character', () => {
             expect(scenarios.firstWhere('id', 65).state).eq('required');
         });
     });
+
+    it('It grants an additional perk after completing JotL scenario 3', () => {
+        cy.visit('/tracker');
+        utilities.switchGame('jotl');
+        utilities.completeScenario(1);
+        utilities.completeScenario(2);
+
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Red Guard');
+        cy.contains('You may select an additional perk!').should('not.exist');
+
+        cy.visit('/tracker');
+        utilities.completeScenario(3);
+
+        cy.visit('/tracker/#/characters');
+        cy.contains('You may select an additional perk!');
+        cy.get('#perk-0-0').click();
+        cy.contains('You may select an additional perk!').should('not.exist');
+    });
 });

@@ -853,7 +853,7 @@ export default {
     "jotl-3": {
         "name": "The Black Ship",
         "rewards": [
-            "1 ✔ mindenkinek"
+            "1 jártasság mindenkinek"
         ]
     },
     "jotl-4": {

@@ -853,7 +853,7 @@ export default {
     "jotl-3": {
         "name": "Das schwarze Schiff",
         "rewards": [
-            "Jeder Charakter erhält eine Verbesserung 1 ✔ "
+            "Jeder Charakter erhält 1 Verbesserung"
         ]
     },
     "jotl-4": {

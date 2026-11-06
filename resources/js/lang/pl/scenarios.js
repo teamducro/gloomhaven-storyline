@@ -853,7 +853,7 @@ export default {
     "jotl-3": {
         "name": "The Black Ship",
         "rewards": [
-            "Po 1 ✔ dla każdego"
+            "Po 1 profit dla każdego"
         ]
     },
     "jotl-4": {
