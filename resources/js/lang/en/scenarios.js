@@ -165,7 +165,9 @@ export default {
             "100 gold each This money must immediately be spent on enhancements"
         ],
         "faq": [
-            "Hail takes a turn at initiative 99 and receives damage if wounded.",
+            "Hail takes a turn at initiative 99 and receives damage if wounded."
+        ],
+        "conclusion_faq": [
             "You can add your current money to the reward, but you can't sell items in town because the reward happens immediately after the scenario ends, before you return to town.",
             "Typo: if the space for the \"The Rift Closed\" global achievement sticker is already filled, don't cover it up. Either skip the sticker or place it to the side of the map."
         ]
@@ -210,7 +212,6 @@ export default {
         ],
         "faq": [
             "Additional special rule: the boss is immune to any ability or effect that would affect its position on the map (push, pull, forced movement, etc.).",
-            "This scenario should have an additional requirement: \"The Drake Aided\" (Global) INCOMPLETE. Completing it should also trigger \"Lost Party Achievement: The Drake's Command\".",
             "The Zephyrs cannot be affected by any ability, and summons do not focus on them.",
             "Errata: for Boss Special 2 the correct ability order is first summon, then move. The scenario book is correct, the stat card is not."
         ]
@@ -274,8 +275,7 @@ export default {
             "{NOTE_42}"
         ],
         "faq": [
-            "The vocal cords are treated as obstacles with HP with respect to being targetable: summons can focus on them, they are considered to have initiative 99, etc.",
-            "Completing this scenario should award the global achievement \"The Voice Silenced\". It should also require \"The Voice Freed\" INCOMPLETE."
+            "The vocal cords are treated as obstacles with HP with respect to being targetable: summons can focus on them, they are considered to have initiative 99, etc."
         ]
     },
     "gh-43": {
@@ -364,7 +364,7 @@ export default {
             "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
             "Open envelope {PH}"
         ],
-        "faq": [
+        "conclusion_faq": [
             "If you start a new Cthulhu-Squid character directly after successfully completing this scenario, that character receives the Staff of Xorn. Otherwise the Staff of Xorn is added to the shop deck.",
             "The Seeker of Xorn does not get to go back to town to sell items, perform enhancements, etc. As the scenario book states, the character's retirement event card doesn't go into the deck."
         ]
