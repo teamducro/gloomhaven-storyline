@@ -4,9 +4,10 @@
                :overflowHidden="animating">
             <template #content>
                 <div v-if="card" class="w-full h-full flex flex-col outline-hidden">
-                    <div class="relative w-full" style="max-width: 300px;">
-                        <flip-card :flipped="flipped" :class="{'cursor-pointer': fromHistory}"
-                                   @click="fromHistory && (flipped = !flipped)">
+                    <!-- on the wrapper, so clicks on the blur overlays flip too -->
+                    <div class="relative w-full" style="max-width: 300px;" :class="{'cursor-pointer': fromHistory}"
+                         @click="fromHistory && (flipped = !flipped)">
+                        <flip-card :flipped="flipped">
                             <template v-slot:front>
                                 <webp :src="card.images[0]" :alt="$t(card.translatedType) + ' #' + card.id"
                                       class="w-full rounded-lg sm:rounded-xl"/>
@@ -19,14 +20,14 @@
 
                         <transition name="fade">
                             <div v-if="blur && flipped && card.game !== 'gh2'"
-                                 class="outcome-blur pointer-events-none rounded-lg absolute h-1/2 w-full top-0 left-0"
+                                 class="outcome-blur rounded-lg absolute h-1/2 w-full top-0 left-0"
                                  :class="{'top-1/2': choice === 'A'}">
                             </div>
                         </transition>
                         <!-- GH2e: one back with 1–4 outcomes, blur each one not chosen -->
                         <transition-group name="fade">
                             <div v-for="section in (flipped ? blurredSections : [])" :key="section.outcome"
-                                 class="outcome-blur pointer-events-none absolute w-full left-0"
+                                 class="outcome-blur absolute w-full left-0"
                                  :style="{top: section.start + '%', height: (section.end - section.start) + '%'}">
                             </div>
                         </transition-group>
