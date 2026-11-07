@@ -40,6 +40,7 @@ export default {
     "Battle Goals": "Jártasságok",
     "blocked": "zárolva",
     "Blocked": "Zárolva",
+    "Blocks": "Blocks",
     "Buy me a Beer": "Buy me a Beer!",
     "Cancel": "Mégse",
     "character-limit-message": "Due to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",

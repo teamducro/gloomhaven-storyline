@@ -40,6 +40,7 @@ export default {
     "Battle Goals": "Obiettivi di Battaglia",
     "blocked": "bloccato",
     "Blocked": "Bloccato",
+    "Blocks": "Blocks",
     "Buy me a Beer": "Offrimi una birra",
     "Cancel": "Cancella",
     "character-limit-message": "Per via di restrizioni sulla campagna gratuita c'è un limite alle note personaggi, gli utenti Pro non hanno questo limite",

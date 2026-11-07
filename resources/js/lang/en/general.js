@@ -44,6 +44,7 @@ export default {
     "Battle Goals": "Battle Goals",
     "blocked": "blocked",
     "Blocked": "Blocked",
+    "Blocks": "Blocks",
     "Buy me a Beer": "Buy me a Beer!",
     "Cancel": "Cancel",
     "character-limit-message": "Due to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",

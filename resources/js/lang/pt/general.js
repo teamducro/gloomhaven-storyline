@@ -40,6 +40,7 @@ export default {
     "Battle Goals": "Objetivos de Batalha",
     "blocked": "bloqueado",
     "Blocked": "Bloqueado",
+    "Blocks": "Blocks",
     "Buy me a Beer": "Me pague uma cerveja!",
     "Cancel": "Cancelar",
     "character-limit-message": "Devido à limitações de compartilhamento de campanhas gratuitas, existe um limite de caracteres nas notas. Usuários pro não tem essa limitação",

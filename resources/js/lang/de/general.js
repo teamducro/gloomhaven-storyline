@@ -40,6 +40,7 @@ export default {
     "Battle Goals": "Kampfziele",
     "blocked": "gesperrt",
     "Blocked": "Gesperrt",
+    "Blocks": "Blocks",
     "Buy me a Beer": "Gib mir ein Bier aus!",
     "Cancel": "Abbrechen",
     "character-limit-message": "Aufgrund der Beschränkungen bei der gemeinsamen Nutzung von kostenlosen Kampagnen gibt es eine Zeichenbegrenzung für Notizen, für Pro-Benutzer gilt diese Begrenzung nicht",
