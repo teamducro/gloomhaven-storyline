@@ -188,7 +188,6 @@
 
 <script>
 import PartyGh from "./PartyGh";
-import AchievementRepository from "../repositories/AchievementRepository";
 import GameData from "../services/GameData";
 
 // Campaign sheet rules (reputation and prosperity events, sections, unlocks) live in `sections` of gh2.json.
@@ -199,7 +198,6 @@ export default {
     extends: PartyGh,
     data() {
         return {
-            prosperityItems: ['001–016', '017–024', '025–032', '033–040', '041–048', '049–053', '054–058', '059–063', '064–068'],
             prosperitySections: sections.prosperitySections,
             imbuementSections: sections.imbuementSections,
             unlocks: sections.unlocks.map(unlock => ({goal: this.unlockGoal(unlock), reward: this.unlockReward(unlock)})),
@@ -231,54 +229,18 @@ export default {
             return reward ? this.$t(reward) : this.$t('Read section') + ' ' + section;
         },
         async render() {
-            this.loading = true;
-
-            this.sheet = this.sheetRepository.make(this.appData.game);
-            this.campaignName = this.getCampaignName();
-
-            this.isLocalCampaign = app.campaignId === 'local';
+            await PartyGh.methods.render.call(this);
             this.lastProsperityIndex = this.sheet.effectiveProsperityIndex;
-
-            await this.$nextTick();
-
-            ['inspiration', 'demons', 'merchant-guild', 'military', 'prosperity', 'imbuement', 'donations', 'city-events', 'road-events']
-                .forEach(ref => this.$refs[ref]?.reset());
-
-            this.loading = false;
         },
         factionChanged() {
-            if (!this.loading) {
-                // C-57 joins the city deck the first time any faction reaches 13 (errata).
-                const {unlock, reputation, events} = sections.anyFactionReputation;
-                if (!this.sheet.unlocks[unlock] && Object.values(this.sheet.factionReputation).some(value => value >= reputation)) {
-                    this.sheet.unlocks[unlock] = true;
-                    this.sheet.addEvents(events);
-                }
-
-                sections.reputation9Events.forEach(([faction, unlock, events]) => {
-                    if (!this.sheet.unlocks[unlock] && this.sheet.factionReputation[faction] >= 9) {
-                        this.sheet.unlocks[unlock] = true;
-                        this.sheet.addEvents(events);
-                    }
-                });
-
-                // Gain only: once the section is read, losing reputation doesn't re-lock its scenarios.
-                const achievementRepository = new AchievementRepository();
-                const reached = sections.reputationAchievements.filter(([faction, value, id]) => !achievementRepository.find(id)?.awarded
-                    && Object.entries(this.sheet.factionReputation).some(([f, v]) => (!faction || f === faction) && v >= value));
-                reached.forEach(([, , id]) => achievementRepository.gain(id));
-                if (reached.length) {
-                    this.scenarioRepository.scenarioValidator.validate();
-                }
+            if (!this.loading && this.sheet.applyFactionReputation().length) {
+                this.scenarioRepository.scenarioValidator.validate();
             }
 
             this.store();
         },
         prosperityChanged() {
-            // Only when crossing the box: the sections have no sheet checkbox to remember they were read.
-            Object.entries(sections.prosperityEvents)
-                .filter(([box]) => this.lastProsperityIndex < box && this.sheet.effectiveProsperityIndex >= box)
-                .forEach(([, events]) => this.sheet.addEvents(events));
+            this.sheet.addProsperityEvents(this.lastProsperityIndex);
             this.lastProsperityIndex = this.sheet.effectiveProsperityIndex;
 
             this.store();

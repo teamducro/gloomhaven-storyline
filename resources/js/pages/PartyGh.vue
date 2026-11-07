@@ -186,6 +186,7 @@ import SheetCalculations from "../services/SheetCalculations";
 import DrawsEventCards from "../mixins/DrawsEventCards";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import GameData from "../services/GameData";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations, DrawsEventCards],
@@ -194,17 +195,6 @@ export default {
         return {
             sheet: null,
             prosperity: 1,
-            prosperityItems: [
-                '001–014',
-                '015–021',
-                '022–028',
-                '029–035',
-                '036–042',
-                '043–049',
-                '050–056',
-                '057–063',
-                '064–070'
-            ],
             unlocks: [
                 {
                     goal: this.$t('5 Ancient Technology Global Achievements'),
@@ -258,6 +248,14 @@ export default {
         this.$bus.$off('campaigns-changed', this.render);
         this.$bus.$off('remove-card', this.removeCard);
     },
+    computed: {
+        // '001–014' per prosperity level.
+        prosperityItems() {
+            const pad = number => String(number).padStart(3, '0');
+            const {lastItems} = new GameData().prosperity(this.sheet.game);
+            return lastItems.map((last, level) => pad((lastItems[level - 1] ?? 0) + 1) + '–' + pad(last));
+        }
+    },
     methods: {
         async render() {
             this.loading = true;
@@ -269,12 +267,7 @@ export default {
 
             await this.$nextTick();
 
-            this.$refs['reputation']?.reset();
-            this.$refs['donations']?.reset();
-            this.$refs['prosperity']?.reset();
-            this.$refs['city-events']?.reset();
-            this.$refs['road-events']?.reset();
-            this.$refs['rift-events']?.reset();
+            Object.values(this.$refs).forEach(ref => ref?.reset?.());
 
             this.loading = false;
         },
