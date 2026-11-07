@@ -54,7 +54,7 @@ Data: `scenarios` in `games/{game}.json` (GH+FC: `gh.json`). `ScenarioValidator`
 
 ## Achievements
 
-`achievements`: `gh.json` = gh, fc; `cs.json` holds the `PCS*` ones (GameData serves gh+cs together for gh, fc, cs, mp); own in gh2, fh; jotl none. Types `Global`, `Party`, `Campaign` (FH). `upgrades` + `count` = stacking stickers. `is_manual` added on the Achievements page, may reveal a side scenario. Group gain replaces the current; default city rule (`GCRM`, `G2AUP`) auto-gained. `GTPE`/`G2TPE` enable enhancements.
+`achievements`: `gh.json` = gh, fc; `cs.json` holds the `PCS*` ones (GameData serves gh+cs together for gh, fc, cs, mp); own in gh2, fh; jotl none. Types `Global`, `Party`, `Campaign` (FH). `upgrades` + `count` = stacking stickers. `is_manual` added on the Achievements page, may reveal a side scenario (and is gained/lost with it) unless `unlocks_side_scenario: false` (FH `CITF`). Group gain replaces the current; default city rule (`GCRM`, `G2AUP`) auto-gained. `GTPE`/`G2TPE` enable enhancements.
 
 ## Rules per game
 

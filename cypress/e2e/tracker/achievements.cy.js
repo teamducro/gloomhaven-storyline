@@ -134,6 +134,58 @@ describe('Achievements', () => {
         utilities.isNodeIncomplete(74);
     });
 
+    describe('Into the Forest (Frosthaven)', () => {
+        beforeEach(() => {
+            utilities.enableGame('fh');
+            utilities.switchGame('fh');
+        });
+
+        it('It does not unlock the side scenarios that require it when it is gained', () => {
+            cy.visit('/tracker/#/achievements');
+
+            cy.get('button').contains('add').click();
+            cy.get('input[name=achievement-to-add]').type('into the');
+            cy.get('li').contains('Into the Forest').click();
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).true;
+            });
+            utilities.scenarios().then((scenarios) => {
+                [69, 119, 134].forEach((id) => {
+                    expect(scenarios.firstWhere('id', id).state).eq('hidden');
+                });
+            });
+        });
+
+        it('It is not gained or lost when side scenario 69 is unlocked and locked', () => {
+            cy.visit('/tracker/#/story');
+
+            utilities.incompleteScenario(69);
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).false;
+            });
+
+            // Reload to run the validators that regain missing manual achievements
+            cy.reload();
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).false;
+            });
+
+            cy.visit('/tracker/#/achievements');
+            cy.get('button').contains('add').click();
+            cy.get('input[name=achievement-to-add]').type('into the');
+            cy.get('li').contains('Into the Forest').click();
+
+            cy.visit('/tracker/#/story');
+            utilities.lockSideScenario(69);
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).true;
+            });
+        });
+    });
+
     it('It can add the party achievements from Rift Event 14', () => {
         cy.visit('/tracker/#/achievements');
 
