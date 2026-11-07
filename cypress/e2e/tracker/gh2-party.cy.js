@@ -72,6 +72,19 @@ describe('Party GH2', () => {
         cy.contains('2 gained prosperity');
     });
 
+    it('It adds the prosperity section events when donation boxes count toward it', () => {
+        cy.visit('/tracker/#/party');
+
+        cy.get('input[aria-labelledby="donations"]').clear().type('1000{enter}');
+        cy.get('input#p-21').should('be.checked').and('be.disabled');
+        cy.get('input#p-22').should('not.be.checked').and('not.be.disabled');
+        cy.contains('#city-events-bedges .bedge', /^\s*21\s*$/).should('not.exist');
+
+        cy.get('input#p-23').click();
+        cy.get('input#p-22').should('be.checked');
+        ['21', '28'].forEach(event => cy.contains('#city-events-bedges .bedge', new RegExp(`^\\s*${event}\\s*$`)));
+    });
+
     it('It draws and resolves a 3-option city event', () => {
         cy.visit('/tracker/#/party');
 

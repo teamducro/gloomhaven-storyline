@@ -5,6 +5,7 @@ import CharacterRepository from "../repositories/CharacterRepository";
 import Versionable from "./Versionable";
 import GameData from "../services/GameData";
 import DeckFiller from "../services/DeckFiller";
+import SheetCalculations from "../services/SheetCalculations";
 
 class Sheet {
 
@@ -19,6 +20,7 @@ class Sheet {
         // Sheet fields
         this.reputation = data.reputation || 0;
         this.donations = data.donations || 0;
+        this.autoDonationProsperity = data.autoDonationProsperity;
         this.prosperityIndex = data.prosperityIndex || 1;
         this.city = {...data.city};
         this.road = {...data.road};
@@ -67,6 +69,7 @@ class Sheet {
             // Sheet fields
             reputation: 'reputation',
             donations: 'donations',
+            autoDonationProsperity: 'autoDonationProsperity',
             prosperityIndex: 'prosperityIndex',
             city: {'city': {}},
             road: {'road': {}},
@@ -102,10 +105,31 @@ class Sheet {
         if (typeof app.campaignData[this.key()] === 'undefined') {
             this.new();
         }
+
+        this.migrateDonationProsperity();
     }
 
     new() {
         // Nothing to set up..
+    }
+
+    get donationChecks() {
+        return SheetCalculations.methods.calculateDonationProsperity(this.donations || 0, this.game);
+    }
+
+    // prosperityIndex only holds the manually ticked boxes.
+    get effectiveProsperityIndex() {
+        return this.prosperityIndex + this.donationChecks;
+    }
+
+    // Older campaigns ticked donation boxes by hand, so move them out of prosperityIndex to keep the total unchanged.
+    migrateDonationProsperity() {
+        if (this.autoDonationProsperity) {
+            return;
+        }
+
+        this.prosperityIndex = Math.max(1, (this.prosperityIndex || 1) - this.donationChecks);
+        this.autoDonationProsperity = true;
     }
 
     // Item designs, event decks and campaign sheet unlocks, sized per game by `decks` in games/<game>.json.

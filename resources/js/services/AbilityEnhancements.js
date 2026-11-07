@@ -137,7 +137,7 @@ export default {
                 return Infinity; // GH2e FAQ 4.1: no limit
             }
 
-            return SheetCalculations.methods.calculateProsperity(sheet.prosperityIndex, sheet.game);
+            return SheetCalculations.methods.calculateProsperity(sheet.effectiveProsperityIndex, sheet.game);
         },
         enhancedCardCount(sheet, characterId) {
             return Object.values(sheet.enhancements[characterId] || {}).filter(list => list.length).length;

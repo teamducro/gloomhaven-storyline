@@ -64,6 +64,50 @@ describe('Party', () => {
         cy.get('span').contains('015–021').prev().find('input').should('be.checked');
     });
 
+    it('It moves hand-ticked donation prosperity of older campaigns to the donation boxes', () => {
+        cy.visit('/tracker/#/party');
+        cy.window().then(win => {
+            const data = JSON.parse(win.localStorage.getItem(win.app.campaignId)) || {};
+            data.sheet = {donations: 200, prosperityIndex: 6};
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(data));
+        });
+        cy.reload();
+
+        ['p-2', 'p-3', 'p-4'].forEach(id => {
+            cy.get(`input#${id}`).should('be.checked').and('be.disabled');
+        });
+        ['p-5', 'p-6'].forEach(id => {
+            cy.get(`input#${id}`).should('be.checked').and('not.be.disabled');
+        });
+        cy.get('input#p-7').should('not.be.checked');
+    });
+
+    it('It checks donation prosperity automatically', () => {
+        cy.visit('/tracker/#/party');
+
+        cy.get('input[aria-labelledby="donations"]').clear().type('200{enter}');
+        ['p-2', 'p-3', 'p-4'].forEach(id => {
+            cy.get(`input#${id}`).should('be.checked').and('be.disabled');
+        });
+        cy.get('input#p-2').should('have.attr', 'title', 'Gained from donations');
+        cy.get('input#p-5').should('not.be.checked').and('not.be.disabled');
+        cy.get('span').contains('015–021').prev().find('input').should('not.be.checked');
+
+        // Manual boxes continue after the donation boxes
+        cy.get('input#p-5').click();
+        cy.get('input#p-6').should('not.be.checked');
+        cy.get('span').contains('015–021').prev().find('input').should('be.checked');
+
+        cy.get('input[aria-labelledby="donations"]').clear().type('250{enter}');
+        cy.get('input#p-5').should('be.checked').and('be.disabled');
+        cy.get('input#p-6').should('be.checked').and('not.be.disabled');
+
+        cy.reload();
+        cy.get('input#p-5').should('be.checked').and('be.disabled');
+        cy.get('input#p-6').should('be.checked').and('not.be.disabled');
+        cy.get('input#p-7').should('not.be.checked');
+    });
+
     it('It can roll back prosperity checkboxes', () => {
         cy.visit('/tracker/#/party');
 

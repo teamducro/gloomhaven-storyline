@@ -284,10 +284,10 @@ export default {
                 sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
             }
             else if (this.currentGame === Game.gh2) {
-                sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.prosperityIndex);
+                sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.effectiveProsperityIndex);
             }
             else {
-                sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
+                sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.effectiveProsperityIndex);
             }
 
             // Find items from base game.
@@ -309,7 +309,7 @@ export default {
                     otherGameHandler = (game => {
                         if (game !== this.currentGame) {
                             if (game === 'gh' && this.currentGame !== 'jotl') {
-                                const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
+                                const ghItems = this.calculateItemsGh([], this.sheet.effectiveProsperityIndex);
                                 items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
                             } else {
                                 // Add all items for games without prosperity.
