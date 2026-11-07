@@ -12,4 +12,5 @@ npm-debug.log
 .vscode
 /docs
 /plans
+/commands
 CLAUDE.local.md

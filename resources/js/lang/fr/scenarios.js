@@ -268,30 +268,56 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "La Cave Toxique"
+        "name": "La Cave Toxique",
+        "requirements": "Quête Personnelle « Novice de Xorn »"
     },
     "gh-53": {
         "name": "Le Sous-sol de la Crypte",
+        "requirements": "Quête Personnelle « Novice de Xorn »",
         "rewards": [
             "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
         ]
     },
     "gh-54": {
         "name": "Le Palais de Glace",
+        "requirements": "Quête Personnelle « Novice de Xorn », objet « Bâton de Xorn » équipé",
         "rewards": [
             "Immediately retire the Seeker of Xorn",
             "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
             "Open envelope {PH}"
         ]
     },
+    "gh-SoX1": {
+        "name": "Nobles’ Crypt",
+        "rewards": [
+            "+1 reputation",
+            "Add City Event SoX2 to the deck"
+        ]
+    },
+    "gh-SoX2": {
+        "name": "Flooded Crypt",
+        "rewards": [
+            "Add City Event SoX3 to the deck",
+            "Choose only one of the following: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) or “Wave Crest” (Item 111)"
+        ]
+    },
+    "gh-SoX3": {
+        "name": "Crypt of the Ancients",
+        "rewards": [
+            "50 collective gold",
+            "Add City Event SoX3 to the deck"
+        ]
+    },
     "gh-55": {
         "name": "Le fourré Brumeux",
+        "requirements": "Quête Personnelle « Reprendre la foret »",
         "rewards": [
             "10 collective gold"
         ]
     },
     "gh-56": {
         "name": "Le Bois du Bandit",
+        "requirements": "Quête Personnelle « Reprendre la foret »",
         "rewards": [
             "“Take Back the Trees” quest complete",
             "Open envelope {DS}",
@@ -301,12 +327,14 @@ export default {
     },
     "gh-57": {
         "name": "Enquête",
+        "requirements": "Quête Personnelle « Vengeance »",
         "rewards": [
             "+1 reputation"
         ]
     },
     "gh-58": {
         "name": "La Planque Ensanglantée",
+        "requirements": "Quête Personnelle « Vengeance »",
         "rewards": [
             "“Vengeance” quest complete",
             "Open envelope X",
@@ -314,10 +342,12 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Le Bosquet Oublié"
+        "name": "Le Bosquet Oublié",
+        "requirements": "Quête Personnelle « Trouver le Reméde »"
     },
     "gh-60": {
         "name": "Le laboratoire d'Alchimie",
+        "requirements": "Quête Personnelle « Trouver le Reméde »",
         "rewards": [
             "“Finding the Cure” quest complete",
             "Open envelope X",
@@ -325,10 +355,12 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Le Phare Evanescent"
+        "name": "Le Phare Evanescent",
+        "requirements": "Quête Personnelle « The Fall of Man »"
     },
     "gh-62": {
         "name": "La fosse des Ames",
+        "requirements": "Quête Personnelle « The Fall of Man »",
         "rewards": [
             "“The Fall of Man” quest complete",
             "Open envelope {NS}",
@@ -413,7 +445,8 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "La Ruche des Persécuteurs"
+        "name": "La Ruche des Persécuteurs",
+        "requirements": "Bravoure"
     },
     "gh-77": {
         "name": "Le Caveau des Secrets",
@@ -645,6 +678,7 @@ export default {
     },
     "fc-96": {
         "name": "Unexpected Visitors",
+        "requirements": "End of Gloom (Général) ACCOMPLI",
         "rewards": [
             "10 experience each",
             "Add City and Road Events 82 to their respective decks"
@@ -2265,7 +2299,7 @@ export default {
         "rewards": [
             "+2 reputation",
             "+1 prosperity",
-            "Gain “Stun Powder” (Item 21)"
+            "Gain “Stun Powder” (Item gh-21)"
         ]
     },
     "cs-7": {
@@ -2292,8 +2326,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "Gain “Minor Mana Potion” (Item 12)",
-            "Gain “Minor Healing Potion” (Item 20)"
+            "Gain “Minor Healing Potion” (Item gh-12)",
+            "Gain “Minor Mana Potion” (Item gh-20)"
         ]
     },
     "cs-11": {
@@ -2307,13 +2341,13 @@ export default {
         "rewards": [
             "Gain “Bulkwark Banner” (Item 85)",
             "+1 prosperity",
-            "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\\nIf there are non of these available in the shop, gain 20 gold instead"
+            "Each character gains one of the following: “Major Stamina Potion” (Item gh-34), “Major Power Potion” (Item gh-41), “Major Mana Potion” (Item gh-48)\\nIf there are non of these available in the shop, gain 20 gold instead"
         ]
     },
     "cs-14": {
         "name": "Cultist Cave",
         "rewards": [
-            "Gain “Remote Beetle” (Item 86)",
+            "Gain “Remote Beetle” (Item 88)",
             "15 experience each"
         ]
     },
@@ -2342,7 +2376,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "Gain “Major Mana Potion” (Item 48)"
+            "Gain “Major Mana Potion” (Item gh-48)"
         ]
     },
     "cs-20": {
@@ -2356,7 +2390,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "Gain “Magma Waders” (Item 99)"
+            "Gain “Magma Waders” (Item gh-99)"
         ]
     },
     "cs-22": {
@@ -2433,13 +2467,15 @@ export default {
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Quête Personnelle « Protect and Serve »",
         "rewards": [
-            "Gain “Blazing Boots” (Item 87)",
+            "Gain “Blazing Boots” (Item 90)",
             "+1 reputation"
         ]
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Quête Personnelle « Protect and Serve »",
         "rewards": [
             "Unlock Envelope {BM}",
             "+2 reputation",
@@ -2447,10 +2483,12 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Quête Personnelle « Bandit Banisher »"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Quête Personnelle « Bandit Banisher »",
         "rewards": [
             "Unlock Envelope {CG}",
             "10 gold each"
@@ -2458,18 +2496,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Quête Personnelle « Natural Selection »",
         "rewards": [
             "Gain one random “Stone” item (Item 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Quête Personnelle « Natural Selection »",
         "rewards": [
             "Unlock Envelope {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Quête Personnelle « An Adder Divides »",
         "rewards": [
             "10 experience each",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -2657,12 +2698,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Quête Personnelle « At All Costs »",
         "rewards": [
             "“Rockspine Bulwark” (Item AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Quête Personnelle « The Weight of Failure »",
         "rewards": [
             "“Ghostshimmer Honey” (Item AA02)"
         ]
@@ -2675,6 +2718,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Quête Personnelle « Ingenious Inventor » et objet « Power Modulator » équipé",
         "rewards": [
             [
                 "“Ingenious Inventor” quest complete",
@@ -2700,6 +2744,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Quête Personnelle « Scrap Diver »",
         "rewards": [
             "“Scrap Diver” quest complete",
             "Open envelope {QA}",
@@ -2714,10 +2759,12 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Quête Personnelle « Brutal Enforcer »"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Quête Personnelle « Brutal Enforcer »",
         "rewards": [
             "“Brutal Enforcer” quest complete",
             "Open Envelope {RM}",
@@ -2725,10 +2772,12 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Quête Personnelle « Apex Predator »"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Quête Personnelle « Apex Predator »",
         "rewards": [
             "“Apex Predator” quest complete",
             "Open Envelope {RM}",
@@ -2741,11 +2790,11 @@ export default {
         "rewards": [
             [
                 "40 collective gold",
-                "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                "“Studded Leather” design (Item gh-30) OR “Boots of Dashing” design (Item gh-36)"
             ],
             [
                 "2 ✓ each",
-                "“Lucky Eye” design (Item 063)"
+                "“Lucky Eye” design (Item gh-63)"
             ]
         ]
     },
@@ -2759,6 +2808,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Aucun Ruinmaw dans la compagnie",
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)"

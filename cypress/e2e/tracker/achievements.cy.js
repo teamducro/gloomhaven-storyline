@@ -106,6 +106,21 @@ describe('Achievements', () => {
         });
     });
 
+    it('It lists scenarios requiring an achievement apart from those requiring it to be incomplete', () => {
+        // Given The Merchant Flees is gained from scenario 8
+        cy.visit('/tracker/?groups=CR_GCRM&states=1_c-2_c-3_c-4_i-7_c-8_c-9_b-13_i-14_c-16_c-18_i-20_c-24_c-25_i-28_r-30_c-32_c-33_i-40_r');
+        cy.visit('/tracker/#/achievements');
+
+        // When opening the achievement
+        cy.get('#global-achievements li').contains('The Merchant Flees').click();
+
+        // Then scenarios 7 and 20 require it, while 3 and 9 require it to be incomplete
+        cy.contains('h2', 'Required by:').should('contain', '7').and('contain', '20')
+            .and('not.contain', '3').and('not.contain', '9');
+        cy.contains('h2', 'Blocks:').should('contain', '3').and('contain', '9')
+            .and('not.contain', '7').and('not.contain', '20');
+    });
+
     it('It can search for manual achievements', () => {
         cy.visit('/tracker/#/achievements');
 
@@ -117,6 +132,58 @@ describe('Achievements', () => {
         // And it unlocks the required scenario
         cy.visit('/tracker/#/story');
         utilities.isNodeIncomplete(74);
+    });
+
+    describe('Into the Forest (Frosthaven)', () => {
+        beforeEach(() => {
+            utilities.enableGame('fh');
+            utilities.switchGame('fh');
+        });
+
+        it('It does not unlock the side scenarios that require it when it is gained', () => {
+            cy.visit('/tracker/#/achievements');
+
+            cy.get('button').contains('add').click();
+            cy.get('input[name=achievement-to-add]').type('into the');
+            cy.get('li').contains('Into the Forest').click();
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).true;
+            });
+            utilities.scenarios().then((scenarios) => {
+                [69, 119, 134].forEach((id) => {
+                    expect(scenarios.firstWhere('id', id).state).eq('hidden');
+                });
+            });
+        });
+
+        it('It is not gained or lost when side scenario 69 is unlocked and locked', () => {
+            cy.visit('/tracker/#/story');
+
+            utilities.incompleteScenario(69);
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).false;
+            });
+
+            // Reload to run the validators that regain missing manual achievements
+            cy.reload();
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).false;
+            });
+
+            cy.visit('/tracker/#/achievements');
+            cy.get('button').contains('add').click();
+            cy.get('input[name=achievement-to-add]').type('into the');
+            cy.get('li').contains('Into the Forest').click();
+
+            cy.visit('/tracker/#/story');
+            utilities.lockSideScenario(69);
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).true;
+            });
+        });
     });
 
     it('It can add the party achievements from Rift Event 14', () => {

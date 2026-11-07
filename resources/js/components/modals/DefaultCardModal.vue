@@ -16,9 +16,6 @@
                             </template>
                         </flip-card>
 
-                        <!-- push buttons under the flip card wit the same aspect ratio -->
-                        <webp :src="card.images[0]" class="invisible"></webp>
-
                     </div>
                 </div>
             </template>

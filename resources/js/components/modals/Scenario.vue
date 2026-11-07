@@ -76,6 +76,7 @@
                                  class="hidden ml-auto"
                                  :class="[scenario.is_side ? 'sm:block' : 'xs:block', scenario.solo ? 'w-12' : 'w-20']">
                                 <webp v-if="!scenario.solo" :src="scenario.image()"
+                                      :retina-webp="scenario.hasRetinaSticker()"
                                       :animate="true"
                                       :alt="$t(scenario.name)"/>
                                 <character-icon v-if="scenario.solo" class="inline-block"
@@ -100,9 +101,16 @@
                                     <requirements :conditions="scenario.required_by"
                                                  v-if="scenario.required_by.isNotEmpty()"
                                                  :scenarioState="scenario.state"></requirements>
+                                    <template v-else-if="$te(scenario.$tPrefix('requirements'))">
+                                        {{ $t(scenario.$tPrefix('requirements')) }}
+                                    </template>
                                     <component v-else v-bind:is="renderHtml(scenario.requirements)"></component>
                                 </div>
                             </div>
+                        </div>
+
+                        <div v-if="scenario.monsters.length" id="scenario-monsters" class="mt-2">
+                            {{ $t('Monsters') }}: {{ scenario.monsters.map(monster => $t('monsters.' + monster)).join(', ') }}
                         </div>
 
                         <div class="mt-4 mb-2"
@@ -270,6 +278,9 @@
                             </div>
                         </div>
                     </template>
+                    <a v-if="String(scenario.id).startsWith('SoX')" class="block mt-2 text-sm link" target="_blank" rel="noreferrer"
+                       href="https://boardgamegeek.com/thread/2220121/seeker-xorn-bonus-content">
+                        {{ $t('Fan-made bonus content by {author}', {author: 'Morthai'}) }}</a>
                     <blockquote v-if="scenario.game === 'gh' && (scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
                         class="relative py-2 px-4 text-base italic border-l-4 quote">
                         <a class="absolute w-full h-full top-0 left-0" target="_blank"
@@ -288,6 +299,7 @@
                     <div class="mx-auto w-20"
                          :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
                         <webp :src="scenario.image()"
+                              :retina-webp="scenario.hasRetinaSticker()"
                               :animate="true"
                               :alt="$t(scenario.name)"/>
                     </div>
@@ -511,7 +523,7 @@ export default {
             }
 
             if (this.scenario.solo) {
-                this.scenario.requirements = `<div class="flex items-center"><character-icon class="inline-block w-5 mr-2" :character="'${this.scenario.solo}'" :show-name="true"/> level 5</div>`
+                this.scenario.requirements = `<div class="flex items-center"><character-icon class="inline-block w-5 mr-2" :character="'${this.scenario.solo}'" :show-name="true"/> ${this.$t('Level')} 5</div>`
             }
 
             this.rerenderStateSelection();

@@ -120,7 +120,7 @@ The project is a Vue 3 app built with [Vite](https://vite.dev). There is no dev 
 Translations live in `resources/js/lang/{locale}/`, one file per topic; `en.js` only combines them.
 
 - Add new keys to the English topic file, e.g. `resources/js/lang/en/scenarios.js`.
-- run `npm run lang` to copy missing keys (in English) to the other locales, then translate them there.
+- Add the same keys (in English) to the other locales, then translate them there.
 
 *Tests*
 

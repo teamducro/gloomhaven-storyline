@@ -6,6 +6,7 @@ import ItemTextParser from "../services/ItemTextParser";
 import UsesTranslations from "./UsesTranslations";
 import {Requirement} from "./Requirement";
 import Versionable from "./Versionable";
+import {Game} from "./Game";
 
 class Scenario {
 
@@ -22,6 +23,7 @@ class Scenario {
         this.is_side = data.is_side || false;
         this.complexity = data.complexity || 0;
         this.solo = data.solo || null;
+        this.requires_event = data.requires_event || null;
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];
@@ -43,6 +45,7 @@ class Scenario {
         this.required_by = collect(data.required_by);
         this.blocks_on = collect(data.blocks_on);
         this.treasures = data.treasures || [];
+        this.monsters = data.monsters || [];
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
         this.loot = data.loot || {};
@@ -50,6 +53,7 @@ class Scenario {
         this.unlockedTreasures = [];
         this.achievements_from_treasures = collect(data.achievements_from_treasures);
         this._rewards = collect(data.rewards);
+        this.perk_reward = data.perk_reward || 0;
         this._achievements_awarded = collect(data.achievements_awarded);
         this.achievements_awarded_by_choice = collect(data.achievements_awarded_by_choice);
         this.achievements_lost = collect(data.achievements_lost);
@@ -212,6 +216,11 @@ class Scenario {
         return (this.required_by).some((condition) => {
             return (condition.complete || []).some((requirement) => Requirement.manuallyUnlock(requirement));
         });
+    }
+
+    // Games whose stickers also ship as {name}@2x.webp
+    hasRetinaSticker() {
+        return [Game.gh, Game.fh].includes(this.game);
     }
 
     image() {

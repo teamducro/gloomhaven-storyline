@@ -47,7 +47,7 @@
                 :sheet="sheet"
                 :loading="loading"
                 :threshold="0"
-                @change="store"/>
+                @change="prosperityChanged"/>
 
             <prosperity-section
                 ref="prosperity"
@@ -137,6 +137,8 @@
                 </selectable-list>
             </div>
 
+            <event-history :sheet="sheet" @change="store"/>
+
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Scenario level') }}</h2>
                 <scenario-level v-model:value="sheet.scenarioLevel" id="scenario-level"
@@ -205,7 +207,7 @@ export default {
     },
     computed: {
         prosperitySectionsReached() {
-            return collect(this.prosperitySections).filter((section, index) => this.sheet.prosperityIndex >= index).values().all();
+            return collect(this.prosperitySections).filter((section, index) => this.sheet.effectiveProsperityIndex >= index).values().all();
         },
         imbuementSectionsReached() {
             return collect(this.imbuementSections).filter((section, boxes) => this.sheet.imbuement >= boxes).values().all();
@@ -235,7 +237,7 @@ export default {
             this.campaignName = this.getCampaignName();
 
             this.isLocalCampaign = app.campaignId === 'local';
-            this.lastProsperityIndex = this.sheet.prosperityIndex;
+            this.lastProsperityIndex = this.sheet.effectiveProsperityIndex;
 
             await this.$nextTick();
 
@@ -275,9 +277,9 @@ export default {
         prosperityChanged() {
             // Only when crossing the box: the sections have no sheet checkbox to remember they were read.
             Object.entries(sections.prosperityEvents)
-                .filter(([box]) => this.lastProsperityIndex < box && this.sheet.prosperityIndex >= box)
+                .filter(([box]) => this.lastProsperityIndex < box && this.sheet.effectiveProsperityIndex >= box)
                 .forEach(([, events]) => this.sheet.addEvents(events));
-            this.lastProsperityIndex = this.sheet.prosperityIndex;
+            this.lastProsperityIndex = this.sheet.effectiveProsperityIndex;
 
             this.store();
         },

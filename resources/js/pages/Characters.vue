@@ -152,6 +152,7 @@
                                    v-model:perks="character.perks"
                                    v-model:masteries="character.masteries"
                                    :character="character"
+                                   :scenario-perks="scenarioPerks"
                                    @change="store"/>
 
                             <div class="flex mt-4 space-x-12">
@@ -351,6 +352,10 @@ export default {
         Game() {
             return Game
         },
+        scenarioPerks() {
+            return this.scenarioRepository.where((scenario) => scenario.isComplete())
+                .sum('perk_reward');
+        },
         isArchived() {
             // Reference sheet hash so the value is recalculated when the sheet is updated.
             this.sheetHash;
@@ -410,10 +415,10 @@ export default {
                     sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
                 }
                 else if (this.currentGame === Game.gh2) {
-                    sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.prosperityIndex);
+                    sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.effectiveProsperityIndex);
                 }
                 else {
-                    sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
+                    sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.effectiveProsperityIndex);
                 }
 
                 // Find items from base game.

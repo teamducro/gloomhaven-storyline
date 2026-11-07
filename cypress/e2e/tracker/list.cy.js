@@ -12,6 +12,12 @@ describe('Scenario list', () => {
         utilities.assertTableCount('scenarios', 113);
     });
 
+    it('It shows the 2x sticker in the list', () => {
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('#scenarios img[src$="/img/scenarios/gh/1@2x.webp"]').should('exist');
+    });
+
     it('It opens a scenario', () => {
         cy.visit('/tracker/#/scenarios');
 
@@ -75,6 +81,38 @@ describe('Scenario list', () => {
         cy.get('#scenarios').within(() => {
             cy.contains('#4').should('be.visible');
         });
+    });
+
+    it('It filters on monsters', () => {
+        cy.visit('/tracker?states=1_c-2_c');
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('button').contains('filter_list').click();
+        cy.get('input[name="monster-filter"]').type('bandit gu');
+        cy.get('li').contains('Bandit Guard').click();
+
+        // Starting class solo scenarios are visible too
+        utilities.assertTableCount('scenarios', 2);
+        cy.get('#scenarios').contains('#1 Black Barrow').should('be.visible');
+        cy.get('#scenarios').contains('Return to the Black Barrow').should('be.visible');
+
+        cy.get('input[name="monster-filter"]').clear().type('inox gu');
+        cy.get('li').contains('Inox Guard').click();
+
+        utilities.assertTableCount('scenarios', 3);
+        cy.get('#scenarios').contains('#3 Inox Encampment').should('be.visible');
+        cy.get('#scenarios').contains('#2 ').should('not.exist');
+
+        cy.get('span').contains('Clear filter').click();
+
+        utilities.assertTableCount('scenarios', 113);
+    });
+
+    it('It shows the monsters of a scenario', () => {
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('td').contains('#1 Black Barrow').click({ scrollBehavior: 'center' });
+        cy.get('#scenario-monsters').should('contain', 'Bandit Archer, Bandit Guard, Living Bones');
     });
 
     it('Only show scenarios from selected game', () => {

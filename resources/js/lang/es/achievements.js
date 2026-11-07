@@ -140,6 +140,15 @@ export default {
     "gh-PBB": {
         "name": "Mal negocio"
     },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
+    },
     "gh-PTPS": {
         "name": "El origen del veneno"
     },

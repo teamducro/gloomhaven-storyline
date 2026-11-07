@@ -44,9 +44,9 @@
             ],
             "monsters": [
                 "deep-terror",
-                "inox-archer",
                 "inox-guard",
-                "water-spirit"
+                "water-spirit",
+                "inox-archer"
             ]
         },
         {
@@ -72,8 +72,8 @@
             ],
             "monsters": [
                 "giant-viper",
-                "lurker",
-                "hydra-spirit"
+                "hydra-spirit",
+                "lurker"
             ]
         },
         {
@@ -101,8 +101,6 @@
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "monsters": [
-                "city-archer",
-                "city-guard",
                 "blood-ooze",
                 "flaming-drake",
                 "toxic-imp"
@@ -124,9 +122,9 @@
             "linked_from": [
                 4
             ],
-            "treasures": {
-                "45": "Gain one random “Stone” item (Item 94-100)"
-            },
+            "treasures": [
+                45
+            ],
             "rewards": [
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
@@ -134,10 +132,10 @@
                 "PCSOD"
             ],
             "monsters": [
-                "blood-ooze",
                 "earth-demon",
+                "toxic-imp",
                 "flaming-drake",
-                "toxic-imp"
+                "gelatinous-giant"
             ]
         },
         {
@@ -165,11 +163,10 @@
             "rewards": [
                 "+2 reputation",
                 "+1 prosperity",
-                "“Stun Powder” (Item 21)"
+                "“Stun Powder” (Item gh-21)"
             ],
             "monsters": [
                 "blood-ooze",
-                "flaming-drake",
                 "toxic-imp",
                 "water-spirit"
             ]
@@ -200,12 +197,8 @@
                 "PCSFM"
             ],
             "monsters": [
-                "cave-bear",
-                "forest-imp",
                 "giant-viper",
-                "hound",
-                "spitting-drake",
-                "rending-drake"
+                "hound"
             ]
         },
         {
@@ -262,9 +255,9 @@
             ],
             "monsters": [
                 "ancient-artillery",
-                "cave-bear",
                 "city-archer",
-                "city-guard"
+                "city-guard",
+                "cave-bear"
             ]
         },
         {
@@ -290,8 +283,8 @@
                 10
             ],
             "rewards": [
-                "“Minor Mana Potion” (Item 12)",
-                "“Minor Healing Potion” (Item 20)"
+                "“Minor Healing Potion” (Item gh-12)",
+                "“Minor Mana Potion” (Item gh-20)"
             ],
             "monsters": [
                 "black-imp",
@@ -315,10 +308,10 @@
                 9
             ],
             "monsters": [
-                "flame-demon",
                 "inox-archer",
                 "inox-guard",
                 "inox-shaman",
+                "flame-demon",
                 "night-demon"
             ]
         },
@@ -339,10 +332,10 @@
                 11
             ],
             "monsters": [
-                "flame-demon",
                 "giant-viper",
                 "rending-drake",
-                "spitting-drake"
+                "spitting-drake",
+                "flame-demon"
             ]
         },
         {
@@ -363,7 +356,7 @@
             ],
             "rewards": [
                 "+1 prosperity",
-                "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\nIf there are non of these available in the shop, gain 20 gold instead"
+                "Each character gains one of the following: “Major Stamina Potion” (Item gh-34), “Major Power Potion” (Item gh-41), “Major Mana Potion” (Item gh-48)\nIf there are non of these available in the shop, gain 20 gold instead"
             ],
             "monsters": [
                 "living-corpse",
@@ -390,14 +383,13 @@
                 9
             ],
             "rewards": [
-                "“Remote Beetle” (Item 86)",
+                "“Remote Beetle” (Item 88)",
                 "15 experience each"
             ],
             "monsters": [
-                "cultist",
                 "deep-terror",
                 "living-corpse",
-                "living-bones"
+                "cultist"
             ]
         },
         {
@@ -452,10 +444,11 @@
                 "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
             ],
             "monsters": [
-                "black-imp",
                 "flame-demon",
+                "sun-demon",
+                "black-imp",
                 "night-demon",
-                "sun-demon"
+                "apex-demon"
             ]
         },
         {
@@ -484,11 +477,11 @@
                 "+2 prosperity"
             ],
             "monsters": [
-                "earth-demon",
                 "flame-demon",
                 "frost-demon",
                 "savvas-icestorm",
-                "wind-demon"
+                "wind-demon",
+                "earth-demon"
             ]
         },
         {
@@ -516,8 +509,8 @@
                 "100 gold each. This money must immediately be spent on enhancements"
             ],
             "monsters": [
-                "black-imp",
                 "deep-terror",
+                "black-imp",
                 "harrower-infester",
                 "night-demon"
             ]
@@ -546,7 +539,7 @@
                 16
             ],
             "rewards": [
-                "“Major Mana Potion” (Item 48)"
+                "“Major Mana Potion” (Item gh-48)"
             ],
             "monsters": [
                 "earth-demon",
@@ -597,10 +590,9 @@
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
             "monsters": [
-                "the-cultist",
                 "deep-terror",
                 "living-spirit",
-                "living-bones"
+                "the-cultist"
             ]
         },
         {
@@ -627,11 +619,12 @@
                 36
             ],
             "rewards": [
-                "“Magma Waders” (Item 99)"
+                "“Magma Waders” (Item gh-99)"
             ],
             "monsters": [
                 "earth-demon",
-                "flame-demon"
+                "flame-demon",
+                "lavalite"
             ]
         },
         {
@@ -689,8 +682,8 @@
             ],
             "monsters": [
                 "frozen-cadaver",
-                "hail-demon",
-                "harrower-icecrawlers"
+                "harrower-icecrawlers",
+                "hail-demon"
             ]
         },
         {
@@ -721,8 +714,8 @@
             ],
             "monsters": [
                 "frozen-cadaver",
-                "hail-demon",
-                "harrower-icecrawlers"
+                "harrower-icecrawlers",
+                "hail-demon"
             ]
         },
         {
@@ -747,11 +740,11 @@
                 "Add Road Event 57 to the deck"
             ],
             "monsters": [
-                "forest-imp",
                 "giant-viper",
-                "lurker",
                 "spitting-drake",
-                "sun-demon"
+                "sun-demon",
+                "lurker",
+                "forest-imp"
             ]
         },
         {
@@ -785,9 +778,9 @@
                 "1 ✓ each"
             ],
             "monsters": [
-                "frozen-cadaver",
                 "hail-demon",
-                "harrower-icecrawlers"
+                "harrower-icecrawlers",
+                "frozen-cadaver"
             ]
         },
         {
@@ -813,7 +806,8 @@
             "monsters": [
                 "frost-demon",
                 "stone-golem",
-                "wind-demon"
+                "wind-demon",
+                "savvas-icebound"
             ]
         },
         {
@@ -840,9 +834,9 @@
                 "1 ✓ each"
             ],
             "monsters": [
-                "cultist",
                 "living-bones",
-                "ooze"
+                "ooze",
+                "cultist"
             ]
         },
         {
@@ -866,7 +860,7 @@
                 3
             ],
             "monsters": [
-                "living-bones",
+                "bone-archer",
                 "living-corpse",
                 "living-spirit"
             ]
@@ -910,9 +904,11 @@
                 ]
             ],
             "monsters": [
-                "black-imp",
                 "living-corpse",
-                "stone-golem"
+                "stone-golem",
+                "black-imp",
+                "shadow-demon",
+                "twin-corpse"
             ]
         },
         {
@@ -933,10 +929,11 @@
                 "1 ✓ each"
             ],
             "monsters": [
+                "rending-drake",
+                "spitting-drake",
                 "harrower-infester",
                 "living-spirit",
-                "rending-drake",
-                "spitting-drake"
+                "eternal-demon"
             ]
         },
         {
@@ -958,12 +955,12 @@
                 "Password “Water Hydra”"
             ],
             "monsters": [
-                "ancient-artillery",
+                "living-bones",
                 "inox-archer",
                 "inox-bodyguard",
                 "inox-guard",
-                "living-bones",
-                "jekserah"
+                "ancient-artillery",
+                "selandre"
             ]
         },
         {
@@ -983,7 +980,7 @@
                 34
             ],
             "rewards": [
-                "“Blazing Boots” (Item 87)",
+                "“Blazing Boots” (Item 90)",
                 "+1 reputation"
             ],
             "cards": [
@@ -991,9 +988,10 @@
             ],
             "monsters": [
                 "inox-archer",
-                "inox-bodyguard",
                 "inox-guard",
-                "inox-shaman"
+                "inox-shaman",
+                "hound",
+                "inox-bodyguard"
             ]
         },
         {
@@ -1023,9 +1021,9 @@
                 "Q-330"
             ],
             "monsters": [
-                "hound",
                 "inox-archer",
                 "inox-guard",
+                "hound",
                 "inox-shaman"
             ]
         },
@@ -1088,7 +1086,9 @@
             "monsters": [
                 "bandit-archer",
                 "bandit-guard",
-                "hound"
+                "terrible-two-archer",
+                "hound",
+                "terrible-two-guard"
             ]
         },
         {
@@ -1118,10 +1118,10 @@
             ],
             "monsters": [
                 "flame-demon",
-                "frost-demon",
-                "night-demon",
                 "sun-demon",
-                "vermling-scout"
+                "vermling-scout",
+                "frost-demon",
+                "night-demon"
             ]
         },
         {
@@ -1150,9 +1150,9 @@
             ],
             "monsters": [
                 "black-imp",
+                "stone-golem",
                 "living-spirit",
-                "night-demon",
-                "stone-golem"
+                "night-demon"
             ]
         },
         {
@@ -1181,7 +1181,7 @@
             ],
             "monsters": [
                 "earth-demon",
-                "giant-viper"
+                "ghost-viper"
             ]
         },
         {
@@ -1207,7 +1207,8 @@
             ],
             "monsters": [
                 "rending-drake",
-                "spitting-drake"
+                "spitting-drake",
+                "drake-porter"
             ]
         },
         {
@@ -1230,7 +1231,8 @@
             ],
             "monsters": [
                 "bandit-archer",
-                "bandit-guard"
+                "bandit-guard",
+                "rogue-hollowpact"
             ]
         },
         {
@@ -1260,8 +1262,11 @@
             ],
             "monsters": [
                 "cave-bear",
+                "goring-grizzly",
                 "giant-viper",
-                "hound"
+                "king-cobra",
+                "hound",
+                "sly-wolf"
             ]
         },
         {
@@ -1276,9 +1281,9 @@
                 "cs/2/48"
             ],
             "chapter_id": 103,
-            "treasures": {
-                "23": "“Trophy Helmet” (Item 12)"
-            },
+            "treasures": [
+                23
+            ],
             "rewards": [
                 "+1 prosperity",
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -1344,8 +1349,8 @@
             ],
             "monsters": [
                 "black-imp",
-                "land-leviathan",
-                "forest-imp"
+                "forest-imp",
+                "land-leviathan"
             ]
         },
         {
@@ -1367,10 +1372,10 @@
                 "R-10"
             ],
             "monsters": [
-                "cave-bear",
                 "hound",
                 "vermling-scout",
-                "vermling-shaman"
+                "vermling-shaman",
+                "cave-bear"
             ]
         },
         {
@@ -1422,10 +1427,10 @@
             ],
             "monsters": [
                 "giant-viper",
-                "inox-archer",
                 "inox-guard",
-                "inox-shaman",
-                "spitting-drake"
+                "spitting-drake",
+                "inox-archer",
+                "inox-shaman"
             ]
         },
         {
@@ -1454,12 +1459,10 @@
                 "C-42"
             ],
             "monsters": [
-                "city-archer",
-                "city-guard",
                 "inox-archer",
-                "inox-bodyguard",
                 "inox-guard",
-                "inox-shaman"
+                "inox-shaman",
+                "inox-bodyguard"
             ]
         },
         {
@@ -1489,12 +1492,10 @@
                 "C-42"
             ],
             "monsters": [
-                "captain-of-the-guard",
                 "cave-bear",
                 "city-archer",
                 "city-guard",
-                "inox-archer",
-                "inox-guard"
+                "captain-of-the-guard"
             ]
         },
         {
@@ -1518,8 +1519,8 @@
             ],
             "monsters": [
                 "flame-demon",
-                "sun-demon",
                 "vermling-scout",
+                "sun-demon",
                 "vermling-shaman"
             ]
         },
@@ -1540,10 +1541,10 @@
                 "“Drakescale Shield” (Item 37)"
             ],
             "monsters": [
-                "black-imp",
-                "living-corpse",
                 "ooze",
-                "spitting-drake"
+                "spitting-drake",
+                "black-imp",
+                "living-corpse"
             ]
         },
         {
@@ -1563,9 +1564,10 @@
                 "5 gold each"
             ],
             "monsters": [
-                "lurker",
                 "spitting-drake",
-                "water-spirit"
+                "water-spirit",
+                "lurker",
+                "morphling"
             ]
         },
         {
@@ -1580,16 +1582,20 @@
                 "cs/2/62"
             ],
             "chapter_id": 104,
-            "treasures": {
-                "50": "“Bottled Moonlight” (Item 18)"
-            },
+            "treasures": [
+                50
+            ],
             "rewards": [
                 "+1 reputation",
                 "30 gold each"
             ],
             "monsters": [
+                "dark-lurker",
                 "hanging-snake",
-                "dark-lurker"
+                "terror-drone",
+                "undead-archer",
+                "black-bear",
+                "cave-imp"
             ]
         },
         {
@@ -1618,9 +1624,8 @@
                 "bandit-archer",
                 "earth-demon",
                 "harrower-infester",
-                "living-bones",
                 "living-corpse",
-                "stone-golem"
+                "tomb-protector"
             ]
         },
         {
@@ -1661,12 +1666,12 @@
                 "“Test Tube” (Item 48)"
             ],
             "monsters": [
-                "black-imp",
                 "deep-terror",
-                "hound",
-                "lurker",
                 "rending-drake",
-                "spitting-drake"
+                "spitting-drake",
+                "lurker",
+                "black-imp",
+                "hound"
             ]
         },
         {
@@ -1705,11 +1710,11 @@
                 "“Nature Armlets” (Item 47)"
             ],
             "monsters": [
-                "cave-bear",
                 "giant-viper",
-                "hound",
                 "vermling-scout",
-                "vermling-shaman"
+                "hound",
+                "vermling-shaman",
+                "cave-bear"
             ]
         },
         {
@@ -1733,9 +1738,11 @@
                 "“Flaming Armor” (Item 51)"
             ],
             "monsters": [
+                "earth-demon",
                 "flame-demon",
-                "rending-drake-cs",
                 "savvas-lavaflow",
+                "rending-drake",
+                "drakefiend",
                 "spitting-drake"
             ]
         },
@@ -1756,9 +1763,9 @@
             ],
             "monsters": [
                 "ancient-artillery",
+                "rending-drake",
                 "black-imp",
                 "lurker",
-                "rending-drake",
                 "stone-golem"
             ]
         },
@@ -1779,10 +1786,11 @@
                 "“Cleansed Voidheart” (Item 57)"
             ],
             "monsters": [
-                "aesther-ashblade",
                 "cave-bear",
                 "forest-imp",
-                "vermling-shaman"
+                "vermling-shaman",
+                "your-shadow",
+                "aesther-ashblade"
             ]
         },
         {
@@ -1803,7 +1811,6 @@
             "monsters": [
                 "cave-bear",
                 "giant-viper",
-                "inox-archer",
                 "living-corpse",
                 "living-spirit",
                 "stone-golem"
@@ -1866,12 +1873,10 @@
                 "“Moonleather Boots” (Item 40)"
             ],
             "monsters": [
-                "city-archer",
-                "city-guard",
-                "earth-demon",
-                "harrower-infester",
                 "night-demon",
-                "sun-demon"
+                "earth-demon",
+                "sun-demon",
+                "harrower-infester"
             ]
         },
         {
@@ -1890,12 +1895,12 @@
                 "“Rockspine Bulwark” (Item AA01)"
             ],
             "monsters": [
-                "harrower-aegis",
-                "hound",
                 "bandit-archer",
                 "bandit-guard",
+                "frost-demon",
+                "hound",
                 "wind-demon",
-                "frost-demon"
+                "the-gilded-one"
             ]
         },
         {
@@ -1917,8 +1922,7 @@
                 "giant-viper",
                 "ravenous-gharial",
                 "black-imp",
-                "harrower-aegis",
-                "harrower-infester"
+                "the-echo"
             ]
         },
         {
@@ -1936,12 +1940,12 @@
                 "“Steelsilk Spinneret” (Item AA03)"
             ],
             "monsters": [
+                "earth-demon",
                 "flame-demon",
                 "frost-demon",
-                "wind-demon",
-                "earth-demon",
                 "night-demon",
-                "sun-demon"
+                "sun-demon",
+                "wind-demon"
             ]
         },
         {
@@ -1981,8 +1985,11 @@
             ],
             "prompt": "capstoneTest",
             "monsters": [
+                "clockwork-railcaster",
                 "clockwork-soldier",
-                "clockwork-railcaster"
+                "clockwork-ravager",
+                "clockwork-bombard",
+                "clockwork-guardian"
             ]
         },
         {
@@ -2006,8 +2013,9 @@
             ],
             "monsters": [
                 "giant-viper",
-                "living-bones",
                 "ooze",
+                "steel-construct",
+                "living-bones",
                 "living-corpse",
                 "living-spirit"
             ]
@@ -2027,8 +2035,10 @@
                 "“Auscudee of the Makers” (Item QA06)"
             ],
             "monsters": [
+                "clockwork-railcaster",
                 "clockwork-soldier",
-                "clockwork-railcaster"
+                "clockwork-devastator",
+                "stone-golem"
             ]
         },
         {
@@ -2044,10 +2054,11 @@
             "requirements": "“Brutal Enforcer” personal quest",
             "chapter_id": 14,
             "monsters": [
-                "bandit-guard-hired-muscle",
-                "bandit-archer-hired-muscle",
+                "bandit-archer",
+                "bandit-guard",
+                "inox-archer",
                 "inox-guard",
-                "inox-archer"
+                "living-wall"
             ]
         },
         {
@@ -2069,11 +2080,11 @@
             ],
             "monsters": [
                 "bandit-guard",
-                "bandit-archer",
                 "inox-guard",
+                "bandit-archer",
                 "inox-archer",
-                "inox-bloodguard",
-                "goremyon-shatter-mind"
+                "goremyon-shatter-mind",
+                "inox-bloodguard"
             ]
         },
         {
@@ -2089,10 +2100,10 @@
             "requirements": "“Apex Predator” personal quest",
             "chapter_id": 14,
             "monsters": [
-                "hound",
                 "giant-viper",
-                "cave-bear",
                 "ooze",
+                "cave-bear",
+                "hound",
                 "gnashing-drake"
             ]
         },
@@ -2115,10 +2126,10 @@
                 "“Terrorscale Crossblades” design (Item RM04)"
             ],
             "monsters": [
-                "terrorscale-drake",
                 "gnashing-drake",
-                "spitting-drake",
-                "rending-drake"
+                "terrorscale-drake",
+                "rending-drake",
+                "spitting-drake"
             ]
         },
         {
@@ -2149,17 +2160,19 @@
             "rewards": [
                 [
                     "40 collective gold",
-                    "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                    "“Studded Leather” design (Item gh-30) OR “Boots of Dashing” design (Item gh-36)"
                 ],
                 [
                     "2 ✓ each",
-                    "“Lucky Eye” design (Item 063)"
+                    "“Lucky Eye” design (Item gh-63)"
                 ]
             ],
             "prompt": "unseenPlight",
             "monsters": [
                 "ravenous-gharial",
-                "black-imp"
+                "black-imp",
+                "carrion-scavenger",
+                "guttermaw"
             ]
         },
         {
@@ -2180,10 +2193,9 @@
             ],
             "monsters": [
                 "gnashing-drake",
-                "spitting-drake",
                 "rending-drake",
-                "vermling-scout-ally",
-                "vermling-shaman-ally"
+                "spitting-drake",
+                "brood-mother"
             ]
         },
         {
@@ -2204,11 +2216,11 @@
                 "“Savage Cuirass” design (Item RM06)"
             ],
             "monsters": [
-                "hound",
                 "ruinmaw",
-                "vermling-shaman",
                 "vermling-scout",
-                "giant-viper"
+                "vermling-shaman",
+                "giant-viper",
+                "hound"
             ]
         }
     ],
@@ -4141,6 +4153,7 @@
             "name": "razorweb puppetry",
             "character_id": "AA",
             "level": 1.5,
+            "milestone": true,
             "initiative": "39"
         },
         {
@@ -4389,6 +4402,7 @@
             "name": "creative sparks",
             "character_id": "BK",
             "level": 1.5,
+            "milestone": true,
             "initiative": "40"
         },
         {
@@ -4621,6 +4635,7 @@
             "name": "pummeling chain",
             "character_id": "BM",
             "level": 1.5,
+            "milestone": true,
             "initiative": "17"
         },
         {
@@ -4861,6 +4876,7 @@
             "name": "rope pit",
             "character_id": "CG",
             "level": 1.5,
+            "milestone": true,
             "initiative": "32"
         },
         {
@@ -5101,6 +5117,7 @@
             "name": "call of the wild",
             "character_id": "CT",
             "level": 1.5,
+            "milestone": true,
             "initiative": "10"
         },
         {
@@ -5341,6 +5358,7 @@
             "name": "improvised methods",
             "character_id": "FK",
             "level": 1.5,
+            "milestone": true,
             "initiative": "16"
         },
         {
@@ -5581,6 +5599,7 @@
             "name": "the void consumes",
             "character_id": "HO",
             "level": 1.5,
+            "milestone": true,
             "initiative": "35"
         },
         {
@@ -5893,6 +5912,7 @@
             "name": "uplifting ascension",
             "character_id": "HP",
             "level": 1.5,
+            "milestone": true,
             "initiative": "80"
         },
         {
@@ -6141,6 +6161,7 @@
             "name": "drawn into the light",
             "character_id": "LU",
             "level": 1.5,
+            "milestone": true,
             "initiative": "47"
         },
         {
@@ -6381,6 +6402,7 @@
             "name": "giant slayer",
             "character_id": "MF",
             "level": 1.5,
+            "milestone": true,
             "initiative": "22"
         },
         {
@@ -6613,6 +6635,7 @@
             "name": "adaptive engineering",
             "character_id": "QA",
             "level": 1.5,
+            "milestone": true,
             "initiative": "75"
         },
         {
@@ -6861,6 +6884,7 @@
             "name": "blood rite",
             "character_id": "RM",
             "level": 1.5,
+            "milestone": true,
             "initiative": "67"
         },
         {
@@ -7101,6 +7125,7 @@
             "name": "terror of the deep",
             "character_id": "SP",
             "level": 1.5,
+            "milestone": true,
             "initiative": "33"
         },
         {
@@ -7341,6 +7366,7 @@
             "name": "deflection",
             "character_id": "ST",
             "level": 1.5,
+            "milestone": true,
             "initiative": "46"
         }
     ],
@@ -7963,7 +7989,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Gain “Poison Dagger” (Item 011). You may carry one additional {ONE-HAND} item with “Dagger” in its name."
+                    "desc": "Gain “Poison Dagger” (Item gh-11). You may carry one additional {ONE-HAND} item with “Dagger” in its name."
                 },
                 {
                     "count": 1,

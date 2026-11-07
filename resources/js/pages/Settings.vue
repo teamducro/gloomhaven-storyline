@@ -41,22 +41,61 @@
                 <span>{{ $t('Danger zone!') }}</span>
             </h1>
 
-            <button @click="$bus.$emit('open-reset-modal')" type="button"
-                    class="mt-4 mb-6 mdc-button mdc-button--raised">
-                <span class="mdc-button__ripple"></span>
-                <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
-                <span class="mdc-button__label">{{ $t('Reset campaign') }}</span>
-            </button>
+            <div class="flex flex-wrap items-start gap-4 mt-4 mb-6">
+                <button @click="$bus.$emit('open-reset-modal')" type="button"
+                        class="mdc-button mdc-button--raised">
+                    <span class="mdc-button__ripple"></span>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                    <span class="mdc-button__label">{{ $t('Reset campaign') }}</span>
+                </button>
+
+                <button v-if="canDelete" @click="confirmDelete" type="button" data-test="delete-campaign"
+                        class="mdc-button mdc-button--raised">
+                    <span class="mdc-button__ripple"></span>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
+                    <span class="mdc-button__label">{{ $t('Delete permanently') }}</span>
+                </button>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import ApiStoryRepository from "../apiRepositories/StoryRepository";
+import Confirm from "../mixins/Confirm";
+
 export default {
+    mixins: [Confirm],
     inject: ['appData'],
     data() {
-        return {}
+        return {
+            apiStoryRepository: new ApiStoryRepository,
+        }
     },
-    methods: {}
+    computed: {
+        canDelete() {
+            return !!app.user?.is_patron && !!this.appData.story && !this.appData.story.is_shared;
+        }
+    },
+    methods: {
+        confirmDelete() {
+            const story = this.appData.story;
+            this.confirm(
+                this.$t('Delete permanently'),
+                this.$t('delete-campaign-confirm', {name: story.name}),
+                () => this.destroy(story),
+                this.$t('delete-campaign-note')
+            );
+        },
+        async destroy(story) {
+            try {
+                await this.apiStoryRepository.destroy(story);
+            } catch (e) {
+                this.$bus.$emit('toast', this.$t('delete-campaign-failed'), false);
+                return;
+            }
+            this.$bus.$emit('campaign-selected', 'local');
+        }
+    }
 }
 </script>

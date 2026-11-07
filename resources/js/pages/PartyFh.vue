@@ -198,6 +198,8 @@
                 </selectable-list>
             </div>
 
+            <event-history :sheet="sheet" @change="store"/>
+
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Scenario level') }}</h2>
                 <scenario-level v-model:value="sheet.scenarioLevel" id="scenario-level"
@@ -224,13 +226,14 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
+import DrawsEventCards from "../mixins/DrawsEventCards";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import OverlayRepository from "../repositories/OverlayRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
 
 export default {
-    mixins: [GetCampaignName, SheetCalculations],
+    mixins: [GetCampaignName, SheetCalculations, DrawsEventCards],
     inject: ['appData'],
     data() {
         return {
@@ -300,13 +303,6 @@ export default {
 
             this.sheet.store();
             this.storySyncer.store();
-        },
-        draw(checkedItems, type) {
-            let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
-            if (id) {
-                const card = type + '-' + id;
-                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game, viaDraw: true});
-            }
         },
         openCard(id, type) {
             const card = type + '-' + id;

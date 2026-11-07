@@ -143,12 +143,14 @@ const vueApp = createApp({
         this.$bus.$on('campaign-selected', this.switchCampaign);
         this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
+        // Before awaiting Stripe: a blocked or slow Stripe must not keep the saved language from loading.
+        setInitialLanguage();
+
         vueApp.config.globalProperties.$stripe = await loadStripe(import.meta.env.MIX_STRIPE_KEY);
 
         this.$bus.$emit('open-donations');
 
         listenToCrtlS();
-        setInitialLanguage();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {

@@ -5,6 +5,7 @@ import CharacterRepository from "../repositories/CharacterRepository";
 import Versionable from "./Versionable";
 import GameData from "../services/GameData";
 import DeckFiller from "../services/DeckFiller";
+import SheetCalculations from "../services/SheetCalculations";
 
 class Sheet {
 
@@ -19,13 +20,19 @@ class Sheet {
         // Sheet fields
         this.reputation = data.reputation || 0;
         this.donations = data.donations || 0;
+        this.autoDonationProsperity = data.autoDonationProsperity;
         this.prosperityIndex = data.prosperityIndex || 1;
         this.city = {...data.city};
         this.road = {...data.road};
         this.rift = {...data.rift}; // FC
         this.notes = data.notes || '';
+        // Event deck card ids top to bottom, per card type.
+        this.deckOrder = {...data.deckOrder};
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
+
+        // Drawn event cards: [{card: 'C-12', choice: 'A', removed: false, date: ISO string}]
+        this.eventHistory = [...(data.eventHistory || [])];
 
         // GH2e
         this.factionReputation = {...data.factionReputation};
@@ -39,6 +46,8 @@ class Sheet {
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
         this.crossGameItems = {...data.crossGameItems};
+        // Item id => count removed from the game, e.g. sacrificed in a scenario.
+        this.removedItems = {...data.removedItems};
 
         // Characters
         this.xResult = data.xResult || '';
@@ -65,13 +74,16 @@ class Sheet {
             // Sheet fields
             reputation: 'reputation',
             donations: 'donations',
+            autoDonationProsperity: 'autoDonationProsperity',
             prosperityIndex: 'prosperityIndex',
             city: {'city': {}},
             road: {'road': {}},
             rift: {'rift': {}},
             notes: {'notes': ''},
+            deckOrder: {'deckOrder': {}},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
+            eventHistory: {'eventHistory': []},
             factionReputation: {'factionReputation': {}},
             inspiration: {'inspiration': 0},
             imbuement: {'imbuement': 0},
@@ -81,6 +93,7 @@ class Sheet {
             itemDesigns: {'itemDesigns': {}},
             crossGameItemsEnabled: 'crossGameItemsEnabled',
             crossGameItems: {'crossGameItems': {}},
+            removedItems: {'removedItems': {}},
 
             // Characters
             xResult: {'xResult': ''},
@@ -99,10 +112,31 @@ class Sheet {
         if (typeof app.campaignData[this.key()] === 'undefined') {
             this.new();
         }
+
+        this.migrateDonationProsperity();
     }
 
     new() {
         // Nothing to set up..
+    }
+
+    get donationChecks() {
+        return SheetCalculations.methods.calculateDonationProsperity(this.donations || 0, this.game);
+    }
+
+    // prosperityIndex only holds the manually ticked boxes.
+    get effectiveProsperityIndex() {
+        return this.prosperityIndex + this.donationChecks;
+    }
+
+    // Older campaigns ticked donation boxes by hand, so move them out of prosperityIndex to keep the total unchanged.
+    migrateDonationProsperity() {
+        if (this.autoDonationProsperity) {
+            return;
+        }
+
+        this.prosperityIndex = Math.max(1, (this.prosperityIndex || 1) - this.donationChecks);
+        this.autoDonationProsperity = true;
     }
 
     // Item designs, event decks and campaign sheet unlocks, sized per game by `decks` in games/<game>.json.
@@ -145,16 +179,28 @@ class Sheet {
         this.classEventsAdded[id] = [...added, moment];
     }
 
-    // Events as 'C-57' / 'R-21'.
-    addEvents(events) {
-        const decks = {C: 'city', R: 'road'};
+    // Events as 'C-57' / 'R-21'; bonus content uses string numbers like 'C-SoX1'.
+    // inDeck false only makes the event addable (unless it is already in the deck).
+    addEvents(events, inDeck = true) {
         events.forEach((event) => {
-            const [type, number] = event.split('-');
-            if (!decks[type]) {
-                throw new Error(`Unknown event type: ${event}`);
-            }
-            this[decks[type]][parseInt(number)] = true;
+            const [deck, number] = this.eventKey(event);
+            this[deck][number] = inDeck || this[deck][number] || false;
         });
+    }
+
+    // Bonus events only exist on the sheet once added, so this tells whether their content is in play.
+    hasEvent(event) {
+        const [deck, number] = this.eventKey(event);
+        return this[deck][number] !== undefined;
+    }
+
+    eventKey(event) {
+        const decks = {C: 'city', R: 'road'};
+        const [type, number] = event.split('-');
+        if (!decks[type]) {
+            throw new Error(`Unknown event type: ${event}`);
+        }
+        return [decks[type], isNaN(number) ? number : parseInt(number)];
     }
 
     fillRelations() {
@@ -242,7 +288,8 @@ class Sheet {
     valuesToStore() {
         let values = this.parentValuesToStore();
         values.itemDesigns = collect({...this.itemDesigns}).filter(v => v).all();
-        values.city = collect({...this.city}).filter(v => v).all();
+        // Bonus events (e.g. 'SoX1') aren't refilled by the deck spec, so they're kept once known, even when out of the deck.
+        values.city = collect({...this.city}).filter((v, id) => v || isNaN(id)).all();
         values.road = collect({...this.road}).filter(v => v).all();
         values.rift = collect({...this.rift}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
@@ -265,6 +312,9 @@ class Sheet {
         }
         if (!values.enhancementsEnabled) {
             delete values.enhancementsEnabled;
+        }
+        if (!Object.keys(values.deckOrder || {}).length) {
+            delete values.deckOrder;
         }
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;

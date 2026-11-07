@@ -2,8 +2,9 @@
     <div>
         <modal ref="modal" :title="item ? item.number : ''" :overflowHidden="animating">
             <template #content>
-                <div v-if="item" class="w-full h-full flex outline-hidden">
-                    <div class="flex-1 mr-3">
+                <!-- Mobile: controls go full width below the image and text. -->
+                <div v-if="item" class="w-full h-full grid grid-cols-2 sm:grid-rows-[auto_1fr] gap-x-3 outline-hidden">
+                    <div class="sm:row-span-2">
                         <div v-if="item.flip" class="relative cursor-pointer" style="max-width: 400px;" @click="flip">
                             <flip-card :flipped="flipped" class="w-full">
                                 <template v-slot:front>
@@ -13,9 +14,6 @@
                                     <webp :src="item.backImage" :alt="$t(item.name)" class="w-full rounded-lg sm:rounded-xl"/>
                                 </template>
                             </flip-card>
-
-                            <!-- push the card under the flip card to the same aspect ratio -->
-                            <webp :src="item.image" class="invisible"/>
 
                             <button type="button"
                                     class="mdc-icon-button mdc-button--raised material-icons p-2 bg-black2-50! rounded-full absolute top-0 left-0 m-2 z-5"
@@ -27,7 +25,7 @@
                               class="w-full rounded-lg sm:rounded-xl" style="max-width: 400px;"/>
                     </div>
 
-                    <div class="flex-1 space-y-2">
+                    <div class="space-y-2">
                         <p v-if="item._source">
                             <span class="relative w-6 h-4 inline-block">
                                 <span class="material-icons outlined absolute">info</span>
@@ -40,9 +38,9 @@
                             </span>
                             {{ $t(item.faq) }}
                         </p>
-
-                        <buy-item ref="buy-item" :item="item"/>
                     </div>
+
+                    <buy-item ref="buy-item" :item="item" class="max-sm:col-span-2"/>
                 </div>
             </template>
         </modal>
