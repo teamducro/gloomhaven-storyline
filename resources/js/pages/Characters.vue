@@ -361,9 +361,6 @@ export default {
             this.sheetHash;
             return this.selected in this.sheet.archivedCharacters;
         },
-        currentGame() {
-            return this.sheet.game === Game.fc ? Game.gh : this.sheet.game;
-        },
         playerIndex() {
             if (this.sheet.characters[this.character.uuid]) {
                 return Object.keys(this.sheet.characters).indexOf(this.character.uuid);
@@ -401,53 +398,8 @@ export default {
         },
         refreshItems() {
             if (this.character) {
-                let sheetItems;
                 this.sheetItems = {};
-
-                // Get all manual unlocked items from the sheet, prefixed with the current game.
-                const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
-
-                // Add auto unlocked items, based on prosperity level or completed scenarios.
-                if (this.currentGame === Game.jotl) {
-                    sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
-                }
-                else if (this.currentGame === Game.fh) {
-                    sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
-                }
-                else if (this.currentGame === Game.gh2) {
-                    sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.effectiveProsperityIndex);
-                }
-                else {
-                    sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.effectiveProsperityIndex);
-                }
-
-                // Find items from base game.
-                let items = this.itemRepository.findMany(sheetItems);
-
-                // Add items from other games, if enabled.
-                if (this.sheet.crossGameItemsEnabled) {
-                    const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
-                    let otherGameHandler;
-
-                    if (this.currentGame === Game.fh) {
-                        otherGameHandler = (otherGame => {
-                            const otherGameItems = collect(this.sheet.crossGameItems[otherGame]).filter().keys().all();
-                            const otherItems = this.prependGame(otherGame, otherGameItems);
-                            items = collect({...items.all(), ...this.itemRepository.findMany(otherItems).all()})
-                        });
-                    }
-                    else {
-                        otherGameHandler = (otherGame => {
-                            if (otherGame !== this.currentGame) {
-                                items = collect({...items.all(), ...this.itemRepository.fromGame(otherGame).all()});
-                            }
-                        });
-                    }
-
-                    otherGames.forEach(otherGameHandler);
-                }
-
-                this.items = items.all()
+                this.items = this.shopItems(this.sheet).all();
 
                 Object.keys(this.items).forEach(id => {
                     this.sheetItems[id] = !!this.character.items[id];
