@@ -12,7 +12,7 @@
                     Get the
                     most out of {{ $t(game) }}</h1>
                 <div class="w-full mb-4">
-                    <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
+                    <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded-sm shadow-sm"></div>
                 </div>
 
                 <two-column-content v-if="game === 'gh'">
@@ -32,7 +32,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open storyline
                             </a>
                         </p>
@@ -59,7 +59,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open storyline
                             </a>
                         </p>
@@ -97,7 +97,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open storyline
                             </a>
                         </p>
@@ -137,7 +137,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open storyline
                             </a>
                         </p>
@@ -176,7 +176,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl+'/#/party'"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open partysheet
                             </a>
                         </p>
@@ -209,7 +209,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl+'/#/items'"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open items
                             </a>
                         </p>
@@ -262,7 +262,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl+'/#/map'"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open map
                             </a>
                         </p>
@@ -291,7 +291,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl+'/#/map'"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open map
                             </a>
                         </p>
@@ -323,7 +323,7 @@
                         </p>
                         <p class="mb-4">
                             <a :href="appUrl+'/#/scenarios'"
-                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                               class="inline-block text-center rounded-lg border border-transparent bg-blue-600 px-4 py-2 leading-none font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                                 Open scenario list
                             </a>
                         </p>
@@ -347,10 +347,10 @@
                 <h1 class="w-full my-2 text-4xl lg:text-5xl lg:leading-tight font-bold leading-tight text-center text-gray-800">
                     Additional features</h1>
                 <div class="w-full mb-4">
-                    <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
+                    <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded-sm shadow-sm"></div>
                 </div>
 
-                <div class="w-full md:w-1/2 lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-6 flex flex-col grow shrink">
                     <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden">
                         <div class="w-full font-bold text-xl text-gray-800 px-6 flex items-center">
                             <i class="material-icons mr-2" aria-hidden="true">public</i>
@@ -379,7 +379,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/2 lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="w-full md:w-1/2 lg:w-1/3 p-6 flex flex-col grow shrink">
                     <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden">
                         <div class="w-full font-bold text-xl text-gray-800 px-6 flex items-center">
                             <i class="material-icons mr-2" aria-hidden="true">language</i>
@@ -408,7 +408,7 @@
                 </div>
 
 
-                <div class="w-full lg:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="w-full lg:w-1/3 p-6 flex flex-col grow shrink">
                     <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden">
                         <div class="w-full font-bold text-xl text-gray-800 px-6 flex items-center">
                             <i class="material-icons mr-2" aria-hidden="true">api</i>
@@ -449,7 +449,7 @@
             <h3 class="my-4 text-3xl leading-tight">An organized campaign synchronized with your party!</h3>
 
             <purchase class="inline-block">
-                <a class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                <a class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                     Buy shared campaign
                 </a>
             </purchase>

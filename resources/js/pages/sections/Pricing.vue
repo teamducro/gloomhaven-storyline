@@ -17,7 +17,7 @@
         <div class="mt-8 bg-gray-900 pb-12 lg:mt-12">
             <div class="relative z-0">
                 <div class="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
-                <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="relative lg:grid">
                         <div
                             class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 shadow-md">
@@ -44,7 +44,7 @@
                                         class="bg-gray-800 flex-1 flex flex-col justify-between border-t-2 border-gray-50 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                         <ul class="-mt-4">
                                             <li v-for="(isPro, feature) in features.free" class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
+                                                <div class="shrink-0">
                                                     <inline-svg src="icons/checkmark"></inline-svg>
                                                 </div>
                                                 <p class="ml-3 text-base leading-6 font-medium text-gray-400">
@@ -55,7 +55,7 @@
                                         <div class="mt-8">
                                             <div class="rounded-lg shadow-md">
                                                 <a :href="appUrl"
-                                                   class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring transition ease-in-out duration-150"
+                                                   class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-blue-600 hover:text-blue-500 focus:outline-hidden focus:ring-3 transition ease-in-out duration-150"
                                                    aria-describedby="tier-free">
                                                     Open storyline
                                                 </a>
@@ -101,7 +101,7 @@
                                     <ul class="-mt-4">
                                         <li v-for="(isPro, feature) in (game === 'fh' ? features.frosthaven : features.gloomhaven)"
                                             class="mt-4 flex items-start">
-                                            <div class="flex-shrink-0">
+                                            <div class="shrink-0">
                                                 <inline-svg src="icons/checkmark"></inline-svg>
                                             </div>
                                             <p class="ml-3 text-base leading-6 font-medium"
@@ -114,7 +114,7 @@
                                         <div class="rounded-lg shadow-md">
                                             <purchase :preselect="game">
                                                 <a href="#"
-                                                   class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring focus:ring-blue-700 transition ease-in-out duration-150"
+                                                   class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:ring-3 focus:ring-blue-700 transition ease-in-out duration-150"
                                                    :aria-describedby="'tier-'+$t(game)">
                                                     Buy shared campaign
                                                 </a>
@@ -154,7 +154,7 @@
                                         <ul class="-mt-4">
                                             <li v-for="(isPro, feature) in (game === 'fh' ? features.gloomhaven : features.frosthaven)"
                                                 class="mt-4 flex items-start">
-                                                <div class="flex-shrink-0">
+                                                <div class="shrink-0">
                                                     <inline-svg src="icons/checkmark"></inline-svg>
                                                 </div>
                                                 <p class="ml-3 text-base leading-6 font-medium"
@@ -167,7 +167,7 @@
                                             <div class="rounded-lg shadow-md">
                                                 <purchase :preselect="game === 'fh' ? 'gh' : 'fh'">
                                                     <a href="#"
-                                                       class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:ring focus:ring-blue-700 transition ease-in-out duration-150"
+                                                       class="block w-full text-center rounded-lg border border-transparent bg-blue-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:ring-3 focus:ring-blue-700 transition ease-in-out duration-150"
                                                        :aria-describedby="'tier-'+(game === 'fh' ? 'gloomhaven' : 'frosthaven')">
                                                         Buy shared campaign
                                                     </a>

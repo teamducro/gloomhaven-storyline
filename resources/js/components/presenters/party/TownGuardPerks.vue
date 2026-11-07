@@ -23,7 +23,7 @@
                                   :id="'perk-'+perkIndex+'-'+index"
                                   :checked="perks[perkIndex][index]"
                                   @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
-                            <label class="border border-white rounded-sm px-1 mx-1 flex items-center"
+                            <label class="border border-white rounded-xs px-1 mx-1 flex items-center"
                                 :for="'perk-'+perkIndex+'-'+index">
                                 <inline-svg class="w-3 mr-1" src="icons/book"/>
                                 <span>{{ perkDescription.sections[index] }}</span>

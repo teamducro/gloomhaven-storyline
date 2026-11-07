@@ -19,6 +19,7 @@
 
         <template v-if="story && !story.is_shared">
             <button @click.stop="takeSnapshot" type="button" class="mt-4 mb-6 mdc-button mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
                 <i class="material-icons mdc-button__icon" aria-hidden="true"
                    :class="{'animate-spin': takingSnapshot}">restore</i>
                 <span class="mdc-button__label">{{ $t('Create snapshot') }}</span>
@@ -28,11 +29,12 @@
                 {{ $t('snapshots.no-snapshots') }}.
             </p>
 
-            <ul class="mdc-list mdc-list--non-interactive">
+            <ul class="mdc-deprecated-list mdc-deprecated-list--non-interactive">
                 <li v-for="snapshot in story.snapshots.items" :key="snapshot.id"
-                    class="mdc-list-item min-h-14" tabindex="0"
+                    class="mdc-deprecated-list-item min-h-14" tabindex="0"
                     :class="{'bg-black2-25': snapshot.isCurrent(story)}">
-                    <div class="w-full flex items-center justify-between mdc-list-item__text">
+                    <span class="mdc-deprecated-list-item__ripple"></span>
+                    <div class="w-full flex items-center justify-between mdc-deprecated-list-item__text">
                         <div class="flex items-center" style="max-width:calc(100% - 120px)">
                             <span class="truncate">{{ snapshot.name }}</span>
                         </div>
@@ -44,6 +46,7 @@
                                 </span>
                             <button type="button" class="mdc-button mdc-button--raised mdc-button--circle my-2"
                                     @click.stop="restore(snapshot)">
+                                <span class="mdc-button__ripple"></span>
                                 <i class="material-icons mdc-button__icon" aria-hidden="true"
                                    :class="{'animate-spin': restoringSnapshot === snapshot.id}">restore</i>
                             </button>

@@ -16,11 +16,11 @@
                                     </div>
                                 </div>
                                 <inline-svg  v-else-if="typeof cell === 'string'" :src="'resources/'+cell"/>
-                                <a v-else-if="isUnlocked(cell)" @click.prevent="openItem(cell.item)" class="relative rounded overflow-hidden cursor-pointer" href="#">
-                                    <webp :src="cell.item.image" width="45" class="top-0 absolute max-w-none rounded item-thumbnail"
+                                <a v-else-if="isUnlocked(cell)" @click.prevent="openItem(cell.item)" class="relative rounded-sm overflow-hidden cursor-pointer" href="#">
+                                    <webp :src="cell.item.image" width="45" class="top-0 absolute max-w-none rounded-sm item-thumbnail"
                                           :alt="$t(cell.item.name)" :animate="true"/>
                                 </a>
-                                <a v-else @click.prevent="brew(cell)" class="cursor-pointer outline-gray rounded"
+                                <a v-else @click.prevent="brew(cell)" class="cursor-pointer outline-gray rounded-sm"
                                    :class="{'outline-green-700': canAfford(cell.item.cost)}" href="#"/>
                             </template>
                         </template>
@@ -53,10 +53,12 @@
                 </template>
                 <template v-slot:buttons>
                     <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                        <span class="mdc-button__ripple"></span>
                         <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                     </button>
                     <button type="button" class="mdc-button mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="yes"
                             :disabled="appData.read_only" @click="unlock">
+                        <span class="mdc-button__ripple"></span>
                         <span class="mdc-button__label">{{ $t('Confirm') }}</span>
                     </button>
                 </template>

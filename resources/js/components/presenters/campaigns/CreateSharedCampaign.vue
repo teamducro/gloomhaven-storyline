@@ -1,5 +1,6 @@
 <template>
     <button @click="create" type="button" class="mt-6 mdc-button mdc-button--raised">
+        <span class="mdc-button__ripple"></span>
         {{ $t('Add shared campaign') }}
     </button>
 </template>

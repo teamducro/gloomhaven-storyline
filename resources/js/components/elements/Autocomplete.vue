@@ -12,12 +12,13 @@
                 </label>
             </template>
 
-            <div class="mdc-list z-10 pt-0" :class="[width]">
-                <ul v-if="list.length" class="mdc-list pt-0" aria-hidden="true"
+            <div class="mdc-deprecated-list z-10 pt-0" :class="[width]">
+                <ul v-if="list.length" class="mdc-deprecated-list pt-0" aria-hidden="true"
                     aria-orientation="vertical" tabindex="-1">
                     <li v-for="(item, i) in items" :key="i"
-                        class="mdc-list-item" @click="select(item)">
-                        <span class="mdc-list-item__text w-full"
+                        class="mdc-deprecated-list-item" @click="select(item)">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text w-full"
                               :class="{'opacity-50': isDisabled(item)}">
                             <slot :name="slugify(item)">
                                 {{ item }}

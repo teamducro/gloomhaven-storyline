@@ -8,10 +8,12 @@
         </template>
         <template v-slot:buttons>
             <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                <span class="mdc-button__ripple"></span>
                 <span class="mdc-button__label">{{ $t('Cancel') }}</span>
             </button>
             <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                     @click="reset">
+                <span class="mdc-button__ripple"></span>
                 <span class="mdc-button__label text-red-700">{{ $t('Clear all') }}</span>
             </button>
         </template>

@@ -3,7 +3,7 @@
          :class="[stacked ? 'aspect-stacked-card' :'', group, animating ? 'overflow-y-hidden' : '']"
          @click="click">
         <webp :src="ability.image" :class="[stacked ? 'absolute' : '']"
-              class="rounded w-full aspect-card"/>
+              class="rounded-sm w-full aspect-card"/>
         <transition-group name="fadein" tag="div">
             <enhancement-sticker v-for="enhancement in visibleEnhancements" :key="enhancement.id"
                                   :id="enhancement.id" :type="enhancement.type"

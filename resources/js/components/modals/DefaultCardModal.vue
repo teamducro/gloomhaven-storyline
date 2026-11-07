@@ -3,7 +3,7 @@
         <modal ref="modal" :title="card ? ($t(card.translatedType) + ' ' + (card.label || '#' + card.id)) : ''" :max-width="'348px'"
                :overflowHidden="animating">
             <template #content>
-                <div v-if="card" class="w-full h-full flex flex-col outline-none">
+                <div v-if="card" class="w-full h-full flex flex-col outline-hidden">
                     <div class="relative w-full" style="max-width: 300px;">
                         <flip-card :flipped="flipped">
                             <template v-slot:front>

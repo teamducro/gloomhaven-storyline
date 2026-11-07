@@ -17,7 +17,7 @@
                                 <div v-if="level > 1" :class="'slot-'+level">
                                     <h3 class="text-white text-xl text-center">{{ level }}</h3>
                                     <div v-if="!character.abilityPerLevel[level]"
-                                         :class="'w-full h-9 border-dashed rounded border border-character-'+character.id.toLowerCase()">
+                                         :class="'w-full h-9 border-dashed rounded-sm border border-character-'+character.id.toLowerCase()">
 
                                     </div>
                                     <ability v-else :key="'selected-available-'+character.abilityPerLevel[level]"

@@ -14,12 +14,14 @@
             </template>
             <template v-slot:buttons>
                 <button class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
                 <button :disabled="!selected"
                         class="mdc-button mdc-dialog__button mdc-button--raised"
                         data-mdc-dialog-action="chosen"
                         @click="scenarioChosen(selected)">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Choose') }}</span>
                 </button>
             </template>

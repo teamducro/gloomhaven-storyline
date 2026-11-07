@@ -16,18 +16,20 @@
 
             <!-- Manage -->
             <button @click="manageAvailable" id="open-manage-abilities" :disabled="appData.read_only"
-                    class="mdc-button mdc-button--raised !bg-dark-gray2-75 mt-.5 ml-2 sm:ml-4">
-                <inline-svg src="icons/level" class="mdc-button__icon !flex flex-col transition-colors"
+                    class="mdc-button mdc-button--raised bg-dark-gray2-75! mt-0.5 ml-2 sm:ml-4">
+                <span class="mdc-button__ripple"></span>
+                <inline-svg src="icons/level" class="mdc-button__icon flex! flex-col transition-colors"
                             :class="[hasAvailableSlots ? 'animate-color-'+character.id.toLowerCase() : '']"
                             classes="w-full"/>
                 <span class="mdc-button__label">{{ $t('Manage') }}</span>
             </button>
 
             <!-- Sort dropdown -->
-            <div class="mr-12 sm:mr-0 ml-2 sm:ml-4 mt-.5">
+            <div class="mr-12 sm:mr-0 ml-2 sm:ml-4 mt-0.5">
                 <dropdown ref="ability-sort-dropdown" id="ability-sort-dropdown" align="right">
                     <template v-slot:trigger>
-                        <button class="mdc-button mdc-button--raised !bg-dark-gray2-75">
+                        <button class="mdc-button mdc-button--raised bg-dark-gray2-75!">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">sort</i>
                             <span class="flex w-full mdc-button__label">
                                 {{ prefs.sortBy === 'initiative' ? $t('Initiative') : $t('Level') }}
@@ -37,13 +39,14 @@
                         </button>
                     </template>
 
-                    <ul class="mdc-list overflow-y-auto" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
+                    <ul class="mdc-deprecated-list overflow-y-auto" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                         <template v-for="sort in sortByTypes">
                             <template v-for="direction in [true, false]">
-                                <li class="mdc-list-item cursor-pointer"
-                                    :class="{'mdc-list-item--activated': prefs.sortBy === sort && prefs.asc === direction}"
+                                <li class="mdc-deprecated-list-item cursor-pointer"
+                                    :class="{'mdc-deprecated-list-item--activated': prefs.sortBy === sort && prefs.asc === direction}"
                                     @click="applySort(sort, direction)">
-                                <span class="flex justify-between w-full mdc-list-item__text capitalize">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <span class="flex justify-between w-full mdc-deprecated-list-item__text capitalize">
                                     {{ $t(sort) }}
                                     <i class="ml-2 material-icons"
                                        v-text="direction ? 'arrow_upward' : 'arrow_downward'"/>

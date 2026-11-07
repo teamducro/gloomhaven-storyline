@@ -23,8 +23,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@reference "../../../sass/tailwind.css";
 .bedge {
-    @apply top-0 left-0 inline-flex relative items-center px-2 py-.5 text-sm font-medium leading-5 bg-green-100 text-green-800;
+    @apply top-0 left-0 inline-flex relative items-center px-2 py-0.5 text-sm font-medium leading-5 bg-green-100 text-green-800;
 
     &.expired {
         @apply bg-red-100 text-red-800;

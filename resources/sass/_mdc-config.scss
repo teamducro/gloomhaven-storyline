@@ -1,0 +1,15 @@
+// Configures MDC's Sass modules; must be the first @use in an entry, before any MDC component.
+@use "@material/theme/theme-color" with (
+    $primary: #3771E0,
+    $secondary: #018786,
+    $background: #000,
+    $surface: #111,
+    $error: #b00020,
+    $on-primary: #fff,
+    $on-secondary: #fff,
+    $on-surface: #fff,
+    $on-error: #fff,
+);
+@use "@material/typography" with ($font-family: inherit);
+@use "@material/dialog" with ($scrim-color: #000);
+@use "@material/drawer" with ($modal-scrim-color: #000);

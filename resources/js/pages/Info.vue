@@ -1,6 +1,6 @@
 <template>
     <div class="pt-12 pb-4 px-2 sm:px-4">
-        <div id="info" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-screen-sm">
+        <div id="info" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-(--breakpoint-sm)">
             <h1 class="mb-4 text-xl">{{ $t('about us.title') }}</h1>
 
             <p>{{ $t('about us.text') }}</p>
@@ -30,6 +30,7 @@
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Open source') }}</h2>
             <a href="https://github.com/teamducro/gloomhaven-storyline">
                 <button class="mdc-button mdc-button--raised">
+                    <span class="mdc-button__ripple"></span>
                     <inline-svg src="icons/github.svg" class="mdc-button__icon" :classes="['w-full','h-full']"/>
                     <span class="mdc-button__label">GitHub</span>
                 </button>

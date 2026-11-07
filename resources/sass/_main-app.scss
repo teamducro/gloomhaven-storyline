@@ -13,7 +13,7 @@ html, body {
 }
 
 h1, h2, h3 {
-    @apply font-title #{!important};
+    @apply font-title!;
 }
 
 #bg {
@@ -50,7 +50,7 @@ button:focus, .scenario {
     outline: none;
 }
 
-:not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item::before, :not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item::after {
+:not(.mdc-deprecated-list--non-interactive) > :not(.mdc-deprecated-list-item--disabled).mdc-deprecated-list-item .mdc-deprecated-list-item__ripple::before, :not(.mdc-deprecated-list--non-interactive) > :not(.mdc-deprecated-list-item--disabled).mdc-deprecated-list-item .mdc-deprecated-list-item__ripple::after {
     background-color: #000;
     z-index: -1;
 }

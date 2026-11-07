@@ -59,6 +59,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@reference "../../../sass/tailwind.css";
 button {
     @apply font-title text-white bg-black rounded-full h-8 w-8 leading-8 text-center relative border border-white;
 

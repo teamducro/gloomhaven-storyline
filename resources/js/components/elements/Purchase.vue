@@ -17,6 +17,7 @@
                         </td>
                         <td class="py-2 text-right">
                             <button type="button" class="mdc-button" @click.prevent="renewExisting(story)">
+                                <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-primary">{{ story.has_expired ? $t('Renew') : $t('Extend') }}</span>
                             </button>
                         </td>
@@ -25,10 +26,12 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white2-75">{{ $t('Cancel') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="purchaseNew">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-primary">{{ $t('Buy new campaign') }}</span>
                 </button>
             </template>
@@ -53,10 +56,12 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white2-75">{{ $t('Cancel') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="purchase" :disabled="!games.length">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-primary" :class="!games.length ? 'opacity-50' : ''">{{ $t('Purchase') }}</span>
                 </button>
             </template>
@@ -68,14 +73,17 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white2-75">{{ $t('Cancel') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="local">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white2-75">{{ $t('purchase.Go to local') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="purchaseExpand">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-primary">{{ $t('Purchase') +' '+ $t(gameData.accessGame(expand)) }}</span>
                 </button>
             </template>

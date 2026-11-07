@@ -3,6 +3,7 @@
         <template v-for="(card, index) in cards">
             <button class="mdc-button normal-case -ml-2"
                     @click="toggle(index)">
+                <span class="mdc-button__ripple"></span>
                 <span class="mdc-button__label font-title text-white">
                     {{ $t(card.translatedType) }} #{{ card.id }}
                 </span>

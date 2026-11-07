@@ -33,6 +33,7 @@
 </script>
 
 <style scoped lang="scss">
+@reference "../../../sass/tailwind.css";
     .ribbon {
         @apply absolute top-0 -mt-10;
         right: -2.5rem;

@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal" :title="item ? item.number : ''" :overflowHidden="animating">
             <template #content>
-                <div v-if="item" class="w-full h-full flex outline-none">
+                <div v-if="item" class="w-full h-full flex outline-hidden">
                     <div class="flex-1 mr-3">
                         <div v-if="item.flip" class="relative cursor-pointer" style="max-width: 400px;" @click="flip">
                             <flip-card :flipped="flipped" class="w-full">
@@ -18,7 +18,7 @@
                             <webp :src="item.image" class="invisible"/>
 
                             <button type="button"
-                                    class="mdc-icon-button mdc-button--raised material-icons p-2 !bg-black2-50 rounded-full absolute top-0 left-0 m-2 z-5"
+                                    class="mdc-icon-button mdc-button--raised material-icons p-2 bg-black2-50! rounded-full absolute top-0 left-0 m-2 z-5"
                                     @click.stop="flip">
                                 flip
                             </button>

@@ -22,6 +22,7 @@
             <div class="mx-4">{{ $t('or') }}</div>
 
             <button @click="random" :disabled="appData.read_only" class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
                 <i class="material-icons mdc-button__icon">launch</i>
                 <span class="mdc-button__label">{{ $t('Draw') }}</span>
             </button>
@@ -65,6 +66,7 @@
                 <div>
                     <button @click.prevent="remove" type="button" :disabled="appData.read_only"
                             class="my-4 mdc-button mdc-button--raised">
+                        <span class="mdc-button__ripple"></span>
                         <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                         <span class="mdc-button__label">{{ $t('Remove') + ' ' + quest.number }}</span>
                     </button>
@@ -79,6 +81,7 @@
         <div v-if="quest.id && sheet.hidePersonalQuests && hidden" class="flex">
             <button @click.prevent="hidden = !hidden" type="button"
                     class="mdc-button origin-left transform scale-75 mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
                 <i class="material-icons mdc-button__icon" aria-hidden="true">bolt</i>
                 <span class="mdc-button__label">{{ $t('Show personal quest') }}</span>
             </button>
@@ -211,6 +214,7 @@ export default {
 </script>
 
 <style lang="scss">
+@reference "../../../../sass/tailwind.css";
 .children-inline > img, .children-inline div, .children-inline svg {
     @apply inline;
 }

@@ -1,0 +1,250 @@
+/* Imported as plain CSS from the Sass entries: Sass can't parse Tailwind's theme syntax. */
+@layer theme, base;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+/* Unlayered like Tailwind 2, so specificity and source order still decide against MDC and our own styles. */
+@import "tailwindcss/utilities.css" source(none);
+
+@source "../**/*.{html,vue,js,svg}";
+
+@custom-variant hover (&:hover);
+
+/* static: Sass constants and component styles read these variables directly. */
+@theme static {
+    --breakpoint-*: initial;
+    --breakpoint-xs: 430px;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-sheet-break-lg: 872px;
+    --breakpoint-md2: 896px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1536px;
+
+    --font-default: Nyala, sans-serif;
+    --font-title: 'Pirata One', Nyala, sans-serif;
+
+    --text-xxs: 0.5rem;
+    --text-xxs--line-height: 0.75rem;
+
+    --spacing-2px: 2px;
+    --spacing-area-inset-top: env(safe-area-inset-top, 0);
+    --spacing-area-inset-right: env(safe-area-inset-right, 0);
+    --spacing-area-inset-bottom: env(safe-area-inset-bottom, 0);
+    --spacing-area-inset-left: env(safe-area-inset-left, 0);
+
+    --container-76: 18.5rem;
+    --container-party: 1041px;
+
+    --shadow-slight-white: 0px 0px 20px 5px rgba(255, 255, 255, 0.1);
+    --shadow-white: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
+
+    /* Pinned to the resolved Tailwind 2 palette so colours don't shift to v4's oklch values. */
+    --color-*: initial;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+    --color-red-50: rgba(255, 100, 100, .5);
+    --color-red-100: #fee2e2;
+    --color-red-200: #fecaca;
+    --color-red-300: #fca5a5;
+    --color-red-400: #f87171;
+    --color-red-500: #ef4444;
+    --color-red-600: #dc2626;
+    --color-red-700: #b91c1c;
+    --color-red-800: #991b1b;
+    --color-red-900: #7f1d1d;
+    --color-orange-100: #fffaf0;
+    --color-orange-200: #feebc8;
+    --color-orange-300: #fbd38d;
+    --color-orange-400: #f6ad55;
+    --color-orange-500: #ed8936;
+    --color-orange-600: #dd6b20;
+    --color-orange-700: #c05621;
+    --color-orange-800: #9c4221;
+    --color-orange-900: #7b341e;
+    --color-orange-1000: #3d1910;
+    --color-yellow-50: rgba(236, 202, 75, .5);
+    --color-yellow-100: #fef9c3;
+    --color-yellow-200: #fef08a;
+    --color-yellow-300: #fde047;
+    --color-yellow-400: #facc15;
+    --color-yellow-500: #eab308;
+    --color-yellow-600: #ca8a04;
+    --color-yellow-700: #a16207;
+    --color-yellow-800: #854d0e;
+    --color-yellow-900: #713f12;
+    --color-green-50: rgba(100, 255, 100, .5);
+    --color-green-100: #dcfce7;
+    --color-green-200: #bbf7d0;
+    --color-green-300: #86efac;
+    --color-green-400: #4ade80;
+    --color-green-500: #22c55e;
+    --color-green-600: #16a34a;
+    --color-green-700: #15803d;
+    --color-green-800: #166534;
+    --color-green-900: #14532d;
+    --color-teal-100: #e6fffa;
+    --color-teal-200: #b2f5ea;
+    --color-teal-300: #81e6d9;
+    --color-teal-400: #4fd1c5;
+    --color-teal-500: #38b2ac;
+    --color-teal-600: #319795;
+    --color-teal-700: #2c7a7b;
+    --color-teal-800: #285e61;
+    --color-teal-900: #234e52;
+    --color-blue-100: #ebf8ff;
+    --color-blue-200: #bee3f8;
+    --color-blue-300: #90cdf4;
+    --color-blue-400: #63b3ed;
+    --color-blue-500: #4299e1;
+    --color-blue-600: #3182ce;
+    --color-blue-700: #2b6cb0;
+    --color-blue-800: #2c5282;
+    --color-blue-900: #2a4365;
+    --color-blue-1000: #131d2c;
+    --color-indigo-100: #ebf4ff;
+    --color-indigo-200: #c3dafe;
+    --color-indigo-300: #a3bffa;
+    --color-indigo-400: #7f9cf5;
+    --color-indigo-500: #667eea;
+    --color-indigo-600: #5a67d8;
+    --color-indigo-700: #4c51bf;
+    --color-indigo-800: #434190;
+    --color-indigo-900: #3c366b;
+    --color-purple-100: #faf5ff;
+    --color-purple-200: #e9d8fd;
+    --color-purple-300: #d6bcfa;
+    --color-purple-400: #b794f4;
+    --color-purple-500: #9f7aea;
+    --color-purple-600: #805ad5;
+    --color-purple-700: #6b46c1;
+    --color-purple-800: #553c9a;
+    --color-purple-900: #44337a;
+    --color-pink-100: #fff5f7;
+    --color-pink-200: #fed7e2;
+    --color-pink-300: #fbb6ce;
+    --color-pink-400: #f687b3;
+    --color-pink-500: #ed64a6;
+    --color-pink-600: #d53f8c;
+    --color-pink-700: #b83280;
+    --color-pink-800: #97266d;
+    --color-pink-900: #702459;
+    --color-primary: #3771E0;
+    --color-primary-dark: #2356b7;
+    --color-primary2-20: rgba(55, 113, 224, .20);
+    --color-primary2-30: rgba(55, 113, 224, .30);
+    --color-secondary: #018786;
+    --color-patreon: #ff424d;
+    --color-background: #000;
+    --color-surface: #111;
+    --color-dark-background: #1b1b1b;
+    --color-fh-dark: #111725;
+    --color-complete: #3B8585;
+    --color-incomplete: #A13C2F;
+    --color-required: #E9A678;
+    --color-gold: #E2A246;
+    --color-light-gray: #E0E0E0;
+    --color-dark-gray2-60: rgba(23, 24, 25, .60);
+    --color-dark-gray2-75: rgba(23, 24, 25, .75);
+    --color-dark-gray2-100: rgba(23, 24, 25, 1);
+    --color-black2-10: rgba(0, 0, 0, .10);
+    --color-black2-25: rgba(0, 0, 0, .25);
+    --color-black2-50: rgba(0, 0, 0, .50);
+    --color-black2-75: rgba(0, 0, 0, .75);
+    --color-white2-10: rgba(255, 255, 255, .10);
+    --color-white2-25: rgba(255, 255, 255, .25);
+    --color-white2-50: rgba(255, 255, 255, .50);
+    --color-white2-60: rgba(255, 255, 255, .60);
+    --color-white2-75: rgba(255, 255, 255, .75);
+    --color-white2-87: rgba(255, 255, 255, .87);
+    --color-white2-25-no-alpha: rgb(74, 75, 76);
+    --color-character-be: #C5665E;
+    --color-character-br: #5E7EBD;
+    --color-character-bs: #D39382;
+    --color-character-bt: #A77766;
+    --color-character-ch: #8B9552;
+    --color-character-dm: #F7AB68;
+    --color-character-dr: #C3DBEB;
+    --color-character-ds: #77C1ED;
+    --color-character-el: #9F9E9E;
+    --color-character-ht: #8CD4E4;
+    --color-character-mt: #6B7C9B;
+    --color-character-ns: #9EA0C9;
+    --color-character-ph: #98C6BB;
+    --color-character-qm: #CE8D4A;
+    --color-character-rg: #F03C3C;
+    --color-character-sb: #DFDDD0;
+    --color-character-sc: #AFD085;
+    --color-character-sk: #EBC468;
+    --color-character-ss: #D78E87;
+    --color-character-su: #E186A3;
+    --color-character-sw: #B081B1;
+    --color-character-ti: #C2B698;
+    --color-character-vw: #C4C4BC;
+    --color-character-hp: #D7D961;
+    --color-character-st: #363786;
+    --color-character-fk: #E82E2E;
+    --color-character-ho: #552358;
+    --color-character-bk: #B99E30;
+    --color-character-ct: #76C6C3;
+    --color-character-sp: #A5CE39;
+    --color-character-lu: #915BA3;
+    --color-character-cg: #CF6D30;
+    --color-character-bm: #B6A691;
+    --color-character-aa: #FBAB19;
+    --color-character-rm: #5B1610;
+    --color-character-qa: #2C8BB9;
+    --color-character-mf: #E35F25;
+    --color-character-df: #C1ADA1;
+    --color-character-bb: #02A9D1;
+    --color-character-bn: #FCD26F;
+    --color-character-dw: #ADC8E8;
+    --color-character-bo: #6EBE4C;
+    --color-character-ge: #F27BA3;
+    --color-character-if: #7CC345;
+    --color-character-py: #FE4A1D;
+    --color-character-sh: #9FA2A5;
+    --color-character-ta: #DFB687;
+    --color-character-pc: #C0C8E7;
+    --color-character-sd: #7ED4EA;
+    --color-character-ff: #8ABFE8;
+    --color-character-hv: #EEB833;
+    --color-character-me: #D3B58F;
+    --color-character-dt: #C190C2;
+    --color-character-cr: #59C0A2;
+}
+
+@utility outline-gray {
+    outline: 1px solid #727272;
+}
+
+@utility transition-layout {
+    transition-property: transform, width, height, margin, padding, background-color;
+    transition-timing-function: var(--default-transition-timing-function);
+    transition-duration: var(--default-transition-duration);
+}
+
+/* Tailwind 2 defaults that v4 changed. */
+@layer base {
+    *, ::after, ::before, ::backdrop, ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: var(--color-gray-400);
+    }
+
+    button:not(:disabled), [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+}

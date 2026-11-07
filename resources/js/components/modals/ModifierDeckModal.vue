@@ -2,7 +2,7 @@
     <div>
         <modal ref="modal" :title="title">
             <template #content>
-                <div v-if="deck" class="w-full h-full flex flex-col outline-none">
+                <div v-if="deck" class="w-full h-full flex flex-col outline-hidden">
                     <ul class="grid grid-cols-2 xs:grid-cols-3 gap-4 mt-2">
                         <li v-for="(card, i) in deck" class="relative">
                             <card-stack v-if="!card.label" :src="card.image" :count="card.count"/>

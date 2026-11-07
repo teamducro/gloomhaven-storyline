@@ -1,9 +1,11 @@
 <template>
     <div>
-        <div class="relative mdc-text-field mdc-text-field--textarea w-full"
+        <div class="relative mdc-text-field mdc-text-field--outlined mdc-text-field--textarea w-full"
              :ref="id">
-        <textarea :id="id" @change="changed" @keyup="keyup" v-model="text" :disabled="isDisabled" :max="max"
-                  class="mdc-text-field__input" rows="4" cols="40"></textarea>
+        <span class="mdc-text-field__resizer">
+            <textarea :id="id" @change="changed" @keyup="keyup" v-model="text" :disabled="isDisabled" :max="max"
+                      class="mdc-text-field__input" rows="4" cols="40"></textarea>
+        </span>
 
             <span class="absolute bottom-0 right-0 mr-2 mb-1"
                   :class="hasScroll ? 'mr-6' : 'mr-2'">
@@ -104,7 +106,8 @@ export default {
             this.checkForScrollbar();
         },
         checkForScrollbar() {
-            this.hasScroll = this.field.input_.scrollHeight > this.field.input_.clientHeight;
+            const input = this.$refs[this.id].querySelector('textarea');
+            this.hasScroll = input.scrollHeight > input.clientHeight;
         },
         changed() {
             this.$emit('update:value', this.text);

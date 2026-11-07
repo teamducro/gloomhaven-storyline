@@ -152,6 +152,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@reference "../../../sass/tailwind.css";
 .number-field-container {
     @apply relative;
 

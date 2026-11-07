@@ -1,23 +1,26 @@
 <template>
     <div>
-        <div ref="font-switch" class="font-switch mdc-select w-full mb-4">
-            <div class="mdc-select__anchor w-full">
-                <i class="mdc-select__dropdown-icon"></i>
-                <div class="mdc-select__selected-text">
-                    {{ fonts[settings.current] }}
-                </div>
+        <div ref="font-switch" class="font-switch mdc-select mdc-select--filled w-full mb-4">
+            <div class="mdc-select__anchor w-full" role="button" aria-haspopup="listbox" aria-expanded="false">
+                <span class="mdc-select__ripple"></span>
+                <span class="mdc-select__selected-text-container">
+                    <span class="mdc-select__selected-text">
+                        {{ fonts[settings.current] }}
+                    </span>
+                </span>
+                <select-dropdown-icon></select-dropdown-icon>
                 <span class="mdc-floating-label mdc-floating-label--float-above">{{ $t('Font') }}</span>
                 <div class="mdc-line-ripple"></div>
             </div>
 
             <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class" style="min-width: 240px">
-                <ul class="mdc-list">
-                    <li v-for="(name, font) in fonts"
+                <ul class="mdc-deprecated-list" role="listbox">
+                    <li role="option" v-for="(name, font) in fonts"
                         :key="font" :data-value="font"
-                        class="mdc-list-item cursor-pointer"
+                        class="mdc-deprecated-list-item cursor-pointer"
                         :style="{'font-family': font}"
                         :aria-selected="font === settings.current"
-                        :class="{'mdc-list-item--selected': font === settings.current}">{{ name }}
+                        :class="{'mdc-deprecated-list-item--selected': font === settings.current}"><span class="mdc-deprecated-list-item__ripple"></span><span class="mdc-deprecated-list-item__text">{{ name }}</span>
                     </li>
                 </ul>
             </div>
@@ -71,7 +74,7 @@ export default {
     },
     methods: {
         open() {
-            document.querySelector('.font-switch .mdc-select__selected-text').click();
+            document.querySelector('.font-switch .mdc-select__anchor').click();
         },
         changeFont() {
             const font = this.select.value;

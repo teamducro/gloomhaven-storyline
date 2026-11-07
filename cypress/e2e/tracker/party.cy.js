@@ -82,7 +82,7 @@ describe('Party', () => {
         utilities.scrollTo('40%');
         cy.get('#city-events').parent().click();
         cy.get('[name="city-events"]').type('50');
-        cy.get('.mdc-list-item__text span').contains('50').click();
+        cy.get('.mdc-deprecated-list-item__text span').contains('50').click();
         utilities.closeModel();
         cy.get('.bedge').contains('50').should('be.visible').click();
         cy.get('.mdc-dialog__title').contains('City Event #50').should('be.visible');
@@ -96,9 +96,9 @@ describe('Party', () => {
         utilities.scrollTo('35%');
         cy.get('#city-events').parent().click();
         cy.get('[name="city-events"]').clear().type('50');
-        cy.get('.mdc-list-item__text span').contains('50').click();
+        cy.get('.mdc-deprecated-list-item__text span').contains('50').click();
         cy.get('[name="city-events"]').clear().type('60');
-        cy.get('.mdc-list-item__text span').contains('60').click();
+        cy.get('.mdc-deprecated-list-item__text span').contains('60').click();
         utilities.closeModel();
         cy.get('#city-events-bedges .bedge').contains('50').should('be.visible');
         cy.get('#city-events-bedges .bedge').contains('60').should('be.visible');
@@ -131,7 +131,7 @@ describe('Party', () => {
         utilities.scrollTo('40%');
         cy.get('#city-events').parent().click();
         cy.get('[name="city-events"]').type('50');
-        cy.get('.mdc-list-item__text span').contains('50').click();
+        cy.get('.mdc-deprecated-list-item__text span').contains('50').click();
 
         utilities.scrollTo('80%');
         cy.get('#notes').type('Foo Bar');
@@ -156,9 +156,9 @@ describe('Party', () => {
         cy.get('.mdc-dialog__content img[alt^="Remove #"]').should('not.exist');
         cy.get('.mdc-dialog__content button').contains('A').click();
         cy.get('.mdc-dialog__content button').contains('A').should('not.exist');
-        cy.get('.mdc-dialog__content .blur').should('be.visible');
+        cy.get('.mdc-dialog__content .blur-sm').should('be.visible');
         cy.get('.mdc-dialog__content button').contains('Toggle B').click();
-        cy.get('.mdc-dialog__content .blur').should('not.exist');
+        cy.get('.mdc-dialog__content .blur-sm').should('not.exist');
         cy.get('.mdc-dialog__content button').contains('Toggle B').parent().next().click();
     });
 

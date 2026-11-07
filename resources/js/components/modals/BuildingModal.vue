@@ -4,7 +4,7 @@
                class="building-modal">
             <template #content>
                 <div v-if="building">
-                    <div class="w-full h-full flex flex-col md:flex-row outline-none">
+                    <div class="w-full h-full flex flex-col md:flex-row outline-hidden">
                         <div class="relative w-full" style="max-width: 300px;">
                             <webp :src="building.card()" :alt="this.title"
                                   class="w-full rounded-lg sm:rounded-xl"/>
