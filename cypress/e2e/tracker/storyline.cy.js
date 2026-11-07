@@ -455,6 +455,19 @@ describe('Storyline', () => {
         });
     });
 
+    it('It shows the official FAQ of an unlocked scenario', () => {
+        // Given scenario 1 is complete, so scenario 2 is unlocked
+        cy.visit('/tracker');
+        utilities.completeScenario(1);
+
+        // When scenario 2 is opened
+        utilities.openScenario(2);
+
+        // Then its FAQ is shown to help while playing
+        cy.get('#scenario-content').contains('h2', 'FAQ');
+        cy.get('#scenario-content').contains('Boss Special 1: if the boss moves to a door that is already open and the door hex is occupied');
+    });
+
     it('It has no Crypt region on Gloomhaven scenario 53', () => {
         cy.visit('/tracker/#/story');
 
