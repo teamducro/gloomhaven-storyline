@@ -93,6 +93,9 @@ describe('Scenario list', () => {
             .should('have.attr', 'src').and('contain', '/img/monsters/gh/thumbs/bandit-guard.');
         cy.get('li').contains('Bandit Guard').click();
 
+        // The results stay open to pick another monster
+        cy.get('.dropdown .dropdown li').should('contain', 'Bandit Guard');
+
         // Starting class solo scenarios are visible too
         utilities.assertTableCount('scenarios', 2);
         cy.get('#scenarios').contains('#1 Black Barrow').should('be.visible');

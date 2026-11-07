@@ -63,7 +63,6 @@
                                           :disabled="monsterFilter"
                                           :auto-disable="false"
                                           :filter-closure="monsterFilterClosure"
-                                          :auto-close="true"
                                           @change="addMonsterFilter">
                                 <template v-for="monster in monsters" v-slot:[monster]>
                                     <span class="flex items-center gap-3">
