@@ -67,7 +67,10 @@ export default {
         "name": "Templo del Vidente"
     },
     "gh-14": {
-        "name": "Hondonada Helada"
+        "name": "Hondonada Helada",
+        "conclusion_faq": [
+            "Los números de ubicación en el texto de la historia son solo recordatorios. Ellos mismos no desbloquean nada."
+        ]
     },
     "gh-15": {
         "name": "Altar de la fuerza",
@@ -219,7 +222,10 @@ export default {
         ]
     },
     "gh-43": {
-        "name": "Nido de dracos"
+        "name": "Nido de dracos",
+        "conclusion_faq": [
+            "Los números de ubicación en el texto de la historia son solo recordatorios. Ellos mismos no desbloquean nada."
+        ]
     },
     "gh-44": {
         "name": "Asalto tribal",

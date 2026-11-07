@@ -84,6 +84,9 @@ export default {
     },
     "gh-14": {
         "name": "Frozen Hollow",
+        "conclusion_faq": [
+            "The location numbers in the story text are just reminders. They themselves don't unlock anything."
+        ]
     },
     "gh-15": {
         "name": "Shrine of Strength",
@@ -280,6 +283,9 @@ export default {
     },
     "gh-43": {
         "name": "Drake Nest",
+        "conclusion_faq": [
+            "The location numbers in the story text are just reminders. They themselves don't unlock anything."
+        ]
     },
     "gh-44": {
         "name": "Tribal Assault",

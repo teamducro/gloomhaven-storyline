@@ -681,6 +681,9 @@
                 "frost-demon",
                 "hound",
                 "living-spirit"
+            ],
+            "conclusion_faq": [
+                "The location numbers in the story text are just reminders. They themselves don't unlock anything."
             ]
         },
         {
@@ -2183,6 +2186,9 @@
                 "flame-demon",
                 "rending-drake",
                 "spitting-drake"
+            ],
+            "conclusion_faq": [
+                "The location numbers in the story text are just reminders. They themselves don't unlock anything."
             ]
         },
         {

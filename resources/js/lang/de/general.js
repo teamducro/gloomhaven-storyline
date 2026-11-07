@@ -433,7 +433,6 @@ export default {
     "and": "und",
     "Hidden Scenario": "Verstecktes Szenario",
     "Add achievements gained by events other than completing scenarios manually": "Hinzufügen von Erfolgen, die durch andere Ereignisse als das manuelle Abschließen von Szenarien erzielt wurden",
-    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "Die Szenariozahlen im Text sind nur zur Erinnerung, sie werden nicht freigeschaltet.",
     "Level up when youre back in town": "Steige eine Stufe auf, wenn du nach Gloomhaven zurückkehrst.",
     "Add {x} {-1} to your attack modifier deck.": "Füge {x} {-1} zu deinem Angriffsmodifikator-Deck hinzu.",
     "Attack Modifier Deck": "Attack Modifier Deck",

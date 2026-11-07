@@ -484,9 +484,10 @@ describe('Storyline', () => {
         // When scenario 2 is opened
         utilities.openScenario(2);
 
-        // Then its FAQ is shown to help while playing
-        cy.get('#scenario-content').contains('h2', 'FAQ');
-        cy.get('#scenario-content').contains('Boss Special 1: if the boss moves to a door that is already open and the door hex is occupied');
+        // Then its FAQ is collapsed, and expands on click to help while playing
+        cy.get('#scenario-content').contains('Boss Special 1: if the boss moves').should('not.be.visible');
+        cy.get('#scenario-content').contains('summary', 'FAQ').click();
+        cy.get('#scenario-content').contains('Boss Special 1: if the boss moves to a door that is already open and the door hex is occupied').should('be.visible');
     });
 
     it('It has no Crypt region on Gloomhaven scenario 53', () => {

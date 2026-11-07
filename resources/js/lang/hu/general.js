@@ -433,7 +433,6 @@ export default {
     "and": "és",
     "Hidden Scenario": "Rejtett küldetés",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
-    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "Level up when youre back in town": "Lépj szintet, mikor visszatérsz a városba",
     "Add {x} {-1} to your attack modifier deck.": "Adj {x} {-1} a támadásmódosító paklidhoz.",
     "Attack Modifier Deck": "Attack Modifier Deck",

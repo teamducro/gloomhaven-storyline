@@ -433,7 +433,6 @@ export default {
     "and": "and",
     "Hidden Scenario": "Скрытый сценарий",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
-    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "Level up when youre back in town": "Повысьте уровень, когда вернетесь в город!",
     "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
     "Attack Modifier Deck": "Attack Modifier Deck",

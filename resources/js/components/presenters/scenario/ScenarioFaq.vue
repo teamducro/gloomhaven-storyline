@@ -1,8 +1,11 @@
 <template>
-    <div class="my-2" v-if="entries.length">
-        <h2 class="text-white">{{ $t('faq') }}</h2>
+    <details class="my-2 group" v-if="entries.length">
+        <summary class="flex items-center cursor-pointer list-none">
+            <h2 class="text-white">{{ $t('faq') }}</h2>
+            <span class="material-icons group-open:rotate-180">expand_more</span>
+        </summary>
         <p v-for="(entry, index) in entries" :key="index" class="mb-2">{{ entry }}</p>
-    </div>
+    </details>
 </template>
 
 <script>
