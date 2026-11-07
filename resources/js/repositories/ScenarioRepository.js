@@ -154,7 +154,9 @@ export default class ScenarioRepository {
     }
 
     isScenarioUnlockedByTreasure(scenario) {
-        return this.unlockedFromTreasureScenarios(scenario).count() > 0;
+        // Keep a completed scenario when its treasure is unchecked or was never checked.
+        return (scenario.treasures_from.isNotEmpty() && scenario.isComplete())
+            || this.unlockedFromTreasureScenarios(scenario).count() > 0;
     }
 
     processAchievements(scenario) {

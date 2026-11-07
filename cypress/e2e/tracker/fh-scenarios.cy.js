@@ -29,4 +29,13 @@ describe('FH scenarios', () => {
         cy.visit('/tracker?states=99_c-100_c-101_c-102_c-103_c');
         state(103).should('eq', 'complete');
     });
+
+    it('keeps a completed The Lead Door when treasure #57 is unchecked', () => {
+        cy.visit('/tracker?states=99_c-100_c-101_c-102_c-103_c');
+        openIntoTheBlack();
+        cy.get('#treasure-57').click();
+        cy.get('#treasure-57').click();
+        utilities.closeModel();
+        state(103).should('eq', 'complete');
+    });
 });
