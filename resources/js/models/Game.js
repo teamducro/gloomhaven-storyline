@@ -15,4 +15,6 @@ export const Game = Object.freeze({
     "mp": "mp",
     // ConQuests 2025 promo pack
     "cq": "cq",
+    // Seeker of Xorn fan-made bonus content, its data lives in gh.json
+    "sox": "sox",
 });

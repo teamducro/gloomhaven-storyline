@@ -377,6 +377,7 @@ export default {
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
     "cq": "ConQuests 2025",
+    "sox": "Seeker of Xorn bonus content",
     "gh2": "Gloomhaven 2nd Edition",
 
     "Availability": "Availability",

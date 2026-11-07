@@ -7119,11 +7119,6 @@
             ],
             "events_on_choose": [
                 "C-SoX1"
-            ],
-            "events_addable_on_choose": [
-                "C-SoX2",
-                "C-SoX3",
-                "C-SoX4"
             ]
         },
         {
@@ -18078,7 +18073,15 @@
         "city": {
             "start": 30,
             "last": 90,
-            "max": 90
+            "max": 90,
+            "bonus": {
+                "sox": [
+                    "SoX1",
+                    "SoX2",
+                    "SoX3",
+                    "SoX4"
+                ]
+            }
         },
         "road": {
             "start": 30,

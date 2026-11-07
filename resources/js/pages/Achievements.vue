@@ -108,6 +108,7 @@
 
 <script>
 import AchievementRepository from "../repositories/AchievementRepository";
+import SheetRepository from "../repositories/SheetRepository";
 import {MDCList} from "@material/list/component";
 import {MDCTextField} from "@material/textfield/component";
 
@@ -154,7 +155,11 @@ export default {
         async setAchievements() {
             this.game = this.appData.game;
             this.enabled = this.game !== 'jotl';
-            this.achievements = app.achievements.sortBy('name');
+            // Bonus content achievements stay listed only while their pack is enabled.
+            const sheet = new SheetRepository().make(app.game);
+            this.achievements = app.achievements
+                .filter(achievement => !achievement.requires_event || sheet.hasEvent(achievement.requires_event))
+                .sortBy('name');
 
             await this.$nextTick();
 

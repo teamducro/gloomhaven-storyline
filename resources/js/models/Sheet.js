@@ -147,6 +147,7 @@ class Sheet {
 
         if (decks.city) {
             this.city = DeckFiller.fill(this.city, decks.city);
+            this.setAsideBonusEvents(decks.city.bonus || {});
         }
 
         if (decks.road) {
@@ -160,6 +161,20 @@ class Sheet {
         if (decks.unlocks) {
             this.unlocks = DeckFiller.fillUnlocks(this.unlocks, decks.unlocks);
         }
+    }
+
+    // Bonus events (pack => ids) are only on the sheet while their pack is enabled, otherwise kept aside so they survive.
+    setAsideBonusEvents(bonus) {
+        const enabled = this.gameData.enabledCrossovers();
+        this.hiddenCity = {};
+        Object.entries(bonus).forEach(([pack, ids]) => ids.forEach((id) => {
+            if (enabled.includes(pack)) {
+                this.city[id] = this.city[id] || false;
+            } else if (id in this.city) {
+                this.hiddenCity[id] = this.city[id];
+                delete this.city[id];
+            }
+        }));
     }
 
     // moment: 'unlock' when a class is unlocked (or a Crimson Scales starting class is chosen), 'retire' when it retires.
@@ -180,15 +195,14 @@ class Sheet {
     }
 
     // Events as 'C-57' / 'R-21'; bonus content uses string numbers like 'C-SoX1'.
-    // inDeck false only makes the event addable (unless it is already in the deck).
-    addEvents(events, inDeck = true) {
+    addEvents(events) {
         events.forEach((event) => {
             const [deck, number] = this.eventKey(event);
-            this[deck][number] = inDeck || this[deck][number] || false;
+            this[deck][number] = true;
         });
     }
 
-    // Bonus events only exist on the sheet once added, so this tells whether their content is in play.
+    // Bonus events are only on the sheet while their pack is enabled, so this tells whether their content is in play.
     hasEvent(event) {
         const [deck, number] = this.eventKey(event);
         return this[deck][number] !== undefined;
@@ -288,8 +302,7 @@ class Sheet {
     valuesToStore() {
         let values = this.parentValuesToStore();
         values.itemDesigns = collect({...this.itemDesigns}).filter(v => v).all();
-        // Bonus events (e.g. 'SoX1') aren't refilled by the deck spec, so they're kept once known, even when out of the deck.
-        values.city = collect({...this.city}).filter((v, id) => v || isNaN(id)).all();
+        values.city = collect({...this.city, ...this.hiddenCity}).filter(v => v).all();
         values.road = collect({...this.road}).filter(v => v).all();
         values.rift = collect({...this.rift}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
