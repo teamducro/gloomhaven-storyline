@@ -2302,7 +2302,7 @@ export default {
         "rewards": [
             "+2 reputation",
             "+1 prosperity",
-            "Gain “Stun Powder” (Item 21)"
+            "Gain “Stun Powder” (Item gh-21)"
         ]
     },
     "cs-7": {
@@ -2329,8 +2329,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "Gain “Minor Mana Potion” (Item 12)",
-            "Gain “Minor Healing Potion” (Item 20)"
+            "Gain “Minor Healing Potion” (Item gh-12)",
+            "Gain “Minor Mana Potion” (Item gh-20)"
         ]
     },
     "cs-11": {
@@ -2344,13 +2344,13 @@ export default {
         "rewards": [
             "Gain “Bulkwark Banner” (Item 85)",
             "+1 prosperity",
-            "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\\nIf there are non of these available in the shop, gain 20 gold instead"
+            "Each character gains one of the following: “Major Stamina Potion” (Item gh-34), “Major Power Potion” (Item gh-41), “Major Mana Potion” (Item gh-48)\\nIf there are non of these available in the shop, gain 20 gold instead"
         ]
     },
     "cs-14": {
         "name": "Cultist Cave",
         "rewards": [
-            "Gain “Remote Beetle” (Item 86)",
+            "Gain “Remote Beetle” (Item 88)",
             "15 experience each"
         ]
     },
@@ -2379,7 +2379,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "Gain “Major Mana Potion” (Item 48)"
+            "Gain “Major Mana Potion” (Item gh-48)"
         ]
     },
     "cs-20": {
@@ -2393,7 +2393,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "Gain “Magma Waders” (Item 99)"
+            "Gain “Magma Waders” (Item gh-99)"
         ]
     },
     "cs-22": {
@@ -2472,7 +2472,7 @@ export default {
         "name": "Siege Tower",
         "requirements": "Persönliches Ziel „Protect and Serve“",
         "rewards": [
-            "Gain “Blazing Boots” (Item 87)",
+            "Gain “Blazing Boots” (Item 90)",
             "+1 reputation"
         ]
     },
@@ -2793,11 +2793,11 @@ export default {
         "rewards": [
             [
                 "40 collective gold",
-                "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                "“Studded Leather” design (Item gh-30) OR “Boots of Dashing” design (Item gh-36)"
             ],
             [
                 "2 ✓ each",
-                "“Lucky Eye” design (Item 063)"
+                "“Lucky Eye” design (Item gh-63)"
             ]
         ]
     },

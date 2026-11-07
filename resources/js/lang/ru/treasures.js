@@ -336,7 +336,7 @@ export default {
         "name": "«Ring of Restoration» (Предмет 32)"
     },
     "cs-1": {
-        "name": "«Drake's Blood» (Предмет 14)"
+        "name": "«Drake's Blood» (Предмет 59)"
     },
     "cs-2": {
         "name": "«Orb of Fortune» (Предмет 09)"
@@ -426,7 +426,7 @@ export default {
         "name": "«Boneclad Shawl (Предмет 25)"
     },
     "cs-31": {
-        "name": "«Drake's Blood» (Предмет 14)"
+        "name": "«Drake's Blood» (Предмет 59)"
     },
     "cs-32": {
         "name": "«Curious Pendant» (Предмет 20)"
@@ -480,7 +480,7 @@ export default {
         "name": "15 gold"
     },
     "cs-49": {
-        "name": "«Magma Waders» (Предмет 99)"
+        "name": "«Magma Waders» (Предмет gh-99)"
     },
     "cs-50": {
         "name": "“Bottled Moonlight” (Item 18)"

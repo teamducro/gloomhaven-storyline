@@ -525,7 +525,7 @@ export default {
             "TODO:: Replace one {+1_WHITE} card with one {+0_WHITE} {2_WOUND} card",
             "TODO:: Add four {AGAIN} {+0_WHITE} {+1_WHITE} if the target occupy difficult terrain cards",
             "TODO:: Add two {AGAIN} {INVISIBLE}, Self, if you occupy difficult terrain cards",
-            "TODO:: Gain “Poison Dagger” (Item 011). You may carry one additional {ONE_HAND} item with “Dagger” in its name.",
+            "TODO:: Gain “Poison Dagger” (Item gh-11). You may carry one additional {ONE_HAND} item with “Dagger” in its name.",
             "Ignore damage, and negative conditions and modifiers from Events, and remove one {-1_WHITE} card",
             "Ignore negative scenario effects and remove one {-1_WHITE} card"
         ]
