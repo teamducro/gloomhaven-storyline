@@ -380,6 +380,9 @@ export default {
     "gh2": "Gloomhaven 2nd Edition",
 
     "Availability": "Availability",
+    "Sacrifice": "Sacrifice",
+    "Removed from game": "Removed from game",
+    "Restore": "Restore",
     "Sticker": "Sticker",
     "State": "State",
     "Name": "Name",
