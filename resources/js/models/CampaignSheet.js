@@ -44,6 +44,8 @@ class CampaignSheet {
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
         this.crossGameItems = {...data.crossGameItems};
+        // Item id => count removed from the game, e.g. sacrificed in a scenario.
+        this.removedItems = {...data.removedItems};
         this.recipes = {...data.recipes};
 
         // Characters
@@ -89,6 +91,7 @@ class CampaignSheet {
             itemDesigns: {'itemDesigns': {}},
             crossGameItemsEnabled: 'crossGameItemsEnabled',
             crossGameItems: {'crossGameItems': {}},
+            removedItems: {'removedItems': {}},
             recipes: {'recipes': {}},
 
             // Characters
