@@ -20,11 +20,10 @@ export default class ApiClient {
                 response = await window.axios[method](url, data, options);
             }
 
-            this.withToken();
-
             return response;
-        } catch (e) {
-            throw e;
+        } finally {
+            // Reset after failures too, or the next request would reuse a shared campaign's token.
+            this.withToken();
         }
     }
 
@@ -38,6 +37,10 @@ export default class ApiClient {
 
     async put(url, data, options) {
         return this.request('put', url, options, data);
+    }
+
+    async delete(url, options) {
+        return this.request('delete', url, options);
     }
 
     async head(url, options) {
