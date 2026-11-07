@@ -76,6 +76,7 @@
                                  class="hidden ml-auto"
                                  :class="[scenario.is_side ? 'sm:block' : 'xs:block', scenario.solo ? 'w-12' : 'w-20']">
                                 <webp v-if="!scenario.solo" :src="scenario.image()"
+                                      :retina-webp="scenario.hasRetinaSticker()"
                                       :animate="true"
                                       :alt="$t(scenario.name)"/>
                                 <character-icon v-if="scenario.solo" class="inline-block"
@@ -288,6 +289,7 @@
                     <div class="mx-auto w-20"
                          :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
                         <webp :src="scenario.image()"
+                              :retina-webp="scenario.hasRetinaSticker()"
                               :animate="true"
                               :alt="$t(scenario.name)"/>
                     </div>

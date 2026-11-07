@@ -12,6 +12,12 @@ describe('Scenario list', () => {
         utilities.assertTableCount('scenarios', 113);
     });
 
+    it('It shows the 2x sticker in the list', () => {
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('#scenarios img[src$="/img/scenarios/gh/1@2x.webp"]').should('exist');
+    });
+
     it('It opens a scenario', () => {
         cy.visit('/tracker/#/scenarios');
 

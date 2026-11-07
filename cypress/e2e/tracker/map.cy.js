@@ -20,6 +20,14 @@ describe('Map', () => {
         });
     });
 
+    it('It renders the 2x Gloomhaven sticker at the same layout size', () => {
+        cy.visit('/tracker/#/map');
+
+        cy.get('#map #s1').should('have.attr', 'src').and('match', /\/img\/scenarios\/gh\/1@2x\.webp$/);
+        // The 1x sticker was 133px wide
+        cy.get('#map #s1').should('have.prop', 'naturalWidth', 266).and('have.attr', 'width', '133');
+    });
+
     it('It renders the 2x Frosthaven sticker at the same layout size', () => {
         utilities.enableGame('fh');
         utilities.switchGame('fh');
