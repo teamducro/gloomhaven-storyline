@@ -64,25 +64,32 @@ describe('Party', () => {
         cy.get('span').contains('015–021').prev().find('input').should('be.checked');
     });
 
-    it('It does not check donation prosperity by default', () => {
+    it('It moves hand-ticked donation prosperity of older campaigns to the donation boxes', () => {
         cy.visit('/tracker/#/party');
+        cy.window().then(win => {
+            const data = JSON.parse(win.localStorage.getItem(win.app.campaignId)) || {};
+            data.sheet = {donations: 200, prosperityIndex: 6};
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(data));
+        });
+        cy.reload();
 
-        cy.get('input[aria-labelledby="donations"]').clear().type('200{enter}');
-        cy.contains('3 gained prosperity');
-        cy.get('input#auto-donation-prosperity').should('not.be.checked');
-        cy.get('input#p-2').should('not.be.checked').and('not.be.disabled');
+        ['p-2', 'p-3', 'p-4'].forEach(id => {
+            cy.get(`input#${id}`).should('be.checked').and('be.disabled');
+        });
+        ['p-5', 'p-6'].forEach(id => {
+            cy.get(`input#${id}`).should('be.checked').and('not.be.disabled');
+        });
+        cy.get('input#p-7').should('not.be.checked');
     });
 
     it('It checks donation prosperity automatically', () => {
         cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="donations"]').clear().type('200{enter}');
-        cy.get('input#auto-donation-prosperity').click();
         ['p-2', 'p-3', 'p-4'].forEach(id => {
             cy.get(`input#${id}`).should('be.checked').and('be.disabled');
         });
         cy.get('input#p-2').should('have.attr', 'title', 'Gained from donations');
-        cy.contains('Untick any prosperity boxes you already ticked by hand for donations.');
         cy.get('input#p-5').should('not.be.checked').and('not.be.disabled');
         cy.get('span').contains('015–021').prev().find('input').should('not.be.checked');
 
@@ -96,7 +103,6 @@ describe('Party', () => {
         cy.get('input#p-6').should('be.checked').and('not.be.disabled');
 
         cy.reload();
-        cy.get('input#auto-donation-prosperity').should('be.checked');
         cy.get('input#p-5').should('be.checked').and('be.disabled');
         cy.get('input#p-6').should('be.checked').and('not.be.disabled');
         cy.get('input#p-7').should('not.be.checked');

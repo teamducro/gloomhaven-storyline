@@ -22,14 +22,6 @@
                     : $t('gained prosperity checkboxes by donations.')
             }}
         </p>
-        <checkbox-with-label id="auto-donation-prosperity"
-                             class="mt-2 -ml-2"
-                             :label="$t('Check donation prosperity checkboxes automatically')"
-                             v-model:checked="sheet.autoDonationProsperity"
-                             @change="$emit('change')"/>
-        <p v-if="sheet.autoDonationProsperity && donationProsperity" class="mt-1 text-sm">
-            {{ $t('Untick any prosperity boxes you already ticked by hand for donations.') }}
-        </p>
     </div>
 </template>
 

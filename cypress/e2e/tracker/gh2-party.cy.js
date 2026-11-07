@@ -76,7 +76,6 @@ describe('Party GH2', () => {
         cy.visit('/tracker/#/party');
 
         cy.get('input[aria-labelledby="donations"]').clear().type('1000{enter}');
-        cy.get('input#auto-donation-prosperity').click();
         cy.get('input#p-21').should('be.checked').and('be.disabled');
         cy.get('input#p-22').should('not.be.checked').and('not.be.disabled');
         cy.contains('#city-events-bedges .bedge', /^\s*21\s*$/).should('not.exist');

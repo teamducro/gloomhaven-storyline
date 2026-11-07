@@ -20,7 +20,7 @@ class Sheet {
         // Sheet fields
         this.reputation = data.reputation || 0;
         this.donations = data.donations || 0;
-        this.autoDonationProsperity = data.autoDonationProsperity || false;
+        this.autoDonationProsperity = data.autoDonationProsperity;
         this.prosperityIndex = data.prosperityIndex || 1;
         this.city = {...data.city};
         this.road = {...data.road};
@@ -102,22 +102,31 @@ class Sheet {
         if (typeof app.campaignData[this.key()] === 'undefined') {
             this.new();
         }
+
+        this.migrateDonationProsperity();
     }
 
     new() {
         // Nothing to set up..
     }
 
-    // Prosperity checkboxes gained from donations, only counted when the party opted in so older campaigns that ticked them by hand don't count twice.
     get donationChecks() {
-        return this.autoDonationProsperity
-            ? SheetCalculations.methods.calculateDonationProsperity(this.donations, this.game)
-            : 0;
+        return SheetCalculations.methods.calculateDonationProsperity(this.donations || 0, this.game);
     }
 
     // prosperityIndex only holds the manually ticked boxes.
     get effectiveProsperityIndex() {
         return this.prosperityIndex + this.donationChecks;
+    }
+
+    // Older campaigns ticked donation boxes by hand, so move them out of prosperityIndex to keep the total unchanged.
+    migrateDonationProsperity() {
+        if (this.autoDonationProsperity) {
+            return;
+        }
+
+        this.prosperityIndex = Math.max(1, (this.prosperityIndex || 1) - this.donationChecks);
+        this.autoDonationProsperity = true;
     }
 
     // Item designs, event decks and campaign sheet unlocks, sized per game by `decks` in games/<game>.json.
