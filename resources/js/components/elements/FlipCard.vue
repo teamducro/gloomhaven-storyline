@@ -37,13 +37,25 @@ export default {
             transform: rotateY(180deg);
         }
 
+        // The visible face stays in the flow, so the card takes its height (sides may differ in length)
         .front, .back {
-            @apply absolute w-full h-full;
+            @apply w-full;
             backface-visibility: hidden;
         }
 
         .back {
+            @apply absolute top-0 left-0;
             transform: rotateY(180deg);
+        }
+
+        &.flipped {
+            .front {
+                @apply absolute top-0 left-0;
+            }
+
+            .back {
+                @apply relative;
+            }
         }
     }
 }

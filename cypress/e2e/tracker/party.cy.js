@@ -130,6 +130,9 @@ describe('Party', () => {
         utilities.closeModel();
         cy.get('.bedge').contains('50').should('be.visible').click();
         cy.get('.mdc-dialog__title').contains('City Event #50').should('be.visible');
+        cy.get('.mdc-dialog__content img[alt="Remove #50"]').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        cy.wait(700); // removing is ignored while the flip animation runs
         cy.get('.mdc-dialog__content button img[alt="Remove #50"]').click();
         cy.get('.bedge').contains('50').should('not.exist');
     });
@@ -154,9 +157,15 @@ describe('Party', () => {
 
         utilities.scrollTo('35%');
         cy.get('#city-events-bedges .bedge').contains('10').click();
+        cy.get('.mdc-dialog__content img[alt="Remove #10"]').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        cy.wait(700); // removing is ignored while the flip animation runs
         cy.get('.mdc-dialog__content button img[alt="Remove #10"]').click();
         cy.get('#city-events-bedges .bedge').contains('10').should('not.exist');
         cy.get('#city-events-bedges .bedge').contains('15').click();
+        cy.get('.mdc-dialog__content img[alt="Remove #15"]').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        cy.wait(700); // removing is ignored while the flip animation runs
         cy.get('.mdc-dialog__content button img[alt="Remove #15"]').click();
         cy.get('#city-events-bedges .bedge').contains('15').should('not.exist');
 
@@ -200,9 +209,9 @@ describe('Party', () => {
         cy.get('.mdc-dialog__content img[alt^="Remove #"]').should('not.exist');
         cy.get('.mdc-dialog__content button').contains('A').click();
         cy.get('.mdc-dialog__content button').contains('A').should('not.exist');
-        cy.get('.mdc-dialog__content .blur-sm').should('be.visible');
+        cy.get('.mdc-dialog__content .outcome-blur').should('be.visible');
         cy.get('.mdc-dialog__content button').contains('Toggle B').click();
-        cy.get('.mdc-dialog__content .blur-sm').should('not.exist');
+        cy.get('.mdc-dialog__content .outcome-blur').should('not.exist');
         cy.get('.mdc-dialog__content button').contains('Toggle B').parent().next().click();
     });
 
@@ -299,6 +308,77 @@ describe('Party', () => {
                 });
             });
         });
+    });
+
+    it('it keeps a history of the chosen event cards', () => {
+        cy.visit('/tracker/#/party');
+        cy.get('#event-history').should('not.exist');
+
+        utilities.scrollTo('50%');
+        cy.get('button').contains('Draw').first().click();
+        cy.get('.mdc-dialog__content button').contains('B').click();
+        cy.wait(700); // removing is ignored while the flip animation runs
+        cy.get('.mdc-dialog__content button').contains('Toggle A').parent().next().click();
+
+        cy.get('.mdc-dialog--open').should('not.exist');
+        cy.get('#event-history').contains('Event history (1)').click();
+        cy.get('#event-history li').should('have.length', 1)
+            .and('contain', 'City Event #')
+            .and('contain', 'B')
+            .find('img.removed').should('exist');
+
+        // Survives a reload and reopens the card on the front, flipping to the chosen side
+        cy.reload();
+        cy.get('#event-history').contains('Event history (1)').click();
+        cy.get('#event-history li').first().click();
+        cy.get('.mdc-dialog__title').contains('City Event #').should('be.visible');
+        cy.get('.mdc-dialog__content .outcome-blur').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('Toggle A').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('Flip').click();
+        cy.get('.mdc-dialog__content .outcome-blur').should('be.visible');
+        cy.get('.mdc-dialog__content button').contains('Toggle A').click();
+        cy.get('.mdc-dialog__content .outcome-blur').should('not.exist');
+        cy.get('.mdc-dialog__content .flip-card').click();
+        cy.get('.mdc-dialog__content .flip-card .flipped').should('not.exist');
+        cy.get('.mdc-dialog__content img[alt^="Remove #"]').should('not.exist');
+        utilities.closeModel();
+
+        cy.get('#event-history li .forget').click();
+        cy.get('.mdc-dialog--open').contains('button', 'Cancel').click();
+        cy.get('#event-history li').should('have.length', 1);
+        cy.get('#event-history li .forget').click();
+        cy.get('.mdc-dialog--open').contains('button', 'Confirm').click();
+        cy.get('#event-history').should('not.exist');
+    });
+
+    it('it marks event cards returned to the deck', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('50%');
+        cy.get('button').contains('Draw').first().click();
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        utilities.closeModel();
+
+        cy.get('#event-history').contains('Event history (1)').click();
+        cy.get('#event-history li img.returned').should('exist');
+        cy.get('#event-history li img.removed').should('not.exist');
+    });
+
+    it('it shows a card reopened from the history without choices', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('35%');
+        cy.get('#city-events-bedges .bedge').contains('10').click();
+        cy.get('.mdc-dialog__content img[alt="Remove #10"]').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        cy.wait(700); // removing is ignored while the flip animation runs
+        cy.get('.mdc-dialog__content button img[alt="Remove #10"]').click();
+
+        cy.get('#event-history').contains('Event history (1)').click();
+        cy.get('#event-history li').first().click();
+        cy.get('.mdc-dialog__content img[alt^="Remove #"]').should('not.exist');
+        cy.get('.mdc-dialog__content button').contains(/^\s*A\s*$/).should('not.exist');
+        utilities.closeModel();
+
+        cy.get('#event-history').contains('Event history (1)').should('be.visible');
     });
 
     it('It unlocked solo scenario after character is unlocked', () => {

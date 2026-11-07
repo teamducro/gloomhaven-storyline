@@ -20,10 +20,6 @@ class Card {
         // FC uses GH cards
         const gameFolder = this.game === 'fc' ? 'gh' : this.game;
 
-        if (this.game === 'gh2' && ['R', 'C'].includes(this.type)) {
-            const path = `/img/cards/gh2/${this.folder}/${this.id}`;
-            return [`${path}-f.jpg`, ...this.outcomes.map(outcome => `${path}-${outcome.toLowerCase()}.jpg`)];
-        }
         if (this.game === 'gh2' && this.type === 'Q') {
             // No GH2e personal quest card back exists, show the front on both sides.
             const front = `/img/cards/gh2/quest/${this.id}.jpg`;
@@ -40,7 +36,12 @@ class Card {
     }
 
     get outcomes() {
-        return this.game === 'gh2' ? (gameData.events(this.game)[`${this.type}-${this.id}`] || ['A']) : ['A', 'B'];
+        return this.game === 'gh2' ? Object.keys(this.sections) : ['A', 'B'];
+    }
+
+    // GH2e: where each outcome starts on the back, in % of its height
+    get sections() {
+        return gameData.events(this.game)[`${this.type}-${this.id}`] || {A: 0};
     }
 
     get folder() {

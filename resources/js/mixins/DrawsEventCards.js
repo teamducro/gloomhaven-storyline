@@ -13,7 +13,7 @@ export default {
             const [id, ...rest] = deck;
             this.sheet.deckOrder = {...this.sheet.deckOrder, [type]: [...rest, id]};
             this.store();
-            this.$bus.$emit('open-event-card', {id: type + '-' + id, game: this.appData.game, viaDraw: true});
+            this.$bus.$emit('open-event-card', {id: type + '-' + id, game: this.appData.game});
         },
     }
 }
