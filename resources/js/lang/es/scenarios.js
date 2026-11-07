@@ -268,16 +268,19 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Sótano nocivo"
+        "name": "Sótano nocivo",
+        "requirements": "Misión personal “Buscador de Xorn”"
     },
     "gh-53": {
         "name": "Subsuelo de la cripta",
+        "requirements": "Misión personal “Buscador de Xorn”",
         "rewards": [
             "El Buscador de Xorn recibe: “Báculo de Xorn” (Objeto 114) El Buscador no puede vender este objeto."
         ]
     },
     "gh-54": {
         "name": "Palacio de Hielo",
+        "requirements": "Misión personal “Buscador de Xorn”, objeto “Báculo de Xorn” equipado",
         "rewards": [
             "Retira de inmediato al Buscador de Xorn",
             "Añade los Eventos de ciudad y camino 59 a sus mazos, en lugar de los eventos que se añadirían normalmente al retirar la clase del personaje a la que pertenece el Buscador de Xorn",
@@ -307,12 +310,14 @@ export default {
     },
     "gh-55": {
         "name": "Maraña neblinosa",
+        "requirements": "Misión personal “Recupera los árboles”",
         "rewards": [
             "10 de oro colectivas"
         ]
     },
     "gh-56": {
         "name": "Bosque de los bandidos",
+        "requirements": "Misión personal “Recupera los árboles”",
         "rewards": [
             "Misión “Recupera los árboles” qcompleta",
             "Abre el sobre {DS}",
@@ -322,12 +327,14 @@ export default {
     },
     "gh-57": {
         "name": "Investigación",
+        "requirements": "Misión personal “Venganza”",
         "rewards": [
             "+1 de reputación"
         ]
     },
     "gh-58": {
         "name": "Cabaña ensangrentada",
+        "requirements": "Misión personal “Venganza”",
         "rewards": [
             "Misión “Venganza” completa",
             "Abre el sobre X",
@@ -335,10 +342,12 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Arboleda olvidada"
+        "name": "Arboleda olvidada",
+        "requirements": "Misión personal “Hallar la cura”"
     },
     "gh-60": {
         "name": "Laboratorio de alquimia",
+        "requirements": "Misión personal “Hallar la cura”",
         "rewards": [
             "Misión “Hallar la cura” completa",
             "Abre el sobre X",
@@ -346,10 +355,12 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Faro decrépito"
+        "name": "Faro decrépito",
+        "requirements": "Misión personal “La caída del hombre”"
     },
     "gh-62": {
         "name": "Foso de almas",
+        "requirements": "Misión personal “La caída del hombre”",
         "rewards": [
             "Misión “La caída del hombre” completa",
             "Abre el sobre {NS}",
@@ -434,7 +445,8 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Colmena de atormentadores"
+        "name": "Colmena de atormentadores",
+        "requirements": "Valentía"
     },
     "gh-77": {
         "name": "Cripta de los secretos",
@@ -666,6 +678,7 @@ export default {
     },
     "fc-96": {
         "name": "Visitantes inesperados",
+        "requirements": "El fin de la Penumbra (Global) COMPLETADO",
         "rewards": [
             "10 XP para cada personaje",
             "Añade los Eventos de ciudad y camino 82 a sus mazos"
@@ -2456,6 +2469,7 @@ export default {
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Misión personal “Protect and Serve”",
         "rewards": [
             "Gain “Blazing Boots” (Item 87)",
             "+1 reputation"
@@ -2463,6 +2477,7 @@ export default {
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Misión personal “Protect and Serve”",
         "rewards": [
             "Unlock Envelope {BM}",
             "+2 reputation",
@@ -2470,10 +2485,12 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Misión personal “Bandit Banisher”"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Misión personal “Bandit Banisher”",
         "rewards": [
             "Unlock Envelope {CG}",
             "10 gold each"
@@ -2481,18 +2498,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Misión personal “Natural Selection”",
         "rewards": [
             "Gain one random “Stone” item (Item 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Misión personal “Natural Selection”",
         "rewards": [
             "Unlock Envelope {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Misión personal “An Adder Divides”",
         "rewards": [
             "10 experience each",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -2680,12 +2700,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Misión personal “At All Costs”",
         "rewards": [
             "“Rockspine Bulwark” (Item AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Misión personal “The Weight of Failure”",
         "rewards": [
             "“Ghostshimmer Honey” (Item AA02)"
         ]
@@ -2698,6 +2720,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Misión personal “Ingenious Inventor” y objeto “Power Modulator” equipado",
         "rewards": [
             [
                 "“Ingenious Inventor” quest complete",
@@ -2723,6 +2746,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Misión personal “Scrap Diver”",
         "rewards": [
             "“Scrap Diver” quest complete",
             "Open envelope {QA}",
@@ -2737,10 +2761,12 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Misión personal “Brutal Enforcer”"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Misión personal “Brutal Enforcer”",
         "rewards": [
             "“Brutal Enforcer” quest complete",
             "Open Envelope {RM}",
@@ -2748,10 +2774,12 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Misión personal “Apex Predator”"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Misión personal “Apex Predator”",
         "rewards": [
             "“Apex Predator” quest complete",
             "Open Envelope {RM}",
@@ -2782,6 +2810,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Ningún Ruinmaw en el grupo",
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)"

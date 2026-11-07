@@ -268,16 +268,19 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Cantina Infida"
+        "name": "Cantina Infida",
+        "requirements": "Missione Personale “Seeker of Xorn”"
     },
     "gh-53": {
         "name": "Il Seminterrato della Cripta",
+        "requirements": "Missione Personale “Seeker of Xorn”",
         "rewards": [
             "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
         ]
     },
     "gh-54": {
         "name": "Palazzo di Ghiaccio",
+        "requirements": "Missione Personale “Seeker of Xorn”, oggetto “Staff of Xorn” equipaggiato",
         "rewards": [
             "Immediately retire the Seeker of Xorn",
             "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
@@ -307,12 +310,14 @@ export default {
     },
     "gh-55": {
         "name": "Boscaglia Nebbiosa",
+        "requirements": "Missione Personale “Take Back the Trees”",
         "rewards": [
             "10 collective gold"
         ]
     },
     "gh-56": {
         "name": "Bosco dei Banditi",
+        "requirements": "Missione Personale “Take Back the Trees”",
         "rewards": [
             "“Take Back the Trees” quest complete",
             "Open envelope {DS}",
@@ -322,12 +327,14 @@ export default {
     },
     "gh-57": {
         "name": "Indagine",
+        "requirements": "Missione Personale “Vengeance”",
         "rewards": [
             "+1 reputation"
         ]
     },
     "gh-58": {
         "name": "Baracca Cremisi",
+        "requirements": "Missione Personale “Vengeance”",
         "rewards": [
             "“Vengeance” quest complete",
             "Open envelope X",
@@ -335,10 +342,12 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Boschetto Dimenticato"
+        "name": "Boschetto Dimenticato",
+        "requirements": "Missione Personale “Finding the Cure”"
     },
     "gh-60": {
         "name": "Laboratorio Alchemico",
+        "requirements": "Missione Personale “Finding the Cure”",
         "rewards": [
             "“Finding the Cure” quest complete",
             "Open envelope X",
@@ -346,10 +355,12 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Faro Evanescente"
+        "name": "Faro Evanescente",
+        "requirements": "Missione Personale “The Fall of Man”"
     },
     "gh-62": {
         "name": "Fossa delle Anime",
+        "requirements": "Missione Personale “The Fall of Man”",
         "rewards": [
             "“The Fall of Man” quest complete",
             "Open envelope {NS}",
@@ -434,7 +445,8 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Alveare degli Harrower"
+        "name": "Alveare degli Harrower",
+        "requirements": "Coraggio"
     },
     "gh-77": {
         "name": "Camera Segreta",
@@ -666,6 +678,7 @@ export default {
     },
     "fc-96": {
         "name": "Unexpected Visitors",
+        "requirements": "Fine dell'Oscurità (Globale) COMPLETATO",
         "rewards": [
             "10 experience each",
             "Add City and Road Events 82 to their respective decks"
@@ -2454,6 +2467,7 @@ export default {
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Missione Personale “Protect and Serve”",
         "rewards": [
             "Gain “Blazing Boots” (Item 87)",
             "+1 reputation"
@@ -2461,6 +2475,7 @@ export default {
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Missione Personale “Protect and Serve”",
         "rewards": [
             "Unlock Envelope {BM}",
             "+2 reputation",
@@ -2468,10 +2483,12 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Missione Personale “Bandit Banisher”"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Missione Personale “Bandit Banisher”",
         "rewards": [
             "Unlock Envelope {CG}",
             "10 gold each"
@@ -2479,18 +2496,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Missione Personale “Natural Selection”",
         "rewards": [
             "Gain one random “Stone” item (Item 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Missione Personale “Natural Selection”",
         "rewards": [
             "Unlock Envelope {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Missione Personale “An Adder Divides”",
         "rewards": [
             "10 experience each",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -2678,12 +2698,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Missione Personale “At All Costs”",
         "rewards": [
             "“Rockspine Bulwark” (Item AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Missione Personale “The Weight of Failure”",
         "rewards": [
             "“Ghostshimmer Honey” (Item AA02)"
         ]
@@ -2696,6 +2718,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Missione Personale “Ingenious Inventor” e oggetto “Power Modulator” equipaggiato",
         "rewards": [
             [
                 "“Ingenious Inventor” quest complete",
@@ -2721,6 +2744,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Missione Personale “Scrap Diver”",
         "rewards": [
             "“Scrap Diver” quest complete",
             "Open envelope {QA}",
@@ -2735,10 +2759,12 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Missione Personale “Brutal Enforcer”"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Missione Personale “Brutal Enforcer”",
         "rewards": [
             "“Brutal Enforcer” quest complete",
             "Open Envelope {RM}",
@@ -2746,10 +2772,12 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Missione Personale “Apex Predator”"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Missione Personale “Apex Predator”",
         "rewards": [
             "“Apex Predator” quest complete",
             "Open Envelope {RM}",
@@ -2780,6 +2808,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Nessun Ruinmaw nel gruppo",
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)"

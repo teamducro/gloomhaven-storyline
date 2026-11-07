@@ -268,16 +268,19 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Verseuchter Keller"
+        "name": "Verseuchter Keller",
+        "requirements": "Persönliches Ziel „Suche nach Xorn“"
     },
     "gh-53": {
         "name": "Unter der Krypta",
+        "requirements": "Persönliches Ziel „Suche nach Xorn“",
         "rewards": [
             "Der Sucher Xorn's erhält: “Xorn's Stab” (Gegenstand 114) Der Sucher kann diesen Gegenstand nicht verkaufen."
         ]
     },
     "gh-54": {
         "name": "Eispalast",
+        "requirements": "Persönliches Ziel „Suche nach Xorn“, Gegenstand „Stab des Xorn“ ausgerüstet",
         "rewards": [
             "Der Sucher Xorn's geht sofort in den Ruhestand",
             "Fügt anstelle der normalen Ruhestands-Ereignisse des Charakters das Stadt- sowie Wegereignis 59 den entsprechenden Decks hinzu",
@@ -307,12 +310,14 @@ export default {
     },
     "gh-55": {
         "name": "Nebeldickicht",
+        "requirements": "Persönliches Ziel „Take Back the Trees“",
         "rewards": [
             "10 gemeinsames Gold"
         ]
     },
     "gh-56": {
         "name": "Banditenwald",
+        "requirements": "Persönliches Ziel „Take Back the Trees“",
         "rewards": [
             "“Take Back the Trees”-Quest abgeschlossen",
             "Öffnet Umschlag {DS}",
@@ -322,12 +327,14 @@ export default {
     },
     "gh-57": {
         "name": "Ermittlungen",
+        "requirements": "Persönliches Ziel „Rachefeldzug“",
         "rewards": [
             "+1 Ansehen"
         ]
     },
     "gh-58": {
         "name": "Blutige Hütte",
+        "requirements": "Persönliches Ziel „Rachefeldzug“",
         "rewards": [
             "Rache”-Quest abgeschlossen",
             "Öffnet Umschlag X",
@@ -335,10 +342,12 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Vergessener Hain"
+        "name": "Vergessener Hain",
+        "requirements": "Persönliches Ziel „Suche nach Heilung“"
     },
     "gh-60": {
         "name": "Alchemielabor",
+        "requirements": "Persönliches Ziel „Suche nach Heilung“",
         "rewards": [
             "“Finding the Cure”-Quest abgeschlossen",
             "Öffnet Umschlag X",
@@ -346,10 +355,12 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Schwindender Leuchtturm"
+        "name": "Schwindender Leuchtturm",
+        "requirements": "Persönliches Ziel „Vergangene Zivilisation“"
     },
     "gh-62": {
         "name": "Grube der Seelen",
+        "requirements": "Persönliches Ziel „Vergangene Zivilisation“",
         "rewards": [
             "“The Fall of Man”-Quest abgeschlossen",
             "Öffnet Umschlag {NS}",
@@ -434,7 +445,8 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Schwarmling-Nest"
+        "name": "Schwarmling-Nest",
+        "requirements": "Tapferkeit"
     },
     "gh-77": {
         "name": "Kammer der Geheimnisse",
@@ -666,6 +678,7 @@ export default {
     },
     "fc-96": {
         "name": "Unerwartete Besucher",
+        "requirements": "Ende des Grauens (Global) ABGESCHLOSSEN",
         "rewards": [
             "je 10 Erfahrung",
             "Fügt Stadt- sowie Weg-Ereignis 82 den enstsprechenden Decks hinzu"
@@ -2457,6 +2470,7 @@ export default {
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Persönliches Ziel „Protect and Serve“",
         "rewards": [
             "Gain “Blazing Boots” (Item 87)",
             "+1 reputation"
@@ -2464,6 +2478,7 @@ export default {
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Persönliches Ziel „Protect and Serve“",
         "rewards": [
             "Unlock Envelope {BM}",
             "+2 reputation",
@@ -2471,10 +2486,12 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Persönliches Ziel „Bandit Banisher“"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Persönliches Ziel „Bandit Banisher“",
         "rewards": [
             "Unlock Envelope {CG}",
             "10 gold each"
@@ -2482,18 +2499,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Persönliches Ziel „Natural Selection“",
         "rewards": [
             "Gain one random “Stone” item (Item 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Persönliches Ziel „Natural Selection“",
         "rewards": [
             "Unlock Envelope {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Persönliches Ziel „An Adder Divides“",
         "rewards": [
             "10 experience each",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -2681,12 +2701,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Persönliches Ziel „At All Costs“",
         "rewards": [
             "“Rockspine Bulwark” (Item AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Persönliches Ziel „The Weight of Failure“",
         "rewards": [
             "“Ghostshimmer Honey” (Item AA02)"
         ]
@@ -2699,6 +2721,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Persönliches Ziel „Ingenious Inventor“ und Gegenstand „Power Modulator“ ausgerüstet",
         "rewards": [
             [
                 "“Ingenious Inventor” quest complete",
@@ -2724,6 +2747,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Persönliches Ziel „Scrap Diver“",
         "rewards": [
             "“Scrap Diver” quest complete",
             "Open envelope {QA}",
@@ -2738,10 +2762,12 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Persönliches Ziel „Brutal Enforcer“"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Persönliches Ziel „Brutal Enforcer“",
         "rewards": [
             "“Brutal Enforcer” quest complete",
             "Open Envelope {RM}",
@@ -2749,10 +2775,12 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Persönliches Ziel „Apex Predator“"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Persönliches Ziel „Apex Predator“",
         "rewards": [
             "“Apex Predator” quest complete",
             "Open Envelope {RM}",
@@ -2783,6 +2811,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Kein Ruinmaw in der Gruppe",
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)"

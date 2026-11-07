@@ -268,16 +268,19 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Porão Nocivo"
+        "name": "Porão Nocivo",
+        "requirements": "Missão pessoal “Pesquisador de Xorn”"
     },
     "gh-53": {
         "name": "Porão na Cripta",
+        "requirements": "Missão pessoal “Pesquisador de Xorn”",
         "rewards": [
             "O Pesquisador de Xorn recebe: “Cajado de Xorn“ (Item 114) O pesquisador não pode vender este item."
         ]
     },
     "gh-54": {
         "name": "Palácio de Gelo",
+        "requirements": "Missão pessoal “Pesquisador de Xorn”, item “Cajado de Xorn” equipado",
         "rewards": [
             "Aposente imediatamente o Pesquisador de Xorn",
             "Adicionem os Eventos de Cidade e Estrada 59 ao baralhos em vez dos eventos de aposentadoria normais da classe",
@@ -307,12 +310,14 @@ export default {
     },
     "gh-55": {
         "name": "Matagal Nebuloso",
+        "requirements": "Missão pessoal “Retomar as Árvores”",
         "rewards": [
             "10 moedas de ouro coletivas"
         ]
     },
     "gh-56": {
         "name": "Bosque dos Bandidos",
+        "requirements": "Missão pessoal “Retomar as Árvores”",
         "rewards": [
             "Missão “Retomar as Árvores” concluída",
             "Abram o envelope {DS}",
@@ -322,12 +327,14 @@ export default {
     },
     "gh-57": {
         "name": "Investigação",
+        "requirements": "Missão pessoal “Vingança”",
         "rewards": [
             "+1 de reputação"
         ]
     },
     "gh-58": {
         "name": "Cabana Sangrenta",
+        "requirements": "Missão pessoal “Vingança”",
         "rewards": [
             "Missão “Vingança” concluída",
             "Abram o envelope X",
@@ -335,10 +342,12 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Bosque Esquecido"
+        "name": "Bosque Esquecido",
+        "requirements": "Missão pessoal “Encontrando a Cura”"
     },
     "gh-60": {
         "name": "Laboratório de Alquimia",
+        "requirements": "Missão pessoal “Encontrando a Cura”",
         "rewards": [
             "Missão “Encontrando a Cura” concluída",
             "Abram o envelope X",
@@ -346,10 +355,12 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Farol Desvanecente"
+        "name": "Farol Desvanecente",
+        "requirements": "Missão pessoal “A Queda do Homem”"
     },
     "gh-62": {
         "name": "Poço das Almas",
+        "requirements": "Missão pessoal “A Queda do Homem”",
         "rewards": [
             "Missão “A Queda do Homem” concluída",
             "Abram o envelope {NS}",
@@ -434,7 +445,8 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Colmeia Harrower"
+        "name": "Colmeia Harrower",
+        "requirements": "Bravura"
     },
     "gh-77": {
         "name": "Cofre dos Segredos",
@@ -666,6 +678,7 @@ export default {
     },
     "fc-96": {
         "name": "Unexpected Visitors",
+        "requirements": "End of Gloom (Global) CONCLUÍDO",
         "rewards": [
             "10 pontos de experiência para cada personagem",
             "Adicionem os Eventos de Cidade e Estrada 82 to their respective decks"
@@ -2447,6 +2460,7 @@ export default {
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Missão pessoal “Protect and Serve”",
         "rewards": [
             "“Blazing Boots” (Item 87)",
             "+1 de reputação"
@@ -2454,6 +2468,7 @@ export default {
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Missão pessoal “Protect and Serve”",
         "rewards": [
             "Unlock Envelope {BM}",
             "+2 de reputação",
@@ -2461,10 +2476,12 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Missão pessoal “Bandit Banisher”"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Missão pessoal “Bandit Banisher”",
         "rewards": [
             "Unlock Envelope {CG}",
             "10 moedas de ouro para cada personagem"
@@ -2472,18 +2489,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Missão pessoal “Natural Selection”",
         "rewards": [
             "Gain one random “Stone” item (Item 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Missão pessoal “Natural Selection”",
         "rewards": [
             "Unlock Envelope {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Missão pessoal “An Adder Divides”",
         "rewards": [
             "10 pontos de experiência para cada personagem",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -2669,12 +2689,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Missão pessoal “At All Costs”",
         "rewards": [
             "“Rockspine Bulwark” (Item AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Missão pessoal “The Weight of Failure”",
         "rewards": [
             "“Ghostshimmer Honey” (Item AA02)"
         ]
@@ -2687,6 +2709,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Missão pessoal “Ingenious Inventor” e item “Power Modulator” equipado",
         "rewards": [
             [
                 "“Ingenious Inventor” quest complete",
@@ -2712,6 +2735,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Missão pessoal “Scrap Diver”",
         "rewards": [
             "“Scrap Diver” quest complete",
             "Abram o envelope {QA}",
@@ -2726,10 +2750,12 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Missão pessoal “Brutal Enforcer”"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Missão pessoal “Brutal Enforcer”",
         "rewards": [
             "“Brutal Enforcer” quest complete",
             "Open Envelope {RM}",
@@ -2737,10 +2763,12 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Missão pessoal “Apex Predator”"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Missão pessoal “Apex Predator”",
         "rewards": [
             "“Apex Predator” quest complete",
             "Open Envelope {RM}",
@@ -2771,6 +2799,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Nenhum Ruinmaw no grupo",
         "rewards": [
             "10 pontos de experiência para cada personagem",
             "“Savage Cuirass” design (Item RM06)"
