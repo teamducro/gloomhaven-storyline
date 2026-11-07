@@ -67,7 +67,10 @@ export default {
         "name": "Tempio del Veggente"
     },
     "gh-14": {
-        "name": "Conca Ghiacciata"
+        "name": "Conca Ghiacciata",
+        "conclusion_faq": [
+            "I numeri dei luoghi nel testo della storia sono solo promemoria. Essi da soli non sbloccano nulla."
+        ]
     },
     "gh-15": {
         "name": "Santuario della Forza",
@@ -219,7 +222,10 @@ export default {
         ]
     },
     "gh-43": {
-        "name": "Nido dei Drachi"
+        "name": "Nido dei Drachi",
+        "conclusion_faq": [
+            "I numeri dei luoghi nel testo della storia sono solo promemoria. Essi da soli non sbloccano nulla."
+        ]
     },
     "gh-44": {
         "name": "Assalto Tribale",

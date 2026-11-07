@@ -67,7 +67,10 @@ export default {
         "name": "Świątynia Proroctw"
     },
     "gh-14": {
-        "name": "Lodowa Pieczara"
+        "name": "Lodowa Pieczara",
+        "conclusion_faq": [
+            "Numery lokalizacji w tekście historii to tylko przypomnienia. Same w sobie niczego nie odblokowują."
+        ]
     },
     "gh-15": {
         "name": "Kaplica Siły",
@@ -219,7 +222,10 @@ export default {
         ]
     },
     "gh-43": {
-        "name": "Gniazdo Drakona"
+        "name": "Gniazdo Drakona",
+        "conclusion_faq": [
+            "Numery lokalizacji w tekście historii to tylko przypomnienia. Same w sobie niczego nie odblokowują."
+        ]
     },
     "gh-44": {
         "name": "Plemienne Natarcie",

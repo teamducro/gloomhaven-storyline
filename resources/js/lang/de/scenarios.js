@@ -67,7 +67,10 @@ export default {
         "name": "Tempel des Sehers"
     },
     "gh-14": {
-        "name": "Frostsenke"
+        "name": "Frostsenke",
+        "conclusion_faq": [
+            "Die Szenariozahlen im Text sind nur zur Erinnerung, sie werden nicht freigeschaltet."
+        ]
     },
     "gh-15": {
         "name": "Schrein der Stärke",
@@ -219,7 +222,10 @@ export default {
         ]
     },
     "gh-43": {
-        "name": "Drakennest"
+        "name": "Drakennest",
+        "conclusion_faq": [
+            "Die Szenariozahlen im Text sind nur zur Erinnerung, sie werden nicht freigeschaltet."
+        ]
     },
     "gh-44": {
         "name": "Stammesangriff",

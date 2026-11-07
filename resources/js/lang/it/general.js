@@ -433,7 +433,6 @@ export default {
     "and": "e",
     "Hidden Scenario": "Scenario nascosto",
     "Add achievements gained by events other than completing scenarios manually": "Aggiungi manualmente traguardi ottenuti da eventi diversi dal completamento di scenari",
-    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "I numeri dei luoghi nel testo della storia sono solo promemoria. Essi da soli non sbloccano nulla.",
     "Level up when youre back in town": "Level up when you're back in town!",
     "Add {x} {-1} to your attack modifier deck.": "Aggiungi {x} {-1} al tuo mazzo modificatore di attacco.",
     "Attack Modifier Deck": "Attack Modifier Deck",
