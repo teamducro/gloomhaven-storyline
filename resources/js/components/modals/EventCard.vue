@@ -19,7 +19,7 @@
                         </flip-card>
 
                         <transition name="fade">
-                            <div v-if="blur && flipped && card.game !== 'gh2'"
+                            <div v-if="blur && flipped && !card.hasOutcomeSections"
                                  class="outcome-blur rounded-lg absolute h-1/2 w-full top-0 left-0"
                                  :class="{'top-1/2': choice === 'A'}">
                             </div>
@@ -94,7 +94,7 @@ export default {
     },
     computed: {
         blurredSections() {
-            if (!this.blur || this.card.game !== 'gh2') {
+            if (!this.blur || !this.card.hasOutcomeSections) {
                 return [];
             }
             const sections = Object.entries(this.card.sections).sort((a, b) => a[1] - b[1]);

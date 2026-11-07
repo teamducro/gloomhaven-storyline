@@ -12,7 +12,7 @@ class AchievementValidator {
     validate() {
         if (this.validateOneTime) {
             const rule = new GameData().campaignRule(app.game, 'defaultCityRule');
-            if (rule && app.game === 'gh2') {
+            if (rule?.replaceable) {
                 this.checkStartingRule(rule);
             } else if (rule) {
                 this.checkCityRule(rule);
@@ -36,7 +36,7 @@ class AchievementValidator {
         }
     }
 
-    // The board starts with "An Uneasy Peace" until another city rule replaces it.
+    // GH2: the board starts with "An Uneasy Peace" until another city rule replaces it.
     checkStartingRule(rule) {
         if (!new AchievementGroup(rule.group).achievements.length) {
             this.achievementRepository.gain(rule.achievement);

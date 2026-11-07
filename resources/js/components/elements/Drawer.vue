@@ -83,7 +83,7 @@
                                          active-class="mdc-deprecated-list-item--activated">
                                 <span class="mdc-deprecated-list-item__ripple"></span>
                                 <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">assignment</i>
-                                <span class="mdc-deprecated-list-item__text">{{ [Game.fh, Game.gh2].includes(game) ? $t('Campaign sheet') : $t('Party sheet') }}</span>
+                                <span class="mdc-deprecated-list-item__text">{{ $t(gameData.sheetLabel(game)) }}</span>
                             </router-link>
                         </li>
 
@@ -197,22 +197,24 @@ import Helpers from "../../services/Helpers";
 import AuthRepository from "../../apiRepositories/AuthRepository";
 import StoryRepository from "../../repositories/StoryRepository";
 import GameData from "../../services/GameData";
-import {Game} from "../../models/Game";
 
 import md5 from 'js-md5';
 
 export default {
     computed: {
-        Game() {
-            return Game
+        game() {
+            return this.appData.game;
+        },
+        hasMap() {
+            return this.gameData.map(this.game) !== null;
+        },
+        hasBuildings() {
+            return !!this.gameData.buildings(this.game)?.length;
         }
     },
     inject: ['appData'],
     data() {
         return {
-            game: this.appData.game,
-            hasMap: true,
-            hasBuildings: false,
             drawer: null,
             list: null,
             user: null,
@@ -226,10 +228,8 @@ export default {
         }
     },
     mounted() {
-        this.setGame();
         this.drawer = MDCDrawer.attachTo(this.$refs['menu']);
         this.$bus.$on('campaigns-changed', this.setUser);
-        this.$bus.$on('game-selected', this.setGame);
     },
     methods: {
         toggle() {
@@ -260,11 +260,6 @@ export default {
 
             location.reload();
         },
-        setGame(game) {
-            this.game = game || this.appData.game;
-            this.hasMap = this.gameData.map(this.game) !== null;
-            this.hasBuildings = !!this.gameData.buildings(this.game)?.length;
-        },
         setUser() {
             this.user = app.user;
 
@@ -274,7 +269,6 @@ export default {
             }
 
             this.showCampaignSwitch = app.stories.count() > 0;
-            this.setGame();
         },
         shouldOpenShare() {
             return location.search.includes('share');

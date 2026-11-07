@@ -102,6 +102,11 @@ export default class GameData {
         return [Game.gh, Game.fc, Game.gh2, Game.fh]
     }
 
+    // FH and GH2 call the party sheet a campaign sheet.
+    sheetLabel(game) {
+        return [Game.fh, Game.gh2].includes(game) ? 'Campaign sheet' : 'Party sheet'
+    }
+
     achievements(game) {
         if ([Game.jotl, Game.fh, Game.gh2].includes(game)) {
             return files[game].achievements
