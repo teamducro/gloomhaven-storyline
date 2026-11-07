@@ -4121,24 +4121,16 @@
                 57,
                 85
             ],
-            "links_to": [
-                103
-            ],
-            "choices": [
-                103
-            ],
+            "treasures_to": {
+                "57": [
+                    103
+                ]
+            },
             "linked_from": [
                 101
             ],
             "rewards": [
                 "Gain 20 experience each"
-            ],
-            "prompt": "leadDoorUnlocked",
-            "prompt_unlocks": [
-                [
-                    103
-                ],
-                []
             ],
             "loot": {
                 "coins": 15
@@ -4158,7 +4150,7 @@
             },
             "chapter_id": 111,
             "complexity": 2,
-            "linked_from": [
+            "treasures_from": [
                 102
             ],
             "rewards": [

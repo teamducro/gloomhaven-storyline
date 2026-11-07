@@ -108,12 +108,6 @@ export default {
         "title": "Accept the Ascension",
         "text": "Did you accept the Fish King's ascension?"
     },
-    "leadDoorUnlocked": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Into the Black",
-        "text": "Did you fulfil the condition in the conclusion to unlock scenario 103?"
-    },
     "brothersSurvival": {
         "1": "Yes",
         "2": "No",
