@@ -6,6 +6,7 @@ import DeckFiller from "../services/DeckFiller";
 import CharacterRepository from "../repositories/CharacterRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
 import Versionable from "./Versionable";
+import DrawsEvents from "./DrawsEvents";
 import SheetCalculations from "../services/SheetCalculations";
 import ModifierCard from "./ModifierCard";
 import UsesTranslations from "./UsesTranslations";
@@ -333,5 +334,6 @@ Object.assign(CampaignSheet.prototype, {
 
 Object.assign(CampaignSheet.prototype, UsesTranslations);
 Object.assign(CampaignSheet.prototype, Versionable);
+Object.assign(CampaignSheet.prototype, DrawsEvents);
 
 export default CampaignSheet;

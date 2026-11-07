@@ -3,6 +3,7 @@ import Character from "./Character";
 import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
 import Versionable from "./Versionable";
+import DrawsEvents from "./DrawsEvents";
 import GameData from "../services/GameData";
 import DeckFiller from "../services/DeckFiller";
 import SheetCalculations from "../services/SheetCalculations";
@@ -418,5 +419,6 @@ Object.assign(Sheet.prototype, {
 });
 
 Object.assign(Sheet.prototype, Versionable);
+Object.assign(Sheet.prototype, DrawsEvents);
 
 export default Sheet;
