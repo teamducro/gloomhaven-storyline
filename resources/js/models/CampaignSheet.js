@@ -37,8 +37,13 @@ class CampaignSheet {
         this.winterOutpost = {...data.winterOutpost};
         this.boat = {...data.boat};
         this.notes = data.notes || '';
+        // Event deck card ids top to bottom, per card type.
+        this.deckOrder = {...data.deckOrder};
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
+
+        // Drawn event cards: [{card: 'SO-12', choice: 'A', removed: false, date: ISO string}]
+        this.eventHistory = [...(data.eventHistory || [])];
 
         // Items
         this.itemDesigns = {...data.itemDesigns};
@@ -82,8 +87,10 @@ class CampaignSheet {
             winterOutpost: {'winterOutpost': {}},
             boat: {'boat': {}},
             notes: {'notes': ''},
+            deckOrder: {'deckOrder': {}},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
+            eventHistory: {'eventHistory': []},
 
             // Items
             itemDesigns: {'itemDesigns': {}},
@@ -106,6 +113,10 @@ class CampaignSheet {
         if (typeof app.campaignData[this.key()] === 'undefined') {
             this.new();
         }
+    }
+
+    get effectiveProsperityIndex() {
+        return this.prosperityIndex;
     }
 
     new() {
@@ -268,6 +279,9 @@ class CampaignSheet {
         }
         if (!values.enhancementsEnabled) {
             delete values.enhancementsEnabled;
+        }
+        if (!Object.keys(values.deckOrder || {}).length) {
+            delete values.deckOrder;
         }
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;

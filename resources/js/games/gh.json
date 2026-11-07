@@ -25,6 +25,11 @@
             ],
             "achievements_awarded": [
                 "PFS"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "living-bones"
             ]
         },
         {
@@ -66,7 +71,13 @@
                 "10 gold each",
                 "+1 prosperity"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "bandit-archer",
+                "bandit-commander",
+                "living-bones",
+                "living-corpse"
+            ]
         },
         {
             "id": 3,
@@ -119,6 +130,11 @@
             "rewards": [
                 "15 gold each",
                 "+1 prosperity"
+            ],
+            "monsters": [
+                "inox-archer",
+                "inox-guard",
+                "inox-shaman"
             ]
         },
         {
@@ -149,6 +165,13 @@
             ],
             "region_ids": [
                 7
+            ],
+            "monsters": [
+                "bandit-archer",
+                "cultist",
+                "earth-demon",
+                "living-bones",
+                "wind-demon"
             ]
         },
         {
@@ -181,6 +204,13 @@
             ],
             "region_ids": [
                 7
+            ],
+            "monsters": [
+                "cultist",
+                "flame-demon",
+                "frost-demon",
+                "living-bones",
+                "night-demon"
             ]
         },
         {
@@ -218,6 +248,11 @@
             ],
             "rewards": [
                 "5 gold each"
+            ],
+            "monsters": [
+                "living-bones",
+                "living-corpse",
+                "living-spirit"
             ]
         },
         {
@@ -254,6 +289,12 @@
             ],
             "region_ids": [
                 5
+            ],
+            "monsters": [
+                "cave-bear",
+                "earth-demon",
+                "forest-imp",
+                "inox-shaman"
             ]
         },
         {
@@ -311,7 +352,12 @@
             "rewards": [
                 "+2 reputation"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "inox-bodyguard",
+                "living-bones",
+                "living-corpse"
+            ]
         },
         {
             "id": 9,
@@ -361,7 +407,12 @@
                 "20 gold each",
                 "+1 prosperity"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "hound",
+                "merciless-overseer",
+                "vermling-scout"
+            ]
         },
         {
             "id": 10,
@@ -406,6 +457,11 @@
             ],
             "achievements_awarded": [
                 "PADE"
+            ],
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "sun-demon"
             ]
         },
         {
@@ -464,7 +520,12 @@
                 "+2 prosperity",
                 "“Skullbane Axe” design (Item 113)"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "captain-of-the-guard",
+                "city-archer",
+                "city-guard"
+            ]
         },
         {
             "id": 12,
@@ -520,7 +581,13 @@
                 "+4 reputation",
                 "“Skullbane Axe” design (Item 113)"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "cultist",
+                "jekserah",
+                "living-bones",
+                "living-corpse"
+            ]
         },
         {
             "id": 13,
@@ -556,6 +623,12 @@
             ],
             "region_ids": [
                 4
+            ],
+            "monsters": [
+                "cave-bear",
+                "living-spirit",
+                "spitting-drake",
+                "stone-golem"
             ]
         },
         {
@@ -587,6 +660,11 @@
             ],
             "achievements_awarded": [
                 "GTPE"
+            ],
+            "monsters": [
+                "frost-demon",
+                "hound",
+                "living-spirit"
             ]
         },
         {
@@ -615,6 +693,13 @@
             ],
             "rewards": [
                 "20 experience each"
+            ],
+            "monsters": [
+                "frost-demon",
+                "harrower-infester",
+                "savvas-icestorm",
+                "stone-golem",
+                "wind-demon"
             ]
         },
         {
@@ -646,6 +731,12 @@
             ],
             "region_ids": [
                 5
+            ],
+            "monsters": [
+                "earth-demon",
+                "inox-archer",
+                "inox-guard",
+                "wind-demon"
             ]
         },
         {
@@ -678,6 +769,11 @@
             ],
             "rewards": [
                 "25 gold each"
+            ],
+            "monsters": [
+                "cave-bear",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -712,6 +808,11 @@
             ],
             "region_ids": [
                 1
+            ],
+            "monsters": [
+                "giant-viper",
+                "ooze",
+                "vermling-scout"
             ]
         },
         {
@@ -757,6 +858,12 @@
             ],
             "rewards": [
                 "+1 prosperity"
+            ],
+            "monsters": [
+                "cultist",
+                "living-bones",
+                "living-corpse",
+                "living-spirit"
             ]
         },
         {
@@ -801,7 +908,14 @@
                 "+2 reputation",
                 "+1 prosperity"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "cultist",
+                "jekserah",
+                "living-bones",
+                "living-corpse",
+                "night-demon"
+            ]
         },
         {
             "id": 21,
@@ -850,7 +964,16 @@
                 "+1 prosperity",
                 "Add City Event 78 to the deck"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "night-demon",
+                "prime-demon",
+                "sun-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 22,
@@ -896,6 +1019,14 @@
             ],
             "achievements_awarded": [
                 "GAR"
+            ],
+            "monsters": [
+                "cultist",
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "living-bones",
+                "wind-demon"
             ]
         },
         {
@@ -931,6 +1062,12 @@
             "achievements_awarded": [
                 "GAT",
                 "PTR"
+            ],
+            "monsters": [
+                "ancient-artillery",
+                "living-bones",
+                "living-spirit",
+                "stone-golem"
             ]
         },
         {
@@ -965,6 +1102,11 @@
             ],
             "achievements_awarded": [
                 "PTVC"
+            ],
+            "monsters": [
+                "living-spirit",
+                "ooze",
+                "rending-drake"
             ]
         },
         {
@@ -1000,7 +1142,12 @@
             "achievements_awarded": [
                 "PTDC"
             ],
-            "prompt": "dragon"
+            "prompt": "dragon",
+            "monsters": [
+                "hound",
+                "rending-drake",
+                "spitting-drake"
+            ]
         },
         {
             "id": 26,
@@ -1051,6 +1198,12 @@
                 "10 gold each",
                 "+1 reputation",
                 "+2 prosperity"
+            ],
+            "monsters": [
+                "black-imp",
+                "living-corpse",
+                "night-demon",
+                "ooze"
             ]
         },
         {
@@ -1089,6 +1242,14 @@
             "rewards": [
                 "+1 prosperity",
                 "100 gold each This money must immediately be spent on enhancements"
+            ],
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "night-demon",
+                "sun-demon",
+                "wind-demon"
             ]
         },
         {
@@ -1130,6 +1291,13 @@
             ],
             "achievements_awarded": [
                 "PAI"
+            ],
+            "monsters": [
+                "cultist",
+                "living-bones",
+                "living-corpse",
+                "night-demon",
+                "sun-demon"
             ]
         },
         {
@@ -1170,6 +1338,12 @@
             ],
             "rewards": [
                 "15 experience each"
+            ],
+            "monsters": [
+                "black-imp",
+                "living-bones",
+                "living-corpse",
+                "living-spirit"
             ]
         },
         {
@@ -1218,6 +1392,11 @@
             ],
             "rewards": [
                 "10 gold each"
+            ],
+            "monsters": [
+                "deep-terror",
+                "lurker",
+                "ooze"
             ]
         },
         {
@@ -1276,6 +1455,11 @@
             ],
             "achievements_awarded": [
                 "GAC"
+            ],
+            "monsters": [
+                "black-imp",
+                "deep-terror",
+                "night-demon"
             ]
         },
         {
@@ -1318,6 +1502,12 @@
             ],
             "region_ids": [
                 3
+            ],
+            "monsters": [
+                "black-imp",
+                "deep-terror",
+                "giant-viper",
+                "harrower-infester"
             ]
         },
         {
@@ -1369,7 +1559,15 @@
                 "PTVT",
                 "PTDT"
             ],
-            "prompt": "dragon"
+            "prompt": "dragon",
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "savvas-icestorm",
+                "savvas-lavaflow",
+                "wind-demon"
+            ]
         },
         {
             "id": 34,
@@ -1425,7 +1623,12 @@
                 "+2 reputation",
                 "+1 prosperity"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "elder-drake",
+                "rending-drake",
+                "spitting-drake"
+            ]
         },
         {
             "id": 35,
@@ -1493,7 +1696,12 @@
                 "-2 prosperity",
                 "Add City Event 79 to the deck"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "captain-of-the-guard",
+                "city-archer",
+                "city-guard"
+            ]
         },
         {
             "id": 36,
@@ -1556,7 +1764,14 @@
                 "+4 reputation",
                 "Add City Event 78 to the deck"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "prime-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 37,
@@ -1601,6 +1816,11 @@
             ],
             "achievements_awarded": [
                 "PTTT"
+            ],
+            "monsters": [
+                "deep-terror",
+                "harrower-infester",
+                "lurker"
             ]
         },
         {
@@ -1638,6 +1858,12 @@
             ],
             "rewards": [
                 "+1 reputation"
+            ],
+            "monsters": [
+                "inox-archer",
+                "inox-guard",
+                "inox-shaman",
+                "stone-golem"
             ]
         },
         {
@@ -1675,6 +1901,13 @@
             ],
             "rewards": [
                 "10 experience each"
+            ],
+            "monsters": [
+                "cave-bear",
+                "cultist",
+                "frost-demon",
+                "living-bones",
+                "spitting-drake"
             ]
         },
         {
@@ -1724,6 +1957,13 @@
             ],
             "achievements_awarded": [
                 "GAT"
+            ],
+            "monsters": [
+                "cave-bear",
+                "flame-demon",
+                "forest-imp",
+                "living-corpse",
+                "stone-golem"
             ]
         },
         {
@@ -1775,6 +2015,12 @@
                 "25 experience each",
                 "2 ✔ each",
                 "+2 prosperity"
+            ],
+            "monsters": [
+                "ancient-artillery",
+                "living-corpse",
+                "living-spirit",
+                "stone-golem"
             ]
         },
         {
@@ -1829,6 +2075,11 @@
             ],
             "rewards": [
                 "{NOTE_42}"
+            ],
+            "monsters": [
+                "living-spirit",
+                "night-demon",
+                "wind-demon"
             ]
         },
         {
@@ -1867,6 +2118,11 @@
             ],
             "achievements_awarded": [
                 "GWB"
+            ],
+            "monsters": [
+                "flame-demon",
+                "rending-drake",
+                "spitting-drake"
             ]
         },
         {
@@ -1903,6 +2159,12 @@
             "rewards": [
                 "Open envelope {DS}",
                 "+2 reputation"
+            ],
+            "monsters": [
+                "hound",
+                "inox-archer",
+                "inox-guard",
+                "inox-shaman"
             ]
         },
         {
@@ -1945,6 +2207,11 @@
             "rewards": [
                 "20 gold each",
                 "-2 reputation"
+            ],
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "hound"
             ]
         },
         {
@@ -1986,7 +2253,14 @@
             "achievements_awarded": [
                 "GEOC"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "frost-demon",
+                "night-demon",
+                "savvas-icestorm",
+                "wind-demon",
+                "winged-horror"
+            ]
         },
         {
             "id": 47,
@@ -2028,7 +2302,13 @@
             "achievements_awarded": [
                 "GEOC"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "deep-terror",
+                "harrower-infester",
+                "lurker",
+                "the-sightless-eye"
+            ]
         },
         {
             "id": 48,
@@ -2069,7 +2349,13 @@
             "achievements_awarded": [
                 "GEOC"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "dark-rider",
+                "earth-demon",
+                "forest-imp",
+                "harrower-infester"
+            ]
         },
         {
             "id": 49,
@@ -2117,6 +2403,12 @@
             "rewards": [
                 "50 gold each",
                 "-3 reputation"
+            ],
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "giant-viper",
+                "siege-cannon"
             ]
         },
         {
@@ -2166,6 +2458,12 @@
             "rewards": [
                 "+3 reputation",
                 "-2 prosperity"
+            ],
+            "monsters": [
+                "earth-demon",
+                "night-demon",
+                "sun-demon",
+                "wind-demon"
             ]
         },
         {
@@ -2212,7 +2510,10 @@
                 "Add City Event 81 to the deck",
                 "Add Road Event 69 to the deck"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "the-gloom"
+            ]
         },
         {
             "id": 52,
@@ -2238,6 +2539,13 @@
             ],
             "cards": [
                 "Q-510-Seeker of Xorn"
+            ],
+            "monsters": [
+                "living-corpse",
+                "ooze",
+                "spitting-drake",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -2269,6 +2577,13 @@
             ],
             "rewards": [
                 "The Seeker of Xorn receives: “Staff of Xorn” (Item 114) The Seeker cannot sell this item."
+            ],
+            "monsters": [
+                "giant-viper",
+                "living-bones",
+                "living-corpse",
+                "living-spirit",
+                "ooze"
             ]
         },
         {
@@ -2301,6 +2616,95 @@
                 "Immediately retire the Seeker of Xorn",
                 "Add City and Road Events 59 to the decks instead of the normal retirement events for the class",
                 "Open envelope {PH}"
+            ],
+            "monsters": [
+                "cave-bear",
+                "frost-demon",
+                "harrower-infester",
+                "living-spirit"
+            ]
+        },
+        {
+            "id": "SoX1",
+            "game": "gh",
+            "requires_event": "C-SoX1",
+            "name": "Nobles’ Crypt",
+            "is_side": true,
+            "pages": [
+                "gh/SoX1"
+            ],
+            "requirements": "“Seeker of Xorn” personal quest, Nobles’ Crypt (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "PSOX1"
+                    ]
+                }
+            ],
+            "chapter_id": 101,
+            "cards": [
+                "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "+1 reputation",
+                "Add City Event SoX2 to the deck"
+            ]
+        },
+        {
+            "id": "SoX2",
+            "game": "gh",
+            "requires_event": "C-SoX1",
+            "name": "Flooded Crypt",
+            "is_side": true,
+            "pages": [
+                "gh/SoX2"
+            ],
+            "requirements": "“Seeker of Xorn” personal quest, Water-Breathing (Global) and Flooded Crypt (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GWB",
+                        "PSOX2"
+                    ]
+                }
+            ],
+            "chapter_id": 101,
+            "cards": [
+                "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "Add City Event SoX3 to the deck",
+                "Choose only one of the following: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) or “Wave Crest” (Item 111)"
+            ]
+        },
+        {
+            "id": "SoX3",
+            "game": "gh",
+            "requires_event": "C-SoX1",
+            "name": "Crypt of the Ancients",
+            "is_side": true,
+            "pages": [
+                "gh/SoX3"
+            ],
+            "requirements": "“Seeker of Xorn” personal quest, Ancient Technology (Global) x3 and Crypt of the Ancients (Party) COMPLETE",
+            "required_by": [
+                {
+                    "complete": [
+                        "GAT3",
+                        "PSOX3"
+                    ]
+                }
+            ],
+            "chapter_id": 101,
+            "cards": [
+                "Q-510-Seeker of Xorn"
+            ],
+            "rewards": [
+                "50 collective gold",
+                "Add City Event SoX3 to the deck"
+            ],
+            "achievements_awarded": [
+                "GAT"
             ]
         },
         {
@@ -2329,7 +2733,8 @@
             ],
             "rewards": [
                 "10 collective gold"
-            ]
+            ],
+            "monsters": []
         },
         {
             "id": 56,
@@ -2362,6 +2767,12 @@
                 "Open envelope {DS}",
                 "10 gold each",
                 "+2 reputation"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "hound",
+                "rending-drake"
             ]
         },
         {
@@ -2394,6 +2805,12 @@
             ],
             "rewards": [
                 "+1 reputation"
+            ],
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "hound",
+                "infiltrator"
             ]
         },
         {
@@ -2423,6 +2840,12 @@
                 "“Vengeance” quest complete",
                 "Open envelope X",
                 "+2 reputation"
+            ],
+            "monsters": [
+                "black-imp",
+                "earth-demon",
+                "harrower-infester",
+                "the-harvester"
             ]
         },
         {
@@ -2448,6 +2871,11 @@
             ],
             "cards": [
                 "Q-513-Finding the Cure"
+            ],
+            "monsters": [
+                "cave-bear",
+                "forest-imp",
+                "hound"
             ]
         },
         {
@@ -2478,6 +2906,13 @@
                 "“Finding the Cure” quest complete",
                 "Open envelope X",
                 "+1 prosperity"
+            ],
+            "monsters": [
+                "giant-viper",
+                "hound",
+                "ooze",
+                "rending-drake",
+                "spitting-drake"
             ]
         },
         {
@@ -2504,6 +2939,12 @@
             ],
             "cards": [
                 "Q-529-The Fall of Man"
+            ],
+            "monsters": [
+                "flame-demon",
+                "frost-demon",
+                "giant-viper",
+                "ooze"
             ]
         },
         {
@@ -2536,6 +2977,11 @@
                 "“The Fall of Man” quest complete",
                 "Open envelope {NS}",
                 "10 experience each"
+            ],
+            "monsters": [
+                "hungry-soul",
+                "living-bones",
+                "living-spirit"
             ]
         },
         {
@@ -2560,6 +3006,12 @@
             ],
             "rewards": [
                 "15 gold each"
+            ],
+            "monsters": [
+                "flame-demon",
+                "inox-archer",
+                "inox-guard",
+                "vermling-scout"
             ]
         },
         {
@@ -2592,6 +3044,11 @@
             ],
             "rewards": [
                 "10 experience each"
+            ],
+            "monsters": [
+                "forest-imp",
+                "ooze",
+                "rending-drake"
             ]
         },
         {
@@ -2617,6 +3074,11 @@
             ],
             "rewards": [
                 "“Ancient Drill” design (Item 112)"
+            ],
+            "monsters": [
+                "hound",
+                "inox-shaman",
+                "vermling-scout"
             ]
         },
         {
@@ -2643,6 +3105,12 @@
             ],
             "achievements_awarded": [
                 "GAT"
+            ],
+            "monsters": [
+                "ancient-artillery",
+                "living-spirit",
+                "ooze",
+                "stone-golem"
             ]
         },
         {
@@ -2667,6 +3135,11 @@
             ],
             "rewards": [
                 "“Power Core” (Item 132)"
+            ],
+            "monsters": [
+                "cave-bear",
+                "forest-imp",
+                "stone-golem"
             ]
         },
         {
@@ -2691,6 +3164,12 @@
             ],
             "rewards": [
                 "2 “Major Healing Potions” (Item 027)"
+            ],
+            "monsters": [
+                "black-imp",
+                "giant-viper",
+                "living-corpse",
+                "rending-drake"
             ]
         },
         {
@@ -2709,6 +3188,13 @@
             "chapter_id": 102,
             "rewards": [
                 "15 gold each"
+            ],
+            "monsters": [
+                "forest-imp",
+                "living-spirit",
+                "stone-golem",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -2734,6 +3220,11 @@
             ],
             "rewards": [
                 "+2 prosperity"
+            ],
+            "monsters": [
+                "living-spirit",
+                "night-demon",
+                "wind-demon"
             ]
         },
         {
@@ -2753,6 +3244,11 @@
             "chapter_id": 102,
             "rewards": [
                 "2 “Major Power Potions” (Item 041)"
+            ],
+            "monsters": [
+                "spitting-drake",
+                "sun-demon",
+                "wind-demon"
             ]
         },
         {
@@ -2775,6 +3271,11 @@
             "rewards": [
                 "+1 reputation",
                 "+1 prosperity"
+            ],
+            "monsters": [
+                "forest-imp",
+                "giant-viper",
+                "ooze"
             ]
         },
         {
@@ -2799,6 +3300,13 @@
             ],
             "rewards": [
                 "+1 reputation"
+            ],
+            "monsters": [
+                "ancient-artillery",
+                "hound",
+                "inox-archer",
+                "inox-guard",
+                "inox-shaman"
             ]
         },
         {
@@ -2835,6 +3343,12 @@
             "rewards": [
                 "10 gold each",
                 "+2 prosperity"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "deep-terror",
+                "lurker"
             ]
         },
         {
@@ -2867,6 +3381,12 @@
             ],
             "rewards": [
                 "60 gold each"
+            ],
+            "monsters": [
+                "bloated-regent",
+                "living-bones",
+                "living-corpse",
+                "living-spirit"
             ]
         },
         {
@@ -2890,6 +3410,12 @@
             ],
             "region_ids": [
                 4
+            ],
+            "monsters": [
+                "giant-viper",
+                "harrower-infester",
+                "living-bones",
+                "night-demon"
             ]
         },
         {
@@ -2915,6 +3441,12 @@
             ],
             "rewards": [
                 "5 experience each"
+            ],
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "hound",
+                "stone-golem"
             ]
         },
         {
@@ -2939,6 +3471,13 @@
             ],
             "rewards": [
                 "+3 reputation"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "black-imp",
+                "cultist",
+                "living-bones"
             ]
         },
         {
@@ -2977,6 +3516,11 @@
             ],
             "rewards": [
                 "15 gold each"
+            ],
+            "monsters": [
+                "giant-viper",
+                "stone-golem",
+                "the-betrayer"
             ]
         },
         {
@@ -3002,6 +3546,12 @@
             ],
             "rewards": [
                 "10 experience each"
+            ],
+            "monsters": [
+                "ancient-artillery",
+                "city-archer",
+                "city-guard",
+                "hound"
             ]
         },
         {
@@ -3029,6 +3579,13 @@
             ],
             "rewards": [
                 "10 experience each"
+            ],
+            "monsters": [
+                "ancient-artillery",
+                "night-demon",
+                "stone-golem",
+                "sun-demon",
+                "the-colorless"
             ]
         },
         {
@@ -3063,7 +3620,12 @@
                     "-2 prosperity"
                 ]
             ],
-            "prompt": "burningMountain"
+            "prompt": "burningMountain",
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "stone-golem"
+            ]
         },
         {
             "id": 83,
@@ -3095,6 +3657,13 @@
             ],
             "rewards": [
                 "40 collective gold"
+            ],
+            "monsters": [
+                "cultist",
+                "flame-demon",
+                "hound",
+                "living-bones",
+                "living-spirit"
             ]
         },
         {
@@ -3132,6 +3701,11 @@
             "cards": [
                 "R-11",
                 "C-73"
+            ],
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon"
             ]
         },
         {
@@ -3159,6 +3733,12 @@
             ],
             "rewards": [
                 "“Orb of Dawn” (Item 121)"
+            ],
+            "monsters": [
+                "black-imp",
+                "hound",
+                "night-demon",
+                "sun-demon"
             ]
         },
         {
@@ -3191,6 +3771,12 @@
             ],
             "rewards": [
                 "+2 reputation"
+            ],
+            "monsters": [
+                "cave-bear",
+                "lurker",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -3227,6 +3813,13 @@
             "rewards": [
                 "+1 reputation",
                 "+1 prosperity"
+            ],
+            "monsters": [
+                "black-imp",
+                "deep-terror",
+                "giant-ooze",
+                "lurker",
+                "ooze"
             ]
         },
         {
@@ -3265,6 +3858,12 @@
             ],
             "rewards": [
                 "“Staff of Summoning” (Item 120)"
+            ],
+            "monsters": [
+                "frost-demon",
+                "lurker",
+                "lurker-king",
+                "ooze"
             ]
         },
         {
@@ -3303,6 +3902,12 @@
             ],
             "rewards": [
                 "50 collective gold"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "cultist",
+                "giant-viper"
             ]
         },
         {
@@ -3327,6 +3932,12 @@
             ],
             "rewards": [
                 "“Black Censer” (Item 128)"
+            ],
+            "monsters": [
+                "earth-demon",
+                "living-spirit",
+                "night-demon",
+                "wind-demon"
             ]
         },
         {
@@ -3351,6 +3962,11 @@
             ],
             "rewards": [
                 "2 ✔ each"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "living-spirit"
             ]
         },
         {
@@ -3386,6 +4002,16 @@
             "rewards": [
                 "10 gold each",
                 "-3 reputation"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "city-archer",
+                "city-guard",
+                "earth-demon",
+                "flame-demon",
+                "inox-guard",
+                "savvas-lavaflow"
             ]
         },
         {
@@ -3421,6 +4047,11 @@
             ],
             "rewards": [
                 "10 experience each"
+            ],
+            "monsters": [
+                "frost-demon",
+                "living-spirit",
+                "lurker"
             ]
         },
         {
@@ -3445,6 +4076,12 @@
             ],
             "achievements_awarded": [
                 "PTTN"
+            ],
+            "monsters": [
+                "cave-bear",
+                "hound",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -3477,6 +4114,12 @@
             ],
             "rewards": [
                 "“Skull of Hatred” (Item 119)"
+            ],
+            "monsters": [
+                "deep-terror",
+                "earth-demon",
+                "flame-demon",
+                "prime-lieutenant"
             ]
         },
         {
@@ -3489,6 +4132,11 @@
             ],
             "rewards": [
                 "“Imposing Blade” (Item 134)"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "living-bones"
             ]
         },
         {
@@ -3501,6 +4149,10 @@
             ],
             "rewards": [
                 "“Focusing Ray” (Item 135)"
+            ],
+            "monsters": [
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -3513,6 +4165,11 @@
             ],
             "rewards": [
                 "“Volatile Elixir” (Item 136)"
+            ],
+            "monsters": [
+                "black-imp",
+                "spitting-drake",
+                "stone-golem"
             ]
         },
         {
@@ -3525,6 +4182,11 @@
             ],
             "rewards": [
                 "“Silent Stiletto” (Item 137)"
+            ],
+            "monsters": [
+                "ancient-artillery",
+                "city-guard",
+                "stone-golem"
             ]
         },
         {
@@ -3537,6 +4199,11 @@
             ],
             "rewards": [
                 "“Stone Charm” (Item 138)"
+            ],
+            "monsters": [
+                "cave-bear",
+                "ooze",
+                "sun-demon"
             ]
         },
         {
@@ -3549,6 +4216,11 @@
             ],
             "rewards": [
                 "“Psychic Knife” (Item 139)"
+            ],
+            "monsters": [
+                "vermling-scout",
+                "vermling-shaman",
+                "earth-demon"
             ]
         },
         {
@@ -3562,6 +4234,16 @@
             ],
             "rewards": [
                 "“Sun Shield” (Item 140)"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "inox-archer",
+                "inox-guard",
+                "inox-shaman",
+                "cave-bear",
+                "vermling-scout",
+                "vermling-shaman"
             ]
         },
         {
@@ -3575,6 +4257,12 @@
             ],
             "rewards": [
                 "“Mask of Death” (Item 145)"
+            ],
+            "monsters": [
+                "cultist",
+                "inox-necromancer",
+                "living-bones",
+                "living-corpse"
             ]
         },
         {
@@ -3587,6 +4275,11 @@
             ],
             "rewards": [
                 "“Utility Belt” (Item 141)"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "hound"
             ]
         },
         {
@@ -3599,6 +4292,11 @@
             ],
             "rewards": [
                 "“Phasing Idol” (Item 142)"
+            ],
+            "monsters": [
+                "cave-bear",
+                "hound",
+                "spitting-drake"
             ]
         },
         {
@@ -3611,6 +4309,10 @@
             ],
             "rewards": [
                 "“Smoke Elixir” (Item 143)"
+            ],
+            "monsters": [
+                "deep-terror",
+                "night-demon"
             ]
         },
         {
@@ -3623,6 +4325,10 @@
             ],
             "rewards": [
                 "“Pendant of the Plague” (Item 144)"
+            ],
+            "monsters": [
+                "black-imp",
+                "giant-viper"
             ]
         },
         {
@@ -3636,6 +4342,14 @@
             ],
             "rewards": [
                 "“Master’s Lute” (Item 146)"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-guard",
+                "city-guard",
+                "song-of-the-deep",
+                "stone-golem",
+                "city-archer"
             ]
         },
         {
@@ -3649,6 +4363,13 @@
             ],
             "rewards": [
                 "“Cloak of the Hunter” (Item 147)"
+            ],
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "giant-viper",
+                "hound",
+                "spitting-drake"
             ]
         },
         {
@@ -3661,7 +4382,8 @@
             ],
             "rewards": [
                 "“Doctor’s Coat” (Item 148)"
-            ]
+            ],
+            "monsters": []
         },
         {
             "id": 217,
@@ -3673,6 +4395,12 @@
             ],
             "rewards": [
                 "“Elemental Boots” (Item 149)"
+            ],
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "wind-demon"
             ]
         },
         {
@@ -3686,6 +4414,13 @@
             ],
             "rewards": [
                 "“Staff of Command” (Item 150)"
+            ],
+            "monsters": [
+                "forest-imp",
+                "hound",
+                "rending-drake",
+                "cave-bear",
+                "vermling-shaman"
             ]
         },
         {
@@ -3698,6 +4433,11 @@
             ],
             "rewards": [
                 "“Sword of the Sands” (Item 151)"
+            ],
+            "monsters": [
+                "giant-viper",
+                "living-spirit",
+                "stone-golem"
             ]
         },
         {
@@ -3737,6 +4477,12 @@
             "rewards": [
                 "10 experience each",
                 "Add City and Road Events 82 to their respective decks"
+            ],
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "wind-demon"
             ]
         },
         {
@@ -3776,6 +4522,13 @@
             "rewards": [
                 "10 gold each",
                 "Add City Events 88, 89 and 90 to the deck"
+            ],
+            "monsters": [
+                "black-imp",
+                "living-bones",
+                "living-corpse",
+                "aesther-scout",
+                "deep-terror"
             ]
         },
         {
@@ -3841,7 +4594,13 @@
                     "+1 reputation"
                 ]
             ],
-            "prompt": "merchantsBay"
+            "prompt": "merchantsBay",
+            "monsters": [
+                "ancient-artillery",
+                "bandit-archer",
+                "bandit-guard",
+                "spitting-drake"
+            ]
         },
         {
             "id": 99,
@@ -3894,7 +4653,14 @@
                     "“Minor Antidote” (Item 153)"
                 ]
             ],
-            "prompt": "aftershocks"
+            "prompt": "aftershocks",
+            "monsters": [
+                "black-imp",
+                "cultist",
+                "deep-terror",
+                "living-bones",
+                "valrath-savage"
+            ]
         },
         {
             "id": 100,
@@ -3952,7 +4718,12 @@
             "rewards": [
                 "Choose to gain one of the following sets: “Telescopic Lens” (Item 059) and “Ancient Drill” (Item 112), OR “Curious Gear” (Item 125) and “Remote Spider” (Item 126)"
             ],
-            "prompt": "shiftingGears"
+            "prompt": "shiftingGears",
+            "monsters": [
+                "stone-golem",
+                "living-spirit",
+                "ancient-artillery"
+            ]
         },
         {
             "id": 101,
@@ -3996,6 +4767,14 @@
                 "20 collective gold",
                 "+1 reputation",
                 "+1 prosperity"
+            ],
+            "monsters": [
+                "rending-drake",
+                "spitting-drake",
+                "living-spirit",
+                "night-demon",
+                "living-bones",
+                "living-corpse"
             ]
         },
         {
@@ -4056,7 +4835,8 @@
             "rewards": [
                 "15 experience each",
                 "If no more than 2+C inhabitants were intimidated: +2 reputation Otherwise: -2 reputation"
-            ]
+            ],
+            "monsters": []
         },
         {
             "id": 103,
@@ -4115,7 +4895,8 @@
             "rewards": [
                 "+2 prosperity",
                 "Add City Event 87 to the deck"
-            ]
+            ],
+            "monsters": []
         },
         {
             "id": 104,
@@ -4174,6 +4955,12 @@
             ],
             "rewards": [
                 "“Major Mana Potion” (Item 048)"
+            ],
+            "monsters": [
+                "harrower-infester",
+                "lurker",
+                "spitting-drake",
+                "sun-demon"
             ]
         },
         {
@@ -4239,6 +5026,12 @@
             ],
             "rewards": [
                 "“Major Antidote” (Item 154)"
+            ],
+            "monsters": [
+                "bandit-guard",
+                "valrath-tracker",
+                "hound",
+                "cave-bear"
             ]
         },
         {
@@ -4313,7 +5106,17 @@
                     "+ 1 prosperity"
                 ]
             ],
-            "prompt": "searchPiecesOfAnArtifact"
+            "prompt": "searchPiecesOfAnArtifact",
+            "monsters": [
+                "aesther-scout",
+                "ancient-artillery",
+                "earth-demon",
+                "flame-demon",
+                "savvas-lavaflow",
+                "frost-demon",
+                "savvas-icestorm",
+                "wind-demon"
+            ]
         },
         {
             "id": 107,
@@ -4385,6 +5188,11 @@
             },
             "rewards": [
                 "5 experience each"
+            ],
+            "monsters": [
+                "vermling-scout",
+                "vermling-shaman",
+                "living-spirit"
             ]
         },
         {
@@ -4458,7 +5266,15 @@
                     "2 “Throwing Axes” (Item 161)"
                 ]
             ],
-            "prompt": "bloodyWar"
+            "prompt": "bloodyWar",
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "human-commander",
+                "valrath-commander",
+                "valrath-savage",
+                "valrath-tracker"
+            ]
         },
         {
             "id": 109,
@@ -4513,6 +5329,12 @@
             "rewards": [
                 "10 experience each",
                 "“Protective Charm” (Item 052)"
+            ],
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "valrath-savage",
+                "valrath-tracker"
             ]
         },
         {
@@ -4556,6 +5378,14 @@
             ],
             "rewards": [
                 "“Crystal Tiara” (Item 163)"
+            ],
+            "monsters": [
+                "city-guard",
+                "savvas-lavaflow",
+                "valrath-tracker",
+                "vermling-shaman",
+                "ooze",
+                "lurker"
             ]
         },
         {
@@ -4619,7 +5449,15 @@
                     "1 ✓ each"
                 ]
             ],
-            "prompt": "escapeFromTheHusk"
+            "prompt": "escapeFromTheHusk",
+            "monsters": [
+                "aesther-ashblade",
+                "aesther-scout",
+                "black-imp",
+                "night-demon",
+                "harrower-infester",
+                "vermling-shaman"
+            ]
         },
         {
             "id": 112,
@@ -4681,7 +5519,12 @@
                     "1 ✓ each"
                 ]
             ],
-            "prompt": "directingBeams"
+            "prompt": "directingBeams",
+            "monsters": [
+                "ancient-artillery",
+                "living-bones",
+                "stone-golem"
+            ]
         },
         {
             "id": 113,
@@ -4723,6 +5566,13 @@
                 "135 gold each",
                 "This money must immediately be spent on any Move {MOVE}, Range {RANGE} or Jump {JUMP} enhancements",
                 "+1 prosperity"
+            ],
+            "monsters": [
+                "stone-golem",
+                "deep-terror",
+                "living-bones",
+                "living-corpse",
+                "living-spirit"
             ]
         },
         {
@@ -4777,6 +5627,11 @@
             ],
             "rewards": [
                 "Party Boon: Additional costs of enhancing an ability card based on the level of the card are now reduced by 5 gold per level."
+            ],
+            "monsters": [
+                "aesther-ashblade",
+                "aesther-scout",
+                "wind-demon"
             ]
         },
         {
@@ -4814,6 +5669,15 @@
                 "+1 prosperity",
                 "Retire the Aesther Diviner {DR}",
                 "Add City and Road Events 83 to their respective decks"
+            ],
+            "monsters": [
+                "aesther-ashblade",
+                "aesther-scout",
+                "black-imp",
+                "manifestation-of-corruption",
+                "naaret",
+                "valrath-savage",
+                "valrath-tracker"
             ]
         },
         {
@@ -4830,6 +5694,10 @@
             ],
             "rewards": [
                 "“Basin of Prophecy” (Item 164)"
+            ],
+            "monsters": [
+                "earth-demon",
+                "valrath-savage"
             ]
         },
         {
@@ -4856,6 +5724,21 @@
                 "15 gold each",
                 "1 ✓ each",
                 "All characters may add one new card of their class to their active card pool. The card selected must have a level equal to or less than the character's level minus 2."
+            ],
+            "monsters": [
+                "ancient-artillery",
+                "city-archer",
+                "city-guard",
+                "hound",
+                "earth-demon",
+                "forest-imp",
+                "wind-demon",
+                "black-imp",
+                "deep-terror",
+                "harrower-infester",
+                "aesther-ashblade",
+                "savvas-icestorm",
+                "savvas-lavaflow"
             ]
         }
     ],
@@ -5347,6 +6230,41 @@
             "is_manual": true,
             "cards": [
                 "C-31"
+            ]
+        },
+        {
+            "id": "PSOX1",
+            "requires_event": "C-SoX1",
+            "name": "Nobles’ Crypt",
+            "type": "Party",
+            "game": "gh",
+            "is_manual": true,
+            "cards": [
+                "C-SoX1"
+            ]
+        },
+        {
+            "id": "PSOX2",
+            "requires_event": "C-SoX1",
+            "name": "Flooded Crypt",
+            "type": "Party",
+            "game": "gh",
+            "is_manual": true,
+            "cards": [
+                "C-SoX2",
+                "C-SoX3"
+            ]
+        },
+        {
+            "id": "PSOX3",
+            "requires_event": "C-SoX1",
+            "name": "Crypt of the Ancients",
+            "type": "Party",
+            "game": "gh",
+            "is_manual": true,
+            "cards": [
+                "C-SoX2",
+                "C-SoX3"
             ]
         },
         {
@@ -6048,6 +6966,14 @@
                         0
                     ]
                 }
+            ],
+            "events_on_choose": [
+                "C-SoX1"
+            ],
+            "events_addable_on_choose": [
+                "C-SoX2",
+                "C-SoX3",
+                "C-SoX4"
             ]
         },
         {

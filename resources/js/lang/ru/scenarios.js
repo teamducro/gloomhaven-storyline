@@ -268,16 +268,19 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Жуткий погреб"
+        "name": "Жуткий погреб",
+        "requirements": "Личное задание «Последователь Зорна»"
     },
     "gh-53": {
         "name": "Подвал склепа",
+        "requirements": "Личное задание «Последователь Зорна»",
         "rewards": [
             "Последователь Зорна получает «Посох Зорна» (предмет 114). Он не может продать этот предмет."
         ]
     },
     "gh-54": {
         "name": "Ледяной дворец",
+        "requirements": "Личное задание «Последователь Зорна», предмет «Посох Зорна» экипирован",
         "rewards": [
             "Личное задание «Последователь Зорна» выполнено",
             "Последователь Зорна немедленно отправляется на покой",
@@ -285,14 +288,37 @@ export default {
             "Откройте коробочки {PH}"
         ]
     },
+    "gh-SoX1": {
+        "name": "Nobles’ Crypt",
+        "rewards": [
+            "+1 reputation",
+            "Add City Event SoX2 to the deck"
+        ]
+    },
+    "gh-SoX2": {
+        "name": "Flooded Crypt",
+        "rewards": [
+            "Add City Event SoX3 to the deck",
+            "Choose only one of the following: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) or “Wave Crest” (Item 111)"
+        ]
+    },
+    "gh-SoX3": {
+        "name": "Crypt of the Ancients",
+        "rewards": [
+            "50 collective gold",
+            "Add City Event SoX3 to the deck"
+        ]
+    },
     "gh-55": {
         "name": "Туманные заросли",
+        "requirements": "Личное задание «Возвращение леса»",
         "rewards": [
             "Суммарно 10 золотых"
         ]
     },
     "gh-56": {
         "name": "Разбойничья пуща",
+        "requirements": "Личное задание «Возвращение леса»",
         "rewards": [
             "Личное задание «Возвращение леса» выполнено",
             "Откройте коробочки {DS}",
@@ -302,12 +328,14 @@ export default {
     },
     "gh-57": {
         "name": "Расследование",
+        "requirements": "Личное задание «Месть»",
         "rewards": [
             "+1 к репутации"
         ]
     },
     "gh-58": {
         "name": "Кровавая хижина",
+        "requirements": "Личное задание «Месть»",
         "rewards": [
             "Личное задание «Месть» выполнено",
             "Откройте конверт В",
@@ -315,10 +343,12 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Забытая роща"
+        "name": "Забытая роща",
+        "requirements": "Личное задание «В поисках лекарства»"
     },
     "gh-60": {
         "name": "Алхемическая лаборатория",
+        "requirements": "Личное задание «В поисках лекарства»",
         "rewards": [
             "Личное задание «В поисках лекартсва» выполнено",
             "Откройте конверт В",
@@ -326,10 +356,12 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Исчезающий маяк"
+        "name": "Исчезающий маяк",
+        "requirements": "Личное задание «Грехопадение»"
     },
     "gh-62": {
         "name": "Колодец душ",
+        "requirements": "Личное задание «Грехопадение»",
         "rewards": [
             "Личное задание «Грехопадение» выполнено",
             "Откройте коробочки {NS}",
@@ -414,7 +446,8 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Улей жнецов"
+        "name": "Улей жнецов",
+        "requirements": "Храбрость"
     },
     "gh-77": {
         "name": "Хранилище тайн",
@@ -646,6 +679,7 @@ export default {
     },
     "fc-96": {
         "name": "Unexpected Visitors",
+        "requirements": "Конец эпохи Мрака (глобальное) ВЫПОЛНЕНО",
         "rewards": [
             "10 experience each",
             "Add City and Road Events 82 to their respective decks"
@@ -2427,6 +2461,7 @@ export default {
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Личное задание «Protect and Serve»",
         "rewards": [
             "“Blazing Boots” (Item 87)",
             "+1 к репутации"
@@ -2434,6 +2469,7 @@ export default {
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Личное задание «Protect and Serve»",
         "rewards": [
             "Unlock Envelope {BM}",
             "+2 к репутации",
@@ -2441,10 +2477,12 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Личное задание «Bandit Banisher»"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Личное задание «Bandit Banisher»",
         "rewards": [
             "Unlock Envelope {CG}",
             "Все получают по 10 золотых"
@@ -2452,18 +2490,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Личное задание «Natural Selection»",
         "rewards": [
             "Gain one random “Stone” item (Item 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Личное задание «Natural Selection»",
         "rewards": [
             "Unlock Envelope {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Личное задание «An Adder Divides»",
         "rewards": [
             "10 experience each",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -2649,12 +2690,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Личное задание «At All Costs»",
         "rewards": [
             "“Rockspine Bulwark” (Item AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Личное задание «The Weight of Failure»",
         "rewards": [
             "“Ghostshimmer Honey” (Item AA02)"
         ]
@@ -2667,6 +2710,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Личное задание «Ingenious Inventor» и предмет «Power Modulator» экипирован",
         "rewards": [
             [
                 "“Ingenious Inventor” quest complete",
@@ -2692,6 +2736,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Личное задание «Scrap Diver»",
         "rewards": [
             "“Scrap Diver” quest complete",
             "Open envelope {QA}",
@@ -2706,10 +2751,12 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Личное задание «Brutal Enforcer»"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Личное задание «Brutal Enforcer»",
         "rewards": [
             "“Brutal Enforcer” quest complete",
             "Open Envelope {RM}",
@@ -2717,10 +2764,12 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Личное задание «Apex Predator»"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Личное задание «Apex Predator»",
         "rewards": [
             "“Apex Predator” quest complete",
             "Open Envelope {RM}",
@@ -2751,6 +2800,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Нет Ruinmaw в отряде",
         "rewards": [
             "10 experience each",
             "“Savage Cuirass” design (Item RM06)"

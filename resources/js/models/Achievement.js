@@ -24,6 +24,7 @@ class Achievement {
         this.is_manual = data.is_manual || false;
         // Manual achievements normally gain/lose with the side scenarios they unlock; false opts out of that link.
         this.unlocks_side_scenario = data.unlocks_side_scenario !== false;
+        this.requires_event = data.requires_event || null;
         this.cards = collect(data.cards).map((card) => new Card(card, data.game));
         this.game = data.game;
         this.translationKey = `achievements.${this.game}-${this.id}`;

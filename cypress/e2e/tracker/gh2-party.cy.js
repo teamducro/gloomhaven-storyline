@@ -72,6 +72,19 @@ describe('Party GH2', () => {
         cy.contains('2 gained prosperity');
     });
 
+    it('It adds the prosperity section events when donation boxes count toward it', () => {
+        cy.visit('/tracker/#/party');
+
+        cy.get('input[aria-labelledby="donations"]').clear().type('1000{enter}');
+        cy.get('input#p-21').should('be.checked').and('be.disabled');
+        cy.get('input#p-22').should('not.be.checked').and('not.be.disabled');
+        cy.contains('#city-events-bedges .bedge', /^\s*21\s*$/).should('not.exist');
+
+        cy.get('input#p-23').click();
+        cy.get('input#p-22').should('be.checked');
+        ['21', '28'].forEach(event => cy.contains('#city-events-bedges .bedge', new RegExp(`^\\s*${event}\\s*$`)));
+    });
+
     it('It draws and resolves a 3-option city event', () => {
         cy.visit('/tracker/#/party');
 
@@ -79,7 +92,9 @@ describe('Party GH2', () => {
         cy.contains('#city-events-bedges .bedge', /^\s*2\s*$/).click();
         cy.get('.mdc-dialog__title').contains('City Event #2');
         cy.get('.mdc-dialog__content button').contains('C').click();
-        cy.get('.mdc-dialog__content button').contains('Toggle A/B');
+        cy.get('.mdc-dialog__content .outcome-blur').should('have.length', 2);
+        cy.get('.mdc-dialog__content button').contains('Toggle A/B').click();
+        cy.get('.mdc-dialog__content .outcome-blur').should('not.exist');
         // Removing is ignored while the flip animation runs.
         cy.wait(700);
         cy.get('.mdc-dialog__content button img[alt="Remove #2"]').click();
@@ -93,6 +108,22 @@ describe('Party GH2', () => {
         cy.contains('#city-events-bedges .bedge', /^\s*8\s*$/).click();
         cy.get('.mdc-dialog__content button').contains('A').click();
         cy.get('.mdc-dialog__content button').contains('Toggle').should('not.exist');
+    });
+
+    it('It sizes the event card to the visible side', () => {
+        cy.visit('/tracker/#/party');
+
+        utilities.scrollTo('50%');
+        cy.contains('#city-events-bedges .bedge', /^\s*18\s*$/).click();
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        cy.wait(700);
+        // The back of #18 is longer than its front: the buttons must stay below it.
+        cy.get('.mdc-dialog__content .flip-card .back img').first().should(($back) => expect($back[0].naturalHeight).to.be.greaterThan(0)).then(($back) => {
+            const backBottom = $back[0].getBoundingClientRect().bottom;
+            cy.get('.mdc-dialog__content button').contains('Toggle').then(($button) => {
+                expect($button[0].getBoundingClientRect().top).to.be.at.least(backBottom);
+            });
+        });
     });
 
     it('It adds class events when a class is unlocked', () => {

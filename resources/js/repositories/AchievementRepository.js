@@ -144,9 +144,11 @@ export default class AchievementRepository {
 
     searchManual(query) {
         query = Helpers.sanitize(query);
+        const sheet = new SheetRepository().make(app.game);
         return this.where((achievement) => {
             return achievement.is_manual
                 && !achievement.manual_awarded
+                && (!achievement.requires_event || sheet.hasEvent(achievement.requires_event))
                 && Helpers.sanitize(achievement._name).startsWith(query);
         });
     }

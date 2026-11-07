@@ -16,9 +16,6 @@
                                       class="w-full rounded-lg sm:rounded-xl"/>
                             </template>
                         </flip-card>
-
-                        <!-- push content under the flip card with the same aspect ratio -->
-                        <webp :src="character.matImages[0]" class="invisible w-full"></webp>
                     </div>
                 </div>
             </template>

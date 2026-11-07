@@ -30,6 +30,8 @@
                 </selectable-list>
             </div>
 
+            <event-history :sheet="sheet" @change="store"/>
+
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Scenario level') }}</h2>
                 <scenario-level v-model:value="sheet.scenarioLevel" id="scenario-level"

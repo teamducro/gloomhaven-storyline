@@ -59,7 +59,8 @@ export default {
         character: Character,
         perks: Object,
         checks: Object,
-        masteries: Object
+        masteries: Object,
+        scenarioPerks: {type: Number, default: 0}
     },
     data() {
         return {}
@@ -74,6 +75,7 @@ export default {
         minimalPerks() {
             return (this.character.retirements || 0)
                 + (this.character.level - 1)
+                + this.scenarioPerks
                 + collect(this.masteries).filter().count()
                 + Math.floor(collect(this.checks).filter().count() / 3);
         }

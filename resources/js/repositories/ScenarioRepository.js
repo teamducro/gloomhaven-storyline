@@ -326,7 +326,7 @@ export default class ScenarioRepository {
             .where('state', ScenarioState.complete);
     }
 
-    requiredBy(achievement) {
+    requiredBy(achievement, types = ['complete', 'incomplete']) {
         if (typeof achievement === 'string') {
             achievement = this.achievementRepository.find(achievement);
         }
@@ -337,9 +337,7 @@ export default class ScenarioRepository {
             }
 
             return scenario.required_by.contains((condition) => {
-                let complete = condition.complete || [];
-                let incomplete = condition.incomplete || [];
-                return complete.some((a) => a === achievement.id) || incomplete.some((a) => a === achievement.id);
+                return types.some((type) => (condition[type] || []).includes(achievement.id));
             });
         })
             .where('state', '!=', ScenarioState.hidden);

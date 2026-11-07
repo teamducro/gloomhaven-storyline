@@ -9,7 +9,8 @@ export default class SheetRepository {
     }
 
     data(game) {
-        return _.clone(app.campaignData[this.key(game)]);
+        // During boot window.app is still the #app element, without campaign data
+        return _.clone(app.campaignData?.[this.key(game)]);
     }
 
     // gh and gh2 are separate games, the campaign picks which one is played as Gloomhaven

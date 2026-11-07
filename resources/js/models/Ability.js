@@ -11,6 +11,7 @@ class Item {
         this.character_id = data.character_id;
         this.variations = data.variations ?? [];
         this.reference = data.reference ?? false;
+        this.milestone = data.milestone ?? false;
         this.game = data.game;
         this.translationKey = `abilities.${this.game}.${this.code}`;
     }

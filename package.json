@@ -11,10 +11,6 @@
         "prod-fh": "cross-env MIX_MAIN_GAME=fh npm run production",
         "test": "cypress open",
         "test:ci": "cypress run ${npm_config_spec:+--spec \"cypress/e2e/**/*$npm_config_spec*.cy.js\"}",
-        "lang": "commands/add-missing-translation-keys.js",
-        "attack-modifiers": "commands/generate-attack-modifier-deck.json.js",
-        "merge-scenarios": "commands/merge-scenario-data.js",
-        "storyline-svg": "node commands/generate-storyline-svg.js",
         "cdn": "s3cmd sync --acl-public --delete-removed --add-header=\"Cache-Control:max-age=2592000\" ./resources/img s3://gh-storyline"
     },
     "repository": {

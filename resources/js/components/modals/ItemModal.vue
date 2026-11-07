@@ -14,9 +14,6 @@
                                 </template>
                             </flip-card>
 
-                            <!-- push the card under the flip card to the same aspect ratio -->
-                            <webp :src="item.image" class="invisible"/>
-
                             <button type="button"
                                     class="mdc-icon-button mdc-button--raised material-icons p-2 bg-black2-50! rounded-full absolute top-0 left-0 m-2 z-5"
                                     @click.stop="flip">

@@ -48,7 +48,10 @@ export default class EchoService {
                     if (event.story) {
                         callback(event.story);
                     } else {
-                        callback(await this.storyRepository.findWithoutUpdates(story));
+                        const newStory = await this.storyRepository.findWithoutUpdates(story);
+                        if (newStory) {
+                            callback(newStory);
+                        }
                     }
                 });
 

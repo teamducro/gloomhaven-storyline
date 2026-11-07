@@ -395,7 +395,7 @@ export default {
 
             // Add resources from sheet
             let combinedResources = {
-                prosperity: this.calculateProsperity(sheet.prosperityIndex, sheet.game),
+                prosperity: this.calculateProsperity(sheet.effectiveProsperityIndex, sheet.game),
                 lumber: sheet.resources.lumber || 0,
                 metal: sheet.resources.metal || 0,
                 hide: sheet.resources.hide || 0,

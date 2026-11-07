@@ -268,30 +268,56 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Veszedelmes pince"
+        "name": "Veszedelmes pince",
+        "requirements": "“Seeker of Xorn” életcél"
     },
     "gh-53": {
         "name": "Kriptapince",
+        "requirements": "“Seeker of Xorn” életcél",
         "rewards": [
             "The Seeker of Xorn receives: “Staff of Xorn” (Felszerelés 114) The Seeker cannot sell this Felszerelés."
         ]
     },
     "gh-54": {
         "name": "Jégpalota",
+        "requirements": "“Seeker of Xorn” életcél, “Staff of Xorn” felszerelés felszerelve",
         "rewards": [
             "Immediately retire the Seeker of Xorn",
             "Addjátok az 59-es Úti és Városi eseményt a paklihoz az életcél kártyán írtak helyett",
             "Nyisd ki az alábbi borítékot: {PH}"
         ]
     },
+    "gh-SoX1": {
+        "name": "Nobles’ Crypt",
+        "rewards": [
+            "+1 reputation",
+            "Add City Event SoX2 to the deck"
+        ]
+    },
+    "gh-SoX2": {
+        "name": "Flooded Crypt",
+        "rewards": [
+            "Add City Event SoX3 to the deck",
+            "Choose only one of the following: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) or “Wave Crest” (Item 111)"
+        ]
+    },
+    "gh-SoX3": {
+        "name": "Crypt of the Ancients",
+        "rewards": [
+            "50 collective gold",
+            "Add City Event SoX3 to the deck"
+        ]
+    },
     "gh-55": {
         "name": "Ködös erdő",
+        "requirements": "“Take Back the Trees” életcél",
         "rewards": [
             "10 arany mindenkinek"
         ]
     },
     "gh-56": {
         "name": "Banditák erdeje",
+        "requirements": "“Take Back the Trees” életcél",
         "rewards": [
             "“Take Back the Trees” küldetés teljesítve",
             "Nyisd ki az alábbi borítékot: {DS}",
@@ -301,12 +327,14 @@ export default {
     },
     "gh-57": {
         "name": "Nyomozás",
+        "requirements": "“Vengeance” életcél",
         "rewards": [
             "+1 hírnév"
         ]
     },
     "gh-58": {
         "name": "Véres kunyhó",
+        "requirements": "“Vengeance” életcél",
         "rewards": [
             "“Vengeance” küldetés teljesítve",
             "Nyisd ki az alábbi borítékot: X",
@@ -314,10 +342,12 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Elfeledett liget"
+        "name": "Elfeledett liget",
+        "requirements": "“Finding the Cure” életcél"
     },
     "gh-60": {
         "name": "Alkimista labor",
+        "requirements": "“Finding the Cure” életcél",
         "rewards": [
             "“Finding the Cure” küldetés teljesítve",
             "Nyisd ki az alábbi borítékot: X",
@@ -325,10 +355,12 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Halovány világítótorony"
+        "name": "Halovány világítótorony",
+        "requirements": "“The Fall of Man” életcél"
     },
     "gh-62": {
         "name": "Lélekverem",
+        "requirements": "“The Fall of Man” életcél",
         "rewards": [
             "“The Fall of Man” küldetés teljesítve",
             "Nyisd ki az alábbi borítékot: {NS}",
@@ -413,7 +445,8 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Ragályhordozók kaptárja"
+        "name": "Ragályhordozók kaptárja",
+        "requirements": "Bátorság"
     },
     "gh-77": {
         "name": "Titkos pince",
@@ -645,6 +678,7 @@ export default {
     },
     "fc-96": {
         "name": "Unexpected Visitors",
+        "requirements": "A Homály végzete (Általános) TELJESÍTVE",
         "rewards": [
             "10 tapasztalati pont mindenkinek",
             "Add City and Road Events 82 to their respective decks"
@@ -2426,6 +2460,7 @@ export default {
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "“Protect and Serve” életcél",
         "rewards": [
             "“Blazing Boots” (Felszerelés 87)",
             "+1 hírnév"
@@ -2433,6 +2468,7 @@ export default {
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "“Protect and Serve” életcél",
         "rewards": [
             "Unlock Envelope {BM}",
             "+2 hírnév",
@@ -2440,10 +2476,12 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "“Bandit Banisher” életcél"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "“Bandit Banisher” életcél",
         "rewards": [
             "Unlock Envelope {CG}",
             "10 arany mindenkinek"
@@ -2451,18 +2489,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "“Natural Selection” életcél",
         "rewards": [
             "Gain one random “Stone” Felszerelés (Felszerelés 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "“Natural Selection” életcél",
         "rewards": [
             "Unlock Envelope {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "“An Adder Divides” életcél",
         "rewards": [
             "10 tapasztalati pont mindenkinek",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -2648,12 +2689,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "“At All Costs” életcél",
         "rewards": [
             "“Rockspine Bulwark” (Felszerelés AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "“The Weight of Failure” életcél",
         "rewards": [
             "“Ghostshimmer Honey” (Felszerelés AA02)"
         ]
@@ -2666,6 +2709,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "“Ingenious Inventor” életcél és “Power Modulator” felszerelés felszerelve",
         "rewards": [
             [
                 "“Ingenious Inventor” küldetés teljesítve",
@@ -2691,6 +2735,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "“Scrap Diver” életcél",
         "rewards": [
             "“Scrap Diver” küldetés teljesítve",
             "Nyisd ki az alábbi borítékot: {QA}",
@@ -2705,10 +2750,12 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "“Brutal Enforcer” életcél"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "“Brutal Enforcer” életcél",
         "rewards": [
             "“Brutal Enforcer” küldetés teljesítve",
             "Nyisd ki az alábbi borítékot: {RM}",
@@ -2716,10 +2763,12 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "“Apex Predator” életcél"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "“Apex Predator” életcél",
         "rewards": [
             "“Apex Predator” küldetés teljesítve",
             "Nyisd ki az alábbi borítékot: {RM}",
@@ -2750,6 +2799,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Nincs Ruinmaw a kalandozó csapatban",
         "rewards": [
             "10 tapasztalati pont mindenkinek",
             "“Savage Cuirass” design (Felszerelés RM06)"

@@ -64,6 +64,7 @@ class Character {
         this.quest = {...data.quest};
         this.abilities = {...data.abilities};
         this.abilityPerLevel = {...data.abilityPerLevel};
+        this.milestone = data.milestone || false;
         this.abilityCount = 0; // from characters.json
         this.sheet_game = data.sheet_game;
         this.game = null; // from characters.json
@@ -91,6 +92,7 @@ class Character {
             quest: {'quest': {}},
             abilities: {'abilities': {}},
             abilityPerLevel: {'abilityPerLevel': {}},
+            milestone: 'milestone',
             sortOrder: 'sortOrder',
         };
 

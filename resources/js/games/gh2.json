@@ -13,7 +13,12 @@
                 "name": "R6",
                 "x": 30.96,
                 "y": 79.29
-            }
+            },
+            "monsters": [
+                "training-dummy",
+                "training-partner",
+                "city-guard"
+            ]
         },
         {
             "id": 1,
@@ -36,7 +41,11 @@
                 "name": "F4",
                 "x": 21.8,
                 "y": 25.67
-            }
+            },
+            "monsters": [
+                "bandit-scout",
+                "bandit-archer"
+            ]
         },
         {
             "id": 2,
@@ -62,7 +71,14 @@
                 "name": "G7",
                 "x": 34.47,
                 "y": 30.47
-            }
+            },
+            "monsters": [
+                "dark-ritual-cultist",
+                "living-bones",
+                "night-demon",
+                "earth-demon",
+                "frost-demon"
+            ]
         },
         {
             "id": 3,
@@ -90,7 +106,12 @@
                 "name": "D11",
                 "x": 51.9,
                 "y": 16.91
-            }
+            },
+            "monsters": [
+                "hound",
+                "living-spirit",
+                "frost-demon"
+            ]
         },
         {
             "id": 4,
@@ -130,7 +151,14 @@
                 "name": "E11",
                 "x": 52.82,
                 "y": 21.24
-            }
+            },
+            "monsters": [
+                "bandit-archer",
+                "living-bones",
+                "cultist",
+                "wind-demon",
+                "earth-demon"
+            ]
         },
         {
             "id": 5,
@@ -157,7 +185,13 @@
                 "name": "M7",
                 "x": 35.13,
                 "y": 58.02
-            }
+            },
+            "monsters": [
+                "cultist",
+                "living-bones",
+                "living-spirit",
+                "living-corpse"
+            ]
         },
         {
             "id": 6,
@@ -197,7 +231,13 @@
                 "name": "F10",
                 "x": 49.67,
                 "y": 25.85
-            }
+            },
+            "monsters": [
+                "crystal-rot",
+                "living-bones",
+                "living-corpse",
+                "living-spirit"
+            ]
         },
         {
             "id": 7,
@@ -226,7 +266,12 @@
                 "name": "G10",
                 "x": 50.13,
                 "y": 30.98
-            }
+            },
+            "monsters": [
+                "bandit-archer",
+                "bandit-scout",
+                "living-bones"
+            ]
         },
         {
             "id": 8,
@@ -262,7 +307,13 @@
                 "name": "G11",
                 "x": 53.86,
                 "y": 31.94
-            }
+            },
+            "monsters": [
+                "bandit-archer",
+                "living-bones",
+                "living-corpse",
+                "bandit-commander"
+            ]
         },
         {
             "id": 9,
@@ -281,7 +332,16 @@
                 "name": "G8",
                 "x": 40,
                 "y": 31.31
-            }
+            },
+            "monsters": [
+                "chaos-demon",
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "night-demon",
+                "sun-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 10,
@@ -304,7 +364,13 @@
                 "name": "C5",
                 "x": 26.78,
                 "y": 11.51
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "inox-archer",
+                "inox-guard",
+                "wind-demon"
+            ]
         },
         {
             "id": 11,
@@ -345,7 +411,13 @@
                 "name": "E4",
                 "x": 20.9,
                 "y": 22.9
-            }
+            },
+            "monsters": [
+                "cultist",
+                "living-corpse",
+                "sun-demon",
+                "night-demon"
+            ]
         },
         {
             "id": 12,
@@ -374,7 +446,12 @@
                 "name": "G3",
                 "x": 17.46,
                 "y": 30.74
-            }
+            },
+            "monsters": [
+                "inox-archer",
+                "inox-guard",
+                "inox-priest"
+            ]
         },
         {
             "id": 13,
@@ -429,7 +506,12 @@
                 "name": "B5",
                 "x": 25.52,
                 "y": 6.81
-            }
+            },
+            "monsters": [
+                "hound",
+                "rending-drake",
+                "spitting-drake"
+            ]
         },
         {
             "id": 14,
@@ -450,7 +532,12 @@
                 "name": "C6",
                 "x": 31.58,
                 "y": 12.58
-            }
+            },
+            "monsters": [
+                "ooze",
+                "rending-drake",
+                "living-spirit"
+            ]
         },
         {
             "id": 15,
@@ -487,7 +574,13 @@
                 "name": "C7",
                 "x": 34.87,
                 "y": 11.8
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "usurper"
+            ]
         },
         {
             "id": 16,
@@ -514,7 +607,13 @@
                 "name": "L2",
                 "x": 12.13,
                 "y": 56.3
-            }
+            },
+            "monsters": [
+                "bandit-scout",
+                "hound",
+                "bandit-archer",
+                "merciless-taskmaster"
+            ]
         },
         {
             "id": 17,
@@ -568,7 +667,13 @@
                 "name": "J7",
                 "x": 35.87,
                 "y": 45.08
-            }
+            },
+            "monsters": [
+                "city-guard",
+                "earth-demon",
+                "night-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 18,
@@ -625,7 +730,14 @@
                 "name": "S1",
                 "x": 8.86,
                 "y": 85.87
-            }
+            },
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "bandit-scout",
+                "hound",
+                "corrupt-city-guard"
+            ]
         },
         {
             "id": 19,
@@ -673,7 +785,12 @@
                 "name": "M9",
                 "x": 44.33,
                 "y": 59.09
-            }
+            },
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "hound"
+            ]
         },
         {
             "id": 20,
@@ -722,7 +839,13 @@
                 "name": "R5",
                 "x": 25.86,
                 "y": 83.2
-            }
+            },
+            "monsters": [
+                "crystal-rot",
+                "living-bones",
+                "inox-bodyguard",
+                "living-corpse"
+            ]
         },
         {
             "id": 21,
@@ -761,7 +884,13 @@
                 "name": "Q4",
                 "x": 23.3,
                 "y": 78.59
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "city-archer",
+                "city-guard",
+                "hound"
+            ]
         },
         {
             "id": 22,
@@ -801,7 +930,13 @@
                 "name": "N7",
                 "x": 34.07,
                 "y": 62.53
-            }
+            },
+            "monsters": [
+                "flame-demon",
+                "frost-demon",
+                "doomcannon",
+                "sun-demon"
+            ]
         },
         {
             "id": 24,
@@ -830,7 +965,14 @@
                 "name": "Q4",
                 "x": 19.07,
                 "y": 78.35
-            }
+            },
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "living-bones",
+                "living-corpse",
+                "first-shield-harmon"
+            ]
         },
         {
             "id": 26,
@@ -859,7 +1001,13 @@
                 "name": "P2",
                 "x": 10.35,
                 "y": 73.29
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "city-archer",
+                "city-guard",
+                "first-shield-harmon"
+            ]
         },
         {
             "id": 27,
@@ -928,7 +1076,16 @@
                 "name": "D7",
                 "x": 34.71,
                 "y": 15.48
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "sun-demon",
+                "night-demon",
+                "the-prime-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 28,
@@ -981,7 +1138,13 @@
                 "name": "N3",
                 "x": 17.05,
                 "y": 62.47
-            }
+            },
+            "monsters": [
+                "stone-construct",
+                "cave-bear",
+                "living-spirit",
+                "spitting-drake"
+            ]
         },
         {
             "id": 29,
@@ -1014,7 +1177,12 @@
                 "name": "A4",
                 "x": 21.19,
                 "y": 3.25
-            }
+            },
+            "monsters": [
+                "rending-drake",
+                "spitting-drake",
+                "the-elder-drake"
+            ]
         },
         {
             "id": 30,
@@ -1043,7 +1211,12 @@
                 "name": "N15",
                 "x": 70.47,
                 "y": 63.62
-            }
+            },
+            "monsters": [
+                "ooze",
+                "deep-terror",
+                "lurker-soldier"
+            ]
         },
         {
             "id": 31,
@@ -1081,7 +1254,13 @@
                 "name": "L11",
                 "x": 54.37,
                 "y": 52.76
-            }
+            },
+            "monsters": [
+                "deep-terror",
+                "giant-viper",
+                "harrower-infester",
+                "black-imp"
+            ]
         },
         {
             "id": 32,
@@ -1159,7 +1338,15 @@
                 "name": "A7",
                 "x": 34.43,
                 "y": 4.72
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "savvas-icestorm",
+                "savvas-lavaflow",
+                "wind-demon"
+            ]
         },
         {
             "id": 33,
@@ -1190,7 +1377,14 @@
                 "name": "F12",
                 "x": 57.28,
                 "y": 26.56
-            }
+            },
+            "monsters": [
+                "living-corpse",
+                "cave-bear",
+                "forest-imp",
+                "stone-construct",
+                "flame-demon"
+            ]
         },
         {
             "id": 34,
@@ -1236,7 +1430,13 @@
                 "name": "F13",
                 "x": 61.71,
                 "y": 28.12
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "stone-construct",
+                "living-spirit",
+                "living-corpse"
+            ]
         },
         {
             "id": 35,
@@ -1272,7 +1472,13 @@
                 "name": "B6",
                 "x": 29.86,
                 "y": 7.39
-            }
+            },
+            "monsters": [
+                "living-spirit",
+                "night-demon",
+                "deep-terror",
+                "wind-demon"
+            ]
         },
         {
             "id": 36,
@@ -1295,7 +1501,12 @@
                 "name": "R2",
                 "x": 11.77,
                 "y": 84.13
-            }
+            },
+            "monsters": [
+                "giant-viper",
+                "ooze",
+                "vermling-scout"
+            ]
         },
         {
             "id": 37,
@@ -1319,7 +1530,14 @@
                 "name": "R3",
                 "x": 18.08,
                 "y": 82.27
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "stone-construct",
+                "living-bones",
+                "living-spirit",
+                "crystal-rot"
+            ]
         },
         {
             "id": 38,
@@ -1340,7 +1558,12 @@
                 "name": "D4",
                 "x": 22.15,
                 "y": 17.16
-            }
+            },
+            "monsters": [
+                "flame-demon",
+                "rending-drake",
+                "spitting-drake"
+            ]
         },
         {
             "id": 39,
@@ -1360,7 +1583,13 @@
                 "name": "B12",
                 "x": 58.05,
                 "y": 10.11
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "forest-imp",
+                "earth-demon",
+                "inox-priest"
+            ]
         },
         {
             "id": 40,
@@ -1377,7 +1606,15 @@
                 "name": "M10",
                 "x": 47.74,
                 "y": 59.16
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "savvas-icestorm",
+                "savvas-lavaflow",
+                "wind-demon"
+            ]
         },
         {
             "id": 41,
@@ -1403,7 +1640,13 @@
                 "name": "S3",
                 "x": 16.14,
                 "y": 85.65
-            }
+            },
+            "monsters": [
+                "living-corpse",
+                "ooze",
+                "black-imp",
+                "night-demon"
+            ]
         },
         {
             "id": 42,
@@ -1424,7 +1667,14 @@
                 "name": "K1",
                 "x": 8.15,
                 "y": 47.98
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "forest-imp",
+                "city-guard",
+                "stone-construct",
+                "hound"
+            ]
         },
         {
             "id": 43,
@@ -1480,7 +1730,13 @@
                 "name": "L1",
                 "x": 7.8,
                 "y": 53.33
-            }
+            },
+            "monsters": [
+                "city-guard",
+                "hound",
+                "stone-construct",
+                "candlekeeper-trice"
+            ]
         },
         {
             "id": 44,
@@ -1509,7 +1765,15 @@
                 "name": "O9",
                 "x": 43.42,
                 "y": 66.29
-            }
+            },
+            "monsters": [
+                "cultist",
+                "living-bones",
+                "earth-demon",
+                "wind-demon",
+                "flame-demon",
+                "frost-demon"
+            ]
         },
         {
             "id": 45,
@@ -1539,7 +1803,12 @@
                 "name": "P4",
                 "x": 19.73,
                 "y": 71.7
-            }
+            },
+            "monsters": [
+                "deep-terror",
+                "night-demon",
+                "black-imp"
+            ]
         },
         {
             "id": 46,
@@ -1559,7 +1828,12 @@
                 "name": "G18",
                 "x": 82.97,
                 "y": 32.15
-            }
+            },
+            "monsters": [
+                "deep-terror",
+                "lurker-soldier",
+                "harrower-infester"
+            ]
         },
         {
             "id": 47,
@@ -1579,7 +1853,13 @@
                 "name": "G2",
                 "x": 11.82,
                 "y": 30.56
-            }
+            },
+            "monsters": [
+                "inox-archer",
+                "inox-guard",
+                "stone-construct",
+                "inox-priest"
+            ]
         },
         {
             "id": 48,
@@ -1600,7 +1880,14 @@
                 "name": "B11",
                 "x": 51.77,
                 "y": 5.96
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "cultist",
+                "frost-demon",
+                "living-bones",
+                "spitting-drake"
+            ]
         },
         {
             "id": 49,
@@ -1620,7 +1907,13 @@
                 "name": "F3",
                 "x": 16.53,
                 "y": 26.83
-            }
+            },
+            "monsters": [
+                "hound",
+                "inox-archer",
+                "inox-guard",
+                "inox-priest"
+            ]
         },
         {
             "id": 50,
@@ -1644,7 +1937,15 @@
                 "name": "A11",
                 "x": 51.26,
                 "y": 2.66
-            }
+            },
+            "monsters": [
+                "frost-demon",
+                "night-demon",
+                "savvas-icestorm",
+                "wind-demon",
+                "egg-scenario-50",
+                "the-winged-horror"
+            ]
         },
         {
             "id": 51,
@@ -1669,7 +1970,13 @@
                 "name": "H18",
                 "x": 83.6,
                 "y": 36.01
-            }
+            },
+            "monsters": [
+                "lurker-soldier",
+                "deep-terror",
+                "harrower-infester",
+                "the-sightless-eye"
+            ]
         },
         {
             "id": 52,
@@ -1693,7 +2000,13 @@
                 "name": "E1",
                 "x": 7.5,
                 "y": 20.66
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "forest-imp",
+                "harrower-infester",
+                "the-dark-rider"
+            ]
         },
         {
             "id": 53,
@@ -1712,7 +2025,14 @@
                 "name": "B11",
                 "x": 53.11,
                 "y": 11.08
-            }
+            },
+            "monsters": [
+                "frost-demon",
+                "savvas-icestorm",
+                "stone-construct",
+                "wind-demon",
+                "harrower-infester"
+            ]
         },
         {
             "id": 54,
@@ -1733,7 +2053,14 @@
                 "name": "O5",
                 "x": 24.15,
                 "y": 69.5
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "cultist",
+                "harrower-infester",
+                "chaos-demon",
+                "the-gloom"
+            ]
         },
         {
             "id": 55,
@@ -1750,7 +2077,13 @@
                 "name": "P4",
                 "x": 23.27,
                 "y": 72.53
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "chaos-demon",
+                "deep-terror",
+                "harrower-infester"
+            ]
         },
         {
             "id": 56,
@@ -1772,7 +2105,26 @@
                 "name": "P6",
                 "x": 27.41,
                 "y": 71.67
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "chaos-demon",
+                "deep-terror",
+                "harrower-infester",
+                "the-gloom",
+                "jekserah",
+                "living-bones",
+                "living-corpse",
+                "spymaster-argeise",
+                "vermling-scout",
+                "city-archer",
+                "city-guard",
+                "first-shield-harmon",
+                "flame-demon",
+                "sun-demon",
+                "the-prime-demon",
+                "candlekeeper-trice"
+            ]
         },
         {
             "id": 57,
@@ -1790,7 +2142,14 @@
                 "name": "E11",
                 "x": 53.71,
                 "y": 24.27
-            }
+            },
+            "monsters": [
+                "giant-viper",
+                "living-bones",
+                "living-spirit",
+                "living-corpse",
+                "crystal-rot"
+            ]
         },
         {
             "id": 58,
@@ -1812,7 +2171,13 @@
                 "name": "D8",
                 "x": 40.67,
                 "y": 15.43
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "living-spirit",
+                "frost-demon",
+                "harrower-infester"
+            ]
         },
         {
             "id": 59,
@@ -1831,7 +2196,8 @@
                 "name": "G5",
                 "x": 25.67,
                 "y": 31.92
-            }
+            },
+            "monsters": []
         },
         {
             "id": 60,
@@ -1853,7 +2219,13 @@
                 "name": "G4",
                 "x": 21.26,
                 "y": 32.94
-            }
+            },
+            "monsters": [
+                "bandit-archer",
+                "hound",
+                "bandit-scout",
+                "rending-drake"
+            ]
         },
         {
             "id": 61,
@@ -1868,7 +2240,12 @@
                 "name": "F1",
                 "x": 8.06,
                 "y": 26.41
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "forest-imp",
+                "hound"
+            ]
         },
         {
             "id": 62,
@@ -1886,7 +2263,14 @@
                 "name": "Q3",
                 "x": 16.78,
                 "y": 77.53
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "hound",
+                "spitting-drake",
+                "giant-viper",
+                "ooze"
+            ]
         },
         {
             "id": 63,
@@ -1901,7 +2285,13 @@
                 "name": "N11",
                 "x": 54.01,
                 "y": 63.22
-            }
+            },
+            "monsters": [
+                "flame-demon",
+                "frost-demon",
+                "giant-viper",
+                "ooze"
+            ]
         },
         {
             "id": 64,
@@ -1921,7 +2311,16 @@
                 "name": "E7",
                 "x": 35.1,
                 "y": 23.65
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "night-demon",
+                "sun-demon",
+                "the-convergence",
+                "wind-demon"
+            ]
         },
         {
             "id": 65,
@@ -1940,7 +2339,13 @@
                 "name": "K11",
                 "x": 52.62,
                 "y": 47.72
-            }
+            },
+            "monsters": [
+                "crystal-rot",
+                "living-corpse",
+                "living-spirit",
+                "living-bones"
+            ]
         },
         {
             "id": 66,
@@ -1959,7 +2364,12 @@
                 "name": "F11",
                 "x": 53.8,
                 "y": 27.44
-            }
+            },
+            "monsters": [
+                "bandit-archer",
+                "bandit-scout",
+                "hound"
+            ]
         },
         {
             "id": 67,
@@ -1977,7 +2387,14 @@
                 "name": "D2",
                 "x": 11.62,
                 "y": 15.2
-            }
+            },
+            "monsters": [
+                "night-demon",
+                "sun-demon",
+                "the-colorless",
+                "ancient-artillery",
+                "stone-construct"
+            ]
         },
         {
             "id": 68,
@@ -1995,7 +2412,12 @@
                 "name": "N17",
                 "x": 79.16,
                 "y": 62.46
-            }
+            },
+            "monsters": [
+                "lurker-soldier",
+                "frost-demon",
+                "living-spirit"
+            ]
         },
         {
             "id": 69,
@@ -2015,7 +2437,14 @@
                 "name": "I9",
                 "x": 45.41,
                 "y": 40.2
-            }
+            },
+            "monsters": [
+                "lurker-soldier",
+                "ooze",
+                "black-imp",
+                "deep-terror",
+                "giant-ooze"
+            ]
         },
         {
             "id": 70,
@@ -2037,7 +2466,12 @@
                 "name": "L17",
                 "x": 79.86,
                 "y": 53.52
-            }
+            },
+            "monsters": [
+                "forest-imp",
+                "ooze",
+                "rending-drake"
+            ]
         },
         {
             "id": 71,
@@ -2060,7 +2494,13 @@
                 "name": "G14",
                 "x": 64.76,
                 "y": 31.74
-            }
+            },
+            "monsters": [
+                "ooze",
+                "ancient-artillery",
+                "stone-construct",
+                "living-spirit"
+            ]
         },
         {
             "id": 72,
@@ -2075,7 +2515,14 @@
                 "name": "F8",
                 "x": 38.72,
                 "y": 26.94
-            }
+            },
+            "monsters": [
+                "forest-imp",
+                "vermling-priest",
+                "vermling-scout",
+                "living-spirit",
+                "stone-construct"
+            ]
         },
         {
             "id": 73,
@@ -2093,7 +2540,12 @@
                 "name": "J17",
                 "x": 79.95,
                 "y": 43.27
-            }
+            },
+            "monsters": [
+                "living-spirit",
+                "night-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 74,
@@ -2109,7 +2561,12 @@
                 "name": "K5",
                 "x": 26.34,
                 "y": 50.47
-            }
+            },
+            "monsters": [
+                "spitting-drake",
+                "sun-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 75,
@@ -2124,7 +2581,14 @@
                 "name": "N5",
                 "x": 26.11,
                 "y": 60.86
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "hound",
+                "inox-archer",
+                "inox-guard",
+                "inox-priest"
+            ]
         },
         {
             "id": 76,
@@ -2139,7 +2603,12 @@
                 "name": "H12",
                 "x": 56.58,
                 "y": 35.58
-            }
+            },
+            "monsters": [
+                "forest-imp",
+                "giant-viper",
+                "ooze"
+            ]
         },
         {
             "id": 77,
@@ -2151,7 +2620,13 @@
                 "name": "L3",
                 "x": 18.37,
                 "y": 54.36
-            }
+            },
+            "monsters": [
+                "giant-viper",
+                "living-bones",
+                "night-demon",
+                "harrower-infester"
+            ]
         },
         {
             "id": 78,
@@ -2166,7 +2641,13 @@
                 "name": "Q4",
                 "x": 21.57,
                 "y": 75.99
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "city-guard",
+                "stone-construct",
+                "hound"
+            ]
         },
         {
             "id": 79,
@@ -2193,7 +2674,12 @@
                 "name": "T4",
                 "x": 21.15,
                 "y": 88.4
-            }
+            },
+            "monsters": [
+                "lurker-soldier",
+                "wind-demon",
+                "tyrant-of-the-tides"
+            ]
         },
         {
             "id": 80,
@@ -2223,7 +2709,12 @@
                 "name": "K12",
                 "x": 56.74,
                 "y": 49.18
-            }
+            },
+            "monsters": [
+                "stone-construct",
+                "giant-viper",
+                "the-betrayer"
+            ]
         },
         {
             "id": 81,
@@ -2243,7 +2734,14 @@
                 "name": "G12",
                 "x": 57.39,
                 "y": 32.16
-            }
+            },
+            "monsters": [
+                "living-bones",
+                "living-corpse",
+                "living-spirit",
+                "bloated-victim",
+                "crystal-rot"
+            ]
         },
         {
             "id": 82,
@@ -2264,7 +2762,13 @@
                 "name": "R4",
                 "x": 23.06,
                 "y": 83.65
-            }
+            },
+            "monsters": [
+                "bandit-archer",
+                "bandit-scout",
+                "cultist",
+                "giant-viper"
+            ]
         },
         {
             "id": 83,
@@ -2285,7 +2789,12 @@
                 "name": "K17",
                 "x": 79.61,
                 "y": 48.87
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "vermling-priest",
+                "vermling-scout"
+            ]
         },
         {
             "id": 84,
@@ -2305,7 +2814,13 @@
                 "name": "E2",
                 "x": 11.98,
                 "y": 19.8
-            }
+            },
+            "monsters": [
+                "bandit-archer",
+                "bandit-scout",
+                "hound",
+                "living-spirit"
+            ]
         },
         {
             "id": 85,
@@ -2322,7 +2837,12 @@
                 "name": "H7",
                 "x": 34.75,
                 "y": 37.31
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "earth-demon",
+                "harrower-infester"
+            ]
         },
         {
             "id": 86,
@@ -2340,7 +2860,12 @@
                 "name": "M1",
                 "x": 8.06,
                 "y": 59.24
-            }
+            },
+            "monsters": [
+                "inox-archer",
+                "inox-guard",
+                "vermling-scout"
+            ]
         },
         {
             "id": 87,
@@ -2358,7 +2883,11 @@
                 "name": "L5",
                 "x": 25.01,
                 "y": 54.58
-            }
+            },
+            "monsters": [
+                "hound",
+                "vermling-scout"
+            ]
         },
         {
             "id": 88,
@@ -2380,7 +2909,11 @@
                 "name": "K2",
                 "x": 13.34,
                 "y": 47.63
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "forest-imp"
+            ]
         },
         {
             "id": 89,
@@ -2398,7 +2931,13 @@
                 "name": "N8",
                 "x": 39.24,
                 "y": 62.73
-            }
+            },
+            "monsters": [
+                "black-imp",
+                "giant-viper",
+                "living-corpse",
+                "rending-drake"
+            ]
         },
         {
             "id": 90,
@@ -2413,7 +2952,11 @@
                 "name": "M6",
                 "x": 29.34,
                 "y": 56.53
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon"
+            ]
         },
         {
             "id": 91,
@@ -2425,7 +2968,12 @@
                 "name": "R2",
                 "x": 10.91,
                 "y": 81.57
-            }
+            },
+            "monsters": [
+                "cultist",
+                "hound",
+                "living-bones"
+            ]
         },
         {
             "id": 92,
@@ -2444,7 +2992,13 @@
                 "name": "D12",
                 "x": 57.32,
                 "y": 19.07
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 93,
@@ -2459,7 +3013,13 @@
                 "name": "T3",
                 "x": 15.83,
                 "y": 89.19
-            }
+            },
+            "monsters": [
+                "cave-bear",
+                "lurker-soldier",
+                "vermling-priest",
+                "vermling-scout"
+            ]
         },
         {
             "id": 94,
@@ -2480,7 +3040,12 @@
                 "name": "S4",
                 "x": 19.68,
                 "y": 85.47
-            }
+            },
+            "monsters": [
+                "frost-demon",
+                "lurker-soldier",
+                "ooze"
+            ]
         },
         {
             "id": 95,
@@ -2498,7 +3063,12 @@
                 "name": "H15",
                 "x": 71.16,
                 "y": 35.9
-            }
+            },
+            "monsters": [
+                "bandit-scout",
+                "deep-terror",
+                "lurker-soldier"
+            ]
         },
         {
             "id": 96,
@@ -2515,7 +3085,11 @@
                 "name": "R1",
                 "x": 8.37,
                 "y": 82.93
-            }
+            },
+            "monsters": [
+                "bandit-archer",
+                "inox-guard"
+            ]
         },
         {
             "id": 97,
@@ -2531,7 +3105,11 @@
                 "name": "E12",
                 "x": 58.59,
                 "y": 23
-            }
+            },
+            "monsters": [
+                "hound",
+                "vermling-scout"
+            ]
         },
         {
             "id": 98,
@@ -2548,7 +3126,10 @@
                 "name": "A1",
                 "x": 8.04,
                 "y": 3.02
-            }
+            },
+            "monsters": [
+                "deep-terror"
+            ]
         },
         {
             "id": 99,
@@ -2568,7 +3149,13 @@
                 "name": "M19",
                 "x": 87.9,
                 "y": 58.48
-            }
+            },
+            "monsters": [
+                "ancient-artillery",
+                "black-imp",
+                "chaos-demon",
+                "harrower-infester"
+            ]
         },
         {
             "id": 100,
@@ -2588,7 +3175,13 @@
                 "name": "R2",
                 "x": 14.7,
                 "y": 80.03
-            }
+            },
+            "monsters": [
+                "chaos-demon",
+                "crystal-rot",
+                "living-bones",
+                "living-corpse"
+            ]
         },
         {
             "id": 101,
@@ -2622,7 +3215,15 @@
                 "name": "Q4",
                 "x": 19.07,
                 "y": 78.35
-            }
+            },
+            "monsters": [
+                "cultist",
+                "living-bones",
+                "living-corpse",
+                "earth-demon",
+                "night-demon",
+                "jekserah"
+            ]
         },
         {
             "id": 102,
@@ -2652,7 +3253,15 @@
                 "name": "Q4",
                 "x": 19.07,
                 "y": 78.35
-            }
+            },
+            "monsters": [
+                "cultist",
+                "living-bones",
+                "living-corpse",
+                "city-archer",
+                "city-guard",
+                "jekserah"
+            ]
         },
         {
             "id": 103,
@@ -2671,7 +3280,14 @@
                 "name": "P2",
                 "x": 10.35,
                 "y": 73.29
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "the-prime-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 104,
@@ -2690,7 +3306,14 @@
                 "name": "P2",
                 "x": 10.35,
                 "y": 73.29
-            }
+            },
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "the-prime-demon",
+                "wind-demon"
+            ]
         },
         {
             "id": 201,
@@ -2700,6 +3323,14 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Hooked Shield” (Item 153)"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-scout",
+                "black-imp",
+                "earth-demon",
+                "harrower-infester",
+                "the-harvester"
             ]
         },
         {
@@ -2710,6 +3341,13 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Focusing Ray” (Item 154)"
+            ],
+            "monsters": [
+                "vermling-priest",
+                "vermling-scout",
+                "flame-demon",
+                "inox-archer",
+                "inox-guard"
             ]
         },
         {
@@ -2720,6 +3358,13 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Etheric Elixir” (Item 155)"
+            ],
+            "monsters": [
+                "giant-viper",
+                "hound",
+                "vermling-scout",
+                "inox-priest",
+                "spitting-drake"
             ]
         },
         {
@@ -2730,6 +3375,14 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Silent Stiletto” (Item 156)"
+            ],
+            "monsters": [
+                "living-bones",
+                "arcane-construct",
+                "forest-imp",
+                "cave-bear",
+                "cultist",
+                "living-corpse"
             ]
         },
         {
@@ -2740,6 +3393,13 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Stone Charm” (Item 157)"
+            ],
+            "monsters": [
+                "black-imp",
+                "cave-bear",
+                "rending-drake",
+                "giant-viper",
+                "living-corpse"
             ]
         },
         {
@@ -2750,6 +3410,14 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Psychic Knife” (Item 158)"
+            ],
+            "monsters": [
+                "giant-viper",
+                "harrower-infester",
+                "flame-demon",
+                "stone-construct",
+                "earth-demon",
+                "ooze"
             ]
         },
         {
@@ -2760,6 +3428,18 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Insignia of the Divine” (Item 159)"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-scout",
+                "city-guard",
+                "cultist",
+                "living-bones",
+                "living-spirit",
+                "flame-demon",
+                "crystal-rot",
+                "inox-archer",
+                "inox-guard"
             ]
         },
         {
@@ -2770,6 +3450,18 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Utility Belt” (Item 160)"
+            ],
+            "monsters": [
+                "earth-demon",
+                "flame-demon",
+                "frost-demon",
+                "wind-demon",
+                "chaos-demon",
+                "crystal-rot",
+                "living-bones",
+                "living-spirit",
+                "inox-archer",
+                "inox-guard"
             ]
         },
         {
@@ -2780,6 +3472,14 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Phasing Idol” (Item 161)"
+            ],
+            "monsters": [
+                "hound",
+                "spitting-drake",
+                "lurker-soldier",
+                "vermling-priest",
+                "vermling-scout",
+                "cave-bear"
             ]
         },
         {
@@ -2790,6 +3490,16 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “The Night's Caress” (Item 162)"
+            ],
+            "monsters": [
+                "deep-terror",
+                "earth-demon",
+                "forest-imp",
+                "alpha-lurker",
+                "frost-demon",
+                "lurker-soldier",
+                "ooze",
+                "night-demon"
             ]
         },
         {
@@ -2800,6 +3510,15 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Pendant of the Plague” (Item 163)"
+            ],
+            "monsters": [
+                "bandit-archer",
+                "bandit-scout",
+                "deep-terror",
+                "lurker-soldier",
+                "harrower-infester",
+                "living-bones",
+                "night-demon"
             ]
         },
         {
@@ -2810,6 +3529,19 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Mask of Death” (Item 164)"
+            ],
+            "monsters": [
+                "living-bones",
+                "living-corpse",
+                "bandit-archer",
+                "city-archer",
+                "city-guard",
+                "earth-demon",
+                "flame-demon",
+                "inox-guard",
+                "savvas-lavaflow",
+                "cultist",
+                "inox-priest"
             ]
         },
         {
@@ -2820,6 +3552,14 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Master's Lute” (Item 165)"
+            ],
+            "monsters": [
+                "city-archer",
+                "city-guard",
+                "hound",
+                "vermling-scout",
+                "cave-bear",
+                "vermling-priest"
             ]
         },
         {
@@ -2831,7 +3571,17 @@
             "rewards": [
                 "Gain “Cloak of the Hunter” (Item 166)"
             ],
-            "has_boss": true
+            "has_boss": true,
+            "monsters": [
+                "hound",
+                "disjointed-twin",
+                "earth-demon",
+                "flame-demon",
+                "deep-earth-gh2e",
+                "wind-demon",
+                "giant-viper",
+                "spitting-drake"
+            ]
         },
         {
             "id": 215,
@@ -2841,6 +3591,12 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Doctor's Coat” (Item 167)"
+            ],
+            "monsters": [
+                "black-imp",
+                "deep-terror",
+                "earth-demon",
+                "city-guard"
             ]
         },
         {
@@ -2851,6 +3607,13 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Elemental Vest” (Item 168)"
+            ],
+            "monsters": [
+                "flame-demon",
+                "wind-demon",
+                "frost-demon",
+                "earth-demon",
+                "chaos-demon"
             ]
         },
         {
@@ -2861,6 +3624,13 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Staff of Command” (Item 169)"
+            ],
+            "monsters": [
+                "earth-demon",
+                "rending-drake",
+                "wind-demon",
+                "cave-bear",
+                "vermling-priest"
             ]
         },
         {
@@ -2871,6 +3641,12 @@
             "chapter_id": 100,
             "rewards": [
                 "Gain “Crawling Carapace” (Item 170)"
+            ],
+            "monsters": [
+                "giant-viper",
+                "living-bones",
+                "living-spirit",
+                "stone-construct"
             ]
         }
     ],
@@ -13464,730 +14240,730 @@
     ],
     "attackModifierDecks": {},
     "events": {
-        "C-1": [
-            "A",
-            "B"
-        ],
-        "C-2": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-3": [
-            "A",
-            "B"
-        ],
-        "C-4": [
-            "A",
-            "B"
-        ],
-        "C-5": [
-            "A",
-            "B"
-        ],
-        "C-6": [
-            "A",
-            "B"
-        ],
-        "C-7": [
-            "A",
-            "B"
-        ],
-        "C-8": [
-            "A"
-        ],
-        "C-9": [
-            "A",
-            "B"
-        ],
-        "C-10": [
-            "A",
-            "B"
-        ],
-        "C-11": [
-            "A",
-            "B"
-        ],
-        "C-12": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-13": [
-            "A",
-            "B"
-        ],
-        "C-14": [
-            "A",
-            "B"
-        ],
-        "C-15": [
-            "A"
-        ],
-        "C-16": [
-            "A",
-            "B"
-        ],
-        "C-17": [
-            "A",
-            "B"
-        ],
-        "C-18": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-19": [
-            "A",
-            "B"
-        ],
-        "C-20": [
-            "A",
-            "B"
-        ],
-        "C-21": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-22": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-23": [
-            "A",
-            "B"
-        ],
-        "C-24": [
-            "A",
-            "B",
-            "C",
-            "D"
-        ],
-        "C-25": [
-            "A"
-        ],
-        "C-26": [
-            "A",
-            "B"
-        ],
-        "C-27": [
-            "A",
-            "B"
-        ],
-        "C-28": [
-            "A"
-        ],
-        "C-29": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-30": [
-            "A",
-            "B"
-        ],
-        "C-31": [
-            "A",
-            "B"
-        ],
-        "C-32": [
-            "A"
-        ],
-        "C-33": [
-            "A"
-        ],
-        "C-34": [
-            "A",
-            "B"
-        ],
-        "C-35": [
-            "A",
-            "B"
-        ],
-        "C-36": [
-            "A",
-            "B"
-        ],
-        "C-37": [
-            "A",
-            "B"
-        ],
-        "C-38": [
-            "A",
-            "B"
-        ],
-        "C-39": [
-            "A",
-            "B"
-        ],
-        "C-40": [
-            "A",
-            "B"
-        ],
-        "C-41": [
-            "A",
-            "B"
-        ],
-        "C-42": [
-            "A",
-            "B"
-        ],
-        "C-43": [
-            "A",
-            "B"
-        ],
-        "C-44": [
-            "A",
-            "B"
-        ],
-        "C-45": [
-            "A",
-            "B"
-        ],
-        "C-46": [
-            "A",
-            "B"
-        ],
-        "C-47": [
-            "A",
-            "B"
-        ],
-        "C-48": [
-            "A",
-            "B"
-        ],
-        "C-49": [
-            "A",
-            "B"
-        ],
-        "C-50": [
-            "A",
-            "B"
-        ],
-        "C-51": [
-            "A",
-            "B"
-        ],
-        "C-52": [
-            "A",
-            "B"
-        ],
-        "C-53": [
-            "A",
-            "B"
-        ],
-        "C-54": [
-            "A",
-            "B"
-        ],
-        "C-55": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-56": [
-            "A",
-            "B"
-        ],
-        "C-57": [
-            "A",
-            "B"
-        ],
-        "C-58": [
-            "A",
-            "B"
-        ],
-        "C-59": [
-            "A",
-            "B"
-        ],
-        "C-60": [
-            "A",
-            "B"
-        ],
-        "C-61": [
-            "A",
-            "B"
-        ],
-        "C-62": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-63": [
-            "A",
-            "B"
-        ],
-        "C-64": [
-            "A",
-            "B"
-        ],
-        "C-65": [
-            "A",
-            "B"
-        ],
-        "C-66": [
-            "A",
-            "B"
-        ],
-        "C-67": [
-            "A",
-            "B"
-        ],
-        "C-68": [
-            "A",
-            "B"
-        ],
-        "C-69": [
-            "A",
-            "B"
-        ],
-        "C-70": [
-            "A",
-            "B"
-        ],
-        "C-71": [
-            "A",
-            "B"
-        ],
-        "C-72": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-73": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-74": [
-            "A"
-        ],
-        "C-75": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-76": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-77": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-78": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-79": [
-            "A",
-            "B"
-        ],
-        "C-80": [
-            "A",
-            "B"
-        ],
-        "C-81": [
-            "A",
-            "B"
-        ],
-        "C-82": [
-            "A",
-            "B"
-        ],
-        "C-83": [
-            "A",
-            "B"
-        ],
-        "C-84": [
-            "A",
-            "B"
-        ],
-        "C-85": [
-            "A",
-            "B"
-        ],
-        "C-86": [
-            "A",
-            "B"
-        ],
-        "C-87": [
-            "A",
-            "B"
-        ],
-        "C-88": [
-            "A",
-            "B"
-        ],
-        "C-89": [
-            "A",
-            "B"
-        ],
-        "C-90": [
-            "A",
-            "B"
-        ],
-        "C-91": [
-            "A",
-            "B"
-        ],
-        "C-92": [
-            "A",
-            "B"
-        ],
-        "C-93": [
-            "A",
-            "B"
-        ],
-        "C-94": [
-            "A",
-            "B"
-        ],
-        "C-95": [
-            "A",
-            "B"
-        ],
-        "C-96": [
-            "A",
-            "B"
-        ],
-        "C-97": [
-            "A",
-            "B",
-            "C"
-        ],
-        "C-98": [
-            "A",
-            "B"
-        ],
-        "C-99": [
-            "A"
-        ],
-        "C-100": [
-            "A",
-            "B"
-        ],
-        "R-1": [
-            "A",
-            "B"
-        ],
-        "R-2": [
-            "A",
-            "B"
-        ],
-        "R-3": [
-            "A",
-            "B"
-        ],
-        "R-4": [
-            "A",
-            "B"
-        ],
-        "R-5": [
-            "A",
-            "B"
-        ],
-        "R-6": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-7": [
-            "A"
-        ],
-        "R-8": [
-            "A",
-            "B"
-        ],
-        "R-9": [
-            "A",
-            "B"
-        ],
-        "R-10": [
-            "A",
-            "B"
-        ],
-        "R-11": [
-            "A",
-            "B"
-        ],
-        "R-12": [
-            "A",
-            "B"
-        ],
-        "R-13": [
-            "A",
-            "B"
-        ],
-        "R-14": [
-            "A",
-            "B"
-        ],
-        "R-15": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-16": [
-            "A",
-            "B"
-        ],
-        "R-17": [
-            "A",
-            "B"
-        ],
-        "R-18": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-19": [
-            "A",
-            "B"
-        ],
-        "R-20": [
-            "A",
-            "B"
-        ],
-        "R-21": [
-            "A",
-            "B"
-        ],
-        "R-22": [
-            "A",
-            "B"
-        ],
-        "R-23": [
-            "A",
-            "B"
-        ],
-        "R-24": [
-            "A"
-        ],
-        "R-25": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-26": [
-            "A",
-            "B"
-        ],
-        "R-27": [
-            "A",
-            "B"
-        ],
-        "R-28": [
-            "A",
-            "B"
-        ],
-        "R-29": [
-            "A",
-            "B"
-        ],
-        "R-30": [
-            "A"
-        ],
-        "R-31": [
-            "A",
-            "B"
-        ],
-        "R-32": [
-            "A",
-            "B"
-        ],
-        "R-33": [
-            "A",
-            "B"
-        ],
-        "R-34": [
-            "A",
-            "B"
-        ],
-        "R-35": [
-            "A",
-            "B"
-        ],
-        "R-36": [
-            "A",
-            "B"
-        ],
-        "R-37": [
-            "A",
-            "B"
-        ],
-        "R-38": [
-            "A",
-            "B"
-        ],
-        "R-39": [
-            "A",
-            "B"
-        ],
-        "R-40": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-41": [
-            "A",
-            "B"
-        ],
-        "R-42": [
-            "A",
-            "B"
-        ],
-        "R-43": [
-            "A",
-            "B"
-        ],
-        "R-44": [
-            "A",
-            "B"
-        ],
-        "R-45": [
-            "A",
-            "B"
-        ],
-        "R-46": [
-            "A",
-            "B"
-        ],
-        "R-47": [
-            "A",
-            "B"
-        ],
-        "R-48": [
-            "A",
-            "B"
-        ],
-        "R-49": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-50": [
-            "A"
-        ],
-        "R-51": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-52": [
-            "A"
-        ],
-        "R-53": [
-            "A",
-            "B"
-        ],
-        "R-54": [
-            "A",
-            "B"
-        ],
-        "R-55": [
-            "A",
-            "B"
-        ],
-        "R-56": [
-            "A",
-            "B"
-        ],
-        "R-57": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-58": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-59": [
-            "A",
-            "B"
-        ],
-        "R-60": [
-            "A",
-            "B"
-        ],
-        "R-61": [
-            "A",
-            "B"
-        ],
-        "R-62": [
-            "A",
-            "B"
-        ],
-        "R-63": [
-            "A",
-            "B"
-        ],
-        "R-64": [
-            "A",
-            "B"
-        ],
-        "R-65": [
-            "A",
-            "B"
-        ],
-        "R-66": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-67": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-68": [
-            "A",
-            "B"
-        ],
-        "R-69": [
-            "A",
-            "B"
-        ],
-        "R-70": [
-            "A",
-            "B"
-        ],
-        "R-71": [
-            "A",
-            "B"
-        ],
-        "R-72": [
-            "A",
-            "B",
-            "C"
-        ],
-        "R-73": [
-            "A",
-            "B"
-        ],
-        "R-74": [
-            "A",
-            "B"
-        ],
-        "R-75": [
-            "A",
-            "B"
-        ],
-        "R-76": [
-            "A",
-            "B"
-        ],
-        "R-77": [
-            "A",
-            "B"
-        ]
+        "C-1": {
+            "A": 0,
+            "B": 51.1
+        },
+        "C-2": {
+            "A": 0,
+            "B": 44.9,
+            "C": 84.6
+        },
+        "C-3": {
+            "A": 0,
+            "B": 43
+        },
+        "C-4": {
+            "A": 0,
+            "B": 54
+        },
+        "C-5": {
+            "A": 0,
+            "B": 60
+        },
+        "C-6": {
+            "A": 0,
+            "B": 48.8
+        },
+        "C-7": {
+            "A": 0,
+            "B": 52.7
+        },
+        "C-8": {
+            "A": 0
+        },
+        "C-9": {
+            "A": 0,
+            "B": 69.4
+        },
+        "C-10": {
+            "A": 0,
+            "B": 41.7
+        },
+        "C-11": {
+            "A": 0,
+            "B": 31.7
+        },
+        "C-12": {
+            "A": 0,
+            "B": 37.3,
+            "C": 72.8
+        },
+        "C-13": {
+            "A": 0,
+            "B": 50
+        },
+        "C-14": {
+            "A": 0,
+            "B": 51.6
+        },
+        "C-15": {
+            "A": 0
+        },
+        "C-16": {
+            "A": 0,
+            "B": 62.9
+        },
+        "C-17": {
+            "A": 0,
+            "B": 50.2
+        },
+        "C-18": {
+            "A": 0,
+            "B": 39.8,
+            "C": 66.7
+        },
+        "C-19": {
+            "A": 0,
+            "B": 49
+        },
+        "C-20": {
+            "A": 0,
+            "B": 56.8
+        },
+        "C-21": {
+            "A": 0,
+            "B": 58.6,
+            "C": 87.4
+        },
+        "C-22": {
+            "A": 0,
+            "B": 35.9,
+            "C": 79.1
+        },
+        "C-23": {
+            "A": 0,
+            "B": 56.2
+        },
+        "C-24": {
+            "A": 0,
+            "B": 25.1,
+            "C": 54,
+            "D": 86.2
+        },
+        "C-25": {
+            "A": 0
+        },
+        "C-26": {
+            "A": 0,
+            "B": 62.8
+        },
+        "C-27": {
+            "A": 0,
+            "B": 57.1
+        },
+        "C-28": {
+            "A": 0
+        },
+        "C-29": {
+            "A": 0,
+            "B": 38.9,
+            "C": 55
+        },
+        "C-30": {
+            "A": 0,
+            "B": 30.9
+        },
+        "C-31": {
+            "A": 0,
+            "B": 57.2
+        },
+        "C-32": {
+            "A": 0
+        },
+        "C-33": {
+            "A": 0
+        },
+        "C-34": {
+            "A": 0,
+            "B": 53
+        },
+        "C-35": {
+            "A": 0,
+            "B": 54.9
+        },
+        "C-36": {
+            "A": 0,
+            "B": 49.6
+        },
+        "C-37": {
+            "A": 0,
+            "B": 49.8
+        },
+        "C-38": {
+            "A": 0,
+            "B": 25.4
+        },
+        "C-39": {
+            "A": 0,
+            "B": 49.6
+        },
+        "C-40": {
+            "A": 0,
+            "B": 30.7
+        },
+        "C-41": {
+            "A": 0,
+            "B": 36.4
+        },
+        "C-42": {
+            "A": 0,
+            "B": 50.1
+        },
+        "C-43": {
+            "A": 0,
+            "B": 85
+        },
+        "C-44": {
+            "A": 0,
+            "B": 65.5
+        },
+        "C-45": {
+            "A": 0,
+            "B": 79.7
+        },
+        "C-46": {
+            "A": 0,
+            "B": 57.3
+        },
+        "C-47": {
+            "A": 0,
+            "B": 35.3
+        },
+        "C-48": {
+            "A": 0,
+            "B": 60.4
+        },
+        "C-49": {
+            "A": 0,
+            "B": 42.5
+        },
+        "C-50": {
+            "A": 0,
+            "B": 50.7
+        },
+        "C-51": {
+            "A": 0,
+            "B": 50.1
+        },
+        "C-52": {
+            "A": 0,
+            "B": 29
+        },
+        "C-53": {
+            "A": 0,
+            "B": 55.5
+        },
+        "C-54": {
+            "A": 0,
+            "B": 41.7
+        },
+        "C-55": {
+            "A": 0,
+            "B": 43.1,
+            "C": 75
+        },
+        "C-56": {
+            "A": 0,
+            "B": 55.3
+        },
+        "C-57": {
+            "A": 0,
+            "B": 39.3
+        },
+        "C-58": {
+            "A": 0,
+            "B": 53.5
+        },
+        "C-59": {
+            "A": 0,
+            "B": 51.2
+        },
+        "C-60": {
+            "A": 0,
+            "B": 49.6
+        },
+        "C-61": {
+            "A": 0,
+            "B": 40.8
+        },
+        "C-62": {
+            "A": 0,
+            "B": 40.4,
+            "C": 76
+        },
+        "C-63": {
+            "A": 0,
+            "B": 54.8
+        },
+        "C-64": {
+            "A": 0,
+            "B": 47
+        },
+        "C-65": {
+            "A": 0,
+            "B": 37.9
+        },
+        "C-66": {
+            "A": 0,
+            "B": 56.7
+        },
+        "C-67": {
+            "A": 0,
+            "B": 67.7
+        },
+        "C-68": {
+            "A": 0,
+            "B": 41.6
+        },
+        "C-69": {
+            "A": 0,
+            "B": 38.9
+        },
+        "C-70": {
+            "A": 0,
+            "B": 36.7
+        },
+        "C-71": {
+            "A": 0,
+            "B": 50.1
+        },
+        "C-72": {
+            "A": 0,
+            "B": 26.5,
+            "C": 58.5
+        },
+        "C-73": {
+            "A": 0,
+            "B": 39.2,
+            "C": 72.1
+        },
+        "C-74": {
+            "A": 0
+        },
+        "C-75": {
+            "A": 0,
+            "B": 41.4,
+            "C": 67.5
+        },
+        "C-76": {
+            "A": 0,
+            "B": 32.5,
+            "C": 68
+        },
+        "C-77": {
+            "A": 0,
+            "B": 20.6,
+            "C": 58.1
+        },
+        "C-78": {
+            "A": 0,
+            "B": 53,
+            "C": 77.7
+        },
+        "C-79": {
+            "A": 0,
+            "B": 49.1
+        },
+        "C-80": {
+            "A": 0,
+            "B": 33.7
+        },
+        "C-81": {
+            "A": 0,
+            "B": 53.1
+        },
+        "C-82": {
+            "A": 0,
+            "B": 72.4
+        },
+        "C-83": {
+            "A": 0,
+            "B": 51
+        },
+        "C-84": {
+            "A": 0,
+            "B": 53.7
+        },
+        "C-85": {
+            "A": 0,
+            "B": 52.5
+        },
+        "C-86": {
+            "A": 0,
+            "B": 58.7
+        },
+        "C-87": {
+            "A": 0,
+            "B": 50.3
+        },
+        "C-88": {
+            "A": 0,
+            "B": 57
+        },
+        "C-89": {
+            "A": 0,
+            "B": 84.8
+        },
+        "C-90": {
+            "A": 0,
+            "B": 52.5
+        },
+        "C-91": {
+            "A": 0,
+            "B": 63.9
+        },
+        "C-92": {
+            "A": 0,
+            "B": 47.1
+        },
+        "C-93": {
+            "A": 0,
+            "B": 56.6
+        },
+        "C-94": {
+            "A": 0,
+            "B": 54.4
+        },
+        "C-95": {
+            "A": 0,
+            "B": 46.7
+        },
+        "C-96": {
+            "A": 0,
+            "B": 64.7
+        },
+        "C-97": {
+            "A": 0,
+            "B": 53,
+            "C": 73.2
+        },
+        "C-98": {
+            "A": 0,
+            "B": 54
+        },
+        "C-99": {
+            "A": 0
+        },
+        "C-100": {
+            "A": 0,
+            "B": 53.1
+        },
+        "R-1": {
+            "A": 0,
+            "B": 45.7
+        },
+        "R-2": {
+            "A": 0,
+            "B": 27.1
+        },
+        "R-3": {
+            "A": 0,
+            "B": 73
+        },
+        "R-4": {
+            "A": 0,
+            "B": 65.6
+        },
+        "R-5": {
+            "A": 0,
+            "B": 51
+        },
+        "R-6": {
+            "A": 0,
+            "B": 23.3,
+            "C": 49.2
+        },
+        "R-7": {
+            "A": 0
+        },
+        "R-8": {
+            "A": 0,
+            "B": 56.1
+        },
+        "R-9": {
+            "A": 0,
+            "B": 71.7
+        },
+        "R-10": {
+            "A": 0,
+            "B": 25.2
+        },
+        "R-11": {
+            "A": 0,
+            "B": 58.8
+        },
+        "R-12": {
+            "A": 0,
+            "B": 51.3
+        },
+        "R-13": {
+            "A": 0,
+            "B": 43.5
+        },
+        "R-14": {
+            "A": 0,
+            "B": 67.6
+        },
+        "R-15": {
+            "A": 0,
+            "B": 50.7,
+            "C": 71.7
+        },
+        "R-16": {
+            "A": 0,
+            "B": 71.2
+        },
+        "R-17": {
+            "A": 0,
+            "B": 43.2
+        },
+        "R-18": {
+            "A": 0,
+            "B": 31.7,
+            "C": 60.9
+        },
+        "R-19": {
+            "A": 0,
+            "B": 62.4
+        },
+        "R-20": {
+            "A": 0,
+            "B": 52.7
+        },
+        "R-21": {
+            "A": 0,
+            "B": 59.8
+        },
+        "R-22": {
+            "A": 0,
+            "B": 29.7
+        },
+        "R-23": {
+            "A": 0,
+            "B": 38
+        },
+        "R-24": {
+            "A": 0
+        },
+        "R-25": {
+            "A": 0,
+            "B": 35,
+            "C": 70.3
+        },
+        "R-26": {
+            "A": 0,
+            "B": 48.1
+        },
+        "R-27": {
+            "A": 0,
+            "B": 56.7
+        },
+        "R-28": {
+            "A": 0,
+            "B": 76.4
+        },
+        "R-29": {
+            "A": 0,
+            "B": 70
+        },
+        "R-30": {
+            "A": 0
+        },
+        "R-31": {
+            "A": 0,
+            "B": 54.6
+        },
+        "R-32": {
+            "A": 0,
+            "B": 34.9
+        },
+        "R-33": {
+            "A": 0,
+            "B": 46.9
+        },
+        "R-34": {
+            "A": 0,
+            "B": 50.4
+        },
+        "R-35": {
+            "A": 0,
+            "B": 38.3
+        },
+        "R-36": {
+            "A": 0,
+            "B": 49.7
+        },
+        "R-37": {
+            "A": 0,
+            "B": 70.4
+        },
+        "R-38": {
+            "A": 0,
+            "B": 62.4
+        },
+        "R-39": {
+            "A": 0,
+            "B": 64
+        },
+        "R-40": {
+            "A": 0,
+            "B": 39.4,
+            "C": 78.1
+        },
+        "R-41": {
+            "A": 0,
+            "B": 31.7
+        },
+        "R-42": {
+            "A": 0,
+            "B": 39
+        },
+        "R-43": {
+            "A": 0,
+            "B": 87.7
+        },
+        "R-44": {
+            "A": 0,
+            "B": 50.6
+        },
+        "R-45": {
+            "A": 0,
+            "B": 55.9
+        },
+        "R-46": {
+            "A": 0,
+            "B": 44.1
+        },
+        "R-47": {
+            "A": 0,
+            "B": 63.1
+        },
+        "R-48": {
+            "A": 0,
+            "B": 25.8
+        },
+        "R-49": {
+            "A": 0,
+            "B": 23.7,
+            "C": 62.5
+        },
+        "R-50": {
+            "A": 0
+        },
+        "R-51": {
+            "A": 0,
+            "B": 34.4,
+            "C": 73.4
+        },
+        "R-52": {
+            "A": 0
+        },
+        "R-53": {
+            "A": 0,
+            "B": 54.5
+        },
+        "R-54": {
+            "A": 0,
+            "B": 33
+        },
+        "R-55": {
+            "A": 0,
+            "B": 33.7
+        },
+        "R-56": {
+            "A": 0,
+            "B": 48.4
+        },
+        "R-57": {
+            "A": 0,
+            "B": 45.8,
+            "C": 70.5
+        },
+        "R-58": {
+            "A": 0,
+            "B": 34.6,
+            "C": 85.1
+        },
+        "R-59": {
+            "A": 0,
+            "B": 58.7
+        },
+        "R-60": {
+            "A": 0,
+            "B": 42.2
+        },
+        "R-61": {
+            "A": 0,
+            "B": 58.3
+        },
+        "R-62": {
+            "A": 0,
+            "B": 41.4
+        },
+        "R-63": {
+            "A": 0,
+            "B": 35.9
+        },
+        "R-64": {
+            "A": 0,
+            "B": 15.3
+        },
+        "R-65": {
+            "A": 0,
+            "B": 34.5
+        },
+        "R-66": {
+            "A": 0,
+            "B": 56.9,
+            "C": 85.6
+        },
+        "R-67": {
+            "A": 0,
+            "B": 22.5,
+            "C": 62.8
+        },
+        "R-68": {
+            "A": 0,
+            "B": 50.5
+        },
+        "R-69": {
+            "A": 0,
+            "B": 61.5
+        },
+        "R-70": {
+            "A": 0,
+            "B": 49.1
+        },
+        "R-71": {
+            "A": 0,
+            "B": 64.9
+        },
+        "R-72": {
+            "A": 0,
+            "B": 19.2,
+            "C": 64.9
+        },
+        "R-73": {
+            "A": 0,
+            "B": 48.3
+        },
+        "R-74": {
+            "A": 0,
+            "B": 39.8
+        },
+        "R-75": {
+            "A": 0,
+            "B": 43
+        },
+        "R-76": {
+            "A": 0,
+            "B": 39.7
+        },
+        "R-77": {
+            "A": 0,
+            "B": 44.9
+        }
     },
     "townGuard": {},
     "alchemy": [],

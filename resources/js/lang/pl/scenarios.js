@@ -268,30 +268,56 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Trująca piwnica"
+        "name": "Trująca piwnica",
+        "requirements": "Cel życiowy „Poszukiwacz Xorna”"
     },
     "gh-53": {
         "name": "Podziemia Krypty",
+        "requirements": "Cel życiowy „Poszukiwacz Xorna”",
         "rewards": [
             "Poszukiwacz Xorna otrzymuje: „Kostur Xorna” (przedmiot 114) Poszukiwacz nie może sprzedać tego przedmiotu."
         ]
     },
     "gh-54": {
         "name": "Lodowy Pałac",
+        "requirements": "Cel życiowy „Poszukiwacz Xorna”, przedmiot „Kostur Xorna” założony",
         "rewards": [
             "Poszukiwacz Xorna kończy przygodę.",
             "Zamiast zwykłych wydarzeń zakończenia przygody danej klasy do talii należy dodać wydarzenie na szlaku oraz miejskie 59.",
             "Otwórzcie kopertę {PH}"
         ]
     },
+    "gh-SoX1": {
+        "name": "Nobles’ Crypt",
+        "rewards": [
+            "+1 reputation",
+            "Add City Event SoX2 to the deck"
+        ]
+    },
+    "gh-SoX2": {
+        "name": "Flooded Crypt",
+        "rewards": [
+            "Add City Event SoX3 to the deck",
+            "Choose only one of the following: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) or “Wave Crest” (Item 111)"
+        ]
+    },
+    "gh-SoX3": {
+        "name": "Crypt of the Ancients",
+        "rewards": [
+            "50 collective gold",
+            "Add City Event SoX3 to the deck"
+        ]
+    },
     "gh-55": {
         "name": "Zamglony gąszcz",
+        "requirements": "Cel życiowy „Bratnia pomoc”",
         "rewards": [
             "10 szt. złota do podziału"
         ]
     },
     "gh-56": {
         "name": "Las Bandytów",
+        "requirements": "Cel życiowy „Bratnia pomoc”",
         "rewards": [
             "Zadanie „Bratnia pomoc” wykonane",
             "Otwórzcie kopertę {DS}",
@@ -301,12 +327,14 @@ export default {
     },
     "gh-57": {
         "name": "Dochodzenie",
+        "requirements": "Cel życiowy „Pomsta”",
         "rewards": [
             "+1 do reputacji"
         ]
     },
     "gh-58": {
         "name": "Krwawa Chata",
+        "requirements": "Cel życiowy „Pomsta”",
         "rewards": [
             "Zadanie „Pomsta” wykonane",
             "Otwórzcie kopertę X",
@@ -314,10 +342,12 @@ export default {
         ]
     },
     "gh-59": {
-        "name": "Zapomniany gaj"
+        "name": "Zapomniany gaj",
+        "requirements": "Cel życiowy „Szukając lekarstwa”"
     },
     "gh-60": {
         "name": "Laboratorium alchemiczne",
+        "requirements": "Cel życiowy „Szukając lekarstwa”",
         "rewards": [
             "Zadanie „Szukając lekarstwa” wykonane",
             "Otwórzcie kopertę X",
@@ -325,10 +355,12 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Znikająca latarnia"
+        "name": "Znikająca latarnia",
+        "requirements": "Cel życiowy „Upadek człowieka”"
     },
     "gh-62": {
         "name": "Czeluść Dusz",
+        "requirements": "Cel życiowy „Upadek człowieka”",
         "rewards": [
             "Zadanie „Upadek człowieka” wykonane",
             "Otwórzcie kopertę {NS}",
@@ -413,7 +445,8 @@ export default {
         ]
     },
     "gh-76": {
-        "name": "Gniazdo Dreszczowców"
+        "name": "Gniazdo Dreszczowców",
+        "requirements": "Odwaga"
     },
     "gh-77": {
         "name": "Krypta Tajemnic",
@@ -645,6 +678,7 @@ export default {
     },
     "fc-96": {
         "name": "Nieoczekiwani goście",
+        "requirements": "Koniec Mroku (Globalne) ZDOBYTE",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
             "Dodaj do odpowiednich talii wydarzenie miejskie 82 oraz na szlaku 82"
@@ -2426,6 +2460,7 @@ export default {
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Cel życiowy „Protect and Serve”",
         "rewards": [
             "„Blazing Boots” (przedmiot 87)",
             "+1 do reputacji"
@@ -2433,6 +2468,7 @@ export default {
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Cel życiowy „Protect and Serve”",
         "rewards": [
             "Unlock Envelope {BM}",
             "+2 do reputacji",
@@ -2440,10 +2476,12 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Cel życiowy „Bandit Banisher”"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Cel życiowy „Bandit Banisher”",
         "rewards": [
             "Unlock Envelope {CG}",
             "Po 10 szt. złota dla każdego"
@@ -2451,18 +2489,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Cel życiowy „Natural Selection”",
         "rewards": [
             "Gain one random „Stone” item (przedmiot 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Cel życiowy „Natural Selection”",
         "rewards": [
             "Unlock Envelope {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Cel życiowy „An Adder Divides”",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
             "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
@@ -2648,12 +2689,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Cel życiowy „At All Costs”",
         "rewards": [
             "„Rockspine Bulwark” (przedmiot AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Cel życiowy „The Weight of Failure”",
         "rewards": [
             "„Ghostshimmer Honey” (przedmiot AA02)"
         ]
@@ -2666,6 +2709,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Cel życiowy „Ingenious Inventor” i przedmiot „Power Modulator” założony",
         "rewards": [
             [
                 "„Ingenious Inventor” quest complete",
@@ -2691,6 +2735,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Cel życiowy „Scrap Diver”",
         "rewards": [
             "„Scrap Diver” quest complete",
             "Otwórzcie kopertę {QA}",
@@ -2705,10 +2750,12 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Cel życiowy „Brutal Enforcer”"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Cel życiowy „Brutal Enforcer”",
         "rewards": [
             "„Brutal Enforcer” quest complete",
             "Otwórzcie kopertę {RM}",
@@ -2716,10 +2763,12 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Cel życiowy „Apex Predator”"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Cel życiowy „Apex Predator”",
         "rewards": [
             "„Apex Predator” quest complete",
             "Otwórzcie kopertę {RM}",
@@ -2750,6 +2799,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Brak postaci Ruinmaw w drużynie",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
             "„Savage Cuirass” design (przedmiot RM06)"

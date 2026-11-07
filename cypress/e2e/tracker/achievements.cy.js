@@ -106,6 +106,21 @@ describe('Achievements', () => {
         });
     });
 
+    it('It lists scenarios requiring an achievement apart from those requiring it to be incomplete', () => {
+        // Given The Merchant Flees is gained from scenario 8
+        cy.visit('/tracker/?groups=CR_GCRM&states=1_c-2_c-3_c-4_i-7_c-8_c-9_b-13_i-14_c-16_c-18_i-20_c-24_c-25_i-28_r-30_c-32_c-33_i-40_r');
+        cy.visit('/tracker/#/achievements');
+
+        // When opening the achievement
+        cy.get('#global-achievements li').contains('The Merchant Flees').click();
+
+        // Then scenarios 7 and 20 require it, while 3 and 9 require it to be incomplete
+        cy.contains('h2', 'Required by:').should('contain', '7').and('contain', '20')
+            .and('not.contain', '3').and('not.contain', '9');
+        cy.contains('h2', 'Blocks:').should('contain', '3').and('contain', '9')
+            .and('not.contain', '7').and('not.contain', '20');
+    });
+
     it('It can search for manual achievements', () => {
         cy.visit('/tracker/#/achievements');
 

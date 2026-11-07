@@ -32,7 +32,7 @@ export default class PersonalQuestRepository {
         if (!this.gameData.conquestsGames().includes(game) || !this.gameData.enabledCrossovers().includes(Game.cq)) {
             return collect();
         }
-        const prosperity = SheetCalculations.methods.calculateProsperity(sheet.prosperityIndex, game);
+        const prosperity = SheetCalculations.methods.calculateProsperity(sheet.effectiveProsperityIndex, game);
 
         return this.fetch(Game.cq).filter(quest => prosperity >= quest.requiredProsperity);
     }
