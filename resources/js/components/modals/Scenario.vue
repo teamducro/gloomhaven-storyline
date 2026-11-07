@@ -270,6 +270,9 @@
                             </div>
                         </div>
                     </template>
+                    <a v-if="String(scenario.id).startsWith('SoX')" class="block mt-2 text-sm link" target="_blank" rel="noreferrer"
+                       href="https://boardgamegeek.com/thread/2220121/seeker-xorn-bonus-content">
+                        {{ $t('Fan-made bonus content by {author}', {author: 'Morthai'}) }}</a>
                     <blockquote v-if="scenario.game === 'gh' && (scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
                         class="relative py-2 px-4 text-base italic border-l-4 quote">
                         <a class="absolute w-full h-full top-0 left-0" target="_blank"

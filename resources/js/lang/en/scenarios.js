@@ -284,6 +284,27 @@ export default {
             "Open envelope {PH}"
         ]
     },
+    "gh-SoX1": {
+        "name": "Nobles’ Crypt",
+        "rewards": [
+            "+1 reputation",
+            "Add City Event SoX2 to the deck"
+        ]
+    },
+    "gh-SoX2": {
+        "name": "Flooded Crypt",
+        "rewards": [
+            "Add City Event SoX3 to the deck",
+            "Choose only one of the following: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) or “Wave Crest” (Item 111)"
+        ]
+    },
+    "gh-SoX3": {
+        "name": "Crypt of the Ancients",
+        "rewards": [
+            "50 collective gold",
+            "Add City Event SoX3 to the deck"
+        ]
+    },
     "gh-55": {
         "name": "Foggy Thicket",
         "rewards": [

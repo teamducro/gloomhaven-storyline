@@ -148,16 +148,28 @@ class Sheet {
         this.classEventsAdded[id] = [...added, moment];
     }
 
-    // Events as 'C-57' / 'R-21'.
-    addEvents(events) {
-        const decks = {C: 'city', R: 'road'};
+    // Events as 'C-57' / 'R-21'; bonus content uses string numbers like 'C-SoX1'.
+    // inDeck false only makes the event addable (unless it is already in the deck).
+    addEvents(events, inDeck = true) {
         events.forEach((event) => {
-            const [type, number] = event.split('-');
-            if (!decks[type]) {
-                throw new Error(`Unknown event type: ${event}`);
-            }
-            this[decks[type]][parseInt(number)] = true;
+            const [deck, number] = this.eventKey(event);
+            this[deck][number] = inDeck || this[deck][number] || false;
         });
+    }
+
+    // Bonus events only exist on the sheet once added, so this tells whether their content is in play.
+    hasEvent(event) {
+        const [deck, number] = this.eventKey(event);
+        return this[deck][number] !== undefined;
+    }
+
+    eventKey(event) {
+        const decks = {C: 'city', R: 'road'};
+        const [type, number] = event.split('-');
+        if (!decks[type]) {
+            throw new Error(`Unknown event type: ${event}`);
+        }
+        return [decks[type], isNaN(number) ? number : parseInt(number)];
     }
 
     fillRelations() {
@@ -245,7 +257,8 @@ class Sheet {
     valuesToStore() {
         let values = this.parentValuesToStore();
         values.itemDesigns = collect({...this.itemDesigns}).filter(v => v).all();
-        values.city = collect({...this.city}).filter(v => v).all();
+        // Bonus events (e.g. 'SoX1') aren't refilled by the deck spec, so they're kept once known, even when out of the deck.
+        values.city = collect({...this.city}).filter((v, id) => v || isNaN(id)).all();
         values.road = collect({...this.road}).filter(v => v).all();
         values.rift = collect({...this.rift}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();

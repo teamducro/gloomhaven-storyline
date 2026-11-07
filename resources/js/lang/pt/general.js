@@ -533,5 +533,6 @@ export default {
     "Finale": "Finale",
     "Random Side Scenarios": "Random Side Scenarios",
     "Puzzle Book": "Puzzle Book",
-    "Events": "Events"
+    "Events": "Events",
+    "Fan-made bonus content by {author}": "Fan-made bonus content by {author}"
 }
