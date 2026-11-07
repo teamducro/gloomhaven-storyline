@@ -2,7 +2,7 @@
     <webp v-if="thumbnail" :src="thumbnail" alt=""
           class="monster-icon w-8 h-8 rounded-full object-cover shrink-0"/>
     <span v-else class="monster-icon w-8 h-8 rounded-full shrink-0 inline-flex items-center justify-center bg-white2-10 text-sm"
-          aria-hidden="true">{{ $t('monsters.' + monster).charAt(0) }}</span>
+          aria-hidden="true"></span>
 </template>
 
 <script>

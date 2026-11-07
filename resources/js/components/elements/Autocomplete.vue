@@ -37,7 +37,7 @@ import Slugify from "../../services/Slugify";
 import Helpers from "../../services/Helpers";
 
 export default {
-    emits: ['change'],
+    emits: ['change', 'remove'],
     inject: ['appData'],
     mixins: [Slugify],
     props: {
@@ -49,6 +49,8 @@ export default {
         maxItems: {default: 11},
         width: {type: String, default: 'w-40'},
         autoClose: {type: Boolean, default: false},
+        // Clicking a disabled (already chosen) item emits "remove" instead of being ignored
+        deselectable: {type: Boolean, default: false},
         filterClosure: {
             type: Function,
             default: (query) => {
@@ -103,6 +105,9 @@ export default {
         },
         select(item) {
             if (this.isDisabled(item)) {
+                if (this.deselectable) {
+                    this.$emit('remove', item);
+                }
                 return;
             }
 

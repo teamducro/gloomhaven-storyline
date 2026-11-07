@@ -109,36 +109,6 @@
                             </div>
                         </div>
 
-                        <div v-if="scenario.monsters.length" id="scenario-monsters" class="mt-2">
-                            <button class="mdc-button normal-case -ml-2" :aria-expanded="monstersVisible"
-                                    @click="monstersVisible = !monstersVisible">
-                                <span class="mdc-button__ripple"></span>
-                                <span class="mdc-button__label font-title text-white">
-                                    {{ $t('Monsters') }} ({{ scenario.monsters.length }})
-                                </span>
-                                <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
-                                   :class="{'rotate-0': monstersVisible, 'rotate-180': !monstersVisible}">
-                                    keyboard_arrow_up
-                                </i>
-                            </button>
-                            <transition-expand>
-                                <ul v-if="monstersVisible" class="flex flex-wrap gap-x-4 gap-y-2">
-                                    <li v-for="monster in scenario.monsters" :key="monster">
-                                        <button v-if="hasMonsterImage(monster)" type="button"
-                                                class="flex items-center gap-2 text-left hover:underline"
-                                                @click="openMonster(monster)">
-                                            <monster-icon :game="scenario.game" :monster="monster"/>
-                                            {{ $t('monsters.' + monster) }}
-                                        </button>
-                                        <span v-else class="flex items-center gap-2">
-                                            <monster-icon :game="scenario.game" :monster="monster"/>
-                                            {{ $t('monsters.' + monster) }}
-                                        </span>
-                                    </li>
-                                </ul>
-                            </transition-expand>
-                        </div>
-
                         <div class="mt-4 mb-2"
                              v-if="scenario.isVisible() && !scenario.isComplete() && !treasuresVisible">
                             <button class="mdc-button origin-left transform scale-75 mdc-button--raised"
@@ -252,6 +222,36 @@
                             </template>
 
                             <cards v-if="scenario.hasCard()" :cards="scenario.cards"></cards>
+                        </div>
+
+                        <div v-if="scenario.monsters.length" id="scenario-monsters" class="mb-3">
+                            <button class="mdc-button normal-case -ml-2" :aria-expanded="monstersVisible"
+                                    @click="monstersVisible = !monstersVisible">
+                                <span class="mdc-button__ripple"></span>
+                                <span class="mdc-button__label font-title text-white">
+                                    {{ $t('Monsters') }} ({{ scenario.monsters.length }})
+                                </span>
+                                <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
+                                   :class="{'rotate-0': monstersVisible, 'rotate-180': !monstersVisible}">
+                                    keyboard_arrow_up
+                                </i>
+                            </button>
+                            <transition-expand>
+                                <ul v-if="monstersVisible" class="flex flex-wrap gap-x-4 gap-y-2">
+                                    <li v-for="monster in scenario.monsters" :key="monster">
+                                        <button v-if="hasMonsterImage(monster)" type="button"
+                                                class="flex items-center gap-2 text-left hover:underline"
+                                                @click="openMonster(monster)">
+                                            <monster-icon :game="scenario.game" :monster="monster"/>
+                                            {{ $t('monsters.' + monster) }}
+                                        </button>
+                                        <span v-else class="flex items-center gap-2">
+                                            <monster-icon :game="scenario.game" :monster="monster"/>
+                                            {{ $t('monsters.' + monster) }}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </transition-expand>
                         </div>
 
                         <div class="mb-3" v-if="showNotes">

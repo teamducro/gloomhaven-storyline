@@ -51,8 +51,8 @@ describe('Game data', () => {
 
         images.forEach(image => {
             const thumbnail = image.replace('/', '/thumbs/');
-            [image, thumbnail].forEach(path => ['jpg', 'webp'].forEach(extension => {
-                cy.request({method: 'HEAD', url: `/img/monsters/${path}.${extension}`, log: false});
+            [image, thumbnail].forEach(path => [path, path.replace(/\.\w+$/, '.webp')].forEach(file => {
+                cy.request({method: 'HEAD', url: `/img/monsters/${file}`, log: false});
             }));
         });
     });

@@ -110,7 +110,10 @@
                         Worldhaven</a>,
                     <a class="link" target="_blank" rel="noreferrer"
                        href="https://github.com/VerbalGnat48/The-Hole">
-                        The Hole</a>
+                        The Hole</a>,
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://github.com/Lurkars/gloomhavensecretariat">
+                        Gloomhaven Secretariat</a>
                 </li>
                 <li class="py-1">
                     Summaries for Forgotten Circles by O.T.Nad

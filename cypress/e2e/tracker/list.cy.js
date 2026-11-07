@@ -96,6 +96,17 @@ describe('Scenario list', () => {
         // The results stay open to pick another monster
         cy.get('.dropdown .dropdown li').should('contain', 'Bandit Guard');
 
+        // Clicking a chosen monster again removes it from the filter
+        cy.get('.dropdown .dropdown li').contains('Bandit Guard').click();
+        utilities.assertTableCount('scenarios', 113);
+        cy.get('.dropdown .dropdown li').contains('Bandit Guard').click();
+        utilities.assertTableCount('scenarios', 2);
+
+        // Clicking elsewhere in the filter menu closes the results, not the menu
+        cy.get('.dropdown li[role="separator"]').first().click();
+        cy.get('.dropdown .dropdown').should('not.exist');
+        cy.get('input[name="monster-filter"]').should('be.visible');
+
         // Starting class solo scenarios are visible too
         utilities.assertTableCount('scenarios', 2);
         cy.get('#scenarios').contains('#1 Black Barrow').should('be.visible');
@@ -135,7 +146,7 @@ describe('Scenario list', () => {
         cy.get('#monster-image img').should(img => expect(img[0].naturalWidth).to.be.greaterThan(0));
     });
 
-    it('It shows a placeholder for monsters without an image', () => {
+    it('It shows the base monster image for Jaws of the Lion variants', () => {
         cy.visit('/tracker/#/scenarios');
         utilities.switchGame('jotl');
         cy.visit('/tracker/#/scenarios');
@@ -144,9 +155,8 @@ describe('Scenario list', () => {
         cy.get('#scenario-monsters button').contains('Monsters').click();
 
         cy.get('#scenario-monsters li').should('have.length', 1).and('contain', 'Common Vermling Raider');
-        cy.get('#scenario-monsters li img').should('not.exist');
-        cy.get('#scenario-monsters li button').should('not.exist');
-        cy.get('#scenario-monsters li .monster-icon').should('have.text', 'C');
+        cy.get('#scenario-monsters li img.monster-icon')
+            .should('have.attr', 'src').and('contain', '/img/monsters/jotl/thumbs/vermling-raider.');
     });
 
     it('Only show scenarios from selected game', () => {

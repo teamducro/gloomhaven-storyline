@@ -55,7 +55,7 @@
                     <template v-if="monsters.length">
                         <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
-                        <li class="px-4 [&_.dropdown]:static">
+                        <li class="px-4 [&_.dropdown]:static [&_.dropdown]:mt-2">
                             <autocomplete :label="$t('Monster')"
                                           width="w-full"
                                           id="monster-filter"
@@ -63,7 +63,9 @@
                                           :disabled="monsterFilter"
                                           :auto-disable="false"
                                           :filter-closure="monsterFilterClosure"
-                                          @change="addMonsterFilter">
+                                          :deselectable="true"
+                                          @change="addMonsterFilter"
+                                          @remove="removeMonsterFilter">
                                 <template v-for="monster in monsters" v-slot:[monster]>
                                     <span class="flex items-center gap-3">
                                         <monster-icon :game="appData.game" :monster="monster"/>

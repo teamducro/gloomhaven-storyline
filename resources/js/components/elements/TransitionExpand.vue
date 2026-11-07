@@ -20,12 +20,10 @@ export default {
             element.style.height = '0';
 
             setTimeout(() => {
-                element.style.height = 'auto';
-                const {width} = getComputedStyle(element);
-                element.style.width = width;
-                const {height} = getComputedStyle(element);
-                element.style.width = null;
+                // Measure in the normal flow: absolutely positioned, wrapping content gets a different width and height
                 element.style.position = null;
+                element.style.height = 'auto';
+                const {height} = getComputedStyle(element);
                 element.style.visibility = null;
                 element.style.height = '0';
                 // Force repaint to make sure the animation is triggered correctly.
