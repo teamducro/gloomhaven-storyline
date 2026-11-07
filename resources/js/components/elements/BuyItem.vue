@@ -4,7 +4,7 @@
             {{ $t('Availability') }}: {{ availability }} / {{ item.count }}
             <template v-if="removedCount">
                 <br>{{ $t('Removed from game') }}: {{ removedCount }}
-                <button type="button" class="restore-item mdc-button ml-2" :disabled="appData.read_only" @click="restore">
+                <button type="button" class="restore-item mdc-button ml-1 min-w-0! h-7! px-1! text-sm!" :disabled="appData.read_only" @click="restore">
                     <span class="mdc-button__label">{{ $t('Restore') }}</span>
                 </button>
             </template>
