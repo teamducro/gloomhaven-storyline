@@ -68,6 +68,11 @@ export default class GameData {
             [Game.cq]: {
                 scenarios: files[Game.cq].scenarios,
                 items: files[Game.cq].items
+            },
+            // Content is in gh.json, gated by the bonus events on the party sheet.
+            [Game.sox]: {
+                scenarios: [],
+                items: []
             }
         }
     }
@@ -89,7 +94,7 @@ export default class GameData {
         const campaign = store.get(store.get('campaignId') || 'local') || {}
 
         return Object.entries(campaign).some(([key, character]) => key.startsWith('character-')
-            && (files[game].characterOrder.includes(character?.id) || character?.quest?.game === game))
+            && (files[game]?.characterOrder.includes(character?.id) || character?.quest?.game === game))
     }
 
     // Games whose personal quest deck the ConQuests cards can be shuffled into.

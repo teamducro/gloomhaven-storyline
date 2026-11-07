@@ -9,7 +9,6 @@ class PersonalQuest {
         this._name = data.name;
         this.character_unlock = data.character_unlock;
         this.events_on_choose = data.events_on_choose || [];
-        this.events_addable_on_choose = data.events_addable_on_choose || [];
         this.starting = data.starting || false;
         this.building_unlocks = data.building_unlocks;
         this._unlock = data.unlock;
