@@ -51,23 +51,20 @@ export default class ScenarioValidator {
     }
 
     checkHidden(scenario) {
-        let states = this.linkedStates(scenario);
-        let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
+        const unlocked = this.isUnlockedByStory(scenario);
 
         if (scenario.isHidden()) {
-            if (this.isUnlockedByStory(scenario)) {
+            if (unlocked) {
                 if (scenario.hasManualRequirement()) {
                     this.scenarioRepository.setRequired(scenario);
                 } else {
                     this.scenarioRepository.setIncomplete(scenario);
                 }
-                this.needsValidating = true;1
-            }
-        } else {
-            if (states.has(ScenarioState.complete) === false && !scenario.is_side && !scenario.root && !unlocked && !this.soloScenarioUnlocked(scenario)) {
-                this.scenarioRepository.setHidden(scenario);
                 this.needsValidating = true;
             }
+        } else if (!unlocked && !scenario.is_side) {
+            this.scenarioRepository.setHidden(scenario);
+            this.needsValidating = true;
         }
     }
 
