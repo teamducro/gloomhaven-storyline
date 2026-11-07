@@ -110,7 +110,33 @@
                         </div>
 
                         <div v-if="scenario.monsters.length" id="scenario-monsters" class="mt-2">
-                            {{ $t('Monsters') }}: {{ scenario.monsters.map(monster => $t('monsters.' + monster)).join(', ') }}
+                            <button class="mdc-button normal-case -ml-2" :aria-expanded="monstersVisible"
+                                    @click="monstersVisible = !monstersVisible">
+                                <span class="mdc-button__ripple"></span>
+                                <span class="mdc-button__label font-title text-white">
+                                    {{ $t('Monsters') }} ({{ scenario.monsters.length }})
+                                </span>
+                                <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
+                                   :class="{'rotate-0': monstersVisible, 'rotate-180': !monstersVisible}">
+                                    keyboard_arrow_up
+                                </i>
+                            </button>
+                            <transition-expand>
+                                <ul v-if="monstersVisible" class="flex flex-wrap gap-x-4 gap-y-2">
+                                    <li v-for="monster in scenario.monsters" :key="monster">
+                                        <button v-if="hasMonsterImage(monster)" type="button"
+                                                class="flex items-center gap-2 text-left hover:underline"
+                                                @click="openMonster(monster)">
+                                            <monster-icon :game="scenario.game" :monster="monster"/>
+                                            {{ $t('monsters.' + monster) }}
+                                        </button>
+                                        <span v-else class="flex items-center gap-2">
+                                            <monster-icon :game="scenario.game" :monster="monster"/>
+                                            {{ $t('monsters.' + monster) }}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </transition-expand>
                         </div>
 
                         <div class="mt-4 mb-2"
@@ -335,6 +361,7 @@ import ChoiceService from "../../services/ChoiceService";
 import {MDCTextField} from "@material/textfield/component";
 import {ScenarioState} from "../../models/ScenarioState";
 import PreloadImage from "../../services/PreloadImage";
+import MonsterImages from "../../services/MonsterImages";
 import StoryRepository from "../../repositories/StoryRepository";
 import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
@@ -350,6 +377,7 @@ export default {
             stateKey: 1,
             questExpand: [],
             treasuresVisible: false,
+            monstersVisible: false,
             rollback: null,
             virtualBoardUrl: null,
             notes: null,
@@ -494,6 +522,12 @@ export default {
         rerenderStateSelection() {
             this.stateKey++;
         },
+        hasMonsterImage(monster) {
+            return MonsterImages.portrait(this.scenario.game, monster) !== null;
+        },
+        openMonster(monster) {
+            this.$bus.$emit('open-monster', {game: this.scenario.game, monster});
+        },
         requiredBy(achievement) {
             return this.scenarioRepository.requiredBy(achievement);
         },
@@ -509,6 +543,7 @@ export default {
             this.scenario = scenario;
             this.setVirtualBoardUrl();
             this.treasuresVisible = this.scenario.lootedAllTreasures;
+            this.monstersVisible = false;
             this.rollback = null;
             this.notesEntered();
 

@@ -310,6 +310,7 @@ export default {
     "Monster": "Monster",
     "Monsters": "Monsters",
     "Monster data": "Monster data",
+    "Monster art": "Monster art",
     "transfer": {
         "title": "Transferir datos de campaña",
         "text": "La copia de datos entre campañas se puede hacer fácilmente .",

@@ -6,6 +6,7 @@ import cs from "../../../resources/js/games/cs.json";
 import fc from "../../../resources/js/games/fc.json";
 import mp from "../../../resources/js/games/mp.json";
 import cq from "../../../resources/js/games/cq.json";
+import monsterImages from "../../../resources/js/monster-images.json";
 
 const files = {gh, gh2, fh, jotl, cs, fc, mp, cq};
 
@@ -42,6 +43,17 @@ describe('Game data', () => {
             keys.forEach(key => {
                 expect(Object.keys(files[game][key]), `${game} ${key} is not empty`).to.not.be.empty;
             });
+        });
+    });
+
+    it('Every monster image exists', () => {
+        const images = new Set(Object.values(monsterImages).flatMap(game => Object.values(game)));
+
+        images.forEach(image => {
+            const thumbnail = image.replace('/', '/thumbs/');
+            [image, thumbnail].forEach(path => ['jpg', 'webp'].forEach(extension => {
+                cy.request({method: 'HEAD', url: `/img/monsters/${path}.${extension}`, log: false});
+            }));
         });
     });
 });

@@ -104,6 +104,15 @@
                         Gloomhaven Secretariat</a>
                 </li>
                 <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Monster art') }}:</span>
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://github.com/any2cards/worldhaven">
+                        Worldhaven</a>,
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://github.com/VerbalGnat48/The-Hole">
+                        The Hole</a>
+                </li>
+                <li class="py-1">
                     Summaries for Forgotten Circles by O.T.Nad
                 </li>
                 <li class="py-1">

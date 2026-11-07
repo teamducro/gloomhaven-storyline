@@ -66,7 +66,10 @@
                                           :auto-close="true"
                                           @change="addMonsterFilter">
                                 <template v-for="monster in monsters" v-slot:[monster]>
-                                    {{ $t('monsters.' + monster) }}
+                                    <span class="flex items-center gap-3">
+                                        <monster-icon :game="appData.game" :monster="monster"/>
+                                        {{ $t('monsters.' + monster) }}
+                                    </span>
                                 </template>
                             </autocomplete>
                         </li>
@@ -75,7 +78,10 @@
                             class="mdc-deprecated-list-item mdc-deprecated-list-item--activated cursor-pointer"
                             @click="removeMonsterFilter(monster)">
                             <span class="mdc-deprecated-list-item__ripple"></span>
-                            <span class="mdc-deprecated-list-item__text">{{ $t('monsters.' + monster) }}</span>
+                            <span class="mdc-deprecated-list-item__text flex items-center gap-3">
+                                <monster-icon :game="appData.game" :monster="monster"/>
+                                {{ $t('monsters.' + monster) }}
+                            </span>
                         </li>
                     </template>
                 </ul>
