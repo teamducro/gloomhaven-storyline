@@ -194,8 +194,6 @@
 
                         <rewards :scenario="scenario"></rewards>
 
-                        <scenario-faq :scenario="scenario"></scenario-faq>
-
                         <div class="mb-3 flex flex-col items-start">
                             <template v-for="(quest, index) in quests">
                                 <button class="mdc-button normal-case -ml-2"
@@ -229,6 +227,8 @@
 
                             <cards v-if="scenario.hasCard()" :cards="scenario.cards"></cards>
                         </div>
+
+                        <scenario-faq :scenario="scenario"></scenario-faq>
 
                         <div class="mb-3" v-if="showNotes">
                             <button class="mdc-button normal-case -ml-2"
