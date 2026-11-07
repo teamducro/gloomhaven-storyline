@@ -1,2 +1,2 @@
-campaign-list: Campaigns page for a logged-in patron owning one synced campaign ("Doomed"; API stubbed via cy.intercept). After: the campaign card has a new "Delete permanently" action next to Edit/Share. Before: same page without it.
+settings-danger-zone: Settings page for a logged-in patron with their own synced campaign ("Doomed") selected (API stubbed via cy.intercept). After: the "Danger zone!" block has a "Delete permanently" button next to "Reset campaign". Before: only "Reset campaign".
 delete-confirm: (after only; doesn't exist on develop) Confirm dialog after clicking "Delete permanently", warning the deletion is permanent and affects everyone the campaign is shared with.
