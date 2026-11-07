@@ -111,7 +111,7 @@ describe('Campaigns', () => {
     describe('Deleting campaigns', () => {
         const ownedStory = {id: 7, name: 'Doomed', data: {}, games: ['gh'], expires_at: '2099-01-01', hash: 'x'};
 
-        function visitWithStories({isPatron, stories}) {
+        function visitWithStories({isPatron, stories, page = 'campaigns', campaignId = 'local'}) {
             utilities.startServer();
             // The state comes from local storage, the sync requests fail like when offline
             cy.intercept('GET', '**/user', {statusCode: 500});
@@ -122,15 +122,16 @@ describe('Campaigns', () => {
                 win.localStorage.setItem('token', JSON.stringify('secret'));
                 win.localStorage.setItem('user', JSON.stringify({id: 1, name: 'Test', email: 'a@b.c', is_patron: isPatron}));
                 win.localStorage.setItem('stories', JSON.stringify(stories));
+                win.localStorage.setItem('campaignId', JSON.stringify(campaignId));
             });
-            cy.visit('/tracker/#/campaigns');
+            cy.visit('/tracker/#/' + page);
         }
 
         it('It permanently deletes an owned campaign as a patron', () => {
             cy.intercept('DELETE', '**/stories/7', {statusCode: 204, body: ''}).as('deleteStory');
-            visitWithStories({isPatron: true, stories: [ownedStory]});
+            visitWithStories({isPatron: true, stories: [ownedStory], page: 'settings', campaignId: '_7'});
 
-            cy.contains('li', 'Doomed').find('[data-test=delete-campaign]').click();
+            cy.get('[data-test=delete-campaign]').click();
             cy.get('.mdc-dialog--open').within(() => {
                 cy.contains('Permanently delete "Doomed" for you and everyone it is shared with?');
                 cy.contains('this cannot be undone');
@@ -138,28 +139,29 @@ describe('Campaigns', () => {
             });
 
             cy.wait('@deleteStory');
-            cy.contains('li', 'Doomed').should('not.exist');
+            cy.get('[data-test=delete-campaign]').should('not.exist');
             cy.window().then(win => {
                 expect(JSON.parse(win.localStorage.getItem('stories'))).to.deep.equal([]);
+                expect(JSON.parse(win.localStorage.getItem('campaignId'))).to.equal('local');
             });
         });
 
         it('It keeps the campaign when the deletion fails', () => {
             cy.intercept('DELETE', '**/stories/7', {statusCode: 403, body: {message: 'This action is unauthorized.'}}).as('deleteStory');
-            visitWithStories({isPatron: true, stories: [ownedStory]});
+            visitWithStories({isPatron: true, stories: [ownedStory], page: 'settings', campaignId: '_7'});
 
-            cy.contains('li', 'Doomed').find('[data-test=delete-campaign]').click();
+            cy.get('[data-test=delete-campaign]').click();
             cy.get('.mdc-dialog--open').contains('button', 'Confirm').click();
 
             cy.wait('@deleteStory');
             cy.get('.toast').contains('Failed to delete the campaign');
-            cy.contains('li', 'Doomed').should('exist');
+            cy.get('[data-test=delete-campaign]').should('exist');
         });
 
         it('It does not offer deletion to non patrons', () => {
-            visitWithStories({isPatron: false, stories: [ownedStory]});
+            visitWithStories({isPatron: false, stories: [ownedStory], page: 'settings', campaignId: '_7'});
 
-            cy.contains('li', 'Doomed').should('exist');
+            cy.contains('Reset campaign');
             cy.get('[data-test=delete-campaign]').should('not.exist');
         });
 
