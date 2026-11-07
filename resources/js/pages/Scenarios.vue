@@ -55,8 +55,9 @@
                     <template v-if="monsters.length">
                         <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
-                        <li class="px-4">
+                        <li class="px-4 [&_.dropdown]:static">
                             <autocomplete :label="$t('Monster')"
+                                          width="w-full"
                                           id="monster-filter"
                                           :list="monsters"
                                           :disabled="monsterFilter"
