@@ -28,7 +28,7 @@
                         </h2>
 
                         <h2 v-if="!requiredIncompleteBy.isEmpty()"
-                            class="text-white mt-2">{{ $t('Required when not gained by') }}:
+                            class="text-white mt-2">{{ $t('Blocks') }}:
                             <scenario-number class="ml-2"
                                              v-for="scenario in requiredIncompleteBy"
                                              data-mdc-dialog-action="close"

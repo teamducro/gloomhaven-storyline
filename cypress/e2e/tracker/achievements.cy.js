@@ -117,7 +117,7 @@ describe('Achievements', () => {
         // Then scenarios 7 and 20 require it, while 3 and 9 require it to be incomplete
         cy.contains('h2', 'Required by:').should('contain', '7').and('contain', '20')
             .and('not.contain', '3').and('not.contain', '9');
-        cy.contains('h2', 'Required when not gained by:').should('contain', '3').and('contain', '9')
+        cy.contains('h2', 'Blocks:').should('contain', '3').and('contain', '9')
             .and('not.contain', '7').and('not.contain', '20');
     });
 
