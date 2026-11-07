@@ -28,6 +28,9 @@
                     </div>
 
                     <div class="flex-1 space-y-2">
+                        <p v-if="source">
+                            <span class="px-2 text-xs rounded-full bg-black2-75 whitespace-nowrap">{{ $t(source) }}</span>
+                        </p>
                         <p v-if="item._source">
                             <span class="relative w-6 h-4 inline-block">
                                 <span class="material-icons outlined absolute">info</span>
@@ -59,6 +62,7 @@ export default {
     data() {
         return {
             item: null,
+            source: null,
             flipped: false,
             animating: false,
             itemRepository: new ItemRepository()
@@ -67,6 +71,7 @@ export default {
     mounted() {
         this.$bus.$on('open-item', (data) => {
             const item = data.item || this.itemRepository.find(data.id);
+            this.source = data.source || null;
             this.open(item);
         });
         this.$bus.$on('open-scenario', this.close);

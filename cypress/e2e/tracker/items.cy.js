@@ -78,6 +78,11 @@ describe('Items', () => {
         cy.get('#items tbody tr').contains('Boots of Levitation').parents('tr').contains('Item design');
         cy.get('#items').contains('Boots of Striding').parents('tr').should('not.contain', 'Item design').and('not.contain', 'Shop');
 
+        // And the item modal shows the design label
+        cy.get('#items').contains('Boots of Levitation').click({ scrollBehavior: 'center' });
+        cy.get('.mdc-dialog').contains('Item design');
+        utilities.closeModel();
+
         // When filtering on item designs
         cy.get('#item-source-filters').contains('Item design').click();
         utilities.assertTableCount('items', 1);

@@ -151,7 +151,7 @@
                 <template #name="{value, row}">
                     <span class="xs:whitespace-nowrap">
                         {{ $t(value) }}
-                        <span v-if="sources[row.id] !== 'shop'" class="ml-1 px-2 text-xs rounded-full bg-black2-75 whitespace-nowrap">
+                        <span v-if="sources[row.id] !== 'shop'" class="hidden lg:inline ml-1 px-2 text-xs rounded-full bg-black2-75 whitespace-nowrap">
                             {{ $t(sourceLabels[sources[row.id]]) }}
                         </span><br>
                         <span class="lg:hidden">
@@ -382,7 +382,7 @@ export default {
         async openItemModel(item) {
             this.selectedItem = item;
             await this.$nextTick();
-            this.$bus.$emit('open-item', {item});
+            this.$bus.$emit('open-item', {item, source: this.sources[item.id] !== 'shop' ? this.sourceLabels[this.sources[item.id]] : null});
         },
         getResourceCost(cost) {
             return Object.entries(cost).map(([k, v]) => k == 'item' ? v.map(i => `{ITEM}${i}`).join('<br>') : `{${k.toUpperCase()}}` + (v > 1 ? ` x ${v}` : '')).join('<br>');
