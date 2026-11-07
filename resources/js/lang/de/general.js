@@ -312,6 +312,10 @@ export default {
             "read-only": "Die Übertragung von Kampagnendaten ist im Nur-Lesen-Modus nicht verfügbar."
         }
     },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window."
+    },
     "games-enabled": {
         "title": "Aktivierte Spiele",
         "text": "Um Spiele und ihre Charaktere zu verstecken, aktivieren Sie nur diejenigen, die Sie besitzen. Progress is kept when switching."

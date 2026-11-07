@@ -47,4 +47,13 @@ describe('Gloomhaven Secretariat export', () => {
             expect(game.scenario).to.deep.eq({index: '1', edition: 'fh'});
         });
     });
+
+    it('It hides the export button when the integration is disabled', () => {
+        cy.visit('/tracker/#/settings');
+        cy.get('#ghs-integration').uncheck();
+        cy.visit('/tracker');
+
+        utilities.openScenario(1);
+        cy.get('#ghs-export-scenario').should('not.exist');
+    });
 });

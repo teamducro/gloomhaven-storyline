@@ -311,6 +311,10 @@ export default {
             "text": "Dane kampanii mogą być przeniesione tylko wtedy, gdy zakupiłeś współdzieloną kampanię."
         }
     },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window."
+    },
     "games-enabled": {
         "title": "Włączone gry",
         "text": "Aby ukryć gry i ich postacie, włącz tylko te, które posiadasz. Progress is kept when switching."

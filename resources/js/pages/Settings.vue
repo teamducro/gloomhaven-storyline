@@ -3,6 +3,7 @@
         <games-enabled></games-enabled>
         <transfer></transfer>
         <snapshots></snapshots>
+        <integrations></integrations>
 
         <div class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-8 w-full max-w-3xl">
             <h1 class="text-2xl sm:text-3xl mb-4 text-center md:text-left flex items-center">

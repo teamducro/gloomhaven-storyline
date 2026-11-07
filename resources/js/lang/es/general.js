@@ -312,6 +312,10 @@ export default {
             "read-only": "La transferencia de datos de campaña no está disponible en modo de solo lectura."
         }
     },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window."
+    },
     "games-enabled": {
         "title": "Juegos habilitados",
         "text": "Para ocultar juegos y sus personajes, habilite solo los que posee. Progress is kept when switching."

@@ -312,6 +312,10 @@ export default {
             "read-only": "Transfer campaign data is not available in read only mode."
         }
     },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window."
+    },
     "games-enabled": {
         "title": "Elérhető Játékok",
         "text": "A játékok és a hozzá tartozó karakterek elrejtéséhez csak azokat engedélyezd, amelyek a tulajdonodban vannak. Progress is kept when switching."

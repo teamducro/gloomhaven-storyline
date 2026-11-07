@@ -312,6 +312,10 @@ export default {
             "read-only": "Transfer campaign data is not available in read only mode."
         }
     },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window."
+    },
     "games-enabled": {
         "title": "Enabled Games",
         "text": "To hide games and its characters enable only ones you own. Progress is kept when switching."
