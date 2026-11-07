@@ -14,7 +14,7 @@ _Avoid_: edition, box
 **Expansion**: content continuing one game's campaign. Forgotten Circles is an expansion of Gloomhaven (scenarios, Diviner, Rift events), viewable with its own storyline.
 _Avoid_: calling Forgotten Circles a game
 
-**Seeker of Xorn**: a fan-made small expansion of Gloomhaven (by Morthai): four city events and three crypt scenarios for the Seeker of Xorn personal quest.
+**Seeker of Xorn**: a fan-made small expansion of Gloomhaven: four city events and three crypt scenarios for the Seeker of Xorn personal quest.
 _Avoid_: official content
 
 **Crossover pack**: content added to any game. The Mercenary Pack (classes, solo scenarios, items).
@@ -45,8 +45,6 @@ _Avoid_: unlock (as noun), milestone, envelope trigger
 **Envelope**: sealed content opened when a sheet unlock, puzzle or achievement says so (Envelope A, X).
 
 ### Scenarios
-
-**Scenario**: one playable mission, numbered per game.
 
 **Scenario state** (tracker words): **hidden** not yet unlocked; **incomplete** unlocked and playable; **complete** won; **blocked** excluded by another outcome; **required** unlocked but requirements unmet.
 _Avoid_: locked, available, locked out, unplayable

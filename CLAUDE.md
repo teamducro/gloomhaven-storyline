@@ -29,12 +29,11 @@ PRs target `develop`.
 ## Architecture
 
 - No Vuex: global state on root instance `window.app`; event bus `$bus` (`services/EventBus.js` on `globalProperties`); `provide/inject` for `appData.game`, `appData.story`.
-- Static game data: one `resources/js/games/{gh,gh2,fh,jotl,cs,fc,mp}.json` per game, all with the same top-level keys, read via `services/GameData.js`. `gh.json` holds the FC scenarios, items and achievements; `fc.json` only FC's own data.
-- `ScenarioValidator` unlocks scenarios on every change, up to 5 passes.
+- Static game data: one `resources/js/games/{game}.json` per game, read via `services/GameData.js`. `gh.json` holds the FC scenarios, items and achievements; `fc.json` only FC's own data.
 - Campaign state: one localStorage blob per campaign (`app.campaignData`, key `app.campaignId`) holding every game; each `Storable` model writes its `fieldsToStore` under its `key()`, and `delete()` writes `null` (a tombstone the server needs). Key layout: `gloomhaven-domain` skill.
 - Sync: `Versionable` models carry `version` + md5 `hash`; `StorySyncer` bumps the version of each changed model and PUTs the blob when its hash changes; the server reports per-key conflicts. Realtime via Echo/Pusher.
 - Layers: `models/`, `repositories/` (local data + logic), `apiRepositories/` (axios), `services/`, `validators/`, `pages/` (routes), `components/` (auto-registered globally by filename).
-- Translations: `resources/js/lang/{locale}/*.js`, 9 locales; `en.js` only re-exports the topic files. Add keys to `lang/en/<topic>.js` and, in English until translated, to the other locales.
+- Translations: `resources/js/lang/{locale}/*.js`; `en.js` only re-exports the topic files. Add keys to `lang/en/<topic>.js` and, in English until translated, to the other locales.
 
 ## Build (Vite, `vite.config.mjs`)
 

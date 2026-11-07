@@ -15,14 +15,13 @@ Forgotten Circles is an expansion: it is the **same campaign** as Gloomhaven. Se
 
 ## Party sheet (`pages/PartyGh.vue`)
 
-Reputation (shop price modifier), donations to the Great Oak (each threshold 100…1000 ticks a prosperity checkmark, shown as locked boxes), prosperity (thresholds 1/5/10/16/23/31/40/51/65), City/Road decks (start 1–30), scenario level, notes, class unlocks, and 9 sheet unlocks by index: 0 five Ancient Technology → Envelope A, 1 Drake's Command & Treasure, 2 donate 100 → Envelope B, 3–6 reputation ±10/±20, 7 retire → Town Records, 8 Envelope X solved (`xResult === 'Bladeswarm'` unlocks `BS`).
+Reputation (shop price modifier), donations to the Great Oak (each threshold 100…1000 ticks a prosperity checkmark, shown as locked boxes), prosperity, City/Road decks (start 1–30), scenario level, notes, class unlocks, and 9 sheet unlocks by index: 0 five Ancient Technology → Envelope A, 1 Drake's Command & Treasure, 2 donate 100 → Envelope B, 3–6 reputation ±10/±20, 7 retire → Town Records, 8 Envelope X solved (`xResult === 'Bladeswarm'` unlocks `BS`).
 
 ## Scenarios
 
-- Regions (12) as a list filter; `pages` give scenario book page images; `coupled` pairs share a sticker (11/12, 35/36); Virtual Board link.
+- Regions as a list filter; `pages` give scenario book page images; `coupled` pairs share a sticker (11/12, 35/36); Virtual Board link.
 - Conclusion decisions hard-coded in `ChoiceService`: `dragon`, `merchantsBay`, `shiftingGears`, `aftershocks`.
 - Treasures can unlock scenarios (`treasures_to`, e.g. treasure 49 in scenario 37 → 17).
-- Chapters ≥100: 100 Solo, 101 Personal Quests, 102 Random Scenarios, 103 Sealed, 104 Road Events, 105 City Events.
 
 ## Seeker of Xorn (fan-made small expansion)
 
@@ -34,5 +33,5 @@ Global + Party. City rule group `CR` (start `GCRM` Militaristic) and Artifact gr
 
 ## Characters and items
 
-- 17 classes + Bladeswarm (Envelope X); FC adds Diviner. Personal quests 510–533 unlock classes.
+- Bladeswarm unlocks via Envelope X; FC adds Diviner. Personal quests 510–533 unlock classes.
 - Shop by prosperity (items 1–70), item designs 71–164 (FC 152–164). Classic enhancement costs, limit = prosperity level per class.
