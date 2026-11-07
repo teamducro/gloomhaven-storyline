@@ -855,7 +855,7 @@ export default {
     "jotl-3": {
         "name": "The Black Ship",
         "rewards": [
-            "1 pericia para cada personaje"
+            "1 ✔ para cada personaje"
         ]
     },
     "jotl-4": {

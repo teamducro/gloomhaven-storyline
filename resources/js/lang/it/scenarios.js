@@ -853,7 +853,7 @@ export default {
     "jotl-3": {
         "name": "The Black Ship",
         "rewards": [
-            "1 talento per ogni personaggio"
+            "1 ✔ each"
         ]
     },
     "jotl-4": {
