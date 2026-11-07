@@ -50,6 +50,7 @@
                       :key="game+'-'+scenario.id"
                       :id="'s' + scenario.id"
                       :animate="true"
+                      :retina-webp="scenario.hasRetinaSticker()"
                       :alt="$t(scenario.name)"
                       class="absolute scenario"
                       :style="{

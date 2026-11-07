@@ -78,6 +78,7 @@
                 </template>
                 <template #image="{value, row}">
                     <webp v-if="!row.solo" :src="row.image()"
+                          :retina-webp="row.hasRetinaSticker()"
                           class="w-16 mr-4 my-1"
                           :alt="row.name"/>
                     <character-icon class="w-12 inline-block" :character="row.solo" v-if="row.solo"/>

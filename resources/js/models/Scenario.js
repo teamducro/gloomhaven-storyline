@@ -6,6 +6,7 @@ import ItemTextParser from "../services/ItemTextParser";
 import UsesTranslations from "./UsesTranslations";
 import {Requirement} from "./Requirement";
 import Versionable from "./Versionable";
+import {Game} from "./Game";
 
 class Scenario {
 
@@ -214,6 +215,11 @@ class Scenario {
         return (this.required_by).some((condition) => {
             return (condition.complete || []).some((requirement) => Requirement.manuallyUnlock(requirement));
         });
+    }
+
+    // Games whose stickers also ship as {name}@2x.webp
+    hasRetinaSticker() {
+        return [Game.gh, Game.fh].includes(this.game);
     }
 
     image() {
