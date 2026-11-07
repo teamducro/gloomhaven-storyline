@@ -31,12 +31,10 @@ export default class CharacterRepository {
         // Hide characters from inactive games. Only classes of the campaign's Gloomhaven edition are playable, in every game.
         // Turning off gh hides both editions.
         const gloomhavenGame = this.sheetRepository.gloomhavenGame();
-        const gloomhavenEnabled = [Game.gh, Game.gh2].includes(app.game) || app.enabledGames.includes(Game.gh);
-        const games = _.without(
-            _.uniq([app.game, ...app.enabledGames, ...(gloomhavenEnabled ? [gloomhavenGame] : [])]),
-            gloomhavenGame === Game.gh2 ? Game.gh : Game.gh2,
-            ...(gloomhavenEnabled ? [] : [Game.gh2])
-        );
+        const games = [app.game, ...app.enabledGames].filter(game => game !== Game.gh && game !== Game.gh2);
+        if ([Game.gh, Game.gh2].includes(app.game) || app.enabledGames.includes(Game.gh)) {
+            games.push(gloomhavenGame);
+        }
         characters = characters.values().whereIn('game', games);
 
         return characters.keyBy('id');
