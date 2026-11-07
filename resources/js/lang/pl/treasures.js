@@ -336,7 +336,7 @@ export default {
         "name": "„Ring of Restoration” (przedmiot 32)"
     },
     "cs-1": {
-        "name": "„Drake's Blood” (przedmiot 14)"
+        "name": "„Drake's Blood” (przedmiot 59)"
     },
     "cs-2": {
         "name": "„Orb of Fortune” (przedmiot 09)"
@@ -426,7 +426,7 @@ export default {
         "name": "„Boneclad Shawl” (przedmiot 25)"
     },
     "cs-31": {
-        "name": "„Drake's Blood” (przedmiot 14)"
+        "name": "„Drake's Blood” (przedmiot 59)"
     },
     "cs-32": {
         "name": "„Curious Pendant” (przedmiot 20)"
@@ -480,7 +480,7 @@ export default {
         "name": "15 szt. złota"
     },
     "cs-49": {
-        "name": "„Magma Waders” (przedmiot 99)"
+        "name": "„Magma Waders” (przedmiot gh-99)"
     },
     "cs-50": {
         "name": "„Bottled Moonlight” (przedmiot 18)"

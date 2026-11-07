@@ -2258,7 +2258,7 @@ export default {
         "rewards": [
             "+2 do reputacji",
             "+1 do dobrobytu",
-            "„Stun Powder” (przedmiot 21)"
+            "„Stun Powder” (przedmiot gh-21)"
         ]
     },
     "cs-7": {
@@ -2283,8 +2283,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "„Minor Mana Potion” (przedmiot 12)",
-            "„Minor Healing Potion” (przedmiot 20)"
+            "„Minor Healing Potion” (przedmiot gh-12)",
+            "„Minor Mana Potion” (przedmiot gh-20)"
         ]
     },
     "cs-11": {
@@ -2297,7 +2297,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 do dobrobytu",
-            "Each character gains one of the following: „Major Stamina Potion” (przedmiot 34), „Major Power Potion” (przedmiot 41), „Major Mana Potion” (przedmiot 48)\nIf there are none of these available in the shop, gain 20 gold instead"
+            "Each character gains one of the following: „Major Stamina Potion” (przedmiot gh-34), „Major Power Potion” (przedmiot gh-41), „Major Mana Potion” (przedmiot gh-48)\nIf there are none of these available in the shop, gain 20 gold instead"
         ]
     },
     "cs-14": {
@@ -2335,7 +2335,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "„Major Mana Potion” (przedmiot 48)"
+            "„Major Mana Potion” (przedmiot gh-48)"
         ]
     },
     "cs-20": {
@@ -2349,7 +2349,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "„Magma Waders” (przedmiot 99)"
+            "„Magma Waders” (przedmiot gh-99)"
         ]
     },
     "cs-22": {
@@ -2427,7 +2427,7 @@ export default {
     "cs-33": {
         "name": "Siege Tower",
         "rewards": [
-            "„Blazing Boots” (przedmiot 87)",
+            "„Blazing Boots” (przedmiot 90)",
             "+1 do reputacji"
         ]
     },

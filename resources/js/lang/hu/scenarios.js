@@ -2258,7 +2258,7 @@ export default {
         "rewards": [
             "+2 hírnév",
             "+1 Városfejlettség",
-            "“Stun Powder” (Felszerelés 21)"
+            "“Stun Powder” (Felszerelés gh-21)"
         ]
     },
     "cs-7": {
@@ -2283,8 +2283,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "“Minor Mana Potion” (Felszerelés 12)",
-            "“Minor Healing Potion” (Felszerelés 20)"
+            "“Minor Healing Potion” (Felszerelés gh-12)",
+            "“Minor Mana Potion” (Felszerelés gh-20)"
         ]
     },
     "cs-11": {
@@ -2297,7 +2297,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 Városfejlettség",
-            "mindenkinek character gains one of the following: “Major Stamina Potion” (Felszerelés 34), “Major Power Potion” (Felszerelés 41), “Major Mana Potion” (Felszerelés 48)\nIf there are none of these available in the shop, gain 20 gold instead"
+            "mindenkinek character gains one of the following: “Major Stamina Potion” (Felszerelés gh-34), “Major Power Potion” (Felszerelés gh-41), “Major Mana Potion” (Felszerelés gh-48)\nIf there are none of these available in the shop, gain 20 gold instead"
         ]
     },
     "cs-14": {
@@ -2335,7 +2335,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "“Major Mana Potion” (Felszerelés 48)"
+            "“Major Mana Potion” (Felszerelés gh-48)"
         ]
     },
     "cs-20": {
@@ -2349,7 +2349,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "“Magma Waders” (Felszerelés 99)"
+            "“Magma Waders” (Felszerelés gh-99)"
         ]
     },
     "cs-22": {
@@ -2427,7 +2427,7 @@ export default {
     "cs-33": {
         "name": "Siege Tower",
         "rewards": [
-            "“Blazing Boots” (Felszerelés 87)",
+            "“Blazing Boots” (Felszerelés 90)",
             "+1 hírnév"
         ]
     },
