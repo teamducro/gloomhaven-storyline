@@ -4124,11 +4124,21 @@
             "links_to": [
                 103
             ],
+            "choices": [
+                103
+            ],
             "linked_from": [
                 101
             ],
             "rewards": [
                 "Gain 20 experience each"
+            ],
+            "prompt": "leadDoorUnlocked",
+            "prompt_unlocks": [
+                [
+                    103
+                ],
+                []
             ],
             "loot": {
                 "coins": 15
