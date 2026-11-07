@@ -11,7 +11,7 @@
                     </button>
                 </template>
 
-                <ul class="mdc-deprecated-list overflow-y-auto" style="max-height: calc(100vh - 100px)"
+                <ul class="mdc-deprecated-list overflow-y-auto min-w-80" style="max-height: calc(100vh - 100px)"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                     <li class="mdc-deprecated-list-item cursor-pointer" @click="resetFilter(true)">
                         <span class="mdc-deprecated-list-item__ripple"></span>
