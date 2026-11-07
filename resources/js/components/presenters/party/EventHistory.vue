@@ -12,9 +12,14 @@
                     @click="open(entry)">
                     <span>{{ $t(typeOf(entry).translatedType) }} #{{ typeOf(entry).id }}</span>
                     <span class="text-right">
-                        <span v-if="entry.choice" class="font-title mr-2">{{ entry.choice }}</span>
-                        <span v-if="entry.removed" class="material-icons align-middle mr-2">delete</span>
+                        <span v-if="entry.choice" class="font-bold mr-2">{{ entry.choice }}</span>
+                        <webp v-if="entry.removed" src="/img/icons/general/event_card_rip_white.png" width="24"
+                              class="inline align-middle mr-2 removed" :alt="$t('Removed from deck')" :title="$t('Removed from deck')"/>
+                        <webp v-else src="/img/icons/general/event_card_shuffle_white.png" width="24"
+                              class="inline align-middle mr-2 returned" :alt="$t('Returned to deck')" :title="$t('Returned to deck')"/>
                         <span class="text-sm">{{ new Date(entry.date).toLocaleDateString() }}</span>
+                        <button v-if="!appData.read_only" @click.stop="forget(entry)"
+                                class="forget material-icons align-middle ml-2" :title="$t('Remove from history')">close</button>
                     </span>
                 </li>
             </ul>
@@ -24,10 +29,12 @@
 
 <script>
 import Card from "../../../models/Card";
+import Confirm from "../../../mixins/Confirm";
 
 export default {
     emits: ['change'],
     inject: ['appData'],
+    mixins: [Confirm],
     props: {
         sheet: Object,
     },
@@ -63,10 +70,15 @@ export default {
             const entry = [...this.sheet.eventHistory].reverse().find(entry => entry.card === this.key(card) && !entry.removed);
             if (entry) {
                 entry.removed = true;
-            } else {
-                this.sheet.eventHistory.push({card: this.key(card), choice: null, removed: true, date: new Date().toISOString()});
+                this.$emit('change');
             }
-            this.$emit('change');
+        },
+        forget(entry) {
+            const card = this.typeOf(entry);
+            this.confirm(this.$t('Remove from history'), this.$t(card.translatedType) + ' #' + card.id, () => {
+                this.sheet.eventHistory.splice(this.sheet.eventHistory.indexOf(entry), 1);
+                this.$emit('change');
+            });
         },
         key(card) {
             return card.type + '-' + card.id;

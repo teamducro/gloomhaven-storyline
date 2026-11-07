@@ -14,19 +14,36 @@ function convert(from, to) {
     execFileSync('cwebp', ['-quiet', '-q', '80', from, '-o', to + '.webp']);
 }
 
-// Each card: front `C-001.png` -> `1-f`, outcome strips `C-001a.png` -> `1-a`, ...
+// Each card: front `C-001.png` -> `1-f` (expand arrow removed); outcome strips `C-001a.png`, `C-001b.png`, ... are stacked into one back `1-b`
+// by gh2-event-back.swift, with the overlaps tuned per card in gh2-event-backs.json.
+execFileSync('swiftc', ['-O', 'commands/gh2-event-back.swift', '-o', '/tmp/gh2-event-back']);
+const backs = JSON.parse(fs.readFileSync('commands/gh2-event-backs.json', 'utf-8'));
 const events = {};
 for (const [dir, folder] of [['ce', 'city'], ['re', 'road']]) {
     fs.mkdirSync(`${out}/${folder}`, {recursive: true});
+    const strips = {};
     for (const file of fs.readdirSync(`${src}/events/${dir}`).sort()) {
         const [, type, number, letter] = file.match(/^([CR])-(\d+)([a-d]?)\.png$/);
-        const id = parseInt(number);
-        const key = `${type}-${id}`;
-        events[key] = events[key] || [];
         if (letter) {
-            events[key].push(letter.toUpperCase());
+            (strips[`${type}-${number}`] = strips[`${type}-${number}`] || []).push(letter);
+        } else {
+            execFileSync('/tmp/gh2-event-back', ['/tmp/gh2-event-back.png', '-', 0, `${src}/events/${dir}/${file}`, '--front']);
+            convert('/tmp/gh2-event-back.png', `${out}/${folder}/${parseInt(number)}-f`);
         }
-        convert(`${src}/events/${dir}/${file}`, `${out}/${folder}/${id}-${letter || 'f'}`);
+    }
+    for (const [name, letters] of Object.entries(strips)) {
+        const {joins, bottom, erase, spare} = backs[name];
+        const files = letters.map(letter => `${src}/events/${dir}/${name}${letter}.png`);
+        const [...tops] = execFileSync('/tmp/gh2-event-back', ['/tmp/gh2-event-back.png', joins.join(',') || '-', bottom, ...files,
+            ...(erase ? ['--erase', erase.map(rect => rect.join(',')).join(';')] : []), ...(spare ? ['--spare', spare.join(',')] : [])])
+            .toString().trim().split(' ').map(Number);
+        const height = tops.pop();
+        // An outcome starts where the strip above it ends: the top of its own strip is hidden under that one
+        const key = name.replace(/-0*/, '-');
+        events[key] = Object.fromEntries(letters.map((letter, i) => [
+            letter.toUpperCase(), Math.round((i ? tops[i] + joins[i - 1] : 0) / height * 1000) / 10
+        ]));
+        convert('/tmp/gh2-event-back.png', `${out}/${folder}/${key.split('-')[1]}-b`);
     }
 }
 const gameFile = 'resources/js/games/gh2.json';
