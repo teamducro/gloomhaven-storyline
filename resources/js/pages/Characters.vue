@@ -152,6 +152,7 @@
                                    v-model:perks="character.perks"
                                    v-model:masteries="character.masteries"
                                    :character="character"
+                                   :scenario-perks="scenarioPerks"
                                    @change="store"/>
 
                             <div class="flex mt-4 space-x-12">
@@ -350,6 +351,10 @@ export default {
     computed: {
         Game() {
             return Game
+        },
+        scenarioPerks() {
+            return this.scenarioRepository.where((scenario) => scenario.isComplete())
+                .sum('perk_reward');
         },
         isArchived() {
             // Reference sheet hash so the value is recalculated when the sheet is updated.

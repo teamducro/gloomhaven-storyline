@@ -50,6 +50,7 @@ class Scenario {
         this.unlockedTreasures = [];
         this.achievements_from_treasures = collect(data.achievements_from_treasures);
         this._rewards = collect(data.rewards);
+        this.perk_reward = data.perk_reward || 0;
         this._achievements_awarded = collect(data.achievements_awarded);
         this.achievements_awarded_by_choice = collect(data.achievements_awarded_by_choice);
         this.achievements_lost = collect(data.achievements_lost);

@@ -69,7 +69,8 @@
             ],
             "rewards": [
                 "1 ✔ each"
-            ]
+            ],
+            "perk_reward": 1
         },
         {
             "id": 4,
