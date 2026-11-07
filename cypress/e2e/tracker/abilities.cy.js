@@ -39,7 +39,7 @@ describe('Abilities', () => {
         cy.get('#desktop-milestone-achieved').click();
 
         cy.get('#available-improvised-methods').should('exist');
-        cy.get('img[src*="/img/abilities/cs/FK/improvised-methods"]').should('have.prop', 'naturalWidth').and('be.greaterThan', 0);
+        cy.get('img[src*="/img/abilities/cs/FK/improvised-methods"]').scrollIntoView().should('have.prop', 'naturalWidth').and('be.greaterThan', 0);
 
         cy.get('#available-improvised-methods').click();
         cy.get('#deck-improvised-methods').should('exist');
