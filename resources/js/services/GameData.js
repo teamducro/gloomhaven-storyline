@@ -28,6 +28,14 @@ const allCharacterOrder = mergeOrder.flatMap(file => file.characterOrder)
 const allAttackModifierDecks = Object.assign({}, ...mergeOrder.map(file => file.attackModifierDecks))
 // GH, FC, CS and MP share one list: the GH achievements, then the CS Party achievements.
 const ghFamilyAchievements = [...files.gh.achievements, ...files.cs.achievements]
+// Crossover packs are not standalone games: their characters and solo
+// scenarios are merged into whichever game is actually being played.
+const crossoverData = {
+    [Game.mp]: {scenarios: files[Game.mp].scenarios, items: files[Game.mp].items},
+    [Game.cq]: {scenarios: files[Game.cq].scenarios, items: files[Game.cq].items},
+    // Content is in gh.json, gated by the bonus events on the party sheet.
+    [Game.sox]: {scenarios: [], items: []},
+}
 
 export default class GameData {
     // Crossover packs are not selectable as the main/active game, only as add-on content.
@@ -57,28 +65,8 @@ export default class GameData {
         return this.games().filter(game => !this.purchasable().includes(this.accessGame(game)))
     }
 
-    // Crossover packs are not standalone games: their characters and solo
-    // scenarios are merged into whichever game is actually being played.
-    crossoverData() {
-        return {
-            [Game.mp]: {
-                scenarios: files[Game.mp].scenarios,
-                items: files[Game.mp].items
-            },
-            [Game.cq]: {
-                scenarios: files[Game.cq].scenarios,
-                items: files[Game.cq].items
-            },
-            // Content is in gh.json, gated by the bonus events on the party sheet.
-            [Game.sox]: {
-                scenarios: [],
-                items: []
-            }
-        }
-    }
-
     crossover() {
-        return Object.keys(this.crossoverData())
+        return Object.keys(crossoverData)
     }
 
     enabledCrossovers() {
@@ -124,7 +112,6 @@ export default class GameData {
             return scenarios
         }
 
-        const crossoverData = this.crossoverData()
         const extraScenarios = this.enabledCrossovers().flatMap((crossoverGame) => crossoverData[crossoverGame].scenarios)
 
         return extraScenarios.length ? [...scenarios, ...extraScenarios] : scenarios
@@ -165,7 +152,6 @@ export default class GameData {
             return items
         }
 
-        const crossoverData = this.crossoverData()
         const extraItems = this.enabledCrossovers().flatMap((crossoverGame) => crossoverData[crossoverGame].items)
 
         return extraItems.length ? [...items, ...extraItems] : items
