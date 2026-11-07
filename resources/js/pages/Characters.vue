@@ -562,11 +562,6 @@ export default {
                     || Helpers.sanitize(this.$t(this.items[id]?.name)).includes(query);
             }
         },
-        renderHtml(html) {
-            return {
-                template: `<span>${html}</span>`
-            };
-        },
         rerender() {
             this.refreshInputFields();
             this.sheetHash = this.sheet.makeHash();

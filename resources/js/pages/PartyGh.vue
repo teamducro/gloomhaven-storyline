@@ -140,7 +140,7 @@
                                     </label>
                                     <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
                                         <span class="material-icons mr-1">remove</span>
-                                        <component v-bind:is="renderHtml(unlock.reward)"></component>
+                                        <component :is="rewardComponents[index]"></component>
                                     </span>
                                 </td>
                             </tr>
@@ -249,6 +249,10 @@ export default {
         this.$bus.$off('remove-card', this.removeCard);
     },
     computed: {
+        // Cached so the rewards (HTML with components) don't remount on every render.
+        rewardComponents() {
+            return this.unlocks.map(unlock => ({template: `<span>${unlock.reward}</span>`}));
+        },
         // '001–014' per prosperity level.
         prosperityItems() {
             const pad = number => String(number).padStart(3, '0');
@@ -286,11 +290,6 @@ export default {
         removeCard(card) {
             this.sheet[card.folder][card.id] = false;
             this.store();
-        },
-        renderHtml(html) {
-            return {
-                template: `<span>${html}</span>`
-            };
         },
         async xResultChanged(xResult) {
             this.sheet.xResult = xResult;

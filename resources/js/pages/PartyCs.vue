@@ -107,7 +107,7 @@
                         </div>
                         <div class="w-full flex items-center flex-wrap">
                             <label :for="'unlock'+index" class="cursor-pointer">
-                                <component v-bind:is="renderHtml(unlock.reward)"></component>
+                                {{ unlock.reward }}
                             </label>
                             <scenario-number class="ml-2" v-if="unlock.scenario"
                                              :id="unlock.scenario"
@@ -259,11 +259,6 @@ export default {
             this.sheet[card.folder][card.id] = false;
             this.store();
         },
-        renderHtml(html) {
-            return {
-                template: `<span>${html}</span>`
-            };
-        }
     }
 }
 </script>
