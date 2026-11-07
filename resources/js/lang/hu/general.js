@@ -302,6 +302,9 @@ export default {
     "Settings": "Beállítások",
     "Clear filter": "Szűrő törlése",
     "Missed Treasures": "Kihagyott kincsek",
+    "Monster": "Monster",
+    "Monsters": "Monsters",
+    "Monster data": "Monster data",
     "transfer": {
         "title": "Transfer campaign data",
         "text": "Copy campaign data between campaigns can be done easily.",

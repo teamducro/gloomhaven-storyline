@@ -9,7 +9,8 @@ const folders = fs.readdirSync('resources/js/lang/');
 const otherLanguages = folders.filter(dir => dir.length === 2 && dir !== 'en');
 
 const files = fs.readdirSync('resources/js/lang/en/');
-const languageFiles = files.filter(file => file.endsWith('js') && file !== 'en.js');
+// Monster names are generated in English only, other locales fall back to them
+const languageFiles = files.filter(file => file.endsWith('js') && !['en.js', 'monsters.js'].includes(file));
 
 otherLanguages.forEach((dir) => {
     console.log('--- ' + dir.toUpperCase() + ' ---');

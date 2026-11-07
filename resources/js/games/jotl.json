@@ -16,6 +16,9 @@
             "chapter_id": 1,
             "links_to": [
                 2
+            ],
+            "monsters": [
+                "common-vermling-raider"
             ]
         },
         {
@@ -43,6 +46,9 @@
             "rewards": [
                 "25 gold each",
                 "Add items 1-13 to the shop"
+            ],
+            "monsters": [
+                "basic-vermling-raider"
             ]
         },
         {
@@ -70,7 +76,11 @@
             "rewards": [
                 "1 ✔ each"
             ],
-            "perk_reward": 1
+            "perk_reward": 1,
+            "monsters": [
+                "basic-giant-viper",
+                "basic-zealot"
+            ]
         },
         {
             "id": 4,
@@ -96,6 +106,10 @@
             ],
             "rewards": [
                 "“Mana Potion” (Item 14)"
+            ],
+            "monsters": [
+                "stone-golem",
+                "zealot"
             ]
         },
         {
@@ -122,6 +136,11 @@
             ],
             "rewards": [
                 "25 experience each"
+            ],
+            "monsters": [
+                "blood-tumor",
+                "chaos-demon",
+                "zealot"
             ]
         },
         {
@@ -146,6 +165,10 @@
             ],
             "rewards": [
                 "1 ✔ each"
+            ],
+            "monsters": [
+                "black-sludge",
+                "rat-monstrosity"
             ]
         },
         {
@@ -179,6 +202,11 @@
             ],
             "rewards": [
                 "20 experience each"
+            ],
+            "monsters": [
+                "blood-tumor",
+                "vermling-scout",
+                "zealot"
             ]
         },
         {
@@ -209,6 +237,11 @@
             ],
             "treasures": [
                 4
+            ],
+            "monsters": [
+                "blood-tumor",
+                "chaos-demon",
+                "zealot"
             ]
         },
         {
@@ -244,6 +277,11 @@
             "rewards": [
                 "20 experience each",
                 "Add items 15-20 to the shop"
+            ],
+            "monsters": [
+                "blood-horror",
+                "living-corpse",
+                "zealot"
             ]
         },
         {
@@ -271,6 +309,11 @@
             ],
             "rewards": [
                 "15 experience each"
+            ],
+            "monsters": [
+                "black-sludge",
+                "chaos-demon",
+                "stone-golem"
             ]
         },
         {
@@ -302,6 +345,11 @@
             ],
             "rewards": [
                 "“Flea-Bitten Shawl” (Item 28)"
+            ],
+            "monsters": [
+                "black-sludge",
+                "giant-viper",
+                "vermling-scout"
             ]
         },
         {
@@ -333,6 +381,10 @@
             ],
             "rewards": [
                 "“Flea-Bitten Shawl” (Item 28)"
+            ],
+            "monsters": [
+                "living-corpse",
+                "living-spirit"
             ]
         },
         {
@@ -359,6 +411,11 @@
             ],
             "rewards": [
                 "1 ✔ each"
+            ],
+            "monsters": [
+                "black-sludge",
+                "blood-imp",
+                "zealot"
             ]
         },
         {
@@ -385,6 +442,11 @@
             ],
             "rewards": [
                 "1 ✔ each"
+            ],
+            "monsters": [
+                "blood-imp",
+                "giant-viper",
+                "zealot"
             ]
         },
         {
@@ -410,6 +472,11 @@
             "rewards": [
                 "10 gold each",
                 "Add items 21-26 to the shop"
+            ],
+            "monsters": [
+                "black-imp",
+                "blood-imp",
+                "zealot"
             ]
         },
         {
@@ -434,6 +501,11 @@
             "rewards": [
                 "15 experience each",
                 "“Tower Shield” (Item 29)"
+            ],
+            "monsters": [
+                "black-imp",
+                "blood-imp",
+                "rat-monstrosity"
             ]
         },
         {
@@ -458,6 +530,11 @@
             "rewards": [
                 "25 experience each",
                 "30 gold each"
+            ],
+            "monsters": [
+                "blood-imp",
+                "blood-monstrosity",
+                "first-of-the-order"
             ]
         },
         {
@@ -484,6 +561,9 @@
             ],
             "rewards": [
                 "10 experience each"
+            ],
+            "monsters": [
+                "stone-golem"
             ]
         },
         {
@@ -504,6 +584,11 @@
             ],
             "rewards": [
                 "“Ring of Strength” (Item 31)"
+            ],
+            "monsters": [
+                "rat-monstrosity",
+                "vermling-raider",
+                "vermling-scout"
             ]
         },
         {
@@ -525,6 +610,12 @@
             ],
             "rewards": [
                 "10 gold each"
+            ],
+            "monsters": [
+                "black-sludge",
+                "chaos-demon",
+                "giant-viper",
+                "rat-monstrosity"
             ]
         },
         {
@@ -546,6 +637,10 @@
             ],
             "rewards": [
                 "15 gold each"
+            ],
+            "monsters": [
+                "chaos-demon",
+                "giant-viper"
             ]
         },
         {
@@ -564,6 +659,11 @@
             "chapter_id": 4,
             "rewards": [
                 "“Steel Ring” (Item 33)"
+            ],
+            "monsters": [
+                "giant-viper",
+                "stone-golem",
+                "vermling-raider"
             ]
         },
         {
@@ -582,6 +682,12 @@
             "chapter_id": 4,
             "rewards": [
                 "“Barbed Axe” (Item 34)"
+            ],
+            "monsters": [
+                "giant-viper",
+                "rat-monstrosity",
+                "stone-golem",
+                "vermling-raider"
             ]
         },
         {
@@ -600,6 +706,10 @@
             "chapter_id": 4,
             "rewards": [
                 "“Robes of Command” (Item 35)"
+            ],
+            "monsters": [
+                "black-imp",
+                "chaos-demon"
             ]
         },
         {
@@ -618,6 +728,11 @@
             "chapter_id": 4,
             "rewards": [
                 "“Jet Boots” (Item 36)"
+            ],
+            "monsters": [
+                "living-spirit",
+                "vermling-raider",
+                "vermling-scout"
             ]
         }
     ],

@@ -45,6 +45,7 @@ class Scenario {
         this.required_by = collect(data.required_by);
         this.blocks_on = collect(data.blocks_on);
         this.treasures = data.treasures || [];
+        this.monsters = data.monsters || [];
         this.treasures_from = collect(data.treasures_from);
         this.treasures_to = collect(data.treasures_to);
         this.loot = data.loot || {};

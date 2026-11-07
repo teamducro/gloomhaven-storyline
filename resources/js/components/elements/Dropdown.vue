@@ -60,6 +60,11 @@ export default {
     },
     methods: {
         closeIfClickedOutside(event) {
+            // A clicked item that removed itself (e.g. a deselected filter) is no longer inside the dropdown
+            if (!event.target.isConnected) {
+                return;
+            }
+
             if (!event.target.closest('.dropdown')) {
                 if (this.shouldToggle || (!this.shouldToggle && !event.target.closest('.trigger'))) {
                     this.close();

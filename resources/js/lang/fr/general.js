@@ -302,6 +302,9 @@ export default {
     "Settings": "Paramètres",
     "Clear filter": "Effacer le filtre",
     "Missed Treasures": "Trésors manqués",
+    "Monster": "Monster",
+    "Monsters": "Monsters",
+    "Monster data": "Monster data",
     "transfer": {
         "title": "Transférer des données de campagne",
         "text": "Copier les données de campagne peut être fait facilement",

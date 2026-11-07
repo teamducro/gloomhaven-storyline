@@ -51,6 +51,33 @@
                             <span class="mdc-deprecated-list-item__text">{{ $t(region.name) }}</span>
                         </li>
                     </template>
+
+                    <template v-if="monsters.length">
+                        <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
+
+                        <li class="px-4 [&_.dropdown]:static">
+                            <autocomplete :label="$t('Monster')"
+                                          width="w-full"
+                                          id="monster-filter"
+                                          :list="monsters"
+                                          :disabled="monsterFilter"
+                                          :auto-disable="false"
+                                          :filter-closure="monsterFilterClosure"
+                                          :auto-close="true"
+                                          @change="addMonsterFilter">
+                                <template v-for="monster in monsters" v-slot:[monster]>
+                                    {{ $t('monsters.' + monster) }}
+                                </template>
+                            </autocomplete>
+                        </li>
+
+                        <li v-for="monster in monsterFilter"
+                            class="mdc-deprecated-list-item mdc-deprecated-list-item--activated cursor-pointer"
+                            @click="removeMonsterFilter(monster)">
+                            <span class="mdc-deprecated-list-item__ripple"></span>
+                            <span class="mdc-deprecated-list-item__text">{{ $t('monsters.' + monster) }}</span>
+                        </li>
+                    </template>
                 </ul>
             </dropdown>
         </div>
@@ -108,6 +135,7 @@ import {ScenarioState} from "../models/ScenarioState";
 import When from "../services/When";
 import CharacterIcon from "../components/elements/CharacterIcon";
 import GameData from "../services/GameData";
+import Helpers from "../services/Helpers";
 
 export default {
     inject: ['appData'],
@@ -117,6 +145,7 @@ export default {
             list: null,
             scenarios: null,
             regionFilter: [],
+            monsterFilter: [],
             otherFilters: {
                 missedTreasures: false,
                 solo: false
@@ -151,8 +180,19 @@ export default {
         this.$bus.$off('scenarios-updated', this.setScenarios);
     },
     computed: {
+        monsters() {
+            if (!this.scenarios) {
+                return [];
+            }
+
+            const monsters = this.scenarios
+                .filter(scenario => scenario.isVisible() && this.isScenarioOfCurrentGame(scenario))
+                .pluck('monsters').flatten().unique().toArray();
+
+            return monsters.sort((a, b) => new Intl.Collator().compare(this.$t('monsters.' + a), this.$t('monsters.' + b)));
+        },
         filterEnabled() {
-            return this.regionFilter.length || Object.values(this.otherFilters).some(enabled => enabled) || this.stateFilter;
+            return this.regionFilter.length || this.monsterFilter.length || Object.values(this.otherFilters).some(enabled => enabled) || this.stateFilter;
         }
     },
     methods: {
@@ -182,6 +222,10 @@ export default {
                 });
             }
         },
+        isScenarioOfCurrentGame(scenario) {
+            return !scenario.game || !this.appData.game || scenario.game === this.appData.game
+                || this.crossoverScenarioVisible(scenario);
+        },
         crossoverScenarioVisible(scenario) {
             if (!this.gameData.enabledCrossovers().includes(scenario.game)) {
                 return false;
@@ -193,10 +237,8 @@ export default {
             // Only show scenarios from selected game (GH/FC), except crossover pack
             // scenarios (e.g. Mercenary Pack solo scenarios), which show only when
             // their pack is enabled and their character has been added to the party.
-            if (scenario.game && this.appData.game && scenario.game !== this.appData.game) {
-                if (!this.crossoverScenarioVisible(scenario)) {
-                    return false;
-                }
+            if (!this.isScenarioOfCurrentGame(scenario)) {
+                return false;
             }
 
             // Bonus content stays out of campaigns that don't play it.
@@ -206,6 +248,7 @@ export default {
 
             // Filter is not applied
             if (!this.regionFilter.length
+                && !this.monsterFilter.length
                 && !Object.values(this.otherFilters).filter(s => s).length
                 && !this.stateFilter) {
                 return true;
@@ -222,6 +265,12 @@ export default {
                 if (!inRegion) {
                     return false;
                 }
+            }
+
+            // Apply monsters, only on visible scenarios so the filter doesn't reveal locked content
+            if (this.monsterFilter.length
+                && (scenario.isHidden() || !this.monsterFilter.some(monster => scenario.monsters.includes(monster)))) {
+                return false;
             }
 
             // Apply other filters
@@ -262,6 +311,15 @@ export default {
                 ? this.regionFilter.splice(this.regionFilter.indexOf(id), 1)
                 : this.regionFilter.push(id);
         },
+        addMonsterFilter(monster) {
+            this.monsterFilter.push(monster);
+        },
+        removeMonsterFilter(monster) {
+            this.monsterFilter.splice(this.monsterFilter.indexOf(monster), 1);
+        },
+        monsterFilterClosure(query) {
+            return (monster) => Helpers.sanitize(this.$t('monsters.' + monster)).includes(query);
+        },
         setOtherFilter(filter) {
             if (!this.otherFilters[filter]) {
                 this.resetFilter();
@@ -284,6 +342,7 @@ export default {
             if (clearRegions) {
                 this.$refs['filter-dropdown'].close();
                 this.regionFilter = [];
+                this.monsterFilter = [];
             }
         }
     }
