@@ -262,21 +262,26 @@
                             </transition-expand>
                         </div>
 
-                        <div class="relative h-8 mb-6">
-                            <div class="flex absolute left-0 top-0 origin-left transform scale-75">
-                                <button v-if="scenario.pages.length" class="mdc-button mdc-button--raised mr-2"
+                        <div class="mb-6">
+                            <div class="flex flex-wrap gap-2 origin-top-left transform scale-75" style="width: 133.34%">
+                                <button v-if="scenario.pages.length" class="mdc-button mdc-button--raised"
                                         @click="openPages()">
                                     <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon">menu_book</i>
                                     <span class="mdc-button__label">{{ $t('Pages') }}</span>
                                 </button>
-                                <a v-if="virtualBoardUrl && !scenario.solo" :href="virtualBoardUrl" target="_blank">
+                                <a v-if="virtualBoardUrl && !scenario.solo && integrations['virtual-board'] !== false" :href="virtualBoardUrl" target="_blank">
                                     <button class="mdc-button mdc-button--raised">
                                         <span class="mdc-button__ripple"></span>
                                         <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                                         <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
                                     </button>
                                 </a>
+                                <button v-if="!scenario.solo && integrations.ghs !== false" id="ghs-export-scenario"
+                                        class="mdc-button mdc-button--raised" @click="openGhsExport">
+                                    <i class="material-icons mdc-button__icon">launch</i>
+                                    <span class="mdc-button__label">{{ $t('ghs-export.button') }}</span>
+                                </button>
                             </div>
                         </div>
                     </template>
@@ -332,6 +337,7 @@ import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
 
 import md5 from 'js-md5';
+import store from "store/dist/store.modern";
 
 export default {
     inject: ['appData'],
@@ -344,6 +350,7 @@ export default {
             treasuresVisible: false,
             rollback: null,
             virtualBoardUrl: null,
+            integrations: {},
             notes: null,
             showNotes: false,
             notesIsOpen: false,
@@ -500,6 +507,7 @@ export default {
 
             this.scenario = scenario;
             this.setVirtualBoardUrl();
+            this.integrations = store.get('integrations', {});
             this.treasuresVisible = this.scenario.lootedAllTreasures;
             this.rollback = null;
             this.notesEntered();
@@ -536,6 +544,11 @@ export default {
         },
         unsetScenario() {
             this.scenario = null;
+        },
+        openGhsExport() {
+            const id = this.scenario.id;
+            this.close();
+            this.$bus.$emit('open-ghs-export-modal', id);
         },
         openAchievement(id) {
             this.close();

@@ -180,6 +180,15 @@ export default {
         "3": "or share it on one of the following platforms.",
         "title": "Share Gloomhaven Storyline Tracker"
     },
+    "ghs-export": {
+        "button": "Gloomhaven Secretariat",
+        "title": "Export to Gloomhaven Secretariat",
+        "1": "Preload your party in the combat helper Gloomhaven Secretariat:",
+        "2": "Download the file below.",
+        "3": "Open Gloomhaven Secretariat and choose Menu > Data Management > Import File. Confirm with a second click.",
+        "4": "Select the file. Your characters (class, level and name) and the scenario are loaded. This replaces the current game in Gloomhaven Secretariat. To add the monsters, open the scenario at the bottom of Gloomhaven Secretariat and choose Restart Scenario."
+    },
+    "Download": "Download",
     "share-campaign-code": {
         "not-allowed": "You are not the owner of this campaign, you can't share it with others.",
         "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
@@ -323,6 +332,10 @@ export default {
             "text": "Campaign data can only be transferred if you purchased a shared campaign.",
             "read-only": "Transfer campaign data is not available in read only mode."
         }
+    },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window."
     },
     "games-enabled": {
         "title": "Enabled Games",
