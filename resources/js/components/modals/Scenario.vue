@@ -100,6 +100,9 @@
                                     <requirements :conditions="scenario.required_by"
                                                  v-if="scenario.required_by.isNotEmpty()"
                                                  :scenarioState="scenario.state"></requirements>
+                                    <template v-else-if="$te(scenario.$tPrefix('requirements'))">
+                                        {{ $t(scenario.$tPrefix('requirements')) }}
+                                    </template>
                                     <component v-else v-bind:is="renderHtml(scenario.requirements)"></component>
                                 </div>
                             </div>
@@ -511,7 +514,7 @@ export default {
             }
 
             if (this.scenario.solo) {
-                this.scenario.requirements = `<div class="flex items-center"><character-icon class="inline-block w-5 mr-2" :character="'${this.scenario.solo}'" :show-name="true"/> level 5</div>`
+                this.scenario.requirements = `<div class="flex items-center"><character-icon class="inline-block w-5 mr-2" :character="'${this.scenario.solo}'" :show-name="true"/> ${this.$t('Level')} 5</div>`
             }
 
             this.rerenderStateSelection();

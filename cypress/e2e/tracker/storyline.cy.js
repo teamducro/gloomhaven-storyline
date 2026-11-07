@@ -98,6 +98,27 @@ describe('Storyline', () => {
         utilities.closeModel();
     });
 
+    it('It shows the personal quest requirement of a scenario', () => {
+        cy.visit('/tracker?states=52_i');
+
+        utilities.openScenario(52);
+        cy.get('#scenario-content').contains('Requirements:');
+        cy.get('#scenario-content').contains('“Seeker of Xorn” personal quest');
+        utilities.closeModel();
+    });
+
+    it('It translates the personal quest requirement of a scenario', () => {
+        cy.visit('/tracker?states=52_i', {
+            onBeforeLoad: (window) => window.localStorage.setItem('lang', '"de"')
+        });
+
+        // German is lazy-loaded; open the modal only once it is active.
+        cy.get('html').should('have.attr', 'lang', 'de');
+        utilities.openScenario(52);
+        cy.get('#scenario-content').contains('Persönliches Ziel „Suche nach Xorn“');
+        utilities.closeModel();
+    });
+
     it('It blocks required scenarios', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-8_c');
 
