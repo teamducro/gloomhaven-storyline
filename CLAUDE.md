@@ -11,7 +11,6 @@ Vocabulary: `GLOSSARY.md` (rulebook terms; use them in prose, plans and UI text)
 ```bash
 npm run dev | watch | prod | prod-fh   # build into public/ (watch = vite build --watch, no dev server)
 npm test                               # Cypress runner against https://gloomhaven-storyline.test/ (valet link)
-npm run lang                           # add missing translation keys to other locales
 ```
 `.env`: set `MIX_WEB_URL`, `MIX_APP_URL`.
 
@@ -35,7 +34,7 @@ PRs target `develop`.
 - Campaign state: one localStorage blob per campaign (`app.campaignData`, key `app.campaignId`) holding every game; each `Storable` model writes its `fieldsToStore` under its `key()`, and `delete()` writes `null` (a tombstone the server needs). Key layout: `gloomhaven-domain` skill.
 - Sync: `Versionable` models carry `version` + md5 `hash`; `StorySyncer` bumps the version of each changed model and PUTs the blob when its hash changes; the server reports per-key conflicts. Realtime via Echo/Pusher.
 - Layers: `models/`, `repositories/` (local data + logic), `apiRepositories/` (axios), `services/`, `validators/`, `pages/` (routes), `components/` (auto-registered globally by filename).
-- Translations: `resources/js/lang/{locale}/*.js`, 9 locales; `en.js` only re-exports the topic files. Add keys to `lang/en/<topic>.js`, then `npm run lang`.
+- Translations: `resources/js/lang/{locale}/*.js`, 9 locales; `en.js` only re-exports the topic files. Add keys to `lang/en/<topic>.js` and, in English until translated, to the other locales.
 
 ## Build (Vite, `vite.config.mjs`)
 
