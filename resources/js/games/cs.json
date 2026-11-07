@@ -124,9 +124,9 @@
             "linked_from": [
                 4
             ],
-            "treasures": {
-                "45": "Gain one random “Stone” item (Item 94-100)"
-            },
+            "treasures": [
+                45
+            ],
             "rewards": [
                 "Each character gains one random “Orb” item (Item 1-10)"
             ],
@@ -1276,9 +1276,9 @@
                 "cs/2/48"
             ],
             "chapter_id": 103,
-            "treasures": {
-                "23": "“Trophy Helmet” (Item 12)"
-            },
+            "treasures": [
+                23
+            ],
             "rewards": [
                 "+1 prosperity",
                 "Each character gains one random “Orb” item (Item 1-10)"
@@ -1580,9 +1580,9 @@
                 "cs/2/62"
             ],
             "chapter_id": 104,
-            "treasures": {
-                "50": "“Bottled Moonlight” (Item 18)"
-            },
+            "treasures": [
+                50
+            ],
             "rewards": [
                 "+1 reputation",
                 "30 gold each"
