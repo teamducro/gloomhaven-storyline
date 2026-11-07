@@ -2732,11 +2732,11 @@ export default {
         "rewards": [
             [
                 "40 szt. złota do podziału",
-                "„Studded Leather” design (przedmiot 030) OR „Boots of Dashing” design (przedmiot 036)"
+                "„Studded Leather” design (przedmiot gh-30) OR „Boots of Dashing” design (przedmiot gh-36)"
             ],
             [
                 "Po 2 ✔ dla każdego",
-                "„Lucky Eye” design (przedmiot 063)"
+                "„Lucky Eye” design (przedmiot gh-63)"
             ]
         ]
     },

@@ -2149,11 +2149,11 @@
             "rewards": [
                 [
                     "40 collective gold",
-                    "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                    "“Studded Leather” design (Item gh-30) OR “Boots of Dashing” design (Item gh-36)"
                 ],
                 [
                     "2 ✓ each",
-                    "“Lucky Eye” design (Item 063)"
+                    "“Lucky Eye” design (Item gh-63)"
                 ]
             ],
             "prompt": "unseenPlight",
@@ -7963,7 +7963,7 @@
                 },
                 {
                     "count": 1,
-                    "desc": "Gain “Poison Dagger” (Item 011). You may carry one additional {ONE-HAND} item with “Dagger” in its name."
+                    "desc": "Gain “Poison Dagger” (Item gh-11). You may carry one additional {ONE-HAND} item with “Dagger” in its name."
                 },
                 {
                     "count": 1,

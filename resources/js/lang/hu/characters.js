@@ -527,7 +527,7 @@ export default {
             "Cserélj ki egy {+1_WHITE} lapot egy {+0_WHITE} {WOUND_2} lapra",
             "Adj hozzá négy {AGAIN} {+0_WHITE} “{+1_WHITE} ha a célpont nehéz terepen van” lapot",
             "Adj hozzá két {AGAIN} “{INVISIBLE}, Magadra, ha nehéz terepen vagy” lapot",
-            "Megkapod a “Mérgezett tőr” (Felszerelés 011). Vihetsz magaddal +1 {ONE-HAND} felszerelést a “tőrrel” a nevében.",
+            "Megkapod a “Mérgezett tőr” (Felszerelés gh-11). Vihetsz magaddal +1 {ONE-HAND} felszerelést a “tőrrel” a nevében.",
             "Hagy figyelmen kívül a sérülést és az események negatív hatásait, és vegyél ki egy {-1_WHITE} lapot",
             "Küldetések negatív hatásait hagyd figyelmen kívül és vegyél ki egy {-1_WHITE} lapot"
         ]

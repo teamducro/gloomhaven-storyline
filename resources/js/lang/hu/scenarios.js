@@ -2732,11 +2732,11 @@ export default {
         "rewards": [
             [
                 "40 arany mindenkinek",
-                "“Studded Leather” design (Felszerelés 030) OR “Boots of Dashing” design (Felszerelés 036)"
+                "“Studded Leather” design (Felszerelés gh-30) OR “Boots of Dashing” design (Felszerelés gh-36)"
             ],
             [
                 "2 ✓ mindenkinek",
-                "“Lucky Eye” design (Felszerelés 063)"
+                "“Lucky Eye” design (Felszerelés gh-63)"
             ]
         ]
     },

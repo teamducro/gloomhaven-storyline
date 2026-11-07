@@ -2743,11 +2743,11 @@ export default {
         "rewards": [
             [
                 "40 collective gold",
-                "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                "“Studded Leather” design (Item gh-30) OR “Boots of Dashing” design (Item gh-36)"
             ],
             [
                 "2 ✓ each",
-                "“Lucky Eye” design (Item 063)"
+                "“Lucky Eye” design (Item gh-63)"
             ]
         ]
     },
