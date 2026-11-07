@@ -37,6 +37,8 @@ class CampaignSheet {
         this.winterOutpost = {...data.winterOutpost};
         this.boat = {...data.boat};
         this.notes = data.notes || '';
+        // Event deck card ids top to bottom, per card type.
+        this.deckOrder = {...data.deckOrder};
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
 
@@ -82,6 +84,7 @@ class CampaignSheet {
             winterOutpost: {'winterOutpost': {}},
             boat: {'boat': {}},
             notes: {'notes': ''},
+            deckOrder: {'deckOrder': {}},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
 
@@ -268,6 +271,9 @@ class CampaignSheet {
         }
         if (!values.enhancementsEnabled) {
             delete values.enhancementsEnabled;
+        }
+        if (!Object.keys(values.deckOrder || {}).length) {
+            delete values.deckOrder;
         }
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;

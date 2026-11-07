@@ -181,11 +181,12 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
+import DrawsEventCards from "../mixins/DrawsEventCards";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 
 export default {
-    mixins: [GetCampaignName, SheetCalculations],
+    mixins: [GetCampaignName, SheetCalculations, DrawsEventCards],
     inject: ['appData'],
     data() {
         return {
@@ -282,13 +283,6 @@ export default {
 
             this.sheet.store();
             this.storySyncer.store();
-        },
-        draw(checkedItems, type) {
-            let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
-            if (id) {
-                const card = type + '-' + id;
-                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game, viaDraw: true});
-            }
         },
         openCard(id, type) {
             const card = type + '-' + id;

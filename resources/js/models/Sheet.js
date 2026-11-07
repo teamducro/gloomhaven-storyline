@@ -24,6 +24,8 @@ class Sheet {
         this.road = {...data.road};
         this.rift = {...data.rift}; // FC
         this.notes = data.notes || '';
+        // Event deck card ids top to bottom, per card type.
+        this.deckOrder = {...data.deckOrder};
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
 
@@ -70,6 +72,7 @@ class Sheet {
             road: {'road': {}},
             rift: {'rift': {}},
             notes: {'notes': ''},
+            deckOrder: {'deckOrder': {}},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
             factionReputation: {'factionReputation': {}},
@@ -265,6 +268,9 @@ class Sheet {
         }
         if (!values.enhancementsEnabled) {
             delete values.enhancementsEnabled;
+        }
+        if (!Object.keys(values.deckOrder || {}).length) {
+            delete values.deckOrder;
         }
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;
