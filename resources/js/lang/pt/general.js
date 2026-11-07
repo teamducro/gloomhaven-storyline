@@ -117,6 +117,7 @@ export default {
     "Search": "Search",
     "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Show all": "Show all",
+    "Milestone achieved": "Milestone achieved",
     "Manage": "Manage",
     "Show treasures": "Show treasures",
     "solved": "solved",
