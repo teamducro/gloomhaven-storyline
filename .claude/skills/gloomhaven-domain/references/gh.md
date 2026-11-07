@@ -15,7 +15,7 @@ Forgotten Circles is an expansion: it is the **same campaign** as Gloomhaven. Se
 
 ## Party sheet (`pages/PartyGh.vue`)
 
-Reputation (shop price modifier), donations to the Great Oak (thresholds 100…1000 report prosperity gained; the UI does not add it), prosperity (thresholds 1/5/10/16/23/31/40/51/65), City/Road decks (start 1–30), scenario level, notes, class unlocks, and 9 sheet unlocks by index: 0 five Ancient Technology → Envelope A, 1 Drake's Command & Treasure, 2 donate 100 → Envelope B, 3–6 reputation ±10/±20, 7 retire → Town Records, 8 Envelope X solved (`xResult === 'Bladeswarm'` unlocks `BS`).
+Reputation (shop price modifier), donations to the Great Oak (each threshold 100…1000 ticks a prosperity checkmark, shown as locked boxes), prosperity (thresholds 1/5/10/16/23/31/40/51/65), City/Road decks (start 1–30), scenario level, notes, class unlocks, and 9 sheet unlocks by index: 0 five Ancient Technology → Envelope A, 1 Drake's Command & Treasure, 2 donate 100 → Envelope B, 3–6 reputation ±10/±20, 7 retire → Town Records, 8 Envelope X solved (`xResult === 'Bladeswarm'` unlocks `BS`).
 
 ## Scenarios
 
@@ -23,6 +23,10 @@ Reputation (shop price modifier), donations to the Great Oak (thresholds 100…1
 - Conclusion decisions hard-coded in `ChoiceService`: `dragon`, `merchantsBay`, `shiftingGears`, `aftershocks`.
 - Treasures can unlock scenarios (`treasures_to`, e.g. treasure 49 in scenario 37 → 17).
 - Chapters ≥100: 100 Solo, 101 Personal Quests, 102 Random Scenarios, 103 Sealed, 104 Road Events, 105 City Events.
+
+## Seeker of Xorn (fan-made small expansion)
+
+Personal quest 510 adds City event `C-SoX1` on choosing (`events_on_choose`) and makes `C-SoX2`…`4` addable (`events_addable_on_choose`). Crypt scenarios `SoX1`–`3` (chapter 101) and party achievements `PSOX1`–`3` are gated by `requires_event`. String event ids are kept in storage even when out of the deck. Images in `img/cards/gh/city/SoX*`, `img/pages/gh/SoX*`; the card links to BGG thread 2220121 as credit.
 
 ## Achievements
 

@@ -14,6 +14,9 @@ _Avoid_: edition, box
 **Expansion**: content continuing one game's campaign. Forgotten Circles is an expansion of Gloomhaven (scenarios, Diviner, Rift events), viewable with its own storyline.
 _Avoid_: calling Forgotten Circles a game
 
+**Seeker of Xorn**: a fan-made small expansion of Gloomhaven (by Morthai): four city events and three crypt scenarios for the Seeker of Xorn personal quest.
+_Avoid_: official content
+
 **Crossover pack**: content added to any game. The Mercenary Pack (classes, solo scenarios, items).
 _Avoid_: expansion, game
 
@@ -22,7 +25,7 @@ _Avoid_: expansion, game
 **Campaign**: one group's playthrough, holding progress for every game it plays.
 _Avoid_: story, save
 
-**Local campaign**: kept on one device only. **Shared campaign**: synced to the server, joined with a **campaign code** (short-lived, optionally read-only).
+**Local campaign**: kept on one device only. **Shared campaign**: synced to the server, joined with a **campaign code** (short-lived, optionally read-only). A **patron** (Patreon supporter) can have several shared campaigns and is the only one who can delete one.
 _Avoid_: story, story code, cloud/pro campaign
 
 **Party sheet**: town and party progress in Gloomhaven (+ Forgotten Circles), Jaws of the Lion, Crimson Scales.
@@ -54,6 +57,8 @@ _Avoid_: prerequisite
 **Side scenario**: outside the main storyline, usually unlocked by an event, achievement or personal quest.
 **Solo scenario**: for one class, played alone.
 **Coupled scenarios**: two scenarios sharing one map location.
+**Monster type**: an enemy kind (e.g. Bandit Archer) that appears in a scenario.
+**FAQ** (tracker): official clarifications and errata shown with a scenario or its conclusion.
 
 **Chapter**: a storyline group of scenarios (story arcs, plus side groups like solo, personal quests, events).
 **Region**: an area of the Gloomhaven world map.
@@ -88,7 +93,11 @@ _Avoid_: removed
 _Avoid_: prosperity index
 **Donation**: gold given to the Sanctuary of the Great Oak; can raise prosperity.
 _Avoid_: support for the app developer
-**Event deck**: cards read between scenarios: City, Road, Rift (FC), Boat (FH), FH Summer/Winter Outpost and Road. **Draw**: take one at random.
+**Event deck**: cards read between scenarios: City, Road, Rift (FC), Boat (FH), FH Summer/Winter Outpost and Road. **Draw**: take the top card.
+**Outcome**: a lettered option on the back of an event card (A/B; up to four in GH2); only the chosen one is read.
+_Avoid_: side, choice
+**Return to deck**: a read card goes to the bottom of its deck, unless its outcome says to **remove** it from the game. Adding cards shuffles the deck.
+**Event history** (tracker): the event cards read, with the outcome chosen and whether each was returned or removed.
 **Scenario level**: the difficulty played at, from character levels plus adjustment.
 _Avoid_: difficulty
 
@@ -138,9 +147,9 @@ _Avoid_: hero, profession
 **Character**: one player's instance of a class (level, XP, gold, items, perks).
 **Personal quest**: secret retirement goal; completing it retires the character and unlocks a class, scenario or building.
 _Avoid_: quest (alone)
-**Retire**: leave the party after the personal quest. **Remove**: delete permanently (retiring does this in a local campaign).
-_Avoid_: archive
-**Perk**: permanent attack modifier deck change. **Perk checkmark**: from battle goals, three give a perk.
+**Retire**: leave the party after the personal quest. **Abandon**: leave the party without finishing the personal quest; no class events, and its unfinished quest scenarios become hidden again.
+**Remove**: delete permanently (retiring or abandoning does this in a local campaign). **Archive**: what a shared campaign does instead, so the character can be restored or removed later.
+**Perk**: permanent attack modifier deck change; ✔ in reward text, in every game. **Perk checkmark**: from battle goals, three give a perk.
 _Avoid_: check
 **Ability card**: card from a class deck with level and initiative. **Attack modifier deck**: drawn on each attack. **Enhancement**: sticker improving an ability card.
 
@@ -151,3 +160,5 @@ _Avoid_: check
 _Aliases_: blueprint (Frosthaven)
 **Craft**: make a Frosthaven item from resources (and items) instead of gold.
 **Cross-game item**: item from another game enabled in this campaign.
+**Sacrifice**: take an owned item out of the game for good; it doesn't return to the shop.
+_Avoid_: sell, remove

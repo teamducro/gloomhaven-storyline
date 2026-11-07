@@ -15,7 +15,7 @@ Scenario extras: `complexity`, `loot` (coins, materials, herbs, `random-item-tre
 - Resources: `sheet.resources` and `character.resources` (lumber, metal, hide, six herbs). Soldiers, inspiration: counters.
 - Prosperity thresholds 1/7/16/28/43/61/82/106/133.
 - Town guard: `sheet.checks` (45 checkmarks, groups of 3), `sheet.perks` from `townGuard`, deck from `AttackModifierRepository.getTownGuardModifiers`.
-- Event decks: `summerOutpost`, `summerRoad`, `winterOutpost`, `winterRoad`, `boat` (shown only when the Boat exists). Draw picks a random card in the deck; card types in `models/Card.js`.
+- Event decks: `summerOutpost`, `summerRoad`, `winterOutpost`, `winterRoad`, `boat` (shown only when the Boat exists). Draw takes the top card (`DrawsEventCards`); card types in `models/Card.js`.
 - Alchemy (`AlchemySection.vue`): brewing sets `sheet.itemDesigns` and `sheet.recipes`; 2 herbs from Alchemist level 1, 3 from level 3.
 
 ## Buildings
@@ -34,12 +34,12 @@ A Boat (player names it), B Sled, C Climbing Gear (Workshop vehicles, built from
 
 ## Achievements
 
-Campaign achievements (`Campaign` type), groups `JAR` and `CORE`, stacking chains `CBT`→`CBT5`, `CCCS`→`CCCS6`. Manual ones list the event `cards` that grant them. No city rule; the Global/Party lists are hidden.
+Campaign achievements (`Campaign` type), groups `JAR` and `CORE`, stacking chains `CBT`→`CBT5`, `CCCS`→`CCCS6`. Manual ones list the event `cards` that grant them. `CITF` (Into the Forest) is manual but `unlocks_side_scenario: false`: main 33/39/101 require it, side 69/119/134 don't unlock from it. No city rule; the Global/Party lists are hidden.
 
 ## Characters
 
 17 classes (6 starters), masteries, perks, retirement counter. Personal quests unlock **buildings** (`building_unlocks: [first, fallback]`, result `quest.unlockedBuilding`) and can be gated by `required_building_level`. Solo scenarios 201–217. Items can be crafted (`resources` cost: materials, herbs, other items) via `BuyItem.vue`.
 
-## Planned only (`plans/frosthaven-*.md`, `plans/issue-170-*`, `plans/issue-246-*`)
+## Planned only (`plans/frosthaven-*.md`)
 
-Garden, pets, carpenter discount, Hall of Revelry, Town Hall, wrecked effects, event deck bottom-of-deck, event choice history.
+Garden, pets, carpenter discount, Hall of Revelry, Town Hall, wrecked effects.

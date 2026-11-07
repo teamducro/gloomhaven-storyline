@@ -16,7 +16,7 @@ Labelled "Campaign sheet" but stored as a plain `Sheet` (`sheet-gh2`).
 - Reputation thresholds are stored as `Party` achievements `P2RD6/12`, `P2RME6/12`, `P2RMI6/12`, `P2R16`, `P2R20`, auto-gained (gain only) by `PartyGh2`. First faction at 13 ticks sheet unlock 0 and adds City event 57 (data in `sections` of `games/gh2.json`, with reputation 9 events, prosperity events and first-retirement unlock 7).
 - Inspiration (number), imbuement (80 boxes; every 5th = +1 prosperity, every 10th = section), prosperity (thresholds 1/6/13/23/34/46/60/75/90, sections at boxes 13/23/34/46), donations (+1 prosperity per 50 gold, max 20).
 - 20 sheet unlocks: index order is persisted, append only.
-- Decks: City/Road start 1–20 (max C100 / R77). Unlocking a class adds its class events (`classEvents`); retiring reads the mat's section, no events. Event cards are a front plus 1–4 outcome strips (`events`).
+- Decks: City/Road start 1–20 (max C100 / R77). Unlocking a class adds its class events (`classEvents`); retiring reads the mat's section, no events. Event cards have a front and one back image; `events` maps each outcome (A–D) to where it starts on the back, as % of its height (e.g. `C-2 {A:0, B:44.9, C:84.6}`); outcomes not chosen are blurred (`EventCard.vue blurredSections`).
 
 ## Scenarios
 

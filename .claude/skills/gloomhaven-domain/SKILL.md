@@ -27,9 +27,14 @@ Read the reference for every game your change touches: [gh](references/gh.md) (+
 | Story summary | `models/Quest.js`, `quests` in `games/{game}.json`, `QuestValidator` |
 | Personal quest | `models/PersonalQuest.js`, `character.quest` |
 | City rule | `AchievementGroup` `CR`, `CR2`; other exclusive groups `ART`, FH `CORE`/`JAR` |
-| Prosperity / checkmark | `SheetCalculations.calculateProsperity` / `sheet.prosperityIndex` |
+| Prosperity / checkmark | `SheetCalculations.calculateProsperity` / `sheet.effectiveProsperityIndex` (use this) = `prosperityIndex` (ticked by hand) + `donationChecks`; old campaigns migrate once (`Sheet.migrateDonationProsperity`) |
 | Retire / Abandon / Remove | Cloud: `CharacterRepository.archiveCharacter`; local: `retireCharacter` (events) / `abandonCharacter` (re-locks open quest scenarios); `removeCharacter` deletes |
-| Perk checkmark | `character.checks` |
+| Perk checkmark | `character.checks`; ✔ in reward text = perk: completed scenarios' `perk_reward` raise the allowed perks (`Characters.vue scenarioPerks`) |
+| Draw / return to deck | `sheet.deckOrder[type]` (top → bottom), `mixins/DrawsEventCards.js`: top card drawn, moved to the bottom; a newly checked card reshuffles the deck on the next draw |
+| Outcome / event history | `sheet.eventHistory` `[{card, choice, removed, date}]` (both sheet models), `EventHistory.vue`; reopening a card from history records nothing |
+| Sacrifice | `sheet.removedItems` (item id → count), subtracted in `ItemAvailability`; Sacrifice/Restore in `BuyItem.vue` |
+| Monster type | scenario `monsters` (slugs, names in `lang/*/monsters.js`), every game; filter on the Scenarios page |
+| FAQ | scenario `faq` / `conclusion_faq` (text in `lang/*/scenarios.js`), collapsible in the scenario modal |
 | Item design | `sheet.itemDesigns` |
 | FH vehicle, wall, town feature, world sticker | `models/Overlay.js` |
 | Brew | `AlchemySection.unlock()` |
@@ -46,9 +51,11 @@ Read the reference for every game your change touches: [gh](references/gh.md) (+
 Data: `scenarios` in `games/{game}.json` (GH+FC: `gh.json`). `ScenarioValidator` ≤5 passes, then `AchievementValidator`, `QuestValidator`, `StorySyncer.store()`.
 
 - `hidden` → visible: `root`, a complete `linked_from` parent (respecting `choice`), `treasures_to`, or `solo` class unlocked/in party. Visible `is_side` never re-hides.
-- `required_by`: OR of AND-groups `{complete, incomplete}`; ints = scenarios, strings = achievements or tokens `rope boat sled calendar puzzle`; `hidden`/`hidden_when` display-only. Unmet → `required`, met → `incomplete`.
+- `required_by`: OR of AND-groups `{complete, incomplete}`; ints = scenarios, strings = achievements or tokens `rope boat sled calendar puzzle`; `hidden`/`hidden_when` display-only. Unmet → `required`, met → `incomplete`. An `incomplete` achievement that is gained makes the scenario `required`, not `blocked`, because it can be lost again; the achievement modal still labels these "Blocks" (`ScenarioRepository.requiredBy(a, types)`).
+- `requires_event: "C-SoX1"` keeps a scenario or manual achievement out of view until that event is on the sheet (`Sheet.hasEvent`).
+- Requirement text: `lang scenarios.{game}-{id}.requirements` when it exists, else the raw `requirements`.
 - `blocks_on`: OR of `{complete, incomplete, lost}` → `blocked`.
-- Completing applies `achievements_awarded`, `achievements_lost`, `achievements_awarded_by_choice[promptChoice-1]`, "(Item N)" in rewards → `itemDesigns`, FH overlays. Other reward text is display-only. Undo reverts achievements, not item designs.
+- Completing applies `achievements_awarded`, `achievements_lost`, `achievements_awarded_by_choice[promptChoice-1]`, "(Item N)" in rewards → `itemDesigns` ("(Item gh-N)" targets another game's item, e.g. CS → GH), FH overlays. Other reward text is display-only. Undo reverts achievements, not item designs.
 - Conclusion decisions: per prompt name in `ChoiceService` (GH/FC/FH/CS); GH2 data-driven `prompt_unlocks`.
 - `ScenarioCompletedService`: FC 106/107→112, 110–113→114; off for fh, gh2.
 
@@ -69,6 +76,7 @@ Add new rules to the game's file. Games without own values copy GH's (jotl, cs p
 
 - `characters` (own classes per file; `characterOrder`; `GameData.characters()` merges all): `perks[].cards` → attack modifier deck; `masteries`. Starters derive from `starting_group` (`GameData.startingClasses`: groups other than `_locked`/`_addon`; FC adds the GH starters); GH2 personal quests flag `starting` for the opening deck. `character.game` = class origin, `sheet_game` = campaign game.
 - `sheet.characterUnlocks`: Party page, personal quest (`PersonalQuestValidator`), Envelope X (`xResult`).
+- A ticked personal quest goal unlocks its scenario; unticking never hides it again. Only abandoning does (`PersonalQuestValidator.lockScenarios`), and completed scenarios stay.
 - Class events: `Sheet.addClassEvents(id, 'unlock'|'retire')` on unlock (Party checkbox, personal quest, adding a locked class, CS starting class) and retirement (`CharacterRepository.applyRetirement`); each once per class (`sheet.classEventsAdded`). Lists per class in `classEvents` (GH/FC/CS: unlock/retire, City + Road; GH2: unlock only; FH none).
 - Item id `{game}-{number}` (fc → gh); `app.items` merges enabled games; shop = `calculateItems*` + `itemDesigns` + cross-game; `ItemAvailability` = stock − owned.
 - `sheet.enhancements[classId][abilityCode]` (survives retirement); costs in `enhancements`, rules in `AbilityEnhancements.js`.
