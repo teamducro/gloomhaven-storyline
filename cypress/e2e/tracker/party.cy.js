@@ -67,9 +67,8 @@ describe('Party', () => {
     it('It moves hand-ticked donation prosperity of older campaigns to the donation boxes', () => {
         cy.visit('/tracker/#/party');
         cy.window().then(win => {
-            const data = JSON.parse(win.localStorage.getItem(win.app.campaignId)) || {};
-            data.sheet = {donations: 200, prosperityIndex: 6};
-            win.localStorage.setItem(win.app.campaignId, JSON.stringify(data));
+            // An older campaign: no migration marker yet.
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify({sheet: {donations: 200, prosperityIndex: 6}}));
         });
         cy.reload();
 

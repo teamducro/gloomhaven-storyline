@@ -1,4 +1,5 @@
 import Storable from './Storable'
+import store from "store/dist/store.modern";
 import Character from "./Character";
 import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
@@ -20,7 +21,6 @@ class Sheet {
         // Sheet fields
         this.reputation = data.reputation || 0;
         this.donations = data.donations || 0;
-        this.autoDonationProsperity = data.autoDonationProsperity;
         this.prosperityIndex = data.prosperityIndex || 1;
         this.city = {...data.city};
         this.road = {...data.road};
@@ -74,7 +74,6 @@ class Sheet {
             // Sheet fields
             reputation: 'reputation',
             donations: 'donations',
-            autoDonationProsperity: 'autoDonationProsperity',
             prosperityIndex: 'prosperityIndex',
             city: {'city': {}},
             road: {'road': {}},
@@ -130,13 +129,21 @@ class Sheet {
     }
 
     // Older campaigns ticked donation boxes by hand, so move them out of prosperityIndex to keep the total unchanged.
+    // Marked in a top-level key: older clients rebuild the sheet without the fields they don't know, but keep other keys.
     migrateDonationProsperity() {
-        if (this.autoDonationProsperity) {
+        const marker = `migrated-donations-${this.key()}`;
+        if (app.campaignData[marker]) {
             return;
         }
 
-        this.prosperityIndex = Math.max(1, (this.prosperityIndex || 1) - this.donationChecks);
-        this.autoDonationProsperity = true;
+        const stored = app.campaignData[this.key()];
+        // autoDonationProsperity: the in-sheet marker used before.
+        if (stored && !stored.autoDonationProsperity && this.donationChecks) {
+            this.prosperityIndex = Math.max(1, this.prosperityIndex - this.donationChecks);
+            app.campaignData[this.key()] = {...stored, prosperityIndex: this.prosperityIndex};
+        }
+        app.campaignData[marker] = true;
+        store.set(app.campaignId, app.campaignData);
     }
 
     // Item designs, event decks and campaign sheet unlocks, sized per game by `decks` in games/<game>.json.
@@ -343,6 +350,9 @@ class Sheet {
         }
         if (!Object.keys(values.classEventsAdded || {}).length) {
             delete values.classEventsAdded;
+        }
+        if (!Object.keys(values.removedItems || {}).length) {
+            delete values.removedItems;
         }
         return values;
     }

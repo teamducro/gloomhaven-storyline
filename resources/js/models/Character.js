@@ -92,7 +92,7 @@ class Character {
             quest: {'quest': {}},
             abilities: {'abilities': {}},
             abilityPerLevel: {'abilityPerLevel': {}},
-            milestone: 'milestone',
+            milestone: {'milestone': false},
             sortOrder: 'sortOrder',
         };
 
@@ -197,6 +197,10 @@ class Character {
         values.perks = collect({...this.perks}).map(perks => (perks || []).filter(v => v)).filter(v => v.length).all();
         values.items = collect({...this.items}).filter(v => v).all();
         values.quest = this.quest instanceof PersonalQuest ? this.quest.valuesToStore() : {};
+        // Left out while unset, so adding it doesn't change existing characters' sync hash.
+        if (!values.milestone) {
+            delete values.milestone;
+        }
         return values;
     }
 

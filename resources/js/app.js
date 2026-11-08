@@ -40,6 +40,7 @@ import GameData from "./services/GameData";
 import SheetRepository from "./repositories/SheetRepository";
 import enableGame from "./services/app/enableGame";
 import registerServiceWorker from "./services/app/RegisterServiceWorker";
+import reloadForNewBuild from "./services/app/reloadForNewBuild";
 import routes from './routes';
 import bus from './services/EventBus';
 import createLegacyI18n from './services/createLegacyI18n';
@@ -50,6 +51,15 @@ import '../sass/app.scss';
 gsap.registerPlugin(Flip);
 
 const router = createRouter({history: createWebHashHistory(), routes});
+
+window.addEventListener('vite:preloadError', (event) => reloadForNewBuild() && event.preventDefault());
+// Chrome, Firefox and Safari messages for a lazy route chunk that failed to load.
+router.onError((error) => {
+    if (/dynamically imported module|Importing a module script failed/.test(error?.message)) {
+        reloadForNewBuild();
+    }
+    console.error(error);
+});
 
 // Router 4 ignores URL changes until its first navigation is done, then overwrites them; follow one made while booting.
 const bootHash = location.hash;

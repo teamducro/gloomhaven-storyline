@@ -69,6 +69,38 @@ describe('Storage', () => {
             expect(sheet).not.to.have.property('enhancementsEnabled');
             expect(sheet).not.to.have.property('enhancements');
             expect(sheet).not.to.have.property('hidePersonalQuests');
+            expect(sheet).not.to.have.property('removedItems');
+        });
+    });
+
+    describe('Donation prosperity migration', () => {
+        const visitWith = (campaignData) => {
+            // Seed from the website page, a still running tracker would overwrite the data
+            cy.visit('/');
+            cy.window().then((win) => win.localStorage.setItem('local', JSON.stringify(campaignData)));
+            cy.visit('/tracker');
+        };
+        const sheet = () => cy.window().its('localStorage').then((storage) => JSON.parse(storage.getItem('local')));
+
+        it('It moves hand-ticked donation checks out of prosperity once', () => {
+            // 150 gold donated = 2 donation checks, ticked by hand before they were automatic.
+            visitWith({sheet: {donations: 150, prosperityIndex: 6}});
+            sheet().should((data) => {
+                expect(data.sheet.prosperityIndex).eq(4);
+                expect(data['migrated-donations-sheet']).eq(true);
+            });
+
+            // An older client rewrites the sheet with only the fields it knows, but keeps the marker key.
+            sheet().then((data) => visitWith({...data, sheet: {donations: 150, prosperityIndex: 4}}));
+            sheet().its('sheet.prosperityIndex').should('eq', 4);
+        });
+
+        it('It does not migrate a sheet marked by the previous in-sheet flag', () => {
+            visitWith({sheet: {donations: 150, prosperityIndex: 4, autoDonationProsperity: true}});
+            sheet().should((data) => {
+                expect(data['migrated-donations-sheet']).eq(true);
+                expect(data.sheet.prosperityIndex).eq(4);
+            });
         });
     });
 
@@ -88,6 +120,7 @@ describe('Storage', () => {
             expect(campaign).not.to.have.property('enhancementsEnabled');
             expect(campaign).not.to.have.property('enhancements');
             expect(campaign).not.to.have.property('hidePersonalQuests');
+            expect(campaign).not.to.have.property('removedItems');
         });
     });
 

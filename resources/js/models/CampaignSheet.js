@@ -286,6 +286,9 @@ class CampaignSheet {
         if (!Object.keys(values.deckOrder || {}).length) {
             delete values.deckOrder;
         }
+        if (!Object.keys(values.removedItems || {}).length) {
+            delete values.removedItems;
+        }
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;
         }

@@ -1,4 +1,5 @@
 // import axios from 'axios';
+import reloadForNewBuild from "./app/reloadForNewBuild";
 
 const loadedLanguages = ['en']; // our default language that is preloaded
 const supportedLanguages = ['en', 'fr', 'it', 'de', 'es', 'pl', 'ru', 'hu', 'pt'];
@@ -34,5 +35,8 @@ export function loadLanguageAsync(lang) {
             loadedLanguages.push(lang);
             return setI18nLanguage(lang);
         }
-    )
+    ).catch(() => {
+        reloadForNewBuild();
+        return i18n.locale;
+    })
 }

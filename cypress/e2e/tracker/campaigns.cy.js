@@ -174,6 +174,15 @@ describe('Campaigns', () => {
             cy.contains('li', 'Gone').should('not.exist');
         });
 
+        it('It shows a campaign name in a toast as plain text', () => {
+            const shared = {...ownedStory, id: 8, name: '{{ 7 * 191 }} <b>Bold</b>', is_shared: true, token: 'shared-token'};
+            cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'No query results for model [App\\Models\\Story] 8'}});
+            visitWithStories({isPatron: false, stories: [shared]});
+
+            cy.get('.toast').contains('"{{ 7 * 191 }} <b>Bold</b>" was deleted by its owner');
+            cy.get('.toast b').should('not.exist');
+        });
+
         it('It keeps a shared campaign on a 404 that is not about the campaign', () => {
             const shared = {...ownedStory, id: 8, name: 'Kept', is_shared: true, token: 'shared-token'};
             cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'Not Found'}}).as('findStory');
