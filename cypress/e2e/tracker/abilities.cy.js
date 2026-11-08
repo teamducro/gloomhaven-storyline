@@ -120,6 +120,16 @@ describe('Abilities', () => {
 
     });
 
+    it('It shows three columns of cards on the wide side', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openAbilities();
+
+        cy.get('.available-header').next().should(($grid) => {
+            expect(getComputedStyle($grid[0]).gridTemplateColumns.split(' ')).to.have.length(3);
+        });
+    });
+
     it('It can collapse the grid', () => {
         cy.visit('/tracker/#/characters');
 

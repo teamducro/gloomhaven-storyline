@@ -4,7 +4,7 @@
             <div v-if="alchemist.level >= chart.level" class="flex flex-wrap">
                 <div>
                     <h2 class="my-4">{{ $t(chart.title) }}</h2>
-                    <div class="grid gap-4" :class="'grid-cols-'+chart.chart[0].length">
+                    <div class="grid gap-4" :style="{gridTemplateColumns: 'repeat('+chart.chart[0].length+', minmax(0, 1fr))'}">
                         <template v-for="row in chart.chart">
                             <template v-for="cell in row">
                                 <span v-if="cell === ''"/>
