@@ -179,7 +179,7 @@ export default {
     "ghs-export": {
         "1": "전투 도우미 Gloomhaven Secretariat에 파티를 미리 불러옵니다:",
         "2": "아래 파일을 다운로드하세요.",
-        "3": "Gloomhaven Secretariat를 열고 Menu > Data Management > Import File를 선택하세요. 한 번 더 클릭해 확인하세요.",
+        "3": "Gloomhaven Secretariat를 열고 Menu > Data Management > Import File를 선택하세요.",
         "4": "파일을 선택하세요. 캐릭터(직업, 레벨, 이름)와 시나리오가 불러와집니다. Gloomhaven Secretariat의 현재 게임은 대체됩니다. 몬스터를 추가하려면 Gloomhaven Secretariat 하단에서 시나리오를 열고 ‘Restart Scenario’를 선택하세요.",
         "button": "Gloomhaven Secretariat",
         "title": "Gloomhaven Secretariat로 내보내기"

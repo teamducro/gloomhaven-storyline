@@ -179,7 +179,7 @@ export default {
     "ghs-export": {
         "1": "Předem nahraj svou družinu do bojového pomocníka Gloomhaven Secretariat:",
         "2": "Stáhni si soubor níže.",
-        "3": "Otevři Gloomhaven Secretariat a zvol Menu > Data Management > Import File. Potvrď druhým kliknutím.",
+        "3": "Otevři Gloomhaven Secretariat a zvol Menu > Data Management > Import File.",
         "4": "Vyber soubor. Načtou se tvé postavy (třída, úroveň a jméno) a scénář. Tím se nahradí aktuální hra v Gloomhaven Secretariat. Pro přidání příšer otevři scénář v dolní části Gloomhaven Secretariat a zvol „Restart Scenario“.",
         "button": "Gloomhaven Secretariat",
         "title": "Export do Gloomhaven Secretariat"
