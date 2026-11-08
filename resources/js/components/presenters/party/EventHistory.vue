@@ -6,11 +6,11 @@
             </template>
 
             <ul class="mt-2">
-                <li v-for="entry in history" :key="entry.date + entry.card"
+                <li v-for="{entry, card} in history" :key="entry.date + entry.card"
                     class="flex items-center justify-between py-1 border-b border-gray-600 cursor-pointer"
                     :class="{'opacity-50': entry.removed}"
                     @click="open(entry)">
-                    <span>{{ $t(typeOf(entry).translatedType) }} #{{ typeOf(entry).id }}</span>
+                    <span>{{ $t(card.translatedType) }} #{{ card.id }}</span>
                     <span class="text-right">
                         <span v-if="entry.choice" class="font-bold mr-2">{{ entry.choice }}</span>
                         <webp v-if="entry.removed" src="/img/icons/general/event_card_rip_white.png" width="24"
@@ -18,7 +18,7 @@
                         <webp v-else src="/img/icons/general/event_card_shuffle_white.png" width="24"
                               class="inline align-middle mr-2 returned" :alt="$t('Returned to deck')" :title="$t('Returned to deck')"/>
                         <span class="text-sm">{{ new Date(entry.date).toLocaleDateString() }}</span>
-                        <button v-if="!appData.read_only" @click.stop="forget(entry)"
+                        <button v-if="!appData.read_only" @click.stop="forget(entry, card)"
                                 class="forget material-icons align-middle ml-2" :title="$t('Remove from history')">close</button>
                     </span>
                 </li>
@@ -41,7 +41,8 @@ export default {
     computed: {
         // Newest first
         history() {
-            return [...this.sheet.eventHistory].reverse();
+            return [...this.sheet.eventHistory].reverse()
+                .map(entry => ({entry, card: new Card(entry.card, this.appData.game)}));
         }
     },
     mounted() {
@@ -55,9 +56,6 @@ export default {
     methods: {
         open(entry) {
             this.$bus.$emit('open-event-card', {id: entry.card, game: this.appData.game, choice: entry.choice, fromHistory: true});
-        },
-        typeOf(entry) {
-            return new Card(entry.card, this.appData.game);
         },
         chosen(card, choice) {
             if (this.appData.read_only) {
@@ -73,8 +71,7 @@ export default {
                 this.$emit('change');
             }
         },
-        forget(entry) {
-            const card = this.typeOf(entry);
+        forget(entry, card) {
             this.confirm(this.$t('Remove from history'), this.$t(card.translatedType) + ' #' + card.id, () => {
                 this.sheet.eventHistory.splice(this.sheet.eventHistory.indexOf(entry), 1);
                 this.$emit('change');

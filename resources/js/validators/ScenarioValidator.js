@@ -15,20 +15,23 @@ export default class ScenarioValidator {
     validate(shouldSync = true) {
         this.needsValidating = true;
         this.sheet = (new SheetRepository).make(app.game);
+        this.partyCharacterIds = null;
         let count = 1;
 
         // Validate all scenarios
         while (this.needsValidating) {
             this.needsValidating = false;
             app.scenarios.each((scenario) => {
-                let linkedScenarios = this.linkedScenarios(scenario);
+                // Linked scenarios' states don't change while this scenario is checked
+                const linkedScenarios = this.linkedScenarios(scenario);
+                const states = linkedScenarios.pluck('state', 'state');
                 if (linkedScenarios.where('hasChoices', true).isEmpty()) {
-                    this.checkHidden(scenario);
+                    this.checkHidden(scenario, states);
                 } else {
-                    this.checkChoice(scenario);
+                    this.checkChoice(scenario, linkedScenarios, states);
                 }
                 this.resetPrompts(scenario);
-                this.checkRequired(scenario);
+                this.checkRequired(scenario, states);
             });
 
             // Prevent infinite loop
@@ -50,8 +53,8 @@ export default class ScenarioValidator {
         }
     }
 
-    checkHidden(scenario) {
-        const unlocked = this.isUnlockedByStory(scenario);
+    checkHidden(scenario, states) {
+        const unlocked = this.isUnlockedByStory(scenario, states);
 
         if (scenario.isHidden()) {
             if (unlocked) {
@@ -68,12 +71,10 @@ export default class ScenarioValidator {
         }
     }
 
-    checkChoice(scenario) {
-        let linkedScenarios = this.linkedScenarios(scenario);
+    checkChoice(scenario, linkedScenarios, states) {
         let unlocked = this.scenarioRepository.isScenarioUnlockedByTreasure(scenario);
 
         // Skip when no linked scenarios are completed
-        let states = this.linkedStates(scenario);
         if (states.has(ScenarioState.complete) === false && !unlocked) {
             if (scenario.isVisible()) {
                 this.scenarioRepository.setHidden(scenario);
@@ -115,9 +116,8 @@ export default class ScenarioValidator {
         }
     }
 
-    checkRequired(scenario) {
+    checkRequired(scenario, states) {
         // Skip when no linked scenarios are completed, scenario is hidden or was completed before
-        let states = this.linkedStates(scenario);
         if ((!scenario.is_side && states.has(ScenarioState.complete) === false) || scenario.isHidden() || scenario.isComplete()) {
             return;
         }
@@ -212,8 +212,8 @@ export default class ScenarioValidator {
     }
 
     // Unlocked without a manual unlock such as a personal quest
-    isUnlockedByStory(scenario) {
-        return this.linkedStates(scenario).has(ScenarioState.complete)
+    isUnlockedByStory(scenario, states = this.linkedStates(scenario)) {
+        return states.has(ScenarioState.complete)
             || this.scenarioRepository.isScenarioUnlockedByTreasure(scenario)
             || !!scenario.root
             || !!this.soloScenarioUnlocked(scenario);
@@ -224,9 +224,9 @@ export default class ScenarioValidator {
             return false;
         }
 
-        const partyCharacters = collect(this.sheet.characters).pluck('id').toArray()
+        this.partyCharacterIds ??= collect(this.sheet.characters).pluck('id').toArray();
 
-        return this.sheet.characterUnlocks[scenario.solo] || partyCharacters.includes(scenario.solo)
+        return this.sheet.characterUnlocks[scenario.solo] || this.partyCharacterIds.includes(scenario.solo)
     }
 
     get scenarioRepository() {

@@ -159,6 +159,7 @@ export default {
             },
             stateFilter: null,
             partyCharacterIds: [],
+            enabledCrossovers: [],
             regions: [],
             columns: [],
             sortFunctions: {
@@ -210,6 +211,7 @@ export default {
 
             const sheet = this.sheetRepository.make(this.appData.game);
             this.partyCharacterIds = collect(sheet.characters).pluck('id').toArray();
+            this.enabledCrossovers = this.gameData.enabledCrossovers();
             this.sheet = sheet;
 
             this.columns = (new When).filter([
@@ -234,7 +236,7 @@ export default {
                 || this.crossoverScenarioVisible(scenario);
         },
         crossoverScenarioVisible(scenario) {
-            if (!this.gameData.enabledCrossovers().includes(scenario.game)) {
+            if (!this.enabledCrossovers.includes(scenario.game)) {
                 return false;
             }
 

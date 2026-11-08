@@ -7,6 +7,7 @@ import UsesTranslations from "./UsesTranslations";
 import {Requirement} from "./Requirement";
 import Versionable from "./Versionable";
 import {Game} from "./Game";
+import {markRaw} from "vue";
 
 class Scenario {
 
@@ -19,7 +20,7 @@ class Scenario {
         this.number = `#${this.displayId}`;
         this.root = data.root || false;
         this._name = data.name;
-        this._coordinates = data.coordinates || {};
+        this._coordinates = markRaw(data.coordinates || {});
         this.is_side = data.is_side || false;
         this.complexity = data.complexity || 0;
         this.solo = data.solo || null;
@@ -37,27 +38,27 @@ class Scenario {
         this.hasChoices = typeof data.choices !== 'undefined';
         this._state = ScenarioState.hidden;
         this.notes = "";
-        this._faq = collect(data.faq);
-        this._conclusionFaq = collect(data.conclusion_faq);
-        this.links_to = collect(data.links_to);
-        this.linked_from = collect(data.linked_from);
+        this._faq = markRaw(collect(data.faq));
+        this._conclusionFaq = markRaw(collect(data.conclusion_faq));
+        this.links_to = markRaw(collect(data.links_to));
+        this.linked_from = markRaw(collect(data.linked_from));
         this.coupled = data.coupled;
         this.unlocked = data.unlocked || [];
-        this.required_by = collect(data.required_by);
-        this.blocks_on = collect(data.blocks_on);
+        this.required_by = markRaw(collect(data.required_by));
+        this.blocks_on = markRaw(collect(data.blocks_on));
         this.treasures = data.treasures || [];
         this.monsters = data.monsters || [];
-        this.treasures_from = collect(data.treasures_from);
-        this.treasures_to = collect(data.treasures_to);
-        this.loot = data.loot || {};
+        this.treasures_from = markRaw(collect(data.treasures_from));
+        this.treasures_to = markRaw(collect(data.treasures_to));
+        this.loot = markRaw(data.loot || {});
         this.random_item_treasure = false;
         this.unlockedTreasures = [];
-        this.achievements_from_treasures = collect(data.achievements_from_treasures);
-        this._rewards = collect(data.rewards);
+        this.achievements_from_treasures = markRaw(collect(data.achievements_from_treasures));
+        this._rewards = markRaw(collect(data.rewards));
         this.perk_reward = data.perk_reward || 0;
-        this._achievements_awarded = collect(data.achievements_awarded);
-        this.achievements_awarded_by_choice = collect(data.achievements_awarded_by_choice);
-        this.achievements_lost = collect(data.achievements_lost);
+        this._achievements_awarded = markRaw(collect(data.achievements_awarded));
+        this.achievements_awarded_by_choice = markRaw(collect(data.achievements_awarded_by_choice));
+        this.achievements_lost = markRaw(collect(data.achievements_lost));
         this.prompt = data.prompt;
         this.prompt_unlocks = data.prompt_unlocks;
         this._promptChoice = null;
