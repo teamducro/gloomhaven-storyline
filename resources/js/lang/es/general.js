@@ -330,7 +330,8 @@ export default {
     },
     "integrations": {
         "title": "Integrations",
-        "text": "Show buttons for these third-party apps in the scenario window."
+        "text": "Show buttons for these third-party apps in the scenario window.",
+        "virtual-board": "Tablero Virtual (solo Gloomhaven y Forgotten Circles)"
     },
     "games-enabled": {
         "title": "Juegos habilitados",
