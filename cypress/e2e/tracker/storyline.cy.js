@@ -283,6 +283,34 @@ describe('Storyline', () => {
         utilities.closeModel();
     });
 
+    it('It only links FC scenarios the virtual board has', () => {
+        cy.visit('/tracker');
+
+        utilities.switchGame('fc');
+
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 115).compatibleWithVirtualBoard()).eq(true);
+            expect(scenarios.firstWhere('id', 117).compatibleWithVirtualBoard()).eq(false);
+        });
+    });
+
+    it('It hides the virtual board in games it does not support', () => {
+        cy.visit('/tracker/#/settings');
+        cy.get('#integrations').contains('Virtual Board (Gloomhaven and Forgotten Circles only)');
+
+        cy.visit('/tracker');
+
+        utilities.switchGame('jotl');
+        utilities.openScenario(1);
+        cy.get('#scenario-content').should('be.visible');
+        cy.contains('a', 'Virtual Board').should('not.exist');
+        utilities.closeModel();
+
+        cy.visit('/tracker/#/settings');
+        cy.get('#ghs-integration').should('exist');
+        cy.get('#virtual-board-integration').should('not.exist');
+    });
+
     it('It opens JotL', () => {
         cy.visit('/tracker');
 

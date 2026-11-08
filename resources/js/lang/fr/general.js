@@ -330,7 +330,8 @@ export default {
     },
     "integrations": {
         "title": "Integrations",
-        "text": "Show buttons for these third-party apps in the scenario window."
+        "text": "Show buttons for these third-party apps in the scenario window.",
+        "virtual-board": "Plateau Virtuel (Gloomhaven et Forgotten Circles uniquement)"
     },
     "games-enabled": {
         "title": "Jeux activés",

@@ -296,7 +296,8 @@ class Scenario {
     }
 
     compatibleWithVirtualBoard() {
-        return ["gh", "fc"].includes(this.game);
+        // The board only has GH 1-95 and FC 96-115
+        return ["gh", "fc"].includes(this.game) && this.id <= 115;
     }
 
     get scenarioRepository() {

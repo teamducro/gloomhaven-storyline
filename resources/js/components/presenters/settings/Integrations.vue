@@ -23,9 +23,13 @@
 import store from "store/dist/store.modern";
 
 export default {
+    inject: ['appData'],
     data() {
         const stored = store.get('integrations', {});
-        const integrations = {'virtual-board': 'Virtual Board', 'ghs': 'ghs-export.button'};
+        const integrations = {'virtual-board': 'integrations.virtual-board', 'ghs': 'ghs-export.button'};
+        if (!['gh', 'fc'].includes(this.appData.game)) {
+            delete integrations['virtual-board'];
+        }
 
         return {
             integrations,
@@ -35,7 +39,7 @@ export default {
     },
     methods: {
         store() {
-            store.set('integrations', this.enabled);
+            store.set('integrations', {...store.get('integrations', {}), ...this.enabled});
         }
     }
 }
