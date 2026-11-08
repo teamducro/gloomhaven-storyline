@@ -113,12 +113,11 @@ class Sheet {
         if (typeof app.campaignData[this.key()] === 'undefined') {
             this.new();
         }
-
-        this.migrateDonationProsperity();
     }
 
     new() {
-        // Nothing to set up..
+        // A new sheet counts donation checks automatically from the start, so it never needs the donation migration.
+        app.campaignData[`migrated-donations-${this.key()}`] = true;
     }
 
     get donationChecks() {
@@ -128,24 +127,6 @@ class Sheet {
     // prosperityIndex only holds the manually ticked boxes.
     get effectiveProsperityIndex() {
         return this.prosperityIndex + this.donationChecks;
-    }
-
-    // Older campaigns ticked donation boxes by hand, so move them out of prosperityIndex to keep the total unchanged.
-    // Marked in a top-level key: older clients rebuild the sheet without the fields they don't know, but keep other keys.
-    migrateDonationProsperity() {
-        const marker = `migrated-donations-${this.key()}`;
-        if (app.campaignData[marker]) {
-            return;
-        }
-
-        const stored = app.campaignData[this.key()];
-        // autoDonationProsperity: the in-sheet marker used before.
-        if (stored && !stored.autoDonationProsperity && this.donationChecks) {
-            this.prosperityIndex = Math.max(1, this.prosperityIndex - this.donationChecks);
-            app.campaignData[this.key()] = {...stored, prosperityIndex: this.prosperityIndex};
-        }
-        app.campaignData[marker] = true;
-        store.set(app.campaignId, app.campaignData);
     }
 
     // Item designs, event decks and campaign sheet unlocks, sized per game by `decks` in games/<game>.json.

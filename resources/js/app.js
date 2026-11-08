@@ -21,6 +21,7 @@ import OverlayRepository from "./repositories/OverlayRepository";
 import * as Sentry from "@sentry/vue";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
 import migrateVersion2Progress from "./services/app/migrateVersion2Progress";
+import migrateDonationProsperity from "./services/app/migrateDonationProsperity";
 import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
@@ -257,6 +258,7 @@ const vueApp = createApp({
 
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
+            this.campaignData = migrateDonationProsperity(this.campaignId, this.campaignData);
             // Crossover defaults depend on the campaign (MP classes in use)
             this.enabledGames = getEnabledGames();
             this.game = this.storedGame();
