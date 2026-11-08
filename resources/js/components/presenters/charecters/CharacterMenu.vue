@@ -5,10 +5,7 @@
             <select id="mobile-character-menu" @change="mobileSelect"
                     class="block w-full absolute opacity-0 font-title text-md -ml-1">
                 <option value="party">
-                    {{ [Game.fh, Game.gh2].includes(sheet.game)
-                        ? $t('Campaign sheet')
-                        : $t('Party sheet')
-                    }}
+                    {{ $t(sheetLabel) }}
                 </option>
                 <optgroup :label="$t('Characters')">
                     <template v-for="character in orderedCharacters">
@@ -115,6 +112,7 @@
 <script>
 import draggable from 'vuedraggable'
 import {Game} from "../../../models/Game";
+import GameData from "../../../services/GameData";
 
 export default {
     emits: ['select', 'store'],
@@ -142,6 +140,9 @@ export default {
     computed: {
         Game() {
             return Game
+        },
+        sheetLabel() {
+            return new GameData().sheetLabel(this.sheet.game);
         },
         selectedCharacter() {
             if (!this.selected) {

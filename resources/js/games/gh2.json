@@ -15116,7 +15116,8 @@
         ],
         "defaultCityRule": {
             "group": "CR2",
-            "achievement": "G2AUP"
+            "achievement": "G2AUP",
+            "replaceable": true
         },
         "enhancementAchievements": [
             "G2TPE"

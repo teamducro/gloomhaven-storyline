@@ -36,7 +36,12 @@ class Card {
     }
 
     get outcomes() {
-        return this.game === 'gh2' ? Object.keys(this.sections) : ['A', 'B'];
+        return this.hasOutcomeSections ? Object.keys(this.sections) : ['A', 'B'];
+    }
+
+    // GH2e backs hold 1–4 outcomes at positions listed in `events`; other games split the back in two halves.
+    get hasOutcomeSections() {
+        return Object.keys(gameData.events(this.game)).length > 0;
     }
 
     // GH2e: where each outcome starts on the back, in % of its height

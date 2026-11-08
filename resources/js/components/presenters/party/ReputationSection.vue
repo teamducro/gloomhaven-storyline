@@ -50,14 +50,9 @@ export default {
             default: true
         }
     },
-    data() {
-        return {
-            shop: this.calculateCostModifier(this.sheet.reputation)
-        }
-    },
-    watch: {
-        'sheet.reputation': function () {
-            this.shop = this.calculateCostModifier(this.sheet.reputation);
+    computed: {
+        shop() {
+            return this.calculateCostModifier(this.sheet.reputation, this.sheet.game);
         }
     },
     methods: {

@@ -315,11 +315,6 @@ export default {
             this.sheet[card.folder][card.id] = false;
             this.store();
         },
-        renderHtml(html) {
-            return {
-                template: `<span>${html}</span>`
-            };
-        },
         async xResultChanged(xResult) {
             this.sheet.xResult = xResult;
             this.store();

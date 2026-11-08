@@ -108,6 +108,42 @@ export default {
 
             return _.uniq(shopItems.concat(unlockedItems));
         },
+        // Shop items for the sheet's game, plus enabled cross-game items. Expects the
+        // component to hold itemRepository, scenarioRepository and buildingRepository.
+        shopItems(sheet) {
+            const game = sheet.game === 'fc' ? 'gh' : sheet.game;
+            const unlockedItems = this.unlockedItems(sheet.itemDesigns, game);
+            const prosperityIndex = sheet.effectiveProsperityIndex;
+
+            const sheetItems = {
+                jotl: () => this.calculateItemsJotl(unlockedItems, this.scenarioRepository),
+                fh: () => this.calculateItemsFh(unlockedItems, this.buildingRepository),
+                gh2: () => this.calculateItemsGh2(unlockedItems, prosperityIndex),
+            }[game]?.() ?? this.calculateItemsGh(unlockedItems, prosperityIndex);
+
+            let items = this.itemRepository.findMany(sheetItems);
+            if (!sheet.crossGameItemsEnabled) {
+                return items;
+            }
+
+            collect(sheet.crossGameItems).filter().keys().all().forEach(otherGame => {
+                let otherItems;
+                if (game === 'fh') {
+                    // FH picks single items per game.
+                    otherItems = this.itemRepository.findMany(this.unlockedItems(sheet.crossGameItems[otherGame], otherGame));
+                } else if (otherGame === game) {
+                    return;
+                } else if (otherGame === 'gh' && game !== 'jotl') {
+                    otherItems = this.itemRepository.findMany(this.calculateItemsGh([], prosperityIndex));
+                } else {
+                    // Games without prosperity add all their items.
+                    otherItems = this.itemRepository.fromGame(otherGame);
+                }
+                items = collect({...items.all(), ...otherItems.all()});
+            });
+
+            return items;
+        },
         prependGame(game, items) {
             return items.map(id => game + '-' + id);
         },

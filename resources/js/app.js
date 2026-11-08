@@ -19,7 +19,6 @@ import ItemRepository from "./repositories/ItemRepository";
 import BuildingRepository from "./repositories/BuildingRepository";
 import OverlayRepository from "./repositories/OverlayRepository";
 import * as Sentry from "@sentry/vue";
-import {Integrations} from "@sentry/tracing";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
 import migrateVersion2Progress from "./services/app/migrateVersion2Progress";
 import isWebpSupported from "./services/app/isWebpSupported";
@@ -329,8 +328,6 @@ if (Helpers.inProduction() && import.meta.env.MIX_SENTRY_DSN) {
     Sentry.init({
         app: vueApp,
         dsn: import.meta.env.MIX_SENTRY_DSN,
-        integrations: [new Integrations.BrowserTracing()],
-        tracesSampleRate: 0,
         logErrors: false
     });
 }

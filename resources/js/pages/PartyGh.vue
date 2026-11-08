@@ -140,7 +140,7 @@
                                     </label>
                                     <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
                                         <span class="material-icons mr-1">remove</span>
-                                        <component v-bind:is="renderHtml(unlock.reward)"></component>
+                                        <component :is="rewardComponents[index]"></component>
                                     </span>
                                 </td>
                             </tr>
@@ -186,6 +186,7 @@ import SheetCalculations from "../services/SheetCalculations";
 import DrawsEventCards from "../mixins/DrawsEventCards";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import GameData from "../services/GameData";
 
 export default {
     mixins: [GetCampaignName, SheetCalculations, DrawsEventCards],
@@ -194,17 +195,6 @@ export default {
         return {
             sheet: null,
             prosperity: 1,
-            prosperityItems: [
-                '001–014',
-                '015–021',
-                '022–028',
-                '029–035',
-                '036–042',
-                '043–049',
-                '050–056',
-                '057–063',
-                '064–070'
-            ],
             unlocks: [
                 {
                     goal: this.$t('5 Ancient Technology Global Achievements'),
@@ -258,6 +248,18 @@ export default {
         this.$bus.$off('campaigns-changed', this.render);
         this.$bus.$off('remove-card', this.removeCard);
     },
+    computed: {
+        // Cached so the rewards (HTML with components) don't remount on every render.
+        rewardComponents() {
+            return this.unlocks.map(unlock => ({template: `<span>${unlock.reward}</span>`}));
+        },
+        // '001–014' per prosperity level.
+        prosperityItems() {
+            const pad = number => String(number).padStart(3, '0');
+            const {lastItems} = new GameData().prosperity(this.sheet.game);
+            return lastItems.map((last, level) => pad((lastItems[level - 1] ?? 0) + 1) + '–' + pad(last));
+        }
+    },
     methods: {
         async render() {
             this.loading = true;
@@ -269,12 +271,7 @@ export default {
 
             await this.$nextTick();
 
-            this.$refs['reputation']?.reset();
-            this.$refs['donations']?.reset();
-            this.$refs['prosperity']?.reset();
-            this.$refs['city-events']?.reset();
-            this.$refs['road-events']?.reset();
-            this.$refs['rift-events']?.reset();
+            Object.values(this.$refs).forEach(ref => ref?.reset?.());
 
             this.loading = false;
         },
@@ -293,11 +290,6 @@ export default {
         removeCard(card) {
             this.sheet[card.folder][card.id] = false;
             this.store();
-        },
-        renderHtml(html) {
-            return {
-                template: `<span>${html}</span>`
-            };
         },
         async xResultChanged(xResult) {
             this.sheet.xResult = xResult;

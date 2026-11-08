@@ -4,9 +4,11 @@ import Character from "./Character";
 import Helpers from "../services/Helpers";
 import CharacterRepository from "../repositories/CharacterRepository";
 import Versionable from "./Versionable";
+import DrawsEvents from "./DrawsEvents";
 import GameData from "../services/GameData";
 import DeckFiller from "../services/DeckFiller";
 import SheetCalculations from "../services/SheetCalculations";
+import AchievementRepository from "../repositories/AchievementRepository";
 
 class Sheet {
 
@@ -207,6 +209,41 @@ class Sheet {
             const [deck, number] = this.eventKey(event);
             this[deck][number] = true;
         });
+    }
+
+    // GH2: faction reputation thresholds add events and gain reputation achievements; returns the gained achievement ids.
+    applyFactionReputation() {
+        const sections = this.gameData.sectionsGh2();
+
+        // C-57 joins the city deck the first time any faction reaches 13 (errata).
+        const {unlock, reputation, events} = sections.anyFactionReputation;
+        if (!this.unlocks[unlock] && Object.values(this.factionReputation).some(value => value >= reputation)) {
+            this.unlocks[unlock] = true;
+            this.addEvents(events);
+        }
+
+        sections.reputation9Events.forEach(([faction, unlock, events]) => {
+            if (!this.unlocks[unlock] && this.factionReputation[faction] >= 9) {
+                this.unlocks[unlock] = true;
+                this.addEvents(events);
+            }
+        });
+
+        // Gain only: once the section is read, losing reputation doesn't re-lock its scenarios.
+        const achievementRepository = new AchievementRepository();
+        const reached = sections.reputationAchievements.filter(([faction, value, id]) => !achievementRepository.find(id)?.awarded
+            && Object.entries(this.factionReputation).some(([f, v]) => (!faction || f === faction) && v >= value));
+        reached.forEach(([, , id]) => achievementRepository.gain(id));
+
+        return reached.map(([, , id]) => id);
+    }
+
+    // GH2: adds the events of each prosperity box crossed since `fromIndex`. Only when crossing the box:
+    // the sections have no sheet checkbox to remember they were read.
+    addProsperityEvents(fromIndex) {
+        Object.entries(this.gameData.sectionsGh2().prosperityEvents)
+            .filter(([box]) => fromIndex < box && this.effectiveProsperityIndex >= box)
+            .forEach(([, events]) => this.addEvents(events));
     }
 
     // Bonus events are only on the sheet while their pack is enabled, so this tells whether their content is in play.
@@ -462,5 +499,6 @@ Object.assign(Sheet.prototype, {
 });
 
 Object.assign(Sheet.prototype, Versionable);
+Object.assign(Sheet.prototype, DrawsEvents);
 
 export default Sheet;

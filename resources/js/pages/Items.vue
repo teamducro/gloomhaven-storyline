@@ -271,58 +271,7 @@ export default {
             this.field = new MDCTextField(this.$refs['search-field']);
         },
         refreshItems() {
-            let sheetItems;
-
-            // Get all manual unlocked items from the sheet, prefixed with the current game.
-            const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
-
-            // Add auto unlocked items, based on prosperity level or completed scenarios.
-            if (this.currentGame === 'jotl') {
-                sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
-            }
-            else if (this.currentGame === 'fh') {
-                sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
-            }
-            else if (this.currentGame === Game.gh2) {
-                sheetItems = this.calculateItemsGh2(unlockedItems, this.sheet.effectiveProsperityIndex);
-            }
-            else {
-                sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.effectiveProsperityIndex);
-            }
-
-            // Find items from base game.
-            let items = this.itemRepository.findMany(sheetItems);
-
-            // Add items from other games, if enabled.
-            if (this.sheet.crossGameItemsEnabled) {
-                const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
-                let otherGameHandler;
-
-                if (this.currentGame === Game.fh) {
-                    otherGameHandler = (game => {
-                        const otherGameItems = collect(this.sheet.crossGameItems[game]).filter().keys().all();
-                        const otherItems = this.prependGame(game, otherGameItems);
-                        items = collect({...items.all(), ...this.itemRepository.findMany(otherItems).all()})
-                    });
-                }
-                else {
-                    otherGameHandler = (game => {
-                        if (game !== this.currentGame) {
-                            if (game === 'gh' && this.currentGame !== 'jotl') {
-                                const ghItems = this.calculateItemsGh([], this.sheet.effectiveProsperityIndex);
-                                items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
-                            } else {
-                                // Add all items for games without prosperity.
-                                items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
-                            }
-                        }
-                    });
-                }
-
-                otherGames.forEach(otherGameHandler);
-            }
-
-            this.items = items
+            this.items = this.shopItems(this.sheet);
         },
         changeItem(id, isChecked) {
             const key = id.replace('item-', '');
