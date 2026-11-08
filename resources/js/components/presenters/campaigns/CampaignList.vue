@@ -136,7 +136,7 @@ export default {
                 ? this.$t('local')
                 : this.storyRepository.find(campaignId).name;
 
-            this.$bus.$emit('toast', `"${name}" selected!`);
+            this.$bus.$emit('toast', `"${_.escape(name)}" selected!`);
         },
         isSelected(story) {
             return story.campaignId === this.campaignId;

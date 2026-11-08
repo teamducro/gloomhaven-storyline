@@ -55,7 +55,7 @@ export default class StoryRepository extends ApiRepository {
                 }
                 this.storeStory(storyResponse);
 
-                // Toast has a single slot, so report all conflicts at once. Escape: Toast compiles the message as a template.
+                // Toast has a single slot, so report all conflicts at once. Escape: Toast renders the message as HTML.
                 const conflicts = [...new Set((storyResponse.conflicted_keys || []).map(key => _.escape(this.describeConflictedKey(key))))];
                 if (conflicts.length) {
                     window.app.$bus.$emit('toast', window.app.$t('sync-conflict', {resources: conflicts.join(', ')}), false);

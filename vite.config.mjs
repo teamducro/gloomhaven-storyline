@@ -82,8 +82,9 @@ function postBuild(bundle, mainGame, inProduction) {
         name: 'post-build',
         apply: 'build',
         async buildStart() {
-            // Hashed chunks would pile up otherwise; the app build runs first, so it cleans for both.
-            if (bundle === 'app' && !this.meta.watchMode) {
+            // Hashed chunks would pile up otherwise; the app build runs first, so it cleans for both. Production keeps
+            // them: open tabs and clients on the previous service worker still load the previous build's chunks.
+            if (bundle === 'app' && !this.meta.watchMode && !inProduction) {
                 for (const dir of ['public/js', 'public/css', 'public/assets']) {
                     await fs.promises.rm(dir, {recursive: true, force: true});
                 }
@@ -105,12 +106,14 @@ function postBuild(bundle, mainGame, inProduction) {
                 }
 
                 await replace('public/sitemap.xml', /release-date/g, dayjs().format('YYYY-MM-DD'));
-                await replace('public/service-worker.js', /cache-version/g, md5(`public/${entryFile}`));
                 await replace('public/service-worker.js', /'build-files',/, buildFiles.map(file => `'${file}',`).join('\n    '));
             }
 
             await replaceInHtml(new RegExp(`/js/${bundle}(-[\\w-]+)?\\.js`, 'g'), `/${entryFile}`);
             await versionFile(`public/css/${bundle}.css`, inProduction);
+            // Both pages reference their hashed entry and versioned css, so any change to either build renews the cache.
+            // The website build runs last; the app build sets it too for watch mode.
+            await replace('public/service-worker.js', /cache-v-[^']*/, 'cache-v-' + md5(...htmlFiles));
         },
     };
 }
@@ -123,8 +126,10 @@ async function versionFile(path, applyVersion) {
     await replaceInHtml(pattern, to);
 }
 
+const htmlFiles = ['public/index.html', 'public/tracker/index.html'];
+
 async function replaceInHtml(from, to) {
-    for (const html of ['public/index.html', 'public/tracker/index.html']) {
+    for (const html of htmlFiles) {
         await replace(html, from, to);
     }
 }
@@ -136,8 +141,10 @@ async function isChanged(src, dest) {
     return from.isDirectory() || !to || from.size !== to.size || from.mtimeMs !== to.mtimeMs;
 }
 
-function md5(path) {
-    return crypto.createHash('md5').update(fs.readFileSync(path)).digest('hex');
+function md5(...paths) {
+    const hash = crypto.createHash('md5');
+    paths.forEach(path => hash.update(fs.readFileSync(path)));
+    return hash.digest('hex');
 }
 
 async function replace(file, from, to) {

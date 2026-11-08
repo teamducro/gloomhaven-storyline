@@ -22,6 +22,7 @@ import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
 import migrateVersion2Progress from "./services/app/migrateVersion2Progress";
+import migrateLeadDoorTreasure from "./services/app/migrateLeadDoorTreasure";
 import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
@@ -40,6 +41,7 @@ import GameData from "./services/GameData";
 import SheetRepository from "./repositories/SheetRepository";
 import enableGame from "./services/app/enableGame";
 import registerServiceWorker from "./services/app/RegisterServiceWorker";
+import reloadForNewBuild from "./services/app/reloadForNewBuild";
 import routes from './routes';
 import bus from './services/EventBus';
 import createLegacyI18n from './services/createLegacyI18n';
@@ -50,6 +52,15 @@ import '../sass/app.scss';
 gsap.registerPlugin(Flip);
 
 const router = createRouter({history: createWebHashHistory(), routes});
+
+window.addEventListener('vite:preloadError', (event) => reloadForNewBuild() && event.preventDefault());
+// Chrome, Firefox and Safari messages for a lazy route chunk that failed to load.
+router.onError((error) => {
+    if (/dynamically imported module|Importing a module script failed/.test(error?.message)) {
+        reloadForNewBuild();
+    }
+    console.error(error);
+});
 
 // Router 4 ignores URL changes until its first navigation is done, then overwrites them; follow one made while booting.
 const bootHash = location.hash;
@@ -247,6 +258,7 @@ const vueApp = createApp({
 
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
+            this.campaignData = migrateLeadDoorTreasure(this.campaignData);
             // Crossover defaults depend on the campaign (MP classes in use)
             this.enabledGames = getEnabledGames();
             this.game = this.storedGame();
