@@ -13,6 +13,7 @@
         <item-modal/>
         <event-card/>
         <default-card-modal/>
+        <monster-modal/>
         <character-mat-modal/>
         <edit-campaign/>
         <ability-modal/>

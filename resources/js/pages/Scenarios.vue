@@ -11,7 +11,7 @@
                     </button>
                 </template>
 
-                <ul class="mdc-deprecated-list overflow-y-auto" style="max-height: calc(100vh - 100px)"
+                <ul class="mdc-deprecated-list overflow-y-auto min-w-80" style="max-height: calc(100vh - 100px)"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
                     <li class="mdc-deprecated-list-item cursor-pointer" @click="resetFilter(true)">
                         <span class="mdc-deprecated-list-item__ripple"></span>
@@ -55,7 +55,7 @@
                     <template v-if="monsters.length">
                         <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
-                        <li class="px-4 [&_.dropdown]:static">
+                        <li class="px-4 [&_.dropdown]:static [&_.dropdown]:mt-2">
                             <autocomplete :label="$t('Monster')"
                                           width="w-full"
                                           id="monster-filter"
@@ -63,10 +63,14 @@
                                           :disabled="monsterFilter"
                                           :auto-disable="false"
                                           :filter-closure="monsterFilterClosure"
-                                          :auto-close="true"
-                                          @change="addMonsterFilter">
+                                          :deselectable="true"
+                                          @change="addMonsterFilter"
+                                          @remove="removeMonsterFilter">
                                 <template v-for="monster in monsters" v-slot:[monster]>
-                                    {{ $t('monsters.' + monster) }}
+                                    <span class="flex items-center gap-3">
+                                        <monster-icon :game="appData.game" :monster="monster"/>
+                                        {{ $t('monsters.' + monster) }}
+                                    </span>
                                 </template>
                             </autocomplete>
                         </li>
@@ -75,7 +79,10 @@
                             class="mdc-deprecated-list-item mdc-deprecated-list-item--activated cursor-pointer"
                             @click="removeMonsterFilter(monster)">
                             <span class="mdc-deprecated-list-item__ripple"></span>
-                            <span class="mdc-deprecated-list-item__text">{{ $t('monsters.' + monster) }}</span>
+                            <span class="mdc-deprecated-list-item__text flex items-center gap-3">
+                                <monster-icon :game="appData.game" :monster="monster"/>
+                                {{ $t('monsters.' + monster) }}
+                            </span>
                         </li>
                     </template>
                 </ul>
