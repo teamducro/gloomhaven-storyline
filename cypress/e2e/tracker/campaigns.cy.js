@@ -174,6 +174,21 @@ describe('Campaigns', () => {
             cy.contains('li', 'Gone').should('not.exist');
         });
 
+        it('It does not offer to keep a deleted shared campaign without progress', () => {
+            // Given a shared campaign that was never played on this device
+            const shared = {...ownedStory, id: 8, name: 'Gone', is_shared: true, token: 'shared-token'};
+            cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'No query results for model [App\\Models\\Story] 8'}});
+            cy.visit('/');
+            cy.window().then(win => win.localStorage.setItem('_8', JSON.stringify({})));
+
+            // When its owner deleted it
+            visitWithStories({isPatron: false, stories: [shared]});
+
+            // Then only the toast shows
+            cy.get('.toast').contains('"Gone" was deleted by its owner');
+            cy.get('.mdc-dialog--open').should('not.exist');
+        });
+
         it('It shows a campaign name in a toast as plain text', () => {
             const shared = {...ownedStory, id: 8, name: '{{ 7 * 191 }} <b>Bold</b>', is_shared: true, token: 'shared-token'};
             cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'No query results for model [App\\Models\\Story] 8'}});
