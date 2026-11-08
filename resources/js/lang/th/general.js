@@ -179,7 +179,7 @@ export default {
     "ghs-export": {
         "1": "โหลดกลุ่มของคุณล่วงหน้าในตัวช่วยการต่อสู้ Gloomhaven Secretariat:",
         "2": "ดาวน์โหลดไฟล์ด้านล่าง",
-        "3": "เปิด Gloomhaven Secretariat แล้วเลือก Menu > Data Management > Import File ยืนยันด้วยการคลิกอีกครั้ง",
+        "3": "เปิด Gloomhaven Secretariat แล้วเลือก Menu > Data Management > Import File",
         "4": "เลือกไฟล์ ตัวละครของคุณ (คลาส เลเวล และชื่อ) และสถานการณ์จะถูกโหลด ซึ่งจะแทนที่เกมปัจจุบันใน Gloomhaven Secretariat หากต้องการเพิ่มมอนสเตอร์ ให้เปิดสถานการณ์ที่ด้านล่างของ Gloomhaven Secretariat แล้วเลือก “Restart Scenario”",
         "button": "Gloomhaven Secretariat",
         "title": "ส่งออกไปยัง Gloomhaven Secretariat"

@@ -179,7 +179,7 @@ export default {
     "ghs-export": {
         "1": "Wczytaj swoją drużynę do pomocnika walki Gloomhaven Secretariat:",
         "2": "Pobierz poniższy plik.",
-        "3": "Otwórz Gloomhaven Secretariat i wybierz Menu > Data Management > Import File. Potwierdź drugim kliknięciem.",
+        "3": "Otwórz Gloomhaven Secretariat i wybierz Menu > Data Management > Import File.",
         "4": "Wybierz plik. Twoje postacie (klasa, poziom i imię) oraz scenariusz zostaną wczytane. Zastąpi to bieżącą grę w Gloomhaven Secretariat. Aby dodać potwory, otwórz scenariusz na dole Gloomhaven Secretariat i wybierz „Restart Scenario”.",
         "button": "Gloomhaven Secretariat",
         "title": "Eksport do Gloomhaven Secretariat"

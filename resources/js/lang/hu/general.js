@@ -179,7 +179,7 @@ export default {
     "ghs-export": {
         "1": "Töltsd be a csapatodat a Gloomhaven Secretariat harci segédbe:",
         "2": "Töltsd le az alábbi fájlt.",
-        "3": "Nyisd meg a Gloomhaven Secretariatot, és válaszd a Menu > Data Management > Import File menüpontot. Erősítsd meg egy második kattintással.",
+        "3": "Nyisd meg a Gloomhaven Secretariatot, és válaszd a Menu > Data Management > Import File menüpontot.",
         "4": "Válaszd ki a fájlt. Betöltődnek a karaktereid (kaszt, szint és név) és a küldetés. Ez lecseréli az aktuális játékot a Gloomhaven Secretariatban. A szörnyek hozzáadásához nyisd meg a küldetést a Gloomhaven Secretariat alján, és válaszd a „Restart Scenario” lehetőséget.",
         "button": "Gloomhaven Secretariat",
         "title": "Exportálás a Gloomhaven Secretariatba"

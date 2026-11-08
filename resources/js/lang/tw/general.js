@@ -179,7 +179,7 @@ export default {
     "ghs-export": {
         "1": "將你的隊伍預先載入戰鬥輔助工具 Gloomhaven Secretariat：",
         "2": "下載下方的檔案。",
-        "3": "開啟 Gloomhaven Secretariat，選擇 Menu > Data Management > Import File。再點擊一次確認。",
+        "3": "開啟 Gloomhaven Secretariat，選擇 Menu > Data Management > Import File。",
         "4": "選擇該檔案。你的角色（職業、等級與名稱）和劇本會被載入。這會取代 Gloomhaven Secretariat 中目前的遊戲。若要加入怪物，請在 Gloomhaven Secretariat 底部開啟劇本並選擇「Restart Scenario」。",
         "button": "Gloomhaven Secretariat",
         "title": "匯出到 Gloomhaven Secretariat"
