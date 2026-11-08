@@ -19,8 +19,11 @@ import i18nEn from "./lang/en/en";
 import bus from './services/EventBus';
 import createLegacyI18n from './services/createLegacyI18n';
 import registerGlobals from './services/app/registerGlobals';
+import reloadForNewBuild from "./services/app/reloadForNewBuild";
 import '../sass/website-theme.scss';
 import '../sass/website.scss';
+
+window.addEventListener('vite:preloadError', (event) => reloadForNewBuild() && event.preventDefault());
 
 // Router
 const router = createRouter({
