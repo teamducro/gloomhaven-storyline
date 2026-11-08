@@ -179,7 +179,8 @@ export default class StoryRepository extends ApiRepository {
         this.remove(story);
         const campaignId = window.app.campaignId === story.campaignId ? 'local' : window.app.campaignId;
         await window.app.switchCampaign(campaignId);
-        if (!data) {
+        // A shared campaign that was never played here is stored as {}, keeping it would wipe the local campaign.
+        if (_.isEmpty(data)) {
             // Switching toasts as well, so toast afterwards to keep this message visible.
             window.app.$bus.$emit('toast', window.app.$t('campaign-deleted', {name: _.escape(story.name)}), false);
             return;
