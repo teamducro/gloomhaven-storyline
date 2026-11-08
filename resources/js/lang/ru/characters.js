@@ -527,7 +527,7 @@ export default {
             "Поменяйте 1 карту {+1_WHITE} на 1 карту {+0_WHITE} {WOUND_2}",
             "Добавьте 4 карты {AGAIN} {+0_WHITE} “{+1_WHITE} if the target occupy difficult terrain”",
             "Добавьте 2 карты {AGAIN} “{INVISIBLE} (на себя), if you occupy difficult terrain”",
-            "Gain “Poison Dagger” (Item 011). You may carry 1 Добавьтеitional {1-Hи} item на “Dagger” in its name.",
+            "Gain “Poison Dagger” (Item gh-11). You may carry 1 Добавьтеitional {1-Hи} item на “Dagger” in its name.",
             "Ignore damage, и negative conditions и modifiers from Events, и Уберите 1 карту {-1_WHITE}",
             "Игнорирйте отрицательные эффекты сценариев и Уберите 1 карту {-1_WHITE}"
         ]

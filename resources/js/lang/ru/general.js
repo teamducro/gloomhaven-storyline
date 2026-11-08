@@ -174,6 +174,15 @@ export default {
         "3": "или поделитесь ей при помощи одной из следующих платформ.",
         "title": "Поделиться Gloomhaven Storyline Tracker"
     },
+    "ghs-export": {
+        "button": "Gloomhaven Secretariat",
+        "title": "Export to Gloomhaven Secretariat",
+        "1": "Preload your party in the combat helper Gloomhaven Secretariat:",
+        "2": "Download the file below.",
+        "3": "Open Gloomhaven Secretariat and choose Menu > Data Management > Import File. Confirm with a second click.",
+        "4": "Select the file. Your characters (class, level and name) and the scenario are loaded. This replaces the current game in Gloomhaven Secretariat. To add the monsters, open the scenario at the bottom of Gloomhaven Secretariat and choose Restart Scenario."
+    },
+    "Download": "Download",
     "share-campaign-code": {
         "1": "Поделитесь кодом кампании с членами вашего отряда, чтобы включить синхронизацию прогресса на всех ваших устройствах!",
         "2": "Доступно до",
@@ -319,6 +328,10 @@ export default {
             "read-only": "Transfer campaign data is not available in read only mode."
         }
     },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window."
+    },
     "games-enabled": {
         "title": "Enabled Games",
         "text": "To hide games and its characters enable only ones you own. Progress is kept when switching."
@@ -370,6 +383,9 @@ export default {
     "mp": "Mercenary Pack",
     "gh2": "Gloomhaven 2nd Edition",
     "Availability": "Доступность",
+    "Sacrifice": "Sacrifice",
+    "Removed from game": "Removed from game",
+    "Restore": "Restore",
     "Sticker": "Наклейка",
     "State": "State",
     "Name": "Name",
@@ -431,7 +447,6 @@ export default {
     "and": "and",
     "Hidden Scenario": "Скрытый сценарий",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
-    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "Level up when youre back in town": "Повысьте уровень, когда вернетесь в город!",
     "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
     "Attack Modifier Deck": "Attack Modifier Deck",

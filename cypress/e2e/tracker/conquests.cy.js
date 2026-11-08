@@ -86,6 +86,14 @@ describe('ConQuests personal quests', () => {
         utilities.scrollTo('60%');
         cy.contains('ConQuests 02 Your Friends Are Concerned');
         cy.get('input[aria-labelledby="pq-0"]').should('have.value', '5');
+
+        // The rest of the campaign still loads, also after a reload
+        cy.reload();
+        cy.contains('ConQuests 02 Your Friends Are Concerned');
+        cy.visit('/tracker/#/party');
+        cy.contains('City Event Decks');
+        cy.visit('/tracker/#/scenarios');
+        cy.get('#scenarios').contains('#1 Black Barrow');
     });
 
     it('It does not draw a card another character holds', () => {

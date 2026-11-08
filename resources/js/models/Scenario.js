@@ -37,7 +37,8 @@ class Scenario {
         this.hasChoices = typeof data.choices !== 'undefined';
         this._state = ScenarioState.hidden;
         this.notes = "";
-        this.faq = [];
+        this._faq = collect(data.faq);
+        this._conclusionFaq = collect(data.conclusion_faq);
         this.links_to = collect(data.links_to);
         this.linked_from = collect(data.linked_from);
         this.coupled = data.coupled;
@@ -264,6 +265,14 @@ class Scenario {
         }
 
         return '';
+    }
+
+    get translatedFaq() {
+        return this._faq.isNotEmpty() ? this.$tPrefix('faq') : '';
+    }
+
+    get translatedConclusionFaq() {
+        return this._conclusionFaq.isNotEmpty() ? this.$tPrefix('conclusion_faq') : '';
     }
 
     get achievements_awarded() {

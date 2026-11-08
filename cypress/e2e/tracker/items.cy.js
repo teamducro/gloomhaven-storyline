@@ -73,6 +73,39 @@ describe('Items', () => {
         cy.get('.mdc-dialog').contains('Prosperity 1');
     });
 
+    it('It removes an item from the game and restores it', () => {
+        // Given a character owning Boots of Striding (2 in stock)
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+        cy.get('input[name="items"]').click();
+        cy.get('li').contains('Boots of Striding').click();
+        utilities.closeModel();
+
+        // When it is removed from the game
+        cy.visit('/tracker/#/items');
+        cy.get('#items tbody tr:first').click({scrollBehavior: 'center'});
+        cy.get('.mdc-dialog button.remove-from-game').click();
+
+        // Then one copy is gone for good
+        cy.get('.mdc-dialog').contains('Availability: 1 / 2');
+        cy.get('.mdc-dialog').contains('Removed from game: 1');
+        cy.get('.mdc-dialog button.remove-from-game').should('not.exist');
+        utilities.closeModel();
+        cy.get('#items tbody tr:first').contains('1 / 2');
+
+        // And it stays removed after a reload
+        cy.reload(true);
+        cy.get('#items tbody tr:first').contains('1 / 2');
+
+        // When it is restored
+        cy.get('#items tbody tr:first').click({scrollBehavior: 'center'});
+        cy.get('.mdc-dialog button.restore-item').click();
+
+        // Then both copies are in stock again
+        cy.get('.mdc-dialog').contains('Availability: 2 / 2');
+        cy.get('.mdc-dialog').contains('Removed from game').should('not.exist');
+    });
+
     it('It unlocks items from treasures', () => {
         cy.visit('/tracker?states=1_c-2_c-4_c');
 

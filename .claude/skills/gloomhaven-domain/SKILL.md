@@ -5,7 +5,7 @@ description: How the tracker models each Gloomhaven game in code. Load before to
 
 # Gloomhaven domain
 
-Terms: [`GLOSSARY.md`](../../../GLOSSARY.md); use them in prose and UI text, keep code names in code. Paths relative to `resources/js/` unless starting with `cypress/`, `plans/`, `docs/`, `resources/`.
+Terms: [`GLOSSARY.md`](../../../GLOSSARY.md); keep code names in code. Paths relative to `resources/js/` unless starting with `cypress/`, `resources/`, `plans/` or `docs/` (the last two are gitignored: main checkout only, not in worktrees).
 
 Read the reference for every game your change touches: [gh](references/gh.md) (+ FC), [gh2](references/gh2.md), [fh](references/fh.md), [jotl](references/jotl.md), [cs](references/cs.md), [mp](references/mp.md), [cq](references/cq.md).
 
@@ -27,9 +27,14 @@ Read the reference for every game your change touches: [gh](references/gh.md) (+
 | Story summary | `models/Quest.js`, `quests` in `games/{game}.json`, `QuestValidator` |
 | Personal quest | `models/PersonalQuest.js`, `character.quest` |
 | City rule | `AchievementGroup` `CR`, `CR2`; other exclusive groups `ART`, FH `CORE`/`JAR` |
-| Prosperity / checkmark | `SheetCalculations.calculateProsperity` / `sheet.prosperityIndex` |
+| Prosperity / checkmark | `SheetCalculations.calculateProsperity` / `sheet.effectiveProsperityIndex` (use this) = `prosperityIndex` (ticked by hand) + `donationChecks`; old campaigns migrate once (`Sheet.migrateDonationProsperity`) |
 | Retire / Abandon / Remove | Cloud: `CharacterRepository.archiveCharacter`; local: `retireCharacter` (events) / `abandonCharacter` (re-locks open quest scenarios); `removeCharacter` deletes |
-| Perk checkmark | `character.checks` |
+| Perk checkmark | `character.checks`; ✔ in reward text = perk: completed scenarios' `perk_reward` raise the allowed perks (`Characters.vue scenarioPerks`) |
+| Draw / return to deck | `sheet.deckOrder[type]` (top → bottom), `mixins/DrawsEventCards.js`: top card drawn, moved to the bottom; a newly checked card reshuffles the deck on the next draw |
+| Outcome / event history | `sheet.eventHistory` `[{card, choice, removed, date}]` (both sheet models), `EventHistory.vue`; reopening a card from history records nothing |
+| Sacrifice | `sheet.removedItems` (item id → count), subtracted in `ItemAvailability`; Sacrifice/Restore in `BuyItem.vue` |
+| Monster type | scenario `monsters` (slugs, names in `lang/*/monsters.js`), every game; filter on the Scenarios page |
+| FAQ | scenario `faq` / `conclusion_faq` (text in `lang/*/scenarios.js`), collapsible in the scenario modal |
 | Item design | `sheet.itemDesigns` |
 | FH vehicle, wall, town feature, world sticker | `models/Overlay.js` |
 | Brew | `AlchemySection.unlock()` |
@@ -37,28 +42,29 @@ Read the reference for every game your change touches: [gh](references/gh.md) (+
 ## Storage
 
 - One blob holds **every** game. Keys from each model's `key()`: `scenario-{game}-{id}`, `achievement-{id}` / `achievementgroup-{id}` (not game-scoped, hence GH2 `G2`/`P2` ids), `sheet` (gh **and** fc) / `sheet-{game}`, `campaign-fh`, `character-{uuid}`, `building-{game}-{id}`, `overlay-{game}-{id}`.
-- `Storable` (`fieldsToStore`; `delete()` writes null), `Versionable` for sync.
 - Current/enabled games are **device** settings (`store 'game'`, `'gamesEnabled'`); the Gloomhaven edition (gh or gh2) is per campaign (`sheet.edition`), survives a reset.
-- `StorySyncer` after each validation: bump changed model versions, PUT the whole blob if its hash changed; server returns per-key conflicts; newer `updated_at` wins on load; Echo channel `story.{id}`. Share links overwrite the local campaign; `Reseter` wipes all games.
+- `StorySyncer` runs after each validation; newer `updated_at` wins on load; Echo channel `story.{id}`. Share links overwrite the local campaign; `Reseter` wipes all games.
 
 ## Scenario unlocking
 
 Data: `scenarios` in `games/{game}.json` (GH+FC: `gh.json`). `ScenarioValidator` ≤5 passes, then `AchievementValidator`, `QuestValidator`, `StorySyncer.store()`.
 
 - `hidden` → visible: `root`, a complete `linked_from` parent (respecting `choice`), `treasures_to`, or `solo` class unlocked/in party. Visible `is_side` never re-hides.
-- `required_by`: OR of AND-groups `{complete, incomplete}`; ints = scenarios, strings = achievements or tokens `rope boat sled calendar puzzle`; `hidden`/`hidden_when` display-only. Unmet → `required`, met → `incomplete`.
+- `required_by`: OR of AND-groups `{complete, incomplete}`; ints = scenarios, strings = achievements or tokens `rope boat sled calendar puzzle`; `hidden`/`hidden_when` display-only. Unmet → `required`, met → `incomplete`. An `incomplete` achievement that is gained makes the scenario `required`, not `blocked`, because it can be lost again; the achievement modal still labels these "Blocks" (`ScenarioRepository.requiredBy(a, types)`).
+- `requires_event: "C-SoX1"` keeps a scenario or manual achievement out of view until that event is on the sheet (`Sheet.hasEvent`).
+- Requirement text: `lang scenarios.{game}-{id}.requirements` when it exists, else the raw `requirements`.
 - `blocks_on`: OR of `{complete, incomplete, lost}` → `blocked`.
-- Completing applies `achievements_awarded`, `achievements_lost`, `achievements_awarded_by_choice[promptChoice-1]`, "(Item N)" in rewards → `itemDesigns`, FH overlays. Other reward text is display-only. Undo reverts achievements, not item designs.
+- Completing applies `achievements_awarded`, `achievements_lost`, `achievements_awarded_by_choice[promptChoice-1]`, "(Item N)" in rewards → `itemDesigns` ("(Item gh-N)" targets another game's item, e.g. CS → GH), FH overlays. Other reward text is display-only. Undo reverts achievements, not item designs.
 - Conclusion decisions: per prompt name in `ChoiceService` (GH/FC/FH/CS); GH2 data-driven `prompt_unlocks`.
 - `ScenarioCompletedService`: FC 106/107→112, 110–113→114; off for fh, gh2.
 
 ## Achievements
 
-`achievements`: `gh.json` = gh, fc; `cs.json` holds the `PCS*` ones (GameData serves gh+cs together for gh, fc, cs, mp); own in gh2, fh; jotl none. Types `Global`, `Party`, `Campaign` (FH). `upgrades` + `count` = stacking stickers. `is_manual` added on the Achievements page, may reveal a side scenario. Group gain replaces the current; default city rule (`GCRM`, `G2AUP`) auto-gained. `GTPE`/`G2TPE` enable enhancements.
+`achievements`: `gh.json` = gh, fc; `cs.json` holds the `PCS*` ones (GameData serves gh+cs together for gh, fc, cs, mp); own in gh2, fh; jotl none. Types `Global`, `Party`, `Campaign` (FH). `upgrades` + `count` = stacking stickers. `is_manual` added on the Achievements page, may reveal a side scenario (and is gained/lost with it) unless `unlocks_side_scenario: false` (FH `CITF`). Group gain replaces the current; default city rule (`GCRM`, `G2AUP`) auto-gained. `GTPE`/`G2TPE` enable enhancements.
 
 ## Rules per game
 
-`services/SheetCalculations.js` holds the rules; the numbers live per game in `resources/js/games/{game}.json`, read via `services/GameData.js` getters (`decks`, `prosperity`, `shop`, `campaignRule`, `enhancementCosts`, `classEvents`, `startingClasses`, `sectionsGh2`):
+`services/SheetCalculations.js` holds the rules; the numbers live per game in `resources/js/games/{game}.json`:
 - `decks`: event deck sizes, item design ranges, sheet unlock counts, FH boat (filled by `DeckFiller`).
 - `prosperity`: thresholds, last item per level. `shop`: FH/JotL shop items, GH items in FH.
 - `rules`: reputation prices, donations (GH2 Great Oak), FH morale → defense and calendar sections, difficulty tables, default city rule, enhancement-unlocking achievements.
@@ -69,16 +75,16 @@ Add new rules to the game's file. Games without own values copy GH's (jotl, cs p
 
 - `characters` (own classes per file; `characterOrder`; `GameData.characters()` merges all): `perks[].cards` → attack modifier deck; `masteries`. Starters derive from `starting_group` (`GameData.startingClasses`: groups other than `_locked`/`_addon`; FC adds the GH starters); GH2 personal quests flag `starting` for the opening deck. `character.game` = class origin, `sheet_game` = campaign game.
 - `sheet.characterUnlocks`: Party page, personal quest (`PersonalQuestValidator`), Envelope X (`xResult`).
+- A ticked personal quest goal unlocks its scenario; unticking never hides it again. Only abandoning does (`PersonalQuestValidator.lockScenarios`), and completed scenarios stay.
 - Class events: `Sheet.addClassEvents(id, 'unlock'|'retire')` on unlock (Party checkbox, personal quest, adding a locked class, CS starting class) and retirement (`CharacterRepository.applyRetirement`); each once per class (`sheet.classEventsAdded`). Lists per class in `classEvents` (GH/FC/CS: unlock/retire, City + Road; GH2: unlock only; FH none).
 - Item id `{game}-{number}` (fc → gh); `app.items` merges enabled games; shop = `calculateItems*` + `itemDesigns` + cross-game; `ItemAvailability` = stock − owned.
 - `sheet.enhancements[classId][abilityCode]` (survives retirement); costs in `enhancements`, rules in `AbilityEnhancements.js`.
 
 ## Pages
 
-`routes.js`, menu `Drawer.vue`: `/story` (`resources/svg/storylines/{game}.svg`), `/map` (not cs), `/scenarios`, `/achievements`, `/party` → `PartyGh` (gh, fc) / `PartyGh2` / `PartyFh` / `PartyJotl` / `PartyCs`, `/characters`, `/items`, `/buildings` (fh), `/campaigns`, `/settings`, `/info`. `pages/sections/` = marketing site.
+`/story` draws `resources/svg/storylines/{game}.svg`; `/map` is hidden when the game has no map images (cs); `/party` → `PartyGh` (gh, fc) / `PartyGh2` / `PartyFh` / `PartyJotl` / `PartyCs`; `/buildings` is fh only. `pages/sections/` = marketing site.
 
 ## Game data
 
 - Text in `lang/{locale}/*.js` by game-prefixed id; JSON holds structure.
 - GH2 data is generated by scripts outside the repo: change the generator and regenerate rather than editing the output.
-- Specs in `cypress/e2e/tracker/` (`gh2-*` for GH2).

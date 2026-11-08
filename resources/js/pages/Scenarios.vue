@@ -249,7 +249,7 @@ export default {
             }
 
             // Bonus content stays out of campaigns that don't play it.
-            if (scenario.requires_event && scenario.isHidden() && !this.sheet.hasEvent(scenario.requires_event)) {
+            if (scenario.requires_event && !this.sheet.hasEvent(scenario.requires_event)) {
                 return false;
             }
 

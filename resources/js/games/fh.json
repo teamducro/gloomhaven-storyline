@@ -4702,9 +4702,11 @@
                 57,
                 85
             ],
-            "links_to": [
-                103
-            ],
+            "treasures_to": {
+                "57": [
+                    103
+                ]
+            },
             "linked_from": [
                 101
             ],
@@ -4737,7 +4739,7 @@
             },
             "chapter_id": 111,
             "complexity": 2,
-            "linked_from": [
+            "treasures_from": [
                 102
             ],
             "rewards": [
@@ -9187,7 +9189,8 @@
             "name": "Into the Forest",
             "type": "Campaign",
             "game": "fh",
-            "is_manual": true
+            "is_manual": true,
+            "unlocks_side_scenario": false
         },
         {
             "id": "CFP",

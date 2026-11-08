@@ -2292,7 +2292,7 @@ export default {
         "rewards": [
             "+2 de reputação",
             "+1 de prosperidade",
-            "“Stun Powder” (Item 21)"
+            "“Stun Powder” (Item gh-21)"
         ]
     },
     "cs-7": {
@@ -2317,8 +2317,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "“Minor Mana Potion” (Item 12)",
-            "“Minor Healing Potion” (Item 20)"
+            "“Minor Healing Potion” (Item gh-12)",
+            "“Minor Mana Potion” (Item gh-20)"
         ]
     },
     "cs-11": {
@@ -2331,7 +2331,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 de prosperidade",
-            "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\nIf there are none of these available in the shop, gain 20 gold instead"
+            "Each character gains one of the following: “Major Stamina Potion” (Item gh-34), “Major Power Potion” (Item gh-41), “Major Mana Potion” (Item gh-48)\nIf there are none of these available in the shop, gain 20 gold instead"
         ]
     },
     "cs-14": {
@@ -2369,7 +2369,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "“Major Mana Potion” (Item 48)"
+            "“Major Mana Potion” (Item gh-48)"
         ]
     },
     "cs-20": {
@@ -2383,7 +2383,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "“Magma Waders” (Item 99)"
+            "“Magma Waders” (Item gh-99)"
         ]
     },
     "cs-22": {
@@ -2462,7 +2462,7 @@ export default {
         "name": "Siege Tower",
         "requirements": "Missão pessoal “Protect and Serve”",
         "rewards": [
-            "“Blazing Boots” (Item 87)",
+            "“Blazing Boots” (Item 90)",
             "+1 de reputação"
         ]
     },
@@ -2781,11 +2781,11 @@ export default {
         "rewards": [
             [
                 "40 moedas de ouro coletivas",
-                "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                "“Studded Leather” design (Item gh-30) OR “Boots of Dashing” design (Item gh-36)"
             ],
             [
                 "2 ✓ each",
-                "“Lucky Eye” design (Item 063)"
+                "“Lucky Eye” design (Item gh-63)"
             ]
         ]
     },

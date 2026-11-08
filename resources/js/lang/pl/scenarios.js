@@ -67,7 +67,10 @@ export default {
         "name": "Świątynia Proroctw"
     },
     "gh-14": {
-        "name": "Lodowa Pieczara"
+        "name": "Lodowa Pieczara",
+        "conclusion_faq": [
+            "Numery lokalizacji w tekście historii to tylko przypomnienia. Same w sobie niczego nie odblokowują."
+        ]
     },
     "gh-15": {
         "name": "Kaplica Siły",
@@ -219,7 +222,10 @@ export default {
         ]
     },
     "gh-43": {
-        "name": "Gniazdo Drakona"
+        "name": "Gniazdo Drakona",
+        "conclusion_faq": [
+            "Numery lokalizacji w tekście historii to tylko przypomnienia. Same w sobie niczego nie odblokowują."
+        ]
     },
     "gh-44": {
         "name": "Plemienne Natarcie",
@@ -2292,7 +2298,7 @@ export default {
         "rewards": [
             "+2 do reputacji",
             "+1 do dobrobytu",
-            "„Stun Powder” (przedmiot 21)"
+            "„Stun Powder” (przedmiot gh-21)"
         ]
     },
     "cs-7": {
@@ -2317,8 +2323,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "„Minor Mana Potion” (przedmiot 12)",
-            "„Minor Healing Potion” (przedmiot 20)"
+            "„Minor Healing Potion” (przedmiot gh-12)",
+            "„Minor Mana Potion” (przedmiot gh-20)"
         ]
     },
     "cs-11": {
@@ -2331,7 +2337,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 do dobrobytu",
-            "Each character gains one of the following: „Major Stamina Potion” (przedmiot 34), „Major Power Potion” (przedmiot 41), „Major Mana Potion” (przedmiot 48)\nIf there are none of these available in the shop, gain 20 gold instead"
+            "Each character gains one of the following: „Major Stamina Potion” (przedmiot gh-34), „Major Power Potion” (przedmiot gh-41), „Major Mana Potion” (przedmiot gh-48)\nIf there are none of these available in the shop, gain 20 gold instead"
         ]
     },
     "cs-14": {
@@ -2369,7 +2375,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "„Major Mana Potion” (przedmiot 48)"
+            "„Major Mana Potion” (przedmiot gh-48)"
         ]
     },
     "cs-20": {
@@ -2383,7 +2389,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "„Magma Waders” (przedmiot 99)"
+            "„Magma Waders” (przedmiot gh-99)"
         ]
     },
     "cs-22": {
@@ -2462,7 +2468,7 @@ export default {
         "name": "Siege Tower",
         "requirements": "Cel życiowy „Protect and Serve”",
         "rewards": [
-            "„Blazing Boots” (przedmiot 87)",
+            "„Blazing Boots” (przedmiot 90)",
             "+1 do reputacji"
         ]
     },
@@ -2781,11 +2787,11 @@ export default {
         "rewards": [
             [
                 "40 szt. złota do podziału",
-                "„Studded Leather” design (przedmiot 030) OR „Boots of Dashing” design (przedmiot 036)"
+                "„Studded Leather” design (przedmiot gh-30) OR „Boots of Dashing” design (przedmiot gh-36)"
             ],
             [
                 "Po 2 ✔ dla każdego",
-                "„Lucky Eye” design (przedmiot 063)"
+                "„Lucky Eye” design (przedmiot gh-63)"
             ]
         ]
     },

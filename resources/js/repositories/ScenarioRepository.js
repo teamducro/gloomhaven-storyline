@@ -154,7 +154,9 @@ export default class ScenarioRepository {
     }
 
     isScenarioUnlockedByTreasure(scenario) {
-        return this.unlockedFromTreasureScenarios(scenario).count() > 0;
+        // Keep a completed scenario when its treasure is unchecked or was never checked.
+        return (scenario.treasures_from.isNotEmpty() && scenario.isComplete())
+            || this.unlockedFromTreasureScenarios(scenario).count() > 0;
     }
 
     processAchievements(scenario) {
@@ -220,6 +222,9 @@ export default class ScenarioRepository {
     }
 
     processItems(items, checked) {
+        // Game-prefixed ids ("gh-34") are items of another game, not designs of the current game.
+        items = items.filter(item => !isNaN(item) || !/^[a-z]+-/.test(item));
+
         if (!items.isEmpty()) {
             let sheet = this.sheetRepository.make(app.game);
             items.each(item => {
@@ -344,6 +349,10 @@ export default class ScenarioRepository {
     }
 
     getSideScenarioByManualAchievement(achievement) {
+        if (!achievement.unlocks_side_scenario) {
+            return undefined;
+        }
+
         return this.where((scenario) => {
             return scenario.is_side
                 && !scenario.required_by.isEmpty()

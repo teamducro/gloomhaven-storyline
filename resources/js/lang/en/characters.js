@@ -527,7 +527,7 @@ export default {
             "Replace one {+1_WHITE} card with one {+0_WHITE} {WOUND_2} card",
             "Add four {AGAIN} {+0_WHITE} “{+1_WHITE} if the target occupy difficult terrain” cards",
             "Add two {AGAIN} “{INVISIBLE}, Self, if you occupy difficult terrain” cards",
-            "Gain “Poison Dagger” (Item 011). You may carry one additional {ONE-HAND} item with “Dagger” in its name.",
+            "Gain “Poison Dagger” (Item gh-11). You may carry one additional {ONE-HAND} item with “Dagger” in its name.",
             "Ignore damage, and negative conditions and modifiers from Events, and remove one {-1_WHITE} card",
             "Ignore negative scenario effects and remove one {-1_WHITE} card"
         ]

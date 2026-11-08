@@ -3,6 +3,7 @@
         <scenario/>
         <achievement/>
         <share/>
+        <ghs-export/>
         <share-campaign-code/>
         <reset/>
         <donations/>

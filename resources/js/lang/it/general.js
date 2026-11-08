@@ -174,6 +174,15 @@ export default {
         "3": "O condividila su una di queste piattaforme",
         "title": "Condividi Gloomhaven Storyline Tracker"
     },
+    "ghs-export": {
+        "button": "Gloomhaven Secretariat",
+        "title": "Export to Gloomhaven Secretariat",
+        "1": "Preload your party in the combat helper Gloomhaven Secretariat:",
+        "2": "Download the file below.",
+        "3": "Open Gloomhaven Secretariat and choose Menu > Data Management > Import File. Confirm with a second click.",
+        "4": "Select the file. Your characters (class, level and name) and the scenario are loaded. This replaces the current game in Gloomhaven Secretariat. To add the monsters, open the scenario at the bottom of Gloomhaven Secretariat and choose Restart Scenario."
+    },
+    "Download": "Download",
     "share-campaign-code": {
         "1": "Condividi il codice campagna con i membri del tuo gruppo per abilitare la sincronizzazione dei progressi su tutti i tuoi dispositivi!",
         "2": "Valido fino a",
@@ -319,6 +328,10 @@ export default {
             "read-only": "Il trasferimento dei dati campagna non è disponibile in modalità sola lettura."
         }
     },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window."
+    },
     "games-enabled": {
         "title": "Giochi abilitati",
         "text": "Per nascondere i giochi e i suoi personaggi, abilita solo quelli che possiedi. Progress is kept when switching."
@@ -370,6 +383,9 @@ export default {
     "mp": "Mercenary Pack",
     "gh2": "Gloomhaven 2ª Edizione",
     "Availability": "Disponibilità",
+    "Sacrifice": "Sacrifice",
+    "Removed from game": "Removed from game",
+    "Restore": "Restore",
     "Sticker": "Adesivo",
     "State": "Stato",
     "Name": "Nome",
@@ -431,7 +447,6 @@ export default {
     "and": "e",
     "Hidden Scenario": "Scenario nascosto",
     "Add achievements gained by events other than completing scenarios manually": "Aggiungi manualmente traguardi ottenuti da eventi diversi dal completamento di scenari",
-    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "I numeri dei luoghi nel testo della storia sono solo promemoria. Essi da soli non sbloccano nulla.",
     "Level up when youre back in town": "Level up when you're back in town!",
     "Add {x} {-1} to your attack modifier deck.": "Aggiungi {x} {-1} al tuo mazzo modificatore di attacco.",
     "Attack Modifier Deck": "Attack Modifier Deck",

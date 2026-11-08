@@ -525,7 +525,7 @@ export default {
             "TODO:: Sustituye 1 carta {+1_WHITE} por 1 carta {+0_WHITE} {2_WOUND}",
             "TODO:: Añade 4 cartas {AGAIN} {+0_WHITE} {+1_WHITE} if the target occupy difficult terrain",
             "TODO:: Añade 2 cartas {AGAIN} {INVISIBLE}, Personal, if you occupy difficult terrain",
-            "TODO:: Obtén “Poison Dagger” (Item 011). You may carry one additional {ONE_HAND} item with “Dagger” in its name.",
+            "TODO:: Obtén “Poison Dagger” (Item gh-11). You may carry one additional {ONE_HAND} item with “Dagger” in its name.",
             "Ignora daño, efectos negativos y modificadores de los eventos, y retira 1 carta {-1_WHITE}",
             "Ignora los efectos negativos de los escenarios y retira 1 carta {-1_WHITE}"
         ]
