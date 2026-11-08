@@ -44,6 +44,23 @@ describe('Crimson Scales cross-game items', () => {
         cy.get('.mdc-dialog--open').contains('Nagy serkentő ital');
     });
 
+    [
+        ['ru', 'Пещера трупов', 'Большое зелье выносливости', '«» quotes'],
+        ['zh', '尸体洞窟', '强效耐力药水', 'full-width parentheses'],
+        ['th', 'ถ้ำศพ', 'ยาคงทนหลัก', 'combining marks in the item label'],
+    ].forEach(([lang, scenario, item, form]) => {
+        it(`It links items in ${lang} texts with ${form}`, () => {
+            cy.visit('/tracker?states=1_c-2_c-3_c-7_c-8_c-9_c-13_c', {
+                onBeforeLoad: (win) => win.localStorage.setItem('lang', `"${lang}"`)
+            });
+            openScenario(scenario);
+
+            cy.get('#scenario-content a').contains(item).click();
+
+            cy.get('.mdc-dialog--open').contains(item);
+        });
+    });
+
     it('It only unlocks the Crimson Scales item designs for rewards of the Crimson Scales item deck', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-7_c-8_i-10_i');
 

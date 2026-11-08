@@ -2431,7 +2431,7 @@ export default {
     "cs-4": {
         "name": "Guerreros infectados",
         "rewards": [
-            "Gain “Ballesta de babosas” (Item 84)"
+            "Cada personaje obtiene un objeto “Orbe” aleatorio (Objeto 1-10)"
         ]
     },
     "cs-5": {
@@ -2442,7 +2442,7 @@ export default {
         "rewards": [
             "+2 de reputación",
             "+1 de prosperidad",
-            "Gain “Polvo Aturdidor” (Item gh-21)"
+            "“Polvo Aturdidor” (Objeto gh-21)"
         ]
     },
     "cs-7": {
@@ -2454,21 +2454,21 @@ export default {
     "cs-8": {
         "name": "Fortaleza destrozada",
         "rewards": [
-            "Gain “Colgante curioso” (Item 20)"
+            "“Colgante curioso” (Objeto 20)"
         ]
     },
     "cs-9": {
         "name": "Misión de rescate",
         "rewards": [
             "10 de oro para cada personaje",
-            "Gain “Emisor de humo” (Item 62)"
+            "“Emisor de humo” (Objeto 62)"
         ]
     },
     "cs-10": {
         "name": "Guarida de monstruosidades",
         "rewards": [
-            "Gain “Poción Curativa Menor” (Item gh-12)",
-            "Gain “Poción de Maná Menor” (Item gh-20)"
+            "“Poción Curativa Menor” (Objeto gh-12)",
+            "“Poción de Maná Menor” (Objeto gh-20)"
         ]
     },
     "cs-11": {
@@ -2480,14 +2480,14 @@ export default {
     "cs-13": {
         "name": "Caverna de cadáveres",
         "rewards": [
-            "Gain “Bulkwark Banner” (Item 85)",
-            "+1 prosperity"
+            "+1 de prosperidad",
+            "Cada personaje obtiene uno de los siguientes: “Poción de Resistencia Mayor” (Objeto gh-34), “Poción de Poder Mayor” (Objeto gh-41), “Poción de Maná Mayor” (Objeto gh-48)\nSi no hay ninguno disponible en la tienda, obtén 20 de oro en su lugar"
         ]
     },
     "cs-14": {
         "name": "Cueva de sectarios",
         "rewards": [
-            "Gain “Escarabajo teledirigido” (Item 88)"
+            "15 XP para cada personaje"
         ]
     },
     "cs-15": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Experimentos elementales",
         "rewards": [
-            "Gain “Poción de Maná Mayor” (Item gh-48)"
+            "“Poción de Maná Mayor” (Objeto gh-48)"
         ]
     },
     "cs-20": {
@@ -2533,7 +2533,7 @@ export default {
     "cs-21": {
         "name": "Una muerte ardiente",
         "rewards": [
-            "Gain “Botas de Magma” (Item gh-99)"
+            "“Botas de Magma” (Objeto gh-99)"
         ]
     },
     "cs-22": {
@@ -2572,7 +2572,7 @@ export default {
         "name": "Caverna de la congelación",
         "rewards": [
             "10 de oro para cada personaje",
-            "Gain “Tintura vertiginosa” (Item 58)"
+            "“Tintura vertiginosa” (Objeto 58)"
         ]
     },
     "cs-28": {
@@ -2612,7 +2612,7 @@ export default {
         "name": "Torre de asedio",
         "requirements": "Misión personal “Protect and Serve”",
         "rewards": [
-            "Gain “Botas ardientes” (Item 90)",
+            "“Botas ardientes” (Objeto 90)",
             "+1 de reputación"
         ]
     },
@@ -2711,7 +2711,7 @@ export default {
     "cs-47": {
         "name": "Pantano de víboras",
         "rewards": [
-            "Gain “Veneno de víbora fantasma” (Item 55)",
+            "“Veneno de víbora fantasma” (Objeto 55)",
             "+1 de prosperidad",
             "10 de oro para cada personaje"
         ]
@@ -2746,13 +2746,13 @@ export default {
     "cs-52": {
         "name": "Pozo de los deseos",
         "rewards": [
-            "Gain “Escudo de escamas de draco” (Item 37)"
+            "“Escudo de escamas de draco” (Objeto 37)"
         ]
     },
     "cs-53": {
         "name": "Cueva de las corrientes",
         "rewards": [
-            "Gain “Esfera de corrientes” (Item 83)",
+            "“Esfera de corrientes” (Objeto 83)",
             "5 de oro para cada personaje"
         ]
     },
@@ -2774,13 +2774,13 @@ export default {
     "cs-56": {
         "name": "Desarmar la máquina",
         "rewards": [
-            "Gain “Cañón de cadena” (Item 45)"
+            "“Cañón de cadena” (Objeto 45)"
         ]
     },
     "cs-57": {
         "name": "Convertidor elemental",
         "rewards": [
-            "Gain “Tubo de ensayo” (Item 48)"
+            "“Tubo de ensayo” (Objeto 48)"
         ]
     },
     "cs-58": {
@@ -2792,49 +2792,49 @@ export default {
     "cs-59": {
         "name": "Invasores del bosque",
         "rewards": [
-            "Gain “Brazaletes de la naturaleza” (Item 47)"
+            "“Brazaletes de la naturaleza” (Objeto 47)"
         ]
     },
     "cs-60": {
         "name": "A través del fuego y las llamas",
         "rewards": [
-            "Gain “Armadura llameante” (Item 51)"
+            "“Armadura llameante” (Objeto 51)"
         ]
     },
     "cs-61": {
         "name": "Conservación arcaica",
         "rewards": [
-            "Gain “Túnica de alivio” (Item 42)"
+            "“Túnica de alivio” (Objeto 42)"
         ]
     },
     "cs-62": {
         "name": "Redención sagrada",
         "rewards": [
-            "Gain “Corazón del vacío purificado” (Item 57)"
+            "“Corazón del vacío purificado” (Objeto 57)"
         ]
     },
     "cs-63": {
         "name": "Una víbora acorralada",
         "rewards": [
-            "Gain “Mortero de campaña” (Item 53)"
+            "“Mortero de campaña” (Objeto 53)"
         ]
     },
     "cs-64": {
         "name": "Cristales resplandecientes",
         "rewards": [
-            "Gain “Caparazón luminoso” (Item 50)"
+            "“Caparazón luminoso” (Objeto 50)"
         ]
     },
     "cs-65": {
         "name": "Cristales resplandecientes",
         "rewards": [
-            "Gain “Libación espiritual” (Item 41)"
+            "“Libación espiritual” (Objeto 41)"
         ]
     },
     "cs-66": {
         "name": "Extraños de otro mundo",
         "rewards": [
-            "Gain “Botas de cuero lunar” (Item 40)"
+            "“Botas de cuero lunar” (Objeto 40)"
         ]
     },
     "cs-AA1": {

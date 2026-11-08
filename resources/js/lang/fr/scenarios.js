@@ -2431,7 +2431,7 @@ export default {
     "cs-4": {
         "name": "Les Guerriers Infestés",
         "rewards": [
-            "Gain “Arbalète à Limaces” (Item 84)"
+            "Chaque personnage gagne un objet « Orbe » aléatoire (Objet 1-10)"
         ]
     },
     "cs-5": {
@@ -2442,7 +2442,7 @@ export default {
         "rewards": [
             "+2 réputation",
             "+1 prospérité",
-            "Gain “Poudre Étourdissante” (Item gh-21)"
+            "“Poudre Étourdissante” (Objet gh-21)"
         ]
     },
     "cs-7": {
@@ -2454,21 +2454,21 @@ export default {
     "cs-8": {
         "name": "La Forteresse Brisée",
         "rewards": [
-            "Gain “Pendentif Curieux” (Item 20)"
+            "“Pendentif Curieux” (Objet 20)"
         ]
     },
     "cs-9": {
         "name": "La Mission de Sauvetage",
         "rewards": [
             "10 pièces d'or chacun",
-            "Gain “Émetteur de Smog” (Item 62)"
+            "“Émetteur de Smog” (Objet 62)"
         ]
     },
     "cs-10": {
         "name": "L’Antre de la Monstruosité",
         "rewards": [
-            "Gain “Potion de Soin Mineure” (Item gh-12)",
-            "Gain “Potion de Mana Mineure” (Item gh-20)"
+            "“Potion de Soin Mineure” (Objet gh-12)",
+            "“Potion de Mana Mineure” (Objet gh-20)"
         ]
     },
     "cs-11": {
@@ -2480,14 +2480,14 @@ export default {
     "cs-13": {
         "name": "La Caverne aux Cadavres",
         "rewards": [
-            "Gain “Bulkwark Banner” (Item 85)",
-            "+1 prosperity"
+            "+1 prospérité",
+            "Chaque personnage gagne l'un des objets suivants : « Potion d'Endurance Majeure » (Objet gh-34), « Potion de Puissance Majeure » (Objet gh-41), « Potion de Mana Majeure » (Objet gh-48)\nS'il n'y en a aucun de disponible dans la boutique, gagnez 20 pièces d'or à la place"
         ]
     },
     "cs-14": {
         "name": "La Caverne des Cultistes",
         "rewards": [
-            "Gain “Scarabée Télécommandé” (Item 88)"
+            "15 XP chacun"
         ]
     },
     "cs-15": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Expériences Élémentaires",
         "rewards": [
-            "Gain “Potion de Mana Majeure” (Item gh-48)"
+            "“Potion de Mana Majeure” (Objet gh-48)"
         ]
     },
     "cs-20": {
@@ -2533,7 +2533,7 @@ export default {
     "cs-21": {
         "name": "Une Mort Ardente",
         "rewards": [
-            "Gain “Cuissardes de Magma” (Item gh-99)"
+            "“Cuissardes de Magma” (Objet gh-99)"
         ]
     },
     "cs-22": {
@@ -2572,7 +2572,7 @@ export default {
         "name": "La Caverne des Engelures",
         "rewards": [
             "10 pièces d'or chacun",
-            "Gain “Teinture Vertigineuse” (Item 58)"
+            "“Teinture Vertigineuse” (Objet 58)"
         ]
     },
     "cs-28": {
@@ -2612,7 +2612,7 @@ export default {
         "name": "La Tour de Siège",
         "requirements": "Quête Personnelle « Protect and Serve »",
         "rewards": [
-            "Gain “Bottes Flamboyantes” (Item 90)",
+            "“Bottes Flamboyantes” (Objet 90)",
             "+1 réputation"
         ]
     },
@@ -2711,7 +2711,7 @@ export default {
     "cs-47": {
         "name": "Le Marais des Vipères",
         "rewards": [
-            "Gain “Venin de Vipère Fantôme” (Item 55)",
+            "“Venin de Vipère Fantôme” (Objet 55)",
             "+1 prospérité",
             "10 pièces d'or chacun"
         ]
@@ -2746,13 +2746,13 @@ export default {
     "cs-52": {
         "name": "Le Puits aux Souhaits",
         "rewards": [
-            "Gain “Bouclier d'Écailles de Wyverne” (Item 37)"
+            "“Bouclier d'Écailles de Wyverne” (Objet 37)"
         ]
     },
     "cs-53": {
         "name": "La Caverne des Courants",
         "rewards": [
-            "Gain “Sphère des Courants” (Item 83)",
+            "“Sphère des Courants” (Objet 83)",
             "5 pièces d'or chacun"
         ]
     },
@@ -2774,13 +2774,13 @@ export default {
     "cs-56": {
         "name": "Désamorcer la Machine",
         "rewards": [
-            "Gain “Canon à Chaîne” (Item 45)"
+            "“Canon à Chaîne” (Objet 45)"
         ]
     },
     "cs-57": {
         "name": "Le Convertisseur Élémentaire",
         "rewards": [
-            "Gain “Éprouvette” (Item 48)"
+            "“Éprouvette” (Objet 48)"
         ]
     },
     "cs-58": {
@@ -2792,49 +2792,49 @@ export default {
     "cs-59": {
         "name": "Envahisseurs de la Forêt",
         "rewards": [
-            "Gain “Brassards de la Nature” (Item 47)"
+            "“Brassards de la Nature” (Objet 47)"
         ]
     },
     "cs-60": {
         "name": "À Travers le Feu et les Flammes",
         "rewards": [
-            "Gain “Armure Enflammée” (Item 51)"
+            "“Armure Enflammée” (Objet 51)"
         ]
     },
     "cs-61": {
         "name": "Préservation Archaïque",
         "rewards": [
-            "Gain “Robe d'Apaisement” (Item 42)"
+            "“Robe d'Apaisement” (Objet 42)"
         ]
     },
     "cs-62": {
         "name": "Rédemption Sacrée",
         "rewards": [
-            "Gain “Cœur du Vide Purifié” (Item 57)"
+            "“Cœur du Vide Purifié” (Objet 57)"
         ]
     },
     "cs-63": {
         "name": "Une Vipère Acculée",
         "rewards": [
-            "Gain “Mortier de Campagne” (Item 53)"
+            "“Mortier de Campagne” (Objet 53)"
         ]
     },
     "cs-64": {
         "name": "Cristaux Rayonnants",
         "rewards": [
-            "Gain “Carapace Lumineuse” (Item 50)"
+            "“Carapace Lumineuse” (Objet 50)"
         ]
     },
     "cs-65": {
         "name": "Cristaux Rayonnants",
         "rewards": [
-            "Gain “Libation Spirituelle” (Item 41)"
+            "“Libation Spirituelle” (Objet 41)"
         ]
     },
     "cs-66": {
         "name": "Étrangers d'un Autre Monde",
         "rewards": [
-            "Gain “Bottes de Cuir Lunaire” (Item 40)"
+            "“Bottes de Cuir Lunaire” (Objet 40)"
         ]
     },
     "cs-AA1": {
@@ -2931,7 +2931,7 @@ export default {
         "rewards": [
             [
                 "40 pièces d'or collectives",
-                "Plan de « Cuir Clouté” design (Item gh-30) OR “Bottes de Ruée » (Objet gh-36)"
+                "Plan de « Cuir Clouté » (Objet gh-30) OU plan de « Bottes de Ruée » (Objet gh-36)"
             ],
             [
                 "2 ✓ chacun",

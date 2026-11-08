@@ -2431,7 +2431,7 @@ export default {
     "cs-4": {
         "name": "Infizierte Krieger",
         "rewards": [
-            "Gain “Geschossarmbrust” (Item 84)"
+            "Jeder Charakter erhält einen zufälligen “Kugel”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-5": {
@@ -2442,7 +2442,7 @@ export default {
         "rewards": [
             "+2 Ansehen",
             "+1 Wohlstand",
-            "Gain “Betäubungspulver” (Item gh-21)"
+            "“Betäubungspulver” (Gegenstand gh-21)"
         ]
     },
     "cs-7": {
@@ -2454,21 +2454,21 @@ export default {
     "cs-8": {
         "name": "Zerschmetterte Festung",
         "rewards": [
-            "Gain “Seltsamer Anhänger” (Item 20)"
+            "“Seltsamer Anhänger” (Gegenstand 20)"
         ]
     },
     "cs-9": {
         "name": "Rettungsmission",
         "rewards": [
             "je 10 Gold",
-            "Gain “Smogerzeuger” (Item 62)"
+            "“Smogerzeuger” (Gegenstand 62)"
         ]
     },
     "cs-10": {
         "name": "Höhle der Monstrosität",
         "rewards": [
-            "Gain “Kleiner Heiltrank” (Item gh-12)",
-            "Gain “Kleiner Manatrank” (Item gh-20)"
+            "“Kleiner Heiltrank” (Gegenstand gh-12)",
+            "“Kleiner Manatrank” (Gegenstand gh-20)"
         ]
     },
     "cs-11": {
@@ -2480,14 +2480,14 @@ export default {
     "cs-13": {
         "name": "Leichenhöhle",
         "rewards": [
-            "Gain “Bulkwark Banner” (Item 85)",
-            "+1 prosperity"
+            "+1 Wohlstand",
+            "Jeder Charakter erhält einen der folgenden Gegenstände: “Großer Ausdauertrank” (Gegenstand gh-34), “Großer Krafttrank” (Gegenstand gh-41), “Großer Manatrank” (Gegenstand gh-48)\nIst keiner davon im Laden verfügbar, erhält er stattdessen 20 Gold"
         ]
     },
     "cs-14": {
         "name": "Kultistenhöhle",
         "rewards": [
-            "Gain “Ferngesteuerter Käfer” (Item 88)"
+            "je 15 Erfahrung"
         ]
     },
     "cs-15": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Elementare Experimente",
         "rewards": [
-            "Gain “Großer Manatrank” (Item gh-48)"
+            "“Großer Manatrank” (Gegenstand gh-48)"
         ]
     },
     "cs-20": {
@@ -2533,7 +2533,7 @@ export default {
     "cs-21": {
         "name": "Ein feuriger Tod",
         "rewards": [
-            "Gain “Lavalatschen” (Item gh-99)"
+            "“Lavalatschen” (Gegenstand gh-99)"
         ]
     },
     "cs-22": {
@@ -2572,7 +2572,7 @@ export default {
         "name": "Frostbeulen-Höhle",
         "rewards": [
             "je 10 Gold",
-            "Gain “Schwindelerregende Tinktur” (Item 58)"
+            "“Schwindelerregende Tinktur” (Gegenstand 58)"
         ]
     },
     "cs-28": {
@@ -2612,7 +2612,7 @@ export default {
         "name": "Belagerungsturm",
         "requirements": "Persönliches Ziel „Protect and Serve“",
         "rewards": [
-            "Gain “Lodernde Stiefel” (Item 90)",
+            "“Lodernde Stiefel” (Gegenstand 90)",
             "+1 Ansehen"
         ]
     },
@@ -2711,7 +2711,7 @@ export default {
     "cs-47": {
         "name": "Vipernmoor",
         "rewards": [
-            "Gain “Geisterviper-Gift” (Item 55)",
+            "“Geisterviper-Gift” (Gegenstand 55)",
             "+1 Wohlstand",
             "je 10 Gold"
         ]
@@ -2746,13 +2746,13 @@ export default {
     "cs-52": {
         "name": "Wunschbrunnen",
         "rewards": [
-            "Gain “Drakenschuppenschild” (Item 37)"
+            "“Drakenschuppenschild” (Gegenstand 37)"
         ]
     },
     "cs-53": {
         "name": "Höhle der Strömungen",
         "rewards": [
-            "Gain “Kugel der Strömungen” (Item 83)",
+            "“Kugel der Strömungen” (Gegenstand 83)",
             "je 5 Gold"
         ]
     },
@@ -2774,13 +2774,13 @@ export default {
     "cs-56": {
         "name": "Die Maschine entschärfen",
         "rewards": [
-            "Gain “Kettenkanone” (Item 45)"
+            "“Kettenkanone” (Gegenstand 45)"
         ]
     },
     "cs-57": {
         "name": "Elementarwandler",
         "rewards": [
-            "Gain “Reagenzglas” (Item 48)"
+            "“Reagenzglas” (Gegenstand 48)"
         ]
     },
     "cs-58": {
@@ -2792,49 +2792,49 @@ export default {
     "cs-59": {
         "name": "Waldeindringlinge",
         "rewards": [
-            "Gain “Naturarmreife” (Item 47)"
+            "“Naturarmreife” (Gegenstand 47)"
         ]
     },
     "cs-60": {
         "name": "Durch Feuer und Flammen",
         "rewards": [
-            "Gain “Flammende Rüstung” (Item 51)"
+            "“Flammende Rüstung” (Gegenstand 51)"
         ]
     },
     "cs-61": {
         "name": "Uralte Bewahrung",
         "rewards": [
-            "Gain “Robe der Linderung” (Item 42)"
+            "“Robe der Linderung” (Gegenstand 42)"
         ]
     },
     "cs-62": {
         "name": "Geweihte Erlösung",
         "rewards": [
-            "Gain “Geläutertes Leereherz” (Item 57)"
+            "“Geläutertes Leereherz” (Gegenstand 57)"
         ]
     },
     "cs-63": {
         "name": "Eine in die Enge getriebene Viper",
         "rewards": [
-            "Gain “Feldmörser” (Item 53)"
+            "“Feldmörser” (Gegenstand 53)"
         ]
     },
     "cs-64": {
         "name": "Leuchtende Kristalle",
         "rewards": [
-            "Gain “Leuchtender Panzer” (Item 50)"
+            "“Leuchtender Panzer” (Gegenstand 50)"
         ]
     },
     "cs-65": {
         "name": "Leuchtende Kristalle",
         "rewards": [
-            "Gain “Geistertrank” (Item 41)"
+            "“Geistertrank” (Gegenstand 41)"
         ]
     },
     "cs-66": {
         "name": "Fremde aus einer anderen Welt",
         "rewards": [
-            "Gain “Mondleder-Stiefel” (Item 40)"
+            "“Mondleder-Stiefel” (Gegenstand 40)"
         ]
     },
     "cs-AA1": {
