@@ -335,6 +335,7 @@ if (Helpers.inProduction() && import.meta.env.MIX_SENTRY_DSN) {
     });
 }
 
+bus.errorHandler = error => vueApp.config.errorHandler(error, null, 'event bus');
 vueApp.config.globalProperties.$bus = bus;
 vueApp.use(router);
 vueApp.use(i18n);

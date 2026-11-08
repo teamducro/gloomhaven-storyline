@@ -295,6 +295,7 @@ export default {
     "delete-campaign-note": "All progress and snapshots are removed from the server and this cannot be undone.",
     "delete-campaign-failed": "Failed to delete the campaign, try again later.",
     "campaign-deleted": "\"{name}\" was deleted by its owner and has been removed from this device.",
+    "campaign-deleted-keep": "Keep a copy as the local campaign on this device? This replaces the current local campaign.",
     "Restore Purchase": "Restore Purchase",
     "Change name": "Change name",
     "Fill in your email, you'll receive a link to sync your campaign.": "Fill in your email, you'll receive a link to sync your campaign.",

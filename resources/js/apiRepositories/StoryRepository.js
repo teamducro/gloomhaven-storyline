@@ -168,18 +168,33 @@ export default class StoryRepository extends ApiRepository {
         this.remove(story);
     }
 
-    // Only a missing story counts, a 404 from a misrouted request or an outage page must not wipe local progress.
+    // Only a missing story counts (route model binding on stories/{story}), a 404 from a misrouted request or an outage page must not wipe local progress.
     isDeleted(e) {
-        return e.response?.status === 404 && /^No query results for model/.test(e.response.data?.message);
+        return e.response?.status === 404 && /^No query results for model \[App\\Models\\Story\]/.test(e.response.data?.message);
     }
 
-    // The campaign was deleted by its owner on another device.
+    // The campaign was deleted by its owner on another device. Its data may hold unsynced progress, so offer to keep it as the local campaign.
     async removeDeleted(story) {
+        const data = store.get(story.campaignId);
         this.remove(story);
         const campaignId = window.app.campaignId === story.campaignId ? 'local' : window.app.campaignId;
-        // Switching toasts as well, so toast afterwards to keep this message visible.
         await window.app.switchCampaign(campaignId);
-        window.app.$bus.$emit('toast', window.app.$t('campaign-deleted', {name: _.escape(story.name)}), false);
+        if (!data) {
+            // Switching toasts as well, so toast afterwards to keep this message visible.
+            window.app.$bus.$emit('toast', window.app.$t('campaign-deleted', {name: _.escape(story.name)}), false);
+            return;
+        }
+        window.app.$bus.$emit('open-confirm', {
+            title: story.name,
+            message: window.app.$t('campaign-deleted', {name: story.name}),
+            note: window.app.$t('campaign-deleted-keep'),
+            callback: () => {
+                store.set('local', data);
+                if (window.app.campaignId === 'local') {
+                    window.app.switchCampaign('local');
+                }
+            },
+        });
     }
 
     remove(story) {

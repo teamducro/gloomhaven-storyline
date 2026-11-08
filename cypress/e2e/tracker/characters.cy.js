@@ -61,6 +61,46 @@ describe('Character', () => {
         });
     });
 
+    it('It does not add the retirement events again for a class retired before they were added automatically', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+        utilities.openCharacter();
+        cy.get('button').contains('Retire').click();
+        cy.get('.mdc-dialog.mdc-dialog--open button').contains('Retire').click();
+
+        // Given an older campaign: a retired Cragheart, its events removed by hand, nothing tracked in classEventsAdded
+        cy.window().then((win) => {
+            const campaignData = JSON.parse(win.localStorage.getItem('_1'));
+            delete campaignData.sheet.classEventsAdded;
+            delete campaignData['migrated-class-events-sheet'];
+            campaignData.sheet.city = {};
+            campaignData.sheet.road = {};
+            win.localStorage.setItem('_1', JSON.stringify(campaignData));
+        });
+        cy.reload();
+
+        // When retiring a new Cragheart
+        cy.get('.items-to-add-dropdown').click();
+        cy.get('li.add-character').contains('Cragheart').click();
+        cy.get('button').contains('Retire').click();
+        cy.get('.mdc-dialog.mdc-dialog--open button').contains('Retire').click();
+
+        // Then City and Road event 46 aren't added again
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData.sheet;
+            expect(Object.values(sheet.archivedCharacters)).to.deep.eq(['CH', 'CH']);
+            expect(sheet.city).not.to.have.property('46');
+            expect(sheet.road).not.to.have.property('46');
+            expect(sheet.classEventsAdded).to.deep.eq({CH: ['unlock', 'retire']});
+        });
+    });
+
     it('It archives an abandoned character in a cloud campaign', () => {
         const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
         cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));

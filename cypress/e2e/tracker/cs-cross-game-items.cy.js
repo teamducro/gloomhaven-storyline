@@ -62,4 +62,26 @@ describe('Crimson Scales cross-game items', () => {
             expect(itemDesigns).to.not.have.property('12');
         });
     });
+
+    it('It removes the Gloomhaven items that older campaigns unlocked as Crimson Scales designs', () => {
+        // Given designs 12, 20 and 86 from completed scenarios 8, 10 and 14, before their rewards named the right items
+        cy.visit('/tracker/#/items');
+        cy.window().then((win) => {
+            const campaignData = JSON.parse(win.localStorage.getItem(win.app.campaignId));
+            campaignData['sheet-cs'] = {itemDesigns: {12: true, 20: true, 86: true}};
+            [8, 10, 14].forEach(id => campaignData['scenario-cs-' + id] = {state: 'complete'});
+            delete campaignData['migrated-cs-designs-sheet-cs'];
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(campaignData));
+        });
+
+        // When the campaign loads
+        cy.reload();
+
+        // Then 12 (a Gloomhaven potion) and 86 are gone, 20 stays as scenario 8's reward and 88 is scenario 14's
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData['sheet-cs'];
+            expect(sheet.itemDesigns).to.deep.eq({20: true, 88: true});
+            expect(win.app.campaignData['migrated-cs-designs-sheet-cs']).to.be.true;
+        });
+    });
 });

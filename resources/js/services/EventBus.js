@@ -2,6 +2,8 @@
 class EventBus {
     constructor() {
         this.listeners = new Map;
+        // The tracker routes these to app.config.errorHandler, which Sentry wraps.
+        this.errorHandler = error => console.error(error);
     }
 
     $on(event, callback) {
@@ -32,13 +34,13 @@ class EventBus {
         });
     }
 
-    // Like Vue 2, a failing listener is logged instead of breaking the emitter and the other listeners.
+    // Like Vue 2, a failing listener is reported instead of breaking the emitter and the other listeners.
     $emit(event, ...args) {
         [...(this.listeners.get(event) || [])].forEach(callback => {
             try {
-                Promise.resolve(callback(...args)).catch(error => console.error(error));
+                Promise.resolve(callback(...args)).catch(this.errorHandler);
             } catch (error) {
-                console.error(error);
+                this.errorHandler(error);
             }
         });
     }

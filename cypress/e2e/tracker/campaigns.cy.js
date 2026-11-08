@@ -183,6 +183,39 @@ describe('Campaigns', () => {
             cy.get('.toast b').should('not.exist');
         });
 
+        it('It offers to keep a deleted shared campaign as the local campaign', () => {
+            // Given a shared campaign with progress on this device
+            const shared = {...ownedStory, id: 8, name: 'Gone', is_shared: true, token: 'shared-token'};
+            cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'No query results for model [App\\Models\\Story] 8'}});
+            cy.intercept('PUT', '**/stories/8', {statusCode: 404, body: {message: 'No query results for model [App\\Models\\Story] 8'}});
+            utilities.startServer();
+            cy.intercept('GET', '**/user', {statusCode: 500});
+            cy.intercept('GET', '**/stories', {statusCode: 500});
+            cy.visit('/');
+            cy.window().then((win) => {
+                win.localStorage.setItem('token', JSON.stringify('secret'));
+                win.localStorage.setItem('user', JSON.stringify({id: 1, name: 'Test', email: 'a@b.c', is_patron: false}));
+                win.localStorage.setItem('stories', JSON.stringify([shared]));
+                win.localStorage.setItem('campaignId', JSON.stringify('_8'));
+                win.localStorage.setItem('_8', JSON.stringify({sheet: {notes: 'Unsynced notes'}}));
+            });
+
+            // When its owner deleted it and the player keeps a copy
+            cy.visit('/tracker/#/campaigns');
+            cy.get('.mdc-dialog--open').within(() => {
+                cy.contains('"Gone" was deleted by its owner');
+                cy.contains('Keep a copy as the local campaign');
+                cy.contains('button', 'Confirm').click();
+            });
+
+            // Then the progress is the local campaign
+            cy.window().then(win => {
+                expect(win.localStorage.getItem('_8')).to.be.null;
+                expect(JSON.parse(win.localStorage.getItem('campaignId'))).to.equal('local');
+                expect(JSON.parse(win.localStorage.getItem('local')).sheet.notes).to.equal('Unsynced notes');
+            });
+        });
+
         it('It keeps a shared campaign on a 404 that is not about the campaign', () => {
             const shared = {...ownedStory, id: 8, name: 'Kept', is_shared: true, token: 'shared-token'};
             cy.intercept('GET', '**/stories/8', {statusCode: 404, body: {message: 'Not Found'}}).as('findStory');
