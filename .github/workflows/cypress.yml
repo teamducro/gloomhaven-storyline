@@ -16,7 +16,7 @@ jobs:
         run: |
           # ponytail: balances on line count, swap for recorded spec durations if groups drift apart
           specs=$(wc -l cypress/e2e/tracker/*.cy.js | grep -v ' total$' | sort -rn | jq -Rn '
-            reduce (inputs | capture("(?<lines>\\d+) (?<file>.+)")) as $s ([range(4) | {lines: 0, files: []}];
+            reduce (inputs | capture("(?<lines>\\d+) (?<file>.+)")) as $s ([range(6) | {lines: 0, files: []}];
               (to_entries | min_by(.value.lines).key) as $i
               | .[$i].lines += ($s.lines | tonumber) | .[$i].files += [$s.file])
             | map(.files | join(",")) | tojson' -r)
