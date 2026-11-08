@@ -1,7 +1,7 @@
 <template>
     <div class="mdc-dialog" ref="modal" aria-modal="true">
         <div class="mdc-dialog__container z-10">
-            <div class="mdc-dialog__surface relative" :class="{'full-screen': fullScreen}"
+            <div class="mdc-dialog__surface relative outline-none" ref="surface" tabindex="-1" :class="{'full-screen': fullScreen}"
                  :style="{'max-width': fullScreen ? '100vw' : maxWidth}">
                 <slot name="body">
                     <h2 class="mdc-dialog__title" :class="{
@@ -32,6 +32,7 @@
 
 <script>
 import {MDCDialog} from '@material/dialog';
+import createFocusTrap from 'focus-trap';
 
 export default {
     emits: ['closed', 'closing', 'opened', 'opening'],
@@ -69,7 +70,10 @@ export default {
         }
     },
     mounted() {
-        this.modal = new MDCDialog(this.$refs['modal']);
+        this.modal = new MDCDialog(this.$refs['modal'], undefined,
+            // Focus the surface on open instead of the first button (the close icon)
+            (el, options) => createFocusTrap(el, {...options, initialFocus: this.$refs['surface']})
+        );
         this.modal.listen('MDCDialog:opening', () => {
             this.$emit('opening');
         });
