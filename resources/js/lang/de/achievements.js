@@ -141,13 +141,13 @@ export default {
         "name": "Schlechtes Geschäft"
     },
     "gh-PSOX1": {
-        "name": "Nobles’ Crypt"
+        "name": "Krypta der Adligen"
     },
     "gh-PSOX2": {
-        "name": "Flooded Crypt"
+        "name": "Überflutete Krypta"
     },
     "gh-PSOX3": {
-        "name": "Crypt of the Ancients"
+        "name": "Krypta der Uralten"
     },
     "gh-PTPS": {
         "name": "Quelle des Gifts"
@@ -252,154 +252,154 @@ export default {
         "name": "Gekappte Verbindungen"
     },
     "gh-PA": {
-        "name": "Accomplices"
+        "name": "Komplizen"
     },
     "gh-PS": {
-        "name": "Saboteurs"
+        "name": "Saboteure"
     },
     "cs-PCSOD": {
-        "name": "Ooze Destroyed"
+        "name": "Schleim vernichtet"
     },
     "cs-PCSFL": {
-        "name": "Fallen Lava"
+        "name": "Gefallene Lava"
     },
     "cs-PCSFM": {
-        "name": "Follow the Money"
+        "name": "Dem Geld folgen"
     },
     "cs-PCSFW": {
-        "name": "Frozen Warrior"
+        "name": "Gefrorener Krieger"
     },
     "cs-PCSOA": {
-        "name": "Oak Alliance"
+        "name": "Eichen-Allianz"
     },
     "cs-PCSIA": {
-        "name": "Inox Alliance"
+        "name": "Inox-Allianz"
     },
     "cs-PCSGB": {
-        "name": "Guttermaw's Bounty"
+        "name": "Guttermaws Kopfgeld"
     },
     "cs-PCSFR": {
-        "name": "Feirgrin's Request"
+        "name": "Feirgrins Bitte"
     },
     "cs-PCSPL": {
-        "name": "A Potion Lost"
+        "name": "Ein verlorener Trank"
     },
     "cs-PCSTM": {
-        "name": "Take the Money"
+        "name": "Das Geld nehmen"
     },
     "cs-PCSAM": {
-        "name": "Accomplished Mercenaries"
+        "name": "Erfolgreiche Söldner"
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        "name": "Freunde der Eissprecher"
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        "name": "Freunde der Schneesprecher"
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        "name": "Freunde der Frostsprecher"
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        "name": "Vernichter der Eissprecher"
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        "name": "Vernichter der Schneesprecher"
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        "name": "Freunde des Fischkönigs"
     },
     "fh-CCU": {
-        "name": "Crown United"
+        "name": "Vereinte Krone"
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        "name": "Entfesselten-Verbündete"
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        "name": "Entfesselte deaktiviert"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "In den Wald"
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        "name": "Feuerpfeffer"
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        "name": "Splintersuche"
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        "name": "Leeres Glas"
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        "name": "Käfer im Glas"
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        "name": "Ungeladener Kern"
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        "name": "Geladener Kern"
     },
     "fh-CHF": {
-        "name": "Harvest Festival"
+        "name": "Erntefest"
     },
     "fh-CBT": {
-        "name": "Brummix Tracks"
+        "name": "Brummix-Spuren"
     },
     "fh-CBT2": {
-        "name": "Brummix Tracks x2"
+        "name": "Brummix-Spuren x2"
     },
     "fh-CBT3": {
-        "name": "Brummix Tracks x3"
+        "name": "Brummix-Spuren x3"
     },
     "fh-CBT4": {
-        "name": "Brummix Tracks x4"
+        "name": "Brummix-Spuren x4"
     },
     "fh-CBT5": {
-        "name": "Brummix Tracks x5"
+        "name": "Brummix-Spuren x5"
     },
     "fh-CCCS": {
-        "name": "Coral Crown Shard"
+        "name": "Korallenkronen-Scherbe"
     },
     "fh-CCCS2": {
-        "name": "Coral Crown Shard x2"
+        "name": "Korallenkronen-Scherbe x2"
     },
     "fh-CCCS3": {
-        "name": "Coral Crown Shard x3"
+        "name": "Korallenkronen-Scherbe x3"
     },
     "fh-CCCS4": {
-        "name": "Coral Crown Shard x4"
+        "name": "Korallenkronen-Scherbe x4"
     },
     "fh-CCCS5": {
-        "name": "Coral Crown Shard x5"
+        "name": "Korallenkronen-Scherbe x5"
     },
     "fh-CCCS6": {
-        "name": "Coral Crown Shard x6"
+        "name": "Korallenkronen-Scherbe x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Herz des Eises"
     },
     "fh-PHOS": {
-        "name": "Heart of Snow"
+        "name": "Herz des Schnees"
     },
     "gh2-G2ATD": {
-        "name": "Activating the Device"
+        "name": "Das Gerät aktivieren"
     },
     "gh2-G2AUP": {
-        "name": "An Uneasy Peace"
+        "name": "Ein unruhiger Frieden"
     },
     "gh2-G2AT": {
         "name": "Antike Technologie"
     },
     "gh2-G2CRD": {
-        "name": "City Rule: Demons"
+        "name": "Stadtherrschaft: dämonisch"
     },
     "gh2-G2CRME": {
-        "name": "City Rule: Merchants"
+        "name": "Stadtherrschaft: kaufmännisch"
     },
     "gh2-G2CRMI": {
-        "name": "City Rule: Military"
+        "name": "Stadtherrschaft: militärisch"
     },
     "gh2-G2EM": {
-        "name": "Elements Mastered"
+        "name": "Elemente gemeistert"
     },
     "gh2-G2EOC": {
         "name": "Ende der Verderbtheit"
@@ -408,22 +408,22 @@ export default {
         "name": "Ende des Grauens"
     },
     "gh2-G2HW": {
-        "name": "Hallowed Waters"
+        "name": "Geweihte Wasser"
     },
     "gh2-G2ITD": {
-        "name": "Into the Depths"
+        "name": "In die Tiefe"
     },
     "gh2-G2PTB": {
-        "name": "Peace Through Bloodshed"
+        "name": "Frieden durch Blutvergießen"
     },
     "gh2-G2TCE": {
-        "name": "The Candle Extinguished"
+        "name": "Die erloschene Kerze"
     },
     "gh2-G2TCK": {
-        "name": "The Candle Kept"
+        "name": "Die bewahrte Kerze"
     },
     "gh2-G2TDR": {
-        "name": "The Darkness Retreats"
+        "name": "Die Dunkelheit weicht"
     },
     "gh2-G2TDA": {
         "name": "Hilfe für den Draken"
@@ -441,27 +441,27 @@ export default {
         "name": "Verstummte Stimme"
     },
     "gh2-P2R16": {
-        "name": "Faction Reputation 16"
+        "name": "Fraktionsansehen 16"
     },
     "gh2-P2R20": {
-        "name": "Faction Reputation 20"
+        "name": "Fraktionsansehen 20"
     },
     "gh2-P2RD6": {
-        "name": "Demon Reputation 6"
+        "name": "Dämonen-Ansehen 6"
     },
     "gh2-P2RD12": {
-        "name": "Demon Reputation 12"
+        "name": "Dämonen-Ansehen 12"
     },
     "gh2-P2RME6": {
-        "name": "Merchant Reputation 6"
+        "name": "Kaufmannsgilden-Ansehen 6"
     },
     "gh2-P2RME12": {
-        "name": "Merchant Reputation 12"
+        "name": "Kaufmannsgilden-Ansehen 12"
     },
     "gh2-P2RMI6": {
-        "name": "Military Reputation 6"
+        "name": "Militär-Ansehen 6"
     },
     "gh2-P2RMI12": {
-        "name": "Military Reputation 12"
+        "name": "Militär-Ansehen 12"
     }
 }

@@ -1,198 +1,198 @@
 export default {
     "fh-5": {
-        "name": "Mining Camp",
+        "name": "Camp des Mineurs",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {METAL} for 2 gold",
+                "operations": "Acheter collectivement jusqu'à 1 {METAL} pour 2 pièces d'or",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {METAL} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 2 {METAL} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 49.2"
+                "rewards": "+1 prospérité, lisez la section 49.2"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {METAL} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 3 {METAL} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {METAL} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 4 {METAL} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-12": {
-        "name": "Hunting Lodge",
+        "name": "Pavillon de Chasse",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {HIDE} for 2 gold",
+                "operations": "Acheter collectivement jusqu'à 1 {HIDE} pour 2 pièces d'or",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 172.3"
+                "rewards": "+1 prospérité, lisez la section 172.3"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {HIDE} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 2 {HIDE} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {HIDE} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 3 {HIDE} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {HIDE} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 4 {HIDE} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-17": {
-        "name": "Logging Camp",
+        "name": "Camp des Bûcherons",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {LUMBER} for 2 gold",
+                "operations": "Acheter collectivement jusqu'à 1 {LUMBER} pour 2 pièces d'or",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {LUMBER} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 2 {LUMBER} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {LUMBER} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 3 {LUMBER} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {LUMBER} for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 4 {LUMBER} pour 2 pièces d'or chacun",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-21": {
-        "name": "Inn",
+        "name": "Auberge",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy 1 material resource for 2 gold",
+                "operations": "Acheter collectivement 1 ressource matérielle pour 2 pièces d'or",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 151.2"
+                "rewards": "+1 prospérité, lisez la section 151.2"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 different material resources for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 2 ressources matérielles différentes pour 2 pièces d'or chacune",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 different material resources for 2 gold each",
+                "operations": "Acheter collectivement jusqu'à 3 ressources matérielles différentes pour 2 pièces d'or chacune",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-24": {
-        "name": "Garden",
+        "name": "Jardin",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                "operations": "Planter des plantes OU gagner 1 plante de chaque parcelle plantée",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 78.4"
+                "rewards": "+1 prospérité, lisez la section 78.4"
             },
             {
                 "level": 2,
-                "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                "operations": "Planter des plantes OU gagner 1 plante de chaque parcelle plantée",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, +1 plot"
+                "rewards": "+1 prospérité, +1 parcelle"
             },
             {
                 "level": 3,
-                "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                "operations": "Gagner 1 plante collective de chaque parcelle plantée, puis planter des plantes",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 4,
-                "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                "operations": "Gagner 1 plante collective de chaque parcelle plantée, puis planter des plantes",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, +1 plot"
+                "rewards": "+1 prospérité, +1 parcelle"
             }
         ]
     },
     "fh-34": {
-        "name": "Craftsman",
+        "name": "Fabricant",
         "levels": [
             {
                 "level": 0
@@ -200,79 +200,79 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 1 {HIDE} collectif",
                 "passive": "",
-                "rewards": "Add items 001 to 010 to the item supply"
+                "rewards": "Ajouter les objets 001 à 010 à la réserve d'objets"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 1 {HIDE} collectif",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 011 to 015 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 011 à 015 à la réserve d'objets"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 1 {HIDE} collectif",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 016 to 020 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 016 à 020 à la réserve d'objets"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 2 {HIDE} collectifs",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 021 to 025 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 021 à 025 à la réserve d'objets"
             },
             {
                 "level": 5,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 2 {HIDE} collectifs",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 026 to 030 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 026 à 030 à la réserve d'objets"
             },
             {
                 "level": 6,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 2 {HIDE} collectifs",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 031 to 035 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 031 à 035 à la réserve d'objets"
             },
             {
                 "level": 7,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 3 {HIDE} collectifs",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 036 to 040 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 036 à 040 à la réserve d'objets"
             },
             {
                 "level": 8,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 3 {HIDE} collectifs",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 041 to 045 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 041 à 045 à la réserve d'objets"
             },
             {
                 "level": 9,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Fabriquer des objets",
+                "wrecked": "Perdre 3 {HIDE} collectifs",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 046 to 050 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 046 à 050 à la réserve d'objets"
             }
         ]
     },
     "fh-35": {
-        "name": "Alchemist",
+        "name": "Alchimiste",
         "levels": [
             {
                 "level": 0
@@ -280,31 +280,31 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Brew 2-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Préparer des potions à 2 plantes",
+                "wrecked": "Les aventuriers ne peuvent pas utiliser de potions",
                 "passive": "",
                 "rewards": ""
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Brew and distill 2-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Préparer et distiller des potions à 2 ingrédients",
+                "wrecked": "Les aventuriers ne peuvent pas utiliser de potions",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Brew and distill 2- and 3-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Préparer et distiller des potions à 2 et 3 ingrédients",
+                "wrecked": "Les aventuriers ne peuvent pas utiliser de potions",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 183.5"
+                "rewards": "+1 prospérité, lisez la section 183.5"
             }
         ]
     },
     "fh-37": {
-        "name": "Trading Post",
+        "name": "Comptoir Commercial",
         "levels": [
             {
                 "level": 0
@@ -312,39 +312,39 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Buy up to one item",
-                "wrecked": "Lose 5 collective gold",
+                "downtime": "Acheter jusqu'à un objet",
+                "wrecked": "Perdre 5 pièces d'or collectives",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 25.2"
+                "rewards": "+1 prospérité, lisez la section 25.2"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Buy up to two items",
-                "wrecked": "Lose 10 collective gold",
+                "downtime": "Acheter jusqu'à deux objets",
+                "wrecked": "Perdre 10 pièces d'or collectives",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 12.4"
+                "rewards": "+1 prospérité, lisez la section 12.4"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Buy up to three items",
-                "wrecked": "Lose 15 collective gold",
+                "downtime": "Acheter jusqu'à trois objets",
+                "wrecked": "Perdre 15 pièces d'or collectives",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 38.3"
+                "rewards": "+1 prospérité, lisez la section 38.3"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Buy up to four items",
-                "wrecked": "Lose 20 collective gold",
+                "downtime": "Acheter jusqu'à quatre objets",
+                "wrecked": "Perdre 20 pièces d'or collectives",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 196.2"
+                "rewards": "+1 prospérité, lisez la section 196.2"
             }
         ]
     },
     "fh-39": {
-        "name": "Jeweler",
+        "name": "Bijoutier",
         "levels": [
             {
                 "level": 0
@@ -353,70 +353,70 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Endommager un bâtiment au choix",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 31.3"
+                "rewards": "+1 prospérité, lisez la section 31.3"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Endommager un bâtiment au choix",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 160 to 163 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 160 à 163 à la réserve d'objets"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Endommager un bâtiment au choix",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 164 to 167 to the item supply"
+                "rewards": "+1 prospérité, ajoutez les objets 164 à 167 à la réserve d'objets"
             }
         ]
     },
     "fh-42": {
-        "name": "Temple of the Great Oak",
+        "name": "Temple du Grand Chêne",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Chaque aventurier peut perdre 5 pièces d'or pour commencer le prochain scénario avec {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Chaque aventurier commence le prochain scénario avec {CURSE.fh}",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 192.5"
+                "rewards": "+1 prospérité, lisez la section 192.5"
             },
             {
                 "level": 2,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Chaque aventurier peut perdre 5 pièces d'or pour commencer le prochain scénario avec {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Chaque aventurier commence le prochain scénario avec {CURSE.fh}",
                 "passive": "",
-                "rewards": "+3 prosperity"
+                "rewards": "+3 prospérité"
             },
             {
                 "level": 3,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Chaque aventurier peut perdre 5 pièces d'or pour commencer le prochain scénario avec {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Chaque aventurier commence le prochain scénario avec {CURSE.fh}",
                 "passive": "",
-                "rewards": "+5 prosperity"
+                "rewards": "+5 prospérité"
             },
             {
                 "level": 4,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Chaque aventurier peut perdre 5 pièces d'or pour commencer le prochain scénario avec {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Chaque aventurier commence le prochain scénario avec {CURSE.fh}",
                 "passive": "",
                 "rewards": ""
             }
         ]
     },
     "fh-44": {
-        "name": "Enhancer",
+        "name": "Améliorateur",
         "levels": [
             {
                 "level": 0
@@ -424,111 +424,111 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
+                "downtime": "Acheter des améliorations",
+                "wrecked": "Chaque aventurier commence le prochain scénario avec {DISARM.fh}",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 193.1"
+                "rewards": "+1 prospérité, lisez la section 193.1"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold",
-                "rewards": "+1 prosperity, read section 157.2"
+                "downtime": "Acheter des améliorations",
+                "wrecked": "Chaque aventurier commence le prochain scénario avec {DISARM.fh}",
+                "passive": "Réduisez tous les coûts d'amélioration de 10 pièces d'or",
+                "rewards": "+1 prospérité, lisez la section 157.2"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold and level penalties by 10 gold per level",
-                "rewards": "+1 prosperity"
+                "downtime": "Acheter des améliorations",
+                "wrecked": "Chaque aventurier commence le prochain scénario avec {DISARM.fh}",
+                "passive": "Réduisez tous les coûts d'amélioration de 10 pièces d'or et les pénalités de niveau de 10 pièces d'or par niveau",
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold, level penalties by 10 gold per level, and repeat penalties by 25 gold per enhancement",
-                "rewards": "+1 prosperity, read section 56.3"
+                "downtime": "Acheter des améliorations",
+                "wrecked": "Chaque aventurier commence le prochain scénario avec {DISARM.fh}",
+                "passive": "Réduisez tous les coûts d'amélioration de 10 pièces d'or, les pénalités de niveau de 10 pièces d'or par niveau et les pénalités de répétition de 25 pièces d'or par amélioration",
+                "rewards": "+1 prospérité, lisez la section 56.3"
             }
         ]
     },
     "fh-65": {
-        "name": "Metal Depot",
+        "name": "Dépôt de Métal",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {METAL} for 5 gold",
-                "downtime": "Lose 2 collective {METAL}",
+                "operations": "Vendre collectivement jusqu'à 1 {METAL} pour 5 pièces d'or",
+                "downtime": "Perdre 2 {METAL} collectifs",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {METAL} for 5 gold each",
+                "operations": "Vendre collectivement jusqu'à 2 {METAL} pour 5 pièces d'or chacun",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {METAL}",
+                "wrecked": "Perdre 2 {METAL} collectifs",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 prospérité"
             }
         ]
     },
     "fh-67": {
-        "name": "Lumber Depot",
+        "name": "Dépôt de Bois",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {LUMBER} for 5 gold",
+                "operations": "Vendre collectivement jusqu'à 1 {LUMBER} pour 5 pièces d'or",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {LUMBER}",
+                "wrecked": "Perdre 2 {LUMBER} collectifs",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 144.3"
+                "rewards": "+1 prospérité, lisez la section 144.3"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {LUMBER} for 5 gold each",
+                "operations": "Vendre collectivement jusqu'à 2 {LUMBER} pour 5 pièces d'or chacun",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {LUMBER}",
+                "wrecked": "Perdre 2 {LUMBER} collectifs",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 prospérité"
             }
         ]
     },
     "fh-72": {
-        "name": "Hide Depot",
+        "name": "Dépôt de Peaux",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {HIDE} for 5 gold",
+                "operations": "Vendre collectivement jusqu'à 1 {HIDE} pour 5 pièces d'or",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "wrecked": "Perdre 2 {HIDE} collectifs",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 173.1"
+                "rewards": "+1 prospérité, lisez la section 173.1"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {HIDE} for 5 gold each",
+                "operations": "Vendre collectivement jusqu'à 2 {HIDE} pour 5 pièces d'or chacun",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "wrecked": "Perdre 2 {HIDE} collectifs",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 prospérité"
             }
         ]
     },
     "fh-74": {
-        "name": "Tavern",
+        "name": "Taverne",
         "levels": [
             {
                 "level": 0
@@ -537,31 +537,31 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Perdre 1 moral",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 160.2"
+                "rewards": "+1 prospérité, lisez la section 160.2"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Perdre 1 moral",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 35.3"
+                "rewards": "+1 prospérité, lisez la section 35.3"
             },
             {
                 "level": 3,
-                "requires": "Requires 3 Ancient Coins (Item 245)",
+                "requires": "Nécessite 3 Pièces Anciennes (Objet 245)",
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Perdre 1 moral",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 113.1"
+                "rewards": "+1 prospérité, lisez la section 113.1"
             }
         ]
     },
     "fh-81": {
-        "name": "Hall of Revelry",
+        "name": "Salle des Festivités",
         "levels": [
             {
                 "level": 0
@@ -570,22 +570,22 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
-                "passive": "When the trials deck is complete, read section 187.1",
-                "rewards": "+1 prosperity, read section 178.2"
+                "wrecked": "Perdre 1 moral",
+                "passive": "Lorsque le paquet d'épreuves est terminé, lisez la section 187.1",
+                "rewards": "+1 prospérité, lisez la section 178.2"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
-                "passive": "Access to Tholos’ Favours",
-                "rewards": "+1 prosperity"
+                "wrecked": "Perdre 1 moral",
+                "passive": "Accès aux Faveurs de Tholos",
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-83": {
-        "name": "Library",
+        "name": "Bibliothèque",
         "levels": [
             {
                 "level": 0
@@ -594,30 +594,30 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Perdre 1 inspiration",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 190.3"
+                "rewards": "+1 prospérité, lisez la section 190.3"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Perdre 1 inspiration",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 116.3"
+                "rewards": "+1 prospérité, lisez la section 116.3"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Perdre 1 inspiration",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 89.2"
+                "rewards": "+1 prospérité, lisez la section 89.2"
             }
         ]
     },
     "fh-84": {
-        "name": "Workshop",
+        "name": "Atelier",
         "levels": [
             {
                 "level": 0
@@ -626,14 +626,14 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 collective {LUMBER}",
-                "passive": "Each of the following upgrades (Boat, Sled, Climbing Gear) can be built in any order.",
-                "rewards": "+1 prosperity"
+                "wrecked": "Perdre 1 {LUMBER} collectif",
+                "passive": "Chacune des améliorations suivantes (Bateau, Traîneau, Matériel d'Escalade) peut être construite dans n'importe quel ordre.",
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-85": {
-        "name": "Carpenter",
+        "name": "Menuisier",
         "levels": [
             {
                 "level": 0
@@ -642,22 +642,22 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose any 1 collective resource",
-                "passive": "Reduce all construction costs by 1 material resource",
-                "rewards": "+1 prosperity, read section 7.3"
+                "wrecked": "Perdre 1 ressource collective au choix",
+                "passive": "Réduisez tous les coûts de construction de 1 ressource matérielle",
+                "rewards": "+1 prospérité, lisez la section 7.3"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose any 1 collective resource",
-                "passive": "Reduce all construction costs by 1 material resource and the extra construction cost by 1 morale",
-                "rewards": "+1 prosperity"
+                "wrecked": "Perdre 1 ressource collective au choix",
+                "passive": "Réduisez tous les coûts de construction de 1 ressource matérielle et le coût de construction supplémentaire de 1 moral",
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-88": {
-        "name": "Stables",
+        "name": "Écuries",
         "levels": [
             {
                 "level": 0
@@ -666,38 +666,38 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring one pet into each scenario. Capacity: 4",
-                "rewards": "+1 prosperity, read section 3.1"
+                "wrecked": "Les aventuriers ne peuvent pas utiliser de familiers",
+                "passive": "Emmenez un familier dans chaque scénario. Capacité : 4",
+                "rewards": "+1 prospérité, lisez la section 3.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring one pet into each scenario. Capacity: 8",
-                "rewards": "+1 prosperity"
+                "wrecked": "Les aventuriers ne peuvent pas utiliser de familiers",
+                "passive": "Emmenez un familier dans chaque scénario. Capacité : 8",
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring two pets into each scenario. Capacity: 8",
-                "rewards": "+1 prosperity"
+                "wrecked": "Les aventuriers ne peuvent pas utiliser de familiers",
+                "passive": "Emmenez deux familiers dans chaque scénario. Capacité : 8",
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 4,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring two pets into each scenario. Capacity: 12",
-                "rewards": "+1 prosperity"
+                "wrecked": "Les aventuriers ne peuvent pas utiliser de familiers",
+                "passive": "Emmenez deux familiers dans chaque scénario. Capacité : 12",
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-90": {
-        "name": "Town Hall",
+        "name": "Hôtel de Ville",
         "levels": [
             {
                 "level": 0
@@ -706,65 +706,65 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw one challenge and keep up to one. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity, read section 189.1"
+                "wrecked": "Impossible de réussir des défis",
+                "passive": "Piochez un défi et gardez-en jusqu'à un. Lorsque le paquet de défis est terminé, lisez la section 190.1",
+                "rewards": "+1 prospérité, lisez la section 189.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw two challenges and keep up to one. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity"
+                "wrecked": "Impossible de réussir des défis",
+                "passive": "Piochez deux défis et gardez-en jusqu'à un. Lorsque le paquet de défis est terminé, lisez la section 190.1",
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw three challenges and keep up to two. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity"
+                "wrecked": "Impossible de réussir des défis",
+                "passive": "Piochez trois défis et gardez-en jusqu'à deux. Lorsque le paquet de défis est terminé, lisez la section 190.1",
+                "rewards": "+1 prospérité"
             }
         ]
     },
     "fh-98": {
-        "name": "Barracks",
+        "name": "Caserne",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                "operations": "Entraîner collectivement jusqu'à 1 soldat pour 3 pièces d'or et 1 ressource matérielle",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 4, Effect: advantage and -5{ATTACK.fh}",
-                "rewards": "+1 prosperity"
+                "wrecked": "Désavantage sur toutes les résolutions d'événements d'attaque. Impossible d'utiliser des soldats.",
+                "passive": "Capacité : 4, Effet : avantage et -5{ATTACK.fh}",
+                "rewards": "+1 prospérité"
             },
             {
                 "level": 2,
-                "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                "operations": "Entraîner collectivement jusqu'à 1 soldat pour 3 pièces d'or et 1 ressource matérielle",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 6, Effect: advantage and -15{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Désavantage sur toutes les résolutions d'événements d'attaque. Impossible d'utiliser des soldats.",
+                "passive": "Capacité : 6, Effet : avantage et -15{ATTACK.fh}",
+                "rewards": "+1 prospérité, +2 soldats"
             },
             {
                 "level": 3,
-                "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                "operations": "Entraîner collectivement jusqu'à 2 soldats pour 3 pièces d'or et 1 ressource matérielle chacun",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 8, Effect: advantage and -25{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Désavantage sur toutes les résolutions d'événements d'attaque. Impossible d'utiliser des soldats.",
+                "passive": "Capacité : 8, Effet : avantage et -25{ATTACK.fh}",
+                "rewards": "+1 prospérité, +2 soldats"
             },
             {
                 "level": 4,
-                "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                "operations": "Entraîner collectivement jusqu'à 2 soldats pour 3 pièces d'or et 1 ressource matérielle chacun",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 10, Effect: advantage and -35{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Désavantage sur toutes les résolutions d'événements d'attaque. Impossible d'utiliser des soldats.",
+                "passive": "Capacité : 10, Effet : avantage et -35{ATTACK.fh}",
+                "rewards": "+1 prospérité, +2 soldats"
             }
         ]
     }

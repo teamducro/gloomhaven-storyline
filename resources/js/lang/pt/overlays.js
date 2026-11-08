@@ -1,44 +1,44 @@
 export default {
     "fh-A": {
-        "name": "Boat"
+        "name": "Barco"
     },
     "fh-B": {
-        "name": "Sled"
+        "name": "Trenó"
     },
     "fh-C": {
-        "name": "Climbing Gear"
+        "name": "Equipamento de Escalada"
     },
     "fh-D": {
-        "name": "Ice Spike"
+        "name": "Espinho de Gelo"
     },
     "fh-E": {
-        "name": "Portcullis"
+        "name": "Grade Levadiça"
     },
     "fh-F": {
-        "name": "Statue"
+        "name": "Estátua"
     },
     "fh-G_red": {
-        "name": "Red Well"
+        "name": "Poço Vermelho"
     },
     "fh-G_blue": {
-        "name": "Blue Well"
+        "name": "Poço Azul"
     },
     "fh-H": {
-        "name": "Stage"
+        "name": "Palco"
     },
     "fh-J": {
-        "name": "Wall"
+        "name": "Muro"
     },
     "fh-K": {
-        "name": "Wall"
+        "name": "Muro"
     },
     "fh-L": {
-        "name": "Wall"
+        "name": "Muro"
     },
     "fh-M": {
-        "name": "Wall"
+        "name": "Muro"
     },
     "fh-N": {
-        "name": "Wall"
+        "name": "Muro"
     }
 }

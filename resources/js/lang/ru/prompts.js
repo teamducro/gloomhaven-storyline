@@ -1,78 +1,78 @@
 export default {
     "dragon": {
-        "1": "Return the treasure to the Drake. Gain the Global Achievement “The Drake Aided”. Add City Event 75 and Road Event 66 to the deck",
-        "2": "Do not aid the Drake.",
-        "title": "Friend or Foe",
-        "text": "You retrieved the Drake’s treasure. Do you return it to the Drake or do you follow the Guard Captain’s orders and attempt to kill the Drake?"
+        "1": "Верните сокровище дрейку. Получите общее достижение «Помощь дрейку». Добавьте в колоду карту события «Город» 75 и карту события «Дорога» 66",
+        "2": "Не помогайте дрейку.",
+        "title": "Друг или враг",
+        "text": "Вы вернули сокровище дрейка. Отдадите ли вы его дрейку или последуете приказу капитана стражи и попытаетесь убить дрейка?"
     },
     "burningMountain": {
-        "1": "Conclusion A: You decide to end your turn at G and remove one of the items from the game.",
-        "2": "Conclusion B: After looting the chest, all characters returned to the entrance before becoming exhausted.",
-        "title": "Escape The Burning Mountain",
-        "text": "You looted the treasure. Do you dare to escape the rumbling volcano and keep the retrieved items?"
+        "1": "Завершение А: вы решаете закончить ход на клетке G и убрать один из предметов из игры.",
+        "2": "Завершение Б: после добычи сундука все персонажи вернулись ко входу, прежде чем стали изнурёнными.",
+        "title": "Бегство с пылающей горы",
+        "text": "Вы добыли сокровище. Осмелитесь ли вы бежать из содрогающегося вулкана и сохранить найденные предметы?"
     },
     "merchantsBay": {
-        "1": "You recovered both scrolls.",
-        "2": "You failed to recover the Record of the Journey.",
-        "3": "You failed to recover the Record of Accounts.",
-        "title": "The Merchant’s Bay",
-        "text": "You doused the flames and disposed the interlopers. How many records were you able to save?"
+        "1": "Вы спасли оба свитка.",
+        "2": "Вам не удалось спасти «Запись о путешествии».",
+        "3": "Вам не удалось спасти «Учётную запись».",
+        "title": "Купеческая бухта",
+        "text": "Вы потушили пламя и расправились с незваными гостями. Сколько записей вам удалось спасти?"
     },
     "shiftingGears": {
-        "1": "All enemies are killed.",
+        "1": "Все враги убиты.",
         "2": "???",
-        "title": "Bastian’s workshop",
-        "text": "Did you manage to kill all enemies?"
+        "title": "Мастерская Бастиана",
+        "text": "Удалось ли вам убить всех врагов?"
     },
     "searchPiecesOfAnArtifact": {
-        "1": "All enemies are killed.",
-        "2": "Found more pieces of the rift device.",
-        "title": "Search pieces of the rift device",
-        "text": "Did you manage to kill all enemies?"
+        "1": "Все враги убиты.",
+        "2": "Найдены ещё части устройства портала.",
+        "title": "Поиск частей устройства портала",
+        "text": "Удалось ли вам убить всех врагов?"
     },
     "directingBeams": {
-        "1": "All four beams are directed at the fountain",
-        "2": "Survived for fourteen rounds",
-        "title": "Directing Beams",
-        "text": "Did you direct the beams to the fountain?"
+        "1": "Все четыре луча направлены на фонтан",
+        "2": "Продержались четырнадцать раундов",
+        "title": "Направление лучей",
+        "text": "Удалось ли вам направить лучи на фонтан?"
     },
     "aftershocks": {
-        "1": "Exactly four civilians are alive.",
-        "2": "Five or more civilians are alive.",
-        "title": "Protect the civilians",
-        "text": "How many Valraths were you able to bring to safety?"
+        "1": "Живы ровно четыре мирных жителя.",
+        "2": "Живы пять или более мирных жителей.",
+        "title": "Защита мирных жителей",
+        "text": "Скольких валратов вам удалось спасти?"
     },
     "bloodyWar": {
-        "1": "A: Assist the Valraths",
-        "2": "B: Assist the Humans",
-        "3": "C: Fight both sides",
-        "title": "Bloody Demon War",
-        "text": "Which side did you choose?"
+        "1": "А: помочь валратам",
+        "2": "Б: помочь людям",
+        "3": "В: сражаться с обеими сторонами",
+        "title": "Кровавая война демонов",
+        "text": "Какую сторону вы выбрали?"
     },
     "escapeFromTheHusk": {
-        "1": "All characters escaped.",
+        "1": "Все персонажи сбежали.",
         "2": "???",
-        "title": "Escape from The Husk",
-        "text": "Did all characters escape through an exit?"
+        "title": "Бегство из Оболочки",
+        "text": "Сбежали ли все персонажи через выход?"
     },
     "undeadTerrors": {
-        "1": "Give the potion to Selandre.",
-        "2": "Tell Selandre the potion was destroyed.",
-        "title": "Can you trust Selandre?",
-        "text": "Do you listen to Dominic's last words or your greed?"
+        "1": "Отдать зелье Селандре.",
+        "2": "Сказать Селандре, что зелье уничтожено.",
+        "title": "Можно ли доверять Селандре?",
+        "text": "Вы послушаете последние слова Доминика или свою жадность?"
     },
     "capstoneTest": {
-        "1": "One named enemy is killed",
-        "2": "Two named enemies are killed",
-        "3": "Three named enemies are killed",
-        "title": "Test your Power Modulator",
-        "text": "How many Named Enemies were you able to kill before exhausting?"
+        "1": "Убит один именованный враг",
+        "2": "Убито два именованных врага",
+        "3": "Убито три именованных врага",
+        "title": "Испытание вашего модулятора силы",
+        "text": "Скольких именованных врагов вам удалось убить до того, как вы изнемогли?"
     },
     "unseenPlight": {
-        "1": "Killed the Guttermaw, claiming Guttermaw's Bounty",
-        "2": "Saved the children, fulfilling Feigrin's Request",
-        "title": "Broken Homes and Lairs",
-        "text": "Did you bring death or save lives?"
+        "1": "Убили Гаттермо, получив «Награду Гаттермо»",
+        "2": "Спасли детей, выполнив «Просьбу Фейргрина»",
+        "title": "Разрушенные дома и логова",
+        "text": "Вы принесли смерть или спасли жизни?"
     },
     "startingMorale": {
         "1": "0",
@@ -81,50 +81,50 @@ export default {
         "4": "3",
         "5": "4",
         "6": "5",
-        "title": "Starting Morale",
-        "text": "How many City Guards are still on the map?"
+        "title": "Начальный боевой дух",
+        "text": "Сколько городских стражников всё ещё находятся на карте?"
     },
     "algoxAltercation": {
-        "1": "Snowdancer is dead.",
-        "2": "Frozen Fist is dead.",
-        "title": "Algox altercation",
-        "text": "Which side did you choose?"
+        "1": "Снежный Танцор мёртв.",
+        "2": "Ледяной Кулак мёртв.",
+        "title": "Стычка алгоксов",
+        "text": "Какую сторону вы выбрали?"
     },
     "finalNegotiation": {
-        "1": "Try to broker peace with the automatons",
-        "2": "Destroy them",
-        "title": "Final Negotiation",
-        "text": "Which path will you choose?"
+        "1": "Попытаться заключить мир с автоматонами",
+        "2": "Уничтожить их",
+        "title": "Последние переговоры",
+        "text": "Какой путь вы выберете?"
     },
     "friendOfTheFishKing": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Friend of the Fish King",
-        "text": "Did you agree to the Fish King's proposition?"
+        "1": "Да",
+        "2": "Нет",
+        "title": "Друг Короля-рыбы",
+        "text": "Приняли ли вы предложение Короля-рыбы?"
     },
     "acceptTheAscension": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Accept the Ascension",
-        "text": "Did you accept the Fish King's ascension?"
+        "1": "Да",
+        "2": "Нет",
+        "title": "Принять вознесение",
+        "text": "Приняли ли вы вознесение от Короля-рыбы?"
     },
     "brothersSurvival": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Brother' Survival",
-        "text": "Did both brothers survive?"
+        "1": "Да",
+        "2": "Нет",
+        "title": "Выживание братьев",
+        "text": "Выжили ли оба брата?"
     },
     "rattuscasShare": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Rattusca's Share",
-        "text": "Did you give Rattusca her share?"
+        "1": "Да",
+        "2": "Нет",
+        "title": "Доля Раттуски",
+        "text": "Отдали ли вы Раттуске её долю?"
     },
     "peaceNegotiations": {
-        "1": "Support Scabwit (Vermlings)",
-        "2": "Support Yoglang (Algox)",
-        "title": "Peace Negotiations",
-        "text": "Who did you support in the brawl?"
+        "1": "Поддержать Скабвита (вермлинги)",
+        "2": "Поддержать Йоглэнга (алгоксы)",
+        "title": "Мирные переговоры",
+        "text": "Кого вы поддержали в потасовке?"
     },
     "episodesOvercome": {
         "1": "1",
@@ -132,8 +132,8 @@ export default {
         "3": "3",
         "4": "4",
         "5": "5",
-        "title": "Episodes Overcome",
-        "text": "How many episodes did you overcome?"
+        "title": "Пройденные эпизоды",
+        "text": "Сколько эпизодов вы преодолели?"
     },
     "pylonsDestroyed": {
         "1": "0",
@@ -143,8 +143,8 @@ export default {
         "5": "4",
         "6": "5",
         "7": "6",
-        "title": "Pylons Destroyed",
-        "text": "How many pylons were destroyed?"
+        "title": "Уничтоженные пилоны",
+        "text": "Сколько пилонов было уничтожено?"
     },
     "wagonsEscaped": {
         "1": "1",
@@ -152,90 +152,90 @@ export default {
         "3": "3",
         "4": "4",
         "5": "5",
-        "title": "Wagons Escaped",
-        "text": "How many wagons escaped?"
+        "title": "Уехавшие повозки",
+        "text": "Сколько повозок спаслось?"
     },
     "mindtheifsWill": {
-        "1": "Automaton destroyed, technology given to vermlings",
-        "2": "Automaton destroyed, technology kept",
-        "3": "Mind control device disabled",
-        "title": "Mindtheif's Will",
-        "text": "What did you do with the mind control device?"
+        "1": "Автоматон уничтожен, технологии переданы вермлингам",
+        "2": "Автоматон уничтожен, технологии оставлены себе",
+        "3": "Устройство контроля разума отключено",
+        "title": "Воля Похитителя разума",
+        "text": "Что вы сделали с устройством контроля разума?"
     },
     "hungryMawDead": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Hungry Maw Dead",
-        "text": "Is the Hungry Maw dead?"
+        "1": "Да",
+        "2": "Нет",
+        "title": "Голодная Пасть мертва",
+        "text": "Мертва ли Голодная Пасть?"
     },
     "cratesLooted": {
         "1": "1",
         "2": "2",
         "3": "3",
         "4": "4",
-        "title": "Crates Looted",
-        "text": "How many crates did you loot?"
+        "title": "Ящики разграблены",
+        "text": "Сколько ящиков вы разграбили?"
     },
     "embellismentsCompleted": {
-        "1": "Seven or fewer",
-        "2": "Eight to fifteen",
-        "3": "Sixteen or more",
-        "title": "Embellisments Completed",
-        "text": "How many embellisments did you complete?"
+        "1": "Семь или меньше",
+        "2": "От восьми до пятнадцати",
+        "3": "Шестнадцать или больше",
+        "title": "Выполненные украшения",
+        "text": "Сколько украшений вы выполнили?"
     },
     "sunAgatesReturned": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Sun Agates Returned",
-        "text": "Did you return the sun agates to Derrick?"
+        "1": "Да",
+        "2": "Нет",
+        "title": "Солнечные агаты возвращены",
+        "text": "Вернули ли вы солнечные агаты Деррику?"
     },
     "gh2-13": {
-        "1": "Section 18.3",
-        "2": "Section 44.3",
-        "3": "Section 51.1",
-        "title": "Icecrag Ascent",
-        "text": "Which conclusion section did you read?"
+        "1": "Раздел 18.3",
+        "2": "Раздел 44.3",
+        "3": "Раздел 51.1",
+        "title": "Восхождение на Ледяной утёс",
+        "text": "Какой раздел завершения вы прочитали?"
     },
     "gh2-27": {
-        "1": "Section 10.1",
-        "2": "Section 50.2",
-        "title": "Infernal Throne",
-        "text": "Which conclusion section did you read?"
+        "1": "Раздел 10.1",
+        "2": "Раздел 50.2",
+        "title": "Дьявольский трон",
+        "text": "Какой раздел завершения вы прочитали?"
     },
     "gh2-28": {
-        "1": "Section 72.3",
-        "2": "Section 75.3",
-        "3": "Section 76.4",
-        "title": "Temple of the Seer",
-        "text": "Which conclusion section did you read?"
+        "1": "Раздел 72.3",
+        "2": "Раздел 75.3",
+        "3": "Раздел 76.4",
+        "title": "Храм прорицателя",
+        "text": "Какой раздел завершения вы прочитали?"
     },
     "gh2-31": {
-        "1": "Section 26.6",
-        "2": "Section 76.1",
-        "title": "Decrepit Wood",
-        "text": "Which conclusion section did you read?"
+        "1": "Раздел 26.6",
+        "2": "Раздел 76.1",
+        "title": "Ветхая пуща",
+        "text": "Какой раздел завершения вы прочитали?"
     },
     "gh2-32": {
-        "1": "Section 16.3",
-        "2": "Section 16.3 and 81.5",
-        "3": "Section 62.5",
-        "4": "Section 78.6",
-        "5": "Section 78.6 and 81.5",
-        "6": "Section 81.5",
-        "title": "Savvas Armory",
-        "text": "Which conclusion section did you read?"
+        "1": "Раздел 16.3",
+        "2": "Раздел 16.3 и 81.5",
+        "3": "Раздел 62.5",
+        "4": "Раздел 78.6",
+        "5": "Раздел 78.6 и 81.5",
+        "6": "Раздел 81.5",
+        "title": "Оружейная саввасов",
+        "text": "Какой раздел завершения вы прочитали?"
     },
     "gh2-34": {
-        "1": "Section 36.4",
-        "2": "Section 89.2",
-        "title": "Timeworn Tomb",
-        "text": "Which conclusion section did you read?"
+        "1": "Раздел 36.4",
+        "2": "Раздел 89.2",
+        "title": "Вековая гробница",
+        "text": "Какой раздел завершения вы прочитали?"
     },
     "gh2-43": {
-        "1": "Section 80.3",
-        "2": "Section 106.1",
-        "3": "Section 132.4",
-        "title": "Chasing Secrets",
-        "text": "Which conclusion section did you read?"
+        "1": "Раздел 80.3",
+        "2": "Раздел 106.1",
+        "3": "Раздел 132.4",
+        "title": "В погоне за тайнами",
+        "text": "Какой раздел завершения вы прочитали?"
     }
 }

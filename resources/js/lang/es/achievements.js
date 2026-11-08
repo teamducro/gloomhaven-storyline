@@ -141,13 +141,13 @@ export default {
         "name": "Mal negocio"
     },
     "gh-PSOX1": {
-        "name": "Nobles’ Crypt"
+        "name": "Cripta de los Nobles"
     },
     "gh-PSOX2": {
-        "name": "Flooded Crypt"
+        "name": "Cripta inundada"
     },
     "gh-PSOX3": {
-        "name": "Crypt of the Ancients"
+        "name": "Cripta de los Antiguos"
     },
     "gh-PTPS": {
         "name": "El origen del veneno"
@@ -252,154 +252,154 @@ export default {
         "name": "Lazos cortados"
     },
     "gh-PA": {
-        "name": "Accomplices"
+        "name": "Cómplices"
     },
     "gh-PS": {
-        "name": "Saboteurs"
+        "name": "Saboteadores"
     },
     "cs-PCSOD": {
-        "name": "Ooze Destroyed"
+        "name": "Cieno destruido"
     },
     "cs-PCSFL": {
-        "name": "Fallen Lava"
+        "name": "Lava caída"
     },
     "cs-PCSFM": {
-        "name": "Follow the Money"
+        "name": "Sigue al dinero"
     },
     "cs-PCSFW": {
-        "name": "Frozen Warrior"
+        "name": "Guerrero congelado"
     },
     "cs-PCSOA": {
-        "name": "Oak Alliance"
+        "name": "Alianza del Roble"
     },
     "cs-PCSIA": {
-        "name": "Inox Alliance"
+        "name": "Alianza Inox"
     },
     "cs-PCSGB": {
-        "name": "Guttermaw's Bounty"
+        "name": "Recompensa de Guttermaw"
     },
     "cs-PCSFR": {
-        "name": "Feirgrin's Request"
+        "name": "Petición de Feirgrin"
     },
     "cs-PCSPL": {
-        "name": "A Potion Lost"
+        "name": "Una poción perdida"
     },
     "cs-PCSTM": {
-        "name": "Take the Money"
+        "name": "Coge el dinero"
     },
     "cs-PCSAM": {
-        "name": "Accomplished Mercenaries"
+        "name": "Mercenarios consumados"
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        "name": "Amistad de los Voz de Hielo"
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        "name": "Amistad de los Voz de Nieve"
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        "name": "Amistad de los Voz de Escarcha"
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        "name": "Destructor de los Voz de Hielo"
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        "name": "Destructor de los Voz de Nieve"
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        "name": "Amistad del Rey del Mar"
     },
     "fh-CCU": {
-        "name": "Crown United"
+        "name": "La corona reunida"
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        "name": "Aliados desencadenados"
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        "name": "Desencadenados desactivados"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "Adentrándose en el bosque"
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        "name": "Pimiento de fuego"
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        "name": "Buscadores de la esquirla"
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        "name": "Frasco vacío"
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        "name": "Frasco con bicho"
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        "name": "Núcleo descargado"
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        "name": "Núcleo cargado"
     },
     "fh-CHF": {
-        "name": "Harvest Festival"
+        "name": "Fiesta de la cosecha"
     },
     "fh-CBT": {
-        "name": "Brummix Tracks"
+        "name": "Huellas de Brummix"
     },
     "fh-CBT2": {
-        "name": "Brummix Tracks x2"
+        "name": "Huellas de Brummix x2"
     },
     "fh-CBT3": {
-        "name": "Brummix Tracks x3"
+        "name": "Huellas de Brummix x3"
     },
     "fh-CBT4": {
-        "name": "Brummix Tracks x4"
+        "name": "Huellas de Brummix x4"
     },
     "fh-CBT5": {
-        "name": "Brummix Tracks x5"
+        "name": "Huellas de Brummix x5"
     },
     "fh-CCCS": {
-        "name": "Coral Crown Shard"
+        "name": "Esquirla de la Corona de Coral"
     },
     "fh-CCCS2": {
-        "name": "Coral Crown Shard x2"
+        "name": "Esquirla de la Corona de Coral x2"
     },
     "fh-CCCS3": {
-        "name": "Coral Crown Shard x3"
+        "name": "Esquirla de la Corona de Coral x3"
     },
     "fh-CCCS4": {
-        "name": "Coral Crown Shard x4"
+        "name": "Esquirla de la Corona de Coral x4"
     },
     "fh-CCCS5": {
-        "name": "Coral Crown Shard x5"
+        "name": "Esquirla de la Corona de Coral x5"
     },
     "fh-CCCS6": {
-        "name": "Coral Crown Shard x6"
+        "name": "Esquirla de la Corona de Coral x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Corazón de hielo"
     },
     "fh-PHOS": {
-        "name": "Heart of Snow"
+        "name": "Corazón de nieve"
     },
     "gh2-G2ATD": {
-        "name": "Activating the Device"
+        "name": "Activación del dispositivo"
     },
     "gh2-G2AUP": {
-        "name": "An Uneasy Peace"
+        "name": "Una paz inestable"
     },
     "gh2-G2AT": {
         "name": "Tecnología antigua"
     },
     "gh2-G2CRD": {
-        "name": "City Rule: Demons"
+        "name": "Gobierno de la ciudad: Demonios"
     },
     "gh2-G2CRME": {
-        "name": "City Rule: Merchants"
+        "name": "Gobierno de la ciudad: Mercaderes"
     },
     "gh2-G2CRMI": {
-        "name": "City Rule: Military"
+        "name": "Gobierno de la ciudad: Militares"
     },
     "gh2-G2EM": {
-        "name": "Elements Mastered"
+        "name": "Elementos dominados"
     },
     "gh2-G2EOC": {
         "name": "El fin de la corrupción"
@@ -408,22 +408,22 @@ export default {
         "name": "El fin de la Penumbra"
     },
     "gh2-G2HW": {
-        "name": "Hallowed Waters"
+        "name": "Aguas sagradas"
     },
     "gh2-G2ITD": {
-        "name": "Into the Depths"
+        "name": "En las profundidades"
     },
     "gh2-G2PTB": {
-        "name": "Peace Through Bloodshed"
+        "name": "Paz mediante el derramamiento de sangre"
     },
     "gh2-G2TCE": {
-        "name": "The Candle Extinguished"
+        "name": "La vela extinguida"
     },
     "gh2-G2TCK": {
-        "name": "The Candle Kept"
+        "name": "La vela conservada"
     },
     "gh2-G2TDR": {
-        "name": "The Darkness Retreats"
+        "name": "La oscuridad retrocede"
     },
     "gh2-G2TDA": {
         "name": "El Draco auxiliado"
@@ -441,27 +441,27 @@ export default {
         "name": "La Voz silenciada"
     },
     "gh2-P2R16": {
-        "name": "Faction Reputation 16"
+        "name": "Reputación de facción 16"
     },
     "gh2-P2R20": {
-        "name": "Faction Reputation 20"
+        "name": "Reputación de facción 20"
     },
     "gh2-P2RD6": {
-        "name": "Demon Reputation 6"
+        "name": "Reputación con los Demonios 6"
     },
     "gh2-P2RD12": {
-        "name": "Demon Reputation 12"
+        "name": "Reputación con los Demonios 12"
     },
     "gh2-P2RME6": {
-        "name": "Merchant Reputation 6"
+        "name": "Reputación con los Mercaderes 6"
     },
     "gh2-P2RME12": {
-        "name": "Merchant Reputation 12"
+        "name": "Reputación con los Mercaderes 12"
     },
     "gh2-P2RMI6": {
-        "name": "Military Reputation 6"
+        "name": "Reputación con los Militares 6"
     },
     "gh2-P2RMI12": {
-        "name": "Military Reputation 12"
+        "name": "Reputación con los Militares 12"
     }
 }

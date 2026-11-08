@@ -6,7 +6,7 @@ export default {
         "name": "Jekserah Tervei"
     },
     "gh-PDB": {
-        "name": "Dark Bounty"
+        "name": "Sötét jutalom"
     },
     "gh-GTMF": {
         "name": "A Kereskedő Elmenekül"
@@ -15,7 +15,7 @@ export default {
         "name": "A holtak inváziója"
     },
     "gh-PADE": {
-        "name": "A Demon's Errand"
+        "name": "Egy démon megbízása"
     },
     "gh-GCRE": {
         "name": "Városvezetés: Kereskedők"
@@ -30,7 +30,7 @@ export default {
         "name": "A varázsgömb hatalma"
     },
     "gh-PSC": {
-        "name": "Stonebreaker's Censer"
+        "name": "A Kőtörő füstölője"
     },
     "gh-GTRN": {
         "name": "A Síkkapu semlegesítve"
@@ -60,37 +60,37 @@ export default {
         "name": "Ősi technológia x5"
     },
     "gh-PTR": {
-        "name": "Through the Ruins"
+        "name": "A romokon át"
     },
     "gh-PTVC": {
-        "name": "The Voice's Command"
+        "name": "A Hang parancsa"
     },
     "gh-PTDC": {
         "name": "A gyík parancsa"
     },
     "gh-PFC": {
-        "name": "Following Clues"
+        "name": "Nyomok követése"
     },
     "gh-PAI": {
-        "name": "An Invitation"
+        "name": "Egy meghívás"
     },
     "gh-GTED": {
         "name": "A sötétség szélén"
     },
     "gh-PTSV": {
-        "name": "The Scepter and the Voice"
+        "name": "A jogar és a Hang"
     },
     "gh-GAC": {
         "name": "Az Ereklye: Megtisztítva"
     },
     "gh-PTVT": {
-        "name": "The Voices Treasure"
+        "name": "A Hang kincse"
     },
     "gh-PTDT": {
         "name": "A gyík kincse"
     },
     "gh-GTDS": {
-        "name": "The Drake Slain"
+        "name": "A gyík halála"
     },
     "gh-GTDA": {
         "name": "A gyík megsegítése"
@@ -99,13 +99,13 @@ export default {
         "name": "Városvezetés: Démonok"
     },
     "gh-PTTT": {
-        "name": "Through the Trench"
+        "name": "Az árkon át"
     },
     "gh-PRA": {
-        "name": "Redthorn's Aid"
+        "name": "Redthorn segítsége"
     },
     "gh-PATD": {
-        "name": "Across the Divide"
+        "name": "Át a szakadékon"
     },
     "gh-GTVF": {
         "name": "A Hang kiszabadul"
@@ -132,274 +132,274 @@ export default {
         "name": "A Homály végzete"
     },
     "gh-PTTN": {
-        "name": "Through the Nest"
+        "name": "A fészken át"
     },
     "gh-PAMT": {
-        "name": "A Map to Treasure"
+        "name": "Térkép a kincshez"
     },
     "gh-PBB": {
-        "name": "Bad Business"
+        "name": "Rossz üzlet"
     },
     "gh-PSOX1": {
-        "name": "Nobles’ Crypt"
+        "name": "Nemesek kriptája"
     },
     "gh-PSOX2": {
-        "name": "Flooded Crypt"
+        "name": "Elárasztott kripta"
     },
     "gh-PSOX3": {
-        "name": "Crypt of the Ancients"
+        "name": "Az ősök kriptája"
     },
     "gh-PTPS": {
-        "name": "The Poison's Source"
+        "name": "A méreg forrása"
     },
     "gh-PSB": {
-        "name": "Sun-Blessed"
+        "name": "Napáldotta"
     },
     "gh-PSR": {
         "name": "Sin-Ra"
     },
     "gh-PDC": {
-        "name": "Debt Collection"
+        "name": "Adósság behajtása"
     },
     "gh-PWS": {
-        "name": "Water Staff"
+        "name": "Vízbot"
     },
     "gh-PFA": {
-        "name": "Fish's Aid"
+        "name": "Fish segítsége"
     },
     "gh-PT": {
-        "name": "Tremors"
+        "name": "Remegések"
     },
     "gh-PHSE": {
-        "name": "High Sea Escort"
+        "name": "Kíséret a nyílt tengeren"
     },
     "gh-PGJ": {
-        "name": "Grave Job"
+        "name": "Sírásó meló"
     },
     "gh-PNE": {
-        "name": "Northern Expedition"
+        "name": "Északi expedíció"
     },
     "gh-GTTP": {
-        "name": "Through the Portal"
+        "name": "A síkkapun át"
     },
     "gh-PO": {
-        "name": "Opportunists"
+        "name": "Opportunisták"
     },
     "gh-GKIP": {
-        "name": "Knowledge is Power"
+        "name": "A tudás hatalom"
     },
     "gh-GKIP2": {
-        "name": "Knowledge is Power x2"
+        "name": "A tudás hatalom x2"
     },
     "gh-GKIP3": {
-        "name": "Knowledge is Power x3"
+        "name": "A tudás hatalom x3"
     },
     "gh-GKIP4": {
-        "name": "Knowledge is Power x4"
+        "name": "A tudás hatalom x4"
     },
     "gh-PAD": {
-        "name": "Angels of Death"
+        "name": "A halál angyalai"
     },
     "gh-PC": {
-        "name": "Custodians"
+        "name": "Gondnokok"
     },
     "gh-PHP": {
-        "name": "Hunted Prey"
+        "name": "Űzött zsákmány"
     },
     "gh-GPOA": {
-        "name": "Pieces of an Artifact"
+        "name": "Az Ereklye darabjai"
     },
     "gh-GPOA2": {
-        "name": "Pieces of an Artifact x2"
+        "name": "Az Ereklye darabjai x2"
     },
     "gh-GPOA3": {
-        "name": "Pieces of an Artifact x3"
+        "name": "Az Ereklye darabjai x3"
     },
     "gh-PGD": {
-        "name": "Guard Detail"
+        "name": "Őrszolgálat"
     },
     "gh-PDE": {
-        "name": "Dimensional Equilibrium"
+        "name": "Dimenzionális egyensúly"
     },
     "gh-PHH": {
-        "name": "Hunting the Hunter"
+        "name": "A vadász vadászata"
     },
     "gh-PXA": {
-        "name": "Xangroth's Aid"
+        "name": "Xangroth segítsége"
     },
     "gh-PDA": {
-        "name": "Diamara's Aid"
+        "name": "Diamara segítsége"
     },
     "gh-PBF": {
-        "name": "Beauty in Freedom"
+        "name": "Szépség a szabadságban"
     },
     "gh-GPA": {
-        "name": "A Peril Averted"
+        "name": "Elhárított veszély"
     },
     "gh-GPA2": {
-        "name": "A Peril Averted x2"
+        "name": "Elhárított veszély x2"
     },
     "gh-GPA3": {
-        "name": "A Peril Averted x3"
+        "name": "Elhárított veszély x3"
     },
     "gh-GPA4": {
-        "name": "A Peril Averted x4"
+        "name": "Elhárított veszély x4"
     },
     "gh-GMS": {
-        "name": "Mechanical Splendor"
+        "name": "Gépies pompa"
     },
     "gh-GST": {
-        "name": "Severed Ties"
+        "name": "Elvágott kötelékek"
     },
     "gh-PA": {
-        "name": "Accomplices"
+        "name": "Cinkosok"
     },
     "gh-PS": {
-        "name": "Saboteurs"
+        "name": "Szabotőrök"
     },
     "cs-PCSOD": {
-        "name": "Ooze Destroyed"
+        "name": "Iszap elpusztítva"
     },
     "cs-PCSFL": {
-        "name": "Fallen Lava"
+        "name": "Lehullott láva"
     },
     "cs-PCSFM": {
-        "name": "Follow the Money"
+        "name": "Kövesd a pénzt"
     },
     "cs-PCSFW": {
-        "name": "Frozen Warrior"
+        "name": "Megfagyott harcos"
     },
     "cs-PCSOA": {
-        "name": "Oak Alliance"
+        "name": "Tölgy szövetség"
     },
     "cs-PCSIA": {
-        "name": "Inox Alliance"
+        "name": "Inox szövetség"
     },
     "cs-PCSGB": {
-        "name": "Guttermaw's Bounty"
+        "name": "Guttermaw jutalma"
     },
     "cs-PCSFR": {
-        "name": "Feirgrin's Request"
+        "name": "Feirgrin kérése"
     },
     "cs-PCSPL": {
-        "name": "A Potion Lost"
+        "name": "Elveszett bájital"
     },
     "cs-PCSTM": {
-        "name": "Take the Money"
+        "name": "Vedd el a pénzt"
     },
     "cs-PCSAM": {
-        "name": "Accomplished Mercenaries"
+        "name": "Sikeres zsoldosok"
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        "name": "A Jégbeszélők barátja"
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        "name": "A Hóbeszélők barátja"
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        "name": "A Fagybeszélők barátja"
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        "name": "A Jégbeszélők pusztítója"
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        "name": "A Hóbeszélők pusztítója"
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        "name": "A Halkirály barátja"
     },
     "fh-CCU": {
-        "name": "Crown United"
+        "name": "Egyesült korona"
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        "name": "Láncolatlan szövetségesek"
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        "name": "Láncolatlanok deaktiválva"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "Az erdőbe"
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        "name": "Tűzbors"
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        "name": "Szilánkkereső"
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        "name": "Üres üveg"
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        "name": "Bogár az üvegben"
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        "name": "Feltöltetlen mag"
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        "name": "Feltöltött mag"
     },
     "fh-CHF": {
-        "name": "Harvest Festival"
+        "name": "Aratóünnep"
     },
     "fh-CBT": {
-        "name": "Brummix Tracks"
+        "name": "Brummix nyomai"
     },
     "fh-CBT2": {
-        "name": "Brummix Tracks x2"
+        "name": "Brummix nyomai x2"
     },
     "fh-CBT3": {
-        "name": "Brummix Tracks x3"
+        "name": "Brummix nyomai x3"
     },
     "fh-CBT4": {
-        "name": "Brummix Tracks x4"
+        "name": "Brummix nyomai x4"
     },
     "fh-CBT5": {
-        "name": "Brummix Tracks x5"
+        "name": "Brummix nyomai x5"
     },
     "fh-CCCS": {
-        "name": "Coral Crown Shard"
+        "name": "Korallkorona-szilánk"
     },
     "fh-CCCS2": {
-        "name": "Coral Crown Shard x2"
+        "name": "Korallkorona-szilánk x2"
     },
     "fh-CCCS3": {
-        "name": "Coral Crown Shard x3"
+        "name": "Korallkorona-szilánk x3"
     },
     "fh-CCCS4": {
-        "name": "Coral Crown Shard x4"
+        "name": "Korallkorona-szilánk x4"
     },
     "fh-CCCS5": {
-        "name": "Coral Crown Shard x5"
+        "name": "Korallkorona-szilánk x5"
     },
     "fh-CCCS6": {
-        "name": "Coral Crown Shard x6"
+        "name": "Korallkorona-szilánk x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "A Jég szíve"
     },
     "fh-PHOS": {
-        "name": "Heart of Snow"
+        "name": "A Hó szíve"
     },
     "gh2-G2ATD": {
-        "name": "Activating the Device"
+        "name": "Az eszköz aktiválása"
     },
     "gh2-G2AUP": {
-        "name": "An Uneasy Peace"
+        "name": "Nyugtalan béke"
     },
     "gh2-G2AT": {
         "name": "Ősi technológia"
     },
     "gh2-G2CRD": {
-        "name": "City Rule: Demons"
+        "name": "Városvezetés: Démonok"
     },
     "gh2-G2CRME": {
-        "name": "City Rule: Merchants"
+        "name": "Városvezetés: Kereskedők"
     },
     "gh2-G2CRMI": {
-        "name": "City Rule: Military"
+        "name": "Városvezetés: Katonaság"
     },
     "gh2-G2EM": {
-        "name": "Elements Mastered"
+        "name": "Elemek uralva"
     },
     "gh2-G2EOC": {
         "name": "A romlás vége"
@@ -408,28 +408,28 @@ export default {
         "name": "A Homály végzete"
     },
     "gh2-G2HW": {
-        "name": "Hallowed Waters"
+        "name": "Szentelt vizek"
     },
     "gh2-G2ITD": {
-        "name": "Into the Depths"
+        "name": "A mélybe"
     },
     "gh2-G2PTB": {
-        "name": "Peace Through Bloodshed"
+        "name": "Béke vérontással"
     },
     "gh2-G2TCE": {
-        "name": "The Candle Extinguished"
+        "name": "A gyertya kioltva"
     },
     "gh2-G2TCK": {
-        "name": "The Candle Kept"
+        "name": "A gyertya megőrizve"
     },
     "gh2-G2TDR": {
-        "name": "The Darkness Retreats"
+        "name": "A sötétség visszavonul"
     },
     "gh2-G2TDA": {
         "name": "A gyík megsegítése"
     },
     "gh2-G2TDS": {
-        "name": "The Drake Slain"
+        "name": "A gyík halála"
     },
     "gh2-G2TPE": {
         "name": "A varázsgömb hatalma"
@@ -441,27 +441,27 @@ export default {
         "name": "A Hang elhallgat"
     },
     "gh2-P2R16": {
-        "name": "Faction Reputation 16"
+        "name": "Frakció hírnév 16"
     },
     "gh2-P2R20": {
-        "name": "Faction Reputation 20"
+        "name": "Frakció hírnév 20"
     },
     "gh2-P2RD6": {
-        "name": "Demon Reputation 6"
+        "name": "Démon hírnév 6"
     },
     "gh2-P2RD12": {
-        "name": "Demon Reputation 12"
+        "name": "Démon hírnév 12"
     },
     "gh2-P2RME6": {
-        "name": "Merchant Reputation 6"
+        "name": "Kereskedő hírnév 6"
     },
     "gh2-P2RME12": {
-        "name": "Merchant Reputation 12"
+        "name": "Kereskedő hírnév 12"
     },
     "gh2-P2RMI6": {
-        "name": "Military Reputation 6"
+        "name": "Katonai hírnév 6"
     },
     "gh2-P2RMI12": {
-        "name": "Military Reputation 12"
+        "name": "Katonai hírnév 12"
     }
 }

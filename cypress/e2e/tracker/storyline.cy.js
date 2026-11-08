@@ -119,6 +119,26 @@ describe('Storyline', () => {
         utilities.closeModel();
     });
 
+    it('It moves a saved Portuguese preference to Brazilian Portuguese once', () => {
+        cy.visit('/tracker', {
+            onBeforeLoad: (window) => window.localStorage.setItem('lang', '"pt"')
+        });
+
+        cy.get('html').should('have.attr', 'lang', 'pt-BR');
+        cy.window().its('localStorage.lang').should('eq', '"br"');
+    });
+
+    it('It keeps European Portuguese once the preference was migrated', () => {
+        cy.visit('/tracker', {
+            onBeforeLoad: (window) => {
+                window.localStorage.setItem('lang', '"pt"');
+                window.localStorage.setItem('ptSplit', 'true');
+            }
+        });
+
+        cy.get('html').should('have.attr', 'lang', 'pt');
+    });
+
     it('It blocks required scenarios', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-8_c');
 

@@ -1,198 +1,198 @@
 export default {
     "fh-5": {
-        "name": "Mining Camp",
+        "name": "Шахтёрский лагерь",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {METAL} for 2 gold",
+                "operations": "Совместно купите до 1 {METAL} за 2 золота",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {METAL} for 2 gold each",
+                "operations": "Совместно купите до 2 {METAL} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 49.2"
+                "rewards": "+1 к процветанию, прочитайте раздел 49.2"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {METAL} for 2 gold each",
+                "operations": "Совместно купите до 3 {METAL} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {METAL} for 2 gold each",
+                "operations": "Совместно купите до 4 {METAL} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-12": {
-        "name": "Hunting Lodge",
+        "name": "Охотничий домик",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {HIDE} for 2 gold",
+                "operations": "Совместно купите до 1 {HIDE} за 2 золота",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 172.3"
+                "rewards": "+1 к процветанию, прочитайте раздел 172.3"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {HIDE} for 2 gold each",
+                "operations": "Совместно купите до 2 {HIDE} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {HIDE} for 2 gold each",
+                "operations": "Совместно купите до 3 {HIDE} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {HIDE} for 2 gold each",
+                "operations": "Совместно купите до 4 {HIDE} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-17": {
-        "name": "Logging Camp",
+        "name": "Лесозаготовительный лагерь",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {LUMBER} for 2 gold",
+                "operations": "Совместно купите до 1 {LUMBER} за 2 золота",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {LUMBER} for 2 gold each",
+                "operations": "Совместно купите до 2 {LUMBER} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {LUMBER} for 2 gold each",
+                "operations": "Совместно купите до 3 {LUMBER} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {LUMBER} for 2 gold each",
+                "operations": "Совместно купите до 4 {LUMBER} за 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-21": {
-        "name": "Inn",
+        "name": "Постоялый двор",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy 1 material resource for 2 gold",
+                "operations": "Совместно купите 1 материальный ресурс за 2 золота",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 151.2"
+                "rewards": "+1 к процветанию, прочитайте раздел 151.2"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 different material resources for 2 gold each",
+                "operations": "Совместно купите до 2 разных материальных ресурсов по 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 different material resources for 2 gold each",
+                "operations": "Совместно купите до 3 разных материальных ресурсов по 2 золота за каждый",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-24": {
-        "name": "Garden",
+        "name": "Сад",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                "operations": "Посадите травы ИЛИ получите по 1 траве с каждой засаженной грядки",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 78.4"
+                "rewards": "+1 к процветанию, прочитайте раздел 78.4"
             },
             {
                 "level": 2,
-                "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                "operations": "Посадите травы ИЛИ получите по 1 траве с каждой засаженной грядки",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, +1 plot"
+                "rewards": "+1 к процветанию, +1 грядка"
             },
             {
                 "level": 3,
-                "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                "operations": "Получите по 1 общей траве с каждой засаженной грядки, затем посадите травы",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 4,
-                "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                "operations": "Получите по 1 общей траве с каждой засаженной грядки, затем посадите травы",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, +1 plot"
+                "rewards": "+1 к процветанию, +1 грядка"
             }
         ]
     },
     "fh-34": {
-        "name": "Craftsman",
+        "name": "Ремесленник",
         "levels": [
             {
                 "level": 0
@@ -200,79 +200,79 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 1 общих {HIDE}",
                 "passive": "",
-                "rewards": "Add items 001 to 010 to the item supply"
+                "rewards": "Добавьте предметы с 001 по 010 в запас предметов"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 1 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 011 to 015 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 011 по 015 в запас предметов"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 1 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 016 to 020 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 016 по 020 в запас предметов"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 2 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 021 to 025 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 021 по 025 в запас предметов"
             },
             {
                 "level": 5,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 2 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 026 to 030 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 026 по 030 в запас предметов"
             },
             {
                 "level": 6,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 2 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 031 to 035 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 031 по 035 в запас предметов"
             },
             {
                 "level": 7,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 3 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 036 to 040 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 036 по 040 в запас предметов"
             },
             {
                 "level": 8,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 3 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 041 to 045 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 041 по 045 в запас предметов"
             },
             {
                 "level": 9,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Изготовление предметов",
+                "wrecked": "Потеряйте 3 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 046 to 050 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 046 по 050 в запас предметов"
             }
         ]
     },
     "fh-35": {
-        "name": "Alchemist",
+        "name": "Алхимик",
         "levels": [
             {
                 "level": 0
@@ -280,31 +280,31 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Brew 2-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Варка зелий из 2 трав",
+                "wrecked": "Персонажи не могут использовать зелья",
                 "passive": "",
                 "rewards": ""
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Brew and distill 2-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Варка и перегонка зелий из 2 трав",
+                "wrecked": "Персонажи не могут использовать зелья",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Brew and distill 2- and 3-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Варка и перегонка зелий из 2 и 3 трав",
+                "wrecked": "Персонажи не могут использовать зелья",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 183.5"
+                "rewards": "+1 к процветанию, прочитайте раздел 183.5"
             }
         ]
     },
     "fh-37": {
-        "name": "Trading Post",
+        "name": "Торговый пост",
         "levels": [
             {
                 "level": 0
@@ -312,39 +312,39 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Buy up to one item",
-                "wrecked": "Lose 5 collective gold",
+                "downtime": "Купите до 1 предмета",
+                "wrecked": "Потеряйте 5 общего золота",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 25.2"
+                "rewards": "+1 к процветанию, прочитайте раздел 25.2"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Buy up to two items",
-                "wrecked": "Lose 10 collective gold",
+                "downtime": "Купите до 2 предметов",
+                "wrecked": "Потеряйте 10 общего золота",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 12.4"
+                "rewards": "+1 к процветанию, прочитайте раздел 12.4"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Buy up to three items",
-                "wrecked": "Lose 15 collective gold",
+                "downtime": "Купите до 3 предметов",
+                "wrecked": "Потеряйте 15 общего золота",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 38.3"
+                "rewards": "+1 к процветанию, прочитайте раздел 38.3"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Buy up to four items",
-                "wrecked": "Lose 20 collective gold",
+                "downtime": "Купите до 4 предметов",
+                "wrecked": "Потеряйте 20 общего золота",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 196.2"
+                "rewards": "+1 к процветанию, прочитайте раздел 196.2"
             }
         ]
     },
     "fh-39": {
-        "name": "Jeweler",
+        "name": "Ювелир",
         "levels": [
             {
                 "level": 0
@@ -353,70 +353,70 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Повредите любое 1 здание",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 31.3"
+                "rewards": "+1 к процветанию, прочитайте раздел 31.3"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Повредите любое 1 здание",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 160 to 163 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 160 по 163 в запас предметов"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Повредите любое 1 здание",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 164 to 167 to the item supply"
+                "rewards": "+1 к процветанию, добавьте предметы с 164 по 167 в запас предметов"
             }
         ]
     },
     "fh-42": {
-        "name": "Temple of the Great Oak",
+        "name": "Храм Великого Дуба",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Каждый персонаж может потерять 5 золота, чтобы начать следующий сценарий с {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Каждый персонаж начинает следующий сценарий с {CURSE.fh}",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 192.5"
+                "rewards": "+1 к процветанию, прочитайте раздел 192.5"
             },
             {
                 "level": 2,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Каждый персонаж может потерять 5 золота, чтобы начать следующий сценарий с {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Каждый персонаж начинает следующий сценарий с {CURSE.fh}",
                 "passive": "",
-                "rewards": "+3 prosperity"
+                "rewards": "+3 к процветанию"
             },
             {
                 "level": 3,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Каждый персонаж может потерять 5 золота, чтобы начать следующий сценарий с {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Каждый персонаж начинает следующий сценарий с {CURSE.fh}",
                 "passive": "",
-                "rewards": "+5 prosperity"
+                "rewards": "+5 к процветанию"
             },
             {
                 "level": 4,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Каждый персонаж может потерять 5 золота, чтобы начать следующий сценарий с {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Каждый персонаж начинает следующий сценарий с {CURSE.fh}",
                 "passive": "",
                 "rewards": ""
             }
         ]
     },
     "fh-44": {
-        "name": "Enhancer",
+        "name": "Улучшатель",
         "levels": [
             {
                 "level": 0
@@ -424,111 +424,111 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
+                "downtime": "Покупка улучшений",
+                "wrecked": "Каждый персонаж начинает следующий сценарий с {DISARM.fh}",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 193.1"
+                "rewards": "+1 к процветанию, прочитайте раздел 193.1"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold",
-                "rewards": "+1 prosperity, read section 157.2"
+                "downtime": "Покупка улучшений",
+                "wrecked": "Каждый персонаж начинает следующий сценарий с {DISARM.fh}",
+                "passive": "Уменьшите стоимость всех улучшений на 10 золота",
+                "rewards": "+1 к процветанию, прочитайте раздел 157.2"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold and level penalties by 10 gold per level",
-                "rewards": "+1 prosperity"
+                "downtime": "Покупка улучшений",
+                "wrecked": "Каждый персонаж начинает следующий сценарий с {DISARM.fh}",
+                "passive": "Уменьшите стоимость всех улучшений на 10 золота, а штрафы за уровень — на 10 золота за каждый уровень",
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold, level penalties by 10 gold per level, and repeat penalties by 25 gold per enhancement",
-                "rewards": "+1 prosperity, read section 56.3"
+                "downtime": "Покупка улучшений",
+                "wrecked": "Каждый персонаж начинает следующий сценарий с {DISARM.fh}",
+                "passive": "Уменьшите стоимость всех улучшений на 10 золота, штрафы за уровень — на 10 золота за каждый уровень, а штрафы за повторные улучшения — на 25 золота за каждое улучшение",
+                "rewards": "+1 к процветанию, прочитайте раздел 56.3"
             }
         ]
     },
     "fh-65": {
-        "name": "Metal Depot",
+        "name": "Склад металла",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {METAL} for 5 gold",
-                "downtime": "Lose 2 collective {METAL}",
+                "operations": "Совместно продайте до 1 {METAL} за 5 золотых",
+                "downtime": "Потеряйте 2 общих {METAL}",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {METAL} for 5 gold each",
+                "operations": "Совместно продайте до 2 {METAL} за 5 золотых за каждый",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {METAL}",
+                "wrecked": "Потеряйте 2 общих {METAL}",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 к процветанию"
             }
         ]
     },
     "fh-67": {
-        "name": "Lumber Depot",
+        "name": "Склад древесины",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {LUMBER} for 5 gold",
+                "operations": "Совместно продайте до 1 {LUMBER} за 5 золотых",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {LUMBER}",
+                "wrecked": "Потеряйте 2 общих {LUMBER}",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 144.3"
+                "rewards": "+1 к процветанию, прочитайте раздел 144.3"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {LUMBER} for 5 gold each",
+                "operations": "Совместно продайте до 2 {LUMBER} за 5 золотых за каждый",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {LUMBER}",
+                "wrecked": "Потеряйте 2 общих {LUMBER}",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 к процветанию"
             }
         ]
     },
     "fh-72": {
-        "name": "Hide Depot",
+        "name": "Склад шкур",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {HIDE} for 5 gold",
+                "operations": "Совместно продайте до 1 {HIDE} за 5 золотых",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "wrecked": "Потеряйте 2 общих {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 173.1"
+                "rewards": "+1 к процветанию, прочитайте раздел 173.1"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {HIDE} for 5 gold each",
+                "operations": "Совместно продайте до 2 {HIDE} за 5 золотых за каждый",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "wrecked": "Потеряйте 2 общих {HIDE}",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 к процветанию"
             }
         ]
     },
     "fh-74": {
-        "name": "Tavern",
+        "name": "Таверна",
         "levels": [
             {
                 "level": 0
@@ -537,31 +537,31 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Потеряйте 1 боевой дух",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 160.2"
+                "rewards": "+1 к процветанию, прочитайте раздел 160.2"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Потеряйте 1 боевой дух",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 35.3"
+                "rewards": "+1 к процветанию, прочитайте раздел 35.3"
             },
             {
                 "level": 3,
-                "requires": "Requires 3 Ancient Coins (Item 245)",
+                "requires": "Требуются 3 древние монеты (предмет 245)",
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Потеряйте 1 боевой дух",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 113.1"
+                "rewards": "+1 к процветанию, прочитайте раздел 113.1"
             }
         ]
     },
     "fh-81": {
-        "name": "Hall of Revelry",
+        "name": "Зал веселья",
         "levels": [
             {
                 "level": 0
@@ -570,22 +570,22 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
-                "passive": "When the trials deck is complete, read section 187.1",
-                "rewards": "+1 prosperity, read section 178.2"
+                "wrecked": "Потеряйте 1 боевой дух",
+                "passive": "Когда колода испытаний завершена, прочитайте раздел 187.1",
+                "rewards": "+1 к процветанию, прочитайте раздел 178.2"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
-                "passive": "Access to Tholos’ Favours",
-                "rewards": "+1 prosperity"
+                "wrecked": "Потеряйте 1 боевой дух",
+                "passive": "Доступ к милостям Толоса",
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-83": {
-        "name": "Library",
+        "name": "Библиотека",
         "levels": [
             {
                 "level": 0
@@ -594,30 +594,30 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Потеряйте 1 вдохновение",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 190.3"
+                "rewards": "+1 к процветанию, прочитайте раздел 190.3"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Потеряйте 1 вдохновение",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 116.3"
+                "rewards": "+1 к процветанию, прочитайте раздел 116.3"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Потеряйте 1 вдохновение",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 89.2"
+                "rewards": "+1 к процветанию, прочитайте раздел 89.2"
             }
         ]
     },
     "fh-84": {
-        "name": "Workshop",
+        "name": "Мастерская",
         "levels": [
             {
                 "level": 0
@@ -626,14 +626,14 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 collective {LUMBER}",
-                "passive": "Each of the following upgrades (Boat, Sled, Climbing Gear) can be built in any order.",
-                "rewards": "+1 prosperity"
+                "wrecked": "Потеряйте 1 общих {LUMBER}",
+                "passive": "Каждое из следующих улучшений (лодка, сани, альпинистское снаряжение) можно построить в любом порядке.",
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-85": {
-        "name": "Carpenter",
+        "name": "Плотник",
         "levels": [
             {
                 "level": 0
@@ -642,22 +642,22 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose any 1 collective resource",
-                "passive": "Reduce all construction costs by 1 material resource",
-                "rewards": "+1 prosperity, read section 7.3"
+                "wrecked": "Потеряйте любой 1 общий ресурс",
+                "passive": "Уменьшите стоимость всех построек на 1 материальный ресурс",
+                "rewards": "+1 к процветанию, прочитайте раздел 7.3"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose any 1 collective resource",
-                "passive": "Reduce all construction costs by 1 material resource and the extra construction cost by 1 morale",
-                "rewards": "+1 prosperity"
+                "wrecked": "Потеряйте любой 1 общий ресурс",
+                "passive": "Уменьшите стоимость всех построек на 1 материальный ресурс, а дополнительную стоимость постройки — на 1 боевой дух",
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-88": {
-        "name": "Stables",
+        "name": "Конюшни",
         "levels": [
             {
                 "level": 0
@@ -666,38 +666,38 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring one pet into each scenario. Capacity: 4",
-                "rewards": "+1 prosperity, read section 3.1"
+                "wrecked": "Персонажи не могут использовать питомцев",
+                "passive": "Берите в каждый сценарий 1 питомца. Вместимость: 4",
+                "rewards": "+1 к процветанию, прочитайте раздел 3.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring one pet into each scenario. Capacity: 8",
-                "rewards": "+1 prosperity"
+                "wrecked": "Персонажи не могут использовать питомцев",
+                "passive": "Берите в каждый сценарий 1 питомца. Вместимость: 8",
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring two pets into each scenario. Capacity: 8",
-                "rewards": "+1 prosperity"
+                "wrecked": "Персонажи не могут использовать питомцев",
+                "passive": "Берите в каждый сценарий 2 питомцев. Вместимость: 8",
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 4,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring two pets into each scenario. Capacity: 12",
-                "rewards": "+1 prosperity"
+                "wrecked": "Персонажи не могут использовать питомцев",
+                "passive": "Берите в каждый сценарий 2 питомцев. Вместимость: 12",
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-90": {
-        "name": "Town Hall",
+        "name": "Ратуша",
         "levels": [
             {
                 "level": 0
@@ -706,65 +706,65 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw one challenge and keep up to one. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity, read section 189.1"
+                "wrecked": "Нельзя выполнять вызовы",
+                "passive": "Вытяните 1 вызов и оставьте до 1. Когда колода вызовов завершена, прочитайте раздел 190.1",
+                "rewards": "+1 к процветанию, прочитайте раздел 189.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw two challenges and keep up to one. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity"
+                "wrecked": "Нельзя выполнять вызовы",
+                "passive": "Вытяните 2 вызова и оставьте до 1. Когда колода вызовов завершена, прочитайте раздел 190.1",
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw three challenges and keep up to two. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity"
+                "wrecked": "Нельзя выполнять вызовы",
+                "passive": "Вытяните 3 вызова и оставьте до 2. Когда колода вызовов завершена, прочитайте раздел 190.1",
+                "rewards": "+1 к процветанию"
             }
         ]
     },
     "fh-98": {
-        "name": "Barracks",
+        "name": "Казармы",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                "operations": "Совместно обучите до 1 солдата за 3 золота и 1 материальный ресурс",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 4, Effect: advantage and -5{ATTACK.fh}",
-                "rewards": "+1 prosperity"
+                "wrecked": "Помеха при всех розыгрышах событий-атак. Нельзя использовать солдат.",
+                "passive": "Вместимость: 4, эффект: преимущество и -5{ATTACK.fh}",
+                "rewards": "+1 к процветанию"
             },
             {
                 "level": 2,
-                "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                "operations": "Совместно обучите до 1 солдата за 3 золота и 1 материальный ресурс",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 6, Effect: advantage and -15{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Помеха при всех розыгрышах событий-атак. Нельзя использовать солдат.",
+                "passive": "Вместимость: 6, эффект: преимущество и -15{ATTACK.fh}",
+                "rewards": "+1 к процветанию, +2 солдата"
             },
             {
                 "level": 3,
-                "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                "operations": "Совместно обучите до 2 солдат за 3 золота и 1 материальный ресурс за каждого",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 8, Effect: advantage and -25{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Помеха при всех розыгрышах событий-атак. Нельзя использовать солдат.",
+                "passive": "Вместимость: 8, эффект: преимущество и -25{ATTACK.fh}",
+                "rewards": "+1 к процветанию, +2 солдата"
             },
             {
                 "level": 4,
-                "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                "operations": "Совместно обучите до 2 солдат за 3 золота и 1 материальный ресурс за каждого",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 10, Effect: advantage and -35{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Помеха при всех розыгрышах событий-атак. Нельзя использовать солдат.",
+                "passive": "Вместимость: 10, эффект: преимущество и -35{ATTACK.fh}",
+                "rewards": "+1 к процветанию, +2 солдата"
             }
         ]
     }

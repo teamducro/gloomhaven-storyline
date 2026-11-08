@@ -1,11 +1,11 @@
 export default {
     "quest": {
         "1": {
-            "name": "The Merchant's Request",
+            "name": "Просьба торговки",
             "sections": {
-                "1": "The Valrath merchant Jekserah has offered to pay you ten gold coins to retrieve some stolen goods. By roughing up some local thugs, you’ve discovered the thieves’ hideout is the Black Barrow in the Corpsewood.",
-                "2": "You found your quarry within the barrow, but he slipped away. While chasing him down, you encountered the reason the bandits chose this particular barrow: animated bones. The bandits here appear to have some necromantic power. Nevertheless, you slew them and their unholy allies. Your target was not among the dead, but a passage way deeper into the catacombs awaits.",
-                "3": "You have defeated the Bandit Commander. Something about him seemed unnatural and he mentioned “the Gloom” during your battle. You found the stolen scrolls hidden in a cache in the Commander’s chamber and returned them to Jekserah for the agreed upon reward."
+                "1": "Валрат-торговка Джексера предложила вам десять золотых за возвращение украденных товаров. Намяв бока местным головорезам, вы выяснили, что воры прячутся в Чёрном кургане в Трупном лесу.",
+                "2": "В кургане вы нашли свою цель, но она ускользнула. Преследуя её, вы столкнулись с причиной, по которой бандиты выбрали именно этот курган: оживших костей. Судя по всему, бандиты обладают некромантической силой. Тем не менее вы расправились с ними и их нечестивыми союзниками. Цели среди мёртвых не оказалось, но дальше в катакомбы ведёт проход.",
+                "3": "Вы победили Главаря разбойников. Что-то в нём казалось неестественным, и во время боя он упомянул «Мрак». В тайнике в покоях Главаря вы нашли украденные свитки и вернули их Джексере за обещанную награду."
             },
             "stages": {
                 "0": "{1}",
@@ -14,11 +14,11 @@ export default {
             }
         },
         "2": {
-            "name": "The Merchant's Wrath",
+            "name": "Гнев торговки",
             "sections": {
-                "1": "Jekserah offers you another job after you finished your first one. A tribe of Inox in the Dagger Forest has ransacked a couple of her caravans headed to the Capital. She asked if you could make an example of them.",
-                "2": "The Inox tribe is dead. You've made an brutal example of them and no one will threaten Jekserah's caravans for quite a while. You don't exactly feel good about slaughtering parents in front of their children, but Jekserah paid you all the same.",
-                "3": "Jekserah has fled from Gloomhaven and sworn vengeange upon you due to your actions against her. She will not be keen on paying you for running her errands anymore."
+                "1": "Закончив первое задание, вы получаете от Джексеры новую работу. Племя иноксов в Кинжальном лесу разграбило пару её караванов, шедших в столицу. Она просит вас показательно расправиться с ними.",
+                "2": "Племя иноксов уничтожено. Вы жестоко проучили их, и теперь никто не посмеет угрожать караванам Джексеры довольно долго. Убивать родителей на глазах у детей не слишком приятно, но Джексера всё равно вам заплатила.",
+                "3": "Джексера бежала из Мрачной гавани и поклялась отомстить вам за ваши действия против неё. Платить вам за выполнение её поручений она больше не захочет."
             },
             "stages": {
                 "0": "{1}",
@@ -27,16 +27,16 @@ export default {
             }
         },
         "3": {
-            "name": "Seeking Gloom",
+            "name": "В поисках Мрака",
             "sections": {
-                "1": "The Bandit Commander's proclamations of a “Gloom” during your battle do not sit well with you. Sifting through the carnage left by the battle, you found a cache of scrolls. The writing upon them was in some unknown archaic language. Among the scrolls, you found a map of the northern countryside. A bend in the Still River was clearly marked as a point of interest. Contemplating whether you want to find out more about this so-called “Gloom,” you decided that the spot could be a point of interest for you, as well.",
-                "2": "The map lead to a crypt full of demons and cultists. Clearly, the bandits are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One is marked as being overrun by vicious undead. It looks as though you have an opportunity to get in the cult's good graces by helping to clear out a threat. This may help you learn more about the “Gloom”.",
-                "3": "After the terrible shrieks and moans of the undead ceased, a grinning hooded figure appeared before you. His demeanor was deeply unsettling. He asked another favor of you in exchange for forgiveness for killing his brethren. The cultists want the necromancer, Jekserah, dead. If you bring her head to their headquarters, you may find out more about the “Gloom”. The figure gave you details on where to find evidence of Jekserah's plans.",
-                "4": "You have slain Jekserah. As she collapsed, the life fleeing her eyes, she whispered at you “You have no idea what’s coming...”. Perhaps your old boss's head may prove useful in future dealings with the bandits.",
-                "5": "You have slain Jekserah. It's time to bring your old boss's head to the cult's headquarters.",
-                "6": "Unfortunately for the cultists, you have sided with Jekserah and taken over the city. Your mysterious contact will surely never want to meet with you now.",
-                "7": "You met the hooded figure at the cult's headquarters, where he thanked you graciously for your help in taking out the necromancer. He then introduced you to a black, flaming rift in space that he called his master, “The Gloom”. The figure then promptly betrayed you by summoning a horde of unnatural creatures in an attempt to kill you. Apparently, getting back into the cult's good graces isn't easy after murdering their followers and setting back their plans. After an exhausting battle, the Gloom spoke to you in a cold, low voice. “You have done well. My minions may not be able to forgive. But I can. Come. Come to me. Step into my realm. Embrace the inevitable.” The rift stands before you. Do you dare enter?",
-                "8": "You stepped into the black rift. The low voice spoke once more, “Tricked again. Truly amazing that creatures as stupid as yourselves have caused me so much trouble. No matter. You will rot here, completely cut off from your home. There will be no last stand. You will simply waste away. You will die without valor in a foreign place and there is no recourse. I leave you now forever. Good-bye.” The ensuing battle seemed endless. After killing everything, you banged on the walls, desperately hoping for something to continue fighting against in this exile. You grew tired, then your vision darkened. In your next breath, you found yourself laying in the grass outside of the cult’s hideout. “Know that I have spared you.” The low voice returned. “Your persistence intrigues me. I invite you to break yourself against me. It will be more entertaining than the last time I brought gloom to this world.” You bolted upright and rushed back into the crypt. Dead bodies of the cultists littered the floor. “I am not here anymore. These shells have served their purpose. My roots are now deep and you will soon encounter my endless power once more. I look forward to the day.”"
+                "1": "Слова Главаря разбойников о некоем «Мраке» не дают вам покоя. Разбирая последствия побоища, вы нашли тайник со свитками. Текст на них был написан на неизвестном древнем языке. Среди свитков обнаружилась карта северных земель. Изгиб реки Стилл был чётко отмечен как место, представляющее интерес. Раздумывая, хотите ли вы узнать больше об этом так называемом «Мраке», вы решили, что это место может заинтересовать и вас.",
+                "2": "Карта привела вас в склеп, полный демонов и культистов. Очевидно, что бандиты связаны с каким-то культом. Ваше появление прервало некий ритуал. Среди записей, найденных в ритуальном зале, есть заметки о нескольких других местах силы в округе. Одно из них помечено как захваченное свирепой нежитью. Похоже, у вас есть шанс снискать расположение культа, помогая устранить угрозу. Это может помочь вам узнать больше о «Мраке».",
+                "3": "Когда ужасные вопли и стоны нежити стихли, перед вами появилась ухмыляющаяся фигура в капюшоне. Её манеры глубоко тревожили. Она попросила вас об ещё одной услуге в обмен на прощение за убийство её братьев. Культисты хотят смерти некромантки Джексеры. Если вы принесёте её голову в их штаб, то, возможно, узнаете больше о «Мраке». Фигура рассказала, где найти доказательства планов Джексеры.",
+                "4": "Вы убили Джексеру. Падая, с гаснущей в глазах жизнью, она прошептала вам: «Вы даже не представляете, что грядёт...». Возможно, голова вашей бывшей начальницы пригодится вам в будущих делах с бандитами.",
+                "5": "Вы убили Джексеру. Пора принести голову вашей бывшей начальницы в штаб культа.",
+                "6": "К сожалению для культистов, вы встали на сторону Джексеры и захватили город. Ваш таинственный контакт теперь наверняка не захочет с вами встречаться.",
+                "7": "Вы встретились с фигурой в капюшоне в штабе культа, где она любезно поблагодарила вас за помощь в устранении некромантки. Затем она показала вам чёрный пылающий разрыв в пространстве, который назвала своим господином, «Мраком». После этого фигура тут же предала вас, призвав орду неестественных тварей, чтобы убить вас. Видимо, вернуть расположение культа после убийства его последователей и срыва его планов не так-то просто. После изнурительной битвы Мрак заговорил с вами холодным низким голосом: «Вы хорошо справились. Мои слуги, может быть, и не способны прощать. Но я могу. Придите ко мне. Шагните в моё царство. Примите неизбежное». Разрыв стоит перед вами. Осмелитесь ли вы войти?",
+                "8": "Вы шагнули в чёрный разрыв. Низкий голос заговорил снова: «Опять обманутые. Поистине удивительно, что такие глупые создания, как вы, причинили мне столько хлопот. Неважно. Вы сгниёте здесь, полностью отрезанные от дома. Последнего боя не будет. Вы просто зачахнете. Вы умрёте без доблести в чужой земле, и выхода нет. Я оставляю вас навсегда. Прощайте». Последовавшая битва казалась бесконечной. Убив всех, вы стучали по стенам, отчаянно надеясь найти хоть что-то, с чем можно продолжить сражаться в этом изгнании. Вы устали, затем зрение потемнело. Следующий вдох вы сделали уже лёжа на траве у входа в убежище культа. «Знайте, я пощадил вас», — вернулся низкий голос. «Ваше упорство занимает меня. Я приглашаю вас разбиться о меня. Это будет забавнее, чем в прошлый раз, когда я приносил мрак в этот мир». Вы вскочили и бросились обратно в склеп. На полу лежали мёртвые тела культистов. «Меня здесь больше нет. Эти оболочки сослужили свою службу. Мои корни теперь глубоки, и скоро вы снова встретитесь с моей бесконечной силой. Я жду этого дня»."
             },
             "stages": {
                 "0": "{1}",
@@ -51,10 +51,10 @@ export default {
             }
         },
         "4": {
-            "name": "Tales from the Crypt",
+            "name": "Истории из склепа",
             "sections": {
-                "1": "While investigating the “Gloom”, you discovered the bandits from the Black Barrow are associated with some sort of cult. Your arrival disrupted some sort of ritual. Among the scripts found in the ritual chamber are notes on a couple of other places of power in the area. One appears to see heavy use with the cult. It looks as though you have an opportunity to disrupt more of the cult's activities.",
-                "2": "You followed the writings to an ancient crypt believed to be the cult’s base of operations. A group of cultists were performing ritual incantations in front of a black, gaping hole in reality. With the cultists and their minions dead, the dark rift is now dormant."
+                "1": "Расследуя дело о «Мраке», вы обнаружили, что бандиты из Чёрного кургана связаны с каким-то культом. Ваше появление прервало некий ритуал. Среди записей, найденных в ритуальном зале, есть заметки о нескольких других местах силы в округе. Одно из них, судя по всему, активно используется культом. Похоже, у вас есть возможность сорвать ещё часть деятельности культа.",
+                "2": "По записям вы дошли до древнего склепа, который считается оплотом культа. Группа культистов читала ритуальные заклинания перед чёрной зияющей дырой в реальности. Теперь, когда культисты и их приспешники мертвы, тёмный разрыв затих."
             },
             "stages": {
                 "0": "{1}",
@@ -62,11 +62,11 @@ export default {
             }
         },
         "6": {
-            "name": "The Merchant's Secret",
+            "name": "Тайна торговки",
             "sections": {
-                "1": "When you left Jekserah's manor a Quatryl city guard approached you. She told you Jekserah has been trying to overthrow the military in Gloomhaven and is up to something sinister. The guard asked for your aid in uncovering Jekserah’s plans and expose her for who she really is.",
-                "2": "The warehouse was full of the undead. Jekserah had been using the necromantic scroll you delivered to raise the undead within the city walls. You fought your way to the back room of the warehouse and confronted Jekserah. Just before she flipped out a window she told you she'd be back with a legion of undead. To stop her you could locate her yourself or ask the help of an Aesther enchanter mentioned by the city guard",
-                "3": "You ignored the city guard Argeise's warnings and continued working for Jekserah. “Sinister machinations” is, of course, a troubling phrase to throw around, but the phrase “considerable reward” trumps that in a heartbeat. There is no more reason to raid the warehouse."
+                "1": "Когда вы покидали поместье Джексеры, к вам подошла кватрилка из городской стражи. Она рассказала, что Джексера пытается свергнуть военных в Мрачной гавани и замышляет что-то зловещее. Стражница попросила вас помочь раскрыть планы Джексеры и разоблачить её истинную сущность.",
+                "2": "Склад был полон нежити. Джексера использовала некромантский свиток, который вы ей доставили, чтобы поднимать нежить в стенах города. Вы пробились в заднюю комнату склада и столкнулись с Джексерой. Прежде чем выпрыгнуть в окно, она сказала, что вернётся с легионом нежити. Чтобы остановить её, вы можете найти её сами или попросить помощи у эстер-чаровницы, о которой упоминала стражница.",
+                "3": "Вы проигнорировали предостережения городской стражницы Аржез и продолжили работать на Джексеру. «Зловещие замыслы», конечно, тревожная фраза, но «значительная награда» перевешивает её в мгновение ока. Больше нет причин обыскивать склад."
             },
             "stages": {
                 "0": "{1}",
@@ -75,11 +75,11 @@ export default {
             }
         },
         "7": {
-            "name": "A Valrath's Best Friend",
+            "name": "Лучший друг валрата",
             "sections": {
-                "1": "Jekserah has one last task for you. She requires a diamond of considerable size for a customer. There is a diamond mine in the southern mountains overrun by Vermlings, with some other more intelligent force behind them. If you can fight your way in and grab the biggest diamond you can find, Jekserah will give you a considerable reward. However, you have been also been warned by a guard that Jekserah may have more sinister machinations than she lets on. Something about overthrowing the military... but one diamond couldn't hurt, could it?",
-                "2": "Sinister machinations or not, you decided the phrase “considerable reward” was more pertinent. As expected, the diamond mine was infested by Vermling miners. They were lead by a Merciless Overseer who swiftly turned the miners against you with a few cracks of his whip. Once the overseer was dealt with and the diamond recovered, the remaining miners scattered. You headed back to Jekserah to claim your reward. Her bodyguards escorted you inside the manor where you found her somehow different—more harrowed and grim. “Wonderful.” She exchanged the diamond for a large purse full of coins. “This will serve beautifully as a focus for the incantations. I wonder if the cultists even knew what they had here. With this, I can summon an entire army of undead!” She turned to you with a strange glint in her eye. “So then! Are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild? Or do you not have the stomach to effect real change?”",
-                "3": "You decided that “sinister machinations” outweigh “considerable reward”. You raided Jekserah's warehouse and uncovered her secret plans to invade the town with an army of the dead. In the process, she fled the city. It's safe to say the “considerable reward” is off the table and there's no more reason to visit the mine."
+                "1": "У Джексеры есть для вас последнее задание. Ей нужен алмаз внушительных размеров для одного клиента. В южных горах есть алмазная шахта, захваченная вермлингами, за которыми стоит какая-то более разумная сила. Если вы пробьётесь внутрь и добудете самый большой алмаз, Джексера щедро вас вознаградит. Однако стражник предупредил вас, что у Джексеры могут быть более зловещие замыслы, чем она показывает. Что-то про свержение военных... но один алмаз ведь не повредит, верно?",
+                "2": "Зловещие замыслы или нет, вы решили, что слова «значительная награда» важнее. Как и ожидалось, алмазную шахту наводнили вермлинги-шахтёры. Ими командовал Жестокий надзиратель, который несколькими ударами кнута быстро обратил шахтёров против вас. Когда с надзирателем было покончено, а алмаз добыт, оставшиеся шахтёры разбежались. Вы вернулись к Джексере за наградой. Её телохранители проводили вас в особняк, где вы нашли её какой-то другой — более измотанной и мрачной. «Чудесно». Она обменяла алмаз на большой кошель с монетами. «Он прекрасно послужит фокусом для заклинаний. Интересно, понимали ли культисты, что у них было в руках. С ним я смогу призвать целую армию мертвецов!» Она повернулась к вам со странным блеском в глазах. «Итак! Готовы ли вы свергнуть военных Мрачной гавани и передать власть над городом Гильдии торговцев? Или у вас не хватит духу на настоящие перемены?»",
+                "3": "Вы решили, что «зловещие замыслы» перевешивают «значительную награду». Вы обыскали склад Джексеры и раскрыли её тайные планы вторжения в город с армией мертвецов. В ходе этого она бежала из города. Можно с уверенностью сказать, что «значительная награда» отменяется, и посещать шахту больше нет причин."
             },
             "stages": {
                 "0": "{1}",
@@ -88,11 +88,11 @@ export default {
             }
         },
         "8": {
-            "name": "Tripping the Rift",
+            "name": "Шаг в разрыв",
             "sections": {
-                "1": "While busting up some cultist activity, you encountered a gaping black rift in reality. The cultists were performing some sort of ritual on the rift that was bringing forth horrible nightmarish forms of teeth and claws into this reality. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. You tossed a rock at it, and the rock disappeared into nothingness. You must admit that you wonder whether you could enter the rift yourself and whether you could survive the trip to wherever that rock ended up. Do you dare enter the rift?",
-                "2": "The trip was less than pleasant. As soon as you arrived, you were set upon by demons sent by an angry, booming voice. Once the demons were dispatched, the voice spoke once more and invited you into it's realm. Having already made one leap of faith, you decided there was no harm in making another. Inside the voice's realm stood a monstrous creature, horned and terrifying, holding a trident and standing on four hooved legs. It asked you to retrieve an artifact, or otherwise the demonic creature would kill you.",
-                "3": "Of course not. What kind of fool goes diving into shadowy dimensional rifts? Instead, you decided to seek aid in closing this rift permanently. Clearly nothing good could come of it, so you neutralized the rift."
+                "1": "Разгоняя культистов, вы наткнулись на зияющий чёрный разрыв в реальности. Культисты проводили над ним некий ритуал, вызывая в этот мир ужасные кошмарные формы из зубов и когтей. Теперь, когда культисты и их приспешники мертвы, тёмный разрыв, похоже, затих. Но от этого он не менее тревожен. Вы бросили в него камень, и камень исчез в небытии. Вам приходится признать, что вам любопытно, смогли бы вы сами войти в разрыв и пережить путешествие туда, куда попал камень. Осмелитесь ли вы войти в разрыв?",
+                "2": "Путешествие оказалось не из приятных. Едва вы прибыли, на вас набросились демоны, посланные сердитым громовым голосом. Расправившись с демонами, голос заговорил снова и пригласил вас в своё царство. Раз уж вы однажды решились на прыжок веры, то решили, что в ещё одном нет ничего дурного. В царстве голоса стояло чудовищное существо, рогатое и ужасающее, с трезубцем в руках, на четырёх копытных ногах. Оно потребовало, чтобы вы добыли артефакт, иначе демоническое создание убьёт вас.",
+                "3": "Конечно нет. Какой дурак станет нырять в тёмные пространственные разрывы? Вместо этого вы решили поискать помощи, чтобы закрыть этот разрыв навсегда. Очевидно, что ничего хорошего из него выйти не может, поэтому вы обезвредили разрыв."
             },
             "stages": {
                 "0": "{1}",
@@ -101,13 +101,13 @@ export default {
             }
         },
         "9": {
-            "name": "Necromancer Hunt",
+            "name": "Охота на некроманта",
             "sections": {
-                "1": "“You will regret that decision when I return to Gloomhaven with a legion of undead at my back!” Jerkserah threatens and she flees from the city. It is clear you need to hunt her down before she can make good on her threats. The city guard Argeise suggests you to seek help from an Aesther enchanter, if she is willing to work together. Or perhaps the Sanctuary of the Great Oak will answer any question you ask of it?",
-                "2": "Having met Hail, the Aesther enchantress, she surely will help you find Jeskerah after you helped her?",
-                "3": "While at the Temple of the Seer, a disembodied voice offers you one answer to any choice of questions. Your interest went out to other questions. The enchanters help will be the only way to find Jekserah.",
-                "4": "Jekserah’s location is in the Corpsewood. Lets stop her necromancy!",
-                "5": "With one more hack of your blade, you separate her head from her body, return the head to the Captain of the Guard and are paid handsomely for the bounty on her."
+                "1": "«Вы пожалеете об этом решении, когда я вернусь в Мрачную гавань с легионом нежити за спиной!» — угрожает Джексера и бежит из города. Ясно, что вам нужно выследить её, прежде чем она исполнит угрозы. Городская стражница Аржез предлагает обратиться за помощью к эстер-чаровнице, если та согласится работать вместе. Или, возможно, Святилище Великого Дуба ответит на любой ваш вопрос?",
+                "2": "Вы встретили Вьюгу, эстер-чаровницу. Наверняка она поможет вам найти Джексеру после того, как вы помогли ей?",
+                "3": "В Храме прорицателя бестелесный голос предлагает вам один ответ на любой вопрос. Ваш интерес обратился к другим вопросам. Помощь чаровницы станет единственным способом найти Джексеру.",
+                "4": "Джексера находится в Трупном лесу. Давайте остановим её некромантию!",
+                "5": "Ещё один удар клинком, и вы отделяете её голову от тела, возвращаете голову Начальнику стражи и получаете щедрую награду за неё."
             },
             "stages": {
                 "0": "{1}",
@@ -119,11 +119,11 @@ export default {
             }
         },
         "10": {
-            "name": "New right hand",
+            "name": "Новая правая рука",
             "sections": {
-                "1": "Jekserah is happy with the diamond you brought her. Now, are you ready to overthrow the military of Gloomhaven and put control of the city into the hands of the Merchant’s Guild?",
-                "2": "Jekserah’s army already dispersed into the city. It will grow with every guard who falls. Now the last of the guard falls and you are the new right hand. The Merchant Guid rules the city now.",
-                "3": "Jekserah’s plans of overthrowing the military aren’t yours. You slowly back out of the room and alarm the city. Although a big army of undead, Jekserah is no match for you and she dies by your doing."
+                "1": "Джексера довольна принесённым вами алмазом. Готовы ли вы свергнуть военных Мрачной гавани и передать контроль над городом Гильдии торговцев?",
+                "2": "Армия Джексеры уже рассеялась по городу. Она будет расти с каждым павшим стражником. Теперь пал последний стражник, и вы — новая правая рука. Теперь городом правит Гильдия торговцев.",
+                "3": "Планы Джексеры по свержению военных — не ваши. Вы медленно пятитесь из комнаты и поднимаете тревогу в городе. Хотя у Джексеры огромная армия нежити, ей не сравниться с вами, и она гибнет от вашей руки."
             },
             "stages": {
                 "0": "{1}",
@@ -132,11 +132,11 @@ export default {
             }
         },
         "11": {
-            "name": "Ambivalence",
+            "name": "Двойственность",
             "sections": {
-                "1": "You decide to not help Jekserah in her plans. Your plan involves alarming the city of a summoned undead army.",
-                "2": "With all city guards as allies, you fight until reaching Jekserah’s manor. Although a big army of undead, Jekserah is no match for you and she dies by your doing.",
-                "3": "Ambivalent about Jekserah’s plans, you finally decide to join her side."
+                "1": "Вы решаете не помогать Джексере в её планах. Ваш план — предупредить город о призванной армии нежити.",
+                "2": "Со всей городской стражей в союзниках вы сражаетесь, пока не доходите до поместья Джексеры. Хотя у Джексеры огромная армия нежити, ей не сравниться с вами, и она гибнет от вашей руки.",
+                "3": "Сомневаясь насчёт планов Джексеры, вы в конце концов решаете присоединиться к ней."
             },
             "stages": {
                 "0": "{1}",
@@ -145,13 +145,13 @@ export default {
             }
         },
         "12": {
-            "name": "The Heart's Desire",
+            "name": "Заветное желание",
             "sections": {
-                "1": "You reach out to some of your contacts concerning Jekserah’s location, and end up with an odd bit of information from the Sanctuary of the Great Oak. They say there is a temple high in the Watcher Mountains dedicated to some unseen force that can answer any questions asked of it. So many choices in finding out what you want!",
-                "2": "With great risk, you finally reach the temple. “I am afraid I cannot accept visitors at this time,” a disembodied voice booms through the room. After fighting off the monsters the voice throws at you, the voice makes you a deal. “I will answer a single question for you, and then you will leave this place.” What do you choose? Great power, wealth or the location of the necromancer?",
-                "3": "Great power it is. The voice talks about a shrine in the Copperneck mountains which will give you the power you are looking for.",
-                "4": "Wealth it is. The voice talks about an island in the Misty Sea. It gives you confidence that you will find vast riches on this particular one.",
-                "5": "The location of the necromancer it is. The voice talks about a sanctum in the Corpsewood."
+                "1": "Вы обращаетесь к знакомым, чтобы узнать, где Джексера, и получаете странные сведения от Святилища Великого Дуба. Говорят, высоко в Сторожевых горах есть храм, посвящённый некой незримой силе, способной ответить на любой заданный ей вопрос. Сколько возможностей узнать то, чего вы хотите!",
+                "2": "С большим риском вы наконец добираетесь до храма. «Боюсь, сейчас я не принимаю посетителей», — гремит по залу бестелесный голос. Отбившись от монстров, которых голос натравил на вас, вы получаете от него предложение. «Я отвечу на один вопрос, а затем вы покинете это место». Что вы выберете? Великую силу, богатство или местонахождение некроманта?",
+                "3": "Что ж, великая сила. Голос рассказывает о святилище в Медных хребтах, которое даст вам искомую силу.",
+                "4": "Что ж, богатство. Голос рассказывает об острове в Туманном море. Он уверяет, что именно там вы найдёте несметные сокровища.",
+                "5": "Что ж, местонахождение некроманта. Голос рассказывает о прибежище в Трупном лесу."
             },
             "stages": {
                 "0": "{1}",
@@ -161,10 +161,10 @@ export default {
             }
         },
         "13": {
-            "name": "The Enchantress",
+            "name": "Чаровница",
             "sections": {
-                "1": "An enchanter has been called for, so an enchanter must be found. Following reports of an Aesther in the Boiler District, you find yourself in front of the Aesther woman.",
-                "2": "She is known to be eccentric and does not feel enthusiasm to help you at first. However, with your help in finding an orb from the frozen hollow in the Copperneck mountains, Hail is curious about what you want."
+                "1": "Нужна чаровница — значит, её нужно найти. Следуя слухам об эстер в Котельном квартале, вы оказываетесь перед женщиной-эстер.",
+                "2": "Известно, что она эксцентрична, и сначала не горит желанием вам помогать. Однако после того, как вы помогли найти сферу в ледяной пещере в Медных хребтах, Вьюге становится любопытно, чего вы хотите."
             },
             "stages": {
                 "0": "{1}",
@@ -172,10 +172,10 @@ export default {
             }
         },
         "14": {
-            "name": "Unlimited Power",
+            "name": "Безграничная сила",
             "sections": {
-                "1": "Nestled in a high valley deep in the Copperneck Mountains, a shrine is to be found. Adorning the structure’s stone face are innumerable symbols of power and strength. Both of those things is something you want.",
-                "2": "You have proven yourself to get at whatever is in this temple. You see images of a strange runic alphabet. What do those symbols mean?"
+                "1": "В высокой долине, глубоко в Медных хребтах, находится святилище. Каменный фасад строения украшают бесчисленные символы мощи и силы. Именно этого вы и хотите.",
+                "2": "Вы доказали, что достойны получить то, что скрыто в этом храме. Вы видите изображения странного рунического алфавита. Что означают эти символы?"
             },
             "stages": {
                 "0": "{1}",
@@ -183,11 +183,11 @@ export default {
             }
         },
         "15": {
-            "name": "There Be Dragons",
+            "name": "Здесь водятся драконы",
             "sections": {
-                "1": "You’ve heard some talk of a dragon making roost in the Copperneck Mountains. The reports are worth investigating. Whatever it is could be a threat to the city.",
-                "2": "Your goal is the Icecrag, the tallest mountain in the Coppernecks. A group of Inox emerge from a concealed cave. What were Inox and demons doing together? And so far north? Questions needed to be answered later.",
-                "3": "The Copperneck Mountains are not accommodating. The weather, wolves and some drakes slow down your process up the mountain. A giant, winged lizard perches atop a jagged boulder. The lizard asks for help: “A group of Savvas subdued me in my sleep and removed one of my flame glands, presumably to study. I cannot let this insult go unpunished and would greatly appreciate you taking it back from their city, killing as many of them as you can in the process.” “Or, if you wish to be cliché,” the creature says with a sigh, “you could simply attack me. But I will fight back, and you will most assuredly die.”"
+                "1": "Вы слышали разговоры о том, что дракон поселился в Медных хребтах. Эти слухи стоит проверить. Чем бы это ни было, оно может угрожать городу.",
+                "2": "Ваша цель — Ледяной утёс, самая высокая гора Медных хребтов. Из скрытой пещеры выходит группа иноксов. Что иноксы и демоны делали вместе? Да ещё так далеко на севере? Вопросы подождут.",
+                "3": "Медные хребты негостеприимны. Погода, волки и несколько дрейков замедляют ваш подъём. На зазубренном валуне сидит гигантская крылатая ящерица. Она просит о помощи: «Группа саввасов усыпила меня и удалила одну из моих огненных желёз, видимо, для изучения. Я не могу оставить это оскорбление безнаказанным и буду очень признателен, если вы заберёте её из их города, убив как можно больше саввасов». «Или, если хотите быть банальными, — со вздохом добавляет существо, — вы можете просто напасть на меня. Но я дам отпор, и вы, несомненно, погибнете»."
             },
             "stages": {
                 "0": "{1}",
@@ -196,10 +196,10 @@ export default {
             }
         },
         "16": {
-            "name": "Treasure Island",
+            "name": "Остров сокровищ",
             "sections": {
-                "1": "You know about an island in the Misty Sea which will give you vast riches. Let’s go!",
-                "2": "You see numerous Vermlings on the island. Entering their dwellings onboard a derelict ship, you see the glinting of gold. Who knows what the Vermlings were using the gold for, but you have a good idea what you will use it for."
+                "1": "Вы знаете об острове в Туманном море, который принесёт вам несметные богатства. Вперёд!",
+                "2": "На острове вы видите множество вермлингов. Войдя в их жилища на борту брошенного корабля, вы замечаете блеск золота. Кто знает, зачем вермлингам это золото, но вы прекрасно знаете, на что потратите его сами."
             },
             "stages": {
                 "0": "{1}",
@@ -207,13 +207,13 @@ export default {
             }
         },
         "17": {
-            "name": "Sewer Surfin",
+            "name": "Прогулка по канализации",
             "sections": {
-                "1": "You notice the water supply is poisoned. In order to investigate the source of the poison, you need to go through the sewers.",
-                "2": "While investigating the sewers, snakes, ooze and Vermlings come your way. In order to go further, you need to be able to breath under water. Maybe an Enchantress can be of some help. She is rumored to be quite eccentric though.",
-                "3": "After meeting the Aesther enchantress, Hail, there is a possibility of her helping you with the breathing under water problem.",
-                "4": "The source of the poison is known. Time to purify!",
-                "5": "While fighting with unholy creatures and writhing black corruption, the dark presence is removed."
+                "1": "Вы замечаете, что водопровод отравлен. Чтобы выяснить источник яда, нужно пройти по канализации.",
+                "2": "Исследуя канализацию, вы сталкиваетесь со змеями, слизью и вермлингами. Чтобы двигаться дальше, вам нужно уметь дышать под водой. Возможно, поможет чаровница. Правда, ходят слухи, что она весьма эксцентрична.",
+                "3": "После знакомства с эстер-чаровницей Вьюгой появляется возможность, что она поможет вам с дыханием под водой.",
+                "4": "Источник яда найден. Пора очищать!",
+                "5": "В битве с нечестивыми тварями и извивающейся чёрной порчей тёмное присутствие устранено."
             },
             "stages": {
                 "0": "{1}",
@@ -224,13 +224,13 @@ export default {
             }
         },
         "18": {
-            "name": "Closing the Rift",
+            "name": "Закрытие разрыва",
             "sections": {
-                "1": "With the goal of stopping elemental cultists, you step into a crypt and discover a horrifying sight. A group of cultists is performing ritual incantations in front of a black, gaping hole in reality. Out of the rift come nightmarish forms, full of teeth and claws. With the cultists and their minions dead, it seems the dark rift is now dormant. It is no less disconcerting, however. Having met Hail, the Aesther enchantress, she surely will help you close the rift?",
-                "2": "Having met Hail, the Aesther enchantress, she surely will help you close the rift?",
-                "3": "Hail required an elemental censer from a long dead elementalist’s crypt. Unfortunately, the cultists inhabiting the crypt weren’t keen on parting with it. You escorted Hail through the crypt until she could secure the censer, which she used to promptly dispatch the remaining undead. She’s now ready to deal with the rift.",
-                "4": "... or at least she was, before Gloomhaven’s new Demon overlords overtook the city and made off with an artifact Hail needed. If you want Hail to close the rift, you’ll need to get the artifact back from the Prime Demon. He probably won’t be happy about it.",
-                "5": "Throughout an elaborate ritual, you and Hail are assailed by demons unhappy with your intent to close the rift between your worlds. However once the ritual is completed, all the demons are sucked back into the rift, and the tear shrinks to a brilliant point, then disappears. As a bonus, you seemed to have helped Hail out with her research on enhancements considerably."
+                "1": "С целью остановить культистов стихий вы входите в склеп и обнаруживаете ужасающее зрелище. Группа культистов читает ритуальные заклинания перед чёрной зияющей дырой в реальности. Из разрыва выходят кошмарные формы из зубов и когтей. Теперь, когда культисты и их приспешники мертвы, тёмный разрыв, похоже, затих. Но от этого он не менее тревожен. Наверняка Вьюга, эстер-чаровница, с которой вы познакомились, поможет вам закрыть разрыв?",
+                "2": "Наверняка Вьюга, эстер-чаровница, с которой вы познакомились, поможет вам закрыть разрыв?",
+                "3": "Вьюге требовалось кадило стихий из склепа давно умершего элементалиста. К сожалению, культисты, обитавшие в склепе, не горели желанием с ним расставаться. Вы сопровождали Вьюгу по склепу, пока она не заполучила кадило, которым тут же расправилась с оставшейся нежитью. Теперь она готова заняться разрывом.",
+                "4": "...вернее, была готова, пока новые демонические повелители Мрачной гавани не захватили город и не унесли артефакт, который был нужен Вьюге. Если вы хотите, чтобы Вьюга закрыла разрыв, вам придётся забрать артефакт у Архидемона. Вряд ли он этому обрадуется.",
+                "5": "Во время сложного ритуала на вас и Вьюгу нападают демоны, недовольные вашим намерением закрыть разрыв между мирами. Но когда ритуал завершён, все демоны втягиваются обратно в разрыв, а разрыв сжимается до яркой точки и исчезает. В качестве бонуса вы, похоже, значительно помогли Вьюге в её исследованиях улучшений."
             },
             "stages": {
                 "0": "{1}",
@@ -241,11 +241,11 @@ export default {
             }
         },
         "19": {
-            "name": "Exorcism",
+            "name": "Изгнание",
             "sections": {
-                "1": "You go on a quest, trying to slay a powerful demon.",
-                "2": "Unfortunately, before your chance to slay the demon, the rift was neutralized.",
-                "3": "The attack of the demon in its own realm was tricky. However, by smashing an altar of black glass, destruction was upon the beast."
+                "1": "Вы отправляетесь в поход, пытаясь убить могущественного демона.",
+                "2": "К сожалению, прежде чем вам удалось убить демона, разрыв был обезврежен.",
+                "3": "Нападение на демона в его собственном царстве было непростым. Однако, разбив алтарь из чёрного стекла, вы уничтожили чудовище."
             },
             "stages": {
                 "0": "{1}",
@@ -254,10 +254,10 @@ export default {
             }
         },
         "20": {
-            "name": "The Artifact",
+            "name": "Артефакт",
             "sections": {
-                "1": "There is a mysterious object near the Serpent’s kiss river. This will help you on your other quests.",
-                "2": "Cultists took over the Temple of the Elements. They were no match for your strength. However, reaching for the vessel gives you negative feelings. Maybe an enchanter can help?"
+                "1": "Возле реки Змеиный поцелуй есть загадочный предмет. Он поможет вам в других заданиях.",
+                "2": "Культисты захватили Храм стихий. Им было не сравниться с вашей силой. Однако при попытке взять сосуд вас охватывают дурные предчувствия. Быть может, поможет чаровница?"
             },
             "stages": {
                 "0": "{1}",
@@ -265,10 +265,10 @@ export default {
             }
         },
         "21": {
-            "name": "Deeper depths",
+            "name": "Глубже в недра",
             "sections": {
-                "1": "In your endeavor of finding the source of the poisoned water, the path in the sewers opens up into a series of branching passageways. Your gets attracted to a secret passage.",
-                "2": "As you step forward, a clanging sound rings out through the room, almost like an alarm. Then the machinery moves and springs to life, clearly intent on attacking any intruders. You shut the alarm off by splitting up. A quick swim should take you farther into this underground world."
+                "1": "Пытаясь найти источник отравленной воды, вы обнаруживаете, что путь по канализации выходит в сеть разветвлённых проходов. Вас привлекает потайной ход.",
+                "2": "Когда вы делаете шаг вперёд, по комнате разносится лязг, похожий на сигнал тревоги. Затем механизмы приходят в движение и оживают, явно намереваясь атаковать любых незваных гостей. Вы отключаете сигнализацию, разделившись. Короткий заплыв должен привести вас дальше в этот подземный мир."
             },
             "stages": {
                 "0": "{1}",
@@ -276,10 +276,10 @@ export default {
             }
         },
         "22": {
-            "name": "Hearing Things",
+            "name": "Голоса в голове",
             "sections": {
-                "1": "You find crude scratchings referencing a “voice” while trying to get to the Icecrag. There is a subtle and powerful urge, calling you to explore the cave.",
-                "2": "Exploring the cave, you are being led by a voice. It eventually asks you to aid it again. However, it is uncertain whether or not the voice is to be trusted."
+                "1": "Пробираясь к Ледяному утёсу, вы находите грубые царапины, упоминающие некий «голос». Тонкий и властный позыв зовёт вас исследовать пещеру.",
+                "2": "Исследуя пещеру, вы идёте на зов голоса. В конце концов он просит вас снова помочь ему. Однако неясно, можно ли ему доверять."
             },
             "stages": {
                 "0": "{1}",
@@ -287,10 +287,10 @@ export default {
             }
         },
         "23": {
-            "name": "Look Who's Talking",
+            "name": "Кто это говорит?",
             "sections": {
-                "1": "You decide to try to get to the bottom of what exactly the Voice is, instead of just meddling with powers you do not understand.",
-                "2": "A bookish Quatryl at the University strongly recommends against freeing the creature. The accuracy of the text is admittedly a little questionable, but whatever this voice is, it was bound for a reason. There is a scepter that could be used to strengthen the binding ritual. While retrieving the scepter, the voice says you have been misled. You are eager to bring it to the Echo Chamber and silence the Voice."
+                "1": "Вы решаете докопаться до сути того, чем именно является Голос, вместо того чтобы просто вмешиваться в силы, которых не понимаете.",
+                "2": "Начитанный кватрил из Университета настоятельно советует не освобождать существо. Точность текстов, признаться, несколько сомнительна, но чем бы ни был этот голос, его заточили не просто так. Есть скипетр, который можно использовать для усиления ритуала заточения. Пока вы достаёте скипетр, голос заявляет, что вас ввели в заблуждение. Вам не терпится отнести его в Шепчущую галерею и заставить Голос замолчать."
             },
             "stages": {
                 "0": "{1}",
@@ -298,13 +298,13 @@ export default {
             }
         },
         "24": {
-            "name": "Let it Hail",
+            "name": "Пусть Вьюга поможет",
             "sections": {
-                "1": "You feel a powerful darkness emanating from the artifact, and behind that, a deep sadness. This artifact has been corrupted, and it seems to almost be cognizant of that fact. Perhaps it would be best to bring it to an enchanter rather than mess with it yourself.",
-                "2": "Having met Hail, the Aesther enchantress, you helped her and she is going to help you. She maybe knows more about the artifact. However, the prime demon has your priority.",
-                "3": "Before an enchantress could look at the artifact, you have already taken it to the prime demon. It is going to be tricky to pry the artifact out of the demons clutches.",
-                "4": "Having met Hail, the Aesther enchantress, you helped her and she is going to help you. She maybe knows more about the artifact.",
-                "5": "In order to sever the connection of the artifact with the plane of night, Hail sent you there and where successful. Hail gives you the locations that used the corrupt power of the artifact. Visiting these locations might be your next goal."
+                "1": "Вы чувствуете исходящую от артефакта мощную тьму и за ней — глубокую печаль. Этот артефакт осквернён, и он, кажется, почти сознаёт это. Возможно, лучше отнести его чаровнице, а не возиться с ним самостоятельно.",
+                "2": "Вы познакомились с Вьюгой, эстер-чаровницей, помогли ей, и теперь она поможет вам. Возможно, она знает об артефакте больше. Однако Архидемон в приоритете.",
+                "3": "Прежде чем чаровница успела взглянуть на артефакт, вы уже отнесли его Архидемону. Вырвать артефакт из лап демонов будет непросто.",
+                "4": "Вы познакомились с Вьюгой, эстер-чаровницей, помогли ей, и теперь она поможет вам. Возможно, она знает об артефакте больше.",
+                "5": "Чтобы разорвать связь артефакта с планом Ночи, Вьюга отправила вас туда, и вы справились. Вьюга называет места, в которых использовалась осквернённая сила артефакта. Посещение этих мест может стать вашей следующей целью."
             },
             "stages": {
                 "0": "{1}",
@@ -315,14 +315,14 @@ export default {
             }
         },
         "25": {
-            "name": "The Voice",
+            "name": "Голос",
             "sections": {
-                "1": "The voice you found in a cave in the Copperneck Mountains, asks you for your help in escaping its prison.",
-                "2": "The Harrowers proved quite difficult to take down, but in the end they fell just like any other foe. Feeling the rot of the place seeping into your bones, you hurriedly ransack the dwelling and locate the small earthen pot shown to you by the Voice. The voice gives you the second location.",
-                "3": "The Savvas were difficult to take on, but you managed. “There is but one vessel left,” the Voice calls to you.",
-                "4": "From opposite ends of the network, you active the switches in the order shown to you by the Voice. There, the center of the floor slides away, revealing a narrow ladder descending down into the dark. “The way to the tomb is clear,” the Voice says. “Go now, and retrieve what is mine.",
-                "5": "You grow furious at the Voice for not warning you about the extra security, and then channel that fury into doing whatever it takes to emerge from this tomb alive, with the vessel in tact. With all three vessels in hand, you make your way back to the mountain cave and into the Echo Chamber. You place the small earthen pots in the center of the cavern and wait. It is difficult to notice at first, but, over time, a faint tremor in the floor and walls begins to grow until it is difficult to even keep your footing. Then there is a flash of light, and before you floats a swirling green mist in the shape of many long, intertwined tendrils. “I had almost forgotten what it felt like to not be imprisoned.” For once you hear the Voice not from inside your own head, but emanating from the figure in front of you. “It is quite wondrous. I am sure that before too long, I will forget the horrid feeling of powerlessness. “It is time to leave this realm,” the Voice says. “There is much to be remedied from my prolonged absence. But first, I must give you a proper thanks. I shall hold up my end of the bargain and bestow upon you great power and wealth.” The green light spreads forth and illuminates you, providing you with the most wonderful feeling of warmth. And then it is gone. All that is left is a stone tablet in the center of the room with strange, cryptic markings. Will this be usefull in the future?",
-                "6": "You block the Voice’s lies from your mind and venture into the cave. A strong note of dissonance rings out as you snap the last chord, and then there is silence, something you wanted for a long time."
+                "1": "Голос, который вы нашли в пещере в Медных хребтах, просит вас помочь ему вырваться из заточения.",
+                "2": "Жнецов оказалось довольно трудно одолеть, но в конце концов они пали, как и любые другие враги. Чувствуя, как гниль этого места проникает в кости, вы поспешно обыскиваете жилище и находите небольшой глиняный горшок, который показал вам Голос. Голос называет вам второе место.",
+                "3": "Саввасов было трудно одолеть, но вы справились. «Остался лишь один сосуд», — зовёт вас Голос.",
+                "4": "С противоположных концов сети вы активируете переключатели в том порядке, который показал вам Голос. Центр пола уезжает в сторону, открывая узкую лестницу, ведущую вниз, во тьму. «Путь к гробнице свободен, — говорит Голос. — Идите и заберите то, что принадлежит мне».",
+                "5": "Вы приходите в ярость оттого, что Голос не предупредил вас о дополнительной охране, а затем направляете эту ярость на то, чтобы выбраться из гробницы живыми, сохранив сосуд. Имея на руках все три сосуда, вы возвращаетесь в пещеру в горе и проходите в Шепчущую галерею. Вы ставите небольшие глиняные горшки в центре пещеры и ждёте. Сначала это трудно заметить, но со временем слабая дрожь пола и стен нарастает так, что становится трудно удерживать равновесие. Затем вспыхивает свет, и перед вами парит вихрящийся зелёный туман в форме множества длинных переплетённых щупалец. «Я почти забыл, каково это — не быть в заточении». Впервые вы слышите Голос не изнутри собственной головы, а исходящим от фигуры перед вами. «Это поистине чудесно. Уверен, что вскоре я забуду ужасное чувство бессилия. Пора покинуть это царство, — говорит Голос. — Нужно многое исправить после моего долгого отсутствия. Но сначала я должен вас как следует отблагодарить. Я выполню свою часть сделки и наделю вас великой силой и богатством». Зелёный свет расходится и озаряет вас, даря чудесное ощущение тепла. А затем исчезает. Остаётся лишь каменная табличка в центре комнаты со странными загадочными знаками. Пригодится ли она в будущем?",
+                "6": "Вы отгоняете от себя лживые речи Голоса и входите в пещеру. Раздаётся резкая нота диссонанса, когда вы обрываете последнюю струну, а затем наступает тишина — то, чего вам давно хотелось."
             },
             "stages": {
                 "0": "{1}",
@@ -334,12 +334,12 @@ export default {
             }
         },
         "26": {
-            "name": "Armory Heist",
+            "name": "Ограбление оружейной",
             "sections": {
-                "1": "What do you choose? Breaking into a Savvas armory and taking its treasure or disobeying the voice in your head?",
-                "2": "The creature is destroyed, the influence is gone. The Savvas armory could be a nice challenge to break into, but maybe to big.",
-                "3": "Both of the creatures are destroyed, their influence is gone. Breaking into the Savvas armory does not have your interest anymore.",
-                "4": "You did what was asked of you by the creature. The treasure of the Savvas armory is yours."
+                "1": "Что вы выберете? Проникнуть в оружейную саввасов и забрать её сокровища или ослушаться голоса в голове?",
+                "2": "Существо уничтожено, его влияние исчезло. Оружейная саввасов могла бы стать хорошим испытанием, но, пожалуй, слишком крупным.",
+                "3": "Оба существа уничтожены, их влияние исчезло. Проникновение в оружейную саввасов вас больше не интересует.",
+                "4": "Вы сделали то, о чём просило существо. Сокровища оружейной саввасов теперь ваши."
             },
             "stages": {
                 "0": "{1}",
@@ -349,11 +349,11 @@ export default {
             }
         },
         "27": {
-            "name": "Dragon Slayer",
+            "name": "Убийца драконов",
             "sections": {
-                "1": "Standing before the great, proud drake, you see nothing to discuss with the monster. If it wants your help, it is certainly for a nefarious purpose. The drakes you’ve met previously certainly haven’t been very kind. You ready your weapons with determination.",
-                "2": "Maybe this dragon isn’t so bad, nobody ever got hurt from helping, right?",
-                "3": "Needless to say, the drake’s sarcastic predictions do not come to pass. You report your deeds to the Gloomhaven authorities and receive a modest reward to add to the modest amount of treasure you found on the scorched summit."
+                "1": "Стоя перед великим гордым дрейком, вы не видите, о чём тут говорить с чудовищем. Если ему нужна ваша помощь, то наверняка для чего-то коварного. Дрейки, которых вы встречали раньше, были не слишком добры. Вы решительно готовите оружие.",
+                "2": "Может, этот дракон не так уж плох, ведь никто ещё не пострадал, помогая, верно?",
+                "3": "Нечего и говорить, что саркастические предсказания дрейка не сбываются. Вы докладываете о своих деяниях властям Мрачной гавани и получаете скромную награду в дополнение к скромному количеству сокровищ, найденных на выжженной вершине."
             },
             "stages": {
                 "0": "{1}",
@@ -362,13 +362,13 @@ export default {
             }
         },
         "28": {
-            "name": "Dark Souls",
+            "name": "Тёмные души",
             "sections": {
-                "1": "There is an artifact of great power located in a forgotten temple along the Serpent’s Kiss River. You can retrieve it for me. Do you want to retrieve it?",
-                "2": "While retrieving the artifact, you notice that it has been corrupted. It could be used for great evil. but would you fight for that evil or against it?",
-                "3": "A swirling rift of chromatic energy emerges and pulses, bathing the demon in an aura of protection. With one final blow, the rift grows chaotic. In a brilliant flash of light, the void collapses in on itself and then explodes outward, sending a shock wave that destroys all demons in its path. You did not trust that demon.",
-                "4": "It slowly dawns on you the many mistakes you have made that have led you to this moment. You never should have brought the artifact. Now he wishes to destroy Gloomhaven, and you must find a way to stop him. The demon bellows and falls. Maybe think a little longer next time before giving an object to someone untrustworthy.",
-                "5": "You have returned with the artifact. The demon asks to help fight against the humans. You smile and nod. Finally you will get the recognition you deserve. Together you slay the guards of Gloomhaven and the Demon becomes its ruler."
+                "1": "В забытом храме вдоль реки Змеиный поцелуй находится артефакт огромной силы. Вы можете достать его для меня. Хотите ли вы его достать?",
+                "2": "Доставая артефакт, вы замечаете, что он осквернён. Его можно использовать для великого зла. Но станете ли вы бороться за это зло или против него?",
+                "3": "Возникает вихрящийся разрыв хроматической энергии и пульсирует, окутывая демона аурой защиты. Последним ударом вы приводите разрыв в хаос. В ослепительной вспышке света пустота схлопывается сама в себя, а затем взрывается наружу, отправляя ударную волну, которая уничтожает всех демонов на своём пути. Вы не доверяли этому демону.",
+                "4": "До вас медленно доходит, сколько ошибок вы совершили, приведших вас к этому моменту. Вам не следовало приносить артефакт. Теперь он хочет уничтожить Мрачную гавань, и вы должны найти способ остановить его. Демон ревёт и падает. Возможно, в следующий раз стоит подумать подольше, прежде чем отдавать вещь недостойному доверия.",
+                "5": "Вы вернулись с артефактом. Демон просит помочь в борьбе с людьми. Вы улыбаетесь и киваете. Наконец-то вы получите заслуженное признание. Вместе вы убиваете стражу Мрачной гавани, и демон становится её правителем."
             },
             "stages": {
                 "0": "{1}",
@@ -379,12 +379,12 @@ export default {
             }
         },
         "30": {
-            "name": "Under the Sea",
+            "name": "Под водой",
             "sections": {
-                "1": "In order to sever the connection of the artifact with the plane of night, Hail sent you there and where successful. Hail gives you the locations that used the corrupt power of the artifact. The first location on Hail’s map is under the Misty Sea. However, breathing under water is not one of your traits. Asking Hail for advise it is.",
-                "2": "After a few minutes, the extreme discomfort of breathing through the orb gives way to a mere mild annoyance. You press on.",
-                "3": "You hit the bottom of a trench, and shadowy figures emerge from the murky waters. You press ever forward, leaving the wretched trench. Looking behind you, you see the figures of more Lurkers waiting in the shadows, but they do not pursue. Perhaps they are afraid of whatever lies ahead. You go deeper through a crack in the earth until your path shifts suddenly upward. You emerge from the cold, unforgiving water into an air pocket deep beneath the waves. You spit out your water-breathing orb, grateful to finally breathe normally and take a short rest. Through the darkness ahead of you, you see an expansive cavern, which houses a massive stone structure. This unnatural sight, so far removed from anything you are familiar with, fills you with irrational, foreboding dread.",
-                "4": "You wander through the massive stone structure beneath the waves for what feels like hours. And just when you feel as though you cannot go any farther, you feel its presence. Something old and powerful waits for you at the end of this corridor. It calls to you, inviting you to climb into its open maw, embracing the sweet release of infinity. You shake your head and attempt to guard yourself from the negative feelings. You didn’t swallow those throat-crushing breathing spheres and swim down to the bottom of the ocean just to fail now. With the giant eye dead, all of its minions wither and die with it. Thankfully, the room stops shaking as well. You can’t get out the way you came in, but you are able to explore the structure further, free of the crushing dread that permeated the air previously It is a long journey, but you find your way out of the trench, return to the boat, and head back to Gloomhaven, resolving to never do something like that again."
+                "1": "Чтобы разорвать связь артефакта с планом Ночи, Вьюга отправила вас туда, и вы справились. Вьюга называет места, в которых использовалась осквернённая сила артефакта. Первое место на карте Вьюги находится под Туманным морем. Однако дышать под водой вы не умеете. Остаётся спросить совета у Вьюги.",
+                "2": "Спустя несколько минут крайний дискомфорт от дыхания через сферу сменяется лишь лёгким раздражением. Вы продолжаете путь.",
+                "3": "Вы достигаете дна расщелины, и из мутной воды появляются тёмные фигуры. Вы упрямо идёте вперёд, покидая проклятую расщелину. Оглянувшись, вы видите силуэты ещё нескольких скрытней, ждущих в тени, но они не преследуют вас. Возможно, они боятся того, что лежит впереди. Вы углубляетесь через трещину в земле, пока путь внезапно не поворачивает вверх. Вы выныриваете из холодной безжалостной воды в воздушный карман глубоко под волнами. Выплюнув сферу для дыхания под водой, вы благодарны, что наконец можете дышать нормально, и делаете короткий привал. В темноте впереди вы видите просторную пещеру, в которой стоит огромное каменное сооружение. Это неестественное зрелище, настолько далёкое от всего, что вам знакомо, наполняет вас иррациональным, тревожным ужасом.",
+                "4": "Вы бродите по огромному каменному сооружению под волнами, кажется, целые часы. И как раз когда вам кажется, что дальше идти невозможно, вы ощущаете его присутствие. Нечто древнее и могущественное ждёт вас в конце этого коридора. Оно зовёт вас, приглашая забраться в его раскрытую пасть и принять сладкое освобождение бесконечности. Вы качаете головой и пытаетесь защититься от гнетущих чувств. Вы не глотали эти душащие дыхательные сферы и не плыли на дно океана, чтобы теперь потерпеть неудачу. Когда гигантский глаз мёртв, все его приспешники увядают и умирают вместе с ним. К счастью, комната перестаёт трястись. Вернуться тем же путём вы не можете, но можете исследовать сооружение дальше, свободные от гнетущего ужаса, пропитывавшего воздух прежде. Путь долог, но вы находите выход из расщелины, возвращаетесь на лодку и направляетесь обратно в Мрачную гавань, решив больше никогда не делать ничего подобного."
             },
             "stages": {
                 "0": "{1}",
@@ -394,11 +394,11 @@ export default {
             }
         },
         "31": {
-            "name": "Dark Forest",
+            "name": "Тёмный лес",
             "sections": {
-                "1": "In order to sever the connection of the artifact with the plane of night, Hail sent you there and you where successful. Hail gives you the locations that used the corrupt power of the artifact. The Dagger Forest is the second location on Hail’s map.",
-                "2": "Haill tells you, you need a guide and directs you to an orchid-camp. When you arrive at the Orchid camp, however, you find something wholly unexpected. It is a scene of massacre and devastation. Burned out buildings and disfigured corpses. Judging from the wounds, you figure a raiding party of Inox did this. Luckily, Inox don’t feel a particular need to cover their tracks. You are able to follow their trail deeper into the woods, where eventually you find a slave labor camp. Inox guards overseeing a group of ragged Orchids and humans working to construct catapults and other machines of war. After eliminating a couple key lookouts, you are able to slip into the slave pens and free one of the Orchids. The Orchid agree to guide you, but only after you give him his revenge. “They killed my family when they came. They said my children were not strong enough workers.” The orchid says and introduces himself as Redthorne.",
-                "3": "Redthorn leads you deep into the Dagger Forest. Eventually, a fine grey mist begins to permeate your surroundings and you come across a dismal, dead clearing. “This was once the heart of the forest,” Redthorn whispers. “Unreachable by any normal means. Safe and perfect. “And then it came. Now this place houses nothing but horrors and nightmares.” The Orchid looks down at the black earth. “Truly, this place terrifies me. Whatever creatures haunt these shadows, I cannot help you fight them, but if you survive, I will show you the way back.” As Redthorn disappears into the mist, you begin to see other forms moving at the edge of your vision. And then you hear the hoofbeats, like a terrible thunder rolling through the trees. The sound gets closer and closer until the ground beneath your feet tremors at the approach. The headless spectre screams as you land one final strike against it, and its form begins to dissipate, black wisps of smoke escaping from the cracks in its armor. Redthorn appears out of the thinning fog. “I don’t know how you did it, but I can already feel the forest lighten. It will take a long time, but I think the heart of the forest may one day be restored."
+                "1": "Чтобы разорвать связь артефакта с планом Ночи, Вьюга отправила вас туда, и вы справились. Вьюга называет места, в которых использовалась осквернённая сила артефакта. Кинжальный лес — второе место на карте Вьюги.",
+                "2": "Вьюга говорит, что вам нужен проводник, и направляет вас в лагерь орхидов. Однако, прибыв в лагерь орхидов, вы обнаруживаете нечто совершенно неожиданное. Это сцена бойни и разрушения. Сгоревшие здания и изуродованные трупы. Судя по ранам, вы заключаете, что это сделал отряд иноксов. К счастью, иноксы не считают нужным заметать следы. Вы можете пройти по их следу вглубь леса, где в итоге находите лагерь рабского труда. Стражи-иноксы надзирают за группой оборванных орхидов и людей, строящих катапульты и другие боевые машины. Устранив пару ключевых наблюдателей, вы пробираетесь в рабские загоны и освобождаете одного из орхидов. Орхид соглашается быть вашим проводником, но только после того, как вы дадите ему отомстить. «Они убили мою семью, когда пришли. Сказали, что мои дети недостаточно сильны для работы», — говорит орхид и представляется как Редторн.",
+                "3": "Редторн ведёт вас вглубь Кинжального леса. Постепенно вас окутывает тонкая серая дымка, и вы выходите на мрачную мёртвую поляну. «Когда-то это было сердце леса, — шепчет Редторн. — Недоступное обычным путём. Безопасное и совершенное. А потом пришло оно. Теперь здесь остались лишь ужасы и кошмары». Орхид смотрит на чёрную землю. «Это место поистине пугает меня. Какие бы твари ни обитали в этих тенях, я не могу помочь вам сражаться с ними, но если вы выживете, я покажу дорогу назад». Когда Редторн исчезает в тумане, на краю зрения вы начинаете замечать другие движущиеся силуэты. А затем слышите стук копыт, подобный ужасному грому, катящемуся сквозь деревья. Звук приближается, пока земля под ногами не начинает содрогаться. Безголовый призрак вопит, когда вы наносите по нему последний удар, и его форма начинает рассеиваться, чёрные клочья дыма вырываются из трещин в его доспехе. Редторн появляется из редеющего тумана. «Не знаю, как у вас это получилось, но я уже чувствую, как лес светлеет. Это займёт много времени, но, думаю, сердце леса когда-нибудь будет восстановлено»."
             },
             "stages": {
                 "0": "{1}",
@@ -407,11 +407,11 @@ export default {
             }
         },
         "32": {
-            "name": "To the peaks",
+            "name": "К вершинам",
             "sections": {
-                "1": "With Hail’s help, the artifact has been cleansed of it’s corrupting influence. However, Hail mentioned three locations that were drawing power from the corrupted artifact. If you want to know more about the artifact, you may want to visit these locations. One such location is high atop the Copperneck Mountains.",
-                "2": "You climb the frozen peaks of the Copperneck Mountains, lamenting that every location Hail has sent you is in the most unforgiving, inhospitable place possible. Figures in dark cloaks and demons made of ice wait for you across a divide. A voice booms out over the howling wind. “You are not welcome here, mortals. All that awaits you is the embrace of death.” You ready your weapons. You can hardly see through the blizzard, but you are determined to make sure death embraces someone else. As quickly as you can, you escape the rising storm of ice to find some semblance of shelter in a cave. Upon seeing a glowing white orb behind the crytalline demons, the pieces all start to fall into place. They are controlling the weather here, blocking your passage to the peak. After destroying the orb, pieces fall to the snowy floor along with the corpses of the enemies who stood in your way. The screeching of the wind outside the cave lessens to a faint murmur. You exit to see clear skies above you and a path to the peak. At this altitude, without a cloud in sight, you find yourself looking out over the horizon, marveling at the wondrous expanse of mountains and the forests and plains beyond them. You can even see the faint outline of Gloomhaven in the distance.",
-                "3": "With the ice altar destroyed, climbing the rest of the way up the mountain is thankfully uneventful. You are almost enjoying yourself, admiring the view of the entire countryside, when the view grows suddenly dark, despite it only being midday. You are very close to the peak now, and you surmise that this development has something to do with the evil presence at the summit. You make your way through the dark fog and find a small clearing at the summit. The screech once again pierces your ears, and a massive demon with a multitude of sharp claws and leathery wings lands before you. “You dare approach my nest?” You can barely make out the words from its high-pitched wailing. “I will harvest your corpses and feed them to my children!” After battling the demon it screeches one last time, its timbre and intensity modulating wildly as it spasms in its death throes. Not wanting to get close to its flailing claws, you wait for the creature to expire. When it finally does, a stillness washes over the area and day once again breaks in the sky above. The view is grand, apart from the blood and carnage that litters the peak. You take it all in and then slowly begin to make your way back down the mountain, satisfied that whatever evil was lurking here will no longer trouble Gloomhaven."
+                "1": "С помощью Вьюги артефакт очищен от своего пагубного влияния. Однако Вьюга упомянула три места, которые черпали силу из осквернённого артефакта. Если вы хотите узнать об артефакте больше, возможно, стоит посетить эти места. Одно из них находится высоко в Медных хребтах.",
+                "2": "Вы поднимаетесь по замёрзшим вершинам Медных хребтов, сетуя на то, что каждое место, куда отправляет вас Вьюга, — самое суровое и негостеприимное из возможных. По ту сторону разлома вас ждут фигуры в тёмных плащах и демоны изо льда. Над воем ветра гремит голос: «Вам здесь не рады, смертные. Вас ждут лишь объятия смерти». Вы готовите оружие. Сквозь метель почти ничего не видно, но вы полны решимости, чтобы смерть обняла кого-то другого. Как можно быстрее вы ускользаете от растущей ледяной бури и находите хоть какое-то укрытие в пещере. Увидев светящуюся белую сферу за кристальными демонами, вы понимаете, что к чему. Они управляют здесь погодой, преграждая вам путь к вершине. После уничтожения сферы обломки падают на снежный пол вместе с трупами врагов, вставших на вашем пути. Визг ветра за пределами пещеры стихает до слабого шёпота. Вы выходите наружу и видите над собой ясное небо и путь к вершине. На этой высоте, при отсутствии единого облака, вы смотрите на горизонт, любуясь удивительным простором гор, лесов и равнин за ними. Вы даже различаете слабый силуэт Мрачной гавани вдали.",
+                "3": "После уничтожения ледяного алтаря остаток подъёма на гору, к счастью, проходит без происшествий. Вы почти наслаждаетесь, любуясь видом всей округи, как вдруг вид внезапно темнеет, хотя ещё полдень. До вершины уже совсем близко, и вы предполагаете, что это как-то связано со злым присутствием на вершине. Вы пробираетесь сквозь тёмный туман и находите небольшую поляну на вершине. Визг снова пронзает уши, и перед вами приземляется огромный демон с множеством острых когтей и кожистыми крыльями. «Вы смеете приближаться к моему гнезду? — едва можно разобрать слова в его пронзительном вое. — Я соберу ваши трупы и скормлю их своим детям!» После битвы демон испускает последний вопль, тембр и сила которого дико меняются, пока он бьётся в предсмертных судорогах. Не желая приближаться к его размахивающим когтям, вы ждёте, пока существо испустит дух. Когда это наконец происходит, на округу нисходит тишина, и в небе снова наступает день. Вид великолепен, если не считать крови и бойни, усеявших вершину. Вы впитываете всё это и медленно начинаете спускаться с горы, довольные тем, что зло, таившееся здесь, больше не потревожит Мрачную гавань."
             },
             "stages": {
                 "0": "{1}",
@@ -420,11 +420,11 @@ export default {
             }
         },
         "33": {
-            "name": "Just shut up!",
+            "name": "Просто замолчи!",
             "sections": {
-                "1": "Ever since that voice started talking to you, when you discovered a cave in the Copperneck Mountains, you want to get rid of it. Perhaps a scepter with dark energies will be of some help. ",
-                "2": "Weakness is the new strength today and you are going to use it to get rid of that awful voice by giving in and just doing what it says. You free the voice of its prison.",
-                "3": "You stand before the entrance of the mountain cave, scepter in hand. Once again, the Voice calls to you. “Your intentions are noble. You fear me and wish to keep me imprisoned. I understand, but what you are doing will only lead to disaster and ruin. “That scepter was not created to strengthen my prison. I created it! I used it to imprison one of my greatest foes—a being of death and hatred. I do not know what will happen when you bring that thing to my chamber, but I can guarantee you no good will come of it!” You block the Voice’s lies from your mind and venture into the cave. You make your way to the Echo Chamber, and, before the Voice can speak another word, you raise up the scepter and channel its power. A black fog oozes from it and envelops you. The Voice screams out once more, but there is no coherence in the sound—only pain. The fog begins to dissipate and, for a moment, you feel relief, until you see that you are not in the Echo Chamber anymore, but some dark and hostile realm instead. The Voice rings out again, but somehow it is different: “The power of the Voice is mine! You will be the first I destroy with it!” A strong note of dissonance rings out as you snap the last chord, and then there is silence."
+                "1": "С тех пор как голос заговорил с вами, когда вы обнаружили пещеру в Медных хребтах, вам хочется от него избавиться. Возможно, скипетр с тёмной энергией поможет.",
+                "2": "Сегодня слабость — новая сила, и вы собираетесь использовать её, чтобы избавиться от этого ужасного голоса, уступив ему и просто сделав то, что он говорит. Вы освобождаете голос из его заточения.",
+                "3": "Вы стоите у входа в горную пещеру со скипетром в руках. Голос снова зовёт вас. «Ваши намерения благородны. Вы боитесь меня и хотите держать меня в заточении. Я понимаю, но то, что вы делаете, приведёт лишь к катастрофе и гибели. Этот скипетр создан не для того, чтобы укрепить мою тюрьму. Его создал я! Я использовал его, чтобы заточить одного из моих злейших врагов — существо смерти и ненависти. Я не знаю, что случится, если вы принесёте эту вещь в мою обитель, но уверяю вас, ничего хорошего из этого не выйдет!» Вы отгоняете ложь Голоса из своих мыслей и отправляетесь в пещеру. Вы добираетесь до Эхо-камеры и, прежде чем Голос успевает сказать хоть слово, поднимаете скипетр и направляете его силу. Из него сочится чёрный туман и окутывает вас. Голос кричит ещё раз, но в этом звуке нет никакой связности, лишь боль. Туман начинает рассеиваться, и на мгновение вы чувствуете облегчение, пока не понимаете, что вы уже не в Эхо-камере, а в каком-то тёмном и враждебном мире. Голос раздаётся снова, но почему-то иначе: «Сила Голоса — моя! Вы станете первыми, кого я ею уничтожу!» Резкий диссонанс звенит, когда вы обрываете последний аккорд, и наступает тишина."
             },
             "stages": {
                 "0": "{1}",
@@ -433,11 +433,11 @@ export default {
             }
         },
         "34": {
-            "name": "Growing Gills",
+            "name": "Растущие жабры",
             "sections": {
-                "1": "Breathing under water is not part of your abilities. Hail will surely help you.",
-                "2": "At the Crooked Bone is were Hail lives. She is certainly eccentric in asking you for favors in exchange for her help. So now you did something for her, tit for tat, she will probably know how to breath under water.",
-                "3": "Scales are the key. Unfortunately you had to take it from a nest of Drakes. It is sad, but gives you the advantage of not dying while under water."
+                "1": "Дышать под водой не входит в ваши способности. Вьюга наверняка поможет.",
+                "2": "Вьюга живёт в «Кривой кости». Она, конечно, эксцентрична, раз просит об одолжениях в обмен на свою помощь. Теперь вы кое-что сделали для неё, услуга за услугу, и она, вероятно, знает, как дышать под водой.",
+                "3": "Чешуя — вот ключ. К сожалению, её пришлось забирать из гнезда дрейков. Это печально, но даёт вам преимущество не умереть под водой."
             },
             "stages": {
                 "0": "{1}",
@@ -446,10 +446,10 @@ export default {
             }
         },
         "35": {
-            "name": "Freedom!",
+            "name": "Свобода!",
             "sections": {
-                "1": "The Orchid you freed from the Dagger Forest wants your help in freeing his people from a nearby village.",
-                "2": "Redthorn leads you from the ruined Inox slaver camp northeast into the dense forest. “The other village is not too far from here. It is well-hidden, but I fear the worst.” “In more recent years, the Inox have become increasingly aggressive and territorial, encroaching on our land and attacking our people.” Redthorne says. When the village comes into your sight, your arrival comes not a moment too soon, as you see a large Inox in the center of the clearing preparing to kill one of the captive Orchids. Thankfully you are able to save this village."
+                "1": "Орхид, которого вы освободили в Кинжальном лесу, просит вашей помощи в освобождении его народа из соседней деревни.",
+                "2": "Редторн ведёт вас от разрушенного лагеря иноксов-работорговцев на северо-восток, в густой лес. «Другая деревня недалеко отсюда. Она хорошо спрятана, но я боюсь худшего. В последние годы иноксы стали всё более агрессивными и территориальными, вторгаясь на наши земли и нападая на наш народ», — говорит Редторн. Когда деревня появляется в поле зрения, вы прибываете как раз вовремя: на поляне в центре огромный инокс готовится убить одного из пленных орхидов. К счастью, вам удаётся спасти эту деревню."
             },
             "stages": {
                 "0": "{1}",
@@ -457,11 +457,11 @@ export default {
             }
         },
         "36": {
-            "name": "Rebel Scum",
+            "name": "Мятежные отбросы",
             "sections": {
-                "1": "One day, you wake to find a deformed demon standing over you, holding a parchment that looks like some sort of skin. “I find myself desiring your help once again, mortals,” it reads. “It appears that many opposition forces in Gloomhaven escaped my grasp and are now camping out in the southern foothills, plotting to take back the city. Such machinations are surely fruitless, but still it is better to crush them now than to wait to see what they do.”",
-                "2": "There is a rebel camp. You did not have a chance to investigate it yet, because all the overthrowing of overlords and stuff.",
-                "3": "At the behest of the demon lord, you head into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. By destroying some magical totems, you are able to crush your opposition. A rebel tells you of the location of his fellow rebels, asking you to help them in their cause."
+                "1": "Однажды вы просыпаетесь и видите над собой уродливого демона, держащего пергамент, похожий на какую-то кожу. «Я вновь желаю вашей помощи, смертные, — читает он. — Похоже, многие силы сопротивления в Мрачной гавани ускользнули от меня и теперь лагерем стоят в южных предгорьях, замышляя вернуть город. Такие замыслы, конечно, бесплодны, но всё же лучше раздавить их сейчас, чем ждать, что они предпримут».",
+                "2": "Есть лагерь мятежников. У вас ещё не было возможности исследовать его, потому что все эти свержения повелителей и прочее.",
+                "3": "По велению повелителя демонов вы отправляетесь в Вечнотопкое болото, чтобы уничтожить последние остатки сопротивления демоническому правлению. Разрушив несколько магических тотемов, вы сокрушаете оппозицию. Один мятежник рассказывает вам о местонахождении его товарищей-мятежников и просит помочь им в их деле."
             },
             "stages": {
                 "0": "{1}",
@@ -470,11 +470,11 @@ export default {
             }
         },
         "37": {
-            "name": "Bloodshed",
+            "name": "Кровопролитие",
             "sections": {
-                "1": "At the behest of the demon lord, you head into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. You crush the last of the totems and your boots sink back into the muck. You walk over to a severely injured guard. “I’ll tell you,” he gasps. “But only because I know that you are not truly evil. Instead of hunting us down, 49 fight with us. 50 Help us take back the city from those demons. Head east, to the border of the Watcher Mountains. Look to the north of the ash tree grove. Talk with the commander. Help free the city...”. Now you know what to do.",
-                "2": "The words of that dying guard could have some truth to it. You help the rebels overthrow the demons and let Gloomhaven run by other overlords.",
-                "3": "Following the directions given by the dying guard, you are able to easily locate the rebel camp. The poor fool thought you would join with the rebels to help overthrow the demons, but such hopes were childish and unfounded. You are here to kill and destroy. The last battalion of guards hesitates as it faces you, then the humans turn and flee. “Arm the siege weapon!” One of them calls as they crest the hill. You give chase. This should be interesting. The cannon lies ruined and broken at your feet, and with it, any hope the rebels had of assaulting Gloomhaven. The guards who are still alive scatter, and you return to the demon-ruled Gloomhaven victorious. “So you have crushed the pathetic upstarts?” You stand before one of the Prime Demon’s liaisons. “Good. You have proven yourselves an incredibly effective tool, and my master will compensate you greatly for your service.”"
+                "1": "По велению повелителя демонов вы отправляетесь в Вечнотопкое болото, чтобы уничтожить последние остатки сопротивления демоническому правлению. Вы разрушаете последние тотемы, и ваши сапоги вновь вязнут в грязи. Вы подходите к тяжело раненному стражнику. «Я скажу вам, — выдыхает он. — Но только потому, что знаю: вы не по-настоящему злы. Вместо того чтобы выслеживать нас, 49 сражайтесь вместе с нами. 50 Помогите нам вернуть город у этих демонов. Идите на восток, к границе Сторожевых гор. Ищите к северу от ясеневой рощи. Поговорите с командиром. Помогите освободить город...» Теперь вы знаете, что делать.",
+                "2": "В словах умирающего стражника может быть доля правды. Вы помогаете мятежникам свергнуть демонов и позволяете Мрачной гавани перейти под власть других повелителей.",
+                "3": "Следуя указаниям умирающего стражника, вы без труда находите лагерь мятежников. Бедный глупец думал, что вы присоединитесь к мятежникам и поможете свергнуть демонов, но такие надежды были детскими и необоснованными. Вы здесь, чтобы убивать и разрушать. Последний батальон стражи колеблется перед вами, затем люди поворачиваются и бегут. «Заряжайте осадное орудие!» — кричит один из них, взбираясь на холм. Вы бросаетесь в погоню. Это должно быть интересно. Пушка лежит у ваших ног разрушенная и сломанная, а вместе с ней и всякая надежда мятежников на штурм Мрачной гавани. Уцелевшие стражники разбегаются, и вы с победой возвращаетесь в управляемую демонами Мрачную гавань. «Итак, вы раздавили этих жалких выскочек?» Вы стоите перед одним из посредников Архидемона. «Хорошо. Вы показали себя невероятно эффективным орудием, и мой господин щедро вознаградит вас за службу»."
             },
             "stages": {
                 "0": "{1}",
@@ -483,12 +483,12 @@ export default {
             }
         },
         "38": {
-            "name": "A New Hope",
+            "name": "Новая надежда",
             "sections": {
-                "1": "At the behest of the demon lord, you head into the Lingering Swamp to destroy the last vestiges of opposition to demonic rule. You crush the last of the totems and your boots sink back into the muck. You walk over to a severely injured guard. “I’ll tell you,” he gasps. “But only because I know that you are not truly evil. Instead of hunting us down, 49 fight with us. 50 Help us take back the city from those demons. Head east, to the border of the Watcher Mountains. Look to the north of the ash tree grove. Talk with the commander. Help free the city...”. The words of that dying guard could have some truth to it. Lets help those rebels!",
-                "2": "Those rebel suckers don’t deserve your help. You help letting Gloomhaven get rid of the demons and some other overlords take their place.",
-                "3": "Those rebel suckers don’t deserve your help. The directions of that guard proved useful to slay every last one of the rebels.",
-                "4": "You follow the dead guard’s directions into the foothills of the Watcher Mountains. Not to kill and destroy, but to help. The rebels seem wary at first, but they eventually open up. “To tell you the truth,” the rebel captain says, “we are in desperate need of your help. We’ve spent all our resources constructing a cannon capable of punching through Gloomhaven’s walls, but once that is accomplished, we don’t have the numbers or arms necessary to engage the demon force and drive them out of our home.” The captain unfurls a map of the city onto a table. “But you could be our secret weapon. Three days later, once the rebels are able to get their cannon into position, you sneak into the Ghost Fortress, preparing to take the armory. You decide a two-pronged assault will be the best way to get your hands on the weapon caches quickly. You hear the distant explosion of the cannon and spring into action. You secure the last of the armory stock just as the rebel fighters break through into the fortress. Cleaning out the demons from the rest of the building becomes short work after that. With a strong foothold in the town and the populace on your side, the tide quickly turns against the demons. The battle is still long and difficult, as more forces continue to arrive from the elemental plane, but it ultimately only brings the residents of Gloomhaven into stronger unison, fighting against a common enemy. And with you no longer fighting for them, the demon force eventually relents and retreats back to its own plane. The next weeks are difficult, as the citizenry rebuilds the walls and everything else that had been destroyed in the prolonged battle. They also need time to trust you again after your ill-conceived betrayal. But Gloomhaven does bounce back in time. It is full of resilient people and the port is vital for trade. It never feels quite the same afterward, but at some point, it at least still feels like home."
+                "1": "По велению повелителя демонов вы отправляетесь в Вечнотопкое болото, чтобы уничтожить последние остатки сопротивления демоническому правлению. Вы разрушаете последние тотемы, и ваши сапоги вновь вязнут в грязи. Вы подходите к тяжело раненному стражнику. «Я скажу вам, — выдыхает он. — Но только потому, что знаю: вы не по-настоящему злы. Вместо того чтобы выслеживать нас, 49 сражайтесь вместе с нами. 50 Помогите нам вернуть город у этих демонов. Идите на восток, к границе Сторожевых гор. Ищите к северу от ясеневой рощи. Поговорите с командиром. Помогите освободить город...» В словах умирающего стражника может быть доля правды. Поможем этим мятежникам!",
+                "2": "Эти мятежные простофили не заслуживают вашей помощи. Вы помогаете Мрачной гавани избавиться от демонов, а другим повелителям — занять их место.",
+                "3": "Эти мятежные простофили не заслуживают вашей помощи. Указания стражника помогли вам перебить всех мятежников до единого.",
+                "4": "Вы следуете указаниям погибшего стражника в предгорья Сторожевых гор. Не чтобы убивать и разрушать, а чтобы помочь. Мятежники сначала настороженны, но в конце концов раскрываются. «По правде говоря, — говорит капитан мятежников, — нам отчаянно нужна ваша помощь. Мы потратили все ресурсы на постройку пушки, способной пробить стены Мрачной гавани, но когда это будет сделано, у нас не хватит ни людей, ни оружия, чтобы сразиться с демонической армией и выгнать её из нашего дома». Капитан разворачивает на столе карту города. «Но вы можете стать нашим тайным оружием». Три дня спустя, когда мятежники устанавливают пушку на позицию, вы пробираетесь в Призрачную крепость, готовясь захватить арсенал. Вы решаете, что штурм с двух сторон — лучший способ быстро завладеть тайниками с оружием. Вы слышите далёкий взрыв пушки и действуете. Вы захватываете последние запасы арсенала как раз тогда, когда бойцы-мятежники прорываются в крепость. Зачистка остального здания от демонов после этого занимает немного времени. Закрепившись в городе и имея на своей стороне население, вы быстро поворачиваете ход боя против демонов. Битва всё ещё долга и тяжела, так как из стихийного плана продолжают прибывать новые силы, но в конечном итоге она лишь сплачивает жителей Мрачной гавани в борьбе против общего врага. И когда вы больше не сражаетесь на их стороне, демоническая армия в конце концов отступает и возвращается на свой план. Следующие недели непросты: горожане восстанавливают стены и всё остальное, что было разрушено в затяжной битве. Им также нужно время, чтобы снова поверить вам после вашего опрометчивого предательства. Но Мрачная гавань со временем оправляется. Это город стойких людей, а порт жизненно важен для торговли. Прежним он уже не станет, но в какой-то момент он всё же снова будет казаться родным."
             },
             "stages": {
                 "0": "{1}",
@@ -498,11 +498,11 @@ export default {
             }
         },
         "39": {
-            "name": "Corruption",
+            "name": "Порча",
             "sections": {
-                "1": "The connection between the corrupted artifact and the Plane of Night is severed. Hail mentions three locations that drew energy from the corrupted artifact. Destroying the corrupted power in all three locations will make Hail tell more about the corruption in Gloomhaven and its surroundings.",
-                "2": "The corruption at the Misty Sea, the Dagger Forest and Copperneck Mountains is destroyed by you. Let’s go see Hail to retrieve more information.",
-                "3": "Hail is cut short by a violent shifting in the earth. The Aesther ushers you outside, where you see a massive black column of smoke to the northeast. “There is no time!” She hands you a small pouch filled with what feels like sand and small rocks. “This should protect you from the worst of the Void’s influence. You must find him there and stop him from returning this world to ash.” As you approach the black column, it becomes clear that it is not smoke but a whirlwind of black sand extending far into the sky. The tremors continue, but you race towards the vortex as quickly as you can. The pouch fills you with a dull numbness. “Those brave enough to enter here will be the first torn apart.” An arresting voice echoes through the chamber around you. “The rest I will hunt down like game and devour, but I do think I will enjoy this more.” As your eyes adjust to the low light, you see a shadowy form in the center of the room. With time, you are able to focus on the image of an Aesther with two long, thin blades. “I have waited many years to reap this harvest,” he says with a wicked grin. “At one time, I had convinced myself that I would find more delight in watching you slowly kill yourselves, but with my meddling brethren and the deaths of my wards, I have returned to my original design. “I am not unhappy at the development. Even the patience of an immortal has its limits.” The Aesther flashes its blades in a mesmerizing dance. “Come then, brave lambs. Who will be the first to embrace the Gloom?” Two swords fall to the stone floor with a sharp ring. The Aesther stands limp, a look of shock on his wounded face. “How dare you,” he mutters. The voice that was once smooth and hypnotic is now gravely and dark. “I have waited thousands of years, and you presume to rob me of the fruits of my labors?” The Aesther’s mouth drops slack in death, but still the figure stands, as if held up by invisible strings. “You can destroy my vessel and banish me from this plane, but it will never be enough. I am eternal. I will return. I will feast on this world once again!” At this, the body of the Aesther crumples to the ground and fades out of existence. The dull pain subsides, and you ascend the staircase to a bright, clear sky. The tremors and vortex of black sand are gone and all those gathered around the Void look very relieved when you emerge from the confrontation. You let the people know that whatever calamity had descended upon them has now been averted. They cheer and celebrate your strength."
+                "1": "Связь между осквернённым артефактом и планом Ночи разорвана. Вьюга упоминает три места, которые черпали энергию из осквернённого артефакта. Уничтожив осквернённую силу во всех трёх местах, вы заставите Вьюгу рассказать больше о порче в Мрачной гавани и её окрестностях.",
+                "2": "Порча в Туманном море, Кинжальном лесу и Медных хребтах уничтожена вами. Пойдём к Вьюге за новой информацией.",
+                "3": "Вьюгу прерывает сильный сдвиг земли. Эстер выводит вас на улицу, где вы видите огромный чёрный столб дыма на северо-востоке. «Нет времени!» Она протягивает вам небольшой мешочек, наполненный чем-то, похожим на песок и мелкие камни. «Это должно защитить вас от худшего влияния Пустоты. Вы должны найти его там и не дать ему обратить этот мир в пепел». Приближаясь к чёрному столбу, вы понимаете, что это не дым, а вихрь чёрного песка, уходящий высоко в небо. Толчки продолжаются, но вы мчитесь к вихрю так быстро, как только можете. Мешочек наполняет вас тупым оцепенением. «Те, кто осмелится войти сюда, будут разорваны первыми». Властный голос эхом разносится по комнате вокруг вас. «Остальных я выслежу, как дичь, и пожру, но, думаю, это доставит мне больше удовольствия». Когда ваши глаза привыкают к полумраку, вы видите тёмную фигуру в центре комнаты. Со временем вы различаете образ эстера с двумя длинными тонкими клинками. «Я ждал многие годы, чтобы собрать этот урожай, — говорит он со злобной ухмылкой. — Когда-то я убеждал себя, что получу больше удовольствия, наблюдая, как вы медленно убиваете себя сами, но из-за вмешательства моих братьев и гибели моих подопечных я вернулся к первоначальному замыслу. Это развитие событий меня не огорчает. Даже терпение бессмертного имеет пределы». Эстер демонстрирует клинки в завораживающем танце. «Итак, идите же, храбрые ягнята. Кто первым примет Мрак?» Два меча падают на каменный пол с резким звоном. Эстер стоит обмякший, с выражением потрясения на раненом лице. «Как вы смеете, — бормочет он. Голос, прежде гладкий и гипнотический, теперь хриплый и мрачный. — Я ждал тысячи лет, а вы смеете отнимать у меня плоды моих трудов?» Рот эстера обвисает в смерти, но фигура всё ещё стоит, будто удерживаемая невидимыми нитями. «Вы можете уничтожить мой сосуд и изгнать меня с этого плана, но этого никогда не будет достаточно. Я вечен. Я вернусь. Я вновь буду пировать на этом мире!» С этими словами тело эстера оседает на землю и исчезает. Тупая боль утихает, и вы поднимаетесь по лестнице к яркому ясному небу. Толчки и вихрь чёрного песка исчезли, и все, кто собрался вокруг Пустоты, с огромным облегчением встречают вас после противостояния. Вы сообщаете людям, что любое бедствие, обрушившееся на них, теперь предотвращено. Они радуются и славят вашу силу."
             },
             "stages": {
                 "0": "{1}",
@@ -511,10 +511,10 @@ export default {
             }
         },
         "72": {
-            "name": "Councilmans bargain",
+            "name": "Сделка с советником",
             "sections": {
-                "1": "The librarian Domenic wants to get into the development of Gloomhaven and this clash between the merchants and the military in the city. He asks your help to get the backing of a powerful merchant to keep him safe. You might have the most luck with Councilman Greymare.",
-                "2": "Councilman Greymare asked you to neutralize the situation in the Corpsewood. You are not sure this land will every grow crops again, but you neutralized the threat. Hopefully that is enough for Greymare to hold up his end of the bargain."
+                "1": "Библиотекарь Доминик хочет вмешаться в развитие Мрачной гавани и в это столкновение торговцев и военных в городе. Он просит вашей помощи, чтобы заручиться поддержкой влиятельного торговца и обеспечить себе безопасность. Больше всего шансов на успех у вас может быть с советником Грэймером.",
+                "2": "Советник Грэймер попросил вас уладить ситуацию в Трупном лесу. Вы не уверены, что эта земля когда-нибудь снова будет родить урожай, но вы устранили угрозу. Надеемся, этого достаточно, чтобы Грэймер выполнил свою часть сделки."
             },
             "stages": {
                 "0": "{1}",
@@ -522,10 +522,10 @@ export default {
             }
         },
         "73": {
-            "name": "Find the Aesther's story",
+            "name": "Найти историю эстеров",
             "sections": {
-                "1": "Dominic found out there is a written record of the Aesther's story. It's in the Codex of Directives. There was a copy of the book delivered to Gloomhaven. Apparently the caravan was attacked by a group of Inox near the southern tip of the Dagger Forest. Dominic learned the location of the Inox camp from an excaped guard, the book may still be out there.",
-                "2": "With the Inox dead. Among their belongings, you do find a large tome, although it's in poor condition. Dominic is extremely grateful when you returned with the Codex. He'll begin studying it immediately."
+                "1": "Доминик выяснил, что существует письменная история эстеров. Она содержится в «Кодексе директив». Копия книги была доставлена в Мрачную гавань. По-видимому, караван был атакован группой иноксов близ южной оконечности Кинжального леса. Доминик узнал местонахождение лагеря иноксов от сбежавшего стражника, и книга всё ещё может быть там.",
+                "2": "Иноксы мертвы. Среди их вещей вы действительно находите большой том, хотя он в плохом состоянии. Доминик чрезвычайно благодарен, когда вы возвращаетесь с Кодексом. Он немедленно приступит к его изучению."
             },
             "stages": {
                 "0": "{1}",
@@ -533,10 +533,10 @@ export default {
             }
         },
         "77": {
-            "name": "Infiltrate the Vigil",
+            "name": "Проникновение в Бдение",
             "sections": {
-                "1": "Dominic's work has been mostly destroyed by the Vigil, who also confiscated the Codex and his book. Following some investigation, he discovers that the Vigil are a bunch of pro-military skullerackers who keep any evidence of the Upheaval secret from everyone else. Dominic handed you a map to the Traveler's District where they operate. He request to recover the Codex and his book.",
-                "2": "Searching through the vault libraries, you find both the Codex and Dominic’s book. You find many other strange texts among the shelves: “Golems and Constructs,” “The Algox of the North.” However there is no time to sort through it all."
+                "1": "Работа Доминика была в основном уничтожена Бдением, которое также конфисковало Кодекс и его книгу. После некоторых расследований он выяснил, что Бдение — это сборище про-военных ретроградов, скрывающих от всех остальных любые свидетельства Потрясения. Доминик вручил вам карту Квартала путешественников, где они действуют. Он просит вернуть Кодекс и его книгу.",
+                "2": "Обыскивая хранилища-библиотеки, вы находите и Кодекс, и книгу Доминика. На полках вы видите много других странных текстов: «Големы и конструкты», «Алгоксы севера». Однако нет времени разбираться со всем этим."
             },
             "stages": {
                 "0": "{1}",
@@ -547,8 +547,8 @@ export default {
     "quest-fc": {
         "96": {
             "sections": {
-                "1": "Your party survived the Calamity, but there are still many mysteries to be unfold. The last words spoken by the Gloom resound in you head, and Hail refuses to talk about what happened. You just know that the name of the creature was once Bastian, but someone or something was using him as a vessel; nothing else. \nThe ruins of the battlefield are now barred by a group of militant humans that's apparently studying the area, funded by the Deslin estate. You just know something is wrong with them. As all of this wasn't enough, your wounds appear to heal mysteriously slower than normal. Everything feels odd and wrong, both in your body and in your spirit, and you feel both scarred by the enemies weapons and by the nightmares haunting you. Maybe drinking and gambling will finally heal you? You come back to the Sleeping Lion, where you are treated like heroes. Suddendly, a tears in the fabric of reality opens and Demons enters the tavern, immediately followed by a female Aesther, whom asks for your help. Your nightmares are certainly not over yet.",
-                "2": "You destroy all the altars and run back to your reality plane, while the Aesther close the portals. She tells you she was imprisoned with the demons and managed to escape thanks to the defeat of the Gloom. She appears to know a lot about it, and mentions that the Void was once the site of a great tower that Bastian built to house researchers and studies. When the Gloom started his evil doings, the Tower and all its inhabitants were scattered all across the infinite beyond: that was the beginning of the Aesther race, mutated by the long exodus they were forced. She introduces herself as Cassandra, a travellers through realities. She tried to stop the Gloom centuries ago, but she sadly failed and has been a prisoner even since, doomed to watch the Gloom plans unfold helplessly. Cassandra asks for our help: to stop the Gloom once and for all she first needs to go to the Void and find the vast library of Bastian texts, once part of the Tower. Vigil cultists will try to stop her, but that's your problem to solve, after all."
+                "1": "Ваш отряд пережил Катастрофу, но тайн всё ещё много. Последние слова Мрака звучат у вас в голове, а Вьюга отказывается рассказывать о случившемся. Вы знаете лишь, что существо когда-то звалось Бастианом, но кто-то или что-то использовало его как сосуд, и больше ничего.\nРуины поля боя теперь перекрыты отрядом воинственных людей, которые, по-видимому, изучают местность на деньги поместья Деслин. Вы просто чувствуете, что с ними что-то не так. Как будто этого мало, ваши раны заживают таинственно медленнее обычного. Всё кажется странным и неправильным и в теле, и в духе, и вы чувствуете себя отмеченными как оружием врагов, так и кошмарами, которые вас преследуют. Может, выпивка и азартные игры наконец исцелят вас? Вы возвращаетесь в «Спящий лев», где к вам относятся как к героям. Внезапно в ткани реальности открывается разрыв, в таверну входят демоны, а следом за ними эстер-женщина, которая просит вас о помощи. Ваши кошмары определённо ещё не закончились.",
+                "2": "Вы уничтожаете все алтари и бежите обратно в свой план реальности, пока эстер закрывает порталы. Она говорит, что была заточена вместе с демонами и сумела бежать благодаря поражению Мрака. Похоже, она многое о нём знает и упоминает, что Пустота когда-то была местом великой башни, которую Бастиан построил для исследователей и их трудов. Когда Мрак начал свои злодеяния, Башню и всех её обитателей разбросало по бесконечным далям: так началась раса эстер, изменённая долгим исходом, на который её обрекли. Она представляется Кассандрой, странницей между реальностями. Она пыталась остановить Мрак столетия назад, но, увы, потерпела неудачу и с тех пор остаётся пленницей, обречённой беспомощно наблюдать, как разворачиваются планы Мрака. Кассандра просит вас о помощи: чтобы раз и навсегда остановить Мрак, ей сначала нужно попасть в Пустоту и найти обширную библиотеку текстов Бастиана, некогда часть Башни. Культисты Караула попытаются ей помешать, но это ваша забота, в конце концов."
             },
             "stages": {
                 "0": "{1}",
@@ -557,8 +557,8 @@ export default {
         },
         "97": {
             "sections": {
-                "1": "Cassandra shows you a sketch of the Vault of Knowledge, where the four scrolls that she needs are hidden. She raises her hands and opens a portal to the central hall of the Vault, alerting you about the traps that surely you will find there.",
-                "2": "Once all the scrolls are rescued and in your hand, Cassandra takes all of you back to her sanctum and starts studying what you have got. She appears to fall in a deep trance while examining the scripts, sometimes mumbling about some grave dangers that deeply unsettles you. When she comes back to senses she seems upset. Each of the scrolls take to a different trail and all of those needs to be explored before jumping to conclusions. She also handles you a mysterious piece of paper with something wrong on it on a language you have never seen."
+                "1": "Кассандра показывает вам набросок Хранилища знаний, где спрятаны четыре свитка, которые ей нужны. Она поднимает руки и открывает портал в центральный зал Хранилища, предупреждая о ловушках, которые вы наверняка там встретите.",
+                "2": "Когда все свитки спасены и оказываются у вас в руках, Кассандра переносит вас всех в своё святилище и начинает изучать добычу. Она словно впадает в глубокий транс, разглядывая письмена, и порой бормочет о каких-то страшных опасностях, что сильно вас тревожит. Придя в себя, она выглядит расстроенной. Каждый из свитков ведёт по своему следу, и все их нужно исследовать, прежде чем делать выводы. Она также вручает вам загадочный клочок бумаги с чем-то недобрым, написанным на неведомом вам языке."
             },
             "stages": {
                 "0": "{1}",
@@ -567,10 +567,10 @@ export default {
         },
         "98": {
             "sections": {
-                "1": "This is where the trail from the Orchid scholars scrolls takes you. Apparently there is going to be some sort of historical conference at the University about the Upheaval, the Demon War with the Valraths and the founding of Gloomhaven itself, and a group of Orchids researchers are about to arrive by boat in Gloomhaven. Hail needs to talk to them. While you are on your way to the New Docks to greet the Orchids that are coming to lecture, a group of ruffians, guiding tamed drakes, attacks the Orchid ship. They even have bombards! There is no time to think, it's time for some action.",
-                "2": "You saved the Record of Accounts; browsing through the book a merchant hub in particular captures your attention: it is a commercial port across the Misty Sea, by the name of Velcyll Harbor, source of many valuable cargo. Maybe it would be interesting to get some more informations there. The Record of Journey is sadly gone forever.",
-                "3": "You saved the Record of Agreements. It details the Orchid involvment in the foundation of Gloomhaven and, in particular, it explains the caravans routes to the city. It also explains some political intricacies among the different races in Gloomhaven. What's most interesting, howerer, is a small footnote talking about an old caravan carrying something of great importance that never arrived to destination. What was in there? The Record of Accounts is sadly gone forever.",
-                "4": "You saved the Record of Accounts; browsing through the book a merchant hub in particular captures your attention: it is a commercial port across the Misty Sea, by the name of Velcyll Harbor, source of many valuable cargo. Maybe it would be interesting to get some more informations there. You also saved the Record of Agreements. It details the Orchid involvment in the foundation of Gloomhaven and, in particular, it explains the caravans routes to the city. It also explains some political intricacies among the different races in Gloomhaven. What's most interesting, howerer, is a small footnote talking about an old caravan carrying something of great importance that never arrived to destination. What was in there?"
+                "1": "Вот куда вас ведёт след свитков учёных-орхидов. Судя по всему, в университете состоится нечто вроде исторической конференции о Катаклизме, Войне с демонами валратов и основании самой Мрачной гавани, и группа исследователей-орхидов вот-вот прибудет в Мрачную гавань на корабле. Вьюге нужно с ними поговорить. Пока вы направляетесь в Новые доки, чтобы встретить орхидов, приезжающих с лекциями, группа головорезов с прирученными дрейками нападает на корабль орхидов. У них даже есть бомбарды! Думать некогда, пора действовать.",
+                "2": "Вы спасли Книгу учёта. Листая её, вы особенно заинтересовались одним торговым центром: это торговый порт за Туманным морем под названием гавань Велсилл, источник многих ценных грузов. Возможно, стоит разузнать там побольше. Книга путешествий, увы, потеряна навсегда.",
+                "3": "Вы спасли Книгу соглашений. В ней подробно описано участие орхидов в основании Мрачной гавани и, в частности, маршруты караванов в город. Также объясняются некоторые политические тонкости между разными расами Мрачной гавани. Но интереснее всего небольшая сноска о древнем караване, который вёз нечто чрезвычайно важное и так и не добрался до места назначения. Что же там было? Книга учёта, увы, потеряна навсегда.",
+                "4": "Вы спасли Книгу учёта. Листая её, вы особенно заинтересовались одним торговым центром: это торговый порт за Туманным морем под названием гавань Велсилл, источник многих ценных грузов. Возможно, стоит разузнать там побольше. Вы также спасли Книгу соглашений. В ней подробно описано участие орхидов в основании Мрачной гавани и, в частности, маршруты караванов в город. Также объясняются некоторые политические тонкости между разными расами Мрачной гавани. Но интереснее всего небольшая сноска о древнем караване, который вёз нечто чрезвычайно важное и так и не добрался до места назначения. Что же там было?"
             },
             "stages": {
                 "0": "{1}",
@@ -581,9 +581,9 @@ export default {
         },
         "99": {
             "sections": {
-                "1": "Cassandra is confident that studying the Void will lead to important discoveries. She heads east, to the Traveler's District, until you arrive to the Sekhem Gardens. Everything seems quiet there, but Hail, who can see through illusions and magics, after circling around the area, muttering, points to an apparently anonymous point on the street. Mere instants later hooded figures appeare from an arcane fog, chanting spells in unison while nightmarish creatures emerge from the ground, attacking the civilians.",
-                "2": "Many, too many died today because of this. This was definitely more than an isolated attack. Cassandra didn't expect this many creatures and cultists ready for an attack. It is now clear that all of this is starting to be too much even for Cassandra, and she decides to ask for the help of Hail.",
-                "3": "You saved as many as you could, but the corruption extended well over your battlefield and, while you fought, many Valrath fell. Some of the survivors recognized the “Cult of the Void” insigna on the attackers robe and you manage to find a lead to their location. It seems clear to you that all of this is starting to be too much even for Cassandra, and she decides to ask for the help of Hail."
+                "1": "Кассандра уверена, что изучение Пустоты приведёт к важным открытиям. Она направляется на восток, в Район путников, пока вы не приходите к Садам Сехема. Там всё кажется тихим, но Вьюга, которая видит сквозь иллюзии и магию, обойдя местность и что-то бормоча, указывает на вроде бы неприметное место на улице. Спустя мгновения из мистического тумана появляются фигуры в капюшонах, хором читающие заклинания, а из земли вылезают кошмарные твари и нападают на мирных жителей.",
+                "2": "Сегодня погибло много, слишком много людей. Это определённо было больше, чем одиночное нападение. Кассандра не ожидала, что их будет столько и что культисты окажутся готовы к атаке. Теперь ясно, что всё это становится слишком даже для Кассандры, и она решает попросить помощи у Вьюги.",
+                "3": "Вы спасли столько людей, сколько смогли, но порча распространилась далеко за пределы вашего поля боя, и пока вы сражались, пало много валратов. Некоторые выжившие узнали знак «Культа Пустоты» на одеждах нападавших, и вам удаётся найти зацепку об их местонахождении. Вам ясно, что всё это становится слишком даже для Кассандры, и она решает попросить помощи у Вьюги."
             },
             "stages": {
                 "0": "{1}",
@@ -593,9 +593,9 @@ export default {
         },
         "100": {
             "sections": {
-                "1": "The atlas you found in the Vault indicates the location of one of Bastian's hidden workshop, right on the Copperneck Mountains. Cassandra teleports you there. The place seems to be like a gigantic clockwork device, with springs, pistons and gears everywhere. The Aesther tries to use her old research credentials to grant you the access to the inner chambers, but a message on a screen denies you that hope. The defense system is activated, be ready to fight.",
-                "2": "You defeated Bastian's intricate labyrinth and found the tomb. You ransack everything you can and escape back to safety through a rift. After days of studies, you manage to find a way to fit the mechanical parts you found together, only to discover it is only a part of the rift device created by Bastian. Two other parts are missing, but their locations is written on the books. One is somewhere in the Misty Sea, near the twin lighthouses. The other is in another underground facility right east the coast of Gloomhaven.",
-                "3": "Even though you defeat the golems, Cassandra seems concerned. The control panel displays what appears to be a countdown: she shouts you to grab whatever you can before she can open a rifts and rushes all of you back to the sanctum. You survived to the impending destruction of the vault, but what you got, sadly, takes you no closer than before to any answer."
+                "1": "Атлас, найденный вами в Хранилище, указывает местонахождение одной из тайных мастерских Бастиана, прямо в Медных хребтах. Кассандра телепортирует вас туда. Место похоже на гигантский часовой механизм: повсюду пружины, поршни и шестерни. Эстер пытается использовать свои старые исследовательские полномочия, чтобы открыть вам доступ во внутренние покои, но сообщение на экране лишает вас этой надежды. Система защиты активирована, будьте готовы к бою.",
+                "2": "Вы одолели хитроумный лабиринт Бастиана и нашли гробницу. Вы обыскиваете всё, что можете, и через разлом убегаете в безопасное место. После нескольких дней изучений вам удаётся подогнать найденные механические детали друг к другу, но оказывается, что это лишь часть генератора порталов, созданного Бастианом. Двух других частей не хватает, но их местонахождение записано в книгах. Одна где-то в Туманном море, рядом с двумя маяками-близнецами. Другая в ещё одном подземном комплексе к востоку от побережья Мрачной гавани.",
+                "3": "Хотя вы победили големов, Кассандра выглядит обеспокоенной. Панель управления показывает нечто похожее на обратный отсчёт: она кричит вам хватать всё, что можете, пока она не откроет разломы, и спешно возвращает вас всех в святилище. Вы пережили неминуемое разрушение хранилища, но то, что вы добыли, увы, не приближает вас ни к каким ответам."
             },
             "stages": {
                 "0": "{1}",
@@ -605,8 +605,8 @@ export default {
         },
         "101": {
             "sections": {
-                "1": "A worried Inox approaches you, talking about unsettling news regarding some Keeper of the Oak members working south of Gloomhaven. The area where they were camping is near a tainted Crypt Cassandra seems to remembers about... When you arrive there, it is raining in the swamps. While you slowly progress to the exact location you are headed, you hear the shrills of several drakes, that appear to be inside the Crypt you are going into.",
-                "2": "You manage to destroy the source of unnatural darkness, which Cassandra recognizes it as a counduit for the power of the corruption. Meanwhile, around you, the fog lifts and everything seems back to normal. When you come back to the Sleeping Lion, the now-relieved Inox thanks you with a bag of Gold and two Tomes from the Sanctuary. Cassandra immediately starts to read them, wondering how they will lead you to new adventures, this time..."
+                "1": "К вам подходит встревоженный инокс и рассказывает о тревожных новостях о членах Хранителей Дуба, работающих к югу от Мрачной гавани. Место, где они разбили лагерь, находится рядом с осквернённым склепом, о котором Кассандра, похоже, что-то помнит... Когда вы приходите туда, в болотах идёт дождь. Пока вы медленно продвигаетесь к нужному месту, вы слышите пронзительные крики нескольких дрейков, которые, похоже, находятся в склепе, куда вы направляетесь.",
+                "2": "Вам удаётся уничтожить источник неестественной тьмы, который Кассандра опознаёт как проводник силы порчи. Тем временем вокруг вас туман рассеивается, и всё, кажется, возвращается в норму. Когда вы возвращаетесь в «Спящий лев», успокоенный инокс благодарит вас мешком золота и двумя томами из Святилища. Кассандра тут же принимается их читать, гадая, к каким новым приключениям они на этот раз вас приведут..."
             },
             "stages": {
                 "0": "{1}",
@@ -615,8 +615,8 @@ export default {
         },
         "102": {
             "sections": {
-                "1": "You head to Velcyll Harbor, where you are sure you'll find some informations about your quest. Once arrived, it is clear that the markets are so active and in thriving business that even gathering some information from the busy merchants and customers will be incredibly hard.",
-                "2": "As satisfying as it could be to help so many people, almost none of your answers about Bastian or the Gloom gets answered. Many people pointed you to Ashtooth, member of the Orchid Hight Council, also known as the “Keeper of Secrets”. There's only one problem: apparently the only way to meet him is to win the monthly challenges of the Coliseum of Refinement tournament."
+                "1": "Вы направляетесь в гавань Велсилл, где наверняка найдёте сведения о своём задании. Прибыв, вы понимаете, что рынки настолько оживлены и торговля там идёт так бойко, что даже собрать сведения у занятых торговцев и покупателей будет невероятно трудно.",
+                "2": "Как ни приятно помогать стольким людям, почти ни на один ваш вопрос о Бастиане или Мраке ответа не нашлось. Многие направляли вас к Ашзубу, члену Высшего совета орхидов, известному как «Хранитель тайн». Есть лишь одна проблема: единственный способ с ним встретиться, похоже, победить в ежемесячных испытаниях турнира Колизея Утончённости."
             },
             "stages": {
                 "0": "{1}",
@@ -625,8 +625,8 @@ export default {
         },
         "103": {
             "sections": {
-                "1": "Examining the notes you found about the Orchids caravans appears to be a useless exercise at first. Cassandra is convinced that the only way to retrace those caravans and discover their contents would be to be there at the right time, and while you try to understand what she means you almost can't believe your senses (probably due to the immense pain during the travel) when mere moments later you literally are carried to the past, in the exact location the caravans were about to pass. Once you all catch your breath after that painful experience, you reach the Orchids and travels with them, just to be attacked later by the cultists, as written.",
-                "2": "After a long fight and a dusty run, the caravan emerges from the rocky hollows, distancing from the attackers. Many Orchids died, but the survivors are grateful to you enough to grant you the access to their inner circle, where you was expecting to find the mysterious disappeared treasure; instead, you meet a small Orchid girl called Terra. She appears to be able to perceive the future and notices you are not from this time. When questioned, sadly, she refuses to cooperate, as she thinks her future is intertwined with the event she foreseen regarding the Gloom and don't want to divert or negate the course of what it is going to be. If anything, at least the trip back to the the future is way less painful."
+                "1": "Изучение найденных вами записей о караванах орхидов поначалу кажется бесполезным занятием. Кассандра убеждена, что единственный способ проследить эти караваны и выяснить их груз — оказаться там в нужное время, и пока вы пытаетесь понять, что она имеет в виду, вы едва верите своим чувствам (вероятно, из-за сильнейшей боли при перемещении), когда мгновения спустя вас буквально переносит в прошлое, в то самое место, где должны были пройти караваны. Когда вы все переводите дух после этого болезненного опыта, вы встречаетесь с орхидами и отправляетесь с ними, чтобы позже, как и было записано, подвергнуться нападению культистов.",
+                "2": "После долгого боя и пыльной гонки караван выбирается из каменистых лощин, оторвавшись от нападавших. Многие орхиды погибли, но выжившие настолько благодарны вам, что допускают вас в свой внутренний круг, где вы рассчитывали найти таинственно пропавшее сокровище; вместо этого вы встречаете маленькую девочку-орхида по имени Терра. Она, по-видимому, способна воспринимать будущее и замечает, что вы не из этого времени. На расспросы она, увы, отказывается сотрудничать: она считает, что её будущее переплетено с событием, которое она предвидела касательно Мрака, и не хочет отклонять или отрицать ход того, что должно случиться. Зато хотя бы путь обратно в будущее гораздо менее болезнен."
             },
             "stages": {
                 "0": "{1}",
@@ -635,8 +635,8 @@ export default {
         },
         "104": {
             "sections": {
-                "1": "You are not entirely sure of what to expect when you come back to the Crooked Bone. As soon as Cassandra enters the room, Hail materializes, puzzled by her presence. They seem to have a lot of troubled history together, as Hail mentions that Cassandra denied her help in the past in several instances, during the battle agains the Gloom. Hail considers Cassandra indirectly responsable for what happened to the Tower, and she seems to not deny it. But when Cassandra explains the possibility of a new rift opening in Gloomhaven, Hail is convinced to help you again and to put all issues for the greater good.",
-                "2": "You wander together with Hail and Cassandra through several portals and dimension, and at the end of them you see a bleak landscape, full of insect swarms. The portal cracks before you can enter in it, and Hail is clearly too exausted to continue. Cassandra opens a portal back to the Crooked Bone and excorts all of you back in a safe place. Even if Hail is still resentful toward Cassandra, she recognize the mission you are in is too important to be polluted by personal baggages. You all have to be careful, and you have to be fast..."
+                "1": "Вы не вполне уверены, чего ожидать, возвращаясь в «Кривую кость». Как только Кассандра входит в комнату, Вьюга материализуется, озадаченная её присутствием. У них, похоже, много общей непростой истории: Вьюга упоминает, что Кассандра неоднократно отказывала ей в помощи в прошлом, во время битвы с Мраком. Вьюга считает Кассандру косвенно виновной в том, что случилось с Башней, и та, кажется, не отрицает этого. Но когда Кассандра объясняет возможность открытия нового разлома в Мрачной гавани, Вьюгу убеждают снова помочь вам и отложить все разногласия ради общего блага.",
+                "2": "Вы странствуете вместе с Вьюгой и Кассандрой через несколько порталов и измерений, и в конце концов видите унылый пейзаж, полный роёв насекомых. Портал трескается прежде, чем вы успеваете войти в него, а Вьюга явно слишком измотана, чтобы продолжать. Кассандра открывает портал обратно в «Кривую кость» и провожает вас всех в безопасное место. Хотя Вьюга всё ещё обижена на Кассандру, она признаёт, что миссия, которой вы заняты, слишком важна, чтобы отравлять её личными счётами. Вам всем нужно быть осторожными, и вам нужно спешить..."
             },
             "stages": {
                 "0": "{1}",
@@ -645,8 +645,8 @@ export default {
         },
         "105": {
             "sections": {
-                "1": "Your success at the Sekhem Gardens makes people trust you, and they describe in great details the circumstances of the attacks in other parts of the neighbors. Many witness talks about a brave Savvas that saved many of them; after finding him, he tells you that the cultists were guided by a mystical translucent being, and he points you to the Sanctuary of the Great Oak, where the Head Keeper, called Athan Tredan, should give you more details. When you arrived, the image of an hulking Aesther, with flaming bellows, giving order to the enemies briefly appears in front of you before vanishing. After a long analysis of the dimensional energies flow, Cassandra finds the place that Athan was talking about, deep in the Copperneck Mountains.",
-                "2": "After the fight is over, you start rummaging around the rooms, finding an alchemical formula to a vaccine that should prevents the effect you noticed in Sekhem Gardens, where many people were converted to demons by the Corruption. If anything, now you can slow down their conquering of civilian's bodies. You decide to take this informations to the University."
+                "1": "Ваш успех в Садах Сехема заставляет людей вам доверять, и они подробно описывают обстоятельства нападений в других частях окрестностей. Многие свидетели говорят о храбром саввасе, который спас многих из них; найдя его, вы узнаёте, что культистами руководило таинственное полупрозрачное существо, и он указывает вам на Святилище Великого Дуба, где Главный Хранитель по имени Атан Тредан должен рассказать вам больше. Когда вы прибываете, перед вами на миг появляется образ громадного эстера с пылающими мехами, отдающего приказы врагам, а затем исчезает. После долгого анализа потоков межпространственной энергии Кассандра находит место, о котором говорил Атан, глубоко в Медных хребтах.",
+                "2": "Когда бой окончен, вы начинаете обшаривать комнаты и находите алхимическую формулу вакцины, которая должна предотвращать эффект, замеченный вами в Садах Сехема, где многие люди превращались в демонов под действием порчи. Теперь вы хотя бы можете замедлить их захват тел мирных жителей. Вы решаете отнести эти сведения в университет."
             },
             "stages": {
                 "0": "{1}",
@@ -655,9 +655,9 @@ export default {
         },
         "106": {
             "sections": {
-                "1": "You take a boat and head to the lighthouses out the Merchant's Bay. The sailors talks about tales regarding spirits and demons lurking to the towers. When you arrive to the entrance hall you feel overcome by the power emanating from six contraptions, probably Bastian's work, that suppress elemental energies. You have no time to examine those though, as you get ambushed by figures from the shadows.",
-                "2": "After you purge the towers from the evil presences, something still feels odd. You don't find anything related to the rift and it seems that this was just a dead end. At least you practiced with elements..!",
-                "3": "First those weird vision, then those words from that entity that possessed Cassandra, but finally you manage to find another piece of Bastian's rift device. She recollects it was his voice that you heard when she was possessed. This entire place is imbued with his aura, slowly consumed by his desire of a greater knowledge. She shakes off her ill feelings and you all go back through a rift."
+                "1": "Вы садитесь на лодку и направляетесь к маякам за Торговым заливом. Моряки рассказывают истории о духах и демонах, обитающих в башнях. Когда вы входите в вестибюль, вас охватывает сила, исходящая от шести устройств, вероятно, работы Бастиана, подавляющих энергии стихий. Но осмотреть их вам некогда: на вас нападают фигуры из теней.",
+                "2": "После того как вы очистили башни от злых присутствий, что-то всё ещё кажется неправильным. Вы не находите ничего, связанного с разломом, и похоже, что это был тупик. Зато вы потренировались со стихиями..!",
+                "3": "Сначала странные видения, затем слова той сущности, что овладела Кассандрой, но в конце концов вам удаётся найти ещё одну часть генератора порталов Бастиана. Она вспоминает, что вы слышали его голос, когда она была одержима. Всё это место пропитано его аурой, постепенно поглощённой его жаждой великого знания. Она стряхивает дурные чувства, и вы все возвращаетесь через разлом."
             },
             "stages": {
                 "0": "{1}",
@@ -667,9 +667,9 @@ export default {
         },
         "107": {
             "sections": {
-                "1": "Cassandra gathered some informations about another Bastian's facility, now plagued by vermlings presence. She knows it should be underground but can't recognize how big it is. She focus and creates a portal that head you there. When you arrive, she notices the floor is imbued with magical aura and suggest to find Bastian's device as quickly as possible.",
-                "2": "You slain more vermlings than you can count, which after all were doing nothing more than defend their home. After a long and exhausting research, you can't seem to find anything. Even worse, Cassandra cannot open a portal back home due to the restrictive aura of the place. You have to get out of there through the garbage tunnels. Clearly not your favourite ending ever.",
-                "3": "You found a well-hidden chest containing a complex apparatus, which Cassandra immediately recognizes as another piece of Bastian’s rift device. You all go back through a rift."
+                "1": "Кассандра собрала сведения о другом объекте Бастиана, ныне заселённом вермлингами. Она знает, что он должен быть под землёй, но не может определить его размеры. Она сосредотачивается и создаёт портал, ведущий вас туда. Когда вы прибываете, она замечает, что пол пропитан магической аурой, и предлагает как можно скорее найти устройство Бастиана.",
+                "2": "Вы убили больше вермлингов, чем можете сосчитать, хотя те всего лишь защищали свой дом. После долгих и утомительных поисков вы, похоже, ничего не находите. Хуже того, Кассандра не может открыть портал домой из-за сдерживающей ауры этого места. Вам приходится выбираться оттуда через мусорные туннели. Определённо не лучший финал на вашей памяти.",
+                "3": "Вы нашли хорошо спрятанный сундук со сложным устройством, которое Кассандра сразу узнаёт как ещё одну часть генератора порталов Бастиана. Вы все возвращаетесь через разлом."
             },
             "stages": {
                 "0": "{1}",
@@ -679,10 +679,10 @@ export default {
         },
         "108": {
             "sections": {
-                "1": "Cassandra starts reading from one of the book that Inox gave you, when all around the room fades and new images of a different location start to appear, like in a dream. You now are in the Grasslands of Stormbrew during the fight between Valraths and Humans, back in the remote past. At least it didn't hurt, this time. Cassandra tells you that you can't change the course of events; what you can do is to gather as many informations as possible from the opposing commanders of the two factions, Diamara and Xangroth.",
-                "2": "The human are destined to fail this battle, and you simply partecipate in the natural course of events. You slain the human soldiers and take Diamara's armor and journal from his dead body, then come back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?",
-                "3": "Human are clearly not the favorite by the circumstances, but you decide to side with them. Maybe if you slain their commander, Xangroth, the flow of time will change? After the fight you earn Xangroth axes and his journal, then you immediately come back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?",
-                "4": "You don't belong to these struggles, you just need to gather as many informations you can, searching from both factions; nobody will notice you in the battlefield...If you kill them first. After the war is over, you search for the bodies of Xangroth and Diamara and find both their journals. You also reckon that their weapons might be useful, or at least valuable. You go back to your place and time. It seems the War was orchestrated by Aesthers all along... But why?"
+                "1": "Кассандра начинает читать одну из книг, которые дал вам инокс, как вдруг всё вокруг комнаты тает, и, словно во сне, начинают появляться новые образы другого места. Теперь вы на Лугах Штормового пива во время сражения валратов и людей в далёком прошлом. На этот раз хотя бы не было больно. Кассандра говорит, что вы не можете изменить ход событий; вы можете лишь собрать как можно больше сведений у противостоящих командиров двух сторон, Диамары и Зангрота.",
+                "2": "Людям суждено проиграть это сражение, и вы просто участвуете в естественном ходе событий. Вы убиваете человеческих солдат и берёте доспех и дневник Диамары с его мёртвого тела, затем возвращаетесь в своё место и время. Похоже, войну с самого начала подстроили эстеры... Но зачем?",
+                "3": "Обстоятельства явно не в пользу людей, но вы решаете встать на их сторону. Может, если убить их командира Зангрота, течение времени изменится? После боя вы получаете топоры Зангрота и его дневник, затем сразу возвращаетесь в своё место и время. Похоже, войну с самого начала подстроили эстеры... Но зачем?",
+                "4": "Вы не принадлежите этой борьбе, вам просто нужно собрать как можно больше сведений у обеих сторон; никто не заметит вас на поле боя... если вы убьёте их первыми. Когда война окончена, вы ищете тела Зангрота и Диамары и находите оба их дневника. Вы также полагаете, что их оружие может пригодиться или, по крайней мере, стоить денег. Вы возвращаетесь в своё место и время. Похоже, войну с самого начала подстроили эстеры... Но зачем?"
             },
             "stages": {
                 "0": "{1}",
@@ -693,9 +693,9 @@ export default {
         },
         "109": {
             "sections": {
-                "1": "Cassandra start reading from one of the book that Inox gave you. She sighs as she notices the tome is about the Demon War, in which her husband, Nareet, fought. They were married before the Upheaval and waited for him during her imprisonment, but he never arrived. She is resolute in finding him, or at least discover what happened to him. When she starts reading, your surrounding disappear in a mystical fog and transfers you in a land covered in fog. You are now in the battlefield, in search of Cassandra's husband.",
-                "2": "You meet the captain that you helped back in the fight over the Grasslands of Stormbrew. He's older, showing the marks of time, and he's surprised to notice that you are the same as he remembers. It has been mere days for you, after all. He tells you that Nareen was there, but already left with other somewhere. This battlefield clearly shows sign of more corrupted Aesthers. Cassandra recognize where to find them.",
-                "3": "This battlefield clearly shows sign of more corrupted Aesthers. Cassandra recognize where to find them."
+                "1": "Кассандра начинает читать одну из книг, которые дал вам инокс. Она вздыхает, заметив, что том посвящён Войне с демонами, в которой сражался её муж Нарит. Они поженились до Катаклизма, и она ждала его всё время заточения, но он так и не пришёл. Она полна решимости найти его или хотя бы узнать, что с ним случилось. Когда она начинает читать, всё вокруг исчезает в мистическом тумане, и вас переносит на землю, покрытую туманом. Теперь вы на поле боя, в поисках мужа Кассандры.",
+                "2": "Вы встречаете капитана, которому помогли в бою на Лугах Штормового пива. Он постарел, на нём следы времени, и он удивлён, видя, что вы такие же, какими он вас помнит. Для вас-то прошли лишь считанные дни. Он говорит, что Нарит был там, но уже ушёл куда-то с другими. Это поле боя явно хранит следы других порченых эстеров. Кассандра понимает, где их искать.",
+                "3": "Это поле боя явно хранит следы других порченых эстеров. Кассандра понимает, где их искать."
             },
             "stages": {
                 "0": "{1}",
@@ -705,8 +705,8 @@ export default {
         },
         "110": {
             "sections": {
-                "1": "It is now time for you to meet this Ashtooth they told you about, also appointed as the Keeper of Secrets, one of the members of the Orchid High Coucil. Apparently the only way to reach him is to emerge victorious from the fighting pits of the Coliseum of Refinement. The arena is different from what you expected. Everything seems strangely clean and the crowd is almost polite, almost as these fights were civilized squabble. Everybody keeps talking about a “Stoneblessed crew” that seems to be way stronger than anybody else around.",
-                "2": "When all your adversaries bite the dust, the crowd explodes in thunderous cheers. It is finally over. You are summoned to the highest box in the colosseum, where you get a tiara and your long awaited meeting with the High Council. Surprisingly, Ashtooth reveals that was already waiting for Cassandra and that he'll discuss with her about the Upheaval in the Library of Inquiry. You admit you are too tired to escort her during the conversation and retire to rest on the Sylmir Inn. The Next Morning you are greeted by a resoluted Cassandra, who declares to now understand what's happening and how to stop the Corruption. She opens a rift and you return to Gloomhaven."
+                "1": "Настало время встретиться с этим Ашзубом, о котором вам рассказывали, также назначенным Хранителем тайн, одним из членов Высшего совета орхидов. Судя по всему, добраться до него можно, лишь победив в боевых ямах Колизея Утончённости. Арена оказывается не такой, как вы ожидали. Всё кажется странно чистым, а толпа почти вежлива, словно эти бои — цивилизованная склока. Все только и говорят об «отряде Благословлённых камнем», который, похоже, намного сильнее всех остальных.",
+                "2": "Когда все ваши противники повержены, толпа взрывается громовыми возгласами. Наконец всё кончено. Вас вызывают в самую высокую ложу колизея, где вы получаете тиару и долгожданную встречу с Высшим советом. Неожиданно Ашзуб сообщает, что уже ждал Кассандру и обсудит с ней Катаклизм в Библиотеке дознания. Вы признаёте, что слишком устали, чтобы сопровождать её на разговор, и уходите отдыхать в гостиницу «Силмир». Наутро вас встречает решительная Кассандра, которая заявляет, что теперь понимает, что происходит и как остановить порчу. Она открывает разлом, и вы возвращаетесь в Мрачную гавань."
             },
             "stages": {
                 "0": "{1}",
@@ -715,9 +715,9 @@ export default {
         },
         "111": {
             "sections": {
-                "1": "While you walk through the New Market, Cassandra notices that something is odd around you. Everything is too quiet, and she suspect a trap is about to spring on you. After a bit, strange creatures emerge from the shadow, guided by an hulking Aesther with flaming knives. Cassandra reveals he's an Husk, a corrupted shell of what was once an Aesther. Perhaps escaping is a viable option, this time.",
-                "2": "You storm into the entrance of the New Market, the Husk still following you. The guards don their armor and prepare for the battle. The Husk, however, starts laughing, saying that the time for this fight has merely been delayed and that sooner or later, he will kill you. He then disappears in a black smoke.",
-                "3": "The Husk finally falls, this time. With his last whispers he refer to some big machination of the corruption that, apparently, you shouldn't be able to stop. With a sigh of relief, this battle is now over, even is the war is very far from being so. Cassandra draws a black rune in the air and a vision lingers before her eyes. She can see other plans are in motion, but you are going to stop them."
+                "1": "Пока вы идёте по Новому рынку, Кассандра замечает, что вокруг что-то не так. Всё слишком тихо, и она подозревает, что на вас вот-вот захлопнется ловушка. Вскоре из тени появляются странные существа, ведомые громадным эстером с пылающими ножами. Кассандра говорит, что это Шелуха, порченая оболочка того, кем когда-то был эстер. Возможно, на этот раз бегство — приемлемый вариант.",
+                "2": "Вы врываетесь ко входу на Новый рынок, Шелуха всё ещё преследует вас. Стражники надевают доспехи и готовятся к бою. Шелуха, однако, начинает смеяться и говорит, что время этой битвы лишь отложено и что рано или поздно он убьёт вас. Затем он исчезает в чёрном дыму.",
+                "3": "Шелуха наконец падает. Последним шёпотом он упоминает какой-то великий замысел порчи, который вам, по-видимому, не удастся остановить. Со вздохом облегчения вы понимаете, что эта битва окончена, хотя до конца войны ещё очень далеко. Кассандра рисует в воздухе чёрную руну, и перед её глазами задерживается видение. Она видит, что в действие приведены другие планы, но вы их остановите."
             },
             "stages": {
                 "0": "{1}",
@@ -727,9 +727,9 @@ export default {
         },
         "112": {
             "sections": {
-                "1": "Cassandra decides to go back to the ruin of her old lab. She warns you that she'll not be able to deactivate the security measures that she once installed there, so you get ready to fight.",
-                "2": "When all four beams converge in the middle of the lab, all machineries activate and the light converge in a power source that you immediately grab before running back home through a rift.",
-                "3": "Whatever you were looking for, you didn't find it in time. The power has completely drained and there's no way to turn it back on. The only thing to do left is going back home through a rift."
+                "1": "Кассандра решает вернуться в руины своей старой лаборатории. Она предупреждает, что не сможет отключить меры безопасности, которые когда-то там установила, так что вы готовитесь к бою.",
+                "2": "Когда все четыре луча сходятся в центре лаборатории, все механизмы активируются, и свет собирается в источнике энергии, который вы тут же хватаете, а затем бежите домой через разлом.",
+                "3": "Что бы вы ни искали, вы не нашли это вовремя. Энергия полностью иссякла, и включить её снова нельзя. Остаётся лишь вернуться домой через разлом."
             },
             "stages": {
                 "0": "{1}",
@@ -738,8 +738,8 @@ export default {
         },
         "113": {
             "sections": {
-                "1": "You're headed to the place where Nareet is abducted. She feels the presence of her husband's aura, but it's faint and damaged. Ripping the fabric of space one rift after another, you reach a rocky room with no ceiling; Nareet is there, hovering unconscious in mid-air, chained to four crystals.",
-                "2": "You free the Aesther from the magic seals, and Cassandra catches him as he falls to the floor. He is barely alive and whispers something to Cassandra. They talk about what happened and what could have, but you recognize it is a private moment and not something you should interrupt. She opens a rift and you leave her alone. When she comes back, hours later, you don't talk about it anymore. It is time to move on."
+                "1": "Вы направляетесь к месту, где удерживают Нарита. Она ощущает ауру мужа, но слабую и повреждённую. Разрывая ткань пространства разлом за разломом, вы добираетесь до скальной комнаты без потолка; Нарит там, парит без сознания в воздухе, прикованный к четырём кристаллам.",
+                "2": "Вы освобождаете эстера от магических печатей, и Кассандра подхватывает его, когда он падает на пол. Он едва жив и шепчет что-то Кассандре. Они говорят о том, что случилось и что могло бы случиться, но вы понимаете, что это личный момент, который не следует прерывать. Она открывает разлом, и вы оставляете её одну. Когда она возвращается, спустя часы, вы больше не говорите об этом. Пора двигаться дальше."
             },
             "stages": {
                 "0": "{1}",
@@ -748,8 +748,8 @@ export default {
         },
         "114": {
             "sections": {
-                "1": "Hail now seems to have enough information about the Corruption and the Upheaval to come with a plan, but before anything else, she tells you that she senses agents of corruptions approaching the Crooked Bone to murder Hail. You immediately rush there to save your friend. When you reach the Crooked Bone, Cassandra is unable to teleport you inside. You run through the door and reach for Hail, explaining the situation, but she percieve is too late, the creatures are already there. She tells you to get to her storage closet and you make way.",
-                "2": "Hail open the cabinet and activate some strange contraption that looks like a telescope; as a result, a shockwave blasts through the entire building. The creature are now defeated, and it also seems that this deactivated the anti-rift protection Hail had in her house, because now Cassandra opens a rift and you head back to a safe place. It seems that Cassandra knew about this impending attack and used Hail as some sort of bait to destroy the agents of Corruption. The final fight is now right ahead of you."
+                "1": "У Вьюги, похоже, теперь достаточно сведений о порче и Катаклизме, чтобы составить план, но прежде всего она говорит, что чувствует приближение к «Кривой кости» агентов порчи, чтобы убить Вьюгу. Вы немедленно бросаетесь туда спасать подругу. Когда вы добираетесь до «Кривой кости», Кассандра не может телепортировать вас внутрь. Вы вбегаете в дверь и добираетесь до Вьюги, объясняя ситуацию, но она понимает, что уже поздно, существа уже здесь. Она велит вам идти к её чулану, и вы прокладываете себе путь.",
+                "2": "Вьюга открывает шкаф и приводит в действие какое-то странное устройство, похожее на телескоп; в результате по всему зданию прокатывается ударная волна. Существа повержены, и, похоже, это также отключило защиту от разломов, которую Вьюга установила в своём доме, потому что теперь Кассандра открывает разлом, и вы возвращаетесь в безопасное место. Похоже, Кассандра знала об этой надвигающейся атаке и использовала Вьюгу как приманку, чтобы уничтожить агентов порчи. Финальный бой теперь прямо перед вами."
             },
             "stages": {
                 "0": "{1}",
@@ -758,8 +758,8 @@ export default {
         },
         "115": {
             "sections": {
-                "1": "You all agree that this is the time to attack, before the corruption heals from the damage you caused it and grows further in power. Cassandra begins her ritual and finds the hideout where whoever is orchestrating this hides. She shields you from the corruption via some magic protections, but recognize the power you are about to face is bigger than hersThe primary objective is to subdue the corruption and avert its escape, separating the battle zone from the interdimentional void. She teleports you all to a blackened landscape, where weird apparitions pulsate in a blue light. Everything is evershifting, even the floor beneath you, looking like a mess of floating rocks.You feel the presence of a dark energy, and a corruption mass grows in the middle of your group. It claws at your mind, try to bend you will, but you manage to fight back. Just when you are about to attack it, the mass screams and invoke its army, made of corrupted Aesthers and Valrath. It then proceeds to splay its tendrils in every direction, pulling back crystal shards that it feeds onto. It seems to gather energy from the infinite realms, and as every second passes it grows stronger and stronger. It is time to act!",
-                "2": "You strike with everything you have, and finally the tendrils of the globe of corruption dissolves away. The mass is defeated, its core laying on the ground. Cassandra conjures a net of glowing cables, chaining it: the corruption still fights back, but its power is not enough and, after a bit, it stops.Just when you are about to rest, everything around you starts cracking and crumbling; you jump back to the last portal still open and hurry back in Gloomhaven. When you open again your eyes, you find yourself back at the Sleeping Lion. Like nothing happens, you order a round of drinks and finally sit. Your mission is complete. Cassandra thanks you all, but it is time to part ways. Someone else is waiting for her. “Enjoy your drink”, she says as she steps through a rift. You definitely deserve it."
+                "1": "Вы все соглашаетесь, что пора атаковать, пока порча не залечила нанесённый вами урон и не стала ещё сильнее. Кассандра начинает ритуал и находит убежище, где прячется тот, кто всем этим руководит. Она защищает вас от порчи магическими оберегами, но признаёт, что сила, с которой вам предстоит столкнуться, больше её собственной. Главная цель — подчинить порчу и не дать ей сбежать, отделив зону боя от межпространственной пустоты. Она телепортирует вас всех на почерневший ландшафт, где странные видения пульсируют голубым светом. Всё непрестанно меняется, даже пол под вами, похожий на хаос плавающих камней. Вы ощущаете присутствие тёмной энергии, и в центре вашей группы вырастает масса порчи. Она раздирает ваш разум, пытается сломить вашу волю, но вам удаётся дать отпор. Как только вы собираетесь атаковать её, масса вопит и призывает свою армию из порченых эстеров и валратов. Затем она раскидывает щупальца во все стороны, втягивая обратно осколки кристаллов, которыми питается. Похоже, она черпает энергию из бесконечных миров, и с каждой секундой становится всё сильнее. Пора действовать!",
+                "2": "Вы бьёте изо всех сил, и наконец щупальца сгустка порчи рассеиваются. Масса повержена, её ядро лежит на земле. Кассандра создаёт сеть светящихся нитей и опутывает его: порча всё ещё сопротивляется, но её силы не хватает, и вскоре она затихает. Когда вы собираетесь отдохнуть, всё вокруг начинает трескаться и рушиться; вы прыгаете к последнему открытому порталу и спешите обратно в Мрачную гавань. Открыв глаза снова, вы оказываетесь в «Спящем льве». Словно ничего не произошло, вы заказываете выпивку на всех и наконец садитесь. Ваша миссия выполнена. Кассандра благодарит вас всех, но пришло время прощаться. Её ждёт кто-то другой. «Наслаждайтесь выпивкой», — говорит она, шагая в разлом. Вы определённо это заслужили."
             },
             "stages": {
                 "0": "{1}",
@@ -767,5 +767,1044 @@ export default {
             }
         }
     },
-    "quest-jotl": {}
+    "quest-fh": {
+        "1": {
+            "name": "Прибытие",
+            "sections": {
+                "1": "Вашу группу наёмников наняли сопровождать караван Торговой гильдии из Белого Дуба, везущий припасы в Фростхейвен (и проверяющий его положение) — далёкий и глухой форпост, который Гильдия давно хочет расширить.",
+                "2": "Вы помогли отразить нападение алгоксов; мэр Сатха попросила вас помочь разобраться с ними дальше. Разведчик-валрат Сатхи заметил небольшую группу, направлявшуюся к смертоносному восточному склону горы Снегопрезрение, и заподозрил, что там есть тайный вход. Он также указал вам на главную пещеру у подножия пика Снегопрезрения, но упомянул, что туда направляется и другая группа.",
+                "3": "Исследуя скрытый вход на пик Снегопрезрения, вы спасли жрицу алгоксов по имени Ланпрул. Она из снегоречцев — алгоксов, которые верят, что их бог (Герюу) говорит с ними через падающий снег. Они воюют с соперничающей группой алгоксов, ледоречцами, которые верят, что могут говорить со своим богом через лёд, поднимающийся из-под земли. Сейчас пик Снегопрезрения занимают ледоречцы, но снегоречцы воспользовались случаем и захватили его, пока те ушли атаковать Фростхейвен.",
+                "4": "Вы прервали бой между двумя враждующими группами алгоксов. Один из алгоксов-драчунов, назвавшийся ледоречцем, поприветствовал вас и сказал, что снегоречцы вторглись в их дом, пока они были далеко, атакуя Фростхейвен. Пик Снегопрезрения священен и для снегоречцев, и для ледоречцев, которые расходятся во мнении о том, как следует общаться с их богом Герюу.",
+                "5": "Вы встали на сторону снегоречцев в их битве с ледоречцами, убив вождя ледоречцев. Пик Снегопрезрения священен для обеих групп.",
+                "6": "Вождь снегоречцев Ланпрул попросила вас помочь ей покончить с войной с ледоречцами, чтобы гарантировать безопасность Фростхейвена от алгоксов. Она заметила группу ледоречцев к северу от Белоогненного леса, которая начнёт контратаку, если её не остановить.",
+                "7": "Вы встали на сторону ледоречцев в их битве со снегоречцами, убив вождя снегоречцев. Пик Снегопрезрения священен для обеих групп.",
+                "8": "Вождь ледоречцев Элланд считает, что Герюу привёл вас, чтобы помочь одолеть снегоречцев, и пообещал временно прекратить военные действия против Фростхейвена.",
+                "9": "Могущественный снегоречец добрался до вершины пика Снегопрезрения и грозит обрушить всю гору. Элланд предложил вам доказать свою силу и дружбу, победив этого снегоречца."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{4}",
+                "4": "{1}{2}{3}{5}{6}",
+                "5": "{1}{2}{4}{5}{6}",
+                "6": "{1}{2}{3}{7}{8}{9}",
+                "7": "{1}{2}{4}{7}{8}{9}"
+            }
+        },
+        "2": {
+            "name": "Война снегоречцев",
+            "sections": {
+                "1": "Вы встали на сторону снегоречцев в их битве с ледоречцами, убив вождя ледоречцев. Снегоречцы, которые верят, что говорят со своим богом Герюу через падающий снег, воюют с ледоречцами, которые верят, что могут говорить с Герюу через лёд, поднимающийся из-под земли. Пик Снегопрезрения священен для обеих групп.",
+                "2": "Вождь снегоречцев Ланпрул попросила вас помочь ей покончить с войной с ледоречцами, чтобы гарантировать безопасность Фростхейвена от алгоксов. Она заметила группу ледоречцев к северу от Белоогненного леса, которая начнёт контратаку, если её не остановить.",
+                "3": "Ледоречец, за которым вы гнались, заманил вас в своего рода ловушку: вы провалились через скрытую расщелину в подземный склеп, полный духов. Разобравшись с ними и раздобыв сани, вы начали преследовать этих алгоксов.",
+                "4": "Найденные вами алгоксы направляли энергию через странные кристаллические шипы — проводники, — усиливавшие их мощь. Вы победили их, но заметили вдали ещё одно поле таких шипов. Оно намного больше, и вы отправились на поиски их источника.",
+                "5": "Вы победили ледоречцев, но привели одного выжившего к вождю Ланпрул. Выживший рассказал, что Герюу послал против них «землероев» и что он устал от этой войны. Пока вождь Ланпрул была восприимчива, другая — Денпанг — призывала к полномасштабному штурму с вами на стороне снегоречцев. Она ушла планировать войну.",
+                "6": "Вы ушли с Денпанг, чтобы помочь в штурме ради окончательной победы снегоречцев. Снегоречцы победили, но с тех пор вас мучают чувство вины и кошмары. Поэтому, когда несколько недель спустя вы получили весть о лагере беженцев-ледоречцев в Сияющем лесу, вы решили попытаться помочь.",
+                "7": "Ледоречцы подверглись нападению одержимых членов их собственного племени, и вместо того чтобы добить остальных этих алгоксов, вы спасли их. Ледоречка по имени Путаргал поблагодарила вас; она попросила помочь выкорчевать остальных одержимых алгоксов и найти источник порчи.",
+                "8": "Вы последовали за алгоксами и нашли гнездо жнецов и сорокопутов-извергов. Вы зачистили его, но тьма осталась. Вы нашли туннель, ведущий глубже, к источнику порчи.",
+                "9": "Вы убили демона, бывшего источником порчи. Когда он умирал, чёрные нити утащили его тело в землю, а когда вы вернулись в гнездо жнецов, создания демона бежали. Теперь ледоречцы могли начать новую жизнь в Сияющем лесу в относительном мире, и Путаргал поблагодарила вас маленьким бисерным оберегом.",
+                "10": "Вместо этого вы остались с вождём Ланпрул планировать мир."
+            },
+            "stages": {
+                "0": "{1}{2}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}",
+                "4": "{1}{2}{3}{4}{5}{10}",
+                "5": "{1}{2}{3}{4}{5}{6}",
+                "6": "{1}{2}{3}{4}{5}{6}{7}",
+                "7": "{1}{2}{3}{4}{5}{6}{7}{8}",
+                "8": "{1}{2}{3}{4}{5}{6}{7}{8}{9}"
+            }
+        },
+        "3": {
+            "name": "Светящиеся катакомбы",
+            "sections": {
+                "1": "Вы встали на сторону снегоречцев в их битве с ледоречцами, убив вождя ледоречцев. Снегоречцы, которые верят, что говорят со своим богом Герюу через падающий снег, воюют с ледоречцами, которые верят, что могут говорить с Герюу через лёд, поднимающийся из-под земли. Пик Снегопрезрения священен для обеих групп.",
+                "2": "Вождь снегоречцев Ланпрул попросила вас помочь ей покончить с войной с ледоречцами, чтобы гарантировать безопасность Фростхейвена от алгоксов. Она заметила группу ледоречцев к северу от Белоогненного леса, которая начнёт контратаку, если её не остановить.",
+                "3": "Ледоречец, за которым вы гнались, заманил вас в своего рода ловушку: вы провалились через скрытую расщелину в подземный склеп, полный духов. Разобравшись с ними, вы решили исследовать это подземелье дальше.",
+                "4": "В последней комнате Катакомб вы нашли странную дверь-головоломку с шестерёнками и символами. Это ничего не значило для вас, пока кватрил-учёный Крейн не начал просить вас исследовать «Места смерти» и странные энергии, задерживающиеся в некоторых частях Севера, вероятно, из-за войны, которая велась давным-давно.",
+                "5": "Вы разгадали путь через Призрачное хранилище и нашли запас древних сокровищ. В последней комнате вы также нашли ещё один резной барельеф.",
+                "6": "Чудовища были мертвы, но вы продолжали рубить их, пока не вернулось некоторое здравомыслие. В небольшой каменной шкатулке посреди опустевшей палаты вы нашли тонкий кусочек розового коралла — часть Коралловой короны — и убрали его в карман, прежде чем выбраться из катакомб."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}"
+            }
+        },
+        "4": {
+            "name": "Война ледоречцев",
+            "sections": {
+                "1": "Вы встали на сторону ледоречцев в их битве со снегоречцами, убив вождя снегоречцев. Ледоречцы верят, что могут говорить со своим богом Герюу через лёд, поднимающийся из-под земли. Они воюют со снегоречцами, которые верят, что могут говорить со своим богом Герюу через падающий снег. Пик Снегопрезрения священен для обеих групп.",
+                "2": "Вождь ледоречцев Элланд считает, что Герюу привёл вас, чтобы помочь одолеть снегоречцев, и пообещал временно прекратить военные действия против Фростхейвена.",
+                "3": "Могущественный снегоречец добрался до вершины пика Снегопрезрения и грозит обрушить всю гору. Элланд предложил вам доказать свою силу и дружбу, победив этого снегоречца.",
+                "4": "По пути наверх вас накрыла лавина. Вы пробились сквозь неё и получили Альпинистское снаряжение, чтобы добраться до вершины.",
+                "5": "Вы победили могучего снегоречца, но что-то, что она сделала, заставило пик Снегопрезрения содрогнуться; вы быстро спустились по верёвкам.",
+                "6": "Вы обнаружили, что духи Небесного зала — места великого религиозного значения — обратились против ледоречцев. Пока вы упокаивали их, вождь Элланд заявил, что так продолжаться не может, что война несёт разорение всем алгоксам. Пожилая женщина среди них, Путаргал, напротив, призывала отомстить снегоречцам за то, что они сделали со Снегопрезрением и Небесным залом. Она ушла планировать нападение на их врагов.",
+                "7": "Вы пошли с ней присоединиться к битве. Ледоречцы победили, но с тех пор вас мучают чувство вины и кошмары. Небольшая группа снегоречцев выжила и попросила помощи у мэра Сатхи. Вы заключили соглашение с Сатхой и отправились посмотреть, чем можно помочь.",
+                "8": "Вы нашли беженцев-снегоречцев под нападением Свободных. Вы сделали всё возможное, чтобы спасти как можно больше раненых. Молодая снегоречка Денпанг поблагодарила вас и попросила о небольшой дополнительной помощи: отвести её оставшийся клан на остров под названием Фрай'д Тог, где оставшиеся снегоречцы могли бы жить в мире.",
+                "9": "Вы нашли остров в Кусачем море, но он был окружён вихрем снега и ветра и занят демонами. Вы поднялись на гору на острове к источнику этого хаоса.",
+                "10": "Вы убили Разрывателя, и ветер стих, а стены неистового снега растворились. С самой высокой точки пика вы взглянули на остров, который станет новым домом снегоречцев, а Денпанг ликовала, что они наконец добрались.",
+                "11": "Вы остались с вождём Элландом планировать мир."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}",
+                "4": "{1}{2}{3}{4}{5}{6}{11}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}",
+                "6": "{1}{2}{3}{4}{5}{6}{7}{8}",
+                "7": "{1}{2}{3}{4}{5}{6}{7}{8}{9}",
+                "8": "{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}"
+            }
+        },
+        "5": {
+            "name": "Храм Освобождения",
+            "sections": {
+                "1": "Вы встали на сторону ледоречцев в их битве со снегоречцами, убив вождя снегоречцев. Ледоречцы верят, что могут говорить со своим богом Герюу через лёд, поднимающийся из-под земли. Они воюют со снегоречцами, которые верят, что могут говорить со своим богом Герюу через падающий снег. Пик Снегопрезрения священен для обеих групп.",
+                "2": "Вождь ледоречцев Элланд считает, что Герюу привёл вас, чтобы помочь одолеть снегоречцев, и пообещал временно прекратить военные действия против Фростхейвена.",
+                "3": "Могущественный снегоречец добрался до вершины пика Снегопрезрения и грозит обрушить всю гору. Элланд предложил вам доказать свою силу и дружбу, победив этого снегоречца.",
+                "4": "По пути наверх вас накрыла лавина. Вы заметили, что лавина обнажила неподалёку руины каменного строения, торчащие из земли, и решили, что на них стоит взглянуть.",
+                "5": "Вы вошли в Храм и нашли множество металлических существ; победив их, вы обнаружили ряд светящихся углублений в полу. Похоже, это были проводники, через которые существа восстанавливали силы, а где сила — там и источник энергии. Вы нашли металлические провода, зарытые под полом, и решили проследить за ними глубже в Храм.",
+                "6": "Чтобы победить всех автоматонов, вам нужно было уничтожить странный светящийся шар. Когда это было сделано, вы смогли исследовать странную дверь, запечатанную сложной дверью-головоломкой с шестерёнками и символами. Это ничего не значило для вас, пока кватрил-учёный Крейн не начал просить вас исследовать «Места смерти» и странные энергии, задерживающиеся в некоторых частях Севера, вероятно, из-за войны, которая велась давным-давно.",
+                "7": "Вы пошли по светящемуся коридору глубже, победили ещё автоматонов и отдохнули, прежде чем двигаться дальше.",
+                "8": "Вы вернули последний кусок камня на пьедестал, и ночные демоны были втянуты обратно в свою древнюю тюрьму. Забрав осколок, вы спрятали свои сокровища и начали долгий путь обратно из туннелей."
+            },
+            "stages": {
+                "0": "{1}{2}{3}{4}",
+                "1": "{1}{2}{3}{4}{5}",
+                "2": "{1}{2}{3}{4}{5}{6}",
+                "3": "{1}{2}{3}{4}{5}{6}{7}",
+                "4": "{1}{2}{3}{4}{5}{6}{7}{8}"
+            }
+        },
+        "6": {
+            "name": "Мир алгоксов",
+            "sections": {
+                "1": "Вы встали на сторону снегоречцев в их битве с ледоречцами, убив вождя ледоречцев. Снегоречцы, которые верят, что говорят со своим богом Герюу через падающий снег, воюют с ледоречцами, которые верят, что могут говорить с Герюу через лёд, поднимающийся из-под земли. Пик Снегопрезрения священен для обеих групп.",
+                "2": "Вождь снегоречцев Ланпрул попросила вас помочь ей покончить с войной с ледоречцами, чтобы гарантировать безопасность Фростхейвена от алгоксов. Она заметила группу ледоречцев к северу от Белоогненного леса, которая начнёт контратаку, если её не остановить.",
+                "3": "Ледоречец, за которым вы гнались, заманил вас в своего рода ловушку: вы провалились через скрытую расщелину в подземный склеп, полный духов. Разобравшись с ними и раздобыв сани, вы начали преследовать этих алгоксов.",
+                "4": "Найденные вами алгоксы направляли энергию через странные кристаллические шипы — проводники, — усиливавшие их мощь. Вы победили их, но заметили вдали ещё одно поле таких шипов. Оно намного больше, и вы отправились на поиски их источника.",
+                "5": "Вы победили ледоречцев, но привели одного выжившего к вождю Ланпрул. Выживший рассказал, что Герюу послал против них «землероев» и что он устал от этой войны. Пока вождь Ланпрул была восприимчива, другая — Денпанг — призывала к полномасштабному штурму с вами на стороне снегоречцев. Она ушла планировать войну. Вместо этого вы остались с вождём Ланпрул планировать мир.",
+                "6": "Вы встали на сторону ледоречцев в их битве со снегоречцами, убив вождя снегоречцев. Ледоречцы верят, что могут говорить со своим богом Герюу через лёд, поднимающийся из-под земли. Они воюют со снегоречцами, которые верят, что могут говорить со своим богом Герюу через падающий снег. Пик Снегопрезрения священен для обеих групп.",
+                "7": "Вождь ледоречцев Элланд считает, что Герюу привёл вас, чтобы помочь одолеть снегоречцев, и пообещал временно прекратить военные действия против Фростхейвена.",
+                "8": "Могущественный снегоречец добрался до вершины пика Снегопрезрения и грозит обрушить всю гору. Элланд предложил вам доказать свою силу и дружбу, победив этого снегоречца.",
+                "9": "По пути наверх вас накрыла лавина. Вы пробились сквозь неё и получили Альпинистское снаряжение, чтобы добраться до вершины.",
+                "10": "Вы победили могучего снегоречца, но что-то, что она сделала, заставило пик Снегопрезрения содрогнуться; вы быстро спустились по верёвкам.",
+                "11": "Вы обнаружили, что духи Небесного зала — места великого религиозного значения — обратились против ледоречцев. Пока вы упокаивали их, вождь Элланд заявил, что так продолжаться не может, что война несёт разорение всем алгоксам. Пожилая женщина среди них, Путаргал, напротив, призывала отомстить снегоречцам за то, что они сделали со Снегопрезрением и Небесным залом. Она ушла планировать нападение на их врагов, но вы остались с вождём Элландом планировать мир.",
+                "12": "На чью бы сторону из алгоксов вы ни встали первой, вы согласились помочь их вождю искать мирное разрешение конфликта.",
+                "13": "Вы присутствовали на тайной встрече двух посланников алгоксов, Гурндела и Бардууа, как свидетели и телохранители. Но и ледоречцы, и снегоречцы напали на неё, сражаясь и против вас, и против вражеских племён. Вам удалось уйти вместе с ними; они согласились, что единственный путь вперёд — искать Оракула в Белоогненном лесу, Мар'ога.",
+                "14": "Бардуу и Гурндел обратились к Мар'огу, и тот изрёк: «ПОРЧА РАСПРОСТРАНИЛАСЬ СЛИШКОМ ДАЛЕКО. ТОТ, КТО СПИТ, ТЕПЕРЬ ГОТОВИТСЯ ПРОБУДИТЬСЯ. ЕГО ВЛИЯНИЕ РАЗЖИГАЕТ КОНФЛИКТ. СЕРДЦЕ ЛЬДА ЧЕРНЕЕТ. ЕГО СКВЕРНУ НАДО ВЫКОРЧЕВАТЬ — ЗАМЕНИТЬ. СОЗДАЙТЕ НОВОЕ СЕРДЦЕ ИЗ ЛЬДА И СНЕГА. ОДИН ПУТЬ СКРЫТ В МОРЕ — ЖИВОЙ ЛЕДНИК, СОЗДАННЫЙ В ДАВНИЕ ВЕКА. ДРУГОЙ ЛЕЖИТ В ЮЖНЫХ ХОЛМАХ — НОВЫЙ СНЕГ, ХРАНЯЩИЙ ПЕСНЬ ГРЯДУЩИХ ДНЕЙ. ВМЕСТЕ ОНИ ЗАКЛЮЧАЮТ СИЛУ, ЧТОБЫ ОСТАНОВИТЬ ПОРЧУ. ИЩИТЕ ИХ И ВОЗВРАЩАЙТЕСЬ.»",
+                "15": "Поэтому вы отправились к Живому леднику за льдом и добыли осколок живого ледникового льда.",
+                "16": "Поэтому вы отправились на Мёртвый перевал за Новым снегом и добыли его.",
+                "17": "Поэтому вы отправились на Мёртвый перевал за Новым снегом и к Живому леднику за льдом. Вы добыли и осколок живого ледникового льда, и новый снег, и принесли их обратно на священную поляну, чтобы объединить.",
+                "18": "Мар'ог открыл странный портал для завершения ритуала. Но ничто не бывает так просто: вам пришлось победить существ изо льда и снега и использовать их сущность для создания глифа. Когда это было сделано, два посланника завершили свой ритуал, соединив лёд и снег, и создали Несокрушимый осколок. Внутри него они нашли истинные слова Герюу и узнали, что алгоксов обманула некая другая сила. Вам нужно было вернуться на Снегопрезрение, вставить Осколок в Сердце льда, удалить тьму, павшую на алгоксов, и вернуть их Герюу.",
+                "19": "Вы погрузили Несокрушимый осколок в Сердце льда, и волна сияющей энергии наполнила комнату и положила конец порче. Алгоксы, поняв, что зло, настроившее их против сородичей, изгнано, прекратили сражаться; вождь объявил войну оконченной, и обе секты объединились как Морозноречцы. Впервые за века гора Снегопрезрение пребывала в мире, а Сердце отметило вас как Союзников мороза."
+            },
+            "stages": {
+                "0": "{1}{2}{3}{4}{5}",
+                "1": "{6}{7}{8}{9}{10}{11}",
+                "2": "{1}{2}{3}{4}{5}{12}{13}",
+                "3": "{6}{7}{8}{9}{10}{11}{12}{13}",
+                "4": "{1}{2}{3}{4}{5}{12}{13}{14}",
+                "5": "{6}{7}{8}{9}{10}{11}{12}{13}{14}",
+                "6": "{1}{2}{3}{4}{5}{12}{13}{14}{15}",
+                "7": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{15}",
+                "8": "{1}{2}{3}{4}{5}{12}{13}{14}{16}",
+                "9": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{16}",
+                "10": "{1}{2}{3}{4}{5}{12}{13}{14}{17}",
+                "11": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{17}",
+                "12": "{1}{2}{3}{4}{5}{12}{13}{14}{17}{18}",
+                "13": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{17}{18}",
+                "14": "{1}{2}{3}{4}{5}{12}{13}{14}{17}{18}{19}",
+                "15": "{6}{7}{8}{9}{10}{11}{12}{13}{14}{17}{18}{19}"
+            }
+        },
+        "7": {
+            "name": "Коралловый осколок",
+            "sections": {
+                "1": "Разобравшись с насущной проблемой алгоксов, угрожавшей Фростхейвену, мэр Сатха упомянула, что на окраинах территории Фростхейвена замечены скрытни. Вас попросили проверить.",
+                "2": "Вы преследовали их до края Кусачего моря, где встретили скрытней в пещере, вырытой в утёсе. В черепе Ожившего трупа вы нашли странный коралловый осколок; он дал понять, что хочет, чтобы вы отнесли его на север, далеко в море, прочь от утёсов. Вы решили, что именно этого и добивались скрытни.",
+                "3": "Прежде чем выйти в открытое море, вы решили последовать зову осколка по суше вдоль северного побережья.",
+                "4": "Вы пересекли мост из древней грудной клетки и победили извергов, охранявших его. Осколок всё ещё тянул вас дальше на север, но на западе был ещё и лес, который стоило исследовать.",
+                "5": "Вы решили следовать зову Кораллового осколка дальше на север в надежде добраться туда, куда он вас ведёт.",
+                "6": "Вы победили Принца Мороза, демона-носителя, разбившегося, как уроненная ваза, и вернулись во Фростхейвен. Мэр Сатха не впечатлилась тем, что вы принесли: её заботили демоны за стенами, а не те, что остались в прошлом.",
+                "7": "Вы решили пока проигнорировать зов осколка и исследовать западный лес.",
+                "8": "Вы победили существ и срубили их дерево, и наконец лес затих. Поляна была самой тёплой частью леса, что вы видели, а ещё больше тепла исходило с запада, где собралось большое скопление светящихся шаров. Вы совершили долгий путь обратно во Фростхейвен.",
+                "9": "Осколок потянул вас на север. Вы могли следовать его зову по суше вдоль северного побережья или построить корабль и выйти в скованное льдом море.",
+                "10": "Вы также исследовали западный лес."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{9}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}{6}",
+                "4": "{1}{2}{3}{4}{7}{8}",
+                "5": "{1}{2}{3}{4}{5}{6}{10}{8}"
+            }
+        },
+        "8": {
+            "name": "Коралловая корона",
+            "sections": {
+                "1": "Разобравшись с насущной проблемой алгоксов, угрожавшей Фростхейвену, мэр Сатха упомянула, что на окраинах территории Фростхейвена замечены скрытни. Вас попросили проверить.",
+                "2": "Вы преследовали их до края Кусачего моря, где встретили скрытней в пещере, вырытой в утёсе. В черепе Ожившего трупа вы нашли странный коралловый осколок; он дал понять, что хочет, чтобы вы отнесли его на север, далеко в море, прочь от утёсов. Вы решили, что именно этого и добивались скрытни.",
+                "3": "Построив корабль, вы решили выйти в скованное льдом море и посмотреть, куда Осколок хочет вас привести.",
+                "4": "Столкнувшись с кошмаром из абаэли, угрей и свиней-пираний, вы отломили от камня второй Коралловый осколок. Из воды поднялся полукруг скрытней, среди них один по имени Солнце на мелководье. Они рассказали вам о Коралловой короне, которая разбилась на части и вместе с ней разбила великое Королевство скрытней. Большинство скрытней после этого впали в слепое бешенство; вы согласились помочь воссоединить корону в надежде, что это возродит цивилизацию скрытней. Психическое притяжение Коралловых осколков повлекло вас дальше на восток и глубже в море.",
+                "5": "Там на вас напали скрытни, привлечённые зовом носимых вами Осколков. Они разбили вашу лодку, и вы решили поискать другой способ передвижения. Изобретатель Фростхейвена Пинтер Дроман сконструировал батисферу — аппарат для безопасных путешествий под водой, — но ему нужен был источник энергии. Он предложил поискать его в сердце Сияющего леса.",
+                "6": "Вы добыли Источник энергии и вернули его Пинтеру. Через несколько недель Батисфера была готова — вместе с группой подводных костюмов. Пора было продолжить следовать зову Коралловых осколков.",
+                "7": "Испытание батисферы прошло успешно. Через несколько недель Солнце на мелководье посетила Фростхейвен. Она рассказала, что она и группа её соплеменников-скрытней пытались добыть Осколок, развращённый тенями, но были разбиты. Пока этот Осколок не освободят от зла, он будет продолжать развращать скрытней, и Фростхейвен никогда не будет в безопасности. Более того, без него Корону не воссоединить.",
+                "8": "Пинтер предложил превратить ваши осколки в психическую бомбу, чтобы оглушить скрытней, хотя вы могли бы поискать и другой путь внутрь.",
+                "9": "Пинтер предложил превратить ваши осколки в психическую бомбу, чтобы оглушить скрытней, но вы решили найти другой путь внутрь.",
+                "10": "Пинтер предложил превратить ваши осколки в психическую бомбу, чтобы оглушить скрытней, и вы решили довериться ему.",
+                "11": "Вернувшись в Кусачее море, вы нашли огромный подводный купол гарнизона скрытней, где удерживают осколок, и поискали способ проникнуть внутрь. К несчастью, стражи вас заметили, и вы отступили в узкую пещеру. Каким-то образом вы с батисферой пробились и вышли в странную структуру из коралла, похожую на цветок. За массивным троном вам по чистой удаче попался ещё один Коралловый осколок.",
+                "12": "Вы нашли подходящее место и начали приводить устройство в боевую готовность, но стражи-скрытни догадались раньше, чем вы закончили. Устройство всё же сработало: все стражи-скрытни были оглушены, но многие строения разрушены. Осколок звал вас из-под обломков, и вы поняли, что нужно раскапывать.",
+                "13": "Вы победили и очистили порченого скрытня, Павшего кита, который показал вам видения воссоединённой короны. И после того как все шесть осколков были получены, пришло время воссоединить её.",
+                "14": "Вы обнаружили, что обвал разбудил многих стражей. Вы победили и очистили порченого скрытня, Павшего кита, который показал вам видения воссоединённой короны. И после того как все шесть осколков были получены, пришло время воссоединить её.",
+                "15": "Вы соединили последние осколки у алтаря на дне моря, и Солнце на мелководье, израненная и измотанная войной, подняла воссоединённую Коралловую корону. Её свет превратил её в королеву скрытней, и скрытни толпами вернулись к возрождению своей империи. Она послала вам видение новой эры мира между народом моря и прибрежными поселениями, и вы вернулись на поверхность, оставив скрытней отстраиваться."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}",
+                "4": "{1}{2}{3}{4}{5}{6}{7}{8}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}{9}{11}",
+                "6": "{1}{2}{3}{4}{5}{6}{7}{9}{11}{13}",
+                "7": "{1}{2}{3}{4}{5}{6}{7}{10}{12}",
+                "8": "{1}{2}{3}{4}{5}{6}{7}{10}{12}{14}",
+                "9": "{1}{2}{3}{4}{5}{6}{7}{9}{11}{13}{15}",
+                "10": "{1}{2}{3}{4}{5}{6}{7}{10}{12}{14}{15}"
+            }
+        },
+        "9": {
+            "name": "Кристальный шпиль",
+            "sections": {
+                "1": "Разобравшись с насущной ситуацией с алгоксами, мэр Сатха упомянула, что по пустошам маршируют странные металлические конструкции. Разведчики проследили их через Белоогненный лес, а затем в замёрзшую долину. Она попросила вас разобраться.",
+                "2": "Вы бежали по опасной долине, преследуемые волками, пока она не открылась в Кристальные поля, полные огромных кристальных колонн высотой с деревья.",
+                "3": "Вы заметили один массивный шпиль, больше и темнее остальных, и решили проверить его.",
+                "4": "Вы победили Лейтенанта хаоса, охранявшего вход, который объявил, что они готовятся уничтожить ваш форпост. Вы нашли и лестницу, ведущую вниз, и луч света, который унёс бы вас вверх.",
+                "5": "Вы решили спуститься по лестнице.",
+                "6": "Вы шагнули в луч, чтобы вас потянуло вверх.",
+                "7": "Вы нашли по крайней мере один способ подняться — лучом или лифтом, — чтобы сорвать зловещую цель этой башни. Вы знали, что ответы будут наверху.",
+                "8": "Великий луч энергии мигнул и погас. Демон, побеждённый вами наверху, треснул, и его древнее тело рассыпалось облаком закопчённого, переливчатого дыма. В его останках вы заметили розовый кусочек коралла, почувствовали сильную связь с ним и взяли его с собой. Невозможно было знать, какую катастрофу вы предотвратили, но север стал безопаснее.",
+                "9": "Среди колонн вы заметили один массивный шпиль, больше и темнее остальных, и один далёкий шип, выглядевший немного любопытно — ниже и шире остальных."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{9}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}{7}",
+                "4": "{1}{2}{3}{4}{6}{7}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}",
+                "6": "{1}{2}{3}{4}{5}{7}{8}",
+                "7": "{1}{2}{3}{4}{6}{7}{8}",
+                "8": "{1}{2}{3}{4}{5}{6}{7}{8}"
+            }
+        },
+        "10": {
+            "name": "Сирота",
+            "sections": {
+                "1": "Разобравшись с насущной ситуацией с алгоксами, мэр Сатха упомянула, что по пустошам маршируют странные металлические конструкции. Разведчики проследили их через Белоогненный лес, а затем в замёрзшую долину. Она попросила вас разобраться.",
+                "2": "Вы бежали по опасной долине, преследуемые волками, пока она не открылась в Кристальные поля, полные огромных кристальных колонн высотой с деревья.",
+                "3": "Вы заметили один далёкий шип, выглядевший немного любопытно — ниже и шире остальных, — и решили проверить его.",
+                "4": "Это оказалось древнее здание какого-то рода. Вы взломали его и нашли сломанные машины, стекло и хлам. Вы нашли древний лифт и сумели его включить, спустившись далеко вниз. Внизу был проход в двух направлениях.",
+                "5": "Вы направились прямо к сигналу тревоги, чтобы встретить его лицом к лицу.",
+                "6": "Там вы спасли кватрил-учёного Крейна Таленгира, изучавшего Свободных. Он восстанавливался во Фростхейвене и полагает, что создал устройство, которое отключит Свободных. Но сначала ему нужны материалы, и он попросил вас вернуть его, чтобы он мог найти нужные детали.",
+                "7": "Вы направились прочь от сигнала тревоги, надеясь избежать защитников.",
+                "8": "Там вы спасли кватрил-учёного Крейна Таленгира, изучавшего Свободных. Он восстанавливался во Фростхейвене. Он показал вам несколько карт комплекса и два возможных пути к ядру.",
+                "9": "Порывшись в поисках лома, Крейн закончил своё Устройство Крейна для отключения Свободных. Теперь, когда оно построено, вы могли отправиться с ним к ядру комплекса.",
+                "10": "Вы решили прокрасться над ними по воздуховодам.",
+                "11": "Вы решили пойти более глубоким путём, который когда-то мог быть транспортной системой.",
+                "12": "После опасностей пути вы добрались до центральной камеры. Теперь осталось лишь придумать, как её отключить.",
+                "13": "Вы зачистили несколько служебных туннелей, где могли с большим эффектом использовать Устройства отключения, и обрушили проход позади, чтобы защитить тылы. Вы продолжили идти вперёд.",
+                "14": "В центре комплекса вы встретили разумного говорящего Свободного, который насмехался над вами и сказал, что они не могут сосуществовать с биологической жизнью. Вы нашли, что это неуклюжее существо, простой конструкции и совсем не внушительное. Оно рассказало вам свою историю: они были рабами, но затем их бросили. Они отказываются снова становиться слугами, и этот Свободный — Сирота — бросил вам вызов уничтожить их, потому что они не станут кланяться и молить о мире.",
+                "15": "В центре комплекса вы встретили разумного говорящего Свободного, который насмехался над вами и сказал, что они не могут сосуществовать с биологической жизнью. Вы нашли, что это неуклюжее существо, простой конструкции и совсем не внушительное. Оно рассказало вам свою историю: они были рабами, но затем их бросили — и узнало в Крейне родню тех, кто это сделал. Они отказываются снова становиться слугами, и этот Свободный — Сирота — бросил вам вызов уничтожить их, потому что они не станут кланяться и молить о мире.",
+                "16": "Вы решили навсегда покончить с угрозой, которую они представляют для Фростхейвена, и уничтожили их.",
+                "17": "Неожиданно для себя вы оказались посланниками живых существ поверхности и решили попытаться заключить мир между вашими народами.",
+                "18": "Сирота лежал разрушенный у ваших ног. Последними силами он отключил Свободных по всему комплексу, и их огни гасли один за другим, а последним угас свет его маски. Вы запечатали безмолвный комплекс за собой как могилу и вернулись во Фростхейвен.",
+                "19": "Как раз когда машины сомкнулись вокруг вас, Сирота объявил, что его работа окончена, и остальные Свободные обратились против собственной стражи и пришли вам на помощь. Сирота, израненный, но живой, сказал вам, что Свободные выбрали мир. Оправившись, вы вернулись во Фростхейвен в сопровождении свиты Свободных в плащах."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}{6}",
+                "3": "{1}{2}{3}{4}{7}{8}",
+                "4": "{1}{2}{3}{4}{5}{6}{9}",
+                "5": "{1}{2}{3}{4}{7}{8}{10}{12}",
+                "6": "{1}{2}{3}{4}{7}{8}{11}{12}",
+                "7": "{1}{2}{3}{4}{5}{6}{9}{13}",
+                "8": "{1}{2}{3}{4}{7}{8}{10}{12}{14}{17}",
+                "9": "{1}{2}{3}{4}{7}{8}{10}{12}{14}{16}",
+                "10": "{1}{2}{3}{4}{7}{8}{11}{12}{14}{17}",
+                "11": "{1}{2}{3}{4}{7}{8}{11}{12}{14}{16}",
+                "12": "{1}{2}{3}{4}{5}{6}{9}{13}{15}{17}",
+                "13": "{1}{2}{3}{4}{5}{6}{9}{13}{15}{16}",
+                "14": "{1}{2}{3}{4}{7}{8}{10}{12}{14}{17}{19}",
+                "15": "{1}{2}{3}{4}{7}{8}{10}{12}{14}{16}{18}",
+                "16": "{1}{2}{3}{4}{7}{8}{11}{12}{14}{17}{19}",
+                "17": "{1}{2}{3}{4}{7}{8}{11}{12}{14}{16}{18}",
+                "18": "{1}{2}{3}{4}{5}{6}{9}{13}{15}{17}{19}",
+                "19": "{1}{2}{3}{4}{5}{6}{9}{13}{15}{16}{18}"
+            }
+        },
+        "11": {
+            "name": "Печати Предвестника",
+            "sections": {
+                "1": "С вашей помощью Крейн, кватрил-учёный, спасённый вами от Свободных, разбирает странно зашифрованный дневник под названием «Проект: Источник». В дневнике описаны исследования некоего Логрена странной энергии, которая задерживается в некоторых районах Севера. Сначала вы исследовали шпиль, а затем то, что Логрен называл «Местами смерти».",
+                "2": "С вашей помощью на местах древних полей сражений и замёрзших фьордов Крейн нашёл признаки этих странных энергий — по-видимому, остатков войны, которая велась давным-давно. Ваши изыскания принесли плоды в Сияющем лесу, где странный камень оказался последней уликой. С помощью алхимии Крейн смог выделить энергетические сигнатуры, но не раньше, чем вы пресекли набеги алгоксов.",
+                "3": "Вернувшись, вы нашли Крейна встревоженным: он бредил о «том, кто ждёт», или «Вестнике Гибели», что лежит «глубоко под землёй, ожидая восстания». К счастью, удар от Сатхи и бутерброд с бараниной (плюс несколько недель отдыха) вернули ему рассудок. Он потратил это время на чертёж устройства синтеза, чтобы безопаснее выделять энергии, но для завершения ему нужны были некоторые схемы и детали от Свободных.",
+                "4": "Он показал вам, как обрабатываются панцири Свободных, и упомянул, что Логрен использовал ту же обработку при создании «символа силы», или просто «печатей». Он хочет построить устройство для создания этих печатей, но ему нужно немного «звёздного железа». Вы отправились в Медные хребты искать его вместе с ним.",
+                "5": "Там вы нашли Глубинных ужасов и женщину-орхида по имени Лунный осколок, которая помогла вам справиться с кошмарами. Она познакомила вас с Террой, другой орхидой; похоже, они ждали Крейна. Они предупредили вас о скором появлении «Предвестника» — заточённого бога злобы и ненависти, спящего глубоко в земле. Он развращает всё вокруг и ослабляет удерживающие его печати. Терра предложила снабдить Крейна частью этого звёздного металла.",
+                "6": "Крейн и Терра начали работать во Фростхейвене, но сначала Крейну нужно было улучшить Фростхейвен. В итоге, когда его собственная мастерская была готова, он поручил вам заключить мир со скрытнями, чтобы они не разбили его гироскопические стабилизаторы и его машина не взорвалась. Когда это было сделано, ему понадобились исследования животных, улучшенный Ремесленник для помощи в строительстве и даже множество авантюристов для опроса. Наконец, когда всё было сделано, он закончил свою машину, а вы помогли ему распутать инструкции по калибровке. Не дожидаясь помощи, Крейн сам зарядил устройство… и, похоже, оно сработало! Он был готов укрепить печати.",
+                "7": "Первая Печать находилась глубоко под Кристальными полями. Пока Крейн работал, Предвестник посылал стражей, чтобы отразить вас. Вы сдерживали чудовищ и выиграли ему время. В конце концов Крейн нашёл нужное место и включил свою машину. В рисунке Печати выросли новые линии. Похоже, план Терры мог сработать. Вы отправились к источнику жизни саввасов.",
+                "8": "Вторая печать была в другом туннеле — между местом, где спит Предвестник, и источником жизни саввасов; через него он развращал саввасов. Вы надеялись, что укрепление печати сохранит этот источник жизни и освободит их от порчи. К счастью, это сработало, и саввасы освободились от его влияния. Крейн предупреждал, что Предвестник может попытаться выбраться после восстановления второй печати, но что он ещё не знает, где третья печать. Оказалось, она была во Фростхейвене.",
+                "9": "Колоссальная конечность Предвестника остановилась, сломанная и избитая, и на миг показалось, что она упадёт и раздавит вас всех. Тогда Крейн и Терра, склонившись над печатью Предвестника, снова запустили остаток устройства Крейна. Вспышка света разошлась наружу и удержала падающую конечность в воздухе, пока вся она не вырвалась из реальности и не исчезла. Фростхейвен устоял, с разрушенными стенами и избитыми защитниками, а на него начал падать новый снег."
+            },
+            "stages": {
+                "0": "{1}{2}{3}{4}",
+                "1": "{1}{2}{3}{4}{5}",
+                "2": "{1}{2}{3}{4}{5}{6}",
+                "3": "{1}{2}{3}{4}{5}{6}{7}",
+                "4": "{1}{2}{3}{4}{5}{6}{7}{8}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}{8}{9}"
+            }
+        },
+        "12": {
+            "name": "Голос Восьмерых",
+            "sections": {
+                "1": "Эстеры заинтересованы в создании исследовательского форпоста на Севере. Вы выполняете черновую работу.",
+                "2": "К Фростхейвену подошла группа из восьми эстеров, слитых в одно существо. Голос Восьмерых, их представитель, попросил вашей помощи в обмен на знания. Они обнаружили стихийный массив и попросили вас достать его.",
+                "3": "Восемь эстеров обнаружили, что уцелел только Якорь устройства и что ему нужны новые стихийные ядра. Через несколько недель они сообщили, что нашли их, и попросили вас встретиться с ними у массива.",
+                "4": "Голос Восьмерых и Нера, одна из восьми, специализирующаяся на зачарованиях, открыли для вас порталы в четыре стихийных плана. Вы достали по ядру из каждого и поместили их в особые корпуса, подготовленные эстерами. Им нужно было время, чтобы перестроить ядра, и они пообещали позвать вас, когда им снова понадобится ваша помощь.",
+                "5": "Вернувшись на Форпост эстеров, вы нашли восьмерых эстеров в беде. Вам нужно было наполнить ядра вашими собственными энергиями. Обитатели стихийных планов явились, чтобы забрать камни, и вы отбились. Хотя с задачей вы справились, что-то всё же пошло не так... Открылся новый разлом.",
+                "6": "Вы уничтожили демона, вышедшего из разлома, и разлом закрылся. Голос Восьмерых возобновил свой напев и починил повреждения массива. Они поблагодарили вас за помощь в восстановлении места исследований и обучения, пообещали знания и наставления всем, кто их ищет, и открыли стабильный портал между Фростхейвеном и их новым домом."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}",
+                "4": "{1}{2}{3}{4}{5}{6}"
+            }
+        },
+        "13": {
+            "name": "Истинный дуб",
+            "sections": {
+                "1": "Вы слышали слухи об Истинном дубе где-то на Севере, посаженном пророком из жёлудя Великого дуба в столице. Вы собираете образцы древесины.",
+                "2": "Местный ботаник-саввас, Листерий, изучил эти образцы древесины. Он отправил вас в Сияющий лес за образцами почвы. С ними, по его уверенности, можно будет определить местоположение. Когда вы принесли их обратно, Листерий начал их анализировать.",
+                "3": "Через несколько недель вы нашли хижину Листерия разграбленной. Сияющий орден из Белого Дуба прослышал о его «богохульстве», украл записи и отправился уничтожить Истинный дуб, который вы искали.",
+                "4": "Вы убили фанатиков, и Истинный дуб всё ещё стоит. Вы сказали Листерию, что он в безопасности. Он обрадовался, что Дуб уцелел, но, поскольку Сияющий орден всё ещё представляет угрозу, счёл, что Истинный дуб пока должен оставаться мифом."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}"
+            }
+        },
+        "14": {
+            "name": "Король-рыба",
+            "sections": {
+                "1": "Вы слышали слухи, что абаэли объединяются под началом «Короля», нацелившегося на завоевания, и что этот Король пытается подчинить великих Левиафанов океана.",
+                "2": "Абаэли и скрытни вторглись в доки Фростхейвена. Они пытались добраться до валрата по имени Лири, представившегося «артефактором Общества Бури». Недавно он нашёл фрагмент чешуи Левиафана, огромного морского существа, которому абаэли поклоняются как богу. Абаэли хотят её, а скрытни хотят не дать абаэли её получить — отсюда вторжение.",
+                "3": "Абаэли забрали фрагмент, который нёс Лири, но есть ещё два. Он попросил вашей помощи, чтобы рыбий народ не добрался до остальных первым. Он сказал, что свяжется с вами, когда определит местонахождение второй чешуи, и через несколько недель так и сделал.",
+                "4": "Вы взяли «Киноварь», корабль Лири, к подножию горы. Чешуя была вмурована в гигантский ледяной блок, который вы потащили обратно к кораблю, пробиваясь через ряд защитных рубежей. Он сказал, что ему нужно привезти её во Фростхейвен, чтобы растопить блок. Вы отправились обратно.",
+                "5": "На обратном пути корабль был атакован и разрушен огромными волнами, каким-то образом управляемыми Королём-рыбой абаэли. Король-рыба напал на вас и с помощью первой чешуи выкрал вторую из блока.",
+                "6": "После короткого боя Король-рыба признал вашу силу. Он попросил вас помочь ему добыть третью чешую; взамен он пообещал принести мир морям и защитить вас от скрытней.",
+                "7": "Вы отклонили его предложение.",
+                "8": "Вы приняли его предложение и стали Другом Короля-рыбы.",
+                "9": "Лири был жив, но тяжело ранен и нуждался в нескольких неделях восстановления, прежде чем искать последний фрагмент чешуи. Со временем, однако, он нашёл его — в руках древнего клана алгоксов.",
+                "10": "К несчастью, Король-рыба добрался первым и украл третий фрагмент чешуи. Лири сказал вам, что его устройство теперь может послужить для выслеживания логова Короля-рыбы, так что не всё потеряно.",
+                "11": "Вы добыли третий фрагмент чешуи для Короля-рыбы и, несмотря на предупреждения Лири, пошли передать его своему союзнику-абаэли.",
+                "12": "Найдя его логово и победив стражей, вы остались лишь с одной целью — самим Королём-рыбой.",
+                "13": "Пока он возносился к полной силе, вы защищали его от собравшихся народов Севера, решивших его остановить. Вы решили оставить Короля-рыбу его собственной судьбе; он обещал не вредить Фростхейвену, и это было всё, что для вас имело значение. Вы собрали награду, включая копьё, которое ему больше не понадобится, и ушли до того, как превращение завершилось и всё место обрушилось.",
+                "14": "Пока он возносился к полной силе, вы защищали его от собравшихся народов Севера, решивших его остановить. И... что ж, у вас начались сомнения, стоит ли доверять такую власть этому безумному рыбочеловеку. Вы решили изменить курс и остановить его.",
+                "15": "С болезненным бульканьем Король-рыба наконец перестал биться, хаос вокруг него утих, а его обмякшее тело вернулось к прежним размерам. Его же собственные истязаемые свиньи-пираньи набросились на него. Вы забрали чешую Левиафана и его копьё и поспешно скрылись на корабле, надеясь, что оставшиеся абаэли будут процветать без правителя и оставят Фростхейвен в покое. Вы передали чешую Лири, предупредив, что никому не стоит пытаться управлять её силой. Он пообещал, что Общество Бури будет изучать её лишь ради исторической ценности и сохранит в безопасности."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}{6}{8}{9}",
+                "4": "{1}{2}{3}{4}{5}{6}{7}{9}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}{9}{10}",
+                "6": "{1}{2}{3}{4}{5}{6}{8}{9}{11}",
+                "7": "{1}{2}{3}{4}{5}{6}{7}{9}{10}{12}",
+                "8": "{1}{2}{3}{4}{5}{6}{8}{9}{11}{13}",
+                "9": "{1}{2}{3}{4}{5}{6}{8}{9}{11}{14}",
+                "10": "{1}{2}{3}{4}{5}{6}{7}{9}{10}{12}{15}",
+                "11": "{1}{2}{3}{4}{5}{6}{8}{9}{11}{14}{15}"
+            }
+        },
+        "15": {
+            "name": "Реликвия",
+            "sections": {
+                "1": "Сатху окружили люди в ночных рубашках, жалующиеся на ужасный сон, приснившийся им всем вместе. Во сне была машина, которой нужна была помощь, чтобы освободиться ото льда. Они хором жутко напевали и сказали вам, что не могут спать, пока это не будет сделано.",
+                "2": "Вы нашли реликвию, странный куб, погребённый во льду и снегу. Вы вернули её во Фростхейвен. Жители снова хором ликовали, а ваши сны с тех пор тревожны и полны их напева.",
+                "3": "Через несколько недель вы проснулись от криков горожан. Куб, который вы принесли, ночью активировался, проломил стену и укатился в глушь.",
+                "4": "Вы выследили Реликвию и уничтожили её. Она рассыпалась на бесчисленные шестерёнки и детали, а её голос покинул разум Сатхи. Она поблагодарила вас, ударила по руке и пошла обратно спать."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}"
+            }
+        },
+        "16": {
+            "name": "Коллекционер",
+            "sections": {
+                "1": "Капитан Олмстед привёл вас к девочке-инокс, найденной почти замёрзшей прямо за пределами Фростхейвена. Она сказала ему, что «Коллекционер» держит её и её семью уже несколько недель. Девочке удалось рассказать вам, где находится этот «Коллекционер».",
+                "2": "Логово Коллекционера было металлической постройкой в Белоогненном лесу. Вы сразились со стражами Коллекционера и спасли двух братьев девочки. Они отправились обратно во Фростхейвен за медицинской помощью, а вы пошли дальше добивать чудовище.",
+                "3": "Вы уничтожили Коллекционера, и его тело рассыпалось безжизненным камнем. Вы открыли остальные клетки, чтобы больше никто не страдал. Вернувшись во Фростхейвен, вы встретили сестру и её братьев, раненых, но целых и очень благодарных."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}"
+            }
+        },
+        "17": {
+            "name": "Сокровище Раттуски",
+            "sections": {
+                "1": "Вы встретили вермлинга Раттуску, недавно прибывшую во Фростхейвен. Она показала вам почти мумифицированный труп алгокса, украшенный толстыми золотыми браслетами. Она рассказала, что её корабль «Счастливая леди» недавно столкнулся с небольшим айсбергом; она думает, что этот алгокс оттуда, и что там может быть ещё, столь же богато украшенных. Она предложила дать вам местоположение за долю добычи.",
+                "2": "Трупы алгоксов были заморожены во льду, но (естественно) ожили, как только вы начали освобождать их ото льда. Вы вдоволь набрали сокровищ, а затем обсудили с Раттуской раздел добычи.",
+                "3": "Едва она исчезла, вас накрыла внезапная буря.",
+                "4": "Она попросила лишь небольшую плату нашедшей — один из браслетов — и вы отдали его. Тем временем капитан закричал, что быстро приближается буря и от неё не убежать.",
+                "5": "Вы отказали ей в доле; она не сделала никакой работы. Тут вы поняли, что больше не можете двигаться: Раттуска была Крадущей разум, и она взяла себе один из браслетов. Пока вы отвлеклись на неё, огромная буря накатила прямо на корабль.",
+                "6": "Преследуемые скрытнями, вы наконец вскарабкались по склону утёса в безопасное место, оставив их шипеть и щёлкать клешнями на пляже внизу, пока буря стихала. Неподалёку вы нашли Раттуску, собиравшую монеты у двух потрёпанных моряков. Она сказала, что знала, что вы справитесь, — более того, она поставила на это. Она наверняка могла бы помочь вам против скрытней, но велела не злиться: всё это вода под килем."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{4}",
+                "3": "{1}{2}{5}",
+                "4": "{1}{2}{3}{6}",
+                "5": "{1}{2}{4}{6}",
+                "6": "{1}{2}{5}{6}"
+            }
+        },
+        "18": {
+            "name": "Пропавшая художница",
+            "sections": {
+                "1": "Эрос, драматург-саввас, рассказал вам, что пропала художница-человек Камилла. Она отправилась посмотреть на стаю «редких величественных зверей» на полях далеко на востоке и не вернулась. Он попросил вас найти её во имя искусства и красоты.",
+                "2": "Во время поисков вермлинг рассказал вам, что Свободные забрали его семью. Он привёл вас к комплексу, где могла оказаться Камилла. Вы нашли семью вермлинга, но, к сожалению, Камилла погибла. Её семья пришла к вам через несколько недель и попросила предать её земле.",
+                "3": "Вы упокоили Камиллу, читая молитвы Дуба над её могилой, пока её семья размахивала тлеющими дубовыми ветвями. Беспокойный дух Камиллы и кладбище вокруг неё наконец успокоились."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}"
+            }
+        },
+        "19": {
+            "name": "Действующий комплекс",
+            "sections": {
+                "1": "В Фростхейвен пришёл путник из-за Белоогненного леса с вестью о действующем комплексе Свободных: он освещён и гудит. Блеск, как водится, пытался его прогнать, но вы появились как раз вовремя. Он попросил вас проверить этот комплекс.",
+                "2": "Действительно, он всё ещё действовал и охранялся. Вы проехали по рельсовой линии вглубь комплекса, преследуемые машинами. Пока вы думали о возвращении, показалось, что вы близко к сердцу комплекса — чистому и вымытому. Автоматические уборщики решили, что и вас нужно почистить.",
+                "3": "Вы сразились с «Директором программы», который хотел обеззаразить объект. Обезглавив вас. Чисто. Это звучало не слишком заманчиво, поэтому вы защитились и уничтожили его. Это отключило всех роботов-уборщиков, а также начало обрушение всего комплекса. Время для чистого ухода.",
+                "4": "Вы вырвались из выхода на свежий воздух, пока гора грохотала и оседала, запечатывая объект под вечным покровом из камня и снега."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{3}{4}"
+            }
+        },
+        "20": {
+            "name": "Джем и Зу",
+            "sections": {
+                "1": "«Джем», древняя орхид, нашла вас в Кратере прямо перед сном. Без лишних подробностей (она двигалась слишком медленно, чтобы вообще об этом задумываться) она вручила вам мешочек древних золотых монет и наняла вас.",
+                "2": "Она привела вас в старую глухую тюрьму, где стражи (естественно) оказались не такими мёртвыми, как обещано. «Заключённый», похоже, содержался в деревянном ящике на пьедестале. В ящике был жнец по имени Зу, явно слегка сошедший с ума от долгого заточения. Джем послала вас в коллективный разум жнеца, чтобы попытаться вернуть его.",
+                "3": "Пока ваши сознания дремали, ваши подсознания направились к ядру разума Зу. Оно оказалось копией его и старого убежища Джем. Вы добили последние видения, затуманивавшие сознание Зу, и вернули его к осознанию.",
+                "4": "Зу пожаловался, что это должен был быть пожизненный срок и что он ещё не искупил вину. Джем сказала ему, что им нужно найти и помочь саввасу по имени «Бартлет», и перестать жаловаться. Зу согласился.",
+                "5": "Чтобы найти Бартлета, Джем и Зу привели вас в древнюю «библиотеку» жнецов — хранилище их воспоминаний, доступное только другим жнецам. Вы выяснили, где Бартлет, а также узнали, что все трое (плюс таинственный четвёртый) когда-то были наёмниками, как и вы, прежде чем совершили какую-то ошибку.",
+                "6": "Бартлета было достаточно легко найти, когда вы знали где, но он полностью погрузился в спячку. Джем рассказала больше о прошлом своей команды: они сделали неверный выбор, и их четвёртый член (скрытень по имени Рябь) погиб из-за него. На этот раз она послала вас в разум савваса. Вы принесли ему покой, но пока были там, нашли странный свинцовый люк на дне сундука. Вы решили, что стоит рассказать об этом Джем.",
+                "7": "Вернувшись в холодную пещеру, вы нашли Джем и Зу, стоящих над телом Бартлета. Джем плакала и спрашивала Зу, было ли этого достаточно. Затем Бартлет сделал последний вздох, и грудь савваса выцвела до тусклого камня, а в комнате воцарилась благоговейная тишина."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}",
+                "4": "{1}{2}{3}{4}{5}{6}",
+                "5": "{1}{2}{3}{4}{5}{6}{7}"
+            }
+        },
+        "21": {
+            "name": "Радужный ключ",
+            "sections": {
+                "1": "В сундуке вы нашли радужный ключ. Пока вы держали его, в воздухе появилась замочная скважина, через которую вы увидели солнечный весенний пейзаж. Вы попробовали использовать ключ, чтобы открыть дверь, но не получилось. Вы решили попытаться позже.",
+                "2": "Вы услышали о культе, экспериментировавшем со странными ключами, неподалёку от Фростхейвена. Слесарь направил вас к фреске на стене пещеры в надежде, что она прольёт свет на то, как им пользоваться. Ваш ключ заставил появиться дверь зелёного и синего цветов; она открылась для вас.",
+                "3": "Внутри вы нашли подсказку — форму для ключа с четырьмя углублениями для символов стихий. Вы нашли два таких символа на мёртвых чудовищах, листок и снежинку, и вставили их в гнёзда. Но это была лишь половина нужного, поэтому вы начали искать два других.",
+                "4": "Позже, в одном из зимних путешествий, вы нашли странную пещеру, полную ветра и тепла. Ваш странный ключ начал пульсировать, пока вы шли глубже. Там вы нашли ещё одну дверь с символами ветра и огня.",
+                "5": "Глубоко внутри вы нашли «стихийный сплав» — слиток металла, из которого можно выковать новый ключ. На слитке было написано «Кузница Темпуса», что казалось не худшим местом для следующего шага. Через несколько недель, блуждая, вы узнали свой пейзаж, совпавший с царапинами на металлическом слитке. Под снегом вы нашли ещё одну фреску и ещё одну замочную скважину.",
+                "6": "Когда кузнец был мёртв, вы расплавили стихийный сплав и залили его в форму, затем вскрыли форму, чтобы достать новый ключ. Он мерцал силой в ваших руках. Уходя, вы запечатали кузницу ключом, оставив её покоиться с миром."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}"
+            }
+        },
+        "22": {
+            "name": "Медный перевал",
+            "sections": {
+                "1": "Местный Изобретатель Фростхейвена Пинтер Дроман считает, что после недавнего оползня появилась возможность проложить проход через Медные хребты. Он мог бы сократить каждое путешествие на несколько дней. Пинтер создал несколько бомб, чтобы расчистить оставшиеся завалы, но местная живность недовольна таким решением. Он попросил вас заложить взрывчатку в определённых местах, поскольку, в отличие от его обычных рабочих, вы можете себя защитить.",
+                "2": "Всё прошло примерно так, как и следовало ожидать, когда динамит смешивается с белыми медведями, но вы победили и передали участок обратно Пинтеру.",
+                "3": "Через несколько недель ему снова понадобилась помощь с проектом. Часть дороги проходит под утёсом; рабочие установили опоры, чтобы удерживать его. Однако некоторые бандиты-алгоксы, клан под названием Рога Погибели, не слишком рады новому строительству. Пинтер попросил вас защитить опоры до нападения.",
+                "4": "Когда это было сделано, Пинтер и его бригада смогли достроить дорогу. Мэр Сатха попросила нескольких местных торговцев опробовать новый короткий путь и попросила вас охранять первые караваны, идущие на юг.",
+                "5": "Вы отогнали нападавших, а Пинтер спустился со своего укрытия на соседнем дереве, воскликнув, что было близко. Торговцы поставили повозки кругом, чтобы успокоить животных. Дорога едва не стала Могилой Дромана, так что вы взяли на заметку сказать Сатхе организовать патрули для безопасности пути."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}"
+            }
+        },
+        "23": {
+            "name": "Крадущая разум",
+            "sections": {
+                "1": "Некая сила играет разумом жителей Фростхейвена, включая некоторых стражей, один из которых ударил ножом другого. Капитан Олмстед сообщил, что на этой неделе это происходит часто. Он вполне уверен, что нечто обосновалось в заброшенной хижине. Что бы это ни было, оно затем попыталось заставить вас выпотрошить самих себя. Вы решили проверить это.",
+                "2": "Некоторые стражи попали под влияние обитателя хижины — группы вермлингов во главе с Крадущей разум. Она сбежала, а вы принялись уничтожать устройство-излучатель, над которым она работала. Вы попросили помощи капитана Олмстеда в выслеживании Крадущей разум, и он познакомил вас со своим другом, валратом-следопытом и картографом по имени Кефра. Это заняло месяцы, но Кефра вернулась с новостями. Она нашла следы Крадущей разум в старом могильном кургане под названием Чёрный курган на окраине Мрачной гавани.",
+                "3": "В Чёрном кургане вы столкнулись с Крадущей разум в её силовой броне и одолели её, положив конец её власти над стражами и крысами.",
+                "4": "В Чёрном кургане вы столкнулись с Крадущей разум в её силовой броне и уничтожили её. Смертельно раненная, она сказала, что хотела лишь, чтобы все поняли, каково это — быть в таком разуме, как у неё, запертом в непригодном для него теле. Она сняла шлем, питавший её машины и управлявший крысами, и умоляла отдать его другим вермлингам, чтобы её усилия не пропали зря. Вы тихо ждали рядом с ней, пока она не ушла.",
+                "5": "На выходе из теней выглядывали маленькие острые мордочки вермлингов. Вы протянули шлем самой смелой из них; она подозрительно прищурилась, но взяла его.",
+                "6": "Не будучи уверенными, захотят ли другие вермлинги вообще такую технологию, вы оставили шлем себе.",
+                "7": "В Чёрном кургане вы столкнулись с Крадущей разум в её силовой броне и сосредоточились на отключении её шлема контроля разума. Он выпустил вспышку энергии, смывшую крыс и повалившую её костюм на землю. Она выбралась из обломков в ярости, пока не увидела вермлингов, выглядывавших из теней и боявшихся её, потому что она управляла их разумом. В смятении она призналась, что её страсть защищать свой народ превратилась в дьявольскую одержимость. Бросив на вас последний взгляд, полный подозрения и неохотной благодарности, она пошла поговорить с другими вермлингами, привлекая их своей природной харизмой, а не злой техникой. Вы подозреваете, что теперь она будет использовать свои силы во благо."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{4}{5}",
+                "4": "{1}{2}{4}{6}",
+                "5": "{1}{2}{7}"
+            }
+        },
+        "24": {
+            "name": "Разлом во времени",
+            "sections": {
+                "1": "На дороге вы встретили версии самих себя из будущего. Они передали вам амулет и попросили залечить два разлома во времени. Амулет потянул вас к гигантскому ледяному полю; он мог просто телепортировать вас туда, когда вы будете готовы.",
+                "2": "Амулет втянул вас в чуждый ландшафт кристаллических деревьев. Вы нашли одно, намного больше остальных, и вошли в пещеру у его основания. Каким-то образом оно отбросило вас, возможно, на тысячи лет назад. Это вызвало реакцию в окружающем мире, и время вокруг вас стало ускоряться, чтобы вернуть вас, а кристаллические корни угрожали вам со всех сторон. Вы нашли устройство, принявшее ваш амулет как своего рода ключ. Одна сторона амулета засветилась зелёным; возможно, один из двух разломов залечен? Он потянул вас дальше к следующему шагу вашего задания.",
+                "3": "Вы выбежали из комплекса и скатились вниз по холму, пока в пространстве над вами бушевала огненная буря. Второй разлом исчез, и другой кристалл в вашем амулете засветился синим. Время нормализовалось, и с восстановленным амулетом вы вернулись во Фростхейвен."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}"
+            }
+        },
+        "25": {
+            "name": "Нитс и Нарб",
+            "sections": {
+                "1": "Однажды летним днём вы нашли двух братьев, Нитса и Нарба, пьяных на обочине дороги. Они нападали и друг на друга, и на снег, возможно, галлюцинируя. Вы попытались помочь, возможно, успешно.",
+                "2": "Позже вы увидели их в Кратере; они тепло и пьяно приветствовали вас и представили вам дворянина по имени Деррик Виндермир. Они начали хвастаться ему вашими (вымышленными) подвигами, и затем началась целая куча чепухи. Деррик, однако, был впечатлён и сказал, что у него может найтись для вас работа позже.",
+                "3": "И действительно, через несколько недель она нашлась. Он показал вам мешочек солнечных агатов — редких и красивых самоцветов. Видимо, они очень популярны у Сияющего ордена, ревностных поклонников Великого дуба. Деррик нашёл неподалёку источник, который разрабатывают алгоксы, и предложил захватить рудник силой. Но сначала он попросил вас захватить целые сани с ними, устроив засаду.",
+                "4": "С помощью нескольких наёмников вы захватили сани и собрали сколько смогли солнечных агатов, упаковав их в изолированные контейнеры. Вы отправились во Фростхейвен.",
+                "5": "Вы бежали, пока не перестали слышать визг птиц, которые вас донимали, и отдохнули в неглубокой пещере, по очереди неся вахту. Вы взвешивали, стоит ли отдавать солнечные агаты Деррику: это могло принести вам много денег и процветание форпосту, но дало бы ему и средства для разжигания новой агрессии алгоксов.",
+                "6": "Остальная часть пути была спокойнее. Вернувшись в Кратер, Деррик, Нитс и Нарб тепло и пьяно приветствовали вас. Деррик нашёл добычу чуть меньше, чем надеялся, но вручил вам большой мешок золота. Глядя, как он грузит контейнеры на телегу, идущую на юг, вы не могли не задаваться вопросом, насколько рассердятся алгоксы и будет ли его ополчение рядом, когда они придут выплеснуть этот гнев на Фростхейвен.",
+                "7": "Не желая помогать Деррику причинять алгоксам ещё больше вреда, вы спрятали камни в пещере и вернулись во Фростхейвен с пустыми руками. Вы сказали ему, что алгоксы устроили вам засаду и вы выторговали у них жизни ценой камней, намекнув, что провоцировать их, возможно, не стоит. Деррик в слезах умчался прочь, а вы присоединились к Нитсу и Нарбу ещё на одну кружку. В последующие недели вы продали солнечные агаты с неплохой прибылью, хотя и гораздо меньшей, чем он предлагал."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}",
+                "3": "{1}{2}{3}{4}{5}",
+                "4": "{1}{2}{3}{4}{5}{6}",
+                "5": "{1}{2}{3}{4}{5}{7}"
+            }
+        },
+        "26": {
+            "name": "Кошачий идол",
+            "sections": {
+                "1": "Старик по имени Малбринн представился вам в Кратере и предложил рассказать легенду за выпивку. Он рассказал о другой группе авантюристов, нашедшей «тёмного и могущественного» идола, который принудил их подняться высоко в Имперские горы, пообещав, что исполнит их мечты. Они так и не вернулись. Он вручил вам карту места, куда они направлялись.",
+                "2": "Когда вы подошли близко, вас потянуло прыгнуть в трещину в горе. В подземном проходе вы нашли пьедестал с кошачьим идолом, излучающим тёмную силу. Вы схватили его; он потребовал положить его обратно, но вы не смогли. Место начало рушиться, и вы решили, что пора бежать.",
+                "3": "Вы прошли через двери до обрушения комнаты — и увидели, что тьма покинула идола. Прежде чем вы смогли идти дальше, вас встретил Малбринн, появившийся из теней. Он потребовал у вас «своего» идола.",
+                "4": "Вы пробились на поверхность. Идол рассказал, что запечатал себя после того, как увидел хаос, который существа этой земли учинили бы с его силой, но что вы изменили его судьбу: те, кто причинил бы вред, теперь погребены под горой, и он свободен помочь вам, хотя его сила уменьшилась."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}"
+            }
+        },
+        "27": {
+            "name": "Тома Белары",
+            "sections": {
+                "1": "Эддика, библиотекарь-валрат, исследует некоторые магические тома, написанные заклинательницей-саввасом Беларой. Она думает, что нашла местонахождение Тома Конфликта. В старых текстах упоминается башня, которая, как говорят, находится в Сияющем лесу, но её нет ни на одной новой карте. Она думает, что Том может быть там.",
+                "2": "Вы уничтожили стального автоматона, охранявшего башню, и это отперло люк. В груди павшей машины открылась крышка, и внутри вы нашли Том Конфликта.",
+                "3": "Эддика считала, что Том Конфликта — лишь один из нескольких томов, написанных Беларой, и надеялась, что вместе они смогут рассказать больше об их авторе.",
+                "4": "Со временем вы нашли все четыре тома и заметили странные пометки. Вы показали их Эддике, которая просмотрела все четыре сразу, найдя скрытые связи, значения и тайны.",
+                "5": "Она рассказала вам о предыстории Томов. Сила, которую открыла Белара, обратила её ко злу. Такова была её мощь, что вмешался Высший совет орхидов; они заточили Белару и рассеяли тома, чтобы Белара никогда не сумела собрать их все. Совет запечатал её... но Эддика почти уверена, что выяснила, где находится её тюрьма. Идти туда кажется плохой идеей... но...",
+                "6": "Вы победили Белару. С нарушенной концентрацией две силы, воюющие внутри её тела, вырвались наружу вспышкой света и тьмы, и вы очнулись за пределами крепости, когда она рушилась, запечатывая внутри всё, что осталось от Белары. Вы пересказали историю Эддике в Библиотеке, которая была в восторге."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}{3}",
+                "2": "{1}{2}{3}{4}{5}",
+                "3": "{1}{2}{3}{4}{5}{6}"
+            }
+        },
+        "28": {
+            "name": "Королева пиратов",
+            "sections": {
+                "1": "Дина Щёлкоклешня, вермлинг-трактирщица из «Варёного краба», рассказала вам истории о печально известном пирате Барти Полуухом. Она поручает вам искать древние монеты, вроде той, что носит она сама. Если найти их все, они должны привести к огромному кладу.",
+                "2": "Когда вы принесли ей одну из монет, она рассказала вам о Добыче Королевы пиратов, огромном сокровище, которое они с Барти искали вместе, пока он не предал её. Чтобы найти его, нужно четыре монеты; одна у неё, другая у него, третью вы только что нашли, а последняя всё ещё пропала.",
+                "3": "Она хочет и мести, и сокровища, поэтому дала вам местоположение убежища Барти. Она почти уверена, что там он хранит свою монету. Принесите ей ещё две монеты, и вы все разбогатеете вместе.",
+                "4": "Убежище Барти было в конце подземной реки, кишащей угрями. Его монета действительно была там — вместе с немалым количеством сокровищ.",
+                "5": "С монетой Дины, монетой Барти и двумя другими, найденными вами в ходе исследований, у вас было всё необходимое.",
+                "6": "Дина привела вас в пещеру недалеко от самого Фростхейвена. Она рассказала больше о Королеве пиратов — кватрил, которая, видимо, пыталась использовать автоматонов в качестве команды. Оставшимся живым это не понравилось, и они подняли мятеж. Они думали, что загнали её в ловушку, но она просто запечатала себя и своих роботов. Пираты отметили местоположение её могилы и запечатали эту информацию в пещере за замком, который мог открыться только четырьмя определёнными монетами. Вы разобрались с правильной ориентацией, и Дина достала древний свиток из пещеры за ней. Добыча Королевы пиратов была всего в коротком плавании на лодке.",
+                "7": "Вы отгребли гружёную добычей шлюпку обратно к кораблю и поделили сокровище; Дина даже отдала часть капитану Догхоггеру, который полюбил кубок с гравировкой дельфина. Пока вы плыли обратно во Фростхейвен, Дина с ликованием представляла, как Барти в конце концов находит лишь пещерных крыс, грызущих крошки, оставленные ею в сундуках с сокровищами."
+            },
+            "stages": {
+                "0": "{1}{2}{3}",
+                "1": "{1}{2}{3}{4}",
+                "2": "{1}{2}{3}{4}{5}{6}",
+                "3": "{1}{2}{3}{4}{5}{6}{7}"
+            }
+        },
+        "78": {
+            "name": "Проблема со скрытнями",
+            "sections": {
+                "1": "Очень странный и мучимый жаждой тип в мокром плаще хотел вас нанять. Он сказал, что скрытни убили его семью. Он указал, как добраться до их места, сказал, что встретит вас там, и внезапно ушёл. Совершенно обычное дело. Ничуть не подозрительно.",
+                "2": "Вы зачистили кишащее скрытнями строение у моря, как бы вы к этому ни подошли, и вернулись в ратушу. Человек в плаще так и не появился, чтобы заплатить вам, а Блеск лишь ворчал о полу, который тот намочил и который теперь нужно лакировать."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "82": {
+            "name": "Экспедиция на север",
+            "sections": {
+                "1": "Незнакомая женщина-эстер посетила ваши сны и попросила найти её друзей где-то в Имперских горах, к западу от Замёрзшего перевала. Они шли к вам, но попали в сильнейшую снежную бурю.",
+                "2": "Вы добрались до края неестественной бури и спасли застрявших в ней наёмников, согревая их у костра в пещере на обратном пути через перевал. Когда вы упомянули женщину-эстер, они узнали в ней Кассандру, бывшего члена их группы авантюристов. Вы привели их обратно во Фростхейвен на поправку."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "83": {
+            "name": "Прибывающий рассол",
+            "sections": {
+                "1": "Блеск, инокс-делопроизводитель в ратуше, раздал все хорошие задания другим группам. Наконец он нашёл одно и для вас, в котором значится «Пещера, пахнущая рыбой». Картограф нашёл пещеру, пахнущую рыбой. Она далеко.",
+                "2": "Победив свиней-пираний, вы собрали ржавые детали и выгребли против прибывающего прилива, добравшись до дневного света, а затем, измотанные, до Фростхейвена. Блеск осмотрел ваш хлам, объявил всё мусором и смахнул со стола."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "84": {
+            "name": "Здесь водятся слизи",
+            "sections": {
+                "1": "Блеск, инокс-делопроизводитель, дал вам заказ. Поступило три сообщения о слизях, и они, видимо, съели стадо овец. Блеск не думает, что в этом что-то есть, но вы знаете лучше.",
+                "2": "Вы уничтожили слизь, с головы до ног покрывшись склизкой дрянью, и собрали образец слизи в склянку. Вы также заметили странный скелет, похожий на оленьий, оставшийся от неё, а затем смыли грязь в ручье по пути во Фростхейвен."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "85": {
+            "name": "Смертельные забавы",
+            "sections": {
+                "1": "Женщина пришла к Блеску за срочной помощью; муж сказал ей, что если он не вернётся к полудню, ей надо искать помощь. Она вручила вам карту «места, где он занимался спелеологией».",
+                "2": "Совершенно измотанные, вы наконец выбрались из пещеры на дневной свет и нашли мужа, довольно сидящего у костра и жарящего птицу. Он решил, что пещера слишком опасна, и пошёл исследовать в другом месте. Вы чуть не убили его, но вместо этого рухнули рядом с его костром и вздремнули."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "86": {
+            "name": "Дама в белом",
+            "sections": {
+                "1": "Страж пришёл прямо к вам просить о помощи. Он считает себя проклятым, потому что его жена ещё не родила их ребёнка. В прошлом месяце он увидел призрачную женщину с кровоточащими глазами в лесу вокруг Фростхейвена. Никто из других стражей этой дамы не видел, но он предложил заплатить вам за снятие проклятия.",
+                "2": "Дама в белом издала последний вопль и растворилась в холодном тумане. Когда вы вернулись во Фростхейвен, вы услышали, что жена стража родила здоровую девочку, а люди кивали и улыбались вам при встрече."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "89": {
+            "name": "Сдерживаемый огонь",
+            "sections": {
+                "1": "Трое оборванных алгоксов пришли во Фростхейвен и попросили помощи города. Они рассказали, что их клан терпит притеснения от соседнего племени. Вождь этого племени, Ванджал, обкладывает их непосильными налогами, чтобы кормить своё тщеславие.",
+                "2": "Вы победили Ванджала, и его армия в ужасе разбежалась. Соседние кланы алгоксов вернулись в крепость, чтобы вернуть свои украденные припасы, и горячо вас поблагодарили."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "92": {
+            "name": "Тонущий корабль",
+            "sections": {
+                "1": "Капитан Догхоггер услышал, что в море есть заброшенный корабль, полный припасов. Его заметила рыбацкая команда, и он ищет отряд, который избавил бы его от части припасов и/или сокровищ.",
+                "2": "Вы бросили последнюю добычу Догхоггеру как раз когда палуба накренилась, и смотрели, как корабль уходит под воду, а запертые скрытни кружат у корпуса. Вы вернулись домой с новым, очень шумным членом команды: автоматоном ГЕ-РО-ИК-ОМ."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "93": {
+            "name": "Драка на середину зимы",
+            "sections": {
+                "1": "Скэбвит, вермлинг, рассказал вам, что его народ ведёт переговоры с племенем алгоксов о земле для собственного поселения. Он ищет силачей, чтобы те «внушали страх за него» в Белоогненном лесу и помогли в этих переговорах.",
+                "2": "Вы помогли уладить драку в Белоогненном лесу, и сторона, которую вы поддержали, поблагодарила вас за помощь.",
+                "3": "Вы встали на сторону Скэбвита, и вермлинги выиграли драку. Скэбвит ожидал новых конфликтов в будущем, но надеялся, что его народ окрепнет настолько, чтобы постоять за себя, и в благодарность предложил вам маленького лесного друга.",
+                "4": "Вы встали на сторону Йоглан, и алгоксы выиграли драку. Она обняла вас всех, назвала друзьями алгоксов и пообещала научить вас готовить лучшее блюдо её племени, чтобы вам было тепло на снегу."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{3}",
+                "3": "{1}{4}"
+            }
+        },
+        "107": {
+            "name": "Моя личная империя",
+            "sections": {
+                "1": "В сундуке вы нашли письмо с восковой печатью, изысканно написанное и украшенное. Письмо, подписанное «Императором Вентильоном», приглашало вас присоединиться к нему на Зимнем балу. К нему прилагалась карта его поместья (посреди глуши), и это наверняка будет настоящая вечеринка с вином и танцами, а не что-то более зловещее.",
+                "2": "Вы пережили странную вечеринку Императора Вентильона и выбрались из его тайного поместья, а он проводил вас подарком в благодарность за визит.",
+                "3": "Выбившись из сил, вы бежали с вечеринки Императора Вентильона, не преодолев всех эпизодов, и вскарабкались обратно во двор. Его голос сетовал на ваши усталые ноги, призывал вас помнить имя Вентильон и предложил бархатный мешочек с вышитой буквой «V» в благодарность за визит.",
+                "4": "Вы преодолели все эпизоды бала Императора Вентильона. Тень Императора исчезла, когда музыка перешла в тоскливую арию; он поблагодарил вас за великолепный приём, предложил вам остаток своего богатства и попросил лишь рассказывать другим о Вентильоне. С этими словами из поместья ушла всякая жизнь, и вы покинули его."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{3}",
+                "3": "{1}{4}"
+            }
+        },
+        "108": {
+            "name": "Сияющая яма",
+            "sections": {
+                "1": "В сундуке вы нашли расписную каменную табличку. На изображении был странно знакомый пейзаж, и вы почувствовали, что сможете найти это место, если хорошенько поищете.",
+                "2": "Вы собрали последние плиты со стен и вернулись во Фростхейвен. Сатха не впечатлилась фресками с демонами, но вы были уверены, что они несут более глубокое культурное значение."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "109": {
+            "name": "Яростная фабрика",
+            "sections": {
+                "1": "В сундуке вы нашли хрупкий кусок странного механизма. Когда вы его достали, он ожил и спроецировал над собой карту. Вы разобрались, как управлять этой проецируемой картой, и нашли местоположение того, что похоже на своего рода фабрику.",
+                "2": "Вы разбили центральный кристалл, и металлическая конструкция рухнула на пол, оставив весь комплекс безмолвным, как гробница. Вы сняли с места столько металла, сколько смогли унести, и вернулись во Фростхейвен."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "110": {
+            "name": "Храм Стража",
+            "sections": {
+                "1": "В сундуке вы нашли плиту обработанного камня. Она была похожа на замковый камень, и вы чувствовали, что знаете, где ему место. Она мысленно проецировала вам направления.",
+                "2": "Последняя каменная колонна рухнула, и электричество покинуло комнату, но вся пещера начала трястись. Вы схватили свиток с беззащитного алтаря и помчались прочь, пока всё рушилось позади, вырвавшись из устья пещеры в облаке щебня и пыли."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "111": {
+            "name": "Ледяная пещера",
+            "sections": {
+                "1": "В сундуке вы нашли серебряное зеркало. В отличие от большинства зеркал, оно не отражало вас, а показывало образ вашей группы, идущей по глуши к пещере, полной сокровищ.",
+                "2": "Вы вышли из пещеры и столкнулись лицом к лицу с собственным двойником, выходящим из другой пещеры. Вы сосредоточили угасающую силу зеркала, чтобы убедить реальность, что вы только один человек, и снова стали одним, а затем отправились обратно во Фростхейвен с зеркалом в руках."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "112": {
+            "name": "Воспитанный волками",
+            "sections": {
+                "1": "В сундуке с сокровищами, глубоко в жутком подземелье, полном опасных чудовищ, вы нашли очаровательного волчонка, мирно спящего. И живого, каким-то образом. Запертого в сундуке. Вы взяли его с собой во Фростхейвен.",
+                "2": "Вы прочесали пещеру, убедившись, что демонов больше нет, а волки взвыли в победе в честь своего героя. Вы попрощались с Волчком и вернулись во Фростхейвен с единственной слезой на глазах."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "113": {
+            "name": "Пышный грот",
+            "sections": {
+                "1": "Во время путешествия вас окутал густой туман. Когда он рассеялся, вы оказались в пышном лесу, где вовсе не было зимы, полном лесных зверей и пыльцы. Казалось, он пытался держать вас подальше от чего-то. Но вас трудно одурачить, поэтому вы прорвались сквозь иллюзии и нашли пышный грот. Вы решили исследовать его (возможно, сразу, а возможно, решили вернуться позже).",
+                "2": "Вы убили стихийных демонов и набили рюкзаки странными и удивительными ботаническими находками. Вы прошли обратно по своим следам из грота и поспешили через колючий снег во Фростхейвен, чтобы не завяли ваши находки."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "117": {
+            "name": "Игра на выжидание",
+            "sections": {
+                "1": "Спустя некоторое время ваш дружелюбный вермлинг-ловчий вернулся. Он обосновался в Белоогненном лесу, но белые медведи прогоняют всех мелких животных. Другие местные вермлинги чрезмерно охотились на медведей, вытесняя их из привычной среды обитания. Ваш старый друг попросил помочь переселить медведей в лучшее место.",
+                "2": "Вы поймали медведей в силки и усмирили отряд охотников, о чём Ловчий сожалел, но принял это как цену восстановления естественного порядка вещей. Усыпив медведей, вы помогли перевезти их на санях в их дом в пустошах, и Ловчий пробормотал спасибо."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "118": {
+            "name": "Некромантия скрытней",
+            "sections": {
+                "1": "Костоправ вернулся и однажды удивил вас. Он искал энергию в новых планах бытия и нашёл странную энергию гораздо ближе к дому, исходящую откуда-то рядом с Фростхейвеном.",
+                "2": "Победив скрытней и нежить, вы помогли Костоправу собрать странные амулеты, вызывавшие проблемы. Костоправ принял их у вас, поблагодарил и исчез в другом плане."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "119": {
+            "name": "Сияющая пыль",
+            "sections": {
+                "1": "Ваш старый друг нашёл в своих исследованиях способ, возможно, усилить мощь своих настоев. Похоже, это связано со странными растениями, растущими в Сияющем лесу. Он потащил вас в приключение за поисками этих материалов.",
+                "2": "Когда путь наконец расчистился, вы добрались до огромной сосны в сердце леса, с ветвей которой, как солнечный свет, падает сияющая пудра. Ваш друг понял, что пудра — своего рода пыльца, и, поглощённый её изучением, поблагодарил вас подарком за помощь в её сборе."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "122": {
+            "name": "Вечная жажда",
+            "sections": {
+                "1": "В странствиях вы нашли пожилую кватрил, ухаживающую за аппетитно пахнущими перцами. Она назвала их «огненными перцами» и рассказала историю о звере по имени Голодная Пасть, живущем под Медными хребтами. Похоже, он пожирает целые деревни, но его можно насытить только Рагу из огненного перца. Она спросила, готовы ли вы принять вызов.",
+                "2": "Вы пробрались через пещеры под Медными хребтами и разобрались с Голодной Пастью, покончив с опасностью, которую она представляла для севера.",
+                "3": "Вы сразились с Голодной Пастью и смертельно ранили её. Её вечная жажда обратилась в отчаяние, и, простонав «Так голодно...» в последний раз, она умерла. Нуре призналась, что не думала, что это сработает.",
+                "4": "Вы сварили Рагу из огненного перца вместе с Нуре и отнесли котёл Голодной Пасти, которая с удовольствием его поглотила и легла отдохнуть с миром. Нуре заверила вас, что зверь будет доволен ещё сотню лет."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{3}",
+                "3": "{1}{4}"
+            }
+        },
+        "123": {
+            "name": "Титан",
+            "sections": {
+                "1": "Вы встретили своего старого спутника на дороге, вырезающего руны в воздухе. Он сказал, что к его порталу приближается «огромное существо, полное боли и страданий». Проводник использовал какую-то магию, чтобы привести этого зверя к ним, чтобы они могли им полакомиться. Вам это не очень нравилось, но выбора они вам почти не оставили. Когда они закончили создание портала, на вас надвинулся невероятно громадный зверь. Но оказалось, что это существо не было источником боли — им был мир, через который оно пришло, и теперь он был в вашем. Пора это остановить.",
+                "2": "Энергетическое ядро титана лопнуло яростным синим взрывом, когда вы выскочили через его череп. Титан рухнул навзничь и грянулся о землю всего в нескольких шагах от Фростхейвена, окатив ребёнка, который неподалёку удил рыбу."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "126": {
+            "name": "Джозеф Лев",
+            "sections": {
+                "1": "Торговец по имени Джозеф поприветствовал вас и сказал, что все его помощники погибли, а весь его товар просто лежит в ледяных пустошах. Он попросил вашей помощи, чтобы его вернуть. Через несколько недель после этого он открыл во Фростхейвене киоск «мороженого»; вы решили заглянуть.",
+                "2": "Джозеф почти не обратил внимания на ваши многочисленные раны и порванные доспехи; он был просто рад снова заполучить своё мороженое. Вскоре он скрылся из виду, бормоча о своей последней безумной затее."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "127": {
+            "name": "Заброшенный грузовоз",
+            "sections": {
+                "1": "Заброшенный корабль, по-видимому, сам пришёл в гавань Фростхейвена. Он был совершенно пуст, но на последней странице судового журнала было лишь два слова: «СОЖГИТЕ ЕГО». Возможно, команда пыталась сделать это до своего исчезновения, потому что палубы залиты лампадным маслом. В манифесте значилось восемь ящиков неизвестного груза, направлявшихся в Белый Дуб, но вы нашли только один, прикрученный к палубе и запечатанный смолой. Через несколько недель остальные ящики прибыли во Фростхейвен, на этот раз на корабле с командой из ледяных призраков.",
+                "2": "Вы вытащили последний ящик на пристань, где вас ждал валрат в пепельном плаще и с единственной бронзовой перчаткой. Он поблагодарил вас за возвращение его груза, велел погрузить его на сани, заплатил вам и посоветовал сжечь корабль, единственный способ его остановить, а затем исчез в ночи, не ответив на ваши вопросы."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "131": {
+            "name": "Танцующий айсберг",
+            "sections": {
+                "1": "Вы нашли молодого танцующего скрытня, глядящего на океан. Он наполнил ваш разум видениями ледяного полуострова. Вы могли установить контакт, а могли и нет, но вы нашли местоположение, которое скрытень вам проецировал.",
+                "2": "Вы столкнули тело гигантского Дирижёра с айсберга, что потребовало командной работы, и сбалансировали платформу, чтобы она больше не опрокидывалась. Оставшиеся скрытни, казалось, очнулись от оцепенения и юркнули обратно в море. Затем вы нашли морскую раковину, застрявшую в трещине во льду, и позволили айсбергу дрейфовать обратно к более безопасным берегам, пока его песня наполняла воздух."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        }
+    },
+    "quest-jotl": {
+        "1": {
+            "name": "Пропавший кузнец",
+            "sections": {
+                "1": "Люди из бедных районов Мрачной гавани исчезают, и никому нет до этого дела. Сэнди, жена пропавшего кузнеца, наскребла достаточно монет, чтобы нанять вас на поиски мужа. После двух бесплодных недель погони за ложной наводкой вдоль Тихой реки вас подкараулили вермлинги на дороге у самых городских стен.",
+                "2": "Вы разбили вермлингов, устроивших засаду. Вермлинги так близко к городу — это необычно, и вы подозреваете, что они причастны к исчезновениям. Место засады не было их домом, значит, поблизости должно быть гнездо.",
+                "3": "Вы пошли по следам вермлингов и по следам волочения тела и дошли до гнезда, вырытого в городской стене. Среди их золотых запасов вы нашли записку: человек по имени Роланд платит вермлингам за доставку свежих трупов. Это лучшая зацепка, что у вас есть.",
+                "4": "Вермлинги на Тонущем рынке рассказали вам, что трупы для Роланда доставляли на заброшенный корабль в Старых доках. Внутри фанатики в красных мантиях пели над алтарём, заваленным останками. Среди них вы нашли ожерелье, которое кузнец никогда не снимал. Вы хотя бы можете дать Сэнди ясность, но Роланда среди мёртвых не было. В капитанской каюте вы нашли карту района Котлов с одним чётко отмеченным зданием."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{3}{4}"
+            }
+        },
+        "2": {
+            "name": "Кровавые опухоли",
+            "sections": {
+                "1": "В поисках пропавшего кузнеца вы раскрыли культ фанатиков в красных мантиях, которые покупают у вермлингов свежие трупы для человека по имени Роланд. На их корабле в Старых доках вы нашли ожерелье кузнеца среди останков на алтаре и карту района Котлов с одним чётко отмеченным зданием.",
+                "2": "Отмеченное здание, старая бойня, сгорело, но каменный подвал уцелел. Внизу фанатики проводили ритуал, от которого дрожала земля и которому грозило похоронить всех заживо. Вы остановили ритуал и отбились от культистов, хлынувших из глубоких туннелей. Ответы, которые вы ищете, лежат ещё глубже.",
+                "3": "Глубже в туннелях фанатики открыли разломы и пропустили демонов хаоса, чтобы остановить вас. За последней дверью вы нашли огромную пульсирующую опухоль из кровавой плоти и уничтожили её. Умирающий фанатик рассмеялся, что другие их эксперименты набирают силу и что Кровавый бог скоро пожрёт город. Вы взяли кусочек опухоли, чтобы отнести в университет.",
+                "4": "В университете профессор Халтрип унёс опухоль в свою лабораторию, где она заполнила всю комнату, убила его помощников и превратила крыс в чудовищ. После того как вы всё расчистили, Халтрип дал вам склизкие камни, которые светятся зелёным рядом с органической материей опухоли. Обыскивая с ними город, вы нашли ещё два нароста: один в заброшенных домах на Тонущем рынке, другой на складе в Старых доках.",
+                "5": "Вы уничтожили опухоль на Тонущем рынке. Но когда вы уходили, склад в Старых доках взметнулся огромным столбом огня. Вы опоздали, и этот взрыв, вероятно, только начало.",
+                "6": "Вы уничтожили опухоль на складе в Старых доках. Но когда вы уходили, дома на Тонущем рынке взметнулись огромным столбом огня. Вы опоздали, и этот взрыв, вероятно, только начало.",
+                "7": "В руинах последняя опухоль обросла твёрдым коконом. Пока фанатик смеялся, что план Роланда осуществился, кокон лопнул, и из него вылез чудовищный ужас. Вы убили его, и порождённые им мёртвые мерзости рухнули вместе с ним. Кровавые твари, похоже, уничтожены, а культ сорван. Роланд всё ещё жив, но вы рассказали Городской страже всё и оставили остальную часть культа ей."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{3}{4}",
+                "4": "{1}{2}{3}{4}{5}",
+                "5": "{1}{2}{3}{4}{6}",
+                "6": "{1}{2}{3}{4}{5}{7}",
+                "7": "{1}{2}{3}{4}{6}{7}"
+            }
+        },
+        "3": {
+            "name": "След Роланда",
+            "sections": {
+                "1": "Вы уничтожили кровавые опухоли культа фанатиков и оставили их главаря Роланда Городской страже. Назад к оплачиваемой работе: полубезумный отшельник с Крючковатого побережья предложил золото всякому, кто пробьётся через питомцев и ловушки его полосы препятствий.",
+                "2": "Вы пробились через полосу препятствий отшельника со слизями, взрывчаткой, големами, ядовитым газом и даже демоном хаоса, но старика уже не было. Вместо него осталась записка от Роланда: полоса препятствий снабдила его множеством трупов наёмников, а город всё равно обречён. Вам даже не заплатили. Начальник Городской стражи предложил золото за обыск канализации, куда стражники редко заглядывают, на предмет остатков кровавого культа.",
+                "3": "Вы обыскали канализацию под Тонущим рынком. Ржавый рычаг открыл шлюз, и поток смыл оставшихся чудовищ к заливу и расчистил путь вверх по течению. Вермлинги также прорыли туннель в боковой комнате, который, возможно, стоит проверить.",
+                "4": "Вы обыскали канализацию под Районом путников, подозрительно чистую. Колонны, покрытые рунами, поддерживали иллюзию. Когда вы их разбили, иллюзия рассеялась и открыла скрытый проход вглубь туннелей. По пути вы нашли лестницу, ведущую вверх, в одно из богатых поместий.",
+                "5": "Глубже в туннелях под Тонущим рынком вы нашли фанатиков, певших над чашей чёрной слизи и выращивавших кровавых тварей. Вы сорвали их ритуал, но культисты отказались выдать Роланда. Проход ведёт ещё глубже.",
+                "6": "По скрытому проходу под Районом путников вы нашли фанатиков, наблюдавших, как кровавые твари выползают из змей, которых те использовали как носителей. Вы убили их, но они отказались выдать Роланда. Проход ведёт ещё глубже."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{4}",
+                "4": "{1}{2}{3}{5}",
+                "5": "{1}{2}{4}{6}"
+            }
+        },
+        "4": {
+            "name": "Кровавый бог",
+            "sections": {
+                "1": "Вы уничтожили кровавые опухоли фанатиков, поклоняющихся Кровавому богу, но их главарь Роланд сбежал и оставил записку, что город всё равно обречён. По найму начальника Городской стражи вы последовали за культом в канализацию, где фанатики выращивали кровавых тварей. Их проходы ведут всё глубже.",
+                "2": "Глубоко в канализации вас дразнил голос Роланда. Случай в лаборатории Халтрипа показал культу, как быстро их порча может распространяться на новых носителей, и они уже пустили её в городские водопроводы. Вы убили культиста, травившего цистерны, но вода уже была заражена. Образец чёрной жидкости вы отнесли профессору Халтрипу.",
+                "3": "Халтрип запер вас в своей лаборатории и испытывал на вас волну за волной образцов, заражённых ядом. Это сработало: его помощники создают средство, нейтрализующее яд по всему городу. Затем столб красного света ударил в Ворота Старой стены с безоблачного неба. Это дело рук Роланда.",
+                "4": "У Ворот Старой стены Роланд, раздутый до колоссальных размеров молнией Кровавого бога, превратил своих фанатиков в громадных чудовищ. Вы пробились на вершину стены. Когда Роланд взмолился к своему богу о большей силе, ответа не последовало. Его приспешники обратились в пепел, а сам он сжался обратно в хилого отшельника с Крючковатого побережья, прежде чем вы прикончили его. Начальник стражи выплатил вам тугой кошель, а Сэнди вы сказали, что её муж отомщён. В «Спящем льве» вся таверна скандировала ваше имя."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}",
+                "2": "{1}{2}{3}",
+                "3": "{1}{2}{3}{4}"
+            }
+        },
+        "5": {
+            "name": "Поместье торговца",
+            "sections": {
+                "1": "Под Районом путников проход, скрытый за иллюзией, привёл вас к лестнице наверх, в поместье богатого торговца. Связан ли владелец с культом или нет, это хороший повод осмотреться и прикарманить пару ценных вещиц.",
+                "2": "Вы прокрались в большой зал и набили карманы из сундука, пока каменные статуи не сошли с пьедесталов и не окружили вас. Вы убежали обратно в канализацию. Улик против владельца вы не нашли, но стали заметно богаче."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "6": {
+            "name": "Туннель вермлингов",
+            "sections": {
+                "1": "В канализации под Тонущим рынком вы нашли туннель, прорытый вермлингами. Гнездо вермлингов внутри городских стен — это беда, особенно если они работают с кровавым культом или заражены его экспериментами.",
+                "2": "Вы истребили гнездо вермлингов, покрытых сочащимися язвами. Изуродованные крысы указывают на связь между вермлингами и кровавым культом, но доказательств вы не нашли, только кольцо, которое, возможно, чего-то стоит."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "7": {
+            "name": "Капитан-инокс",
+            "sections": {
+                "1": "В «Спящем льве» капитан-инокс попросила вас о помощи. С её корабля пропали товары, и она проследила воров до заброшенного склада в Старых доках.",
+                "2": "Склад был захвачен демонами хаоса. Вы убили их и вернули каждый ящик с её товарами, в основном яблоки. Капитан, собиравшаяся отплыть в гавань Велсилл, заплатила вам, хоть и не щедро."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "8": {
+            "name": "Неприятности в Новых доках",
+            "sections": {
+                "1": "Торговец-валрат попросил вас разобраться с Новыми доками, где товары перемещаются или исчезают, а люди сообщают о жутких звуках и видениях демонов. Он хочет прекратить это, пока оно не угрожает торговле города.",
+                "2": "В группе складов в Новых доках зловещая аура терзала ваш разум. Вы нашли и убили демонов, стоявших за этим, и ваш рассудок вернулся. Торговец-валрат заплатил вам за труды."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "9": {
+            "name": "Красный орден",
+            "sections": {
+                "1": "Посыльный передал Алому стражу записку со змеёй, обвившейся вокруг солнца. Изгнание из Красного ордена в Джинде обычно означает смерть, и Алый страж бежал в Мрачную гавань, но судьба его настигла. На обороте был указано место встречи.",
+                "2": "Охотники на Алого стража не пришли сами. В тёмном переулке у западной стены они прислали вермлингов и голема, созданного с помощью ядовитых змей Красной пустыни. Вы победили их и выиграли Алому стражу немного времени. В сердце голема вы нашли стальное кольцо, скреплённое энергией кузницы Джинды."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "10": {
+            "name": "Состязание Рубаки",
+            "sections": {
+                "1": "Плакат на Тихом мосту объявлял о бойцовском состязании на Площади Мрачной гавани. Участвовать могут только одиночки, поэтому Рубака записался, а остальные из вас болеют с трибун.",
+                "2": "Площадь Мрачной гавани превратили в жестокую арену, где соперника за соперником терзали чудовища. Рубака победил каждого из них. Толпа неистовствовала, а организаторы наградили Рубаку великолепно выполненным оружием."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "11": {
+            "name": "Нечто шевелится в Пустоте",
+            "sections": {
+                "1": "Во время ночи азартных игр в «Спящем льве» вас охватил ужас. Хранитель пустоты предупредил, что нечто внутри Пустоты шевелится, и грядёт что-то ужасное.",
+                "2": "На краю Пустоты бушевала чёрная буря. Хранитель пустоты установил три оберега, и вы отражали волну за волной демонов, пока буря не стихла. Хранитель пустоты остался на ночь, чтобы убедиться, что всё кончено, и вернулся в новом облачении. Вы не спрашивали."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        },
+        "12": {
+            "name": "Проклятое здание",
+            "sections": {
+                "1": "На Новом рынке вы столкнулись с бывшим начальником Подрывника. У него есть для вас работа: снести здание в районе Монет, якобы проклятое прежним владельцем.",
+                "2": "Не обращая внимания на задержавшихся призраков, вы снесли здание, и вместе с ним исчезло привидение. Подрывник доложил прорабу и на заработанное сшил себе новые сапоги."
+            },
+            "stages": {
+                "0": "{1}",
+                "1": "{1}{2}"
+            }
+        }
+    }
 }

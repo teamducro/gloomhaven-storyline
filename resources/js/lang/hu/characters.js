@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "Doomstalker",
+        "name": "Végzetvadász",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki két {+0_WHITE} lapot két {+1_WHITE} lapra",
@@ -111,7 +111,7 @@ export default {
         ]
     },
     "EL": {
-        "name": "Elementalist",
+        "name": "Elementalista",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
@@ -129,7 +129,7 @@ export default {
         ]
     },
     "SB": {
-        "name": "Sawbones",
+        "name": "Csontkovács",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -143,7 +143,7 @@ export default {
         ]
     },
     "SS": {
-        "name": "Soothsinger",
+        "name": "Jósdalnok",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki egy {-2_WHITE} lapot",
@@ -160,7 +160,7 @@ export default {
         ]
     },
     "SK": {
-        "name": "Sunkeeper",
+        "name": "Napőr",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -176,7 +176,7 @@ export default {
         ]
     },
     "NS": {
-        "name": "Nightshroud",
+        "name": "Éjtakaró",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -191,7 +191,7 @@ export default {
         ]
     },
     "SU": {
-        "name": "Summoner",
+        "name": "Idéző",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
@@ -221,7 +221,7 @@ export default {
         ]
     },
     "QM": {
-        "name": "Quartermaster",
+        "name": "Intendáns",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "Plagueherald",
+        "name": "Járványhírnök",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
@@ -251,7 +251,7 @@ export default {
         ]
     },
     "BT": {
-        "name": "Beast Tyrant",
+        "name": "Fenevadúr",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Bladeswarm",
+        "name": "Pengeroj",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {WOUND} lapra",
@@ -280,7 +280,7 @@ export default {
         ]
     },
     "DR": {
-        "name": "Diviner",
+        "name": "Látnok",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki egy {-2_WHITE} lapot",
@@ -298,7 +298,7 @@ export default {
         ]
     },
     "RG": {
-        "name": "Red Guard",
+        "name": "Vörös Gárdista",
         "perks": [
             "Vegyél ki négy {+0_WHITE} lapot",
             "Vegyél ki két {-1_WHITE} lapot",
@@ -313,7 +313,7 @@ export default {
         ]
     },
     "DM": {
-        "name": "Demolitionist",
+        "name": "Rombolómester",
         "perks": [
             "Vegyél ki négy {+0_WHITE} lapot",
             "Vegyél ki két {-1_WHITE} lapot",
@@ -342,7 +342,7 @@ export default {
         ]
     },
     "VW": {
-        "name": "Voidwarden",
+        "name": "Űrőr",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki egy {-2_WHITE} lapot",
@@ -356,9 +356,9 @@ export default {
         ]
     },
     "AA": {
-        "name": "Amber Aegis",
+        "name": "Borostyánpajzs",
         "perks": [
-            "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} “Place one {COLONY} {COLONY_ICON} token of your choice on any empty hex within {RANGE}2” lapra",
+            "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} “Helyezz el egy tetszőleges {COLONY} {COLONY_ICON} tokent egy üres mezőre {RANGE}2-n belül” lapra",
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
             "Cserélj ki egy {-1_WHITE} lapot egy {+2_WHITE} {MUDDLE} lapra",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artificer",
+        "name": "Műves",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} {ANY} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} {DISARM} lapra",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombard",
+        "name": "Bombázó",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki két {+0_WHITE} lapot két {AGAIN} {PIERCE}3 lapra",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Brightspark",
+        "name": "Szikrafény",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{ANY_X} adj hozzá +2 {ATTACK}” lapra",
             "Cserélj ki egy {-2_WHITE} lapot egy {-2_WHITE} “{RECOVER} egy véletlenszerű lapot az eldobott paklidból” lapra",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Chainguard",
+        "name": "Láncőr",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} “{SHACKLE} {CG_CIRCLE}” lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{+2_WHITE} ha a célpont {SHACKLED} {CG_CIRCLE}” lapra",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Chieftain",
+        "name": "Törzsfő",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {POISON} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL}1, {CT_CIRCLE}” lapra",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Fire Knight",
+        "name": "Tűzlovag",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{STRENGTHEN} ((Csapattársra))” lapra",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hierophant",
+        "name": "Hierofanta",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki két {+0_WHITE} lapot egy {AGAIN} {LIGHT} lapra",
@@ -481,12 +481,12 @@ export default {
             "Cserélj ki egy {+1_WHITE} lapot egy {+3_WHITE} lapra",
             "Adj hozzá két {AGAIN} “{HEAL}1, Magadra or (Csapattársra)” lapot",
             "Adj hozzá egy {+1_WHITE} {WOUND} {MUDDLE} lapot",
-            "At the start of your first turn each scenario, gain {BLESS}",
+            "Minden küldetés első körének elején szerezz {BLESS}-t",
             "Küldetések negatív hatásait hagyd figyelmen kívül és vegyél ki egy {+0_WHITE} lapot"
         ]
     },
     "HO": {
-        "name": "Hollowpact",
+        "name": "Üregpaktum",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL}2, Magadra” lapra",
             "Cserélj ki két {+0_WHITE} lapot egy {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}” lapra",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Luminary",
+        "name": "Fényvivő",
         "perks": [
             "Vegyél ki négy {+0_WHITE} lapot",
             "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} lapra",
@@ -511,13 +511,13 @@ export default {
             "Cserélj ki egy {-2_WHITE} lapot egy {-2_WHITE} “Hajts végre egy {GLOW} {LU_CIRCLE} képességet” lapra",
             "Adj hozzá egy {+0_WHITE} {ANY} lapot",
             "Adj hozzá egy {AGAIN} {+1_WHITE} “{HEAL}1, Magadra” lapot",
-            "TODO:: Adj hozzá egy {+0_WHITE} “{POISON}, Target all  enemies in the depicted {AOE.CLEAVE_0_1} area” lapot",
+            "Adj hozzá egy {+0_WHITE} “{POISON}, célozz meg minden ellenfelet a bemutatott {AOE.CLEAVE_0_1} területen” lapot",
             "Küldetések negatív hatásait hagyd figyelmen kívül és vegyél ki egy {+0_WHITE} lapot",
             "Felszerelések negatív hatásait hagyd figyelmen kívül és adj hozzá egy {AGAIN} “{ANY_X}:{ANY}” lapot"
         ]
     },
     "MF": {
-        "name": "Mirefoot",
+        "name": "Mocsárlábú",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
@@ -533,21 +533,21 @@ export default {
         ]
     },
     "RM": {
-        "name": "Ruinmaw",
+        "name": "Romtorok",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} {RUPTURE} and {WOUND} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {WOUND} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {RUPTURE} lapra",
             "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND}” lapra",
             "Cserélj ki egy {+0_WHITE} lapot egy {AGAIN} “{HEAL}1, Magadra, {EMPOWER}” lapra",
-            "Once each scenario, become {RM_CIRCLE} after collecting your 5th loot token",
-            "Become {RM_CIRCLE} each time you lose a lapot to negate suffering damage",
-            "Whenever one of your abilities causes at least one enemey to gain {RUPTURE}, immediately after that ability perform “{MOVE}1",
+            "Minden küldetésben egyszer válj {RM_CIRCLE}-lá, miután megszerezted az 5. zsákmánytokened",
+            "Válj {RM_CIRCLE}-vé, valahányszor elvesztesz egy lapot a szenvedett sebzés semlegesítéséhez",
+            "Valahányszor valamelyik képességed legalább egy ellenfelet {RUPTURE}-ba juttat, a képesség után azonnal hajtsd végre: „{MOVE}1”",
             "Küldetések negatív hatásait hagyd figyelmen kívül és vegyél ki egy {-1_WHITE} lapot"
         ]
     },
     "SP": {
-        "name": "Spirit Caller",
+        "name": "Szellemidéző",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} lapot és egy {+1_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SP_CIRCLE} performed the attack” lapra",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Starslinger",
+        "name": "Csillagvető",
         "perks": [
             "Cserélj ki két {+0_WHITE} lapot egy {AGAIN} “{HEAL}1, Magadra” lapra",
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} {DISARM} lapot és egy {-1_WHITE} “{INVISIBLE}, Magadra” lapra",
@@ -579,15 +579,15 @@ export default {
         ]
     },
     "DF": {
-        "name": "Drifter",
+        "name": "Vándor",
         "masteries": [
-            "End a scenario with your character tokens on the last slots of four persistent abilities",
-            "Never perform a move ability or attack with a value less than 4, and perform at least one move or attack ability each round"
+            "Fejezz be egy küldetést úgy, hogy a karaktertokenjeid négy tartós képesség utolsó helyén vannak",
+            "Soha ne hajts végre 4-nél kisebb értékű mozgás vagy támadás képességet, és minden fordulóban hajts végre legalább egy mozgás vagy támadás képességet"
         ],
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
-            "Cserélj ki egy {+1_WHITE} lapot két {+0_WHITE} “Move one of your character tokens backward one slot” lapra",
+            "Cserélj ki egy {+1_WHITE} lapot két {+0_WHITE} “Mozgasd az egyik karaktertokenedet egy hellyel hátrébb” lapra",
             "Cserélj ki két {+0_WHITE} lapot két {PIERCE.fh}3 {AGAIN} lapra",
             "Cserélj ki két {+0_WHITE} lapot két {PUSH.fh}2 {AGAIN} lapra",
             "Adj hozzá egy {+3_WHITE} lapot",
@@ -595,55 +595,55 @@ export default {
             "Adj hozzá két “{HEAL.fh}1, Magadra” {AGAIN} lapot",
             "Ignore scenario effects és adj hozzá egy {+1_WHITE} lapot",
             "Ignore item {-1} effects és adj hozzá egy {+1_WHITE} lapot",
-            "Whenever you long rest, you may move one of your character tokens backward one slot",
-            "You may bring one additional {ONE-HAND} item into each scenario",
-            "At the end of each scenario, you may dislapot up to two loot lapot, except Random Item, to draw that many new loot lapot"
+            "Valahányszor hosszú pihenést tartasz, egyik karaktertokenedet hátrébb mozgathatod egy hellyel",
+            "Minden küldetésre magaddal vihetsz egy további {ONE-HAND} felszerelést",
+            "Minden küldetés végén eldobhatsz legfeljebb két zsákmánylapot (a Véletlenszerű felszerelés kivételével), hogy ugyanannyi új zsákmánylapot húzz"
         ]
     },
     "BB": {
-        "name": "Blinkblade",
+        "name": "Villanópenge",
         "masteries": [
-            "Declare {FAST} for seven consecutive rounds",
-            "Never be targeted by an attack"
+            "Hét egymást követő fordulóban jelentsd be a {FAST}-ot",
+            "Soha ne célozzon meg támadás"
         ],
         "perks": [
             "Vegyél ki egy {-2_WHITE} lapot",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {WOUND.fh} lapra",
             "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {IMMOBILIZE.fh} lapra",
-            "Cserélj ki egy {+0_WHITE} lapot egy “Place this lapot in your active area. On your next attack, discard this card to add +2{ATTACK.fh}” {AGAIN} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy “Helyezd ezt a lapot az aktív területedre. A következő támadásodnál dobd el ezt a lapot, hogy +2{ATTACK.fh}-t adj hozzá” {AGAIN} lapra",
             "Cserélj ki két {+1_WHITE} lapot két {+2_WHITE} lapra",
             "Adj hozzá egy {-1_WHITE} “Gain 1{TIME_ICON}” lapot",
             "Adj hozzá egy {+2_WHITE} “{REGENERATE.fh}, Magadra” {AGAIN} lapot",
-            "Whenever you short rest, you may spend one unspent {SPENT.fh} item for no effect to {RECOVER.fh} a different spent item",
-            "At the start of your first turn each scenario, you may perform {MOVE.fh}3",
-            "Whenever you would gain {IMMOBILIZE.fh}, prevent the condition"
+            "Valahányszor rövid pihenést tartasz, elkölthetsz egy fel nem használt {SPENT.fh} felszerelést hatás nélkül, hogy visszaszerezz {RECOVER.fh} egy másik elhasznált felszerelést",
+            "Minden küldetés első körének elején végrehajthatsz egy {MOVE.fh}3-at",
+            "Valahányszor {IMMOBILIZE.fh}-t szereznél, előzd meg az állapotot"
         ]
     },
     "BN": {
-        "name": "Banner Spear",
+        "name": "Zászlólándzsa",
         "masteries": [
-            "Attack at least three enemies with each of three different area of effect attack abilities",
-            "Perform a {BANNER} summon ability on your first turn, keep the banner alive and within {RANGE.fh}3 of you for the entire scenario"
+            "Támadj meg legalább három ellenfelet három különböző területi hatású támadás képességgel, mindegyikkel",
+            "Hajts végre egy {BANNER} idézés képességet az első körödben, és tartsd életben a zászlót, {RANGE.fh}3 távolságon belül tőled, az egész küldetés alatt"
         ],
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy “{SHIELD.fh}1” {AGAIN} lapra",
-            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “Add +1{ATTACK.fh} for each (Csapattársra) adjacent to the target” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “Adj hozzá +1{ATTACK.fh}-t a célponttal szomszédos minden csapattársért” lapra",
             "Adj hozzá egy {+1_WHITE} {DISARM.fh} lapot",
             "Adj hozzá egy {+2_WHITE} {PUSH.fh}1 lapot",
             "Adj hozzá két {+1_WHITE} {AGAIN} lapot",
             "Adj hozzá két “{HEAL.fh}1, Magadra” {AGAIN} lapot",
             "Ignore item {-1} effects és vegyél ki egy {-1_WHITE} lapot",
-            "At the end of each of your long rests, grant one (Csapattársra) within {RANGE.fh}3: {MOVE.fh}2",
-            "Whenever you open a door with a move ability, add +3{MOVE.fh}",
-            "Once each scenario, during your turn, gain {SHIELD.fh}2 for the round"
+            "Minden hosszú pihenésed végén adj egy {RANGE.fh}3-on belüli csapattársnak: {MOVE.fh}2",
+            "Valahányszor mozgás képességgel ajtót nyitsz, adj hozzá +3{MOVE.fh}-t",
+            "Minden küldetésben egyszer, a köröd alatt szerezz {SHIELD.fh}2-t a fordulóra"
         ]
     },
     "DW": {
-        "name": "Deathwalker",
+        "name": "Halálsétáló",
         "masteries": [
-            "Remove seven {SHADOW_ICON} in one round",
-            "Place or remove at least one {SHADOW_ICON} each round"
+            "Távolíts el hét {SHADOW_ICON}-t egy fordulóban",
+            "Minden fordulóban helyezz le vagy távolíts el legalább egy {SHADOW_ICON}-t"
         ],
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
@@ -653,17 +653,17 @@ export default {
             "Adj hozzá egy {+2_WHITE} {DARK} lapot",
             "Adj hozzá egy {DISARM.fh} {AGAIN} lapot és egy {MUDDLE.fh} {AGAIN} lapot",
             "Adj hozzá két “{HEAL.fh}1, {TARGET.fh}1 (Csapattársra)” {AGAIN} lapot",
-            "Ignore scenario effects",
-            "Whenever you long rest, you may move one {SHADOW_ICON} up to three hexes",
-            "Whenever you short rest, you may {DARK_X} to perform {MUDDLE.fh}, {CURSE.fh}, {RANGE.fh}2 as if you were occupying a hex with a {SHADOW_ICON}",
-            "While you are occupying a hex with a {SHADOW_ICON}, all attacks targeting you gain disadvantage"
+            "Hagyd figyelmen kívül a küldetések hatásait",
+            "Valahányszor hosszú pihenést tartasz, egy {SHADOW_ICON}-t elmozgathatsz legfeljebb három mezőnyit",
+            "Valahányszor rövid pihenést tartasz, elkölthetsz {DARK_X}-et, hogy végrehajts {MUDDLE.fh}, {CURSE.fh}, {RANGE.fh}2-t, mintha egy {SHADOW_ICON}-t tartalmazó mezőn állnál",
+            "Amíg {SHADOW_ICON}-t tartalmazó mezőn állsz, minden rád irányuló támadás Hátrányt kap"
         ]
     },
     "BO": {
-        "name": "Boneshaper",
+        "name": "Csontformáló",
         "masteries": [
-            "Kill at least fifteen of your summons",
-            "Play a summon action on your first turn, have the summon kill at least six enemies, and keep it alive for the entire scenario"
+            "Öld meg legalább tizenöt saját idézett lényedet",
+            "Játssz ki egy idézés akciót az első körödben, az idézett lény ölje meg legalább hat ellenfelet, és tartsd életben az egész küldetés alatt"
         ],
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {CURSE.fh} lapra",
@@ -673,15 +673,15 @@ export default {
             "Adj hozzá három “{HEAL.fh}1, {TARGET.fh} {BO}” {AGAIN} lapot",
             "Adj hozzá egy {+2_WHITE} {EARTH_OR_DARK} lapot",
             "Ignore scenario effects és adj hozzá két {+1_WHITE} lapot",
-            "Immediately berfore each of your rests, you may kill one of your summons to perform {BLESS.fh}, Magadra",
-            "Once each scenario, when any character (Csapattársra) would become exhausted by suffering {DAMAGE.fh}, you may suffer {DAMAGE.fh}2 to reduce their hit point value to 1 instead",
-            "At the start of each scenario, you may play a level 1 lapot from your hand to perform a summon action of the lapot"
+            "Minden pihenésed előtt közvetlenül megölhetsz egy idézett lényedet, hogy végrehajts {BLESS.fh}, Magadra",
+            "Küldetésenként egyszer, amikor egy karakter csapattárs {DAMAGE.fh} elszenvedése miatt kimerülne, elszenvedhetsz {DAMAGE.fh}2-t, hogy az életerejét ehelyett 1-re csökkentsd",
+            "Minden küldetés elején kijátszhatsz egy 1. szintű lapot a kezedből, hogy végrehajtsd a lap idézés akcióját"
         ]
     },
     "GE": {
-        "name": "Geminate",
+        "name": "Ikerváltó",
         "masteries": [
-            "Switch forms each round",
+            "Minden fordulóban válts alakot",
             "Lose at least one ability lapot each round"
         ],
         "perks": [
@@ -693,17 +693,17 @@ export default {
             "Adj hozzá két {+1_WHITE} {PUSH.fh}3 lapot",
             "Adj hozzá egy {2X_WHITE} “{BRITTLE.fh}, Magadra” lapot",
             "Adj hozzá egy {+1_WHITE} “{REGENERATE.fh}, Magadra” {AGAIN} lapot",
-            "Ignore scenario effects",
-            "Whenever you short rest, you may Vegyél ki egy negative condition from one (Csapattársra) within {RANGE.fh}3",
-            "Once each scenario, when you would give yourMagadra a negative condition, prevent the condition",
-            "Whenever you perform an action with a lost icon, you may dislapot one lapot to {RECOVER.fh} one lapot from your dislapot pile of equal or lower level"
+            "Hagyd figyelmen kívül a küldetések hatásait",
+            "Valahányszor rövid pihenést tartasz, levehetsz egy negatív állapotot egy {RANGE.fh}3-on belüli csapattársról",
+            "Küldetésenként egyszer, amikor negatív állapotot adnál magadnak, akadályozd meg az állapotot",
+            "Valahányszor elvesztett ikonnal rendelkező akciót hajtasz végre, eldobhatsz egy lapot, hogy visszaszerezz {RECOVER.fh} egy azonos vagy alacsonyabb szintű lapot az eldobott lapjaid közül"
         ]
     },
     "IF": {
-        "name": "Infuser",
+        "name": "Átitató",
         "masteries": [
-            "Have five active {INFUSION_ICON} bonuses",
-            "Kill at least four enemies, but never attack"
+            "Legyen öt aktív {INFUSION_ICON} bónuszod",
+            "Ölj meg legalább négy ellenfelet úgy, hogy soha nem támadsz"
         ],
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} lapra és egy {-1_WHITE} {WIND} {EARTH} {DARK} lapra",
@@ -712,18 +712,18 @@ export default {
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {EARTH_OR_DARK} lapra",
             "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} lapra",
             "Cserélj ki egy {+0_WHITE} lapot három “Move one waning element to strong” {AGAIN} lapra",
-            "Adj hozzá két “+1{ATTACK.fh} for each pair of active {INFUSION_ICON}” {AGAIN} lapot",
-            "Ignore scenario effects",
-            "Ignore item {-1} effects. Whenever you become exhausted, keep all your active bonuses in play, with your summons acting on initiative 99 each round",
-            "Whenever you short rest, you may {ANY_X} to {RECOVER.fh} one spent {ONE-HAND} or {TWO-HANDS} item",
+            "Adj hozzá két “+1{ATTACK.fh} minden aktív {INFUSION_ICON}-pár után” {AGAIN} lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait",
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait. Valahányszor kimerülsz, tartsd játékban az összes aktív bónuszodat, az idézett lényeid pedig minden fordulóban 99-es kezdeményezéssel cselekednek",
+            "Valahányszor rövid pihenést tartasz, elkölthetsz {ANY_X}-et, hogy visszaszerezz {RECOVER.fh} egy elhasznált {ONE-HAND} vagy {TWO-HANDS} felszerelést",
             "Once each scenario, during ordering of initiative, after all ability lapot have been revealed, {ANY}"
         ]
     },
     "PY": {
-        "name": "Pyroclast",
+        "name": "Piroklaszt",
         "masteries": [
-            "Create or destroy at least one obstacle or hazardous terrain tile each round",
-            "Move enemies through six diffrerent hexes of hazardous terrain you created in one turn"
+            "Minden fordulóban hozz létre vagy semmisíts meg legalább egy akadály- vagy veszélyes terep kártyát",
+            "Mozgass ellenfeleket hat különböző, általad létrehozott veszélyes terep mezőn át egyetlen körben"
         ],
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
@@ -734,17 +734,17 @@ export default {
             "Cserélj ki két {+1_WHITE} lapot két {+2_WHITE} lapra",
             "Adj hozzá két {+1_WHITE} {FIRE_OR_EARTH} lapot",
             "Adj hozzá két {+1_WHITE} {MUDDLE.fh} {AGAIN} lapot",
-            "Ignore scenario effects",
-            "Whenever you long rest, you may destroy one adjacent obstacle to gain {WARD.fh}",
-            "Whenever you short rest, you may {FIRE_X} to perform {WOUND.fh}, {TARGET.fh}1 enemy occupying or adjacent to hazardous terrain",
-            "You and all allies are unaffected by hazardous terrain you create"
+            "Hagyd figyelmen kívül a küldetések hatásait",
+            "Valahányszor hosszú pihenést tartasz, megsemmisíthetsz egy szomszédos akadályt, hogy szerezz {WARD.fh}-t",
+            "Valahányszor rövid pihenést tartasz, elkölthetsz {FIRE_X}-et, hogy végrehajts {WOUND.fh}, {TARGET.fh}1 olyan ellenfél, amely veszélyes terepen áll vagy azzal szomszédos",
+            "Téged és az összes csapattársaidat nem érint az általad létrehozott veszélyes terep"
         ]
     },
     "SH": {
-        "name": "Shattersong",
+        "name": "Zúzódal",
         "masteries": [
-            "Always have 0 {RESONANCE_ICON} directly before you gain {RESONANCE_ICON} at the end of each of your turns",
-            "Spend 5 {RESONANCE_ICON} on each of five different {WAVE} abilities"
+            "Mindig legyen 0 {RESONANCE_ICON}-od közvetlenül azelőtt, hogy minden körödnek a végén {RESONANCE_ICON}-t szereznél",
+            "Költs el 5 {RESONANCE_ICON}-t öt különböző {WAVE} képességen, mindegyiken"
         ],
         "perks": [
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -754,36 +754,36 @@ export default {
             "Cserélj ki két {+1_WHITE} lapot két {+2_WHITE} {WIND_OR_LIGHT} lapra",
             "Adj hozzá egy “{HEAL.fh}2, {BLESS.fh}, {TARGET.fh}1 (Csapattársra)” {AGAIN} lapot",
             "Adj hozzá egy {+1_WHITE} “Gain 1 {RESONANCE_ICON}” lapot",
-            "Ignore scenario effects",
-            "Whenever you short rest, you may {WIND_X} to perform {STRENGTHEN.fh}, {RANGE.fh}3 and {LIGHT_X} to perform {BLESS.fh}, {RANGE.fh}3",
-            "At the start of each scenario, you may gain {BRITTLE.fh} to gain 2 {RESONANCE_ICON}",
-            "Whenever a new room is revealed, you may reveal the top lapot of both the monster attack modifier deck and all allies' attack modifier decks"
+            "Hagyd figyelmen kívül a küldetések hatásait",
+            "Valahányszor rövid pihenést tartasz, elkölthetsz {WIND_X}-et, hogy végrehajts {STRENGTHEN.fh}, {RANGE.fh}3-t, és {LIGHT_X}-et, hogy végrehajts {BLESS.fh}, {RANGE.fh}3-t",
+            "Minden küldetés elején szerezhetsz {BRITTLE.fh}-t, hogy szerezz 2 {RESONANCE_ICON}-t",
+            "Valahányszor új helyiséget tárnak fel, felfedheted a szörnyek támadás módosító paklijának és az összes csapattárs támadás módosító paklijának legfelső lapját"
         ]
     },
     "TA": {
-        "name": "Trapper",
+        "name": "Csapdaállító",
         "masteries": [
-            "Have one {HEAL.fh} trap on the map with a value of at least 20",
+            "Legyen a pályán egy {HEAL.fh} csapda, amelynek értéke legalább 20",
             "Move enemies through seven or more traps egy ability"
         ],
         "perks": [
             "Vegyél ki egy {-2_WHITE} lapot",
-            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “Create one {HEAL.fh}2 trap in an empty hex adjacent to the target” lapra",
-            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “Create one {DAMAGE.fh}1 trap in an empty hex adjacent to the target” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “Hozz létre egy {HEAL.fh}2 csapdát egy üres mezőn a célpont mellett” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “Hozz létre egy {DAMAGE.fh}1 csapdát egy üres mezőn a célpont mellett” lapra",
             "Cserélj ki két {+0_WHITE} lapot két {+0_WHITE} “Add {DAMAGE.fh}2 or {HEAL.fh}2 to a trap within {RANGE.fh}2 of you” lapra",
             "Cserélj ki két {+1_WHITE} lapot két {+2_WHITE} {IMMOBILIZE.fh} lapra",
             "Adj hozzá két “Add {PUSH.fh}2 vagy {PULL.fh}2” {AGAIN} lapot",
-            "Ignore scenario effects",
-            "Whenever you long rest, you may create one {DAMAGE.fh}1 trap in an adjacent emty hex",
-            "Whenever you enter a hex with a trap, you may choose to not spring the trap",
-            "At the start of each scenario, you may create one {DAMAGE.fh}2 trap in an adjacent empty hex"
+            "Hagyd figyelmen kívül a küldetések hatásait",
+            "Valahányszor hosszú pihenést tartasz, létrehozhatsz egy {DAMAGE.fh}1 csapdát egy szomszédos üres mezőn",
+            "Valahányszor csapdát tartalmazó mezőre lépsz, dönthetsz úgy, hogy nem aktiválod a csapdát",
+            "Minden küldetés elején létrehozhatsz egy {DAMAGE.fh}2 csapdát egy szomszédos üres mezőn"
         ]
     },
     "PC": {
-        "name": "Pain Conduit",
+        "name": "Fájdalomvezeték",
         "masteries": [
-            "Cause other figures to suffer a total of at least {DAMAGE.fh}40 in one round",
-            "Start a turn with {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} and {MUDDLE.fh}"
+            "Okozz más figuráknak összesen legalább {DAMAGE.fh}40 sebzést egy fordulóban",
+            "Kezdj egy kört {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} és {MUDDLE.fh} állapottal"
         ],
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
@@ -793,18 +793,18 @@ export default {
             "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} lapra",
             "Cserélj ki három {+1_WHITE} lapot három {+1_WHITE} {CURSE.fh} lapra",
             "Adj hozzá három “{HEAL.fh}1, Magadra” {AGAIN} lapot",
-            "Adj hozzá egy {+0_WHITE} “Add +1{ATTACK.fh} for each negative condition you have” lapot",
+            "Adj hozzá egy {+0_WHITE} “Adj hozzá +1{ATTACK.fh}-t minden negatív állapotod után” lapot",
             "Ignore scenario effects és adj hozzá két {+1_WHITE} lapot",
-            "Each round in which you long rest, you may ignore all negative conditions you have. If you do, they cannot be removed that round",
-            "Whenever you become exhausted, first perform {CURSE.fh}, {TARGET} all, {RANGE.fh}3",
-            "Increase your maximum hit point value by 5"
+            "Minden fordulóban, amelyben hosszú pihenést tartasz, figyelmen kívül hagyhatod az összes negatív állapotodat. Ha így teszel, azokat nem lehet eltávolítani abban a fordulóban",
+            "Valahányszor kimerülsz, előbb hajts végre: {CURSE.fh}, {TARGET} mind, {RANGE.fh}3",
+            "Növeld meg a maximális életerőd 5-tel"
         ]
     },
     "SD": {
-        "name": "Snowdancer",
+        "name": "Hótáncos",
         "masteries": [
-            "Cause at least one (Csapattársra) or enemy to move each round",
-            "Ensure the first (Csapattársra) to suffer {DAMAGE.fh} each round, directly before suffering the {DAMAGE.fh}, has at least one condition you applied"
+            "Késztess legalább egy csapattársat vagy ellenfelet mozgásra minden fordulóban",
+            "Gondoskodj róla, hogy az első csapattárs, aki minden fordulóban {DAMAGE.fh}-t szenved el, közvetlenül a {DAMAGE.fh} elszenvedése előtt legalább egy általad alkalmazott állapottal rendelkezzen"
         ],
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 (Csapattársra)” lapra",
@@ -813,15 +813,15 @@ export default {
             "Cserélj ki két {+0_WHITE} lapot két “If this action forces the target to move, it suffers {DAMAGE.fh}1” {AGAIN} lapra",
             "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 (Csapattársra)” lapra",
             "Adj hozzá egy “{HEAL.fh}1, {WARD.fh}, {TARGET.fh}1 (Csapattársra)” {AGAIN} lapot",
-            "Whenever you long rest, you may {ICE_OR_WIND}",
-            "Whenever you short rest, you may {ICE_X} to perform {REGENERATE.fh}, {RANGE.fh}3 and {WIND_X} tp perform {WARD.fh}, {RANGE.fh}3",
-            "At the start of each scenario, all enemies gain {MUDDLE.fh}. Whenever a new room is revealed, all enemies in the newly revealed room gain {MUDDLE.fh}"
+            "Valahányszor hosszú pihenést tartasz, használhatod: {ICE_OR_WIND}",
+            "Valahányszor rövid pihenést tartasz, elkölthetsz {ICE_X}-et, hogy végrehajts {REGENERATE.fh}, {RANGE.fh}3-t, és {WIND_X}-et, hogy végrehajts {WARD.fh}, {RANGE.fh}3-t",
+            "Minden küldetés elején az összes ellenfél szerez {MUDDLE.fh}-t. Valahányszor új helyiséget tárnak fel, az újonnan feltárt helyiség összes ellenfele szerez {MUDDLE.fh}-t"
         ]
     },
     "FF": {
-        "name": "Frozen Fist",
+        "name": "Fagyott Ököl",
         "masteries": [
-            "{RECOVER.fh} at least one lapot from your dislapot pile each round",
+            "Minden fordulóban szerezz vissza {RECOVER.fh} legalább egy lapot az eldobott lapjaid közül",
             "Enter at least ten different hexes egy move ability, then cause one enemy to suffer at least {DAMAGE.fh}10 egy attack ability in the same turn"
         ],
         "perks": [
@@ -833,54 +833,54 @@ export default {
             "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} “Create one 1-hex icy terrain tile in a featureless hex adjacent to the target” lapra",
             "Adj hozzá egy {+3_WHITE} lapot",
             "Adj hozzá két “{HEAL.fh}1, Magadra” {AGAIN} lapot",
-            "Ignore item {-1} effects, and, whenever you enter icy terrain with a move ability, you may ignore the effect to add +1{MOVE.fh}",
-            "Whenever you heal from a long rest, you may {ICE_OR_EARTH_X} to add +2{HEAL.fh}",
-            "Once each scenario, when you would suffer {DAMAGE.fh}, you may negate the {DAMAGE.fh}"
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és valahányszor mozgás képességgel jeges terepre lépsz, figyelmen kívül hagyhatod a hatást, hogy hozzáadj +1{MOVE.fh}-t",
+            "Valahányszor hosszú pihenésből gyógyulsz, elkölthetsz {ICE_OR_EARTH_X}-et, hogy hozzáadj +2{HEAL.fh}-t",
+            "Minden küldetésben egyszer, amikor {DAMAGE.fh}-t szenvednél el, semlegesítheted a {DAMAGE.fh}-t"
         ]
     },
     "HV": {
         "name": "HIVE",
         "masteries": [
-            "{TRANSFER_ICON} each round",
-            "{TRANSFER_ICON} into four different summons in one round"
+            "{TRANSFER_ICON} minden fordulóban",
+            "{TRANSFER_ICON} négy különböző idézett lénybe egyetlen fordulóban"
         ],
         "perks": [
             "Vegyél ki egy {-2_WHITE} lapot és egy {+1_WHITE} lapot",
-            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “After this attack ability, grant one of your summons: {MOVE.fh}2” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “E támadás képesség után adj az egyik idézett lényednek: {MOVE.fh}2” lapra",
             "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “After this attack ability, {TRANSFER_ICON}” lapra",
             "Adj hozzá egy {+1_WHITE} “{HEAL.fh}1, Magadra” lapot",
             "Adj hozzá egy {+2_WHITE} {MUDDLE.fh} lapot",
             "Adj hozzá két {POISON.fh} {AGAIN} lapot",
             "Adj hozzá két {WOUND.fh} {AGAIN} lapot",
-            "Whenever you long rest, you may do so on any initiative value, choosing your initiative after all ability lapot have been revealed, and you decide how your summons perform their abilities for the round",
-            "At the end of each of your short rests, you may {TRANSFER_ICON}",
-            "Whenever you would gain {WOUND.fh}, prevent the condition"
+            "Valahányszor hosszú pihenést tartasz, azt bármilyen kezdeményezési értéken megteheted, a kezdeményezésedet az összes képességkártya felfedése után választod meg, és te döntöd el, hogyan hajtják végre az idézett lényeid a képességeiket abban a fordulóban",
+            "Minden rövid pihenésed végén használhatod: {TRANSFER_ICON}",
+            "Valahányszor {WOUND.fh}-t szereznél, előzd meg az állapotot"
         ]
     },
     "ME": {
-        "name": "Metal Mosaic",
+        "name": "Fémmozaik",
         "masteries": [
-            "Never attack",
-            "For four consecutive rounds, move the pressure gague up or down three levels from where it started the round ({PRESSURE_LOW_ICON} to {PRESSURE_HIGH_ICON}, or vice versa)"
+            "Soha ne támadj",
+            "Négy egymást követő fordulóban mozgasd a nyomásmérőt fel vagy le három szinttel a forduló eleji állásától ({PRESSURE_LOW_ICON}-ról {PRESSURE_HIGH_ICON}-ra, vagy fordítva)"
         ],
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{PRESSURE_UP_ICON} vagy {PRESSURE_DOWN_ICON}” lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy “{SHIELD.fh}1” {AGAIN} lapra",
-            "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} “The target and all enemies adjacent to it suffer {DAMAGE.fh}1” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} “A célpont és minden szomszédos ellenfele {DAMAGE.fh}1-et szenved el” lapra",
             "Cserélj ki két {+0_WHITE} lapot egy {PIERCE.fh}3 {AGAIN} és egy “{RETALIATE.fh}2” {AGAIN} lapra",
             "Adj hozzá egy {+1_WHITE} “{HEAL.fh}2, Magadra” lapot",
             "Adj hozzá egy {+3_WHITE} lapot",
             "Ignore item {-1} effects és adj hozzá két {+1_WHITE} lapot",
-            "Whenever you long rest, you may {PRESSURE_UP_ICON} or {PRESSURE_DOWN_ICON}",
-            "Whenever you would gain {POISON.fh}, you may suffer {DAMAGE.fh}1 to prevent the condition",
-            "Once each scenario, when you would become exhausted, instead gain {BRITTLE.fh} and {INVISIBLE.fh}, lose all your lapot, {RECOVER.fh} four lost lapot, and then dislapot the recovered lapot"
+            "Valahányszor hosszú pihenést tartasz, használhatod: {PRESSURE_UP_ICON} vagy {PRESSURE_DOWN_ICON}",
+            "Valahányszor {POISON.fh}-t szereznél, elszenvedhetsz {DAMAGE.fh}1-et, hogy megelőzd az állapotot",
+            "Küldetésenként egyszer, amikor kimerülnél, ehelyett szerezz {BRITTLE.fh}-t és {INVISIBLE.fh}-t, veszítsd el az összes lapodat, szerezz vissza {RECOVER.fh} négy elveszett lapot, majd dobd el a visszaszerzett lapokat"
         ]
     },
     "DT": {
-        "name": "Deepwraith",
+        "name": "Mélykísértet",
         "masteries": [
-            "Perform all your attacks with advantage",
-            "Infuse {DARK} each round"
+            "Hajtsd végre az összes támadásodat Előnnyel",
+            "Minden fordulóban hozz létre {DARK}-ot"
         ],
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
@@ -892,16 +892,16 @@ export default {
             "Replace three {+1_WHITE} lapot with three {+1_WHITE} {CURSE.fh} lapot",
             "Adj hozzá két {+1_WHITE} “Gain 1{TROPHY_ICON}” lapot",
             "Ignore scenario effects és vegyél ki két {+0_WHITE} lapot",
-            "Whenever you long rest, you may {LOOT.fh}1 one adjacent hex. If you gain any loot tokens, gain 1 {TROPHY_ICON}",
-            "At the start of each scenario, gain 2 {TROPHY_ICON}",
-            "While you have {INVISIBLE.fh}, gain advantage on all your attacks"
+            "Valahányszor hosszú pihenést tartasz, zsákmányolhatsz egy szomszédos mezőt {LOOT 1}. Ha szerzel zsákmánytokent, szerezz 1 {TROPHY_ICON}-t",
+            "Minden küldetés elején szerezz 2 {TROPHY_ICON}-t",
+            "Amíg {INVISIBLE.fh}-d van, minden támadásod Előnyt kap"
         ]
     },
     "CR": {
-        "name": "Crashing Tide",
+        "name": "Csapódó Dagály",
         "masteries": [
-            "Never suffer damage from attacks, and be targeted by at least five attacks",
-            "At the start of each of your rests, have more active {TIDE_ICON} than lapot in your dislapot pile"
+            "Soha ne szenvedj el sebzést támadásból, és legalább öt támadás célpontja légy",
+            "Minden pihenésed elején legyen több aktív {TIDE_ICON}-od, mint lap az eldobott paklidban"
         ],
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot két {PIERCE.fh}3 {AGAIN} lapra",
@@ -911,74 +911,444 @@ export default {
             "Adj hozzá egy {+2_WHITE} {MUDDLE.fh} lapot",
             "Adj hozzá egy {+1_WHITE} {DISARM.fh} lapot",
             "Adj hozzá két “{HEAL.fh}1, Magadra” {AGAIN} lapot",
-            "Ignore item {-1} effects, and, whenever you would gain {IMPAIR.fh}, prevent the condition",
-            "Whenever you declare a long rest during lapot selection, gain {SHIELD.fh}1 for the round",
-            "Gain advantage on all your attacks performed while occupying or targeting enemies occupying water hexes"
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és valahányszor {IMPAIR.fh}-t szereznél, előzd meg az állapotot",
+            "Valahányszor hosszú pihenést jelentesz be a lapválasztás során, szerezz {SHIELD.fh}1-et a fordulóra",
+            "Szerezz Előnyt minden olyan támadásodra, amelyet vízmezőn állva vagy vízmezőn álló ellenfelekre hajtasz végre"
         ]
     },
     "SA": {
         "name": "Satha",
+        "masteries": [
+            "Egy egész küldetés alatt minden körödben legalább egy csapattársad hajtson végre mozgás vagy támadás képességet, kivéve, ha hosszú pihenést tartasz",
+            "Egy egész küldetés alatt egyetlen csapattársad se legyen támadás célpontja"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{SHIELD.fh}1” {AGAIN} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally and self” card",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add one {+0_WHITE} “Grant one ally within {RANGE.fh}3: {ATTACK.fh}2 {RANGE.fh}3 or {ATTACK.fh}3” card",
-            "Add one {AGAIN} {DISARM.fh} card and one {AGAIN} “Grant one ally within {RANGE.fh}3: {MOVE.fh}2” card",
-            "Add two {AGAIN} “{WARD.fh}, {RANGE.fh}1” cards",
-            "Ignore item {-1} effects and whenever you would gain {STUN.fh}, prevent the condition",
-            "Whenever you long rest, perform: {STRENGTHEN.fh}, {TARGET.fh}1 ally, {RANGE.fh}3",
-            "All initiative values may be discussed freely and precisely",
-            "The first time each scenario that you or an ally exhaust, perform: {HEAL.fh}3, {TARGET.fh}all, {WARD.fh}, {STRENGTHEN.fh}"
+            "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{SHIELD.fh}1” {AGAIN} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {ICE} lapra",
+            "Cserélj ki két {+0_WHITE} lapot egy {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 csapattárs és te magad” lapra",
+            "Cserélj ki két {+1_WHITE} lapot két {+2_WHITE} lapra",
+            "Adj hozzá egy {+0_WHITE} “Adj egy {RANGE.fh}3 távolságon belüli csapattársnak: {ATTACK.fh}2 {RANGE.fh}3 vagy {ATTACK.fh}3” lapot",
+            "Adj hozzá egy {AGAIN} {DISARM.fh} lapot és egy {AGAIN} “Adj egy {RANGE.fh}3 távolságon belüli csapattársnak: {MOVE.fh}2” lapot",
+            "Adj hozzá két {AGAIN} “{WARD.fh}, {RANGE.fh}1” lapot",
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és valahányszor {STUN.fh}-t szereznél, előzd meg az állapotot",
+            "Valahányszor hosszú pihenést tartasz, hajtsd végre: {STRENGTHEN.fh}, {TARGET.fh}1 csapattárs, {RANGE.fh}3",
+            "Az összes kezdeményezési értékről szabadon és pontosan lehet beszélni",
+            "Minden küldetésben az első alkalommal, amikor te vagy egy csapattársad kimerül, hajtsd végre: {HEAL.fh}3, {TARGET.fh}mind, {WARD.fh}, {STRENGTHEN.fh}"
         ]
     },
     "HA": {
         "name": "Hail",
+        "masteries": [
+            "Egy egész küldetés alatt minden fordulóban szerezz legalább 1 {RESOLVE_WHITE}-t",
+            "Egyetlen küldetésben, három egymást követő fordulón át, minden fordulóban költs el legalább 3 {RESOLVE_WHITE}-t"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{WOUND.fh} or {IMMOBILIZE.fh}” card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} {WILD} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{POISON.fh} or {MUDDLE.fh}” card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” {AGAIN} card",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add one {+1_WHITE} {STUN.fh} card",
-            "Add one {+3_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 ally” card",
-            "Ignore scenario effects and add two {+1_WHITE} cards",
-            "Whenever you short rest, you may choose which card to lose",
-            "Your and your allies' enhancements cost five gold less and whenever an ally enhances a card, you gain five gold",
-            "Add one {+1_WHITE} “{HA} gains 1 {RESOLVE_WHITE}” card to the monster attack modifier deck"
+            "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{WOUND.fh} vagy {IMMOBILIZE.fh}” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} {ANY} lapra",
+            "Cserélj ki két {+0_WHITE} lapot egy {+1_WHITE} “{POISON.fh} vagy {MUDDLE.fh}” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 csapattárs” {AGAIN} lapra",
+            "Cserélj ki két {+1_WHITE} lapot két {+2_WHITE} lapra",
+            "Adj hozzá egy {+1_WHITE} {STUN.fh} lapot",
+            "Adj hozzá egy {+3_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 csapattárs” lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá két {+1_WHITE} lapot",
+            "Valahányszor rövid pihenést tartasz, te választhatod meg, melyik lapot veszíted el",
+            "A te és a csapattársaid fejlesztései öt arannyal kevesebbe kerülnek, és valahányszor egy csapattárs lapot fejleszt, kapsz öt aranyat",
+            "Adj hozzá egy {+1_WHITE} “{HA} szerez 1 {RESOLVE_WHITE}-t” lapot a szörnyek támadás módosító paklijához"
         ]
     },
     "CA": {
         "name": "Cassandra",
+        "masteries": [
+            "Egy egész küldetés alatt minden fordulóban fordíts fel legalább egy lapot egy támadás módosító pakliból vagy egy szörny képességkártya-pakliból",
+            "Célozz meg 6 figurát egy olyan képességgel, amely {RIFT_WHITE}-ot tartalmazó mezőn álló figurákat céloz"
+        ],
         "perks": [
-            "Remove one {-2_WHITE} card",
-            "Remove two {-1_WHITE} cards",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{BLESS.fh}, self or {TARGET.fh}1 ally” card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} “Add +1{ATTACK.fh} if the top card of the monster attack modifier deck is revealed” card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT_OR_DARK} card",
-            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {RIFT_WHITE}, discard this card to place another {RIFT_WHITE} within {RANGE.fh}1 of it” {AGAIN} card",
-            "Ignore scenario effects and add two {+1_WHITE} cards",
-            "Whenever you long rest, you may read one unread {SECTION} from the current scenario’s “Section Links",
-            "Whenever you place a {RIFT_WHITE}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {RIFT_WHITE}",
-            "Whenever a deck is shuffled, you may set aside all revealed cards from that deck and place them back on top after shuffling"
+            "Vegyél ki egy {-2_WHITE} lapot",
+            "Vegyél ki két {-1_WHITE} lapot",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{BLESS.fh}, magadra vagy {TARGET.fh}1 csapattárs” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} “Adj hozzá +1{ATTACK.fh}-t, ha a szörnyek támadás módosító paklijának legfelső lapja fel van fordítva” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} {LIGHT_OR_DARK} lapra",
+            "Adj hozzá egy {+1_WHITE} “Tedd ezt a lapot az aktív területedre. Amikor legközelebb lehelyezel egy {RIFT_WHITE}-ot, dobd el ezt a lapot, hogy lehelyezz még egy {RIFT_WHITE}-ot tőle {RANGE.fh}1 távolságon belül” {AGAIN} lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá két {+1_WHITE} lapot",
+            "Valahányszor hosszú pihenést tartasz, elolvashatsz egy elolvasatlan {SECTION}-t az aktuális küldetés „Szakaszhivatkozások” részéből",
+            "Valahányszor lehelyezel egy {RIFT_WHITE}-ot, végrehajthatod: “{PULL.fh}1, {TARGET.fh}1 csapattárs vagy ellenfél, {RANGE.fh}1”, mintha {RIFT_WHITE}-ot tartalmazó mezőn állnál",
+            "Valahányszor egy paklit megkevernek, félretehetsz minden felfordított lapot abból a pakliból, és keverés után visszateheted őket a tetejére"
         ]
     },
     "AN": {
         "name": "Anaphi",
+        "masteries": [
+            "3 különböző idézett lényed ölje meg 3-3 ellenfelet",
+            "3 különböző küldetésben, mindegyikben hajts végre 8 olyan támadást, amelynek célpontjai negatív állapotú ellenfelek"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “Add +1{ATTACK.fh} when drawn by a summon” card",
-            "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN.fh} card",
-            "Replace one {+1_WHITE} card with one {+1_WHITE} “{INVISIBLE.fh}, self” card",
-            "Add one {+2_WHITE} {WIND_OR_DARK} card",
-            "Add one {+2_WHITE} “{STRENGTHEN.fh}, 1 of your summons” card",
-            "Ignore scenario effects and remove one {+0_WHITE} card",
-            "Whenever you long rest, you may {WIND_OR_DARK}",
-            "Once each scenario, during your turn, all enemies adjacent to a wall suffer {DAMAGE.fh}1",
-            "At the start of the first round of each scenario, after all ability cards have been revealed, control one enemy within {RANGE.fh}5: {MOVE.fh}2"
+            "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {POISON.fh} lapra",
+            "Cserélj ki két {+0_WHITE} lapot egy {+1_WHITE} “Adj hozzá +1{ATTACK.fh}-t, ha idézett lény húzta” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} {STUN.fh} lapra",
+            "Cserélj ki egy {+1_WHITE} lapot egy {+1_WHITE} “{INVISIBLE.fh}, magadra” lapra",
+            "Adj hozzá egy {+2_WHITE} {WIND_OR_DARK} lapot",
+            "Adj hozzá egy {+2_WHITE} “{STRENGTHEN.fh}, egy idézett lényed” lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és vegyél ki egy {+0_WHITE} lapot",
+            "Valahányszor hosszú pihenést tartasz, használhatod: {WIND_OR_DARK}",
+            "Minden küldetésben egyszer, a köröd alatt a falhoz szomszédos összes ellenfél elszenved {DAMAGE.fh}1-et",
+            "Minden küldetés első fordulójának elején, miután az összes képességkártyát felfordították, irányíts egy {RANGE.fh}5 távolságon belüli ellenfelet: {MOVE.fh}2"
+        ]
+    },
+    "BR2": {
+        "name": "Verekedő",
+        "masteries": [
+            "3 különböző küldetésben ölj meg egy olyan ellenfelet, amelyet abban a fordulóban eltoltál vagy magadhoz húztál",
+            "Egyetlen küldetésben, 3 egymást követő fordulón át, játssz ki 6 különböző képességkártyát, és minden egyes fordulóban okozz az ellenfeleknek legalább 7 sebzést"
+        ],
+        "perks": [
+            "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {AGAIN} {SHIELD.fh}1 lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {AGAIN} “Tedd ezt a lapot az aktív területedre. A következő, rád irányuló, szomszédos ellenfél által végrehajtott támadásnál dobd el ezt a lapot, hogy szerezz {RETALIATE.fh}2-t a támadás idejére” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} {STUN.fh} lapra",
+            "Adj hozzá egy {+1_WHITE} “{HEAL.fh}2, magadra” lapot",
+            "Adj hozzá egy {+2_WHITE} {PUSH.fh}2 lapot",
+            "Adj hozzá egy {+3_WHITE} lapot",
+            "Adj hozzá egy {AGAIN} {DISARM.fh} lapot és egy {AGAIN} {MUDDLE.fh} lapot",
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és adj hozzá két {+1_WHITE} lapot",
+            "Minden küldetésben egyszer, a köröd alatt végrehajthatod: {LOOT 1}; ha ez a képesség legalább egy pénzérmét zsákmányol, visszaszerezhetsz {RECOVER.fh} egy {BODY} felszerelést",
+            "Valahányszor hosszú pihenést tartasz, adj hozzá +1 {MOVE.fh}-t az első mozgás képességedhez a következő fordulóban",
+            "Minden karakter Előnyt kap az első támadására minden küldetés első fordulójában"
+        ]
+    },
+    "CH2": {
+        "name": "Szilánkszív",
+        "masteries": [
+            "Egy egész küldetés alatt minden fordulóban hozz létre, semmisíts meg vagy mozgass legalább egy akadály kártyát",
+            "Egyetlen küldetésben gyógyíts 8 vagy több életerőt egy fordulóban, okozz 8 vagy több sebzést távolsági támadás képességgel, és okozz 8 vagy több sebzést közelharci támadás képességgel"
+        ],
+        "perks": [
+            "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {AGAIN} {+1_WHITE} “Hozz létre egy 1 mezős akadály kártyát a célponttal szomszédos üres mezőn” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot két {+1_WHITE} {PUSH.fh}1 lapra",
+            "Adj hozzá egy {+2_WHITE} {IMMOBILIZE.fh} lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {AGAIN} {MUDDLE.fh} lapot",
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait",
+            "Minden küldetésben egyszer, a köröd alatt megsemmisíthetsz egy {RANGE.fh}5 távolságon belüli 1 mezős akadályt, hogy {TELEPORT.fh} a mezőre, amelyet elfoglalt",
+            "Minden pihenésed végén megsemmisíthetsz egy {RANGE.fh}3 távolságon belüli 1 mezős akadályt, hogy használd: {EARTH}",
+            "Valahányszor új helyiséget tárnak fel, irányítsd az újonnan feltárt helyiség összes ellenfelét: {MOVE.fh}1, ennek a mozgásnak üres mezőn kell végződnie"
+        ]
+    },
+    "MT2": {
+        "name": "Elmetolvaj",
+        "masteries": [
+            "Egyetlen küldetésben ölj meg 5 vagy több ellenfelet irányító képességekkel",
+            "Egyetlen küldetésben négy különböző Erősítés támadáskor kiváltódó hatását váltsd ki legalább 3-szor, mindegyikét"
+        ],
+        "perks": [
+            "Cserélj ki két {-1_WHITE} lapot egy {+0_WHITE} “A támadás képesség után irányítsd a célpontot: {MOVE.fh}1” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “Adj hozzá +1 {ATTACK.fh}-t a célpont minden negatív állapotáért” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} lapra",
+            "Adj hozzá két {+1_WHITE} {IMMOBILIZE.fh} lapot",
+            "Adj hozzá egy {+2_WHITE} {ICE} lapot",
+            "Adj hozzá egy {AGAIN} “{INVISIBLE.fh}, magadra” lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {AGAIN} {+1_WHITE} lapot",
+            "Valahányszor egy ellenfél támadását irányítod, az ellenfél a te támadás módosító paklidat használhatja",
+            "A szörnyek fókuszának meghatározásakor úgy tekintenek rád, mintha utolsó lennél a kezdeményezési sorrendben",
+            "Minden pihenésed végén elkölthetsz {ICE_X}/{DARK_X}-et, hogy irányíts egy {RANGE.fh}5 távolságon belüli ellenfelet: {ATTACK.fh}1"
+        ]
+    },
+    "SC2": {
+        "name": "Néma Tőr",
+        "masteries": [
+            "Egy egész küldetés alatt csak olyan ellenfeleket támadj, amelyek a te egyik csapattársaddal szomszédosak, vagy a saját csapattársaik egyikével sem szomszédosak, és hajts végre legalább 10 támadást",
+            "Fejezz be 3 küldetést 12 vagy több pénzérmével"
+        ],
+        "perks": [
+            "Vegyél ki egy {-2_WHITE} lapot",
+            "Vegyél ki két {-1_WHITE} lapot",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “Szerezz egy pénzérmét, ha ez a támadás szomszédos ellenfelet célzott” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} lapra",
+            "Cserélj ki egy {+1_WHITE} lapot egy {AGAIN} {+1_WHITE} “{INVISIBLE.fh}, magadra” lapra",
+            "Adj hozzá egy {+1_WHITE} {DISARM.fh} lapot",
+            "Minden pihenésed végén lehelyezhetsz egy pénzérmédet egy {RANGE.fh}3 távolságon belüli ellenfél mezőjére, hogy végrehajtsd: {ATTACK.fh}1, {TARGET.fh} az az ellenfél, {RANGE.fh}3",
+            "Valahányszor teljesítesz egy városi eseményt, húzz egy támadás módosító lapot, mintha {ATTACK.fh}4-et hajtanál végre. Szerezz annyi aranyat, amennyi {DAMAGE.fh}-t a támadás okozott volna",
+            "Minden küldetésben egyszer, a köröd alatt végrehajthatod: {INVISIBLE.fh}, magadra"
+        ]
+    },
+    "SW2": {
+        "name": "Mágiaszövő",
+        "masteries": [
+            "Egyetlen küldetésben 6-szor használd el a {FIRE}-t és a {ICE}-t is ugyanabban a körben",
+            "Egyetlen küldetésben 4 különböző {LOST.fh} akciót hajts végre kétszer-kétszer"
+        ],
+        "perks": [
+            "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {ANY} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “Adj hozzá +2 {ATTACK.fh}-t, ha {LOST.fh}-os akció közben húzod” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {CURSE.fh} lapra",
+            "Adj hozzá egy {+1_WHITE} {STUN.fh} lapot",
+            "Adj hozzá egy {+2_WHITE} {FIRE}/{ICE} lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és vegyél ki egy {+0_WHITE} lapot",
+            "Minden küldetésben egyszer, amikor {DAMAGE.fh}-t szenvednél el, szerezhetsz {INVISIBLE.fh}-t és {STUN.fh}-t, hogy semlegesítsd a {DAMAGE.fh}-t",
+            "Valahányszor rövid pihenést tartasz, ha a <i>éltető éter</i> az eldobott lapjaid között van, előbb szerezd vissza {RECOVER.fh}",
+            "Minden olyan köröd végén, amelyben {LOST.fh}-os akciót hajtottál végre, szerezz {BLESS.fh}-t"
+        ]
+    },
+    "TI2": {
+        "name": "Ezermester",
+        "masteries": [
+            "Egy egész küldetés alatt minden körödben adj egy ellenfélnek negatív állapotot, adj egy csapattársnak pozitív állapotot, gyógyíts egy csapattársat, vagy adj egy csapattársnak védelmet",
+            "Hajts végre 11 különböző {LOST.fh} akciót"
+        ],
+        "perks": [
+            "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 csapattárs” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {WOUND.fh} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {POISON.fh} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {IMMOBILIZE.fh} lapra",
+            "Adj hozzá egy {+2_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 csapattárs” lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 csapattárs” lapot",
+            "Minden küldetésben egyszer egy szomszédos csapattárs a saját körében használhatja egyik <i>főzet</i> {SMALL-ITEM} felszerelésedet anélkül, hogy az {LOST.fh} lenne",
+            "Valahányszor {LOST.fh}-os akciót hajtasz végre, használhatod: {ANY}",
+            "Valahányszor hosszú pihenést tartasz, végrehajthatod: {HEAL.fh}2, {RANGE.fh}3"
+        ]
+    },
+    "BE2": {
+        "name": "Berserker",
+        "masteries": [
+            "Ölj meg 20 ellenfelet a megtorlásoddal",
+            "Egyetlen küldetésben minden körödet úgy fejezd be, hogy az életerőd a maximum felén vagy az alatt van, de nem merülsz ki"
+        ],
+        "perks": [
+            "Vegyél ki egy {-2_WHITE} lapot",
+            "Cserélj ki egy {-1_WHITE} lapot egy {AGAIN} “{HEAL.fh}1, magadra” lapra",
+            "Cserélj ki két {+0_WHITE} lapot egy {+1_WHITE} “Elszenvedhetsz {DAMAGE.fh}2-t, hogy hozzáadj +2 {ATTACK.fh}-t” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot két {AGAIN} {WOUND.fh} lapra",
+            "Adj hozzá egy {+2_WHITE} {FIRE} lapot",
+            "Adj hozzá egy {AGAIN} {STUN.fh} lapot",
+            "Adj hozzá egy {2X_MODIFIER} “Szenvedj el {DAMAGE.fh}-t az aktuális életerőd felének megfelelően (lefelé kerekítve)” lapot",
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és adj hozzá egy {+1_WHITE} lapot",
+            "Valahányszor hosszú pihenésből gyógyulsz, adj hozzá +1 {HEAL.fh}-t",
+            "Minden küldetésben egyszer, amikor egy támadásból származó {DAMAGE.fh} az aktuális életerődet 1 alá csökkentené, az életerődet ehelyett állítsd 1-re, és hajtsd végre: {ATTACK.fh}2, {TARGET.fh} a támadó",
+            "Minden köröd végén irányíthatod az összes szomszédos ellenfelet: {ATTACK.fh} +0 {TARGET.fh} Berserker"
+        ]
+    },
+    "BS2": {
+        "name": "Pengeroj",
+        "masteries": [
+            "Hajts végre 6 különböző {PERSISTENT}{LOST.fh} képességet úgy, hogy a 6-ból legfeljebb 3 idézés képesség legyen",
+            "Szerezd meg ezt a mesterséget, amikor úgy érzed, megérdemled"
+        ],
+        "perks": [
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {WOUND.fh} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {POISON.fh} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {WIND}/{DARK} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {EARTH}/{LIGHT} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} “Adj hozzá +1 {ATTACK.fh}-t a Pengeroj aktív területén lévő minden {LOST.fh}-os lapért” lapra",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {+1_WHITE} lapot",
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és adj hozzá egy {+1_WHITE} lapot",
+            "Valahányszor hosszú pihenést tartasz, {TELEPORT.fh} egy idézett lényed mezőjére, és egyidejűleg {TELEPORT.fh} azt az idézett lényt arra a mezőre, amelyen te álltál",
+            "Minden küldetésben egyszer, amikor {LOST.fh}-os akciót hajtasz végre, azonnal kijátszhatsz egy lapot a kezedből, hogy végrehajtsd a lap {LOST.fh}-os akcióját",
+            "Minden küldetésre magaddal vihetsz még négy {ONE-HAND} felszerelést, két {TWO-HANDS} felszerelést, vagy két {ONE-HAND} és egy {TWO-HANDS} felszerelést."
+        ]
+    },
+    "DS2": {
+        "name": "Végzetvadász",
+        "masteries": [
+            "Ölj meg 20 olyan ellenfelet, amelynek {DOOM}-ja van",
+            "Egyetlen fordulóban te és egyik idézett lényed együttesen legalább 6 támadás képességet hajtsatok végre"
+        ],
+        "perks": [
+            "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {-1_WHITE} “A Végzetvadász végrehajtja: {ATTACK.fh}2, {RANGE.fh}5” lapra",
+            "Cserélj ki két {+0_WHITE} lapot két {+1_WHITE} lapra",
+            "Adj hozzá egy {+0_WHITE} “Adj a célponttal szomszédos egyik idézett lényednek: {ATTACK.fh}+0” lapot",
+            "Adj hozzá egy {+3_WHITE} lapot",
+            "Adj hozzá egy {AGAIN} {STUN.fh} lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {AGAIN} {+1_WHITE} lapot",
+            "Minden küldetés elején fordítsd fel a küldetésben lévő minden szörny képességkártya-pakli legfelső lapját",
+            "Valahányszor pihensz, miután visszaszerezted {RECOVER.fh} a lapjaidat az eldobott lapok közül, kijátszhatsz egy lapot a kezedből, hogy végrehajtsd a lap {DOOM} akcióját",
+            "Az idézett lényeid minden körében kihagyathatod velük a körüket, és helyette végrehajtathatod velük: {MOVE.fh}+0, úgy, hogy téged tekintenek fókuszuknak"
+        ]
+    },
+    "EL2": {
+        "name": "Elementalista",
+        "masteries": [
+            "Egyetlen küldetésben 5 alkalommal használj el 4 vagy több elemi erőt egyetlen körben",
+            "3 különböző küldetésben egyszer-egyszer legyen mind a 6 elemi erő egyszerre erős vagy halványuló"
+        ],
+        "perks": [
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {FIRE}/{WIND} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {FIRE}/{EARTH} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {ICE}/{WIND} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {ICE}/{EARTH} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {FIRE}/{ICE} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {WIND}/{EARTH} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {LIGHT}/{DARK} lapra",
+            "Adj hozzá két {AGAIN} {ANY} lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {AGAIN} {ANY} lapot",
+            "Minden küldetés elején használhatod: {ANY}",
+            "Valahányszor hosszú pihenést tartasz, {ANY_X}: {ANY}",
+            "A {FIRE}, {ICE}, {WIND} és {EARTH} nem halványul el a forduló végén"
+        ]
+    },
+    "NS2": {
+        "name": "Éjtakaró",
+        "masteries": [
+            "Egyetlen küldetésben minden körödben hozz létre vagy használj el {DARK}-ot",
+            "Egyetlen küldetésben 5 egymást követő fordulóban hajts végre támadás képességet a köröd alatt"
+        ],
+        "perks": [
+            "Vegyél ki egy {-2_WHITE} lapot",
+            "Vegyél ki két {-1_WHITE} lapot",
+            "Cserélj ki egy {-1_WHITE} lapot két {AGAIN} “A támadás képesség után adj egy szomszédos csapattársnak vagy magadnak: {TELEPORT.fh}2” lapra",
+            "Cserélj ki egy {NULL_MODIFIER} lapot egy {-2_WHITE} lapra",
+            "Cserélj ki két {+0_WHITE} lapot két {+1_WHITE} “Ha ez a támadás megöli a célpontot, keverj egy {CURSE.fh} lapot a szörnyek támadás módosító paklijába” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} {DARK} lapra",
+            "Cserélj ki egy {+1_WHITE} lapot egy {+0_WHITE} “Helyezz le egy szakadást a célponttal szomszédos mezőre” lapra",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá két {+1_WHITE} lapot",
+            "Valahányszor hosszú pihenést tartasz, használhatod: {DARK}",
+            "Minden küldetésben egyszer, a köröd alatt helyezz le egy szakadást egy szomszédos mezőre",
+            "Ha egy {CURSE.fh} miatt egy ellenfél nem okoz {DAMAGE.fh}-t a támadása során, az az ellenfél elszenved {DAMAGE.fh}3-at"
+        ]
+    },
+    "PH2": {
+        "name": "Járványhírnök",
+        "masteries": [
+            "Egyetlen körben ölj meg 3 vagy több ellenfelet támadás módosító lap húzása nélkül",
+            "Egyetlen küldetésben minden fordulóban vagy adj {POISON.fh}-t egy csapattársnak vagy ellenfélnek, vagy vedd le róla"
+        ],
+        "perks": [
+            "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “Add a célpontnak vagy a célponttól {RANGE.fh}2 távolságon belüli egy ellenfélnek a járványt” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {CURSE.fh} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {IMMOBILIZE.fh} lapra",
+            "Cserélj ki két {+1_WHITE} lapot két {+2_WHITE} lapra",
+            "Adj hozzá egy {+1_WHITE} {STUN.fh} lapot",
+            "Adj hozzá három {AGAIN} “Add a célpontnak vagy a célponttól {RANGE.fh}2 távolságon belüli egy ellenfélnek: {POISON.fh}” lapot",
+            "Adj hozzá két {AGAIN} “{HEAL.fh}1, {TARGET.fh}1 csapattárs” lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {+1_WHITE} lapot",
+            "Neked {FLYING.fh}-d van",
+            "Valahányszor hosszú pihenésből gyógyulsz, levehetsz {POISON.fh}-t egy csapattársról, hogy hozzáadj +1 {HEAL.fh}-t",
+            "Minden küldetésben egyszer, amikor egy járványos ellenfél meghalna, előbb irányítsd azt az ellenfelet, és hajtasd végre vele a képességkártyáján lévő képességeket úgy, hogy minden támadásához hozzáadod a járványt, majd az ellenfél meghal"
+        ]
+    },
+    "QM2": {
+        "name": "Intendáns",
+        "masteries": [
+            "Egyetlen küldetésben 3 alkalommal költs el 50 készletet, hogy 50 arany értékű elveszett felszerelést újítsál fel",
+            "Egy egész küldetés alatt minden fordulóban, kivéve ha hosszú pihenést tartasz, adj magadnak vagy egy csapattársnak egy felszerelést az Intendáns felszerelés-készletéből"
+        ],
+        "perks": [
+            "Cserélj ki két {-1_WHITE} lapot egy {+0_WHITE} {MUDDLE.fh} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} “Szerezz 10 készletet” lapra",
+            "Cserélj ki két {+0_WHITE} lapot két {AGAIN} {PIERCE.fh}3 lapra",
+            "Cserélj ki egy {+1_WHITE} lapot két {+0_WHITE} “Szerezd meg a <i>Tüskés szalag</i> vagy a <i>Vaslemez</i> felszerelést” lapra",
+            "Cserélj ki két {+1_WHITE} lapot két {+2_WHITE} lapra",
+            "Adj hozzá egy {AGAIN} “Szerezd meg az <i>Áthelyezés tekercse</i> vagy az <i>Élezett tőr</i> felszerelést” lapot",
+            "Adj hozzá egy {AGAIN} {STUN.fh} lapot",
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és vegyél ki egy {+0_WHITE} lapot",
+            "Minden küldetésre magaddal vihetsz még egy {SMALL-ITEM} felszerelést",
+            "A csapatotok úgy vásárolhat felszereléseket az egyes frakcióktól, mintha a felszerelések ára öt arannyal kevesebb lenne, és a frakcióval való hírneved kettővel nagyobb lenne",
+            "Valahányszor hosszú pihenést tartasz, szerezz 10 készletet"
+        ]
+    },
+    "SB2": {
+        "name": "Csontkovács",
+        "masteries": [
+            "Egyetlen küldetésben minden fordulóban, kivéve ha hosszú pihenést tartasz, adj egy csapattársnak egy gyógycsomagot vagy receptet",
+            "Egyetlen küldetésben soha ne támadj sértetlen ellenfelet, amíg sérült szörnyek élnek, és hajts végre legalább 10 támadást"
+        ],
+        "perks": [
+            "Vegyél ki két {-1_WHITE} lapot",
+            "Cserélj ki egy {-2_WHITE} lapot egy {-2_WHITE} “Adj egy szomszédos csapattársnak vagy magadnak egy gyógycsomagot” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
+            "Cserélj ki két {+0_WHITE} lapot egy {+1_WHITE} “Szerezhetsz {DISARM.fh}-t, hogy hozzáadj {STUN.fh}-t” lapra",
+            "Adj hozzá két {+1_WHITE} “Adj hozzá +1 {ATTACK.fh}-t, ha egy csapattársnak aktív receptje van” lapot",
+            "Adj hozzá egy {AGAIN} “{HEAL.fh}3, {RANGE.fh}1” lapot",
+            "Adj hozzá +1 {HEAL.fh}-t az összes „Gyógycsomag” képességkártyán lévő gyógyítás képességhez",
+            "Minden városi szakaszban egy küldetés teljesítése után a te vagy egy csapattársad adománya a Nagy Tölgy szentélyének ingyenes",
+            "Minden pihenésed végén, ha egy csapattársnak aktív receptje van, szerezz egy „Gyógycsomag” képességkártyát, és mozgasd egy csapattárs aktív receptjén a tokent egy hellyel hátra"
+        ]
+    },
+    "SK2": {
+        "name": "Napőr",
+        "masteries": [
+            "Egyetlen küldetésben minden körödben hozz létre vagy használj el {LIGHT}-ot",
+            "Egyetlen küldetésben legalább 3 alkalommal okozz 8 vagy több {DAMAGE.fh}-t egy támadással"
+        ],
+        "perks": [
+            "Cserélj ki egy {-1_WHITE} lapot két {+0_WHITE} {LIGHT} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {AGAIN} {+1_WHITE} {SHIELD.fh}1 lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} lapra",
+            "Adj hozzá két {+1_WHITE} “{HEAL.fh}1, {RANGE.fh}3” lapot",
+            "Adj hozzá egy {-1_WHITE} “Te vagy egy szomszédos csapattárs visszaszerezhet {RECOVER.fh} egy 1. szintű lapot az eldobott lapok közül” lapot",
+            "Adj hozzá egy {AGAIN} {STUN.fh} lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {+1_WHITE} lapot",
+            "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és vegyél ki egy {-1_WHITE} lapot",
+            "Valahányszor a köröd alatt egy vagy több ajtót nyitsz, szerezz {SHIELD.fh}1, {RETALIATE.fh}1-et a fordulóra",
+            "Valahányszor hosszú pihenést tartasz, használhatod: {LIGHT}",
+            "Valahányszor valamelyik gyógyításod miatt egy csapattárs életereje a maximum fölé emelkedne, az a csapattárs szerez {WARD.fh}-t"
+        ]
+    },
+    "SS2": {
+        "name": "Jósdalnok",
+        "masteries": [
+            "Egyetlen küldetésben hajts végre 7 különböző {SONG} akciót",
+            "Egyetlen küldetésben hozz létre 20 vagy több Hangjegyet, és használd fel mindegyiket egy {SONG}-ban"
+        ],
+        "perks": [
+            "Cserélj ki egy {-2_WHITE} lapot egy {-2_WHITE} “{BLESS.fh}, {TARGET.fh}2” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “Hagyd ki a karaktertokenjeid mozgatását az aktív {SONG}-okon a forduló végén” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {STUN.fh} lapra",
+            "Cserélj ki két {+0_WHITE} lapot egy {+1_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 csapattárs” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot és egy {+1_WHITE} lapot két {+2_WHITE} lapra",
+            "Adj hozzá egy {AGAIN} “Adj egy csapattársnak: {MOVE.fh}2 vagy {ATTACK.fh}2” lapot",
+            "Adj hozzá három {AGAIN} {CURSE.fh} lapot",
+            "Minden küldetés végén a küldetésben részt vevő minden karakter 8 TP-t szerez, ha teljesítetted a csatacélodat",
+            "Valahányszor {SONG}-ot hajtasz végre, ha van fel nem használt Hangjegyed, szerezz egy tetszőleges Hangjegyet az adott fordulóban szerzett bármely más Hangjegy mellett",
+            "A kezdeményezés meghatározásakor azokban a fordulókban, amelyekben hosszú pihenést jelentesz be, szerezz egy tetszőleges Hangjegyet, és minden csapattársad csökkentheti a kezdeményezését 10-zel"
+        ]
+    },
+    "ST2": {
+        "name": "Lélekláncoló",
+        "masteries": [
+            "Hajts végre 3 különböző idézés akciót az első pihenésed előtt, és tartsd ezeket a lapokat az aktív területeden az egész küldetés alatt",
+            "Hajts végre 6 különböző idézés képességet a képességkártyáidról 6 küldetés első fordulóiban"
+        ],
+        "perks": [
+            "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “A támadás képesség után adj egyik idézett lényednek: {TELEPORT.fh}2” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} “{INVISIBLE.fh}, {TARGET.fh}1 idézett lényed” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot két {AGAIN} {WOUND.fh} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot két {AGAIN} {POISON.fh} lapra",
+            "Cserélj ki két {+1_WHITE} lapot két {+1_WHITE} {CURSE.fh} lapra",
+            "Adj hozzá egy {+2_WHITE} {FIRE}/{WIND} lapot",
+            "Adj hozzá egy {+2_WHITE} {FIRE}/{DARK} lapot",
+            "Adj hozzá egy {+2_WHITE} {WIND}/{DARK} lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá két {+1_WHITE} lapot",
+            "Minden olyan forduló elején, amelyben hosszú pihenést tartasz, az összes idézett lényed szerez {SHIELD.fh}1-et a fordulóra",
+            "Minden küldetésben egyszer, a köröd alatt {TELEPORT.fh} egyik idézett lényedet egy veled szomszédos üres mezőre",
+            "Minden küldetésben egyszer, a kezdeményezés meghatározásakor, miután az összes képességkártyát felfordították, az összes idézett lényed szerez {INVISIBLE.fh}-t"
+        ]
+    },
+    "WF2": {
+        "name": "Vadharag",
+        "masteries": [
+            "Egyetlen küldetésben minden körödben hozz létre vagy használj el {WIND}-et vagy {EARTH}-ot",
+            "Egyetlen küldetésben ölj meg 4 vagy több ellenfelet 7 vagy nagyobb értékű {COMMAND} támadással (minden bónusz után, a támadás módosítók előtt)"
+        ],
+        "perks": [
+            "Cserélj ki egy {-1_WHITE} lapot egy {AGAIN} “{HEAL.fh}2, {TARGET.fh} Medve” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {WOUND.fh} lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} “Adj hozzá +1 {ATTACK.fh}-t, ha a Vadharag és a Medve egymástól {RANGE.fh}4 távolságon belül van” lapra",
+            "Cserélj ki egy {+2_WHITE} lapot egy {+4_WHITE} lapra",
+            "Adj hozzá két {+1_WHITE} {WIND}/{EARTH} lapot",
+            "Adj hozzá egy {+2_WHITE} {PUSH.fh}2 lapot",
+            "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {+1_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 csapattárs” lapot",
+            "Valahányszor a Medvét támadják, az ellenfél által húzott {2X_MODIFIER} támadás módosító lapot kezeld úgy, mintha {+0_MODIFIER} lenne",
+            "Minden küldetésben egyszer, a köröd alatt {COMMAND}: {MOVE.fh}4. Ha a Medve e mozgás során elhagy egy veled szomszédos mezőt, a mozgás végén {TELEPORT.fh} egy Medvével szomszédos üres mezőre",
+            "Minden hosszú pihenésed elején vagy végén használhatod: {WIND}/{EARTH}, és csökkentsd az aktuális életerődet X-szel (X legalább 1), hogy {COMMAND}: {HEAL.fh}X, magadra"
         ]
     }
 }

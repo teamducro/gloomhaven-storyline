@@ -4,11 +4,14 @@ import scenarios from "./scenarios"
 import achievements from "./achievements"
 import items from "./items"
 import treasures from "./treasures"
+import monsters from "./monsters"
 import personal_quests from "./personal_quests"
 import characters from "./characters"
 import prompts from "./prompts"
-import abilities from "./abilities";
-import campaign_sheet from "./campaign_sheet";
+import abilities from "./abilities"
+import buildings from "./buildings"
+import overlays from "./overlays"
+import campaign_sheet from "./campaign_sheet"
 
 export default {
     ...general,
@@ -25,6 +28,9 @@ export default {
     "treasures": {
         ...treasures
     },
+    "monsters": {
+        ...monsters
+    },
     "personal_quests": {
         ...personal_quests
     },
@@ -36,6 +42,12 @@ export default {
     },
     "abilities": {
         ...abilities
+    },
+    "buildings": {
+        ...buildings
+    },
+    "overlays": {
+        ...overlays
     },
     "campaign_sheet": {
         ...campaign_sheet

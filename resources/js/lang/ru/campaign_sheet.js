@@ -1,15 +1,15 @@
 export default {
     "fh": {
         "town_guard_perks": [
-            "Replace one {-10_WHITE} card with one {+30_WHITE} card and one {-20_WHITE} “Gain any one material resource” card.",
-            "Replace two {+10_WHITE} cards with two {+30_WHITE} cards and one {-20_WHITE} “Gain any two material resources” card.",
-            "Replace one {-10_WHITE} card with one {+10_WHITE} card.",
-            "Replace two {+0_WHITE} cards with one {+10_WHITE} card.",
-            "Replace two {+10_WHITE} cards with two {AGAIN}{+10_WHITE} “Gain Advantage on this target” cards.",
-            "Add one {+30_WHITE} card.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Hide” cards.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Lumber” cards.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Metal” cards."
+            "Замените 1 карту {-10_WHITE} на 1 карту {+30_WHITE} и 1 карту {-20_WHITE} «Получите 1 любой материальный ресурс».",
+            "Замените 2 карты {+10_WHITE} на 2 карты {+30_WHITE} и 1 карту {-20_WHITE} «Получите 2 любых материальных ресурса».",
+            "Замените 1 карту {-10_WHITE} на 1 карту {+10_WHITE}.",
+            "Замените 2 карты {+0_WHITE} на 1 карту {+10_WHITE}.",
+            "Замените 2 карты {+10_WHITE} на 2 карты {AGAIN}{+10_WHITE} «Получите преимущество против этой цели».",
+            "Добавьте 1 карту {+30_WHITE}.",
+            "Добавьте 2 карты {AGAIN}{+0_WHITE} «Получите 1 шкуру».",
+            "Добавьте 2 карты {AGAIN}{+0_WHITE} «Получите 1 древесину».",
+            "Добавьте 2 карты {AGAIN}{+0_WHITE} «Получите 1 металл»."
         ]
     }
 }
