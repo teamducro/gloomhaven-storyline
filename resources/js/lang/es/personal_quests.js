@@ -1,7 +1,6 @@
 export default {
     "gh-510": {
         "name": "Buscador de Xorn",
-        "unlock": "Abre la caja {PH}",
         "progress": [
             "Completa 3 escenarios que tengan en su nombre la palabra “Cripta”.",
             "Después, desbloquea {SCENARIO 52} y sigue la cadena de aventuras hasta terminarla."
@@ -9,10 +8,9 @@ export default {
     },
     "gh-511": {
         "name": "Clase comerciante",
-        "unlock": "Abre la caja {QM}",
         "progress": [
+            "Ten en propiedad: 2 objetos {BODY}",
             "Ten en propiedad: 2 objetos {HEAD}",
-            "2 objetos {BODY}",
             "2 objetos {LEGS}",
             "3 objetos {ONE-HAND} o {TWO-HANDS}",
             "y 4 objetos {SMALL-ITEM}."
@@ -20,7 +18,6 @@ export default {
     },
     "gh-512": {
         "name": "La codicia es buena",
-        "unlock": "Abre la caja {QM}",
         "progress": [
             "Acumula 200 de oro."
         ]
@@ -35,49 +32,42 @@ export default {
     },
     "gh-514": {
         "name": "Estudios de anatomía",
-        "unlock": "Abre la caja {SB}",
         "progress": [
             "Sé testigo de 15 agotamientos de miembros de tu equipo."
         ]
     },
     "gh-515": {
         "name": "Defensor de la ley",
-        "unlock": "Abre la caja {SK}",
         "progress": [
             "Mata a 20 Bandidos o Sectarios. "
         ]
     },
     "gh-516": {
         "name": "Tributo de sangre",
-        "unlock": "Abre la caja {BE}",
         "progress": [
             "Mata a 15 Infectores."
         ]
     },
     "gh-517": {
         "name": "Trofeo de caza",
-        "unlock": "Abre la caja {BT}",
         "progress": [
             "Mata a 20 tipos de monstruos distintos."
         ]
     },
     "gh-518": {
         "name": "Eterno viajero",
-        "unlock": "Abre la caja {SU}",
         "progress": [
             "Completa 15 escenarios distintos."
         ]
     },
     "gh-519": {
         "name": "Leyenda de las batallas",
-        "unlock": "Abre la caja {SS}",
         "progress": [
             "Obtén 15 ✔ por objetivos de batalla completados."
         ]
     },
     "gh-520": {
         "name": "Instrumento de la luz",
-        "unlock": "Abre la caja {SK}",
         "progress": [
             "Encuentra el Hacha Rompecráneos en el Santuario de la Nigromante.",
             "Úsala para matar 7 Huesos Vivientes, Cadáveres Vivientes o Espíritus Vivientes."
@@ -85,7 +75,6 @@ export default {
     },
     "gh-521": {
         "name": "Recupera los árboles",
-        "unlock": "Abre la caja {DS}",
         "progress": [
             "Completa 3 escenarios en el Bosque de la Dagas.",
             "Después, desbloquea {SCENARIO 55} y sigue la cadena de aventuras hasta terminarla."
@@ -93,15 +82,12 @@ export default {
     },
     "gh-522": {
         "name": "Lugares enrarecidos",
-        "unlock": "Abre la caja {NS}",
         "progress": [
-            "Completa 6 escenarios secundarios",
-            "(aquellos con un números superior a 51)."
+            "Completa 6 escenarios secundarios"
         ]
     },
     "gh-523": {
         "name": "Cazador de aberraciones",
-        "unlock": "Abre la caja {EL}",
         "progress": [
             "Mata a: 1 Demonio de Fuego",
             "1 Demonio de Hielo",
@@ -113,14 +99,12 @@ export default {
     },
     "gh-524": {
         "name": "Actitud intrépida",
-        "unlock": "Abre la caja {BT}",
         "progress": [
             "Mata a 20 monstruos de élite."
         ]
     },
     "gh-525": {
         "name": "Devoción por todas las cosas",
-        "unlock": "Abre la caja {SB}",
         "progress": [
             "Dona 120 de oro al Santuario del Gran Roble."
         ]
@@ -135,21 +119,18 @@ export default {
     },
     "gh-527": {
         "name": "Fanático del dios de la sangre",
-        "unlock": "Abre la caja {BE}",
         "progress": [
             "Que tu personaje quede agotado 12 veces."
         ]
     },
     "gh-528": {
         "name": "Vencedor de Goliat",
-        "unlock": "Abre la caja {DS}",
         "progress": [
             "Completa 4 escenarios con jefes."
         ]
     },
     "gh-529": {
         "name": "La caída del hombre",
-        "unlock": "Abre la caja {NS}",
         "progress": [
             "Completa 2 escenarios en el Pantano Perenne.",
             "A continuación, desbloquea {SCENARIO 61} y sigue la cadena de aventuras hasta terminarla."
@@ -157,15 +138,12 @@ export default {
     },
     "gh-530": {
         "name": "Capacidades aumentadas",
-        "unlock": "Abre la caja {SU}",
         "progress": [
-            "Adquiere 4 mejoras",
-            "(Requiere el logro global “El poder de la mejora”)."
+            "Adquiere 4 mejoras"
         ]
     },
     "gh-531": {
         "name": "Muestras elementales",
-        "unlock": "Abre la caja {EL}",
         "progress": [
             "Completa 1 escenario en cada una de las siguientes zonas: Gloomhaven",
             "Bosque de las Dagas",
@@ -177,14 +155,12 @@ export default {
     },
     "gh-532": {
         "name": "Una mano amiga",
-        "unlock": "Abre la caja {SS}",
         "progress": [
             "Sé testigo de cómo otros 2 personajes cumplen sus misiones personales."
         ]
     },
     "gh-533": {
         "name": "El veneno perfecto",
-        "unlock": "Abre la caja {PH}",
         "progress": [
             "Mata a: 3 Cienos",
             "3 Acechadores",
@@ -192,427 +168,634 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "Protect and Serve",
+        "name": "Proteger y servir",
         "progress": [
-            "Kill ten Inox.",
-            "Conclude {SCENARIO 33}."
+            "Mata a diez Inox.",
+            "Concluye {SCENARIO 33}."
         ]
     },
     "cs-331": {
-        "name": "Weapons Specialist",
+        "name": "Especialista en armas",
         "progress": [
-            "Consume fifteen {ONE-HAND} or {TWO-HANDS} items"
+            "Consume quince objetos de {ONE-HAND} o {TWO-HANDS}."
         ]
     },
     "cs-332": {
-        "name": "Experimentation",
+        "name": "Experimentación",
         "progress": [
-            "Play 30 cards for their lost {LOST} action."
+            "Juega 30 cartas por su acción de pérdida {LOST}."
         ]
     },
     "cs-333": {
-        "name": "Thrill Seeker",
+        "name": "Buscador de emociones",
         "progress": [
-            "Reveal a room tile by opening a door twenty times."
+            "Revela una pieza de mapa al abrir una puerta veinte veces."
         ]
     },
     "cs-334": {
-        "name": "Trap Setter",
+        "name": "Colocador de trampas",
         "progress": [
-            "Disarm or cause an enemy to sprint a trap during your turn fifteen times."
+            "Desarma una trampa o haz que un enemigo la active durante tu turno quince veces."
         ]
     },
     "cs-335": {
-        "name": "Bandit Banisher",
+        "name": "Azote de bandidos",
         "progress": [
-            "Kill ten Guards or Archers.",
-            "Conclude {SCENARIO 35}."
+            "Mata a diez Guardias o Arqueros.",
+            "Concluye {SCENARIO 35}."
         ]
     },
     "cs-336": {
-        "name": "Creatures in the light",
+        "name": "Criaturas en la luz",
         "progress": [
-            "Kill twenty Oozes, Forest Imps, or Black Imps."
+            "Mata a veinte Cienos, Duendes del bosque o Duendes negros."
         ]
     },
     "cs-337": {
-        "name": "Experienced leader",
+        "name": "Líder experimentado",
         "progress": [
-            "Complete twelve scenarios with at least 12 experience points."
+            "Completa doce escenarios con al menos 12 puntos de experiencia."
         ]
     },
     "cs-338": {
-        "name": "Adrenaline Spike",
+        "name": "Subidón de adrenalina",
         "progress": [
-            "Kill an enemy and loots its money token in the same round fifteen times."
+            "Mata a un enemigo y saquea su ficha de dinero en la misma ronda quince veces."
         ]
     },
     "cs-339": {
-        "name": "Mutual Support",
+        "name": "Apoyo mutuo",
         "progress": [
-            "Kill 30 enemies adjacent to any of your allies."
+            "Mata a 30 enemigos adyacentes a cualquiera de tus aliados."
         ]
     },
     "cs-340": {
-        "name": "Thy be Blessed",
+        "name": "Que seas bendecido",
         "progress": [
-            "Draw a {BLESS} card twelve times during an attack."
+            "Roba una carta de BENDICIÓN {BLESS} doce veces durante un ataque."
         ]
     },
     "cs-341": {
-        "name": "Spiritual Cains",
+        "name": "Caínes espirituales",
         "progress": [
-            "Spend 200 gold on enhancements."
+            "Gasta 200 de oro en mejoras."
         ]
     },
     "cs-342": {
-        "name": "The Path of Agony",
+        "name": "El camino de la agonía",
         "progress": [
-            "Experience an ally or enemy dying or becoming exhausted during its own turn 13 times."
+            "Presencia 13 veces cómo un aliado o un enemigo muere o se agota durante su propio turno."
         ]
     },
     "cs-343": {
-        "name": "Cruel Dominion",
+        "name": "Dominio cruel",
         "progress": [
-            "Complete 10 scenarios during which you kill an enemy who has a negative condition."
+            "Completa 10 escenarios en los que mates a un enemigo que tenga una condición negativa."
         ]
     },
     "cs-344": {
-        "name": "Natural Selection",
+        "name": "Selección natural",
         "progress": [
-            "Generate {FIRE} twice.",
-            "Generate {ICE} twice.",
-            "Generate {LIGHT} twice.",
-            "Generate {DARK} twice.",
-            "Conclude {SCENARIO 37}."
+            "Genera FUEGO {FIRE} dos veces.",
+            "Genera HIELO {ICE} dos veces.",
+            "Genera LUZ {LIGHT} dos veces.",
+            "Genera OSCURIDAD {DARK} dos veces.",
+            "Concluye {SCENARIO 37}."
         ]
     },
     "cs-345": {
-        "name": "Predator and Prey",
+        "name": "Depredador y presa",
         "progress": [
-            "Kill two or more enemies in the same turn fifteen times."
+            "Mata a dos o más enemigos en el mismo turno quince veces."
         ]
     },
     "cs-346": {
-        "name": "An Adder Divides",
+        "name": "Una víbora se divide",
         "progress": [
-            "Occupy difficult terrain in 6 different scenarios.",
-            "Conclude {SCENARIO 39}."
+            "Ocupa terreno difícil en 6 escenarios distintos.",
+            "Concluye {SCENARIO 39}."
         ]
     },
     "cs-347": {
-        "name": "Field Research",
+        "name": "Investigación de campo",
         "progress": [
-            "Poison {POISON} twenty different types of monsters."
+            "Envenena {POISON} a veinte tipos de monstruos distintos."
         ]
     },
     "cs-348": {
-        "name": "Conjurers Hand",
+        "name": "La mano del conjurador",
         "progress": [
-            "Kill ten summoned monsters."
+            "Mata a diez monstruos invocados."
         ]
     },
     "cs-349": {
-        "name": "No Rest for the Wicked",
+        "name": "No hay descanso para los malvados",
         "progress": [
-            "Complete ten scenarios without long resting."
+            "Completa diez escenarios sin realizar ningún descanso largo."
         ]
     },
     "cs-350": {
-        "name": "Health First",
+        "name": "La salud, primero",
         "progress": [
-            "Complete seven scenarios ending at full health."
+            "Completa siete escenarios terminando con todos tus puntos de vida."
         ]
     },
     "cs-351": {
-        "name": "Limitless Searching",
+        "name": "Búsqueda sin límites",
         "progress": [
-            "Loot 30 money tokens."
+            "Saquea 30 fichas de dinero."
         ]
     },
     "cs-aa-001": {
-        "name": "At All Costs",
+        "name": "A toda costa",
         "progress": [
-            "Experience 8 scenarios where you negate damage by losing a card as normal while adjacent to an ally.",
-            "Conclude {SCENARIO AA1}."
+            "Presencia 8 escenarios en los que anules daño perdiendo una carta de la forma habitual mientras estás adyacente a un aliado.",
+            "Concluye {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
-        "name": "The Weight of failure",
+        "name": "El peso del fracaso",
         "progress": [
-            "Complete 8 scenarios without exhausting and with 2 or less HP.",
-            "Conclude {SCENARIO AA2}"
+            "Completa 8 escenarios sin agotarte y con 2 PV o menos.",
+            "Concluye {SCENARIO AA2}"
         ]
     },
     "cs-qa-001": {
-        "name": "Ingenious Inventor",
+        "name": "Inventor ingenioso",
         "progress": [
-            "Immediately gain “Power Modulator” (Item QA-01)",
-            "Kill 12 enemies with “Power Modulator” (Item QA-01)",
-            "Conclude {SCENARIO QA1}"
+            "Obtén de inmediato “Modulador de energía” (Objeto QA-01)",
+            "Mata a 12 enemigos con “Modulador de energía” (Objeto QA-01)",
+            "Concluye {SCENARIO QA1}"
         ]
     },
     "cs-qa-002": {
-        "name": "Scrap Diver",
+        "name": "Buceador de chatarra",
         "progress": [
-            "Loot two or more money tokens with a single action eight times.",
-            "Loot two treasure tiles.",
-            "Conclude {SCENARIO QA2}."
+            "Saquea dos o más fichas de dinero con una sola acción ocho veces.",
+            "Saquea dos fichas de tesoro.",
+            "Concluye {SCENARIO QA2}."
         ]
     },
     "cs-rm-001": {
-        "name": "Brutal Enforcer",
+        "name": "Verdugo brutal",
         "progress": [
-            "Gain “Serrated Edge” design (Item RM-01).",
-            "Apply {WOUND} or {RUPTURE} to thirty enemies.",
-            "Conclude {SCENARIO RM1}."
+            "Obtén el diseño “Filo dentado” (Objeto RM-01).",
+            "Aplica HERIDA {WOUND} o RUPTURA {RUPTURE} a treinta enemigos.",
+            "Concluye {SCENARIO RM1}."
         ]
     },
     "cs-rm-002": {
-        "name": "Apex Predator",
+        "name": "Depredador supremo",
         "progress": [
-            "Experience twenty rounds where, during or after your perform an action with a {CONSUMED}, an enemy dies.",
-            "Conclude {SCENARIO RM3}."
+            "Presencia veinte rondas en las que, durante o después de realizar una acción con {CONSUMED}, muera un enemigo.",
+            "Concluye {SCENARIO RM3}."
         ]
     },
     "fh-1": {
-        "name": "The Study of Plants",
+        "name": "El estudio de las plantas",
         "building_unlocks": [
             24,
             42
         ],
         "progress": [
-            "Personally collect five different types of herbs through loot tokens."
+            "Reúne personalmente cinco tipos distintos de hierbas mediante fichas de botín."
         ]
     },
     "fh-2": {
-        "name": "Searching for the Oak",
+        "name": "En busca del Roble",
         "building_unlocks": [
             24,
             42
         ],
         "progress": [
-            "Personally loot eight total lumber cards through loot tokens.",
-            "Unlock {SCENARIO 69} and follow it to a conclusion."
+            "Saquea personalmente ocho cartas de madera en total mediante fichas de botín.",
+            "Desbloquea {SCENARIO 69} y sigue su cadena hasta la conclusión."
         ]
     },
     "fh-3": {
-        "name": "Merchant Class",
+        "name": "Clase comerciante",
         "building_unlocks": [
             37,
             74
         ],
         "progress": [
-            "Own 3 {HEAD} items.",
-            "Own 3 {BODY} items.",
-            "Own 3 {LEGS} items.",
-            "Own 3 {ONE-HAND} and/or {TWO-HANDS} items.",
-            "Own 4 {SMALL-ITEM} items."
+            "Posee 3 objetos de {HEAD}.",
+            "Posee 3 objetos de {BODY}.",
+            "Posee 3 objetos de {LEGS}.",
+            "Posee 3 objetos de {ONE-HAND} y/o {TWO-HANDS}.",
+            "Posee 4 objetos {SMALL-ITEM}."
         ]
     },
     "fh-4": {
-        "name": "Greed is Good",
+        "name": "¿Qué hay de malo en ahorrar?",
         "building_unlocks": [
             37,
             74
         ],
         "progress": [
-            "Have 80+20xL gold in your possession, where L is the prosperity level."
+            "Ten en tu poder 80+20xN de oro, donde N es el nivel de prosperidad."
         ]
     },
     "fh-5": {
-        "name": "Build, not Destroy",
+        "name": "Construir, no destruir",
         "building_unlocks": [
             85,
             21
         ],
         "progress": [
-            "Experience the construction of twelve different buildings or building upgrades."
+            "Presencia la construcción de doce edificios o mejoras de edificios distintos."
         ]
     },
     "fh-6": {
-        "name": "Team Building",
+        "name": "Animal social",
         "building_unlocks": [
             85,
             21
         ],
         "progress": [
-            "During eight different outpost phases, read a person's name in an event or section."
+            "Durante ocho fases de puesto distintas, lee el nombre de una persona en un evento o sección."
         ]
     },
     "fh-7": {
-        "name": "Aesther Outpost",
+        "name": "Puesto fronterizo etérido",
         "building_unlocks": [
             44,
             88
         ],
         "progress": [
-            "Immediately unlock {SCENARIO 65}.",
-            "Follow {SCENARIO 65} to a conclusion."
+            "Desbloquea de inmediato {SCENARIO 65}.",
+            "Sigue {SCENARIO 65} hasta la conclusión."
         ]
     },
     "fh-8": {
-        "name": "Dangerous Game",
+        "name": "Juego peligroso",
         "building_unlocks": [
             44,
             88
         ],
         "progress": [
-            "Kill two Algox Guards.",
-            "Kill two Lurker Clawcrushers.",
-            "Kill two Robotic Boltshooters."
+            "Mata a dos Guardias algox.",
+            "Mata a dos Trituradores acechadores.",
+            "Mata a dos Lanzarrayos robóticos."
         ]
     },
     "fh-9": {
-        "name": "Life Lessons",
+        "name": "Lecciones de vida",
         "building_unlocks": [
             90,
             83
         ],
         "progress": [
-            "Gain 150 experience from ability cards."
+            "Gana 150 de experiencia con cartas de capacidad."
         ]
     },
     "fh-10": {
-        "name": "Explore the Reaches",
+        "name": "Explorar los confines",
         "building_unlocks": [
             90,
             83
         ],
         "progress": [
-            "Comlete five different scenarios that require {BOAT}, {CLIMBING_GEAR}, or {SLED}."
+            "Completa cinco escenarios distintos que requieran {BOAT}, {CLIMBING_GEAR} o {SLED}."
         ]
     },
     "fh-11": {
-        "name": "Refined Tastes",
+        "name": "Gustos refinados",
         "building_unlocks": [
             39,
             72
         ],
         "progress": [
-            "Own items whose crafting costs include a total of at least fifteen items."
+            "Posee objetos cuyos costes de fabricación sumen al menos quince objetos."
         ]
     },
     "fh-12": {
-        "name": "Threat from the Deep",
+        "name": "Amenaza de las profundidades",
         "building_unlocks": [
             90,
             42
         ],
         "progress": [
-            "Immediately unlock {SCENARIO 71}.",
-            "Follow {SCENARIO 71} to a conclusion."
+            "Desbloquea de inmediato {SCENARIO 71}.",
+            "Sigue {SCENARIO 71} hasta la conclusión."
         ]
     },
     "fh-13": {
-        "name": "End the Trickery",
+        "name": "Acabar con las jugarretas",
         "building_unlocks": [
             44,
             74
         ],
         "progress": [
-            "Kill fifteem Imps."
+            "Mata a quince Duendes."
         ]
     },
     "fh-14": {
-        "name": "Eternal Wanderer",
+        "name": "Eterno viajero",
         "building_unlocks": [
             37,
             72
         ],
         "progress": [
-            "Complete a scenario in the Whitefire Wood.",
-            "Complete a scenario in the Copperneck Mountains.",
-            "Complete a scenario in the Radiant Forest.",
-            "Complete a scenario in the Crystal Fields.",
-            "Complete a scenario in the Biting Sea."
+            "Completa un escenario en el Bosque Fuegoblanco.",
+            "Completa un escenario en las Montañas Cobrizas.",
+            "Completa un escenario en el Bosque Radiante.",
+            "Completa un escenario en los Campos de Cristal.",
+            "Completa un escenario en el Mar de los Mordiscos."
         ]
     },
     "fh-15": {
-        "name": "Continued Prosperity",
+        "name": "Promover la prosperidad",
         "building_unlocks": [
             65,
             85
         ],
         "progress": [
-            "Donate 70 gold to the Temple of the Great Oak."
+            "Dona 70 de oro al Templo del Gran Roble."
         ]
     },
     "fh-16": {
-        "name": "Prepared for the Worst",
+        "name": "Prepararse para lo peor",
         "building_unlocks": [
             85,
             88
         ],
         "progress": [
-            "Purchase five enhancements."
+            "Compra cinco mejoras."
         ]
     },
     "fh-17": {
-        "name": "Battle Legend",
+        "name": "Leyenda de las batallas",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Earn 16 {CHECK} from completed battle goals."
+            "Consigue 16 {CHECK} de objetivos de batalla completados."
         ]
     },
     "fh-18": {
-        "name": "Let Them Be",
+        "name": "Vive y deja vivir",
         "building_unlocks": [
             44,
             67
         ],
         "progress": [
-            "Complete eight side scenarios (numbered 65 or higher)."
+            "Completa ocho escenarios secundarios (numerados 65 o más)."
         ]
     },
     "fh-19": {
-        "name": "Quiet the Dead Places",
+        "name": "Acallar las moradas de los muertos",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Gain “Abyss Axe” (Item 039) blueprint and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms."
+            "Obtén el plano de “Hacha abisal” (Objeto 039) y úsala para matar a diez Cadáveres helados, Espectros de hielo y/o Perdiciones vivientes."
         ]
     },
     "fh-20": {
-        "name": "Return to Simplicity",
+        "name": "Regreso a lo básico",
         "building_unlocks": [
             24,
             21
         ],
         "progress": [
-            "Kill fifteen Ruined Machines."
+            "Mata a quince Máquinas ruinosas."
         ]
     },
     "fh-21": {
-        "name": "The Study of Life",
+        "name": "El estudio de la vida",
         "building_unlocks": [
             39,
             72
         ],
         "progress": [
-            "Capture 8 enemies."
+            "Captura a 8 enemigos."
         ]
     },
     "fh-22": {
-        "name": "The Greatest Challenge",
+        "name": "El gran desafío",
         "building_unlocks": [
             37,
             83
         ],
         "progress": [
-            "Complete twelve challenges."
+            "Completa doce desafíos."
         ]
     },
     "fh-23": {
-        "name": "The Chosen One",
-        "unlock": "Open envelope A",
+        "name": "La marca del destino",
+        "unlock": "Abre el sobre A",
         "progress": [
-            "Experience 10 allies exhaust during scenarios you otherwise complete."
+            "Presencia cómo se agotan 10 aliados durante escenarios que completes de todos modos."
+        ]
+    },
+    "gh2-1": {
+        "name": "Intriga política",
+        "progress": [
+            "Añade el Evento de Ciudad 61 al mazo de eventos de ciudad.",
+            "Consigue 30 votos: tres votos cada vez que ganes reputación y un voto por cada objeto de reputación de facción llevado a un escenario completado.",
+            "Lee la {SECTION} 136.1 durante la fase de ciudad (el éxito no está garantizado)."
+        ]
+    },
+    "gh2-2": {
+        "name": "Posada de la hospitalidad",
+        "progress": [
+            "Saquea 60 fichas de dinero.",
+            "Lee la {SECTION} 125.4."
+        ]
+    },
+    "gh2-3": {
+        "name": "Capacidades aumentadas",
+        "progress": [
+            "Compra cinco mejoras (requiere el logro global “El poder de la mejora”).",
+            "Lee la {SECTION} 71.2."
+        ]
+    },
+    "gh2-4": {
+        "name": "la caída del hombre",
+        "progress": [
+            "Obtén el “Catalejo etérido” (Objeto 149). No se puede vender.",
+            "Usa el “Catalejo etérido” (Objeto 149) diez veces.",
+            "Lee la {SECTION} 115.2.",
+            "Sigue {SCENARIO 63} hasta la conclusión."
+        ]
+    },
+    "gh2-5": {
+        "name": "Buscador de Xorn",
+        "progress": [
+            "Sube de nivel para desbloquear {SCENARIO 57}.",
+            "Sigue {SCENARIO 57} hasta la conclusión.",
+            "Usa el objeto obtenido en {SCENARIO 57} para obtener VENENO {POISON} siete veces.",
+            "Sigue {SCENARIO 58} hasta la conclusión."
+        ]
+    },
+    "gh2-6": {
+        "name": "Fanático del Dios de la Sangre",
+        "progress": [
+            "Termina diez escenarios con tus puntos de vida iguales o inferiores a la mitad de tu máximo, sin haberte agotado.",
+            "Lee la {SECTION} 122.3."
+        ]
+    },
+    "gh2-7": {
+        "name": "Una historia que contar",
+        "progress": [
+            "Saquea, o presencia cómo tu grupo saquea, una ficha de tesoro en diez escenarios.",
+            "Lee la {SECTION} 12.3."
+        ]
+    },
+    "gh2-8": {
+        "name": "Recupera los árboles",
+        "progress": [
+            "Vive diez eventos de camino con tu grupo.",
+            "Lee la {SECTION} 64.3.",
+            "Sigue {SCENARIO 59} hasta la conclusión.",
+            "Sigue {SCENARIO 60} hasta la conclusión."
+        ]
+    },
+    "gh2-9": {
+        "name": "Hallar la cura",
+        "progress": [
+            "Completa escenarios en cinco de estas zonas: Montañas Cobrizas, Bosque Cadavérico, Bosque de las Dagas, Gloomhaven, Pantano Perenne, Mar Brumoso, Montañas Guardianas.",
+            "Lee la {SECTION} 55.3.",
+            "Sigue {SCENARIO 61} hasta la conclusión.",
+            "Sigue {SCENARIO 62} hasta la conclusión."
+        ]
+    },
+    "gh2-10": {
+        "name": "Cazador de aberraciones",
+        "progress": [
+            "Mejora una carta de capacidad (tuya o de un aliado) con un elemento {ANY} (requiere el logro global “El poder de la mejora”).",
+            "Lee la {SECTION} 14.3.",
+            "Sigue {SCENARIO 64} hasta la conclusión."
+        ]
+    },
+    "gh2-11": {
+        "name": "Padre adoptivo",
+        "progress": [
+            "Saquea tres fichas de dinero soltadas por enemigos en diez escenarios.",
+            "Lee la {SECTION} 122.5.",
+            "Sigue {SCENARIO 66} hasta la conclusión."
+        ]
+    },
+    "gh2-12": {
+        "name": "Instrumento de la luz",
+        "progress": [
+            "Desbloquea de inmediato {SCENARIO 65}.",
+            "Encuentra el “Escudo del Justo” (Objeto 148).",
+            "Usa el “Escudo del Justo” (Objeto 148) para anular diez ataques de 4 de daño o más.",
+            "Lee la {SECTION} 82.1."
+        ]
+    },
+    "gh2-13": {
+        "name": "Clase comerciante",
+        "progress": [
+            "Posee tres objetos de {HEAD}.",
+            "Posee tres objetos de {BODY}.",
+            "Posee tres objetos de {LEGS}.",
+            "Posee cinco objetos de {ONE-HAND} o {TWO-HANDS}.",
+            "Posee cinco objetos {SMALL-ITEM}.",
+            "Lee la {SECTION} 129.1."
+        ]
+    },
+    "gh2-14": {
+        "name": "Eterno viajero",
+        "progress": [
+            "Completa 12 escenarios distintos.",
+            "Lee la {SECTION} 52.2."
+        ]
+    },
+    "gh2-15": {
+        "name": "Escapar de los Sin-Ra",
+        "progress": [
+            "Añade los Eventos de Ciudad 69 y 70 al mazo de eventos de ciudad. Obtén la “Carta Negra” (Objeto 113). No se puede vender.",
+            "Completa seis escenarios secundarios (número de escenario superior a 56).",
+            "Lee la {SECTION} 128.2."
+        ]
+    },
+    "gh2-16": {
+        "name": "El veneno perfecto",
+        "progress": [
+            "Obtén la “Daga Envenenada” (Objeto 7).",
+            "Úsala para aplicar VENENO {POISON} a un enemigo sin VENENO {POISON} 30 veces.",
+            "Lee la {SECTION} 8.3."
+        ]
+    },
+    "gh2-17": {
+        "name": "Viviendo al límite",
+        "progress": [
+            "Obtén la “Armadura experimental” (Objeto 150).",
+            "Úsala para hacer que 20 enemigos sufran daño.",
+            "Lee la {SECTION} 47.4."
+        ]
+    },
+    "gh2-18": {
+        "name": "Leyenda de las batallas",
+        "progress": [
+            "Consigue 12 marcas de verificación de objetivos de batalla completados.",
+            "Lee la {SECTION} 23.3."
+        ]
+    },
+    "gh2-19": {
+        "name": "Estudio marcial",
+        "progress": [
+            "Usa ocho objetos distintos de {ONE-HAND} o {TWO-HANDS} durante escenarios.",
+            "Lee la {SECTION} 67.2."
+        ]
+    },
+    "gh2-20": {
+        "name": "Devoción por todas las cosas",
+        "progress": [
+            "Dona 120 de oro al Templo del Gran Roble.",
+            "Lee la {SECTION} 51.5."
+        ]
+    },
+    "gh2-21": {
+        "name": "En busca de la destreza",
+        "progress": [
+            "Gana 120 de experiencia con cartas de capacidad.",
+            "Lee la {SECTION} 17.2."
+        ]
+    },
+    "gh2-22": {
+        "name": "Trofeo de caza",
+        "progress": [
+            "Mata a 20 tipos de monstruos distintos.",
+            "Lee la {SECTION} 21.1."
+        ]
+    },
+    "cq-cq01": {
+        "name": "Conquista a tus demonios",
+        "unlock": "Abre un sobre de clase o de edificio de tu elección. Tus futuros personajes añaden PERFORAR {PIERCE} 1 y HERIDA {WOUND} a cualquier ataque dirigido contra demonios.",
+        "progress": [
+            "Mata a dos Demonios de Tierra generados de este modo.",
+            "Mata a dos Demonios de Fuego generados de este modo.",
+            "Mata a dos Demonios de Hielo generados de este modo.",
+            "Mata a dos Demonios de Noche generados de este modo.",
+            "Mata a dos Demonios de Sol generados de este modo.",
+            "Mata a dos Demonios de Viento generados de este modo."
+        ]
+    },
+    "cq-cq02": {
+        "name": "Tus amigos están preocupados",
+        "unlock": "Abre un sobre de clase o de edificio de tu elección. Puedes perder de forma permanente las marcas de ventaja adicionales obtenidas por retirar personajes de tu linaje. Por cada marca de ventaja perdida, obtén 30 de oro para gastarlo de inmediato en mejoras para tu siguiente personaje.",
+        "progress": [
+            "Consigue 30 marcas de verificación de Objetivos de batalla. Roba y conserva un Objetivo de batalla adicional en cada escenario; no consigues ninguna marca a menos que cumplas todos."
+        ]
+    },
+    "cq-cq03": {
+        "name": "Consecuencias del combate",
+        "unlock": "Abre un sobre de clase o de edificio de tu elección. Tus futuros personajes obtienen FORTALECIMIENTO {STRENGTHEN} cada vez que roben un {NULL_MODIFIER} durante un escenario.",
+        "progress": [
+            "Consigue 50 de contención: una vez por escenario, reduce el valor de un ataque antes de robar un modificador; obtén un punto de contención por cada punto reducido."
+        ]
+    },
+    "cq-cq04": {
+        "name": "Un final dramático",
+        "unlock": "Abre un sobre de clase o de edificio de tu elección. Tus futuros personajes pueden realizar de inmediato los pasos de un descanso largo siempre que un aliado se agote.",
+        "progress": [
+            "Gana 10 escenarios en los que tus dos últimas acciones sean una acción de pérdida superior y una acción de pérdida inferior."
         ]
     }
 }

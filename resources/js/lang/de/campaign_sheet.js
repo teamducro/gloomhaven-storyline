@@ -1,15 +1,15 @@
 export default {
     "fh": {
         "town_guard_perks": [
-            "Replace one {-10_WHITE} card with one {+30_WHITE} card and one {-20_WHITE} “Gain any one material resource” card.",
-            "Replace two {+10_WHITE} cards with two {+30_WHITE} cards and one {-20_WHITE} “Gain any two material resources” card.",
-            "Replace one {-10_WHITE} card with one {+10_WHITE} card.",
-            "Replace two {+0_WHITE} cards with one {+10_WHITE} card.",
-            "Replace two {+10_WHITE} cards with two {AGAIN}{+10_WHITE} “Gain Advantage on this target” cards.",
-            "Add one {+30_WHITE} card.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Hide” cards.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Lumber” cards.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Metal” cards."
+            "Ersetze eine {-10_WHITE} Karte durch eine {+30_WHITE} Karte und eine {-20_WHITE} Karte „Erhaltet eine beliebige Materialressource“.",
+            "Ersetze zwei {+10_WHITE} Karten durch zwei {+30_WHITE} Karten und eine {-20_WHITE} Karte „Erhaltet 2 beliebige Materialressourcen“.",
+            "Ersetze eine {-10_WHITE} Karte durch eine {+10_WHITE} Karte.",
+            "Ersetze zwei {+0_WHITE} Karten durch eine {+10_WHITE} Karte.",
+            "Ersetze zwei {+10_WHITE} Karten durch zwei {AGAIN}{+10_WHITE} Karten „Erhalte Vorteil gegen dieses Ziel“.",
+            "Füge eine {+30_WHITE} Karte hinzu.",
+            "Füge zwei {AGAIN}{+0_WHITE} Karten „Erhaltet 1 Leder“ hinzu.",
+            "Füge zwei {AGAIN}{+0_WHITE} Karten „Erhaltet 1 Holz“ hinzu.",
+            "Füge zwei {AGAIN}{+0_WHITE} Karten „Erhaltet 1 Metall“ hinzu."
         ]
     }
 }

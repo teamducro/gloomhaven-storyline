@@ -47,7 +47,13 @@ export default {
                 'pl': 'Polski',
                 'ru': 'Pусский',
                 'hu': 'Magyar',
-                'pt': 'Português (Brasil)', // pt-br
+                'pt': 'Português',
+                'br': 'Português (Brasil)',
+                'cs': 'Čeština',
+                'ko': '한국어',
+                'th': 'ไทย',
+                'zh': '简体中文',
+                'tw': '繁體中文',
             },
             flags: {
                 'en': '🇺🇸',
@@ -58,7 +64,13 @@ export default {
                 'pl': '🇵🇱',
                 'ru': '🇷🇺',
                 'hu': '🇭🇺',
-                'pt': '🇧🇷', // pt-br
+                'pt': '🇵🇹',
+                'br': '🇧🇷',
+                'cs': '🇨🇿',
+                'ko': '🇰🇷',
+                'th': '🇹🇭',
+                'zh': '🇨🇳',
+                'tw': '🇹🇼',
             },
             userRepository: new UserRepository,
         }
@@ -93,8 +105,17 @@ export default {
         getInitialLanguage() {
             let lang = store.get('lang');
 
+            // 'pt' used to be Brazilian Portuguese, before European Portuguese was added.
+            if (!store.get('ptSplit')) {
+                store.set('ptSplit', true);
+                if (lang === 'pt') {
+                    lang = 'br';
+                    store.set('lang', lang);
+                }
+            }
+
             if (!lang) {
-                const locale = navigator.language.substring(0, 2);
+                const locale = this.browserLanguage(navigator.language);
                 if (this.validLanguage(locale)) {
                     lang = locale;
                     store.set('lang', lang);
@@ -105,6 +126,15 @@ export default {
         },
         setInitialLanguage() {
             this.current = this.getInitialLanguage() || window.i18n.locale;
+        },
+        browserLanguage(locale) {
+            if (locale === 'pt-BR') {
+                return 'br';
+            }
+            if (/^zh-(TW|HK|MO|Hant)/.test(locale)) {
+                return 'tw';
+            }
+            return locale.substring(0, 2);
         },
         validLanguage(lang) {
             return this.languages.hasOwnProperty(lang);

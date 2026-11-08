@@ -138,16 +138,16 @@ export default {
         "name": "Карта сокровищ"
     },
     "gh-PBB": {
-        "name": "Bad Business"
+        "name": "Дурное знамение"
     },
     "gh-PSOX1": {
-        "name": "Nobles’ Crypt"
+        "name": "Склеп знати"
     },
     "gh-PSOX2": {
-        "name": "Flooded Crypt"
+        "name": "Подтопленный склеп"
     },
     "gh-PSOX3": {
-        "name": "Crypt of the Ancients"
+        "name": "Склеп древних"
     },
     "gh-PTPS": {
         "name": "Источник отравы"
@@ -171,235 +171,235 @@ export default {
         "name": "Дрожь земли"
     },
     "gh-PHSE": {
-        "name": "High Sea Escort"
+        "name": "Морской конвой"
     },
     "gh-PGJ": {
-        "name": "Grave Job"
+        "name": "Гробокопатели"
     },
     "gh-PNE": {
-        "name": "Northern Expedition"
+        "name": "Северная экспедиция"
     },
     "gh-GTTP": {
-        "name": "Through the Portal"
+        "name": "Путь через портал"
     },
     "gh-PO": {
-        "name": "Opportunists"
+        "name": "Авантюристы"
     },
     "gh-GKIP": {
-        "name": "Knowledge is Power"
+        "name": "Знание - сила"
     },
     "gh-GKIP2": {
-        "name": "Knowledge is Power x2"
+        "name": "Знание - сила x2"
     },
     "gh-GKIP3": {
-        "name": "Knowledge is Power x3"
+        "name": "Знание - сила x3"
     },
     "gh-GKIP4": {
-        "name": "Knowledge is Power x4"
+        "name": "Знание - сила x4"
     },
     "gh-PAD": {
-        "name": "Angels of Death"
+        "name": "Ангелы смерти"
     },
     "gh-PC": {
-        "name": "Custodians"
+        "name": "Хранители"
     },
     "gh-PHP": {
-        "name": "Hunted Prey"
+        "name": "Преследуемая жертва"
     },
     "gh-GPOA": {
-        "name": "Pieces of an Artifact"
+        "name": "Части артефакта"
     },
     "gh-GPOA2": {
-        "name": "Pieces of an Artifact x2"
+        "name": "Части артефакта x2"
     },
     "gh-GPOA3": {
-        "name": "Pieces of an Artifact x3"
+        "name": "Части артефакта x3"
     },
     "gh-PGD": {
-        "name": "Guard Detail"
+        "name": "Охрана"
     },
     "gh-PDE": {
-        "name": "Dimensional Equilibrium"
+        "name": "Межпространственное равновесие"
     },
     "gh-PHH": {
-        "name": "Hunting the Hunter"
+        "name": "Охота на охотника"
     },
     "gh-PXA": {
-        "name": "Xangroth's Aid"
+        "name": "Помощь Зангроту"
     },
     "gh-PDA": {
-        "name": "Diamara's Aid"
+        "name": "Помощь Диамаре"
     },
     "gh-PBF": {
-        "name": "Beauty in Freedom"
+        "name": "Красота - это свобода"
     },
     "gh-GPA": {
-        "name": "A Peril Averted"
+        "name": "Устранение угрозы"
     },
     "gh-GPA2": {
-        "name": "A Peril Averted x2"
+        "name": "Устранение угрозы x2"
     },
     "gh-GPA3": {
-        "name": "A Peril Averted x3"
+        "name": "Устранение угрозы x3"
     },
     "gh-GPA4": {
-        "name": "A Peril Averted x4"
+        "name": "Устранение угрозы x4"
     },
     "gh-GMS": {
-        "name": "Mechanical Splendor"
+        "name": "Торжество технологий"
     },
     "gh-GST": {
-        "name": "Severed Ties"
+        "name": "Разорванные узы"
     },
     "gh-PA": {
-        "name": "Accomplices"
+        "name": "Сообщники"
     },
     "gh-PS": {
-        "name": "Saboteurs"
+        "name": "Диверсанты"
     },
     "cs-PCSOD": {
-        "name": "Ooze Destroyed"
+        "name": "Слизь уничтожена"
     },
     "cs-PCSFL": {
-        "name": "Fallen Lava"
+        "name": "Упавшая лава"
     },
     "cs-PCSFM": {
-        "name": "Follow the Money"
+        "name": "По следу денег"
     },
     "cs-PCSFW": {
-        "name": "Frozen Warrior"
+        "name": "Застывший воин"
     },
     "cs-PCSOA": {
-        "name": "Oak Alliance"
+        "name": "Союз с Дубом"
     },
     "cs-PCSIA": {
-        "name": "Inox Alliance"
+        "name": "Союз с иноксами"
     },
     "cs-PCSGB": {
-        "name": "Guttermaw's Bounty"
+        "name": "Награда Гаттермо"
     },
     "cs-PCSFR": {
-        "name": "Feirgrin's Request"
+        "name": "Просьба Фейргрина"
     },
     "cs-PCSPL": {
-        "name": "A Potion Lost"
+        "name": "Утраченное зелье"
     },
     "cs-PCSTM": {
-        "name": "Take the Money"
+        "name": "Взять деньги"
     },
     "cs-PCSAM": {
-        "name": "Accomplished Mercenaries"
+        "name": "Прославленные наёмники"
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        "name": "Друг ледоречцев"
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        "name": "Друг снегоречцев"
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        "name": "Друг морозоречцев"
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        "name": "Истребитель ледоречцев"
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        "name": "Истребитель снегоречцев"
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        "name": "Друг Короля-рыбы"
     },
     "fh-CCU": {
-        "name": "Crown United"
+        "name": "Объединённая корона"
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        "name": "Союзники Освобождённых"
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        "name": "Деактивированные Освобождённые"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "В лес"
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        "name": "Огненный перец"
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        "name": "Искатель осколков"
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        "name": "Пустая банка"
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        "name": "Жук в банке"
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        "name": "Незаряженное ядро"
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        "name": "Заряженное ядро"
     },
     "fh-CHF": {
-        "name": "Harvest Festival"
+        "name": "Праздник урожая"
     },
     "fh-CBT": {
-        "name": "Brummix Tracks"
+        "name": "Следы Бруммикса"
     },
     "fh-CBT2": {
-        "name": "Brummix Tracks x2"
+        "name": "Следы Бруммикса x2"
     },
     "fh-CBT3": {
-        "name": "Brummix Tracks x3"
+        "name": "Следы Бруммикса x3"
     },
     "fh-CBT4": {
-        "name": "Brummix Tracks x4"
+        "name": "Следы Бруммикса x4"
     },
     "fh-CBT5": {
-        "name": "Brummix Tracks x5"
+        "name": "Следы Бруммикса x5"
     },
     "fh-CCCS": {
-        "name": "Coral Crown Shard"
+        "name": "Осколок Коралловой короны"
     },
     "fh-CCCS2": {
-        "name": "Coral Crown Shard x2"
+        "name": "Осколок Коралловой короны x2"
     },
     "fh-CCCS3": {
-        "name": "Coral Crown Shard x3"
+        "name": "Осколок Коралловой короны x3"
     },
     "fh-CCCS4": {
-        "name": "Coral Crown Shard x4"
+        "name": "Осколок Коралловой короны x4"
     },
     "fh-CCCS5": {
-        "name": "Coral Crown Shard x5"
+        "name": "Осколок Коралловой короны x5"
     },
     "fh-CCCS6": {
-        "name": "Coral Crown Shard x6"
+        "name": "Осколок Коралловой короны x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Сердце льда"
     },
     "fh-PHOS": {
-        "name": "Heart of Snow"
+        "name": "Сердце снега"
     },
     "gh2-G2ATD": {
-        "name": "Activating the Device"
+        "name": "Активация устройства"
     },
     "gh2-G2AUP": {
-        "name": "An Uneasy Peace"
+        "name": "Непрочный мир"
     },
     "gh2-G2AT": {
         "name": "Древняя технология"
     },
     "gh2-G2CRD": {
-        "name": "City Rule: Demons"
+        "name": "Городское правление: демоны"
     },
     "gh2-G2CRME": {
-        "name": "City Rule: Merchants"
+        "name": "Городское правление: торговцы"
     },
     "gh2-G2CRMI": {
-        "name": "City Rule: Military"
+        "name": "Городское правление: военные"
     },
     "gh2-G2EM": {
-        "name": "Elements Mastered"
+        "name": "Покорение стихий"
     },
     "gh2-G2EOC": {
         "name": "Конец упадка"
@@ -408,22 +408,22 @@ export default {
         "name": "Конец эпохи Мрака"
     },
     "gh2-G2HW": {
-        "name": "Hallowed Waters"
+        "name": "Освящённые воды"
     },
     "gh2-G2ITD": {
-        "name": "Into the Depths"
+        "name": "В глубины"
     },
     "gh2-G2PTB": {
-        "name": "Peace Through Bloodshed"
+        "name": "Мир через кровопролитие"
     },
     "gh2-G2TCE": {
-        "name": "The Candle Extinguished"
+        "name": "Свеча погашена"
     },
     "gh2-G2TCK": {
-        "name": "The Candle Kept"
+        "name": "Свеча сохранена"
     },
     "gh2-G2TDR": {
-        "name": "The Darkness Retreats"
+        "name": "Тьма отступает"
     },
     "gh2-G2TDA": {
         "name": "Помощь дрейку"
@@ -441,27 +441,27 @@ export default {
         "name": "Голос умолк"
     },
     "gh2-P2R16": {
-        "name": "Faction Reputation 16"
+        "name": "Репутация фракций 16"
     },
     "gh2-P2R20": {
-        "name": "Faction Reputation 20"
+        "name": "Репутация фракций 20"
     },
     "gh2-P2RD6": {
-        "name": "Demon Reputation 6"
+        "name": "Репутация демонов 6"
     },
     "gh2-P2RD12": {
-        "name": "Demon Reputation 12"
+        "name": "Репутация демонов 12"
     },
     "gh2-P2RME6": {
-        "name": "Merchant Reputation 6"
+        "name": "Репутация торговцев 6"
     },
     "gh2-P2RME12": {
-        "name": "Merchant Reputation 12"
+        "name": "Репутация торговцев 12"
     },
     "gh2-P2RMI6": {
-        "name": "Military Reputation 6"
+        "name": "Репутация военных 6"
     },
     "gh2-P2RMI12": {
-        "name": "Military Reputation 12"
+        "name": "Репутация военных 12"
     }
 }

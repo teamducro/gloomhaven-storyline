@@ -139,7 +139,7 @@ export default {
             "Добавьте 2 карты {AGAIN} {WOUND}",
             "Добавьте 1 карту {AGAIN} {STUN}",
             "Добавьте 1 карту {AGAIN} {HEAL} 3",
-            "Добавьте 1 карту {+0_WHITE} с эффектом «Разверните 1 повёрнутую или потраченную карту предмета»"
+            "Добавьте 1 карту {+0_WHITE} «{REFRESH} 1 карту предмета»"
         ]
     },
     "SS": {
@@ -231,7 +231,7 @@ export default {
             "Добавьте 2 карты {AGAIN} {PIERCE} 3",
             "Добавьте 1 карту {AGAIN} {STUN}",
             "Добавьте 1 карту {AGAIN} {TARGET}",
-            "Добавьте 1 карту {+0_WHITE} с эффектом «Разверните 1 повёрнутую или потраченную карту предмета»",
+            "Добавьте 1 карту {+0_WHITE} «{REFRESH} 1 карту предмета»",
             "Игнорируйте отрицательные эффекты предметов и добавьте 2 карты {+1_WHITE}"
         ]
     },
@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Bladeswarm",
+        "name": "Рой клинков",
         "perks": [
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {WOUND}",
@@ -280,7 +280,7 @@ export default {
         ]
     },
     "DR": {
-        "name": "Diviner",
+        "name": "Прорицательница",
         "perks": [
             "Уберите 2 карты {-1_WHITE}",
             "Уберите 1 карту {-2_WHITE}",
@@ -298,7 +298,7 @@ export default {
         ]
     },
     "RG": {
-        "name": "Red Guard",
+        "name": "Алый страж",
         "perks": [
             "Уберите 4 карты {+0_WHITE}",
             "Уберите 2 карты {-1_WHITE}",
@@ -313,7 +313,7 @@ export default {
         ]
     },
     "DM": {
-        "name": "Demolitionist",
+        "name": "Подрывник",
         "perks": [
             "Уберите 4 карты {+0_WHITE}",
             "Уберите 2 карты {-1_WHITE}",
@@ -327,7 +327,7 @@ export default {
         ]
     },
     "HT": {
-        "name": "Hatchet",
+        "name": "Рубака",
         "perks": [
             "Уберите 2 карты {-1_WHITE}",
             "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE} {MUDDLE}",
@@ -342,7 +342,7 @@ export default {
         ]
     },
     "VW": {
-        "name": "Voidwarden",
+        "name": "Хранитель пустоты",
         "perks": [
             "Уберите 2 карты {-1_WHITE}",
             "Уберите 1 карту {-2_WHITE}",
@@ -356,9 +356,9 @@ export default {
         ]
     },
     "AA": {
-        "name": "Amber Aegis",
+        "name": "Янтарная эгида",
         "perks": [
-            "Поменяйте 1 карту {-2_WHITE} на 1 карту {-1_WHITE} “Place 1 карту {COLONY} {COLONY_ICON} token of your choice on any empty hex наin {RANGE} 2”",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {-1_WHITE} «Поместите 1 жетон {COLONY} {COLONY_ICON} по вашему выбору на любую пустую клетку в пределах {RANGE}2»",
             "Уберите 2 карты {-1_WHITE}",
             "Уберите 4 карты {+0_WHITE}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+2_WHITE} {MUDDLE}",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artificer",
+        "name": "Артефактор",
         "perks": [
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {-1_WHITE} {ANY}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE} {DISARM}",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombard",
+        "name": "Бомбардир",
         "perks": [
             "Уберите 2 карты {-1_WHITE}",
             "Поменяйте 2 карты {+0_WHITE} на 2 {AGAIN} {PIERCE} 3",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Brightspark",
+        "name": "Яркая искра",
         "perks": [
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{ANY_X} to Добавьте +2 {ATTACK}”",
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {-2_WHITE} “{RECOVER} 1 rиom from your discard pile”",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Chainguard",
+        "name": "Цепной страж",
         "perks": [
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE} “{SHACKLE} {CG_CIRCLE}”",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {CG_CIRCLE}”",
@@ -437,14 +437,14 @@ export default {
         ]
     },
     "CT": {
-        "name": "Chieftain",
+        "name": "Вождь",
         "perks": [
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {POISON}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{HEAL} 1, {CT_CIRCLE}”",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{HEAL} 1, all summ1d allies owned”",
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {-2_WHITE} “{BLESS} (на себя)”",
             "Поменяйте 2 карты {+0_WHITE} на 1 карту {+0_WHITE} “{IMMOBILIZE} и {PUSH} 1”",
-            "Поменяйте 1 карту {+0_WHITE} на 1 “{+X_WHITE}, where X is the number of summ1d allies you own”",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту «{+X_WHITE}, где X — число принадлежащих вам призванных союзников»",
             "Поменяйте 1 карту {+1_WHITE} на 2 {+1_WHITE} “{AGAIN}{+1_WHITE} if summon is attacking”",
             "Добавьте 1 карту {+0_WHITE} {WOUND}, {PIERCE} 1",
             "Добавьте 1 карту {+1_WHITE} {EARTH}",
@@ -453,11 +453,11 @@ export default {
         ]
     },
     "FK": {
-        "name": "Fire Knight",
+        "name": "Огненный рыцарь",
         "perks": [
             "Уберите 2 карты {-1_WHITE}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{STRENGTHEN} (Ally)”",
-            "Поменяйте 2 карты {+0_WHITE} на 2 {+0_WHITE} “{+2_WHITE} if you are on {LДобавьтеER} {FK_CIRCLE}”",
+            "Замените 2 карты {+0_WHITE} на 2 карты {+0_WHITE} «{+2_WHITE}, если вы стоите на {LADDER} {FK_CIRCLE}»",
             "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {FIRE}",
             "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {WOUND}",
             "Поменяйте 2 карты {+1_WHITE} на 1 карту {+2_WHITE} {FIRE}",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hierophant",
+        "name": "Иерофант",
         "perks": [
             "Уберите 2 карты {-1_WHITE}",
             "Поменяйте 2 карты {+0_WHITE} на 1 карту {AGAIN} {LIGHT}",
@@ -481,12 +481,12 @@ export default {
             "Поменяйте 1 карту {+1_WHITE} на 1 карту {+3_WHITE}",
             "Добавьте 2 карты {AGAIN} “{HEAL} 1 (на себя) or Ally”",
             "Добавьте 1 карту {+1_WHITE} {WOUND} {MUDDLE}",
-            "At the start of your first turn each scenario, gain {BLESS}",
+            "В начале вашего первого хода каждого сценария получите {BLESS}",
             "Игнорирйте отрицательные эффекты сценариев и Уберите 1 карту {+0_WHITE}"
         ]
     },
     "HO": {
-        "name": "Hollowpact",
+        "name": "Пустотный договор",
         "perks": [
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{HEAL} 2 (на себя)”",
             "Поменяйте 2 карты {+0_WHITE} на 1 карту {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}”",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Luminary",
+        "name": "Светоч",
         "perks": [
             "Уберите 4 карты {+0_WHITE}",
             "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE}",
@@ -511,43 +511,43 @@ export default {
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {-2_WHITE} “Perform 1 карту {GLOW} {LU_CIRCLE} ability”",
             "Добавьте 1 карту {+0_WHITE} {ANY}",
             "Добавьте 1 карту {AGAIN} {+1_WHITE} “{HEAL} 1 (на себя)”",
-            "TODO:: Добавьте 1 карту {+0_WHITE} “{POISON}, Target all  enemies in the depicted {AOE.CLEAVE_0_1} area”",
+            "Добавьте 1 карту {+0_WHITE} «{POISON}, цель: все враги в показанной области {AOE.CLEAVE_0_1}»",
             "Игнорирйте отрицательные эффекты сценариев и Уберите 1 карту {+0_WHITE}",
             "Игнорируйте отрицательные эффекты предметов и добавьте 1 карту {AGAIN} “{ANY_X}:{ANY}”"
         ]
     },
     "MF": {
-        "name": "Mirefoot",
+        "name": "Болотоход",
         "perks": [
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
-            "Поменяйте 2 карты {+0_WHITE} на 2 “{+X_WHITE}, where X is the poison value of the target”",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты «{+X_WHITE}, где X — значение отравления цели»",
             "Поменяйте 2 {+1_WHITE} на 2 {+2_WHITE}",
             "Поменяйте 1 карту {+0_WHITE} на 2 {AGAIN} “Create difficult terrain in the hex occupied by the target”",
             "Поменяйте 1 карту {+1_WHITE} на 1 карту {+0_WHITE} {WOUND_2}",
             "Добавьте 4 карты {AGAIN} {+0_WHITE} “{+1_WHITE} if the target occupy difficult terrain”",
             "Добавьте 2 карты {AGAIN} “{INVISIBLE} (на себя), if you occupy difficult terrain”",
-            "Gain “Poison Dagger” (Item gh-11). You may carry 1 Добавьтеitional {1-Hи} item на “Dagger” in its name.",
+            "Получите «Отравленный кинжал» (Предмет gh-11). Вы можете носить 1 дополнительный предмет {ONE-HAND} со словом «Кинжал» в названии.",
             "Ignore damage, и negative conditions и modifiers from Events, и Уберите 1 карту {-1_WHITE}",
             "Игнорирйте отрицательные эффекты сценариев и Уберите 1 карту {-1_WHITE}"
         ]
     },
     "RM": {
-        "name": "Ruinmaw",
+        "name": "Руинмау",
         "perks": [
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {-1_WHITE} {RUPTURE} и {WOUND}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {WOUND}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {RUPTURE}",
             "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} “Добавьте {+3_WHITE} instead if the target has {RUPTURE} or {WOUND}”",
             "Поменяйте 1 карту {+0_WHITE} на 1 карту {AGAIN} “{HEAL} 1 (на себя), {EMPOWER}”",
-            "Once each scenario, become {RM_CIRCLE} after collecting your 5th loot token",
-            "Become {RM_CIRCLE} each time you lose a to negate suffering damage",
-            "Whenever 1 of your abilities causes at least 1 enemey to gain {RUPTURE}, immediately after that ability perform “{MOVE} 1",
+            "Один раз за сценарий станьте {RM_CIRCLE} после сбора вашего 5-го жетона добычи",
+            "Станьте {RM_CIRCLE} каждый раз, когда вы теряете карту, чтобы отменить получаемый урон",
+            "Каждый раз, когда одна из ваших способностей заставляет хотя бы одного врага получить {RUPTURE}, сразу после этой способности выполните «{MOVE}1",
             "Игнорирйте отрицательные эффекты сценариев и Уберите 1 карту {-1_WHITE}"
         ]
     },
     "SP": {
-        "name": "Spirit Caller",
+        "name": "Призыватель духов",
         "perks": [
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {-1_WHITE} и 1 карту {+1_WHITE}",
             "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SP_CIRCLE} performed the attack”",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Starslinger",
+        "name": "Звёздный стрелок",
         "perks": [
             "Поменяйте 2 карты {+0_WHITE} на 1 карту {AGAIN} “{HEAL} 1 (на себя)”",
             "Поменяйте 1 карту {-2_WHITE} на 1 карту {-1_WHITE} {DISARM} и 1 карту {-1_WHITE} “{INVISIBLE} (на себя)”",
@@ -579,406 +579,776 @@ export default {
         ]
     },
     "DF": {
-        "name": "Drifter",
+        "name": "Бродяга",
         "masteries": [
-            "End a scenario with your character tokens on the last slots of four persistent abilities",
-            "Never perform a move ability or attack with a value less than 4, and perform at least one move or attack ability each round"
+            "Завершите сценарий, имея жетоны персонажа на последних ячейках 4 постоянных способностей",
+            "Никогда не выполняйте способность движения или атаки со значением меньше 4 и выполняйте хотя бы 1 способность движения или атаки в каждом раунде"
         ],
         "perks": [
-            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {+1_WHITE} card with two {+0_WHITE} “Move one of your character tokens backward one slot” cards",
-            "Replace two {+0_WHITE} cards with two {PIERCE.fh}3 {AGAIN} cards",
-            "Replace two {+0_WHITE} cards with two {PUSH.fh}2 {AGAIN} cards",
-            "Add one {+3_WHITE} card",
-            "Add one {+2_WHITE} {IMMOBILIZE.fh} card",
-            "Add two “{HEAL.fh}1, self” {AGAIN} cards",
-            "Ignore scenario effects and add one {+1_WHITE} card",
-            "Ignore item {-1} effects and add one {+1_WHITE} card",
-            "Whenever you long rest, you may move one of your character tokens backward one slot",
-            "You may bring one additional {ONE-HAND} item into each scenario",
-            "At the end of each scenario, you may discard up to two loot cards, except Random Item, to draw that many new loot cards"
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {+1_WHITE} на 2 карты {+0_WHITE} «Передвиньте 1 из своих жетонов персонажа на 1 ячейку назад»",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {PIERCE.fh}3 {AGAIN}",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {PUSH.fh}2 {AGAIN}",
+            "Добавьте 1 карту {+3_WHITE}",
+            "Добавьте 1 карту {+2_WHITE} {IMMOBILIZE.fh}",
+            "Добавьте 2 карты «{HEAL.fh}1, на себя» {AGAIN}",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {+1_WHITE}",
+            "Игнорируйте отрицательные эффекты предметов {-1} и добавьте 1 карту {+1_WHITE}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете передвинуть 1 из своих жетонов персонажа на 1 ячейку назад",
+            "Вы можете брать в каждый сценарий на 1 дополнительный предмет {ONE-HAND}",
+            "В конце каждого сценария вы можете сбросить до 2 карт добычи, кроме «Случайный предмет», чтобы вытянуть столько же новых карт добычи"
         ]
     },
     "BB": {
-        "name": "Blinkblade",
+        "name": "Клинок-мигун",
         "masteries": [
-            "Declare {FAST} for seven consecutive rounds",
-            "Never be targeted by an attack"
+            "Объявляйте {FAST} 7 раундов подряд",
+            "Ни разу не становитесь целью атаки"
         ],
         "perks": [
-            "Remove one {-2_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {WOUND.fh} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} {IMMOBILIZE.fh} card",
-            "Replace one {+0_WHITE} card with one “Place this card in your active area. On your next attack, discard this card to add +2{ATTACK.fh}” {AGAIN} card",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add one {-1_WHITE} “Gain 1{TIME_ICON}” card",
-            "Add one {+2_WHITE} “{REGENERATE.fh}, self” {AGAIN} card",
-            "Whenever you short rest, you may spend one unspent {SPENT.fh} item for no effect to {RECOVER.fh} a different spent item",
-            "At the start of your first turn each scenario, you may perform {MOVE.fh}3",
-            "Whenever you would gain {IMMOBILIZE.fh}, prevent the condition"
+            "Уберите 1 карту {-2_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {WOUND.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {IMMOBILIZE.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту «Положите эту карту в свою активную зону. При вашей следующей атаке сбросьте эту карту, чтобы добавить +2{ATTACK.fh}» {AGAIN}",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE}",
+            "Добавьте 1 карту {-1_WHITE} «Получите 1{TIME_ICON}»",
+            "Добавьте 1 карту {+2_WHITE} «{REGENERATE.fh}, на себя» {AGAIN}",
+            "Каждый раз, когда вы совершаете короткий отдых, вы можете потратить 1 неиспользованный предмет {SPENT.fh} без эффекта, чтобы {RECOVER.fh} другой потраченный предмет",
+            "В начале вашего первого хода каждого сценария вы можете выполнить {MOVE.fh}3",
+            "Каждый раз, когда вы должны получить {IMMOBILIZE.fh}, предотвратите это состояние"
         ]
     },
     "BN": {
-        "name": "Banner Spear",
+        "name": "Копьё со знаменем",
         "masteries": [
-            "Attack at least three enemies with each of three different area of effect attack abilities",
-            "Perform a {BANNER} summon ability on your first turn, keep the banner alive and within {RANGE.fh}3 of you for the entire scenario"
+            "Атакуйте не менее 3 врагов каждой из 3 разных способностей атаки по площади",
+            "Выполните способность призыва {BANNER} в свой первый ход, сохраняйте знамя живым и в пределах {RANGE.fh}3 от себя на протяжении всего сценария"
         ],
         "perks": [
-            "Replace one {-1_WHITE} card with one “{SHIELD.fh}1” {AGAIN} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “Add +1{ATTACK.fh} for each ally adjacent to the target” card",
-            "Add one {+1_WHITE} {DISARM.fh} card",
-            "Add one {+2_WHITE} {PUSH.fh}1 card",
-            "Add two {+1_WHITE} {AGAIN} cards",
-            "Add two “{HEAL.fh}1, self” {AGAIN} cards",
-            "Ignore item {-1} effects and remove one {-1_WHITE} card",
-            "At the end of each of your long rests, grant one ally within {RANGE.fh}3: {MOVE.fh}2",
-            "Whenever you open a door with a move ability, add +3{MOVE.fh}",
-            "Once each scenario, during your turn, gain {SHIELD.fh}2 for the round"
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту «{SHIELD.fh}1» {AGAIN}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «Добавьте +1{ATTACK.fh} за каждого союзника, соседнего с целью»",
+            "Добавьте 1 карту {+1_WHITE} {DISARM.fh}",
+            "Добавьте 1 карту {+2_WHITE} {PUSH.fh}1",
+            "Добавьте 2 карты {+1_WHITE} {AGAIN}",
+            "Добавьте 2 карты «{HEAL.fh}1, на себя» {AGAIN}",
+            "Игнорируйте отрицательные эффекты предметов {-1} и уберите 1 карту {-1_WHITE}",
+            "В конце каждого вашего долгого отдыха предоставьте 1 союзнику в пределах {RANGE.fh}3: {MOVE.fh}2",
+            "Каждый раз, когда вы открываете дверь способностью движения, добавьте +3{MOVE.fh}",
+            "Один раз за сценарий в свой ход получите {SHIELD.fh}2 на раунд"
         ]
     },
     "DW": {
-        "name": "Deathwalker",
+        "name": "Смертоход",
         "masteries": [
-            "Remove seven {SHADOW_ICON} in one round",
-            "Place or remove at least one {SHADOW_ICON} each round"
+            "Уберите 7 {SHADOW_ICON} за один раунд",
+            "Помещайте или убирайте хотя бы 1 {SHADOW_ICON} в каждом раунде"
         ],
         "perks": [
-            "Remove two {-1_WHITE} cards",
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} {CURSE} card",
-            "Add one {+2_WHITE} {DARK} card",
-            "Add one {DISARM.fh} {AGAIN} card and one {MUDDLE.fh} {AGAIN} card",
-            "Add two “{HEAL.fh}1, {TARGET.fh}1 ally” {AGAIN} cards",
-            "Ignore scenario effects",
-            "Whenever you long rest, you may move one {SHADOW_ICON} up to three hexes",
-            "Whenever you short rest, you may {DARK_X} to perform {MUDDLE.fh}, {CURSE.fh}, {RANGE.fh}2 as if you were occupying a hex with a {SHADOW_ICON}",
-            "While you are occupying a hex with a {SHADOW_ICON}, all attacks targeting you gain disadvantage"
+            "Уберите 2 карты {-1_WHITE}",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {CURSE}",
+            "Добавьте 1 карту {+2_WHITE} {DARK}",
+            "Добавьте 1 карту {DISARM.fh} {AGAIN} и 1 карту {MUDDLE.fh} {AGAIN}",
+            "Добавьте 2 карты «{HEAL.fh}1, {TARGET.fh}1 союзник» {AGAIN}",
+            "Игнорируйте отрицательные эффекты сценариев",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете передвинуть 1 {SHADOW_ICON} на расстояние до 3 клеток",
+            "Каждый раз, когда вы совершаете короткий отдых, вы можете {DARK_X}, чтобы выполнить {MUDDLE.fh}, {CURSE.fh}, {RANGE.fh}2, как если бы вы находились на клетке с {SHADOW_ICON}",
+            "Пока вы находитесь на клетке с {SHADOW_ICON}, все атаки, нацеленные на вас, проводятся с помехой"
         ]
     },
     "BO": {
-        "name": "Boneshaper",
+        "name": "Костоправ",
         "masteries": [
-            "Kill at least fifteen of your summons",
-            "Play a summon action on your first turn, have the summon kill at least six enemies, and keep it alive for the entire scenario"
+            "Убейте не менее 15 своих призванных",
+            "Сыграйте действие призыва в свой первый ход, пусть призванный убьёт не менее 6 врагов, и сохраняйте его живым на протяжении всего сценария"
         ],
         "perks": [
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {CURSE.fh} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “Kill the attacking summon to instead add {+4_WHITE}” card",
-            "Add three “{HEAL.fh}1, {TARGET.fh} {BO}” {AGAIN} cards",
-            "Add one {+2_WHITE} {EARTH_OR_DARK} card",
-            "Ignore scenario effects and add two {+1_WHITE} cards",
-            "Immediately berfore each of your rests, you may kill one of your summons to perform {BLESS.fh}, self",
-            "Once each scenario, when any character ally would become exhausted by suffering {DAMAGE.fh}, you may suffer {DAMAGE.fh}2 to reduce their hit point value to 1 instead",
-            "At the start of each scenario, you may play a level 1 card from your hand to perform a summon action of the card"
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {CURSE.fh}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {POISON.fh}",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «Убейте атакующего призванного, чтобы вместо этого добавить {+4_WHITE}»",
+            "Добавьте 3 карты «{HEAL.fh}1, {TARGET.fh} {BO}» {AGAIN}",
+            "Добавьте 1 карту {+2_WHITE} {EARTH_OR_DARK}",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 2 карты {+1_WHITE}",
+            "Непосредственно перед каждым вашим отдыхом вы можете убить 1 из ваших призванных, чтобы выполнить {BLESS.fh}, на себя",
+            "Один раз за сценарий, когда любой союзник-персонаж должен стать истощённым из-за получения {DAMAGE.fh}, вы можете получить {DAMAGE.fh}2, чтобы вместо этого уменьшить его число здоровья до 1",
+            "В начале каждого сценария вы можете сыграть карту 1-го уровня из руки, чтобы выполнить действие призыва с этой карты"
         ]
     },
     "GE": {
-        "name": "Geminate",
+        "name": "Двоящийся",
         "masteries": [
-            "Switch forms each round",
-            "Lose at least one ability card each round"
+            "Меняйте форму в каждом раунде",
+            "Теряйте хотя бы 1 карту способности в каждом раунде"
         ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} with one {+0_WHITE} “{ANY_X}: {ANY}” card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} {POISON.fh} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND.fh} card",
-            "Replace two {+0_WHITE} cards with two {PIERCE.fh}3 {AGAIN} cards",
-            "Add two {+1_WHITE} {PUSH.fh}3 cards",
-            "Add one {2X_WHITE} “{BRITTLE.fh}, self” card",
-            "Add one {+1_WHITE} “{REGENERATE.fh}, self” {AGAIN} card",
-            "Ignore scenario effects",
-            "Whenever you short rest, you may remove one negative condition from one ally within {RANGE.fh}3",
-            "Once each scenario, when you would give yourself a negative condition, prevent the condition",
-            "Whenever you perform an action with a lost icon, you may discard one card to {RECOVER.fh} one card from your discard pile of equal or lower level"
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «{ANY_X}: {ANY}»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {POISON.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {WOUND.fh}",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {PIERCE.fh}3 {AGAIN}",
+            "Добавьте 2 карты {+1_WHITE} {PUSH.fh}3",
+            "Добавьте 1 карту {2X_WHITE} «{BRITTLE.fh}, на себя»",
+            "Добавьте 1 карту {+1_WHITE} «{REGENERATE.fh}, на себя» {AGAIN}",
+            "Игнорируйте отрицательные эффекты сценариев",
+            "Каждый раз, когда вы совершаете короткий отдых, вы можете снять 1 отрицательное состояние с 1 союзника в пределах {RANGE.fh}3",
+            "Один раз за сценарий, когда вы должны наложить на себя отрицательное состояние, предотвратите это состояние",
+            "Каждый раз, когда вы выполняете действие со значком потери, вы можете сбросить 1 карту, чтобы {RECOVER.fh} 1 карту из вашего сброса того же или более низкого уровня"
         ]
     },
     "IF": {
-        "name": "Infuser",
+        "name": "Наполнитель",
         "masteries": [
-            "Have five active {INFUSION_ICON} bonuses",
-            "Kill at least four enemies, but never attack"
+            "Имейте 5 активных бонусов {INFUSION_ICON}",
+            "Убейте не менее 4 врагов, но ни разу не атакуйте"
         ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {-1_WHITE} card and one {-1_WHITE} {WIND} {EARTH} {DARK} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {WIND_OR_EARTH} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {WIND_OR_DARK} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {EARTH_OR_DARK} card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-            "Replace one {+0_WHITE} card with three “Move one waning element to strong” {AGAIN} cards",
-            "Add two “+1{ATTACK.fh} for each pair of active {INFUSION_ICON}” {AGAIN} cards",
-            "Ignore scenario effects",
-            "Ignore item {-1} effects. Whenever you become exhausted, keep all your active bonuses in play, with your summons acting on initiative 99 each round",
-            "Whenever you short rest, you may {ANY_X} to {RECOVER.fh} one spent {ONE-HAND} or {TWO-HANDS} item",
-            "Once each scenario, during ordering of initiative, after all ability cards have been revealed, {ANY}"
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {-1_WHITE} и 1 карту {-1_WHITE} {WIND} {EARTH} {DARK}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {WIND_OR_EARTH}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {WIND_OR_DARK}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {EARTH_OR_DARK}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE}",
+            "Поменяйте 1 карту {+0_WHITE} на 3 карты «Переместите 1 угасающую стихию в сильную» {AGAIN}",
+            "Добавьте 2 карты «+1{ATTACK.fh} за каждую пару активных {INFUSION_ICON}» {AGAIN}",
+            "Игнорируйте отрицательные эффекты сценариев",
+            "Игнорируйте отрицательные эффекты предметов {-1}. Каждый раз, когда вы становитесь истощёнными, оставляйте все свои активные бонусы в игре, а ваши призванные действуют с инициативой 99 в каждом раунде",
+            "Каждый раз, когда вы совершаете короткий отдых, вы можете {ANY_X}, чтобы {RECOVER.fh} 1 потраченный предмет {ONE-HAND} или {TWO-HANDS}",
+            "Один раз за сценарий при определении инициативы, после того как все карты способностей открыты, {ANY}"
         ]
     },
     "PY": {
-        "name": "Pyroclast",
+        "name": "Пирокласт",
         "masteries": [
-            "Create or destroy at least one obstacle or hazardous terrain tile each round",
-            "Move enemies through six diffrerent hexes of hazardous terrain you created in one turn"
+            "Создавайте или уничтожайте хотя бы 1 жетон препятствия или опасной местности в каждом раунде",
+            "Передвиньте врагов через 6 разных клеток опасной местности, созданной вами, за один ход"
         ],
         "perks": [
-            "Remove two {-1_WHITE} cards",
-            "Remove one {-2_WHITE} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} {WOUND.fh} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “Create one 1-hex hazardous terrain tile in a featureless hex adjacent to the target” card",
-            "Replace two {+0_WHITE} cards with two {PUSH.fh}2 {AGAIN} cards",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add two {+1_WHITE} {FIRE_OR_EARTH} cards",
-            "Add two {+1_WHITE} {MUDDLE.fh} {AGAIN} cards",
-            "Ignore scenario effects",
-            "Whenever you long rest, you may destroy one adjacent obstacle to gain {WARD.fh}",
-            "Whenever you short rest, you may {FIRE_X} to perform {WOUND.fh}, {TARGET.fh}1 enemy occupying or adjacent to hazardous terrain",
-            "You and all allies are unaffected by hazardous terrain you create"
+            "Уберите 2 карты {-1_WHITE}",
+            "Уберите 1 карту {-2_WHITE}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {WOUND.fh}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «Создайте 1 жетон опасной местности на 1 клетку на пустой клетке, соседней с целью»",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {PUSH.fh}2 {AGAIN}",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE}",
+            "Добавьте 2 карты {+1_WHITE} {FIRE_OR_EARTH}",
+            "Добавьте 2 карты {+1_WHITE} {MUDDLE.fh} {AGAIN}",
+            "Игнорируйте отрицательные эффекты сценариев",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете уничтожить 1 соседнее препятствие, чтобы получить {WARD.fh}",
+            "Каждый раз, когда вы совершаете короткий отдых, вы можете {FIRE_X}, чтобы выполнить {WOUND.fh}, {TARGET.fh}1 враг на опасной местности или рядом с ней",
+            "Вы и все союзники не подвержены действию опасной местности, созданной вами"
         ]
     },
     "SH": {
-        "name": "Shattersong",
+        "name": "Разрушительная песнь",
         "masteries": [
-            "Always have 0 {RESONANCE_ICON} directly before you gain {RESONANCE_ICON} at the end of each of your turns",
-            "Spend 5 {RESONANCE_ICON} on each of five different {WAVE} abilities"
+            "Всегда имейте 0 {RESONANCE_ICON} непосредственно перед получением {RESONANCE_ICON} в конце каждого своего хода",
+            "Потратьте 5 {RESONANCE_ICON} на каждую из 5 разных способностей {WAVE}"
         ],
         "perks": [
-            "Remove four {+0_WHITE} cards",
-            "Replace two {-1_WHITE} cards with two {+0_WHITE} “Reveal the top card of the target's monster ability deck” cards",
-            "Replace one {-2_WHITE} card with one {-1_WHITE} {STUN.fh} card",
-            "Replace one {+0_WHITE} card with one {+0_WHITE} {BRITTLE.fh} card",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} {WIND_OR_LIGHT} card",
-            "Add one “{HEAL.fh}2, {BLESS.fh}, {TARGET.fh}1 ally” {AGAIN} card",
-            "Add one {+1_WHITE} “Gain 1 {RESONANCE_ICON}” card",
-            "Ignore scenario effects",
-            "Whenever you short rest, you may {WIND_X} to perform {STRENGTHEN.fh}, {RANGE.fh}3 and {LIGHT_X} to perform {BLESS.fh}, {RANGE.fh}3",
-            "At the start of each scenario, you may gain {BRITTLE.fh} to gain 2 {RESONANCE_ICON}",
-            "Whenever a new room is revealed, you may reveal the top card of both the monster attack modifier deck and all allies' attack modifier decks"
+            "Уберите 4 карты {+0_WHITE}",
+            "Поменяйте 2 карты {-1_WHITE} на 2 карты {+0_WHITE} «Откройте верхнюю карту колоды способностей монстров цели»",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {-1_WHITE} {STUN.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+0_WHITE} {BRITTLE.fh}",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE} {WIND_OR_LIGHT}",
+            "Добавьте 1 карту «{HEAL.fh}2, {BLESS.fh}, {TARGET.fh}1 союзник» {AGAIN}",
+            "Добавьте 1 карту {+1_WHITE} «Получите 1 {RESONANCE_ICON}»",
+            "Игнорируйте отрицательные эффекты сценариев",
+            "Каждый раз, когда вы совершаете короткий отдых, вы можете {WIND_X}, чтобы выполнить {STRENGTHEN.fh}, {RANGE.fh}3, и {LIGHT_X}, чтобы выполнить {BLESS.fh}, {RANGE.fh}3",
+            "В начале каждого сценария вы можете получить {BRITTLE.fh}, чтобы получить 2 {RESONANCE_ICON}",
+            "Каждый раз, когда открывается новая комната, вы можете открыть верхнюю карту колоды модификаторов атаки монстров и колод модификаторов атаки всех союзников"
         ]
     },
     "TA": {
-        "name": "Trapper",
+        "name": "Ловчий",
         "masteries": [
-            "Have one {HEAL.fh} trap on the map with a value of at least 20",
-            "Move enemies through seven or more traps with one ability"
+            "Имейте на карте 1 ловушку {HEAL.fh} со значением не менее 20",
+            "Передвиньте врагов через 7 или более ловушек одной способностью"
         ],
         "perks": [
-            "Remove one {-2_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “Create one {HEAL.fh}2 trap in an empty hex adjacent to the target” card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “Create one {DAMAGE.fh}1 trap in an empty hex adjacent to the target” card",
-            "Replace two {+0_WHITE} cards with two {+0_WHITE} “Add {DAMAGE.fh}2 or {HEAL.fh}2 to a trap within {RANGE.fh}2 of you” cards",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} {IMMOBILIZE.fh} cards",
-            "Add two “Add {PUSH.fh}2 or {PULL.fh}2” {AGAIN} cards",
-            "Ignore scenario effects",
-            "Whenever you long rest, you may create one {DAMAGE.fh}1 trap in an adjacent emty hex",
-            "Whenever you enter a hex with a trap, you may choose to not spring the trap",
-            "At the start of each scenario, you may create one {DAMAGE.fh}2 trap in an adjacent empty hex"
+            "Уберите 1 карту {-2_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «Создайте 1 ловушку {HEAL.fh}2 на свободной клетке, соседней с целью»",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «Создайте 1 ловушку {DAMAGE.fh}1 на свободной клетке, соседней с целью»",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {+0_WHITE} «Добавьте {DAMAGE.fh}2 или {HEAL.fh}2 к ловушке в пределах {RANGE.fh}2 от вас»",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE} {IMMOBILIZE.fh}",
+            "Добавьте 2 карты «Добавьте {PUSH.fh}2 или {PULL.fh}2» {AGAIN}",
+            "Игнорируйте отрицательные эффекты сценариев",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете создать 1 ловушку {DAMAGE.fh}1 на соседней свободной клетке",
+            "Каждый раз, когда вы входите на клетку с ловушкой, вы можете не активировать эту ловушку",
+            "В начале каждого сценария вы можете создать 1 ловушку {DAMAGE.fh}2 на соседней свободной клетке"
         ]
     },
     "PC": {
-        "name": "Pain Conduit",
+        "name": "Проводник боли",
         "masteries": [
-            "Cause other figures to suffer a total of at least {DAMAGE.fh}40 in one round",
-            "Start a turn with {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} and {MUDDLE.fh}"
+            "Заставьте других фигур получить в сумме не менее {DAMAGE.fh}40 за один раунд",
+            "Начните ход, имея {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} и {MUDDLE.fh}"
         ],
         "perks": [
-            "Remove two {-1_WHITE} cards",
-            "Replace one {-2_WHITE} card with one {+2_WHITE} {CURSE.fh} {CURSE.fh} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {DISARM.fh} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} {FIRE_OR_WIND} card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} card",
-            "Replace three {+1_WHITE} cards with three {+1_WHITE} {CURSE.fh} cards",
-            "Add three “{HEAL.fh}1, self” {AGAIN} cards",
-            "Add one {+0_WHITE} “Add +1{ATTACK.fh} for each negative condition you have” card",
-            "Ignore scenario effects and add two {+1_WHITE} cards",
-            "Each round in which you long rest, you may ignore all negative conditions you have. If you do, they cannot be removed that round",
-            "Whenever you become exhausted, first perform {CURSE.fh}, {TARGET} all, {RANGE.fh}3",
-            "Increase your maximum hit point value by 5"
+            "Уберите 2 карты {-1_WHITE}",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+2_WHITE} {CURSE.fh} {CURSE.fh}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {DISARM.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {FIRE_OR_WIND}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE}",
+            "Поменяйте 3 карты {+1_WHITE} на 3 карты {+1_WHITE} {CURSE.fh}",
+            "Добавьте 3 карты «{HEAL.fh}1, на себя» {AGAIN}",
+            "Добавьте 1 карту {+0_WHITE} «Добавьте +1{ATTACK.fh} за каждое ваше отрицательное состояние»",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 2 карты {+1_WHITE}",
+            "В каждом раунде, в котором вы совершаете долгий отдых, вы можете игнорировать все ваши отрицательные состояния. Если вы это делаете, их нельзя снять в этом раунде",
+            "Каждый раз, когда вы становитесь истощённым, сначала выполните {CURSE.fh}, {TARGET} все, {RANGE.fh}3",
+            "Увеличьте ваше максимальное число здоровья на 5"
         ]
     },
     "SD": {
-        "name": "Snowdancer",
+        "name": "Танцующая со снегом",
         "masteries": [
-            "Cause at least one ally or enemy to move each round",
-            "Ensure the first ally to suffer {DAMAGE.fh} each round, directly before suffering the {DAMAGE.fh}, has at least one condition you applied"
+            "Заставляйте хотя бы 1 союзника или врага передвинуться в каждом раунде",
+            "Следите, чтобы первый союзник, получающий {DAMAGE.fh} в каждом раунде, непосредственно перед получением {DAMAGE.fh} имел хотя бы 1 состояние, наложенное вами"
         ],
         "perks": [
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {IMMOBILIZE.fh} card",
-            "Add two {+1_WHITE} {ICE_OR_WIND} cards",
-            "Replace two {+0_WHITE} cards with two “If this action forces the target to move, it suffers {DAMAGE.fh}1” {AGAIN} cards",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 ally” card",
-            "Add one “{HEAL.fh}1, {WARD.fh}, {TARGET.fh}1 ally” {AGAIN} card",
-            "Whenever you long rest, you may {ICE_OR_WIND}",
-            "Whenever you short rest, you may {ICE_X} to perform {REGENERATE.fh}, {RANGE.fh}3 and {WIND_X} tp perform {WARD.fh}, {RANGE.fh}3",
-            "At the start of each scenario, all enemies gain {MUDDLE.fh}. Whenever a new room is revealed, all enemies in the newly revealed room gain {MUDDLE.fh}"
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «{HEAL.fh}1, {TARGET.fh}1 союзник»",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {IMMOBILIZE.fh}",
+            "Добавьте 2 карты {+1_WHITE} {ICE_OR_WIND}",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты «Если это действие заставляет цель передвинуться, она получает {DAMAGE.fh}1» {AGAIN}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «{STRENGTHEN.fh}, {TARGET.fh}1 союзник»",
+            "Добавьте 1 карту «{HEAL.fh}1, {WARD.fh}, {TARGET.fh}1 союзник» {AGAIN}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете {ICE_OR_WIND}",
+            "Каждый раз, когда вы совершаете короткий отдых, вы можете {ICE_X}, чтобы выполнить {REGENERATE.fh}, {RANGE.fh}3, и {WIND_X}, чтобы выполнить {WARD.fh}, {RANGE.fh}3",
+            "В начале каждого сценария все враги получают {MUDDLE.fh}. Каждый раз, когда открывается новая комната, все враги в этой комнате получают {MUDDLE.fh}"
         ]
     },
     "FF": {
-        "name": "Frozen Fist",
+        "name": "Ледяной кулак",
         "masteries": [
-            "{RECOVER.fh} at least one card from your discard pile each round",
-            "Enter at least ten different hexes with one move ability, then cause one enemy to suffer at least {DAMAGE.fh}10 with one attack ability in the same turn"
+            "{RECOVER.fh} хотя бы 1 карту из вашего сброса в каждом раунде",
+            "Войдите не менее чем на 10 разных клеток одной способностью движения, затем заставьте 1 врага получить не менее {DAMAGE.fh}10 одной способностью атаки в том же ходу"
         ],
         "perks": [
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {DISARM.fh} card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} card",
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “{SHIELD.fh}1” {AGAIN} card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} {ICE_OR_EARTH} card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} “Create one 1-hex icy terrain tile in a featureless hex adjacent to the target” card",
-            "Add one {+3_WHITE} card",
-            "Add two “{HEAL.fh}1, self” {AGAIN} cards",
-            "Ignore item {-1} effects, and, whenever you enter icy terrain with a move ability, you may ignore the effect to add +1{MOVE.fh}",
-            "Whenever you heal from a long rest, you may {ICE_OR_EARTH_X} to add +2{HEAL.fh}",
-            "Once each scenario, when you would suffer {DAMAGE.fh}, you may negate the {DAMAGE.fh}"
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {DISARM.fh}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «{SHIELD.fh}1» {AGAIN}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {ICE_OR_EARTH}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE} «Создайте 1 жетон ледяной местности на 1 клетку на пустой клетке, соседней с целью»",
+            "Добавьте 1 карту {+3_WHITE}",
+            "Добавьте 2 карты «{HEAL.fh}1, на себя» {AGAIN}",
+            "Игнорируйте отрицательные эффекты предметов {-1}, и каждый раз, когда вы входите на ледяную местность способностью движения, вы можете игнорировать её эффект, чтобы добавить +1{MOVE.fh}",
+            "Каждый раз, когда вы лечитесь после долгого отдыха, вы можете {ICE_OR_EARTH_X}, чтобы добавить +2{HEAL.fh}",
+            "Один раз за сценарий, когда вы должны получить {DAMAGE.fh}, вы можете отменить это {DAMAGE.fh}"
         ]
     },
     "HV": {
-        "name": "HIVE",
+        "name": "УЛЕЙ",
         "masteries": [
-            "{TRANSFER_ICON} each round",
-            "{TRANSFER_ICON} into four different summons in one round"
+            "{TRANSFER_ICON} в каждом раунде",
+            "{TRANSFER_ICON} в 4 разных призванных за один раунд"
         ],
         "perks": [
-            "Remove one {-2_WHITE} card and one {+1_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “After this attack ability, grant one of your summons: {MOVE.fh}2” card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “After this attack ability, {TRANSFER_ICON}” card",
-            "Add one {+1_WHITE} “{HEAL.fh}1, self” card",
-            "Add one {+2_WHITE} {MUDDLE.fh} card",
-            "Add two {POISON.fh} {AGAIN} cards",
-            "Add two {WOUND.fh} {AGAIN} cards",
-            "Whenever you long rest, you may do so on any initiative value, choosing your initiative after all ability cards have been revealed, and you decide how your summons perform their abilities for the round",
-            "At the end of each of your short rests, you may {TRANSFER_ICON}",
-            "Whenever you would gain {WOUND.fh}, prevent the condition"
+            "Уберите 1 карту {-2_WHITE} и 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «После этой способности атаки предоставьте 1 из ваших призванных: {MOVE.fh}2»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «После этой способности атаки {TRANSFER_ICON}»",
+            "Добавьте 1 карту {+1_WHITE} «{HEAL.fh}1, на себя»",
+            "Добавьте 1 карту {+2_WHITE} {MUDDLE.fh}",
+            "Добавьте 2 карты {POISON.fh} {AGAIN}",
+            "Добавьте 2 карты {WOUND.fh} {AGAIN}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете делать это с любым значением инициативы, выбрав инициативу после того, как все карты способностей открыты, и вы решаете, как ваши призванные выполняют свои способности в этом раунде",
+            "В конце каждого вашего короткого отдыха вы можете {TRANSFER_ICON}",
+            "Каждый раз, когда вы должны получить {WOUND.fh}, предотвратите это состояние"
         ]
     },
     "ME": {
-        "name": "Metal Mosaic",
+        "name": "Металлическая мозаика",
         "masteries": [
-            "Never attack",
-            "For four consecutive rounds, move the pressure gague up or down three levels from where it started the round ({PRESSURE_LOW_ICON} to {PRESSURE_HIGH_ICON}, or vice versa)"
+            "Ни разу не атакуйте",
+            "4 раунда подряд передвигайте манометр вверх или вниз на 3 деления от положения в начале раунда (от {PRESSURE_LOW_ICON} до {PRESSURE_HIGH_ICON} или наоборот)"
         ],
         "perks": [
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{PRESSURE_UP_ICON} or {PRESSURE_DOWN_ICON}” card",
-            "Replace one {-1_WHITE} card with one “{SHIELD.fh}1” {AGAIN} card",
-            "Replace one {+0_WHITE} card with one {+0_WHITE} “The target and all enemies adjacent to it suffer {DAMAGE.fh}1” card",
-            "Replace two {+0_WHITE} cards with one {PIERCE.fh}3 {AGAIN} and one “{RETALIATE.fh}2” {AGAIN} card",
-            "Add one {+1_WHITE} “{HEAL.fh}2, self” card",
-            "Add one {+3_WHITE} card",
-            "Ignore item {-1} effects and add two {+1_WHITE} cards",
-            "Whenever you long rest, you may {PRESSURE_UP_ICON} or {PRESSURE_DOWN_ICON}",
-            "Whenever you would gain {POISON.fh}, you may suffer {DAMAGE.fh}1 to prevent the condition",
-            "Once each scenario, when you would become exhausted, instead gain {BRITTLE.fh} and {INVISIBLE.fh}, lose all your cards, {RECOVER.fh} four lost cards, and then discard the recovered cards"
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «{PRESSURE_UP_ICON} или {PRESSURE_DOWN_ICON}»",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту «{SHIELD.fh}1» {AGAIN}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+0_WHITE} «Цель и все враги, соседние с ней, получают {DAMAGE.fh}1»",
+            "Поменяйте 2 карты {+0_WHITE} на 1 карту {PIERCE.fh}3 {AGAIN} и 1 карту «{RETALIATE.fh}2» {AGAIN}",
+            "Добавьте 1 карту {+1_WHITE} «{HEAL.fh}2, на себя»",
+            "Добавьте 1 карту {+3_WHITE}",
+            "Игнорируйте отрицательные эффекты предметов {-1} и добавьте 2 карты {+1_WHITE}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете {PRESSURE_UP_ICON} или {PRESSURE_DOWN_ICON}",
+            "Каждый раз, когда вы должны получить {POISON.fh}, вы можете получить {DAMAGE.fh}1, чтобы предотвратить это состояние",
+            "Один раз за сценарий, когда вы должны стать истощённым, вместо этого получите {BRITTLE.fh} и {INVISIBLE.fh}, потеряйте все свои карты, {RECOVER.fh} 4 потерянные карты, а затем сбросьте восстановленные карты"
         ]
     },
     "DT": {
-        "name": "Deepwraith",
+        "name": "Глубинный призрак",
         "masteries": [
-            "Perform all your attacks with advantage",
-            "Infuse {DARK} each round"
+            "Выполняйте все свои атаки с преимуществом",
+            "Наполняйте {DARK} в каждом раунде"
         ],
         "perks": [
-            "Remove two {-1_WHITE} cards",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {DISARM.fh} card",
-            "Replace one {-2_WHITE} card with one {+1_WHITE} {STUN.fh} card",
-            "Replace one {+0_WHITE} card with one {+0_WHITE} “{INVISIBLE.fh}, self” card",
-            "Replace two {+0_WHITE} cards with two {PIERCE.fh}3 {AGAIN} cards",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Replace three {+1_WHITE} cards with three {+1_WHITE} {CURSE.fh} cards",
-            "Add two {+1_WHITE} “Gain 1{TROPHY_ICON}” cards",
-            "Ignore scenario effects and remove two {+0_WHITE} cards",
-            "Whenever you long rest, you may {LOOT.fh}1 one adjacent hex. If you gain any loot tokens, gain 1 {TROPHY_ICON}",
-            "At the start of each scenario, gain 2 {TROPHY_ICON}",
-            "While you have {INVISIBLE.fh}, gain advantage on all your attacks"
+            "Уберите 2 карты {-1_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {DISARM.fh}",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+1_WHITE} {STUN.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+0_WHITE} «{INVISIBLE.fh}, на себя»",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {PIERCE.fh}3 {AGAIN}",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE}",
+            "Поменяйте 3 карты {+1_WHITE} на 3 карты {+1_WHITE} {CURSE.fh}",
+            "Добавьте 2 карты {+1_WHITE} «Получите 1{TROPHY_ICON}»",
+            "Игнорируйте отрицательные эффекты сценариев и уберите 2 карты {+0_WHITE}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете {LOOT 1} 1 соседний гекс. Если вы получаете хотя бы 1 жетон добычи, получите 1 {TROPHY_ICON}",
+            "В начале каждого сценария получите 2 {TROPHY_ICON}",
+            "Пока у вас есть {INVISIBLE.fh}, получайте преимущество при всех ваших атаках"
         ]
     },
     "CR": {
-        "name": "Crashing Tide",
+        "name": "Обрушивающийся прилив",
         "masteries": [
-            "Never suffer damage from attacks, and be targeted by at least five attacks",
-            "At the start of each of your rests, have more active {TIDE_ICON} than cards in your discard pile"
+            "Ни разу не получайте урон от атак и станьте целью не менее 5 атак",
+            "В начале каждого своего отдыха имейте больше активных {TIDE_ICON}, чем карт в вашем сбросе"
         ],
         "perks": [
-            "Replace one {-1_WHITE} card with two {PIERCE.fh}3 {AGAIN} cards",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “+1{TARGET.fh}” card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “{SHIELD.fh}1” {AGAIN} card",
-            "Add two {+1_WHITE} “If you performed a {TIDE_ICON} action this round, {+2_WHITE} instead” cards",
-            "Add one {+2_WHITE} {MUDDLE.fh} card",
-            "Add one {+1_WHITE} {DISARM.fh} card",
-            "Add two “{HEAL.fh}1, self” {AGAIN} cards",
-            "Ignore item {-1} effects, and, whenever you would gain {IMPAIR.fh}, prevent the condition",
-            "Whenever you declare a long rest during card selection, gain {SHIELD.fh}1 for the round",
-            "Gain advantage on all your attacks performed while occupying or targeting enemies occupying water hexes"
+            "Поменяйте 1 карту {-1_WHITE} на 2 карты {PIERCE.fh}3 {AGAIN}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «+1{TARGET.fh}»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «{SHIELD.fh}1» {AGAIN}",
+            "Добавьте 2 карты {+1_WHITE} «Если в этом раунде вы выполнили действие {TIDE_ICON}, вместо этого {+2_WHITE}»",
+            "Добавьте 1 карту {+2_WHITE} {MUDDLE.fh}",
+            "Добавьте 1 карту {+1_WHITE} {DISARM.fh}",
+            "Добавьте 2 карты «{HEAL.fh}1, на себя» {AGAIN}",
+            "Игнорируйте отрицательные эффекты предметов {-1}, и каждый раз, когда вы должны получить {IMPAIR.fh}, предотвратите это состояние",
+            "Каждый раз, когда вы объявляете долгий отдых при выборе карт, получите {SHIELD.fh}1 на раунд",
+            "Получайте преимущество при всех ваших атаках, выполненных, пока вы находитесь на водных клетках или нацелены на врагов, находящихся на водных клетках"
         ]
     },
     "SA": {
-        "name": "Satha",
+        "name": "Сатха",
+        "masteries": [
+            "На протяжении всего сценария пусть хотя бы 1 союзник выполняет способность движения или атаки в каждый ваш ход, кроме хода с долгим отдыхом",
+            "На протяжении всего сценария ни разу не позволяйте союзнику стать целью атаки"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{SHIELD.fh}1” {AGAIN} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally and self” card",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add one {+0_WHITE} “Grant one ally within {RANGE.fh}3: {ATTACK.fh}2 {RANGE.fh}3 or {ATTACK.fh}3” card",
-            "Add one {AGAIN} {DISARM.fh} card and one {AGAIN} “Grant one ally within {RANGE.fh}3: {MOVE.fh}2” card",
-            "Add two {AGAIN} “{WARD.fh}, {RANGE.fh}1” cards",
-            "Ignore item {-1} effects and whenever you would gain {STUN.fh}, prevent the condition",
-            "Whenever you long rest, perform: {STRENGTHEN.fh}, {TARGET.fh}1 ally, {RANGE.fh}3",
-            "All initiative values may be discussed freely and precisely",
-            "The first time each scenario that you or an ally exhaust, perform: {HEAL.fh}3, {TARGET.fh}all, {WARD.fh}, {STRENGTHEN.fh}"
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «{SHIELD.fh}1» {AGAIN}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {ICE}",
+            "Поменяйте 2 карты {+0_WHITE} на 1 карту {+1_WHITE} «{HEAL.fh}1, {TARGET.fh}1 союзник и вы»",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE}",
+            "Добавьте 1 карту {+0_WHITE} «Предоставьте 1 союзнику в пределах {RANGE.fh}3: {ATTACK.fh}2 {RANGE.fh}3 или {ATTACK.fh}3»",
+            "Добавьте 1 карту {AGAIN} {DISARM.fh} и 1 карту {AGAIN} «Предоставьте 1 союзнику в пределах {RANGE.fh}3: {MOVE.fh}2»",
+            "Добавьте 2 карты {AGAIN} «{WARD.fh}, {RANGE.fh}1»",
+            "Игнорируйте отрицательные эффекты предметов {-1}, и каждый раз, когда вы должны получить {STUN.fh}, предотвратите это состояние",
+            "Каждый раз, когда вы совершаете долгий отдых, выполните: {STRENGTHEN.fh}, {TARGET.fh}1 союзник, {RANGE.fh}3",
+            "Значения инициативы можно свободно и точно обсуждать",
+            "В первый раз за сценарий, когда вы или союзник становитесь истощёнными, выполните: {HEAL.fh}3, {TARGET.fh}все, {WARD.fh}, {STRENGTHEN.fh}"
         ]
     },
     "HA": {
-        "name": "Hail",
+        "name": "Вьюга",
+        "masteries": [
+            "На протяжении всего сценария получайте хотя бы 1 {RESOLVE_WHITE} в каждом раунде",
+            "В одном сценарии на протяжении 3 раундов подряд тратьте не менее 3 {RESOLVE_WHITE} в каждом раунде"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{WOUND.fh} or {IMMOBILIZE.fh}” card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} {WILD} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{POISON.fh} or {MUDDLE.fh}” card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” {AGAIN} card",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add one {+1_WHITE} {STUN.fh} card",
-            "Add one {+3_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 ally” card",
-            "Ignore scenario effects and add two {+1_WHITE} cards",
-            "Whenever you short rest, you may choose which card to lose",
-            "Your and your allies' enhancements cost five gold less and whenever an ally enhances a card, you gain five gold",
-            "Add one {+1_WHITE} “{HA} gains 1 {RESOLVE_WHITE}” card to the monster attack modifier deck"
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «{WOUND.fh} или {IMMOBILIZE.fh}»",
+            "Замените 1 карту {-1_WHITE} на 1 карту {+1_WHITE} {ANY}",
+            "Поменяйте 2 карты {+0_WHITE} на 1 карту {+1_WHITE} «{POISON.fh} или {MUDDLE.fh}»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «{HEAL.fh}1, {TARGET.fh}1 союзник» {AGAIN}",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE}",
+            "Добавьте 1 карту {+1_WHITE} {STUN.fh}",
+            "Добавьте 1 карту {+3_WHITE} «{SAFEGUARD_WHITE}, {TARGET.fh}1 союзник»",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 2 карты {+1_WHITE}",
+            "Каждый раз, когда вы совершаете короткий отдых, вы можете выбрать, какую карту потерять",
+            "Улучшения ваши и ваших союзников стоят на 5 золота дешевле, и каждый раз, когда союзник улучшает карту, вы получаете 5 золота",
+            "Добавьте 1 карту {+1_WHITE} «{HA} получает 1 {RESOLVE_WHITE}» в колоду модификаторов атаки монстров"
         ]
     },
     "CA": {
-        "name": "Cassandra",
+        "name": "Кассандра",
+        "masteries": [
+            "На протяжении всего сценария открывайте хотя бы 1 карту из колоды модификаторов атаки или колоды способностей монстров в каждом раунде",
+            "Выберите целью 6 фигур способностью, нацеленной на фигуры, находящиеся на клетках с {RIFT_WHITE}"
+        ],
         "perks": [
-            "Remove one {-2_WHITE} card",
-            "Remove two {-1_WHITE} cards",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{BLESS.fh}, self or {TARGET.fh}1 ally” card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} “Add +1{ATTACK.fh} if the top card of the monster attack modifier deck is revealed” card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT_OR_DARK} card",
-            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {RIFT_WHITE}, discard this card to place another {RIFT_WHITE} within {RANGE.fh}1 of it” {AGAIN} card",
-            "Ignore scenario effects and add two {+1_WHITE} cards",
-            "Whenever you long rest, you may read one unread {SECTION} from the current scenario’s “Section Links",
-            "Whenever you place a {RIFT_WHITE}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {RIFT_WHITE}",
-            "Whenever a deck is shuffled, you may set aside all revealed cards from that deck and place them back on top after shuffling"
+            "Уберите 1 карту {-2_WHITE}",
+            "Уберите 2 карты {-1_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «{BLESS.fh}, на себя или {TARGET.fh}1 союзник»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE} «Добавьте +1{ATTACK.fh}, если верхняя карта колоды модификаторов атаки монстров открыта»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE} {LIGHT_OR_DARK}",
+            "Добавьте 1 карту {+1_WHITE} «Положите эту карту в свою активную зону. Когда вы в следующий раз поместите {RIFT_WHITE}, сбросьте эту карту, чтобы поместить ещё один {RIFT_WHITE} в пределах {RANGE.fh}1 от него» {AGAIN}",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 2 карты {+1_WHITE}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете прочитать 1 непрочитанный {SECTION} из «Связей разделов» текущего сценария",
+            "Каждый раз, когда вы размещаете {RIFT_WHITE}, вы можете выполнить «{PULL.fh}1, {TARGET.fh}1 союзник или враг, {RANGE.fh}1», как если бы вы находились на клетке, содержащей {RIFT_WHITE}",
+            "Каждый раз, когда колода перемешивается, вы можете отложить все открытые карты этой колоды и после перемешивания положить их обратно сверху"
         ]
     },
     "AN": {
-        "name": "Anaphi",
+        "name": "Анафи",
+        "masteries": [
+            "Пусть 3 разных призванных убьют по 3 врага",
+            "В каждом из 3 сценариев выполните 8 атак по врагам с отрицательными состояниями"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “Add +1{ATTACK.fh} when drawn by a summon” card",
-            "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN.fh} card",
-            "Replace one {+1_WHITE} card with one {+1_WHITE} “{INVISIBLE.fh}, self” card",
-            "Add one {+2_WHITE} {WIND_OR_DARK} card",
-            "Add one {+2_WHITE} “{STRENGTHEN.fh}, 1 of your summons” card",
-            "Ignore scenario effects and remove one {+0_WHITE} card",
-            "Whenever you long rest, you may {WIND_OR_DARK}",
-            "Once each scenario, during your turn, all enemies adjacent to a wall suffer {DAMAGE.fh}1",
-            "At the start of the first round of each scenario, after all ability cards have been revealed, control one enemy within {RANGE.fh}5: {MOVE.fh}2"
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {POISON.fh}",
+            "Поменяйте 2 карты {+0_WHITE} на 1 карту {+1_WHITE} «Добавьте +1{ATTACK.fh}, если карта вытянута призванным»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+0_WHITE} {STUN.fh}",
+            "Поменяйте 1 карту {+1_WHITE} на 1 карту {+1_WHITE} «{INVISIBLE.fh}, на себя»",
+            "Добавьте 1 карту {+2_WHITE} {WIND_OR_DARK}",
+            "Добавьте 1 карту {+2_WHITE} «{STRENGTHEN.fh}, 1 из ваших призванных»",
+            "Игнорируйте отрицательные эффекты сценариев и уберите 1 карту {+0_WHITE}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете {WIND_OR_DARK}",
+            "Один раз за сценарий в свой ход все враги, соседние со стеной, получают {DAMAGE.fh}1",
+            "В начале первого раунда каждого сценария, после того как все карты способностей открыты, возьмите под контроль 1 врага в пределах {RANGE.fh}5: {MOVE.fh}2"
+        ]
+    },
+    "BR2": {
+        "name": "Громила",
+        "masteries": [
+            "В 3 разных сценариях убейте врага, которого вы оттолкнули или притянули в том же раунде",
+            "В одном сценарии на протяжении 3 раундов подряд сыграйте 6 разных карт способностей и заставляйте врагов получать 7 или более урона в каждом из этих раундов"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {AGAIN} {SHIELD.fh}1",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {AGAIN} «Положите эту карту в свою активную зону. При следующей атаке соседнего врага, нацеленной на вас, сбросьте эту карту, чтобы получить {RETALIATE.fh}2 для этой атаки»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+0_WHITE} {STUN.fh}",
+            "Добавьте 1 карту {+1_WHITE} «{HEAL.fh}2, на себя»",
+            "Добавьте 1 карту {+2_WHITE} {PUSH.fh}2",
+            "Добавьте 1 карту {+3_WHITE}",
+            "Добавьте 1 карту {AGAIN} {DISARM.fh} и 1 карту {AGAIN} {MUDDLE.fh}",
+            "Игнорируйте отрицательные эффекты предметов {-1} и добавьте 2 карты {+1_WHITE}",
+            "Один раз за сценарий в свой ход вы можете выполнить: {LOOT 1}; если эта способность подбирает хотя бы 1 жетон монет, вы можете {RECOVER.fh} 1 предмет {BODY}",
+            "Каждый раз, когда вы совершаете долгий отдых, добавьте +1 {MOVE.fh} к вашей первой способности движения в следующем раунде",
+            "Каждый персонаж получает преимущество при своей первой атаке в первом раунде каждого сценария"
+        ]
+    },
+    "CH2": {
+        "name": "Пустотелый",
+        "masteries": [
+            "На протяжении всего сценария создавайте, уничтожайте или передвигайте хотя бы 1 жетон препятствия в каждом раунде",
+            "В одном сценарии вылечите 8 или более здоровья за один раунд, нанесите 8 или более урона способностью дальней атаки и 8 или более урона способностью ближней атаки"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {AGAIN} {+1_WHITE} «Создайте 1 жетон препятствия на 1 клетку на свободной клетке, соседней с целью»",
+            "Поменяйте 1 карту {+0_WHITE} на 2 карты {+1_WHITE} {PUSH.fh}1",
+            "Добавьте 1 карту {+2_WHITE} {IMMOBILIZE.fh}",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {AGAIN} {MUDDLE.fh}",
+            "Игнорируйте отрицательные эффекты предметов {-1}",
+            "Один раз за сценарий в свой ход вы можете уничтожить 1 препятствие на 1 клетку в пределах {RANGE.fh}5, чтобы {TELEPORT.fh} на клетку, которую оно занимало",
+            "В конце каждого вашего отдыха вы можете уничтожить 1 препятствие на 1 клетку в пределах {RANGE.fh}3, чтобы {EARTH}",
+            "Каждый раз, когда открывается новая комната, возьмите под контроль всех врагов в этой комнате: {MOVE.fh}1, это движение должно закончиться на свободной клетке"
+        ]
+    },
+    "MT2": {
+        "name": "Крадущая разум",
+        "masteries": [
+            "В одном сценарии убейте 5 или более врагов способностями контроля",
+            "В одном сценарии активируйте эффект при атаке 4 разных дополнений не менее 3 раз каждый"
+        ],
+        "perks": [
+            "Поменяйте 2 карты {-1_WHITE} на 1 карту {+0_WHITE} «После способности атаки возьмите цель под контроль: {MOVE.fh}1»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «Добавьте +1 {ATTACK.fh} за каждое отрицательное состояние цели»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE}",
+            "Добавьте 2 карты {+1_WHITE} {IMMOBILIZE.fh}",
+            "Добавьте 1 карту {+2_WHITE} {ICE}",
+            "Добавьте 1 карту {AGAIN} «{INVISIBLE.fh}, на себя»",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {AGAIN} {+1_WHITE}",
+            "Каждый раз, когда вы контролируете атаку врага, вы можете заставить его использовать вашу колоду модификаторов атаки",
+            "При определении цели монстров вы считаетесь последним в порядке инициативы",
+            "В конце каждого вашего отдыха вы можете {ICE_X}/{DARK_X}, чтобы взять под контроль 1 врага в пределах {RANGE.fh}5: {ATTACK.fh}1"
+        ]
+    },
+    "SC2": {
+        "name": "Тихий нож",
+        "masteries": [
+            "На протяжении всего сценария атакуйте только врагов, соседних с одним из ваших союзников или не соседних ни с одним из их союзников, и выполните не менее 10 атак",
+            "Завершите 3 сценария, имея 12 или более жетонов монет"
+        ],
+        "perks": [
+            "Уберите 1 карту {-2_WHITE}",
+            "Уберите 2 карты {-1_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «Получите 1 жетон монет, если эта атака была нацелена на соседнего врага»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE}",
+            "Поменяйте 1 карту {+1_WHITE} на 1 карту {AGAIN} {+1_WHITE} «{INVISIBLE.fh}, на себя»",
+            "Добавьте 1 карту {+1_WHITE} {DISARM.fh}",
+            "В конце каждого вашего отдыха вы можете поместить 1 из ваших жетонов монет на клетку, занятую врагом в пределах {RANGE.fh}3, чтобы выполнить: {ATTACK.fh}1, {TARGET.fh} этот враг, {RANGE.fh}3",
+            "Каждый раз, когда вы завершаете городское событие, вытяните карту модификатора атаки, как если бы вы выполняли {ATTACK.fh}4. Получите золото в количестве, равном {DAMAGE.fh}, которое нанесла бы эта атака",
+            "Один раз за сценарий в свой ход вы можете выполнить: {INVISIBLE.fh}, на себя"
+        ]
+    },
+    "SW2": {
+        "name": "Плетущая чары",
+        "masteries": [
+            "В одном сценарии потребите и {FIRE}, и {ICE} в одном ходу 6 раз",
+            "В одном сценарии выполните 4 разных действия {LOST.fh} по два раза каждое"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {ANY}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «Добавьте +2 {ATTACK.fh}, если карта вытянута во время действия с {LOST.fh}»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {CURSE.fh}",
+            "Добавьте 1 карту {+1_WHITE} {STUN.fh}",
+            "Добавьте 1 карту {+2_WHITE} {FIRE}/{ICE}",
+            "Игнорируйте отрицательные эффекты сценариев и уберите 1 карту {+0_WHITE}",
+            "Один раз за сценарий, когда вы должны получить {DAMAGE.fh}, вы можете получить {INVISIBLE.fh} и {STUN.fh}, чтобы отменить это {DAMAGE.fh}",
+            "Каждый раз, когда вы совершаете короткий отдых, если <i>Оживляющий эфир</i> находится в вашем сбросе, сначала {RECOVER.fh} её",
+            "В конце каждого вашего хода, в котором вы выполнили действие с {LOST.fh}, получите {BLESS.fh}"
+        ]
+    },
+    "TI2": {
+        "name": "Изобретатель",
+        "masteries": [
+            "На протяжении всего сценария в каждый ваш ход накладывайте на врага отрицательное состояние, накладывайте на союзника положительное состояние, лечите союзника или давайте союзнику щит",
+            "Выполните 11 разных действий {LOST.fh}"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «{HEAL.fh}1, {TARGET.fh}1 союзник»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {WOUND.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {POISON.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {IMMOBILIZE.fh}",
+            "Добавьте 1 карту {+2_WHITE} «{STRENGTHEN.fh}, {TARGET.fh}1 союзник»",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {+0_WHITE} «{HEAL.fh}1, {TARGET.fh}1 союзник»",
+            "Один раз за сценарий 1 соседний союзник может использовать 1 из ваших предметов <i>зелье</i> {SMALL-ITEM} в свой ход, и он не становится {LOST.fh}",
+            "Каждый раз, когда вы выполняете действие с {LOST.fh}, вы можете {ANY}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете выполнить: {HEAL.fh}2, {RANGE.fh}3"
+        ]
+    },
+    "BE2": {
+        "name": "Берсерк",
+        "masteries": [
+            "Убейте 20 врагов своим возмездием",
+            "В одном сценарии заканчивайте все свои ходы с числом здоровья, равным половине максимума или ниже, не становясь истощённым"
+        ],
+        "perks": [
+            "Уберите 1 карту {-2_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {AGAIN} «{HEAL.fh}1, на себя»",
+            "Поменяйте 2 карты {+0_WHITE} на 1 карту {+1_WHITE} «Вы можете получить {DAMAGE.fh}2, чтобы добавить +2 {ATTACK.fh}»",
+            "Поменяйте 1 карту {+0_WHITE} на 2 карты {AGAIN} {WOUND.fh}",
+            "Добавьте 1 карту {+2_WHITE} {FIRE}",
+            "Добавьте 1 карту {AGAIN} {STUN.fh}",
+            "Добавьте 1 карту {2X_MODIFIER} «Получите {DAMAGE.fh}, равный половине вашего текущего числа здоровья (с округлением вниз)»",
+            "Игнорируйте отрицательные эффекты предметов {-1} и добавьте 1 карту {+1_WHITE}",
+            "Каждый раз, когда вы лечитесь после долгого отдыха, добавьте +1 {HEAL.fh}",
+            "Один раз за сценарий, когда {DAMAGE.fh} от атаки должен уменьшить ваше текущее число здоровья меньше 1, вместо этого установите ваше текущее число здоровья равным 1 и выполните: {ATTACK.fh}2, {TARGET.fh} атаковавший",
+            "В конце каждого вашего хода вы можете взять под контроль всех соседних врагов: {ATTACK.fh} +0 {TARGET.fh} Берсерк"
+        ]
+    },
+    "BS2": {
+        "name": "Рой клинков",
+        "masteries": [
+            "Выполните 6 разных способностей {PERSISTENT}{LOST.fh}, причём не более 3 из этих 6 — способности призыва",
+            "Получите это мастерство, когда почувствуете, что заслужили его"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {WOUND.fh}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {POISON.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {WIND}/{DARK}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {EARTH}/{LIGHT}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+0_WHITE} «Добавьте +1 {ATTACK.fh} за каждую карту с {LOST.fh} в активной зоне Роя клинков»",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {+1_WHITE}",
+            "Игнорируйте отрицательные эффекты предметов {-1} и добавьте 1 карту {+1_WHITE}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете {TELEPORT.fh} на клетку, занятую 1 из ваших призванных, и одновременно {TELEPORT.fh} этого призванного на клетку, которую занимали вы",
+            "Один раз за сценарий, когда вы выполняете действие с {LOST.fh}, вы можете немедленно сыграть 1 карту из руки, чтобы выполнить действие с {LOST.fh} с этой карты",
+            "Дополнительно вы можете брать в каждый сценарий 4 предмета {ONE-HAND}, 2 предмета {TWO-HANDS} или 2 предмета {ONE-HAND} и 1 предмет {TWO-HANDS}."
+        ]
+    },
+    "DS2": {
+        "name": "Обрекающий",
+        "masteries": [
+            "Убейте 20 врагов с {DOOM}",
+            "За один раунд вы и 1 из ваших призванных должны выполнить в сумме 6 или более способностей атаки"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {-1_WHITE} «Обрекающий выполняет: {ATTACK.fh}2, {RANGE.fh}5»",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {+1_WHITE}",
+            "Добавьте 1 карту {+0_WHITE} «Предоставьте 1 из ваших призванных, соседнему с целью: {ATTACK.fh}+0»",
+            "Добавьте 1 карту {+3_WHITE}",
+            "Добавьте 1 карту {AGAIN} {STUN.fh}",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {AGAIN} {+1_WHITE}",
+            "В начале каждого сценария откройте верхнюю карту каждой колоды способностей монстров этого сценария",
+            "Каждый раз, когда вы отдыхаете, после того как вы {RECOVER.fh} карты из вашего сброса, вы можете сыграть 1 карту из руки, чтобы выполнить действие {DOOM} с этой карты",
+            "В ход каждого из ваших призванных вы можете заставить его пропустить ход и вместо этого выполнить {MOVE.fh}+0, считая своей целью вас"
+        ]
+    },
+    "EL2": {
+        "name": "Элементалист",
+        "masteries": [
+            "В одном сценарии потребите 4 или более стихий за один ход 5 раз",
+            "В 3 разных сценариях по одному разу имейте все 6 стихий сильными или угасающими одновременно"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {FIRE}/{WIND}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {FIRE}/{EARTH}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {ICE}/{WIND}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {ICE}/{EARTH}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {FIRE}/{ICE}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {WIND}/{EARTH}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {LIGHT}/{DARK}",
+            "Добавьте 2 карты {AGAIN} {ANY}",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {AGAIN} {ANY}",
+            "В начале каждого сценария вы можете {ANY}",
+            "Каждый раз, когда вы совершаете долгий отдых, {ANY_X}: {ANY}",
+            "{FIRE}, {ICE}, {WIND} и {EARTH} не угасают в конце каждого раунда"
+        ]
+    },
+    "NS2": {
+        "name": "Покров ночи",
+        "masteries": [
+            "В одном сценарии наполняйте или потребляйте {DARK} в каждый свой ход",
+            "В одном сценарии выполняйте способность атаки в свой ход 5 раундов подряд"
+        ],
+        "perks": [
+            "Уберите 1 карту {-2_WHITE}",
+            "Уберите 2 карты {-1_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 2 карты {AGAIN} «После способности атаки предоставьте 1 соседнему союзнику или себе: {TELEPORT.fh}2»",
+            "Поменяйте 1 карту {NULL_MODIFIER} на 1 карту {-2_WHITE}",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {+1_WHITE} «Если эта атака убивает цель, замешайте 1 карту {CURSE.fh} в колоду модификаторов атаки монстров»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE} {DARK}",
+            "Поменяйте 1 карту {+1_WHITE} на 1 карту {+0_WHITE} «Поместите 1 разрыв на клетку, соседнюю с целью»",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 2 карты {+1_WHITE}",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете {DARK}",
+            "Один раз за сценарий в свой ход поместите 1 разрыв на соседнюю клетку",
+            "Если из-за {CURSE.fh} враг не наносит {DAMAGE.fh} во время своей атаки, этот враг получает {DAMAGE.fh}3"
+        ]
+    },
+    "PH2": {
+        "name": "Предвестник чумы",
+        "masteries": [
+            "За один ход убейте 3 или более врагов, не вытягивая карту модификатора атаки",
+            "В одном сценарии накладывайте или снимайте {POISON.fh} с союзника или врага в каждом раунде"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «Наложите чуму на цель или на 1 врага в пределах {RANGE.fh}2 от цели»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {CURSE.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {IMMOBILIZE.fh}",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE}",
+            "Добавьте 1 карту {+1_WHITE} {STUN.fh}",
+            "Добавьте 3 карты {AGAIN} «Наложите {POISON.fh} на цель или на 1 врага в пределах {RANGE.fh}2 от цели»",
+            "Добавьте 2 карты {AGAIN} «{HEAL.fh}1, {TARGET.fh}1 союзник»",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {+1_WHITE}",
+            "У вас есть {FLYING.fh}",
+            "Каждый раз, когда вы лечитесь после долгого отдыха, вы можете снять {POISON.fh} с 1 союзника, чтобы добавить +1 {HEAL.fh}",
+            "Один раз за сценарий, когда враг с чумой должен умереть, сначала возьмите этого врага под контроль и заставьте его выполнить способности с его карты способностей, добавив чуму ко всем его атакам, затем он умирает"
+        ]
+    },
+    "QM2": {
+        "name": "Интендант",
+        "masteries": [
+            "В одном сценарии потратьте 50 припасов, чтобы восстановить потерянные предметы на 50 золота, 3 раза",
+            "На протяжении всего сценария в каждом раунде, кроме раунда с долгим отдыхом, выдавайте себе или союзнику предмет из запаса предметов Интенданта"
+        ],
+        "perks": [
+            "Поменяйте 2 карты {-1_WHITE} на 1 карту {+0_WHITE} {MUDDLE.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+0_WHITE} «Получите 10 припасов»",
+            "Поменяйте 2 карты {+0_WHITE} на 2 карты {AGAIN} {PIERCE.fh}3",
+            "Поменяйте 1 карту {+1_WHITE} на 2 карты {+0_WHITE} «Получите предмет <i>Колючая лента</i> или <i>Железная пластина</i>»",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+2_WHITE}",
+            "Добавьте 1 карту {AGAIN} «Получите предмет <i>Свиток перемещения</i> или <i>Заострённый кинжал</i>»",
+            "Добавьте 1 карту {AGAIN} {STUN.fh}",
+            "Игнорируйте отрицательные эффекты предметов {-1} и уберите 1 карту {+0_WHITE}",
+            "Вы можете брать в каждый сценарий на 1 дополнительный предмет {SMALL-ITEM}",
+            "Ваш отряд может покупать предметы у каждой фракции так, как если бы стоимость предметов была на 5 золота ниже, а ваша репутация у этой фракции — на 2 выше",
+            "Каждый раз, когда вы совершаете долгий отдых, получите 10 припасов"
+        ]
+    },
+    "SB2": {
+        "name": "Костоправ",
+        "masteries": [
+            "В одном сценарии в каждом раунде, кроме раунда с долгим отдыхом, выдавайте союзнику аптечку или предписание",
+            "В одном сценарии ни разу не атакуйте невредимого врага, пока живы поражённые монстры, и выполните не менее 10 атак"
+        ],
+        "perks": [
+            "Уберите 2 карты {-1_WHITE}",
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {-2_WHITE} «Передайте 1 аптечку соседнему союзнику или себе»",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+1_WHITE}",
+            "Поменяйте 2 карты {+0_WHITE} на 1 карту {+1_WHITE} «Вы можете получить {DISARM.fh}, чтобы добавить {STUN.fh}»",
+            "Добавьте 2 карты {+1_WHITE} «Добавьте +1 {ATTACK.fh}, если у союзника есть действующее предписание»",
+            "Добавьте 1 карту {AGAIN} «{HEAL.fh}3, {RANGE.fh}1»",
+            "Добавьте +1 {HEAL.fh} ко всем способностям лечения на картах способностей «Аптечка»",
+            "В каждой городской фазе после завершения сценария ваше пожертвование или пожертвование 1 союзника Святилищу Великого Дуба бесплатно",
+            "В конце каждого вашего отдыха, если у союзника есть действующее предписание, получите 1 карту способности «Аптечка» и передвиньте жетон на действующем предписании 1 союзника на 1 ячейку назад"
+        ]
+    },
+    "SK2": {
+        "name": "Хранящая солнце",
+        "masteries": [
+            "В одном сценарии наполняйте или потребляйте {LIGHT} в каждый свой ход",
+            "В одном сценарии нанесите 8 или более {DAMAGE.fh} одной атакой 3 или более раз"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-1_WHITE} на 2 карты {+0_WHITE} {LIGHT}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {AGAIN} {+1_WHITE} {SHIELD.fh}1",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE}",
+            "Добавьте 2 карты {+1_WHITE} «{HEAL.fh}1, {RANGE.fh}3»",
+            "Добавьте 1 карту {-1_WHITE} «Вы или соседний союзник можете {RECOVER.fh} 1 карту 1-го уровня из сброса»",
+            "Добавьте 1 карту {AGAIN} {STUN.fh}",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {+1_WHITE}",
+            "Игнорируйте отрицательные эффекты предметов {-1} и уберите 1 карту {-1_WHITE}",
+            "Каждый раз, когда вы открываете 1 или несколько дверей в свой ход, получите {SHIELD.fh}1, {RETALIATE.fh}1 на раунд",
+            "Каждый раз, когда вы совершаете долгий отдых, вы можете {LIGHT}",
+            "Каждый раз, когда ваше лечение должно увеличить число здоровья союзника сверх его максимума, этот союзник получает {WARD.fh}"
+        ]
+    },
+    "SS2": {
+        "name": "Воспевающая",
+        "masteries": [
+            "В одном сценарии выполните 7 разных действий {SONG}",
+            "В одном сценарии создайте 20 или более нот и используйте каждую созданную ноту в {SONG}"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {-2_WHITE} «{BLESS.fh}, {TARGET.fh}2»",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «Не передвигайте жетоны персонажа на активных {SONG} в конце этого раунда»",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} {STUN.fh}",
+            "Поменяйте 2 карты {+0_WHITE} на 1 карту {+1_WHITE} «{STRENGTHEN.fh}, {TARGET.fh}1 союзник»",
+            "Поменяйте 1 карту {+0_WHITE} и 1 карту {+1_WHITE} на 2 карты {+2_WHITE}",
+            "Добавьте 1 карту {AGAIN} «Предоставьте 1 союзнику: {MOVE.fh}2 или {ATTACK.fh}2»",
+            "Добавьте 3 карты {AGAIN} {CURSE.fh}",
+            "В конце каждого сценария каждый персонаж этого сценария получает 8 опыта, если вы выполнили свою цель битвы",
+            "Каждый раз, когда вы выполняете {SONG}, если у вас есть неиспользованные ноты, получите 1 ноту по своему выбору в дополнение к любой другой ноте, полученной в этом раунде",
+            "При определении инициативы в раундах, в которых вы объявляете долгий отдых, получите 1 ноту по своему выбору, и каждый из ваших союзников может уменьшить свою инициативу на 10"
+        ]
+    },
+    "ST2": {
+        "name": "Привязанный к душе",
+        "masteries": [
+            "Выполните 3 разных действия призыва до своего первого отдыха и держите эти карты в активной зоне на протяжении всего сценария",
+            "Выполните 6 разных способностей призыва со своих карт способностей в течение первых раундов 6 сценариев"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-2_WHITE} на 1 карту {+0_WHITE}",
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {+0_WHITE} «После способности атаки предоставьте 1 из ваших призванных: {TELEPORT.fh}2»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} «{INVISIBLE.fh}, {TARGET.fh}1 из ваших призванных»",
+            "Поменяйте 1 карту {+0_WHITE} на 2 карты {AGAIN} {WOUND.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 2 карты {AGAIN} {POISON.fh}",
+            "Поменяйте 2 карты {+1_WHITE} на 2 карты {+1_WHITE} {CURSE.fh}",
+            "Добавьте 1 карту {+2_WHITE} {FIRE}/{WIND}",
+            "Добавьте 1 карту {+2_WHITE} {FIRE}/{DARK}",
+            "Добавьте 1 карту {+2_WHITE} {WIND}/{DARK}",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 2 карты {+1_WHITE}",
+            "В начале каждого раунда, в котором вы совершаете долгий отдых, все ваши призванные получают {SHIELD.fh}1 на раунд",
+            "Один раз за сценарий в свой ход {TELEPORT.fh} 1 из ваших призванных на свободную клетку, соседнюю с вами",
+            "Один раз за сценарий при определении инициативы, после того как все карты способностей открыты, все ваши призванные получают {INVISIBLE.fh}"
+        ]
+    },
+    "WF2": {
+        "name": "Дикая ярость",
+        "masteries": [
+            "В одном сценарии наполняйте или потребляйте {WIND} или {EARTH} в каждый свой ход",
+            "В одном сценарии убейте 4 или более врагов атаками {COMMAND} со значением 7 или больше (после всех бонусов, до модификаторов атаки)"
+        ],
+        "perks": [
+            "Поменяйте 1 карту {-1_WHITE} на 1 карту {AGAIN} «{HEAL.fh}2, {TARGET.fh} Медведь»",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+1_WHITE} {WOUND.fh}",
+            "Поменяйте 1 карту {+0_WHITE} на 1 карту {+2_WHITE} «Добавьте +1 {ATTACK.fh}, если Дикая ярость и Медведь находятся в пределах {RANGE.fh}4 друг от друга»",
+            "Поменяйте 1 карту {+2_WHITE} на 1 карту {+4_WHITE}",
+            "Добавьте 2 карты {+1_WHITE} {WIND}/{EARTH}",
+            "Добавьте 1 карту {+2_WHITE} {PUSH.fh}2",
+            "Игнорируйте отрицательные эффекты сценариев и добавьте 1 карту {+1_WHITE} «{SAFEGUARD_WHITE}, {TARGET.fh}1 союзник»",
+            "Каждый раз, когда атакуют Медведя, считайте любую карту модификатора атаки {2X_MODIFIER}, которую вытянул враг, картой {+0_MODIFIER}",
+            "Один раз за сценарий в свой ход {COMMAND}: {MOVE.fh}4. Если Медведь покидает клетку, соседнюю с вами, во время этого движения, вы можете {TELEPORT.fh} на свободную клетку, соседнюю с Медведем, в конце движения",
+            "В начале или в конце каждого вашего долгого отдыха вы можете {WIND}/{EARTH} и уменьшить ваше текущее число здоровья на X (X не менее 1), чтобы {COMMAND}: {HEAL.fh}X, на себя"
         ]
     }
 }

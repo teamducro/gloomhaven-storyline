@@ -222,759 +222,759 @@ export default {
         "name": "Modèle d'objet aléatoire"
     },
     "gh-75": {
-        "name": "Cryptogram Found (See scenario book page 121)"
+        "name": "Cryptogramme trouvé (voir livre de scénarios page 121)"
     },
     "fc-76": {
-        "name": "Suffer 3 damage, gain {WOUND} and 10 gold"
+        "name": "Subissez 3 dégâts, gagnez {WOUND} et 10 pièces d'or"
     },
     "fc-77": {
-        "name": "Gain “Major Cure Potion” (Item 090)"
+        "name": "« Potion de Guérison Majeure » (Objet 090)"
     },
     "fc-78": {
-        "name": "“Ancient Bow” (Item 157)"
+        "name": "« Arc Antique » (Objet 157)"
     },
     "fc-79": {
-        "name": "Gain “Falcon Figurine” (Item 157)"
+        "name": "« Statuette de faucon » (Objet 157)"
     },
     "fc-80": {
-        "name": "Gain 1 ✓ and add Rift Event 19 to the deck"
+        "name": "1 ✓ et ajoutez l'Évènement de Faille 19 au paquet"
     },
     "fc-81": {
-        "name": "Gain “Scroll of Haste” (Item 159) and 10 gold"
+        "name": "« Parchemin de Hâte » (Objet 159) et 10 pièces d'or"
     },
     "fc-82": {
-        "name": "“Rejuvenation Greaves” (Item 158)"
+        "name": "« Jambières de Rajeunissement » (Objet 158)"
     },
     "fc-83": {
-        "name": "Gain “Major Power Potion” (Item 041)"
+        "name": "« Potion de Puissance Majeure » (Objet 041)"
     },
     "fc-84": {
-        "name": "Gain “Mask of Terrors” (Item 066)"
+        "name": "« Masque de Terreur » (Objet 066)"
     },
     "fc-85": {
-        "name": "Suffer 3 damage, gain {POISON} and 10 gold"
+        "name": "Subissez 3 dégâts, gagnez {POISON} et 10 pièces d'or"
     },
     "fc-86": {
-        "name": "Unlock Diviner {DR} Solo Scenario “Forecast of the Inevitable” (see page 25 of the main book)"
+        "name": "Débloquez le scénario solo de la Devineresse {DR} « Prévision de l'Inévitable » (voir page 25 du livre principal)"
     },
     "fc-87": {
-        "name": "Suffer 2 damage, gain CURSE and 15 gold"
+        "name": "Subissez 2 dégâts, gagnez MALÉDICTION et 15 pièces d'or"
     },
     "fc-88": {
-        "name": "Gain 1 ✓"
+        "name": "1 ✓"
     },
     "fc-89": {
-        "name": "Gain “Second Chance Ring” (Item 070)"
+        "name": "« Anneau de Seconde Chance » (Objet 070)"
     },
     "fc-90": {
-        "name": "10 gold each, Read section 75 on page 49"
+        "name": "10 pièces d'or chacun, lisez la section 75 à la page 49"
     },
     "fc-91": {
-        "name": "Gain 30 gold and Party Achievement: “Opportunists” Add City Event 84 to the deck"
+        "name": "30 pièces d'or et Haut-Fait de groupe : « Opportunistes ». Ajoutez l'Évènement de Ville 84 au paquet"
     },
     "fc-93": {
-        "name": "“Scroll of Haste” (Item 159)"
+        "name": "« Parchemin de Hâte » (Objet 159)"
     },
     "fc-94": {
-        "name": "Gain 1 ✓ and add Rift Event 20 to the deck"
+        "name": "1 ✓ et ajoutez l'Évènement de Faille 20 au paquet"
     },
     "fc-95": {
-        "name": "Gain 25 gold and Party Achievement: “A Strongbox” Add City Event  85 to the deck"
+        "name": "25 pièces d'or et Haut-Fait de groupe : « Un Coffre-fort ». Ajoutez l'Évènement de Ville 85 au paquet"
     },
     "fc-96": {
-        "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
+        "name": "Vous trouvez un vieux grimoire couvert de dessins techniques et de schémas de conception d'une grande variété de machines exotiques. Une curieuse note manuscrite figure à l'intérieur de la couverture : {NOTE_115}"
     },
     "jotl-1": {
-        "name": "Gain 10 experience"
+        "name": "10 XP"
     },
     "jotl-2": {
-        "name": "“Ring of Strength” (Item 31)"
+        "name": "« Anneau de force » (Objet 31)"
     },
     "jotl-3": {
-        "name": "Gain 15 experience"
+        "name": "15 XP"
     },
     "jotl-4": {
-        "name": "Gain 5 gold"
+        "name": "5 pièces d'or"
     },
     "jotl-5": {
-        "name": "Gain 1 ✔"
+        "name": "1 ✔"
     },
     "jotl-6": {
-        "name": "Gain 10 gold"
+        "name": "10 pièces d'or"
     },
     "jotl-7": {
-        "name": "Gain 5 gold"
+        "name": "5 pièces d'or"
     },
     "jotl-8": {
-        "name": "Suffer 3 damage, gain {POISON,"
+        "name": "Subissez 3 dégâts, gagnez EMPOISONNEMENT"
     },
     "jotl-9": {
-        "name": "Gain 5 gold"
+        "name": "5 pièces d'or"
     },
     "jotl-10": {
-        "name": "“Fateful Compass” (Item 27)"
+        "name": "« Compas Maudit » (Objet 27)"
     },
     "jotl-11": {
-        "name": "“Ring of Haste” (Item 30)"
+        "name": "« Anneau de Hâte » (Objet 30)"
     },
     "jotl-12": {
-        "name": "Gain 5 gold"
+        "name": "5 pièces d'or"
     },
     "jotl-13": {
-        "name": "Gain 5 gold"
+        "name": "5 pièces d'or"
     },
     "jotl-14": {
-        "name": "Gain 3 money tokens"
+        "name": "3 jetons d'argent"
     },
     "jotl-15": {
-        "name": "Gain 1 ✔"
+        "name": "1 ✔"
     },
     "jotl-16": {
-        "name": "“Mana Potion” (Item 14)"
+        "name": "« Potion de Mana » (Objet 14)"
     },
     "jotl-X": {
-        "name": "“Ring of Restoration” (Item 32)"
+        "name": "« Anneau de Récupération » (Objet 32)"
     },
     "cs-1": {
-        "name": "“Drake's Blood” (Item 59)"
+        "name": "« Sang de Wyverne » (Objet 59)"
     },
     "cs-2": {
-        "name": "“Orb of Fortune” (Item 09)"
+        "name": "« Orbe de Fortune » (Objet 09)"
     },
     "cs-3": {
-        "name": "“Chain Mace” (Item 14)"
+        "name": "« Masse à Chaîne » (Objet 14)"
     },
     "cs-4": {
-        "name": "Gain 15 gold and Recover one lost card"
+        "name": "15 pièces d'or et récupérez une carte perdue"
     },
     "cs-5": {
-        "name": "“Concussion Mine” (Item 31)"
+        "name": "« Mine à Commotion » (Objet 31)"
     },
     "cs-6": {
-        "name": "Gain 20 gold and disarm all adjacent traps"
+        "name": "20 pièces d'or et désarmez tous les pièges adjacents"
     },
     "cs-7": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-8": {
-        "name": "“Dizzying Tincture” (Item 58)"
+        "name": "« Teinture Vertigineuse » (Objet 58)"
     },
     "cs-9": {
-        "name": "“Orb of Fortune” (Item 9)"
+        "name": "« Orbe de Fortune » (Objet 9)"
     },
     "cs-10": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-11": {
-        "name": "“Dizzying Tincture” (Item 58)"
+        "name": "« Teinture Vertigineuse » (Objet 58)"
     },
     "cs-12": {
-        "name": "“Mana Medicine” (Item 60)"
+        "name": "« Médecine de Mana » (Objet 60)"
     },
     "cs-13": {
-        "name": "“Orb of Despair” (Item 10)"
+        "name": "« Orbe de Désespoir » (Objet 10)"
     },
     "cs-14": {
-        "name": "“Steel Helmet” (Item 22)"
+        "name": "« Casque d'Acier » (Objet 22)"
     },
     "cs-15": {
-        "name": "“Shifting Compass” (Item 32)"
+        "name": "« Boussole Changeante » (Objet 32)"
     },
     "cs-16": {
-        "name": "Perform “Heal 6, Self”, gain {POISON}"
+        "name": "Effectuez « Soin 6, Soi-même », gagnez {POISON}"
     },
     "cs-17": {
-        "name": "“Concussion Mine” (Item 31)"
+        "name": "« Mine à Commotion » (Objet 31)"
     },
     "cs-18": {
         "name": "“Boneclad Shawl (Item 25)"
     },
     "cs-19": {
-        "name": "Gain ✓ and generate a Wild Element"
+        "name": "1 ✓ et générez un Élément sauvage"
     },
     "cs-20": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-21": {
-        "name": "“Steel Helmet” (Item 22)"
+        "name": "« Casque d'Acier » (Objet 22)"
     },
     "cs-22": {
-        "name": "“Boots of Perpetuity” (Item 19)"
+        "name": "« Bottes de Perpétuité » (Objet 19)"
     },
     "cs-23": {
-        "name": "“Trophy Helmet” (Item 12)"
+        "name": "« Heaume Trophée » (Objet 12)"
     },
     "cs-24": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-25": {
-        "name": "“Draining Greaves” (Item 15)"
+        "name": "« Jambières Drainantes » (Objet 15)"
     },
     "cs-26": {
-        "name": "“Iron Snare” (Item 30)"
+        "name": "« Collet de Fer » (Objet 30)"
     },
     "cs-27": {
-        "name": "“Woven Plate Armor” (Item 23)"
+        "name": "« Armure de Plaques Tissées » (Objet 23)"
     },
     "cs-28": {
-        "name": "“Chain Mace” (Item 14)"
+        "name": "« Masse à Chaîne » (Objet 14)"
     },
     "cs-29": {
-        "name": "“Woven Plate Armor” (Item 23)"
+        "name": "« Armure de Plaques Tissées » (Objet 23)"
     },
     "cs-30": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "« Châle d'Os » (Objet 25)"
     },
     "cs-31": {
-        "name": "“Drake's Blood” (Item 59)"
+        "name": "« Sang de Wyverne » (Objet 59)"
     },
     "cs-32": {
-        "name": "“Curious Pendant” (Item 20)"
+        "name": "« Pendentif Curieux » (Objet 20)"
     },
     "cs-33": {
-        "name": "25  gold, gain {POISON}"
+        "name": "25 pièces d'or, gagnez {POISON}"
     },
     "cs-34": {
-        "name": "Suffer hazardous terrain damage, gain {INVISIBLE}"
+        "name": "Subissez les dégâts du terrain dangereux, gagnez {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Curseblood Blade” (Item 36)"
+        "name": "« Lame de Sang-Maudit » (Objet 36)"
     },
     "cs-36": {
-        "name": "10 experience, gain {INVSIBLE}"
+        "name": "10 XP, gagnez {INVSIBLE}"
     },
     "cs-37": {
-        "name": "“Draining Greaves” (Item 15)"
+        "name": "« Jambières Drainantes » (Objet 15)"
     },
     "cs-38": {
-        "name": "“War Pick” (Item 13)"
+        "name": "« Pic de Guerre » (Objet 13)"
     },
     "cs-39": {
-        "name": "“Infrared Goggles” (Item 21)"
+        "name": "« Lunettes Infrarouges » (Objet 21)"
     },
     "cs-40": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-41": {
-        "name": "“Ashsteel Gauntlets” (Item 61)"
+        "name": "« Gantelets d'Acier-Cendre » (Objet 61)"
     },
     "cs-42": {
-        "name": "“War Pick” (Item 13)"
+        "name": "« Pic de Guerre » (Objet 13)"
     },
     "cs-43": {
-        "name": "10 experience and Refresh all spent items"
+        "name": "10 XP et rafraîchissez tous les objets dépensés"
     },
     "cs-44": {
-        "name": "“Mana Medicine” (Item 60)"
+        "name": "« Médecine de Mana » (Objet 60)"
     },
     "cs-45": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-46": {
-        "name": "“Vipertooth Dagger” design (Item 54)"
+        "name": "Modèle de « Dague en Croc de Vipère » (Objet 54)"
     },
     "cs-47": {
-        "name": "15 gold"
+        "name": "15 pièces d'or"
     },
     "cs-48": {
-        "name": "15 gold"
+        "name": "15 pièces d'or"
     },
     "cs-49": {
-        "name": "“Magma Waders” (Item gh-99)"
+        "name": "« Cuissardes de Magma » (Objet gh-99)"
     },
     "cs-50": {
-        "name": "“Bottled Moonlight” (Item 18)"
+        "name": "« Clair de Lune en Bouteille » (Objet 18)"
     },
     "fh-1": {
-        "name": "Gain four loot cards."
+        "name": "Gagnez quatre cartes Butin."
     },
     "fh-2": {
-        "name": "Suffer 3 damage, then gain {MUDDLE}"
+        "name": "Subissez 3 dégâts, puis gagnez {MUDDLE}"
     },
     "fh-3": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-4": {
-        "name": "Gain Eventide Scepter 200."
+        "name": "Gagnez Sceptre du Crépuscule 200."
     },
     "fh-5": {
-        "name": "Gain Severed Claw 204."
+        "name": "Gagnez Pince Sectionnée 204."
     },
     "fh-6": {
-        "name": "Gain Opulent Shoes 199."
+        "name": "Gagnez Poulaines Luxueuses 199."
     },
     "fh-7": {
-        "name": "Gain Data Drive 227."
+        "name": "Gagnez Lecteur de Données 227."
     },
     "fh-8": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-9": {
-        "name": "Unlock a random side scenario."
+        "name": "Débloquez un scénario annexe aléatoire."
     },
     "fh-10": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-11": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-12": {
-        "name": "You find the remains of Camilla and her paintings of a majestic horned creature. Gain “Brummix” campaign sticker and add s 99.1 to the campaign calendar in three weeks."
+        "name": "Vous trouvez les restes de Camilla et ses peintures d'une majestueuse créature cornue. Gagnez l'autocollant de campagne « Brummix » et ajoutez 99.1 au calendrier de la campagne dans trois semaines."
     },
     "fh-13": {
-        "name": "Gain Fishhook 207."
+        "name": "Gagnez Hameçon 207."
     },
     "fh-14": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-15": {
-        "name": "Unlock a random side scenario."
+        "name": "Débloquez un scénario annexe aléatoire."
     },
     "fh-16": {
-        "name": "Gain Decanter of Mists 183."
+        "name": "Gagnez Carafe des Brumes 183."
     },
     "fh-17": {
-        "name": "Gain 3 Lumber."
+        "name": "Gagnez 3 Bois."
     },
     "fh-18": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-19": {
-        "name": "Gain 1 Axenut, 1 Corpsecap, and 1 Flamefruit."
+        "name": "Gagnez 1 Glandache, 1 Capuchon-des-morts et 1 Fruit-de-feu."
     },
     "fh-20": {
-        "name": "Gain four loot cards."
+        "name": "Gagnez quatre cartes Butin."
     },
     "fh-21": {
-        "name": "Gain Detonator blueprint 064."
+        "name": "Gagnez Détonateur 064."
     },
     "fh-22": {
-        "name": "Gain Scaled Armor blueprint 068."
+        "name": "Gagnez Armure d'Écailles 068."
     },
     "fh-23": {
-        "name": "Unlock a random side scenario."
+        "name": "Débloquez un scénario annexe aléatoire."
     },
     "fh-24": {
-        "name": "Gain Bane."
+        "name": "Gagnez FLÉAU."
     },
     "fh-25": {
-        "name": "Gain 1 Corpsecap and 1 Flamefruit."
+        "name": "Gagnez 1 Capuchon-des-morts et 1 Fruit-de-feu."
     },
     "fh-26": {
-        "name": "Gain Lightning Rod 223."
+        "name": "Gagnez Paratonnerre 223."
     },
     "fh-27": {
-        "name": "Gain two loot cards and {POISON}."
+        "name": "Gagnez deux cartes Butin et {POISON}."
     },
     "fh-28": {
-        "name": "Gain four loot cards."
+        "name": "Gagnez quatre cartes Butin."
     },
     "fh-29": {
-        "name": "Gain 2 Lumber 2 Hide."
+        "name": "Gagnez 2 Bois et 2 Peaux."
     },
     "fh-30": {
-        "name": "Gain four loot cards."
+        "name": "Gagnez quatre cartes Butin."
     },
     "fh-31": {
-        "name": "Gain Balanced Scales blueprint 078."
+        "name": "Gagnez Balance Équilibrée 078."
     },
     "fh-32": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-33": {
-        "name": "Gain 3 Lumber."
+        "name": "Gagnez 3 Bois."
     },
     "fh-34": {
-        "name": "Gain 1 ✔."
+        "name": "Gagnez 1 ✔."
     },
     "fh-35": {
-        "name": "Gain Extendable Pole 228."
+        "name": "Gagnez Tige Extensible 228."
     },
     "fh-36": {
-        "name": "Gain Black Box 222."
+        "name": "Gagnez Boîte Noire 222."
     },
     "fh-37": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-38": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-39": {
-        "name": "Unlock a random side scenario."
+        "name": "Débloquez un scénario annexe aléatoire."
     },
     "fh-40": {
-        "name": "Gain Chaos Cannon blueprint 077."
+        "name": "Gagnez Canon Chaotique 077."
     },
     "fh-41": {
-        "name": "Gain Algox Carving 225."
+        "name": "Gagnez Fétiche Algox 225."
     },
     "fh-42": {
-        "name": "Gain Giant Sword 206."
+        "name": "Gagnez Épée Gigantesque 206."
     },
     "fh-43": {
-        "name": "Gain four loot cards."
+        "name": "Gagnez quatre cartes Butin."
     },
     "fh-44": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-45": {
-        "name": "Gain 2 Lumber 2 Metal."
+        "name": "Gagnez 2 Bois et 2 Métaux."
     },
     "fh-46": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-47": {
-        "name": "Gain 5 Experience."
+        "name": "Gagnez 5 XP."
     },
     "fh-48": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-49": {
-        "name": "Gain Bone Boots blueprint 071"
+        "name": "Gagnez Botte d'Os 071."
     },
     "fh-50": {
-        "name": "Gain Cured Hide Armor 017."
+        "name": "Gagnez Armure de Cuir Durci 017."
     },
     "fh-51": {
-        "name": "Read 78.1."
+        "name": "Lisez 78.1."
     },
     "fh-52": {
-        "name": "Gain Titan Nail 208."
+        "name": "Gagnez Clou de Titan 208."
     },
     "fh-53": {
-        "name": "Gain Eye of the Storm 239."
+        "name": "Gagnez Oeil du Cyclone 239."
     },
     "fh-54": {
-        "name": "Treasure chest? There was no treasure chest there. Maybe you should slow down on the drink."
+        "name": "Un coffre au trésor ? Il n'y avait aucun coffre au trésor là-bas. Vous devriez peut-être ralentir sur la boisson."
     },
     "fh-55": {
-        "name": "Gain Harpoon 205."
+        "name": "Gagnez Harpon 205."
     },
     "fh-56": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-57": {
-        "name": "What’s this? An empty chest with a lead trapdoor at the bottom . You make note of the location so you can return with Gem’s help later. Unlock The Lead Door 103."
+        "name": "Qu'est-ce que c'est ? Un coffre vide avec une trappe de plomb au fond. Vous notez l'emplacement pour y revenir plus tard avec l'aide de Gem. Débloquez La Trappe de Plomb 103."
     },
     "fh-58": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-59": {
-        "name": "Gain Pain Simulacrum blueprint 081."
+        "name": "Gagnez Poupée de Magie Noire 081."
     },
     "fh-60": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-61": {
-        "name": "Unlock a random side scenario."
+        "name": "Débloquez un scénario annexe aléatoire."
     },
     "fh-62": {
-        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+        "name": "Gagnez le plan de Cube Mécanique 082 quand vous trouvez l'autre moitié de ce plan."
     },
     "fh-63": {
-        "name": "Gain five loot cards."
+        "name": "Gagnez cinq cartes Butin."
     },
     "fh-64": {
-        "name": "Gain 3 Lumber."
+        "name": "Gagnez 3 Bois."
     },
     "fh-65": {
-        "name": "Gain 15 Money."
+        "name": "Gagnez 15 pièces d'or."
     },
     "fh-66": {
-        "name": "Suffer 2 damage, then gain Brittle."
+        "name": "Subissez 2 dégâts, puis gagnez Fragilité."
     },
     "fh-67": {
-        "name": "Unlock a random side scenario."
+        "name": "Débloquez un scénario annexe aléatoire."
     },
     "fh-68": {
-        "name": "Gain 4 Metal."
+        "name": "Gagnez 4 Métaux."
     },
     "fh-69": {
-        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+        "name": "Gagnez le plan de Cube Mécanique 082 quand vous trouvez l'autre moitié de ce plan."
     },
     "fh-70": {
-        "name": "Gain Horn of Command blueprint 076."
+        "name": "Gagnez Cor de Commandement 076."
     },
     "fh-71": {
-        "name": "Gain four loot cards."
+        "name": "Gagnez quatre cartes Butin."
     },
     "fh-72": {
-        "name": "Gain Living Stone blueprint 080."
+        "name": "Gagnez Pierre Animée 080."
     },
     "fh-73": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-74": {
-        "name": "Gain a random item blueprint."
+        "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-75": {
-        "name": "Gain 1 ✔."
+        "name": "Gagnez 1 ✔."
     },
     "fh-76": {
-        "name": "Unlock a random side scenario."
+        "name": "Débloquez un scénario annexe aléatoire."
     },
     "fh-77": {
-        "name": "Gain three loot cards."
+        "name": "Gagnez trois cartes Butin."
     },
     "fh-78": {
-        "name": "Gain Opulent Shoes 199."
+        "name": "Gagnez Poulaines Luxueuses 199."
     },
     "fh-79": {
-        "name": "Gain 10 Experience."
+        "name": "Gagnez 10 XP."
     },
     "fh-80": {
-        "name": "Gain 15 Experience."
+        "name": "Gagnez 15 XP."
     },
     "fh-81": {
-        "name": "Gain Unfettered Arm 226."
+        "name": "Gagnez Bras d'Émancipé 226."
     },
     "fh-82": {
-        "name": "Gain Oak Staff blueprint 072."
+        "name": "Gagnez Bâton de Chêne 072."
     },
     "fh-83": {
-        "name": "Gain Tri-Corner Hat 195."
+        "name": "Gagnez Tricorne 195."
     },
     "fh-84": {
-        "name": "Gain Ice Shiv 221."
+        "name": "Gagnez Surin de Glace 221."
     },
     "fh-85": {
-        "name": "Gain 10 money."
+        "name": "Gagnez 10 pièces d'or."
     },
     "gh2-1": {
-        "name": "Gain “Magma Waders” (Item 142)"
+        "name": "« Cuissardes de Magma » (Objet 142)"
     },
     "gh2-2": {
-        "name": "Suffer 3 damage and gain {POISON}"
+        "name": "Subissez 3 dégâts et {POISON}"
     },
     "gh2-3": {
-        "name": "Gain “Star Earring” (Item 63)"
+        "name": "« Boucle d'Oreille Étoilée » (Objet 63)"
     },
     "gh2-4": {
-        "name": "Gain “Cloak of Phasing” (Item 98)"
+        "name": "« Cape de Phase » (Objet 98)"
     },
     "gh2-5": {
-        "name": "Gain “Pendant of Dark Pacts” (Item 128)"
+        "name": "« Pendentif des Pactes Obscurs » (Objet 128)"
     },
     "gh2-6": {
-        "name": "Random Side Scenario"
+        "name": "Scénario Annexe aléatoire"
     },
     "gh2-7": {
-        "name": "Gain “Thief's Hood” (Item 108)"
+        "name": "« Capuche de Voleur » (Objet 108)"
     },
     "gh2-8": {
-        "name": "Suffer 3 damage and gain {CURSE}"
+        "name": "Subissez 3 dégâts et {CURSE}"
     },
     "gh2-9": {
-        "name": "Gain 20 experience"
+        "name": "20 XP"
     },
     "gh2-10": {
-        "name": "Gain 30 gold"
+        "name": "30 pièces d'or"
     },
     "gh2-11": {
-        "name": "Random Side Scenario"
+        "name": "Scénario Annexe aléatoire"
     },
     "gh2-12": {
-        "name": "Gain 1 ✔"
+        "name": "1 ✔"
     },
     "gh2-13": {
-        "name": "Gain 1 ✔"
+        "name": "1 ✔"
     },
     "gh2-14": {
-        "name": "Gain 40 gold"
+        "name": "40 pièces d'or"
     },
     "gh2-15": {
-        "name": "Gain 20 gold"
+        "name": "20 pièces d'or"
     },
     "gh2-16": {
-        "name": "Suffer 3 damage and gain {WOUND}"
+        "name": "Subissez 3 dégâts et {WOUND}"
     },
     "gh2-17": {
-        "name": "Gain 15 gold"
+        "name": "15 pièces d'or"
     },
     "gh2-18": {
-        "name": "Gain “Unstable Explosives” (Item 99)"
+        "name": "« Explosifs Instables » (Objet 99)"
     },
     "gh2-19": {
-        "name": "Gain “Drakescale Boots” (Item 119)"
+        "name": "« Bottes d'Écailles de Wyverne » (Objet 119)"
     },
     "gh2-20": {
-        "name": "Gain 25 gold"
+        "name": "25 pièces d'or"
     },
     "gh2-21": {
-        "name": "Gain 2 ✔"
+        "name": "2 ✔"
     },
     "gh2-22": {
-        "name": "Gain “Helm of the Mountain” (Item 129) and “Mountain Hammer” (Item 130)"
+        "name": "« Heaume de la Montagne » (Objet 129) et « Marteau de la Montagne » (Objet 130)"
     },
     "gh2-23": {
-        "name": "Gain 15 gold"
+        "name": "15 pièces d'or"
     },
     "gh2-24": {
-        "name": "Gain “Warding Rod” (Item 104)"
+        "name": "« Baguette de Protection » (Objet 104)"
     },
     "gh2-25": {
-        "name": "Gain 1 ✔"
+        "name": "1 ✔"
     },
     "gh2-26": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-27": {
-        "name": "Suffer 3 damage and gain {MUDDLE}"
+        "name": "Subissez 3 dégâts et {MUDDLE}"
     },
     "gh2-28": {
-        "name": "Gain 2 ✔"
+        "name": "2 ✔"
     },
     "gh2-29": {
-        "name": "Gain “Charged Boots” (Item 100)"
+        "name": "« Bottes Chargées » (Objet 100)"
     },
     "gh2-30": {
-        "name": "Gain 20 experience"
+        "name": "20 XP"
     },
     "gh2-31": {
-        "name": "Gain “Wave Crest” (Item 131)"
+        "name": "« Crête des Vagues » (Objet 131)"
     },
     "gh2-32": {
-        "name": "Random Side Scenario"
+        "name": "Scénario Annexe aléatoire"
     },
     "gh2-33": {
-        "name": "Gain “Cure Potion” (Item 101)"
+        "name": "« Potion de Guérison » (Objet 101)"
     },
     "gh2-34": {
-        "name": "Gain “Drakescale Helm” (Item 121)"
+        "name": "« Heaume d'Écailles de Wyverne » (Objet 121)"
     },
     "gh2-35": {
-        "name": "Gain “Rod of Transference” (Item 115)"
+        "name": "« Bâton de Transfert » (Objet 115)"
     },
     "gh2-36": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-37": {
-        "name": "Gain “Shoes of Happiness” (Item 97)"
+        "name": "« Brodequins de Bonheur » (Objet 97)"
     },
     "gh2-38": {
-        "name": "Gain 1 ✔"
+        "name": "1 ✔"
     },
     "gh2-39": {
-        "name": "Gain 20 experience"
+        "name": "20 XP"
     },
     "gh2-40": {
-        "name": "Gain “Fueled Falchion” (Item 110)"
+        "name": "« Fauchon Attisé » (Objet 110)"
     },
     "gh2-41": {
-        "name": "Gain 15 gold"
+        "name": "15 pièces d'or"
     },
     "gh2-42": {
-        "name": "Suffer 5 damage"
+        "name": "Subissez 5 dégâts"
     },
     "gh2-43": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-44": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-45": {
-        "name": "Gain 2 ✔"
+        "name": "2 ✔"
     },
     "gh2-46": {
-        "name": "Gain 15 gold"
+        "name": "15 pièces d'or"
     },
     "gh2-47": {
-        "name": "Suffer 3 damage and gain {POISON}"
+        "name": "Subissez 3 dégâts et {POISON}"
     },
     "gh2-48": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-49": {
-        "name": "Gain 15 experience"
+        "name": "15 XP"
     },
     "gh2-50": {
-        "name": "Gain “Steam Armor” (Item 106)"
+        "name": "« Armure à Vapeur » (Objet 106)"
     },
     "gh2-51": {
-        "name": "Gain 15 experience"
+        "name": "15 XP"
     },
     "gh2-52": {
-        "name": "Random Side Scenario"
+        "name": "Scénario Annexe aléatoire"
     },
     "gh2-53": {
-        "name": "Gain 1 ✔"
+        "name": "1 ✔"
     },
     "gh2-54": {
-        "name": "Gain 15 gold and “Steel Ring” (Item 102)"
+        "name": "15 pièces d'or et « Anneau d'Acier » (Objet 102)"
     },
     "gh2-55": {
-        "name": "Gain 20 experience"
+        "name": "20 XP"
     },
     "gh2-56": {
-        "name": "Gain 15 gold"
+        "name": "15 pièces d'or"
     },
     "gh2-57": {
-        "name": "Random Side Scenario"
+        "name": "Scénario Annexe aléatoire"
     },
     "gh2-58": {
-        "name": "Gain 20 gold"
+        "name": "20 pièces d'or"
     },
     "gh2-59": {
-        "name": "Gain “Shield of the Righteous” (Item 148)"
+        "name": "« Bouclier du Juste » (Objet 148)"
     },
     "gh2-60": {
-        "name": "Suffer 5 damage"
+        "name": "Subissez 5 dégâts"
     },
     "gh2-61": {
-        "name": "Gain “Boots of Bracing” (Item 143)"
+        "name": "« Bottes d'Appui » (Objet 143)"
     },
     "gh2-62": {
-        "name": "Gain 20 gold"
+        "name": "20 pièces d'or"
     },
     "gh2-63": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-64": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-65": {
-        "name": "Gain “Ranger's Hood” (Item 103)"
+        "name": "« Capuche du Rôdeur » (Objet 103)"
     },
     "gh2-66": {
-        "name": "Gain {POISON} and {STRENGTHEN} and Recover 2 lost cards"
+        "name": "{POISON} et {STRENGTHEN} et récupérez 2 cartes perdues"
     },
     "gh2-67": {
-        "name": "Gain “Doomed Compass” (Item 132)"
+        "name": "« Compas Maudit » (Objet 132)"
     },
     "gh2-68": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-69": {
-        "name": "Gain 25 gold"
+        "name": "25 pièces d'or"
     },
     "gh2-70": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-71": {
-        "name": "Gain 2 ✔"
+        "name": "2 ✔"
     },
     "gh2-72": {
-        "name": "Gain 25 gold"
+        "name": "25 pièces d'or"
     },
     "gh2-73": {
-        "name": "Gain “Necklace of Teeth” (Item 107)"
+        "name": "« Collier de Dents » (Objet 107)"
     },
     "gh2-74": {
-        "name": "Suffer 3 damage and gain {IMMOBILIZE}"
+        "name": "Subissez 3 dégâts et {IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "Gain “Drakescale Armor” (Item 120)"
+        "name": "« Armure d'Écailles de Wyverne » (Objet 120)"
     },
     "gh2-76": {
-        "name": "Random Item Design"
+        "name": "Modèle d'objet aléatoire"
     },
     "gh2-77": {
-        "name": "Gain 30 gold"
+        "name": "30 pièces d'or"
     },
     "gh2-78": {
-        "name": "Gain 20 gold"
+        "name": "20 pièces d'or"
     },
     "gh2-79": {
-        "name": "Random Side Scenario"
+        "name": "Scénario Annexe aléatoire"
     }
 }

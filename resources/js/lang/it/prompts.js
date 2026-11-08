@@ -6,73 +6,73 @@ export default {
         "text": "Avete recuperato il tesoro del Draco. Lo restituite al Draco o seguite gli ordini del Capitano delle Guardie e provate ad uccidere il Draco?"
     },
     "burningMountain": {
-        "1": "Conclusion A: You decide to end your turn at G and remove one of the items from the game.",
-        "2": "Conclusion B: After looting the chest, all characters returned to the entrance before becoming exhausted.",
-        "title": "Escape The Burning Mountain",
-        "text": "You looted the treasure. Do you dare to escape the rumbling volcano and keep the retrieved items?"
+        "1": "Conclusione A: decidete di terminare il turno in G e di rimuovere dal gioco uno degli oggetti.",
+        "2": "Conclusione B: dopo aver saccheggiato il forziere, tutti i personaggi sono tornati all'ingresso prima di diventare esausti.",
+        "title": "Fuga dalla Montagna Infuocata",
+        "text": "Avete saccheggiato il tesoro. Osate fuggire dal vulcano in eruzione e tenere gli oggetti recuperati?"
     },
     "merchantsBay": {
-        "1": "You recovered both scrolls.",
-        "2": "You failed to recover the Record of the Journey.",
-        "3": "You failed to recover the Record of Accounts.",
-        "title": "The Merchant’s Bay",
-        "text": "You doused the flames and disposed the interlopers. How many records were you able to save?"
+        "1": "Avete recuperato entrambe le pergamene.",
+        "2": "Non siete riusciti a recuperare il Registro del Viaggio.",
+        "3": "Non siete riusciti a recuperare il Registro dei Conti.",
+        "title": "La Baia dei Mercanti",
+        "text": "Avete spento le fiamme e sbarazzato il luogo degli intrusi. Quanti registri siete riusciti a salvare?"
     },
     "shiftingGears": {
-        "1": "All enemies are killed.",
+        "1": "Tutti i nemici sono stati uccisi.",
         "2": "???",
-        "title": "Bastian’s workshop",
-        "text": "Did you manage to kill all enemies?"
+        "title": "L'officina di Bastian",
+        "text": "Siete riusciti a uccidere tutti i nemici?"
     },
     "searchPiecesOfAnArtifact": {
-        "1": "All enemies are killed.",
-        "2": "Found more pieces of the rift device.",
-        "title": "Search pieces of the rift device",
-        "text": "Did you manage to kill all enemies?"
+        "1": "Tutti i nemici sono stati uccisi.",
+        "2": "Avete trovato altri pezzi del dispositivo del Varco.",
+        "title": "Cerca i pezzi del dispositivo del Varco",
+        "text": "Siete riusciti a uccidere tutti i nemici?"
     },
     "directingBeams": {
-        "1": "All four beams are directed at the fountain",
-        "2": "Survived for fourteen rounds",
-        "title": "Directing Beams",
-        "text": "Did you direct the beams to the fountain?"
+        "1": "Tutti e quattro i raggi sono diretti verso la fontana",
+        "2": "Sopravvissuti per quattordici round",
+        "title": "Dirigere i Raggi",
+        "text": "Avete diretto i raggi verso la fontana?"
     },
     "aftershocks": {
-        "1": "Exactly four civilians are alive.",
-        "2": "Five or more civilians are alive.",
-        "title": "Protect the civilians",
-        "text": "How many Valraths were you able to bring to safety?"
+        "1": "Sono vivi esattamente quattro civili.",
+        "2": "Sono vivi cinque o più civili.",
+        "title": "Proteggere i civili",
+        "text": "Quanti Valrath siete riusciti a portare in salvo?"
     },
     "bloodyWar": {
-        "1": "A: Assist the Valraths",
-        "2": "B: Assist the Humans",
-        "3": "C: Fight both sides",
-        "title": "Bloody Demon War",
+        "1": "A: Aiutare i Valrath",
+        "2": "B: Aiutare gli Umani",
+        "3": "C: Combattere entrambe le fazioni",
+        "title": "La Sanguinosa Guerra dei Demoni",
         "text": "Which side dit you choose?"
     },
     "escapeFromTheHusk": {
         "1": "All characters escaped",
         "2": "???",
-        "title": "Escape from The Husk",
-        "text": "Did all characters escape through an exit?"
+        "title": "Fuga dal Guscio",
+        "text": "Tutti i personaggi sono fuggiti attraverso un'uscita?"
     },
     "undeadTerrors": {
-        "1": "Give the potion to Selandre.",
-        "2": "Tell Selandre the potion was destroyed.",
-        "title": "Can you trust Selandre?",
-        "text": "Do you listen to Dominic's last words or your greed?"
+        "1": "Dare la pozione a Selandre.",
+        "2": "Dire a Selandre che la pozione è stata distrutta.",
+        "title": "Ci si può fidare di Selandre?",
+        "text": "Date ascolto alle ultime parole di Dominic o alla vostra avidità?"
     },
     "capstoneTest": {
-        "1": "One named enemy is killed",
-        "2": "Two named enemies are killed",
-        "3": "Three named enemies are killed",
-        "title": "Test your Power Modulator",
-        "text": "How many Named Enemies were you able to kill before exhausting?"
+        "1": "Un nemico nominato è stato ucciso",
+        "2": "Due nemici nominati sono stati uccisi",
+        "3": "Tre nemici nominati sono stati uccisi",
+        "title": "Metti alla prova il tuo Modulatore di Potenza",
+        "text": "Quanti Nemici Nominati siete riusciti a uccidere prima di diventare esausti?"
     },
     "unseenPlight": {
-        "1": "Killed the Guttermaw, claiming Guttermaw's Bounty",
-        "2": "Saved the children, fulfilling Feigrin's Request",
-        "title": "Broken Homes and Lairs",
-        "text": "Did you bring death or save lives?"
+        "1": "Avete ucciso il Guttermaw, ottenendo la Taglia di Guttermaw",
+        "2": "Avete salvato i bambini, esaudendo la Richiesta di Feigrin",
+        "title": "Case e Tane Distrutte",
+        "text": "Avete portato la morte o salvato delle vite?"
     },
     "startingMorale": {
         "1": "0",
@@ -81,50 +81,50 @@ export default {
         "4": "3",
         "5": "4",
         "6": "5",
-        "title": "Starting Morale",
-        "text": "How many City Guards are still on the map?"
+        "title": "Morale Iniziale",
+        "text": "Quante Guardie Cittadine sono ancora sulla mappa?"
     },
     "algoxAltercation": {
-        "1": "Snowdancer is dead.",
-        "2": "Frozen Fist is dead.",
-        "title": "Algox altercation",
-        "text": "Which side did you choose?"
+        "1": "Il Danzatore della Neve è morto.",
+        "2": "Il Pugno Gelido è morto.",
+        "title": "Alterco tra Algox",
+        "text": "Da quale parte vi siete schierati?"
     },
     "finalNegotiation": {
-        "1": "Try to broker peace with the automatons",
-        "2": "Destroy them",
-        "title": "Final Negotiation",
-        "text": "Which path will you choose?"
+        "1": "Provare a mediare la pace con gli automi",
+        "2": "Distruggerli",
+        "title": "Trattativa Finale",
+        "text": "Quale strada sceglierete?"
     },
     "friendOfTheFishKing": {
-        "1": "Yes",
+        "1": "Sì",
         "2": "No",
-        "title": "Friend of the Fish King",
-        "text": "Did you agree to the Fish King's proposition?"
+        "title": "Amico del Re dei Pesci",
+        "text": "Avete accettato la proposta del Re dei Pesci?"
     },
     "acceptTheAscension": {
-        "1": "Yes",
+        "1": "Sì",
         "2": "No",
-        "title": "Accept the Ascension",
-        "text": "Did you accept the Fish King's ascension?"
+        "title": "Accettare l'Ascensione",
+        "text": "Avete accettato l'ascensione del Re dei Pesci?"
     },
     "brothersSurvival": {
-        "1": "Yes",
+        "1": "Sì",
         "2": "No",
-        "title": "Brother' Survival",
-        "text": "Did both brothers survive?"
+        "title": "Sopravvivenza dei Fratelli",
+        "text": "Entrambi i fratelli sono sopravvissuti?"
     },
     "rattuscasShare": {
-        "1": "Yes",
+        "1": "Sì",
         "2": "No",
-        "title": "Rattusca's Share",
-        "text": "Did you give Rattusca her share?"
+        "title": "La Parte di Rattusca",
+        "text": "Avete dato a Rattusca la sua parte?"
     },
     "peaceNegotiations": {
-        "1": "Support Scabwit (Vermlings)",
-        "2": "Support Yoglang (Algox)",
-        "title": "Peace Negotiations",
-        "text": "Who did you support in the brawl?"
+        "1": "Sostenere Scabwit (Vermling)",
+        "2": "Sostenere Yoglang (Algox)",
+        "title": "Trattative di Pace",
+        "text": "Chi avete sostenuto nella rissa?"
     },
     "episodesOvercome": {
         "1": "1",
@@ -132,8 +132,8 @@ export default {
         "3": "3",
         "4": "4",
         "5": "5",
-        "title": "Episodes Overcome",
-        "text": "How many episodes did you overcome?"
+        "title": "Episodi Superati",
+        "text": "Quanti episodi avete superato?"
     },
     "pylonsDestroyed": {
         "1": "0",
@@ -143,8 +143,8 @@ export default {
         "5": "4",
         "6": "5",
         "7": "6",
-        "title": "Pylons Destroyed",
-        "text": "How many pylons were destroyed?"
+        "title": "Piloni Distrutti",
+        "text": "Quanti piloni sono stati distrutti?"
     },
     "wagonsEscaped": {
         "1": "1",
@@ -152,90 +152,90 @@ export default {
         "3": "3",
         "4": "4",
         "5": "5",
-        "title": "Wagons Escaped",
-        "text": "How many wagons escaped?"
+        "title": "Carri in Salvo",
+        "text": "Quanti carri sono riusciti a fuggire?"
     },
     "mindtheifsWill": {
-        "1": "Automaton destroyed, technology given to vermlings",
-        "2": "Automaton destroyed, technology kept",
-        "3": "Mind control device disabled",
-        "title": "Mindtheif's Will",
-        "text": "What did you do with the mind control device?"
+        "1": "Automa distrutto, tecnologia consegnata ai Vermling",
+        "2": "Automa distrutto, tecnologia conservata",
+        "3": "Dispositivo di controllo mentale disattivato",
+        "title": "La Volontà di Mindtheif",
+        "text": "Cosa avete fatto del dispositivo di controllo mentale?"
     },
     "hungryMawDead": {
-        "1": "Yes",
+        "1": "Sì",
         "2": "No",
-        "title": "Hungry Maw Dead",
-        "text": "Is the Hungry Maw dead?"
+        "title": "Fauce Affamata Morta",
+        "text": "La Fauce Affamata è morta?"
     },
     "cratesLooted": {
         "1": "1",
         "2": "2",
         "3": "3",
         "4": "4",
-        "title": "Crates Looted",
-        "text": "How many crates did you loot?"
+        "title": "Casse Saccheggiate",
+        "text": "Quante casse avete saccheggiato?"
     },
     "embellismentsCompleted": {
-        "1": "Seven or fewer",
-        "2": "Eight to fifteen",
-        "3": "Sixteen or more",
-        "title": "Embellisments Completed",
-        "text": "How many embellisments did you complete?"
+        "1": "Sette o meno",
+        "2": "Da otto a quindici",
+        "3": "Sedici o più",
+        "title": "Abbellimenti Completati",
+        "text": "Quanti abbellimenti avete completato?"
     },
     "sunAgatesReturned": {
-        "1": "Yes",
+        "1": "Sì",
         "2": "No",
-        "title": "Sun Agates Returned",
-        "text": "Did you return the sun agates to Derrick?"
+        "title": "Agate del Sole Restituite",
+        "text": "Avete restituito le agate del sole a Derrick?"
     },
     "gh2-13": {
-        "1": "Section 18.3",
-        "2": "Section 44.3",
-        "3": "Section 51.1",
-        "title": "Icecrag Ascent",
-        "text": "Which conclusion section did you read?"
+        "1": "Paragrafo 18.3",
+        "2": "Paragrafo 44.3",
+        "3": "Paragrafo 51.1",
+        "title": "Valico di Rupegelida",
+        "text": "Quale paragrafo di conclusione avete letto?"
     },
     "gh2-27": {
-        "1": "Section 10.1",
-        "2": "Section 50.2",
-        "title": "Infernal Throne",
-        "text": "Which conclusion section did you read?"
+        "1": "Paragrafo 10.1",
+        "2": "Paragrafo 50.2",
+        "title": "Trono Infernale",
+        "text": "Quale paragrafo di conclusione avete letto?"
     },
     "gh2-28": {
-        "1": "Section 72.3",
-        "2": "Section 75.3",
-        "3": "Section 76.4",
-        "title": "Temple of the Seer",
-        "text": "Which conclusion section did you read?"
+        "1": "Paragrafo 72.3",
+        "2": "Paragrafo 75.3",
+        "3": "Paragrafo 76.4",
+        "title": "Tempio del Veggente",
+        "text": "Quale paragrafo di conclusione avete letto?"
     },
     "gh2-31": {
-        "1": "Section 26.6",
-        "2": "Section 76.1",
-        "title": "Decrepit Wood",
-        "text": "Which conclusion section did you read?"
+        "1": "Paragrafo 26.6",
+        "2": "Paragrafo 76.1",
+        "title": "Bosco Decrepito",
+        "text": "Quale paragrafo di conclusione avete letto?"
     },
     "gh2-32": {
-        "1": "Section 16.3",
-        "2": "Section 16.3 and 81.5",
-        "3": "Section 62.5",
-        "4": "Section 78.6",
-        "5": "Section 78.6 and 81.5",
-        "6": "Section 81.5",
-        "title": "Savvas Armory",
-        "text": "Which conclusion section did you read?"
+        "1": "Paragrafo 16.3",
+        "2": "Paragrafo 16.3 e 81.5",
+        "3": "Paragrafo 62.5",
+        "4": "Paragrafo 78.6",
+        "5": "Paragrafo 78.6 e 81.5",
+        "6": "Paragrafo 81.5",
+        "title": "Armeria Savvas",
+        "text": "Quale paragrafo di conclusione avete letto?"
     },
     "gh2-34": {
-        "1": "Section 36.4",
-        "2": "Section 89.2",
-        "title": "Timeworn Tomb",
-        "text": "Which conclusion section did you read?"
+        "1": "Paragrafo 36.4",
+        "2": "Paragrafo 89.2",
+        "title": "Tomba Logorata",
+        "text": "Quale paragrafo di conclusione avete letto?"
     },
     "gh2-43": {
-        "1": "Section 80.3",
-        "2": "Section 106.1",
-        "3": "Section 132.4",
-        "title": "Chasing Secrets",
-        "text": "Which conclusion section did you read?"
+        "1": "Paragrafo 80.3",
+        "2": "Paragrafo 106.1",
+        "3": "Paragrafo 132.4",
+        "title": "Alla Ricerca di Segreti",
+        "text": "Quale paragrafo di conclusione avete letto?"
     }
 }

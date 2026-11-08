@@ -1,44 +1,44 @@
 export default {
     "fh-A": {
-        "name": "Boat"
+        "name": "Csónak"
     },
     "fh-B": {
-        "name": "Sled"
+        "name": "Szán"
     },
     "fh-C": {
-        "name": "Climbing Gear"
+        "name": "Mászófelszerelés"
     },
     "fh-D": {
-        "name": "Ice Spike"
+        "name": "Jégtüske"
     },
     "fh-E": {
-        "name": "Portcullis"
+        "name": "Csapórács"
     },
     "fh-F": {
-        "name": "Statue"
+        "name": "Szobor"
     },
     "fh-G_red": {
-        "name": "Red Well"
+        "name": "Vörös kút"
     },
     "fh-G_blue": {
-        "name": "Blue Well"
+        "name": "Kék kút"
     },
     "fh-H": {
-        "name": "Stage"
+        "name": "Színpad"
     },
     "fh-J": {
-        "name": "Wall"
+        "name": "Fal"
     },
     "fh-K": {
-        "name": "Wall"
+        "name": "Fal"
     },
     "fh-L": {
-        "name": "Wall"
+        "name": "Fal"
     },
     "fh-M": {
-        "name": "Wall"
+        "name": "Fal"
     },
     "fh-N": {
-        "name": "Wall"
+        "name": "Fal"
     }
 }

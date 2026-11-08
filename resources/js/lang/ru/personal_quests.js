@@ -1,594 +1,801 @@
 export default {
     "gh-510": {
-        "name": "Seeker of Xorn",
+        "name": "Последователь Зорна",
         "progress": [
-            "Complete three Crypt scenarios.",
-            "Conclude {SCENARIO 52}."
+            "Завершите три сценария «Склеп».",
+            "Доведите {SCENARIO 52} до завершения."
         ]
     },
     "gh-511": {
-        "name": "Merchant Class",
+        "name": "Прирождённый торговец",
         "progress": [
-            "Own two {BODY} items.",
-            "Own two {HEAD} items.",
-            "Own two {LEGS} items.",
-            "Own three {ONE-HAND} or {TWO-HANDS} items.",
-            "Own four {SMALL-ITEM} items."
+            "Владейте двумя предметами {BODY}.",
+            "Владейте двумя предметами {HEAD}.",
+            "Владейте двумя предметами {LEGS}.",
+            "Владейте тремя предметами {ONE-HAND} или {TWO-HANDS}.",
+            "Владейте четырьмя предметами {SMALL-ITEM}."
         ]
     },
     "gh-512": {
-        "name": "Greed is Good",
+        "name": "Жадность — это хорошо",
         "progress": [
-            "Have 200 gold in your possession."
+            "Имейте при себе 200 золотых."
         ]
     },
     "gh-513": {
-        "name": "Finding the Cure",
-        "unlock": "Open envelope X",
+        "name": "В поисках лекарства",
+        "unlock": "Откройте конверт X",
         "progress": [
-            "Kill eight Forest Imps.",
-            "Conclude {SCENARIO 59}."
+            "Убейте восьмерых лесных бесов.",
+            "Доведите {SCENARIO 59} до завершения."
         ]
     },
     "gh-514": {
-        "name": "A Study of Anatomy",
+        "name": "Изучение анатомии",
         "progress": [
-            "Experience your party members becoming exhausted fifteen times."
+            "Станьте свидетелем того, как члены вашего отряда становятся изнурёнными пятнадцать раз."
         ]
     },
     "gh-515": {
-        "name": "Law Bringer",
+        "name": "Закон и порядок",
         "progress": [
-            "Kill twenty Bandits or Cultists."
+            "Убейте двадцать разбойников или культистов."
         ]
     },
     "gh-516": {
-        "name": "Pounds of Flesh",
+        "name": "Фунт плоти",
         "progress": [
-            "Kill fifteen Vermlings."
+            "Убейте пятнадцать вермлингов."
         ]
     },
     "gh-517": {
-        "name": "Trophy Hunt",
+        "name": "Охота за трофеями",
         "progress": [
-            "Kill twenty different types of monsters."
+            "Убейте двадцать разных типов монстров."
         ]
     },
     "gh-518": {
-        "name": "Eternal Wanderer",
+        "name": "Вечный странник",
         "progress": [
-            "Complete fifteen different scenarios."
+            "Завершите пятнадцать разных сценариев."
         ]
     },
     "gh-519": {
-        "name": "Battle Legend",
+        "name": "Легендарный воитель",
         "progress": [
-            "Earn fifteen ✔ from completed battle goals."
+            "Заработайте пятнадцать ✔ за выполненные боевые задания."
         ]
     },
     "gh-520": {
-        "name": "Implement of Light",
+        "name": "Во имя света",
         "progress": [
-            "Find the Skullbane Axe in the Necromancer's Sanctum.",
-            "Use it to kill seven Living Bones, Living Corpses, or Living Spirits."
+            "Найдите «Топор порчи черепов» в Прибежище некромантки.",
+            "С его помощью убейте семь Оживших костей, Оживших трупов или Оживших духов."
         ]
     },
     "gh-521": {
-        "name": "Take Back the Trees",
+        "name": "Возвращение леса",
         "progress": [
-            "Complete three scenarios in the Dagger Forest.",
-            "Conclude {SCENARIO 55}."
+            "Завершите три сценария в Кинжальном лесу.",
+            "Доведите {SCENARIO 55} до завершения."
         ]
     },
     "gh-522": {
-        "name": "The Thin Places",
+        "name": "Очень странные места",
         "progress": [
-            "Complete six side scenarios."
+            "Завершите шесть побочных сценариев."
         ]
     },
     "gh-523": {
-        "name": "Aberrant Slayer",
+        "name": "Неординарный убийца",
         "progress": [
-            "Kill one Flame Demon.",
-            "Kill one Frost Demon.",
-            "Kill one Wind Demon.",
-            "Kill one Earth Demon.",
-            "Kill one Night Demon.",
-            "Kill one Sun Demon."
+            "Убейте одного Огненного демона.",
+            "Убейте одного Морозного демона.",
+            "Убейте одного Воздушного демона.",
+            "Убейте одного Земляного демона.",
+            "Убейте одного Ночного демона.",
+            "Убейте одного Солнечного демона."
         ]
     },
     "gh-524": {
-        "name": "Fearless Stand",
+        "name": "Мужественный отпор",
         "progress": [
-            "Kill twenty elite monsters."
+            "Убейте двадцать мощных монстров."
         ]
     },
     "gh-525": {
-        "name": "Piety in All Things",
+        "name": "Добродетель",
         "progress": [
-            "Donate 120 gold to the Sanctuary of the Great Oak."
+            "Пожертвуйте 120 золотых Святилищу Великого Дуба."
         ]
     },
     "gh-526": {
-        "name": "Vengeance",
-        "unlock": "Open Envelope X",
+        "name": "Месть",
+        "unlock": "Откройте конверт X",
         "progress": [
-            "Complete four scenarios in Gloomhaven.",
-            "Conclude {SCENARIO 57}."
+            "Завершите четыре сценария в Мрачной гавани.",
+            "Доведите {SCENARIO 57} до завершения."
         ]
     },
     "gh-527": {
-        "name": "Zealot of the Blood God",
+        "name": "Фанатик Кровавого бога",
         "progress": [
-            "Become exhausted twelve times."
+            "Станьте изнурённым двенадцать раз."
         ]
     },
     "gh-528": {
-        "name": "Goliath Toppler",
+        "name": "Истребитель гигантов",
         "progress": [
-            "Complete four boss scenarios"
+            "Завершите четыре сценария с боссом"
         ]
     },
     "gh-529": {
-        "name": "The Fall of Man",
+        "name": "Грехопадение",
         "progress": [
-            "Complete 2 Lingering Swamp scenarios.",
-            "Conclude {SCENARIO 61}."
+            "Завершите 2 сценария в Вечнотопком болоте.",
+            "Доведите {SCENARIO 61} до завершения."
         ]
     },
     "gh-530": {
-        "name": "Augmented Abilities",
+        "name": "Усиленные способности",
         "progress": [
-            "Purchase four enhancements."
+            "Купите четыре улучшения."
         ]
     },
     "gh-531": {
-        "name": "Elemental Samples",
+        "name": "Образцы стихий",
         "progress": [
-            "Complete a scenario in Gloomhaven.",
-            "Complete a scenario in Dagger Forest.",
-            "Complete a scenario in Lingering Swamp",
-            "Complete a scenario in Watcher Mountains",
-            "Complete a scenario in Copperneck Mountains",
-            "Complete a scenario in Misty Sea."
+            "Завершите сценарий в Мрачной гавани.",
+            "Завершите сценарий в Кинжальном лесу.",
+            "Завершите сценарий в Вечнотопком болоте",
+            "Завершите сценарий в Сторожевых горах",
+            "Завершите сценарий в Медных хребтах",
+            "Завершите сценарий в Туманном море."
         ]
     },
     "gh-532": {
-        "name": "A Helping Hand",
+        "name": "Помощник",
         "progress": [
-            "Experience two other characters achieving their personal quests."
+            "Станьте свидетелем того, как два других персонажа выполняют свои личные задания."
         ]
     },
     "gh-533": {
-        "name": "The Perfect Poison",
+        "name": "Идеальный яд",
         "progress": [
-            "Kill three Oozes.",
-            "Kill three Lurkers.",
-            "Kill three Spitting Drakes."
+            "Убейте трёх слизей.",
+            "Убейте трёх скрытней.",
+            "Убейте трёх шипящих дрейков."
         ]
     },
     "cs-330": {
-        "name": "Protect and Serve",
+        "name": "Защищать и служить",
         "progress": [
-            "Kill ten Inox.",
-            "Conclude {SCENARIO 33}."
+            "Убейте десять иноксов.",
+            "Доведите {SCENARIO 33} до завершения."
         ]
     },
     "cs-331": {
-        "name": "Weapons Specialist",
+        "name": "Специалист по оружию",
         "progress": [
-            "Consume fifteen {ONE-HAND} or {TWO-HANDS} items"
+            "Израсходуйте пятнадцать предметов {ONE-HAND} или {TWO-HANDS}"
         ]
     },
     "cs-332": {
-        "name": "Experimentation",
+        "name": "Эксперименты",
         "progress": [
-            "Play 30 cards for their lost {LOST} action."
+            "Сыграйте 30 карт ради их действия с потерей {LOST}."
         ]
     },
     "cs-333": {
-        "name": "Thrill Seeker",
+        "name": "Искатель острых ощущений",
         "progress": [
-            "Reveal a room tile by opening a door twenty times."
+            "Откройте плитку комнаты, открыв дверь, двадцать раз."
         ]
     },
     "cs-334": {
-        "name": "Trap Setter",
+        "name": "Мастер ловушек",
         "progress": [
-            "Disarm or cause an enemy to sprint a trap during your turn fifteen times."
+            "Обезвредьте ловушку или заставьте врага сработать её во время своего хода пятнадцать раз."
         ]
     },
     "cs-335": {
-        "name": "Bandit Banisher",
+        "name": "Гроза разбойников",
         "progress": [
-            "Kill ten Guards or Archers.",
-            "Conclude {SCENARIO 35}."
+            "Убейте десять стражей или лучников.",
+            "Доведите {SCENARIO 35} до завершения."
         ]
     },
     "cs-336": {
-        "name": "Creatures in the light",
+        "name": "Создания света",
         "progress": [
-            "Kill twenty Oozes, Forest Imps, or Black Imps."
+            "Убейте двадцать слизей, лесных бесов или чёрных бесов."
         ]
     },
     "cs-337": {
-        "name": "Experienced leader",
+        "name": "Опытный лидер",
         "progress": [
-            "Complete twelve scenarios with at least 12 experience points."
+            "Завершите двенадцать сценариев, набрав не менее 12 очков опыта."
         ]
     },
     "cs-338": {
-        "name": "Adrenaline Spike",
+        "name": "Всплеск адреналина",
         "progress": [
-            "Kill an enemy and loots its money token in the same round fifteen times."
+            "Убейте врага и подберите его жетон монет в том же раунде пятнадцать раз."
         ]
     },
     "cs-339": {
-        "name": "Mutual Support",
+        "name": "Взаимная поддержка",
         "progress": [
-            "Kill 30 enemies adjacent to any of your allies."
+            "Убейте 30 врагов, находящихся рядом с любым из ваших союзников."
         ]
     },
     "cs-340": {
-        "name": "Thy be Blessed",
+        "name": "Да будешь ты благословлён",
         "progress": [
-            "Draw a {BLESS} card twelve times during an attack."
+            "Вытяните карту {BLESS} во время атаки двенадцать раз."
         ]
     },
     "cs-341": {
-        "name": "Spiritual Cains",
+        "name": "Духовные узы",
         "progress": [
-            "Spend 200 gold on enhancements."
+            "Потратьте 200 золотых на улучшения."
         ]
     },
     "cs-342": {
-        "name": "The Path of Agony",
+        "name": "Путь страдания",
         "progress": [
-            "Experience an ally or enemy dying or becoming exhausted during its own turn 13 times."
+            "Станьте свидетелем того, как союзник или враг погибает или становится изнурённым во время собственного хода, 13 раз."
         ]
     },
     "cs-343": {
-        "name": "Cruel Dominion",
+        "name": "Жестокое господство",
         "progress": [
-            "Complete 10 scenarios during which you kill an enemy who has a negative condition."
+            "Завершите 10 сценариев, в которых вы убиваете врага с негативным состоянием."
         ]
     },
     "cs-344": {
-        "name": "Natural Selection",
+        "name": "Естественный отбор",
         "progress": [
-            "Generate {FIRE} twice.",
-            "Generate {ICE} twice.",
-            "Generate {LIGHT} twice.",
-            "Generate {DARK} twice.",
-            "Conclude {SCENARIO 37}."
+            "Создайте {FIRE} дважды.",
+            "Создайте {ICE} дважды.",
+            "Создайте {LIGHT} дважды.",
+            "Создайте {DARK} дважды.",
+            "Доведите {SCENARIO 37} до завершения."
         ]
     },
     "cs-345": {
-        "name": "Predator and Prey",
+        "name": "Хищник и жертва",
         "progress": [
-            "Kill two or more enemies in the same turn fifteen times."
+            "Убейте двух или более врагов за один ход пятнадцать раз."
         ]
     },
     "cs-346": {
-        "name": "An Adder Divides",
+        "name": "Гадюка раздваивается",
         "progress": [
-            "Occupy difficult terrain in 6 different scenarios.",
-            "Conclude {SCENARIO 39}."
+            "Займите труднопроходимую местность в 6 разных сценариях.",
+            "Доведите {SCENARIO 39} до завершения."
         ]
     },
     "cs-347": {
-        "name": "Field Research",
+        "name": "Полевые исследования",
         "progress": [
-            "Poison {POISON} twenty different types of monsters."
+            "Отравьте {POISON} двадцать разных типов монстров."
         ]
     },
     "cs-348": {
-        "name": "Conjurers Hand",
+        "name": "Рука заклинателя",
         "progress": [
-            "Kill ten summoned monsters."
+            "Убейте десять призванных монстров."
         ]
     },
     "cs-349": {
-        "name": "No Rest for the Wicked",
+        "name": "Нет покоя нечестивым",
         "progress": [
-            "Complete ten scenarios without long resting."
+            "Завершите десять сценариев, ни разу не используя долгий отдых."
         ]
     },
     "cs-350": {
-        "name": "Health First",
+        "name": "Здоровье прежде всего",
         "progress": [
-            "Complete seven scenarios ending at full health."
+            "Завершите семь сценариев с полным запасом здоровья."
         ]
     },
     "cs-351": {
-        "name": "Limitless Searching",
+        "name": "Безграничные поиски",
         "progress": [
-            "Loot 30 money tokens."
+            "Подберите 30 жетонов монет."
         ]
     },
     "cs-aa-001": {
-        "name": "At All Costs",
+        "name": "Любой ценой",
         "progress": [
-            "Experience 8 scenarios where you negate damage by losing a card as normal while adjacent to an ally.",
-            "Conclude {SCENARIO AA1}."
+            "Станьте участником 8 сценариев, в которых вы отменяете урон, сбросив карту как обычно, находясь рядом с союзником.",
+            "Доведите {SCENARIO AA1} до завершения."
         ]
     },
     "cs-aa-002": {
-        "name": "The Weight of failure",
+        "name": "Груз неудачи",
         "progress": [
-            "Complete 8 scenarios without exhausting and with 2 or less HP.",
-            "Conclude {SCENARIO AA2}"
+            "Завершите 8 сценариев, ни разу не став изнурённым и имея 2 или меньше ОЗ.",
+            "Доведите {SCENARIO AA2} до завершения"
         ]
     },
     "cs-qa-001": {
-        "name": "Ingenious Inventor",
+        "name": "Гениальный изобретатель",
         "progress": [
-            "Immediately gain “Power Modulator” (Item QA-01)",
-            "Kill 12 enemies with “Power Modulator” (Item QA-01)",
-            "Conclude {SCENARIO QA1}"
+            "Немедленно получите «Модулятор силы» (Предмет QA-01)",
+            "Убейте 12 врагов с помощью «Модулятора силы» (Предмет QA-01)",
+            "Доведите {SCENARIO QA1} до завершения"
         ]
     },
     "cs-qa-002": {
-        "name": "Scrap Diver",
+        "name": "Ныряльщик за хламом",
         "progress": [
-            "Loot two or more money tokens with a single action eight times.",
-            "Loot two treasure tiles.",
-            "Conclude {SCENARIO QA2}."
+            "Подберите два или более жетонов монет одним действием восемь раз.",
+            "Добудьте две плитки сокровищ.",
+            "Доведите {SCENARIO QA2} до завершения."
         ]
     },
     "cs-rm-001": {
-        "name": "Brutal Enforcer",
+        "name": "Жестокий палач",
         "progress": [
-            "Gain “Serrated Edge” design (Item RM-01).",
-            "Apply {WOUND} or {RUPTURE} to thirty enemies.",
-            "Conclude {SCENARIO RM1}."
+            "Получите чертёж «Зазубренного лезвия» (Предмет RM-01).",
+            "Наложите {WOUND} или {RUPTURE} на тридцать врагов.",
+            "Доведите {SCENARIO RM1} до завершения."
         ]
     },
     "cs-rm-002": {
-        "name": "Apex Predator",
+        "name": "Высший хищник",
         "progress": [
-            "Experience twenty rounds where, during or after your perform an action with a {CONSUMED}, an enemy dies.",
-            "Conclude {SCENARIO RM3}."
+            "Станьте участником двадцати раундов, в которых во время или после выполнения вами действия с {CONSUMED} умирает враг.",
+            "Доведите {SCENARIO RM3} до завершения."
         ]
     },
     "fh-1": {
-        "name": "The Study of Plants",
+        "name": "Изучение растений",
         "building_unlocks": [
             24,
             42
         ],
         "progress": [
-            "Personally collect five different types of herbs through loot tokens."
+            "Лично соберите пять разных видов трав с помощью жетонов добычи."
         ]
     },
     "fh-2": {
-        "name": "Searching for the Oak",
+        "name": "В поисках дуба",
         "building_unlocks": [
             24,
             42
         ],
         "progress": [
-            "Personally loot eight total lumber cards through loot tokens.",
-            "Unlock {SCENARIO 69} and follow it to a conclusion."
+            "Лично добудьте в сумме восемь карт древесины с помощью жетонов добычи.",
+            "Откройте {SCENARIO 69} и доведите его до завершения."
         ]
     },
     "fh-3": {
-        "name": "Merchant Class",
+        "name": "Прирождённый торговец",
         "building_unlocks": [
             37,
             74
         ],
         "progress": [
-            "Own 3 {HEAD} items.",
-            "Own 3 {BODY} items.",
-            "Own 3 {LEGS} items.",
-            "Own 3 {ONE-HAND} and/or {TWO-HANDS} items.",
-            "Own 4 {SMALL-ITEM} items."
+            "Владейте 3 предметами {HEAD}.",
+            "Владейте 3 предметами {BODY}.",
+            "Владейте 3 предметами {LEGS}.",
+            "Владейте 3 предметами {ONE-HAND} и/или {TWO-HANDS}.",
+            "Владейте 4 предметами {SMALL-ITEM}."
         ]
     },
     "fh-4": {
-        "name": "Greed is Good",
+        "name": "Жадность — это хорошо",
         "building_unlocks": [
             37,
             74
         ],
         "progress": [
-            "Have 80+20xL gold in your possession, where L is the prosperity level."
+            "Имейте при себе 80+20×L золотых, где L — уровень процветания."
         ]
     },
     "fh-5": {
-        "name": "Build, not Destroy",
+        "name": "Строить, а не разрушать",
         "building_unlocks": [
             85,
             21
         ],
         "progress": [
-            "Experience the construction of twelve different buildings or building upgrades."
+            "Станьте свидетелем строительства двенадцати разных зданий или улучшений зданий."
         ]
     },
     "fh-6": {
-        "name": "Team Building",
+        "name": "Сплочение коллектива",
         "building_unlocks": [
             85,
             21
         ],
         "progress": [
-            "During eight different outpost phases, read a person's name in an event or section."
+            "В восьми разных фазах форпоста прочитайте в событии или разделе имя какого-либо человека."
         ]
     },
     "fh-7": {
-        "name": "Aesther Outpost",
+        "name": "Форпост Эстер",
         "building_unlocks": [
             44,
             88
         ],
         "progress": [
-            "Immediately unlock {SCENARIO 65}.",
-            "Follow {SCENARIO 65} to a conclusion."
+            "Немедленно откройте {SCENARIO 65}.",
+            "Доведите {SCENARIO 65} до завершения."
         ]
     },
     "fh-8": {
-        "name": "Dangerous Game",
+        "name": "Опасная игра",
         "building_unlocks": [
             44,
             88
         ],
         "progress": [
-            "Kill two Algox Guards.",
-            "Kill two Lurker Clawcrushers.",
-            "Kill two Robotic Boltshooters."
+            "Убейте двух алгоксов-стражей.",
+            "Убейте двух скрытней-клешнедробителей.",
+            "Убейте двух роботов-болтострелков."
         ]
     },
     "fh-9": {
-        "name": "Life Lessons",
+        "name": "Жизненные уроки",
         "building_unlocks": [
             90,
             83
         ],
         "progress": [
-            "Gain 150 experience from ability cards."
+            "Получите 150 очков опыта от карт способностей."
         ]
     },
     "fh-10": {
-        "name": "Explore the Reaches",
+        "name": "Исследование Пределов",
         "building_unlocks": [
             90,
             83
         ],
         "progress": [
-            "Comlete five different scenarios that require {BOAT}, {CLIMBING_GEAR}, or {SLED}."
+            "Завершите пять разных сценариев, требующих {BOAT}, {CLIMBING_GEAR} или {SLED}."
         ]
     },
     "fh-11": {
-        "name": "Refined Tastes",
+        "name": "Изысканные вкусы",
         "building_unlocks": [
             39,
             72
         ],
         "progress": [
-            "Own items whose crafting costs include a total of at least fifteen items."
+            "Владейте предметами, в стоимость создания которых входит в сумме не менее пятнадцати предметов."
         ]
     },
     "fh-12": {
-        "name": "Threat from the Deep",
+        "name": "Угроза из глубин",
         "building_unlocks": [
             90,
             42
         ],
         "progress": [
-            "Immediately unlock {SCENARIO 71}.",
-            "Follow {SCENARIO 71} to a conclusion."
+            "Немедленно откройте {SCENARIO 71}.",
+            "Доведите {SCENARIO 71} до завершения."
         ]
     },
     "fh-13": {
-        "name": "End the Trickery",
+        "name": "Положить конец обману",
         "building_unlocks": [
             44,
             74
         ],
         "progress": [
-            "Kill fifteem Imps."
+            "Убейте пятнадцать бесов."
         ]
     },
     "fh-14": {
-        "name": "Eternal Wanderer",
+        "name": "Вечный странник",
         "building_unlocks": [
             37,
             72
         ],
         "progress": [
-            "Complete a scenario in the Whitefire Wood.",
-            "Complete a scenario in the Copperneck Mountains.",
-            "Complete a scenario in the Radiant Forest.",
-            "Complete a scenario in the Crystal Fields.",
-            "Complete a scenario in the Biting Sea."
+            "Завершите сценарий в Белоогненной пуще.",
+            "Завершите сценарий в Медных хребтах.",
+            "Завершите сценарий в Сияющем лесу.",
+            "Завершите сценарий на Кристальных полях.",
+            "Завершите сценарий в Кусачем море."
         ]
     },
     "fh-15": {
-        "name": "Continued Prosperity",
+        "name": "Непрерывное процветание",
         "building_unlocks": [
             65,
             85
         ],
         "progress": [
-            "Donate 70 gold to the Temple of the Great Oak."
+            "Пожертвуйте 70 золотых Храму Великого Дуба."
         ]
     },
     "fh-16": {
-        "name": "Prepared for the Worst",
+        "name": "Готов к худшему",
         "building_unlocks": [
             85,
             88
         ],
         "progress": [
-            "Purchase five enhancements."
+            "Купите пять улучшений."
         ]
     },
     "fh-17": {
-        "name": "Battle Legend",
+        "name": "Легендарный воитель",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Earn 16 {CHECK} from completed battle goals."
+            "Заработайте 16 {CHECK} за выполненные боевые задания."
         ]
     },
     "fh-18": {
-        "name": "Let Them Be",
+        "name": "Оставьте их в покое",
         "building_unlocks": [
             44,
             67
         ],
         "progress": [
-            "Complete eight side scenarios (numbered 65 or higher)."
+            "Завершите восемь побочных сценариев (с номерами от 65)."
         ]
     },
     "fh-19": {
-        "name": "Quiet the Dead Places",
+        "name": "Усмирить мёртвые места",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Gain “Abyss Axe” (Item 039) blueprint and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms."
+            "Получите чертёж «Топора бездны» (Предмет 039) и с его помощью убейте десять Замёрзших трупов, Ледяных призраков и/или Живых погибелей."
         ]
     },
     "fh-20": {
-        "name": "Return to Simplicity",
+        "name": "Возвращение к простоте",
         "building_unlocks": [
             24,
             21
         ],
         "progress": [
-            "Kill fifteen Ruined Machines."
+            "Убейте пятнадцать Разрушенных машин."
         ]
     },
     "fh-21": {
-        "name": "The Study of Life",
+        "name": "Изучение жизни",
         "building_unlocks": [
             39,
             72
         ],
         "progress": [
-            "Capture 8 enemies."
+            "Захватите 8 врагов."
         ]
     },
     "fh-22": {
-        "name": "The Greatest Challenge",
+        "name": "Величайшее испытание",
         "building_unlocks": [
             37,
             83
         ],
         "progress": [
-            "Complete twelve challenges."
+            "Завершите двенадцать испытаний."
         ]
     },
     "fh-23": {
-        "name": "The Chosen One",
-        "unlock": "Open envelope A",
+        "name": "Избранный",
+        "unlock": "Откройте конверт A",
         "progress": [
-            "Experience 10 allies exhaust during scenarios you otherwise complete."
+            "Станьте свидетелем того, как 10 союзников становятся изнурёнными в сценариях, которые вы в остальном завершаете."
+        ]
+    },
+    "gh2-1": {
+        "name": "Политические интриги",
+        "progress": [
+            "Добавьте событие «Город» 61 в колоду событий «Город».",
+            "Наберите 30 голосов: три голоса каждый раз, когда вы получаете репутацию, и один голос за каждый предмет репутации фракции, принесённый в завершённый сценарий.",
+            "Прочитайте {SECTION} 136.1 в фазе города (успех не гарантирован)."
+        ]
+    },
+    "gh2-2": {
+        "name": "Гостеприимная таверна",
+        "progress": [
+            "Подберите 60 жетонов монет.",
+            "Прочитайте {SECTION} 125.4."
+        ]
+    },
+    "gh2-3": {
+        "name": "Усиленные способности",
+        "progress": [
+            "Купите пять улучшений (требуется общее достижение «Возможность улучшений»).",
+            "Прочитайте {SECTION} 71.2."
+        ]
+    },
+    "gh2-4": {
+        "name": "Грехопадение",
+        "progress": [
+            "Получите «Подзорную трубу Эстер» (Предмет 149). Её нельзя продать.",
+            "Используйте «Подзорную трубу Эстер» (Предмет 149) десять раз.",
+            "Прочитайте {SECTION} 115.2.",
+            "Доведите {SCENARIO 63} до завершения."
+        ]
+    },
+    "gh2-5": {
+        "name": "Последователь Зорна",
+        "progress": [
+            "Повысьте уровень, чтобы открыть {SCENARIO 57}.",
+            "Доведите {SCENARIO 57} до завершения.",
+            "Используйте предмет, полученный в {SCENARIO 57}, чтобы получить {POISON} семь раз.",
+            "Доведите {SCENARIO 58} до завершения."
+        ]
+    },
+    "gh2-6": {
+        "name": "Фанатик Кровавого бога",
+        "progress": [
+            "Завершите десять сценариев с запасом здоровья не выше половины максимума, ни разу не став изнурённым.",
+            "Прочитайте {SECTION} 122.3."
+        ]
+    },
+    "gh2-7": {
+        "name": "Есть что рассказать",
+        "progress": [
+            "Добудьте плитку сокровища или станьте свидетелем того, как её добывает ваш отряд, в десяти сценариях.",
+            "Прочитайте {SECTION} 12.3."
+        ]
+    },
+    "gh2-8": {
+        "name": "Возвращение леса",
+        "progress": [
+            "Переживите десять событий «Дорога» вместе с отрядом.",
+            "Прочитайте {SECTION} 64.3.",
+            "Доведите {SCENARIO 59} до завершения.",
+            "Доведите {SCENARIO 60} до завершения."
+        ]
+    },
+    "gh2-9": {
+        "name": "В поисках лекарства",
+        "progress": [
+            "Завершите сценарии в пяти из следующих мест: Медные хребты, Трупный лес, Кинжальный лес, Мрачная гавань, Вечнотопкое болото, Туманное море, Сторожевые горы.",
+            "Прочитайте {SECTION} 55.3.",
+            "Доведите {SCENARIO 61} до завершения.",
+            "Доведите {SCENARIO 62} до завершения."
+        ]
+    },
+    "gh2-10": {
+        "name": "Неординарный убийца",
+        "progress": [
+            "Улучшите карту способности (свою или союзника) стихией {ANY} (требуется общее достижение «Возможность улучшений»).",
+            "Прочитайте {SECTION} 14.3.",
+            "Доведите {SCENARIO 64} до завершения."
+        ]
+    },
+    "gh2-11": {
+        "name": "Приёмный родитель",
+        "progress": [
+            "Подберите три жетона монет, выпавших из врагов, в десяти сценариях.",
+            "Прочитайте {SECTION} 122.5.",
+            "Доведите {SCENARIO 66} до завершения."
+        ]
+    },
+    "gh2-12": {
+        "name": "Во имя света",
+        "progress": [
+            "Немедленно откройте {SCENARIO 65}.",
+            "Найдите «Щит праведников» (Предмет 148).",
+            "Используйте «Щит праведников» (Предмет 148), чтобы отменить десять атак с уроном 4 или больше.",
+            "Прочитайте {SECTION} 82.1."
+        ]
+    },
+    "gh2-13": {
+        "name": "Прирождённый торговец",
+        "progress": [
+            "Владейте тремя предметами {HEAD}.",
+            "Владейте тремя предметами {BODY}.",
+            "Владейте тремя предметами {LEGS}.",
+            "Владейте пятью предметами {ONE-HAND} или {TWO-HANDS}.",
+            "Владейте пятью предметами {SMALL-ITEM}.",
+            "Прочитайте {SECTION} 129.1."
+        ]
+    },
+    "gh2-14": {
+        "name": "Вечный странник",
+        "progress": [
+            "Завершите 12 разных сценариев.",
+            "Прочитайте {SECTION} 52.2."
+        ]
+    },
+    "gh2-15": {
+        "name": "Бегство от Син-Ра",
+        "progress": [
+            "Добавьте события «Город» 69 и 70 в колоду событий «Город». Получите «Чёрную карту» (Предмет 113). Её нельзя продать.",
+            "Завершите шесть побочных сценариев (номер сценария выше 56).",
+            "Прочитайте {SECTION} 128.2."
+        ]
+    },
+    "gh2-16": {
+        "name": "Идеальный яд",
+        "progress": [
+            "Получите «Отравленный кинжал» (Предмет 7).",
+            "С его помощью наложите {POISON} на врага без {POISON} 30 раз.",
+            "Прочитайте {SECTION} 8.3."
+        ]
+    },
+    "gh2-17": {
+        "name": "Жизнь на грани",
+        "progress": [
+            "Получите «Экспериментальный доспех» (Предмет 150).",
+            "С его помощью заставьте 20 врагов получить урон.",
+            "Прочитайте {SECTION} 47.4."
+        ]
+    },
+    "gh2-18": {
+        "name": "Легендарный воитель",
+        "progress": [
+            "Заработайте 12 отметок за выполненные боевые задания.",
+            "Прочитайте {SECTION} 23.3."
+        ]
+    },
+    "gh2-19": {
+        "name": "Изучение боевых искусств",
+        "progress": [
+            "Используйте восемь разных предметов {ONE-HAND} или {TWO-HANDS} в сценариях.",
+            "Прочитайте {SECTION} 67.2."
+        ]
+    },
+    "gh2-20": {
+        "name": "Добродетель",
+        "progress": [
+            "Пожертвуйте 120 золотых Храму Великого Дуба.",
+            "Прочитайте {SECTION} 51.5."
+        ]
+    },
+    "gh2-21": {
+        "name": "Стремление к мастерству",
+        "progress": [
+            "Получите 120 очков опыта от карт способностей.",
+            "Прочитайте {SECTION} 17.2."
+        ]
+    },
+    "gh2-22": {
+        "name": "Охота за трофеями",
+        "progress": [
+            "Убейте 20 разных типов монстров.",
+            "Прочитайте {SECTION} 21.1."
+        ]
+    },
+    "cq-cq01": {
+        "name": "Победи своих демонов",
+        "unlock": "Откройте на выбор конверт класса или здания. Ваши будущие персонажи добавляют {PIERCE} 1 и {WOUND} ко всем атакам по демонам.",
+        "progress": [
+            "Убейте двух Земляных демонов, появившихся таким образом.",
+            "Убейте двух Огненных демонов, появившихся таким образом.",
+            "Убейте двух Морозных демонов, появившихся таким образом.",
+            "Убейте двух Ночных демонов, появившихся таким образом.",
+            "Убейте двух Солнечных демонов, появившихся таким образом.",
+            "Убейте двух Воздушных демонов, появившихся таким образом."
+        ]
+    },
+    "cq-cq02": {
+        "name": "Ваши друзья обеспокоены",
+        "unlock": "Откройте на выбор конверт класса или здания. Вы можете навсегда потерять бонусные отметки навыков, полученные за уход на покой персонажей вашей династии. За каждую потерянную отметку навыка получите 30 золотых, которые можно сразу потратить на улучшения для вашего следующего персонажа.",
+        "progress": [
+            "Заработайте 30 отметок за боевые задания. В каждом сценарии вытягивайте и оставляйте дополнительное боевое задание; отметки не начисляются, если вы не выполнили их все."
+        ]
+    },
+    "cq-cq03": {
+        "name": "Последствия боя",
+        "unlock": "Откройте на выбор конверт класса или здания. Ваши будущие персонажи получают {STRENGTHEN} каждый раз, когда вытягивают {NULL_MODIFIER} во время сценария.",
+        "progress": [
+            "Наберите 50 сдержанности: один раз за сценарий уменьшите значение атаки до вытягивания модификатора; получайте одну сдержанность за каждое уменьшенное очко."
+        ]
+    },
+    "cq-cq04": {
+        "name": "Драматичная развязка",
+        "unlock": "Откройте на выбор конверт класса или здания. Ваши будущие персонажи могут немедленно выполнить шаги долгого отдыха всякий раз, когда союзник становится изнурённым.",
+        "progress": [
+            "Выиграйте 10 сценариев, в которых ваши последние два действия — верхнее действие с потерей и нижнее действие с потерей."
         ]
     }
 }

@@ -228,25 +228,25 @@ export default {
         "name": "Suffer 3 damage, Получите {WOUND} and 10 gold"
     },
     "fc-77": {
-        "name": "Получите «Major Cure Potion» (Предмет 090)"
+        "name": "Получите «Большое зелье исцеления» (Предмет 090)"
     },
     "fc-78": {
-        "name": "«Ancient Bow» (Предмет 157)"
+        "name": "«Древний лук» (Предмет 157)"
     },
     "fc-79": {
-        "name": "Получите «Falcon Figurine» (Предмет 157)"
+        "name": "Получите «Статуэтка сокола» (Предмет 157)"
     },
     "fc-80": {
-        "name": "Получите 1 ✓ and add Rift Event 19 to the deck"
+        "name": "Получите 1 ✓ и добавьте в колоду событие «Портал» 19"
     },
     "fc-81": {
-        "name": "Получите «Scroll of Haste» (Предмет 159) and 10 gold"
+        "name": "Получите «Свиток проворства» (Предмет 159) and 10 gold"
     },
     "fc-82": {
-        "name": "«Rejuvenation Greaves» (Предмет 158)"
+        "name": "«Заживляющие поножи» (Предмет 158)"
     },
     "fc-83": {
-        "name": "Получите «Major Power Potion» (Предмет 041)"
+        "name": "Получите «Большое зелье силы» (Предмет 041)"
     },
     "fc-84": {
         "name": "Получите «Mask of Terrors» (Предмет 066)"
@@ -255,7 +255,7 @@ export default {
         "name": "Suffer 3 damage, Получите {POISON} and 10 gold"
     },
     "fc-86": {
-        "name": "Unlock Diviner {DR} Solo Scenario «Forecast of the Inevitable» (see page 25 of the main book)"
+        "name": "Разблокируйте соло-сценарий Прорицательницы {DR} «Предсказания неизбежного» (см. стр. 25 основной книги)"
     },
     "fc-87": {
         "name": "Suffer 2 damage, Получите CURSE and 15 gold"
@@ -264,31 +264,31 @@ export default {
         "name": "Получите 1 ✓"
     },
     "fc-89": {
-        "name": "Получите «Second Chance Ring» (Предмет 070)"
+        "name": "Получите «Кольцо второго шанса» (Предмет 070)"
     },
     "fc-90": {
-        "name": "10 gold each, Read section 75 on page 49"
+        "name": "Все получают по 10 золотых. Прочтите раздел 75 на стр. 49"
     },
     "fc-91": {
-        "name": "Получите 30 gold and Party Achievement: «Opportunists» Add City Event 84 to the deck"
+        "name": "Получите 30 золотых и достижение отряда «Авантюристы». Добавьте в колоду событие «Город» 84"
     },
     "fc-93": {
-        "name": "«Scroll of Haste» (Предмет 159)"
+        "name": "«Свиток проворства» (Предмет 159)"
     },
     "fc-94": {
-        "name": "Получите 1 ✓ and add Rift Event 20 to the deck"
+        "name": "Получите 1 ✓ и добавьте в колоду событие «Портал» 20"
     },
     "fc-95": {
         "name": "Получите 25 gold and Party Achievement: «A Strongbox» Add City Event  85 to the deck"
     },
     "fc-96": {
-        "name": "You find an old tome littered with technical drawings and design schematics of a wide array of exotic machines. There is a curious handwritten note inside the front cover: {NOTE_115}"
+        "name": "Вы находите старую книгу, заполненную техническими рисунками и чертежами самых разных диковинных механизмов. На внутренней стороне обложки есть любопытная рукописная записка: {NOTE_115}"
     },
     "jotl-1": {
         "name": "Получите 10 experience"
     },
     "jotl-2": {
-        "name": "«Ring of Strength» (Предмет 31)"
+        "name": "«Кольцо силы» (Предмет 31)"
     },
     "jotl-3": {
         "name": "Получите 15 experience"
@@ -312,10 +312,10 @@ export default {
         "name": "Получите 5 gold"
     },
     "jotl-10": {
-        "name": "«Fateful Compass» (Предмет 27)"
+        "name": "«Компас обречения» (Предмет 27)"
     },
     "jotl-11": {
-        "name": "«Ring of Haste» (Предмет 30)"
+        "name": "«Кольцо спешки» (Предмет 30)"
     },
     "jotl-12": {
         "name": "Получите 5 gold"
@@ -330,25 +330,25 @@ export default {
         "name": "Получите 1 ✔"
     },
     "jotl-16": {
-        "name": "«Mana Potion» (Предмет 14)"
+        "name": "«Зелье маны» (Предмет 14)"
     },
     "jotl-X": {
-        "name": "«Ring of Restoration» (Предмет 32)"
+        "name": "«Кольцо восстановления» (Предмет 32)"
     },
     "cs-1": {
         "name": "«Drake's Blood» (Предмет 59)"
     },
     "cs-2": {
-        "name": "«Orb of Fortune» (Предмет 09)"
+        "name": "«Сфера удачи» (Предмет 09)"
     },
     "cs-3": {
-        "name": "«Chain Mace» (Предмет 14)"
+        "name": "«Цепная булава» (Предмет 14)"
     },
     "cs-4": {
-        "name": "Получите 15 gold and Recover one lost card"
+        "name": "Получите 15 золотых и восстановите 1 потерянную карту"
     },
     "cs-5": {
-        "name": "«Concussion Mine» (Предмет 31)"
+        "name": "«Контузионная мина» (Предмет 31)"
     },
     "cs-6": {
         "name": "Получите 20 gold and disarm all adjacent traps"
@@ -357,37 +357,37 @@ export default {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-8": {
-        "name": "«Dizzying Tincture» (Предмет 58)"
+        "name": "«Головокружительная настойка» (Предмет 58)"
     },
     "cs-9": {
-        "name": "«Orb of Fortune» (Предмет 9)"
+        "name": "«Сфера удачи» (Предмет 9)"
     },
     "cs-10": {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-11": {
-        "name": "«Dizzying Tincture» (Предмет 58)"
+        "name": "«Головокружительная настойка» (Предмет 58)"
     },
     "cs-12": {
-        "name": "«Mana Medicine» (Предмет 60)"
+        "name": "«Лекарство маны» (Предмет 60)"
     },
     "cs-13": {
-        "name": "«Orb of Despair» (Предмет 10)"
+        "name": "«Сфера отчаяния» (Предмет 10)"
     },
     "cs-14": {
-        "name": "«Steel Helmet» (Предмет 22)"
+        "name": "«Стальной шлем» (Предмет 22)"
     },
     "cs-15": {
-        "name": "«Shifting Compass» (Предмет 32)"
+        "name": "«Сдвигающий компас» (Предмет 32)"
     },
     "cs-16": {
         "name": "Perform «Heal 6, Self», Получите {POISON}"
     },
     "cs-17": {
-        "name": "«Concussion Mine» (Предмет 31)"
+        "name": "«Контузионная мина» (Предмет 31)"
     },
     "cs-18": {
-        "name": "«Boneclad Shawl» (Предмет 25)"
+        "name": "«Костяная шаль» (Предмет 25)"
     },
     "cs-19": {
         "name": "Получите ✓ and generate a Wild Element"
@@ -396,10 +396,10 @@ export default {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-21": {
-        "name": "«Steel Helmet» (Предмет 22)"
+        "name": "«Стальной шлем» (Предмет 22)"
     },
     "cs-22": {
-        "name": "«Boots of Perpetuity» (Предмет 19)"
+        "name": "«Сапоги постоянства» (Предмет 19)"
     },
     "cs-23": {
         "name": "«Trophy Helmet» (Предмет 12)"
@@ -408,19 +408,19 @@ export default {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-25": {
-        "name": "«Draining Greaves» (Предмет 15)"
+        "name": "«Иссушающие поножи» (Предмет 15)"
     },
     "cs-26": {
-        "name": "«Iron Snare» (Предмет 30)"
+        "name": "«Железный капкан» (Предмет 30)"
     },
     "cs-27": {
-        "name": "«Woven Plate Armor» (Предмет 23)"
+        "name": "«Плетёные латы» (Предмет 23)"
     },
     "cs-28": {
-        "name": "«Chain Mace» (Предмет 14)"
+        "name": "«Цепная булава» (Предмет 14)"
     },
     "cs-29": {
-        "name": "«Woven Plate Armor» (Предмет 23)"
+        "name": "«Плетёные латы» (Предмет 23)"
     },
     "cs-30": {
         "name": "«Boneclad Shawl (Предмет 25)"
@@ -429,7 +429,7 @@ export default {
         "name": "«Drake's Blood» (Предмет 59)"
     },
     "cs-32": {
-        "name": "«Curious Pendant» (Предмет 20)"
+        "name": "«Любопытный кулон» (Предмет 20)"
     },
     "cs-33": {
         "name": "25  gold, Получите {POISON}"
@@ -438,543 +438,543 @@ export default {
         "name": "Suffer hazardous terrain damage, Получите {INVISIBLE}"
     },
     "cs-35": {
-        "name": "«Curseblood Blade» (Предмет 36)"
+        "name": "«Клинок проклятой крови» (Предмет 36)"
     },
     "cs-36": {
         "name": "10 experience, Получите {INVSIBLE}"
     },
     "cs-37": {
-        "name": "«Draining Greaves» (Предмет 15)"
+        "name": "«Иссушающие поножи» (Предмет 15)"
     },
     "cs-38": {
-        "name": "«War Pick» (Предмет 13)"
+        "name": "«Боевой клевец» (Предмет 13)"
     },
     "cs-39": {
-        "name": "«Infrared Goggles» (Предмет 21)"
+        "name": "«Инфракрасные очки» (Предмет 21)"
     },
     "cs-40": {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-41": {
-        "name": "«Ashsteel Gauntlets» (Предмет 61)"
+        "name": "«Перчатки из пепельной стали» (Предмет 61)"
     },
     "cs-42": {
-        "name": "«War Pick» (Предмет 13)"
+        "name": "«Боевой клевец» (Предмет 13)"
     },
     "cs-43": {
         "name": "10 experience and Refresh all spent Предметs"
     },
     "cs-44": {
-        "name": "«Mana Medicine» (Предмет 60)"
+        "name": "«Лекарство маны» (Предмет 60)"
     },
     "cs-45": {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-46": {
-        "name": "«Vipertooth Dagger» design (Предмет 54)"
+        "name": "«Кинжал из зуба гадюки» design (Предмет 54)"
     },
     "cs-47": {
-        "name": "15 gold"
+        "name": "Получите 15 золотых"
     },
     "cs-48": {
-        "name": "15 gold"
+        "name": "Получите 15 золотых"
     },
     "cs-49": {
-        "name": "«Magma Waders» (Предмет gh-99)"
+        "name": "«Лавовые ботфорты» (Предмет gh-99)"
     },
     "cs-50": {
-        "name": "“Bottled Moonlight” (Item 18)"
+        "name": "«Лунный свет в бутылке» (Предмет 18)"
     },
     "fh-1": {
-        "name": "Gain four loot cards."
+        "name": "Получите четыре карты добычи."
     },
     "fh-2": {
-        "name": "Suffer 3 damage, then gain {MUDDLE}"
+        "name": "Получите 3 урона, а затем состояние {MUDDLE}"
     },
     "fh-3": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-4": {
-        "name": "Gain Eventide Scepter 200."
+        "name": "Получите «Вечерний скипетр» (Предмет 200)."
     },
     "fh-5": {
-        "name": "Gain Severed Claw 204."
+        "name": "Получите «Отрубленный коготь» (Предмет 204)."
     },
     "fh-6": {
-        "name": "Gain Opulent Shoes 199."
+        "name": "Получите «Роскошные туфли» (Предмет 199)."
     },
     "fh-7": {
-        "name": "Gain Data Drive 227."
+        "name": "Получите «Накопитель данных» (Предмет 227)."
     },
     "fh-8": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-9": {
-        "name": "Unlock a random side scenario."
+        "name": "Откройте случайный побочный сценарий."
     },
     "fh-10": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-11": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-12": {
-        "name": "You find the remains of Camilla and her paintings of a majestic horned creature. Gain “Brummix” campaign sticker and add s 99.1 to the campaign calendar in three weeks."
+        "name": "Вы находите останки Камиллы и её рисунки величественного рогатого существа. Получите наклейку кампании «Бруммикс» и добавьте с 99.1 в календарь кампании через три недели."
     },
     "fh-13": {
-        "name": "Gain Fishhook 207."
+        "name": "Получите «Рыболовный крючок» (Предмет 207)."
     },
     "fh-14": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-15": {
-        "name": "Unlock a random side scenario."
+        "name": "Откройте случайный побочный сценарий."
     },
     "fh-16": {
-        "name": "Gain Decanter of Mists 183."
+        "name": "Получите «Графин туманов» (Предмет 183)."
     },
     "fh-17": {
-        "name": "Gain 3 Lumber."
+        "name": "Получите 3 древесины."
     },
     "fh-18": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-19": {
-        "name": "Gain 1 Axenut, 1 Corpsecap, and 1 Flamefruit."
+        "name": "Получите 1 топорёх, 1 трупную шляпку и 1 огненный плод."
     },
     "fh-20": {
-        "name": "Gain four loot cards."
+        "name": "Получите четыре карты добычи."
     },
     "fh-21": {
-        "name": "Gain Detonator blueprint 064."
+        "name": "Получите чертёж «Детонатора» (Предмет 064)."
     },
     "fh-22": {
-        "name": "Gain Scaled Armor blueprint 068."
+        "name": "Получите чертёж «Чешуйчатого доспеха» (Предмет 068)."
     },
     "fh-23": {
-        "name": "Unlock a random side scenario."
+        "name": "Откройте случайный побочный сценарий."
     },
     "fh-24": {
-        "name": "Gain Bane."
+        "name": "Получите состояние «Погибель»."
     },
     "fh-25": {
-        "name": "Gain 1 Corpsecap and 1 Flamefruit."
+        "name": "Получите 1 трупную шляпку и 1 огненный плод."
     },
     "fh-26": {
-        "name": "Gain Lightning Rod 223."
+        "name": "Получите «Громоотвод» (Предмет 223)."
     },
     "fh-27": {
-        "name": "Gain two loot cards and {POISON}."
+        "name": "Получите две карты добычи и состояние {POISON}."
     },
     "fh-28": {
-        "name": "Gain four loot cards."
+        "name": "Получите четыре карты добычи."
     },
     "fh-29": {
-        "name": "Gain 2 Lumber 2 Hide."
+        "name": "Получите 2 древесины и 2 шкуры."
     },
     "fh-30": {
-        "name": "Gain four loot cards."
+        "name": "Получите четыре карты добычи."
     },
     "fh-31": {
-        "name": "Gain Balanced Scales blueprint 078."
+        "name": "Получите чертёж «Уравновешенных весов» (Предмет 078)."
     },
     "fh-32": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-33": {
-        "name": "Gain 3 Lumber."
+        "name": "Получите 3 древесины."
     },
     "fh-34": {
-        "name": "Gain 1 ✔."
+        "name": "Получите 1 ✔."
     },
     "fh-35": {
-        "name": "Gain Extendable Pole 228."
+        "name": "Получите «Раздвижной шест» (Предмет 228)."
     },
     "fh-36": {
-        "name": "Gain Black Box 222."
+        "name": "Получите «Чёрный ящик» (Предмет 222)."
     },
     "fh-37": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-38": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-39": {
-        "name": "Unlock a random side scenario."
+        "name": "Откройте случайный побочный сценарий."
     },
     "fh-40": {
-        "name": "Gain Chaos Cannon blueprint 077."
+        "name": "Получите чертёж «Пушки хаоса» (Предмет 077)."
     },
     "fh-41": {
-        "name": "Gain Algox Carving 225."
+        "name": "Получите «Алгоксовую резьбу» (Предмет 225)."
     },
     "fh-42": {
-        "name": "Gain Giant Sword 206."
+        "name": "Получите «Гигантский меч» (Предмет 206)."
     },
     "fh-43": {
-        "name": "Gain four loot cards."
+        "name": "Получите четыре карты добычи."
     },
     "fh-44": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-45": {
-        "name": "Gain 2 Lumber 2 Metal."
+        "name": "Получите 2 древесины и 2 металла."
     },
     "fh-46": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-47": {
-        "name": "Gain 5 Experience."
+        "name": "Получите 5 очков опыта."
     },
     "fh-48": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-49": {
-        "name": "Gain Bone Boots blueprint 071"
+        "name": "Получите чертёж «Костяных сапог» (Предмет 071)"
     },
     "fh-50": {
-        "name": "Gain Cured Hide Armor 017."
+        "name": "Получите «Доспех из выделанной шкуры» (Предмет 017)."
     },
     "fh-51": {
-        "name": "Read 78.1."
+        "name": "Прочтите 78.1."
     },
     "fh-52": {
-        "name": "Gain Titan Nail 208."
+        "name": "Получите «Гвоздь титана» (Предмет 208)."
     },
     "fh-53": {
-        "name": "Gain Eye of the Storm 239."
+        "name": "Получите «Глаз бури» (Предмет 239)."
     },
     "fh-54": {
-        "name": "Treasure chest? There was no treasure chest there. Maybe you should slow down on the drink."
+        "name": "Сундук с сокровищами? Там не было никакого сундука. Может, вам стоит поменьше пить."
     },
     "fh-55": {
-        "name": "Gain Harpoon 205."
+        "name": "Получите «Гарпун» (Предмет 205)."
     },
     "fh-56": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-57": {
-        "name": "What’s this? An empty chest with a lead trapdoor at the bottom . You make note of the location so you can return with Gem’s help later. Unlock The Lead Door 103."
+        "name": "Что это? Пустой сундук со свинцовым люком на дне. Вы запоминаете это место, чтобы позже вернуться сюда с помощью Джем. Откройте «Свинцовую дверь» 103."
     },
     "fh-58": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-59": {
-        "name": "Gain Pain Simulacrum blueprint 081."
+        "name": "Получите чертёж «Симулякра боли» (Предмет 081)."
     },
     "fh-60": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-61": {
-        "name": "Unlock a random side scenario."
+        "name": "Откройте случайный побочный сценарий."
     },
     "fh-62": {
-        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+        "name": "Получите чертёж «Механического куба» (Предмет 082), когда найдёте вторую половину этого чертежа."
     },
     "fh-63": {
-        "name": "Gain five loot cards."
+        "name": "Получите пять карт добычи."
     },
     "fh-64": {
-        "name": "Gain 3 Lumber."
+        "name": "Получите 3 древесины."
     },
     "fh-65": {
-        "name": "Gain 15 Money."
+        "name": "Получите 15 золотых."
     },
     "fh-66": {
-        "name": "Suffer 2 damage, then gain Brittle."
+        "name": "Получите 2 урона, а затем состояние «Хрупкость»."
     },
     "fh-67": {
-        "name": "Unlock a random side scenario."
+        "name": "Откройте случайный побочный сценарий."
     },
     "fh-68": {
-        "name": "Gain 4 Metal."
+        "name": "Получите 4 металла."
     },
     "fh-69": {
-        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+        "name": "Получите чертёж «Механического куба» (Предмет 082), когда найдёте вторую половину этого чертежа."
     },
     "fh-70": {
-        "name": "Gain Horn of Command blueprint 076."
+        "name": "Получите чертёж «Рога командования» (Предмет 076)."
     },
     "fh-71": {
-        "name": "Gain four loot cards."
+        "name": "Получите четыре карты добычи."
     },
     "fh-72": {
-        "name": "Gain Living Stone blueprint 080."
+        "name": "Получите чертёж «Живого камня» (Предмет 080)."
     },
     "fh-73": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-74": {
-        "name": "Gain a random item blueprint."
+        "name": "Получите случайный чертёж предмета."
     },
     "fh-75": {
-        "name": "Gain 1 ✔."
+        "name": "Получите 1 ✔."
     },
     "fh-76": {
-        "name": "Unlock a random side scenario."
+        "name": "Откройте случайный побочный сценарий."
     },
     "fh-77": {
-        "name": "Gain three loot cards."
+        "name": "Получите три карты добычи."
     },
     "fh-78": {
-        "name": "Gain Opulent Shoes 199."
+        "name": "Получите «Роскошные туфли» (Предмет 199)."
     },
     "fh-79": {
-        "name": "Gain 10 Experience."
+        "name": "Получите 10 очков опыта."
     },
     "fh-80": {
-        "name": "Gain 15 Experience."
+        "name": "Получите 15 очков опыта."
     },
     "fh-81": {
-        "name": "Gain Unfettered Arm 226."
+        "name": "Получите «Руку Освобождённых» (Предмет 226)."
     },
     "fh-82": {
-        "name": "Gain Oak Staff blueprint 072."
+        "name": "Получите чертёж «Дубового посоха» (Предмет 072)."
     },
     "fh-83": {
-        "name": "Gain Tri-Corner Hat 195."
+        "name": "Получите «Треуголку» (Предмет 195)."
     },
     "fh-84": {
-        "name": "Gain Ice Shiv 221."
+        "name": "Получите «Ледяную заточку» (Предмет 221)."
     },
     "fh-85": {
-        "name": "Gain 10 money."
+        "name": "Получите 10 золотых."
     },
     "gh2-1": {
-        "name": "Gain “Magma Waders” (Item 142)"
+        "name": "Получите «Лавовые ботфорты» (Предмет 142)"
     },
     "gh2-2": {
-        "name": "Suffer 3 damage and gain {POISON}"
+        "name": "Получите 3 урона и состояние {POISON}"
     },
     "gh2-3": {
-        "name": "Gain “Star Earring” (Item 63)"
+        "name": "Получите «Звёздную серьгу» (Предмет 63)"
     },
     "gh2-4": {
-        "name": "Gain “Cloak of Phasing” (Item 98)"
+        "name": "Получите «Накидку прозрачности» (Предмет 98)"
     },
     "gh2-5": {
-        "name": "Gain “Pendant of Dark Pacts” (Item 128)"
+        "name": "Получите «Подвеска тёмных союзов» (Предмет 128)"
     },
     "gh2-6": {
-        "name": "Random Side Scenario"
+        "name": "Случайный побочный сценарий"
     },
     "gh2-7": {
-        "name": "Gain “Thief's Hood” (Item 108)"
+        "name": "Получите «Воровской капюшон» (Предмет 108)"
     },
     "gh2-8": {
-        "name": "Suffer 3 damage and gain {CURSE}"
+        "name": "Получите 3 урона и состояние {CURSE}"
     },
     "gh2-9": {
-        "name": "Gain 20 experience"
+        "name": "Получите 20 очков опыта"
     },
     "gh2-10": {
-        "name": "Gain 30 gold"
+        "name": "Получите 30 золотых"
     },
     "gh2-11": {
-        "name": "Random Side Scenario"
+        "name": "Случайный побочный сценарий"
     },
     "gh2-12": {
-        "name": "Gain 1 ✔"
+        "name": "Получите 1 ✔"
     },
     "gh2-13": {
-        "name": "Gain 1 ✔"
+        "name": "Получите 1 ✔"
     },
     "gh2-14": {
-        "name": "Gain 40 gold"
+        "name": "Получите 40 золотых"
     },
     "gh2-15": {
-        "name": "Gain 20 gold"
+        "name": "Получите 20 золотых"
     },
     "gh2-16": {
-        "name": "Suffer 3 damage and gain {WOUND}"
+        "name": "Получите 3 урона и состояние {WOUND}"
     },
     "gh2-17": {
-        "name": "Gain 15 gold"
+        "name": "Получите 15 золотых"
     },
     "gh2-18": {
-        "name": "Gain “Unstable Explosives” (Item 99)"
+        "name": "Получите «Нестабильную взрывчатку» (Предмет 99)"
     },
     "gh2-19": {
-        "name": "Gain “Drakescale Boots” (Item 119)"
+        "name": "Получите «Сапоги из чешуи дрейка» (Предмет 119)"
     },
     "gh2-20": {
-        "name": "Gain 25 gold"
+        "name": "Получите 25 золотых"
     },
     "gh2-21": {
-        "name": "Gain 2 ✔"
+        "name": "Получите 2 ✔"
     },
     "gh2-22": {
-        "name": "Gain “Helm of the Mountain” (Item 129) and “Mountain Hammer” (Item 130)"
+        "name": "Получите «Шлем гор» (Предмет 129) и «Горный молот» (Предмет 130)"
     },
     "gh2-23": {
-        "name": "Gain 15 gold"
+        "name": "Получите 15 золотых"
     },
     "gh2-24": {
-        "name": "Gain “Warding Rod” (Item 104)"
+        "name": "Получите «Охранный жезл» (Предмет 104)"
     },
     "gh2-25": {
-        "name": "Gain 1 ✔"
+        "name": "Получите 1 ✔"
     },
     "gh2-26": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-27": {
-        "name": "Suffer 3 damage and gain {MUDDLE}"
+        "name": "Получите 3 урона и состояние {MUDDLE}"
     },
     "gh2-28": {
-        "name": "Gain 2 ✔"
+        "name": "Получите 2 ✔"
     },
     "gh2-29": {
-        "name": "Gain “Charged Boots” (Item 100)"
+        "name": "Получите «Заряженные сапоги» (Предмет 100)"
     },
     "gh2-30": {
-        "name": "Gain 20 experience"
+        "name": "Получите 20 очков опыта"
     },
     "gh2-31": {
-        "name": "Gain “Wave Crest” (Item 131)"
+        "name": "Получите «Гребень волны» (Предмет 131)"
     },
     "gh2-32": {
-        "name": "Random Side Scenario"
+        "name": "Случайный побочный сценарий"
     },
     "gh2-33": {
-        "name": "Gain “Cure Potion” (Item 101)"
+        "name": "Получите «Лечебное зелье» (Предмет 101)"
     },
     "gh2-34": {
-        "name": "Gain “Drakescale Helm” (Item 121)"
+        "name": "Получите «Шлем из чешуи дрейка» (Предмет 121)"
     },
     "gh2-35": {
-        "name": "Gain “Rod of Transference” (Item 115)"
+        "name": "Получите «Жезл переноса» (Предмет 115)"
     },
     "gh2-36": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-37": {
-        "name": "Gain “Shoes of Happiness” (Item 97)"
+        "name": "Получите «Ботинки счастья» (Предмет 97)"
     },
     "gh2-38": {
-        "name": "Gain 1 ✔"
+        "name": "Получите 1 ✔"
     },
     "gh2-39": {
-        "name": "Gain 20 experience"
+        "name": "Получите 20 очков опыта"
     },
     "gh2-40": {
-        "name": "Gain “Fueled Falchion” (Item 110)"
+        "name": "Получите «Воспламеняющийся меч» (Предмет 110)"
     },
     "gh2-41": {
-        "name": "Gain 15 gold"
+        "name": "Получите 15 золотых"
     },
     "gh2-42": {
-        "name": "Suffer 5 damage"
+        "name": "Получите 5 урона"
     },
     "gh2-43": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-44": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-45": {
-        "name": "Gain 2 ✔"
+        "name": "Получите 2 ✔"
     },
     "gh2-46": {
-        "name": "Gain 15 gold"
+        "name": "Получите 15 золотых"
     },
     "gh2-47": {
-        "name": "Suffer 3 damage and gain {POISON}"
+        "name": "Получите 3 урона и состояние {POISON}"
     },
     "gh2-48": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-49": {
-        "name": "Gain 15 experience"
+        "name": "Получите 15 очков опыта"
     },
     "gh2-50": {
-        "name": "Gain “Steam Armor” (Item 106)"
+        "name": "Получите «Паровой доспех» (Предмет 106)"
     },
     "gh2-51": {
-        "name": "Gain 15 experience"
+        "name": "Получите 15 очков опыта"
     },
     "gh2-52": {
-        "name": "Random Side Scenario"
+        "name": "Случайный побочный сценарий"
     },
     "gh2-53": {
-        "name": "Gain 1 ✔"
+        "name": "Получите 1 ✔"
     },
     "gh2-54": {
-        "name": "Gain 15 gold and “Steel Ring” (Item 102)"
+        "name": "Получите 15 золотых и «Стальное кольцо» (Предмет 102)"
     },
     "gh2-55": {
-        "name": "Gain 20 experience"
+        "name": "Получите 20 очков опыта"
     },
     "gh2-56": {
-        "name": "Gain 15 gold"
+        "name": "Получите 15 золотых"
     },
     "gh2-57": {
-        "name": "Random Side Scenario"
+        "name": "Случайный побочный сценарий"
     },
     "gh2-58": {
-        "name": "Gain 20 gold"
+        "name": "Получите 20 золотых"
     },
     "gh2-59": {
-        "name": "Gain “Shield of the Righteous” (Item 148)"
+        "name": "Получите «Щит праведников» (Предмет 148)"
     },
     "gh2-60": {
-        "name": "Suffer 5 damage"
+        "name": "Получите 5 урона"
     },
     "gh2-61": {
-        "name": "Gain “Boots of Bracing” (Item 143)"
+        "name": "Получите «Укрепляющие сапоги» (Предмет 143)"
     },
     "gh2-62": {
-        "name": "Gain 20 gold"
+        "name": "Получите 20 золотых"
     },
     "gh2-63": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-64": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-65": {
-        "name": "Gain “Ranger's Hood” (Item 103)"
+        "name": "Получите «Капюшон следопыта» (Предмет 103)"
     },
     "gh2-66": {
-        "name": "Gain {POISON} and {STRENGTHEN} and Recover 2 lost cards"
+        "name": "Получите состояния {POISON} и {STRENGTHEN} и верните 2 сброшенные карты"
     },
     "gh2-67": {
-        "name": "Gain “Doomed Compass” (Item 132)"
+        "name": "Получите «Компас обречения» (Предмет 132)"
     },
     "gh2-68": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-69": {
-        "name": "Gain 25 gold"
+        "name": "Получите 25 золотых"
     },
     "gh2-70": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-71": {
-        "name": "Gain 2 ✔"
+        "name": "Получите 2 ✔"
     },
     "gh2-72": {
-        "name": "Gain 25 gold"
+        "name": "Получите 25 золотых"
     },
     "gh2-73": {
-        "name": "Gain “Necklace of Teeth” (Item 107)"
+        "name": "Получите «Ожерелье из зубов» (Предмет 107)"
     },
     "gh2-74": {
-        "name": "Suffer 3 damage and gain {IMMOBILIZE}"
+        "name": "Получите 3 урона и состояние {IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "Gain “Drakescale Armor” (Item 120)"
+        "name": "Получите «Доспех из чешуи дрейка» (Предмет 120)"
     },
     "gh2-76": {
-        "name": "Random Item Design"
+        "name": "Случайный чертёж предмета"
     },
     "gh2-77": {
-        "name": "Gain 30 gold"
+        "name": "Получите 30 золотых"
     },
     "gh2-78": {
-        "name": "Gain 20 gold"
+        "name": "Получите 20 золотых"
     },
     "gh2-79": {
-        "name": "Random Side Scenario"
+        "name": "Случайный побочный сценарий"
     }
 }

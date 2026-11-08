@@ -1,198 +1,198 @@
 export default {
     "fh-5": {
-        "name": "Mining Camp",
+        "name": "Bányászkunyhó",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {METAL} for 2 gold",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {METAL} 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {METAL} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {METAL} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 49.2"
+                "rewards": "+1 Városfejlettség, olvasd el: 49.2. szakasz"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {METAL} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {METAL} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {METAL} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {METAL} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-12": {
-        "name": "Hunting Lodge",
+        "name": "Vadászház",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {HIDE} for 2 gold",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {HIDE} 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 172.3"
+                "rewards": "+1 Városfejlettség, olvasd el: 172.3. szakasz"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {HIDE} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {HIDE} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {HIDE} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {HIDE} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {HIDE} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {HIDE} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-17": {
-        "name": "Logging Camp",
+        "name": "Fakitermelő tábor",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy up to 1 {LUMBER} for 2 gold",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {LUMBER} 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 {LUMBER} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {LUMBER} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 {LUMBER} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {LUMBER} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 4,
-                "operations": "Collectively buy up to 4 {LUMBER} for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {LUMBER} 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-21": {
-        "name": "Inn",
+        "name": "Fogadó",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively buy 1 material resource for 2 gold",
+                "operations": "Közösen vásárolhattok 1 nyersanyagot 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 151.2"
+                "rewards": "+1 Városfejlettség, olvasd el: 151.2. szakasz"
             },
             {
                 "level": 2,
-                "operations": "Collectively buy up to 2 different material resources for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 2 különböző nyersanyagot 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 3,
-                "operations": "Collectively buy up to 3 different material resources for 2 gold each",
+                "operations": "Közösen vásárolhattok legfeljebb 3 különböző nyersanyagot 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-24": {
-        "name": "Garden",
+        "name": "Kert",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                "operations": "Ültess gyógynövényeket VAGY szerezz 1 gyógynövényt minden beültetett parcellából",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 78.4"
+                "rewards": "+1 Városfejlettség, olvasd el: 78.4. szakasz"
             },
             {
                 "level": 2,
-                "operations": "Plant herbs OR Gain 1 herb from each planted plot",
+                "operations": "Ültess gyógynövényeket VAGY szerezz 1 gyógynövényt minden beültetett parcellából",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, +1 plot"
+                "rewards": "+1 Városfejlettség, +1 parcella"
             },
             {
                 "level": 3,
-                "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                "operations": "Szerezzetek közösen 1 gyógynövényt minden beültetett parcellából, majd ültessetek gyógynövényeket",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 4,
-                "operations": "Gain 1 collective herb from each planted plot, then plant herbs",
+                "operations": "Szerezzetek közösen 1 gyógynövényt minden beültetett parcellából, majd ültessetek gyógynövényeket",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity, +1 plot"
+                "rewards": "+1 Városfejlettség, +1 parcella"
             }
         ]
     },
     "fh-34": {
-        "name": "Craftsman",
+        "name": "Kézműves",
         "levels": [
             {
                 "level": 0
@@ -200,79 +200,79 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
                 "passive": "",
-                "rewards": "Add items 001 to 010 to the item supply"
+                "rewards": "add hozzá a 001–010 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 011 to 015 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 011–015 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 1 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 016 to 020 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 016–020 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 021 to 025 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 021–025 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 5,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 026 to 030 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 026–030 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 6,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 031 to 035 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 031–035 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 7,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 036 to 040 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 036–040 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 8,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 041 to 045 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 041–045 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 9,
                 "operations": "",
-                "downtime": "Craft items",
-                "wrecked": "Lose 3 collective {HIDE}",
+                "downtime": "Felszerelések készítése",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 046 to 050 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 046–050 felszereléseket a felszerelés-készlethez"
             }
         ]
     },
     "fh-35": {
-        "name": "Alchemist",
+        "name": "Alkimista",
         "levels": [
             {
                 "level": 0
@@ -280,31 +280,31 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Brew 2-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Kétgyógynövényes főzetek készítése",
+                "wrecked": "A karakterek nem használhatnak főzeteket",
                 "passive": "",
                 "rewards": ""
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Brew and distill 2-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Kétgyógynövényes főzetek készítése és lepárlása",
+                "wrecked": "A karakterek nem használhatnak főzeteket",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Brew and distill 2- and 3-herb potions",
-                "wrecked": "Characters cannot use potions",
+                "downtime": "Két- és háromgyógynövényes főzetek készítése és lepárlása",
+                "wrecked": "A karakterek nem használhatnak főzeteket",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 183.5"
+                "rewards": "+1 Városfejlettség, olvasd el: 183.5. szakasz"
             }
         ]
     },
     "fh-37": {
-        "name": "Trading Post",
+        "name": "Kereskedőpont",
         "levels": [
             {
                 "level": 0
@@ -312,39 +312,39 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Buy up to one item",
-                "wrecked": "Lose 5 collective gold",
+                "downtime": "Vásárolhattok legfeljebb egy felszerelést",
+                "wrecked": "Veszíts el közösen 5 aranyat",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 25.2"
+                "rewards": "+1 Városfejlettség, olvasd el: 25.2. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Buy up to two items",
-                "wrecked": "Lose 10 collective gold",
+                "downtime": "Vásárolhattok legfeljebb két felszerelést",
+                "wrecked": "Veszíts el közösen 10 aranyat",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 12.4"
+                "rewards": "+1 Városfejlettség, olvasd el: 12.4. szakasz"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Buy up to three items",
-                "wrecked": "Lose 15 collective gold",
+                "downtime": "Vásárolhattok legfeljebb három felszerelést",
+                "wrecked": "Veszíts el közösen 15 aranyat",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 38.3"
+                "rewards": "+1 Városfejlettség, olvasd el: 38.3. szakasz"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Buy up to four items",
-                "wrecked": "Lose 20 collective gold",
+                "downtime": "Vásárolhattok legfeljebb négy felszerelést",
+                "wrecked": "Veszíts el közösen 20 aranyat",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 196.2"
+                "rewards": "+1 Városfejlettség, olvasd el: 196.2. szakasz"
             }
         ]
     },
     "fh-39": {
-        "name": "Jeweler",
+        "name": "Ékszerész",
         "levels": [
             {
                 "level": 0
@@ -353,70 +353,70 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Rongálj meg egy tetszőleges épületet",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 31.3"
+                "rewards": "+1 Városfejlettség, olvasd el: 31.3. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Rongálj meg egy tetszőleges épületet",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 160 to 163 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 160–163 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Damage any one building",
+                "wrecked": "Rongálj meg egy tetszőleges épületet",
                 "passive": "",
-                "rewards": "+1 prosperity, Add items 164 to 167 to the item supply"
+                "rewards": "+1 Városfejlettség, add hozzá a 164–167 felszereléseket a felszerelés-készlethez"
             }
         ]
     },
     "fh-42": {
-        "name": "Temple of the Great Oak",
+        "name": "A Nagy Tölgy temploma",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Minden karakter elkölthet 5 aranyat, hogy a következő küldetést {BLESS.fh}x2-vel kezdje",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Minden karakter {CURSE.fh}-gyel kezdi a következő küldetést",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 192.5"
+                "rewards": "+1 Városfejlettség, olvasd el: 192.5. szakasz"
             },
             {
                 "level": 2,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Minden karakter elkölthet 5 aranyat, hogy a következő küldetést {BLESS.fh}x2-vel kezdje",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Minden karakter {CURSE.fh}-gyel kezdi a következő küldetést",
                 "passive": "",
-                "rewards": "+3 prosperity"
+                "rewards": "+3 Városfejlettség"
             },
             {
                 "level": 3,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Minden karakter elkölthet 5 aranyat, hogy a következő küldetést {BLESS.fh}x2-vel kezdje",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Minden karakter {CURSE.fh}-gyel kezdi a következő küldetést",
                 "passive": "",
-                "rewards": "+5 prosperity"
+                "rewards": "+5 Városfejlettség"
             },
             {
                 "level": 4,
-                "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
+                "operations": "Minden karakter elkölthet 5 aranyat, hogy a következő küldetést {BLESS.fh}x2-vel kezdje",
                 "downtime": "",
-                "wrecked": "Each character starts the next scenario with {CURSE.fh}",
+                "wrecked": "Minden karakter {CURSE.fh}-gyel kezdi a következő küldetést",
                 "passive": "",
                 "rewards": ""
             }
         ]
     },
     "fh-44": {
-        "name": "Enhancer",
+        "name": "Fejlesztő",
         "levels": [
             {
                 "level": 0
@@ -424,111 +424,111 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
+                "downtime": "Fejlesztések vásárlása",
+                "wrecked": "Minden karakter {DISARM.fh}-mal kezdi a következő küldetést",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 193.1"
+                "rewards": "+1 Városfejlettség, olvasd el: 193.1. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold",
-                "rewards": "+1 prosperity, read section 157.2"
+                "downtime": "Fejlesztések vásárlása",
+                "wrecked": "Minden karakter {DISARM.fh}-mal kezdi a következő küldetést",
+                "passive": "Minden fejlesztés ára 10 arannyal csökken",
+                "rewards": "+1 Városfejlettség, olvasd el: 157.2. szakasz"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold and level penalties by 10 gold per level",
-                "rewards": "+1 prosperity"
+                "downtime": "Fejlesztések vásárlása",
+                "wrecked": "Minden karakter {DISARM.fh}-mal kezdi a következő küldetést",
+                "passive": "Minden fejlesztés ára 10 arannyal, a szintbüntetések szintenként 10 arannyal csökkennek",
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Buy enhancements",
-                "wrecked": "Each character starts the next scenario with {DISARM.fh}",
-                "passive": "Reduce all enhancement costs by 10 gold, level penalties by 10 gold per level, and repeat penalties by 25 gold per enhancement",
-                "rewards": "+1 prosperity, read section 56.3"
+                "downtime": "Fejlesztések vásárlása",
+                "wrecked": "Minden karakter {DISARM.fh}-mal kezdi a következő küldetést",
+                "passive": "Minden fejlesztés ára 10 arannyal, a szintbüntetések szintenként 10 arannyal, az ismétlési büntetések fejlesztésenként 25 arannyal csökkennek",
+                "rewards": "+1 Városfejlettség, olvasd el: 56.3. szakasz"
             }
         ]
     },
     "fh-65": {
-        "name": "Metal Depot",
+        "name": "Fémraktár",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {METAL} for 5 gold",
-                "downtime": "Lose 2 collective {METAL}",
+                "operations": "Közösen eladhattok legfeljebb 1 {METAL}-t 5 aranyért",
+                "downtime": "Veszíts el közösen 2 {METAL}-t",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperity"
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {METAL} for 5 gold each",
+                "operations": "Közösen eladhattok legfeljebb 2 {METAL}-t 5 aranyért darabonként",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {METAL}",
+                "wrecked": "Veszíts el közösen 2 {METAL}-t",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 Városfejlettség"
             }
         ]
     },
     "fh-67": {
-        "name": "Lumber Depot",
+        "name": "Faraktár",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {LUMBER} for 5 gold",
+                "operations": "Közösen eladhattok legfeljebb 1 {LUMBER}-t 5 aranyért",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {LUMBER}",
+                "wrecked": "Veszíts el közösen 2 {LUMBER}-t",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 144.3"
+                "rewards": "+1 Városfejlettség, olvasd el: 144.3. szakasz"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {LUMBER} for 5 gold each",
+                "operations": "Közösen eladhattok legfeljebb 2 {LUMBER}-t 5 aranyért darabonként",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {LUMBER}",
+                "wrecked": "Veszíts el közösen 2 {LUMBER}-t",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 Városfejlettség"
             }
         ]
     },
     "fh-72": {
-        "name": "Hide Depot",
+        "name": "Bőrraktár",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively sell up to 1 {HIDE} for 5 gold",
+                "operations": "Közösen eladhattok legfeljebb 1 {HIDE}-t 5 aranyért",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-t",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 173.1"
+                "rewards": "+1 Városfejlettség, olvasd el: 173.1. szakasz"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {HIDE} for 5 gold each",
+                "operations": "Közösen eladhattok legfeljebb 2 {HIDE}-t 5 aranyért darabonként",
                 "downtime": "",
-                "wrecked": "Lose 2 collective {HIDE}",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-t",
                 "passive": "",
-                "rewards": "+2 prosperity"
+                "rewards": "+2 Városfejlettség"
             }
         ]
     },
     "fh-74": {
-        "name": "Tavern",
+        "name": "Kocsma",
         "levels": [
             {
                 "level": 0
@@ -537,31 +537,31 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Veszíts el 1 morált",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 160.2"
+                "rewards": "+1 Városfejlettség, olvasd el: 160.2. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Veszíts el 1 morált",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 35.3"
+                "rewards": "+1 Városfejlettség, olvasd el: 35.3. szakasz"
             },
             {
                 "level": 3,
-                "requires": "Requires 3 Ancient Coins (Item 245)",
+                "requires": "3 Ősi érme szükséges (Felszerelés 245)",
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
+                "wrecked": "Veszíts el 1 morált",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 113.1"
+                "rewards": "+1 Városfejlettség, olvasd el: 113.1. szakasz"
             }
         ]
     },
     "fh-81": {
-        "name": "Hall of Revelry",
+        "name": "Dínomdánom csarnoka",
         "levels": [
             {
                 "level": 0
@@ -570,22 +570,22 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
-                "passive": "When the trials deck is complete, read section 187.1",
-                "rewards": "+1 prosperity, read section 178.2"
+                "wrecked": "Veszíts el 1 morált",
+                "passive": "Amikor a próbák paklija kész, olvasd el: 187.1. szakasz",
+                "rewards": "+1 Városfejlettség, olvasd el: 178.2. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 morale",
-                "passive": "Access to Tholos’ Favours",
-                "rewards": "+1 prosperity"
+                "wrecked": "Veszíts el 1 morált",
+                "passive": "Hozzáférés Tholos kegyeihez",
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-83": {
-        "name": "Library",
+        "name": "Könyvtár",
         "levels": [
             {
                 "level": 0
@@ -594,30 +594,30 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Veszíts el 1 inspirációt",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 190.3"
+                "rewards": "+1 Városfejlettség, olvasd el: 190.3. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Veszíts el 1 inspirációt",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 116.3"
+                "rewards": "+1 Városfejlettség, olvasd el: 116.3. szakasz"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 inspiration",
+                "wrecked": "Veszíts el 1 inspirációt",
                 "passive": "",
-                "rewards": "+1 prosperity, read section 89.2"
+                "rewards": "+1 Városfejlettség, olvasd el: 89.2. szakasz"
             }
         ]
     },
     "fh-84": {
-        "name": "Workshop",
+        "name": "Műhely",
         "levels": [
             {
                 "level": 0
@@ -626,14 +626,14 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose 1 collective {LUMBER}",
-                "passive": "Each of the following upgrades (Boat, Sled, Climbing Gear) can be built in any order.",
-                "rewards": "+1 prosperity"
+                "wrecked": "Veszíts el közösen 1 {LUMBER}-t",
+                "passive": "A következő fejlesztések (Csónak, Szán, Mászófelszerelés) tetszőleges sorrendben megépíthetők.",
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-85": {
-        "name": "Carpenter",
+        "name": "Ács",
         "levels": [
             {
                 "level": 0
@@ -642,22 +642,22 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose any 1 collective resource",
-                "passive": "Reduce all construction costs by 1 material resource",
-                "rewards": "+1 prosperity, read section 7.3"
+                "wrecked": "Veszíts el közösen 1 tetszőleges nyersanyagot",
+                "passive": "Minden építési költség 1 nyersanyaggal csökken",
+                "rewards": "+1 Városfejlettség, olvasd el: 7.3. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Lose any 1 collective resource",
-                "passive": "Reduce all construction costs by 1 material resource and the extra construction cost by 1 morale",
-                "rewards": "+1 prosperity"
+                "wrecked": "Veszíts el közösen 1 tetszőleges nyersanyagot",
+                "passive": "Minden építési költség 1 nyersanyaggal, a többlet építési költség 1 morállal csökken",
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-88": {
-        "name": "Stables",
+        "name": "Istállók",
         "levels": [
             {
                 "level": 0
@@ -666,38 +666,38 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring one pet into each scenario. Capacity: 4",
-                "rewards": "+1 prosperity, read section 3.1"
+                "wrecked": "A karakterek nem használhatnak kedvenceket",
+                "passive": "Minden küldetésre vigyetek magatokkal egy kedvencet. Kapacitás: 4",
+                "rewards": "+1 Városfejlettség, olvasd el: 3.1. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring one pet into each scenario. Capacity: 8",
-                "rewards": "+1 prosperity"
+                "wrecked": "A karakterek nem használhatnak kedvenceket",
+                "passive": "Minden küldetésre vigyetek magatokkal egy kedvencet. Kapacitás: 8",
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring two pets into each scenario. Capacity: 8",
-                "rewards": "+1 prosperity"
+                "wrecked": "A karakterek nem használhatnak kedvenceket",
+                "passive": "Minden küldetésre vigyetek magatokkal két kedvencet. Kapacitás: 8",
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 4,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Characters cannot use pets",
-                "passive": "Bring two pets into each scenario. Capacity: 12",
-                "rewards": "+1 prosperity"
+                "wrecked": "A karakterek nem használhatnak kedvenceket",
+                "passive": "Minden küldetésre vigyetek magatokkal két kedvencet. Kapacitás: 12",
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-90": {
-        "name": "Town Hall",
+        "name": "Városháza",
         "levels": [
             {
                 "level": 0
@@ -706,65 +706,65 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw one challenge and keep up to one. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity, read section 189.1"
+                "wrecked": "Nem teljesíthetők kihívások",
+                "passive": "Húzz egy kihívást, és tarts meg legfeljebb egyet-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "rewards": "+1 Városfejlettség, olvasd el: 189.1. szakasz"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw two challenges and keep up to one. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity"
+                "wrecked": "Nem teljesíthetők kihívások",
+                "passive": "Húzz kettőt kihívást, és tarts meg legfeljebb egyet-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Cannot complete challenges",
-                "passive": "Draw three challenges and keep up to two. When the challenge deck is complete, read section 190.1",
-                "rewards": "+1 prosperity"
+                "wrecked": "Nem teljesíthetők kihívások",
+                "passive": "Húzz hármat kihívást, és tarts meg legfeljebb kettőt-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "rewards": "+1 Városfejlettség"
             }
         ]
     },
     "fh-98": {
-        "name": "Barracks",
+        "name": "Kaszárnya",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                "operations": "Közösen kiképezhettek legfeljebb 1 katonát 3 aranyért és 1 nyersanyagért",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 4, Effect: advantage and -5{ATTACK.fh}",
-                "rewards": "+1 prosperity"
+                "wrecked": "Hátrány az összes támadási esemény feloldásán. Nem használhatók katonák.",
+                "passive": "Kapacitás: 4, Hatás: előny és -5{ATTACK.fh}",
+                "rewards": "+1 Városfejlettség"
             },
             {
                 "level": 2,
-                "operations": "Collectively train up to 1 soldier for 3 gold and 1 material resource",
+                "operations": "Közösen kiképezhettek legfeljebb 1 katonát 3 aranyért és 1 nyersanyagért",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 6, Effect: advantage and -15{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Hátrány az összes támadási esemény feloldásán. Nem használhatók katonák.",
+                "passive": "Kapacitás: 6, Hatás: előny és -15{ATTACK.fh}",
+                "rewards": "+1 Városfejlettség, +2 katona"
             },
             {
                 "level": 3,
-                "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                "operations": "Közösen kiképezhettek legfeljebb 2 katonát 3 aranyért és 1 nyersanyagért darabonként",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 8, Effect: advantage and -25{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Hátrány az összes támadási esemény feloldásán. Nem használhatók katonák.",
+                "passive": "Kapacitás: 8, Hatás: előny és -25{ATTACK.fh}",
+                "rewards": "+1 Városfejlettség, +2 katona"
             },
             {
                 "level": 4,
-                "operations": "Collectively train up to 2 soldiers for 3 gold and 1 material resource each",
+                "operations": "Közösen kiképezhettek legfeljebb 2 katonát 3 aranyért és 1 nyersanyagért darabonként",
                 "downtime": "",
-                "wrecked": "Disadvantage on all attack event resolutions. Cannot use soldiers.",
-                "passive": "Capacity: 10, Effect: advantage and -35{ATTACK.fh}",
-                "rewards": "+1 prosperity, +2 soldiers"
+                "wrecked": "Hátrány az összes támadási esemény feloldásán. Nem használhatók katonák.",
+                "passive": "Kapacitás: 10, Hatás: előny és -35{ATTACK.fh}",
+                "rewards": "+1 Városfejlettség, +2 katona"
             }
         ]
     }

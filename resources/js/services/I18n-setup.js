@@ -2,13 +2,15 @@
 import reloadForNewBuild from "./app/reloadForNewBuild";
 
 const loadedLanguages = ['en']; // our default language that is preloaded
-const supportedLanguages = ['en', 'fr', 'it', 'de', 'es', 'pl', 'ru', 'hu', 'pt'];
+// The backend stores 2-letter codes: 'br' is Brazilian Portuguese (not Breton), 'zh'/'tw' Simplified/Traditional Chinese.
+const htmlLanguages = {br: 'pt-BR', zh: 'zh-Hans', tw: 'zh-Hant'};
+const supportedLanguages = ['en', 'fr', 'it', 'de', 'es', 'pl', 'ru', 'hu', 'pt', 'br', 'cs', 'ko', 'th', 'zh', 'tw'];
 
 function setI18nLanguage(lang) {
     i18n.locale = lang;
     app.$i18n.locale = lang;
     // axios.defaults.headers.common['Accept-Language'] = lang;
-    document.querySelector('html').setAttribute('lang', lang);
+    document.querySelector('html').setAttribute('lang', htmlLanguages[lang] ?? lang);
     return lang;
 }
 

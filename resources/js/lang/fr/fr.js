@@ -1,51 +1,55 @@
-import general from "./general";
-import storyline from "./storyline";
-import scenarios from "./scenarios";
-import achievements from "./achievements";
-import items from "./items";
-import treasures from "./treasures";
-import personal_quests from "./personal_quests";
-import characters from "./characters";
-import prompts from "./prompts";
-import abilities from "./abilities";
-import buildings from "./buildings";
-import overlays from "./overlays";
-import campaign_sheet from "./campaign_sheet";
+import general from "./general"
+import storyline from "./storyline"
+import scenarios from "./scenarios"
+import achievements from "./achievements"
+import items from "./items"
+import treasures from "./treasures"
+import monsters from "./monsters"
+import personal_quests from "./personal_quests"
+import characters from "./characters"
+import prompts from "./prompts"
+import abilities from "./abilities"
+import buildings from "./buildings"
+import overlays from "./overlays"
+import campaign_sheet from "./campaign_sheet"
 
 export default {
     ...general,
     ...storyline,
-    scenarios: {
-        ...scenarios,
+    "scenarios": {
+        ...scenarios
     },
-    achievements: {
-        ...achievements,
+    "achievements": {
+        ...achievements
     },
-    items: {
-        ...items,
+    "items": {
+        ...items
     },
-    treasures: {
-        ...treasures,
+    "treasures": {
+        ...treasures
     },
-    personal_quests: {
-        ...personal_quests,
+    "monsters": {
+        ...monsters
     },
-    characters: {
-        ...characters,
+    "personal_quests": {
+        ...personal_quests
     },
-    prompts: {
-        ...prompts,
+    "characters": {
+        ...characters
     },
-    abilities: {
-        ...abilities,
+    "prompts": {
+        ...prompts
     },
-    buildings: {
-        ...buildings,
+    "abilities": {
+        ...abilities
     },
-    overlays: {
-        ...overlays,
+    "buildings": {
+        ...buildings
     },
-    campaign_sheet: {
-        ...campaign_sheet,
+    "overlays": {
+        ...overlays
     },
-};
+    "campaign_sheet": {
+        ...campaign_sheet
+    }
+}

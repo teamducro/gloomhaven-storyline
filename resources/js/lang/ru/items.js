@@ -46,7 +46,7 @@ export default {
     "gh-9": {
         "name": "Пронзающий лук",
         "source": "Процветание 1",
-        "desc": "Во время вашей дальней атаки игнорируйте показатели всех свойств «Щит {SHIELD}». Применяйте этот эффект ко всем дальним атакам текущей способности."
+        "desc": "Во время вашей дальней атаки игнорируйте показатели всех свойств «Щит». Применяйте этот эффект ко всем дальним атакам текущей способности."
     },
     "gh-10": {
         "name": "Молот войны",
@@ -573,7 +573,7 @@ export default {
     "gh-113": {
         "name": "Топор порчи черепов",
         "source": "Награда за {SCENARIO 11}\nНаграда за {SCENARIO 12}",
-        "desc": "Во время вашей ближней атаки, целью которой является ожившийй труп, оживший дух или ожившие кости, добавьте +5 {ATTACK} к одной атаке."
+        "desc": "Во время вашей ближней атаки, целью которой является ожившийй труп, оживший дух или ожившие кости, добавьте +5 к одной атаке."
     },
     "gh-114": {
         "name": "Посох Зорна",
@@ -687,7 +687,7 @@ export default {
     "gh-135": {
         "name": "Фокусирующий луч",
         "source": "Награда за соло-сценарий - {TI}",
-        "desc": "Во время вашей способности лечения удвойте показатели всех действий «Лечение {HEAL}»."
+        "desc": "Во время вашей способности лечения удвойте показатели всех действий «Лечение»."
     },
     "gh-136": {
         "name": "Летучий эликсир",
@@ -748,7 +748,7 @@ export default {
     "gh-147": {
         "name": "Плащ охотника",
         "source": "Награда за соло-сценарий - {DS}",
-        "desc": "Каждый раз, когда вы применяете способность с атрибутом {DOOM} цель этой способности получает состояние «СМЯТЕНИЕ {MUDDLE}»."
+        "desc": "Каждый раз, когда вы выполняете действие {DOOM}, цель этого действия {DOOM} получает состояние «СМЯТЕНИЕ {MUDDLE}»."
     },
     "gh-148": {
         "name": "Докторский китель",
@@ -836,2863 +836,2863 @@ export default {
         "desc": "Раскрывая карты любой колоды, раскрывайте 1 дополнительную карту."
     },
     "jotl-1": {
-        "name": "Eagle-Eye Goggles",
+        "name": "Очки орлиного взора",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your attack, gain Advantage on the entire Attack action."
+        "desc": "Во время вашей атаки получите преимущество для всех атак текущей способности."
     },
     "jotl-2": {
-        "name": "Iron Helmet",
+        "name": "Железный шлем",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "When attacked, consider any {2X_WHITE} attack modifier card the enemy draws to be a {+0_WHITE} instead."
+        "desc": "Когда вас атакуют, считайте любую вытянутую врагом карту модификатора атаки {2X_WHITE} картой {+0_WHITE}."
     },
     "jotl-3": {
-        "name": "Chain Armor",
+        "name": "Кольчуга",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your turn gain {SHIELD} 1 for the rest of the round"
+        "desc": "В ваш ход получите свойство «Щит {SHIELD} 1» до конца раунда."
     },
     "jotl-4": {
-        "name": "Studded Leather",
+        "name": "Клёпаная броня",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 1 for the attack."
+        "desc": "Когда вас атакуют, атакующий проводит атаку с затруднением, а вы получаете свойство «Щит {SHIELD} 1» для этой атаки."
     },
     "jotl-5": {
-        "name": "Weathered Boots",
+        "name": "Ношеные сапоги",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your movement add +1 {MOVE} to a single movement."
+        "desc": "Во время вашего движения добавьте +1 {MOVE} к одному действию движения."
     },
     "jotl-6": {
-        "name": "Winged Shoes",
+        "name": "Крылатые ботинки",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your movement, add {JUMP} to the entire Move Action.",
-        "faq": "Winged Shoes may be used for only a single movement ability, not for multiple movement abilities of an action (ex: Action with Move, Attack, Move)."
+        "desc": "Во время вашего движения добавьте {JUMP} ко всему действию движения.",
+        "faq": "Крылатые ботинки можно использовать только для одной способности движения, а не для нескольких способностей движения одного действия (например: действие с движением, атакой и ещё одним движением)."
     },
     "jotl-7": {
-        "name": "Heater Shield",
+        "name": "Треугольный щит",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "When damaged by an attack, gain {SHIELD} 1 for the attack."
+        "desc": "Когда вы получаете урон от атаки, получите свойство «Щит {SHIELD} 1» для этой атаки."
     },
     "jotl-8": {
-        "name": "Throwing Hammer",
+        "name": "Метательный молот",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your ranged attack, add {STUN} to a single attack"
+        "desc": "Во время вашей дальней атаки добавьте {STUN} к одной атаке."
     },
     "jotl-9": {
-        "name": "Poison Dagger",
+        "name": "Отравленный кинжал",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your melee attack, add {POISON} to a single attack."
+        "desc": "Во время вашей ближней атаки добавьте {POISON} к одной атаке."
     },
     "jotl-10": {
-        "name": "Iron Spear",
+        "name": "Железное копьё",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your single-target melee Attack ability, attack any one enemy wihin 2 hexes"
+        "desc": "Во время вашей одиночной ближней атаки атакуйте любого одного врага в пределах 2 клеток."
     },
     "jotl-11": {
-        "name": "Healing Potion",
+        "name": "Лечебное зелье",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your turn, perform a “{HEAL} 3, Self” action."
+        "desc": "В ваш ход выполните действие «{HEAL} 3 (на себя)»."
     },
     "jotl-12": {
-        "name": "Stamina Potion",
+        "name": "Зелье выносливости",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your turn, return one of your discarded cards to your hand."
+        "desc": "В ваш ход верните на руку 1 карту из вашей стопки «Сброс»."
     },
     "jotl-13": {
-        "name": "Power Potion",
+        "name": "Зелье силы",
         "source": "Награда за {SCENARIO 2}",
-        "desc": "During your attack, add +1 {ATTACK} to your entire Attack action."
+        "desc": "Во время вашей атаки добавьте +1 {ATTACK} ко всему действию атаки."
     },
     "jotl-14": {
-        "name": "Mana Potion",
+        "name": "Зелье маны",
         "source": "Награда за {SCENARIO 4}\n {SCENARIO 4} (Сокровище #16)",
-        "desc": "During your turn, infuse any one element. {ANY}"
+        "desc": "В ваш ход наполните любую одну стихию. {ANY}"
     },
     "jotl-15": {
-        "name": "Amulet of Life",
+        "name": "Амулет жизни",
         "source": "Награда за {SCENARIO 9}",
-        "desc": "During your turn, “{HEAL} 1, Self” action."
+        "desc": "В ваш ход выполните действие «{HEAL} 1 (на себя)»."
     },
     "jotl-16": {
-        "name": "Robes of Evocation",
+        "name": "Мантия воплощения",
         "source": "Награда за {SCENARIO 9}",
-        "desc": "During your attack, {ANY_X} to add +1 {ATTACK} to the entire Attack action."
+        "desc": "Во время вашей атаки {ANY_X}, чтобы добавить +1 {ATTACK} ко всему действию атаки."
     },
     "jotl-17": {
-        "name": "Comfortable Shoes",
+        "name": "Удобные башмаки",
         "source": "Награда за {SCENARIO 9}",
-        "desc": "Whenever you use the default bottom of an ability card, perform a {MOVE} 3 action instead of a {MOVE} 2 action."
+        "desc": "Каждый раз, когда вы используете стандартное нижнее действие карты способности, выполните действие {MOVE} 3 вместо действия {MOVE} 2."
     },
     "jotl-18": {
-        "name": "Battle-Axe",
+        "name": "Боевой топор",
         "source": "Награда за {SCENARIO 9}",
-        "desc": "During your single-target melee attack action, turn the attack into the following: {AOE.CONE_0_1}"
+        "desc": "Во время вашего действия одиночной ближней атаки превратите атаку в следующую: {AOE.CONE_0_1}"
     },
     "jotl-19": {
-        "name": "Black Candle",
+        "name": "Чёрная свеча",
         "source": "Награда за {SCENARIO 9}",
-        "desc": "During your ranged attack, add {CURSE} to a single attack."
+        "desc": "Во время вашей дальней атаки добавьте {CURSE} к одной атаке."
     },
     "jotl-20": {
-        "name": "Stun Powder",
+        "name": "Ослепляющая пыль",
         "source": "Награда за {SCENARIO 9}",
-        "desc": "During your attack, add {STUN} to a single attack."
+        "desc": "Во время вашей атаки добавьте {STUN} к одной атаке."
     },
     "jotl-21": {
-        "name": "Hawk Helm",
+        "name": "Шлем ястреба",
         "source": "Награда за {SCENARIO 15}",
-        "desc": "During your ranged attack, add +1 {RANGE} to your entire Attack action."
+        "desc": "Во время вашей дальней атаки добавьте +1 {RANGE} ко всему действию атаки."
     },
     "jotl-22": {
-        "name": "Bladed Armor",
+        "name": "Доспех лезвий",
         "source": "Награда за {SCENARIO 15}",
-        "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack and the attacker suffers 2 damage."
+        "desc": "Когда вы получаете урон от атаки, получите свойство «Щит {SHIELD} 2» для этой атаки, а атакующий получает 2 урона."
     },
     "jotl-23": {
-        "name": "Boots of Striding",
+        "name": "Сапоги большого шага",
         "source": "Награда за {SCENARIO 15}",
-        "desc": "During your movement, add +2 {MOVE} to a single movement."
+        "desc": "Во время вашего движения добавьте +2 {MOVE} к одному действию движения."
     },
     "jotl-24": {
-        "name": "Volatile Bomb",
+        "name": "Зажигательная бомба",
         "source": "Награда за {SCENARIO 15}",
-        "desc": "During your single-target ranged attack action, turn the attack into the following: {AOE.CONE_1_1}"
+        "desc": "Во время вашего действия одиночной дальней атаки превратите атаку в следующую: {AOE.CONE_1_1}"
     },
     "jotl-25": {
-        "name": "Barbed Chain",
+        "name": "Цепь с крюком",
         "source": "Награда за {SCENARIO 15}",
-        "desc": "During your ranged attack, add {PULL} 2 to a single attack."
+        "desc": "Во время вашей дальней атаки добавьте {PULL} 2 к одной атаке."
     },
     "jotl-26": {
-        "name": "Oak Charm",
+        "name": "Оберег Дуба",
         "source": "Награда за {SCENARIO 15}",
-        "desc": "During your turn, perform a “{BLESS}, {RANGE} 5” action."
+        "desc": "В ваш ход выполните действие «{BLESS}, {RANGE} 5»."
     },
     "jotl-27": {
-        "name": "Fateful Compass",
+        "name": "Компас обречения",
         "source": "{SCENARIO 3} (Сокровище #10)",
-        "desc": "During your turn, force one enemy within {RANGE} 3 to peform a “{MOVE} 2” action with you controlling the action."
+        "desc": "В ваш ход заставьте одного врага в пределах {RANGE} 3 выполнить действие «{MOVE} 2», при этом вы управляете этим действием."
     },
     "jotl-28": {
-        "name": "Flea-Bitten Shawl",
+        "name": "Изъеденная молью шаль",
         "source": "Награда за {SCENARIO 8}\nНаграда за {SCENARIO 12}",
-        "desc": "You are considered to have an initiative of 99 for the purpose of enemy focusing.",
-        "faq": "The item does not actually change a character's initiative so it doesn't affect their summons' initiative. It only changes how monster's treat the character during focus evaluation."
+        "desc": "При выборе врагами цели ваша инициатива считается равной 99.",
+        "faq": "Предмет на самом деле не меняет инициативу персонажа, поэтому он не влияет на инициативу его призванных. Он лишь меняет то, как монстры относятся к персонажу при определении цели."
     },
     "jotl-29": {
-        "name": "Tower Shield",
+        "name": "Осадный щит",
         "source": "Награда за {SCENARIO 16}",
-        "desc": "When damaged by an attack, gain {SHIELD} 2 for the attack."
+        "desc": "Когда вы получаете урон от атаки, получите свойство «Щит {SHIELD} 2» для этой атаки."
     },
     "jotl-30": {
-        "name": "Ring of Haste",
+        "name": "Кольцо спешки",
         "source": "{SCENARIO 21} (Сокровище #11)",
-        "desc": "At the end of your turn, play one card from your hand and immediately perform the bottom action of that card."
+        "desc": "В конце вашего хода разыграйте 1 карту с вашей руки и немедленно примените её нижнюю способность."
     },
     "jotl-31": {
-        "name": "Ring of Strength",
+        "name": "Кольцо силы",
         "source": "Награда за {SCENARIO 19}\n{SCENARIO 18} (Сокровище #2)",
-        "desc": "During your turn, gain {STRENGTHEN}."
+        "desc": "В ваш ход получите {STRENGTHEN}."
     },
     "jotl-32": {
-        "name": "Ring of Restoration",
-        "source": "Misplaced Good #F from {SCENARIO 20}",
-        "desc": "During your turn, perform a “{HEAL} 3, {RANGE} 5” action."
+        "name": "Кольцо восстановления",
+        "source": "Потерянный товар #F из {SCENARIO 20}",
+        "desc": "В ваш ход выполните действие «{HEAL} 3, {RANGE} 5»."
     },
     "jotl-33": {
-        "name": "Steel Ring",
+        "name": "Стальное кольцо",
         "source": "Награда за {SCENARIO 22}",
-        "desc": "When damaged by an attack, gain {SHIELD} 4 for the attack."
+        "desc": "Когда вы получаете урон от атаки, получите свойство «Щит {SHIELD} 4» для этой атаки."
     },
     "jotl-34": {
-        "name": "Barbed Axe",
+        "name": "Зазубренный топор",
         "source": "Награда за {SCENARIO 34}",
-        "desc": "During your attack, add {WOUND} to the entire Attack Action."
+        "desc": "Во время вашей атаки добавьте {WOUND} ко всему действию атаки."
     },
     "jotl-35": {
-        "name": "Robes of Command",
+        "name": "Мантия призыва",
         "source": "Награда за {SCENARIO 24}",
-        "desc": "During your turn, one adjacent ally may perform and “{ATTACK} 2” Action."
+        "desc": "В ваш ход один соседний союзник может выполнить действие «{ATTACK} 2»."
     },
     "jotl-36": {
-        "name": "Jet Boots",
+        "name": "Реактивные сапоги",
         "source": "Награда за {SCENARIO 25}",
-        "desc": "During your movement, add “+1 {MOVE} and {JUMP}” to a single movement."
+        "desc": "Во время вашего движения добавьте «+1 {MOVE} и {JUMP}» к одному действию движения."
     },
     "cs-1": {
-        "name": "Orb of Confusion",
-        "desc": "During your Attack ability, you may place one character token on this card to add {MUDDLE} to one attack. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера смятения",
+        "desc": "Во время вашей способности атаки вы можете положить 1 жетон персонажа на эту карту, чтобы добавить {MUDDLE} к одной атаке. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-2": {
-        "name": "Orb of Momentum",
-        "desc": "During your Move ability, you may place one character token on this card to add +1 {MOVE}. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера импульса",
+        "desc": "Во время вашей способности движения вы можете положить 1 жетон персонажа на эту карту, чтобы добавить +1 {MOVE}. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-3": {
-        "name": "Orb of Agility",
-        "desc": "During your Move ability, you may place one character token on this card to add {JUMP}. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера ловкости",
+        "desc": "Во время вашей способности движения вы можете положить 1 жетон персонажа на эту карту, чтобы добавить {JUMP}. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-4": {
-        "name": "Orb of Vigor",
-        "desc": "During your Attack ability, you may place one character token on this card to add +1 {ATTACK} to one attack. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера мощи",
+        "desc": "Во время вашей способности атаки вы можете положить 1 жетон персонажа на эту карту, чтобы добавить +1 {ATTACK} к одной атаке. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-5": {
-        "name": "Orb of Retribution",
-        "desc": "When attacked by an adjacent enemy, you may place one character token on this card to gain {RETALIATE} 1 for the attack. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера возмездия",
+        "desc": "Когда вас атакует соседний враг, вы можете положить 1 жетон персонажа на эту карту, чтобы получить {RETALIATE} 1 для этой атаки. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-6": {
-        "name": "Orb of Infection",
-        "desc": "During your Attack ability, you may place one character token on this card to add {POISON} to one attack. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера заражения",
+        "desc": "Во время вашей способности атаки вы можете положить 1 жетон персонажа на эту карту, чтобы добавить {POISON} к одной атаке. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-7": {
-        "name": "Orb of Vitality",
-        "desc": "During your turn, you may place one character token on this card to perform “{HEAL} 1, Self”. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера жизненной силы",
+        "desc": "В ваш ход вы можете положить 1 жетон персонажа на эту карту, чтобы выполнить «{HEAL} 1 (на себя)». Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-8": {
-        "name": "Orb of Protection",
-        "desc": "When damaged by an attack, you may place one character token on this card to gain {SHIELD} 1 for the attack. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера защиты",
+        "desc": "Когда вы получаете урон от атаки, вы можете положить 1 жетон персонажа на эту карту, чтобы получить {SHIELD} 1 для этой атаки. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-9": {
-        "name": "Orb of Fortune",
-        "desc": "During your Attack ability, you may place one character token on this card to gain Advantage on one attack. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера удачи",
+        "desc": "Во время вашей способности атаки вы можете положить 1 жетон персонажа на эту карту, чтобы получить преимущество при одной атаке. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-10": {
-        "name": "Orb of Despair",
-        "desc": "During your Attack ability, you may place one character token on this card to add {CURSE} to one attack. When there are three tokens on this card, it is {CONSUMED}."
+        "name": "Сфера отчаяния",
+        "desc": "Во время вашей способности атаки вы можете положить 1 жетон персонажа на эту карту, чтобы добавить {CURSE} к одной атаке. Когда на этой карте лежат 3 жетона, она {CONSUMED}."
     },
     "cs-11": {
-        "name": "Pox Antidote",
-        "desc": "During your turn, remove {INFECT} from Self or an adjacent ally."
+        "name": "Противоядие от оспы",
+        "desc": "В ваш ход снимите {INFECT} с себя или с соседнего союзника."
     },
     "cs-12": {
-        "name": "Trophy Helm",
-        "desc": "Your attacks are unaffected by {RETALIATE}."
+        "name": "Шлем-трофей",
+        "desc": "Ваши атаки не подвержены {RETALIATE}."
     },
     "cs-13": {
-        "name": "War Pick",
-        "desc": "During your melee Attack ability, add {PIERCE} 4 to one attack."
+        "name": "Боевой клевец",
+        "desc": "Во время вашей способности ближней атаки добавьте {PIERCE} 4 к одной атаке."
     },
     "cs-14": {
-        "name": "Chain Mace",
-        "desc": "During your turn, perform “{ATTACK} 3, {RANGE} 2”."
+        "name": "Цепная булава",
+        "desc": "В ваш ход выполните «{ATTACK} 3, {RANGE} 2»."
     },
     "cs-15": {
-        "name": "Draining Greaves",
-        "desc": "At the end of your turn, if you moved four or more hexes during your turn, one adjacent enemy suffers one damage."
+        "name": "Иссушающие поножи",
+        "desc": "В конце вашего хода, если за этот ход вы передвинулись на 4 или более клеток, один соседний враг получает 1 урон."
     },
     "cs-16": {
-        "name": "Shoes of Phasing",
-        "desc": "During your Move abilities, you may move through enemies."
+        "name": "Туфли фазирования",
+        "desc": "Во время ваших способностей движения вы можете проходить сквозь врагов."
     },
     "cs-17": {
-        "name": "Lightweight Boots",
-        "desc": "During your Move ability, add +2 {MOVE} and {JUMP}."
+        "name": "Облегчённые сапоги",
+        "desc": "Во время вашей способности движения добавьте +2 {MOVE} и {JUMP}."
     },
     "cs-18": {
-        "name": "Bottled Moonlight",
-        "desc": "During your Heal ability, add +2 {HEAL} and {STRENGTHEN} to each Heal."
+        "name": "Лунный свет во флаконе",
+        "desc": "Во время вашей способности лечения добавьте +2 {HEAL} и {STRENGTHEN} к каждому лечению."
     },
     "cs-19": {
-        "name": "Boots of Perpetuity",
-        "desc": "You are immune to {IMMOBILIZE}.\\nAt the end of your turn, if you moved zero hexes on your turn, perform “{MOVE} 1”."
+        "name": "Сапоги постоянства",
+        "desc": "Вы невосприимчивы к {IMMOBILIZE}.\\nВ конце вашего хода, если за этот ход вы не передвинулись ни на одну клетку, выполните «{MOVE} 1»."
     },
     "cs-20": {
-        "name": "Curious Pendant",
-        "desc": "During your turn, {RECOVER} one lost card played this round."
+        "name": "Любопытный кулон",
+        "desc": "В ваш ход {RECOVER} одну потерянную карту, сыгранную в этом раунде."
     },
     "cs-21": {
-        "name": "Infrared Goggles",
-        "desc": "Gain Advantage on all attacks you peform while {INVISIBLE}."
+        "name": "Инфракрасные очки",
+        "desc": "Получайте преимущество при всех атаках, которые вы выполняете, пока вы {INVISIBLE}."
     },
     "cs-22": {
-        "name": "Steel Helmet",
-        "desc": "When attacked, consider any {+1_WHITE} modifier card the enemy draws to be a {+0_WHITE} instead."
+        "name": "Стальной шлем",
+        "desc": "Когда вас атакуют, считайте любую вытянутую врагом карту модификатора {+1_WHITE} картой {+0_WHITE}."
     },
     "cs-23": {
-        "name": "Woven Plate Armor",
-        "desc": "When attacked, the attacker gains Disadvantage on the attack and you gain {SHIELD} 2 for the attack."
+        "name": "Плетёные латы",
+        "desc": "Когда вас атакуют, атакующий проводит атаку с затруднением, а вы получаете свойство «Щит {SHIELD} 2» для этой атаки."
     },
     "cs-24": {
-        "name": "Mantle of Purity",
-        "desc": "When you would gain one or more negative conditions, prevent the conditions."
+        "name": "Мантия чистоты",
+        "desc": "Когда вы должны получить одно или несколько отрицательных состояний, предотвратите эти состояния."
     },
     "cs-25": {
-        "name": "Boneclad Shawl",
-        "desc": "On the next two attacks targeting you peformed by adjacent enemies, gain {RETALIATE} 2 for the attack."
+        "name": "Костяная шаль",
+        "desc": "При следующих двух атаках соседних врагов, нацеленных на вас, получите {RETALIATE} 2 для этой атаки."
     },
     "cs-26": {
-        "name": "Silhouette Cuirass",
-        "desc": "When your hit poit would be reduced to 0 by an attack targeting you, instead suffer no damage and gain {INVISIBLE}."
+        "name": "Силуэтная кираса",
+        "desc": "Когда ваше здоровье должно быть уменьшено до 0 атакой, нацеленной на вас, вместо этого не получайте урона и получите {INVISIBLE}."
     },
     "cs-27": {
-        "name": "Translocation Device",
-        "desc": "During your turn, swap positions with one enemy within {RANGE} 5."
+        "name": "Устройство телепортации",
+        "desc": "В ваш ход поменяйтесь местами с одним врагом в пределах {RANGE} 5."
     },
     "cs-28": {
-        "name": "Alchemy Potion",
-        "desc": "During your turn, replace one adjacent obstacle tile with a money token."
+        "name": "Алхимическое зелье",
+        "desc": "В ваш ход замените один соседний жетон препятствия жетоном монет."
     },
     "cs-29": {
-        "name": "Intoxicating Potion",
-        "desc": "During your turn, peform “{HEAL} 5, {POISON}, Self”."
+        "name": "Дурманящее зелье",
+        "desc": "В ваш ход выполните «{HEAL} 5, {POISON} (на себя)»."
     },
     "cs-30": {
-        "name": "Iron Snare",
-        "desc": "During your turn, create one {IMMOBILIZE} trap in an empty hex within {RANGE} 3."
+        "name": "Железный капкан",
+        "desc": "В ваш ход создайте 1 ловушку {IMMOBILIZE} на свободной клетке в пределах {RANGE} 3."
     },
     "cs-31": {
-        "name": "Concussion Mine",
-        "desc": "During your turn, create one {STUN} trap in an empty hex within {RANGE} 3."
+        "name": "Контузионная мина",
+        "desc": "В ваш ход создайте 1 ловушку {STUN} на свободной клетке в пределах {RANGE} 3."
     },
     "cs-32": {
-        "name": "Shifting Compass",
-        "desc": "During your turn, force an enemy within Rang 5 to perform a “{MOVE} 2, {JUMP}” ability with you controlling the ability."
+        "name": "Сдвигающий компас",
+        "desc": "В ваш ход заставьте врага в пределах дальности 5 выполнить способность «{MOVE} 2, {JUMP}», при этом вы управляете этой способностью."
     },
     "cs-33": {
-        "name": "Battering Ram",
-        "desc": "During your melee Attack ability, add {MUDDLE} and {PUSH} 2 to all your attacks."
+        "name": "Таран",
+        "desc": "Во время вашей способности ближней атаки добавьте {MUDDLE} и {PUSH} 2 ко всем вашим атакам."
     },
     "cs-34": {
-        "name": "Claw Trap",
-        "desc": "At the end of your turn, create one 4 damage {POISON} trap in an adjacent empty hex."
+        "name": "Когтистая ловушка",
+        "desc": "В конце вашего хода создайте 1 ловушку {POISON} с уроном 4 на соседней свободной клетке."
     },
     "cs-35": {
-        "name": "Staff of Retribution",
-        "desc": "When attacked, gain {RETALIATE} 1, {RANGE} 3 for the attack."
+        "name": "Посох возмездия",
+        "desc": "Когда вас атакуют, получите {RETALIATE} 1, {RANGE} 3 для этой атаки."
     },
     "cs-36": {
-        "name": "Curseblood Blade",
-        "desc": "During your melee Attack ability, suffer 1 damage to add {CURSE} to all your attacks."
+        "name": "Клинок проклятой крови",
+        "desc": "Во время вашей способности ближней атаки получите 1 урон, чтобы добавить {CURSE} ко всем вашим атакам."
     },
     "cs-37": {
-        "name": "Drakescale Shield",
-        "desc": "When attacked by an adjacent enemy, gain {RETALIATE} 3 for the attack."
+        "name": "Щит из чешуи дрейка",
+        "desc": "Когда вас атакует соседний враг, получите {RETALIATE} 3 для этой атаки."
     },
     "cs-38": {
-        "name": "Drakescale Dagger",
-        "desc": "During your melee Attack ability, do not draw an attack modifier card for one attack."
+        "name": "Кинжал из чешуи дрейка",
+        "desc": "Во время вашей способности ближней атаки не тяните карту модификатора атаки для одной атаки."
     },
     "cs-39": {
-        "name": "Hook Shot",
-        "desc": "During your turn, peform “{ATTACK} 2, {RANGE} 3, {PIERCE} 2”."
+        "name": "Крюк-абордаж",
+        "desc": "В ваш ход выполните «{ATTACK} 2, {RANGE} 3, {PIERCE} 2»."
     },
     "cs-40": {
-        "name": "Moonleather Boots",
-        "desc": "Add +1 Move to all your movement while you are at full health."
+        "name": "Сапоги из лунной кожи",
+        "desc": "Добавьте +1 к движению во всех ваших движениях, пока у вас полное здоровье."
     },
     "cs-41": {
-        "name": "Spirit Libation",
-        "desc": "During your turn remove one damage token from one {SPIRIT}. This {SPIRIT} may immediately take a turn without receiving a damage token."
+        "name": "Духовный напиток",
+        "desc": "В ваш ход снимите 1 жетон урона с одного {SPIRIT}. Этот {SPIRIT} может немедленно совершить ход, не получая жетон урона."
     },
     "cs-42": {
-        "name": "Robe of Soothing",
-        "desc": "Whenever you given an ally a {PRAYER} ability card, that ally may peform “{HEAL} 2, Self”."
+        "name": "Успокаивающая мантия",
+        "desc": "Каждый раз, когда вы даёте союзнику карту способности {PRAYER}, этот союзник может выполнить «{HEAL} 2 (на себя)»."
     },
     "cs-43": {
-        "name": "Resplendent Mitre",
-        "desc": "During your Heal action, add +2 {HEAL} to each Heal."
+        "name": "Блистательная митра",
+        "desc": "Во время вашего действия лечения добавьте +2 {HEAL} к каждому лечению."
     },
     "cs-44": {
-        "name": "Canister Projectile",
-        "desc": "During your ranged Attack ability, add {PIERCE} 2 to one attack."
+        "name": "Картечный снаряд",
+        "desc": "Во время вашей способности дальней атаки добавьте {PIERCE} 2 к одной атаке."
     },
     "cs-45": {
-        "name": "Chain Cannon",
-        "desc": "During your turn, peform “{PULL} 2, Self toward one enemy within {RANGE} 3”."
+        "name": "Цепная пушка",
+        "desc": "В ваш ход выполните «{PULL} 2 (на себя в сторону одного врага в пределах {RANGE} 3)»."
     },
     "cs-46": {
-        "name": "Summoner's Whistle",
-        "desc": "During your turn, one summoned ally you own performs\\n{MOVE} +0\\n{ATTACK} +0\\nwith you controlling the abilities."
+        "name": "Свисток призывателя",
+        "desc": "В ваш ход один принадлежащий вам призванный союзник выполняет\\n{MOVE} +0\\n{ATTACK} +0\\nпри этом вы управляете этими способностями."
     },
     "cs-47": {
-        "name": "Nature Armlets",
-        "desc": "While {MOUNTED} on a summon, you can apply your small {ITEM} effects to the summon instead."
+        "name": "Природные наручи",
+        "desc": "Пока вы {MOUNTED} на призванном, вы можете применять эффекты своих малых {ITEM} к призванному."
     },
     "cs-48": {
-        "name": "Test Tube",
-        "desc": "During your turn, {ANY_X} to peforme one of the following: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, Self, {LIGHT} | {ATTACK} 2, {FIRE}."
+        "name": "Пробирка",
+        "desc": "В ваш ход {ANY_X}, чтобы выполнить одно из следующего: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3 (на себя), {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     "cs-49": {
-        "name": "Booster Shot",
-        "desc": "During your turn, perform one of the following: {RECOVER} one discarded card | {HEAL} 3, Self | Add +2 {ATTACK} to your next attack this turn."
+        "name": "Бустер-инъекция",
+        "desc": "В ваш ход выполните одно из следующего: {RECOVER} одну сброшенную карту | {HEAL} 3 (на себя) | добавьте +2 {ATTACK} к вашей следующей атаке в этом ходу."
     },
     "cs-50": {
-        "name": "Luminous Carapace",
-        "desc": "During your turn, when you {ANY_X} an element, do not move the consumed element to the Inert column."
+        "name": "Сияющий панцирь",
+        "desc": "В ваш ход, когда вы {ANY_X} стихию, не перемещайте потреблённую стихию в колонку «Нейтральные»."
     },
     "cs-51": {
-        "name": "Flaming Armor",
-        "desc": "When attacked, you may {FIRE_X} to gain {RETALIATE} 3 for the attack."
+        "name": "Пылающий доспех",
+        "desc": "Когда вас атакуют, вы можете {FIRE_X}, чтобы получить {RETALIATE} 3 для этой атаки."
     },
     "cs-52": {
-        "name": "Flaming Axe",
-        "desc": "During your melee Attack ability, add +1 {ATTACK} and {WOUND} to all your attacks. {FIRE}"
+        "name": "Пылающий топор",
+        "desc": "Во время вашей способности ближней атаки добавьте +1 {ATTACK} и {WOUND} ко всем вашим атакам. {FIRE}"
     },
     "cs-53": {
-        "name": "Field Mortar",
-        "desc": "Once each turn, during your turn, you may remove one condition from an adjacent figure and place that condition on this card if it is not already on this card. During your turn, one adjacent figure gains all conditions on this card, then consume {CONSUMED} this item."
+        "name": "Полевой миномёт",
+        "desc": "Один раз за ход в ваш ход вы можете снять 1 состояние с соседней фигуры и положить это состояние на эту карту, если его там ещё нет. В ваш ход одна соседняя фигура получает все состояния с этой карты, затем {CONSUMED} этот предмет."
     },
     "cs-54": {
-        "name": "Vipertooth Dagger",
-        "desc": "Gain Advantage on all your melee attacks while you are occupying difficult terrain."
+        "name": "Кинжал из зуба гадюки",
+        "desc": "Получайте преимущество при всех ваших ближних атаках, пока вы находитесь на труднопроходной местности."
     },
     "cs-55": {
-        "name": "Ghost Viper Venom",
-        "desc": "During your Attack ability, add {POISON} 2 to one attack."
+        "name": "Яд призрачной гадюки",
+        "desc": "Во время вашей способности атаки добавьте {POISON} 2 к одной атаке."
     },
     "cs-56": {
-        "name": "Clamp Trap",
-        "desc": "At the end of your turn create one 3 damage {IMMOBILIZE} trap in an adjacent empty hex."
+        "name": "Зажимной капкан",
+        "desc": "В конце вашего хода создайте 1 ловушку {IMMOBILIZE} с уроном 3 на соседней свободной клетке."
     },
     "cs-57": {
-        "name": "Cleansed Voidheart",
-        "desc": "You are immune to {MUDDLE}. At the end of each round, if you have {WOUND} gain {REGENERATE}."
+        "name": "Очищенное сердце Пустоты",
+        "desc": "Вы невосприимчивы к {MUDDLE}. В конце каждого раунда, если у вас есть {WOUND}, получите {REGENERATE}."
     },
     "cs-58": {
-        "name": "Dizzying Tincture",
-        "desc": "During you Attack ability, add {DISARM} to one attack."
+        "name": "Головокружительная настойка",
+        "desc": "Во время вашей способности атаки добавьте {DISARM} к одной атаке."
     },
     "cs-59": {
-        "name": "Drakes Blood",
-        "desc": "During your turn, remove all positive conditions from all enemies within {RANGE} 2. This can be used on enemies that have {INVISIBLE}."
+        "name": "Кровь дрейка",
+        "desc": "В ваш ход снимите все положительные состояния со всех врагов в пределах {RANGE} 2. Это можно применять к врагам с {INVISIBLE}."
     },
     "cs-60": {
-        "name": "Mana Medicine",
-        "desc": "During your turn, peform “{HEAL} 5, Self”. {ANY}"
+        "name": "Лекарство маны",
+        "desc": "В ваш ход выполните «{HEAL} 5 (на себя)». {ANY}"
     },
     "cs-61": {
-        "name": "Ashsteel Gauntlets",
-        "desc": "You are immune to {DISARM}, even if this item is spent. During your turn gain {SHIELD} 1 for the round. {eot}"
+        "name": "Перчатки из пепельной стали",
+        "desc": "Вы невосприимчивы к {DISARM}, даже если этот предмет потрачен. В ваш ход получите свойство «Щит {SHIELD} 1» на раунд. {eot}"
     },
     "cs-62": {
-        "name": "Smog Emitter",
-        "desc": "At the end of your turn, all enemies consider all empty hexes within {RANGE} 2 of you to be difficult terrain for the round. {eot}"
+        "name": "Дымогенератор",
+        "desc": "В конце вашего хода все враги считают все свободные клетки в пределах {RANGE} 2 от вас труднопроходной местностью до конца раунда. {eot}"
     },
     "cs-63": {
-        "name": "Lucky Horseshoe",
-        "desc": "When you are damage by an attack targeting you, suffer half (rounded down) the damage instead."
+        "name": "Счастливая подкова",
+        "desc": "Когда вы получаете урон от атаки, нацеленной на вас, получите вместо этого половину урона (с округлением вниз)."
     },
     "cs-64": {
-        "name": "Mild Kindled Tonic",
-        "desc": "When an ally targets you with a Heal ability, remove one negative condition from yourself before the Heal and gain {STRENGTHEN}."
+        "name": "Слабый зажигательный тоник",
+        "desc": "Когда союзник нацеливает на вас способность лечения, перед лечением снимите с себя 1 отрицательное состояние и получите {STRENGTHEN}."
     },
     "cs-65": {
-        "name": "Rescue Axe",
-        "desc": "During your melee Attack ability, add +1 {ATTACK} and {MUDDLE} to one attack targeting an enemy adjacent to one of your allies."
+        "name": "Спасательный топор",
+        "desc": "Во время вашей способности ближней атаки добавьте +1 {ATTACK} и {MUDDLE} к одной атаке, нацеленной на врага, соседнего с одним из ваших союзников."
     },
     "cs-66": {
-        "name": "Iron Malleus",
-        "desc": "During your melee Attack ability, add +1 {ATTACK} and {IMMOBILIZE} to all your attacks."
+        "name": "Железный молот",
+        "desc": "Во время вашей способности ближней атаки добавьте +1 {ATTACK} и {IMMOBILIZE} ко всем вашим атакам."
     },
     "cs-67": {
-        "name": "Pike Hook",
-        "desc": "During your single-target melee Attack ability, add {PIERCE} 2 and {PULL} 1 to the attack and you may target one enemy within 2 hexes."
+        "name": "Багор",
+        "desc": "Во время вашей способности одиночной ближней атаки добавьте {PIERCE} 2 и {PULL} 1 к атаке, и вы можете выбрать целью 1 врага в пределах 2 клеток."
     },
     "cs-68": {
-        "name": "Explosive Tonic",
-        "desc": "During your turn, peform: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
+        "name": "Взрывной тоник",
+        "desc": "В ваш ход выполните: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
     },
     "cs-69": {
-        "name": "Spicy Kindled Tonic",
-        "desc": "On the next three Heal abilities targeting you, you may either first remove all negative conditions from yourself or gain {STRENGTHEN}."
+        "name": "Острый зажигательный тоник",
+        "desc": "При следующих трёх способностях лечения, нацеленных на вас, вы можете либо сначала снять с себя все отрицательные состояния, либо получить {STRENGTHEN}."
     },
     "cs-70": {
-        "name": "Utility Rope",
-        "desc": "During your turn, peform “{PULL} 2, Target one ally or enemy within {RANGE} 3.”"
+        "name": "Универсальная верёвка",
+        "desc": "В ваш ход выполните «{PULL} 2, цель: 1 союзник или враг в пределах {RANGE} 3»."
     },
     "cs-71": {
-        "name": "Fireproof Helm",
-        "desc": "Whenever you would suffer damage from {WOUND} instead perform “{HEAL} 1, Self”"
+        "name": "Огнеупорный шлем",
+        "desc": "Каждый раз, когда вы должны получить урон от {WOUND}, вместо этого выполните «{HEAL} 1 (на себя)»"
     },
     "cs-72": {
-        "name": "Wooden Ladder",
-        "desc": "Add +1 Range to all your ranged abilities peformed while adjacent to an obstacle. Whenever you enter a hex with a trap, you may choose not to spring the trap."
+        "name": "Деревянная лестница",
+        "desc": "Добавьте +1 к дальности всех ваших способностей дальнего боя, выполняемых рядом с препятствием. Каждый раз, когда вы входите на клетку с ловушкой, вы можете не активировать эту ловушку."
     },
     "cs-73": {
-        "name": "Medical Kit",
-        "desc": "Whenever you use the default top action of an ability card, you may perform a “{HEAL} 2, {RANGE} 1” ability instead of an “{ATTACK} 2” ability."
+        "name": "Медицинский набор",
+        "desc": "Каждый раз, когда вы используете стандартное верхнее действие карты способности, вы можете выполнить способность «{HEAL} 2, {RANGE} 1» вместо способности «{ATTACK} 2»."
     },
     "cs-74": {
-        "name": "Mild Bolstering Tonic",
-        "desc": "During your Heal ability targeting at least one ally, add +1 Heal and {STRENGTHEN} to each Heal."
+        "name": "Слабый укрепляющий тоник",
+        "desc": "Во время вашей способности лечения, нацеленной хотя бы на 1 союзника, добавьте +1 к лечению и {STRENGTHEN} к каждому лечению."
     },
     "cs-75": {
-        "name": "Medallion of the Oak",
-        "desc": "When attacked this round, you and all adjacent allies consider any negative and {modifier_no_damage} attack modifiers drawn to be {+0_WHITE} instead."
+        "name": "Медальон Дуба",
+        "desc": "Когда вас атакуют в этом раунде, вы и все соседние союзники считаете любые вытянутые отрицательные карты модификаторов атаки и карты {modifier_no_damage} картами {+0_WHITE}."
     },
     "cs-76": {
-        "name": "Cauterizing Knife",
-        "desc": "During your Heal ability, add +3 {HEAL} and {WOUND} to each Heal."
+        "name": "Прижигающий нож",
+        "desc": "Во время вашей способности лечения добавьте +3 {HEAL} и {WOUND} к каждому лечению."
     },
     "cs-77": {
-        "name": "Trauma Kit",
-        "desc": "During your Heal ability, double the value of each Heal. If this Heal ability removes {WOUND}, this item is spent instead of consumed."
+        "name": "Набор для травм",
+        "desc": "Во время вашей способности лечения удвойте значение каждого лечения. Если эта способность лечения снимает {WOUND}, этот предмет тратится, а не расходуется."
     },
     "cs-78": {
-        "name": "Scroll of Charisma",
-        "desc": "During your turn, one ally within {RANGE} 2 may perform one of the following: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, Self."
+        "name": "Свиток обаяния",
+        "desc": "В ваш ход один союзник в пределах {RANGE} 2 может выполнить одно из следующего: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2 (на себя)."
     },
     "cs-79": {
-        "name": "Rescue Shield",
-        "desc": "When an adjacent ally is damage by an attack targeting them, that ally gains {SHIELD} 2 for the attack and removes all negative conditions applied by the attack."
+        "name": "Спасательный щит",
+        "desc": "Когда соседний союзник получает урон от атаки, нацеленной на него, этот союзник получает {SHIELD} 2 для этой атаки и снимает все отрицательные состояния, наложенные этой атакой."
     },
     "cs-80": {
-        "name": "Scroll of Protection",
-        "desc": "When an ally within {RANGE} 5 would be damaged by an attack targeting them, they suffer no damage instead."
+        "name": "Свиток защиты",
+        "desc": "Когда союзник в пределах {RANGE} 5 должен получить урон от атаки, нацеленной на него, вместо этого он не получает урона."
     },
     "cs-81": {
-        "name": "Spicy Bolstering Tonic",
-        "desc": "During your Heal ability targeting at least one ally add +2 {HEAL} {STRENGTHEN} and {BLESS} to each Heal."
+        "name": "Острый укрепляющий тоник",
+        "desc": "Во время вашей способности лечения, нацеленной хотя бы на 1 союзника, добавьте +2 {HEAL}, {STRENGTHEN} и {BLESS} к каждому лечению."
     },
     "cs-82": {
-        "name": "Scroll of Command",
-        "desc": "During you turn one ally within {RANGE} 3 may peform one of the following: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, Self."
+        "name": "Свиток приказа",
+        "desc": "В ваш ход один союзник в пределах {RANGE} 3 может выполнить одно из следующего: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3 (на себя)."
     },
     "cs-83": {
-        "name": "Sphere of Currents",
-        "desc": "During your turn, create two water difficult terrain tiles in hexes within {RANGE} 3 that contain no overlay tiles. {MUDDLE} all figures within {RANGE} 3 occupying a water tile."
+        "name": "Сфера течений",
+        "desc": "В ваш ход создайте 2 жетона водной труднопроходной местности на клетках в пределах {RANGE} 3, не содержащих жетонов накладок. {MUDDLE} все фигуры в пределах {RANGE} 3, находящиеся на водном жетоне."
     },
     "cs-84": {
-        "name": "Slug Crossbow",
-        "desc": "During your single-target ranged Attack ability, turn the attack into the following: {AOE.line_1_1}."
+        "name": "Арбалет-слизнемёт",
+        "desc": "Во время вашей способности одиночной дальней атаки превратите атаку в следующую: {AOE.line_1_1}."
     },
     "cs-85": {
-        "name": "Refined Slug Crossbow",
-        "desc": "During your single-target ranged Attack ability, add +1 {ATTACK} and turn the attack into the following: {AOE.line_1_1}."
+        "name": "Улучшенный арбалет-слизнемёт",
+        "desc": "Во время вашей способности одиночной дальней атаки добавьте +1 {ATTACK} и превратите атаку в следующую: {AOE.line_1_1}."
     },
     "cs-86": {
-        "name": "Bulwark Banner",
-        "desc": "During your turn, you and all allies gain {SHIELD} 1 for the round. {eot}"
+        "name": "Знамя-бастион",
+        "desc": "В ваш ход вы и все союзники получаете {SHIELD} 1 на раунд. {eot}"
     },
     "cs-87": {
-        "name": "Refined Bulwark Banner",
-        "desc": "During your turn, all adjacent allies gain {SHIELD} equal to your current Shield value from abilities for the round. {eot}"
+        "name": "Улучшенное знамя-бастион",
+        "desc": "В ваш ход все соседние союзники получают {SHIELD}, равный вашему текущему значению щита от способностей, на раунд. {eot}"
     },
     "cs-88": {
-        "name": "Remote Beetle",
-        "desc": "During your turn, open one unlocked closed door within {RANGE} 2."
+        "name": "Дистанционный жук",
+        "desc": "В ваш ход откройте 1 незапертую закрытую дверь в пределах {RANGE} 2."
     },
     "cs-89": {
-        "name": "Refined Remote Beetle",
-        "desc": "During your turn, open one unlocked closed door within {RANGE} 2."
+        "name": "Улучшенный дистанционный жук",
+        "desc": "В ваш ход откройте 1 незапертую закрытую дверь в пределах {RANGE} 2."
     },
     "cs-90": {
-        "name": "Blazing Boots",
-        "desc": "During your Move ability, double the value of the movement."
+        "name": "Пылающие сапоги",
+        "desc": "Во время вашей способности движения удвойте значение движения."
     },
     "cs-91": {
-        "name": "Refined Blazing Boots",
-        "desc": "During your Move ability, add {JUMP} and double the value of the movement."
+        "name": "Улучшенные пылающие сапоги",
+        "desc": "Во время вашей способности движения добавьте {JUMP} и удвойте значение движения."
     },
     "cs-92": {
-        "name": "Viper Blowgun",
-        "desc": "During your turn, you may {EARTH_X} to perform “{ATTACK} 1, {RANGE} 3, {POISON}”."
+        "name": "Духовая трубка с ядом гадюки",
+        "desc": "В ваш ход вы можете {EARTH_X}, чтобы выполнить «{ATTACK} 1, {RANGE} 3, {POISON}»."
     },
     "cs-93": {
-        "name": "Refined Viper Blowgun",
-        "desc": "During your turn, perform “{ATTACK} 1, {RANGE} 4, {POISON}”. You may {EARTH_X} to ADD {TARGET}."
+        "name": "Улучшенная духовая трубка с ядом гадюки",
+        "desc": "В ваш ход выполните «{ATTACK} 1, {RANGE} 4, {POISON}». Вы можете {EARTH_X}, чтобы ДОБАВИТЬ {TARGET}."
     },
     "cs-94": {
-        "name": "Frost Stone",
-        "desc": "During your turn you may place one character token on this card to generate: {ICE}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+        "name": "Ледяной камень",
+        "desc": "В ваш ход вы можете положить 1 жетон персонажа на эту карту, чтобы создать: {ICE}.\\nКогда на этой карте лежат 2 жетона, она потребляется {CONSUMED}."
     },
     "cs-95": {
-        "name": "Storm Stone",
-        "desc": "During your turn you may place one character token on this card to generate: {WIND}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+        "name": "Грозовой камень",
+        "desc": "В ваш ход вы можете положить 1 жетон персонажа на эту карту, чтобы создать: {WIND}.\\nКогда на этой карте лежат 2 жетона, она потребляется {CONSUMED}."
     },
     "cs-96": {
-        "name": "Inferno Stone",
-        "desc": "During your turn you may place one character token on this card to generate: {FIRE}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+        "name": "Адский камень",
+        "desc": "В ваш ход вы можете положить 1 жетон персонажа на эту карту, чтобы создать: {FIRE}.\\nКогда на этой карте лежат 2 жетона, она потребляется {CONSUMED}."
     },
     "cs-97": {
-        "name": "Tremor Stone",
-        "desc": "During your turn you may place one character token on this card to generate: {EARTH}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+        "name": "Камень дрожи",
+        "desc": "В ваш ход вы можете положить 1 жетон персонажа на эту карту, чтобы создать: {EARTH}.\\nКогда на этой карте лежат 2 жетона, она потребляется {CONSUMED}."
     },
     "cs-98": {
-        "name": "Brilliant Stone",
-        "desc": "During your turn you may place one character token on this card to generate: {LIGHT}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+        "name": "Сияющий камень",
+        "desc": "В ваш ход вы можете положить 1 жетон персонажа на эту карту, чтобы создать: {LIGHT}.\\nКогда на этой карте лежат 2 жетона, она потребляется {CONSUMED}."
     },
     "cs-99": {
-        "name": "Dark Stone",
-        "desc": "During your turn you may place one character token on this card to generate: {DARK}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+        "name": "Тёмный камень",
+        "desc": "В ваш ход вы можете положить 1 жетон персонажа на эту карту, чтобы создать: {DARK}.\\nКогда на этой карте лежат 2 жетона, она потребляется {CONSUMED}."
     },
     "cs-100": {
-        "name": "Wonder Stone",
-        "desc": "During your turn you may place one character token on this card to generate: {ANY}.\\nWhen there are two tokens on this card it is consumed {CONSUMED}."
+        "name": "Камень чудес",
+        "desc": "В ваш ход вы можете положить 1 жетон персонажа на эту карту, чтобы создать: {ANY}.\\nКогда на этой карте лежат 2 жетона, она потребляется {CONSUMED}."
     },
     "cs-aa01": {
-        "name": "Rockspine Bulwark",
-        "desc": "On the next three sources of damage from attacks targeting you or an adjacent ally, the attacked figure gains {SHIELD} 1 for the attack."
+        "name": "Бастион из каменного хребта",
+        "desc": "При следующих трёх источниках урона от атак, нацеленных на вас или на соседнего союзника, атакованная фигура получает {SHIELD} 1 для этой атаки."
     },
     "cs-aa02": {
-        "name": "Ghostshimmer Honey",
-        "desc": "During your turn, peform {HEAL} 3\\n{REGENERATE}\\nAffect self and one adjacent ally."
+        "name": "Призрачный мерцающий мёд",
+        "desc": "В ваш ход выполните {HEAL} 3\\n{REGENERATE}\\nДействует на вас и на одного соседнего союзника."
     },
     "cs-aa03": {
-        "name": "Steelsilk Spinneret",
-        "desc": "The next two times an enemy suffers damage from attacking you, that enemy gains {IMMOBILIZE}."
+        "name": "Шёлкопряд из стали",
+        "desc": "В следующие 2 раза, когда враг получает урон, атакуя вас, этот враг получает {IMMOBILIZE}."
     },
     "cs-qa01": {
-        "name": "Power Modulator",
-        "desc": "(X is 1, 2, 3)\\nDuring your turn, forgo your top action to peform {ATTACK} X+1\\n{RANGE} 2\\n{TARGET} 4-X"
+        "name": "Модулятор мощности",
+        "desc": "(X равно 1, 2 или 3)\\nВ ваш ход откажитесь от верхнего действия, чтобы выполнить {ATTACK} X+1\\n{RANGE} 2\\n{TARGET} 4-X"
     },
     "cs-qa02": {
-        "name": "Steam Piston Hammer",
-        "desc": "During your melee Attack ability, add {MUDDLE} and {PUSH} 1 to a single attack."
+        "name": "Паровой поршневой молот",
+        "desc": "Во время вашей способности ближней атаки добавьте {MUDDLE} и {PUSH} 1 к одной атаке."
     },
     "cs-qa03": {
-        "name": "Spider Climb Gloves",
-        "desc": "Your movement may enter and end in hexes containing obstacles as if you had {FLYING}."
+        "name": "Перчатки паука-скалолаза",
+        "desc": "Ваше движение может входить на клетки с препятствиями и заканчиваться на них, как если бы у вас был {FLYING}."
     },
     "cs-qa04": {
-        "name": "Gravity Inversion Pads",
-        "desc": "Create one trap in an empty hex within {RANGE} 3.\\nIf you or an ally trigger this trap, that figure gains {FLYING} for the round. | Any enemy that enters a hex with this trap triggers it and loses {FLYING} for the round."
+        "name": "Накладки гравитационной инверсии",
+        "desc": "Создайте 1 ловушку на свободной клетке в пределах {RANGE} 3.\\nЕсли вы или союзник активируете эту ловушку, эта фигура получает {FLYING} на раунд. | Любой враг, входящий на клетку с этой ловушкой, активирует её и теряет {FLYING} на раунд."
     },
     "cs-qa05": {
-        "name": "Delicate Model",
-        "desc": "Summon Scrap Collector\\nYou Loot {LOOT} each hex this summon enters.\\nYou control this summon's actions."
+        "name": "Хрупкая модель",
+        "desc": "Призовите Сборщика лома\\nВы подбираете добычу {LOOT} на каждой клетке, на которую входит этот призванный.\\nВы управляете действиями этого призванного."
     },
     "cs-qa06": {
-        "name": "Auscudec of the Makers",
-        "desc": "During your turn, forgo your top action to play a summon action from a card in your lost pile, ignoring two {SCRAP_X}."
+        "name": "Аускудек Создателей",
+        "desc": "В ваш ход откажитесь от верхнего действия, чтобы сыграть действие призыва с карты из ваших потерянных, игнорируя 2 {SCRAP_X}."
     },
     "cs-rm01": {
-        "name": "Serrated Edge",
-        "desc": "During your melee attack ability, add {RUPTURE} to one attack."
+        "name": "Зазубренное лезвие",
+        "desc": "Во время вашей способности ближней атаки добавьте {RUPTURE} к одной атаке."
     },
     "cs-rm02": {
-        "name": "Grisly Boots",
-        "desc": "After your move ability, peform {PUSH} 1\\nTarget one adjacent enemy\\nAdd +1 {PUSH} if you have move 4 or more hexes this round."
+        "name": "Жуткие сапоги",
+        "desc": "После вашей способности движения выполните {PUSH} 1\\nЦель: 1 соседний враг\\nДобавьте +1 {PUSH}, если за этот раунд вы передвинулись на 4 или более клеток."
     },
     "cs-rm03": {
-        "name": "Terrorscale Saber",
-        "desc": "During your melee attack ability, add +1 {ATTACK} and {PIERCE} 2 to one attack targeting an enemy with {WOUND} or {RUPTURE}."
+        "name": "Сабля из чешуи ужаса",
+        "desc": "Во время вашей способности ближней атаки добавьте +1 {ATTACK} и {PIERCE} 2 к одной атаке, нацеленной на врага с {WOUND} или {RUPTURE}."
     },
     "cs-rm04": {
-        "name": "Terrorscale Crossblades",
-        "desc": "On your next three melee attacks targeting enemies with at least one negative condition, gain Advantage."
+        "name": "Скрещённые клинки из чешуи ужаса",
+        "desc": "При ваших следующих трёх ближних атаках, нацеленных на врагов хотя бы с 1 отрицательным состоянием, получайте преимущество."
     },
     "cs-rm05": {
-        "name": "Rite of Ruin",
-        "desc": "During your attack ability gain {WOUND} to add +3 {ATTACK} to one attack. If you kill the target perform “{HEAL} 3, Self”."
+        "name": "Обряд разрушения",
+        "desc": "Во время вашей способности атаки получите {WOUND}, чтобы добавить +3 {ATTACK} к одной атаке. Если вы убьёте цель, выполните «{HEAL} 3 (на себя)»."
     },
     "cs-rm06": {
-        "name": "Savage Cuirass",
-        "desc": "The next two times you would lose a card from your hand to negate suffering damage, discard it instead and gain {WOUND}."
+        "name": "Свирепая кираса",
+        "desc": "В следующие 2 раза, когда вы должны потерять карту из руки, чтобы избежать получения урона, вместо этого сбросьте её и получите {WOUND}."
     },
     "fh-1": {
-        "name": "Spyglass",
-        "source": "Craftsman 1",
-        "desc": "During your attack ability, gain advantage on one attack."
+        "name": "Подзорная труба",
+        "source": "Ремесленник 1",
+        "desc": "Во время вашей способности атаки получите преимущество при одной атаке."
     },
     "fh-2": {
-        "name": "Crude Helmet",
-        "source": "Craftsman 1",
-        "desc": "When you are attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as a {+1_MODIFIER} instead."
+        "name": "Грубый шлем",
+        "source": "Ремесленник 1",
+        "desc": "Когда вас атакуют, считайте любую вытянутую врагом карту модификатора атаки {2X_MODIFIER} картой {+1_MODIFIER}."
     },
     "fh-3": {
-        "name": "Traveling Cloak",
-        "source": "Craftsman 1",
-        "desc": "At the start of the scenario increase your maximum hit point value by 1."
+        "name": "Дорожный плащ",
+        "source": "Ремесленник 1",
+        "desc": "В начале сценария увеличьте ваше максимальное число здоровья на 1."
     },
     "fh-4": {
-        "name": "Crude Hide Armor",
-        "source": "Craftsman 1",
-        "desc": "On the next two attacks targeting you, the attacker gains disadvantage."
+        "name": "Грубая броня из шкур",
+        "source": "Ремесленник 1",
+        "desc": "При следующих двух атаках, нацеленных на вас, атакующий проводит атаку с затруднением."
     },
     "fh-5": {
-        "name": "Crude Boots",
-        "source": "Craftsman 1",
-        "desc": "During your move ability, add +1 {MOVE.fh}"
+        "name": "Грубые сапоги",
+        "source": "Ремесленник 1",
+        "desc": "Во время вашей способности движения добавьте +1 {MOVE.fh}"
     },
     "fh-6": {
-        "name": "Flexible Slippers",
-        "source": "Craftsman 1",
-        "desc": "During your end-of-turn looting, loot an adjacent hex instead of the hex you occupy."
+        "name": "Гибкие туфли",
+        "source": "Ремесленник 1",
+        "desc": "При сборе добычи в конце вашего хода собирайте добычу на соседней клетке вместо клетки, на которой вы находитесь."
     },
     "fh-7": {
-        "name": "Crude Bow",
-        "source": "Craftsman 1",
-        "desc": "During your turn, add +1 {RANGE.fh} to one of your ranged attacks."
+        "name": "Грубый лук",
+        "source": "Ремесленник 1",
+        "desc": "В ваш ход добавьте +1 {RANGE.fh} к одной из ваших дальних атак."
     },
     "fh-8": {
-        "name": "Crude Spear",
-        "source": "Craftsman 1",
-        "desc": "During your turn, one of your single-target melee attack abilities may target an enemy two hexes away."
+        "name": "Грубое копьё",
+        "source": "Ремесленник 1",
+        "desc": "В ваш ход одна из ваших способностей одиночной ближней атаки может быть нацелена на врага на расстоянии 2 клеток."
     },
     "fh-9": {
-        "name": "Protective Scepter",
-        "source": "Craftsman 1",
-        "desc": "During you turn, grant one ally within {RANGE.fh} 2: {SHIELD.fh} 1. {ROUND}"
+        "name": "Защитный скипетр",
+        "source": "Ремесленник 1",
+        "desc": "В ваш ход предоставьте 1 союзнику в пределах {RANGE.fh} 2: {SHIELD.fh} 1. {ROUND}"
     },
     "fh-10": {
-        "name": "Crude Shield",
-        "source": "Craftsman 1",
-        "desc": "When an enemy would apply a negative condition to you, prevent the condition"
+        "name": "Грубый щит",
+        "source": "Ремесленник 1",
+        "desc": "Когда враг должен наложить на вас отрицательное состояние, предотвратите это состояние."
     },
     "fh-11": {
-        "name": "Simple Charm",
-        "source": "Craftsman 2",
-        "desc": "At the start of the scenario remove one {-1_MODIFIER} modifier card from your attack modifier deck."
+        "name": "Простой талисман",
+        "source": "Ремесленник 2",
+        "desc": "В начале сценария уберите 1 карту модификатора {-1_MODIFIER} из вашей колоды модификаторов атаки."
     },
     "fh-12": {
-        "name": "Crude Chain Armor",
-        "source": "Craftsman 2",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 2 for the attack."
+        "name": "Грубая кольчуга",
+        "source": "Ремесленник 2",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 2 для этой атаки."
     },
     "fh-13": {
-        "name": "Dancing Slippers",
-        "source": "Craftsman 2",
-        "desc": "After you suffer {DAMAGE.fh} from an attack, perform: {MOVE.fh} 2"
+        "name": "Танцующие туфли",
+        "source": "Ремесленник 2",
+        "desc": "После того как вы получили {DAMAGE.fh} от атаки, выполните: {MOVE.fh} 2"
     },
     "fh-14": {
-        "name": "Heavy Sword",
-        "source": "Craftsman 2",
-        "desc": "During your melee attack ability, add +1 {ATTACK.fh} to one attack."
+        "name": "Тяжёлый меч",
+        "source": "Ремесленник 2",
+        "desc": "Во время вашей способности ближней атаки добавьте +1 {ATTACK.fh} к одной атаке."
     },
     "fh-15": {
-        "name": "Reinforced Shield",
-        "source": "Craftsman 2",
-        "desc": "When an enemy would apply a negative condition to you, prevent the condition."
+        "name": "Усиленный щит",
+        "source": "Ремесленник 2",
+        "desc": "Когда враг должен наложить на вас отрицательное состояние, предотвратите это состояние."
     },
     "fh-16": {
-        "name": "Inspiring Helmet",
-        "source": "Craftsman 3",
-        "desc": "During your turn, grant all adjacent allies: {MOVE.fh} 2"
+        "name": "Воодушевляющий шлем",
+        "source": "Ремесленник 3",
+        "desc": "В ваш ход предоставьте всем соседним союзникам: {MOVE.fh} 2"
     },
     "fh-17": {
-        "name": "Cured Leather Armor",
-        "source": "Craftsman 3\nTreasure 50",
-        "desc": "On the next two attacks targeting you, the attacker gains disadvantage."
+        "name": "Доспех из выделанной кожи",
+        "source": "Ремесленник 3\nСокровище 50",
+        "desc": "При следующих двух атаках, нацеленных на вас, атакующий проводит атаку с затруднением."
     },
     "fh-18": {
-        "name": "Rough Boots",
-        "source": "Craftsman 3",
-        "desc": "During your turn add +1 {MOVE.fh} to all your move abilities."
+        "name": "Грубые ботинки",
+        "source": "Ремесленник 3",
+        "desc": "В ваш ход добавьте +1 {MOVE.fh} ко всем вашим способностям движения."
     },
     "fh-19": {
-        "name": "Ringing Hammer",
-        "source": "Craftsman 3",
-        "desc": "During your attack ability add {MUDDLE.fh} to all your attacks."
+        "name": "Звенящий молот",
+        "source": "Ремесленник 3",
+        "desc": "Во время вашей способности атаки добавьте {MUDDLE.fh} ко всем вашим атакам."
     },
     "fh-20": {
-        "name": "Well Strung Bow",
-        "source": "Craftsman 3",
-        "desc": "During your turn, add +1 {RANGE.fh} to all your ranged attacks."
+        "name": "Хорошо натянутый лук",
+        "source": "Ремесленник 3",
+        "desc": "В ваш ход добавьте +1 {RANGE.fh} ко всем вашим дальним атакам."
     },
     "fh-21": {
-        "name": "Chain Hood",
-        "source": "Craftsman 4",
-        "desc": "While you are adjacent to three or more enemies, gain {SHIELD.fh} 1."
+        "name": "Кольчужный капюшон",
+        "source": "Ремесленник 4",
+        "desc": "Пока вы соседствуете с 3 или более врагами, получайте {SHIELD.fh} 1."
     },
     "fh-22": {
-        "name": "Heavy Chain Armor",
-        "source": "Craftsman 4",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 3 for the attack."
+        "name": "Тяжёлая кольчуга",
+        "source": "Ремесленник 4",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 3 для этой атаки."
     },
     "fh-23": {
-        "name": "Sturdy Greaves",
-        "source": "Craftsman 4",
-        "desc": "At the start of your turn, add -2 {MOVE.fh} to all your move abilities to gain {SHIELD.fh} this round. {ROUND}"
+        "name": "Прочные поножи",
+        "source": "Ремесленник 4",
+        "desc": "В начале вашего хода добавьте -2 {MOVE.fh} ко всем вашим способностям движения, чтобы получить {SHIELD.fh} в этом раунде. {ROUND}"
     },
     "fh-24": {
-        "name": "Corrupted Blade",
-        "source": "Craftsman 4\nWR-04",
-        "desc": "During your melee attack ability, add {WOUND.fh}, {POISON.fh}, {MUDDLE.fh} to one attack."
+        "name": "Порченый клинок",
+        "source": "Ремесленник 4\nWR-04",
+        "desc": "Во время вашей способности ближней атаки добавьте {WOUND.fh}, {POISON.fh}, {MUDDLE.fh} к одной атаке."
     },
     "fh-25": {
-        "name": "Soothing Scepter",
-        "source": "Craftsman 4",
-        "desc": "During your turn, perform {REGENERATE.fh} {TARGET.fh} 1 ally, {RANGE.fh} 2"
+        "name": "Успокаивающий скипетр",
+        "source": "Ремесленник 4",
+        "desc": "В ваш ход выполните {REGENERATE.fh} {TARGET.fh} 1 союзник, {RANGE.fh} 2"
     },
     "fh-26": {
-        "name": "Truesight Lenses",
-        "source": "Craftsman 5",
-        "desc": "During your attack ability, treat all negative and {NULL_MODIFIER} modifier cards as {+0_MODIFIER} instead."
+        "name": "Линзы истинного зрения",
+        "source": "Ремесленник 5",
+        "desc": "Во время вашей способности атаки считайте все отрицательные карты модификаторов и карты {NULL_MODIFIER} картами {+0_MODIFIER}."
     },
     "fh-27": {
-        "name": "Cloak of Warding",
-        "source": "Craftsman 5\nSR-17",
-        "desc": "Immediately after an enemy ends its move ability adjacent to you, perform {PUSH.fh} 1 {TARGET.fh} the enemy"
+        "name": "Плащ охранения",
+        "source": "Ремесленник 5\nSR-17",
+        "desc": "Сразу после того, как враг заканчивает свою способность движения рядом с вами, выполните {PUSH.fh} 1 {TARGET.fh} этот враг"
     },
     "fh-28": {
-        "name": "Sturdy Boots",
-        "source": "Craftsman 5",
-        "desc": "During your turn add +1 {MOVE.fh} to all your move abilities and ignor difficult terrain."
+        "name": "Прочные сапоги",
+        "source": "Ремесленник 5",
+        "desc": "В ваш ход добавьте +1 {MOVE.fh} ко всем вашим способностям движения и игнорируйте труднопроходную местность."
     },
     "fh-29": {
-        "name": "Cleaving Axe",
-        "source": "Craftsman 5",
-        "desc": "After your melee attack, one enemy adjacent to the target suffers {DAMAGE.fh} 2."
+        "name": "Раскалывающий топор",
+        "source": "Ремесленник 5",
+        "desc": "После вашей ближней атаки один враг, соседний с целью, получает {DAMAGE.fh} 2."
     },
     "fh-30": {
-        "name": "Parrying Gauntlet",
-        "source": "Craftsman 5",
-        "desc": "Immediately after an enemy ends its move ability adjacent to you, perform {ATTACK.fh} 3 {TARGET.fh} the enemy"
+        "name": "Парирующая перчатка",
+        "source": "Ремесленник 5",
+        "desc": "Сразу после того, как враг заканчивает свою способность движения рядом с вами, выполните {ATTACK.fh} 3 {TARGET.fh} этот враг"
     },
     "fh-31": {
-        "name": "Deathproof Charm",
-        "source": "Craftsman 6\nWR-37\nSO-11",
-        "desc": "When you suffer {DAMAGE.fh} from any source, negate the {DAMAGE.fh}."
+        "name": "Талисман неуязвимости",
+        "source": "Ремесленник 6\nWR-37\nSO-11",
+        "desc": "Когда вы получаете {DAMAGE.fh} из любого источника, отмените это {DAMAGE.fh}."
     },
     "fh-32": {
-        "name": "Shell Armor",
-        "source": "Craftsman 6",
-        "desc": "During yur turn, perform {WARD.fh} self"
+        "name": "Панцирный доспех",
+        "source": "Ремесленник 6",
+        "desc": "В ваш ход выполните {WARD.fh} на себя"
     },
     "fh-33": {
-        "name": "Volatile Boots",
-        "source": "Craftsman 6",
-        "desc": "Up to once each turn during your move ability, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
-        "backDesc": "Up to once each turn during your move ability, suffer {DAMAGE.fh} 1, then flip this card over at the end of your turn."
+        "name": "Взрывоопасные сапоги",
+        "source": "Ремесленник 6",
+        "desc": "Один раз за ход во время вашей способности движения добавьте +1 {MOVE.fh}, затем переверните эту карту в конце вашего хода.",
+        "backDesc": "Один раз за ход во время вашей способности движения получите {DAMAGE.fh} 1, затем переверните эту карту в конце вашего хода."
     },
     "fh-34": {
-        "name": "Shrapnel Bomb",
-        "source": "Craftsman 6",
-        "desc": "After your ranged attack, all enemies adjacent to the target suffer {DAMAGE.fh} 2."
+        "name": "Шрапнельная бомба",
+        "source": "Ремесленник 6",
+        "desc": "После вашей дальней атаки все враги, соседние с целью, получают {DAMAGE.fh} 2."
     },
     "fh-35": {
-        "name": "Kite Shield",
-        "source": "Craftsman 6",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack and prevent any negative conditions from the attack."
+        "name": "Щит-капля",
+        "source": "Ремесленник 6",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 1 для этой атаки и предотвратите все отрицательные состояния от этой атаки."
     },
     "fh-36": {
-        "name": "Plumed Helmet",
-        "source": "Craftsman 7",
-        "desc": "When you are attacked by an attack with disadvantage, treat all {+0_MODIFIER} and {+1_MODIFIER} attack modifier cards as {-1_MODIFIER}."
+        "name": "Шлем с плюмажем",
+        "source": "Ремесленник 7",
+        "desc": "Когда вас атакуют с затруднением, считайте все карты модификаторов атаки {+0_MODIFIER} и {+1_MODIFIER} картами {-1_MODIFIER}."
     },
     "fh-37": {
-        "name": "Ghost Cloak",
-        "source": "Craftsman 7\nSR-36",
-        "desc": "During your turn suffer {DAMAGE.fh} 3 to perform {INVISIBLE.fh} self"
+        "name": "Призрачный плащ",
+        "source": "Ремесленник 7\nSR-36",
+        "desc": "В ваш ход получите {DAMAGE.fh} 3, чтобы выполнить {INVISIBLE.fh} на себя"
     },
     "fh-38": {
-        "name": "Duelists Shoes",
-        "source": "Craftsman 7",
-        "desc": "During your turn, perform: {MOVE.fh} 2 This movement must end adjacent to an enemy."
+        "name": "Туфли дуэлянта",
+        "source": "Ремесленник 7",
+        "desc": "В ваш ход выполните: {MOVE.fh} 2 Это движение должно закончиться рядом с врагом."
     },
     "fh-39": {
-        "name": "Abyss Axe",
-        "source": "Craftsman 7\nPersonal Quest 19",
-        "desc": "During your attack ability, add +3 {ATTACK.fh} and {PIERCE.fh} 1 to one attack targeting a Frozen Corpse, Ice Wraith, or Living Doom."
+        "name": "Топор Бездны",
+        "source": "Ремесленник 7\nЛичное задание 19",
+        "desc": "Во время вашей способности атаки добавьте +3 {ATTACK.fh} и {PIERCE.fh} 1 к одной атаке, нацеленной на Ледяной труп, Ледяного призрака или Живой рок."
     },
     "fh-40": {
-        "name": "Heartstrike Bow",
-        "source": "Craftsman 7",
-        "desc": "During your turn, add +1 {ATTACK.fh} and +2 {RANGE.fh} to one of your ranged attacks."
+        "name": "Лук «Удар в сердце»",
+        "source": "Ремесленник 7",
+        "desc": "В ваш ход добавьте +1 {ATTACK.fh} и +2 {RANGE.fh} к одной из ваших дальних атак."
     },
     "fh-41": {
-        "name": "Intricate Charm",
-        "source": "Craftsman 8",
-        "desc": "At the start of the scenario remove one {+0_MODIFIER} and one {-1_MODIFIER} modifier card from your attack modifier deck."
+        "name": "Затейливый талисман",
+        "source": "Ремесленник 8",
+        "desc": "В начале сценария уберите 1 карту модификатора {+0_MODIFIER} и 1 карту модификатора {-1_MODIFIER} из вашей колоды модификаторов атаки."
     },
     "fh-42": {
-        "name": "Ornate Armor",
-        "source": "Craftsman 8",
-        "desc": "On the next two sources of {DAMAGE.fh} from attacks targeting you gain {SHIELD.fh} 2 for the attacks."
+        "name": "Богато украшенный доспех",
+        "source": "Ремесленник 8",
+        "desc": "При следующих двух источниках {DAMAGE.fh} от атак, нацеленных на вас, получите {SHIELD.fh} 2 для этих атак."
     },
     "fh-43": {
-        "name": "Kicking Boots",
-        "source": "Craftsman 8",
-        "desc": "During your melee attack ability, add {PUSH.fh} 2 to one attack."
+        "name": "Пинающие сапоги",
+        "source": "Ремесленник 8",
+        "desc": "Во время вашей способности ближней атаки добавьте {PUSH.fh} 2 к одной атаке."
     },
     "fh-44": {
-        "name": "Sword of Absolution",
-        "source": "Craftsman 8",
-        "desc": "When you would gain {POISON.fh} or {CURSE.fh}, gain {BLESS.fh} instead."
+        "name": "Меч отпущения",
+        "source": "Ремесленник 8",
+        "desc": "Когда вы должны получить {POISON.fh} или {CURSE.fh}, вместо этого получите {BLESS.fh}."
     },
     "fh-45": {
-        "name": "Master Scepter",
-        "source": "Craftsman 8",
-        "desc": "During your turn, perform: {HEAL.fh} 1 {TARGET.fh} 1 ally, {RANGE.fh} 2, {WARD.fh} "
+        "name": "Скипетр мастера",
+        "source": "Ремесленник 8",
+        "desc": "В ваш ход выполните: {HEAL.fh} 1 {TARGET.fh} 1 союзник, {RANGE.fh} 2, {WARD.fh}"
     },
     "fh-46": {
-        "name": "Double-Lens Goggles",
-        "source": "Craftsman 9",
-        "desc": "During your attack ability, gain advantage on all attacks and treat all {+0_MODIFIER} and {-1_MODIFIER} modifier cards as {+1_MODIFIER} instead."
+        "name": "Очки с двойными линзами",
+        "source": "Ремесленник 9",
+        "desc": "Во время вашей способности атаки получите преимущество при всех атаках и считайте все карты модификаторов {+0_MODIFIER} и {-1_MODIFIER} картами {+1_MODIFIER}."
     },
     "fh-47": {
-        "name": "Robes of Doom",
-        "source": "Craftsman 9\nWR-34",
-        "desc": "On the next two sources of {DAMAGE.fh} from attacks targeting you, suffer {DAMAGE.fh} 3 to give the attacker {BRITTLE.fh}."
+        "name": "Мантии рока",
+        "source": "Ремесленник 9\nWR-34",
+        "desc": "При следующих двух источниках {DAMAGE.fh} от атак, нацеленных на вас, получите {DAMAGE.fh} 3, чтобы наложить на атакующего {BRITTLE.fh}."
     },
     "fh-48": {
-        "name": "Living Shoes",
-        "source": "Craftsman 9",
-        "desc": "After an ally's heal ability targeting you, perform: {MOVE.fh} 2"
+        "name": "Живые туфли",
+        "source": "Ремесленник 9",
+        "desc": "После способности лечения союзника, нацеленной на вас, выполните: {MOVE.fh} 2"
     },
     "fh-49": {
-        "name": "Cruel Dagger",
-        "source": "Craftsman 9",
-        "desc": "During your melee attack ability, add +1 {ATTACK.fh} and {WOUND.fh} to one attack."
+        "name": "Жестокий кинжал",
+        "source": "Ремесленник 9",
+        "desc": "Во время вашей способности ближней атаки добавьте +1 {ATTACK.fh} и {WOUND.fh} к одной атаке."
     },
     "fh-50": {
-        "name": "Shield of Reciprocity",
-        "source": "Craftsman 9",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack and flip this card over.",
-        "backDesc": "During your melee attack ability, add {PIERCE.fh} 1 to one attack and flip this card over."
+        "name": "Щит взаимности",
+        "source": "Ремесленник 9",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 1 для этой атаки и переверните эту карту.",
+        "backDesc": "Во время вашей способности ближней атаки добавьте {PIERCE.fh} 1 к одной атаке и переверните эту карту."
     },
     "fh-51": {
-        "name": "Spiked Collar",
-        "source": "Random Blueprint\nSO-48",
-        "desc": "During your turn perform {WOUND.fh} self"
+        "name": "Шипастый ошейник",
+        "source": "Случайный чертёж\nSO-48",
+        "desc": "В ваш ход выполните {WOUND.fh} на себя"
     },
     "fh-52": {
-        "name": "Laser Lens",
-        "source": "Random Blueprint",
-        "desc": "During your turn, {FIRE_X} to cause up to two enemies within {RANGE.fh} 4 to suffer {DAMAGE.fh} 1."
+        "name": "Лазерная линза",
+        "source": "Случайный чертёж",
+        "desc": "В ваш ход {FIRE_X}, чтобы до 2 врагов в пределах {RANGE.fh} 4 получили {DAMAGE.fh} 1."
     },
     "fh-53": {
-        "name": "Hobnail Boots",
-        "source": "Random Blueprint",
-        "desc": "After you move 4 or more hexes during your turn, gain {RETALIATE.fh} 1 for the round."
+        "name": "Подкованные сапоги",
+        "source": "Случайный чертёж",
+        "desc": "После того как вы передвинулись на 4 или более клеток в свой ход, получите {RETALIATE.fh} 1 на раунд."
     },
     "fh-54": {
-        "name": "Restful Slippers",
-        "source": "Random Blueprint",
-        "desc": "During your short rest, instead of randomly losing one card from your discard pile, randomly draw three cards from your discard pile and choose one to lose."
+        "name": "Туфли для отдыха",
+        "source": "Случайный чертёж",
+        "desc": "Во время вашего короткого отдыха вместо случайной потери 1 карты из вашего сброса случайно вытяните 3 карты из вашего сброса и выберите 1 из них для потери."
     },
     "fh-55": {
-        "name": "Biting Gauntlet",
-        "source": "Random Blueprint",
-        "desc": "When you are attacked by an adjacent enemy, gain {RETALIATE.fh} 2 for the attack."
+        "name": "Кусающая перчатка",
+        "source": "Случайный чертёж",
+        "desc": "Когда вас атакует соседний враг, получите {RETALIATE.fh} 2 для этой атаки."
     },
     "fh-56": {
-        "name": "Scavenger's Magnet",
-        "source": "Random Blueprint",
-        "desc": "During your turn, {EARTH_X} to loot one adjacent loot token."
+        "name": "Магнит старьёвщика",
+        "source": "Случайный чертёж",
+        "desc": "В ваш ход {EARTH_X}, чтобы подобрать 1 соседний жетон добычи."
     },
     "fh-57": {
-        "name": "Shovel",
-        "source": "Random Blueprint",
-        "desc": "During your turn, destroy one adjacent obstacle, hazardous terrain, difficult terrain, icy terrain, or trap tile."
+        "name": "Лопата",
+        "source": "Случайный чертёж",
+        "desc": "В ваш ход уничтожьте 1 соседний жетон препятствия, опасной местности, труднопроходной местности, ледяной местности или ловушки."
     },
     "fh-58": {
-        "name": "Slippery Sword",
-        "source": "Random Blueprint",
-        "desc": "During your melee attack abiluty, add +2 {ATTACK.fh} to one attack. After the ability, gain {DISARM.fh}."
+        "name": "Скользкий меч",
+        "source": "Случайный чертёж",
+        "desc": "Во время вашей способности ближней атаки добавьте +2 {ATTACK.fh} к одной атаке. После способности получите {DISARM.fh}."
     },
     "fh-59": {
-        "name": "Charm of Expertise",
-        "source": "Random Blueprint",
-        "desc": "At the start of the scenario, for the scenario, gain one 1-mark perk from your character sheet which you have not yet gained."
+        "name": "Талисман мастерства",
+        "source": "Случайный чертёж",
+        "desc": "В начале сценария получите на время сценария 1 привилегию с 1 меткой из вашего листа персонажа, которую вы ещё не получили."
     },
     "fh-60": {
-        "name": "Cloak of Many Pockets",
-        "source": "Random Blueprint",
-        "desc": "At the start of the scenario, bring up to two additional {SMALL-ITEM} items."
+        "name": "Плащ со множеством карманов",
+        "source": "Случайный чертёж",
+        "desc": "В начале сценария возьмите до 2 дополнительных предметов {SMALL-ITEM}."
     },
     "fh-61": {
-        "name": "Spiked Shell",
-        "source": "Random Blueprint",
-        "desc": "Immediately after you are attacked by an adjacent enemy, that enemy suffers {DAMAGE.fh} X, where is X is your {SHIELD.fh} value for the attack."
+        "name": "Шипастый панцирь",
+        "source": "Случайный чертёж",
+        "desc": "Сразу после того, как вас атакует соседний враг, этот враг получает {DAMAGE.fh} X, где X — ваше значение {SHIELD.fh} для этой атаки."
     },
     "fh-62": {
-        "name": "Everlasting Boots",
-        "source": "Random Blueprint",
-        "desc": "During your move ability, add +1 {MOVE.fh} and gain {REGENERATE.fh}"
+        "name": "Вечные сапоги",
+        "source": "Случайный чертёж",
+        "desc": "Во время вашей способности движения добавьте +1 {MOVE.fh} и получите {REGENERATE.fh}"
     },
     "fh-63": {
-        "name": "Shadow Stompers",
-        "source": "Random Blueprint",
-        "desc": "During your move ability, {DARK_X} add +2 {MOVE.fh}"
+        "name": "Теневые топтуны",
+        "source": "Случайный чертёж",
+        "desc": "Во время вашей способности движения {DARK_X}, чтобы добавить +2 {MOVE.fh}"
     },
     "fh-64": {
-        "name": "Detonator",
-        "source": "Random Blueprint",
-        "desc": "When one of your summons is killed, all enemies adjacent to it suffer {DAMAGE.fh} 2 and gain {WOUND.fh}."
+        "name": "Детонатор",
+        "source": "Случайный чертёж",
+        "desc": "Когда один из ваших призванных убит, все враги, соседние с ним, получают {DAMAGE.fh} 2 и {WOUND.fh}."
     },
     "fh-65": {
-        "name": "Rust Powder",
-        "source": "Random Blueprint",
-        "desc": "During your turn, place a character token on one normal or elite enemy within {RANGE.fh} 3.  That enemy gains -1 {SHIELD.fh} for the scenario. {PERSISTENT}"
+        "name": "Ржавый порошок",
+        "source": "Случайный чертёж",
+        "desc": "В ваш ход положите жетон персонажа на 1 обычного или элитного врага в пределах {RANGE.fh} 3. Этот враг получает -1 {SHIELD.fh} до конца сценария. {PERSISTENT}"
     },
     "fh-66": {
-        "name": "Amulet of Eternal Life",
-        "source": "Scenario 188",
-        "desc": "At the start of your rest, perform: {HEAL.fh} 1 self"
+        "name": "Амулет вечной жизни",
+        "source": "Сценарий 188",
+        "desc": "В начале вашего отдыха выполните: {HEAL.fh} 1 на себя"
     },
     "fh-67": {
-        "name": "Converging Lenses",
-        "source": "unknown",
-        "desc": "When you are attacked, add +1 {ATTACK.fh} to attack to instead of drawing an attack modifier card and flip this card over.",
-        "backDesc": "During you attack ability add +1 {ATTACK.fh} to one attack instead of drawing an attack modifier card and flip this card over."
+        "name": "Сходящиеся линзы",
+        "source": "Неизвестно",
+        "desc": "Когда вас атакуют, добавьте +1 {ATTACK.fh} к атаке вместо того, чтобы тянуть карту модификатора атаки, и переверните эту карту.",
+        "backDesc": "Во время вашей способности атаки добавьте +1 {ATTACK.fh} к одной атаке вместо того, чтобы тянуть карту модификатора атаки, и переверните эту карту."
     },
     "fh-68": {
-        "name": "Scaled Armor",
-        "source": "Treasure 22",
-        "desc": "On the next three sources of 2 or fewer {DAMAGE.fh} you would suffer, negate the {DAMAGE.fh}."
+        "name": "Чешуйчатый доспех",
+        "source": "Сокровище 22",
+        "desc": "При следующих трёх источниках 2 или менее {DAMAGE.fh}, которые вы должны получить, отмените это {DAMAGE.fh}."
     },
     "fh-69": {
-        "name": "Feathered Cloak",
-        "source": "Scenario 32",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, {WIND_X} to gain {SHIELD.fh} 3 for the attack."
+        "name": "Плащ из перьев",
+        "source": "Сценарий 32",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, {WIND_X}, чтобы получить {SHIELD.fh} 3 для этой атаки."
     },
     "fh-70": {
-        "name": "Aesther Robe",
-        "source": "Scenario 81",
-        "desc": "When you suffer {DAMAGE.fh} from {RETALIATE.fh}, reduce the {DAMAGE.fh} to 1. If it already 1, reduce it to 0 instead."
+        "name": "Эстерская мантия",
+        "source": "Сценарий 81",
+        "desc": "Когда вы получаете {DAMAGE.fh} от {RETALIATE.fh}, уменьшите {DAMAGE.fh} до 1. Если оно уже равно 1, уменьшите его до 0."
     },
     "fh-71": {
-        "name": "Bone Boots",
-        "source": "Treasure 49",
-        "desc": "After your ability where you kill an enemy, perform: {MOVE.fh} 4"
+        "name": "Костяные сапоги",
+        "source": "Сокровище 49",
+        "desc": "После вашей способности, которой вы убили врага, выполните: {MOVE.fh} 4"
     },
     "fh-72": {
-        "name": "Oak Staff",
-        "source": "Treasure 82",
-        "desc": "During your turn, {LIGHT_X} to perform: {BLESS.fh} {RANGE.fh} 3"
+        "name": "Дубовый посох",
+        "source": "Сокровище 82",
+        "desc": "В ваш ход {LIGHT_X}, чтобы выполнить: {BLESS.fh} {RANGE.fh} 3"
     },
     "fh-73": {
-        "name": "Energizing Baton",
-        "source": "Scenario 44",
-        "desc": "When you apply a positive condition to an ally, a different ally within {RANGE.fh} 3 gains the same condition."
+        "name": "Заряжающий жезл",
+        "source": "Сценарий 44",
+        "desc": "Когда вы накладываете положительное состояние на союзника, другой союзник в пределах {RANGE.fh} 3 получает такое же состояние."
     },
     "fh-74": {
-        "name": "Shock Grenades",
-        "source": "Scenario 51",
-        "desc": "During your turn, perform {MUDDLE.fh} {RANGE.fh} 2 {AOE.CONE_1_1}"
+        "name": "Шоковые гранаты",
+        "source": "Сценарий 51",
+        "desc": "В ваш ход выполните {MUDDLE.fh} {RANGE.fh} 2 {AOE.CONE_1_1}"
     },
     "fh-75": {
-        "name": "Rose Gauntlet",
-        "source": "Scenario 110",
-        "desc": "After any ally within {RANGE.fh} 2 suffers {DAMAGE.fh} from an attack, remove all negative conditions from the ally then perform: {HEAL.fh} 3 {TARGET.fh} the ally, {PULL.fh} 1"
+        "name": "Перчатка-роза",
+        "source": "Сценарий 110",
+        "desc": "После того как любой союзник в пределах {RANGE.fh} 2 получает {DAMAGE.fh} от атаки, снимите с него все отрицательные состояния, затем выполните: {HEAL.fh} 3 {TARGET.fh} этот союзник, {PULL.fh} 1"
     },
     "fh-76": {
-        "name": "Horn of Command",
-        "source": "Treasure 70",
-        "desc": "During one of your summons' turns, decide how it peforms it's abilities."
+        "name": "Рог командования",
+        "source": "Сокровище 70",
+        "desc": "Во время хода одного из ваших призванных решите, как он выполняет свои способности."
     },
     "fh-77": {
-        "name": "Chaos Cannon",
-        "source": "Treasure 40",
-        "desc": "During you turn, replace one 1-hex obstacle, hazardous terrain, difficult terrain, or icy terrain tile in an unoccupied hex withing {RANGE.fh} 2 with a different type of tile listed above."
+        "name": "Хаотическая пушка",
+        "source": "Сокровище 40",
+        "desc": "В ваш ход замените 1 жетон препятствия, опасной местности, труднопроходной местности или ледяной местности на 1 клетку на свободной клетке в пределах {RANGE.fh} 2 жетоном другого вида из перечисленных."
     },
     "fh-78": {
-        "name": "Balanced Scales",
-        "source": "Treasure 31",
-        "desc": "Once each turn, during your attack ability, gain advantage on one attack, then flip this card over at the end of your turn.",
-        "backDesc": "Once each turn, during your attack ability, gain disadvantage on one attack, then flip this card over at the end of your turn."
+        "name": "Уравновешенные весы",
+        "source": "Сокровище 31",
+        "desc": "Один раз за ход во время вашей способности атаки получите преимущество при одной атаке, затем переверните эту карту в конце вашего хода.",
+        "backDesc": "Один раз за ход во время вашей способности атаки получите затруднение при одной атаке, затем переверните эту карту в конце вашего хода."
     },
     "fh-79": {
-        "name": "Roasted Fowl",
-        "source": "Scenario 93",
-        "desc": "During you turn, add +1 {ATTACK.fh} to all your attacks and perform: {HEAL.fh} 2 self"
+        "name": "Жареная птица",
+        "source": "Сценарий 93",
+        "desc": "В ваш ход добавьте +1 {ATTACK.fh} ко всем вашим атакам и выполните: {HEAL.fh} 2 на себя"
     },
     "fh-80": {
-        "name": "Living Stone",
-        "source": "Treasure 72",
-        "desc": "When you would suffer 4 or fewer {DAMAGE.fh} from attack, negate the {DAMAGE.fh} and perform {HEAL.fh} X self wheee x is the amount of damage you would have suffered."
+        "name": "Живой камень",
+        "source": "Сокровище 72",
+        "desc": "Когда вы должны получить 4 или менее {DAMAGE.fh} от атаки, отмените это {DAMAGE.fh} и выполните {HEAL.fh} X на себя, где X — количество урона, которое вы должны были получить."
     },
     "fh-81": {
-        "name": "Pain Simulacrum",
-        "source": "Treasure 59",
-        "desc": "When you suffer 5 or fewer {DAMAGE.fh} from an attack, one enemy within {RANGE.fh} 2 also suffers the same amount of {DAMAGE.fh}."
+        "name": "Симулякр боли",
+        "source": "Сокровище 59",
+        "desc": "Когда вы получаете 5 или менее {DAMAGE.fh} от атаки, один враг в пределах {RANGE.fh} 2 также получает столько же {DAMAGE.fh}."
     },
     "fh-82": {
-        "name": "Mechanical Cube",
-        "source": "Both Treasure 62 and 69",
-        "desc": "During your move ability, after you enter any one hex, give {IMMOBILIZE.fh} to all adjacent enemies."
+        "name": "Механический куб",
+        "source": "Оба сокровища 62 и 69",
+        "desc": "Во время вашей способности движения, после того как вы вошли на любую 1 клетку, наложите {IMMOBILIZE.fh} на всех соседних врагов."
     },
     "fh-83": {
-        "name": "Healing Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {HEAL.fh} 3 self"
+        "name": "Лечебное зелье",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {HEAL.fh} 3 на себя"
     },
     "fh-84": {
-        "name": "Stamina Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, {RECOVER.fh} one level 1 card from your discard pile."
+        "name": "Зелье выносливости",
+        "source": "Алхимия",
+        "desc": "В ваш ход {RECOVER.fh} 1 карту 1-го уровня из вашего сброса."
     },
     "fh-85": {
-        "name": "Power Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, add +1 {ATTACK.fh} to all your attacks."
+        "name": "Зелье силы",
+        "source": "Алхимия",
+        "desc": "В ваш ход добавьте +1 {ATTACK.fh} ко всем вашим атакам."
     },
     "fh-86": {
-        "name": "Element Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, {ANY}"
+        "name": "Зелье стихий",
+        "source": "Алхимия",
+        "desc": "В ваш ход {ANY}"
     },
     "fh-87": {
-        "name": "Cure Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, remove one negative condition you have.  This item can be used while you have {IMPAIR.fh} or {STUN.fh}."
+        "name": "Зелье исцеления",
+        "source": "Алхимия",
+        "desc": "В ваш ход снимите с себя 1 отрицательное состояние. Этот предмет можно использовать, пока у вас есть {IMPAIR.fh} или {STUN.fh}."
     },
     "fh-88": {
-        "name": "Fireshield Potion",
-        "source": "Alchemy",
-        "desc": "During your turn perform {RETALIATE.fh} 1 {RANGE.fh} 3 {ROUND}"
+        "name": "Зелье огненного щита",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {RETALIATE.fh} 1 {RANGE.fh} 3 {ROUND}"
     },
     "fh-89": {
-        "name": "Stoneskin Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {WARD.fh} self"
+        "name": "Зелье каменной кожи",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {WARD.fh} на себя"
     },
     "fh-90": {
-        "name": "Muscle Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {STRENGTHEN.fh} self"
+        "name": "Зелье мощи",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {STRENGTHEN.fh} на себя"
     },
     "fh-91": {
-        "name": "Holy Water",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {BLESS.fh} self"
+        "name": "Святая вода",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {BLESS.fh} на себя"
     },
     "fh-92": {
-        "name": "Renewing Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, {RECOVER.fh} up to two of your spent items."
+        "name": "Обновляющее зелье",
+        "source": "Алхимия",
+        "desc": "В ваш ход {RECOVER.fh} до 2 ваших потраченных предметов."
     },
     "fh-93": {
-        "name": "Glancing Potion",
-        "source": "Alchemy",
-        "desc": "When you reveal a {NULL_MODIFIER} attack modifier card from your attack modifier deck, treat it as a {+0_MODIFIER} instead."
+        "name": "Зелье скользящего удара",
+        "source": "Алхимия",
+        "desc": "Когда вы открываете из вашей колоды модификаторов атаки карту {NULL_MODIFIER}, считайте её картой {+0_MODIFIER}."
     },
     "fh-94": {
-        "name": "Frenzy Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform: {ATTACK.fh} 2"
+        "name": "Зелье неистовства",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните: {ATTACK.fh} 2"
     },
     "fh-95": {
-        "name": "Poison Vial",
-        "source": "Alchemy\nSR-14",
-        "desc": "During your turn, perform {POISON.fh} {RANGE.fh} 1"
+        "name": "Флакон с ядом",
+        "source": "Алхимия\nSR-14",
+        "desc": "В ваш ход выполните {POISON.fh} {RANGE.fh} 1"
     },
     "fh-96": {
-        "name": "Flame Vial",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {WOUND.fh} {RANGE.fh} 1"
+        "name": "Флакон с пламенем",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {WOUND.fh} {RANGE.fh} 1"
     },
     "fh-97": {
-        "name": "Explosive Vial",
-        "source": "Alchemy",
-        "desc": "During your turn, one enemy withing {RANGE.fh} 2 suffers {DAMAGE.fh} 2."
+        "name": "Взрывной флакон",
+        "source": "Алхимия",
+        "desc": "В ваш ход один враг в пределах {RANGE.fh} 2 получает {DAMAGE.fh} 2."
     },
     "fh-98": {
-        "name": "Unhealthy Mixture",
-        "source": "Alchemy\nWO-10",
-        "desc": "During your turn, perform {WOUND.fh}, {POISON.fh} self"
+        "name": "Нездоровая смесь",
+        "source": "Алхимия\nWO-10",
+        "desc": "В ваш ход выполните {WOUND.fh}, {POISON.fh} на себя"
     },
     "fh-99": {
-        "name": "Major Healing Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {HEAL.fh} 6 self"
+        "name": "Большое зелье лечения",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {HEAL.fh} 6 на себя"
     },
     "fh-100": {
-        "name": "Major Stamina Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, {RECOVER.fh} one card from your discard pile."
+        "name": "Большое зелье выносливости",
+        "source": "Алхимия",
+        "desc": "В ваш ход {RECOVER.fh} 1 карту из вашего сброса."
     },
     "fh-101": {
-        "name": "Major Power Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, add +2 {ATTACK.fh} to all your attacks."
+        "name": "Большое зелье силы",
+        "source": "Алхимия",
+        "desc": "В ваш ход добавьте +2 {ATTACK.fh} ко всем вашим атакам."
     },
     "fh-102": {
-        "name": "Major Element Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, {ANY} {ANY}"
+        "name": "Большое зелье стихий",
+        "source": "Алхимия",
+        "desc": "В ваш ход {ANY} {ANY}"
     },
     "fh-103": {
-        "name": "Major Cure Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, remove all negative conditions you have.  This item can be used while you have {IMPAIR.fh} or {STUN.fh}."
+        "name": "Большое зелье исцеления",
+        "source": "Алхимия",
+        "desc": "В ваш ход снимите с себя все отрицательные состояния. Этот предмет можно использовать, пока у вас есть {IMPAIR.fh} или {STUN.fh}."
     },
     "fh-104": {
-        "name": "Swiftness Potion",
-        "source": "Alchemy",
-        "desc": "During your move ability, add +3 {MOVE.fh} and {JUMP.fh}."
+        "name": "Зелье быстроты",
+        "source": "Алхимия",
+        "desc": "Во время вашей способности движения добавьте +3 {MOVE.fh} и {JUMP.fh}."
     },
     "fh-105": {
-        "name": "Major Fireshield Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform, {RETALIATE.fh} 2 {RANGE.fh} 3 {ROUND}"
+        "name": "Большое зелье огненного щита",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {RETALIATE.fh} 2 {RANGE.fh} 3 {ROUND}"
     },
     "fh-106": {
-        "name": "Stonewall Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {WARD.fh} {TARGET.fh} 2 adjacent allies and self"
+        "name": "Зелье каменной стены",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {WARD.fh} {TARGET.fh} 2 соседних союзника и вы"
     },
     "fh-107": {
-        "name": "Vigor Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {STRENGTHEN.fh} {TARGET.fh} 2 adjacent allies and self"
+        "name": "Зелье бодрости",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {STRENGTHEN.fh} {TARGET.fh} 2 соседних союзника и вы"
     },
     "fh-108": {
-        "name": "Holy Rain",
-        "source": "Alchemy",
-        "desc": "During your turn, perform {BLESS.fh} {TARGET.fh} 2 adjacent allies and self"
+        "name": "Святой дождь",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните {BLESS.fh} {TARGET.fh} 2 соседних союзника и вы"
     },
     "fh-109": {
-        "name": "Major Renewing Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, {RECOVER.fh} up to one of your lost 2-herb potions."
+        "name": "Большое обновляющее зелье",
+        "source": "Алхимия",
+        "desc": "В ваш ход {RECOVER.fh} до 1 вашего потерянного зелья из 2 трав."
     },
     "fh-110": {
-        "name": "Precision Potion",
-        "source": "Alchemy",
-        "desc": "When you reveal a {NULL_MODIFIER} attack modifier card from your attack modifier deck, treat it as a {+2_MODIFIER} instead."
+        "name": "Зелье точности",
+        "source": "Алхимия",
+        "desc": "Когда вы открываете из вашей колоды модификаторов атаки карту {NULL_MODIFIER}, считайте её картой {+2_MODIFIER}."
     },
     "fh-111": {
-        "name": "Major Frenzy Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, perform: {ATTACK.fh} 4"
+        "name": "Большое зелье неистовства",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните: {ATTACK.fh} 4"
     },
     "fh-112": {
-        "name": "Hammer Potion",
-        "source": "Alchemy",
-        "desc": "During your turn suffer {DAMAGE.fh} 10."
+        "name": "Зелье молота",
+        "source": "Алхимия",
+        "desc": "В ваш ход получите {DAMAGE.fh} 10."
     },
     "fh-113": {
-        "name": "Expertise Potion",
-        "source": "Alchemy",
-        "desc": "At the start of your turn, discard one of your played cards to perform both the top and bottom actions of your other played card. At most one action can trigger a {CONSUMED.fh} icon."
+        "name": "Зелье мастерства",
+        "source": "Алхимия",
+        "desc": "В начале вашего хода сбросьте 1 из ваших сыгранных карт, чтобы выполнить и верхнее, и нижнее действие другой вашей сыгранной карты. Не более одного действия может активировать значок {CONSUMED.fh}."
     },
     "fh-114": {
-        "name": "Foresight Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, reveal the top card of one monster ability deck. You may place the card on the bottom of the deck."
+        "name": "Зелье предвидения",
+        "source": "Алхимия",
+        "desc": "В ваш ход откройте верхнюю карту одной колоды способностей монстров. Вы можете положить эту карту под низ колоды."
     },
     "fh-115": {
-        "name": "Infusion Potion",
-        "source": "Alchemy",
-        "desc": "During your turn, ignore one elemental consumption symbol on an action you played and gain its effect."
+        "name": "Зелье наполнения",
+        "source": "Алхимия",
+        "desc": "В ваш ход проигнорируйте 1 символ потребления стихии на сыгранном вами действии и получите его эффект."
     },
     "fh-116": {
-        "name": "Plague Flask",
-        "source": "Alchemy",
-        "desc": "During your turn perform, {POISON.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
+        "name": "Колба чумы",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните: {POISON.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
     },
     "fh-117": {
-        "name": "Inferno Flask",
-        "source": "Alchemy",
-        "desc": "During your turn perform, {WOUND.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
+        "name": "Колба преисподней",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните: {WOUND.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
     },
     "fh-118": {
-        "name": "Fulminant Flask",
-        "source": "Alchemy",
-        "desc": "During your turn, one enemy within {RANGE.fh} 2 suffers {DAMAGE.fh} 4."
+        "name": "Колба взрыва",
+        "source": "Алхимия",
+        "desc": "В ваш ход один враг в пределах {RANGE.fh} 2 получает {DAMAGE.fh} 4."
     },
     "fh-119": {
-        "name": "Deadly Mixture",
-        "source": "Alchemy",
-        "desc": "During your turn, perform: {WOUND.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh} self"
+        "name": "Смертельная смесь",
+        "source": "Алхимия",
+        "desc": "В ваш ход выполните: {WOUND.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh} на себя"
     },
     "fh-120": {
-        "name": "Amulet of Life",
-        "source": "Initially Available",
-        "desc": "During your turn, perform {HEAL.fh} 1 self"
+        "name": "Амулет жизни",
+        "source": "Доступно с начала",
+        "desc": "В ваш ход выполните {HEAL.fh} 1 на себя"
     },
     "fh-121": {
-        "name": "Circlet of Elements",
-        "source": "Initially Available",
-        "desc": "During your turn, perform {ANY_X}: {ANY}"
+        "name": "Браслет стихий",
+        "source": "Доступно с начала",
+        "desc": "В ваш ход выполните {ANY_X}: {ANY}"
     },
     "fh-122": {
-        "name": "Warden's Robes",
-        "source": "Initially Available",
-        "desc": "When one of your summons suffers {DAMAGE.fh} from an attack, that summons gains {SHIELD.fh} 2 for the attack."
+        "name": "Мантия надзирателя",
+        "source": "Доступно с начала",
+        "desc": "Когда один из ваших призванных получает {DAMAGE.fh} от атаки, этот призванный получает {SHIELD.fh} 2 для этой атаки."
     },
     "fh-123": {
-        "name": "Leather Armor",
-        "source": "Initially Available",
-        "desc": "When you are attacked, before drawing an attack modifier car, the attacker gains disadvantage on the attack."
+        "name": "Кожаная броня",
+        "source": "Доступно с начала",
+        "desc": "Когда вас атакуют, перед тем как тянуть карту модификатора атаки, атакующий проводит атаку с затруднением."
     },
     "fh-124": {
-        "name": "Winged Shoes",
-        "source": "Initially Available",
-        "desc": "During your turn, add {JUMP.fh} to all your move abilities."
+        "name": "Крылатые ботинки",
+        "source": "Доступно с начала",
+        "desc": "В ваш ход добавьте {JUMP.fh} ко всем вашим способностям движения."
     },
     "fh-125": {
-        "name": "Boots of Speed",
-        "source": "Initially Available",
-        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease your initiative by 10."
+        "name": "Сапоги скорости",
+        "source": "Доступно с начала",
+        "desc": "При определении инициативы, после того как все карты способностей открыты, увеличьте или уменьшите вашу инициативу на 10."
     },
     "fh-126": {
-        "name": "Weighted Net",
-        "source": "Initially Available",
-        "desc": "During your ranged attack ability, add {IMMOBILIZE.fh} to one attack."
+        "name": "Утяжелённая сеть",
+        "source": "Доступно с начала",
+        "desc": "Во время вашей способности дальней атаки добавьте {IMMOBILIZE.fh} к одной атаке."
     },
     "fh-127": {
-        "name": "Poison Dagger",
-        "source": "Initially Available",
-        "desc": "During your melee attack ability, add {POISON.fh} to one attack."
+        "name": "Отравленный кинжал",
+        "source": "Доступно с начала",
+        "desc": "Во время вашей способности ближней атаки добавьте {POISON.fh} к одной атаке."
     },
     "fh-128": {
-        "name": "Heater Shield",
-        "source": "Initially Available",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack."
+        "name": "Треугольный щит",
+        "source": "Доступно с начала",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 1 для этой атаки."
     },
     "fh-129": {
-        "name": "Eagle-Eye Goggles",
-        "source": "Trading Post 2",
-        "desc": "During your attack ability, gain advantage on all attacks."
+        "name": "Очки орлиного взора",
+        "source": "Торговый пост 2",
+        "desc": "Во время вашей способности атаки получите преимущество при всех атаках."
     },
     "fh-130": {
-        "name": "Iron Helmet",
-        "source": "Trading Post 2",
-        "desc": "When you are attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as a {+0_MODIFIER} instead."
+        "name": "Железный шлем",
+        "source": "Торговый пост 2",
+        "desc": "Когда вас атакуют, считайте любую вытянутую врагом карту модификатора атаки {2X_MODIFIER} картой {+0_MODIFIER}."
     },
     "fh-131": {
-        "name": "Chainmail",
-        "source": "Trading Post 2",
-        "desc": "On the next three sources of {DAMAGE.fh} from attacks targeting you, you gain {SHIELD.fh} 1 for the attacks."
+        "name": "Кольчуга",
+        "source": "Торговый пост 2",
+        "desc": "При следующих трёх источниках {DAMAGE.fh} от атак, нацеленных на вас, получайте {SHIELD.fh} 1 для этих атак."
     },
     "fh-132": {
-        "name": "Cloak of Pockets",
-        "source": "Trading Post 2",
-        "desc": "At the start of the scenario, bring one additional {SMALL-ITEM} items."
+        "name": "Накидка с карманами",
+        "source": "Торговый пост 2",
+        "desc": "В начале сценария возьмите 1 дополнительный предмет {SMALL-ITEM}."
     },
     "fh-133": {
-        "name": "Nimble Legguards",
-        "source": "Trading Post 2",
-        "desc": "When an adjacent ally would be targeted by an attack, you are targeted instead, regardless of range and line-of-sight."
+        "name": "Проворные наколенники",
+        "source": "Торговый пост 2",
+        "desc": "Когда соседний союзник должен стать целью атаки, целью становитесь вы, независимо от дальности и линии видимости."
     },
     "fh-134": {
-        "name": "Comfortable Shoes",
-        "source": "Trading Post 2",
-        "desc": "When you use the basic bottom action of an ability card, perform {MOVE.fh} 3 instead of {MOVE.fh} 2."
+        "name": "Удобные башмаки",
+        "source": "Торговый пост 2",
+        "desc": "Когда вы используете стандартное нижнее действие карты способности, выполните {MOVE.fh} 3 вместо {MOVE.fh} 2."
     },
     "fh-135": {
-        "name": "Armorbane Bow",
-        "source": "Trading Post 2",
-        "desc": "During your attack, add {PIERCE.fh} 3 to all your ranged attacks."
+        "name": "Лук-бронебой",
+        "source": "Торговый пост 2",
+        "desc": "Во время вашей атаки добавьте {PIERCE.fh} 3 ко всем вашим дальним атакам."
     },
     "fh-136": {
-        "name": "Battle Axe",
-        "source": "Trading Post 2",
-        "desc": "During your single-target melee attack ability, change the targeting of the ability to: *cone_0_1*"
+        "name": "Боевой топор",
+        "source": "Торговый пост 2",
+        "desc": "Во время вашей способности одиночной ближней атаки измените цель способности на: *cone_0_1*"
     },
     "fh-137": {
-        "name": "Tower Shield",
-        "source": "Trading Post 2",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 2 for the attack."
+        "name": "Осадный щит",
+        "source": "Торговый пост 2",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 2 для этой атаки."
     },
     "fh-138": {
-        "name": "Heavy Basinet",
-        "source": "Trading Post 3",
-        "desc": "When an enemy would give you {DISARM.fh}, {STUN.fh}, or {MUDDLE.fh}, prevent the condition."
+        "name": "Тяжёлый шлем",
+        "source": "Торговый пост 3",
+        "desc": "Когда враг должен наложить на вас {DISARM.fh}, {STUN.fh} или {MUDDLE.fh}, предотвратите это состояние."
     },
     "fh-139": {
-        "name": "Horned Helm",
-        "source": "Trading Post 3",
-        "desc": "After your move 4 or more hexes on your turn, add +1 {ATTACK.fh} to your next melee attack this turn."
+        "name": "Рогатый шлем",
+        "source": "Торговый пост 3",
+        "desc": "После того как вы передвинулись на 4 или более клеток в свой ход, добавьте +1 {ATTACK.fh} к вашей следующей ближней атаке в этом ходу."
     },
     "fh-140": {
-        "name": "Mantle of Summoning",
-        "source": "Trading Post 3",
-        "desc": "During your turn, grant one of your summons: {SHIELD.fh} 2. {ROUND}"
+        "name": "Мантия призыва",
+        "source": "Торговый пост 3",
+        "desc": "В ваш ход предоставьте 1 из ваших призванных: {SHIELD.fh} 2. {ROUND}"
     },
     "fh-141": {
-        "name": "Studded Leather",
-        "source": "Trading Post 3",
-        "desc": "When you are attacked, before drawing an attack modifier car, the attacker gains disadvantage on the attack and you gain {SHIELD.fh} 1 for the attack."
+        "name": "Клёпаная броня",
+        "source": "Торговый пост 3",
+        "desc": "Когда вас атакуют, перед тем как тянуть карту модификатора атаки, атакующий проводит атаку с затруднением, а вы получаете {SHIELD.fh} 1 для этой атаки."
     },
     "fh-142": {
-        "name": "Boots of Quickness",
-        "source": "Trading Post 3",
-        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease your initiative by 20."
+        "name": "Сапоги проворства",
+        "source": "Торговый пост 3",
+        "desc": "При определении инициативы, после того как все карты способностей открыты, увеличьте или уменьшите вашу инициативу на 20."
     },
     "fh-143": {
-        "name": "Endurance Footwraps",
-        "source": "Trading Post 3",
-        "desc": "After you move 4 or more hexes during your turn, after the move ability perform: {HEAL.fh} 1 self."
+        "name": "Портянки выносливости",
+        "source": "Торговый пост 3",
+        "desc": "После того как вы передвинулись на 4 или более клеток в свой ход, после способности движения выполните: {HEAL.fh} 1 на себя."
     },
     "fh-144": {
-        "name": "Staff of Eminence",
-        "source": "Trading Post 3",
-        "desc": "During your turn, {ANY_X} to add +1 {ATTACK.fh} to all your attacks."
+        "name": "Посох превосходства",
+        "source": "Торговый пост 3",
+        "desc": "В ваш ход {ANY_X}, чтобы добавить +1 {ATTACK.fh} ко всем вашим атакам."
     },
     "fh-145": {
-        "name": "Versatile Dagger",
-        "source": "Trading Post 3",
-        "desc": "When you use the basic top action of an ability card, perform {ATTACK.fh} 3 instead of {ATTACK.fh} 2."
+        "name": "Универсальный кинжал",
+        "source": "Торговый пост 3",
+        "desc": "Когда вы используете стандартное верхнее действие карты способности, выполните {ATTACK.fh} 3 вместо {ATTACK.fh} 2."
     },
     "fh-146": {
-        "name": "Hooked Chain",
-        "source": "Trading Post 3",
-        "desc": "Duiring your attack, add {PULL.fh} 2 to all your ranged attacks."
+        "name": "Цепь с крюком",
+        "source": "Торговый пост 3",
+        "desc": "Во время вашей атаки добавьте {PULL.fh} 2 ко всем вашим дальним атакам."
     },
     "fh-147": {
-        "name": "Mask of Terror",
-        "source": "Trading Post 4",
-        "desc": "During your melee attack, add {PUSH.fh} 1."
+        "name": "Маска ужаса",
+        "source": "Торговый пост 4",
+        "desc": "Во время вашей ближней атаки добавьте {PUSH.fh} 1."
     },
     "fh-148": {
-        "name": "Circlet of Sanctity",
-        "source": "Trading Post 4",
-        "desc": "After the next three attacks targeting an ally within {RANGE.fh} 2, flip this card over.",
-        "backDesc": "During your turn, perform: {WARD.fh} {RANGE.fh}3 then flip this card over."
+        "name": "Венец святости",
+        "source": "Торговый пост 4",
+        "desc": "После следующих трёх атак, нацеленных на союзника в пределах {RANGE.fh} 2, переверните эту карту.",
+        "backDesc": "В ваш ход выполните: {WARD.fh} {RANGE.fh}3, затем переверните эту карту."
     },
     "fh-149": {
-        "name": "Platemail",
-        "source": "Trading Post 4",
-        "desc": "On the next five sources of {DAMAGE.fh} from attacks targeting you, you gain {SHIELD.fh} 1 for the attacks."
+        "name": "Латы",
+        "source": "Торговый пост 4",
+        "desc": "При следующих пяти источниках {DAMAGE.fh} от атак, нацеленных на вас, получайте {SHIELD.fh} 1 для этих атак."
     },
     "fh-150": {
-        "name": "Robes of the Oak",
-        "source": "Trading Post 4",
-        "desc": "During your turn, perform: {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 1 "
+        "name": "Мантия Дуба",
+        "source": "Торговый пост 4",
+        "desc": "В ваш ход выполните: {HEAL.fh} 3 {TARGET.fh} 1 союзник, {RANGE.fh} 1"
     },
     "fh-151": {
-        "name": "Serene Sandals",
-        "source": "Trading Post 4",
-        "desc": "When you use the basic bottom action of an ability card, perform {MOVE.fh} 4 instead of {MOVE.fh} 2."
+        "name": "Сандалии безмятежности",
+        "source": "Торговый пост 4",
+        "desc": "Когда вы используете стандартное нижнее действие карты способности, выполните {MOVE.fh} 4 вместо {MOVE.fh} 2."
     },
     "fh-152": {
-        "name": "Steel Sabatons",
-        "source": "Trading Post 4",
-        "desc": "At the end of your turn, if you have moved 1 or fewer hexes during your turn, gain {SHIELD.fh} 1 for the round."
+        "name": "Стальные сабатоны",
+        "source": "Торговый пост 4",
+        "desc": "В конце вашего хода, если за этот ход вы передвинулись на 1 или менее клеток, получите {SHIELD.fh} 1 на раунд."
     },
     "fh-153": {
-        "name": "Long Spear",
-        "source": "Trading Post 4",
-        "desc": "During your single-target melee attack ability, change the targeting of the ability to: *line_0_1_1*"
+        "name": "Длинное копьё",
+        "source": "Торговый пост 4",
+        "desc": "Во время вашей способности одиночной ближней атаки измените цель способности на: *line_0_1_1*"
     },
     "fh-154": {
-        "name": "Volatile Bomb",
-        "source": "Trading Post 4",
-        "desc": "During your single-target ranged attack ability, change the targeting of the ability to: {AOE.CONE_1_1}"
+        "name": "Зажигательная бомба",
+        "source": "Торговый пост 4",
+        "desc": "Во время вашей способности одиночной дальней атаки измените цель способности на: {AOE.CONE_1_1}"
     },
     "fh-155": {
-        "name": "Wall Shield",
-        "source": "Trading Post 4",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 4 for the attack."
+        "name": "Фигурный щит",
+        "source": "Торговый пост 4",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 4 для этой атаки."
     },
     "fh-156": {
-        "name": "Moon Earring",
-        "source": "Jeweler 1",
-        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items."
+        "name": "Лунная серьга",
+        "source": "Ювелир 1",
+        "desc": "Когда вы совершаете короткий отдых, {RECOVER.fh} до 3 ваших потраченных предметов."
     },
     "fh-157": {
-        "name": "Steel Ring",
-        "source": "Jeweler 1",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 4 for the attack."
+        "name": "Стальное кольцо",
+        "source": "Ювелир 1",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 4 для этой атаки."
     },
     "fh-158": {
-        "name": "Deep Earth Brooch",
-        "source": "Jeweler 1",
-        "desc": "During your turn, perform {EARTH_OR_DARK_X}: {HEAL.fh} 3 self, {WARD.fh}"
+        "name": "Брошь глубинной земли",
+        "source": "Ювелир 1",
+        "desc": "В ваш ход выполните {EARTH_OR_DARK_X}: {HEAL.fh} 3 на себя, {WARD.fh}"
     },
     "fh-159": {
-        "name": "Glorious Bracelet",
-        "source": "Jeweler 1",
-        "desc": "After your attack ability during which one enemy suffered at least {DAMAGE.fh} 6, perform: {BLESS.fh}, {BLESS.fh} self"
+        "name": "Славный браслет",
+        "source": "Ювелир 1",
+        "desc": "После вашей способности атаки, в ходе которой один враг получил не менее {DAMAGE.fh} 6, выполните: {BLESS.fh}, {BLESS.fh} на себя"
     },
     "fh-160": {
-        "name": "Sun Earring",
-        "source": "Jeweler 2",
-        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items, and perform {HEAL.fh} 2 self."
+        "name": "Солнечная серьга",
+        "source": "Ювелир 2",
+        "desc": "Когда вы совершаете короткий отдых, {RECOVER.fh} до 3 ваших потраченных предметов и выполните {HEAL.fh} 2 на себя."
     },
     "fh-161": {
-        "name": "Strategists Ring",
-        "source": "Jeweler 2",
-        "desc": "At the end of your turn, play one card from your hand and perform all persistent and mandatory abilities on either the top or bottom action of the card."
+        "name": "Кольцо стратега",
+        "source": "Ювелир 2",
+        "desc": "В конце вашего хода сыграйте 1 карту из руки и выполните все постоянные и обязательные способности либо верхнего, либо нижнего действия этой карты."
     },
     "fh-162": {
-        "name": "Howling Ice Brooch",
-        "source": "Jeweler 2",
-        "desc": "During your turn, perform {ICE_OR_WIND_X}: {ATTACK.fh} 3 {RANGE.fh} 3, {IMMOBILIZE.fh}"
+        "name": "Брошь воющего льда",
+        "source": "Ювелир 2",
+        "desc": "В ваш ход выполните {ICE_OR_WIND_X}: {ATTACK.fh} 3 {RANGE.fh} 3, {IMMOBILIZE.fh}"
     },
     "fh-163": {
-        "name": "Stunning Bracelet",
-        "source": "Jeweler 2",
-        "desc": "During your turn, give {STUN.fh} to half (rounded up) the enemies adjacent to you."
+        "name": "Оглушающий браслет",
+        "source": "Ювелир 2",
+        "desc": "В ваш ход наложите {STUN.fh} на половину (с округлением вверх) врагов, соседних с вами."
     },
     "fh-164": {
-        "name": "Star Earring",
-        "source": "Jeweler 3",
-        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items, choose which card to lose during the rest, and perform {HEAL.fh} 2 self."
+        "name": "Звёздная серьга",
+        "source": "Ювелир 3",
+        "desc": "Когда вы совершаете короткий отдых, {RECOVER.fh} до 3 ваших потраченных предметов, выберите, какую карту потерять во время отдыха, и выполните {HEAL.fh} 2 на себя."
     },
     "fh-165": {
-        "name": "Ring of Haste",
-        "source": "Jeweler 3",
-        "desc": "At the end of you turn, play one card from your hand and perform the bottom action of the card."
+        "name": "Кольцо спешки",
+        "source": "Ювелир 3",
+        "desc": "В конце вашего хода сыграйте 1 карту из руки и выполните нижнее действие этой карты."
     },
     "fh-166": {
-        "name": "Blazing Sun Brooch",
-        "source": "Jeweler 3",
-        "desc": "During your turn, perform {FIRE_OR_LIGHT_X}: {ATTACK.fh} 3 {DISARM.fh}"
+        "name": "Брошь палящего солнца",
+        "source": "Ювелир 3",
+        "desc": "В ваш ход выполните {FIRE_OR_LIGHT_X}: {ATTACK.fh} 3 {DISARM.fh}"
     },
     "fh-167": {
-        "name": "Attractive Bracelet",
-        "source": "Jeweler 3\nWR-10",
-        "desc": "At the start of the enemy's turn, before it determines its focus, perform: {PULL.fh} 4 {TARGET.fh} the enemy, {RANGE.fh} 5, {MUDDLE.fh}"
+        "name": "Притягательный браслет",
+        "source": "Ювелир 3\nWR-10",
+        "desc": "В начале хода врага, до того как он определит свою цель, выполните: {PULL.fh} 4 {TARGET.fh} этот враг, {RANGE.fh} 5, {MUDDLE.fh}"
     },
     "fh-168": {
-        "name": "Circlet of Eyes",
-        "source": "Loot Deck Random",
-        "desc": "During your ranged attack ability, add +1 {TARGET.fh}."
+        "name": "Венец глаз",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Во время вашей способности дальней атаки добавьте +1 {TARGET.fh}."
     },
     "fh-169": {
-        "name": "Fateful Charm",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, reveal the top card of your attack modifier deck.  You may place the card on the bottom of the deck."
+        "name": "Роковой талисман",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход откройте верхнюю карту вашей колоды модификаторов атаки. Вы можете положить эту карту под низ колоды."
     },
     "fh-170": {
-        "name": "Eye of Truth",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, reveal the top card of each monster ability deck."
+        "name": "Око истины",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход откройте верхнюю карту каждой колоды способностей монстров."
     },
     "fh-171": {
-        "name": "Rejuvenating Charm",
-        "source": "Loot Deck Random",
-        "desc": "Whenever you lose a card to negate {DAMAGE.fh}, {RECOVER.fh} up to one card from your discard pile and gain {REGENERATE.fh}."
+        "name": "Омолаживающий талисман",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Каждый раз, когда вы теряете карту, чтобы отменить {DAMAGE.fh}, {RECOVER.fh} до 1 карты из вашего сброса и получите {REGENERATE.fh}."
     },
     "fh-172": {
-        "name": "Cap of Premonition",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, look at the top four cards of your attack modifier deck and put them back in any order."
+        "name": "Шапка предчувствия",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход посмотрите верхние 4 карты вашей колоды модификаторов атаки и положите их обратно в любом порядке."
     },
     "fh-173": {
-        "name": "Multi Colored Cloak",
-        "source": "Loot Deck Random",
-        "desc": "When attacked: {ANY}."
+        "name": "Разноцветный плащ",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Когда вас атакуют: {ANY}."
     },
     "fh-174": {
-        "name": "Magnetic Cape",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, perform: {TELEPORT.fh} 20 This teleport must end in a hex adjacent to one of your allies."
+        "name": "Магнитная накидка",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход выполните: {TELEPORT.fh} 20 Эта телепортация должна закончиться на клетке, соседней с одним из ваших союзников."
     },
     "fh-175": {
-        "name": "Mirrored Armor",
-        "source": "Loot Deck Random",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, the attacker suffers and equal amount of {DAMAGE.fh}."
+        "name": "Зеркальный доспех",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, атакующий получает столько же {DAMAGE.fh}."
     },
     "fh-176": {
-        "name": "Blinking Cape",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, perform: {TELEPORT.fh} 4 This teleport must end in a hex adjacent to one of your enemies."
+        "name": "Мерцающий плащ",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход выполните: {TELEPORT.fh} 4 Эта телепортация должна закончиться на клетке, соседней с одним из ваших врагов."
     },
     "fh-177": {
-        "name": "Boots of Transference",
-        "source": "Loot Deck Random",
-        "desc": "When you spring a trap by entering its hex, you may apply its effects to a figure withing {RANGE.fh} 3 instead of yourself."
+        "name": "Сапоги переноса",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Когда вы активируете ловушку, войдя на её клетку, вы можете применить её эффекты к фигуре в пределах {RANGE.fh} 3 вместо себя."
     },
     "fh-178": {
-        "name": "Tranquil Shoes",
-        "source": "Loot Deck Random",
-        "desc": "At the start of your turn in which your initiative is 60 or higher and you are not performing a long rest, perform {HEAL.fh} 1 self."
+        "name": "Безмятежные туфли",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В начале вашего хода, в котором ваша инициатива равна 60 или выше и вы не совершаете долгий отдых, выполните {HEAL.fh} 1 на себя."
     },
     "fh-179": {
-        "name": "Burst Boots",
-        "source": "Loot Deck Random",
-        "desc": "During your move ability, add +4 {MOVE.fh}.  After the move ability gain {IMMOBILIZE.fh}."
+        "name": "Рывковые сапоги",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Во время вашей способности движения добавьте +4 {MOVE.fh}. После способности движения получите {IMMOBILIZE.fh}."
     },
     "fh-180": {
-        "name": "Boots of Greed",
-        "source": "Loot Deck Random",
-        "desc": "When you loot two or more tokens at once, peform: {BLESS.fh} self."
+        "name": "Сапоги жадности",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Когда вы подбираете 2 или более жетонов одновременно, выполните: {BLESS.fh} на себя."
     },
     "fh-181": {
-        "name": "Translocation Rod",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, designate two allies or any two normal or elite monsters. Each designated figure simultaneously {TELEPORT.fh} to the hex occupied by the other designated figure."
+        "name": "Жезл телепортации",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход выберите двух союзников или любых двух обычных или элитных монстров. Каждая выбранная фигура одновременно {TELEPORT.fh} на клетку, занятую другой выбранной фигурой."
     },
     "fh-182": {
-        "name": "Wing Clippers",
-        "source": "Loot Deck Random",
-        "desc": "Afer your melee attack , place a character token on the target. The target loses {FLYING.fh}. {PERSISTENT}"
+        "name": "Крыложуй",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "После вашей ближней атаки положите жетон персонажа на цель. Цель теряет {FLYING.fh}. {PERSISTENT}"
     },
     "fh-183": {
-        "name": "Decanter of Mists",
-        "source": "Loot Deck Random\nTreasure 16",
-        "desc": "During your turn, all figures gain disadvantage on and add 1 {RANGE.fh} to all ranged attacks this round. {ROUND}"
+        "name": "Графин туманов",
+        "source": "Случайная карта из колоды добычи\nСокровище 16",
+        "desc": "В ваш ход все фигуры получают затруднение при всех дальних атаках в этом раунде и добавляют 1 {RANGE.fh} к ним. {ROUND}"
     },
     "fh-184": {
-        "name": "Flashing Axe",
-        "source": "Loot Deck Random",
-        "desc": "During your multi-target melee attack ability, add +1 {TARGET.fh}."
+        "name": "Сверкающий топор",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Во время вашей способности ближней атаки по нескольким целям добавьте +1 {TARGET.fh}."
     },
     "fh-185": {
-        "name": "Mirrored Knife",
-        "source": "Loot Deck Random",
-        "desc": "During your melee attack ability, add all negative conditions you have except {BRITTLE.fh}, {BANE.fh} and {STUN.fh} to one attack."
+        "name": "Зеркальный нож",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "Во время вашей способности ближней атаки добавьте к одной атаке все ваши отрицательные состояния, кроме {BRITTLE.fh}, {BANE.fh} и {STUN.fh}."
     },
     "fh-186": {
-        "name": "Wild Growth Seeds",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, create one 1-hex obstacle in an adjacent empty hex."
+        "name": "Семена буйного роста",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход создайте 1 препятствие на 1 клетку на соседней свободной клетке."
     },
     "fh-187": {
-        "name": "Dangerous Gear",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, create one {DAMAGE.fh} 3 trap in an adjacent empty hex."
+        "name": "Опасный механизм",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход создайте 1 ловушку {DAMAGE.fh} 3 на соседней свободной клетке."
     },
     "fh-188": {
-        "name": "Freezing Crystal",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, create one 1-hex hazardous terrain, icy terrain, or water tile in an adjacent featureless hex."
+        "name": "Замораживающий кристалл",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход создайте 1 жетон опасной местности, ледяной местности или воды на 1 клетку на соседней пустой клетке."
     },
     "fh-189": {
-        "name": "Ring of the Night",
-        "source": "Loot Deck Random",
-        "desc": "During your, perform {DARK_X} {ANY_X}: {INVISIBLE.fh} self"
+        "name": "Кольцо ночи",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход выполните {DARK_X} {ANY_X}: {INVISIBLE.fh} на себя"
     },
     "fh-190": {
-        "name": "White Card",
-        "source": "Loot Deck Random",
-        "desc": "During your turn, place a character token on one normal or elite enemy withing {RANGE.fh} 3. This enemy adds -1 {ATTACK.fh} to all its attacks. {PERSISTENT}."
+        "name": "Белая карта",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход положите жетон персонажа на 1 обычного или элитного врага в пределах {RANGE.fh} 3. Этот враг добавляет -1 {ATTACK.fh} ко всем своим атакам. {PERSISTENT}."
     },
     "fh-191": {
-        "name": "Corrupted Scroll",
-        "source": "Loot Deck Random",
-        "desc": "During your, perform {HEAL.fh} 5 {RANGE.fh} 5 {POISON.fh} {TARGET.fh} the target of the heal ability"
+        "name": "Порченый свиток",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В ваш ход выполните {HEAL.fh} 5 {RANGE.fh} 5 {POISON.fh} {TARGET.fh} цель способности лечения"
     },
     "fh-192": {
-        "name": "Enticing Bell",
-        "source": "Loot Deck Random",
-        "desc": "At the end of your turn, designate one enemy withing {RANGE.fh} 3. You are its primary focus and it does not avoid negative hexes when determining movement this round. {ROUND}"
+        "name": "Манящий колокольчик",
+        "source": "Случайная карта из колоды добычи",
+        "desc": "В конце вашего хода выберите 1 врага в пределах {RANGE.fh} 3. Вы — его основная цель, и он не избегает отрицательных клеток при определении движения в этом раунде. {ROUND}"
     },
     "fh-193": {
-        "name": "Mind Thieving Helmet",
-        "source": "Scenario 121",
-        "desc": "During your turn, control one enemy withing {RANGE.fh} 3: {ATTACK.fh} 3"
+        "name": "Шлем похитителя разума",
+        "source": "Сценарий 121",
+        "desc": "В ваш ход возьмите под контроль 1 врага в пределах {RANGE.fh} 3: {ATTACK.fh} 3"
     },
     "fh-194": {
-        "name": "Temporal Amulet",
-        "source": "Scenario 125",
-        "desc": "During ordering of initiative after all ability card have been revealed, increase or decrease a monster set's initiative by 30."
+        "name": "Временной амулет",
+        "source": "Сценарий 125",
+        "desc": "При определении инициативы, после того как все карты способностей открыты, увеличьте или уменьшите инициативу одного набора монстров на 30."
     },
     "fh-195": {
-        "name": "Tri-Corner Hat",
-        "source": "Treasure 83\nScenario 127",
-        "desc": "During your turn add +1 {RANGE.fh} and {PIERCE.fh} 1 to one of your ranged attacks."
+        "name": "Треуголка",
+        "source": "Сокровище 83\nСценарий 127",
+        "desc": "В ваш ход добавьте +1 {RANGE.fh} и {PIERCE.fh} 1 к одной из ваших дальних атак."
     },
     "fh-196": {
-        "name": "Choker of Sacrifice",
+        "name": "Ошейник жертвы",
         "source": "SR-26",
-        "desc": "During your turn, discard one loot card except Random Item to perform: {HEAL.fh} 5 {RANGE.fh} 2, {WARD.fh}"
+        "desc": "В ваш ход сбросьте 1 карту добычи, кроме «Случайный предмет», чтобы выполнить: {HEAL.fh} 5 {RANGE.fh} 2, {WARD.fh}"
     },
     "fh-197": {
-        "name": "Aesther Diadem",
+        "name": "Эстерская диадема",
         "source": "WO-77",
-        "desc": "After ordering of initiative, exchange a card in your hand for one which you have played. Your initiative is unaffected."
+        "desc": "После определения инициативы обменяйте карту из руки на одну из тех, что вы сыграли. Ваша инициатива не меняется."
     },
     "fh-198": {
-        "name": "Hunter's Necklace",
+        "name": "Ожерелье охотника",
         "source": "WR-36",
-        "desc": "During your turn, perform {PULL.fh} 3 {RANGE.fh} 4"
+        "desc": "В ваш ход выполните {PULL.fh} 3 {RANGE.fh} 4"
     },
     "fh-199": {
-        "name": "Opulent Shoes",
-        "source": "Treasure 6\nTreasure 78",
-        "desc": "At the start of the scenario, consider yourself to be your summons in initiative order when determining monster focus for the remainder of the scenario."
+        "name": "Роскошные туфли",
+        "source": "Сокровище 6\nСокровище 78",
+        "desc": "В начале сценария считайте себя своими призванными в порядке инициативы при определении цели монстров до конца сценария."
     },
     "fh-200": {
-        "name": "Eventide Scepter",
-        "source": "Treasure 4",
-        "desc": "During your heal ability targeting an ally, {LIGHT_X} to add {REGENERATE.fh} to one heal and flip this card over.",
-        "backDesc": "During your attack ability, {DARK_X} to add {CURSE.fh} to one attack and flip this card over."
+        "name": "Вечерний скипетр",
+        "source": "Сокровище 4",
+        "desc": "Во время вашей способности лечения, нацеленной на союзника, {LIGHT_X}, чтобы добавить {REGENERATE.fh} к одному лечению и переверните эту карту.",
+        "backDesc": "Во время вашей способности атаки {DARK_X}, чтобы добавить {CURSE.fh} к одной атаке и переверните эту карту."
     },
     "fh-201": {
-        "name": "Wave Blade",
-        "source": "Scenario 76\nScenario 77",
-        "desc": "Diromg your attack ability performed while occupying or ad adjacent to a hex with a water tile, add {PUSH.fh} 1 and {IMMOBILIZE.fh} to one attack."
+        "name": "Клинок волны",
+        "source": "Сценарий 76\nСценарий 77",
+        "desc": "Во время вашей способности атаки, выполняемой на клетке с водным жетоном или рядом с ней, добавьте {PUSH.fh} 1 и {IMMOBILIZE.fh} к одной атаке."
     },
     "fh-202": {
-        "name": "Giant Piranha Pig Spine",
-        "source": "Scenario 83",
-        "desc": "During your melee attack ability, add {PIERCE.fh} 2 and {WOUND.fh} to one attack."
+        "name": "Шип гигантской свиньи-пираньи",
+        "source": "Сценарий 83",
+        "desc": "Во время вашей способности ближней атаки добавьте {PIERCE.fh} 2 и {WOUND.fh} к одной атаке."
     },
     "fh-203": {
-        "name": "Scepter of Control",
-        "source": "Scenario 119",
-        "desc": "After your ability control one target: {MOVE.fh} 2"
+        "name": "Скипетр контроля",
+        "source": "Сценарий 119",
+        "desc": "После вашей способности возьмите под контроль 1 цель: {MOVE.fh} 2"
     },
     "fh-204": {
-        "name": "Severed Claw",
-        "source": "Treasure 5",
-        "desc": "During your turn, one adjacent normal or elite enemy suffers {DAMAGE.fh} to their {SHIELD.fh} value."
+        "name": "Отрубленная клешня",
+        "source": "Сокровище 5",
+        "desc": "В ваш ход один соседний обычный или элитный враг получает {DAMAGE.fh} по своему значению {SHIELD.fh}."
     },
     "fh-205": {
-        "name": "Harpoon",
-        "source": "Treasure 55",
-        "desc": "During your, perform {ATTACK.fh} 2 {RANGE.fh}, {PULL.fh} 2"
+        "name": "Гарпун",
+        "source": "Сокровище 55",
+        "desc": "В ваш ход выполните {ATTACK.fh} 2 {RANGE.fh}, {PULL.fh} 2"
     },
     "fh-206": {
-        "name": "Giant Sword",
-        "source": "Treasure 42\nSO-30",
-        "desc": "During your melee attack ability, if you have not move this round, add +2 {ATTACK.fh} to one attack, and you may perform no move abilites this turn."
+        "name": "Гигантский меч",
+        "source": "Сокровище 42\nSO-30",
+        "desc": "Во время вашей способности ближней атаки, если вы не передвигались в этом раунде, добавьте +2 {ATTACK.fh} к одной атаке, и в этот ход вы не можете выполнять способности движения."
     },
     "fh-207": {
-        "name": "Fishhook",
-        "source": "Treasure 13",
-        "desc": "After your attack, if the target's current hit point is 3 or less, give the target {BANE.fh}"
+        "name": "Рыболовный крючок",
+        "source": "Сокровище 13",
+        "desc": "После вашей атаки, если текущее число здоровья цели равно 3 или менее, наложите на цель {BANE.fh}"
     },
     "fh-208": {
-        "name": "Titan Nail",
-        "source": "Treasure 52",
-        "desc": "During your attack ability add {PIERCE.fh} 3 to one attack targeting an enemy whose current hit point value is 4 or less."
+        "name": "Титановый гвоздь",
+        "source": "Сокровище 52",
+        "desc": "Во время вашей способности атаки добавьте {PIERCE.fh} 3 к одной атаке, нацеленной на врага, текущее число здоровья которого равно 4 или менее."
     },
     "fh-209": {
-        "name": "Sword of Mastery",
+        "name": "Меч мастерства",
         "source": "SR-35",
-        "desc": "During your melee attack ability, give advantage on one atrack.  For each master you have completed also add one following to the attack: +1 {ATTACK.fh}, {WOUND.fh}, or {POISON.fh}. "
+        "desc": "Во время вашей способности ближней атаки получите преимущество при одной атаке. За каждое завершённое вами мастерство также добавьте к атаке одно из следующего: +1 {ATTACK.fh}, {WOUND.fh} или {POISON.fh}."
     },
     "fh-210": {
-        "name": "Tanjo",
+        "name": "Танжо",
         "source": "SO-39",
-        "desc": "During your turn, add +3 {ATTACK.fh} to all your attacks performed by Lurkers targeting you this round. {ROUND}"
+        "desc": "В ваш ход добавьте +3 {ATTACK.fh} ко всем атакам скрытней, нацеленным на вас в этом раунде. {ROUND}"
     },
     "fh-211": {
-        "name": "Boom Barrel",
+        "name": "Бочка-бомба",
         "source": "B-11",
-        "desc": "During your turn, designate one adjacent hex.  At the end of your turn, all figures withing {RANGE.fh} 2 of the designated hex suffer {DAMAGE.fh} 1."
+        "desc": "В ваш ход выберите 1 соседнюю клетку. В конце вашего хода все фигуры в пределах {RANGE.fh} 2 от выбранной клетки получают {DAMAGE.fh} 1."
     },
     "fh-212": {
-        "name": "Elemental Stone",
-        "source": "Scenario 66",
-        "desc": "After ordering of initiative, choose one element. This element cannot be infused or consume by any monster this round. {ROUND}"
+        "name": "Камень стихий",
+        "source": "Сценарий 66",
+        "desc": "После определения инициативы выберите 1 стихию. Эту стихию не могут наполнить или потребить никакие монстры в этом раунде. {ROUND}"
     },
     "fh-213": {
-        "name": "Key of Seasons",
-        "source": "Scenario 106",
-        "desc": "During your attack ability {ICE_X} to add {IMMOBILIZE.fh} to one attack, then flip this card over at the end of your turn.",
-        "backDesc": "During your attack ability {FIRE_X} to add {WOUND.fh} to one attack, then flip this card over at the end of your turn."
+        "name": "Ключ сезонов",
+        "source": "Сценарий 106",
+        "desc": "Во время вашей способности атаки {ICE_X}, чтобы добавить {IMMOBILIZE.fh} к одной атаке, затем переверните эту карту в конце вашего хода.",
+        "backDesc": "Во время вашей способности атаки {FIRE_X}, чтобы добавить {WOUND.fh} к одной атаке, затем переверните эту карту в конце вашего хода."
     },
     "fh-214": {
-        "name": "Cup of Ventillion",
-        "source": "Scenario 107",
-        "desc": "During your heal ability add one positive condition you have to one heal."
+        "name": "Кубок Вентиллиона",
+        "source": "Сценарий 107",
+        "desc": "Во время вашей способности лечения добавьте 1 положительное состояние, которое у вас есть, к одному лечению."
     },
     "fh-215": {
-        "name": "Befuddling Mug",
-        "source": "Scenario 128",
-        "desc": "During your, add +1 {ATTACK.fh} and {MUDDLE.fh} to all your attacks. At the end of your turn, perform: {MUDDLE.fh} self"
+        "name": "Дурманящая кружка",
+        "source": "Сценарий 128",
+        "desc": "В ваш ход добавьте +1 {ATTACK.fh} и {MUDDLE.fh} ко всем вашим атакам. В конце вашего хода выполните: {MUDDLE.fh} на себя"
     },
     "fh-216": {
-        "name": "Tome of Elements",
-        "source": "SR-48 or WR-46 Event Chain",
-        "desc": "During your turn, {FIRE} {ICE} {WIND} {EARTH} {LIGHT} {DARK} Elements do not move from strong to waning at the end of this round. {ROUND}"
+        "name": "Том стихий",
+        "source": "Цепочка событий SR-48 или WR-46",
+        "desc": "В ваш ход стихии {FIRE} {ICE} {WIND} {EARTH} {LIGHT} {DARK} не переходят из сильных в угасающие в конце этого раунда. {ROUND}"
     },
     "fh-217": {
-        "name": "Tome of Time",
-        "source": "SR-49 or WR-47 Event Chain",
-        "desc": "During ordering of initiative after all ability card have been revealed, shuffle all monster ability decks and draw a new card for each active monster set."
+        "name": "Том времени",
+        "source": "Цепочка событий SR-49 или WR-47",
+        "desc": "При определении инициативы, после того как все карты способностей открыты, перемешайте все колоды способностей монстров и вытяните новую карту для каждого активного набора монстров."
     },
     "fh-218": {
-        "name": "Tome of Life",
-        "source": "SR-47 or WR-45 Event Chain",
-        "desc": "During your turn, remove all conditions from all figures then grant all figures: {HEAL.fh} 2 self"
+        "name": "Том жизни",
+        "source": "Цепочка событий SR-47 или WR-45",
+        "desc": "В ваш ход снимите все состояния со всех фигур, затем предоставьте всем фигурам: {HEAL.fh} 2 на себя"
     },
     "fh-219": {
-        "name": "Tome of Conflict",
-        "source": "Scenario 134\n",
-        "desc": "During your turn all figures gain {STRENGTHEN.fh}. Until any monster is killed, the first attack modifier card drawn for every attack is treated as rolling. {PERSISTENT}"
+        "name": "Том конфликта",
+        "source": "Сценарий 134\n",
+        "desc": "В ваш ход все фигуры получают {STRENGTHEN.fh}. Пока не убит любой монстр, первая вытянутая карта модификатора атаки для каждой атаки считается накопительной. {PERSISTENT}"
     },
     "fh-220": {
-        "name": "Belaras Quill",
-        "source": "Scenario 135",
-        "desc": "During your turn, {RECOVER.fh} up to one Tome item."
+        "name": "Перо Белары",
+        "source": "Сценарий 135",
+        "desc": "В ваш ход {RECOVER.fh} до 1 предмета-тома."
     },
     "fh-221": {
-        "name": "Ice Shiv",
-        "source": "Treasure 84",
-        "desc": "During your melee attack ability, {ICE_X} to add {PIERCE.fh} 3 to one attack."
+        "name": "Ледяной стилет",
+        "source": "Сокровище 84",
+        "desc": "Во время вашей способности ближней атаки {ICE_X}, чтобы добавить {PIERCE.fh} 3 к одной атаке."
     },
     "fh-222": {
-        "name": "Black Box",
-        "source": "Treasure 36",
-        "desc": "During yor turn, discard two cards from your hand to perform: {HEAL.fh} 6 self"
+        "name": "Чёрный ящик",
+        "source": "Сокровище 36",
+        "desc": "В ваш ход сбросьте 2 карты из руки, чтобы выполнить: {HEAL.fh} 6 на себя"
     },
     "fh-223": {
-        "name": "Lightning Rod",
-        "source": "Treasure 26",
-        "desc": "After ordering of initiative, all monsters consider you to be first in initiative order when determining focus this round. {ROUND}"
+        "name": "Громоотвод",
+        "source": "Сокровище 26",
+        "desc": "После определения инициативы все монстры считают вас первым в порядке инициативы при определении цели в этом раунде. {ROUND}"
     },
     "fh-224": {
-        "name": "Armor of Empathy",
-        "source": "Scenario 60",
-        "desc": "After the next three attacks targeting you, flip this card over.",
-        "backDesc": "During your turn, perform {HEAL.fh} 3 {TARGET.fh} 1 ally, {RANGE.fh} 3, {BLESS.fh} then flip this card over."
+        "name": "Доспех эмпатии",
+        "source": "Сценарий 60",
+        "desc": "После следующих трёх атак, нацеленных на вас, переверните эту карту.",
+        "backDesc": "В ваш ход выполните {HEAL.fh} 3 {TARGET.fh} 1 союзник, {RANGE.fh} 3, {BLESS.fh}, затем переверните эту карту."
     },
     "fh-225": {
-        "name": "Algox Carving",
-        "source": "Treasure 41",
-        "desc": "During your melee attack ability, {EARTH_X} to add +1 {ATTACK.fh} to one attack and flip this card over.",
-        "backDesc": "During your melee attack ability, {WIND_X} to add {PUSH.fh} 2 to one attack and flip this card over."
+        "name": "Резьба алгоксов",
+        "source": "Сокровище 41",
+        "desc": "Во время вашей способности ближней атаки {EARTH_X}, чтобы добавить +1 {ATTACK.fh} к одной атаке и переверните эту карту.",
+        "backDesc": "Во время вашей способности ближней атаки {WIND_X}, чтобы добавить {PUSH.fh} 2 к одной атаке и переверните эту карту."
     },
     "fh-226": {
-        "name": "Unfettered Arm",
-        "source": "Treasure 81\nWR-22",
-        "desc": "During your attack ability, double the numerical value of the next attack modifier card you draw. {2X_MODIFIER} and {NULL_MODIFIER} modifier cards are unaffected."
+        "name": "Свободная рука",
+        "source": "Сокровище 81\nWR-22",
+        "desc": "Во время вашей способности атаки удвойте числовое значение следующей вытянутой вами карты модификатора атаки. Карты модификаторов {2X_MODIFIER} и {NULL_MODIFIER} не затрагиваются."
     },
     "fh-227": {
-        "name": "Data Drive",
-        "source": "Treasure 7",
-        "desc": "When you short rest, place half (rounded down) of your discard pile on this item, lose of the remaining cards randomly as normal, then draw the cards on this item."
+        "name": "Накопитель данных",
+        "source": "Сокровище 7",
+        "desc": "Когда вы совершаете короткий отдых, положите половину (с округлением вниз) вашего сброса на этот предмет, потеряйте одну из оставшихся карт случайным образом, как обычно, затем возьмите карты с этого предмета."
     },
     "fh-228": {
-        "name": "Extendable Pole",
-        "source": "Treasure 35",
-        "desc": "During your turn, open one unlocked door while withing {RANGE.fh} 2."
+        "name": "Выдвижной шест",
+        "source": "Сокровище 35",
+        "desc": "В ваш ход откройте 1 незапертую дверь, находясь в пределах {RANGE.fh} 2."
     },
     "fh-229": {
-        "name": "Exquisite Map",
+        "name": "Изысканная карта",
         "source": "SO-42",
-        "desc": "During your turn grant one ally withing {RANGE.fh} 3: {MOVE.fh} 3"
+        "desc": "В ваш ход предоставьте 1 союзнику в пределах {RANGE.fh} 3: {MOVE.fh} 3"
     },
     "fh-230": {
-        "name": "Examination Glass",
+        "name": "Исследовательское стекло",
         "source": "SR-26",
-        "desc": "After you draw one loot card, draw one additional card, keep one, and place the other on either the top or bottom of the loot deck."
+        "desc": "После того как вы вытянули 1 карту добычи, вытяните ещё 1 карту, оставьте одну, а другую положите на верх или под низ колоды добычи."
     },
     "fh-231": {
-        "name": "Skinning Knife",
+        "name": "Нож для свежевания",
         "source": "WR-16",
-        "desc": "When you gain a loot token, gain 3 `hide` instead of drawning a loot card."
+        "desc": "Когда вы получаете жетон добычи, получите 3 `шкуры` вместо вытягивания карты добычи."
     },
     "fh-232": {
-        "name": "Orchid Wand",
+        "name": "Орхидейная палочка",
         "source": "WR-12",
-        "desc": "During your turn lose 1 morale to perform: {BLESS.fh} {TARGET.fh} all allies and self"
+        "desc": "В ваш ход потеряйте 1 боевой дух, чтобы выполнить: {BLESS.fh} {TARGET.fh} все союзники и вы"
     },
     "fh-233": {
-        "name": "Dead Raven",
-        "source": "Scenario 13",
-        "desc": "During you ally's ranged attack ability, add {MUDDLE.fh} and {CURSE.fh} to one attack."
+        "name": "Мёртвый ворон",
+        "source": "Сценарий 13",
+        "desc": "Во время способности дальней атаки вашего союзника добавьте {MUDDLE.fh} и {CURSE.fh} к одной атаке."
     },
     "fh-234": {
-        "name": "ooze vial",
-        "source": "Scenario 84",
-        "desc": "During your turn, create one {POISON.fh}, {IMMOBILIZE.fh} trap in an empty hex within {RANGE.fh} 2."
+        "name": "Флакон со слизью",
+        "source": "Сценарий 84",
+        "desc": "В ваш ход создайте 1 ловушку {POISON.fh}, {IMMOBILIZE.fh} на свободной клетке в пределах {RANGE.fh} 2."
     },
     "fh-235": {
-        "name": "Small Rat",
-        "source": "Scenario 93",
-        "desc": "During your turn, loot one loot token within {RANGE.fh} 2."
+        "name": "Маленькая крыса",
+        "source": "Сценарий 93",
+        "desc": "В ваш ход подберите 1 жетон добычи в пределах {RANGE.fh} 2."
     },
     "fh-236": {
-        "name": "Cracked Mirror",
-        "source": "Scenario 111",
-        "desc": "During your turn, lose one card from your hand to {RECOVER.fh} one card from your loot pile of equal of lower level."
+        "name": "Треснувшее зеркало",
+        "source": "Сценарий 111",
+        "desc": "В ваш ход потеряйте 1 карту из руки, чтобы {RECOVER.fh} 1 карту из вашей стопки добычи того же или более низкого уровня."
     },
     "fh-237": {
-        "name": "Mesmerizing Seashell",
-        "source": "Scenario 131",
-        "desc": "During your turn, choose one of six directions. You and all figures withing {RANGE.fh} 2 are forced to simultaneously move 2 hexes in the chosen directon."
+        "name": "Завораживающая ракушка",
+        "source": "Сценарий 131",
+        "desc": "В ваш ход выберите 1 из 6 направлений. Вы и все фигуры в пределах {RANGE.fh} 2 принудительно одновременно передвигаетесь на 2 клетки в выбранном направлении."
     },
     "fh-238": {
-        "name": "Cracked Idol",
-        "source": "Scenario 133",
-        "desc": "When you would become exhausted from suffering {DAMAGE.fh}, set your hit point value to 1 instead."
+        "name": "Треснувший идол",
+        "source": "Сценарий 133",
+        "desc": "Когда вы должны стать истощённым из-за получения {DAMAGE.fh}, вместо этого установите ваше число здоровья равным 1."
     },
     "fh-239": {
-        "name": "Eye of the Storm",
-        "source": "Treasure 53",
-        "desc": "During your turn, all allies and enemies within {RANGE.fh} 2 suffer {DAMAGE.fh} 1."
+        "name": "Глаз бури",
+        "source": "Сокровище 53",
+        "desc": "В ваш ход все союзники и враги в пределах {RANGE.fh} 2 получают {DAMAGE.fh} 1."
     },
     "fh-240": {
-        "name": "Demons Gem",
-        "source": "SO-53 event chain",
-        "desc": "When you fail a scenario, still earn all {CHECK} from your battle goal if it was completed."
+        "name": "Самоцвет демонов",
+        "source": "Цепочка событий SO-53",
+        "desc": "Когда вы проваливаете сценарий, всё равно получите все {CHECK} за вашу цель битвы, если она была выполнена."
     },
     "fh-241": {
-        "name": "Shimmering Powder",
+        "name": "Мерцающий порошок",
         "source": "SR-26",
-        "desc": "After you draw one loot card, draw one additional loot card."
+        "desc": "После того как вы вытянули 1 карту добычи, вытяните ещё 1 карту добычи."
     },
     "fh-242": {
-        "name": "Lucky Dice",
+        "name": "Счастливые кости",
         "source": "SO-4",
-        "desc": "During your attack ability, treat the next three attack modifier cards you draw as rolling"
+        "desc": "Во время вашей способности атаки считайте следующие 3 вытянутые вами карты модификаторов атаки накопительными"
     },
     "fh-243": {
-        "name": "Cursed Rock",
+        "name": "Проклятый камень",
         "source": "WR-3",
-        "desc": "This item cannot be sold and must be brought into and used every scenario. At the start of the scenario perform: {CURSE.fh}, {BLESS.fh} self"
+        "desc": "Этот предмет нельзя продать, его необходимо брать в каждый сценарий и использовать. В начале сценария выполните: {CURSE.fh}, {BLESS.fh} на себя"
     },
     "fh-244": {
-        "name": "Ember Energy Source",
-        "source": "Scenario 33",
-        "desc": "During your turn, increase the printed {ATTACK.fh}, {MOVE.fh}, {TARGET.fh}, or {RANGE.fh} numerical value on one of your abilities by 1."
+        "name": "Источник энергии «Уголёк»",
+        "source": "Сценарий 33",
+        "desc": "В ваш ход увеличьте напечатанное числовое значение {ATTACK.fh}, {MOVE.fh}, {TARGET.fh} или {RANGE.fh} одной из ваших способностей на 1."
     },
     "fh-245": {
-        "name": "Ancient Coin",
-        "source": "Scenario 136\nBuilding 74\nLoot Cards",
+        "name": "Древняя монета",
+        "source": "Сценарий 136\nЗдание 74\nКарты добычи",
         "desc": ""
     },
     "fh-246": {
-        "name": "Key Card",
-        "source": "Scenario 58\nScenario 59",
+        "name": "Карта-ключ",
+        "source": "Сценарий 58\nСценарий 59",
         "desc": ""
     },
     "fh-247": {
-        "name": "Trainer's Net",
-        "source": "Stables",
-        "desc": "During your turn, capture an adjacent enemy whose hit point value is 1 or 2."
+        "name": "Сеть дрессировщика",
+        "source": "Конюшни",
+        "desc": "В ваш ход поймайте соседнего врага, число здоровья которого равно 1 или 2."
     },
     "fh-248": {
-        "name": "Wanderer's Club",
-        "source": "Reward from Solo Scenario - {DF}",
-        "desc": "Duing your attack ability, move one character token on one of your peristent abilities backward one slot and add +X {ATTACK.fh} to one attack, where X is the nuber of active peristent abilities."
+        "name": "Дубина странника",
+        "source": "Награда за соло-сценарий — {DF}",
+        "desc": "Во время вашей способности атаки передвиньте 1 жетон персонажа на одной из ваших постоянных способностей на 1 ячейку назад и добавьте +X {ATTACK.fh} к одной атаке, где X — число активных постоянных способностей."
     },
     "fh-249": {
-        "name": "Recalibration Trigger",
-        "source": "Reward from Solo Scenario - {BB}",
-        "desc": "During our turn, perform one of the two following abilities: Lose one card from your hand to gain 3 {TIME_ICON}. -2 {TIME_ICON} : {RECOVER.fh} up to two of your discarded cards"
+        "name": "Спусковой механизм перекалибровки",
+        "source": "Награда за соло-сценарий — {BB}",
+        "desc": "В ваш ход выполните одну из двух следующих способностей: потеряйте 1 карту из руки, чтобы получить 3 {TIME_ICON}. -2 {TIME_ICON}: {RECOVER.fh} до 2 ваших сброшенных карт"
     },
     "fh-250": {
-        "name": "Spear of Justice",
-        "source": "Reward from Solo Scenario - {BN}",
-        "desc": "During your turn perform: {ATTACK.fh} 2 {RANGE.fh} 3. All your banners are treated as additionally occupying the hex of the attack target of their bonuses and that hex is treated as occupied by an ally this round. {ROUND}"
+        "name": "Копьё правосудия",
+        "source": "Награда за соло-сценарий — {BN}",
+        "desc": "В ваш ход выполните: {ATTACK.fh} 2 {RANGE.fh} 3. Все ваши знамёна считаются дополнительно занимающими клетку цели атаки для своих бонусов, и эта клетка считается занятой союзником в этом раунде. {ROUND}"
     },
     "fh-251": {
-        "name": "Soul Urn",
-        "source": "Reward from Solo Scenario - {DW}",
-        "desc": "Place one {SHADOW_ICON} in an adjacent hex. {DARK}"
+        "name": "Урна душ",
+        "source": "Награда за соло-сценарий — {DW}",
+        "desc": "Поместите 1 {SHADOW_ICON} на соседнюю клетку. {DARK}"
     },
     "fh-252": {
-        "name": "Black Earth Codex",
-        "source": "Reward from Solo Scenario - {BO}",
-        "desc": "On the next three deaths of any of your summons, {EARTH_OR_DARK} and perform: {HEAL.fh} 2 self"
+        "name": "Кодекс чёрной земли",
+        "source": "Награда за соло-сценарий — {BO}",
+        "desc": "При следующих трёх смертях любых ваших призванных {EARTH_OR_DARK} и выполните: {HEAL.fh} 2 на себя"
     },
     "fh-253": {
-        "name": "Mask of Duality",
-        "source": "Reward from Solo Scenario - {GE}",
-        "desc": "During your ranged attack ability while in {RANGED_ICON}, gain advantage for one attack, then flip this card over.",
-        "backDesc": "When an enemy performs an attack targeting you while you are in {MELEE_ICON}, the attacker gains disadvantage, then flip this card over."
+        "name": "Маска двойственности",
+        "source": "Награда за соло-сценарий — {GE}",
+        "desc": "Во время вашей способности дальней атаки, пока вы в {RANGED_ICON}, получите преимущество при одной атаке, затем переверните эту карту.",
+        "backDesc": "Когда враг проводит атаку, нацеленную на вас, пока вы в {MELEE_ICON}, атакующий получает затруднение, затем переверните эту карту."
     },
     "fh-254": {
-        "name": "Ancestral Blade",
-        "source": "Reward from Solo Scenario - {IF}",
-        "desc": "During your turn, activate all your {INFUSION_ICON} as if you just performed a {INFUSION_ICON} action."
+        "name": "Клинок предков",
+        "source": "Награда за соло-сценарий — {IF}",
+        "desc": "В ваш ход активируйте все ваши {INFUSION_ICON}, как если бы вы только что выполнили действие {INFUSION_ICON}."
     },
     "fh-255": {
-        "name": "Mountain's Heart",
-        "source": "Reward from Solo Scenario - {PY}",
-        "desc": "During your turn, you may create either one 1-hex obstacle or hazardous terrain tile in an empty tile within {RANGE.fh} 2. {FIRE_OR_EARTH}"
+        "name": "Сердце гор",
+        "source": "Награда за соло-сценарий — {PY}",
+        "desc": "В ваш ход вы можете создать 1 жетон препятствия или опасной местности на 1 клетку на свободной клетке в пределах {RANGE.fh} 2. {FIRE_OR_EARTH}"
     },
     "fh-256": {
-        "name": "Sonorous Shard",
-        "source": "Reward from Solo Scenario - {SH}",
-        "desc": "Gain 3 {RESONANCE_ICON}. {WIND_OR_EARTH}"
+        "name": "Звучащий осколок",
+        "source": "Награда за соло-сценарий — {SH}",
+        "desc": "Получите 3 {RESONANCE_ICON}. {WIND_OR_EARTH}"
     },
     "fh-257": {
-        "name": "Sly Camouflage",
-        "source": "Reward from Solo Scenario - {TA}",
-        "desc": "When you create a trap, place a character token on it.  Monsters do not treat the trap as negative. Remvoe the token when you {RECOVER.fh} this item. {PERSISTENT}"
+        "name": "Хитрый камуфляж",
+        "source": "Награда за соло-сценарий — {TA}",
+        "desc": "Когда вы создаёте ловушку, положите на неё жетон персонажа. Монстры не считают эту ловушку отрицательной. Уберите жетон, когда вы {RECOVER.fh} этот предмет. {PERSISTENT}"
     },
     "fh-258": {
-        "name": "Skull of Agony",
-        "source": "Reward from Solo Scenario - {PC}",
-        "desc": "When you suffer damage, if your hit point value is reduced to below half your maximum, perform: {HEAL.fh} 7 self, {CURSE.fh} This heal is not affect by and cannot remove negative conditions."
+        "name": "Череп агонии",
+        "source": "Награда за соло-сценарий — {PC}",
+        "desc": "Когда вы получаете урон, если ваше число здоровья уменьшается ниже половины максимума, выполните: {HEAL.fh} 7 на себя, {CURSE.fh} Это лечение не затрагивается отрицательными состояниями и не может их снять."
     },
     "fh-259": {
-        "name": "Storm Carving",
-        "source": "Reward from Solo Scenario - {SD}",
-        "desc": "During an attack ability you grant an ally, add {PUSH.fh} 2 to one of their attacks, then flip this card over.",
-        "backDesc": "During your attack ability you, add {PULL.fh} 2 to one attack, then flip this card over."
+        "name": "Грозовая резьба",
+        "source": "Награда за соло-сценарий — {SD}",
+        "desc": "Во время способности атаки, которую вы предоставляете союзнику, добавьте {PUSH.fh} 2 к одной из его атак, затем переверните эту карту.",
+        "backDesc": "Во время вашей способности атаки добавьте {PULL.fh} 2 к одной атаке, затем переверните эту карту."
     },
     "fh-260": {
-        "name": "Freezing Orb",
-        "source": "Reward from Solo Scenario - {FF}",
-        "desc": "During your attack ability, add {BRITTLE.fh} to one attack and create one 1-hex icy terrain tile in the featureless hex occupied by the target."
+        "name": "Замораживающая сфера",
+        "source": "Награда за соло-сценарий — {FF}",
+        "desc": "Во время вашей способности атаки добавьте {BRITTLE.fh} к одной атаке и создайте 1 жетон ледяной местности на 1 клетку на пустой клетке, занятой целью."
     },
     "fh-261": {
-        "name": "Energized Module",
-        "source": "Reward from Solo Scenario - {HV}",
-        "desc": "Remove all damage and negative conditions from one of your summons, then {TRANSFER_ICON} to that summon."
+        "name": "Заряженный модуль",
+        "source": "Награда за соло-сценарий — {HV}",
+        "desc": "Снимите весь урон и все отрицательные состояния с 1 из ваших призванных, затем {TRANSFER_ICON} в этого призванного."
     },
     "fh-262": {
-        "name": "Exhaust Boots",
-        "source": "Reward from Solo Scenario - {ME}",
-        "desc": "During your move ability, when you have {PRESSURE_HIGH_ICON} or {PRESSURE_OVER_ICON}, add +1 {MOVE.fh}, then flip this card over at the end of your turn.",
-        "backDesc": "During your turn when you have {PRESSURE_LOW_ICON}, perform: {MUDDLE.fh} {RANGE.fh} 1 then flip this card over at the end of your turn."
+        "name": "Выхлопные сапоги",
+        "source": "Награда за соло-сценарий — {ME}",
+        "desc": "Во время вашей способности движения, когда у вас {PRESSURE_HIGH_ICON} или {PRESSURE_OVER_ICON}, добавьте +1 {MOVE.fh}, затем переверните эту карту в конце вашего хода.",
+        "backDesc": "В ваш ход, когда у вас {PRESSURE_LOW_ICON}, выполните: {MUDDLE.fh} {RANGE.fh} 1, затем переверните эту карту в конце вашего хода."
     },
     "fh-263": {
-        "name": "Warlords Skull",
-        "source": "Reward from Solo Scenario - {DT}",
-        "desc": "Whenever you gain {INVISIBLE.fh} or peform a teleport ability while you have {INVISIBLE.fh}, after the ability perform: {MUDDLE.fh} {RANGE.fh} 1"
+        "name": "Череп военачальника",
+        "source": "Награда за соло-сценарий — {DT}",
+        "desc": "Каждый раз, когда вы получаете {INVISIBLE.fh} или выполняете способность телепортации, имея {INVISIBLE.fh}, после способности выполните: {MUDDLE.fh} {RANGE.fh} 1"
     },
     "fh-264": {
-        "name": "Spiraled Medallion",
-        "source": "Reward from Solo Scenario - {CR}",
-        "desc": "When you rest, you may keep up to three {TIDE_ICON} cards in your active area. {LIGHT_OR_DARK}"
+        "name": "Спиральный медальон",
+        "source": "Награда за соло-сценарий — {CR}",
+        "desc": "Когда вы отдыхаете, вы можете оставить до 3 карт {TIDE_ICON} в вашей активной зоне. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
-        "name": "Ribbon of Friendship",
-        "source": "Reward from Solo Scenario - {AN}",
-        "desc": "Immediately after you perform an Augment ability, perform: {POISON.fh} {RANGE.fh} 2. You may perform this ability as if you occupied the same hex as one of your summons."
+        "name": "Лента дружбы",
+        "source": "Награда за соло-сценарий — {AN}",
+        "desc": "Сразу после того, как вы выполните способность усиления, выполните: {POISON.fh} {RANGE.fh} 2. Вы можете выполнить эту способность так, как если бы вы находились на одной клетке с одним из ваших призванных."
     },
     "mp-SA": {
-        "name": "Crest of Frosthaven",
-        "source": "Reward from Solo Scenario - {SA}",
-        "desc": "Whenever you long rest, Ice and flip this card over.",
-        "backDesc": "Whenever an ally rests, you may flip this card over to grant them: {HEAL.fh} 2, Self"
+        "name": "Герб Фростхейвена",
+        "source": "Награда за соло-сценарий — {SA}",
+        "desc": "Каждый раз, когда вы совершаете долгий отдых, наполните Лёд и переверните эту карту.",
+        "backDesc": "Каждый раз, когда союзник отдыхает, вы можете перевернуть эту карту, чтобы предоставить ему: {HEAL.fh} 2 (на себя)"
     },
     "mp-CA A": {
-        "name": "Basin of Prophecy A",
-        "source": "Reward from Solo Scenario - {CA}",
-        "desc": "Add +1 Divination to all Divination."
+        "name": "Чаша пророчества A",
+        "source": "Награда за соло-сценарий — {CA}",
+        "desc": "Добавьте +1 Предсказание ко всем Предсказаниям."
     },
     "mp-CA B": {
-        "name": "Basin of Prophecy B",
-        "source": "Reward from Solo Scenario - {CA}",
-        "desc": "During your turn, perform: {ATTACK.fh} 1, {TARGET.fh} 1 enemy occupying a hex containing a {RIFT}, {PIERCE.fh} 2, {DIVINATION} 3"
+        "name": "Чаша пророчества B",
+        "source": "Награда за соло-сценарий — {CA}",
+        "desc": "В ваш ход выполните: {ATTACK.fh} 1, {TARGET.fh} 1 враг на клетке, содержащей {RIFT}, {PIERCE.fh} 2, {DIVINATION} 3"
     },
     "mp-HA": {
-        "name": "No Nonsense Boots",
-        "source": "Reward from Solo Scenario - {HA}",
-        "desc": "At the end of your turn, if you have spent 3 or more Resolve this turn, flip this card over.",
-        "backDesc": "During your turn, if you have an active Irritation, you may move that card to your pool to play a different card from your pool and perform its Irritation action, then flip this card over."
+        "name": "Сапоги «Без глупостей»",
+        "source": "Награда за соло-сценарий — {HA}",
+        "desc": "В конце вашего хода, если за этот ход вы потратили 3 или более Решимости, переверните эту карту.",
+        "backDesc": "В ваш ход, если у вас есть активное Раздражение, вы можете переместить эту карту в свой запас, чтобы сыграть другую карту из запаса и выполнить её действие Раздражения, а затем переверните эту карту."
     },
     "gh2-1": {
-        "name": "Weathered Boots",
-        "source": "Prosperity 1",
-        "desc": "During your move ability, add +1 {MOVE.fh}."
+        "name": "Ношеные сапоги",
+        "source": "Процветание 1",
+        "desc": "Во время вашей способности движения добавьте +1 {MOVE.fh}."
     },
     "gh2-2": {
         "name": "Крылатые ботинки",
-        "source": "Prosperity 1",
-        "desc": "During your turn, add {JUMP.fh} to all your move abilities."
+        "source": "Процветание 1",
+        "desc": "В ваш ход добавьте {JUMP.fh} ко всем вашим способностям движения."
     },
     "gh2-3": {
         "name": "Броня из шкур",
-        "source": "Prosperity 1",
-        "desc": "On the next two sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
+        "source": "Процветание 1",
+        "desc": "При следующих двух источниках {DAMAGE.fh} от атак, нацеленных на вас, получайте {SHIELD.fh} 1 для этих атак."
     },
     "gh2-4": {
         "name": "Кожаная броня",
-        "source": "Prosperity 1",
-        "desc": "When you are attacked, before drawing an attack modifier card, the attacker gains disadvantage on the attack."
+        "source": "Процветание 1",
+        "desc": "Когда вас атакуют, перед тем как тянуть карту модификатора атаки, атакующий проводит атаку с затруднением."
     },
     "gh2-5": {
-        "name": "Scouting Lens",
-        "source": "Prosperity 1",
-        "desc": "During your attack ability, add {PIERCE.fh} 1 to one attack."
+        "name": "Разведывательная линза",
+        "source": "Процветание 1",
+        "desc": "Во время вашей способности атаки добавьте {PIERCE.fh} 1 к одной атаке."
     },
     "gh2-6": {
         "name": "Амулет жизни",
-        "source": "Prosperity 1",
-        "desc": "During your turn, perform: {HEAL.fh} 1, Self"
+        "source": "Процветание 1",
+        "desc": "В ваш ход выполните: {HEAL.fh} 1 (на себя)"
     },
     "gh2-7": {
         "name": "Отравленный кинжал",
-        "source": "Prosperity 1",
-        "desc": "During your melee attack ability, add {POISON.fh} to one attack."
+        "source": "Процветание 1",
+        "desc": "Во время вашей способности ближней атаки добавьте {POISON.fh} к одной атаке."
     },
     "gh2-8": {
         "name": "Треугольный щит",
-        "source": "Prosperity 1",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack."
+        "source": "Процветание 1",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 1 для этой атаки."
     },
     "gh2-9": {
-        "name": "Focusing Rod",
-        "source": "Prosperity 1",
-        "desc": "During your turn, if you've performed an action with {LOST.fh}, perform: {HEAL.fh} 1, {RANGE.fh} 3"
+        "name": "Фокусирующий жезл",
+        "source": "Процветание 1",
+        "desc": "В ваш ход, если вы выполнили действие с {LOST.fh}, выполните: {HEAL.fh} 1, {RANGE.fh} 3"
     },
     "gh2-10": {
-        "name": "Simple Bow",
-        "source": "Prosperity 1",
-        "desc": "During your ranged attack ability, gain advantage on one attack."
+        "name": "Простой лук",
+        "source": "Процветание 1",
+        "desc": "Во время вашей способности дальней атаки получите преимущество при одной атаке."
     },
     "gh2-11": {
-        "name": "Healing Potion",
-        "source": "Prosperity 1",
-        "desc": "During your turn, perform: {HEAL.fh} 3, Self"
+        "name": "Лечебное зелье",
+        "source": "Процветание 1",
+        "desc": "В ваш ход выполните: {HEAL.fh} 3 (на себя)"
     },
     "gh2-12": {
-        "name": "Stamina Potion",
-        "source": "Prosperity 1\nCity Event 84",
-        "desc": "During your turn, {RECOVER.fh} one level 1 card from your discard pile.",
-        "faq": "X cards count as level 1 cards, so they can be recovered too."
+        "name": "Зелье выносливости",
+        "source": "Процветание 1\nГородское событие 84",
+        "desc": "В ваш ход {RECOVER.fh} 1 карту 1-го уровня из вашего сброса.",
+        "faq": "Карты X считаются картами 1-го уровня, поэтому их тоже можно восстановить."
     },
     "gh2-13": {
-        "name": "Element Potion",
-        "source": "Prosperity 1",
-        "desc": "During your turn, {ANY}."
+        "name": "Зелье стихий",
+        "source": "Процветание 1",
+        "desc": "В ваш ход {ANY}."
     },
     "gh2-14": {
         "name": "Клёпанная броня",
-        "source": "Prosperity 1",
-        "desc": "When you are attacked, before drawing an attack modifier card, the attacker gains disadvantage on the attack and you gain {SHIELD.fh} 1 for the attack."
+        "source": "Процветание 1",
+        "desc": "Когда вас атакуют, перед тем как тянуть карту модификатора атаки, атакующий проводит атаку с затруднением, а вы получаете {SHIELD.fh} 1 для этой атаки."
     },
     "gh2-15": {
         "name": "Удобные башмаки",
-        "source": "Prosperity 1",
-        "desc": "When you use the basic bottom action of an ability card, perform {MOVE.fh} 3 instead of {MOVE.fh} 2."
+        "source": "Процветание 1",
+        "desc": "Когда вы используете стандартное нижнее действие карты способности, выполните {MOVE.fh} 3 вместо {MOVE.fh} 2."
     },
     "gh2-16": {
         "name": "Браслет стихий",
-        "source": "Prosperity 1",
-        "desc": "During your turn, perform: {ANY_X}: {ANY}"
+        "source": "Процветание 1",
+        "desc": "В ваш ход выполните: {ANY_X}: {ANY}"
     },
     "gh2-17": {
         "name": "Сапоги скорости",
-        "source": "Prosperity 2",
-        "desc": "During ordering of initiative, after all ability cards have been revealed, increase or decrease your initiative by 10."
+        "source": "Процветание 2",
+        "desc": "При определении инициативы, после того как все карты способностей открыты, увеличьте или уменьшите вашу инициативу на 10."
     },
     "gh2-18": {
         "name": "Тяжёлый шлем",
-        "source": "Prosperity 2\nRoad Event 61",
-        "desc": "Whenever an enemy would give you {DISARM.fh}, {STUN.fh} or {MUDDLE.fh}, prevent the condition.",
-        "faq": "Only prevents conditions applied by enemies, not self-inflicted ones."
+        "source": "Процветание 2\nДорожное событие 61",
+        "desc": "Каждый раз, когда враг должен наложить на вас {DISARM.fh}, {STUN.fh} или {MUDDLE.fh}, предотвратите это состояние.",
+        "faq": "Предотвращает только состояния, наложенные врагами, но не наложенные вами на себя."
     },
     "gh2-19": {
-        "name": "Warden's Robes",
-        "source": "Prosperity 2",
-        "desc": "When one of your summons suffers {DAMAGE.fh} from an attack, that summon gains {SHIELD.fh} 2 for the attack."
+        "name": "Мантия надзирателя",
+        "source": "Процветание 2",
+        "desc": "Когда один из ваших призванных получает {DAMAGE.fh} от атаки, этот призванный получает {SHIELD.fh} 2 для этой атаки."
     },
     "gh2-20": {
         "name": "Цепь с крюком",
-        "source": "Prosperity 2",
-        "desc": "During your turn, add {PULL.fh} 2 to all your ranged attacks."
+        "source": "Процветание 2",
+        "desc": "В ваш ход добавьте {PULL.fh} 2 ко всем вашим дальним атакам."
     },
     "gh2-21": {
-        "name": "Power Potion",
-        "source": "Prosperity 2",
-        "desc": "During your turn, add +1 {ATTACK.fh} to all your attacks."
+        "name": "Зелье силы",
+        "source": "Процветание 2",
+        "desc": "В ваш ход добавьте +1 {ATTACK.fh} ко всем вашим атакам."
     },
     "gh2-22": {
-        "name": "Iron Spear",
-        "source": "Prosperity 2",
-        "desc": "During your turn, one of your single-target melee attack abilities may target an enemy two hexes away."
+        "name": "Железное копьё",
+        "source": "Процветание 2",
+        "desc": "В ваш ход одна из ваших способностей одиночной ближней атаки может быть нацелена на врага на расстоянии 2 клеток."
     },
     "gh2-23": {
         "name": "Зазубренный меч",
-        "source": "Prosperity 2",
-        "desc": "During your melee attack ability, add {WOUND.fh} to one attack."
+        "source": "Процветание 2",
+        "desc": "Во время вашей способности ближней атаки добавьте {WOUND.fh} к одной атаке."
     },
     "gh2-24": {
         "name": "Чёрный нож",
-        "source": "Prosperity 2",
-        "desc": "During your melee attack ability, add {CURSE.fh} to one attack."
+        "source": "Процветание 2",
+        "desc": "Во время вашей способности ближней атаки добавьте {CURSE.fh} к одной атаке."
     },
     "gh2-25": {
         "name": "Утяжелённая сеть",
-        "source": "Prosperity 3",
-        "desc": "During your ranged attack ability, add {IMMOBILIZE.fh} to one attack."
+        "source": "Процветание 3",
+        "desc": "Во время вашей способности дальней атаки добавьте {IMMOBILIZE.fh} к одной атаке."
     },
     "gh2-26": {
         "name": "Очки орлиного взора",
-        "source": "Prosperity 3",
-        "desc": "During your attack ability, gain advantage on all attacks."
+        "source": "Процветание 3",
+        "desc": "Во время вашей способности атаки получите преимущество при всех атаках."
     },
     "gh2-27": {
         "name": "Железный шлем",
-        "source": "Prosperity 3",
-        "desc": "When you are attacked, treat any {2X_MODIFIER} attack modifier card the enemy draws as a {+0_MODIFIER} instead."
+        "source": "Процветание 3",
+        "desc": "Когда вас атакуют, считайте любую вытянутую врагом карту модификатора атаки {2X_MODIFIER} картой {+0_MODIFIER}."
     },
     "gh2-28": {
         "name": "Кольчуга",
-        "source": "Prosperity 3",
-        "desc": "On the next three sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
+        "source": "Процветание 3",
+        "desc": "При следующих трёх источниках {DAMAGE.fh} от атак, нацеленных на вас, получайте {SHIELD.fh} 1 для этих атак."
     },
     "gh2-29": {
-        "name": "Nimble Legguards",
-        "source": "Prosperity 3",
-        "desc": "When an adjacent ally would be targeted by an attack, you are targeted instead, regardless of range and line-of-sight.",
-        "faq": "If you are invisible and cannot be targeted, you cannot redirect the attack to yourself."
+        "name": "Проворные наколенники",
+        "source": "Процветание 3",
+        "desc": "Когда соседний союзник должен стать целью атаки, целью становитесь вы, независимо от дальности и линии видимости.",
+        "faq": "Если вы невидимы и не можете быть целью, вы не можете перенаправить атаку на себя."
     },
     "gh2-30": {
-        "name": "Armorbane Bow",
-        "source": "Prosperity 3",
-        "desc": "During your turn, add {PIERCE.fh} 3 to all your ranged attacks."
+        "name": "Лук-бронебой",
+        "source": "Процветание 3",
+        "desc": "В ваш ход добавьте {PIERCE.fh} 3 ко всем вашим дальним атакам."
     },
     "gh2-31": {
         "name": "Посох призыва",
-        "source": "Prosperity 3",
-        "desc": "During your turn, grant one of your summons: {MOVE.fh} +0"
+        "source": "Процветание 3",
+        "desc": "В ваш ход предоставьте 1 из ваших призванных: {MOVE.fh} +0"
     },
     "gh2-32": {
         "name": "Чёрное кадило",
-        "source": "Prosperity 3",
-        "desc": "During your turn, perform: {MUDDLE.fh}, All, {RANGE.fh} 3 All enemies that have {MUDDLE.fh} add -1 {ATTACK.fh} to all their attacks this round."
+        "source": "Процветание 3",
+        "desc": "В ваш ход выполните: {MUDDLE.fh}, все, {RANGE.fh} 3 Все враги с {MUDDLE.fh} добавляют -1 {ATTACK.fh} ко всем своим атакам в этом раунде."
     },
     "gh2-33": {
         "name": "Вторая кожа",
-        "source": "Prosperity 4",
-        "desc": "At the start of the scenario, remove one {-1_MODIFIER} attack modifier card from your attack modifier deck."
+        "source": "Процветание 4",
+        "desc": "В начале сценария уберите 1 карту модификатора атаки {-1_MODIFIER} из вашей колоды модификаторов атаки."
     },
     "gh2-34": {
-        "name": "Battle Axe",
-        "source": "Prosperity 4\nRoad Event 64",
-        "desc": "During your singe-target melee attack ability, change the targeting of the ability to:"
+        "name": "Боевой топор",
+        "source": "Процветание 4\nДорожное событие 64",
+        "desc": "Во время вашей способности одиночной ближней атаки измените цель способности на:"
     },
     "gh2-35": {
         "name": "Осадный щит",
-        "source": "Prosperity 4",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 2 for the attack."
+        "source": "Процветание 4",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 2 для этой атаки."
     },
     "gh2-36": {
-        "name": "Moon Earing",
-        "source": "Prosperity 4\nCity Event 6",
-        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items."
+        "name": "Лунная серьга",
+        "source": "Процветание 4\nГородское событие 6",
+        "desc": "Когда вы совершаете короткий отдых, {RECOVER.fh} до 3 ваших потраченных предметов."
     },
     "gh2-37": {
         "name": "Большое лечебное зелье",
-        "source": "Prosperity 4\nReward from {SCENARIO 89}",
-        "desc": "During your turn, perform: {HEAL.fh} 6, Self"
+        "source": "Процветание 4\nНаграда за {SCENARIO 89}",
+        "desc": "В ваш ход выполните: {HEAL.fh} 6 (на себя)"
     },
     "gh2-38": {
         "name": "Тяжелые поножи",
-        "source": "Prosperity 4",
-        "desc": "During your move ability, add +1 {MOVE.fh}. After the move ability, perform: {MUDDLE.fh}, {TARGET.fh} all, {RANGE.fh} 1"
+        "source": "Процветание 4",
+        "desc": "Во время вашей способности движения добавьте +1 {MOVE.fh}. После способности движения выполните: {MUDDLE.fh}, {TARGET.fh} все, {RANGE.fh} 1"
     },
     "gh2-39": {
         "name": "Кольцо черепов",
-        "source": "Prosperity 4",
-        "desc": "Summon Skeleton"
+        "source": "Процветание 4",
+        "desc": "Призвать скелета"
     },
     "gh2-40": {
-        "name": "Shadow Amor",
-        "source": "Prosperity 4",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, negate the {DAMAGE.fh} and infuse {DARK}."
+        "name": "Теневой доспех",
+        "source": "Процветание 4",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, отмените это {DAMAGE.fh} и наполните {DARK}."
     },
     "gh2-41": {
-        "name": "Kinetic Treads",
-        "source": "Prosperity 5",
-        "desc": "At the end of your move ability, grant one adjacent ally: {MOVE.fh} 2"
+        "name": "Кинетические гусеницы",
+        "source": "Процветание 5",
+        "desc": "В конце вашей способности движения предоставьте 1 соседнему союзнику: {MOVE.fh} 2"
     },
     "gh2-42": {
         "name": "Портянки выносливости",
-        "source": "Prosperity 5",
-        "desc": "After you move 4 or more hexes on your turn, after the move ability, perform: {HEAL.fh} 1, Self"
+        "source": "Процветание 5",
+        "desc": "После того как вы передвинулись на 4 или более клеток в свой ход, после способности движения выполните: {HEAL.fh} 1 (на себя)"
     },
     "gh2-43": {
         "name": "Шлем ястреба",
-        "source": "Prosperity 5",
-        "desc": "During your turn, add +1 {RANGE.fh} to all your ranged attacks."
+        "source": "Процветание 5",
+        "desc": "В ваш ход добавьте +1 {RANGE.fh} ко всем вашим дальним атакам."
     },
     "gh2-44": {
-        "name": "Precision Bow",
-        "source": "Prosperity 5",
-        "desc": "After your ranged attack ability, perform: {ATTACK.fh} 1, {TARGET.fh} 1 target of the attack ability at any {RANGE.fh}, {PIERCE.fh} 1"
+        "name": "Точный лук",
+        "source": "Процветание 5",
+        "desc": "После вашей способности дальней атаки выполните: {ATTACK.fh} 1, {TARGET.fh} 1 цель способности атаки на любой {RANGE.fh}, {PIERCE.fh} 1"
     },
     "gh2-45": {
-        "name": "Major Element Potion",
-        "source": "Prosperity 5\nRoad Event 52",
-        "desc": "During your turn, {ANY} {ANY}."
+        "name": "Большое зелье стихий",
+        "source": "Процветание 5\nДорожное событие 52",
+        "desc": "В ваш ход {ANY} {ANY}."
     },
     "gh2-46": {
-        "name": "Light Targe",
-        "source": "Prosperity 5",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 for the attack. After the attack but before any {RETALIATE.fh}, perform: {MOVE.fh} 1"
+        "name": "Лёгкий баклер",
+        "source": "Процветание 5",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 1 для этой атаки. После атаки, но до любого {RETALIATE.fh}, выполните: {MOVE.fh} 1"
     },
     "gh2-47": {
         "name": "Накидка с карманами",
-        "source": "Prosperity 5",
-        "desc": "At the start of the scenario, bring one additional {SMALL-ITEM} item."
+        "source": "Процветание 5",
+        "desc": "В начале сценария возьмите 1 дополнительный предмет {SMALL-ITEM}."
     },
     "gh2-48": {
         "name": "Посох стихий",
-        "source": "Prosperity 5",
-        "desc": "During your turn, {ANY}."
+        "source": "Процветание 5",
+        "desc": "В ваш ход {ANY}."
     },
     "gh2-49": {
         "name": "Рогатый шлем",
-        "source": "Prosperity 6",
-        "desc": "After you move 4 or more hexes on your turn, add +1 {ATTACK.fh} to your next melee attack this turn."
+        "source": "Процветание 6",
+        "desc": "После того как вы передвинулись на 4 или более клеток в свой ход, добавьте +1 {ATTACK.fh} к вашей следующей ближней атаке в этом ходу."
     },
     "gh2-50": {
-        "name": "Robes of the Oak",
-        "source": "Prosperity 6",
-        "desc": "During your turn, perform: {HEAL.fh} 3, One ally, {RANGE.fh} 1"
+        "name": "Мантия Дуба",
+        "source": "Процветание 6",
+        "desc": "В ваш ход выполните: {HEAL.fh} 3, 1 союзник, {RANGE.fh} 1"
     },
     "gh2-51": {
-        "name": "Heavy Mace",
-        "source": "Prosperity 6\nRoad Event 8",
-        "desc": "After you are attacked by an adjacent enemy, perform: {ATTACK.fh} 1, enemyAttacked This attack is unaffected by {RETALIATE.fh}."
+        "name": "Тяжёлая булава",
+        "source": "Процветание 6\nДорожное событие 8",
+        "desc": "После того как вас атаковал соседний враг, выполните: {ATTACK.fh} 1, атаковавший враг. Эта атака не затрагивается {RETALIATE.fh}."
     },
     "gh2-52": {
         "name": "Солнечная серьга",
-        "source": "Prosperity 6",
-        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items and perform: {HEAL.fh} 2, Self"
+        "source": "Процветание 6",
+        "desc": "Когда вы совершаете короткий отдых, {RECOVER.fh} до 3 ваших потраченных предметов и выполните: {HEAL.fh} 2 (на себя)"
     },
     "gh2-53": {
         "name": "Большое зелье силы",
-        "source": "Prosperity 6\nReward from {SCENARIO 74}",
-        "desc": "During your turn, add +2 {ATTACK.fh} to all your attacks."
+        "source": "Процветание 6\nНаграда за {SCENARIO 74}",
+        "desc": "В ваш ход добавьте +2 {ATTACK.fh} ко всем вашим атакам."
     },
     "gh2-54": {
-        "name": "Circlet of Sanctity",
-        "source": "Prosperity 7",
-        "desc": "After the next three attacks targeting an ally within {RANGE.fh} 2 flip this card over.",
-        "backDesc": "During your turn, perform: {WARD.fh}, {RANGE.fh} 3 then flip this card over."
+        "name": "Венец святости",
+        "source": "Процветание 7",
+        "desc": "После следующих трёх атак, нацеленных на союзника в пределах {RANGE.fh} 2, переверните эту карту.",
+        "backDesc": "В ваш ход выполните: {WARD.fh}, {RANGE.fh} 3, затем переверните эту карту."
     },
     "gh2-55": {
         "name": "Зажигательная бомба",
-        "source": "Prosperity 7",
-        "desc": "During your single-target ranged attack ability, change the targeting of the ability to:"
+        "source": "Процветание 7",
+        "desc": "Во время вашей способности одиночной дальней атаки измените цель способности на:"
     },
     "gh2-56": {
         "name": "Стальные сабатоны",
-        "source": "Prosperity 7",
-        "desc": "At the end of the turn, if you have moved 1 or fewer hexes during your turn, gain {SHIELD.fh} 1 for the round."
+        "source": "Процветание 7",
+        "desc": "В конце хода, если за ваш ход вы передвинулись на 1 или менее клеток, получите {SHIELD.fh} 1 на раунд."
     },
     "gh2-57": {
-        "name": "Strategist's Ring",
-        "source": "Prosperity 7",
-        "desc": "At the end of the turn, play one card from your hand and perform all persistent and mandatory abilities on either the top or bottom action of the card."
+        "name": "Кольцо стратега",
+        "source": "Процветание 7",
+        "desc": "В конце хода сыграйте 1 карту из руки и выполните все постоянные и обязательные способности либо верхнего, либо нижнего действия этой карты."
     },
     "gh2-58": {
         "name": "Большое зелье выносливости",
-        "source": "Prosperity 7",
-        "desc": "During your turn, {RECOVER.fh} one card from your discard pile."
+        "source": "Процветание 7",
+        "desc": "В ваш ход {RECOVER.fh} 1 карту из вашего сброса."
     },
     "gh2-59": {
         "name": "Телескопические линзы",
-        "source": "Prosperity 8",
-        "desc": "During your turn, add +2 {RANGE.fh} to all your ranged attacks."
+        "source": "Процветание 8",
+        "desc": "В ваш ход добавьте +2 {RANGE.fh} ко всем вашим дальним атакам."
     },
     "gh2-60": {
         "name": "Посох превосходства",
-        "source": "Prosperity 8",
-        "desc": "During your turn, {ANY_X} to add +1 {ATTACK.fh} to all your attacks."
+        "source": "Процветание 8",
+        "desc": "В ваш ход {ANY_X}, чтобы добавить +1 {ATTACK.fh} ко всем вашим атакам."
     },
     "gh2-61": {
         "name": "Молот войны",
-        "source": "Prosperity 8",
-        "desc": "During your melee attack ability, add {STUN.fh} to all attacks."
+        "source": "Процветание 8",
+        "desc": "Во время вашей способности ближней атаки добавьте {STUN.fh} ко всем атакам."
     },
     "gh2-62": {
         "name": "Маска ужаса",
-        "source": "Prosperity 8",
-        "desc": "During your melee attack, add {PUSH.fh} 1."
+        "source": "Процветание 8",
+        "desc": "Во время вашей ближней атаки добавьте {PUSH.fh} 1."
     },
     "gh2-63": {
         "name": "Звёздная серьга",
-        "source": "Prosperity 8\n{SCENARIO 54} (Treasure #03)",
-        "desc": "When you short rest, {RECOVER.fh} up to three of your spent items, choose which card to lose during the rest, and perform: {HEAL.fh} 2, Self"
+        "source": "Процветание 8\n{SCENARIO 54} (Сокровище #03)",
+        "desc": "Когда вы совершаете короткий отдых, {RECOVER.fh} до 3 ваших потраченных предметов, выберите, какую карту потерять во время отдыха, и выполните: {HEAL.fh} 2 (на себя)"
     },
     "gh2-64": {
         "name": "Талисман вдохновения",
-        "source": "Prosperity 9",
-        "desc": "During your turn, {RECOVER.fh} one of your lost {SMALL-ITEM} items."
+        "source": "Процветание 9",
+        "desc": "В ваш ход {RECOVER.fh} 1 из ваших потерянных предметов {SMALL-ITEM}."
     },
     "gh2-65": {
         "name": "Длинное копьё",
-        "source": "Prosperity 9",
-        "desc": "During your single-target melee attack ability, change the targeting of the ability to:"
+        "source": "Процветание 9",
+        "desc": "Во время вашей способности одиночной ближней атаки измените цель способности на:"
     },
     "gh2-66": {
         "name": "Плащ-невидимка",
-        "source": "Prosperity 9",
-        "desc": "During your turn, perform: {INVISIBLE.fh}, Self"
+        "source": "Процветание 9",
+        "desc": "В ваш ход выполните: {INVISIBLE.fh} (на себя)"
     },
     "gh2-67": {
-        "name": "Spiked Shoes",
-        "source": "Prosperity 9",
-        "desc": "When you use the basic bottom action of an ability card, you may perform {ATTACK.fh} 3 instead of {MOVE.fh} 2."
+        "name": "Шипованные туфли",
+        "source": "Процветание 9",
+        "desc": "Когда вы используете стандартное нижнее действие карты способности, вы можете выполнить {ATTACK.fh} 3 вместо {MOVE.fh} 2."
     },
     "gh2-68": {
         "name": "Кольцо спешки",
-        "source": "Prosperity 9",
-        "desc": "At the end of your turn, play one card from your hand and perform the bottom action of the card."
+        "source": "Процветание 9",
+        "desc": "В конце вашего хода сыграйте 1 карту из руки и выполните нижнее действие этой карты."
     },
     "gh2-69": {
-        "name": "Plate Mail",
-        "source": "Military Reputation 13",
-        "desc": "On the next five sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
+        "name": "Латные доспехи",
+        "source": "Репутация у армии 13",
+        "desc": "При следующих пяти источниках {DAMAGE.fh} от атак, нацеленных на вас, получайте {SHIELD.fh} 1 для этих атак."
     },
     "gh2-70": {
-        "name": "Standard Rations",
-        "source": "Military Reputation 15",
-        "desc": "Whenever you heal from a long rest, add +2 {HEAL.fh}."
+        "name": "Стандартный паёк",
+        "source": "Репутация у армии 15",
+        "desc": "Каждый раз, когда вы лечитесь после долгого отдыха, добавьте +2 {HEAL.fh}."
     },
     "gh2-71": {
-        "name": "Mastercraft Crossbow",
-        "source": "Military Reputation 17",
-        "desc": "During your ranged attack ability, add {WOUND.fh} to one attack. One enemy adjacent to that target and further from you than that target suffers {DAMAGE.fh} 2."
+        "name": "Арбалет мастерской работы",
+        "source": "Репутация у армии 17",
+        "desc": "Во время вашей способности дальней атаки добавьте {WOUND.fh} к одной атаке. Один враг, соседний с этой целью и находящийся дальше от вас, чем цель, получает {DAMAGE.fh} 2."
     },
     "gh2-72": {
-        "name": "Commander's Cap",
-        "source": "Military Reputation 19",
-        "desc": "Allies gain advantage on the next three attacks performed while adjacent to you. Then flip this card over.",
-        "backDesc": "After the next three attack abilities you perform while within {RANGE.fh} 2 of one or more allies, flip this card over."
+        "name": "Командирская шапка",
+        "source": "Репутация у армии 19",
+        "desc": "Союзники получают преимущество при следующих трёх атаках, выполненных рядом с вами. Затем переверните эту карту.",
+        "backDesc": "После следующих трёх способностей атаки, выполненных вами в пределах {RANGE.fh} 2 от 1 или нескольких союзников, переверните эту карту."
     },
     "gh2-73": {
-        "name": "Mantle of Summoning",
-        "source": "Merchant's Guild Reputation 13",
-        "desc": "During your turn, grant one of your summons: {SHIELD.fh} 2 {ROUND}"
+        "name": "Мантия призыва",
+        "source": "Репутация у Гильдии торговцев 13",
+        "desc": "В ваш ход предоставьте 1 из ваших призванных: {SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
-        "name": "Concealed Dagger",
-        "source": "Merchant's Guild Reputation 15",
-        "desc": "During your turn, place a character token on one adjacent enemy. At the start of each of the enemy's turns, they suffer {DAMAGE.fh} 1. When that enemy dies, flip this card over. {PERSISTENT}",
-        "backDesc": "Place the character token in the hex in which the enemy died. You may loot that token to flip this card over."
+        "name": "Потайной кинжал",
+        "source": "Репутация у Гильдии торговцев 15",
+        "desc": "В ваш ход положите жетон персонажа на 1 соседнего врага. В начале каждого хода этого врага он получает {DAMAGE.fh} 1. Когда этот враг умирает, переверните эту карту. {PERSISTENT}",
+        "backDesc": "Положите жетон персонажа на клетку, где умер враг. Вы можете подобрать этот жетон, чтобы перевернуть эту карту."
     },
     "gh2-75": {
-        "name": "Opulent Hood",
-        "source": "Merchant's Guild Reputation 17",
-        "desc": "During your turn, grant one adjacent ally: {ATTACK.fh} 1, {PUSH.fh} 1"
+        "name": "Роскошный капюшон",
+        "source": "Репутация у Гильдии торговцев 17",
+        "desc": "В ваш ход предоставьте 1 соседнему союзнику: {ATTACK.fh} 1, {PUSH.fh} 1"
     },
     "gh2-76": {
-        "name": "Merchant's Insignia",
-        "source": "Merchant's Guild Reputation 19",
-        "desc": "Whenever you complete a scenario, gain 10 gold."
+        "name": "Знак торговца",
+        "source": "Репутация у Гильдии торговцев 19",
+        "desc": "Каждый раз, когда вы завершаете сценарий, получите 10 золота."
     },
     "gh2-77": {
         "name": "Мантия воплощения",
-        "source": "Demons Reputation 13",
-        "desc": "During your attack ability, {ANY_X} to add +1 {ATTACK.fh} to all your attacks."
+        "source": "Репутация у демонов 13",
+        "desc": "Во время вашей способности атаки {ANY_X}, чтобы добавить +1 {ATTACK.fh} ко всем вашим атакам."
     },
     "gh2-78": {
         "name": "Жатвенная коса",
-        "source": "Demons Reputation 15",
-        "desc": "During your melee attack ability, add +1 {ATTACK.fh} and gain advantage on one attack. If this attack kills the target, after the attack perform: {HEAL.fh} 2, Self"
+        "source": "Репутация у демонов 15",
+        "desc": "Во время вашей способности ближней атаки добавьте +1 {ATTACK.fh} и получите преимущество при одной атаке. Если эта атака убивает цель, после атаки выполните: {HEAL.fh} 2 (на себя)"
     },
     "gh2-79": {
         "name": "Пыль обречечния",
-        "source": "Demons Reputation 17",
-        "desc": "During your attack ability, add {POISON.fh}, {STUN.fh}, and {CURSE.fh} to one attack."
+        "source": "Репутация у демонов 17",
+        "desc": "Во время вашей способности атаки добавьте {POISON.fh}, {STUN.fh} и {CURSE.fh} к одной атаке."
     },
     "gh2-80": {
-        "name": "Demonic Skull",
-        "source": "Demons Reputation 19",
-        "desc": "During your turn, {ANY} and flip this card over at the end of your turn.",
-        "backDesc": "When you kill a monster, flip this card over at the end of your turn."
+        "name": "Демонический череп",
+        "source": "Репутация у демонов 19",
+        "desc": "В ваш ход {ANY} и переверните эту карту в конце вашего хода.",
+        "backDesc": "Когда вы убиваете монстра, переверните эту карту в конце вашего хода."
     },
     "gh2-81": {
         "name": "Леденящий клинок",
-        "source": "Random Item",
-        "desc": "During your melee attack ability, {ICE_X} to add +2 {ATTACK.fh} to one attack."
+        "source": "Случайный предмет",
+        "desc": "Во время вашей способности ближней атаки {ICE_X}, чтобы добавить +2 {ATTACK.fh} к одной атаке."
     },
     "gh2-82": {
         "name": "Штормовой клинок",
-        "source": "Random Item",
-        "desc": "During your melee attack ability, {WIND_X} to add +2 {ATTACK.fh} to one attack."
+        "source": "Случайный предмет",
+        "desc": "Во время вашей способности ближней атаки {WIND_X}, чтобы добавить +2 {ATTACK.fh} к одной атаке."
     },
     "gh2-83": {
         "name": "Адский клинок",
-        "source": "Random Item",
-        "desc": "During your melee attack ability, {FIRE_X} to add +2 {ATTACK.fh} to one attack."
+        "source": "Случайный предмет",
+        "desc": "Во время вашей способности ближней атаки {FIRE_X}, чтобы добавить +2 {ATTACK.fh} к одной атаке."
     },
     "gh2-84": {
         "name": "Дрожащий клинок",
-        "source": "Random Item",
-        "desc": "During your melee attack ability, {EARTH_X} to add +2 {ATTACK.fh} to one attack."
+        "source": "Случайный предмет",
+        "desc": "Во время вашей способности ближней атаки {EARTH_X}, чтобы добавить +2 {ATTACK.fh} к одной атаке."
     },
     "gh2-85": {
         "name": "Сияющий клинок",
-        "source": "Random Item",
-        "desc": "During your melee attack ability, {LIGHT_X} to add +2 {ATTACK.fh} to one attack."
+        "source": "Случайный предмет",
+        "desc": "Во время вашей способности ближней атаки {LIGHT_X}, чтобы добавить +2 {ATTACK.fh} к одной атаке."
     },
     "gh2-86": {
         "name": "Ночной клинок",
-        "source": "Random Item",
-        "desc": "During your melee attack ability, {DARK_X} to add +2 {ATTACK.fh} to one attack."
+        "source": "Случайный предмет",
+        "desc": "Во время вашей способности ближней атаки {DARK_X}, чтобы добавить +2 {ATTACK.fh} к одной атаке."
     },
     "gh2-87": {
         "name": "Универсальный кинжал",
-        "source": "Random Item",
-        "desc": "When you use the basic top action of an ability card, perform {ATTACK.fh} 3 instead of {ATTACK.fh} 2."
+        "source": "Случайный предмет",
+        "desc": "Когда вы используете стандартное верхнее действие карты способности, выполните {ATTACK.fh} 3 вместо {ATTACK.fh} 2."
     },
     "gh2-88": {
         "name": "Шипованный щит",
-        "source": "Random Item",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 1 and {RETALIATE.fh} 2 for the attack."
+        "source": "Случайный предмет",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 1 и {RETALIATE.fh} 2 для этой атаки."
     },
     "gh2-89": {
         "name": "Доспех лезвий",
-        "source": "Random Item",
-        "desc": "On the next three sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1, {RETALIATE.fh} 1 for the attacks"
+        "source": "Случайный предмет",
+        "desc": "При следующих трёх источниках {DAMAGE.fh} от атак, нацеленных на вас, получайте {SHIELD.fh} 1, {RETALIATE.fh} 1 для этих атак"
     },
     "gh2-90": {
         "name": "Мерцающий плащ",
-        "source": "Random Item",
-        "desc": "During your turn, perform: {TELEPORT.fh} 4 This teleport must end in a hex adjacent to an enemy."
+        "source": "Случайный предмет",
+        "desc": "В ваш ход выполните: {TELEPORT.fh} 4 Эта телепортация должна закончиться на клетке, соседней с врагом."
     },
     "gh2-91": {
         "name": "Сапоги проворства",
-        "source": "Random Item",
-        "desc": "During ordering of initiative, after all ability cards have been revealed, increase or decrease your initiative by 20."
+        "source": "Случайный предмет",
+        "desc": "При определении инициативы, после того как все карты способностей открыты, увеличьте или уменьшите вашу инициативу на 20."
     },
     "gh2-92": {
         "name": "Ослепляющая пыль",
-        "source": "Random Item",
-        "desc": "During your attack ability, add {STUN.fh} to one attack."
+        "source": "Случайный предмет",
+        "desc": "Во время вашей способности атаки добавьте {STUN.fh} к одной атаке."
     },
     "gh2-93": {
-        "name": "Scroll of Ferocity",
-        "source": "Random Item",
-        "desc": "During your turn, grant one ally within {RANGE.fh} 5: {ATTACK.fh} 2"
+        "name": "Свиток свирепости",
+        "source": "Случайный предмет",
+        "desc": "В ваш ход предоставьте 1 союзнику в пределах {RANGE.fh} 5: {ATTACK.fh} 2"
     },
     "gh2-94": {
         "name": "Свиток лечения",
-        "source": "Random Item",
-        "desc": "During your turn, perform: {HEAL.fh} 3, {RANGE.fh} 5"
+        "source": "Случайный предмет",
+        "desc": "В ваш ход выполните: {HEAL.fh} 3, {RANGE.fh} 5"
     },
     "gh2-95": {
-        "name": "Scroll of Shielding",
-        "source": "Random Item",
-        "desc": "When one ally within {RANGE.fh} 5 suffers {DAMAGE.fh} from an attack, grant them {SHIELD.fh} 3 for the attack."
+        "name": "Свиток защиты",
+        "source": "Случайный предмет",
+        "desc": "Когда 1 союзник в пределах {RANGE.fh} 5 получает {DAMAGE.fh} от атаки, предоставьте ему {SHIELD.fh} 3 для этой атаки."
     },
     "gh2-96": {
-        "name": "Scroll of Swiftness",
-        "source": "Random Item",
-        "desc": "During one ally within {RANGE.fh} 5's move ability, add +1 {MOVE.fh} and {JUMP.fh}."
+        "name": "Свиток быстроты",
+        "source": "Случайный предмет",
+        "desc": "Во время способности движения 1 союзника в пределах {RANGE.fh} 5 добавьте +1 {MOVE.fh} и {JUMP.fh}."
     },
     "gh2-97": {
         "name": "Ботинки счастья",
-        "source": "{SCENARIO 73} (Treasure #37)",
-        "desc": "During your move ability, add +1 {MOVE.fh}. If you move 4 or more hexes and end on a money token or treasure tile with that move ability, gain 1 XP."
+        "source": "{SCENARIO 73} (Сокровище #37)",
+        "desc": "Во время вашей способности движения добавьте +1 {MOVE.fh}. Если вы передвигаетесь на 4 или более клеток и этой способностью движения заканчиваете на жетоне монет или жетоне сокровища, получите 1 опыт."
     },
     "gh2-98": {
         "name": "Накидка прозрачности",
-        "source": "{SCENARIO 3} (Treasure #04)",
-        "desc": "During your turn, designate the hex you are occupying and add {JUMP.fh} to all your move abilities. At the end of your turn, {TELEPORT.fh} to the designated hex.",
-        "faq": "End of turn looting happens in your original hex, after the teleport."
+        "source": "{SCENARIO 3} (Сокровище #04)",
+        "desc": "В ваш ход отметьте клетку, на которой вы находитесь, и добавьте {JUMP.fh} ко всем вашим способностям движения. В конце вашего хода {TELEPORT.fh} на отмеченную клетку.",
+        "faq": "Сбор добычи в конце хода происходит на вашей исходной клетке, после телепортации."
     },
     "gh2-99": {
         "name": "Нестабильная взрывчатка",
-        "source": "{SCENARIO 10} (Treasure #18)",
-        "desc": "During your turn, perform: {ATTACK.fh} 2, {RANGE.fh} 3"
+        "source": "{SCENARIO 10} (Сокровище #18)",
+        "desc": "В ваш ход выполните: {ATTACK.fh} 2, {RANGE.fh} 3"
     },
     "gh2-100": {
-        "name": "Charged Boots",
-        "source": "{SCENARIO 71} (Treasure #29)",
-        "desc": "After your next three turns during which you do not perform a move ability, flip this card over.",
-        "backDesc": "During your move ability, add +2 {MOVE.fh} and flip this card over."
+        "name": "Заряженные сапоги",
+        "source": "{SCENARIO 71} (Сокровище #29)",
+        "desc": "После ваших следующих трёх ходов, в которых вы не выполняете способность движения, переверните эту карту.",
+        "backDesc": "Во время вашей способности движения добавьте +2 {MOVE.fh} и переверните эту карту."
     },
     "gh2-101": {
-        "name": "Cure Potion",
-        "source": "{SCENARIO 89} (Treasure #33)",
-        "desc": "During your turn, remove one negative condition you have. This item can be used while you have {STUN.fh}."
+        "name": "Зелье исцеления",
+        "source": "{SCENARIO 89} (Сокровище #33)",
+        "desc": "В ваш ход снимите с себя 1 отрицательное состояние. Этот предмет можно использовать, пока у вас есть {STUN.fh}."
     },
     "gh2-102": {
         "name": "Стальное кольцо",
-        "source": "{SCENARIO 14} (Treasure #54)",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, gain {SHIELD.fh} 4 for the attack."
+        "source": "{SCENARIO 14} (Сокровище #54)",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, получите {SHIELD.fh} 4 для этой атаки."
     },
     "gh2-103": {
-        "name": "Ranger's Hood",
-        "source": "{SCENARIO 28} (Treasure #65)",
-        "desc": "During one of your summon's attack abilities, before drawing attack modifier cards, reveal the top two cards of your attack modifier deck. You may put any of them on the bottom of your deck."
+        "name": "Капюшон рейнджера",
+        "source": "{SCENARIO 28} (Сокровище #65)",
+        "desc": "Во время способности атаки одного из ваших призванных, перед тем как тянуть карты модификаторов атаки, откройте верхние 2 карты вашей колоды модификаторов атаки. Вы можете положить любую из них под низ колоды."
     },
     "gh2-104": {
-        "name": "Warding Rod",
-        "source": "{SCENARIO 4} (Treasure #24)",
-        "desc": "During your turn, perform: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
+        "name": "Охранный жезл",
+        "source": "{SCENARIO 4} (Сокровище #24)",
+        "desc": "В ваш ход выполните: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
     },
     "gh2-105": {
         "name": "Счастливый глаз",
-        "desc": "During your turn, perform: {STRENGTHEN.fh}, All, {RANGE.fh} 1"
+        "desc": "В ваш ход выполните: {STRENGTHEN.fh}, все, {RANGE.fh} 1"
     },
     "gh2-106": {
         "name": "Паровой доспех",
-        "source": "{SCENARIO 33} (Treasure #50)",
-        "desc": "On the next five sources of {DAMAGE.fh} from attacks targeting you, gain {SHIELD.fh} 1 for the attacks."
+        "source": "{SCENARIO 33} (Сокровище #50)",
+        "desc": "При следующих пяти источниках {DAMAGE.fh} от атак, нацеленных на вас, получайте {SHIELD.fh} 1 для этих атак."
     },
     "gh2-107": {
         "name": "Ожерелье из зубов",
-        "source": "{SCENARIO 52} (Treasure #73)",
-        "desc": "Whenever you kill a monster, perform: {HEAL.fh} 1, Self"
+        "source": "{SCENARIO 52} (Сокровище #73)",
+        "desc": "Каждый раз, когда вы убиваете монстра, выполните: {HEAL.fh} 1 (на себя)"
     },
     "gh2-108": {
         "name": "Воровской капюшон",
-        "source": "{SCENARIO 6} (Treasure #07)",
-        "desc": "During your turn, if you've killed an enemy this turn, perform: {LOOT 1}"
+        "source": "{SCENARIO 6} (Сокровище #07)",
+        "desc": "В ваш ход, если в этом ходу вы убили врага, выполните: {LOOT 1}"
     },
     "gh2-109": {
         "name": "Древний бур",
-        "source": "Reward from {SCENARIO 87}",
-        "desc": "During your melee attack ability, add +2 {ATTACK.fh}, {PIERCE.fh} 2 to all attacks."
+        "source": "Награда за {SCENARIO 87}",
+        "desc": "Во время вашей способности ближней атаки добавьте +2 {ATTACK.fh}, {PIERCE.fh} 2 ко всем атакам."
     },
     "gh2-110": {
         "name": "Воспламеняющийся меч",
-        "source": "{SCENARIO 37} {SCENARIO 82} (Treasure #40)",
-        "desc": "During your turn, add +1 {ATTACK.fh} to your next melee attack. If {FIRE} is strong or waning, all enemies adjacent to the target of that attack suffer {DAMAGE.fh} 1."
+        "source": "{SCENARIO 37} {SCENARIO 82} (Сокровище #40)",
+        "desc": "В ваш ход добавьте +1 {ATTACK.fh} к вашей следующей ближней атаке. Если {FIRE} сильный или угасающий, все враги, соседние с целью этой атаки, получают {DAMAGE.fh} 1."
     },
     "gh2-111": {
         "name": "Череп ненависти",
-        "source": "Reward from {SCENARIO 98}",
-        "desc": "During your turn, perform: {CURSE.fh}, All, {RANGE.fh} 1"
+        "source": "Награда за {SCENARIO 98}",
+        "desc": "В ваш ход выполните: {CURSE.fh}, все, {RANGE.fh} 1"
     },
     "gh2-112": {
         "name": "Странный механизм",
-        "desc": "During your turn, destroy one trap within {RANGE.fh} 3. If an enemy is adjacent to that trap, you may instead spring the trap and apply its effects do that enemy."
+        "desc": "В ваш ход уничтожьте 1 ловушку в пределах {RANGE.fh} 3. Если рядом с этой ловушкой есть враг, вы можете вместо этого активировать ловушку и применить её эффекты к этому врагу."
     },
     "gh2-113": {
         "name": "Чёрная карта",
-        "source": "Personal Quest 15",
-        "desc": "During your turn, place a character token on one normal or elite enemy within {RANGE.fh} 3. You and all allies add +1 {ATTACK.fh} to all attacks targeting this enemy. {PERSISTENT}"
+        "source": "Личное задание 15",
+        "desc": "В ваш ход положите жетон персонажа на 1 обычного или элитного врага в пределах {RANGE.fh} 3. Вы и все союзники добавляете +1 {ATTACK.fh} ко всем атакам, нацеленным на этого врага. {PERSISTENT}"
     },
     "gh2-114": {
-        "name": "Gust Striders",
-        "source": "City Event 17\nCity Event 81",
-        "desc": "During your turn. add {JUMP.fh} to your next move ability. If {WIND} is strong or waning also add +2 {MOVE.fh}."
+        "name": "Порывистые сапоги",
+        "source": "Городское событие 17\nГородское событие 81",
+        "desc": "В ваш ход добавьте {JUMP.fh} к вашей следующей способности движения. Если {WIND} сильный или угасающий, также добавьте +2 {MOVE.fh}."
     },
     "gh2-115": {
-        "name": "Rod of Transference",
-        "source": "{SCENARIO 11} (Treasure #35)",
-        "desc": "When an ally within {RANGE.fh} 3 would suffer {DAMAGE.fh}, you suffer the {DAMAGE.fh} instead."
+        "name": "Жезл переноса",
+        "source": "{SCENARIO 11} (Сокровище #35)",
+        "desc": "Когда союзник в пределах {RANGE.fh} 3 должен получить {DAMAGE.fh}, вместо него {DAMAGE.fh} получаете вы."
     },
     "gh2-116": {
-        "name": "Fated Verses",
-        "source": "Prosperity 1",
-        "desc": "During your attack ability, you may gain disadvantage on one attack to flip this card over at the end of your turn.",
-        "backDesc": "During an ally's attack ability, that ally gains advantage on one of their attacks and you flip this card over.",
-        "faq": "You cannot use the front side if you already have disadvantage on the attack. The front can be used on an attack an ally grants you, but the card only flips at the end of your next turn."
+        "name": "Роковые строфы",
+        "source": "Процветание 1",
+        "desc": "Во время вашей способности атаки вы можете получить затруднение при одной атаке, чтобы перевернуть эту карту в конце вашего хода.",
+        "backDesc": "Во время способности атаки союзника этот союзник получает преимущество при одной из своих атак, а вы переворачиваете эту карту.",
+        "faq": "Нельзя использовать лицевую сторону, если у вас уже есть затруднение при этой атаке. Лицевую сторону можно использовать при атаке, которую предоставляет вам союзник, но карта переворачивается только в конце вашего следующего хода."
     },
     "gh2-117": {
-        "name": "Dawnblade",
-        "source": "Reward from {SCENARIO 99}",
-        "desc": "During your turn, if {DARK} is strong or waning, add +1 {ATTACK.fh} to your next melee attack. If you brought Duskbrand, {LIGHT}."
+        "name": "Клинок рассвета",
+        "source": "Награда за {SCENARIO 99}",
+        "desc": "В ваш ход, если {DARK} сильный или угасающий, добавьте +1 {ATTACK.fh} к вашей следующей ближней атаке. Если вы взяли Клеймо сумерек, {LIGHT}."
     },
     "gh2-118": {
-        "name": "Duskbrand",
-        "source": "Road Event 33",
-        "desc": "During your turn, if {LIGHT} is strong or waning, add +1 {ATTACK.fh} to your next melee attack. If you brought Dawnblade, {DARK}."
+        "name": "Клеймо сумерек",
+        "source": "Дорожное событие 33",
+        "desc": "В ваш ход, если {LIGHT} сильный или угасающий, добавьте +1 {ATTACK.fh} к вашей следующей ближней атаке. Если вы взяли Клинок рассвета, {DARK}."
     },
     "gh2-119": {
         "name": "Сапоги из чешуи дрейка",
-        "source": "{SCENARIO 13} (Treasure #19)",
-        "desc": "During your move ability, add +1 {MOVE.fh} and ignore difficult and hazardous terrain."
+        "source": "{SCENARIO 13} (Сокровище #19)",
+        "desc": "Во время вашей способности движения добавьте +1 {MOVE.fh} и игнорируйте труднопроходную и опасную местность."
     },
     "gh2-120": {
         "name": "Доспех из чешуи дрейка",
-        "source": "{SCENARIO 29} (Treasure #75)\nRoad Event 32",
-        "desc": "Whenever you long rest, gain {STRENGTHEN.fh}."
+        "source": "{SCENARIO 29} (Сокровище #75)\nДорожное событие 32",
+        "desc": "Каждый раз, когда вы совершаете долгий отдых, получите {STRENGTHEN.fh}."
     },
     "gh2-121": {
         "name": "Шлем из чешуи дрейка",
-        "source": "{SCENARIO 38} (Treasure #34)",
-        "desc": "During your turn, perform: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3 If you brought Drakescale Boots and Drakescale Armor, add +1 {TARGET.fh}."
+        "source": "{SCENARIO 38} (Сокровище #34)",
+        "desc": "В ваш ход выполните: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3 Если вы взяли Сапоги из чешуи дрейка и Доспех из чешуи дрейка, добавьте +1 {TARGET.fh}."
     },
     "gh2-122": {
-        "name": "Frost Beetle Lantern",
-        "desc": "During your turn, perform: {ANY_X}: {ICE}"
+        "name": "Фонарь ледяного жука",
+        "desc": "В ваш ход выполните: {ANY_X}: {ICE}"
     },
     "gh2-123": {
-        "name": "Storm Beetle Lantern",
-        "source": "Road Event 30",
-        "desc": "During your turn, perform: {ANY_X}: {WIND}"
+        "name": "Фонарь грозового жука",
+        "source": "Дорожное событие 30",
+        "desc": "В ваш ход выполните: {ANY_X}: {WIND}"
     },
     "gh2-124": {
-        "name": "Ignition Beetle Lantern",
-        "source": "Road Event 30",
-        "desc": "During your turn, perform: {ANY_X}: {FIRE}"
+        "name": "Фонарь зажигательного жука",
+        "source": "Дорожное событие 30",
+        "desc": "В ваш ход выполните: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
-        "name": "Tremor Beetle Lantern",
-        "source": "Road Event 30",
-        "desc": "During your turn, perform: {ANY_X}: {EARTH}"
+        "name": "Фонарь жука дрожи",
+        "source": "Дорожное событие 30",
+        "desc": "В ваш ход выполните: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
-        "name": "Brilliant Beetle Lantern",
-        "source": "Road Event 30",
-        "desc": "During your turn, perform: {ANY_X}: {LIGHT}"
+        "name": "Фонарь сияющего жука",
+        "source": "Дорожное событие 30",
+        "desc": "В ваш ход выполните: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
-        "name": "Twilight Beetle Lantern",
-        "source": "Road Event 30",
-        "desc": "During your turn, perform: {ANY_X}: {DARK}"
+        "name": "Фонарь сумеречного жука",
+        "source": "Дорожное событие 30",
+        "desc": "В ваш ход выполните: {ANY_X}: {DARK}"
     },
     "gh2-128": {
         "name": "Подвеска тёмных союзов",
-        "source": "{SCENARIO 27} (Treasure #05)\nRoad Event 36",
-        "desc": "During your turn, {RECOVER.fh} one of your lost {SMALL-ITEM} items, and flip this card over.",
-        "backDesc": "On your next three rests, gain {CURSE.fh}. After the third rest, flip this card over."
+        "source": "{SCENARIO 27} (Сокровище #05)\nДорожное событие 36",
+        "desc": "В ваш ход {RECOVER.fh} 1 из ваших потерянных предметов {SMALL-ITEM} и переверните эту карту.",
+        "backDesc": "При ваших следующих трёх отдыхах получайте {CURSE.fh}. После третьего отдыха переверните эту карту."
     },
     "gh2-129": {
         "name": "Шлем год",
-        "source": "{SCENARIO 90} (Treasure #22)",
-        "desc": "When you are attacked, before drawing an attack modifier card, if {EARTH} is strong or waning, gain {WARD.fh}."
+        "source": "{SCENARIO 90} (Сокровище #22)",
+        "desc": "Когда вас атакуют, перед тем как тянуть карту модификатора атаки, если {EARTH} сильная или угасающая, получите {WARD.fh}."
     },
     "gh2-130": {
         "name": "Горный молот",
-        "source": "{SCENARIO 90} (Treasure #22)",
-        "desc": "Summon Warrior Spirit"
+        "source": "{SCENARIO 90} (Сокровище #22)",
+        "desc": "Призвать дух воина"
     },
     "gh2-131": {
         "name": "Гребень волны",
-        "source": "{SCENARIO 70} (Treasure #31)",
-        "desc": "During your turn, if {ICE} is strong or waning, perform either: {PUSH.fh} 2, One ally, {RANGE.fh} 3 or {PULL.fh} 2, One ally, {RANGE.fh} 3"
+        "source": "{SCENARIO 70} (Сокровище #31)",
+        "desc": "В ваш ход, если {ICE} сильный или угасающий, выполните одно из: {PUSH.fh} 2, 1 союзник, {RANGE.fh} 3 или {PULL.fh} 2, 1 союзник, {RANGE.fh} 3"
     },
     "gh2-132": {
         "name": "Компас обречения",
-        "source": "{SCENARIO 68} (Treasure #67)",
-        "desc": "During your turn, control one enemy within {RANGE.fh} 5. {MOVE.fh} 2"
+        "source": "{SCENARIO 68} (Сокровище #67)",
+        "desc": "В ваш ход возьмите под контроль 1 врага в пределах {RANGE.fh} 5. {MOVE.fh} 2"
     },
     "gh2-133": {
         "name": "Сердце Предателя",
-        "source": "Reward from {SCENARIO 80}",
-        "desc": "When you would be attacked by an adjacent normal enemy, instead control that enemy: {ATTACK.fh} -1",
-        "faq": "Instead of attacking you, the enemy performs an Attack -1 on one of your other enemies. Can also be used just to negate the attack."
+        "source": "Награда за {SCENARIO 80}",
+        "desc": "Когда вас должен атаковать соседний обычный враг, вместо этого возьмите этого врага под контроль: {ATTACK.fh} -1",
+        "faq": "Вместо атаки на вас враг проводит атаку -1 по одному из ваших других врагов. Можно также использовать просто для отмены атаки."
     },
     "gh2-134": {
         "name": "Энергетическое ядро",
-        "desc": "Summon Steel Construct"
+        "desc": "Призвать стального механоида"
     },
     "gh2-135": {
         "name": "Резонирующий кристалл",
-        "desc": "During your turn, suffer {DAMAGE.fh} 4 or destroy an adjacent obstacle to have an enemy within {RANGE.fh} 3 suffer {DAMAGE.fh} 4."
+        "desc": "В ваш ход получите {DAMAGE.fh} 4 или уничтожьте соседнее препятствие, чтобы враг в пределах {RANGE.fh} 3 получил {DAMAGE.fh} 4."
     },
     "gh2-136": {
         "name": "Плетёное кольцо",
-        "source": "Reward from {SCENARIO 67}",
-        "desc": "During your turn, perform: {LIGHT_X}: {HEAL.fh} 3, Self, {BLESS.fh} {DARK_X}: {ATTACK.fh} 3, {CURSE.fh}"
+        "source": "Награда за {SCENARIO 67}",
+        "desc": "В ваш ход выполните: {LIGHT_X}: {HEAL.fh} 3 (на себя), {BLESS.fh} {DARK_X}: {ATTACK.fh} 3, {CURSE.fh}"
     },
     "gh2-137": {
         "name": "Изъеденная молью шаль",
-        "source": "City Event 86",
-        "desc": "All monsters consider you to be last in initiative order when determining their focus.",
-        "faq": "Does not affect your summons."
+        "source": "Городское событие 86",
+        "desc": "Все монстры считают вас последним в порядке инициативы при определении цели.",
+        "faq": "Не затрагивает ваших призванных."
     },
     "gh2-138": {
         "name": "Кровавый топор",
-        "source": "Road Event 63",
-        "desc": "During your melee attack ability, suffer {DAMAGE.fh} 2 to add +1 {ATTACK.fh} to all attacks."
+        "source": "Дорожное событие 63",
+        "desc": "Во время вашей способности ближней атаки получите {DAMAGE.fh} 2, чтобы добавить +1 {ATTACK.fh} ко всем атакам."
     },
     "gh2-139": {
-        "name": "Otherworldly Scepter",
-        "source": "Reward from {SCENARIO 94}\nCity Event 85",
-        "desc": "When you perform a summon action, each summon summoned by that action gains {WARD.fh}, {INVISIBLE.fh} and {STRENGTHEN.fh}."
+        "name": "Потусторонний скипетр",
+        "source": "Награда за {SCENARIO 94}\nГородское событие 85",
+        "desc": "Когда вы выполняете действие призыва, каждый призванный этим действием получает {WARD.fh}, {INVISIBLE.fh} и {STRENGTHEN.fh}."
     },
     "gh2-140": {
-        "name": "Remote Attack Spider",
-        "source": "City Event 98",
-        "desc": "During your turn, perform: {POISON.fh}, All, {RANGE.fh} 1"
+        "name": "Дистанционный паук-атакующий",
+        "source": "Городское событие 98",
+        "desc": "В ваш ход выполните: {POISON.fh}, все, {RANGE.fh} 1"
     },
     "gh2-141": {
-        "name": "Remote Aid Spider",
-        "source": "City Event 98",
-        "desc": "During your turn, perform: {HEAL.fh} 2, All, {RANGE.fh} 1"
+        "name": "Дистанционный паук-помощник",
+        "source": "Городское событие 98",
+        "desc": "В ваш ход выполните: {HEAL.fh} 2, все, {RANGE.fh} 1"
     },
     "gh2-142": {
         "name": "Лавовые ботфорты",
-        "source": "{SCENARIO 86} (Treasure #01)",
-        "desc": "During your move ability, add +1 {MOVE.fh} and create one 1-hex hazardous terrain tile in the featureless hex you end your movement occupying.",
-        "faq": "You do not take damage from the hazardous terrain you create; it only damages figures that enter it."
+        "source": "{SCENARIO 86} (Сокровище #01)",
+        "desc": "Во время вашей способности движения добавьте +1 {MOVE.fh} и создайте 1 жетон опасной местности на 1 клетку на пустой клетке, на которой вы закончили движение.",
+        "faq": "Вы не получаете урон от созданной вами опасной местности; она наносит урон только фигурам, которые на неё входят."
     },
     "gh2-143": {
-        "name": "Boots of Bracing",
-        "source": "{SCENARIO 81} (Treasure #61)",
-        "desc": "During your ranged attack ability, gain {IMMOBILIZE.fh} to add +1 {ATTACK.fh} to one attack."
+        "name": "Сапоги упора",
+        "source": "{SCENARIO 81} (Сокровище #61)",
+        "desc": "Во время вашей способности дальней атаки получите {IMMOBILIZE.fh}, чтобы добавить +1 {ATTACK.fh} к одной атаке."
     },
     "gh2-144": {
-        "name": "Temporal Matrix",
-        "source": "Reward from {SCENARIO 92}",
-        "desc": "During ordering of initiative, after all ability cards have been revealed, order initiatives for the round from highest to lowest instead of lowest to highest."
+        "name": "Временная матрица",
+        "source": "Награда за {SCENARIO 92}",
+        "desc": "При определении инициативы, после того как все карты способностей открыты, упорядочьте инициативу в этом раунде от наибольшей к наименьшей вместо наименьшей к наибольшей."
     },
     "gh2-145": {
-        "name": "Harrow-Hook",
-        "desc": "During your turn, perform: {MOVE.fh} 2, {JUMP.fh} This movement must end adjacent to an obstacle or wall."
+        "name": "Крюк-борона",
+        "desc": "В ваш ход выполните: {MOVE.fh} 2, {JUMP.fh} Это движение должно закончиться рядом с препятствием или стеной."
     },
     "gh2-146": {
-        "name": "Amberhollow",
-        "source": "Road Event 15\nRoad Event 25\nRoad Event 28\nRoad Event 30\nRoad Event 31",
-        "desc": "This item must be brought into the scenario and is returned to the unavailable item supply at the end of the scenario. During your turn, perform: {STRENGTHEN.fh}, {BLESS.fh}, Self"
+        "name": "Янтарная пустота",
+        "source": "Дорожное событие 15\nДорожное событие 25\nДорожное событие 28\nДорожное событие 30\nДорожное событие 31",
+        "desc": "Этот предмет необходимо брать в сценарий, и в конце сценария он возвращается в запас недоступных предметов. В ваш ход выполните: {STRENGTHEN.fh}, {BLESS.fh} (на себя)"
     },
     "gh2-147": {
-        "name": "Scepter of Xorn",
-        "source": "Reward from {SCENARIO 57}\nReward from {SCENARIO 58}",
-        "desc": "During your turn, if you do not have {POISON.fh}, gain {POISON.fh} to perform: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
+        "name": "Скипетр Ксорна",
+        "source": "Награда за {SCENARIO 57}\nНаграда за {SCENARIO 58}",
+        "desc": "В ваш ход, если у вас нет {POISON.fh}, получите {POISON.fh}, чтобы выполнить: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
     },
     "gh2-148": {
-        "name": "Shield of the Righteous",
-        "source": "{SCENARIO 65} (Treasure #59)",
-        "desc": "When you suffer {DAMAGE.fh} from an attack, negate the {DAMAGE.fh} and infuse {LIGHT}"
+        "name": "Щит праведника",
+        "source": "{SCENARIO 65} (Сокровище #59)",
+        "desc": "Когда вы получаете {DAMAGE.fh} от атаки, отмените это {DAMAGE.fh} и наполните {LIGHT}"
     },
     "gh2-149": {
-        "name": "Aesther Spyglass",
-        "source": "Personal Quest 04",
-        "desc": "This item may only be used if you are adjacent to at least one obstacle. During your turn, perform: {BLESS.fh}, Self"
+        "name": "Эстерская подзорная труба",
+        "source": "Личное задание 04",
+        "desc": "Этот предмет можно использовать, только если вы находитесь рядом хотя бы с 1 препятствием. В ваш ход выполните: {BLESS.fh} (на себя)"
     },
     "gh2-150": {
-        "name": "Experimental Armor",
-        "source": "Personal Quest 17",
-        "desc": "This item cannot be sold and must be brought into each scenario. When you suffer {DAMAGE.fh} from an attack, you may suffer {DAMAGE.fh} 2 to have all adjacent allies and enemies suffer {DAMAGE.fh} 2."
+        "name": "Экспериментальный доспех",
+        "source": "Личное задание 17",
+        "desc": "Этот предмет нельзя продать, его необходимо брать в каждый сценарий. Когда вы получаете {DAMAGE.fh} от атаки, вы можете получить {DAMAGE.fh} 2, чтобы все соседние союзники и враги получили {DAMAGE.fh} 2."
     },
     "gh2-151": {
         "name": "Меч песков",
-        "desc": "During your melee attack ability, add {WOUND.fh}, {POISON.fh} to all attacks."
+        "desc": "Во время вашей способности ближней атаки добавьте {WOUND.fh}, {POISON.fh} ко всем атакам."
     },
     "gh2-152": {
-        "name": "Ruby Talisman",
-        "source": "Reward from {SCENARIO 75}",
-        "desc": "During your turn if, an ally within {RANGE.fh} 3 has a negative condition, you may gain {DISARM.fh} to remove one negative condition from that ally and give them Safeguard, {BLESS.fh}."
+        "name": "Рубиновый талисман",
+        "source": "Награда за {SCENARIO 75}",
+        "desc": "В ваш ход, если у союзника в пределах {RANGE.fh} 3 есть отрицательное состояние, вы можете получить {DISARM.fh}, чтобы снять с этого союзника 1 отрицательное состояние и дать ему Оберег, {BLESS.fh}."
     },
     "gh2-153": {
-        "name": "Hooked Shield",
-        "source": "Reward from Solo Scenario - {BR2}",
-        "desc": "After you push an enemy, perform: {MOVE.fh} 3, {JUMP.fh} This movement may only enter hexes that the pushed enemy exited."
+        "name": "Крюковой щит",
+        "source": "Награда за соло-сценарий — {BR2}",
+        "desc": "После того как вы оттолкнули врага, выполните: {MOVE.fh} 3, {JUMP.fh} Это движение может входить только на клетки, с которых вышел отталкиваемый враг."
     },
     "gh2-154": {
         "name": "Фокусирующий луч",
-        "source": "Reward from Solo Scenario - {TI2}",
-        "desc": "During your heal ability, add +1 {HEAL.fh} and {STRENGTHEN.fh} one heal targeting an ally."
+        "source": "Награда за соло-сценарий — {TI2}",
+        "desc": "Во время вашей способности лечения добавьте +1 {HEAL.fh} и {STRENGTHEN.fh} к одному лечению, нацеленному на союзника."
     },
     "gh2-155": {
-        "name": "Etheric Elixir",
-        "source": "Reward from Solo Scenario - {SW2}",
-        "desc": "When you perform the top {LOST.fh} action of Reviving Ether, remove the {NULL_MODIFIER} card from your attack modifier deck for the remainder of the scenario."
+        "name": "Эфирный эликсир",
+        "source": "Награда за соло-сценарий — {SW2}",
+        "desc": "Когда вы выполняете верхнее действие {LOST.fh} «Оживляющего эфира», уберите карту {NULL_MODIFIER} из вашей колоды модификаторов атаки до конца сценария."
     },
     "gh2-156": {
         "name": "Беззвучный стилет",
-        "source": "Reward from Solo Scenario - {SC2}",
-        "desc": "Add {PIERCE.fh} 1 to all your attacks."
+        "source": "Награда за соло-сценарий — {SC2}",
+        "desc": "Добавьте {PIERCE.fh} 1 ко всем вашим атакам."
     },
     "gh2-157": {
         "name": "Каменный амулет",
-        "source": "Reward from Solo Scenario - {CH2}",
-        "desc": "During your turn, perform your next attack or heal ability this turn as if you occupied the same hex as any obstacle. {EARTH}"
+        "source": "Награда за соло-сценарий — {CH2}",
+        "desc": "В ваш ход выполните вашу следующую способность атаки или лечения в этом ходу так, как если бы вы находились на одной клетке с любым препятствием. {EARTH}"
     },
     "gh2-158": {
         "name": "Телепатический нож",
-        "source": "Reward from Solo Scenario - {MT2}",
-        "desc": "Add +1 {ATTACK.fh} to all your attacks from your {AUGMENT} actions."
+        "source": "Награда за соло-сценарий — {MT2}",
+        "desc": "Добавьте +1 {ATTACK.fh} ко всем вашим атакам от ваших действий {AUGMENT}."
     },
     "gh2-159": {
-        "name": "Insignia of the Divine",
-        "source": "Reward from Solo Scenario - {SK2}",
-        "desc": "During your turn, grant self or one adjacent ally: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
+        "name": "Знак божественного",
+        "source": "Награда за соло-сценарий — {SK2}",
+        "desc": "В ваш ход предоставьте себе или 1 соседнему союзнику: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
     },
     "gh2-160": {
         "name": "Практичный пояс",
-        "source": "Reward from Solo Scenario - {QM2}",
-        "desc": "During your turn, gain 10 Supplies and give one adjacent ally one item of your choice from the {QM2} item supply."
+        "source": "Награда за соло-сценарий — {QM2}",
+        "desc": "В ваш ход получите 10 припасов и дайте 1 соседнему союзнику 1 предмет на ваш выбор из запаса предметов {QM2}."
     },
     "gh2-161": {
         "name": "Мерцающая статуэтка",
-        "source": "Reward from Solo Scenario - {ST2}",
-        "desc": "When one of your summons suffers {DAMAGE.fh} from an attack, negate the {DAMAGE.fh} and that summon gains {INVISIBLE.fh}."
+        "source": "Награда за соло-сценарий — {ST2}",
+        "desc": "Когда один из ваших призванных получает {DAMAGE.fh} от атаки, отмените это {DAMAGE.fh}, и этот призванный получает {INVISIBLE.fh}."
     },
     "gh2-162": {
-        "name": "The Night's Caress",
-        "source": "Reward from Solo Scenario - {NS2}",
-        "desc": "When you lose {INVISIBLE.fh}, flip this card over and perform: {MUDDLE.fh}, {RANGE.fh} 1",
-        "backDesc": "When you gain {INVISIBLE.fh}, flip this card over and look at the top card of your attack modifier deck. You may put that card on the bottom of your deck."
+        "name": "Ласка ночи",
+        "source": "Награда за соло-сценарий — {NS2}",
+        "desc": "Когда вы теряете {INVISIBLE.fh}, переверните эту карту и выполните: {MUDDLE.fh}, {RANGE.fh} 1",
+        "backDesc": "Когда вы получаете {INVISIBLE.fh}, переверните эту карту и посмотрите верхнюю карту вашей колоды модификаторов атаки. Вы можете положить эту карту под низ колоды."
     },
     "gh2-163": {
         "name": "Подвеска чумы",
-        "source": "Reward from Solo Scenario - {PH2}",
-        "desc": "During your turn, perform: {CURSE.fh}, Plague, {RANGE.fh} 5 You may give one ally within {RANGE.fh} 3 (of you) {POISON.fh} to add +1 {TARGET.fh}."
+        "source": "Награда за соло-сценарий — {PH2}",
+        "desc": "В ваш ход выполните: {CURSE.fh}, чума, {RANGE.fh} 5 Вы можете наложить {POISON.fh} на 1 союзника в пределах {RANGE.fh} 3 (от вас), чтобы добавить +1 {TARGET.fh}."
     },
     "gh2-164": {
         "name": "Маска смерти",
-        "source": "Reward from Solo Scenario - {BE2}",
-        "desc": "When you reveal cards from any deck, reveal one additional card."
+        "source": "Награда за соло-сценарий — {BE2}",
+        "desc": "Раскрывая карты любой колоды, раскрывайте 1 дополнительную карту."
     },
     "gh2-165": {
         "name": "Лютня маэстро",
-        "source": "Reward from Solo Scenario - {SS2}",
-        "desc": "When you perform a {SONG} action, gain one Note of your choice in addition to any other Note you gain this round."
+        "source": "Награда за соло-сценарий — {SS2}",
+        "desc": "Когда вы выполняете действие {SONG}, получите 1 ноту по своему выбору в дополнение к любой другой ноте, полученной в этом раунде."
     },
     "gh2-166": {
         "name": "Плащ охотника",
-        "source": "Reward from Solo Scenario - {DS2}",
-        "desc": "Whenever you perform a {DOOM} action, immediately afterwards grant self or one of your summons: {MOVE.fh} 1 This movement must move toward the enemy that has {DOOM}."
+        "source": "Награда за соло-сценарий — {DS2}",
+        "desc": "Каждый раз, когда вы выполняете действие {DOOM}, сразу после этого предоставьте себе или 1 из ваших призванных: {MOVE.fh} 1 Это движение должно приближать к врагу с {DOOM}."
     },
     "gh2-167": {
         "name": "Докторский китель",
-        "source": "Reward from Solo Scenario - {SB2}",
-        "desc": "When an ally within {RANGE.fh} 3 suffers {DAMAGE.fh} from an attack, after the attack ability perform: {MOVE.fh} 2 This movement must end adjacent to the attacked ally."
+        "source": "Награда за соло-сценарий — {SB2}",
+        "desc": "Когда союзник в пределах {RANGE.fh} 3 получает {DAMAGE.fh} от атаки, после способности атаки выполните: {MOVE.fh} 2 Это движение должно закончиться рядом с атакованным союзником."
     },
     "gh2-168": {
-        "name": "Elemental Vest",
-        "source": "Reward from Solo Scenario - {EL2}",
-        "desc": "At the end of your turn, for every two elements you consumed that turn: {ANY}."
+        "name": "Стихийный жилет",
+        "source": "Награда за соло-сценарий — {EL2}",
+        "desc": "В конце вашего хода за каждые 2 стихии, потреблённые в этом ходу: {ANY}."
     },
     "gh2-169": {
         "name": "Посох повеления",
-        "source": "Reward from Solo Scenario - {WF2}",
-        "desc": "During your turn, {COMMAND}: {ATTACK.fh} 2"
+        "source": "Награда за соло-сценарий — {WF2}",
+        "desc": "В ваш ход {COMMAND}: {ATTACK.fh} 2"
     },
     "gh2-170": {
-        "name": "Crawling Carapace",
-        "source": "Reward from Solo Scenario - {BS2}",
-        "desc": "On the first source of {DAMAGE.fh} from an attack you or one of your summons would suffer each round, the attacked figure gains {SHIELD.fh} 1 for the attack."
+        "name": "Ползучий панцирь",
+        "source": "Награда за соло-сценарий — {BS2}",
+        "desc": "При первом источнике {DAMAGE.fh} от атаки, который вы или один из ваших призванных должны получить в каждом раунде, атакованная фигура получает {SHIELD.fh} 1 для этой атаки."
     }
 }

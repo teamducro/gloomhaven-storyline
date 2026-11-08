@@ -26,22 +26,22 @@ describe('Crimson Scales cross-game items', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-7_c-8_c-9_c-13_c', {
             onBeforeLoad: (win) => win.localStorage.setItem('lang', '"pl"')
         });
-        openScenario('Corpse Cavern');
+        openScenario('Jaskinia Trupów');
 
-        cy.get('#scenario-content a').contains('Major Stamina Potion').click();
+        cy.get('#scenario-content a').contains('Większa Mikstura Wytrzymałości').click();
 
-        cy.get('.mdc-dialog--open').contains('Major Stamina Potion');
+        cy.get('.mdc-dialog--open').contains('Większa Mikstura Wytrzymałości');
     });
 
     it('It links items in Hungarian texts with a non-ASCII item label', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-7_c-8_c-9_c-13_c', {
             onBeforeLoad: (win) => win.localStorage.setItem('lang', '"hu"')
         });
-        openScenario('Corpse Cavern');
+        openScenario('Hullabarlang');
 
-        cy.get('#scenario-content a').contains('Major Stamina Potion').click();
+        cy.get('#scenario-content a').contains('Nagy serkentő ital').click();
 
-        cy.get('.mdc-dialog--open').contains('Major Stamina Potion');
+        cy.get('.mdc-dialog--open').contains('Nagy serkentő ital');
     });
 
     it('It only unlocks the Crimson Scales item designs for rewards of the Crimson Scales item deck', () => {

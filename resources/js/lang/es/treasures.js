@@ -258,7 +258,7 @@ export default {
         "name": "Desbloquea el escenario en solitario de {DR} “Una visión de los inevitable” (consulta la página 25 del libro principal)"
     },
     "fc-87": {
-        "name": "Sufre 2 de daño y MALDICIÓN {CURSE}, obtén 15 de oro."
+        "name": "Sufre 2 de daño, obtén MALDICIÓN y 15 de oro"
     },
     "fc-88": {
         "name": "Obtén 1 ✓."
@@ -288,7 +288,7 @@ export default {
         "name": "Obtén 10 XP"
     },
     "jotl-2": {
-        "name": "Obtén “Ring of Strength” (Objeto 31)"
+        "name": "Obtén “Anillo de fuerza” (Objeto 31)"
     },
     "jotl-3": {
         "name": "Obtén 15 XP"
@@ -306,16 +306,16 @@ export default {
         "name": "Obtén 5 de oro"
     },
     "jotl-8": {
-        "name": "Sufre 3 de daño, VENENO {POISON},"
+        "name": "Sufre 3 de daño, obtén VENENO,"
     },
     "jotl-9": {
         "name": "Obtén 5 de oro"
     },
     "jotl-10": {
-        "name": "“Fateful Compass” (Objeto 27)"
+        "name": "“Brújula funesta” (Objeto 27)"
     },
     "jotl-11": {
-        "name": "“Ring of Haste” (Objeto 30)"
+        "name": "“Anillo de Premura” (Objeto 30)"
     },
     "jotl-12": {
         "name": "Obtén 5 de oro"
@@ -330,651 +330,651 @@ export default {
         "name": "Obtén 1 ✔"
     },
     "jotl-16": {
-        "name": "“Mana Potion” (Objeto 14)"
+        "name": "“Poción de maná” (Objeto 14)"
     },
     "jotl-X": {
-        "name": "“Ring of Restoration” (Objeto 32)"
+        "name": "“Anillo de recuperación” (Objeto 32)"
     },
     "cs-1": {
-        "name": "“Drake's Blood” (Item 59)"
+        "name": "“Sangre de Draco” (Objeto 59)"
     },
     "cs-2": {
-        "name": "“Orb of Fortune” (Item 09)"
+        "name": "“Orbe de la Fortuna” (Objeto 09)"
     },
     "cs-3": {
-        "name": "“Chain Mace” (Item 14)"
+        "name": "“Maza de Cadenas” (Objeto 14)"
     },
     "cs-4": {
-        "name": "Gain 15 gold and Recover one lost card"
+        "name": "Obtén 15 de oro y recupera una carta perdida"
     },
     "cs-5": {
-        "name": "“Concussion Mine” (Item 31)"
+        "name": "“Mina de Conmoción” (Objeto 31)"
     },
     "cs-6": {
-        "name": "Gain 20 gold and disarm all adjacent traps"
+        "name": "Obtén 20 de oro y desarma todas las trampas adyacentes"
     },
     "cs-7": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-8": {
-        "name": "“Dizzying Tincture” (Item 58)"
+        "name": "“Tintura Vertiginosa” (Objeto 58)"
     },
     "cs-9": {
-        "name": "“Orb of Fortune” (Item 9)"
+        "name": "“Orbe de la Fortuna” (Objeto 9)"
     },
     "cs-10": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-11": {
-        "name": "“Dizzying Tincture” (Item 58)"
+        "name": "“Tintura Vertiginosa” (Objeto 58)"
     },
     "cs-12": {
-        "name": "“Mana Medicine” (Item 60)"
+        "name": "“Medicina de Maná” (Objeto 60)"
     },
     "cs-13": {
-        "name": "“Orb of Despair” (Item 10)"
+        "name": "“Orbe de la Desesperación” (Objeto 10)"
     },
     "cs-14": {
-        "name": "“Steel Helmet” (Item 22)"
+        "name": "“Casco de Acero” (Objeto 22)"
     },
     "cs-15": {
-        "name": "“Shifting Compass” (Item 32)"
+        "name": "“Brújula Cambiante” (Objeto 32)"
     },
     "cs-16": {
-        "name": "Perform “Heal 6, Self”, gain {POISON}"
+        "name": "Realiza “Curar 6, a ti mismo”, obtén VENENO {POISON}"
     },
     "cs-17": {
-        "name": "“Concussion Mine” (Item 31)"
+        "name": "“Mina de Conmoción” (Objeto 31)"
     },
     "cs-18": {
         "name": "“Boneclad Shawl (Item 25)"
     },
     "cs-19": {
-        "name": "Gain ✓ and generate a Wild Element"
+        "name": "Obtén ✓ y genera un elemento comodín"
     },
     "cs-20": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-21": {
-        "name": "“Steel Helmet” (Item 22)"
+        "name": "“Casco de Acero” (Objeto 22)"
     },
     "cs-22": {
-        "name": "“Boots of Perpetuity” (Item 19)"
+        "name": "“Botas de Perpetuidad” (Objeto 19)"
     },
     "cs-23": {
-        "name": "“Trophy Helmet” (Item 12)"
+        "name": "“Casco de Trofeo” (Objeto 12)"
     },
     "cs-24": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-25": {
-        "name": "“Draining Greaves” (Item 15)"
+        "name": "“Grebas Drenadoras” (Objeto 15)"
     },
     "cs-26": {
-        "name": "“Iron Snare” (Item 30)"
+        "name": "“Trampa de Hierro” (Objeto 30)"
     },
     "cs-27": {
-        "name": "“Woven Plate Armor” (Item 23)"
+        "name": "“Armadura de Placas Tejidas” (Objeto 23)"
     },
     "cs-28": {
-        "name": "“Chain Mace” (Item 14)"
+        "name": "“Maza de Cadenas” (Objeto 14)"
     },
     "cs-29": {
-        "name": "“Woven Plate Armor” (Item 23)"
+        "name": "“Armadura de Placas Tejidas” (Objeto 23)"
     },
     "cs-30": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "“Chal de Hueso” (Objeto 25)"
     },
     "cs-31": {
-        "name": "“Drake's Blood” (Item 59)"
+        "name": "“Sangre de Draco” (Objeto 59)"
     },
     "cs-32": {
-        "name": "“Curious Pendant” (Item 20)"
+        "name": "“Colgante Curioso” (Objeto 20)"
     },
     "cs-33": {
-        "name": "25  gold, gain {POISON}"
+        "name": "25 de oro, obtén VENENO {POISON}"
     },
     "cs-34": {
-        "name": "Suffer hazardous terrain damage, gain {INVISIBLE}"
+        "name": "Sufre el daño del terreno peligroso, obtén INVISIBILIDAD {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Curseblood Blade” (Item 36)"
+        "name": "“Hoja de Sangre Maldita” (Objeto 36)"
     },
     "cs-36": {
-        "name": "10 experience, gain {INVSIBLE}"
+        "name": "10 XP, obtén INVISIBILIDAD {INVSIBLE}"
     },
     "cs-37": {
-        "name": "“Draining Greaves” (Item 15)"
+        "name": "“Grebas Drenadoras” (Objeto 15)"
     },
     "cs-38": {
-        "name": "“War Pick” (Item 13)"
+        "name": "“Pico de Guerra” (Objeto 13)"
     },
     "cs-39": {
-        "name": "“Infrared Goggles” (Item 21)"
+        "name": "“Gafas Infrarrojas” (Objeto 21)"
     },
     "cs-40": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-41": {
-        "name": "“Ashsteel Gauntlets” (Item 61)"
+        "name": "“Guanteletes de Acero Ceniciento” (Objeto 61)"
     },
     "cs-42": {
-        "name": "“War Pick” (Item 13)"
+        "name": "“Pico de Guerra” (Objeto 13)"
     },
     "cs-43": {
-        "name": "10 experience and Refresh all spent items"
+        "name": "10 XP y recarga todos los objetos gastados"
     },
     "cs-44": {
-        "name": "“Mana Medicine” (Item 60)"
+        "name": "“Medicina de Maná” (Objeto 60)"
     },
     "cs-45": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-46": {
-        "name": "“Vipertooth Dagger” design (Item 54)"
+        "name": "Diseño “Daga Colmillo de Víbora” (Objeto 54)"
     },
     "cs-47": {
-        "name": "15 gold"
+        "name": "15 de oro"
     },
     "cs-48": {
-        "name": "15 gold"
+        "name": "15 de oro"
     },
     "cs-49": {
-        "name": "“Magma Waders” (Item gh-99)"
+        "name": "“Botas de Magma” (Objeto gh-99)"
     },
     "cs-50": {
-        "name": "“Bottled Moonlight” (Item 18)"
+        "name": "“Luz de Luna Embotellada” (Objeto 18)"
     },
     "fh-1": {
-        "name": "Gain four loot cards."
+        "name": "Obtén cuatro cartas de botín."
     },
     "fh-2": {
-        "name": "Suffer 3 damage, then gain {MUDDLE}"
+        "name": "Sufre 3 de daño y luego obtén CONFUSIÓN {MUDDLE}"
     },
     "fh-3": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-4": {
-        "name": "Gain Eventide Scepter 200."
+        "name": "Obtén Cetro del Ocaso 200."
     },
     "fh-5": {
-        "name": "Gain Severed Claw 204."
+        "name": "Obtén Pinza amputada 204."
     },
     "fh-6": {
-        "name": "Gain Opulent Shoes 199."
+        "name": "Obtén Zapatos opulentos 199."
     },
     "fh-7": {
-        "name": "Gain Data Drive 227."
+        "name": "Obtén Unidad de datos 227."
     },
     "fh-8": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-9": {
-        "name": "Unlock a random side scenario."
+        "name": "Desbloquea un escenario secundario aleatorio."
     },
     "fh-10": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-11": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-12": {
-        "name": "You find the remains of Camilla and her paintings of a majestic horned creature. Gain “Brummix” campaign sticker and add s 99.1 to the campaign calendar in three weeks."
+        "name": "Encuentras los restos de Camilla y sus pinturas de una majestuosa criatura con cuernos. Obtén la pegatina de campaña “Brummix” y añade s 99.1 al calendario de campaña dentro de tres semanas."
     },
     "fh-13": {
-        "name": "Gain Fishhook 207."
+        "name": "Obtén Anzuelo 207."
     },
     "fh-14": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-15": {
-        "name": "Unlock a random side scenario."
+        "name": "Desbloquea un escenario secundario aleatorio."
     },
     "fh-16": {
-        "name": "Gain Decanter of Mists 183."
+        "name": "Obtén Jarra de nieblas 183."
     },
     "fh-17": {
-        "name": "Gain 3 Lumber."
+        "name": "Obtén 3 Madera."
     },
     "fh-18": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-19": {
-        "name": "Gain 1 Axenut, 1 Corpsecap, and 1 Flamefruit."
+        "name": "Obtén 1 Nuez hacha, 1 Seta cadavérica y 1 Fruta de fuego."
     },
     "fh-20": {
-        "name": "Gain four loot cards."
+        "name": "Obtén cuatro cartas de botín."
     },
     "fh-21": {
-        "name": "Gain Detonator blueprint 064."
+        "name": "Obtén el plano de detonador 064."
     },
     "fh-22": {
-        "name": "Gain Scaled Armor blueprint 068."
+        "name": "Obtén el plano de armadura de escamas 068."
     },
     "fh-23": {
-        "name": "Unlock a random side scenario."
+        "name": "Desbloquea un escenario secundario aleatorio."
     },
     "fh-24": {
-        "name": "Gain Bane."
+        "name": "Obtén PERDICIÓN."
     },
     "fh-25": {
-        "name": "Gain 1 Corpsecap and 1 Flamefruit."
+        "name": "Obtén 1 Seta cadavérica y 1 Fruta de fuego."
     },
     "fh-26": {
-        "name": "Gain Lightning Rod 223."
+        "name": "Obtén Pararayos 223."
     },
     "fh-27": {
-        "name": "Gain two loot cards and {POISON}."
+        "name": "Obtén dos cartas de botín y VENENO {POISON}."
     },
     "fh-28": {
-        "name": "Gain four loot cards."
+        "name": "Obtén cuatro cartas de botín."
     },
     "fh-29": {
-        "name": "Gain 2 Lumber 2 Hide."
+        "name": "Obtén 2 Madera y 2 Piel."
     },
     "fh-30": {
-        "name": "Gain four loot cards."
+        "name": "Obtén cuatro cartas de botín."
     },
     "fh-31": {
-        "name": "Gain Balanced Scales blueprint 078."
+        "name": "Obtén el plano de balanza equilibrada 078."
     },
     "fh-32": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-33": {
-        "name": "Gain 3 Lumber."
+        "name": "Obtén 3 Madera."
     },
     "fh-34": {
-        "name": "Gain 1 ✔."
+        "name": "Obtén 1 ✔."
     },
     "fh-35": {
-        "name": "Gain Extendable Pole 228."
+        "name": "Obtén Pértiga extensible 228."
     },
     "fh-36": {
-        "name": "Gain Black Box 222."
+        "name": "Obtén Caja negra 222."
     },
     "fh-37": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-38": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-39": {
-        "name": "Unlock a random side scenario."
+        "name": "Desbloquea un escenario secundario aleatorio."
     },
     "fh-40": {
-        "name": "Gain Chaos Cannon blueprint 077."
+        "name": "Obtén el plano de cañón de caos 077."
     },
     "fh-41": {
-        "name": "Gain Algox Carving 225."
+        "name": "Obtén Figura algox 225."
     },
     "fh-42": {
-        "name": "Gain Giant Sword 206."
+        "name": "Obtén Espada gigante 206."
     },
     "fh-43": {
-        "name": "Gain four loot cards."
+        "name": "Obtén cuatro cartas de botín."
     },
     "fh-44": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-45": {
-        "name": "Gain 2 Lumber 2 Metal."
+        "name": "Obtén 2 Madera y 2 Metal."
     },
     "fh-46": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-47": {
-        "name": "Gain 5 Experience."
+        "name": "Obtén 5 XP."
     },
     "fh-48": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-49": {
-        "name": "Gain Bone Boots blueprint 071"
+        "name": "Obtén el plano de botas de hueso 071"
     },
     "fh-50": {
-        "name": "Gain Cured Hide Armor 017."
+        "name": "Obtén Armadura de piel curtida 017."
     },
     "fh-51": {
-        "name": "Read 78.1."
+        "name": "Lee 78.1."
     },
     "fh-52": {
-        "name": "Gain Titan Nail 208."
+        "name": "Obtén Clavo de titán 208."
     },
     "fh-53": {
-        "name": "Gain Eye of the Storm 239."
+        "name": "Obtén Ojo de la tormenta 239."
     },
     "fh-54": {
-        "name": "Treasure chest? There was no treasure chest there. Maybe you should slow down on the drink."
+        "name": "¿Cofre del tesoro? Allí no había ningún cofre del tesoro. Quizá deberías beber con más moderación."
     },
     "fh-55": {
-        "name": "Gain Harpoon 205."
+        "name": "Obtén Arpón 205."
     },
     "fh-56": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-57": {
-        "name": "What’s this? An empty chest with a lead trapdoor at the bottom . You make note of the location so you can return with Gem’s help later. Unlock The Lead Door 103."
+        "name": "¿Qué es esto? Un cofre vacío con una trampilla de plomo en el fondo. Anotas la ubicación para volver más tarde con la ayuda de Gem. Desbloquea La puerta de plomo 103."
     },
     "fh-58": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-59": {
-        "name": "Gain Pain Simulacrum blueprint 081."
+        "name": "Obtén el plano de efigie de dolor 081."
     },
     "fh-60": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-61": {
-        "name": "Unlock a random side scenario."
+        "name": "Desbloquea un escenario secundario aleatorio."
     },
     "fh-62": {
-        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+        "name": "Obtén el plano de cubo mecánico 082 cuando encuentres la otra mitad de este plano."
     },
     "fh-63": {
-        "name": "Gain five loot cards."
+        "name": "Obtén cinco cartas de botín."
     },
     "fh-64": {
-        "name": "Gain 3 Lumber."
+        "name": "Obtén 3 Madera."
     },
     "fh-65": {
-        "name": "Gain 15 Money."
+        "name": "Obtén 15 monedas."
     },
     "fh-66": {
-        "name": "Suffer 2 damage, then gain Brittle."
+        "name": "Sufre 2 de daño y luego obtén QUEBRADIZO."
     },
     "fh-67": {
-        "name": "Unlock a random side scenario."
+        "name": "Desbloquea un escenario secundario aleatorio."
     },
     "fh-68": {
-        "name": "Gain 4 Metal."
+        "name": "Obtén 4 Metal."
     },
     "fh-69": {
-        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+        "name": "Obtén el plano de cubo mecánico 082 cuando encuentres la otra mitad de este plano."
     },
     "fh-70": {
-        "name": "Gain Horn of Command blueprint 076."
+        "name": "Obtén el plano de cuerno de mando 076."
     },
     "fh-71": {
-        "name": "Gain four loot cards."
+        "name": "Obtén cuatro cartas de botín."
     },
     "fh-72": {
-        "name": "Gain Living Stone blueprint 080."
+        "name": "Obtén el plano de piedra viva 080."
     },
     "fh-73": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-74": {
-        "name": "Gain a random item blueprint."
+        "name": "Obtén un plano de objeto aleatorio."
     },
     "fh-75": {
-        "name": "Gain 1 ✔."
+        "name": "Obtén 1 ✔."
     },
     "fh-76": {
-        "name": "Unlock a random side scenario."
+        "name": "Desbloquea un escenario secundario aleatorio."
     },
     "fh-77": {
-        "name": "Gain three loot cards."
+        "name": "Obtén tres cartas de botín."
     },
     "fh-78": {
-        "name": "Gain Opulent Shoes 199."
+        "name": "Obtén Zapatos opulentos 199."
     },
     "fh-79": {
-        "name": "Gain 10 Experience."
+        "name": "Obtén 10 XP."
     },
     "fh-80": {
-        "name": "Gain 15 Experience."
+        "name": "Obtén 15 XP."
     },
     "fh-81": {
-        "name": "Gain Unfettered Arm 226."
+        "name": "Obtén Brazo desencadenado 226."
     },
     "fh-82": {
-        "name": "Gain Oak Staff blueprint 072."
+        "name": "Obtén el plano de báculo de roble 072."
     },
     "fh-83": {
-        "name": "Gain Tri-Corner Hat 195."
+        "name": "Obtén Tricornio 195."
     },
     "fh-84": {
-        "name": "Gain Ice Shiv 221."
+        "name": "Obtén Estilete de hielo 221."
     },
     "fh-85": {
-        "name": "Gain 10 money."
+        "name": "Obtén 10 monedas."
     },
     "gh2-1": {
-        "name": "Gain “Magma Waders” (Item 142)"
+        "name": "Obtén “Botas de Magma” (Objeto 142)"
     },
     "gh2-2": {
-        "name": "Suffer 3 damage and gain {POISON}"
+        "name": "Sufre 3 de daño y VENENO {POISON}"
     },
     "gh2-3": {
-        "name": "Gain “Star Earring” (Item 63)"
+        "name": "Obtén “Pendiente de Estrella” (Objeto 63)"
     },
     "gh2-4": {
-        "name": "Gain “Cloak of Phasing” (Item 98)"
+        "name": "Obtén “Capa de Fase” (Objeto 98)"
     },
     "gh2-5": {
-        "name": "Gain “Pendant of Dark Pacts” (Item 128)"
+        "name": "Obtén “Colgante de Pactos Siniestros” (Objeto 128)"
     },
     "gh2-6": {
-        "name": "Random Side Scenario"
+        "name": "Escenario secundario aleatorio"
     },
     "gh2-7": {
-        "name": "Gain “Thief's Hood” (Item 108)"
+        "name": "Obtén “Capucha de Ladrón” (Objeto 108)"
     },
     "gh2-8": {
-        "name": "Suffer 3 damage and gain {CURSE}"
+        "name": "Sufre 3 de daño y MALDICIÓN {CURSE}"
     },
     "gh2-9": {
-        "name": "Gain 20 experience"
+        "name": "Obtén 20 XP"
     },
     "gh2-10": {
-        "name": "Gain 30 gold"
+        "name": "Obtén 30 de oro"
     },
     "gh2-11": {
-        "name": "Random Side Scenario"
+        "name": "Escenario secundario aleatorio"
     },
     "gh2-12": {
-        "name": "Gain 1 ✔"
+        "name": "Obtén 1 ✔"
     },
     "gh2-13": {
-        "name": "Gain 1 ✔"
+        "name": "Obtén 1 ✔"
     },
     "gh2-14": {
-        "name": "Gain 40 gold"
+        "name": "Obtén 40 de oro"
     },
     "gh2-15": {
-        "name": "Gain 20 gold"
+        "name": "Obtén 20 de oro"
     },
     "gh2-16": {
-        "name": "Suffer 3 damage and gain {WOUND}"
+        "name": "Sufre 3 de daño y HERIDA {WOUND}"
     },
     "gh2-17": {
-        "name": "Gain 15 gold"
+        "name": "Obtén 15 de oro"
     },
     "gh2-18": {
-        "name": "Gain “Unstable Explosives” (Item 99)"
+        "name": "Obtén “Explosivos Inestables” (Objeto 99)"
     },
     "gh2-19": {
-        "name": "Gain “Drakescale Boots” (Item 119)"
+        "name": "Obtén “Botas de Escamas de Draco” (Objeto 119)"
     },
     "gh2-20": {
-        "name": "Gain 25 gold"
+        "name": "Obtén 25 de oro"
     },
     "gh2-21": {
-        "name": "Gain 2 ✔"
+        "name": "Obtén 2 ✔"
     },
     "gh2-22": {
-        "name": "Gain “Helm of the Mountain” (Item 129) and “Mountain Hammer” (Item 130)"
+        "name": "Obtén “Yelmo de la Montaña” (Objeto 129) y “Martillo de la Montaña” (Objeto 130)"
     },
     "gh2-23": {
-        "name": "Gain 15 gold"
+        "name": "Obtén 15 de oro"
     },
     "gh2-24": {
-        "name": "Gain “Warding Rod” (Item 104)"
+        "name": "Obtén “Vara de Salvaguarda” (Objeto 104)"
     },
     "gh2-25": {
-        "name": "Gain 1 ✔"
+        "name": "Obtén 1 ✔"
     },
     "gh2-26": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-27": {
-        "name": "Suffer 3 damage and gain {MUDDLE}"
+        "name": "Sufre 3 de daño y CONFUSIÓN {MUDDLE}"
     },
     "gh2-28": {
-        "name": "Gain 2 ✔"
+        "name": "Obtén 2 ✔"
     },
     "gh2-29": {
-        "name": "Gain “Charged Boots” (Item 100)"
+        "name": "Obtén “Botas Cargadas” (Objeto 100)"
     },
     "gh2-30": {
-        "name": "Gain 20 experience"
+        "name": "Obtén 20 XP"
     },
     "gh2-31": {
-        "name": "Gain “Wave Crest” (Item 131)"
+        "name": "Obtén “Collar de las Mareas” (Objeto 131)"
     },
     "gh2-32": {
-        "name": "Random Side Scenario"
+        "name": "Escenario secundario aleatorio"
     },
     "gh2-33": {
-        "name": "Gain “Cure Potion” (Item 101)"
+        "name": "Obtén “Poción de remedio” (Objeto 101)"
     },
     "gh2-34": {
-        "name": "Gain “Drakescale Helm” (Item 121)"
+        "name": "Obtén “Yelmo de Escamas de Draco” (Objeto 121)"
     },
     "gh2-35": {
-        "name": "Gain “Rod of Transference” (Item 115)"
+        "name": "Obtén “Vara de Transferencia” (Objeto 115)"
     },
     "gh2-36": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-37": {
-        "name": "Gain “Shoes of Happiness” (Item 97)"
+        "name": "Obtén “Zapatos de Felicidad” (Objeto 97)"
     },
     "gh2-38": {
-        "name": "Gain 1 ✔"
+        "name": "Obtén 1 ✔"
     },
     "gh2-39": {
-        "name": "Gain 20 experience"
+        "name": "Obtén 20 XP"
     },
     "gh2-40": {
-        "name": "Gain “Fueled Falchion” (Item 110)"
+        "name": "Obtén “Alfanje de Combustión” (Objeto 110)"
     },
     "gh2-41": {
-        "name": "Gain 15 gold"
+        "name": "Obtén 15 de oro"
     },
     "gh2-42": {
-        "name": "Suffer 5 damage"
+        "name": "Sufre 5 de daño"
     },
     "gh2-43": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-44": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-45": {
-        "name": "Gain 2 ✔"
+        "name": "Obtén 2 ✔"
     },
     "gh2-46": {
-        "name": "Gain 15 gold"
+        "name": "Obtén 15 de oro"
     },
     "gh2-47": {
-        "name": "Suffer 3 damage and gain {POISON}"
+        "name": "Sufre 3 de daño y VENENO {POISON}"
     },
     "gh2-48": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-49": {
-        "name": "Gain 15 experience"
+        "name": "Obtén 15 XP"
     },
     "gh2-50": {
-        "name": "Gain “Steam Armor” (Item 106)"
+        "name": "Obtén “Armadura a Vapor” (Objeto 106)"
     },
     "gh2-51": {
-        "name": "Gain 15 experience"
+        "name": "Obtén 15 XP"
     },
     "gh2-52": {
-        "name": "Random Side Scenario"
+        "name": "Escenario secundario aleatorio"
     },
     "gh2-53": {
-        "name": "Gain 1 ✔"
+        "name": "Obtén 1 ✔"
     },
     "gh2-54": {
-        "name": "Gain 15 gold and “Steel Ring” (Item 102)"
+        "name": "Obtén 15 de oro y “Anillo de Acero” (Objeto 102)"
     },
     "gh2-55": {
-        "name": "Gain 20 experience"
+        "name": "Obtén 20 XP"
     },
     "gh2-56": {
-        "name": "Gain 15 gold"
+        "name": "Obtén 15 de oro"
     },
     "gh2-57": {
-        "name": "Random Side Scenario"
+        "name": "Escenario secundario aleatorio"
     },
     "gh2-58": {
-        "name": "Gain 20 gold"
+        "name": "Obtén 20 de oro"
     },
     "gh2-59": {
-        "name": "Gain “Shield of the Righteous” (Item 148)"
+        "name": "Obtén “Escudo del Justo” (Objeto 148)"
     },
     "gh2-60": {
-        "name": "Suffer 5 damage"
+        "name": "Sufre 5 de daño"
     },
     "gh2-61": {
-        "name": "Gain “Boots of Bracing” (Item 143)"
+        "name": "Obtén “Botas de Entereza” (Objeto 143)"
     },
     "gh2-62": {
-        "name": "Gain 20 gold"
+        "name": "Obtén 20 de oro"
     },
     "gh2-63": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-64": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-65": {
-        "name": "Gain “Ranger's Hood” (Item 103)"
+        "name": "Obtén “Capucha de Guardabosques” (Objeto 103)"
     },
     "gh2-66": {
-        "name": "Gain {POISON} and {STRENGTHEN} and Recover 2 lost cards"
+        "name": "Obtén VENENO {POISON} y FORTALECIMIENTO {STRENGTHEN} y recupera 2 cartas perdidas"
     },
     "gh2-67": {
-        "name": "Gain “Doomed Compass” (Item 132)"
+        "name": "Obtén “Brújula Maldita” (Objeto 132)"
     },
     "gh2-68": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-69": {
-        "name": "Gain 25 gold"
+        "name": "Obtén 25 de oro"
     },
     "gh2-70": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-71": {
-        "name": "Gain 2 ✔"
+        "name": "Obtén 2 ✔"
     },
     "gh2-72": {
-        "name": "Gain 25 gold"
+        "name": "Obtén 25 de oro"
     },
     "gh2-73": {
-        "name": "Gain “Necklace of Teeth” (Item 107)"
+        "name": "Obtén “Collar de Dientes” (Objeto 107)"
     },
     "gh2-74": {
-        "name": "Suffer 3 damage and gain {IMMOBILIZE}"
+        "name": "Sufre 3 de daño y INMOBILIZACIÓN {IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "Gain “Drakescale Armor” (Item 120)"
+        "name": "Obtén “Armadura de Escamas de Draco” (Objeto 120)"
     },
     "gh2-76": {
-        "name": "Random Item Design"
+        "name": "Diseño de objeto aleatorio"
     },
     "gh2-77": {
-        "name": "Gain 30 gold"
+        "name": "Obtén 30 de oro"
     },
     "gh2-78": {
-        "name": "Gain 20 gold"
+        "name": "Obtén 20 de oro"
     },
     "gh2-79": {
-        "name": "Random Side Scenario"
+        "name": "Escenario secundario aleatorio"
     }
 }

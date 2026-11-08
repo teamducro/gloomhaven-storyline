@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Bladeswarm",
+        "name": "Rój Ostrzy",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {WOUND}",
@@ -356,9 +356,9 @@ export default {
         ]
     },
     "AA": {
-        "name": "Amber Aegis",
+        "name": "Bursztynowa Egida",
         "perks": [
-            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} “Place one {COLONY} {COLONY_ICON} token of your choice on any empty hex within {RANGE}2”",
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} “Umieść jeden wybrany żeton {COLONY} {COLONY_ICON} na dowolnym pustym polu w promieniu {RANGE}2”",
             "Usuń dwie karty {-1_WHITE}",
             "Usuń cztery karty {+0_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+2_WHITE} {MUDDLE}",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artificer",
+        "name": "Artefaktor",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} {ANY}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} {DISARM}",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombard",
+        "name": "Bombarda",
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
             "Zastąp dwie karty {+0_WHITE} dwiema kartami {AGAIN} {PIERCE}3",
@@ -406,10 +406,10 @@ export default {
         ]
     },
     "BK": {
-        "name": "Brightspark",
+        "name": "Jasna Iskra",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{ANY_X} to add +2 {ATTACK}”",
-            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “{RECOVER} one random card from your discard pile”",
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “{RECOVER} jedną losową kartę z twojego stosu odrzuconych”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “{HEAL}1, (Sojusznik) {RANGE}2”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “{SHIELD}1, (Sojusznik) {RANGE}2”",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+2_WHITE} {ANY}",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Chainguard",
+        "name": "Łańcuchowy Strażnik",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} “{SHACKLE} {CG_CIRCLE}”",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {CG_CIRCLE}”",
@@ -437,14 +437,14 @@ export default {
         ]
     },
     "CT": {
-        "name": "Chieftain",
+        "name": "Wódz",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {POISON}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, {CT_CIRCLE}”",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, all summoned allies owned”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “{BLESS}, na siebie”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} “{IMMOBILIZE} and {PUSH}1”",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą “{+X_WHITE}, where X is the number of summoned allies you own”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą “{+X_WHITE}, gdzie X to liczba posiadanych przez ciebie przywołanych sojuszników”",
             "Zastąp jedną kartę {+1_WHITE} dwiema kartami {+1_WHITE} “{AGAIN}{+1_WHITE} if summon is attacking”",
             "Dodaj jedną kartę {+0_WHITE} {WOUND}, {PIERCE}1",
             "Dodaj jedną kartę {+1_WHITE} {EARTH}",
@@ -453,11 +453,11 @@ export default {
         ]
     },
     "FK": {
-        "name": "Fire Knight",
+        "name": "Ognisty Rycerz",
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{STRENGTHEN} (Sojusznik)”",
-            "Zastąp dwie karty {+0_WHITE} dwiema kartami {+0_WHITE} “{+2_WHITE} if you are on {LADDER} {FK_CIRCLE}”",
+            "Zastąp dwie karty {+0_WHITE} dwiema kartami {+0_WHITE} “{+2_WHITE}, jeśli jesteś na {LADDER} {FK_CIRCLE}”",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {FIRE}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WOUND}",
             "Zastąp dwie karty {+1_WHITE} jedną kartą {+2_WHITE} {FIRE}",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hierophant",
+        "name": "Hierofant",
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {AGAIN} {LIGHT}",
@@ -481,12 +481,12 @@ export default {
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+3_WHITE}",
             "Dodaj dwie karty {AGAIN} “{HEAL}1, na siebie lub sojusznika”",
             "Dodaj jedną kartę {+1_WHITE} {WOUND} {MUDDLE}",
-            "At the start of your first turn each scenario, gain {BLESS}",
+            "Na początku swojej pierwszej tury w każdym scenariuszu zyskaj {BLESS}",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {+0_WHITE}"
         ]
     },
     "HO": {
-        "name": "Hollowpact",
+        "name": "Pustoprzymierzeniec",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}2, na siebie”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}”",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Luminary",
+        "name": "Luminarz",
         "perks": [
             "Usuń cztery karty {+0_WHITE}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE}",
@@ -511,24 +511,24 @@ export default {
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “Perform one {GLOW} {LU_CIRCLE} ability”",
             "Dodaj jedną kartę {+0_WHITE} {ANY}",
             "Dodaj jedną kartę {AGAIN} {+1_WHITE} “{HEAL}1, na siebie”",
-            "TODO:: Dodaj jedną kartę {+0_WHITE} “{POISON}, Target all  enemies in the depicted {AOE.CLEAVE_0_1} area”",
+            "Dodaj jedną kartę {+0_WHITE} “{POISON}, celuje we wszystkich wrogów na przedstawionym obszarze {AOE.CLEAVE_0_1}”",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {+0_WHITE}",
             "Zignoruj negatywne efekty przedmiotu oraz dodaj jedną kartę {AGAIN} “{ANY_X}:{ANY}”"
         ]
     },
     "MF": {
-        "name": "Mirefoot",
+        "name": "Bagnostopy",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
-            "Zastąp dwie karty {+0_WHITE} dwiema kartami “{+X_WHITE}, where X is the poison value of the target”",
+            "Zastąp dwie karty {+0_WHITE} dwiema kartami “{+X_WHITE}, gdzie X to wartość trucizny celu”",
             "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE}",
             "Zastąp jedną kartę {+0_WHITE} dwiema kartami {AGAIN} “Create difficult terrain in the hex occupied by the target”",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+0_WHITE} {WOUND_2}",
             "Add four {AGAIN} {+0_WHITE} “{+1_WHITE} if the target occupy difficult terrain”",
             "Dodaj dwie karty {AGAIN} “{INVISIBLE}, na siebie, if you occupy difficult terrain”",
-            "Gain “Poison Dagger” (Item gh-11). You may carry one additional {ONE-HAND} item with “Dagger” in its name",
-            "Ignore damage, and negative conditions and modifiers from Events, and Usuń jedną kartę {-1_WHITE}",
+            "Zyskaj “Zatruty Sztylet” (przedmiot gh-11). Możesz nosić jeden dodatkowy przedmiot {ONE-HAND} ze słowem „Sztylet” w nazwie.",
+            "Zignoruj obrażenia oraz negatywne stany i modyfikatory ze Zdarzeń i usuń jedną kartę {-1_WHITE}",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {-1_WHITE}"
         ]
     },
@@ -541,13 +541,13 @@ export default {
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND}”",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {AGAIN} “{HEAL}1, na siebie, {EMPOWER}”",
             "Raz na scenariusz, become {RM_CIRCLE} after collecting your 5th loot token",
-            "Become {RM_CIRCLE} each time you lose a card to negate suffering damage",
-            "Whenever one of your abilities causes at least one enemey to gain {RUPTURE}, immediately after that ability perform “{MOVE}1",
+            "Stań się {RM_CIRCLE} za każdym razem, gdy utracisz kartę, aby zignorować otrzymywane obrażenia",
+            "Za każdym razem, gdy jedna z twoich zdolności sprawi, że co najmniej jeden wróg zyska {RUPTURE}, natychmiast po tej zdolności wykonaj “{MOVE}1”",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {-1_WHITE}"
         ]
     },
     "SP": {
-        "name": "Spirit Caller",
+        "name": "Przywoływacz Duchów",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} oraz jedną kartę {+1_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SP_CIRCLE} performed the attack”",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Starslinger",
+        "name": "Gwiezdny Strzelec",
         "perks": [
             "Zastąp dwie karty {+0_WHITE} jedną kartą {AGAIN} “{HEAL}1, na siebie”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} {DISARM} oraz jedną kartę {-1_WHITE} “{INVISIBLE}, na siebie”",
@@ -700,10 +700,10 @@ export default {
         ]
     },
     "IF": {
-        "name": "Infuser",
+        "name": "Nasycacz",
         "masteries": [
-            "Have five active {INFUSION_ICON} bonuses",
-            "Kill at least four enemies, but never attack"
+            "Miej pięć aktywnych bonusów {INFUSION_ICON}",
+            "Zabij co najmniej czterech wrogów, ale nigdy nie atakuj"
         ],
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} i jedną kartę {-1_WHITE} {WIND} {EARTH} {DARK}",
@@ -712,18 +712,18 @@ export default {
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {EARTH_OR_DARK}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE}",
             "Zastąp jedną kartę {+0_WHITE} trzema kartami “Move one waning element to strong” {AGAIN}",
-            "Dodaj dwie karty “+1{ATTACK.fh} for each pair of active {INFUSION_ICON}” {AGAIN}",
+            "Dodaj dwie karty “+1{ATTACK.fh} za każdą parę aktywnych {INFUSION_ICON}” {AGAIN}",
             "Zignoruj efekty scenariusza",
-            "Zignoruj efekty przedmiotów {-1}. Whenever you become exhausted, keep all your active bonuses in play, with your summons acting on initiative 99 each round",
+            "Zignoruj efekty przedmiotów {-1}. Za każdym razem, gdy zostaniesz wyczerpany, zachowaj wszystkie swoje aktywne bonusy w grze, a twoje przywołania działają z inicjatywą 99 w każdej rundzie",
             "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz  {ANY_X} to {RECOVER.fh} one spent {ONE-HAND} or {TWO-HANDS} item",
             "Raz na scenariusz, during ordering of initiative, after all ability cards have been revealed, {ANY}"
         ]
     },
     "PY": {
-        "name": "Pyroclast",
+        "name": "Piroklasta",
         "masteries": [
-            "Create or destroy at least one obstacle or hazardous terrain tile each round",
-            "Move enemies through six diffrerent hexes of hazardous terrain you created in one turn"
+            "W każdej rundzie stwórz lub zniszcz co najmniej jedną przeszkodę lub kafelek niebezpiecznego terenu",
+            "Przesuń wrogów przez sześć różnych pól niebezpiecznego terenu, które stworzyłeś w jednej turze"
         ],
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
@@ -737,18 +737,18 @@ export default {
             "Zignoruj efekty scenariusza",
             "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz destroy one adjacent obstacle to gain {WARD.fh}",
             "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz  {FIRE_X} to perform {WOUND.fh}, {TARGET.fh}1 enemy occupying or adjacent to hazardous terrain",
-            "You and all allies are unaffected by hazardous terrain you create"
+            "Ty i wszyscy twoi sojusznicy jesteście niewrażliwi na niebezpieczny teren, który tworzysz"
         ]
     },
     "SH": {
-        "name": "Shattersong",
+        "name": "Miażdżypieśń",
         "masteries": [
-            "Always have 0 {RESONANCE_ICON} directly before you gain {RESONANCE_ICON} at the end of each of your turns",
-            "Spend 5 {RESONANCE_ICON} on each of five different {WAVE} abilities"
+            "Zawsze miej 0 {RESONANCE_ICON} bezpośrednio przed tym, jak zyskasz {RESONANCE_ICON} na koniec każdej ze swoich tur",
+            "Wydaj 5 {RESONANCE_ICON} na każdej z pięciu różnych zdolności {WAVE}"
         ],
         "perks": [
             "Remove four {+0_WHITE}",
-            "Zastąp dwie karty {-1_WHITE} dwiema kartami {+0_WHITE} “Reveal the top card of the target's monster ability deck”",
+            "Zastąp dwie karty {-1_WHITE} dwiema kartami {+0_WHITE} “Ujawnij wierzchnią kartę z talii zdolności potwora celu”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} {STUN.fh}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} {BRITTLE.fh}",
             "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE} {WIND_OR_LIGHT}",
@@ -756,8 +756,8 @@ export default {
             "Dodaj jedną kartę {+1_WHITE} “Zyskaj 1 {RESONANCE_ICON}”",
             "Zignoruj efekty scenariusza",
             "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz  {WIND_X} to perform {STRENGTHEN.fh}, {RANGE.fh}3 and {LIGHT_X} to perform {BLESS.fh}, {RANGE.fh}3",
-            "Na początku każdego scenariusza możesz gain {BRITTLE.fh} to gain 2 {RESONANCE_ICON}",
-            "Whenever a new room is revealed, you may reveal the top card of both the monster attack modifier deck and all allies' attack modifier decks"
+            "Na początku każdego scenariusza możesz zyskać {BRITTLE.fh}, aby zyskać 2 {RESONANCE_ICON}",
+            "Za każdym razem, gdy zostanie ujawnione nowe pomieszczenie, możesz ujawnić wierzchnią kartę z talii modyfikatorów ataku potworów i z talii modyfikatorów ataku wszystkich sojuszników"
         ]
     },
     "TA": {
@@ -780,10 +780,10 @@ export default {
         ]
     },
     "PC": {
-        "name": "Pain Conduit",
+        "name": "Przekaźnik Bólu",
         "masteries": [
-            "Cause other figures to suffer a total of at least {DAMAGE.fh}40 in one round",
-            "Start a turn with {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} and {MUDDLE.fh}"
+            "Spraw, aby inne figurki otrzymały łącznie co najmniej {DAMAGE.fh}40 w jednej rundzie",
+            "Rozpocznij turę z {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} oraz {MUDDLE.fh}"
         ],
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
@@ -793,18 +793,18 @@ export default {
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE}",
             "Zastąp trzy karty {+1_WHITE} trzema kartami {+1_WHITE} {CURSE.fh}",
             "Dodaj trzy karty “{HEAL.fh}1, na siebie” {AGAIN}",
-            "Dodaj jedną kartę {+0_WHITE} “Add +1{ATTACK.fh} for each negative condition you have”",
+            "Dodaj jedną kartę {+0_WHITE} “Dodaj +1{ATTACK.fh} za każdy negatywny stan, który posiadasz”",
             "Zignoruj efekty scenariusza i dodaj dwie karty {+1_WHITE}",
-            "Each round in which you long rest, you may ignore all negative conditions you have. If you do, they cannot be removed that round",
-            "Whenever you become exhausted, first perform {CURSE.fh}, {TARGET} all, {RANGE.fh}3",
-            "Increase your maximum hit point value by 5"
+            "W każdej rundzie, w której wykonujesz długi odpoczynek, możesz zignorować wszystkie swoje negatywne stany. Jeśli to zrobisz, nie można ich usunąć w tej rundzie",
+            "Za każdym razem, gdy zostaniesz wyczerpany, najpierw wykonaj {CURSE.fh}, {TARGET} wszyscy, {RANGE.fh}3",
+            "Zwiększ swoją maksymalną wartość punktów życia o 5"
         ]
     },
     "SD": {
         "name": "Tancerz Śniegu",
         "masteries": [
             "Spraw, żeby w każdej rundzie poruszył się co najmniej jeden sojusznik lub wróg.",
-            "Upewnij się, że pierwszy sojusznik, który otrzyma {DAMAGE.fh} w każdej rundzie, będzie posiadał co najmniej jeden stan, który wcześniej na niego nałożyłeś."
+            "Upewnij się, że pierwszy sojusznik, który otrzyma {DAMAGE.fh} w każdej rundzie, bezpośrednio przed otrzymaniem {DAMAGE.fh}, będzie posiadał co najmniej jeden stan, który wcześniej na niego nałożyłeś."
         ],
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 sojusznik”",
@@ -819,10 +819,10 @@ export default {
         ]
     },
     "FF": {
-        "name": "Frozen Fist",
+        "name": "Pięść Mrozu",
         "masteries": [
-            "{RECOVER.fh} at least one card from your discard pile each round",
-            "Enter at least ten different hexes with one move ability, then cause one enemy to suffer at least {DAMAGE.fh}10 with one attack ability in the same turn"
+            "{RECOVER.fh} co najmniej jedną kartę ze swojego stosu odrzuconych w każdej rundzie",
+            "Wejdź na co najmniej dziesięć różnych pól jedną zdolnością ruchu, a następnie spraw, aby jeden wróg otrzymał co najmniej {DAMAGE.fh}10 od jednej zdolności ataku w tej samej turze"
         ],
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {DISARM.fh}",
@@ -833,54 +833,54 @@ export default {
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE} “Stwórz jeden 1-hex icy terrain tile in a featureless hex adjacent to the target”",
             "Dodaj jedną kartę {+3_WHITE}",
             "Dodaj dwie karty “{HEAL.fh}1, na siebie” {AGAIN}",
-            "Zignoruj efekty przedmiotów {-1}, and, whenever you enter icy terrain with a move ability, you may ignore the effect to add +1{MOVE.fh}",
-            "Whenever you heal from a long rest, you may {ICE_OR_EARTH_X} to add +2{HEAL.fh}",
-            "Raz na scenariusz, when you would suffer {DAMAGE.fh}, you may negate the {DAMAGE.fh}"
+            "Zignoruj efekty przedmiotów {-1}, a za każdym razem, gdy wejdziesz na lodowy teren zdolnością ruchu, możesz zignorować jego efekt, aby dodać +1{MOVE.fh}",
+            "Za każdym razem, gdy leczysz się podczas długiego odpoczynku, możesz {ICE_OR_EARTH_X}, aby dodać +2{HEAL.fh}",
+            "Raz na scenariusz, gdy miałbyś otrzymać {DAMAGE.fh}, możesz anulować {DAMAGE.fh}"
         ]
     },
     "HV": {
-        "name": "HIVE",
+        "name": "DRON",
         "masteries": [
-            "{TRANSFER_ICON} each round",
-            "{TRANSFER_ICON} into four different summons in one round"
+            "{TRANSFER_ICON} w każdej rundzie",
+            "{TRANSFER_ICON} do czterech różnych przywołańców w jednej rundzie"
         ],
         "perks": [
             "Usuń jedną kartę {-2_WHITE} i jedną kartę {+1_WHITE}",
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “After this attack ability, grant one of your summons: {MOVE.fh}2”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “Po tej zdolności ataku przyznaj jednemu ze swoich przywołań: {MOVE.fh}2”",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “After this attack ability, {TRANSFER_ICON}”",
             "Dodaj jedną kartę {+1_WHITE} “{HEAL.fh}1, na siebie”",
             "Dodaj jedną kartę {+2_WHITE} {MUDDLE.fh}",
             "Dodaj dwie karty {POISON.fh} {AGAIN}",
             "Dodaj dwie karty {WOUND.fh} {AGAIN}",
-            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz do so on any initiative value, choosing your initiative after all ability cards have been revealed, and you decide how your summons perform their abilities for the round",
-            "At the end of each of your short rests, you may {TRANSFER_ICON}",
-            "Whenever you would gain {WOUND.fh}, prevent the condition"
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz to zrobić przy dowolnej wartości inicjatywy, wybierając inicjatywę po ujawnieniu wszystkich kart zdolności, a ty decydujesz, jak twoje przywołania wykonują swoje zdolności w tej rundzie",
+            "Na koniec każdego ze swoich krótkich odpoczynków możesz {TRANSFER_ICON}",
+            "Za każdym razem, gdy miałbyś zyskać {WOUND.fh}, zapobiegnij temu stanowi"
         ]
     },
     "ME": {
-        "name": "Metal Mosaic",
+        "name": "Metalowa Mozaika",
         "masteries": [
-            "Never attack",
-            "For four consecutive rounds, move the pressure gague up or down three levels from where it started the round ({PRESSURE_LOW_ICON} to {PRESSURE_HIGH_ICON}, or vice versa)"
+            "Nidy nie wykonaj ataku",
+            "Przez cztery kolejne rundy przesuń wskaźnik ciśnienia w górę lub w dół o trzy poziomy względem poziomu, na którym zaczął rundę ({PRESSURE_LOW_ICON} do {PRESSURE_HIGH_ICON} lub odwrotnie)"
         ],
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{PRESSURE_UP_ICON} or {PRESSURE_DOWN_ICON}”",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą “{SHIELD.fh}1” {AGAIN}",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} “The target and all enemies adjacent to it suffer {DAMAGE.fh}1”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} “Cel i wszyscy sąsiadujący z nim wrogowie otrzymują {DAMAGE.fh}1”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {PIERCE.fh}3 {AGAIN} i jedną kartą “{RETALIATE.fh}2” {AGAIN}",
             "Dodaj jedną kartę {+1_WHITE} “{HEAL.fh}2, na siebie”",
             "Dodaj jedną kartę {+3_WHITE}",
             "Zignoruj efekty przedmiotów {-1} i dodaj dwie karty {+1_WHITE}",
             "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {PRESSURE_UP_ICON} or {PRESSURE_DOWN_ICON}",
-            "Whenever you would gain {POISON.fh}, you may suffer {DAMAGE.fh}1 to prevent the condition",
-            "Raz na scenariusz, when you would become exhausted, instead gain {BRITTLE.fh} and {INVISIBLE.fh}, lose all your cards, {RECOVER.fh} four lost cards, and then discard the recovered"
+            "Za każdym razem, gdy miałbyś zyskać {POISON.fh}, możesz otrzymać {DAMAGE.fh}1, aby zapobiec temu stanowi",
+            "Raz na scenariusz, gdy miałbyś zostać wyczerpany, zamiast tego zyskaj {BRITTLE.fh} i {INVISIBLE.fh}, utrać wszystkie swoje karty, {RECOVER.fh} cztery utracone karty, a następnie odrzuć odzyskane karty"
         ]
     },
     "DT": {
-        "name": "Deepwraith",
+        "name": "Głębinowy Upiór",
         "masteries": [
-            "Perform all your attacks with advantage",
-            "Infuse {DARK} each round"
+            "Wykonuj wszystkie swoje ataki z Korzyścią",
+            "Zasil {DARK} w każdej rundzie"
         ],
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
@@ -892,16 +892,16 @@ export default {
             "Zastąp trzy karty {+1_WHITE} trzema kartami {+1_WHITE} {CURSE.fh}",
             "Dodaj dwie karty {+1_WHITE} “Zyskaj 1{TROPHY_ICON}”",
             "Zignoruj efekty scenariusza and Usuń dwie karty {+0_WHITE}",
-            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {LOOT.fh}1 one adjacent hex. If you gain any loot tokens, gain 1 {TROPHY_ICON}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {LOOT 1} jedno sąsiednie pole. Jeśli zyskasz jakiekolwiek żetony łupu, zyskaj 1 {TROPHY_ICON}",
             "Na początku każdego scenariusza gain 2 {TROPHY_ICON}",
-            "While you have {INVISIBLE.fh}, gain advantage on all your attacks"
+            "Gdy masz {INVISIBLE.fh}, zyskujesz Korzyść przy wszystkich swoich atakach"
         ]
     },
     "CR": {
-        "name": "Crashing Tide",
+        "name": "Miażdżąca Fala",
         "masteries": [
-            "Never suffer damage from attacks, and be targeted by at least five attacks",
-            "At the start of each of your rests, have more active {TIDE_ICON} than cards in your discard pile"
+            "Nigdy nie otrzymaj obrażeń od ataków i bądź wzięty na cel przez co najmniej pięć ataków",
+            "Na początku każdego ze swoich odpoczynków miej więcej aktywnych {TIDE_ICON} niż kart w stosie odrzuconych"
         ],
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} dwiema kartami {PIERCE.fh}3 {AGAIN}",
@@ -911,74 +911,444 @@ export default {
             "Dodaj jedną kartę {+2_WHITE} {MUDDLE.fh}",
             "Dodaj jedną kartę {+1_WHITE} {DISARM.fh}",
             "Dodaj dwie karty “{HEAL.fh}1, na siebie” {AGAIN}",
-            "Zignoruj efekty przedmiotów {-1}, and, whenever you would gain {IMPAIR.fh}, prevent the condition",
-            "Whenever you declare a long rest during card selection, gain {SHIELD.fh}1 for the round",
-            "Gain advantage on all your attacks performed while occupying or targeting enemies occupying water hexes"
+            "Zignoruj efekty przedmiotów {-1}, a za każdym razem, gdy miałbyś zyskać {IMPAIR.fh}, zapobiegnij temu stanowi",
+            "Za każdym razem, gdy podczas wyboru kart zadeklarujesz długi odpoczynek, zyskaj {SHIELD.fh}1 na tę rundę",
+            "Otrzymaj korzyść dla wszystkich twoich ataków wykonanych podczas zajmowania lub atakowania wrogów zajmujących pola wody"
         ]
     },
     "SA": {
         "name": "Satha",
+        "masteries": [
+            "Przez cały scenariusz niech co najmniej jeden sojusznik wykonuje zdolność ruchu lub ataku podczas każdej z twoich tur, z wyjątkiem tur, w których wykonujesz długi odpoczynek",
+            "Przez cały scenariusz nigdy nie dopuść, aby sojusznik był celem ataku"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{SHIELD.fh}1” {AGAIN} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {ICE} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally and self” card",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add one {+0_WHITE} “Grant one ally within {RANGE.fh}3: {ATTACK.fh}2 {RANGE.fh}3 or {ATTACK.fh}3” card",
-            "Add one {AGAIN} {DISARM.fh} card and one {AGAIN} “Grant one ally within {RANGE.fh}3: {MOVE.fh}2” card",
-            "Add two {AGAIN} “{WARD.fh}, {RANGE.fh}1” cards",
-            "Ignore item {-1} effects and whenever you would gain {STUN.fh}, prevent the condition",
-            "Whenever you long rest, perform: {STRENGTHEN.fh}, {TARGET.fh}1 ally, {RANGE.fh}3",
-            "All initiative values may be discussed freely and precisely",
-            "The first time each scenario that you or an ally exhaust, perform: {HEAL.fh}3, {TARGET.fh}all, {WARD.fh}, {STRENGTHEN.fh}"
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{SHIELD.fh}1” {AGAIN}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {ICE}",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 sojusznik i na siebie”",
+            "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE}",
+            "Dodaj jedną kartę {+0_WHITE} “Daj jednemu sojusznikowi w promieniu {RANGE.fh}3: {ATTACK.fh}2 {RANGE.fh}3 lub {ATTACK.fh}3”",
+            "Dodaj jedną kartę {AGAIN} {DISARM.fh} oraz jedną kartę {AGAIN} “Daj jednemu sojusznikowi w promieniu {RANGE.fh}3: {MOVE.fh}2”",
+            "Dodaj dwie karty {AGAIN} “{WARD.fh}, {RANGE.fh}1”",
+            "Zignoruj efekty przedmiotów {-1} i za każdym razem, gdy miałbyś zyskać {STUN.fh}, zapobiegnij temu stanowi",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, wykonaj: {STRENGTHEN.fh}, {TARGET.fh}1 sojusznik, {RANGE.fh}3",
+            "Wszystkie wartości inicjatywy można swobodnie i dokładnie omawiać",
+            "Po raz pierwszy w każdym scenariuszu, gdy ty lub sojusznik zostaniecie wyczerpani, wykonaj: {HEAL.fh}3, {TARGET.fh}wszyscy, {WARD.fh}, {STRENGTHEN.fh}"
         ]
     },
     "HA": {
-        "name": "Hail",
+        "name": "Grad",
+        "masteries": [
+            "Przez cały scenariusz zyskuj co najmniej 1 {RESOLVE_WHITE} w każdej rundzie",
+            "W jednym scenariuszu, przez trzy kolejne rundy, wydawaj co najmniej 3 {RESOLVE_WHITE} w każdej rundzie"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{WOUND.fh} or {IMMOBILIZE.fh}” card",
-            "Replace one {-1_WHITE} card with one {+1_WHITE} {WILD} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “{POISON.fh} or {MUDDLE.fh}” card",
-            "Replace one {+0_WHITE} card with one {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 ally” {AGAIN} card",
-            "Replace two {+1_WHITE} cards with two {+2_WHITE} cards",
-            "Add one {+1_WHITE} {STUN.fh} card",
-            "Add one {+3_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 ally” card",
-            "Ignore scenario effects and add two {+1_WHITE} cards",
-            "Whenever you short rest, you may choose which card to lose",
-            "Your and your allies' enhancements cost five gold less and whenever an ally enhances a card, you gain five gold",
-            "Add one {+1_WHITE} “{HA} gains 1 {RESOLVE_WHITE}” card to the monster attack modifier deck"
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{WOUND.fh} lub {IMMOBILIZE.fh}”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} {ANY}",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “{POISON.fh} lub {MUDDLE.fh}”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “{HEAL.fh}1, {TARGET.fh}1 sojusznik” {AGAIN}",
+            "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE}",
+            "Dodaj jedną kartę {+1_WHITE} {STUN.fh}",
+            "Dodaj jedną kartę {+3_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 sojusznik”",
+            "Zignoruj efekty scenariusza i dodaj dwie karty {+1_WHITE}",
+            "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz wybrać, którą kartę utracić",
+            "Ulepszenia twoje i twoich sojuszników kosztują pięć sztuk złota mniej, a za każdym razem, gdy sojusznik ulepsza kartę, zyskujesz pięć sztuk złota",
+            "Dodaj jedną kartę {+1_WHITE} “{HA} zyskuje 1 {RESOLVE_WHITE}” do talii modyfikatorów ataku potworów"
         ]
     },
     "CA": {
         "name": "Cassandra",
+        "masteries": [
+            "Przez cały scenariusz odsłaniaj co najmniej jedną kartę z talii modyfikatorów ataku lub talii kart zdolności potworów w każdej rundzie",
+            "Wybierz jako cel 6 figurek zdolnością, która celuje w figurki zajmujące pola zawierające {RIFT_WHITE}"
+        ],
         "perks": [
-            "Remove one {-2_WHITE} card",
-            "Remove two {-1_WHITE} cards",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} “{BLESS.fh}, self or {TARGET.fh}1 ally” card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} “Add +1{ATTACK.fh} if the top card of the monster attack modifier deck is revealed” card",
-            "Replace one {+0_WHITE} card with one {+2_WHITE} {LIGHT_OR_DARK} card",
-            "Add one {+1_WHITE} “Place this card in your active area. When you next place a {RIFT_WHITE}, discard this card to place another {RIFT_WHITE} within {RANGE.fh}1 of it” {AGAIN} card",
-            "Ignore scenario effects and add two {+1_WHITE} cards",
-            "Whenever you long rest, you may read one unread {SECTION} from the current scenario’s “Section Links",
-            "Whenever you place a {RIFT_WHITE}, you may perform “{PULL.fh}1, {TARGET.fh}1 ally or enemy, {RANGE.fh}1” as if you occupied a hex containing a {RIFT_WHITE}",
-            "Whenever a deck is shuffled, you may set aside all revealed cards from that deck and place them back on top after shuffling"
+            "Usuń jedną kartę {-2_WHITE}",
+            "Usuń dwie karty {-1_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{BLESS.fh}, na siebie lub {TARGET.fh}1 sojusznik”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE} “Dodaj +1{ATTACK.fh}, jeśli odsłonięto górną kartę talii modyfikatorów ataku potworów”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE} {LIGHT_OR_DARK}",
+            "Dodaj jedną kartę {+1_WHITE} “Połóż tę kartę w swoim obszarze aktywnym. Gdy następnym razem położysz {RIFT_WHITE}, odrzuć tę kartę, aby położyć kolejny {RIFT_WHITE} w promieniu {RANGE.fh}1 od niego” {AGAIN}",
+            "Zignoruj efekty scenariusza i dodaj dwie karty {+1_WHITE}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz przeczytać jeden nieprzeczytany {SECTION} z „Powiązań paragrafów” bieżącego scenariusza",
+            "Za każdym razem, gdy kładziesz {RIFT_WHITE}, możesz wykonać “{PULL.fh}1, {TARGET.fh}1 sojusznik lub wróg, {RANGE.fh}1”, tak jakbyś zajmował pole zawierające {RIFT_WHITE}",
+            "Za każdym razem, gdy talia jest tasowana, możesz odłożyć na bok wszystkie odsłonięte karty z tej talii i po przetasowaniu położyć je z powrotem na wierzch"
         ]
     },
     "AN": {
         "name": "Anaphi",
+        "masteries": [
+            "Spraw, aby 3 różni przywołańcy zabili po 3 wrogów",
+            "W każdym z 3 scenariuszy wykonaj 8 ataków skierowanych we wrogów, którzy mają negatywne stany"
+        ],
         "perks": [
-            "Replace one {-2_WHITE} card with one {+0_WHITE} card",
-            "Replace one {-1_WHITE} card with one {+0_WHITE} {POISON.fh} card",
-            "Replace two {+0_WHITE} cards with one {+1_WHITE} “Add +1{ATTACK.fh} when drawn by a summon” card",
-            "Replace one {+0_WHITE} card with one {+0_WHITE} {STUN.fh} card",
-            "Replace one {+1_WHITE} card with one {+1_WHITE} “{INVISIBLE.fh}, self” card",
-            "Add one {+2_WHITE} {WIND_OR_DARK} card",
-            "Add one {+2_WHITE} “{STRENGTHEN.fh}, 1 of your summons” card",
-            "Ignore scenario effects and remove one {+0_WHITE} card",
-            "Whenever you long rest, you may {WIND_OR_DARK}",
-            "Once each scenario, during your turn, all enemies adjacent to a wall suffer {DAMAGE.fh}1",
-            "At the start of the first round of each scenario, after all ability cards have been revealed, control one enemy within {RANGE.fh}5: {MOVE.fh}2"
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {POISON.fh}",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “Dodaj +1{ATTACK.fh}, gdy dobierze ją przywołaniec”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} {STUN.fh}",
+            "Zastąp jedną kartę {+1_WHITE} jedną kartą {+1_WHITE} “{INVISIBLE.fh}, na siebie”",
+            "Dodaj jedną kartę {+2_WHITE} {WIND_OR_DARK}",
+            "Dodaj jedną kartę {+2_WHITE} “{STRENGTHEN.fh}, 1 z twoich przywołańców”",
+            "Zignoruj efekty scenariusza i usuń jedną kartę {+0_WHITE}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {WIND_OR_DARK}",
+            "Raz na scenariusz, podczas twojej tury, wszyscy wrogowie sąsiadujący ze ścianą otrzymują {DAMAGE.fh}1",
+            "Na początku pierwszej rundy każdego scenariusza, po odsłonięciu wszystkich kart zdolności, przejmij kontrolę nad jednym wrogiem w promieniu {RANGE.fh}5: {MOVE.fh}2"
+        ]
+    },
+    "BR2": {
+        "name": "Kark",
+        "masteries": [
+            "W 3 różnych scenariuszach zabij wroga, którego w tej rundzie odepchnąłeś lub przyciągnąłeś",
+            "W jednym scenariuszu, przez 3 kolejne rundy, zagraj 6 różnych kart zdolności i spraw, aby wrogowie otrzymali 7 lub więcej obrażeń w każdej z tych rund"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {AGAIN} {SHIELD.fh}1",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {AGAIN} “Połóż tę kartę w swoim obszarze aktywnym. Przy następnym ataku skierowanym w ciebie, wykonanym przez sąsiedniego wroga, odrzuć tę kartę, aby zyskać {RETALIATE.fh}2 na ten atak”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} {STUN.fh}",
+            "Dodaj jedną kartę {+1_WHITE} “{HEAL.fh}2, na siebie”",
+            "Dodaj jedną kartę {+2_WHITE} {PUSH.fh}2",
+            "Dodaj jedną kartę {+3_WHITE}",
+            "Dodaj jedną kartę {AGAIN} {DISARM.fh} oraz jedną kartę {AGAIN} {MUDDLE.fh}",
+            "Zignoruj efekty przedmiotów {-1} i dodaj dwie karty {+1_WHITE}",
+            "Raz na scenariusz, podczas twojej tury, możesz wykonać: {LOOT 1}, jeśli ta zdolność zbierze co najmniej jeden żeton pieniędzy, możesz {RECOVER.fh} jeden przedmiot {BODY}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, dodaj +1 {MOVE.fh} do swojej pierwszej zdolności ruchu w następnej rundzie",
+            "Każda postać zyskuje Korzyść przy swoim pierwszym ataku w pierwszej rundzie każdego scenariusza"
+        ]
+    },
+    "CH2": {
+        "name": "Skałosercy",
+        "masteries": [
+            "Przez cały scenariusz stwórz, zniszcz lub przesuń co najmniej jeden kafelek przeszkody w każdej rundzie",
+            "W jednym scenariuszu ulecz 8 lub więcej punktów życia w jednej rundzie, zadaj 8 lub więcej obrażeń zdolnością ataku dystansowego i zadaj 8 lub więcej obrażeń zdolnością ataku wręcz"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {AGAIN} {+1_WHITE} “Stwórz jeden kafelek przeszkody o wielkości 1 pola na pustym polu sąsiadującym z celem”",
+            "Zastąp jedną kartę {+0_WHITE} dwiema kartami {+1_WHITE} {PUSH.fh}1",
+            "Dodaj jedną kartę {+2_WHITE} {IMMOBILIZE.fh}",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {AGAIN} {MUDDLE.fh}",
+            "Zignoruj efekty przedmiotów {-1}",
+            "Raz na scenariusz, podczas twojej tury, możesz zniszczyć jedną przeszkodę o wielkości 1 pola w promieniu {RANGE.fh}5, aby {TELEPORT.fh} na pole, które zajmowała",
+            "Na koniec każdego ze swoich odpoczynków możesz zniszczyć jedną przeszkodę o wielkości 1 pola w promieniu {RANGE.fh}3, aby {EARTH}",
+            "Za każdym razem, gdy zostanie odkryte nowe pomieszczenie, przejmij kontrolę nad wszystkimi wrogami w nowo odkrytym pomieszczeniu: {MOVE.fh}1, ten ruch musi zakończyć się na pustym polu"
+        ]
+    },
+    "MT2": {
+        "name": "Myślołap",
+        "masteries": [
+            "W jednym scenariuszu zabij 5 lub więcej wrogów zdolnościami kontroli",
+            "W jednym scenariuszu uruchom efekt ataku z czterech różnych Wzmocnień co najmniej 3 razy każde"
+        ],
+        "perks": [
+            "Zastąp dwie karty {-1_WHITE} jedną kartą {+0_WHITE} “Po zdolności ataku przejmij kontrolę nad celem: {MOVE.fh}1”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Dodaj +1 {ATTACK.fh} za każdy negatywny stan celu”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE}",
+            "Dodaj dwie karty {+1_WHITE} {IMMOBILIZE.fh}",
+            "Dodaj jedną kartę {+2_WHITE} {ICE}",
+            "Dodaj jedną kartę {AGAIN} “{INVISIBLE.fh}, na siebie”",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {AGAIN} {+1_WHITE}",
+            "Za każdym razem, gdy kontrolujesz atak wroga, możesz sprawić, aby wróg użył twojej talii modyfikatorów ataku",
+            "Przy określaniu celu przez potwory uznaje się, że jesteś ostatni w kolejności inicjatywy",
+            "Na koniec każdego ze swoich odpoczynków możesz {ICE_X}/{DARK_X}, aby przejąć kontrolę nad jednym wrogiem w promieniu {RANGE.fh}5: {ATTACK.fh}1"
+        ]
+    },
+    "SC2": {
+        "name": "Szelma",
+        "masteries": [
+            "Przez cały scenariusz atakuj tylko wrogów sąsiadujących z jednym z twoich sojuszników lub niesąsiadujących z żadnym z ich sojuszników i wykonaj co najmniej 10 ataków",
+            "Zakończ 3 scenariusze z 12 lub więcej żetonami pieniędzy"
+        ],
+        "perks": [
+            "Usuń jedną kartę {-2_WHITE}",
+            "Usuń dwie karty {-1_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Zyskaj jeden żeton pieniędzy, jeśli ten atak był skierowany w sąsiedniego wroga”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE}",
+            "Zastąp jedną kartę {+1_WHITE} jedną kartą {AGAIN} {+1_WHITE} “{INVISIBLE.fh}, na siebie”",
+            "Dodaj jedną kartę {+1_WHITE} {DISARM.fh}",
+            "Na koniec każdego ze swoich odpoczynków możesz położyć jeden ze swoich żetonów pieniędzy na polu zajmowanym przez wroga w promieniu {RANGE.fh}3, aby wykonać: {ATTACK.fh}1, {TARGET.fh} ten wróg, {RANGE.fh}3",
+            "Za każdym razem, gdy ukończysz zdarzenie w mieście, dobierz kartę modyfikatora ataku tak, jakbyś wykonywał {ATTACK.fh}4. Zyskaj tyle złota, ile wynosiłoby {DAMAGE.fh} zadane przez ten atak",
+            "Raz na scenariusz, podczas twojej tury, możesz wykonać: {INVISIBLE.fh}, na siebie"
+        ]
+    },
+    "SW2": {
+        "name": "Tkaczka Zaklęć",
+        "masteries": [
+            "W jednym scenariuszu zużyj zarówno {FIRE}, jak i {ICE} w tej samej turze 6 razy",
+            "W jednym scenariuszu wykonaj 4 różne akcje {LOST.fh} po dwa razy każdą"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {ANY}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Dodaj +2 {ATTACK.fh}, jeśli dobrano ją podczas akcji z {LOST.fh}”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {CURSE.fh}",
+            "Dodaj jedną kartę {+1_WHITE} {STUN.fh}",
+            "Dodaj jedną kartę {+2_WHITE} {FIRE}/{ICE}",
+            "Zignoruj efekty scenariusza i usuń jedną kartę {+0_WHITE}",
+            "Raz na scenariusz, gdy miałbyś otrzymać {DAMAGE.fh}, możesz zyskać {INVISIBLE.fh} i {STUN.fh}, aby zignorować to {DAMAGE.fh}",
+            "Za każdym razem, gdy wykonujesz krótki odpoczynek, jeśli <i>Pobudzający Eter</i> znajduje się w twoim stosie odrzuconych, najpierw go {RECOVER.fh}",
+            "Na koniec każdej ze swoich tur, w której wykonałeś akcję z {LOST.fh}, zyskaj {BLESS.fh}"
+        ]
+    },
+    "TI2": {
+        "name": "Druciarz",
+        "masteries": [
+            "Przez cały scenariusz podczas każdej ze swoich tur daj wrogowi negatywny stan, daj sojusznikowi pozytywny stan, ulecz sojusznika lub daj sojusznikowi tarczę",
+            "Wykonaj 11 różnych akcji {LOST.fh}"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 sojusznik”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WOUND.fh}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {POISON.fh}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {IMMOBILIZE.fh}",
+            "Dodaj jedną kartę {+2_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 sojusznik”",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 sojusznik”",
+            "Raz na scenariusz jeden sąsiedni sojusznik może użyć jednego z twoich przedmiotów <i>mikstur</i> {SMALL-ITEM} podczas swojej tury, bez jego utraty {LOST.fh}",
+            "Za każdym razem, gdy wykonujesz akcję z {LOST.fh}, możesz {ANY}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz wykonać: {HEAL.fh}2, {RANGE.fh}3"
+        ]
+    },
+    "BE2": {
+        "name": "Berserker",
+        "masteries": [
+            "Zabij 20 wrogów swoim odwetem",
+            "W jednym scenariuszu zakończ wszystkie swoje tury z punktami życia na poziomie połowy maksimum lub niższym, nie ulegając wyczerpaniu"
+        ],
+        "perks": [
+            "Usuń jedną kartę {-2_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {AGAIN} “{HEAL.fh}1, na siebie”",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “Możesz otrzymać {DAMAGE.fh}2, aby dodać +2 {ATTACK.fh}”",
+            "Zastąp jedną kartę {+0_WHITE} dwiema kartami {AGAIN} {WOUND.fh}",
+            "Dodaj jedną kartę {+2_WHITE} {FIRE}",
+            "Dodaj jedną kartę {AGAIN} {STUN.fh}",
+            "Dodaj jedną kartę {2X_MODIFIER} “Otrzymaj {DAMAGE.fh} równe połowie twoich aktualnych punktów życia (zaokrąglone w dół)”",
+            "Zignoruj efekty przedmiotów {-1} i dodaj jedną kartę {+1_WHITE}",
+            "Za każdym razem, gdy leczysz się podczas długiego odpoczynku, dodaj +1 {HEAL.fh}",
+            "Raz na scenariusz, gdy {DAMAGE.fh} z ataku zredukowałoby twoje aktualne punkty życia poniżej 1, ustaw zamiast tego swoje aktualne punkty życia na 1 i wykonaj: {ATTACK.fh}2, {TARGET.fh} atakujący",
+            "Na koniec każdej ze swoich tur możesz przejąć kontrolę nad wszystkimi sąsiednimi wrogami: {ATTACK.fh} +0 {TARGET.fh} Berserker"
+        ]
+    },
+    "BS2": {
+        "name": "Rój Ostrzy",
+        "masteries": [
+            "Wykonaj 6 różnych zdolności {PERSISTENT}{LOST.fh}, z czego nie więcej niż 3 z 6 to zdolności przywołania",
+            "Zyskaj to mistrzostwo, gdy uznasz, że na nie zasługujesz"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {WOUND.fh}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {POISON.fh}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WIND}/{DARK}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {EARTH}/{LIGHT}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} “Dodaj +1 {ATTACK.fh} za każdą kartę z {LOST.fh} w obszarze aktywnym Roju Ostrzy”",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {+1_WHITE}",
+            "Zignoruj efekty przedmiotów {-1} i dodaj jedną kartę {+1_WHITE}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {TELEPORT.fh} na pole zajmowane przez jednego z twoich przywołańców i jednocześnie {TELEPORT.fh} tego przywołańca na pole, które zajmowałeś",
+            "Raz na scenariusz, gdy wykonujesz akcję z {LOST.fh}, możesz natychmiast zagrać jedną kartę z ręki, aby wykonać akcję z {LOST.fh} tej karty",
+            "Możesz dodatkowo zabierać do każdego scenariusza cztery przedmioty {ONE-HAND}, dwa przedmioty {TWO-HANDS} albo dwa przedmioty {ONE-HAND} i jeden przedmiot {TWO-HANDS}."
+        ]
+    },
+    "DS2": {
+        "name": "Siewca Zguby",
+        "masteries": [
+            "Zabij 20 wrogów, którzy mają {DOOM}",
+            "W jednej rundzie ty i jeden z twoich przywołańców musicie wykonać łącznie 6 lub więcej zdolności ataku"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {-1_WHITE} “Siewca Zguby wykonuje: {ATTACK.fh}2, {RANGE.fh}5”",
+            "Zastąp dwie karty {+0_WHITE} dwiema kartami {+1_WHITE}",
+            "Dodaj jedną kartę {+0_WHITE} “Daj jednemu ze swoich przywołańców sąsiadujących z celem: {ATTACK.fh}+0”",
+            "Dodaj jedną kartę {+3_WHITE}",
+            "Dodaj jedną kartę {AGAIN} {STUN.fh}",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {AGAIN} {+1_WHITE}",
+            "Na początku każdego scenariusza odsłoń górną kartę każdej talii kart zdolności potworów w scenariuszu",
+            "Za każdym razem, gdy odpoczywasz, po tym jak {RECOVER.fh} swoje karty ze stosu odrzuconych, możesz zagrać jedną kartę z ręki, aby wykonać akcję {DOOM} tej karty",
+            "W turze każdego z twoich przywołańców możesz sprawić, aby pominęli swoją turę i zamiast tego wykonali {MOVE.fh}+0, traktując ciebie jako swój cel"
+        ]
+    },
+    "EL2": {
+        "name": "Elementalista",
+        "masteries": [
+            "W jednym scenariuszu zużyj 4 lub więcej żywiołów w jednej turze 5 razy",
+            "Raz w każdym z 3 różnych scenariuszy miej wszystkie 6 żywiołów silnych lub słabnących jednocześnie"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {FIRE}/{WIND}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {FIRE}/{EARTH}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {ICE}/{WIND}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {ICE}/{EARTH}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {FIRE}/{ICE}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WIND}/{EARTH}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {LIGHT}/{DARK}",
+            "Dodaj dwie karty {AGAIN} {ANY}",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {AGAIN} {ANY}",
+            "Na początku każdego scenariusza możesz {ANY}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, {ANY_X}: {ANY}",
+            "{FIRE}, {ICE}, {WIND} i {EARTH} nie słabną na koniec każdej rundy"
+        ]
+    },
+    "NS2": {
+        "name": "Nocarz",
+        "masteries": [
+            "W jednym scenariuszu zasil lub zużyj {DARK} podczas każdej ze swoich tur",
+            "W jednym scenariuszu wykonaj zdolność ataku podczas swojej tury przez 5 kolejnych rund"
+        ],
+        "perks": [
+            "Usuń jedną kartę {-2_WHITE}",
+            "Usuń dwie karty {-1_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} dwiema kartami {AGAIN} “Po zdolności ataku daj jednemu sąsiedniemu sojusznikowi lub sobie: {TELEPORT.fh}2”",
+            "Zastąp jedną kartę {NULL_MODIFIER} jedną kartą {-2_WHITE}",
+            "Zastąp dwie karty {+0_WHITE} dwiema kartami {+1_WHITE} “Jeśli ten atak zabije cel, przetasuj jedną kartę {CURSE.fh} do talii modyfikatorów ataku potworów”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE} {DARK}",
+            "Zastąp jedną kartę {+1_WHITE} jedną kartą {+0_WHITE} “Połóż jedno rozdarcie na polu sąsiadującym z celem”",
+            "Zignoruj efekty scenariusza i dodaj dwie karty {+1_WHITE}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {DARK}",
+            "Raz na scenariusz, podczas twojej tury, połóż jedno rozdarcie na sąsiednim polu",
+            "Jeśli {CURSE.fh} sprawi, że wróg nie zada żadnych {DAMAGE.fh} podczas swojego ataku, ten wróg otrzymuje {DAMAGE.fh}3"
+        ]
+    },
+    "PH2": {
+        "name": "Piewca Zarazy",
+        "masteries": [
+            "W jednej turze zabij 3 lub więcej wrogów bez dobierania karty modyfikatora ataku",
+            "W jednym scenariuszu nałóż lub usuń {POISON.fh} z sojusznika lub wroga w każdej rundzie"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “Daj celowi lub jednemu wrogowi w promieniu {RANGE.fh}2 od celu zarazę”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {CURSE.fh}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {IMMOBILIZE.fh}",
+            "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE}",
+            "Dodaj jedną kartę {+1_WHITE} {STUN.fh}",
+            "Dodaj trzy karty {AGAIN} “Daj celowi lub jednemu wrogowi w promieniu {RANGE.fh}2 od celu {POISON.fh}”",
+            "Dodaj dwie karty {AGAIN} “{HEAL.fh}1, {TARGET.fh}1 sojusznik”",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {+1_WHITE}",
+            "Masz {FLYING.fh}",
+            "Za każdym razem, gdy leczysz się podczas długiego odpoczynku, możesz usunąć {POISON.fh} z jednego sojusznika, aby dodać +1 {HEAL.fh}",
+            "Raz na scenariusz, gdy wróg z zarazą miałby zginąć, najpierw przejmij kontrolę nad tym wrogiem i sprawij, aby wykonał zdolności ze swojej karty zdolności, dodając zarazę do wszystkich jego ataków, a następnie niech zginie"
+        ]
+    },
+    "QM2": {
+        "name": "Kwatermistrz",
+        "masteries": [
+            "W jednym scenariuszu wydaj 50 zapasów, aby odświeżyć utracone przedmioty o wartości 50 szt. złota, 3 razy",
+            "Przez cały scenariusz dawaj sobie lub sojusznikowi przedmiot z zapasu przedmiotów Kwatermistrza w każdej rundzie, z wyjątkiem rund, w których wykonujesz długi odpoczynek"
+        ],
+        "perks": [
+            "Zastąp dwie karty {-1_WHITE} jedną kartą {+0_WHITE} {MUDDLE.fh}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} “Zyskaj 10 zapasów”",
+            "Zastąp dwie karty {+0_WHITE} dwiema kartami {AGAIN} {PIERCE.fh}3",
+            "Zastąp jedną kartę {+1_WHITE} dwiema kartami {+0_WHITE} “Zyskaj przedmiot <i>Kolczasty Pas</i> lub <i>Żelazna Płyta</i>”",
+            "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE}",
+            "Dodaj jedną kartę {AGAIN} “Zyskaj przedmiot <i>Zwój Przeniesienia</i> lub <i>Naostrzony Kordzik</i>”",
+            "Dodaj jedną kartę {AGAIN} {STUN.fh}",
+            "Zignoruj efekty przedmiotów {-1} i usuń jedną kartę {+0_WHITE}",
+            "Możesz zabierać do każdego scenariusza jeden dodatkowy przedmiot {SMALL-ITEM}",
+            "Twoja drużyna może kupować przedmioty od każdej frakcji tak, jakby koszty przedmiotów były o pięć sztuk złota niższe, a twoja reputacja u tej frakcji była o dwa wyższa",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, zyskaj 10 zapasów"
+        ]
+    },
+    "SB2": {
+        "name": "Łapiduch",
+        "masteries": [
+            "W jednym scenariuszu dawaj sojusznikowi apteczkę lub receptę w każdej rundzie, z wyjątkiem rund, w których wykonujesz długi odpoczynek",
+            "W jednym scenariuszu nigdy nie atakuj nieuszkodzonego wroga, dopóki żyją jakiekolwiek uszkodzone potwory, i wykonaj co najmniej 10 ataków"
+        ],
+        "perks": [
+            "Usuń dwie karty {-1_WHITE}",
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “Daj jednemu sąsiedniemu sojusznikowi lub sobie jedną apteczkę”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “Możesz zyskać {DISARM.fh}, aby dodać {STUN.fh}”",
+            "Dodaj dwie karty {+1_WHITE} “Dodaj +1 {ATTACK.fh}, jeśli sojusznik ma aktywną receptę”",
+            "Dodaj jedną kartę {AGAIN} “{HEAL.fh}3, {RANGE.fh}1”",
+            "Dodaj +1 {HEAL.fh} do wszystkich zdolności leczenia na kartach zdolności „Apteczka”",
+            "W każdej Fazie Miasta po ukończeniu scenariusza twoja lub jednego sojusznika darowizna na Sanktuarium Wielkiego Dębu jest darmowa",
+            "Na koniec każdego ze swoich odpoczynków, jeśli sojusznik ma aktywną receptę, zyskaj jedną kartę zdolności „Apteczka” i przesuń żeton na aktywnej recepcie jednego sojusznika o jedno pole do tyłu"
+        ]
+    },
+    "SK2": {
+        "name": "Strażniczka Słońca",
+        "masteries": [
+            "W jednym scenariuszu zasil lub zużyj {LIGHT} podczas każdej ze swoich tur",
+            "W jednym scenariuszu zadaj 8 lub więcej {DAMAGE.fh} jednym atakiem 3 lub więcej razy"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-1_WHITE} dwiema kartami {+0_WHITE} {LIGHT}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {AGAIN} {+1_WHITE} {SHIELD.fh}1",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE}",
+            "Dodaj dwie karty {+1_WHITE} “{HEAL.fh}1, {RANGE.fh}3”",
+            "Dodaj jedną kartę {-1_WHITE} “Ty lub sąsiedni sojusznik możecie {RECOVER.fh} jedną kartę poziomu 1 ze stosu odrzuconych”",
+            "Dodaj jedną kartę {AGAIN} {STUN.fh}",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {+1_WHITE}",
+            "Zignoruj efekty przedmiotów {-1} i usuń jedną kartę {-1_WHITE}",
+            "Za każdym razem, gdy podczas swojej tury otworzysz jedne lub więcej drzwi, zyskaj {SHIELD.fh}1, {RETALIATE.fh}1 na tę rundę",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {LIGHT}",
+            "Za każdym razem, gdy jedno z twoich leczeń sprawiłoby, że punkty życia sojusznika przekroczyłyby jego maksimum, ten sojusznik zyskuje {WARD.fh}"
+        ]
+    },
+    "SS2": {
+        "name": "Trubadur",
+        "masteries": [
+            "W jednym scenariuszu wykonaj 7 różnych akcji {SONG}",
+            "W jednym scenariuszu stwórz 20 lub więcej Nut i użyj każdej stworzonej Nuty w {SONG}"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “{BLESS.fh}, {TARGET.fh}2”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “Pomiń przesuwanie swoich żetonów postaci na aktywnych {SONG} na koniec tej rundy”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {STUN.fh}",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 sojusznik”",
+            "Zastąp jedną kartę {+0_WHITE} i jedną kartę {+1_WHITE} dwiema kartami {+2_WHITE}",
+            "Dodaj jedną kartę {AGAIN} “Daj jednemu sojusznikowi: {MOVE.fh}2 lub {ATTACK.fh}2”",
+            "Dodaj trzy karty {AGAIN} {CURSE.fh}",
+            "Na koniec każdego scenariusza każda postać biorąca w nim udział zyskuje 8 PD, jeśli zrealizowałeś swój cel bitwy",
+            "Za każdym razem, gdy wykonujesz {SONG}, jeśli masz jakiekolwiek niewykorzystane Nuty, zyskaj jedną wybraną Nutę oprócz każdej innej Nuty zyskanej w tej rundzie",
+            "Podczas ustalania kolejności inicjatywy w rundach, w których deklarujesz długi odpoczynek, zyskaj jedną wybraną Nutę, a każdy z twoich sojuszników może zmniejszyć swoją inicjatywę o 10"
+        ]
+    },
+    "ST2": {
+        "name": "Duszowiąz",
+        "masteries": [
+            "Wykonaj 3 różne akcje przywołania przed swoim pierwszym odpoczynkiem i trzymaj te karty w swoim obszarze aktywnym przez cały scenariusz",
+            "Wykonaj 6 różnych zdolności przywołania ze swoich kart zdolności w pierwszych rundach 6 scenariuszy"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “Po zdolności ataku daj jednemu ze swoich przywołańców: {TELEPORT.fh}2”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “{INVISIBLE.fh}, {TARGET.fh}1 z twoich przywołańców”",
+            "Zastąp jedną kartę {+0_WHITE} dwiema kartami {AGAIN} {WOUND.fh}",
+            "Zastąp jedną kartę {+0_WHITE} dwiema kartami {AGAIN} {POISON.fh}",
+            "Zastąp dwie karty {+1_WHITE} dwiema kartami {+1_WHITE} {CURSE.fh}",
+            "Dodaj jedną kartę {+2_WHITE} {FIRE}/{WIND}",
+            "Dodaj jedną kartę {+2_WHITE} {FIRE}/{DARK}",
+            "Dodaj jedną kartę {+2_WHITE} {WIND}/{DARK}",
+            "Zignoruj efekty scenariusza i dodaj dwie karty {+1_WHITE}",
+            "Na początku każdej rundy, w której wykonujesz długi odpoczynek, wszyscy twoi przywołańcy zyskują {SHIELD.fh}1 na tę rundę",
+            "Raz na scenariusz, podczas twojej tury, {TELEPORT.fh} jednego ze swoich przywołańców na puste pole sąsiadujące z tobą",
+            "Raz na scenariusz, podczas ustalania kolejności inicjatywy, po odsłonięciu wszystkich kart zdolności, wszyscy twoi przywołańcy zyskują {INVISIBLE.fh}"
+        ]
+    },
+    "WF2": {
+        "name": "Dzika Furia",
+        "masteries": [
+            "W jednym scenariuszu zasil lub zużyj {WIND} albo {EARTH} podczas każdej ze swoich tur",
+            "W jednym scenariuszu zabij 4 lub więcej wrogów atakami {COMMAND} o wartości 7 lub większej (po wszystkich bonusach, przed modyfikatorami ataku)"
+        ],
+        "perks": [
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {AGAIN} “{HEAL.fh}2, {TARGET.fh} Niedźwiedź”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WOUND.fh}",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE} “Dodaj +1 {ATTACK.fh}, jeśli Dzika Furia i Niedźwiedź znajdują się w promieniu {RANGE.fh}4 od siebie”",
+            "Zastąp jedną kartę {+2_WHITE} jedną kartą {+4_WHITE}",
+            "Dodaj dwie karty {+1_WHITE} {WIND}/{EARTH}",
+            "Dodaj jedną kartę {+2_WHITE} {PUSH.fh}2",
+            "Zignoruj efekty scenariusza i dodaj jedną kartę {+1_WHITE} “{SAFEGUARD_WHITE}, {TARGET.fh}1 sojusznik”",
+            "Za każdym razem, gdy Niedźwiedź jest atakowany, rozpatrz każdą kartę modyfikatora ataku {2X_MODIFIER} dobraną przez wroga jako {+0_MODIFIER}",
+            "Raz na scenariusz, podczas twojej tury, {COMMAND}: {MOVE.fh}4. Jeśli Niedźwiedź opuści w trakcie tego ruchu pole sąsiadujące z tobą, możesz {TELEPORT.fh} na puste pole sąsiadujące z Niedźwiedziem na koniec ruchu",
+            "Na początku lub na końcu każdego ze swoich długich odpoczynków możesz {WIND}/{EARTH} i zmniejszyć swoje aktualne punkty życia o X (X musi wynosić co najmniej 1), aby {COMMAND}: {HEAL.fh}X, na siebie"
         ]
     }
 }

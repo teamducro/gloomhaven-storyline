@@ -1,78 +1,78 @@
 export default {
     "dragon": {
-        "1": "Return the treasure to the Drake. Gain the Global Achievement “The Drake Aided”. Add City Event 75 and Road Event 66 to the deck",
-        "2": "Do not aid the Drake.",
-        "title": "Friend or Foe",
-        "text": "You retrieved the Drake’s treasure. Do you return it to the Drake or do you follow the Guard Captain’s orders and attempt to kill the Drake?"
+        "1": "Adjátok vissza a kincset a gyíknak. Szerezzétek meg a „A gyík megsegítése” általános eredményt. Adjátok a pakliba a 75-ös városi és a 66-os úti eseményt",
+        "2": "Ne segítsétek a gyíkot.",
+        "title": "Barát vagy ellenség",
+        "text": "Megszereztétek a gyík kincsét. Visszaadjátok a gyíknak, vagy követitek a Városőr-kapitány parancsát, és megpróbáljátok megölni a gyíkot?"
     },
     "burningMountain": {
-        "1": "Conclusion A: You decide to end your turn at G and remove one of the items from the game.",
-        "2": "Conclusion B: After looting the chest, all characters returned to the entrance before becoming exhausted.",
-        "title": "Escape The Burning Mountain",
-        "text": "You looted the treasure. Do you dare to escape the rumbling volcano and keep the retrieved items?"
+        "1": "Végkifejlet A: Úgy döntötök, hogy a G mezőn fejezitek be a körötöket, és kivesztek egy felszerelést a játékból.",
+        "2": "Végkifejlet B: A láda kifosztása után minden karakter visszatért a bejárathoz, mielőtt kimerült volna.",
+        "title": "Menekülés a Lángoló hegyből",
+        "text": "Kifosztottátok a kincset. Megpróbáltok kimenekülni a dübörgő vulkánból, és megtartani a megszerzett felszereléseket?"
     },
     "merchantsBay": {
-        "1": "You recovered both scrolls.",
-        "2": "You failed to recover the Record of the Journey.",
-        "3": "You failed to recover the Record of Accounts.",
-        "title": "The Merchant’s Bay",
-        "text": "You doused the flames and disposed the interlopers. How many records were you able to save?"
+        "1": "Mindkét tekercset megmentettétek.",
+        "2": "Nem sikerült megmenteni az Utazás krónikáját.",
+        "3": "Nem sikerült megmenteni a Számadáskönyvet.",
+        "title": "A Kereskedők öble",
+        "text": "Eloltottátok a lángokat, és elűztétek a betolakodókat. Hány feljegyzést sikerült megmenteni?"
     },
     "shiftingGears": {
-        "1": "All enemies are killed.",
+        "1": "Minden ellenség meghalt.",
         "2": "???",
-        "title": "Bastian’s workshop",
-        "text": "Did you manage to kill all enemies?"
+        "title": "Bastian műhelye",
+        "text": "Sikerült megölni minden ellenséget?"
     },
     "searchPiecesOfAnArtifact": {
-        "1": "All enemies are killed.",
-        "2": "Found more pieces of the rift device.",
-        "title": "Search pieces of the rift device",
-        "text": "Did you manage to kill all enemies?"
+        "1": "Minden ellenség meghalt.",
+        "2": "További darabokat találtatok a síkkapu-eszközből.",
+        "title": "A síkkapu-eszköz darabjainak keresése",
+        "text": "Sikerült megölni minden ellenséget?"
     },
     "directingBeams": {
-        "1": "All four beams are directed at the fountain",
-        "2": "Survived for fourteen rounds",
-        "title": "Directing Beams",
-        "text": "Did you direct the beams to the fountain?"
+        "1": "Mind a négy sugarat a szökőkútra irányítottátok",
+        "2": "Tizennégy körön át életben maradtatok",
+        "title": "Sugarak irányítása",
+        "text": "A szökőkútra irányítottátok a sugarakat?"
     },
     "aftershocks": {
-        "1": "Exactly four civilians are alive.",
-        "2": "Five or more civilians are alive.",
-        "title": "Protect the civilians",
-        "text": "How many Valraths were you able to bring to safety?"
+        "1": "Pontosan négy civil életben van.",
+        "2": "Öt vagy több civil életben van.",
+        "title": "A civilek védelme",
+        "text": "Hány valrath-ot sikerült biztonságba helyezni?"
     },
     "bloodyWar": {
-        "1": "A: Assist the Valraths",
-        "2": "B: Assist the Humans",
-        "3": "C: Fight both sides",
-        "title": "Bloody Demon War",
-        "text": "Which side did you choose?"
+        "1": "A: Segítsétek a valrathokat",
+        "2": "B: Segítsétek az embereket",
+        "3": "C: Harcoljatok mindkét oldal ellen",
+        "title": "Véres démonháború",
+        "text": "Melyik oldalt választottátok?"
     },
     "escapeFromTheHusk": {
-        "1": "All characters escaped.",
+        "1": "Minden karakter megszökött.",
         "2": "???",
-        "title": "Escape from The Husk",
-        "text": "Did all characters escape through an exit?"
+        "title": "Menekülés a Héjból",
+        "text": "Minden karakter megszökött valamelyik kijáraton át?"
     },
     "undeadTerrors": {
-        "1": "Give the potion to Selandre.",
-        "2": "Tell Selandre the potion was destroyed.",
-        "title": "Can you trust Selandre?",
-        "text": "Do you listen to Dominic's last words or your greed?"
+        "1": "Adjátok át a bájitalt Selandre-nak.",
+        "2": "Mondjátok Selandre-nak, hogy a bájital megsemmisült.",
+        "title": "Megbízhattok Selandre-ban?",
+        "text": "Dominic utolsó szavaira hallgattok, vagy a kapzsiságotokra?"
     },
     "capstoneTest": {
-        "1": "One named enemy is killed",
-        "2": "Two named enemies are killed",
-        "3": "Three named enemies are killed",
-        "title": "Test your Power Modulator",
-        "text": "How many Named Enemies were you able to kill before exhausting?"
+        "1": "Egy nevesített ellenséget megöltetek",
+        "2": "Két nevesített ellenséget megöltetek",
+        "3": "Három nevesített ellenséget megöltetek",
+        "title": "Tesztelitek az Erőmodulátort",
+        "text": "Hány nevesített ellenséget sikerült megölni a kimerülésetek előtt?"
     },
     "unseenPlight": {
-        "1": "Killed the Guttermaw, claiming Guttermaw's Bounty",
-        "2": "Saved the children, fulfilling Feigrin's Request",
-        "title": "Broken Homes and Lairs",
-        "text": "Did you bring death or save lives?"
+        "1": "Megöltétek a Guttermaw-t, és megszereztétek a Guttermaw jutalmát",
+        "2": "Megmentettétek a gyerekeket, teljesítve Feigrin kérését",
+        "title": "Romba dőlt otthonok és odúk",
+        "text": "Halált hoztatok, vagy életeket mentettetek?"
     },
     "startingMorale": {
         "1": "0",
@@ -81,50 +81,50 @@ export default {
         "4": "3",
         "5": "4",
         "6": "5",
-        "title": "Starting Morale",
-        "text": "How many City Guards are still on the map?"
+        "title": "Kezdő morál",
+        "text": "Hány Városőr van még a pályán?"
     },
     "algoxAltercation": {
-        "1": "Snowdancer is dead.",
-        "2": "Frozen Fist is dead.",
-        "title": "Algox altercation",
-        "text": "Which side did you choose?"
+        "1": "Snowdancer meghalt.",
+        "2": "Frozen Fist meghalt.",
+        "title": "Algox összetűzés",
+        "text": "Melyik oldalt választottátok?"
     },
     "finalNegotiation": {
-        "1": "Try to broker peace with the automatons",
-        "2": "Destroy them",
-        "title": "Final Negotiation",
-        "text": "Which path will you choose?"
+        "1": "Próbáljatok békét kötni az automatonokkal",
+        "2": "Pusztítsátok el őket",
+        "title": "Végső tárgyalás",
+        "text": "Melyik utat választjátok?"
     },
     "friendOfTheFishKing": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Friend of the Fish King",
-        "text": "Did you agree to the Fish King's proposition?"
+        "1": "Igen",
+        "2": "Nem",
+        "title": "A Halkirály barátja",
+        "text": "Elfogadtátok a Halkirály ajánlatát?"
     },
     "acceptTheAscension": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Accept the Ascension",
-        "text": "Did you accept the Fish King's ascension?"
+        "1": "Igen",
+        "2": "Nem",
+        "title": "A felemelkedés elfogadása",
+        "text": "Elfogadtátok a Halkirály felemelkedését?"
     },
     "brothersSurvival": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Brother' Survival",
-        "text": "Did both brothers survive?"
+        "1": "Igen",
+        "2": "Nem",
+        "title": "A fivérek túlélése",
+        "text": "Mindkét fivér túlélte?"
     },
     "rattuscasShare": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Rattusca's Share",
-        "text": "Did you give Rattusca her share?"
+        "1": "Igen",
+        "2": "Nem",
+        "title": "Rattusca része",
+        "text": "Odaadtátok Rattuscának a részét?"
     },
     "peaceNegotiations": {
-        "1": "Support Scabwit (Vermlings)",
-        "2": "Support Yoglang (Algox)",
-        "title": "Peace Negotiations",
-        "text": "Who did you support in the brawl?"
+        "1": "Támogassátok Scabwitet (vermlingek)",
+        "2": "Támogassátok Yoglangot (algoxok)",
+        "title": "Béketárgyalások",
+        "text": "Kit támogattatok a dulakodásban?"
     },
     "episodesOvercome": {
         "1": "1",
@@ -132,8 +132,8 @@ export default {
         "3": "3",
         "4": "4",
         "5": "5",
-        "title": "Episodes Overcome",
-        "text": "How many episodes did you overcome?"
+        "title": "Legyőzött epizódok",
+        "text": "Hány epizódot győztetek le?"
     },
     "pylonsDestroyed": {
         "1": "0",
@@ -143,8 +143,8 @@ export default {
         "5": "4",
         "6": "5",
         "7": "6",
-        "title": "Pylons Destroyed",
-        "text": "How many pylons were destroyed?"
+        "title": "Elpusztított pilonok",
+        "text": "Hány pilont pusztítottatok el?"
     },
     "wagonsEscaped": {
         "1": "1",
@@ -152,90 +152,90 @@ export default {
         "3": "3",
         "4": "4",
         "5": "5",
-        "title": "Wagons Escaped",
-        "text": "How many wagons escaped?"
+        "title": "Megszökött szekerek",
+        "text": "Hány szekér szökött meg?"
     },
     "mindtheifsWill": {
-        "1": "Automaton destroyed, technology given to vermlings",
-        "2": "Automaton destroyed, technology kept",
-        "3": "Mind control device disabled",
-        "title": "Mindtheif's Will",
-        "text": "What did you do with the mind control device?"
+        "1": "Az automaton elpusztítva, a technológiát a vermlingeknek adtátok",
+        "2": "Az automaton elpusztítva, a technológiát megtartottátok",
+        "3": "Az elmeirányító eszköz kikapcsolva",
+        "title": "Az Elmetolvaj akarata",
+        "text": "Mit tettetek az elmeirányító eszközzel?"
     },
     "hungryMawDead": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Hungry Maw Dead",
-        "text": "Is the Hungry Maw dead?"
+        "1": "Igen",
+        "2": "Nem",
+        "title": "Az Éhes Száj halott",
+        "text": "Halott az Éhes Száj?"
     },
     "cratesLooted": {
         "1": "1",
         "2": "2",
         "3": "3",
         "4": "4",
-        "title": "Crates Looted",
-        "text": "How many crates did you loot?"
+        "title": "Kifosztott ládák",
+        "text": "Hány ládát fosztottatok ki?"
     },
     "embellismentsCompleted": {
-        "1": "Seven or fewer",
-        "2": "Eight to fifteen",
-        "3": "Sixteen or more",
-        "title": "Embellisments Completed",
-        "text": "How many embellisments did you complete?"
+        "1": "Hét vagy kevesebb",
+        "2": "Nyolc és tizenöt között",
+        "3": "Tizenhat vagy több",
+        "title": "Elkészült díszítések",
+        "text": "Hány díszítést készítettetek el?"
     },
     "sunAgatesReturned": {
-        "1": "Yes",
-        "2": "No",
-        "title": "Sun Agates Returned",
-        "text": "Did you return the sun agates to Derrick?"
+        "1": "Igen",
+        "2": "Nem",
+        "title": "Visszaadott napachátok",
+        "text": "Visszaadtátok a napachátokat Derricknek?"
     },
     "gh2-13": {
-        "1": "Section 18.3",
-        "2": "Section 44.3",
-        "3": "Section 51.1",
-        "title": "Icecrag Ascent",
-        "text": "Which conclusion section did you read?"
+        "1": "18.3. szakasz",
+        "2": "44.3. szakasz",
+        "3": "51.1. szakasz",
+        "title": "Fagyhágó meredély",
+        "text": "Melyik végkifejlet szakaszt olvastátok?"
     },
     "gh2-27": {
-        "1": "Section 10.1",
-        "2": "Section 50.2",
-        "title": "Infernal Throne",
-        "text": "Which conclusion section did you read?"
+        "1": "10.1. szakasz",
+        "2": "50.2. szakasz",
+        "title": "A lángtrónus",
+        "text": "Melyik végkifejlet szakaszt olvastátok?"
     },
     "gh2-28": {
-        "1": "Section 72.3",
-        "2": "Section 75.3",
-        "3": "Section 76.4",
-        "title": "Temple of the Seer",
-        "text": "Which conclusion section did you read?"
+        "1": "72.3. szakasz",
+        "2": "75.3. szakasz",
+        "3": "76.4. szakasz",
+        "title": "A látnok temploma",
+        "text": "Melyik végkifejlet szakaszt olvastátok?"
     },
     "gh2-31": {
-        "1": "Section 26.6",
-        "2": "Section 76.1",
-        "title": "Decrepit Wood",
-        "text": "Which conclusion section did you read?"
+        "1": "26.6. szakasz",
+        "2": "76.1. szakasz",
+        "title": "Lepusztult erdő",
+        "text": "Melyik végkifejlet szakaszt olvastátok?"
     },
     "gh2-32": {
-        "1": "Section 16.3",
-        "2": "Section 16.3 and 81.5",
-        "3": "Section 62.5",
-        "4": "Section 78.6",
-        "5": "Section 78.6 and 81.5",
-        "6": "Section 81.5",
-        "title": "Savvas Armory",
-        "text": "Which conclusion section did you read?"
+        "1": "16.3. szakasz",
+        "2": "16.3. és 81.5. szakasz",
+        "3": "62.5. szakasz",
+        "4": "78.6. szakasz",
+        "5": "78.6. és 81.5. szakasz",
+        "6": "81.5. szakasz",
+        "title": "Savvas fegyverraktár",
+        "text": "Melyik végkifejlet szakaszt olvastátok?"
     },
     "gh2-34": {
-        "1": "Section 36.4",
-        "2": "Section 89.2",
-        "title": "Timeworn Tomb",
-        "text": "Which conclusion section did you read?"
+        "1": "36.4. szakasz",
+        "2": "89.2. szakasz",
+        "title": "Lepusztult kripta",
+        "text": "Melyik végkifejlet szakaszt olvastátok?"
     },
     "gh2-43": {
-        "1": "Section 80.3",
-        "2": "Section 106.1",
-        "3": "Section 132.4",
-        "title": "Chasing Secrets",
-        "text": "Which conclusion section did you read?"
+        "1": "80.3. szakasz",
+        "2": "106.1. szakasz",
+        "3": "132.4. szakasz",
+        "title": "Titkok nyomában",
+        "text": "Melyik végkifejlet szakaszt olvastátok?"
     }
 }

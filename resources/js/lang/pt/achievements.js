@@ -9,16 +9,16 @@ export default {
         "name": "Recompensa Sombria"
     },
     "gh-GTMF": {
-        "name": "A mercadora Foge"
+        "name": "A Mercadora Foge"
     },
     "gh-GTDI": {
         "name": "Os Mortos Invadem"
     },
     "gh-PADE": {
-        "name": "A Incumbência do Demônio"
+        "name": "A Incumbência do Demónio"
     },
     "gh-GCRE": {
-        "name": "Governo: Econômico"
+        "name": "Governo: Económico"
     },
     "gh-GCRM": {
         "name": "Governo: Militar"
@@ -66,10 +66,10 @@ export default {
         "name": "O Comando da Voz"
     },
     "gh-PTDC": {
-        "name": "O Comando do Dragão"
+        "name": "O Comando do Serpe"
     },
     "gh-PFC": {
-        "name": "Seguindo Pistas"
+        "name": "A Seguir Pistas"
     },
     "gh-PAI": {
         "name": "Um Convite"
@@ -87,25 +87,25 @@ export default {
         "name": "O Tesouro da Voz"
     },
     "gh-PTDT": {
-        "name": "O Tesouro do Dragão"
+        "name": "O Tesouro do Serpe"
     },
     "gh-GTDS": {
-        "name": "Assassino do Dragão"
+        "name": "O Serpe Morto"
     },
     "gh-GTDA": {
-        "name": "The Drake Aided"
+        "name": "O Serpe Ajudado"
     },
     "gh-GCRD": {
         "name": "Governo: Demoníaco"
     },
     "gh-PTTT": {
-        "name": "Through the Trench"
+        "name": "Através da Trincheira"
     },
     "gh-PRA": {
         "name": "A Ajuda do Espinho Vermelho"
     },
     "gh-PATD": {
-        "name": "Across the Divide"
+        "name": "Através da Divisão"
     },
     "gh-GTVF": {
         "name": "A Voz Libertada"
@@ -126,310 +126,310 @@ export default {
         "name": "Fim da Corrupção x3"
     },
     "gh-GAOO": {
-        "name": "Annihilation of Order"
+        "name": "Aniquilação da Ordem"
     },
     "gh-GEOG": {
-        "name": "End of Gloom"
+        "name": "Fim do Combalimento"
     },
     "gh-PTTN": {
         "name": "Através do Ninho"
     },
     "gh-PAMT": {
-        "name": "A Map to Treasure"
+        "name": "Um Mapa para o Tesouro"
     },
     "gh-PBB": {
-        "name": "Bad Business"
+        "name": "Maus Negócios"
     },
     "gh-PSOX1": {
-        "name": "Nobles’ Crypt"
+        "name": "Cripta dos Nobres"
     },
     "gh-PSOX2": {
-        "name": "Flooded Crypt"
+        "name": "Cripta Inundada"
     },
     "gh-PSOX3": {
-        "name": "Crypt of the Ancients"
+        "name": "Cripta dos Anciões"
     },
     "gh-PTPS": {
         "name": "A Fonte do Veneno"
     },
     "gh-PSB": {
-        "name": "Sun-Blessed"
+        "name": "Abençoado pelo Sol"
     },
     "gh-PSR": {
         "name": "Sin-Ra"
     },
     "gh-PDC": {
-        "name": "Debt Collection"
+        "name": "Cobrança de Dívida"
     },
     "gh-PWS": {
-        "name": "Water Staff"
+        "name": "Cajado da Água"
     },
     "gh-PFA": {
-        "name": "Fish's Aid"
+        "name": "Ajuda de Peixe"
     },
     "gh-PT": {
-        "name": "Tremors"
+        "name": "Tremores"
     },
     "gh-PHSE": {
-        "name": "High Sea Escort"
+        "name": "Escolta em Alto-Mar"
     },
     "gh-PGJ": {
-        "name": "Grave Job"
+        "name": "Trabalho Macabro"
     },
     "gh-PNE": {
-        "name": "Northern Expedition"
+        "name": "Expedição ao Norte"
     },
     "gh-GTTP": {
-        "name": "Through the Portal"
+        "name": "Através do Portal"
     },
     "gh-PO": {
-        "name": "Opportunists"
+        "name": "Oportunistas"
     },
     "gh-GKIP": {
-        "name": "Knowledge is Power"
+        "name": "Conhecimento é Poder"
     },
     "gh-GKIP2": {
-        "name": "Knowledge is Power x2"
+        "name": "Conhecimento é Poder x2"
     },
     "gh-GKIP3": {
-        "name": "Knowledge is Power x3"
+        "name": "Conhecimento é Poder x3"
     },
     "gh-GKIP4": {
-        "name": "Knowledge is Power x4"
+        "name": "Conhecimento é Poder x4"
     },
     "gh-PAD": {
-        "name": "Angels of Death"
+        "name": "Anjos da Morte"
     },
     "gh-PC": {
-        "name": "Custodians"
+        "name": "Guardiões"
     },
     "gh-PHP": {
-        "name": "Hunted Prey"
+        "name": "Presa Caçada"
     },
     "gh-GPOA": {
-        "name": "Pieces of an Artifact"
+        "name": "Peças de um Artefato"
     },
     "gh-GPOA2": {
-        "name": "Pieces of an Artifact x2"
+        "name": "Peças de um Artefato x2"
     },
     "gh-GPOA3": {
-        "name": "Pieces of an Artifact x3"
+        "name": "Peças de um Artefato x3"
     },
     "gh-PGD": {
-        "name": "Guard Detail"
+        "name": "Destacamento da Guarda"
     },
     "gh-PDE": {
-        "name": "Dimensional Equilibrium"
+        "name": "Equilíbrio Dimensional"
     },
     "gh-PHH": {
-        "name": "Hunting the Hunter"
+        "name": "A Caçar o Caçador"
     },
     "gh-PXA": {
-        "name": "Xangroth's Aid"
+        "name": "Ajuda de Xangroth"
     },
     "gh-PDA": {
-        "name": "Diamara's Aid"
+        "name": "Ajuda de Diamara"
     },
     "gh-PBF": {
-        "name": "Beauty in Freedom"
+        "name": "Beleza na Liberdade"
     },
     "gh-GPA": {
-        "name": "A Peril Averted"
+        "name": "Um Perigo Evitado"
     },
     "gh-GPA2": {
-        "name": "A Peril Averted x2"
+        "name": "Um Perigo Evitado x2"
     },
     "gh-GPA3": {
-        "name": "A Peril Averted x3"
+        "name": "Um Perigo Evitado x3"
     },
     "gh-GPA4": {
-        "name": "A Peril Averted x4"
+        "name": "Um Perigo Evitado x4"
     },
     "gh-GMS": {
-        "name": "Mechanical Splendor"
+        "name": "Esplendor Mecânico"
     },
     "gh-GST": {
-        "name": "Severed Ties"
+        "name": "Laços Rompidos"
     },
     "gh-PA": {
-        "name": "Accomplices"
+        "name": "Cúmplices"
     },
     "gh-PS": {
-        "name": "Saboteurs"
+        "name": "Sabotadores"
     },
     "cs-PCSOD": {
-        "name": "Ooze Destroyed"
+        "name": "Gosma Destruída"
     },
     "cs-PCSFL": {
-        "name": "Fallen Lava"
+        "name": "Lava Caída"
     },
     "cs-PCSFM": {
-        "name": "Follow the Money"
+        "name": "Segue o Dinheiro"
     },
     "cs-PCSFW": {
-        "name": "Frozen Warrior"
+        "name": "Guerreiro Congelado"
     },
     "cs-PCSOA": {
-        "name": "Oak Alliance"
+        "name": "Aliança do Carvalho"
     },
     "cs-PCSIA": {
-        "name": "Inox Alliance"
+        "name": "Aliança Inox"
     },
     "cs-PCSGB": {
-        "name": "Guttermaw's Bounty"
+        "name": "Recompensa de Guttermaw"
     },
     "cs-PCSFR": {
-        "name": "Feirgrin's Request"
+        "name": "Pedido de Feirgrin"
     },
     "cs-PCSPL": {
-        "name": "A Potion Lost"
+        "name": "Uma Poção Perdida"
     },
     "cs-PCSTM": {
-        "name": "Take the Money"
+        "name": "Pega o Dinheiro"
     },
     "cs-PCSAM": {
-        "name": "Accomplished Mercenaries"
+        "name": "Mercenários Realizados"
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        "name": "Amigo dos Falantes do Gelo"
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        "name": "Amigo dos Falantes da Neve"
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        "name": "Amigo dos Falantes da Geada"
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        "name": "Destruidor dos Falantes do Gelo"
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        "name": "Destruidor dos Falantes da Neve"
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        "name": "Amigo do Rei Peixe"
     },
     "fh-CCU": {
-        "name": "Crown United"
+        "name": "Coroa Unida"
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        "name": "Aliados Desacorrentados"
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        "name": "Desacorrentados Desativados"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "Para Dentro da Floresta"
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        "name": "Pimenta-de-fogo"
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        "name": "Caçador de Fragmentos"
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        "name": "Jarro Vazio"
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        "name": "Inseto num Jarro"
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        "name": "Núcleo Descarregado"
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        "name": "Núcleo Carregado"
     },
     "fh-CHF": {
-        "name": "Harvest Festival"
+        "name": "Festival da Colheita"
     },
     "fh-CBT": {
-        "name": "Brummix Tracks"
+        "name": "Rastos de Brummix"
     },
     "fh-CBT2": {
-        "name": "Brummix Tracks x2"
+        "name": "Rastos de Brummix x2"
     },
     "fh-CBT3": {
-        "name": "Brummix Tracks x3"
+        "name": "Rastos de Brummix x3"
     },
     "fh-CBT4": {
-        "name": "Brummix Tracks x4"
+        "name": "Rastos de Brummix x4"
     },
     "fh-CBT5": {
-        "name": "Brummix Tracks x5"
+        "name": "Rastos de Brummix x5"
     },
     "fh-CCCS": {
-        "name": "Coral Crown Shard"
+        "name": "Fragmento da Coroa de Coral"
     },
     "fh-CCCS2": {
-        "name": "Coral Crown Shard x2"
+        "name": "Fragmento da Coroa de Coral x2"
     },
     "fh-CCCS3": {
-        "name": "Coral Crown Shard x3"
+        "name": "Fragmento da Coroa de Coral x3"
     },
     "fh-CCCS4": {
-        "name": "Coral Crown Shard x4"
+        "name": "Fragmento da Coroa de Coral x4"
     },
     "fh-CCCS5": {
-        "name": "Coral Crown Shard x5"
+        "name": "Fragmento da Coroa de Coral x5"
     },
     "fh-CCCS6": {
-        "name": "Coral Crown Shard x6"
+        "name": "Fragmento da Coroa de Coral x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Coração de Gelo"
     },
     "fh-PHOS": {
-        "name": "Heart of Snow"
+        "name": "Coração de Neve"
     },
     "gh2-G2ATD": {
-        "name": "Activating the Device"
+        "name": "A Ativar o Dispositivo"
     },
     "gh2-G2AUP": {
-        "name": "An Uneasy Peace"
+        "name": "Uma Paz Inquieta"
     },
     "gh2-G2AT": {
         "name": "Tecnologia Anciã"
     },
     "gh2-G2CRD": {
-        "name": "City Rule: Demons"
+        "name": "Governo: Demónios"
     },
     "gh2-G2CRME": {
-        "name": "City Rule: Merchants"
+        "name": "Governo: Mercadores"
     },
     "gh2-G2CRMI": {
-        "name": "City Rule: Military"
+        "name": "Governo: Militar"
     },
     "gh2-G2EM": {
-        "name": "Elements Mastered"
+        "name": "Elementos Dominados"
     },
     "gh2-G2EOC": {
         "name": "Fim da Corrupção"
     },
     "gh2-G2EOG": {
-        "name": "End of Gloom"
+        "name": "Fim do Combalimento"
     },
     "gh2-G2HW": {
-        "name": "Hallowed Waters"
+        "name": "Águas Sagradas"
     },
     "gh2-G2ITD": {
-        "name": "Into the Depths"
+        "name": "Nas Profundezas"
     },
     "gh2-G2PTB": {
-        "name": "Peace Through Bloodshed"
+        "name": "Paz Através do Derramamento de Sangue"
     },
     "gh2-G2TCE": {
-        "name": "The Candle Extinguished"
+        "name": "A Vela Apagada"
     },
     "gh2-G2TCK": {
-        "name": "The Candle Kept"
+        "name": "A Vela Preservada"
     },
     "gh2-G2TDR": {
-        "name": "The Darkness Retreats"
+        "name": "As Trevas Recuam"
     },
     "gh2-G2TDA": {
-        "name": "The Drake Aided"
+        "name": "O Serpe Ajudado"
     },
     "gh2-G2TDS": {
-        "name": "Assassino do Dragão"
+        "name": "O Serpe Morto"
     },
     "gh2-G2TPE": {
         "name": "O Poder da Melhoria"
@@ -441,27 +441,27 @@ export default {
         "name": "A Voz Silenciada"
     },
     "gh2-P2R16": {
-        "name": "Faction Reputation 16"
+        "name": "Reputação de Facção 16"
     },
     "gh2-P2R20": {
-        "name": "Faction Reputation 20"
+        "name": "Reputação de Facção 20"
     },
     "gh2-P2RD6": {
-        "name": "Demon Reputation 6"
+        "name": "Reputação Demoníaca 6"
     },
     "gh2-P2RD12": {
-        "name": "Demon Reputation 12"
+        "name": "Reputação Demoníaca 12"
     },
     "gh2-P2RME6": {
-        "name": "Merchant Reputation 6"
+        "name": "Reputação Mercantil 6"
     },
     "gh2-P2RME12": {
-        "name": "Merchant Reputation 12"
+        "name": "Reputação Mercantil 12"
     },
     "gh2-P2RMI6": {
-        "name": "Military Reputation 6"
+        "name": "Reputação Militar 6"
     },
     "gh2-P2RMI12": {
-        "name": "Military Reputation 12"
+        "name": "Reputação Militar 12"
     }
 }
