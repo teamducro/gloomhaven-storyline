@@ -69,13 +69,14 @@ export default class PersonalQuestValidator {
         quest.progress
             .filter(progress => progress.scenario_unlock)
             .map(progress => this.scenarioRepository.find(progress.scenario_unlock))
-            .filter(scenario => !scenario.isHidden() && !scenario.isComplete() && !scenarioValidator.isUnlockedByStory(scenario))
+            // A quest of another game or edition may name a scenario that isn't in this campaign.
+            .filter(scenario => scenario && !scenario.isHidden() && !scenario.isComplete() && !scenarioValidator.isUnlockedByStory(scenario))
             .forEach(scenario => this.scenarioRepository.setHidden(scenario));
     }
 
     unlockScenario(id) {
         const scenario = this.scenarioRepository.find(id);
-        if (scenario.isHidden()) {
+        if (scenario?.isHidden()) {
             this.scenarioRepository.changeState(scenario, ScenarioState.incomplete);
         }
     }

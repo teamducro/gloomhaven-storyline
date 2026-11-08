@@ -289,6 +289,76 @@ class Sheet {
         this.fillCharacterUnlocks();
         this.fillRelations();
         this.fillDefaultCrossGameItems();
+        this.migrateClassEventsAdded();
+        if (this.game === 'cs') {
+            this.migrateCsItemDesigns();
+        }
+    }
+
+    // Before #378 some Crimson Scales rewards and treasures named Gloomhaven items as CS designs, or the wrong CS design.
+    migrateCsItemDesigns() {
+        if (!this.shouldMigrate('cs-designs')) {
+            return;
+        }
+
+        const scenario = id => app.campaignData['scenario-cs-' + id] || {};
+        const isComplete = id => scenario(id).state === 'complete';
+        const looted = Object.entries(app.campaignData)
+            .filter(([key, value]) => key.startsWith('scenario-cs-') && value)
+            .flatMap(([, value]) => (value.treasures || []).map(Number));
+        const isLooted = id => looted.includes(id);
+        const wrong = [
+            [isComplete(6), [21]],
+            [isComplete(10), [12, 20]],
+            [isComplete(13), [34, 41, 48]],
+            [isComplete(14), [86]],
+            [isComplete(19), [48]],
+            [isComplete(21), [99]],
+            [isComplete(33), [87]],
+            [isComplete('RM5') && Number(scenario('RM5').promptChoice) === 1, [30, 36]],
+            [isComplete('RM5') && Number(scenario('RM5').promptChoice) === 2, [63]],
+            [isLooted(1) || isLooted(31), [14]],
+            [isLooted(49), [99]],
+        ].filter(([applies]) => applies).flatMap(([, ids]) => ids);
+        // Still rewarded by a completed scenario; treasures are granted again by the TreasureValidator.
+        const rewarded = {20: 8, 34: 58, 41: 65, 48: 57};
+        const granted = [[isComplete(14), 88], [isComplete(33), 90]].filter(([applies]) => applies).map(([, id]) => id);
+        wrong.filter(id => !isComplete(rewarded[id])).forEach(id => this.itemDesigns[id] = false);
+        granted.forEach(id => this.itemDesigns[id] = true);
+        if (wrong.length || granted.length) {
+            this.store();
+        }
+    }
+
+    // Campaigns from before automatic class events added them by hand: count the classes in play as done, so they aren't added twice.
+    migrateClassEventsAdded() {
+        if (!this.shouldMigrate('class-events') || Object.keys(this.classEventsAdded).length) {
+            return;
+        }
+
+        const played = (characters, unknown) => [...Object.values(characters).map(character => character.id), ...Object.values(unknown)];
+        const retired = played(this.archivedCharacters, this.unknownArchivedCharacters);
+        const unlocked = [
+            ...Object.keys(this.characterUnlocks).filter(id => this.characterUnlocks[id] && !this.starterCharacters.includes(id)),
+            ...played(this.characters, this.unknownCharacters),
+            ...retired,
+        ];
+        unlocked.forEach(id => this.classEventsAdded[id] = ['unlock']);
+        retired.forEach(id => this.classEventsAdded[id] = ['unlock', 'retire']);
+        if (unlocked.length) {
+            this.store();
+        }
+    }
+
+    // True once per campaign: the marker is a top-level key, like migrateDonationProsperity's, so older clients keep it.
+    shouldMigrate(name) {
+        const marker = `migrated-${name}-${this.key()}`;
+        if (app.campaignData[marker]) {
+            return false;
+        }
+        app.campaignData[marker] = true;
+        store.set(app.campaignId, app.campaignData);
+        return true;
     }
 
     // characterUnlocks used to be stored in key characters, migrate them to be backwards compatible.
