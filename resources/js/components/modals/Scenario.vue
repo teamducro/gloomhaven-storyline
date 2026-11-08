@@ -118,7 +118,7 @@
                             <button class="mdc-button origin-left transform scale-75 mdc-button--raised"
                                     @click="treasuresVisible = true">
                                 <span class="mdc-button__ripple"></span>
-                                <i class="material-icons mdc-button__icon">attach_money</i>
+                                <add-links-and-icons class="mr-2" :text="'{COINS}'"/>
                                 <span class="mdc-button__label">{{ $t('Show treasures') }}</span>
                             </button>
                         </div>
