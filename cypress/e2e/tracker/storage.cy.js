@@ -95,6 +95,15 @@ describe('Storage', () => {
             sheet().its('sheet.prosperityIndex').should('eq', 4);
         });
 
+        it('It migrates and marks the sheets of games that are not opened on load', () => {
+            // Migrated on load, so a sync never sends a migrated sheet without its marker.
+            visitWith({'sheet-cs': {donations: 150, prosperityIndex: 6}});
+            sheet().should((data) => {
+                expect(data['sheet-cs'].prosperityIndex).eq(4);
+                expect(data['migrated-donations-sheet-cs']).eq(true);
+            });
+        });
+
         it('It does not migrate a sheet marked by the previous in-sheet flag', () => {
             visitWith({sheet: {donations: 150, prosperityIndex: 4, autoDonationProsperity: true}});
             sheet().should((data) => {
