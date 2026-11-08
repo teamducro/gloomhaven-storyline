@@ -46,7 +46,7 @@
         "vue": "^3.5.44"
     },
     "dependencies": {
-        "@intlify/core-base": "^11.4.17",
+        "@intlify/core-base": "11.4.17",
         "@material/button": "^14.0.0",
         "@material/checkbox": "^14.0.0",
         "@material/dialog": "^14.0.0",
@@ -82,7 +82,7 @@
         "svg-pan-zoom": "github:ariutta/svg-pan-zoom",
         "tippy.js": "^6.3.7",
         "uuid": "^14.0.0",
-        "vue-i18n": "^11.4.17",
+        "vue-i18n": "11.4.17",
         "vue-router": "^4.6.4",
         "vuedraggable": "^4.1.0"
     },

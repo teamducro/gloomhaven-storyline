@@ -1,5 +1,7 @@
 import {createI18n} from 'vue-i18n';
 import {registerMessageCompiler} from '@intlify/core-base';
+// core-base and vue-i18n are pinned to the same exact version: if they drift, vue-i18n uses its own core-base copy
+// and this compiler silently stops applying.
 
 // vue-i18n 11 in legacy mode, made as lenient as vue-i18n 8 was.
 export default function createLegacyI18n(messages) {
