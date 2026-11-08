@@ -38,19 +38,4 @@ describe('FH scenarios', () => {
         utilities.closeModel();
         state(103).should('eq', 'complete');
     });
-
-    it('keeps The Lead Door of a campaign that unlocked it before treasure #57 did', () => {
-        // Seed from the website page, the running tracker would overwrite the data
-        cy.visit('/');
-        cy.window().then((win) => {
-            const campaignData = JSON.parse(win.localStorage.getItem('local')) || {};
-            [99, 100, 101, 102].forEach(id => campaignData[`scenario-fh-${id}`] = {state: 'complete'});
-            campaignData['scenario-fh-103'] = {state: 'incomplete'};
-            win.localStorage.setItem('local', JSON.stringify(campaignData));
-        });
-        cy.visit('/tracker');
-
-        state(103).should('eq', 'incomplete');
-        utilities.scenarios().then((s) => expect(s.firstWhere('id', 102).unlockedTreasures).to.include(57));
-    });
 });

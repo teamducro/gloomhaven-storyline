@@ -22,7 +22,6 @@ import * as Sentry from "@sentry/vue";
 import {Integrations} from "@sentry/tracing";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
 import migrateVersion2Progress from "./services/app/migrateVersion2Progress";
-import migrateLeadDoorTreasure from "./services/app/migrateLeadDoorTreasure";
 import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
@@ -258,7 +257,6 @@ const vueApp = createApp({
 
             this.campaignData = store.get(this.campaignId) || {};
             this.campaignData = migrateVersion2Progress(this.campaignData);
-            this.campaignData = migrateLeadDoorTreasure(this.campaignData);
             // Crossover defaults depend on the campaign (MP classes in use)
             this.enabledGames = getEnabledGames();
             this.game = this.storedGame();
