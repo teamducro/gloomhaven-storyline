@@ -7,6 +7,7 @@ import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import Helpers from "../services/Helpers";
 import SheetRepository from "./SheetRepository";
+import idIndex from "../services/idIndex";
 
 export default class AchievementRepository {
 
@@ -122,7 +123,7 @@ export default class AchievementRepository {
     }
 
     find(id) {
-        const achievement = app.achievements.firstWhere('id', id);
+        const achievement = idIndex(app.achievements.items).get(id);
 
         if (!achievement) {
             let message = 'Something went wrong, please refresh and try again.';

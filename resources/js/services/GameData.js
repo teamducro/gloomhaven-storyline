@@ -8,6 +8,7 @@ import mpJson from '../games/mp.json'
 import cqJson from '../games/cq.json'
 import {Game} from "../models/Game";
 import store from "store/dist/store.modern";
+import {markRaw} from "vue";
 
 const files = {
     [Game.gh]: ghJson,
@@ -38,6 +39,11 @@ const crossoverData = {
 }
 
 export default class GameData {
+    // Components keep one in data(); raw, so the static JSON it returns isn't proxied
+    constructor() {
+        markRaw(this)
+    }
+
     // Crossover packs are not selectable as the main/active game, only as add-on content.
     validate(game) {
         return this.games().includes(game) && !this.crossover().includes(game)
@@ -79,7 +85,8 @@ export default class GameData {
         if (!this.crossover().includes(game)) {
             return true
         }
-        const campaign = store.get(store.get('campaignId') || 'local') || {}
+        // The parsed campaign; localStorage only while booting, when window.app is still the #app element
+        const campaign = window.app?.campaignData || store.get(store.get('campaignId') || 'local') || {}
 
         return Object.entries(campaign).some(([key, character]) => key.startsWith('character-')
             && (files[game]?.characterOrder.includes(character?.id) || character?.quest?.game === game))

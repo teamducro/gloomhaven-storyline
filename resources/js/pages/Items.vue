@@ -276,8 +276,8 @@ export default {
         changeItem(id, isChecked) {
             const key = id.replace('item-', '');
             const item = isNaN(key) ? key : parseInt(key);
+            // The deep itemDesigns watcher refreshes the items
             this.sheet.itemDesigns[item] = isChecked;
-            this.refreshItems();
             this.store();
         },
         store() {

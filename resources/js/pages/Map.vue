@@ -86,6 +86,7 @@
 <script>
 import panzoom from "panzoom";
 import Hammer from 'hammerjs';
+import {markRaw} from "vue";
 import tippy from "tippy.js";
 import GameData from "../services/GameData";
 import {Game} from "../models/Game";
@@ -165,18 +166,18 @@ export default {
 
             this.mapElement = document.getElementById('map');
             this.map?.dispose();
-            this.map = panzoom(this.mapElement, {
+            this.map = markRaw(panzoom(this.mapElement, {
                 minZoom: this.scale(),
                 maxZoom: 4,
                 bounds: true
-            });
+            }));
             this.centerMap();
 
             // Register touch events
             if (this.mapTouch) {
                 this.mapTouch.destroy();
             }
-            this.mapTouch = new Hammer(this.mapElement);
+            this.mapTouch = markRaw(new Hammer(this.mapElement));
             this.mapTouch.on('tap', (e) => {
                 if (e.target.id.startsWith('s')) {
                     this.scenarioClicked(e);

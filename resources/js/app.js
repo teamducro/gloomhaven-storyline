@@ -27,7 +27,7 @@ import checkHasMouse from "./services/app/checkHasMouse";
 import checkOrientation from "./services/app/checkOrientation";
 import polyfills from "./services/app/polyfills";
 import TreasureValidator from "./validators/TreasureValidator";
-import {createApp} from 'vue';
+import {createApp, markRaw} from 'vue';
 import setInitialLanguage from "./services/app/setInitialLanguage";
 import {gsap} from "gsap";
 import {Flip} from "gsap/Flip.js";
@@ -123,19 +123,20 @@ const vueApp = createApp({
             campaignData: {},
             font: null,
 
-            scenarioRepository: new ScenarioRepository,
-            questRepository: new QuestRepository,
-            achievementRepository: new AchievementRepository,
-            itemRepository: new ItemRepository,
-            buildingRepository: new BuildingRepository,
-            overlayRepository: new OverlayRepository,
-            userRepository: new UserRepository,
-            storyRepository: new StoryRepository,
-            echo: new EchoService,
-            scenarioValidator: new ScenarioValidator,
-            treasureValidator: new TreasureValidator,
-            storySyncer: new StorySyncer,
-            offlineChecker: new OfflineChecker(this.$bus)
+            // Stateless for the UI: raw, so their reads aren't proxied and tracked
+            scenarioRepository: markRaw(new ScenarioRepository),
+            questRepository: markRaw(new QuestRepository),
+            achievementRepository: markRaw(new AchievementRepository),
+            itemRepository: markRaw(new ItemRepository),
+            buildingRepository: markRaw(new BuildingRepository),
+            overlayRepository: markRaw(new OverlayRepository),
+            userRepository: markRaw(new UserRepository),
+            storyRepository: markRaw(new StoryRepository),
+            echo: markRaw(new EchoService),
+            scenarioValidator: markRaw(new ScenarioValidator),
+            treasureValidator: markRaw(new TreasureValidator),
+            storySyncer: markRaw(new StorySyncer),
+            offlineChecker: markRaw(new OfflineChecker(this.$bus))
         }
     },
     async mounted() {
