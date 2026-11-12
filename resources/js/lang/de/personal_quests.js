@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "Politische Intrige",
+        "name": "Political Intrigue",
         "progress": [
             "Füge das Stadt-Ereignis 61 dem Stadt-Ereignis-Deck hinzu.",
             "Erhalte 30 Stimmen: drei Stimmen, wann immer du Ansehen erhältst, und eine Stimme pro Fraktionsansehen-Gegenstand, den du in ein abgeschlossenes Szenario mitgebracht hast.",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Gastfreundschaft im Gasthaus",
+        "name": "Inn to Hospitality",
         "progress": [
             "Plündere 60 Münzmarker.",
             "Lies {SECTION} 125.4."
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "Vergangene Zivilisation",
         "progress": [
-            "Erhalte “Aesther-Fernglas” (Gegenstand 149). Er kann nicht verkauft werden.",
-            "Benutze “Aesther-Fernglas” (Gegenstand 149) zehn Mal.",
+            "Erhalte “Aesther Spyglass” (Gegenstand 149). Er kann nicht verkauft werden.",
+            "Benutze “Aesther Spyglass” (Gegenstand 149) zehn Mal.",
             "Lies {SECTION} 115.2.",
             "Schließe {SCENARIO 63} ab."
         ]
@@ -639,7 +639,7 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "Eine Geschichte zu erzählen",
+        "name": "A Tale to Tell",
         "progress": [
             "Plündere in zehn Szenarien einen Schatzaufleger oder sieh zu, wie deine Gruppe einen plündert.",
             "Lies {SECTION} 12.3."
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "Adoptiveltern",
+        "name": "Adoptive Parent",
         "progress": [
             "Plündere in zehn Szenarien drei von Gegnern fallen gelassene Münzmarker.",
             "Lies {SECTION} 122.5.",
@@ -683,8 +683,8 @@ export default {
         "name": "Werkzeug des Lichts",
         "progress": [
             "Schalte sofort {SCENARIO 65} frei.",
-            "Finde “Schild der Gerechten” (Gegenstand 148).",
-            "Benutze “Schild der Gerechten” (Gegenstand 148), um zehn Angriffe mit 4 oder mehr Schaden zu negieren.",
+            "Finde “Shield of the Righteous” (Gegenstand 148).",
+            "Benutze “Shield of the Righteous” (Gegenstand 148), um zehn Angriffe mit 4 oder mehr Schaden zu negieren.",
             "Lies {SECTION} 82.1."
         ]
     },
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "Flucht vor den Sin-Ra",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "Füge die Stadt-Ereignisse 69 und 70 dem Stadt-Ereignis-Deck hinzu. Erhalte “Schwarzkarte” (Gegenstand 113). Er kann nicht verkauft werden.",
             "Schließe sechs Nebenszenarien ab (Szenarionummer über 56).",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "Leben am Abgrund",
+        "name": "Living on the Edge",
         "progress": [
-            "Erhalte “Experimentelle Rüstung” (Gegenstand 150).",
+            "Erhalte “Experimental Armor” (Gegenstand 150).",
             "Benutze sie, um 20 Gegnern Schaden zuzufügen.",
             "Lies {SECTION} 47.4."
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Kampfstudien",
+        "name": "Martial Study",
         "progress": [
             "Benutze in Szenarien acht verschiedene {ONE-HAND}- oder {TWO-HANDS}-Gegenstände.",
             "Lies {SECTION} 67.2."
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "Streben nach Meisterschaft",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "Erhalte 120 Erfahrung durch Fertigkeitskarten.",
             "Lies {SECTION} 17.2."

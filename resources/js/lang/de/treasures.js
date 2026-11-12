@@ -810,7 +810,7 @@ export default {
         "name": "Erhalte 15 Gold"
     },
     "gh2-24": {
-        "name": "Erhalte “Schutzstab” (Gegenstand 104)"
+        "name": "Erhalte “Warding Rod” (Gegenstand 104)"
     },
     "gh2-25": {
         "name": "Erhalte 1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "Erhalte 2 ✔"
     },
     "gh2-29": {
-        "name": "Erhalte “Aufgeladene Stiefel” (Gegenstand 100)"
+        "name": "Erhalte “Charged Boots” (Gegenstand 100)"
     },
     "gh2-30": {
         "name": "Erhalte 20 Erfahrung"
@@ -843,7 +843,7 @@ export default {
         "name": "Erhalte “Drakenhelm” (Gegenstand 121)"
     },
     "gh2-35": {
-        "name": "Erhalte “Stab der Übertragung” (Gegenstand 115)"
+        "name": "Erhalte “Rod of Transference” (Gegenstand 115)"
     },
     "gh2-36": {
         "name": "Zufälliger Gegenstandsplan"
@@ -915,13 +915,13 @@ export default {
         "name": "Erhalte 20 Gold"
     },
     "gh2-59": {
-        "name": "Erhalte “Schild der Gerechten” (Gegenstand 148)"
+        "name": "Erhalte “Shield of the Righteous” (Gegenstand 148)"
     },
     "gh2-60": {
         "name": "Erleide 5 Schaden"
     },
     "gh2-61": {
-        "name": "Erhalte “Stiefel der Standfestigkeit” (Gegenstand 143)"
+        "name": "Erhalte “Boots of Bracing” (Gegenstand 143)"
     },
     "gh2-62": {
         "name": "Erhalte 20 Gold"
@@ -933,7 +933,7 @@ export default {
         "name": "Zufälliger Gegenstandsplan"
     },
     "gh2-65": {
-        "name": "Erhalte “Kapuze des Waldläufers” (Gegenstand 103)"
+        "name": "Erhalte “Ranger's Hood” (Gegenstand 103)"
     },
     "gh2-66": {
         "name": "Erhalte {POISON} und {STRENGTHEN} und erhalte 2 verlorene Karten zurück"

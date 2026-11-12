@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Seelenfessel",
+        "name": "Soultether",
         "masteries": [
             "Führe vor deiner ersten Rast 3 verschiedene Beschwörungsaktionen aus und lass diese Karten während des gesamten Szenarios in deinem aktiven Bereich",
             "Führe in den ersten Runden von 6 Szenarien 6 verschiedene Beschwörungsfertigkeiten von deinen Fertigkeitskarten aus"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "Wildzorn",
+        "name": "Wildfury",
         "masteries": [
             "Reichere in einem Szenario in jedem deiner Züge {WIND} oder {EARTH} an oder verbrauche es",
             "Töte in einem Szenario 4 oder mehr Gegner mit {COMMAND} Angriffen mit einem Wert von 7 oder mehr (nach allen Boni, vor Angriffsmodifikatoren)"

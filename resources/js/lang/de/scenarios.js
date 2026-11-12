@@ -2956,38 +2956,38 @@ export default {
         ]
     },
     "mp-AN1": {
-        "name": "Ein quälendes Geschäft",
+        "name": "A Harrowing Deal",
         "rewards": [
-            "“Band der Freundschaft” (Gegenstand AN)"
+            "“Ribbon of Friendship” (Gegenstand AN)"
         ]
     },
     "mp-SA1": {
-        "name": "Hörner in der Nacht",
+        "name": "Horns in the Night",
         "rewards": [
-            "“Wappen von Frosthaven” (Gegenstand SA)"
+            "“Crest of Frosthaven” (Gegenstand SA)"
         ]
     },
     "mp-CA1": {
-        "name": "Flucht vor der Verderbnis",
+        "name": "Escape from Corruption",
         "rewards": [
-            "“Becken der Prophezeiung A” (Gegenstand CA A)",
-            "“Becken der Prophezeiung B” (Gegenstand CA B)"
+            "“Basin of Prophecy A” (Gegenstand CA A)",
+            "“Basin of Prophecy B” (Gegenstand CA B)"
         ]
     },
     "mp-HA1": {
-        "name": "Große Plage",
+        "name": "Major Annoyance",
         "rewards": [
-            "“Stiefel ohne Unsinn” (Gegenstand HA)"
+            "“No Nonsense Boots” (Gegenstand HA)"
         ]
     },
     "gh2-0": {
-        "name": "Trainingsparcours",
+        "name": "Training Course",
         "rewards": [
             "je 2 Gold"
         ]
     },
     "gh2-1": {
-        "name": "Banditenlager",
+        "name": "Bandit Camp",
         "rewards": [
             "je 10 Gold",
             "+1 Kaufmannsgilden-Ansehen",
@@ -3056,7 +3056,7 @@ export default {
         "rewards": []
     },
     "gh2-11": {
-        "name": "Ritualkammer",
+        "name": "Ritual Chamber",
         "rewards": [
             "je 10 Erfahrung",
             "je 1 ✔",
@@ -3122,7 +3122,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Militärposten",
+        "name": "Military Outpost",
         "rewards": [
             "je 25 Erfahrung",
             "+2 Dämonen-Ansehen",
@@ -3138,7 +3138,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "Die Geisterfestung",
+        "name": "The Ghost Fortress",
         "rewards": [
             "je 15 Gold",
             "+2 Kaufmannsgilden-Ansehen",
@@ -3146,7 +3146,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "Sprengung der Schicksalskanone",
+        "name": "Doomcannon Demolition",
         "rewards": [
             "je 15 Gold",
             "-1 Dämonen-Ansehen",
@@ -3292,7 +3292,7 @@ export default {
         ]
     },
     "gh2-40": {
-        "name": "Hinterhalt im Feuchtgebiet",
+        "name": "Wetlands Ambush",
         "rewards": []
     },
     "gh2-41": {
@@ -3302,11 +3302,11 @@ export default {
         ]
     },
     "gh2-42": {
-        "name": "Abgeschiedenes Tal",
+        "name": "Secluded Valley",
         "rewards": []
     },
     "gh2-43": {
-        "name": "Geheimnissen auf der Spur",
+        "name": "Chasing Secrets",
         "rewards": [
             [
                 "+1 Wohlstand",
@@ -3383,7 +3383,7 @@ export default {
         "rewards": []
     },
     "gh2-55": {
-        "name": "Der letzte Widerstand",
+        "name": "The Last Stand",
         "rewards": []
     },
     "gh2-56": {
@@ -3396,7 +3396,7 @@ export default {
     "gh2-57": {
         "name": "Unter der Krypta",
         "rewards": [
-            "Erhaltet “Zepter des Xorn” (Gegenstand 147)"
+            "Erhaltet “Scepter of Xorn” (Gegenstand 147)"
         ]
     },
     "gh2-58": {
@@ -3404,7 +3404,7 @@ export default {
         "rewards": [
             "je 10 Erfahrung",
             "je 1 ✔",
-            "Erhaltet “Zepter des Xorn” (Gegenstand 147)",
+            "Erhaltet “Scepter of Xorn” (Gegenstand 147)",
             "Fügt Weg-Ereignis R-39 dem Deck hinzu",
             "Fügt Stadt-Ereignis C-66 dem Deck hinzu"
         ]
@@ -3425,7 +3425,7 @@ export default {
         ]
     },
     "gh2-61": {
-        "name": "Gefährlicher Hain",
+        "name": "Dangerous Grove",
         "rewards": []
     },
     "gh2-62": {
@@ -3442,20 +3442,20 @@ export default {
         ]
     },
     "gh2-64": {
-        "name": "Wurzeln des Chaos",
+        "name": "Roots of Chaos",
         "rewards": [
             "Persönliche Quest 10 abgeschlossen"
         ]
     },
     "gh2-65": {
-        "name": "Mausoleum des Helden",
+        "name": "Hero's Mausoleum",
         "rewards": [
             "je 10 Erfahrung",
             "je 1 ✔"
         ]
     },
     "gh2-66": {
-        "name": "Ein Freund in Not",
+        "name": "A Friend in Need",
         "rewards": [
             "je 15 Gold",
             "Persönliche Quest 11 abgeschlossen"
@@ -3490,7 +3490,7 @@ export default {
         ]
     },
     "gh2-71": {
-        "name": "Uhrwerkfabrik",
+        "name": "Clockwork Factory",
         "rewards": [
             "je 10 Erfahrung",
             "je 1 ✔"
@@ -3518,7 +3518,7 @@ export default {
     "gh2-75": {
         "name": "Felssturzklamm",
         "rewards": [
-            "Erhaltet “Rubintalisman” (Gegenstand 152)"
+            "Erhaltet “Ruby Talisman” (Gegenstand 152)"
         ]
     },
     "gh2-76": {
@@ -3538,7 +3538,7 @@ export default {
         ]
     },
     "gh2-79": {
-        "name": "Pirscher-Angriff",
+        "name": "Lurker Assault",
         "rewards": [
             "+1 Wohlstand"
         ]
@@ -3581,7 +3581,7 @@ export default {
         ]
     },
     "gh2-85": {
-        "name": "Kreuzungsstation",
+        "name": "Crossroads Station",
         "rewards": [
             "je 1 ✔",
             "+1 Wohlstand"
@@ -3606,7 +3606,7 @@ export default {
         ]
     },
     "gh2-89": {
-        "name": "Gemeinnützige Arbeit",
+        "name": "Community Service",
         "rewards": [
             "Erhaltet 2× “Großer Heiltrank” (Gegenstand 37)"
         ]
@@ -3620,10 +3620,10 @@ export default {
         "rewards": []
     },
     "gh2-92": {
-        "name": "Chronalanker",
+        "name": "Chronal Anchor",
         "rewards": [
             "je 10 Erfahrung",
-            "Erhaltet “Zeitmatrix” (Gegenstand 144)"
+            "Erhaltet “Temporal Matrix” (Gegenstand 144)"
         ]
     },
     "gh2-93": {
@@ -3633,14 +3633,14 @@ export default {
         ]
     },
     "gh2-94": {
-        "name": "Rettung im Wasser",
+        "name": "A Watery Rescue",
         "rewards": [
             "je 10 Erfahrung",
-            "Erhaltet “Jenseitiges Zepter” (Gegenstand 139)"
+            "Erhaltet “Otherworldly Scepter” (Gegenstand 139)"
         ]
     },
     "gh2-95": {
-        "name": "Frachtschiff",
+        "name": "Cargo Ship",
         "rewards": []
     },
     "gh2-96": {
@@ -3650,35 +3650,35 @@ export default {
         ]
     },
     "gh2-97": {
-        "name": "Ratzenlager",
+        "name": "Vermling Camp",
         "rewards": [
             "je 5 Erfahrung",
             "+1 Wohlstand"
         ]
     },
     "gh2-98": {
-        "name": "Metamorphe Verwerfung",
+        "name": "Metamorphic Fault",
         "rewards": [
             "je 10 Erfahrung",
             "Erhaltet “Schädel des Hasses” (Gegenstand 111)"
         ]
     },
     "gh2-99": {
-        "name": "Sinterschmiede",
+        "name": "Sintering Forge",
         "rewards": [
-            "Erhaltet “Morgenklinge” (Gegenstand 117)",
+            "Erhaltet “Dawnblade” (Gegenstand 117)",
             "Fügt Weg-Ereignis R-33 dem Deck hinzu"
         ]
     },
     "gh2-100": {
-        "name": "Schweigen senkt sich",
+        "name": "Silence Falls",
         "rewards": [
             "+1 Wohlstand",
             "Fügt Stadt-Ereignis C-60 dem Deck hinzu"
         ]
     },
     "gh2-101": {
-        "name": "Gloomhaven-Platz A (Dämonen-Verbündete)",
+        "name": "Gloomhaven Square A (Demon Allies)",
         "rewards": [
             "je 30 Erfahrung",
             "+2 Dämonen-Ansehen",
@@ -3692,21 +3692,21 @@ export default {
         ]
     },
     "gh2-102": {
-        "name": "Gloomhaven-Platz A (Militär-Verbündete)",
+        "name": "Gloomhaven Square A (Military Allies)",
         "rewards": []
     },
     "gh2-103": {
-        "name": "Zinnen von Gloomhaven A (Händler-Verbündete)",
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
         "rewards": []
     },
     "gh2-104": {
-        "name": "Zinnen von Gloomhaven A (Militär-Verbündete)",
+        "name": "Gloomhaven Battlements A (Military Allies)",
         "rewards": []
     },
     "gh2-201": {
-        "name": "Ein Abend in der Stadt",
+        "name": "A Night Out",
         "rewards": [
-            "Erhaltet “Hakenschild” (Gegenstand 153)"
+            "Erhaltet “Hooked Shield” (Gegenstand 153)"
         ]
     },
     "gh2-202": {
@@ -3716,13 +3716,13 @@ export default {
         ]
     },
     "gh2-203": {
-        "name": "Verdorbene Apotheke",
+        "name": "Corrupted Apothecary",
         "rewards": [
-            "Erhaltet “Ätherisches Elixier” (Gegenstand 155)"
+            "Erhaltet “Etheric Elixir” (Gegenstand 155)"
         ]
     },
     "gh2-204": {
-        "name": "Materialsorgen",
+        "name": "Material Concerns",
         "rewards": [
             "Erhaltet “Flüsterklinge” (Gegenstand 156)"
         ]
@@ -3734,7 +3734,7 @@ export default {
         ]
     },
     "gh2-206": {
-        "name": "Befreiung der Ratzen",
+        "name": "Vermling Liberation",
         "rewards": [
             "Erhaltet “Astralmesser” (Gegenstand 158)"
         ]
@@ -3742,7 +3742,7 @@ export default {
     "gh2-207": {
         "name": "Karawanengeleit",
         "rewards": [
-            "Erhaltet “Insignie des Göttlichen” (Gegenstand 159)"
+            "Erhaltet “Insignia of the Divine” (Gegenstand 159)"
         ]
     },
     "gh2-208": {
@@ -3760,7 +3760,7 @@ export default {
     "gh2-210": {
         "name": "Die Nacht ernten",
         "rewards": [
-            "Erhaltet “Liebkosung der Nacht” (Gegenstand 162)"
+            "Erhaltet “The Night's Caress” (Gegenstand 162)"
         ]
     },
     "gh2-211": {
@@ -3796,7 +3796,7 @@ export default {
     "gh2-216": {
         "name": "Elementare Geheimnisse",
         "rewards": [
-            "Erhaltet “Elementarweste” (Gegenstand 168)"
+            "Erhaltet “Elemental Vest” (Gegenstand 168)"
         ]
     },
     "gh2-217": {
@@ -3808,7 +3808,7 @@ export default {
     "gh2-218": {
         "name": "Der Sand der Zeit",
         "rewards": [
-            "Erhaltet “Kriechender Panzer” (Gegenstand 170)"
+            "Erhaltet “Crawling Carapace” (Gegenstand 170)"
         ]
     }
 }

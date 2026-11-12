@@ -381,10 +381,10 @@ export default {
         "name": "Herz des Schnees"
     },
     "gh2-G2ATD": {
-        "name": "Das Gerät aktivieren"
+        "name": "Activating the Device"
     },
     "gh2-G2AUP": {
-        "name": "Ein unruhiger Frieden"
+        "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
         "name": "Antike Technologie"
@@ -399,7 +399,7 @@ export default {
         "name": "Stadtherrschaft: militärisch"
     },
     "gh2-G2EM": {
-        "name": "Elemente gemeistert"
+        "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
         "name": "Ende der Verderbtheit"
@@ -408,22 +408,22 @@ export default {
         "name": "Ende des Grauens"
     },
     "gh2-G2HW": {
-        "name": "Geweihte Wasser"
+        "name": "Hallowed Waters"
     },
     "gh2-G2ITD": {
-        "name": "In die Tiefe"
+        "name": "Into the Depths"
     },
     "gh2-G2PTB": {
-        "name": "Frieden durch Blutvergießen"
+        "name": "Peace Through Bloodshed"
     },
     "gh2-G2TCE": {
-        "name": "Die erloschene Kerze"
+        "name": "The Candle Extinguished"
     },
     "gh2-G2TCK": {
-        "name": "Die bewahrte Kerze"
+        "name": "The Candle Kept"
     },
     "gh2-G2TDR": {
-        "name": "Die Dunkelheit weicht"
+        "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
         "name": "Hilfe für den Draken"
@@ -441,27 +441,27 @@ export default {
         "name": "Verstummte Stimme"
     },
     "gh2-P2R16": {
-        "name": "Fraktionsansehen 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "Fraktionsansehen 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
-        "name": "Dämonen-Ansehen 6"
+        "name": "Demon Reputation 6"
     },
     "gh2-P2RD12": {
-        "name": "Dämonen-Ansehen 12"
+        "name": "Demon Reputation 12"
     },
     "gh2-P2RME6": {
-        "name": "Kaufmannsgilden-Ansehen 6"
+        "name": "Merchant Reputation 6"
     },
     "gh2-P2RME12": {
-        "name": "Kaufmannsgilden-Ansehen 12"
+        "name": "Merchant Reputation 12"
     },
     "gh2-P2RMI6": {
-        "name": "Militär-Ansehen 6"
+        "name": "Military Reputation 6"
     },
     "gh2-P2RMI12": {
-        "name": "Militär-Ansehen 12"
+        "name": "Military Reputation 12"
     }
 }
