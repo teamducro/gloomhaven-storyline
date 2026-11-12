@@ -172,7 +172,7 @@ export default {
         ],
         "conclusion_faq": [
             "Ihr könnt euer aktuelles Geld zur Belohnung hinzurechnen, aber ihr könnt in der Stadt keine Gegenstände verkaufen, da die Belohnung unmittelbar nach dem Ende des Szenarios erfolgt, bevor ihr in die Stadt zurückkehrt.",
-            "Druckfehler: Ist das Feld für den Aufkleber der globalen Errungenschaft „Der Spalt geschlossen“ bereits belegt, überklebt es nicht. Verzichtet entweder auf den Aufkleber oder platziert ihn neben der Karte."
+            "Druckfehler: Ist das Feld für den Aufkleber des globalen Erfolgs „Der Riss geschlossen“ bereits belegt, überklebt es nicht. Verzichtet entweder auf den Aufkleber oder platziert ihn neben der Karte."
         ]
     },
     "gh-28": {
@@ -267,7 +267,7 @@ export default {
         "name": "Verfallenes Grab",
         "rewards": [
             "je 50 Gold",
-            "je 25 Erfahrung each",
+            "je 25 Erfahrung",
             "je 2 ✔",
             "+2 Wohlstand"
         ]
@@ -352,7 +352,7 @@ export default {
     },
     "gh-52": {
         "name": "Verseuchter Keller",
-        "requirements": "Persönliches Ziel „Suche nach Xorn“",
+        "requirements": "Persönliche Quest „Suche nach Xorn“",
         "faq": [
             "Sonderregel: In diesem Szenario könnt ihr die untere Aktion einer beliebigen Karte verwenden, um einen Schatzaufleger in Reichweite 1 zu plündern.",
             "Bei Verwendung des Materials von Vergessene Zirkel können die Hindernisse in der Mitte des Startraums wie Wand-Aufleger behandelt werden, wie in den Regeln von Vergessene Zirkel festgelegt. Ein Charakter kann sich außerdem nicht in den Kartenabschnitt eines anderen Charakters teleportieren."
@@ -360,14 +360,14 @@ export default {
     },
     "gh-53": {
         "name": "Unter der Krypta",
-        "requirements": "Persönliches Ziel „Suche nach Xorn“",
+        "requirements": "Persönliche Quest „Suche nach Xorn“",
         "rewards": [
             "Der Sucher des Xorn erhält: “Xorn's Stab” (Gegenstand 114) Der Sucher kann diesen Gegenstand nicht verkaufen."
         ]
     },
     "gh-54": {
         "name": "Eispalast",
-        "requirements": "Persönliches Ziel „Suche nach Xorn“, Gegenstand „Stab des Xorn“ ausgerüstet",
+        "requirements": "Persönliche Quest „Suche nach Xorn“, Gegenstand „Stab des Xorn“ ausgerüstet",
         "rewards": [
             "Der Sucher des Xorn geht sofort in den Ruhestand",
             "Fügt anstelle der normalen Ruhestands-Ereignisse des Charakters das Stadt- sowie Wegereignis 59 den entsprechenden Decks hinzu",
@@ -401,16 +401,16 @@ export default {
     },
     "gh-55": {
         "name": "Nebeldickicht",
-        "requirements": "Persönliches Ziel „Take Back the Trees“",
+        "requirements": "Persönliche Quest „Rückeroberung des Waldes“",
         "rewards": [
             "10 gemeinsames Gold"
         ]
     },
     "gh-56": {
         "name": "Banditenwald",
-        "requirements": "Persönliches Ziel „Take Back the Trees“",
+        "requirements": "Persönliche Quest „Rückeroberung des Waldes“",
         "rewards": [
-            "“Take Back the Trees”-Quest abgeschlossen",
+            "“Rückeroberung des Waldes”-Quest abgeschlossen",
             "Öffnet Umschlag {DS}",
             "je 10 Gold",
             "+2 Ansehen"
@@ -418,16 +418,16 @@ export default {
     },
     "gh-57": {
         "name": "Ermittlungen",
-        "requirements": "Persönliches Ziel „Rachefeldzug“",
+        "requirements": "Persönliche Quest „Rachefeldzug“",
         "rewards": [
             "+1 Ansehen"
         ]
     },
     "gh-58": {
         "name": "Blutige Hütte",
-        "requirements": "Persönliches Ziel „Rachefeldzug“",
+        "requirements": "Persönliche Quest „Rachefeldzug“",
         "rewards": [
-            "Rache”-Quest abgeschlossen",
+            "“Rachefeldzug”-Quest abgeschlossen",
             "Öffnet Umschlag X",
             "+2 Ansehen"
         ],
@@ -437,13 +437,13 @@ export default {
     },
     "gh-59": {
         "name": "Vergessener Hain",
-        "requirements": "Persönliches Ziel „Suche nach Heilung“"
+        "requirements": "Persönliche Quest „Suche nach Heilung“"
     },
     "gh-60": {
         "name": "Alchemielabor",
-        "requirements": "Persönliches Ziel „Suche nach Heilung“",
+        "requirements": "Persönliche Quest „Suche nach Heilung“",
         "rewards": [
-            "“Finding the Cure”-Quest abgeschlossen",
+            "“Suche nach Heilung”-Quest abgeschlossen",
             "Öffnet Umschlag X",
             "+1 Wohlstand"
         ],
@@ -453,13 +453,13 @@ export default {
     },
     "gh-61": {
         "name": "Schwindender Leuchtturm",
-        "requirements": "Persönliches Ziel „Vergangene Zivilisation“"
+        "requirements": "Persönliche Quest „Vergangene Zivilisation“"
     },
     "gh-62": {
         "name": "Grube der Seelen",
-        "requirements": "Persönliches Ziel „Vergangene Zivilisation“",
+        "requirements": "Persönliche Quest „Vergangene Zivilisation“",
         "rewards": [
-            "“The Fall of Man”-Quest abgeschlossen",
+            "“Vergangene Zivilisation”-Quest abgeschlossen",
             "Öffnet Umschlag {NS}",
             "je 10 Erfahrung"
         ]
@@ -965,7 +965,7 @@ export default {
         "rewards": [
             [
                 "je 5 Erfahrung",
-                "Füge Spalt-Ereignis 16 dem Deck hinzu. Mische das Ereignis in die obersten drei Karten des Decks."
+                "Fügt dem Deck Riss-Ereignis 16 hinzu. Mischt dieses Ereignis nicht in das gesamte Deck, sondern in die obersten 3 Karten."
             ],
             [
                 "je 12 Erfahrung",
@@ -998,7 +998,7 @@ export default {
     "fc-114": {
         "name": "In der Schwebe",
         "rewards": [
-            "Gruppen-Segen: Zusätzliche Kosten für die Verbesserung einer Fähigkeitskarte, die auf der Stufe der Karte basieren, werden nun um 5 Gold pro Stufe reduziert."
+            "Gruppen-Segen: Zusätzliche Kosten für die Verbesserung einer Fertigkeitskarte, die auf der Stufe der Karte basieren, werden nun um 5 Gold pro Stufe reduziert."
         ]
     },
     "fc-115": {
@@ -2610,7 +2610,7 @@ export default {
     },
     "cs-33": {
         "name": "Belagerungsturm",
-        "requirements": "Persönliches Ziel „Protect and Serve“",
+        "requirements": "Persönliche Quest „Schützen und Dienen“",
         "rewards": [
             "“Lodernde Stiefel” (Gegenstand 90)",
             "+1 Ansehen"
@@ -2618,7 +2618,7 @@ export default {
     },
     "cs-34": {
         "name": "Flucht aus der Großen Eiche",
-        "requirements": "Persönliches Ziel „Protect and Serve“",
+        "requirements": "Persönliche Quest „Schützen und Dienen“",
         "rewards": [
             "Schaltet Umschlag {BM} frei",
             "+2 Ansehen",
@@ -2627,11 +2627,11 @@ export default {
     },
     "cs-35": {
         "name": "Gefängnisaufstand",
-        "requirements": "Persönliches Ziel „Bandit Banisher“"
+        "requirements": "Persönliche Quest „Banditenbezwinger“"
     },
     "cs-36": {
         "name": "Jägerprämie",
-        "requirements": "Persönliches Ziel „Bandit Banisher“",
+        "requirements": "Persönliche Quest „Banditenbezwinger“",
         "rewards": [
             "Schaltet Umschlag {CG} frei",
             "je 10 Gold"
@@ -2639,21 +2639,21 @@ export default {
     },
     "cs-37": {
         "name": "Brennende Steine",
-        "requirements": "Persönliches Ziel „Natural Selection“",
+        "requirements": "Persönliche Quest „Natürliche Auslese“",
         "rewards": [
             "Erhaltet einen zufälligen “Stone”-Gegenstand (Gegenstand 94-100)"
         ]
     },
     "cs-38": {
         "name": "Altäre der Verwirrung",
-        "requirements": "Persönliches Ziel „Natural Selection“",
+        "requirements": "Persönliche Quest „Natürliche Auslese“",
         "rewards": [
             "Schaltet Umschlag {LU} frei"
         ]
     },
     "cs-39": {
         "name": "Eiternder Morast",
-        "requirements": "Persönliches Ziel „An Adder Divides“",
+        "requirements": "Persönliche Quest „Die gespaltene Natter“",
         "rewards": [
             "je 10 Erfahrung",
             "Entfernt die obersten 5 Karten vom Stadt-Ereignis-Deck und mischt Stadt-Ereignis 57 unter sie. Legt die übrigen Stadt-Ereigniskarten beiseite, bis Stadt-Ereignis 57 abgehandelt ist. Jede zusätzliche Karte, die in dieser Zeit dem Stadt-Ereignis-Deck hinzugefügt würde, wird erst hinzugefügt, nachdem Stadt-Ereignis 57 abgehandelt wurde und die übrigen Karten wieder mit dem ursprünglichen Deck vereint wurden.",
@@ -2726,7 +2726,7 @@ export default {
     "cs-49": {
         "name": "Eichen-Invasion A",
         "rewards": [
-            "Beim nächsten Besuch in Gloomhaven kosten Spenden an das Heiligtum der Großen Eiche 0 Gold"
+            "Beim nächsten Besuch in Gloomhaven kosten Spenden an den Tempel der Großen Eiche 0 Gold"
         ]
     },
     "cs-50": {
@@ -2839,14 +2839,14 @@ export default {
     },
     "cs-AA1": {
         "name": "Die Reichtümer der Stahlseide",
-        "requirements": "Persönliches Ziel „At All Costs“",
+        "requirements": "Persönliche Quest „Um jeden Preis“",
         "rewards": [
             "“Felsstachel-Bollwerk” (Gegenstand AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Böse Echos",
-        "requirements": "Persönliches Ziel „The Weight of Failure“",
+        "requirements": "Persönliche Quest „Die Last des Versagens“",
         "rewards": [
             "“Geisterschimmer-Honig” (Gegenstand AA02)"
         ]
@@ -2859,7 +2859,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Prüfstein",
-        "requirements": "Persönliches Ziel „Ingenious Inventor“ und Gegenstand „Leistungsmodulator“ ausgerüstet",
+        "requirements": "Persönliche Quest „Genialer Erfinder“ und Gegenstand „Leistungsmodulator“ ausgerüstet",
         "rewards": [
             [
                 "Quest “Genialer Erfinder” abgeschlossen",
@@ -2885,7 +2885,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Die Hauptader",
-        "requirements": "Persönliches Ziel „Scrap Diver“",
+        "requirements": "Persönliche Quest „Schrott-Taucher“",
         "rewards": [
             "Quest “Schrott-Taucher” abgeschlossen",
             "Öffnet Umschlag {QA}",
@@ -2901,11 +2901,11 @@ export default {
     },
     "cs-RM1": {
         "name": "Benimm dich",
-        "requirements": "Persönliches Ziel „Brutal Enforcer“"
+        "requirements": "Persönliche Quest „Brutaler Vollstrecker“"
     },
     "cs-RM2": {
         "name": "Sinkender Anführer",
-        "requirements": "Persönliches Ziel „Brutal Enforcer“",
+        "requirements": "Persönliche Quest „Brutaler Vollstrecker“",
         "rewards": [
             "Quest “Brutaler Vollstrecker” abgeschlossen",
             "Öffnet Umschlag {RM}",
@@ -2914,11 +2914,11 @@ export default {
     },
     "cs-RM3": {
         "name": "Zerstörte Kolonie",
-        "requirements": "Persönliches Ziel „Apex Predator“"
+        "requirements": "Persönliche Quest „Spitzenprädator“"
     },
     "cs-RM4": {
         "name": "Terrorschuppen-Hort",
-        "requirements": "Persönliches Ziel „Apex Predator“",
+        "requirements": "Persönliche Quest „Spitzenprädator“",
         "rewards": [
             "Quest “Spitzenprädator” abgeschlossen",
             "Öffnet Umschlag {RM}",
@@ -2949,7 +2949,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Unersättlich",
-        "requirements": "Kein Ruinmaw in der Gruppe",
+        "requirements": "Kein Ruinenschlund in der Gruppe",
         "rewards": [
             "je 10 Erfahrung",
             "“Wilder Harnisch”-Plan (Gegenstand RM06)"

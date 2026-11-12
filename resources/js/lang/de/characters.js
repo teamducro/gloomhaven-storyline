@@ -11,8 +11,8 @@ export default {
             "Füge eine {AGAIN} {STUN} Karte hinzu",
             "Füge eine {AGAIN} {DISARM} Karte und eine {AGAIN} {MUDDLE} Karte hinzu",
             "Füge eine {AGAIN} “{TARGET} hinzufügen” Karte hinzu",
-            "Füge eine {+1_WHITE} {SHIELD}1, selbst Karte hinzu",
-            "Ignoriere negative Gegenstandeffekte und füge eine {+1_WHITE} Karte hinzu"
+            "Füge eine {+1_WHITE} {SHIELD}1, Selbst Karte hinzu",
+            "Ignoriere negative Gegenstandseffekte und füge eine {+1_WHITE} Karte hinzu"
         ]
     },
     "CH": {
@@ -34,7 +34,7 @@ export default {
         "name": "Spruchweberin",
         "perks": [
             "Entferne vier {+0_WHITE} Karten",
-            "Ersetze eine {-1_WHITE} Karte mit einer {+1_WHITE} Karte",
+            "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
             "Füge zwei {+1_WHITE} Karten hinzu",
             "Füge eine {+0_WHITE} {STUN} Karte hinzu",
             "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
@@ -50,11 +50,11 @@ export default {
         "name": "Tüftler",
         "perks": [
             "Entferne zwei {-1_WHITE} Karten",
-            "Ersetze eine {-2_WHITE} Karte mit einer {+0_WHITE} Karte",
+            "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
             "Füge zwei {+1_WHITE} Karten hinzu",
             "Füge eine {+3_WHITE} Karte hinzu",
             "Füge zwei {AGAIN} {FIRE} Karten hinzu",
-            "Add three {AGAIN} {MUDDLE} Karten hinzu",
+            "Füge drei {AGAIN} {MUDDLE} Karten hinzu",
             "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
             "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
             "Füge eine {+1_WHITE} {HEAL}2 Karte hinzu",
@@ -67,9 +67,9 @@ export default {
         "perks": [
             "Entferne zwei {-1_WHITE} Karten",
             "Entferne vier {+0_WHITE} Karten",
-            "Ersetze eine {-2_WHITE} Karte mit einer {+0_WHITE} Karte",
-            "Ersetze eine {-1_WHITE} Karte mit einer {+1_WHITE} Karte",
-            "Ersetze eine {+0_WHITE} Karte mit einer {+2_WHITE} Karte",
+            "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
+            "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+            "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
             "Füge zwei {AGAIN} {+1_WHITE} Karten hinzu",
             "Füge zwei {AGAIN} {PIERCE}3 Karten hinzu",
             "Füge zwei {AGAIN} {POISON} Karten hinzu",
@@ -170,7 +170,7 @@ export default {
             "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
             "Füge zwei {AGAIN} {STUN} Karten hinzu",
             "Füge zwei {AGAIN} {LIGHT} Karten hinzu",
-            "Füge zwei {AGAIN} {SHIELD}1, selbst Karten hinzu",
+            "Füge zwei {AGAIN} {SHIELD}1, Selbst Karten hinzu",
             "Ignoriere negative Gegenstandseffekte und füge zwei {+1_WHITE} Karten hinzu",
             "Ignoriere negative Szenarioeffekte"
         ]
@@ -275,7 +275,7 @@ export default {
             "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {DARK} Karte",
             "Füge eine {+2_WHITE} {MUDDLE} Karte",
             "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
-            "Ignoriere negative Gegenstandeffekte und füge eine {+1_WHITE} Karte hinzu",
+            "Ignoriere negative Gegenstandseffekte und füge eine {+1_WHITE} Karte hinzu",
             "Ignoriere negative Szenarioeffekte und füge eine {+1_WHITE} Karte hinzu"
         ]
     },
@@ -1267,7 +1267,7 @@ export default {
             "Füge zwei {+1_WHITE} “Füge +1 {ATTACK.fh} hinzu, wenn ein Verbündeter ein aktives Rezept hat” Karten hinzu",
             "Füge eine {AGAIN} “{HEAL.fh}3, {RANGE.fh}1” Karte hinzu",
             "Füge allen Heilfertigkeiten auf Fertigkeitskarten „Medizinpaket“ +1 {HEAL.fh} hinzu",
-            "In jeder Stadtphase nach einem abgeschlossenen Szenario ist deine Spende oder die eines Verbündeten an das Heiligtum der Großen Eiche kostenlos",
+            "In jeder Stadtphase nach einem abgeschlossenen Szenario ist deine Spende oder die eines Verbündeten an den Tempel der Großen Eiche kostenlos",
             "Erhalte am Ende jeder deiner Rasten, wenn ein Verbündeter ein aktives Rezept hat, eine Fertigkeitskarte „Medizinpaket“ und bewege den Marker auf dem aktiven Rezept eines Verbündeten um ein Feld zurück"
         ]
     },

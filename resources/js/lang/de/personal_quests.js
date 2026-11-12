@@ -67,7 +67,7 @@ export default {
         ]
     },
     "gh-520": {
-        "name": "Werkzeug ddes Lichts",
+        "name": "Werkzeug des Lichts",
         "progress": [
             "Finde den Schädelfluch im Verstck der Nekromantin.",
             "Töte damit 7 Wandelnde Skelette, Wandelnde Leichen oder Wandelnde Seelen."
@@ -91,7 +91,7 @@ export default {
         "progress": [
             "Töte einen Flammendämon.",
             "Töte einen Frostdämon.",
-            "Töte einen Windddämon.",
+            "Töte einen Winddämon.",
             "Töte einen Erddämon.",
             "Töte einen Nachtdämon.",
             "Töte einen Sonnendämon."
@@ -607,9 +607,9 @@ export default {
         ]
     },
     "gh2-3": {
-        "name": "Verbesserte Fähigkeiten",
+        "name": "Verbesserte Fertigkeiten",
         "progress": [
-            "Kaufe fünf Verbesserungen (erfordert die globale Errungenschaft “Macht der Verbesserung”).",
+            "Kaufe fünf Verbesserungen (erfordert den globalen Erfolg “Macht der Verbesserung”).",
             "Lies {SECTION} 71.2."
         ]
     },
@@ -632,7 +632,7 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "Eiferer des Blutgottes",
+        "name": "Für den Blutgott",
         "progress": [
             "Beende zehn Szenarien mit Trefferpunkten auf oder unter der Hälfte deines Maximums, ohne erschöpft zu werden.",
             "Lies {SECTION} 122.3."
@@ -666,7 +666,7 @@ export default {
     "gh2-10": {
         "name": "Tilgung des Unnatürlichen",
         "progress": [
-            "Verbessere eine Fertigkeitskarte (deine oder die eines Verbündeten) mit einem {ANY}-Element (erfordert die globale Errungenschaft “Macht der Verbesserung”).",
+            "Verbessere eine Fertigkeitskarte (deine oder die eines Verbündeten) mit einem {ANY}-Element (erfordert den globalen Erfolg “Macht der Verbesserung”).",
             "Lies {SECTION} 14.3.",
             "Schließe {SCENARIO 64} ab."
         ]
@@ -759,7 +759,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "Trophäenjagt",
+        "name": "Trophäenjagd",
         "progress": [
             "Töte 20 verschiedene Arten von Monstern.",
             "Lies {SECTION} 21.1."

@@ -41,7 +41,7 @@ export default {
     "gh-8": {
         "name": "Dreieckschild",
         "source": "Wohlstand 1",
-        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 1 für den Angriff."
+        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhältst du {SHIELD} 1 für den Angriff."
     },
     "gh-9": {
         "name": "Starkbogen",
@@ -66,8 +66,8 @@ export default {
     "gh-13": {
         "name": "Kleiner Ausdauertrank",
         "source": "Wohlstand 1",
-        "desc": "Bekomme während deines zugs bis zu 1 deiner abgeworfenen Karten zurück {RECOVER}.",
-        "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch eine abgelegte Karte wiederherstellen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
+        "desc": "Bekomme während deines Zugs bis zu 2 deiner abgeworfenen Karten zurück {RECOVER}.",
+        "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch eine abgeworfene Karte zurückbekommen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
     },
     "gh-14": {
         "name": "Kleiner Krafttrank",
@@ -163,7 +163,7 @@ export default {
     "gh-32": {
         "name": "Turmschild",
         "source": "Wohlstand 4",
-        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 2 für den Angriff."
+        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhältst du {SHIELD} 2 für den Angriff."
     },
     "gh-33": {
         "name": "Wurfbombe",
@@ -173,8 +173,8 @@ export default {
     "gh-34": {
         "name": "Großer Ausdauertrank",
         "source": "Wohlstand 4",
-        "desc": "Bekomme während deines Zugs bis zu 2 deiner abgeworfenen Karten zurück {RECOVER}.",
-        "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch 2 abgelegte Karten wiederherstellen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
+        "desc": "Bekomme während deines Zugs bis zu 3 deiner abgeworfenen Karten zurück {RECOVER}.",
+        "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch 2 abgeworfene Karten zurückbekommen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
     },
     "gh-35": {
         "name": "Falkenfigur",
@@ -236,7 +236,7 @@ export default {
     "gh-46": {
         "name": "Stachelschild",
         "source": "Wohlstand 6",
-        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälstdu {SHIELD} 1 und {RETALIATE} 2 für den Angriff."
+        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhältst du {SHIELD} 1 und {RETALIATE} 2 für den Angriff."
     },
     "gh-47": {
         "name": "Kriegssense",
@@ -256,7 +256,7 @@ export default {
     "gh-50": {
         "name": "Panzerschuhe",
         "source": "Wohlstand 7",
-        "desc": "Wenn du dich in deinem Zug 1 oder weniger Felder weit bewegst, erhälst du {SHIELD} 1 für die Runde. Füge deinem Angriffsmodifikator-Deck 2 {-1} hinzu."
+        "desc": "Wenn du dich in deinem Zug 1 oder weniger Felder weit bewegst, erhältst du {SHIELD} 1 für die Runde. Füge deinem Angriffsmodifikator-Deck 2 {-1} hinzu."
     },
     "gh-51": {
         "name": "Schattenrüstung",
@@ -311,7 +311,7 @@ export default {
     "gh-61": {
         "name": "Setzschild",
         "source": "Wohlstand 8",
-        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 4 für den Angriff."
+        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhältst du {SHIELD} 4 für den Angriff."
     },
     "gh-62": {
         "name": "Schicksalspulver",
@@ -331,7 +331,7 @@ export default {
     "gh-65": {
         "name": "Plattenpanzer",
         "source": "Wohlstand 9",
-        "desc": "Erhalte gegen die nächsten 3 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 5 {-1} hinzu."
+        "desc": "Erhalte gegen die nächsten 5 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 5 {-1} hinzu."
     },
     "gh-66": {
         "name": "Schreckensmaske",
@@ -341,11 +341,11 @@ export default {
     "gh-67": {
         "name": "Ausbalancierte Klinge",
         "source": "Wohlstand 9",
-        "desc": "DIe obere Standardaktion gilt als {ATTACK} 4 anstatt {ATTACK} 2."
+        "desc": "Die obere Standardaktion gilt als {ATTACK} 4 anstatt {ATTACK} 2."
     },
     "gh-68": {
         "name": "Hellebarde",
-        "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nSektion 132 -> g106 “Strangler's Park” im Buch",
+        "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nAbschnitt 132 -> g106 “Strangler's Park” im Buch",
         "desc": "Du kannst während deiner Einzelkampfangriffsaktion einen beliebigen Gegner im Umkreis von 2 Feldern angreifen."
     },
     "gh-69": {
@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Ring der Chancen",
-        "source": "Wohlstand 9\nFC Herausforderungs-Szenario, Rift Karte 12 (Schatz #89)\nSektion 103 -> 84 “Gateway to the Firmament” im Buch",
+        "source": "Wohlstand 9\nFC Herausforderungs-Szenario, Riss-Ereignis 12 (Schatz #89)\nAbschnitt 103 -> 84 “Gateway to the Firmament” im Buch",
         "desc": "Spiele am Ende deines Zugs 2 Handkarten aus und führe in dieser Runde, basierend auf deiner neuen Hauptinitiative (die später als deine aktuelle Initiative sein muss) einen zusätzlichen Zug aus."
     },
     "gh-71": {
@@ -461,7 +461,7 @@ export default {
     "gh-91": {
         "name": "Stahlring",
         "source": "Zufälliger Gegenstand",
-        "desc": "Wenn du durch einen Angriff, der dich anvisiert, Schaden erleidest, erhälst du {SHIELD} 4 für den Angriff."
+        "desc": "Wenn du durch einen Angriff, der dich anvisiert, Schaden erleidest, erhältst du {SHIELD} 4 für den Angriff."
     },
     "gh-92": {
         "name": "Dämpfungsring",
@@ -645,7 +645,7 @@ export default {
     "gh-127": {
         "name": "Mechanische Riesenspinne",
         "source": "Stadt-Ereignis 61",
-        "desc": "Wende währende deines Zuges “{LOOT 1}” an ."
+        "desc": "Wende währende deines Zuges “{LOOT 1}” an."
     },
     "gh-128": {
         "name": "Schwarzes Rauchfass",
@@ -772,7 +772,7 @@ export default {
     },
     "gh-152": {
         "name": "Ring der Dualität",
-        "source": "Belohnung von {SCENARIO 97}\nSektion 125 “A locked chest” im Buch",
+        "source": "Belohnung von {SCENARIO 97}\nAbschnitt 125 “A locked chest” im Buch",
         "desc": "Du darfst nach der oberen Aktion einer beliebigen Fertigkeitskarte sofort die untere Aktion derselben Karte ausführen. Dieser Gegenstand kann nicht verwendet werden, wenn beide Aktionen ein Symbol für verlorene Karten {CONSUMED} auslösen."
     },
     "gh-153": {
@@ -822,7 +822,7 @@ export default {
     },
     "gh-162": {
         "name": "Riss-Apparat",
-        "source": "Belohnung von {SCENARIO 112}\nSektion 62 “Mechanical Splendor” im Buch.",
+        "source": "Belohnung von {SCENARIO 112}\nAbschnitt 62 “Mechanical Splendor” im Buch.",
         "desc": "{TELEPORT} dich während deines Zugs auf ein beliebiges unbesetztes Feld in bis zu 4 Feldern Entfernung."
     },
     "gh-163": {
@@ -1670,8 +1670,8 @@ export default {
     },
     "fh-39": {
         "name": "Abgrundaxt",
-        "source": "Handwerker 7\nPersönliches Ziel 19",
-        "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff gegen einen Gefrorenen Leichnam, Eiswraith oder Lebendes Verderben +3 {ATTACK.fh} und {PIERCE.fh} 1 hinzu."
+        "source": "Handwerker 7\nPersönliche Quest 19",
+        "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff gegen eine Gefrorene Leiche, einen Eisspuk oder ein Wandelndes Schicksal +3 {ATTACK.fh} und {PIERCE.fh} 1 hinzu."
     },
     "fh-40": {
         "name": "Herzschlagbogen",
@@ -1899,7 +1899,7 @@ export default {
     "fh-84": {
         "name": "Ausdauertrank",
         "source": "Alchemie",
-        "desc": "{RECOVER.fh} während deines Zugs eine Stufe-1-Karte aus deinem Ablagestapel."
+        "desc": "{RECOVER.fh} während deines Zugs eine Stufe-1-Karte aus deinem Abwurfstapel."
     },
     "fh-85": {
         "name": "Krafttrank",
@@ -1979,7 +1979,7 @@ export default {
     "fh-100": {
         "name": "Großer Ausdauertrank",
         "source": "Alchemie",
-        "desc": "{RECOVER.fh} während deines Zugs eine Karte aus deinem Ablagestapel."
+        "desc": "{RECOVER.fh} während deines Zugs eine Karte aus deinem Abwurfstapel."
     },
     "fh-101": {
         "name": "Großer Krafttrank",
@@ -2335,7 +2335,7 @@ export default {
     "fh-171": {
         "name": "Erfrischendes Amulett",
         "source": "Beutestapel (zufällig)",
-        "desc": "{RECOVER.fh} wann immer du eine Karte verlierst, um {DAMAGE.fh} zu negieren, bis zu eine Karte aus deinem Ablagestapel und erhalte {REGENERATE.fh}."
+        "desc": "{RECOVER.fh} wann immer du eine Karte verlierst, um {DAMAGE.fh} zu negieren, bis zu eine Karte aus deinem Abwurfstapel und erhalte {REGENERATE.fh}."
     },
     "fh-172": {
         "name": "Kappe der Vorahnung",
@@ -2531,7 +2531,7 @@ export default {
     "fh-210": {
         "name": "Tanjo",
         "source": "SO-39",
-        "desc": "Füge während deines Zugs allen Angriffen von Lurkern, die dich anvisieren, in dieser Runde +3 {ATTACK.fh} hinzu. {ROUND}"
+        "desc": "Füge während deines Zugs allen Angriffen von Pirschern, die dich anvisieren, in dieser Runde +3 {ATTACK.fh} hinzu. {ROUND}"
     },
     "fh-211": {
         "name": "Sprengfass",
@@ -2894,7 +2894,7 @@ export default {
     "gh2-12": {
         "name": "Ausdauertrank",
         "source": "Wohlstand 1\nStadt-Ereignis 84",
-        "desc": "{RECOVER.fh} während deines Zugs eine Stufe-1-Karte aus deinem Ablagestapel.",
+        "desc": "{RECOVER.fh} während deines Zugs eine Stufe-1-Karte aus deinem Abwurfstapel.",
         "faq": "X-Karten zählen als Stufe-1-Karten und können daher ebenfalls wiedererhalten werden."
     },
     "gh2-13": {
@@ -3128,7 +3128,7 @@ export default {
     "gh2-58": {
         "name": "Großer Ausdauertrank",
         "source": "Wohlstand 7",
-        "desc": "{RECOVER.fh} während deines Zugs eine Karte aus deinem Ablagestapel."
+        "desc": "{RECOVER.fh} während deines Zugs eine Karte aus deinem Abwurfstapel."
     },
     "gh2-59": {
         "name": "Teleskoplinse",
@@ -3405,7 +3405,7 @@ export default {
     },
     "gh2-113": {
         "name": "Schwarzkarte",
-        "source": "Persönliches Ziel 15",
+        "source": "Persönliche Quest 15",
         "desc": "Lege während deines Zugs einen Charaktermarker auf einen normalen oder Elite-Gegner in Reichweite {RANGE.fh} 3. Du und alle Verbündeten fügen allen Angriffen gegen diesen Gegner +1 {ATTACK.fh} hinzu. {PERSISTENT}"
     },
     "gh2-114": {
@@ -3587,12 +3587,12 @@ export default {
     },
     "gh2-149": {
         "name": "Aesther-Fernglas",
-        "source": "Persönliches Ziel 04",
+        "source": "Persönliche Quest 04",
         "desc": "Dieser Gegenstand darf nur verwendet werden, wenn du an mindestens ein Hindernis angrenzt. Führe während deines Zugs aus: {BLESS.fh}, Selbst"
     },
     "gh2-150": {
         "name": "Experimentelle Rüstung",
-        "source": "Persönliches Ziel 17",
+        "source": "Persönliche Quest 17",
         "desc": "Dieser Gegenstand kann nicht verkauft werden und muss in jedes Szenario mitgenommen werden. Wenn du durch einen Angriff {DAMAGE.fh} erleidest, darfst du {DAMAGE.fh} 2 erleiden, damit alle angrenzenden Verbündeten und Gegner {DAMAGE.fh} 2 erleiden."
     },
     "gh2-151": {

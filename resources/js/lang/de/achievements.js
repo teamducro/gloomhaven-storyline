@@ -165,7 +165,7 @@ export default {
         "name": "Stab des Wassers"
     },
     "gh-PFA": {
-        "name": "DIe Hilfe des Fischers"
+        "name": "Die Hilfe des Fischers"
     },
     "gh-PT": {
         "name": "Erdbeben"
@@ -219,7 +219,7 @@ export default {
         "name": "Wachdienst"
     },
     "gh-PDE": {
-        "name": "Dimensionalesgleichgewicht"
+        "name": "Dimensionsgleichgewicht"
     },
     "gh-PHH": {
         "name": "Jagd auf die Jägerin"

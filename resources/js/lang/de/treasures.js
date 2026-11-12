@@ -132,7 +132,7 @@ export default {
         "name": "Zufälliges Nebenszenario"
     },
     "gh-45": {
-        "name": "Zufälliger Gegenstandsplanv"
+        "name": "Zufälliger Gegenstandsplan"
     },
     "gh-46": {
         "name": "Erleide 3 Schaden und erhalte {POISON}"
@@ -183,7 +183,7 @@ export default {
         "name": "Erhalte “Mehrzweckdolch” (Gegenstand 040)"
     },
     "gh-62": {
-        "name": "Erhalte “Helm der Berge” (Gegenstand 110) and “Gebirgshammer” (Gegenstand 115)"
+        "name": "Erhalte “Helm der Berge” (Gegenstand 110) und “Gebirgshammer” (Gegenstand 115)"
     },
     "gh-63": {
         "name": "Zufälliger Gegenstandsplan"
@@ -231,7 +231,7 @@ export default {
         "name": "Erhalte “Großer Arzneitrank” (Gegenstand 090)"
     },
     "fc-78": {
-        "name": "Erhalte “Alter Bohrer” (Gegenstand 157)"
+        "name": "Erhalte “Antiker Bogen” (Gegenstand 157)"
     },
     "fc-79": {
         "name": "Erhalte “Falkenfigur” (Gegenstand 035)"
@@ -267,10 +267,10 @@ export default {
         "name": "Erhalte “Ring der Chancen” (Gegenstand 070)"
     },
     "fc-90": {
-        "name": "Lies Abschnitt 75 auf Seite 49"
+        "name": "Je 10 Gold, lest Abschnitt 75 auf Seite 49"
     },
     "fc-91": {
-        "name": "Erhalte 30 und den Gruppenerfolg “Opportunisten” Füge dem Deck Stadt-Ereignis 84 hinzu"
+        "name": "Erhalte 30 Gold und den Gruppenerfolg “Opportunisten”. Füge dem Deck Stadt-Ereignis 84 hinzu"
     },
     "fc-93": {
         "name": "Erhalte “Schrift der Eile” (Gegenstand 159)"
@@ -279,7 +279,7 @@ export default {
         "name": "Erhalte 1 ✓ und füge dem Deck Riss-Ereignis 20 hinzu"
     },
     "fc-95": {
-        "name": "Erhalte 25 Gold und den Gruppenerfolg “Geldschatulle“. Füge dem Deck Stadt-Ereignis 58 hinzu"
+        "name": "Erhalte 25 Gold und den Gruppenerfolg “Geldschatulle“. Füge dem Deck Stadt-Ereignis 85 hinzu"
     },
     "fc-96": {
         "name": "Du findest einen alten Folianten mit technischen Zeichnungen und Entwürfen für eine Vielzahl von exotischen Maschinen. Eim Einband findest du eine eigentümliche handschriftliche Notiz: {NOTE_115}"
@@ -294,22 +294,22 @@ export default {
         "name": "Erhalte 15 experience"
     },
     "jotl-4": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-5": {
         "name": "Erhalte 1 ✔"
     },
     "jotl-6": {
-        "name": "Erhalte 10 gold"
+        "name": "Erhalte 10 Gold"
     },
     "jotl-7": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-8": {
-        "name": "Suffer 3 damage, Erhalte {POISON,"
+        "name": "Erleide 3 Schaden, erhalte {POISON,"
     },
     "jotl-9": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-10": {
         "name": "“Schicksalskompass” (Gegenstand 27)"
@@ -318,13 +318,13 @@ export default {
         "name": "“Ring der Eile” (Gegenstand 30)"
     },
     "jotl-12": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-13": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-14": {
-        "name": "Erhalte 3 money tokens"
+        "name": "Erhalte 3 Münzmarker"
     },
     "jotl-15": {
         "name": "Erhalte 1 ✔"
