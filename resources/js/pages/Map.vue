@@ -41,7 +41,7 @@
                   :style="{
                       'left': overlay.coordinates.x + '%',
                       'top': overlay.coordinates.y + '%',
-                      'transform': 'scale('+scenarioScale+')'
+                      'transform': 'scale('+buildingScale+')'
                   }"/>
 
             <template v-if="scenarios && scenarios.isNotEmpty()">
