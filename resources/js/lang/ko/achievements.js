@@ -39,25 +39,25 @@ export default {
         "name": "유물: 회수"
     },
     "gh-GAR2": {
-        "name": "유물: 회수 (이전에 분실)"
+        "name": "The Artifact: Recovered (previously Lost)"
     },
     "gh-GAL": {
-        "name": "유물: 분실"
+        "name": "The Artifact: Lost"
     },
     "gh-GAT": {
         "name": "고대 기술"
     },
     "gh-GAT2": {
-        "name": "고대 기술 x2"
+        "name": "Ancient Technology x2"
     },
     "gh-GAT3": {
-        "name": "고대 기술 x3"
+        "name": "Ancient Technology x3"
     },
     "gh-GAT4": {
-        "name": "고대 기술 x4"
+        "name": "Ancient Technology x4"
     },
     "gh-GAT5": {
-        "name": "고대 기술 x5"
+        "name": "Ancient Technology x5"
     },
     "gh-PTR": {
         "name": "폐허 통과"
@@ -117,13 +117,13 @@ export default {
         "name": "수중 호흡"
     },
     "gh-GEOC": {
-        "name": "부패 종식"
+        "name": "End of Corruption"
     },
     "gh-GEOC2": {
-        "name": "부패 종식 x2"
+        "name": "End of Corruption x2"
     },
     "gh-GEOC3": {
-        "name": "부패 종식 x3"
+        "name": "End of Corruption x3"
     },
     "gh-GAOO": {
         "name": "조직 섬멸"
@@ -141,13 +141,13 @@ export default {
         "name": "손해 보는 장사"
     },
     "gh-PSOX1": {
-        "name": "귀족의 묘지"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "침수된 묘지"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "고대인의 묘지"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "독의 근원"
@@ -177,25 +177,25 @@ export default {
         "name": "무덤 도굴"
     },
     "gh-PNE": {
-        "name": "북부 원정"
+        "name": "Northern Expedition"
     },
     "gh-GTTP": {
-        "name": "차원문 통과"
+        "name": "Through the Portal"
     },
     "gh-PO": {
-        "name": "기회주의자"
+        "name": "Opportunists"
     },
     "gh-GKIP": {
-        "name": "아는 것이 힘"
+        "name": "Knowledge is Power"
     },
     "gh-GKIP2": {
-        "name": "아는 것이 힘 x2"
+        "name": "Knowledge is Power x2"
     },
     "gh-GKIP3": {
-        "name": "아는 것이 힘 x3"
+        "name": "Knowledge is Power x3"
     },
     "gh-GKIP4": {
-        "name": "아는 것이 힘 x4"
+        "name": "Knowledge is Power x4"
     },
     "gh-PAD": {
         "name": "죽음의 천사"
@@ -207,55 +207,55 @@ export default {
         "name": "사냥감"
     },
     "gh-GPOA": {
-        "name": "유물 조각"
+        "name": "Pieces of an Artifact"
     },
     "gh-GPOA2": {
-        "name": "유물 조각 x2"
+        "name": "Pieces of an Artifact x2"
     },
     "gh-GPOA3": {
-        "name": "유물 조각 x3"
+        "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
-        "name": "경비 임무"
+        "name": "Guard Detail"
     },
     "gh-PDE": {
-        "name": "차원 균형"
+        "name": "Dimensional Equilibrium"
     },
     "gh-PHH": {
-        "name": "사냥꾼 사냥"
+        "name": "Hunting the Hunter"
     },
     "gh-PXA": {
-        "name": "잰그로스의 도움"
+        "name": "Xangroth's Aid"
     },
     "gh-PDA": {
-        "name": "디아마라의 도움"
+        "name": "Diamara's Aid"
     },
     "gh-PBF": {
-        "name": "자유 속의 아름다움"
+        "name": "Beauty in Freedom"
     },
     "gh-GPA": {
-        "name": "피한 위기"
+        "name": "A Peril Averted"
     },
     "gh-GPA2": {
-        "name": "피한 위기 x2"
+        "name": "A Peril Averted x2"
     },
     "gh-GPA3": {
-        "name": "피한 위기 x3"
+        "name": "A Peril Averted x3"
     },
     "gh-GPA4": {
-        "name": "피한 위기 x4"
+        "name": "A Peril Averted x4"
     },
     "gh-GMS": {
-        "name": "기계의 화려함"
+        "name": "Mechanical Splendor"
     },
     "gh-GST": {
-        "name": "끊어진 인연"
+        "name": "Severed Ties"
     },
     "gh-PA": {
         "name": "공범"
     },
     "gh-PS": {
-        "name": "파괴 공작원"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -342,43 +342,43 @@ export default {
         "name": "수확제"
     },
     "fh-CBT": {
-        "name": "브루믹스 흔적"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "브루믹스 흔적 x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "브루믹스 흔적 x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "브루믹스 흔적 x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "브루믹스 흔적 x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "산호 왕관 조각"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "산호 왕관 조각 x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "산호 왕관 조각 x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "산호 왕관 조각 x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "산호 왕관 조각 x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "산호 왕관 조각 x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
         "name": "얼음의 심장"
     },
     "fh-PHOS": {
-        "name": "눈의 심장"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"

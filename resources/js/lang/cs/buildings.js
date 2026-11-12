@@ -120,7 +120,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Hostinec",
+        "name": "Inn",
         "levels": [
             {
                 "level": 0
@@ -152,7 +152,7 @@ export default {
         ]
     },
     "fh-24": {
-        "name": "Zahrada",
+        "name": "Garden",
         "levels": [
             {
                 "level": 0
@@ -304,7 +304,7 @@ export default {
         ]
     },
     "fh-37": {
-        "name": "Obchodní stanice",
+        "name": "Trading Post",
         "levels": [
             {
                 "level": 0
@@ -344,7 +344,7 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "Klenotník",
+        "name": "Jeweler",
         "levels": [
             {
                 "level": 0
@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Chrám Velkého dubu",
+        "name": "Temple of the Great Oak",
         "levels": [
             {
                 "level": 0
@@ -416,7 +416,7 @@ export default {
         ]
     },
     "fh-44": {
-        "name": "Vylepšovatel",
+        "name": "Enhancer",
         "levels": [
             {
                 "level": 0
@@ -456,7 +456,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Sklad kovů",
+        "name": "Metal Depot",
         "levels": [
             {
                 "level": 0
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "Sklad dřeva",
+        "name": "Lumber Depot",
         "levels": [
             {
                 "level": 0
@@ -504,7 +504,7 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "Sklad kožešin",
+        "name": "Hide Depot",
         "levels": [
             {
                 "level": 0
@@ -528,7 +528,7 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "Taverna",
+        "name": "Tavern",
         "levels": [
             {
                 "level": 0
@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Hodovní síň",
+        "name": "Hall of Revelry",
         "levels": [
             {
                 "level": 0
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-83": {
-        "name": "Knihovna",
+        "name": "Library",
         "levels": [
             {
                 "level": 0
@@ -617,7 +617,7 @@ export default {
         ]
     },
     "fh-84": {
-        "name": "Dílna",
+        "name": "Workshop",
         "levels": [
             {
                 "level": 0
@@ -633,7 +633,7 @@ export default {
         ]
     },
     "fh-85": {
-        "name": "Tesař",
+        "name": "Carpenter",
         "levels": [
             {
                 "level": 0
@@ -657,7 +657,7 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "Stáje",
+        "name": "Stables",
         "levels": [
             {
                 "level": 0
@@ -697,7 +697,7 @@ export default {
         ]
     },
     "fh-90": {
-        "name": "Radnice",
+        "name": "Town Hall",
         "levels": [
             {
                 "level": 0

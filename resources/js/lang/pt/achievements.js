@@ -9,16 +9,16 @@ export default {
         "name": "Recompensa Sombria"
     },
     "gh-GTMF": {
-        "name": "A Mercadora Foge"
+        "name": "The Merchant Flees"
     },
     "gh-GTDI": {
         "name": "Os Mortos Invadem"
     },
     "gh-PADE": {
-        "name": "A Incumbência do Demónio"
+        "name": "A Demon's Errand"
     },
     "gh-GCRE": {
-        "name": "Governo: Económico"
+        "name": "City Rule: Economic"
     },
     "gh-GCRM": {
         "name": "Governo: Militar"
@@ -69,7 +69,7 @@ export default {
         "name": "O Comando do Serpe"
     },
     "gh-PFC": {
-        "name": "A Seguir Pistas"
+        "name": "Following Clues"
     },
     "gh-PAI": {
         "name": "Um Convite"
@@ -141,13 +141,13 @@ export default {
         "name": "Maus Negócios"
     },
     "gh-PSOX1": {
-        "name": "Cripta dos Nobres"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "Cripta Inundada"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "Cripta dos Anciões"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "A Fonte do Veneno"
@@ -177,85 +177,85 @@ export default {
         "name": "Trabalho Macabro"
     },
     "gh-PNE": {
-        "name": "Expedição ao Norte"
+        "name": "Northern Expedition"
     },
     "gh-GTTP": {
-        "name": "Através do Portal"
+        "name": "Through the Portal"
     },
     "gh-PO": {
-        "name": "Oportunistas"
+        "name": "Opportunists"
     },
     "gh-GKIP": {
-        "name": "Conhecimento é Poder"
+        "name": "Knowledge is Power"
     },
     "gh-GKIP2": {
-        "name": "Conhecimento é Poder x2"
+        "name": "Knowledge is Power x2"
     },
     "gh-GKIP3": {
-        "name": "Conhecimento é Poder x3"
+        "name": "Knowledge is Power x3"
     },
     "gh-GKIP4": {
-        "name": "Conhecimento é Poder x4"
+        "name": "Knowledge is Power x4"
     },
     "gh-PAD": {
-        "name": "Anjos da Morte"
+        "name": "Angels of Death"
     },
     "gh-PC": {
-        "name": "Guardiões"
+        "name": "Custodians"
     },
     "gh-PHP": {
-        "name": "Presa Caçada"
+        "name": "Hunted Prey"
     },
     "gh-GPOA": {
-        "name": "Peças de um Artefato"
+        "name": "Pieces of an Artifact"
     },
     "gh-GPOA2": {
-        "name": "Peças de um Artefato x2"
+        "name": "Pieces of an Artifact x2"
     },
     "gh-GPOA3": {
-        "name": "Peças de um Artefato x3"
+        "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
-        "name": "Destacamento da Guarda"
+        "name": "Guard Detail"
     },
     "gh-PDE": {
-        "name": "Equilíbrio Dimensional"
+        "name": "Dimensional Equilibrium"
     },
     "gh-PHH": {
-        "name": "A Caçar o Caçador"
+        "name": "Hunting the Hunter"
     },
     "gh-PXA": {
-        "name": "Ajuda de Xangroth"
+        "name": "Xangroth's Aid"
     },
     "gh-PDA": {
-        "name": "Ajuda de Diamara"
+        "name": "Diamara's Aid"
     },
     "gh-PBF": {
-        "name": "Beleza na Liberdade"
+        "name": "Beauty in Freedom"
     },
     "gh-GPA": {
-        "name": "Um Perigo Evitado"
+        "name": "A Peril Averted"
     },
     "gh-GPA2": {
-        "name": "Um Perigo Evitado x2"
+        "name": "A Peril Averted x2"
     },
     "gh-GPA3": {
-        "name": "Um Perigo Evitado x3"
+        "name": "A Peril Averted x3"
     },
     "gh-GPA4": {
-        "name": "Um Perigo Evitado x4"
+        "name": "A Peril Averted x4"
     },
     "gh-GMS": {
-        "name": "Esplendor Mecânico"
+        "name": "Mechanical Splendor"
     },
     "gh-GST": {
-        "name": "Laços Rompidos"
+        "name": "Severed Ties"
     },
     "gh-PA": {
-        "name": "Cúmplices"
+        "name": "Accomplices"
     },
     "gh-PS": {
-        "name": "Sabotadores"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -291,94 +291,94 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "Amigo dos Falantes do Gelo"
+        "name": "Friend of the Icespeakers"
     },
     "fh-CFSS": {
-        "name": "Amigo dos Falantes da Neve"
+        "name": "Friend of the Snowspeakers"
     },
     "fh-CFFS": {
-        "name": "Amigo dos Falantes da Geada"
+        "name": "Friend of the Frostspeakers"
     },
     "fh-CDIS": {
-        "name": "Destruidor dos Falantes do Gelo"
+        "name": "Destroyer of the Icespeakers"
     },
     "fh-CDSS": {
-        "name": "Destruidor dos Falantes da Neve"
+        "name": "Destroyer of the Snowspeakers"
     },
     "fh-CFFK": {
-        "name": "Amigo do Rei Peixe"
+        "name": "Friend of the Fish King"
     },
     "fh-CCU": {
-        "name": "Coroa Unida"
+        "name": "Crown United"
     },
     "fh-CUA": {
-        "name": "Aliados Desacorrentados"
+        "name": "Unfettered Allies"
     },
     "fh-CUD": {
-        "name": "Desacorrentados Desativados"
+        "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
-        "name": "Para Dentro da Floresta"
+        "name": "Into the Forest"
     },
     "fh-CFP": {
-        "name": "Pimenta-de-fogo"
+        "name": "Firepepper"
     },
     "fh-CSS": {
-        "name": "Caçador de Fragmentos"
+        "name": "Shard Seeker"
     },
     "fh-CEJ": {
-        "name": "Jarro Vazio"
+        "name": "Empty Jar"
     },
     "fh-CBJ": {
-        "name": "Inseto num Jarro"
+        "name": "Bug in a Jar"
     },
     "fh-CUC": {
-        "name": "Núcleo Descarregado"
+        "name": "Uncharged Core"
     },
     "fh-CCC": {
-        "name": "Núcleo Carregado"
+        "name": "Charged Core"
     },
     "fh-CHF": {
-        "name": "Festival da Colheita"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "Rastos de Brummix"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "Rastos de Brummix x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "Rastos de Brummix x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "Rastos de Brummix x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "Rastos de Brummix x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "Fragmento da Coroa de Coral"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "Fragmento da Coroa de Coral x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "Fragmento da Coroa de Coral x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "Fragmento da Coroa de Coral x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "Fragmento da Coroa de Coral x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "Fragmento da Coroa de Coral x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Coração de Gelo"
+        "name": "Heart of Ice"
     },
     "fh-PHOS": {
-        "name": "Coração de Neve"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"

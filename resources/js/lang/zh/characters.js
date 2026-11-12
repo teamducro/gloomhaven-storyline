@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "末日行者",
+        "name": "Doomstalker",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将两张{+0_WHITE}卡牌替换为两张{+1_WHITE}卡牌",
@@ -111,7 +111,7 @@ export default {
         ]
     },
     "EL": {
-        "name": "元素大师",
+        "name": "Elementalist",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE}卡牌",
@@ -129,7 +129,7 @@ export default {
         ]
     },
     "SB": {
-        "name": "锯骨医者",
+        "name": "Sawbones",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "移除四张{+0_WHITE}卡牌",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "瘟疫使者",
+        "name": "Plagueherald",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{+0_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE}卡牌",
@@ -251,7 +251,7 @@ export default {
         ]
     },
     "BT": {
-        "name": "暴兽领主",
+        "name": "Beast Tyrant",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE}卡牌",
@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "刀锋领主",
+        "name": "Bladeswarm",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{+0_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE} {WOUND}卡牌",
@@ -342,7 +342,7 @@ export default {
         ]
     },
     "VW": {
-        "name": "虚空守望者",
+        "name": "Voidwarden",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "移除一张{-2_WHITE}卡牌",
@@ -527,7 +527,7 @@ export default {
             "将一张{+1_WHITE}卡牌替换为一张{+0_WHITE} {WOUND_2}卡牌",
             "添加四张{AGAIN} {+0_WHITE}“如果目标位于困难地形，则{+1_WHITE}”卡牌",
             "添加两张{AGAIN}“如果你位于困难地形，则{INVISIBLE}，自身”卡牌",
-            "获得“剧毒匕首”（物品 gh-11）。你可以额外携带一件名称中含有“匕首”的{ONE-HAND}物品。",
+            "获得“Poison Dagger”（物品 gh-11）。你可以额外携带一件名称中含有“匕首”的{ONE-HAND}物品。",
             "忽略事件造成的伤害、负面状态和修正，并移除一张{-1_WHITE}卡牌",
             "忽略负面剧本效果，并移除一张{-1_WHITE}卡牌"
         ]
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "碎裂歌手",
+        "name": "Shattersong",
         "masteries": [
             "在你每个回合结束时获得{RESONANCE_ICON}之前，始终刚好拥有0个{RESONANCE_ICON}",
             "在五个不同的{WAVE}能力上各消耗5个{RESONANCE_ICON}"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "痛苦通导者",
+        "name": "Pain Conduit",
         "masteries": [
             "在一轮中使其他个体共承受至少{DAMAGE.fh}40",
             "在回合开始时同时带有{WOUND.fh}、{BRITTLE.fh}、{BANE.fh}、{POISON.fh}、{IMMOBILIZE.fh}、{DISARM.fh}、{STUN.fh}和{MUDDLE.fh}"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "金属拼杂体",
+        "name": "Metal Mosaic",
         "masteries": [
             "从不攻击",
             "连续四轮，使压力计从本轮开始时的位置上升或下降三格（从{PRESSURE_LOW_ICON}到{PRESSURE_HIGH_ICON}，或反之）"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "深海缚灵",
+        "name": "Deepwraith",
         "masteries": [
             "你执行的所有攻击均具有优势",
             "每轮灌注{DARK}"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "崩潮卫士",
+        "name": "Crashing Tide",
         "masteries": [
             "从未承受攻击伤害，且成为至少5次攻击的目标",
             "在你每次休息开始时，使激活中的{TIDE_ICON}多于你弃牌堆中的卡牌"

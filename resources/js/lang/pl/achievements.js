@@ -141,13 +141,13 @@ export default {
         "name": "Kiepska Sprawa"
     },
     "gh-PSOX1": {
-        "name": "Krypta Szlachty"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "Zalana Krypta"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "Krypta Starożytnych"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "Źródło Skażenia"
@@ -252,10 +252,10 @@ export default {
         "name": "Zerwane więzy"
     },
     "gh-PA": {
-        "name": "Wspólnicy"
+        "name": "Accomplices"
     },
     "gh-PS": {
-        "name": "Sabotażyści"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -339,46 +339,46 @@ export default {
         "name": "Naładowany Rdzeń"
     },
     "fh-CHF": {
-        "name": "Święto Plonów"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "Tropy Brummixa"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "Tropy Brummixa x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "Tropy Brummixa x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "Tropy Brummixa x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "Tropy Brummixa x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "Odłamek Koralowej Korony"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "Odłamek Koralowej Korony x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "Odłamek Koralowej Korony x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "Odłamek Koralowej Korony x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "Odłamek Koralowej Korony x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "Odłamek Koralowej Korony x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
         "name": "Serce lodu"
     },
     "fh-PHOS": {
-        "name": "Serce śniegu"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"

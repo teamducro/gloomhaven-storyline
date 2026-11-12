@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Rój Ostrzy",
+        "name": "Bladeswarm",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {WOUND}",
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Głębinowy Upiór",
+        "name": "Deepwraith",
         "masteries": [
             "Wykonuj wszystkie swoje ataki z Korzyścią",
             "Zasil {DARK} w każdej rundzie"

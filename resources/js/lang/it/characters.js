@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Sciame di Lame",
+        "name": "Bladeswarm",
         "perks": [
             "Sostituisci una carta {-2_WHITE} con una carta {+0_WHITE}",
             "Sostituisci una carta {-1_WHITE} con una carta {+0_WHITE} {WOUND}",
@@ -280,7 +280,7 @@ export default {
         ]
     },
     "DR": {
-        "name": "Divinatore",
+        "name": "Diviner",
         "perks": [
             "Rimuovi due carte {-1_WHITE}",
             "Rimuovi una carta {-2_WHITE}",

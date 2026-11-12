@@ -379,21 +379,21 @@ export default {
         ]
     },
     "gh-SoX1": {
-        "name": "Cripta de los Nobles",
+        "name": "Nobles’ Crypt",
         "rewards": [
             "+1 de reputación",
             "Añade el Evento de Ciudad SoX2 al mazo"
         ]
     },
     "gh-SoX2": {
-        "name": "Cripta Inundada",
+        "name": "Flooded Crypt",
         "rewards": [
             "Añade el Evento de Ciudad SoX3 al mazo",
             "Elige solo uno de los siguientes: “Hoja Gélida” (Objeto 077), “Varita de Escarcha” (Objeto 083) o “Collar de las Mareas” (Objeto 111)"
         ]
     },
     "gh-SoX3": {
-        "name": "Cripta de los Antiguos",
+        "name": "Crypt of the Ancients",
         "rewards": [
             "50 de oro colectivo",
             "Añade el Evento de Ciudad SoX3 al mazo"
@@ -1043,7 +1043,7 @@ export default {
     "jotl-4": {
         "name": "Ritual de piedras",
         "rewards": [
-            "“Poción de maná” (Objeto 14)"
+            "“Mana Potion” (Objeto 14)"
         ]
     },
     "jotl-5": {
@@ -1134,7 +1134,7 @@ export default {
     "jotl-19": {
         "name": "Guarida de ladrones",
         "rewards": [
-            "“Anillo de fuerza” (Objeto 31)"
+            "“Ring of Strength” (Objeto 31)"
         ]
     },
     "jotl-20": {
@@ -1158,19 +1158,19 @@ export default {
     "jotl-23": {
         "name": "Lo mejor de lo mejor",
         "rewards": [
-            "“Hacha dentada” (Objeto 34)"
+            "“Barbed Axe” (Objeto 34)"
         ]
     },
     "jotl-24": {
         "name": "Vigilar el Vacío",
         "rewards": [
-            "“Túnica de mando” (Objeto 35)"
+            "“Robes of Command” (Objeto 35)"
         ]
     },
     "jotl-25": {
         "name": "El mejor trabajo del mundo",
         "rewards": [
-            "“Botas a reacción” (Objeto 36)"
+            "“Jet Boots” (Objeto 36)"
         ]
     },
     "fh-0": {
@@ -1418,14 +1418,14 @@ export default {
     "fh-32": {
         "name": "El nido de los cuervos",
         "rewards": [
-            "Obtén el plano de “Capa emplumada” (Objeto 69)"
+            "Obtén el plano de “Feathered Cloak” (Objeto 69)"
         ]
     },
     "fh-33": {
         "name": "Árboles descongelados",
         "rewards": [
             "Obtén 5 XP para cada personaje por cada runa de zahorí sin revelar",
-            "Obtén “Ámbar de energía” (Objeto 244)",
+            "Obtén “Ember Energy Source” (Objeto 244)",
             "Añade 135.1 al calendario dentro de tres semanas"
         ]
     },
@@ -1445,7 +1445,7 @@ export default {
         "rewards": [
             "Añade 3 {LUMBER} a los recursos colectivos",
             "Añade 3 {METAL} a los recursos colectivos",
-            "Obtén el plano de “Gafas de convergencia” (Objeto 67)"
+            "Obtén el plano de “Converging Lenses” (Objeto 67)"
         ]
     },
     "fh-37": {
@@ -1453,7 +1453,7 @@ export default {
         "rewards": [
             "Añade 3 {LUMBER} a los recursos colectivos",
             "Añade 3 {METAL} a los recursos colectivos",
-            "Obtén el plano de “Gafas de convergencia” (Objeto 67)"
+            "Obtén el plano de “Converging Lenses” (Objeto 67)"
         ]
     },
     "fh-38": {
@@ -1504,7 +1504,7 @@ export default {
         "name": "Centro neurálgico",
         "rewards": [
             "Obtén 5 de oro para cada personaje",
-            "Obtén el plano de “Porra energizante” (Objeto 73)"
+            "Obtén el plano de “Energizing Baton” (Objeto 73)"
         ]
     },
     "fh-45": {
@@ -1554,7 +1554,7 @@ export default {
         "name": "Los salones del Huérfano",
         "rewards": [
             "Obtén 10 XP para cada personaje",
-            "Obtén el plano de “Granadas de choque” (Objeto 74)"
+            "Obtén el plano de “Shock Grenades” (Objeto 74)"
         ]
     },
     "fh-52": {
@@ -1611,7 +1611,7 @@ export default {
         "name": "El corazón del Huérfano",
         "rewards": [
             "Obtén 1 de moral",
-            "Obtén “Tarjeta llave” (Objeto 246)",
+            "Obtén “Key Card” (Objeto 246)",
             "Añade 3 {LUMBER} a los recursos colectivos",
             "Añade 3 {METAL} a los recursos colectivos",
             "Añade 3 {HIDE} a los recursos colectivos",
@@ -1622,11 +1622,11 @@ export default {
         ]
     },
     "fh-59": {
-        "name": "Rebelión de los autómatas",
+        "name": "Automation Uprising",
         "rewards": [
             "Obtén 2 de moral",
             "Obtén 2 de prosperidad",
-            "Obtén “Tarjeta llave” (Objeto 246)",
+            "Obtén “Key Card” (Objeto 246)",
             "Desbloquea la caja de clase {HV}",
             "Retira todos los eventos de {UNFETTERED} de todos los mazos de eventos de puesto",
             "Añade el evento SO-49 al mazo de puesto de verano y el evento WO-63 al mazo de puesto de invierno",
@@ -1639,7 +1639,7 @@ export default {
             "Obtén 2 de moral",
             "Obtén 1 de prosperidad",
             "Obtén 30 XP para cada personaje",
-            "Obtén “Armadura de Empatía” (Objeto 224)",
+            "Obtén “Armor of Empathy” (Objeto 224)",
             "Desbloquea la caja de clase que siga bloqueada: {CR} o {DT}",
             "Retira todos los eventos de {LURKERS} de todos los mazos de eventos de puesto",
             "Añade el evento SO-48 al mazo de puesto de verano y el evento B-17 al mazo de barco",
@@ -1684,7 +1684,7 @@ export default {
     "fh-66": {
         "name": "Núcleos elementales",
         "rewards": [
-            "Obtén “Gema elemental” (Objeto 212)",
+            "Obtén “Elemental Stone” (Objeto 212)",
             "Añade 29.3 al calendario dentro de seis semanas"
         ]
     },
@@ -1740,7 +1740,7 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "Huecos en el camino",
+        "name": "Gaps in the Road",
         "rewards": [
             "Obtén un plano de objeto aleatorio"
         ]
@@ -1809,7 +1809,7 @@ export default {
     "fh-83": {
         "name": "Océano creciente",
         "rewards": [
-            "Obtén “Espina de cerdo piraña gigante” (Objeto 202)"
+            "Obtén “Giant Piranha Pig Spine” (Objeto 202)"
         ]
     },
     "fh-84": {
@@ -1886,13 +1886,13 @@ export default {
         ]
     },
     "fh-93": {
-        "name": "Pelea de pleno invierno",
+        "name": "Midwinter Brawl",
         "rewards": [
             [
-                "Obtén “Rata pequeña” (Objeto 235)"
+                "Obtén “Small Rat” (Objeto 235)"
             ],
             [
-                "Obtén “Ave asada” (Objeto 79)"
+                "Obtén “Roasted Fowl” (Objeto 79)"
             ]
         ]
     },
@@ -1979,7 +1979,7 @@ export default {
     "fh-106": {
         "name": "La forja Tempus",
         "rewards": [
-            "Obtén “Llave de las estaciones” (Objeto 213)"
+            "Obtén “Key of Seasons” (Objeto 213)"
         ]
     },
     "fh-107": {
@@ -1999,7 +1999,7 @@ export default {
             ],
             [
                 "Obtén 5 recursos materiales colectivos cualesquiera",
-                "Obtén “Copa de Ventillion” (Objeto 214)"
+                "Obtén “Cup of Ventillion” (Objeto 214)"
             ]
         ]
     },
@@ -2019,13 +2019,13 @@ export default {
     "fh-110": {
         "name": "El templo del guardián",
         "rewards": [
-            "Obtén el plano de “Guantelete de rosa” (Objeto 75)"
+            "Obtén el plano de “Rose Gauntlet” (Objeto 75)"
         ]
     },
     "fh-111": {
         "name": "Cueva de hielo",
         "rewards": [
-            "Obtén “Espejo agrietado” (Objeto 236)"
+            "Obtén “Cracked Mirror” (Objeto 236)"
         ]
     },
     "fh-112": {
@@ -2132,14 +2132,14 @@ export default {
     "fh-118": {
         "name": "Nigromancia acechadora",
         "rewards": [
-            "Obtén el plano de “Amuleto de vida eterna” (Objeto 66)",
+            "Obtén el plano de “Amulet of Eternal Life” (Objeto 66)",
             "Cambia todas las fichas por cartas de botín"
         ]
     },
     "fh-119": {
         "name": "Polvo radiante",
         "rewards": [
-            "Gasta 7 de polvo restante para obtener “Cetro de control” (Objeto 203)",
+            "Gasta 7 de polvo restante para obtener “Scepter of Control” (Objeto 203)",
             "Gasta 1 de polvo restante para obtener 1 recurso de material cualquiera",
             "Gasta 2 de polvo restante para obtener 1 recurso de hierba cualquiera"
         ]
@@ -2194,7 +2194,7 @@ export default {
     "fh-125": {
         "name": "El segundo más largo",
         "rewards": [
-            "Obtén “Amuleto temporal” (Objeto 194)"
+            "Obtén “Temporal Amulet” (Objeto 194)"
         ]
     },
     "fh-126": {
@@ -2216,12 +2216,12 @@ export default {
             [
                 "Obtén 10 de oro colectivo",
                 "Añade 2 {LUMBER} a los recursos colectivos",
-                "Obtén “Tricornio” 195"
+                "Obtén “Tri-Corner Hat” 195"
             ],
             [
                 "Obtén 10 de oro colectivo",
                 "Añade 2 {LUMBER} a los recursos colectivos",
-                "Obtén “Tricornio” 195",
+                "Obtén “Tri-Corner Hat” 195",
                 "Obtén 1 de prosperidad"
             ]
         ]
@@ -2239,7 +2239,7 @@ export default {
             ],
             [
                 "Obtén 3 de moral",
-                "Obtén “Jarra confundidora” (Objeto 215)",
+                "Obtén “Befuddling Mug” (Objeto 215)",
                 "Añade 100.3 al calendario dentro de tres semanas"
             ]
         ]
@@ -2267,7 +2267,7 @@ export default {
         "name": "El iceberg bailarín",
         "rewards": [
             "Obtén 10 XP para cada personaje",
-            "Obtén “Concha hipnótica” (Objeto 237)"
+            "Obtén “Mesmerizing Seashell” (Objeto 237)"
         ]
     },
     "fh-132": {
@@ -2279,13 +2279,13 @@ export default {
     "fh-133": {
         "name": "Rayo",
         "rewards": [
-            "Obtén “Ídolo agrietado” (Objeto 238)"
+            "Obtén “Cracked Idol” (Objeto 238)"
         ]
     },
     "fh-134": {
         "name": "La Torre del Conocimiento",
         "rewards": [
-            "Obtén “Tomo del conflicto” (Objeto 219)"
+            "Obtén “Tome of Conflict” (Objeto 219)"
         ]
     },
     "fh-135": {
@@ -2294,14 +2294,14 @@ export default {
             "Obtén 2 de moral",
             "Obtén 2 de prosperidad",
             "Obtén 1 de inspiración",
-            "Obtén “Pluma de Belara” (Objeto 220)"
+            "Obtén “Belaras Quill” (Objeto 220)"
         ]
     },
     "fh-136": {
         "name": "Escondite abandonado",
         "rewards": [
             "Obtén 20 de oro para cada personaje",
-            "Obtén “Moneda antigua” (Objeto 245)"
+            "Obtén “Ancient Coin” (Objeto 245)"
         ]
     },
     "fh-137": {
@@ -2314,79 +2314,79 @@ export default {
         ]
     },
     "fh-201": {
-        "name": "Maravilla de la naturaleza",
+        "name": "Wonder of Nature",
         "rewards": [
             "“Garrote del Vagabundo” (Objeto 248)"
         ]
     },
     "fh-202": {
-        "name": "Carrera contrarreloj",
+        "name": "Race Against the Clock",
         "rewards": [
-            "“Gatillo de recalibración” (Objeto 249)"
+            "“Recalibration Trigger” (Objeto 249)"
         ]
     },
     "fh-203": {
-        "name": "Emboscada de exploración",
+        "name": "Scouting Ambush",
         "rewards": [
-            "“Lanza de la justicia” (Objeto 250)"
+            "“Spear of Justice” (Objeto 250)"
         ]
     },
     "fh-204": {
-        "name": "La muerte de la noche",
+        "name": "The Dead of Night",
         "rewards": [
-            "“Urna de almas” (Objeto 251)"
+            "“Soul Urn” (Objeto 251)"
         ]
     },
     "fh-205": {
-        "name": "Huesos en la tierra",
+        "name": "Bones in the Dirt",
         "rewards": [
             "“Códice de Tierra Negra” (Objeto 252)"
         ]
     },
     "fh-206": {
-        "name": "Divide y vencerás",
+        "name": "Divide and Conquer",
         "rewards": [
             "“Máscara de dualidad” (Objeto 253)"
         ]
     },
     "fh-207": {
-        "name": "El camino de los ancestros",
+        "name": "Path of Ancestry",
         "rewards": [
-            "“Hoja ancestral” (Objeto 254)"
+            "“Ancestral Blade” (Objeto 254)"
         ]
     },
     "fh-208": {
-        "name": "Descenso desmoronado",
+        "name": "Crumbling Descent",
         "rewards": [
-            "“Corazón de la montaña” (Objeto 255)"
+            "“Mountain's Heart” (Objeto 255)"
         ]
     },
     "fh-209": {
-        "name": "Afinando la resonancia",
+        "name": "Tuning the Resonance",
         "rewards": [
-            "“Esquirla sonora” (Objeto 256)"
+            "“Sonorous Shard” (Objeto 256)"
         ]
     },
     "fh-210": {
-        "name": "Una trampa magnífica",
+        "name": "A Magnificent Trap",
         "rewards": [
-            "“Camuflaje astuto” (Objeto 257)"
+            "“Sly Camouflage” (Objeto 257)"
         ]
     },
     "fh-211": {
-        "name": "Una colección de sufrimiento",
+        "name": "A Collection of Suffering",
         "rewards": [
             "“Calavera de agonía” (Objeto 258)"
         ]
     },
     "fh-212": {
-        "name": "Combatir la nieve con nieve",
+        "name": "Fighting Snow with Snow",
         "rewards": [
-            "“Talla de tormenta” (Objeto 259)"
+            "“Storm Carving” (Objeto 259)"
         ]
     },
     "fh-213": {
-        "name": "Bajo el hielo",
+        "name": "Under the Ice",
         "rewards": [
             "“Orbe gélido” (Objeto 260)"
         ]
@@ -2394,13 +2394,13 @@ export default {
     "fh-214": {
         "name": "Recarga",
         "rewards": [
-            "“Módulo energizado” (Objeto 261)"
+            "“Energized Module” (Objeto 261)"
         ]
     },
     "fh-215": {
-        "name": "Sala de calderas",
+        "name": "Boiler Room",
         "rewards": [
-            "“Botas de escape” (Objeto 262)"
+            "“Exhaust Boots” (Objeto 262)"
         ]
     },
     "fh-216": {
@@ -2410,9 +2410,9 @@ export default {
         ]
     },
     "fh-217": {
-        "name": "Choque contra las olas",
+        "name": "Crash Against the Waves",
         "rewards": [
-            "“Medallón en espiral” (Objeto 264)"
+            "“Spiraled Medallion” (Objeto 264)"
         ]
     },
     "cs-1": {

@@ -1,6 +1,6 @@
 export default {
     "fh-5": {
-        "name": "Campo Minerario",
+        "name": "Mining Camp",
         "levels": [
             {
                 "level": 0
@@ -344,7 +344,7 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "Gioielliere",
+        "name": "Jeweler",
         "levels": [
             {
                 "level": 0
@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Tempio della Grande Quercia",
+        "name": "Temple of the Great Oak",
         "levels": [
             {
                 "level": 0
@@ -416,7 +416,7 @@ export default {
         ]
     },
     "fh-44": {
-        "name": "Potenziatore",
+        "name": "Enhancer",
         "levels": [
             {
                 "level": 0
@@ -456,7 +456,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Deposito dei Metalli",
+        "name": "Metal Depot",
         "levels": [
             {
                 "level": 0
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "Deposito del Legname",
+        "name": "Lumber Depot",
         "levels": [
             {
                 "level": 0
@@ -504,7 +504,7 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "Deposito delle Pelli",
+        "name": "Hide Depot",
         "levels": [
             {
                 "level": 0
@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Sala dei Festeggiamenti",
+        "name": "Hall of Revelry",
         "levels": [
             {
                 "level": 0
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-83": {
-        "name": "Biblioteca",
+        "name": "Library",
         "levels": [
             {
                 "level": 0
@@ -633,7 +633,7 @@ export default {
         ]
     },
     "fh-85": {
-        "name": "Carpentiere",
+        "name": "Carpenter",
         "levels": [
             {
                 "level": 0
@@ -657,7 +657,7 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "Stalle",
+        "name": "Stables",
         "levels": [
             {
                 "level": 0
@@ -697,7 +697,7 @@ export default {
         ]
     },
     "fh-90": {
-        "name": "Municipio",
+        "name": "Town Hall",
         "levels": [
             {
                 "level": 0

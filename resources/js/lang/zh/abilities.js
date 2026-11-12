@@ -73,7 +73,7 @@ export default {
             "name": "尖刺护甲"
         },
         "strength-in-agony": {
-            "name": "痛苦中的力量"
+            "name": "strength in agony"
         },
         "the-maw-of-madness": {
             "name": "疯狂吞噬"
@@ -178,10 +178,10 @@ export default {
             "name": "全副武装"
         },
         "bioluminescence": {
-            "name": "生物荧光"
+            "name": "bioluminescence"
         },
         "lightning-moths": {
-            "name": "闪电飞蛾"
+            "name": "lightning moths"
         },
         "blood-drain": {
             "name": "吸血"
@@ -190,49 +190,49 @@ export default {
             "name": "骨匕"
         },
         "call-of-the-grave": {
-            "name": "墓穴呼唤"
+            "name": "call of the grave"
         },
         "corrupting-parasites": {
-            "name": "腐化寄生虫"
+            "name": "corrupting parasites"
         },
         "soul-leeches": {
-            "name": "灵魂水蛭"
+            "name": "soul leeches"
         },
         "cyclone-of-blades": {
-            "name": "刀刃旋风"
+            "name": "cyclone of blades"
         },
         "death-march": {
-            "name": "死亡行军"
+            "name": "death march"
         },
         "creeping-beetles": {
-            "name": "蜂拥甲虫"
+            "name": "creeping beetles"
         },
         "deflecting-blades": {
-            "name": "偏转之刃"
+            "name": "deflecting blades"
         },
         "endless-biting": {
-            "name": "无尽啃咬"
+            "name": "endless biting"
         },
         "engulfing-stingers": {
-            "name": "吞噬毒刺"
+            "name": "engulfing stingers"
         },
         "angry-wasps": {
-            "name": "愤怒黄蜂"
+            "name": "angry wasps"
         },
         "focused-scourge": {
-            "name": "集中鞭笞"
+            "name": "focused scourge"
         },
         "fury-of-the-horde": {
-            "name": "虫群之怒"
+            "name": "fury of the horde"
         },
         "rage-hornets": {
-            "name": "愤怒大黄蜂"
+            "name": "rage hornets"
         },
         "grasping-advance": {
-            "name": "抓握推进"
+            "name": "grasping advance"
         },
         "hive-mind": {
-            "name": "蜂巢意识"
+            "name": "hive mind"
         },
         "incubation": {
             "name": "孵化"
@@ -244,49 +244,49 @@ export default {
             "name": "绿洲"
         },
         "omniscient-assault": {
-            "name": "全知突袭"
+            "name": "omniscient assault"
         },
         "overwhelming-offensive": {
-            "name": "压倒性攻势"
+            "name": "overwhelming offensive"
         },
         "putrid-grubs": {
-            "name": "腐臭幼虫"
+            "name": "putrid grubs"
         },
         "bloat-maggots": {
-            "name": "膨胀水蛭"
+            "name": "bloat maggots"
         },
         "repulsive-host": {
-            "name": "恶心宿主"
+            "name": "repulsive host"
         },
         "scattered-defense": {
-            "name": "分散防御"
+            "name": "scattered defense"
         },
         "sunstroke": {
             "name": "中暑"
         },
         "swarming-minions": {
-            "name": "蜂拥仆从"
+            "name": "swarming minions"
         },
         "the-storms-edge": {
-            "name": "风暴之缘"
+            "name": "the storm's edge"
         },
         "tomb-of-the-immortal": {
-            "name": "不朽者之墓"
+            "name": "tomb of the immortal"
         },
         "unstoppable-army": {
-            "name": "势不可挡的大军"
+            "name": "unstoppable army"
         },
         "steel-scarabs": {
             "name": "钢金龟"
         },
         "vampiric-tempest": {
-            "name": "吸血风暴"
+            "name": "vampiric tempest"
         },
         "wasteland": {
             "name": "荒地"
         },
         "rust-vermin": {
-            "name": "铁锈钳虫"
+            "name": "rust vermin"
         },
         "ancient-ward": {
             "name": "远古守护"
@@ -490,7 +490,7 @@ export default {
             "name": "暴露弱点"
         },
         "felling-swoop": {
-            "name": "俯冲砍杀"
+            "name": "felling swoop"
         },
         "feral-instincts": {
             "name": "野性本能"
@@ -517,7 +517,7 @@ export default {
             "name": "引向死亡"
         },
         "multi-pronged-assault": {
-            "name": "多路突袭"
+            "name": "multi-pronged assault"
         },
         "natures-hunger": {
             "name": "自然之渴"
@@ -775,7 +775,7 @@ export default {
             "name": "暗夜之眼"
         },
         "gloom-darts": {
-            "name": "幽暗飞镖"
+            "name": "gloom darts"
         },
         "grim-sustenance": {
             "name": "维持冷酷"
@@ -916,7 +916,7 @@ export default {
             "name": "剑刃回力镖"
         },
         "catastrophic-bomb": {
-            "name": "灾难炸弹"
+            "name": "catastrophic bomb"
         },
         "cleaving-axe": {
             "name": "斩击斧"
@@ -1354,7 +1354,7 @@ export default {
             "name": "连结之力"
         },
         "conjured-aid": {
-            "name": "召唤援助"
+            "name": "conjured aid"
         },
         "divided-mind": {
             "name": "多重思维"
@@ -1387,7 +1387,7 @@ export default {
             "name": "附体幽魂"
         },
         "leathery-wings": {
-            "name": "革质之翼"
+            "name": "leathery wings"
         },
         "living-mountain": {
             "name": "活化山脉"
@@ -1605,96 +1605,96 @@ export default {
     },
     "fc": {
         "anguish-and-salvation": {
-            "name": "痛苦与救赎"
+            "name": "anguish and salvation"
         },
         "anticipate-intricacies": {
-            "name": "预判玄机"
+            "name": "anticipate intricacies"
         },
         "bad-omen": {
             "name": "凶兆"
         },
         "call-of-the-nether": {
-            "name": "幽冥召唤"
+            "name": "call of the nether"
         },
         "careful-attunement": {
-            "name": "谨慎调谐"
+            "name": "careful attunement"
         },
         "clairvoyance": {
             "name": "千里眼"
         },
         "cleansing-rite": {
-            "name": "净化仪式"
+            "name": "cleansing rite"
         },
         "curative-flux": {
             "name": "治愈流"
         },
         "cursed-ground": {
-            "name": "诅咒之地"
+            "name": "cursed ground"
         },
         "deep-contemplation": {
-            "name": "深度沉思"
+            "name": "deep contemplation"
         },
         "dimensional-divide": {
-            "name": "维度分割"
+            "name": "dimensional divide"
         },
         "dimensional-transfer": {
-            "name": "维度转移"
+            "name": "dimensional transfer"
         },
         "duality-shards": {
-            "name": "二元碎片"
+            "name": "duality shards"
         },
         "enfeebling-hex": {
-            "name": "衰弱妖术"
+            "name": "enfeebling hex"
         },
         "envision-the-course": {
-            "name": "预见进程"
+            "name": "envision the course"
         },
         "ethereal-vortex": {
-            "name": "虚幻漩涡"
+            "name": "ethereal vortex"
         },
         "gift-of-the-void": {
-            "name": "虚空之赐"
+            "name": "gift of the void"
         },
         "hand-of-destiny": {
-            "name": "命运之手"
+            "name": "hand of destiny"
         },
         "inspiration-from-beyond": {
-            "name": "彼岸灵感"
+            "name": "inspiration from beyond"
         },
         "otherworldly-journey": {
-            "name": "异界之旅"
+            "name": "otherworldly journey"
         },
         "peer-into-battle": {
-            "name": "窥视战局"
+            "name": "peer into battle"
         },
         "planar-fissure": {
-            "name": "位面裂隙"
+            "name": "planar fissure"
         },
         "preordain-the-path": {
-            "name": "预定道路"
+            "name": "preordain the path"
         },
         "protective-aura": {
-            "name": "守护光环"
+            "name": "protective aura"
         },
         "ray-of-light": {
             "name": "光线"
         },
         "revitalizing-fount": {
-            "name": "复苏之泉"
+            "name": "revitalizing fount"
         },
         "seal-their-fate": {
-            "name": "封印其命运"
+            "name": "seal their fate"
         },
         "void-snare": {
-            "name": "虚空陷阱"
+            "name": "void snare"
         }
     },
     "jotl": {
         "collateral-damage": {
-            "name": "附带伤害"
+            "name": "collateral damage"
         },
         "crash-protocol": {
-            "name": "崩溃协议"
+            "name": "crash protocol"
         },
         "crushing-weight": {
             "name": "粉碎重压"
@@ -1709,40 +1709,40 @@ export default {
             "name": "爆炸"
         },
         "explosive-blitz": {
-            "name": "爆破闪击"
+            "name": "explosive blitz"
         },
         "extra-fuel": {
-            "name": "额外燃料"
+            "name": "extra fuel"
         },
         "fire-bombs": {
-            "name": "火焰炸弹"
+            "name": "fire bombs"
         },
         "gut-punch": {
-            "name": "腹部重拳"
+            "name": "gut punch"
         },
         "implode": {
             "name": "内爆"
         },
         "insult-to-injury": {
-            "name": "雪上加霜"
+            "name": "insult to injury"
         },
         "knock-out-the-support": {
-            "name": "击溃支援"
+            "name": "knock out the support"
         },
         "level": {
             "name": "等级"
         },
         "lobbed-charge": {
-            "name": "抛掷炸药"
+            "name": "lobbed charge"
         },
         "mech-suit": {
             "name": "机甲"
         },
         "micro-missiles": {
-            "name": "微型导弹"
+            "name": "micro missiles"
         },
         "nowhere-to-run": {
-            "name": "无处可逃"
+            "name": "nowhere to run"
         },
         "one-two-punch": {
             "name": "组合拳"
@@ -1751,22 +1751,22 @@ export default {
             "name": "活塞拳"
         },
         "remote-detonation": {
-            "name": "远程引爆"
+            "name": "remote detonation"
         },
         "robotic-enhancement": {
-            "name": "机械强化"
+            "name": "robotic enhancement"
         },
         "rubble": {
             "name": "碎石"
         },
         "the-bigger-one": {
-            "name": "更大的一个"
+            "name": "the bigger one"
         },
         "the-big-one": {
-            "name": "最大的一个"
+            "name": "the big one"
         },
         "wholesale-destruction": {
-            "name": "全面毁灭"
+            "name": "wholesale destruction"
         },
         "windup": {
             "name": "蓄力"
@@ -1775,43 +1775,43 @@ export default {
             "name": "轰炸"
         },
         "brutalize": {
-            "name": "残暴对待"
+            "name": "brutalize"
         },
         "camaraderie": {
-            "name": "战友情谊"
+            "name": "camaraderie"
         },
         "care-package": {
             "name": "补给包"
         },
         "center-mass": {
-            "name": "瞄准中心"
+            "name": "center mass"
         },
         "close-cuts": {
-            "name": "近身切割"
+            "name": "close cuts"
         },
         "disorienting-barrage": {
-            "name": "迷惑弹幕"
+            "name": "disorienting barrage"
         },
         "double-throw": {
-            "name": "双重投掷"
+            "name": "double throw"
         },
         "excessive-force": {
-            "name": "过度武力"
+            "name": "excessive force"
         },
         "executiones-axe": {
             "name": "行刑斧"
         },
         "extra-lift": {
-            "name": "额外举升"
+            "name": "extra lift"
         },
         "fancy-hat": {
-            "name": "华丽帽子"
+            "name": "fancy hat"
         },
         "fearsome-efficiency": {
-            "name": "可怖效率"
+            "name": "fearsome efficiency"
         },
         "follow-through": {
-            "name": "顺势而为"
+            "name": "follow through"
         },
         "heart-seeker": {
             "name": "寻心者"
@@ -1820,13 +1820,13 @@ export default {
             "name": "警戒"
         },
         "power-pitch": {
-            "name": "强力投掷"
+            "name": "power pitch"
         },
         "quick-turnaround": {
-            "name": "迅速转身"
+            "name": "quick turnaround"
         },
         "repeat-shot": {
-            "name": "连续射击"
+            "name": "repeat shot"
         },
         "retrieval": {
             "name": "回收"
@@ -1835,13 +1835,13 @@ export default {
             "name": "跳弹"
         },
         "ripped-from-the-flesh": {
-            "name": "血肉撕扯"
+            "name": "ripped from the flesh"
         },
         "second-wind": {
             "name": "重整旗鼓"
         },
         "sharpened-blades": {
-            "name": "锐利之刃"
+            "name": "sharpened blades"
         },
         "shrapnel": {
             "name": "弹片"
@@ -1856,175 +1856,175 @@ export default {
             "name": "新宠"
         },
         "barbaric-instincts": {
-            "name": "野蛮本能"
+            "name": "barbaric instincts"
         },
         "blade-dance": {
-            "name": "刀刃之舞"
+            "name": "blade dance"
         },
         "blinding-sickle": {
-            "name": "致盲镰刀"
+            "name": "blinding sickle"
         },
         "burn-away-the-dark": {
-            "name": "焚尽黑暗"
+            "name": "burn away the dark"
         },
         "desert-night": {
-            "name": "沙漠之夜"
+            "name": "desert night"
         },
         "fierce-brilliance": {
-            "name": "炽烈光辉"
+            "name": "fierce brilliance"
         },
         "flame-shroud": {
-            "name": "火焰裹身"
+            "name": "flame shroud"
         },
         "flaming-sickle": {
-            "name": "烈焰镰刀"
+            "name": "flaming sickle"
         },
         "flying-sickle": {
             "name": "飞镰"
         },
         "harvest-sickle": {
-            "name": "收割镰刀"
+            "name": "harvest sickle"
         },
         "healing-sands": {
-            "name": "治愈之沙"
+            "name": "healing sands"
         },
         "honorable-fury": {
-            "name": "荣耀之怒"
+            "name": "honorable fury"
         },
         "horns-of-the-beast": {
-            "name": "野兽之角"
+            "name": "horns of the beast"
         },
         "no-fear": {
             "name": "无所畏惧"
         },
         "precision-strike": {
-            "name": "精准打击"
+            "name": "precision strike"
         },
         "prismatic-sickle": {
-            "name": "棱彩镰刀"
+            "name": "prismatic sickle"
         },
         "radiant-sickle": {
-            "name": "辉耀镰刀"
+            "name": "radiant sickle"
         },
         "sand-devil": {
             "name": "沙魔"
         },
         "shield-of-the-desert": {
-            "name": "沙漠之盾"
+            "name": "shield of the desert"
         },
         "shield-spikes": {
             "name": "盾刺"
         },
         "shocking-advance": {
-            "name": "震撼推进"
+            "name": "shocking advance"
         },
         "soaring-shield": {
-            "name": "翱翔之盾"
+            "name": "soaring shield"
         },
         "strangling-chain": {
-            "name": "绞杀锁链"
+            "name": "strangling chain"
         },
         "swift-strength": {
-            "name": "迅捷之力"
+            "name": "swift strength"
         },
         "twirling-stabs": {
-            "name": "旋转突刺"
+            "name": "twirling stabs"
         },
         "vicious-ballet": {
-            "name": "凶残芭蕾"
+            "name": "vicious ballet"
         },
         "warmth-of-the-sun": {
-            "name": "阳光的温暖"
+            "name": "warmth of the sun"
         },
         "warrior-of-the-sun": {
-            "name": "太阳战士"
+            "name": "warrior of the sun"
         },
         "black-boon": {
-            "name": "黑色恩赐"
+            "name": "black boon"
         },
         "close-to-the-abyss": {
-            "name": "接近深渊"
+            "name": "close to the abyss"
         },
         "cold-embrace": {
-            "name": "冰冷拥抱"
+            "name": "cold embrace"
         },
         "commanding-presence": {
             "name": "指挥艺术"
         },
         "crushing-cold": {
-            "name": "碾压寒冷"
+            "name": "crushing cold"
         },
         "empowered-link": {
-            "name": "强化连结"
+            "name": "empowered link"
         },
         "eye-of-the-void": {
-            "name": "虚空之眼"
+            "name": "eye of the void"
         },
         "freeze-the-soul": {
-            "name": "冻结灵魂"
+            "name": "freeze the soul"
         },
         "gift-of-the-void": {
-            "name": "虚空之赐"
+            "name": "gift of the void"
         },
         "give-and-take": {
-            "name": "有予有取"
+            "name": "give and take"
         },
         "grasp-of-doom": {
-            "name": "末日之握"
+            "name": "grasp of doom"
         },
         "hateful-blast": {
-            "name": "憎恨冲击"
+            "name": "hateful blast"
         },
         "lull-into-oblivion": {
-            "name": "催入虚无"
+            "name": "lull into oblivion"
         },
         "lure-of-the-void": {
-            "name": "虚空诱惑"
+            "name": "lure of the void"
         },
         "master-influence": {
-            "name": "掌控影响"
+            "name": "master influence"
         },
         "possessed-by-fate": {
-            "name": "命运附身"
+            "name": "possessed by fate"
         },
         "resigned-frenzy": {
-            "name": "认命狂乱"
+            "name": "resigned frenzy"
         },
         "sap-warmth": {
-            "name": "汲取温暖"
+            "name": "sap warmth"
         },
         "savage-instinct": {
-            "name": "野蛮直觉"
+            "name": "savage instinct"
         },
         "signs-of-the-void": {
-            "name": "虚空征兆"
+            "name": "signs of the void"
         },
         "spirit-hunger": {
-            "name": "灵魂饥渴"
+            "name": "spirit hunger"
         },
         "stand-fast": {
-            "name": "坚守阵地"
+            "name": "stand fast"
         },
         "suggestion": {
             "name": "暗示"
         },
         "surge-of-power": {
-            "name": "力量激增"
+            "name": "surge of power"
         },
         "taunting-fate": {
-            "name": "嘲弄命运"
+            "name": "taunting fate"
         },
         "the-last-journey": {
-            "name": "最后的旅程"
+            "name": "the last journey"
         },
         "turn-out-the-lights": {
             "name": "熄灯"
         },
         "wicked-scratch": {
-            "name": "恶毒抓挠"
+            "name": "wicked scratch"
         },
         "withering-conviction": {
-            "name": "枯萎信念"
+            "name": "withering conviction"
         }
     },
     "cs": {
@@ -3567,7 +3567,7 @@ export default {
             "name": "空中支援"
         },
         "trained-falcon": {
-            "name": "受训猎鹰"
+            "name": "trained falcon"
         },
         "at-all-costs": {
             "name": "不计代价"
@@ -3579,7 +3579,7 @@ export default {
             "name": "路障"
         },
         "banner-of-valor": {
-            "name": "勇气旗帜"
+            "name": "banner of valor"
         },
         "boldening-blow": {
             "name": "斗胆重击"
@@ -3630,7 +3630,7 @@ export default {
             "name": "放马过来"
         },
         "banner-of-courage": {
-            "name": "英勇旗帜"
+            "name": "banner of courage"
         },
         "meat-grinder": {
             "name": "绞肉机"
@@ -3663,7 +3663,7 @@ export default {
             "name": "格杀勿论"
         },
         "banner-of-doom": {
-            "name": "末日旗帜"
+            "name": "banner of doom"
         },
         "taunting-howl": {
             "name": "嚎叫嘲讽"
@@ -3714,7 +3714,7 @@ export default {
             "name": "无尽尸骨"
         },
         "bone-horde": {
-            "name": "白骨聚合体"
+            "name": "bone horde"
         },
         "eternal-torment": {
             "name": "永恒折磨"
@@ -3753,7 +3753,7 @@ export default {
             "name": "腐烂大军"
         },
         "two-shambling-skeletons": {
-            "name": "两只蹒跚骷髅"
+            "name": "two shambling skeletons"
         },
         "solid-bones": {
             "name": "坚硬白骨"
@@ -3771,19 +3771,19 @@ export default {
             "name": "破土骇物"
         },
         "raging-corpse": {
-            "name": "暴走尸体"
+            "name": "raging corpse"
         },
         "unforgivable-methods": {
             "name": "罪不可恕"
         },
         "stitched-atrocity": {
-            "name": "缝合暴行尸"
+            "name": "stitched atrocity"
         },
         "unholy-prowess": {
             "name": "不洁威武"
         },
         "skeleton-sorcerer": {
-            "name": "骷髅术士"
+            "name": "skeleton sorcerer"
         },
         "wailing-from-beyond": {
             "name": "冥界哀嚎"
@@ -4143,13 +4143,13 @@ export default {
             "name": "无光鬼影"
         },
         "shadow-beast": {
-            "name": "暗影野兽"
+            "name": "shadow beast"
         },
         "the-night-takes-shape": {
             "name": "黑夜现形"
         },
         "shadow-horror": {
-            "name": "暗影骇物"
+            "name": "shadow horror"
         },
         "vengeful-storm": {
             "name": "复仇风暴"
@@ -4347,7 +4347,7 @@ export default {
             "name": "瞄靶攻击"
         },
         "sniper-turret": {
-            "name": "狙击炮台"
+            "name": "sniper turret"
         },
         "burning-slash": {
             "name": "群虫壁垒"
@@ -4374,13 +4374,13 @@ export default {
             "name": "力场"
         },
         "dampening-unit": {
-            "name": "抗震单元"
+            "name": "dampening unit"
         },
         "heavy-metal": {
             "name": "重型金属"
         },
         "sledge-driver": {
-            "name": "大锤打桩器"
+            "name": "sledge driver"
         },
         "high-impact-projectiles": {
             "name": "高冲投射"
@@ -4392,7 +4392,7 @@ export default {
             "name": "猎杀者"
         },
         "jackal-mech": {
-            "name": "豺狼机甲"
+            "name": "jackal mech"
         },
         "interference": {
             "name": "干扰"
@@ -4413,19 +4413,19 @@ export default {
             "name": "散步捕网"
         },
         "trapping-unit": {
-            "name": "诱捕单元"
+            "name": "trapping unit"
         },
         "plague-protocol": {
             "name": "瘟疫协议"
         },
         "toxin-distributor": {
-            "name": "剧毒播撒器"
+            "name": "toxin distributor"
         },
         "plated-defense": {
             "name": "镀层防御"
         },
         "armored-tank": {
-            "name": "装甲坦克"
+            "name": "armored tank"
         },
         "prepare-for-deployment": {
             "name": "准备部署"
@@ -4434,7 +4434,7 @@ export default {
             "name": "速射火力"
         },
         "machine-bolter": {
-            "name": "机械矢炮"
+            "name": "machine bolter"
         },
         "reaper-function": {
             "name": "收割功能"
@@ -4458,19 +4458,19 @@ export default {
             "name": "电击脉冲"
         },
         "arcing-generator": {
-            "name": "电弧发电机"
+            "name": "arcing generator"
         },
         "spinning-blades": {
             "name": "自旋之刃"
         },
         "sword-propeller": {
-            "name": "利剑推进器"
+            "name": "sword propeller"
         },
         "swarming-bulwark": {
             "name": "燃烧斩击"
         },
         "shield-spider": {
-            "name": "护盾蜘蛛"
+            "name": "shield spider"
         },
         "triage-program": {
             "name": "验伤程序"
@@ -4521,7 +4521,7 @@ export default {
             "name": "生命注魔"
         },
         "animated-claymore": {
-            "name": "活体大剑"
+            "name": "animated claymore"
         },
         "malachite-shockwave": {
             "name": "孔雀石冲击波"
@@ -4566,13 +4566,13 @@ export default {
             "name": "解脱桎梏"
         },
         "spiritbound-falchion": {
-            "name": "灵缚弯刃"
+            "name": "spiritbound falchion"
         },
         "veil-of-protection": {
             "name": "防护帷幔"
         },
         "ancient-drill": {
-            "name": "远古钻头"
+            "name": "ancient drill"
         },
         "beam-axe": {
             "name": "光束战斧"
@@ -4584,7 +4584,7 @@ export default {
             "name": "低温休眠"
         },
         "curious-gear": {
-            "name": "怪异齿轮"
+            "name": "curious gear"
         },
         "curious-machinery": {
             "name": "古怪机械"
@@ -4617,7 +4617,7 @@ export default {
             "name": "动力核心"
         },
         "pressure-build-up": {
-            "name": "压力积聚"
+            "name": "pressure build-up"
         },
         "processing": {
             "name": "进程处理"
@@ -4716,7 +4716,7 @@ export default {
             "name": "疤痕塑像"
         },
         "flesh-fiend": {
-            "name": "血肉邪魔"
+            "name": "flesh fiend"
         },
         "shared-affliction": {
             "name": "苦难分享"
@@ -4740,7 +4740,7 @@ export default {
             "name": "无常塑像"
         },
         "flesh-bomb": {
-            "name": "血肉炸弹"
+            "name": "flesh bomb"
         },
         "wracked-with-pain": {
             "name": "痛苦施刑"
@@ -4836,7 +4836,7 @@ export default {
             "name": "暴风之鸟"
         },
         "2-white-owls": {
-            "name": "2只雪鸮"
+            "name": "2 white owls"
         },
         "biting-frost": {
             "name": "寒霜撕咬"
@@ -5055,13 +5055,13 @@ export default {
             "name": "单人掩体"
         },
         "defense-grid": {
-            "name": "防御网格"
+            "name": "defense grid"
         },
         "furry-facade": {
             "name": "毛绒假象"
         },
         "shaggy-lure": {
-            "name": "蓬毛诱饵"
+            "name": "shaggy lure"
         },
         "grasping-hazards": {
             "name": "危害抓攫"
@@ -5079,7 +5079,7 @@ export default {
             "name": "磁力碎片"
         },
         "mother-of-all-traps": {
-            "name": "陷阱之母"
+            "name": "mother of all traps"
         },
         "path-of-pain": {
             "name": "痛苦路径"

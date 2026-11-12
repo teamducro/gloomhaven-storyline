@@ -35,7 +35,7 @@ export default {
         "name": "活力洞窟"
     },
     "gh-8": {
-        "name": "幽港迷城倉庫",
+        "name": "Gloomhaven Warehouse",
         "rewards": [
             "+2 聲望"
         ]
@@ -57,7 +57,7 @@ export default {
         ]
     },
     "gh-11": {
-        "name": "幽港迷城廣場A",
+        "name": "Gloomhaven Square A",
         "rewards": [
             "每人 15 金幣",
             "-2 聲望",
@@ -69,7 +69,7 @@ export default {
         ]
     },
     "gh-12": {
-        "name": "幽港迷城廣場B",
+        "name": "Gloomhaven Square B",
         "rewards": [
             "+4 聲望",
             "「碎顱斧」設計圖（道具 113）"
@@ -116,7 +116,7 @@ export default {
         ]
     },
     "gh-20": {
-        "name": "死靈法師聖所",
+        "name": "Necromancers Sanctum",
         "rewards": [
             "每人 20 金幣",
             "+2 聲望",
@@ -194,7 +194,7 @@ export default {
         ]
     },
     "gh-31": {
-        "name": "暗夜維度"
+        "name": "Plane of Night"
     },
     "gh-32": {
         "name": "衰敗樹林"
@@ -324,7 +324,7 @@ export default {
         ]
     },
     "gh-49": {
-        "name": "叛軍堅守",
+        "name": "Rebels Stand",
         "rewards": [
             "每人 50 金幣",
             "-3 聲望"
@@ -335,7 +335,7 @@ export default {
         ]
     },
     "gh-50": {
-        "name": "幽靈堡壘",
+        "name": "Ghost Fortress",
         "rewards": [
             "+3 聲望",
             "-2 繁榮度"
@@ -362,12 +362,12 @@ export default {
         "name": "地穴密室",
         "requirements": "「索恩的追尋者」個人任務",
         "rewards": [
-            "索恩的追尋者獲得：「索恩法杖」（道具 114）。追尋者無法販售此道具。"
+            "索恩的追尋者獲得：「Staff of Xorn」（道具 114）。追尋者無法販售此道具。"
         ]
     },
     "gh-54": {
         "name": "冰晶宮殿",
-        "requirements": "「索恩的追尋者」個人任務，並裝備「索恩法杖」道具",
+        "requirements": "「索恩的追尋者」個人任務，並裝備「Staff of Xorn」道具",
         "rewards": [
             "立即讓索恩的追尋者退休",
             "將城市與道路事件 59 加入牌堆，取代該職業原本的退休事件",
@@ -379,21 +379,21 @@ export default {
         ]
     },
     "gh-SoX1": {
-        "name": "貴族地穴",
+        "name": "Nobles’ Crypt",
         "rewards": [
             "+1 聲望",
             "將城市事件 SoX2 加入牌堆"
         ]
     },
     "gh-SoX2": {
-        "name": "淹水地穴",
+        "name": "Flooded Crypt",
         "rewards": [
             "將城市事件 SoX3 加入牌堆",
-            "以下僅能選擇一項：「寒霜之刃」（道具 077）、「寒霜魔杖」（道具 083）或「浪尖之冠」（道具 111）"
+            "以下僅能選擇一項：「Frigid Blade」（道具 077）、「Wand of Frost」（道具 083）或「Wave Crest」（道具 111）"
         ]
     },
     "gh-SoX3": {
-        "name": "遠古者地穴",
+        "name": "Crypt of the Ancients",
         "rewards": [
             "全隊 50 金幣",
             "將城市事件 SoX3 加入牌堆"
@@ -471,7 +471,7 @@ export default {
         ]
     },
     "gh-64": {
-        "name": "水下潟湖",
+        "name": "Under Water Lagoon",
         "rewards": [
             "每人 10 經驗值"
         ]
@@ -479,7 +479,7 @@ export default {
     "gh-65": {
         "name": "硫磺礦井",
         "rewards": [
-            "「遠古鑽頭」設計圖（道具 112）"
+            "「Ancient Drill」設計圖（道具 112）"
         ]
     },
     "gh-66": {
@@ -488,13 +488,13 @@ export default {
     "gh-67": {
         "name": "神秘圖書館",
         "rewards": [
-            "「動力核心」（道具 132）"
+            "「Power Core」（道具 132）"
         ]
     },
     "gh-68": {
         "name": "劇毒沼澤",
         "rewards": [
-            "2 個「強效治療藥水」（道具 027）"
+            "2 個「Major Healing Potion」（道具 027）"
         ]
     },
     "gh-69": {
@@ -518,7 +518,7 @@ export default {
     "gh-71": {
         "name": "凜風高地",
         "rewards": [
-            "2 個「強效威力藥水」（道具 041）"
+            "2 個「Major Power Potion」（道具 041）"
         ],
         "faq": [
             "強制移動：若風將角色向右或向左移動，而可能的格子之一有障礙物或牆壁，玩家可以選擇被擋住（不移動），或移動到開放的格子。",
@@ -637,7 +637,7 @@ export default {
     "gh-84": {
         "name": "水晶洞穴",
         "rewards": [
-            "「共鳴水晶」（道具 133）",
+            "「Resonant Crystal」（道具 133）",
             "+1 繁榮度"
         ],
         "faq": [
@@ -647,7 +647,7 @@ export default {
     "gh-85": {
         "name": "太陽神廟",
         "rewards": [
-            "「黎明寶珠」（道具 121）"
+            "「Orb of Dawn」（道具 121）"
         ],
         "faq": [
             "書中錯誤：4 名玩家時，請勿在最終房間放置暗夜惡魔與旭日惡魔，這些只有在 4 名玩家時才會作為一般敵人放置（2 和 3 名玩家時為黑色，4 名玩家時為白色）。"
@@ -669,7 +669,7 @@ export default {
     "gh-88": {
         "name": "水之維度",
         "rewards": [
-            "「召喚法杖」（道具 120）"
+            "「Staff of Summoning」（道具 120）"
         ],
         "faq": [
             "若所有伏擊者都被殺死，繼續抽取伏擊者能力卡，以決定劇本特殊效果的方向。"
@@ -684,7 +684,7 @@ export default {
     "gh-90": {
         "name": "邪魔裂縫",
         "rewards": [
-            "「黑色香爐」（道具 128）"
+            "「Black Censer」（道具 128）"
         ]
     },
     "gh-91": {
@@ -715,101 +715,101 @@ export default {
     "gh-95": {
         "name": "貪婪深坑",
         "rewards": [
-            "「憎恨顱骨」（道具 119）"
+            "「Skull of Hatred」（道具 119）"
         ]
     },
     "gh-202": {
-        "name": "重返黑土墓塚",
+        "name": "Return to the Black Barrow",
         "rewards": [
-            "「威嚴之刃」（道具 134）"
+            "「Imposing Blade」（道具 134）"
         ]
     },
     "gh-203": {
-        "name": "不幸的闖入",
+        "name": "An Unfortunate Intrusion",
         "rewards": [
-            "「聚焦射線」（道具 135）"
+            "「Focusing Ray」（道具 135）"
         ]
     },
     "gh-204": {
-        "name": "腐化實驗室",
+        "name": "Corrupted Laboratory",
         "rewards": [
-            "「不穩定藥劑」（道具 136）"
+            "「Volatile Elixir」（道具 136）"
         ]
     },
     "gh-205": {
-        "name": "軍械庫劫案",
+        "name": "Armory Heist",
         "rewards": [
-            "「靜默細劍」（道具 137）"
+            "「Silent Stiletto」（道具 137）"
         ]
     },
     "gh-206": {
-        "name": "岩石防禦",
+        "name": "Stone Defense",
         "rewards": [
-            "「岩石護符」（道具 138）"
+            "「Stone Charm」（道具 138）"
         ]
     },
     "gh-207": {
-        "name": "鼠類解放",
+        "name": "Rodent Liberation",
         "rewards": [
-            "「心靈之刃」（道具 139）"
+            "「Psychic Knife」（道具 139）"
         ]
     },
     "gh-208": {
-        "name": "護送商隊",
+        "name": "Caravan Escort",
         "rewards": [
             "「太陽盾」（道具 140）"
         ]
     },
     "gh-209": {
-        "name": "非自然的侮辱",
+        "name": "Unnatural Insults",
         "rewards": [
-            "「死亡面具」（道具 145）"
+            "「Mask of Death」（道具 145）"
         ]
     },
     "gh-210": {
-        "name": "倉儲費用",
+        "name": "Storage Fees",
         "rewards": [
-            "「工具腰帶」（道具 141）"
+            "「Utility Belt」（道具 141）"
         ]
     },
     "gh-211": {
-        "name": "野獸維度",
+        "name": "Plane of Wild Beasts",
         "rewards": [
-            "「相位神像」（道具 142）"
+            "「Phasing Idol」（道具 142）"
         ]
     },
     "gh-212": {
-        "name": "收割黑夜",
+        "name": "Harvesting the Night",
         "rewards": [
-            "「煙霧藥劑」（道具 143）"
+            "「Smoke Elixir」（道具 143）"
         ]
     },
     "gh-213": {
-        "name": "瘟疫地穴",
+        "name": "Plagued Crypt",
         "rewards": [
-            "「瘟疫吊墜」（道具 144）"
+            "「Pendant of the Plague」（道具 144）"
         ]
     },
     "gh-214": {
-        "name": "吟遊詩人之戰",
+        "name": "Battle of the Bards",
         "rewards": [
-            "「大師魯特琴」（道具 146）"
+            "「Master's Lute」（道具 146）"
         ]
     },
     "gh-215": {
-        "name": "腐化狩獵",
+        "name": "Corrupted Hunt",
         "rewards": [
-            "「獵人斗篷」（道具 147）"
+            "「Cloak of the Hunter」（道具 147）"
         ]
     },
     "gh-216": {
-        "name": "戰後餘波",
+        "name": "Aftermath",
         "rewards": [
-            "「醫師外袍」（道具 148）"
+            "「Doctor's Coat」（道具 148）"
         ]
     },
     "gh-217": {
-        "name": "元素祕密",
+        "name": "Elemental Secrets",
         "rewards": [
             "「元素靴」（道具 149）"
         ]
@@ -817,17 +817,17 @@ export default {
     "gh-218": {
         "name": "籠中熊",
         "rewards": [
-            "「指揮法杖」（道具 150）"
+            "「Staff of Command」（道具 150）"
         ]
     },
     "gh-219": {
         "name": "時之砂",
         "rewards": [
-            "「流沙之劍」（道具 151）"
+            "「Sword of the Sands」（道具 151）"
         ]
     },
     "fc-96": {
-        "name": "不速之客",
+        "name": "Unexpected Visitors",
         "requirements": "「黯」之終結（全域）完成",
         "rewards": [
             "每人 10 經驗值",
@@ -835,14 +835,14 @@ export default {
         ]
     },
     "fc-97": {
-        "name": "未述傳說",
+        "name": "Lore Untold",
         "rewards": [
             "每人 10 金幣",
             "將城市事件 88、89 與 90 加入牌堆"
         ]
     },
     "fc-98": {
-        "name": "烈焰中的過往",
+        "name": "Past in Flames",
         "rewards": [
             [
                 "每人 10 金幣",
@@ -865,23 +865,23 @@ export default {
         "rewards": [
             [
                 "每人 5 金幣",
-                "「次級解毒藥劑」（道具 153）"
+                "「Minor Antidote」（道具 153）"
             ],
             [
                 "每人 10 金幣",
                 "+1 繁榮度",
-                "「次級解毒藥劑」（道具 153）"
+                "「Minor Antidote」（道具 153）"
             ]
         ]
     },
     "fc-100": {
-        "name": "轉動的齒輪",
+        "name": "Shifting Gears",
         "rewards": [
-            "選擇獲得以下其中一組：「望遠鏡片」（道具 059）與「遠古鑽頭」（道具 112），或「奇異齒輪」（道具 125）與「遙控蜘蛛」（道具 126）"
+            "選擇獲得以下其中一組：「Telescopic Lens」（道具 059）與「Ancient Drill」（道具 112），或「Curious Gear」（道具 125）與「Remote Spider」（道具 126）"
         ]
     },
     "fc-101": {
-        "name": "籠罩的地穴",
+        "name": "Shrouded Crypt",
         "rewards": [
             "全隊 20 金幣",
             "+1 聲望",
@@ -889,33 +889,33 @@ export default {
         ]
     },
     "fc-102": {
-        "name": "知識市集",
+        "name": "Bazaar of Knowledge",
         "rewards": [
             "每人 15 經驗值",
             "若受到恐嚇的居民不超過 2+C 人：+2 聲望 否則：-2 聲望"
         ]
     },
     "fc-103": {
-        "name": "需要之處",
+        "name": "Where It Is Needed",
         "rewards": [
             "+2 繁榮度",
             "將城市事件 87 加入牌堆"
         ]
     },
     "fc-104": {
-        "name": "裂開的傷口",
+        "name": "A Gaping Wound",
         "rewards": [
-            "「強效魔力藥水」（道具 048）"
+            "「Major Mana Potion」（道具 048）"
         ]
     },
     "fc-105": {
-        "name": "邪教的怪物",
+        "name": "Monstrosities of a Cult",
         "rewards": [
-            "「強效解毒藥劑」（道具 154）"
+            "「Major Antidote」（道具 154）"
         ]
     },
     "fc-106": {
-        "name": "精細工藝",
+        "name": "Intricate Work",
         "rewards": [
             [
                 "每人 175 金幣，這筆金幣必須立即用於任何 {WIND}、{ICE}、{FIRE}、{EARTH}、{LIGHT} 或 {DARK} 的附魔"
@@ -927,41 +927,41 @@ export default {
         ]
     },
     "fc-107": {
-        "name": "機械天才",
+        "name": "Mechanical Genius",
         "rewards": [
             "每人 5 經驗值"
         ]
     },
     "fc-108": {
-        "name": "終局序章",
+        "name": "Prologue to the End",
         "rewards": [
             [
-                "「防護詛咒鎧甲」（道具 155）"
+                "「Curseward Armor」（道具 155）"
             ],
             [
                 "2 個「飛斧」（道具 161）"
             ],
             [
-                "「防護詛咒鎧甲」（道具 155）",
+                "「Curseward Armor」（道具 155）",
                 "2 個「飛斧」（道具 161）"
             ]
         ]
     },
     "fc-109": {
-        "name": "戰爭後記",
+        "name": "Epilogue of a War",
         "rewards": [
             "每人 10 經驗值",
             "「守護符」（道具 052）"
         ]
     },
     "fc-110": {
-        "name": "循環的解方",
+        "name": "A Circular Solution",
         "rewards": [
-            "「水晶花冠」（道具 163）"
+            "「Crystal Tiara」（道具 163）"
         ]
     },
     "fc-111": {
-        "name": "枷鎖鬆脫",
+        "name": "The Shackles Loosen",
         "rewards": [
             [
                 "每人 5 經驗值",
@@ -974,7 +974,7 @@ export default {
         ]
     },
     "fc-112": {
-        "name": "事情的根底",
+        "name": "The Bottom of It",
         "rewards": [
             [
                 "每人 10 金幣",
@@ -988,7 +988,7 @@ export default {
         ]
     },
     "fc-113": {
-        "name": "遺失的線索",
+        "name": "The Lost Thread",
         "rewards": [
             "每人 135 金幣",
             "這筆金幣必須立即用於任何移動 {MOVE}、射程 {RANGE} 或跳躍 {JUMP} 的附魔",
@@ -996,13 +996,13 @@ export default {
         ]
     },
     "fc-114": {
-        "name": "墨跡未乾",
+        "name": "Ink Not Yet Dry",
         "rewards": [
             "隊伍恩惠：依能力卡等級計算的附魔額外費用，現在每級減少 5 金幣。"
         ]
     },
     "fc-115": {
-        "name": "未來未定",
+        "name": "Future Uncertain",
         "rewards": [
             "+3 聲望",
             "+1 繁榮度",
@@ -1011,7 +1011,7 @@ export default {
         ]
     },
     "fc-117": {
-        "name": "通往群星之塔",
+        "name": "Tower to the Stars",
         "rewards": [
             "每人 15 金幣",
             "每人 1 ✓",
@@ -1019,9 +1019,9 @@ export default {
         ]
     },
     "fc-116": {
-        "name": "必然的預兆",
+        "name": "Forecast of the Inevitable",
         "rewards": [
-            "「預言之盆」（道具 164）"
+            "「Basin of Prophecy」（道具 164）"
         ]
     },
     "jotl-1": {
@@ -1043,7 +1043,7 @@ export default {
     "jotl-4": {
         "name": "石中儀式",
         "rewards": [
-            "「魔力藥水」（道具 14）"
+            "「Mana Potion」（道具 14）"
         ]
     },
     "jotl-5": {
@@ -1083,13 +1083,13 @@ export default {
     "jotl-11": {
         "name": "污穢陰溝",
         "rewards": [
-            "「跳蚤斗篷」（道具 28）"
+            "「Flea-Bitten Shawl」（道具 28）"
         ]
     },
     "jotl-12": {
         "name": "迷幻陰溝",
         "rewards": [
-            "「跳蚤斗篷」（道具 28）"
+            "「Flea-Bitten Shawl」（道具 28）"
         ]
     },
     "jotl-13": {
@@ -1134,7 +1134,7 @@ export default {
     "jotl-19": {
         "name": "鼠賊老窩",
         "rewards": [
-            "「力量戒指」（道具 31）"
+            "「Ring of Strength」（道具 31）"
         ]
     },
     "jotl-20": {
@@ -1152,11 +1152,11 @@ export default {
     "jotl-22": {
         "name": "殺意留言",
         "rewards": [
-            "「鋼質戒指」（道具 33）"
+            "「Steel Ring」（道具 33）"
         ]
     },
     "jotl-23": {
-        "name": "精英中的精英",
+        "name": "Best of the Best",
         "rewards": [
             "「倒刺斧」（道具 34）"
         ]
@@ -1164,7 +1164,7 @@ export default {
     "jotl-24": {
         "name": "界護虛空",
         "rewards": [
-            "「律令長袍」（道具 35）"
+            "「Robes of Command」（道具 35）"
         ]
     },
     "jotl-25": {
@@ -1174,10 +1174,10 @@ export default {
         ]
     },
     "fh-0": {
-        "name": "雪中嚎叫"
+        "name": "Howling in the Snow"
     },
     "fh-1": {
-        "name": "燃燒的城鎮",
+        "name": "A Town in Flames",
         "rewards": [
             [
                 "獲得 2 士氣"
@@ -1200,13 +1200,13 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "阿爾戈克族偵察",
+        "name": "Algox Scouting",
         "rewards": [
             "每人獲得 1 ✔"
         ]
     },
     "fh-3": {
-        "name": "阿爾戈克族攻勢",
+        "name": "Algox Offensive",
         "rewards": [
             "每人獲得 1 ✔"
         ]
@@ -1229,7 +1229,7 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "冰封地穴",
+        "name": "Frozen Crypt",
         "rewards": [
             "全隊獲得 2 {LUMBER}"
         ]
@@ -1241,26 +1241,26 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "世界盡頭",
+        "name": "Edge of the World",
         "rewards": [
             "每人 10 經驗值"
         ]
     },
     "fh-8": {
-        "name": "水晶壕溝",
+        "name": "Crystal Trench",
         "rewards": [
             "全隊獲得 1 {LUMBER}",
             "全隊獲得 2 {HIDE}"
         ]
     },
     "fh-9": {
-        "name": "發光地下墓穴",
+        "name": "Glowing Catacombs",
         "rewards": [
             "全隊獲得 2 {CORPSECAP}"
         ]
     },
     "fh-10": {
-        "name": "水晶圍場",
+        "name": "Crystal Enclosure",
         "rewards": [
             "獲得 1 士氣",
             "獲得 1 靈感"
@@ -1274,26 +1274,26 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "神廟入口",
+        "name": "Temple Entrance",
         "rewards": [
             "每人獲得 15 經驗值"
         ]
     },
     "fh-13": {
-        "name": "冰封峽灣",
+        "name": "Frozen Fjord",
         "rewards": [
-            "獲得「死去的烏鴉」（道具 233）"
+            "獲得「Dead Raven」（道具 233）"
         ]
     },
     "fh-14": {
-        "name": "鋸齒淺灘",
+        "name": "Jagged Shoals",
         "rewards": [
             "二選一：解鎖 {CR} 職業盒，或解鎖 {DT} 職業盒",
             "將事件 WO-81 加入冬季前哨牌堆"
         ]
     },
     "fh-15": {
-        "name": "遠古尖塔",
+        "name": "Ancient Spire",
         "rewards": [
             "全隊獲得 1 {LUMBER}",
             "全隊獲得 1 {METAL}",
@@ -1301,20 +1301,20 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "廢棄升降機",
+        "name": "Derelict Elevator",
         "rewards": [
             "每人獲得 5 經驗值",
             "獲得 1 靈感"
         ]
     },
     "fh-17": {
-        "name": "鬧鬼地窖",
+        "name": "Haunted Vault",
         "rewards": [
             "每人獲得 1 ✔"
         ]
     },
     "fh-18": {
-        "name": "水晶原野",
+        "name": "Crystal Fields",
         "rewards": [
             "獲得 1 士氣",
             "隨機獲得一個道具設計圖",
@@ -1322,7 +1322,7 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "天空大廳",
+        "name": "Skyhall",
         "rewards": [
             "獲得 1 士氣",
             "隨機獲得一個道具設計圖",
@@ -1330,13 +1330,13 @@ export default {
         ]
     },
     "fh-20": {
-        "name": "解放神廟",
+        "name": "Temple of Liberation",
         "rewards": [
             "每人獲得 15 金幣"
         ]
     },
     "fh-21": {
-        "name": "無盡冰霜之境",
+        "name": "Realm of Endless Frost",
         "rewards": [
             "獲得 2 繁榮度"
         ]
@@ -1350,19 +1350,19 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "尖塔地下室",
+        "name": "Spire Basement",
         "rewards": [
             "隨機獲得一個道具設計圖"
         ]
     },
     "fh-24": {
-        "name": "尖塔上層",
+        "name": "Upper Spire",
         "rewards": [
             "隨機獲得一個道具設計圖"
         ]
     },
     "fh-25": {
-        "name": "鏽蝕隧道",
+        "name": "Rusted Tunnels",
         "rewards": [
             "全隊獲得 2 {LUMBER}",
             "全隊獲得 2 {METAL}",
@@ -1370,13 +1370,13 @@ export default {
         ]
     },
     "fh-26": {
-        "name": "奎崔爾族圖書館",
+        "name": "Quatryl Library",
         "rewards": [
             "每人獲得 10 經驗值"
         ]
     },
     "fh-27": {
-        "name": "譫妄深處",
+        "name": "Depths of Delirium",
         "rewards": [
             "每人獲得 10 經驗值",
             "每人獲得 1 ✔",
@@ -1384,13 +1384,13 @@ export default {
         ]
     },
     "fh-28": {
-        "name": "高峰會議",
+        "name": "Summit Meeting",
         "rewards": [
             "失去 1 士氣"
         ]
     },
     "fh-29": {
-        "name": "尖塔之戰 A",
+        "name": "War of the Spire A",
         "rewards": [
             "獲得 3 士氣",
             "從所有前哨事件牌堆中移除所有 {ALGOX} 事件",
@@ -1399,7 +1399,7 @@ export default {
         ]
     },
     "fh-30": {
-        "name": "尖塔之戰 B",
+        "name": "War of the Spire B",
         "rewards": [
             "獲得 3 士氣",
             "獲得「Destroyer of the Snowspeakers」貼紙",
@@ -1409,28 +1409,28 @@ export default {
         ]
     },
     "fh-31": {
-        "name": "劈啪隧道",
+        "name": "Crackling Tunnel",
         "rewards": [
             "每人獲得 5 經驗值",
             "每人獲得 10 金幣"
         ]
     },
     "fh-32": {
-        "name": "烏鴉棲地",
+        "name": "Ravens' Roost",
         "rewards": [
-            "獲得「羽毛斗篷」設計圖（道具 69）"
+            "獲得「Feathered Cloak」設計圖（道具 69）"
         ]
     },
     "fh-33": {
-        "name": "解凍樹林",
+        "name": "Thawed Wood",
         "rewards": [
             "每有一個未揭示的探測符文，每人獲得 5 經驗值",
-            "獲得「餘燼能量源」（道具 244）",
+            "獲得「Ember Energy Source」（道具 244）",
             "於 三 週後將 135.1 加入日曆"
         ]
     },
     "fh-34": {
-        "name": "尖塔頂端"
+        "name": "Top of the Spire"
     },
     "fh-35": {
         "name": "廢料坑",
@@ -1441,23 +1441,23 @@ export default {
         ]
     },
     "fh-36": {
-        "name": "掩埋管道",
+        "name": "Buried Ducts",
         "rewards": [
             "全隊獲得 3 {LUMBER}",
             "全隊獲得 3 {METAL}",
-            "獲得「聚焦透鏡」設計圖（道具 67）"
+            "獲得「Converging Lenses」設計圖（道具 67）"
         ]
     },
     "fh-37": {
-        "name": "死亡之路",
+        "name": "The Dead Mile",
         "rewards": [
             "全隊獲得 3 {LUMBER}",
             "全隊獲得 3 {METAL}",
-            "獲得「聚焦透鏡」設計圖（道具 67）"
+            "獲得「Converging Lenses」設計圖（道具 67）"
         ]
     },
     "fh-38": {
-        "name": "前進之路",
+        "name": "The Way Forward",
         "rewards": [
             "每人獲得 10 經驗值",
             "每人獲得 1 ✔",
@@ -1465,21 +1465,21 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "腐化營地",
+        "name": "Corrupted Camp",
         "rewards": [
             "失去 1 靈感",
             "每人額外獲得 2 張拾取卡"
         ]
     },
     "fh-40": {
-        "name": "救援行動",
+        "name": "Relief Effort",
         "rewards": [
             "失去 1 靈感",
             "每人額外獲得 2 張拾取卡"
         ]
     },
     "fh-41": {
-        "name": "無拘碎片",
+        "name": "Unfettered Shard",
         "rewards": [
             "每人獲得 15 金幣",
             "全隊獲得 2 {AXENUT}",
@@ -1487,7 +1487,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "無光壕溝",
+        "name": "Sunless Trench",
         "rewards": [
             "每人獲得 2 ✔",
             "將事件 B-16 加入船隻牌堆",
@@ -1495,16 +1495,16 @@ export default {
         ]
     },
     "fh-43": {
-        "name": "失守的路障",
+        "name": "Overrun Barricade",
         "rewards": [
             "每人獲得 10 經驗值"
         ]
     },
     "fh-44": {
-        "name": "神經中樞",
+        "name": "Nerve Center",
         "rewards": [
             "每人獲得 5 金幣",
-            "獲得「賦能指揮棒」設計圖（道具 73）"
+            "獲得「Energizing Baton」設計圖（道具 73）"
         ]
     },
     "fh-45": {
@@ -1515,14 +1515,14 @@ export default {
         ]
     },
     "fh-46": {
-        "name": "死亡隘口",
+        "name": "Dead Pass",
         "rewards": [
             "獲得 1 士氣",
             "每人獲得 10 經驗值"
         ]
     },
     "fh-47": {
-        "name": "腐肉山脊",
+        "name": "Carrion Ridge",
         "rewards": [
             "每人獲得 10 金幣",
             "全隊獲得 2 {LUMBER}"
@@ -1536,14 +1536,14 @@ export default {
         ]
     },
     "fh-49": {
-        "name": "海石之下",
+        "name": "Beneath Sea and Stone",
         "rewards": [
             "每人獲得 5 經驗值",
             "獲得 1 靈感"
         ]
     },
     "fh-50": {
-        "name": "爆破下降",
+        "name": "Explosive Descent",
         "rewards": [
             "失去 2 靈感",
             "全隊獲得 4 {LUMBER}",
@@ -1551,33 +1551,33 @@ export default {
         ]
     },
     "fh-51": {
-        "name": "孤兒大廳",
+        "name": "Orphan's Halls",
         "rewards": [
             "每人獲得 10 經驗值",
-            "獲得「震撼手榴彈」設計圖（道具 74）"
+            "獲得「Shock Grenades」設計圖（道具 74）"
         ]
     },
     "fh-52": {
-        "name": "短暫的永恆",
+        "name": "Fleeting Permanence",
         "rewards": [
             "獲得 1 士氣",
             "獲得 1 靈感"
         ]
     },
     "fh-53": {
-        "name": "水下王座",
+        "name": "Underwater Throne",
         "rewards": [
             "每人獲得 2 ✔"
         ]
     },
     "fh-54": {
-        "name": "殘骸之間",
+        "name": "Among the Wreckage",
         "rewards": [
             "每人獲得 2 ✔"
         ]
     },
     "fh-55": {
-        "name": "心意轉變",
+        "name": "Change of Heart",
         "rewards": [
             "獲得 2 士氣",
             "獲得 2 繁榮度",
@@ -1588,7 +1588,7 @@ export default {
         ]
     },
     "fh-56": {
-        "name": "先驅者的呼喚",
+        "name": "Call of the Harbinger",
         "rewards": [
             "獲得 1 士氣",
             "獲得 1 靈感",
@@ -1598,7 +1598,7 @@ export default {
         ]
     },
     "fh-57": {
-        "name": "雪之聖所",
+        "name": "Sanctuary of Snow",
         "rewards": [
             "獲得 1 士氣",
             "獲得 1 靈感",
@@ -1608,7 +1608,7 @@ export default {
         ]
     },
     "fh-58": {
-        "name": "孤兒核心",
+        "name": "Orphan's Core",
         "rewards": [
             "獲得 1 士氣",
             "獲得「鑰匙卡」（道具 246）",
@@ -1622,7 +1622,7 @@ export default {
         ]
     },
     "fh-59": {
-        "name": "自動化暴動",
+        "name": "Automation Uprising",
         "rewards": [
             "獲得 2 士氣",
             "獲得 2 繁榮度",
@@ -1634,12 +1634,12 @@ export default {
         ]
     },
     "fh-60": {
-        "name": "團結王冠",
+        "name": "Uniting the Crown",
         "rewards": [
             "獲得 2 士氣",
             "獲得 1 繁榮度",
             "每人獲得 30 經驗值",
-            "獲得「共感護甲」（道具 224）",
+            "獲得「Armor of Empathy」（道具 224）",
             "解鎖仍然鎖定的那個職業盒：{CR} 或 {DT}",
             "從所有前哨事件牌堆中移除所有 {LURKERS} 事件",
             "將事件 SO-48 加入夏季前哨牌堆，並將事件 B-17 加入船隻牌堆",
@@ -1654,19 +1654,19 @@ export default {
         ]
     },
     "fh-62": {
-        "name": "無拘封印",
+        "name": "The Unfettered Seal",
         "rewards": [
             "獲得 1 繁榮度"
         ]
     },
     "fh-63": {
-        "name": "原生族封印",
+        "name": "The Savvas Seal",
         "rewards": [
             "獲得 2 繁榮度"
         ]
     },
     "fh-64": {
-        "name": "霜之哈芬封印",
+        "name": "The Frosthaven Seal",
         "rewards": [
             "獲得 3 士氣",
             "獲得 3 繁榮度",
@@ -1674,7 +1674,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "穩固的根基",
+        "name": "A Strong Foundation",
         "rewards": [
             "全隊獲得 2 {LUMBER}",
             "全隊獲得 2 {METAL}",
@@ -1682,28 +1682,28 @@ export default {
         ]
     },
     "fh-66": {
-        "name": "元素核心",
+        "name": "Elemental Cores",
         "rewards": [
-            "獲得「元素之石」（道具 212）",
+            "獲得「Elemental Stone」（道具 212）",
             "於 六 週後將 29.3 加入日曆"
         ]
     },
     "fh-67": {
-        "name": "核心調諧",
+        "name": "Core Attunement",
         "rewards": [
             "獲得 1 士氣",
             "獲得 1 繁榮度"
         ]
     },
     "fh-68": {
-        "name": "折磨之面",
+        "name": "The Face of Torment",
         "rewards": [
-            "「行維族據點」個人任務完成",
+            "「Aesther Outpost」個人任務完成",
             "於 兩 週後將 133.1 加入日曆"
         ]
     },
     "fh-69": {
-        "name": "神聖土壤",
+        "name": "Sacred Soil",
         "rewards": [
             "獲得 1 {ARROWVINE}",
             "獲得 1 {AXENUT}",
@@ -1712,14 +1712,14 @@ export default {
         ]
     },
     "fh-70": {
-        "name": "真正的橡樹",
+        "name": "The True Oak",
         "rewards": [
-            "「真正的橡樹」個人任務完成",
+            "「The True Oak」個人任務完成",
             "獲得 1 繁榮度"
         ]
     },
     "fh-71": {
-        "name": "碼頭入侵",
+        "name": "Invasion of the Dock",
         "rewards": [
             "對編號 71 至 89 之間任一偶數編號建築造成傷害",
             "每人獲得 10 經驗值",
@@ -1727,7 +1727,7 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "巨大冰塊",
+        "name": "A Giant Block of Ice",
         "rewards": [
             "每人獲得 1 ✔"
         ]
@@ -1740,13 +1740,13 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "道路缺口",
+        "name": "Gaps in the Road",
         "rewards": [
             "隨機獲得一個道具設計圖"
         ]
     },
     "fh-75": {
-        "name": "潛入巢穴",
+        "name": "Infiltraiting the Lair",
         "rewards": [
             "每人獲得 10 金幣"
         ]
@@ -1755,7 +1755,7 @@ export default {
         "name": "神化",
         "rewards": [
             [
-                "「來自深淵的威脅」個人任務完成",
+                "「Threat from the Deep」個人任務完成",
                 "獲得「浪刃」（道具 201）",
                 "將事件 B-18 加入船隻牌堆"
             ],
@@ -1763,15 +1763,15 @@ export default {
         ]
     },
     "fh-77": {
-        "name": "魚王的登基",
+        "name": "Fish King's Ascension",
         "rewards": [
-            "「來自深淵的威脅」個人任務完成",
+            "「Threat from the Deep」個人任務完成",
             "獲得「浪刃」（道具 201）",
             "將事件 B-19 加入船隻牌堆"
         ]
     },
     "fh-78": {
-        "name": "伏擊者問題",
+        "name": "The Lurker Problem",
         "rewards": [
             "每人獲得 10 經驗值"
         ]
@@ -1784,7 +1784,7 @@ export default {
         ]
     },
     "fh-80": {
-        "name": "聖物重生",
+        "name": "Relic Renewed",
         "rewards": [
             "全隊獲得 2 {LUMBER}",
             "全隊獲得 2 {METAL}",
@@ -1793,40 +1793,40 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "毀滅性研究實驗室",
+        "name": "Ruinous Research Lab",
         "rewards": [
             "獲得 1 繁榮度",
-            "獲得「行維族長袍」設計圖（道具 70）"
+            "獲得「Aesther Robe」設計圖（道具 70）"
         ]
     },
     "fh-82": {
-        "name": "北方遠征",
+        "name": "Expedition North",
         "rewards": [
             "獲得 2 繁榮度",
             "將下列遺忘之環道具加入霜之哈芬的庫存：153、159 與 161"
         ]
     },
     "fh-83": {
-        "name": "漲潮鹽水",
+        "name": "Rising Brine",
         "rewards": [
-            "獲得「巨型食人魚豬脊刺」（道具 202）"
+            "獲得「Giant Piranha Pig Spine」（道具 202）"
         ]
     },
     "fh-84": {
-        "name": "此處有軟泥怪",
+        "name": "Here There Be Oozes",
         "rewards": [
             "獲得「軟泥小瓶」（道具 234）"
         ]
     },
     "fh-85": {
-        "name": "致命消遣",
+        "name": "Deadly Pastimes",
         "rewards": [
             "每人獲得 15 經驗值",
             "每人獲得 1 ✔"
         ]
     },
     "fh-86": {
-        "name": "白衣女士",
+        "name": "The Lady in White",
         "rewards": [
             "獲得 2 士氣"
         ]
@@ -1843,20 +1843,20 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "收藏的頂點",
+        "name": "Collection's Capstone",
         "rewards": [
             "獲得 2 士氣"
         ]
     },
     "fh-89": {
-        "name": "受控的火焰",
+        "name": "A Contained Fire",
         "rewards": [
             "全隊獲得 2 {ROCKROOT}",
             "全隊獲得 2 {LUMBER}"
         ]
     },
     "fh-90": {
-        "name": "冰封寶藏",
+        "name": "Frozen Treasure",
         "rewards": [
             [
                 "每人獲得 1 ✔",
@@ -1872,21 +1872,21 @@ export default {
         ]
     },
     "fh-91": {
-        "name": "海岸搶灘",
+        "name": "Shoreline Scramble",
         "rewards": [
             "全隊獲得 2 {LUMBER}",
             "獲得 1 士氣"
         ]
     },
     "fh-92": {
-        "name": "沉沒之船",
+        "name": "Sinking Ship",
         "rewards": [
             "全隊共同失去 5xC/2 個拾取指示物。接著將拾取指示物換成拾取卡",
             "於 一 週後將 181.2 加入日曆"
         ]
     },
     "fh-93": {
-        "name": "隆冬混戰",
+        "name": "Midwinter Brawl",
         "rewards": [
             [
                 "獲得「小老鼠」（道具 235）"
@@ -1897,33 +1897,33 @@ export default {
         ]
     },
     "fh-94": {
-        "name": "壯闊景致",
+        "name": "A Grand View",
         "rewards": [
             "每人獲得 10 經驗值"
         ]
     },
     "fh-95": {
-        "name": "為了埋葬亡者",
+        "name": "To Bury the Dead",
         "rewards": [
             "獲得 1 士氣",
             "每人獲得 10 金幣"
         ]
     },
     "fh-96": {
-        "name": "地下車站",
+        "name": "Underground Station",
         "rewards": [
             "獲得 1 士氣",
             "每人獲得 5 經驗值"
         ]
     },
     "fh-97": {
-        "name": "程式控制樞紐",
+        "name": "Program Control Nexus",
         "rewards": [
             "全隊獲得 5 {METAL}"
         ]
     },
     "fh-98": {
-        "name": "崩塌通風口",
+        "name": "Collapsing Vent",
         "rewards": [
             "獲得 1 繁榮度"
         ]
@@ -1935,21 +1935,21 @@ export default {
         ]
     },
     "fh-100": {
-        "name": "蜂群之中",
+        "name": "Inside the Swarm",
         "rewards": [
             "每人獲得 5 金幣",
             "每人獲得 10 經驗值"
         ]
     },
     "fh-101": {
-        "name": "收割者圖書館",
+        "name": "Harrower Library",
         "rewards": [
             "每人獲得 1 ✔",
             "每人獲得 10 經驗值"
         ]
     },
     "fh-102": {
-        "name": "進入黑暗",
+        "name": "Into the Black",
         "rewards": [
             "每人獲得 20 經驗值"
         ]
@@ -1963,27 +1963,27 @@ export default {
         ]
     },
     "fh-104": {
-        "name": "冬至遺跡",
+        "name": "Ruins of the Solstice",
         "rewards": [
             "全隊獲得 2 {SNOWTHISTLE}",
             "將事件 WR-49 加入冬季道路牌堆"
         ]
     },
     "fh-105": {
-        "name": "春分遺跡",
+        "name": "Ruins of the Equinox",
         "rewards": [
             "全隊獲得 2 {FLAMEFRUIT}",
             "於 四 週後將 159.4 加入日曆"
         ]
     },
     "fh-106": {
-        "name": "時序熔爐",
+        "name": "The Tempus Forge",
         "rewards": [
-            "獲得「四季之鑰」（道具 213）"
+            "獲得「Key of Seasons」（道具 213）"
         ]
     },
     "fh-107": {
-        "name": "我的私人帝國",
+        "name": "My Private Empire",
         "rewards": [
             [
                 "全隊獲得任意 1 種材料資源"
@@ -1999,56 +1999,56 @@ export default {
             ],
             [
                 "全隊獲得任意 5 種材料資源",
-                "獲得「文提里昂之杯」（道具 214）"
+                "獲得「Cup of Ventillion」（道具 214）"
             ]
         ]
     },
     "fh-108": {
-        "name": "光澤深坑",
+        "name": "Lustrous Pit",
         "rewards": [
             "獲得 2 士氣",
             "獲得 2 靈感"
         ]
     },
     "fh-109": {
-        "name": "狂暴工廠",
+        "name": "Furious Factory",
         "rewards": [
             "全隊獲得 5 {METAL}"
         ]
     },
     "fh-110": {
-        "name": "守護者神廟",
+        "name": "Guardian's Temple",
         "rewards": [
-            "獲得「玫瑰護手」設計圖（道具 75）"
+            "獲得「Rose Gauntlet」設計圖（道具 75）"
         ]
     },
     "fh-111": {
         "name": "冰洞",
         "rewards": [
-            "獲得「破碎鏡子」（道具 236）"
+            "獲得「Cracked Mirror」（道具 236）"
         ]
     },
     "fh-112": {
-        "name": "狼群養大的孩子",
+        "name": "Raised by Wolves",
         "rewards": [
             "每人獲得 15 經驗值"
         ]
     },
     "fh-113": {
-        "name": "繁茂洞窟",
+        "name": "Lush Grotto",
         "rewards": [
             "全隊獲得任意 4 種草藥資源"
         ]
     },
     "fh-114": {
-        "name": "凍結工作",
+        "name": "Work Freeze",
         "rewards": [
             "全隊獲得 5 {HIDE}",
             "於 四 週後將 86.1 加入日曆"
         ]
     },
     "fh-115": {
-        "name": "能量塔麻煩",
+        "name": "Pylon Problems",
         "rewards": [
             [
                 "每人獲得 15 經驗值",
@@ -2081,7 +2081,7 @@ export default {
         ]
     },
     "fh-116": {
-        "name": "商隊護衛",
+        "name": "Caravan Guards",
         "rewards": [
             [
                 "獲得 1 士氣"
@@ -2123,29 +2123,29 @@ export default {
         ]
     },
     "fh-117": {
-        "name": "等待遊戲",
+        "name": "A Waiting Game",
         "rewards": [
             "全隊獲得 4 {HIDE}",
             "每人獲得 10 金幣"
         ]
     },
     "fh-118": {
-        "name": "伏擊者死靈術",
+        "name": "Lurker Necromancy",
         "rewards": [
-            "獲得「永生護身符」設計圖（道具 66）",
+            "獲得「Amulet of Eternal Life」設計圖（道具 66）",
             "將所有指示物換成拾取卡"
         ]
     },
     "fh-119": {
-        "name": "閃耀塵埃",
+        "name": "Radiant Dust",
         "rewards": [
-            "花費剩餘的 7 塵埃，獲得「操控權杖」（道具 203）",
+            "花費剩餘的 7 塵埃，獲得「Scepter of Control」（道具 203）",
             "花費剩餘的 1 塵埃，獲得任意 1 種材料資源",
             "花費剩餘的 2 塵埃，獲得任意 1 種草藥資源"
         ]
     },
     "fh-120": {
-        "name": "受影響之下",
+        "name": "Under the Influence",
         "rewards": [
             "獲得 1 士氣",
             "全隊獲得 2 {LUMBER}",
@@ -2153,7 +2153,7 @@ export default {
         ]
     },
     "fh-121": {
-        "name": "黑暗回憶",
+        "name": "Black Memories",
         "rewards": [
             [
                 "於 六 週後將 184.3 加入日曆"
@@ -2167,7 +2167,7 @@ export default {
         ]
     },
     "fh-122": {
-        "name": "永恆的渴望",
+        "name": "The Eternal Crave",
         "rewards": [
             [
                 "每人獲得 10 金幣"
@@ -2186,25 +2186,25 @@ export default {
         ]
     },
     "fh-124": {
-        "name": "日益嚴重的問題",
+        "name": "A Growing Problem",
         "rewards": [
             "每人獲得 15 經驗值"
         ]
     },
     "fh-125": {
-        "name": "最漫長的一秒",
+        "name": "The Longest Second",
         "rewards": [
-            "獲得「時間護身符」（道具 194）"
+            "獲得「Temporal Amulet」（道具 194）"
         ]
     },
     "fh-126": {
-        "name": "獅子約瑟夫",
+        "name": "Joseph the Lion",
         "rewards": [
             "每人獲得 10 金幣"
         ]
     },
     "fh-127": {
-        "name": "廢棄貨輪",
+        "name": "Derelict Freighter",
         "rewards": [
             [
                 "全隊獲得 10 金幣"
@@ -2227,7 +2227,7 @@ export default {
         ]
     },
     "fh-128": {
-        "name": "醉漢的傳奇故事",
+        "name": "A Tall Drunken Tale",
         "rewards": [
             [
                 "獲得 1 士氣",
@@ -2239,19 +2239,19 @@ export default {
             ],
             [
                 "獲得 3 士氣",
-                "獲得「迷亂馬克杯」（道具 215）",
+                "獲得「Befuddling Mug」（道具 215）",
                 "於 三 週後將 100.3 加入日曆"
             ]
         ]
     },
     "fh-129": {
-        "name": "如何設下埋伏",
+        "name": "How to Lay an Ambush",
         "rewards": [
             "每人獲得 1 ✔"
         ]
     },
     "fh-130": {
-        "name": "然後，是一條溪流",
+        "name": "And Then, a Stream",
         "rewards": [
             [
                 "失去 3 士氣",
@@ -2264,14 +2264,14 @@ export default {
         ]
     },
     "fh-131": {
-        "name": "跳舞的冰山",
+        "name": "The Dancing Iceberg",
         "rewards": [
             "每人獲得 10 經驗值",
-            "獲得「迷惑貝殼」（道具 237）"
+            "獲得「Mesmerizing Seashell」（道具 237）"
         ]
     },
     "fh-132": {
-        "name": "貓族力量神廟",
+        "name": "Temple of Feline Power",
         "rewards": [
             "獲得 1 靈感"
         ]
@@ -2279,33 +2279,33 @@ export default {
     "fh-133": {
         "name": "閃電",
         "rewards": [
-            "獲得「破裂神像」（道具 238）"
+            "獲得「Cracked Idol」（道具 238）"
         ]
     },
     "fh-134": {
-        "name": "知識之塔",
+        "name": "Tower of Knowledge",
         "rewards": [
-            "獲得「衝突典籍」（道具 219）"
+            "獲得「Tome of Conflict」（道具 219）"
         ]
     },
     "fh-135": {
-        "name": "貝拉拉的堡壘",
+        "name": "Belara's Keep",
         "rewards": [
             "獲得 2 士氣",
             "獲得 2 繁榮度",
             "獲得 1 靈感",
-            "獲得「貝拉拉的羽毛筆」（道具 220）"
+            "獲得「Belaras Quill」（道具 220）"
         ]
     },
     "fh-136": {
-        "name": "廢棄藏身處",
+        "name": "Abandoned Hideout",
         "rewards": [
             "每人獲得 20 金幣",
             "獲得「古幣」（道具 245）"
         ]
     },
     "fh-137": {
-        "name": "海盜女王的戰利品",
+        "name": "Pirate Queen's Haul",
         "rewards": [
             "獲得 2 繁榮度",
             "獲得 3 士氣",
@@ -2314,87 +2314,87 @@ export default {
         ]
     },
     "fh-201": {
-        "name": "自然奇蹟",
+        "name": "Wonder of Nature",
         "rewards": [
-            "「流浪者之棍」（道具 248）"
+            "「Wanderer's Club」（道具 248）"
         ]
     },
     "fh-202": {
-        "name": "與時間賽跑",
+        "name": "Race Against the Clock",
         "rewards": [
-            "「重新校準扳機」（道具 249）"
+            "「Recalibration Trigger」（道具 249）"
         ]
     },
     "fh-203": {
-        "name": "偵察伏擊",
+        "name": "Scouting Ambush",
         "rewards": [
-            "「正義之矛」（道具 250）"
+            "「Spear of Justice」（道具 250）"
         ]
     },
     "fh-204": {
-        "name": "夜深人靜",
+        "name": "The Dead of Night",
         "rewards": [
-            "「靈魂之罈」（道具 251）"
+            "「Soul Urn」（道具 251）"
         ]
     },
     "fh-205": {
-        "name": "泥土中的骸骨",
+        "name": "Bones in the Dirt",
         "rewards": [
-            "「黑土法典」（道具 252）"
+            "「Black Earth Codex」（道具 252）"
         ]
     },
     "fh-206": {
-        "name": "分而治之",
+        "name": "Divide and Conquer",
         "rewards": [
-            "「雙面面具」（道具 253）"
+            "「Mask of Duality」（道具 253）"
         ]
     },
     "fh-207": {
-        "name": "先祖之路",
+        "name": "Path of Ancestry",
         "rewards": [
-            "「先祖之刃」（道具 254）"
+            "「Ancestral Blade」（道具 254）"
         ]
     },
     "fh-208": {
-        "name": "崩塌的下降通道",
+        "name": "Crumbling Descent",
         "rewards": [
             "「山之心」（道具 255）"
         ]
     },
     "fh-209": {
-        "name": "調整共振",
+        "name": "Tuning the Resonance",
         "rewards": [
-            "「共鳴碎片」（道具 256）"
+            "「Sonorous Shard」（道具 256）"
         ]
     },
     "fh-210": {
-        "name": "華麗的陷阱",
+        "name": "A Magnificent Trap",
         "rewards": [
-            "「狡詐偽裝」（道具 257）"
+            "「Sly Camouflage」（道具 257）"
         ]
     },
     "fh-211": {
-        "name": "苦難的收藏",
+        "name": "A Collection of Suffering",
         "rewards": [
-            "「痛苦顱骨」（道具 258）"
+            "「Skull of Agony」（道具 258）"
         ]
     },
     "fh-212": {
-        "name": "以雪制雪",
+        "name": "Fighting Snow with Snow",
         "rewards": [
-            "「風暴雕刻」（道具 259）"
+            "「Storm Carving」（道具 259）"
         ]
     },
     "fh-213": {
-        "name": "冰層之下",
+        "name": "Under the Ice",
         "rewards": [
-            "「冰凍寶珠」（道具 260）"
+            "「Freezing Orb」（道具 260）"
         ]
     },
     "fh-214": {
-        "name": "重新充能",
+        "name": "Recharge",
         "rewards": [
-            "「充能模組」（道具 261）"
+            "「Energized Module」（道具 261）"
         ]
     },
     "fh-215": {
@@ -2410,9 +2410,9 @@ export default {
         ]
     },
     "fh-217": {
-        "name": "撞擊海浪",
+        "name": "Crash Against the Waves",
         "rewards": [
-            "「螺旋勳章」（道具 264）"
+            "「Spiraled Medallion」（道具 264）"
         ]
     },
     "cs-1": {
@@ -2442,7 +2442,7 @@ export default {
         "rewards": [
             "+2 聲望",
             "+1 繁榮度",
-            "「暈眩火藥」（道具 gh-21）"
+            "「Stun Powder」（道具 gh-21）"
         ]
     },
     "cs-7": {
@@ -2467,8 +2467,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "「次級治療藥水」（道具 gh-12）",
-            "「次級魔力藥水」（道具 gh-20）"
+            "「Minor Healing Potion」（道具 gh-12）",
+            "「Minor Mana Potion」（道具 gh-20）"
         ]
     },
     "cs-11": {
@@ -2481,7 +2481,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 繁榮度",
-            "每名角色獲得以下其中一項：「強效耐力藥水」（道具 gh-34）、「強效威力藥水」（道具 gh-41）、「強效魔力藥水」（道具 gh-48）\n若商店中沒有任何這些道具，則改為獲得 20 金幣"
+            "每名角色獲得以下其中一項：「Major Stamina Potion」（道具 gh-34）、「Major Power Potion」（道具 gh-41）、「Major Mana Potion」（道具 gh-48）\n若商店中沒有任何這些道具，則改為獲得 20 金幣"
         ]
     },
     "cs-14": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "「強效魔力藥水」（道具 gh-48）"
+            "「Major Mana Potion」（道具 gh-48）"
         ]
     },
     "cs-20": {
@@ -2533,7 +2533,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "「熔岩涉靴」（道具 gh-99）"
+            "「Magma Waders」（道具 gh-99）"
         ]
     },
     "cs-22": {
@@ -2931,11 +2931,11 @@ export default {
         "rewards": [
             [
                 "全隊 40 金幣",
-                "「嵌釘皮甲」設計圖（道具 gh-30）或「衝刺靴」設計圖（道具 gh-36）"
+                "「Studded Leather」設計圖（道具 gh-30）或「衝刺靴」設計圖（道具 gh-36）"
             ],
             [
                 "每人 2 ✓",
-                "「幸運之眼」設計圖（道具 gh-63）"
+                "「Lucky Eye」設計圖（道具 gh-63）"
             ]
         ]
     },
@@ -3466,7 +3466,7 @@ export default {
         "rewards": [
             "每人 15 金幣",
             "每人 10 經驗值",
-            "獲得「螺旋戒指」（道具 136）"
+            "獲得「Helix Ring」（道具 136）"
         ]
     },
     "gh2-68": {
@@ -3512,7 +3512,7 @@ export default {
         "name": "凜風高地",
         "rewards": [
             "+1 繁榮度",
-            "獲得「強效威力藥水」（道具 53）"
+            "獲得「Major Power Potion」（道具 53）"
         ]
     },
     "gh2-75": {
@@ -3548,7 +3548,7 @@ export default {
         "rewards": [
             "每人 100 金幣",
             "+2 繁榮度",
-            "獲得「背叛者之心」（道具 133）",
+            "獲得「Heart of the Betrayer」（道具 133）",
             "這筆金幣必須立即用於附魔"
         ]
     },
@@ -3596,7 +3596,7 @@ export default {
     "gh2-87": {
         "name": "硫磺礦井",
         "rewards": [
-            "獲得「遠古鑽頭」（道具 109）"
+            "獲得「Ancient Drill」（道具 109）"
         ]
     },
     "gh2-88": {
@@ -3608,7 +3608,7 @@ export default {
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "獲得 2 個「強效治療藥水」（道具 37）"
+            "獲得 2 個「Major Healing Potion」（道具 37）"
         ]
     },
     "gh2-90": {
@@ -3660,7 +3660,7 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "每人 10 經驗值",
-            "獲得「憎恨顱骨」（道具 111）"
+            "獲得「Skull of Hatred」（道具 111）"
         ]
     },
     "gh2-99": {
@@ -3712,7 +3712,7 @@ export default {
     "gh2-202": {
         "name": "不幸的闖入",
         "rewards": [
-            "獲得「聚焦射線」（道具 154）"
+            "獲得「Focusing Ray」（道具 154）"
         ]
     },
     "gh2-203": {
@@ -3724,19 +3724,19 @@ export default {
     "gh2-204": {
         "name": "Material Concerns",
         "rewards": [
-            "獲得「靜默細劍」（道具 156）"
+            "獲得「Silent Stiletto」（道具 156）"
         ]
     },
     "gh2-205": {
         "name": "岩石防禦",
         "rewards": [
-            "獲得「岩石護符」（道具 157）"
+            "獲得「Stone Charm」（道具 157）"
         ]
     },
     "gh2-206": {
         "name": "Vermling Liberation",
         "rewards": [
-            "獲得「心靈之刃」（道具 158）"
+            "獲得「Psychic Knife」（道具 158）"
         ]
     },
     "gh2-207": {
@@ -3748,13 +3748,13 @@ export default {
     "gh2-208": {
         "name": "倉儲費用",
         "rewards": [
-            "獲得「工具腰帶」（道具 160）"
+            "獲得「Utility Belt」（道具 160）"
         ]
     },
     "gh2-209": {
         "name": "野獸維度",
         "rewards": [
-            "獲得「相位神像」（道具 161）"
+            "獲得「Phasing Idol」（道具 161）"
         ]
     },
     "gh2-210": {
@@ -3766,31 +3766,31 @@ export default {
     "gh2-211": {
         "name": "瘟疫地穴",
         "rewards": [
-            "獲得「瘟疫吊墜」（道具 163）"
+            "獲得「Pendant of the Plague」（道具 163）"
         ]
     },
     "gh2-212": {
         "name": "非自然的侮辱",
         "rewards": [
-            "獲得「死亡面具」（道具 164）"
+            "獲得「Mask of Death」（道具 164）"
         ]
     },
     "gh2-213": {
         "name": "吟遊詩人之戰",
         "rewards": [
-            "獲得「大師魯特琴」（道具 165）"
+            "獲得「Master's Lute」（道具 165）"
         ]
     },
     "gh2-214": {
         "name": "腐化狩獵",
         "rewards": [
-            "獲得「獵人斗篷」（道具 166）"
+            "獲得「Cloak of the Hunter」（道具 166）"
         ]
     },
     "gh2-215": {
         "name": "戰後餘波",
         "rewards": [
-            "獲得「醫師外袍」（道具 167）"
+            "獲得「Doctor's Coat」（道具 167）"
         ]
     },
     "gh2-216": {
@@ -3802,7 +3802,7 @@ export default {
     "gh2-217": {
         "name": "籠中熊",
         "rewards": [
-            "獲得「指揮法杖」（道具 169）"
+            "獲得「Staff of Command」（道具 169）"
         ]
     },
     "gh2-218": {

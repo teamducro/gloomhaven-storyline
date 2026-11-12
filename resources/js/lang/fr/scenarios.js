@@ -379,21 +379,21 @@ export default {
         ]
     },
     "gh-SoX1": {
-        "name": "Crypte des Nobles",
+        "name": "Nobles’ Crypt",
         "rewards": [
             "+1 réputation",
             "Ajoutez l'évènement de ville SoX2 au paquet"
         ]
     },
     "gh-SoX2": {
-        "name": "Crypte Inondée",
+        "name": "Flooded Crypt",
         "rewards": [
             "Ajoutez l'évènement de ville SoX3 au paquet",
             "Choisissez un seul des objets suivants : « Lame Glaciale » (Objet 077), « Baguette de Glace » (Objet 083) ou « Crête des Vagues » (Objet 111)"
         ]
     },
     "gh-SoX3": {
-        "name": "Crypte des Anciens",
+        "name": "Crypt of the Ancients",
         "rewards": [
             "50 pièces d'or collectives",
             "Ajoutez l'évènement de ville SoX3 au paquet"
@@ -1011,7 +1011,7 @@ export default {
         ]
     },
     "fc-117": {
-        "name": "La Tour vers les Étoiles",
+        "name": "Tower to the Stars",
         "rewards": [
             "15 pièces d'or chacun",
             "1 ✓ chacun",
@@ -1019,7 +1019,7 @@ export default {
         ]
     },
     "fc-116": {
-        "name": "Prévision de l'Inévitable",
+        "name": "Forecast of the Inevitable",
         "rewards": [
             "« Coupelle de la Prophétie » (Objet 164)"
         ]
@@ -1212,7 +1212,7 @@ export default {
         ]
     },
     "fh-4": {
-        "name": "Cœur de Glace",
+        "name": "Heart of Ice",
         "rewards": [
             [
                 "Débloquez la boîte de classe {FF}",
@@ -1282,7 +1282,7 @@ export default {
     "fh-13": {
         "name": "Le Fjord Gelé",
         "rewards": [
-            "Gagnez « Corbeau Mort » (Objet 233)"
+            "Gagnez « Dead Raven » (Objet 233)"
         ]
     },
     "fh-14": {
@@ -1418,14 +1418,14 @@ export default {
     "fh-32": {
         "name": "Le Perchoir des Corbeaux",
         "rewards": [
-            "Gagnez le plan de « Cape à Plumes » (Objet 69)"
+            "Gagnez le plan de « Feathered Cloak » (Objet 69)"
         ]
     },
     "fh-33": {
         "name": "La Forêt du Dégel",
         "rewards": [
             "Gagnez 5 XP chacun pour chaque rune de radiesthésie non révélée",
-            "Gagnez « Source d'Énergie de Braise » (Objet 244)",
+            "Gagnez « Ember Energy Source » (Objet 244)",
             "Ajoutez 135.1 au calendrier dans trois semaines"
         ]
     },
@@ -1445,7 +1445,7 @@ export default {
         "rewards": [
             "Gagnez 3 {LUMBER} collectifs",
             "Gagnez 3 {METAL} collectifs",
-            "Gagnez le plan de « Lentilles Convergentes » (Objet 67)"
+            "Gagnez le plan de « Converging Lenses » (Objet 67)"
         ]
     },
     "fh-37": {
@@ -1453,7 +1453,7 @@ export default {
         "rewards": [
             "Gagnez 3 {LUMBER} collectifs",
             "Gagnez 3 {METAL} collectifs",
-            "Gagnez le plan de « Lentilles Convergentes » (Objet 67)"
+            "Gagnez le plan de « Converging Lenses » (Objet 67)"
         ]
     },
     "fh-38": {
@@ -1504,7 +1504,7 @@ export default {
         "name": "Le Centre Névralgique",
         "rewards": [
             "Gagnez 5 pièces d'or chacun",
-            "Gagnez le plan de « Baguette Énergisante » (Objet 73)"
+            "Gagnez le plan de « Energizing Baton » (Objet 73)"
         ]
     },
     "fh-45": {
@@ -1554,7 +1554,7 @@ export default {
         "name": "Le Palais de l'Orphelin",
         "rewards": [
             "Gagnez 10 XP chacun",
-            "Gagnez le plan de « Grenade à Choc » (Objet 74)"
+            "Gagnez le plan de « Shock Grenades » (Objet 74)"
         ]
     },
     "fh-52": {
@@ -1611,7 +1611,7 @@ export default {
         "name": "Le Coeur de l'Orphelin",
         "rewards": [
             "Gagnez 1 de moral",
-            "Gagnez « Carte à Puce » (Objet 246)",
+            "Gagnez « Key Card » (Objet 246)",
             "Gagnez 3 {LUMBER} collectifs",
             "Gagnez 3 {METAL} collectifs",
             "Gagnez 3 {HIDE} collectifs",
@@ -1626,7 +1626,7 @@ export default {
         "rewards": [
             "Gagnez 2 de moral",
             "Gagnez 2 prospérité",
-            "Gagnez « Carte à Puce » (Objet 246)",
+            "Gagnez « Key Card » (Objet 246)",
             "Débloquez la boîte de classe {HV}",
             "Retirez tous les évènements {UNFETTERED} de tous les paquets d'évènements d'avant-poste",
             "Ajoutez l'évènement SO-49 au paquet d'avant-poste d'été et l'évènement WO-63 au paquet d'avant-poste d'hiver",
@@ -1639,7 +1639,7 @@ export default {
             "Gagnez 2 de moral",
             "Gagnez 1 prospérité",
             "Gagnez 30 XP chacun",
-            "Gagnez « Armure d'Empathie » (Objet 224)",
+            "Gagnez « Armor of Empathy » (Objet 224)",
             "Débloquez celle des boîtes de classe qui est encore verrouillée : {CR} ou {DT}",
             "Retirez tous les évènements {LURKERS} de tous les paquets d'évènements d'avant-poste",
             "Ajoutez l'évènement SO-48 au paquet d'avant-poste d'été et l'évènement B-17 au paquet du bateau",
@@ -1684,7 +1684,7 @@ export default {
     "fh-66": {
         "name": "Les Noyaux Élémentaires",
         "rewards": [
-            "Gagnez « Pierre Élémentaire » (Objet 212)",
+            "Gagnez « Elemental Stone » (Objet 212)",
             "Ajoutez 29.3 au calendrier dans six semaines"
         ]
     },
@@ -1756,7 +1756,7 @@ export default {
         "rewards": [
             [
                 "Quête personnelle « Threat from the Deep » accomplie",
-                "Gagnez « Lame d'Onde » (Objet 201)",
+                "Gagnez « Wave Blade » (Objet 201)",
                 "Ajoutez l'évènement B-18 au paquet du bateau"
             ],
             []
@@ -1766,7 +1766,7 @@ export default {
         "name": "L'Ascension du Roi des Poissons",
         "rewards": [
             "Quête personnelle « Threat from the Deep » accomplie",
-            "Gagnez « Lame d'Onde » (Objet 201)",
+            "Gagnez « Wave Blade » (Objet 201)",
             "Ajoutez l'évènement B-19 au paquet du bateau"
         ]
     },
@@ -1796,7 +1796,7 @@ export default {
         "name": "Le Laboratoire en Ruine",
         "rewards": [
             "Gagnez 1 prospérité",
-            "Gagnez le plan de « Robe Esther » (Objet 70)"
+            "Gagnez le plan de « Aesther Robe » (Objet 70)"
         ]
     },
     "fh-82": {
@@ -1809,13 +1809,13 @@ export default {
     "fh-83": {
         "name": "Montée des Eaux",
         "rewards": [
-            "Gagnez « Arête de Cochon Piranha Géant » (Objet 202)"
+            "Gagnez « Giant Piranha Pig Spine » (Objet 202)"
         ]
     },
     "fh-84": {
         "name": "Ici Vivent les Mucus",
         "rewards": [
-            "Gagnez « Fiole de Mucus » (Objet 234)"
+            "Gagnez « ooze vial » (Objet 234)"
         ]
     },
     "fh-85": {
@@ -1886,13 +1886,13 @@ export default {
         ]
     },
     "fh-93": {
-        "name": "Bataille au Cœur de l'Hiver",
+        "name": "Midwinter Brawl",
         "rewards": [
             [
-                "Gagnez « Petit Rat » (Objet 235)"
+                "Gagnez « Small Rat » (Objet 235)"
             ],
             [
-                "Gagnez « Volaille Rôtie » (Objet 79)"
+                "Gagnez « Roasted Fowl » (Objet 79)"
             ]
         ]
     },
@@ -1979,7 +1979,7 @@ export default {
     "fh-106": {
         "name": "Dans les Forges du Temps",
         "rewards": [
-            "Gagnez « Clé des Saisons » (Objet 213)"
+            "Gagnez « Key of Seasons » (Objet 213)"
         ]
     },
     "fh-107": {
@@ -1999,7 +1999,7 @@ export default {
             ],
             [
                 "Gagnez 5 ressources de matériau collectives au choix",
-                "Gagnez « Coupe de Ventillion » (Objet 214)"
+                "Gagnez « Cup of Ventillion » (Objet 214)"
             ]
         ]
     },
@@ -2025,7 +2025,7 @@ export default {
     "fh-111": {
         "name": "La Caverne au Miroir",
         "rewards": [
-            "Gagnez « Miroir Brisé » (Objet 236)"
+            "Gagnez « Cracked Mirror » (Objet 236)"
         ]
     },
     "fh-112": {
@@ -2132,14 +2132,14 @@ export default {
     "fh-118": {
         "name": "Les Fouineurs Nécromants",
         "rewards": [
-            "Gagnez le plan de « Amulette de Vie Éternelle » (Objet 66)",
+            "Gagnez le plan de « Amulet of Eternal Life » (Objet 66)",
             "Échangez tous les jetons contre des cartes butin"
         ]
     },
     "fh-119": {
         "name": "La Poudre d'Or",
         "rewards": [
-            "Dépensez 7 poussières restantes pour gagner « Sceptre de Contrôle » (Objet 203)",
+            "Dépensez 7 poussières restantes pour gagner « Scepter of Control » (Objet 203)",
             "Dépensez 1 poussière restante pour gagner 1 ressource de matériau au choix",
             "Dépensez 2 poussières restantes pour gagner 1 ressource de plante au choix"
         ]
@@ -2194,7 +2194,7 @@ export default {
     "fh-125": {
         "name": "Une Interminable Seconde",
         "rewards": [
-            "Gagnez « Amulette Temporelle » (Objet 194)"
+            "Gagnez « Temporal Amulet » (Objet 194)"
         ]
     },
     "fh-126": {
@@ -2216,12 +2216,12 @@ export default {
             [
                 "Gagnez 10 pièces d'or collectives",
                 "Gagnez 2 {LUMBER} collectifs",
-                "Gagnez « Tricorne » 195"
+                "Gagnez « Tri-Corner Hat » 195"
             ],
             [
                 "Gagnez 10 pièces d'or collectives",
                 "Gagnez 2 {LUMBER} collectifs",
-                "Gagnez « Tricorne » 195",
+                "Gagnez « Tri-Corner Hat » 195",
                 "Gagnez 1 prospérité"
             ]
         ]
@@ -2239,7 +2239,7 @@ export default {
             ],
             [
                 "Gagnez 3 de moral",
-                "Gagnez « Chope Déroutante » (Objet 215)",
+                "Gagnez « Befuddling Mug » (Objet 215)",
                 "Ajoutez 100.3 au calendrier dans trois semaines"
             ]
         ]
@@ -2267,7 +2267,7 @@ export default {
         "name": "L'Iceberg Dansant",
         "rewards": [
             "Gagnez 10 XP chacun",
-            "Gagnez « Coquillage Hypnotique » (Objet 237)"
+            "Gagnez « Mesmerizing Seashell » (Objet 237)"
         ]
     },
     "fh-132": {
@@ -2279,13 +2279,13 @@ export default {
     "fh-133": {
         "name": "L'Éclair",
         "rewards": [
-            "Gagnez « Idole Fissurée » (Objet 238)"
+            "Gagnez « Cracked Idol » (Objet 238)"
         ]
     },
     "fh-134": {
         "name": "La Tour du Savoir",
         "rewards": [
-            "Gagnez « Grimoire de Bataille » (Objet 219)"
+            "Gagnez « Tome of Conflict » (Objet 219)"
         ]
     },
     "fh-135": {
@@ -2301,7 +2301,7 @@ export default {
         "name": "La Cachette Abandonnée",
         "rewards": [
             "Gagnez 20 pièces d'or chacun",
-            "Gagnez « Pièce Antique » (Objet 245)"
+            "Gagnez « Ancient Coin » (Objet 245)"
         ]
     },
     "fh-137": {
@@ -2314,105 +2314,105 @@ export default {
         ]
     },
     "fh-201": {
-        "name": "Merveille de la Nature",
+        "name": "Wonder of Nature",
         "rewards": [
-            "« Gourdin du Vagabond » (Objet 248)"
+            "« Wanderer's Club » (Objet 248)"
         ]
     },
     "fh-202": {
-        "name": "Course contre la Montre",
+        "name": "Race Against the Clock",
         "rewards": [
-            "« Détente de Recalibrage » (Objet 249)"
+            "« Recalibration Trigger » (Objet 249)"
         ]
     },
     "fh-203": {
-        "name": "Embuscade d'Éclaireurs",
+        "name": "Scouting Ambush",
         "rewards": [
-            "« Lance de Justice » (Objet 250)"
+            "« Spear of Justice » (Objet 250)"
         ]
     },
     "fh-204": {
-        "name": "La Nuit des Morts",
+        "name": "The Dead of Night",
         "rewards": [
-            "« Urne d'Âmes » (Objet 251)"
+            "« Soul Urn » (Objet 251)"
         ]
     },
     "fh-205": {
-        "name": "Des Os dans la Terre",
+        "name": "Bones in the Dirt",
         "rewards": [
-            "« Codex de Terre Noire » (Objet 252)"
+            "« Black Earth Codex » (Objet 252)"
         ]
     },
     "fh-206": {
-        "name": "Diviser pour Mieux Régner",
+        "name": "Divide and Conquer",
         "rewards": [
-            "« Masque de Dualité » (Objet 253)"
+            "« Mask of Duality » (Objet 253)"
         ]
     },
     "fh-207": {
-        "name": "Le Chemin des Ancêtres",
+        "name": "Path of Ancestry",
         "rewards": [
-            "« Lame Ancestrale » (Objet 254)"
+            "« Ancestral Blade » (Objet 254)"
         ]
     },
     "fh-208": {
-        "name": "Descente en Ruine",
+        "name": "Crumbling Descent",
         "rewards": [
-            "« Cœur de la Montagne » (Objet 255)"
+            "« Mountain's Heart » (Objet 255)"
         ]
     },
     "fh-209": {
-        "name": "Accorder la Résonance",
+        "name": "Tuning the Resonance",
         "rewards": [
-            "« Éclat Sonore » (Objet 256)"
+            "« Sonorous Shard » (Objet 256)"
         ]
     },
     "fh-210": {
-        "name": "Un Piège Magnifique",
+        "name": "A Magnificent Trap",
         "rewards": [
-            "« Camouflage Rusé » (Objet 257)"
+            "« Sly Camouflage » (Objet 257)"
         ]
     },
     "fh-211": {
-        "name": "Une Collection de Souffrances",
+        "name": "A Collection of Suffering",
         "rewards": [
-            "« Crâne d'Agonie » (Objet 258)"
+            "« Skull of Agony » (Objet 258)"
         ]
     },
     "fh-212": {
-        "name": "Combattre la Neige par la Neige",
+        "name": "Fighting Snow with Snow",
         "rewards": [
-            "« Sculpture de Tempête » (Objet 259)"
+            "« Storm Carving » (Objet 259)"
         ]
     },
     "fh-213": {
-        "name": "Sous la Glace",
+        "name": "Under the Ice",
         "rewards": [
-            "« Orbe Glacial » (Objet 260)"
+            "« Freezing Orb » (Objet 260)"
         ]
     },
     "fh-214": {
         "name": "Recharge",
         "rewards": [
-            "« Module Énergisé » (Objet 261)"
+            "« Energized Module » (Objet 261)"
         ]
     },
     "fh-215": {
-        "name": "La Chaufferie",
+        "name": "Boiler Room",
         "rewards": [
-            "« Bottes d'Échappement » (Objet 262)"
+            "« Exhaust Boots » (Objet 262)"
         ]
     },
     "fh-216": {
-        "name": "Sale Besogne",
+        "name": "Wet Work",
         "rewards": [
             "« Warlord's Skull » (Objet 263)"
         ]
     },
     "fh-217": {
-        "name": "Contre les Vagues",
+        "name": "Crash Against the Waves",
         "rewards": [
-            "« Médaillon en Spirale » (Objet 264)"
+            "« Spiraled Medallion » (Objet 264)"
         ]
     },
     "cs-1": {
@@ -2657,7 +2657,7 @@ export default {
         "rewards": [
             "10 XP chacun",
             "Retirez les 5 premières cartes du paquet d'évènements de ville et mélangez-y l'évènement de ville 57. Mettez de côté les cartes d'évènement de ville restantes jusqu'à ce que l'évènement de ville 57 soit résolu. Toute carte supplémentaire qui devrait être ajoutée au paquet d'évènements de ville pendant ce temps est ajoutée après la résolution de l'évènement de ville 57, puis les cartes restantes sont recombinées avec le paquet d'origine.",
-            "La quête «An Adder Divides» n'est pas encore accomplie"
+            "La quête « An Adder Divides » n'est pas encore accomplie"
         ]
     },
     "cs-40": {
@@ -2786,7 +2786,7 @@ export default {
     "cs-58": {
         "name": "Penitentiary Lockdown",
         "rewards": [
-            "Obtenez l'un des suivants comme objet et l'autre comme plan d'objet : «Claw Trap» (Objet 34), «Clamp Trap» (Objet 56)"
+            "Obtenez l'un des suivants comme objet et l'autre comme plan d'objet : « Claw Trap » (Objet 34), « Clamp Trap » (Objet 56)"
         ]
     },
     "cs-59": {
@@ -2841,31 +2841,31 @@ export default {
         "name": "The Riches of the Steelsilk",
         "requirements": "Quête Personnelle « At All Costs »",
         "rewards": [
-            "«Rockspine Bulwark» (Objet AA01)"
+            "« Rockspine Bulwark » (Objet AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
         "requirements": "Quête Personnelle « The Weight of Failure »",
         "rewards": [
-            "«Ghostshimmer Honey» (Objet AA02)"
+            "« Ghostshimmer Honey » (Objet AA02)"
         ]
     },
     "cs-AA3": {
         "name": "Hive Guardian",
         "rewards": [
-            "«Steelsilk Spinneret» (Objet AA03)"
+            "« Steelsilk Spinneret » (Objet AA03)"
         ]
     },
     "cs-QA1": {
         "name": "Capstone Test",
-        "requirements": "Quête Personnelle « Ingenious Inventor » et objet «Power Modulator» équipé",
+        "requirements": "Quête Personnelle « Ingenious Inventor » et objet « Power Modulator » équipé",
         "rewards": [
             [
                 "Quête personnelle « Ingenious Inventor » accomplie",
                 "Ouvrez l'enveloppe {QA}",
-                "Plan de «Steam Piston Hammer» (Objet QA02)",
-                "Plan de «Spider Climb Gloves» (Objet QA03)"
+                "Plan de « Steam Piston Hammer » (Objet QA02)",
+                "Plan de « Spider Climb Gloves » (Objet QA03)"
             ],
             [
                 "Quête personnelle « Ingenious Inventor » accomplie",
@@ -2877,8 +2877,8 @@ export default {
             [
                 "Quête personnelle « Ingenious Inventor » accomplie",
                 "Ouvrez l'enveloppe {QA}",
-                "«Steam Piston Hammer» (Objet QA02)",
-                "«Spider Climb Gloves» (Objet QA03)",
+                "« Steam Piston Hammer » (Objet QA02)",
+                "« Spider Climb Gloves » (Objet QA03)",
                 "Ajoutez des copies à l'approvisionnement disponible de la ville"
             ]
         ]
@@ -2922,8 +2922,8 @@ export default {
         "rewards": [
             "Quête personnelle « Apex Predator » accomplie",
             "Ouvrez l'enveloppe {RM}",
-            "Plan de «Terrorscale Saber» (Objet RM03)",
-            "Plan de «Terrorscale Crossblades» (Objet RM04)"
+            "Plan de « Terrorscale Saber » (Objet RM03)",
+            "Plan de « Terrorscale Crossblades » (Objet RM04)"
         ]
     },
     "cs-RM5": {
@@ -2942,7 +2942,7 @@ export default {
     "cs-RM6": {
         "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "Plan de «Rite of Ruin» (Objet RM05)",
+            "Plan de « Rite of Ruin » (Objet RM05)",
             "Si au moins trois Vermlings étaient en vie à la fin du huitième round : 5 pièces d'or",
             "Si au moins cinq Vermlings étaient en vie à la fin du huitième round : ✓"
         ]
@@ -2952,32 +2952,32 @@ export default {
         "requirements": "Aucun Ruinmaw dans la compagnie",
         "rewards": [
             "10 XP chacun",
-            "Plan de «Savage Cuirass» (Objet RM06)"
+            "Plan de « Savage Cuirass » (Objet RM06)"
         ]
     },
     "mp-AN1": {
         "name": "A Harrowing Deal",
         "rewards": [
-            "«Ribbon of Friendship» (Objet AN)"
+            "« Ribbon of Friendship » (Objet AN)"
         ]
     },
     "mp-SA1": {
         "name": "Horns in the Night",
         "rewards": [
-            "«Crest of Frosthaven» (Objet SA)"
+            "« Crest of Frosthaven » (Objet SA)"
         ]
     },
     "mp-CA1": {
         "name": "Escape from Corruption",
         "rewards": [
-            "«Basin of Prophecy A» (Objet CA A)",
-            "«Basin of Prophecy B» (Objet CA B)"
+            "« Basin of Prophecy A » (Objet CA A)",
+            "« Basin of Prophecy B » (Objet CA B)"
         ]
     },
     "mp-HA1": {
         "name": "Major Annoyance",
         "rewards": [
-            "«No Nonsense Boots» (Objet HA)"
+            "« No Nonsense Boots » (Objet HA)"
         ]
     },
     "gh2-0": {
@@ -3396,7 +3396,7 @@ export default {
     "gh2-57": {
         "name": "Le Sous-sol de la Crypte",
         "rewards": [
-            "Gagnez «Scepter of Xorn» (Objet 147)"
+            "Gagnez « Scepter of Xorn » (Objet 147)"
         ]
     },
     "gh2-58": {
@@ -3404,7 +3404,7 @@ export default {
         "rewards": [
             "10 XP chacun",
             "1 ✔ chacun",
-            "Gagnez «Scepter of Xorn» (Objet 147)",
+            "Gagnez « Scepter of Xorn » (Objet 147)",
             "Ajoutez l'évènement de route R-39 au paquet",
             "Ajoutez l'évènement de ville C-66 au paquet"
         ]
@@ -3518,7 +3518,7 @@ export default {
     "gh2-75": {
         "name": "La Crête de l'Eboulement",
         "rewards": [
-            "Gagnez «Ruby Talisman» (Objet 152)"
+            "Gagnez « Ruby Talisman » (Objet 152)"
         ]
     },
     "gh2-76": {
@@ -3623,7 +3623,7 @@ export default {
         "name": "Chronal Anchor",
         "rewards": [
             "10 XP chacun",
-            "Gagnez «Temporal Matrix» (Objet 144)"
+            "Gagnez « Temporal Matrix » (Objet 144)"
         ]
     },
     "gh2-93": {
@@ -3636,7 +3636,7 @@ export default {
         "name": "A Watery Rescue",
         "rewards": [
             "10 XP chacun",
-            "Gagnez «Otherworldly Scepter» (Objet 139)"
+            "Gagnez « Otherworldly Scepter » (Objet 139)"
         ]
     },
     "gh2-95": {
@@ -3666,7 +3666,7 @@ export default {
     "gh2-99": {
         "name": "Sintering Forge",
         "rewards": [
-            "Gagnez «Dawnblade» (Objet 117)",
+            "Gagnez « Dawnblade » (Objet 117)",
             "Ajoutez l'évènement de route R-33 au paquet"
         ]
     },
@@ -3706,7 +3706,7 @@ export default {
     "gh2-201": {
         "name": "A Night Out",
         "rewards": [
-            "Gagnez «Hooked Shield» (Objet 153)"
+            "Gagnez « Hooked Shield » (Objet 153)"
         ]
     },
     "gh2-202": {
@@ -3718,7 +3718,7 @@ export default {
     "gh2-203": {
         "name": "Corrupted Apothecary",
         "rewards": [
-            "Gagnez «Etheric Elixir» (Objet 155)"
+            "Gagnez « Etheric Elixir » (Objet 155)"
         ]
     },
     "gh2-204": {
@@ -3742,7 +3742,7 @@ export default {
     "gh2-207": {
         "name": "L'Escorte de la Caravane",
         "rewards": [
-            "Gagnez «Insignia of the Divine» (Objet 159)"
+            "Gagnez « Insignia of the Divine » (Objet 159)"
         ]
     },
     "gh2-208": {
@@ -3760,7 +3760,7 @@ export default {
     "gh2-210": {
         "name": "Récolte Nocturne",
         "rewards": [
-            "Gagnez «The Night's Caress» (Objet 162)"
+            "Gagnez « The Night's Caress » (Objet 162)"
         ]
     },
     "gh2-211": {
@@ -3796,7 +3796,7 @@ export default {
     "gh2-216": {
         "name": "Les Secrets Élémentaires",
         "rewards": [
-            "Gagnez «Elemental Vest» (Objet 168)"
+            "Gagnez « Elemental Vest » (Objet 168)"
         ]
     },
     "gh2-217": {
@@ -3808,7 +3808,7 @@ export default {
     "gh2-218": {
         "name": "Les Sables du Temps",
         "rewards": [
-            "Gagnez «Crawling Carapace» (Objet 170)"
+            "Gagnez « Crawling Carapace » (Objet 170)"
         ]
     }
 }

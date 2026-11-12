@@ -6,7 +6,7 @@ export default {
         "name": "获得“塔盾”（道具 032）"
     },
     "gh-3": {
-        "name": "获得“碎片铠甲”（道具 044）"
+        "name": "获得“Splintmail”（道具 044）"
     },
     "gh-4": {
         "name": "获得15金币"
@@ -15,7 +15,7 @@ export default {
         "name": "获得“锁子甲”（道具 023）"
     },
     "gh-6": {
-        "name": "获得“带钩锁链”（道具 039）"
+        "name": "获得“Hooked Chain”（道具 039）"
     },
     "gh-7": {
         "name": "随机支线剧本"
@@ -24,7 +24,7 @@ export default {
         "name": "获得1 ✔"
     },
     "gh-9": {
-        "name": "获得“波峰项链”（道具 111）"
+        "name": "获得“Wave Crest”（道具 111）"
     },
     "gh-10": {
         "name": "获得10经验"
@@ -33,7 +33,7 @@ export default {
         "name": "随机道具设计图"
     },
     "gh-12": {
-        "name": "获得“熔岩行者”（道具 099）"
+        "name": "获得“Magma Waders”（道具 099）"
     },
     "gh-13": {
         "name": "承受5点伤害，并获得{POISON}和{WOUND}"
@@ -42,7 +42,7 @@ export default {
         "name": "获得10经验"
     },
     "gh-15": {
-        "name": "获得“黑暗誓约垂饰”（道具 045）"
+        "name": "获得“Pendant of Dark Pacts”（道具 045）"
     },
     "gh-16": {
         "name": "获得10金币"
@@ -66,7 +66,7 @@ export default {
         "name": "随机道具设计图"
     },
     "gh-23": {
-        "name": "获得“亚龙鳞护甲”（道具 103）"
+        "name": "获得“Drakescale Armor”（道具 103）"
     },
     "gh-24": {
         "name": "承受5点伤害"
@@ -78,13 +78,13 @@ export default {
         "name": "获得20金币"
     },
     "gh-27": {
-        "name": "获得“暮光宝珠”（道具 122）"
+        "name": "获得“Orb of Twilight”（道具 122）"
     },
     "gh-28": {
         "name": "获得15金币"
     },
     "gh-29": {
-        "name": "获得“耐性裹足”（道具 097）"
+        "name": "获得“Endurance Footwraps”（道具 097）"
     },
     "gh-30": {
         "name": "获得1 ✔"
@@ -99,10 +99,10 @@ export default {
         "name": "获得“配重网”（道具 019）"
     },
     "gh-34": {
-        "name": "获得“生命项链”（道具 024）"
+        "name": "获得“Amulet of Life”（道具 024）"
     },
     "gh-35": {
-        "name": "获得“亚龙鳞靴子”（道具 098）"
+        "name": "获得“Drakescale Boots”（道具 098）"
     },
     "gh-36": {
         "name": "“火箭飞靴”设计图（道具 096）"
@@ -111,7 +111,7 @@ export default {
         "name": "获得1 ✔"
     },
     "gh-38": {
-        "name": "“颅骨指环”设计图（道具 123）"
+        "name": "“Ring of Skulls”设计图（道具 123）"
     },
     "gh-39": {
         "name": "承受5点伤害"
@@ -120,7 +120,7 @@ export default {
         "name": "随机道具设计图"
     },
     "gh-41": {
-        "name": "获得“黑暗匕首”（道具 053）"
+        "name": "获得“Black Knife”（道具 053）"
     },
     "gh-42": {
         "name": "随机道具设计图"
@@ -153,25 +153,25 @@ export default {
         "name": "随机支线剧本"
     },
     "gh-52": {
-        "name": "获得“背叛者之心”（道具 131）"
+        "name": "获得“Heart of the Betrayer”（道具 131）"
     },
     "gh-53": {
         "name": "随机道具设计图"
     },
     "gh-54": {
-        "name": "获得“厄运罗盘”（道具 124）"
+        "name": "获得“Doomed Compass”（道具 124）"
     },
     "gh-55": {
         "name": "获得1 ✔"
     },
     "gh-56": {
-        "name": "获得“星辰耳环”（道具 069）"
+        "name": "获得“Star Earring”（道具 069）"
     },
     "gh-57": {
         "name": "获得15金币"
     },
     "gh-58": {
-        "name": "获得“亚龙鳞头盔”（道具 108）"
+        "name": "获得“Drakescale Helm”（道具 108）"
     },
     "gh-59": {
         "name": "随机道具设计图"
@@ -180,10 +180,10 @@ export default {
         "name": "获得“破颅斧”（道具 113）"
     },
     "gh-61": {
-        "name": "获得“万用匕首”（道具 040）"
+        "name": "获得“Versatile Dagger”（道具 040）"
     },
     "gh-62": {
-        "name": "获得“山岭头盔”（道具 110）和“山岭战锤”（道具 115）"
+        "name": "获得“Helm of the Mountain”（道具 110）和“Mountain Hammer”（道具 115）"
     },
     "gh-63": {
         "name": "随机道具设计图"
@@ -192,19 +192,19 @@ export default {
         "name": "获得30金币"
     },
     "gh-65": {
-        "name": "“角饰头盔”设计图（道具 107）"
+        "name": "“Horned Helm”设计图（道具 107）"
     },
     "gh-66": {
-        "name": "获得“烈性炸弹”（道具 033）"
+        "name": "获得“Volatile Bomb”（道具 033）"
     },
     "gh-67": {
         "name": "获得10金币"
     },
     "gh-68": {
-        "name": "获得“双生环戒”（道具 130）"
+        "name": "获得“Helix Ring”（道具 130）"
     },
     "gh-69": {
-        "name": "获得“召唤长袍”（道具 100）"
+        "name": "获得“Robes of Summoning”（道具 100）"
     },
     "gh-70": {
         "name": "随机支线剧本"
@@ -213,7 +213,7 @@ export default {
         "name": "随机支线剧本"
     },
     "gh-72": {
-        "name": "“燃能弯刀”设计图（道具 116）"
+        "name": "“Fueled Falchion”设计图（道具 116）"
     },
     "gh-73": {
         "name": "随机道具设计图"
@@ -228,34 +228,34 @@ export default {
         "name": "承受3点伤害，获得{WOUND}和10金币"
     },
     "fc-77": {
-        "name": "获得“强效治愈药水”（道具 090）"
+        "name": "获得“Major Cure Potion”（道具 090）"
     },
     "fc-78": {
-        "name": "“远古之弓”（道具 157）"
+        "name": "“Ancient Bow”（道具 157）"
     },
     "fc-79": {
-        "name": "获得“猎鹰雕像”（道具 157）"
+        "name": "获得“Falcon Figurine”（道具 157）"
     },
     "fc-80": {
         "name": "获得1 ✓，并将裂隙事件19加入牌库"
     },
     "fc-81": {
-        "name": "获得“急速卷轴”（道具 159）和10金币"
+        "name": "获得“Scroll of Haste”（道具 159）和10金币"
     },
     "fc-82": {
-        "name": "“回春胫甲”（道具 158）"
+        "name": "“Rejuvenation Greaves”（道具 158）"
     },
     "fc-83": {
-        "name": "获得“强效威力药水”（道具 041）"
+        "name": "获得“Major Power Potion”（道具 041）"
     },
     "fc-84": {
-        "name": "获得“恐怖面具”（道具 066）"
+        "name": "获得“Mask of Terror”（道具 066）"
     },
     "fc-85": {
         "name": "承受3点伤害，获得{POISON}和10金币"
     },
     "fc-86": {
-        "name": "解锁占卜师 {DR} 单人剧本“注定之事的预兆”（见主书第25页）"
+        "name": "解锁占卜师 {DR} 单人剧本“Forecast of the Inevitable”（见主书第25页）"
     },
     "fc-87": {
         "name": "承受2点伤害，获得诅咒和15金币"
@@ -264,7 +264,7 @@ export default {
         "name": "获得1 ✓"
     },
     "fc-89": {
-        "name": "获得“二度机会戒指”（道具 070）"
+        "name": "获得“Second Chance Ring”（道具 070）"
     },
     "fc-90": {
         "name": "每人获得10金币，阅读第49页的段落75"
@@ -273,7 +273,7 @@ export default {
         "name": "获得30金币和队伍成就：“投机者”。将城市事件84加入牌库"
     },
     "fc-93": {
-        "name": "“急速卷轴”（道具 159）"
+        "name": "“Scroll of Haste”（道具 159）"
     },
     "fc-94": {
         "name": "获得1 ✓，并将裂隙事件20加入牌库"
@@ -288,7 +288,7 @@ export default {
         "name": "获得10经验"
     },
     "jotl-2": {
-        "name": "“力量戒指”（道具 31）"
+        "name": "“Ring of Strength”（道具 31）"
     },
     "jotl-3": {
         "name": "获得15经验"
@@ -312,10 +312,10 @@ export default {
         "name": "获得5金币"
     },
     "jotl-10": {
-        "name": "“命运罗盘”（道具 27）"
+        "name": "“Fateful Compass”（道具 27）"
     },
     "jotl-11": {
-        "name": "“疾速戒指”（道具 30）"
+        "name": "“Ring of Haste”（道具 30）"
     },
     "jotl-12": {
         "name": "获得5金币"
@@ -330,10 +330,10 @@ export default {
         "name": "获得1 ✔"
     },
     "jotl-16": {
-        "name": "“魔力药水”（道具 14）"
+        "name": "“Mana Potion”（道具 14）"
     },
     "jotl-X": {
-        "name": "“复原戒指”（道具 32）"
+        "name": "“Ring of Restoration”（道具 32）"
     },
     "cs-1": {
         "name": "“飞龙之血”（道具 59）"
@@ -480,7 +480,7 @@ export default {
         "name": "15金币"
     },
     "cs-49": {
-        "name": "“熔岩行者”（道具 gh-99）"
+        "name": "“Magma Waders”（道具 gh-99）"
     },
     "cs-50": {
         "name": "“Bottled Moonlight”（道具 18）"
@@ -495,7 +495,7 @@ export default {
         "name": "获得一张随机道具设计图。"
     },
     "fh-4": {
-        "name": "获得“日暮权杖”（道具 200）。"
+        "name": "获得“Eventide Scepter”（道具 200）。"
     },
     "fh-5": {
         "name": "获得“断螯”（道具 204）。"
@@ -504,7 +504,7 @@ export default {
         "name": "获得“富华鞋”（道具 199）。"
     },
     "fh-7": {
-        "name": "获得“数据驱动器”（道具 227）。"
+        "name": "获得“Data Drive”（道具 227）。"
     },
     "fh-8": {
         "name": "获得三张拾取卡牌。"
@@ -531,7 +531,7 @@ export default {
         "name": "解锁一个随机支线剧本。"
     },
     "fh-16": {
-        "name": "获得“迷雾醒酒瓶”（道具 183）。"
+        "name": "获得“Decanter of Mists”（道具 183）。"
     },
     "fh-17": {
         "name": "获得3木材。"
@@ -561,7 +561,7 @@ export default {
         "name": "获得1尸帽菇和1火焰果。"
     },
     "fh-26": {
-        "name": "获得“闪电短杖”（道具 223）。"
+        "name": "获得“Lightning Rod”（道具 223）。"
     },
     "fh-27": {
         "name": "获得两张拾取卡牌和{POISON}。"
@@ -603,10 +603,10 @@ export default {
         "name": "解锁一个随机支线剧本。"
     },
     "fh-40": {
-        "name": "获得“混乱手炮”设计图（道具 077）"
+        "name": "获得“Chaos Cannon”设计图（道具 077）"
     },
     "fh-41": {
-        "name": "获得“冰角雕刻品”（道具 225）。"
+        "name": "获得“Algox Carving”（道具 225）。"
     },
     "fh-42": {
         "name": "获得“巨型剑”（道具 206）。"
@@ -660,7 +660,7 @@ export default {
         "name": "获得一张随机道具设计图。"
     },
     "fh-59": {
-        "name": "获得“痛苦假偶”设计图（道具 081）"
+        "name": "获得“Pain Simulacrum”设计图（道具 081）"
     },
     "fh-60": {
         "name": "获得三张拾取卡牌。"
@@ -669,7 +669,7 @@ export default {
         "name": "解锁一个随机支线剧本。"
     },
     "fh-62": {
-        "name": "找到这张设计图的另一半时，获得“机械立方体”设计图（道具 082）。"
+        "name": "找到这张设计图的另一半时，获得“Mechanical Cube”设计图（道具 082）。"
     },
     "fh-63": {
         "name": "获得五张拾取卡牌。"
@@ -690,10 +690,10 @@ export default {
         "name": "获得4金属。"
     },
     "fh-69": {
-        "name": "找到这张设计图的另一半时，获得“机械立方体”设计图（道具 082）。"
+        "name": "找到这张设计图的另一半时，获得“Mechanical Cube”设计图（道具 082）。"
     },
     "fh-70": {
-        "name": "获得“律令号角”设计图（道具 076）"
+        "name": "获得“Horn of Command”设计图（道具 076）"
     },
     "fh-71": {
         "name": "获得四张拾取卡牌。"
@@ -726,40 +726,40 @@ export default {
         "name": "获得15经验。"
     },
     "fh-81": {
-        "name": "获得“自由机手臂”（道具 226）。"
+        "name": "获得“Unfettered Arm”（道具 226）。"
     },
     "fh-82": {
-        "name": "获得“橡树法杖”设计图（道具 072）"
+        "name": "获得“Oak Staff”设计图（道具 072）"
     },
     "fh-83": {
         "name": "获得“三角帽”（道具 195）。"
     },
     "fh-84": {
-        "name": "获得“寒冰刺刃”（道具 221）。"
+        "name": "获得“Ice Shiv”（道具 221）。"
     },
     "fh-85": {
         "name": "获得10金币。"
     },
     "gh2-1": {
-        "name": "获得“熔岩行者”（道具 142）"
+        "name": "获得“Magma Waders”（道具 142）"
     },
     "gh2-2": {
         "name": "承受3点伤害，并获得{POISON}"
     },
     "gh2-3": {
-        "name": "获得“星辰耳环”（道具 63）"
+        "name": "获得“Star Earring”（道具 63）"
     },
     "gh2-4": {
-        "name": "获得“相位斗篷”（道具 98）"
+        "name": "获得“Cloak of Phasing”（道具 98）"
     },
     "gh2-5": {
-        "name": "获得“黑暗誓约垂饰”（道具 128）"
+        "name": "获得“Pendant of Dark Pacts”（道具 128）"
     },
     "gh2-6": {
         "name": "随机支线剧本"
     },
     "gh2-7": {
-        "name": "获得“盗贼兜帽”（道具 108）"
+        "name": "获得“Thief's Hood”（道具 108）"
     },
     "gh2-8": {
         "name": "承受3点伤害，并获得{CURSE}"
@@ -792,10 +792,10 @@ export default {
         "name": "获得15金币"
     },
     "gh2-18": {
-        "name": "获得“易爆炸药”（道具 99）"
+        "name": "获得“Unstable Explosives”（道具 99）"
     },
     "gh2-19": {
-        "name": "获得“亚龙鳞靴子”（道具 119）"
+        "name": "获得“Drakescale Boots”（道具 119）"
     },
     "gh2-20": {
         "name": "获得25金币"
@@ -804,7 +804,7 @@ export default {
         "name": "获得2 ✔"
     },
     "gh2-22": {
-        "name": "获得“山岭头盔”（道具 129）和“山岭战锤”（道具 130）"
+        "name": "获得“Helm of the Mountain”（道具 129）和“Mountain Hammer”（道具 130）"
     },
     "gh2-23": {
         "name": "获得15金币"
@@ -831,16 +831,16 @@ export default {
         "name": "获得20经验"
     },
     "gh2-31": {
-        "name": "获得“波峰项链”（道具 131）"
+        "name": "获得“Wave Crest”（道具 131）"
     },
     "gh2-32": {
         "name": "随机支线剧本"
     },
     "gh2-33": {
-        "name": "获得“治愈药水”（道具 101）"
+        "name": "获得“Cure Potion”（道具 101）"
     },
     "gh2-34": {
-        "name": "获得“亚龙鳞头盔”（道具 121）"
+        "name": "获得“Drakescale Helm”（道具 121）"
     },
     "gh2-35": {
         "name": "获得“Rod of Transference”（道具 115）"
@@ -849,7 +849,7 @@ export default {
         "name": "随机道具设计图"
     },
     "gh2-37": {
-        "name": "获得“欢快之靴”（道具 97）"
+        "name": "获得“Shoes of Happiness”（道具 97）"
     },
     "gh2-38": {
         "name": "获得1 ✔"
@@ -858,7 +858,7 @@ export default {
         "name": "获得20经验"
     },
     "gh2-40": {
-        "name": "获得“燃能弯刀”（道具 110）"
+        "name": "获得“Fueled Falchion”（道具 110）"
     },
     "gh2-41": {
         "name": "获得15金币"
@@ -900,7 +900,7 @@ export default {
         "name": "获得1 ✔"
     },
     "gh2-54": {
-        "name": "获得15金币和“钢质戒指”（道具 102）"
+        "name": "获得15金币和“Steel Ring”（道具 102）"
     },
     "gh2-55": {
         "name": "获得20经验"
@@ -939,7 +939,7 @@ export default {
         "name": "获得{POISON}和{STRENGTHEN}，并取回2张已损失的卡牌"
     },
     "gh2-67": {
-        "name": "获得“厄运罗盘”（道具 132）"
+        "name": "获得“Doomed Compass”（道具 132）"
     },
     "gh2-68": {
         "name": "随机道具设计图"
@@ -957,13 +957,13 @@ export default {
         "name": "获得25金币"
     },
     "gh2-73": {
-        "name": "获得“尖牙项圈”（道具 107）"
+        "name": "获得“Necklace of Teeth”（道具 107）"
     },
     "gh2-74": {
         "name": "承受3点伤害，并获得{IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "获得“亚龙鳞护甲”（道具 120）"
+        "name": "获得“Drakescale Armor”（道具 120）"
     },
     "gh2-76": {
         "name": "随机道具设计图"

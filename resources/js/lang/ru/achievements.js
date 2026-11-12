@@ -141,13 +141,13 @@ export default {
         "name": "Дурное знамение"
     },
     "gh-PSOX1": {
-        "name": "Склеп знати"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "Подтопленный склеп"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "Склеп древних"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "Источник отравы"
@@ -177,7 +177,7 @@ export default {
         "name": "Гробокопатели"
     },
     "gh-PNE": {
-        "name": "Северная экспедиция"
+        "name": "Northern Expedition"
     },
     "gh-GTTP": {
         "name": "Путь через портал"
@@ -189,13 +189,13 @@ export default {
         "name": "Знание - сила"
     },
     "gh-GKIP2": {
-        "name": "Знание - сила x2"
+        "name": "Knowledge is Power x2"
     },
     "gh-GKIP3": {
-        "name": "Знание - сила x3"
+        "name": "Knowledge is Power x3"
     },
     "gh-GKIP4": {
-        "name": "Знание - сила x4"
+        "name": "Knowledge is Power x4"
     },
     "gh-PAD": {
         "name": "Ангелы смерти"
@@ -210,10 +210,10 @@ export default {
         "name": "Части артефакта"
     },
     "gh-GPOA2": {
-        "name": "Части артефакта x2"
+        "name": "Pieces of an Artifact x2"
     },
     "gh-GPOA3": {
-        "name": "Части артефакта x3"
+        "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
         "name": "Охрана"
@@ -237,13 +237,13 @@ export default {
         "name": "Устранение угрозы"
     },
     "gh-GPA2": {
-        "name": "Устранение угрозы x2"
+        "name": "A Peril Averted x2"
     },
     "gh-GPA3": {
-        "name": "Устранение угрозы x3"
+        "name": "A Peril Averted x3"
     },
     "gh-GPA4": {
-        "name": "Устранение угрозы x4"
+        "name": "A Peril Averted x4"
     },
     "gh-GMS": {
         "name": "Торжество технологий"
@@ -255,7 +255,7 @@ export default {
         "name": "Сообщники"
     },
     "gh-PS": {
-        "name": "Диверсанты"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -291,94 +291,94 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "Друг ледоречцев"
+        "name": "Friend of the Icespeakers"
     },
     "fh-CFSS": {
-        "name": "Друг снегоречцев"
+        "name": "Friend of the Snowspeakers"
     },
     "fh-CFFS": {
-        "name": "Друг морозоречцев"
+        "name": "Friend of the Frostspeakers"
     },
     "fh-CDIS": {
-        "name": "Истребитель ледоречцев"
+        "name": "Destroyer of the Icespeakers"
     },
     "fh-CDSS": {
-        "name": "Истребитель снегоречцев"
+        "name": "Destroyer of the Snowspeakers"
     },
     "fh-CFFK": {
-        "name": "Друг Короля-рыбы"
+        "name": "Friend of the Fish King"
     },
     "fh-CCU": {
-        "name": "Объединённая корона"
+        "name": "Crown United"
     },
     "fh-CUA": {
-        "name": "Союзники Освобождённых"
+        "name": "Unfettered Allies"
     },
     "fh-CUD": {
-        "name": "Деактивированные Освобождённые"
+        "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
         "name": "В лес"
     },
     "fh-CFP": {
-        "name": "Огненный перец"
+        "name": "Firepepper"
     },
     "fh-CSS": {
-        "name": "Искатель осколков"
+        "name": "Shard Seeker"
     },
     "fh-CEJ": {
-        "name": "Пустая банка"
+        "name": "Empty Jar"
     },
     "fh-CBJ": {
-        "name": "Жук в банке"
+        "name": "Bug in a Jar"
     },
     "fh-CUC": {
-        "name": "Незаряженное ядро"
+        "name": "Uncharged Core"
     },
     "fh-CCC": {
-        "name": "Заряженное ядро"
+        "name": "Charged Core"
     },
     "fh-CHF": {
-        "name": "Праздник урожая"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "Следы Бруммикса"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "Следы Бруммикса x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "Следы Бруммикса x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "Следы Бруммикса x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "Следы Бруммикса x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "Осколок Коралловой короны"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "Осколок Коралловой короны x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "Осколок Коралловой короны x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "Осколок Коралловой короны x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "Осколок Коралловой короны x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "Осколок Коралловой короны x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Сердце льда"
+        "name": "Heart of Ice"
     },
     "fh-PHOS": {
-        "name": "Сердце снега"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"

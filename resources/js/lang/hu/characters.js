@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "Végzetvadász",
+        "name": "Doomstalker",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki két {+0_WHITE} lapot két {+1_WHITE} lapra",
@@ -111,7 +111,7 @@ export default {
         ]
     },
     "EL": {
-        "name": "Elementalista",
+        "name": "Elementalist",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
@@ -129,7 +129,7 @@ export default {
         ]
     },
     "SB": {
-        "name": "Csontkovács",
+        "name": "Sawbones",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -143,7 +143,7 @@ export default {
         ]
     },
     "SS": {
-        "name": "Jósdalnok",
+        "name": "Soothsinger",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki egy {-2_WHITE} lapot",
@@ -160,7 +160,7 @@ export default {
         ]
     },
     "SK": {
-        "name": "Napőr",
+        "name": "Sunkeeper",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -176,7 +176,7 @@ export default {
         ]
     },
     "NS": {
-        "name": "Éjtakaró",
+        "name": "Nightshroud",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -221,7 +221,7 @@ export default {
         ]
     },
     "QM": {
-        "name": "Intendáns",
+        "name": "Quartermaster",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki négy {+0_WHITE} lapot",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "Járványhírnök",
+        "name": "Plagueherald",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
@@ -251,7 +251,7 @@ export default {
         ]
     },
     "BT": {
-        "name": "Fenevadúr",
+        "name": "Beast Tyrant",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Pengeroj",
+        "name": "Bladeswarm",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {WOUND} lapra",
@@ -298,7 +298,7 @@ export default {
         ]
     },
     "RG": {
-        "name": "Vörös Gárdista",
+        "name": "Red Guard",
         "perks": [
             "Vegyél ki négy {+0_WHITE} lapot",
             "Vegyél ki két {-1_WHITE} lapot",
@@ -313,7 +313,7 @@ export default {
         ]
     },
     "DM": {
-        "name": "Rombolómester",
+        "name": "Demolitionist",
         "perks": [
             "Vegyél ki négy {+0_WHITE} lapot",
             "Vegyél ki két {-1_WHITE} lapot",
@@ -342,7 +342,7 @@ export default {
         ]
     },
     "VW": {
-        "name": "Űrőr",
+        "name": "Voidwarden",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Vegyél ki egy {-2_WHITE} lapot",
@@ -601,7 +601,7 @@ export default {
         ]
     },
     "BB": {
-        "name": "Villanópenge",
+        "name": "Blinkblade",
         "masteries": [
             "Hét egymást követő fordulóban jelentsd be a {FAST}-ot",
             "Soha ne célozzon meg támadás"
@@ -621,7 +621,7 @@ export default {
         ]
     },
     "BN": {
-        "name": "Zászlólándzsa",
+        "name": "Banner Spear",
         "masteries": [
             "Támadj meg legalább három ellenfelet három különböző területi hatású támadás képességgel, mindegyikkel",
             "Hajts végre egy {BANNER} idézés képességet az első körödben, és tartsd életben a zászlót, {RANGE.fh}3 távolságon belül tőled, az egész küldetés alatt"
@@ -640,7 +640,7 @@ export default {
         ]
     },
     "DW": {
-        "name": "Halálsétáló",
+        "name": "Deathwalker",
         "masteries": [
             "Távolíts el hét {SHADOW_ICON}-t egy fordulóban",
             "Minden fordulóban helyezz le vagy távolíts el legalább egy {SHADOW_ICON}-t"
@@ -660,7 +660,7 @@ export default {
         ]
     },
     "BO": {
-        "name": "Csontformáló",
+        "name": "Boneshaper",
         "masteries": [
             "Öld meg legalább tizenöt saját idézett lényedet",
             "Játssz ki egy idézés akciót az első körödben, az idézett lény ölje meg legalább hat ellenfelet, és tartsd életben az egész küldetés alatt"
@@ -679,7 +679,7 @@ export default {
         ]
     },
     "GE": {
-        "name": "Ikerváltó",
+        "name": "Geminate",
         "masteries": [
             "Minden fordulóban válts alakot",
             "Lose at least one ability lapot each round"
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "IF": {
-        "name": "Átitató",
+        "name": "Infuser",
         "masteries": [
             "Legyen öt aktív {INFUSION_ICON} bónuszod",
             "Ölj meg legalább négy ellenfelet úgy, hogy soha nem támadsz"
@@ -720,7 +720,7 @@ export default {
         ]
     },
     "PY": {
-        "name": "Piroklaszt",
+        "name": "Pyroclast",
         "masteries": [
             "Minden fordulóban hozz létre vagy semmisíts meg legalább egy akadály- vagy veszélyes terep kártyát",
             "Mozgass ellenfeleket hat különböző, általad létrehozott veszélyes terep mezőn át egyetlen körben"
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "Zúzódal",
+        "name": "Shattersong",
         "masteries": [
             "Mindig legyen 0 {RESONANCE_ICON}-od közvetlenül azelőtt, hogy minden körödnek a végén {RESONANCE_ICON}-t szereznél",
             "Költs el 5 {RESONANCE_ICON}-t öt különböző {WAVE} képességen, mindegyiken"
@@ -761,7 +761,7 @@ export default {
         ]
     },
     "TA": {
-        "name": "Csapdaállító",
+        "name": "Trapper",
         "masteries": [
             "Legyen a pályán egy {HEAL.fh} csapda, amelynek értéke legalább 20",
             "Move enemies through seven or more traps egy ability"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Fájdalomvezeték",
+        "name": "Pain Conduit",
         "masteries": [
             "Okozz más figuráknak összesen legalább {DAMAGE.fh}40 sebzést egy fordulóban",
             "Kezdj egy kört {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} és {MUDDLE.fh} állapottal"
@@ -801,7 +801,7 @@ export default {
         ]
     },
     "SD": {
-        "name": "Hótáncos",
+        "name": "Snowdancer",
         "masteries": [
             "Késztess legalább egy csapattársat vagy ellenfelet mozgásra minden fordulóban",
             "Gondoskodj róla, hogy az első csapattárs, aki minden fordulóban {DAMAGE.fh}-t szenved el, közvetlenül a {DAMAGE.fh} elszenvedése előtt legalább egy általad alkalmazott állapottal rendelkezzen"
@@ -819,7 +819,7 @@ export default {
         ]
     },
     "FF": {
-        "name": "Fagyott Ököl",
+        "name": "Frozen Fist",
         "masteries": [
             "Minden fordulóban szerezz vissza {RECOVER.fh} legalább egy lapot az eldobott lapjaid közül",
             "Enter at least ten different hexes egy move ability, then cause one enemy to suffer at least {DAMAGE.fh}10 egy attack ability in the same turn"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Fémmozaik",
+        "name": "Metal Mosaic",
         "masteries": [
             "Soha ne támadj",
             "Négy egymást követő fordulóban mozgasd a nyomásmérőt fel vagy le három szinttel a forduló eleji állásától ({PRESSURE_LOW_ICON}-ról {PRESSURE_HIGH_ICON}-ra, vagy fordítva)"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Mélykísértet",
+        "name": "Deepwraith",
         "masteries": [
             "Hajtsd végre az összes támadásodat Előnnyel",
             "Minden fordulóban hozz létre {DARK}-ot"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "Csapódó Dagály",
+        "name": "Crashing Tide",
         "masteries": [
             "Soha ne szenvedj el sebzést támadásból, és legalább öt támadás célpontja légy",
             "Minden pihenésed elején legyen több aktív {TIDE_ICON}-od, mint lap az eldobott paklidban"

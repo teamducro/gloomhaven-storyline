@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "末日使者",
+        "name": "Doomstalker",
         "perks": [
             "移除兩張 {-1_WHITE} 卡牌",
             "將兩張 {+0_WHITE} 卡牌替換為兩張 {+1_WHITE} 卡牌",
@@ -129,7 +129,7 @@ export default {
         ]
     },
     "SB": {
-        "name": "鋸骨醫生",
+        "name": "Sawbones",
         "perks": [
             "移除兩張 {-1_WHITE} 卡牌",
             "移除四張 {+0_WHITE} 卡牌",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "瘟疫使者",
+        "name": "Plagueherald",
         "perks": [
             "將一張 {-2_WHITE} 卡牌替換為一張 {+0_WHITE} 卡牌",
             "將一張 {-1_WHITE} 卡牌替換為一張 {+1_WHITE} 卡牌",
@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "刀鋒領主",
+        "name": "Bladeswarm",
         "perks": [
             "將一張 {-2_WHITE} 卡牌替換為一張 {+0_WHITE} 卡牌",
             "將一張 {-1_WHITE} 卡牌替換為一張 {+0_WHITE} {WOUND} 卡牌",
@@ -527,7 +527,7 @@ export default {
             "將一張 {+1_WHITE} 卡牌替換為一張 {+0_WHITE} {WOUND_2} 卡牌",
             "加入四張 {AGAIN} {+0_WHITE}「若目標位於困難地形則 {+1_WHITE}」卡牌",
             "加入兩張 {AGAIN}「若你位於困難地形，{INVISIBLE}，自身」卡牌",
-            "獲得「劇毒匕首」（道具 gh-11）。你可以額外攜帶一件名稱中含有「匕首」的 {ONE-HAND} 道具。",
+            "獲得「Poison Dagger」（道具 gh-11）。你可以額外攜帶一件名稱中含有「匕首」的 {ONE-HAND} 道具。",
             "無視事件造成的傷害、負面狀態與修正，並移除一張 {-1_WHITE} 卡牌",
             "無視負面劇本效果，並移除一張 {-1_WHITE} 卡牌"
         ]
@@ -720,7 +720,7 @@ export default {
         ]
     },
     "PY": {
-        "name": "炎爆碎石者",
+        "name": "Pyroclast",
         "masteries": [
             "每輪至少創造或摧毀一塊障礙物或危險地形板塊",
             "在一個回合中，使敵人穿越你創造的六個不同的危險地形格"
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "破碎歌者",
+        "name": "Shattersong",
         "masteries": [
             "每回合結束時，在你獲得 {RESONANCE_ICON} 之前，始終保持 0 個 {RESONANCE_ICON}",
             "在五個不同的 {WAVE} 能力上各花費 5 個 {RESONANCE_ICON}"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "苦痛通導者",
+        "name": "Pain Conduit",
         "masteries": [
             "在一輪中使其他單位共計承受至少 {DAMAGE.fh}40",
             "在回合開始時同時擁有 {WOUND.fh}、{BRITTLE.fh}、{BANE.fh}、{POISON.fh}、{IMMOBILIZE.fh}、{DISARM.fh}、{STUN.fh} 和 {MUDDLE.fh}"
@@ -801,7 +801,7 @@ export default {
         ]
     },
     "SD": {
-        "name": "風雪舞者",
+        "name": "Snowdancer",
         "masteries": [
             "每輪至少使一名盟友或敵人移動",
             "確保每輪第一個承受 {DAMAGE.fh} 的盟友，在承受 {DAMAGE.fh} 之前，至少有一個你施加的狀態"
@@ -839,7 +839,7 @@ export default {
         ]
     },
     "HV": {
-        "name": "蜂巢主腦",
+        "name": "HIVE",
         "masteries": [
             "每輪 {TRANSFER_ICON}",
             "在一輪中 {TRANSFER_ICON} 進入四個不同的召喚物"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "拼裝構造體",
+        "name": "Metal Mosaic",
         "masteries": [
             "從不攻擊",
             "連續四輪，將壓力計從該輪開始時的位置上升或下降三個等級（{PRESSURE_LOW_ICON} 到 {PRESSURE_HIGH_ICON}，或反之）"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "深海亡靈",
+        "name": "Deepwraith",
         "masteries": [
             "你執行的所有攻擊均具有優勢",
             "每輪灌注 {DARK}"

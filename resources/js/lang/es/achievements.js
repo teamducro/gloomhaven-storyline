@@ -141,13 +141,13 @@ export default {
         "name": "Mal negocio"
     },
     "gh-PSOX1": {
-        "name": "Cripta de los Nobles"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "Cripta inundada"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "Cripta de los Antiguos"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "El origen del veneno"
@@ -252,10 +252,10 @@ export default {
         "name": "Lazos cortados"
     },
     "gh-PA": {
-        "name": "Cómplices"
+        "name": "Accomplices"
     },
     "gh-PS": {
-        "name": "Saboteadores"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -339,46 +339,46 @@ export default {
         "name": "Núcleo cargado"
     },
     "fh-CHF": {
-        "name": "Fiesta de la cosecha"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "Huellas de Brummix"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "Huellas de Brummix x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "Huellas de Brummix x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "Huellas de Brummix x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "Huellas de Brummix x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "Esquirla de la Corona de Coral"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "Esquirla de la Corona de Coral x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "Esquirla de la Corona de Coral x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "Esquirla de la Corona de Coral x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "Esquirla de la Corona de Coral x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "Esquirla de la Corona de Coral x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
         "name": "Corazón de hielo"
     },
     "fh-PHOS": {
-        "name": "Corazón de nieve"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"

@@ -505,7 +505,7 @@ export default {
         ]
     },
     "fh-15": {
-        "name": "Trwały dobrobyt",
+        "name": "Continued Prosperity",
         "building_unlocks": [
             65,
             85
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "Zostawcie ich w spokoju",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,7 +545,7 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Uciszyć martwe miejsca",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67

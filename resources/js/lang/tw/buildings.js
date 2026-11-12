@@ -1,6 +1,6 @@
 export default {
     "fh-5": {
-        "name": "採礦營地",
+        "name": "Mining Camp",
         "levels": [
             {
                 "level": 0
@@ -40,7 +40,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "狩獵小屋",
+        "name": "Hunting Lodge",
         "levels": [
             {
                 "level": 0
@@ -80,7 +80,7 @@ export default {
         ]
     },
     "fh-17": {
-        "name": "伐木營地",
+        "name": "Logging Camp",
         "levels": [
             {
                 "level": 0
@@ -272,7 +272,7 @@ export default {
         ]
     },
     "fh-35": {
-        "name": "煉金術士",
+        "name": "Alchemist",
         "levels": [
             {
                 "level": 0
@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "大橡樹神殿",
+        "name": "Temple of the Great Oak",
         "levels": [
             {
                 "level": 0
@@ -456,7 +456,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "金屬倉庫",
+        "name": "Metal Depot",
         "levels": [
             {
                 "level": 0
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "木材倉庫",
+        "name": "Lumber Depot",
         "levels": [
             {
                 "level": 0
@@ -504,7 +504,7 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "獸皮倉庫",
+        "name": "Hide Depot",
         "levels": [
             {
                 "level": 0

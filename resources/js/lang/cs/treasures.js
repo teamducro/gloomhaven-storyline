@@ -3,19 +3,19 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh-2": {
-        "name": "Získejte „Věžový štít“ (předmět 032)"
+        "name": "Získejte „Tower Shield“ (předmět 032)"
     },
     "gh-3": {
-        "name": "Získejte „Lamelová zbroj“ (předmět 044)"
+        "name": "Získejte „Splintmail“ (předmět 044)"
     },
     "gh-4": {
         "name": "Získejte 15 zlaťáků"
     },
     "gh-5": {
-        "name": "Získejte „Drátěná košile“ (předmět 023)"
+        "name": "Získejte „Chainmail“ (předmět 023)"
     },
     "gh-6": {
-        "name": "Získejte „Hákový řetěz“ (předmět 039)"
+        "name": "Získejte „Hooked Chain“ (předmět 039)"
     },
     "gh-7": {
         "name": "Náhodný vedlejší scénář"
@@ -24,7 +24,7 @@ export default {
         "name": "Získejte 1 ✔"
     },
     "gh-9": {
-        "name": "Získejte „Hřeben vlny“ (předmět 111)"
+        "name": "Získejte „Wave Crest“ (předmět 111)"
     },
     "gh-10": {
         "name": "Získejte 10 zkušeností"
@@ -33,7 +33,7 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh-12": {
-        "name": "Získejte „Magmové holínky“ (předmět 099)"
+        "name": "Získejte „Magma Waders“ (předmět 099)"
     },
     "gh-13": {
         "name": "Utrpěte 5 zranění a získejte {POISON} a {WOUND}"
@@ -42,7 +42,7 @@ export default {
         "name": "Získejte 10 zkušeností"
     },
     "gh-15": {
-        "name": "Získejte „Přívěsek temných paktů“ (předmět 045)"
+        "name": "Získejte „Pendant of Dark Pacts“ (předmět 045)"
     },
     "gh-16": {
         "name": "Získejte 10 zlaťáků"
@@ -66,7 +66,7 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh-23": {
-        "name": "Získejte „Zbroj z dračích šupin“ (předmět 103)"
+        "name": "Získejte „Drakescale Armor“ (předmět 103)"
     },
     "gh-24": {
         "name": "Utrpěte 5 zranění"
@@ -78,13 +78,13 @@ export default {
         "name": "Získejte 20 zlaťáků"
     },
     "gh-27": {
-        "name": "Získejte „Koule soumraku“ (předmět 122)"
+        "name": "Získejte „Orb of Twilight“ (předmět 122)"
     },
     "gh-28": {
         "name": "Získejte 15 zlaťáků"
     },
     "gh-29": {
-        "name": "Získejte „Vytrvalostní obinadla“ (předmět 097)"
+        "name": "Získejte „Endurance Footwraps“ (předmět 097)"
     },
     "gh-30": {
         "name": "Získejte 1 ✔"
@@ -96,22 +96,22 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh-33": {
-        "name": "Získejte „Zatížená síť“ (předmět 019)"
+        "name": "Získejte „Weighted Net“ (předmět 019)"
     },
     "gh-34": {
         "name": "Získejte „Amulet života“ (předmět 024)"
     },
     "gh-35": {
-        "name": "Získejte „Boty z dračích šupin“ (předmět 098)"
+        "name": "Získejte „Drakescale Boots“ (předmět 098)"
     },
     "gh-36": {
-        "name": "Nákres „Raketové boty“ (předmět 096)"
+        "name": "Nákres „Rocket Boots“ (předmět 096)"
     },
     "gh-37": {
         "name": "Získejte 1 ✔"
     },
     "gh-38": {
-        "name": "Nákres „Prsten lebek“ (předmět 123)"
+        "name": "Nákres „Ring of Skulls“ (předmět 123)"
     },
     "gh-39": {
         "name": "Utrpěte 5 zranění"
@@ -120,7 +120,7 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh-41": {
-        "name": "Získejte „Černý nůž“ (předmět 053)"
+        "name": "Získejte „Black Knife“ (předmět 053)"
     },
     "gh-42": {
         "name": "Náhodný nákres předmětu"
@@ -138,7 +138,7 @@ export default {
         "name": "Utrpěte 3 zranění a získejte {POISON}"
     },
     "gh-47": {
-        "name": "Získejte „Parní zbroj“ (předmět 104)"
+        "name": "Získejte „Steam Armor“ (předmět 104)"
     },
     "gh-48": {
         "name": "Získejte 30 zlaťáků"
@@ -147,43 +147,43 @@ export default {
         "name": "Nový scénář: {SCENARIO 17}"
     },
     "gh-50": {
-        "name": "Získejte „Druhá kůže“ (předmět 101)"
+        "name": "Získejte „Second Skin“ (předmět 101)"
     },
     "gh-51": {
         "name": "Náhodný vedlejší scénář"
     },
     "gh-52": {
-        "name": "Získejte „Srdce zrádce“ (předmět 131)"
+        "name": "Získejte „Heart of the Betrayer“ (předmět 131)"
     },
     "gh-53": {
         "name": "Náhodný nákres předmětu"
     },
     "gh-54": {
-        "name": "Získejte „Zkázonosný kompas“ (předmět 124)"
+        "name": "Získejte „Doomed Compass“ (předmět 124)"
     },
     "gh-55": {
         "name": "Získejte 1 ✔"
     },
     "gh-56": {
-        "name": "Získejte „Hvězdné náušnice“ (předmět 069)"
+        "name": "Získejte „Star Earring“ (předmět 069)"
     },
     "gh-57": {
         "name": "Získejte 15 zlaťáků"
     },
     "gh-58": {
-        "name": "Získejte „Přilba z dračích šupin“ (předmět 108)"
+        "name": "Získejte „Drakescale Helm“ (předmět 108)"
     },
     "gh-59": {
         "name": "Náhodný nákres předmětu"
     },
     "gh-60": {
-        "name": "Získejte „Sekera lebkolamu“ (předmět 113)"
+        "name": "Získejte „Skullbane Axe“ (předmět 113)"
     },
     "gh-61": {
-        "name": "Získejte „Všestranná dýka“ (předmět 040)"
+        "name": "Získejte „Versatile Dagger“ (předmět 040)"
     },
     "gh-62": {
-        "name": "Získejte „Přilba hory“ (předmět 110) a „Horské kladivo“ (předmět 115)"
+        "name": "Získejte „Helm of the Mountain“ (předmět 110) a „Mountain Hammer“ (předmět 115)"
     },
     "gh-63": {
         "name": "Náhodný nákres předmětu"
@@ -192,19 +192,19 @@ export default {
         "name": "Získejte 30 zlaťáků"
     },
     "gh-65": {
-        "name": "Nákres „Rohatá přilba“ (předmět 107)"
+        "name": "Nákres „Horned Helm“ (předmět 107)"
     },
     "gh-66": {
-        "name": "Získejte „Výbušná bomba“ (předmět 033)"
+        "name": "Získejte „Volatile Bomb“ (předmět 033)"
     },
     "gh-67": {
         "name": "Získejte 10 zlaťáků"
     },
     "gh-68": {
-        "name": "Získejte „Šroubovicový prsten“ (předmět 130)"
+        "name": "Získejte „Helix Ring“ (předmět 130)"
     },
     "gh-69": {
-        "name": "Získejte „Roucho přivolávání“ (předmět 100)"
+        "name": "Získejte „Robes of Summoning“ (předmět 100)"
     },
     "gh-70": {
         "name": "Náhodný vedlejší scénář"
@@ -213,7 +213,7 @@ export default {
         "name": "Náhodný vedlejší scénář"
     },
     "gh-72": {
-        "name": "Nákres „Poháněný falchion“ (předmět 116)"
+        "name": "Nákres „Fueled Falchion“ (předmět 116)"
     },
     "gh-73": {
         "name": "Náhodný nákres předmětu"
@@ -228,34 +228,34 @@ export default {
         "name": "Utrpěte 3 zranění, získejte {WOUND} a 10 zlaťáků"
     },
     "fc-77": {
-        "name": "Získejte „Větší očistný lektvar“ (předmět 090)"
+        "name": "Získejte „Major Cure Potion“ (předmět 090)"
     },
     "fc-78": {
-        "name": "„Prastarý luk“ (předmět 157)"
+        "name": "„Ancient Bow“ (předmět 157)"
     },
     "fc-79": {
-        "name": "Získejte „Soška sokola“ (předmět 157)"
+        "name": "Získejte „Falcon Figurine“ (předmět 157)"
     },
     "fc-80": {
         "name": "Získejte 1 ✓ a přidejte do balíčku událost v trhlině 19"
     },
     "fc-81": {
-        "name": "Získejte „Svitek spěchu“ (předmět 159) a 10 zlaťáků"
+        "name": "Získejte „Scroll of Haste“ (předmět 159) a 10 zlaťáků"
     },
     "fc-82": {
-        "name": "„Omlazující holeně“ (předmět 158)"
+        "name": "„Rejuvenation Greaves“ (předmět 158)"
     },
     "fc-83": {
-        "name": "Získejte „Větší lektvar síly“ (předmět 041)"
+        "name": "Získejte „Major Power Potion“ (předmět 041)"
     },
     "fc-84": {
-        "name": "Získejte „Maska hrůzy“ (předmět 066)"
+        "name": "Získejte „Mask of Terror“ (předmět 066)"
     },
     "fc-85": {
         "name": "Utrpěte 3 zranění, získejte {POISON} a 10 zlaťáků"
     },
     "fc-86": {
-        "name": "Odemkněte sólový scénář Věštkyně {DR} „Předpověď nevyhnutelného“ (viz strana 25 hlavní knihy)"
+        "name": "Odemkněte sólový scénář Věštkyně {DR} „Forecast of the Inevitable“ (viz strana 25 hlavní knihy)"
     },
     "fc-87": {
         "name": "Utrpěte 2 zranění, získejte Prokletí a 15 zlaťáků"
@@ -264,16 +264,16 @@ export default {
         "name": "Získejte 1 ✓"
     },
     "fc-89": {
-        "name": "Získejte „Prsten druhé šance“ (předmět 070)"
+        "name": "Získejte „Second Chance Ring“ (předmět 070)"
     },
     "fc-90": {
         "name": "10 zlaťáků každý, přečtěte si oddíl 75 na straně 49"
     },
     "fc-91": {
-        "name": "Získejte 30 zlaťáků a úspěch družiny „Oportunisté“. Přidejte do balíčku událost ve městě 84"
+        "name": "Získejte 30 zlaťáků a úspěch družiny „Opportunists“. Přidejte do balíčku událost ve městě 84"
     },
     "fc-93": {
-        "name": "„Svitek spěchu“ (předmět 159)"
+        "name": "„Scroll of Haste“ (předmět 159)"
     },
     "fc-94": {
         "name": "Získejte 1 ✓ a přidejte do balíčku událost v trhlině 20"
@@ -312,7 +312,7 @@ export default {
         "name": "Získejte 5 zlaťáků"
     },
     "jotl-10": {
-        "name": "„Osudový kompas“ (předmět 27)"
+        "name": "„Fateful Compass“ (předmět 27)"
     },
     "jotl-11": {
         "name": "„Prsten spěchu“ (předmět 30)"
@@ -480,7 +480,7 @@ export default {
         "name": "15 zlaťáků"
     },
     "cs-49": {
-        "name": "„Magmové holínky“ (předmět gh-99)"
+        "name": "„Magma Waders“ (předmět gh-99)"
     },
     "cs-50": {
         "name": "„Bottled Moonlight“ (předmět 18)"
@@ -741,25 +741,25 @@ export default {
         "name": "Získejte 10 peněz."
     },
     "gh2-1": {
-        "name": "Získejte „Magmové holínky“ (předmět 142)"
+        "name": "Získejte „Magma Waders“ (předmět 142)"
     },
     "gh2-2": {
         "name": "Utrpěte 3 zranění a získejte {POISON}"
     },
     "gh2-3": {
-        "name": "Získejte „Hvězdné náušnice“ (předmět 63)"
+        "name": "Získejte „Star Earring“ (předmět 63)"
     },
     "gh2-4": {
-        "name": "Získejte „Plášť fázování“ (předmět 98)"
+        "name": "Získejte „Cloak of Phasing“ (předmět 98)"
     },
     "gh2-5": {
-        "name": "Získejte „Přívěsek temných paktů“ (předmět 128)"
+        "name": "Získejte „Pendant of Dark Pacts“ (předmět 128)"
     },
     "gh2-6": {
         "name": "Náhodný vedlejší scénář"
     },
     "gh2-7": {
-        "name": "Získejte „Zlodějská kapuce“ (předmět 108)"
+        "name": "Získejte „Thief's Hood“ (předmět 108)"
     },
     "gh2-8": {
         "name": "Utrpěte 3 zranění a získejte {CURSE}"
@@ -792,10 +792,10 @@ export default {
         "name": "Získejte 15 zlaťáků"
     },
     "gh2-18": {
-        "name": "Získejte „Nestabilní výbušniny“ (předmět 99)"
+        "name": "Získejte „Unstable Explosives“ (předmět 99)"
     },
     "gh2-19": {
-        "name": "Získejte „Boty z dračích šupin“ (předmět 119)"
+        "name": "Získejte „Drakescale Boots“ (předmět 119)"
     },
     "gh2-20": {
         "name": "Získejte 25 zlaťáků"
@@ -804,7 +804,7 @@ export default {
         "name": "Získejte 2 ✔"
     },
     "gh2-22": {
-        "name": "Získejte „Přilba hory“ (předmět 129) a „Horské kladivo“ (předmět 130)"
+        "name": "Získejte „Helm of the Mountain“ (předmět 129) a „Mountain Hammer“ (předmět 130)"
     },
     "gh2-23": {
         "name": "Získejte 15 zlaťáků"
@@ -831,16 +831,16 @@ export default {
         "name": "Získejte 20 zkušeností"
     },
     "gh2-31": {
-        "name": "Získejte „Hřeben vlny“ (předmět 131)"
+        "name": "Získejte „Wave Crest“ (předmět 131)"
     },
     "gh2-32": {
         "name": "Náhodný vedlejší scénář"
     },
     "gh2-33": {
-        "name": "Získejte „Lektvar vyléčení“ (předmět 101)"
+        "name": "Získejte „Cure Potion“ (předmět 101)"
     },
     "gh2-34": {
-        "name": "Získejte „Přilba z dračích šupin“ (předmět 121)"
+        "name": "Získejte „Drakescale Helm“ (předmět 121)"
     },
     "gh2-35": {
         "name": "Získejte „Rod of Transference“ (předmět 115)"
@@ -849,7 +849,7 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh2-37": {
-        "name": "Získejte „Boty štěstí“ (předmět 97)"
+        "name": "Získejte „Shoes of Happiness“ (předmět 97)"
     },
     "gh2-38": {
         "name": "Získejte 1 ✔"
@@ -858,7 +858,7 @@ export default {
         "name": "Získejte 20 zkušeností"
     },
     "gh2-40": {
-        "name": "Získejte „Poháněný falchion“ (předmět 110)"
+        "name": "Získejte „Fueled Falchion“ (předmět 110)"
     },
     "gh2-41": {
         "name": "Získejte 15 zlaťáků"
@@ -888,7 +888,7 @@ export default {
         "name": "Získejte 15 zkušeností"
     },
     "gh2-50": {
-        "name": "Získejte „Parní zbroj“ (předmět 106)"
+        "name": "Získejte „Steam Armor“ (předmět 106)"
     },
     "gh2-51": {
         "name": "Získejte 15 zkušeností"
@@ -900,7 +900,7 @@ export default {
         "name": "Získejte 1 ✔"
     },
     "gh2-54": {
-        "name": "Získejte 15 gold a „Ocelový prsten“ (předmět 102)"
+        "name": "Získejte 15 gold a „Steel Ring“ (předmět 102)"
     },
     "gh2-55": {
         "name": "Získejte 20 zkušeností"
@@ -939,7 +939,7 @@ export default {
         "name": "Získejte {POISON} a {STRENGTHEN} a získejte zpět 2 ztracené karty"
     },
     "gh2-67": {
-        "name": "Získejte „Zkázonosný kompas“ (předmět 132)"
+        "name": "Získejte „Doomed Compass“ (předmět 132)"
     },
     "gh2-68": {
         "name": "Náhodný nákres předmětu"
@@ -957,13 +957,13 @@ export default {
         "name": "Získejte 25 zlaťáků"
     },
     "gh2-73": {
-        "name": "Získejte „Náhrdelník ze zubů“ (předmět 107)"
+        "name": "Získejte „Necklace of Teeth“ (předmět 107)"
     },
     "gh2-74": {
         "name": "Utrpěte 3 zranění a získejte {IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "Získejte „Zbroj z dračích šupin“ (předmět 120)"
+        "name": "Získejte „Drakescale Armor“ (předmět 120)"
     },
     "gh2-76": {
         "name": "Náhodný nákres předmětu"

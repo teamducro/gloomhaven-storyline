@@ -1,2030 +1,2030 @@
 export default {
     "gh": {
         "blood-pact": {
-            "name": "krvavá smlouva"
+            "name": "blood pact"
         },
         "bone-breaker": {
-            "name": "lamač kostí"
+            "name": "bone breaker"
         },
         "bounce-back": {
-            "name": "návrat do boje"
+            "name": "bounce back"
         },
         "break-the-chains": {
-            "name": "zpřetrhat okovy"
+            "name": "break the chains"
         },
         "burning-hatred": {
-            "name": "planoucí nenávist"
+            "name": "burning hatred"
         },
         "careless-charge": {
-            "name": "bezohledný výpad"
+            "name": "careless charge"
         },
         "cauterize": {
-            "name": "vypálit ránu"
+            "name": "cauterize"
         },
         "dazing-wound": {
-            "name": "omračující rána"
+            "name": "dazing wound"
         },
         "defiance-of-death": {
-            "name": "vzdor smrti"
+            "name": "defiance of death"
         },
         "devil-horns": {
-            "name": "ďábelské rohy"
+            "name": "devil horns"
         },
         "fatal-fury": {
-            "name": "osudová zuřivost"
+            "name": "fatal fury"
         },
         "final-fight": {
-            "name": "poslední boj"
+            "name": "final fight"
         },
         "flurry-of-axes": {
-            "name": "smršť seker"
+            "name": "flurry of axes"
         },
         "from-the-brink": {
-            "name": "z pokraje smrti"
+            "name": "from the brink"
         },
         "furious-aid": {
-            "name": "zuřivá pomoc"
+            "name": "furious aid"
         },
         "glass-hammer": {
-            "name": "skleněné kladivo"
+            "name": "glass hammer"
         },
         "growing-rage": {
-            "name": "sílící vztek"
+            "name": "growing rage"
         },
         "immortality": {
-            "name": "nesmrtelnost"
+            "name": "immortality"
         },
         "numb-the-pain": {
-            "name": "otupit bolest"
+            "name": "numb the pain"
         },
         "reckless-offensive": {
-            "name": "bezhlavá ofenziva"
+            "name": "reckless offensive"
         },
         "resolute-stand": {
-            "name": "neochvějný postoj"
+            "name": "resolute stand"
         },
         "seeing-red": {
-            "name": "rudý závoj"
+            "name": "seeing red"
         },
         "shiny-distraction": {
-            "name": "lesklé rozptýlení"
+            "name": "shiny distraction"
         },
         "spiked-armor": {
-            "name": "ostnatá zbroj"
+            "name": "spiked armor"
         },
         "strength-in-agony": {
-            "name": "síla v utrpení"
+            "name": "strength in agony"
         },
         "the-maw-of-madness": {
-            "name": "chřtán šílenství"
+            "name": "the maw of madness"
         },
         "unbridled-power": {
-            "name": "nespoutaná moc"
+            "name": "unbridled power"
         },
         "unstoppable-destruction": {
-            "name": "nezastavitelná zkáza"
+            "name": "unstoppable destruction"
         },
         "vengeful-barrage": {
-            "name": "mstivá palba"
+            "name": "vengeful barrage"
         },
         "balanced-measure": {
-            "name": "vyvážená míra"
+            "name": "balanced measure"
         },
         "brute-force": {
-            "name": "hrubá síla"
+            "name": "brute force"
         },
         "crippling-offensive": {
-            "name": "zmrzačující ofenziva"
+            "name": "crippling offensive"
         },
         "defensive-tactics": {
-            "name": "obranná taktika"
+            "name": "defensive tactics"
         },
         "devastating-hack": {
-            "name": "zničující seknutí"
+            "name": "devastating hack"
         },
         "eye-for-an-eye": {
-            "name": "oko za oko"
+            "name": "eye for an eye"
         },
         "face-your-end": {
-            "name": "pohleď svému konci do očí"
+            "name": "face your end"
         },
         "fatal-advance": {
-            "name": "osudový postup"
+            "name": "fatal advance"
         },
         "frenzied-onslaught": {
-            "name": "zběsilý nápor"
+            "name": "frenzied onslaught"
         },
         "grab-and-go": {
-            "name": "popadni a uteč"
+            "name": "grab and go"
         },
         "hook-and-chain": {
-            "name": "hák a řetěz"
+            "name": "hook and chain"
         },
         "immovable-phalanx": {
-            "name": "nepohnutelná falanga"
+            "name": "immovable phalanx"
         },
         "juggernaut": {
-            "name": "nezastavitelný válec"
+            "name": "juggernaut"
         },
         "king-of-the-hill": {
-            "name": "král kopce"
+            "name": "king of the hill"
         },
         "leaping-cleave": {
-            "name": "skokový sek"
+            "name": "leaping cleave"
         },
         "overwhelming-assault": {
-            "name": "drtivý útok"
+            "name": "overwhelming assault"
         },
         "provoking-roar": {
-            "name": "provokativní řev"
+            "name": "provoking roar"
         },
         "quietus": {
-            "name": "poslední úder"
+            "name": "quietus"
         },
         "selfish-retribution": {
-            "name": "sobecká odplata"
+            "name": "selfish retribution"
         },
         "shield-bash": {
-            "name": "úder štítem"
+            "name": "shield bash"
         },
         "skewer": {
-            "name": "napíchnout"
+            "name": "skewer"
         },
         "skirmishing-maneuver": {
-            "name": "potyčkový manévr"
+            "name": "skirmishing maneuver"
         },
         "spare-dagger": {
-            "name": "náhradní dýka"
+            "name": "spare dagger"
         },
         "sweeping-blow": {
-            "name": "zametací úder"
+            "name": "sweeping blow"
         },
         "trample": {
-            "name": "ušlapat"
+            "name": "trample"
         },
         "unstoppable-charge": {
-            "name": "nezastavitelný výpad"
+            "name": "unstoppable charge"
         },
         "wall-of-doom": {
-            "name": "zeď zkázy"
+            "name": "wall of doom"
         },
         "warding-strength": {
-            "name": "ochranná síla"
+            "name": "warding strength"
         },
         "whirlwind": {
             "name": "vír"
         },
         "armed-and-dangerous": {
-            "name": "ozbrojený a nebezpečný"
+            "name": "armed and dangerous"
         },
         "bioluminescence": {
-            "name": "bioluminiscence"
+            "name": "bioluminescence"
         },
         "lightning-moths": {
-            "name": "bleskové můry"
+            "name": "lightning moths"
         },
         "blood-drain": {
-            "name": "vysátí krve"
+            "name": "blood drain"
         },
         "bone-daggers": {
-            "name": "kostěné dýky"
+            "name": "bone daggers"
         },
         "call-of-the-grave": {
-            "name": "volání hrobu"
+            "name": "call of the grave"
         },
         "corrupting-parasites": {
-            "name": "kazící parazité"
+            "name": "corrupting parasites"
         },
         "soul-leeches": {
-            "name": "duševní pijavice"
+            "name": "soul leeches"
         },
         "cyclone-of-blades": {
-            "name": "cyklón čepelí"
+            "name": "cyclone of blades"
         },
         "death-march": {
-            "name": "pochod smrti"
+            "name": "death march"
         },
         "creeping-beetles": {
-            "name": "plíživí brouci"
+            "name": "creeping beetles"
         },
         "deflecting-blades": {
-            "name": "odrážející čepele"
+            "name": "deflecting blades"
         },
         "endless-biting": {
-            "name": "nekonečné kousání"
+            "name": "endless biting"
         },
         "engulfing-stingers": {
-            "name": "pohlcující žahadla"
+            "name": "engulfing stingers"
         },
         "angry-wasps": {
-            "name": "rozzuřené vosy"
+            "name": "angry wasps"
         },
         "focused-scourge": {
-            "name": "soustředěný bič"
+            "name": "focused scourge"
         },
         "fury-of-the-horde": {
-            "name": "zuřivost hordy"
+            "name": "fury of the horde"
         },
         "rage-hornets": {
-            "name": "vzteklí sršni"
+            "name": "rage hornets"
         },
         "grasping-advance": {
-            "name": "chňapavý postup"
+            "name": "grasping advance"
         },
         "hive-mind": {
-            "name": "kolektivní mysl"
+            "name": "hive mind"
         },
         "incubation": {
-            "name": "inkubace"
+            "name": "incubation"
         },
         "infest": {
-            "name": "zamořit"
+            "name": "infest"
         },
         "oasis": {
-            "name": "oáza"
+            "name": "oasis"
         },
         "omniscient-assault": {
-            "name": "vševědoucí útok"
+            "name": "omniscient assault"
         },
         "overwhelming-offensive": {
-            "name": "drtivá ofenziva"
+            "name": "overwhelming offensive"
         },
         "putrid-grubs": {
-            "name": "hnijící larvy"
+            "name": "putrid grubs"
         },
         "bloat-maggots": {
-            "name": "nafouklí červi"
+            "name": "bloat maggots"
         },
         "repulsive-host": {
-            "name": "odpudivý hostitel"
+            "name": "repulsive host"
         },
         "scattered-defense": {
-            "name": "rozptýlená obrana"
+            "name": "scattered defense"
         },
         "sunstroke": {
-            "name": "úžeh"
+            "name": "sunstroke"
         },
         "swarming-minions": {
-            "name": "rojící se přisluhovači"
+            "name": "swarming minions"
         },
         "the-storms-edge": {
-            "name": "ostří bouře"
+            "name": "the storm's edge"
         },
         "tomb-of-the-immortal": {
-            "name": "hrobka nesmrtelného"
+            "name": "tomb of the immortal"
         },
         "unstoppable-army": {
-            "name": "nezastavitelná armáda"
+            "name": "unstoppable army"
         },
         "steel-scarabs": {
-            "name": "ocelová skarabea"
+            "name": "steel scarabs"
         },
         "vampiric-tempest": {
-            "name": "upíří vichřice"
+            "name": "vampiric tempest"
         },
         "wasteland": {
-            "name": "pustina"
+            "name": "wasteland"
         },
         "rust-vermin": {
-            "name": "rzivá havěť"
+            "name": "rust vermin"
         },
         "ancient-ward": {
-            "name": "prastará ochrana"
+            "name": "ancient ward"
         },
         "Bear-reference": {
             "name": "Bear reference"
         },
         "blood-hunger": {
-            "name": "krvežíznivost"
+            "name": "blood hunger"
         },
         "borrowed-essence": {
-            "name": "vypůjčená esence"
+            "name": "borrowed essence"
         },
         "concentrated-rage": {
-            "name": "soustředěný vztek"
+            "name": "concentrated rage"
         },
         "disappearing-wounds": {
-            "name": "mizející rány"
+            "name": "disappearing wounds"
         },
         "disorienting-roar": {
-            "name": "dezorientující řev"
+            "name": "disorienting roar"
         },
         "earthen-spikes": {
-            "name": "zemní bodce"
+            "name": "earthen spikes"
         },
         "energizing-strike": {
-            "name": "povzbuzující úder"
+            "name": "energizing strike"
         },
         "focused-aggression": {
-            "name": "soustředěná agrese"
+            "name": "focused aggression"
         },
         "forceful-swipe": {
-            "name": "mocný švih"
+            "name": "forceful swipe"
         },
         "howling-bolts": {
-            "name": "vyjící blesky"
+            "name": "howling bolts"
         },
         "jaws-of-death": {
-            "name": "čelisti smrti"
+            "name": "jaws of death"
         },
         "lash-out": {
             "name": "vyrazit"
         },
         "maul": {
-            "name": "rozsápat"
+            "name": "maul"
         },
         "natural-remedy": {
-            "name": "přírodní lék"
+            "name": "natural remedy"
         },
         "patch-fur": {
-            "name": "zalátat srst"
+            "name": "patch fur"
         },
         "primal-blessing": {
-            "name": "prvotní požehnání"
+            "name": "primal blessing"
         },
         "punch-through": {
-            "name": "prorazit"
+            "name": "punch through"
         },
         "rampage": {
-            "name": "řádění"
+            "name": "rampage"
         },
         "relentless-ally": {
-            "name": "neúnavný spojenec"
+            "name": "relentless ally"
         },
         "soaring-ally": {
-            "name": "vznášející se spojenec"
+            "name": "soaring ally"
         },
         "spirit-swap": {
-            "name": "výměna duchů"
+            "name": "spirit swap"
         },
         "stone-sigil": {
-            "name": "kamenná pečeť"
+            "name": "stone sigil"
         },
         "storm-sigil": {
-            "name": "bouřková pečeť"
+            "name": "storm sigil"
         },
         "tribal-sigil": {
-            "name": "kmenová pečeť"
+            "name": "tribal sigil"
         },
         "tyrannical-force": {
-            "name": "tyranská síla"
+            "name": "tyrannical force"
         },
         "unstoppable-beast": {
-            "name": "nezastavitelná bestie"
+            "name": "unstoppable beast"
         },
         "venomous-ally": {
-            "name": "jedovatý spojenec"
+            "name": "venomous ally"
         },
         "vicious-ally": {
-            "name": "krutý spojenec"
+            "name": "vicious ally"
         },
         "avalanche": {
-            "name": "lavina"
+            "name": "avalanche"
         },
         "backup-ammunition": {
-            "name": "záložní střelivo"
+            "name": "backup ammunition"
         },
         "blind-destruction": {
-            "name": "slepá zkáza"
+            "name": "blind destruction"
         },
         "blunt-force": {
-            "name": "tupá síla"
+            "name": "blunt force"
         },
         "brutal-momentum": {
-            "name": "brutální hybnost"
+            "name": "brutal momentum"
         },
         "cataclysm": {
-            "name": "kataklyzma"
+            "name": "cataclysm"
         },
         "clear-the-way": {
-            "name": "uvolnit cestu"
+            "name": "clear the way"
         },
         "crater": {
-            "name": "kráter"
+            "name": "crater"
         },
         "crushing-grasp": {
-            "name": "drtivý stisk"
+            "name": "crushing grasp"
         },
         "dig-pit": {
-            "name": "vykopat jámu"
+            "name": "dig pit"
         },
         "dirt-tornado": {
-            "name": "prachové tornádo"
+            "name": "dirt tornado"
         },
         "earthen-clod": {
-            "name": "hrouda hlíny"
+            "name": "earthen clod"
         },
         "explosive-punch": {
-            "name": "výbušná rána"
+            "name": "explosive punch"
         },
         "forceful-storm": {
-            "name": "mocná bouře"
+            "name": "forceful storm"
         },
         "heaving-swing": {
-            "name": "těžký rozmach"
+            "name": "heaving swing"
         },
         "kinetic-assault": {
-            "name": "kinetický útok"
+            "name": "kinetic assault"
         },
         "lumbering-bash": {
-            "name": "těžkopádný náraz"
+            "name": "lumbering bash"
         },
         "massive-boulder": {
-            "name": "obrovský balvan"
+            "name": "massive boulder"
         },
         "meteor": {
             "name": "meteor"
         },
         "natures-lift": {
-            "name": "vzdušný vztlak přírody"
+            "name": "nature's lift"
         },
         "opposing-strike": {
-            "name": "protiúder"
+            "name": "opposing strike"
         },
         "petrify": {
-            "name": "zkamenět"
+            "name": "petrify"
         },
         "pulverize": {
-            "name": "rozdrtit na prach"
+            "name": "pulverize"
         },
         "rock-slide": {
-            "name": "sesuv skály"
+            "name": "rock slide"
         },
         "rock-tunnel": {
-            "name": "skalní tunel"
+            "name": "rock tunnel"
         },
         "rocky-end": {
-            "name": "skalní konec"
+            "name": "rocky end"
         },
         "rumbling-advance": {
-            "name": "dunivý postup"
+            "name": "rumbling advance"
         },
         "sentient-growth": {
-            "name": "vnímavý růst"
+            "name": "sentient growth"
         },
         "stone-pummel": {
-            "name": "kamenná pěst"
+            "name": "stone pummel"
         },
         "unstable-upheaval": {
-            "name": "nestabilní převrat"
+            "name": "unstable upheaval"
         },
         "a-moments-peace": {
-            "name": "chvilka klidu"
+            "name": "a moment's peace"
         },
         "camouflage": {
-            "name": "kamufláž"
+            "name": "camouflage"
         },
         "crashing-wave": {
-            "name": "dopadající vlna"
+            "name": "crashing wave"
         },
         "crippling-noose": {
-            "name": "zmrzačující oprátka"
+            "name": "crippling noose"
         },
         "darkened-skies": {
-            "name": "ztemnělé nebe"
+            "name": "darkened skies"
         },
         "detonation": {
-            "name": "detonace"
+            "name": "detonation"
         },
         "expose": {
             "name": "odhalit"
         },
         "felling-swoop": {
-            "name": "srážející střemhlav"
+            "name": "felling swoop"
         },
         "feral-instincts": {
-            "name": "divoké instinkty"
+            "name": "feral instincts"
         },
         "flight-of-flame": {
-            "name": "let plamene"
+            "name": "flight of flame"
         },
         "foot-snare": {
-            "name": "nášlapná past"
+            "name": "foot snare"
         },
         "fresh-kill": {
-            "name": "čerstvá kořist"
+            "name": "fresh kill"
         },
         "frightening-curse": {
-            "name": "děsivé prokletí"
+            "name": "frightening curse"
         },
         "impending-end": {
-            "name": "blížící se konec"
+            "name": "impending end"
         },
         "inescapable-fate": {
-            "name": "nevyhnutelný osud"
+            "name": "inescapable fate"
         },
         "lead-to-slaughter": {
-            "name": "vést na porážku"
+            "name": "lead to slaughter"
         },
         "multi-pronged-assault": {
-            "name": "útok z mnoha stran"
+            "name": "multi-pronged assault"
         },
         "natures-hunger": {
-            "name": "hlad přírody"
+            "name": "nature's hunger"
         },
         "predator-and-prey": {
-            "name": "lovec a kořist"
+            "name": "predator and prey"
         },
         "press-the-attack": {
-            "name": "tlačit na útok"
+            "name": "press the attack"
         },
         "race-to-the-grave": {
-            "name": "závod do hrobu"
+            "name": "race to the grave"
         },
         "rain-of-arrows": {
-            "name": "déšť šípů"
+            "name": "rain of arrows"
         },
         "relentless-offensive": {
-            "name": "neúnavná ofenziva"
+            "name": "relentless offensive"
         },
         "rising-momentum": {
-            "name": "rostoucí hybnost"
+            "name": "rising momentum"
         },
         "sap-life": {
-            "name": "vysát život"
+            "name": "sap life"
         },
         "singular-focus": {
-            "name": "jediné soustředění"
+            "name": "singular focus"
         },
         "solid-bow": {
-            "name": "pevný luk"
+            "name": "solid bow"
         },
         "swift-trickery": {
-            "name": "rychlá lest"
+            "name": "swift trickery"
         },
         "the-hunt-begins": {
-            "name": "lov začíná"
+            "name": "the hunt begins"
         },
         "vital-charge": {
-            "name": "životodárný výpad"
+            "name": "vital charge"
         },
         "wild-command": {
-            "name": "divoký rozkaz"
+            "name": "wild command"
         },
         "boiling-arc": {
-            "name": "vroucí oblouk"
+            "name": "boiling arc"
         },
         "brilliant-flash": {
-            "name": "oslnivý záblesk"
+            "name": "brilliant flash"
         },
         "burial": {
-            "name": "pohřeb"
+            "name": "burial"
         },
         "chain-lightning": {
-            "name": "řetězový blesk"
+            "name": "chain lightning"
         },
         "crystallizing-blast": {
-            "name": "krystalizující výbuch"
+            "name": "crystallizing blast"
         },
         "elemental-aegis": {
-            "name": "živelná ochrana"
+            "name": "elemental aegis"
         },
         "encompassing-shadow": {
-            "name": "objímající stín"
+            "name": "encompassing shadow"
         },
         "eternal-equilibrium": {
-            "name": "věčná rovnováha"
+            "name": "eternal equilibrium"
         },
         "ethereal-manifestation": {
-            "name": "éterické zjevení"
+            "name": "ethereal manifestation"
         },
         "eye-of-the-hurricane": {
-            "name": "oko hurikánu"
+            "name": "eye of the hurricane"
         },
         "formless-power": {
-            "name": "beztvará moc"
+            "name": "formless power"
         },
         "frigid-torrent": {
-            "name": "ledový příval"
+            "name": "frigid torrent"
         },
         "gravel-vortex": {
-            "name": "štěrkový vír"
+            "name": "gravel vortex"
         },
         "ice-spikes": {
-            "name": "ledové bodce"
+            "name": "ice spikes"
         },
         "infernal-vortex": {
-            "name": "pekelný vír"
+            "name": "infernal vortex"
         },
         "lava-eruption": {
-            "name": "výbuch lávy"
+            "name": "lava eruption"
         },
         "malleable-evocation": {
-            "name": "tvárné vyvolání"
+            "name": "malleable evocation"
         },
         "obsidian-shards": {
-            "name": "obsidiánové střepy"
+            "name": "obsidian shards"
         },
         "pragmatic-reinforcement": {
-            "name": "praktické posílení"
+            "name": "pragmatic reinforcement"
         },
         "primal-duality": {
-            "name": "prvotní dualita"
+            "name": "primal duality"
         },
         "pure-augmentation": {
-            "name": "čisté zesílení"
+            "name": "pure augmentation"
         },
         "raw-enhancement": {
-            "name": "surové vylepšení"
+            "name": "raw enhancement"
         },
         "shaping-the-ether": {
-            "name": "tvarování éteru"
+            "name": "shaping the ether"
         },
         "simulacrum": {
-            "name": "simulakrum"
+            "name": "simulacrum"
         },
         "stoking-hail": {
-            "name": "rozdmýchané kroupy"
+            "name": "stoking hail"
         },
         "tremulant-cyclone": {
-            "name": "třesoucí se cyklón"
+            "name": "tremulant cyclone"
         },
         "vengeance": {
-            "name": "pomsta"
+            "name": "vengeance"
         },
         "volatile-consumption": {
-            "name": "těkavé pohlcení"
+            "name": "volatile consumption"
         },
         "winters-edge": {
-            "name": "zimní ostří"
+            "name": "winter's edge"
         },
         "brain-leech": {
-            "name": "mozková pijavice"
+            "name": "brain leech"
         },
         "corrupting-embrace": {
-            "name": "zkáza v objetí"
+            "name": "corrupting embrace"
         },
         "cranium-overload": {
-            "name": "přetížení lebky"
+            "name": "cranium overload"
         },
         "dark-frenzy": {
-            "name": "temná zuřivost"
+            "name": "dark frenzy"
         },
         "domination": {
-            "name": "nadvláda"
+            "name": "domination"
         },
         "empathetic-assault": {
-            "name": "empatický útok"
+            "name": "empathetic assault"
         },
         "fearsome-blade": {
-            "name": "děsivá čepel"
+            "name": "fearsome blade"
         },
         "feedback-loop": {
-            "name": "zpětná smyčka"
+            "name": "feedback loop"
         },
         "frigid-apparition": {
-            "name": "ledové zjevení"
+            "name": "frigid apparition"
         },
         "frozen-mind": {
-            "name": "zmrzlá mysl"
+            "name": "frozen mind"
         },
         "gnawing-horde": {
-            "name": "hlodající horda"
+            "name": "gnawing horde"
         },
         "hostile-takeover": {
-            "name": "nepřátelské převzetí"
+            "name": "hostile takeover"
         },
         "into-the-night": {
-            "name": "do noci"
+            "name": "into the night"
         },
         "many-as-one": {
-            "name": "mnozí jako jeden"
+            "name": "many as one"
         },
         "mass-hysteria": {
-            "name": "masová hysterie"
+            "name": "mass hysteria"
         },
         "parasitic-influence": {
-            "name": "parazitní vliv"
+            "name": "parasitic influence"
         },
         "perverse-edge": {
-            "name": "zvrácené ostří"
+            "name": "perverse edge"
         },
         "phantasmal-killer": {
-            "name": "přízračný vrah"
+            "name": "phantasmal killer"
         },
         "pilfer": {
-            "name": "šlohnout"
+            "name": "pilfer"
         },
         "possession": {
-            "name": "posednutí"
+            "name": "possession"
         },
         "psychic-projection": {
-            "name": "psychická projekce"
+            "name": "psychic projection"
         },
         "scurry": {
-            "name": "uprchnout"
+            "name": "scurry"
         },
         "shared-nightmare": {
-            "name": "sdílená noční můra"
+            "name": "shared nightmare"
         },
         "silent-scream": {
-            "name": "tichý výkřik"
+            "name": "silent scream"
         },
         "submissive-affliction": {
-            "name": "poddajné trápení"
+            "name": "submissive affliction"
         },
         "the-minds-weakness": {
-            "name": "slabost mysli"
+            "name": "the mind's weakness"
         },
         "vicious-blood": {
-            "name": "krutá krev"
+            "name": "vicious blood"
         },
         "withering-claw": {
-            "name": "vadnoucí dráp"
+            "name": "withering claw"
         },
         "wretched-creature": {
-            "name": "ubohé stvoření"
+            "name": "wretched creature"
         },
         "angel-of-death": {
-            "name": "anděl smrti"
+            "name": "angel of death"
         },
         "armor-of-the-night": {
-            "name": "zbroj noci"
+            "name": "armor of the night"
         },
         "black-arrow": {
-            "name": "černý šíp"
+            "name": "black arrow"
         },
         "black-knives": {
-            "name": "černé nože"
+            "name": "black knives"
         },
         "claws-of-the-night": {
-            "name": "drápy noci"
+            "name": "claws of the night"
         },
         "cloak-of-shade": {
-            "name": "plášť stínu"
+            "name": "cloak of shade"
         },
         "concealed-dominance": {
-            "name": "skrytá nadvláda"
+            "name": "concealed dominance"
         },
         "dancing-shadows": {
-            "name": "tančící stíny"
+            "name": "dancing shadows"
         },
         "dark-cloud": {
-            "name": "temný oblak"
+            "name": "dark cloud"
         },
         "doomed-breeze": {
-            "name": "zkázonosný vánek"
+            "name": "doomed breeze"
         },
         "empowering-void": {
-            "name": "posilující prázdnota"
+            "name": "empowering void"
         },
         "enervating-wound": {
-            "name": "oslabující rána"
+            "name": "enervating wound"
         },
         "eyes-of-the-night": {
-            "name": "oči noci"
+            "name": "eyes of the night"
         },
         "gloom-darts": {
-            "name": "šipky temna"
+            "name": "gloom darts"
         },
         "grim-sustenance": {
-            "name": "pochmurná výživa"
+            "name": "grim sustenance"
         },
         "lurking-ruin": {
-            "name": "číhající zkáza"
+            "name": "lurking ruin"
         },
         "nightfall": {
-            "name": "soumrak"
+            "name": "nightfall"
         },
         "prepare-for-the-kill": {
-            "name": "příprava na zabití"
+            "name": "prepare for the kill"
         },
         "quiet-frenzy": {
-            "name": "tichá zuřivost"
+            "name": "quiet frenzy"
         },
         "silent-force": {
-            "name": "tichá síla"
+            "name": "silent force"
         },
         "smoke-step": {
-            "name": "kouřový krok"
+            "name": "smoke step"
         },
         "soulfire": {
-            "name": "duševní oheň"
+            "name": "soulfire"
         },
         "spirit-of-the-night": {
-            "name": "duch noci"
+            "name": "spirit of the night"
         },
         "swallowed-by-fear": {
-            "name": "pohlcen strachem"
+            "name": "swallowed by fear"
         },
         "terror-blade": {
-            "name": "čepel hrůzy"
+            "name": "terror blade"
         },
         "unseen-dread": {
-            "name": "neviditelná hrůza"
+            "name": "unseen dread"
         },
         "voice-of-the-night": {
-            "name": "hlas noci"
+            "name": "voice of the night"
         },
         "wings-of-the-night": {
-            "name": "křídla noci"
+            "name": "wings of the night"
         },
         "accelerated-end": {
-            "name": "urychlený konec"
+            "name": "accelerated end"
         },
         "airborne-toxin": {
-            "name": "vzdušný toxin"
+            "name": "airborne toxin"
         },
         "baneful-hex": {
-            "name": "zhoubná kletba"
+            "name": "baneful hex"
         },
         "biting-gnats": {
-            "name": "kousavý hmyz"
+            "name": "biting gnats"
         },
         "black-tides": {
-            "name": "černé přílivy"
+            "name": "black tides"
         },
         "blistering-vortex": {
-            "name": "pálivý vír"
+            "name": "blistering vortex"
         },
         "convert-the-flock": {
-            "name": "obrátit stádo"
+            "name": "convert the flock"
         },
         "creeping-curse": {
-            "name": "plíživé prokletí"
+            "name": "creeping curse"
         },
         "epidemic": {
-            "name": "epidemie"
+            "name": "epidemic"
         },
         "fetid-flurry": {
-            "name": "smrdutá smršť"
+            "name": "fetid flurry"
         },
         "foul-wind": {
-            "name": "odporný vítr"
+            "name": "foul wind"
         },
         "gathering-doom": {
-            "name": "sbírající se zkáza"
+            "name": "gathering doom"
         },
         "grasping-vermin": {
-            "name": "chňapající havěť"
+            "name": "grasping vermin"
         },
         "grim-bargain": {
-            "name": "pochmurná dohoda"
+            "name": "grim bargain"
         },
         "mass-extinction": {
-            "name": "hromadné vyhynutí"
+            "name": "mass extinction"
         },
         "nightmarish-affliction": {
-            "name": "děsivé trápení"
+            "name": "nightmarish affliction"
         },
         "paralyzing-bite": {
-            "name": "paralyzující kousnutí"
+            "name": "paralyzing bite"
         },
         "rot-maggots": {
-            "name": "červi hniloby"
+            "name": "rot maggots"
         },
         "scattered-terror": {
-            "name": "rozptýlená hrůza"
+            "name": "scattered terror"
         },
         "spreading-scourge": {
-            "name": "šířící se metla"
+            "name": "spreading scourge"
         },
         "spread-the-plague": {
-            "name": "šířit mor"
+            "name": "spread the plague"
         },
         "stinging-cloud": {
-            "name": "žahavý oblak"
+            "name": "stinging cloud"
         },
         "storm-of-wings": {
-            "name": "bouře křídel"
+            "name": "storm of wings"
         },
         "succumb-to-the-gift": {
-            "name": "podlehnout daru"
+            "name": "succumb to the gift"
         },
         "under-the-skin": {
-            "name": "pod kůží"
+            "name": "under the skin"
         },
         "vile-pestilence": {
-            "name": "odporný mor"
+            "name": "vile pestilence"
         },
         "virulent-strain": {
-            "name": "virulentní kmen"
+            "name": "virulent strain"
         },
         "willing-sacrifice": {
-            "name": "dobrovolná oběť"
+            "name": "willing sacrifice"
         },
         "winged-congregation": {
-            "name": "okřídlené shromáždění"
+            "name": "winged congregation"
         },
         "wretched-swarm": {
-            "name": "ubohý roj"
+            "name": "wretched swarm"
         },
         "bag-of-holding": {
-            "name": "bezedný vak"
+            "name": "bag of holding"
         },
         "bladed-boomerang": {
-            "name": "čepelový bumerang"
+            "name": "bladed boomerang"
         },
         "catastrophic-bomb": {
-            "name": "katastrofická bomba"
+            "name": "catastrophic bomb"
         },
         "cleaving-axe": {
-            "name": "štípající sekera"
+            "name": "cleaving axe"
         },
         "continual-supply": {
-            "name": "neustálé zásoby"
+            "name": "continual supply"
         },
         "crippling-bow": {
-            "name": "zmrzačující luk"
+            "name": "crippling bow"
         },
         "crushing-hammer": {
-            "name": "drtivé kladivo"
+            "name": "crushing hammer"
         },
         "fortified-position": {
-            "name": "opevněná pozice"
+            "name": "fortified position"
         },
         "giant-club": {
-            "name": "obří palice"
+            "name": "giant club"
         },
         "hastened-step": {
-            "name": "spěšný krok"
+            "name": "hastened step"
         },
         "impaling-spear": {
-            "name": "probodávající kopí"
+            "name": "impaling spear"
         },
         "iron-bulwark": {
-            "name": "železná hráz"
+            "name": "iron bulwark"
         },
         "oversized-pack": {
-            "name": "obrovský batoh"
+            "name": "oversized pack"
         },
         "portable-ballista": {
-            "name": "přenosná balista"
+            "name": "portable ballista"
         },
         "proficiency": {
-            "name": "zručnost"
+            "name": "proficiency"
         },
         "quiver-of-arrows": {
-            "name": "toulec šípů"
+            "name": "quiver of arrows"
         },
         "refreshment": {
-            "name": "občerstvení"
+            "name": "refreshment"
         },
         "reforge": {
-            "name": "překování"
+            "name": "reforge"
         },
         "reinforced-steel": {
-            "name": "zesílená ocel"
+            "name": "reinforced steel"
         },
         "reserved-energy": {
-            "name": "rezervní energie"
+            "name": "reserved energy"
         },
         "restock": {
-            "name": "doplnit zásoby"
+            "name": "restock"
         },
         "scroll-of-annihilation": {
-            "name": "svitek zničení"
+            "name": "scroll of annihilation"
         },
         "scroll-of-blizzards": {
-            "name": "svitek vánic"
+            "name": "scroll of blizzards"
         },
         "scroll-of-judgment": {
-            "name": "svitek soudu"
+            "name": "scroll of judgment"
         },
         "scroll-of-lightning": {
-            "name": "svitek blesků"
+            "name": "scroll of lightning"
         },
         "scroll-of-recall": {
-            "name": "svitek návratu"
+            "name": "scroll of recall"
         },
         "sharpening-kit": {
-            "name": "brusná souprava"
+            "name": "sharpening kit"
         },
         "side-pouch": {
-            "name": "postranní váček"
+            "name": "side pouch"
         },
         "amputate": {
-            "name": "amputovat"
+            "name": "amputate"
         },
         "battlefield-medicine": {
-            "name": "polní medicína"
+            "name": "battlefield medicine"
         },
         "bedside-manner": {
-            "name": "chování u lůžka"
+            "name": "bedside manner"
         },
         "blood-transfusion": {
-            "name": "krevní transfuze"
+            "name": "blood transfusion"
         },
         "bloody-saw": {
-            "name": "krvavá pila"
+            "name": "bloody saw"
         },
         "booster-shot": {
-            "name": "posilující injekce"
+            "name": "booster shot"
         },
         "curative-mixture": {
-            "name": "léčivá směs"
+            "name": "curative mixture"
         },
         "do-no-harm": {
-            "name": "neškodit"
+            "name": "do no harm"
         },
         "euthanize": {
             "name": "utratit"
         },
         "first-aid": {
-            "name": "první pomoc"
+            "name": "first aid"
         },
         "gentlemans-anger": {
-            "name": "gentlemanův hněv"
+            "name": "gentleman's anger"
         },
         "grisly-trauma": {
-            "name": "příšerné trauma"
+            "name": "grisly trauma"
         },
         "hamstring": {
-            "name": "podseknout šlachy"
+            "name": "hamstring"
         },
         "hand-of-the-surgeon": {
-            "name": "ruka chirurga"
+            "name": "hand of the surgeon"
         },
         "hold-back-the-pain": {
-            "name": "zadržet bolest"
+            "name": "hold back the pain"
         },
         "large-medical-pack": {
-            "name": "velká lékárnička"
+            "name": "large medical pack"
         },
         "master-physician": {
-            "name": "mistr lékař"
+            "name": "master physician"
         },
         "medical-pack": {
-            "name": "lékárnička"
+            "name": "medical pack"
         },
         "mobile-response": {
-            "name": "mobilní zásah"
+            "name": "mobile response"
         },
         "precaution": {
-            "name": "opatrnost"
+            "name": "precaution"
         },
         "prep-for-surgery": {
-            "name": "příprava na operaci"
+            "name": "prep for surgery"
         },
         "prescription": {
-            "name": "předpis"
+            "name": "prescription"
         },
         "prevention-is-key": {
-            "name": "prevence je základ"
+            "name": "prevention is key"
         },
         "regenerative-tissue": {
-            "name": "regenerační tkáň"
+            "name": "regenerative tissue"
         },
         "research-the-cure": {
-            "name": "hledání léku"
+            "name": "research the cure"
         },
         "surgeons-satchel": {
-            "name": "chirurgova brašna"
+            "name": "surgeon's satchel"
         },
         "syringe": {
-            "name": "stříkačka"
+            "name": "syringe"
         },
         "teamwork": {
-            "name": "týmová práce"
+            "name": "teamwork"
         },
         "triage": {
-            "name": "třídění raněných"
+            "name": "triage"
         },
         "vaccine": {
-            "name": "vakcína"
+            "name": "vaccine"
         },
         "vital-strike": {
-            "name": "životně důležitý úder"
+            "name": "vital strike"
         },
         "backstab": {
-            "name": "rána do zad"
+            "name": "backstab"
         },
         "burning-oil": {
-            "name": "hořící olej"
+            "name": "burning oil"
         },
         "crippling-poison": {
-            "name": "zmrzačující jed"
+            "name": "crippling poison"
         },
         "cull-the-weak": {
-            "name": "vybít slabé"
+            "name": "cull the weak"
         },
         "duelists-advance": {
-            "name": "duelantův postup"
+            "name": "duelist's advance"
         },
         "flanking-strike": {
-            "name": "úder z boku"
+            "name": "flanking strike"
         },
         "flintlock": {
-            "name": "křesadlovka"
+            "name": "flintlock"
         },
         "flurry-of-blades": {
-            "name": "smršť čepelí"
+            "name": "flurry of blades"
         },
         "gruesome-advantage": {
-            "name": "hrůzná výhoda"
+            "name": "gruesome advantage"
         },
         "hidden-daggers": {
-            "name": "skryté dýky"
+            "name": "hidden daggers"
         },
         "long-con": {
-            "name": "dlouhý podvod"
+            "name": "long con"
         },
         "open-wound": {
-            "name": "otevřená rána"
+            "name": "open wound"
         },
         "pains-end": {
-            "name": "konec bolesti"
+            "name": "pain's end"
         },
         "quick-hands": {
-            "name": "hbité ruce"
+            "name": "quick hands"
         },
         "single-out": {
-            "name": "vyčlenit"
+            "name": "single out"
         },
         "sinister-opportunity": {
-            "name": "zlověstná příležitost"
+            "name": "sinister opportunity"
         },
         "smoke-bomb": {
-            "name": "dýmovnice"
+            "name": "smoke bomb"
         },
         "special-mixture": {
-            "name": "speciální směs"
+            "name": "special mixture"
         },
         "spring-the-trap": {
             "name": "spustit past"
         },
         "stick-to-the-shadows": {
-            "name": "držet se stínů"
+            "name": "stick to the shadows"
         },
         "stiletto-storm": {
-            "name": "bouře stiletů"
+            "name": "stiletto storm"
         },
         "swift-bow": {
-            "name": "rychlý luk"
+            "name": "swift bow"
         },
         "thiefs-knack": {
-            "name": "zlodějský um"
+            "name": "thief's knack"
         },
         "throwing-knives": {
-            "name": "vrhací nože"
+            "name": "throwing knives"
         },
         "tricksters-reversal": {
-            "name": "šejdířův obrat"
+            "name": "trickster's reversal"
         },
         "venom-shiv": {
-            "name": "jedovatý nožík"
+            "name": "venom shiv"
         },
         "visage-of-the-inevitable": {
-            "name": "tvář nevyhnutelného"
+            "name": "visage of the inevitable"
         },
         "watch-it-burn": {
-            "name": "dívej se, jak hoří"
+            "name": "watch it burn"
         },
         "angelic-ascension": {
-            "name": "andělský vzestup"
+            "name": "angelic ascension"
         },
         "beacon-of-light": {
-            "name": "maják světla"
+            "name": "beacon of light"
         },
         "bright-aegis": {
-            "name": "zářivá aigida"
+            "name": "bright aegis"
         },
         "brilliant-prayer": {
-            "name": "zářivá modlitba"
+            "name": "brilliant prayer"
         },
         "burning-flash": {
-            "name": "žhavý záblesk"
+            "name": "burning flash"
         },
         "cautious-advance": {
-            "name": "opatrný postup"
+            "name": "cautious advance"
         },
         "cleansing-force": {
-            "name": "očišťující síla"
+            "name": "cleansing force"
         },
         "daybreak": {
-            "name": "úsvit"
+            "name": "daybreak"
         },
         "dazzling-charge": {
-            "name": "oslňující výpad"
+            "name": "dazzling charge"
         },
         "defensive-stance": {
-            "name": "obranný postoj"
+            "name": "defensive stance"
         },
         "divine-intervention": {
-            "name": "boží zásah"
+            "name": "divine intervention"
         },
         "empowering-command": {
-            "name": "posilující rozkaz"
+            "name": "empowering command"
         },
         "engulfing-radiance": {
-            "name": "pohlcující záře"
+            "name": "engulfing radiance"
         },
         "glorious-bolt": {
-            "name": "slavný blesk"
+            "name": "glorious bolt"
         },
         "hammer-blow": {
-            "name": "úder kladivem"
+            "name": "hammer blow"
         },
         "holy-strike": {
-            "name": "svatý úder"
+            "name": "holy strike"
         },
         "illuminate-the-target": {
-            "name": "osvítit cíl"
+            "name": "illuminate the target"
         },
         "inspiring-sanctity": {
-            "name": "inspirující svatost"
+            "name": "inspiring sanctity"
         },
         "lay-on-hands": {
-            "name": "vzkládání rukou"
+            "name": "lay on hands"
         },
         "mobilizing-axiom": {
-            "name": "mobilizující axiom"
+            "name": "mobilizing axiom"
         },
         "path-of-glory": {
-            "name": "cesta slávy"
+            "name": "path of glory"
         },
         "practical-plans": {
-            "name": "praktické plány"
+            "name": "practical plans"
         },
         "protective-blessing": {
-            "name": "ochranné požehnání"
+            "name": "protective blessing"
         },
         "purifying-aura": {
-            "name": "očišťující aura"
+            "name": "purifying aura"
         },
         "righteous-strength": {
-            "name": "spravedlivá síla"
+            "name": "righteous strength"
         },
         "scales-of-justice": {
-            "name": "váhy spravedlnosti"
+            "name": "scales of justice"
         },
         "supportive-chant": {
-            "name": "podpůrný zpěv"
+            "name": "supportive chant"
         },
         "tactical-order": {
-            "name": "taktický rozkaz"
+            "name": "tactical order"
         },
         "unwavering-mandate": {
-            "name": "neochvějný mandát"
+            "name": "unwavering mandate"
         },
         "weapon-of-purity": {
-            "name": "zbraň čistoty"
+            "name": "weapon of purity"
         },
         "booming-proclamation": {
-            "name": "zvučné provolání"
+            "name": "booming proclamation"
         },
         "call-to-action": {
-            "name": "výzva k činu"
+            "name": "call to action"
         },
         "captivating-performance": {
-            "name": "podmanivé vystoupení"
+            "name": "captivating performance"
         },
         "change-tempo": {
-            "name": "změna tempa"
+            "name": "change tempo"
         },
         "commanding-presence": {
-            "name": "velitelská přítomnost"
+            "name": "commanding presence"
         },
         "crippling-chorus": {
-            "name": "zmrzačující sbor"
+            "name": "crippling chorus"
         },
         "defensive-ditty": {
-            "name": "obranná písnička"
+            "name": "defensive ditty"
         },
         "disorienting-dirge": {
-            "name": "dezorientující žalozpěv"
+            "name": "disorienting dirge"
         },
         "echoing-aria": {
-            "name": "odrážející se árie"
+            "name": "echoing aria"
         },
         "inspiring-anthem": {
-            "name": "inspirující hymna"
+            "name": "inspiring anthem"
         },
         "marching-beat": {
-            "name": "pochodový rytmus"
+            "name": "marching beat"
         },
         "melody-and-harmony": {
-            "name": "melodie a harmonie"
+            "name": "melody and harmony"
         },
         "mobilizing-measure": {
-            "name": "mobilizující takt"
+            "name": "mobilizing measure"
         },
         "nightmare-serenade": {
-            "name": "noční můrová serenáda"
+            "name": "nightmare serenade"
         },
         "nimble-knife": {
-            "name": "hbitý nůž"
+            "name": "nimble knife"
         },
         "power-ballad": {
-            "name": "mocná balada"
+            "name": "power ballad"
         },
         "provoke-terror": {
-            "name": "vyvolat hrůzu"
+            "name": "provoke terror"
         },
         "pull-the-strings": {
-            "name": "tahat za nitky"
+            "name": "pull the strings"
         },
         "shadow-puppets": {
-            "name": "stínové loutky"
+            "name": "shadow puppets"
         },
         "singing-arrow": {
-            "name": "zpívající šíp"
+            "name": "singing arrow"
         },
         "song-of-speed": {
-            "name": "píseň rychlosti"
+            "name": "song of speed"
         },
         "soothing-lullaby": {
-            "name": "uklidňující ukolébavka"
+            "name": "soothing lullaby"
         },
         "throw-voice": {
-            "name": "vrhat hlas"
+            "name": "throw voice"
         },
         "tranquil-trill": {
-            "name": "poklidná trylka"
+            "name": "tranquil trill"
         },
         "tuning-the-outcome": {
-            "name": "ladění výsledku"
+            "name": "tuning the outcome"
         },
         "unending-chant": {
-            "name": "nekonečný zpěv"
+            "name": "unending chant"
         },
         "warding-dagger": {
-            "name": "ochranná dýka"
+            "name": "warding dagger"
         },
         "wistful-wounding": {
-            "name": "toužebné zranění"
+            "name": "wistful wounding"
         },
         "biting-wind": {
-            "name": "kousavý vítr"
+            "name": "biting wind"
         },
         "black-fire": {
-            "name": "černý oheň"
+            "name": "black fire"
         },
         "bonded-might": {
-            "name": "spoutaná moc"
+            "name": "bonded might"
         },
         "conjured-aid": {
-            "name": "přivolaná pomoc"
+            "name": "conjured aid"
         },
         "divided-mind": {
-            "name": "rozdělená mysl"
+            "name": "divided mind"
         },
         "earthen-steed": {
-            "name": "zemní oř"
+            "name": "earthen steed"
         },
         "endless-spikes": {
-            "name": "nekonečné bodce"
+            "name": "endless spikes"
         },
         "ethereal-vines": {
-            "name": "éterické liány"
+            "name": "ethereal vines"
         },
         "forged-ferocity": {
-            "name": "zkovaná dravost"
+            "name": "forged ferocity"
         },
         "grasping-the-void": {
-            "name": "sáhnout do prázdnoty"
+            "name": "grasping the void"
         },
         "horned-majesty": {
-            "name": "rohatá majestátnost"
+            "name": "horned majesty"
         },
         "inexorable-momentum": {
-            "name": "neodvratná hybnost"
+            "name": "inexorable momentum"
         },
         "interplanar-mastery": {
-            "name": "mezirovinné mistrovství"
+            "name": "interplanar mastery"
         },
         "intervening-apparitions": {
-            "name": "zasahující přízraky"
+            "name": "intervening apparitions"
         },
         "leathery-wings": {
-            "name": "kožnatá křídla"
+            "name": "leathery wings"
         },
         "living-mountain": {
-            "name": "živá hora"
+            "name": "living mountain"
         },
         "living-night": {
-            "name": "živá noc"
+            "name": "living night"
         },
         "mighty-bond": {
-            "name": "mocné pouto"
+            "name": "mighty bond"
         },
         "negative-energy": {
-            "name": "negativní energie"
+            "name": "negative energy"
         },
         "oozing-manifestation": {
-            "name": "prosakující zjevení"
+            "name": "oozing manifestation"
         },
         "otherworldly-rage": {
-            "name": "nadpozemský vztek"
+            "name": "otherworldly rage"
         },
         "staff-of-visions": {
-            "name": "hůl vidění"
+            "name": "staff of visions"
         },
         "strength-in-numbers": {
-            "name": "síla v počtu"
+            "name": "strength in numbers"
         },
         "tear-the-fabric": {
-            "name": "roztrhnout tkáň světa"
+            "name": "tear the fabric"
         },
         "unending-dominance": {
-            "name": "nekonečná nadvláda"
+            "name": "unending dominance"
         },
         "unwavering-hand": {
-            "name": "pevná ruka"
+            "name": "unwavering hand"
         },
         "volatile-flame": {
-            "name": "těkavý plamen"
+            "name": "volatile flame"
         },
         "wild-animation": {
-            "name": "divoké oživení"
+            "name": "wild animation"
         },
         "aid-from-the-ether": {
-            "name": "pomoc z éteru"
+            "name": "aid from the ether"
         },
         "black-hole": {
-            "name": "černá díra"
+            "name": "black hole"
         },
         "chromatic-explosion": {
-            "name": "chromatický výbuch"
+            "name": "chromatic explosion"
         },
         "cold-fire": {
-            "name": "studený oheň"
+            "name": "cold fire"
         },
         "cold-front": {
-            "name": "studená fronta"
+            "name": "cold front"
         },
         "crackling-air": {
-            "name": "praskající vzduch"
+            "name": "crackling air"
         },
         "elemental-aid": {
-            "name": "živelná pomoc"
+            "name": "elemental aid"
         },
         "engulfed-in-flames": {
-            "name": "zahalen plameny"
+            "name": "engulfed in flames"
         },
         "fire-orbs": {
-            "name": "ohnivé koule"
+            "name": "fire orbs"
         },
         "flame-strike": {
-            "name": "plamenný úder"
+            "name": "flame strike"
         },
         "flashing-burst": {
-            "name": "bleskový výbuch"
+            "name": "flashing burst"
         },
         "forked-beam": {
-            "name": "rozdvojený paprsek"
+            "name": "forked beam"
         },
         "freezing-nova": {
-            "name": "mrazivá nova"
+            "name": "freezing nova"
         },
         "frost-armor": {
-            "name": "ledová zbroj"
+            "name": "frost armor"
         },
         "frozen-night": {
-            "name": "zmrzlá noc"
+            "name": "frozen night"
         },
         "hardened-spikes": {
-            "name": "zatvrdlé bodce"
+            "name": "hardened spikes"
         },
         "icy-blast": {
-            "name": "ledový poryv"
+            "name": "icy blast"
         },
         "impaling-eruption": {
-            "name": "probodávající erupce"
+            "name": "impaling eruption"
         },
         "inferno": {
             "name": "inferno"
         },
         "living-torch": {
-            "name": "živá pochodeň"
+            "name": "living torch"
         },
         "mana-bolt": {
-            "name": "many střela"
+            "name": "mana bolt"
         },
         "reviving-ether": {
-            "name": "oživující éter"
+            "name": "reviving ether"
         },
         "ride-the-wind": {
-            "name": "jízda na větru"
+            "name": "ride the wind"
         },
         "spirit-of-doom": {
-            "name": "duch zkázy"
+            "name": "spirit of doom"
         },
         "stone-fists": {
-            "name": "kamenné pěsti"
+            "name": "stone fists"
         },
         "twin-restoration": {
-            "name": "dvojí obnova"
+            "name": "twin restoration"
         },
         "zephyr-wings": {
-            "name": "křídla zefýru"
+            "name": "zephyr wings"
         },
         "auto-turret": {
-            "name": "automatická věž"
+            "name": "auto turret"
         },
         "chimeric-formula": {
-            "name": "chimérický vzorec"
+            "name": "chimeric formula"
         },
         "crank-bow": {
-            "name": "kuše na kliku"
+            "name": "crank bow"
         },
         "curative-aerosol": {
-            "name": "léčivý aerosol"
+            "name": "curative aerosol"
         },
         "dangerous-contraption": {
-            "name": "nebezpečný vynález"
+            "name": "dangerous contraption"
         },
         "disintegration-beam": {
-            "name": "rozkladný paprsek"
+            "name": "disintegration beam"
         },
         "disorienting-flash": {
-            "name": "dezorientující záblesk"
+            "name": "disorienting flash"
         },
         "energizing-tonic": {
-            "name": "povzbuzující tonikum"
+            "name": "energizing tonic"
         },
         "enhancement-field": {
-            "name": "zesilující pole"
+            "name": "enhancement field"
         },
         "flamethrower": {
-            "name": "plamenomet"
+            "name": "flamethrower"
         },
         "gas-canister": {
-            "name": "plynová nádoba"
+            "name": "gas canister"
         },
         "harmless-contraption": {
-            "name": "neškodný vynález"
+            "name": "harmless contraption"
         },
         "harsh-stimulants": {
-            "name": "silné stimulanty"
+            "name": "harsh stimulants"
         },
         "hook-gun": {
-            "name": "hákovnice"
+            "name": "hook gun"
         },
         "ink-bomb": {
-            "name": "inkoustová bomba"
+            "name": "ink bomb"
         },
         "jet-propulsion": {
-            "name": "tryskový pohon"
+            "name": "jet propulsion"
         },
         "lethal-injection": {
-            "name": "smrtelná injekce"
+            "name": "lethal injection"
         },
         "micro-bots": {
-            "name": "mikroboti"
+            "name": "micro bots"
         },
         "murderous-contraption": {
-            "name": "vražedný vynález"
+            "name": "murderous contraption"
         },
         "net-shooter": {
-            "name": "vystřelovač sítí"
+            "name": "net shooter"
         },
         "noxious-vials": {
-            "name": "jedovaté lahvičky"
+            "name": "noxious vials"
         },
         "potent-potables": {
-            "name": "silné lektvary"
+            "name": "potent potables"
         },
         "proximity-mine": {
-            "name": "nášlapná mina"
+            "name": "proximity mine"
         },
         "reinvigorating-elixir": {
-            "name": "oživující elixír"
+            "name": "reinvigorating elixir"
         },
         "restorative-mist": {
-            "name": "obnovující mlha"
+            "name": "restorative mist"
         },
         "reviving-shock": {
-            "name": "oživující šok"
+            "name": "reviving shock"
         },
         "stamina-booster": {
-            "name": "posilovač výdrže"
+            "name": "stamina booster"
         },
         "stun-shot": {
-            "name": "omračující výstřel"
+            "name": "stun shot"
         },
         "tinkerers-tools": {
-            "name": "kutilovo nářadí"
+            "name": "tinkerer's tools"
         },
         "toxic-bolt": {
-            "name": "jedovatý šíp"
+            "name": "toxic bolt"
         },
         "volatile-concoction": {
-            "name": "těkavá směs"
+            "name": "volatile concoction"
         }
     },
     "fc": {
         "anguish-and-salvation": {
-            "name": "muka a spása"
+            "name": "anguish and salvation"
         },
         "anticipate-intricacies": {
-            "name": "předvídat složitosti"
+            "name": "anticipate intricacies"
         },
         "bad-omen": {
-            "name": "zlé znamení"
+            "name": "bad omen"
         },
         "call-of-the-nether": {
-            "name": "volání podsvětí"
+            "name": "call of the nether"
         },
         "careful-attunement": {
-            "name": "opatrné vyladění"
+            "name": "careful attunement"
         },
         "clairvoyance": {
-            "name": "jasnovidectví"
+            "name": "clairvoyance"
         },
         "cleansing-rite": {
-            "name": "očistný obřad"
+            "name": "cleansing rite"
         },
         "curative-flux": {
-            "name": "léčivý tok"
+            "name": "curative flux"
         },
         "cursed-ground": {
-            "name": "prokletá půda"
+            "name": "cursed ground"
         },
         "deep-contemplation": {
-            "name": "hluboké rozjímání"
+            "name": "deep contemplation"
         },
         "dimensional-divide": {
-            "name": "rozdělení dimenzí"
+            "name": "dimensional divide"
         },
         "dimensional-transfer": {
-            "name": "přenos dimenzí"
+            "name": "dimensional transfer"
         },
         "duality-shards": {
-            "name": "střepy dvojnosti"
+            "name": "duality shards"
         },
         "enfeebling-hex": {
-            "name": "zeslabující kletba"
+            "name": "enfeebling hex"
         },
         "envision-the-course": {
-            "name": "představit si směr"
+            "name": "envision the course"
         },
         "ethereal-vortex": {
-            "name": "éterický vír"
+            "name": "ethereal vortex"
         },
         "gift-of-the-void": {
-            "name": "dar prázdnoty"
+            "name": "gift of the void"
         },
         "hand-of-destiny": {
-            "name": "ruka osudu"
+            "name": "hand of destiny"
         },
         "inspiration-from-beyond": {
-            "name": "inspirace z říše za oponou"
+            "name": "inspiration from beyond"
         },
         "otherworldly-journey": {
-            "name": "nadpozemská cesta"
+            "name": "otherworldly journey"
         },
         "peer-into-battle": {
-            "name": "nahlédnout do bitvy"
+            "name": "peer into battle"
         },
         "planar-fissure": {
-            "name": "rovinná trhlina"
+            "name": "planar fissure"
         },
         "preordain-the-path": {
-            "name": "předurčit cestu"
+            "name": "preordain the path"
         },
         "protective-aura": {
             "name": "ochranná aura"
         },
         "ray-of-light": {
-            "name": "paprsek světla"
+            "name": "ray of light"
         },
         "revitalizing-fount": {
-            "name": "oživující pramen"
+            "name": "revitalizing fount"
         },
         "seal-their-fate": {
-            "name": "zpečetit jejich osud"
+            "name": "seal their fate"
         },
         "void-snare": {
-            "name": "past prázdnoty"
+            "name": "void snare"
         }
     },
     "jotl": {
         "collateral-damage": {
-            "name": "vedlejší škody"
+            "name": "collateral damage"
         },
         "crash-protocol": {
-            "name": "havarijní protokol"
+            "name": "crash protocol"
         },
         "crushing-weight": {
-            "name": "drtivá tíha"
+            "name": "crushing weight"
         },
         "drill-fist": {
-            "name": "vrtná pěst"
+            "name": "drill fist"
         },
         "dust-cloud": {
-            "name": "oblak prachu"
+            "name": "dust cloud"
         },
         "explode": {
-            "name": "výbuch"
+            "name": "explode"
         },
         "explosive-blitz": {
-            "name": "výbušný nápor"
+            "name": "explosive blitz"
         },
         "extra-fuel": {
-            "name": "extra palivo"
+            "name": "extra fuel"
         },
         "fire-bombs": {
-            "name": "ohnivé bomby"
+            "name": "fire bombs"
         },
         "gut-punch": {
-            "name": "rána do břicha"
+            "name": "gut punch"
         },
         "implode": {
-            "name": "imploze"
+            "name": "implode"
         },
         "insult-to-injury": {
-            "name": "přilít olej do ohně"
+            "name": "insult to injury"
         },
         "knock-out-the-support": {
-            "name": "vyřaď podporu"
+            "name": "knock out the support"
         },
         "level": {
             "name": "úroveň"
         },
         "lobbed-charge": {
-            "name": "vržená nálož"
+            "name": "lobbed charge"
         },
         "mech-suit": {
-            "name": "mechanický oblek"
+            "name": "mech suit"
         },
         "micro-missiles": {
-            "name": "mikroraketky"
+            "name": "micro missiles"
         },
         "nowhere-to-run": {
-            "name": "není kam utéct"
+            "name": "nowhere to run"
         },
         "one-two-punch": {
-            "name": "levá pravá"
+            "name": "one-two punch"
         },
         "piston-punch": {
-            "name": "pístový úder"
+            "name": "piston punch"
         },
         "remote-detonation": {
-            "name": "dálkový odpal"
+            "name": "remote detonation"
         },
         "robotic-enhancement": {
-            "name": "robotické vylepšení"
+            "name": "robotic enhancement"
         },
         "rubble": {
             "name": "suť"
         },
         "the-bigger-one": {
-            "name": "ta větší"
+            "name": "the bigger one"
         },
         "the-big-one": {
-            "name": "ta velká"
+            "name": "the big one"
         },
         "wholesale-destruction": {
-            "name": "totální zkáza"
+            "name": "wholesale destruction"
         },
         "windup": {
-            "name": "rozpřah"
+            "name": "windup"
         },
         "bombardment": {
-            "name": "bombardování"
+            "name": "bombardment"
         },
         "brutalize": {
-            "name": "zbrutalizovat"
+            "name": "brutalize"
         },
         "camaraderie": {
-            "name": "soudržnost"
+            "name": "camaraderie"
         },
         "care-package": {
-            "name": "zásilka pomoci"
+            "name": "care package"
         },
         "center-mass": {
-            "name": "střed těla"
+            "name": "center mass"
         },
         "close-cuts": {
-            "name": "krátké sekce"
+            "name": "close cuts"
         },
         "disorienting-barrage": {
-            "name": "zmatečná palba"
+            "name": "disorienting barrage"
         },
         "double-throw": {
             "name": "dvojitý hod"
         },
         "excessive-force": {
-            "name": "nadměrná síla"
+            "name": "excessive force"
         },
         "executiones-axe": {
-            "name": "katova sekera"
+            "name": "executioner's axe"
         },
         "extra-lift": {
-            "name": "přídavný zdvih"
+            "name": "extra lift"
         },
         "fancy-hat": {
-            "name": "ozdobný klobouk"
+            "name": "fancy hat"
         },
         "fearsome-efficiency": {
-            "name": "děsivá účinnost"
+            "name": "fearsome efficiency"
         },
         "follow-through": {
-            "name": "dokončený úder"
+            "name": "follow through"
         },
         "heart-seeker": {
-            "name": "hledač srdcí"
+            "name": "heart seeker"
         },
         "overwatch": {
-            "name": "hlídkování"
+            "name": "overwatch"
         },
         "power-pitch": {
-            "name": "silný nadhoz"
+            "name": "power pitch"
         },
         "quick-turnaround": {
-            "name": "rychlý obrat"
+            "name": "quick turnaround"
         },
         "repeat-shot": {
-            "name": "opakovaná střela"
+            "name": "repeat shot"
         },
         "retrieval": {
-            "name": "vyzvednutí"
+            "name": "retrieval"
         },
         "ricochet": {
-            "name": "odraz střely"
+            "name": "ricochet"
         },
         "ripped-from-the-flesh": {
-            "name": "vyrváno z masa"
+            "name": "ripped from the flesh"
         },
         "second-wind": {
-            "name": "druhý dech"
+            "name": "second wind"
         },
         "sharpened-blades": {
-            "name": "nabroušené čepele"
+            "name": "sharpened blades"
         },
         "shrapnel": {
-            "name": "šrapnel"
+            "name": "shrapnel"
         },
         "stopping-power": {
-            "name": "zastavovací síla"
+            "name": "stopping power"
         },
         "the-favorite": {
             "name": "oblíbenec"
         },
         "the-new-favorite": {
-            "name": "nový oblíbenec"
+            "name": "the new favorite"
         },
         "barbaric-instincts": {
-            "name": "barbarské instinkty"
+            "name": "barbaric instincts"
         },
         "blade-dance": {
-            "name": "tanec čepelí"
+            "name": "blade dance"
         },
         "blinding-sickle": {
             "name": "oslepující srp"
         },
         "burn-away-the-dark": {
-            "name": "spal temnotu"
+            "name": "burn away the dark"
         },
         "desert-night": {
-            "name": "pouštní noc"
+            "name": "desert night"
         },
         "fierce-brilliance": {
-            "name": "zuřivý třpyt"
+            "name": "fierce brilliance"
         },
         "flame-shroud": {
-            "name": "ohnivý závoj"
+            "name": "flame shroud"
         },
         "flaming-sickle": {
-            "name": "plamenný srp"
+            "name": "flaming sickle"
         },
         "flying-sickle": {
-            "name": "létající srp"
+            "name": "flying sickle"
         },
         "harvest-sickle": {
-            "name": "žací srp"
+            "name": "harvest sickle"
         },
         "healing-sands": {
             "name": "léčivé písky"
         },
         "honorable-fury": {
-            "name": "ctihodný hněv"
+            "name": "honorable fury"
         },
         "horns-of-the-beast": {
-            "name": "rohy šelmy"
+            "name": "horns of the beast"
         },
         "no-fear": {
-            "name": "bez strachu"
+            "name": "no fear"
         },
         "precision-strike": {
-            "name": "přesný zásah"
+            "name": "precision strike"
         },
         "prismatic-sickle": {
-            "name": "hranolový srp"
+            "name": "prismatic sickle"
         },
         "radiant-sickle": {
-            "name": "zářivý srp"
+            "name": "radiant sickle"
         },
         "sand-devil": {
-            "name": "písečný ďábel"
+            "name": "sand devil"
         },
         "shield-of-the-desert": {
-            "name": "štít pouště"
+            "name": "shield of the desert"
         },
         "shield-spikes": {
-            "name": "hroty na štítu"
+            "name": "shield spikes"
         },
         "shocking-advance": {
-            "name": "šokující postup"
+            "name": "shocking advance"
         },
         "soaring-shield": {
-            "name": "vznášející se štít"
+            "name": "soaring shield"
         },
         "strangling-chain": {
-            "name": "škrtící řetěz"
+            "name": "strangling chain"
         },
         "swift-strength": {
-            "name": "rychlá síla"
+            "name": "swift strength"
         },
         "twirling-stabs": {
-            "name": "vířivé bodnutí"
+            "name": "twirling stabs"
         },
         "vicious-ballet": {
-            "name": "krutý balet"
+            "name": "vicious ballet"
         },
         "warmth-of-the-sun": {
-            "name": "teplo slunce"
+            "name": "warmth of the sun"
         },
         "warrior-of-the-sun": {
-            "name": "válečník slunce"
+            "name": "warrior of the sun"
         },
         "black-boon": {
-            "name": "černý dar"
+            "name": "black boon"
         },
         "close-to-the-abyss": {
-            "name": "blízko propasti"
+            "name": "close to the abyss"
         },
         "cold-embrace": {
-            "name": "chladné objetí"
+            "name": "cold embrace"
         },
         "commanding-presence": {
-            "name": "velitelská přítomnost"
+            "name": "commanding presence"
         },
         "crushing-cold": {
-            "name": "drtivý chlad"
+            "name": "crushing cold"
         },
         "empowered-link": {
-            "name": "posílené spojení"
+            "name": "empowered link"
         },
         "eye-of-the-void": {
-            "name": "oko Prázdnoty"
+            "name": "eye of the void"
         },
         "freeze-the-soul": {
-            "name": "zmrazit duši"
+            "name": "freeze the soul"
         },
         "gift-of-the-void": {
-            "name": "dar Prázdnoty"
+            "name": "gift of the void"
         },
         "give-and-take": {
-            "name": "dávat a brát"
+            "name": "give and take"
         },
         "grasp-of-doom": {
-            "name": "sevření zkázy"
+            "name": "grasp of doom"
         },
         "hateful-blast": {
-            "name": "nenávistná rána"
+            "name": "hateful blast"
         },
         "lull-into-oblivion": {
-            "name": "ukolébat do zapomnění"
+            "name": "lull into oblivion"
         },
         "lure-of-the-void": {
-            "name": "vábení Prázdnoty"
+            "name": "lure of the void"
         },
         "master-influence": {
-            "name": "ovládnout vliv"
+            "name": "master influence"
         },
         "possessed-by-fate": {
-            "name": "posedlý osudem"
+            "name": "possessed by fate"
         },
         "resigned-frenzy": {
-            "name": "odevzdané šílenství"
+            "name": "resigned frenzy"
         },
         "sap-warmth": {
-            "name": "vysát teplo"
+            "name": "sap warmth"
         },
         "savage-instinct": {
-            "name": "divoký instinkt"
+            "name": "savage instinct"
         },
         "signs-of-the-void": {
             "name": "znamení Prázdnoty"
         },
         "spirit-hunger": {
-            "name": "hlad ducha"
+            "name": "spirit hunger"
         },
         "stand-fast": {
-            "name": "stůj pevně"
+            "name": "stand fast"
         },
         "suggestion": {
             "name": "sugesce"
         },
         "surge-of-power": {
-            "name": "příval síly"
+            "name": "surge of power"
         },
         "taunting-fate": {
-            "name": "pošklebování osudu"
+            "name": "taunting fate"
         },
         "the-last-journey": {
-            "name": "poslední cesta"
+            "name": "the last journey"
         },
         "turn-out-the-lights": {
-            "name": "zhasni světla"
+            "name": "turn out the lights"
         },
         "wicked-scratch": {
-            "name": "zlý šrám"
+            "name": "wicked scratch"
         },
         "withering-conviction": {
-            "name": "chřadnoucí přesvědčení"
+            "name": "withering conviction"
         }
     },
     "cs": {
@@ -3477,1636 +3477,1636 @@ export default {
     },
     "fh": {
         "blurry-jab": {
-            "name": "rozmazaný úder"
+            "name": "blurry jab"
         },
         "borrowed-time": {
-            "name": "vypůjčený čas"
+            "name": "borrowed time"
         },
         "breakneck-speed": {
-            "name": "závratná rychlost"
+            "name": "breakneck speed"
         },
         "cascading-reaction": {
-            "name": "řetězová reakce"
+            "name": "cascading reaction"
         },
         "double-time": {
-            "name": "dvojitým tempem"
+            "name": "double time"
         },
         "drive-recharge": {
-            "name": "dobití pohonu"
+            "name": "drive recharge"
         },
         "experimental-adjustment": {
-            "name": "pokusné nastavení"
+            "name": "experimental adjustment"
         },
         "fastest-alive": {
-            "name": "nejrychlejší na světě"
+            "name": "fastest alive"
         },
         "flashing-flurry": {
-            "name": "bleskurychlá smršť"
+            "name": "flashing flurry"
         },
         "fractured-timeline": {
-            "name": "roztříštěná časová osa"
+            "name": "fractured timeline"
         },
         "hit-and-run": {
-            "name": "udeř a uteč"
+            "name": "hit and run"
         },
         "kinetic-transfer": {
-            "name": "kinetický přenos"
+            "name": "kinetic transfer"
         },
         "make-it-count": {
-            "name": "ať to má smysl"
+            "name": "make it count"
         },
         "overdrive": {
-            "name": "přetaktování"
+            "name": "overdrive"
         },
         "phasing-blades": {
-            "name": "fázující čepele"
+            "name": "phasing blades"
         },
         "potential-energy": {
-            "name": "potenciální energie"
+            "name": "potential energy"
         },
         "power-leak": {
-            "name": "únik energie"
+            "name": "power leak"
         },
         "precision-timing": {
-            "name": "přesné načasování"
+            "name": "precision timing"
         },
         "quantum-uncertainty": {
-            "name": "kvantová nejistota"
+            "name": "quantum uncertainty"
         },
         "reckless-augmentation": {
-            "name": "bezohledné posílení"
+            "name": "reckless augmentation"
         },
         "reverse-the-flow": {
-            "name": "obrať tok"
+            "name": "reverse the flow"
         },
         "rushed-to-the-end": {
-            "name": "spěch do cíle"
+            "name": "rushed to the end"
         },
         "sand-in-the-hourglass": {
-            "name": "písek v přesýpacích hodinách"
+            "name": "sand in the hourglass"
         },
         "sap-speed": {
-            "name": "vysát rychlost"
+            "name": "sap speed"
         },
         "stab-them-all": {
-            "name": "probodni je všechny"
+            "name": "stab them all"
         },
         "systems-reboot": {
-            "name": "restart systémů"
+            "name": "systems reboot"
         },
         "temporal-displacement": {
-            "name": "časový posun"
+            "name": "temporal displacement"
         },
         "the-knife's-edge": {
-            "name": "ostří nože"
+            "name": "the knife's edge"
         },
         "twin-strike": {
-            "name": "dvojitý úder"
+            "name": "twin strike"
         },
         "air-support": {
-            "name": "vzdušná podpora"
+            "name": "air support"
         },
         "trained-falcon": {
-            "name": "vycvičený sokol"
+            "name": "trained falcon"
         },
         "at-all-costs": {
             "name": "za každou cenu"
         },
         "reinforcement": {
-            "name": "posila"
+            "name": "reinforcement"
         },
         "barricade": {
             "name": "barikáda"
         },
         "banner-of-valor": {
-            "name": "prapor udatnosti"
+            "name": "banner of valor"
         },
         "boldening-blow": {
-            "name": "povzbuzující rána"
+            "name": "boldening blow"
         },
         "bolstering-shout": {
-            "name": "posilující výkřik"
+            "name": "bolstering shout"
         },
         "combined-effort": {
-            "name": "spojené úsilí"
+            "name": "combined effort"
         },
         "deflecting-maneuver": {
-            "name": "odvracející manévr"
+            "name": "deflecting maneuver"
         },
         "driving-inspiration": {
-            "name": "hnací inspirace"
+            "name": "driving inspiration"
         },
         "banner-of-hope": {
-            "name": "prapor naděje"
+            "name": "banner of hope"
         },
         "explosive-epicenter": {
-            "name": "výbušné epicentrum"
+            "name": "explosive epicenter"
         },
         "hail-of-spears": {
-            "name": "krupobití kopí"
+            "name": "hail of spears"
         },
         "head-of-the-hammer": {
-            "name": "hlava kladiva"
+            "name": "head of the hammer"
         },
         "hold-the-line": {
-            "name": "drž linii"
+            "name": "hold the line"
         },
         "incendiary-throw": {
-            "name": "zápalný hod"
+            "name": "incendiary throw"
         },
         "torch-bearer": {
-            "name": "nosič pochodně"
+            "name": "torch bearer"
         },
         "javelin": {
-            "name": "oštěp"
+            "name": "javelin"
         },
         "lead-from-afar": {
-            "name": "veď zpovzdálí"
+            "name": "lead from afar"
         },
         "longbowman": {
             "name": "lučištník"
         },
         "let-them-come": {
-            "name": "nechte je přijít"
+            "name": "let them come"
         },
         "banner-of-courage": {
-            "name": "prapor odvahy"
+            "name": "banner of courage"
         },
         "meat-grinder": {
-            "name": "mlýnek na maso"
+            "name": "meat grinder"
         },
         "pincer-movement": {
-            "name": "kleštový manévr"
+            "name": "pincer movement"
         },
         "pinning-charge": {
-            "name": "přišpendlující nápor"
+            "name": "pinning charge"
         },
         "rallying-cry": {
-            "name": "bojový pokřik"
+            "name": "rallying cry"
         },
         "banner-of-strength": {
-            "name": "prapor síly"
+            "name": "banner of strength"
         },
         "regroup": {
-            "name": "přeskupit se"
+            "name": "regroup"
         },
         "resolved-courage": {
-            "name": "odhodlaná odvaha"
+            "name": "resolved courage"
         },
         "set-for-the-charge": {
-            "name": "připraven k útoku"
+            "name": "set for the charge"
         },
         "sweeping-aid": {
-            "name": "plošná pomoc"
+            "name": "sweeping aid"
         },
         "take-no-prisoners": {
-            "name": "žádné zajatce"
+            "name": "take no prisoners"
         },
         "banner-of-doom": {
-            "name": "prapor zkázy"
+            "name": "banner of doom"
         },
         "taunting-howl": {
-            "name": "posměšné zavytí"
+            "name": "taunting howl"
         },
         "tip-of-the-spear": {
-            "name": "hrot kopí"
+            "name": "tip of the spear"
         },
         "tri-thrust": {
-            "name": "trojitý výpad"
+            "name": "tri-thrust"
         },
         "unbreakable-wall": {
-            "name": "neprolomitelná zeď"
+            "name": "unbreakable wall"
         },
         "angry-spirits": {
-            "name": "rozzlobení duchové"
+            "name": "angry spirits"
         },
         "wraith": {
             "name": "přízrak"
         },
         "approach-oblivion": {
-            "name": "blížit se k zapomnění"
+            "name": "approach oblivion"
         },
         "behold-the-shrouded-sun": {
-            "name": "pohleď na zahalené slunce"
+            "name": "behold the shrouded sun"
         },
         "bone-dagger": {
             "name": "kostěná dýka"
         },
         "command-the-wretched": {
-            "name": "rozkazuj ubožákům"
+            "name": "command the wretched"
         },
         "critical-failure": {
-            "name": "kritické selhání"
+            "name": "critical failure"
         },
         "damned-horde": {
-            "name": "zatracená horda"
+            "name": "damned horde"
         },
         "shambling-skeleton": {
-            "name": "šourající se kostlivec"
+            "name": "shambling skeleton"
         },
         "dark-tidings": {
-            "name": "temné zvěsti"
+            "name": "dark tidings"
         },
         "decaying-will": {
-            "name": "chřadnoucí vůle"
+            "name": "decaying will"
         },
         "endless-numbers": {
-            "name": "nekonečné počty"
+            "name": "endless numbers"
         },
         "bone-horde": {
-            "name": "kostěná horda"
+            "name": "bone horde"
         },
         "eternal-torment": {
-            "name": "věčné trápení"
+            "name": "eternal torment"
         },
         "exploding-corpse": {
-            "name": "explodující mrtvola"
+            "name": "exploding corpse"
         },
         "fell-remedy": {
-            "name": "zlý lék"
+            "name": "fell remedy"
         },
         "flesh-shield": {
-            "name": "štít z masa"
+            "name": "flesh shield"
         },
         "flow-of-the-black-river": {
-            "name": "proud černé řeky"
+            "name": "flow of the black river"
         },
         "grave-digging": {
-            "name": "hrobokopectví"
+            "name": "grave digging"
         },
         "life-in-death": {
-            "name": "život ve smrti"
+            "name": "life in death"
         },
         "malicious-conversion": {
-            "name": "zlomyslná přeměna"
+            "name": "malicious conversion"
         },
         "putrid-cloud": {
-            "name": "hnilobný oblak"
+            "name": "putrid cloud"
         },
         "recycled-limbs": {
-            "name": "recyklované končetiny"
+            "name": "recycled limbs"
         },
         "returned-servant": {
-            "name": "navrácený sluha"
+            "name": "returned servant"
         },
         "rotting-multitude": {
-            "name": "hnijící zástup"
+            "name": "rotting multitude"
         },
         "two-shambling-skeletons": {
-            "name": "dva šourající se kostlivci"
+            "name": "two shambling skeletons"
         },
         "solid-bones": {
-            "name": "pevné kosti"
+            "name": "solid bones"
         },
         "soul-claim": {
-            "name": "nárok na duši"
+            "name": "soul claim"
         },
         "transfer-of-essence": {
-            "name": "přenos esence"
+            "name": "transfer of essence"
         },
         "twisted-decree": {
-            "name": "zvrácený výnos"
+            "name": "twisted decree"
         },
         "unearthed-horror": {
-            "name": "vykopaná hrůza"
+            "name": "unearthed horror"
         },
         "raging-corpse": {
-            "name": "zuřící mrtvola"
+            "name": "raging corpse"
         },
         "unforgivable-methods": {
-            "name": "neodpustitelné metody"
+            "name": "unforgivable methods"
         },
         "stitched-atrocity": {
-            "name": "sešitá ohavnost"
+            "name": "stitched atrocity"
         },
         "unholy-prowess": {
-            "name": "nesvatá zdatnost"
+            "name": "unholy prowess"
         },
         "skeleton-sorcerer": {
-            "name": "kostlivý čaroděj"
+            "name": "skeleton sorcerer"
         },
         "wailing-from-beyond": {
-            "name": "nářek z onoho světa"
+            "name": "wailing from beyond"
         },
         "wrath-of-the-turned-earth": {
-            "name": "hněv obrácené země"
+            "name": "wrath of the turned earth"
         },
         "blood-in-the-water": {
-            "name": "krev ve vodě"
+            "name": "blood in the water"
         },
         "chaotic-refraction": {
-            "name": "chaotický lom"
+            "name": "chaotic refraction"
         },
         "cleansing-swell": {
-            "name": "očistná vlna"
+            "name": "cleansing swell"
         },
         "clean-sweep": {
-            "name": "čistý smet"
+            "name": "clean sweep"
         },
         "crashing-surge": {
-            "name": "narážející příval"
+            "name": "crashing surge"
         },
         "cresting-force": {
-            "name": "vrcholící síla"
+            "name": "cresting force"
         },
         "crush-armor": {
-            "name": "rozdrtit pancíř"
+            "name": "crush armor"
         },
         "death-on-all-sides": {
-            "name": "smrt ze všech stran"
+            "name": "death on all sides"
         },
         "down-to-the-depths": {
-            "name": "do hlubin"
+            "name": "down to the depths"
         },
         "drown-beneath-the-waves": {
-            "name": "utonout pod vlnami"
+            "name": "drown beneath the waves"
         },
         "dug-in": {
-            "name": "zakopán"
+            "name": "dug in"
         },
         "ebb-and-flow": {
-            "name": "příliv a odliv"
+            "name": "ebb and flow"
         },
         "endless-cycle": {
-            "name": "nekonečný cyklus"
+            "name": "endless cycle"
         },
         "high-tide": {
             "name": "příliv"
         },
         "low-tide": {
-            "name": "odliv"
+            "name": "low tide"
         },
         "mighty-claws": {
-            "name": "mocná klepeta"
+            "name": "mighty claws"
         },
         "overwhelming-wave": {
-            "name": "drtivá vlna"
+            "name": "overwhelming wave"
         },
         "pool-of-power": {
-            "name": "tůň síly"
+            "name": "pool of power"
         },
         "powerful-pincer": {
-            "name": "silné kleště"
+            "name": "powerful pincer"
         },
         "rancid-brine": {
-            "name": "žluklý nálev"
+            "name": "rancid brine"
         },
         "rising-flood": {
-            "name": "stoupající záplava"
+            "name": "rising flood"
         },
         "sharp-chitin": {
-            "name": "ostrý chitin"
+            "name": "sharp chitin"
         },
         "shuck": {
-            "name": "vylouskat"
+            "name": "shuck"
         },
         "skitter": {
-            "name": "cupitat"
+            "name": "skitter"
         },
         "smashing-torrent": {
-            "name": "drtivý proud"
+            "name": "smashing torrent"
         },
         "sodden-soil": {
-            "name": "nasáklá půda"
+            "name": "sodden soil"
         },
         "soft-flesh": {
-            "name": "měkké maso"
+            "name": "soft flesh"
         },
         "submerge": {
-            "name": "ponořit se"
+            "name": "submerge"
         },
         "tidal-blast": {
-            "name": "slapový výbuch"
+            "name": "tidal blast"
         },
         "twilight-grasp": {
-            "name": "sevření soumraku"
+            "name": "twilight grasp"
         },
         "undertow": {
-            "name": "podproud"
+            "name": "undertow"
         },
         "accurate-strikes": {
-            "name": "přesné zásahy"
+            "name": "accurate strikes"
         },
         "against-all-odds": {
-            "name": "proti všem šancím"
+            "name": "against all odds"
         },
         "bloodletting": {
-            "name": "pouštění žilou"
+            "name": "bloodletting"
         },
         "break-through": {
-            "name": "prorazit"
+            "name": "break through"
         },
         "chunk-of-flesh": {
-            "name": "kus masa"
+            "name": "chunk of flesh"
         },
         "consume-stamina": {
-            "name": "spotřebovat výdrž"
+            "name": "consume stamina"
         },
         "continuous-health": {
-            "name": "trvalé zdraví"
+            "name": "continuous health"
         },
         "crushing-weight": {
-            "name": "drtivá tíha"
+            "name": "crushing weight"
         },
         "deadly-shot": {
-            "name": "smrtelná rána"
+            "name": "deadly shot"
         },
         "destructive-fury": {
-            "name": "ničivý vztek"
+            "name": "destructive fury"
         },
         "draining-arrows": {
-            "name": "vysávající šípy"
+            "name": "draining arrows"
         },
         "dual-bow": {
-            "name": "dvojitý luk"
+            "name": "dual bow"
         },
         "ever-forward": {
-            "name": "stále vpřed"
+            "name": "ever forward"
         },
         "everlasting": {
-            "name": "věčný"
+            "name": "everlasting"
         },
         "fierce-barrage": {
-            "name": "zuřivá palba"
+            "name": "fierce barrage"
         },
         "fortitude": {
-            "name": "houževnatost"
+            "name": "fortitude"
         },
         "gift-of-the-prey": {
-            "name": "dar kořisti"
+            "name": "gift of the prey"
         },
         "inevitable-conclusion": {
-            "name": "nevyhnutelný závěr"
+            "name": "inevitable conclusion"
         },
         "like-the-wind": {
-            "name": "jako vítr"
+            "name": "like the wind"
         },
         "no-remorse": {
-            "name": "bez lítosti"
+            "name": "no remorse"
         },
         "precision-aim": {
-            "name": "přesné zacílení"
+            "name": "precision aim"
         },
         "prudent-preparation": {
-            "name": "obezřetná příprava"
+            "name": "prudent preparation"
         },
         "relentless": {
-            "name": "neúnavný"
+            "name": "relentless"
         },
         "shockwave": {
-            "name": "rázová vlna"
+            "name": "shockwave"
         },
         "survivalist": {
-            "name": "přeživší"
+            "name": "survivalist"
         },
         "sustained-momentum": {
-            "name": "udržený náboj"
+            "name": "sustained momentum"
         },
         "unbreakable": {
-            "name": "nezlomný"
+            "name": "unbreakable"
         },
         "unending-fight": {
-            "name": "nekonečný boj"
+            "name": "unending fight"
         },
         "use-every-part": {
-            "name": "využít každou část"
+            "name": "use every part"
         },
         "vile-assault": {
-            "name": "odporný útok"
+            "name": "vile assault"
         },
         "violent-inheritance": {
-            "name": "násilné dědictví"
+            "name": "violent inheritance"
         },
         "black-night-of-the-deep": {
-            "name": "černá noc hlubin"
+            "name": "black night of the deep"
         },
         "black-scythe": {
-            "name": "černá kosa"
+            "name": "black scythe"
         },
         "claw-of-doom": {
-            "name": "dráp zkázy"
+            "name": "claw of doom"
         },
         "consume-the-helpless": {
-            "name": "pozřít bezbranné"
+            "name": "consume the helpless"
         },
         "crippling-terror": {
-            "name": "ochromující hrůza"
+            "name": "crippling terror"
         },
         "crushing-darkness": {
-            "name": "drtivá temnota"
+            "name": "crushing darkness"
         },
         "death-spiral": {
-            "name": "spirála smrti"
+            "name": "death spiral"
         },
         "dire-frenzy": {
-            "name": "hrozivé šílenství"
+            "name": "dire frenzy"
         },
         "extra-decoration": {
-            "name": "extra výzdoba"
+            "name": "extra decoration"
         },
         "grim-trophies": {
-            "name": "příšerné trofeje"
+            "name": "grim trophies"
         },
         "hasten-the-end": {
-            "name": "uspíšit konec"
+            "name": "hasten the end"
         },
         "haunting-brutality": {
-            "name": "pronásledující brutalita"
+            "name": "haunting brutality"
         },
         "hollow-aura": {
-            "name": "dutá aura"
+            "name": "hollow aura"
         },
         "ink-cloud": {
-            "name": "oblak inkoustu"
+            "name": "ink cloud"
         },
         "lacerating-stabs": {
-            "name": "trhavá bodnutí"
+            "name": "lacerating stabs"
         },
         "lie-in-wait": {
-            "name": "číhat v záloze"
+            "name": "lie in wait"
         },
         "mantle-of-dread": {
-            "name": "plášť hrůzy"
+            "name": "mantle of dread"
         },
         "morbid-camouflage": {
-            "name": "morbidní maskování"
+            "name": "morbid camouflage"
         },
         "pinning-spines": {
-            "name": "přišpendlující trny"
+            "name": "pinning spines"
         },
         "rip-from-the-bone": {
-            "name": "vyrvat z kosti"
+            "name": "rip from the bone"
         },
         "skewer-the-flesh": {
-            "name": "napíchnout maso"
+            "name": "skewer the flesh"
         },
         "skull-collection": {
-            "name": "sbírka lebek"
+            "name": "skull collection"
         },
         "slipping-into-death": {
-            "name": "klouzání do smrti"
+            "name": "slipping into death"
         },
         "soul-hunger": {
-            "name": "hlad po duších"
+            "name": "soul hunger"
         },
         "staring-into-the-abyss": {
-            "name": "zírání do propasti"
+            "name": "staring into the abyss"
         },
         "succumb-to-fear": {
-            "name": "podlehnout strachu"
+            "name": "succumb to fear"
         },
         "the-remorseless-deep": {
-            "name": "nelítostné hlubiny"
+            "name": "the remorseless deep"
         },
         "tumultuous-panic": {
-            "name": "bouřlivá panika"
+            "name": "tumultuous panic"
         },
         "unseen-horror": {
-            "name": "neviditelná hrůza"
+            "name": "unseen horror"
         },
         "anger-of-the-dead": {
             "name": "hněv mrtvých"
         },
         "black-barrage": {
-            "name": "černá palba"
+            "name": "black barrage"
         },
         "black-lance": {
-            "name": "černé kopí"
+            "name": "black lance"
         },
         "call-of-doom": {
-            "name": "volání zkázy"
+            "name": "call of doom"
         },
         "call-to-the-abyss": {
-            "name": "zavolat propast"
+            "name": "call to the abyss"
         },
         "dark-fog": {
-            "name": "temná mlha"
+            "name": "dark fog"
         },
         "dead-bolt": {
-            "name": "mrtvý šíp"
+            "name": "dead bolt"
         },
         "deepening-despair": {
-            "name": "prohlubující se zoufalství"
+            "name": "deepening despair"
         },
         "dominate": {
             "name": "ovládnout"
         },
         "eclipse": {
-            "name": "zatmění"
+            "name": "eclipse"
         },
         "fleeting-dusk": {
-            "name": "prchavý soumrak"
+            "name": "fleeting dusk"
         },
         "fluid-night": {
-            "name": "tekutá noc"
+            "name": "fluid night"
         },
         "forceful-spirits": {
-            "name": "silní duchové"
+            "name": "forceful spirits"
         },
         "frozen-in-fear": {
-            "name": "ztuhlý strachem"
+            "name": "frozen in fear"
         },
         "hungry-grasps": {
-            "name": "hladová sevření"
+            "name": "hungry grasps"
         },
         "lashing-tendrils": {
-            "name": "šlehající úponky"
+            "name": "lashing tendrils"
         },
         "lingering-rot": {
-            "name": "přetrvávající hniloba"
+            "name": "lingering rot"
         },
         "medium": {
-            "name": "médium"
+            "name": "medium"
         },
         "proliferation-of-the-abyss": {
-            "name": "množení propasti"
+            "name": "proliferation of the abyss"
         },
         "pulled-across": {
-            "name": "přetažen"
+            "name": "pulled across"
         },
         "rest-in-the-shade": {
-            "name": "odpočinek ve stínu"
+            "name": "rest in the shade"
         },
         "restless-spirits": {
-            "name": "neklidní duchové"
+            "name": "restless spirits"
         },
         "ritual-sacrifice": {
-            "name": "rituální oběť"
+            "name": "ritual sacrifice"
         },
         "shadow-step": {
-            "name": "stínový krok"
+            "name": "shadow step"
         },
         "strength-of-the-abyss": {
-            "name": "síla propasti"
+            "name": "strength of the abyss"
         },
         "sunless-apparition": {
-            "name": "bezslunečný přízrak"
+            "name": "sunless apparition"
         },
         "shadow-beast": {
-            "name": "stínová šelma"
+            "name": "shadow beast"
         },
         "the-night-takes-shape": {
-            "name": "noc nabývá podoby"
+            "name": "the night takes shape"
         },
         "shadow-horror": {
-            "name": "stínová hrůza"
+            "name": "shadow horror"
         },
         "vengeful-storm": {
-            "name": "mstivá bouře"
+            "name": "vengeful storm"
         },
         "wave-of-anguish": {
             "name": "vlna úzkosti"
         },
         "when-your-time-comes": {
-            "name": "až přijde tvůj čas"
+            "name": "when your time comes"
         },
         "bring-down-the-mountain": {
-            "name": "sraz horu"
+            "name": "bring down the mountain"
         },
         "cold-boulder": {
-            "name": "studený balvan"
+            "name": "cold boulder"
         },
         "crushing-crystals": {
-            "name": "drtivé krystaly"
+            "name": "crushing crystals"
         },
         "draw-of-the-bedrock": {
-            "name": "zdroj z podloží"
+            "name": "draw of the bedrock"
         },
         "draw-strength": {
-            "name": "čerpat sílu"
+            "name": "draw strength"
         },
         "encased-punch": {
-            "name": "zapouzdřená rána"
+            "name": "encased punch"
         },
         "freezing-shell": {
-            "name": "mrazivá skořápka"
+            "name": "freezing shell"
         },
         "frost-eruption": {
-            "name": "ledová erupce"
+            "name": "frost eruption"
         },
         "frozen-over": {
             "name": "zamrzlý"
         },
         "frozen-spike": {
-            "name": "zmrzlý hrot"
+            "name": "frozen spike"
         },
         "fury-of-the-mountain": {
-            "name": "zuřivost hory"
+            "name": "fury of the mountain"
         },
         "gift-of-the-mountain": {
-            "name": "dar hory"
+            "name": "gift of the mountain"
         },
         "glacier-slam": {
-            "name": "ledovcový náraz"
+            "name": "glacier slam"
         },
         "ice-blast": {
-            "name": "ledový výbuch"
+            "name": "ice blast"
         },
         "ice-uppercut": {
-            "name": "ledový horní hák"
+            "name": "ice uppercut"
         },
         "lacerating-eruption": {
-            "name": "trhavá erupce"
+            "name": "lacerating eruption"
         },
         "one-with-the-mountain": {
-            "name": "jedno s horou"
+            "name": "one with the mountain"
         },
         "packed-solid": {
-            "name": "pevně slisováno"
+            "name": "packed solid"
         },
         "piercing-pummel": {
-            "name": "pronikavé bušení"
+            "name": "piercing pummel"
         },
         "preserved-fury": {
-            "name": "uchovaný vztek"
+            "name": "preserved fury"
         },
         "primal-bellow": {
-            "name": "prvotní řev"
+            "name": "primal bellow"
         },
         "seeing-stars": {
-            "name": "vidět hvězdičky"
+            "name": "seeing stars"
         },
         "shard-launch": {
-            "name": "vystřelení střepin"
+            "name": "shard launch"
         },
         "shattering-blow": {
-            "name": "tříštivá rána"
+            "name": "shattering blow"
         },
         "the-mountain's-fist": {
-            "name": "pěst hory"
+            "name": "the mountain's fist"
         },
         "thick-frost": {
-            "name": "hustý mráz"
+            "name": "thick frost"
         },
         "voice-from-below": {
-            "name": "hlas zdola"
+            "name": "voice from below"
         },
         "accelerated-metabolism": {
             "name": "Zrychlený metabolismus"
         },
         "alluring-pheromones": {
-            "name": "svůdné feromony"
+            "name": "alluring pheromones"
         },
         "changeling's-boon": {
-            "name": "dar měňavce"
+            "name": "changeling's boon"
         },
         "chitinous-horde": {
-            "name": "chitinová horda"
+            "name": "chitinous horde"
         },
         "corrosive-acids": {
-            "name": "žíravé kyseliny"
+            "name": "corrosive acids"
         },
         "drag-down": {
-            "name": "stáhnout dolů"
+            "name": "drag down"
         },
         "dragonfly-surge": {
-            "name": "příval vážek"
+            "name": "dragonfly surge"
         },
         "draining-pincers": {
-            "name": "vysávající kleštiny"
+            "name": "draining pincers"
         },
         "feeding-frenzy": {
-            "name": "krmná horečka"
+            "name": "feeding frenzy"
         },
         "firefly-swarm": {
-            "name": "roj světlušek"
+            "name": "firefly swarm"
         },
         "flailing-tendrils": {
-            "name": "mrskající úponky"
+            "name": "flailing tendrils"
         },
         "formless-grace": {
-            "name": "beztvará milost"
+            "name": "formless grace"
         },
         "hail-of-thorns": {
-            "name": "krupobití trnů"
+            "name": "hail of thorns"
         },
         "harbinger-of-ruin": {
-            "name": "předzvěst zkázy"
+            "name": "harbinger of ruin"
         },
         "harvest-the-essence": {
-            "name": "sklidit esenci"
+            "name": "harvest the essence"
         },
         "hirudotherapy": {
-            "name": "hirudoterapie"
+            "name": "hirudotherapy"
         },
         "hornbeetle-carapace": {
-            "name": "krunýř rohatého brouka"
+            "name": "hornbeetle carapace"
         },
         "hornet-stingers": {
-            "name": "sršní žihadla"
+            "name": "hornet stingers"
         },
         "icebound-quills": {
-            "name": "ledem sevřené ostny"
+            "name": "icebound quills"
         },
         "into-my-embrace": {
-            "name": "do mého objetí"
+            "name": "into my embrace"
         },
         "locust-host": {
-            "name": "kobylky"
+            "name": "locust host"
         },
         "luminous-descent": {
-            "name": "zářivý pád"
+            "name": "luminous descent"
         },
         "mandible-storm": {
-            "name": "bouře kusadel"
+            "name": "mandible storm"
         },
         "mind-spike": {
-            "name": "hrot do mysli"
+            "name": "mind spike"
         },
         "oscillating-entity": {
-            "name": "oscilující bytost"
+            "name": "oscillating entity"
         },
         "reckless-jab": {
-            "name": "bezohledné bodnutí"
+            "name": "reckless jab"
         },
         "reshape-the-guise": {
-            "name": "přetvořit podobu"
+            "name": "reshape the guise"
         },
         "scarab-flight": {
-            "name": "let skarabea"
+            "name": "scarab flight"
         },
         "selfless-offering": {
-            "name": "nezištná oběť"
+            "name": "selfless offering"
         },
         "smoldering-hatred": {
             "name": "doutnající nenávist"
         },
         "thresh-and-flail": {
-            "name": "mlátit a třískat"
+            "name": "thresh and flail"
         },
         "two-pronged-entrapment": {
-            "name": "dvojitá past"
+            "name": "two-pronged entrapment"
         },
         "venomous-barbs": {
-            "name": "jedovaté ostny"
+            "name": "venomous barbs"
         },
         "voice-of-salvation": {
-            "name": "hlas spásy"
+            "name": "voice of salvation"
         },
         "aimed-assault": {
-            "name": "zaměřený útok"
+            "name": "aimed assault"
         },
         "sniper-turret": {
-            "name": "odstřelovací věž"
+            "name": "sniper turret"
         },
         "burning-slash": {
-            "name": "hořící seknutí"
+            "name": "burning slash"
         },
         "code-geminate": {
-            "name": "kód dvojčat"
+            "name": "code geminate"
         },
         "coiled-limbs": {
-            "name": "stočené končetiny"
+            "name": "coiled limbs"
         },
         "leaper": {
             "name": "skokan"
         },
         "disassemble": {
-            "name": "rozebrat"
+            "name": "disassemble"
         },
         "divergent-destruction": {
-            "name": "rozbíhavá zkáza"
+            "name": "divergent destruction"
         },
         "faceless-entity": {
-            "name": "bezvýrazná bytost"
+            "name": "faceless entity"
         },
         "force-field": {
-            "name": "silové pole"
+            "name": "force field"
         },
         "dampening-unit": {
-            "name": "tlumicí jednotka"
+            "name": "dampening unit"
         },
         "heavy-metal": {
-            "name": "těžký kov"
+            "name": "heavy metal"
         },
         "sledge-driver": {
-            "name": "kladivář"
+            "name": "sledge driver"
         },
         "high-impact-projectiles": {
-            "name": "střely s vysokým dopadem"
+            "name": "high impact projectiles"
         },
         "hijack": {
-            "name": "únos"
+            "name": "hijack"
         },
         "hunter-killer": {
-            "name": "lovec-zabiják"
+            "name": "hunter-killer"
         },
         "jackal-mech": {
-            "name": "šakalí mech"
+            "name": "jackal mech"
         },
         "interference": {
             "name": "rušení"
         },
         "launch-pod": {
-            "name": "odpalovací modul"
+            "name": "launch pod"
         },
         "long-range-missile": {
-            "name": "raketa dlouhého doletu"
+            "name": "long-range missile"
         },
         "mortar-shells": {
-            "name": "minometné granáty"
+            "name": "mortar shells"
         },
         "bombardier": {
-            "name": "bombardér"
+            "name": "bombardier"
         },
         "net-dispersal": {
-            "name": "rozptýlení sítě"
+            "name": "net dispersal"
         },
         "trapping-unit": {
-            "name": "lapací jednotka"
+            "name": "trapping unit"
         },
         "plague-protocol": {
-            "name": "morový protokol"
+            "name": "plague protocol"
         },
         "toxin-distributor": {
-            "name": "rozvaděč toxinů"
+            "name": "toxin distributor"
         },
         "plated-defense": {
-            "name": "pancéřová obrana"
+            "name": "plated defense"
         },
         "armored-tank": {
-            "name": "obrněný tank"
+            "name": "armored tank"
         },
         "prepare-for-deployment": {
-            "name": "připrav se na nasazení"
+            "name": "prepare for deployment"
         },
         "rapid-fire": {
-            "name": "rychlá palba"
+            "name": "rapid fire"
         },
         "machine-bolter": {
-            "name": "strojní střelec"
+            "name": "machine bolter"
         },
         "reaper-function": {
-            "name": "funkce žence"
+            "name": "reaper function"
         },
         "reassemble": {
-            "name": "znovu sestavit"
+            "name": "reassemble"
         },
         "recall": {
-            "name": "odvolání"
+            "name": "recall"
         },
         "reconstructive-aid": {
-            "name": "rekonstrukční pomoc"
+            "name": "reconstructive aid"
         },
         "repair-drone": {
-            "name": "opravářský dron"
+            "name": "repair drone"
         },
         "remote-control": {
-            "name": "dálkové ovládání"
+            "name": "remote control"
         },
         "shocking-pulse": {
-            "name": "šokující pulz"
+            "name": "shocking pulse"
         },
         "arcing-generator": {
-            "name": "jiskřící generátor"
+            "name": "arcing generator"
         },
         "spinning-blades": {
-            "name": "rotující čepele"
+            "name": "spinning blades"
         },
         "sword-propeller": {
-            "name": "mečová vrtule"
+            "name": "sword propeller"
         },
         "swarming-bulwark": {
-            "name": "hemžící se bašta"
+            "name": "swarming bulwark"
         },
         "shield-spider": {
-            "name": "štítový pavouk"
+            "name": "shield spider"
         },
         "triage-program": {
-            "name": "program třídění"
+            "name": "triage program"
         },
         "ancient-rites-of-power": {
-            "name": "prastaré rituály moci"
+            "name": "ancient rites of power"
         },
         "battle-prowess": {
-            "name": "bojová zdatnost"
+            "name": "battle prowess"
         },
         "boon-of-the-tempest": {
-            "name": "dar bouře"
+            "name": "boon of the tempest"
         },
         "bounty-of-the-earth": {
-            "name": "hojnost země"
+            "name": "bounty of the earth"
         },
         "caress-of-the-night": {
-            "name": "pohlazení noci"
+            "name": "caress of the night"
         },
         "coalescing-darkness": {
-            "name": "srůstající temnota"
+            "name": "coalescing darkness"
         },
         "crystalline-aegis": {
-            "name": "krystalická aigis"
+            "name": "crystalline aegis"
         },
         "desperate-throw": {
-            "name": "zoufalý hod"
+            "name": "desperate throw"
         },
         "diamondization": {
-            "name": "diamantizace"
+            "name": "diamondization"
         },
         "emerald-edge": {
-            "name": "smaragdové ostří"
+            "name": "emerald edge"
         },
         "formless-bladestorm": {
-            "name": "beztvará bouře čepelí"
+            "name": "formless bladestorm"
         },
         "gale-barrage": {
-            "name": "vichřicová palba"
+            "name": "gale barrage"
         },
         "gemstone-resonance": {
-            "name": "rezonance drahokamů"
+            "name": "gemstone resonance"
         },
         "guide-the-flow": {
-            "name": "veď proud"
+            "name": "guide the flow"
         },
         "imbue-with-life": {
-            "name": "vdechnout život"
+            "name": "imbue with life"
         },
         "animated-claymore": {
-            "name": "oživený claymore"
+            "name": "animated claymore"
         },
         "malachite-shockwave": {
-            "name": "malachitová rázová vlna"
+            "name": "malachite shockwave"
         },
         "obsidian-spear": {
-            "name": "obsidiánové kopí"
+            "name": "obsidian spear"
         },
         "onyx-shards": {
-            "name": "onyxové střepy"
+            "name": "onyx shards"
         },
         "propulsive-tailwind": {
-            "name": "hnací vítr v zádech"
+            "name": "propulsive tailwind"
         },
         "reinforced-riposte": {
-            "name": "zesílená odpověď"
+            "name": "reinforced riposte"
         },
         "remote-impact": {
-            "name": "dálkový dopad"
+            "name": "remote impact"
         },
         "rising-momentum": {
-            "name": "sílící setrvačnost"
+            "name": "rising momentum"
         },
         "sky-splitting-strike": {
-            "name": "úder rozpůlící nebe"
+            "name": "sky-splitting strike"
         },
         "slashing-cyclone": {
-            "name": "sekající cyklon"
+            "name": "slashing cyclone"
         },
         "stoic-vigilance": {
-            "name": "stoická ostražitost"
+            "name": "stoic vigilance"
         },
         "swift-pivot": {
-            "name": "rychlý obrat"
+            "name": "swift pivot"
         },
         "torrential-cleave": {
-            "name": "přívalový sek"
+            "name": "torrential cleave"
         },
         "unstoppable-impulse": {
-            "name": "nezastavitelný impulz"
+            "name": "unstoppable impulse"
         },
         "untether-the-shackles": {
-            "name": "sejmi okovy"
+            "name": "untether the shackles"
         },
         "spiritbound-falchion": {
-            "name": "falchion svázaný s duchem"
+            "name": "spiritbound falchion"
         },
         "veil-of-protection": {
-            "name": "závoj ochrany"
+            "name": "veil of protection"
         },
         "ancient-drill": {
-            "name": "prastarý vrták"
+            "name": "ancient drill"
         },
         "beam-axe": {
-            "name": "paprsková sekera"
+            "name": "beam axe"
         },
         "bronze-plating": {
-            "name": "bronzové pláty"
+            "name": "bronze plating"
         },
         "cryogenic-hibernation": {
-            "name": "kryogenní hibernace"
+            "name": "cryogenic hibernation"
         },
         "curious-gear": {
-            "name": "podivné ozubené kolo"
+            "name": "curious gear"
         },
         "curious-machinery": {
-            "name": "podivné strojní zařízení"
+            "name": "curious machinery"
         },
         "electrical-discharge": {
-            "name": "elektrický výboj"
+            "name": "electrical discharge"
         },
         "energy-conversion": {
-            "name": "přeměna energie"
+            "name": "energy conversion"
         },
         "heat-conduction": {
-            "name": "vedení tepla"
+            "name": "heat conduction"
         },
         "heated-drill": {
-            "name": "rozžhavený vrták"
+            "name": "heated drill"
         },
         "magnetic-field": {
-            "name": "magnetické pole"
+            "name": "magnetic field"
         },
         "memory-drive": {
-            "name": "paměťová jednotka"
+            "name": "memory drive"
         },
         "piston-barrage": {
-            "name": "pístová palba"
+            "name": "piston barrage"
         },
         "polarity-shift": {
-            "name": "posun polarity"
+            "name": "polarity shift"
         },
         "power-core": {
-            "name": "zdroj energie"
+            "name": "power core"
         },
         "pressure-build-up": {
-            "name": "nárůst tlaku"
+            "name": "pressure build-up"
         },
         "processing": {
             "name": "zpracování"
         },
         "radiation": {
-            "name": "záření"
+            "name": "radiation"
         },
         "recursion": {
-            "name": "rekurze"
+            "name": "recursion"
         },
         "release-valve": {
-            "name": "výpustný ventil"
+            "name": "release valve"
         },
         "rocket-boots": {
-            "name": "raketové boty"
+            "name": "rocket boots"
         },
         "scalding-blast": {
-            "name": "opařující výbuch"
+            "name": "scalding blast"
         },
         "steam-armor": {
-            "name": "parní pancíř"
+            "name": "steam armor"
         },
         "steam-core": {
-            "name": "parní jádro"
+            "name": "steam core"
         },
         "steel-piston": {
-            "name": "ocelový píst"
+            "name": "steel piston"
         },
         "stress-vents": {
-            "name": "přetlakové průduchy"
+            "name": "stress vents"
         },
         "super-heat-transfer": {
-            "name": "superpřenos tepla"
+            "name": "super heat transfer"
         },
         "unstable-core": {
-            "name": "nestabilní jádro"
+            "name": "unstable core"
         },
         "blood-ritual": {
-            "name": "krvavý rituál"
+            "name": "blood ritual"
         },
         "burned-at-both-ends": {
-            "name": "hoří na obou koncích"
+            "name": "burned at both ends"
         },
         "chained-by-despair": {
-            "name": "spoután zoufalstvím"
+            "name": "chained by despair"
         },
         "chained-by-spite": {
-            "name": "spoután zášti"
+            "name": "chained by spite"
         },
         "cleansing-fire": {
-            "name": "očistný oheň"
+            "name": "cleansing fire"
         },
         "delayed-malady": {
-            "name": "opožděná nemoc"
+            "name": "delayed malady"
         },
         "down-to-the-dirt": {
-            "name": "až do prachu"
+            "name": "down to the dirt"
         },
         "explosive-wounds": {
-            "name": "výbušné rány"
+            "name": "explosive wounds"
         },
         "hopelessness": {
-            "name": "beznaděj"
+            "name": "hopelessness"
         },
         "infection-purge": {
-            "name": "očista od nákazy"
+            "name": "infection purge"
         },
         "line-of-transference": {
-            "name": "linie přenosu"
+            "name": "line of transference"
         },
         "mirrored-misery": {
-            "name": "zrcadlená bída"
+            "name": "mirrored misery"
         },
         "penance": {
-            "name": "pokuta"
+            "name": "penance"
         },
         "phantom-limb": {
-            "name": "fantomová končetina"
+            "name": "phantom limb"
         },
         "pleasure-in-pain": {
-            "name": "rozkoš v bolesti"
+            "name": "pleasure in pain"
         },
         "redemption": {
-            "name": "vykoupení"
+            "name": "redemption"
         },
         "reject-the-gift": {
-            "name": "odmítnout dar"
+            "name": "reject the gift"
         },
         "reprisal": {
             "name": "odveta"
         },
         "reversal-of-fate": {
-            "name": "zvrat osudu"
+            "name": "reversal of fate"
         },
         "scarred-effigy": {
-            "name": "zjizvená podobizna"
+            "name": "scarred effigy"
         },
         "flesh-fiend": {
-            "name": "masožravý běs"
+            "name": "flesh fiend"
         },
         "shared-affliction": {
-            "name": "sdílené utrpení"
+            "name": "shared affliction"
         },
         "swift-vengeance": {
-            "name": "rychlá pomsta"
+            "name": "swift vengeance"
         },
         "the-agony-of-others": {
-            "name": "agónie druhých"
+            "name": "the agony of others"
         },
         "the-end-of-everything": {
-            "name": "konec všeho"
+            "name": "the end of everything"
         },
         "transferred-injury": {
-            "name": "přenesené zranění"
+            "name": "transferred injury"
         },
         "unending-torment": {
-            "name": "nekonečné trápení"
+            "name": "unending torment"
         },
         "unstable-effigy": {
-            "name": "nestabilní podobizna"
+            "name": "unstable effigy"
         },
         "flesh-bomb": {
-            "name": "masová bomba"
+            "name": "flesh bomb"
         },
         "wracked-with-pain": {
-            "name": "sužován bolestí"
+            "name": "wracked with pain"
         },
         "calamity": {
             "name": "pohroma"
         },
         "cinder-lance": {
-            "name": "kopí z žhavého popela"
+            "name": "cinder lance"
         },
         "cloud-of-ash": {
-            "name": "oblak popela"
+            "name": "cloud of ash"
         },
         "cooling": {
-            "name": "chladnutí"
+            "name": "cooling"
         },
         "deep-fury": {
-            "name": "hluboký vztek"
+            "name": "deep fury"
         },
         "erupting-rage": {
-            "name": "vybuchující vztek"
+            "name": "erupting rage"
         },
         "eruption": {
-            "name": "erupce"
+            "name": "eruption"
         },
         "feed-the-beast": {
-            "name": "nakrm šelmu"
+            "name": "feed the beast"
         },
         "flowing-fire": {
-            "name": "tekoucí oheň"
+            "name": "flowing fire"
         },
         "force-of-the-earth": {
-            "name": "síla země"
+            "name": "force of the earth"
         },
         "hand-of-flame": {
-            "name": "ruka plamene"
+            "name": "hand of flame"
         },
         "hardened-spike": {
-            "name": "zatvrdlý hrot"
+            "name": "hardened spike"
         },
         "heat-wave": {
-            "name": "vlna veder"
+            "name": "heat wave"
         },
         "igneous-path": {
-            "name": "vyvřelá stezka"
+            "name": "igneous path"
         },
         "lava-bomb": {
-            "name": "lávová bomba"
+            "name": "lava bomb"
         },
         "liquid-stone": {
-            "name": "tekutý kámen"
+            "name": "liquid stone"
         },
         "living-magma": {
-            "name": "živé magma"
+            "name": "living magma"
         },
         "magma-orbs": {
-            "name": "magmatické koule"
+            "name": "magma orbs"
         },
         "melted-armor": {
-            "name": "roztavený pancíř"
+            "name": "melted armor"
         },
         "metamorphic-rock": {
-            "name": "metamorfovaná hornina"
+            "name": "metamorphic rock"
         },
         "obsidian-shield": {
-            "name": "obsidiánový štít"
+            "name": "obsidian shield"
         },
         "quenched-rage": {
-            "name": "uhašený vztek"
+            "name": "quenched rage"
         },
         "rain-of-fire": {
-            "name": "ohnivý déšť"
+            "name": "rain of fire"
         },
         "return-to-the-source": {
-            "name": "návrat ke zdroji"
+            "name": "return to the source"
         },
         "searing-smoke": {
-            "name": "pálivý dým"
+            "name": "searing smoke"
         },
         "stone-armor": {
-            "name": "kamenný pancíř"
+            "name": "stone armor"
         },
         "swelter": {
-            "name": "dusné vedro"
+            "name": "swelter"
         },
         "under-pressure": {
-            "name": "pod tlakem"
+            "name": "under pressure"
         },
         "wildfire": {
-            "name": "divoký požár"
+            "name": "wildfire"
         },
         "birds-in-a-tempest": {
-            "name": "ptáci v bouři"
+            "name": "birds in a tempest"
         },
         "2-white-owls": {
-            "name": "2 bílé sovy"
+            "name": "2 white owls"
         },
         "biting-frost": {
-            "name": "kousavý mráz"
+            "name": "biting frost"
         },
         "blinding-vortex": {
-            "name": "oslepující vír"
+            "name": "blinding vortex"
         },
         "blizzard": {
-            "name": "vánice"
+            "name": "blizzard"
         },
         "chilling-impact": {
-            "name": "mrazivý dopad"
+            "name": "chilling impact"
         },
         "cold-snap": {
-            "name": "náhlé ochlazení"
+            "name": "cold snap"
         },
         "cold-therapy": {
-            "name": "chladová terapie"
+            "name": "cold therapy"
         },
         "cross-winds": {
-            "name": "boční větry"
+            "name": "cross winds"
         },
         "enticing-breeze": {
-            "name": "lákavý vánek"
+            "name": "enticing breeze"
         },
         "freezing-storm": {
-            "name": "mrazivá bouře"
+            "name": "freezing storm"
         },
         "frigid-growth": {
-            "name": "mrazivý růst"
+            "name": "frigid growth"
         },
         "frozen-brand": {
-            "name": "zmrzlé cejchování"
+            "name": "frozen brand"
         },
         "gathering-force": {
-            "name": "sbírající se síla"
+            "name": "gathering force"
         },
         "lifting-gust": {
-            "name": "zvedající závan"
+            "name": "lifting gust"
         },
         "nature's-breath": {
-            "name": "dech přírody"
+            "name": "nature's breath"
         },
         "snow-fox": {
-            "name": "sněžná liška"
+            "name": "snow fox"
         },
         "polar-vortex": {
-            "name": "polární vír"
+            "name": "polar vortex"
         },
         "refreshing-flurry": {
-            "name": "osvěžující vánice"
+            "name": "refreshing flurry"
         },
         "polar-cat": {
-            "name": "polární kočka"
+            "name": "polar cat"
         },
         "shifting-snow": {
-            "name": "posouvající se sníh"
+            "name": "shifting snow"
         },
         "snowball": {
-            "name": "sněhová koule"
+            "name": "snowball"
         },
         "snowblind": {
-            "name": "sněžná slepota"
+            "name": "snowblind"
         },
         "storm-wall": {
-            "name": "bouřková stěna"
+            "name": "storm wall"
         },
         "surging-blow": {
-            "name": "vzdouvající se rána"
+            "name": "surging blow"
         },
         "the-endless-white": {
-            "name": "nekonečná běl"
+            "name": "the endless white"
         },
         "the-spirit's-call": {
-            "name": "volání ducha"
+            "name": "the spirit's call"
         },
         "tornado": {
-            "name": "tornádo"
+            "name": "tornado"
         },
         "whipping-gale": {
-            "name": "šlehající vichr"
+            "name": "whipping gale"
         },
         "whiteout": {
-            "name": "bílá tma"
+            "name": "whiteout"
         },
         "white-winds": {
-            "name": "bílé větry"
+            "name": "white winds"
         },
         "winds-of-change": {
-            "name": "vítr změn"
+            "name": "winds of change"
         },
         "zephyr-barrier": {
-            "name": "zefýrová bariéra"
+            "name": "zephyr barrier"
         },
         "barbaric-yawp": {
-            "name": "barbarský křik"
+            "name": "barbaric yawp"
         },
         "befuddling-bellow": {
-            "name": "zmatečný řev"
+            "name": "befuddling bellow"
         },
         "calamitous-yawp": {
-            "name": "zhoubný křik"
+            "name": "calamitous yawp"
         },
         "cloaking-refraction": {
-            "name": "maskující lom"
+            "name": "cloaking refraction"
         },
         "concentrated-blast": {
-            "name": "soustředěný výbuch"
+            "name": "concentrated blast"
         },
         "devastating-shout": {
-            "name": "zničující výkřik"
+            "name": "devastating shout"
         },
         "din-of-battle": {
-            "name": "hluk bitvy"
+            "name": "din of battle"
         },
         "elemental-pulse": {
-            "name": "živlový pulz"
+            "name": "elemental pulse"
         },
         "empowering-note": {
-            "name": "posilující tón"
+            "name": "empowering note"
         },
         "empowering-pulse": {
-            "name": "posilující pulz"
+            "name": "empowering pulse"
         },
         "feedback": {
-            "name": "zpětná vazba"
+            "name": "feedback"
         },
         "forceful-vibrations": {
-            "name": "silné vibrace"
+            "name": "forceful vibrations"
         },
         "foreboding-tremors": {
-            "name": "zlověstné otřesy"
+            "name": "foreboding tremors"
         },
         "future-sense": {
-            "name": "smysl pro budoucnost"
+            "name": "future sense"
         },
         "heartening-harmony": {
-            "name": "povzbuzující harmonie"
+            "name": "heartening harmony"
         },
         "illuminative-tone": {
-            "name": "osvětlující tón"
+            "name": "illuminative tone"
         },
         "lifting-voice": {
-            "name": "zvedající hlas"
+            "name": "lifting voice"
         },
         "precious-gems": {
-            "name": "drahé kameny"
+            "name": "precious gems"
         },
         "resonant-frequency": {
-            "name": "rezonanční frekvence"
+            "name": "resonant frequency"
         },
         "shape-the-path": {
-            "name": "utvářej cestu"
+            "name": "shape the path"
         },
         "shrieking-chakram": {
-            "name": "kvílející čakram"
+            "name": "shrieking chakram"
         },
         "soft-spots": {
-            "name": "slabá místa"
+            "name": "soft spots"
         },
         "sonic-shock": {
-            "name": "zvukový šok"
+            "name": "sonic shock"
         },
         "sound-therapy": {
-            "name": "zvuková terapie"
+            "name": "sound therapy"
         },
         "stealth-vibrations": {
-            "name": "nenápadné vibrace"
+            "name": "stealth vibrations"
         },
         "transparency": {
-            "name": "průhlednost"
+            "name": "transparency"
         },
         "unrelenting-wail": {
-            "name": "neutuchající nářek"
+            "name": "unrelenting wail"
         },
         "unsustainable-wave": {
-            "name": "neudržitelná vlna"
+            "name": "unsustainable wave"
         },
         "violent-vibrations": {
-            "name": "prudké vibrace"
+            "name": "violent vibrations"
         },
         "boar-catcher": {
-            "name": "lapač kanců"
+            "name": "boar catcher"
         },
         "cage-of-thorns": {
-            "name": "klec z trnů"
+            "name": "cage of thorns"
         },
         "caltrops": {
-            "name": "zubaté pastičky"
+            "name": "caltrops"
         },
         "dangerous-cargo": {
-            "name": "nebezpečný náklad"
+            "name": "dangerous cargo"
         },
         "dangerous-ground": {
-            "name": "nebezpečná půda"
+            "name": "dangerous ground"
         },
         "dismantle": {
-            "name": "rozmontovat"
+            "name": "dismantle"
         },
         "electrified-net": {
-            "name": "elektrizovaná síť"
+            "name": "electrified net"
         },
         "enticing-bait": {
-            "name": "lákavá návnada"
+            "name": "enticing bait"
         },
         "exploding-decoy": {
-            "name": "explodující lákadlo"
+            "name": "exploding decoy"
         },
         "extra-teeth": {
-            "name": "extra zuby"
+            "name": "extra teeth"
         },
         "flurry-of-nails": {
-            "name": "smršť hřebíků"
+            "name": "flurry of nails"
         },
         "foxhole": {
-            "name": "liščí nora"
+            "name": "foxhole"
         },
         "defense-grid": {
-            "name": "obranná mříž"
+            "name": "defense grid"
         },
         "furry-facade": {
-            "name": "chlupatá fasáda"
+            "name": "furry facade"
         },
         "shaggy-lure": {
-            "name": "huňaté vábení"
+            "name": "shaggy lure"
         },
         "grasping-hazards": {
-            "name": "chňapající nástrahy"
+            "name": "grasping hazards"
         },
         "honeypot": {
-            "name": "medová past"
+            "name": "honeypot"
         },
         "improvised-improvement": {
-            "name": "improvizované vylepšení"
+            "name": "improvised improvement"
         },
         "lure-of-the-snare": {
-            "name": "vábení pasti"
+            "name": "lure of the snare"
         },
         "magnetic-shards": {
-            "name": "magnetické střepy"
+            "name": "magnetic shards"
         },
         "mother-of-all-traps": {
-            "name": "matka všech pastí"
+            "name": "mother of all traps"
         },
         "path-of-pain": {
-            "name": "stezka bolesti"
+            "name": "path of pain"
         },
         "persistent-pitfalls": {
-            "name": "vytrvalé jámy"
+            "name": "persistent pitfalls"
         },
         "proficient-hunter": {
-            "name": "zkušený lovec"
+            "name": "proficient hunter"
         },
         "pyrotechnics": {
-            "name": "pyrotechnika"
+            "name": "pyrotechnics"
         },
         "spike-pit": {
-            "name": "jáma s hroty"
+            "name": "spike pit"
         },
         "spike-strip": {
-            "name": "pás s hroty"
+            "name": "spike strip"
         },
         "spring-loaded": {
-            "name": "pružinový"
+            "name": "spring-loaded"
         },
         "stalker's-spoils": {
-            "name": "kořist stopaře"
+            "name": "stalker's spoils"
         },
         "unavoidable-outcome": {
-            "name": "nevyhnutelný výsledek"
+            "name": "unavoidable outcome"
         }
     },
     "mp": {

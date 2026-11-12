@@ -141,13 +141,13 @@ export default {
         "name": "Mauvaise Affaire"
     },
     "gh-PSOX1": {
-        "name": "Crypte des Nobles"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "Crypte Inondée"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "Crypte des Anciens"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "La Source du Poison"
@@ -177,7 +177,7 @@ export default {
         "name": "Fossoyeur"
     },
     "gh-PNE": {
-        "name": "Expédition Nordique"
+        "name": "Northern Expedition"
     },
     "gh-GTTP": {
         "name": "À Travers le Portail"
@@ -198,61 +198,61 @@ export default {
         "name": "Le Savoir est un Pouvoir x4"
     },
     "gh-PAD": {
-        "name": "Anges de la Mort"
+        "name": "Angels of Death"
     },
     "gh-PC": {
-        "name": "Gardiens"
+        "name": "Custodians"
     },
     "gh-PHP": {
-        "name": "Proie Traquée"
+        "name": "Hunted Prey"
     },
     "gh-GPOA": {
-        "name": "Morceaux d'un Artefact"
+        "name": "Pieces of an Artifact"
     },
     "gh-GPOA2": {
-        "name": "Morceaux d'un Artefact x2"
+        "name": "Pieces of an Artifact x2"
     },
     "gh-GPOA3": {
-        "name": "Morceaux d'un Artefact x3"
+        "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
-        "name": "Détachement de Garde"
+        "name": "Guard Detail"
     },
     "gh-PDE": {
-        "name": "Équilibre Dimensionnel"
+        "name": "Dimensional Equilibrium"
     },
     "gh-PHH": {
-        "name": "Chasser le Chasseur"
+        "name": "Hunting the Hunter"
     },
     "gh-PXA": {
-        "name": "L'Aide de Xangroth"
+        "name": "Xangroth's Aid"
     },
     "gh-PDA": {
-        "name": "L'Aide de Diamara"
+        "name": "Diamara's Aid"
     },
     "gh-PBF": {
-        "name": "La Beauté de la Liberté"
+        "name": "Beauty in Freedom"
     },
     "gh-GPA": {
-        "name": "Un Péril Évité"
+        "name": "A Peril Averted"
     },
     "gh-GPA2": {
-        "name": "Un Péril Évité x2"
+        "name": "A Peril Averted x2"
     },
     "gh-GPA3": {
-        "name": "Un Péril Évité x3"
+        "name": "A Peril Averted x3"
     },
     "gh-GPA4": {
-        "name": "Un Péril Évité x4"
+        "name": "A Peril Averted x4"
     },
     "gh-GMS": {
-        "name": "Splendeur Mécanique"
+        "name": "Mechanical Splendor"
     },
     "gh-GST": {
-        "name": "Liens Rompus"
+        "name": "Severed Ties"
     },
     "gh-PA": {
-        "name": "Complices"
+        "name": "Accomplices"
     },
     "gh-PS": {
         "name": "Saboteurs"
@@ -291,94 +291,94 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "Ami des Glaciens"
+        "name": "Friend of the Icespeakers"
     },
     "fh-CFSS": {
-        "name": "Ami des Neigeux"
+        "name": "Friend of the Snowspeakers"
     },
     "fh-CFFS": {
-        "name": "Ami des Givriens"
+        "name": "Friend of the Frostspeakers"
     },
     "fh-CDIS": {
-        "name": "Destructeur des Glaciens"
+        "name": "Destroyer of the Icespeakers"
     },
     "fh-CDSS": {
-        "name": "Destructeur des Neigeux"
+        "name": "Destroyer of the Snowspeakers"
     },
     "fh-CFFK": {
-        "name": "Ami du Roi des Poissons"
+        "name": "Friend of the Fish King"
     },
     "fh-CCU": {
-        "name": "Couronne Réunifiée"
+        "name": "Crown United"
     },
     "fh-CUA": {
-        "name": "Alliés des Émancipés"
+        "name": "Unfettered Allies"
     },
     "fh-CUD": {
-        "name": "Émancipés Désactivés"
+        "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
         "name": "Dans la Forêt"
     },
     "fh-CFP": {
-        "name": "Poivre de Feu"
+        "name": "Firepepper"
     },
     "fh-CSS": {
-        "name": "Chercheur d'Éclats"
+        "name": "Shard Seeker"
     },
     "fh-CEJ": {
-        "name": "Bocal Vide"
+        "name": "Empty Jar"
     },
     "fh-CBJ": {
-        "name": "Insecte en Bocal"
+        "name": "Bug in a Jar"
     },
     "fh-CUC": {
-        "name": "Noyau Déchargé"
+        "name": "Uncharged Core"
     },
     "fh-CCC": {
-        "name": "Noyau Chargé"
+        "name": "Charged Core"
     },
     "fh-CHF": {
-        "name": "Fête de la Moisson"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "Traces du Brummix"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "Traces du Brummix x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "Traces du Brummix x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "Traces du Brummix x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "Traces du Brummix x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "Éclat de la Couronne de Corail"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "Éclat de la Couronne de Corail x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "Éclat de la Couronne de Corail x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "Éclat de la Couronne de Corail x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "Éclat de la Couronne de Corail x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "Éclat de la Couronne de Corail x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Cœur de Glace"
+        "name": "Heart of Ice"
     },
     "fh-PHOS": {
-        "name": "Cœur de Neige"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"

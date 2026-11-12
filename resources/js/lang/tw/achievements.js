@@ -36,10 +36,10 @@ export default {
         "name": "中和空間裂縫"
     },
     "gh-GAR": {
-        "name": "神器：尋回"
+        "name": "The Artifact: Recovered"
     },
     "gh-GAR2": {
-        "name": "神器：尋回（先前遺失）"
+        "name": "The Artifact: Recovered (previously Lost)"
     },
     "gh-GAL": {
         "name": "神器：遺失"
@@ -48,16 +48,16 @@ export default {
         "name": "遠古科技"
     },
     "gh-GAT2": {
-        "name": "遠古科技 x2"
+        "name": "Ancient Technology x2"
     },
     "gh-GAT3": {
-        "name": "遠古科技 x3"
+        "name": "Ancient Technology x3"
     },
     "gh-GAT4": {
-        "name": "遠古科技 x4"
+        "name": "Ancient Technology x4"
     },
     "gh-GAT5": {
-        "name": "遠古科技 x5"
+        "name": "Ancient Technology x5"
     },
     "gh-PTR": {
         "name": "穿越廢墟"
@@ -120,10 +120,10 @@ export default {
         "name": "終結腐化之源"
     },
     "gh-GEOC2": {
-        "name": "終結腐化之源 x2"
+        "name": "End of Corruption x2"
     },
     "gh-GEOC3": {
-        "name": "終結腐化之源 x3"
+        "name": "End of Corruption x3"
     },
     "gh-GAOO": {
         "name": "秩序覆滅"
@@ -132,7 +132,7 @@ export default {
         "name": "\"黯\"之終結"
     },
     "gh-PTTN": {
-        "name": "穿越腐靈族巢穴"
+        "name": "Through the Nest"
     },
     "gh-PAMT": {
         "name": "獲得寶藏圖"
@@ -141,13 +141,13 @@ export default {
         "name": "一筆糟糕的生意"
     },
     "gh-PSOX1": {
-        "name": "貴族地穴"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "淹沒的地穴"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "先民地穴"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "獲知毒素的源頭"
@@ -177,25 +177,25 @@ export default {
         "name": "盜墓工作"
     },
     "gh-PNE": {
-        "name": "北方遠征"
+        "name": "Northern Expedition"
     },
     "gh-GTTP": {
-        "name": "穿越傳送門"
+        "name": "Through the Portal"
     },
     "gh-PO": {
         "name": "投機者"
     },
     "gh-GKIP": {
-        "name": "知識即力量"
+        "name": "Knowledge is Power"
     },
     "gh-GKIP2": {
-        "name": "知識即力量 x2"
+        "name": "Knowledge is Power x2"
     },
     "gh-GKIP3": {
-        "name": "知識即力量 x3"
+        "name": "Knowledge is Power x3"
     },
     "gh-GKIP4": {
-        "name": "知識即力量 x4"
+        "name": "Knowledge is Power x4"
     },
     "gh-PAD": {
         "name": "死亡天使"
@@ -204,52 +204,52 @@ export default {
         "name": "守護者"
     },
     "gh-PHP": {
-        "name": "被獵的獵物"
+        "name": "Hunted Prey"
     },
     "gh-GPOA": {
-        "name": "神器碎片"
+        "name": "Pieces of an Artifact"
     },
     "gh-GPOA2": {
-        "name": "神器碎片 x2"
+        "name": "Pieces of an Artifact x2"
     },
     "gh-GPOA3": {
-        "name": "神器碎片 x3"
+        "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
-        "name": "守衛分遣隊"
+        "name": "Guard Detail"
     },
     "gh-PDE": {
-        "name": "維度平衡"
+        "name": "Dimensional Equilibrium"
     },
     "gh-PHH": {
-        "name": "獵殺獵人"
+        "name": "Hunting the Hunter"
     },
     "gh-PXA": {
-        "name": "贊格羅斯的援助"
+        "name": "Xangroth's Aid"
     },
     "gh-PDA": {
-        "name": "迪亞瑪拉的援助"
+        "name": "Diamara's Aid"
     },
     "gh-PBF": {
-        "name": "自由之美"
+        "name": "Beauty in Freedom"
     },
     "gh-GPA": {
-        "name": "化解危機"
+        "name": "A Peril Averted"
     },
     "gh-GPA2": {
-        "name": "化解危機 x2"
+        "name": "A Peril Averted x2"
     },
     "gh-GPA3": {
-        "name": "化解危機 x3"
+        "name": "A Peril Averted x3"
     },
     "gh-GPA4": {
-        "name": "化解危機 x4"
+        "name": "A Peril Averted x4"
     },
     "gh-GMS": {
-        "name": "機械之美"
+        "name": "Mechanical Splendor"
     },
     "gh-GST": {
-        "name": "斬斷羈絆"
+        "name": "Severed Ties"
     },
     "gh-PA": {
         "name": "共犯"
@@ -291,40 +291,40 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "冰語者之友"
+        "name": "Friend of the Icespeakers"
     },
     "fh-CFSS": {
-        "name": "雪語者之友"
+        "name": "Friend of the Snowspeakers"
     },
     "fh-CFFS": {
-        "name": "霜語者之友"
+        "name": "Friend of the Frostspeakers"
     },
     "fh-CDIS": {
-        "name": "冰語者的毀滅者"
+        "name": "Destroyer of the Icespeakers"
     },
     "fh-CDSS": {
-        "name": "雪語者的毀滅者"
+        "name": "Destroyer of the Snowspeakers"
     },
     "fh-CFFK": {
-        "name": "魚王之友"
+        "name": "Friend of the Fish King"
     },
     "fh-CCU": {
-        "name": "王冠合一"
+        "name": "Crown United"
     },
     "fh-CUA": {
-        "name": "無拘盟友"
+        "name": "Unfettered Allies"
     },
     "fh-CUD": {
-        "name": "無拘（已停用）"
+        "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
-        "name": "進入森林"
+        "name": "Into the Forest"
     },
     "fh-CFP": {
         "name": "火椒"
     },
     "fh-CSS": {
-        "name": "碎片尋覓者"
+        "name": "Shard Seeker"
     },
     "fh-CEJ": {
         "name": "空罐"
@@ -333,46 +333,46 @@ export default {
         "name": "罐中蟲"
     },
     "fh-CUC": {
-        "name": "未充能核心"
+        "name": "Uncharged Core"
     },
     "fh-CCC": {
-        "name": "已充能核心"
+        "name": "Charged Core"
     },
     "fh-CHF": {
-        "name": "豐收慶典"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "布魯米克斯足跡"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "布魯米克斯足跡 x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "布魯米克斯足跡 x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "布魯米克斯足跡 x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "布魯米克斯足跡 x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "珊瑚王冠碎片"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "珊瑚王冠碎片 x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "珊瑚王冠碎片 x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "珊瑚王冠碎片 x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "珊瑚王冠碎片 x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "珊瑚王冠碎片 x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
         "name": "冰之心"

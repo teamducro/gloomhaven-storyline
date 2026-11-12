@@ -73,7 +73,7 @@ export default {
             "name": "가시 갑옷"
         },
         "strength-in-agony": {
-            "name": "고통 속의 힘"
+            "name": "strength in agony"
         },
         "the-maw-of-madness": {
             "name": "광기의 나락"
@@ -175,64 +175,64 @@ export default {
             "name": "소용돌이"
         },
         "armed-and-dangerous": {
-            "name": "무장한 위험"
+            "name": "armed and dangerous"
         },
         "bioluminescence": {
-            "name": "생물 발광"
+            "name": "bioluminescence"
         },
         "lightning-moths": {
-            "name": "번개 나방"
+            "name": "lightning moths"
         },
         "blood-drain": {
-            "name": "피 빨아먹기"
+            "name": "blood drain"
         },
         "bone-daggers": {
             "name": "뼈 단검"
         },
         "call-of-the-grave": {
-            "name": "무덤의 부름"
+            "name": "call of the grave"
         },
         "corrupting-parasites": {
-            "name": "타락시키는 기생충"
+            "name": "corrupting parasites"
         },
         "soul-leeches": {
-            "name": "영혼 거머리"
+            "name": "soul leeches"
         },
         "cyclone-of-blades": {
-            "name": "칼날 회오리"
+            "name": "cyclone of blades"
         },
         "death-march": {
-            "name": "죽음의 행진"
+            "name": "death march"
         },
         "creeping-beetles": {
-            "name": "기어 다니는 딱정벌레"
+            "name": "creeping beetles"
         },
         "deflecting-blades": {
-            "name": "쳐내는 칼날"
+            "name": "deflecting blades"
         },
         "endless-biting": {
-            "name": "끝없는 물어뜯기"
+            "name": "endless biting"
         },
         "engulfing-stingers": {
-            "name": "집어삼키는 독침"
+            "name": "engulfing stingers"
         },
         "angry-wasps": {
-            "name": "성난 말벌"
+            "name": "angry wasps"
         },
         "focused-scourge": {
-            "name": "집중된 재앙"
+            "name": "focused scourge"
         },
         "fury-of-the-horde": {
-            "name": "무리의 분노"
+            "name": "fury of the horde"
         },
         "rage-hornets": {
-            "name": "분노한 장수말벌"
+            "name": "rage hornets"
         },
         "grasping-advance": {
-            "name": "움켜쥐며 전진"
+            "name": "grasping advance"
         },
         "hive-mind": {
-            "name": "군체 정신"
+            "name": "hive mind"
         },
         "incubation": {
             "name": "부화"
@@ -241,52 +241,52 @@ export default {
             "name": "들끓기"
         },
         "oasis": {
-            "name": "오아시스"
+            "name": "oasis"
         },
         "omniscient-assault": {
-            "name": "전지적 맹공"
+            "name": "omniscient assault"
         },
         "overwhelming-offensive": {
-            "name": "압도적 공세"
+            "name": "overwhelming offensive"
         },
         "putrid-grubs": {
             "name": "썩은 구더기"
         },
         "bloat-maggots": {
-            "name": "부풀어 오른 구더기"
+            "name": "bloat maggots"
         },
         "repulsive-host": {
-            "name": "역겨운 군세"
+            "name": "repulsive host"
         },
         "scattered-defense": {
-            "name": "흩어진 방어"
+            "name": "scattered defense"
         },
         "sunstroke": {
             "name": "일사병"
         },
         "swarming-minions": {
-            "name": "우글대는 부하들"
+            "name": "swarming minions"
         },
         "the-storms-edge": {
-            "name": "폭풍의 끝자락"
+            "name": "the storm's edge"
         },
         "tomb-of-the-immortal": {
-            "name": "불멸자의 무덤"
+            "name": "tomb of the immortal"
         },
         "unstoppable-army": {
-            "name": "멈출 수 없는 군대"
+            "name": "unstoppable army"
         },
         "steel-scarabs": {
-            "name": "강철 풍뎅이"
+            "name": "steel scarabs"
         },
         "vampiric-tempest": {
-            "name": "흡혈의 폭풍"
+            "name": "vampiric tempest"
         },
         "wasteland": {
             "name": "황무지"
         },
         "rust-vermin": {
-            "name": "녹슨 해충"
+            "name": "rust vermin"
         },
         "ancient-ward": {
             "name": "고대 수호물"
@@ -376,7 +376,7 @@ export default {
             "name": "독을 가진 아군"
         },
         "vicious-ally": {
-            "name": "악랄한 동료"
+            "name": "vicious ally"
         },
         "avalanche": {
             "name": "눈사태"
@@ -475,7 +475,7 @@ export default {
             "name": "위장술"
         },
         "crashing-wave": {
-            "name": "부서지는 파도"
+            "name": "crashing wave"
         },
         "crippling-noose": {
             "name": "무력화 올가미"
@@ -490,7 +490,7 @@ export default {
             "name": "적발"
         },
         "felling-swoop": {
-            "name": "쓰러뜨리는 급강하"
+            "name": "felling swoop"
         },
         "feral-instincts": {
             "name": "야생 본능"
@@ -517,7 +517,7 @@ export default {
             "name": "살육 유도"
         },
         "multi-pronged-assault": {
-            "name": "다각도 공격"
+            "name": "multi-pronged assault"
         },
         "natures-hunger": {
             "name": "자연의 갈망"
@@ -529,7 +529,7 @@ export default {
             "name": "공격 강행"
         },
         "race-to-the-grave": {
-            "name": "무덤을 향한 질주"
+            "name": "race to the grave"
         },
         "rain-of-arrows": {
             "name": "화살 세례"
@@ -547,7 +547,7 @@ export default {
             "name": "뛰어난 집중력"
         },
         "solid-bow": {
-            "name": "튼튼한 활"
+            "name": "solid bow"
         },
         "swift-trickery": {
             "name": "재빠른 술수"
@@ -646,7 +646,7 @@ export default {
             "name": "불안정한 소비"
         },
         "winters-edge": {
-            "name": "겨울의 칼날"
+            "name": "winter's edge"
         },
         "brain-leech": {
             "name": "뇌 거머리"
@@ -775,7 +775,7 @@ export default {
             "name": "밤의 눈"
         },
         "gloom-darts": {
-            "name": "어둠 다트"
+            "name": "gloom darts"
         },
         "grim-sustenance": {
             "name": "음산하 ㄴ기운"
@@ -796,7 +796,7 @@ export default {
             "name": "고요한 힘"
         },
         "smoke-step": {
-            "name": "연기 걸음"
+            "name": "smoke step"
         },
         "soulfire": {
             "name": "영혼의 불길"
@@ -1024,10 +1024,10 @@ export default {
             "name": "응급 처치"
         },
         "gentlemans-anger": {
-            "name": "신사의 분노"
+            "name": "gentleman's anger"
         },
         "grisly-trauma": {
-            "name": "끔찍한 외상"
+            "name": "grisly trauma"
         },
         "hamstring": {
             "name": "허벅지 근육 파열"
@@ -1354,7 +1354,7 @@ export default {
             "name": "결속된 힘"
         },
         "conjured-aid": {
-            "name": "소환된 도움"
+            "name": "conjured aid"
         },
         "divided-mind": {
             "name": "갈라진 정신"
@@ -1387,7 +1387,7 @@ export default {
             "name": "어둠 속으로"
         },
         "leathery-wings": {
-            "name": "가죽질 날개"
+            "name": "leathery wings"
         },
         "living-mountain": {
             "name": "살아 움직이는 산"
@@ -1680,7 +1680,7 @@ export default {
             "name": "빛줄기"
         },
         "revitalizing-fount": {
-            "name": "생기를 되찾는 샘"
+            "name": "revitalizing fount"
         },
         "seal-their-fate": {
             "name": "운명을 봉하다"
@@ -3567,7 +3567,7 @@ export default {
             "name": "공중 지원"
         },
         "trained-falcon": {
-            "name": "훈련된 매"
+            "name": "trained falcon"
         },
         "at-all-costs": {
             "name": "어떤 대가를 치르더라도"
@@ -3579,7 +3579,7 @@ export default {
             "name": "바리케이드"
         },
         "banner-of-valor": {
-            "name": "용맹의 깃발"
+            "name": "banner of valor"
         },
         "boldening-blow": {
             "name": "고무적인 타격"
@@ -3597,7 +3597,7 @@ export default {
             "name": "사기 진작"
         },
         "banner-of-hope": {
-            "name": "희망의 깃발"
+            "name": "banner of hope"
         },
         "explosive-epicenter": {
             "name": "폭발의 근원"
@@ -3615,7 +3615,7 @@ export default {
             "name": "소이탄 투척"
         },
         "torch-bearer": {
-            "name": "횃불잡이"
+            "name": "torch bearer"
         },
         "javelin": {
             "name": "투창"
@@ -3630,7 +3630,7 @@ export default {
             "name": "오게 두어라"
         },
         "banner-of-courage": {
-            "name": "용기의 깃발"
+            "name": "banner of courage"
         },
         "meat-grinder": {
             "name": "고기 분쇄기"
@@ -3645,7 +3645,7 @@ export default {
             "name": "집결의 함성"
         },
         "banner-of-strength": {
-            "name": "힘의 깃발"
+            "name": "banner of strength"
         },
         "regroup": {
             "name": "재편성"
@@ -3663,7 +3663,7 @@ export default {
             "name": "포로는 없다"
         },
         "banner-of-doom": {
-            "name": "파멸의 깃발"
+            "name": "banner of doom"
         },
         "taunting-howl": {
             "name": "도발의 포효"
@@ -3714,7 +3714,7 @@ export default {
             "name": "끝없는 무리"
         },
         "bone-horde": {
-            "name": "뼈 무더기"
+            "name": "bone horde"
         },
         "eternal-torment": {
             "name": "영겁의 괴롭힘"
@@ -3753,7 +3753,7 @@ export default {
             "name": "썩어가는 군중"
         },
         "two-shambling-skeletons": {
-            "name": "비틀거리는 해골 둘"
+            "name": "two shambling skeletons"
         },
         "solid-bones": {
             "name": "단단한 뼈대"
@@ -3771,19 +3771,19 @@ export default {
             "name": "파헤쳐진 공포"
         },
         "raging-corpse": {
-            "name": "광분한 시체"
+            "name": "raging corpse"
         },
         "unforgivable-methods": {
             "name": "용서받지 못할 방법"
         },
         "stitched-atrocity": {
-            "name": "끔찍한 누더기"
+            "name": "stitched atrocity"
         },
         "unholy-prowess": {
             "name": "불경한 솜씨"
         },
         "skeleton-sorcerer": {
-            "name": "해골 마술사"
+            "name": "skeleton sorcerer"
         },
         "wailing-from-beyond": {
             "name": "피안의 통곡"
@@ -3978,88 +3978,88 @@ export default {
             "name": "난폭한 천성"
         },
         "black-night-of-the-deep": {
-            "name": "깊은 곳의 검은 밤"
+            "name": "black night of the deep"
         },
         "black-scythe": {
             "name": "검은 낫"
         },
         "claw-of-doom": {
-            "name": "파멸의 발톱"
+            "name": "claw of doom"
         },
         "consume-the-helpless": {
-            "name": "무력한 자를 삼키다"
+            "name": "consume the helpless"
         },
         "crippling-terror": {
-            "name": "마비시키는 공포"
+            "name": "crippling terror"
         },
         "crushing-darkness": {
-            "name": "짓누르는 어둠"
+            "name": "crushing darkness"
         },
         "death-spiral": {
-            "name": "죽음의 소용돌이"
+            "name": "death spiral"
         },
         "dire-frenzy": {
-            "name": "끔찍한 광란"
+            "name": "dire frenzy"
         },
         "extra-decoration": {
-            "name": "추가 장식"
+            "name": "extra decoration"
         },
         "grim-trophies": {
-            "name": "섬뜩한 전리품"
+            "name": "grim trophies"
         },
         "hasten-the-end": {
-            "name": "종말을 재촉하다"
+            "name": "hasten the end"
         },
         "haunting-brutality": {
-            "name": "뇌리를 떠나지 않는 잔혹함"
+            "name": "haunting brutality"
         },
         "hollow-aura": {
-            "name": "공허한 기운"
+            "name": "hollow aura"
         },
         "ink-cloud": {
-            "name": "먹물 구름"
+            "name": "ink cloud"
         },
         "lacerating-stabs": {
-            "name": "찢어발기는 찌르기"
+            "name": "lacerating stabs"
         },
         "lie-in-wait": {
             "name": "매복"
         },
         "mantle-of-dread": {
-            "name": "공포의 망토"
+            "name": "mantle of dread"
         },
         "morbid-camouflage": {
-            "name": "섬뜩한 위장"
+            "name": "morbid camouflage"
         },
         "pinning-spines": {
-            "name": "고정하는 가시"
+            "name": "pinning spines"
         },
         "rip-from-the-bone": {
-            "name": "뼈에서 뜯어내기"
+            "name": "rip from the bone"
         },
         "skewer-the-flesh": {
-            "name": "살을 꿰뚫기"
+            "name": "skewer the flesh"
         },
         "skull-collection": {
-            "name": "해골 수집"
+            "name": "skull collection"
         },
         "slipping-into-death": {
-            "name": "죽음 속으로 스며들기"
+            "name": "slipping into death"
         },
         "soul-hunger": {
             "name": "영혼의 굶주림"
         },
         "staring-into-the-abyss": {
-            "name": "심연을 응시하다"
+            "name": "staring into the abyss"
         },
         "succumb-to-fear": {
-            "name": "공포에 굴복하다"
+            "name": "succumb to fear"
         },
         "the-remorseless-deep": {
-            "name": "무자비한 심해"
+            "name": "the remorseless deep"
         },
         "tumultuous-panic": {
-            "name": "소란스러운 공황"
+            "name": "tumultuous panic"
         },
         "unseen-horror": {
             "name": "보이지 않는 공포"
@@ -4143,13 +4143,13 @@ export default {
             "name": "응달의 허깨비"
         },
         "shadow-beast": {
-            "name": "그림자 야수"
+            "name": "shadow beast"
         },
         "the-night-takes-shape": {
             "name": "실체화하는 밤"
         },
         "shadow-horror": {
-            "name": "그림자 공포"
+            "name": "shadow horror"
         },
         "vengeful-storm": {
             "name": "복수의 폭풍"
@@ -4161,85 +4161,85 @@ export default {
             "name": "네 차례가 도래하면"
         },
         "bring-down-the-mountain": {
-            "name": "산을 무너뜨리다"
+            "name": "bring down the mountain"
         },
         "cold-boulder": {
-            "name": "차가운 바윗덩이"
+            "name": "cold boulder"
         },
         "crushing-crystals": {
-            "name": "짓누르는 수정"
+            "name": "crushing crystals"
         },
         "draw-of-the-bedrock": {
-            "name": "암반의 이끌림"
+            "name": "draw of the bedrock"
         },
         "draw-strength": {
-            "name": "힘 끌어내기"
+            "name": "draw strength"
         },
         "encased-punch": {
-            "name": "감싼 주먹질"
+            "name": "encased punch"
         },
         "freezing-shell": {
             "name": "얼어붙은 껍질"
         },
         "frost-eruption": {
-            "name": "서리 분출"
+            "name": "frost eruption"
         },
         "frozen-over": {
-            "name": "꽁꽁 얼어붙음"
+            "name": "frozen over"
         },
         "frozen-spike": {
-            "name": "얼어붙은 가시"
+            "name": "frozen spike"
         },
         "fury-of-the-mountain": {
-            "name": "산의 분노"
+            "name": "fury of the mountain"
         },
         "gift-of-the-mountain": {
-            "name": "산의 선물"
+            "name": "gift of the mountain"
         },
         "glacier-slam": {
-            "name": "빙하 강타"
+            "name": "glacier slam"
         },
         "ice-blast": {
             "name": "얼음 폭발"
         },
         "ice-uppercut": {
-            "name": "얼음 어퍼컷"
+            "name": "ice uppercut"
         },
         "lacerating-eruption": {
-            "name": "찢어발기는 분출"
+            "name": "lacerating eruption"
         },
         "one-with-the-mountain": {
-            "name": "산과 하나"
+            "name": "one with the mountain"
         },
         "packed-solid": {
-            "name": "단단히 다지기"
+            "name": "packed solid"
         },
         "piercing-pummel": {
-            "name": "꿰뚫는 연타"
+            "name": "piercing pummel"
         },
         "preserved-fury": {
-            "name": "보존된 분노"
+            "name": "preserved fury"
         },
         "primal-bellow": {
-            "name": "원초적 포효"
+            "name": "primal bellow"
         },
         "seeing-stars": {
-            "name": "눈앞의 별"
+            "name": "seeing stars"
         },
         "shard-launch": {
-            "name": "파편 발사"
+            "name": "shard launch"
         },
         "shattering-blow": {
-            "name": "산산조각 내는 타격"
+            "name": "shattering blow"
         },
         "the-mountain's-fist": {
-            "name": "산의 주먹"
+            "name": "the mountain's fist"
         },
         "thick-frost": {
-            "name": "두꺼운 서리"
+            "name": "thick frost"
         },
         "voice-from-below": {
-            "name": "아래에서 들려오는 목소리"
+            "name": "voice from below"
         },
         "accelerated-metabolism": {
             "name": "신진대사 가속"
@@ -4347,7 +4347,7 @@ export default {
             "name": "조준 공격"
         },
         "sniper-turret": {
-            "name": "저격 포탑"
+            "name": "sniper turret"
         },
         "burning-slash": {
             "name": "불타는 참격"
@@ -4374,13 +4374,13 @@ export default {
             "name": "역장"
         },
         "dampening-unit": {
-            "name": "완충 유닛"
+            "name": "dampening unit"
         },
         "heavy-metal": {
             "name": "무거운 금속"
         },
         "sledge-driver": {
-            "name": "슬레지 드라이버"
+            "name": "sledge driver"
         },
         "high-impact-projectiles": {
             "name": "고충격 발사체"
@@ -4389,10 +4389,10 @@ export default {
             "name": "가로채기"
         },
         "hunter-killer": {
-            "name": "헌터 킬러"
+            "name": "hunter-killer"
         },
         "jackal-mech": {
-            "name": "기계 자칼"
+            "name": "jackal mech"
         },
         "interference": {
             "name": "간섭"
@@ -4413,19 +4413,19 @@ export default {
             "name": "그물 방출"
         },
         "trapping-unit": {
-            "name": "포획 유닛"
+            "name": "trapping unit"
         },
         "plague-protocol": {
             "name": "역병 프로토콜"
         },
         "toxin-distributor": {
-            "name": "독극물 살포기"
+            "name": "toxin distributor"
         },
         "plated-defense": {
             "name": "중장갑 방호"
         },
         "armored-tank": {
-            "name": "장갑 전차"
+            "name": "armored tank"
         },
         "prepare-for-deployment": {
             "name": "출격 준비"
@@ -4458,166 +4458,166 @@ export default {
             "name": "충격 펄스"
         },
         "arcing-generator": {
-            "name": "아크 발전기"
+            "name": "arcing generator"
         },
         "spinning-blades": {
             "name": "회전하는 칼날"
         },
         "sword-propeller": {
-            "name": "칼날 나선추진기"
+            "name": "sword propeller"
         },
         "swarming-bulwark": {
             "name": "무리지은 보루"
         },
         "shield-spider": {
-            "name": "방패 거미"
+            "name": "shield spider"
         },
         "triage-program": {
             "name": "부상자 분류 프로그램"
         },
         "ancient-rites-of-power": {
-            "name": "고대의 권능 의식"
+            "name": "ancient rites of power"
         },
         "battle-prowess": {
-            "name": "전투 무용"
+            "name": "battle prowess"
         },
         "boon-of-the-tempest": {
-            "name": "폭풍의 은혜"
+            "name": "boon of the tempest"
         },
         "bounty-of-the-earth": {
-            "name": "대지의 풍요"
+            "name": "bounty of the earth"
         },
         "caress-of-the-night": {
-            "name": "밤의 애무"
+            "name": "caress of the night"
         },
         "coalescing-darkness": {
-            "name": "응집하는 어둠"
+            "name": "coalescing darkness"
         },
         "crystalline-aegis": {
-            "name": "수정 방패"
+            "name": "crystalline aegis"
         },
         "desperate-throw": {
-            "name": "필사적인 투척"
+            "name": "desperate throw"
         },
         "diamondization": {
-            "name": "다이아몬드화"
+            "name": "diamondization"
         },
         "emerald-edge": {
-            "name": "에메랄드 칼날"
+            "name": "emerald edge"
         },
         "formless-bladestorm": {
-            "name": "형체 없는 칼날 폭풍"
+            "name": "formless bladestorm"
         },
         "gale-barrage": {
-            "name": "돌풍 포화"
+            "name": "gale barrage"
         },
         "gemstone-resonance": {
-            "name": "보석 공명"
+            "name": "gemstone resonance"
         },
         "guide-the-flow": {
-            "name": "흐름 인도"
+            "name": "guide the flow"
         },
         "imbue-with-life": {
-            "name": "생명 불어넣기"
+            "name": "imbue with life"
         },
         "animated-claymore": {
-            "name": "살아 움직이는 클레이모어"
+            "name": "animated claymore"
         },
         "malachite-shockwave": {
-            "name": "공작석 충격파"
+            "name": "malachite shockwave"
         },
         "obsidian-spear": {
-            "name": "흑요석 창"
+            "name": "obsidian spear"
         },
         "onyx-shards": {
-            "name": "줄마노 파편"
+            "name": "onyx shards"
         },
         "propulsive-tailwind": {
-            "name": "추진하는 뒷바람"
+            "name": "propulsive tailwind"
         },
         "reinforced-riposte": {
-            "name": "강화된 반격"
+            "name": "reinforced riposte"
         },
         "remote-impact": {
-            "name": "원격 충격"
+            "name": "remote impact"
         },
         "rising-momentum": {
             "name": "기세 상승"
         },
         "sky-splitting-strike": {
-            "name": "하늘을 가르는 일격"
+            "name": "sky-splitting strike"
         },
         "slashing-cyclone": {
-            "name": "베어 가르는 회오리"
+            "name": "slashing cyclone"
         },
         "stoic-vigilance": {
-            "name": "금욕적 경계"
+            "name": "stoic vigilance"
         },
         "swift-pivot": {
-            "name": "재빠른 회전"
+            "name": "swift pivot"
         },
         "torrential-cleave": {
-            "name": "쏟아지는 가르기"
+            "name": "torrential cleave"
         },
         "unstoppable-impulse": {
-            "name": "멈출 수 없는 충동"
+            "name": "unstoppable impulse"
         },
         "untether-the-shackles": {
-            "name": "족쇄 풀기"
+            "name": "untether the shackles"
         },
         "spiritbound-falchion": {
-            "name": "영혼 결속 팔시온"
+            "name": "spiritbound falchion"
         },
         "veil-of-protection": {
-            "name": "보호의 장막"
+            "name": "veil of protection"
         },
         "ancient-drill": {
-            "name": "고대 천공기"
+            "name": "ancient drill"
         },
         "beam-axe": {
-            "name": "광선 도끼"
+            "name": "beam axe"
         },
         "bronze-plating": {
-            "name": "청동 도금"
+            "name": "bronze plating"
         },
         "cryogenic-hibernation": {
-            "name": "저온 동면"
+            "name": "cryogenic hibernation"
         },
         "curious-gear": {
-            "name": "기이한 톱니바퀴"
+            "name": "curious gear"
         },
         "curious-machinery": {
-            "name": "기묘한 기계"
+            "name": "curious machinery"
         },
         "electrical-discharge": {
             "name": "방전"
         },
         "energy-conversion": {
-            "name": "에너지 변환"
+            "name": "energy conversion"
         },
         "heat-conduction": {
             "name": "열전도"
         },
         "heated-drill": {
-            "name": "달궈진 드릴"
+            "name": "heated drill"
         },
         "magnetic-field": {
             "name": "자기장"
         },
         "memory-drive": {
-            "name": "메모리 드라이브"
+            "name": "memory drive"
         },
         "piston-barrage": {
-            "name": "피스톤 포화"
+            "name": "piston barrage"
         },
         "polarity-shift": {
-            "name": "극성 전환"
+            "name": "polarity shift"
         },
         "power-core": {
-            "name": "동력 코어"
+            "name": "power core"
         },
         "pressure-build-up": {
-            "name": "압력 상승"
+            "name": "pressure build-up"
         },
         "processing": {
             "name": "처리 중"
@@ -4629,67 +4629,67 @@ export default {
             "name": "재귀"
         },
         "release-valve": {
-            "name": "배출 밸브"
+            "name": "release valve"
         },
         "rocket-boots": {
-            "name": "로켓 장화"
+            "name": "rocket boots"
         },
         "scalding-blast": {
-            "name": "뜨거운 증기 폭발"
+            "name": "scalding blast"
         },
         "steam-armor": {
-            "name": "증기 갑옷"
+            "name": "steam armor"
         },
         "steam-core": {
             "name": "증기 핵"
         },
         "steel-piston": {
-            "name": "강철 피스톤"
+            "name": "steel piston"
         },
         "stress-vents": {
-            "name": "압력 배출구"
+            "name": "stress vents"
         },
         "super-heat-transfer": {
-            "name": "초고열 전달"
+            "name": "super heat transfer"
         },
         "unstable-core": {
-            "name": "불안정한 핵"
+            "name": "unstable core"
         },
         "blood-ritual": {
-            "name": "피의 의식"
+            "name": "blood ritual"
         },
         "burned-at-both-ends": {
-            "name": "양끝에서 타오르다"
+            "name": "burned at both ends"
         },
         "chained-by-despair": {
-            "name": "절망에 묶이다"
+            "name": "chained by despair"
         },
         "chained-by-spite": {
-            "name": "원한에 묶이다"
+            "name": "chained by spite"
         },
         "cleansing-fire": {
-            "name": "정화의 불"
+            "name": "cleansing fire"
         },
         "delayed-malady": {
-            "name": "지연된 병"
+            "name": "delayed malady"
         },
         "down-to-the-dirt": {
-            "name": "흙바닥까지"
+            "name": "down to the dirt"
         },
         "explosive-wounds": {
-            "name": "폭발하는 상처"
+            "name": "explosive wounds"
         },
         "hopelessness": {
             "name": "절망감"
         },
         "infection-purge": {
-            "name": "감염 정화"
+            "name": "infection purge"
         },
         "line-of-transference": {
-            "name": "전이의 선"
+            "name": "line of transference"
         },
         "mirrored-misery": {
-            "name": "거울에 비친 비참함"
+            "name": "mirrored misery"
         },
         "penance": {
             "name": "속죄"
@@ -4698,52 +4698,52 @@ export default {
             "name": "환상지"
         },
         "pleasure-in-pain": {
-            "name": "고통 속의 쾌락"
+            "name": "pleasure in pain"
         },
         "redemption": {
             "name": "구원"
         },
         "reject-the-gift": {
-            "name": "선물을 거부하다"
+            "name": "reject the gift"
         },
         "reprisal": {
             "name": "보복"
         },
         "reversal-of-fate": {
-            "name": "운명의 역전"
+            "name": "reversal of fate"
         },
         "scarred-effigy": {
-            "name": "흉터 난 우상"
+            "name": "scarred effigy"
         },
         "flesh-fiend": {
-            "name": "살덩이 악귀"
+            "name": "flesh fiend"
         },
         "shared-affliction": {
-            "name": "나누는 고통"
+            "name": "shared affliction"
         },
         "swift-vengeance": {
-            "name": "신속한 복수"
+            "name": "swift vengeance"
         },
         "the-agony-of-others": {
-            "name": "타인의 고통"
+            "name": "the agony of others"
         },
         "the-end-of-everything": {
-            "name": "모든 것의 끝"
+            "name": "the end of everything"
         },
         "transferred-injury": {
-            "name": "전가된 부상"
+            "name": "transferred injury"
         },
         "unending-torment": {
-            "name": "끝없는 고문"
+            "name": "unending torment"
         },
         "unstable-effigy": {
-            "name": "불안정한 우상"
+            "name": "unstable effigy"
         },
         "flesh-bomb": {
-            "name": "살덩이 폭탄"
+            "name": "flesh bomb"
         },
         "wracked-with-pain": {
-            "name": "고통에 시달리다"
+            "name": "wracked with pain"
         },
         "calamity": {
             "name": "참화"
@@ -4836,7 +4836,7 @@ export default {
             "name": "폭풍 속의 새 떼"
         },
         "2-white-owls": {
-            "name": "흰 올빼미 2마리"
+            "name": "2 white owls"
         },
         "biting-frost": {
             "name": "살을 에는 서리"
@@ -4890,7 +4890,7 @@ export default {
             "name": "활력의 눈싸라기"
         },
         "polar-cat": {
-            "name": "북극 고양이"
+            "name": "polar cat"
         },
         "shifting-snow": {
             "name": "움직이는 설원"
@@ -4932,91 +4932,91 @@ export default {
             "name": "북풍 장벽"
         },
         "barbaric-yawp": {
-            "name": "야만적인 고함"
+            "name": "barbaric yawp"
         },
         "befuddling-bellow": {
-            "name": "정신을 흐리는 포효"
+            "name": "befuddling bellow"
         },
         "calamitous-yawp": {
-            "name": "재앙의 고함"
+            "name": "calamitous yawp"
         },
         "cloaking-refraction": {
-            "name": "가리는 굴절"
+            "name": "cloaking refraction"
         },
         "concentrated-blast": {
-            "name": "집중 폭발"
+            "name": "concentrated blast"
         },
         "devastating-shout": {
-            "name": "파괴적인 외침"
+            "name": "devastating shout"
         },
         "din-of-battle": {
-            "name": "전장의 소음"
+            "name": "din of battle"
         },
         "elemental-pulse": {
-            "name": "원소 파동"
+            "name": "elemental pulse"
         },
         "empowering-note": {
-            "name": "힘을 주는 음"
+            "name": "empowering note"
         },
         "empowering-pulse": {
-            "name": "힘을 주는 파동"
+            "name": "empowering pulse"
         },
         "feedback": {
             "name": "되먹임"
         },
         "forceful-vibrations": {
-            "name": "강렬한 진동"
+            "name": "forceful vibrations"
         },
         "foreboding-tremors": {
-            "name": "불길한 떨림"
+            "name": "foreboding tremors"
         },
         "future-sense": {
-            "name": "미래 감각"
+            "name": "future sense"
         },
         "heartening-harmony": {
-            "name": "용기를 주는 화음"
+            "name": "heartening harmony"
         },
         "illuminative-tone": {
-            "name": "밝히는 음색"
+            "name": "illuminative tone"
         },
         "lifting-voice": {
-            "name": "북돋는 목소리"
+            "name": "lifting voice"
         },
         "precious-gems": {
-            "name": "귀한 보석"
+            "name": "precious gems"
         },
         "resonant-frequency": {
-            "name": "공명 주파수"
+            "name": "resonant frequency"
         },
         "shape-the-path": {
             "name": "길 빚기"
         },
         "shrieking-chakram": {
-            "name": "비명 지르는 차크람"
+            "name": "shrieking chakram"
         },
         "soft-spots": {
             "name": "약점"
         },
         "sonic-shock": {
-            "name": "음파 충격"
+            "name": "sonic shock"
         },
         "sound-therapy": {
-            "name": "음향 치료"
+            "name": "sound therapy"
         },
         "stealth-vibrations": {
-            "name": "은밀한 진동"
+            "name": "stealth vibrations"
         },
         "transparency": {
             "name": "투명"
         },
         "unrelenting-wail": {
-            "name": "멈추지 않는 통곡"
+            "name": "unrelenting wail"
         },
         "unsustainable-wave": {
-            "name": "지속 불가능한 파동"
+            "name": "unsustainable wave"
         },
         "violent-vibrations": {
-            "name": "격렬한 진동"
+            "name": "violent vibrations"
         },
         "boar-catcher": {
             "name": "멧돼지잡이"
@@ -5055,13 +5055,13 @@ export default {
             "name": "참호"
         },
         "defense-grid": {
-            "name": "방어 격자"
+            "name": "defense grid"
         },
         "furry-facade": {
             "name": "북실북실한 허울"
         },
         "shaggy-lure": {
-            "name": "덥수룩한 미끼"
+            "name": "shaggy lure"
         },
         "grasping-hazards": {
             "name": "잡아채는 재난"

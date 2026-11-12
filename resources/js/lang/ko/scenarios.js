@@ -62,7 +62,7 @@ export default {
             "각자 금화 15개",
             "명성 -2",
             "번영도 +2",
-            "“해골 도끼” 도안 (아이템 113)"
+            "“Skullbane Axe” 도안 (아이템 113)"
         ],
         "faq": [
             "오타: 시나리오 북의 “보스 특수 1” 텍스트는 무시하고 보스의 능력치 카드를 따릅니다."
@@ -72,7 +72,7 @@ export default {
         "name": "글룸헤이븐 광장 B",
         "rewards": [
             "명성 +4",
-            "“해골 도끼” 도안 (아이템 113)"
+            "“Skullbane Axe” 도안 (아이템 113)"
         ],
         "faq": [
             "오타: 문 표식 1은 북쪽 문이 아니라 남쪽 문에 있어야 합니다. 남쪽 문이 열릴 때 “1” 아래의 텍스트를 읽습니다.",
@@ -362,12 +362,12 @@ export default {
         "name": "묘지 지하",
         "requirements": "“조른의 구도자” 개인 퀘스트",
         "rewards": [
-            "조른의 구도자가 “조른의 지팡이” (아이템 114)를 받습니다. 구도자는 이 아이템을 팔 수 없습니다."
+            "조른의 구도자가 “Staff of Xorn” (아이템 114)를 받습니다. 구도자는 이 아이템을 팔 수 없습니다."
         ]
     },
     "gh-54": {
         "name": "얼음 궁전",
-        "requirements": "“조른의 구도자” 개인 퀘스트, “조른의 지팡이” 아이템 장착",
+        "requirements": "“조른의 구도자” 개인 퀘스트, “Staff of Xorn” 아이템 장착",
         "rewards": [
             "조른의 구도자를 즉시 은퇴시킴",
             "해당 클래스의 일반 은퇴 이벤트 대신 도시 이벤트 59와 여로 이벤트 59를 각 덱에 추가",
@@ -379,21 +379,21 @@ export default {
         ]
     },
     "gh-SoX1": {
-        "name": "귀족의 묘지",
+        "name": "Nobles’ Crypt",
         "rewards": [
             "명성 +1",
             "도시 이벤트 SoX2 카드를 덱에 추가"
         ]
     },
     "gh-SoX2": {
-        "name": "침수된 묘지",
+        "name": "Flooded Crypt",
         "rewards": [
             "도시 이벤트 SoX3 카드를 덱에 추가",
-            "다음 중 하나만 선택: “혹한검” (아이템 077), “서리 지팡이” (아이템 083) 또는 “파도의 문장” (아이템 111)"
+            "다음 중 하나만 선택: “혹한검” (아이템 077), “Wand of Frost” (아이템 083) 또는 “Wave Crest” (아이템 111)"
         ]
     },
     "gh-SoX3": {
-        "name": "고대인의 묘지",
+        "name": "Crypt of the Ancients",
         "rewards": [
             "공동으로 금화 50개",
             "도시 이벤트 SoX3 카드를 덱에 추가"
@@ -479,7 +479,7 @@ export default {
     "gh-65": {
         "name": "유황 광산",
         "rewards": [
-            "“고대 천공기” 도안 (아이템 112)"
+            "“Ancient Drill” 도안 (아이템 112)"
         ]
     },
     "gh-66": {
@@ -488,13 +488,13 @@ export default {
     "gh-67": {
         "name": "신비한 서고",
         "rewards": [
-            "“동력 코어” (아이템 132)"
+            "“Power Core” (아이템 132)"
         ]
     },
     "gh-68": {
         "name": "유독한 황야",
         "rewards": [
-            "“대형 치료 물약” (아이템 027) 2개"
+            "“Major Healing Potion” (아이템 027) 2개"
         ]
     },
     "gh-69": {
@@ -518,7 +518,7 @@ export default {
     "gh-71": {
         "name": "바람부는 고원",
         "rewards": [
-            "“대형 힘 물약” (아이템 041) 2개"
+            "“Major Power Potion” (아이템 041) 2개"
         ],
         "faq": [
             "강제 이동: 바람이 캐릭터를 오른쪽 또는 왼쪽으로 이동시키는데 이동 가능한 칸 중 한 곳에 장애물이나 벽이 있다면, 플레이어는 막힌 것으로 처리하여 이동하지 않거나 열려 있는 칸으로 이동하는 것을 선택할 수 있습니다.",
@@ -637,7 +637,7 @@ export default {
     "gh-84": {
         "name": "수정 동굴",
         "rewards": [
-            "“공명하는 수정” (아이템 133)",
+            "“Resonant Crystal” (아이템 133)",
             "번영도 +1"
         ],
         "faq": [
@@ -647,7 +647,7 @@ export default {
     "gh-85": {
         "name": "태양 신전",
         "rewards": [
-            "“새벽의 보주” (아이템 121)"
+            "“Orb of Dawn” (아이템 121)"
         ],
         "faq": [
             "책의 오류: 4인 플레이 시, 마지막 방에서 4인 플레이일 때만 일반 적으로 배치되는 밤 악마와 태양 악마(2~3인은 검은색, 4인은 흰색)는 배치하지 않습니다."
@@ -669,7 +669,7 @@ export default {
     "gh-88": {
         "name": "물의 차원",
         "rewards": [
-            "“소환 지팡이” (아이템 120)"
+            "“Staff of Summoning” (아이템 120)"
         ],
         "faq": [
             "잠복자가 모두 죽더라도, 시나리오 특수 효과의 방향을 정하기 위해 계속 잠복자 능력 카드를 뽑습니다."
@@ -684,7 +684,7 @@ export default {
     "gh-90": {
         "name": "악마의 균열",
         "rewards": [
-            "“검은 향로” (아이템 128)"
+            "“Black Censer” (아이템 128)"
         ]
     },
     "gh-91": {
@@ -715,31 +715,31 @@ export default {
     "gh-95": {
         "name": "상환일",
         "rewards": [
-            "“증오의 머리” (아이템 119)"
+            "“Skull of Hatred” (아이템 119)"
         ]
     },
     "gh-202": {
         "name": "검은 무덤",
         "rewards": [
-            "“위풍당당한 검” (아이템 134)"
+            "“Imposing Blade” (아이템 134)"
         ]
     },
     "gh-203": {
         "name": "유감스러운 침입",
         "rewards": [
-            "“집중 치료 광선” (아이템 135)"
+            "“Focusing Ray” (아이템 135)"
         ]
     },
     "gh-204": {
         "name": "타락한 실험실",
         "rewards": [
-            "“불안정한 영약” (아이템 136)"
+            "“Volatile Elixir” (아이템 136)"
         ]
     },
     "gh-205": {
         "name": "무기고 털이",
         "rewards": [
-            "“침묵의 단검” (아이템 137)"
+            "“Silent Stiletto” (아이템 137)"
         ]
     },
     "gh-206": {
@@ -751,83 +751,83 @@ export default {
     "gh-207": {
         "name": "설치류 해방",
         "rewards": [
-            "“심령술 칼” (아이템 139)"
+            "“Psychic Knife” (아이템 139)"
         ]
     },
     "gh-208": {
         "name": "상단 호위",
         "rewards": [
-            "“태양 방패” (아이템 140)"
+            "“Sun Shield” (아이템 140)"
         ]
     },
     "gh-209": {
         "name": "자연을 거스르는 모욕",
         "rewards": [
-            "“죽음의 가면” (아이템 145)"
+            "“Mask of Death” (아이템 145)"
         ]
     },
     "gh-210": {
         "name": "보관료",
         "rewards": [
-            "“만능 허리띠” (아이템 141)"
+            "“Utility Belt” (아이템 141)"
         ]
     },
     "gh-211": {
         "name": "야생동물의 차원",
         "rewards": [
-            "“상 변이 조각상” (아이템 142)"
+            "“Phasing Idol” (아이템 142)"
         ]
     },
     "gh-212": {
         "name": "어둠 수확",
         "rewards": [
-            "“연기 영약” (아이템 143)"
+            "“Smoke Elixir” (아이템 143)"
         ]
     },
     "gh-213": {
         "name": "병든 묘지",
         "rewards": [
-            "“역병 브로치” (아이템 144)"
+            "“Pendant of the Plague” (아이템 144)"
         ]
     },
     "gh-214": {
         "name": "음유시인 대결",
         "rewards": [
-            "“명인의 류트” (아이템 146)"
+            "“Master's Lute” (아이템 146)"
         ]
     },
     "gh-215": {
         "name": "타락자 사냥",
         "rewards": [
-            "“사냥꾼의 망토” (아이템 147)"
+            "“Cloak of the Hunter” (아이템 147)"
         ]
     },
     "gh-216": {
         "name": "재앙의 여파",
         "rewards": [
-            "“의사 가운” (아이템 148)"
+            "“Doctor's Coat” (아이템 148)"
         ]
     },
     "gh-217": {
         "name": "원소의 비밀",
         "rewards": [
-            "“원소 장화” (아이템 149)"
+            "“Elemental Boots” (아이템 149)"
         ]
     },
     "gh-218": {
         "name": "우리에 갇힌 곰",
         "rewards": [
-            "“명령 지팡이” (아이템 150)"
+            "“Staff of Command” (아이템 150)"
         ]
     },
     "gh-219": {
         "name": "시간의 모래",
         "rewards": [
-            "“모래 칼날” (아이템 151)"
+            "“Sword of the Sands” (아이템 151)"
         ]
     },
     "fc-96": {
-        "name": "뜻밖의 방문객",
+        "name": "Unexpected Visitors",
         "requirements": "암영의 최후 (전역) 완료",
         "rewards": [
             "각자 경험치 10",
@@ -835,14 +835,14 @@ export default {
         ]
     },
     "fc-97": {
-        "name": "전해지지 않은 지식",
+        "name": "Lore Untold",
         "rewards": [
             "각자 금화 10개",
             "도시 이벤트 88, 89, 90을 덱에 추가"
         ]
     },
     "fc-98": {
-        "name": "불타는 과거",
+        "name": "Past in Flames",
         "rewards": [
             [
                 "각자 금화 10개",
@@ -865,23 +865,23 @@ export default {
         "rewards": [
             [
                 "각자 금화 5개",
-                "“소형 해독제” (아이템 153)"
+                "“Minor Antidote” (아이템 153)"
             ],
             [
                 "각자 금화 10개",
                 "번영도 +1",
-                "“소형 해독제” (아이템 153)"
+                "“Minor Antidote” (아이템 153)"
             ]
         ]
     },
     "fc-100": {
-        "name": "맞물리는 톱니바퀴",
+        "name": "Shifting Gears",
         "rewards": [
-            "다음 중 한 세트를 선택하여 획득: “망원 렌즈” (아이템 059)와 “고대 천공기” (아이템 112), 또는 “기이한 톱니바퀴” (아이템 125)와 “원격조종 거미” (아이템 126)"
+            "다음 중 한 세트를 선택하여 획득: “Telescopic Lens” (아이템 059)와 “Ancient Drill” (아이템 112), 또는 “Curious Gear” (아이템 125)와 “Remote Spider” (아이템 126)"
         ]
     },
     "fc-101": {
-        "name": "안개에 싸인 묘지",
+        "name": "Shrouded Crypt",
         "rewards": [
             "공동으로 금화 20개",
             "명성 +1",
@@ -889,14 +889,14 @@ export default {
         ]
     },
     "fc-102": {
-        "name": "지식의 시장",
+        "name": "Bazaar of Knowledge",
         "rewards": [
             "각자 경험치 15",
             "위협당한 주민이 2+C명 이하라면: 명성 +2. 그렇지 않다면: 명성 -2"
         ]
     },
     "fc-103": {
-        "name": "필요한 곳에",
+        "name": "Where It Is Needed",
         "rewards": [
             "번영도 +2",
             "도시 이벤트 87 카드를 덱에 추가"
@@ -905,17 +905,17 @@ export default {
     "fc-104": {
         "name": "벌어진 상처",
         "rewards": [
-            "“대형 마나 물약” (아이템 048)"
+            "“Major Mana Potion” (아이템 048)"
         ]
     },
     "fc-105": {
-        "name": "광신도의 괴물들",
+        "name": "Monstrosities of a Cult",
         "rewards": [
-            "“대형 해독제” (아이템 154)"
+            "“Major Antidote” (아이템 154)"
         ]
     },
     "fc-106": {
-        "name": "정교한 작업",
+        "name": "Intricate Work",
         "rewards": [
             [
                 "각자 금화 175개. 이 금화는 즉시 {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, {DARK} 강화에 사용해야 합니다"
@@ -927,41 +927,41 @@ export default {
         ]
     },
     "fc-107": {
-        "name": "기계 천재",
+        "name": "Mechanical Genius",
         "rewards": [
             "각자 경험치 5"
         ]
     },
     "fc-108": {
-        "name": "종말의 서막",
+        "name": "Prologue to the End",
         "rewards": [
             [
-                "“저주막이 갑옷” (아이템 155)"
+                "“Curseward Armor” (아이템 155)"
             ],
             [
                 "“도끼 던지기” (아이템 161) 2개"
             ],
             [
-                "“저주막이 갑옷” (아이템 155)",
+                "“Curseward Armor” (아이템 155)",
                 "“도끼 던지기” (아이템 161) 2개"
             ]
         ]
     },
     "fc-109": {
-        "name": "전쟁의 에필로그",
+        "name": "Epilogue of a War",
         "rewards": [
             "각자 경험치 10",
-            "“보호의 부적” (아이템 052)"
+            "“Protective Charm” (아이템 052)"
         ]
     },
     "fc-110": {
-        "name": "순환하는 해법",
+        "name": "A Circular Solution",
         "rewards": [
-            "“수정 티아라” (아이템 163)"
+            "“Crystal Tiara” (아이템 163)"
         ]
     },
     "fc-111": {
-        "name": "느슨해진 족쇄",
+        "name": "The Shackles Loosen",
         "rewards": [
             [
                 "각자 경험치 5",
@@ -988,7 +988,7 @@ export default {
         ]
     },
     "fc-113": {
-        "name": "잃어버린 실마리",
+        "name": "The Lost Thread",
         "rewards": [
             "각자 금화 135개",
             "이 금화는 즉시 이동 {MOVE}, 사거리 {RANGE}, 도약 {JUMP} 강화에 사용해야 합니다",
@@ -996,13 +996,13 @@ export default {
         ]
     },
     "fc-114": {
-        "name": "마르지 않은 잉크",
+        "name": "Ink Not Yet Dry",
         "rewards": [
             "파티 은혜: 능력 카드의 레벨에 따라 추가되는 강화 비용이 레벨당 금화 5개씩 감소합니다."
         ]
     },
     "fc-115": {
-        "name": "불확실한 미래",
+        "name": "Future Uncertain",
         "rewards": [
             "명성 +3",
             "번영도 +1",
@@ -1011,7 +1011,7 @@ export default {
         ]
     },
     "fc-117": {
-        "name": "별을 향한 탑",
+        "name": "Tower to the Stars",
         "rewards": [
             "각자 금화 15개",
             "각자 ✔ 1",
@@ -1019,9 +1019,9 @@ export default {
         ]
     },
     "fc-116": {
-        "name": "피할 수 없는 일의 예보",
+        "name": "Forecast of the Inevitable",
         "rewards": [
-            "“예언의 대야” (아이템 164)"
+            "“Basin of Prophecy” (아이템 164)"
         ]
     },
     "jotl-1": {
@@ -1043,7 +1043,7 @@ export default {
     "jotl-4": {
         "name": "돌로 이루는 의식",
         "rewards": [
-            "“마나 물약” (아이템 14)"
+            "“Mana Potion” (아이템 14)"
         ]
     },
     "jotl-5": {
@@ -1083,13 +1083,13 @@ export default {
     "jotl-11": {
         "name": "부정한 하수구",
         "rewards": [
-            "“벼룩투성이 숄” (아이템 28)"
+            "“Flea-Bitten Shawl” (아이템 28)"
         ]
     },
     "jotl-12": {
         "name": "매혹적인 하수구",
         "rewards": [
-            "“벼룩투성이 숄” (아이템 28)"
+            "“Flea-Bitten Shawl” (아이템 28)"
         ]
     },
     "jotl-13": {
@@ -1115,7 +1115,7 @@ export default {
         "name": "양가적인 결과",
         "rewards": [
             "각자 경험치 15",
-            "“대형 방패” (아이템 29)"
+            "“Tower Shield” (아이템 29)"
         ]
     },
     "jotl-17": {
@@ -1134,7 +1134,7 @@ export default {
     "jotl-19": {
         "name": "도둑들의 소굴",
         "rewards": [
-            "“힘의 반지” (아이템 31)"
+            "“Ring of Strength” (아이템 31)"
         ]
     },
     "jotl-20": {
@@ -1152,25 +1152,25 @@ export default {
     "jotl-22": {
         "name": "적대적인 전언",
         "rewards": [
-            "“강철 반지” (아이템 33)"
+            "“Steel Ring” (아이템 33)"
         ]
     },
     "jotl-23": {
         "name": "왕중왕전",
         "rewards": [
-            "“가시 돋친 도끼” (아이템 34)"
+            "“Barbed Axe” (아이템 34)"
         ]
     },
     "jotl-24": {
         "name": "공허 감시",
         "rewards": [
-            "“명령의 로브” (아이템 35)"
+            "“Robes of Command” (아이템 35)"
         ]
     },
     "jotl-25": {
         "name": "세계 최고의 직업",
         "rewards": [
-            "“제트 장화” (아이템 36)"
+            "“Jet Boots” (아이템 36)"
         ]
     },
     "fh-0": {
@@ -1282,7 +1282,7 @@ export default {
     "fh-13": {
         "name": "얼어붙은 피오르",
         "rewards": [
-            "“죽은 큰까마귀” (아이템 233) 획득"
+            "“Dead Raven” (아이템 233) 획득"
         ]
     },
     "fh-14": {
@@ -1418,14 +1418,14 @@ export default {
     "fh-32": {
         "name": "큰까마귀의 보금자리",
         "rewards": [
-            "“깃털 망토” (아이템 69) 도안 획득"
+            "“Feathered Cloak” (아이템 69) 도안 획득"
         ]
     },
     "fh-33": {
         "name": "해빙된 숲",
         "rewards": [
             "공개되지 않은 탐사용 룬 1개마다 각자 경험치 5 획득",
-            "“잉겅불 에너지원” (아이템 244) 획득",
+            "“Ember Energy Source” (아이템 244) 획득",
             "3주 후 달력에 135.1 추가"
         ]
     },
@@ -1445,7 +1445,7 @@ export default {
         "rewards": [
             "공동으로 {LUMBER} 3개 획득",
             "공동으로 {METAL} 3개 획득",
-            "“볼록 렌즈” (아이템 67) 도안 획득"
+            "“Converging Lenses” (아이템 67) 도안 획득"
         ]
     },
     "fh-37": {
@@ -1453,7 +1453,7 @@ export default {
         "rewards": [
             "공동으로 {LUMBER} 3개 획득",
             "공동으로 {METAL} 3개 획득",
-            "“볼록 렌즈” (아이템 67) 도안 획득"
+            "“Converging Lenses” (아이템 67) 도안 획득"
         ]
     },
     "fh-38": {
@@ -1504,7 +1504,7 @@ export default {
         "name": "신경 중추",
         "rewards": [
             "각자 금화 5개 획득",
-            "“격려의 지휘봉” (아이템 73) 도안 획득"
+            "“Energizing Baton” (아이템 73) 도안 획득"
         ]
     },
     "fh-45": {
@@ -1554,7 +1554,7 @@ export default {
         "name": "고아의 전당",
         "rewards": [
             "각자 경험치 10 획득",
-            "“충격 수류탄” (아이템 74) 도안 획득"
+            "“Shock Grenades” (아이템 74) 도안 획득"
         ]
     },
     "fh-52": {
@@ -1611,7 +1611,7 @@ export default {
         "name": "고아의 핵",
         "rewards": [
             "사기 1 획득",
-            "“카드 열쇠” (아이템 246) 획득",
+            "“Key Card” (아이템 246) 획득",
             "공동으로 {LUMBER} 3개 획득",
             "공동으로 {METAL} 3개 획득",
             "공동으로 {HIDE} 3개 획득",
@@ -1626,7 +1626,7 @@ export default {
         "rewards": [
             "사기 2 획득",
             "번영도 2 획득",
-            "“카드 열쇠” (아이템 246) 획득",
+            "“Key Card” (아이템 246) 획득",
             "{HV} 클래스 상자 해금",
             "모든 전초기지 이벤트 덱에서 {UNFETTERED} 이벤트를 모두 제거",
             "여름 전초기지 덱에 이벤트 SO-49를, 겨울 전초기지 덱에 이벤트 WO-63을 추가",
@@ -1639,7 +1639,7 @@ export default {
             "사기 2 획득",
             "번영도 1 획득",
             "각자 경험치 30 획득",
-            "“공감의 갑옷” (아이템 224) 획득",
+            "“Armor of Empathy” (아이템 224) 획득",
             "아직 잠겨 있는 클래스 상자 해금: {CR} 또는 {DT}",
             "모든 전초기지 이벤트 덱에서 {LURKERS} 이벤트를 모두 제거",
             "여름 전초기지 덱에 이벤트 SO-48을, 선박 덱에 이벤트 B-17을 추가",
@@ -1684,7 +1684,7 @@ export default {
     "fh-66": {
         "name": "원소 핵",
         "rewards": [
-            "“원소의 돌” (아이템 212) 획득",
+            "“Elemental Stone” (아이템 212) 획득",
             "6주 후 달력에 29.3 추가"
         ]
     },
@@ -1740,7 +1740,7 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "길 위의 틈",
+        "name": "Gaps in the Road",
         "rewards": [
             "무작위 아이템 도안 1개 획득"
         ]
@@ -1756,7 +1756,7 @@ export default {
         "rewards": [
             [
                 "“심해로부터의 위협” 퀘스트 완료",
-                "“파도의 창” (아이템 201) 획득",
+                "“Wave Blade” (아이템 201) 획득",
                 "선박 덱에 이벤트 B-18 추가"
             ],
             []
@@ -1766,7 +1766,7 @@ export default {
         "name": "물고기 왕의 승천",
         "rewards": [
             "“심해로부터의 위협” 퀘스트 완료",
-            "“파도의 창” (아이템 201) 획득",
+            "“Wave Blade” (아이템 201) 획득",
             "선박 덱에 이벤트 B-19 추가"
         ]
     },
@@ -1796,7 +1796,7 @@ export default {
         "name": "폐허 속 연구소",
         "rewards": [
             "번영도 1 획득",
-            "“에스더 로브” (아이템 70) 도안 획득"
+            "“Aesther Robe” (아이템 70) 도안 획득"
         ]
     },
     "fh-82": {
@@ -1809,13 +1809,13 @@ export default {
     "fh-83": {
         "name": "차오르는 소금물",
         "rewards": [
-            "“거대 피라냐돈 척추” (아이템 202) 획득"
+            "“Giant Piranha Pig Spine” (아이템 202) 획득"
         ]
     },
     "fh-84": {
         "name": "여기저기 널린 점액",
         "rewards": [
-            "“점액 약병” (아이템 234) 획득"
+            "“ooze vial” (아이템 234) 획득"
         ]
     },
     "fh-85": {
@@ -1886,13 +1886,13 @@ export default {
         ]
     },
     "fh-93": {
-        "name": "한겨울의 난투",
+        "name": "Midwinter Brawl",
         "rewards": [
             [
                 "“작은 쥐” (아이템 235) 획득"
             ],
             [
-                "“구워진 새고기” (아이템 79) 획득"
+                "“Roasted Fowl” (아이템 79) 획득"
             ]
         ]
     },
@@ -1979,7 +1979,7 @@ export default {
     "fh-106": {
         "name": "시간의 대장간",
         "rewards": [
-            "“계절의 열쇠” (아이템 213) 획득"
+            "“Key of Seasons” (아이템 213) 획득"
         ]
     },
     "fh-107": {
@@ -1999,7 +1999,7 @@ export default {
             ],
             [
                 "공동으로 원료 자원 5개를 획득",
-                "“벤틸리온의 잔” (아이템 214) 획득"
+                "“Cup of Ventillion” (아이템 214) 획득"
             ]
         ]
     },
@@ -2019,13 +2019,13 @@ export default {
     "fh-110": {
         "name": "수호자의 신전",
         "rewards": [
-            "“장미 건틀릿” (아이템 75) 도안 획득"
+            "“Rose Gauntlet” (아이템 75) 도안 획득"
         ]
     },
     "fh-111": {
         "name": "얼음 동굴",
         "rewards": [
-            "“깨진 거울” (아이템 236) 획득"
+            "“Cracked Mirror” (아이템 236) 획득"
         ]
     },
     "fh-112": {
@@ -2132,7 +2132,7 @@ export default {
     "fh-118": {
         "name": "잠복자들의 강령술",
         "rewards": [
-            "“영원한 생명의 부적” (아이템 66) 도안 획득",
+            "“Amulet of Eternal Life” (아이템 66) 도안 획득",
             "모든 토큰을 노획 카드로 교환"
         ]
     },
@@ -2159,7 +2159,7 @@ export default {
                 "6주 후 달력에 184.3 추가"
             ],
             [
-                "“정신을 홀리는 투구” (아이템 193) 획득"
+                "“Mind Thieving Helmet” (아이템 193) 획득"
             ],
             [
                 "사기 2 획득"
@@ -2194,7 +2194,7 @@ export default {
     "fh-125": {
         "name": "세상에서 가장 긴 1초",
         "rewards": [
-            "“시간의 부적” (아이템 194) 획득"
+            "“Temporal Amulet” (아이템 194) 획득"
         ]
     },
     "fh-126": {
@@ -2216,12 +2216,12 @@ export default {
             [
                 "공동으로 금화 10개 획득",
                 "공동으로 {LUMBER} 2개 획득",
-                "“삼각 모자” (아이템 195) 획득"
+                "“Tri-Corner Hat” (아이템 195) 획득"
             ],
             [
                 "공동으로 금화 10개 획득",
                 "공동으로 {LUMBER} 2개 획득",
-                "“삼각 모자” (아이템 195) 획득",
+                "“Tri-Corner Hat” (아이템 195) 획득",
                 "번영도 1 획득"
             ]
         ]
@@ -2239,7 +2239,7 @@ export default {
             ],
             [
                 "사기 3 획득",
-                "“정신혼미 술잔” (아이템 215) 획득",
+                "“Befuddling Mug” (아이템 215) 획득",
                 "3주 후 달력에 100.3 추가"
             ]
         ]
@@ -2267,7 +2267,7 @@ export default {
         "name": "춤추는 빙산",
         "rewards": [
             "각자 경험치 10 획득",
-            "“최면 조개껍질” (아이템 237) 획득"
+            "“Mesmerizing Seashell” (아이템 237) 획득"
         ]
     },
     "fh-132": {
@@ -2279,13 +2279,13 @@ export default {
     "fh-133": {
         "name": "광선",
         "rewards": [
-            "“금이 간 신상” (아이템 238) 획득"
+            "“Cracked Idol” (아이템 238) 획득"
         ]
     },
     "fh-134": {
         "name": "지식의 탑",
         "rewards": [
-            "“분쟁의 고서” (아이템 219) 획득"
+            "“Tome of Conflict” (아이템 219) 획득"
         ]
     },
     "fh-135": {
@@ -2294,14 +2294,14 @@ export default {
             "사기 2 획득",
             "번영도 2 획득",
             "영감 1점 획득",
-            "“벨라라의 깃펜” (아이템 220) 획득"
+            "“Belaras Quill” (아이템 220) 획득"
         ]
     },
     "fh-136": {
         "name": "버려진 은신처",
         "rewards": [
             "각자 금화 20개 획득",
-            "“고대의 동전” (아이템 245) 획득"
+            "“Ancient Coin” (아이템 245) 획득"
         ]
     },
     "fh-137": {
@@ -2314,105 +2314,105 @@ export default {
         ]
     },
     "fh-201": {
-        "name": "자연의 경이",
+        "name": "Wonder of Nature",
         "rewards": [
-            "“방랑자의 곤봉” (아이템 248)"
+            "“Wanderer's Club” (아이템 248)"
         ]
     },
     "fh-202": {
-        "name": "시간과의 경주",
+        "name": "Race Against the Clock",
         "rewards": [
-            "“재교정 트리거” (아이템 249)"
+            "“Recalibration Trigger” (아이템 249)"
         ]
     },
     "fh-203": {
-        "name": "정찰 매복",
+        "name": "Scouting Ambush",
         "rewards": [
-            "“정의의 창” (아이템 250)"
+            "“Spear of Justice” (아이템 250)"
         ]
     },
     "fh-204": {
-        "name": "한밤중의 죽음",
+        "name": "The Dead of Night",
         "rewards": [
-            "“영혼 단지” (아이템 251)"
+            "“Soul Urn” (아이템 251)"
         ]
     },
     "fh-205": {
-        "name": "흙 속의 뼈",
+        "name": "Bones in the Dirt",
         "rewards": [
-            "“검은 대지의 코덱스” (아이템 252)"
+            "“Black Earth Codex” (아이템 252)"
         ]
     },
     "fh-206": {
-        "name": "분할 정복",
+        "name": "Divide and Conquer",
         "rewards": [
-            "“양면성의 가면” (아이템 253)"
+            "“Mask of Duality” (아이템 253)"
         ]
     },
     "fh-207": {
-        "name": "조상의 길",
+        "name": "Path of Ancestry",
         "rewards": [
-            "“선조의 검” (아이템 254)"
+            "“Ancestral Blade” (아이템 254)"
         ]
     },
     "fh-208": {
-        "name": "무너져 내리는 하강로",
+        "name": "Crumbling Descent",
         "rewards": [
             "“산의 심장” (아이템 255)"
         ]
     },
     "fh-209": {
-        "name": "공명 조율",
+        "name": "Tuning the Resonance",
         "rewards": [
-            "“울려퍼지는 파편” (아이템 256)"
+            "“Sonorous Shard” (아이템 256)"
         ]
     },
     "fh-210": {
-        "name": "굉장한 함정",
+        "name": "A Magnificent Trap",
         "rewards": [
-            "“교활한 위장” (아이템 257)"
+            "“Sly Camouflage” (아이템 257)"
         ]
     },
     "fh-211": {
-        "name": "고통의 수집",
+        "name": "A Collection of Suffering",
         "rewards": [
-            "“고통의 두개골” (아이템 258)"
+            "“Skull of Agony” (아이템 258)"
         ]
     },
     "fh-212": {
-        "name": "눈으로 눈을 상대하다",
+        "name": "Fighting Snow with Snow",
         "rewards": [
-            "“폭풍 조각” (아이템 259)"
+            "“Storm Carving” (아이템 259)"
         ]
     },
     "fh-213": {
-        "name": "얼음 아래",
+        "name": "Under the Ice",
         "rewards": [
-            "“얼어붙은 구체” (아이템 260)"
+            "“Freezing Orb” (아이템 260)"
         ]
     },
     "fh-214": {
         "name": "재충전",
         "rewards": [
-            "“활성화 된 모듈” (아이템 261)"
+            "“Energized Module” (아이템 261)"
         ]
     },
     "fh-215": {
-        "name": "보일러실",
+        "name": "Boiler Room",
         "rewards": [
-            "“배기 장화” (아이템 262)"
+            "“Exhaust Boots” (아이템 262)"
         ]
     },
     "fh-216": {
         "name": "궂은일",
         "rewards": [
-            "“전쟁군주의 해골” (아이템 263)"
+            "“Warlords Skull” (아이템 263)"
         ]
     },
     "fh-217": {
-        "name": "파도에 부딪히다",
+        "name": "Crash Against the Waves",
         "rewards": [
-            "“나선형 메달” (아이템 264)"
+            "“Spiraled Medallion” (아이템 264)"
         ]
     },
     "cs-1": {
@@ -2442,7 +2442,7 @@ export default {
         "rewards": [
             "명성 +2",
             "번영도 +1",
-            "“기절 가루” (아이템 gh-21)"
+            "“Stun Powder” (아이템 gh-21)"
         ]
     },
     "cs-7": {
@@ -2467,8 +2467,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "“소형 치료 물약” (아이템 gh-12)",
-            "“소형 마나 물약” (아이템 gh-20)"
+            "“Minor Healing Potion” (아이템 gh-12)",
+            "“Minor Mana Potion” (아이템 gh-20)"
         ]
     },
     "cs-11": {
@@ -2481,7 +2481,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "번영도 +1",
-            "각 캐릭터는 다음 중 하나를 획득: “대형 활력 물약” (아이템 gh-34), “대형 힘 물약” (아이템 gh-41), “대형 마나 물약” (아이템 gh-48)\n상점에 이 아이템이 없다면 대신 금화 20개 획득"
+            "각 캐릭터는 다음 중 하나를 획득: “Major Stamina Potion” (아이템 gh-34), “Major Power Potion” (아이템 gh-41), “Major Mana Potion” (아이템 gh-48)\n상점에 이 아이템이 없다면 대신 금화 20개 획득"
         ]
     },
     "cs-14": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "“대형 마나 물약” (아이템 gh-48)"
+            "“Major Mana Potion” (아이템 gh-48)"
         ]
     },
     "cs-20": {
@@ -2533,7 +2533,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "“마그마 장화” (아이템 gh-99)"
+            "“Magma Waders” (아이템 gh-99)"
         ]
     },
     "cs-22": {
@@ -2931,11 +2931,11 @@ export default {
         "rewards": [
             [
                 "공동으로 금화 40개",
-                "“징 박은 가죽 갑옷” 도안 (아이템 gh-30) 또는 “돌진의 장화” 도안 (아이템 gh-36)"
+                "“Studded Leather” 도안 (아이템 gh-30) 또는 “Boots of Dashing” 도안 (아이템 gh-36)"
             ],
             [
                 "각자 ✔ 2",
-                "“행운의 눈” 도안 (아이템 gh-63)"
+                "“Lucky Eye” 도안 (아이템 gh-63)"
             ]
         ]
     },
@@ -3466,7 +3466,7 @@ export default {
         "rewards": [
             "각자 금화 15개",
             "각자 경험치 10",
-            "“나선 반지” (아이템 136) 획득"
+            "“Helix Ring” (아이템 136) 획득"
         ]
     },
     "gh2-68": {
@@ -3512,7 +3512,7 @@ export default {
         "name": "바람부는 고원",
         "rewards": [
             "번영도 +1",
-            "“대형 힘 물약” (아이템 53) 획득"
+            "“Major Power Potion” (아이템 53) 획득"
         ]
     },
     "gh2-75": {
@@ -3548,7 +3548,7 @@ export default {
         "rewards": [
             "각자 금화 100개",
             "번영도 +2",
-            "“변절자의 심장” (아이템 133) 획득",
+            "“Heart of the Betrayer” (아이템 133) 획득",
             "이 금화는 즉시 강화에 사용해야 합니다"
         ]
     },
@@ -3596,7 +3596,7 @@ export default {
     "gh2-87": {
         "name": "유황 광산",
         "rewards": [
-            "“고대 천공기” (아이템 109) 획득"
+            "“Ancient Drill” (아이템 109) 획득"
         ]
     },
     "gh2-88": {
@@ -3608,7 +3608,7 @@ export default {
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "“대형 치료 물약” (아이템 37) 2개 획득"
+            "“Major Healing Potion” (아이템 37) 2개 획득"
         ]
     },
     "gh2-90": {
@@ -3660,7 +3660,7 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "각자 경험치 10",
-            "“증오의 머리” (아이템 111) 획득"
+            "“Skull of Hatred” (아이템 111) 획득"
         ]
     },
     "gh2-99": {
@@ -3712,7 +3712,7 @@ export default {
     "gh2-202": {
         "name": "유감스러운 침입",
         "rewards": [
-            "“집중 치료 광선” (아이템 154) 획득"
+            "“Focusing Ray” (아이템 154) 획득"
         ]
     },
     "gh2-203": {
@@ -3724,7 +3724,7 @@ export default {
     "gh2-204": {
         "name": "Material Concerns",
         "rewards": [
-            "“침묵의 단검” (아이템 156) 획득"
+            "“Silent Stiletto” (아이템 156) 획득"
         ]
     },
     "gh2-205": {
@@ -3736,7 +3736,7 @@ export default {
     "gh2-206": {
         "name": "Vermling Liberation",
         "rewards": [
-            "“심령술 칼” (아이템 158) 획득"
+            "“Psychic Knife” (아이템 158) 획득"
         ]
     },
     "gh2-207": {
@@ -3748,13 +3748,13 @@ export default {
     "gh2-208": {
         "name": "보관료",
         "rewards": [
-            "“만능 허리띠” (아이템 160) 획득"
+            "“Utility Belt” (아이템 160) 획득"
         ]
     },
     "gh2-209": {
         "name": "야생동물의 차원",
         "rewards": [
-            "“상 변이 조각상” (아이템 161) 획득"
+            "“Phasing Idol” (아이템 161) 획득"
         ]
     },
     "gh2-210": {
@@ -3766,31 +3766,31 @@ export default {
     "gh2-211": {
         "name": "병든 묘지",
         "rewards": [
-            "“역병 브로치” (아이템 163) 획득"
+            "“Pendant of the Plague” (아이템 163) 획득"
         ]
     },
     "gh2-212": {
         "name": "자연을 거스르는 모욕",
         "rewards": [
-            "“죽음의 가면” (아이템 164) 획득"
+            "“Mask of Death” (아이템 164) 획득"
         ]
     },
     "gh2-213": {
         "name": "음유시인 대결",
         "rewards": [
-            "“명인의 류트” (아이템 165) 획득"
+            "“Master's Lute” (아이템 165) 획득"
         ]
     },
     "gh2-214": {
         "name": "타락자 사냥",
         "rewards": [
-            "“사냥꾼의 망토” (아이템 166) 획득"
+            "“Cloak of the Hunter” (아이템 166) 획득"
         ]
     },
     "gh2-215": {
         "name": "재앙의 여파",
         "rewards": [
-            "“의사 가운” (아이템 167) 획득"
+            "“Doctor's Coat” (아이템 167) 획득"
         ]
     },
     "gh2-216": {
@@ -3802,7 +3802,7 @@ export default {
     "gh2-217": {
         "name": "우리에 갇힌 곰",
         "rewards": [
-            "“명령 지팡이” (아이템 169) 획득"
+            "“Staff of Command” (아이템 169) 획득"
         ]
     },
     "gh2-218": {
