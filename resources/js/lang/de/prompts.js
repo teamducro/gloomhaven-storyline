@@ -1,9 +1,9 @@
 export default {
     "dragon": {
-        "1": "Bringt dem Draken den Schatz. Erhaltet die globale Errungenschaft \"Hilfe für den Draken\". Fügt dem Deck das Stadt-Ereignis 75 und das Weg-Ereignis 66 hinzu.",
+        "1": "Bringt dem Draken den Schatz. Erhaltet den globalen Erfolg \"Hilfe für den Draken\". Fügt dem Deck das Stadt-Ereignis 75 und das Weg-Ereignis 66 hinzu.",
         "2": "Helft dem Draken nicht.",
         "title": "Freund oder Feind",
-        "text": "Ihr habt den Schatz des Draken geborgen. Händigt ihr den Schatz an ihn aus, oder befolgt ihr die Befehle des Kapitäns der Stadtwache und versucht in zu töten?"
+        "text": "Ihr habt den Schatz des Draken geborgen. Händigt ihr den Schatz an ihn aus, oder befolgt ihr die Befehle des Hauptmanns der Wache und versucht ihn zu töten?"
     },
     "burningMountain": {
         "1": "Epilog A: Ihr beendet euren Zug auf G und entfernt einen der Gegenstände aus dem Spiel.",
@@ -47,13 +47,13 @@ export default {
         "2": "B: Den Menschen helfen",
         "3": "C: Gegen beide Seiten kämpfen",
         "title": "Blutiger Dämonenkrieg",
-        "text": "Which side dit you choose?"
+        "text": "Auf welche Seite habt ihr euch gestellt?"
     },
     "escapeFromTheHusk": {
-        "1": "All characters escaped",
+        "1": "Alle Charaktere sind entkommen.",
         "2": "???",
         "title": "Flucht aus der Hülle",
-        "text": "Did all characters escaped through an exit?"
+        "text": "Sind alle Charaktere durch einen Ausgang entkommen?"
     },
     "undeadTerrors": {
         "1": "Gebt Selandre den Trank.",
@@ -65,12 +65,12 @@ export default {
         "1": "Ein benannter Gegner ist getötet",
         "2": "Zwei benannte Gegner sind getötet",
         "3": "Drei benannte Gegner sind getötet",
-        "title": "Testet euren Kraftmodulator",
+        "title": "Testet euren Power Modulator",
         "text": "Wie viele benannte Gegner konntet ihr töten, bevor ihr erschöpft wart?"
     },
     "unseenPlight": {
-        "1": "Den Guttermaw getötet und Guttermaws Kopfgeld erhalten",
-        "2": "Die Kinder gerettet und Feigrins Bitte erfüllt",
+        "1": "Den Guttermaw getötet und Guttermaw's Bounty erhalten",
+        "2": "Die Kinder gerettet und Feigrin's Request erfüllt",
         "title": "Zerstörte Heime und Bauten",
         "text": "Habt ihr Tod gebracht oder Leben gerettet?"
     },
@@ -85,8 +85,8 @@ export default {
         "text": "Wie viele Stadtwachen befinden sich noch auf der Karte?"
     },
     "algoxAltercation": {
-        "1": "Schneetänzer ist tot.",
-        "2": "Gefrorene Faust ist tot.",
+        "1": "Die Schneetänzerin ist tot.",
+        "2": "Die Frostfaust ist tot.",
         "title": "Algox-Streit",
         "text": "Auf welche Seite habt ihr euch gestellt?"
     },

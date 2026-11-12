@@ -115,7 +115,7 @@ describe('Storyline', () => {
         // German is lazy-loaded; open the modal only once it is active.
         cy.get('html').should('have.attr', 'lang', 'de');
         utilities.openScenario(52);
-        cy.get('#scenario-content').contains('Persönliches Ziel „Suche nach Xorn“');
+        cy.get('#scenario-content').contains('Persönliche Quest „Suche nach Xorn“');
         utilities.closeModel();
     });
 

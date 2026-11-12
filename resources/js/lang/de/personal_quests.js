@@ -67,7 +67,7 @@ export default {
         ]
     },
     "gh-520": {
-        "name": "Werkzeug ddes Lichts",
+        "name": "Werkzeug des Lichts",
         "progress": [
             "Finde den Schädelfluch im Verstck der Nekromantin.",
             "Töte damit 7 Wandelnde Skelette, Wandelnde Leichen oder Wandelnde Seelen."
@@ -91,7 +91,7 @@ export default {
         "progress": [
             "Töte einen Flammendämon.",
             "Töte einen Frostdämon.",
-            "Töte einen Windddämon.",
+            "Töte einen Winddämon.",
             "Töte einen Erddämon.",
             "Töte einen Nachtdämon.",
             "Töte einen Sonnendämon."
@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "Schützen und Dienen",
+        "name": "Protect and Serve",
         "progress": [
             "Töte zehn Inox.",
             "Schließe {SCENARIO 33} ab."
         ]
     },
     "cs-331": {
-        "name": "Waffenspezialist",
+        "name": "Weapons Specialist",
         "progress": [
             "Verbrauche fünfzehn {ONE-HAND}- oder {TWO-HANDS}-Gegenstände."
         ]
     },
     "cs-332": {
-        "name": "Experimentierfreude",
+        "name": "Experimentation",
         "progress": [
             "Spiele 30 Karten für ihre Verloren-Aktion {LOST}."
         ]
     },
     "cs-333": {
-        "name": "Nervenkitzelsucher",
+        "name": "Thrill Seeker",
         "progress": [
             "Decke zwanzig Mal ein Raumteil auf, indem du eine Tür öffnest."
         ]
     },
     "cs-334": {
-        "name": "Fallenleger",
+        "name": "Trap Setter",
         "progress": [
             "Entschärfe fünfzehn Mal während deines Zuges eine Falle oder lasse einen Gegner eine Falle auslösen."
         ]
     },
     "cs-335": {
-        "name": "Banditenbezwinger",
+        "name": "Bandit Banisher",
         "progress": [
             "Töte zehn Wachen oder Bogenschützen.",
             "Schließe {SCENARIO 35} ab."
         ]
     },
     "cs-336": {
-        "name": "Kreaturen im Licht",
+        "name": "Creatures in the light",
         "progress": [
             "Töte zwanzig Schleime, Waldwichte oder Schwarzwichte."
         ]
     },
     "cs-337": {
-        "name": "Erfahrener Anführer",
+        "name": "Experienced leader",
         "progress": [
             "Schließe zwölf Szenarien mit mindestens 12 Erfahrungspunkten ab."
         ]
     },
     "cs-338": {
-        "name": "Adrenalinschub",
+        "name": "Adrenaline Spike",
         "progress": [
             "Töte fünfzehn Mal einen Gegner und plündere in derselben Runde seinen Münzmarker."
         ]
     },
     "cs-339": {
-        "name": "Gegenseitige Unterstützung",
+        "name": "Mutual Support",
         "progress": [
             "Töte 30 Gegner, die an einen deiner Verbündeten angrenzen."
         ]
     },
     "cs-340": {
-        "name": "Gesegnet seist du",
+        "name": "Thy be Blessed",
         "progress": [
             "Ziehe zwölf Mal während eines Angriffs eine {BLESS}-Karte."
         ]
     },
     "cs-341": {
-        "name": "Spiritueller Gewinn",
+        "name": "Spiritual Cains",
         "progress": [
             "Gib 200 Gold für Verbesserungen aus."
         ]
     },
     "cs-342": {
-        "name": "Der Pfad der Qual",
+        "name": "The Path of Agony",
         "progress": [
             "Erlebe 13 Mal, wie ein Verbündeter oder Gegner während seines eigenen Zuges stirbt oder erschöpft wird."
         ]
     },
     "cs-343": {
-        "name": "Grausame Herrschaft",
+        "name": "Cruel Dominion",
         "progress": [
             "Schließe 10 Szenarien ab, in denen du einen Gegner mit einem negativen Zustand tötest."
         ]
     },
     "cs-344": {
-        "name": "Natürliche Auslese",
+        "name": "Natural Selection",
         "progress": [
             "Erzeuge zwei Mal {FIRE}.",
             "Erzeuge zwei Mal {ICE}.",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "Raubtier und Beute",
+        "name": "Predator and Prey",
         "progress": [
             "Töte fünfzehn Mal zwei oder mehr Gegner im selben Zug."
         ]
     },
     "cs-346": {
-        "name": "Die gespaltene Natter",
+        "name": "An Adder Divides",
         "progress": [
             "Halte dich in 6 verschiedenen Szenarien auf schwierigem Gelände auf.",
             "Schließe {SCENARIO 39} ab."
         ]
     },
     "cs-347": {
-        "name": "Feldforschung",
+        "name": "Field Research",
         "progress": [
             "Vergifte {POISON} zwanzig verschiedene Arten von Monstern."
         ]
     },
     "cs-348": {
-        "name": "Hand des Beschwörers",
+        "name": "Conjurers Hand",
         "progress": [
             "Töte zehn beschworene Monster."
         ]
     },
     "cs-349": {
-        "name": "Keine Ruhe für die Bösen",
+        "name": "No Rest for the Wicked",
         "progress": [
             "Schließe zehn Szenarien ab, ohne eine lange Rast einzulegen."
         ]
     },
     "cs-350": {
-        "name": "Gesundheit zuerst",
+        "name": "Health First",
         "progress": [
             "Schließe sieben Szenarien mit voller Gesundheit ab."
         ]
     },
     "cs-351": {
-        "name": "Grenzenlose Suche",
+        "name": "Limitless Searching",
         "progress": [
             "Plündere 30 Münzmarker."
         ]
     },
     "cs-aa-001": {
-        "name": "Um jeden Preis",
+        "name": "At All Costs",
         "progress": [
             "Erlebe 8 Szenarien, in denen du Schaden negierst, indem du wie üblich eine Karte verlierst, während du an einen Verbündeten angrenzt.",
             "Schließe {SCENARIO AA1} ab."
         ]
     },
     "cs-aa-002": {
-        "name": "Die Last des Versagens",
+        "name": "The Weight of failure",
         "progress": [
             "Schließe 8 Szenarien ab, ohne erschöpft zu werden und mit 2 oder weniger TP.",
             "Schließe {SCENARIO AA2} ab."
         ]
     },
     "cs-qa-001": {
-        "name": "Genialer Erfinder",
+        "name": "Ingenious Inventor",
         "progress": [
-            "Erhalte sofort “Leistungsmodulator” (Gegenstand QA-01)",
-            "Töte 12 Gegner mit “Leistungsmodulator” (Gegenstand QA-01)",
+            "Erhalte sofort “Power Modulator” (Gegenstand QA-01)",
+            "Töte 12 Gegner mit “Power Modulator” (Gegenstand QA-01)",
             "Schließe {SCENARIO QA1} ab"
         ]
     },
     "cs-qa-002": {
-        "name": "Schrott-Taucher",
+        "name": "Scrap Diver",
         "progress": [
             "Plündere acht Mal zwei oder mehr Münzmarker mit einer einzigen Aktion.",
             "Plündere zwei Schatzaufleger.",
@@ -337,15 +337,15 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "Brutaler Vollstrecker",
+        "name": "Brutal Enforcer",
         "progress": [
-            "Erhalte den Plan “Gezackte Schneide” (Gegenstand RM-01).",
+            "Erhalte den Plan “Serrated Edge” (Gegenstand RM-01).",
             "Wende {WOUND} oder {RUPTURE} auf dreißig Gegner an.",
             "Schließe {SCENARIO RM1} ab."
         ]
     },
     "cs-rm-002": {
-        "name": "Spitzenprädator",
+        "name": "Apex Predator",
         "progress": [
             "Erlebe zwanzig Runden, in denen während oder nach einer Aktion mit {CONSUMED} ein Gegner stirbt.",
             "Schließe {SCENARIO RM3} ab."
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "Politische Intrige",
+        "name": "Political Intrigue",
         "progress": [
             "Füge das Stadt-Ereignis 61 dem Stadt-Ereignis-Deck hinzu.",
             "Erhalte 30 Stimmen: drei Stimmen, wann immer du Ansehen erhältst, und eine Stimme pro Fraktionsansehen-Gegenstand, den du in ein abgeschlossenes Szenario mitgebracht hast.",
@@ -600,24 +600,24 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Gastfreundschaft im Gasthaus",
+        "name": "Inn to Hospitality",
         "progress": [
             "Plündere 60 Münzmarker.",
             "Lies {SECTION} 125.4."
         ]
     },
     "gh2-3": {
-        "name": "Verbesserte Fähigkeiten",
+        "name": "Verbesserte Fertigkeiten",
         "progress": [
-            "Kaufe fünf Verbesserungen (erfordert die globale Errungenschaft “Macht der Verbesserung”).",
+            "Kaufe fünf Verbesserungen (erfordert den globalen Erfolg “Macht der Verbesserung”).",
             "Lies {SECTION} 71.2."
         ]
     },
     "gh2-4": {
         "name": "Vergangene Zivilisation",
         "progress": [
-            "Erhalte “Aesther-Fernglas” (Gegenstand 149). Er kann nicht verkauft werden.",
-            "Benutze “Aesther-Fernglas” (Gegenstand 149) zehn Mal.",
+            "Erhalte “Aesther Spyglass” (Gegenstand 149). Er kann nicht verkauft werden.",
+            "Benutze “Aesther Spyglass” (Gegenstand 149) zehn Mal.",
             "Lies {SECTION} 115.2.",
             "Schließe {SCENARIO 63} ab."
         ]
@@ -632,14 +632,14 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "Eiferer des Blutgottes",
+        "name": "Für den Blutgott",
         "progress": [
             "Beende zehn Szenarien mit Trefferpunkten auf oder unter der Hälfte deines Maximums, ohne erschöpft zu werden.",
             "Lies {SECTION} 122.3."
         ]
     },
     "gh2-7": {
-        "name": "Eine Geschichte zu erzählen",
+        "name": "A Tale to Tell",
         "progress": [
             "Plündere in zehn Szenarien einen Schatzaufleger oder sieh zu, wie deine Gruppe einen plündert.",
             "Lies {SECTION} 12.3."
@@ -666,13 +666,13 @@ export default {
     "gh2-10": {
         "name": "Tilgung des Unnatürlichen",
         "progress": [
-            "Verbessere eine Fertigkeitskarte (deine oder die eines Verbündeten) mit einem {ANY}-Element (erfordert die globale Errungenschaft “Macht der Verbesserung”).",
+            "Verbessere eine Fertigkeitskarte (deine oder die eines Verbündeten) mit einem {ANY}-Element (erfordert den globalen Erfolg “Macht der Verbesserung”).",
             "Lies {SECTION} 14.3.",
             "Schließe {SCENARIO 64} ab."
         ]
     },
     "gh2-11": {
-        "name": "Adoptiveltern",
+        "name": "Adoptive Parent",
         "progress": [
             "Plündere in zehn Szenarien drei von Gegnern fallen gelassene Münzmarker.",
             "Lies {SECTION} 122.5.",
@@ -683,8 +683,8 @@ export default {
         "name": "Werkzeug des Lichts",
         "progress": [
             "Schalte sofort {SCENARIO 65} frei.",
-            "Finde “Schild der Gerechten” (Gegenstand 148).",
-            "Benutze “Schild der Gerechten” (Gegenstand 148), um zehn Angriffe mit 4 oder mehr Schaden zu negieren.",
+            "Finde “Shield of the Righteous” (Gegenstand 148).",
+            "Benutze “Shield of the Righteous” (Gegenstand 148), um zehn Angriffe mit 4 oder mehr Schaden zu negieren.",
             "Lies {SECTION} 82.1."
         ]
     },
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "Flucht vor den Sin-Ra",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "Füge die Stadt-Ereignisse 69 und 70 dem Stadt-Ereignis-Deck hinzu. Erhalte “Schwarzkarte” (Gegenstand 113). Er kann nicht verkauft werden.",
             "Schließe sechs Nebenszenarien ab (Szenarionummer über 56).",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "Leben am Abgrund",
+        "name": "Living on the Edge",
         "progress": [
-            "Erhalte “Experimentelle Rüstung” (Gegenstand 150).",
+            "Erhalte “Experimental Armor” (Gegenstand 150).",
             "Benutze sie, um 20 Gegnern Schaden zuzufügen.",
             "Lies {SECTION} 47.4."
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Kampfstudien",
+        "name": "Martial Study",
         "progress": [
             "Benutze in Szenarien acht verschiedene {ONE-HAND}- oder {TWO-HANDS}-Gegenstände.",
             "Lies {SECTION} 67.2."
@@ -752,14 +752,14 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "Streben nach Meisterschaft",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "Erhalte 120 Erfahrung durch Fertigkeitskarten.",
             "Lies {SECTION} 17.2."
         ]
     },
     "gh2-22": {
-        "name": "Trophäenjagt",
+        "name": "Trophäenjagd",
         "progress": [
             "Töte 20 verschiedene Arten von Monstern.",
             "Lies {SECTION} 21.1."

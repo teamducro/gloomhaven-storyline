@@ -41,7 +41,7 @@ export default {
     "gh-8": {
         "name": "Dreieckschild",
         "source": "Wohlstand 1",
-        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 1 für den Angriff."
+        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhältst du {SHIELD} 1 für den Angriff."
     },
     "gh-9": {
         "name": "Starkbogen",
@@ -66,8 +66,8 @@ export default {
     "gh-13": {
         "name": "Kleiner Ausdauertrank",
         "source": "Wohlstand 1",
-        "desc": "Bekomme während deines zugs bis zu 1 deiner abgeworfenen Karten zurück {RECOVER}.",
-        "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch eine abgelegte Karte wiederherstellen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
+        "desc": "Bekomme während deines Zugs bis zu 2 deiner abgeworfenen Karten zurück {RECOVER}.",
+        "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch eine abgeworfene Karte zurückbekommen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
     },
     "gh-14": {
         "name": "Kleiner Krafttrank",
@@ -163,7 +163,7 @@ export default {
     "gh-32": {
         "name": "Turmschild",
         "source": "Wohlstand 4",
-        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 2 für den Angriff."
+        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhältst du {SHIELD} 2 für den Angriff."
     },
     "gh-33": {
         "name": "Wurfbombe",
@@ -173,8 +173,8 @@ export default {
     "gh-34": {
         "name": "Großer Ausdauertrank",
         "source": "Wohlstand 4",
-        "desc": "Bekomme während deines Zugs bis zu 2 deiner abgeworfenen Karten zurück {RECOVER}.",
-        "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch 2 abgelegte Karten wiederherstellen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
+        "desc": "Bekomme während deines Zugs bis zu 3 deiner abgeworfenen Karten zurück {RECOVER}.",
+        "faq": "[Errata] In einer künftigen Gloomhaven-Erweiterung darfst du mit Hilfe des Gegenstands nur noch 2 abgeworfene Karten zurückbekommen. Optional darfst du den Gegenstand bereits im Grundspiel auf diese Weise verwenden."
     },
     "gh-35": {
         "name": "Falkenfigur",
@@ -236,7 +236,7 @@ export default {
     "gh-46": {
         "name": "Stachelschild",
         "source": "Wohlstand 6",
-        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälstdu {SHIELD} 1 und {RETALIATE} 2 für den Angriff."
+        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhältst du {SHIELD} 1 und {RETALIATE} 2 für den Angriff."
     },
     "gh-47": {
         "name": "Kriegssense",
@@ -256,7 +256,7 @@ export default {
     "gh-50": {
         "name": "Panzerschuhe",
         "source": "Wohlstand 7",
-        "desc": "Wenn du dich in deinem Zug 1 oder weniger Felder weit bewegst, erhälst du {SHIELD} 1 für die Runde. Füge deinem Angriffsmodifikator-Deck 2 {-1} hinzu."
+        "desc": "Wenn du dich in deinem Zug 1 oder weniger Felder weit bewegst, erhältst du {SHIELD} 1 für die Runde. Füge deinem Angriffsmodifikator-Deck 2 {-1} hinzu."
     },
     "gh-51": {
         "name": "Schattenrüstung",
@@ -311,7 +311,7 @@ export default {
     "gh-61": {
         "name": "Setzschild",
         "source": "Wohlstand 8",
-        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhälst du {SHIELD} 4 für den Angriff."
+        "desc": "Wenn du durch einen Angriff Schaden erleidest, erhältst du {SHIELD} 4 für den Angriff."
     },
     "gh-62": {
         "name": "Schicksalspulver",
@@ -331,7 +331,7 @@ export default {
     "gh-65": {
         "name": "Plattenpanzer",
         "source": "Wohlstand 9",
-        "desc": "Erhalte gegen die nächsten 3 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 5 {-1} hinzu."
+        "desc": "Erhalte gegen die nächsten 5 Schadensquellen bei Angriffen, die dich anvisieren, {SHIELD} 1. Füge deinem Angriffsmodifikator-Deck 5 {-1} hinzu."
     },
     "gh-66": {
         "name": "Schreckensmaske",
@@ -341,11 +341,11 @@ export default {
     "gh-67": {
         "name": "Ausbalancierte Klinge",
         "source": "Wohlstand 9",
-        "desc": "DIe obere Standardaktion gilt als {ATTACK} 4 anstatt {ATTACK} 2."
+        "desc": "Die obere Standardaktion gilt als {ATTACK} 4 anstatt {ATTACK} 2."
     },
     "gh-68": {
         "name": "Hellebarde",
-        "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nSektion 132 -> g106 “Strangler's Park” im Buch",
+        "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nAbschnitt 132 -> g106 “Würgerpark” im Buch",
         "desc": "Du kannst während deiner Einzelkampfangriffsaktion einen beliebigen Gegner im Umkreis von 2 Feldern angreifen."
     },
     "gh-69": {
@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Ring der Chancen",
-        "source": "Wohlstand 9\nFC Herausforderungs-Szenario, Rift Karte 12 (Schatz #89)\nSektion 103 -> 84 “Gateway to the Firmament” im Buch",
+        "source": "Wohlstand 9\nFC Herausforderungs-Szenario, Riss-Ereignis 12 (Schatz #89)\nAbschnitt 103 -> 84 “Tor zum Firmament” im Buch",
         "desc": "Spiele am Ende deines Zugs 2 Handkarten aus und führe in dieser Runde, basierend auf deiner neuen Hauptinitiative (die später als deine aktuelle Initiative sein muss) einen zusätzlichen Zug aus."
     },
     "gh-71": {
@@ -461,7 +461,7 @@ export default {
     "gh-91": {
         "name": "Stahlring",
         "source": "Zufälliger Gegenstand",
-        "desc": "Wenn du durch einen Angriff, der dich anvisiert, Schaden erleidest, erhälst du {SHIELD} 4 für den Angriff."
+        "desc": "Wenn du durch einen Angriff, der dich anvisiert, Schaden erleidest, erhältst du {SHIELD} 4 für den Angriff."
     },
     "gh-92": {
         "name": "Dämpfungsring",
@@ -645,7 +645,7 @@ export default {
     "gh-127": {
         "name": "Mechanische Riesenspinne",
         "source": "Stadt-Ereignis 61",
-        "desc": "Wende währende deines Zuges “{LOOT 1}” an ."
+        "desc": "Wende währende deines Zuges “{LOOT 1}” an."
     },
     "gh-128": {
         "name": "Schwarzes Rauchfass",
@@ -772,7 +772,7 @@ export default {
     },
     "gh-152": {
         "name": "Ring der Dualität",
-        "source": "Belohnung von {SCENARIO 97}\nSektion 125 “A locked chest” im Buch",
+        "source": "Belohnung von {SCENARIO 97}\nAbschnitt 125 “Verschlossene Truhe” im Buch",
         "desc": "Du darfst nach der oberen Aktion einer beliebigen Fertigkeitskarte sofort die untere Aktion derselben Karte ausführen. Dieser Gegenstand kann nicht verwendet werden, wenn beide Aktionen ein Symbol für verlorene Karten {CONSUMED} auslösen."
     },
     "gh-153": {
@@ -822,7 +822,7 @@ export default {
     },
     "gh-162": {
         "name": "Riss-Apparat",
-        "source": "Belohnung von {SCENARIO 112}\nSektion 62 “Mechanical Splendor” im Buch.",
+        "source": "Belohnung von {SCENARIO 112}\nAbschnitt 62 “Mechanische Pracht” im Buch.",
         "desc": "{TELEPORT} dich während deines Zugs auf ein beliebiges unbesetztes Feld in bis zu 4 Feldern Entfernung."
     },
     "gh-163": {
@@ -1018,463 +1018,463 @@ export default {
         "desc": "Füge einer deiner Einzelbewegungen “+1 {MOVE} und {JUMP}” hinzu."
     },
     "cs-1": {
-        "name": "Kugel der Verwirrung",
+        "name": "Orb of Confusion",
         "desc": "Du darfst bei deiner Angriffsfertigkeit einen Charaktermarker auf diese Karte legen, um einem Angriff {MUDDLE} hinzuzufügen. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-2": {
-        "name": "Kugel des Schwungs",
+        "name": "Orb of Momentum",
         "desc": "Du darfst bei deiner Bewegungsfertigkeit einen Charaktermarker auf diese Karte legen, um +1 {MOVE} hinzuzufügen. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-3": {
-        "name": "Kugel der Gewandtheit",
+        "name": "Orb of Agility",
         "desc": "Du darfst bei deiner Bewegungsfertigkeit einen Charaktermarker auf diese Karte legen, um {JUMP} hinzuzufügen. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-4": {
-        "name": "Kugel der Kraft",
+        "name": "Orb of Vigor",
         "desc": "Du darfst bei deiner Angriffsfertigkeit einen Charaktermarker auf diese Karte legen, um einem Angriff +1 {ATTACK} hinzuzufügen. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-5": {
-        "name": "Kugel der Vergeltung",
+        "name": "Orb of Retribution",
         "desc": "Wenn du von einem angrenzenden Gegner angegriffen wirst, darfst du einen Charaktermarker auf diese Karte legen, um für diesen Angriff {RETALIATE} 1 zu erhalten. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-6": {
-        "name": "Kugel der Infektion",
+        "name": "Orb of Infection",
         "desc": "Du darfst bei deiner Angriffsfertigkeit einen Charaktermarker auf diese Karte legen, um einem Angriff {POISON} hinzuzufügen. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-7": {
-        "name": "Kugel der Vitalität",
+        "name": "Orb of Vitality",
         "desc": "Du darfst während deines Zugs einen Charaktermarker auf diese Karte legen, um “{HEAL} 1, Selbst” auszuführen. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-8": {
-        "name": "Kugel des Schutzes",
+        "name": "Orb of Protection",
         "desc": "Wenn du von einem Angriff Schaden erleiden würdest, darfst du einen Charaktermarker auf diese Karte legen, um für diesen Angriff {SHIELD} 1 zu erhalten. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-9": {
-        "name": "Kugel des Glücks",
+        "name": "Orb of Fortune",
         "desc": "Du darfst bei deiner Angriffsfertigkeit einen Charaktermarker auf diese Karte legen, um für einen Angriff Vorteil zu erhalten. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-10": {
-        "name": "Kugel der Verzweiflung",
+        "name": "Orb of Despair",
         "desc": "Du darfst bei deiner Angriffsfertigkeit einen Charaktermarker auf diese Karte legen, um einem Angriff {CURSE} hinzuzufügen. Sobald sich drei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-11": {
-        "name": "Pockengegengift",
+        "name": "Pox Antidote",
         "desc": "Entferne während deines Zugs {INFECT} bei dir selbst oder einem angrenzenden Verbündeten."
     },
     "cs-12": {
-        "name": "Trophäenhelm",
+        "name": "Trophy Helm",
         "desc": "Deine Angriffe werden nicht von {RETALIATE} beeinflusst."
     },
     "cs-13": {
-        "name": "Kriegspickel",
+        "name": "War Pick",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit einem Angriff {PIERCE} 4 hinzu."
     },
     "cs-14": {
-        "name": "Kettenmorgenstern",
+        "name": "Chain Mace",
         "desc": "Führe während deines Zugs “{ATTACK} 3, {RANGE} 2” aus."
     },
     "cs-15": {
-        "name": "Auszehrende Beinschienen",
+        "name": "Draining Greaves",
         "desc": "Wenn du dich am Ende deines Zugs in diesem Zug vier oder mehr Felder weit bewegt hast, erleidet ein angrenzender Gegner 1 Schaden."
     },
     "cs-16": {
-        "name": "Schuhe der Phasenverschiebung",
+        "name": "Shoes of Phasing",
         "desc": "Du darfst dich bei deinen Bewegungsfertigkeiten durch Gegner hindurch bewegen."
     },
     "cs-17": {
-        "name": "Leichte Stiefel",
+        "name": "Lightweight Boots",
         "desc": "Füge bei deiner Bewegungsfertigkeit +2 {MOVE} und {JUMP} hinzu."
     },
     "cs-18": {
-        "name": "Eingefangenes Mondlicht",
+        "name": "Bottled Moonlight",
         "desc": "Füge bei deiner Heilfertigkeit jeder Heilung +2 {HEAL} und {STRENGTHEN} hinzu."
     },
     "cs-19": {
-        "name": "Stiefel der Beständigkeit",
+        "name": "Boots of Perpetuity",
         "desc": "Du bist immun gegen {IMMOBILIZE}.\\nWenn du dich in deinem Zug nicht bewegt hast, führe am Ende deines Zugs “{MOVE} 1” aus."
     },
     "cs-20": {
-        "name": "Seltsamer Anhänger",
+        "name": "Curious Pendant",
         "desc": "{RECOVER} während deines Zugs eine in dieser Runde gespielte verlorene Karte."
     },
     "cs-21": {
-        "name": "Infrarotbrille",
+        "name": "Infrared Goggles",
         "desc": "Erhalte Vorteil bei allen Angriffen, die du ausführst, während du {INVISIBLE} bist."
     },
     "cs-22": {
-        "name": "Stahlhelm",
+        "name": "Steel Helmet",
         "desc": "Wenn du angegriffen wirst, behandle jede vom Gegner gezogene {+1_WHITE}-Modifikatorkarte stattdessen als {+0_WHITE}."
     },
     "cs-23": {
-        "name": "Geflochtene Plattenrüstung",
+        "name": "Woven Plate Armor",
         "desc": "Wenn du angegriffen wirst, erhält der Angreifer Nachteil für diesen Angriff und du erhältst für den Angriff {SHIELD} 2."
     },
     "cs-24": {
-        "name": "Mantel der Reinheit",
+        "name": "Mantle of Purity",
         "desc": "Wenn du einen oder mehrere negative Zustände erhalten würdest, verhindere diese Zustände."
     },
     "cs-25": {
-        "name": "Knochenbesetztes Schultertuch",
+        "name": "Boneclad Shawl",
         "desc": "Erhalte bei den nächsten zwei Angriffen angrenzender Gegner, die dich anvisieren, für den Angriff {RETALIATE} 2."
     },
     "cs-26": {
-        "name": "Silhouettenharnisch",
+        "name": "Silhouette Cuirass",
         "desc": "Wenn deine Trefferpunkte durch einen Angriff, der dich anvisiert, auf 0 sinken würden, erleidest du stattdessen keinen Schaden und erhältst {INVISIBLE}."
     },
     "cs-27": {
-        "name": "Translokationsgerät",
+        "name": "Translocation Device",
         "desc": "Tausche während deines Zugs die Position mit einem Gegner in Reichweite {RANGE} 5."
     },
     "cs-28": {
-        "name": "Alchemietrank",
+        "name": "Alchemy Potion",
         "desc": "Ersetze während deines Zugs ein angrenzendes Hindernisplättchen durch einen Münzmarker."
     },
     "cs-29": {
-        "name": "Berauschender Trank",
+        "name": "Intoxicating Potion",
         "desc": "Führe während deines Zugs “{HEAL} 5, {POISON}, Selbst” aus."
     },
     "cs-30": {
-        "name": "Eisenschlinge",
+        "name": "Iron Snare",
         "desc": "Erzeuge während deines Zugs eine {IMMOBILIZE}-Falle auf einem leeren Feld in Reichweite {RANGE} 3."
     },
     "cs-31": {
-        "name": "Druckwellenmine",
+        "name": "Concussion Mine",
         "desc": "Erzeuge während deines Zugs eine {STUN}-Falle auf einem leeren Feld in Reichweite {RANGE} 3."
     },
     "cs-32": {
-        "name": "Wandernder Kompass",
+        "name": "Shifting Compass",
         "desc": "Zwinge während deines Zugs einen Gegner in Reichweite 5, die Fertigkeit “{MOVE} 2, {JUMP}” auszuführen, wobei du die Fertigkeit kontrollierst."
     },
     "cs-33": {
-        "name": "Rammbock",
+        "name": "Battering Ram",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit allen deinen Angriffen {MUDDLE} und {PUSH} 2 hinzu."
     },
     "cs-34": {
-        "name": "Klauenfalle",
+        "name": "Claw Trap",
         "desc": "Erzeuge am Ende deines Zugs auf einem angrenzenden leeren Feld eine {POISON}-Falle mit 4 Schaden."
     },
     "cs-35": {
-        "name": "Stab der Vergeltung",
+        "name": "Staff of Retribution",
         "desc": "Erhalte, wenn du angegriffen wirst, für den Angriff {RETALIATE} 1, {RANGE} 3."
     },
     "cs-36": {
-        "name": "Fluchblutklinge",
+        "name": "Curseblood Blade",
         "desc": "Du kannst bei deiner Nahkampf-Angriffsfertigkeit 1 Schaden erleiden, um allen deinen Angriffen {CURSE} hinzuzufügen."
     },
     "cs-37": {
-        "name": "Drakenschuppenschild",
+        "name": "Drakescale Shield",
         "desc": "Erhalte, wenn du von einem angrenzenden Gegner angegriffen wirst, für den Angriff {RETALIATE} 3."
     },
     "cs-38": {
-        "name": "Drakenschuppendolch",
+        "name": "Drakescale Dagger",
         "desc": "Ziehe bei deiner Nahkampf-Angriffsfertigkeit für einen Angriff keine Angriffsmodifikator-Karte."
     },
     "cs-39": {
-        "name": "Hakenschuss",
+        "name": "Hook Shot",
         "desc": "Führe während deines Zugs “{ATTACK} 2, {RANGE} 3, {PIERCE} 2” aus."
     },
     "cs-40": {
-        "name": "Mondleder-Stiefel",
+        "name": "Moonleather Boots",
         "desc": "Füge allen deinen Bewegungen +1 Bewegung hinzu, solange du volle Gesundheit hast."
     },
     "cs-41": {
-        "name": "Geistertrank",
+        "name": "Spirit Libation",
         "desc": "Entferne während deines Zugs einen Schadensmarker von einem {SPIRIT}. Dieser {SPIRIT} darf sofort einen Zug ausführen, ohne einen Schadensmarker zu erhalten."
     },
     "cs-42": {
-        "name": "Robe der Linderung",
+        "name": "Robe of Soothing",
         "desc": "Wann immer du einem Verbündeten eine {PRAYER}-Fertigkeitskarte gibst, darf dieser Verbündete “{HEAL} 2, Selbst” ausführen."
     },
     "cs-43": {
-        "name": "Strahlende Mitra",
+        "name": "Resplendent Mitre",
         "desc": "Füge bei deiner Heilaktion jeder Heilung +2 {HEAL} hinzu."
     },
     "cs-44": {
-        "name": "Kanistergeschoss",
+        "name": "Canister Projectile",
         "desc": "Füge bei deiner Fernkampf-Angriffsfertigkeit einem Angriff {PIERCE} 2 hinzu."
     },
     "cs-45": {
-        "name": "Kettenkanone",
+        "name": "Chain Cannon",
         "desc": "Führe während deines Zugs “{PULL} 2, Selbst zu einem Gegner in Reichweite {RANGE} 3 hin” aus."
     },
     "cs-46": {
-        "name": "Pfeife des Rufers",
+        "name": "Summoner's Whistle",
         "desc": "Ein dir gehörender beschworener Verbündeter führt während deines Zugs\\n{MOVE} +0\\n{ATTACK} +0\\naus, wobei du die Fertigkeiten kontrollierst."
     },
     "cs-47": {
-        "name": "Naturarmreife",
+        "name": "Nature Armlets",
         "desc": "Während du auf einem Beschworenen {MOUNTED} bist, kannst du die Effekte deiner kleinen {ITEM} stattdessen auf den Beschworenen anwenden."
     },
     "cs-48": {
-        "name": "Reagenzglas",
+        "name": "Test Tube",
         "desc": "Du kannst während deines Zugs {ANY_X}, um eines der Folgenden auszuführen: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, Selbst, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     "cs-49": {
-        "name": "Verstärkender Schuss",
+        "name": "Booster Shot",
         "desc": "Führe während deines Zugs eines der Folgenden aus: {RECOVER} eine abgeworfene Karte | {HEAL} 3, Selbst | Füge deinem nächsten Angriff in diesem Zug +2 {ATTACK} hinzu."
     },
     "cs-50": {
-        "name": "Leuchtender Panzer",
+        "name": "Luminous Carapace",
         "desc": "Wenn du während deines Zugs ein Element {ANY_X}, bewege das verbrauchte Element nicht in die Spalte “Inaktiv”."
     },
     "cs-51": {
-        "name": "Flammende Rüstung",
+        "name": "Flaming Armor",
         "desc": "Wenn du angegriffen wirst, kannst du {FIRE_X}, um für den Angriff {RETALIATE} 3 zu erhalten."
     },
     "cs-52": {
-        "name": "Flammende Axt",
+        "name": "Flaming Axe",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit allen deinen Angriffen +1 {ATTACK} und {WOUND} hinzu. {FIRE}"
     },
     "cs-53": {
-        "name": "Feldmörser",
+        "name": "Field Mortar",
         "desc": "Du darfst einmal pro Zug während deines Zugs einen Zustand von einer angrenzenden Figur entfernen und ihn auf diese Karte legen, falls er nicht bereits auf dieser Karte liegt. Eine angrenzende Figur erhält während deines Zugs alle Zustände auf dieser Karte; verbrauche dann {CONSUMED} diesen Gegenstand."
     },
     "cs-54": {
-        "name": "Vipernzahndolch",
+        "name": "Vipertooth Dagger",
         "desc": "Erhalte Vorteil bei allen deinen Nahkampfangriffen, solange du schwieriges Gelände besetzt."
     },
     "cs-55": {
-        "name": "Geisterviper-Gift",
+        "name": "Ghost Viper Venom",
         "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff {POISON} 2 hinzu."
     },
     "cs-56": {
-        "name": "Klemmfalle",
+        "name": "Clamp Trap",
         "desc": "Erzeuge am Ende deines Zugs auf einem angrenzenden leeren Feld eine {IMMOBILIZE}-Falle mit 3 Schaden."
     },
     "cs-57": {
-        "name": "Geläutertes Leereherz",
+        "name": "Cleansed Voidheart",
         "desc": "Du bist immun gegen {MUDDLE}. Erhalte am Ende jeder Runde {REGENERATE}, falls du {WOUND} hast."
     },
     "cs-58": {
-        "name": "Schwindelerregende Tinktur",
+        "name": "Dizzying Tincture",
         "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff {DISARM} hinzu."
     },
     "cs-59": {
-        "name": "Drakenblut",
+        "name": "Drakes Blood",
         "desc": "Entferne während deines Zugs alle positiven Zustände von allen Gegnern in Reichweite {RANGE} 2. Dies kann auch bei Gegnern mit {INVISIBLE} angewendet werden."
     },
     "cs-60": {
-        "name": "Manamedizin",
+        "name": "Mana Medicine",
         "desc": "Führe während deines Zugs “{HEAL} 5, Selbst” aus. {ANY}"
     },
     "cs-61": {
-        "name": "Aschestahl-Panzerhandschuhe",
+        "name": "Ashsteel Gauntlets",
         "desc": "Du bist immun gegen {DISARM}, auch wenn dieser Gegenstand abgenutzt ist. Erhalte während deines Zugs für die Runde {SHIELD} 1. {eot}"
     },
     "cs-62": {
-        "name": "Smogerzeuger",
+        "name": "Smog Emitter",
         "desc": "Alle Gegner behandeln am Ende deines Zugs für die Runde alle leeren Felder in Reichweite {RANGE} 2 um dich als schwieriges Gelände. {eot}"
     },
     "cs-63": {
-        "name": "Glückshufeisen",
+        "name": "Lucky Horseshoe",
         "desc": "Wenn du durch einen Angriff, der dich anvisiert, Schaden erleidest, erleide stattdessen die Hälfte des Schadens (abgerundet)."
     },
     "cs-64": {
-        "name": "Mildes Entfachtes Tonikum",
+        "name": "Mild Kindled Tonic",
         "desc": "Wenn ein Verbündeter dich mit einer Heilfertigkeit anvisiert, entferne vor der Heilung einen negativen Zustand von dir und erhalte {STRENGTHEN}."
     },
     "cs-65": {
-        "name": "Rettungsaxt",
+        "name": "Rescue Axe",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit einem Angriff, der einen Gegner neben einem deiner Verbündeten anvisiert, +1 {ATTACK} und {MUDDLE} hinzu."
     },
     "cs-66": {
-        "name": "Eisenmalleus",
+        "name": "Iron Malleus",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit allen deinen Angriffen +1 {ATTACK} und {IMMOBILIZE} hinzu."
     },
     "cs-67": {
-        "name": "Spießhaken",
+        "name": "Pike Hook",
         "desc": "Füge bei deiner Einzelziel-Nahkampf-Angriffsfertigkeit dem Angriff {PIERCE} 2 und {PULL} 1 hinzu; du darfst einen Gegner in bis zu 2 Feldern Entfernung anvisieren."
     },
     "cs-68": {
-        "name": "Explosives Tonikum",
+        "name": "Explosive Tonic",
         "desc": "Führe während deines Zugs aus: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
     },
     "cs-69": {
-        "name": "Scharfes Entfachtes Tonikum",
+        "name": "Spicy Kindled Tonic",
         "desc": "Du darfst bei den nächsten drei Heilfertigkeiten, die dich anvisieren, entweder zuerst alle negativen Zustände von dir entfernen oder {STRENGTHEN} erhalten."
     },
     "cs-70": {
-        "name": "Nutzseil",
+        "name": "Utility Rope",
         "desc": "Führe während deines Zugs “{PULL} 2, Ziel: ein Verbündeter oder Gegner in Reichweite {RANGE} 3.” aus."
     },
     "cs-71": {
-        "name": "Feuerfester Helm",
+        "name": "Fireproof Helm",
         "desc": "Wann immer du durch {WOUND} Schaden erleiden würdest, führe stattdessen “{HEAL} 1, Selbst” aus."
     },
     "cs-72": {
-        "name": "Holzleiter",
+        "name": "Wooden Ladder",
         "desc": "Füge allen deinen Fernkampffertigkeiten, die du neben einem Hindernis ausführst, +1 Reichweite hinzu. Wann immer du ein Feld mit einer Falle betrittst, darfst du entscheiden, die Falle nicht auszulösen."
     },
     "cs-73": {
-        "name": "Medizinkoffer",
+        "name": "Medical Kit",
         "desc": "Wann immer du die obere Standardaktion einer Fertigkeitskarte verwendest, darfst du anstelle einer Fertigkeit “{ATTACK} 2” eine Fertigkeit “{HEAL} 2, {RANGE} 1” ausführen."
     },
     "cs-74": {
-        "name": "Mildes Stärkungstonikum",
+        "name": "Mild Bolstering Tonic",
         "desc": "Füge bei deiner Heilfertigkeit, die mindestens einen Verbündeten anvisiert, jeder Heilung +1 Heilung und {STRENGTHEN} hinzu."
     },
     "cs-75": {
-        "name": "Medaillon der Eiche",
+        "name": "Medallion of the Oak",
         "desc": "Wenn du in dieser Runde angegriffen wirst, behandeln du und alle angrenzenden Verbündeten alle gezogenen negativen und {modifier_no_damage}-Angriffsmodifikatoren stattdessen als {+0_WHITE}."
     },
     "cs-76": {
-        "name": "Kauterisiermesser",
+        "name": "Cauterizing Knife",
         "desc": "Füge bei deiner Heilfertigkeit jeder Heilung +3 {HEAL} und {WOUND} hinzu."
     },
     "cs-77": {
-        "name": "Traumakoffer",
+        "name": "Trauma Kit",
         "desc": "Verdopple bei deiner Heilfertigkeit den Wert jeder Heilung. Entfernt diese Heilfertigkeit {WOUND}, wird dieser Gegenstand abgenutzt statt verbraucht."
     },
     "cs-78": {
-        "name": "Schriftrolle des Charismas",
+        "name": "Scroll of Charisma",
         "desc": "Ein Verbündeter in Reichweite {RANGE} 2 darf während deines Zugs eines der Folgenden ausführen: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, Selbst."
     },
     "cs-79": {
-        "name": "Rettungsschild",
+        "name": "Rescue Shield",
         "desc": "Wenn ein angrenzender Verbündeter durch einen Angriff, der ihn anvisiert, Schaden erleidet, erhält dieser Verbündete für den Angriff {SHIELD} 2 und entfernt alle durch den Angriff verursachten negativen Zustände."
     },
     "cs-80": {
-        "name": "Schriftrolle des Schutzes",
+        "name": "Scroll of Protection",
         "desc": "Wenn ein Verbündeter in Reichweite {RANGE} 5 durch einen Angriff, der ihn anvisiert, Schaden erleiden würde, erleidet er stattdessen keinen Schaden."
     },
     "cs-81": {
-        "name": "Scharfes Stärkungstonikum",
+        "name": "Spicy Bolstering Tonic",
         "desc": "Füge bei deiner Heilfertigkeit, die mindestens einen Verbündeten anvisiert, jeder Heilung +2 {HEAL}, {STRENGTHEN} und {BLESS} hinzu."
     },
     "cs-82": {
-        "name": "Schriftrolle des Befehls",
+        "name": "Scroll of Command",
         "desc": "Ein Verbündeter in Reichweite {RANGE} 3 darf während deines Zugs eines der Folgenden ausführen: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, Selbst."
     },
     "cs-83": {
-        "name": "Kugel der Strömungen",
+        "name": "Sphere of Currents",
         "desc": "Erzeuge während deines Zugs zwei Wasser-Plättchen für schwieriges Gelände auf Feldern in Reichweite {RANGE} 3, die keine Overlay-Plättchen enthalten. Füge allen Figuren in Reichweite {RANGE} 3, die ein Wasserplättchen besetzen, {MUDDLE} hinzu."
     },
     "cs-84": {
-        "name": "Geschossarmbrust",
+        "name": "Slug Crossbow",
         "desc": "Verwandle bei deiner Einzelziel-Fernkampf-Angriffsfertigkeit den Angriff in Folgendes: {AOE.line_1_1}."
     },
     "cs-85": {
-        "name": "Verfeinerte Geschossarmbrust",
+        "name": "Refined Slug Crossbow",
         "desc": "Füge bei deiner Einzelziel-Fernkampf-Angriffsfertigkeit +1 {ATTACK} hinzu und verwandle den Angriff in Folgendes: {AOE.line_1_1}."
     },
     "cs-86": {
-        "name": "Bollwerkbanner",
+        "name": "Bulwark Banner",
         "desc": "Du und alle Verbündeten erhalten während deines Zugs für die Runde {SHIELD} 1. {eot}"
     },
     "cs-87": {
-        "name": "Verfeinertes Bollwerkbanner",
+        "name": "Refined Bulwark Banner",
         "desc": "Alle angrenzenden Verbündeten erhalten während deines Zugs für die Runde {SHIELD} in Höhe deines aktuellen Schildwerts aus Fertigkeiten. {eot}"
     },
     "cs-88": {
-        "name": "Ferngesteuerter Käfer",
+        "name": "Remote Beetle",
         "desc": "Öffne während deines Zugs eine nicht verschlossene geschlossene Tür in Reichweite {RANGE} 2."
     },
     "cs-89": {
-        "name": "Verfeinerter ferngesteuerter Käfer",
+        "name": "Refined Remote Beetle",
         "desc": "Öffne während deines Zugs eine nicht verschlossene geschlossene Tür in Reichweite {RANGE} 2."
     },
     "cs-90": {
-        "name": "Lodernde Stiefel",
+        "name": "Blazing Boots",
         "desc": "Verdopple bei deiner Bewegungsfertigkeit den Wert der Bewegung."
     },
     "cs-91": {
-        "name": "Verfeinerte Lodernde Stiefel",
+        "name": "Refined Blazing Boots",
         "desc": "Füge bei deiner Bewegungsfertigkeit {JUMP} hinzu und verdopple den Wert der Bewegung."
     },
     "cs-92": {
-        "name": "Vipern-Blasrohr",
+        "name": "Viper Blowgun",
         "desc": "Du kannst während deines Zugs {EARTH_X}, um “{ATTACK} 1, {RANGE} 3, {POISON}” auszuführen."
     },
     "cs-93": {
-        "name": "Verfeinertes Vipern-Blasrohr",
+        "name": "Refined Viper Blowgun",
         "desc": "Führe während deines Zugs “{ATTACK} 1, {RANGE} 4, {POISON}” aus. Du kannst {EARTH_X}, um {TARGET} HINZUZUFÜGEN."
     },
     "cs-94": {
-        "name": "Froststein",
+        "name": "Frost Stone",
         "desc": "Du darfst während deines Zugs einen Charaktermarker auf diese Karte legen, um {ICE} zu erzeugen.\\nSobald sich zwei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-95": {
-        "name": "Sturmstein",
+        "name": "Storm Stone",
         "desc": "Du darfst während deines Zugs einen Charaktermarker auf diese Karte legen, um {WIND} zu erzeugen.\\nSobald sich zwei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-96": {
-        "name": "Infernostein",
+        "name": "Inferno Stone",
         "desc": "Du darfst während deines Zugs einen Charaktermarker auf diese Karte legen, um {FIRE} zu erzeugen.\\nSobald sich zwei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-97": {
-        "name": "Bebenstein",
+        "name": "Tremor Stone",
         "desc": "Du darfst während deines Zugs einen Charaktermarker auf diese Karte legen, um {EARTH} zu erzeugen.\\nSobald sich zwei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-98": {
-        "name": "Gleißender Stein",
+        "name": "Brilliant Stone",
         "desc": "Du darfst während deines Zugs einen Charaktermarker auf diese Karte legen, um {LIGHT} zu erzeugen.\\nSobald sich zwei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-99": {
-        "name": "Dunkler Stein",
+        "name": "Dark Stone",
         "desc": "Du darfst während deines Zugs einen Charaktermarker auf diese Karte legen, um {DARK} zu erzeugen.\\nSobald sich zwei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-100": {
-        "name": "Wunderstein",
+        "name": "Wonder Stone",
         "desc": "Du darfst während deines Zugs einen Charaktermarker auf diese Karte legen, um {ANY} zu erzeugen.\\nSobald sich zwei Marker auf dieser Karte befinden, ist sie verbraucht {CONSUMED}."
     },
     "cs-aa01": {
-        "name": "Felsstachel-Bollwerk",
+        "name": "Rockspine Bulwark",
         "desc": "Die angegriffene Figur erhält bei den nächsten drei Schadensquellen von Angriffen, die dich oder einen angrenzenden Verbündeten anvisieren, für den Angriff {SHIELD} 1."
     },
     "cs-aa02": {
-        "name": "Geisterschimmer-Honig",
+        "name": "Ghostshimmer Honey",
         "desc": "Führe während deines Zugs {HEAL} 3\\n{REGENERATE}\\naus. Wirkt auf dich selbst und einen angrenzenden Verbündeten."
     },
     "cs-aa03": {
-        "name": "Stahlseide Spinneret",
+        "name": "Steelsilk Spinneret",
         "desc": "Der Gegner erhält {IMMOBILIZE}, wenn er bei den nächsten zwei Malen durch einen Angriff auf dich Schaden erleidet."
     },
     "cs-qa01": {
-        "name": "Leistungsmodulator",
+        "name": "Power Modulator",
         "desc": "(X ist 1, 2, 3)\\nVerzichte während deines Zugs auf deine obere Aktion, um {ATTACK} X+1\\n{RANGE} 2\\n{TARGET} 4-X\\nauszuführen."
     },
     "cs-qa02": {
-        "name": "Dampfkolbenhammer",
+        "name": "Steam Piston Hammer",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit einem einzelnen Angriff {MUDDLE} und {PUSH} 1 hinzu."
     },
     "cs-qa03": {
-        "name": "Spinnenkletterhandschuhe",
+        "name": "Spider Climb Gloves",
         "desc": "Deine Bewegung darf Felder mit Hindernissen betreten und dort enden, als hättest du {FLYING}."
     },
     "cs-qa04": {
-        "name": "Schwerkraftumkehr-Pads",
+        "name": "Gravity Inversion Pads",
         "desc": "Erzeuge eine Falle auf einem leeren Feld in Reichweite {RANGE} 3.\\nLöst du oder ein Verbündeter diese Falle aus, erhält diese Figur für die Runde {FLYING}. | Jeder Gegner, der ein Feld mit dieser Falle betritt, löst sie aus und verliert für die Runde {FLYING}."
     },
     "cs-qa05": {
-        "name": "Zartes Modell",
-        "desc": "Beschwöre Schrottsammler\\nDu plünderst {LOOT} jedes Feld, das dieser Beschworene betritt.\\nDu kontrollierst die Aktionen dieses Beschworenen."
+        "name": "Delicate Model",
+        "desc": "Beschwöre Scrap Collector\\nDu plünderst {LOOT} jedes Feld, das dieser Beschworene betritt.\\nDu kontrollierst die Aktionen dieses Beschworenen."
     },
     "cs-qa06": {
-        "name": "Auscudec der Erschaffer",
+        "name": "Auscudec of the Makers",
         "desc": "Verzichte während deines Zugs auf deine obere Aktion, um eine Beschwörungsaktion von einer Karte in deinem Verlorenen-Stapel zu spielen, wobei du zwei {SCRAP_X} ignorierst."
     },
     "cs-rm01": {
-        "name": "Gezackte Schneide",
+        "name": "Serrated Edge",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit einem Angriff {RUPTURE} hinzu."
     },
     "cs-rm02": {
-        "name": "Grausige Stiefel",
+        "name": "Grisly Boots",
         "desc": "Führe nach deiner Bewegungsfertigkeit {PUSH} 1\\nZiel: ein angrenzender Gegner\\naus. Füge +1 {PUSH} hinzu, wenn du dich in dieser Runde 4 oder mehr Felder bewegt hast."
     },
     "cs-rm03": {
-        "name": "Schreckensschuppen-Säbel",
+        "name": "Terrorscale Saber",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit einem Angriff gegen einen Gegner mit {WOUND} oder {RUPTURE} +1 {ATTACK} und {PIERCE} 2 hinzu."
     },
     "cs-rm04": {
-        "name": "Schreckensschuppen-Kreuzklingen",
+        "name": "Terrorscale Crossblades",
         "desc": "Erhalte bei deinen nächsten drei Nahkampfangriffen gegen Gegner mit mindestens einem negativen Zustand Vorteil."
     },
     "cs-rm05": {
-        "name": "Ritus des Ruins",
+        "name": "Rite of Ruin",
         "desc": "Erhalte bei deiner Angriffsfertigkeit {WOUND}, um einem Angriff +3 {ATTACK} hinzuzufügen. Tötest du das Ziel, führe “{HEAL} 3, Selbst” aus."
     },
     "cs-rm06": {
-        "name": "Wilder Harnisch",
+        "name": "Savage Cuirass",
         "desc": "Wirf die nächsten zwei Male, bei denen du eine Karte von deiner Hand verlieren würdest, um Schaden zu verhindern, die Karte stattdessen ab und erhalte {WOUND}."
     },
     "fh-1": {
@@ -1670,8 +1670,8 @@ export default {
     },
     "fh-39": {
         "name": "Abgrundaxt",
-        "source": "Handwerker 7\nPersönliches Ziel 19",
-        "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff gegen einen Gefrorenen Leichnam, Eiswraith oder Lebendes Verderben +3 {ATTACK.fh} und {PIERCE.fh} 1 hinzu."
+        "source": "Handwerker 7\nPersönliche Quest 19",
+        "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff gegen eine Gefrorene Leiche, einen Eisspuk oder ein Wandelndes Schicksal +3 {ATTACK.fh} und {PIERCE.fh} 1 hinzu."
     },
     "fh-40": {
         "name": "Herzschlagbogen",
@@ -1899,7 +1899,7 @@ export default {
     "fh-84": {
         "name": "Ausdauertrank",
         "source": "Alchemie",
-        "desc": "{RECOVER.fh} während deines Zugs eine Stufe-1-Karte aus deinem Ablagestapel."
+        "desc": "{RECOVER.fh} während deines Zugs eine Stufe-1-Karte aus deinem Abwurfstapel."
     },
     "fh-85": {
         "name": "Krafttrank",
@@ -1979,7 +1979,7 @@ export default {
     "fh-100": {
         "name": "Großer Ausdauertrank",
         "source": "Alchemie",
-        "desc": "{RECOVER.fh} während deines Zugs eine Karte aus deinem Ablagestapel."
+        "desc": "{RECOVER.fh} während deines Zugs eine Karte aus deinem Abwurfstapel."
     },
     "fh-101": {
         "name": "Großer Krafttrank",
@@ -2335,7 +2335,7 @@ export default {
     "fh-171": {
         "name": "Erfrischendes Amulett",
         "source": "Beutestapel (zufällig)",
-        "desc": "{RECOVER.fh} wann immer du eine Karte verlierst, um {DAMAGE.fh} zu negieren, bis zu eine Karte aus deinem Ablagestapel und erhalte {REGENERATE.fh}."
+        "desc": "{RECOVER.fh} wann immer du eine Karte verlierst, um {DAMAGE.fh} zu negieren, bis zu eine Karte aus deinem Abwurfstapel und erhalte {REGENERATE.fh}."
     },
     "fh-172": {
         "name": "Kappe der Vorahnung",
@@ -2531,7 +2531,7 @@ export default {
     "fh-210": {
         "name": "Tanjo",
         "source": "SO-39",
-        "desc": "Füge während deines Zugs allen Angriffen von Lurkern, die dich anvisieren, in dieser Runde +3 {ATTACK.fh} hinzu. {ROUND}"
+        "desc": "Füge während deines Zugs allen Angriffen von Pirschern, die dich anvisieren, in dieser Runde +3 {ATTACK.fh} hinzu. {ROUND}"
     },
     "fh-211": {
         "name": "Sprengfass",
@@ -2810,28 +2810,28 @@ export default {
         "desc": "Du darfst bei einer Rast bis zu drei {TIDE_ICON}-Karten in deinem aktiven Bereich behalten. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
-        "name": "Band der Freundschaft",
+        "name": "Ribbon of Friendship",
         "source": "Belohnung von Solo-Szenario - {AN}",
         "desc": "Führe unmittelbar nach einer Verstärkungsfertigkeit aus: {POISON.fh} {RANGE.fh} 2. Du darfst diese Fertigkeit so ausführen, als würdest du dasselbe Feld wie einer deiner Beschworenen besetzen."
     },
     "mp-SA": {
-        "name": "Wappen von Frosthaven",
+        "name": "Crest of Frosthaven",
         "source": "Belohnung von Solo-Szenario - {SA}",
         "desc": "Wann immer du eine lange Rast durchführst, Eis und drehe diese Karte um.",
         "backDesc": "Wann immer ein Verbündeter rastet, darfst du diese Karte umdrehen, um ihm zu gewähren: {HEAL.fh} 2, Selbst"
     },
     "mp-CA A": {
-        "name": "Becken der Prophezeiung A",
+        "name": "Basin of Prophecy A",
         "source": "Belohnung von Solo-Szenario - {CA}",
         "desc": "Füge allen Weissagungen +1 Weissagung hinzu."
     },
     "mp-CA B": {
-        "name": "Becken der Prophezeiung B",
+        "name": "Basin of Prophecy B",
         "source": "Belohnung von Solo-Szenario - {CA}",
         "desc": "Führe während deines Zugs aus: {ATTACK.fh} 1, {TARGET.fh} 1 Gegner, der ein Feld mit einem {RIFT} besetzt, {PIERCE.fh} 2, {DIVINATION} 3"
     },
     "mp-HA": {
-        "name": "Stiefel ohne Unsinn",
+        "name": "No Nonsense Boots",
         "source": "Belohnung von Solo-Szenario - {HA}",
         "desc": "Drehe diese Karte am Ende deines Zugs um, wenn du in diesem Zug 3 oder mehr Entschlossenheit ausgegeben hast.",
         "backDesc": "Wenn du während deines Zugs eine aktive Gereiztheit hast, darfst du diese Karte in deinen Vorrat legen, um eine andere Karte aus deinem Vorrat zu spielen und deren Gereiztheitsaktion auszuführen; drehe diese Karte dann um."
@@ -2857,7 +2857,7 @@ export default {
         "desc": "Wenn du angegriffen wirst, erhält der Angreifer vor dem Ziehen des Angriffsmodifikators Nachteil für den Angriff."
     },
     "gh2-5": {
-        "name": "Spähglas",
+        "name": "Scouting Lens",
         "source": "Wohlstand 1",
         "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff {PIERCE.fh} 1 hinzu."
     },
@@ -2877,12 +2877,12 @@ export default {
         "desc": "Wenn du durch einen Angriff {DAMAGE.fh} erleidest, erhalte für den Angriff {SHIELD.fh} 1."
     },
     "gh2-9": {
-        "name": "Fokussierstab",
+        "name": "Focusing Rod",
         "source": "Wohlstand 1",
         "desc": "Führe während deines Zugs aus, wenn du eine Aktion mit {LOST.fh} ausgeführt hast: {HEAL.fh} 1, {RANGE.fh} 3"
     },
     "gh2-10": {
-        "name": "Einfacher Bogen",
+        "name": "Simple Bow",
         "source": "Wohlstand 1",
         "desc": "Erhalte bei deiner Fernkampf-Angriffsfertigkeit für einen Angriff Vorteil."
     },
@@ -2894,7 +2894,7 @@ export default {
     "gh2-12": {
         "name": "Ausdauertrank",
         "source": "Wohlstand 1\nStadt-Ereignis 84",
-        "desc": "{RECOVER.fh} während deines Zugs eine Stufe-1-Karte aus deinem Ablagestapel.",
+        "desc": "{RECOVER.fh} während deines Zugs eine Stufe-1-Karte aus deinem Abwurfstapel.",
         "faq": "X-Karten zählen als Stufe-1-Karten und können daher ebenfalls wiedererhalten werden."
     },
     "gh2-13": {
@@ -3015,7 +3015,7 @@ export default {
         "desc": "Wenn du durch einen Angriff {DAMAGE.fh} erleidest, erhalte für den Angriff {SHIELD.fh} 2."
     },
     "gh2-36": {
-        "name": "Mondohrring",
+        "name": "Moon Earing",
         "source": "Wohlstand 4\nStadt-Ereignis 6",
         "desc": "{RECOVER.fh} bei einer kurzen Rast bis zu drei deiner abgenutzten Gegenstände."
     },
@@ -3035,12 +3035,12 @@ export default {
         "desc": "Beschwöre Skelett"
     },
     "gh2-40": {
-        "name": "Schattenrüstung",
+        "name": "Shadow Amor",
         "source": "Wohlstand 4",
         "desc": "Wenn du durch einen Angriff {DAMAGE.fh} erleidest, negiere den {DAMAGE.fh} und lade {DARK} auf."
     },
     "gh2-41": {
-        "name": "Kinetische Sohlen",
+        "name": "Kinetic Treads",
         "source": "Wohlstand 5",
         "desc": "Gewähre am Ende deiner Bewegungsfertigkeit einem angrenzenden Verbündeten: {MOVE.fh} 2"
     },
@@ -3055,7 +3055,7 @@ export default {
         "desc": "Füge während deines Zugs allen deinen Fernkampfangriffen +1 {RANGE.fh} hinzu."
     },
     "gh2-44": {
-        "name": "Präzisionsbogen",
+        "name": "Precision Bow",
         "source": "Wohlstand 5",
         "desc": "Führe nach deiner Fernkampf-Angriffsfertigkeit aus: {ATTACK.fh} 1, {TARGET.fh} 1 Ziel der Angriffsfertigkeit in beliebiger {RANGE.fh}, {PIERCE.fh} 1"
     },
@@ -3065,7 +3065,7 @@ export default {
         "desc": "{ANY} {ANY} während deines Zugs."
     },
     "gh2-46": {
-        "name": "Leichte Tartsche",
+        "name": "Light Targe",
         "source": "Wohlstand 5",
         "desc": "Wenn du durch einen Angriff {DAMAGE.fh} erleidest, erhalte für den Angriff {SHIELD.fh} 1. Führe nach dem Angriff, aber vor jedem {RETALIATE.fh}, aus: {MOVE.fh} 1"
     },
@@ -3090,7 +3090,7 @@ export default {
         "desc": "Führe während deines Zugs aus: {HEAL.fh} 3, Ein Verbündeter, {RANGE.fh} 1"
     },
     "gh2-51": {
-        "name": "Schwerer Streitkolben",
+        "name": "Heavy Mace",
         "source": "Wohlstand 6\nWeg-Ereignis 8",
         "desc": "Führe aus, nachdem du von einem angrenzenden Gegner angegriffen wurdest: {ATTACK.fh} 1, angreifender Gegner Dieser Angriff wird nicht von {RETALIATE.fh} beeinflusst."
     },
@@ -3128,7 +3128,7 @@ export default {
     "gh2-58": {
         "name": "Großer Ausdauertrank",
         "source": "Wohlstand 7",
-        "desc": "{RECOVER.fh} während deines Zugs eine Karte aus deinem Ablagestapel."
+        "desc": "{RECOVER.fh} während deines Zugs eine Karte aus deinem Abwurfstapel."
     },
     "gh2-59": {
         "name": "Teleskoplinse",
@@ -3171,7 +3171,7 @@ export default {
         "desc": "Führe während deines Zugs aus: {INVISIBLE.fh}, Selbst"
     },
     "gh2-67": {
-        "name": "Stachelschuhe",
+        "name": "Spiked Shoes",
         "source": "Wohlstand 9",
         "desc": "Du darfst, wenn du die untere Standardaktion einer Fertigkeitskarte verwendest, {ATTACK.fh} 3 statt {MOVE.fh} 2 ausführen."
     },
@@ -3186,17 +3186,17 @@ export default {
         "desc": "Erhalte bei den nächsten fünf Quellen von {DAMAGE.fh} durch Angriffe, die dich anvisieren, für die Angriffe {SHIELD.fh} 1."
     },
     "gh2-70": {
-        "name": "Standardrationen",
+        "name": "Standard Rations",
         "source": "Militär-Ansehen 15",
         "desc": "Füge, wann immer du dich durch eine lange Rast heilst, +2 {HEAL.fh} hinzu."
     },
     "gh2-71": {
-        "name": "Meisterarmbrust",
+        "name": "Mastercraft Crossbow",
         "source": "Militär-Ansehen 17",
         "desc": "Füge bei deiner Fernkampf-Angriffsfertigkeit einem Angriff {WOUND.fh} hinzu. Ein an das Ziel angrenzender Gegner, der weiter von dir entfernt ist als das Ziel, erleidet {DAMAGE.fh} 2."
     },
     "gh2-72": {
-        "name": "Kappe des Kommandanten",
+        "name": "Commander's Cap",
         "source": "Militär-Ansehen 19",
         "desc": "Verbündete erhalten bei den nächsten drei Angriffen, die sie ausführen, während sie an dich angrenzen, Vorteil. Drehe diese Karte dann um.",
         "backDesc": "Drehe diese Karte nach den nächsten drei Angriffsfertigkeiten um, die du ausführst, während du dich in Reichweite {RANGE.fh} 2 eines oder mehrerer Verbündeter befindest."
@@ -3207,18 +3207,18 @@ export default {
         "desc": "Gewähre während deines Zugs einem deiner Beschworenen: {SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
-        "name": "Verborgener Dolch",
+        "name": "Concealed Dagger",
         "source": "Kaufmannsgilde-Ansehen 15",
         "desc": "Lege während deines Zugs einen Charaktermarker auf einen angrenzenden Gegner. Zu Beginn jedes Zugs des Gegners erleidet er {DAMAGE.fh} 1. Wenn dieser Gegner stirbt, drehe diese Karte um. {PERSISTENT}",
         "backDesc": "Lege den Charaktermarker auf das Feld, auf dem der Gegner gestorben ist. Du darfst diesen Marker plündern, um diese Karte umzudrehen."
     },
     "gh2-75": {
-        "name": "Prunkkapuze",
+        "name": "Opulent Hood",
         "source": "Kaufmannsgilde-Ansehen 17",
         "desc": "Gewähre während deines Zugs einem angrenzenden Verbündeten: {ATTACK.fh} 1, {PUSH.fh} 1"
     },
     "gh2-76": {
-        "name": "Abzeichen des Händlers",
+        "name": "Merchant's Insignia",
         "source": "Kaufmannsgilde-Ansehen 19",
         "desc": "Erhalte, wann immer du ein Szenario abschließt, 10 Gold."
     },
@@ -3238,7 +3238,7 @@ export default {
         "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff {POISON.fh}, {STUN.fh} und {CURSE.fh} hinzu."
     },
     "gh2-80": {
-        "name": "Dämonenschädel",
+        "name": "Demonic Skull",
         "source": "Dämonen-Ansehen 19",
         "desc": "{ANY} während deines Zugs und drehe diese Karte am Ende deines Zugs um.",
         "backDesc": "Drehe diese Karte am Ende deines Zugs um, wenn du ein Monster tötest."
@@ -3304,7 +3304,7 @@ export default {
         "desc": "Füge bei deiner Angriffsfertigkeit einem Angriff {STUN.fh} hinzu."
     },
     "gh2-93": {
-        "name": "Schriftrolle der Wildheit",
+        "name": "Scroll of Ferocity",
         "source": "Zufälliger Gegenstand",
         "desc": "Gewähre während deines Zugs einem Verbündeten in Reichweite {RANGE.fh} 5: {ATTACK.fh} 2"
     },
@@ -3314,12 +3314,12 @@ export default {
         "desc": "Führe während deines Zugs aus: {HEAL.fh} 3, {RANGE.fh} 5"
     },
     "gh2-95": {
-        "name": "Schriftrolle der Abschirmung",
+        "name": "Scroll of Shielding",
         "source": "Zufälliger Gegenstand",
         "desc": "Wenn ein Verbündeter in Reichweite {RANGE.fh} 5 durch einen Angriff {DAMAGE.fh} erleidet, gewähre ihm für den Angriff {SHIELD.fh} 3."
     },
     "gh2-96": {
-        "name": "Schriftrolle der Schnelligkeit",
+        "name": "Scroll of Swiftness",
         "source": "Zufälliger Gegenstand",
         "desc": "Füge bei der Bewegungsfertigkeit eines Verbündeten in Reichweite {RANGE.fh} 5 +1 {MOVE.fh} und {JUMP.fh} hinzu."
     },
@@ -3340,7 +3340,7 @@ export default {
         "desc": "Führe während deines Zugs aus: {ATTACK.fh} 2, {RANGE.fh} 3"
     },
     "gh2-100": {
-        "name": "Aufgeladene Stiefel",
+        "name": "Charged Boots",
         "source": "{SCENARIO 71} (Schatz #29)",
         "desc": "Drehe diese Karte nach deinen nächsten drei Zügen, in denen du keine Bewegungsfertigkeit ausführst, um.",
         "backDesc": "Füge bei deiner Bewegungsfertigkeit +2 {MOVE.fh} hinzu und drehe diese Karte um."
@@ -3356,12 +3356,12 @@ export default {
         "desc": "Wenn du durch einen Angriff {DAMAGE.fh} erleidest, erhalte für den Angriff {SHIELD.fh} 4."
     },
     "gh2-103": {
-        "name": "Kapuze des Waldläufers",
+        "name": "Ranger's Hood",
         "source": "{SCENARIO 28} (Schatz #65)",
         "desc": "Decke bei einer Angriffsfertigkeit eines deiner Beschworenen, bevor Angriffsmodifikatorkarten gezogen werden, die obersten zwei Karten deines Angriffsmodifikator-Decks auf. Du darfst beliebige davon unter dein Deck legen."
     },
     "gh2-104": {
-        "name": "Schutzstab",
+        "name": "Warding Rod",
         "source": "{SCENARIO 4} (Schatz #24)",
         "desc": "Führe während deines Zugs aus: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
     },
@@ -3405,33 +3405,33 @@ export default {
     },
     "gh2-113": {
         "name": "Schwarzkarte",
-        "source": "Persönliches Ziel 15",
+        "source": "Persönliche Quest 15",
         "desc": "Lege während deines Zugs einen Charaktermarker auf einen normalen oder Elite-Gegner in Reichweite {RANGE.fh} 3. Du und alle Verbündeten fügen allen Angriffen gegen diesen Gegner +1 {ATTACK.fh} hinzu. {PERSISTENT}"
     },
     "gh2-114": {
-        "name": "Böenläufer",
+        "name": "Gust Striders",
         "source": "Stadt-Ereignis 17\nStadt-Ereignis 81",
         "desc": "Füge während deines Zugs deiner nächsten Bewegungsfertigkeit {JUMP.fh} hinzu. Ist {WIND} stark oder schwach, füge außerdem +2 {MOVE.fh} hinzu."
     },
     "gh2-115": {
-        "name": "Stab der Übertragung",
+        "name": "Rod of Transference",
         "source": "{SCENARIO 11} (Schatz #35)",
         "desc": "Wenn ein Verbündeter in Reichweite {RANGE.fh} 3 {DAMAGE.fh} erleiden würde, erleidest stattdessen du den {DAMAGE.fh}."
     },
     "gh2-116": {
-        "name": "Verse des Schicksals",
+        "name": "Fated Verses",
         "source": "Wohlstand 1",
         "desc": "Du darfst bei deiner Angriffsfertigkeit für einen Angriff Nachteil erhalten, um diese Karte am Ende deines Zugs umzudrehen.",
         "backDesc": "Ein Verbündeter erhält bei seiner Angriffsfertigkeit für einen seiner Angriffe Vorteil und du drehst diese Karte um.",
         "faq": "Du kannst die Vorderseite nicht verwenden, wenn du für den Angriff bereits Nachteil hast. Die Vorderseite kann bei einem Angriff verwendet werden, den dir ein Verbündeter gewährt, aber die Karte wird erst am Ende deines nächsten Zugs umgedreht."
     },
     "gh2-117": {
-        "name": "Morgenklinge",
+        "name": "Dawnblade",
         "source": "Belohnung von {SCENARIO 99}",
         "desc": "Füge während deines Zugs deinem nächsten Nahkampfangriff +1 {ATTACK.fh} hinzu, wenn {DARK} stark oder schwach ist. Hast du Dämmerbrand mitgebracht, {LIGHT}."
     },
     "gh2-118": {
-        "name": "Dämmerbrand",
+        "name": "Duskbrand",
         "source": "Weg-Ereignis 33",
         "desc": "Füge während deines Zugs deinem nächsten Nahkampfangriff +1 {ATTACK.fh} hinzu, wenn {LIGHT} stark oder schwach ist. Hast du Morgenklinge mitgebracht, {DARK}."
     },
@@ -3451,31 +3451,31 @@ export default {
         "desc": "Führe während deines Zugs aus: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3 Hast du Drakenschuppen-Stiefel und Drakenschuppen-Rüstung mitgebracht, füge +1 {TARGET.fh} hinzu."
     },
     "gh2-122": {
-        "name": "Frostkäfer-Laterne",
+        "name": "Frost Beetle Lantern",
         "desc": "Führe während deines Zugs aus: {ANY_X}: {ICE}"
     },
     "gh2-123": {
-        "name": "Sturmkäfer-Laterne",
+        "name": "Storm Beetle Lantern",
         "source": "Weg-Ereignis 30",
         "desc": "Führe während deines Zugs aus: {ANY_X}: {WIND}"
     },
     "gh2-124": {
-        "name": "Zündkäfer-Laterne",
+        "name": "Ignition Beetle Lantern",
         "source": "Weg-Ereignis 30",
         "desc": "Führe während deines Zugs aus: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
-        "name": "Bebenkäfer-Laterne",
+        "name": "Tremor Beetle Lantern",
         "source": "Weg-Ereignis 30",
         "desc": "Führe während deines Zugs aus: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
-        "name": "Gleißkäfer-Laterne",
+        "name": "Brilliant Beetle Lantern",
         "source": "Weg-Ereignis 30",
         "desc": "Führe während deines Zugs aus: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
-        "name": "Zwielichtkäfer-Laterne",
+        "name": "Twilight Beetle Lantern",
         "source": "Weg-Ereignis 30",
         "desc": "Führe während deines Zugs aus: {ANY_X}: {DARK}"
     },
@@ -3536,17 +3536,17 @@ export default {
         "desc": "Du kannst bei deiner Nahkampf-Angriffsfertigkeit {DAMAGE.fh} 2 erleiden, um allen Angriffen +1 {ATTACK.fh} hinzuzufügen."
     },
     "gh2-139": {
-        "name": "Jenseitiges Zepter",
+        "name": "Otherworldly Scepter",
         "source": "Belohnung von {SCENARIO 94}\nStadt-Ereignis 85",
         "desc": "Wenn du eine Beschwörungsaktion ausführst, erhält jeder durch diese Aktion beschworene Beschworene {WARD.fh}, {INVISIBLE.fh} und {STRENGTHEN.fh}."
     },
     "gh2-140": {
-        "name": "Fernangriffsspinne",
+        "name": "Remote Attack Spider",
         "source": "Stadt-Ereignis 98",
         "desc": "Führe während deines Zugs aus: {POISON.fh}, Alle, {RANGE.fh} 1"
     },
     "gh2-141": {
-        "name": "Fernhilfespinne",
+        "name": "Remote Aid Spider",
         "source": "Stadt-Ereignis 98",
         "desc": "Führe während deines Zugs aus: {HEAL.fh} 2, Alle, {RANGE.fh} 1"
     },
@@ -3557,42 +3557,42 @@ export default {
         "faq": "Du erleidest keinen Schaden durch das von dir erzeugte gefährliche Gelände; es schadet nur Figuren, die es betreten."
     },
     "gh2-143": {
-        "name": "Stiefel der Standfestigkeit",
+        "name": "Boots of Bracing",
         "source": "{SCENARIO 81} (Schatz #61)",
         "desc": "Du kannst bei deiner Fernkampf-Angriffsfertigkeit {IMMOBILIZE.fh} erhalten, um einem Angriff +1 {ATTACK.fh} hinzuzufügen."
     },
     "gh2-144": {
-        "name": "Zeitmatrix",
+        "name": "Temporal Matrix",
         "source": "Belohnung von {SCENARIO 92}",
         "desc": "Lege beim Festlegen der Initiativereihenfolge, nachdem alle Fertigkeitskarten aufgedeckt wurden, die Initiativen der Runde von der höchsten zur niedrigsten statt von der niedrigsten zur höchsten fest."
     },
     "gh2-145": {
-        "name": "Eggenhaken",
+        "name": "Harrow-Hook",
         "desc": "Führe während deines Zugs aus: {MOVE.fh} 2, {JUMP.fh} Diese Bewegung muss angrenzend an ein Hindernis oder eine Wand enden."
     },
     "gh2-146": {
-        "name": "Bernsteinhöhle",
+        "name": "Amberhollow",
         "source": "Weg-Ereignis 15\nWeg-Ereignis 25\nWeg-Ereignis 28\nWeg-Ereignis 30\nWeg-Ereignis 31",
         "desc": "Dieser Gegenstand muss in das Szenario mitgebracht werden und wird am Ende des Szenarios in den Vorrat nicht verfügbarer Gegenstände zurückgelegt. Führe während deines Zugs aus: {STRENGTHEN.fh}, {BLESS.fh}, Selbst"
     },
     "gh2-147": {
-        "name": "Zepter des Xorn",
+        "name": "Scepter of Xorn",
         "source": "Belohnung von {SCENARIO 57}\nBelohnung von {SCENARIO 58}",
         "desc": "Erhalte während deines Zugs, wenn du kein {POISON.fh} hast, {POISON.fh}, um auszuführen: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
     },
     "gh2-148": {
-        "name": "Schild der Gerechten",
+        "name": "Shield of the Righteous",
         "source": "{SCENARIO 65} (Schatz #59)",
         "desc": "Wenn du durch einen Angriff {DAMAGE.fh} erleidest, negiere den {DAMAGE.fh} und lade {LIGHT} auf."
     },
     "gh2-149": {
-        "name": "Aesther-Fernglas",
-        "source": "Persönliches Ziel 04",
+        "name": "Aesther Spyglass",
+        "source": "Persönliche Quest 04",
         "desc": "Dieser Gegenstand darf nur verwendet werden, wenn du an mindestens ein Hindernis angrenzt. Führe während deines Zugs aus: {BLESS.fh}, Selbst"
     },
     "gh2-150": {
-        "name": "Experimentelle Rüstung",
-        "source": "Persönliches Ziel 17",
+        "name": "Experimental Armor",
+        "source": "Persönliche Quest 17",
         "desc": "Dieser Gegenstand kann nicht verkauft werden und muss in jedes Szenario mitgenommen werden. Wenn du durch einen Angriff {DAMAGE.fh} erleidest, darfst du {DAMAGE.fh} 2 erleiden, damit alle angrenzenden Verbündeten und Gegner {DAMAGE.fh} 2 erleiden."
     },
     "gh2-151": {
@@ -3600,12 +3600,12 @@ export default {
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit allen Angriffen {WOUND.fh}, {POISON.fh} hinzu."
     },
     "gh2-152": {
-        "name": "Rubintalisman",
+        "name": "Ruby Talisman",
         "source": "Belohnung von {SCENARIO 75}",
         "desc": "Wenn ein Verbündeter in Reichweite {RANGE.fh} 3 einen negativen Zustand hat, darfst du während deines Zugs {DISARM.fh} erhalten, um einen negativen Zustand von diesem Verbündeten zu entfernen und ihm Schutz, {BLESS.fh} zu geben."
     },
     "gh2-153": {
-        "name": "Hakenschild",
+        "name": "Hooked Shield",
         "source": "Belohnung von Solo-Szenario - {BR2}",
         "desc": "Führe aus, nachdem du einen Gegner weggestoßen hast: {MOVE.fh} 3, {JUMP.fh} Diese Bewegung darf nur Felder betreten, die der weggestoßene Gegner verlassen hat."
     },
@@ -3615,7 +3615,7 @@ export default {
         "desc": "Füge bei deiner Heilfertigkeit einer Heilung, die einen Verbündeten anvisiert, +1 {HEAL.fh} und {STRENGTHEN.fh} hinzu."
     },
     "gh2-155": {
-        "name": "Ätherisches Elixier",
+        "name": "Etheric Elixir",
         "source": "Belohnung von Solo-Szenario - {SW2}",
         "desc": "Entferne, wenn du die obere {LOST.fh}-Aktion von Belebender Äther ausführst, die {NULL_MODIFIER}-Karte für den Rest des Szenarios aus deinem Angriffsmodifikator-Deck."
     },
@@ -3635,7 +3635,7 @@ export default {
         "desc": "Füge allen deinen Angriffen aus deinen {AUGMENT}-Aktionen +1 {ATTACK.fh} hinzu."
     },
     "gh2-159": {
-        "name": "Insignie des Göttlichen",
+        "name": "Insignia of the Divine",
         "source": "Belohnung von Solo-Szenario - {SK2}",
         "desc": "Gewähre während deines Zugs dir selbst oder einem angrenzenden Verbündeten: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
     },
@@ -3650,7 +3650,7 @@ export default {
         "desc": "Wenn einer deiner Beschworenen durch einen Angriff {DAMAGE.fh} erleidet, negiere den {DAMAGE.fh}; dieser Beschworene erhält {INVISIBLE.fh}."
     },
     "gh2-162": {
-        "name": "Liebkosung der Nacht",
+        "name": "The Night's Caress",
         "source": "Belohnung von Solo-Szenario - {NS2}",
         "desc": "Drehe diese Karte um und führe aus, wenn du {INVISIBLE.fh} verlierst: {MUDDLE.fh}, {RANGE.fh} 1",
         "backDesc": "Drehe diese Karte um, wenn du {INVISIBLE.fh} erhältst, und sieh dir die oberste Karte deines Angriffsmodifikator-Decks an. Du darfst diese Karte unter dein Deck legen."
@@ -3681,7 +3681,7 @@ export default {
         "desc": "Führe aus, wenn ein Verbündeter in Reichweite {RANGE.fh} 3 durch einen Angriff {DAMAGE.fh} erleidet, nach der Angriffsfertigkeit: {MOVE.fh} 2 Diese Bewegung muss angrenzend an den angegriffenen Verbündeten enden."
     },
     "gh2-168": {
-        "name": "Elementarweste",
+        "name": "Elemental Vest",
         "source": "Belohnung von Solo-Szenario - {EL2}",
         "desc": "{ANY} am Ende deines Zugs für je zwei Elemente, die du in diesem Zug verbraucht hast."
     },
@@ -3691,7 +3691,7 @@ export default {
         "desc": "{COMMAND} während deines Zugs: {ATTACK.fh} 2"
     },
     "gh2-170": {
-        "name": "Kriechender Panzer",
+        "name": "Crawling Carapace",
         "source": "Belohnung von Solo-Szenario - {BS2}",
         "desc": "Bei der ersten Quelle von {DAMAGE.fh} durch einen Angriff, die du oder einer deiner Beschworenen jede Runde erleiden würdest, erhält die angegriffene Figur für den Angriff {SHIELD.fh} 1."
     }

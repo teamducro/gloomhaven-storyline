@@ -132,7 +132,7 @@ export default {
         "name": "Zufälliges Nebenszenario"
     },
     "gh-45": {
-        "name": "Zufälliger Gegenstandsplanv"
+        "name": "Zufälliger Gegenstandsplan"
     },
     "gh-46": {
         "name": "Erleide 3 Schaden und erhalte {POISON}"
@@ -183,7 +183,7 @@ export default {
         "name": "Erhalte “Mehrzweckdolch” (Gegenstand 040)"
     },
     "gh-62": {
-        "name": "Erhalte “Helm der Berge” (Gegenstand 110) and “Gebirgshammer” (Gegenstand 115)"
+        "name": "Erhalte “Helm der Berge” (Gegenstand 110) und “Gebirgshammer” (Gegenstand 115)"
     },
     "gh-63": {
         "name": "Zufälliger Gegenstandsplan"
@@ -231,7 +231,7 @@ export default {
         "name": "Erhalte “Großer Arzneitrank” (Gegenstand 090)"
     },
     "fc-78": {
-        "name": "Erhalte “Alter Bohrer” (Gegenstand 157)"
+        "name": "Erhalte “Antiker Bogen” (Gegenstand 157)"
     },
     "fc-79": {
         "name": "Erhalte “Falkenfigur” (Gegenstand 035)"
@@ -267,10 +267,10 @@ export default {
         "name": "Erhalte “Ring der Chancen” (Gegenstand 070)"
     },
     "fc-90": {
-        "name": "Lies Abschnitt 75 auf Seite 49"
+        "name": "Je 10 Gold, lest Abschnitt 75 auf Seite 49"
     },
     "fc-91": {
-        "name": "Erhalte 30 und den Gruppenerfolg “Opportunisten” Füge dem Deck Stadt-Ereignis 84 hinzu"
+        "name": "Erhalte 30 Gold und den Gruppenerfolg “Opportunisten”. Füge dem Deck Stadt-Ereignis 84 hinzu"
     },
     "fc-93": {
         "name": "Erhalte “Schrift der Eile” (Gegenstand 159)"
@@ -279,10 +279,10 @@ export default {
         "name": "Erhalte 1 ✓ und füge dem Deck Riss-Ereignis 20 hinzu"
     },
     "fc-95": {
-        "name": "Erhalte 25 Gold und den Gruppenerfolg “Geldschatulle“. Füge dem Deck Stadt-Ereignis 58 hinzu"
+        "name": "Erhalte 25 Gold und den Gruppenerfolg “Geldschatulle“. Füge dem Deck Stadt-Ereignis 85 hinzu"
     },
     "fc-96": {
-        "name": "Du findest einen alten Folianten mit technischen Zeichnungen und Entwürfen für eine Vielzahl von exotischen Maschinen. Eim Einband findest du eine eigentümliche handschriftliche Notiz: {NOTE_115}"
+        "name": "Du findest einen alten Folianten mit technischen Zeichnungen und Entwürfen für eine Vielzahl von exotischen Maschinen. Im Einband findest du eine eigentümliche handschriftliche Notiz: {NOTE_115}"
     },
     "jotl-1": {
         "name": "Erhalte 10 experience"
@@ -294,22 +294,22 @@ export default {
         "name": "Erhalte 15 experience"
     },
     "jotl-4": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-5": {
         "name": "Erhalte 1 ✔"
     },
     "jotl-6": {
-        "name": "Erhalte 10 gold"
+        "name": "Erhalte 10 Gold"
     },
     "jotl-7": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-8": {
-        "name": "Suffer 3 damage, Erhalte {POISON,"
+        "name": "Erleide 3 Schaden, erhalte {POISON,"
     },
     "jotl-9": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-10": {
         "name": "“Schicksalskompass” (Gegenstand 27)"
@@ -318,13 +318,13 @@ export default {
         "name": "“Ring der Eile” (Gegenstand 30)"
     },
     "jotl-12": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-13": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-14": {
-        "name": "Erhalte 3 money tokens"
+        "name": "Erhalte 3 Münzmarker"
     },
     "jotl-15": {
         "name": "Erhalte 1 ✔"
@@ -336,19 +336,19 @@ export default {
         "name": "“Ring der Erholung” (Gegenstand 32)"
     },
     "cs-1": {
-        "name": "“Drakenblut” (Gegenstand 59)"
+        "name": "“Drake's Blood” (Gegenstand 59)"
     },
     "cs-2": {
-        "name": "“Kugel des Glücks” (Gegenstand 09)"
+        "name": "“Orb of Fortune” (Gegenstand 09)"
     },
     "cs-3": {
-        "name": "“Kettenmorgenstern” (Gegenstand 14)"
+        "name": "“Chain Mace” (Gegenstand 14)"
     },
     "cs-4": {
         "name": "Erhalte 15 Gold und erhalte eine verlorene Karte zurück"
     },
     "cs-5": {
-        "name": "“Druckwellenmine” (Gegenstand 31)"
+        "name": "“Concussion Mine” (Gegenstand 31)"
     },
     "cs-6": {
         "name": "Erhalte 20 Gold und entschärfe alle angrenzenden Fallen"
@@ -357,37 +357,37 @@ export default {
         "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-8": {
-        "name": "“Schwindelerregende Tinktur” (Gegenstand 58)"
+        "name": "“Dizzying Tincture” (Gegenstand 58)"
     },
     "cs-9": {
-        "name": "“Kugel des Glücks” (Gegenstand 9)"
+        "name": "“Orb of Fortune” (Gegenstand 9)"
     },
     "cs-10": {
         "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-11": {
-        "name": "“Schwindelerregende Tinktur” (Gegenstand 58)"
+        "name": "“Dizzying Tincture” (Gegenstand 58)"
     },
     "cs-12": {
-        "name": "“Manamedizin” (Gegenstand 60)"
+        "name": "“Mana Medicine” (Gegenstand 60)"
     },
     "cs-13": {
-        "name": "“Kugel der Verzweiflung” (Gegenstand 10)"
+        "name": "“Orb of Despair” (Gegenstand 10)"
     },
     "cs-14": {
-        "name": "“Stahlhelm” (Gegenstand 22)"
+        "name": "“Steel Helmet” (Gegenstand 22)"
     },
     "cs-15": {
-        "name": "“Wandernder Kompass” (Gegenstand 32)"
+        "name": "“Shifting Compass” (Gegenstand 32)"
     },
     "cs-16": {
         "name": "Führe “Heilung 6, selbst” aus und erhalte {POISON}"
     },
     "cs-17": {
-        "name": "“Druckwellenmine” (Gegenstand 31)"
+        "name": "“Concussion Mine” (Gegenstand 31)"
     },
     "cs-18": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "“Boneclad Shawl” (Gegenstand 25)"
     },
     "cs-19": {
         "name": "Erhalte ✓ und erzeuge ein beliebiges Element"
@@ -396,40 +396,40 @@ export default {
         "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-21": {
-        "name": "“Stahlhelm” (Gegenstand 22)"
+        "name": "“Steel Helmet” (Gegenstand 22)"
     },
     "cs-22": {
-        "name": "“Stiefel der Beständigkeit” (Gegenstand 19)"
+        "name": "“Boots of Perpetuity” (Gegenstand 19)"
     },
     "cs-23": {
-        "name": "“Trophäenhelm” (Gegenstand 12)"
+        "name": "“Trophy Helmet” (Gegenstand 12)"
     },
     "cs-24": {
         "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-25": {
-        "name": "“Auszehrende Beinschienen” (Gegenstand 15)"
+        "name": "“Draining Greaves” (Gegenstand 15)"
     },
     "cs-26": {
-        "name": "“Eisenschlinge” (Gegenstand 30)"
+        "name": "“Iron Snare” (Gegenstand 30)"
     },
     "cs-27": {
-        "name": "“Geflochtene Plattenrüstung” (Gegenstand 23)"
+        "name": "“Woven Plate Armor” (Gegenstand 23)"
     },
     "cs-28": {
-        "name": "“Kettenmorgenstern” (Gegenstand 14)"
+        "name": "“Chain Mace” (Gegenstand 14)"
     },
     "cs-29": {
-        "name": "“Geflochtene Plattenrüstung” (Gegenstand 23)"
+        "name": "“Woven Plate Armor” (Gegenstand 23)"
     },
     "cs-30": {
-        "name": "“Knochenbesetztes Schultertuch” (Gegenstand 25)"
+        "name": "“Boneclad Shawl” (Gegenstand 25)"
     },
     "cs-31": {
-        "name": "“Drakenblut” (Gegenstand 59)"
+        "name": "“Drake's Blood” (Gegenstand 59)"
     },
     "cs-32": {
-        "name": "“Seltsamer Anhänger” (Gegenstand 20)"
+        "name": "“Curious Pendant” (Gegenstand 20)"
     },
     "cs-33": {
         "name": "25 Gold, erhalte {POISON}"
@@ -438,40 +438,40 @@ export default {
         "name": "Erleide Schaden durch gefährliches Gelände, erhalte {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Fluchblutklinge” (Gegenstand 36)"
+        "name": "“Curseblood Blade” (Gegenstand 36)"
     },
     "cs-36": {
         "name": "10 Erfahrung, erhalte {INVSIBLE}"
     },
     "cs-37": {
-        "name": "“Auszehrende Beinschienen” (Gegenstand 15)"
+        "name": "“Draining Greaves” (Gegenstand 15)"
     },
     "cs-38": {
-        "name": "“Kriegspickel” (Gegenstand 13)"
+        "name": "“War Pick” (Gegenstand 13)"
     },
     "cs-39": {
-        "name": "“Infrarotbrille” (Gegenstand 21)"
+        "name": "“Infrared Goggles” (Gegenstand 21)"
     },
     "cs-40": {
         "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-41": {
-        "name": "“Aschestahl-Panzerhandschuhe” (Gegenstand 61)"
+        "name": "“Ashsteel Gauntlets” (Gegenstand 61)"
     },
     "cs-42": {
-        "name": "“Kriegspickel” (Gegenstand 13)"
+        "name": "“War Pick” (Gegenstand 13)"
     },
     "cs-43": {
         "name": "10 Erfahrung und erneuere alle verbrauchten Gegenstände"
     },
     "cs-44": {
-        "name": "“Manamedizin” (Gegenstand 60)"
+        "name": "“Mana Medicine” (Gegenstand 60)"
     },
     "cs-45": {
         "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-46": {
-        "name": "“Vipernzahndolch”-Plan (Gegenstand 54)"
+        "name": "“Vipertooth Dagger”-Plan (Gegenstand 54)"
     },
     "cs-47": {
         "name": "15 Gold"
@@ -483,7 +483,7 @@ export default {
         "name": "“Lavalatschen” (Gegenstand gh-99)"
     },
     "cs-50": {
-        "name": "“Eingefangenes Mondlicht” (Gegenstand 18)"
+        "name": "“Bottled Moonlight” (Gegenstand 18)"
     },
     "fh-1": {
         "name": "Erhalte vier Beutekarten."
@@ -810,7 +810,7 @@ export default {
         "name": "Erhalte 15 Gold"
     },
     "gh2-24": {
-        "name": "Erhalte “Schutzstab” (Gegenstand 104)"
+        "name": "Erhalte “Warding Rod” (Gegenstand 104)"
     },
     "gh2-25": {
         "name": "Erhalte 1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "Erhalte 2 ✔"
     },
     "gh2-29": {
-        "name": "Erhalte “Aufgeladene Stiefel” (Gegenstand 100)"
+        "name": "Erhalte “Charged Boots” (Gegenstand 100)"
     },
     "gh2-30": {
         "name": "Erhalte 20 Erfahrung"
@@ -843,7 +843,7 @@ export default {
         "name": "Erhalte “Drakenhelm” (Gegenstand 121)"
     },
     "gh2-35": {
-        "name": "Erhalte “Stab der Übertragung” (Gegenstand 115)"
+        "name": "Erhalte “Rod of Transference” (Gegenstand 115)"
     },
     "gh2-36": {
         "name": "Zufälliger Gegenstandsplan"
@@ -915,13 +915,13 @@ export default {
         "name": "Erhalte 20 Gold"
     },
     "gh2-59": {
-        "name": "Erhalte “Schild der Gerechten” (Gegenstand 148)"
+        "name": "Erhalte “Shield of the Righteous” (Gegenstand 148)"
     },
     "gh2-60": {
         "name": "Erleide 5 Schaden"
     },
     "gh2-61": {
-        "name": "Erhalte “Stiefel der Standfestigkeit” (Gegenstand 143)"
+        "name": "Erhalte “Boots of Bracing” (Gegenstand 143)"
     },
     "gh2-62": {
         "name": "Erhalte 20 Gold"
@@ -933,7 +933,7 @@ export default {
         "name": "Zufälliger Gegenstandsplan"
     },
     "gh2-65": {
-        "name": "Erhalte “Kapuze des Waldläufers” (Gegenstand 103)"
+        "name": "Erhalte “Ranger's Hood” (Gegenstand 103)"
     },
     "gh2-66": {
         "name": "Erhalte {POISON} und {STRENGTHEN} und erhalte 2 verlorene Karten zurück"

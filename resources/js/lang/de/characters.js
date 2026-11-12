@@ -11,8 +11,8 @@ export default {
             "Füge eine {AGAIN} {STUN} Karte hinzu",
             "Füge eine {AGAIN} {DISARM} Karte und eine {AGAIN} {MUDDLE} Karte hinzu",
             "Füge eine {AGAIN} “{TARGET} hinzufügen” Karte hinzu",
-            "Füge eine {+1_WHITE} {SHIELD}1, selbst Karte hinzu",
-            "Ignoriere negative Gegenstandeffekte und füge eine {+1_WHITE} Karte hinzu"
+            "Füge eine {+1_WHITE} {SHIELD}1, Selbst Karte hinzu",
+            "Ignoriere negative Gegenstandseffekte und füge eine {+1_WHITE} Karte hinzu"
         ]
     },
     "CH": {
@@ -34,7 +34,7 @@ export default {
         "name": "Spruchweberin",
         "perks": [
             "Entferne vier {+0_WHITE} Karten",
-            "Ersetze eine {-1_WHITE} Karte mit einer {+1_WHITE} Karte",
+            "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
             "Füge zwei {+1_WHITE} Karten hinzu",
             "Füge eine {+0_WHITE} {STUN} Karte hinzu",
             "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
@@ -50,11 +50,11 @@ export default {
         "name": "Tüftler",
         "perks": [
             "Entferne zwei {-1_WHITE} Karten",
-            "Ersetze eine {-2_WHITE} Karte mit einer {+0_WHITE} Karte",
+            "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
             "Füge zwei {+1_WHITE} Karten hinzu",
             "Füge eine {+3_WHITE} Karte hinzu",
             "Füge zwei {AGAIN} {FIRE} Karten hinzu",
-            "Add three {AGAIN} {MUDDLE} Karten hinzu",
+            "Füge drei {AGAIN} {MUDDLE} Karten hinzu",
             "Füge eine {+1_WHITE} {WOUND} Karte hinzu",
             "Füge eine {+1_WHITE} {IMMOBILIZE} Karte hinzu",
             "Füge eine {+1_WHITE} {HEAL}2 Karte hinzu",
@@ -67,9 +67,9 @@ export default {
         "perks": [
             "Entferne zwei {-1_WHITE} Karten",
             "Entferne vier {+0_WHITE} Karten",
-            "Ersetze eine {-2_WHITE} Karte mit einer {+0_WHITE} Karte",
-            "Ersetze eine {-1_WHITE} Karte mit einer {+1_WHITE} Karte",
-            "Ersetze eine {+0_WHITE} Karte mit einer {+2_WHITE} Karte",
+            "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
+            "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
+            "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
             "Füge zwei {AGAIN} {+1_WHITE} Karten hinzu",
             "Füge zwei {AGAIN} {PIERCE}3 Karten hinzu",
             "Füge zwei {AGAIN} {POISON} Karten hinzu",
@@ -170,7 +170,7 @@ export default {
             "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
             "Füge zwei {AGAIN} {STUN} Karten hinzu",
             "Füge zwei {AGAIN} {LIGHT} Karten hinzu",
-            "Füge zwei {AGAIN} {SHIELD}1, selbst Karten hinzu",
+            "Füge zwei {AGAIN} {SHIELD}1, Selbst Karten hinzu",
             "Ignoriere negative Gegenstandseffekte und füge zwei {+1_WHITE} Karten hinzu",
             "Ignoriere negative Szenarioeffekte"
         ]
@@ -275,7 +275,7 @@ export default {
             "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} {DARK} Karte",
             "Füge eine {+2_WHITE} {MUDDLE} Karte",
             "Füge zwei {AGAIN} {HEAL}1 Karten hinzu",
-            "Ignoriere negative Gegenstandeffekte und füge eine {+1_WHITE} Karte hinzu",
+            "Ignoriere negative Gegenstandseffekte und füge eine {+1_WHITE} Karte hinzu",
             "Ignoriere negative Szenarioeffekte und füge eine {+1_WHITE} Karte hinzu"
         ]
     },
@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "Bernsteinschild",
+        "name": "Amber Aegis",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} “Platziere einen beliebigen {COLONY} {COLONY_ICON} Marker auf einem leeren Feld in {RANGE}2” Karte",
             "Entferne zwei {-1_WHITE} Karten",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artefaktschmied",
+        "name": "Artificer",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} {ANY} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {DISARM} Karte",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombardier",
+        "name": "Bombard",
         "perks": [
             "Entferne zwei {-1_WHITE} Karten",
             "Ersetze zwei {+0_WHITE} Karten durch zwei {AGAIN} {PIERCE}3 Karten",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Funkenlicht",
+        "name": "Brightspark",
         "perks": [
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{ANY_X}, um +2 {ATTACK} hinzuzufügen” Karte",
             "Ersetze eine {-2_WHITE} Karte durch eine {-2_WHITE} “{RECOVER} eine zufällige Karte von deinem Abwurfstapel” Karte",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Kettenwächter",
+        "name": "Chainguard",
         "perks": [
             "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} “{SHACKLE} {CG_CIRCLE}” Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{+2_WHITE}, wenn das Ziel {SHACKLED} {CG_CIRCLE} ist” Karte",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Häuptling",
+        "name": "Chieftain",
         "perks": [
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {POISON} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{HEAL}1, {CT_CIRCLE}” Karte",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Feuerritter",
+        "name": "Fire Knight",
         "perks": [
             "Entferne zwei {-1_WHITE} Karten",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{STRENGTHEN} (Ally)” Karte",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "Hohlpakt",
+        "name": "Hollowpact",
         "perks": [
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{HEAL}2, Selbst” Karte",
             "Ersetze zwei {+0_WHITE} Karten durch eine {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}” Karten",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Lichtbringer",
+        "name": "Luminary",
         "perks": [
             "Entferne vier {+0_WHITE} Karten",
             "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "Sumpffuß",
+        "name": "Mirefoot",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "Ruinenschlund",
+        "name": "Ruinmaw",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} {RUPTURE} und {WOUND} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {WOUND} Karte",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "Geisterrufer",
+        "name": "Spirit Caller",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} Karte und eine {+1_WHITE} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{+2_WHITE}, wenn ein {SPIRIT} {SP_CIRCLE} den Angriff ausgeführt hat” Karte",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Sternenschleuderer",
+        "name": "Starslinger",
         "perks": [
             "Ersetze zwei {+0_WHITE} Karten durch eine {AGAIN} “{HEAL}1, Selbst” Karte",
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} {DISARM} Karte und eine {-1_WHITE} “{INVISIBLE}, Selbst” Karte",
@@ -1267,7 +1267,7 @@ export default {
             "Füge zwei {+1_WHITE} “Füge +1 {ATTACK.fh} hinzu, wenn ein Verbündeter ein aktives Rezept hat” Karten hinzu",
             "Füge eine {AGAIN} “{HEAL.fh}3, {RANGE.fh}1” Karte hinzu",
             "Füge allen Heilfertigkeiten auf Fertigkeitskarten „Medizinpaket“ +1 {HEAL.fh} hinzu",
-            "In jeder Stadtphase nach einem abgeschlossenen Szenario ist deine Spende oder die eines Verbündeten an das Heiligtum der Großen Eiche kostenlos",
+            "In jeder Stadtphase nach einem abgeschlossenen Szenario ist deine Spende oder die eines Verbündeten an den Tempel der Großen Eiche kostenlos",
             "Erhalte am Ende jeder deiner Rasten, wenn ein Verbündeter ein aktives Rezept hat, eine Fertigkeitskarte „Medizinpaket“ und bewege den Marker auf dem aktiven Rezept eines Verbündeten um ein Feld zurück"
         ]
     },
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Seelenfessel",
+        "name": "Soultether",
         "masteries": [
             "Führe vor deiner ersten Rast 3 verschiedene Beschwörungsaktionen aus und lass diese Karten während des gesamten Szenarios in deinem aktiven Bereich",
             "Führe in den ersten Runden von 6 Szenarien 6 verschiedene Beschwörungsfertigkeiten von deinen Fertigkeitskarten aus"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "Wildzorn",
+        "name": "Wildfury",
         "masteries": [
             "Reichere in einem Szenario in jedem deiner Züge {WIND} oder {EARTH} an oder verbrauche es",
             "Töte in einem Szenario 4 oder mehr Gegner mit {COMMAND} Angriffen mit einem Wert von 7 oder mehr (nach allen Boni, vor Angriffsmodifikatoren)"
