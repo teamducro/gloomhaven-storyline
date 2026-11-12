@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "파멸사냥꾼",
+        "name": "Doomstalker",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{+0_WHITE} 카드 2장을 {+1_WHITE} 카드 2장으로 교체",
@@ -111,7 +111,7 @@ export default {
         ]
     },
     "EL": {
-        "name": "원소술사",
+        "name": "Elementalist",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{-1_WHITE} 카드 1장을 {+1_WHITE} 카드 1장으로 교체",
@@ -143,7 +143,7 @@ export default {
         ]
     },
     "SS": {
-        "name": "위무음악가",
+        "name": "Soothsinger",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{-2_WHITE} 카드 1장 제거",
@@ -160,7 +160,7 @@ export default {
         ]
     },
     "SK": {
-        "name": "태양지기",
+        "name": "Sunkeeper",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{+0_WHITE} 카드 4장 제거",
@@ -176,7 +176,7 @@ export default {
         ]
     },
     "NS": {
-        "name": "어둠장막",
+        "name": "Nightshroud",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{+0_WHITE} 카드 4장 제거",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "역병전령",
+        "name": "Plagueherald",
         "perks": [
             "{-2_WHITE} 카드 1장을 {+0_WHITE} 카드 1장으로 교체",
             "{-1_WHITE} 카드 1장을 {+1_WHITE} 카드 1장으로 교체",
@@ -251,7 +251,7 @@ export default {
         ]
     },
     "BT": {
-        "name": "야수군주",
+        "name": "Beast Tyrant",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{-1_WHITE} 카드 1장을 {+1_WHITE} 카드 1장으로 교체",
@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "블레이드스웜",
+        "name": "Bladeswarm",
         "perks": [
             "{-2_WHITE} 카드 1장을 {+0_WHITE} 카드 1장으로 교체",
             "{-1_WHITE} 카드 1장을 {+0_WHITE} {WOUND} 카드 1장으로 교체",
@@ -720,7 +720,7 @@ export default {
         ]
     },
     "PY": {
-        "name": "용암분쇄자",
+        "name": "Pyroclast",
         "masteries": [
             "매 라운드 장애물 또는 위험지형 타일을 하나 이상 생성 또는 파괴",
             "한 차례에 자신이 만든 위험 지형 6곳의 서로 다른 칸을 통과하도록 적을 이동"
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "산산조곡",
+        "name": "Shattersong",
         "masteries": [
             "매 차례 종료 시 {RESONANCE_ICON}을 얻기 직전에 항상 {RESONANCE_ICON} 0개 보유",
             "서로 다른 {WAVE} 능력 5개에서 각각 {RESONANCE_ICON} 5개 사용"
@@ -761,7 +761,7 @@ export default {
         ]
     },
     "TA": {
-        "name": "덫 사냥꾼",
+        "name": "Trapper",
         "masteries": [
             "지도 위에 수치가 20 이상인 {HEAL.fh} 함정 1개 보유",
             "하나의 능력으로, 함정 7개 이상을 통과하도록 적들을 이동"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "고통전달자",
+        "name": "Pain Conduit",
         "masteries": [
             "한 라운드에 다른 개체에게 총 {DAMAGE.fh}40 이상을 입힘",
             "{WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh}, {MUDDLE.fh} 상태로 차례 시작"
@@ -839,7 +839,7 @@ export default {
         ]
     },
     "HV": {
-        "name": "모방군집",
+        "name": "HIVE",
         "masteries": [
             "매 라운드 {TRANSFER_ICON}",
             "한 라운드에 서로 다른 소환물 4개로 {TRANSFER_ICON}"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "금속 모자이크",
+        "name": "Metal Mosaic",
         "masteries": [
             "절대로 공격하지 않음",
             "4라운드 연속으로, 압력 게이지를 해당 라운드 시작 시 위치에서 3단계 올리거나 내림 ({PRESSURE_LOW_ICON}에서 {PRESSURE_HIGH_ICON}로, 또는 그 반대)"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "심연 망령",
+        "name": "Deepwraith",
         "masteries": [
             "자신의 모든 공격을 이익을 받고 수행",
             "매 라운드 {DARK} 주입"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "파쇄조류",
+        "name": "Crashing Tide",
         "masteries": [
             "공격으로 피해를 전혀 입지 않고, 다섯 번 이상 공격의 대상이 됨",
             "각 휴식이 시작될 때, 활성 {TIDE_ICON}이 버린 카드 더미의 카드 수보다 많도록 함"

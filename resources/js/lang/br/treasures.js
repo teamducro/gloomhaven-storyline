@@ -3,10 +3,10 @@ export default {
         "name": "Tipo de Item Aleatório"
     },
     "gh-2": {
-        "name": "Ganhe o “Escudo Torre” (Item 032)"
+        "name": "Ganhe o “Tower Shield” (Item 032)"
     },
     "gh-3": {
-        "name": "Ganhe a “Armadura de Talas” (Item 044)"
+        "name": "Ganhe a “Splintmail” (Item 044)"
     },
     "gh-4": {
         "name": "Ganhe 15 moedas de ouro"
@@ -15,7 +15,7 @@ export default {
         "name": "Ganhe a “Cota de Malha” (Item 023)"
     },
     "gh-6": {
-        "name": "Ganhe a “Corrente com Gancho” (Item 039)"
+        "name": "Ganhe a “Hooked Chain” (Item 039)"
     },
     "gh-7": {
         "name": "Cenário Secundário Aleatório"
@@ -33,7 +33,7 @@ export default {
         "name": "Tipo de Item Aleatório"
     },
     "gh-12": {
-        "name": "Ganhe os “Waders de Magma” (Item 099)"
+        "name": "Ganhe os “Magma Waders” (Item 099)"
     },
     "gh-13": {
         "name": "Sofra 5 de dano, receba {POISON} e {WOUND}"
@@ -66,7 +66,7 @@ export default {
         "name": "Tipo de Item Aleatório"
     },
     "gh-23": {
-        "name": "Ganhe a “Armadura de Escamas de Dragão” (Item 103)"
+        "name": "Ganhe a “Drakescale Armor” (Item 103)"
     },
     "gh-24": {
         "name": "Sofra 5 de dano"
@@ -78,7 +78,7 @@ export default {
         "name": "Ganhe 20 moedas de ouro"
     },
     "gh-27": {
-        "name": "Ganhe o “Orbe do Crepúsculo” (Item 122)"
+        "name": "Ganhe o “Orb of Twilight” (Item 122)"
     },
     "gh-28": {
         "name": "Ganhe 15 moedas de ouro"
@@ -96,13 +96,13 @@ export default {
         "name": "Tipo de Item Aleatório"
     },
     "gh-33": {
-        "name": "Ganhe a “Rede Pesada” (Item 019)"
+        "name": "Ganhe a “Weighted Net” (Item 019)"
     },
     "gh-34": {
-        "name": "Ganhe o “Amuleto da Vida” (Item 024)"
+        "name": "Ganhe o “Amulet of Life” (Item 024)"
     },
     "gh-35": {
-        "name": "Ganhe as “Botas de Escamas de Dragão” (Item 098)"
+        "name": "Ganhe as “Drakescale Boots” (Item 098)"
     },
     "gh-36": {
         "name": "Tipo “Botas Propulsoras” (Item 096)"
@@ -138,7 +138,7 @@ export default {
         "name": "Sofra 3 de dano, receba {POISON}"
     },
     "gh-47": {
-        "name": "Ganhe a “Armadura a Vapor” (Item 104)"
+        "name": "Ganhe a “Steam Armor” (Item 104)"
     },
     "gh-48": {
         "name": "Ganhe 30 de ouro"
@@ -147,31 +147,31 @@ export default {
         "name": "Novo cenário: {SCENARIO 17}"
     },
     "gh-50": {
-        "name": "Ganhe a “Segunda Pele” (Item 101)"
+        "name": "Ganhe a “Second Skin” (Item 101)"
     },
     "gh-51": {
         "name": "Cenário Secundário Aleatório"
     },
     "gh-52": {
-        "name": "Ganhe o “Coração do Traidor” (Item 131)"
+        "name": "Ganhe o “Heart of the Betrayer” (Item 131)"
     },
     "gh-53": {
         "name": "Tipo de Item Aleatório"
     },
     "gh-54": {
-        "name": "Ganhe a “Bússola Condenada” (Item 124)"
+        "name": "Ganhe a “Doomed Compass” (Item 124)"
     },
     "gh-55": {
         "name": "Ganhe 1 ✔"
     },
     "gh-56": {
-        "name": "Ganhe o “Brinco da Estrela” (Item 069)"
+        "name": "Ganhe o “Star Earring” (Item 069)"
     },
     "gh-57": {
         "name": "Ganhe 15 moedas de ouro"
     },
     "gh-58": {
-        "name": "Ganhe o “Elmo de Escamas de Dragão” (Item 108)"
+        "name": "Ganhe o “Drakescale Helm” (Item 108)"
     },
     "gh-59": {
         "name": "Tipo de Item Aleatório"
@@ -183,7 +183,7 @@ export default {
         "name": "Ganhe o “Punhal Versátil” (Item 040)"
     },
     "gh-62": {
-        "name": "Ganhe o “Elmo da Montanha” (Item 110) e “Martelo Montanhoso” (Item 115)"
+        "name": "Ganhe o “Helm of the Mountain” (Item 110) e “Martelo Montanhoso” (Item 115)"
     },
     "gh-63": {
         "name": "Tipo de Item Aleatório"
@@ -192,10 +192,10 @@ export default {
         "name": "Ganhe 30 moedas de ouro"
     },
     "gh-65": {
-        "name": "Tipo “Elmo Chifrudo” (Item 107)"
+        "name": "Tipo “Horned Helm” (Item 107)"
     },
     "gh-66": {
-        "name": "Ganhe a “Bomba Volátil” (Item 033)"
+        "name": "Ganhe a “Volatile Bomb” (Item 033)"
     },
     "gh-67": {
         "name": "Ganhe 10 moedas de ouro"
@@ -228,25 +228,25 @@ export default {
         "name": "Sofra 3 de dano, receba {WOUND} e 10 moedas de ouro"
     },
     "fc-77": {
-        "name": "Ganhe “Poção de Cura de Condição Maior” (Item 090)"
+        "name": "Ganhe “Major Cure Potion” (Item 090)"
     },
     "fc-78": {
-        "name": "“Arco Antigo” (Item 157)"
+        "name": "“Ancient Bow” (Item 157)"
     },
     "fc-79": {
-        "name": "Ganhe “Estatueta de Falcão” (Item 157)"
+        "name": "Ganhe “Falcon Figurine” (Item 157)"
     },
     "fc-80": {
         "name": "Ganhe 1 ✓ and add Rift Event 19 ao baralho"
     },
     "fc-81": {
-        "name": "Ganhe “Pergaminho da Pressa” (Item 159) and 10 gold"
+        "name": "Ganhe “Scroll of Haste” (Item 159) and 10 gold"
     },
     "fc-82": {
         "name": "“Grevas do Rejuvenescimento” (Item 158)"
     },
     "fc-83": {
-        "name": "Ganhe “Poção de Força Maior” (Item 041)"
+        "name": "Ganhe “Major Power Potion” (Item 041)"
     },
     "fc-84": {
         "name": "Ganhe “Mask of Terrors” (Item 066)"
@@ -255,7 +255,7 @@ export default {
         "name": "Sofra 3 de dano, receba {POISON} e 10 moedas de ouro"
     },
     "fc-86": {
-        "name": "Desbloqueie o cenário solo da Vidente {DR}, “Previsão do Inevitável” (veja a página 25 do livro principal)"
+        "name": "Desbloqueie o cenário solo da Vidente {DR}, “Forecast of the Inevitable” (veja a página 25 do livro principal)"
     },
     "fc-87": {
         "name": "Sofra 2 de dano, receba CURSE e 15 moedas de ouro"
@@ -264,7 +264,7 @@ export default {
         "name": "Ganhe 1 ✓"
     },
     "fc-89": {
-        "name": "Ganhe “Anel da Segunda Chance” (Item 070)"
+        "name": "Ganhe “Second Chance Ring” (Item 070)"
     },
     "fc-90": {
         "name": "10 moedas de ouro para cada personagem, Read section 75 on page 49"
@@ -273,7 +273,7 @@ export default {
         "name": "Ganhe 30 gold and Party Achievement: “Opportunists” Adicionem o Evento de Cidade 84 ao baralho"
     },
     "fc-93": {
-        "name": "“Pergaminho da Pressa” (Item 159)"
+        "name": "“Scroll of Haste” (Item 159)"
     },
     "fc-94": {
         "name": "Ganhe 1 ✓ and add Rift Event 20 ao baralho"
@@ -288,7 +288,7 @@ export default {
         "name": "Ganhe 10 experience"
     },
     "jotl-2": {
-        "name": "“Anel da Força” (Item 31)"
+        "name": "“Ring of Strength” (Item 31)"
     },
     "jotl-3": {
         "name": "Ganhe 15 experience"
@@ -312,10 +312,10 @@ export default {
         "name": "Ganhe 5 gold"
     },
     "jotl-10": {
-        "name": "“Bússola do Destino” (Item 27)"
+        "name": "“Fateful Compass” (Item 27)"
     },
     "jotl-11": {
-        "name": "“Anel da Pressa” (Item 30)"
+        "name": "“Ring of Haste” (Item 30)"
     },
     "jotl-12": {
         "name": "Ganhe 5 gold"
@@ -330,10 +330,10 @@ export default {
         "name": "Ganhe 1 ✔"
     },
     "jotl-16": {
-        "name": "“Poção de Mana” (Item 14)"
+        "name": "“Mana Potion” (Item 14)"
     },
     "jotl-X": {
-        "name": "“Anel da Restauração” (Item 32)"
+        "name": "“Ring of Restoration” (Item 32)"
     },
     "cs-1": {
         "name": "“Drakes Blood” (Item 59)"
@@ -480,7 +480,7 @@ export default {
         "name": "15 moedas de ouro"
     },
     "cs-49": {
-        "name": "“Waders de Magma” (Item gh-99)"
+        "name": "“Magma Waders” (Item gh-99)"
     },
     "cs-50": {
         "name": "“Bottled Moonlight” (Item 18)"
@@ -741,25 +741,25 @@ export default {
         "name": "Ganhe 10 moedas."
     },
     "gh2-1": {
-        "name": "Ganhe os “Waders de Magma” (Item 142)"
+        "name": "Ganhe os “Magma Waders” (Item 142)"
     },
     "gh2-2": {
         "name": "Sofra 3 de dano e receba {POISON}"
     },
     "gh2-3": {
-        "name": "Ganhe o “Brinco da Estrela” (Item 63)"
+        "name": "Ganhe o “Star Earring” (Item 63)"
     },
     "gh2-4": {
-        "name": "Ganhe o “Manto do Deslocamento” (Item 98)"
+        "name": "Ganhe o “Cloak of Phasing” (Item 98)"
     },
     "gh2-5": {
-        "name": "Ganhe o “Pingente dos Pactos Sombrios” (Item 128)"
+        "name": "Ganhe o “Pendant of Dark Pacts” (Item 128)"
     },
     "gh2-6": {
         "name": "Cenário Secundário Aleatório"
     },
     "gh2-7": {
-        "name": "Ganhe o “Capuz do Ladrão” (Item 108)"
+        "name": "Ganhe o “Thief's Hood” (Item 108)"
     },
     "gh2-8": {
         "name": "Sofra 3 de dano e receba {CURSE}"
@@ -792,10 +792,10 @@ export default {
         "name": "Ganhe 15 moedas de ouro"
     },
     "gh2-18": {
-        "name": "Ganhe os “Explosivos Instáveis” (Item 99)"
+        "name": "Ganhe os “Unstable Explosives” (Item 99)"
     },
     "gh2-19": {
-        "name": "Ganhe as “Botas de Escamas de Dragão” (Item 119)"
+        "name": "Ganhe as “Drakescale Boots” (Item 119)"
     },
     "gh2-20": {
         "name": "Ganhe 25 moedas de ouro"
@@ -804,7 +804,7 @@ export default {
         "name": "Ganhe 2 ✔"
     },
     "gh2-22": {
-        "name": "Ganhe o “Elmo da Montanha” (Item 129) e o “Martelo da Montanha” (Item 130)"
+        "name": "Ganhe o “Helm of the Mountain” (Item 129) e o “Mountain Hammer” (Item 130)"
     },
     "gh2-23": {
         "name": "Ganhe 15 moedas de ouro"
@@ -831,7 +831,7 @@ export default {
         "name": "Ganhe 20 de experiência"
     },
     "gh2-31": {
-        "name": "Ganhe a “Crista da Onda” (Item 131)"
+        "name": "Ganhe a “Wave Crest” (Item 131)"
     },
     "gh2-32": {
         "name": "Cenário Secundário Aleatório"
@@ -840,7 +840,7 @@ export default {
         "name": "Ganhe a “Poção de Cura de Condição” (Item 101)"
     },
     "gh2-34": {
-        "name": "Ganhe o “Elmo de Escamas de Dragão” (Item 121)"
+        "name": "Ganhe o “Drakescale Helm” (Item 121)"
     },
     "gh2-35": {
         "name": "Ganhe o “Rod of Transference” (Item 115)"
@@ -849,7 +849,7 @@ export default {
         "name": "Tipo de Item Aleatório"
     },
     "gh2-37": {
-        "name": "Ganhe os “Sapatos da Felicidade” (Item 97)"
+        "name": "Ganhe os “Shoes of Happiness” (Item 97)"
     },
     "gh2-38": {
         "name": "Ganhe 1 ✔"
@@ -858,7 +858,7 @@ export default {
         "name": "Ganhe 20 de experiência"
     },
     "gh2-40": {
-        "name": "Ganhe a “Cimitarra Energizada” (Item 110)"
+        "name": "Ganhe a “Fueled Falchion” (Item 110)"
     },
     "gh2-41": {
         "name": "Ganhe 15 moedas de ouro"
@@ -888,7 +888,7 @@ export default {
         "name": "Ganhe 15 de experiência"
     },
     "gh2-50": {
-        "name": "Ganhe a “Armadura a Vapor” (Item 106)"
+        "name": "Ganhe a “Steam Armor” (Item 106)"
     },
     "gh2-51": {
         "name": "Ganhe 15 de experiência"
@@ -900,7 +900,7 @@ export default {
         "name": "Ganhe 1 ✔"
     },
     "gh2-54": {
-        "name": "Ganhe 15 moedas de ouro e o “Anel de Aço” (Item 102)"
+        "name": "Ganhe 15 moedas de ouro e o “Steel Ring” (Item 102)"
     },
     "gh2-55": {
         "name": "Ganhe 20 de experiência"
@@ -939,7 +939,7 @@ export default {
         "name": "Receba {POISON} e {STRENGTHEN} e Recupere 2 cartas perdidas"
     },
     "gh2-67": {
-        "name": "Ganhe a “Bússola Condenada” (Item 132)"
+        "name": "Ganhe a “Doomed Compass” (Item 132)"
     },
     "gh2-68": {
         "name": "Tipo de Item Aleatório"
@@ -957,13 +957,13 @@ export default {
         "name": "Ganhe 25 moedas de ouro"
     },
     "gh2-73": {
-        "name": "Ganhe o “Colar de Dentes” (Item 107)"
+        "name": "Ganhe o “Necklace of Teeth” (Item 107)"
     },
     "gh2-74": {
         "name": "Sofra 3 de dano e receba {IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "Ganhe a “Armadura de Escamas de Dragão” (Item 120)"
+        "name": "Ganhe a “Drakescale Armor” (Item 120)"
     },
     "gh2-76": {
         "name": "Tipo de Item Aleatório"

@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "Perseguidor da Ruína",
+        "name": "Doomstalker",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Substitua duas cartas {+0_WHITE} por duas cartas {+1_WHITE}",
@@ -111,7 +111,7 @@ export default {
         ]
     },
     "EL": {
-        "name": "Elementalista",
+        "name": "Elementalist",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Substitua uma carta {-1_WHITE} por uma carta {+1_WHITE}",
@@ -129,7 +129,7 @@ export default {
         ]
     },
     "SB": {
-        "name": "Médico Curandeiro",
+        "name": "Sawbones",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova quatro cartas {+0_WHITE}",
@@ -143,7 +143,7 @@ export default {
         ]
     },
     "SS": {
-        "name": "Cantora do Alívio",
+        "name": "Soothsinger",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova uma carta {-2_WHITE}",
@@ -160,7 +160,7 @@ export default {
         ]
     },
     "SK": {
-        "name": "Guardiã do Sol",
+        "name": "Sunkeeper",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova quatro cartas {+0_WHITE}",
@@ -176,7 +176,7 @@ export default {
         ]
     },
     "NS": {
-        "name": "Manto da Noite",
+        "name": "Nightshroud",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova quatro cartas {+0_WHITE}",
@@ -221,7 +221,7 @@ export default {
         ]
     },
     "QM": {
-        "name": "Intendente",
+        "name": "Quartermaster",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova quatro cartas {+0_WHITE}",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "Heraldo da Praga",
+        "name": "Plagueherald",
         "perks": [
             "Substitua uma carta {-2_WHITE} por uma carta {+0_WHITE}",
             "Substitua uma carta {-1_WHITE} por uma carta {+1_WHITE}",
@@ -251,7 +251,7 @@ export default {
         ]
     },
     "BT": {
-        "name": "Tirano das Feras",
+        "name": "Beast Tyrant",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Substitua uma carta {-1_WHITE} por uma carta {+1_WHITE}",
@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Enxame de Lâminas",
+        "name": "Bladeswarm",
         "perks": [
             "Substitua uma carta {-2_WHITE} por uma carta {+0_WHITE}",
             "Substitua uma carta {-1_WHITE} por uma carta {+0_WHITE} {WOUND}",
@@ -298,7 +298,7 @@ export default {
         ]
     },
     "RG": {
-        "name": "Guarda Vermelho",
+        "name": "Red Guard",
         "perks": [
             "Remova quatro cartas {+0_WHITE}",
             "Remova duas cartas {-1_WHITE}",
@@ -313,7 +313,7 @@ export default {
         ]
     },
     "DM": {
-        "name": "Demolicionista",
+        "name": "Demolitionist",
         "perks": [
             "Remova quatro cartas {+0_WHITE}",
             "Remova duas cartas {-1_WHITE}",
@@ -327,7 +327,7 @@ export default {
         ]
     },
     "HT": {
-        "name": "Machadinha",
+        "name": "Hatchet",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Substitua uma carta {+0_WHITE} por uma carta {+2_WHITE} {MUDDLE}",
@@ -342,7 +342,7 @@ export default {
         ]
     },
     "VW": {
-        "name": "Guardiã do Vazio",
+        "name": "Voidwarden",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova uma carta {-2_WHITE}",
@@ -527,7 +527,7 @@ export default {
             "Substitua uma carta {+1_WHITE} por uma carta {+0_WHITE} {WOUND_2}",
             "Adicione quatro cartas {AGAIN} {+0_WHITE} “{+1_WHITE} se o alvo ocupar terreno difícil”",
             "Adicione duas cartas {AGAIN} “{INVISIBLE}, Si mesmo, se você ocupar terreno difícil”",
-            "Ganhe “Adaga Envenenada” (Item gh-11). Você pode carregar um item de {ONE-HAND} adicional com “Adaga” no nome.",
+            "Ganhe “Poison Dagger” (Item gh-11). Você pode carregar um item de {ONE-HAND} adicional com “Adaga” no nome.",
             "Ignore dano e condições e modificadores negativos de Eventos, e remova uma carta {-1_WHITE}",
             "Ignore efeitos negativos de cenário e remova uma carta {-1_WHITE}"
         ]
@@ -601,7 +601,7 @@ export default {
         ]
     },
     "BB": {
-        "name": "Lâmina Cintilante",
+        "name": "Blinkblade",
         "masteries": [
             "Declare {FAST} por sete rodadas consecutivas",
             "Nunca seja alvo de um ataque"
@@ -621,7 +621,7 @@ export default {
         ]
     },
     "BN": {
-        "name": "Lança-Estandarte",
+        "name": "Banner Spear",
         "masteries": [
             "Ataque pelo menos três inimigos com cada uma de três habilidades de ataque de área diferentes",
             "Realize uma habilidade de invocação de {BANNER} no seu primeiro turno e mantenha o estandarte vivo e a até {RANGE.fh}3 de você durante todo o cenário"
@@ -640,7 +640,7 @@ export default {
         ]
     },
     "DW": {
-        "name": "Caminhante da Morte",
+        "name": "Deathwalker",
         "masteries": [
             "Remova sete {SHADOW_ICON} em uma rodada",
             "Coloque ou remova pelo menos uma {SHADOW_ICON} a cada rodada"
@@ -660,7 +660,7 @@ export default {
         ]
     },
     "BO": {
-        "name": "Moldador de Ossos",
+        "name": "Boneshaper",
         "masteries": [
             "Mate pelo menos quinze das suas invocações",
             "Jogue uma ação de invocação no seu primeiro turno, faça a invocação matar pelo menos seis inimigos e a mantenha viva durante todo o cenário"
@@ -679,7 +679,7 @@ export default {
         ]
     },
     "GE": {
-        "name": "Geminado",
+        "name": "Geminate",
         "masteries": [
             "Alterne de forma a cada rodada",
             "Perca pelo menos uma carta de habilidade a cada rodada"
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "IF": {
-        "name": "Infusor",
+        "name": "Infuser",
         "masteries": [
             "Tenha cinco bônus de {INFUSION_ICON} ativos",
             "Mate pelo menos quatro inimigos, mas nunca ataque"
@@ -720,7 +720,7 @@ export default {
         ]
     },
     "PY": {
-        "name": "Piroclasto",
+        "name": "Pyroclast",
         "masteries": [
             "Crie ou destrua pelo menos um obstáculo ou peça de terreno perigoso a cada rodada",
             "Mova inimigos por seis hexágonos diferentes de terreno perigoso que você criou em um turno"
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "Canção Estilhaçante",
+        "name": "Shattersong",
         "masteries": [
             "Sempre tenha 0 {RESONANCE_ICON} imediatamente antes de ganhar {RESONANCE_ICON} ao final de cada um dos seus turnos",
             "Gaste 5 {RESONANCE_ICON} em cada uma de cinco habilidades {WAVE} diferentes"
@@ -761,7 +761,7 @@ export default {
         ]
     },
     "TA": {
-        "name": "Armadilheiro",
+        "name": "Trapper",
         "masteries": [
             "Tenha uma armadilha de {HEAL.fh} no mapa com valor de pelo menos 20",
             "Mova inimigos por sete ou mais armadilhas com uma habilidade"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Condutor da Dor",
+        "name": "Pain Conduit",
         "masteries": [
             "Faça outras figuras sofrerem um total de pelo menos {DAMAGE.fh}40 em uma rodada",
             "Comece um turno com {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} e {MUDDLE.fh}"
@@ -801,7 +801,7 @@ export default {
         ]
     },
     "SD": {
-        "name": "Dançarina da Neve",
+        "name": "Snowdancer",
         "masteries": [
             "Faça pelo menos um aliado ou inimigo se mover a cada rodada",
             "Garanta que o primeiro aliado a sofrer {DAMAGE.fh} a cada rodada, imediatamente antes de sofrer o {DAMAGE.fh}, tenha pelo menos uma condição aplicada por você"
@@ -819,7 +819,7 @@ export default {
         ]
     },
     "FF": {
-        "name": "Punho Congelado",
+        "name": "Frozen Fist",
         "masteries": [
             "{RECOVER.fh} pelo menos uma carta da sua pilha de descarte a cada rodada",
             "Entre em pelo menos dez hexágonos diferentes com uma habilidade de movimento e, em seguida, faça um inimigo sofrer pelo menos {DAMAGE.fh}10 com uma habilidade de ataque no mesmo turno"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Mosaico de Metal",
+        "name": "Metal Mosaic",
         "masteries": [
             "Nunca ataque",
             "Por quatro rodadas consecutivas, mova o medidor de pressão para cima ou para baixo três níveis a partir de onde ele começou a rodada ({PRESSURE_LOW_ICON} a {PRESSURE_HIGH_ICON}, ou vice-versa)"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Espectro Abissal",
+        "name": "Deepwraith",
         "masteries": [
             "Realize todos os seus ataques com vantagem",
             "Infunda {DARK} a cada rodada"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "Maré Estrondosa",
+        "name": "Crashing Tide",
         "masteries": [
             "Nunca sofra dano de ataques e seja alvo de pelo menos cinco ataques",
             "No início de cada um dos seus descansos, tenha mais {TIDE_ICON} ativas do que cartas na sua pilha de descarte"

@@ -1,6 +1,6 @@
 export default {
     "fh-5": {
-        "name": "Bányászkunyhó",
+        "name": "Mining Camp",
         "levels": [
             {
                 "level": 0
@@ -40,7 +40,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "Vadászház",
+        "name": "Hunting Lodge",
         "levels": [
             {
                 "level": 0
@@ -80,7 +80,7 @@ export default {
         ]
     },
     "fh-17": {
-        "name": "Fakitermelő tábor",
+        "name": "Logging Camp",
         "levels": [
             {
                 "level": 0
@@ -192,7 +192,7 @@ export default {
         ]
     },
     "fh-34": {
-        "name": "Kézműves",
+        "name": "Craftsman",
         "levels": [
             {
                 "level": 0
@@ -304,7 +304,7 @@ export default {
         ]
     },
     "fh-37": {
-        "name": "Kereskedőpont",
+        "name": "Trading Post",
         "levels": [
             {
                 "level": 0
@@ -344,7 +344,7 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "Ékszerész",
+        "name": "Jeweler",
         "levels": [
             {
                 "level": 0
@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "A Nagy Tölgy temploma",
+        "name": "Temple of the Great Oak",
         "levels": [
             {
                 "level": 0
@@ -416,7 +416,7 @@ export default {
         ]
     },
     "fh-44": {
-        "name": "Fejlesztő",
+        "name": "Enhancer",
         "levels": [
             {
                 "level": 0
@@ -456,7 +456,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Fémraktár",
+        "name": "Metal Depot",
         "levels": [
             {
                 "level": 0
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "Faraktár",
+        "name": "Lumber Depot",
         "levels": [
             {
                 "level": 0
@@ -504,7 +504,7 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "Bőrraktár",
+        "name": "Hide Depot",
         "levels": [
             {
                 "level": 0
@@ -528,7 +528,7 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "Kocsma",
+        "name": "Tavern",
         "levels": [
             {
                 "level": 0
@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Dínomdánom csarnoka",
+        "name": "Hall of Revelry",
         "levels": [
             {
                 "level": 0
@@ -617,7 +617,7 @@ export default {
         ]
     },
     "fh-84": {
-        "name": "Műhely",
+        "name": "Workshop",
         "levels": [
             {
                 "level": 0
@@ -657,7 +657,7 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "Istállók",
+        "name": "Stables",
         "levels": [
             {
                 "level": 0
@@ -697,7 +697,7 @@ export default {
         ]
     },
     "fh-90": {
-        "name": "Városháza",
+        "name": "Town Hall",
         "levels": [
             {
                 "level": 0
@@ -729,7 +729,7 @@ export default {
         ]
     },
     "fh-98": {
-        "name": "Kaszárnya",
+        "name": "Barracks",
         "levels": [
             {
                 "level": 0

@@ -1,13 +1,13 @@
 export default {
     "gh-510": {
-        "name": "Hledač Xornu",
+        "name": "Seeker of Xorn",
         "progress": [
             "Dokončete tři scénáře v kryptách.",
             "Dokončete {SCENARIO 52}."
         ]
     },
     "gh-511": {
-        "name": "Obchodnická třída",
+        "name": "Merchant Class",
         "progress": [
             "Vlastněte dva předměty {BODY}.",
             "Vlastněte dva předměty {HEAD}.",
@@ -17,13 +17,13 @@ export default {
         ]
     },
     "gh-512": {
-        "name": "Chamtivost je dobrá",
+        "name": "Greed is Good",
         "progress": [
             "Mějte u sebe 200 zlaťáků."
         ]
     },
     "gh-513": {
-        "name": "Hledání léku",
+        "name": "Finding the Cure",
         "unlock": "Otevřete obálku X.",
         "progress": [
             "Zabijte osm Lesních rarachů.",
@@ -31,63 +31,63 @@ export default {
         ]
     },
     "gh-514": {
-        "name": "Studium anatomie",
+        "name": "A Study of Anatomy",
         "progress": [
             "Zažijte, jak se členové vaší družiny vyčerpají patnáctkrát."
         ]
     },
     "gh-515": {
-        "name": "Nositel zákona",
+        "name": "Law Bringer",
         "progress": [
             "Zabijte dvacet Banditů nebo Kultistů."
         ]
     },
     "gh-516": {
-        "name": "Libra masa",
+        "name": "Pounds of Flesh",
         "progress": [
             "Zabijte patnáct Krysáků."
         ]
     },
     "gh-517": {
-        "name": "Lov trofejí",
+        "name": "Trophy Hunt",
         "progress": [
             "Zabijte dvacet různých druhů nestvůr."
         ]
     },
     "gh-518": {
-        "name": "Věčný poutník",
+        "name": "Eternal Wanderer",
         "progress": [
             "Dokončete patnáct různých scénářů."
         ]
     },
     "gh-519": {
-        "name": "Bitevní legenda",
+        "name": "Battle Legend",
         "progress": [
             "Získejte patnáct ✔ za splněné bitevní cíle."
         ]
     },
     "gh-520": {
-        "name": "Nástroj světla",
+        "name": "Implement of Light",
         "progress": [
             "Najděte Sekeru lebkolamu v Nekromancerově svatyni.",
             "Zabijte s ní sedm Živých Kostí, Živých Mrtvol nebo Živých Duchů."
         ]
     },
     "gh-521": {
-        "name": "Vezměte stromy zpět",
+        "name": "Take Back the Trees",
         "progress": [
             "Dokončete tři scénáře v Dýkovém lese.",
             "Dokončete {SCENARIO 55}."
         ]
     },
     "gh-522": {
-        "name": "Tenká místa",
+        "name": "The Thin Places",
         "progress": [
             "Dokončete šest vedlejších scénářů."
         ]
     },
     "gh-523": {
-        "name": "Zabiják zrůd",
+        "name": "Aberrant Slayer",
         "progress": [
             "Zabijte jednoho Démona Ohně.",
             "Zabijte jednoho Démona Mrazu.",
@@ -98,19 +98,19 @@ export default {
         ]
     },
     "gh-524": {
-        "name": "Nebojácný vzdor",
+        "name": "Fearless Stand",
         "progress": [
             "Zabijte dvacet elitních nestvůr."
         ]
     },
     "gh-525": {
-        "name": "Zbožnost ve všem",
+        "name": "Piety in All Things",
         "progress": [
             "Darujte 120 zlaťáků Svatyni Velkého dubu."
         ]
     },
     "gh-526": {
-        "name": "Pomsta",
+        "name": "Vengeance",
         "unlock": "Otevřete obálku X.",
         "progress": [
             "Dokončete čtyři scénáře v Gloomhavenu.",
@@ -118,32 +118,32 @@ export default {
         ]
     },
     "gh-527": {
-        "name": "Fanatik Krvavého boha",
+        "name": "Zealot of the Blood God",
         "progress": [
             "Vyčerpejte se dvanáctkrát."
         ]
     },
     "gh-528": {
-        "name": "Svrhitel obrů",
+        "name": "Goliath Toppler",
         "progress": [
             "Dokončete čtyři scénáře s bossem."
         ]
     },
     "gh-529": {
-        "name": "Pád člověka",
+        "name": "The Fall of Man",
         "progress": [
             "Dokončete 2 scénáře v Přetrvávající bažině.",
             "Dokončete {SCENARIO 61}."
         ]
     },
     "gh-530": {
-        "name": "Vylepšené schopnosti",
+        "name": "Augmented Abilities",
         "progress": [
             "Zakupte čtyři vylepšení."
         ]
     },
     "gh-531": {
-        "name": "Vzorky elementů",
+        "name": "Elemental Samples",
         "progress": [
             "Dokončete scénář v Gloomhavenu.",
             "Dokončete scénář v Dýkovém lese.",
@@ -154,13 +154,13 @@ export default {
         ]
     },
     "gh-532": {
-        "name": "Pomocná ruka",
+        "name": "A Helping Hand",
         "progress": [
             "Zažijte, jak dvě další postavy splní své osobní úkoly."
         ]
     },
     "gh-533": {
-        "name": "Dokonalý jed",
+        "name": "The Perfect Poison",
         "progress": [
             "Zabijte tři Slizy.",
             "Zabijte tři Číhače.",
@@ -352,7 +352,7 @@ export default {
         ]
     },
     "fh-1": {
-        "name": "Studium rostlin",
+        "name": "The Study of Plants",
         "building_unlocks": [
             24,
             42
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "fh-3": {
-        "name": "Obchodnická třída",
+        "name": "Merchant Class",
         "building_unlocks": [
             37,
             74
@@ -387,7 +387,7 @@ export default {
         ]
     },
     "fh-4": {
-        "name": "Chamtivost je dobrá",
+        "name": "Greed is Good",
         "building_unlocks": [
             37,
             74
@@ -397,7 +397,7 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "Stavět, ne ničit",
+        "name": "Build, not Destroy",
         "building_unlocks": [
             85,
             21
@@ -407,7 +407,7 @@ export default {
         ]
     },
     "fh-6": {
-        "name": "Budování týmu",
+        "name": "Team Building",
         "building_unlocks": [
             85,
             21
@@ -417,7 +417,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "Osada Aesther",
+        "name": "Aesther Outpost",
         "building_unlocks": [
             44,
             88
@@ -428,7 +428,7 @@ export default {
         ]
     },
     "fh-8": {
-        "name": "Nebezpečná hra",
+        "name": "Dangerous Game",
         "building_unlocks": [
             44,
             88
@@ -440,7 +440,7 @@ export default {
         ]
     },
     "fh-9": {
-        "name": "Lekce života",
+        "name": "Life Lessons",
         "building_unlocks": [
             90,
             83
@@ -450,7 +450,7 @@ export default {
         ]
     },
     "fh-10": {
-        "name": "Prozkoumejte Končiny",
+        "name": "Explore the Reaches",
         "building_unlocks": [
             90,
             83
@@ -460,7 +460,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "Vytříbený vkus",
+        "name": "Refined Tastes",
         "building_unlocks": [
             39,
             72
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "Hrozba z hlubin",
+        "name": "Threat from the Deep",
         "building_unlocks": [
             90,
             42
@@ -481,7 +481,7 @@ export default {
         ]
     },
     "fh-13": {
-        "name": "Konec klamání",
+        "name": "End the Trickery",
         "building_unlocks": [
             44,
             74
@@ -491,7 +491,7 @@ export default {
         ]
     },
     "fh-14": {
-        "name": "Věčný poutník",
+        "name": "Eternal Wanderer",
         "building_unlocks": [
             37,
             72
@@ -505,7 +505,7 @@ export default {
         ]
     },
     "fh-15": {
-        "name": "Trvalá prosperita",
+        "name": "Continued Prosperity",
         "building_unlocks": [
             65,
             85
@@ -515,7 +515,7 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Připraven na nejhorší",
+        "name": "Prepared for the Worst",
         "building_unlocks": [
             85,
             88
@@ -525,7 +525,7 @@ export default {
         ]
     },
     "fh-17": {
-        "name": "Bitevní legenda",
+        "name": "Battle Legend",
         "building_unlocks": [
             81,
             67
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "Nechte je být",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,7 +545,7 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Utišení pustých míst",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67
@@ -555,7 +555,7 @@ export default {
         ]
     },
     "fh-20": {
-        "name": "Návrat k jednoduchosti",
+        "name": "Return to Simplicity",
         "building_unlocks": [
             24,
             21
@@ -565,7 +565,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Studium života",
+        "name": "The Study of Life",
         "building_unlocks": [
             39,
             72
@@ -575,7 +575,7 @@ export default {
         ]
     },
     "fh-22": {
-        "name": "Největší výzva",
+        "name": "The Greatest Challenge",
         "building_unlocks": [
             37,
             83
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "Vyvolený",
+        "name": "The Chosen One",
         "unlock": "Otevřete obálku A.",
         "progress": [
             "Zažijte, jak se 10 spojenců vyčerpá během scénářů, které jinak dokončíte."
@@ -609,7 +609,7 @@ export default {
     "gh2-3": {
         "name": "Vylepšené schopnosti",
         "progress": [
-            "Zakupte pět vylepšení (vyžaduje globální úspěch „Síla vylepšení“).",
+            "Zakupte pět vylepšení (vyžaduje globální úspěch „The Power of Enhancement“).",
             "Přečtěte si {SECTION} 71.2."
         ]
     },
@@ -666,7 +666,7 @@ export default {
     "gh2-10": {
         "name": "Zabiják zrůd",
         "progress": [
-            "Vylepšete kartu schopnosti (svou nebo spojencovu) elementem {ANY} (vyžaduje globální úspěch „Síla vylepšení“).",
+            "Vylepšete kartu schopnosti (svou nebo spojencovu) elementem {ANY} (vyžaduje globální úspěch „The Power of Enhancement“).",
             "Přečtěte si {SECTION} 14.3.",
             "Dovedte {SCENARIO 64} k závěru."
         ]

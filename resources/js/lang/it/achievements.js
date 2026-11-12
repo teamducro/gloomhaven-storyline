@@ -141,13 +141,13 @@ export default {
         "name": "A Map to Treasure"
     },
     "gh-PSOX1": {
-        "name": "Cripta dei Nobili"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "Cripta Allagata"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "Cripta degli Antichi"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "Bad Business"
@@ -180,82 +180,82 @@ export default {
         "name": "Spedizione a Nord"
     },
     "gh-GTTP": {
-        "name": "Attraverso il Portale"
+        "name": "Through the Portal"
     },
     "gh-PO": {
         "name": "Opportuniste"
     },
     "gh-GKIP": {
-        "name": "Sapere è Potere"
+        "name": "Knowledge is Power"
     },
     "gh-GKIP2": {
-        "name": "Sapere è Potere x2"
+        "name": "Knowledge is Power x2"
     },
     "gh-GKIP3": {
-        "name": "Sapere è Potere x3"
+        "name": "Knowledge is Power x3"
     },
     "gh-GKIP4": {
-        "name": "Sapere è Potere x4"
+        "name": "Knowledge is Power x4"
     },
     "gh-PAD": {
-        "name": "Angeli della Morte"
+        "name": "Angels of Death"
     },
     "gh-PC": {
         "name": "Custodi"
     },
     "gh-PHP": {
-        "name": "Preda Braccata"
+        "name": "Hunted Prey"
     },
     "gh-GPOA": {
-        "name": "Pezzi di un Artefatto"
+        "name": "Pieces of an Artifact"
     },
     "gh-GPOA2": {
-        "name": "Pezzi di un Artefatto x2"
+        "name": "Pieces of an Artifact x2"
     },
     "gh-GPOA3": {
-        "name": "Pezzi di un Artefatto x3"
+        "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
-        "name": "Distaccamento di Guardia"
+        "name": "Guard Detail"
     },
     "gh-PDE": {
-        "name": "Equilibrio Dimensionale"
+        "name": "Dimensional Equilibrium"
     },
     "gh-PHH": {
-        "name": "A Caccia del Cacciatore"
+        "name": "Hunting the Hunter"
     },
     "gh-PXA": {
-        "name": "L'Aiuto di Xangroth"
+        "name": "Xangroth's Aid"
     },
     "gh-PDA": {
-        "name": "L'Aiuto di Diamara"
+        "name": "Diamara's Aid"
     },
     "gh-PBF": {
-        "name": "Bellezza nella Libertà"
+        "name": "Beauty in Freedom"
     },
     "gh-GPA": {
-        "name": "Un Pericolo Scongiurato"
+        "name": "A Peril Averted"
     },
     "gh-GPA2": {
-        "name": "Un Pericolo Scongiurato x2"
+        "name": "A Peril Averted x2"
     },
     "gh-GPA3": {
-        "name": "Un Pericolo Scongiurato x3"
+        "name": "A Peril Averted x3"
     },
     "gh-GPA4": {
-        "name": "Un Pericolo Scongiurato x4"
+        "name": "A Peril Averted x4"
     },
     "gh-GMS": {
-        "name": "Splendore Meccanico"
+        "name": "Mechanical Splendor"
     },
     "gh-GST": {
-        "name": "Legami Recisi"
+        "name": "Severed Ties"
     },
     "gh-PA": {
         "name": "Complici"
     },
     "gh-PS": {
-        "name": "Sabotatori"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -291,94 +291,94 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "Amico dei Portavoce del Ghiaccio"
+        "name": "Friend of the Icespeakers"
     },
     "fh-CFSS": {
-        "name": "Amico dei Portavoce della Neve"
+        "name": "Friend of the Snowspeakers"
     },
     "fh-CFFS": {
-        "name": "Amico dei Portavoce del Gelo"
+        "name": "Friend of the Frostspeakers"
     },
     "fh-CDIS": {
-        "name": "Distruttore dei Portavoce del Ghiaccio"
+        "name": "Destroyer of the Icespeakers"
     },
     "fh-CDSS": {
-        "name": "Distruttore dei Portavoce della Neve"
+        "name": "Destroyer of the Snowspeakers"
     },
     "fh-CFFK": {
-        "name": "Amico del Re dei Pesci"
+        "name": "Friend of the Fish King"
     },
     "fh-CCU": {
-        "name": "Corona Riunita"
+        "name": "Crown United"
     },
     "fh-CUA": {
-        "name": "Alleati Slegati"
+        "name": "Unfettered Allies"
     },
     "fh-CUD": {
-        "name": "Slegati Disattivati"
+        "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
         "name": "Nella Foresta"
     },
     "fh-CFP": {
-        "name": "Pepefuoco"
+        "name": "Firepepper"
     },
     "fh-CSS": {
-        "name": "Cercatore di Schegge"
+        "name": "Shard Seeker"
     },
     "fh-CEJ": {
-        "name": "Barattolo Vuoto"
+        "name": "Empty Jar"
     },
     "fh-CBJ": {
-        "name": "Insetto in un Barattolo"
+        "name": "Bug in a Jar"
     },
     "fh-CUC": {
-        "name": "Nucleo Scarico"
+        "name": "Uncharged Core"
     },
     "fh-CCC": {
-        "name": "Nucleo Carico"
+        "name": "Charged Core"
     },
     "fh-CHF": {
-        "name": "Festa del Raccolto"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "Tracce di Brummix"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "Tracce di Brummix x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "Tracce di Brummix x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "Tracce di Brummix x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "Tracce di Brummix x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "Frammento della Corona di Corallo"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "Frammento della Corona di Corallo x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "Frammento della Corona di Corallo x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "Frammento della Corona di Corallo x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "Frammento della Corona di Corallo x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "Frammento della Corona di Corallo x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Cuore di Ghiaccio"
+        "name": "Heart of Ice"
     },
     "fh-PHOS": {
-        "name": "Cuore di Neve"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"

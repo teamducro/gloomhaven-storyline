@@ -118,7 +118,7 @@ export default {
         ]
     },
     "gh-527": {
-        "name": "血神的狂信徒",
+        "name": "Zealot of the Blood God",
         "progress": [
             "筋疲力盡 12 次。"
         ]
@@ -352,7 +352,7 @@ export default {
         ]
     },
     "fh-1": {
-        "name": "植物研究",
+        "name": "The Study of Plants",
         "building_unlocks": [
             24,
             42
@@ -362,7 +362,7 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "尋找橡樹",
+        "name": "Searching for the Oak",
         "building_unlocks": [
             24,
             42
@@ -397,7 +397,7 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "建設而非破壞",
+        "name": "Build, not Destroy",
         "building_unlocks": [
             85,
             21
@@ -407,7 +407,7 @@ export default {
         ]
     },
     "fh-6": {
-        "name": "團隊建設",
+        "name": "Team Building",
         "building_unlocks": [
             85,
             21
@@ -417,7 +417,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "行維族據點",
+        "name": "Aesther Outpost",
         "building_unlocks": [
             44,
             88
@@ -428,7 +428,7 @@ export default {
         ]
     },
     "fh-8": {
-        "name": "危險遊戲",
+        "name": "Dangerous Game",
         "building_unlocks": [
             44,
             88
@@ -440,7 +440,7 @@ export default {
         ]
     },
     "fh-9": {
-        "name": "人生課題",
+        "name": "Life Lessons",
         "building_unlocks": [
             90,
             83
@@ -450,7 +450,7 @@ export default {
         ]
     },
     "fh-10": {
-        "name": "探索邊境",
+        "name": "Explore the Reaches",
         "building_unlocks": [
             90,
             83
@@ -460,7 +460,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "講究的品味",
+        "name": "Refined Tastes",
         "building_unlocks": [
             39,
             72
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "來自深淵的威脅",
+        "name": "Threat from the Deep",
         "building_unlocks": [
             90,
             42
@@ -481,7 +481,7 @@ export default {
         ]
     },
     "fh-13": {
-        "name": "終結詭計",
+        "name": "End the Trickery",
         "building_unlocks": [
             44,
             74
@@ -505,7 +505,7 @@ export default {
         ]
     },
     "fh-15": {
-        "name": "持續繁榮",
+        "name": "Continued Prosperity",
         "building_unlocks": [
             65,
             85
@@ -515,7 +515,7 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "未雨綢繆",
+        "name": "Prepared for the Worst",
         "building_unlocks": [
             85,
             88
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "讓它們安息",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,17 +545,17 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "安撫死亡之地",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "獲得「深淵之斧」（道具 039）設計圖，並用它殺死 10 隻冰凍屍體、冰魂和/或活體末日。"
+            "獲得「Abyss Axe」（道具 039）設計圖，並用它殺死 10 隻冰凍屍體、冰魂和/或活體末日。"
         ]
     },
     "fh-20": {
-        "name": "回歸純樸",
+        "name": "Return to Simplicity",
         "building_unlocks": [
             24,
             21
@@ -565,7 +565,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "生命研究",
+        "name": "The Study of Life",
         "building_unlocks": [
             39,
             72
@@ -575,7 +575,7 @@ export default {
         ]
     },
     "fh-22": {
-        "name": "最大的挑戰",
+        "name": "The Greatest Challenge",
         "building_unlocks": [
             37,
             83
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "天選之人",
+        "name": "The Chosen One",
         "unlock": "開啟信封 A",
         "progress": [
             "在你以其他方式完成的劇本中，親眼目睹 10 名盟友筋疲力盡。"
@@ -717,7 +717,7 @@ export default {
     "gh2-16": {
         "name": "完美的毒藥",
         "progress": [
-            "獲得「劇毒匕首」（道具 7）。",
+            "獲得「Poison Dagger」（道具 7）。",
             "使用它對沒有{POISON}的敵人施加{POISON}，共 30 次。",
             "閱讀{SECTION} 8.3。"
         ]

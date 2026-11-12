@@ -1,6 +1,6 @@
 export default {
     "fh-5": {
-        "name": "Шахтёрский лагерь",
+        "name": "Mining Camp",
         "levels": [
             {
                 "level": 0
@@ -40,7 +40,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "Охотничий домик",
+        "name": "Hunting Lodge",
         "levels": [
             {
                 "level": 0
@@ -80,7 +80,7 @@ export default {
         ]
     },
     "fh-17": {
-        "name": "Лесозаготовительный лагерь",
+        "name": "Logging Camp",
         "levels": [
             {
                 "level": 0
@@ -120,7 +120,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Постоялый двор",
+        "name": "Inn",
         "levels": [
             {
                 "level": 0
@@ -192,7 +192,7 @@ export default {
         ]
     },
     "fh-34": {
-        "name": "Ремесленник",
+        "name": "Craftsman",
         "levels": [
             {
                 "level": 0
@@ -304,7 +304,7 @@ export default {
         ]
     },
     "fh-37": {
-        "name": "Торговый пост",
+        "name": "Trading Post",
         "levels": [
             {
                 "level": 0
@@ -344,7 +344,7 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "Ювелир",
+        "name": "Jeweler",
         "levels": [
             {
                 "level": 0
@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Храм Великого Дуба",
+        "name": "Temple of the Great Oak",
         "levels": [
             {
                 "level": 0
@@ -416,7 +416,7 @@ export default {
         ]
     },
     "fh-44": {
-        "name": "Улучшатель",
+        "name": "Enhancer",
         "levels": [
             {
                 "level": 0
@@ -456,7 +456,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Склад металла",
+        "name": "Metal Depot",
         "levels": [
             {
                 "level": 0
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "Склад древесины",
+        "name": "Lumber Depot",
         "levels": [
             {
                 "level": 0
@@ -504,7 +504,7 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "Склад шкур",
+        "name": "Hide Depot",
         "levels": [
             {
                 "level": 0
@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Зал веселья",
+        "name": "Hall of Revelry",
         "levels": [
             {
                 "level": 0
@@ -633,7 +633,7 @@ export default {
         ]
     },
     "fh-85": {
-        "name": "Плотник",
+        "name": "Carpenter",
         "levels": [
             {
                 "level": 0
@@ -657,7 +657,7 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "Конюшни",
+        "name": "Stables",
         "levels": [
             {
                 "level": 0
@@ -697,7 +697,7 @@ export default {
         ]
     },
     "fh-90": {
-        "name": "Ратуша",
+        "name": "Town Hall",
         "levels": [
             {
                 "level": 0
@@ -729,7 +729,7 @@ export default {
         ]
     },
     "fh-98": {
-        "name": "Казармы",
+        "name": "Barracks",
         "levels": [
             {
                 "level": 0

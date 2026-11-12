@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Essaim de Lames",
+        "name": "Bladeswarm",
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {WOUND}",
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "IF": {
-        "name": "Infuseur",
+        "name": "Infuser",
         "masteries": [
             "Avoir cinq bonus {INFUSION_ICON} actifs",
             "Tuer au moins quatre ennemis, mais ne jamais attaquer"
@@ -720,7 +720,7 @@ export default {
         ]
     },
     "PY": {
-        "name": "Pyroclaste",
+        "name": "Pyroclast",
         "masteries": [
             "Créer ou détruire au moins un obstacle ou une tuile de terrain dangereux à chaque round",
             "Faire traverser six hexagones différents de terrain dangereux que vous avez créé aux ennemis en un seul tour"
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "Chant-Brisé",
+        "name": "Shattersong",
         "masteries": [
             "Avoir toujours 0 {RESONANCE_ICON} juste avant de gagner {RESONANCE_ICON} à la fin de chacun de vos tours",
             "Dépenser 5 {RESONANCE_ICON} sur chacune de cinq capacités {WAVE} différentes"
@@ -761,7 +761,7 @@ export default {
         ]
     },
     "TA": {
-        "name": "Piégeur",
+        "name": "Trapper",
         "masteries": [
             "Avoir un piège {HEAL.fh} sur la carte avec une valeur d'au moins 20",
             "Faire traverser sept pièges ou plus aux ennemis avec une seule capacité"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Conducteur de Douleur",
+        "name": "Pain Conduit",
         "masteries": [
             "Faire subir aux autres figurines un total d'au moins {DAMAGE.fh}40 en un round",
             "Commencer un tour avec {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} et {MUDDLE.fh}"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Mosaïque de Métal",
+        "name": "Metal Mosaic",
         "masteries": [
             "Ne jamais attaquer",
             "Pendant quatre rounds consécutifs, monter ou descendre la jauge de pression de trois niveaux par rapport à sa position au début du round ({PRESSURE_LOW_ICON} à {PRESSURE_HIGH_ICON}, ou inversement)"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Spectre des Profondeurs",
+        "name": "Deepwraith",
         "masteries": [
             "Effectuer toutes vos attaques avec Avantage",
             "Infuser {DARK} à chaque round"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "Marée Déferlante",
+        "name": "Crashing Tide",
         "masteries": [
             "Ne jamais subir de dégâts d'attaques, et être ciblé par au moins cinq attaques",
             "Au début de chacun de vos repos, avoir plus de {TIDE_ICON} actifs que de cartes dans votre défausse"
@@ -1266,9 +1266,9 @@ export default {
             "Remplacer deux cartes {+0_WHITE} par une carte {+1_WHITE} « Vous pouvez gagner {DISARM.fh} pour ajouter {STUN.fh} »",
             "Ajouter deux cartes {+1_WHITE} « Ajouter +1 {ATTACK.fh} si un allié a une ordonnance active »",
             "Ajouter une carte {AGAIN} « {HEAL.fh}3, {RANGE.fh}1 »",
-            "Ajouter +1 {HEAL.fh} à toutes les capacités de soin des cartes Capacité «Medical Kit»",
+            "Ajouter +1 {HEAL.fh} à toutes les capacités de soin des cartes Capacité « Medical Kit »",
             "À chaque phase de ville après avoir terminé un scénario, votre don ou celui d'un allié au Sanctuaire du Grand Chêne est gratuit",
-            "À la fin de chacun de vos repos, si un allié a une ordonnance active, gagner une carte Capacité «Medical Kit» et reculer d'une case le pion de l'ordonnance active d'un allié"
+            "À la fin de chacun de vos repos, si un allié a une ordonnance active, gagner une carte Capacité « Medical Kit » et reculer d'une case le pion de l'ordonnance active d'un allié"
         ]
     },
     "SK2": {

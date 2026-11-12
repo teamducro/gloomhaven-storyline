@@ -1,6 +1,6 @@
 export default {
     "fh-5": {
-        "name": "Acampamento de Mineração",
+        "name": "Mining Camp",
         "levels": [
             {
                 "level": 0
@@ -40,7 +40,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "Pavilhão de Caça",
+        "name": "Hunting Lodge",
         "levels": [
             {
                 "level": 0
@@ -80,7 +80,7 @@ export default {
         ]
     },
     "fh-17": {
-        "name": "Acampamento Madeireiro",
+        "name": "Logging Camp",
         "levels": [
             {
                 "level": 0
@@ -120,7 +120,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Estalagem",
+        "name": "Inn",
         "levels": [
             {
                 "level": 0
@@ -152,7 +152,7 @@ export default {
         ]
     },
     "fh-24": {
-        "name": "Jardim",
+        "name": "Garden",
         "levels": [
             {
                 "level": 0
@@ -192,7 +192,7 @@ export default {
         ]
     },
     "fh-34": {
-        "name": "Artesão",
+        "name": "Craftsman",
         "levels": [
             {
                 "level": 0
@@ -272,7 +272,7 @@ export default {
         ]
     },
     "fh-35": {
-        "name": "Alquimista",
+        "name": "Alchemist",
         "levels": [
             {
                 "level": 0
@@ -304,7 +304,7 @@ export default {
         ]
     },
     "fh-37": {
-        "name": "Posto Comercial",
+        "name": "Trading Post",
         "levels": [
             {
                 "level": 0
@@ -344,7 +344,7 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "Joalheiro",
+        "name": "Jeweler",
         "levels": [
             {
                 "level": 0
@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Templo do Grande Carvalho",
+        "name": "Temple of the Great Oak",
         "levels": [
             {
                 "level": 0
@@ -416,7 +416,7 @@ export default {
         ]
     },
     "fh-44": {
-        "name": "Aprimorador",
+        "name": "Enhancer",
         "levels": [
             {
                 "level": 0
@@ -456,7 +456,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Depósito de Metal",
+        "name": "Metal Depot",
         "levels": [
             {
                 "level": 0
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "Depósito de Madeira",
+        "name": "Lumber Depot",
         "levels": [
             {
                 "level": 0
@@ -504,7 +504,7 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "Depósito de Couro",
+        "name": "Hide Depot",
         "levels": [
             {
                 "level": 0
@@ -528,7 +528,7 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "Taverna",
+        "name": "Tavern",
         "levels": [
             {
                 "level": 0
@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Salão da Folia",
+        "name": "Hall of Revelry",
         "levels": [
             {
                 "level": 0
@@ -617,7 +617,7 @@ export default {
         ]
     },
     "fh-84": {
-        "name": "Oficina",
+        "name": "Workshop",
         "levels": [
             {
                 "level": 0
@@ -633,7 +633,7 @@ export default {
         ]
     },
     "fh-85": {
-        "name": "Carpinteiro",
+        "name": "Carpenter",
         "levels": [
             {
                 "level": 0
@@ -657,7 +657,7 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "Estábulos",
+        "name": "Stables",
         "levels": [
             {
                 "level": 0
@@ -697,7 +697,7 @@ export default {
         ]
     },
     "fh-90": {
-        "name": "Câmara Municipal",
+        "name": "Town Hall",
         "levels": [
             {
                 "level": 0
@@ -729,7 +729,7 @@ export default {
         ]
     },
     "fh-98": {
-        "name": "Quartel",
+        "name": "Barracks",
         "levels": [
             {
                 "level": 0

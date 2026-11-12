@@ -379,21 +379,21 @@ export default {
         ]
     },
     "gh-SoX1": {
-        "name": "Krypta der Adligen",
+        "name": "Nobles’ Crypt",
         "rewards": [
             "+1 Ansehen",
             "Fügt Stadt-Ereignis SoX2 dem Deck hinzu"
         ]
     },
     "gh-SoX2": {
-        "name": "Überflutete Krypta",
+        "name": "Flooded Crypt",
         "rewards": [
             "Fügt Stadt-Ereignis SoX3 dem Deck hinzu",
             "Wählt nur einen der folgenden: “Frostklinge” (Gegenstand 077), “Stab der Kälte” (Gegenstand 083) oder “Gischtkrone” (Gegenstand 111)"
         ]
     },
     "gh-SoX3": {
-        "name": "Krypta der Uralten",
+        "name": "Crypt of the Ancients",
         "rewards": [
             "50 gemeinsames Gold",
             "Fügt Stadt-Ereignis SoX3 dem Deck hinzu"
@@ -719,111 +719,111 @@ export default {
         ]
     },
     "gh-202": {
-        "name": "Rückkehr zum Schwarzgrab",
+        "name": "Return to the Black Barrow",
         "rewards": [
             "“Imposante Klinge” (Gegenstand 134)"
         ]
     },
     "gh-203": {
-        "name": "Ein unglücklicher Einbruch",
+        "name": "An Unfortunate Intrusion",
         "rewards": [
             "“Fokusstrahl” (Gegenstand 135)"
         ]
     },
     "gh-204": {
-        "name": "Verdorbenes Labor",
+        "name": "Corrupted Laboratory",
         "rewards": [
             "“Instabiles Elixier” (Gegenstand 136)"
         ]
     },
     "gh-205": {
-        "name": "Überfall auf die Waffenkammer",
+        "name": "Armory Heist",
         "rewards": [
             "“Flüsterklinge” (Gegenstand 137)"
         ]
     },
     "gh-206": {
-        "name": "Steinverteidigung",
+        "name": "Stone Defense",
         "rewards": [
             "“Steinamulett” (Gegenstand 138)"
         ]
     },
     "gh-207": {
-        "name": "Befreiung der Nager",
+        "name": "Rodent Liberation",
         "rewards": [
             "“Astralmesser” (Gegenstand 139)"
         ]
     },
     "gh-208": {
-        "name": "Karawanengeleit",
+        "name": "Caravan Escort",
         "rewards": [
             "“Sonnenschild” (Gegenstand 140)"
         ]
     },
     "gh-209": {
-        "name": "Unnatürliche Beleidigungen",
+        "name": "Unnatural Insults",
         "rewards": [
             "“Todesmaske” (Gegenstand 145)"
         ]
     },
     "gh-210": {
-        "name": "Lagergebühren",
+        "name": "Storage Fees",
         "rewards": [
             "“Werkzeuggürtel” (Gegenstand 141)"
         ]
     },
     "gh-211": {
-        "name": "Ebene der wilden Bestien",
+        "name": "Plane of Wild Beasts",
         "rewards": [
             "“Phasenfigur” (Gegenstand 142)"
         ]
     },
     "gh-212": {
-        "name": "Die Nacht ernten",
+        "name": "Harvesting the Night",
         "rewards": [
             "“Rauchelixier” (Gegenstand 143)"
         ]
     },
     "gh-213": {
-        "name": "Verseuchte Krypta",
+        "name": "Plagued Crypt",
         "rewards": [
             "“Seuchenbrosche” (Gegenstand 144)"
         ]
     },
     "gh-214": {
-        "name": "Schlacht der Barden",
+        "name": "Battle of the Bards",
         "rewards": [
             "“Virtuosenlaute” (Gegenstand 146)"
         ]
     },
     "gh-215": {
-        "name": "Verdorbene Jagd",
+        "name": "Corrupted Hunt",
         "rewards": [
             "“Mantel des Jägers” (Gegenstand 147)"
         ]
     },
     "gh-216": {
-        "name": "Nachwirkungen",
+        "name": "Aftermath",
         "rewards": [
             "“Arztkittel” (Gegenstand 148)"
         ]
     },
     "gh-217": {
-        "name": "Elementare Geheimnisse",
+        "name": "Elemental Secrets",
         "rewards": [
             "“Elementarstiefel” (Gegenstand 149)"
         ]
     },
     "gh-218": {
-        "name": "Der gefangene Bär",
+        "name": "The Caged Bear",
         "rewards": [
             "“Befehlsstab” (Gegenstand 150)"
         ]
     },
     "gh-219": {
-        "name": "Der Sand der Zeit",
+        "name": "The Sands of Time",
         "rewards": [
-            "“Schwert der Sande” (Gegenstand 151)"
+            "“Sword of the Sands” (Gegenstand 151)"
         ]
     },
     "fc-96": {
@@ -1068,7 +1068,7 @@ export default {
         "name": "Verstecktes Geschwür"
     },
     "jotl-9": {
-        "name": "Explosive Entwicklung",
+        "name": "Explosive Evolution",
         "rewards": [
             "Je 20 Erfahrung",
             "Fügt dem Laden die Gegenstände 15-20 hinzu"
@@ -1282,7 +1282,7 @@ export default {
     "fh-13": {
         "name": "Eisiger Fjord",
         "rewards": [
-            "Erhaltet “Toter Rabe” (Gegenstand 233)"
+            "Erhaltet “Dead Raven” (Gegenstand 233)"
         ]
     },
     "fh-14": {
@@ -1418,14 +1418,14 @@ export default {
     "fh-32": {
         "name": "Rabenhorst",
         "rewards": [
-            "Erhaltet den Gegenstandsplan “Federmantel” (Gegenstand 69)"
+            "Erhaltet den Gegenstandsplan “Feathered Cloak” (Gegenstand 69)"
         ]
     },
     "fh-33": {
         "name": "Getauter Wald",
         "rewards": [
             "Erhaltet je 5 Erfahrung für jede nicht aufgedeckte Wünschelruten-Rune",
-            "Erhaltet “Glühende Energiequelle” (Gegenstand 244)",
+            "Erhaltet “Ember Energy Source” (Gegenstand 244)",
             "Fügt 135.1 in drei Wochen zum Kalender hinzu"
         ]
     },
@@ -1445,7 +1445,7 @@ export default {
         "rewards": [
             "Erhaltet insgesamt 3 {LUMBER}",
             "Erhaltet insgesamt 3 {METAL}",
-            "Erhaltet den Gegenstandsplan “Samellinsen” (Gegenstand 67)"
+            "Erhaltet den Gegenstandsplan “Converging Lenses” (Gegenstand 67)"
         ]
     },
     "fh-37": {
@@ -1453,7 +1453,7 @@ export default {
         "rewards": [
             "Erhaltet insgesamt 3 {LUMBER}",
             "Erhaltet insgesamt 3 {METAL}",
-            "Erhaltet den Gegenstandsplan “Samellinsen” (Gegenstand 67)"
+            "Erhaltet den Gegenstandsplan “Converging Lenses” (Gegenstand 67)"
         ]
     },
     "fh-38": {
@@ -1504,7 +1504,7 @@ export default {
         "name": "Nervenzentrum",
         "rewards": [
             "Erhaltet je 5 Gold",
-            "Erhaltet den Gegenstandsplan “Energieknüppel” (Gegenstand 73)"
+            "Erhaltet den Gegenstandsplan “Energizing Baton” (Gegenstand 73)"
         ]
     },
     "fh-45": {
@@ -1554,7 +1554,7 @@ export default {
         "name": "Halle der Waise",
         "rewards": [
             "Erhaltet je 10 Erfahrung",
-            "Erhaltet den Gegenstandsplan “Schockgranate” (Gegenstand 74)"
+            "Erhaltet den Gegenstandsplan “Shock Grenades” (Gegenstand 74)"
         ]
     },
     "fh-52": {
@@ -1611,7 +1611,7 @@ export default {
         "name": "Kern der Waise",
         "rewards": [
             "Erhaltet 1 Moral",
-            "Erhaltet “Schlüsselkarte” (Gegenstand 246)",
+            "Erhaltet “Key Card” (Gegenstand 246)",
             "Erhaltet insgesamt 3 {LUMBER}",
             "Erhaltet insgesamt 3 {METAL}",
             "Erhaltet insgesamt 3 {HIDE}",
@@ -1626,7 +1626,7 @@ export default {
         "rewards": [
             "Erhaltet 2 Moral",
             "Erhaltet 2 Wohlstand",
-            "Erhaltet “Schlüsselkarte” (Gegenstand 246)",
+            "Erhaltet “Key Card” (Gegenstand 246)",
             "Schaltet die Klassenbox {HV} frei",
             "Entfernt alle {UNFETTERED}-Ereignisse aus allen Außenposten-Ereignis-Decks",
             "Fügt Ereignis SO-49 dem Sommer-Außenposten-Deck und Ereignis WO-63 dem Winter-Außenposten-Deck hinzu",
@@ -1639,7 +1639,7 @@ export default {
             "Erhaltet 2 Moral",
             "Erhaltet 1 Wohlstand",
             "Erhaltet je 30 Erfahrung",
-            "Erhaltet “Empathierüstung” (Gegenstand 224)",
+            "Erhaltet “Armor of Empathy” (Gegenstand 224)",
             "Schaltet die Klassenbox frei, die noch gesperrt ist: {CR} oder {DT}",
             "Entfernt alle {LURKERS}-Ereignisse aus allen Außenposten-Ereignis-Decks",
             "Fügt Ereignis SO-48 dem Sommer-Außenposten-Deck und Ereignis B-17 dem Schiff-Deck hinzu",
@@ -1756,7 +1756,7 @@ export default {
         "rewards": [
             [
                 "Persönliche Quest “Bedrohung aus der Tiefe” abgeschlossen",
-                "Erhaltet “Wellenklinge” (Gegenstand 201)",
+                "Erhaltet “Wave Blade” (Gegenstand 201)",
                 "Fügt Ereignis B-18 dem Schiff-Deck hinzu"
             ],
             []
@@ -1766,7 +1766,7 @@ export default {
         "name": "Aufstieg des Fischkönigs",
         "rewards": [
             "Persönliche Quest “Bedrohung aus der Tiefe” abgeschlossen",
-            "Erhaltet “Wellenklinge” (Gegenstand 201)",
+            "Erhaltet “Wave Blade” (Gegenstand 201)",
             "Fügt Ereignis B-19 dem Schiff-Deck hinzu"
         ]
     },
@@ -1809,13 +1809,13 @@ export default {
     "fh-83": {
         "name": "Steigende Salzflut",
         "rewards": [
-            "Erhaltet “Piranhaschwein-Rückgrat” (Gegenstand 202)"
+            "Erhaltet “Giant Piranha Pig Spine” (Gegenstand 202)"
         ]
     },
     "fh-84": {
         "name": "Schleimerei",
         "rewards": [
-            "Erhaltet “Schleimfläschchen” (Gegenstand 234)"
+            "Erhaltet “ooze vial” (Gegenstand 234)"
         ]
     },
     "fh-85": {
@@ -1889,10 +1889,10 @@ export default {
         "name": "Mittwinter-Schlägerei",
         "rewards": [
             [
-                "Erhaltet “Kleine Ratte” (Gegenstand 235)"
+                "Erhaltet “Small Rat” (Gegenstand 235)"
             ],
             [
-                "Erhaltet “Brathähnchen” (Gegenstand 79)"
+                "Erhaltet “Roasted Fowl” (Gegenstand 79)"
             ]
         ]
     },
@@ -1979,7 +1979,7 @@ export default {
     "fh-106": {
         "name": "Die Temporalschmieden",
         "rewards": [
-            "Erhaltet “Jahresschlüssel” (Gegenstand 213)"
+            "Erhaltet “Key of Seasons” (Gegenstand 213)"
         ]
     },
     "fh-107": {
@@ -1999,7 +1999,7 @@ export default {
             ],
             [
                 "Erhaltet insgesamt 5 beliebige Materialressourcen",
-                "Erhaltet “Ventillions Kelch” (Gegenstand 214)"
+                "Erhaltet “Cup of Ventillion” (Gegenstand 214)"
             ]
         ]
     },
@@ -2019,13 +2019,13 @@ export default {
     "fh-110": {
         "name": "Wächtertempel",
         "rewards": [
-            "Erhaltet den Gegenstandsplan “Rosenstulpe” (Gegenstand 75)"
+            "Erhaltet den Gegenstandsplan “Rose Gauntlet” (Gegenstand 75)"
         ]
     },
     "fh-111": {
         "name": "Eishöhle",
         "rewards": [
-            "Erhaltet “Gesprungener Spiegel” (Gegenstand 236)"
+            "Erhaltet “Cracked Mirror” (Gegenstand 236)"
         ]
     },
     "fh-112": {
@@ -2132,14 +2132,14 @@ export default {
     "fh-118": {
         "name": "Pirscher-Nekromantie",
         "rewards": [
-            "Erhaltet den Gegenstandsplan “Amulett des ewigen Lebens” (Gegenstand 66)",
+            "Erhaltet den Gegenstandsplan “Amulet of Eternal Life” (Gegenstand 66)",
             "Tauscht alle Marker gegen Beutekarten ein"
         ]
     },
     "fh-119": {
         "name": "Strahlender Staub",
         "rewards": [
-            "Gebt 7 verbleibenden Staub aus, um “Zepter der Kontrolle” (Gegenstand 203) zu erhalten",
+            "Gebt 7 verbleibenden Staub aus, um “Scepter of Control” (Gegenstand 203) zu erhalten",
             "Gebt 1 verbleibenden Staub aus, um 1 beliebige Materialressource zu erhalten",
             "Gebt 2 verbleibenden Staub aus, um 1 beliebige Kräuterressource zu erhalten"
         ]
@@ -2159,7 +2159,7 @@ export default {
                 "Fügt 184.3 in sechs Wochen zum Kalender hinzu"
             ],
             [
-                "Erhaltet “Gedankendieb-Helm” (Gegenstand 193)"
+                "Erhaltet “Mind Thieving Helmet” (Gegenstand 193)"
             ],
             [
                 "Erhaltet 2 Moral"
@@ -2194,7 +2194,7 @@ export default {
     "fh-125": {
         "name": "Der längste Augenblick",
         "rewards": [
-            "Erhaltet “Zeitamulett” (Gegenstand 194)"
+            "Erhaltet “Temporal Amulet” (Gegenstand 194)"
         ]
     },
     "fh-126": {
@@ -2239,7 +2239,7 @@ export default {
             ],
             [
                 "Erhaltet 3 Moral",
-                "Erhaltet “Berauschender Krug” (Gegenstand 215)",
+                "Erhaltet “Befuddling Mug” (Gegenstand 215)",
                 "Fügt 100.3 in drei Wochen zum Kalender hinzu"
             ]
         ]
@@ -2267,7 +2267,7 @@ export default {
         "name": "Der tanzende Eisberg",
         "rewards": [
             "Erhaltet je 10 Erfahrung",
-            "Erhaltet “Hypnotische Muschel” (Gegenstand 237)"
+            "Erhaltet “Mesmerizing Seashell” (Gegenstand 237)"
         ]
     },
     "fh-132": {
@@ -2279,13 +2279,13 @@ export default {
     "fh-133": {
         "name": "Blitz",
         "rewards": [
-            "Erhaltet “Gesprungene Figur” (Gegenstand 238)"
+            "Erhaltet “Cracked Idol” (Gegenstand 238)"
         ]
     },
     "fh-134": {
         "name": "Turm des Wissens",
         "rewards": [
-            "Erhaltet “Foliant des Konflikts” (Gegenstand 219)"
+            "Erhaltet “Tome of Conflict” (Gegenstand 219)"
         ]
     },
     "fh-135": {
@@ -2294,7 +2294,7 @@ export default {
             "Erhaltet 2 Moral",
             "Erhaltet 2 Wohlstand",
             "Erhaltet 1 Inspiration",
-            "Erhaltet “Belaras Federkiel” (Gegenstand 220)"
+            "Erhaltet “Belaras Quill” (Gegenstand 220)"
         ]
     },
     "fh-136": {
@@ -2316,103 +2316,103 @@ export default {
     "fh-201": {
         "name": "Wunder der Natur",
         "rewards": [
-            "“Keule des Wanderers” (Gegenstand 248)"
+            "“Wanderer's Club” (Gegenstand 248)"
         ]
     },
     "fh-202": {
         "name": "Rennen gegen die Uhr",
         "rewards": [
-            "“Rekalibrierungsauslöser” (Gegenstand 249)"
+            "“Recalibration Trigger” (Gegenstand 249)"
         ]
     },
     "fh-203": {
-        "name": "Spähtrupp im Hinterhalt",
+        "name": "Scouting Ambush",
         "rewards": [
-            "“Speer der Gerechtigkeit” (Gegenstand 250)"
+            "“Spear of Justice” (Gegenstand 250)"
         ]
     },
     "fh-204": {
-        "name": "Tote der Nacht",
+        "name": "The Dead of Night",
         "rewards": [
-            "“Seelenurne” (Gegenstand 251)"
+            "“Soul Urn” (Gegenstand 251)"
         ]
     },
     "fh-205": {
         "name": "Knochen im Staub",
         "rewards": [
-            "“Kodex der Schwarzen Erde” (Gegenstand 252)"
+            "“Black Earth Codex” (Gegenstand 252)"
         ]
     },
     "fh-206": {
         "name": "Teilen und Herrschen",
         "rewards": [
-            "“Maske der Dualität” (Gegenstand 253)"
+            "“Mask of Duality” (Gegenstand 253)"
         ]
     },
     "fh-207": {
-        "name": "Pfad der Ahnen",
+        "name": "Path of Ancestry",
         "rewards": [
-            "“Klinge der Ahnen” (Gegenstand 254)"
+            "“Ancestral Blade” (Gegenstand 254)"
         ]
     },
     "fh-208": {
         "name": "Bröckelnder Abstieg",
         "rewards": [
-            "“Herz des Berges” (Gegenstand 255)"
+            "“Mountain's Heart” (Gegenstand 255)"
         ]
     },
     "fh-209": {
         "name": "Anpassung der Resonanz",
         "rewards": [
-            "“Klangvolle Scherbe” (Gegenstand 256)"
+            "“Sonorous Shard” (Gegenstand 256)"
         ]
     },
     "fh-210": {
-        "name": "Eine großartige Falle",
+        "name": "A Magnificent Trap",
         "rewards": [
-            "“Listige Tarnung” (Gegenstand 257)"
+            "“Sly Camouflage” (Gegenstand 257)"
         ]
     },
     "fh-211": {
-        "name": "Eine Sammlung des Leidens",
+        "name": "A Collection of Suffering",
         "rewards": [
-            "“Schädel der Qual” (Gegenstand 258)"
+            "“Skull of Agony” (Gegenstand 258)"
         ]
     },
     "fh-212": {
-        "name": "Schnee mit Schnee bekämpfen",
+        "name": "Fighting Snow with Snow",
         "rewards": [
-            "“Sturmschnitzerei” (Gegenstand 259)"
+            "“Storm Carving” (Gegenstand 259)"
         ]
     },
     "fh-213": {
         "name": "Unter dem Eis",
         "rewards": [
-            "“Gefrierkugel” (Gegenstand 260)"
+            "“Freezing Orb” (Gegenstand 260)"
         ]
     },
     "fh-214": {
         "name": "Aufladen",
         "rewards": [
-            "“Energiemodul” (Gegenstand 261)"
+            "“Energized Module” (Gegenstand 261)"
         ]
     },
     "fh-215": {
         "name": "Kesselraum",
         "rewards": [
-            "“Auspuffstiefel” (Gegenstand 262)"
+            "“Exhaust Boots” (Gegenstand 262)"
         ]
     },
     "fh-216": {
         "name": "Nasse Arbeit",
         "rewards": [
-            "“Schädel des Kriegsherrn” (Gegenstand 263)"
+            "“Warlords Skull” (Gegenstand 263)"
         ]
     },
     "fh-217": {
         "name": "Sturm gegen die Wellen",
         "rewards": [
-            "“Spiralmedaillon” (Gegenstand 264)"
+            "“Spiraled Medallion” (Gegenstand 264)"
         ]
     },
     "cs-1": {

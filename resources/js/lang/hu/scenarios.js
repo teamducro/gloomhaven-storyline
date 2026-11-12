@@ -62,7 +62,7 @@ export default {
             "15 arany mindenkinek",
             "-2 hírnév",
             "+2 Városfejlettség",
-            "“Koponyatörő bárd” Tervrajz (Felszerelés 113)"
+            "“Skullbane Axe” Tervrajz (Felszerelés 113)"
         ],
         "faq": [
             "Elírás: hagyd figyelmen kívül a küldetéskönyvben a „Főellenség speciális 1” szövegét, és a főellenség értéklapja alapján játssz."
@@ -72,7 +72,7 @@ export default {
         "name": "Főtér B",
         "rewards": [
             "+4 hírnév",
-            "“Koponyatörő bárd” Tervrajz (Felszerelés 113)"
+            "“Skullbane Axe” Tervrajz (Felszerelés 113)"
         ],
         "faq": [
             "Elírás: az 1-es ajtójelölőnek a déli ajtónál kell lennie, nem az északinál. Az „1” alatti szöveget akkor olvasd el, amikor a déli ajtót kinyitják.",
@@ -362,12 +362,12 @@ export default {
         "name": "Kriptapince",
         "requirements": "“Seeker of Xorn” életcél",
         "rewards": [
-            "A Xorn Keresője megkapja: “Xorn botja” (Felszerelés 114) A Kereső nem adhatja el ezt a felszerelést."
+            "A Xorn Keresője megkapja: “Staff of Xorn” (Felszerelés 114) A Kereső nem adhatja el ezt a felszerelést."
         ]
     },
     "gh-54": {
         "name": "Jégpalota",
-        "requirements": "“Seeker of Xorn” életcél, “Xorn botja” felszerelés felszerelve",
+        "requirements": "“Seeker of Xorn” életcél, “Staff of Xorn” felszerelés felszerelve",
         "rewards": [
             "Azonnal vonuljon vissza a Xorn Keresője",
             "Addjátok az 59-es Úti és Városi eseményt a paklihoz az életcél kártyán írtak helyett",
@@ -379,21 +379,21 @@ export default {
         ]
     },
     "gh-SoX1": {
-        "name": "Nemesek kriptája",
+        "name": "Nobles’ Crypt",
         "rewards": [
             "+1 hírnév",
             "Add a SoX2 városi eseményt a pakliba"
         ]
     },
     "gh-SoX2": {
-        "name": "Elárasztott kripta",
+        "name": "Flooded Crypt",
         "rewards": [
             "Add a SoX3 városi eseményt a pakliba",
-            "Csak az egyiket válaszd: “Fagyos penge” (Felszerelés 077), “Fagy pálcája” (Felszerelés 083) vagy “Hullámtaréj” (Felszerelés 111)"
+            "Csak az egyiket válaszd: “Frigid Blade” (Felszerelés 077), “Wand of Frost” (Felszerelés 083) vagy “Wave Crest” (Felszerelés 111)"
         ]
     },
     "gh-SoX3": {
-        "name": "Az ősök kriptája",
+        "name": "Crypt of the Ancients",
         "rewards": [
             "50 arany mindenkinek",
             "Add a SoX3 városi eseményt a pakliba"
@@ -479,7 +479,7 @@ export default {
     "gh-65": {
         "name": "Kénbánya",
         "rewards": [
-            "“Ősi fúró” Tervrajz (Felszerelés 112)"
+            "“Ancient Drill” Tervrajz (Felszerelés 112)"
         ]
     },
     "gh-66": {
@@ -488,7 +488,7 @@ export default {
     "gh-67": {
         "name": "Varázskönyvtár",
         "rewards": [
-            "“Energiamag” (Felszerelés 132)"
+            "“Power Core” (Felszerelés 132)"
         ]
     },
     "gh-68": {
@@ -637,7 +637,7 @@ export default {
     "gh-84": {
         "name": "Kristálybarlang",
         "rewards": [
-            "“Rezgő kristály” (Felszerelés 133)",
+            "“Resonant Crystal” (Felszerelés 133)",
             "+1 Városfejlettség"
         ],
         "faq": [
@@ -647,7 +647,7 @@ export default {
     "gh-85": {
         "name": "A Nap temploma",
         "rewards": [
-            "“Hajnal gömbje” (Felszerelés 121)"
+            "“Orb of Dawn” (Felszerelés 121)"
         ],
         "faq": [
             "Hiba a könyvben: 4 játékos esetén ne helyezd el az éj és a nap démonokat a végső helyiségben, amelyek csak 4 játékos esetén kerülnek elhelyezésre normál ellenségként (2 és 3 játékosnál feketével, 4 játékosnál fehérrel jelölve)."
@@ -669,7 +669,7 @@ export default {
     "gh-88": {
         "name": "A víz síkja",
         "rewards": [
-            "“Idézés botja” (Felszerelés 120)"
+            "“Staff of Summoning” (Felszerelés 120)"
         ],
         "faq": [
             "Ha az összes lurkert megölik, továbbra is húzz lurker képességlapokat a küldetés különleges hatásának irányának meghatározásához."
@@ -684,7 +684,7 @@ export default {
     "gh-90": {
         "name": "Démoni síkkapu",
         "rewards": [
-            "“Fekete füstölő” (Felszerelés 128)"
+            "“Black Censer” (Felszerelés 128)"
         ]
     },
     "gh-91": {
@@ -715,119 +715,119 @@ export default {
     "gh-95": {
         "name": "Tartozás",
         "rewards": [
-            "“Gyűlölet koponyája” (Felszerelés 119)"
+            "“Skull of Hatred” (Felszerelés 119)"
         ]
     },
     "gh-202": {
-        "name": "Visszatérés a Fekete sírdombhoz",
+        "name": "Return to the Black Barrow",
         "rewards": [
-            "“Impozáns penge” (Felszerelés 134)"
+            "“Imposing Blade” (Felszerelés 134)"
         ]
     },
     "gh-203": {
-        "name": "Szerencsétlen behatolás",
+        "name": "An Unfortunate Intrusion",
         "rewards": [
-            "“Fókuszáló sugár” (Felszerelés 135)"
+            "“Focusing Ray” (Felszerelés 135)"
         ]
     },
     "gh-204": {
-        "name": "Megromlott laboratórium",
+        "name": "Corrupted Laboratory",
         "rewards": [
-            "“Illékony elixír” (Felszerelés 136)"
+            "“Volatile Elixir” (Felszerelés 136)"
         ]
     },
     "gh-205": {
-        "name": "Fegyverraktár-rablás",
+        "name": "Armory Heist",
         "rewards": [
-            "“Néma stilett” (Felszerelés 137)"
+            "“Silent Stiletto” (Felszerelés 137)"
         ]
     },
     "gh-206": {
-        "name": "Kővédelem",
+        "name": "Stone Defense",
         "rewards": [
-            "“Kő talizmán” (Felszerelés 138)"
+            "“Stone Charm” (Felszerelés 138)"
         ]
     },
     "gh-207": {
-        "name": "Rágcsálók kiszabadítása",
+        "name": "Rodent Liberation",
         "rewards": [
-            "“Pszichikus kés” (Felszerelés 139)"
+            "“Psychic Knife” (Felszerelés 139)"
         ]
     },
     "gh-208": {
-        "name": "Karavánkíséret",
+        "name": "Caravan Escort",
         "rewards": [
-            "“Napparázs pajzs” (Felszerelés 140)"
+            "“Sun Shield” (Felszerelés 140)"
         ]
     },
     "gh-209": {
-        "name": "Természetellenes sértések",
+        "name": "Unnatural Insults",
         "rewards": [
-            "“Halál álarca” (Felszerelés 145)"
+            "“Mask of Death” (Felszerelés 145)"
         ]
     },
     "gh-210": {
-        "name": "Raktározási díjak",
+        "name": "Storage Fees",
         "rewards": [
-            "“Felszerelés öv” (Felszerelés 141)"
+            "“Utility Belt” (Felszerelés 141)"
         ]
     },
     "gh-211": {
-        "name": "A vadállatok síkja",
+        "name": "Plane of Wild Beasts",
         "rewards": [
-            "“Fázisváltó bálvány” (Felszerelés 142)"
+            "“Phasing Idol” (Felszerelés 142)"
         ]
     },
     "gh-212": {
-        "name": "Az éj learatása",
+        "name": "Harvesting the Night",
         "rewards": [
-            "“Füst elixír” (Felszerelés 143)"
+            "“Smoke Elixir” (Felszerelés 143)"
         ]
     },
     "gh-213": {
-        "name": "Pestises kripta",
+        "name": "Plagued Crypt",
         "rewards": [
-            "“Pestis medálja” (Felszerelés 144)"
+            "“Pendant of the Plague” (Felszerelés 144)"
         ]
     },
     "gh-214": {
-        "name": "Bárdok csatája",
+        "name": "Battle of the Bards",
         "rewards": [
             "“Master’s Lute” (Felszerelés 146)"
         ]
     },
     "gh-215": {
-        "name": "Megromlott vadászat",
+        "name": "Corrupted Hunt",
         "rewards": [
-            "“Vadász köpenye” (Felszerelés 147)"
+            "“Cloak of the Hunter” (Felszerelés 147)"
         ]
     },
     "gh-216": {
-        "name": "Utóhatás",
+        "name": "Aftermath",
         "rewards": [
             "“Doctor’s Coat” (Felszerelés 148)"
         ]
     },
     "gh-217": {
-        "name": "Elemi titkok",
+        "name": "Elemental Secrets",
         "rewards": [
-            "“Elemi csizma” (Felszerelés 149)"
+            "“Elemental Boots” (Felszerelés 149)"
         ]
     },
     "gh-218": {
-        "name": "A ketrecbe zárt medve",
+        "name": "The Caged Bear",
         "rewards": [
-            "“Parancs botja” (Felszerelés 150)"
+            "“Staff of Command” (Felszerelés 150)"
         ]
     },
     "gh-219": {
-        "name": "Az idő homokja",
+        "name": "The Sands of Time",
         "rewards": [
-            "“Homok kardja” (Felszerelés 151)"
+            "“Sword of the Sands” (Felszerelés 151)"
         ]
     },
     "fc-96": {
-        "name": "Váratlan látogatók",
+        "name": "Unexpected Visitors",
         "requirements": "A Homály végzete (Általános) TELJESÍTVE",
         "rewards": [
             "10 tapasztalati pont mindenkinek",
@@ -835,14 +835,14 @@ export default {
         ]
     },
     "fc-97": {
-        "name": "Elmondatlan tudás",
+        "name": "Lore Untold",
         "rewards": [
             "10 arany mindenkinek",
             "Adjátok as 88, 89 and 90-es Városi eseményt a paklihoz"
         ]
     },
     "fc-98": {
-        "name": "Múlt lángokban",
+        "name": "Past in Flames",
         "rewards": [
             [
                 "10 arany mindenkinek",
@@ -861,27 +861,27 @@ export default {
         ]
     },
     "fc-99": {
-        "name": "Utórengések",
+        "name": "Aftershocks",
         "rewards": [
             [
                 "5 arany mindenkinek",
-                "“Kis ellenméreg” (Felszerelés 153)"
+                "“Minor Antidote” (Felszerelés 153)"
             ],
             [
                 "10 arany mindenkinek",
                 "+1 Városfejlettség",
-                "“Kis ellenméreg” (Felszerelés 153)"
+                "“Minor Antidote” (Felszerelés 153)"
             ]
         ]
     },
     "fc-100": {
-        "name": "Váltakozó fogaskerekek",
+        "name": "Shifting Gears",
         "rewards": [
-            "Válaszd az alábbi készletek egyikét: “Teleszkóplencse” (Felszerelés 059) és “Ősi fúró” (Felszerelés 112), VAGY “Különös fogaskerék” (Felszerelés 125) és “Távirányítású pók” (Felszerelés 126)"
+            "Válaszd az alábbi készletek egyikét: “Telescopic Lens” (Felszerelés 059) és “Ancient Drill” (Felszerelés 112), VAGY “Curious Gear” (Felszerelés 125) és “Remote Spider” (Felszerelés 126)"
         ]
     },
     "fc-101": {
-        "name": "Fátylas kripta",
+        "name": "Shrouded Crypt",
         "rewards": [
             "20 arany mindenkinek",
             "+1 hírnév",
@@ -889,33 +889,33 @@ export default {
         ]
     },
     "fc-102": {
-        "name": "A tudás bazárja",
+        "name": "Bazaar of Knowledge",
         "rewards": [
             "15 tapasztalati pont mindenkinek",
             "If no more than 2+C inhabitants were intimidated: +2 hírnév Otherwise: -2 hírnév"
         ]
     },
     "fc-103": {
-        "name": "Ahol szükség van rá",
+        "name": "Where It Is Needed",
         "rewards": [
             "+2 Városfejlettség",
             "Adjátok a 87-es Városi eseményt a paklihoz"
         ]
     },
     "fc-104": {
-        "name": "Tátongó seb",
+        "name": "A Gaping Wound",
         "rewards": [
-            "“Nagy mana-ital” (Felszerelés 048)"
+            "“Major Mana Potion” (Felszerelés 048)"
         ]
     },
     "fc-105": {
-        "name": "Egy kultusz szörnyetegei",
+        "name": "Monstrosities of a Cult",
         "rewards": [
-            "“Nagy ellenméreg” (Felszerelés 154)"
+            "“Major Antidote” (Felszerelés 154)"
         ]
     },
     "fc-106": {
-        "name": "Bonyolult munka",
+        "name": "Intricate Work",
         "rewards": [
             [
                 "175 arany mindenkinek, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements"
@@ -927,41 +927,41 @@ export default {
         ]
     },
     "fc-107": {
-        "name": "Gépi lángész",
+        "name": "Mechanical Genius",
         "rewards": [
             "5 tapasztalati pont mindenkinek"
         ]
     },
     "fc-108": {
-        "name": "A vég előjátéka",
+        "name": "Prologue to the End",
         "rewards": [
             [
-                "“Átokvédő páncél” (Felszerelés 155)"
+                "“Curseward Armor” (Felszerelés 155)"
             ],
             [
                 "2 “Throwing Axes” (Felszerelés 161)"
             ],
             [
-                "“Átokvédő páncél” (Felszerelés 155)",
+                "“Curseward Armor” (Felszerelés 155)",
                 "2 “Throwing Axes” (Felszerelés 161)"
             ]
         ]
     },
     "fc-109": {
-        "name": "Egy háború epilógusa",
+        "name": "Epilogue of a War",
         "rewards": [
             "10 tapasztalati pont mindenkinek",
-            "“Védő talizmán” (Felszerelés 052)"
+            "“Protective Charm” (Felszerelés 052)"
         ]
     },
     "fc-110": {
-        "name": "Körkörös megoldás",
+        "name": "A Circular Solution",
         "rewards": [
-            "“Kristály tiara” (Felszerelés 163)"
+            "“Crystal Tiara” (Felszerelés 163)"
         ]
     },
     "fc-111": {
-        "name": "A bilincsek meglazulnak",
+        "name": "The Shackles Loosen",
         "rewards": [
             [
                 "5 tapasztalati pont mindenkinek",
@@ -974,7 +974,7 @@ export default {
         ]
     },
     "fc-112": {
-        "name": "A dolog mélye",
+        "name": "The Bottom of It",
         "rewards": [
             [
                 "10 arany mindenkinek",
@@ -988,7 +988,7 @@ export default {
         ]
     },
     "fc-113": {
-        "name": "Az elveszett fonál",
+        "name": "The Lost Thread",
         "rewards": [
             "135 arany mindenkinek",
             "Ezt a pénzt azonnal el kell költeni Mozgás {MOVE}, Távolság {RANGE} vagy Ugrás {JUMP} fejlesztésekre",
@@ -996,13 +996,13 @@ export default {
         ]
     },
     "fc-114": {
-        "name": "Még nem száradt meg a tinta",
+        "name": "Ink Not Yet Dry",
         "rewards": [
             "Csapat áldás: a képességlap szintje alapján számított további fejlesztési költségek mostantól szintenként 5 arannyal csökkennek."
         ]
     },
     "fc-115": {
-        "name": "Bizonytalan jövő",
+        "name": "Future Uncertain",
         "rewards": [
             "+3 hírnév",
             "+1 Városfejlettség",
@@ -1011,7 +1011,7 @@ export default {
         ]
     },
     "fc-117": {
-        "name": "Torony a csillagokhoz",
+        "name": "Tower to the Stars",
         "rewards": [
             "15 arany mindenkinek",
             "1 ✓ mindenkinek",
@@ -1019,165 +1019,165 @@ export default {
         ]
     },
     "fc-116": {
-        "name": "Az elkerülhetetlen előrejelzése",
+        "name": "Forecast of the Inevitable",
         "rewards": [
-            "“Jóslat medencéje” (Felszerelés 164)"
+            "“Basin of Prophecy” (Felszerelés 164)"
         ]
     },
     "jotl-1": {
-        "name": "Útszéli lesállás"
+        "name": "Roadside Ambush"
     },
     "jotl-2": {
-        "name": "Lyuk a falban",
+        "name": "A Hole in the Wall",
         "rewards": [
             "25 arany mindenkinek",
             "Add Felszereléss 1-13 to the shop"
         ]
     },
     "jotl-3": {
-        "name": "A fekete hajó",
+        "name": "The Black Ship",
         "rewards": [
             "1 ✔ mindenkinek"
         ]
     },
     "jotl-4": {
-        "name": "Rituálé kőben",
+        "name": "A Ritual in Stone",
         "rewards": [
-            "“Mana-ital” (Felszerelés 14)"
+            "“Mana Potion” (Felszerelés 14)"
         ]
     },
     "jotl-5": {
-        "name": "Mélyebb megértés",
+        "name": "A Deeper Understanding",
         "rewards": [
             "25 tapasztalati pont mindenkinek"
         ]
     },
     "jotl-6": {
-        "name": "Megromlott kutatás",
+        "name": "Corrupted Research",
         "rewards": [
             "1 ✔ mindenkinek"
         ]
     },
     "jotl-7": {
-        "name": "Elsüllyedt daganat",
+        "name": "Sunken Tumor",
         "rewards": [
             "20 tapasztalati pont mindenkinek"
         ]
     },
     "jotl-8": {
-        "name": "Rejtett daganat"
+        "name": "Hidden Tumor"
     },
     "jotl-9": {
-        "name": "Robbanásszerű fejlődés",
+        "name": "Explosive Evolution",
         "rewards": [
             "20 tapasztalati pont mindenkinek",
             "Add Felszereléss 15-20 to the shop"
         ]
     },
     "jotl-10": {
-        "name": "A vesszőfutás",
+        "name": "The Gauntlet",
         "rewards": [
             "15 tapasztalati pont mindenkinek"
         ]
     },
     "jotl-11": {
-        "name": "Beszennyezett csatornák",
+        "name": "Defiled Sewers",
         "rewards": [
-            "“Bolhás kendő” (Felszerelés 28)"
+            "“Flea-Bitten Shawl” (Felszerelés 28)"
         ]
     },
     "jotl-12": {
-        "name": "Elbűvölő csatornák",
+        "name": "Beguiling Sewers",
         "rewards": [
-            "“Bolhás kendő” (Felszerelés 28)"
+            "“Flea-Bitten Shawl” (Felszerelés 28)"
         ]
     },
     "jotl-13": {
-        "name": "Aljas aratás",
+        "name": "Vile Harvest",
         "rewards": [
             "1 ✔ mindenkinek"
         ]
     },
     "jotl-14": {
-        "name": "Mérgező aratás",
+        "name": "Toxic Harvest",
         "rewards": [
             "1 ✔ mindenkinek"
         ]
     },
     "jotl-15": {
-        "name": "Beszennyezett vér",
+        "name": "Tainted Blood",
         "rewards": [
             "10 arany mindenkinek",
             "Add Felszereléss 21-26 to the shop"
         ]
     },
     "jotl-16": {
-        "name": "Vegyes eredmények",
+        "name": "Mixed Results",
         "rewards": [
             "15 tapasztalati pont mindenkinek",
-            "“Toronypajzs” (Felszerelés 29)"
+            "“Tower Shield” (Felszerelés 29)"
         ]
     },
     "jotl-17": {
-        "name": "Vörös alkony",
+        "name": "Red Twilight",
         "rewards": [
             "25 tapasztalati pont mindenkinek",
             "30 arany mindenkinek"
         ]
     },
     "jotl-18": {
-        "name": "A rablás",
+        "name": "The Heist",
         "rewards": [
             "10 tapasztalati pont mindenkinek"
         ]
     },
     "jotl-19": {
-        "name": "Tolvajok fészke",
+        "name": "Den of Thieves",
         "rewards": [
-            "“Erő gyűrűje” (Felszerelés 31)"
+            "“Ring of Strength” (Felszerelés 31)"
         ]
     },
     "jotl-20": {
-        "name": "Rossz helyre került áruk",
+        "name": "Misplaced Goods",
         "rewards": [
             "10 arany mindenkinek"
         ]
     },
     "jotl-21": {
-        "name": "A káosz ügynökei",
+        "name": "Agents of Chaos",
         "rewards": [
             "15 arany mindenkinek"
         ]
     },
     "jotl-22": {
-        "name": "Barátságtalan üzenet",
+        "name": "Unfriendly Message",
         "rewards": [
-            "“Acélgyűrű” (Felszerelés 33)"
+            "“Steel Ring” (Felszerelés 33)"
         ]
     },
     "jotl-23": {
-        "name": "A legjobbak legjobbja",
+        "name": "Best of the Best",
         "rewards": [
-            "“Szálkás bárd” (Felszerelés 34)"
+            "“Barbed Axe” (Felszerelés 34)"
         ]
     },
     "jotl-24": {
-        "name": "A Semmi lezárása",
+        "name": "Warding the Void",
         "rewards": [
-            "“Parancs talárja” (Felszerelés 35)"
+            "“Robes of Command” (Felszerelés 35)"
         ]
     },
     "jotl-25": {
-        "name": "A világ legjobb munkája",
+        "name": "The Greatest Job in the World",
         "rewards": [
-            "“Sugárhajtású csizma” (Felszerelés 36)"
+            "“Jet Boots” (Felszerelés 36)"
         ]
     },
     "fh-0": {
-        "name": "Üvöltés a hóban"
+        "name": "Howling in the Snow"
     },
     "fh-1": {
-        "name": "Lángoló város",
+        "name": "A Town in Flames",
         "rewards": [
             [
                 "Szerezz 2 morált"
@@ -1200,19 +1200,19 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "Algox felderítés",
+        "name": "Algox Scouting",
         "rewards": [
             "Gain 1 ✔ mindenkinek"
         ]
     },
     "fh-3": {
-        "name": "Algox offenzíva",
+        "name": "Algox Offensive",
         "rewards": [
             "Gain 1 ✔ mindenkinek"
         ]
     },
     "fh-4": {
-        "name": "A Jég szíve",
+        "name": "Heart of Ice",
         "rewards": [
             [
                 "Old fel a {FF} osztálydobozt",
@@ -1229,7 +1229,7 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "Fagyott kripta",
+        "name": "Frozen Crypt",
         "rewards": [
             "Szerezzetek 2 közös {LUMBER} erőforrást"
         ]
@@ -1241,59 +1241,59 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "A világ pereme",
+        "name": "Edge of the World",
         "rewards": [
             "10 tapasztalati pont mindenkinek"
         ]
     },
     "fh-8": {
-        "name": "Kristályárok",
+        "name": "Crystal Trench",
         "rewards": [
             "Szerezzetek 1 közös {LUMBER} erőforrást",
             "Szerezzetek 2 közös {HIDE} erőforrást"
         ]
     },
     "fh-9": {
-        "name": "Világító katakombák",
+        "name": "Glowing Catacombs",
         "rewards": [
             "Szerezzetek 2 közös {CORPSECAP} erőforrást"
         ]
     },
     "fh-10": {
-        "name": "Kristálykerítés",
+        "name": "Crystal Enclosure",
         "rewards": [
             "Szerezz 1 morált",
             "Szerezz 1 inspirációt"
         ]
     },
     "fh-11": {
-        "name": "Hótaszító-csúcs",
+        "name": "Snowscorn Peak",
         "rewards": [
             "Szerezz 1 morált",
             "Szerezz 1 inspirációt"
         ]
     },
     "fh-12": {
-        "name": "Templombejárat",
+        "name": "Temple Entrance",
         "rewards": [
             "Gain 15 tapasztalati pont mindenkinek"
         ]
     },
     "fh-13": {
-        "name": "Fagyott fjord",
+        "name": "Frozen Fjord",
         "rewards": [
-            "Gain “Döglött holló” (Felszerelés 233)"
+            "Gain “Dead Raven” (Felszerelés 233)"
         ]
     },
     "fh-14": {
-        "name": "Csipkézett zátonyok",
+        "name": "Jagged Shoals",
         "rewards": [
             "Válassz egyet: old fel a {CR} osztálydobozt VAGY old fel a {DT} osztálydobozt",
             "Add a WO-81 eseményt a téli előőrs paklihoz"
         ]
     },
     "fh-15": {
-        "name": "Ősi torony",
+        "name": "Ancient Spire",
         "rewards": [
             "Szerezzetek 1 közös {LUMBER} erőforrást",
             "Szerezzetek 1 közös {METAL} erőforrást",
@@ -1301,20 +1301,20 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Elhagyott lift",
+        "name": "Derelict Elevator",
         "rewards": [
             "Gain 5 tapasztalati pont mindenkinek",
             "Szerezz 1 inspirációt"
         ]
     },
     "fh-17": {
-        "name": "Kísértetjárta boltozat",
+        "name": "Haunted Vault",
         "rewards": [
             "Gain 1 ✔ mindenkinek"
         ]
     },
     "fh-18": {
-        "name": "Kristálymezők",
+        "name": "Crystal Fields",
         "rewards": [
             "Szerezz 1 morált",
             "Gain one random Felszerelés blueprint",
@@ -1322,7 +1322,7 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Égcsarnok",
+        "name": "Skyhall",
         "rewards": [
             "Szerezz 1 morált",
             "Gain one random Felszerelés blueprint",
@@ -1330,19 +1330,19 @@ export default {
         ]
     },
     "fh-20": {
-        "name": "A felszabadulás temploma",
+        "name": "Temple of Liberation",
         "rewards": [
             "Gain 15 arany mindenkinek"
         ]
     },
     "fh-21": {
-        "name": "Az Örök Fagy birodalma",
+        "name": "Realm of Endless Frost",
         "rewards": [
             "Gain 2 Városfejlettség"
         ]
     },
     "fh-22": {
-        "name": "Jégtáblák",
+        "name": "Ice Floes",
         "rewards": [
             "Veszítsetek 1 közös {LUMBER} erőforrást a 7-G lapon lévő vízlapkás mezők minden öt darabja után",
             "Gain 15 tapasztalati pont mindenkinek",
@@ -1350,19 +1350,19 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "A torony alagsora",
+        "name": "Spire Basement",
         "rewards": [
             "Gain one random Felszerelés blueprint"
         ]
     },
     "fh-24": {
-        "name": "A torony felső szintje",
+        "name": "Upper Spire",
         "rewards": [
             "Gain one random Felszerelés blueprint"
         ]
     },
     "fh-25": {
-        "name": "Rozsdás alagutak",
+        "name": "Rusted Tunnels",
         "rewards": [
             "Szerezzetek 2 közös {LUMBER} erőforrást",
             "Szerezzetek 2 közös {METAL} erőforrást",
@@ -1370,13 +1370,13 @@ export default {
         ]
     },
     "fh-26": {
-        "name": "Quatryl könyvtár",
+        "name": "Quatryl Library",
         "rewards": [
             "Gain 10 tapasztalati pont mindenkinek"
         ]
     },
     "fh-27": {
-        "name": "A téboly mélységei",
+        "name": "Depths of Delirium",
         "rewards": [
             "Gain 10 tapasztalati pont mindenkinek",
             "Gain 1 ✔ mindenkinek",
@@ -1384,13 +1384,13 @@ export default {
         ]
     },
     "fh-28": {
-        "name": "Csúcstalálkozó",
+        "name": "Summit Meeting",
         "rewards": [
             "Veszíts 1 morált"
         ]
     },
     "fh-29": {
-        "name": "A Torony háborúja A",
+        "name": "War of the Spire A",
         "rewards": [
             "Szerezz 3 morált",
             "Vedd ki az összes {ALGOX} eseményt az összes előőrs eseménypakliból",
@@ -1399,41 +1399,41 @@ export default {
         ]
     },
     "fh-30": {
-        "name": "A Torony háborúja B",
+        "name": "War of the Spire B",
         "rewards": [
             "Szerezz 3 morált",
-            "Szerezd meg a „A Hóbeszélők pusztítója” matricát",
+            "Szerezd meg a „Destroyer of the Snowspeakers” matricát",
             "Vedd ki az összes {ALGOX} eseményt az összes előőrs eseménypakliból",
             "Add a WO-69 eseményt a téli előőrs paklihoz",
             "Add hozzá a 34.2 szakaszt a naptárhoz öt hét múlva"
         ]
     },
     "fh-31": {
-        "name": "Ropogó alagút",
+        "name": "Crackling Tunnel",
         "rewards": [
             "Gain 5 tapasztalati pont mindenkinek",
             "Gain 10 arany mindenkinek"
         ]
     },
     "fh-32": {
-        "name": "Hollók ülőhelye",
+        "name": "Ravens' Roost",
         "rewards": [
-            "Gain “Tollas köpeny” (Felszerelés 69) blueprint"
+            "Gain “Feathered Cloak” (Felszerelés 69) blueprint"
         ]
     },
     "fh-33": {
-        "name": "Felolvadt erdő",
+        "name": "Thawed Wood",
         "rewards": [
             "Gain 5 tapasztalati pont mindenkinek for mindenkinek unrevealed dowsing rune",
-            "Gain “Parázs energiaforrás” (Felszerelés 244)",
+            "Gain “Ember Energy Source” (Felszerelés 244)",
             "Add hozzá a 135.1 szakaszt a naptárhoz három hét múlva"
         ]
     },
     "fh-34": {
-        "name": "A Torony tetején"
+        "name": "Top of the Spire"
     },
     "fh-35": {
-        "name": "Roncsverem",
+        "name": "Scrap Pit",
         "rewards": [
             "Szerezzetek 2 közös {LUMBER} erőforrást",
             "Szerezzetek 2 közös {METAL} erőforrást",
@@ -1441,23 +1441,23 @@ export default {
         ]
     },
     "fh-36": {
-        "name": "Eltemetett csatornák",
+        "name": "Buried Ducts",
         "rewards": [
             "Szerezzetek 3 közös {LUMBER} erőforrást",
             "Szerezzetek 3 közös {METAL} erőforrást",
-            "Szerezd meg: “Összetartó lencsék” Tervrajz (Felszerelés 67)"
+            "Szerezd meg: “Converging Lenses” Tervrajz (Felszerelés 67)"
         ]
     },
     "fh-37": {
-        "name": "A Holtak mérföldje",
+        "name": "The Dead Mile",
         "rewards": [
             "Szerezzetek 3 közös {LUMBER} erőforrást",
             "Szerezzetek 3 közös {METAL} erőforrást",
-            "Szerezd meg: “Összetartó lencsék” Tervrajz (Felszerelés 67)"
+            "Szerezd meg: “Converging Lenses” Tervrajz (Felszerelés 67)"
         ]
     },
     "fh-38": {
-        "name": "Az előre vezető út",
+        "name": "The Way Forward",
         "rewards": [
             "Gain 10 tapasztalati pont mindenkinek",
             "Gain 1 ✔ mindenkinek",
@@ -1465,21 +1465,21 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "Megromlott tábor",
+        "name": "Corrupted Camp",
         "rewards": [
             "Veszíts 1 inspirációt",
             "Gain 2 additional loot cards mindenkinek"
         ]
     },
     "fh-40": {
-        "name": "Segélyakció",
+        "name": "Relief Effort",
         "rewards": [
             "Veszíts 1 inspirációt",
             "Gain 2 additional loot cards mindenkinek"
         ]
     },
     "fh-41": {
-        "name": "Láncolatlan szilánk",
+        "name": "Unfettered Shard",
         "rewards": [
             "Gain 15 arany mindenkinek",
             "Szerezzetek 2 közös {AXENUT} erőforrást",
@@ -1487,7 +1487,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Napfénytelen árok",
+        "name": "Sunless Trench",
         "rewards": [
             "Gain 2 ✔ mindenkinek",
             "Add a B-16 eseményt a hajó paklihoz",
@@ -1495,55 +1495,55 @@ export default {
         ]
     },
     "fh-43": {
-        "name": "Elözönlött barikád",
+        "name": "Overrun Barricade",
         "rewards": [
             "Gain 10 tapasztalati pont mindenkinek"
         ]
     },
     "fh-44": {
-        "name": "Idegközpont",
+        "name": "Nerve Center",
         "rewards": [
             "Gain 5 arany mindenkinek",
-            "Gain “Energizáló pálca” (Felszerelés 73) blueprint"
+            "Gain “Energizing Baton” (Felszerelés 73) blueprint"
         ]
     },
     "fh-45": {
-        "name": "Élő gleccser",
+        "name": "Living Glacier",
         "rewards": [
             "Szerezz 1 morált",
             "Gain 1 ✔ mindenkinek"
         ]
     },
     "fh-46": {
-        "name": "Halott hágó",
+        "name": "Dead Pass",
         "rewards": [
             "Szerezz 1 morált",
             "Gain 10 tapasztalati pont mindenkinek"
         ]
     },
     "fh-47": {
-        "name": "Dögkeselyű-gerinc",
+        "name": "Carrion Ridge",
         "rewards": [
             "Gain 10 arany mindenkinek",
             "Szerezzetek 2 közös {LUMBER} erőforrást"
         ]
     },
     "fh-48": {
-        "name": "Hóvihar-sziget",
+        "name": "Blizzard island",
         "rewards": [
             "Gain 10 arany mindenkinek",
             "Szerezzetek 2 közös {METAL} erőforrást"
         ]
     },
     "fh-49": {
-        "name": "Tenger és kő alatt",
+        "name": "Beneath Sea and Stone",
         "rewards": [
             "Gain 5 tapasztalati pont mindenkinek",
             "Szerezz 1 inspirációt"
         ]
     },
     "fh-50": {
-        "name": "Robbanásszerű leereszkedés",
+        "name": "Explosive Descent",
         "rewards": [
             "Veszíts 2 inspirációt",
             "Szerezzetek 4 közös {LUMBER} erőforrást",
@@ -1551,33 +1551,33 @@ export default {
         ]
     },
     "fh-51": {
-        "name": "Az árvák termei",
+        "name": "Orphan's Halls",
         "rewards": [
             "Gain 10 tapasztalati pont mindenkinek",
-            "Gain “Sokkgránátok” (Felszerelés 74) blueprint"
+            "Gain “Shock Grenades” (Felszerelés 74) blueprint"
         ]
     },
     "fh-52": {
-        "name": "Múló állandóság",
+        "name": "Fleeting Permanence",
         "rewards": [
             "Szerezz 1 morált",
             "Szerezz 1 inspirációt"
         ]
     },
     "fh-53": {
-        "name": "Víz alatti trón",
+        "name": "Underwater Throne",
         "rewards": [
             "Gain 2 ✔ mindenkinek"
         ]
     },
     "fh-54": {
-        "name": "A roncsok között",
+        "name": "Among the Wreckage",
         "rewards": [
             "Gain 2 ✔ mindenkinek"
         ]
     },
     "fh-55": {
-        "name": "Szívváltozás",
+        "name": "Change of Heart",
         "rewards": [
             "Szerezz 2 morált",
             "Gain 2 Városfejlettség",
@@ -1588,7 +1588,7 @@ export default {
         ]
     },
     "fh-56": {
-        "name": "A Hírnök hívása",
+        "name": "Call of the Harbinger",
         "rewards": [
             "Szerezz 1 morált",
             "Szerezz 1 inspirációt",
@@ -1598,7 +1598,7 @@ export default {
         ]
     },
     "fh-57": {
-        "name": "A hó szentélye",
+        "name": "Sanctuary of Snow",
         "rewards": [
             "Szerezz 1 morált",
             "Szerezz 1 inspirációt",
@@ -1608,10 +1608,10 @@ export default {
         ]
     },
     "fh-58": {
-        "name": "Az árvák magja",
+        "name": "Orphan's Core",
         "rewards": [
             "Szerezz 1 morált",
-            "Gain “Kulcskártya” (Felszerelés 246)",
+            "Gain “Key Card” (Felszerelés 246)",
             "Szerezzetek 3 közös {LUMBER} erőforrást",
             "Szerezzetek 3 közös {METAL} erőforrást",
             "Szerezzetek 3 közös {HIDE} erőforrást",
@@ -1622,11 +1622,11 @@ export default {
         ]
     },
     "fh-59": {
-        "name": "Automaták lázadása",
+        "name": "Automation Uprising",
         "rewards": [
             "Szerezz 2 morált",
             "Gain 2 Városfejlettség",
-            "Gain “Kulcskártya” (Felszerelés 246)",
+            "Gain “Key Card” (Felszerelés 246)",
             "Old fel a {HV} osztálydobozt",
             "Vedd ki az összes {UNFETTERED} eseményt az összes előőrs eseménypakliból",
             "Add az SO-49 eseményt a nyári előőrs paklihoz és a WO-63 eseményt a téli előőrs paklihoz",
@@ -1634,12 +1634,12 @@ export default {
         ]
     },
     "fh-60": {
-        "name": "A Korona egyesítése",
+        "name": "Uniting the Crown",
         "rewards": [
             "Szerezz 2 morált",
             "Gain 1 Városfejlettség",
             "Gain 30 tapasztalati pont mindenkinek",
-            "Szerezd meg: “Empátia páncélja” (Felszerelés 224)",
+            "Szerezd meg: “Armor of Empathy” (Felszerelés 224)",
             "Old fel azt az osztálydobozt, amely még zárva van: {CR} vagy {DT}",
             "Vedd ki az összes {LURKERS} eseményt az összes előőrs eseménypakliból",
             "Add az SO-48 eseményt a nyári előőrs paklihoz és a B-17 eseményt a hajó paklihoz",
@@ -1647,26 +1647,26 @@ export default {
         ]
     },
     "fh-61": {
-        "name": "Élet és halál",
+        "name": "Life and Death",
         "rewards": [
             "Old fel a {SH} osztálydobozt",
             "Add hozzá a 140.3 szakaszt a naptárhoz egy hét múlva"
         ]
     },
     "fh-62": {
-        "name": "A Láncolatlan pecsét",
+        "name": "The Unfettered Seal",
         "rewards": [
             "Gain 1 Városfejlettség"
         ]
     },
     "fh-63": {
-        "name": "A Savvas pecsét",
+        "name": "The Savvas Seal",
         "rewards": [
             "Gain 2 Városfejlettség"
         ]
     },
     "fh-64": {
-        "name": "A Frosthaven pecsét",
+        "name": "The Frosthaven Seal",
         "rewards": [
             "Szerezz 3 morált",
             "Gain 3 Városfejlettség",
@@ -1674,7 +1674,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Erős alapok",
+        "name": "A Strong Foundation",
         "rewards": [
             "Szerezzetek 2 közös {LUMBER} erőforrást",
             "Szerezzetek 2 közös {METAL} erőforrást",
@@ -1682,28 +1682,28 @@ export default {
         ]
     },
     "fh-66": {
-        "name": "Elemi magok",
+        "name": "Elemental Cores",
         "rewards": [
-            "Gain “Elemi kő” (Felszerelés 212)",
+            "Gain “Elemental Stone” (Felszerelés 212)",
             "Add hozzá a 29.3 szakaszt a naptárhoz hat hét múlva"
         ]
     },
     "fh-67": {
-        "name": "Magösszehangolás",
+        "name": "Core Attunement",
         "rewards": [
             "Szerezz 1 morált",
             "Gain 1 Városfejlettség"
         ]
     },
     "fh-68": {
-        "name": "A kín arca",
+        "name": "The Face of Torment",
         "rewards": [
             "“Aesther Outpost” personal küldetés teljesítve",
             "Add hozzá a 133.1 szakaszt a naptárhoz kettő hét múlva"
         ]
     },
     "fh-69": {
-        "name": "Szent talaj",
+        "name": "Sacred Soil",
         "rewards": [
             "Szerezzetek 1 {ARROWVINE} erőforrást",
             "Szerezzetek 1 {AXENUT} erőforrást",
@@ -1712,14 +1712,14 @@ export default {
         ]
     },
     "fh-70": {
-        "name": "Az igazi tölgy",
+        "name": "The True Oak",
         "rewards": [
             "“The True Oak” personal küldetés teljesítve",
             "Gain 1 Városfejlettség"
         ]
     },
     "fh-71": {
-        "name": "A dokk megszállása",
+        "name": "Invasion of the Dock",
         "rewards": [
             "Sebezz meg egy tetszőleges páros számú épületet 71 és 89 között",
             "Gain 10 tapasztalati pont mindenkinek",
@@ -1727,64 +1727,64 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "Egy óriási jégtömb",
+        "name": "A Giant Block of Ice",
         "rewards": [
             "Gain 1 ✔ mindenkinek"
         ]
     },
     "fh-73": {
-        "name": "Úszó roncsok",
+        "name": "Flotsam",
         "rewards": [
             "Szerezzetek 3 közös {LUMBER} erőforrást",
             "Add hozzá a 146.1 szakaszt a naptárhoz öt hét múlva"
         ]
     },
     "fh-74": {
-        "name": "Rések az úton",
+        "name": "Gaps in the Road",
         "rewards": [
             "Gain one random Felszerelés blueprint"
         ]
     },
     "fh-75": {
-        "name": "Beszivárgás az odúba",
+        "name": "Infiltraiting the Lair",
         "rewards": [
             "Gain 10 arany mindenkinek"
         ]
     },
     "fh-76": {
-        "name": "Apoteózis",
+        "name": "Apotheosis",
         "rewards": [
             [
                 "“Threat from the Deep” personal küldetés teljesítve",
-                "Gain “Hullámpenge” (Felszerelés 201)",
+                "Gain “Wave Blade” (Felszerelés 201)",
                 "Add a B-18 eseményt a hajó paklihoz"
             ],
             []
         ]
     },
     "fh-77": {
-        "name": "A Halkirály felemelkedése",
+        "name": "Fish King's Ascension",
         "rewards": [
             "“Threat from the Deep” personal küldetés teljesítve",
-            "Gain “Hullámpenge” (Felszerelés 201)",
+            "Gain “Wave Blade” (Felszerelés 201)",
             "Add a B-19 eseményt a hajó paklihoz"
         ]
     },
     "fh-78": {
-        "name": "A Lurker-probléma",
+        "name": "The Lurker Problem",
         "rewards": [
             "Gain 10 tapasztalati pont mindenkinek"
         ]
     },
     "fh-79": {
-        "name": "Ereklye",
+        "name": "Relic",
         "rewards": [
             "Szerezz 3 morált",
             "Add hozzá a 45.2 szakaszt a naptárhoz három hét múlva"
         ]
     },
     "fh-80": {
-        "name": "Megújított ereklye",
+        "name": "Relic Renewed",
         "rewards": [
             "Szerezzetek 2 közös {LUMBER} erőforrást",
             "Szerezzetek 2 közös {METAL} erőforrást",
@@ -1793,46 +1793,46 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Romba dőlt kutatólabor",
+        "name": "Ruinous Research Lab",
         "rewards": [
             "Gain 1 Városfejlettség",
-            "Gain “Aesther köntös” (Felszerelés 70) blueprint"
+            "Gain “Aesther Robe” (Felszerelés 70) blueprint"
         ]
     },
     "fh-82": {
-        "name": "Északi expedíció",
+        "name": "Expedition North",
         "rewards": [
             "Gain 2 Városfejlettség",
             "Add hozzá a következő Elfeledett körök felszereléseket a Frosthaven készletéhez: 153, 159 és 161"
         ]
     },
     "fh-83": {
-        "name": "Emelkedő sósvíz",
+        "name": "Rising Brine",
         "rewards": [
-            "Gain “Óriás piranhasertés gerince” (Felszerelés 202)"
+            "Gain “Giant Piranha Pig Spine” (Felszerelés 202)"
         ]
     },
     "fh-84": {
-        "name": "Itt iszapok laknak",
+        "name": "Here There Be Oozes",
         "rewards": [
-            "Gain “nyálka fiola” (Felszerelés 234)"
+            "Gain “ooze vial” (Felszerelés 234)"
         ]
     },
     "fh-85": {
-        "name": "Halálos időtöltések",
+        "name": "Deadly Pastimes",
         "rewards": [
             "Gain 15 tapasztalati pont mindenkinek",
             "Gain 1 ✔ mindenkinek"
         ]
     },
     "fh-86": {
-        "name": "A Fehér Hölgy",
+        "name": "The Lady in White",
         "rewards": [
             "Szerezz 2 morált"
         ]
     },
     "fh-87": {
-        "name": "A Gyűjtemény",
+        "name": "The Collection",
         "rewards": [
             [
                 "Szerezz 2 inspirációt"
@@ -1843,20 +1843,20 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "A Gyűjtemény zárókő",
+        "name": "Collection's Capstone",
         "rewards": [
             "Szerezz 2 morált"
         ]
     },
     "fh-89": {
-        "name": "Fékezett tűz",
+        "name": "A Contained Fire",
         "rewards": [
             "Szerezzetek 2 közös {ROCKROOT} erőforrást",
             "Szerezzetek 2 közös {LUMBER} erőforrást"
         ]
     },
     "fh-90": {
-        "name": "Fagyott kincs",
+        "name": "Frozen Treasure",
         "rewards": [
             [
                 "Gain 1 ✔ mindenkinek",
@@ -1872,90 +1872,90 @@ export default {
         ]
     },
     "fh-91": {
-        "name": "Partmenti rohanás",
+        "name": "Shoreline Scramble",
         "rewards": [
             "Szerezzetek 2 közös {LUMBER} erőforrást",
             "Szerezz 1 morált"
         ]
     },
     "fh-92": {
-        "name": "Süllyedő hajó",
+        "name": "Sinking Ship",
         "rewards": [
             "Összesen veszítsetek 5xC/2 zsákmányjelölőt. A zsákmányjelölőket ezután zsákmánylapokra váltjátok",
             "Add hozzá a 181.2 szakaszt a naptárhoz egy hét múlva"
         ]
     },
     "fh-93": {
-        "name": "Téli verekedés",
+        "name": "Midwinter Brawl",
         "rewards": [
             [
-                "Gain “Kis patkány” (Felszerelés 235)"
+                "Gain “Small Rat” (Felszerelés 235)"
             ],
             [
-                "Gain “Sült szárnyas” (Felszerelés 79)"
+                "Gain “Roasted Fowl” (Felszerelés 79)"
             ]
         ]
     },
     "fh-94": {
-        "name": "Nagyszerű kilátás",
+        "name": "A Grand View",
         "rewards": [
             "Gain 10 tapasztalati pont mindenkinek"
         ]
     },
     "fh-95": {
-        "name": "A holtak eltemetéséhez",
+        "name": "To Bury the Dead",
         "rewards": [
             "Szerezz 1 morált",
             "Gain 10 arany mindenkinek"
         ]
     },
     "fh-96": {
-        "name": "Föld alatti állomás",
+        "name": "Underground Station",
         "rewards": [
             "Szerezz 1 morált",
             "Gain 5 tapasztalati pont mindenkinek"
         ]
     },
     "fh-97": {
-        "name": "Programvezérlő csomópont",
+        "name": "Program Control Nexus",
         "rewards": [
             "Szerezzetek 5 közös {METAL} erőforrást"
         ]
     },
     "fh-98": {
-        "name": "Összeomló szellőzőakna",
+        "name": "Collapsing Vent",
         "rewards": [
             "Gain 1 Városfejlettség"
         ]
     },
     "fh-99": {
-        "name": "Börtönszökés",
+        "name": "Prison Break",
         "rewards": [
             "Gain 10 arany mindenkinek"
         ]
     },
     "fh-100": {
-        "name": "A raj belsejében",
+        "name": "Inside the Swarm",
         "rewards": [
             "Gain 5 arany mindenkinek",
             "Gain 10 tapasztalati pont mindenkinek"
         ]
     },
     "fh-101": {
-        "name": "Ragályhordozók könyvtára",
+        "name": "Harrower Library",
         "rewards": [
             "Gain 1 ✔ mindenkinek",
             "Gain 10 tapasztalati pont mindenkinek"
         ]
     },
     "fh-102": {
-        "name": "A feketeségbe",
+        "name": "Into the Black",
         "rewards": [
             "Gain 20 tapasztalati pont mindenkinek"
         ]
     },
     "fh-103": {
-        "name": "Az ólomajtó",
+        "name": "The Lead Door",
         "rewards": [
             "Gain 1 ✔ mindenkinek",
             "Gain 30 tapasztalati pont mindenkinek",
@@ -1963,27 +1963,27 @@ export default {
         ]
     },
     "fh-104": {
-        "name": "A napforduló romjai",
+        "name": "Ruins of the Solstice",
         "rewards": [
             "Szerezzetek 2 közös {SNOWTHISTLE} erőforrást",
             "Add a WR-49 eseményt a téli út paklihoz"
         ]
     },
     "fh-105": {
-        "name": "A napéjegyenlőség romjai",
+        "name": "Ruins of the Equinox",
         "rewards": [
             "Szerezzetek 2 közös {FLAMEFRUIT} erőforrást",
             "Add hozzá a 159.4 szakaszt a naptárhoz négy hét múlva"
         ]
     },
     "fh-106": {
-        "name": "A Tempus kovácsműhely",
+        "name": "The Tempus Forge",
         "rewards": [
-            "Gain “Évszakok kulcsa” (Felszerelés 213)"
+            "Gain “Key of Seasons” (Felszerelés 213)"
         ]
     },
     "fh-107": {
-        "name": "Az én magánbirodalmam",
+        "name": "My Private Empire",
         "rewards": [
             [
                 "Szerezzetek 1 tetszőleges közös anyag erőforrást"
@@ -1999,56 +1999,56 @@ export default {
             ],
             [
                 "Szerezzetek 5 tetszőleges közös anyag erőforrást",
-                "Gain “Ventillion kupája” (Felszerelés 214)"
+                "Gain “Cup of Ventillion” (Felszerelés 214)"
             ]
         ]
     },
     "fh-108": {
-        "name": "Csillogó verem",
+        "name": "Lustrous Pit",
         "rewards": [
             "Szerezz 2 morált",
             "Szerezz 2 inspirációt"
         ]
     },
     "fh-109": {
-        "name": "Tomboló gyár",
+        "name": "Furious Factory",
         "rewards": [
             "Szerezzetek 5 közös {METAL} erőforrást"
         ]
     },
     "fh-110": {
-        "name": "Az Őrző temploma",
+        "name": "Guardian's Temple",
         "rewards": [
             "Gain “Rose Guantlet” (Felszerelés 75) blueprint"
         ]
     },
     "fh-111": {
-        "name": "Jégbarlang",
+        "name": "Ice Cave",
         "rewards": [
-            "Gain “Repedt tükör” (Felszerelés 236)"
+            "Gain “Cracked Mirror” (Felszerelés 236)"
         ]
     },
     "fh-112": {
-        "name": "Farkasok nevelték",
+        "name": "Raised by Wolves",
         "rewards": [
             "Gain 15 tapasztalati pont mindenkinek"
         ]
     },
     "fh-113": {
-        "name": "Buja barlang",
+        "name": "Lush Grotto",
         "rewards": [
             "Szerezzetek 4 tetszőleges közös gyógynövény erőforrást"
         ]
     },
     "fh-114": {
-        "name": "Munkaszünet",
+        "name": "Work Freeze",
         "rewards": [
             "Szerezzetek 5 közös {HIDE} erőforrást",
             "Add hozzá a 86.1 szakaszt a naptárhoz négy hét múlva"
         ]
     },
     "fh-115": {
-        "name": "Pilon-problémák",
+        "name": "Pylon Problems",
         "rewards": [
             [
                 "Gain 15 tapasztalati pont mindenkinek",
@@ -2081,7 +2081,7 @@ export default {
         ]
     },
     "fh-116": {
-        "name": "Karavánőrök",
+        "name": "Caravan Guards",
         "rewards": [
             [
                 "Szerezz 1 morált"
@@ -2123,29 +2123,29 @@ export default {
         ]
     },
     "fh-117": {
-        "name": "Várakozási játék",
+        "name": "A Waiting Game",
         "rewards": [
             "Szerezzetek 4 közös {HIDE} erőforrást",
             "Gain 10 arany mindenkinek"
         ]
     },
     "fh-118": {
-        "name": "Lurker-nekromancia",
+        "name": "Lurker Necromancy",
         "rewards": [
-            "Gain “Örök élet amulettje” (Felszerelés 66) blueprint",
+            "Gain “Amulet of Eternal Life” (Felszerelés 66) blueprint",
             "Váltsatok be minden jelölőt zsákmánylapokra"
         ]
     },
     "fh-119": {
-        "name": "Ragyogó por",
+        "name": "Radiant Dust",
         "rewards": [
-            "Költs el 7 megmaradt port, hogy megszerezd az “Irányítás jogara” felszerelést (Felszerelés 203)",
+            "Költs el 7 megmaradt port, hogy megszerezd az “Scepter of Control” felszerelést (Felszerelés 203)",
             "Költs el 1 megmaradt port, hogy szerezz 1 tetszőleges anyag erőforrást",
             "Költs el 2 megmaradt port, hogy szerezz 1 gyógynövény erőforrást"
         ]
     },
     "fh-120": {
-        "name": "Befolyás alatt",
+        "name": "Under the Influence",
         "rewards": [
             "Szerezz 1 morált",
             "Szerezzetek 2 közös {LUMBER} erőforrást",
@@ -2153,7 +2153,7 @@ export default {
         ]
     },
     "fh-121": {
-        "name": "Fekete emlékek",
+        "name": "Black Memories",
         "rewards": [
             [
                 "Add hozzá a 184.3 szakaszt a naptárhoz hat hét múlva"
@@ -2167,7 +2167,7 @@ export default {
         ]
     },
     "fh-122": {
-        "name": "Az örök sóvárgás",
+        "name": "The Eternal Crave",
         "rewards": [
             [
                 "Gain 10 arany mindenkinek"
@@ -2179,32 +2179,32 @@ export default {
         ]
     },
     "fh-123": {
-        "name": "A Titán",
+        "name": "The Titan",
         "rewards": [
             "Szerezz 1 morált",
             "Szerezz 1 inspirációt"
         ]
     },
     "fh-124": {
-        "name": "Növekvő probléma",
+        "name": "A Growing Problem",
         "rewards": [
             "Gain 15 tapasztalati pont mindenkinek"
         ]
     },
     "fh-125": {
-        "name": "A leghosszabb másodperc",
+        "name": "The Longest Second",
         "rewards": [
-            "Gain “Időbeli amulett” (Felszerelés 194)"
+            "Gain “Temporal Amulet” (Felszerelés 194)"
         ]
     },
     "fh-126": {
-        "name": "Oroszlán Joseph",
+        "name": "Joseph the Lion",
         "rewards": [
             "Gain 10 arany mindenkinek"
         ]
     },
     "fh-127": {
-        "name": "Elhagyott teherhajó",
+        "name": "Derelict Freighter",
         "rewards": [
             [
                 "Gain 10 arany mindenkinek"
@@ -2216,18 +2216,18 @@ export default {
             [
                 "Gain 10 arany mindenkinek",
                 "Szerezzetek 2 közös {LUMBER} erőforrást",
-                "Szerezd meg: “Háromszögletű kalap” 195"
+                "Szerezd meg: “Tri-Corner Hat” 195"
             ],
             [
                 "Gain 10 arany mindenkinek",
                 "Szerezzetek 2 közös {LUMBER} erőforrást",
-                "Szerezd meg: “Háromszögletű kalap” 195",
+                "Szerezd meg: “Tri-Corner Hat” 195",
                 "Gain 1 Városfejlettség"
             ]
         ]
     },
     "fh-128": {
-        "name": "Egy magas, részeg mese",
+        "name": "A Tall Drunken Tale",
         "rewards": [
             [
                 "Szerezz 1 morált",
@@ -2239,19 +2239,19 @@ export default {
             ],
             [
                 "Szerezz 3 morált",
-                "Gain “Elkábító bögre” (Felszerelés 215)",
+                "Gain “Befuddling Mug” (Felszerelés 215)",
                 "Add hozzá a 100.3 szakaszt a naptárhoz három hét múlva"
             ]
         ]
     },
     "fh-129": {
-        "name": "Hogyan állítsunk lest",
+        "name": "How to Lay an Ambush",
         "rewards": [
             "Gain 1 ✔ mindenkinek"
         ]
     },
     "fh-130": {
-        "name": "És aztán egy patak",
+        "name": "And Then, a Stream",
         "rewards": [
             [
                 "Veszíts 3 morált",
@@ -2264,14 +2264,14 @@ export default {
         ]
     },
     "fh-131": {
-        "name": "A táncoló jéghegy",
+        "name": "The Dancing Iceberg",
         "rewards": [
             "Gain 10 tapasztalati pont mindenkinek",
-            "Gain “Megbűvölő kagyló” (Felszerelés 237)"
+            "Gain “Mesmerizing Seashell” (Felszerelés 237)"
         ]
     },
     "fh-132": {
-        "name": "A macskaerő temploma",
+        "name": "Temple of Feline Power",
         "rewards": [
             "Szerezz 1 inspirációt"
         ]
@@ -2279,17 +2279,17 @@ export default {
     "fh-133": {
         "name": "Bolt",
         "rewards": [
-            "Gain “Repedt bálvány” (Felszerelés 238)"
+            "Gain “Cracked Idol” (Felszerelés 238)"
         ]
     },
     "fh-134": {
-        "name": "A tudás tornya",
+        "name": "Tower of Knowledge",
         "rewards": [
-            "Gain “Konfliktus kötete” (Felszerelés 219)"
+            "Gain “Tome of Conflict” (Felszerelés 219)"
         ]
     },
     "fh-135": {
-        "name": "Belara erődje",
+        "name": "Belara's Keep",
         "rewards": [
             "Szerezz 2 morált",
             "Gain 2 Városfejlettség",
@@ -2298,14 +2298,14 @@ export default {
         ]
     },
     "fh-136": {
-        "name": "Elhagyott rejtekhely",
+        "name": "Abandoned Hideout",
         "rewards": [
             "Gain 20 arany mindenkinek",
-            "Gain “Ősi érme” (Felszerelés 245)"
+            "Gain “Ancient Coin” (Felszerelés 245)"
         ]
     },
     "fh-137": {
-        "name": "A Kalózkirálynő zsákmánya",
+        "name": "Pirate Queen's Haul",
         "rewards": [
             "Gain 2 Városfejlettség",
             "Szerezz 3 morált",
@@ -2314,105 +2314,105 @@ export default {
         ]
     },
     "fh-201": {
-        "name": "A természet csodája",
+        "name": "Wonder of Nature",
         "rewards": [
-            "“Vándor furkósbotja” (Felszerelés 248)"
+            "“Wanderer's Club” (Felszerelés 248)"
         ]
     },
     "fh-202": {
-        "name": "Verseny az idővel",
+        "name": "Race Against the Clock",
         "rewards": [
-            "“Újrakalibráló ravasz” (Felszerelés 249)"
+            "“Recalibration Trigger” (Felszerelés 249)"
         ]
     },
     "fh-203": {
-        "name": "Felderítő lesállás",
+        "name": "Scouting Ambush",
         "rewards": [
-            "“Igazság lándzsája” (Felszerelés 250)"
+            "“Spear of Justice” (Felszerelés 250)"
         ]
     },
     "fh-204": {
-        "name": "Az éj holtjai",
+        "name": "The Dead of Night",
         "rewards": [
-            "“Lélek urna” (Felszerelés 251)"
+            "“Soul Urn” (Felszerelés 251)"
         ]
     },
     "fh-205": {
-        "name": "Csontok a földben",
+        "name": "Bones in the Dirt",
         "rewards": [
-            "“Fekete föld kódex” (Felszerelés 252)"
+            "“Black Earth Codex” (Felszerelés 252)"
         ]
     },
     "fh-206": {
-        "name": "Oszd meg és uralkodj",
+        "name": "Divide and Conquer",
         "rewards": [
-            "“Kettősség álarca” (Felszerelés 253)"
+            "“Mask of Duality” (Felszerelés 253)"
         ]
     },
     "fh-207": {
-        "name": "Az ősök ösvénye",
+        "name": "Path of Ancestry",
         "rewards": [
-            "“Ősi penge” (Felszerelés 254)"
+            "“Ancestral Blade” (Felszerelés 254)"
         ]
     },
     "fh-208": {
-        "name": "Omladozó leereszkedés",
+        "name": "Crumbling Descent",
         "rewards": [
-            "“Hegy szíve” (Felszerelés 255)"
+            "“Mountain's Heart” (Felszerelés 255)"
         ]
     },
     "fh-209": {
-        "name": "A rezonancia hangolása",
+        "name": "Tuning the Resonance",
         "rewards": [
-            "“Zengő szilánk” (Felszerelés 256)"
+            "“Sonorous Shard” (Felszerelés 256)"
         ]
     },
     "fh-210": {
-        "name": "Pompás csapda",
+        "name": "A Magnificent Trap",
         "rewards": [
-            "“Ravasz álca” (Felszerelés 257)"
+            "“Sly Camouflage” (Felszerelés 257)"
         ]
     },
     "fh-211": {
-        "name": "A szenvedés gyűjteménye",
+        "name": "A Collection of Suffering",
         "rewards": [
-            "“Gyötrelem koponyája” (Felszerelés 258)"
+            "“Skull of Agony” (Felszerelés 258)"
         ]
     },
     "fh-212": {
-        "name": "Hó a hó ellen",
+        "name": "Fighting Snow with Snow",
         "rewards": [
-            "“Vihar faragvány” (Felszerelés 259)"
+            "“Storm Carving” (Felszerelés 259)"
         ]
     },
     "fh-213": {
-        "name": "A jég alatt",
+        "name": "Under the Ice",
         "rewards": [
-            "“Fagyasztó gömb” (Felszerelés 260)"
+            "“Freezing Orb” (Felszerelés 260)"
         ]
     },
     "fh-214": {
-        "name": "Újratöltés",
+        "name": "Recharge",
         "rewards": [
-            "“Energizált modul” (Felszerelés 261)"
+            "“Energized Module” (Felszerelés 261)"
         ]
     },
     "fh-215": {
-        "name": "Kazánház",
+        "name": "Boiler Room",
         "rewards": [
-            "“Kipufogó csizma” (Felszerelés 262)"
+            "“Exhaust Boots” (Felszerelés 262)"
         ]
     },
     "fh-216": {
-        "name": "Vérszagú munka",
+        "name": "Wet Work",
         "rewards": [
             "“Warlord's Skull” (Felszerelés 263)"
         ]
     },
     "fh-217": {
-        "name": "Nekicsapódás a hullámoknak",
+        "name": "Crash Against the Waves",
         "rewards": [
-            "“Spirálos medál” (Felszerelés 264)"
+            "“Spiraled Medallion” (Felszerelés 264)"
         ]
     },
     "cs-1": {
@@ -2481,7 +2481,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 Városfejlettség",
-            "Minden karakter megkapja az alábbiak egyikét: “Nagy serkentő ital” (Felszerelés gh-34), “Nagy erőital” (Felszerelés gh-41), “Nagy mana-ital” (Felszerelés gh-48)\nHa ezek közül egyik sem érhető el a boltban, ehelyett szerezz 20 aranyat"
+            "Minden karakter megkapja az alábbiak egyikét: “Major Stamina Potion” (Felszerelés gh-34), “Major Power Potion” (Felszerelés gh-41), “Major Mana Potion” (Felszerelés gh-48)\nHa ezek közül egyik sem érhető el a boltban, ehelyett szerezz 20 aranyat"
         ]
     },
     "cs-14": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "“Nagy mana-ital” (Felszerelés gh-48)"
+            "“Major Mana Potion” (Felszerelés gh-48)"
         ]
     },
     "cs-20": {
@@ -2533,7 +2533,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "“Magma gázlócsizma” (Felszerelés gh-99)"
+            "“Magma Waders” (Felszerelés gh-99)"
         ]
     },
     "cs-22": {
@@ -2931,11 +2931,11 @@ export default {
         "rewards": [
             [
                 "40 arany mindenkinek",
-                "“Szegecselt bőrvért” design (Felszerelés gh-30) OR “Rohanás csizmája” design (Felszerelés gh-36)"
+                "“Studded Leather” design (Felszerelés gh-30) OR “Boots of Dashing” design (Felszerelés gh-36)"
             ],
             [
                 "2 ✓ mindenkinek",
-                "“Szerencsés szem” design (Felszerelés gh-63)"
+                "“Lucky Eye” design (Felszerelés gh-63)"
             ]
         ]
     },
@@ -3466,7 +3466,7 @@ export default {
         "rewards": [
             "15 arany mindenkinek",
             "10 tapasztalati pont mindenkinek",
-            "Szerezd meg: “Spirál gyűrű” (Felszerelés 136)"
+            "Szerezd meg: “Helix Ring” (Felszerelés 136)"
         ]
     },
     "gh2-68": {
@@ -3512,7 +3512,7 @@ export default {
         "name": "Szélfútta felföld",
         "rewards": [
             "+1 Városfejlettség",
-            "Szerezd meg: “Nagy erőital” (Felszerelés 53)"
+            "Szerezd meg: “Major Power Potion” (Felszerelés 53)"
         ]
     },
     "gh2-75": {
@@ -3548,7 +3548,7 @@ export default {
         "rewards": [
             "100 arany mindenkinek",
             "+2 Városfejlettség",
-            "Szerezd meg: “Az árruló szíve” (Felszerelés 133)",
+            "Szerezd meg: “Heart of the Betrayer” (Felszerelés 133)",
             "Ezt a pénzt azonnal fejlesztésekre kell költeni"
         ]
     },
@@ -3596,7 +3596,7 @@ export default {
     "gh2-87": {
         "name": "Kénbánya",
         "rewards": [
-            "Szerezd meg: “Ősi fúró” (Felszerelés 109)"
+            "Szerezd meg: “Ancient Drill” (Felszerelés 109)"
         ]
     },
     "gh2-88": {
@@ -3608,7 +3608,7 @@ export default {
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "Szerezd meg: 2× “Nagy gyógyital” (Felszerelés 37)"
+            "Szerezd meg: 2× “Major Healing Potion” (Felszerelés 37)"
         ]
     },
     "gh2-90": {
@@ -3660,7 +3660,7 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "10 tapasztalati pont mindenkinek",
-            "Szerezd meg: “Gyűlölet koponyája” (Felszerelés 111)"
+            "Szerezd meg: “Skull of Hatred” (Felszerelés 111)"
         ]
     },
     "gh2-99": {
@@ -3712,7 +3712,7 @@ export default {
     "gh2-202": {
         "name": "Szerencsétlen behatolás",
         "rewards": [
-            "Szerezd meg: “Fókuszáló sugár” (Felszerelés 154)"
+            "Szerezd meg: “Focusing Ray” (Felszerelés 154)"
         ]
     },
     "gh2-203": {
@@ -3724,19 +3724,19 @@ export default {
     "gh2-204": {
         "name": "Material Concerns",
         "rewards": [
-            "Szerezd meg: “Néma stilett” (Felszerelés 156)"
+            "Szerezd meg: “Silent Stiletto” (Felszerelés 156)"
         ]
     },
     "gh2-205": {
         "name": "Kővédelem",
         "rewards": [
-            "Szerezd meg: “Kő talizmán” (Felszerelés 157)"
+            "Szerezd meg: “Stone Charm” (Felszerelés 157)"
         ]
     },
     "gh2-206": {
         "name": "Vermling Liberation",
         "rewards": [
-            "Szerezd meg: “Pszichikus kés” (Felszerelés 158)"
+            "Szerezd meg: “Psychic Knife” (Felszerelés 158)"
         ]
     },
     "gh2-207": {
@@ -3748,13 +3748,13 @@ export default {
     "gh2-208": {
         "name": "Raktározási díjak",
         "rewards": [
-            "Szerezd meg: “Felszerelés öv” (Felszerelés 160)"
+            "Szerezd meg: “Utility Belt” (Felszerelés 160)"
         ]
     },
     "gh2-209": {
         "name": "A vadállatok síkja",
         "rewards": [
-            "Szerezd meg: “Fázisváltó bálvány” (Felszerelés 161)"
+            "Szerezd meg: “Phasing Idol” (Felszerelés 161)"
         ]
     },
     "gh2-210": {
@@ -3766,31 +3766,31 @@ export default {
     "gh2-211": {
         "name": "Pestises kripta",
         "rewards": [
-            "Szerezd meg: “Pestis medálja” (Felszerelés 163)"
+            "Szerezd meg: “Pendant of the Plague” (Felszerelés 163)"
         ]
     },
     "gh2-212": {
         "name": "Természetellenes sértések",
         "rewards": [
-            "Szerezd meg: “Halál álarca” (Felszerelés 164)"
+            "Szerezd meg: “Mask of Death” (Felszerelés 164)"
         ]
     },
     "gh2-213": {
         "name": "Bárdok csatája",
         "rewards": [
-            "Szerezd meg: “Mester lantja” (Felszerelés 165)"
+            "Szerezd meg: “Master's Lute” (Felszerelés 165)"
         ]
     },
     "gh2-214": {
         "name": "Megromlott vadászat",
         "rewards": [
-            "Szerezd meg: “Vadász köpenye” (Felszerelés 166)"
+            "Szerezd meg: “Cloak of the Hunter” (Felszerelés 166)"
         ]
     },
     "gh2-215": {
         "name": "Utóhatás",
         "rewards": [
-            "Szerezd meg: “Orvos köpenye” (Felszerelés 167)"
+            "Szerezd meg: “Doctor's Coat” (Felszerelés 167)"
         ]
     },
     "gh2-216": {
@@ -3802,7 +3802,7 @@ export default {
     "gh2-217": {
         "name": "A ketrecbe zárt medve",
         "rewards": [
-            "Szerezd meg: “Parancs botja” (Felszerelés 169)"
+            "Szerezd meg: “Staff of Command” (Felszerelés 169)"
         ]
     },
     "gh2-218": {

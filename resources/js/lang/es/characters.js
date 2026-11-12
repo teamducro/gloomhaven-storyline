@@ -700,7 +700,7 @@ export default {
         ]
     },
     "IF": {
-        "name": "Inductora",
+        "name": "Infuser",
         "masteries": [
             "Ten 5 bonificaciones {INFUSION_ICON} activas",
             "Mata al menos 4 enemigos, pero no ataques nunca"
@@ -720,7 +720,7 @@ export default {
         ]
     },
     "PY": {
-        "name": "Piroclasto",
+        "name": "Pyroclast",
         "masteries": [
             "Crea o destruye al menos 1 pieza de obstáculo o terreno peligroso en cada ronda",
             "Mueve enemigos por 6 hexágonos distintos de terreno peligroso que hayas creado en un turno"
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "Quiebrasonata",
+        "name": "Shattersong",
         "masteries": [
             "Ten siempre 0 {RESONANCE_ICON} justo antes de obtener {RESONANCE_ICON} al final de cada uno de tus turnos",
             "Gasta 5 {RESONANCE_ICON} en cada una de 5 habilidades {WAVE} distintas"
@@ -761,7 +761,7 @@ export default {
         ]
     },
     "TA": {
-        "name": "Trampero",
+        "name": "Trapper",
         "masteries": [
             "Ten 1 trampa de {HEAL.fh} en el mapa con un valor de al menos 20",
             "Mueve a enemigos por 7 o más trampas con una misma capacidad"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Canalizador de dolor",
+        "name": "Pain Conduit",
         "masteries": [
             "Haz que otras figuras sufran un total de al menos {DAMAGE.fh}40 en una ronda",
             "Empieza un turno con {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} y {MUDDLE.fh}"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Mosaico de Metal",
+        "name": "Metal Mosaic",
         "masteries": [
             "No ataques nunca",
             "Durante 4 rondas consecutivas, mueve el indicador de presión hacia arriba o hacia abajo 3 niveles desde donde empezó la ronda ({PRESSURE_LOW_ICON} a {PRESSURE_HIGH_ICON}, o viceversa)"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Espectro abisal",
+        "name": "Deepwraith",
         "masteries": [
             "Realiza todos tus ataques con Ventaja",
             "Infunde {DARK} cada ronda"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "Marea restallante",
+        "name": "Crashing Tide",
         "masteries": [
             "No sufras nunca daños por ataques siendo el objetivo de al menos 5 ataques",
             "Al inicio de cada uno de tus descansos, ten más {TIDE_ICON} activos que cartas en tu pila de descartes"

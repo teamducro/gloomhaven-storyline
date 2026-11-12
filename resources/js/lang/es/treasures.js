@@ -288,7 +288,7 @@ export default {
         "name": "Obtén 10 XP"
     },
     "jotl-2": {
-        "name": "Obtén “Anillo de fuerza” (Objeto 31)"
+        "name": "Obtén “Ring of Strength” (Objeto 31)"
     },
     "jotl-3": {
         "name": "Obtén 15 XP"
@@ -312,7 +312,7 @@ export default {
         "name": "Obtén 5 de oro"
     },
     "jotl-10": {
-        "name": "“Brújula funesta” (Objeto 27)"
+        "name": "“Fateful Compass” (Objeto 27)"
     },
     "jotl-11": {
         "name": "“Anillo de Premura” (Objeto 30)"
@@ -330,7 +330,7 @@ export default {
         "name": "Obtén 1 ✔"
     },
     "jotl-16": {
-        "name": "“Poción de maná” (Objeto 14)"
+        "name": "“Mana Potion” (Objeto 14)"
     },
     "jotl-X": {
         "name": "“Anillo de recuperación” (Objeto 32)"

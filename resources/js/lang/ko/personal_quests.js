@@ -118,7 +118,7 @@ export default {
         ]
     },
     "gh-527": {
-        "name": "피의 신의 열성분자",
+        "name": "Zealot of the Blood God",
         "progress": [
             "탈진 12번."
         ]
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "도시 이벤트 69번과 70번을 도시 이벤트 덱에 추가. “검은 카드”(아이템 113) 획득. 판매할 수 없음.",
+            "도시 이벤트 69번과 70번을 도시 이벤트 덱에 추가. “Black Card”(아이템 113) 획득. 판매할 수 없음.",
             "사이드 시나리오 6개 완료(시나리오 번호 56 초과).",
             "{SECTION} 128.2를 읽음."
         ]

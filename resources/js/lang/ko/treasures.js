@@ -3,19 +3,19 @@ export default {
         "name": "무작위 아이템 설계도"
     },
     "gh-2": {
-        "name": "“대형 방패” (아이템 032) 획득"
+        "name": "“Tower Shield” (아이템 032) 획득"
     },
     "gh-3": {
-        "name": "“철편 갑옷” (아이템 044) 획득"
+        "name": "“Splintmail” (아이템 044) 획득"
     },
     "gh-4": {
         "name": "금화 15개 획득"
     },
     "gh-5": {
-        "name": "“사슬갑옷” (아이템 023) 획득"
+        "name": "“Chainmail” (아이템 023) 획득"
     },
     "gh-6": {
-        "name": "“갈고리 사슬” (아이템 039) 획득"
+        "name": "“Hooked Chain” (아이템 039) 획득"
     },
     "gh-7": {
         "name": "무작위 사이드 시나리오"
@@ -24,7 +24,7 @@ export default {
         "name": "✔ 1 획득"
     },
     "gh-9": {
-        "name": "“파도의 문장” (아이템 111) 획득"
+        "name": "“Wave Crest” (아이템 111) 획득"
     },
     "gh-10": {
         "name": "경험치 10 획득"
@@ -33,7 +33,7 @@ export default {
         "name": "무작위 아이템 설계도"
     },
     "gh-12": {
-        "name": "“마그마 장화” (아이템 099) 획득"
+        "name": "“Magma Waders” (아이템 099) 획득"
     },
     "gh-13": {
         "name": "피해 5점을 입고 {POISON}와 {WOUND} 획득"
@@ -42,7 +42,7 @@ export default {
         "name": "경험치 10 획득"
     },
     "gh-15": {
-        "name": "“어둠의 계약 목걸이” (아이템 045) 획득"
+        "name": "“Pendant of Dark Pacts” (아이템 045) 획득"
     },
     "gh-16": {
         "name": "금화 10개 획득"
@@ -66,7 +66,7 @@ export default {
         "name": "무작위 아이템 설계도"
     },
     "gh-23": {
-        "name": "“드레이크 비늘 갑옷” (아이템 103) 획득"
+        "name": "“Drakescale Armor” (아이템 103) 획득"
     },
     "gh-24": {
         "name": "피해 5점을 입음"
@@ -78,13 +78,13 @@ export default {
         "name": "금화 20개 획득"
     },
     "gh-27": {
-        "name": "“황혼의 보주” (아이템 122) 획득"
+        "name": "“Orb of Twilight” (아이템 122) 획득"
     },
     "gh-28": {
         "name": "금화 15개 획득"
     },
     "gh-29": {
-        "name": "“인내의 발싸개” (아이템 097) 획득"
+        "name": "“Endurance Footwraps” (아이템 097) 획득"
     },
     "gh-30": {
         "name": "✔ 1 획득"
@@ -96,22 +96,22 @@ export default {
         "name": "무작위 아이템 설계도"
     },
     "gh-33": {
-        "name": "“추 달린 그물” (아이템 019) 획득"
+        "name": "“Weighted Net” (아이템 019) 획득"
     },
     "gh-34": {
-        "name": "“생명의 부적” (아이템 024) 획득"
+        "name": "“Amulet of Life” (아이템 024) 획득"
     },
     "gh-35": {
-        "name": "“드레이크 비늘 장화” (아이템 098) 획득"
+        "name": "“Drakescale Boots” (아이템 098) 획득"
     },
     "gh-36": {
-        "name": "“로켓 장화” 설계도 (아이템 096)"
+        "name": "“Rocket Boots” 설계도 (아이템 096)"
     },
     "gh-37": {
         "name": "✔ 1 획득"
     },
     "gh-38": {
-        "name": "“해골 반지” 설계도 (아이템 123)"
+        "name": "“Ring of Skulls” 설계도 (아이템 123)"
     },
     "gh-39": {
         "name": "피해 5점을 입음"
@@ -138,7 +138,7 @@ export default {
         "name": "피해 3점을 입고 {POISON} 획득"
     },
     "gh-47": {
-        "name": "“증기 갑옷” (아이템 104) 획득"
+        "name": "“Steam Armor” (아이템 104) 획득"
     },
     "gh-48": {
         "name": "금화 30개 획득"
@@ -147,43 +147,43 @@ export default {
         "name": "새 시나리오: {SCENARIO 17}"
     },
     "gh-50": {
-        "name": "“밀착 갑옷” (아이템 101) 획득"
+        "name": "“Second Skin” (아이템 101) 획득"
     },
     "gh-51": {
         "name": "무작위 사이드 시나리오"
     },
     "gh-52": {
-        "name": "“변절자의 심장” (아이템 131) 획득"
+        "name": "“Heart of the Betrayer” (아이템 131) 획득"
     },
     "gh-53": {
         "name": "무작위 아이템 설계도"
     },
     "gh-54": {
-        "name": "“파멸 나침반” (아이템 124) 획득"
+        "name": "“Doomed Compass” (아이템 124) 획득"
     },
     "gh-55": {
         "name": "✔ 1 획득"
     },
     "gh-56": {
-        "name": "“별 귀걸이” (아이템 069) 획득"
+        "name": "“Star Earring” (아이템 069) 획득"
     },
     "gh-57": {
         "name": "금화 15개 획득"
     },
     "gh-58": {
-        "name": "“드레이크 비늘 투구” (아이템 108) 획득"
+        "name": "“Drakescale Helm” (아이템 108) 획득"
     },
     "gh-59": {
         "name": "무작위 아이템 설계도"
     },
     "gh-60": {
-        "name": "“해골 도끼” (아이템 113) 획득"
+        "name": "“Skullbane Axe” (아이템 113) 획득"
     },
     "gh-61": {
-        "name": "“다목적 단검” (아이템 040) 획득"
+        "name": "“Versatile Dagger” (아이템 040) 획득"
     },
     "gh-62": {
-        "name": "“산의 투구” (아이템 110)와 “산의 망치” (아이템 115) 획득"
+        "name": "“Helm of the Mountain” (아이템 110)와 “Mountain Hammer” (아이템 115) 획득"
     },
     "gh-63": {
         "name": "무작위 아이템 설계도"
@@ -192,19 +192,19 @@ export default {
         "name": "금화 30개 획득"
     },
     "gh-65": {
-        "name": "“뿔 달린 투구” 설계도 (아이템 107)"
+        "name": "“Horned Helm” 설계도 (아이템 107)"
     },
     "gh-66": {
-        "name": "“휘발성 폭탄” (아이템 033) 획득"
+        "name": "“Volatile Bomb” (아이템 033) 획득"
     },
     "gh-67": {
         "name": "금화 10개 획득"
     },
     "gh-68": {
-        "name": "“나선 반지” (아이템 130) 획득"
+        "name": "“Helix Ring” (아이템 130) 획득"
     },
     "gh-69": {
-        "name": "“소환의 로브” (아이템 100) 획득"
+        "name": "“Robes of Summoning” (아이템 100) 획득"
     },
     "gh-70": {
         "name": "무작위 사이드 시나리오"
@@ -213,7 +213,7 @@ export default {
         "name": "무작위 사이드 시나리오"
     },
     "gh-72": {
-        "name": "“불붙는 언월도” 설계도 (아이템 116)"
+        "name": "“Fueled Falchion” 설계도 (아이템 116)"
     },
     "gh-73": {
         "name": "무작위 아이템 설계도"
@@ -228,13 +228,13 @@ export default {
         "name": "피해 3점을 입고 {WOUND}와 금화 10개 획득"
     },
     "fc-77": {
-        "name": "“대형 치유 물약” (아이템 090) 획득"
+        "name": "“Major Cure Potion” (아이템 090) 획득"
     },
     "fc-78": {
-        "name": "“고대의 활” (아이템 157)"
+        "name": "“Ancient Bow” (아이템 157)"
     },
     "fc-79": {
-        "name": "“매 조각상” (아이템 157) 획득"
+        "name": "“Falcon Figurine” (아이템 157) 획득"
     },
     "fc-80": {
         "name": "✓ 1 획득, 균열 이벤트 19번을 덱에 추가"
@@ -243,19 +243,19 @@ export default {
         "name": "“Scroll of Swiftness” (아이템 159)와 금화 10개 획득"
     },
     "fc-82": {
-        "name": "“회춘의 정강이갑옷” (아이템 158)"
+        "name": "“Rejuvenation Greaves” (아이템 158)"
     },
     "fc-83": {
-        "name": "“대형 힘 물약” (아이템 041) 획득"
+        "name": "“Major Power Potion” (아이템 041) 획득"
     },
     "fc-84": {
-        "name": "“공포의 가면” (아이템 066) 획득"
+        "name": "“Mask of Terror” (아이템 066) 획득"
     },
     "fc-85": {
         "name": "피해 3점을 입고 {POISON}과 금화 10개 획득"
     },
     "fc-86": {
-        "name": "점술가 {DR} 개인 시나리오 “피할 수 없는 일의 예보” 해제 (본 책자 25쪽 참조)"
+        "name": "점술가 {DR} 개인 시나리오 “Forecast of the Inevitable” 해제 (본 책자 25쪽 참조)"
     },
     "fc-87": {
         "name": "피해 2점을 입고 저주(CURSE)와 금화 15개 획득"
@@ -264,13 +264,13 @@ export default {
         "name": "✓ 1 획득"
     },
     "fc-89": {
-        "name": "“기회의 반지” (아이템 070) 획득"
+        "name": "“Second Chance Ring” (아이템 070) 획득"
     },
     "fc-90": {
         "name": "각자 금화 10개, 49쪽의 섹션 75를 읽음"
     },
     "fc-91": {
-        "name": "금화 30개와 파티 업적 “기회주의자” 획득. 도시 이벤트 84번을 덱에 추가"
+        "name": "금화 30개와 파티 업적 “Opportunists” 획득. 도시 이벤트 84번을 덱에 추가"
     },
     "fc-93": {
         "name": "“Scroll of Swiftness” (아이템 159)"
@@ -288,7 +288,7 @@ export default {
         "name": "경험치 10 획득"
     },
     "jotl-2": {
-        "name": "“힘의 반지” (아이템 31)"
+        "name": "“Ring of Strength” (아이템 31)"
     },
     "jotl-3": {
         "name": "경험치 15 획득"
@@ -312,10 +312,10 @@ export default {
         "name": "금화 5개 획득"
     },
     "jotl-10": {
-        "name": "“운명 나침반” (아이템 27)"
+        "name": "“Fateful Compass” (아이템 27)"
     },
     "jotl-11": {
-        "name": "“신속의 반지” (아이템 30)"
+        "name": "“Ring of Haste” (아이템 30)"
     },
     "jotl-12": {
         "name": "금화 5개 획득"
@@ -330,7 +330,7 @@ export default {
         "name": "✔ 1 획득"
     },
     "jotl-16": {
-        "name": "“마나 물약” (아이템 14)"
+        "name": "“Mana Potion” (아이템 14)"
     },
     "jotl-X": {
         "name": "“회복의 반지” (아이템 32)"
@@ -480,7 +480,7 @@ export default {
         "name": "금화 15개"
     },
     "cs-49": {
-        "name": "“마그마 장화” (아이템 gh-99)"
+        "name": "“Magma Waders” (아이템 gh-99)"
     },
     "cs-50": {
         "name": "“Bottled Moonlight” (아이템 18)"
@@ -741,25 +741,25 @@ export default {
         "name": "금화 10개 획득."
     },
     "gh2-1": {
-        "name": "“마그마 장화” (아이템 142) 획득"
+        "name": "“Magma Waders” (아이템 142) 획득"
     },
     "gh2-2": {
         "name": "피해 3점을 입고 {POISON} 획득"
     },
     "gh2-3": {
-        "name": "“별 귀걸이” (아이템 63) 획득"
+        "name": "“Star Earring” (아이템 63) 획득"
     },
     "gh2-4": {
-        "name": "“상 변이 망토” (아이템 98) 획득"
+        "name": "“Cloak of Phasing” (아이템 98) 획득"
     },
     "gh2-5": {
-        "name": "“어둠의 계약 목걸이” (아이템 128) 획득"
+        "name": "“Pendant of Dark Pacts” (아이템 128) 획득"
     },
     "gh2-6": {
         "name": "무작위 사이드 시나리오"
     },
     "gh2-7": {
-        "name": "“도둑의 두건” (아이템 108) 획득"
+        "name": "“Thief's Hood” (아이템 108) 획득"
     },
     "gh2-8": {
         "name": "피해 3점을 입고 {CURSE} 획득"
@@ -792,10 +792,10 @@ export default {
         "name": "금화 15개 획득"
     },
     "gh2-18": {
-        "name": "“불안정한 폭발물” (아이템 99) 획득"
+        "name": "“Unstable Explosives” (아이템 99) 획득"
     },
     "gh2-19": {
-        "name": "“드레이크 비늘 장화” (아이템 119) 획득"
+        "name": "“Drakescale Boots” (아이템 119) 획득"
     },
     "gh2-20": {
         "name": "금화 25개 획득"
@@ -804,7 +804,7 @@ export default {
         "name": "✔ 2 획득"
     },
     "gh2-22": {
-        "name": "“산의 투구” (아이템 129)와 “산의 망치” (아이템 130) 획득"
+        "name": "“Helm of the Mountain” (아이템 129)와 “Mountain Hammer” (아이템 130) 획득"
     },
     "gh2-23": {
         "name": "금화 15개 획득"
@@ -831,16 +831,16 @@ export default {
         "name": "경험치 20 획득"
     },
     "gh2-31": {
-        "name": "“파도의 문장” (아이템 131) 획득"
+        "name": "“Wave Crest” (아이템 131) 획득"
     },
     "gh2-32": {
         "name": "무작위 사이드 시나리오"
     },
     "gh2-33": {
-        "name": "“치유 물약” (아이템 101) 획득"
+        "name": "“Cure Potion” (아이템 101) 획득"
     },
     "gh2-34": {
-        "name": "“드레이크 비늘 투구” (아이템 121) 획득"
+        "name": "“Drakescale Helm” (아이템 121) 획득"
     },
     "gh2-35": {
         "name": "“Rod of Transference” (아이템 115) 획득"
@@ -849,7 +849,7 @@ export default {
         "name": "무작위 아이템 설계도"
     },
     "gh2-37": {
-        "name": "“행복의 신발” (아이템 97) 획득"
+        "name": "“Shoes of Happiness” (아이템 97) 획득"
     },
     "gh2-38": {
         "name": "✔ 1 획득"
@@ -858,7 +858,7 @@ export default {
         "name": "경험치 20 획득"
     },
     "gh2-40": {
-        "name": "“불붙는 언월도” (아이템 110) 획득"
+        "name": "“Fueled Falchion” (아이템 110) 획득"
     },
     "gh2-41": {
         "name": "금화 15개 획득"
@@ -888,7 +888,7 @@ export default {
         "name": "경험치 15 획득"
     },
     "gh2-50": {
-        "name": "“증기 갑옷” (아이템 106) 획득"
+        "name": "“Steam Armor” (아이템 106) 획득"
     },
     "gh2-51": {
         "name": "경험치 15 획득"
@@ -900,7 +900,7 @@ export default {
         "name": "✔ 1 획득"
     },
     "gh2-54": {
-        "name": "금화 15개와 “강철 반지” (아이템 102) 획득"
+        "name": "금화 15개와 “Steel Ring” (아이템 102) 획득"
     },
     "gh2-55": {
         "name": "경험치 20 획득"
@@ -939,7 +939,7 @@ export default {
         "name": "{POISON}과 {STRENGTHEN} 획득 및 소실된 카드 2장 되찾기"
     },
     "gh2-67": {
-        "name": "“파멸 나침반” (아이템 132) 획득"
+        "name": "“Doomed Compass” (아이템 132) 획득"
     },
     "gh2-68": {
         "name": "무작위 아이템 설계도"
@@ -957,13 +957,13 @@ export default {
         "name": "금화 25개 획득"
     },
     "gh2-73": {
-        "name": "“엄니 목걸이” (아이템 107) 획득"
+        "name": "“Necklace of Teeth” (아이템 107) 획득"
     },
     "gh2-74": {
         "name": "피해 3점을 입고 {IMMOBILIZE} 획득"
     },
     "gh2-75": {
-        "name": "“드레이크 비늘 갑옷” (아이템 120) 획득"
+        "name": "“Drakescale Armor” (아이템 120) 획득"
     },
     "gh2-76": {
         "name": "무작위 아이템 설계도"

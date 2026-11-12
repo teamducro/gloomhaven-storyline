@@ -379,21 +379,21 @@ export default {
         ]
     },
     "gh-SoX1": {
-        "name": "Krypta Szlachty",
+        "name": "Nobles’ Crypt",
         "rewards": [
             "+1 do reputacji",
             "Dodaj zdarzenie miejskie SoX2 do talii"
         ]
     },
     "gh-SoX2": {
-        "name": "Zalana Krypta",
+        "name": "Flooded Crypt",
         "rewards": [
             "Dodaj zdarzenie miejskie SoX3 do talii",
             "Wybierz tylko jeden z następujących przedmiotów: „Ostrze Chłodu” (przedmiot 077), „Różdżka Chłodu” (przedmiot 083) lub „Kolia Fal” (przedmiot 111)"
         ]
     },
     "gh-SoX3": {
-        "name": "Krypta Starożytnych",
+        "name": "Crypt of the Ancients",
         "rewards": [
             "50 szt. złota wspólnie",
             "Dodaj zdarzenie miejskie SoX3 do talii"
@@ -821,9 +821,9 @@ export default {
         ]
     },
     "gh-219": {
-        "name": "Piaski Czasu",
+        "name": "The Sands of Time",
         "rewards": [
-            "„Miecz Piasków” (przedmiot 151)"
+            "„Sword of the Sands” (przedmiot 151)"
         ]
     },
     "fc-96": {
@@ -1035,91 +1035,91 @@ export default {
         ]
     },
     "jotl-3": {
-        "name": "Czarny Statek",
+        "name": "The Black Ship",
         "rewards": [
             "Po 1 ✔ dla każdego"
         ]
     },
     "jotl-4": {
-        "name": "Rytuał w Kamieniu",
+        "name": "A Ritual in Stone",
         "rewards": [
-            "„Mikstura Many” (przedmiot 14)"
+            "„Mana Potion” (przedmiot 14)"
         ]
     },
     "jotl-5": {
-        "name": "Głębsze Zrozumienie",
+        "name": "A Deeper Understanding",
         "rewards": [
             "Po 25 pkt. doświadczenia dla każdego"
         ]
     },
     "jotl-6": {
-        "name": "Skażone Badania",
+        "name": "Corrupted Research",
         "rewards": [
             "Po 1 ✔ dla każdego"
         ]
     },
     "jotl-7": {
-        "name": "Zatopiony Guz",
+        "name": "Sunken Tumor",
         "rewards": [
             "Po 20 pkt. doświadczenia dla każdego"
         ]
     },
     "jotl-8": {
-        "name": "Ukryty Guz"
+        "name": "Hidden Tumor"
     },
     "jotl-9": {
-        "name": "Wybuchowa Ewolucja",
+        "name": "Explosive Evolution",
         "rewards": [
             "Po 20 pkt. doświadczenia dla każdego",
             "Dodaj przedmioty 15-20 do sklepu"
         ]
     },
     "jotl-10": {
-        "name": "Szpaler",
+        "name": "The Gauntlet",
         "rewards": [
             "Po 15 pkt. doświadczenia dla każdego"
         ]
     },
     "jotl-11": {
-        "name": "Splugawione Kanały",
+        "name": "Defiled Sewers",
         "rewards": [
             "„Zapchlona Derka” (przedmiot 28)"
         ]
     },
     "jotl-12": {
-        "name": "Zwodnicze Kanały",
+        "name": "Beguiling Sewers",
         "rewards": [
             "„Zapchlona Derka” (przedmiot 28)"
         ]
     },
     "jotl-13": {
-        "name": "Podłe Żniwa",
+        "name": "Vile Harvest",
         "rewards": [
             "Po 1 ✔ dla każdego"
         ]
     },
     "jotl-14": {
-        "name": "Toksyczne Żniwa",
+        "name": "Toxic Harvest",
         "rewards": [
             "Po 1 ✔ dla każdego"
         ]
     },
     "jotl-15": {
-        "name": "Skażona Krew",
+        "name": "Tainted Blood",
         "rewards": [
             "Po 10 szt. złota dla każdego",
             "Dodaj przedmioty 21-26 do sklepu"
         ]
     },
     "jotl-16": {
-        "name": "Mieszane Wyniki",
+        "name": "Mixed Results",
         "rewards": [
             "Po 15 pkt. doświadczenia dla każdego",
             "„Ciężka Tarcza” (przedmiot 29)"
         ]
     },
     "jotl-17": {
-        "name": "Czerwony Zmierzch",
+        "name": "Red Twilight",
         "rewards": [
             "Po 25 pkt. doświadczenia dla każdego",
             "Po 30 szt. złota dla każdego"
@@ -1132,45 +1132,45 @@ export default {
         ]
     },
     "jotl-19": {
-        "name": "Jaskinia Złodziei",
+        "name": "Den of Thieves",
         "rewards": [
-            "„Pierścień Siły” (przedmiot 31)"
+            "„Ring of Strength” (przedmiot 31)"
         ]
     },
     "jotl-20": {
-        "name": "Zagubione Towary",
+        "name": "Misplaced Goods",
         "rewards": [
             "Po 10 szt. złota dla każdego"
         ]
     },
     "jotl-21": {
-        "name": "Agenci Chaosu",
+        "name": "Agents of Chaos",
         "rewards": [
             "Po 15 szt. złota dla każdego"
         ]
     },
     "jotl-22": {
-        "name": "Nieprzyjazna Wiadomość",
+        "name": "Unfriendly Message",
         "rewards": [
             "„Stalowy Pierścień” (przedmiot 33)"
         ]
     },
     "jotl-23": {
-        "name": "Najlepsi z Najlepszych",
+        "name": "Best of the Best",
         "rewards": [
-            "„Kolczasty Topór” (przedmiot 34)"
+            "„Barbed Axe” (przedmiot 34)"
         ]
     },
     "jotl-24": {
-        "name": "Zabezpieczenie Pustki",
+        "name": "Warding the Void",
         "rewards": [
-            "„Szata Dowodzenia” (przedmiot 35)"
+            "„Robes of Command” (przedmiot 35)"
         ]
     },
     "jotl-25": {
-        "name": "Najlepsza Praca na Świecie",
+        "name": "The Greatest Job in the World",
         "rewards": [
-            "„Buty Odrzutowe” (przedmiot 36)"
+            "„Jet Boots” (przedmiot 36)"
         ]
     },
     "fh-0": {
@@ -1282,7 +1282,7 @@ export default {
     "fh-13": {
         "name": "Zamarznięty fiord",
         "rewards": [
-            "“Martwy Kruk” (przedmiot 233)"
+            "“Dead Raven” (przedmiot 233)"
         ]
     },
     "fh-14": {
@@ -1418,14 +1418,14 @@ export default {
     "fh-32": {
         "name": "Krucze Gniazdo",
         "rewards": [
-            "Schemat “Pierzasty Płaszcz” (przedmiot 69)"
+            "Schemat “Feathered Cloak” (przedmiot 69)"
         ]
     },
     "fh-33": {
         "name": "Roztopiona knieja",
         "rewards": [
             "Po 5 pkt. doświadczenia dla każdego za każdą nieodkrytą runę",
-            "“Źródło Ognistej Energii” (przedmiot 244)",
+            "“Ember Energy Source” (przedmiot 244)",
             "Dodaj sekcję 135.1 do kalendarza za trzy tygodnie"
         ]
     },
@@ -1445,7 +1445,7 @@ export default {
         "rewards": [
             "Otrzymujecie wspólnie 3 {LUMBER}",
             "Otrzymujecie wspólnie 3 {METAL}",
-            "Schemat „Zbieżne Soczewki” (przedmiot 67)"
+            "Schemat „Converging Lenses” (przedmiot 67)"
         ]
     },
     "fh-37": {
@@ -1453,7 +1453,7 @@ export default {
         "rewards": [
             "Otrzymujecie wspólnie 3 {LUMBER}",
             "Otrzymujecie wspólnie 3 {METAL}",
-            "Schemat „Zbieżne Soczewki” (przedmiot 67)"
+            "Schemat „Converging Lenses” (przedmiot 67)"
         ]
     },
     "fh-38": {
@@ -1504,7 +1504,7 @@ export default {
         "name": "Centrum nerwowe",
         "rewards": [
             "Po 5 szt. złota dla każdego",
-            "Schemat “Energetyzująca Pałka” (przedmiot 73)"
+            "Schemat “Energizing Baton” (przedmiot 73)"
         ]
     },
     "fh-45": {
@@ -1554,7 +1554,7 @@ export default {
         "name": "Sale Sieroty",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
-            "Schemat “Granaty Porażające” (przedmiot 74)"
+            "Schemat “Shock Grenades” (przedmiot 74)"
         ]
     },
     "fh-52": {
@@ -1611,7 +1611,7 @@ export default {
         "name": "Rdzeń Sieroty",
         "rewards": [
             "+1 do morale",
-            "“Karta Klucz” (przedmiot 246)",
+            "“Key Card” (przedmiot 246)",
             "Otrzymujecie wspólnie 3 {LUMBER}",
             "Otrzymujecie wspólnie 3 {METAL}",
             "Otrzymujecie wspólnie 3 {HIDE}",
@@ -1626,7 +1626,7 @@ export default {
         "rewards": [
             "+2 do morale",
             "+2 do dobrobytu",
-            "“Karta Klucz” (przedmiot 246)",
+            "“Key Card” (przedmiot 246)",
             "Odblokuj pudełko postaci {HV}",
             "Usuńcie wszystkie wydarzenia {UNFETTERED} z wszystkich talii wydarzeń posterunków",
             "Dodajcie wydarzenie SO-49 do letniej talii posterunku i wydarzenie WO-63 do zimowej talii posterunku",
@@ -1639,7 +1639,7 @@ export default {
             "+2 do morale",
             "+1 do dobrobytu",
             "Po 30 pkt. doświadczenia dla każdego",
-            "Otrzymujesz „Zbroja Empatii” (przedmiot 224)",
+            "Otrzymujesz „Armor of Empathy” (przedmiot 224)",
             "Odblokuj pudełko postaci: {CR} lub {DT}",
             "Usuńcie wszystkie wydarzenia {LURKERS} z wszystkich talii wydarzeń posterunków",
             "Dodajcie wydarzenie SO-48 do letniej talii posterunku i wydarzenie B-17 do talii łodzi",
@@ -1684,7 +1684,7 @@ export default {
     "fh-66": {
         "name": "Rdzenie żywiołów",
         "rewards": [
-            "“Kamień Żywiołów” (przedmiot 212)",
+            "“Elemental Stone” (przedmiot 212)",
             "Dodaj sekcję 29.3 do kalendarza za sześć tygodni"
         ]
     },
@@ -1756,7 +1756,7 @@ export default {
         "rewards": [
             [
                 "Cel życiowy: “Threat from the Deep” ukończony",
-                "“Ostrze Fali” (przedmiot 201)",
+                "“Wave Blade” (przedmiot 201)",
                 "Dodaj wydarzenie B-18 do talii łodzi"
             ],
             []
@@ -1766,7 +1766,7 @@ export default {
         "name": "Wywyższenie Rybiego Króla",
         "rewards": [
             "Cel życiowy: “Threat from the Deep” ukończony",
-            "“Ostrze Fali” (przedmiot 201)",
+            "“Wave Blade” (przedmiot 201)",
             "Dodaj wydarzenie B-19 do talii łodzi"
         ]
     },
@@ -1796,7 +1796,7 @@ export default {
         "name": "Zrójnowane laboratorium badawcze",
         "rewards": [
             "+1 do dobrobytu",
-            "Schemat “Szata Estera” (przedmiot 70)"
+            "Schemat “Aesther Robe” (przedmiot 70)"
         ]
     },
     "fh-82": {
@@ -1809,13 +1809,13 @@ export default {
     "fh-83": {
         "name": "Przypływ słonej wody",
         "rewards": [
-            "“Kręgosłup Olbrzymiej Świniopiranii” (przedmiot 202)"
+            "“Giant Piranha Pig Spine” (przedmiot 202)"
         ]
     },
     "fh-84": {
         "name": "Tamże są Szlamy",
         "rewards": [
-            "“Fiolka Szlamu” (przedmiot 234)"
+            "“ooze vial” (przedmiot 234)"
         ]
     },
     "fh-85": {
@@ -1889,10 +1889,10 @@ export default {
         "name": "Rozróba w środku zimy",
         "rewards": [
             [
-                "“Mały Szczur” (przedmiot 235)"
+                "“Small Rat” (przedmiot 235)"
             ],
             [
-                "“Pieczony Drób” (przedmiot 79)"
+                "“Roasted Fowl” (przedmiot 79)"
             ]
         ]
     },
@@ -1979,7 +1979,7 @@ export default {
     "fh-106": {
         "name": "Kuźnia Tempusa",
         "rewards": [
-            "“Klucz Pór Roku” (przedmiot 213)"
+            "“Key of Seasons” (przedmiot 213)"
         ]
     },
     "fh-107": {
@@ -1999,7 +1999,7 @@ export default {
             ],
             [
                 "Otrzymujecie wspólnie 5 surowców materiałowych",
-                "“Kielich Ventilliona” (przedmiot 214)"
+                "“Cup of Ventillion” (przedmiot 214)"
             ]
         ]
     },
@@ -2025,7 +2025,7 @@ export default {
     "fh-111": {
         "name": "Lodowa Jaskinia",
         "rewards": [
-            "“Pęknięte Lusterko” (przedmiot 236)"
+            "“Cracked Mirror” (przedmiot 236)"
         ]
     },
     "fh-112": {
@@ -2132,14 +2132,14 @@ export default {
     "fh-118": {
         "name": "Czychająca nekromancja",
         "rewards": [
-            "Schemat “Amulet Wiecznego Życia” (przedmiot 66)",
+            "Schemat “Amulet of Eternal Life” (przedmiot 66)",
             "Wymień wszystkie żetony na karty łupów"
         ]
     },
     "fh-119": {
         "name": "Promienny pył",
         "rewards": [
-            "Wydaj 7 pozostałych pyłów, aby zdobyć „Berło Kontroli” (przedmiot 203)",
+            "Wydaj 7 pozostałych pyłów, aby zdobyć „Scepter of Control” (przedmiot 203)",
             "Wydaj 1 pozostały pył, aby zdobyć dowolny 1 surowiec materiałowy",
             "Wydaj 2 pozostałe pyły, aby zdobyć dowolny 1 surowiec zielny"
         ]
@@ -2194,7 +2194,7 @@ export default {
     "fh-125": {
         "name": "Najdłuższa sekunda",
         "rewards": [
-            "“Temporalny Amulet” (przedmiot 194)"
+            "“Temporal Amulet” (przedmiot 194)"
         ]
     },
     "fh-126": {
@@ -2239,7 +2239,7 @@ export default {
             ],
             [
                 "+3 do morale",
-                "“Mącący Kufel” (przedmiot 215)",
+                "“Befuddling Mug” (przedmiot 215)",
                 "Dodaj sekcję 100.3 do kalendarza za trzy tygodnie"
             ]
         ]
@@ -2267,7 +2267,7 @@ export default {
         "name": "Tańczący lodowiec",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
-            "“Hipnotyzująca Muszla” (przedmiot 237)"
+            "“Mesmerizing Seashell” (przedmiot 237)"
         ]
     },
     "fh-132": {
@@ -2279,13 +2279,13 @@ export default {
     "fh-133": {
         "name": "Piorun",
         "rewards": [
-            "“Pęknięty Bożek” (przedmiot 238)"
+            "“Cracked Idol” (przedmiot 238)"
         ]
     },
     "fh-134": {
         "name": "Wieża Wiedzy",
         "rewards": [
-            "“Księga Konfliktu” (przedmiot 219)"
+            "“Tome of Conflict” (przedmiot 219)"
         ]
     },
     "fh-135": {
@@ -2301,7 +2301,7 @@ export default {
         "name": "Opuszczona kryjówka",
         "rewards": [
             "Po 20 szt. złota dla każdego",
-            "“Starożytna Moneta” (przedmiot 245)"
+            "“Ancient Coin” (przedmiot 245)"
         ]
     },
     "fh-137": {
@@ -2314,105 +2314,105 @@ export default {
         ]
     },
     "fh-201": {
-        "name": "Cud Natury",
+        "name": "Wonder of Nature",
         "rewards": [
-            "“Maczuga Wędrowca” (przedmiot 248)"
+            "“Wanderer's Club” (przedmiot 248)"
         ]
     },
     "fh-202": {
-        "name": "Wyścig z Czasem",
+        "name": "Race Against the Clock",
         "rewards": [
-            "“Spust Rekalibracji” (przedmiot 249)"
+            "“Recalibration Trigger” (przedmiot 249)"
         ]
     },
     "fh-203": {
-        "name": "Zwiadowcza Zasadzka",
+        "name": "Scouting Ambush",
         "rewards": [
-            "“Włócznia Sprawiedliwości” (przedmiot 250)"
+            "“Spear of Justice” (przedmiot 250)"
         ]
     },
     "fh-204": {
-        "name": "Głęboka Noc",
+        "name": "The Dead of Night",
         "rewards": [
-            "“Urna Dusz” (przedmiot 251)"
+            "“Soul Urn” (przedmiot 251)"
         ]
     },
     "fh-205": {
-        "name": "Kości w Ziemi",
+        "name": "Bones in the Dirt",
         "rewards": [
-            "“Kodeks Czarnej Ziemi” (przedmiot 252)"
+            "“Black Earth Codex” (przedmiot 252)"
         ]
     },
     "fh-206": {
-        "name": "Dziel i Rządź",
+        "name": "Divide and Conquer",
         "rewards": [
             "“Maska Dwoistości” (przedmiot 253)"
         ]
     },
     "fh-207": {
-        "name": "Ścieżka Przodków",
+        "name": "Path of Ancestry",
         "rewards": [
-            "“Ostrze Przodków” (przedmiot 254)"
+            "“Ancestral Blade” (przedmiot 254)"
         ]
     },
     "fh-208": {
-        "name": "Kruszące się Zejście",
+        "name": "Crumbling Descent",
         "rewards": [
             "“Serce Góry” (przedmiot 255)"
         ]
     },
     "fh-209": {
-        "name": "Strojenie Rezonansu",
+        "name": "Tuning the Resonance",
         "rewards": [
-            "“Dźwięczny Odłamek” (przedmiot 256)"
+            "“Sonorous Shard” (przedmiot 256)"
         ]
     },
     "fh-210": {
-        "name": "Wspaniała Pułapka",
+        "name": "A Magnificent Trap",
         "rewards": [
-            "“Przebiegły Kamuflaż” (przedmiot 257)"
+            "“Sly Camouflage” (przedmiot 257)"
         ]
     },
     "fh-211": {
-        "name": "Kolekcja Cierpienia",
+        "name": "A Collection of Suffering",
         "rewards": [
-            "“Czaszka Agonii” (przedmiot 258)"
+            "“Skull of Agony” (przedmiot 258)"
         ]
     },
     "fh-212": {
-        "name": "Walka Śniegu ze Śniegiem",
+        "name": "Fighting Snow with Snow",
         "rewards": [
-            "“Rzeźba Burzy” (przedmiot 259)"
+            "“Storm Carving” (przedmiot 259)"
         ]
     },
     "fh-213": {
-        "name": "Pod Lodem",
+        "name": "Under the Ice",
         "rewards": [
-            "“Mroźna Kula” (przedmiot 260)"
+            "“Freezing Orb” (przedmiot 260)"
         ]
     },
     "fh-214": {
         "name": "Ładowanie",
         "rewards": [
-            "“Naładowany Moduł” (przedmiot 261)"
+            "“Energized Module” (przedmiot 261)"
         ]
     },
     "fh-215": {
-        "name": "Kotłownia",
+        "name": "Boiler Room",
         "rewards": [
-            "“Wydechowe Buty” (przedmiot 262)"
+            "“Exhaust Boots” (przedmiot 262)"
         ]
     },
     "fh-216": {
-        "name": "Mokra Robota",
+        "name": "Wet Work",
         "rewards": [
             "“Warlord's Skull” (przedmiot 263)"
         ]
     },
     "fh-217": {
-        "name": "Rozbić się o Fale",
+        "name": "Crash Against the Waves",
         "rewards": [
-            "“Spiralny Medalion” (przedmiot 264)"
+            "“Spiraled Medallion” (przedmiot 264)"
         ]
     },
     "cs-1": {

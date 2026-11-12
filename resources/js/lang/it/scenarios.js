@@ -62,7 +62,7 @@ export default {
             "15 monete d'oro ciascuno",
             "-2 reputazione",
             "+2 prosperità",
-            "Progetto “Ascia Anatema dei Teschi” (Oggetto 113)"
+            "Progetto “Skullbane Axe” (Oggetto 113)"
         ],
         "faq": [
             "Errore di stampa: ignorate il testo di “Boss Speciale 1” nel Libro degli Scenari e fate riferimento alla carta statistiche del boss."
@@ -72,7 +72,7 @@ export default {
         "name": "Piazza di Gloomhaven B",
         "rewards": [
             "+4 reputazione",
-            "Progetto “Ascia Anatema dei Teschi” (Oggetto 113)"
+            "Progetto “Skullbane Axe” (Oggetto 113)"
         ],
         "faq": [
             "Errore di stampa: il marcatore porta 1 dovrebbe trovarsi sulla porta a sud e non su quella a nord. Leggete il testo sotto “1” quando viene aperta la porta a sud.",
@@ -352,7 +352,7 @@ export default {
     },
     "gh-52": {
         "name": "Cantina Infida",
-        "requirements": "Missione Personale “Cercatore di Xorn”",
+        "requirements": "Missione Personale “Seeker of Xorn”",
         "faq": [
             "Regola speciale: in questo scenario puoi usare l'azione inferiore di una qualsiasi carta per saccheggiare una tessera tesoro entro gittata 1.",
             "Quando si usa il materiale di Cerchi Dimenticati, gli ostacoli al centro della stanza iniziale possono essere trattati come tessere sovrapposte parete, come specificato nelle regole di Cerchi Dimenticati. Inoltre, un personaggio non può teletrasportarsi nella sezione di mappa di un altro personaggio."
@@ -360,14 +360,14 @@ export default {
     },
     "gh-53": {
         "name": "Il Seminterrato della Cripta",
-        "requirements": "Missione Personale “Cercatore di Xorn”",
+        "requirements": "Missione Personale “Seeker of Xorn”",
         "rewards": [
             "Il Cercatore di Xorn riceve: “Bastone di Xorn” (Oggetto 114). Il Cercatore non può vendere questo oggetto."
         ]
     },
     "gh-54": {
         "name": "Palazzo di Ghiaccio",
-        "requirements": "Missione Personale “Cercatore di Xorn”, oggetto “Bastone di Xorn” equipaggiato",
+        "requirements": "Missione Personale “Seeker of Xorn”, oggetto “Bastone di Xorn” equipaggiato",
         "rewards": [
             "Ritira subito il Cercatore di Xorn",
             "Aggiungi gli Eventi Città e Strada 59 ai mazzi, al posto dei normali eventi di ritiro della classe",
@@ -379,21 +379,21 @@ export default {
         ]
     },
     "gh-SoX1": {
-        "name": "Cripta dei Nobili",
+        "name": "Nobles’ Crypt",
         "rewards": [
             "+1 reputazione",
             "Aggiungi l'Evento Città SoX2 al mazzo"
         ]
     },
     "gh-SoX2": {
-        "name": "Cripta Allagata",
+        "name": "Flooded Crypt",
         "rewards": [
             "Aggiungi l'Evento Città SoX3 al mazzo",
-            "Scegli solo uno tra i seguenti: “Lama del Ghiaccio” (Oggetto 077), “Bacchetta del Gelo” (Oggetto 083) o “Monile dell'Onda” (Oggetto 111)"
+            "Scegli solo uno tra i seguenti: “Frigid Blade” (Oggetto 077), “Wand of Frost” (Oggetto 083) o “Wave Crest” (Oggetto 111)"
         ]
     },
     "gh-SoX3": {
-        "name": "Cripta degli Antichi",
+        "name": "Crypt of the Ancients",
         "rewards": [
             "50 monete d'oro collettive",
             "Aggiungi l'Evento Città SoX3 al mazzo"
@@ -401,16 +401,16 @@ export default {
     },
     "gh-55": {
         "name": "Boscaglia Nebbiosa",
-        "requirements": "Missione Personale “Riconquistare gli Alberi”",
+        "requirements": "Missione Personale “Take Back the Trees”",
         "rewards": [
             "10 monete d'oro collettive"
         ]
     },
     "gh-56": {
         "name": "Bosco dei Banditi",
-        "requirements": "Missione Personale “Riconquistare gli Alberi”",
+        "requirements": "Missione Personale “Take Back the Trees”",
         "rewards": [
-            "Missione “Riconquistare gli Alberi” completata",
+            "Missione “Take Back the Trees” completata",
             "Apri la busta {DS}",
             "10 monete d'oro ciascuno",
             "+2 reputazione"
@@ -418,16 +418,16 @@ export default {
     },
     "gh-57": {
         "name": "Indagine",
-        "requirements": "Missione Personale “Vendetta”",
+        "requirements": "Missione Personale “Vengeance”",
         "rewards": [
             "+1 reputazione"
         ]
     },
     "gh-58": {
         "name": "Baracca Cremisi",
-        "requirements": "Missione Personale “Vendetta”",
+        "requirements": "Missione Personale “Vengeance”",
         "rewards": [
-            "Missione “Vendetta” completata",
+            "Missione “Vengeance” completata",
             "Apri la busta X",
             "+2 reputazione"
         ],
@@ -437,13 +437,13 @@ export default {
     },
     "gh-59": {
         "name": "Boschetto Dimenticato",
-        "requirements": "Missione Personale “Alla Ricerca della Cura”"
+        "requirements": "Missione Personale “Finding the Cure”"
     },
     "gh-60": {
         "name": "Laboratorio Alchemico",
-        "requirements": "Missione Personale “Alla Ricerca della Cura”",
+        "requirements": "Missione Personale “Finding the Cure”",
         "rewards": [
-            "Missione “Alla Ricerca della Cura” completata",
+            "Missione “Finding the Cure” completata",
             "Apri la busta X",
             "+1 prosperità"
         ],
@@ -453,13 +453,13 @@ export default {
     },
     "gh-61": {
         "name": "Faro Evanescente",
-        "requirements": "Missione Personale “La Caduta dell'Uomo”"
+        "requirements": "Missione Personale “The Fall of Man”"
     },
     "gh-62": {
         "name": "Fossa delle Anime",
-        "requirements": "Missione Personale “La Caduta dell'Uomo”",
+        "requirements": "Missione Personale “The Fall of Man”",
         "rewards": [
-            "Missione “La Caduta dell'Uomo” completata",
+            "Missione “The Fall of Man” completata",
             "Apri la busta {NS}",
             "10 punti esperienza ciascuno"
         ]
@@ -479,7 +479,7 @@ export default {
     "gh-65": {
         "name": "Miniera Sulfurea",
         "rewards": [
-            "Progetto “Trivella Antica” (Oggetto 112)"
+            "Progetto “Ancient Drill” (Oggetto 112)"
         ]
     },
     "gh-66": {
@@ -637,7 +637,7 @@ export default {
     "gh-84": {
         "name": "Caverna Cristallina",
         "rewards": [
-            "“Cristallo Risonante” (Oggetto 133)",
+            "“Resonant Crystal” (Oggetto 133)",
             "+1 prosperità"
         ],
         "faq": [
@@ -647,7 +647,7 @@ export default {
     "gh-85": {
         "name": "Tempio del Sole",
         "rewards": [
-            "“Globo dell'Alba” (Oggetto 121)"
+            "“Orb of Dawn” (Oggetto 121)"
         ],
         "faq": [
             "Errore sul libro: per 4 giocatori, non collocate il Demone della Notte e i Demoni del Sole nella stanza finale che sono collocati come nemici normali solo per 4 giocatori (colorati di nero per 2 e 3 giocatori, in bianco per 4 giocatori)."
@@ -669,7 +669,7 @@ export default {
     "gh-88": {
         "name": "Piano dell'Acqua",
         "rewards": [
-            "“Bastone dell'Evocazione” (Oggetto 120)"
+            "“Staff of Summoning” (Oggetto 120)"
         ],
         "faq": [
             "Se tutti gli Osservatori vengono uccisi, continuate a pescare le carte abilità dell'Osservatore per determinare la direzione dell'effetto speciale dello scenario."
@@ -715,7 +715,7 @@ export default {
     "gh-95": {
         "name": "Resa dei Conti",
         "rewards": [
-            "“Teschio dell'Odio” (Oggetto 119)"
+            "“Skull of Hatred” (Oggetto 119)"
         ]
     },
     "gh-202": {
@@ -823,11 +823,11 @@ export default {
     "gh-219": {
         "name": "Le Sabbie del Tempo",
         "rewards": [
-            "“Spada delle Sabbie” (Oggetto 151)"
+            "“Sword of the Sands” (Oggetto 151)"
         ]
     },
     "fc-96": {
-        "name": "Visitatori Inattesi",
+        "name": "Unexpected Visitors",
         "requirements": "Fine dell'Oscurità (Globale) COMPLETATO",
         "rewards": [
             "10 punti esperienza ciascuno",
@@ -835,14 +835,14 @@ export default {
         ]
     },
     "fc-97": {
-        "name": "Il Sapere Taciuto",
+        "name": "Lore Untold",
         "rewards": [
             "10 monete d'oro ciascuno",
             "Aggiungi gli Eventi Città 88, 89 e 90 al mazzo"
         ]
     },
     "fc-98": {
-        "name": "Passato in Fiamme",
+        "name": "Past in Flames",
         "rewards": [
             [
                 "10 monete d'oro ciascuno",
@@ -861,27 +861,27 @@ export default {
         ]
     },
     "fc-99": {
-        "name": "Scosse di Assestamento",
+        "name": "Aftershocks",
         "rewards": [
             [
                 "5 monete d'oro ciascuno",
-                "“Antidoto Minore” (Oggetto 153)"
+                "“Minor Antidote” (Oggetto 153)"
             ],
             [
                 "10 monete d'oro ciascuno",
                 "+1 prosperità",
-                "“Antidoto Minore” (Oggetto 153)"
+                "“Minor Antidote” (Oggetto 153)"
             ]
         ]
     },
     "fc-100": {
-        "name": "Ingranaggi in Movimento",
+        "name": "Shifting Gears",
         "rewards": [
-            "Scegli di ottenere uno dei seguenti set: “Lenti Telescopiche” (Oggetto 059) e “Trivella Antica” (Oggetto 112), OPPURE “Ingranaggio Curioso” (Oggetto 125) e “Ragno Meccanico” (Oggetto 126)"
+            "Scegli di ottenere uno dei seguenti set: “Telescopic Lens” (Oggetto 059) e “Ancient Drill” (Oggetto 112), OPPURE “Curious Gear” (Oggetto 125) e “Ragno Meccanico” (Oggetto 126)"
         ]
     },
     "fc-101": {
-        "name": "Cripta Velata",
+        "name": "Shrouded Crypt",
         "rewards": [
             "20 monete d'oro collettive",
             "+1 reputazione",
@@ -889,33 +889,33 @@ export default {
         ]
     },
     "fc-102": {
-        "name": "Bazar della Conoscenza",
+        "name": "Bazaar of Knowledge",
         "rewards": [
             "15 punti esperienza ciascuno",
             "Se sono stati intimiditi al massimo 2+C abitanti: +2 reputazione. Altrimenti: -2 reputazione"
         ]
     },
     "fc-103": {
-        "name": "Dove Serve",
+        "name": "Where It Is Needed",
         "rewards": [
             "+2 prosperità",
             "Aggiungi l'Evento Città 87 al mazzo"
         ]
     },
     "fc-104": {
-        "name": "Una Ferita Aperta",
+        "name": "A Gaping Wound",
         "rewards": [
-            "“Pozione di Mana Maggiore” (Oggetto 048)"
+            "“Major Mana Potion” (Oggetto 048)"
         ]
     },
     "fc-105": {
-        "name": "Mostruosità di un Culto",
+        "name": "Monstrosities of a Cult",
         "rewards": [
-            "“Antidoto Maggiore” (Oggetto 154)"
+            "“Major Antidote” (Oggetto 154)"
         ]
     },
     "fc-106": {
-        "name": "Lavoro Intricato",
+        "name": "Intricate Work",
         "rewards": [
             [
                 "175 monete d'oro ciascuno. Questo denaro deve essere speso subito in potenziamenti {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT} o {DARK}"
@@ -927,41 +927,41 @@ export default {
         ]
     },
     "fc-107": {
-        "name": "Genio Meccanico",
+        "name": "Mechanical Genius",
         "rewards": [
             "5 punti esperienza ciascuno"
         ]
     },
     "fc-108": {
-        "name": "Prologo della Fine",
+        "name": "Prologue to the End",
         "rewards": [
             [
-                "“Armatura Anti-Maledizione” (Oggetto 155)"
+                "“Curseward Armor” (Oggetto 155)"
             ],
             [
                 "2 “Ascia da Lancio” (Oggetto 161)"
             ],
             [
-                "“Armatura Anti-Maledizione” (Oggetto 155)",
+                "“Curseward Armor” (Oggetto 155)",
                 "2 “Ascia da Lancio” (Oggetto 161)"
             ]
         ]
     },
     "fc-109": {
-        "name": "Epilogo di una Guerra",
+        "name": "Epilogue of a War",
         "rewards": [
             "10 punti esperienza ciascuno",
-            "“Amuleto Protettivo” (Oggetto 052)"
+            "“Protective Charm” (Oggetto 052)"
         ]
     },
     "fc-110": {
-        "name": "Una Soluzione Circolare",
+        "name": "A Circular Solution",
         "rewards": [
-            "“Tiara di Cristallo” (Oggetto 163)"
+            "“Crystal Tiara” (Oggetto 163)"
         ]
     },
     "fc-111": {
-        "name": "Le Catene si Allentano",
+        "name": "The Shackles Loosen",
         "rewards": [
             [
                 "5 punti esperienza ciascuno",
@@ -988,7 +988,7 @@ export default {
         ]
     },
     "fc-113": {
-        "name": "Il Filo Perduto",
+        "name": "The Lost Thread",
         "rewards": [
             "135 monete d'oro ciascuno",
             "Questo denaro deve essere speso subito in potenziamenti di Movimento {MOVE}, Gittata {RANGE} o Salto {JUMP}",
@@ -996,13 +996,13 @@ export default {
         ]
     },
     "fc-114": {
-        "name": "Inchiostro non Ancora Asciutto",
+        "name": "Ink Not Yet Dry",
         "rewards": [
             "Beneficio di Gruppo: i costi aggiuntivi per potenziare una carta abilità in base al livello della carta sono ora ridotti di 5 monete d'oro per livello."
         ]
     },
     "fc-115": {
-        "name": "Futuro Incerto",
+        "name": "Future Uncertain",
         "rewards": [
             "+3 reputazione",
             "+1 prosperità",
@@ -1011,7 +1011,7 @@ export default {
         ]
     },
     "fc-117": {
-        "name": "Torre verso le Stelle",
+        "name": "Tower to the Stars",
         "rewards": [
             "15 monete d'oro ciascuno",
             "1 ✓ ciascuno",
@@ -1019,9 +1019,9 @@ export default {
         ]
     },
     "fc-116": {
-        "name": "Previsione dell'Inevitabile",
+        "name": "Forecast of the Inevitable",
         "rewards": [
-            "“Bacile della Profezia” (Oggetto 164)"
+            "“Basin of Prophecy” (Oggetto 164)"
         ]
     },
     "jotl-1": {
@@ -1043,7 +1043,7 @@ export default {
     "jotl-4": {
         "name": "Le Pietre Rituali",
         "rewards": [
-            "“Pozione di Mana” (Oggetto 14)"
+            "“Mana Potion” (Oggetto 14)"
         ]
     },
     "jotl-5": {
@@ -1059,13 +1059,13 @@ export default {
         ]
     },
     "jotl-7": {
-        "name": "Tumore Sommerso",
+        "name": "Sunken Tumor",
         "rewards": [
             "20 punti esperienza ciascuno"
         ]
     },
     "jotl-8": {
-        "name": "Tumore Nascosto"
+        "name": "Hidden Tumor"
     },
     "jotl-9": {
         "name": "Evoluzione Esplosiva",
@@ -1115,7 +1115,7 @@ export default {
         "name": "Risultati Misti",
         "rewards": [
             "15 punti esperienza ciascuno",
-            "“Scudo Torre” (Oggetto 29)"
+            "“Tower Shield” (Oggetto 29)"
         ]
     },
     "jotl-17": {
@@ -1134,7 +1134,7 @@ export default {
     "jotl-19": {
         "name": "La Tana dei Ladri",
         "rewards": [
-            "“Anello della Forza” (Oggetto 31)"
+            "“Ring of Strength” (Oggetto 31)"
         ]
     },
     "jotl-20": {
@@ -1152,29 +1152,29 @@ export default {
     "jotl-22": {
         "name": "Messaggio Poco Amichevole",
         "rewards": [
-            "“Anello d'Acciaio” (Oggetto 33)"
+            "“Steel Ring” (Oggetto 33)"
         ]
     },
     "jotl-23": {
         "name": "Il Meglio del Meglio",
         "rewards": [
-            "“Ascia Spinata” (Oggetto 34)"
+            "“Barbed Axe” (Oggetto 34)"
         ]
     },
     "jotl-24": {
-        "name": "Custodire il Vuoto",
+        "name": "Warding the Void",
         "rewards": [
-            "“Vesti del Comando” (Oggetto 35)"
+            "“Robes of Command” (Oggetto 35)"
         ]
     },
     "jotl-25": {
         "name": "Il Più Bel Lavoro del Mondo",
         "rewards": [
-            "“Stivali a Reazione” (Oggetto 36)"
+            "“Jet Boots” (Oggetto 36)"
         ]
     },
     "fh-0": {
-        "name": "Ululati nella Neve"
+        "name": "Howling in the Snow"
     },
     "fh-1": {
         "name": "Una Città in Fiamme",
@@ -1200,19 +1200,19 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "Ricognizione Algox",
+        "name": "Algox Scouting",
         "rewards": [
             "Ottieni 1 ✔ ciascuno"
         ]
     },
     "fh-3": {
-        "name": "Offensiva Algox",
+        "name": "Algox Offensive",
         "rewards": [
             "Ottieni 1 ✔ ciascuno"
         ]
     },
     "fh-4": {
-        "name": "Cuore di Ghiaccio",
+        "name": "Heart of Ice",
         "rewards": [
             [
                 "Sblocca la scatola della classe {FF}",
@@ -1229,71 +1229,71 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "Cripta Ghiacciata",
+        "name": "Frozen Crypt",
         "rewards": [
             "Ottieni 2 {LUMBER} collettivi"
         ]
     },
     "fh-6": {
-        "name": "Valanga",
+        "name": "Avalanche",
         "rewards": [
             "Ottieni 2 {METAL} collettivi"
         ]
     },
     "fh-7": {
-        "name": "Il Bordo del Mondo",
+        "name": "Edge of the World",
         "rewards": [
             "10 punti esperienza ciascuno"
         ]
     },
     "fh-8": {
-        "name": "Trincea di Cristallo",
+        "name": "Crystal Trench",
         "rewards": [
             "Ottieni 1 {LUMBER} collettivo",
             "Ottieni 2 {HIDE} collettivi"
         ]
     },
     "fh-9": {
-        "name": "Catacombe Luminose",
+        "name": "Glowing Catacombs",
         "rewards": [
             "Ottieni 2 {CORPSECAP} collettivi"
         ]
     },
     "fh-10": {
-        "name": "Recinto di Cristallo",
+        "name": "Crystal Enclosure",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 1 ispirazione"
         ]
     },
     "fh-11": {
-        "name": "Picco di Snowscorn",
+        "name": "Snowscorn Peak",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 1 ispirazione"
         ]
     },
     "fh-12": {
-        "name": "Ingresso del Tempio",
+        "name": "Temple Entrance",
         "rewards": [
             "Ottieni 15 punti esperienza ciascuno"
         ]
     },
     "fh-13": {
-        "name": "Fiordo Ghiacciato",
+        "name": "Frozen Fjord",
         "rewards": [
-            "Ottieni “Corvo Morto” (Oggetto 233)"
+            "Ottieni “Dead Raven” (Oggetto 233)"
         ]
     },
     "fh-14": {
-        "name": "Secche Frastagliate",
+        "name": "Jagged Shoals",
         "rewards": [
             "Scegline una: sblocca la scatola della classe {CR} OPPURE sblocca la scatola della classe {DT}",
             "Aggiungi l'evento WO-81 al mazzo Avamposto Invernale"
         ]
     },
     "fh-15": {
-        "name": "Guglia Antica",
+        "name": "Ancient Spire",
         "rewards": [
             "Ottieni 1 {LUMBER} collettivo",
             "Ottieni 1 {METAL} collettivo",
@@ -1301,20 +1301,20 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Ascensore Abbandonato",
+        "name": "Derelict Elevator",
         "rewards": [
             "Ottieni 5 punti esperienza ciascuno",
             "Ottieni 1 ispirazione"
         ]
     },
     "fh-17": {
-        "name": "Camera Blindata Infestata",
+        "name": "Haunted Vault",
         "rewards": [
             "Ottieni 1 ✔ ciascuno"
         ]
     },
     "fh-18": {
-        "name": "Campi di Cristallo",
+        "name": "Crystal Fields",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni un modello di oggetto casuale",
@@ -1322,7 +1322,7 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Salone del Cielo",
+        "name": "Skyhall",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni un modello di oggetto casuale",
@@ -1330,19 +1330,19 @@ export default {
         ]
     },
     "fh-20": {
-        "name": "Tempio della Liberazione",
+        "name": "Temple of Liberation",
         "rewards": [
             "Ottieni 15 monete d'oro ciascuno"
         ]
     },
     "fh-21": {
-        "name": "Regno del Gelo Eterno",
+        "name": "Realm of Endless Frost",
         "rewards": [
             "Ottieni 2 prosperità"
         ]
     },
     "fh-22": {
-        "name": "Banchi di Ghiaccio",
+        "name": "Ice Floes",
         "rewards": [
             "Perdi 1 {LUMBER} collettivo per ogni gruppo di cinque esagoni con tessere acqua sulla tessera 7-G",
             "Ottieni 15 punti esperienza ciascuno",
@@ -1350,19 +1350,19 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "Sotterranei della Guglia",
+        "name": "Spire Basement",
         "rewards": [
             "Ottieni un modello di oggetto casuale"
         ]
     },
     "fh-24": {
-        "name": "Guglia Superiore",
+        "name": "Upper Spire",
         "rewards": [
             "Ottieni un modello di oggetto casuale"
         ]
     },
     "fh-25": {
-        "name": "Tunnel Arrugginiti",
+        "name": "Rusted Tunnels",
         "rewards": [
             "Ottieni 2 {LUMBER} collettivi",
             "Ottieni 2 {METAL} collettivi",
@@ -1370,13 +1370,13 @@ export default {
         ]
     },
     "fh-26": {
-        "name": "Biblioteca Quatryl",
+        "name": "Quatryl Library",
         "rewards": [
             "Ottieni 10 punti esperienza ciascuno"
         ]
     },
     "fh-27": {
-        "name": "Profondità del Delirio",
+        "name": "Depths of Delirium",
         "rewards": [
             "Ottieni 10 punti esperienza ciascuno",
             "Ottieni 1 ✔ ciascuno",
@@ -1384,13 +1384,13 @@ export default {
         ]
     },
     "fh-28": {
-        "name": "Incontro al Vertice",
+        "name": "Summit Meeting",
         "rewards": [
             "Perdi 1 morale"
         ]
     },
     "fh-29": {
-        "name": "Guerra della Guglia A",
+        "name": "War of the Spire A",
         "rewards": [
             "Ottieni 3 morale",
             "Rimuovi tutti gli eventi {ALGOX} da tutti i mazzi eventi Avamposto",
@@ -1399,41 +1399,41 @@ export default {
         ]
     },
     "fh-30": {
-        "name": "Guerra della Guglia B",
+        "name": "War of the Spire B",
         "rewards": [
             "Ottieni 3 morale",
-            "Ottieni l'adesivo “Distruttore dei Portavoce della Neve”",
+            "Ottieni l'adesivo “Destroyer of the Snowspeakers”",
             "Rimuovi tutti gli eventi {ALGOX} da tutti i mazzi eventi Avamposto",
             "Aggiungi l'evento WO-69 al mazzo Avamposto Invernale",
             "Aggiungi 34.2 al calendario tra cinque settimane"
         ]
     },
     "fh-31": {
-        "name": "Tunnel Scoppiettante",
+        "name": "Crackling Tunnel",
         "rewards": [
             "Ottieni 5 punti esperienza ciascuno",
             "Ottieni 10 monete d'oro ciascuno"
         ]
     },
     "fh-32": {
-        "name": "Il Nido dei Corvi",
+        "name": "Ravens' Roost",
         "rewards": [
-            "Ottieni il modello di oggetto “Mantello di Piume” (Oggetto 69)"
+            "Ottieni il modello di oggetto “Feathered Cloak” (Oggetto 69)"
         ]
     },
     "fh-33": {
-        "name": "Bosco Disgelato",
+        "name": "Thawed Wood",
         "rewards": [
             "Ottieni 5 punti esperienza ciascuno per ogni runa da rabdomante non rivelata",
-            "Ottieni “Fonte di Energia di Brace” (Oggetto 244)",
+            "Ottieni “Ember Energy Source” (Oggetto 244)",
             "Aggiungi 135.1 al calendario tra tre settimane"
         ]
     },
     "fh-34": {
-        "name": "Cima della Guglia"
+        "name": "Top of the Spire"
     },
     "fh-35": {
-        "name": "Fossa dei Rottami",
+        "name": "Scrap Pit",
         "rewards": [
             "Ottieni 2 {LUMBER} collettivi",
             "Ottieni 2 {METAL} collettivi",
@@ -1441,23 +1441,23 @@ export default {
         ]
     },
     "fh-36": {
-        "name": "Condotti Sepolti",
+        "name": "Buried Ducts",
         "rewards": [
             "Ottieni 3 {LUMBER} collettivi",
             "Ottieni 3 {METAL} collettivi",
-            "Ottieni il modello di oggetto “Lenti Convergenti” (Oggetto 67)"
+            "Ottieni il modello di oggetto “Converging Lenses” (Oggetto 67)"
         ]
     },
     "fh-37": {
-        "name": "Il Miglio Morto",
+        "name": "The Dead Mile",
         "rewards": [
             "Ottieni 3 {LUMBER} collettivi",
             "Ottieni 3 {METAL} collettivi",
-            "Ottieni il modello di oggetto “Lenti Convergenti” (Oggetto 67)"
+            "Ottieni il modello di oggetto “Converging Lenses” (Oggetto 67)"
         ]
     },
     "fh-38": {
-        "name": "La Via da Seguire",
+        "name": "The Way Forward",
         "rewards": [
             "Ottieni 10 punti esperienza ciascuno",
             "Ottieni 1 ✔ ciascuno",
@@ -1465,21 +1465,21 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "Accampamento Corrotto",
+        "name": "Corrupted Camp",
         "rewards": [
             "Perdi 1 ispirazione",
             "Ottieni 2 carte bottino aggiuntive ciascuno"
         ]
     },
     "fh-40": {
-        "name": "Opera di Soccorso",
+        "name": "Relief Effort",
         "rewards": [
             "Perdi 1 ispirazione",
             "Ottieni 2 carte bottino aggiuntive ciascuno"
         ]
     },
     "fh-41": {
-        "name": "Frammento Slegato",
+        "name": "Unfettered Shard",
         "rewards": [
             "Ottieni 15 monete d'oro ciascuno",
             "Ottieni 2 {AXENUT} collettivi",
@@ -1487,7 +1487,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Trincea Senza Sole",
+        "name": "Sunless Trench",
         "rewards": [
             "Ottieni 2 ✔ ciascuno",
             "Aggiungi l'evento B-16 al mazzo Barca",
@@ -1495,55 +1495,55 @@ export default {
         ]
     },
     "fh-43": {
-        "name": "Barricata Invasa",
+        "name": "Overrun Barricade",
         "rewards": [
             "Ottieni 10 punti esperienza ciascuno"
         ]
     },
     "fh-44": {
-        "name": "Centro Nevralgico",
+        "name": "Nerve Center",
         "rewards": [
             "Ottieni 5 monete d'oro ciascuno",
-            "Ottieni il modello di oggetto “Bacchetta Energizzante” (Oggetto 73)"
+            "Ottieni il modello di oggetto “Energizing Baton” (Oggetto 73)"
         ]
     },
     "fh-45": {
-        "name": "Ghiacciaio Vivente",
+        "name": "Living Glacier",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 1 ✔ ciascuno"
         ]
     },
     "fh-46": {
-        "name": "Passo Morto",
+        "name": "Dead Pass",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 10 punti esperienza ciascuno"
         ]
     },
     "fh-47": {
-        "name": "Cresta delle Carogne",
+        "name": "Carrion Ridge",
         "rewards": [
             "Ottieni 10 monete d'oro ciascuno",
             "Ottieni 2 {LUMBER} collettivi"
         ]
     },
     "fh-48": {
-        "name": "Isola della Bufera",
+        "name": "Blizzard island",
         "rewards": [
             "Ottieni 10 monete d'oro ciascuno",
             "Ottieni 2 {METAL} collettivi"
         ]
     },
     "fh-49": {
-        "name": "Sotto il Mare e la Pietra",
+        "name": "Beneath Sea and Stone",
         "rewards": [
             "Ottieni 5 punti esperienza ciascuno",
             "Ottieni 1 ispirazione"
         ]
     },
     "fh-50": {
-        "name": "Discesa Esplosiva",
+        "name": "Explosive Descent",
         "rewards": [
             "Perdi 2 ispirazione",
             "Ottieni 4 {LUMBER} collettivi",
@@ -1554,30 +1554,30 @@ export default {
         "name": "Sale dell'Orfano",
         "rewards": [
             "Ottieni 10 punti esperienza ciascuno",
-            "Ottieni il modello di oggetto “Granate Stordenti” (Oggetto 74)"
+            "Ottieni il modello di oggetto “Shock Grenades” (Oggetto 74)"
         ]
     },
     "fh-52": {
-        "name": "Permanenza Effimera",
+        "name": "Fleeting Permanence",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 1 ispirazione"
         ]
     },
     "fh-53": {
-        "name": "Trono Sottomarino",
+        "name": "Underwater Throne",
         "rewards": [
             "Ottieni 2 ✔ ciascuno"
         ]
     },
     "fh-54": {
-        "name": "Tra i Relitti",
+        "name": "Among the Wreckage",
         "rewards": [
             "Ottieni 2 ✔ ciascuno"
         ]
     },
     "fh-55": {
-        "name": "Cambio di Idea",
+        "name": "Change of Heart",
         "rewards": [
             "Ottieni 2 morale",
             "Ottieni 2 prosperità",
@@ -1588,7 +1588,7 @@ export default {
         ]
     },
     "fh-56": {
-        "name": "Il Richiamo dell'Araldo",
+        "name": "Call of the Harbinger",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 1 ispirazione",
@@ -1598,7 +1598,7 @@ export default {
         ]
     },
     "fh-57": {
-        "name": "Santuario della Neve",
+        "name": "Sanctuary of Snow",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 1 ispirazione",
@@ -1608,10 +1608,10 @@ export default {
         ]
     },
     "fh-58": {
-        "name": "Il Nucleo dell'Orfano",
+        "name": "Orphan's Core",
         "rewards": [
             "Ottieni 1 morale",
-            "Ottieni “Carta Chiave” (Oggetto 246)",
+            "Ottieni “Key Card” (Oggetto 246)",
             "Ottieni 3 {LUMBER} collettivi",
             "Ottieni 3 {METAL} collettivi",
             "Ottieni 3 {HIDE} collettivi",
@@ -1622,11 +1622,11 @@ export default {
         ]
     },
     "fh-59": {
-        "name": "Rivolta dell'Automazione",
+        "name": "Automation Uprising",
         "rewards": [
             "Ottieni 2 morale",
             "Ottieni 2 prosperità",
-            "Ottieni “Carta Chiave” (Oggetto 246)",
+            "Ottieni “Key Card” (Oggetto 246)",
             "Sblocca la scatola della classe {HV}",
             "Rimuovi tutti gli eventi {UNFETTERED} da tutti i mazzi eventi Avamposto",
             "Aggiungi l'evento SO-49 al mazzo Avamposto Estivo e l'evento WO-63 al mazzo Avamposto Invernale",
@@ -1634,7 +1634,7 @@ export default {
         ]
     },
     "fh-60": {
-        "name": "Riunire la Corona",
+        "name": "Uniting the Crown",
         "rewards": [
             "Ottieni 2 morale",
             "Ottieni 1 prosperità",
@@ -1647,26 +1647,26 @@ export default {
         ]
     },
     "fh-61": {
-        "name": "Vita e Morte",
+        "name": "Life and Death",
         "rewards": [
             "Sblocca la scatola della classe {SH}",
             "Aggiungi il paragrafo 140.3 al calendario tra una settimana"
         ]
     },
     "fh-62": {
-        "name": "Il Sigillo degli Slegati",
+        "name": "The Unfettered Seal",
         "rewards": [
             "Ottieni 1 prosperità"
         ]
     },
     "fh-63": {
-        "name": "Il Sigillo dei Savvas",
+        "name": "The Savvas Seal",
         "rewards": [
             "Ottieni 2 prosperità"
         ]
     },
     "fh-64": {
-        "name": "Il Sigillo di Frosthaven",
+        "name": "The Frosthaven Seal",
         "rewards": [
             "Ottieni 3 morale",
             "Ottieni 3 prosperità",
@@ -1674,7 +1674,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Solide Fondamenta",
+        "name": "A Strong Foundation",
         "rewards": [
             "Ottieni 2 {LUMBER} collettivi",
             "Ottieni 2 {METAL} collettivi",
@@ -1682,28 +1682,28 @@ export default {
         ]
     },
     "fh-66": {
-        "name": "Nuclei Elementali",
+        "name": "Elemental Cores",
         "rewards": [
-            "Ottieni “Pietra Elementale” (Oggetto 212)",
+            "Ottieni “Elemental Stone” (Oggetto 212)",
             "Aggiungi 29.3 al calendario tra sei settimane"
         ]
     },
     "fh-67": {
-        "name": "Sintonia dei Nuclei",
+        "name": "Core Attunement",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 1 prosperità"
         ]
     },
     "fh-68": {
-        "name": "Il Volto del Tormento",
+        "name": "The Face of Torment",
         "rewards": [
-            "Missione personale “Avamposto Aesther” completata",
+            "Missione personale “Aesther Outpost” completata",
             "Aggiungi 133.1 al calendario tra due settimane"
         ]
     },
     "fh-69": {
-        "name": "Terra Sacra",
+        "name": "Sacred Soil",
         "rewards": [
             "Ottieni 1 {ARROWVINE}",
             "Ottieni 1 {AXENUT}",
@@ -1712,14 +1712,14 @@ export default {
         ]
     },
     "fh-70": {
-        "name": "La Vera Quercia",
+        "name": "The True Oak",
         "rewards": [
-            "Missione personale “La Vera Quercia” completata",
+            "Missione personale “The True Oak” completata",
             "Ottieni 1 prosperità"
         ]
     },
     "fh-71": {
-        "name": "Invasione del Molo",
+        "name": "Invasion of the Dock",
         "rewards": [
             "Danneggia un edificio di numero pari qualsiasi tra 71 e 89",
             "Ottieni 10 punti esperienza ciascuno",
@@ -1727,51 +1727,51 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "Un Gigantesco Blocco di Ghiaccio",
+        "name": "A Giant Block of Ice",
         "rewards": [
             "Ottieni 1 ✔ ciascuno"
         ]
     },
     "fh-73": {
-        "name": "Detriti Galleggianti",
+        "name": "Flotsam",
         "rewards": [
             "Ottieni 3 {LUMBER} collettivi",
             "Aggiungi 146.1 al calendario tra cinque settimane"
         ]
     },
     "fh-74": {
-        "name": "Vuoti nella Strada",
+        "name": "Gaps in the Road",
         "rewards": [
             "Ottieni un modello di oggetto casuale"
         ]
     },
     "fh-75": {
-        "name": "Infiltrarsi nella Tana",
+        "name": "Infiltraiting the Lair",
         "rewards": [
             "Ottieni 10 monete d'oro ciascuno"
         ]
     },
     "fh-76": {
-        "name": "Apoteosi",
+        "name": "Apotheosis",
         "rewards": [
             [
-                "Missione personale “Minaccia dalle Profondità” completata",
-                "Ottieni “Lama dell'Onda” (Oggetto 201)",
+                "Missione personale “Threat from the Deep” completata",
+                "Ottieni “Wave Blade” (Oggetto 201)",
                 "Aggiungi l'evento B-18 al mazzo Barca"
             ],
             []
         ]
     },
     "fh-77": {
-        "name": "L'Ascensione del Re dei Pesci",
+        "name": "Fish King's Ascension",
         "rewards": [
-            "Missione personale “Minaccia dalle Profondità” completata",
-            "Ottieni “Lama dell'Onda” (Oggetto 201)",
+            "Missione personale “Threat from the Deep” completata",
+            "Ottieni “Wave Blade” (Oggetto 201)",
             "Aggiungi l'evento B-19 al mazzo Barca"
         ]
     },
     "fh-78": {
-        "name": "Il Problema degli Osservatori",
+        "name": "The Lurker Problem",
         "rewards": [
             "Ottieni 10 punti esperienza ciascuno"
         ]
@@ -1784,7 +1784,7 @@ export default {
         ]
     },
     "fh-80": {
-        "name": "Reliquia Rinnovata",
+        "name": "Relic Renewed",
         "rewards": [
             "Ottieni 2 {LUMBER} collettivi",
             "Ottieni 2 {METAL} collettivi",
@@ -1793,40 +1793,40 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Laboratorio di Ricerca in Rovina",
+        "name": "Ruinous Research Lab",
         "rewards": [
             "Ottieni 1 prosperità",
-            "Ottieni il modello di oggetto “Veste Aesther” (Oggetto 70)"
+            "Ottieni il modello di oggetto “Aesther Robe” (Oggetto 70)"
         ]
     },
     "fh-82": {
-        "name": "Spedizione a Nord",
+        "name": "Expedition North",
         "rewards": [
             "Ottieni 2 prosperità",
             "Aggiungi i seguenti oggetti di Cerchi Dimenticati alla riserva di Frosthaven: 153, 159 e 161"
         ]
     },
     "fh-83": {
-        "name": "Salamoia Montante",
+        "name": "Rising Brine",
         "rewards": [
-            "Ottieni “Spina di Porcopiranha Gigante” (Oggetto 202)"
+            "Ottieni “Giant Piranha Pig Spine” (Oggetto 202)"
         ]
     },
     "fh-84": {
-        "name": "Qui Vivono le Melme",
+        "name": "Here There Be Oozes",
         "rewards": [
-            "Ottieni “Fiala di Melma” (Oggetto 234)"
+            "Ottieni “ooze vial” (Oggetto 234)"
         ]
     },
     "fh-85": {
-        "name": "Passatempi Mortali",
+        "name": "Deadly Pastimes",
         "rewards": [
             "Ottieni 15 punti esperienza ciascuno",
             "Ottieni 1 ✔ ciascuno"
         ]
     },
     "fh-86": {
-        "name": "La Signora in Bianco",
+        "name": "The Lady in White",
         "rewards": [
             "Ottieni 2 morale"
         ]
@@ -1843,20 +1843,20 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "Il Culmine della Collezione",
+        "name": "Collection's Capstone",
         "rewards": [
             "Ottieni 2 morale"
         ]
     },
     "fh-89": {
-        "name": "Un Fuoco Contenuto",
+        "name": "A Contained Fire",
         "rewards": [
             "Ottieni 2 {ROCKROOT} collettivi",
             "Ottieni 2 {LUMBER} collettivi"
         ]
     },
     "fh-90": {
-        "name": "Tesoro Ghiacciato",
+        "name": "Frozen Treasure",
         "rewards": [
             [
                 "Ottieni 1 ✔ ciascuno",
@@ -1872,84 +1872,84 @@ export default {
         ]
     },
     "fh-91": {
-        "name": "Scontro sulla Riva",
+        "name": "Shoreline Scramble",
         "rewards": [
             "Ottieni 2 {LUMBER} collettivi",
             "Ottieni 1 morale"
         ]
     },
     "fh-92": {
-        "name": "Nave che Affonda",
+        "name": "Sinking Ship",
         "rewards": [
             "Perdete collettivamente 5xC/2 segnalini bottino. I segnalini bottino vengono poi scambiati con carte bottino",
             "Aggiungi 181.2 al calendario tra una settimana"
         ]
     },
     "fh-93": {
-        "name": "Rissa di Metà Inverno",
+        "name": "Midwinter Brawl",
         "rewards": [
             [
-                "Ottieni “Piccolo Ratto” (Oggetto 235)"
+                "Ottieni “Small Rat” (Oggetto 235)"
             ],
             [
-                "Ottieni “Pollame Arrosto” (Oggetto 79)"
+                "Ottieni “Roasted Fowl” (Oggetto 79)"
             ]
         ]
     },
     "fh-94": {
-        "name": "Una Vista Grandiosa",
+        "name": "A Grand View",
         "rewards": [
             "Ottieni 10 punti esperienza ciascuno"
         ]
     },
     "fh-95": {
-        "name": "Seppellire i Morti",
+        "name": "To Bury the Dead",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 10 monete d'oro ciascuno"
         ]
     },
     "fh-96": {
-        "name": "Stazione Sotterranea",
+        "name": "Underground Station",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 5 punti esperienza ciascuno"
         ]
     },
     "fh-97": {
-        "name": "Nesso di Controllo del Programma",
+        "name": "Program Control Nexus",
         "rewards": [
             "Ottieni 5 {METAL} collettivi"
         ]
     },
     "fh-98": {
-        "name": "Condotto Crollante",
+        "name": "Collapsing Vent",
         "rewards": [
             "Ottieni 1 prosperità"
         ]
     },
     "fh-99": {
-        "name": "Evasione",
+        "name": "Prison Break",
         "rewards": [
             "Ottieni 10 monete d'oro ciascuno"
         ]
     },
     "fh-100": {
-        "name": "Dentro lo Sciame",
+        "name": "Inside the Swarm",
         "rewards": [
             "Ottieni 5 monete d'oro ciascuno",
             "Ottieni 10 punti esperienza ciascuno"
         ]
     },
     "fh-101": {
-        "name": "Biblioteca dei Harrower",
+        "name": "Harrower Library",
         "rewards": [
             "Ottieni 1 ✔ ciascuno",
             "Ottieni 10 punti esperienza ciascuno"
         ]
     },
     "fh-102": {
-        "name": "Nell'Oscurità Più Nera",
+        "name": "Into the Black",
         "rewards": [
             "Ottieni 20 punti esperienza ciascuno"
         ]
@@ -1963,27 +1963,27 @@ export default {
         ]
     },
     "fh-104": {
-        "name": "Rovine del Solstizio",
+        "name": "Ruins of the Solstice",
         "rewards": [
             "Ottieni 2 {SNOWTHISTLE} collettivi",
             "Aggiungi l'evento WR-49 al mazzo Strada Invernale"
         ]
     },
     "fh-105": {
-        "name": "Rovine dell'Equinozio",
+        "name": "Ruins of the Equinox",
         "rewards": [
             "Ottieni 2 {FLAMEFRUIT} collettivi",
             "Aggiungi 159.4 al calendario tra quattro settimane"
         ]
     },
     "fh-106": {
-        "name": "La Forgia di Tempus",
+        "name": "The Tempus Forge",
         "rewards": [
-            "Ottieni “Chiave delle Stagioni” (Oggetto 213)"
+            "Ottieni “Key of Seasons” (Oggetto 213)"
         ]
     },
     "fh-107": {
-        "name": "Il Mio Impero Privato",
+        "name": "My Private Empire",
         "rewards": [
             [
                 "Ottieni 1 risorsa materiale collettiva a scelta"
@@ -1999,56 +1999,56 @@ export default {
             ],
             [
                 "Ottieni 5 risorse materiali collettive a scelta",
-                "Ottieni “Coppa di Ventillion” (Oggetto 214)"
+                "Ottieni “Cup of Ventillion” (Oggetto 214)"
             ]
         ]
     },
     "fh-108": {
-        "name": "Fossa Lucente",
+        "name": "Lustrous Pit",
         "rewards": [
             "Ottieni 2 morale",
             "Ottieni 2 ispirazione"
         ]
     },
     "fh-109": {
-        "name": "Fabbrica Furiosa",
+        "name": "Furious Factory",
         "rewards": [
             "Ottieni 5 {METAL} collettivi"
         ]
     },
     "fh-110": {
-        "name": "Tempio del Guardiano",
+        "name": "Guardian's Temple",
         "rewards": [
-            "Ottieni il modello di oggetto “Guanto della Rosa” (Oggetto 75)"
+            "Ottieni il modello di oggetto “Rose Gauntlet” (Oggetto 75)"
         ]
     },
     "fh-111": {
-        "name": "Grotta di Ghiaccio",
+        "name": "Ice Cave",
         "rewards": [
-            "Ottieni “Specchio Incrinato” (Oggetto 236)"
+            "Ottieni “Cracked Mirror” (Oggetto 236)"
         ]
     },
     "fh-112": {
-        "name": "Cresciuto dai Lupi",
+        "name": "Raised by Wolves",
         "rewards": [
             "Ottieni 15 punti esperienza ciascuno"
         ]
     },
     "fh-113": {
-        "name": "Grotta Lussureggiante",
+        "name": "Lush Grotto",
         "rewards": [
             "Ottieni 4 risorse erba collettive a scelta"
         ]
     },
     "fh-114": {
-        "name": "Lavori Sospesi",
+        "name": "Work Freeze",
         "rewards": [
             "Ottieni 5 {HIDE} collettivi",
             "Aggiungi 86.1 al calendario tra quattro settimane"
         ]
     },
     "fh-115": {
-        "name": "Problemi di Piloni",
+        "name": "Pylon Problems",
         "rewards": [
             [
                 "Ottieni 15 punti esperienza ciascuno",
@@ -2123,29 +2123,29 @@ export default {
         ]
     },
     "fh-117": {
-        "name": "Un Gioco di Attesa",
+        "name": "A Waiting Game",
         "rewards": [
             "Ottieni 4 {HIDE} collettivi",
             "Ottieni 10 monete d'oro ciascuno"
         ]
     },
     "fh-118": {
-        "name": "Negromanzia degli Osservatori",
+        "name": "Lurker Necromancy",
         "rewards": [
-            "Ottieni il modello di oggetto “Amuleto della Vita Eterna” (Oggetto 66)",
+            "Ottieni il modello di oggetto “Amulet of Eternal Life” (Oggetto 66)",
             "Scambia tutti i segnalini con carte bottino"
         ]
     },
     "fh-119": {
-        "name": "Polvere Radiosa",
+        "name": "Radiant Dust",
         "rewards": [
-            "Spendi 7 polveri rimanenti per ottenere “Scettro del Controllo” (Oggetto 203)",
+            "Spendi 7 polveri rimanenti per ottenere “Scepter of Control” (Oggetto 203)",
             "Spendi 1 polvere rimanente per ottenere 1 risorsa materiale a scelta",
             "Spendi 2 polveri rimanenti per ottenere 1 risorsa erba a scelta"
         ]
     },
     "fh-120": {
-        "name": "Sotto Influenza",
+        "name": "Under the Influence",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 2 {LUMBER} collettivi",
@@ -2153,13 +2153,13 @@ export default {
         ]
     },
     "fh-121": {
-        "name": "Ricordi Neri",
+        "name": "Black Memories",
         "rewards": [
             [
                 "Aggiungi 184.3 al calendario tra sei settimane"
             ],
             [
-                "Ottieni “Elmo Ruba-Mente” (Oggetto 193)"
+                "Ottieni “Mind Thieving Helmet” (Oggetto 193)"
             ],
             [
                 "Ottieni 2 morale"
@@ -2167,7 +2167,7 @@ export default {
         ]
     },
     "fh-122": {
-        "name": "La Brama Eterna",
+        "name": "The Eternal Crave",
         "rewards": [
             [
                 "Ottieni 10 monete d'oro ciascuno"
@@ -2179,32 +2179,32 @@ export default {
         ]
     },
     "fh-123": {
-        "name": "Il Titano",
+        "name": "The Titan",
         "rewards": [
             "Ottieni 1 morale",
             "Ottieni 1 ispirazione"
         ]
     },
     "fh-124": {
-        "name": "Un Problema Crescente",
+        "name": "A Growing Problem",
         "rewards": [
             "Ottieni 15 punti esperienza ciascuno"
         ]
     },
     "fh-125": {
-        "name": "Il Secondo più Lungo",
+        "name": "The Longest Second",
         "rewards": [
-            "Ottieni “Amuleto Temporale” (Oggetto 194)"
+            "Ottieni “Temporal Amulet” (Oggetto 194)"
         ]
     },
     "fh-126": {
-        "name": "Joseph il Leone",
+        "name": "Joseph the Lion",
         "rewards": [
             "Ottieni 10 monete d'oro ciascuno"
         ]
     },
     "fh-127": {
-        "name": "Mercantile Abbandonato",
+        "name": "Derelict Freighter",
         "rewards": [
             [
                 "Ottieni 10 monete d'oro collettive"
@@ -2227,7 +2227,7 @@ export default {
         ]
     },
     "fh-128": {
-        "name": "Una Storia da Ubriaco",
+        "name": "A Tall Drunken Tale",
         "rewards": [
             [
                 "Ottieni 1 morale",
@@ -2239,19 +2239,19 @@ export default {
             ],
             [
                 "Ottieni 3 morale",
-                "Ottieni “Boccale Stordente” (Oggetto 215)",
+                "Ottieni “Befuddling Mug” (Oggetto 215)",
                 "Aggiungi 100.3 al calendario tra tre settimane"
             ]
         ]
     },
     "fh-129": {
-        "name": "Come Tendere un'Imboscata",
+        "name": "How to Lay an Ambush",
         "rewards": [
             "Ottieni 1 ✔ ciascuno"
         ]
     },
     "fh-130": {
-        "name": "E Poi, un Ruscello",
+        "name": "And Then, a Stream",
         "rewards": [
             [
                 "Perdi 3 morale",
@@ -2264,14 +2264,14 @@ export default {
         ]
     },
     "fh-131": {
-        "name": "L'Iceberg Danzante",
+        "name": "The Dancing Iceberg",
         "rewards": [
             "Ottieni 10 punti esperienza ciascuno",
-            "Ottieni “Conchiglia Ipnotica” (Oggetto 237)"
+            "Ottieni “Mesmerizing Seashell” (Oggetto 237)"
         ]
     },
     "fh-132": {
-        "name": "Tempio del Potere Felino",
+        "name": "Temple of Feline Power",
         "rewards": [
             "Ottieni 1 ispirazione"
         ]
@@ -2279,33 +2279,33 @@ export default {
     "fh-133": {
         "name": "Bolt",
         "rewards": [
-            "Ottieni “Idolo Incrinato” (Oggetto 238)"
+            "Ottieni “Cracked Idol” (Oggetto 238)"
         ]
     },
     "fh-134": {
-        "name": "Torre della Conoscenza",
+        "name": "Tower of Knowledge",
         "rewards": [
-            "Ottieni “Tomo del Conflitto” (Oggetto 219)"
+            "Ottieni “Tome of Conflict” (Oggetto 219)"
         ]
     },
     "fh-135": {
-        "name": "Fortezza di Belara",
+        "name": "Belara's Keep",
         "rewards": [
             "Ottieni 2 morale",
             "Ottieni 2 prosperità",
             "Ottieni 1 ispirazione",
-            "Ottieni “Penna di Belara” (Oggetto 220)"
+            "Ottieni “Belaras Quill” (Oggetto 220)"
         ]
     },
     "fh-136": {
-        "name": "Nascondiglio Abbandonato",
+        "name": "Abandoned Hideout",
         "rewards": [
             "Ottieni 20 monete d'oro ciascuno",
-            "Ottieni “Moneta Antica” (Oggetto 245)"
+            "Ottieni “Ancient Coin” (Oggetto 245)"
         ]
     },
     "fh-137": {
-        "name": "Il Bottino della Regina dei Pirati",
+        "name": "Pirate Queen's Haul",
         "rewards": [
             "Ottieni 2 prosperità",
             "Ottieni 3 morale",
@@ -2314,105 +2314,105 @@ export default {
         ]
     },
     "fh-201": {
-        "name": "Meraviglia della Natura",
+        "name": "Wonder of Nature",
         "rewards": [
-            "“Randello del Vagabondo” (Oggetto 248)"
+            "“Wanderer's Club” (Oggetto 248)"
         ]
     },
     "fh-202": {
-        "name": "Corsa contro il Tempo",
+        "name": "Race Against the Clock",
         "rewards": [
-            "“Grilletto di Ricalibrazione” (Oggetto 249)"
+            "“Recalibration Trigger” (Oggetto 249)"
         ]
     },
     "fh-203": {
-        "name": "Imboscata di Ricognizione",
+        "name": "Scouting Ambush",
         "rewards": [
-            "“Lancia della Giustizia” (Oggetto 250)"
+            "“Spear of Justice” (Oggetto 250)"
         ]
     },
     "fh-204": {
-        "name": "I Morti della Notte",
+        "name": "The Dead of Night",
         "rewards": [
-            "“Urna delle Anime” (Oggetto 251)"
+            "“Soul Urn” (Oggetto 251)"
         ]
     },
     "fh-205": {
-        "name": "Ossa nella Terra",
+        "name": "Bones in the Dirt",
         "rewards": [
-            "“Codice della Terra Nera” (Oggetto 252)"
+            "“Black Earth Codex” (Oggetto 252)"
         ]
     },
     "fh-206": {
-        "name": "Dividi e Conquista",
+        "name": "Divide and Conquer",
         "rewards": [
-            "“Maschera della Dualità” (Oggetto 253)"
+            "“Mask of Duality” (Oggetto 253)"
         ]
     },
     "fh-207": {
-        "name": "Sentiero degli Antenati",
+        "name": "Path of Ancestry",
         "rewards": [
-            "“Lama Ancestrale” (Oggetto 254)"
+            "“Ancestral Blade” (Oggetto 254)"
         ]
     },
     "fh-208": {
-        "name": "Discesa Rovinosa",
+        "name": "Crumbling Descent",
         "rewards": [
-            "“Cuore della Montagna” (Oggetto 255)"
+            "“Mountain's Heart” (Oggetto 255)"
         ]
     },
     "fh-209": {
-        "name": "Sintonizzare la Risonanza",
+        "name": "Tuning the Resonance",
         "rewards": [
-            "“Frammento Sonoro” (Oggetto 256)"
+            "“Sonorous Shard” (Oggetto 256)"
         ]
     },
     "fh-210": {
-        "name": "Una Trappola Magnifica",
+        "name": "A Magnificent Trap",
         "rewards": [
-            "“Mimetizzazione Astuta” (Oggetto 257)"
+            "“Sly Camouflage” (Oggetto 257)"
         ]
     },
     "fh-211": {
-        "name": "Una Collezione di Sofferenza",
+        "name": "A Collection of Suffering",
         "rewards": [
-            "“Teschio dell'Agonia” (Oggetto 258)"
+            "“Skull of Agony” (Oggetto 258)"
         ]
     },
     "fh-212": {
-        "name": "Combattere la Neve con la Neve",
+        "name": "Fighting Snow with Snow",
         "rewards": [
-            "“Intaglio della Tempesta” (Oggetto 259)"
+            "“Storm Carving” (Oggetto 259)"
         ]
     },
     "fh-213": {
-        "name": "Sotto il Ghiaccio",
+        "name": "Under the Ice",
         "rewards": [
-            "“Sfera Congelante” (Oggetto 260)"
+            "“Freezing Orb” (Oggetto 260)"
         ]
     },
     "fh-214": {
         "name": "Ricarica",
         "rewards": [
-            "“Modulo Energizzato” (Oggetto 261)"
+            "“Energized Module” (Oggetto 261)"
         ]
     },
     "fh-215": {
-        "name": "Sala Caldaie",
+        "name": "Boiler Room",
         "rewards": [
-            "“Stivali di Scarico” (Oggetto 262)"
+            "“Exhaust Boots” (Oggetto 262)"
         ]
     },
     "fh-216": {
-        "name": "Lavoro Sporco",
+        "name": "Wet Work",
         "rewards": [
-            "“Teschio del Condottiero” (Oggetto 263)"
+            "“Warlords Skull” (Oggetto 263)"
         ]
     },
     "fh-217": {
-        "name": "Schianto contro le Onde",
+        "name": "Crash Against the Waves",
         "rewards": [
-            "“Medaglione a Spirale” (Oggetto 264)"
+            "“Spiraled Medallion” (Oggetto 264)"
         ]
     },
     "cs-1": {
@@ -2442,7 +2442,7 @@ export default {
         "rewards": [
             "+2 reputazione",
             "+1 prosperità",
-            "Ottieni “Polvere Stordente” (Oggetto gh-21)"
+            "Ottieni “Stun Powder” (Oggetto gh-21)"
         ]
     },
     "cs-7": {
@@ -2468,7 +2468,7 @@ export default {
         "name": "Den of Monstrosity",
         "rewards": [
             "Ottieni “Pozione di Guarigione Minore” (Oggetto gh-12)",
-            "Ottieni “Pozione di Mana Minore” (Oggetto gh-20)"
+            "Ottieni “Minor Mana Potion” (Oggetto gh-20)"
         ]
     },
     "cs-11": {
@@ -2481,7 +2481,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 prosperità",
-            "Ogni personaggio ottiene uno dei seguenti: “Pozione del Vigore Maggiore” (Oggetto gh-34), “Pozione del Potere Maggiore” (Oggetto gh-41), “Pozione di Mana Maggiore” (Oggetto gh-48)\nSe nessuno di questi è disponibile nel negozio, ottieni invece 20 monete d'oro"
+            "Ogni personaggio ottiene uno dei seguenti: “Pozione del Vigore Maggiore” (Oggetto gh-34), “Major Power Potion” (Oggetto gh-41), “Major Mana Potion” (Oggetto gh-48)\nSe nessuno di questi è disponibile nel negozio, ottieni invece 20 monete d'oro"
         ]
     },
     "cs-14": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "Ottieni “Pozione di Mana Maggiore” (Oggetto gh-48)"
+            "Ottieni “Major Mana Potion” (Oggetto gh-48)"
         ]
     },
     "cs-20": {
@@ -2533,7 +2533,7 @@ export default {
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "Ottieni “Stivali di Magma” (Oggetto gh-99)"
+            "Ottieni “Magma Waders” (Oggetto gh-99)"
         ]
     },
     "cs-22": {
@@ -2931,11 +2931,11 @@ export default {
         "rewards": [
             [
                 "40 monete d'oro collettive",
-                "Progetto “Cuoio Borchiato” (Oggetto gh-30) OPPURE progetto “Stivali dello Scatto” (Oggetto gh-36)"
+                "Progetto “Studded Leather” (Oggetto gh-30) OPPURE progetto “Boots of Dashing” (Oggetto gh-36)"
             ],
             [
                 "2 ✓ ciascuno",
-                "Progetto “Occhio Fortunato” (Oggetto gh-63)"
+                "Progetto “Lucky Eye” (Oggetto gh-63)"
             ]
         ]
     },
@@ -3466,7 +3466,7 @@ export default {
         "rewards": [
             "15 monete d'oro ciascuno",
             "10 punti esperienza ciascuno",
-            "Ottieni “Anello a Elica” (Oggetto 136)"
+            "Ottieni “Helix Ring” (Oggetto 136)"
         ]
     },
     "gh2-68": {
@@ -3512,7 +3512,7 @@ export default {
         "name": "Alture Ventose",
         "rewards": [
             "+1 prosperità",
-            "Ottieni “Pozione del Potere Maggiore” (Oggetto 53)"
+            "Ottieni “Major Power Potion” (Oggetto 53)"
         ]
     },
     "gh2-75": {
@@ -3596,7 +3596,7 @@ export default {
     "gh2-87": {
         "name": "Miniera Sulfurea",
         "rewards": [
-            "Ottieni “Trivella Antica” (Oggetto 109)"
+            "Ottieni “Ancient Drill” (Oggetto 109)"
         ]
     },
     "gh2-88": {
@@ -3608,7 +3608,7 @@ export default {
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "Ottieni 2× “Pozione di Guarigione Maggiore” (Oggetto 37)"
+            "Ottieni 2× “Major Healing Potion” (Oggetto 37)"
         ]
     },
     "gh2-90": {
@@ -3660,7 +3660,7 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "10 punti esperienza ciascuno",
-            "Ottieni “Teschio dell'Odio” (Oggetto 111)"
+            "Ottieni “Skull of Hatred” (Oggetto 111)"
         ]
     },
     "gh2-99": {

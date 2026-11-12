@@ -17,7 +17,7 @@ export default {
         ]
     },
     "gh-512": {
-        "name": "Жадность — это хорошо",
+        "name": "Greed is Good",
         "progress": [
             "Имейте при себе 200 золотых."
         ]
@@ -352,7 +352,7 @@ export default {
         ]
     },
     "fh-1": {
-        "name": "Изучение растений",
+        "name": "The Study of Plants",
         "building_unlocks": [
             24,
             42
@@ -362,7 +362,7 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "В поисках дуба",
+        "name": "Searching for the Oak",
         "building_unlocks": [
             24,
             42
@@ -387,7 +387,7 @@ export default {
         ]
     },
     "fh-4": {
-        "name": "Жадность — это хорошо",
+        "name": "Greed is Good",
         "building_unlocks": [
             37,
             74
@@ -397,7 +397,7 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "Строить, а не разрушать",
+        "name": "Build, not Destroy",
         "building_unlocks": [
             85,
             21
@@ -407,7 +407,7 @@ export default {
         ]
     },
     "fh-6": {
-        "name": "Сплочение коллектива",
+        "name": "Team Building",
         "building_unlocks": [
             85,
             21
@@ -417,7 +417,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "Форпост Эстер",
+        "name": "Aesther Outpost",
         "building_unlocks": [
             44,
             88
@@ -428,7 +428,7 @@ export default {
         ]
     },
     "fh-8": {
-        "name": "Опасная игра",
+        "name": "Dangerous Game",
         "building_unlocks": [
             44,
             88
@@ -440,7 +440,7 @@ export default {
         ]
     },
     "fh-9": {
-        "name": "Жизненные уроки",
+        "name": "Life Lessons",
         "building_unlocks": [
             90,
             83
@@ -450,7 +450,7 @@ export default {
         ]
     },
     "fh-10": {
-        "name": "Исследование Пределов",
+        "name": "Explore the Reaches",
         "building_unlocks": [
             90,
             83
@@ -460,7 +460,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "Изысканные вкусы",
+        "name": "Refined Tastes",
         "building_unlocks": [
             39,
             72
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "Угроза из глубин",
+        "name": "Threat from the Deep",
         "building_unlocks": [
             90,
             42
@@ -481,7 +481,7 @@ export default {
         ]
     },
     "fh-13": {
-        "name": "Положить конец обману",
+        "name": "End the Trickery",
         "building_unlocks": [
             44,
             74
@@ -505,7 +505,7 @@ export default {
         ]
     },
     "fh-15": {
-        "name": "Непрерывное процветание",
+        "name": "Continued Prosperity",
         "building_unlocks": [
             65,
             85
@@ -515,7 +515,7 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Готов к худшему",
+        "name": "Prepared for the Worst",
         "building_unlocks": [
             85,
             88
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "Оставьте их в покое",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,7 +545,7 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Усмирить мёртвые места",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67
@@ -555,7 +555,7 @@ export default {
         ]
     },
     "fh-20": {
-        "name": "Возвращение к простоте",
+        "name": "Return to Simplicity",
         "building_unlocks": [
             24,
             21
@@ -565,7 +565,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Изучение жизни",
+        "name": "The Study of Life",
         "building_unlocks": [
             39,
             72
@@ -575,7 +575,7 @@ export default {
         ]
     },
     "fh-22": {
-        "name": "Величайшее испытание",
+        "name": "The Greatest Challenge",
         "building_unlocks": [
             37,
             83
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "Избранный",
+        "name": "The Chosen One",
         "unlock": "Откройте конверт A",
         "progress": [
             "Станьте свидетелем того, как 10 союзников становятся изнурёнными в сценариях, которые вы в остальном завершаете."

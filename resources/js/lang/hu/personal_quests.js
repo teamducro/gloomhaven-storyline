@@ -1,13 +1,13 @@
 export default {
     "gh-510": {
-        "name": "Xorn Keresője",
+        "name": "Seeker of Xorn",
         "progress": [
             "Teljesíts három Kripta küldetést.",
             "Fejezd be: {SCENARIO 52}."
         ]
     },
     "gh-511": {
-        "name": "Kereskedő osztály",
+        "name": "Merchant Class",
         "progress": [
             "Birtokolj két {BODY} felszerelést.",
             "Birtokolj két {HEAD} felszerelést.",
@@ -17,13 +17,13 @@ export default {
         ]
     },
     "gh-512": {
-        "name": "A kapzsiság jó",
+        "name": "Greed is Good",
         "progress": [
             "Legyen nálad 200 arany."
         ]
     },
     "gh-513": {
-        "name": "A gyógymód megtalálása",
+        "name": "Finding the Cure",
         "unlock": "Nyisd ki az alábbi borítékot: X",
         "progress": [
             "Ölj meg nyolc erdei impet.",
@@ -31,63 +31,63 @@ export default {
         ]
     },
     "gh-514": {
-        "name": "Anatómiai tanulmány",
+        "name": "A Study of Anatomy",
         "progress": [
             "Élj át tizenöt alkalmat, amikor a csapattársaid kimerülnek."
         ]
     },
     "gh-515": {
-        "name": "Törvényhozó",
+        "name": "Law Bringer",
         "progress": [
             "Ölj meg húsz banditát vagy kultistát."
         ]
     },
     "gh-516": {
-        "name": "Egy font hús",
+        "name": "Pounds of Flesh",
         "progress": [
             "Ölj meg tizenöt vermlinget."
         ]
     },
     "gh-517": {
-        "name": "Trófeavadászat",
+        "name": "Trophy Hunt",
         "progress": [
             "Ölj meg húsz különböző típusú szörnyet."
         ]
     },
     "gh-518": {
-        "name": "Örök vándor",
+        "name": "Eternal Wanderer",
         "progress": [
             "Teljesíts tizenöt különböző küldetést."
         ]
     },
     "gh-519": {
-        "name": "Csatalegenda",
+        "name": "Battle Legend",
         "progress": [
             "Szerezz tizenöt ✔-t a teljesített jártasságokból."
         ]
     },
     "gh-520": {
-        "name": "A Fény eszköze",
+        "name": "Implement of Light",
         "progress": [
             "Találd meg a Skullbane Axe-t a nekromata szentélyében.",
             "Használd arra, hogy megölj hét Élő Csontot, Élő Holttestet vagy Élő Szellemet."
         ]
     },
     "gh-521": {
-        "name": "Vegyétek vissza a fákat",
+        "name": "Take Back the Trees",
         "progress": [
             "Teljesíts három küldetést a Tőrerdőben.",
             "Fejezd be: {SCENARIO 55}."
         ]
     },
     "gh-522": {
-        "name": "A vékony helyek",
+        "name": "The Thin Places",
         "progress": [
             "Teljesíts hat mellékküldetést."
         ]
     },
     "gh-523": {
-        "name": "Torz lények gyilkosa",
+        "name": "Aberrant Slayer",
         "progress": [
             "Ölj meg egy láng démont.",
             "Ölj meg egy fagy démont.",
@@ -98,19 +98,19 @@ export default {
         ]
     },
     "gh-524": {
-        "name": "Rettenthetetlen kiállás",
+        "name": "Fearless Stand",
         "progress": [
             "Ölj meg húsz elit szörnyet."
         ]
     },
     "gh-525": {
-        "name": "Jámborság mindenben",
+        "name": "Piety in All Things",
         "progress": [
             "Adományozz 120 aranyat a Vén Tölgy Szentélyének."
         ]
     },
     "gh-526": {
-        "name": "Bosszú",
+        "name": "Vengeance",
         "unlock": "Nyisd ki az alábbi borítékot: X",
         "progress": [
             "Teljesíts négy küldetést Homályrévben.",
@@ -118,32 +118,32 @@ export default {
         ]
     },
     "gh-527": {
-        "name": "A Véristen fanatikusa",
+        "name": "Zealot of the Blood God",
         "progress": [
             "Kimerülj tizenkétszer."
         ]
     },
     "gh-528": {
-        "name": "Góliát-ledöntő",
+        "name": "Goliath Toppler",
         "progress": [
             "Teljesíts négy főellenséges küldetést"
         ]
     },
     "gh-529": {
-        "name": "Az ember bukása",
+        "name": "The Fall of Man",
         "progress": [
             "Teljesíts 2 küldetést a Kísértő mocsárban.",
             "Fejezd be: {SCENARIO 61}."
         ]
     },
     "gh-530": {
-        "name": "Kibővített képességek",
+        "name": "Augmented Abilities",
         "progress": [
             "Vásárolj négy fejlesztést."
         ]
     },
     "gh-531": {
-        "name": "Elemi minták",
+        "name": "Elemental Samples",
         "progress": [
             "Teljesíts egy küldetést Homályrévben.",
             "Teljesíts egy küldetést a Tőrerdőben.",
@@ -154,13 +154,13 @@ export default {
         ]
     },
     "gh-532": {
-        "name": "Segítő kéz",
+        "name": "A Helping Hand",
         "progress": [
             "Élj át két másik karaktert, aki teljesíti az életcélját."
         ]
     },
     "gh-533": {
-        "name": "A tökéletes méreg",
+        "name": "The Perfect Poison",
         "progress": [
             "Ölj meg három iszapot.",
             "Ölj meg három lurkert.",
@@ -352,7 +352,7 @@ export default {
         ]
     },
     "fh-1": {
-        "name": "A növények tanulmányozása",
+        "name": "The Study of Plants",
         "building_unlocks": [
             24,
             42
@@ -362,7 +362,7 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "A tölgy keresése",
+        "name": "Searching for the Oak",
         "building_unlocks": [
             24,
             42
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "fh-3": {
-        "name": "Kereskedő osztály",
+        "name": "Merchant Class",
         "building_unlocks": [
             37,
             74
@@ -387,7 +387,7 @@ export default {
         ]
     },
     "fh-4": {
-        "name": "A kapzsiság jó",
+        "name": "Greed is Good",
         "building_unlocks": [
             37,
             74
@@ -397,7 +397,7 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "Építs, ne rombolj",
+        "name": "Build, not Destroy",
         "building_unlocks": [
             85,
             21
@@ -407,7 +407,7 @@ export default {
         ]
     },
     "fh-6": {
-        "name": "Csapatépítés",
+        "name": "Team Building",
         "building_unlocks": [
             85,
             21
@@ -417,7 +417,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "Aesther előőrs",
+        "name": "Aesther Outpost",
         "building_unlocks": [
             44,
             88
@@ -428,7 +428,7 @@ export default {
         ]
     },
     "fh-8": {
-        "name": "Veszélyes vad",
+        "name": "Dangerous Game",
         "building_unlocks": [
             44,
             88
@@ -440,7 +440,7 @@ export default {
         ]
     },
     "fh-9": {
-        "name": "Életleckék",
+        "name": "Life Lessons",
         "building_unlocks": [
             90,
             83
@@ -450,7 +450,7 @@ export default {
         ]
     },
     "fh-10": {
-        "name": "A vidék felfedezése",
+        "name": "Explore the Reaches",
         "building_unlocks": [
             90,
             83
@@ -460,7 +460,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "Kifinomult ízlés",
+        "name": "Refined Tastes",
         "building_unlocks": [
             39,
             72
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "Fenyegetés a mélyből",
+        "name": "Threat from the Deep",
         "building_unlocks": [
             90,
             42
@@ -481,7 +481,7 @@ export default {
         ]
     },
     "fh-13": {
-        "name": "Vess véget a csalafintaságnak",
+        "name": "End the Trickery",
         "building_unlocks": [
             44,
             74
@@ -491,7 +491,7 @@ export default {
         ]
     },
     "fh-14": {
-        "name": "Örök vándor",
+        "name": "Eternal Wanderer",
         "building_unlocks": [
             37,
             72
@@ -505,7 +505,7 @@ export default {
         ]
     },
     "fh-15": {
-        "name": "Folyamatos fejlődés",
+        "name": "Continued Prosperity",
         "building_unlocks": [
             65,
             85
@@ -515,7 +515,7 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Felkészülve a legrosszabbra",
+        "name": "Prepared for the Worst",
         "building_unlocks": [
             85,
             88
@@ -525,7 +525,7 @@ export default {
         ]
     },
     "fh-17": {
-        "name": "Csatalegenda",
+        "name": "Battle Legend",
         "building_unlocks": [
             81,
             67
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "Hagyd őket békén",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,17 +545,17 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "A holtak helyeinek elcsendesítése",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Szerezd meg az “Szakadék bárd” (Felszerelés 039) tervrajzot, és használd arra, hogy megölj tíz Frozen Corpse-t, Ice Wraitht és/vagy Living Doomot."
+            "Szerezd meg az “Abyss Axe” (Felszerelés 039) tervrajzot, és használd arra, hogy megölj tíz Frozen Corpse-t, Ice Wraitht és/vagy Living Doomot."
         ]
     },
     "fh-20": {
-        "name": "Vissza az egyszerűséghez",
+        "name": "Return to Simplicity",
         "building_unlocks": [
             24,
             21
@@ -565,7 +565,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Az élet tanulmányozása",
+        "name": "The Study of Life",
         "building_unlocks": [
             39,
             72
@@ -575,7 +575,7 @@ export default {
         ]
     },
     "fh-22": {
-        "name": "A legnagyobb kihívás",
+        "name": "The Greatest Challenge",
         "building_unlocks": [
             37,
             83
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "A Kiválasztott",
+        "name": "The Chosen One",
         "unlock": "Nyisd ki az alábbi borítékot: A",
         "progress": [
             "Élj át 10 szövetséges kimerülését olyan küldetések során, amelyeket egyébként teljesítesz."
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "Add a 69-es és 70-es városi eseményt a városi eseménypaklihoz. Szerezd meg a “Fekete kártya” (Felszerelés 113) felszerelést. Nem adható el.",
+            "Add a 69-es és 70-es városi eseményt a városi eseménypaklihoz. Szerezd meg a “Black Card” (Felszerelés 113) felszerelést. Nem adható el.",
             "Teljesíts hat mellékküldetést (56 feletti küldetésszám).",
             "Olvasd el: {SECTION} 128.2."
         ]

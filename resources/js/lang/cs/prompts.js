@@ -1,6 +1,6 @@
 export default {
     "dragon": {
-        "1": "Vraťte poklad Drakovi. Získejte globální úspěch „Drak pomohl“. Přidejte do balíčku událost ve městě 75 a událost na cestách 66.",
+        "1": "Vraťte poklad Drakovi. Získejte globální úspěch „The Drake Aided“. Přidejte do balíčku událost ve městě 75 a událost na cestách 66.",
         "2": "Drakovi nepomáhejte.",
         "title": "Přítel, nebo nepřítel",
         "text": "Získali jste Drakův poklad. Vrátíte ho Drakovi, nebo se řídíte rozkazy velitele stráží a pokusíte se Draka zabít?"

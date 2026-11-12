@@ -288,7 +288,7 @@ export default {
         "name": "Otrzymujesz 10 pkt. doświadczenia"
     },
     "jotl-2": {
-        "name": "„Pierścień Siły” (przedmiot 31)"
+        "name": "„Ring of Strength” (przedmiot 31)"
     },
     "jotl-3": {
         "name": "Otrzymujesz 15 pkt. doświadczenia"
@@ -312,7 +312,7 @@ export default {
         "name": "Otrzymujesz 5 szt. złota"
     },
     "jotl-10": {
-        "name": "„Przeznaczony Kompas” (przedmiot 27)"
+        "name": "„Fateful Compass” (przedmiot 27)"
     },
     "jotl-11": {
         "name": "„Pierścień Pośpiechu” (przedmiot 30)"
@@ -330,10 +330,10 @@ export default {
         "name": "Otrzymujesz 1 ✔"
     },
     "jotl-16": {
-        "name": "„Mikstura Many” (przedmiot 14)"
+        "name": "„Mana Potion” (przedmiot 14)"
     },
     "jotl-X": {
-        "name": "„Pierścień Odnowy” (przedmiot 32)"
+        "name": "„Ring of Restoration” (przedmiot 32)"
     },
     "cs-1": {
         "name": "„Drake's Blood” (przedmiot 59)"
@@ -531,7 +531,7 @@ export default {
         "name": "Odblokuj losowy scenariusz poboczny."
     },
     "fh-16": {
-        "name": "Otrzymujesz „Karafka Mgieł” (przedmiot 183)."
+        "name": "Otrzymujesz „Decanter of Mists” (przedmiot 183)."
     },
     "fh-17": {
         "name": "Otrzymujecie wspólnie 3 drewna."
@@ -549,7 +549,7 @@ export default {
         "name": "Otrzymujesz schemat „Detonator” (przedmiot 064)."
     },
     "fh-22": {
-        "name": "Otrzymujesz schemat „Zbroja Łuskowa” (przedmiot 068)."
+        "name": "Otrzymujesz schemat „Scaled Armor” (przedmiot 068)."
     },
     "fh-23": {
         "name": "Odblokuj losowy scenariusz poboczny."
@@ -576,7 +576,7 @@ export default {
         "name": "Otrzymujesz cztery karty łupów."
     },
     "fh-31": {
-        "name": "Otrzymujesz schemat „Dokładna Waga” (przedmiot 078)."
+        "name": "Otrzymujesz schemat „Balanced Scales” (przedmiot 078)."
     },
     "fh-32": {
         "name": "Otrzymujesz trzy karty łupów."
@@ -588,10 +588,10 @@ export default {
         "name": "Otrzymujesz 1 ✔."
     },
     "fh-35": {
-        "name": "Otrzymujesz „Teleskopowa Tyczka” (przedmiot 228)."
+        "name": "Otrzymujesz „Extendable Pole” (przedmiot 228)."
     },
     "fh-36": {
-        "name": "Otrzymujesz „Czarna Skrzynka” (przedmiot 222)."
+        "name": "Otrzymujesz „Black Box” (przedmiot 222)."
     },
     "fh-37": {
         "name": "Otrzymujesz trzy karty łupów."
@@ -603,10 +603,10 @@ export default {
         "name": "Odblokuj losowy scenariusz poboczny."
     },
     "fh-40": {
-        "name": "Otrzymujesz schemat „Działo Chaosu” (przedmiot 077)."
+        "name": "Otrzymujesz schemat „Chaos Cannon” (przedmiot 077)."
     },
     "fh-41": {
-        "name": "Otrzymujesz „Rzeźba Algoksów” (przedmiot 225)."
+        "name": "Otrzymujesz „Algox Carving” (przedmiot 225)."
     },
     "fh-42": {
         "name": "Otrzymujesz „Olbrzymi Miecz” (przedmiot 206)."
@@ -630,7 +630,7 @@ export default {
         "name": "Otrzymujesz trzy karty łupów."
     },
     "fh-49": {
-        "name": "Otrzymujesz schemat „Kościane Buty” (przedmiot 071)."
+        "name": "Otrzymujesz schemat „Bone Boots” (przedmiot 071)."
     },
     "fh-50": {
         "name": "Otrzymujesz „Zbroja z Garbowanej Skóry” (przedmiot 017)."
@@ -660,7 +660,7 @@ export default {
         "name": "Losowy schemat przedmiotu."
     },
     "fh-59": {
-        "name": "Otrzymujesz schemat „Symulator Bólu” (przedmiot 081)."
+        "name": "Otrzymujesz schemat „Pain Simulacrum” (przedmiot 081)."
     },
     "fh-60": {
         "name": "Otrzymujesz trzy karty łupów."
@@ -669,7 +669,7 @@ export default {
         "name": "Odblokuj losowy scenariusz poboczny."
     },
     "fh-62": {
-        "name": "Otrzymujesz schemat „Mechaniczna Kostka” (przedmiot 082), gdy znajdziesz drugą połowę tego schematu."
+        "name": "Otrzymujesz schemat „Mechanical Cube” (przedmiot 082), gdy znajdziesz drugą połowę tego schematu."
     },
     "fh-63": {
         "name": "Otrzymujesz pięć kart łupów."
@@ -690,16 +690,16 @@ export default {
         "name": "Otrzymujecie wspólnie 4 metalu."
     },
     "fh-69": {
-        "name": "Otrzymujesz schemat „Mechaniczna Kostka” (przedmiot 082), gdy znajdziesz drugą połowę tego schematu."
+        "name": "Otrzymujesz schemat „Mechanical Cube” (przedmiot 082), gdy znajdziesz drugą połowę tego schematu."
     },
     "fh-70": {
-        "name": "Otrzymujesz schemat „Róg Dowodzenia” (przedmiot 076)."
+        "name": "Otrzymujesz schemat „Horn of Command” (przedmiot 076)."
     },
     "fh-71": {
         "name": "Otrzymujesz cztery karty łupów."
     },
     "fh-72": {
-        "name": "Otrzymujesz schemat „Żyjący Kamień” (przedmiot 080)."
+        "name": "Otrzymujesz schemat „Living Stone” (przedmiot 080)."
     },
     "fh-73": {
         "name": "Losowy schemat przedmiotu."
@@ -726,10 +726,10 @@ export default {
         "name": "Otrzymujesz 15 pkt. doświadczenia."
     },
     "fh-81": {
-        "name": "Otrzymujesz „Ramię Nieposkromionego” (przedmiot 226)."
+        "name": "Otrzymujesz „Unfettered Arm” (przedmiot 226)."
     },
     "fh-82": {
-        "name": "Otrzymujesz schemat „Dębowy Kostur” (przedmiot 072)."
+        "name": "Otrzymujesz schemat „Oak Staff” (przedmiot 072)."
     },
     "fh-83": {
         "name": "Otrzymujesz „Trójgraniasty Kapelusz” (przedmiot 195)."
@@ -837,7 +837,7 @@ export default {
         "name": "Losowy scenariusz poboczny"
     },
     "gh2-33": {
-        "name": "Otrzymujesz „Mikstura Zdrowia” (przedmiot 101)"
+        "name": "Otrzymujesz „Cure Potion” (przedmiot 101)"
     },
     "gh2-34": {
         "name": "Otrzymujesz „Hełm Smoczej Łuski” (przedmiot 121)"

@@ -130,7 +130,7 @@ export default {
         ]
     },
     "gh-529": {
-        "name": "La Chute de l'Homme",
+        "name": "The Fall of Man",
         "progress": [
             "Accomplissez 2 scénarios dans le Marais Stagnant.",
             "Finissez {SCENARIO 61}."
@@ -143,7 +143,7 @@ export default {
         ]
     },
     "gh-531": {
-        "name": "Échantillons Élémentaires",
+        "name": "Elemental Samples",
         "progress": [
             "Accomplissez un scénario à Havrenuit.",
             "Accomplissez un scénario dans la Forêt des Dagues.",
@@ -323,8 +323,8 @@ export default {
     "cs-qa-001": {
         "name": "Ingenious Inventor",
         "progress": [
-            "Gagnez immédiatement «Power Modulator» (Objet QA-01).",
-            "Éliminez 12 ennemis avec le «Power Modulator» (Objet QA-01).",
+            "Gagnez immédiatement « Power Modulator » (Objet QA-01).",
+            "Éliminez 12 ennemis avec le « Power Modulator » (Objet QA-01).",
             "Finissez {SCENARIO QA1}."
         ]
     },
@@ -460,7 +460,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "Goûts Raffinés",
+        "name": "Refined Tastes",
         "building_unlocks": [
             39,
             72
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "La Menace des Profondeurs",
+        "name": "Threat from the Deep",
         "building_unlocks": [
             90,
             42
@@ -481,7 +481,7 @@ export default {
         ]
     },
     "fh-13": {
-        "name": "Mettre Fin à la Tromperie",
+        "name": "End the Trickery",
         "building_unlocks": [
             44,
             74
@@ -491,7 +491,7 @@ export default {
         ]
     },
     "fh-14": {
-        "name": "Voyageur Éternel",
+        "name": "Eternal Wanderer",
         "building_unlocks": [
             37,
             72
@@ -505,7 +505,7 @@ export default {
         ]
     },
     "fh-15": {
-        "name": "Prospérité Continue",
+        "name": "Continued Prosperity",
         "building_unlocks": [
             65,
             85
@@ -515,7 +515,7 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Préparé au Pire",
+        "name": "Prepared for the Worst",
         "building_unlocks": [
             85,
             88
@@ -525,7 +525,7 @@ export default {
         ]
     },
     "fh-17": {
-        "name": "Légende de Bataille",
+        "name": "Battle Legend",
         "building_unlocks": [
             81,
             67
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "Laissez-les en Paix",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,17 +545,17 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Apaiser les Lieux Morts",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Gagnez le plan de « Hache des Abysses » (Objet 039) et utilisez-la pour éliminer dix Cadavres Gelés, Spectres des Glaces et/ou Fléaux Réanimés."
+            "Gagnez le plan de « Abyss Axe » (Objet 039) et utilisez-la pour éliminer dix Cadavres Gelés, Spectres des Glaces et/ou Fléaux Réanimés."
         ]
     },
     "fh-20": {
-        "name": "Retour à la Simplicité",
+        "name": "Return to Simplicity",
         "building_unlocks": [
             24,
             21
@@ -565,7 +565,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "L'Étude de la Vie",
+        "name": "The Study of Life",
         "building_unlocks": [
             39,
             72
@@ -575,7 +575,7 @@ export default {
         ]
     },
     "fh-22": {
-        "name": "Le Plus Grand Défi",
+        "name": "The Greatest Challenge",
         "building_unlocks": [
             37,
             83
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "La Chute de l'Homme",
         "progress": [
-            "Gagnez la «Aesther Spyglass» (Objet 149). Elle ne peut pas être vendue.",
-            "Utilisez la «Aesther Spyglass» (Objet 149) dix fois.",
+            "Gagnez la « Aesther Spyglass » (Objet 149). Elle ne peut pas être vendue.",
+            "Utilisez la « Aesther Spyglass » (Objet 149) dix fois.",
             "Lisez {SECTION} 115.2.",
             "Menez {SCENARIO 63} jusqu'à sa conclusion."
         ]
@@ -683,8 +683,8 @@ export default {
         "name": "Implement of Light",
         "progress": [
             "Débloquez immédiatement {SCENARIO 65}.",
-            "Trouvez le «Shield of the Righteous» (Objet 148).",
-            "Utilisez le «Shield of the Righteous» (Objet 148) pour annuler dix attaques de 4 dégâts ou plus.",
+            "Trouvez le « Shield of the Righteous » (Objet 148).",
+            "Utilisez le « Shield of the Righteous » (Objet 148) pour annuler dix attaques de 4 dégâts ou plus.",
             "Lisez {SECTION} 82.1."
         ]
     },
@@ -725,7 +725,7 @@ export default {
     "gh2-17": {
         "name": "Living on the Edge",
         "progress": [
-            "Gagnez l'«Experimental Armor» (Objet 150).",
+            "Gagnez l'« Experimental Armor » (Objet 150).",
             "Utilisez-la pour infliger des dégâts à 20 ennemis.",
             "Lisez {SECTION} 47.4."
         ]

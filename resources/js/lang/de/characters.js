@@ -700,7 +700,7 @@ export default {
         ]
     },
     "IF": {
-        "name": "Initiatorin",
+        "name": "Infuser",
         "masteries": [
             "Habe fünf aktive {INFUSION_ICON} Boni",
             "Töte mindestens vier Gegner, ohne jemals anzugreifen"
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "Splitterklang",
+        "name": "Shattersong",
         "masteries": [
             "Habe immer 0 {RESONANCE_ICON}, direkt bevor du am Ende jedes deiner Züge {RESONANCE_ICON} erhältst",
             "Gib bei fünf verschiedenen {WAVE} Fertigkeiten jeweils 5 {RESONANCE_ICON} aus"
@@ -761,7 +761,7 @@ export default {
         ]
     },
     "TA": {
-        "name": "Fallensteller",
+        "name": "Trapper",
         "masteries": [
             "Habe eine {HEAL.fh}-Falle mit einem Wert von mindestens 20 auf dem Spielplan",
             "Bewege Gegner mit einer Fertigkeit über sieben oder mehr Fallen"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Schmerzvektor",
+        "name": "Pain Conduit",
         "masteries": [
             "Bringe andere Figuren dazu, in einer Runde insgesamt mindestens {DAMAGE.fh}40 zu erleiden",
             "Beginne einen Zug mit {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} und {MUDDLE.fh}"
@@ -839,7 +839,7 @@ export default {
         ]
     },
     "HV": {
-        "name": "DROHN",
+        "name": "HIVE",
         "masteries": [
             "{TRANSFER_ICON} in jeder Runde",
             "{TRANSFER_ICON} in einer Runde in vier verschiedene Beschworene"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Metallmosaik",
+        "name": "Metal Mosaic",
         "masteries": [
             "Greife nie an",
             "Bewege die Druckanzeige in vier aufeinanderfolgenden Runden um drei Stufen nach oben oder unten von dem Wert, bei dem sie die Runde begonnen hat ({PRESSURE_LOW_ICON} auf {PRESSURE_HIGH_ICON} oder umgekehrt)"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Tiefenspuk",
+        "name": "Deepwraith",
         "masteries": [
             "Führe alle deine Angriffe mit Vorteil aus",
             "Reichere in jeder Runde {DARK} an"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "Gezeitenbruch",
+        "name": "Crashing Tide",
         "masteries": [
             "Erleide nie Schaden durch Angriffe und werde von mindestens fünf Angriffen anvisiert",
             "Habe zu Beginn jeder deiner Rasten mehr aktive {TIDE_ICON} als Karten in deinem Abwurfstapel"

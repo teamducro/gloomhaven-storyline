@@ -1,13 +1,13 @@
 export default {
     "gh-510": {
-        "name": "Cercatore di Xorn",
+        "name": "Seeker of Xorn",
         "progress": [
             "Completa tre scenari Cripta.",
             "Concludi {SCENARIO 52}."
         ]
     },
     "gh-511": {
-        "name": "Classe Mercante",
+        "name": "Merchant Class",
         "progress": [
             "Possiedi due oggetti {BODY}.",
             "Possiedi due oggetti {HEAD}.",
@@ -17,13 +17,13 @@ export default {
         ]
     },
     "gh-512": {
-        "name": "L'Avidità è Bene",
+        "name": "Greed is Good",
         "progress": [
             "Possiedi 200 monete d'oro."
         ]
     },
     "gh-513": {
-        "name": "Alla Ricerca della Cura",
+        "name": "Finding the Cure",
         "unlock": "Apri la busta X",
         "progress": [
             "Uccidi otto Imp delle Foreste.",
@@ -31,63 +31,63 @@ export default {
         ]
     },
     "gh-514": {
-        "name": "Studio di Anatomia",
+        "name": "A Study of Anatomy",
         "progress": [
             "Assisti all'esaurimento dei membri del tuo gruppo quindici volte."
         ]
     },
     "gh-515": {
-        "name": "Portatore di Legge",
+        "name": "Law Bringer",
         "progress": [
             "Uccidi venti Banditi o Cultisti."
         ]
     },
     "gh-516": {
-        "name": "Libbre di Carne",
+        "name": "Pounds of Flesh",
         "progress": [
             "Uccidi quindici Vermling."
         ]
     },
     "gh-517": {
-        "name": "Caccia ai Trofei",
+        "name": "Trophy Hunt",
         "progress": [
             "Uccidi venti tipi diversi di mostri."
         ]
     },
     "gh-518": {
-        "name": "Viandante Eterno",
+        "name": "Eternal Wanderer",
         "progress": [
             "Completa quindici scenari diversi."
         ]
     },
     "gh-519": {
-        "name": "Leggenda di Battaglia",
+        "name": "Battle Legend",
         "progress": [
             "Ottieni quindici ✔ dagli obiettivi di battaglia completati."
         ]
     },
     "gh-520": {
-        "name": "Strumento di Luce",
+        "name": "Implement of Light",
         "progress": [
             "Trova l'Ascia Anatema dei Teschi nel Rifugio del Necromante.",
             "Usala per uccidere sette Ossa Viventi, Cadaveri Viventi o Spiriti Viventi."
         ]
     },
     "gh-521": {
-        "name": "Riconquistare gli Alberi",
+        "name": "Take Back the Trees",
         "progress": [
             "Completa tre scenari nella Foresta dei Pugnali.",
             "Concludi {SCENARIO 55}."
         ]
     },
     "gh-522": {
-        "name": "I Luoghi Sottili",
+        "name": "The Thin Places",
         "progress": [
             "Completa sei scenari secondari."
         ]
     },
     "gh-523": {
-        "name": "Sterminatore di Aberrazioni",
+        "name": "Aberrant Slayer",
         "progress": [
             "Uccidi un Demone della Fiamma.",
             "Uccidi un Demone del Gelo.",
@@ -98,19 +98,19 @@ export default {
         ]
     },
     "gh-524": {
-        "name": "Resistenza Impavida",
+        "name": "Fearless Stand",
         "progress": [
             "Uccidi venti mostri elite."
         ]
     },
     "gh-525": {
-        "name": "Devozione in Ogni Cosa",
+        "name": "Piety in All Things",
         "progress": [
             "Dona 120 monete d'oro al Santuario della Grande Quercia."
         ]
     },
     "gh-526": {
-        "name": "Vendetta",
+        "name": "Vengeance",
         "unlock": "Apri la busta X",
         "progress": [
             "Completa quattro scenari a Gloomhaven.",
@@ -118,32 +118,32 @@ export default {
         ]
     },
     "gh-527": {
-        "name": "Fanatico del Dio del Sangue",
+        "name": "Zealot of the Blood God",
         "progress": [
             "Diventa esausto dodici volte."
         ]
     },
     "gh-528": {
-        "name": "Abbattitore di Giganti",
+        "name": "Goliath Toppler",
         "progress": [
             "Completa quattro scenari con un boss."
         ]
     },
     "gh-529": {
-        "name": "La Caduta dell'Uomo",
+        "name": "The Fall of Man",
         "progress": [
             "Completa 2 scenari nella Palude Persistente.",
             "Concludi {SCENARIO 61}."
         ]
     },
     "gh-530": {
-        "name": "Abilità Potenziate",
+        "name": "Augmented Abilities",
         "progress": [
             "Acquista quattro potenziamenti."
         ]
     },
     "gh-531": {
-        "name": "Campioni Elementali",
+        "name": "Elemental Samples",
         "progress": [
             "Completa uno scenario a Gloomhaven.",
             "Completa uno scenario nella Foresta dei Pugnali.",
@@ -154,13 +154,13 @@ export default {
         ]
     },
     "gh-532": {
-        "name": "Una Mano Amica",
+        "name": "A Helping Hand",
         "progress": [
             "Assisti al completamento della missione personale di altri due personaggi."
         ]
     },
     "gh-533": {
-        "name": "Il Veleno Perfetto",
+        "name": "The Perfect Poison",
         "progress": [
             "Uccidi tre Melme.",
             "Uccidi tre Osservatori.",
@@ -352,7 +352,7 @@ export default {
         ]
     },
     "fh-1": {
-        "name": "Lo Studio delle Piante",
+        "name": "The Study of Plants",
         "building_unlocks": [
             24,
             42
@@ -362,7 +362,7 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "Alla Ricerca della Quercia",
+        "name": "Searching for the Oak",
         "building_unlocks": [
             24,
             42
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "fh-3": {
-        "name": "Classe Mercante",
+        "name": "Merchant Class",
         "building_unlocks": [
             37,
             74
@@ -387,7 +387,7 @@ export default {
         ]
     },
     "fh-4": {
-        "name": "L'Avidità è Bene",
+        "name": "Greed is Good",
         "building_unlocks": [
             37,
             74
@@ -397,7 +397,7 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "Costruire, non Distruggere",
+        "name": "Build, not Destroy",
         "building_unlocks": [
             85,
             21
@@ -407,7 +407,7 @@ export default {
         ]
     },
     "fh-6": {
-        "name": "Lavoro di Squadra",
+        "name": "Team Building",
         "building_unlocks": [
             85,
             21
@@ -417,7 +417,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "Avamposto Aesther",
+        "name": "Aesther Outpost",
         "building_unlocks": [
             44,
             88
@@ -428,7 +428,7 @@ export default {
         ]
     },
     "fh-8": {
-        "name": "Gioco Pericoloso",
+        "name": "Dangerous Game",
         "building_unlocks": [
             44,
             88
@@ -440,7 +440,7 @@ export default {
         ]
     },
     "fh-9": {
-        "name": "Lezioni di Vita",
+        "name": "Life Lessons",
         "building_unlocks": [
             90,
             83
@@ -450,7 +450,7 @@ export default {
         ]
     },
     "fh-10": {
-        "name": "Esplorare le Distese",
+        "name": "Explore the Reaches",
         "building_unlocks": [
             90,
             83
@@ -460,7 +460,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "Gusti Raffinati",
+        "name": "Refined Tastes",
         "building_unlocks": [
             39,
             72
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "Minaccia dalle Profondità",
+        "name": "Threat from the Deep",
         "building_unlocks": [
             90,
             42
@@ -481,7 +481,7 @@ export default {
         ]
     },
     "fh-13": {
-        "name": "Fine degli Inganni",
+        "name": "End the Trickery",
         "building_unlocks": [
             44,
             74
@@ -491,7 +491,7 @@ export default {
         ]
     },
     "fh-14": {
-        "name": "Viandante Eterno",
+        "name": "Eternal Wanderer",
         "building_unlocks": [
             37,
             72
@@ -505,7 +505,7 @@ export default {
         ]
     },
     "fh-15": {
-        "name": "Prosperità Continua",
+        "name": "Continued Prosperity",
         "building_unlocks": [
             65,
             85
@@ -515,7 +515,7 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Preparati al Peggio",
+        "name": "Prepared for the Worst",
         "building_unlocks": [
             85,
             88
@@ -525,7 +525,7 @@ export default {
         ]
     },
     "fh-17": {
-        "name": "Leggenda di Battaglia",
+        "name": "Battle Legend",
         "building_unlocks": [
             81,
             67
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "Lasciateli Stare",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,17 +545,17 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Placare i Luoghi dei Morti",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Ottieni il progetto “Ascia dell'Abisso” (Oggetto 039) e usalo per uccidere dieci tra Cadaveri Ghiacciati, Spettri del Ghiaccio e/o Condanne Viventi."
+            "Ottieni il progetto “Abyss Axe” (Oggetto 039) e usalo per uccidere dieci tra Cadaveri Ghiacciati, Spettri del Ghiaccio e/o Condanne Viventi."
         ]
     },
     "fh-20": {
-        "name": "Ritorno alla Semplicità",
+        "name": "Return to Simplicity",
         "building_unlocks": [
             24,
             21
@@ -565,7 +565,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Lo Studio della Vita",
+        "name": "The Study of Life",
         "building_unlocks": [
             39,
             72
@@ -575,7 +575,7 @@ export default {
         ]
     },
     "fh-22": {
-        "name": "La Sfida più Grande",
+        "name": "The Greatest Challenge",
         "building_unlocks": [
             37,
             83
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "Il Prescelto",
+        "name": "The Chosen One",
         "unlock": "Apri la busta A",
         "progress": [
             "Assisti all'esaurimento di 10 alleati durante scenari che altrimenti completi."
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "Aggiungi gli Eventi Città 69 e 70 al mazzo eventi città. Ottieni “Carta Nera” (Oggetto 113). Non può essere venduto.",
+            "Aggiungi gli Eventi Città 69 e 70 al mazzo eventi città. Ottieni “Black Card” (Oggetto 113). Non può essere venduto.",
             "Completa sei scenari secondari (numero di scenario superiore a 56).",
             "Leggi il {SECTION} 128.2."
         ]

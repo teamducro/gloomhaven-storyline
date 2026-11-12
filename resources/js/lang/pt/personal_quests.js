@@ -17,13 +17,13 @@ export default {
         ]
     },
     "gh-512": {
-        "name": "A Ganância é Boa",
+        "name": "Greed is Good",
         "progress": [
             "Tem 200 moedas de ouro em teu poder."
         ]
     },
     "gh-513": {
-        "name": "Em Procura da Cura",
+        "name": "Finding the Cure",
         "unlock": "Abram o envelope X",
         "progress": [
             "Mata oito Diabretes da Floresta.",
@@ -81,7 +81,7 @@ export default {
         ]
     },
     "gh-522": {
-        "name": "Os Lugares Ténues",
+        "name": "The Thin Places",
         "progress": [
             "Conclui seis cenários secundários."
         ]
@@ -352,7 +352,7 @@ export default {
         ]
     },
     "fh-1": {
-        "name": "O Estudo das Plantas",
+        "name": "The Study of Plants",
         "building_unlocks": [
             24,
             42
@@ -362,7 +362,7 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "Em Procura do Carvalho",
+        "name": "Searching for the Oak",
         "building_unlocks": [
             24,
             42
@@ -387,7 +387,7 @@ export default {
         ]
     },
     "fh-4": {
-        "name": "A Ganância é Boa",
+        "name": "Greed is Good",
         "building_unlocks": [
             37,
             74
@@ -397,7 +397,7 @@ export default {
         ]
     },
     "fh-5": {
-        "name": "Construir, Não Destruir",
+        "name": "Build, not Destroy",
         "building_unlocks": [
             85,
             21
@@ -407,7 +407,7 @@ export default {
         ]
     },
     "fh-6": {
-        "name": "Formação de Equipa",
+        "name": "Team Building",
         "building_unlocks": [
             85,
             21
@@ -417,7 +417,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "Posto Avançado Aesther",
+        "name": "Aesther Outpost",
         "building_unlocks": [
             44,
             88
@@ -428,7 +428,7 @@ export default {
         ]
     },
     "fh-8": {
-        "name": "Caça Perigosa",
+        "name": "Dangerous Game",
         "building_unlocks": [
             44,
             88
@@ -440,7 +440,7 @@ export default {
         ]
     },
     "fh-9": {
-        "name": "Lições de Vida",
+        "name": "Life Lessons",
         "building_unlocks": [
             90,
             83
@@ -450,7 +450,7 @@ export default {
         ]
     },
     "fh-10": {
-        "name": "Explora as Terras Distantes",
+        "name": "Explore the Reaches",
         "building_unlocks": [
             90,
             83
@@ -460,7 +460,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "Gostos Refinados",
+        "name": "Refined Tastes",
         "building_unlocks": [
             39,
             72
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "fh-12": {
-        "name": "Ameaça das Profundezas",
+        "name": "Threat from the Deep",
         "building_unlocks": [
             90,
             42
@@ -481,7 +481,7 @@ export default {
         ]
     },
     "fh-13": {
-        "name": "Acaba com a Trapaça",
+        "name": "End the Trickery",
         "building_unlocks": [
             44,
             74
@@ -505,7 +505,7 @@ export default {
         ]
     },
     "fh-15": {
-        "name": "Prosperidade Contínua",
+        "name": "Continued Prosperity",
         "building_unlocks": [
             65,
             85
@@ -515,7 +515,7 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Preparado para o Pior",
+        "name": "Prepared for the Worst",
         "building_unlocks": [
             85,
             88
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "Deixe-os em Paz",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,17 +545,17 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Silencia os Lugares Mortos",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Obtém o projeto do “Machado do Abismo” (Item 039) e use-o para matar dez Cadáveres Congelados, Espectros de Gelo e/ou Perdições Vivas."
+            "Obtém o projeto do “Abyss Axe” (Item 039) e use-o para matar dez Cadáveres Congelados, Espectros de Gelo e/ou Perdições Vivas."
         ]
     },
     "fh-20": {
-        "name": "Retorno à Simplicidade",
+        "name": "Return to Simplicity",
         "building_unlocks": [
             24,
             21
@@ -565,7 +565,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "O Estudo da Vida",
+        "name": "The Study of Life",
         "building_unlocks": [
             39,
             72
@@ -575,7 +575,7 @@ export default {
         ]
     },
     "fh-22": {
-        "name": "O Maior Desafio",
+        "name": "The Greatest Challenge",
         "building_unlocks": [
             37,
             83
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "Adiciona os Eventos de Cidade 69 e 70 ao baralho de eventos de cidade. Obtém a “Carta Negra” (Item 113). Ela não pode ser vendida.",
+            "Adiciona os Eventos de Cidade 69 e 70 ao baralho de eventos de cidade. Obtém a “Black Card” (Item 113). Ela não pode ser vendida.",
             "Conclui seis cenários secundários (número do cenário acima de 56).",
             "Lê a {SECTION} 128.2."
         ]
@@ -717,7 +717,7 @@ export default {
     "gh2-16": {
         "name": "O Veneno Perfeito",
         "progress": [
-            "Obtém a “Adaga Envenenada” (Item 7).",
+            "Obtém a “Poison Dagger” (Item 7).",
             "Usa-a para aplicar {POISON} a um inimigo sem {POISON} 30 vezes.",
             "Lê a {SECTION} 8.3."
         ]

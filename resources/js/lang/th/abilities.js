@@ -73,7 +73,7 @@ export default {
             "name": "เกราะหนาม"
         },
         "strength-in-agony": {
-            "name": "พลังในความทรมาน"
+            "name": "strength in agony"
         },
         "the-maw-of-madness": {
             "name": "ปากแห่งความบ้า"
@@ -175,124 +175,124 @@ export default {
             "name": "พายุหมุน"
         },
         "armed-and-dangerous": {
-            "name": "ติดอาวุธและอันตราย"
+            "name": "armed and dangerous"
         },
         "bioluminescence": {
-            "name": "แสงชีวภาพ"
+            "name": "bioluminescence"
         },
         "lightning-moths": {
-            "name": "ผีเสื้อสายฟ้า"
+            "name": "lightning moths"
         },
         "blood-drain": {
-            "name": "ดูดเลือด"
+            "name": "blood drain"
         },
         "bone-daggers": {
-            "name": "กริชกระดูก"
+            "name": "bone daggers"
         },
         "call-of-the-grave": {
-            "name": "เสียงเรียกจากหลุมศพ"
+            "name": "call of the grave"
         },
         "corrupting-parasites": {
-            "name": "ปรสิตเสื่อมทราม"
+            "name": "corrupting parasites"
         },
         "soul-leeches": {
-            "name": "ปลิงวิญญาณ"
+            "name": "soul leeches"
         },
         "cyclone-of-blades": {
-            "name": "พายุหมุนใบมีด"
+            "name": "cyclone of blades"
         },
         "death-march": {
-            "name": "การเดินทัพมรณะ"
+            "name": "death march"
         },
         "creeping-beetles": {
-            "name": "แมลงปีกแข็งคลาน"
+            "name": "creeping beetles"
         },
         "deflecting-blades": {
-            "name": "ใบมีดสะท้อน"
+            "name": "deflecting blades"
         },
         "endless-biting": {
-            "name": "กัดไม่รู้จบ"
+            "name": "endless biting"
         },
         "engulfing-stingers": {
-            "name": "เหล็กในกลืนกิน"
+            "name": "engulfing stingers"
         },
         "angry-wasps": {
-            "name": "ตัวต่อโกรธ"
+            "name": "angry wasps"
         },
         "focused-scourge": {
-            "name": "ภัยพิบัติมุ่งเป้า"
+            "name": "focused scourge"
         },
         "fury-of-the-horde": {
-            "name": "ความเกรี้ยวกราดของฝูง"
+            "name": "fury of the horde"
         },
         "rage-hornets": {
-            "name": "ตัวต่อโกรธ"
+            "name": "rage hornets"
         },
         "grasping-advance": {
             "name": "รุกคว้า"
         },
         "hive-mind": {
-            "name": "จิตรวมฝูง"
+            "name": "hive mind"
         },
         "incubation": {
-            "name": "การฟักตัว"
+            "name": "incubation"
         },
         "infest": {
-            "name": "รุมเข้าครอบครอง"
+            "name": "infest"
         },
         "oasis": {
-            "name": "โอเอซิส"
+            "name": "oasis"
         },
         "omniscient-assault": {
-            "name": "การโจมตีผู้รู้แจ้ง"
+            "name": "omniscient assault"
         },
         "overwhelming-offensive": {
-            "name": "การบุกท่วมท้น"
+            "name": "overwhelming offensive"
         },
         "putrid-grubs": {
             "name": "หนอนเน่า"
         },
         "bloat-maggots": {
-            "name": "หนอนพอง"
+            "name": "bloat maggots"
         },
         "repulsive-host": {
-            "name": "ฝูงน่าขยะแขยง"
+            "name": "repulsive host"
         },
         "scattered-defense": {
-            "name": "การป้องกันกระจาย"
+            "name": "scattered defense"
         },
         "sunstroke": {
-            "name": "โรคลมแดด"
+            "name": "sunstroke"
         },
         "swarming-minions": {
-            "name": "สมุนห้อมล้อม"
+            "name": "swarming minions"
         },
         "the-storms-edge": {
-            "name": "ขอบพายุ"
+            "name": "the storm's edge"
         },
         "tomb-of-the-immortal": {
-            "name": "สุสานแห่งอมตะ"
+            "name": "tomb of the immortal"
         },
         "unstoppable-army": {
-            "name": "กองทัพไม่อาจหยุด"
+            "name": "unstoppable army"
         },
         "steel-scarabs": {
-            "name": "แมลงสคารับเหล็ก"
+            "name": "steel scarabs"
         },
         "vampiric-tempest": {
-            "name": "พายุแวมไพร์"
+            "name": "vampiric tempest"
         },
         "wasteland": {
-            "name": "ดินแดนรกร้าง"
+            "name": "wasteland"
         },
         "rust-vermin": {
-            "name": "สัตว์ร้ายสนิม"
+            "name": "rust vermin"
         },
         "ancient-ward": {
             "name": "คำสาปโบราณ"
         },
         "Bear-reference": {
-            "name": "อ้างอิงหมี"
+            "name": "Bear reference"
         },
         "blood-hunger": {
             "name": "ความหิวเลือด"
@@ -376,7 +376,7 @@ export default {
             "name": "พรรคพวกมีพิษ"
         },
         "vicious-ally": {
-            "name": "พรรคพวกดุร้าย"
+            "name": "vicious ally"
         },
         "avalanche": {
             "name": "หิมะถล่ม"
@@ -475,7 +475,7 @@ export default {
             "name": "พรางตัว"
         },
         "crashing-wave": {
-            "name": "คลื่นซัดสาด"
+            "name": "crashing wave"
         },
         "crippling-noose": {
             "name": "บ่วงทำให้พิการ"
@@ -490,7 +490,7 @@ export default {
             "name": "เปิดโปง"
         },
         "felling-swoop": {
-            "name": "โฉบโค่น"
+            "name": "felling swoop"
         },
         "feral-instincts": {
             "name": "สัญชาตญาณดุร้าย"
@@ -517,7 +517,7 @@ export default {
             "name": "นำสู่การฆ่า"
         },
         "multi-pronged-assault": {
-            "name": "การโจมตีหลายทิศทาง"
+            "name": "multi-pronged assault"
         },
         "natures-hunger": {
             "name": "ความหิวของธรรมชาติ"
@@ -529,7 +529,7 @@ export default {
             "name": "กดโจมตี"
         },
         "race-to-the-grave": {
-            "name": "แข่งไปสู่หลุมศพ"
+            "name": "race to the grave"
         },
         "rain-of-arrows": {
             "name": "ฝนธนู"
@@ -547,7 +547,7 @@ export default {
             "name": "โฟกัสเดียว"
         },
         "solid-bow": {
-            "name": "คันธนูแข็งแรง"
+            "name": "solid bow"
         },
         "swift-trickery": {
             "name": "กลอุบายเร็ว"
@@ -742,7 +742,7 @@ export default {
             "name": "เกราะแห่งราตรี"
         },
         "black-arrow": {
-            "name": "ลูกศรดำ"
+            "name": "black arrow"
         },
         "black-knives": {
             "name": "มีดดำ"
@@ -775,7 +775,7 @@ export default {
             "name": "ดวงตาแห่งราตรี"
         },
         "gloom-darts": {
-            "name": "ลูกดอกกลูม"
+            "name": "gloom darts"
         },
         "grim-sustenance": {
             "name": "อาหารมืด"
@@ -796,7 +796,7 @@ export default {
             "name": "แรงเงียบ"
         },
         "smoke-step": {
-            "name": "ก้าวควัน"
+            "name": "smoke step"
         },
         "soulfire": {
             "name": "ไฟวิญญาณ"
@@ -1024,7 +1024,7 @@ export default {
             "name": "ปฐมพยาบาล"
         },
         "gentlemans-anger": {
-            "name": "ความโกรธของสุภาพบุรุษ"
+            "name": "gentleman's anger"
         },
         "grisly-trauma": {
             "name": "บาดแผลสยอง"
@@ -1063,7 +1063,7 @@ export default {
             "name": "การป้องกันคือกุญแจ"
         },
         "regenerative-tissue": {
-            "name": "เนื้อเยื่อฟื้นฟู"
+            "name": "regenerative tissue"
         },
         "research-the-cure": {
             "name": "วิจัยยารักษา"
@@ -1132,7 +1132,7 @@ export default {
             "name": "เลือกเป้า"
         },
         "sinister-opportunity": {
-            "name": "โอกาสชั่วร้าย"
+            "name": "sinister opportunity"
         },
         "smoke-bomb": {
             "name": "ระเบิดควัน"
@@ -1159,7 +1159,7 @@ export default {
             "name": "มีดขว้าง"
         },
         "tricksters-reversal": {
-            "name": "การพลิกของนักหลอกลวง"
+            "name": "trickster's reversal"
         },
         "venom-shiv": {
             "name": "มีดพิษ"
@@ -1354,7 +1354,7 @@ export default {
             "name": "พลังพันธะ"
         },
         "conjured-aid": {
-            "name": "ความช่วยเหลือที่เสกขึ้น"
+            "name": "conjured aid"
         },
         "divided-mind": {
             "name": "จิตใจแยก"
@@ -1387,7 +1387,7 @@ export default {
             "name": "วิญญาณแทรกแซง"
         },
         "leathery-wings": {
-            "name": "ปีกหนัง"
+            "name": "leathery wings"
         },
         "living-mountain": {
             "name": "ภูเขามีชีวิต"
@@ -3567,19 +3567,19 @@ export default {
             "name": "สนับสนุนทางอากาศ"
         },
         "trained-falcon": {
-            "name": "เหยี่ยวฝึก"
+            "name": "trained falcon"
         },
         "at-all-costs": {
             "name": "ไม่ว่าต้องแลกด้วยอะไร"
         },
         "reinforcement": {
-            "name": "กำลังเสริม"
+            "name": "reinforcement"
         },
         "barricade": {
             "name": "สิ่งกีดขวาง"
         },
         "banner-of-valor": {
-            "name": "ธงแห่งความกล้าหาญ"
+            "name": "banner of valor"
         },
         "boldening-blow": {
             "name": "การตีเสริมความกล้า"
@@ -3597,13 +3597,13 @@ export default {
             "name": "แรงบันดาลใจขับเคลื่อน"
         },
         "banner-of-hope": {
-            "name": "ธงแห่งความหวัง"
+            "name": "banner of hope"
         },
         "explosive-epicenter": {
             "name": "จุดศูนย์กลางระเบิด"
         },
         "hail-of-spears": {
-            "name": "ห่าหอก"
+            "name": "hail of spears"
         },
         "head-of-the-hammer": {
             "name": "หัวค้อน"
@@ -3615,7 +3615,7 @@ export default {
             "name": "การขว้างติดไฟ"
         },
         "torch-bearer": {
-            "name": "ผู้ถือคบเพลิง"
+            "name": "torch bearer"
         },
         "javelin": {
             "name": "หอกขว้าง"
@@ -3624,13 +3624,13 @@ export default {
             "name": "นำจากไกล"
         },
         "longbowman": {
-            "name": "นักธนูยาว"
+            "name": "longbowman"
         },
         "let-them-come": {
             "name": "ปล่อยให้พวกเขามา"
         },
         "banner-of-courage": {
-            "name": "ธงแห่งความกล้า"
+            "name": "banner of courage"
         },
         "meat-grinder": {
             "name": "เครื่องบดเนื้อ"
@@ -3645,7 +3645,7 @@ export default {
             "name": "เสียงโห่รวบรวม"
         },
         "banner-of-strength": {
-            "name": "ธงแห่งพลัง"
+            "name": "banner of strength"
         },
         "regroup": {
             "name": "รวมกลุ่มใหม่"
@@ -3663,7 +3663,7 @@ export default {
             "name": "ไม่จับตัวประกัน"
         },
         "banner-of-doom": {
-            "name": "ธงแห่งความพินาศ"
+            "name": "banner of doom"
         },
         "taunting-howl": {
             "name": "เสียงหอนเยาะ"
@@ -3690,7 +3690,7 @@ export default {
             "name": "มองดูดวงอาทิตย์ที่ถูกปกคลุม"
         },
         "bone-dagger": {
-            "name": "กริชกระดูก"
+            "name": "bone dagger"
         },
         "command-the-wretched": {
             "name": "สั่งผู้โชคร้าย"
@@ -3702,7 +3702,7 @@ export default {
             "name": "กองทัพถูกสาป"
         },
         "shambling-skeleton": {
-            "name": "โครงกระดูกเดินโซเซ"
+            "name": "shambling skeleton"
         },
         "dark-tidings": {
             "name": "ข่าวมืด"
@@ -3714,7 +3714,7 @@ export default {
             "name": "จำนวนไม่สิ้นสุด"
         },
         "bone-horde": {
-            "name": "ฝูงกระดูก"
+            "name": "bone horde"
         },
         "eternal-torment": {
             "name": "การทรมานนิรันดร์"
@@ -3753,7 +3753,7 @@ export default {
             "name": "ฝูงชนเน่า"
         },
         "two-shambling-skeletons": {
-            "name": "โครงกระดูกเดินโซเซสองตัว"
+            "name": "two shambling skeletons"
         },
         "solid-bones": {
             "name": "กระดูกแข็ง"
@@ -3771,22 +3771,22 @@ export default {
             "name": "ความน่ากลัวขุด"
         },
         "raging-corpse": {
-            "name": "ศพโกรธา"
+            "name": "raging corpse"
         },
         "unforgivable-methods": {
             "name": "วิธีที่ไม่สามารถให้อภัยได้"
         },
         "stitched-atrocity": {
-            "name": "กรรมน่าสยอง"
+            "name": "stitched atrocity"
         },
         "unholy-prowess": {
             "name": "ความเชี่ยวชาญไม่ศักดิ์สิทธิ์"
         },
         "skeleton-sorcerer": {
-            "name": "นักเวทย์โครงกระดูก"
+            "name": "skeleton sorcerer"
         },
         "wailing-from-beyond": {
-            "name": "เสียงร้องจากอีกฟากโลก"
+            "name": "wailing from beyond"
         },
         "wrath-of-the-turned-earth": {
             "name": "ความโกรธแห่งแผ่นดินพลิก"
@@ -4029,7 +4029,7 @@ export default {
             "name": "ผ้าคลุมแห่งความหวาดกลัว"
         },
         "morbid-camouflage": {
-            "name": "การพรางตัวน่าสยดสยอง"
+            "name": "morbid camouflage"
         },
         "pinning-spines": {
             "name": "หนามตรึง"
@@ -4143,13 +4143,13 @@ export default {
             "name": "ผีไร้แสง"
         },
         "shadow-beast": {
-            "name": "สัตว์เงา"
+            "name": "shadow beast"
         },
         "the-night-takes-shape": {
             "name": "ราตรีรับรูป"
         },
         "shadow-horror": {
-            "name": "สยองขวัญเงา"
+            "name": "shadow horror"
         },
         "vengeful-storm": {
             "name": "พายุแก้แค้น"
@@ -4278,7 +4278,7 @@ export default {
             "name": "ความสง่างามไร้รูป"
         },
         "hail-of-thorns": {
-            "name": "ห่าหนาม"
+            "name": "hail of thorns"
         },
         "harbinger-of-ruin": {
             "name": "ผู้ส่งข่าวแห่งความพินาศ"
@@ -4347,7 +4347,7 @@ export default {
             "name": "การโจมตีเล็งเป้า"
         },
         "sniper-turret": {
-            "name": "ป้อมปืนยิง"
+            "name": "sniper turret"
         },
         "burning-slash": {
             "name": "การฟันเผา"
@@ -4359,7 +4359,7 @@ export default {
             "name": "แขนขาม้วน"
         },
         "leaper": {
-            "name": "นักกระโดด"
+            "name": "leaper"
         },
         "disassemble": {
             "name": "แยกชิ้นส่วน"
@@ -4374,13 +4374,13 @@ export default {
             "name": "สนามแรง"
         },
         "dampening-unit": {
-            "name": "หน่วยระงับ"
+            "name": "dampening unit"
         },
         "heavy-metal": {
             "name": "โลหะหนัก"
         },
         "sledge-driver": {
-            "name": "ผู้ขับเลื่อน"
+            "name": "sledge driver"
         },
         "high-impact-projectiles": {
             "name": "กระสุนกระทบแรง"
@@ -4389,10 +4389,10 @@ export default {
             "name": "ยึดครอง"
         },
         "hunter-killer": {
-            "name": "นักล่า-นักฆ่า"
+            "name": "hunter-killer"
         },
         "jackal-mech": {
-            "name": "หุ่นแมคแจ็คคัล"
+            "name": "jackal mech"
         },
         "interference": {
             "name": "การรบกวน"
@@ -4407,34 +4407,34 @@ export default {
             "name": "กระสุนปืนใหญ่"
         },
         "bombardier": {
-            "name": "นักทิ้งระเบิด"
+            "name": "bombardier"
         },
         "net-dispersal": {
             "name": "การกระจายตาข่าย"
         },
         "trapping-unit": {
-            "name": "หน่วยจับ"
+            "name": "trapping unit"
         },
         "plague-protocol": {
             "name": "โปรโตคอลโรคระบาด"
         },
         "toxin-distributor": {
-            "name": "ตัวแจกพิษ"
+            "name": "toxin distributor"
         },
         "plated-defense": {
             "name": "การป้องกันแบบแผ่น"
         },
         "armored-tank": {
-            "name": "แทงค์เกราะ"
+            "name": "armored tank"
         },
         "prepare-for-deployment": {
-            "name": "เตรียมพร้อมสำหรับการประจำการ"
+            "name": "prepare for deployment"
         },
         "rapid-fire": {
             "name": "ยิงเร็ว"
         },
         "machine-bolter": {
-            "name": "หุ่นยิงเร็ว"
+            "name": "machine bolter"
         },
         "reaper-function": {
             "name": "ฟังก์ชันเก็บเกี่ยว"
@@ -4449,7 +4449,7 @@ export default {
             "name": "ความช่วยเหลือฟื้นฟู"
         },
         "repair-drone": {
-            "name": "ดรอนซ่อมแซม"
+            "name": "repair drone"
         },
         "remote-control": {
             "name": "ควบคุมระยะไกล"
@@ -4458,19 +4458,19 @@ export default {
             "name": "ชีพจรช็อก"
         },
         "arcing-generator": {
-            "name": "ตัวสร้างประกายไฟ"
+            "name": "arcing generator"
         },
         "spinning-blades": {
             "name": "ใบมีดหมุน"
         },
         "sword-propeller": {
-            "name": "ใบพัดดาบ"
+            "name": "sword propeller"
         },
         "swarming-bulwark": {
             "name": "ปราการฝูง"
         },
         "shield-spider": {
-            "name": "แมงมุมโล่"
+            "name": "shield spider"
         },
         "triage-program": {
             "name": "โปรแกรมการคัดแยก"
@@ -4521,7 +4521,7 @@ export default {
             "name": "เติมชีวิต"
         },
         "animated-claymore": {
-            "name": "ดาบเคลื่อนไหว"
+            "name": "animated claymore"
         },
         "malachite-shockwave": {
             "name": "คลื่นกระแทกมาลาไคต์"
@@ -4551,7 +4551,7 @@ export default {
             "name": "ไซโคลนฟัน"
         },
         "stoic-vigilance": {
-            "name": "การเฝ้าระวังสโตอิก"
+            "name": "stoic vigilance"
         },
         "swift-pivot": {
             "name": "หมุนว่องไว"
@@ -4566,7 +4566,7 @@ export default {
             "name": "ปลดโซ่ตรวน"
         },
         "spiritbound-falchion": {
-            "name": "ดาบฟาลชิออนผูกวิญญาณ"
+            "name": "spiritbound falchion"
         },
         "veil-of-protection": {
             "name": "ผ้าคลุมแห่งการป้องกัน"
@@ -4614,10 +4614,10 @@ export default {
             "name": "การเปลี่ยนขั้ว"
         },
         "power-core": {
-            "name": "แกนพลังงาน"
+            "name": "power core"
         },
         "pressure-build-up": {
-            "name": "แรงดันสะสม"
+            "name": "pressure build-up"
         },
         "processing": {
             "name": "กำลังประมวลผล"
@@ -4632,7 +4632,7 @@ export default {
             "name": "ปล่อยวาล์ว"
         },
         "rocket-boots": {
-            "name": "รองเท้าบูทจรวด"
+            "name": "rocket boots"
         },
         "scalding-blast": {
             "name": "ระเบิดลวก"
@@ -4695,7 +4695,7 @@ export default {
             "name": "การไถ่บาป"
         },
         "phantom-limb": {
-            "name": "แขนขาผี"
+            "name": "phantom limb"
         },
         "pleasure-in-pain": {
             "name": "ความสุขในความเจ็บปวด"
@@ -4716,7 +4716,7 @@ export default {
             "name": "รูปปั้นมีแผล"
         },
         "flesh-fiend": {
-            "name": "ปีศาจเนื้อ"
+            "name": "flesh fiend"
         },
         "shared-affliction": {
             "name": "ความทุกข์ร่วม"
@@ -4740,7 +4740,7 @@ export default {
             "name": "รูปปั้นไม่เสถียร"
         },
         "flesh-bomb": {
-            "name": "ระเบิดเนื้อ"
+            "name": "flesh bomb"
         },
         "wracked-with-pain": {
             "name": "ทรมานด้วยความเจ็บปวด"
@@ -4836,7 +4836,7 @@ export default {
             "name": "นกในพายุ"
         },
         "2-white-owls": {
-            "name": "นกฮูกขาว 2 ตัว"
+            "name": "2 white owls"
         },
         "biting-frost": {
             "name": "น้ำค้างแข็งกัด"
@@ -4881,7 +4881,7 @@ export default {
             "name": "ลมหายใจแห่งธรรมชาติ"
         },
         "snow-fox": {
-            "name": "หมาจิ้งจอกหิมะ"
+            "name": "snow fox"
         },
         "polar-vortex": {
             "name": "วังวนขั้ว"
@@ -4890,7 +4890,7 @@ export default {
             "name": "การโจมตีเร็วสดชื่น"
         },
         "polar-cat": {
-            "name": "แมวขั้วโลก"
+            "name": "polar cat"
         },
         "shifting-snow": {
             "name": "หิมะเคลื่อน"
@@ -5055,13 +5055,13 @@ export default {
             "name": "หลุมหลบ"
         },
         "defense-grid": {
-            "name": "ระบบป้องกัน"
+            "name": "defense grid"
         },
         "furry-facade": {
             "name": "หน้ากากขน"
         },
         "shaggy-lure": {
-            "name": "เหยื่อขน"
+            "name": "shaggy lure"
         },
         "grasping-hazards": {
             "name": "อันตรายจับ"

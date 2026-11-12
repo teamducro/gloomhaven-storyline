@@ -3,7 +3,7 @@ export default {
         "name": "ก้าวแรก"
     },
     "gh-PJP": {
-        "name": "แผนของ เจคเซราห์"
+        "name": "Jekserah's Plans"
     },
     "gh-PDB": {
         "name": "รางวัลมืด"
@@ -30,7 +30,7 @@ export default {
         "name": "อำนาจการเสริมความแข็งแกร่ง"
     },
     "gh-PSC": {
-        "name": "กระถางธูปของ สโตนเบรกเกอร์"
+        "name": "Stonebreaker's Censer"
     },
     "gh-GTRN": {
         "name": "รอยแยกเป็นกลาง"
@@ -39,7 +39,7 @@ export default {
         "name": "สิ่งประดิษฐ์: กู้คืนแล้ว"
     },
     "gh-GAR2": {
-        "name": "สิ่งประดิษฐ์: กู้คืนแล้ว (เคยสูญหาย)"
+        "name": "The Artifact: Recovered (previously Lost)"
     },
     "gh-GAL": {
         "name": "สิ่งประดิษฐ์: สูญหาย"
@@ -48,16 +48,16 @@ export default {
         "name": "เทคโนโลยีโบราณ"
     },
     "gh-GAT2": {
-        "name": "เทคโนโลยีโบราณ x2"
+        "name": "Ancient Technology x2"
     },
     "gh-GAT3": {
-        "name": "เทคโนโลยีโบราณ x3"
+        "name": "Ancient Technology x3"
     },
     "gh-GAT4": {
-        "name": "เทคโนโลยีโบราณ x4"
+        "name": "Ancient Technology x4"
     },
     "gh-GAT5": {
-        "name": "เทคโนโลยีโบราณ x5"
+        "name": "Ancient Technology x5"
     },
     "gh-PTR": {
         "name": "ผ่านซากปรักหักพัง"
@@ -66,7 +66,7 @@ export default {
         "name": "คำสั่งของเสียง"
     },
     "gh-PTDC": {
-        "name": "คำสั่งของมังกร"
+        "name": "The Drake's Command"
     },
     "gh-PFC": {
         "name": "ตามเบาะแส"
@@ -87,13 +87,13 @@ export default {
         "name": "ขุมทรัพย์ของเสียง"
     },
     "gh-PTDT": {
-        "name": "ขุมทรัพย์ของมังกร"
+        "name": "The Drakes Treasure"
     },
     "gh-GTDS": {
-        "name": "มังกรล้ม"
+        "name": "The Drake Slain"
     },
     "gh-GTDA": {
-        "name": "ช่วยเหลือมังกร"
+        "name": "The Drake Aided"
     },
     "gh-GCRD": {
         "name": "กฎเมือง: ปีศาจ"
@@ -102,7 +102,7 @@ export default {
         "name": "ผ่านร่องลึก"
     },
     "gh-PRA": {
-        "name": "ความช่วยเหลือของ เรดธอร์น"
+        "name": "Redthorn's Aid"
     },
     "gh-PATD": {
         "name": "ข้ามความแตกแยก"
@@ -120,16 +120,16 @@ export default {
         "name": "จุดจบแห่งความเสื่อม"
     },
     "gh-GEOC2": {
-        "name": "จุดจบแห่งความเสื่อม x2"
+        "name": "End of Corruption x2"
     },
     "gh-GEOC3": {
-        "name": "จุดจบแห่งความเสื่อม x3"
+        "name": "End of Corruption x3"
     },
     "gh-GAOO": {
         "name": "การทำลายล้างระเบียบ"
     },
     "gh-GEOG": {
-        "name": "จุดจบแห่ง เดอะกลูม"
+        "name": "End of Gloom"
     },
     "gh-PTTN": {
         "name": "ผ่านรัง"
@@ -141,13 +141,13 @@ export default {
         "name": "ธุรกิจเลว"
     },
     "gh-PSOX1": {
-        "name": "สุสานขุนนาง"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "สุสานน้ำท่วม"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "สุสานแห่งผู้ล่วงลับโบราณ"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "แหล่งพิษ"
@@ -156,7 +156,7 @@ export default {
         "name": "ได้รับพรจากดวงอาทิตย์"
     },
     "gh-PSR": {
-        "name": "ซิน-รา"
+        "name": "Sin-Ra"
     },
     "gh-PDC": {
         "name": "เก็บหนี้"
@@ -165,7 +165,7 @@ export default {
         "name": "ไม้เท้าน้ำ"
     },
     "gh-PFA": {
-        "name": "ความช่วยเหลือของ ฟิช"
+        "name": "Fish's Aid"
     },
     "gh-PT": {
         "name": "การสั่น"
@@ -189,13 +189,13 @@ export default {
         "name": "ความรู้คือพลัง"
     },
     "gh-GKIP2": {
-        "name": "ความรู้คือพลัง x2"
+        "name": "Knowledge is Power x2"
     },
     "gh-GKIP3": {
-        "name": "ความรู้คือพลัง x3"
+        "name": "Knowledge is Power x3"
     },
     "gh-GKIP4": {
-        "name": "ความรู้คือพลัง x4"
+        "name": "Knowledge is Power x4"
     },
     "gh-PAD": {
         "name": "ทูตแห่งความตาย"
@@ -210,10 +210,10 @@ export default {
         "name": "ชิ้นส่วนของสิ่งประดิษฐ์"
     },
     "gh-GPOA2": {
-        "name": "ชิ้นส่วนของสิ่งประดิษฐ์ x2"
+        "name": "Pieces of an Artifact x2"
     },
     "gh-GPOA3": {
-        "name": "ชิ้นส่วนของสิ่งประดิษฐ์ x3"
+        "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
         "name": "หน่วยรักษาความปลอดภัย"
@@ -237,13 +237,13 @@ export default {
         "name": "ภัยร้ายผ่านพ้น"
     },
     "gh-GPA2": {
-        "name": "ภัยร้ายผ่านพ้น x2"
+        "name": "A Peril Averted x2"
     },
     "gh-GPA3": {
-        "name": "ภัยร้ายผ่านพ้น x3"
+        "name": "A Peril Averted x3"
     },
     "gh-GPA4": {
-        "name": "ภัยร้ายผ่านพ้น x4"
+        "name": "A Peril Averted x4"
     },
     "gh-GMS": {
         "name": "ความงดงามแห่งกลไก"
@@ -291,19 +291,19 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "มิตรแห่ง ผู้พูดน้ำแข็ง"
+        "name": "Friend of the Icespeakers"
     },
     "fh-CFSS": {
-        "name": "มิตรแห่ง ผู้พูดหิมะ"
+        "name": "Friend of the Snowspeakers"
     },
     "fh-CFFS": {
-        "name": "มิตรแห่งผู้พูดหิมะ"
+        "name": "Friend of the Frostspeakers"
     },
     "fh-CDIS": {
-        "name": "ผู้ทำลาย ผู้พูดน้ำแข็ง"
+        "name": "Destroyer of the Icespeakers"
     },
     "fh-CDSS": {
-        "name": "ผู้ทำลาย ผู้พูดหิมะ"
+        "name": "Destroyer of the Snowspeakers"
     },
     "fh-CFFK": {
         "name": "มิตรแห่งราชาปลา"
@@ -312,16 +312,16 @@ export default {
         "name": "มงกุฎรวม"
     },
     "fh-CUA": {
-        "name": "พรรคพวก อันเฟตเตอร์ด"
+        "name": "Unfettered Allies"
     },
     "fh-CUD": {
-        "name": "อันเฟตเตอร์ด ปิดใช้งาน"
+        "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
         "name": "สู่ป่า"
     },
     "fh-CFP": {
-        "name": "ไฟร์เพปเปอร์"
+        "name": "Firepepper"
     },
     "fh-CSS": {
         "name": "ผู้แสวงหาเศษ"
@@ -339,46 +339,46 @@ export default {
         "name": "แกนชาร์จ"
     },
     "fh-CHF": {
-        "name": "เทศกาลเก็บเกี่ยว"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "รอยเท้า บรัมมิกซ์"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "รอยเท้า บรัมมิกซ์ x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "รอยเท้า บรัมมิกซ์ x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "รอยเท้า บรัมมิกซ์ x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "รอยเท้า บรัมมิกซ์ x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "เศษมงกุฎปะการัง"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "เศษมงกุฎปะการัง x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "เศษมงกุฎปะการัง x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "เศษมงกุฎปะการัง x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "เศษมงกุฎปะการัง x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "เศษมงกุฎปะการัง x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "หัวใจน้ำแข็ง"
+        "name": "Heart of Ice"
     },
     "fh-PHOS": {
-        "name": "หัวใจหิมะ"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "เปิดใช้งานอุปกรณ์"

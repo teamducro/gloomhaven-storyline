@@ -1,261 +1,261 @@
 export default {
     "gh-PFS": {
-        "name": "První kroky"
+        "name": "First Steps"
     },
     "gh-PJP": {
-        "name": "Jekserahiny plány"
+        "name": "Jekserah's Plans"
     },
     "gh-PDB": {
-        "name": "Temná odměna"
+        "name": "Dark Bounty"
     },
     "gh-GTMF": {
-        "name": "Obchodník utíká"
+        "name": "The Merchant Flees"
     },
     "gh-GTDI": {
-        "name": "Mrtví vpadli"
+        "name": "The Dead Invade"
     },
     "gh-PADE": {
-        "name": "Pochůzka pro démona"
+        "name": "A Demon's Errand"
     },
     "gh-GCRE": {
-        "name": "Vláda ve městě: Ekonomická"
+        "name": "City Rule: Economic"
     },
     "gh-GCRM": {
-        "name": "Vláda ve městě: Militaristická"
+        "name": "City Rule: Militaristic"
     },
     "gh-GEOI": {
-        "name": "Konec invaze"
+        "name": "End of the Invasion"
     },
     "gh-GTPE": {
-        "name": "Síla vylepšení"
+        "name": "The Power of Enhancement"
     },
     "gh-PSC": {
-        "name": "Kadidelnice Kamenolomce"
+        "name": "Stonebreaker's Censer"
     },
     "gh-GTRN": {
-        "name": "Trhlina neutralizována"
+        "name": "The Rift Neutralized"
     },
     "gh-GAR": {
-        "name": "Artefakt: Získán"
+        "name": "The Artifact: Recovered"
     },
     "gh-GAR2": {
-        "name": "Artefakt: Získán (dříve ztracen)"
+        "name": "The Artifact: Recovered (previously Lost)"
     },
     "gh-GAL": {
-        "name": "Artefakt: Ztracen"
+        "name": "The Artifact: Lost"
     },
     "gh-GAT": {
-        "name": "Prastará technologie"
+        "name": "Ancient Technology"
     },
     "gh-GAT2": {
-        "name": "Prastará technologie x2"
+        "name": "Ancient Technology x2"
     },
     "gh-GAT3": {
-        "name": "Prastará technologie x3"
+        "name": "Ancient Technology x3"
     },
     "gh-GAT4": {
-        "name": "Prastará technologie x4"
+        "name": "Ancient Technology x4"
     },
     "gh-GAT5": {
-        "name": "Prastará technologie x5"
+        "name": "Ancient Technology x5"
     },
     "gh-PTR": {
-        "name": "Skrz ruiny"
+        "name": "Through the Ruins"
     },
     "gh-PTVC": {
-        "name": "Příkaz Hlasu"
+        "name": "The Voice's Command"
     },
     "gh-PTDC": {
-        "name": "Drakův příkaz"
+        "name": "The Drake's Command"
     },
     "gh-PFC": {
-        "name": "Po stopách"
+        "name": "Following Clues"
     },
     "gh-PAI": {
-        "name": "Pozvání"
+        "name": "An Invitation"
     },
     "gh-GTED": {
-        "name": "Okraj temnoty"
+        "name": "The Edge of Darkness"
     },
     "gh-PTSV": {
-        "name": "Žezlo a Hlas"
+        "name": "The Scepter and the Voice"
     },
     "gh-GAC": {
-        "name": "Artefakt: Očištěn"
+        "name": "Artifact: Cleansed"
     },
     "gh-PTVT": {
-        "name": "Poklad Hlasu"
+        "name": "The Voices Treasure"
     },
     "gh-PTDT": {
-        "name": "Drakův poklad"
+        "name": "The Drakes Treasure"
     },
     "gh-GTDS": {
-        "name": "Drak zabit"
+        "name": "The Drake Slain"
     },
     "gh-GTDA": {
-        "name": "Drak pomohl"
+        "name": "The Drake Aided"
     },
     "gh-GCRD": {
-        "name": "Vláda ve městě: Démonická"
+        "name": "City Rule: Demonic"
     },
     "gh-PTTT": {
-        "name": "Skrz příkop"
+        "name": "Through the Trench"
     },
     "gh-PRA": {
-        "name": "Redthornova pomoc"
+        "name": "Redthorn's Aid"
     },
     "gh-PATD": {
-        "name": "Přes propast"
+        "name": "Across the Divide"
     },
     "gh-GTVF": {
-        "name": "Hlas osvobozen"
+        "name": "The Voice Freed"
     },
     "gh-GTVS": {
-        "name": "Hlas umlčen"
+        "name": "The Voice Silenced"
     },
     "gh-GWB": {
-        "name": "Dýchání pod vodou"
+        "name": "Water-Breathing"
     },
     "gh-GEOC": {
-        "name": "Konec zkázy"
+        "name": "End of Corruption"
     },
     "gh-GEOC2": {
-        "name": "Konec zkázy x2"
+        "name": "End of Corruption x2"
     },
     "gh-GEOC3": {
-        "name": "Konec zkázy x3"
+        "name": "End of Corruption x3"
     },
     "gh-GAOO": {
-        "name": "Zničení Řádu"
+        "name": "Annihilation of Order"
     },
     "gh-GEOG": {
-        "name": "Konec Přítmí"
+        "name": "End of Gloom"
     },
     "gh-PTTN": {
-        "name": "Skrz hnízdo"
+        "name": "Through the Nest"
     },
     "gh-PAMT": {
-        "name": "Mapa k pokladu"
+        "name": "A Map to Treasure"
     },
     "gh-PBB": {
-        "name": "Špatný obchod"
+        "name": "Bad Business"
     },
     "gh-PSOX1": {
-        "name": "Hrobka šlechticů"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "Zatopená hrobka"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "Hrobka Prastarých"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
-        "name": "Zdroj jedu"
+        "name": "The Poison's Source"
     },
     "gh-PSB": {
-        "name": "Požehnaný sluncem"
+        "name": "Sun-Blessed"
     },
     "gh-PSR": {
         "name": "Sin-Ra"
     },
     "gh-PDC": {
-        "name": "Vymáhání dluhu"
+        "name": "Debt Collection"
     },
     "gh-PWS": {
-        "name": "Vodní hůl"
+        "name": "Water Staff"
     },
     "gh-PFA": {
-        "name": "Rybí pomoc"
+        "name": "Fish's Aid"
     },
     "gh-PT": {
         "name": "Otřesy"
     },
     "gh-PHSE": {
-        "name": "Eskorta po širém moři"
+        "name": "High Sea Escort"
     },
     "gh-PGJ": {
-        "name": "Hrobařina"
+        "name": "Grave Job"
     },
     "gh-PNE": {
-        "name": "Severní výprava"
+        "name": "Northern Expedition"
     },
     "gh-GTTP": {
-        "name": "Skrz portál"
+        "name": "Through the Portal"
     },
     "gh-PO": {
-        "name": "Oportunisté"
+        "name": "Opportunists"
     },
     "gh-GKIP": {
-        "name": "Vědění je moc"
+        "name": "Knowledge is Power"
     },
     "gh-GKIP2": {
-        "name": "Vědění je moc x2"
+        "name": "Knowledge is Power x2"
     },
     "gh-GKIP3": {
-        "name": "Vědění je moc x3"
+        "name": "Knowledge is Power x3"
     },
     "gh-GKIP4": {
-        "name": "Vědění je moc x4"
+        "name": "Knowledge is Power x4"
     },
     "gh-PAD": {
-        "name": "Andělé smrti"
+        "name": "Angels of Death"
     },
     "gh-PC": {
         "name": "Strážci"
     },
     "gh-PHP": {
-        "name": "Ulovená kořist"
+        "name": "Hunted Prey"
     },
     "gh-GPOA": {
-        "name": "Části artefaktu"
+        "name": "Pieces of an Artifact"
     },
     "gh-GPOA2": {
-        "name": "Části artefaktu x2"
+        "name": "Pieces of an Artifact x2"
     },
     "gh-GPOA3": {
-        "name": "Části artefaktu x3"
+        "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
-        "name": "Strážní hlídka"
+        "name": "Guard Detail"
     },
     "gh-PDE": {
-        "name": "Dimenzionální rovnováha"
+        "name": "Dimensional Equilibrium"
     },
     "gh-PHH": {
-        "name": "Lov na lovce"
+        "name": "Hunting the Hunter"
     },
     "gh-PXA": {
-        "name": "Xangrothova pomoc"
+        "name": "Xangroth's Aid"
     },
     "gh-PDA": {
-        "name": "Diamařina pomoc"
+        "name": "Diamara's Aid"
     },
     "gh-PBF": {
-        "name": "Krása ve svobodě"
+        "name": "Beauty in Freedom"
     },
     "gh-GPA": {
-        "name": "Odvrácené nebezpečí"
+        "name": "A Peril Averted"
     },
     "gh-GPA2": {
-        "name": "Odvrácené nebezpečí x2"
+        "name": "A Peril Averted x2"
     },
     "gh-GPA3": {
-        "name": "Odvrácené nebezpečí x3"
+        "name": "A Peril Averted x3"
     },
     "gh-GPA4": {
-        "name": "Odvrácené nebezpečí x4"
+        "name": "A Peril Averted x4"
     },
     "gh-GMS": {
-        "name": "Mechanická nádhera"
+        "name": "Mechanical Splendor"
     },
     "gh-GST": {
-        "name": "Přerušená pouta"
+        "name": "Severed Ties"
     },
     "gh-PA": {
-        "name": "Společníci"
+        "name": "Accomplices"
     },
     "gh-PS": {
-        "name": "Sabotéři"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -291,94 +291,94 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "Přítel Ledomluvců"
+        "name": "Friend of the Icespeakers"
     },
     "fh-CFSS": {
-        "name": "Přítel Sněžomluvců"
+        "name": "Friend of the Snowspeakers"
     },
     "fh-CFFS": {
-        "name": "Přítel Mrazomluvců"
+        "name": "Friend of the Frostspeakers"
     },
     "fh-CDIS": {
-        "name": "Ničitel Ledomluvců"
+        "name": "Destroyer of the Icespeakers"
     },
     "fh-CDSS": {
-        "name": "Ničitel Sněžomluvců"
+        "name": "Destroyer of the Snowspeakers"
     },
     "fh-CFFK": {
-        "name": "Přítel Rybího krále"
+        "name": "Friend of the Fish King"
     },
     "fh-CCU": {
-        "name": "Sjednocená koruna"
+        "name": "Crown United"
     },
     "fh-CUA": {
-        "name": "Nespoutaní spojenci"
+        "name": "Unfettered Allies"
     },
     "fh-CUD": {
-        "name": "Nespoutaní deaktivováni"
+        "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
         "name": "Do lesa"
     },
     "fh-CFP": {
-        "name": "Ohnivá paprika"
+        "name": "Firepepper"
     },
     "fh-CSS": {
-        "name": "Hledač střepů"
+        "name": "Shard Seeker"
     },
     "fh-CEJ": {
-        "name": "Prázdná nádoba"
+        "name": "Empty Jar"
     },
     "fh-CBJ": {
-        "name": "Brouk v nádobě"
+        "name": "Bug in a Jar"
     },
     "fh-CUC": {
-        "name": "Nenabité jádro"
+        "name": "Uncharged Core"
     },
     "fh-CCC": {
-        "name": "Nabité jádro"
+        "name": "Charged Core"
     },
     "fh-CHF": {
-        "name": "Slavnost sklizně"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "Brummixovy stopy"
+        "name": "Brummix Tracks"
     },
     "fh-CBT2": {
-        "name": "Brummixovy stopy x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "Brummixovy stopy x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "Brummixovy stopy x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "Brummixovy stopy x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "Střep korunky z korálů"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "Střep korunky z korálů x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "Střep korunky z korálů x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "Střep korunky z korálů x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "Střep korunky z korálů x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "Střep korunky z korálů x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Srdce ledu"
+        "name": "Heart of Ice"
     },
     "fh-PHOS": {
-        "name": "Srdce sněhu"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"
