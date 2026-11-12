@@ -509,7 +509,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "M6",
-                "x": 34.45,
+                "x": 33.83,
                 "y": 29.5
             },
             "chapter_id": 4,
@@ -1097,7 +1097,7 @@
             "coordinates": {
                 "name": "E10",
                 "x": 68.7,
-                "y": 38.01
+                "y": 38.13
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -1144,7 +1144,7 @@
             "coordinates": {
                 "name": "E10",
                 "x": 68.48,
-                "y": 41.96
+                "y": 41.76
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -1556,7 +1556,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "C6",
-                "x": 75.18,
+                "x": 75.23,
                 "y": 28.08
             },
             "chapter_id": 6,
@@ -1585,7 +1585,7 @@
             "coordinates": {
                 "name": "C10",
                 "x": 73.66,
-                "y": 43.11
+                "y": 43.01
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -2250,7 +2250,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "G3",
-                "x": 58.44,
+                "x": 58.11,
                 "y": 16.04
             },
             "chapter_id": 3,
