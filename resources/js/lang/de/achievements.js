@@ -141,13 +141,13 @@ export default {
         "name": "Üble Machenschaften"
     },
     "gh-PSOX1": {
-        "name": "Krypta der Adligen"
+        "name": "Nobles’ Crypt"
     },
     "gh-PSOX2": {
-        "name": "Überflutete Krypta"
+        "name": "Flooded Crypt"
     },
     "gh-PSOX3": {
-        "name": "Krypta der Uralten"
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "Quelle des Gifts"
@@ -255,7 +255,7 @@ export default {
         "name": "Komplizen"
     },
     "gh-PS": {
-        "name": "Saboteure"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -339,46 +339,46 @@ export default {
         "name": "Geladener Kern"
     },
     "fh-CHF": {
-        "name": "Erntefest"
+        "name": "Harvest Festival"
     },
     "fh-CBT": {
         "name": "Brummix-Spuren"
     },
     "fh-CBT2": {
-        "name": "Brummix-Spuren x2"
+        "name": "Brummix Tracks x2"
     },
     "fh-CBT3": {
-        "name": "Brummix-Spuren x3"
+        "name": "Brummix Tracks x3"
     },
     "fh-CBT4": {
-        "name": "Brummix-Spuren x4"
+        "name": "Brummix Tracks x4"
     },
     "fh-CBT5": {
-        "name": "Brummix-Spuren x5"
+        "name": "Brummix Tracks x5"
     },
     "fh-CCCS": {
-        "name": "Korallenkronen-Scherbe"
+        "name": "Coral Crown Shard"
     },
     "fh-CCCS2": {
-        "name": "Korallenkronen-Scherbe x2"
+        "name": "Coral Crown Shard x2"
     },
     "fh-CCCS3": {
-        "name": "Korallenkronen-Scherbe x3"
+        "name": "Coral Crown Shard x3"
     },
     "fh-CCCS4": {
-        "name": "Korallenkronen-Scherbe x4"
+        "name": "Coral Crown Shard x4"
     },
     "fh-CCCS5": {
-        "name": "Korallenkronen-Scherbe x5"
+        "name": "Coral Crown Shard x5"
     },
     "fh-CCCS6": {
-        "name": "Korallenkronen-Scherbe x6"
+        "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
         "name": "Herz des Eises"
     },
     "fh-PHOS": {
-        "name": "Herz des Schnees"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"

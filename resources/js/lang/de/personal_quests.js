@@ -460,7 +460,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "Erlesener Geschmack",
+        "name": "Refined Tastes",
         "building_unlocks": [
             39,
             72
@@ -481,7 +481,7 @@ export default {
         ]
     },
     "fh-13": {
-        "name": "Schluss mit dem Unfug",
+        "name": "End the Trickery",
         "building_unlocks": [
             44,
             74
@@ -515,7 +515,7 @@ export default {
         ]
     },
     "fh-16": {
-        "name": "Auf das Schlimmste vorbereitet",
+        "name": "Prepared for the Worst",
         "building_unlocks": [
             85,
             88
@@ -535,7 +535,7 @@ export default {
         ]
     },
     "fh-18": {
-        "name": "Lasst sie in Ruhe",
+        "name": "Let Them Be",
         "building_unlocks": [
             44,
             67
@@ -545,17 +545,17 @@ export default {
         ]
     },
     "fh-19": {
-        "name": "Die toten Orte beruhigen",
+        "name": "Quiet the Dead Places",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Erhalte den Gegenstandsplan “Abgrundaxt” (Gegenstand 039) und töte damit zehn Gefrorene Leichen, Eisspuke und/oder Wandelnde Schicksale."
+            "Erhalte den Gegenstandsplan “Abyss Axe” (Gegenstand 039) und töte damit zehn Gefrorene Leichen, Eisspuke und/oder Wandelnde Schicksale."
         ]
     },
     "fh-20": {
-        "name": "Zurück zur Einfachheit",
+        "name": "Return to Simplicity",
         "building_unlocks": [
             24,
             21
@@ -565,7 +565,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Das Studium des Lebens",
+        "name": "The Study of Life",
         "building_unlocks": [
             39,
             72
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-23": {
-        "name": "Der Auserwählte",
+        "name": "The Chosen One",
         "unlock": "Öffne Umschlag A",
         "progress": [
             "Erlebe, wie 10 Verbündete in Szenarien erschöpft werden, die du ansonsten abschließt."
