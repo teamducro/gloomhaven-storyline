@@ -355,7 +355,7 @@ export default {
         "requirements": "Persönliche Quest „Suche nach Xorn“",
         "faq": [
             "Sonderregel: In diesem Szenario könnt ihr die untere Aktion einer beliebigen Karte verwenden, um einen Schatzaufleger in Reichweite 1 zu plündern.",
-            "Bei Verwendung des Materials von Vergessene Zirkel können die Hindernisse in der Mitte des Startraums wie Wand-Aufleger behandelt werden, wie in den Regeln von Vergessene Zirkel festgelegt. Ein Charakter kann sich außerdem nicht in den Kartenabschnitt eines anderen Charakters teleportieren."
+            "Bei Verwendung des Materials von Forgotten Circles können die Hindernisse in der Mitte des Startraums wie Wand-Aufleger behandelt werden, wie in den Regeln von Forgotten Circles festgelegt. Ein Charakter kann sich außerdem nicht in den Kartenabschnitt eines anderen Charakters teleportieren."
         ]
     },
     "gh-53": {
@@ -1803,7 +1803,7 @@ export default {
         "name": "Expedition nordwärts",
         "rewards": [
             "Erhaltet 2 Wohlstand",
-            "Fügt dem Frosthaven-Vorrat die folgenden Gegenstände von Vergessene Zirkel hinzu: 153, 159 und 161"
+            "Fügt dem Frosthaven-Vorrat die folgenden Gegenstände von Forgotten Circles hinzu: 153, 159 und 161"
         ]
     },
     "fh-83": {
@@ -2641,7 +2641,7 @@ export default {
         "name": "Brennende Steine",
         "requirements": "Persönliche Quest „Natürliche Auslese“",
         "rewards": [
-            "Erhaltet einen zufälligen “Stone”-Gegenstand (Gegenstand 94-100)"
+            "Erhaltet einen zufälligen “Stein”-Gegenstand (Gegenstand 94-100)"
         ]
     },
     "cs-38": {

@@ -27,18 +27,18 @@ export default {
         "name": "Bühne"
     },
     "fh-J": {
-        "name": "Wand"
+        "name": "Mauer"
     },
     "fh-K": {
-        "name": "Wand"
+        "name": "Mauer"
     },
     "fh-L": {
-        "name": "Wand"
+        "name": "Mauer"
     },
     "fh-M": {
-        "name": "Wand"
+        "name": "Mauer"
     },
     "fh-N": {
-        "name": "Wand"
+        "name": "Mauer"
     }
 }

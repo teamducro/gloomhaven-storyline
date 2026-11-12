@@ -345,7 +345,7 @@ export default {
     },
     "gh-68": {
         "name": "Hellebarde",
-        "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nAbschnitt 132 -> g106 “Strangler's Park” im Buch",
+        "source": "Wohlstand 9\n{SCENARIO 111} (Schatz #92)\nAbschnitt 132 -> g106 “Würgerpark” im Buch",
         "desc": "Du kannst während deiner Einzelkampfangriffsaktion einen beliebigen Gegner im Umkreis von 2 Feldern angreifen."
     },
     "gh-69": {
@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Ring der Chancen",
-        "source": "Wohlstand 9\nFC Herausforderungs-Szenario, Riss-Ereignis 12 (Schatz #89)\nAbschnitt 103 -> 84 “Gateway to the Firmament” im Buch",
+        "source": "Wohlstand 9\nFC Herausforderungs-Szenario, Riss-Ereignis 12 (Schatz #89)\nAbschnitt 103 -> 84 “Tor zum Firmament” im Buch",
         "desc": "Spiele am Ende deines Zugs 2 Handkarten aus und führe in dieser Runde, basierend auf deiner neuen Hauptinitiative (die später als deine aktuelle Initiative sein muss) einen zusätzlichen Zug aus."
     },
     "gh-71": {
@@ -772,7 +772,7 @@ export default {
     },
     "gh-152": {
         "name": "Ring der Dualität",
-        "source": "Belohnung von {SCENARIO 97}\nAbschnitt 125 “A locked chest” im Buch",
+        "source": "Belohnung von {SCENARIO 97}\nAbschnitt 125 “Verschlossene Truhe” im Buch",
         "desc": "Du darfst nach der oberen Aktion einer beliebigen Fertigkeitskarte sofort die untere Aktion derselben Karte ausführen. Dieser Gegenstand kann nicht verwendet werden, wenn beide Aktionen ein Symbol für verlorene Karten {CONSUMED} auslösen."
     },
     "gh-153": {
@@ -822,7 +822,7 @@ export default {
     },
     "gh-162": {
         "name": "Riss-Apparat",
-        "source": "Belohnung von {SCENARIO 112}\nAbschnitt 62 “Mechanical Splendor” im Buch.",
+        "source": "Belohnung von {SCENARIO 112}\nAbschnitt 62 “Mechanische Pracht” im Buch.",
         "desc": "{TELEPORT} dich während deines Zugs auf ein beliebiges unbesetztes Feld in bis zu 4 Feldern Entfernung."
     },
     "gh-163": {

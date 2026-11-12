@@ -282,7 +282,7 @@ export default {
         "name": "Erhalte 25 Gold und den Gruppenerfolg “Geldschatulle“. Füge dem Deck Stadt-Ereignis 85 hinzu"
     },
     "fc-96": {
-        "name": "Du findest einen alten Folianten mit technischen Zeichnungen und Entwürfen für eine Vielzahl von exotischen Maschinen. Eim Einband findest du eine eigentümliche handschriftliche Notiz: {NOTE_115}"
+        "name": "Du findest einen alten Folianten mit technischen Zeichnungen und Entwürfen für eine Vielzahl von exotischen Maschinen. Im Einband findest du eine eigentümliche handschriftliche Notiz: {NOTE_115}"
     },
     "jotl-1": {
         "name": "Erhalte 10 experience"
@@ -354,7 +354,7 @@ export default {
         "name": "Erhalte 20 Gold und entschärfe alle angrenzenden Fallen"
     },
     "cs-7": {
-        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-8": {
         "name": "“Schwindelerregende Tinktur” (Gegenstand 58)"
@@ -363,7 +363,7 @@ export default {
         "name": "“Kugel des Glücks” (Gegenstand 9)"
     },
     "cs-10": {
-        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-11": {
         "name": "“Schwindelerregende Tinktur” (Gegenstand 58)"
@@ -393,7 +393,7 @@ export default {
         "name": "Erhalte ✓ und erzeuge ein beliebiges Element"
     },
     "cs-20": {
-        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-21": {
         "name": "“Stahlhelm” (Gegenstand 22)"
@@ -405,7 +405,7 @@ export default {
         "name": "“Trophäenhelm” (Gegenstand 12)"
     },
     "cs-24": {
-        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-25": {
         "name": "“Auszehrende Beinschienen” (Gegenstand 15)"
@@ -453,7 +453,7 @@ export default {
         "name": "“Infrarotbrille” (Gegenstand 21)"
     },
     "cs-40": {
-        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-41": {
         "name": "“Aschestahl-Panzerhandschuhe” (Gegenstand 61)"
@@ -468,7 +468,7 @@ export default {
         "name": "“Manamedizin” (Gegenstand 60)"
     },
     "cs-45": {
-        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-46": {
         "name": "“Vipernzahndolch”-Plan (Gegenstand 54)"

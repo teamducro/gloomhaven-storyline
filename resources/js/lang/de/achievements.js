@@ -153,7 +153,7 @@ export default {
         "name": "Quelle des Gifts"
     },
     "gh-PSB": {
-        "name": "Sonnenverwöhnt"
+        "name": "Sonnengesegnet"
     },
     "gh-PSR": {
         "name": "Sin-Ra"
@@ -165,7 +165,7 @@ export default {
         "name": "Stab des Wassers"
     },
     "gh-PFA": {
-        "name": "Die Hilfe des Fischers"
+        "name": "Fischs Hilfe"
     },
     "gh-PT": {
         "name": "Erdbeben"
@@ -249,7 +249,7 @@ export default {
         "name": "Mechanische Pracht"
     },
     "gh-GST": {
-        "name": "Gekappte Verbindungen"
+        "name": "Gekappte Verbindung"
     },
     "gh-PA": {
         "name": "Komplizen"
