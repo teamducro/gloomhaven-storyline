@@ -75,7 +75,7 @@ export default {
         "name": "Eine Einladung"
     },
     "gh-GTED": {
-        "name": "Der Rand der Finsternis"
+        "name": "Am Rand der Finsternis"
     },
     "gh-PTSV": {
         "name": "Zepter und Stimme"
@@ -135,10 +135,10 @@ export default {
         "name": "Durch den Bau"
     },
     "gh-PAMT": {
-        "name": "Schatzkarte"
+        "name": "Eine Karte zum Schatz"
     },
     "gh-PBB": {
-        "name": "Schlechtes Geschäft"
+        "name": "Üble Machenschaften"
     },
     "gh-PSOX1": {
         "name": "Krypta der Adligen"
@@ -159,22 +159,22 @@ export default {
         "name": "Sin-Ra"
     },
     "gh-PDC": {
-        "name": "Schuldeintreibung"
+        "name": "Schuldenfrei"
     },
     "gh-PWS": {
-        "name": "Stab des Wassers"
+        "name": "Wasserstab"
     },
     "gh-PFA": {
         "name": "Fischs Hilfe"
     },
     "gh-PT": {
-        "name": "Erdbeben"
+        "name": "Beben"
     },
     "gh-PHSE": {
         "name": "Hochsee-Eskorte"
     },
     "gh-PGJ": {
-        "name": "Grab-Job"
+        "name": "Grabraub"
     },
     "gh-PNE": {
         "name": "Nördliche Expedition"
@@ -258,37 +258,37 @@ export default {
         "name": "Saboteure"
     },
     "cs-PCSOD": {
-        "name": "Schleim vernichtet"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "Gefallene Lava"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "Dem Geld folgen"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "Gefrorener Krieger"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "Eichen-Allianz"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "Inox-Allianz"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "Guttermaws Kopfgeld"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "Feirgrins Bitte"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "Ein verlorener Trank"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "Das Geld nehmen"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "Erfolgreiche Söldner"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "Freunde der Eissprecher"

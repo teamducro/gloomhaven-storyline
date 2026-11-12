@@ -65,12 +65,12 @@ export default {
         "1": "Ein benannter Gegner ist getötet",
         "2": "Zwei benannte Gegner sind getötet",
         "3": "Drei benannte Gegner sind getötet",
-        "title": "Testet euren Kraftmodulator",
+        "title": "Testet euren Power Modulator",
         "text": "Wie viele benannte Gegner konntet ihr töten, bevor ihr erschöpft wart?"
     },
     "unseenPlight": {
-        "1": "Den Guttermaw getötet und Guttermaws Kopfgeld erhalten",
-        "2": "Die Kinder gerettet und Feigrins Bitte erfüllt",
+        "1": "Den Guttermaw getötet und Guttermaw's Bounty erhalten",
+        "2": "Die Kinder gerettet und Feigrin's Request erfüllt",
         "title": "Zerstörte Heime und Bauten",
         "text": "Habt ihr Tod gebracht oder Leben gerettet?"
     },

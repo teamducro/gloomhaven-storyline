@@ -336,100 +336,100 @@ export default {
         "name": "“Ring der Erholung” (Gegenstand 32)"
     },
     "cs-1": {
-        "name": "“Drakenblut” (Gegenstand 59)"
+        "name": "“Drake's Blood” (Gegenstand 59)"
     },
     "cs-2": {
-        "name": "“Kugel des Glücks” (Gegenstand 09)"
+        "name": "“Orb of Fortune” (Gegenstand 09)"
     },
     "cs-3": {
-        "name": "“Kettenmorgenstern” (Gegenstand 14)"
+        "name": "“Chain Mace” (Gegenstand 14)"
     },
     "cs-4": {
         "name": "Erhalte 15 Gold und erhalte eine verlorene Karte zurück"
     },
     "cs-5": {
-        "name": "“Druckwellenmine” (Gegenstand 31)"
+        "name": "“Concussion Mine” (Gegenstand 31)"
     },
     "cs-6": {
         "name": "Erhalte 20 Gold und entschärfe alle angrenzenden Fallen"
     },
     "cs-7": {
-        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-8": {
-        "name": "“Schwindelerregende Tinktur” (Gegenstand 58)"
+        "name": "“Dizzying Tincture” (Gegenstand 58)"
     },
     "cs-9": {
-        "name": "“Kugel des Glücks” (Gegenstand 9)"
+        "name": "“Orb of Fortune” (Gegenstand 9)"
     },
     "cs-10": {
-        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-11": {
-        "name": "“Schwindelerregende Tinktur” (Gegenstand 58)"
+        "name": "“Dizzying Tincture” (Gegenstand 58)"
     },
     "cs-12": {
-        "name": "“Manamedizin” (Gegenstand 60)"
+        "name": "“Mana Medicine” (Gegenstand 60)"
     },
     "cs-13": {
-        "name": "“Kugel der Verzweiflung” (Gegenstand 10)"
+        "name": "“Orb of Despair” (Gegenstand 10)"
     },
     "cs-14": {
-        "name": "“Stahlhelm” (Gegenstand 22)"
+        "name": "“Steel Helmet” (Gegenstand 22)"
     },
     "cs-15": {
-        "name": "“Wandernder Kompass” (Gegenstand 32)"
+        "name": "“Shifting Compass” (Gegenstand 32)"
     },
     "cs-16": {
         "name": "Führe “Heilung 6, selbst” aus und erhalte {POISON}"
     },
     "cs-17": {
-        "name": "“Druckwellenmine” (Gegenstand 31)"
+        "name": "“Concussion Mine” (Gegenstand 31)"
     },
     "cs-18": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "“Boneclad Shawl” (Gegenstand 25)"
     },
     "cs-19": {
         "name": "Erhalte ✓ und erzeuge ein beliebiges Element"
     },
     "cs-20": {
-        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-21": {
-        "name": "“Stahlhelm” (Gegenstand 22)"
+        "name": "“Steel Helmet” (Gegenstand 22)"
     },
     "cs-22": {
-        "name": "“Stiefel der Beständigkeit” (Gegenstand 19)"
+        "name": "“Boots of Perpetuity” (Gegenstand 19)"
     },
     "cs-23": {
-        "name": "“Trophäenhelm” (Gegenstand 12)"
+        "name": "“Trophy Helmet” (Gegenstand 12)"
     },
     "cs-24": {
-        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-25": {
-        "name": "“Auszehrende Beinschienen” (Gegenstand 15)"
+        "name": "“Draining Greaves” (Gegenstand 15)"
     },
     "cs-26": {
-        "name": "“Eisenschlinge” (Gegenstand 30)"
+        "name": "“Iron Snare” (Gegenstand 30)"
     },
     "cs-27": {
-        "name": "“Geflochtene Plattenrüstung” (Gegenstand 23)"
+        "name": "“Woven Plate Armor” (Gegenstand 23)"
     },
     "cs-28": {
-        "name": "“Kettenmorgenstern” (Gegenstand 14)"
+        "name": "“Chain Mace” (Gegenstand 14)"
     },
     "cs-29": {
-        "name": "“Geflochtene Plattenrüstung” (Gegenstand 23)"
+        "name": "“Woven Plate Armor” (Gegenstand 23)"
     },
     "cs-30": {
-        "name": "“Knochenbesetztes Schultertuch” (Gegenstand 25)"
+        "name": "“Boneclad Shawl” (Gegenstand 25)"
     },
     "cs-31": {
-        "name": "“Drakenblut” (Gegenstand 59)"
+        "name": "“Drake's Blood” (Gegenstand 59)"
     },
     "cs-32": {
-        "name": "“Seltsamer Anhänger” (Gegenstand 20)"
+        "name": "“Curious Pendant” (Gegenstand 20)"
     },
     "cs-33": {
         "name": "25 Gold, erhalte {POISON}"
@@ -438,40 +438,40 @@ export default {
         "name": "Erleide Schaden durch gefährliches Gelände, erhalte {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Fluchblutklinge” (Gegenstand 36)"
+        "name": "“Curseblood Blade” (Gegenstand 36)"
     },
     "cs-36": {
         "name": "10 Erfahrung, erhalte {INVSIBLE}"
     },
     "cs-37": {
-        "name": "“Auszehrende Beinschienen” (Gegenstand 15)"
+        "name": "“Draining Greaves” (Gegenstand 15)"
     },
     "cs-38": {
-        "name": "“Kriegspickel” (Gegenstand 13)"
+        "name": "“War Pick” (Gegenstand 13)"
     },
     "cs-39": {
-        "name": "“Infrarotbrille” (Gegenstand 21)"
+        "name": "“Infrared Goggles” (Gegenstand 21)"
     },
     "cs-40": {
-        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-41": {
-        "name": "“Aschestahl-Panzerhandschuhe” (Gegenstand 61)"
+        "name": "“Ashsteel Gauntlets” (Gegenstand 61)"
     },
     "cs-42": {
-        "name": "“Kriegspickel” (Gegenstand 13)"
+        "name": "“War Pick” (Gegenstand 13)"
     },
     "cs-43": {
         "name": "10 Erfahrung und erneuere alle verbrauchten Gegenstände"
     },
     "cs-44": {
-        "name": "“Manamedizin” (Gegenstand 60)"
+        "name": "“Mana Medicine” (Gegenstand 60)"
     },
     "cs-45": {
-        "name": "Ein zufälliger “Stein”-Gegenstand (Gegenstand 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-46": {
-        "name": "“Vipernzahndolch”-Plan (Gegenstand 54)"
+        "name": "“Vipertooth Dagger”-Plan (Gegenstand 54)"
     },
     "cs-47": {
         "name": "15 Gold"
@@ -483,7 +483,7 @@ export default {
         "name": "“Lavalatschen” (Gegenstand gh-99)"
     },
     "cs-50": {
-        "name": "“Eingefangenes Mondlicht” (Gegenstand 18)"
+        "name": "“Bottled Moonlight” (Gegenstand 18)"
     },
     "fh-1": {
         "name": "Erhalte vier Beutekarten."

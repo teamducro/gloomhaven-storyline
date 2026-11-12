@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "Bernsteinschild",
+        "name": "Amber Aegis",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} “Platziere einen beliebigen {COLONY} {COLONY_ICON} Marker auf einem leeren Feld in {RANGE}2” Karte",
             "Entferne zwei {-1_WHITE} Karten",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artefaktschmied",
+        "name": "Artificer",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} {ANY} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} {DISARM} Karte",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombardier",
+        "name": "Bombard",
         "perks": [
             "Entferne zwei {-1_WHITE} Karten",
             "Ersetze zwei {+0_WHITE} Karten durch zwei {AGAIN} {PIERCE}3 Karten",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Funkenlicht",
+        "name": "Brightspark",
         "perks": [
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{ANY_X}, um +2 {ATTACK} hinzuzufügen” Karte",
             "Ersetze eine {-2_WHITE} Karte durch eine {-2_WHITE} “{RECOVER} eine zufällige Karte von deinem Abwurfstapel” Karte",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Kettenwächter",
+        "name": "Chainguard",
         "perks": [
             "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} “{SHACKLE} {CG_CIRCLE}” Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{+2_WHITE}, wenn das Ziel {SHACKLED} {CG_CIRCLE} ist” Karte",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Häuptling",
+        "name": "Chieftain",
         "perks": [
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {POISON} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{HEAL}1, {CT_CIRCLE}” Karte",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Feuerritter",
+        "name": "Fire Knight",
         "perks": [
             "Entferne zwei {-1_WHITE} Karten",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{STRENGTHEN} (Ally)” Karte",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "Hohlpakt",
+        "name": "Hollowpact",
         "perks": [
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{HEAL}2, Selbst” Karte",
             "Ersetze zwei {+0_WHITE} Karten durch eine {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}” Karten",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Lichtbringer",
+        "name": "Luminary",
         "perks": [
             "Entferne vier {+0_WHITE} Karten",
             "Ersetze eine {+0_WHITE} Karte durch eine {+2_WHITE} Karte",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "Sumpffuß",
+        "name": "Mirefoot",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+1_WHITE} Karte",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "Ruinenschlund",
+        "name": "Ruinmaw",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} {RUPTURE} und {WOUND} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} {WOUND} Karte",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "Geisterrufer",
+        "name": "Spirit Caller",
         "perks": [
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} Karte und eine {+1_WHITE} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {+0_WHITE} “{+2_WHITE}, wenn ein {SPIRIT} {SP_CIRCLE} den Angriff ausgeführt hat” Karte",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Sternenschleuderer",
+        "name": "Starslinger",
         "perks": [
             "Ersetze zwei {+0_WHITE} Karten durch eine {AGAIN} “{HEAL}1, Selbst” Karte",
             "Ersetze eine {-2_WHITE} Karte durch eine {-1_WHITE} {DISARM} Karte und eine {-1_WHITE} “{INVISIBLE}, Selbst” Karte",

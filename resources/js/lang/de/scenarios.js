@@ -2416,29 +2416,29 @@ export default {
         ]
     },
     "cs-1": {
-        "name": "Der Dunkle See"
+        "name": "The Dark Lake"
     },
     "cs-2": {
-        "name": "Unterirdische Kanäle"
+        "name": "Underground Channels"
     },
     "cs-3": {
-        "name": "Überflutete Höhle",
+        "name": "Flooded Cavern",
         "rewards": [
             "je 10 Erfahrung",
             "+1 Wohlstand"
         ]
     },
     "cs-4": {
-        "name": "Infizierte Krieger",
+        "name": "Infected Warriors",
         "rewards": [
-            "Jeder Charakter erhält einen zufälligen “Kugel”-Gegenstand (Gegenstand 1-10)"
+            "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-5": {
-        "name": "Blut der Schleime"
+        "name": "Blood of the Oozes"
     },
     "cs-6": {
-        "name": "Vergiftetes Wasser",
+        "name": "Poisoned Water",
         "rewards": [
             "+2 Ansehen",
             "+1 Wohlstand",
@@ -2446,52 +2446,52 @@ export default {
         ]
     },
     "cs-7": {
-        "name": "Goldene Eier",
+        "name": "Golden Eggs",
         "rewards": [
             "Erhaltet 30 gemeinsames Gold"
         ]
     },
     "cs-8": {
-        "name": "Zerschmetterte Festung",
+        "name": "Shattered Fortress",
         "rewards": [
-            "“Seltsamer Anhänger” (Gegenstand 20)"
+            "“Curious Pendant” (Gegenstand 20)"
         ]
     },
     "cs-9": {
-        "name": "Rettungsmission",
+        "name": "Rescue Mission",
         "rewards": [
             "je 10 Gold",
-            "“Smogerzeuger” (Gegenstand 62)"
+            "“Smog Emitter” (Gegenstand 62)"
         ]
     },
     "cs-10": {
-        "name": "Höhle der Monstrosität",
+        "name": "Den of Monstrosity",
         "rewards": [
             "“Kleiner Heiltrank” (Gegenstand gh-12)",
             "“Kleiner Manatrank” (Gegenstand gh-20)"
         ]
     },
     "cs-11": {
-        "name": "Reise ins Ungewisse"
+        "name": "Voyage Abound"
     },
     "cs-12": {
-        "name": "Der Quelle auf der Spur"
+        "name": "Uncovering the Source"
     },
     "cs-13": {
-        "name": "Leichenhöhle",
+        "name": "Corpse Cavern",
         "rewards": [
             "+1 Wohlstand",
             "Jeder Charakter erhält einen der folgenden Gegenstände: “Großer Ausdauertrank” (Gegenstand gh-34), “Großer Krafttrank” (Gegenstand gh-41), “Großer Manatrank” (Gegenstand gh-48)\nIst keiner davon im Laden verfügbar, erhält er stattdessen 20 Gold"
         ]
     },
     "cs-14": {
-        "name": "Kultistenhöhle",
+        "name": "Cultist Cave",
         "rewards": [
             "je 15 Erfahrung"
         ]
     },
     "cs-15": {
-        "name": "Hinterhalt der Bestien",
+        "name": "Ambush of Beasts",
         "rewards": [
             "je 15 Gold",
             "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
@@ -2505,25 +2505,25 @@ export default {
         ]
     },
     "cs-17": {
-        "name": "Kugel-Gewinnung",
+        "name": "Orb Extraction",
         "rewards": [
             "+2 Wohlstand"
         ]
     },
     "cs-18": {
-        "name": "Schnappen und weg",
+        "name": "Grab and Go",
         "rewards": [
             "je 100 Gold. Dieses Geld muss sofort für Verbesserungen ausgegeben werden"
         ]
     },
     "cs-19": {
-        "name": "Elementare Experimente",
+        "name": "Elemental Experiments",
         "rewards": [
             "“Großer Manatrank” (Gegenstand gh-48)"
         ]
     },
     "cs-20": {
-        "name": "Mitternachtsritual",
+        "name": "Midnight Ritual",
         "rewards": [
             "+1 Ansehen",
             "+1 Wohlstand",
@@ -2531,61 +2531,61 @@ export default {
         ]
     },
     "cs-21": {
-        "name": "Ein feuriger Tod",
+        "name": "A Fiery Death",
         "rewards": [
             "“Lavalatschen” (Gegenstand gh-99)"
         ]
     },
     "cs-22": {
-        "name": "Wichtetempel",
+        "name": "Imp Temple",
         "rewards": [
             "Jeder Charakter erhält +2 Gold und 2 Erfahrung für jeden geplünderten Münzmarker."
         ]
     },
     "cs-23": {
-        "name": "Eiszapfenkammern",
+        "name": "Icicle Chambers",
         "rewards": [
             "je 15 Erfahrung"
         ]
     },
     "cs-24": {
-        "name": "Unheimliche Grotte",
+        "name": "Eerie Grotto",
         "rewards": [
             "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-25": {
-        "name": "Brightspark, seht her!",
+        "name": "Brightspark, Behold!",
         "rewards": [
             "+1 Ansehen",
             "Fügt Weg-Ereignis 57 dem Deck hinzu"
         ]
     },
     "cs-26": {
-        "name": "Thermalstein-Gipfel",
+        "name": "Thermal Stone Peak",
         "rewards": [
             "je 20 Erfahrung",
             "je 1 ✓"
         ]
     },
     "cs-27": {
-        "name": "Frostbeulen-Höhle",
+        "name": "Frostbite Cavern",
         "rewards": [
             "je 10 Gold",
-            "“Schwindelerregende Tinktur” (Gegenstand 58)"
+            "“Dizzying Tincture” (Gegenstand 58)"
         ]
     },
     "cs-28": {
-        "name": "Brunnen der Knochen",
+        "name": "Fountain of Bones",
         "rewards": [
             "je 1 ✓"
         ]
     },
     "cs-29": {
-        "name": "Grabkammer"
+        "name": "Burial Chamber"
     },
     "cs-30": {
-        "name": "Untote Schrecken",
+        "name": "Undead Terrors",
         "rewards": [
             [
                 "70 gemeinsames Gold"
@@ -2596,29 +2596,29 @@ export default {
         ]
     },
     "cs-31": {
-        "name": "Ewige Portale",
+        "name": "Eternal Portals",
         "rewards": [
             "je 1 ✓"
         ]
     },
     "cs-32": {
-        "name": "Konfrontation mit der Vergangenheit",
+        "name": "Confronting the Past",
         "rewards": [
             "Lest {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
-            "Passwort “Wasserhydra”"
+            "Passwort “Water Hydra”"
         ]
     },
     "cs-33": {
-        "name": "Belagerungsturm",
-        "requirements": "Persönliche Quest „Schützen und Dienen“",
+        "name": "Siege Tower",
+        "requirements": "Persönliche Quest „Protect and Serve“",
         "rewards": [
-            "“Lodernde Stiefel” (Gegenstand 90)",
+            "“Blazing Boots” (Gegenstand 90)",
             "+1 Ansehen"
         ]
     },
     "cs-34": {
-        "name": "Flucht aus der Großen Eiche",
-        "requirements": "Persönliche Quest „Schützen und Dienen“",
+        "name": "Great Oak Escape",
+        "requirements": "Persönliche Quest „Protect and Serve“",
         "rewards": [
             "Schaltet Umschlag {BM} frei",
             "+2 Ansehen",
@@ -2626,75 +2626,75 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Gefängnisaufstand",
-        "requirements": "Persönliche Quest „Banditenbezwinger“"
+        "name": "Prison Riot",
+        "requirements": "Persönliche Quest „Bandit Banisher“"
     },
     "cs-36": {
-        "name": "Jägerprämie",
-        "requirements": "Persönliche Quest „Banditenbezwinger“",
+        "name": "Hunters Bounty",
+        "requirements": "Persönliche Quest „Bandit Banisher“",
         "rewards": [
             "Schaltet Umschlag {CG} frei",
             "je 10 Gold"
         ]
     },
     "cs-37": {
-        "name": "Brennende Steine",
-        "requirements": "Persönliche Quest „Natürliche Auslese“",
+        "name": "Burning Stones",
+        "requirements": "Persönliche Quest „Natural Selection“",
         "rewards": [
-            "Erhaltet einen zufälligen “Stein”-Gegenstand (Gegenstand 94-100)"
+            "Erhaltet einen zufälligen “Stone”-Gegenstand (Gegenstand 94-100)"
         ]
     },
     "cs-38": {
-        "name": "Altäre der Verwirrung",
-        "requirements": "Persönliche Quest „Natürliche Auslese“",
+        "name": "Alters of Confusion",
+        "requirements": "Persönliche Quest „Natural Selection“",
         "rewards": [
             "Schaltet Umschlag {LU} frei"
         ]
     },
     "cs-39": {
-        "name": "Eiternder Morast",
-        "requirements": "Persönliche Quest „Die gespaltene Natter“",
+        "name": "Festering Mire",
+        "requirements": "Persönliche Quest „An Adder Divides“",
         "rewards": [
             "je 10 Erfahrung",
             "Entfernt die obersten 5 Karten vom Stadt-Ereignis-Deck und mischt Stadt-Ereignis 57 unter sie. Legt die übrigen Stadt-Ereigniskarten beiseite, bis Stadt-Ereignis 57 abgehandelt ist. Jede zusätzliche Karte, die in dieser Zeit dem Stadt-Ereignis-Deck hinzugefügt würde, wird erst hinzugefügt, nachdem Stadt-Ereignis 57 abgehandelt wurde und die übrigen Karten wieder mit dem ursprünglichen Deck vereint wurden.",
-            "Die Quest “Die gespaltene Natter” ist noch nicht abgeschlossen"
+            "Die Quest “An Adder Divides” ist noch nicht abgeschlossen"
         ]
     },
     "cs-40": {
-        "name": "Schmugglerversteck",
+        "name": "Smugglers Hideout",
         "rewards": [
             "Erhaltet 50 gemeinsames Gold"
         ]
     },
     "cs-41": {
-        "name": "Fluch der Leere",
+        "name": "Curse of the Void",
         "rewards": [
             "Erhaltet 50 gemeinsames Gold"
         ]
     },
     "cs-42": {
-        "name": "Unnatürliche Bestien",
+        "name": "Unnatural Beasts",
         "rewards": [
             "+1 Ansehen",
             "je 10 Erfahrung"
         ]
     },
     "cs-43": {
-        "name": "Herrenhaus-Labyrinth",
+        "name": "Mansion Maze",
         "rewards": [
             "+1 Wohlstand",
             "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-44": {
-        "name": "Spukendes Herrenhaus",
+        "name": "Haunted Manor",
         "rewards": [
             "je 20 Gold",
             "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-45": {
-        "name": "Den Sumpf verteidigen",
+        "name": "Defend the Swamp",
         "rewards": [
             "+1 Ansehen",
             "+1 Wohlstand",
@@ -2702,69 +2702,69 @@ export default {
         ]
     },
     "cs-46": {
-        "name": "Ratzengärten",
+        "name": "Vermling Gardens",
         "rewards": [
             "+2 Ansehen",
             "je 15 Erfahrung"
         ]
     },
     "cs-47": {
-        "name": "Vipernmoor",
+        "name": "Viper Marsh",
         "rewards": [
-            "“Geisterviper-Gift” (Gegenstand 55)",
+            "“Ghost Viper Venom” (Gegenstand 55)",
             "+1 Wohlstand",
             "je 10 Gold"
         ]
     },
     "cs-48": {
-        "name": "Waldbrand",
+        "name": "Forest Fire",
         "rewards": [
             "je 10 Erfahrung",
             "je 20 Gold"
         ]
     },
     "cs-49": {
-        "name": "Eichen-Invasion A",
+        "name": "Oak Invasion A",
         "rewards": [
             "Beim nächsten Besuch in Gloomhaven kosten Spenden an den Tempel der Großen Eiche 0 Gold"
         ]
     },
     "cs-50": {
-        "name": "Eichen-Invasion B",
+        "name": "Oak Invasion B",
         "rewards": [
             "je 10 Erfahrung",
             "je 1 ✓"
         ]
     },
     "cs-51": {
-        "name": "Nagerlagerhaus",
+        "name": "Rodent Warehouse",
         "rewards": [
             "+1 Ansehen",
             "je 30 Gold"
         ]
     },
     "cs-52": {
-        "name": "Wunschbrunnen",
+        "name": "Wishing Well",
         "rewards": [
-            "“Drakenschuppenschild” (Gegenstand 37)"
+            "“Drakescale Shield” (Gegenstand 37)"
         ]
     },
     "cs-53": {
-        "name": "Höhle der Strömungen",
+        "name": "Cave of Currents",
         "rewards": [
-            "“Kugel der Strömungen” (Gegenstand 83)",
+            "“Sphere of Currents” (Gegenstand 83)",
             "je 5 Gold"
         ]
     },
     "cs-54": {
-        "name": "Hort des Grauens",
+        "name": "Lair of Horrors",
         "rewards": [
             "+1 Ansehen",
             "je 30 Gold"
         ]
     },
     "cs-55": {
-        "name": "Katakomben-Plünderung",
+        "name": "Catacomb Plunder",
         "rewards": [
             "+1 Wohlstand",
             "+1 Ansehen",
@@ -2772,162 +2772,162 @@ export default {
         ]
     },
     "cs-56": {
-        "name": "Die Maschine entschärfen",
+        "name": "Disarm the Machine",
         "rewards": [
-            "“Kettenkanone” (Gegenstand 45)"
+            "“Chain Cannon” (Gegenstand 45)"
         ]
     },
     "cs-57": {
-        "name": "Elementarwandler",
+        "name": "Elemental Converter",
         "rewards": [
-            "“Reagenzglas” (Gegenstand 48)"
+            "“Test Tube” (Gegenstand 48)"
         ]
     },
     "cs-58": {
-        "name": "Sperrung der Strafanstalt",
+        "name": "Penitentiary Lockdown",
         "rewards": [
-            "Erhaltet eines der folgenden als Gegenstand und das andere als Gegenstandsentwurf: „Klauenfalle“ (Gegenstand 34), „Klemmfalle“ (Gegenstand 56)"
+            "Erhaltet eines der folgenden als Gegenstand und das andere als Gegenstandsentwurf: „Claw Trap“ (Gegenstand 34), „Clamp Trap“ (Gegenstand 56)"
         ]
     },
     "cs-59": {
-        "name": "Waldeindringlinge",
+        "name": "Forest Invaders",
         "rewards": [
-            "“Naturarmreife” (Gegenstand 47)"
+            "“Nature Armlets” (Gegenstand 47)"
         ]
     },
     "cs-60": {
-        "name": "Durch Feuer und Flammen",
+        "name": "Through the Fire and Flames",
         "rewards": [
-            "“Flammende Rüstung” (Gegenstand 51)"
+            "“Flaming Armor” (Gegenstand 51)"
         ]
     },
     "cs-61": {
-        "name": "Uralte Bewahrung",
+        "name": "Archaic Preservation",
         "rewards": [
-            "“Robe der Linderung” (Gegenstand 42)"
+            "“Robe of Soothing” (Gegenstand 42)"
         ]
     },
     "cs-62": {
-        "name": "Geweihte Erlösung",
+        "name": "Hallow Redemption",
         "rewards": [
-            "“Geläutertes Leereherz” (Gegenstand 57)"
+            "“Cleansed Voidheart” (Gegenstand 57)"
         ]
     },
     "cs-63": {
-        "name": "Eine in die Enge getriebene Viper",
+        "name": "A Cornered Viper",
         "rewards": [
-            "“Feldmörser” (Gegenstand 53)"
+            "“Field Mortar” (Gegenstand 53)"
         ]
     },
     "cs-64": {
-        "name": "Leuchtende Kristalle",
+        "name": "Glowing Crystals",
         "rewards": [
-            "“Leuchtender Panzer” (Gegenstand 50)"
+            "“Luminous Carapace” (Gegenstand 50)"
         ]
     },
     "cs-65": {
-        "name": "Leuchtende Kristalle",
+        "name": "Glowing Crystals",
         "rewards": [
-            "“Geistertrank” (Gegenstand 41)"
+            "“Spirit Libation” (Gegenstand 41)"
         ]
     },
     "cs-66": {
-        "name": "Fremde aus einer anderen Welt",
+        "name": "Otherworldly Strangers",
         "rewards": [
-            "“Mondleder-Stiefel” (Gegenstand 40)"
+            "“Moonleather Boots” (Gegenstand 40)"
         ]
     },
     "cs-AA1": {
-        "name": "Die Reichtümer der Stahlseide",
-        "requirements": "Persönliche Quest „Um jeden Preis“",
+        "name": "The Riches of the Steelsilk",
+        "requirements": "Persönliche Quest „At All Costs“",
         "rewards": [
-            "“Felsstachel-Bollwerk” (Gegenstand AA01)"
+            "“Rockspine Bulwark” (Gegenstand AA01)"
         ]
     },
     "cs-AA2": {
-        "name": "Böse Echos",
-        "requirements": "Persönliche Quest „Die Last des Versagens“",
+        "name": "Malign Echoes",
+        "requirements": "Persönliche Quest „The Weight of Failure“",
         "rewards": [
-            "“Geisterschimmer-Honig” (Gegenstand AA02)"
+            "“Ghostshimmer Honey” (Gegenstand AA02)"
         ]
     },
     "cs-AA3": {
-        "name": "Wächter des Bienenstocks",
+        "name": "Hive Guardian",
         "rewards": [
-            "“Stahlseide Spinneret” (Gegenstand AA03)"
+            "“Steelsilk Spinneret” (Gegenstand AA03)"
         ]
     },
     "cs-QA1": {
-        "name": "Prüfstein",
-        "requirements": "Persönliche Quest „Genialer Erfinder“ und Gegenstand „Leistungsmodulator“ ausgerüstet",
+        "name": "Capstone Test",
+        "requirements": "Persönliche Quest „Ingenious Inventor“ und Gegenstand „Power Modulator“ ausgerüstet",
         "rewards": [
             [
-                "Quest “Genialer Erfinder” abgeschlossen",
+                "Quest “Ingenious Inventor” abgeschlossen",
                 "Öffnet Umschlag {QA}",
-                "“Dampfkolbenhammer”-Plan (Gegenstand QA02)",
-                "“Spinnenkletterhandschuhe”-Plan (Gegenstand QA03)"
+                "“Steam Piston Hammer”-Plan (Gegenstand QA02)",
+                "“Spider Climb Gloves”-Plan (Gegenstand QA03)"
             ],
             [
-                "Quest “Genialer Erfinder” abgeschlossen",
+                "Quest “Ingenious Inventor” abgeschlossen",
                 "Öffnet Umschlag {QA}",
-                "Erhaltet einen der folgenden: “Dampfkolbenhammer” (Gegenstand QA02) ODER “Spinnenkletterhandschuhe” (Gegenstand QA03)",
+                "Erhaltet einen der folgenden: “Steam Piston Hammer” (Gegenstand QA02) ODER “Spider Climb Gloves” (Gegenstand QA03)",
                 "Fügt dem verfügbaren Vorrat der Stadt eine Kopie des gewählten Gegenstands hinzu",
                 "Fügt den anderen Gegenstand dem Deck der zufälligen Gegenstandspläne hinzu"
             ],
             [
-                "Quest “Genialer Erfinder” abgeschlossen",
+                "Quest “Ingenious Inventor” abgeschlossen",
                 "Öffnet Umschlag {QA}",
-                "“Dampfkolbenhammer” (Gegenstand QA02)",
-                "“Spinnenkletterhandschuhe” (Gegenstand QA03)",
+                "“Steam Piston Hammer” (Gegenstand QA02)",
+                "“Spider Climb Gloves” (Gegenstand QA03)",
                 "Fügt dem verfügbaren Vorrat der Stadt Kopien hinzu"
             ]
         ]
     },
     "cs-QA2": {
-        "name": "Die Hauptader",
-        "requirements": "Persönliche Quest „Schrott-Taucher“",
+        "name": "Mother Lode",
+        "requirements": "Persönliche Quest „Scrap Diver“",
         "rewards": [
-            "Quest “Schrott-Taucher” abgeschlossen",
+            "Quest “Scrap Diver” abgeschlossen",
             "Öffnet Umschlag {QA}",
             "je 15xA Gold (wobei A die Anzahl der geborgenen Uralten Schrottteile ist)",
             "Fügt Stadt-Ereignis QA-03 dem Deck hinzu"
         ]
     },
     "cs-QA3": {
-        "name": "Opus Magnum",
+        "name": "Magnum Opus",
         "rewards": [
-            "“Auscudec der Erschaffer” (Gegenstand QA06)"
+            "“Auscudee of the Makers” (Gegenstand QA06)"
         ]
     },
     "cs-RM1": {
-        "name": "Benimm dich",
-        "requirements": "Persönliche Quest „Brutaler Vollstrecker“"
+        "name": "Mind your Manners",
+        "requirements": "Persönliche Quest „Brutal Enforcer“"
     },
     "cs-RM2": {
-        "name": "Sinkender Anführer",
-        "requirements": "Persönliche Quest „Brutaler Vollstrecker“",
+        "name": "Sinking Kingpin",
+        "requirements": "Persönliche Quest „Brutal Enforcer“",
         "rewards": [
-            "Quest “Brutaler Vollstrecker” abgeschlossen",
+            "Quest “Brutal Enforcer” abgeschlossen",
             "Öffnet Umschlag {RM}",
             "+1 Wohlstand"
         ]
     },
     "cs-RM3": {
-        "name": "Zerstörte Kolonie",
-        "requirements": "Persönliche Quest „Spitzenprädator“"
+        "name": "Ruined Colony",
+        "requirements": "Persönliche Quest „Apex Predator“"
     },
     "cs-RM4": {
-        "name": "Terrorschuppen-Hort",
-        "requirements": "Persönliche Quest „Spitzenprädator“",
+        "name": "Terrorscale Lair",
+        "requirements": "Persönliche Quest „Apex Predator“",
         "rewards": [
-            "Quest “Spitzenprädator” abgeschlossen",
+            "Quest “Apex Predator” abgeschlossen",
             "Öffnet Umschlag {RM}",
-            "“Schreckensschuppen-Säbel”-Plan (Gegenstand RM03)",
-            "“Schreckensschuppen-Kreuzklingen”-Plan (Gegenstand RM04)"
+            "“Terrorscale Saber”-Plan (Gegenstand RM03)",
+            "“Terrorscale Crossblades”-Plan (Gegenstand RM04)"
         ]
     },
     "cs-RM5": {
-        "name": "Unsichtbare Not",
+        "name": "Unseen Plight",
         "rewards": [
             [
                 "40 gemeinsames Gold",
@@ -2940,19 +2940,19 @@ export default {
         ]
     },
     "cs-RM6": {
-        "name": "Der Fall von Schattenruh",
+        "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "“Ritus des Ruins”-Plan (Gegenstand RM05)",
+            "“Rite of Ruin”-Plan (Gegenstand RM05)",
             "Falls am Ende der achten Runde mindestens drei Ratzen am Leben waren: 5 Gold",
             "Falls am Ende der achten Runde mindestens fünf Ratzen am Leben waren: ✓"
         ]
     },
     "cs-RM7": {
-        "name": "Unersättlich",
-        "requirements": "Kein Ruinenschlund in der Gruppe",
+        "name": "Insatiable",
+        "requirements": "Kein Ruinmaw in der Gruppe",
         "rewards": [
             "je 10 Erfahrung",
-            "“Wilder Harnisch”-Plan (Gegenstand RM06)"
+            "“Savage Cuirass”-Plan (Gegenstand RM06)"
         ]
     },
     "mp-AN1": {
