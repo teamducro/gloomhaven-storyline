@@ -122,6 +122,8 @@ export default {
     "Show treasures": "Kincsek mutatása",
     "solved": "megoldva",
     "Summary": "Összefoglaló",
+    "Story summaries": "Történet-összefoglalók",
+    "Complete a scenario to start your story": "Teljesíts egy küldetést, hogy elkezdődjön a történeted.",
     "Toggle": "Kapcsoló",
     "Treasure": "Kincs | Kincsek",
     "Treasures": "Kincsek",

@@ -11,11 +11,13 @@ const Items = () => import("./pages/Items");
 const Buildings = () => import("./pages/Buildings");
 const Shared = () => import("./pages/Shared");
 const Settings = () => import("./pages/Settings");
+const Summaries = () => import("./pages/Summaries");
 
 export default [
     {path: '/', redirect: '/story'},
     {path: '/story/:id?', component: Story},
     {path: '/scenarios', component: Scenarios},
+    {path: '/summaries', component: Summaries},
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
     {path: '/info', name: 'info', component: Info, props: route => ({contribute: !!route.query.contribute})},

@@ -122,6 +122,8 @@ export default {
     "Show treasures": "Показать сокровища",
     "solved": "решено",
     "Summary": "Итог",
+    "Story summaries": "Краткое содержание сюжета",
+    "Complete a scenario to start your story": "Завершите сценарий, чтобы начать свою историю.",
     "Toggle": "Переключить",
     "Treasure": "Сокровище | Сокровища",
     "Treasures": "Сокровища",

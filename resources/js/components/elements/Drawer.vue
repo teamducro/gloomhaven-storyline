@@ -67,6 +67,15 @@
                             </router-link>
                         </li>
 
+                        <li v-if="hasSummaries" @click="toggle">
+                            <router-link to="/summaries" class="mdc-deprecated-list-item"
+                                         active-class="mdc-deprecated-list-item--activated">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">menu_book</i>
+                                <span class="mdc-deprecated-list-item__text">{{ $t('Story summaries') }}</span>
+                            </router-link>
+                        </li>
+
                         <li @click="toggle">
                             <router-link to="/achievements" class="mdc-deprecated-list-item"
                                          active-class="mdc-deprecated-list-item--activated">
@@ -210,6 +219,9 @@ export default {
         },
         hasBuildings() {
             return !!this.gameData.buildings(this.game)?.length;
+        },
+        hasSummaries() {
+            return !!this.gameData.quests(this.game).length;
         }
     },
     inject: ['appData'],

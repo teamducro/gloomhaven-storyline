@@ -122,6 +122,8 @@ export default {
     "Show treasures": "Pokaż skarby",
     "solved": "rozwiązany",
     "Summary": "Podsumowanie",
+    "Story summaries": "Podsumowania fabuły",
+    "Complete a scenario to start your story": "Ukończ scenariusz, aby rozpocząć swoją historię.",
     "Toggle": "Przełącz",
     "Treasure": "Skarb | Skarby",
     "Treasures": "Skarby",

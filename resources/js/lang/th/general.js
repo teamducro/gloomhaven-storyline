@@ -122,6 +122,8 @@ export default {
     "Show treasures": "แสดงสมบัติ",
     "solved": "แก้แล้ว",
     "Summary": "สรุป",
+    "Story summaries": "สรุปเนื้อเรื่อง",
+    "Complete a scenario to start your story": "ทำสถานการณ์ให้สำเร็จเพื่อเริ่มต้นเรื่องราวของคุณ",
     "Toggle": "สลับ",
     "Treasure": "สมบัติ | สมบัติ",
     "Treasures": "สมบัติ",
