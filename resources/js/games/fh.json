@@ -7,8 +7,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "N6",
-                "x": 30.55,
-                "y": 26.75
+                "x": 30.63,
+                "y": 26.68
             },
             "chapter_id": 1,
             "complexity": 1,
@@ -38,8 +38,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 36.6,
-                "y": 58.14
+                "x": 36.69,
+                "y": 58.27
             },
             "chapter_id": 1,
             "complexity": 1,
@@ -95,8 +95,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "K8",
-                "x": 41.52,
-                "y": 33.15
+                "x": 41.54,
+                "y": 33.16
             },
             "chapter_id": 1,
             "complexity": 1,
@@ -143,8 +143,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "L7",
-                "x": 40.36,
-                "y": 30.51
+                "x": 40.28,
+                "y": 30.53
             },
             "chapter_id": 1,
             "complexity": 1,
@@ -192,8 +192,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "M8",
-                "x": 35.05,
-                "y": 33.34
+                "x": 34.82,
+                "y": 33.39
             },
             "chapter_id": 1,
             "complexity": 1,
@@ -259,7 +259,7 @@
             "coordinates": {
                 "name": "I6",
                 "x": 50.23,
-                "y": 29.77
+                "y": 29.7
             },
             "chapter_id": 2,
             "complexity": 2,
@@ -298,8 +298,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "L8",
-                "x": 38.41,
-                "y": 35.37
+                "x": 38.45,
+                "y": 35.4
             },
             "chapter_id": 4,
             "complexity": 2,
@@ -336,8 +336,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "K3",
-                "x": 44.97,
-                "y": 17.4
+                "x": 44.83,
+                "y": 17.42
             },
             "chapter_id": 3,
             "complexity": 1,
@@ -381,8 +381,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G8",
-                "x": 61,
-                "y": 35.66
+                "x": 60.9,
+                "y": 35.6
             },
             "chapter_id": 6,
             "complexity": 1,
@@ -420,8 +420,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "J6",
-                "x": 49.24,
-                "y": 26.62
+                "x": 49.14,
+                "y": 26.68
             },
             "chapter_id": 2,
             "complexity": 1,
@@ -461,8 +461,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "F6",
-                "x": 63.96,
-                "y": 27.95
+                "x": 63.83,
+                "y": 27.96
             },
             "chapter_id": 2,
             "complexity": 2,
@@ -509,8 +509,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "M6",
-                "x": 34.25,
-                "y": 29.59
+                "x": 33.83,
+                "y": 29.5
             },
             "chapter_id": 4,
             "complexity": 2,
@@ -559,7 +559,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "K8",
-                "x": 43,
+                "x": 42.89,
                 "y": 35.63
             },
             "chapter_id": 4,
@@ -599,8 +599,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "O2",
-                "x": 27.06,
-                "y": 14.48
+                "x": 26.98,
+                "y": 14.5
             },
             "chapter_id": 3,
             "complexity": 2,
@@ -640,8 +640,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "L2",
-                "x": 38.94,
-                "y": 13.6
+                "x": 38.78,
+                "y": 13.63
             },
             "chapter_id": 3,
             "complexity": 2,
@@ -691,8 +691,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "D7",
-                "x": 74.35,
-                "y": 32.05
+                "x": 74.07,
+                "y": 32.01
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -735,7 +735,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "F10",
-                "x": 65.3,
+                "x": 65.38,
                 "y": 40.7
             },
             "chapter_id": 6,
@@ -776,8 +776,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "H6",
-                "x": 53.65,
-                "y": 28.14
+                "x": 53.64,
+                "y": 28.08
             },
             "chapter_id": 2,
             "complexity": 3,
@@ -818,8 +818,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E7",
-                "x": 68.67,
-                "y": 29.34
+                "x": 68.5,
+                "y": 29.38
             },
             "chapter_id": 2,
             "complexity": 1,
@@ -858,7 +858,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "N7",
-                "x": 31.73,
+                "x": 31.56,
                 "y": 31.23
             },
             "chapter_id": 4,
@@ -899,8 +899,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "L9",
-                "x": 40.47,
-                "y": 38.72
+                "x": 40.35,
+                "y": 38.7
             },
             "chapter_id": 4,
             "complexity": 3,
@@ -935,8 +935,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "N1",
-                "x": 30.32,
-                "y": 11.02
+                "x": 30.12,
+                "y": 10.98
             },
             "chapter_id": 3,
             "complexity": 3,
@@ -979,8 +979,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "I2",
-                "x": 53.13,
-                "y": 15.22
+                "x": 53.08,
+                "y": 15.28
             },
             "chapter_id": 3,
             "complexity": 2,
@@ -1023,8 +1023,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "B8",
-                "x": 76.92,
-                "y": 33.78
+                "x": 77.17,
+                "y": 33.86
             },
             "chapter_id": 6,
             "complexity": 1,
@@ -1059,8 +1059,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "D6",
-                "x": 74.8,
-                "y": 29.93
+                "x": 74.54,
+                "y": 29.83
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -1096,8 +1096,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E10",
-                "x": 69.08,
-                "y": 37.95
+                "x": 68.7,
+                "y": 38.13
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -1143,8 +1143,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E10",
-                "x": 68.77,
-                "y": 41.89
+                "x": 68.48,
+                "y": 41.76
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -1190,7 +1190,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "H6",
-                "x": 55.4,
+                "x": 55.32,
                 "y": 26.67
             },
             "requirements": "Shard Seeker (Campaign) COMPLETE",
@@ -1240,8 +1240,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "J8",
-                "x": 49.4,
-                "y": 34.65
+                "x": 49.26,
+                "y": 34.6
             },
             "chapter_id": 5,
             "complexity": 3,
@@ -1302,8 +1302,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "F8",
-                "x": 65.93,
-                "y": 32.55
+                "x": 65.83,
+                "y": 32.53
             },
             "chapter_id": 2,
             "complexity": 2,
@@ -1362,8 +1362,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E8",
-                "x": 70.54,
-                "y": 32.86
+                "x": 70.67,
+                "y": 32.83
             },
             "chapter_id": 4,
             "complexity": 2,
@@ -1423,8 +1423,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "F10",
-                "x": 56.35,
-                "y": 40.97
+                "x": 56.42,
+                "y": 41.04
             },
             "chapter_id": 4,
             "complexity": 2,
@@ -1471,8 +1471,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "Q3",
-                "x": 19.24,
-                "y": 17.14
+                "x": 19.13,
+                "y": 16.98
             },
             "chapter_id": 3,
             "complexity": 2,
@@ -1509,8 +1509,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "R2",
-                "x": 11.1,
-                "y": 14.2
+                "x": 10.98,
+                "y": 14.1
             },
             "requirements": "Into the Forest (Campaign) COMPLETE",
             "required_by": [
@@ -1556,8 +1556,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C6",
-                "x": 75.38,
-                "y": 28.09
+                "x": 75.23,
+                "y": 28.08
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -1584,8 +1584,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C10",
-                "x": 73.65,
-                "y": 43.23
+                "x": 73.66,
+                "y": 43.01
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -1633,8 +1633,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C9",
-                "x": 77.14,
-                "y": 39.44
+                "x": 76.92,
+                "y": 39.46
             },
             "chapter_id": 6,
             "complexity": 1,
@@ -1685,8 +1685,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C11",
-                "x": 76.8,
-                "y": 43.4
+                "x": 76.91,
+                "y": 43.39
             },
             "chapter_id": 6,
             "complexity": 1,
@@ -1741,8 +1741,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G8",
-                "x": 59.08,
-                "y": 33.33
+                "x": 58.97,
+                "y": 33.32
             },
             "chapter_id": 5,
             "complexity": 3,
@@ -1784,8 +1784,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "Q4",
-                "x": 16.55,
-                "y": 20.44
+                "x": 16.53,
+                "y": 20.5
             },
             "requirements": "Into the Forest (Campaign) COMPLETE",
             "required_by": [
@@ -1834,8 +1834,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "H9",
-                "x": 53.8,
-                "y": 38.05
+                "x": 53.75,
+                "y": 38.03
             },
             "chapter_id": 4,
             "complexity": 2,
@@ -1882,8 +1882,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E12",
-                "x": 65.8,
-                "y": 46.2
+                "x": 65.88,
+                "y": 46.27
             },
             "requirements": "Shard Seeker (Campaign) COMPLETE",
             "required_by": [
@@ -1931,8 +1931,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "J1",
-                "x": 46.15,
-                "y": 10.91
+                "x": 46.01,
+                "y": 10.94
             },
             "chapter_id": 3,
             "complexity": 1,
@@ -1982,8 +1982,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C9",
-                "x": 75.46,
-                "y": 38.65
+                "x": 75.23,
+                "y": 38.62
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -2019,7 +2019,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "B10",
-                "x": 79.85,
+                "x": 79.63,
                 "y": 41.45
             },
             "chapter_id": 6,
@@ -2068,8 +2068,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C3",
-                "x": 78.5,
-                "y": 18.6
+                "x": 78.56,
+                "y": 18.56
             },
             "chapter_id": 5,
             "complexity": 1,
@@ -2116,8 +2116,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "B12",
-                "x": 79.53,
-                "y": 48.73
+                "x": 79.38,
+                "y": 48.68
             },
             "chapter_id": 5,
             "complexity": 2,
@@ -2161,8 +2161,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "Q5",
-                "x": 9.94,
-                "y": 21.84
+                "x": 10.11,
+                "y": 21.81
             },
             "chapter_id": 1,
             "complexity": 2,
@@ -2202,8 +2202,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "D2",
-                "x": 69.9,
-                "y": 13.9
+                "x": 70,
+                "y": 13.78
             },
             "chapter_id": 4,
             "complexity": 2,
@@ -2250,8 +2250,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G3",
-                "x": 58.15,
-                "y": 15.98
+                "x": 58.11,
+                "y": 16.04
             },
             "chapter_id": 3,
             "complexity": 3,
@@ -2304,8 +2304,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G1",
-                "x": 60.14,
-                "y": 11.04
+                "x": 59.93,
+                "y": 11.01
             },
             "chapter_id": 3,
             "complexity": 2,
@@ -2358,8 +2358,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "B9",
-                "x": 80.87,
-                "y": 37.9
+                "x": 80.63,
+                "y": 37.84
             },
             "chapter_id": 6,
             "complexity": 3,
@@ -2405,8 +2405,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G7",
-                "x": 58.65,
-                "y": 30.97
+                "x": 58.54,
+                "y": 30.96
             },
             "requirements": "Living Glacier COMPLETE and Dead Pass COMPLETE",
             "required_by": [
@@ -2459,8 +2459,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E2",
-                "x": 65.55,
-                "y": 14.36
+                "x": 65.75,
+                "y": 14.39
             },
             "chapter_id": 3,
             "complexity": 2,
@@ -2512,8 +2512,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "F1",
-                "x": 65.28,
-                "y": 11.17
+                "x": 65,
+                "y": 11.07
             },
             "chapter_id": 3,
             "complexity": 2,
@@ -2567,8 +2567,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "M8",
-                "x": 34.63,
-                "y": 32.45
+                "x": 34.35,
+                "y": 32.51
             },
             "chapter_id": 5,
             "complexity": 2,
@@ -2616,7 +2616,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "R4",
-                "x": 11.34,
+                "x": 11.29,
                 "y": 19.43
             },
             "chapter_id": 2,
@@ -2662,8 +2662,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "D1",
-                "x": 71.37,
-                "y": 11.15
+                "x": 71.33,
+                "y": 11.16
             },
             "chapter_id": 4,
             "complexity": 3,
@@ -2706,8 +2706,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "A10",
-                "x": 83.59,
-                "y": 40.3
+                "x": 83.78,
+                "y": 40.28
             },
             "chapter_id": 6,
             "complexity": 3,
@@ -2763,8 +2763,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "A11",
-                "x": 80.55,
-                "y": 43.24
+                "x": 80.81,
+                "y": 43.22
             },
             "chapter_id": 6,
             "complexity": 2,
@@ -2817,8 +2817,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G2",
-                "x": 60.87,
-                "y": 12.7
+                "x": 60.6,
+                "y": 12.74
             },
             "chapter_id": 3,
             "complexity": 2,
@@ -2875,8 +2875,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "I11",
-                "x": 53.2,
-                "y": 44.9
+                "x": 53.12,
+                "y": 44.92
             },
             "is_side": true,
             "chapter_id": 108,
@@ -2915,8 +2915,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "B8",
-                "x": 82.95,
-                "y": 36.11
+                "x": 82.9,
+                "y": 36.08
             },
             "chapter_id": 108,
             "complexity": 3,
@@ -2963,8 +2963,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G12",
-                "x": 58.48,
-                "y": 47.77
+                "x": 58.39,
+                "y": 47.78
             },
             "chapter_id": 108,
             "complexity": 3,
@@ -3007,8 +3007,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 33.07,
-                "y": 73.07
+                "x": 32.65,
+                "y": 73.18
             },
             "chapter_id": 108,
             "complexity": 3,
@@ -3047,8 +3047,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "L4",
-                "x": 38.7,
-                "y": 22.47
+                "x": 38.63,
+                "y": 22.4
             },
             "requirements": "A Town in Flames COMPLETE",
             "required_by": [
@@ -3096,8 +3096,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "L4",
-                "x": 35.08,
-                "y": 20.08
+                "x": 35.14,
+                "y": 20.07
             },
             "chapter_id": 107,
             "complexity": 2,
@@ -3148,8 +3148,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "K4",
-                "x": 40.54,
-                "y": 20.2
+                "x": 40.64,
+                "y": 20.23
             },
             "chapter_id": 107,
             "complexity": 2,
@@ -3196,8 +3196,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "L3",
-                "x": 40.37,
-                "y": 15.87
+                "x": 40.23,
+                "y": 15.94
             },
             "chapter_id": 107,
             "complexity": 2,
@@ -3237,8 +3237,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "P2",
-                "x": 20.93,
-                "y": 14.05
+                "x": 20.67,
+                "y": 14.01
             },
             "requirements": "Into the Forest (Campaign) COMPLETE",
             "required_by": [
@@ -3282,8 +3282,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "Q2",
-                "x": 16.67,
-                "y": 13.25
+                "x": 16.51,
+                "y": 13.22
             },
             "chapter_id": 107,
             "complexity": 1,
@@ -3328,8 +3328,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 76.77,
-                "y": 75.7
+                "x": 76.61,
+                "y": 75.72
             },
             "is_side": true,
             "chapter_id": 107,
@@ -3369,8 +3369,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "A5",
-                "x": 84.8,
-                "y": 24.85
+                "x": 84.85,
+                "y": 24.87
             },
             "chapter_id": 107,
             "complexity": 2,
@@ -3416,8 +3416,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "D3",
-                "x": 74.57,
-                "y": 16.95
+                "x": 74.43,
+                "y": 16.85
             },
             "chapter_id": 107,
             "complexity": 2,
@@ -3466,8 +3466,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G6",
-                "x": 60.15,
-                "y": 28.51
+                "x": 60.13,
+                "y": 28.5
             },
             "chapter_id": 107,
             "complexity": 2,
@@ -3514,8 +3514,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C2",
-                "x": 76.05,
-                "y": 12.71
+                "x": 76.18,
+                "y": 12.74
             },
             "blocks_on": [
                 {
@@ -3573,8 +3573,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "B2",
-                "x": 80.63,
-                "y": 14.12
+                "x": 80.61,
+                "y": 14.11
             },
             "blocks_on": [
                 {
@@ -3638,8 +3638,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "B1",
-                "x": 79.85,
-                "y": 11
+                "x": 79.81,
+                "y": 10.97
             },
             "chapter_id": 107,
             "complexity": 3,
@@ -3686,7 +3686,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "H5",
-                "x": 55.15,
+                "x": 55.01,
                 "y": 23.82
             },
             "is_side": true,
@@ -3733,8 +3733,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "B5",
-                "x": 80.22,
-                "y": 25.75
+                "x": 80.17,
+                "y": 25.76
             },
             "is_side": true,
             "chapter_id": 111,
@@ -3779,8 +3779,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 17.97,
-                "y": 58.28
+                "x": 17.99,
+                "y": 58.33
             },
             "chapter_id": 111,
             "complexity": 2,
@@ -3827,8 +3827,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "A12",
-                "x": 83.67,
-                "y": 46.7
+                "x": 83.68,
+                "y": 46.58
             },
             "is_side": true,
             "chapter_id": 110,
@@ -3873,8 +3873,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "P8",
-                "x": 20.7,
-                "y": 34.03
+                "x": 20.68,
+                "y": 34.15
             },
             "is_side": true,
             "chapter_id": 110,
@@ -3911,8 +3911,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E3",
-                "x": 67.76,
-                "y": 20.76
+                "x": 67.75,
+                "y": 20.72
             },
             "is_side": true,
             "chapter_id": 111,
@@ -3952,8 +3952,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "R5",
-                "x": 11.5,
-                "y": 24.72
+                "x": 11.39,
+                "y": 24.67
             },
             "is_side": true,
             "chapter_id": 111,
@@ -3986,8 +3986,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "O5",
-                "x": 24.14,
-                "y": 25.88
+                "x": 24.01,
+                "y": 25.83
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4028,8 +4028,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 71,
-                "y": 60.4
+                "x": 71.08,
+                "y": 60.34
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4064,8 +4064,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "J7",
-                "x": 47.06,
-                "y": 31.16
+                "x": 47,
+                "y": 31.21
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4113,8 +4113,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "I7",
-                "x": 52.28,
-                "y": 32.32
+                "x": 52.25,
+                "y": 32.23
             },
             "chapter_id": 111,
             "complexity": 2,
@@ -4157,7 +4157,7 @@
             "coordinates": {
                 "name": "G10",
                 "x": 61.7,
-                "y": 38.9
+                "y": 38.89
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4194,8 +4194,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "I3",
-                "x": 49.65,
-                "y": 17.54
+                "x": 49.56,
+                "y": 17.61
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4239,8 +4239,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "J4",
-                "x": 45.44,
-                "y": 21.75
+                "x": 45.28,
+                "y": 21.73
             },
             "chapter_id": 111,
             "complexity": 2,
@@ -4274,8 +4274,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "I4",
-                "x": 50.92,
-                "y": 19.38
+                "x": 50.83,
+                "y": 19.35
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4316,8 +4316,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "H7",
-                "x": 55.47,
-                "y": 32.17
+                "x": 55.42,
+                "y": 32.13
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4360,8 +4360,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "B6",
-                "x": 81.16,
-                "y": 27.9
+                "x": 81.03,
+                "y": 27.93
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4411,8 +4411,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 23.97,
-                "y": 61.51
+                "x": 23.86,
+                "y": 61.55
             },
             "chapter_id": 111,
             "complexity": 2,
@@ -4454,8 +4454,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E11",
-                "x": 70.17,
-                "y": 44.85
+                "x": 70.15,
+                "y": 44.9
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4499,8 +4499,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "D12",
-                "x": 71.03,
-                "y": 48
+                "x": 71,
+                "y": 47.98
             },
             "chapter_id": 111,
             "complexity": 3,
@@ -4537,8 +4537,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E12",
-                "x": 67.2,
-                "y": 48.8
+                "x": 67.31,
+                "y": 48.75
             },
             "chapter_id": 111,
             "complexity": 1,
@@ -4576,7 +4576,7 @@
             "coordinates": {
                 "name": "A4",
                 "x": 84.06,
-                "y": 21.51
+                "y": 21.43
             },
             "is_side": true,
             "chapter_id": 111,
@@ -4609,8 +4609,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "A3",
-                "x": 84.38,
-                "y": 18.2
+                "x": 84.35,
+                "y": 18.28
             },
             "chapter_id": 111,
             "complexity": 3,
@@ -4647,7 +4647,7 @@
             "coordinates": {
                 "name": "O3",
                 "x": 24.68,
-                "y": 18.25
+                "y": 18.3
             },
             "requirements": "Into the Forest (Campaign) COMPLETE",
             "required_by": [
@@ -4693,8 +4693,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "R7",
-                "x": 15.8,
-                "y": 30.4
+                "x": 15.66,
+                "y": 30.45
             },
             "chapter_id": 111,
             "complexity": 3,
@@ -4734,8 +4734,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "R8",
-                "x": 13.58,
-                "y": 33.88
+                "x": 13.46,
+                "y": 33.73
             },
             "chapter_id": 111,
             "complexity": 2,
@@ -4767,8 +4767,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "E5",
-                "x": 69.93,
-                "y": 23.53
+                "x": 69.98,
+                "y": 23.6
             },
             "is_side": true,
             "chapter_id": 109,
@@ -4812,8 +4812,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "H11",
-                "x": 57.96,
-                "y": 44.68
+                "x": 57.87,
+                "y": 44.66
             },
             "chapter_id": 109,
             "complexity": 2,
@@ -4859,8 +4859,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "M5",
-                "x": 36.83,
-                "y": 24.85
+                "x": 36.71,
+                "y": 24.83
             },
             "chapter_id": 109,
             "complexity": 2,
@@ -4906,8 +4906,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "J10",
-                "x": 45.98,
-                "y": 39.6
+                "x": 45.91,
+                "y": 39.63
             },
             "is_side": true,
             "chapter_id": 109,
@@ -4965,8 +4965,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C12",
-                "x": 76.05,
-                "y": 48.2
+                "x": 76.04,
+                "y": 48.19
             },
             "is_side": true,
             "chapter_id": 109,
@@ -5001,8 +5001,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C8",
-                "x": 71.66,
-                "y": 35.49
+                "x": 71.81,
+                "y": 35.5
             },
             "is_side": true,
             "chapter_id": 109,
@@ -5044,8 +5044,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "R6",
-                "x": 13.25,
-                "y": 27.9
+                "x": 13.19,
+                "y": 27.87
             },
             "is_side": true,
             "chapter_id": 109,
@@ -5087,8 +5087,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "O1",
-                "x": 24.92,
-                "y": 11.38
+                "x": 24.84,
+                "y": 11.35
             },
             "is_side": true,
             "chapter_id": 109,
@@ -5128,8 +5128,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 66,
-                "y": 57.9
+                "x": 65.95,
+                "y": 57.98
             },
             "is_side": true,
             "chapter_id": 109,
@@ -5163,8 +5163,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "G9",
-                "x": 58.8,
-                "y": 38.5
+                "x": 58.83,
+                "y": 38.47
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5197,8 +5197,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "O7",
-                "x": 25.05,
-                "y": 30.2
+                "x": 25.03,
+                "y": 30.28
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5232,8 +5232,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "O8",
-                "x": 27.36,
-                "y": 33.19
+                "x": 27.27,
+                "y": 33.24
             },
             "chapter_id": 110,
             "complexity": 2,
@@ -5305,8 +5305,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "O8",
-                "x": 24.02,
-                "y": 35.41
+                "x": 24.05,
+                "y": 35.4
             },
             "chapter_id": 110,
             "complexity": 2,
@@ -5385,7 +5385,7 @@
             "game": "fh",
             "coordinates": {
                 "name": "F7",
-                "x": 64.53,
+                "x": 64.52,
                 "y": 30.4
             },
             "is_side": true,
@@ -5426,8 +5426,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "F4",
-                "x": 63.45,
-                "y": 22.83
+                "x": 63.46,
+                "y": 22.84
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5468,8 +5468,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "Q1",
-                "x": 15.84,
-                "y": 10.88
+                "x": 15.86,
+                "y": 10.81
             },
             "requirements": "Into the Forest (Campaign) COMPLETE",
             "required_by": [
@@ -5506,8 +5506,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 10.9,
-                "y": 77.88
+                "x": 10.82,
+                "y": 77.92
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5547,8 +5547,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "C13",
-                "x": 75.75,
-                "y": 50.89
+                "x": 75.85,
+                "y": 50.91
             },
             "chapter_id": 110,
             "complexity": 3,
@@ -5599,8 +5599,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "H10",
-                "x": 52.64,
-                "y": 41.34
+                "x": 52.58,
+                "y": 41.29
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5643,8 +5643,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "K5",
-                "x": 43.56,
-                "y": 24.16
+                "x": 43.54,
+                "y": 24.13
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5679,8 +5679,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 74.48,
-                "y": 62.66
+                "x": 74.45,
+                "y": 62.74
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5713,8 +5713,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 78.8,
-                "y": 61.37
+                "x": 78.85,
+                "y": 61.52
             },
             "chapter_id": 110,
             "complexity": 2,
@@ -5750,8 +5750,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 80.3,
-                "y": 59.18
+                "x": 80.25,
+                "y": 59.3
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5789,8 +5789,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 60.5,
-                "y": 81.85
+                "x": 60.34,
+                "y": 81.88
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5847,8 +5847,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "FR",
-                "x": 55.2,
-                "y": 73.6
+                "x": 54.86,
+                "y": 73.82
             },
             "is_side": true,
             "chapter_id": 110,
@@ -5900,8 +5900,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "J9",
-                "x": 49.5,
-                "y": 37.8
+                "x": 49.45,
+                "y": 37.85
             },
             "chapter_id": 110,
             "complexity": 3,
@@ -5947,8 +5947,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "H8",
-                "x": 54.5,
-                "y": 35.6
+                "x": 54.4,
+                "y": 35.69
             },
             "chapter_id": 110,
             "complexity": 3,
@@ -5993,8 +5993,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "K2",
-                "x": 44.43,
-                "y": 13.81
+                "x": 44.27,
+                "y": 13.77
             },
             "is_side": true,
             "chapter_id": 110,
@@ -6020,8 +6020,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "Q6",
-                "x": 19.54,
-                "y": 29.14
+                "x": 19.53,
+                "y": 29.19
             },
             "is_side": true,
             "chapter_id": 111,
@@ -6063,8 +6063,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "P6",
-                "x": 21.12,
-                "y": 27.03
+                "x": 20.94,
+                "y": 27
             },
             "chapter_id": 111,
             "complexity": 2,
@@ -6102,8 +6102,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "R1",
-                "x": 12.03,
-                "y": 10.6
+                "x": 12.02,
+                "y": 10.65
             },
             "requirements": "Into the Forest (Campaign) COMPLETE",
             "required_by": [
@@ -6144,8 +6144,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "O4",
-                "x": 24.23,
-                "y": 21.55
+                "x": 24.18,
+                "y": 21.43
             },
             "is_side": true,
             "chapter_id": 110,
@@ -6189,8 +6189,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "I2",
-                "x": 46.88,
-                "y": 14.83
+                "x": 47,
+                "y": 14.75
             },
             "required_by": [
                 {
@@ -6233,8 +6233,8 @@
             "game": "fh",
             "coordinates": {
                 "name": "D3",
-                "x": 71.86,
-                "y": 19.58
+                "x": 71.81,
+                "y": 19.67
             },
             "required_by": [
                 {
@@ -21949,7 +21949,8 @@
             "highres": "/img/maps/fh/highres.jpg"
         },
         "settings": {
-            "stickerScale": 0.7,
+            "stickerScale": 0.615,
+            "buildingScale": 0.7,
             "yOffset": 0,
             "width": 2500,
             "height": 3159

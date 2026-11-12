@@ -41,7 +41,7 @@
                   :style="{
                       'left': overlay.coordinates.x + '%',
                       'top': overlay.coordinates.y + '%',
-                      'transform': 'scale('+scenarioScale+')'
+                      'transform': 'scale('+buildingScale+')'
                   }"/>
 
             <template v-if="scenarios && scenarios.isNotEmpty()">
@@ -72,7 +72,7 @@
                       :style="{
                           'left': building.coordinates.x + '%',
                           'top': building.coordinates.y + '%',
-                          'transform': 'scale('+scenarioScale+')'
+                          'transform': 'scale('+buildingScale+')'
                       }"/>
             </template>
 
@@ -106,6 +106,7 @@ export default {
             mapImages: null,
             settings: {
                 stickerScale: 1,
+                buildingScale: 1,
                 yOffset: 0,
                 width: 0,
                 height: 0
@@ -116,6 +117,7 @@ export default {
             overlays: null,
             buildings: null,
             scenarioScale: 1,
+            buildingScale: 1,
             gameData: new GameData
         }
     },
@@ -265,6 +267,7 @@ export default {
         },
         scale() {
             this.scenarioScale = this.settings.stickerScale;
+            this.buildingScale = this.settings.buildingScale ?? this.settings.stickerScale;
 
             return this.isLandscape()
                 ? window.innerHeight / this.settings.width
