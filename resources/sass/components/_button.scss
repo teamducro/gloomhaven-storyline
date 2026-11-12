@@ -7,6 +7,15 @@
         @apply bg-gray-600;
     }
 
+    // A mouse click leaves focus on the button; only show the focus highlight for keyboard focus
+    &:not(:focus-visible) {
+        --mdc-text-button-focus-state-layer-opacity: 0;
+
+        &:hover {
+            --mdc-text-button-focus-state-layer-opacity: var(--mdc-text-button-hover-state-layer-opacity, 0.04);
+        }
+    }
+
     @apply whitespace-nowrap;
     &.mdc-button--circle {
         @apply rounded-full min-w-0 px-2;
