@@ -258,37 +258,37 @@ export default {
         "name": "Диверсанты"
     },
     "cs-PCSOD": {
-        "name": "Слизь уничтожена"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "Упавшая лава"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "По следу денег"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "Застывший воин"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "Союз с Дубом"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "Союз с иноксами"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "Награда Гаттермо"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "Просьба Фейргрина"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "Утраченное зелье"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "Взять деньги"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "Прославленные наёмники"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "Друг ледоречцев"
@@ -381,10 +381,10 @@ export default {
         "name": "Сердце снега"
     },
     "gh2-G2ATD": {
-        "name": "Активация устройства"
+        "name": "Activating the Device"
     },
     "gh2-G2AUP": {
-        "name": "Непрочный мир"
+        "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
         "name": "Древняя технология"
@@ -399,7 +399,7 @@ export default {
         "name": "Городское правление: военные"
     },
     "gh2-G2EM": {
-        "name": "Покорение стихий"
+        "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
         "name": "Конец упадка"
@@ -408,22 +408,22 @@ export default {
         "name": "Конец эпохи Мрака"
     },
     "gh2-G2HW": {
-        "name": "Освящённые воды"
+        "name": "Hallowed Waters"
     },
     "gh2-G2ITD": {
-        "name": "В глубины"
+        "name": "Into the Depths"
     },
     "gh2-G2PTB": {
-        "name": "Мир через кровопролитие"
+        "name": "Peace Through Bloodshed"
     },
     "gh2-G2TCE": {
-        "name": "Свеча погашена"
+        "name": "The Candle Extinguished"
     },
     "gh2-G2TCK": {
-        "name": "Свеча сохранена"
+        "name": "The Candle Kept"
     },
     "gh2-G2TDR": {
-        "name": "Тьма отступает"
+        "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
         "name": "Помощь дрейку"
@@ -441,27 +441,27 @@ export default {
         "name": "Голос умолк"
     },
     "gh2-P2R16": {
-        "name": "Репутация фракций 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "Репутация фракций 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
-        "name": "Репутация демонов 6"
+        "name": "Demon Reputation 6"
     },
     "gh2-P2RD12": {
-        "name": "Репутация демонов 12"
+        "name": "Demon Reputation 12"
     },
     "gh2-P2RME6": {
-        "name": "Репутация торговцев 6"
+        "name": "Merchant Reputation 6"
     },
     "gh2-P2RME12": {
-        "name": "Репутация торговцев 12"
+        "name": "Merchant Reputation 12"
     },
     "gh2-P2RMI6": {
-        "name": "Репутация военных 6"
+        "name": "Military Reputation 6"
     },
     "gh2-P2RMI12": {
-        "name": "Репутация военных 12"
+        "name": "Military Reputation 12"
     }
 }

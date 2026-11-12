@@ -26,7 +26,7 @@ describe('Crimson Scales cross-game items', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-7_c-8_c-9_c-13_c', {
             onBeforeLoad: (win) => win.localStorage.setItem('lang', '"pl"')
         });
-        openScenario('Jaskinia Trupów');
+        openScenario('Corpse Cavern');
 
         cy.get('#scenario-content a').contains('Większa Mikstura Wytrzymałości').click();
 
@@ -37,7 +37,7 @@ describe('Crimson Scales cross-game items', () => {
         cy.visit('/tracker?states=1_c-2_c-3_c-7_c-8_c-9_c-13_c', {
             onBeforeLoad: (win) => win.localStorage.setItem('lang', '"hu"')
         });
-        openScenario('Hullabarlang');
+        openScenario('Corpse Cavern');
 
         cy.get('#scenario-content a').contains('Nagy serkentő ital').click();
 
@@ -45,9 +45,9 @@ describe('Crimson Scales cross-game items', () => {
     });
 
     [
-        ['ru', 'Пещера трупов', 'Большое зелье выносливости', '«» quotes'],
-        ['zh', '尸体洞窟', '强效耐力药水', 'full-width parentheses'],
-        ['th', 'ถ้ำศพ', 'ยาคงทนหลัก', 'combining marks in the item label'],
+        ['ru', 'Corpse Cavern', 'Большое зелье выносливости', '«» quotes'],
+        ['zh', 'Corpse Cavern', '强效耐力药水', 'full-width parentheses'],
+        ['th', 'Corpse Cavern', 'ยาคงทนหลัก', 'combining marks in the item label'],
     ].forEach(([lang, scenario, item, form]) => {
         it(`It links items in ${lang} texts with ${form}`, () => {
             cy.visit('/tracker?states=1_c-2_c-3_c-7_c-8_c-9_c-13_c', {

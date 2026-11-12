@@ -258,37 +258,37 @@ export default {
         "name": "Saboteadores"
     },
     "cs-PCSOD": {
-        "name": "Cieno destruido"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "Lava caída"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "Sigue al dinero"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "Guerrero congelado"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "Alianza del Roble"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "Alianza Inox"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "Recompensa de Guttermaw"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "Petición de Feirgrin"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "Una poción perdida"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "Coge el dinero"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "Mercenarios consumados"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "Amistad de los Voz de Hielo"
@@ -381,25 +381,25 @@ export default {
         "name": "Corazón de nieve"
     },
     "gh2-G2ATD": {
-        "name": "Activación del dispositivo"
+        "name": "Activating the Device"
     },
     "gh2-G2AUP": {
-        "name": "Una paz inestable"
+        "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
         "name": "Tecnología antigua"
     },
     "gh2-G2CRD": {
-        "name": "Gobierno de la ciudad: Demonios"
+        "name": "City Rule: Demons"
     },
     "gh2-G2CRME": {
-        "name": "Gobierno de la ciudad: Mercaderes"
+        "name": "City Rule: Merchants"
     },
     "gh2-G2CRMI": {
-        "name": "Gobierno de la ciudad: Militares"
+        "name": "City Rule: Military"
     },
     "gh2-G2EM": {
-        "name": "Elementos dominados"
+        "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
         "name": "El fin de la corrupción"
@@ -408,22 +408,22 @@ export default {
         "name": "El fin de la Penumbra"
     },
     "gh2-G2HW": {
-        "name": "Aguas sagradas"
+        "name": "Hallowed Waters"
     },
     "gh2-G2ITD": {
-        "name": "En las profundidades"
+        "name": "Into the Depths"
     },
     "gh2-G2PTB": {
-        "name": "Paz mediante el derramamiento de sangre"
+        "name": "Peace Through Bloodshed"
     },
     "gh2-G2TCE": {
-        "name": "La vela extinguida"
+        "name": "The Candle Extinguished"
     },
     "gh2-G2TCK": {
-        "name": "La vela conservada"
+        "name": "The Candle Kept"
     },
     "gh2-G2TDR": {
-        "name": "La oscuridad retrocede"
+        "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
         "name": "El Draco auxiliado"
@@ -441,27 +441,27 @@ export default {
         "name": "La Voz silenciada"
     },
     "gh2-P2R16": {
-        "name": "Reputación de facción 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "Reputación de facción 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
-        "name": "Reputación con los Demonios 6"
+        "name": "Demon Reputation 6"
     },
     "gh2-P2RD12": {
-        "name": "Reputación con los Demonios 12"
+        "name": "Demon Reputation 12"
     },
     "gh2-P2RME6": {
-        "name": "Reputación con los Mercaderes 6"
+        "name": "Merchant Reputation 6"
     },
     "gh2-P2RME12": {
-        "name": "Reputación con los Mercaderes 12"
+        "name": "Merchant Reputation 12"
     },
     "gh2-P2RMI6": {
-        "name": "Reputación con los Militares 6"
+        "name": "Military Reputation 6"
     },
     "gh2-P2RMI12": {
-        "name": "Reputación con los Militares 12"
+        "name": "Military Reputation 12"
     }
 }

@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "Bursztynowa Egida",
+        "name": "Amber Aegis",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} “Umieść jeden wybrany żeton {COLONY} {COLONY_ICON} na dowolnym pustym polu w promieniu {RANGE}2”",
             "Usuń dwie karty {-1_WHITE}",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artefaktor",
+        "name": "Artificer",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} {ANY}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} {DISARM}",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombarda",
+        "name": "Bombard",
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
             "Zastąp dwie karty {+0_WHITE} dwiema kartami {AGAIN} {PIERCE}3",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Jasna Iskra",
+        "name": "Brightspark",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{ANY_X} to add +2 {ATTACK}”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “{RECOVER} jedną losową kartę z twojego stosu odrzuconych”",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Łańcuchowy Strażnik",
+        "name": "Chainguard",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} “{SHACKLE} {CG_CIRCLE}”",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {CG_CIRCLE}”",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Wódz",
+        "name": "Chieftain",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {POISON}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, {CT_CIRCLE}”",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Ognisty Rycerz",
+        "name": "Fire Knight",
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{STRENGTHEN} (Sojusznik)”",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hierofant",
+        "name": "Hierophant",
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {AGAIN} {LIGHT}",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "Pustoprzymierzeniec",
+        "name": "Hollowpact",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}2, na siebie”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}”",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Luminarz",
+        "name": "Luminary",
         "perks": [
             "Usuń cztery karty {+0_WHITE}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE}",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "Bagnostopy",
+        "name": "Mirefoot",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "Przywoływacz Duchów",
+        "name": "Spirit Caller",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} oraz jedną kartę {+1_WHITE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SP_CIRCLE} performed the attack”",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Gwiezdny Strzelec",
+        "name": "Starslinger",
         "perks": [
             "Zastąp dwie karty {+0_WHITE} jedną kartą {AGAIN} “{HEAL}1, na siebie”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} {DISARM} oraz jedną kartę {-1_WHITE} “{INVISIBLE}, na siebie”",
@@ -938,7 +938,7 @@ export default {
         ]
     },
     "HA": {
-        "name": "Grad",
+        "name": "Hail",
         "masteries": [
             "Przez cały scenariusz zyskuj co najmniej 1 {RESOLVE_WHITE} w każdej rundzie",
             "W jednym scenariuszu, przez trzy kolejne rundy, wydawaj co najmniej 3 {RESOLVE_WHITE} w każdej rundzie"
@@ -998,7 +998,7 @@ export default {
         ]
     },
     "BR2": {
-        "name": "Kark",
+        "name": "Bruiser",
         "masteries": [
             "W 3 różnych scenariuszach zabij wroga, którego w tej rundzie odepchnąłeś lub przyciągnąłeś",
             "W jednym scenariuszu, przez 3 kolejne rundy, zagraj 6 różnych kart zdolności i spraw, aby wrogowie otrzymali 7 lub więcej obrażeń w każdej z tych rund"
@@ -1057,7 +1057,7 @@ export default {
         ]
     },
     "SC2": {
-        "name": "Szelma",
+        "name": "Silent Knife",
         "masteries": [
             "Przez cały scenariusz atakuj tylko wrogów sąsiadujących z jednym z twoich sojuszników lub niesąsiadujących z żadnym z ich sojuszników i wykonaj co najmniej 10 ataków",
             "Zakończ 3 scenariusze z 12 lub więcej żetonami pieniędzy"
@@ -1266,9 +1266,9 @@ export default {
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “Możesz zyskać {DISARM.fh}, aby dodać {STUN.fh}”",
             "Dodaj dwie karty {+1_WHITE} “Dodaj +1 {ATTACK.fh}, jeśli sojusznik ma aktywną receptę”",
             "Dodaj jedną kartę {AGAIN} “{HEAL.fh}3, {RANGE.fh}1”",
-            "Dodaj +1 {HEAL.fh} do wszystkich zdolności leczenia na kartach zdolności „Apteczka”",
+            "Dodaj +1 {HEAL.fh} do wszystkich zdolności leczenia na kartach zdolności „Medical Kit”",
             "W każdej Fazie Miasta po ukończeniu scenariusza twoja lub jednego sojusznika darowizna na Sanktuarium Wielkiego Dębu jest darmowa",
-            "Na koniec każdego ze swoich odpoczynków, jeśli sojusznik ma aktywną receptę, zyskaj jedną kartę zdolności „Apteczka” i przesuń żeton na aktywnej recepcie jednego sojusznika o jedno pole do tyłu"
+            "Na koniec każdego ze swoich odpoczynków, jeśli sojusznik ma aktywną receptę, zyskaj jedną kartę zdolności „Medical Kit” i przesuń żeton na aktywnej recepcie jednego sojusznika o jedno pole do tyłu"
         ]
     },
     "SK2": {
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Duszowiąz",
+        "name": "Soultether",
         "masteries": [
             "Wykonaj 3 różne akcje przywołania przed swoim pierwszym odpoczynkiem i trzymaj te karty w swoim obszarze aktywnym przez cały scenariusz",
             "Wykonaj 6 różnych zdolności przywołania ze swoich kart zdolności w pierwszych rundach 6 scenariuszy"

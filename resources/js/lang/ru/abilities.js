@@ -2029,1450 +2029,1450 @@ export default {
     },
     "cs": {
         "alate-dispersion": {
-            "name": "Рассеивание крылатых"
+            "name": "alate dispersion"
         },
         "rockspine-termite": {
-            "name": "Скальный термит"
+            "name": "rockspine termite"
         },
         "anti-venom": {
-            "name": "Противоядие"
+            "name": "anti-venom"
         },
         "assimilate-adversaries": {
-            "name": "Ассимилировать противников"
+            "name": "assimilate adversaries"
         },
         "birthing-chambers": {
-            "name": "Родильные камеры"
+            "name": "birthing chambers"
         },
         "ghostshimmer-bee": {
-            "name": "Призрачная пчела"
+            "name": "ghostshimmer bee"
         },
         "burning-stingers": {
-            "name": "Горящие жала"
+            "name": "burning stingers"
         },
         "burrow-under": {
-            "name": "Зарыться"
+            "name": "burrow under"
         },
         "clad-in-spikes": {
-            "name": "Облачённый в шипы"
+            "name": "clad in spikes"
         },
         "coordinated-infestation": {
-            "name": "Согласованное заражение"
+            "name": "coordinated infestation"
         },
         "corrosive-spittle": {
-            "name": "Едкая слюна"
+            "name": "corrosive spittle"
         },
         "divide-and-conquer": {
-            "name": "Разделяй и властвуй"
+            "name": "divide and conquer"
         },
         "beta-aegis": {
-            "name": "Эгида беты"
+            "name": "beta aegis"
         },
         "encasing-webs": {
-            "name": "Опутывающая паутина"
+            "name": "encasing webs"
         },
         "erupting-mandibles": {
-            "name": "Извергающиеся жвалы"
+            "name": "erupting mandibles"
         },
         "ferocious-proliferation": {
-            "name": "Свирепое размножение"
+            "name": "ferocious proliferation"
         },
         "firespitter-ant": {
-            "name": "Огнеплюй-муравей"
+            "name": "firespitter ant"
         },
         "frantic-migration": {
-            "name": "Лихорадочная миграция"
+            "name": "frantic migration"
         },
         "horned-carapace": {
-            "name": "Рогатый панцирь"
+            "name": "horned carapace"
         },
         "lacerating-horde": {
-            "name": "Рвущая орда"
+            "name": "lacerating horde"
         },
         "maddening-chatter": {
-            "name": "Сводящая с ума болтовня"
+            "name": "maddening chatter"
         },
         "march-of-multitudes": {
-            "name": "Марш множеств"
+            "name": "march of multitudes"
         },
         "nurture-the-weak": {
-            "name": "Выхаживать слабых"
+            "name": "nurture the weak"
         },
         "overwhelming-swarm": {
-            "name": "Подавляющий рой"
+            "name": "overwhelming swarm"
         },
         "primal-pheromones": {
-            "name": "Первобытные феромоны"
+            "name": "primal pheromones"
         },
         "repel-intruders": {
-            "name": "Отразить незваных гостей"
+            "name": "repel intruders"
         },
         "retribution-of-the-hive": {
-            "name": "Возмездие улья"
+            "name": "retribution of the hive"
         },
         "seek-nourishment": {
-            "name": "Искать пищу"
+            "name": "seek nourishment"
         },
         "sentry-swarm": {
-            "name": "Дозорный рой"
+            "name": "sentry swarm"
         },
         "shelter-the-nest": {
-            "name": "Укрыть гнездо"
+            "name": "shelter the nest"
         },
         "stalk-the-prey": {
-            "name": "Выслеживать добычу"
+            "name": "stalk the prey"
         },
         "deathshroud-spider": {
-            "name": "Паук смертного савана"
+            "name": "deathshroud spider"
         },
         "steelsilk-weaver": {
-            "name": "Стальной шелкопряд"
+            "name": "steelsilk weaver"
         },
         "supreme-authority": {
-            "name": "Верховная власть"
+            "name": "supreme authority"
         },
         "violent-outlash": {
-            "name": "Яростный выпад"
+            "name": "violent outlash"
         },
         "bk-back": {
             "name": "bk-back"
         },
         "acquire-funding": {
-            "name": "Привлечь финансирование"
+            "name": "acquire funding"
         },
         "advanced-research": {
-            "name": "Передовые исследования"
+            "name": "advanced research"
         },
         "antibiotic-boost": {
-            "name": "Антибиотический заряд"
+            "name": "antibiotic boost"
         },
         "astronomical-strike": {
-            "name": "Астрономический удар"
+            "name": "astronomical strike"
         },
         "black-hole": {
-            "name": "Чёрная дыра"
+            "name": "black hole"
         },
         "befuddling-serum": {
-            "name": "Одурманивающая сыворотка"
+            "name": "befuddling serum"
         },
         "blinding-lightwaves": {
-            "name": "Ослепляющие световые волны"
+            "name": "blinding lightwaves"
         },
         "cell-regeneration": {
-            "name": "Клеточная регенерация"
+            "name": "cell regeneration"
         },
         "contagious-malady": {
-            "name": "Заразная болезнь"
+            "name": "contagious malady"
         },
         "corrosive-combustion": {
-            "name": "Коррозионное горение"
+            "name": "corrosive combustion"
         },
         "critical-hypothesis": {
-            "name": "Критическая гипотеза"
+            "name": "critical hypothesis"
         },
         "critical-observation": {
-            "name": "Критическое наблюдение"
+            "name": "critical observation"
         },
         "dynamic-balance": {
-            "name": "Динамическое равновесие"
+            "name": "dynamic balance"
         },
         "electromagnetism": {
-            "name": "Электромагнетизм"
+            "name": "electromagnetism"
         },
         "metal-detector": {
-            "name": "Металлоискатель"
+            "name": "metal detector"
         },
         "elevated-chemicals": {
-            "name": "Повышенная доза химикатов"
+            "name": "elevated chemicals"
         },
         "elevated-intake": {
-            "name": "Повышенное поглощение"
+            "name": "elevated intake"
         },
         "elixir-of-life": {
-            "name": "Эликсир жизни"
+            "name": "elixir of life"
         },
         "enviromental-survey": {
-            "name": "Исследование окружающей среды"
+            "name": "enviromental survey"
         },
         "exothermic-cocktail": {
-            "name": "Экзотермический коктейль"
+            "name": "exothermic cocktail"
         },
         "frozen-explosion": {
-            "name": "Замороженный взрыв"
+            "name": "frozen explosion"
         },
         "leftover-tonic": {
-            "name": "Остатки тоника"
+            "name": "leftover tonic"
         },
         "magnetic-field": {
-            "name": "Магнитное поле"
+            "name": "magnetic field"
         },
         "molecular-hydroblast": {
-            "name": "Молекулярный гидровзрыв"
+            "name": "molecular hydroblast"
         },
         "nourishing-formula": {
-            "name": "Питательная формула"
+            "name": "nourishing formula"
         },
         "nutrient-overdose": {
-            "name": "Передозировка питательных веществ"
+            "name": "nutrient overdose"
         },
         "preliminary-research": {
-            "name": "Предварительное исследование"
+            "name": "preliminary research"
         },
         "strength-elixir": {
-            "name": "Эликсир силы"
+            "name": "strength elixir"
         },
         "transformation-libation": {
-            "name": "Напиток превращения"
+            "name": "transformation libation"
         },
         "ultraviolet-rays": {
-            "name": "Ультрафиолетовые лучи"
+            "name": "ultraviolet rays"
         },
         "versatile-concoction": {
-            "name": "Универсальная смесь"
+            "name": "versatile concoction"
         },
         "weather-forecast": {
-            "name": "Прогноз погоды"
+            "name": "weather forecast"
         },
         "bm-back": {
             "name": "bm-back"
         },
         "airborne-skyrocket": {
-            "name": "Воздушная ракета"
+            "name": "airborne skyrocket"
         },
         "ballistic-barrage": {
-            "name": "Баллистический шквал"
+            "name": "ballistic barrage"
         },
         "barbed-armor": {
-            "name": "Колючая броня"
+            "name": "barbed armor"
         },
         "chain-grapnel": {
-            "name": "Цепной абордажный крюк"
+            "name": "chain grapnel"
         },
         "consistent-firing": {
-            "name": "Постоянная стрельба"
+            "name": "consistent firing"
         },
         "defense-mechanism": {
-            "name": "Защитный механизм"
+            "name": "defense mechanism"
         },
         "distant-retribution": {
-            "name": "Дальнее возмездие"
+            "name": "distant retribution"
         },
         "double-cannons": {
-            "name": "Двойные пушки"
+            "name": "double cannons"
         },
         "exploding-cannonball": {
-            "name": "Взрывное ядро"
+            "name": "exploding cannonball"
         },
         "forceful-bolt": {
-            "name": "Мощный болт"
+            "name": "forceful bolt"
         },
         "grappling-hook": {
-            "name": "Абордажный крюк"
+            "name": "grappling hook"
         },
         "hurried-repairs": {
-            "name": "Срочный ремонт"
+            "name": "hurried repairs"
         },
         "ignited-launch": {
-            "name": "Огненный запуск"
+            "name": "ignited launch"
         },
         "man-the-cannon": {
-            "name": "К пушке"
+            "name": "man the cannon"
         },
         "meteoric-blast": {
-            "name": "Метеоритный взрыв"
+            "name": "meteoric blast"
         },
         "pillars-of-smoke": {
-            "name": "Столбы дыма"
+            "name": "pillars of smoke"
         },
         "powerful-buckshot": {
-            "name": "Мощная картечь"
+            "name": "powerful buckshot"
         },
         "prolific-perforation": {
-            "name": "Обильная перфорация"
+            "name": "prolific perforation"
         },
         "quadruple-cannons": {
-            "name": "Счетверённые пушки"
+            "name": "quadruple cannons"
         },
         "rapid-fire": {
-            "name": "Беглый огонь"
+            "name": "rapid fire"
         },
         "rolling-into-position": {
-            "name": "Занять позицию"
+            "name": "rolling into position"
         },
         "sharpened-focus": {
-            "name": "Обострённая концентрация"
+            "name": "sharpened focus"
         },
         "stationary-enhancements": {
-            "name": "Стационарные улучшения"
+            "name": "stationary enhancements"
         },
         "supercharged-gunpowder": {
-            "name": "Усиленный порох"
+            "name": "supercharged gunpowder"
         },
         "superior-upgrade": {
-            "name": "Превосходное улучшение"
+            "name": "superior upgrade"
         },
         "twin-blast": {
-            "name": "Двойной взрыв"
+            "name": "twin blast"
         },
         "unbreakable-position": {
-            "name": "Несокрушимая позиция"
+            "name": "unbreakable position"
         },
         "unexpected-bombshell": {
-            "name": "Неожиданная бомба"
+            "name": "unexpected bombshell"
         },
         "cg-back": {
             "name": "cg-back"
         },
         "agonizing-clamp": {
-            "name": "Мучительный зажим"
+            "name": "agonizing clamp"
         },
         "champion-of-chains": {
-            "name": "Чемпион цепей"
+            "name": "champion of chains"
         },
         "chokehold": {
-            "name": "Удушающий захват"
+            "name": "chokehold"
         },
         "clamping-snare": {
-            "name": "Зажимающая ловушка"
+            "name": "clamping snare"
         },
         "dizzying-release": {
-            "name": "Головокружительное освобождение"
+            "name": "dizzying release"
         },
         "double-ko": {
-            "name": "Двойной нокаут"
+            "name": "double k.o."
         },
         "drag-through-dirt": {
-            "name": "Протащить по грязи"
+            "name": "drag through dirt"
         },
         "follow-the-chains": {
-            "name": "Следуй за цепями"
+            "name": "follow the chains"
         },
         "ganging-up": {
-            "name": "Травля толпой"
+            "name": "ganging up"
         },
         "impending-power": {
-            "name": "Грядущая сила"
+            "name": "impending power"
         },
         "iron-thrust": {
-            "name": "Железный выпад"
+            "name": "iron thrust"
         },
         "latch-and-tow": {
-            "name": "Зацепить и буксировать"
+            "name": "latch and tow"
         },
         "locking-links": {
-            "name": "Запирающие звенья"
+            "name": "locking links"
         },
         "merciless-beatdown": {
-            "name": "Беспощадное избиение"
+            "name": "merciless beatdown"
         },
         "meteor-hammer": {
-            "name": "Метеоритный молот"
+            "name": "meteor hammer"
         },
         "pivot-and-smash": {
-            "name": "Разворот и удар"
+            "name": "pivot and smash"
         },
         "roundhouse-swing": {
-            "name": "Круговой замах"
+            "name": "roundhouse swing"
         },
         "rusty-spikes": {
-            "name": "Ржавые шипы"
+            "name": "rusty spikes"
         },
         "slamming-shove": {
-            "name": "Сокрушающий толчок"
+            "name": "slamming shove"
         },
         "spiked-knuckles": {
-            "name": "Шипастые кастеты"
+            "name": "spiked knuckles"
         },
         "suffering-steel": {
-            "name": "Страдающая сталь"
+            "name": "suffering steel"
         },
         "sweeping-collision": {
-            "name": "Сметающее столкновение"
+            "name": "sweeping collision"
         },
         "syndicated-assault": {
-            "name": "Организованный штурм"
+            "name": "syndicated assault"
         },
         "tighten-the-chains": {
-            "name": "Затянуть цепи"
+            "name": "tighten the chains"
         },
         "titanic-chainwhip": {
-            "name": "Титаническая цепная плеть"
+            "name": "titanic chainwhip"
         },
         "unending-torment": {
-            "name": "Бесконечная пытка"
+            "name": "unending torment"
         },
         "untouchable-keeper": {
-            "name": "Неприкосновенный хранитель"
+            "name": "untouchable keeper"
         },
         "vigorous-sway": {
-            "name": "Энергичное раскачивание"
+            "name": "vigorous sway"
         },
         "wrapped-in-metal": {
-            "name": "Закованный в металл"
+            "name": "wrapped in metal"
         },
         "ct-back": {
             "name": "ct-back"
         },
         "agile-predator": {
-            "name": "Проворный хищник"
+            "name": "agile predator"
         },
         "black-panther": {
-            "name": "Чёрная пантера"
+            "name": "black panther"
         },
         "catastrophic-cattle": {
-            "name": "Катастрофическое стадо"
+            "name": "catastrophic cattle"
         },
         "fighting-bull": {
-            "name": "Боевой бык"
+            "name": "fighting bull"
         },
         "ceremonial-dance": {
-            "name": "Церемониальный танец"
+            "name": "ceremonial dance"
         },
         "chest-thumper": {
-            "name": "Бьющий в грудь"
+            "name": "chest thumper"
         },
         "lowland-gorilla": {
-            "name": "Равнинная горилла"
+            "name": "lowland gorilla"
         },
         "hunters-mark": {
-            "name": "Метка охотника"
+            "name": "hunter's mark"
         },
         "impervious-armor": {
-            "name": "Непробиваемая броня"
+            "name": "impervious armor"
         },
         "battle-rhinoceros": {
-            "name": "Боевой носорог"
+            "name": "battle rhinoceros"
         },
         "majestic-mass": {
-            "name": "Величественная масса"
+            "name": "majestic mass"
         },
         "war-elephant": {
-            "name": "Боевой слон"
+            "name": "war elephant"
         },
         "master-the-reins": {
-            "name": "Овладеть поводьями"
+            "name": "master the reins"
         },
         "medicine-shield": {
-            "name": "Щит знахаря"
+            "name": "medicine shield"
         },
         "mounded-sight": {
-            "name": "Возвышенный обзор"
+            "name": "mounded sight"
         },
         "cavalry-camel": {
-            "name": "Кавалерийский верблюд"
+            "name": "cavalry camel"
         },
         "one-with-nature": {
-            "name": "Единство с природой"
+            "name": "one with nature"
         },
         "outrun-the-enemy": {
-            "name": "Обогнать врага"
+            "name": "outrun the enemy"
         },
         "speedy-ostrich": {
-            "name": "Быстрый страус"
+            "name": "speedy ostrich"
         },
         "piercing-darts": {
-            "name": "Пронзающие дротики"
+            "name": "piercing darts"
         },
         "pipe-tomahawk": {
-            "name": "Трубка-томагавк"
+            "name": "pipe tomahawk"
         },
         "positive-reinforcement": {
-            "name": "Положительное подкрепление"
+            "name": "positive reinforcement"
         },
         "prepared-rations": {
-            "name": "Заготовленные пайки"
+            "name": "prepared rations"
         },
         "pack-mule": {
-            "name": "Вьючный мул"
+            "name": "pack mule"
         },
         "regal-beast": {
-            "name": "Царственный зверь"
+            "name": "regal beast"
         },
         "sabretooth-tiger": {
-            "name": "Саблезубый тигр"
+            "name": "sabretooth tiger"
         },
         "resurrection": {
-            "name": "Воскрешение"
+            "name": "resurrection"
         },
         "skinning-knife": {
-            "name": "Нож для снятия шкур"
+            "name": "skinning knife"
         },
         "slow-and-steady": {
-            "name": "Медленно, но верно"
+            "name": "slow and steady"
         },
         "giant-tortoise": {
-            "name": "Гигантская черепаха"
+            "name": "giant tortoise"
         },
         "sniffing-hound": {
-            "name": "Ищейка-нюхач"
+            "name": "sniffing hound"
         },
         "scout-dog": {
-            "name": "Разведывательная собака"
+            "name": "scout dog"
         },
         "soul-whisperer": {
-            "name": "Шепчущий с душами"
+            "name": "soul whisperer"
         },
         "spiked-muzzle": {
-            "name": "Шипастый намордник"
+            "name": "spiked muzzle"
         },
         "strapping-bullwhip": {
-            "name": "Крепкий кнут"
+            "name": "strapping bullwhip"
         },
         "sucker-punch": {
-            "name": "Подлый удар"
+            "name": "sucker punch"
         },
         "take-the-reins": {
-            "name": "Взять поводья"
+            "name": "take the reins"
         },
         "tribal-blessing": {
-            "name": "Благословение племени"
+            "name": "tribal blessing"
         },
         "venomous-mayhem": {
-            "name": "Ядовитый хаос"
+            "name": "venomous mayhem"
         },
         "cottonmouth-snake": {
-            "name": "Водяной щитомордник"
+            "name": "cottonmouth snake"
         },
         "war-paint": {
-            "name": "Боевая раскраска"
+            "name": "war paint"
         },
         "fk-back": {
             "name": "fk-back"
         },
         "backdraft": {
-            "name": "Обратная тяга"
+            "name": "backdraft"
         },
         "cauterize-wound": {
-            "name": "Прижечь рану"
+            "name": "cauterize wound"
         },
         "collective-combat": {
-            "name": "Совместный бой"
+            "name": "collective combat"
         },
         "combat-medic": {
-            "name": "Боевой медик"
+            "name": "combat medic"
         },
         "combined-effort": {
-            "name": "Совместное усилие"
+            "name": "combined effort"
         },
         "controlled-aggression": {
-            "name": "Контролируемая агрессия"
+            "name": "controlled aggression"
         },
         "coordinated-attack": {
-            "name": "Скоординированная атака"
+            "name": "coordinated attack"
         },
         "crew-integrity": {
-            "name": "Сплочённость команды"
+            "name": "crew integrity"
         },
         "fiery-charisma": {
-            "name": "Огненная харизма"
+            "name": "fiery charisma"
         },
         "fire-whirl": {
-            "name": "Огненный вихрь"
+            "name": "fire whirl"
         },
         "flaming-axe": {
-            "name": "Пылающий топор"
+            "name": "flaming axe"
         },
         "flashover": {
-            "name": "Вспышка"
+            "name": "flashover"
         },
         "reigniting-drakefiend": {
-            "name": "Возрождающийся дракобес"
+            "name": "reigniting drakefiend"
         },
         "forcible-entry": {
-            "name": "Силовое проникновение"
+            "name": "forcible entry"
         },
         "heavy-irons": {
-            "name": "Тяжёлые орудия"
+            "name": "heavy irons"
         },
         "hook-and-ladder": {
-            "name": "Крюк и лестница"
+            "name": "hook and ladder"
         },
         "incident-commander": {
-            "name": "Командир на месте происшествия"
+            "name": "incident commander"
         },
         "jack-of-all-trades": {
-            "name": "Мастер на все руки"
+            "name": "jack of all trades"
         },
         "kindled-tonic": {
-            "name": "Воспламеняющий тоник"
+            "name": "kindled tonic"
         },
         "ladder-assault": {
-            "name": "Штурм по лестнице"
+            "name": "ladder assault"
         },
         "light-irons": {
-            "name": "Лёгкие орудия"
+            "name": "light irons"
         },
         "loyal-companion": {
-            "name": "Верный спутник"
+            "name": "loyal companion"
         },
         "spotted-hound": {
-            "name": "Пятнистая гончая"
+            "name": "spotted hound"
         },
         "mutual-aid": {
-            "name": "Взаимопомощь"
+            "name": "mutual aid"
         },
         "playing-with-fire": {
-            "name": "Игра с огнём"
+            "name": "playing with fire"
         },
         "practical-tools": {
-            "name": "Практичные инструменты"
+            "name": "practical tools"
         },
         "rapid-response": {
-            "name": "Быстрое реагирование"
+            "name": "rapid response"
         },
         "rolling-flames": {
-            "name": "Катящееся пламя"
+            "name": "rolling flames"
         },
         "search-and-rescue": {
-            "name": "Поиск и спасение"
+            "name": "search and rescue"
         },
         "searing-blaze": {
-            "name": "Палящее пламя"
+            "name": "searing blaze"
         },
         "trauma-care": {
-            "name": "Помощь при травмах"
+            "name": "trauma care"
         },
         "ho-back": {
             "name": "ho-back"
         },
         "borrowed-vitality": {
-            "name": "Заимствованная жизненная сила"
+            "name": "borrowed vitality"
         },
         "channel-the-void": {
-            "name": "Направить пустоту"
+            "name": "channel the void"
         },
         "empowered-assault": {
-            "name": "Усиленный штурм"
+            "name": "empowered assault"
         },
         "enduring-darkness": {
-            "name": "Стойкая тьма"
+            "name": "enduring darkness"
         },
         "enervating-strike": {
-            "name": "Изнуряющий удар"
+            "name": "enervating strike"
         },
         "entropy-unleashed": {
-            "name": "Освобождённая энтропия"
+            "name": "entropy unleashed"
         },
         "find-an-opening": {
-            "name": "Найти лазейку"
+            "name": "find an opening"
         },
         "gateway-to-the-abyss": {
-            "name": "Врата в бездну"
+            "name": "gateway to the abyss"
         },
         "greed-before-need": {
-            "name": "Жадность прежде нужды"
+            "name": "greed before need"
         },
         "hollow-embrace": {
-            "name": "Пустые объятия"
+            "name": "hollow embrace"
         },
         "implosion": {
-            "name": "Имплозия"
+            "name": "implosion"
         },
         "majestic-malevolence": {
-            "name": "Величественная злоба"
+            "name": "majestic malevolence"
         },
         "nether-binding": {
-            "name": "Оковы бездны"
+            "name": "nether binding"
         },
         "nether-blades": {
-            "name": "Клинки бездны"
+            "name": "nether blades"
         },
         "no-escape": {
-            "name": "Нет спасения"
+            "name": "no escape"
         },
         "obliterate": {
-            "name": "Стереть с лица земли"
+            "name": "obliterate"
         },
         "one-with-nothingness": {
-            "name": "Единство с ничем"
+            "name": "one with nothingness"
         },
         "prescient-voidmastery": {
-            "name": "Предвидящее мастерство пустоты"
+            "name": "prescient voidmastery"
         },
         "reaching-darkness": {
-            "name": "Тянущаяся тьма"
+            "name": "reaching darkness"
         },
         "ruinous-barrage": {
-            "name": "Губительный шквал"
+            "name": "ruinous barrage"
         },
         "sever-reality": {
-            "name": "Разорвать реальность"
+            "name": "sever reality"
         },
         "shrouded-grasp": {
-            "name": "Окутанная хватка"
+            "name": "shrouded grasp"
         },
         "stalking-quarry": {
-            "name": "Выслеживание добычи"
+            "name": "stalking quarry"
         },
         "tendrils-of-night": {
-            "name": "Щупальца ночи"
+            "name": "tendrils of night"
         },
         "touch-of-the-void": {
-            "name": "Касание пустоты"
+            "name": "touch of the void"
         },
         "untethered-advance": {
-            "name": "Свободное наступление"
+            "name": "untethered advance"
         },
         "void-enhanced-armory": {
-            "name": "Арсенал, усиленный пустотой"
+            "name": "void-enhanced armory"
         },
         "void-step": {
-            "name": "Шаг пустоты"
+            "name": "void step"
         },
         "withering-deluge": {
-            "name": "Иссушающий потоп"
+            "name": "withering deluge"
         },
         "hp-back": {
             "name": "hp-back"
         },
         "aspiration": {
-            "name": "Стремление"
+            "name": "aspiration"
         },
         "beacon-of-hope": {
-            "name": "Маяк надежды"
+            "name": "beacon of hope"
         },
         "bringer-of-miracles": {
-            "name": "Податель чудес"
+            "name": "bringer of miracles"
         },
         "chains-of-light": {
-            "name": "Цепи света"
+            "name": "chains of light"
         },
         "devotion": {
-            "name": "Преданность"
+            "name": "devotion"
         },
         "devout-assistance": {
-            "name": "Благочестивая помощь"
+            "name": "devout assistance"
         },
         "divine-allegiance": {
-            "name": "Божественная верность"
+            "name": "divine allegiance"
         },
         "encouraged-conviction": {
-            "name": "Воодушевлённое убеждение"
+            "name": "encouraged conviction"
         },
         "expansive-permanence": {
-            "name": "Всеобъемлющая постоянность"
+            "name": "expansive permanence"
         },
         "faith-calling": {
-            "name": "Зов веры"
+            "name": "faith calling"
         },
         "grace": {
-            "name": "Благодать"
+            "name": "grace"
         },
         "harsh-rebuke": {
-            "name": "Суровый упрёк"
+            "name": "harsh rebuke"
         },
         "impetuous-inquisition": {
-            "name": "Порывистая инквизиция"
+            "name": "impetuous inquisition"
         },
         "inner-reflection": {
-            "name": "Внутреннее размышление"
+            "name": "inner reflection"
         },
         "inspired-remedy": {
-            "name": "Вдохновлённое исцеление"
+            "name": "inspired remedy"
         },
         "lamentation": {
-            "name": "Плач"
+            "name": "lamentation"
         },
         "meditation": {
-            "name": "Медитация"
+            "name": "meditation"
         },
         "oaks-embrace": {
-            "name": "Объятия дуба"
+            "name": "oaks embrace"
         },
         "ordination": {
-            "name": "Рукоположение"
+            "name": "ordination"
         },
         "penitence": {
-            "name": "Покаяние"
+            "name": "penitence"
         },
         "prosperous-concord": {
-            "name": "Процветающее согласие"
+            "name": "prosperous concord"
         },
         "restoring-faith": {
-            "name": "Восстанавливающая вера"
+            "name": "restoring faith"
         },
         "revered-protector": {
-            "name": "Почитаемый защитник"
+            "name": "revered protector"
         },
         "righteous-atonement": {
-            "name": "Праведное искупление"
+            "name": "righteous atonement"
         },
         "rooted-subjugation": {
-            "name": "Укоренённое подчинение"
+            "name": "rooted subjugation"
         },
         "sacred-death": {
-            "name": "Священная смерть"
+            "name": "sacred death"
         },
         "salvation": {
-            "name": "Спасение"
+            "name": "salvation"
         },
         "soulful-salvation": {
-            "name": "Душевное спасение"
+            "name": "soulful salvation"
         },
         "soul-strike": {
-            "name": "Удар души"
+            "name": "soul strike"
         },
         "spiritual-gains": {
-            "name": "Духовные приобретения"
+            "name": "spiritual gains"
         },
         "standing-ground": {
-            "name": "Стоять на своём"
+            "name": "standing ground"
         },
         "symphony-of-oppression": {
-            "name": "Симфония угнетения"
+            "name": "symphony of oppression"
         },
         "unruly-repentance": {
-            "name": "Непокорное раскаяние"
+            "name": "unruly repentance"
         },
         "unstoppable-force": {
-            "name": "Неудержимая сила"
+            "name": "unstoppable force"
         },
         "vengeful-veneration": {
-            "name": "Мстительное почитание"
+            "name": "vengeful veneration"
         },
         "vital-bond": {
-            "name": "Жизненная связь"
+            "name": "vital bond"
         },
         "vocal-sermon": {
-            "name": "Громогласная проповедь"
+            "name": "vocal sermon"
         },
         "weakened-will": {
-            "name": "Ослабленная воля"
+            "name": "weakened will"
         },
         "lu-back": {
             "name": "lu-back"
         },
         "blackened-rage": {
-            "name": "Почерневшая ярость"
+            "name": "blackened rage"
         },
         "blazing-pincers": {
-            "name": "Пылающие клешни"
+            "name": "blazing pincers"
         },
         "burning-sparks": {
-            "name": "Горящие искры"
+            "name": "burning sparks"
         },
         "chilling-wave": {
-            "name": "Леденящая волна"
+            "name": "chilling wave"
         },
         "colorful-wavelengths": {
-            "name": "Разноцветные волны"
+            "name": "colorful wavelengths"
         },
         "darkened-overcast": {
-            "name": "Потемневшая облачность"
+            "name": "darkened overcast"
         },
         "dominating-illumination": {
-            "name": "Доминирующее освещение"
+            "name": "dominating illumination"
         },
         "empowering-rays": {
-            "name": "Усиливающие лучи"
+            "name": "empowering rays"
         },
         "encompassing-aura": {
-            "name": "Всеобъемлющая аура"
+            "name": "encompassing aura"
         },
         "flickering-lights": {
-            "name": "Мерцающие огни"
+            "name": "flickering lights"
         },
         "floodlight": {
-            "name": "Прожектор"
+            "name": "floodlight"
         },
         "frosty-glimmer": {
-            "name": "Морозный отблеск"
+            "name": "frosty glimmer"
         },
         "gamma-energy": {
-            "name": "Гамма-энергия"
+            "name": "gamma energy"
         },
         "heat-waves": {
-            "name": "Волны жара"
+            "name": "heat waves"
         },
         "imposing-brilliance": {
-            "name": "Внушительное сияние"
+            "name": "imposing brilliance"
         },
         "light-the-way": {
-            "name": "Осветить путь"
+            "name": "light the way"
         },
         "gleaming-squid": {
-            "name": "Сверкающий кальмар"
+            "name": "gleaming squid"
         },
         "luminescence": {
-            "name": "Свечение"
+            "name": "luminescence"
         },
         "moonbeam": {
-            "name": "Лунный луч"
+            "name": "moonbeam"
         },
         "optical-refraction": {
-            "name": "Оптическое преломление"
+            "name": "optical refraction"
         },
         "photonic-defense": {
-            "name": "Фотонная защита"
+            "name": "photonic defense"
         },
         "radiant-glare": {
-            "name": "Сияющий блик"
+            "name": "radiant glare"
         },
         "shadow-claws": {
-            "name": "Теневые когти"
+            "name": "shadow claws"
         },
         "shimmering-scuttle": {
-            "name": "Мерцающее семенение"
+            "name": "shimmering scuttle"
         },
         "shining-diversion": {
-            "name": "Отвлекающее сияние"
+            "name": "shining diversion"
         },
         "soft-glow": {
-            "name": "Мягкое свечение"
+            "name": "soft glow"
         },
         "solid-light": {
-            "name": "Твёрдый свет"
+            "name": "solid light"
         },
         "sparkling-glow": {
-            "name": "Искрящееся сияние"
+            "name": "sparkling glow"
         },
         "torrid-radiation": {
-            "name": "Знойное излучение"
+            "name": "torrid radiation"
         },
         "trickling-sting": {
-            "name": "Сочащееся жало"
+            "name": "trickling sting"
         },
         "violent-flash": {
-            "name": "Яростная вспышка"
+            "name": "violent flash"
         },
         "mf-back": {
             "name": "mf-back"
         },
         "airborne-spores": {
-            "name": "Воздушные споры"
+            "name": "airborne spores"
         },
         "anticoagulant": {
-            "name": "Антикоагулянт"
+            "name": "anticoagulant"
         },
         "blood-thinner": {
-            "name": "Кроворазжижитель"
+            "name": "blood thinner"
         },
         "bogstep": {
-            "name": "Шаг по болоту"
+            "name": "bogstep"
         },
         "complex-toxicology": {
-            "name": "Сложная токсикология"
+            "name": "complex toxicology"
         },
         "compound-toxin": {
-            "name": "Составной токсин"
+            "name": "compound toxin"
         },
         "copperneck-berries": {
-            "name": "Ягоды медной шеи"
+            "name": "copperneck berries"
         },
         "death-sentence": {
-            "name": "Смертный приговор"
+            "name": "death sentence"
         },
         "fireroot-sap": {
-            "name": "Сок огнекорня"
+            "name": "fireroot sap"
         },
         "ground-solvent": {
-            "name": "Почвенный растворитель"
+            "name": "ground solvent"
         },
         "hide-and-seek": {
-            "name": "Прятки"
+            "name": "hide and seek"
         },
         "lashing-vines": {
-            "name": "Хлещущие лозы"
+            "name": "lashing vines"
         },
         "flailing-ivies": {
-            "name": "Размахивающий плющ"
+            "name": "flailing ivies"
         },
         "lingering-swamp-moss": {
-            "name": "Задержавшийся болотный мох"
+            "name": "lingering swamp moss"
         },
         "mudslide": {
-            "name": "Оползень"
+            "name": "mudslide"
         },
         "neurotoxin": {
-            "name": "Нейротоксин"
+            "name": "neurotoxin"
         },
         "paralytic-agent": {
-            "name": "Парализующий агент"
+            "name": "paralytic agent"
         },
         "personal-poison": {
-            "name": "Личный яд"
+            "name": "personal poison"
         },
         "potent-mixture": {
-            "name": "Сильная смесь"
+            "name": "potent mixture"
         },
         "radiant-forest-fungi": {
-            "name": "Сияющие лесные грибы"
+            "name": "radiant forest fungi"
         },
         "serpents-kiss": {
-            "name": "Поцелуй змеи"
+            "name": "serpent's kiss"
         },
         "sinkhole": {
-            "name": "Провал"
+            "name": "sinkhole"
         },
         "sludge-bomb": {
-            "name": "Грязевая бомба"
+            "name": "sludge bomb"
         },
         "still-river-algae": {
-            "name": "Водоросли тихой реки"
+            "name": "still river algae"
         },
         "tainted-waters": {
-            "name": "Отравленные воды"
+            "name": "tainted waters"
         },
         "throwing-daggers": {
-            "name": "Метательные кинжалы"
+            "name": "throwing daggers"
         },
         "twist-the-blade": {
-            "name": "Повернуть клинок"
+            "name": "twist the blade"
         },
         "volatile-tonic": {
-            "name": "Нестабильный тоник"
+            "name": "volatile tonic"
         },
         "whitefire-balm": {
-            "name": "Бальзам белого огня"
+            "name": "whitefire balm"
         },
         "wild-stings": {
-            "name": "Дикие жала"
+            "name": "wild stings"
         },
         "crypt-nettle": {
-            "name": "Крапива склепа"
+            "name": "crypt nettle"
         },
         "qa-back": {
             "name": "qa-back"
         },
         "annihilating-contraption": {
-            "name": "Аннигилирующее устройство"
+            "name": "annihilating contraption"
         },
         "clockwork-ravager": {
-            "name": "Заводной разоритель"
+            "name": "clockwork ravager"
         },
         "double-barrel-railcaster": {
-            "name": "Двухствольный рельсомёт"
+            "name": "double-barrel railcaster"
         },
         "elemental-condenser": {
-            "name": "Конденсатор стихий"
+            "name": "elemental condenser"
         },
         "energy-transmission": {
-            "name": "Передача энергии"
+            "name": "energy transmission"
         },
         "fragmentation-grenade": {
-            "name": "Осколочная граната"
+            "name": "fragmentation grenade"
         },
         "galvanic-coil": {
-            "name": "Гальваническая катушка"
+            "name": "galvanic coil"
         },
         "gravity-inverter-module": {
-            "name": "Модуль инверсии гравитации"
+            "name": "gravity inverter module"
         },
         "improvised-exosuit": {
-            "name": "Импровизированный экзокостюм"
+            "name": "improvised exosuit"
         },
         "hollow-carapace": {
-            "name": "Пустой панцирь"
+            "name": "hollow carapace"
         },
         "improvised-mortar": {
-            "name": "Импровизированный миномёт"
+            "name": "improvised mortar"
         },
         "clockwork-bombard": {
-            "name": "Заводная бомбарда"
+            "name": "clockwork bombard"
         },
         "instant-relocation-matrix": {
-            "name": "Матрица мгновенного перемещения"
+            "name": "instant relocation matrix"
         },
         "jury-rigged-machine": {
-            "name": "Собранная на коленке машина"
+            "name": "jury-rigged machine"
         },
         "clockwork-soldier": {
-            "name": "Заводной солдат"
+            "name": "clockwork soldier"
         },
         "launch-skywards": {
-            "name": "Запуск в небеса"
+            "name": "launch skywards"
         },
         "clockwork-drone": {
-            "name": "Заводной дрон"
+            "name": "clockwork drone"
         },
         "march-of-machines": {
-            "name": "Марш машин"
+            "name": "march of machines"
         },
         "oscillating-projector": {
-            "name": "Колеблющийся проектор"
+            "name": "oscillating projector"
         },
         "particle-ray-beam": {
-            "name": "Лучевой пучок частиц"
+            "name": "particle ray beam"
         },
         "perfected-exosuit": {
-            "name": "Совершенный экзокостюм"
+            "name": "perfected exosuit"
         },
         "phase-field-emitter": {
-            "name": "Излучатель фазового поля"
+            "name": "phase field emitter"
         },
         "power-modulation": {
-            "name": "Модуляция мощности"
+            "name": "power modulation"
         },
         "ransack-clutter": {
-            "name": "Разграбить хлам"
+            "name": "ransack clutter"
         },
         "recycle-parts": {
-            "name": "Переработать детали"
+            "name": "recycle parts"
         },
         "reinforce-armor": {
-            "name": "Укрепить броню"
+            "name": "reinforce armor"
         },
         "remote-control": {
-            "name": "Дистанционное управление"
+            "name": "remote control"
         },
         "repurpose-leftovers": {
-            "name": "Переосмыслить остатки"
+            "name": "repurpose leftovers"
         },
         "retrofit-weapons": {
-            "name": "Модернизация оружия"
+            "name": "retrofit weapons"
         },
         "salvage-grappler": {
-            "name": "Спасательный крюк"
+            "name": "salvage grappler"
         },
         "seeker-missiles": {
-            "name": "Самонаводящиеся ракеты"
+            "name": "seeker missiles"
         },
         "clockwork-rocket": {
-            "name": "Заводная ракета"
+            "name": "clockwork rocket"
         },
         "trajectory-diverter": {
-            "name": "Отклонитель траектории"
+            "name": "trajectory diverter"
         },
         "trudging-bulwark": {
-            "name": "Бредущий оплот"
+            "name": "trudging bulwark"
         },
         "clockwork-guardian": {
-            "name": "Заводной страж"
+            "name": "clockwork guardian"
         },
         "rm-back": {
             "name": "rm-back"
         },
         "belly-of-the-beast": {
-            "name": "Чрево зверя"
+            "name": "belly of the beast"
         },
         "berserk-barrage": {
-            "name": "Берсерковый шквал"
+            "name": "berserk barrage"
         },
         "burning-bile": {
-            "name": "Жгучая желчь"
+            "name": "burning bile"
         },
         "caustic-claws": {
-            "name": "Едкие когти"
+            "name": "caustic claws"
         },
         "cornered-animal": {
-            "name": "Загнанный зверь"
+            "name": "cornered animal"
         },
         "corrosive-spew": {
-            "name": "Едкая рвота"
+            "name": "corrosive spew"
         },
         "devour-whole": {
-            "name": "Проглотить целиком"
+            "name": "devour whole"
         },
         "easy-prey": {
-            "name": "Лёгкая добыча"
+            "name": "easy prey"
         },
         "fatal-frenzy": {
-            "name": "Смертельное безумие"
+            "name": "fatal frenzy"
         },
         "feast-of-flesh": {
-            "name": "Пир плоти"
+            "name": "feast of flesh"
         },
         "feral-lunge": {
-            "name": "Дикий бросок"
+            "name": "feral lunge"
         },
         "ferocious-fling": {
-            "name": "Свирепый швырок"
+            "name": "ferocious fling"
         },
         "fight-or-flight": {
-            "name": "Бей или беги"
+            "name": "fight or flight"
         },
         "heartripper": {
-            "name": "Сердцерез"
+            "name": "heartripper"
         },
         "indomitable-craving": {
-            "name": "Неукротимая жажда"
+            "name": "indomitable craving"
         },
         "lie-in-wait": {
-            "name": "Затаиться"
+            "name": "lie in wait"
         },
         "nourishing-meal": {
-            "name": "Питательная трапеза"
+            "name": "nourishing meal"
         },
         "pouncing-predator": {
-            "name": "Прыгающий хищник"
+            "name": "pouncing predator"
         },
         "ravenous-roar": {
-            "name": "Голодный рёв"
+            "name": "ravenous roar"
         },
         "reckless-attack": {
-            "name": "Безрассудная атака"
+            "name": "reckless attack"
         },
         "rend-and-mutilate": {
-            "name": "Рвать и калечить"
+            "name": "rend and mutilate"
         },
         "rip-and-tear": {
-            "name": "Рвать и терзать"
+            "name": "rip and tear"
         },
         "savage-stalker": {
-            "name": "Дикий выслеживатель"
+            "name": "savage stalker"
         },
         "scrape-and-scrounge": {
-            "name": "Скрести и собирай"
+            "name": "scrape and scrounge"
         },
         "seize": {
-            "name": "Схватить"
+            "name": "seize"
         },
         "slake-thirst": {
-            "name": "Утолить жажду"
+            "name": "slake thirst"
         },
         "strip-the-flesh": {
-            "name": "Содрать плоть"
+            "name": "strip the flesh"
         },
         "survival-instincts": {
-            "name": "Инстинкты выживания"
+            "name": "survival instincts"
         },
         "terrifying-howl": {
-            "name": "Ужасающий вой"
+            "name": "terrifying howl"
         },
         "voracious-hunter": {
-            "name": "Ненасытный охотник"
+            "name": "voracious hunter"
         },
         "sp-back": {
             "name": "sp-back"
         },
         "burning-pit": {
-            "name": "Пылающая яма"
+            "name": "burning pit"
         },
         "blazing-fire": {
-            "name": "Яростное пламя"
+            "name": "blazing fire"
         },
         "chilling-slice": {
-            "name": "Леденящий разрез"
+            "name": "chilling slice"
         },
         "circle-of-lifeless": {
-            "name": "Круг безжизненных"
+            "name": "circle of lifeless"
         },
         "confidence-ritual": {
-            "name": "Ритуал уверенности"
+            "name": "confidence ritual"
         },
         "death-is-not-defeat": {
-            "name": "Смерть — не поражение"
+            "name": "death is not defeat"
         },
         "decaying-daggers": {
-            "name": "Разлагающиеся кинжалы"
+            "name": "decaying daggers"
         },
         "dimmed-defense": {
-            "name": "Ослабленная защита"
+            "name": "dimmed defense"
         },
         "wall-of-shadows": {
-            "name": "Стена теней"
+            "name": "wall of shadows"
         },
         "eternal-endurance": {
-            "name": "Вечная выносливость"
+            "name": "eternal endurance"
         },
         "wandering-soul": {
-            "name": "Блуждающая душа"
+            "name": "wandering soul"
         },
         "disembodied-goliath": {
-            "name": "Бестелесный исполин"
+            "name": "disembodied goliath"
         },
         "ethereal-canine": {
-            "name": "Эфирный пёс"
+            "name": "ethereal canine"
         },
         "phantom-hound": {
-            "name": "Призрачная гончая"
+            "name": "phantom hound"
         },
         "fear-the-reaper": {
-            "name": "Бойся жнеца"
+            "name": "fear the reaper"
         },
         "deatheater": {
-            "name": "Пожиратель смерти"
+            "name": "deatheater"
         },
         "fierce-loyalty": {
-            "name": "Свирепая преданность"
+            "name": "fierce loyalty"
         },
         "mimicking-sprite": {
-            "name": "Подражающий дух"
+            "name": "mimicking sprite"
         },
         "flurry-of-madness": {
-            "name": "Шквал безумия"
+            "name": "flurry of madness"
         },
         "bat-cloud": {
-            "name": "Облако летучих мышей"
+            "name": "bat cloud"
         },
         "forceful-apparition": {
-            "name": "Мощное явление"
+            "name": "forceful apparition"
         },
         "leeching-phantasm": {
-            "name": "Высасывающий фантом"
+            "name": "leeching phantasm"
         },
         "horde-of-bones": {
-            "name": "Орда костей"
+            "name": "horde of bones"
         },
         "skeletal-archer": {
-            "name": "Скелет-лучник"
+            "name": "skeletal archer"
         },
         "horrific-nightmare": {
-            "name": "Ужасный кошмар"
+            "name": "horrific nightmare"
         },
         "soul-snatcher": {
-            "name": "Похититель душ"
+            "name": "soul snatcher"
         },
         "incorporeal-transport": {
-            "name": "Бестелесный перенос"
+            "name": "incorporeal transport"
         },
         "ghost-carriage": {
-            "name": "Призрачная карета"
+            "name": "ghost carriage"
         },
         "midnight-feast": {
-            "name": "Полуночный пир"
+            "name": "midnight feast"
         },
         "rise-from-ashes": {
-            "name": "Восстать из пепла"
+            "name": "rise from ashes"
         },
         "glowing-egg": {
-            "name": "Светящееся яйцо"
+            "name": "glowing egg"
         },
         "spectral-phoenix": {
-            "name": "Призрачный феникс"
+            "name": "spectral phoenix"
         },
         "shamanistic-guard": {
-            "name": "Шаманская охрана"
+            "name": "shamanistic guard"
         },
         "vengeful-phantasm": {
-            "name": "Мстительный фантом"
+            "name": "vengeful phantasm"
         },
         "shrieking-spirit": {
-            "name": "Вопящий дух"
+            "name": "shrieking spirit"
         },
         "wailing-banshee": {
-            "name": "Плачущая банши"
+            "name": "wailing banshee"
         },
         "smoky-shroud": {
-            "name": "Дымный покров"
+            "name": "smoky shroud"
         },
         "mantle-of-darkness": {
-            "name": "Мантия тьмы"
+            "name": "mantle of darkness"
         },
         "soul-harvest": {
-            "name": "Жатва душ"
+            "name": "soul harvest"
         },
         "spirit-barrage": {
-            "name": "Шквал духов"
+            "name": "spirit barrage"
         },
         "spiritual-energy": {
-            "name": "Духовная энергия"
+            "name": "spiritual energy"
         },
         "imbued-monolith": {
-            "name": "Наделённый силой монолит"
+            "name": "imbued monolith"
         },
         "spread-disease": {
-            "name": "Распространить болезнь"
+            "name": "spread disease"
         },
         "leprous-wraith": {
-            "name": "Прокажённый призрак"
+            "name": "leprous wraith"
         },
         "toxic-charm": {
-            "name": "Токсичное очарование"
+            "name": "toxic charm"
         },
         "unholy-sacrifice": {
-            "name": "Нечестивая жертва"
+            "name": "unholy sacrifice"
         },
         "whistling-winds": {
-            "name": "Свистящие ветра"
+            "name": "whistling winds"
         },
         "white-glow": {
-            "name": "Белое сияние"
+            "name": "white glow"
         },
         "orb-of-light": {
-            "name": "Сфера света"
+            "name": "orb of light"
         },
         "shifting-discs": {
-            "name": "Смещающиеся диски"
+            "name": "shifting discs"
         },
         "st-back": {
             "name": "st-back"
         },
         "absolute-magnitude": {
-            "name": "Абсолютная величина"
+            "name": "absolute magnitude"
         },
         "absorbing-light": {
-            "name": "Поглощающий свет"
+            "name": "absorbing light"
         },
         "aligned-constellations": {
-            "name": "Выстроенные созвездия"
+            "name": "aligned constellations"
         },
         "blue-moon": {
-            "name": "Голубая луна"
+            "name": "blue moon"
         },
         "celestial-maneuver": {
-            "name": "Небесный манёвр"
+            "name": "celestial maneuver"
         },
         "crashing-flare": {
-            "name": "Обрушивающаяся вспышка"
+            "name": "crashing flare"
         },
         "defying-gravity": {
-            "name": "Бросая вызов гравитации"
+            "name": "defying gravity"
         },
         "diamond-rings": {
-            "name": "Алмазные кольца"
+            "name": "diamond rings"
         },
         "earthshine": {
-            "name": "Пепельный свет"
+            "name": "earthshine"
         },
         "eonic-blast": {
-            "name": "Вечный взрыв"
+            "name": "eonic blast"
         },
         "equinox": {
-            "name": "Равноденствие"
+            "name": "equinox"
         },
         "force-field": {
-            "name": "Силовое поле"
+            "name": "force field"
         },
         "gravitational-flip": {
-            "name": "Гравитационный переворот"
+            "name": "gravitational flip"
         },
         "interplanar-voyager": {
-            "name": "Межплановый путешественник"
+            "name": "interplanar voyager"
         },
         "light-pollution": {
-            "name": "Световое загрязнение"
+            "name": "light pollution"
         },
         "lost-in-the-stars": {
-            "name": "Затерянный среди звёзд"
+            "name": "lost in the stars"
         },
         "lucky-stars": {
-            "name": "Счастливые звёзды"
+            "name": "lucky stars"
         },
         "luminous-blitz": {
-            "name": "Светящийся блиц"
+            "name": "luminous blitz"
         },
         "pierce-the-firmament": {
-            "name": "Пронзить небосвод"
+            "name": "pierce the firmament"
         },
         "plasmatic-power": {
-            "name": "Плазменная мощь"
+            "name": "plasmatic power"
         },
         "proportional-exchange": {
-            "name": "Пропорциональный обмен"
+            "name": "proportional exchange"
         },
         "shifting-chasma": {
-            "name": "Смещающаяся пропасть"
+            "name": "shifting chasma"
         },
         "shooting-stars": {
-            "name": "Падающие звёзды"
+            "name": "shooting stars"
         },
         "solar-eclipse": {
-            "name": "Солнечное затмение"
+            "name": "solar eclipse"
         },
         "starstruck": {
-            "name": "Звёздный удар"
+            "name": "starstruck"
         },
         "stone-meteorite": {
-            "name": "Каменный метеорит"
+            "name": "stone meteorite"
         },
         "sungaze": {
-            "name": "Взгляд на солнце"
+            "name": "sungaze"
         },
         "supernova": {
-            "name": "Сверхновая"
+            "name": "supernova"
         },
         "wish-upon-a-star": {
-            "name": "Загадать желание на звезду"
+            "name": "wish upon a star"
         }
     },
     "fh": {
@@ -5111,352 +5111,352 @@ export default {
     },
     "mp": {
         "bug-bodys-bidding": {
-            "name": "Приказ Жуко-тела"
+            "name": "bug-bodys bidding"
         },
         "phantasmal-flurry": {
-            "name": "Призрачный шквал"
+            "name": "phantasmal flurry"
         },
         "sharp-teeth": {
-            "name": "Острые зубы"
+            "name": "sharp teeth"
         },
         "nocturnal-feeding": {
-            "name": "Ночное кормление"
+            "name": "nocturnal feeding"
         },
         "vermincall": {
-            "name": "Зов паразитов"
+            "name": "vermincall"
         },
         "sickening-betrayal": {
-            "name": "Тошнотворное предательство"
+            "name": "sickening betrayal"
         },
         "touch-of-atrophy": {
-            "name": "Касание атрофии"
+            "name": "touch of atrophy"
         },
         "surrounding-shadows": {
-            "name": "Окружающие тени"
+            "name": "surrounding shadows"
         },
         "howling-apparition": {
-            "name": "Воющее видение"
+            "name": "howling apparition"
         },
         "endless-biting": {
-            "name": "Бесконечные укусы"
+            "name": "endless biting"
         },
         "black-claws": {
-            "name": "Чёрные когти"
+            "name": "black claws"
         },
         "anguish": {
-            "name": "Мука"
+            "name": "anguish"
         },
         "consume-with-regret": {
-            "name": "Пожрать сожалением"
+            "name": "consume with regret"
         },
         "rat-surprise": {
-            "name": "Крысиный сюрприз"
+            "name": "rat surprise"
         },
         "tibers-tenacity": {
-            "name": "Упорство Тибера"
+            "name": "tibers tenacity"
         },
         "hidden-assault": {
-            "name": "Скрытый штурм"
+            "name": "hidden assault"
         },
         "musophobia": {
-            "name": "Мусофобия"
+            "name": "musophobia"
         },
         "seeking-strikes": {
-            "name": "Ищущие удары"
+            "name": "seeking strikes"
         },
         "doks-ferocity": {
-            "name": "Свирепость Дока"
+            "name": "doks ferocity"
         },
         "compulsive-hoarding": {
-            "name": "Навязчивое накопительство"
+            "name": "compulsive hoarding"
         },
         "my-loyal-friend": {
-            "name": "Мой верный друг"
+            "name": "my loyal friend"
         },
         "nibbled-to-death": {
-            "name": "Заглоданный насмерть"
+            "name": "nibbled to death"
         },
         "diamartias-dominance": {
-            "name": "Господство Диамартии"
+            "name": "diamartia's dominance"
         },
         "revel-in-misery": {
-            "name": "Упиваться страданием"
+            "name": "revel in misery"
         },
         "twin-frenzy": {
-            "name": "Двойное неистовство"
+            "name": "twin frenzy"
         },
         "rat-tide": {
-            "name": "Крысиный прилив"
+            "name": "rat tide"
         },
         "powders-ingenuity": {
-            "name": "Изобретательность Пороха"
+            "name": "powders ingenuity"
         },
         "pay-the-piper": {
-            "name": "Расплатиться"
+            "name": "pay the piper"
         },
         "her-highness": {
-            "name": "Её высочество"
+            "name": "her highness"
         },
         "treacherous-tactics": {
-            "name": "Вероломная тактика"
+            "name": "treacherous tactics"
         },
         "anticipate-intricacies": {
-            "name": "Тягостное предчувствие"
+            "name": "anticipate intricacies"
         },
         "peer-into-battle": {
-            "name": "Око войны"
+            "name": "peer into battle"
         },
         "cursed-ground": {
-            "name": "Проклятая земля"
+            "name": "cursed ground"
         },
         "void-snare": {
-            "name": "Ловушка пустоты"
+            "name": "void snare"
         },
         "approach-of-the-void": {
-            "name": "Приближение пустоты"
+            "name": "approach of the void"
         },
         "duality-shards": {
-            "name": "Осколки дуальности"
+            "name": "duality shards"
         },
         "envision-the-course": {
-            "name": "Намеченный курс"
+            "name": "envision the course"
         },
         "otherworldly-journey": {
-            "name": "Странствие меж мирами"
+            "name": "otherworldly journey"
         },
         "ray-of-light": {
-            "name": "Луч света"
+            "name": "ray of light"
         },
         "dimensional-transfer": {
-            "name": "Пространственный сдвиг"
+            "name": "dimensional transfer"
         },
         "inspiration-from-beyond": {
-            "name": "Вдохновение свыше"
+            "name": "inspiration from beyond"
         },
         "call-of-the-nether": {
-            "name": "Зов бездны"
+            "name": "call of the nether"
         },
         "recurrence": {
-            "name": "Повторение"
+            "name": "recurrence"
         },
         "dimensional-divide": {
-            "name": "Пространственный разлом"
+            "name": "dimensional divide"
         },
         "cleansing-rite": {
-            "name": "Обряд очищения"
+            "name": "cleansing rite"
         },
         "past-and-future": {
-            "name": "Прошлое и будущее"
+            "name": "past and future"
         },
         "ethereal-vortex": {
-            "name": "Эфирный вихрь"
+            "name": "ethereal vortex"
         },
         "protective-aura": {
-            "name": "Защитная аура"
+            "name": "protective aura"
         },
         "enfeebling-hex": {
-            "name": "Ослабляющая порча"
+            "name": "enfeebling hex"
         },
         "seal-their-fate": {
-            "name": "Жребий брошен"
+            "name": "seal their fate"
         },
         "constant-flux": {
-            "name": "Постоянный поток"
+            "name": "constant flux"
         },
         "careful-attunement": {
-            "name": "Тонкая настройка"
+            "name": "careful attunement"
         },
         "tether-the-planes": {
-            "name": "Связать планы"
+            "name": "tether the planes"
         },
         "tear-reality": {
-            "name": "Разорвать реальность"
+            "name": "tear reality"
         },
         "time-and-again": {
-            "name": "Раз за разом"
+            "name": "time and again"
         },
         "deep-contemplation": {
-            "name": "Глубокая медитация"
+            "name": "deep contemplation"
         },
         "planar-chaos": {
-            "name": "Хаос планов"
+            "name": "planar chaos"
         },
         "convergence": {
-            "name": "Схождение"
+            "name": "convergence"
         },
         "hand-of-destiny": {
-            "name": "Рука судьбы"
+            "name": "hand of destiny"
         },
         "cant-be-bothered": {
-            "name": "Лень возиться"
+            "name": "cant be bothered"
         },
         "interesting-speciments": {
-            "name": "Интересные образцы"
+            "name": "interesting speciments"
         },
         "gather-reagents": {
-            "name": "Собрать реагенты"
+            "name": "gather reagents"
         },
         "somewhere-to-be": {
-            "name": "Есть дела поважнее"
+            "name": "somewhere to be"
         },
         "not-amused": {
-            "name": "Не в восторге"
+            "name": "not amused"
         },
         "perpetual-annoyance": {
-            "name": "Вечное раздражение"
+            "name": "perpetual annoyance"
         },
         "minor-inconvenience": {
-            "name": "Мелкое неудобство"
+            "name": "minor inconvenience"
         },
         "fleeting-interest": {
-            "name": "Мимолётный интерес"
+            "name": "fleeting interest"
         },
         "bizarre-antics": {
-            "name": "Странные выходки"
+            "name": "bizarre antics"
         },
         "leave-me-alone": {
-            "name": "Оставь меня в покое"
+            "name": "leave me alone"
         },
         "abundant-nuisance": {
-            "name": "Бесконечная докука"
+            "name": "abundant nuisance"
         },
         "trial-and-success": {
-            "name": "Опыты и успехи"
+            "name": "trial and success"
         },
         "experimental-insights": {
-            "name": "Экспериментальные озарения"
+            "name": "experimental insights"
         },
         "outsource": {
-            "name": "Передать на аутсорс"
+            "name": "outsource"
         },
         "beneath-me": {
-            "name": "Ниже моего достоинства"
+            "name": "beneath me"
         },
         "fading-presence": {
-            "name": "Угасающее присутствие"
+            "name": "fading presence"
         },
         "fools-errand": {
-            "name": "Дурацкая затея"
+            "name": "fools errand"
         },
         "miniaturize": {
-            "name": "Уменьшить"
+            "name": "miniaturize"
         },
         "dont-be-a-baby": {
-            "name": "Не будь нытиком"
+            "name": "dont be a baby"
         },
         "trying-to-remember": {
-            "name": "Пытаясь вспомнить"
+            "name": "trying to remember"
         },
         "withering-stare": {
-            "name": "Иссушающий взгляд"
+            "name": "withering stare"
         },
         "dismissive-comment": {
-            "name": "Пренебрежительное замечание"
+            "name": "dismissive comment"
         },
         "tear-a-new-one": {
-            "name": "Устроить разнос"
+            "name": "tear a new one"
         },
         "collect-essence": {
-            "name": "Собрать эссенцию"
+            "name": "collect essence"
         },
         "kill-that-one-first": {
-            "name": "Сначала убей того"
+            "name": "kill that one first"
         },
         "closed-for-business": {
-            "name": "Закрыто на учёт"
+            "name": "closed for business"
         },
         "fired-up": {
-            "name": "Распалённый"
+            "name": "fired up"
         },
         "the-power-of-enhancement": {
-            "name": "Возможность улучшений"
+            "name": "the power of enhancement"
         },
         "shared-glory": {
-            "name": "Общая слава"
+            "name": "shared glory"
         },
         "bring-them-down": {
-            "name": "Низвергнуть их"
+            "name": "bring them down"
         },
         "blade-of-the-north": {
-            "name": "Клинок севера"
+            "name": "blade of the north"
         },
         "victory-rush": {
-            "name": "Победный порыв"
+            "name": "victory rush"
         },
         "dazing-sweep": {
-            "name": "Оглушающий взмах"
+            "name": "dazing sweep"
         },
         "lead-the-charge": {
-            "name": "Вести в атаку"
+            "name": "lead the charge"
         },
         "spur-their-spirits": {
-            "name": "Воодушевить дух"
+            "name": "spur their spirits"
         },
         "implacable-advance": {
-            "name": "Неумолимое наступление"
+            "name": "implacable advance"
         },
         "combined-might": {
-            "name": "Совместная мощь"
+            "name": "combined might"
         },
         "get-behind-me": {
-            "name": "Встань за мной"
+            "name": "get behind me"
         },
         "take-command": {
-            "name": "Принять командование"
+            "name": "take command"
         },
         "wolf-pack-tactics": {
-            "name": "Тактика волчьей стаи"
+            "name": "wolf pack tactics"
         },
         "emboldening-call": {
-            "name": "Ободряющий призыв"
+            "name": "emboldening call"
         },
         "outmaneuver": {
-            "name": "Перехитрить"
+            "name": "outmaneuver"
         },
         "stand-firm": {
-            "name": "Стоять твёрдо"
+            "name": "stand firm"
         },
         "a-little-help-here": {
-            "name": "Нужна небольшая помощь"
+            "name": "a little help here"
         },
         "raze": {
-            "name": "Сровнять с землёй"
+            "name": "raze"
         },
         "strike-now": {
-            "name": "Бей сейчас"
+            "name": "strike now"
         },
         "northern-valor": {
-            "name": "Северная доблесть"
+            "name": "northern valor"
         },
         "unleash-the-archers": {
-            "name": "Выпустить лучников"
+            "name": "unleash the archers"
         },
         "armory": {
-            "name": "Арсенал"
+            "name": "armory"
         },
         "crashing-steel": {
-            "name": "Лязг стали"
+            "name": "crashing steel"
         },
         "defiance": {
-            "name": "Непокорность"
+            "name": "defiance"
         },
         "send-them-reeling": {
-            "name": "Отбросить их назад"
+            "name": "send them reeling"
         },
         "for-frosthaven": {
-            "name": "За Морозный Хаван"
+            "name": "for frosthaven"
         },
         "lead-from-the-front": {
-            "name": "Вести с передовой"
+            "name": "lead from the front"
         },
         "bonded-through-battle": {
-            "name": "Связанные битвой"
+            "name": "bonded through battle"
         },
         "fight-as-one": {
-            "name": "Сражаться как один"
+            "name": "fight as one"
         },
         "stand-against-many": {
-            "name": "Противостоять многим"
+            "name": "stand against many"
         }
     },
     "gh2": {
@@ -5494,13 +5494,13 @@ export default {
             "name": "Размашистый удар"
         },
         "fearsome-taunt": {
-            "name": "Устрашающая насмешка"
+            "name": "fearsome taunt"
         },
         "provoking-roar": {
             "name": "Провоцирующий рёв"
         },
         "intimidating-growl": {
-            "name": "Грозное рычание"
+            "name": "intimidating growl"
         },
         "juggernaut": {
             "name": "Джаггернаут"
@@ -5515,7 +5515,7 @@ export default {
             "name": "Вихрь"
         },
         "push-through": {
-            "name": "Прорваться"
+            "name": "push through"
         },
         "skirmishing-maneuver": {
             "name": "Манёвр застрельщика"
@@ -5524,13 +5524,13 @@ export default {
             "name": "Оборонительная тактика"
         },
         "run-through": {
-            "name": "Пронзить насквозь"
+            "name": "run through"
         },
         "immovable-phalanx": {
             "name": "Несокрушимая фаланга"
         },
         "leg-fly": {
-            "name": "Летящая нога"
+            "name": "leg fly"
         },
         "selfish-retribution": {
             "name": "Эгоистичное возмездие"
@@ -5566,7 +5566,7 @@ export default {
             "name": "Запасные боеприпасы"
         },
         "earthen-bulwark": {
-            "name": "Земляной оплот"
+            "name": "earthen bulwark"
         },
         "unstable-upheaval": {
             "name": "Нестабильный подъём"
@@ -5587,10 +5587,10 @@ export default {
             "name": "Окаменение"
         },
         "burrow": {
-            "name": "Зарыться"
+            "name": "burrow"
         },
         "mud-eruption": {
-            "name": "Грязевое извержение"
+            "name": "mud eruption"
         },
         "sentient-growth": {
             "name": "Разумный рост"
@@ -5608,7 +5608,7 @@ export default {
             "name": "Кинетический штурм"
         },
         "solidify": {
-            "name": "Затвердеть"
+            "name": "solidify"
         },
         "stone-pummel": {
             "name": "Каменная колотушка"
@@ -5629,19 +5629,19 @@ export default {
             "name": "Каменный конец"
         },
         "entomb": {
-            "name": "Замуровать"
+            "name": "entomb"
         },
         "wave-of-destruction": {
-            "name": "Волна разрушения"
+            "name": "wave of destruction"
         },
         "earths-embrace": {
-            "name": "Объятия земли"
+            "name": "earth's embrace"
         },
         "submissive-affliction": {
             "name": "Подчиняющий недуг"
         },
         "hidden-in-the-shadows": {
-            "name": "Скрытый в тенях"
+            "name": "hidden in the shadows"
         },
         "scurry": {
             "name": "Бегство"
@@ -5665,7 +5665,7 @@ export default {
             "name": "Эмпатический штурм"
         },
         "psychic-blade": {
-            "name": "Психический клинок"
+            "name": "psychic blade"
         },
         "feedback-loop": {
             "name": "Петля обратной связи"
@@ -5689,7 +5689,7 @@ export default {
             "name": "Перегрузка черепа"
         },
         "frozen-shiv": {
-            "name": "Ледяной нож"
+            "name": "frozen shiv"
         },
         "silent-scream": {
             "name": "Безмолвный крик"
@@ -5698,10 +5698,10 @@ export default {
             "name": "Массовая истерия"
         },
         "gangling-abomination": {
-            "name": "Долговязая мерзость"
+            "name": "gangling abomination"
         },
         "telepathic-command": {
-            "name": "Телепатический приказ"
+            "name": "telepathic command"
         },
         "dark-frenzy": {
             "name": "Тёмное безумие"
@@ -5746,7 +5746,7 @@ export default {
             "name": "Метательные ножи"
         },
         "practiced-reflexes": {
-            "name": "Отточенные рефлексы"
+            "name": "practiced reflexes"
         },
         "special-mixture": {
             "name": "Особая смесь"
@@ -5779,13 +5779,13 @@ export default {
             "name": "Жестокое преимущество"
         },
         "duelists-advantage": {
-            "name": "Преимущество дуэлянта"
+            "name": "duelist's advantage"
         },
         "serrated-arrow": {
-            "name": "Зазубренная стрела"
+            "name": "serrated arrow"
         },
         "dance-of-daggers": {
-            "name": "Танец кинжалов"
+            "name": "dance of daggers"
         },
         "cull-the-weak": {
             "name": "Выбраковка слабых"
@@ -5803,7 +5803,7 @@ export default {
             "name": "Калечащий яд"
         },
         "hired-help": {
-            "name": "Наёмная помощь"
+            "name": "hired help"
         },
         "watch-it-burn": {
             "name": "Смотри, как горит"
@@ -5815,7 +5815,7 @@ export default {
             "name": "Огненные шары"
         },
         "arcane-bolt": {
-            "name": "Арканная стрела"
+            "name": "arcane bolt"
         },
         "flame-strike": {
             "name": "Удар пламени"
@@ -5827,16 +5827,16 @@ export default {
             "name": "Помощь из эфира"
         },
         "frost-strike": {
-            "name": "Морозный удар"
+            "name": "frost strike"
         },
         "emberfrost": {
-            "name": "Ледяные угли"
+            "name": "emberfrost"
         },
         "flameswell": {
-            "name": "Вздымающееся пламя"
+            "name": "flameswell"
         },
         "ice-armor": {
-            "name": "Ледяная броня"
+            "name": "ice armor"
         },
         "impaling-eruption": {
             "name": "Пронзающее извержение"
@@ -5845,46 +5845,46 @@ export default {
             "name": "Замораживающая нова"
         },
         "etheric-echo": {
-            "name": "Эфирное эхо"
+            "name": "etheric echo"
         },
         "heatwave": {
             "name": "Волна жара"
         },
         "arctic-shards": {
-            "name": "Арктические осколки"
+            "name": "arctic shards"
         },
         "dancing-gales": {
-            "name": "Танцующие порывы"
+            "name": "dancing gales"
         },
         "cold-fire": {
             "name": "Холодный огонь"
         },
         "warm-up": {
-            "name": "Разогрев"
+            "name": "warm up"
         },
         "cool-down": {
-            "name": "Охлаждение"
+            "name": "cool down"
         },
         "elemental-rays": {
-            "name": "Элементальные лучи"
+            "name": "elemental rays"
         },
         "searing-glacier": {
-            "name": "Обжигающий ледник"
+            "name": "searing glacier"
         },
         "spell-mastery": {
-            "name": "Мастерство заклинаний"
+            "name": "spell mastery"
         },
         "chromatic-explosion": {
             "name": "Хроматический взрыв"
         },
         "frostflare-orbs": {
-            "name": "Сферы морозной вспышки"
+            "name": "frostflare orbs"
         },
         "twin-beams": {
-            "name": "Двойные лучи"
+            "name": "twin beams"
         },
         "freezing-vortex": {
-            "name": "Замораживающий вихрь"
+            "name": "freezing vortex"
         },
         "inferno": {
             "name": "Преисподняя"
@@ -5935,13 +5935,13 @@ export default {
             "name": "Крюкомёт"
         },
         "repulsor-gun": {
-            "name": "Отталкивающая пушка"
+            "name": "repulsor gun"
         },
         "crank-bow": {
             "name": "Арбалет с рычагом"
         },
         "teleportation-pad": {
-            "name": "Телепортационная платформа"
+            "name": "teleportation pad"
         },
         "stamina-booster": {
             "name": "Усилитель выносливости"
@@ -5959,7 +5959,7 @@ export default {
             "name": "Дезинтегрирующий луч"
         },
         "invigorating-aerosol": {
-            "name": "Бодрящий аэрозоль"
+            "name": "invigorating aerosol"
         },
         "auto-turret": {
             "name": "Автоматическая турель"
@@ -5968,16 +5968,16 @@ export default {
             "name": "Убийственное устройство"
         },
         "pernicious-fogger": {
-            "name": "Пагубный распылитель"
+            "name": "pernicious fogger"
         },
         "cryonic-snare": {
-            "name": "Криогенный силок"
+            "name": "cryonic snare"
         },
         "harsh-stimulants": {
             "name": "Жёсткие стимуляторы"
         },
         "gravity-bomb": {
-            "name": "Гравитационная бомба"
+            "name": "gravity bomb"
         },
         "chimeric-formula": {
             "name": "Химерная формула"
@@ -6022,19 +6022,19 @@ export default {
             "name": "Безрассудное наступление"
         },
         "into-the-fight": {
-            "name": "В бой"
+            "name": "into the fight"
         },
         "final-fight": {
             "name": "Последний бой"
         },
         "tireless-retribution": {
-            "name": "Неутомимое возмездие"
+            "name": "tireless retribution"
         },
         "unstoppable-destruction": {
             "name": "Неудержимое разрушение"
         },
         "inner-fire": {
-            "name": "Внутренний огонь"
+            "name": "inner fire"
         },
         "seeing-red": {
             "name": "Красная пелена"
@@ -6052,7 +6052,7 @@ export default {
             "name": "Безрассудный натиск"
         },
         "fueled-by-pain": {
-            "name": "Подпитанный болью"
+            "name": "fueled by pain"
         },
         "bone-breaker": {
             "name": "Крушитель костей"
@@ -6064,7 +6064,7 @@ export default {
             "name": "Пылающая ненависть"
         },
         "bathe-in-blood": {
-            "name": "Купаться в крови"
+            "name": "bathe in blood"
         },
         "focused-scourge": {
             "name": "Прицельный бич"
@@ -6109,7 +6109,7 @@ export default {
             "name": "Гробница бессмертного"
         },
         "pressing-pursuit": {
-            "name": "Настойчивое преследование"
+            "name": "pressing pursuit"
         },
         "infest": {
             "name": "Заражение"
@@ -6163,13 +6163,13 @@ export default {
             "name": "Гонка к могиле"
         },
         "gut-shot": {
-            "name": "Выстрел в живот"
+            "name": "gut shot"
         },
         "detonation": {
             "name": "Детонация"
         },
         "murderous-stalker": {
-            "name": "Смертоносный выслеживатель"
+            "name": "murderous stalker"
         },
         "a-moments-peace": {
             "name": "Миг покоя"
@@ -6184,28 +6184,28 @@ export default {
             "name": "Силок для ног"
         },
         "forward-momentum": {
-            "name": "Движение вперёд"
+            "name": "forward momentum"
         },
         "hidden-danger": {
-            "name": "Скрытая опасность"
+            "name": "hidden danger"
         },
         "give-chase": {
-            "name": "Начать погоню"
+            "name": "give chase"
         },
         "feral-aid": {
-            "name": "Дикая помощь"
+            "name": "feral aid"
         },
         "fierce-fighter": {
-            "name": "Свирепый боец"
+            "name": "fierce fighter"
         },
         "relentless-offensive": {
             "name": "Неутомимое наступление"
         },
         "dual-shot": {
-            "name": "Двойной выстрел"
+            "name": "dual shot"
         },
         "walking-bastion": {
-            "name": "Ходячий бастион"
+            "name": "walking bastion"
         },
         "swift-trickery": {
             "name": "Быстрая хитрость"
@@ -6214,7 +6214,7 @@ export default {
             "name": "Камуфляж"
         },
         "coated-arrows": {
-            "name": "Покрытые ядом стрелы"
+            "name": "coated arrows"
         },
         "felling-swoop": {
             "name": "Сокрушающий налёт"
@@ -6229,7 +6229,7 @@ export default {
             "name": "Неминуемый конец"
         },
         "charging-beast": {
-            "name": "Атакующий зверь"
+            "name": "charging beast"
         },
         "darkened-skies": {
             "name": "Потемневшие небеса"
@@ -6244,7 +6244,7 @@ export default {
             "name": "Хищник и жертва"
         },
         "heart-of-doom": {
-            "name": "Сердце рока"
+            "name": "heart of doom"
         },
         "ice-spikes": {
             "name": "Ледяные шипы"
@@ -6262,7 +6262,7 @@ export default {
             "name": "Град подогрева"
         },
         "magma-scales": {
-            "name": "Магматическая чешуя"
+            "name": "magma scales"
         },
         "infernal-vortex": {
             "name": "Адский вихрь"
@@ -6271,31 +6271,31 @@ export default {
             "name": "Ледяной поток"
         },
         "pulsing-cores": {
-            "name": "Пульсирующие ядра"
+            "name": "pulsing cores"
         },
         "dual-nature": {
-            "name": "Двойственная природа"
+            "name": "dual nature"
         },
         "lingering-essence": {
-            "name": "Задержавшаяся эссенция"
+            "name": "lingering essence"
         },
         "flash-of-brilliance": {
-            "name": "Вспышка гениальности"
+            "name": "flash of brilliance"
         },
         "encompassing-shadow": {
             "name": "Всеобъемлющая тень"
         },
         "gravel-guard": {
-            "name": "Гравийная защита"
+            "name": "gravel guard"
         },
         "wave-of-frost": {
-            "name": "Волна мороза"
+            "name": "wave of frost"
         },
         "arresting-gale": {
-            "name": "Задерживающий шквал"
+            "name": "arresting gale"
         },
         "empowering-flame": {
-            "name": "Усиливающее пламя"
+            "name": "empowering flame"
         },
         "burial": {
             "name": "Погребение"
@@ -6313,16 +6313,16 @@ export default {
             "name": "Прагматичное усиление"
         },
         "duskstorm": {
-            "name": "Сумеречная буря"
+            "name": "duskstorm"
         },
         "elemental-juggernaut": {
-            "name": "Элементальный джаггернаут"
+            "name": "elemental juggernaut"
         },
         "confluence-of-elements": {
-            "name": "Слияние стихий"
+            "name": "confluence of elements"
         },
         "prismatic-barrage": {
-            "name": "Призматический шквал"
+            "name": "prismatic barrage"
         },
         "eye-of-the-hurricane": {
             "name": "Глаз урагана"
@@ -6337,7 +6337,7 @@ export default {
             "name": "Дух ночи"
         },
         "slice-through": {
-            "name": "Рассечь насквозь"
+            "name": "slice through"
         },
         "eyes-of-the-night": {
             "name": "Глаза ночи"
@@ -6373,7 +6373,7 @@ export default {
             "name": "Невидимый ужас"
         },
         "shroud-in-shade": {
-            "name": "Окутать тенью"
+            "name": "shroud in shade"
         },
         "terror-blade": {
             "name": "Клинок ужаса"
@@ -6385,13 +6385,13 @@ export default {
             "name": "Таящаяся гибель"
         },
         "cursed-blades": {
-            "name": "Проклятые клинки"
+            "name": "cursed blades"
         },
         "into-the-night": {
             "name": "В ночь"
         },
         "seeping-tendrils": {
-            "name": "Сочащиеся щупальца"
+            "name": "seeping tendrils"
         },
         "claws-of-the-night": {
             "name": "Когти ночи"
@@ -6400,25 +6400,25 @@ export default {
             "name": "Тёмное облако"
         },
         "messenger-of-death": {
-            "name": "Вестник смерти"
+            "name": "messenger of death"
         },
         "concealed-dominance": {
             "name": "Скрытое господство"
         },
         "prey-on-the-weak": {
-            "name": "Охота на слабых"
+            "name": "prey on the weak"
         },
         "shadowstrike": {
-            "name": "Теневой удар"
+            "name": "shadowstrike"
         },
         "swallowed-by-night": {
-            "name": "Поглощённый ночью"
+            "name": "swallowed by night"
         },
         "voice-of-the-night": {
             "name": "Голос ночи"
         },
         "comorbid-sting": {
-            "name": "Сопутствующее жало"
+            "name": "comorbid sting"
         },
         "biting-gnats": {
             "name": "Кусачая мошка"
@@ -6427,37 +6427,37 @@ export default {
             "name": "Вирулентный штамм"
         },
         "contagious-corpse": {
-            "name": "Заразный труп"
+            "name": "contagious corpse"
         },
         "path-of-the-pox": {
-            "name": "Путь оспы"
+            "name": "path of the pox"
         },
         "vile-pestilence": {
             "name": "Мерзкая чума"
         },
         "blistering-buboes": {
-            "name": "Вздувшиеся бубоны"
+            "name": "blistering buboes"
         },
         "festering-sores": {
-            "name": "Гноящиеся язвы"
+            "name": "festering sores"
         },
         "wretched-yield": {
-            "name": "Жалкий урожай"
+            "name": "wretched yield"
         },
         "accelerated-end": {
             "name": "Ускоренный конец"
         },
         "deliriums-danse": {
-            "name": "Танец бреда"
+            "name": "delirium's danse"
         },
         "gift-of-rot": {
-            "name": "Дар гнили"
+            "name": "gift of rot"
         },
         "spread-the-plague": {
             "name": "Распространить чуму"
         },
         "sickening-strength": {
-            "name": "Тошнотворная сила"
+            "name": "sickening strength"
         },
         "rot-maggots": {
             "name": "Гнилые черви"
@@ -6466,22 +6466,22 @@ export default {
             "name": "Кошмарный недуг"
         },
         "cloying-miasma": {
-            "name": "Приторные миазмы"
+            "name": "cloying miasma"
         },
         "rabid-bite": {
-            "name": "Бешеный укус"
+            "name": "rabid bite"
         },
         "unwilling-sacrifice": {
-            "name": "Невольная жертва"
+            "name": "unwilling sacrifice"
         },
         "wilt-and-wither": {
-            "name": "Вянуть и чахнуть"
+            "name": "wilt and wither"
         },
         "compounding-infection": {
-            "name": "Усугубляющаяся инфекция"
+            "name": "compounding infection"
         },
         "crippling-malady": {
-            "name": "Калечащая болезнь"
+            "name": "crippling malady"
         },
         "succumb-to-the-gift": {
             "name": "Поддаться дару"
@@ -6490,25 +6490,25 @@ export default {
             "name": "Массовое вымирание"
         },
         "tainted-offering": {
-            "name": "Осквернённое подношение"
+            "name": "tainted offering"
         },
         "creeping-lethargy": {
-            "name": "Ползучая вялость"
+            "name": "creeping lethargy"
         },
         "convert-the-flock": {
             "name": "Обратить стаю"
         },
         "disease-vector": {
-            "name": "Переносчик болезни"
+            "name": "disease vector"
         },
         "xorns-embrace": {
-            "name": "Объятия Ксорна"
+            "name": "xorns embrace"
         },
         "booster-pack": {
-            "name": "Бустерный набор"
+            "name": "booster pack"
         },
         "readied-blade": {
-            "name": "Готовый клинок"
+            "name": "readied blade"
         },
         "crushing-hammer": {
             "name": "Сокрушающий молот"
@@ -6523,10 +6523,10 @@ export default {
             "name": "Пронзающее копьё"
         },
         "light-javelin": {
-            "name": "Лёгкий дротик"
+            "name": "light javelin"
         },
         "cleave-and-thrust": {
-            "name": "Рубить и колоть"
+            "name": "cleave and thrust"
         },
         "iron-bulwark": {
             "name": "Железный оплот"
@@ -6535,10 +6535,10 @@ export default {
             "name": "Мастерство"
         },
         "provisions": {
-            "name": "Провизия"
+            "name": "provisions"
         },
         "caustic-bolt": {
-            "name": "Едкий болт"
+            "name": "caustic bolt"
         },
         "scroll-of-recall": {
             "name": "Свиток возврата"
@@ -6547,28 +6547,28 @@ export default {
             "name": "Точильный набор"
         },
         "scroll-case": {
-            "name": "Футляр для свитков"
+            "name": "scroll case"
         },
         "lethal-arsenal": {
-            "name": "Смертоносный арсенал"
+            "name": "lethal arsenal"
         },
         "quiver-of-arrows": {
             "name": "Колчан со стрелами"
         },
         "concussive-snare": {
-            "name": "Оглушающий силок"
+            "name": "concussive snare"
         },
         "hammer-and-anvil": {
-            "name": "Молот и наковальня"
+            "name": "hammer and anvil"
         },
         "giant-club": {
             "name": "Гигантская дубина"
         },
         "scroll-of-judgement": {
-            "name": "Свиток суда"
+            "name": "scroll of judgement"
         },
         "set-up-shop": {
-            "name": "Открыть лавку"
+            "name": "set up shop"
         },
         "scroll-of-lightning": {
             "name": "Свиток молнии"
@@ -6577,16 +6577,16 @@ export default {
             "name": "Постоянный запас"
         },
         "twin-lances": {
-            "name": "Двойные копья"
+            "name": "twin lances"
         },
         "tools-of-war": {
-            "name": "Орудия войны"
+            "name": "tools of war"
         },
         "scroll-of-blizzards": {
             "name": "Свиток метелей"
         },
         "armed-to-the-teeth": {
-            "name": "Вооружён до зубов"
+            "name": "armed to the teeth"
         },
         "reinforced-steel": {
             "name": "Усиленная сталь"
@@ -6619,10 +6619,10 @@ export default {
             "name": "Шприц"
         },
         "needle-gun": {
-            "name": "Игольчатое ружьё"
+            "name": "needle gun"
         },
         "vital-strikes": {
-            "name": "Жизненно важные удары"
+            "name": "vital strikes"
         },
         "vaccine": {
             "name": "Вакцина"
@@ -6646,58 +6646,58 @@ export default {
             "name": "Переливание крови"
         },
         "experimental-stimulants": {
-            "name": "Экспериментальные стимуляторы"
+            "name": "experimental stimulants"
         },
         "do-no-harm": {
             "name": "Не навреди"
         },
         "hack-to-bits": {
-            "name": "Изрубить в клочья"
+            "name": "hack to bits"
         },
         "fortifying-injection": {
-            "name": "Укрепляющая инъекция"
+            "name": "fortifying injection"
         },
         "amputate": {
             "name": "Ампутация"
         },
         "return-the-favor": {
-            "name": "Вернуть должок"
+            "name": "return the favor"
         },
         "surgeons-satchel": {
             "name": "Сумка хирурга"
         },
         "exacting-anger": {
-            "name": "Точный гнев"
+            "name": "exacting anger"
         },
         "take-your-medicine": {
-            "name": "Прими лекарство"
+            "name": "take your medicine"
         },
         "euthanize": {
             "name": "Усыпление"
         },
         "secret-of-the-oak": {
-            "name": "Тайна дуба"
+            "name": "secret of the oak"
         },
         "grisly-trauma": {
             "name": "Жуткая травма"
         },
         "medical-pack-1": {
-            "name": "Медицинский набор 1"
+            "name": "medical pack 1"
         },
         "medical-pack-2": {
-            "name": "Медицинский набор 2"
+            "name": "medical pack 2"
         },
         "medical-pack-3": {
-            "name": "Медицинский набор 3"
+            "name": "medical pack 3"
         },
         "medical-pack-4": {
-            "name": "Медицинский набор 4"
+            "name": "medical pack 4"
         },
         "medical-pack-5": {
-            "name": "Медицинский набор 5"
+            "name": "medical pack 5"
         },
         "medical-pack-6": {
-            "name": "Медицинский набор 6"
+            "name": "medical pack 6"
         },
         "hammer-blow": {
             "name": "Удар молота"
@@ -6721,7 +6721,7 @@ export default {
             "name": "Блистательная молитва"
         },
         "soothing-light": {
-            "name": "Успокаивающий свет"
+            "name": "soothing light"
         },
         "purifying-aura": {
             "name": "Очищающая аура"
@@ -6736,13 +6736,13 @@ export default {
             "name": "Рассвет"
         },
         "sanctify": {
-            "name": "Освящение"
+            "name": "sanctify"
         },
         "beacon-of-light": {
             "name": "Маяк света"
         },
         "holy-defense": {
-            "name": "Святая защита"
+            "name": "holy defense"
         },
         "mobilizing-axiom": {
             "name": "Мобилизующая аксиома"
@@ -6760,7 +6760,7 @@ export default {
             "name": "Осторожное наступление"
         },
         "arresting-march": {
-            "name": "Останавливающий марш"
+            "name": "arresting march"
         },
         "path-of-glory": {
             "name": "Путь славы"
@@ -6778,37 +6778,37 @@ export default {
             "name": "Осветить цель"
         },
         "warding-blow": {
-            "name": "Охранный удар"
+            "name": "warding blow"
         },
         "supportive-chant": {
             "name": "Поддерживающий напев"
         },
         "divine-ascension": {
-            "name": "Божественное вознесение"
+            "name": "divine ascension"
         },
         "solar-bastion": {
-            "name": "Солнечный бастион"
+            "name": "solar bastion"
         },
         "mobilizing-measure": {
             "name": "Мобилизующий такт"
         },
         "bewildering-instrumental": {
-            "name": "Сбивающая с толку инструментальная"
+            "name": "bewildering instrumental"
         },
         "wearying-chant": {
-            "name": "Утомляющий напев"
+            "name": "wearying chant"
         },
         "power-ballad": {
             "name": "Мощная баллада"
         },
         "dissonant-rhythm": {
-            "name": "Диссонирующий ритм"
+            "name": "dissonant rhythm"
         },
         "increase-cadence": {
-            "name": "Ускорить каденцию"
+            "name": "increase cadence"
         },
         "intensifying-amplitude": {
-            "name": "Нарастающая амплитуда"
+            "name": "intensifying amplitude"
         },
         "marching-beat": {
             "name": "Маршевый ритм"
@@ -6832,28 +6832,28 @@ export default {
             "name": "Вызвать ужас"
         },
         "onward-to-battle": {
-            "name": "Вперёд в бой"
+            "name": "onward to battle"
         },
         "soothing-lullaby": {
             "name": "Успокаивающая колыбельная"
         },
         "symphonic-medley": {
-            "name": "Симфонический попурри"
+            "name": "symphonic medley"
         },
         "ode-to-the-gambler": {
-            "name": "Ода игроку"
+            "name": "ode to the gambler"
         },
         "hymn-of-the-oak": {
-            "name": "Гимн дуба"
+            "name": "hymn of the oak"
         },
         "alluring-serenade": {
-            "name": "Манящая серенада"
+            "name": "alluring serenade"
         },
         "change-tempo": {
             "name": "Смена темпа"
         },
         "thrilling-solo": {
-            "name": "Волнующее соло"
+            "name": "thrilling solo"
         },
         "pull-the-strings": {
             "name": "Дёргать за ниточки"
@@ -6871,16 +6871,16 @@ export default {
             "name": "Властное присутствие"
         },
         "toughening-trill": {
-            "name": "Укрепляющая трель"
+            "name": "toughening trill"
         },
         "grand-finale": {
-            "name": "Грандиозный финал"
+            "name": "grand finale"
         },
         "captivating-performance": {
             "name": "Захватывающее выступление"
         },
         "ethereal-gust": {
-            "name": "Эфирный порыв"
+            "name": "ethereal gust"
         },
         "forged-ferocity": {
             "name": "Выкованная свирепость"
@@ -6892,7 +6892,7 @@ export default {
             "name": "Дикое оживление"
         },
         "planar-protection": {
-            "name": "Защита планов"
+            "name": "planar protection"
         },
         "mighty-bond": {
             "name": "Могучая связь"
@@ -6901,22 +6901,22 @@ export default {
             "name": "Связанная мощь"
         },
         "burning-passion": {
-            "name": "Пылающая страсть"
+            "name": "burning passion"
         },
         "unending-dominance": {
             "name": "Бесконечное господство"
         },
         "shadow-dart": {
-            "name": "Теневой дротик"
+            "name": "shadow dart"
         },
         "burning-tether": {
-            "name": "Пылающая привязь"
+            "name": "burning tether"
         },
         "primal-assault": {
-            "name": "Первобытный штурм"
+            "name": "primal assault"
         },
         "drifting-stingers": {
-            "name": "Дрейфующие жала"
+            "name": "drifting stingers"
         },
         "biting-wind": {
             "name": "Кусающий ветер"
@@ -6928,13 +6928,13 @@ export default {
             "name": "Вмешивающиеся призраки"
         },
         "void-imbuement": {
-            "name": "Наделение пустотой"
+            "name": "void imbuement"
         },
         "shaping-the-void": {
-            "name": "Придание формы пустоте"
+            "name": "shaping the void"
         },
         "deadly-mischief": {
-            "name": "Смертельная шалость"
+            "name": "deadly mischief"
         },
         "strength-in-numbers": {
             "name": "Сила в числе"
@@ -6946,7 +6946,7 @@ export default {
             "name": "Живая гора"
         },
         "primal-infusion": {
-            "name": "Первобытное наделение"
+            "name": "primal infusion"
         },
         "tear-the-fabric": {
             "name": "Разорвать ткань бытия"
@@ -6967,10 +6967,10 @@ export default {
             "name": "Власть над планами"
         },
         "imposed-will": {
-            "name": "Навязанная воля"
+            "name": "imposed will"
         },
         "horned-nightmare": {
-            "name": "Рогатый кошмар"
+            "name": "horned nightmare"
         },
         "concentrated-rage": {
             "name": "Сосредоточенная ярость"
@@ -6982,31 +6982,31 @@ export default {
             "name": "Воющие молнии"
         },
         "natures-gift": {
-            "name": "Дар природы"
+            "name": "nature's gift"
         },
         "focused-aggression": {
             "name": "Сосредоточенная агрессия"
         },
         "gnaw": {
-            "name": "Грызть"
+            "name": "gnaw"
         },
         "disorienting-roar": {
             "name": "Дезориентирующий рёв"
         },
         "vitality-siphon": {
-            "name": "Высасывание жизненных сил"
+            "name": "vitality siphon"
         },
         "spirit-swap": {
             "name": "Обмен духами"
         },
         "invocation-of-endurance": {
-            "name": "Призыв выносливости"
+            "name": "invocation of endurance"
         },
         "invocation-of-spirit": {
-            "name": "Призыв духа"
+            "name": "invocation of spirit"
         },
         "gust-sigil": {
-            "name": "Знак порыва"
+            "name": "gust sigil"
         },
         "forceful-swipe": {
             "name": "Мощный взмах"
@@ -7027,13 +7027,13 @@ export default {
             "name": "Неудержимый зверь"
         },
         "forests-blessing": {
-            "name": "Благословение леса"
+            "name": "forest's blessing"
         },
         "rampage": {
             "name": "Буйство"
         },
         "invocation-of-domination": {
-            "name": "Призыв господства"
+            "name": "invocation of domination"
         },
         "blood-hunger": {
             "name": "Жажда крови"
@@ -7042,19 +7042,19 @@ export default {
             "name": "Древний оберег"
         },
         "invocation-of-absorption": {
-            "name": "Призыв поглощения"
+            "name": "invocation of absorption"
         },
         "unleashed-fury": {
-            "name": "Высвобожденная ярость"
+            "name": "unleashed fury"
         },
         "lash-out": {
             "name": "Выпад"
         },
         "unbreakable-bond": {
-            "name": "Нерушимая связь"
+            "name": "unbreakable bond"
         },
         "spirit-sigil": {
-            "name": "Знак духа"
+            "name": "spirit sigil"
         },
         "jaws-of-death": {
             "name": "Челюсти смерти"

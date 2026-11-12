@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "Chránit a sloužit",
+        "name": "Protect and Serve",
         "progress": [
             "Zabijte deset Inoxů.",
             "Dokončete {SCENARIO 33}."
         ]
     },
     "cs-331": {
-        "name": "Specialista na zbraně",
+        "name": "Weapons Specialist",
         "progress": [
             "Spotřebujte patnáct předmětů {ONE-HAND} nebo {TWO-HANDS}."
         ]
     },
     "cs-332": {
-        "name": "Experimentování",
+        "name": "Experimentation",
         "progress": [
             "Zahrajte 30 karet pro jejich ztrátovou akci {LOST}."
         ]
     },
     "cs-333": {
-        "name": "Lovec vzrušení",
+        "name": "Thrill Seeker",
         "progress": [
             "Odhalte dlaždici místnosti otevřením dveří dvacetkrát."
         ]
     },
     "cs-334": {
-        "name": "Zakladač pastí",
+        "name": "Trap Setter",
         "progress": [
             "Zneškodněte past nebo způsobte, že ji nepřítel spustí během vašeho tahu, patnáctkrát."
         ]
     },
     "cs-335": {
-        "name": "Vyhnanec banditů",
+        "name": "Bandit Banisher",
         "progress": [
             "Zabijte deset Strážců nebo Lučištníků.",
             "Dokončete {SCENARIO 35}."
         ]
     },
     "cs-336": {
-        "name": "Tvorové ve světle",
+        "name": "Creatures in the light",
         "progress": [
             "Zabijte dvacet Slizů, Lesních rarachů nebo Černých rarachů."
         ]
     },
     "cs-337": {
-        "name": "Zkušený vůdce",
+        "name": "Experienced leader",
         "progress": [
             "Dokončete dvanáct scénářů s alespoň 12 body zkušeností."
         ]
     },
     "cs-338": {
-        "name": "Příval adrenalinu",
+        "name": "Adrenaline Spike",
         "progress": [
             "Zabijte nepřítele a seberte jeho žeton peněz ve stejném kole patnáctkrát."
         ]
     },
     "cs-339": {
-        "name": "Vzájemná podpora",
+        "name": "Mutual Support",
         "progress": [
             "Zabijte 30 nepřátel sousedících s kterýmkoli z vašich spojenců."
         ]
     },
     "cs-340": {
-        "name": "Buď požehnán",
+        "name": "Thy be Blessed",
         "progress": [
             "Vytáhněte kartu {BLESS} dvanáctkrát během útoku."
         ]
     },
     "cs-341": {
-        "name": "Duchovní Cainové",
+        "name": "Spiritual Cains",
         "progress": [
             "Utraťte 200 zlaťáků za vylepšení."
         ]
     },
     "cs-342": {
-        "name": "Cesta utrpení",
+        "name": "The Path of Agony",
         "progress": [
             "Zažijte, jak spojenec nebo nepřítel zemře či se vyčerpá během svého vlastního tahu 13krát."
         ]
     },
     "cs-343": {
-        "name": "Krutá nadvláda",
+        "name": "Cruel Dominion",
         "progress": [
             "Dokončete 10 scénářů, během nichž zabijete nepřítele s negativním stavem."
         ]
     },
     "cs-344": {
-        "name": "Přirozený výběr",
+        "name": "Natural Selection",
         "progress": [
             "Vytvořte {FIRE} dvakrát.",
             "Vytvořte {ICE} dvakrát.",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "Predátor a kořist",
+        "name": "Predator and Prey",
         "progress": [
             "Zabijte dva nebo více nepřátel v jednom tahu patnáctkrát."
         ]
     },
     "cs-346": {
-        "name": "Zmije se dělí",
+        "name": "An Adder Divides",
         "progress": [
             "Zůstaňte na obtížném terénu v 6 různých scénářích.",
             "Dokončete {SCENARIO 39}."
         ]
     },
     "cs-347": {
-        "name": "Terénní výzkum",
+        "name": "Field Research",
         "progress": [
             "Otrávte {POISON} dvacet různých druhů nestvůr."
         ]
     },
     "cs-348": {
-        "name": "Ruka zaklínače",
+        "name": "Conjurers Hand",
         "progress": [
             "Zabijte deset přivolaných nestvůr."
         ]
     },
     "cs-349": {
-        "name": "Pro svévolníky není odpočinku",
+        "name": "No Rest for the Wicked",
         "progress": [
             "Dokončete deset scénářů bez dlouhého odpočinku."
         ]
     },
     "cs-350": {
-        "name": "Zdraví především",
+        "name": "Health First",
         "progress": [
             "Dokončete sedm scénářů s plným zdravím na konci."
         ]
     },
     "cs-351": {
-        "name": "Nekonečné pátrání",
+        "name": "Limitless Searching",
         "progress": [
             "Seberte 30 žetonů peněz."
         ]
     },
     "cs-aa-001": {
-        "name": "Za každou cenu",
+        "name": "At All Costs",
         "progress": [
             "Zažijte 8 scénářů, v nichž zrušíte poškození ztrátou karty jako obvykle, zatímco sousedíte se spojencem.",
             "Dokončete {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
-        "name": "Tíha selhání",
+        "name": "The Weight of failure",
         "progress": [
             "Dokončete 8 scénářů bez vyčerpání a s 2 nebo méně zdraví.",
             "Dokončete {SCENARIO AA2}."
         ]
     },
     "cs-qa-001": {
-        "name": "Důmyslný vynálezce",
+        "name": "Ingenious Inventor",
         "progress": [
-            "Okamžitě získejte „Modulátor výkonu“ (předmět QA-01).",
+            "Okamžitě získejte „Power Modulator“ (předmět QA-01).",
             "Zabijte 12 nepřátel pomocí „Modulátoru výkonu“ (předmět QA-01).",
             "Dokončete {SCENARIO QA1}."
         ]
     },
     "cs-qa-002": {
-        "name": "Šrotový potápěč",
+        "name": "Scrap Diver",
         "progress": [
             "Seberte dva nebo více žetonů peněz jedinou akcí osmkrát.",
             "Vyloupte dvě dlaždice pokladů.",
@@ -337,15 +337,15 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "Brutální vymahač",
+        "name": "Brutal Enforcer",
         "progress": [
-            "Získejte návrh „Zubaté ostří“ (předmět RM-01).",
+            "Získejte návrh „Serrated Edge“ (předmět RM-01).",
             "Uvalte {WOUND} nebo {RUPTURE} na třicet nepřátel.",
             "Dokončete {SCENARIO RM1}."
         ]
     },
     "cs-rm-002": {
-        "name": "Vrcholový predátor",
+        "name": "Apex Predator",
         "progress": [
             "Zažijte dvacet kol, v nichž během provedení akce se {CONSUMED} nebo po něm zemře nepřítel.",
             "Dokončete {SCENARIO RM3}."
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "Politické intriky",
+        "name": "Political Intrigue",
         "progress": [
             "Přidejte městskou událost 61 do balíčku městských událostí.",
             "Získejte 30 hlasů: tři hlasy vždy, když získáte reputaci, jeden hlas za každý předmět reputace frakce přinesený do dokončeného scénáře.",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Pohostinný hostinec",
+        "name": "Inn to Hospitality",
         "progress": [
             "Seberte 60 žetonů peněz.",
             "Přečtěte si {SECTION} 125.4."
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "Pád člověka",
         "progress": [
-            "Získejte „Aestherský dalekohled“ (předmět 149). Nelze jej prodat.",
-            "Použijte „Aestherský dalekohled“ (předmět 149) desetkrát.",
+            "Získejte „Aesther Spyglass“ (předmět 149). Nelze jej prodat.",
+            "Použijte „Aesther Spyglass“ (předmět 149) desetkrát.",
             "Přečtěte si {SECTION} 115.2.",
             "Dovedte {SCENARIO 63} k závěru."
         ]
@@ -639,7 +639,7 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "Příběh k vyprávění",
+        "name": "A Tale to Tell",
         "progress": [
             "Vyloupte nebo buďte svědky toho, jak vaše družina vyloupí dlaždici pokladu, v deseti scénářích.",
             "Přečtěte si {SECTION} 12.3."
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "Adoptivní rodič",
+        "name": "Adoptive Parent",
         "progress": [
             "Seberte tři žetony peněz, které upustili nepřátelé, v deseti scénářích.",
             "Přečtěte si {SECTION} 122.5.",
@@ -683,8 +683,8 @@ export default {
         "name": "Nástroj světla",
         "progress": [
             "Okamžitě odemkněte {SCENARIO 65}.",
-            "Najděte „Štít spravedlivých“ (předmět 148).",
-            "Použijte „Štít spravedlivých“ (předmět 148) ke zrušení deseti útoků se zraněním 4 nebo vyšším.",
+            "Najděte „Shield of the Righteous“ (předmět 148).",
+            "Použijte „Shield of the Righteous“ (předmět 148) ke zrušení deseti útoků se zraněním 4 nebo vyšším.",
             "Přečtěte si {SECTION} 82.1."
         ]
     },
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "Únik ze Sin-Ra",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "Přidejte městské události 69 a 70 do balíčku městských událostí. Získejte „Černou kartu“ (předmět 113). Nelze ji prodat.",
             "Dokončete šest vedlejších scénářů (číslo scénáře vyšší než 56).",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "Život na hraně",
+        "name": "Living on the Edge",
         "progress": [
-            "Získejte „Experimentální zbroj“ (předmět 150).",
+            "Získejte „Experimental Armor“ (předmět 150).",
             "Použijte ji k tomu, aby 20 nepřátel utrpělo zranění.",
             "Přečtěte si {SECTION} 47.4."
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Studium boje",
+        "name": "Martial Study",
         "progress": [
             "Použijte během scénářů osm různých předmětů {ONE-HAND} nebo {TWO-HANDS}.",
             "Přečtěte si {SECTION} 67.2."
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "Cesta k mistrovství",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "Získejte 120 zkušeností z karet schopností.",
             "Přečtěte si {SECTION} 17.2."

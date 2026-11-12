@@ -258,37 +258,37 @@ export default {
         "name": "破壞者"
     },
     "cs-PCSOD": {
-        "name": "軟泥怪已被摧毀"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "熔岩墜落"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "追隨金錢"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "冰凍的戰士"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "橡樹族同盟"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "羚牛族同盟"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "溝渠巨口的賞金"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "菲爾格林的請求"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "失落的藥水"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "拿走金錢"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "功成名就的傭兵"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "冰語者之友"
@@ -381,10 +381,10 @@ export default {
         "name": "雪之心"
     },
     "gh2-G2ATD": {
-        "name": "啟動裝置"
+        "name": "Activating the Device"
     },
     "gh2-G2AUP": {
-        "name": "不安的和平"
+        "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
         "name": "遠古科技"
@@ -393,13 +393,13 @@ export default {
         "name": "城市統治：惡魔"
     },
     "gh2-G2CRME": {
-        "name": "城市統治：商人公會"
+        "name": "City Rule: Merchants"
     },
     "gh2-G2CRMI": {
         "name": "城市統治：軍方"
     },
     "gh2-G2EM": {
-        "name": "掌控元素"
+        "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
         "name": "終結腐化之源"
@@ -408,22 +408,22 @@ export default {
         "name": "\"黯\"之終結"
     },
     "gh2-G2HW": {
-        "name": "聖水"
+        "name": "Hallowed Waters"
     },
     "gh2-G2ITD": {
-        "name": "步入深淵"
+        "name": "Into the Depths"
     },
     "gh2-G2PTB": {
-        "name": "血鑄和平"
+        "name": "Peace Through Bloodshed"
     },
     "gh2-G2TCE": {
-        "name": "蠟燭熄滅"
+        "name": "The Candle Extinguished"
     },
     "gh2-G2TCK": {
-        "name": "蠟燭長明"
+        "name": "The Candle Kept"
     },
     "gh2-G2TDR": {
-        "name": "黑暗褪去"
+        "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
         "name": "協助上古亞龍"
@@ -441,27 +441,27 @@ export default {
         "name": "神秘之聲沉寂"
     },
     "gh2-P2R16": {
-        "name": "派系聲望 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "派系聲望 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
-        "name": "惡魔聲望 6"
+        "name": "Demon Reputation 6"
     },
     "gh2-P2RD12": {
-        "name": "惡魔聲望 12"
+        "name": "Demon Reputation 12"
     },
     "gh2-P2RME6": {
-        "name": "商人聲望 6"
+        "name": "Merchant Reputation 6"
     },
     "gh2-P2RME12": {
-        "name": "商人聲望 12"
+        "name": "Merchant Reputation 12"
     },
     "gh2-P2RMI6": {
-        "name": "軍方聲望 6"
+        "name": "Military Reputation 6"
     },
     "gh2-P2RMI12": {
-        "name": "軍方聲望 12"
+        "name": "Military Reputation 12"
     }
 }

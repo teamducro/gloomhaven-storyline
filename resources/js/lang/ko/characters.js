@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "호박 수호자",
+        "name": "Amber Aegis",
         "perks": [
             "{-2_WHITE} 카드 1장을 {-1_WHITE} \"원하는 {COLONY} {COLONY_ICON} 토큰 1개를 {RANGE}2 이내의 빈 칸에 놓음\" 카드 1장으로 교체",
             "{-1_WHITE} 카드 2장 제거",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "기능공",
+        "name": "Artificer",
         "perks": [
             "{-2_WHITE} 카드 1장을 {-1_WHITE} {ANY} 카드 1장으로 교체",
             "{-1_WHITE} 카드 1장을 {+1_WHITE} {DISARM} 카드 1장으로 교체",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "포격수",
+        "name": "Bombard",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{+0_WHITE} 카드 2장을 {AGAIN} {PIERCE}3 카드 2장으로 교체",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "화학자",
+        "name": "Brightspark",
         "perks": [
             "{-1_WHITE} 카드 1장을 {+0_WHITE} \"{ANY_X}로 {ATTACK} +2 추가\" 카드 1장으로 교체",
             "{-2_WHITE} 카드 1장을 {-2_WHITE} \"버린 카드 더미에서 무작위 카드 1장 {RECOVER}\" 카드 1장으로 교체",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "사슬교도관",
+        "name": "Chainguard",
         "perks": [
             "{-1_WHITE} 카드 1장을 {+1_WHITE} \"{SHACKLE} {CG_CIRCLE}\" 카드 1장으로 교체",
             "{-1_WHITE} 카드 1장을 {+0_WHITE} \"대상이 {SHACKLED} {CG_CIRCLE} 상태이면 {+2_WHITE}\" 카드 1장으로 교체",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "족장",
+        "name": "Chieftain",
         "perks": [
             "{-1_WHITE} 카드 1장을 {+0_WHITE} {POISON} 카드 1장으로 교체",
             "{-1_WHITE} 카드 1장을 {+0_WHITE} \"{HEAL}1, {CT_CIRCLE}\" 카드 1장으로 교체",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "화염의 기사",
+        "name": "Fire Knight",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{-1_WHITE} 카드 1장을 {+0_WHITE} \"{STRENGTHEN} (아군)\" 카드 1장으로 교체",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "순례자",
+        "name": "Hierophant",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{+0_WHITE} 카드 2장을 {AGAIN} {LIGHT} 카드 1장으로 교체",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "공허 계약자",
+        "name": "Hollowpact",
         "perks": [
             "{-1_WHITE} 카드 1장을 {+0_WHITE} \"{HEAL}2, 자신\" 카드 1장으로 교체",
             "{+0_WHITE} 카드 2장을 {+0_WHITE} \"{VOIDSIGHT} {VOIDSIGHT_ICON}\" 카드 1장으로 교체",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "초롱불",
+        "name": "Luminary",
         "perks": [
             "{+0_WHITE} 카드 4장 제거",
             "{+0_WHITE} 카드 1장을 {+2_WHITE} 카드 1장으로 교체",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "늪지약초꾼",
+        "name": "Mirefoot",
         "perks": [
             "{-2_WHITE} 카드 1장을 {+0_WHITE} 카드 1장으로 교체",
             "{-1_WHITE} 카드 1장을 {+1_WHITE} 카드 1장으로 교체",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "파멸 아귀",
+        "name": "Ruinmaw",
         "perks": [
             "{-2_WHITE} 카드 1장을 {-1_WHITE} {RUPTURE} 및 {WOUND} 카드 1장으로 교체",
             "{-1_WHITE} 카드 1장을 {+0_WHITE} {WOUND} 카드 1장으로 교체",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "강령술사",
+        "name": "Spirit Caller",
         "perks": [
             "{-2_WHITE} 카드 1장을 {-1_WHITE} 카드 1장 및 {+1_WHITE} 카드 1장으로 교체",
             "{-1_WHITE} 카드 1장을 {+0_WHITE} \"{SPIRIT} {SP_CIRCLE}이 공격을 수행했으면 {+2_WHITE}\" 카드 1장으로 교체",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "별 투척자",
+        "name": "Starslinger",
         "perks": [
             "{+0_WHITE} 카드 2장을 {AGAIN} \"{HEAL}1, 자신\" 카드 1장으로 교체",
             "{-2_WHITE} 카드 1장을 {-1_WHITE} {DISARM} 카드 1장 및 {-1_WHITE} \"{INVISIBLE}, 자신\" 카드 1장으로 교체",
@@ -917,7 +917,7 @@ export default {
         ]
     },
     "SA": {
-        "name": "사타",
+        "name": "Satha",
         "masteries": [
             "시나리오 내내, 긴 휴식을 하는 차례를 제외하고 자신의 매 차례마다 아군 1명 이상이 이동 또는 공격 능력을 수행하도록 함",
             "시나리오 내내 아군이 공격의 대상이 되지 않도록 함"
@@ -938,7 +938,7 @@ export default {
         ]
     },
     "HA": {
-        "name": "헤일",
+        "name": "Hail",
         "masteries": [
             "시나리오 내내 매 라운드 {RESOLVE_WHITE} 1개 이상 획득",
             "한 시나리오에서 3라운드 연속으로 매 라운드 {RESOLVE_WHITE} 3개 이상 사용"
@@ -959,7 +959,7 @@ export default {
         ]
     },
     "CA": {
-        "name": "카산드라",
+        "name": "Cassandra",
         "masteries": [
             "시나리오 내내 매 라운드 공격 수정 덱 또는 몬스터 능력 카드 덱에서 카드를 1장 이상 공개",
             "{RIFT_WHITE}가 있는 칸에 있는 개체를 대상으로 하는 능력으로 개체 6개를 대상으로 지정"
@@ -978,7 +978,7 @@ export default {
         ]
     },
     "AN": {
-        "name": "아나피",
+        "name": "Anaphi",
         "masteries": [
             "서로 다른 소환물 3개가 각각 적 3명을 죽이도록 함",
             "3개의 시나리오 각각에서 부정적 상태에 걸린 적을 대상으로 공격 8번 수행"
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "소울테더",
+        "name": "Soultether",
         "masteries": [
             "첫 번째 휴식 전에 서로 다른 소환 행동 3개를 수행하고 그 카드들을 시나리오 내내 활성 구역에 유지",
             "6개 시나리오의 첫 라운드들에 걸쳐 자신의 능력 카드에서 서로 다른 소환 능력 6개 수행"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "와일드퓨리",
+        "name": "Wildfury",
         "masteries": [
             "한 시나리오에서 자신의 매 차례마다 {WIND} 또는 {EARTH}를 주입하거나 소비",
             "한 시나리오에서 (모든 보너스 적용 후, 공격 수정 이전) 7 이상의 {COMMAND} 공격으로 적 4명 이상을 죽임"

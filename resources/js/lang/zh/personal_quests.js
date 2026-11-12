@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "保护与服务",
+        "name": "Protect and Serve",
         "progress": [
             "杀死十个羚牛族。",
             "完成{SCENARIO 33}。"
         ]
     },
     "cs-331": {
-        "name": "武器专家",
+        "name": "Weapons Specialist",
         "progress": [
             "消耗十五件{ONE-HAND}或{TWO-HANDS}道具"
         ]
     },
     "cs-332": {
-        "name": "实验",
+        "name": "Experimentation",
         "progress": [
             "打出30张卡牌，执行其遗失{LOST}行动。"
         ]
     },
     "cs-333": {
-        "name": "刺激追寻者",
+        "name": "Thrill Seeker",
         "progress": [
             "通过开门揭示房间板块二十次。"
         ]
     },
     "cs-334": {
-        "name": "陷阱布设者",
+        "name": "Trap Setter",
         "progress": [
             "在你的回合中解除陷阱或使敌人触发陷阱十五次。"
         ]
     },
     "cs-335": {
-        "name": "强盗克星",
+        "name": "Bandit Banisher",
         "progress": [
             "杀死十个卫兵或弓箭手。",
             "完成{SCENARIO 35}。"
         ]
     },
     "cs-336": {
-        "name": "光中生灵",
+        "name": "Creatures in the light",
         "progress": [
             "杀死二十个软泥怪、森林小妖或黑暗小妖。"
         ]
     },
     "cs-337": {
-        "name": "经验丰富的领袖",
+        "name": "Experienced leader",
         "progress": [
             "完成十二个场景，且每个场景至少获得12点经验。"
         ]
     },
     "cs-338": {
-        "name": "肾上腺素飙升",
+        "name": "Adrenaline Spike",
         "progress": [
             "在同一轮中杀死一个敌人并拾取其钱币标记，共十五次。"
         ]
     },
     "cs-339": {
-        "name": "相互支援",
+        "name": "Mutual Support",
         "progress": [
             "杀死30个与你的任意盟友相邻的敌人。"
         ]
     },
     "cs-340": {
-        "name": "愿你受到祝福",
+        "name": "Thy be Blessed",
         "progress": [
             "在攻击期间抽到{BLESS}卡牌十二次。"
         ]
     },
     "cs-341": {
-        "name": "灵魂的该隐",
+        "name": "Spiritual Cains",
         "progress": [
             "在附魔上花费200金币。"
         ]
     },
     "cs-342": {
-        "name": "苦痛之路",
+        "name": "The Path of Agony",
         "progress": [
             "经历盟友或敌人在其自身回合中死亡或筋疲力尽13次。"
         ]
     },
     "cs-343": {
-        "name": "残酷统治",
+        "name": "Cruel Dominion",
         "progress": [
             "完成10个场景，在其中你杀死了一个带有负面状态的敌人。"
         ]
     },
     "cs-344": {
-        "name": "自然选择",
+        "name": "Natural Selection",
         "progress": [
             "产生{FIRE}两次。",
             "产生{ICE}两次。",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "猎手与猎物",
+        "name": "Predator and Prey",
         "progress": [
             "在同一回合中杀死两个或更多敌人，共十五次。"
         ]
     },
     "cs-346": {
-        "name": "毒蛇分身",
+        "name": "An Adder Divides",
         "progress": [
             "在6个不同的场景中占据艰难地带。",
             "完成{SCENARIO 39}。"
         ]
     },
     "cs-347": {
-        "name": "野外研究",
+        "name": "Field Research",
         "progress": [
             "对二十种不同种类的怪物施加中毒{POISON}。"
         ]
     },
     "cs-348": {
-        "name": "召唤师之手",
+        "name": "Conjurers Hand",
         "progress": [
             "杀死十个被召唤的怪物。"
         ]
     },
     "cs-349": {
-        "name": "恶人无休",
+        "name": "No Rest for the Wicked",
         "progress": [
             "完成十个场景，期间不进行充分休息。"
         ]
     },
     "cs-350": {
-        "name": "健康第一",
+        "name": "Health First",
         "progress": [
             "完成七个场景，且结束时生命值全满。"
         ]
     },
     "cs-351": {
-        "name": "无尽搜寻",
+        "name": "Limitless Searching",
         "progress": [
             "拾取30个钱币标记。"
         ]
     },
     "cs-aa-001": {
-        "name": "不计代价",
+        "name": "At All Costs",
         "progress": [
             "经历8个场景，在其中你在与盟友相邻时按常规遗失一张卡牌来抵消伤害。",
             "完成{SCENARIO AA1}。"
         ]
     },
     "cs-aa-002": {
-        "name": "失败的重量",
+        "name": "The Weight of failure",
         "progress": [
             "完成8个场景，期间没有筋疲力尽，且生命值不超过2点。",
             "完成{SCENARIO AA2}"
         ]
     },
     "cs-qa-001": {
-        "name": "天才发明家",
+        "name": "Ingenious Inventor",
         "progress": [
-            "立刻获得“能量转换器”（道具 QA-01）",
-            "用“能量转换器”（道具 QA-01）杀死12个敌人",
+            "立刻获得“Power Modulator”（道具 QA-01）",
+            "用“Power Modulator”（道具 QA-01）杀死12个敌人",
             "完成{SCENARIO QA1}"
         ]
     },
     "cs-qa-002": {
-        "name": "废料潜水员",
+        "name": "Scrap Diver",
         "progress": [
             "通过单次行动拾取两个或更多钱币标记，共八次。",
             "拾取两个宝藏板块。",
@@ -337,7 +337,7 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "残暴执行者",
+        "name": "Brutal Enforcer",
         "progress": [
             "获得“锯齿刃”设计图（道具 RM-01）。",
             "对三十个敌人施加{WOUND}或{RUPTURE}。",
@@ -345,7 +345,7 @@ export default {
         ]
     },
     "cs-rm-002": {
-        "name": "顶级掠食者",
+        "name": "Apex Predator",
         "progress": [
             "经历二十轮：在你执行带有{CONSUMED}的行动期间或之后，有敌人死亡。",
             "完成{SCENARIO RM3}。"
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "先人陨落",
         "progress": [
-            "获得“以太灵望远镜”（道具 149），它不能被出售。",
-            "使用“以太灵望远镜”（道具 149）十次。",
+            "获得“Aesther Spyglass”（道具 149），它不能被出售。",
+            "使用“Aesther Spyglass”（道具 149）十次。",
             "阅读{SECTION} 115.2。",
             "完成{SCENARIO 63}。"
         ]
@@ -683,8 +683,8 @@ export default {
         "name": "践行圣光",
         "progress": [
             "立刻解锁{SCENARIO 65}。",
-            "找到“正义之盾”（道具 148）。",
-            "使用“正义之盾”（道具 148）抵消十次4点或更多伤害的攻击。",
+            "找到“Shield of the Righteous”（道具 148）。",
+            "使用“Shield of the Righteous”（道具 148）抵消十次4点或更多伤害的攻击。",
             "阅读{SECTION} 82.1。"
         ]
     },
@@ -725,7 +725,7 @@ export default {
     "gh2-17": {
         "name": "刀尖舔血",
         "progress": [
-            "获得“实验装甲”（道具 150）。",
+            "获得“Experimental Armor”（道具 150）。",
             "使用它令20个敌人承受伤害。",
             "阅读{SECTION} 47.4。"
         ]

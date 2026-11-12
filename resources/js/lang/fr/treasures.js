@@ -336,19 +336,19 @@ export default {
         "name": "« Anneau de Récupération » (Objet 32)"
     },
     "cs-1": {
-        "name": "« Sang de Wyverne » (Objet 59)"
+        "name": "«Drakes Blood» (Objet 59)"
     },
     "cs-2": {
-        "name": "« Orbe de Fortune » (Objet 09)"
+        "name": "«Orb of Fortune» (Objet 09)"
     },
     "cs-3": {
-        "name": "« Masse à Chaîne » (Objet 14)"
+        "name": "«Chain Mace» (Objet 14)"
     },
     "cs-4": {
         "name": "15 pièces d'or et récupérez une carte perdue"
     },
     "cs-5": {
-        "name": "« Mine à Commotion » (Objet 31)"
+        "name": "«Concussion Mine» (Objet 31)"
     },
     "cs-6": {
         "name": "20 pièces d'or et désarmez tous les pièges adjacents"
@@ -357,34 +357,34 @@ export default {
         "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-8": {
-        "name": "« Teinture Vertigineuse » (Objet 58)"
+        "name": "«Dizzying Tincture» (Objet 58)"
     },
     "cs-9": {
-        "name": "« Orbe de Fortune » (Objet 9)"
+        "name": "«Orb of Fortune» (Objet 9)"
     },
     "cs-10": {
         "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-11": {
-        "name": "« Teinture Vertigineuse » (Objet 58)"
+        "name": "«Dizzying Tincture» (Objet 58)"
     },
     "cs-12": {
-        "name": "« Médecine de Mana » (Objet 60)"
+        "name": "«Mana Medicine» (Objet 60)"
     },
     "cs-13": {
-        "name": "« Orbe de Désespoir » (Objet 10)"
+        "name": "«Orb of Despair» (Objet 10)"
     },
     "cs-14": {
-        "name": "« Casque d'Acier » (Objet 22)"
+        "name": "«Steel Helmet» (Objet 22)"
     },
     "cs-15": {
-        "name": "« Boussole Changeante » (Objet 32)"
+        "name": "«Shifting Compass» (Objet 32)"
     },
     "cs-16": {
         "name": "Effectuez « Soin 6, Soi-même », gagnez {POISON}"
     },
     "cs-17": {
-        "name": "« Mine à Commotion » (Objet 31)"
+        "name": "«Concussion Mine» (Objet 31)"
     },
     "cs-18": {
         "name": "“Boneclad Shawl (Item 25)"
@@ -396,40 +396,40 @@ export default {
         "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-21": {
-        "name": "« Casque d'Acier » (Objet 22)"
+        "name": "«Steel Helmet» (Objet 22)"
     },
     "cs-22": {
-        "name": "« Bottes de Perpétuité » (Objet 19)"
+        "name": "«Boots of Perpetuity» (Objet 19)"
     },
     "cs-23": {
-        "name": "« Heaume Trophée » (Objet 12)"
+        "name": "«Trophy Helm» (Objet 12)"
     },
     "cs-24": {
         "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-25": {
-        "name": "« Jambières Drainantes » (Objet 15)"
+        "name": "«Draining Greaves» (Objet 15)"
     },
     "cs-26": {
-        "name": "« Collet de Fer » (Objet 30)"
+        "name": "«Iron Snare» (Objet 30)"
     },
     "cs-27": {
-        "name": "« Armure de Plaques Tissées » (Objet 23)"
+        "name": "«Woven Plate Armor» (Objet 23)"
     },
     "cs-28": {
-        "name": "« Masse à Chaîne » (Objet 14)"
+        "name": "«Chain Mace» (Objet 14)"
     },
     "cs-29": {
-        "name": "« Armure de Plaques Tissées » (Objet 23)"
+        "name": "«Woven Plate Armor» (Objet 23)"
     },
     "cs-30": {
-        "name": "« Châle d'Os » (Objet 25)"
+        "name": "«Boneclad Shawl» (Objet 25)"
     },
     "cs-31": {
-        "name": "« Sang de Wyverne » (Objet 59)"
+        "name": "«Drakes Blood» (Objet 59)"
     },
     "cs-32": {
-        "name": "« Pendentif Curieux » (Objet 20)"
+        "name": "«Curious Pendant» (Objet 20)"
     },
     "cs-33": {
         "name": "25 pièces d'or, gagnez {POISON}"
@@ -438,40 +438,40 @@ export default {
         "name": "Subissez les dégâts du terrain dangereux, gagnez {INVISIBLE}"
     },
     "cs-35": {
-        "name": "« Lame de Sang-Maudit » (Objet 36)"
+        "name": "«Curseblood Blade» (Objet 36)"
     },
     "cs-36": {
         "name": "10 XP, gagnez {INVSIBLE}"
     },
     "cs-37": {
-        "name": "« Jambières Drainantes » (Objet 15)"
+        "name": "«Draining Greaves» (Objet 15)"
     },
     "cs-38": {
-        "name": "« Pic de Guerre » (Objet 13)"
+        "name": "«War Pick» (Objet 13)"
     },
     "cs-39": {
-        "name": "« Lunettes Infrarouges » (Objet 21)"
+        "name": "«Infrared Goggles» (Objet 21)"
     },
     "cs-40": {
         "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-41": {
-        "name": "« Gantelets d'Acier-Cendre » (Objet 61)"
+        "name": "«Ashsteel Gauntlets» (Objet 61)"
     },
     "cs-42": {
-        "name": "« Pic de Guerre » (Objet 13)"
+        "name": "«War Pick» (Objet 13)"
     },
     "cs-43": {
         "name": "10 XP et rafraîchissez tous les objets dépensés"
     },
     "cs-44": {
-        "name": "« Médecine de Mana » (Objet 60)"
+        "name": "«Mana Medicine» (Objet 60)"
     },
     "cs-45": {
         "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
     },
     "cs-46": {
-        "name": "Modèle de « Dague en Croc de Vipère » (Objet 54)"
+        "name": "Modèle de «Vipertooth Dagger» (Objet 54)"
     },
     "cs-47": {
         "name": "15 pièces d'or"
@@ -483,7 +483,7 @@ export default {
         "name": "« Cuissardes de Magma » (Objet gh-99)"
     },
     "cs-50": {
-        "name": "« Clair de Lune en Bouteille » (Objet 18)"
+        "name": "«Bottled Moonlight» (Objet 18)"
     },
     "fh-1": {
         "name": "Gagnez quatre cartes Butin."
@@ -810,7 +810,7 @@ export default {
         "name": "15 pièces d'or"
     },
     "gh2-24": {
-        "name": "« Baguette de Protection » (Objet 104)"
+        "name": "«Warding Rod» (Objet 104)"
     },
     "gh2-25": {
         "name": "1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "2 ✔"
     },
     "gh2-29": {
-        "name": "« Bottes Chargées » (Objet 100)"
+        "name": "«Charged Boots» (Objet 100)"
     },
     "gh2-30": {
         "name": "20 XP"
@@ -843,7 +843,7 @@ export default {
         "name": "« Heaume d'Écailles de Wyverne » (Objet 121)"
     },
     "gh2-35": {
-        "name": "« Bâton de Transfert » (Objet 115)"
+        "name": "«Rod of Transference» (Objet 115)"
     },
     "gh2-36": {
         "name": "Modèle d'objet aléatoire"
@@ -915,13 +915,13 @@ export default {
         "name": "20 pièces d'or"
     },
     "gh2-59": {
-        "name": "« Bouclier du Juste » (Objet 148)"
+        "name": "«Shield of the Righteous» (Objet 148)"
     },
     "gh2-60": {
         "name": "Subissez 5 dégâts"
     },
     "gh2-61": {
-        "name": "« Bottes d'Appui » (Objet 143)"
+        "name": "«Boots of Bracing» (Objet 143)"
     },
     "gh2-62": {
         "name": "20 pièces d'or"
@@ -933,7 +933,7 @@ export default {
         "name": "Modèle d'objet aléatoire"
     },
     "gh2-65": {
-        "name": "« Capuche du Rôdeur » (Objet 103)"
+        "name": "«Ranger's Hood» (Objet 103)"
     },
     "gh2-66": {
         "name": "{POISON} et {STRENGTHEN} et récupérez 2 cartes perdues"

@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "琥珀盾卫者",
+        "name": "Amber Aegis",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{-1_WHITE}“在{RANGE}2以内的任意空格放置一个你选择的{COLONY} {COLONY_ICON}标记”卡牌",
             "移除两张{-1_WHITE}卡牌",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "工匠",
+        "name": "Artificer",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{-1_WHITE} {ANY}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE} {DISARM}卡牌",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "烈焰轰炸",
+        "name": "Bombard",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将两张{+0_WHITE}卡牌替换为两张{AGAIN} {PIERCE}3卡牌",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "灵机一动",
+        "name": "Brightspark",
         "perks": [
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE}“{ANY_X}以附加+2 {ATTACK}”卡牌",
             "将一张{-2_WHITE}卡牌替换为一张{-2_WHITE}“从你的弃牌堆中随机{RECOVER}一张卡牌”卡牌",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "锁链庇护",
+        "name": "Chainguard",
         "perks": [
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE} “{SHACKLE} {CG_CIRCLE}”卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE}“如果目标处于{SHACKLED} {CG_CIRCLE}，则{+2_WHITE}”卡牌",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "酋长之威",
+        "name": "Chieftain",
         "perks": [
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE} {POISON}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE} “{HEAL}1, {CT_CIRCLE}”卡牌",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "炎骑破阵",
+        "name": "Fire Knight",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE}“{STRENGTHEN}（盟友）”卡牌",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "圣祭之怒",
+        "name": "Hierophant",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将两张{+0_WHITE}卡牌替换为一张{AGAIN} {LIGHT}卡牌",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "空洞契约者",
+        "name": "Hollowpact",
         "perks": [
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE}“{HEAL}2，自身”卡牌",
             "将两张{+0_WHITE}卡牌替换为一张{+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}”卡牌",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "光辉主宰",
+        "name": "Luminary",
         "perks": [
             "移除四张{+0_WHITE}卡牌",
             "将一张{+0_WHITE}卡牌替换为一张{+2_WHITE}卡牌",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "泥足行者",
+        "name": "Mirefoot",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{+0_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE}卡牌",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "毁灭巨口",
+        "name": "Ruinmaw",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{-1_WHITE} {RUPTURE}和{WOUND}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE} {WOUND}卡牌",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "灵召术",
+        "name": "Spirit Caller",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{-1_WHITE}卡牌和一张{+1_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE}“如果由{SPIRIT} {SP_CIRCLE}执行攻击，则{+2_WHITE}”卡牌",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "星芒乱射",
+        "name": "Starslinger",
         "perks": [
             "将两张{+0_WHITE}卡牌替换为一张{AGAIN} “{HEAL}1，自身”卡牌",
             "将一张{-2_WHITE}卡牌替换为一张{-1_WHITE} {DISARM}卡牌和一张{-1_WHITE} “{INVISIBLE}，自身”卡牌",
@@ -917,7 +917,7 @@ export default {
         ]
     },
     "SA": {
-        "name": "萨沙",
+        "name": "Satha",
         "masteries": [
             "在整个剧本中，除了执行充分休息时，使至少一个盟友在你的每个回合中都执行一个移动或攻击能力",
             "在整个剧本中，从不让盟友成为攻击的目标"
@@ -938,7 +938,7 @@ export default {
         ]
     },
     "HA": {
-        "name": "黑尔",
+        "name": "Hail",
         "masteries": [
             "在整个剧本中，每轮至少获得1个{RESOLVE_WHITE}",
             "在单一剧本中，连续三轮，每轮至少消耗3个{RESOLVE_WHITE}"
@@ -959,7 +959,7 @@ export default {
         ]
     },
     "CA": {
-        "name": "卡珊德拉",
+        "name": "Cassandra",
         "masteries": [
             "在整个剧本中，每轮至少从一个攻击修正牌库或怪物能力牌库中翻开一张卡牌",
             "以一个能力，以占据含有{RIFT_WHITE}格子的个体为目标，共6个个体"
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "召唤师",
+        "name": "Soultether",
         "masteries": [
             "在你首次休息之前，执行3个不同的召唤能力，并保持对应的卡牌在激活区域直至剧本结束",
             "在6个剧本的首轮中，执行6个不同的召唤能力"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "兽王",
+        "name": "Wildfury",
         "masteries": [
             "在单一剧本中，在你的每个回合灌注或消耗{WIND}或{EARTH}",
             "在单一剧本中，用攻击值为7或更高（计算所有加成之后，攻击修正之前）的{COMMAND}攻击消灭4个或更多敌人"

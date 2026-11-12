@@ -258,37 +258,37 @@ export default {
         "name": "Szabotőrök"
     },
     "cs-PCSOD": {
-        "name": "Iszap elpusztítva"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "Lehullott láva"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "Kövesd a pénzt"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "Megfagyott harcos"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "Tölgy szövetség"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "Inox szövetség"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "Guttermaw jutalma"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "Feirgrin kérése"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "Elveszett bájital"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "Vedd el a pénzt"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "Sikeres zsoldosok"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "A Jégbeszélők barátja"
@@ -381,25 +381,25 @@ export default {
         "name": "A Hó szíve"
     },
     "gh2-G2ATD": {
-        "name": "Az eszköz aktiválása"
+        "name": "Activating the Device"
     },
     "gh2-G2AUP": {
-        "name": "Nyugtalan béke"
+        "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
         "name": "Ősi technológia"
     },
     "gh2-G2CRD": {
-        "name": "Városvezetés: Démonok"
+        "name": "City Rule: Demons"
     },
     "gh2-G2CRME": {
-        "name": "Városvezetés: Kereskedők"
+        "name": "City Rule: Merchants"
     },
     "gh2-G2CRMI": {
-        "name": "Városvezetés: Katonaság"
+        "name": "City Rule: Military"
     },
     "gh2-G2EM": {
-        "name": "Elemek uralva"
+        "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
         "name": "A romlás vége"
@@ -408,22 +408,22 @@ export default {
         "name": "A Homály végzete"
     },
     "gh2-G2HW": {
-        "name": "Szentelt vizek"
+        "name": "Hallowed Waters"
     },
     "gh2-G2ITD": {
-        "name": "A mélybe"
+        "name": "Into the Depths"
     },
     "gh2-G2PTB": {
-        "name": "Béke vérontással"
+        "name": "Peace Through Bloodshed"
     },
     "gh2-G2TCE": {
-        "name": "A gyertya kioltva"
+        "name": "The Candle Extinguished"
     },
     "gh2-G2TCK": {
-        "name": "A gyertya megőrizve"
+        "name": "The Candle Kept"
     },
     "gh2-G2TDR": {
-        "name": "A sötétség visszavonul"
+        "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
         "name": "A gyík megsegítése"
@@ -441,27 +441,27 @@ export default {
         "name": "A Hang elhallgat"
     },
     "gh2-P2R16": {
-        "name": "Frakció hírnév 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "Frakció hírnév 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
-        "name": "Démon hírnév 6"
+        "name": "Demon Reputation 6"
     },
     "gh2-P2RD12": {
-        "name": "Démon hírnév 12"
+        "name": "Demon Reputation 12"
     },
     "gh2-P2RME6": {
-        "name": "Kereskedő hírnév 6"
+        "name": "Merchant Reputation 6"
     },
     "gh2-P2RME12": {
-        "name": "Kereskedő hírnév 12"
+        "name": "Merchant Reputation 12"
     },
     "gh2-P2RMI6": {
-        "name": "Katonai hírnév 6"
+        "name": "Military Reputation 6"
     },
     "gh2-P2RMI12": {
-        "name": "Katonai hírnév 12"
+        "name": "Military Reputation 12"
     }
 }

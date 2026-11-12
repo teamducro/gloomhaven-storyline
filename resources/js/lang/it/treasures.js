@@ -336,19 +336,19 @@ export default {
         "name": "“Anello della Guarigione” (Oggetto 32)"
     },
     "cs-1": {
-        "name": "“Sangue di Draco” (Oggetto 59)"
+        "name": "“Drakes Blood” (Oggetto 59)"
     },
     "cs-2": {
-        "name": "“Globo della Fortuna” (Oggetto 09)"
+        "name": "“Orb of Fortune” (Oggetto 09)"
     },
     "cs-3": {
-        "name": "“Mazza a Catena” (Oggetto 14)"
+        "name": "“Chain Mace” (Oggetto 14)"
     },
     "cs-4": {
         "name": "Ottieni 15 monete d'oro e recupera una carta persa"
     },
     "cs-5": {
-        "name": "“Mina a Concussione” (Oggetto 31)"
+        "name": "“Concussion Mine” (Oggetto 31)"
     },
     "cs-6": {
         "name": "Ottieni 20 monete d'oro e disinnesca tutte le trappole adiacenti"
@@ -357,34 +357,34 @@ export default {
         "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
     },
     "cs-8": {
-        "name": "“Tintura Stordente” (Oggetto 58)"
+        "name": "“Dizzying Tincture” (Oggetto 58)"
     },
     "cs-9": {
-        "name": "“Globo della Fortuna” (Oggetto 9)"
+        "name": "“Orb of Fortune” (Oggetto 9)"
     },
     "cs-10": {
         "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
     },
     "cs-11": {
-        "name": "“Tintura Stordente” (Oggetto 58)"
+        "name": "“Dizzying Tincture” (Oggetto 58)"
     },
     "cs-12": {
-        "name": "“Medicina del Mana” (Oggetto 60)"
+        "name": "“Mana Medicine” (Oggetto 60)"
     },
     "cs-13": {
-        "name": "“Globo della Disperazione” (Oggetto 10)"
+        "name": "“Orb of Despair” (Oggetto 10)"
     },
     "cs-14": {
-        "name": "“Elmo d'Acciaio” (Oggetto 22)"
+        "name": "“Steel Helmet” (Oggetto 22)"
     },
     "cs-15": {
-        "name": "“Bussola Mutevole” (Oggetto 32)"
+        "name": "“Shifting Compass” (Oggetto 32)"
     },
     "cs-16": {
         "name": "Esegui “Cura 6, Se Stesso”, ottieni {POISON}"
     },
     "cs-17": {
-        "name": "“Mina a Concussione” (Oggetto 31)"
+        "name": "“Concussion Mine” (Oggetto 31)"
     },
     "cs-18": {
         "name": "“Boneclad Shawl (Item 25)"
@@ -396,40 +396,40 @@ export default {
         "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
     },
     "cs-21": {
-        "name": "“Elmo d'Acciaio” (Oggetto 22)"
+        "name": "“Steel Helmet” (Oggetto 22)"
     },
     "cs-22": {
-        "name": "“Stivali della Perpetuità” (Oggetto 19)"
+        "name": "“Boots of Perpetuity” (Oggetto 19)"
     },
     "cs-23": {
-        "name": "“Elmo Trofeo” (Oggetto 12)"
+        "name": "“Trophy Helm” (Oggetto 12)"
     },
     "cs-24": {
         "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
     },
     "cs-25": {
-        "name": "“Gambali Drenanti” (Oggetto 15)"
+        "name": "“Draining Greaves” (Oggetto 15)"
     },
     "cs-26": {
-        "name": "“Laccio di Ferro” (Oggetto 30)"
+        "name": "“Iron Snare” (Oggetto 30)"
     },
     "cs-27": {
-        "name": "“Armatura di Piastre Intrecciate” (Oggetto 23)"
+        "name": "“Woven Plate Armor” (Oggetto 23)"
     },
     "cs-28": {
-        "name": "“Mazza a Catena” (Oggetto 14)"
+        "name": "“Chain Mace” (Oggetto 14)"
     },
     "cs-29": {
-        "name": "“Armatura di Piastre Intrecciate” (Oggetto 23)"
+        "name": "“Woven Plate Armor” (Oggetto 23)"
     },
     "cs-30": {
-        "name": "“Scialle d'Ossa” (Oggetto 25)"
+        "name": "“Boneclad Shawl” (Oggetto 25)"
     },
     "cs-31": {
-        "name": "“Sangue di Draco” (Oggetto 59)"
+        "name": "“Drakes Blood” (Oggetto 59)"
     },
     "cs-32": {
-        "name": "“Pendente Curioso” (Oggetto 20)"
+        "name": "“Curious Pendant” (Oggetto 20)"
     },
     "cs-33": {
         "name": "25 monete d'oro, ottieni {POISON}"
@@ -438,40 +438,40 @@ export default {
         "name": "Subisci i danni del terreno pericoloso, ottieni {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Lama del Sangue Maledetto” (Oggetto 36)"
+        "name": "“Curseblood Blade” (Oggetto 36)"
     },
     "cs-36": {
         "name": "10 punti esperienza, ottieni {INVSIBLE}"
     },
     "cs-37": {
-        "name": "“Gambali Drenanti” (Oggetto 15)"
+        "name": "“Draining Greaves” (Oggetto 15)"
     },
     "cs-38": {
-        "name": "“Piccone da Guerra” (Oggetto 13)"
+        "name": "“War Pick” (Oggetto 13)"
     },
     "cs-39": {
-        "name": "“Occhiali a Infrarossi” (Oggetto 21)"
+        "name": "“Infrared Goggles” (Oggetto 21)"
     },
     "cs-40": {
         "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
     },
     "cs-41": {
-        "name": "“Guanti di Acciaio Cinereo” (Oggetto 61)"
+        "name": "“Ashsteel Gauntlets” (Oggetto 61)"
     },
     "cs-42": {
-        "name": "“Piccone da Guerra” (Oggetto 13)"
+        "name": "“War Pick” (Oggetto 13)"
     },
     "cs-43": {
         "name": "10 punti esperienza e ricarica tutti gli oggetti spesi"
     },
     "cs-44": {
-        "name": "“Medicina del Mana” (Oggetto 60)"
+        "name": "“Mana Medicine” (Oggetto 60)"
     },
     "cs-45": {
         "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
     },
     "cs-46": {
-        "name": "Modello di “Pugnale Dente di Vipera” (Oggetto 54)"
+        "name": "Modello di “Vipertooth Dagger” (Oggetto 54)"
     },
     "cs-47": {
         "name": "15 monete d'oro"
@@ -483,7 +483,7 @@ export default {
         "name": "“Stivali di Magma” (Oggetto gh-99)"
     },
     "cs-50": {
-        "name": "“Luce di Luna in Bottiglia” (Oggetto 18)"
+        "name": "“Bottled Moonlight” (Oggetto 18)"
     },
     "fh-1": {
         "name": "Ottieni quattro carte bottino."
@@ -810,7 +810,7 @@ export default {
         "name": "Ottieni 15 monete d'oro"
     },
     "gh2-24": {
-        "name": "Ottieni “Verga della Protezione” (Oggetto 104)"
+        "name": "Ottieni “Warding Rod” (Oggetto 104)"
     },
     "gh2-25": {
         "name": "Ottieni 1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "Ottieni 2 ✔"
     },
     "gh2-29": {
-        "name": "Ottieni “Stivali Carichi” (Oggetto 100)"
+        "name": "Ottieni “Charged Boots” (Oggetto 100)"
     },
     "gh2-30": {
         "name": "Ottieni 20 punti esperienza"
@@ -843,7 +843,7 @@ export default {
         "name": "Ottieni “Elmo di Scaglie di Draco” (Oggetto 121)"
     },
     "gh2-35": {
-        "name": "Ottieni “Verga del Trasferimento” (Oggetto 115)"
+        "name": "Ottieni “Rod of Transference” (Oggetto 115)"
     },
     "gh2-36": {
         "name": "Modello di oggetto casuale"
@@ -915,13 +915,13 @@ export default {
         "name": "Ottieni 20 monete d'oro"
     },
     "gh2-59": {
-        "name": "Ottieni “Scudo dei Giusti” (Oggetto 148)"
+        "name": "Ottieni “Shield of the Righteous” (Oggetto 148)"
     },
     "gh2-60": {
         "name": "Subisci 5 danni"
     },
     "gh2-61": {
-        "name": "Ottieni “Stivali di Sostegno” (Oggetto 143)"
+        "name": "Ottieni “Boots of Bracing” (Oggetto 143)"
     },
     "gh2-62": {
         "name": "Ottieni 20 monete d'oro"
@@ -933,7 +933,7 @@ export default {
         "name": "Modello di oggetto casuale"
     },
     "gh2-65": {
-        "name": "Ottieni “Cappuccio del Ranger” (Oggetto 103)"
+        "name": "Ottieni “Ranger's Hood” (Oggetto 103)"
     },
     "gh2-66": {
         "name": "Ottieni {POISON} e {STRENGTHEN} e recupera 2 carte perse"

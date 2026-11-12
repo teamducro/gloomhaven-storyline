@@ -258,37 +258,37 @@ export default {
         "name": "破坏者"
     },
     "cs-PCSOD": {
-        "name": "软泥怪被消灭"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "坠落的熔岩"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "追踪钱财"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "冰封战士"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "橡树同盟"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "羚牛族同盟"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "阴沟巨口的赏金"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "费格林的请求"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "遗失的药水"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "拿走钱财"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "功成名就的雇佣兵"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "冰语者之友"
@@ -441,10 +441,10 @@ export default {
         "name": "让神秘之声沉寂"
     },
     "gh2-P2R16": {
-        "name": "阵营声望16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "阵营声望20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
         "name": "恶魔声望6"

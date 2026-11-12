@@ -336,19 +336,19 @@ export default {
         "name": "„Prsten obnovy“ (předmět 32)"
     },
     "cs-1": {
-        "name": "„Dračí krev“ (předmět 59)"
+        "name": "„Drakes Blood“ (předmět 59)"
     },
     "cs-2": {
-        "name": "„Koule štěstí“ (předmět 09)"
+        "name": "„Orb of Fortune“ (předmět 09)"
     },
     "cs-3": {
-        "name": "„Řetězový palcát“ (předmět 14)"
+        "name": "„Chain Mace“ (předmět 14)"
     },
     "cs-4": {
         "name": "Získejte 15 zlaťáků a získejte zpět jednu ztracenou kartu"
     },
     "cs-5": {
-        "name": "„Otřesová mina“ (předmět 31)"
+        "name": "„Concussion Mine“ (předmět 31)"
     },
     "cs-6": {
         "name": "Získejte 20 zlaťáků a zneškodněte všechny sousední pasti"
@@ -357,37 +357,37 @@ export default {
         "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
     },
     "cs-8": {
-        "name": "„Závratná tinktura“ (předmět 58)"
+        "name": "„Dizzying Tincture“ (předmět 58)"
     },
     "cs-9": {
-        "name": "„Koule štěstí“ (předmět 9)"
+        "name": "„Orb of Fortune“ (předmět 9)"
     },
     "cs-10": {
         "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
     },
     "cs-11": {
-        "name": "„Závratná tinktura“ (předmět 58)"
+        "name": "„Dizzying Tincture“ (předmět 58)"
     },
     "cs-12": {
-        "name": "„Léčivý elixír many“ (předmět 60)"
+        "name": "„Mana Medicine“ (předmět 60)"
     },
     "cs-13": {
-        "name": "„Koule zoufalství“ (předmět 10)"
+        "name": "„Orb of Despair“ (předmět 10)"
     },
     "cs-14": {
-        "name": "„Ocelová přilba“ (předmět 22)"
+        "name": "„Steel Helmet“ (předmět 22)"
     },
     "cs-15": {
-        "name": "„Měnlivý kompas“ (předmět 32)"
+        "name": "„Shifting Compass“ (předmět 32)"
     },
     "cs-16": {
         "name": "Proveďte „Léčení 6, sebe“, získejte {POISON}"
     },
     "cs-17": {
-        "name": "„Otřesová mina“ (předmět 31)"
+        "name": "„Concussion Mine“ (předmět 31)"
     },
     "cs-18": {
-        "name": "„Šál s kostěným krytím“ (předmět 25)"
+        "name": "„Boneclad Shawl“ (předmět 25)"
     },
     "cs-19": {
         "name": "Získejte ✓ a vygenerujte libovolný živel"
@@ -396,40 +396,40 @@ export default {
         "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
     },
     "cs-21": {
-        "name": "„Ocelová přilba“ (předmět 22)"
+        "name": "„Steel Helmet“ (předmět 22)"
     },
     "cs-22": {
-        "name": "„Boty věčnosti“ (předmět 19)"
+        "name": "„Boots of Perpetuity“ (předmět 19)"
     },
     "cs-23": {
-        "name": "„Trofejní přilba“ (předmět 12)"
+        "name": "„Trophy Helm“ (předmět 12)"
     },
     "cs-24": {
         "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
     },
     "cs-25": {
-        "name": "„Vysávající holeně“ (předmět 15)"
+        "name": "„Draining Greaves“ (předmět 15)"
     },
     "cs-26": {
-        "name": "„Železná smyčka“ (předmět 30)"
+        "name": "„Iron Snare“ (předmět 30)"
     },
     "cs-27": {
-        "name": "„Pletená plátová zbroj“ (předmět 23)"
+        "name": "„Woven Plate Armor“ (předmět 23)"
     },
     "cs-28": {
-        "name": "„Řetězový palcát“ (předmět 14)"
+        "name": "„Chain Mace“ (předmět 14)"
     },
     "cs-29": {
-        "name": "„Pletená plátová zbroj“ (předmět 23)"
+        "name": "„Woven Plate Armor“ (předmět 23)"
     },
     "cs-30": {
         "name": "„Šál s kostěným krytím (předmět 25)"
     },
     "cs-31": {
-        "name": "„Dračí krev“ (předmět 59)"
+        "name": "„Drakes Blood“ (předmět 59)"
     },
     "cs-32": {
-        "name": "„Podivný přívěsek“ (předmět 20)"
+        "name": "„Curious Pendant“ (předmět 20)"
     },
     "cs-33": {
         "name": "25 zlaťáků, získejte {POISON}"
@@ -438,40 +438,40 @@ export default {
         "name": "Utrpěte zranění od nebezpečného terénu, získejte {INVISIBLE}"
     },
     "cs-35": {
-        "name": "„Čepel prokleté krve“ (předmět 36)"
+        "name": "„Curseblood Blade“ (předmět 36)"
     },
     "cs-36": {
         "name": "10 zkušeností, získejte {INVSIBLE}"
     },
     "cs-37": {
-        "name": "„Vysávající holeně“ (předmět 15)"
+        "name": "„Draining Greaves“ (předmět 15)"
     },
     "cs-38": {
-        "name": "„Válečný krumpáč“ (předmět 13)"
+        "name": "„War Pick“ (předmět 13)"
     },
     "cs-39": {
-        "name": "„Infračervené brýle“ (předmět 21)"
+        "name": "„Infrared Goggles“ (předmět 21)"
     },
     "cs-40": {
         "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
     },
     "cs-41": {
-        "name": "„Rukavice z popelové oceli“ (předmět 61)"
+        "name": "„Ashsteel Gauntlets“ (předmět 61)"
     },
     "cs-42": {
-        "name": "„Válečný krumpáč“ (předmět 13)"
+        "name": "„War Pick“ (předmět 13)"
     },
     "cs-43": {
         "name": "10 zkušeností a obnovte všechny použité předměty"
     },
     "cs-44": {
-        "name": "„Léčivý elixír many“ (předmět 60)"
+        "name": "„Mana Medicine“ (předmět 60)"
     },
     "cs-45": {
         "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
     },
     "cs-46": {
-        "name": "Nákres „Dýka ze zmijího zubu“ (předmět 54)"
+        "name": "Nákres „Vipertooth Dagger“ (předmět 54)"
     },
     "cs-47": {
         "name": "15 zlaťáků"
@@ -483,7 +483,7 @@ export default {
         "name": "„Magmové holínky“ (předmět gh-99)"
     },
     "cs-50": {
-        "name": "„Měsíční světlo v lahvi“ (předmět 18)"
+        "name": "„Bottled Moonlight“ (předmět 18)"
     },
     "fh-1": {
         "name": "Získejte čtyři karty kořisti."
@@ -810,7 +810,7 @@ export default {
         "name": "Získejte 15 zlaťáků"
     },
     "gh2-24": {
-        "name": "Získejte „Ochranný prut“ (předmět 104)"
+        "name": "Získejte „Warding Rod“ (předmět 104)"
     },
     "gh2-25": {
         "name": "Získejte 1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "Získejte 2 ✔"
     },
     "gh2-29": {
-        "name": "Získejte „Nabité boty“ (předmět 100)"
+        "name": "Získejte „Charged Boots“ (předmět 100)"
     },
     "gh2-30": {
         "name": "Získejte 20 zkušeností"
@@ -843,7 +843,7 @@ export default {
         "name": "Získejte „Přilba z dračích šupin“ (předmět 121)"
     },
     "gh2-35": {
-        "name": "Získejte „Prut přenosu“ (předmět 115)"
+        "name": "Získejte „Rod of Transference“ (předmět 115)"
     },
     "gh2-36": {
         "name": "Náhodný nákres předmětu"
@@ -915,13 +915,13 @@ export default {
         "name": "Získejte 20 zlaťáků"
     },
     "gh2-59": {
-        "name": "Získejte „Štít spravedlivých“ (předmět 148)"
+        "name": "Získejte „Shield of the Righteous“ (předmět 148)"
     },
     "gh2-60": {
         "name": "Utrpěte 5 zranění"
     },
     "gh2-61": {
-        "name": "Získejte „Boty vzepření“ (předmět 143)"
+        "name": "Získejte „Boots of Bracing“ (předmět 143)"
     },
     "gh2-62": {
         "name": "Získejte 20 zlaťáků"
@@ -933,7 +933,7 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh2-65": {
-        "name": "Získejte „Kapuce hraničáře“ (předmět 103)"
+        "name": "Získejte „Ranger's Hood“ (předmět 103)"
     },
     "gh2-66": {
         "name": "Získejte {POISON} a {STRENGTHEN} a získejte zpět 2 ztracené karty"

@@ -2029,1450 +2029,1450 @@ export default {
     },
     "cs": {
         "alate-dispersion": {
-            "name": "กระจายปีก"
+            "name": "alate dispersion"
         },
         "rockspine-termite": {
-            "name": "ปลวกหนามหิน"
+            "name": "rockspine termite"
         },
         "anti-venom": {
-            "name": "แก้พิษ"
+            "name": "anti-venom"
         },
         "assimilate-adversaries": {
-            "name": "กลืนกลายศัตรู"
+            "name": "assimilate adversaries"
         },
         "birthing-chambers": {
-            "name": "ห้องคลอด"
+            "name": "birthing chambers"
         },
         "ghostshimmer-bee": {
-            "name": "ผึ้งแสงผี"
+            "name": "ghostshimmer bee"
         },
         "burning-stingers": {
-            "name": "เหล็กในลุกไหม้"
+            "name": "burning stingers"
         },
         "burrow-under": {
-            "name": "ขุดใต้ดิน"
+            "name": "burrow under"
         },
         "clad-in-spikes": {
-            "name": "หุ้มหนาม"
+            "name": "clad in spikes"
         },
         "coordinated-infestation": {
-            "name": "การรุกรานประสานกัน"
+            "name": "coordinated infestation"
         },
         "corrosive-spittle": {
-            "name": "น้ำลายกัดกร่อน"
+            "name": "corrosive spittle"
         },
         "divide-and-conquer": {
-            "name": "แบ่งแยกและพิชิต"
+            "name": "divide and conquer"
         },
         "beta-aegis": {
-            "name": "เบต้าคุ้มกัน"
+            "name": "beta aegis"
         },
         "encasing-webs": {
-            "name": "ใยห่อหุ้ม"
+            "name": "encasing webs"
         },
         "erupting-mandibles": {
-            "name": "ปากเขี้ยวปะทุ"
+            "name": "erupting mandibles"
         },
         "ferocious-proliferation": {
-            "name": "การแพร่ขยายดุร้าย"
+            "name": "ferocious proliferation"
         },
         "firespitter-ant": {
-            "name": "มดพ่นไฟ"
+            "name": "firespitter ant"
         },
         "frantic-migration": {
-            "name": "การอพยพบ้าคลั่ง"
+            "name": "frantic migration"
         },
         "horned-carapace": {
-            "name": "กระดองมีเขา"
+            "name": "horned carapace"
         },
         "lacerating-horde": {
-            "name": "ฝูงกรีดเฉือน"
+            "name": "lacerating horde"
         },
         "maddening-chatter": {
-            "name": "เสียงพูดจอแจบ้าคลั่ง"
+            "name": "maddening chatter"
         },
         "march-of-multitudes": {
-            "name": "ขบวนมหาชน"
+            "name": "march of multitudes"
         },
         "nurture-the-weak": {
-            "name": "ดูแลผู้อ่อนแอ"
+            "name": "nurture the weak"
         },
         "overwhelming-swarm": {
-            "name": "ฝูงท่วมท้น"
+            "name": "overwhelming swarm"
         },
         "primal-pheromones": {
-            "name": "ฟีโรโมนดึกดำบรรพ์"
+            "name": "primal pheromones"
         },
         "repel-intruders": {
-            "name": "ขับไล่ผู้บุกรุก"
+            "name": "repel intruders"
         },
         "retribution-of-the-hive": {
-            "name": "การลงทัณฑ์ของรัง"
+            "name": "retribution of the hive"
         },
         "seek-nourishment": {
-            "name": "แสวงหาอาหาร"
+            "name": "seek nourishment"
         },
         "sentry-swarm": {
-            "name": "ฝูงยาม"
+            "name": "sentry swarm"
         },
         "shelter-the-nest": {
-            "name": "ปกป้องรัง"
+            "name": "shelter the nest"
         },
         "stalk-the-prey": {
-            "name": "ตามล่าเหยื่อ"
+            "name": "stalk the prey"
         },
         "deathshroud-spider": {
-            "name": "แมงมุมผ้าคลุมมรณะ"
+            "name": "deathshroud spider"
         },
         "steelsilk-weaver": {
-            "name": "ช่างทอ สตีลซิลค์"
+            "name": "steelsilk weaver"
         },
         "supreme-authority": {
-            "name": "อำนาจสูงสุด"
+            "name": "supreme authority"
         },
         "violent-outlash": {
-            "name": "การระเบิดรุนแรง"
+            "name": "violent outlash"
         },
         "bk-back": {
             "name": "bk-back"
         },
         "acquire-funding": {
-            "name": "ระดมทุน"
+            "name": "acquire funding"
         },
         "advanced-research": {
-            "name": "วิจัยขั้นสูง"
+            "name": "advanced research"
         },
         "antibiotic-boost": {
-            "name": "เสริมยาปฏิชีวนะ"
+            "name": "antibiotic boost"
         },
         "astronomical-strike": {
-            "name": "โจมตีดาราศาสตร์"
+            "name": "astronomical strike"
         },
         "black-hole": {
-            "name": "หลุมดำ"
+            "name": "black hole"
         },
         "befuddling-serum": {
-            "name": "เซรุ่มทำให้สับสน"
+            "name": "befuddling serum"
         },
         "blinding-lightwaves": {
-            "name": "คลื่นแสงจ้า"
+            "name": "blinding lightwaves"
         },
         "cell-regeneration": {
-            "name": "ฟื้นฟูเซลล์"
+            "name": "cell regeneration"
         },
         "contagious-malady": {
-            "name": "โรคติดต่อ"
+            "name": "contagious malady"
         },
         "corrosive-combustion": {
-            "name": "การเผาไหม้กัดกร่อน"
+            "name": "corrosive combustion"
         },
         "critical-hypothesis": {
-            "name": "สมมติฐานวิกฤต"
+            "name": "critical hypothesis"
         },
         "critical-observation": {
-            "name": "การสังเกตวิกฤต"
+            "name": "critical observation"
         },
         "dynamic-balance": {
-            "name": "สมดุลพลวัต"
+            "name": "dynamic balance"
         },
         "electromagnetism": {
-            "name": "แม่เหล็กไฟฟ้า"
+            "name": "electromagnetism"
         },
         "metal-detector": {
-            "name": "เครื่องตรวจจับโลหะ"
+            "name": "metal detector"
         },
         "elevated-chemicals": {
-            "name": "สารเคมีสูง"
+            "name": "elevated chemicals"
         },
         "elevated-intake": {
-            "name": "การบริโภคสูง"
+            "name": "elevated intake"
         },
         "elixir-of-life": {
-            "name": "น้ำอมฤตแห่งชีวิต"
+            "name": "elixir of life"
         },
         "enviromental-survey": {
-            "name": "สำรวจสิ่งแวดล้อม"
+            "name": "enviromental survey"
         },
         "exothermic-cocktail": {
-            "name": "ค็อกเทลคายความร้อน"
+            "name": "exothermic cocktail"
         },
         "frozen-explosion": {
-            "name": "การระเบิดเยือกแข็ง"
+            "name": "frozen explosion"
         },
         "leftover-tonic": {
-            "name": "โทนิคเหลือ"
+            "name": "leftover tonic"
         },
         "magnetic-field": {
-            "name": "สนามแม่เหล็ก"
+            "name": "magnetic field"
         },
         "molecular-hydroblast": {
-            "name": "โมเลกุลไฮโดรบลาสต์"
+            "name": "molecular hydroblast"
         },
         "nourishing-formula": {
-            "name": "สูตรบำรุง"
+            "name": "nourishing formula"
         },
         "nutrient-overdose": {
-            "name": "สารอาหารเกินขนาด"
+            "name": "nutrient overdose"
         },
         "preliminary-research": {
-            "name": "วิจัยเบื้องต้น"
+            "name": "preliminary research"
         },
         "strength-elixir": {
-            "name": "น้ำอมฤตพลัง"
+            "name": "strength elixir"
         },
         "transformation-libation": {
-            "name": "เครื่องดื่มแปลงร่าง"
+            "name": "transformation libation"
         },
         "ultraviolet-rays": {
-            "name": "รังสีอัลตราไวโอเลต"
+            "name": "ultraviolet rays"
         },
         "versatile-concoction": {
-            "name": "ส่วนผสมอเนกประสงค์"
+            "name": "versatile concoction"
         },
         "weather-forecast": {
-            "name": "พยากรณ์อากาศ"
+            "name": "weather forecast"
         },
         "bm-back": {
             "name": "bm-back"
         },
         "airborne-skyrocket": {
-            "name": "จรวดลอยฟ้า"
+            "name": "airborne skyrocket"
         },
         "ballistic-barrage": {
-            "name": "ระดมยิงขีปนาวุธ"
+            "name": "ballistic barrage"
         },
         "barbed-armor": {
-            "name": "เกราะหนาม"
+            "name": "barbed armor"
         },
         "chain-grapnel": {
-            "name": "สมอโซ่"
+            "name": "chain grapnel"
         },
         "consistent-firing": {
-            "name": "ยิงสม่ำเสมอ"
+            "name": "consistent firing"
         },
         "defense-mechanism": {
-            "name": "กลไกป้องกัน"
+            "name": "defense mechanism"
         },
         "distant-retribution": {
-            "name": "การลงทัณฑ์จากที่ไกล"
+            "name": "distant retribution"
         },
         "double-cannons": {
-            "name": "ปืนใหญ่คู่"
+            "name": "double cannons"
         },
         "exploding-cannonball": {
-            "name": "ลูกกระสุนปืนใหญ่ระเบิด"
+            "name": "exploding cannonball"
         },
         "forceful-bolt": {
-            "name": "สายฟ้าอันทรงพลัง"
+            "name": "forceful bolt"
         },
         "grappling-hook": {
-            "name": "ตะขอเกี่ยว"
+            "name": "grappling hook"
         },
         "hurried-repairs": {
-            "name": "ซ่อมแซมรีบเร่ง"
+            "name": "hurried repairs"
         },
         "ignited-launch": {
-            "name": "ปล่อยจุดไฟ"
+            "name": "ignited launch"
         },
         "man-the-cannon": {
-            "name": "ประจำปืนใหญ่"
+            "name": "man the cannon"
         },
         "meteoric-blast": {
-            "name": "ระเบิดอุกกาบาต"
+            "name": "meteoric blast"
         },
         "pillars-of-smoke": {
-            "name": "เสาหมอก"
+            "name": "pillars of smoke"
         },
         "powerful-buckshot": {
-            "name": "ลูกซองทรงพลัง"
+            "name": "powerful buckshot"
         },
         "prolific-perforation": {
-            "name": "การเจาะมากมาย"
+            "name": "prolific perforation"
         },
         "quadruple-cannons": {
-            "name": "ปืนใหญ่สี่กระบอก"
+            "name": "quadruple cannons"
         },
         "rapid-fire": {
-            "name": "ยิงเร็ว"
+            "name": "rapid fire"
         },
         "rolling-into-position": {
-            "name": "กลิ้งเข้าตำแหน่ง"
+            "name": "rolling into position"
         },
         "sharpened-focus": {
-            "name": "โฟกัสแหลมคม"
+            "name": "sharpened focus"
         },
         "stationary-enhancements": {
-            "name": "การเสริมคงที่"
+            "name": "stationary enhancements"
         },
         "supercharged-gunpowder": {
-            "name": "ดินปืนชาร์จเต็ม"
+            "name": "supercharged gunpowder"
         },
         "superior-upgrade": {
-            "name": "อัปเกรดเหนือกว่า"
+            "name": "superior upgrade"
         },
         "twin-blast": {
-            "name": "ระเบิดคู่"
+            "name": "twin blast"
         },
         "unbreakable-position": {
-            "name": "ตำแหน่งไม่แตก"
+            "name": "unbreakable position"
         },
         "unexpected-bombshell": {
-            "name": "ระเบิดไม่คาดคิด"
+            "name": "unexpected bombshell"
         },
         "cg-back": {
             "name": "cg-back"
         },
         "agonizing-clamp": {
-            "name": "หนีบเจ็บปวด"
+            "name": "agonizing clamp"
         },
         "champion-of-chains": {
-            "name": "แชมป์แห่งโซ่"
+            "name": "champion of chains"
         },
         "chokehold": {
-            "name": "ล็อคคอ"
+            "name": "chokehold"
         },
         "clamping-snare": {
-            "name": "บ่วงหนีบ"
+            "name": "clamping snare"
         },
         "dizzying-release": {
-            "name": "การปล่อยทำให้เวียนศีรษะ"
+            "name": "dizzying release"
         },
         "double-ko": {
-            "name": "ดับเบิ้ลเคโอ"
+            "name": "double k.o."
         },
         "drag-through-dirt": {
-            "name": "ลากผ่านโคลน"
+            "name": "drag through dirt"
         },
         "follow-the-chains": {
-            "name": "ตามโซ่"
+            "name": "follow the chains"
         },
         "ganging-up": {
-            "name": "รวมตัวกัน"
+            "name": "ganging up"
         },
         "impending-power": {
-            "name": "พลังใกล้เข้ามา"
+            "name": "impending power"
         },
         "iron-thrust": {
-            "name": "แทงเหล็ก"
+            "name": "iron thrust"
         },
         "latch-and-tow": {
-            "name": "เกี่ยวและลาก"
+            "name": "latch and tow"
         },
         "locking-links": {
-            "name": "โซ่ล็อค"
+            "name": "locking links"
         },
         "merciless-beatdown": {
-            "name": "ทุบอย่างไร้เมตตา"
+            "name": "merciless beatdown"
         },
         "meteor-hammer": {
-            "name": "ค้อนอุกกาบาต"
+            "name": "meteor hammer"
         },
         "pivot-and-smash": {
-            "name": "หมุนและทุบ"
+            "name": "pivot and smash"
         },
         "roundhouse-swing": {
-            "name": "สวิงรอบตัว"
+            "name": "roundhouse swing"
         },
         "rusty-spikes": {
-            "name": "หนามขึ้นสนิม"
+            "name": "rusty spikes"
         },
         "slamming-shove": {
-            "name": "ดันกระแทก"
+            "name": "slamming shove"
         },
         "spiked-knuckles": {
-            "name": "หมัดหนาม"
+            "name": "spiked knuckles"
         },
         "suffering-steel": {
-            "name": "เหล็กแห่งความทุกข์"
+            "name": "suffering steel"
         },
         "sweeping-collision": {
-            "name": "การชนกวาด"
+            "name": "sweeping collision"
         },
         "syndicated-assault": {
-            "name": "การโจมตีเป็นเครือข่าย"
+            "name": "syndicated assault"
         },
         "tighten-the-chains": {
-            "name": "ขันโซ่"
+            "name": "tighten the chains"
         },
         "titanic-chainwhip": {
-            "name": "แส้โซ่ไททานิก"
+            "name": "titanic chainwhip"
         },
         "unending-torment": {
-            "name": "การทรมานไม่สิ้นสุด"
+            "name": "unending torment"
         },
         "untouchable-keeper": {
-            "name": "ผู้รักษาที่แตะไม่ได้"
+            "name": "untouchable keeper"
         },
         "vigorous-sway": {
-            "name": "แกว่งแข็งแรง"
+            "name": "vigorous sway"
         },
         "wrapped-in-metal": {
-            "name": "ห่อหุ้มด้วยโลหะ"
+            "name": "wrapped in metal"
         },
         "ct-back": {
             "name": "ct-back"
         },
         "agile-predator": {
-            "name": "นักล่าโลดโผน"
+            "name": "agile predator"
         },
         "black-panther": {
-            "name": "เสือดำ"
+            "name": "black panther"
         },
         "catastrophic-cattle": {
-            "name": "ปศุสัตว์หายนะ"
+            "name": "catastrophic cattle"
         },
         "fighting-bull": {
-            "name": "กระทิงต่อสู้"
+            "name": "fighting bull"
         },
         "ceremonial-dance": {
-            "name": "รำพิธีกรรม"
+            "name": "ceremonial dance"
         },
         "chest-thumper": {
-            "name": "กระทืบอก"
+            "name": "chest thumper"
         },
         "lowland-gorilla": {
-            "name": "กอริลลาลุ่ม"
+            "name": "lowland gorilla"
         },
         "hunters-mark": {
-            "name": "เครื่องหมายนักล่า"
+            "name": "hunter's mark"
         },
         "impervious-armor": {
-            "name": "เกราะทะลุไม่ได้"
+            "name": "impervious armor"
         },
         "battle-rhinoceros": {
-            "name": "แรดสงคราม"
+            "name": "battle rhinoceros"
         },
         "majestic-mass": {
-            "name": "มวลสง่างาม"
+            "name": "majestic mass"
         },
         "war-elephant": {
-            "name": "ช้างสงคราม"
+            "name": "war elephant"
         },
         "master-the-reins": {
-            "name": "ควบคุมบังเหียน"
+            "name": "master the reins"
         },
         "medicine-shield": {
-            "name": "โล่ยารักษา"
+            "name": "medicine shield"
         },
         "mounded-sight": {
-            "name": "สายตากองดิน"
+            "name": "mounded sight"
         },
         "cavalry-camel": {
-            "name": "อูฐทหารม้า"
+            "name": "cavalry camel"
         },
         "one-with-nature": {
-            "name": "เป็นหนึ่งกับธรรมชาติ"
+            "name": "one with nature"
         },
         "outrun-the-enemy": {
-            "name": "วิ่งหนีศัตรู"
+            "name": "outrun the enemy"
         },
         "speedy-ostrich": {
-            "name": "นกกระจอกเทศเร็ว"
+            "name": "speedy ostrich"
         },
         "piercing-darts": {
-            "name": "ลูกดอกทะลุ"
+            "name": "piercing darts"
         },
         "pipe-tomahawk": {
-            "name": "ขวานท่อ"
+            "name": "pipe tomahawk"
         },
         "positive-reinforcement": {
-            "name": "การเสริมแรงเชิงบวก"
+            "name": "positive reinforcement"
         },
         "prepared-rations": {
-            "name": "เสบียงเตรียมไว้"
+            "name": "prepared rations"
         },
         "pack-mule": {
-            "name": "ล่อบรรทุก"
+            "name": "pack mule"
         },
         "regal-beast": {
-            "name": "อสูรราชา"
+            "name": "regal beast"
         },
         "sabretooth-tiger": {
-            "name": "เสือเขี้ยวดาบ"
+            "name": "sabretooth tiger"
         },
         "resurrection": {
-            "name": "การฟื้นคืนชีพ"
+            "name": "resurrection"
         },
         "skinning-knife": {
-            "name": "มีดถลกหนัง"
+            "name": "skinning knife"
         },
         "slow-and-steady": {
-            "name": "ช้าและมั่นคง"
+            "name": "slow and steady"
         },
         "giant-tortoise": {
-            "name": "เต่ายักษ์"
+            "name": "giant tortoise"
         },
         "sniffing-hound": {
-            "name": "สุนัขดมกลิ่น"
+            "name": "sniffing hound"
         },
         "scout-dog": {
-            "name": "สุนัขลาดตระเวน"
+            "name": "scout dog"
         },
         "soul-whisperer": {
-            "name": "ผู้กระซิบวิญญาณ"
+            "name": "soul whisperer"
         },
         "spiked-muzzle": {
-            "name": "ปากกระบอกหนาม"
+            "name": "spiked muzzle"
         },
         "strapping-bullwhip": {
-            "name": "แส้กระทิงแข็งแรง"
+            "name": "strapping bullwhip"
         },
         "sucker-punch": {
-            "name": "หมัดซุ่มโจมตี"
+            "name": "sucker punch"
         },
         "take-the-reins": {
-            "name": "จับบังเหียน"
+            "name": "take the reins"
         },
         "tribal-blessing": {
-            "name": "พรชนเผ่า"
+            "name": "tribal blessing"
         },
         "venomous-mayhem": {
-            "name": "ความโกลาหลพิษ"
+            "name": "venomous mayhem"
         },
         "cottonmouth-snake": {
-            "name": "งูปากฝ้าย"
+            "name": "cottonmouth snake"
         },
         "war-paint": {
-            "name": "สีสงคราม"
+            "name": "war paint"
         },
         "fk-back": {
             "name": "fk-back"
         },
         "backdraft": {
-            "name": "ลมย้อนกลับ"
+            "name": "backdraft"
         },
         "cauterize-wound": {
-            "name": "จี้แผล"
+            "name": "cauterize wound"
         },
         "collective-combat": {
-            "name": "ต่อสู้รวมพลัง"
+            "name": "collective combat"
         },
         "combat-medic": {
-            "name": "แพทย์สนามรบ"
+            "name": "combat medic"
         },
         "combined-effort": {
-            "name": "ความพยายามร่วมกัน"
+            "name": "combined effort"
         },
         "controlled-aggression": {
-            "name": "ความก้าวร้าวควบคุมได้"
+            "name": "controlled aggression"
         },
         "coordinated-attack": {
-            "name": "โจมตีประสานกัน"
+            "name": "coordinated attack"
         },
         "crew-integrity": {
-            "name": "ความสมบูรณ์ของลูกเรือ"
+            "name": "crew integrity"
         },
         "fiery-charisma": {
-            "name": "เสน่ห์เพลิง"
+            "name": "fiery charisma"
         },
         "fire-whirl": {
-            "name": "วอร์เท็กซ์ไฟ"
+            "name": "fire whirl"
         },
         "flaming-axe": {
-            "name": "ขวานเพลิง"
+            "name": "flaming axe"
         },
         "flashover": {
-            "name": "ไฟลุกท่วม"
+            "name": "flashover"
         },
         "reigniting-drakefiend": {
-            "name": "ปีศาจมังกรลุกโชน"
+            "name": "reigniting drakefiend"
         },
         "forcible-entry": {
-            "name": "บุกรุกบังคับ"
+            "name": "forcible entry"
         },
         "heavy-irons": {
-            "name": "เหล็กหนัก"
+            "name": "heavy irons"
         },
         "hook-and-ladder": {
-            "name": "ตะขอและบันได"
+            "name": "hook and ladder"
         },
         "incident-commander": {
-            "name": "ผู้บัญชาการเหตุการณ์"
+            "name": "incident commander"
         },
         "jack-of-all-trades": {
-            "name": "เก่งสารพัดอย่าง"
+            "name": "jack of all trades"
         },
         "kindled-tonic": {
-            "name": "โทนิคจุดไฟ"
+            "name": "kindled tonic"
         },
         "ladder-assault": {
-            "name": "โจมตีบันได"
+            "name": "ladder assault"
         },
         "light-irons": {
-            "name": "เหล็กเบา"
+            "name": "light irons"
         },
         "loyal-companion": {
-            "name": "เพื่อนซื่อสัตย์"
+            "name": "loyal companion"
         },
         "spotted-hound": {
-            "name": "สุนัขลายจุด"
+            "name": "spotted hound"
         },
         "mutual-aid": {
-            "name": "ช่วยเหลือซึ่งกันและกัน"
+            "name": "mutual aid"
         },
         "playing-with-fire": {
-            "name": "เล่นกับไฟ"
+            "name": "playing with fire"
         },
         "practical-tools": {
-            "name": "เครื่องมือใช้งานได้"
+            "name": "practical tools"
         },
         "rapid-response": {
-            "name": "ตอบสนองเร็ว"
+            "name": "rapid response"
         },
         "rolling-flames": {
-            "name": "เปลวไฟกลิ้ง"
+            "name": "rolling flames"
         },
         "search-and-rescue": {
-            "name": "ค้นหาและกู้ภัย"
+            "name": "search and rescue"
         },
         "searing-blaze": {
-            "name": "เปลวไฟแผดเผา"
+            "name": "searing blaze"
         },
         "trauma-care": {
-            "name": "ดูแลบาดแผล"
+            "name": "trauma care"
         },
         "ho-back": {
             "name": "ho-back"
         },
         "borrowed-vitality": {
-            "name": "พลังชีวิตยืมมา"
+            "name": "borrowed vitality"
         },
         "channel-the-void": {
-            "name": "ช่องทางสู่ความว่างเปล่า"
+            "name": "channel the void"
         },
         "empowered-assault": {
-            "name": "การโจมตีเสริมพลัง"
+            "name": "empowered assault"
         },
         "enduring-darkness": {
-            "name": "ความมืดยืนยง"
+            "name": "enduring darkness"
         },
         "enervating-strike": {
-            "name": "โจมตีอ่อนแรง"
+            "name": "enervating strike"
         },
         "entropy-unleashed": {
-            "name": "เอนโทรปีปลดปล่อย"
+            "name": "entropy unleashed"
         },
         "find-an-opening": {
-            "name": "หาโอกาส"
+            "name": "find an opening"
         },
         "gateway-to-the-abyss": {
-            "name": "ประตูสู่ห้วงลึก"
+            "name": "gateway to the abyss"
         },
         "greed-before-need": {
-            "name": "ความโลภก่อนความต้องการ"
+            "name": "greed before need"
         },
         "hollow-embrace": {
-            "name": "กอดโพรง"
+            "name": "hollow embrace"
         },
         "implosion": {
-            "name": "การยุบตัว"
+            "name": "implosion"
         },
         "majestic-malevolence": {
-            "name": "ความชั่วร้ายสง่างาม"
+            "name": "majestic malevolence"
         },
         "nether-binding": {
-            "name": "พันธนาการใต้โลก"
+            "name": "nether binding"
         },
         "nether-blades": {
-            "name": "ดาบใต้โลก"
+            "name": "nether blades"
         },
         "no-escape": {
-            "name": "ไม่มีทางหนี"
+            "name": "no escape"
         },
         "obliterate": {
-            "name": "ทำลายล้าง"
+            "name": "obliterate"
         },
         "one-with-nothingness": {
-            "name": "เป็นหนึ่งกับความว่างเปล่า"
+            "name": "one with nothingness"
         },
         "prescient-voidmastery": {
-            "name": "การควบคุมความว่างเปล่าล่วงรู้"
+            "name": "prescient voidmastery"
         },
         "reaching-darkness": {
-            "name": "ความมืดถึง"
+            "name": "reaching darkness"
         },
         "ruinous-barrage": {
-            "name": "ระดมยิงทำลาย"
+            "name": "ruinous barrage"
         },
         "sever-reality": {
-            "name": "ตัดความเป็นจริง"
+            "name": "sever reality"
         },
         "shrouded-grasp": {
-            "name": "การจับห่อหุ้ม"
+            "name": "shrouded grasp"
         },
         "stalking-quarry": {
-            "name": "เหยื่อที่ตามล่า"
+            "name": "stalking quarry"
         },
         "tendrils-of-night": {
-            "name": "หนวดแห่งราตรี"
+            "name": "tendrils of night"
         },
         "touch-of-the-void": {
-            "name": "สัมผัสความว่างเปล่า"
+            "name": "touch of the void"
         },
         "untethered-advance": {
-            "name": "รุกอย่างไร้พันธนาการ"
+            "name": "untethered advance"
         },
         "void-enhanced-armory": {
-            "name": "คลังอาวุธเสริมความว่างเปล่า"
+            "name": "void-enhanced armory"
         },
         "void-step": {
-            "name": "ก้าวสู่ความว่างเปล่า"
+            "name": "void step"
         },
         "withering-deluge": {
-            "name": "ฝนชะล้างเหี่ยว"
+            "name": "withering deluge"
         },
         "hp-back": {
             "name": "hp-back"
         },
         "aspiration": {
-            "name": "ความปรารถนา"
+            "name": "aspiration"
         },
         "beacon-of-hope": {
-            "name": "ประภาคารแห่งความหวัง"
+            "name": "beacon of hope"
         },
         "bringer-of-miracles": {
-            "name": "ผู้นำปาฏิหาริย์"
+            "name": "bringer of miracles"
         },
         "chains-of-light": {
-            "name": "โซ่แห่งแสง"
+            "name": "chains of light"
         },
         "devotion": {
-            "name": "ความศรัทธา"
+            "name": "devotion"
         },
         "devout-assistance": {
-            "name": "ความช่วยเหลือด้วยศรัทธา"
+            "name": "devout assistance"
         },
         "divine-allegiance": {
-            "name": "ความจงรักภักดีต่อเทพ"
+            "name": "divine allegiance"
         },
         "encouraged-conviction": {
-            "name": "ความเชื่อมั่นที่ได้รับกำลังใจ"
+            "name": "encouraged conviction"
         },
         "expansive-permanence": {
-            "name": "ความถาวรขยายตัว"
+            "name": "expansive permanence"
         },
         "faith-calling": {
-            "name": "เรียกศรัทธา"
+            "name": "faith calling"
         },
         "grace": {
-            "name": "พระคุณ"
+            "name": "grace"
         },
         "harsh-rebuke": {
-            "name": "ตำหนิรุนแรง"
+            "name": "harsh rebuke"
         },
         "impetuous-inquisition": {
-            "name": "การไต่สวนหุนหัน"
+            "name": "impetuous inquisition"
         },
         "inner-reflection": {
-            "name": "การไตร่ตรองภายใน"
+            "name": "inner reflection"
         },
         "inspired-remedy": {
-            "name": "ยารักษาแรงบันดาลใจ"
+            "name": "inspired remedy"
         },
         "lamentation": {
-            "name": "การคร่ำครวญ"
+            "name": "lamentation"
         },
         "meditation": {
-            "name": "การทำสมาธิ"
+            "name": "meditation"
         },
         "oaks-embrace": {
-            "name": "กอดโอ๊ก"
+            "name": "oaks embrace"
         },
         "ordination": {
-            "name": "การบวช"
+            "name": "ordination"
         },
         "penitence": {
-            "name": "การสำนึกผิด"
+            "name": "penitence"
         },
         "prosperous-concord": {
-            "name": "ความสามัคคีมั่งคั่ง"
+            "name": "prosperous concord"
         },
         "restoring-faith": {
-            "name": "ฟื้นฟูศรัทธา"
+            "name": "restoring faith"
         },
         "revered-protector": {
-            "name": "ผู้พิทักษ์ที่เคารพ"
+            "name": "revered protector"
         },
         "righteous-atonement": {
-            "name": "การชดใช้ที่ชอบธรรม"
+            "name": "righteous atonement"
         },
         "rooted-subjugation": {
-            "name": "การปราบปรามหยั่งราก"
+            "name": "rooted subjugation"
         },
         "sacred-death": {
-            "name": "ความตายศักดิ์สิทธิ์"
+            "name": "sacred death"
         },
         "salvation": {
-            "name": "ความรอด"
+            "name": "salvation"
         },
         "soulful-salvation": {
-            "name": "การไถ่บาปด้วยวิญญาณ"
+            "name": "soulful salvation"
         },
         "soul-strike": {
-            "name": "โจมตีวิญญาณ"
+            "name": "soul strike"
         },
         "spiritual-gains": {
-            "name": "กำไรทางจิตวิญญาณ"
+            "name": "spiritual gains"
         },
         "standing-ground": {
-            "name": "ยืนหยัด"
+            "name": "standing ground"
         },
         "symphony-of-oppression": {
-            "name": "ซิมโฟนีแห่งการกดขี่"
+            "name": "symphony of oppression"
         },
         "unruly-repentance": {
-            "name": "การสำนึกผิดดื้อรั้น"
+            "name": "unruly repentance"
         },
         "unstoppable-force": {
-            "name": "แรงหยุดไม่ได้"
+            "name": "unstoppable force"
         },
         "vengeful-veneration": {
-            "name": "การเคารพแก้แค้น"
+            "name": "vengeful veneration"
         },
         "vital-bond": {
-            "name": "พันธะชีวิต"
+            "name": "vital bond"
         },
         "vocal-sermon": {
-            "name": "เทศนาด้วยเสียง"
+            "name": "vocal sermon"
         },
         "weakened-will": {
-            "name": "เจตจำนงอ่อนแอ"
+            "name": "weakened will"
         },
         "lu-back": {
             "name": "lu-back"
         },
         "blackened-rage": {
-            "name": "ความโกรธดำ"
+            "name": "blackened rage"
         },
         "blazing-pincers": {
-            "name": "ก้ามเพลิง"
+            "name": "blazing pincers"
         },
         "burning-sparks": {
-            "name": "ประกายไฟ"
+            "name": "burning sparks"
         },
         "chilling-wave": {
-            "name": "คลื่นเย็นยะเยือก"
+            "name": "chilling wave"
         },
         "colorful-wavelengths": {
-            "name": "ความยาวคลื่นหลากสี"
+            "name": "colorful wavelengths"
         },
         "darkened-overcast": {
-            "name": "เมฆมืด"
+            "name": "darkened overcast"
         },
         "dominating-illumination": {
-            "name": "แสงสว่างครอบงำ"
+            "name": "dominating illumination"
         },
         "empowering-rays": {
-            "name": "รังสีเสริมพลัง"
+            "name": "empowering rays"
         },
         "encompassing-aura": {
-            "name": "ออร่าครอบคลุม"
+            "name": "encompassing aura"
         },
         "flickering-lights": {
-            "name": "แสงกะพริบ"
+            "name": "flickering lights"
         },
         "floodlight": {
-            "name": "ไฟสปอตไลท์"
+            "name": "floodlight"
         },
         "frosty-glimmer": {
-            "name": "ประกายน้ำค้างแข็ง"
+            "name": "frosty glimmer"
         },
         "gamma-energy": {
-            "name": "พลังงานแกมมา"
+            "name": "gamma energy"
         },
         "heat-waves": {
-            "name": "คลื่นความร้อน"
+            "name": "heat waves"
         },
         "imposing-brilliance": {
-            "name": "ความสุกใสยิ่งใหญ่"
+            "name": "imposing brilliance"
         },
         "light-the-way": {
-            "name": "ส่องทาง"
+            "name": "light the way"
         },
         "gleaming-squid": {
-            "name": "ปลาหมึกเรืองแสง"
+            "name": "gleaming squid"
         },
         "luminescence": {
-            "name": "การเรืองแสง"
+            "name": "luminescence"
         },
         "moonbeam": {
-            "name": "แสงจันทร์"
+            "name": "moonbeam"
         },
         "optical-refraction": {
-            "name": "การหักเหแสง"
+            "name": "optical refraction"
         },
         "photonic-defense": {
-            "name": "การป้องกันโฟตอน"
+            "name": "photonic defense"
         },
         "radiant-glare": {
-            "name": "แสงจ้าสุกใส"
+            "name": "radiant glare"
         },
         "shadow-claws": {
-            "name": "กรงเล็บเงา"
+            "name": "shadow claws"
         },
         "shimmering-scuttle": {
-            "name": "วิ่งระยิบระยับ"
+            "name": "shimmering scuttle"
         },
         "shining-diversion": {
-            "name": "การเบี่ยงเบนสุกใส"
+            "name": "shining diversion"
         },
         "soft-glow": {
-            "name": "แสงอ่อนโยน"
+            "name": "soft glow"
         },
         "solid-light": {
-            "name": "แสงแข็ง"
+            "name": "solid light"
         },
         "sparkling-glow": {
-            "name": "แสงระยิบระยับ"
+            "name": "sparkling glow"
         },
         "torrid-radiation": {
-            "name": "รังสีร้อนจัด"
+            "name": "torrid radiation"
         },
         "trickling-sting": {
-            "name": "เหล็กในหยด"
+            "name": "trickling sting"
         },
         "violent-flash": {
-            "name": "แสงวาบรุนแรง"
+            "name": "violent flash"
         },
         "mf-back": {
             "name": "mf-back"
         },
         "airborne-spores": {
-            "name": "สปอร์ลอยฟ้า"
+            "name": "airborne spores"
         },
         "anticoagulant": {
-            "name": "สารกันเลือดแข็ง"
+            "name": "anticoagulant"
         },
         "blood-thinner": {
-            "name": "สารเจือจางเลือด"
+            "name": "blood thinner"
         },
         "bogstep": {
-            "name": "ก้าวโคลน"
+            "name": "bogstep"
         },
         "complex-toxicology": {
-            "name": "พิษวิทยาซับซ้อน"
+            "name": "complex toxicology"
         },
         "compound-toxin": {
-            "name": "พิษผสม"
+            "name": "compound toxin"
         },
         "copperneck-berries": {
-            "name": "เบอร์รี่คอทองแดง"
+            "name": "copperneck berries"
         },
         "death-sentence": {
-            "name": "โทษประหารชีวิต"
+            "name": "death sentence"
         },
         "fireroot-sap": {
-            "name": "น้ำเลี้ยงรากไฟ"
+            "name": "fireroot sap"
         },
         "ground-solvent": {
-            "name": "ตัวทำละลายพื้นดิน"
+            "name": "ground solvent"
         },
         "hide-and-seek": {
-            "name": "ซ่อนหา"
+            "name": "hide and seek"
         },
         "lashing-vines": {
-            "name": "เถาวัลย์หวด"
+            "name": "lashing vines"
         },
         "flailing-ivies": {
-            "name": "ไม้เลื้อยโบกสะบัด"
+            "name": "flailing ivies"
         },
         "lingering-swamp-moss": {
-            "name": "มอสหนองบึงค้าง"
+            "name": "lingering swamp moss"
         },
         "mudslide": {
-            "name": "ดินถล่ม"
+            "name": "mudslide"
         },
         "neurotoxin": {
-            "name": "พิษประสาท"
+            "name": "neurotoxin"
         },
         "paralytic-agent": {
-            "name": "สารทำให้เป็นอัมพาต"
+            "name": "paralytic agent"
         },
         "personal-poison": {
-            "name": "พิษส่วนตัว"
+            "name": "personal poison"
         },
         "potent-mixture": {
-            "name": "ส่วนผสมทรงพลัง"
+            "name": "potent mixture"
         },
         "radiant-forest-fungi": {
-            "name": "เห็ดป่าเรืองแสง"
+            "name": "radiant forest fungi"
         },
         "serpents-kiss": {
-            "name": "จูบงู"
+            "name": "serpent's kiss"
         },
         "sinkhole": {
-            "name": "หลุมยุบ"
+            "name": "sinkhole"
         },
         "sludge-bomb": {
-            "name": "ระเบิดโคลน"
+            "name": "sludge bomb"
         },
         "still-river-algae": {
-            "name": "สาหร่ายแม่น้ำนิ่ง"
+            "name": "still river algae"
         },
         "tainted-waters": {
-            "name": "น้ำปนเปื้อน"
+            "name": "tainted waters"
         },
         "throwing-daggers": {
-            "name": "ขว้างดาบ"
+            "name": "throwing daggers"
         },
         "twist-the-blade": {
-            "name": "บิดใบมีด"
+            "name": "twist the blade"
         },
         "volatile-tonic": {
-            "name": "โทนิคระเหย"
+            "name": "volatile tonic"
         },
         "whitefire-balm": {
-            "name": "ขี้ผึ้งไฟขาว"
+            "name": "whitefire balm"
         },
         "wild-stings": {
-            "name": "เหล็กในป่า"
+            "name": "wild stings"
         },
         "crypt-nettle": {
-            "name": "ตำแยสุสาน"
+            "name": "crypt nettle"
         },
         "qa-back": {
             "name": "qa-back"
         },
         "annihilating-contraption": {
-            "name": "เครื่องจักรทำลายล้าง"
+            "name": "annihilating contraption"
         },
         "clockwork-ravager": {
-            "name": "ผู้ทำลายล้างกลไก"
+            "name": "clockwork ravager"
         },
         "double-barrel-railcaster": {
-            "name": "ปืนรางลำกล้องคู่"
+            "name": "double-barrel railcaster"
         },
         "elemental-condenser": {
-            "name": "เครื่องควบแน่นธาตุ"
+            "name": "elemental condenser"
         },
         "energy-transmission": {
-            "name": "การส่งพลังงาน"
+            "name": "energy transmission"
         },
         "fragmentation-grenade": {
-            "name": "ระเบิดกระสุน"
+            "name": "fragmentation grenade"
         },
         "galvanic-coil": {
-            "name": "ขดลวดกัลวานิก"
+            "name": "galvanic coil"
         },
         "gravity-inverter-module": {
-            "name": "โมดูลกลับแรงโน้มถ่วง"
+            "name": "gravity inverter module"
         },
         "improvised-exosuit": {
-            "name": "ชุดเอกโซชั่วคราว"
+            "name": "improvised exosuit"
         },
         "hollow-carapace": {
-            "name": "เปลือกกลวง"
+            "name": "hollow carapace"
         },
         "improvised-mortar": {
-            "name": "ปืนครกดัดแปลง"
+            "name": "improvised mortar"
         },
         "clockwork-bombard": {
-            "name": "ปืนครกกลไก"
+            "name": "clockwork bombard"
         },
         "instant-relocation-matrix": {
-            "name": "เมทริกซ์ย้ายทันที"
+            "name": "instant relocation matrix"
         },
         "jury-rigged-machine": {
-            "name": "เครื่องจักรชั่วคราว"
+            "name": "jury-rigged machine"
         },
         "clockwork-soldier": {
-            "name": "ทหารกลไก"
+            "name": "clockwork soldier"
         },
         "launch-skywards": {
-            "name": "ปล่อยขึ้นฟ้า"
+            "name": "launch skywards"
         },
         "clockwork-drone": {
-            "name": "โดรนกลไก"
+            "name": "clockwork drone"
         },
         "march-of-machines": {
-            "name": "ขบวนเครื่องจักร"
+            "name": "march of machines"
         },
         "oscillating-projector": {
-            "name": "โปรเจคเตอร์สั่น"
+            "name": "oscillating projector"
         },
         "particle-ray-beam": {
-            "name": "ลำแสงอนุภาค"
+            "name": "particle ray beam"
         },
         "perfected-exosuit": {
-            "name": "ชุดเอกโซสมบูรณ์"
+            "name": "perfected exosuit"
         },
         "phase-field-emitter": {
-            "name": "ตัวปล่อยสนามเฟส"
+            "name": "phase field emitter"
         },
         "power-modulation": {
-            "name": "การปรับกำลัง"
+            "name": "power modulation"
         },
         "ransack-clutter": {
-            "name": "ปล้นกองขยะ"
+            "name": "ransack clutter"
         },
         "recycle-parts": {
-            "name": "รีไซเคิลชิ้นส่วน"
+            "name": "recycle parts"
         },
         "reinforce-armor": {
-            "name": "เสริมเกราะ"
+            "name": "reinforce armor"
         },
         "remote-control": {
-            "name": "ควบคุมระยะไกล"
+            "name": "remote control"
         },
         "repurpose-leftovers": {
-            "name": "ดัดแปลงของเหลือ"
+            "name": "repurpose leftovers"
         },
         "retrofit-weapons": {
-            "name": "ปรับปรุงอาวุธ"
+            "name": "retrofit weapons"
         },
         "salvage-grappler": {
-            "name": "ตะขอเก็บซาก"
+            "name": "salvage grappler"
         },
         "seeker-missiles": {
-            "name": "ขีปนาวุธตามหา"
+            "name": "seeker missiles"
         },
         "clockwork-rocket": {
-            "name": "จรวดกลไก"
+            "name": "clockwork rocket"
         },
         "trajectory-diverter": {
-            "name": "ตัวเบี่ยงวิถี"
+            "name": "trajectory diverter"
         },
         "trudging-bulwark": {
-            "name": "กำแพงลากเท้า"
+            "name": "trudging bulwark"
         },
         "clockwork-guardian": {
-            "name": "ผู้พิทักษ์กลไก"
+            "name": "clockwork guardian"
         },
         "rm-back": {
             "name": "rm-back"
         },
         "belly-of-the-beast": {
-            "name": "ท้องของอสูร"
+            "name": "belly of the beast"
         },
         "berserk-barrage": {
-            "name": "กระหน่ำคลั่ง"
+            "name": "berserk barrage"
         },
         "burning-bile": {
-            "name": "น้ำดีลุกไหม้"
+            "name": "burning bile"
         },
         "caustic-claws": {
-            "name": "กรงเล็บกัดกร่อน"
+            "name": "caustic claws"
         },
         "cornered-animal": {
-            "name": "สัตว์จนมุม"
+            "name": "cornered animal"
         },
         "corrosive-spew": {
-            "name": "พ่นกัดกร่อน"
+            "name": "corrosive spew"
         },
         "devour-whole": {
-            "name": "กลืนทั้งตัว"
+            "name": "devour whole"
         },
         "easy-prey": {
-            "name": "เหยื่อง่าย"
+            "name": "easy prey"
         },
         "fatal-frenzy": {
-            "name": "ความบ้าคลั่งร้ายแรง"
+            "name": "fatal frenzy"
         },
         "feast-of-flesh": {
-            "name": "งานเลี้ยงเนื้อ"
+            "name": "feast of flesh"
         },
         "feral-lunge": {
-            "name": "พุ่งดุร้าย"
+            "name": "feral lunge"
         },
         "ferocious-fling": {
-            "name": "เหวี่ยงดุร้าย"
+            "name": "ferocious fling"
         },
         "fight-or-flight": {
-            "name": "สู้หรือหนี"
+            "name": "fight or flight"
         },
         "heartripper": {
-            "name": "ผู้ฉีกหัวใจ"
+            "name": "heartripper"
         },
         "indomitable-craving": {
-            "name": "ความอยากไม่ยอมแพ้"
+            "name": "indomitable craving"
         },
         "lie-in-wait": {
-            "name": "ซุ่มรอ"
+            "name": "lie in wait"
         },
         "nourishing-meal": {
-            "name": "มื้อบำรุง"
+            "name": "nourishing meal"
         },
         "pouncing-predator": {
-            "name": "นักล่าตะครุบ"
+            "name": "pouncing predator"
         },
         "ravenous-roar": {
-            "name": "คำรามหิวโหย"
+            "name": "ravenous roar"
         },
         "reckless-attack": {
-            "name": "โจมตีบุ่มบ่าม"
+            "name": "reckless attack"
         },
         "rend-and-mutilate": {
-            "name": "ฉีกและทำลายร่าง"
+            "name": "rend and mutilate"
         },
         "rip-and-tear": {
-            "name": "ฉีกและกระชาก"
+            "name": "rip and tear"
         },
         "savage-stalker": {
-            "name": "นักสะกดรอยป่าเถื่อน"
+            "name": "savage stalker"
         },
         "scrape-and-scrounge": {
-            "name": "ขูดและค้นหา"
+            "name": "scrape and scrounge"
         },
         "seize": {
-            "name": "ยึด"
+            "name": "seize"
         },
         "slake-thirst": {
-            "name": "ดับกระหาย"
+            "name": "slake thirst"
         },
         "strip-the-flesh": {
-            "name": "ลอกเนื้อ"
+            "name": "strip the flesh"
         },
         "survival-instincts": {
-            "name": "สัญชาตญาณเอาชีวิตรอด"
+            "name": "survival instincts"
         },
         "terrifying-howl": {
-            "name": "หอนน่ากลัว"
+            "name": "terrifying howl"
         },
         "voracious-hunter": {
-            "name": "นักล่าตะกละ"
+            "name": "voracious hunter"
         },
         "sp-back": {
             "name": "sp-back"
         },
         "burning-pit": {
-            "name": "หลุมเพลิง"
+            "name": "burning pit"
         },
         "blazing-fire": {
-            "name": "เพลิงลุกโชน"
+            "name": "blazing fire"
         },
         "chilling-slice": {
-            "name": "เฉือนเย็นยะเยือก"
+            "name": "chilling slice"
         },
         "circle-of-lifeless": {
-            "name": "วงกลมแห่งผู้ไร้ชีวิต"
+            "name": "circle of lifeless"
         },
         "confidence-ritual": {
-            "name": "พิธีกรรมมั่นใจ"
+            "name": "confidence ritual"
         },
         "death-is-not-defeat": {
-            "name": "ความตายไม่ใช่ความพ่ายแพ้"
+            "name": "death is not defeat"
         },
         "decaying-daggers": {
-            "name": "ดาบผุพัง"
+            "name": "decaying daggers"
         },
         "dimmed-defense": {
-            "name": "การป้องกันหรี่ลง"
+            "name": "dimmed defense"
         },
         "wall-of-shadows": {
-            "name": "กำแพงเงา"
+            "name": "wall of shadows"
         },
         "eternal-endurance": {
-            "name": "ความอดทนนิรันดร์"
+            "name": "eternal endurance"
         },
         "wandering-soul": {
-            "name": "วิญญาณเร่ร่อน"
+            "name": "wandering soul"
         },
         "disembodied-goliath": {
-            "name": "ยักษ์ไร้ร่าง"
+            "name": "disembodied goliath"
         },
         "ethereal-canine": {
-            "name": "สุนัขเหนือธรรมชาติ"
+            "name": "ethereal canine"
         },
         "phantom-hound": {
-            "name": "สุนัขผี"
+            "name": "phantom hound"
         },
         "fear-the-reaper": {
-            "name": "กลัวผู้เก็บวิญญาณ"
+            "name": "fear the reaper"
         },
         "deatheater": {
-            "name": "ผู้กินความตาย"
+            "name": "deatheater"
         },
         "fierce-loyalty": {
-            "name": "ความจงรักภักดีดุเดือด"
+            "name": "fierce loyalty"
         },
         "mimicking-sprite": {
-            "name": "ปีศาจเลียนแบบ"
+            "name": "mimicking sprite"
         },
         "flurry-of-madness": {
-            "name": "พายุความบ้าคลั่ง"
+            "name": "flurry of madness"
         },
         "bat-cloud": {
-            "name": "ฝูงค้างคาว"
+            "name": "bat cloud"
         },
         "forceful-apparition": {
-            "name": "วิญญาณทรงพลัง"
+            "name": "forceful apparition"
         },
         "leeching-phantasm": {
-            "name": "ผีดูดเลือด"
+            "name": "leeching phantasm"
         },
         "horde-of-bones": {
-            "name": "กองทัพกระดูก"
+            "name": "horde of bones"
         },
         "skeletal-archer": {
-            "name": "นักธนูโครงกระดูก"
+            "name": "skeletal archer"
         },
         "horrific-nightmare": {
-            "name": "ฝันร้ายสยองขวัญ"
+            "name": "horrific nightmare"
         },
         "soul-snatcher": {
-            "name": "ผู้ฉกวิญญาณ"
+            "name": "soul snatcher"
         },
         "incorporeal-transport": {
-            "name": "การขนส่งไร้ร่าง"
+            "name": "incorporeal transport"
         },
         "ghost-carriage": {
-            "name": "รถม้าผี"
+            "name": "ghost carriage"
         },
         "midnight-feast": {
-            "name": "งานเลี้ยงเที่ยงคืน"
+            "name": "midnight feast"
         },
         "rise-from-ashes": {
-            "name": "ลุกจากเถ้าถ่าน"
+            "name": "rise from ashes"
         },
         "glowing-egg": {
-            "name": "ไข่เรืองแสง"
+            "name": "glowing egg"
         },
         "spectral-phoenix": {
-            "name": "ฟีนิกซ์วิญญาณ"
+            "name": "spectral phoenix"
         },
         "shamanistic-guard": {
-            "name": "ยามชาแมน"
+            "name": "shamanistic guard"
         },
         "vengeful-phantasm": {
-            "name": "ผีแก้แค้น"
+            "name": "vengeful phantasm"
         },
         "shrieking-spirit": {
-            "name": "วิญญาณกรีดร้อง"
+            "name": "shrieking spirit"
         },
         "wailing-banshee": {
-            "name": "ผีร้องโหยหวน"
+            "name": "wailing banshee"
         },
         "smoky-shroud": {
-            "name": "ผ้าคลุมควัน"
+            "name": "smoky shroud"
         },
         "mantle-of-darkness": {
-            "name": "ผ้าคลุมความมืด"
+            "name": "mantle of darkness"
         },
         "soul-harvest": {
-            "name": "เก็บเกี่ยววิญญาณ"
+            "name": "soul harvest"
         },
         "spirit-barrage": {
-            "name": "ระดมยิงวิญญาณ"
+            "name": "spirit barrage"
         },
         "spiritual-energy": {
-            "name": "พลังงานจิตวิญญาณ"
+            "name": "spiritual energy"
         },
         "imbued-monolith": {
-            "name": "เสาหินอัญเชิญ"
+            "name": "imbued monolith"
         },
         "spread-disease": {
-            "name": "แพร่โรค"
+            "name": "spread disease"
         },
         "leprous-wraith": {
-            "name": "วิญญาณโรคเรื้อน"
+            "name": "leprous wraith"
         },
         "toxic-charm": {
-            "name": "เสน่ห์พิษ"
+            "name": "toxic charm"
         },
         "unholy-sacrifice": {
-            "name": "การบูชายัญอธรรม"
+            "name": "unholy sacrifice"
         },
         "whistling-winds": {
-            "name": "ลมหวีดหวิว"
+            "name": "whistling winds"
         },
         "white-glow": {
-            "name": "แสงขาว"
+            "name": "white glow"
         },
         "orb-of-light": {
-            "name": "ลูกแก้วแสง"
+            "name": "orb of light"
         },
         "shifting-discs": {
-            "name": "จานเปลี่ยนรูป"
+            "name": "shifting discs"
         },
         "st-back": {
             "name": "st-back"
         },
         "absolute-magnitude": {
-            "name": "ขนาดสัมบูรณ์"
+            "name": "absolute magnitude"
         },
         "absorbing-light": {
-            "name": "ดูดซับแสง"
+            "name": "absorbing light"
         },
         "aligned-constellations": {
-            "name": "กลุ่มดาวเรียงตัว"
+            "name": "aligned constellations"
         },
         "blue-moon": {
-            "name": "จันทร์สีน้ำเงิน"
+            "name": "blue moon"
         },
         "celestial-maneuver": {
-            "name": "การเคลื่อนไหวแห่งสวรรค์"
+            "name": "celestial maneuver"
         },
         "crashing-flare": {
-            "name": "แสงวาบกระแทก"
+            "name": "crashing flare"
         },
         "defying-gravity": {
-            "name": "ท้าทายแรงโน้มถ่วง"
+            "name": "defying gravity"
         },
         "diamond-rings": {
-            "name": "แหวนเพชร"
+            "name": "diamond rings"
         },
         "earthshine": {
-            "name": "แสงสะท้อนจากโลก"
+            "name": "earthshine"
         },
         "eonic-blast": {
-            "name": "ระเบิดอีออนิก"
+            "name": "eonic blast"
         },
         "equinox": {
-            "name": "วิษุวัต"
+            "name": "equinox"
         },
         "force-field": {
-            "name": "สนามแรง"
+            "name": "force field"
         },
         "gravitational-flip": {
-            "name": "พลิกแรงโน้มถ่วง"
+            "name": "gravitational flip"
         },
         "interplanar-voyager": {
-            "name": "นักเดินทางข้ามมิติ"
+            "name": "interplanar voyager"
         },
         "light-pollution": {
-            "name": "มลพิษแสง"
+            "name": "light pollution"
         },
         "lost-in-the-stars": {
-            "name": "หลงในหมู่ดาว"
+            "name": "lost in the stars"
         },
         "lucky-stars": {
-            "name": "ดาวโชคดี"
+            "name": "lucky stars"
         },
         "luminous-blitz": {
-            "name": "การโจมตีแสงสว่าง"
+            "name": "luminous blitz"
         },
         "pierce-the-firmament": {
-            "name": "เจาะฟากฟ้า"
+            "name": "pierce the firmament"
         },
         "plasmatic-power": {
-            "name": "พลังพลาสมา"
+            "name": "plasmatic power"
         },
         "proportional-exchange": {
-            "name": "การแลกเปลี่ยนตามสัดส่วน"
+            "name": "proportional exchange"
         },
         "shifting-chasma": {
-            "name": "ช่องลึกเลื่อนไหล"
+            "name": "shifting chasma"
         },
         "shooting-stars": {
-            "name": "ดาวตก"
+            "name": "shooting stars"
         },
         "solar-eclipse": {
-            "name": "สุริยุปราคา"
+            "name": "solar eclipse"
         },
         "starstruck": {
-            "name": "หลงดารา"
+            "name": "starstruck"
         },
         "stone-meteorite": {
-            "name": "อุกกาบาตหิน"
+            "name": "stone meteorite"
         },
         "sungaze": {
-            "name": "จ้องดวงอาทิตย์"
+            "name": "sungaze"
         },
         "supernova": {
-            "name": "ซูเปอร์โนวา"
+            "name": "supernova"
         },
         "wish-upon-a-star": {
-            "name": "อธิษฐานต่อดาว"
+            "name": "wish upon a star"
         }
     },
     "fh": {
@@ -5111,352 +5111,352 @@ export default {
     },
     "mp": {
         "bug-bodys-bidding": {
-            "name": "คำสั่งของบั๊กบอดี้"
+            "name": "bug-bodys bidding"
         },
         "phantasmal-flurry": {
-            "name": "ระลอกผี"
+            "name": "phantasmal flurry"
         },
         "sharp-teeth": {
-            "name": "ฟันแหลมคม"
+            "name": "sharp teeth"
         },
         "nocturnal-feeding": {
-            "name": "กินยามราตรี"
+            "name": "nocturnal feeding"
         },
         "vermincall": {
-            "name": "เรียกสัตว์รบกวน"
+            "name": "vermincall"
         },
         "sickening-betrayal": {
-            "name": "การทรยศน่าสะอิดสะเอียน"
+            "name": "sickening betrayal"
         },
         "touch-of-atrophy": {
-            "name": "สัมผัสฝ่อลีบ"
+            "name": "touch of atrophy"
         },
         "surrounding-shadows": {
-            "name": "เงาโอบล้อม"
+            "name": "surrounding shadows"
         },
         "howling-apparition": {
-            "name": "ปีศาจร่างหอน"
+            "name": "howling apparition"
         },
         "endless-biting": {
-            "name": "กัดไม่รู้จบ"
+            "name": "endless biting"
         },
         "black-claws": {
-            "name": "กรงเล็บดำ"
+            "name": "black claws"
         },
         "anguish": {
-            "name": "ความทุกข์ระทม"
+            "name": "anguish"
         },
         "consume-with-regret": {
-            "name": "กลืนกินด้วยความเสียใจ"
+            "name": "consume with regret"
         },
         "rat-surprise": {
-            "name": "ความประหลาดใจจากหนู"
+            "name": "rat surprise"
         },
         "tibers-tenacity": {
-            "name": "ความเหนียวแน่นของไทเบอร์"
+            "name": "tibers tenacity"
         },
         "hidden-assault": {
-            "name": "โจมตีซ่อนเร้น"
+            "name": "hidden assault"
         },
         "musophobia": {
-            "name": "โรคกลัวหนู"
+            "name": "musophobia"
         },
         "seeking-strikes": {
-            "name": "โจมตีตามหา"
+            "name": "seeking strikes"
         },
         "doks-ferocity": {
-            "name": "ความดุร้ายของด็อก"
+            "name": "doks ferocity"
         },
         "compulsive-hoarding": {
-            "name": "สะสมของไม่หยุด"
+            "name": "compulsive hoarding"
         },
         "my-loyal-friend": {
-            "name": "เพื่อนผู้ซื่อสัตย์ของฉัน"
+            "name": "my loyal friend"
         },
         "nibbled-to-death": {
-            "name": "แทะจนตาย"
+            "name": "nibbled to death"
         },
         "diamartias-dominance": {
-            "name": "อำนาจของเดียมาร์เทีย"
+            "name": "diamartia's dominance"
         },
         "revel-in-misery": {
-            "name": "ปลื้มปีติกับความทุกข์"
+            "name": "revel in misery"
         },
         "twin-frenzy": {
-            "name": "คลั่งคู่"
+            "name": "twin frenzy"
         },
         "rat-tide": {
-            "name": "กระแสหนู"
+            "name": "rat tide"
         },
         "powders-ingenuity": {
-            "name": "ความช่างคิดของพาวเดอร์"
+            "name": "powders ingenuity"
         },
         "pay-the-piper": {
-            "name": "จ่ายค่านักเป่าปี่"
+            "name": "pay the piper"
         },
         "her-highness": {
-            "name": "ฝ่าบาท"
+            "name": "her highness"
         },
         "treacherous-tactics": {
-            "name": "ยุทธวิธีทรยศ"
+            "name": "treacherous tactics"
         },
         "anticipate-intricacies": {
-            "name": "คาดการณ์ความซับซ้อน"
+            "name": "anticipate intricacies"
         },
         "peer-into-battle": {
-            "name": "มองเข้าไปในการต่อสู้"
+            "name": "peer into battle"
         },
         "cursed-ground": {
-            "name": "พื้นดินต้องสาป"
+            "name": "cursed ground"
         },
         "void-snare": {
-            "name": "กับดักความว่างเปล่า"
+            "name": "void snare"
         },
         "approach-of-the-void": {
-            "name": "การมาของความว่างเปล่า"
+            "name": "approach of the void"
         },
         "duality-shards": {
-            "name": "เศษแห่งความเป็นคู่"
+            "name": "duality shards"
         },
         "envision-the-course": {
-            "name": "มองเห็นเส้นทาง"
+            "name": "envision the course"
         },
         "otherworldly-journey": {
-            "name": "การเดินทางข้ามโลก"
+            "name": "otherworldly journey"
         },
         "ray-of-light": {
-            "name": "ลำแสง"
+            "name": "ray of light"
         },
         "dimensional-transfer": {
-            "name": "การถ่ายโอนมิติ"
+            "name": "dimensional transfer"
         },
         "inspiration-from-beyond": {
-            "name": "แรงบันดาลใจจากเบื้องบน"
+            "name": "inspiration from beyond"
         },
         "call-of-the-nether": {
-            "name": "เสียงเรียกจากเนเธอร์"
+            "name": "call of the nether"
         },
         "recurrence": {
-            "name": "การเกิดซ้ำ"
+            "name": "recurrence"
         },
         "dimensional-divide": {
-            "name": "การแบ่งมิติ"
+            "name": "dimensional divide"
         },
         "cleansing-rite": {
-            "name": "พิธีชำระล้าง"
+            "name": "cleansing rite"
         },
         "past-and-future": {
-            "name": "อดีตและอนาคต"
+            "name": "past and future"
         },
         "ethereal-vortex": {
-            "name": "วังวนแห่งอีเทียเรียล"
+            "name": "ethereal vortex"
         },
         "protective-aura": {
-            "name": "ออร่าคุ้มครอง"
+            "name": "protective aura"
         },
         "enfeebling-hex": {
-            "name": "คำสาปอ่อนแรง"
+            "name": "enfeebling hex"
         },
         "seal-their-fate": {
-            "name": "ผนึกชะตาของพวกเขา"
+            "name": "seal their fate"
         },
         "constant-flux": {
-            "name": "ผันแปรไม่หยุด"
+            "name": "constant flux"
         },
         "careful-attunement": {
-            "name": "การปรับแต่งอย่างระมัดระวัง"
+            "name": "careful attunement"
         },
         "tether-the-planes": {
-            "name": "ผูกมิติ"
+            "name": "tether the planes"
         },
         "tear-reality": {
-            "name": "ฉีกความเป็นจริง"
+            "name": "tear reality"
         },
         "time-and-again": {
-            "name": "ครั้งแล้วครั้งเล่า"
+            "name": "time and again"
         },
         "deep-contemplation": {
-            "name": "การใคร่ครวญลึกซึ้ง"
+            "name": "deep contemplation"
         },
         "planar-chaos": {
-            "name": "ความโกลาหลระหว่างมิติ"
+            "name": "planar chaos"
         },
         "convergence": {
-            "name": "การบรรจบ"
+            "name": "convergence"
         },
         "hand-of-destiny": {
-            "name": "มือแห่งโชคชะตา"
+            "name": "hand of destiny"
         },
         "cant-be-bothered": {
-            "name": "ขี้เกียจยุ่ง"
+            "name": "cant be bothered"
         },
         "interesting-speciments": {
-            "name": "ตัวอย่างน่าสนใจ"
+            "name": "interesting speciments"
         },
         "gather-reagents": {
-            "name": "รวบรวมสารตั้งต้น"
+            "name": "gather reagents"
         },
         "somewhere-to-be": {
-            "name": "มีที่ต้องไป"
+            "name": "somewhere to be"
         },
         "not-amused": {
-            "name": "ไม่ขำด้วย"
+            "name": "not amused"
         },
         "perpetual-annoyance": {
-            "name": "ความรำคาญไม่รู้จบ"
+            "name": "perpetual annoyance"
         },
         "minor-inconvenience": {
-            "name": "ความไม่สะดวกเล็กน้อย"
+            "name": "minor inconvenience"
         },
         "fleeting-interest": {
-            "name": "ความสนใจชั่วครู่"
+            "name": "fleeting interest"
         },
         "bizarre-antics": {
-            "name": "ท่าทางประหลาด"
+            "name": "bizarre antics"
         },
         "leave-me-alone": {
-            "name": "ปล่อยฉันไว้คนเดียว"
+            "name": "leave me alone"
         },
         "abundant-nuisance": {
-            "name": "สิ่งรบกวนมากมาย"
+            "name": "abundant nuisance"
         },
         "trial-and-success": {
-            "name": "ลองผิดลองถูกจนสำเร็จ"
+            "name": "trial and success"
         },
         "experimental-insights": {
-            "name": "ข้อมูลเชิงลึกจากการทดลอง"
+            "name": "experimental insights"
         },
         "outsource": {
-            "name": "จ้างคนอื่นทำ"
+            "name": "outsource"
         },
         "beneath-me": {
-            "name": "ต่ำเกินกว่าฉัน"
+            "name": "beneath me"
         },
         "fading-presence": {
-            "name": "การปรากฏที่เลือนหาย"
+            "name": "fading presence"
         },
         "fools-errand": {
-            "name": "ภารกิจโง่เง่า"
+            "name": "fools errand"
         },
         "miniaturize": {
-            "name": "ย่อขนาด"
+            "name": "miniaturize"
         },
         "dont-be-a-baby": {
-            "name": "อย่างอแง"
+            "name": "dont be a baby"
         },
         "trying-to-remember": {
-            "name": "พยายามนึก"
+            "name": "trying to remember"
         },
         "withering-stare": {
-            "name": "จ้องมองให้เหี่ยวเฉา"
+            "name": "withering stare"
         },
         "dismissive-comment": {
-            "name": "คำพูดเมินเฉย"
+            "name": "dismissive comment"
         },
         "tear-a-new-one": {
-            "name": "ด่าให้ยับ"
+            "name": "tear a new one"
         },
         "collect-essence": {
-            "name": "เก็บสาระ"
+            "name": "collect essence"
         },
         "kill-that-one-first": {
-            "name": "ฆ่าตัวนั้นก่อน"
+            "name": "kill that one first"
         },
         "closed-for-business": {
-            "name": "ปิดกิจการ"
+            "name": "closed for business"
         },
         "fired-up": {
-            "name": "ฮึกเหิม"
+            "name": "fired up"
         },
         "the-power-of-enhancement": {
-            "name": "อำนาจการเสริมความแข็งแกร่ง"
+            "name": "the power of enhancement"
         },
         "shared-glory": {
-            "name": "เกียรติร่วมกัน"
+            "name": "shared glory"
         },
         "bring-them-down": {
-            "name": "ล้มพวกมัน"
+            "name": "bring them down"
         },
         "blade-of-the-north": {
-            "name": "ใบมีดแห่งเหนือ"
+            "name": "blade of the north"
         },
         "victory-rush": {
-            "name": "พุ่งสู่ชัยชนะ"
+            "name": "victory rush"
         },
         "dazing-sweep": {
-            "name": "กวาดมึนงง"
+            "name": "dazing sweep"
         },
         "lead-the-charge": {
-            "name": "นำการบุก"
+            "name": "lead the charge"
         },
         "spur-their-spirits": {
-            "name": "ปลุกใจพวกเขา"
+            "name": "spur their spirits"
         },
         "implacable-advance": {
-            "name": "รุกไม่หยุดยั้ง"
+            "name": "implacable advance"
         },
         "combined-might": {
-            "name": "พลังรวม"
+            "name": "combined might"
         },
         "get-behind-me": {
-            "name": "ไปอยู่ข้างหลังฉัน"
+            "name": "get behind me"
         },
         "take-command": {
-            "name": "เข้าบัญชาการ"
+            "name": "take command"
         },
         "wolf-pack-tactics": {
-            "name": "ยุทธวิธีฝูงหมาป่า"
+            "name": "wolf pack tactics"
         },
         "emboldening-call": {
-            "name": "เสียงเรียกปลุกใจ"
+            "name": "emboldening call"
         },
         "outmaneuver": {
-            "name": "เล่นงานด้วยกลยุทธ์"
+            "name": "outmaneuver"
         },
         "stand-firm": {
-            "name": "ยืนหยัด"
+            "name": "stand firm"
         },
         "a-little-help-here": {
-            "name": "ช่วยหน่อย"
+            "name": "a little help here"
         },
         "raze": {
-            "name": "เผาราบ"
+            "name": "raze"
         },
         "strike-now": {
-            "name": "โจมตีเดี๋ยวนี้"
+            "name": "strike now"
         },
         "northern-valor": {
-            "name": "ความกล้าหาญแห่งเหนือ"
+            "name": "northern valor"
         },
         "unleash-the-archers": {
-            "name": "ปล่อยพลธนู"
+            "name": "unleash the archers"
         },
         "armory": {
-            "name": "คลังอาวุธ"
+            "name": "armory"
         },
         "crashing-steel": {
-            "name": "เหล็กกระแทก"
+            "name": "crashing steel"
         },
         "defiance": {
-            "name": "การท้าทาย"
+            "name": "defiance"
         },
         "send-them-reeling": {
-            "name": "ทำให้พวกมันเซ"
+            "name": "send them reeling"
         },
         "for-frosthaven": {
-            "name": "เพื่อฟรอสต์เฮเวน"
+            "name": "for frosthaven"
         },
         "lead-from-the-front": {
-            "name": "นำจากด้านหน้า"
+            "name": "lead from the front"
         },
         "bonded-through-battle": {
-            "name": "ผูกพันผ่านการสู้รบ"
+            "name": "bonded through battle"
         },
         "fight-as-one": {
-            "name": "สู้เป็นหนึ่งเดียว"
+            "name": "fight as one"
         },
         "stand-against-many": {
-            "name": "ยืนหยัดต่อสู้กับคนมากมาย"
+            "name": "stand against many"
         }
     },
     "gh2": {
@@ -5530,7 +5530,7 @@ export default {
             "name": "แนวรบไม่หวั่น"
         },
         "leg-fly": {
-            "name": "ขาแมลงวัน"
+            "name": "leg fly"
         },
         "selfish-retribution": {
             "name": "แก้แค้นเห็นแก่ตัว"
@@ -5746,7 +5746,7 @@ export default {
             "name": "มีดขว้าง"
         },
         "practiced-reflexes": {
-            "name": "ปฏิกิริยาที่ฝึกฝน"
+            "name": "practiced reflexes"
         },
         "special-mixture": {
             "name": "ยาผสมพิเศษ"
@@ -5779,13 +5779,13 @@ export default {
             "name": "ได้เปรียบสยอง"
         },
         "duelists-advantage": {
-            "name": "ความได้เปรียบของนักดวล"
+            "name": "duelist's advantage"
         },
         "serrated-arrow": {
-            "name": "ลูกศรหยัก"
+            "name": "serrated arrow"
         },
         "dance-of-daggers": {
-            "name": "ระบำกริช"
+            "name": "dance of daggers"
         },
         "cull-the-weak": {
             "name": "กำจัดผู้อ่อนแอ"
@@ -5803,7 +5803,7 @@ export default {
             "name": "พิษทำให้พิการ"
         },
         "hired-help": {
-            "name": "ผู้ช่วยที่จ้างมา"
+            "name": "hired help"
         },
         "watch-it-burn": {
             "name": "ดูมันไหม้"
@@ -6022,19 +6022,19 @@ export default {
             "name": "โจมตีประมาท"
         },
         "into-the-fight": {
-            "name": "เข้าสู่การต่อสู้"
+            "name": "into the fight"
         },
         "final-fight": {
             "name": "การต่อสู้ครั้งสุดท้าย"
         },
         "tireless-retribution": {
-            "name": "การลงทัณฑ์ไม่รู้เหนื่อย"
+            "name": "tireless retribution"
         },
         "unstoppable-destruction": {
             "name": "การทำลายหยุดไม่ได้"
         },
         "inner-fire": {
-            "name": "ไฟภายใน"
+            "name": "inner fire"
         },
         "seeing-red": {
             "name": "เห็นแดง"
@@ -6052,7 +6052,7 @@ export default {
             "name": "โจมตีประมาท"
         },
         "fueled-by-pain": {
-            "name": "ขับเคลื่อนด้วยความเจ็บปวด"
+            "name": "fueled by pain"
         },
         "bone-breaker": {
             "name": "หักกระดูก"
@@ -6064,7 +6064,7 @@ export default {
             "name": "ความเกลียดชังลุกโชน"
         },
         "bathe-in-blood": {
-            "name": "อาบเลือด"
+            "name": "bathe in blood"
         },
         "focused-scourge": {
             "name": "ภัยพิบัติมุ่งเป้า"
@@ -6109,7 +6109,7 @@ export default {
             "name": "สุสานแห่งอมตะ"
         },
         "pressing-pursuit": {
-            "name": "ไล่ตามกดดัน"
+            "name": "pressing pursuit"
         },
         "infest": {
             "name": "รุมเข้าครอบครอง"
@@ -6163,13 +6163,13 @@ export default {
             "name": "แข่งไปสู่หลุมศพ"
         },
         "gut-shot": {
-            "name": "ยิงกลางท้อง"
+            "name": "gut shot"
         },
         "detonation": {
             "name": "ระเบิด"
         },
         "murderous-stalker": {
-            "name": "นักสะกดรอยฆาตกร"
+            "name": "murderous stalker"
         },
         "a-moments-peace": {
             "name": "ช่วงเวลาสงบ"
@@ -6184,28 +6184,28 @@ export default {
             "name": "กับดักเท้า"
         },
         "forward-momentum": {
-            "name": "โมเมนตัมไปข้างหน้า"
+            "name": "forward momentum"
         },
         "hidden-danger": {
-            "name": "อันตรายซ่อนเร้น"
+            "name": "hidden danger"
         },
         "give-chase": {
-            "name": "ไล่ล่า"
+            "name": "give chase"
         },
         "feral-aid": {
-            "name": "ความช่วยเหลือจากสัตว์ป่า"
+            "name": "feral aid"
         },
         "fierce-fighter": {
-            "name": "นักสู้ดุดัน"
+            "name": "fierce fighter"
         },
         "relentless-offensive": {
             "name": "โจมตีไม่หยุด"
         },
         "dual-shot": {
-            "name": "ยิงคู่"
+            "name": "dual shot"
         },
         "walking-bastion": {
-            "name": "ป้อมปราการเดินได้"
+            "name": "walking bastion"
         },
         "swift-trickery": {
             "name": "กลอุบายเร็ว"
@@ -6214,7 +6214,7 @@ export default {
             "name": "พรางตัว"
         },
         "coated-arrows": {
-            "name": "ลูกศรเคลือบ"
+            "name": "coated arrows"
         },
         "felling-swoop": {
             "name": "โฉบโค่น"
@@ -6229,7 +6229,7 @@ export default {
             "name": "จุดจบใกล้"
         },
         "charging-beast": {
-            "name": "สัตว์ร้ายพุ่งชน"
+            "name": "charging beast"
         },
         "darkened-skies": {
             "name": "ท้องฟ้ามืด"
@@ -6244,7 +6244,7 @@ export default {
             "name": "ผู้ล่าและเหยื่อ"
         },
         "heart-of-doom": {
-            "name": "หัวใจแห่งหายนะ"
+            "name": "heart of doom"
         },
         "ice-spikes": {
             "name": "หนามน้ำแข็ง"
@@ -6418,7 +6418,7 @@ export default {
             "name": "เสียงแห่งราตรี"
         },
         "comorbid-sting": {
-            "name": "เหล็กในโรคซ้อน"
+            "name": "comorbid sting"
         },
         "biting-gnats": {
             "name": "แมลงกัด"
@@ -6427,37 +6427,37 @@ export default {
             "name": "สายพันธุ์รุนแรง"
         },
         "contagious-corpse": {
-            "name": "ศพติดต่อ"
+            "name": "contagious corpse"
         },
         "path-of-the-pox": {
-            "name": "เส้นทางโรคฝีดาษ"
+            "name": "path of the pox"
         },
         "vile-pestilence": {
             "name": "โรคระบาดน่ารังเกียจ"
         },
         "blistering-buboes": {
-            "name": "ต่อมน้ำเหลืองพอง"
+            "name": "blistering buboes"
         },
         "festering-sores": {
-            "name": "แผลหนองเน่า"
+            "name": "festering sores"
         },
         "wretched-yield": {
-            "name": "ผลผลิตอนาถ"
+            "name": "wretched yield"
         },
         "accelerated-end": {
             "name": "จุดจบเร่งด่วน"
         },
         "deliriums-danse": {
-            "name": "ระบำอาการเพ้อ"
+            "name": "delirium's danse"
         },
         "gift-of-rot": {
-            "name": "ของขวัญแห่งความเน่า"
+            "name": "gift of rot"
         },
         "spread-the-plague": {
             "name": "แพร่โรค"
         },
         "sickening-strength": {
-            "name": "พลังน่าสะอิดสะเอียน"
+            "name": "sickening strength"
         },
         "rot-maggots": {
             "name": "หนอนเน่า"
@@ -6466,22 +6466,22 @@ export default {
             "name": "ความทุกข์ฝันร้าย"
         },
         "cloying-miasma": {
-            "name": "ไอพิษเลี่ยน"
+            "name": "cloying miasma"
         },
         "rabid-bite": {
-            "name": "กัดบ้าคลั่ง"
+            "name": "rabid bite"
         },
         "unwilling-sacrifice": {
-            "name": "การเสียสละโดยไม่เต็มใจ"
+            "name": "unwilling sacrifice"
         },
         "wilt-and-wither": {
-            "name": "เหี่ยวและแห้งเฉา"
+            "name": "wilt and wither"
         },
         "compounding-infection": {
-            "name": "การติดเชื้อทวีคูณ"
+            "name": "compounding infection"
         },
         "crippling-malady": {
-            "name": "โรคทำให้พิการ"
+            "name": "crippling malady"
         },
         "succumb-to-the-gift": {
             "name": "ยอมต่อของขวัญ"
@@ -6490,25 +6490,25 @@ export default {
             "name": "การสูญพันธุ์ครั้งใหญ่"
         },
         "tainted-offering": {
-            "name": "เครื่องบูชาแปดเปื้อน"
+            "name": "tainted offering"
         },
         "creeping-lethargy": {
-            "name": "ความเฉื่อยชาคืบคลาน"
+            "name": "creeping lethargy"
         },
         "convert-the-flock": {
             "name": "เปลี่ยนฝูง"
         },
         "disease-vector": {
-            "name": "พาหะโรค"
+            "name": "disease vector"
         },
         "xorns-embrace": {
-            "name": "อ้อมกอดของซอร์น"
+            "name": "xorns embrace"
         },
         "booster-pack": {
-            "name": "ชุดเสริมกำลัง"
+            "name": "booster pack"
         },
         "readied-blade": {
-            "name": "ใบมีดพร้อมรบ"
+            "name": "readied blade"
         },
         "crushing-hammer": {
             "name": "ค้อนบด"
@@ -6523,10 +6523,10 @@ export default {
             "name": "หอกแทง"
         },
         "light-javelin": {
-            "name": "หอกเบา"
+            "name": "light javelin"
         },
         "cleave-and-thrust": {
-            "name": "ฟันและแทง"
+            "name": "cleave and thrust"
         },
         "iron-bulwark": {
             "name": "กำแพงเหล็ก"
@@ -6535,10 +6535,10 @@ export default {
             "name": "ความเชี่ยวชาญ"
         },
         "provisions": {
-            "name": "เสบียง"
+            "name": "provisions"
         },
         "caustic-bolt": {
-            "name": "ลูกธนูกัดกร่อน"
+            "name": "caustic bolt"
         },
         "scroll-of-recall": {
             "name": "ม้วนกระดาษเรียกคืน"
@@ -6547,28 +6547,28 @@ export default {
             "name": "ชุดลับมีด"
         },
         "scroll-case": {
-            "name": "กระบอกม้วนคัมภีร์"
+            "name": "scroll case"
         },
         "lethal-arsenal": {
-            "name": "คลังอาวุธสังหาร"
+            "name": "lethal arsenal"
         },
         "quiver-of-arrows": {
             "name": "กระบอกธนู"
         },
         "concussive-snare": {
-            "name": "บ่วงกระแทก"
+            "name": "concussive snare"
         },
         "hammer-and-anvil": {
-            "name": "ค้อนและทั่ง"
+            "name": "hammer and anvil"
         },
         "giant-club": {
             "name": "กระบองยักษ์"
         },
         "scroll-of-judgement": {
-            "name": "ม้วนคัมภีร์พิพากษา"
+            "name": "scroll of judgement"
         },
         "set-up-shop": {
-            "name": "ตั้งร้าน"
+            "name": "set up shop"
         },
         "scroll-of-lightning": {
             "name": "ม้วนกระดาษสายฟ้า"
@@ -6577,16 +6577,16 @@ export default {
             "name": "เสบียงต่อเนื่อง"
         },
         "twin-lances": {
-            "name": "หอกคู่"
+            "name": "twin lances"
         },
         "tools-of-war": {
-            "name": "เครื่องมือสงคราม"
+            "name": "tools of war"
         },
         "scroll-of-blizzards": {
             "name": "ม้วนกระดาษพายุหิมะ"
         },
         "armed-to-the-teeth": {
-            "name": "ติดอาวุธครบมือ"
+            "name": "armed to the teeth"
         },
         "reinforced-steel": {
             "name": "เหล็กเสริม"
@@ -6619,10 +6619,10 @@ export default {
             "name": "เข็มฉีดยา"
         },
         "needle-gun": {
-            "name": "ปืนเข็ม"
+            "name": "needle gun"
         },
         "vital-strikes": {
-            "name": "โจมตีจุดสำคัญ"
+            "name": "vital strikes"
         },
         "vaccine": {
             "name": "วัคซีน"
@@ -6646,58 +6646,58 @@ export default {
             "name": "การถ่ายเลือด"
         },
         "experimental-stimulants": {
-            "name": "ยากระตุ้นทดลอง"
+            "name": "experimental stimulants"
         },
         "do-no-harm": {
             "name": "ไม่ทำร้าย"
         },
         "hack-to-bits": {
-            "name": "ฟันเป็นชิ้นๆ"
+            "name": "hack to bits"
         },
         "fortifying-injection": {
-            "name": "ยาฉีดเสริมกำลัง"
+            "name": "fortifying injection"
         },
         "amputate": {
             "name": "ตัดแขนขา"
         },
         "return-the-favor": {
-            "name": "ตอบแทนบุญคุณ"
+            "name": "return the favor"
         },
         "surgeons-satchel": {
             "name": "กระเป๋าศัลยแพทย์"
         },
         "exacting-anger": {
-            "name": "ความโกรธแม่นยำ"
+            "name": "exacting anger"
         },
         "take-your-medicine": {
-            "name": "กินยาของคุณซะ"
+            "name": "take your medicine"
         },
         "euthanize": {
             "name": "การุณยฆาต"
         },
         "secret-of-the-oak": {
-            "name": "ความลับของต้นโอ๊ก"
+            "name": "secret of the oak"
         },
         "grisly-trauma": {
             "name": "บาดแผลสยอง"
         },
         "medical-pack-1": {
-            "name": "ชุดทางการแพทย์ 1"
+            "name": "medical pack 1"
         },
         "medical-pack-2": {
-            "name": "ชุดทางการแพทย์ 2"
+            "name": "medical pack 2"
         },
         "medical-pack-3": {
-            "name": "ชุดทางการแพทย์ 3"
+            "name": "medical pack 3"
         },
         "medical-pack-4": {
-            "name": "ชุดทางการแพทย์ 4"
+            "name": "medical pack 4"
         },
         "medical-pack-5": {
-            "name": "ชุดทางการแพทย์ 5"
+            "name": "medical pack 5"
         },
         "medical-pack-6": {
-            "name": "ชุดทางการแพทย์ 6"
+            "name": "medical pack 6"
         },
         "hammer-blow": {
             "name": "หมัดค้อน"
@@ -6721,7 +6721,7 @@ export default {
             "name": "คำอธิษฐานเรืองแสง"
         },
         "soothing-light": {
-            "name": "แสงปลอบประโลม"
+            "name": "soothing light"
         },
         "purifying-aura": {
             "name": "ออร่าชำระ"
@@ -6736,13 +6736,13 @@ export default {
             "name": "รุ่งอรุณ"
         },
         "sanctify": {
-            "name": "ชำระให้บริสุทธิ์"
+            "name": "sanctify"
         },
         "beacon-of-light": {
             "name": "ประภาคารแห่งแสง"
         },
         "holy-defense": {
-            "name": "การป้องกันศักดิ์สิทธิ์"
+            "name": "holy defense"
         },
         "mobilizing-axiom": {
             "name": "สัจพจน์ระดม"
@@ -6760,7 +6760,7 @@ export default {
             "name": "รุกอย่างระมัดระวัง"
         },
         "arresting-march": {
-            "name": "การเดินทัพหยุดยั้ง"
+            "name": "arresting march"
         },
         "path-of-glory": {
             "name": "เส้นทางแห่งเกียรติ"
@@ -6778,16 +6778,16 @@ export default {
             "name": "ส่องเป้าหมาย"
         },
         "warding-blow": {
-            "name": "การตีป้องกัน"
+            "name": "warding blow"
         },
         "supportive-chant": {
             "name": "บทสวดสนับสนุน"
         },
         "divine-ascension": {
-            "name": "การเสด็จขึ้นสวรรค์"
+            "name": "divine ascension"
         },
         "solar-bastion": {
-            "name": "ป้อมปราการสุริยะ"
+            "name": "solar bastion"
         },
         "mobilizing-measure": {
             "name": "มาตรการระดม"
@@ -6844,7 +6844,7 @@ export default {
             "name": "โอดถึงนักพนัน"
         },
         "hymn-of-the-oak": {
-            "name": "เพลงสรรเสริญต้นโอ๊ก"
+            "name": "hymn of the oak"
         },
         "alluring-serenade": {
             "name": "เซเรเนดหลอกลวง"
@@ -6880,7 +6880,7 @@ export default {
             "name": "การแสดงดึงดูด"
         },
         "ethereal-gust": {
-            "name": "ลมกรรโชกอีเทอร์"
+            "name": "ethereal gust"
         },
         "forged-ferocity": {
             "name": "ความดุร้ายหลอม"
@@ -6892,7 +6892,7 @@ export default {
             "name": "การเคลื่อนไหวป่า"
         },
         "planar-protection": {
-            "name": "การคุ้มครองจากมิติ"
+            "name": "planar protection"
         },
         "mighty-bond": {
             "name": "พันธะทรงพลัง"
@@ -6901,22 +6901,22 @@ export default {
             "name": "พลังพันธะ"
         },
         "burning-passion": {
-            "name": "ความหลงใหลลุกโชน"
+            "name": "burning passion"
         },
         "unending-dominance": {
             "name": "อำนาจไม่รู้จบ"
         },
         "shadow-dart": {
-            "name": "ลูกดอกเงา"
+            "name": "shadow dart"
         },
         "burning-tether": {
-            "name": "เชือกผูกลุกไหม้"
+            "name": "burning tether"
         },
         "primal-assault": {
-            "name": "การโจมตีดั้งเดิม"
+            "name": "primal assault"
         },
         "drifting-stingers": {
-            "name": "เหล็กในลอยล่อง"
+            "name": "drifting stingers"
         },
         "biting-wind": {
             "name": "ลมหนาวกัด"
@@ -6928,13 +6928,13 @@ export default {
             "name": "วิญญาณแทรกแซง"
         },
         "void-imbuement": {
-            "name": "การหล่อหลอมด้วยความว่างเปล่า"
+            "name": "void imbuement"
         },
         "shaping-the-void": {
-            "name": "ปั้นแต่งความว่างเปล่า"
+            "name": "shaping the void"
         },
         "deadly-mischief": {
-            "name": "ความซุกซนอันตราย"
+            "name": "deadly mischief"
         },
         "strength-in-numbers": {
             "name": "พลังในจำนวน"
@@ -6946,7 +6946,7 @@ export default {
             "name": "ภูเขามีชีวิต"
         },
         "primal-infusion": {
-            "name": "การหลอมรวมดั้งเดิม"
+            "name": "primal infusion"
         },
         "tear-the-fabric": {
             "name": "ฉีกผืนผ้า"
@@ -6967,10 +6967,10 @@ export default {
             "name": "เชี่ยวชาญข้ามมิติ"
         },
         "imposed-will": {
-            "name": "เจตจำนงที่บังคับ"
+            "name": "imposed will"
         },
         "horned-nightmare": {
-            "name": "ฝันร้ายมีเขา"
+            "name": "horned nightmare"
         },
         "concentrated-rage": {
             "name": "ความโกรธเข้มข้น"
@@ -6982,31 +6982,31 @@ export default {
             "name": "สายฟ้าร้อง"
         },
         "natures-gift": {
-            "name": "ของขวัญแห่งธรรมชาติ"
+            "name": "nature's gift"
         },
         "focused-aggression": {
             "name": "ความก้าวร้าวมุ่งเน้น"
         },
         "gnaw": {
-            "name": "แทะ"
+            "name": "gnaw"
         },
         "disorienting-roar": {
             "name": "คำรามสับสน"
         },
         "vitality-siphon": {
-            "name": "ดูดพลังชีวิต"
+            "name": "vitality siphon"
         },
         "spirit-swap": {
             "name": "สลับวิญญาณ"
         },
         "invocation-of-endurance": {
-            "name": "การอัญเชิญความอดทน"
+            "name": "invocation of endurance"
         },
         "invocation-of-spirit": {
-            "name": "การอัญเชิญจิตวิญญาณ"
+            "name": "invocation of spirit"
         },
         "gust-sigil": {
-            "name": "ตราลมกรรโชก"
+            "name": "gust sigil"
         },
         "forceful-swipe": {
             "name": "ปัดทรงพลัง"
@@ -7027,13 +7027,13 @@ export default {
             "name": "สัตว์หยุดไม่ได้"
         },
         "forests-blessing": {
-            "name": "พรแห่งป่า"
+            "name": "forest's blessing"
         },
         "rampage": {
             "name": "ความบ้าคลั่ง"
         },
         "invocation-of-domination": {
-            "name": "การอัญเชิญการครอบงำ"
+            "name": "invocation of domination"
         },
         "blood-hunger": {
             "name": "ความหิวเลือด"
@@ -7042,19 +7042,19 @@ export default {
             "name": "คำสาปโบราณ"
         },
         "invocation-of-absorption": {
-            "name": "การอัญเชิญการดูดซับ"
+            "name": "invocation of absorption"
         },
         "unleashed-fury": {
-            "name": "ความเกรี้ยวกราดที่ปลดปล่อย"
+            "name": "unleashed fury"
         },
         "lash-out": {
             "name": "ตวัด"
         },
         "unbreakable-bond": {
-            "name": "พันธะไม่อาจแตกหัก"
+            "name": "unbreakable bond"
         },
         "spirit-sigil": {
-            "name": "ตราวิญญาณ"
+            "name": "spirit sigil"
         },
         "jaws-of-death": {
             "name": "ขากรรไกรแห่งความตาย"

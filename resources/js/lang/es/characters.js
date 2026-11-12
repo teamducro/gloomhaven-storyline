@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "Égida de Ámbar",
+        "name": "Amber Aegis",
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} “Coloca 1 ficha de {COLONY} {COLONY_ICON} de tu elección en cualquier hexágono vacío a {RANGE}2”",
             "Retira 2 cartas {-1_WHITE}",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artífice",
+        "name": "Artificer",
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} {ANY}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {DISARM}",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombarda",
+        "name": "Bombard",
         "perks": [
             "Retira 2 cartas {-1_WHITE}",
             "Sustituye 2 cartas {+0_WHITE} por 2 cartas {AGAIN} {PIERCE}3",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Chispa Brillante",
+        "name": "Brightspark",
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “{ANY_X} para añadir +2 {ATTACK}”",
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-2_WHITE} “{RECOVER} 1 carta aleatoria de tu pila de descartes”",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Guardacadenas",
+        "name": "Chainguard",
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} “{SHACKLE} {CG_CIRCLE}”",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “{+2_WHITE} si el objetivo está {SHACKLED} {CG_CIRCLE}”",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Cacique",
+        "name": "Chieftain",
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {POISON}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “{HEAL}1, {CT_CIRCLE}”",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Caballero de Fuego",
+        "name": "Fire Knight",
         "perks": [
             "Retira 2 cartas {-1_WHITE}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {STRENGTHEN} (Ally)",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hierofante",
+        "name": "Hierophant",
         "perks": [
             "Retira 2 cartas {-1_WHITE}",
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {AGAIN} {LIGHT}",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "Pactovacío",
+        "name": "Hollowpact",
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {HEAL}2, Personal",
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}”",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Luminaria",
+        "name": "Luminary",
         "perks": [
             "Retira 4 cartas {+0_WHITE}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE}",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "Pie de Ciénaga",
+        "name": "Mirefoot",
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {+0_WHITE}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE}",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "Bocaruina",
+        "name": "Ruinmaw",
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} {RUPTURE} y {WOUND}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {WOUND}",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "Invocaespíritus",
+        "name": "Spirit Caller",
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} y 1 carta {+1_WHITE}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “{+2_WHITE} si un {SPIRIT} {SP_CIRCLE} realizó el ataque”",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Lanzaestrellas",
+        "name": "Starslinger",
         "perks": [
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {AGAIN} {HEAL}1, Personal",
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} {DISARM} y 1 carta {-1_WHITE} {INVISIBLE}, Personal",
@@ -938,7 +938,7 @@ export default {
         ]
     },
     "HA": {
-        "name": "Granizo",
+        "name": "Hail",
         "masteries": [
             "Durante todo un escenario, obtén al menos 1 {RESOLVE_WHITE} cada ronda",
             "En un solo escenario, a lo largo de 3 rondas consecutivas, gasta al menos 3 {RESOLVE_WHITE} cada ronda"
@@ -998,7 +998,7 @@ export default {
         ]
     },
     "BR2": {
-        "name": "Matón",
+        "name": "Bruiser",
         "masteries": [
             "En 3 escenarios distintos, mata a un enemigo al que hayas empujado o atraído esa ronda",
             "En un solo escenario, a lo largo de 3 rondas consecutivas, juega 6 cartas de habilidad distintas y haz que los enemigos sufran 7 o más de daño durante cada una de esas rondas"
@@ -1057,7 +1057,7 @@ export default {
         ]
     },
     "SC2": {
-        "name": "Cuchillo Silencioso",
+        "name": "Silent Knife",
         "masteries": [
             "Durante todo un escenario, ataca solo a enemigos adyacentes a uno de tus aliados o no adyacentes a ninguno de sus aliados, y realiza al menos 10 ataques",
             "Termina 3 escenarios con 12 o más fichas de dinero"
@@ -1266,9 +1266,9 @@ export default {
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {+1_WHITE} “Puedes obtener {DISARM.fh} para añadir {STUN.fh}”",
             "Añade 2 cartas {+1_WHITE} “Añade +1 {ATTACK.fh} si un aliado tiene una receta activa”",
             "Añade 1 carta {AGAIN} “{HEAL.fh}3, {RANGE.fh}1”",
-            "Añade +1 {HEAL.fh} a todas las curaciones de las cartas de habilidad “Botiquín”",
+            "Añade +1 {HEAL.fh} a todas las curaciones de las cartas de habilidad “Medical Kit”",
             "Cada Fase de Ciudad tras completar un escenario, tu donación o la de un aliado al Santuario del Gran Roble es gratuita",
-            "Al final de cada uno de tus descansos, si un aliado tiene una receta activa, obtén 1 carta de habilidad “Botiquín” y mueve la ficha de la receta activa de un aliado 1 espacio hacia atrás"
+            "Al final de cada uno de tus descansos, si un aliado tiene una receta activa, obtén 1 carta de habilidad “Medical Kit” y mueve la ficha de la receta activa de un aliado 1 espacio hacia atrás"
         ]
     },
     "SK2": {
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Vinculalmas",
+        "name": "Soultether",
         "masteries": [
             "Realiza 3 acciones de invocación distintas antes de tu primer descanso y mantén esas cartas en tu zona activa durante todo el escenario",
             "Realiza 6 habilidades de invocación distintas de tus cartas de habilidad durante las primeras rondas de 6 escenarios"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "Furia Salvaje",
+        "name": "Wildfury",
         "masteries": [
             "En un solo escenario, infunde o consume {WIND} o {EARTH} durante cada uno de tus turnos",
             "En un solo escenario, mata a 4 o más enemigos con ataques de {COMMAND} de 7 o más (tras todas las bonificaciones, antes de los modificadores de ataque)"

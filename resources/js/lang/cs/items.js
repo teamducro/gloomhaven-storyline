@@ -1018,463 +1018,463 @@ export default {
         "desc": "Během svého pohybu přidej k jednomu pohybu „+1 {MOVE} a {JUMP}“."
     },
     "cs-1": {
-        "name": "Koule zmatení",
+        "name": "Orb of Confusion",
         "desc": "Během své schopnosti útok můžeš položit jeden žeton hrdiny na tuto kartu a přidat {MUDDLE} k jednomu útoku. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-2": {
-        "name": "Koule hybnosti",
+        "name": "Orb of Momentum",
         "desc": "Během své schopnosti pohyb můžeš položit jeden žeton hrdiny na tuto kartu a přidat +1 {MOVE}. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-3": {
-        "name": "Koule hbitosti",
+        "name": "Orb of Agility",
         "desc": "Během své schopnosti pohyb můžeš položit jeden žeton hrdiny na tuto kartu a přidat {JUMP}. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-4": {
-        "name": "Koule bujarosti",
+        "name": "Orb of Vigor",
         "desc": "Během své schopnosti útok můžeš položit jeden žeton hrdiny na tuto kartu a přidat +1 {ATTACK} k jednomu útoku. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-5": {
-        "name": "Koule odplaty",
+        "name": "Orb of Retribution",
         "desc": "Když na tebe zaútočí sousedící nepřítel, můžeš položit jeden žeton hrdiny na tuto kartu a získat {RETALIATE} 1 pro tento útok. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-6": {
-        "name": "Koule nákazy",
+        "name": "Orb of Infection",
         "desc": "Během své schopnosti útok můžeš položit jeden žeton hrdiny na tuto kartu a přidat {POISON} k jednomu útoku. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-7": {
-        "name": "Koule životnosti",
+        "name": "Orb of Vitality",
         "desc": "Během svého tahu můžeš položit jeden žeton hrdiny na tuto kartu a provést „{HEAL} 1, na sebe“. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-8": {
-        "name": "Koule ochrany",
+        "name": "Orb of Protection",
         "desc": "Když utrpíš zranění z útoku, můžeš položit jeden žeton hrdiny na tuto kartu a získat {SHIELD} 1 pro tento útok. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-9": {
-        "name": "Koule štěstí",
+        "name": "Orb of Fortune",
         "desc": "Během své schopnosti útok můžeš položit jeden žeton hrdiny na tuto kartu a získat výhodu na jednom útoku. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-10": {
-        "name": "Koule zoufalství",
+        "name": "Orb of Despair",
         "desc": "Během své schopnosti útok můžeš položit jeden žeton hrdiny na tuto kartu a přidat {CURSE} k jednomu útoku. Jakmile jsou na této kartě tři žetony, je karta {CONSUMED}."
     },
     "cs-11": {
-        "name": "Protilátka proti neštovicím",
+        "name": "Pox Antidote",
         "desc": "Během svého tahu odstraň {INFECT} ze sebe nebo ze sousedícího spojence."
     },
     "cs-12": {
-        "name": "Trofejní přilba",
+        "name": "Trophy Helm",
         "desc": "Na tvé útoky nemá {RETALIATE} vliv."
     },
     "cs-13": {
-        "name": "Válečný krumpáč",
+        "name": "War Pick",
         "desc": "Během své schopnosti útok nablízko přidej {PIERCE} 4 k jednomu útoku."
     },
     "cs-14": {
-        "name": "Řetězový palcát",
+        "name": "Chain Mace",
         "desc": "Během svého tahu proveď „{ATTACK} 3, {RANGE} 2“."
     },
     "cs-15": {
-        "name": "Vysávající holeně",
+        "name": "Draining Greaves",
         "desc": "Na konci svého tahu, pokud ses během něj pohnul o čtyři nebo více polí, utrpí jeden sousedící nepřítel jedno zranění."
     },
     "cs-16": {
-        "name": "Střevíce fázování",
+        "name": "Shoes of Phasing",
         "desc": "Během svých schopností pohyb se můžeš pohybovat skrz nepřátele."
     },
     "cs-17": {
-        "name": "Lehké boty",
+        "name": "Lightweight Boots",
         "desc": "Během své schopnosti pohyb přidej +2 {MOVE} a {JUMP}."
     },
     "cs-18": {
-        "name": "Měsíční světlo v lahvi",
+        "name": "Bottled Moonlight",
         "desc": "Během své schopnosti léčení přidej ke každému léčení +2 {HEAL} a {STRENGTHEN}."
     },
     "cs-19": {
-        "name": "Boty věčnosti",
+        "name": "Boots of Perpetuity",
         "desc": "Jsi imunní vůči {IMMOBILIZE}.\\nNa konci svého tahu, pokud ses během něj nepohnul o žádné pole, proveď „{MOVE} 1“."
     },
     "cs-20": {
-        "name": "Podivný přívěsek",
+        "name": "Curious Pendant",
         "desc": "Během svého tahu {RECOVER} jednu zničenou kartu zahranou v tomto kole."
     },
     "cs-21": {
-        "name": "Infračervené brýle",
+        "name": "Infrared Goggles",
         "desc": "Získej výhodu na všech útocích, které provedeš, zatímco jsi {INVISIBLE}."
     },
     "cs-22": {
-        "name": "Ocelová přilba",
+        "name": "Steel Helmet",
         "desc": "Když na tebe někdo zaútočí, považuj každou kartu modifikátoru {+1_WHITE}, kterou nepřítel vytáhne, místo toho za kartu {+0_WHITE}."
     },
     "cs-23": {
-        "name": "Pletená plátová zbroj",
+        "name": "Woven Plate Armor",
         "desc": "Když na tebe někdo zaútočí, útočník získá nevýhodu na útoku a ty získáš {SHIELD} 2 pro tento útok."
     },
     "cs-24": {
-        "name": "Plášť čistoty",
+        "name": "Mantle of Purity",
         "desc": "Kdykoli bys měl získat jeden nebo více negativních stavů, zabraň jim."
     },
     "cs-25": {
-        "name": "Šál s kostěným krytím",
+        "name": "Boneclad Shawl",
         "desc": "Při následujících dvou útocích na tebe, které provedou sousedící nepřátelé, získej {RETALIATE} 2 pro daný útok."
     },
     "cs-26": {
-        "name": "Silueta-kyrys",
+        "name": "Silhouette Cuirass",
         "desc": "Když by se tvé body zdraví snížily útokem na tebe na 0, místo toho neutrpíš žádné zranění a získáš {INVISIBLE}."
     },
     "cs-27": {
-        "name": "Translokační přístroj",
+        "name": "Translocation Device",
         "desc": "Během svého tahu se vyměň na pozici s jedním nepřítelem v {RANGE} 5."
     },
     "cs-28": {
-        "name": "Alchymistický lektvar",
+        "name": "Alchemy Potion",
         "desc": "Během svého tahu nahraď jeden sousedící dílek překážky žetonem peněz."
     },
     "cs-29": {
-        "name": "Opojný lektvar",
+        "name": "Intoxicating Potion",
         "desc": "Během svého tahu proveď „{HEAL} 5, {POISON}, na sebe“."
     },
     "cs-30": {
-        "name": "Železná smyčka",
+        "name": "Iron Snare",
         "desc": "Během svého tahu vytvoř jednu past {IMMOBILIZE} na prázdném poli v {RANGE} 3."
     },
     "cs-31": {
-        "name": "Otřesová mina",
+        "name": "Concussion Mine",
         "desc": "Během svého tahu vytvoř jednu past {STUN} na prázdném poli v {RANGE} 3."
     },
     "cs-32": {
-        "name": "Měnlivý kompas",
+        "name": "Shifting Compass",
         "desc": "Během svého tahu přinuť jednoho nepřítele v dosahu 5, aby provedl schopnost „{MOVE} 2, {JUMP}“, přičemž ji ovládáš ty."
     },
     "cs-33": {
-        "name": "Beranidlo",
+        "name": "Battering Ram",
         "desc": "Během své schopnosti útok nablízko přidej ke všem svým útokům {MUDDLE} a {PUSH} 2."
     },
     "cs-34": {
-        "name": "Drápová past",
+        "name": "Claw Trap",
         "desc": "Na konci svého tahu vytvoř na sousedícím prázdném poli jednu past {POISON} se zraněním 4."
     },
     "cs-35": {
-        "name": "Hůl odplaty",
+        "name": "Staff of Retribution",
         "desc": "Když na tebe někdo zaútočí, získej {RETALIATE} 1, {RANGE} 3 pro tento útok."
     },
     "cs-36": {
-        "name": "Čepel prokleté krve",
+        "name": "Curseblood Blade",
         "desc": "Během své schopnosti útok nablízko utrp 1 zranění, abys přidal {CURSE} ke všem svým útokům."
     },
     "cs-37": {
-        "name": "Štít z dračích šupin",
+        "name": "Drakescale Shield",
         "desc": "Když na tebe zaútočí sousedící nepřítel, získej {RETALIATE} 3 pro tento útok."
     },
     "cs-38": {
-        "name": "Dýka z dračích šupin",
+        "name": "Drakescale Dagger",
         "desc": "Během své schopnosti útok nablízko netahej u jednoho útoku kartu modifikátoru útoku."
     },
     "cs-39": {
-        "name": "Hák na střelu",
+        "name": "Hook Shot",
         "desc": "Během svého tahu proveď „{ATTACK} 2, {RANGE} 3, {PIERCE} 2“."
     },
     "cs-40": {
-        "name": "Boty z měsíční kůže",
+        "name": "Moonleather Boots",
         "desc": "Přidej +1 pohyb ke všem svým pohybům, dokud máš plné zdraví."
     },
     "cs-41": {
-        "name": "Přípitek duchům",
+        "name": "Spirit Libation",
         "desc": "Během svého tahu odstraň jeden žeton zranění z jednoho {SPIRIT}. Tento {SPIRIT} může okamžitě provést tah, aniž by obdržel žeton zranění."
     },
     "cs-42": {
-        "name": "Roucho utišení",
+        "name": "Robe of Soothing",
         "desc": "Kdykoli dáš spojenci kartu schopnosti {PRAYER}, může tento spojenec provést „{HEAL} 2, na sebe“."
     },
     "cs-43": {
-        "name": "Skvostná mitra",
+        "name": "Resplendent Mitre",
         "desc": "Během své akce léčení přidej ke každému léčení +2 {HEAL}."
     },
     "cs-44": {
-        "name": "Kanystrový projektil",
+        "name": "Canister Projectile",
         "desc": "Během své schopnosti útok na dálku přidej {PIERCE} 2 k jednomu útoku."
     },
     "cs-45": {
-        "name": "Řetězové dělo",
+        "name": "Chain Cannon",
         "desc": "Během svého tahu proveď „{PULL} 2, na sebe směrem k jednomu nepříteli v {RANGE} 3“."
     },
     "cs-46": {
-        "name": "Píšťala přivolavače",
+        "name": "Summoner's Whistle",
         "desc": "Během svého tahu provede jeden tebou přivolaný spojenec\\n{MOVE} +0\\n{ATTACK} +0\\npřičemž schopnosti ovládáš ty."
     },
     "cs-47": {
-        "name": "Přírodní náramky",
+        "name": "Nature Armlets",
         "desc": "Když jsi {MOUNTED} na přivolané bytosti, můžeš efekty svých malých {ITEM} použít místo toho na ni."
     },
     "cs-48": {
-        "name": "Zkumavka",
+        "name": "Test Tube",
         "desc": "Během svého tahu {ANY_X}, abys provedl jedno z následujícího: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, na sebe, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     "cs-49": {
-        "name": "Posilující injekce",
+        "name": "Booster Shot",
         "desc": "Během svého tahu proveď jedno z následujícího: {RECOVER} jednu odhozenou kartu | {HEAL} 3, na sebe | Přidej +2 {ATTACK} ke svému dalšímu útoku v tomto tahu."
     },
     "cs-50": {
-        "name": "Zářivý krunýř",
+        "name": "Luminous Carapace",
         "desc": "Během svého tahu, když spotřebuješ živel {ANY_X}, nepřesouvej spotřebovaný živel do sloupce „Nepřítomný“."
     },
     "cs-51": {
-        "name": "Planoucí zbroj",
+        "name": "Flaming Armor",
         "desc": "Když na tebe někdo zaútočí, můžeš {FIRE_X}, abys získal {RETALIATE} 3 pro tento útok."
     },
     "cs-52": {
-        "name": "Planoucí sekera",
+        "name": "Flaming Axe",
         "desc": "Během své schopnosti útok nablízko přidej ke všem svým útokům +1 {ATTACK} a {WOUND}. {FIRE}"
     },
     "cs-53": {
-        "name": "Polní minomet",
+        "name": "Field Mortar",
         "desc": "Jednou za tah, během svého tahu, můžeš odstranit jeden stav ze sousedící bytosti a umístit tento stav na tuto kartu, pokud na ní ještě není. Během svého tahu získá jedna sousedící bytost všechny stavy z této karty, poté zničíš {CONSUMED} tento předmět."
     },
     "cs-54": {
-        "name": "Dýka ze zmijího zubu",
+        "name": "Vipertooth Dagger",
         "desc": "Získej výhodu na všech svých útocích nablízko, dokud stojíš na obtížném terénu."
     },
     "cs-55": {
-        "name": "Jed přízračné zmije",
+        "name": "Ghost Viper Venom",
         "desc": "Během své schopnosti útok přidej {POISON} 2 k jednomu útoku."
     },
     "cs-56": {
-        "name": "Svírací past",
+        "name": "Clamp Trap",
         "desc": "Na konci svého tahu vytvoř na sousedícím prázdném poli jednu past {IMMOBILIZE} se zraněním 3."
     },
     "cs-57": {
-        "name": "Očištěné srdce prázdnoty",
+        "name": "Cleansed Voidheart",
         "desc": "Jsi imunní vůči {MUDDLE}. Na konci každého kola, pokud máš {WOUND}, získáš {REGENERATE}."
     },
     "cs-58": {
-        "name": "Závratná tinktura",
+        "name": "Dizzying Tincture",
         "desc": "Během své schopnosti útok přidej {DISARM} k jednomu útoku."
     },
     "cs-59": {
-        "name": "Dračí krev",
+        "name": "Drakes Blood",
         "desc": "Během svého tahu odstraň všechny pozitivní stavy všem nepřátelům v {RANGE} 2. Lze použít i na nepřátele, kteří mají {INVISIBLE}."
     },
     "cs-60": {
-        "name": "Léčivý elixír many",
+        "name": "Mana Medicine",
         "desc": "Během svého tahu proveď „{HEAL} 5, na sebe“. {ANY}"
     },
     "cs-61": {
-        "name": "Rukavice z popelové oceli",
+        "name": "Ashsteel Gauntlets",
         "desc": "Jsi imunní vůči {DISARM}, i když je tento předmět opotřebený. Během svého tahu získej {SHIELD} 1 pro toto kolo. {eot}"
     },
     "cs-62": {
-        "name": "Kouřový vypouštěč",
+        "name": "Smog Emitter",
         "desc": "Na konci svého tahu považují všichni nepřátelé pro toto kolo všechna prázdná pole v {RANGE} 2 od tebe za obtížný terén. {eot}"
     },
     "cs-63": {
-        "name": "Šťastná podkova",
+        "name": "Lucky Horseshoe",
         "desc": "Když utrpíš zranění z útoku na tebe, utrpíš místo toho polovinu zranění (zaokrouhleno dolů)."
     },
     "cs-64": {
-        "name": "Mírné rozžhavené tonikum",
+        "name": "Mild Kindled Tonic",
         "desc": "Když tě spojenec zacílí schopností léčení, odstraň ze sebe před léčením jeden negativní stav a získej {STRENGTHEN}."
     },
     "cs-65": {
-        "name": "Záchranná sekera",
+        "name": "Rescue Axe",
         "desc": "Během své schopnosti útok nablízko přidej +1 {ATTACK} a {MUDDLE} k jednomu útoku na nepřítele sousedícího s některým z tvých spojenců."
     },
     "cs-66": {
-        "name": "Železné kladivo",
+        "name": "Iron Malleus",
         "desc": "Během své schopnosti útok nablízko přidej ke všem svým útokům +1 {ATTACK} a {IMMOBILIZE}."
     },
     "cs-67": {
-        "name": "Hákovitá píka",
+        "name": "Pike Hook",
         "desc": "Během své schopnosti útok nablízko na jeden cíl přidej k útoku {PIERCE} 2 a {PULL} 1 a můžeš zacílit jednoho nepřítele ve vzdálenosti až 2 polí."
     },
     "cs-68": {
-        "name": "Výbušné tonikum",
+        "name": "Explosive Tonic",
         "desc": "Během svého tahu proveď: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
     },
     "cs-69": {
-        "name": "Ostré rozžhavené tonikum",
+        "name": "Spicy Kindled Tonic",
         "desc": "Při následujících třech schopnostech léčení, které tě zacílí, můžeš buď nejprve ze sebe odstranit všechny negativní stavy, nebo získat {STRENGTHEN}."
     },
     "cs-70": {
-        "name": "Užitkové lano",
+        "name": "Utility Rope",
         "desc": "Během svého tahu proveď „{PULL} 2, cíl: jeden spojenec nebo nepřítel v {RANGE} 3.“"
     },
     "cs-71": {
-        "name": "Ohnivzdorná přilba",
+        "name": "Fireproof Helm",
         "desc": "Kdykoli bys měl utrpět zranění z {WOUND}, místo toho proveď „{HEAL} 1, na sebe“."
     },
     "cs-72": {
-        "name": "Dřevěný žebřík",
+        "name": "Wooden Ladder",
         "desc": "Přidej +1 dosah ke všem svým schopnostem na dálku provedeným, zatímco sousedíš s překážkou. Kdykoli vstoupíš na pole s pastí, můžeš se rozhodnout past nespustit."
     },
     "cs-73": {
-        "name": "Zdravotnická souprava",
+        "name": "Medical Kit",
         "desc": "Kdykoli použiješ výchozí horní akci karty schopnosti, můžeš místo schopnosti „{ATTACK} 2“ provést schopnost „{HEAL} 2, {RANGE} 1“."
     },
     "cs-74": {
-        "name": "Mírné posilující tonikum",
+        "name": "Mild Bolstering Tonic",
         "desc": "Během své schopnosti léčení, která zacílí alespoň jednoho spojence, přidej ke každému léčení +1 léčení a {STRENGTHEN}."
     },
     "cs-75": {
-        "name": "Medailon duba",
+        "name": "Medallion of the Oak",
         "desc": "Když na tebe v tomto kole někdo zaútočí, ty i všichni sousedící spojenci považujete každý vytažený negativní modifikátor útoku a modifikátor {modifier_no_damage} místo toho za {+0_WHITE}."
     },
     "cs-76": {
-        "name": "Kauterizační nůž",
+        "name": "Cauterizing Knife",
         "desc": "Během své schopnosti léčení přidej ke každému léčení +3 {HEAL} a {WOUND}."
     },
     "cs-77": {
-        "name": "Traumatologická souprava",
+        "name": "Trauma Kit",
         "desc": "Během své schopnosti léčení zdvojnásob hodnotu každého léčení. Pokud tato schopnost léčení odstraní {WOUND}, je tento předmět opotřebený místo zničeného."
     },
     "cs-78": {
-        "name": "Svitek charismatu",
+        "name": "Scroll of Charisma",
         "desc": "Během svého tahu může jeden spojenec v {RANGE} 2 provést jedno z následujícího: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, na sebe."
     },
     "cs-79": {
-        "name": "Záchranný štít",
+        "name": "Rescue Shield",
         "desc": "Když sousedící spojenec utrpí zranění z útoku na něj, získá tento spojenec {SHIELD} 2 pro tento útok a odstraní ze sebe všechny negativní stavy udělené útokem."
     },
     "cs-80": {
-        "name": "Svitek ochrany",
+        "name": "Scroll of Protection",
         "desc": "Když by spojenec v {RANGE} 5 utrpěl zranění z útoku na něj, místo toho neutrpí žádné zranění."
     },
     "cs-81": {
-        "name": "Ostré posilující tonikum",
+        "name": "Spicy Bolstering Tonic",
         "desc": "Během své schopnosti léčení, která zacílí alespoň jednoho spojence, přidej ke každému léčení +2 {HEAL}, {STRENGTHEN} a {BLESS}."
     },
     "cs-82": {
-        "name": "Svitek rozkazu",
+        "name": "Scroll of Command",
         "desc": "Během svého tahu může jeden spojenec v {RANGE} 3 provést jedno z následujícího: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, na sebe."
     },
     "cs-83": {
-        "name": "Sféra proudů",
+        "name": "Sphere of Currents",
         "desc": "Během svého tahu vytvoř dva dílky vodního obtížného terénu na polích v {RANGE} 3, která neobsahují žádné překryvné dílky. {MUDDLE} všechny bytosti v {RANGE} 3, které stojí na vodním dílku."
     },
     "cs-84": {
-        "name": "Kuše na slimáky",
+        "name": "Slug Crossbow",
         "desc": "Během své schopnosti útok na dálku na jeden cíl změň útok na následující: {AOE.line_1_1}."
     },
     "cs-85": {
-        "name": "Vylepšená kuše na slimáky",
+        "name": "Refined Slug Crossbow",
         "desc": "Během své schopnosti útok na dálku na jeden cíl přidej +1 {ATTACK} a změň útok na následující: {AOE.line_1_1}."
     },
     "cs-86": {
-        "name": "Opevňující prapor",
+        "name": "Bulwark Banner",
         "desc": "Během svého tahu získáte ty i všichni spojenci {SHIELD} 1 pro toto kolo. {eot}"
     },
     "cs-87": {
-        "name": "Vylepšený opevňující prapor",
+        "name": "Refined Bulwark Banner",
         "desc": "Během svého tahu získají všichni sousedící spojenci {SHIELD} rovnou tvé aktuální hodnotě obrany ze schopností pro toto kolo. {eot}"
     },
     "cs-88": {
-        "name": "Dálkový brouk",
+        "name": "Remote Beetle",
         "desc": "Během svého tahu otevři jedny odemčené zavřené dveře v {RANGE} 2."
     },
     "cs-89": {
-        "name": "Vylepšený dálkový brouk",
+        "name": "Refined Remote Beetle",
         "desc": "Během svého tahu otevři jedny odemčené zavřené dveře v {RANGE} 2."
     },
     "cs-90": {
-        "name": "Planoucí boty",
+        "name": "Blazing Boots",
         "desc": "Během své schopnosti pohyb zdvojnásob hodnotu pohybu."
     },
     "cs-91": {
-        "name": "Vylepšené planoucí boty",
+        "name": "Refined Blazing Boots",
         "desc": "Během své schopnosti pohyb přidej {JUMP} a zdvojnásob hodnotu pohybu."
     },
     "cs-92": {
-        "name": "Foukačka se zmijím jedem",
+        "name": "Viper Blowgun",
         "desc": "Během svého tahu můžeš {EARTH_X}, abys provedl „{ATTACK} 1, {RANGE} 3, {POISON}“."
     },
     "cs-93": {
-        "name": "Vylepšená foukačka se zmijím jedem",
+        "name": "Refined Viper Blowgun",
         "desc": "Během svého tahu proveď „{ATTACK} 1, {RANGE} 4, {POISON}“. Můžeš {EARTH_X}, abys PŘIDAL {TARGET}."
     },
     "cs-94": {
-        "name": "Kámen mrazu",
+        "name": "Frost Stone",
         "desc": "Během svého tahu můžeš položit jeden žeton hrdiny na tuto kartu a vytvořit: {ICE}.\\nJakmile jsou na této kartě dva žetony, je karta zničena {CONSUMED}."
     },
     "cs-95": {
-        "name": "Kámen bouře",
+        "name": "Storm Stone",
         "desc": "Během svého tahu můžeš položit jeden žeton hrdiny na tuto kartu a vytvořit: {WIND}.\\nJakmile jsou na této kartě dva žetony, je karta zničena {CONSUMED}."
     },
     "cs-96": {
-        "name": "Kámen pekla",
+        "name": "Inferno Stone",
         "desc": "Během svého tahu můžeš položit jeden žeton hrdiny na tuto kartu a vytvořit: {FIRE}.\\nJakmile jsou na této kartě dva žetony, je karta zničena {CONSUMED}."
     },
     "cs-97": {
-        "name": "Kámen otřesů",
+        "name": "Tremor Stone",
         "desc": "Během svého tahu můžeš položit jeden žeton hrdiny na tuto kartu a vytvořit: {EARTH}.\\nJakmile jsou na této kartě dva žetony, je karta zničena {CONSUMED}."
     },
     "cs-98": {
-        "name": "Zářivý kámen",
+        "name": "Brilliant Stone",
         "desc": "Během svého tahu můžeš položit jeden žeton hrdiny na tuto kartu a vytvořit: {LIGHT}.\\nJakmile jsou na této kartě dva žetony, je karta zničena {CONSUMED}."
     },
     "cs-99": {
-        "name": "Temný kámen",
+        "name": "Dark Stone",
         "desc": "Během svého tahu můžeš položit jeden žeton hrdiny na tuto kartu a vytvořit: {DARK}.\\nJakmile jsou na této kartě dva žetony, je karta zničena {CONSUMED}."
     },
     "cs-100": {
-        "name": "Kámen divů",
+        "name": "Wonder Stone",
         "desc": "Během svého tahu můžeš položit jeden žeton hrdiny na tuto kartu a vytvořit: {ANY}.\\nJakmile jsou na této kartě dva žetony, je karta zničena {CONSUMED}."
     },
     "cs-aa01": {
-        "name": "Skalní hradba",
+        "name": "Rockspine Bulwark",
         "desc": "Při následujících třech zdrojích zranění z útoků na tebe nebo sousedícího spojence získá napadená bytost {SHIELD} 1 pro daný útok."
     },
     "cs-aa02": {
-        "name": "Přízračně třpytivý med",
+        "name": "Ghostshimmer Honey",
         "desc": "Během svého tahu proveď {HEAL} 3\\n{REGENERATE}\\nPůsobí na tebe a jednoho sousedícího spojence."
     },
     "cs-aa03": {
-        "name": "Ocelohedvábná přádelna",
+        "name": "Steelsilk Spinneret",
         "desc": "Při následujících dvou případech, kdy nepřítel utrpí zranění z útoku na tebe, získá tento nepřítel {IMMOBILIZE}."
     },
     "cs-qa01": {
-        "name": "Modulátor výkonu",
+        "name": "Power Modulator",
         "desc": "(X je 1, 2, 3)\\nBěhem svého tahu se vzdej své horní akce a proveď {ATTACK} X+1\\n{RANGE} 2\\n{TARGET} 4-X"
     },
     "cs-qa02": {
-        "name": "Parní pístové kladivo",
+        "name": "Steam Piston Hammer",
         "desc": "Během své schopnosti útok nablízko přidej k jednomu útoku {MUDDLE} a {PUSH} 1."
     },
     "cs-qa03": {
-        "name": "Pavoučí lezecké rukavice",
+        "name": "Spider Climb Gloves",
         "desc": "Tvůj pohyb může vstoupit na pole s překážkami a skončit na nich, jako bys měl {FLYING}."
     },
     "cs-qa04": {
-        "name": "Podložky gravitační inverze",
+        "name": "Gravity Inversion Pads",
         "desc": "Vytvoř jednu past na prázdném poli v {RANGE} 3.\\nPokud tuto past spustíš ty nebo spojenec, získá daná bytost pro toto kolo {FLYING}. | Každý nepřítel, který vstoupí na pole s touto pastí, ji spustí a pro toto kolo ztratí {FLYING}."
     },
     "cs-qa05": {
-        "name": "Jemný model",
+        "name": "Delicate Model",
         "desc": "Přivolej Sběrače šrotu\\nKdykoli tato přivolaná bytost vstoupí na pole, získáš kořist {LOOT} z tohoto pole.\\nAkce této přivolané bytosti ovládáš ty."
     },
     "cs-qa06": {
-        "name": "Auscudec Tvůrců",
+        "name": "Auscudec of the Makers",
         "desc": "Během svého tahu se vzdej své horní akce a zahraj akci přivolání z karty ve své hromádce zničených karet, přičemž ignoruješ dva {SCRAP_X}."
     },
     "cs-rm01": {
-        "name": "Zubaté ostří",
+        "name": "Serrated Edge",
         "desc": "Během své schopnosti útok nablízko přidej k jednomu útoku {RUPTURE}."
     },
     "cs-rm02": {
-        "name": "Příšerné boty",
+        "name": "Grisly Boots",
         "desc": "Po své schopnosti pohyb proveď {PUSH} 1\\nCíl: jeden sousedící nepřítel\\nPřidej +1 {PUSH}, pokud ses v tomto kole pohnul o 4 nebo více polí."
     },
     "cs-rm03": {
-        "name": "Šavle z hrůzných šupin",
+        "name": "Terrorscale Saber",
         "desc": "Během své schopnosti útok nablízko přidej +1 {ATTACK} a {PIERCE} 2 k jednomu útoku na nepřítele s {WOUND} nebo {RUPTURE}."
     },
     "cs-rm04": {
-        "name": "Zkřížené čepele z hrůzných šupin",
+        "name": "Terrorscale Crossblades",
         "desc": "Při svých následujících třech útocích nablízko na nepřátele s alespoň jedním negativním stavem získej výhodu."
     },
     "cs-rm05": {
-        "name": "Rituál zkázy",
+        "name": "Rite of Ruin",
         "desc": "Během své schopnosti útok získej {WOUND}, abys přidal +3 {ATTACK} k jednomu útoku. Pokud zabiješ cíl, proveď „{HEAL} 3, na sebe“."
     },
     "cs-rm06": {
-        "name": "Divoký kyrys",
+        "name": "Savage Cuirass",
         "desc": "Při následujících dvou případech, kdy bys měl ztratit kartu z ruky, abys zrušil utrpění zranění, místo toho ji odhoď a získej {WOUND}."
     },
     "fh-1": {
@@ -2810,28 +2810,28 @@ export default {
         "desc": "Když odpočíváš, můžeš ponechat až tři karty {TIDE_ICON} ve své aktivní oblasti. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
-        "name": "Stuha přátelství",
+        "name": "Ribbon of Friendship",
         "source": "Odměna ze sólo scénáře - {AN}",
         "desc": "Bezprostředně po provedení schopnosti Zesílení proveď: {POISON.fh} {RANGE.fh} 2. Tuto schopnost můžeš provést, jako bys stál na stejném poli jako jedna z tvých přivolaných bytostí."
     },
     "mp-SA": {
-        "name": "Znak Frosthavenu",
+        "name": "Crest of Frosthaven",
         "source": "Odměna ze sólo scénáře - {SA}",
         "desc": "Kdykoli provedeš dlouhý odpočinek, vyvolej Led a otoč tuto kartu.",
         "backDesc": "Kdykoli odpočívá spojenec, můžeš tuto kartu otočit a poskytnout mu: {HEAL.fh} 2, na sebe"
     },
     "mp-CA A": {
-        "name": "Mísa proroctví A",
+        "name": "Basin of Prophecy A",
         "source": "Odměna ze sólo scénáře - {CA}",
         "desc": "Přidej +1 Věštění ke každému Věštění."
     },
     "mp-CA B": {
-        "name": "Mísa proroctví B",
+        "name": "Basin of Prophecy B",
         "source": "Odměna ze sólo scénáře - {CA}",
         "desc": "Během svého tahu proveď: {ATTACK.fh} 1, {TARGET.fh} 1 nepřítel stojící na poli s {RIFT}, {PIERCE.fh} 2, {DIVINATION} 3"
     },
     "mp-HA": {
-        "name": "Boty bez nesmyslů",
+        "name": "No Nonsense Boots",
         "source": "Odměna ze sólo scénáře - {HA}",
         "desc": "Na konci svého tahu, pokud jsi v tomto tahu utratil 3 nebo více Odhodlání, otoč tuto kartu.",
         "backDesc": "Pokud máš ve svém tahu aktivní Podrážděnost, můžeš tuto kartu přesunout do své zásoby, zahrát jinou kartu ze své zásoby a provést její akci Podrážděnost, poté otoč tuto kartu."
@@ -2857,7 +2857,7 @@ export default {
         "desc": "Když na tebe někdo útočí, před tažením karty modifikátoru útoku získá útočník při tomto útoku nevýhodu."
     },
     "gh2-5": {
-        "name": "Průzkumná čočka",
+        "name": "Scouting Lens",
         "source": "Prosperita 1",
         "desc": "Během své schopnosti útoku přidej {PIERCE.fh} 1 k jednomu útoku."
     },
@@ -2877,12 +2877,12 @@ export default {
         "desc": "Když utrpíš {DAMAGE.fh} z útoku, získej pro tento útok {SHIELD.fh} 1."
     },
     "gh2-9": {
-        "name": "Zaostřovací prut",
+        "name": "Focusing Rod",
         "source": "Prosperita 1",
         "desc": "Během svého tahu, pokud jsi provedl akci se symbolem {LOST.fh}, proveď: {HEAL.fh} 1, {RANGE.fh} 3"
     },
     "gh2-10": {
-        "name": "Jednoduchý luk",
+        "name": "Simple Bow",
         "source": "Prosperita 1",
         "desc": "Během své schopnosti útoku na dálku získej výhodu u jednoho útoku."
     },
@@ -2898,7 +2898,7 @@ export default {
         "faq": "Karty X se počítají jako karty úrovně 1, takže je lze také obnovit."
     },
     "gh2-13": {
-        "name": "Živlový lektvar",
+        "name": "Element Potion",
         "source": "Prosperita 1",
         "desc": "Během svého tahu {ANY}."
     },
@@ -2929,7 +2929,7 @@ export default {
         "faq": "Zabraňuje pouze stavům způsobeným nepřáteli, nikoli těm, které si způsobíš sám."
     },
     "gh2-19": {
-        "name": "Roucho strážce",
+        "name": "Warden's Robes",
         "source": "Prosperita 2",
         "desc": "Když jedna z tvých přivolaných bytostí utrpí {DAMAGE.fh} z útoku, získá tato bytost pro tento útok {SHIELD.fh} 2."
     },
@@ -2985,7 +2985,7 @@ export default {
         "faq": "Pokud jsi neviditelný a nelze tě zacílit, nemůžeš útok přesměrovat na sebe."
     },
     "gh2-30": {
-        "name": "Luk proti zbrojím",
+        "name": "Armorbane Bow",
         "source": "Prosperita 3",
         "desc": "Během svého tahu přidej {PIERCE.fh} 3 ke všem svým útokům na dálku."
     },
@@ -3015,7 +3015,7 @@ export default {
         "desc": "Když utrpíš {DAMAGE.fh} z útoku, získej pro tento útok {SHIELD.fh} 2."
     },
     "gh2-36": {
-        "name": "Měsíční náušnice",
+        "name": "Moon Earing",
         "source": "Prosperita 4\nMěstská událost 6",
         "desc": "Když provedeš krátký odpočinek, {RECOVER.fh} až tři ze svých vyčerpaných předmětů."
     },
@@ -3035,12 +3035,12 @@ export default {
         "desc": "Přivolej Kostlivce"
     },
     "gh2-40": {
-        "name": "Stínová zbroj",
+        "name": "Shadow Amor",
         "source": "Prosperita 4",
         "desc": "Když utrpíš {DAMAGE.fh} z útoku, zruš toto {DAMAGE.fh} a vyvolej {DARK}."
     },
     "gh2-41": {
-        "name": "Kinetické běhouny",
+        "name": "Kinetic Treads",
         "source": "Prosperita 5",
         "desc": "Na konci své schopnosti pohybu poskytni jednomu sousedícímu spojenci: {MOVE.fh} 2"
     },
@@ -3055,17 +3055,17 @@ export default {
         "desc": "Během svého tahu přidej +1 {RANGE.fh} ke všem svým útokům na dálku."
     },
     "gh2-44": {
-        "name": "Přesný luk",
+        "name": "Precision Bow",
         "source": "Prosperita 5",
         "desc": "Po své schopnosti útoku na dálku proveď: {ATTACK.fh} 1, {TARGET.fh} 1 cíl schopnosti útoku v libovolném {RANGE.fh}, {PIERCE.fh} 1"
     },
     "gh2-45": {
-        "name": "Větší živlový lektvar",
+        "name": "Major Element Potion",
         "source": "Prosperita 5\nUdálost na cestách 52",
         "desc": "Během svého tahu {ANY} {ANY}."
     },
     "gh2-46": {
-        "name": "Lehký targe",
+        "name": "Light Targe",
         "source": "Prosperita 5",
         "desc": "Když utrpíš {DAMAGE.fh} z útoku, získej pro tento útok {SHIELD.fh} 1. Po útoku, ale před jakoukoli {RETALIATE.fh}, proveď: {MOVE.fh} 1"
     },
@@ -3090,7 +3090,7 @@ export default {
         "desc": "Během svého tahu proveď: {HEAL.fh} 3, jeden spojenec, {RANGE.fh} 1"
     },
     "gh2-51": {
-        "name": "Těžký palcát",
+        "name": "Heavy Mace",
         "source": "Prosperita 6\nUdálost na cestách 8",
         "desc": "Poté, co na tebe zaútočí sousedící nepřítel, proveď: {ATTACK.fh} 1, enemyAttacked Tento útok není ovlivněn {RETALIATE.fh}."
     },
@@ -3105,7 +3105,7 @@ export default {
         "desc": "Během svého tahu přidej +2 {ATTACK.fh} ke všem svým útokům."
     },
     "gh2-54": {
-        "name": "Čelenka svatosti",
+        "name": "Circlet of Sanctity",
         "source": "Prosperita 7",
         "desc": "Po dalších třech útocích mířících na spojence v dosahu {RANGE.fh} 2 otoč tuto kartu.",
         "backDesc": "Během svého tahu proveď: {WARD.fh}, {RANGE.fh} 3 a poté otoč tuto kartu."
@@ -3121,7 +3121,7 @@ export default {
         "desc": "Na konci tahu, pokud ses během svého tahu pohnul o 1 nebo méně polí, získej {SHIELD.fh} 1 na toto kolo."
     },
     "gh2-57": {
-        "name": "Strategův prsten",
+        "name": "Strategist's Ring",
         "source": "Prosperita 7",
         "desc": "Na konci tahu zahraj jednu kartu z ruky a proveď všechny trvalé a povinné schopnosti na horní nebo dolní akci karty."
     },
@@ -3171,7 +3171,7 @@ export default {
         "desc": "Během svého tahu proveď: {INVISIBLE.fh}, na sebe"
     },
     "gh2-67": {
-        "name": "Hřebíkové boty",
+        "name": "Spiked Shoes",
         "source": "Prosperita 9",
         "desc": "Když použiješ základní dolní akci karty schopnosti, můžeš provést {ATTACK.fh} 3 místo {MOVE.fh} 2."
     },
@@ -3186,39 +3186,39 @@ export default {
         "desc": "Při dalších pěti zdrojích {DAMAGE.fh} z útoků mířících na tebe získej pro tyto útoky {SHIELD.fh} 1."
     },
     "gh2-70": {
-        "name": "Standardní příděly",
+        "name": "Standard Rations",
         "source": "Vojáci: reputace 15",
         "desc": "Kdykoli se léčíš dlouhým odpočinkem, přidej +2 {HEAL.fh}."
     },
     "gh2-71": {
-        "name": "Mistrovská kuše",
+        "name": "Mastercraft Crossbow",
         "source": "Vojáci: reputace 17",
         "desc": "Během své schopnosti útoku na dálku přidej {WOUND.fh} k jednomu útoku. Jeden nepřítel sousedící s tímto cílem a od tebe vzdálenější než tento cíl utrpí {DAMAGE.fh} 2."
     },
     "gh2-72": {
-        "name": "Velitelská čepice",
+        "name": "Commander's Cap",
         "source": "Vojáci: reputace 19",
         "desc": "Spojenci získají výhodu při dalších třech útocích provedených, zatímco sousedí s tebou. Poté otoč tuto kartu.",
         "backDesc": "Po dalších třech schopnostech útoku, které provedeš v dosahu {RANGE.fh} 2 od jednoho nebo více spojenců, otoč tuto kartu."
     },
     "gh2-73": {
-        "name": "Plášť přivolávání",
+        "name": "Mantle of Summoning",
         "source": "Obchodní cech: reputace 13",
         "desc": "Během svého tahu poskytni jedné ze svých přivolaných bytostí: {SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
-        "name": "Skrytá dýka",
+        "name": "Concealed Dagger",
         "source": "Obchodní cech: reputace 15",
         "desc": "Během svého tahu umísti žeton postavy na jednoho sousedícího nepřítele. Na začátku každého tahu tohoto nepřítele utrpí {DAMAGE.fh} 1. Když tento nepřítel zemře, otoč tuto kartu. {PERSISTENT}",
         "backDesc": "Umísti žeton postavy na pole, na kterém nepřítel zemřel. Ukořistěním tohoto žetonu můžeš otočit tuto kartu."
     },
     "gh2-75": {
-        "name": "Honosná kapuce",
+        "name": "Opulent Hood",
         "source": "Obchodní cech: reputace 17",
         "desc": "Během svého tahu poskytni jednomu sousedícímu spojenci: {ATTACK.fh} 1, {PUSH.fh} 1"
     },
     "gh2-76": {
-        "name": "Odznak obchodníka",
+        "name": "Merchant's Insignia",
         "source": "Obchodní cech: reputace 19",
         "desc": "Kdykoli dokončíš scénář, získej 10 zlaťáků."
     },
@@ -3238,7 +3238,7 @@ export default {
         "desc": "Během své schopnosti útoku přidej {POISON.fh}, {STUN.fh} a {CURSE.fh} k jednomu útoku."
     },
     "gh2-80": {
-        "name": "Démonická lebka",
+        "name": "Demonic Skull",
         "source": "Démoni: reputace 19",
         "desc": "Během svého tahu {ANY} a na konci svého tahu otoč tuto kartu.",
         "backDesc": "Když zabiješ nestvůru, otoč tuto kartu na konci svého tahu."
@@ -3304,7 +3304,7 @@ export default {
         "desc": "Během své schopnosti útoku přidej {STUN.fh} k jednomu útoku."
     },
     "gh2-93": {
-        "name": "Svitek zuřivosti",
+        "name": "Scroll of Ferocity",
         "source": "Náhodný předmět",
         "desc": "Během svého tahu poskytni jednomu spojenci v dosahu {RANGE.fh} 5: {ATTACK.fh} 2"
     },
@@ -3314,12 +3314,12 @@ export default {
         "desc": "Během svého tahu proveď: {HEAL.fh} 3, {RANGE.fh} 5"
     },
     "gh2-95": {
-        "name": "Svitek ochrany",
+        "name": "Scroll of Shielding",
         "source": "Náhodný předmět",
         "desc": "Když jeden spojenec v dosahu {RANGE.fh} 5 utrpí {DAMAGE.fh} z útoku, poskytni mu pro tento útok {SHIELD.fh} 3."
     },
     "gh2-96": {
-        "name": "Svitek hbitosti",
+        "name": "Scroll of Swiftness",
         "source": "Náhodný předmět",
         "desc": "Během schopnosti pohybu jednoho spojence v dosahu {RANGE.fh} 5 přidej +1 {MOVE.fh} a {JUMP.fh}."
     },
@@ -3340,13 +3340,13 @@ export default {
         "desc": "Během svého tahu proveď: {ATTACK.fh} 2, {RANGE.fh} 3"
     },
     "gh2-100": {
-        "name": "Nabité boty",
+        "name": "Charged Boots",
         "source": "{SCENARIO 71} (Poklad #29)",
         "desc": "Po svých dalších třech tazích, během nichž neprovedeš schopnost pohybu, otoč tuto kartu.",
         "backDesc": "Během své schopnosti pohybu přidej +2 {MOVE.fh} a otoč tuto kartu."
     },
     "gh2-101": {
-        "name": "Očistný lektvar",
+        "name": "Cure Potion",
         "source": "{SCENARIO 89} (Poklad #33)",
         "desc": "Během svého tahu odstraň ze sebe jeden negativní stav. Tento předmět lze použít i v případě, že máš {STUN.fh}."
     },
@@ -3356,12 +3356,12 @@ export default {
         "desc": "Když utrpíš {DAMAGE.fh} z útoku, získej pro tento útok {SHIELD.fh} 4."
     },
     "gh2-103": {
-        "name": "Kapuce hraničáře",
+        "name": "Ranger's Hood",
         "source": "{SCENARIO 28} (Poklad #65)",
         "desc": "Během jedné ze schopností útoku své přivolané bytosti, před tažením karet modifikátorů útoku, odkryj dvě vrchní karty svého balíčku modifikátorů útoku. Libovolnou z nich můžeš dát na spodek svého balíčku."
     },
     "gh2-104": {
-        "name": "Ochranný prut",
+        "name": "Warding Rod",
         "source": "{SCENARIO 4} (Poklad #24)",
         "desc": "Během svého tahu proveď: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
     },
@@ -3409,29 +3409,29 @@ export default {
         "desc": "Během svého tahu umísti žeton postavy na jednoho normálního nebo elitního nepřítele v dosahu {RANGE.fh} 3. Ty a všichni spojenci přidáte +1 {ATTACK.fh} ke všem útokům mířícím na tohoto nepřítele. {PERSISTENT}"
     },
     "gh2-114": {
-        "name": "Větrné běhouny",
+        "name": "Gust Striders",
         "source": "Městská událost 17\nMěstská událost 81",
         "desc": "Během svého tahu přidej {JUMP.fh} ke své další schopnosti pohybu. Pokud je {WIND} silný nebo slábnoucí, přidej také +2 {MOVE.fh}."
     },
     "gh2-115": {
-        "name": "Prut přenosu",
+        "name": "Rod of Transference",
         "source": "{SCENARIO 11} (Poklad #35)",
         "desc": "Když by spojenec v dosahu {RANGE.fh} 3 utrpěl {DAMAGE.fh}, utrpíš toto {DAMAGE.fh} místo něj ty."
     },
     "gh2-116": {
-        "name": "Osudové verše",
+        "name": "Fated Verses",
         "source": "Prosperita 1",
         "desc": "Během své schopnosti útoku můžeš získat nevýhodu u jednoho útoku, abys na konci svého tahu otočil tuto kartu.",
         "backDesc": "Během schopnosti útoku spojence získá tento spojenec výhodu u jednoho ze svých útoků a ty otočíš tuto kartu.",
         "faq": "Přední stranu nemůžeš použít, pokud už máš při útoku nevýhodu. Přední stranu lze použít u útoku, který ti poskytl spojenec, ale karta se otočí až na konci tvého dalšího tahu."
     },
     "gh2-117": {
-        "name": "Úsvitová čepel",
+        "name": "Dawnblade",
         "source": "Odměna ze {SCENARIO 99}",
         "desc": "Během svého tahu, pokud je {DARK} silný nebo slábnoucí, přidej +1 {ATTACK.fh} ke svému dalšímu útoku na blízko. Pokud sis vzal Soumrakový meč, {LIGHT}."
     },
     "gh2-118": {
-        "name": "Soumrakový meč",
+        "name": "Duskbrand",
         "source": "Událost na cestách 33",
         "desc": "Během svého tahu, pokud je {LIGHT} silný nebo slábnoucí, přidej +1 {ATTACK.fh} ke svému dalšímu útoku na blízko. Pokud sis vzal Úsvitovou čepel, {DARK}."
     },
@@ -3451,31 +3451,31 @@ export default {
         "desc": "Během svého tahu proveď: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3 Pokud sis vzal Boty z dračích šupin a Zbroj z dračích šupin, přidej +1 {TARGET.fh}."
     },
     "gh2-122": {
-        "name": "Lucerna mrazivého brouka",
+        "name": "Frost Beetle Lantern",
         "desc": "Během svého tahu proveď: {ANY_X}: {ICE}"
     },
     "gh2-123": {
-        "name": "Lucerna bouřného brouka",
+        "name": "Storm Beetle Lantern",
         "source": "Událost na cestách 30",
         "desc": "Během svého tahu proveď: {ANY_X}: {WIND}"
     },
     "gh2-124": {
-        "name": "Lucerna zápalného brouka",
+        "name": "Ignition Beetle Lantern",
         "source": "Událost na cestách 30",
         "desc": "Během svého tahu proveď: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
-        "name": "Lucerna otřásajícího brouka",
+        "name": "Tremor Beetle Lantern",
         "source": "Událost na cestách 30",
         "desc": "Během svého tahu proveď: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
-        "name": "Lucerna zářivého brouka",
+        "name": "Brilliant Beetle Lantern",
         "source": "Událost na cestách 30",
         "desc": "Během svého tahu proveď: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
-        "name": "Lucerna soumračného brouka",
+        "name": "Twilight Beetle Lantern",
         "source": "Událost na cestách 30",
         "desc": "Během svého tahu proveď: {ANY_X}: {DARK}"
     },
@@ -3536,17 +3536,17 @@ export default {
         "desc": "Během své schopnosti útoku na blízko utrp {DAMAGE.fh} 2 pro přidání +1 {ATTACK.fh} ke všem útokům."
     },
     "gh2-139": {
-        "name": "Žezlo z jiného světa",
+        "name": "Otherworldly Scepter",
         "source": "Odměna ze {SCENARIO 94}\nMěstská událost 85",
         "desc": "Když provedeš akci přivolání, každá bytost přivolaná touto akcí získá {WARD.fh}, {INVISIBLE.fh} a {STRENGTHEN.fh}."
     },
     "gh2-140": {
-        "name": "Dálkově ovládaný bojový pavouk",
+        "name": "Remote Attack Spider",
         "source": "Městská událost 98",
         "desc": "Během svého tahu proveď: {POISON.fh}, všichni, {RANGE.fh} 1"
     },
     "gh2-141": {
-        "name": "Dálkově ovládaný pomocný pavouk",
+        "name": "Remote Aid Spider",
         "source": "Městská událost 98",
         "desc": "Během svého tahu proveď: {HEAL.fh} 2, všichni, {RANGE.fh} 1"
     },
@@ -3557,41 +3557,41 @@ export default {
         "faq": "Nebezpečný terén, který vytvoříš, ti nezpůsobí zranění; zraňuje pouze bytosti, které do něj vstoupí."
     },
     "gh2-143": {
-        "name": "Boty vzepření",
+        "name": "Boots of Bracing",
         "source": "{SCENARIO 81} (Poklad #61)",
         "desc": "Během své schopnosti útoku na dálku získej {IMMOBILIZE.fh} pro přidání +1 {ATTACK.fh} k jednomu útoku."
     },
     "gh2-144": {
-        "name": "Časová matrice",
+        "name": "Temporal Matrix",
         "source": "Odměna ze {SCENARIO 92}",
         "desc": "Při určování pořadí iniciativy, poté co jsou odkryty všechny karty schopností, seřaď iniciativy pro toto kolo od nejvyšší po nejnižší místo od nejnižší po nejvyšší."
     },
     "gh2-145": {
-        "name": "Trýznivý hák",
+        "name": "Harrow-Hook",
         "desc": "Během svého tahu proveď: {MOVE.fh} 2, {JUMP.fh} Tento pohyb musí skončit vedle překážky nebo zdi."
     },
     "gh2-146": {
-        "name": "Jantarová dutina",
+        "name": "Amberhollow",
         "source": "Událost na cestách 15\nUdálost na cestách 25\nUdálost na cestách 28\nUdálost na cestách 30\nUdálost na cestách 31",
         "desc": "Tento předmět si musíš vzít do scénáře a na konci scénáře se vrací do zásoby nedostupných předmětů. Během svého tahu proveď: {STRENGTHEN.fh}, {BLESS.fh}, na sebe"
     },
     "gh2-147": {
-        "name": "Žezlo Xornu",
+        "name": "Scepter of Xorn",
         "source": "Odměna ze {SCENARIO 57}\nOdměna ze {SCENARIO 58}",
         "desc": "Během svého tahu, pokud nemáš {POISON.fh}, získej {POISON.fh} pro provedení: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
     },
     "gh2-148": {
-        "name": "Štít spravedlivých",
+        "name": "Shield of the Righteous",
         "source": "{SCENARIO 65} (Poklad #59)",
         "desc": "Když utrpíš {DAMAGE.fh} z útoku, zruš toto {DAMAGE.fh} a vyvolej {LIGHT}"
     },
     "gh2-149": {
-        "name": "Aestherský dalekohled",
+        "name": "Aesther Spyglass",
         "source": "Osobní úkol 04",
         "desc": "Tento předmět lze použít, pouze pokud sousedíš alespoň s jednou překážkou. Během svého tahu proveď: {BLESS.fh}, na sebe"
     },
     "gh2-150": {
-        "name": "Experimentální zbroj",
+        "name": "Experimental Armor",
         "source": "Osobní úkol 17",
         "desc": "Tento předmět nelze prodat a musíš si ho vzít do každého scénáře. Když utrpíš {DAMAGE.fh} z útoku, můžeš utrpět {DAMAGE.fh} 2, aby všichni sousedící spojenci i nepřátelé utrpěli {DAMAGE.fh} 2."
     },
@@ -3600,12 +3600,12 @@ export default {
         "desc": "Během své schopnosti útoku na blízko přidej {WOUND.fh}, {POISON.fh} ke všem útokům."
     },
     "gh2-152": {
-        "name": "Rubínový talisman",
+        "name": "Ruby Talisman",
         "source": "Odměna ze {SCENARIO 75}",
         "desc": "Během svého tahu, pokud má spojenec v dosahu {RANGE.fh} 3 negativní stav, můžeš získat {DISARM.fh}, abys z tohoto spojence odstranil jeden negativní stav a dal mu Ochranu, {BLESS.fh}."
     },
     "gh2-153": {
-        "name": "Hákový štít",
+        "name": "Hooked Shield",
         "source": "Odměna ze sólo scénáře - {BR2}",
         "desc": "Poté, co odstrčíš nepřítele, proveď: {MOVE.fh} 3, {JUMP.fh} Tento pohyb smí vstoupit pouze na pole, ze kterých odstrčený nepřítel odešel."
     },
@@ -3615,7 +3615,7 @@ export default {
         "desc": "Během své schopnosti Léčení přidej +1 {HEAL.fh} a {STRENGTHEN.fh} jedno Léčení mířící na spojence."
     },
     "gh2-155": {
-        "name": "Éterický elixír",
+        "name": "Etheric Elixir",
         "source": "Odměna ze sólo scénáře - {SW2}",
         "desc": "Když provedeš horní akci se symbolem {LOST.fh} karty Oživující éter, odeber z balíčku modifikátorů útoku kartu {NULL_MODIFIER} do konce scénáře."
     },
@@ -3635,7 +3635,7 @@ export default {
         "desc": "Přidej +1 {ATTACK.fh} ke všem svým útokům z tvých akcí {AUGMENT}."
     },
     "gh2-159": {
-        "name": "Odznak božství",
+        "name": "Insignia of the Divine",
         "source": "Odměna ze sólo scénáře - {SK2}",
         "desc": "Během svého tahu poskytni sobě nebo jednomu sousedícímu spojenci: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
     },
@@ -3650,7 +3650,7 @@ export default {
         "desc": "Když jedna z tvých přivolaných bytostí utrpí {DAMAGE.fh} z útoku, zruš toto {DAMAGE.fh} a tato bytost získá {INVISIBLE.fh}."
     },
     "gh2-162": {
-        "name": "Noční pohlazení",
+        "name": "The Night's Caress",
         "source": "Odměna ze sólo scénáře - {NS2}",
         "desc": "Když ztratíš {INVISIBLE.fh}, otoč tuto kartu a proveď: {MUDDLE.fh}, {RANGE.fh} 1",
         "backDesc": "Když získáš {INVISIBLE.fh}, otoč tuto kartu a podívej se na vrchní kartu svého balíčku modifikátorů útoku. Tuto kartu můžeš dát na spodek svého balíčku."
@@ -3681,7 +3681,7 @@ export default {
         "desc": "Když spojenec v dosahu {RANGE.fh} 3 utrpí {DAMAGE.fh} z útoku, proveď po schopnosti útoku: {MOVE.fh} 2 Tento pohyb musí skončit vedle napadeného spojence."
     },
     "gh2-168": {
-        "name": "Živlová vesta",
+        "name": "Elemental Vest",
         "source": "Odměna ze sólo scénáře - {EL2}",
         "desc": "Na konci svého tahu za každé dva živly, které jsi v tomto tahu spotřeboval: {ANY}."
     },
@@ -3691,7 +3691,7 @@ export default {
         "desc": "Během svého tahu {COMMAND}: {ATTACK.fh} 2"
     },
     "gh2-170": {
-        "name": "Lezoucí krunýř",
+        "name": "Crawling Carapace",
         "source": "Odměna ze sólo scénáře - {BS2}",
         "desc": "Při prvním zdroji {DAMAGE.fh} z útoku, který bys ty nebo jedna z tvých přivolaných bytostí v každém kole utrpěl, získá napadená bytost pro tento útok {SHIELD.fh} 1."
     }

@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "Égide d'Ambre",
+        "name": "Amber Aegis",
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {-1_WHITE} « Placer un jeton {COLONY} {COLONY_ICON} de votre choix sur un hexagone vide à {RANGE}2 »",
             "Retirer deux cartes {-1_WHITE}",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Façonneur",
+        "name": "Artificer",
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {-1_WHITE} {ANY}",
             "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {DISARM}",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombarde",
+        "name": "Bombard",
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
             "Remplacer deux cartes {+0_WHITE} par deux cartes {AGAIN} {PIERCE}3",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Étincelle Vive",
+        "name": "Brightspark",
         "perks": [
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « {ANY_X} pour ajouter +2 {ATTACK} »",
             "Remplacer une carte {-2_WHITE} par une carte {-2_WHITE} « {RECOVER} une carte aléatoire de votre défausse »",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Garde-Chaînes",
+        "name": "Chainguard",
         "perks": [
             "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} « {SHACKLE} {CG_CIRCLE} »",
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « {+2_WHITE} si la cible est {SHACKLED} {CG_CIRCLE} »",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Chef de Clan",
+        "name": "Chieftain",
         "perks": [
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {POISON}",
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « {HEAL}1, {CT_CIRCLE} »",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Chevalier de Feu",
+        "name": "Fire Knight",
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « {STRENGTHEN} (allié) »",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hiérophante",
+        "name": "Hierophant",
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
             "Remplacer deux cartes {+0_WHITE} par une carte {AGAIN} {LIGHT}",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "Pacte-Creux",
+        "name": "Hollowpact",
         "perks": [
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « {HEAL}2, sur vous-même »",
             "Remplacer deux cartes {+0_WHITE} par une carte {+0_WHITE} « {VOIDSIGHT} {VOIDSIGHT_ICON} »",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Luminaire",
+        "name": "Luminary",
         "perks": [
             "Retirer quatre cartes {+0_WHITE}",
             "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE}",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "Pied-de-Fange",
+        "name": "Mirefoot",
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "Gueule-de-Ruine",
+        "name": "Ruinmaw",
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {-1_WHITE} {RUPTURE} et {WOUND}",
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {WOUND}",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "Appelle-Esprits",
+        "name": "Spirit Caller",
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {-1_WHITE} et une carte {+1_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « {+2_WHITE} si un {SPIRIT} {SP_CIRCLE} a effectué l'attaque »",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Lance-Étoiles",
+        "name": "Starslinger",
         "perks": [
             "Remplacer deux cartes {+0_WHITE} par une carte {AGAIN} « {HEAL}1, sur vous-même »",
             "Remplacer une carte {-2_WHITE} par une carte {-1_WHITE} {DISARM} et une carte {-1_WHITE} « {INVISIBLE}, sur vous-même »",
@@ -938,7 +938,7 @@ export default {
         ]
     },
     "HA": {
-        "name": "Tourmente",
+        "name": "Hail",
         "masteries": [
             "Pendant un scénario entier, gagner au moins 1 {RESOLVE_WHITE} à chaque round",
             "Dans un seul scénario, pendant trois rounds consécutifs, dépenser au moins 3 {RESOLVE_WHITE} à chaque round"
@@ -1172,7 +1172,7 @@ export default {
         ]
     },
     "EL2": {
-        "name": "Élémentaliste",
+        "name": "Elementalist",
         "masteries": [
             "Dans un seul scénario, consommer 4 éléments ou plus en un seul tour 5 fois",
             "Une fois dans 3 scénarios différents, avoir les 6 éléments forts ou déclinants en même temps"
@@ -1213,7 +1213,7 @@ export default {
         ]
     },
     "PH2": {
-        "name": "Héraut du Fléau",
+        "name": "Plagueherald",
         "masteries": [
             "En un seul tour, tuer 3 ennemis ou plus sans piocher de carte de modificateur d'attaque",
             "Dans un seul scénario, appliquer ou retirer {POISON.fh} à un allié ou un ennemi à chaque round"
@@ -1266,9 +1266,9 @@ export default {
             "Remplacer deux cartes {+0_WHITE} par une carte {+1_WHITE} « Vous pouvez gagner {DISARM.fh} pour ajouter {STUN.fh} »",
             "Ajouter deux cartes {+1_WHITE} « Ajouter +1 {ATTACK.fh} si un allié a une ordonnance active »",
             "Ajouter une carte {AGAIN} « {HEAL.fh}3, {RANGE.fh}1 »",
-            "Ajouter +1 {HEAL.fh} à toutes les capacités de soin des cartes Capacité « Trousse Médicale »",
+            "Ajouter +1 {HEAL.fh} à toutes les capacités de soin des cartes Capacité «Medical Kit»",
             "À chaque phase de ville après avoir terminé un scénario, votre don ou celui d'un allié au Sanctuaire du Grand Chêne est gratuit",
-            "À la fin de chacun de vos repos, si un allié a une ordonnance active, gagner une carte Capacité « Trousse Médicale » et reculer d'une case le pion de l'ordonnance active d'un allié"
+            "À la fin de chacun de vos repos, si un allié a une ordonnance active, gagner une carte Capacité «Medical Kit» et reculer d'une case le pion de l'ordonnance active d'un allié"
         ]
     },
     "SK2": {
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Lien-d'Âme",
+        "name": "Soultether",
         "masteries": [
             "Effectuer 3 actions d'invocation différentes avant votre premier repos et garder ces cartes dans votre zone active pendant tout le scénario",
             "Effectuer 6 capacités d'invocation différentes de vos cartes Capacité au cours des premiers rounds de 6 scénarios"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "Fureur Sauvage",
+        "name": "Wildfury",
         "masteries": [
             "Dans un seul scénario, infuser ou consommer {WIND} ou {EARTH} pendant chacun de vos tours",
             "Dans un seul scénario, tuer 4 ennemis ou plus avec des attaques {COMMAND} de 7 ou plus (après tous les bonus, avant les modificateurs d'attaque)"

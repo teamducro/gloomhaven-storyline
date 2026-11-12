@@ -339,16 +339,16 @@ export default {
         "name": "“Drake's Blood” (Felszerelés 59)"
     },
     "cs-2": {
-        "name": "“Szerencse gömbje” (Felszerelés 09)"
+        "name": "“Orb of Fortune” (Felszerelés 09)"
     },
     "cs-3": {
-        "name": "“Láncos buzogány” (Felszerelés 14)"
+        "name": "“Chain Mace” (Felszerelés 14)"
     },
     "cs-4": {
         "name": "Szerezz 15 aranyat, és szerezz vissza egy elveszett lapot"
     },
     "cs-5": {
-        "name": "“Agyrázkódás akna” (Felszerelés 31)"
+        "name": "“Concussion Mine” (Felszerelés 31)"
     },
     "cs-6": {
         "name": "Szerezz 20 aranyat, és hatástalanítsd az összes szomszédos csapdát"
@@ -357,37 +357,37 @@ export default {
         "name": "Egy véletlenszerű “Stone” felszerelés (Felszerelés 94-100)"
     },
     "cs-8": {
-        "name": "“Szédítő tinktúra” (Felszerelés 58)"
+        "name": "“Dizzying Tincture” (Felszerelés 58)"
     },
     "cs-9": {
-        "name": "“Szerencse gömbje” (Felszerelés 9)"
+        "name": "“Orb of Fortune” (Felszerelés 9)"
     },
     "cs-10": {
         "name": "Egy véletlenszerű “Stone” felszerelés (Felszerelés 94-100)"
     },
     "cs-11": {
-        "name": "“Szédítő tinktúra” (Felszerelés 58)"
+        "name": "“Dizzying Tincture” (Felszerelés 58)"
     },
     "cs-12": {
-        "name": "“Mana-orvosság” (Felszerelés 60)"
+        "name": "“Mana Medicine” (Felszerelés 60)"
     },
     "cs-13": {
-        "name": "“Kétségbeesés gömbje” (Felszerelés 10)"
+        "name": "“Orb of Despair” (Felszerelés 10)"
     },
     "cs-14": {
-        "name": "“Acélsisak” (Felszerelés 22)"
+        "name": "“Steel Helmet” (Felszerelés 22)"
     },
     "cs-15": {
-        "name": "“Változó iránytű” (Felszerelés 32)"
+        "name": "“Shifting Compass” (Felszerelés 32)"
     },
     "cs-16": {
         "name": "Hajtsd végre a “Heal 6, Self” akciót, és kapd meg a {POISON} állapotot"
     },
     "cs-17": {
-        "name": "“Agyrázkódás akna” (Felszerelés 31)"
+        "name": "“Concussion Mine” (Felszerelés 31)"
     },
     "cs-18": {
-        "name": "“Csontborítású kendő” (Felszerelés 25)"
+        "name": "“Boneclad Shawl” (Felszerelés 25)"
     },
     "cs-19": {
         "name": "Szerezz ✓-t, és hozz létre egy tetszőleges elemet"
@@ -396,10 +396,10 @@ export default {
         "name": "Egy véletlenszerű “Stone” felszerelés (Felszerelés 94-100)"
     },
     "cs-21": {
-        "name": "“Acélsisak” (Felszerelés 22)"
+        "name": "“Steel Helmet” (Felszerelés 22)"
     },
     "cs-22": {
-        "name": "“Örökkévalóság csizmája” (Felszerelés 19)"
+        "name": "“Boots of Perpetuity” (Felszerelés 19)"
     },
     "cs-23": {
         "name": "“Trophy Helmet” (Felszerelés 12)"
@@ -408,19 +408,19 @@ export default {
         "name": "Egy véletlenszerű “Stone” felszerelés (Felszerelés 94-100)"
     },
     "cs-25": {
-        "name": "“Elszívó lábvért” (Felszerelés 15)"
+        "name": "“Draining Greaves” (Felszerelés 15)"
     },
     "cs-26": {
-        "name": "“Vascsapda” (Felszerelés 30)"
+        "name": "“Iron Snare” (Felszerelés 30)"
     },
     "cs-27": {
-        "name": "“Fonott lemezpáncél” (Felszerelés 23)"
+        "name": "“Woven Plate Armor” (Felszerelés 23)"
     },
     "cs-28": {
-        "name": "“Láncos buzogány” (Felszerelés 14)"
+        "name": "“Chain Mace” (Felszerelés 14)"
     },
     "cs-29": {
-        "name": "“Fonott lemezpáncél” (Felszerelés 23)"
+        "name": "“Woven Plate Armor” (Felszerelés 23)"
     },
     "cs-30": {
         "name": "“Boneclad Shawl (Felszerelés 25)"
@@ -429,7 +429,7 @@ export default {
         "name": "“Drake's Blood” (Felszerelés 59)"
     },
     "cs-32": {
-        "name": "“Különös medál” (Felszerelés 20)"
+        "name": "“Curious Pendant” (Felszerelés 20)"
     },
     "cs-33": {
         "name": "25 arany, kapd meg a {POISON} állapotot"
@@ -438,40 +438,40 @@ export default {
         "name": "Szenvedj el veszélyes terep okozta sebzést, és kapd meg a {INVISIBLE} állapotot"
     },
     "cs-35": {
-        "name": "“Átokvér penge” (Felszerelés 36)"
+        "name": "“Curseblood Blade” (Felszerelés 36)"
     },
     "cs-36": {
         "name": "10 tapasztalati pont, kapd meg a {INVSIBLE} állapotot"
     },
     "cs-37": {
-        "name": "“Elszívó lábvért” (Felszerelés 15)"
+        "name": "“Draining Greaves” (Felszerelés 15)"
     },
     "cs-38": {
-        "name": "“Harci csákány” (Felszerelés 13)"
+        "name": "“War Pick” (Felszerelés 13)"
     },
     "cs-39": {
-        "name": "“Infravörös szemüveg” (Felszerelés 21)"
+        "name": "“Infrared Goggles” (Felszerelés 21)"
     },
     "cs-40": {
         "name": "Egy véletlenszerű “Stone” felszerelés (Felszerelés 94-100)"
     },
     "cs-41": {
-        "name": "“Hamuacél páncélkesztyű” (Felszerelés 61)"
+        "name": "“Ashsteel Gauntlets” (Felszerelés 61)"
     },
     "cs-42": {
-        "name": "“Harci csákány” (Felszerelés 13)"
+        "name": "“War Pick” (Felszerelés 13)"
     },
     "cs-43": {
         "name": "10 tapasztalati pont, és frissítsd fel az összes elhasznált felszerelést"
     },
     "cs-44": {
-        "name": "“Mana-orvosság” (Felszerelés 60)"
+        "name": "“Mana Medicine” (Felszerelés 60)"
     },
     "cs-45": {
         "name": "Egy véletlenszerű “Stone” felszerelés (Felszerelés 94-100)"
     },
     "cs-46": {
-        "name": "“Viperafog tőr” Tervrajz (Felszerelés 54)"
+        "name": "“Vipertooth Dagger” Tervrajz (Felszerelés 54)"
     },
     "cs-47": {
         "name": "15 arany"
@@ -483,7 +483,7 @@ export default {
         "name": "“Magma gázlócsizma” (Felszerelés gh-99)"
     },
     "cs-50": {
-        "name": "“Palackozott holdfény” (Felszerelés 18)"
+        "name": "“Bottled Moonlight” (Felszerelés 18)"
     },
     "fh-1": {
         "name": "Szerezz négy zsákmánylapot."
@@ -810,7 +810,7 @@ export default {
         "name": "Szerezz 15 aranyat"
     },
     "gh2-24": {
-        "name": "Szerezd meg: “Óvó rúd” (Felszerelés 104)"
+        "name": "Szerezd meg: “Warding Rod” (Felszerelés 104)"
     },
     "gh2-25": {
         "name": "Szerezz 1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "Szerezz 2 ✔"
     },
     "gh2-29": {
-        "name": "Szerezd meg: “Feltöltött csizma” (Felszerelés 100)"
+        "name": "Szerezd meg: “Charged Boots” (Felszerelés 100)"
     },
     "gh2-30": {
         "name": "Szerezz 20 tapasztalati pontot"
@@ -843,7 +843,7 @@ export default {
         "name": "Szerezd meg: “Gyíkpikkely sisak” (Felszerelés 121)"
     },
     "gh2-35": {
-        "name": "Szerezd meg: “Áthelyezés rúdja” (Felszerelés 115)"
+        "name": "Szerezd meg: “Rod of Transference” (Felszerelés 115)"
     },
     "gh2-36": {
         "name": "Véletlenszerű felszerelés tervrajz"
@@ -915,13 +915,13 @@ export default {
         "name": "Szerezz 20 aranyat"
     },
     "gh2-59": {
-        "name": "Szerezd meg: “Igaz pajzsa” (Felszerelés 148)"
+        "name": "Szerezd meg: “Shield of the Righteous” (Felszerelés 148)"
     },
     "gh2-60": {
         "name": "Szenvedj el 5 sebzést"
     },
     "gh2-61": {
-        "name": "Szerezd meg: “Támasz csizmája” (Felszerelés 143)"
+        "name": "Szerezd meg: “Boots of Bracing” (Felszerelés 143)"
     },
     "gh2-62": {
         "name": "Szerezz 20 aranyat"
@@ -933,7 +933,7 @@ export default {
         "name": "Véletlenszerű felszerelés tervrajz"
     },
     "gh2-65": {
-        "name": "Szerezd meg: “Vadőr csuklyája” (Felszerelés 103)"
+        "name": "Szerezd meg: “Ranger's Hood” (Felszerelés 103)"
     },
     "gh2-66": {
         "name": "Kapd meg a {POISON} és {STRENGTHEN} állapotot, és szerezz vissza 2 elveszett lapot"

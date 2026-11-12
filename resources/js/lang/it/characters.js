@@ -1266,9 +1266,9 @@ export default {
             "Sostituisci due carte {+0_WHITE} con una carta {+1_WHITE} “Puoi ottenere {DISARM.fh} per aggiungere {STUN.fh}”",
             "Aggiungi due carte {+1_WHITE} “Aggiungi +1 {ATTACK.fh} se un alleato ha una prescrizione attiva”",
             "Aggiungi una carta {AGAIN} “{HEAL.fh}3, {RANGE.fh}1”",
-            "Aggiungi +1 {HEAL.fh} a tutte le capacità di cura sulle carte capacità “Kit Medico”",
+            "Aggiungi +1 {HEAL.fh} a tutte le capacità di cura sulle carte capacità “Medical Kit”",
             "In ogni Fase Città dopo aver completato uno scenario, la donazione al Santuario della Grande Quercia tua o di un alleato è gratuita",
-            "Alla fine di ogni tuo riposo, se un alleato ha una prescrizione attiva, ottieni una carta capacità “Kit Medico” e sposta indietro di una casella il segnalino sulla prescrizione attiva di un alleato"
+            "Alla fine di ogni tuo riposo, se un alleato ha una prescrizione attiva, ottieni una carta capacità “Medical Kit” e sposta indietro di una casella il segnalino sulla prescrizione attiva di un alleato"
         ]
     },
     "SK2": {

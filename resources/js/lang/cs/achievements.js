@@ -258,37 +258,37 @@ export default {
         "name": "Sabotéři"
     },
     "cs-PCSOD": {
-        "name": "Zničený sliz"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "Spadlá láva"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "Po stopách peněz"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "Zmrzlý válečník"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "Spojenectví s Duby"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "Spojenectví s Inoxy"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "Žlabožroutova odměna"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "Feirgrinova prosba"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "Ztracený lektvar"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "Vzít peníze"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "Zdatní žoldnéři"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "Přítel Ledomluvců"
@@ -381,25 +381,25 @@ export default {
         "name": "Srdce sněhu"
     },
     "gh2-G2ATD": {
-        "name": "Aktivace zařízení"
+        "name": "Activating the Device"
     },
     "gh2-G2AUP": {
-        "name": "Neklidný mír"
+        "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
         "name": "Prastará technologie"
     },
     "gh2-G2CRD": {
-        "name": "Vláda ve městě: Démoni"
+        "name": "City Rule: Demons"
     },
     "gh2-G2CRME": {
-        "name": "Vláda ve městě: Obchodníci"
+        "name": "City Rule: Merchants"
     },
     "gh2-G2CRMI": {
-        "name": "Vláda ve městě: Vojáci"
+        "name": "City Rule: Military"
     },
     "gh2-G2EM": {
-        "name": "Zvládnuté elementy"
+        "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
         "name": "Konec zkázy"
@@ -408,22 +408,22 @@ export default {
         "name": "Konec Přítmí"
     },
     "gh2-G2HW": {
-        "name": "Posvěcené vody"
+        "name": "Hallowed Waters"
     },
     "gh2-G2ITD": {
-        "name": "Do hlubin"
+        "name": "Into the Depths"
     },
     "gh2-G2PTB": {
-        "name": "Mír skrze krveprolití"
+        "name": "Peace Through Bloodshed"
     },
     "gh2-G2TCE": {
-        "name": "Svíčka zhasnuta"
+        "name": "The Candle Extinguished"
     },
     "gh2-G2TCK": {
-        "name": "Svíčka zachována"
+        "name": "The Candle Kept"
     },
     "gh2-G2TDR": {
-        "name": "Temnota ustupuje"
+        "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
         "name": "Drak pomohl"
@@ -441,27 +441,27 @@ export default {
         "name": "Hlas umlčen"
     },
     "gh2-P2R16": {
-        "name": "Reputace frakcí 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "Reputace frakcí 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
-        "name": "Reputace u démonů 6"
+        "name": "Demon Reputation 6"
     },
     "gh2-P2RD12": {
-        "name": "Reputace u démonů 12"
+        "name": "Demon Reputation 12"
     },
     "gh2-P2RME6": {
-        "name": "Reputace u obchodníků 6"
+        "name": "Merchant Reputation 6"
     },
     "gh2-P2RME12": {
-        "name": "Reputace u obchodníků 12"
+        "name": "Merchant Reputation 12"
     },
     "gh2-P2RMI6": {
-        "name": "Reputace u vojáků 6"
+        "name": "Military Reputation 6"
     },
     "gh2-P2RMI12": {
-        "name": "Reputace u vojáků 12"
+        "name": "Military Reputation 12"
     }
 }
