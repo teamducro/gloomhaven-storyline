@@ -106,6 +106,7 @@ function postBuild(bundle, mainGame, inProduction) {
                 }
 
                 await replace('public/sitemap.xml', /release-date/g, dayjs().format('YYYY-MM-DD'));
+                await fs.promises.copyFile('resources/js/service-worker.js', 'public/service-worker.js');
                 await replace('public/service-worker.js', /'build-files',/, buildFiles.map(file => `'${file}',`).join('\n    '));
             }
 

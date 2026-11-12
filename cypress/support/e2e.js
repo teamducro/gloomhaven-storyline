@@ -31,5 +31,5 @@ before(() => {
 // Production builds (CI) open the donations popup on every 5th page load, which covers the page under test.
 Cypress.on('window:before:load', (win) => win.localStorage.setItem('donations', '0'));
 
-// The app's service worker caches every same-origin 200 GET, including stubbed API responses, which then leak into later tests.
-Cypress.on('window:before:load', (win) => delete Object.getPrototypeOf(win.navigator).serviceWorker);
+// Keep the service worker's cache from leaking between tests; specs that test it opt in with {env: {serviceWorker: true}}.
+Cypress.on('window:before:load', (win) => Cypress.env('serviceWorker') || delete Object.getPrototypeOf(win.navigator).serviceWorker);
