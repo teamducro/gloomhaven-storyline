@@ -122,6 +122,8 @@ export default {
     "Show treasures": "보물 표시",
     "solved": "해결됨",
     "Summary": "요약",
+    "Story summaries": "스토리 요약",
+    "Complete a scenario to start your story": "시나리오를 완료하면 이야기가 시작됩니다.",
     "Toggle": "전환",
     "Treasure": "보물 | 보물",
     "Treasures": "보물",

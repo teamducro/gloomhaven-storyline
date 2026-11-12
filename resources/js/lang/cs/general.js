@@ -122,6 +122,8 @@ export default {
     "Show treasures": "Zobrazit poklady",
     "solved": "vyřešeno",
     "Summary": "Souhrn",
+    "Story summaries": "Souhrny příběhu",
+    "Complete a scenario to start your story": "Dokončete scénář a začněte svůj příběh.",
     "Toggle": "Přepnout",
     "Treasure": "Poklad | Poklady",
     "Treasures": "Poklady",

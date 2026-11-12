@@ -122,6 +122,8 @@ export default {
     "Show treasures": "顯示寶藏",
     "solved": "已解決",
     "Summary": "摘要",
+    "Story summaries": "故事摘要",
+    "Complete a scenario to start your story": "完成一個劇本以開始你的故事。",
     "Toggle": "切換",
     "Treasure": "寶藏 | 寶藏",
     "Treasures": "寶藏",
