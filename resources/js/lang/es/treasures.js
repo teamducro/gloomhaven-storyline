@@ -336,7 +336,7 @@ export default {
         "name": "“Anillo de recuperación” (Objeto 32)"
     },
     "cs-1": {
-        "name": "“Sangre de Draco” (Objeto 59)"
+        "name": "“Drakes Blood” (Objeto 59)"
     },
     "cs-2": {
         "name": "“Orbe de la Fortuna” (Objeto 09)"
@@ -348,7 +348,7 @@ export default {
         "name": "Obtén 15 de oro y recupera una carta perdida"
     },
     "cs-5": {
-        "name": "“Mina de Conmoción” (Objeto 31)"
+        "name": "“Concussion Mine” (Objeto 31)"
     },
     "cs-6": {
         "name": "Obtén 20 de oro y desarma todas las trampas adyacentes"
@@ -357,7 +357,7 @@ export default {
         "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-8": {
-        "name": "“Tintura Vertiginosa” (Objeto 58)"
+        "name": "“Dizzying Tincture” (Objeto 58)"
     },
     "cs-9": {
         "name": "“Orbe de la Fortuna” (Objeto 9)"
@@ -366,10 +366,10 @@ export default {
         "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-11": {
-        "name": "“Tintura Vertiginosa” (Objeto 58)"
+        "name": "“Dizzying Tincture” (Objeto 58)"
     },
     "cs-12": {
-        "name": "“Medicina de Maná” (Objeto 60)"
+        "name": "“Mana Medicine” (Objeto 60)"
     },
     "cs-13": {
         "name": "“Orbe de la Desesperación” (Objeto 10)"
@@ -378,13 +378,13 @@ export default {
         "name": "“Casco de Acero” (Objeto 22)"
     },
     "cs-15": {
-        "name": "“Brújula Cambiante” (Objeto 32)"
+        "name": "“Shifting Compass” (Objeto 32)"
     },
     "cs-16": {
         "name": "Realiza “Curar 6, a ti mismo”, obtén VENENO {POISON}"
     },
     "cs-17": {
-        "name": "“Mina de Conmoción” (Objeto 31)"
+        "name": "“Concussion Mine” (Objeto 31)"
     },
     "cs-18": {
         "name": "“Boneclad Shawl (Item 25)"
@@ -399,7 +399,7 @@ export default {
         "name": "“Casco de Acero” (Objeto 22)"
     },
     "cs-22": {
-        "name": "“Botas de Perpetuidad” (Objeto 19)"
+        "name": "“Boots of Perpetuity” (Objeto 19)"
     },
     "cs-23": {
         "name": "“Casco de Trofeo” (Objeto 12)"
@@ -414,22 +414,22 @@ export default {
         "name": "“Trampa de Hierro” (Objeto 30)"
     },
     "cs-27": {
-        "name": "“Armadura de Placas Tejidas” (Objeto 23)"
+        "name": "“Woven Plate Armor” (Objeto 23)"
     },
     "cs-28": {
         "name": "“Maza de Cadenas” (Objeto 14)"
     },
     "cs-29": {
-        "name": "“Armadura de Placas Tejidas” (Objeto 23)"
+        "name": "“Woven Plate Armor” (Objeto 23)"
     },
     "cs-30": {
         "name": "“Chal de Hueso” (Objeto 25)"
     },
     "cs-31": {
-        "name": "“Sangre de Draco” (Objeto 59)"
+        "name": "“Drakes Blood” (Objeto 59)"
     },
     "cs-32": {
-        "name": "“Colgante Curioso” (Objeto 20)"
+        "name": "“Curious Pendant” (Objeto 20)"
     },
     "cs-33": {
         "name": "25 de oro, obtén VENENO {POISON}"
@@ -438,7 +438,7 @@ export default {
         "name": "Sufre el daño del terreno peligroso, obtén INVISIBILIDAD {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Hoja de Sangre Maldita” (Objeto 36)"
+        "name": "“Curseblood Blade” (Objeto 36)"
     },
     "cs-36": {
         "name": "10 XP, obtén INVISIBILIDAD {INVSIBLE}"
@@ -447,10 +447,10 @@ export default {
         "name": "“Grebas Drenadoras” (Objeto 15)"
     },
     "cs-38": {
-        "name": "“Pico de Guerra” (Objeto 13)"
+        "name": "“War Pick” (Objeto 13)"
     },
     "cs-39": {
-        "name": "“Gafas Infrarrojas” (Objeto 21)"
+        "name": "“Infrared Goggles” (Objeto 21)"
     },
     "cs-40": {
         "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
@@ -459,19 +459,19 @@ export default {
         "name": "“Guanteletes de Acero Ceniciento” (Objeto 61)"
     },
     "cs-42": {
-        "name": "“Pico de Guerra” (Objeto 13)"
+        "name": "“War Pick” (Objeto 13)"
     },
     "cs-43": {
         "name": "10 XP y recarga todos los objetos gastados"
     },
     "cs-44": {
-        "name": "“Medicina de Maná” (Objeto 60)"
+        "name": "“Mana Medicine” (Objeto 60)"
     },
     "cs-45": {
         "name": "Un objeto “Piedra” aleatorio (Objeto 94-100)"
     },
     "cs-46": {
-        "name": "Diseño “Daga Colmillo de Víbora” (Objeto 54)"
+        "name": "Diseño “Vipertooth Dagger” (Objeto 54)"
     },
     "cs-47": {
         "name": "15 de oro"
@@ -483,7 +483,7 @@ export default {
         "name": "“Botas de Magma” (Objeto gh-99)"
     },
     "cs-50": {
-        "name": "“Luz de Luna Embotellada” (Objeto 18)"
+        "name": "“Bottled Moonlight” (Objeto 18)"
     },
     "fh-1": {
         "name": "Obtén cuatro cartas de botín."
@@ -825,7 +825,7 @@ export default {
         "name": "Obtén 2 ✔"
     },
     "gh2-29": {
-        "name": "Obtén “Botas Cargadas” (Objeto 100)"
+        "name": "Obtén “Charged Boots” (Objeto 100)"
     },
     "gh2-30": {
         "name": "Obtén 20 XP"
@@ -843,7 +843,7 @@ export default {
         "name": "Obtén “Yelmo de Escamas de Draco” (Objeto 121)"
     },
     "gh2-35": {
-        "name": "Obtén “Vara de Transferencia” (Objeto 115)"
+        "name": "Obtén “Rod of Transference” (Objeto 115)"
     },
     "gh2-36": {
         "name": "Diseño de objeto aleatorio"
@@ -915,7 +915,7 @@ export default {
         "name": "Obtén 20 de oro"
     },
     "gh2-59": {
-        "name": "Obtén “Escudo del Justo” (Objeto 148)"
+        "name": "Obtén “Shield of the Righteous” (Objeto 148)"
     },
     "gh2-60": {
         "name": "Sufre 5 de daño"

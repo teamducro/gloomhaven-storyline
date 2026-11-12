@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "Borostyánpajzs",
+        "name": "Amber Aegis",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} “Helyezz el egy tetszőleges {COLONY} {COLONY_ICON} tokent egy üres mezőre {RANGE}2-n belül” lapra",
             "Vegyél ki két {-1_WHITE} lapot",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Műves",
+        "name": "Artificer",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} {ANY} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} {DISARM} lapra",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombázó",
+        "name": "Bombard",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki két {+0_WHITE} lapot két {AGAIN} {PIERCE}3 lapra",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Szikrafény",
+        "name": "Brightspark",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{ANY_X} adj hozzá +2 {ATTACK}” lapra",
             "Cserélj ki egy {-2_WHITE} lapot egy {-2_WHITE} “{RECOVER} egy véletlenszerű lapot az eldobott paklidból” lapra",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Láncőr",
+        "name": "Chainguard",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} “{SHACKLE} {CG_CIRCLE}” lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{+2_WHITE} ha a célpont {SHACKLED} {CG_CIRCLE}” lapra",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Törzsfő",
+        "name": "Chieftain",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {POISON} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL}1, {CT_CIRCLE}” lapra",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Tűzlovag",
+        "name": "Fire Knight",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{STRENGTHEN} ((Csapattársra))” lapra",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hierofanta",
+        "name": "Hierophant",
         "perks": [
             "Vegyél ki két {-1_WHITE} lapot",
             "Cserélj ki két {+0_WHITE} lapot egy {AGAIN} {LIGHT} lapra",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "Üregpaktum",
+        "name": "Hollowpact",
         "perks": [
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{HEAL}2, Magadra” lapra",
             "Cserélj ki két {+0_WHITE} lapot egy {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}” lapra",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Fényvivő",
+        "name": "Luminary",
         "perks": [
             "Vegyél ki négy {+0_WHITE} lapot",
             "Cserélj ki egy {+0_WHITE} lapot egy {+2_WHITE} lapra",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "Mocsárlábú",
+        "name": "Mirefoot",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+1_WHITE} lapra",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "Romtorok",
+        "name": "Ruinmaw",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} {RUPTURE} and {WOUND} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {WOUND} lapra",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "Szellemidéző",
+        "name": "Spirit Caller",
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} lapot és egy {+1_WHITE} lapra",
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SP_CIRCLE} performed the attack” lapra",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Csillagvető",
+        "name": "Starslinger",
         "perks": [
             "Cserélj ki két {+0_WHITE} lapot egy {AGAIN} “{HEAL}1, Magadra” lapra",
             "Cserélj ki egy {-2_WHITE} lapot egy {-1_WHITE} {DISARM} lapot és egy {-1_WHITE} “{INVISIBLE}, Magadra” lapra",
@@ -998,7 +998,7 @@ export default {
         ]
     },
     "BR2": {
-        "name": "Verekedő",
+        "name": "Bruiser",
         "masteries": [
             "3 különböző küldetésben ölj meg egy olyan ellenfelet, amelyet abban a fordulóban eltoltál vagy magadhoz húztál",
             "Egyetlen küldetésben, 3 egymást követő fordulón át, játssz ki 6 különböző képességkártyát, és minden egyes fordulóban okozz az ellenfeleknek legalább 7 sebzést"
@@ -1057,7 +1057,7 @@ export default {
         ]
     },
     "SC2": {
-        "name": "Néma Tőr",
+        "name": "Silent Knife",
         "masteries": [
             "Egy egész küldetés alatt csak olyan ellenfeleket támadj, amelyek a te egyik csapattársaddal szomszédosak, vagy a saját csapattársaik egyikével sem szomszédosak, és hajts végre legalább 10 támadást",
             "Fejezz be 3 küldetést 12 vagy több pénzérmével"
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Lélekláncoló",
+        "name": "Soultether",
         "masteries": [
             "Hajts végre 3 különböző idézés akciót az első pihenésed előtt, és tartsd ezeket a lapokat az aktív területeden az egész küldetés alatt",
             "Hajts végre 6 különböző idézés képességet a képességkártyáidról 6 küldetés első fordulóiban"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "Vadharag",
+        "name": "Wildfury",
         "masteries": [
             "Egyetlen küldetésben minden körödben hozz létre vagy használj el {WIND}-et vagy {EARTH}-ot",
             "Egyetlen küldetésben ölj meg 4 vagy több ellenfelet 7 vagy nagyobb értékű {COMMAND} támadással (minden bónusz után, a támadás módosítók előtt)"

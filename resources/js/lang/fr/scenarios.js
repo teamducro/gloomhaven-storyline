@@ -2416,29 +2416,29 @@ export default {
         ]
     },
     "cs-1": {
-        "name": "Le Lac Sombre"
+        "name": "The Dark Lake"
     },
     "cs-2": {
-        "name": "Les Canaux Souterrains"
+        "name": "Underground Channels"
     },
     "cs-3": {
-        "name": "La Caverne Inondée",
+        "name": "Flooded Cavern",
         "rewards": [
             "10 XP chacun",
             "+1 prospérité"
         ]
     },
     "cs-4": {
-        "name": "Les Guerriers Infestés",
+        "name": "Infected Warriors",
         "rewards": [
             "Chaque personnage gagne un objet « Orbe » aléatoire (Objet 1-10)"
         ]
     },
     "cs-5": {
-        "name": "Le Sang des Gelées"
+        "name": "Blood of the Oozes"
     },
     "cs-6": {
-        "name": "Les Eaux empoisonnées",
+        "name": "Poisoned Water",
         "rewards": [
             "+2 réputation",
             "+1 prospérité",
@@ -2446,52 +2446,52 @@ export default {
         ]
     },
     "cs-7": {
-        "name": "Les Œufs d'Or",
+        "name": "Golden Eggs",
         "rewards": [
             "Gagnez 30 pièces d'or collectives"
         ]
     },
     "cs-8": {
-        "name": "La Forteresse Brisée",
+        "name": "Shattered Fortress",
         "rewards": [
-            "“Pendentif Curieux” (Objet 20)"
+            "“Curious Pendant” (Objet 20)"
         ]
     },
     "cs-9": {
-        "name": "La Mission de Sauvetage",
+        "name": "Rescue Mission",
         "rewards": [
             "10 pièces d'or chacun",
-            "“Émetteur de Smog” (Objet 62)"
+            "“Smog Emitter” (Objet 62)"
         ]
     },
     "cs-10": {
-        "name": "L’Antre de la Monstruosité",
+        "name": "Den of Monstrosity",
         "rewards": [
             "“Potion de Soin Mineure” (Objet gh-12)",
             "“Potion de Mana Mineure” (Objet gh-20)"
         ]
     },
     "cs-11": {
-        "name": "L'Expédition de la Mer Brumeuse"
+        "name": "Voyage Abound"
     },
     "cs-12": {
-        "name": "La Découverte de la Source"
+        "name": "Uncovering the Source"
     },
     "cs-13": {
-        "name": "La Caverne aux Cadavres",
+        "name": "Corpse Cavern",
         "rewards": [
             "+1 prospérité",
             "Chaque personnage gagne l'un des objets suivants : « Potion d'Endurance Majeure » (Objet gh-34), « Potion de Puissance Majeure » (Objet gh-41), « Potion de Mana Majeure » (Objet gh-48)\nS'il n'y en a aucun de disponible dans la boutique, gagnez 20 pièces d'or à la place"
         ]
     },
     "cs-14": {
-        "name": "La Caverne des Cultistes",
+        "name": "Cultist Cave",
         "rewards": [
             "15 XP chacun"
         ]
     },
     "cs-15": {
-        "name": "Embuscade de Bêtes",
+        "name": "Ambush of Beasts",
         "rewards": [
             "15 pièces d'or chacun",
             "Chaque personnage gagne un objet « Orbe » aléatoire (Objet 1-10)"
@@ -2505,25 +2505,25 @@ export default {
         ]
     },
     "cs-17": {
-        "name": "Extraction d'Orbe",
+        "name": "Orb Extraction",
         "rewards": [
             "+2 prospérité"
         ]
     },
     "cs-18": {
-        "name": "Pas Vu, Pas Pris",
+        "name": "Grab and Go",
         "rewards": [
             "100 pièces d'or chacun. Cet argent doit être dépensé immédiatement en améliorations"
         ]
     },
     "cs-19": {
-        "name": "Expériences Élémentaires",
+        "name": "Elemental Experiments",
         "rewards": [
             "“Potion de Mana Majeure” (Objet gh-48)"
         ]
     },
     "cs-20": {
-        "name": "Le Rituel de Minuit",
+        "name": "Midnight Ritual",
         "rewards": [
             "+1 réputation",
             "+1 prospérité",
@@ -2531,61 +2531,61 @@ export default {
         ]
     },
     "cs-21": {
-        "name": "Une Mort Ardente",
+        "name": "A Fiery Death",
         "rewards": [
             "“Cuissardes de Magma” (Objet gh-99)"
         ]
     },
     "cs-22": {
-        "name": "Le Temple des Diablotins",
+        "name": "Imp Temple",
         "rewards": [
             "Chaque personnage gagne +2 pièces d'or et 2 XP pour chaque jeton d'argent pillé."
         ]
     },
     "cs-23": {
-        "name": "Les Chambres de Glaçons",
+        "name": "Icicle Chambers",
         "rewards": [
             "15 XP chacun"
         ]
     },
     "cs-24": {
-        "name": "La Grotte Sinistre",
+        "name": "Eerie Grotto",
         "rewards": [
             "Chaque personnage gagne un objet « Orbe » aléatoire (Objet 1-10)"
         ]
     },
     "cs-25": {
-        "name": "Étincelle, Contemplez !",
+        "name": "Brightspark, Behold!",
         "rewards": [
             "+1 réputation",
             "Ajoutez l'évènement de route 57 au paquet"
         ]
     },
     "cs-26": {
-        "name": "Le Pic de Pierre Thermique",
+        "name": "Thermal Stone Peak",
         "rewards": [
             "20 XP chacun",
             "1 ✓ chacun"
         ]
     },
     "cs-27": {
-        "name": "La Caverne des Engelures",
+        "name": "Frostbite Cavern",
         "rewards": [
             "10 pièces d'or chacun",
-            "“Teinture Vertigineuse” (Objet 58)"
+            "“Dizzying Tincture” (Objet 58)"
         ]
     },
     "cs-28": {
-        "name": "La Fontaine d'Ossements",
+        "name": "Fountain of Bones",
         "rewards": [
             "1 ✓ chacun"
         ]
     },
     "cs-29": {
-        "name": "La Chambre Funéraire"
+        "name": "Burial Chamber"
     },
     "cs-30": {
-        "name": "Terreurs Mortes-Vivantes",
+        "name": "Undead Terrors",
         "rewards": [
             [
                 "70 pièces d'or collectives"
@@ -2596,28 +2596,28 @@ export default {
         ]
     },
     "cs-31": {
-        "name": "Portails Éternels",
+        "name": "Eternal Portals",
         "rewards": [
             "1 ✓ chacun"
         ]
     },
     "cs-32": {
-        "name": "Affronter le Passé",
+        "name": "Confronting the Past",
         "rewards": [
             "Lisez {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Épilogue</a>)",
             "Mot de passe « Water Hydra »"
         ]
     },
     "cs-33": {
-        "name": "La Tour de Siège",
+        "name": "Siege Tower",
         "requirements": "Quête Personnelle « Protect and Serve »",
         "rewards": [
-            "“Bottes Flamboyantes” (Objet 90)",
+            "“Blazing Boots” (Objet 90)",
             "+1 réputation"
         ]
     },
     "cs-34": {
-        "name": "L'Évasion du Grand Chêne",
+        "name": "Great Oak Escape",
         "requirements": "Quête Personnelle « Protect and Serve »",
         "rewards": [
             "Débloquez l'enveloppe {BM}",
@@ -2626,11 +2626,11 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Émeute à la Prison",
+        "name": "Prison Riot",
         "requirements": "Quête Personnelle « Bandit Banisher »"
     },
     "cs-36": {
-        "name": "La Prime du Chasseur",
+        "name": "Hunters Bounty",
         "requirements": "Quête Personnelle « Bandit Banisher »",
         "rewards": [
             "Débloquez l'enveloppe {CG}",
@@ -2638,63 +2638,63 @@ export default {
         ]
     },
     "cs-37": {
-        "name": "Pierres Ardentes",
+        "name": "Burning Stones",
         "requirements": "Quête Personnelle « Natural Selection »",
         "rewards": [
             "Gagnez un objet « Pierre » aléatoire (Objet 94-100)"
         ]
     },
     "cs-38": {
-        "name": "Autels de Confusion",
+        "name": "Alters of Confusion",
         "requirements": "Quête Personnelle « Natural Selection »",
         "rewards": [
             "Débloquez l'enveloppe {LU}"
         ]
     },
     "cs-39": {
-        "name": "Le Bourbier Purulent",
+        "name": "Festering Mire",
         "requirements": "Quête Personnelle « An Adder Divides »",
         "rewards": [
             "10 XP chacun",
             "Retirez les 5 premières cartes du paquet d'évènements de ville et mélangez-y l'évènement de ville 57. Mettez de côté les cartes d'évènement de ville restantes jusqu'à ce que l'évènement de ville 57 soit résolu. Toute carte supplémentaire qui devrait être ajoutée au paquet d'évènements de ville pendant ce temps est ajoutée après la résolution de l'évènement de ville 57, puis les cartes restantes sont recombinées avec le paquet d'origine.",
-            "La quête « Une Vipère se Divise » n'est pas encore accomplie"
+            "La quête «An Adder Divides» n'est pas encore accomplie"
         ]
     },
     "cs-40": {
-        "name": "La Cachette des Contrebandiers",
+        "name": "Smugglers Hideout",
         "rewards": [
             "Gagnez 50 pièces d'or collectives"
         ]
     },
     "cs-41": {
-        "name": "La Malédiction du Néant",
+        "name": "Curse of the Void",
         "rewards": [
             "Gagnez 50 pièces d'or collectives"
         ]
     },
     "cs-42": {
-        "name": "Bêtes Contre Nature",
+        "name": "Unnatural Beasts",
         "rewards": [
             "+1 réputation",
             "10 XP chacun"
         ]
     },
     "cs-43": {
-        "name": "Le Labyrinthe du Manoir",
+        "name": "Mansion Maze",
         "rewards": [
             "+1 prospérité",
             "Chaque personnage gagne un objet « Orbe » aléatoire (Objet 1-10)"
         ]
     },
     "cs-44": {
-        "name": "Le Manoir Hanté",
+        "name": "Haunted Manor",
         "rewards": [
             "20 pièces d'or chacun",
             "Chaque personnage gagne un objet « Orbe » aléatoire (Objet 1-10)"
         ]
     },
     "cs-45": {
-        "name": "Défendre le Marais",
+        "name": "Defend the Swamp",
         "rewards": [
             "+1 réputation",
             "+1 prospérité",
@@ -2702,69 +2702,69 @@ export default {
         ]
     },
     "cs-46": {
-        "name": "Les Jardins des Vermlings",
+        "name": "Vermling Gardens",
         "rewards": [
             "+2 réputation",
             "15 XP chacun"
         ]
     },
     "cs-47": {
-        "name": "Le Marais des Vipères",
+        "name": "Viper Marsh",
         "rewards": [
-            "“Venin de Vipère Fantôme” (Objet 55)",
+            "“Ghost Viper Venom” (Objet 55)",
             "+1 prospérité",
             "10 pièces d'or chacun"
         ]
     },
     "cs-48": {
-        "name": "Feu de Forêt",
+        "name": "Forest Fire",
         "rewards": [
             "10 XP chacun",
             "20 pièces d'or chacun"
         ]
     },
     "cs-49": {
-        "name": "Invasion du Chêne A",
+        "name": "Oak Invasion A",
         "rewards": [
             "Lors de la prochaine visite à Havrenuit, les dons au Sanctuaire du Grand Chêne coûtent 0 pièce d'or"
         ]
     },
     "cs-50": {
-        "name": "Invasion du Chêne B",
+        "name": "Oak Invasion B",
         "rewards": [
             "10 XP chacun",
             "1 ✓ chacun"
         ]
     },
     "cs-51": {
-        "name": "L'Entrepôt des Rongeurs",
+        "name": "Rodent Warehouse",
         "rewards": [
             "+1 réputation",
             "30 pièces d'or chacun"
         ]
     },
     "cs-52": {
-        "name": "Le Puits aux Souhaits",
+        "name": "Wishing Well",
         "rewards": [
-            "“Bouclier d'Écailles de Wyverne” (Objet 37)"
+            "“Drakescale Shield” (Objet 37)"
         ]
     },
     "cs-53": {
-        "name": "La Caverne des Courants",
+        "name": "Cave of Currents",
         "rewards": [
-            "“Sphère des Courants” (Objet 83)",
+            "“Sphere of Currents” (Objet 83)",
             "5 pièces d'or chacun"
         ]
     },
     "cs-54": {
-        "name": "Le Repaire des Horreurs",
+        "name": "Lair of Horrors",
         "rewards": [
             "+1 réputation",
             "30 pièces d'or chacun"
         ]
     },
     "cs-55": {
-        "name": "Pillage des Catacombes",
+        "name": "Catacomb Plunder",
         "rewards": [
             "+1 prospérité",
             "+1 réputation",
@@ -2772,100 +2772,100 @@ export default {
         ]
     },
     "cs-56": {
-        "name": "Désamorcer la Machine",
+        "name": "Disarm the Machine",
         "rewards": [
-            "“Canon à Chaîne” (Objet 45)"
+            "“Chain Cannon” (Objet 45)"
         ]
     },
     "cs-57": {
-        "name": "Le Convertisseur Élémentaire",
+        "name": "Elemental Converter",
         "rewards": [
-            "“Éprouvette” (Objet 48)"
+            "“Test Tube” (Objet 48)"
         ]
     },
     "cs-58": {
-        "name": "Verrouillage du Pénitencier",
+        "name": "Penitentiary Lockdown",
         "rewards": [
-            "Obtenez l'un des suivants comme objet et l'autre comme plan d'objet : « Piège à Griffes » (Objet 34), « Piège à Mâchoires » (Objet 56)"
+            "Obtenez l'un des suivants comme objet et l'autre comme plan d'objet : «Claw Trap» (Objet 34), «Clamp Trap» (Objet 56)"
         ]
     },
     "cs-59": {
-        "name": "Envahisseurs de la Forêt",
+        "name": "Forest Invaders",
         "rewards": [
-            "“Brassards de la Nature” (Objet 47)"
+            "“Nature Armlets” (Objet 47)"
         ]
     },
     "cs-60": {
-        "name": "À Travers le Feu et les Flammes",
+        "name": "Through the Fire and Flames",
         "rewards": [
-            "“Armure Enflammée” (Objet 51)"
+            "“Flaming Armor” (Objet 51)"
         ]
     },
     "cs-61": {
-        "name": "Préservation Archaïque",
+        "name": "Archaic Preservation",
         "rewards": [
-            "“Robe d'Apaisement” (Objet 42)"
+            "“Robe of Soothing” (Objet 42)"
         ]
     },
     "cs-62": {
-        "name": "Rédemption Sacrée",
+        "name": "Hallow Redemption",
         "rewards": [
-            "“Cœur du Vide Purifié” (Objet 57)"
+            "“Cleansed Voidheart” (Objet 57)"
         ]
     },
     "cs-63": {
-        "name": "Une Vipère Acculée",
+        "name": "A Cornered Viper",
         "rewards": [
-            "“Mortier de Campagne” (Objet 53)"
+            "“Field Mortar” (Objet 53)"
         ]
     },
     "cs-64": {
-        "name": "Cristaux Rayonnants",
+        "name": "Glowing Crystals",
         "rewards": [
-            "“Carapace Lumineuse” (Objet 50)"
+            "“Luminous Carapace” (Objet 50)"
         ]
     },
     "cs-65": {
-        "name": "Cristaux Rayonnants",
+        "name": "Glowing Crystals",
         "rewards": [
-            "“Libation Spirituelle” (Objet 41)"
+            "“Spirit Libation” (Objet 41)"
         ]
     },
     "cs-66": {
-        "name": "Étrangers d'un Autre Monde",
+        "name": "Otherworldly Strangers",
         "rewards": [
-            "“Bottes de Cuir Lunaire” (Objet 40)"
+            "“Moonleather Boots” (Objet 40)"
         ]
     },
     "cs-AA1": {
-        "name": "Les Richesses de la Soie d'Acier",
+        "name": "The Riches of the Steelsilk",
         "requirements": "Quête Personnelle « At All Costs »",
         "rewards": [
-            "« Rempart d'Épine-de-Roc » (Objet AA01)"
+            "«Rockspine Bulwark» (Objet AA01)"
         ]
     },
     "cs-AA2": {
-        "name": "Échos Malfaisants",
+        "name": "Malign Echoes",
         "requirements": "Quête Personnelle « The Weight of Failure »",
         "rewards": [
-            "« Miel Spectral » (Objet AA02)"
+            "«Ghostshimmer Honey» (Objet AA02)"
         ]
     },
     "cs-AA3": {
-        "name": "Le Gardien de la Ruche",
+        "name": "Hive Guardian",
         "rewards": [
-            "« Filière de Soie d'Acier » (Objet AA03)"
+            "«Steelsilk Spinneret» (Objet AA03)"
         ]
     },
     "cs-QA1": {
-        "name": "Épreuve de Maîtrise",
-        "requirements": "Quête Personnelle « Ingenious Inventor » et objet « Modulateur de Puissance » équipé",
+        "name": "Capstone Test",
+        "requirements": "Quête Personnelle « Ingenious Inventor » et objet «Power Modulator» équipé",
         "rewards": [
             [
                 "Quête personnelle « Ingenious Inventor » accomplie",
                 "Ouvrez l'enveloppe {QA}",
-                "Plan de « Marteau à Piston à Vapeur » (Objet QA02)",
-                "Plan de « Gants d'Araignée Grimpeuse » (Objet QA03)"
+                "Plan de «Steam Piston Hammer» (Objet QA02)",
+                "Plan de «Spider Climb Gloves» (Objet QA03)"
             ],
             [
                 "Quête personnelle « Ingenious Inventor » accomplie",
@@ -2877,14 +2877,14 @@ export default {
             [
                 "Quête personnelle « Ingenious Inventor » accomplie",
                 "Ouvrez l'enveloppe {QA}",
-                "« Marteau à Piston à Vapeur » (Objet QA02)",
-                "« Gants d'Araignée Grimpeuse » (Objet QA03)",
+                "«Steam Piston Hammer» (Objet QA02)",
+                "«Spider Climb Gloves» (Objet QA03)",
                 "Ajoutez des copies à l'approvisionnement disponible de la ville"
             ]
         ]
     },
     "cs-QA2": {
-        "name": "Le Filon",
+        "name": "Mother Lode",
         "requirements": "Quête Personnelle « Scrap Diver »",
         "rewards": [
             "Quête personnelle « Scrap Diver » accomplie",
@@ -2900,11 +2900,11 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Surveillez vos Manières",
+        "name": "Mind your Manners",
         "requirements": "Quête Personnelle « Brutal Enforcer »"
     },
     "cs-RM2": {
-        "name": "Le Caïd qui Sombre",
+        "name": "Sinking Kingpin",
         "requirements": "Quête Personnelle « Brutal Enforcer »",
         "rewards": [
             "Quête personnelle « Brutal Enforcer » accomplie",
@@ -2913,21 +2913,21 @@ export default {
         ]
     },
     "cs-RM3": {
-        "name": "La Colonie en Ruine",
+        "name": "Ruined Colony",
         "requirements": "Quête Personnelle « Apex Predator »"
     },
     "cs-RM4": {
-        "name": "Le Repaire des Écailles-Terreur",
+        "name": "Terrorscale Lair",
         "requirements": "Quête Personnelle « Apex Predator »",
         "rewards": [
             "Quête personnelle « Apex Predator » accomplie",
             "Ouvrez l'enveloppe {RM}",
-            "Plan de « Sabre en Écailles-Terreur » (Objet RM03)",
-            "Plan de « Lames Croisées en Écailles-Terreur » (Objet RM04)"
+            "Plan de «Terrorscale Saber» (Objet RM03)",
+            "Plan de «Terrorscale Crossblades» (Objet RM04)"
         ]
     },
     "cs-RM5": {
-        "name": "Un Sort Invisible",
+        "name": "Unseen Plight",
         "rewards": [
             [
                 "40 pièces d'or collectives",
@@ -2940,9 +2940,9 @@ export default {
         ]
     },
     "cs-RM6": {
-        "name": "La Chute du Répit de l'Ombre",
+        "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "Plan de « Rite de Ruine » (Objet RM05)",
+            "Plan de «Rite of Ruin» (Objet RM05)",
             "Si au moins trois Vermlings étaient en vie à la fin du huitième round : 5 pièces d'or",
             "Si au moins cinq Vermlings étaient en vie à la fin du huitième round : ✓"
         ]
@@ -2952,42 +2952,42 @@ export default {
         "requirements": "Aucun Ruinmaw dans la compagnie",
         "rewards": [
             "10 XP chacun",
-            "Plan de « Cuirasse Sauvage » (Objet RM06)"
+            "Plan de «Savage Cuirass» (Objet RM06)"
         ]
     },
     "mp-AN1": {
-        "name": "Un Marché Éprouvant",
+        "name": "A Harrowing Deal",
         "rewards": [
-            "« Ruban d'Amitié » (Objet AN)"
+            "«Ribbon of Friendship» (Objet AN)"
         ]
     },
     "mp-SA1": {
-        "name": "Cornes dans la Nuit",
+        "name": "Horns in the Night",
         "rewards": [
-            "« Blason de Frosthaven » (Objet SA)"
+            "«Crest of Frosthaven» (Objet SA)"
         ]
     },
     "mp-CA1": {
-        "name": "S'échapper de la Corruption",
+        "name": "Escape from Corruption",
         "rewards": [
-            "« Bassin de Prophétie A » (Objet CA A)",
-            "« Bassin de Prophétie B » (Objet CA B)"
+            "«Basin of Prophecy A» (Objet CA A)",
+            "«Basin of Prophecy B» (Objet CA B)"
         ]
     },
     "mp-HA1": {
-        "name": "Un Sacré Désagrément",
+        "name": "Major Annoyance",
         "rewards": [
-            "« Bottes Sans Chichis » (Objet HA)"
+            "«No Nonsense Boots» (Objet HA)"
         ]
     },
     "gh2-0": {
-        "name": "Parcours d'Entraînement",
+        "name": "Training Course",
         "rewards": [
             "2 pièces d'or chacun"
         ]
     },
     "gh2-1": {
-        "name": "Le Camp des Bandits",
+        "name": "Bandit Camp",
         "rewards": [
             "10 pièces d'or chacun",
             "+1 réputation Guilde des Marchands",
@@ -3056,7 +3056,7 @@ export default {
         "rewards": []
     },
     "gh2-11": {
-        "name": "La Chambre du Rituel",
+        "name": "Ritual Chamber",
         "rewards": [
             "10 XP chacun",
             "1 ✔ chacun",
@@ -3122,7 +3122,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "L'Avant-poste Militaire",
+        "name": "Military Outpost",
         "rewards": [
             "25 XP chacun",
             "+2 réputation Démons",
@@ -3146,7 +3146,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "Démolition du Canon du Chaos",
+        "name": "Doomcannon Demolition",
         "rewards": [
             "15 pièces d'or chacun",
             "-1 réputation Démons",
@@ -3292,7 +3292,7 @@ export default {
         ]
     },
     "gh2-40": {
-        "name": "Embuscade dans les Marécages",
+        "name": "Wetlands Ambush",
         "rewards": []
     },
     "gh2-41": {
@@ -3302,11 +3302,11 @@ export default {
         ]
     },
     "gh2-42": {
-        "name": "La Vallée Isolée",
+        "name": "Secluded Valley",
         "rewards": []
     },
     "gh2-43": {
-        "name": "À la Poursuite des Secrets",
+        "name": "Chasing Secrets",
         "rewards": [
             [
                 "+1 prospérité",
@@ -3383,7 +3383,7 @@ export default {
         "rewards": []
     },
     "gh2-55": {
-        "name": "Le Dernier Rempart",
+        "name": "The Last Stand",
         "rewards": []
     },
     "gh2-56": {
@@ -3396,7 +3396,7 @@ export default {
     "gh2-57": {
         "name": "Le Sous-sol de la Crypte",
         "rewards": [
-            "Gagnez « Sceptre de Xorn » (Objet 147)"
+            "Gagnez «Scepter of Xorn» (Objet 147)"
         ]
     },
     "gh2-58": {
@@ -3404,7 +3404,7 @@ export default {
         "rewards": [
             "10 XP chacun",
             "1 ✔ chacun",
-            "Gagnez « Sceptre de Xorn » (Objet 147)",
+            "Gagnez «Scepter of Xorn» (Objet 147)",
             "Ajoutez l'évènement de route R-39 au paquet",
             "Ajoutez l'évènement de ville C-66 au paquet"
         ]
@@ -3425,7 +3425,7 @@ export default {
         ]
     },
     "gh2-61": {
-        "name": "Le Bosquet Dangereux",
+        "name": "Dangerous Grove",
         "rewards": []
     },
     "gh2-62": {
@@ -3442,20 +3442,20 @@ export default {
         ]
     },
     "gh2-64": {
-        "name": "Les Racines du Chaos",
+        "name": "Roots of Chaos",
         "rewards": [
             "Quête personnelle 10 accomplie"
         ]
     },
     "gh2-65": {
-        "name": "Le Mausolée des Héros",
+        "name": "Hero's Mausoleum",
         "rewards": [
             "10 XP chacun",
             "1 ✔ chacun"
         ]
     },
     "gh2-66": {
-        "name": "Un Ami dans le Besoin",
+        "name": "A Friend in Need",
         "rewards": [
             "15 pièces d'or chacun",
             "Quête personnelle 11 accomplie"
@@ -3490,7 +3490,7 @@ export default {
         ]
     },
     "gh2-71": {
-        "name": "L'Usine Mécanique",
+        "name": "Clockwork Factory",
         "rewards": [
             "10 XP chacun",
             "1 ✔ chacun"
@@ -3518,7 +3518,7 @@ export default {
     "gh2-75": {
         "name": "La Crête de l'Eboulement",
         "rewards": [
-            "Gagnez « Talisman de Rubis » (Objet 152)"
+            "Gagnez «Ruby Talisman» (Objet 152)"
         ]
     },
     "gh2-76": {
@@ -3538,7 +3538,7 @@ export default {
         ]
     },
     "gh2-79": {
-        "name": "L'Assaut des Fouineurs",
+        "name": "Lurker Assault",
         "rewards": [
             "+1 prospérité"
         ]
@@ -3581,7 +3581,7 @@ export default {
         ]
     },
     "gh2-85": {
-        "name": "La Gare du Carrefour",
+        "name": "Crossroads Station",
         "rewards": [
             "1 ✔ chacun",
             "+1 prospérité"
@@ -3606,7 +3606,7 @@ export default {
         ]
     },
     "gh2-89": {
-        "name": "Travaux d'Intérêt Général",
+        "name": "Community Service",
         "rewards": [
             "Gagnez 2× « Potion de Soin Majeure » (Objet 37)"
         ]
@@ -3620,10 +3620,10 @@ export default {
         "rewards": []
     },
     "gh2-92": {
-        "name": "L'Ancre Chronale",
+        "name": "Chronal Anchor",
         "rewards": [
             "10 XP chacun",
-            "Gagnez « Matrice Temporelle » (Objet 144)"
+            "Gagnez «Temporal Matrix» (Objet 144)"
         ]
     },
     "gh2-93": {
@@ -3633,14 +3633,14 @@ export default {
         ]
     },
     "gh2-94": {
-        "name": "Un Sauvetage Aquatique",
+        "name": "A Watery Rescue",
         "rewards": [
             "10 XP chacun",
-            "Gagnez « Sceptre d'un Autre Monde » (Objet 139)"
+            "Gagnez «Otherworldly Scepter» (Objet 139)"
         ]
     },
     "gh2-95": {
-        "name": "Le Cargo",
+        "name": "Cargo Ship",
         "rewards": []
     },
     "gh2-96": {
@@ -3650,35 +3650,35 @@ export default {
         ]
     },
     "gh2-97": {
-        "name": "Le Camp des Vermlings",
+        "name": "Vermling Camp",
         "rewards": [
             "5 XP chacun",
             "+1 prospérité"
         ]
     },
     "gh2-98": {
-        "name": "La Faille Métamorphique",
+        "name": "Metamorphic Fault",
         "rewards": [
             "10 XP chacun",
             "Gagnez « Crâne de Haine » (Objet 111)"
         ]
     },
     "gh2-99": {
-        "name": "La Forge de Frittage",
+        "name": "Sintering Forge",
         "rewards": [
-            "Gagnez « Lame de l'Aurore » (Objet 117)",
+            "Gagnez «Dawnblade» (Objet 117)",
             "Ajoutez l'évènement de route R-33 au paquet"
         ]
     },
     "gh2-100": {
-        "name": "Le Silence Tombe",
+        "name": "Silence Falls",
         "rewards": [
             "+1 prospérité",
             "Ajoutez l'évènement de ville C-60 au paquet"
         ]
     },
     "gh2-101": {
-        "name": "La Place de Havrenuit A (Alliés Démons)",
+        "name": "Gloomhaven Square A (Demon Allies)",
         "rewards": [
             "30 XP chacun",
             "+2 réputation Démons",
@@ -3692,21 +3692,21 @@ export default {
         ]
     },
     "gh2-102": {
-        "name": "La Place de Havrenuit A (Alliés Militaires)",
+        "name": "Gloomhaven Square A (Military Allies)",
         "rewards": []
     },
     "gh2-103": {
-        "name": "Les Remparts de Havrenuit A (Alliés Marchands)",
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
         "rewards": []
     },
     "gh2-104": {
-        "name": "Les Remparts de Havrenuit A (Alliés Militaires)",
+        "name": "Gloomhaven Battlements A (Military Allies)",
         "rewards": []
     },
     "gh2-201": {
-        "name": "Une Soirée en Ville",
+        "name": "A Night Out",
         "rewards": [
-            "Gagnez « Bouclier à Crochets » (Objet 153)"
+            "Gagnez «Hooked Shield» (Objet 153)"
         ]
     },
     "gh2-202": {
@@ -3716,13 +3716,13 @@ export default {
         ]
     },
     "gh2-203": {
-        "name": "L'Apothicaire Corrompu",
+        "name": "Corrupted Apothecary",
         "rewards": [
-            "Gagnez « Élixir Éthérique » (Objet 155)"
+            "Gagnez «Etheric Elixir» (Objet 155)"
         ]
     },
     "gh2-204": {
-        "name": "Préoccupations Matérielles",
+        "name": "Material Concerns",
         "rewards": [
             "Gagnez « Stylet Silencieux » (Objet 156)"
         ]
@@ -3734,7 +3734,7 @@ export default {
         ]
     },
     "gh2-206": {
-        "name": "La Libération des Vermlings",
+        "name": "Vermling Liberation",
         "rewards": [
             "Gagnez « Poignard Psychique » (Objet 158)"
         ]
@@ -3742,7 +3742,7 @@ export default {
     "gh2-207": {
         "name": "L'Escorte de la Caravane",
         "rewards": [
-            "Gagnez « Insigne du Divin » (Objet 159)"
+            "Gagnez «Insignia of the Divine» (Objet 159)"
         ]
     },
     "gh2-208": {
@@ -3760,7 +3760,7 @@ export default {
     "gh2-210": {
         "name": "Récolte Nocturne",
         "rewards": [
-            "Gagnez « La Caresse de la Nuit » (Objet 162)"
+            "Gagnez «The Night's Caress» (Objet 162)"
         ]
     },
     "gh2-211": {
@@ -3796,7 +3796,7 @@ export default {
     "gh2-216": {
         "name": "Les Secrets Élémentaires",
         "rewards": [
-            "Gagnez « Gilet Élémentaire » (Objet 168)"
+            "Gagnez «Elemental Vest» (Objet 168)"
         ]
     },
     "gh2-217": {
@@ -3808,7 +3808,7 @@ export default {
     "gh2-218": {
         "name": "Les Sables du Temps",
         "rewards": [
-            "Gagnez « Carapace Rampante » (Objet 170)"
+            "Gagnez «Crawling Carapace» (Objet 170)"
         ]
     }
 }

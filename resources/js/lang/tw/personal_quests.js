@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "保護與服務",
+        "name": "Protect and Serve",
         "progress": [
             "殺死 10 名羚牛族。",
             "完成{SCENARIO 33}的結局。"
         ]
     },
     "cs-331": {
-        "name": "武器專家",
+        "name": "Weapons Specialist",
         "progress": [
             "消耗 15 件{ONE-HAND}或{TWO-HANDS}道具。"
         ]
     },
     "cs-332": {
-        "name": "實驗",
+        "name": "Experimentation",
         "progress": [
             "為了遺失的{LOST}動作打出 30 張卡牌。"
         ]
     },
     "cs-333": {
-        "name": "刺激追求者",
+        "name": "Thrill Seeker",
         "progress": [
             "透過開門揭示房間板塊 20 次。"
         ]
     },
     "cs-334": {
-        "name": "陷阱設置者",
+        "name": "Trap Setter",
         "progress": [
             "在你的回合中解除陷阱或使敵人觸發陷阱，共 15 次。"
         ]
     },
     "cs-335": {
-        "name": "強盜剋星",
+        "name": "Bandit Banisher",
         "progress": [
             "殺死 10 名衛兵或弓箭手。",
             "完成{SCENARIO 35}的結局。"
         ]
     },
     "cs-336": {
-        "name": "光明中的生物",
+        "name": "Creatures in the light",
         "progress": [
             "殺死 20 隻軟泥怪、森林小惡魔或黑暗小惡魔。"
         ]
     },
     "cs-337": {
-        "name": "經驗老到的領袖",
+        "name": "Experienced leader",
         "progress": [
             "以至少 12 點經驗值完成 12 場劇本。"
         ]
     },
     "cs-338": {
-        "name": "腎上腺素飆升",
+        "name": "Adrenaline Spike",
         "progress": [
             "在同一回合內殺死一名敵人並拾取其金幣指示物，共 15 次。"
         ]
     },
     "cs-339": {
-        "name": "互相支援",
+        "name": "Mutual Support",
         "progress": [
             "殺死 30 名與你任一盟友相鄰的敵人。"
         ]
     },
     "cs-340": {
-        "name": "願你受到祝福",
+        "name": "Thy be Blessed",
         "progress": [
             "在攻擊期間抽到{BLESS}卡 12 次。"
         ]
     },
     "cs-341": {
-        "name": "靈魂的該隱",
+        "name": "Spiritual Cains",
         "progress": [
             "花費 200 金幣於附魔。"
         ]
     },
     "cs-342": {
-        "name": "痛苦之路",
+        "name": "The Path of Agony",
         "progress": [
             "親眼目睹盟友或敵人在其自己的回合中死亡或筋疲力盡，共 13 次。"
         ]
     },
     "cs-343": {
-        "name": "殘酷統治",
+        "name": "Cruel Dominion",
         "progress": [
             "完成 10 場劇本，且在其中殺死一名帶有負面狀態的敵人。"
         ]
     },
     "cs-344": {
-        "name": "物競天擇",
+        "name": "Natural Selection",
         "progress": [
             "產生{FIRE} 2 次。",
             "產生{ICE} 2 次。",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "獵手與獵物",
+        "name": "Predator and Prey",
         "progress": [
             "在同一回合內殺死 2 名或更多敵人，共 15 次。"
         ]
     },
     "cs-346": {
-        "name": "毒蛇分割",
+        "name": "An Adder Divides",
         "progress": [
             "在 6 場不同的劇本中佔據困難地形。",
             "完成{SCENARIO 39}的結局。"
         ]
     },
     "cs-347": {
-        "name": "野外研究",
+        "name": "Field Research",
         "progress": [
             "對 20 種不同的怪物施加{POISON}。"
         ]
     },
     "cs-348": {
-        "name": "召喚師之手",
+        "name": "Conjurers Hand",
         "progress": [
             "殺死 10 隻被召喚的怪物。"
         ]
     },
     "cs-349": {
-        "name": "惡人無安寧",
+        "name": "No Rest for the Wicked",
         "progress": [
             "完成 10 場劇本，且過程中不進行長休。"
         ]
     },
     "cs-350": {
-        "name": "健康第一",
+        "name": "Health First",
         "progress": [
             "完成 7 場劇本，且結束時生命值全滿。"
         ]
     },
     "cs-351": {
-        "name": "無盡搜尋",
+        "name": "Limitless Searching",
         "progress": [
             "拾取 30 個金幣指示物。"
         ]
     },
     "cs-aa-001": {
-        "name": "不惜一切代價",
+        "name": "At All Costs",
         "progress": [
             "經歷 8 場劇本，在其中與盟友相鄰時，你如常透過棄置一張卡牌來抵銷傷害。",
             "完成{SCENARIO AA1}的結局。"
         ]
     },
     "cs-aa-002": {
-        "name": "失敗的重量",
+        "name": "The Weight of failure",
         "progress": [
             "完成 8 場劇本，且未筋疲力盡並以 2 點或更少的生命值結束。",
             "完成{SCENARIO AA2}的結局。"
         ]
     },
     "cs-qa-001": {
-        "name": "天才發明家",
+        "name": "Ingenious Inventor",
         "progress": [
-            "立即獲得「功率調節器」（道具 QA-01）",
-            "使用「功率調節器」（道具 QA-01）殺死 12 名敵人",
+            "立即獲得「Power Modulator」（道具 QA-01）",
+            "使用「Power Modulator」（道具 QA-01）殺死 12 名敵人",
             "完成{SCENARIO QA1}的結局"
         ]
     },
     "cs-qa-002": {
-        "name": "廢料潛水員",
+        "name": "Scrap Diver",
         "progress": [
             "以單次行動拾取 2 個或更多金幣指示物，共 8 次。",
             "拾取 2 個寶藏板塊。",
@@ -337,7 +337,7 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "殘暴執行者",
+        "name": "Brutal Enforcer",
         "progress": [
             "獲得「鋸齒刃」設計圖（道具 RM-01）。",
             "對 30 名敵人施加{WOUND}或{RUPTURE}。",
@@ -345,7 +345,7 @@ export default {
         ]
     },
     "cs-rm-002": {
-        "name": "頂級掠食者",
+        "name": "Apex Predator",
         "progress": [
             "經歷 20 個回合，在這些回合中你執行帶有{CONSUMED}的動作期間或之後，有一名敵人死亡。",
             "完成{SCENARIO RM3}的結局。"
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "政治陰謀",
+        "name": "Political Intrigue",
         "progress": [
             "將城市事件 61 加入城市事件牌堆。",
             "獲得 30 張選票：每次獲得聲望時獲得 3 張選票，每帶一件派系聲望道具完成劇本時獲得 1 張選票。",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "旅店的待客之道",
+        "name": "Inn to Hospitality",
         "progress": [
             "拾取 60 個金幣指示物。",
             "閱讀{SECTION} 125.4。"
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "殞落的人們",
         "progress": [
-            "獲得「行維族望遠鏡」（道具 149）。它無法被出售。",
-            "使用「行維族望遠鏡」（道具 149）10 次。",
+            "獲得「Aesther Spyglass」（道具 149）。它無法被出售。",
+            "使用「Aesther Spyglass」（道具 149）10 次。",
             "閱讀{SECTION} 115.2。",
             "完成{SCENARIO 63}的結局。"
         ]
@@ -639,7 +639,7 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "值得一說的故事",
+        "name": "A Tale to Tell",
         "progress": [
             "在 10 場劇本中拾取寶藏板塊，或親眼見到隊伍拾取寶藏板塊。",
             "閱讀{SECTION} 12.3。"
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "領養的父母",
+        "name": "Adoptive Parent",
         "progress": [
             "在 10 場劇本中，拾取敵人掉落的 3 個金幣指示物。",
             "閱讀{SECTION} 122.5。",
@@ -683,8 +683,8 @@ export default {
         "name": "行使光明",
         "progress": [
             "立即解鎖{SCENARIO 65}。",
-            "找到「正義者之盾」（道具 148）。",
-            "使用「正義者之盾」（道具 148）抵銷 10 次 4 點或更多傷害的攻擊。",
+            "找到「Shield of the Righteous」（道具 148）。",
+            "使用「Shield of the Righteous」（道具 148）抵銷 10 次 4 點或更多傷害的攻擊。",
             "閱讀{SECTION} 82.1。"
         ]
     },
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "逃離辛-拉集團",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "將城市事件 69 與 70 加入城市事件牌堆。獲得「黑卡」（道具 113）。它無法被出售。",
             "完成 6 場支線劇本（劇本編號大於 56）。",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "遊走邊緣",
+        "name": "Living on the Edge",
         "progress": [
-            "獲得「實驗護甲」（道具 150）。",
+            "獲得「Experimental Armor」（道具 150）。",
             "使用它使 20 名敵人受到傷害。",
             "閱讀{SECTION} 47.4。"
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "武術研習",
+        "name": "Martial Study",
         "progress": [
             "在劇本中使用 8 件不同的{ONE-HAND}或{TWO-HANDS}道具。",
             "閱讀{SECTION} 67.2。"
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "追求精通",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "從能力卡獲得 120 點經驗值。",
             "閱讀{SECTION} 17.2。"

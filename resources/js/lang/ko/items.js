@@ -1018,463 +1018,463 @@ export default {
         "desc": "이동 중, 이동 하나에 “+1 {MOVE} 및 {JUMP}” 추가."
     },
     "cs-1": {
-        "name": "혼란의 오브",
+        "name": "Orb of Confusion",
         "desc": "공격 능력 중, 이 카드에 캐릭터 토큰을 1개 올려 한 번의 공격에 {MUDDLE}을 추가할 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-2": {
-        "name": "기세의 구슬",
+        "name": "Orb of Momentum",
         "desc": "이동 능력 중, 이 카드에 캐릭터 토큰을 1개 올려 +1 {MOVE}를 추가할 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-3": {
-        "name": "민첩의 오브",
+        "name": "Orb of Agility",
         "desc": "이동 능력 중, 이 카드에 캐릭터 토큰을 1개 올려 {JUMP}를 추가할 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-4": {
-        "name": "활력의 오브",
+        "name": "Orb of Vigor",
         "desc": "공격 능력 중, 이 카드에 캐릭터 토큰을 1개 올려 한 번의 공격에 +1 {ATTACK}을 추가할 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-5": {
-        "name": "응징의 오브",
+        "name": "Orb of Retribution",
         "desc": "인접한 적에게 공격을 받을 때, 이 카드에 캐릭터 토큰을 1개 올려 해당 공격에 대해 {RETALIATE} 1을 얻을 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-6": {
-        "name": "감염의 오브",
+        "name": "Orb of Infection",
         "desc": "공격 능력 중, 이 카드에 캐릭터 토큰을 1개 올려 한 번의 공격에 {POISON}을 추가할 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-7": {
-        "name": "생명력의 오브",
+        "name": "Orb of Vitality",
         "desc": "차례 중, 이 카드에 캐릭터 토큰을 1개 올려 “{HEAL} 1, 자신”을 수행할 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-8": {
-        "name": "보호의 오브",
+        "name": "Orb of Protection",
         "desc": "공격에 의해 피해를 입게 될 때, 이 카드에 캐릭터 토큰을 1개 올려 해당 공격에 대해 {SHIELD} 1을 얻을 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-9": {
-        "name": "행운의 오브",
+        "name": "Orb of Fortune",
         "desc": "공격 능력 중, 이 카드에 캐릭터 토큰을 1개 올려 한 번의 공격에 이익을 받을 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-10": {
-        "name": "절망의 오브",
+        "name": "Orb of Despair",
         "desc": "공격 능력 중, 이 카드에 캐릭터 토큰을 1개 올려 한 번의 공격에 {CURSE}를 추가할 수 있음. 이 카드에 토큰이 3개 놓이면 {CONSUMED}."
     },
     "cs-11": {
-        "name": "천연두 해독제",
+        "name": "Pox Antidote",
         "desc": "차례 중, 자신 또는 인접한 아군 1명의 {INFECT} 제거."
     },
     "cs-12": {
-        "name": "전리품 투구",
+        "name": "Trophy Helm",
         "desc": "장착자의 공격은 {RETALIATE}의 영향을 받지 않음."
     },
     "cs-13": {
-        "name": "전쟁 곡괭이",
+        "name": "War Pick",
         "desc": "근접 공격 능력 중, 한 번의 공격에 {PIERCE} 4 추가."
     },
     "cs-14": {
-        "name": "사슬 철퇴",
+        "name": "Chain Mace",
         "desc": "차례 중, “{ATTACK} 3, {RANGE} 2” 수행."
     },
     "cs-15": {
-        "name": "소모시키는 정강이받이",
+        "name": "Draining Greaves",
         "desc": "장착자의 차례 종료 후, 장착자가 네 칸 이상 이동했다면 인접한 적 하나가 1피해를 입는다."
     },
     "cs-16": {
-        "name": "위상의 신발",
+        "name": "Shoes of Phasing",
         "desc": "장착자의 이동 능력은 적을 통과할 수 있다."
     },
     "cs-17": {
-        "name": "경량 부츠",
+        "name": "Lightweight Boots",
         "desc": "이동 능력 중, +2 {MOVE} 및 {JUMP} 추가."
     },
     "cs-18": {
-        "name": "병에 담긴 불빛",
+        "name": "Bottled Moonlight",
         "desc": "치료 능력 중, 각 치료에 +2 {HEAL} 및 {STRENGTHEN} 추가."
     },
     "cs-19": {
-        "name": "영속의 부츠",
+        "name": "Boots of Perpetuity",
         "desc": "{IMMOBILIZE}에 면역.\n차례 종료 시, 이번 차례에 0칸 이동했다면 “{MOVE} 1” 수행."
     },
     "cs-20": {
-        "name": "호기심을 끄는 목걸이",
+        "name": "Curious Pendant",
         "desc": "차례 중, 이번 라운드에 플레이한 소실 카드 1장을 {RECOVER}."
     },
     "cs-21": {
-        "name": "적외선 고글",
+        "name": "Infrared Goggles",
         "desc": "{INVISIBLE} 상태에서 수행하는 모든 공격에 이익을 받음."
     },
     "cs-22": {
-        "name": "강철 헬멧",
+        "name": "Steel Helmet",
         "desc": "공격을 받을 때, 적이 뽑은 {+1_WHITE} 보정 카드를 대신 {+0_WHITE}로 간주."
     },
     "cs-23": {
-        "name": "누빔 판금 갑옷",
+        "name": "Woven Plate Armor",
         "desc": "공격을 받을 때, 공격자가 해당 공격에 불이익을 받고 장착자는 해당 공격에 대해 {SHIELD} 2 획득."
     },
     "cs-24": {
-        "name": "순수의 망토",
+        "name": "Mantle of Purity",
         "desc": "장착자가 하나 이상의 부정적 상태를 얻으려할 때, 그 상태를 방지한다."
     },
     "cs-25": {
-        "name": "뼈를 덮은 어깨걸이",
+        "name": "Boneclad Shawl",
         "desc": "인접한 적이 수행하는 장착자를 대상으로 하는 다음 공격 2회에 대해, 각각 {RETALIATE} 2 획득."
     },
     "cs-26": {
-        "name": "실루엣 흉갑",
+        "name": "Silhouette Cuirass",
         "desc": "장착자를 대상으로 하는 공격으로 체력이 0이 되게 될 때, 대신 피해를 입지 않고 {INVISIBLE} 획득."
     },
     "cs-27": {
-        "name": "전위 장치",
+        "name": "Translocation Device",
         "desc": "차례 중, {RANGE} 5 이내의 적 하나와 위치를 맞바꿈."
     },
     "cs-28": {
-        "name": "연금술 물약",
+        "name": "Alchemy Potion",
         "desc": "장착자의 차례 중, 인접한 장애물을 돈 토큰 하나로 교체한다."
     },
     "cs-29": {
-        "name": "취하게 하는 물약",
+        "name": "Intoxicating Potion",
         "desc": "차례 중, “{HEAL} 5, {POISON}, 자신” 수행."
     },
     "cs-30": {
-        "name": "철제 올가미",
+        "name": "Iron Snare",
         "desc": "차례 중, {RANGE} 3 이내의 빈 칸에 {IMMOBILIZE} 함정 1개 생성."
     },
     "cs-31": {
-        "name": "진동 지뢰",
+        "name": "Concussion Mine",
         "desc": "차례 중, {RANGE} 3 이내의 빈 칸에 {STUN} 함정 1개 생성."
     },
     "cs-32": {
-        "name": "이동 나침반",
+        "name": "Shifting Compass",
         "desc": "차례 중, 사정거리 5 이내의 적 하나가 장착자의 조종으로 “{MOVE} 2, {JUMP}” 능력을 수행하도록 강제."
     },
     "cs-33": {
-        "name": "공성추",
+        "name": "Battering Ram",
         "desc": "근접 공격 능력 중, 모든 공격에 {MUDDLE} 및 {PUSH} 2 추가."
     },
     "cs-34": {
-        "name": "집게발 함정",
+        "name": "Claw Trap",
         "desc": "차례 종료 시, 인접한 빈 칸에 피해 4점의 {POISON} 함정 1개 생성."
     },
     "cs-35": {
-        "name": "보복의 지팡이",
+        "name": "Staff of Retribution",
         "desc": "공격을 받을 때, 해당 공격에 대해 {RETALIATE} 1, {RANGE} 3 획득."
     },
     "cs-36": {
-        "name": "저주받은 피의 칼",
+        "name": "Curseblood Blade",
         "desc": "근접 공격 능력 중, 피해 1점을 입어 모든 공격에 {CURSE} 추가."
     },
     "cs-37": {
-        "name": "드레이크 비늘 방패",
+        "name": "Drakescale Shield",
         "desc": "인접한 적에게 공격을 받을 때, 해당 공격에 대해 {RETALIATE} 3 획득."
     },
     "cs-38": {
-        "name": "드레이크 비늘 단검",
+        "name": "Drakescale Dagger",
         "desc": "근접 공격 능력 중, 한 번의 공격에 공격 보정 카드를 뽑지 않음."
     },
     "cs-39": {
-        "name": "갈고리 사격",
+        "name": "Hook Shot",
         "desc": "차례 중, “{ATTACK} 2, {RANGE} 3, {PIERCE} 2” 수행."
     },
     "cs-40": {
-        "name": "달가죽 장화",
+        "name": "Moonleather Boots",
         "desc": "체력이 가득 찬 동안 모든 이동에 이동 +1 추가."
     },
     "cs-41": {
-        "name": "영혼의 술",
+        "name": "Spirit Libation",
         "desc": "차례 중, {SPIRIT} 1개에서 피해 토큰 1개 제거. 이 {SPIRIT}은 피해 토큰을 받지 않고 즉시 차례를 진행할 수 있음."
     },
     "cs-42": {
-        "name": "진정의 로브",
+        "name": "Robe of Soothing",
         "desc": "아군에게 {PRAYER} 능력 카드를 줄 때마다, 해당 아군이 “{HEAL} 2, 자신”을 수행할 수 있음."
     },
     "cs-43": {
-        "name": "눈부신 주교관",
+        "name": "Resplendent Mitre",
         "desc": "치료 행동 중, 각 치료에 +2 {HEAL} 추가."
     },
     "cs-44": {
-        "name": "통형 투사체",
+        "name": "Canister Projectile",
         "desc": "원거리 공격 능력 중, 한 번의 공격에 {PIERCE} 2 추가."
     },
     "cs-45": {
-        "name": "사슬 대포",
+        "name": "Chain Cannon",
         "desc": "차례 중, “{PULL} 2, {RANGE} 3 이내의 적 하나를 향해 자신” 수행."
     },
     "cs-46": {
-        "name": "소환사의 호루라기",
+        "name": "Summoner's Whistle",
         "desc": "차례 중, 장착자 소유의 소환된 아군 1명이\n{MOVE} +0\n{ATTACK} +0\n을 장착자의 조종으로 수행."
     },
     "cs-47": {
-        "name": "자연의 팔찌",
+        "name": "Nature Armlets",
         "desc": "소환물에 {MOUNTED}한 동안, 소형 {ITEM} 효과를 대신 소환물에게 적용할 수 있음."
     },
     "cs-48": {
-        "name": "시험관",
+        "name": "Test Tube",
         "desc": "차례 중, {ANY_X}하여 다음 중 하나 수행: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, 자신, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     "cs-49": {
-        "name": "추가 접종",
+        "name": "Booster Shot",
         "desc": "차례 중, 다음 중 하나 수행: 버린 카드 1장 {RECOVER} | {HEAL} 3, 자신 | 이번 차례의 다음 공격에 +2 {ATTACK} 추가."
     },
     "cs-50": {
-        "name": "빛나는 갑각",
+        "name": "Luminous Carapace",
         "desc": "차례 중, 원소를 {ANY_X}할 때 소비한 원소를 비활성 열로 옮기지 않음."
     },
     "cs-51": {
-        "name": "화염 갑옷",
+        "name": "Flaming Armor",
         "desc": "공격을 받을 때, {FIRE_X}하여 해당 공격에 대해 {RETALIATE} 3을 얻을 수 있음."
     },
     "cs-52": {
-        "name": "타오르는 도끼",
+        "name": "Flaming Axe",
         "desc": "근접 공격 능력 중, 모든 공격에 +1 {ATTACK} 및 {WOUND} 추가. {FIRE}"
     },
     "cs-53": {
-        "name": "야전 박격포",
+        "name": "Field Mortar",
         "desc": "차례마다 한 번, 차례 중 인접한 인물 1명의 상태 이상 1개를 제거하여, 이 카드에 아직 없다면 그 상태 이상을 이 카드에 놓을 수 있음. 차례 중, 인접한 인물 1명이 이 카드에 놓인 모든 상태 이상을 얻으며, 그 후 이 아이템을 소비 {CONSUMED}."
     },
     "cs-54": {
-        "name": "독사 이빨 단검",
+        "name": "Vipertooth Dagger",
         "desc": "험난지형에 있는 동안 모든 근접 공격에 이익을 받음."
     },
     "cs-55": {
-        "name": "유령 독사의 독",
+        "name": "Ghost Viper Venom",
         "desc": "공격 능력 중, 한 번의 공격에 {POISON} 2 추가."
     },
     "cs-56": {
-        "name": "집게 함정",
+        "name": "Clamp Trap",
         "desc": "차례 종료 시, 인접한 빈 칸에 피해 3점의 {IMMOBILIZE} 함정 1개 생성."
     },
     "cs-57": {
-        "name": "정화된 공허심장",
+        "name": "Cleansed Voidheart",
         "desc": "{MUDDLE}에 면역. 매 라운드 종료 시, {WOUND} 상태라면 {REGENERATE} 획득."
     },
     "cs-58": {
-        "name": "어지러운 팅크제",
+        "name": "Dizzying Tincture",
         "desc": "공격 능력 중, 한 번의 공격에 {DISARM} 추가."
     },
     "cs-59": {
-        "name": "드레이크의 피",
+        "name": "Drakes Blood",
         "desc": "차례 중, {RANGE} 2 이내의 모든 적에게서 긍정적 상태 이상을 모두 제거. {INVISIBLE} 상태의 적에게도 사용할 수 있음."
     },
     "cs-60": {
-        "name": "마나 약",
+        "name": "Mana Medicine",
         "desc": "차례 중, “{HEAL} 5, 자신” 수행. {ANY}"
     },
     "cs-61": {
-        "name": "잿강철 건틀릿",
+        "name": "Ashsteel Gauntlets",
         "desc": "아이템이 사용된 상태여도 {DISARM}에 면역. 차례 중, 라운드 종료 시까지 {SHIELD} 1 획득. {eot}"
     },
     "cs-62": {
-        "name": "스모그 방출기",
+        "name": "Smog Emitter",
         "desc": "차례 종료 시, 모든 적은 장착자로부터 {RANGE} 2 이내의 모든 빈 칸을 이번 라운드 동안 험난지형으로 간주. {eot}"
     },
     "cs-63": {
-        "name": "행운의 말발굽",
+        "name": "Lucky Horseshoe",
         "desc": "장착자를 대상으로 하는 공격에 의해 피해를 입게 될 때, 대신 피해를 절반(내림)만 입음."
     },
     "cs-64": {
-        "name": "순한 점화 강장제",
+        "name": "Mild Kindled Tonic",
         "desc": "아군이 장착자를 치료 능력의 대상으로 삼을 때, 치료 전에 자신의 부정적 상태 이상 1개를 제거하고 {STRENGTHEN} 획득."
     },
     "cs-65": {
-        "name": "구조용 도끼",
+        "name": "Rescue Axe",
         "desc": "근접 공격 능력 중, 아군과 인접한 적을 대상으로 하는 한 번의 공격에 +1 {ATTACK} 및 {MUDDLE} 추가."
     },
     "cs-66": {
-        "name": "강철 대망치",
+        "name": "Iron Malleus",
         "desc": "근접 공격 능력 중, 모든 공격에 +1 {ATTACK} 및 {IMMOBILIZE} 추가."
     },
     "cs-67": {
-        "name": "창 갈고리",
+        "name": "Pike Hook",
         "desc": "단일 대상 근접 공격 능력 중, 해당 공격에 {PIERCE} 2 및 {PULL} 1을 추가하며 2칸 이내의 적 1명을 대상으로 삼을 수 있음."
     },
     "cs-68": {
-        "name": "폭발성 강장제",
+        "name": "Explosive Tonic",
         "desc": "차례 중, 다음을 수행: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
     },
     "cs-69": {
-        "name": "매운 점화 강장제",
+        "name": "Spicy Kindled Tonic",
         "desc": "장착자를 대상으로 하는 다음 치료 능력 3회에 대해, 각각 먼저 자신의 모든 부정적 상태 이상을 제거하거나 {STRENGTHEN}을 얻을 수 있음."
     },
     "cs-70": {
-        "name": "다용도 밧줄",
+        "name": "Utility Rope",
         "desc": "차례 중, “{PULL} 2, {RANGE} 3 이내의 아군 또는 적 1명을 대상으로” 수행."
     },
     "cs-71": {
-        "name": "내화 투구",
+        "name": "Fireproof Helm",
         "desc": "{WOUND}로 피해를 입게 될 때마다, 대신 “{HEAL} 1, 자신” 수행"
     },
     "cs-72": {
-        "name": "나무 사다리",
+        "name": "Wooden Ladder",
         "desc": "장애물에 인접한 동안 수행하는 모든 원거리 능력에 사정거리 +1 추가. 함정이 있는 칸에 들어갈 때마다, 함정을 작동시키지 않기로 선택할 수 있음."
     },
     "cs-73": {
-        "name": "의료 키트",
+        "name": "Medical Kit",
         "desc": "능력 카드의 기본 상단 행동을 사용할 때마다, “{ATTACK} 2” 능력 대신 “{HEAL} 2, {RANGE} 1” 능력을 수행할 수 있음."
     },
     "cs-74": {
-        "name": "순한 강화 강장제",
+        "name": "Mild Bolstering Tonic",
         "desc": "아군을 1명 이상 대상으로 하는 치료 능력 중, 각 치료에 +1 치료 및 {STRENGTHEN} 추가."
     },
     "cs-75": {
-        "name": "참나무 메달",
+        "name": "Medallion of the Oak",
         "desc": "이번 라운드에 공격을 받을 때, 장착자와 인접한 모든 아군은 뽑은 부정적 및 {modifier_no_damage} 공격 보정 카드를 대신 {+0_WHITE}로 간주."
     },
     "cs-76": {
-        "name": "소작용 칼",
+        "name": "Cauterizing Knife",
         "desc": "치료 능력 중, 각 치료에 +3 {HEAL} 및 {WOUND} 추가."
     },
     "cs-77": {
-        "name": "외상 키트",
+        "name": "Trauma Kit",
         "desc": "치료 능력 중, 각 치료 수치를 2배로 증가. 이 치료 능력으로 {WOUND}를 제거하면, 이 아이템은 소비되지 않고 사용 처리됨."
     },
     "cs-78": {
-        "name": "카리스마의 두루마리",
+        "name": "Scroll of Charisma",
         "desc": "차례 중, {RANGE} 2 이내의 아군 1명이 다음 중 하나를 수행할 수 있음: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, 자신."
     },
     "cs-79": {
-        "name": "구조용 방패",
+        "name": "Rescue Shield",
         "desc": "인접한 아군이 자신을 대상으로 하는 공격에 의해 피해를 입게 될 때, 해당 아군은 그 공격에 대해 {SHIELD} 2를 얻고 그 공격이 부여한 모든 부정적 상태 이상을 제거."
     },
     "cs-80": {
-        "name": "보호의 두루마리",
+        "name": "Scroll of Protection",
         "desc": "{RANGE} 5 이내의 아군이 자신을 대상으로 하는 공격에 의해 피해를 입게 될 때, 대신 피해를 입지 않음."
     },
     "cs-81": {
-        "name": "매운 강화 강장제",
+        "name": "Spicy Bolstering Tonic",
         "desc": "아군을 1명 이상 대상으로 하는 치료 능력 중, 각 치료에 +2 {HEAL}, {STRENGTHEN}, {BLESS} 추가."
     },
     "cs-82": {
-        "name": "명령의 두루마리",
+        "name": "Scroll of Command",
         "desc": "차례 중, {RANGE} 3 이내의 아군 1명이 다음 중 하나를 수행할 수 있음: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, 자신."
     },
     "cs-83": {
-        "name": "해류의 구",
+        "name": "Sphere of Currents",
         "desc": "차례 중, 오버레이 타일이 없는 {RANGE} 3 이내의 칸 2곳에 물 험난지형 타일 2개 생성. 물 타일에 있는 {RANGE} 3 이내의 모든 인물에게 {MUDDLE}."
     },
     "cs-84": {
-        "name": "슬러그 쇠뇌",
+        "name": "Slug Crossbow",
         "desc": "단일 대상 원거리 공격 능력 중, 해당 공격을 다음으로 변경: {AOE.line_1_1}."
     },
     "cs-85": {
-        "name": "개량형 슬러그 쇠뇌",
+        "name": "Refined Slug Crossbow",
         "desc": "단일 대상 원거리 공격 능력 중, +1 {ATTACK}을 추가하고 해당 공격을 다음으로 변경: {AOE.line_1_1}."
     },
     "cs-86": {
-        "name": "보루의 깃발",
+        "name": "Bulwark Banner",
         "desc": "차례 중, 장착자와 모든 아군이 라운드 종료 시까지 {SHIELD} 1 획득. {eot}"
     },
     "cs-87": {
-        "name": "개량형 보루의 깃발",
+        "name": "Refined Bulwark Banner",
         "desc": "차례 중, 인접한 모든 아군이 라운드 종료 시까지 장착자의 현재 능력 방어 수치와 같은 {SHIELD} 획득. {eot}"
     },
     "cs-88": {
-        "name": "원격 딱정벌레",
+        "name": "Remote Beetle",
         "desc": "차례 중, {RANGE} 2 이내의 잠기지 않은 닫힌 문 1개를 열음."
     },
     "cs-89": {
-        "name": "개량형 원격 딱정벌레",
+        "name": "Refined Remote Beetle",
         "desc": "차례 중, {RANGE} 2 이내의 잠기지 않은 닫힌 문 1개를 열음."
     },
     "cs-90": {
-        "name": "타오르는 장화",
+        "name": "Blazing Boots",
         "desc": "이동 능력 중, 이동 수치를 2배로 증가."
     },
     "cs-91": {
-        "name": "개량형 타오르는 장화",
+        "name": "Refined Blazing Boots",
         "desc": "이동 능력 중, {JUMP}를 추가하고 이동 수치를 2배로 증가."
     },
     "cs-92": {
-        "name": "독사 취관",
+        "name": "Viper Blowgun",
         "desc": "차례 중, {EARTH_X}하여 “{ATTACK} 1, {RANGE} 3, {POISON}”을 수행할 수 있음."
     },
     "cs-93": {
-        "name": "개량형 독사 취관",
+        "name": "Refined Viper Blowgun",
         "desc": "차례 중, “{ATTACK} 1, {RANGE} 4, {POISON}” 수행. {EARTH_X}하여 {TARGET}을 추가할 수 있음."
     },
     "cs-94": {
-        "name": "서리의 돌",
+        "name": "Frost Stone",
         "desc": "차례 중, 이 카드에 캐릭터 토큰을 1개 올려 {ICE}을 생성할 수 있음.\n이 카드에 토큰이 2개 놓이면 {CONSUMED}."
     },
     "cs-95": {
-        "name": "폭풍의 돌",
+        "name": "Storm Stone",
         "desc": "차례 중, 이 카드에 캐릭터 토큰을 1개 올려 {WIND}을 생성할 수 있음.\n이 카드에 토큰이 2개 놓이면 {CONSUMED}."
     },
     "cs-96": {
-        "name": "지옥불의 돌",
+        "name": "Inferno Stone",
         "desc": "차례 중, 이 카드에 캐릭터 토큰을 1개 올려 {FIRE}을 생성할 수 있음.\n이 카드에 토큰이 2개 놓이면 {CONSUMED}."
     },
     "cs-97": {
-        "name": "진동의 돌",
+        "name": "Tremor Stone",
         "desc": "차례 중, 이 카드에 캐릭터 토큰을 1개 올려 {EARTH}을 생성할 수 있음.\n이 카드에 토큰이 2개 놓이면 {CONSUMED}."
     },
     "cs-98": {
-        "name": "찬란한 돌",
+        "name": "Brilliant Stone",
         "desc": "차례 중, 이 카드에 캐릭터 토큰을 1개 올려 {LIGHT}을 생성할 수 있음.\n이 카드에 토큰이 2개 놓이면 {CONSUMED}."
     },
     "cs-99": {
-        "name": "어둠의 돌",
+        "name": "Dark Stone",
         "desc": "차례 중, 이 카드에 캐릭터 토큰을 1개 올려 {DARK}을 생성할 수 있음.\n이 카드에 토큰이 2개 놓이면 {CONSUMED}."
     },
     "cs-100": {
-        "name": "신비한 돌",
+        "name": "Wonder Stone",
         "desc": "차례 중, 이 카드에 캐릭터 토큰을 1개 올려 {ANY}을 생성할 수 있음.\n이 카드에 토큰이 2개 놓이면 {CONSUMED}."
     },
     "cs-aa01": {
-        "name": "바위등뼈 방벽",
+        "name": "Rockspine Bulwark",
         "desc": "장착자 또는 인접한 아군을 대상으로 하는 공격에 의한 다음 피해 3회에 대해, 공격받은 인물이 해당 공격에 대해 {SHIELD} 1 획득."
     },
     "cs-aa02": {
-        "name": "유령잔상 꿀",
+        "name": "Ghostshimmer Honey",
         "desc": "차례 중, {HEAL} 3\n{REGENERATE}\n자신과 인접한 아군 1명에게 적용."
     },
     "cs-aa03": {
-        "name": "강철비단 방적돌기",
+        "name": "Steelsilk Spinneret",
         "desc": "적이 장착자를 공격하다 피해를 입는 다음 2회에 대해, 해당 적이 {IMMOBILIZE} 획득."
     },
     "cs-qa01": {
-        "name": "전력 변조기",
+        "name": "Power Modulator",
         "desc": "(X는 1, 2, 3)\n차례 중, 상단 행동을 포기하고 수행: {ATTACK} X+1\n{RANGE} 2\n{TARGET} 4-X"
     },
     "cs-qa02": {
-        "name": "증기 피스톤 망치",
+        "name": "Steam Piston Hammer",
         "desc": "근접 공격 능력 중, 한 번의 공격에 {MUDDLE} 및 {PUSH} 1 추가."
     },
     "cs-qa03": {
-        "name": "거미 등반 장갑",
+        "name": "Spider Climb Gloves",
         "desc": "{FLYING}이 있는 것처럼 장애물이 있는 칸에 들어가고 이동을 끝낼 수 있음."
     },
     "cs-qa04": {
-        "name": "중력 반전 패드",
+        "name": "Gravity Inversion Pads",
         "desc": "{RANGE} 3 이내의 빈 칸에 함정 1개 생성.\n장착자 또는 아군이 이 함정을 작동시키면, 해당 인물은 라운드 동안 {FLYING} 획득. | 이 함정이 있는 칸에 들어오는 모든 적은 함정을 작동시키며 라운드 동안 {FLYING}을 잃음."
     },
     "cs-qa05": {
-        "name": "섬세한 모델",
+        "name": "Delicate Model",
         "desc": "고철 수집가 소환\n이 소환물이 들어가는 각 칸에서 장착자가 {LOOT} 획득.\n장착자가 이 소환물의 행동을 조종."
     },
     "cs-qa06": {
-        "name": "제작자들의 아우스쿠덱",
+        "name": "Auscudec of the Makers",
         "desc": "차례 중, 상단 행동을 포기하고 소실 더미에 있는 카드의 소환 행동 1개를 플레이. {SCRAP_X} 2개를 무시."
     },
     "cs-rm01": {
-        "name": "톱니 칼날",
+        "name": "Serrated Edge",
         "desc": "근접 공격 능력 중, 한 번의 공격에 {RUPTURE} 추가."
     },
     "cs-rm02": {
-        "name": "불쾌한 부츠",
+        "name": "Grisly Boots",
         "desc": "이동 능력 후, {PUSH} 1 수행\n인접한 적 1명을 대상으로\n이번 라운드에 4칸 이상 이동했다면 {PUSH} +1 추가."
     },
     "cs-rm03": {
-        "name": "공포비늘 세이버",
+        "name": "Terrorscale Saber",
         "desc": "근접 공격 능력 중, {WOUND} 또는 {RUPTURE} 상태의 적을 대상으로 하는 한 번의 공격에 +1 {ATTACK} 및 {PIERCE} 2 추가."
     },
     "cs-rm04": {
-        "name": "공포비늘 크로스블레이드",
+        "name": "Terrorscale Crossblades",
         "desc": "앞으로 3회동안, 하나 이상의 부정적 상태 이상을 가진 적 대상으로 장착자의 근접 공격이 이익을 받는다."
     },
     "cs-rm05": {
-        "name": "파멸의 의식",
+        "name": "Rite of Ruin",
         "desc": "공격 능력 중, {WOUND}를 얻어 한 번의 공격에 +3 {ATTACK} 추가. 대상을 죽이면 “{HEAL} 3, 자신” 수행."
     },
     "cs-rm06": {
-        "name": "야만적인 흉갑",
+        "name": "Savage Cuirass",
         "desc": "피해를 입지 않기 위해 손에서 카드를 소실하게 되는 다음 2회에 대해, 대신 그 카드를 버리고 {WOUND} 획득."
     },
     "fh-1": {
@@ -2810,28 +2810,28 @@ export default {
         "desc": "휴식을 취할 때, {TIDE_ICON} 카드를 최대 3장까지 활성 구역에 유지할 수 있음. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
-        "name": "우정의 리본",
+        "name": "Ribbon of Friendship",
         "source": "개인 시나리오 보상 - {AN}",
         "desc": "증강 능력을 수행한 직후, 수행: {POISON.fh} {RANGE.fh} 2. 이 능력은 장착자의 소환물 하나가 있는 칸에 있는 것처럼 수행할 수 있음."
     },
     "mp-SA": {
-        "name": "프로스트헤이븐의 문장",
+        "name": "Crest of Frosthaven",
         "source": "개인 시나리오 보상 - {SA}",
         "desc": "긴 휴식을 취할 때마다, 얼음 원소를 생성하고 이 카드를 뒤집음.",
         "backDesc": "아군이 휴식을 취할 때마다, 이 카드를 뒤집어 그 아군에게 부여할 수 있음: {HEAL.fh} 2, 자신"
     },
     "mp-CA A": {
-        "name": "예언의 대야 A",
+        "name": "Basin of Prophecy A",
         "source": "개인 시나리오 보상 - {CA}",
         "desc": "모든 점술에 점술 +1 추가."
     },
     "mp-CA B": {
-        "name": "예언의 대야 B",
+        "name": "Basin of Prophecy B",
         "source": "개인 시나리오 보상 - {CA}",
         "desc": "차례 중, 수행: {ATTACK.fh} 1, {TARGET.fh} {RIFT}가 있는 칸에 있는 적 1명, {PIERCE.fh} 2, {DIVINATION} 3"
     },
     "mp-HA": {
-        "name": "군말 없는 장화",
+        "name": "No Nonsense Boots",
         "source": "개인 시나리오 보상 - {HA}",
         "desc": "차례 종료 시, 이번 차례에 결의를 3 이상 사용했다면 이 카드를 뒤집음.",
         "backDesc": "차례 중, 활성 상태의 짜증이 있다면 그 카드를 풀로 옮겨 풀에 있는 다른 카드를 플레이하고 그 카드의 짜증 행동을 수행할 수 있으며, 그 후 이 카드를 뒤집음."
@@ -2857,7 +2857,7 @@ export default {
         "desc": "장착자가 공격을 받을 때, 공격 보정 카드를 뽑기 전에 공격자가 해당 공격에 대해 불이익을 받음."
     },
     "gh2-5": {
-        "name": "정찰용 렌즈",
+        "name": "Scouting Lens",
         "source": "번영도 1",
         "desc": "공격 능력 중, 한 번의 공격에 {PIERCE.fh} 1 추가."
     },
@@ -2877,12 +2877,12 @@ export default {
         "desc": "공격으로 {DAMAGE.fh}를 입게 될 때, 해당 공격에 대해 {SHIELD.fh} 1 획득."
     },
     "gh2-9": {
-        "name": "집중의 막대",
+        "name": "Focusing Rod",
         "source": "번영도 1",
         "desc": "차례 중, {LOST.fh} 행동을 수행했다면, 수행: {HEAL.fh} 1, {RANGE.fh} 3"
     },
     "gh2-10": {
-        "name": "단순한 활",
+        "name": "Simple Bow",
         "source": "번영도 1",
         "desc": "원거리 공격 능력 중, 한 번의 공격에 이익을 받음."
     },
@@ -3015,7 +3015,7 @@ export default {
         "desc": "공격으로 {DAMAGE.fh}를 입게 될 때, 해당 공격에 대해 {SHIELD.fh} 2 획득."
     },
     "gh2-36": {
-        "name": "달 귀걸이",
+        "name": "Moon Earing",
         "source": "번영도 4\n도시 이벤트 6",
         "desc": "짧은 휴식을 취할 때, 사용한 아이템을 최대 3개까지 {RECOVER.fh}."
     },
@@ -3035,12 +3035,12 @@ export default {
         "desc": "해골 소환"
     },
     "gh2-40": {
-        "name": "그림자 갑옷",
+        "name": "Shadow Amor",
         "source": "번영도 4",
         "desc": "공격으로 {DAMAGE.fh}를 입게 될 때, 그 {DAMAGE.fh}를 무효화하고 {DARK} 생성."
     },
     "gh2-41": {
-        "name": "운동 에너지 보행기",
+        "name": "Kinetic Treads",
         "source": "번영도 5",
         "desc": "이동 능력 종료 시, 인접한 아군 1명에게 부여: {MOVE.fh} 2"
     },
@@ -3055,7 +3055,7 @@ export default {
         "desc": "차례 중, 모든 원거리 공격에 +1 {RANGE.fh} 추가."
     },
     "gh2-44": {
-        "name": "정밀 활",
+        "name": "Precision Bow",
         "source": "번영도 5",
         "desc": "원거리 공격 능력 후, 수행: {ATTACK.fh} 1, {TARGET.fh} 해당 공격 능력의 대상 1명({RANGE.fh} 무관), {PIERCE.fh} 1"
     },
@@ -3065,7 +3065,7 @@ export default {
         "desc": "차례 중, {ANY} {ANY}."
     },
     "gh2-46": {
-        "name": "경량 타지",
+        "name": "Light Targe",
         "source": "번영도 5",
         "desc": "공격으로 {DAMAGE.fh}를 입게 될 때, 해당 공격에 대해 {SHIELD.fh} 1 획득. 공격 후 {RETALIATE.fh} 전에, 수행: {MOVE.fh} 1"
     },
@@ -3090,7 +3090,7 @@ export default {
         "desc": "차례 중, 수행: {HEAL.fh} 3, 아군 1명, {RANGE.fh} 1"
     },
     "gh2-51": {
-        "name": "중량 철퇴",
+        "name": "Heavy Mace",
         "source": "번영도 6\n여로 이벤트 8",
         "desc": "인접한 적에게 공격을 받은 후, 수행: {ATTACK.fh} 1, 공격한 적 이 공격은 {RETALIATE.fh}의 영향을 받지 않음."
     },
@@ -3171,7 +3171,7 @@ export default {
         "desc": "차례 중, 수행: {INVISIBLE.fh}, 자신"
     },
     "gh2-67": {
-        "name": "가시 신발",
+        "name": "Spiked Shoes",
         "source": "번영도 9",
         "desc": "능력 카드의 기본 하단 행동을 사용할 때, {MOVE.fh} 2 대신 {ATTACK.fh} 3을 수행할 수 있음."
     },
@@ -3186,17 +3186,17 @@ export default {
         "desc": "장착자를 대상으로 하는 공격에 의한 다음 {DAMAGE.fh} 5회에 대해, 각각 {SHIELD.fh} 1 획득."
     },
     "gh2-70": {
-        "name": "표준 식량",
+        "name": "Standard Rations",
         "source": "군부 명성 15",
         "desc": "긴 휴식으로 치료할 때마다, +2 {HEAL.fh} 추가."
     },
     "gh2-71": {
-        "name": "명장의 쇠뇌",
+        "name": "Mastercraft Crossbow",
         "source": "군부 명성 17",
         "desc": "원거리 공격 능력 중, 한 번의 공격에 {WOUND.fh} 추가. 그 대상과 인접하고 대상보다 장착자로부터 먼 적 1명이 {DAMAGE.fh} 2를 입음."
     },
     "gh2-72": {
-        "name": "지휘관의 모자",
+        "name": "Commander's Cap",
         "source": "군부 명성 19",
         "desc": "아군은 장착자와 인접한 상태에서 수행하는 다음 공격 3회에 이익을 받음. 그 후 이 카드를 뒤집음.",
         "backDesc": "아군 1명 이상으로부터 {RANGE.fh} 2 이내에 있는 동안 수행하는 다음 공격 능력 3회 후, 이 카드를 뒤집음."
@@ -3207,18 +3207,18 @@ export default {
         "desc": "차례 중, 소환물 하나에게 부여: {SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
-        "name": "숨긴 단검",
+        "name": "Concealed Dagger",
         "source": "상인 길드 명성 15",
         "desc": "차례 중, 인접한 적 1명에게 캐릭터 토큰을 놓음. 해당 적의 매 차례 시작 시, 그 적은 {DAMAGE.fh} 1을 입음. 해당 적이 죽으면 이 카드를 뒤집음. {PERSISTENT}",
         "backDesc": "적이 죽은 칸에 캐릭터 토큰을 놓음. 그 토큰을 노획하여 이 카드를 뒤집을 수 있음."
     },
     "gh2-75": {
-        "name": "화려한 두건",
+        "name": "Opulent Hood",
         "source": "상인 길드 명성 17",
         "desc": "차례 중, 인접한 아군 1명에게 부여: {ATTACK.fh} 1, {PUSH.fh} 1"
     },
     "gh2-76": {
-        "name": "상인의 휘장",
+        "name": "Merchant's Insignia",
         "source": "상인 길드 명성 19",
         "desc": "시나리오를 완료할 때마다, 금화 10개 획득."
     },
@@ -3238,7 +3238,7 @@ export default {
         "desc": "공격 능력 중, 한 번의 공격에 {POISON.fh}, {STUN.fh}, {CURSE.fh} 추가."
     },
     "gh2-80": {
-        "name": "악마의 해골",
+        "name": "Demonic Skull",
         "source": "악마 명성 19",
         "desc": "차례 중, {ANY} 그리고 차례 종료 시 이 카드를 뒤집음.",
         "backDesc": "몬스터를 죽일 때, 차례 종료 시 이 카드를 뒤집음."
@@ -3304,7 +3304,7 @@ export default {
         "desc": "공격 능력 중, 한 번의 공격에 {STUN.fh} 추가."
     },
     "gh2-93": {
-        "name": "맹렬함의 두루마리",
+        "name": "Scroll of Ferocity",
         "source": "무작위 아이템",
         "desc": "차례 중, {RANGE.fh} 5 이내의 아군 1명에게 부여: {ATTACK.fh} 2"
     },
@@ -3314,12 +3314,12 @@ export default {
         "desc": "차례 중, 수행: {HEAL.fh} 3, {RANGE.fh} 5"
     },
     "gh2-95": {
-        "name": "방호의 두루마리",
+        "name": "Scroll of Shielding",
         "source": "무작위 아이템",
         "desc": "{RANGE.fh} 5 이내의 아군 1명이 공격으로 {DAMAGE.fh}를 입을 때, 해당 공격에 대해 그 아군에게 {SHIELD.fh} 3 부여."
     },
     "gh2-96": {
-        "name": "신속의 두루마리",
+        "name": "Scroll of Swiftness",
         "source": "무작위 아이템",
         "desc": "{RANGE.fh} 5 이내의 아군 1명의 이동 능력 중, +1 {MOVE.fh} 및 {JUMP.fh} 추가."
     },
@@ -3340,7 +3340,7 @@ export default {
         "desc": "차례 중, 수행: {ATTACK.fh} 2, {RANGE.fh} 3"
     },
     "gh2-100": {
-        "name": "충전된 장화",
+        "name": "Charged Boots",
         "source": "{SCENARIO 71} (보물 #29)",
         "desc": "이동 능력을 수행하지 않은 다음 3번의 차례 후, 이 카드를 뒤집음.",
         "backDesc": "이동 능력 중, +2 {MOVE.fh}를 추가하고 이 카드를 뒤집음."
@@ -3356,12 +3356,12 @@ export default {
         "desc": "공격으로 {DAMAGE.fh}를 입게 될 때, 해당 공격에 대해 {SHIELD.fh} 4 획득."
     },
     "gh2-103": {
-        "name": "레인저의 두건",
+        "name": "Ranger's Hood",
         "source": "{SCENARIO 28} (보물 #65)",
         "desc": "소환물 하나의 공격 능력 중, 공격 보정 카드를 뽑기 전에 공격 보정 덱 맨 위 카드 2장을 공개. 그중 원하는 카드를 덱 맨 밑에 놓을 수 있음."
     },
     "gh2-104": {
-        "name": "수호의 막대",
+        "name": "Warding Rod",
         "source": "{SCENARIO 4} (보물 #24)",
         "desc": "차례 중, 수행: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
     },
@@ -3409,29 +3409,29 @@ export default {
         "desc": "차례 중, {RANGE.fh} 3 이내의 일반 또는 정예 적 1명에게 캐릭터 토큰을 놓음. 장착자와 모든 아군은 이 적을 대상으로 하는 모든 공격에 +1 {ATTACK.fh}를 추가함. {PERSISTENT}"
     },
     "gh2-114": {
-        "name": "돌풍 질주자",
+        "name": "Gust Striders",
         "source": "도시 이벤트 17\n도시 이벤트 81",
         "desc": "차례 중, 다음 이동 능력에 {JUMP.fh} 추가. {WIND}가 강하거나 약해지는 상태라면 +2 {MOVE.fh}도 추가."
     },
     "gh2-115": {
-        "name": "이송의 막대",
+        "name": "Rod of Transference",
         "source": "{SCENARIO 11} (보물 #35)",
         "desc": "{RANGE.fh} 3 이내의 아군이 {DAMAGE.fh}를 입게 될 때, 대신 장착자가 그 {DAMAGE.fh}를 입음."
     },
     "gh2-116": {
-        "name": "운명의 시구",
+        "name": "Fated Verses",
         "source": "번영도 1",
         "desc": "공격 능력 중, 한 번의 공격에 불이익을 받아 차례 종료 시 이 카드를 뒤집을 수 있음.",
         "backDesc": "아군의 공격 능력 중, 그 아군이 공격 하나에 이익을 받고 장착자는 이 카드를 뒤집음.",
         "faq": "이미 공격에 불이익을 받고 있다면 앞면을 사용할 수 없습니다. 아군이 부여한 공격에도 앞면을 사용할 수 있지만, 카드는 장착자의 다음 차례 종료 시에야 뒤집힙니다."
     },
     "gh2-117": {
-        "name": "새벽칼날",
+        "name": "Dawnblade",
         "source": "{SCENARIO 99} 보상",
         "desc": "차례 중, {DARK}가 강하거나 약해지는 상태라면, 다음 근접 공격에 +1 {ATTACK.fh} 추가. 황혼낙인을 가져왔다면, {LIGHT}."
     },
     "gh2-118": {
-        "name": "황혼낙인",
+        "name": "Duskbrand",
         "source": "여로 이벤트 33",
         "desc": "차례 중, {LIGHT}가 강하거나 약해지는 상태라면, 다음 근접 공격에 +1 {ATTACK.fh} 추가. 새벽칼날을 가져왔다면, {DARK}."
     },
@@ -3451,31 +3451,31 @@ export default {
         "desc": "차례 중, 수행: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3 드레이크 비늘 장화와 드레이크 비늘 갑옷을 가져왔다면, +1 {TARGET.fh} 추가."
     },
     "gh2-122": {
-        "name": "서리 딱정벌레 랜턴",
+        "name": "Frost Beetle Lantern",
         "desc": "차례 중, 수행: {ANY_X}: {ICE}"
     },
     "gh2-123": {
-        "name": "폭풍 딱정벌레 랜턴",
+        "name": "Storm Beetle Lantern",
         "source": "여로 이벤트 30",
         "desc": "차례 중, 수행: {ANY_X}: {WIND}"
     },
     "gh2-124": {
-        "name": "점화 딱정벌레 랜턴",
+        "name": "Ignition Beetle Lantern",
         "source": "여로 이벤트 30",
         "desc": "차례 중, 수행: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
-        "name": "진동 딱정벌레 랜턴",
+        "name": "Tremor Beetle Lantern",
         "source": "여로 이벤트 30",
         "desc": "차례 중, 수행: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
-        "name": "찬란한 딱정벌레 랜턴",
+        "name": "Brilliant Beetle Lantern",
         "source": "여로 이벤트 30",
         "desc": "차례 중, 수행: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
-        "name": "황혼 딱정벌레 랜턴",
+        "name": "Twilight Beetle Lantern",
         "source": "여로 이벤트 30",
         "desc": "차례 중, 수행: {ANY_X}: {DARK}"
     },
@@ -3536,17 +3536,17 @@ export default {
         "desc": "근접 공격 능력 중, {DAMAGE.fh} 2를 입어 모든 공격에 +1 {ATTACK.fh} 추가."
     },
     "gh2-139": {
-        "name": "이계의 홀",
+        "name": "Otherworldly Scepter",
         "source": "{SCENARIO 94} 보상\n도시 이벤트 85",
         "desc": "소환 행동을 수행할 때, 그 행동으로 소환된 각 소환물이 {WARD.fh}, {INVISIBLE.fh}, {STRENGTHEN.fh} 획득."
     },
     "gh2-140": {
-        "name": "원격 공격 거미",
+        "name": "Remote Attack Spider",
         "source": "도시 이벤트 98",
         "desc": "차례 중, 수행: {POISON.fh}, 모두, {RANGE.fh} 1"
     },
     "gh2-141": {
-        "name": "원격 지원 거미",
+        "name": "Remote Aid Spider",
         "source": "도시 이벤트 98",
         "desc": "차례 중, 수행: {HEAL.fh} 2, 모두, {RANGE.fh} 1"
     },
@@ -3557,41 +3557,41 @@ export default {
         "faq": "직접 생성한 위험지형에서는 피해를 입지 않으며, 그 칸에 들어오는 인물에게만 피해를 줍니다."
     },
     "gh2-143": {
-        "name": "버티기의 장화",
+        "name": "Boots of Bracing",
         "source": "{SCENARIO 81} (보물 #61)",
         "desc": "원거리 공격 능력 중, {IMMOBILIZE.fh}를 얻어 한 번의 공격에 +1 {ATTACK.fh} 추가."
     },
     "gh2-144": {
-        "name": "시간의 행렬",
+        "name": "Temporal Matrix",
         "source": "{SCENARIO 92} 보상",
         "desc": "주도권 결정 중, 모든 능력 카드가 공개된 후, 이번 라운드의 주도권 순서를 낮은 순이 아니라 높은 순에서 낮은 순으로 정함."
     },
     "gh2-145": {
-        "name": "수확 갈고리",
+        "name": "Harrow-Hook",
         "desc": "차례 중, 수행: {MOVE.fh} 2, {JUMP.fh} 이 이동은 장애물 또는 벽과 인접한 칸에서 끝나야 함."
     },
     "gh2-146": {
-        "name": "앰버할로우",
+        "name": "Amberhollow",
         "source": "여로 이벤트 15\n여로 이벤트 25\n여로 이벤트 28\n여로 이벤트 30\n여로 이벤트 31",
         "desc": "이 아이템은 반드시 시나리오에 가져가야 하며, 시나리오 종료 시 이용 불가 아이템 공급처로 되돌아감. 차례 중, 수행: {STRENGTHEN.fh}, {BLESS.fh}, 자신"
     },
     "gh2-147": {
-        "name": "조른의 홀",
+        "name": "Scepter of Xorn",
         "source": "{SCENARIO 57} 보상\n{SCENARIO 58} 보상",
         "desc": "차례 중, {POISON.fh} 상태가 아니라면, {POISON.fh}를 얻어 수행: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
     },
     "gh2-148": {
-        "name": "정의로운 자의 방패",
+        "name": "Shield of the Righteous",
         "source": "{SCENARIO 65} (보물 #59)",
         "desc": "공격으로 {DAMAGE.fh}를 입게 될 때, 그 {DAMAGE.fh}를 무효화하고 {LIGHT} 생성"
     },
     "gh2-149": {
-        "name": "에스더 망원경",
+        "name": "Aesther Spyglass",
         "source": "개인 퀘스트 04",
         "desc": "이 아이템은 장애물 1개 이상과 인접해 있을 때만 사용할 수 있음. 차례 중, 수행: {BLESS.fh}, 자신"
     },
     "gh2-150": {
-        "name": "실험용 갑옷",
+        "name": "Experimental Armor",
         "source": "개인 퀘스트 17",
         "desc": "이 아이템은 판매할 수 없으며 모든 시나리오에 가져가야 함. 공격으로 {DAMAGE.fh}를 입게 될 때, {DAMAGE.fh} 2를 입어 인접한 모든 아군과 적이 {DAMAGE.fh} 2를 입게 할 수 있음."
     },
@@ -3600,12 +3600,12 @@ export default {
         "desc": "근접 공격 능력 중, 모든 공격에 {WOUND.fh}, {POISON.fh} 추가."
     },
     "gh2-152": {
-        "name": "루비 부적",
+        "name": "Ruby Talisman",
         "source": "{SCENARIO 75} 보상",
         "desc": "차례 중, {RANGE.fh} 3 이내의 아군이 부정적 상태 이상을 가지고 있다면, {DISARM.fh}를 얻어 그 아군의 부정적 상태 이상 1개를 제거하고 보호막, {BLESS.fh}를 부여할 수 있음."
     },
     "gh2-153": {
-        "name": "갈고리 방패",
+        "name": "Hooked Shield",
         "source": "개인 시나리오 보상 - {BR2}",
         "desc": "적을 밀어낸 후, 수행: {MOVE.fh} 3, {JUMP.fh} 이 이동은 밀려난 적이 빠져나간 칸에만 들어갈 수 있음."
     },
@@ -3615,7 +3615,7 @@ export default {
         "desc": "치료 능력 중, 아군을 대상으로 하는 치료 하나에 +1 {HEAL.fh} 및 {STRENGTHEN.fh} 추가."
     },
     "gh2-155": {
-        "name": "에테르 영약",
+        "name": "Etheric Elixir",
         "source": "개인 시나리오 보상 - {SW2}",
         "desc": "되살리는 에테르의 상단 {LOST.fh} 행동을 수행할 때, 시나리오가 끝날 때까지 공격 보정 덱에서 {NULL_MODIFIER} 카드를 제거."
     },
@@ -3635,7 +3635,7 @@ export default {
         "desc": "{AUGMENT} 행동으로 수행하는 모든 공격에 +1 {ATTACK.fh} 추가."
     },
     "gh2-159": {
-        "name": "신성의 휘장",
+        "name": "Insignia of the Divine",
         "source": "개인 시나리오 보상 - {SK2}",
         "desc": "차례 중, 자신 또는 인접한 아군 1명에게 부여: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
     },
@@ -3650,7 +3650,7 @@ export default {
         "desc": "장착자의 소환물 하나가 공격으로 {DAMAGE.fh}를 입게 될 때, 그 {DAMAGE.fh}를 무효화하고 해당 소환물이 {INVISIBLE.fh} 획득."
     },
     "gh2-162": {
-        "name": "밤의 애무",
+        "name": "The Night's Caress",
         "source": "개인 시나리오 보상 - {NS2}",
         "desc": "{INVISIBLE.fh}를 잃을 때, 이 카드를 뒤집고 수행: {MUDDLE.fh}, {RANGE.fh} 1",
         "backDesc": "{INVISIBLE.fh}를 얻을 때, 이 카드를 뒤집고 공격 보정 덱 맨 위 카드를 확인. 그 카드를 덱 맨 밑에 놓을 수 있음."
@@ -3681,7 +3681,7 @@ export default {
         "desc": "{RANGE.fh} 3 이내의 아군이 공격으로 {DAMAGE.fh}를 입을 때, 공격 능력 후 수행: {MOVE.fh} 2 이 이동은 공격받은 아군과 인접한 칸에서 끝나야 함."
     },
     "gh2-168": {
-        "name": "원소 조끼",
+        "name": "Elemental Vest",
         "source": "개인 시나리오 보상 - {EL2}",
         "desc": "차례 종료 시, 이번 차례에 소비한 원소 2개마다: {ANY}."
     },
@@ -3691,7 +3691,7 @@ export default {
         "desc": "차례 중, {COMMAND}: {ATTACK.fh} 2"
     },
     "gh2-170": {
-        "name": "기어다니는 갑각",
+        "name": "Crawling Carapace",
         "source": "개인 시나리오 보상 - {BS2}",
         "desc": "매 라운드 장착자 또는 장착자의 소환물이 처음으로 입게 되는 공격으로 인한 {DAMAGE.fh}에 대해, 공격받은 인물이 해당 공격에 대해 {SHIELD.fh} 1 획득."
     }

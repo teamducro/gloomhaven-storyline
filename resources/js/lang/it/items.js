@@ -1018,463 +1018,463 @@ export default {
         "desc": "Durante il tuo movimento, aggiungi “+1 {MOVE} e {JUMP}” a un singolo movimento."
     },
     "cs-1": {
-        "name": "Globo della Confusione",
+        "name": "Orb of Confusion",
         "desc": "Durante la tua abilità di Attacco, puoi piazzare un segnalino personaggio su questa carta per aggiungere {MUDDLE} a un attacco. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-2": {
-        "name": "Globo dello Slancio",
+        "name": "Orb of Momentum",
         "desc": "Durante la tua abilità di Movimento, puoi piazzare un segnalino personaggio su questa carta per aggiungere +1 {MOVE}. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-3": {
-        "name": "Globo dell'Agilità",
+        "name": "Orb of Agility",
         "desc": "Durante la tua abilità di Movimento, puoi piazzare un segnalino personaggio su questa carta per aggiungere {JUMP}. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-4": {
-        "name": "Globo del Vigore",
+        "name": "Orb of Vigor",
         "desc": "Durante la tua abilità di Attacco, puoi piazzare un segnalino personaggio su questa carta per aggiungere +1 {ATTACK} a un attacco. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-5": {
-        "name": "Globo della Ritorsione",
+        "name": "Orb of Retribution",
         "desc": "Quando sei attaccato da un nemico adiacente, puoi piazzare un segnalino personaggio su questa carta per ottenere {RETALIATE} 1 per l'attacco. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-6": {
-        "name": "Globo dell'Infezione",
+        "name": "Orb of Infection",
         "desc": "Durante la tua abilità di Attacco, puoi piazzare un segnalino personaggio su questa carta per aggiungere {POISON} a un attacco. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-7": {
-        "name": "Globo della Vitalità",
+        "name": "Orb of Vitality",
         "desc": "Durante il tuo turno, puoi piazzare un segnalino personaggio su questa carta per effettuare “{HEAL} 1, Se Stesso”. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-8": {
-        "name": "Globo della Protezione",
+        "name": "Orb of Protection",
         "desc": "Quando sei danneggiato da un attacco, puoi piazzare un segnalino personaggio su questa carta per ottenere {SHIELD} 1 per l'attacco. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-9": {
-        "name": "Globo della Fortuna",
+        "name": "Orb of Fortune",
         "desc": "Durante la tua abilità di Attacco, puoi piazzare un segnalino personaggio su questa carta per ottenere Vantaggio a un attacco. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-10": {
-        "name": "Globo della Disperazione",
+        "name": "Orb of Despair",
         "desc": "Durante la tua abilità di Attacco, puoi piazzare un segnalino personaggio su questa carta per aggiungere {CURSE} a un attacco. Quando ci sono tre segnalini su questa carta, essa è {CONSUMED}."
     },
     "cs-11": {
-        "name": "Antidoto per il Vaiolo",
+        "name": "Pox Antidote",
         "desc": "Durante il tuo turno, rimuovi {INFECT} da te stesso o da un alleato adiacente."
     },
     "cs-12": {
-        "name": "Elmo Trofeo",
+        "name": "Trophy Helm",
         "desc": "I tuoi attacchi non sono influenzati da {RETALIATE}."
     },
     "cs-13": {
-        "name": "Piccone da Guerra",
+        "name": "War Pick",
         "desc": "Durante la tua abilità di Attacco in mischia, aggiungi {PIERCE} 4 a un attacco."
     },
     "cs-14": {
-        "name": "Mazza a Catena",
+        "name": "Chain Mace",
         "desc": "Durante il tuo turno, effettua “{ATTACK} 3, {RANGE} 2”."
     },
     "cs-15": {
-        "name": "Gambali Drenanti",
+        "name": "Draining Greaves",
         "desc": "Alla fine del tuo turno, se ti sei mosso di quattro o più esagoni durante il tuo turno, un nemico adiacente subisce un danno."
     },
     "cs-16": {
-        "name": "Scarpe dell'Intangibilità",
+        "name": "Shoes of Phasing",
         "desc": "Durante le tue abilità di Movimento, puoi muoverti attraverso i nemici."
     },
     "cs-17": {
-        "name": "Stivali Leggeri",
+        "name": "Lightweight Boots",
         "desc": "Durante la tua abilità di Movimento, aggiungi +2 {MOVE} e {JUMP}."
     },
     "cs-18": {
-        "name": "Luce di Luna in Bottiglia",
+        "name": "Bottled Moonlight",
         "desc": "Durante la tua abilità di Cura, aggiungi +2 {HEAL} e {STRENGTHEN} a ogni Cura."
     },
     "cs-19": {
-        "name": "Stivali della Perpetuità",
+        "name": "Boots of Perpetuity",
         "desc": "Sei immune a {IMMOBILIZE}.\\nAlla fine del tuo turno, se ti sei mosso di zero esagoni durante il tuo turno, effettua “{MOVE} 1”."
     },
     "cs-20": {
-        "name": "Pendente Curioso",
+        "name": "Curious Pendant",
         "desc": "Durante il tuo turno, {RECOVER} una carta persa giocata in questo round."
     },
     "cs-21": {
-        "name": "Occhiali a Infrarossi",
+        "name": "Infrared Goggles",
         "desc": "Ottieni Vantaggio a tutti gli attacchi che effettui mentre sei {INVISIBLE}."
     },
     "cs-22": {
-        "name": "Elmo d'Acciaio",
+        "name": "Steel Helmet",
         "desc": "Quando sei attaccato, considera qualsiasi carta modificatore {+1_WHITE} pescata dal nemico come una {+0_WHITE}."
     },
     "cs-23": {
-        "name": "Armatura di Piastre Intrecciate",
+        "name": "Woven Plate Armor",
         "desc": "Quando sei attaccato, l'attaccante ottiene Svantaggio all'attacco e tu ottieni {SHIELD} 2 per l'attacco."
     },
     "cs-24": {
-        "name": "Mantello della Purezza",
+        "name": "Mantle of Purity",
         "desc": "Quando otterresti una o più condizioni negative, impedisci le condizioni."
     },
     "cs-25": {
-        "name": "Scialle d'Ossa",
+        "name": "Boneclad Shawl",
         "desc": "Ai prossimi due attacchi che ti bersagliano effettuati da nemici adiacenti, ottieni {RETALIATE} 2 per l'attacco."
     },
     "cs-26": {
-        "name": "Corazza Silhouette",
+        "name": "Silhouette Cuirass",
         "desc": "Quando i tuoi punti ferita verrebbero ridotti a 0 da un attacco che ti bersaglia, non subisci invece alcun danno e ottieni {INVISIBLE}."
     },
     "cs-27": {
-        "name": "Dispositivo di Traslocazione",
+        "name": "Translocation Device",
         "desc": "Durante il tuo turno, scambia posizione con un nemico entro {RANGE} 5."
     },
     "cs-28": {
-        "name": "Pozione Alchemica",
+        "name": "Alchemy Potion",
         "desc": "Durante il tuo turno, sostituisci una tessera ostacolo adiacente con un segnalino moneta."
     },
     "cs-29": {
-        "name": "Pozione Inebriante",
+        "name": "Intoxicating Potion",
         "desc": "Durante il tuo turno, effettua “{HEAL} 5, {POISON}, Se Stesso”."
     },
     "cs-30": {
-        "name": "Laccio di Ferro",
+        "name": "Iron Snare",
         "desc": "Durante il tuo turno, crea una trappola {IMMOBILIZE} in un esagono vuoto entro {RANGE} 3."
     },
     "cs-31": {
-        "name": "Mina a Concussione",
+        "name": "Concussion Mine",
         "desc": "Durante il tuo turno, crea una trappola {STUN} in un esagono vuoto entro {RANGE} 3."
     },
     "cs-32": {
-        "name": "Bussola Mutevole",
+        "name": "Shifting Compass",
         "desc": "Durante il tuo turno, obbliga un nemico entro Gittata 5 a effettuare un'abilità “{MOVE} 2, {JUMP}” con te che controlli l'abilità."
     },
     "cs-33": {
-        "name": "Ariete",
+        "name": "Battering Ram",
         "desc": "Durante la tua abilità di Attacco in mischia, aggiungi {MUDDLE} e {PUSH} 2 a tutti i tuoi attacchi."
     },
     "cs-34": {
-        "name": "Trappola ad Artigli",
+        "name": "Claw Trap",
         "desc": "Alla fine del tuo turno, crea una trappola {POISON} da 4 danni in un esagono vuoto adiacente."
     },
     "cs-35": {
-        "name": "Bastone della Ritorsione",
+        "name": "Staff of Retribution",
         "desc": "Quando sei attaccato, ottieni {RETALIATE} 1, {RANGE} 3 per l'attacco."
     },
     "cs-36": {
-        "name": "Lama del Sangue Maledetto",
+        "name": "Curseblood Blade",
         "desc": "Durante la tua abilità di Attacco in mischia, subisci 1 danno per aggiungere {CURSE} a tutti i tuoi attacchi."
     },
     "cs-37": {
-        "name": "Scudo di Scaglie di Draco",
+        "name": "Drakescale Shield",
         "desc": "Quando sei attaccato da un nemico adiacente, ottieni {RETALIATE} 3 per l'attacco."
     },
     "cs-38": {
-        "name": "Pugnale di Scaglie di Draco",
+        "name": "Drakescale Dagger",
         "desc": "Durante la tua abilità di Attacco in mischia, non pescare una carta modificatore di attacco per un attacco."
     },
     "cs-39": {
-        "name": "Rampino da Lancio",
+        "name": "Hook Shot",
         "desc": "Durante il tuo turno, effettua “{ATTACK} 2, {RANGE} 3, {PIERCE} 2”."
     },
     "cs-40": {
-        "name": "Stivali di Cuoio Lunare",
+        "name": "Moonleather Boots",
         "desc": "Aggiungi +1 Movimento a tutti i tuoi movimenti finché hai tutti i punti ferita."
     },
     "cs-41": {
-        "name": "Libagione degli Spiriti",
+        "name": "Spirit Libation",
         "desc": "Durante il tuo turno rimuovi un segnalino danno da un {SPIRIT}. Questo {SPIRIT} può svolgere immediatamente un turno senza ricevere un segnalino danno."
     },
     "cs-42": {
-        "name": "Veste del Sollievo",
+        "name": "Robe of Soothing",
         "desc": "Ogni volta che dai a un alleato una carta capacità {PRAYER}, quell'alleato può effettuare “{HEAL} 2, Se Stesso”."
     },
     "cs-43": {
-        "name": "Mitra Splendente",
+        "name": "Resplendent Mitre",
         "desc": "Durante la tua azione di Cura, aggiungi +2 {HEAL} a ogni Cura."
     },
     "cs-44": {
-        "name": "Proiettile a Lattina",
+        "name": "Canister Projectile",
         "desc": "Durante la tua abilità di Attacco a distanza, aggiungi {PIERCE} 2 a un attacco."
     },
     "cs-45": {
-        "name": "Cannone a Catena",
+        "name": "Chain Cannon",
         "desc": "Durante il tuo turno, effettua “{PULL} 2, Se Stesso verso un nemico entro {RANGE} 3”."
     },
     "cs-46": {
-        "name": "Fischietto dell'Evocatore",
+        "name": "Summoner's Whistle",
         "desc": "Durante il tuo turno, un alleato evocato di tua proprietà effettua\\n{MOVE} +0\\n{ATTACK} +0\\ncon te che controlli le abilità."
     },
     "cs-47": {
-        "name": "Bracciali della Natura",
+        "name": "Nature Armlets",
         "desc": "Mentre sei {MOUNTED} su un'evocazione, puoi applicare invece all'evocazione gli effetti dei tuoi {ITEM} piccoli."
     },
     "cs-48": {
-        "name": "Provetta",
+        "name": "Test Tube",
         "desc": "Durante il tuo turno, {ANY_X} per effettuare una delle seguenti: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, Se Stesso, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     "cs-49": {
-        "name": "Iniezione Potenziante",
+        "name": "Booster Shot",
         "desc": "Durante il tuo turno, effettua una delle seguenti: {RECOVER} una carta scartata | {HEAL} 3, Se Stesso | Aggiungi +2 {ATTACK} al tuo prossimo attacco di questo turno."
     },
     "cs-50": {
-        "name": "Carapace Luminoso",
+        "name": "Luminous Carapace",
         "desc": "Durante il tuo turno, quando {ANY_X} un elemento, non spostare l'elemento consumato nella colonna Inerte."
     },
     "cs-51": {
-        "name": "Armatura Fiammeggiante",
+        "name": "Flaming Armor",
         "desc": "Quando sei attaccato, puoi {FIRE_X} per ottenere {RETALIATE} 3 per l'attacco."
     },
     "cs-52": {
-        "name": "Ascia Fiammeggiante",
+        "name": "Flaming Axe",
         "desc": "Durante la tua abilità di Attacco in mischia, aggiungi +1 {ATTACK} e {WOUND} a tutti i tuoi attacchi. {FIRE}"
     },
     "cs-53": {
-        "name": "Mortaio da Campo",
+        "name": "Field Mortar",
         "desc": "Una volta per turno, durante il tuo turno, puoi rimuovere una condizione da una miniatura adiacente e piazzarla su questa carta se non è già presente su di essa. Durante il tuo turno, una miniatura adiacente ottiene tutte le condizioni presenti su questa carta, poi consuma {CONSUMED} questo oggetto."
     },
     "cs-54": {
-        "name": "Pugnale Dente di Vipera",
+        "name": "Vipertooth Dagger",
         "desc": "Ottieni Vantaggio a tutti i tuoi attacchi in mischia mentre occupi un terreno difficile."
     },
     "cs-55": {
-        "name": "Veleno di Vipera Fantasma",
+        "name": "Ghost Viper Venom",
         "desc": "Durante la tua abilità di Attacco, aggiungi {POISON} 2 a un attacco."
     },
     "cs-56": {
-        "name": "Trappola a Morsa",
+        "name": "Clamp Trap",
         "desc": "Alla fine del tuo turno, crea una trappola {IMMOBILIZE} da 3 danni in un esagono vuoto adiacente."
     },
     "cs-57": {
-        "name": "Cuore del Vuoto Purificato",
+        "name": "Cleansed Voidheart",
         "desc": "Sei immune a {MUDDLE}. Alla fine di ogni round, se hai {WOUND} ottieni {REGENERATE}."
     },
     "cs-58": {
-        "name": "Tintura Stordente",
+        "name": "Dizzying Tincture",
         "desc": "Durante la tua abilità di Attacco, aggiungi {DISARM} a un attacco."
     },
     "cs-59": {
-        "name": "Sangue di Draco",
+        "name": "Drakes Blood",
         "desc": "Durante il tuo turno, rimuovi tutte le condizioni positive da tutti i nemici entro {RANGE} 2. Può essere usato sui nemici che hanno {INVISIBLE}."
     },
     "cs-60": {
-        "name": "Medicina del Mana",
+        "name": "Mana Medicine",
         "desc": "Durante il tuo turno, effettua “{HEAL} 5, Se Stesso”. {ANY}"
     },
     "cs-61": {
-        "name": "Guanti di Acciaio Cinereo",
+        "name": "Ashsteel Gauntlets",
         "desc": "Sei immune a {DISARM}, anche se questo oggetto è speso. Durante il tuo turno ottieni {SHIELD} 1 per il round. {eot}"
     },
     "cs-62": {
-        "name": "Emettitore di Smog",
+        "name": "Smog Emitter",
         "desc": "Alla fine del tuo turno, tutti i nemici considerano tutti gli esagoni vuoti entro {RANGE} 2 da te come terreno difficile per il round. {eot}"
     },
     "cs-63": {
-        "name": "Ferro di Cavallo Fortunato",
+        "name": "Lucky Horseshoe",
         "desc": "Quando sei danneggiato da un attacco che ti bersaglia, subisci invece metà (arrotondata per difetto) del danno."
     },
     "cs-64": {
-        "name": "Tonico Stimolante Lieve",
+        "name": "Mild Kindled Tonic",
         "desc": "Quando un alleato ti bersaglia con un'abilità di Cura, rimuovi una condizione negativa da te stesso prima della Cura e ottieni {STRENGTHEN}."
     },
     "cs-65": {
-        "name": "Ascia del Soccorso",
+        "name": "Rescue Axe",
         "desc": "Durante la tua abilità di Attacco in mischia, aggiungi +1 {ATTACK} e {MUDDLE} a un attacco che bersaglia un nemico adiacente a uno dei tuoi alleati."
     },
     "cs-66": {
-        "name": "Malleo di Ferro",
+        "name": "Iron Malleus",
         "desc": "Durante la tua abilità di Attacco in mischia, aggiungi +1 {ATTACK} e {IMMOBILIZE} a tutti i tuoi attacchi."
     },
     "cs-67": {
-        "name": "Picca Uncinata",
+        "name": "Pike Hook",
         "desc": "Durante la tua abilità di Attacco in mischia a bersaglio singolo, aggiungi {PIERCE} 2 e {PULL} 1 all'attacco e puoi bersagliare un nemico entro 2 esagoni."
     },
     "cs-68": {
-        "name": "Tonico Esplosivo",
+        "name": "Explosive Tonic",
         "desc": "Durante il tuo turno, effettua: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
     },
     "cs-69": {
-        "name": "Tonico Stimolante Piccante",
+        "name": "Spicy Kindled Tonic",
         "desc": "Alle prossime tre abilità di Cura che ti bersagliano, puoi rimuovere prima tutte le condizioni negative da te stesso oppure ottenere {STRENGTHEN}."
     },
     "cs-70": {
-        "name": "Corda Multiuso",
+        "name": "Utility Rope",
         "desc": "Durante il tuo turno, effettua “{PULL} 2, Bersaglia un alleato o un nemico entro {RANGE} 3.”"
     },
     "cs-71": {
-        "name": "Elmo Ignifugo",
+        "name": "Fireproof Helm",
         "desc": "Ogni volta che subiresti danni da {WOUND}, effettua invece “{HEAL} 1, Se Stesso”"
     },
     "cs-72": {
-        "name": "Scala di Legno",
+        "name": "Wooden Ladder",
         "desc": "Aggiungi +1 Gittata a tutte le tue abilità a distanza effettuate mentre sei adiacente a un ostacolo. Ogni volta che entri in un esagono con una trappola, puoi scegliere di non far scattare la trappola."
     },
     "cs-73": {
-        "name": "Kit Medico",
+        "name": "Medical Kit",
         "desc": "Ogni volta che usi l'azione base superiore di una carta capacità, puoi effettuare un'abilità “{HEAL} 2, {RANGE} 1” invece di un'abilità “{ATTACK} 2”."
     },
     "cs-74": {
-        "name": "Tonico Corroborante Lieve",
+        "name": "Mild Bolstering Tonic",
         "desc": "Durante la tua abilità di Cura che bersaglia almeno un alleato, aggiungi +1 Cura e {STRENGTHEN} a ogni Cura."
     },
     "cs-75": {
-        "name": "Medaglione della Quercia",
+        "name": "Medallion of the Oak",
         "desc": "Quando sei attaccato in questo round, tu e tutti gli alleati adiacenti considerate qualsiasi modificatore di attacco negativo e {modifier_no_damage} pescato come {+0_WHITE}."
     },
     "cs-76": {
-        "name": "Coltello Cauterizzante",
+        "name": "Cauterizing Knife",
         "desc": "Durante la tua abilità di Cura, aggiungi +3 {HEAL} e {WOUND} a ogni Cura."
     },
     "cs-77": {
-        "name": "Kit per Traumi",
+        "name": "Trauma Kit",
         "desc": "Durante la tua abilità di Cura, raddoppia il valore di ogni Cura. Se questa abilità di Cura rimuove {WOUND}, questo oggetto è speso invece che consumato."
     },
     "cs-78": {
-        "name": "Pergamena del Carisma",
+        "name": "Scroll of Charisma",
         "desc": "Durante il tuo turno, un alleato entro {RANGE} 2 può effettuare una delle seguenti: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, Se Stesso."
     },
     "cs-79": {
-        "name": "Scudo del Soccorso",
+        "name": "Rescue Shield",
         "desc": "Quando un alleato adiacente è danneggiato da un attacco che lo bersaglia, quell'alleato ottiene {SHIELD} 2 per l'attacco e rimuove tutte le condizioni negative applicate dall'attacco."
     },
     "cs-80": {
-        "name": "Pergamena della Protezione",
+        "name": "Scroll of Protection",
         "desc": "Quando un alleato entro {RANGE} 5 verrebbe danneggiato da un attacco che lo bersaglia, non subisce invece alcun danno."
     },
     "cs-81": {
-        "name": "Tonico Corroborante Piccante",
+        "name": "Spicy Bolstering Tonic",
         "desc": "Durante la tua abilità di Cura che bersaglia almeno un alleato, aggiungi +2 {HEAL}, {STRENGTHEN} e {BLESS} a ogni Cura."
     },
     "cs-82": {
-        "name": "Pergamena del Comando",
+        "name": "Scroll of Command",
         "desc": "Durante il tuo turno un alleato entro {RANGE} 3 può effettuare una delle seguenti: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, Se Stesso."
     },
     "cs-83": {
-        "name": "Sfera delle Correnti",
+        "name": "Sphere of Currents",
         "desc": "Durante il tuo turno, crea due tessere di terreno difficile acquatico in esagoni entro {RANGE} 3 che non contengano tessere sovrapposte. {MUDDLE} tutte le miniature entro {RANGE} 3 che occupano una tessera acquatica."
     },
     "cs-84": {
-        "name": "Balestra Lancia-Lumache",
+        "name": "Slug Crossbow",
         "desc": "Durante la tua abilità di Attacco a distanza a bersaglio singolo, trasforma l'attacco nel seguente: {AOE.line_1_1}."
     },
     "cs-85": {
-        "name": "Balestra Lancia-Lumache Raffinata",
+        "name": "Refined Slug Crossbow",
         "desc": "Durante la tua abilità di Attacco a distanza a bersaglio singolo, aggiungi +1 {ATTACK} e trasforma l'attacco nel seguente: {AOE.line_1_1}."
     },
     "cs-86": {
-        "name": "Stendardo del Baluardo",
+        "name": "Bulwark Banner",
         "desc": "Durante il tuo turno, tu e tutti gli alleati ottenete {SHIELD} 1 per il round. {eot}"
     },
     "cs-87": {
-        "name": "Stendardo del Baluardo Raffinato",
+        "name": "Refined Bulwark Banner",
         "desc": "Durante il tuo turno, tutti gli alleati adiacenti ottengono {SHIELD} pari al tuo valore attuale di Scudo dalle abilità per il round. {eot}"
     },
     "cs-88": {
-        "name": "Scarabeo Telecomandato",
+        "name": "Remote Beetle",
         "desc": "Durante il tuo turno, apri una porta chiusa non bloccata entro {RANGE} 2."
     },
     "cs-89": {
-        "name": "Scarabeo Telecomandato Raffinato",
+        "name": "Refined Remote Beetle",
         "desc": "Durante il tuo turno, apri una porta chiusa non bloccata entro {RANGE} 2."
     },
     "cs-90": {
-        "name": "Stivali Infuocati",
+        "name": "Blazing Boots",
         "desc": "Durante la tua abilità di Movimento, raddoppia il valore del movimento."
     },
     "cs-91": {
-        "name": "Stivali Infuocati Raffinati",
+        "name": "Refined Blazing Boots",
         "desc": "Durante la tua abilità di Movimento, aggiungi {JUMP} e raddoppia il valore del movimento."
     },
     "cs-92": {
-        "name": "Cerbottana di Vipera",
+        "name": "Viper Blowgun",
         "desc": "Durante il tuo turno, puoi {EARTH_X} per effettuare “{ATTACK} 1, {RANGE} 3, {POISON}”."
     },
     "cs-93": {
-        "name": "Cerbottana di Vipera Raffinata",
+        "name": "Refined Viper Blowgun",
         "desc": "Durante il tuo turno, effettua “{ATTACK} 1, {RANGE} 4, {POISON}”. Puoi {EARTH_X} per AGGIUNGERE {TARGET}."
     },
     "cs-94": {
-        "name": "Pietra del Gelo",
+        "name": "Frost Stone",
         "desc": "Durante il tuo turno puoi piazzare un segnalino personaggio su questa carta per generare: {ICE}.\\nQuando ci sono due segnalini su questa carta, essa è consumata {CONSUMED}."
     },
     "cs-95": {
-        "name": "Pietra della Tempesta",
+        "name": "Storm Stone",
         "desc": "Durante il tuo turno puoi piazzare un segnalino personaggio su questa carta per generare: {WIND}.\\nQuando ci sono due segnalini su questa carta, essa è consumata {CONSUMED}."
     },
     "cs-96": {
-        "name": "Pietra dell'Inferno",
+        "name": "Inferno Stone",
         "desc": "Durante il tuo turno puoi piazzare un segnalino personaggio su questa carta per generare: {FIRE}.\\nQuando ci sono due segnalini su questa carta, essa è consumata {CONSUMED}."
     },
     "cs-97": {
-        "name": "Pietra del Tremito",
+        "name": "Tremor Stone",
         "desc": "Durante il tuo turno puoi piazzare un segnalino personaggio su questa carta per generare: {EARTH}.\\nQuando ci sono due segnalini su questa carta, essa è consumata {CONSUMED}."
     },
     "cs-98": {
-        "name": "Pietra del Bagliore",
+        "name": "Brilliant Stone",
         "desc": "Durante il tuo turno puoi piazzare un segnalino personaggio su questa carta per generare: {LIGHT}.\\nQuando ci sono due segnalini su questa carta, essa è consumata {CONSUMED}."
     },
     "cs-99": {
-        "name": "Pietra Oscura",
+        "name": "Dark Stone",
         "desc": "Durante il tuo turno puoi piazzare un segnalino personaggio su questa carta per generare: {DARK}.\\nQuando ci sono due segnalini su questa carta, essa è consumata {CONSUMED}."
     },
     "cs-100": {
-        "name": "Pietra Prodigiosa",
+        "name": "Wonder Stone",
         "desc": "Durante il tuo turno puoi piazzare un segnalino personaggio su questa carta per generare: {ANY}.\\nQuando ci sono due segnalini su questa carta, essa è consumata {CONSUMED}."
     },
     "cs-aa01": {
-        "name": "Baluardo Rocciaspina",
+        "name": "Rockspine Bulwark",
         "desc": "Alle prossime tre fonti di danno da attacchi che bersagliano te o un alleato adiacente, la miniatura attaccata ottiene {SHIELD} 1 per l'attacco."
     },
     "cs-aa02": {
-        "name": "Miele Fantasma Lucente",
+        "name": "Ghostshimmer Honey",
         "desc": "Durante il tuo turno, effettua {HEAL} 3\\n{REGENERATE}\\nColpisci te stesso e un alleato adiacente."
     },
     "cs-aa03": {
-        "name": "Filiera di Seta d'Acciaio",
+        "name": "Steelsilk Spinneret",
         "desc": "Le prossime due volte che un nemico subisce danni attaccandoti, quel nemico ottiene {IMMOBILIZE}."
     },
     "cs-qa01": {
-        "name": "Modulatore di Potenza",
+        "name": "Power Modulator",
         "desc": "(X è 1, 2, 3)\\nDurante il tuo turno, rinuncia alla tua azione superiore per effettuare {ATTACK} X+1\\n{RANGE} 2\\n{TARGET} 4-X"
     },
     "cs-qa02": {
-        "name": "Martello a Pistone a Vapore",
+        "name": "Steam Piston Hammer",
         "desc": "Durante la tua abilità di Attacco in mischia, aggiungi {MUDDLE} e {PUSH} 1 a un singolo attacco."
     },
     "cs-qa03": {
-        "name": "Guanti da Ragno",
+        "name": "Spider Climb Gloves",
         "desc": "Il tuo movimento può entrare e terminare in esagoni contenenti ostacoli come se avessi {FLYING}."
     },
     "cs-qa04": {
-        "name": "Cuscinetti a Inversione di Gravità",
+        "name": "Gravity Inversion Pads",
         "desc": "Crea una trappola in un esagono vuoto entro {RANGE} 3.\\nSe tu o un alleato fate scattare questa trappola, quella miniatura ottiene {FLYING} per il round. | Qualsiasi nemico che entra in un esagono con questa trappola la fa scattare e perde {FLYING} per il round."
     },
     "cs-qa05": {
-        "name": "Modello Delicato",
+        "name": "Delicate Model",
         "desc": "Evoca Raccoglitore di Rottami\\nSaccheggi {LOOT} ogni esagono in cui questa evocazione entra.\\nControlli le azioni di questa evocazione."
     },
     "cs-qa06": {
-        "name": "Auscudec dei Creatori",
+        "name": "Auscudec of the Makers",
         "desc": "Durante il tuo turno, rinuncia alla tua azione superiore per giocare un'azione di evocazione da una carta nella tua pila delle carte perse, ignorando due {SCRAP_X}."
     },
     "cs-rm01": {
-        "name": "Filo Seghettato",
+        "name": "Serrated Edge",
         "desc": "Durante la tua abilità di attacco in mischia, aggiungi {RUPTURE} a un attacco."
     },
     "cs-rm02": {
-        "name": "Stivali Raccapriccianti",
+        "name": "Grisly Boots",
         "desc": "Dopo la tua abilità di movimento, effettua {PUSH} 1\\nBersaglia un nemico adiacente\\nAggiungi +1 {PUSH} se ti sei mosso di 4 o più esagoni in questo round."
     },
     "cs-rm03": {
-        "name": "Sciabola di Scaglie del Terrore",
+        "name": "Terrorscale Saber",
         "desc": "Durante la tua abilità di attacco in mischia, aggiungi +1 {ATTACK} e {PIERCE} 2 a un attacco che bersaglia un nemico con {WOUND} o {RUPTURE}."
     },
     "cs-rm04": {
-        "name": "Lame Incrociate di Scaglie del Terrore",
+        "name": "Terrorscale Crossblades",
         "desc": "Ai tuoi prossimi tre attacchi in mischia che bersagliano nemici con almeno una condizione negativa, ottieni Vantaggio."
     },
     "cs-rm05": {
-        "name": "Rito della Rovina",
+        "name": "Rite of Ruin",
         "desc": "Durante la tua abilità di attacco ottieni {WOUND} per aggiungere +3 {ATTACK} a un attacco. Se uccidi il bersaglio, effettua “{HEAL} 3, Se Stesso”."
     },
     "cs-rm06": {
-        "name": "Corazza Selvaggia",
+        "name": "Savage Cuirass",
         "desc": "Le prossime due volte che perderesti una carta dalla tua mano per annullare dei danni subiti, scartala invece e ottieni {WOUND}."
     },
     "fh-1": {
@@ -2810,28 +2810,28 @@ export default {
         "desc": "Quando riposi, puoi tenere fino a tre carte {TIDE_ICON} nella tua area attiva. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
-        "name": "Nastro dell'Amicizia",
+        "name": "Ribbon of Friendship",
         "source": "Ricompensa da Scenario Solo - {AN}",
         "desc": "Subito dopo aver effettuato un'abilità Aumento, esegui: {POISON.fh} {RANGE.fh} 2. Puoi effettuare questa abilità come se occupassi lo stesso esagono di una delle tue evocazioni."
     },
     "mp-SA": {
-        "name": "Stemma di Frosthaven",
+        "name": "Crest of Frosthaven",
         "source": "Ricompensa da Scenario Solo - {SA}",
         "desc": "Ogni volta che effettui un riposo lungo, infondi Ghiaccio e gira questa carta.",
         "backDesc": "Ogni volta che un alleato riposa, puoi girare questa carta per concedergli: {HEAL.fh} 2, Se Stesso"
     },
     "mp-CA A": {
-        "name": "Bacile della Profezia A",
+        "name": "Basin of Prophecy A",
         "source": "Ricompensa da Scenario Solo - {CA}",
         "desc": "Aggiungi +1 Divinazione a ogni Divinazione."
     },
     "mp-CA B": {
-        "name": "Bacile della Profezia B",
+        "name": "Basin of Prophecy B",
         "source": "Ricompensa da Scenario Solo - {CA}",
         "desc": "Durante il tuo turno, esegui: {ATTACK.fh} 1, {TARGET.fh} 1 nemico che occupa un esagono contenente un {RIFT}, {PIERCE.fh} 2, {DIVINATION} 3"
     },
     "mp-HA": {
-        "name": "Stivali Senza Fronzoli",
+        "name": "No Nonsense Boots",
         "source": "Ricompensa da Scenario Solo - {HA}",
         "desc": "Alla fine del tuo turno, se hai speso 3 o più Determinazione in questo turno, gira questa carta.",
         "backDesc": "Durante il tuo turno, se hai un'Irritazione attiva, puoi spostare quella carta nella tua riserva per giocare un'altra carta dalla tua riserva ed effettuare la sua azione Irritazione, poi gira questa carta."
@@ -2857,7 +2857,7 @@ export default {
         "desc": "Quando sei attaccato, prima di pescare una carta modificatore di attacco, l'attaccante ottiene svantaggio all'attacco."
     },
     "gh2-5": {
-        "name": "Lente da Esploratore",
+        "name": "Scouting Lens",
         "source": "Prosperità 1",
         "desc": "Durante la tua abilità di attacco, aggiungi {PIERCE.fh} 1 a un attacco."
     },
@@ -2877,12 +2877,12 @@ export default {
         "desc": "Quando subisci {DAMAGE.fh} da un attacco, ottieni {SHIELD.fh} 1 per l'attacco."
     },
     "gh2-9": {
-        "name": "Verga della Concentrazione",
+        "name": "Focusing Rod",
         "source": "Prosperità 1",
         "desc": "Durante il tuo turno, se hai eseguito un'azione con {LOST.fh}, esegui: {HEAL.fh} 1, {RANGE.fh} 3"
     },
     "gh2-10": {
-        "name": "Arco Semplice",
+        "name": "Simple Bow",
         "source": "Prosperità 1",
         "desc": "Durante la tua abilità di attacco a distanza, ottieni vantaggio a un attacco."
     },
@@ -3015,7 +3015,7 @@ export default {
         "desc": "Quando subisci {DAMAGE.fh} da un attacco, ottieni {SHIELD.fh} 2 per l'attacco."
     },
     "gh2-36": {
-        "name": "Orecchino della Luna",
+        "name": "Moon Earing",
         "source": "Prosperità 4\nEvento Città 6",
         "desc": "Quando effettui un riposo breve, {RECOVER.fh} fino a tre dei tuoi oggetti spesi."
     },
@@ -3035,12 +3035,12 @@ export default {
         "desc": "Evoca Scheletro"
     },
     "gh2-40": {
-        "name": "Armatura d'Ombra",
+        "name": "Shadow Amor",
         "source": "Prosperità 4",
         "desc": "Quando subisci {DAMAGE.fh} da un attacco, annulla il {DAMAGE.fh} e infondi {DARK}."
     },
     "gh2-41": {
-        "name": "Battistrada Cinetici",
+        "name": "Kinetic Treads",
         "source": "Prosperità 5",
         "desc": "Alla fine della tua abilità di movimento, concedi a un alleato adiacente: {MOVE.fh} 2"
     },
@@ -3055,7 +3055,7 @@ export default {
         "desc": "Durante il tuo turno, aggiungi +1 {RANGE.fh} a tutti i tuoi attacchi a distanza."
     },
     "gh2-44": {
-        "name": "Arco di Precisione",
+        "name": "Precision Bow",
         "source": "Prosperità 5",
         "desc": "Dopo la tua abilità di attacco a distanza, esegui: {ATTACK.fh} 1, {TARGET.fh} 1 bersaglio dell'abilità di attacco a qualsiasi {RANGE.fh}, {PIERCE.fh} 1"
     },
@@ -3065,7 +3065,7 @@ export default {
         "desc": "Durante il tuo turno, {ANY} {ANY}."
     },
     "gh2-46": {
-        "name": "Brocchiere Leggero",
+        "name": "Light Targe",
         "source": "Prosperità 5",
         "desc": "Quando subisci {DAMAGE.fh} da un attacco, ottieni {SHIELD.fh} 1 per l'attacco. Dopo l'attacco ma prima di qualsiasi {RETALIATE.fh}, esegui: {MOVE.fh} 1"
     },
@@ -3090,7 +3090,7 @@ export default {
         "desc": "Durante il tuo turno, esegui: {HEAL.fh} 3, Un alleato, {RANGE.fh} 1"
     },
     "gh2-51": {
-        "name": "Mazza Pesante",
+        "name": "Heavy Mace",
         "source": "Prosperità 6\nEvento Strada 8",
         "desc": "Dopo che sei stato attaccato da un nemico adiacente, esegui: {ATTACK.fh} 1, enemyAttacked Questo attacco non è influenzato da {RETALIATE.fh}."
     },
@@ -3171,7 +3171,7 @@ export default {
         "desc": "Durante il tuo turno, esegui: {INVISIBLE.fh}, Se Stesso"
     },
     "gh2-67": {
-        "name": "Scarpe Chiodate",
+        "name": "Spiked Shoes",
         "source": "Prosperità 9",
         "desc": "Quando usi l'azione base inferiore di una carta capacità, puoi eseguire {ATTACK.fh} 3 invece di {MOVE.fh} 2."
     },
@@ -3186,17 +3186,17 @@ export default {
         "desc": "Alle prossime cinque fonti di {DAMAGE.fh} da attacchi che ti bersagliano, ottieni {SHIELD.fh} 1 per gli attacchi."
     },
     "gh2-70": {
-        "name": "Razioni Standard",
+        "name": "Standard Rations",
         "source": "Reputazione Militare 15",
         "desc": "Ogni volta che ti curi con un riposo lungo, aggiungi +2 {HEAL.fh}."
     },
     "gh2-71": {
-        "name": "Balestra Artigianale",
+        "name": "Mastercraft Crossbow",
         "source": "Reputazione Militare 17",
         "desc": "Durante la tua abilità di attacco a distanza, aggiungi {WOUND.fh} a un attacco. Un nemico adiacente a quel bersaglio e più lontano da te di quel bersaglio subisce {DAMAGE.fh} 2."
     },
     "gh2-72": {
-        "name": "Berretto del Comandante",
+        "name": "Commander's Cap",
         "source": "Reputazione Militare 19",
         "desc": "Gli alleati ottengono vantaggio ai prossimi tre attacchi effettuati mentre sono adiacenti a te. Poi gira questa carta.",
         "backDesc": "Dopo le prossime tre abilità di attacco che effettui mentre ti trovi entro {RANGE.fh} 2 da uno o più alleati, gira questa carta."
@@ -3207,18 +3207,18 @@ export default {
         "desc": "Durante il tuo turno, concedi a una delle tue evocazioni: {SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
-        "name": "Pugnale Nascosto",
+        "name": "Concealed Dagger",
         "source": "Reputazione Gilda dei Mercanti 15",
         "desc": "Durante il tuo turno, piazza un segnalino personaggio su un nemico adiacente. All'inizio di ogni turno del nemico, esso subisce {DAMAGE.fh} 1. Quando quel nemico muore, gira questa carta. {PERSISTENT}",
         "backDesc": "Piazza il segnalino personaggio nell'esagono in cui il nemico è morto. Puoi saccheggiare quel segnalino per girare questa carta."
     },
     "gh2-75": {
-        "name": "Cappuccio Sontuoso",
+        "name": "Opulent Hood",
         "source": "Reputazione Gilda dei Mercanti 17",
         "desc": "Durante il tuo turno, concedi a un alleato adiacente: {ATTACK.fh} 1, {PUSH.fh} 1"
     },
     "gh2-76": {
-        "name": "Insegna del Mercante",
+        "name": "Merchant's Insignia",
         "source": "Reputazione Gilda dei Mercanti 19",
         "desc": "Ogni volta che completi uno scenario, ottieni 10 monete d'oro."
     },
@@ -3238,7 +3238,7 @@ export default {
         "desc": "Durante la tua abilità di attacco, aggiungi {POISON.fh}, {STUN.fh} e {CURSE.fh} a un attacco."
     },
     "gh2-80": {
-        "name": "Teschio Demoniaco",
+        "name": "Demonic Skull",
         "source": "Reputazione Demoni 19",
         "desc": "Durante il tuo turno, {ANY} e gira questa carta alla fine del tuo turno.",
         "backDesc": "Quando uccidi un mostro, gira questa carta alla fine del tuo turno."
@@ -3304,7 +3304,7 @@ export default {
         "desc": "Durante la tua abilità di attacco, aggiungi {STUN.fh} a un attacco."
     },
     "gh2-93": {
-        "name": "Pergamena della Ferocia",
+        "name": "Scroll of Ferocity",
         "source": "Oggetto Casuale",
         "desc": "Durante il tuo turno, concedi a un alleato entro {RANGE.fh} 5: {ATTACK.fh} 2"
     },
@@ -3314,12 +3314,12 @@ export default {
         "desc": "Durante il tuo turno, esegui: {HEAL.fh} 3, {RANGE.fh} 5"
     },
     "gh2-95": {
-        "name": "Pergamena della Protezione",
+        "name": "Scroll of Shielding",
         "source": "Oggetto Casuale",
         "desc": "Quando un alleato entro {RANGE.fh} 5 subisce {DAMAGE.fh} da un attacco, concedigli {SHIELD.fh} 3 per l'attacco."
     },
     "gh2-96": {
-        "name": "Pergamena della Rapidità",
+        "name": "Scroll of Swiftness",
         "source": "Oggetto Casuale",
         "desc": "Durante l'abilità di movimento di un alleato entro {RANGE.fh} 5, aggiungi +1 {MOVE.fh} e {JUMP.fh}."
     },
@@ -3340,7 +3340,7 @@ export default {
         "desc": "Durante il tuo turno, esegui: {ATTACK.fh} 2, {RANGE.fh} 3"
     },
     "gh2-100": {
-        "name": "Stivali Carichi",
+        "name": "Charged Boots",
         "source": "{SCENARIO 71} (Tesoro #29)",
         "desc": "Dopo i tuoi prossimi tre turni in cui non effettui un'abilità di movimento, gira questa carta.",
         "backDesc": "Durante la tua abilità di movimento, aggiungi +2 {MOVE.fh} e gira questa carta."
@@ -3356,12 +3356,12 @@ export default {
         "desc": "Quando subisci {DAMAGE.fh} da un attacco, ottieni {SHIELD.fh} 4 per l'attacco."
     },
     "gh2-103": {
-        "name": "Cappuccio del Ranger",
+        "name": "Ranger's Hood",
         "source": "{SCENARIO 28} (Tesoro #65)",
         "desc": "Durante una delle abilità di attacco di una tua evocazione, prima di pescare le carte modificatore di attacco, rivela le prime due carte del tuo mazzo dei modificatori di attacco. Puoi mettere una qualsiasi di esse in fondo al tuo mazzo."
     },
     "gh2-104": {
-        "name": "Verga della Protezione",
+        "name": "Warding Rod",
         "source": "{SCENARIO 4} (Tesoro #24)",
         "desc": "Durante il tuo turno, esegui: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
     },
@@ -3409,29 +3409,29 @@ export default {
         "desc": "Durante il tuo turno, piazza un segnalino personaggio su un nemico normale o élite entro {RANGE.fh} 3. Tu e tutti gli alleati aggiungete +1 {ATTACK.fh} a tutti gli attacchi che bersagliano questo nemico. {PERSISTENT}"
     },
     "gh2-114": {
-        "name": "Calzari del Vento",
+        "name": "Gust Striders",
         "source": "Evento Città 17\nEvento Città 81",
         "desc": "Durante il tuo turno, aggiungi {JUMP.fh} alla tua prossima abilità di movimento. Se {WIND} è forte o in calo, aggiungi anche +2 {MOVE.fh}."
     },
     "gh2-115": {
-        "name": "Verga del Trasferimento",
+        "name": "Rod of Transference",
         "source": "{SCENARIO 11} (Tesoro #35)",
         "desc": "Quando un alleato entro {RANGE.fh} 3 starebbe per subire {DAMAGE.fh}, subisci tu il {DAMAGE.fh} al suo posto."
     },
     "gh2-116": {
-        "name": "Versi del Fato",
+        "name": "Fated Verses",
         "source": "Prosperità 1",
         "desc": "Durante la tua abilità di attacco, puoi ottenere svantaggio a un attacco per girare questa carta alla fine del tuo turno.",
         "backDesc": "Durante l'abilità di attacco di un alleato, quell'alleato ottiene vantaggio a uno dei suoi attacchi e tu giri questa carta.",
         "faq": "Non puoi usare il lato anteriore se hai già svantaggio all'attacco. Il lato anteriore può essere usato su un attacco che ti concede un alleato, ma la carta si gira solo alla fine del tuo prossimo turno."
     },
     "gh2-117": {
-        "name": "Lama dell'Alba",
+        "name": "Dawnblade",
         "source": "Ricompensa da {SCENARIO 99}",
         "desc": "Durante il tuo turno, se {DARK} è forte o in calo, aggiungi +1 {ATTACK.fh} al tuo prossimo attacco in mischia. Se hai portato Marchio del Crepuscolo, {LIGHT}."
     },
     "gh2-118": {
-        "name": "Marchio del Crepuscolo",
+        "name": "Duskbrand",
         "source": "Evento Strada 33",
         "desc": "Durante il tuo turno, se {LIGHT} è forte o in calo, aggiungi +1 {ATTACK.fh} al tuo prossimo attacco in mischia. Se hai portato Lama dell'Alba, {DARK}."
     },
@@ -3451,31 +3451,31 @@ export default {
         "desc": "Durante il tuo turno, esegui: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3 Se hai portato Stivali di Scaglie di Draco e Armatura di Scaglie di Draco, aggiungi +1 {TARGET.fh}."
     },
     "gh2-122": {
-        "name": "Lanterna dello Scarabeo del Gelo",
+        "name": "Frost Beetle Lantern",
         "desc": "Durante il tuo turno, esegui: {ANY_X}: {ICE}"
     },
     "gh2-123": {
-        "name": "Lanterna dello Scarabeo della Tempesta",
+        "name": "Storm Beetle Lantern",
         "source": "Evento Strada 30",
         "desc": "Durante il tuo turno, esegui: {ANY_X}: {WIND}"
     },
     "gh2-124": {
-        "name": "Lanterna dello Scarabeo dell'Ignizione",
+        "name": "Ignition Beetle Lantern",
         "source": "Evento Strada 30",
         "desc": "Durante il tuo turno, esegui: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
-        "name": "Lanterna dello Scarabeo del Tremito",
+        "name": "Tremor Beetle Lantern",
         "source": "Evento Strada 30",
         "desc": "Durante il tuo turno, esegui: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
-        "name": "Lanterna dello Scarabeo del Bagliore",
+        "name": "Brilliant Beetle Lantern",
         "source": "Evento Strada 30",
         "desc": "Durante il tuo turno, esegui: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
-        "name": "Lanterna dello Scarabeo del Crepuscolo",
+        "name": "Twilight Beetle Lantern",
         "source": "Evento Strada 30",
         "desc": "Durante il tuo turno, esegui: {ANY_X}: {DARK}"
     },
@@ -3536,17 +3536,17 @@ export default {
         "desc": "Durante la tua abilità di attacco in mischia, subisci {DAMAGE.fh} 2 per aggiungere +1 {ATTACK.fh} a tutti gli attacchi."
     },
     "gh2-139": {
-        "name": "Scettro dell'Altro Mondo",
+        "name": "Otherworldly Scepter",
         "source": "Ricompensa da {SCENARIO 94}\nEvento Città 85",
         "desc": "Quando effettui un'azione di evocazione, ogni evocazione generata da quell'azione ottiene {WARD.fh}, {INVISIBLE.fh} e {STRENGTHEN.fh}."
     },
     "gh2-140": {
-        "name": "Ragno Meccanico d'Attacco",
+        "name": "Remote Attack Spider",
         "source": "Evento Città 98",
         "desc": "Durante il tuo turno, esegui: {POISON.fh}, Tutti, {RANGE.fh} 1"
     },
     "gh2-141": {
-        "name": "Ragno Meccanico di Supporto",
+        "name": "Remote Aid Spider",
         "source": "Evento Città 98",
         "desc": "Durante il tuo turno, esegui: {HEAL.fh} 2, Tutti, {RANGE.fh} 1"
     },
@@ -3557,41 +3557,41 @@ export default {
         "faq": "Non subisci danni dal terreno pericoloso che crei; danneggia solo le miniature che vi entrano."
     },
     "gh2-143": {
-        "name": "Stivali di Sostegno",
+        "name": "Boots of Bracing",
         "source": "{SCENARIO 81} (Tesoro #61)",
         "desc": "Durante la tua abilità di attacco a distanza, ottieni {IMMOBILIZE.fh} per aggiungere +1 {ATTACK.fh} a un attacco."
     },
     "gh2-144": {
-        "name": "Matrice Temporale",
+        "name": "Temporal Matrix",
         "source": "Ricompensa da {SCENARIO 92}",
         "desc": "Durante la determinazione dell'iniziativa, dopo che tutte le carte capacità sono state rivelate, ordina le iniziative del round dalla più alta alla più bassa invece che dalla più bassa alla più alta."
     },
     "gh2-145": {
-        "name": "Uncino del Mietitore",
+        "name": "Harrow-Hook",
         "desc": "Durante il tuo turno, esegui: {MOVE.fh} 2, {JUMP.fh} Questo movimento deve terminare adiacente a un ostacolo o a un muro."
     },
     "gh2-146": {
-        "name": "Ambravuota",
+        "name": "Amberhollow",
         "source": "Evento Strada 15\nEvento Strada 25\nEvento Strada 28\nEvento Strada 30\nEvento Strada 31",
         "desc": "Questo oggetto deve essere portato nello scenario e viene restituito alla riserva degli oggetti non disponibili alla fine dello scenario. Durante il tuo turno, esegui: {STRENGTHEN.fh}, {BLESS.fh}, Se Stesso"
     },
     "gh2-147": {
-        "name": "Scettro di Xorn",
+        "name": "Scepter of Xorn",
         "source": "Ricompensa da {SCENARIO 57}\nRicompensa da {SCENARIO 58}",
         "desc": "Durante il tuo turno, se non hai {POISON.fh}, ottieni {POISON.fh} per eseguire: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
     },
     "gh2-148": {
-        "name": "Scudo dei Giusti",
+        "name": "Shield of the Righteous",
         "source": "{SCENARIO 65} (Tesoro #59)",
         "desc": "Quando subisci {DAMAGE.fh} da un attacco, annulla il {DAMAGE.fh} e infondi {LIGHT}"
     },
     "gh2-149": {
-        "name": "Cannocchiale Aesther",
+        "name": "Aesther Spyglass",
         "source": "Missione Personale 04",
         "desc": "Questo oggetto può essere usato solo se sei adiacente ad almeno un ostacolo. Durante il tuo turno, esegui: {BLESS.fh}, Se Stesso"
     },
     "gh2-150": {
-        "name": "Armatura Sperimentale",
+        "name": "Experimental Armor",
         "source": "Missione Personale 17",
         "desc": "Questo oggetto non può essere venduto e deve essere portato in ogni scenario. Quando subisci {DAMAGE.fh} da un attacco, puoi subire {DAMAGE.fh} 2 per far subire {DAMAGE.fh} 2 a tutti gli alleati e i nemici adiacenti."
     },
@@ -3600,12 +3600,12 @@ export default {
         "desc": "Durante la tua abilità di attacco in mischia, aggiungi {WOUND.fh}, {POISON.fh} a tutti gli attacchi."
     },
     "gh2-152": {
-        "name": "Talismano di Rubino",
+        "name": "Ruby Talisman",
         "source": "Ricompensa da {SCENARIO 75}",
         "desc": "Durante il tuo turno, se un alleato entro {RANGE.fh} 3 ha una condizione negativa, puoi ottenere {DISARM.fh} per rimuovere una condizione negativa da quell'alleato e concedergli Salvaguardia, {BLESS.fh}."
     },
     "gh2-153": {
-        "name": "Scudo Uncinato",
+        "name": "Hooked Shield",
         "source": "Ricompensa da Scenario Solo - {BR2}",
         "desc": "Dopo che spingi un nemico, esegui: {MOVE.fh} 3, {JUMP.fh} Questo movimento può entrare solo negli esagoni che il nemico spinto ha lasciato."
     },
@@ -3615,7 +3615,7 @@ export default {
         "desc": "Durante la tua abilità di cura, aggiungi +1 {HEAL.fh} e {STRENGTHEN.fh} una cura che bersaglia un alleato."
     },
     "gh2-155": {
-        "name": "Elisir Etereo",
+        "name": "Etheric Elixir",
         "source": "Ricompensa da Scenario Solo - {SW2}",
         "desc": "Quando esegui l'azione superiore {LOST.fh} di Etere Rivitalizzante, rimuovi la carta {NULL_MODIFIER} dal tuo mazzo dei modificatori di attacco per il resto dello scenario."
     },
@@ -3635,7 +3635,7 @@ export default {
         "desc": "Aggiungi +1 {ATTACK.fh} a tutti i tuoi attacchi derivanti dalle tue azioni {AUGMENT}."
     },
     "gh2-159": {
-        "name": "Insegna del Divino",
+        "name": "Insignia of the Divine",
         "source": "Ricompensa da Scenario Solo - {SK2}",
         "desc": "Durante il tuo turno, concedi a te stesso o a un alleato adiacente: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
     },
@@ -3650,7 +3650,7 @@ export default {
         "desc": "Quando una delle tue evocazioni subisce {DAMAGE.fh} da un attacco, annulla il {DAMAGE.fh} e quell'evocazione ottiene {INVISIBLE.fh}."
     },
     "gh2-162": {
-        "name": "Carezza della Notte",
+        "name": "The Night's Caress",
         "source": "Ricompensa da Scenario Solo - {NS2}",
         "desc": "Quando perdi {INVISIBLE.fh}, gira questa carta ed esegui: {MUDDLE.fh}, {RANGE.fh} 1",
         "backDesc": "Quando ottieni {INVISIBLE.fh}, gira questa carta e guarda la prima carta del tuo mazzo dei modificatori di attacco. Puoi mettere quella carta in fondo al tuo mazzo."
@@ -3681,7 +3681,7 @@ export default {
         "desc": "Quando un alleato entro {RANGE.fh} 3 subisce {DAMAGE.fh} da un attacco, dopo l'abilità di attacco esegui: {MOVE.fh} 2 Questo movimento deve terminare adiacente all'alleato attaccato."
     },
     "gh2-168": {
-        "name": "Giubba Elementale",
+        "name": "Elemental Vest",
         "source": "Ricompensa da Scenario Solo - {EL2}",
         "desc": "Alla fine del tuo turno, per ogni due elementi che hai consumato in quel turno: {ANY}."
     },
@@ -3691,7 +3691,7 @@ export default {
         "desc": "Durante il tuo turno, {COMMAND}: {ATTACK.fh} 2"
     },
     "gh2-170": {
-        "name": "Carapace Strisciante",
+        "name": "Crawling Carapace",
         "source": "Ricompensa da Scenario Solo - {BS2}",
         "desc": "Alla prima fonte di {DAMAGE.fh} da un attacco che tu o una tua evocazione subireste ogni round, la miniatura attaccata ottiene {SHIELD.fh} 1 per l'attacco."
     }

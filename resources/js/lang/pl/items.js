@@ -1018,463 +1018,463 @@ export default {
         "desc": "Podczas twojego ruchu dodaj „+1 do {MOVE} i {JUMP}” dla pojedynczego ruchu."
     },
     "cs-1": {
-        "name": "Kula Zamieszania",
+        "name": "Orb of Confusion",
         "desc": "Podczas twojej zdolności ataku możesz położyć jeden żeton postaci na tej karcie, aby dodać {MUDDLE} do jednego ataku. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-2": {
-        "name": "Kula Rozpędu",
+        "name": "Orb of Momentum",
         "desc": "Podczas twojej zdolności ruchu możesz położyć jeden żeton postaci na tej karcie, aby dodać +1 do {MOVE}. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-3": {
-        "name": "Kula Zwinności",
+        "name": "Orb of Agility",
         "desc": "Podczas twojej zdolności ruchu możesz położyć jeden żeton postaci na tej karcie, aby dodać {JUMP}. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-4": {
-        "name": "Kula Wigoru",
+        "name": "Orb of Vigor",
         "desc": "Podczas twojej zdolności ataku możesz położyć jeden żeton postaci na tej karcie, aby dodać +1 do {ATTACK} dla jednego ataku. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-5": {
-        "name": "Kula Odwetu",
+        "name": "Orb of Retribution",
         "desc": "Kiedy zaatakuje cię sąsiedni wróg, możesz położyć jeden żeton postaci na tej karcie, aby zyskać {RETALIATE} 1 na ten atak. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-6": {
-        "name": "Kula Zakażenia",
+        "name": "Orb of Infection",
         "desc": "Podczas twojej zdolności ataku możesz położyć jeden żeton postaci na tej karcie, aby dodać {POISON} do jednego ataku. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-7": {
-        "name": "Kula Witalności",
+        "name": "Orb of Vitality",
         "desc": "Podczas twojej tury możesz położyć jeden żeton postaci na tej karcie, aby wykonać akcję „{HEAL} 1, na siebie”. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-8": {
-        "name": "Kula Ochrony",
+        "name": "Orb of Protection",
         "desc": "Kiedy otrzymujesz obrażenia z ataku, możesz położyć jeden żeton postaci na tej karcie, aby zyskać {SHIELD} 1 na ten atak. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-9": {
-        "name": "Kula Fortuny",
+        "name": "Orb of Fortune",
         "desc": "Podczas twojej zdolności ataku możesz położyć jeden żeton postaci na tej karcie, aby zyskać Korzyść na jeden atak. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-10": {
-        "name": "Kula Rozpaczy",
+        "name": "Orb of Despair",
         "desc": "Podczas twojej zdolności ataku możesz położyć jeden żeton postaci na tej karcie, aby dodać {CURSE} do jednego ataku. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-11": {
-        "name": "Antidotum na Ospę",
+        "name": "Pox Antidote",
         "desc": "Podczas twojej tury usuń {INFECT} z siebie lub z sąsiedniego sojusznika."
     },
     "cs-12": {
-        "name": "Hełm Trofeum",
+        "name": "Trophy Helm",
         "desc": "{RETALIATE} nie wpływa na twoje ataki."
     },
     "cs-13": {
-        "name": "Kilof Bojowy",
+        "name": "War Pick",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj {PIERCE} 4 do jednego ataku."
     },
     "cs-14": {
-        "name": "Maczuga Łańcuchowa",
+        "name": "Chain Mace",
         "desc": "Podczas twojej tury wykonaj „{ATTACK} 3, {RANGE} 2”."
     },
     "cs-15": {
-        "name": "Wysysające Nagolenniki",
+        "name": "Draining Greaves",
         "desc": "Na koniec swojej tury, jeśli podczas niej przesunąłeś się o cztery lub więcej pól, jeden sąsiedni wróg otrzymuje jedno obrażenie."
     },
     "cs-16": {
-        "name": "Buty Fazowe",
+        "name": "Shoes of Phasing",
         "desc": "Podczas twoich zdolności ruchu możesz przechodzić przez wrogów."
     },
     "cs-17": {
-        "name": "Lekkie Buty",
+        "name": "Lightweight Boots",
         "desc": "Podczas twojej zdolności ruchu dodaj +2 do {MOVE} oraz {JUMP}."
     },
     "cs-18": {
-        "name": "Księżycowy Blask w Butelce",
+        "name": "Bottled Moonlight",
         "desc": "Podczas twojej zdolności leczenia dodaj +2 do {HEAL} oraz {STRENGTHEN} do każdego leczenia."
     },
     "cs-19": {
-        "name": "Buty Nieustępliwości",
+        "name": "Boots of Perpetuity",
         "desc": "Jesteś odporny na {IMMOBILIZE}.\nNa koniec swojej tury, jeśli nie ruszyłeś się podczas niej z miejsca, wykonaj „{MOVE} 1”."
     },
     "cs-20": {
-        "name": "Osobliwy Wisiorek",
+        "name": "Curious Pendant",
         "desc": "Podczas twojej tury {RECOVER} jedną utraconą kartę zagraną w tej rundzie."
     },
     "cs-21": {
-        "name": "Gogle Podczerwieni",
+        "name": "Infrared Goggles",
         "desc": "Zyskujesz Korzyść przy wszystkich atakach wykonywanych, gdy jesteś {INVISIBLE}."
     },
     "cs-22": {
-        "name": "Stalowy Hełm",
+        "name": "Steel Helmet",
         "desc": "Kiedy jesteś atakowany, rozpatrz każdą kartę modyfikatora {+1_WHITE} dobraną przez wroga jako {+0_WHITE}."
     },
     "cs-23": {
-        "name": "Zbroja Płytowa Plecionka",
+        "name": "Woven Plate Armor",
         "desc": "Kiedy jesteś atakowany, atakujący otrzymuje Niekorzyść na ten atak, a ty zyskujesz {SHIELD} 2 na ten atak."
     },
     "cs-24": {
-        "name": "Płaszcz Czystości",
+        "name": "Mantle of Purity",
         "desc": "Kiedy miałbyś otrzymać jeden lub więcej negatywnych stanów, zapobiegasz tym stanom."
     },
     "cs-25": {
-        "name": "Szal Okryty Kośćmi",
+        "name": "Boneclad Shawl",
         "desc": "Przy następnych dwóch atakach skierowanych w ciebie, wykonanych przez sąsiednich wrogów, zyskujesz {RETALIATE} 2 na ten atak."
     },
     "cs-26": {
-        "name": "Kirys Sylwetki",
+        "name": "Silhouette Cuirass",
         "desc": "Kiedy atak skierowany w ciebie zredukowałby twoje punkty życia do 0, zamiast tego nie otrzymujesz obrażeń i zyskujesz {INVISIBLE}."
     },
     "cs-27": {
-        "name": "Urządzenie Translokacyjne",
+        "name": "Translocation Device",
         "desc": "Podczas twojej tury zamień się miejscami z jednym wrogiem w odległości {RANGE} 5."
     },
     "cs-28": {
-        "name": "Mikstura Alchemiczna",
+        "name": "Alchemy Potion",
         "desc": "Podczas twojej tury zastąp jeden sąsiedni kafelek przeszkody żetonem pieniędzy."
     },
     "cs-29": {
-        "name": "Odurzająca Mikstura",
+        "name": "Intoxicating Potion",
         "desc": "Podczas twojej tury wykonaj „{HEAL} 5, {POISON}, na siebie”."
     },
     "cs-30": {
-        "name": "Żelazne Wnyki",
+        "name": "Iron Snare",
         "desc": "Podczas twojej tury stwórz jedną pułapkę {IMMOBILIZE} na pustym polu w odległości {RANGE} 3."
     },
     "cs-31": {
-        "name": "Mina Wstrząsowa",
+        "name": "Concussion Mine",
         "desc": "Podczas twojej tury stwórz jedną pułapkę {STUN} na pustym polu w odległości {RANGE} 3."
     },
     "cs-32": {
-        "name": "Zmienny Kompas",
+        "name": "Shifting Compass",
         "desc": "Podczas twojej tury zmuś wroga w odległości do 5 pól do wykonania zdolności „{MOVE} 2, {JUMP}”, a ty kontrolujesz tę zdolność."
     },
     "cs-33": {
-        "name": "Taran",
+        "name": "Battering Ram",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj {MUDDLE} oraz {PUSH} 2 do wszystkich swoich ataków."
     },
     "cs-34": {
-        "name": "Pułapka Szponowa",
+        "name": "Claw Trap",
         "desc": "Na koniec swojej tury stwórz jedną pułapkę {POISON} zadającą 4 obrażenia na sąsiednim pustym polu."
     },
     "cs-35": {
-        "name": "Laska Odwetu",
+        "name": "Staff of Retribution",
         "desc": "Kiedy jesteś atakowany, zyskujesz {RETALIATE} 1, {RANGE} 3 na ten atak."
     },
     "cs-36": {
-        "name": "Ostrze Przeklętej Krwi",
+        "name": "Curseblood Blade",
         "desc": "Podczas twojej zdolności ataku wręcz otrzymaj 1 obrażenie, aby dodać {CURSE} do wszystkich swoich ataków."
     },
     "cs-37": {
-        "name": "Tarcza Smoczej Łuski",
+        "name": "Drakescale Shield",
         "desc": "Kiedy zaatakuje cię sąsiedni wróg, zyskujesz {RETALIATE} 3 na ten atak."
     },
     "cs-38": {
-        "name": "Sztylet Smoczej Łuski",
+        "name": "Drakescale Dagger",
         "desc": "Podczas twojej zdolności ataku wręcz nie dobieraj karty modyfikatora ataku dla jednego ataku."
     },
     "cs-39": {
-        "name": "Hak Strzelniczy",
+        "name": "Hook Shot",
         "desc": "Podczas twojej tury wykonaj „{ATTACK} 2, {RANGE} 3, {PIERCE} 2”."
     },
     "cs-40": {
-        "name": "Buty z Księżycowej Skóry",
+        "name": "Moonleather Boots",
         "desc": "Dodaj +1 do ruchu we wszystkich swoich ruchach, gdy masz pełne punkty życia."
     },
     "cs-41": {
-        "name": "Duchowa Libacja",
+        "name": "Spirit Libation",
         "desc": "Podczas twojej tury usuń jeden żeton obrażeń z jednego {SPIRIT}. Ten {SPIRIT} może natychmiast wykonać turę bez otrzymywania żetonu obrażeń."
     },
     "cs-42": {
-        "name": "Szata Ukojenia",
+        "name": "Robe of Soothing",
         "desc": "Za każdym razem, gdy dajesz sojusznikowi kartę zdolności {PRAYER}, ten sojusznik może wykonać „{HEAL} 2, na siebie”."
     },
     "cs-43": {
-        "name": "Błyszcząca Mitra",
+        "name": "Resplendent Mitre",
         "desc": "Podczas twojej akcji leczenia dodaj +2 do {HEAL} do każdego leczenia."
     },
     "cs-44": {
-        "name": "Pocisk Kanistrowy",
+        "name": "Canister Projectile",
         "desc": "Podczas twojej zdolności ataku dystansowego dodaj {PIERCE} 2 do jednego ataku."
     },
     "cs-45": {
-        "name": "Armata Łańcuchowa",
+        "name": "Chain Cannon",
         "desc": "Podczas twojej tury wykonaj „{PULL} 2, na siebie w kierunku jednego wroga w odległości {RANGE} 3”."
     },
     "cs-46": {
-        "name": "Gwizdek Przywoływacza",
+        "name": "Summoner's Whistle",
         "desc": "Podczas twojej tury jeden z twoich przywołanych sojuszników wykonuje\n{MOVE} +0\n{ATTACK} +0\na ty kontrolujesz te zdolności."
     },
     "cs-47": {
-        "name": "Naramienniki Natury",
+        "name": "Nature Armlets",
         "desc": "Gdy jesteś {MOUNTED} na przywołańcu, możesz zastosować efekty swoich małych przedmiotów {ITEM} do przywołańca zamiast do siebie."
     },
     "cs-48": {
-        "name": "Probówka",
+        "name": "Test Tube",
         "desc": "Podczas twojej tury {ANY_X}, aby wykonać jedną z poniższych akcji: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, na siebie, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     "cs-49": {
-        "name": "Wzmacniający Strzał",
+        "name": "Booster Shot",
         "desc": "Podczas twojej tury wykonaj jedną z poniższych akcji: {RECOVER} jedną odrzuconą kartę | {HEAL} 3, na siebie | dodaj +2 do {ATTACK} do swojego następnego ataku w tej turze."
     },
     "cs-50": {
-        "name": "Lśniący Pancerz",
+        "name": "Luminous Carapace",
         "desc": "Podczas twojej tury, gdy {ANY_X} żywioł, nie przesuwaj zużytego żywiołu do kolumny Nieaktywne."
     },
     "cs-51": {
-        "name": "Płonąca Zbroja",
+        "name": "Flaming Armor",
         "desc": "Kiedy jesteś atakowany, możesz {FIRE_X}, aby zyskać {RETALIATE} 3 na ten atak."
     },
     "cs-52": {
-        "name": "Płonący Topór",
+        "name": "Flaming Axe",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj +1 do {ATTACK} oraz {WOUND} do wszystkich swoich ataków. {FIRE}"
     },
     "cs-53": {
-        "name": "Moździerz Polowy",
+        "name": "Field Mortar",
         "desc": "Raz na turę, podczas twojej tury, możesz usunąć jeden stan z sąsiedniej figurki i położyć ten stan na tej karcie, jeśli jeszcze na niej nie leży. Podczas twojej tury jedna sąsiednia figurka zyskuje wszystkie stany z tej karty, po czym {CONSUMED} ten przedmiot."
     },
     "cs-54": {
-        "name": "Sztylet z Zęba Żmii",
+        "name": "Vipertooth Dagger",
         "desc": "Zyskujesz Korzyść przy wszystkich swoich atakach wręcz, gdy zajmujesz trudny teren."
     },
     "cs-55": {
-        "name": "Jad Widmowej Żmii",
+        "name": "Ghost Viper Venom",
         "desc": "Podczas twojej zdolności ataku dodaj {POISON} 2 do jednego ataku."
     },
     "cs-56": {
-        "name": "Pułapka Szczękowa",
+        "name": "Clamp Trap",
         "desc": "Na koniec swojej tury stwórz jedną pułapkę {IMMOBILIZE} zadającą 3 obrażenia na sąsiednim pustym polu."
     },
     "cs-57": {
-        "name": "Oczyszczone Serce Pustki",
+        "name": "Cleansed Voidheart",
         "desc": "Jesteś odporny na {MUDDLE}. Na koniec każdej rundy, jeśli masz {WOUND}, zyskujesz {REGENERATE}."
     },
     "cs-58": {
-        "name": "Zawrotna Nalewka",
+        "name": "Dizzying Tincture",
         "desc": "Podczas twojej zdolności ataku dodaj {DISARM} do jednego ataku."
     },
     "cs-59": {
-        "name": "Krew Drakona",
+        "name": "Drakes Blood",
         "desc": "Podczas twojej tury usuń wszystkie pozytywne stany ze wszystkich wrogów w odległości {RANGE} 2. Można to zastosować wobec wrogów, którzy mają {INVISIBLE}."
     },
     "cs-60": {
-        "name": "Medykament Many",
+        "name": "Mana Medicine",
         "desc": "Podczas twojej tury wykonaj „{HEAL} 5, na siebie”. {ANY}"
     },
     "cs-61": {
-        "name": "Rękawice z Popielnej Stali",
+        "name": "Ashsteel Gauntlets",
         "desc": "Jesteś odporny na {DISARM}, nawet jeśli ten przedmiot jest wykorzystany. Podczas twojej tury zyskujesz {SHIELD} 1 do końca rundy. {eot}"
     },
     "cs-62": {
-        "name": "Emiter Smogu",
+        "name": "Smog Emitter",
         "desc": "Na koniec swojej tury wszyscy wrogowie uznają wszystkie puste pola w odległości {RANGE} 2 od ciebie za trudny teren do końca rundy. {eot}"
     },
     "cs-63": {
-        "name": "Szczęśliwa Podkowa",
+        "name": "Lucky Horseshoe",
         "desc": "Kiedy otrzymujesz obrażenia z ataku skierowanego w ciebie, otrzymujesz zamiast tego połowę tych obrażeń (zaokrągloną w dół)."
     },
     "cs-64": {
-        "name": "Łagodny Rozpalony Tonik",
+        "name": "Mild Kindled Tonic",
         "desc": "Kiedy sojusznik wybiera cię jako cel zdolności leczenia, usuń z siebie jeden negatywny stan przed leczeniem i zyskaj {STRENGTHEN}."
     },
     "cs-65": {
-        "name": "Topór Ratunkowy",
+        "name": "Rescue Axe",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj +1 do {ATTACK} oraz {MUDDLE} do jednego ataku skierowanego we wroga sąsiadującego z jednym z twoich sojuszników."
     },
     "cs-66": {
-        "name": "Żelazny Młot Bojowy",
+        "name": "Iron Malleus",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj +1 do {ATTACK} oraz {IMMOBILIZE} do wszystkich swoich ataków."
     },
     "cs-67": {
-        "name": "Hak Pikowy",
+        "name": "Pike Hook",
         "desc": "Podczas twojej zdolności ataku wręcz w jeden cel dodaj {PIERCE} 2 oraz {PULL} 1 do ataku i możesz zaatakować jednego wroga w odległości do 2 pól."
     },
     "cs-68": {
-        "name": "Wybuchowy Tonik",
+        "name": "Explosive Tonic",
         "desc": "Podczas twojej tury wykonaj: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
     },
     "cs-69": {
-        "name": "Ostry Rozpalony Tonik",
+        "name": "Spicy Kindled Tonic",
         "desc": "Przy następnych trzech zdolnościach leczenia skierowanych w ciebie możesz albo najpierw usunąć z siebie wszystkie negatywne stany, albo zyskać {STRENGTHEN}."
     },
     "cs-70": {
-        "name": "Lina Użytkowa",
+        "name": "Utility Rope",
         "desc": "Podczas twojej tury wykonaj „{PULL} 2, wybierz jednego sojusznika lub wroga w odległości {RANGE} 3.”"
     },
     "cs-71": {
-        "name": "Ognioodporny Hełm",
+        "name": "Fireproof Helm",
         "desc": "Za każdym razem, gdy miałbyś otrzymać obrażenia od {WOUND}, zamiast tego wykonaj „{HEAL} 1, na siebie”"
     },
     "cs-72": {
-        "name": "Drewniana Drabina",
+        "name": "Wooden Ladder",
         "desc": "Dodaj +1 do zasięgu wszystkich swoich zdolności dystansowych wykonywanych, gdy sąsiadujesz z przeszkodą. Za każdym razem, gdy wchodzisz na pole z pułapką, możesz zdecydować, że jej nie uruchamiasz."
     },
     "cs-73": {
-        "name": "Apteczka",
+        "name": "Medical Kit",
         "desc": "Za każdym razem, gdy używasz domyślnej górnej akcji karty zdolności, możesz wykonać zdolność „{HEAL} 2, {RANGE} 1” zamiast zdolności „{ATTACK} 2”."
     },
     "cs-74": {
-        "name": "Łagodny Tonik Wzmacniający",
+        "name": "Mild Bolstering Tonic",
         "desc": "Podczas twojej zdolności leczenia skierowanej w co najmniej jednego sojusznika dodaj +1 do leczenia oraz {STRENGTHEN} do każdego leczenia."
     },
     "cs-75": {
-        "name": "Medalion Dębu",
+        "name": "Medallion of the Oak",
         "desc": "Kiedy jesteś atakowany w tej rundzie, ty i wszyscy sąsiedni sojusznicy rozpatrujecie każdą dobraną negatywną kartę modyfikatora ataku oraz {modifier_no_damage} jako {+0_WHITE}."
     },
     "cs-76": {
-        "name": "Nóż do Przypalania Ran",
+        "name": "Cauterizing Knife",
         "desc": "Podczas twojej zdolności leczenia dodaj +3 do {HEAL} oraz {WOUND} do każdego leczenia."
     },
     "cs-77": {
-        "name": "Zestaw Urazowy",
+        "name": "Trauma Kit",
         "desc": "Podczas twojej zdolności leczenia podwój wartość każdego leczenia. Jeśli ta zdolność leczenia usuwa {WOUND}, ten przedmiot zostaje wykorzystany zamiast zużyty."
     },
     "cs-78": {
-        "name": "Zwój Charyzmy",
+        "name": "Scroll of Charisma",
         "desc": "Podczas twojej tury jeden sojusznik w odległości {RANGE} 2 może wykonać jedną z poniższych akcji: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, na siebie."
     },
     "cs-79": {
-        "name": "Tarcza Ratunkowa",
+        "name": "Rescue Shield",
         "desc": "Kiedy sąsiedni sojusznik otrzymuje obrażenia z ataku skierowanego w niego, ten sojusznik zyskuje {SHIELD} 2 na ten atak i usuwa wszystkie negatywne stany nałożone przez ten atak."
     },
     "cs-80": {
-        "name": "Zwój Ochrony",
+        "name": "Scroll of Protection",
         "desc": "Kiedy sojusznik w odległości {RANGE} 5 miałby otrzymać obrażenia z ataku skierowanego w niego, zamiast tego nie otrzymuje obrażeń."
     },
     "cs-81": {
-        "name": "Ostry Tonik Wzmacniający",
+        "name": "Spicy Bolstering Tonic",
         "desc": "Podczas twojej zdolności leczenia skierowanej w co najmniej jednego sojusznika dodaj +2 do {HEAL}, {STRENGTHEN} oraz {BLESS} do każdego leczenia."
     },
     "cs-82": {
-        "name": "Zwój Rozkazu",
+        "name": "Scroll of Command",
         "desc": "Podczas twojej tury jeden sojusznik w odległości {RANGE} 3 może wykonać jedną z poniższych akcji: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, na siebie."
     },
     "cs-83": {
-        "name": "Sfera Prądów",
+        "name": "Sphere of Currents",
         "desc": "Podczas twojej tury stwórz dwa kafelki trudnego terenu wodnego na polach w odległości {RANGE} 3, które nie zawierają żadnych kafelków nakładki. {MUDDLE} wszystkie figurki zajmujące kafelek wody w odległości {RANGE} 3."
     },
     "cs-84": {
-        "name": "Kusza na Pociski Szlamowe",
+        "name": "Slug Crossbow",
         "desc": "Podczas twojej zdolności ataku dystansowego w jeden cel zamień ten atak na następujący: {AOE.line_1_1}."
     },
     "cs-85": {
-        "name": "Udoskonalona Kusza na Pociski Szlamowe",
+        "name": "Refined Slug Crossbow",
         "desc": "Podczas twojej zdolności ataku dystansowego w jeden cel dodaj +1 do {ATTACK} i zamień ten atak na następujący: {AOE.line_1_1}."
     },
     "cs-86": {
-        "name": "Sztandar Bastionu",
+        "name": "Bulwark Banner",
         "desc": "Podczas twojej tury ty i wszyscy sojusznicy zyskujecie {SHIELD} 1 do końca rundy. {eot}"
     },
     "cs-87": {
-        "name": "Udoskonalony Sztandar Bastionu",
+        "name": "Refined Bulwark Banner",
         "desc": "Podczas twojej tury wszyscy sąsiedni sojusznicy zyskują {SHIELD} równą twojej aktualnej wartości Tarczy ze zdolności do końca rundy. {eot}"
     },
     "cs-88": {
-        "name": "Zdalny Żuk",
+        "name": "Remote Beetle",
         "desc": "Podczas twojej tury otwórz jedne odblokowane zamknięte drzwi w odległości {RANGE} 2."
     },
     "cs-89": {
-        "name": "Udoskonalony Zdalny Żuk",
+        "name": "Refined Remote Beetle",
         "desc": "Podczas twojej tury otwórz jedne odblokowane zamknięte drzwi w odległości {RANGE} 2."
     },
     "cs-90": {
-        "name": "Płonące Buty",
+        "name": "Blazing Boots",
         "desc": "Podczas twojej zdolności ruchu podwój wartość ruchu."
     },
     "cs-91": {
-        "name": "Udoskonalone Płonące Buty",
+        "name": "Refined Blazing Boots",
         "desc": "Podczas twojej zdolności ruchu dodaj {JUMP} i podwój wartość ruchu."
     },
     "cs-92": {
-        "name": "Dmuchawka na Jad Żmii",
+        "name": "Viper Blowgun",
         "desc": "Podczas twojej tury możesz {EARTH_X}, aby wykonać „{ATTACK} 1, {RANGE} 3, {POISON}”."
     },
     "cs-93": {
-        "name": "Udoskonalona Dmuchawka na Jad Żmii",
+        "name": "Refined Viper Blowgun",
         "desc": "Podczas twojej tury wykonaj „{ATTACK} 1, {RANGE} 4, {POISON}”. Możesz {EARTH_X}, aby dodać {TARGET}."
     },
     "cs-94": {
-        "name": "Kamień Mrozu",
+        "name": "Frost Stone",
         "desc": "Podczas twojej tury możesz położyć jeden żeton postaci na tej karcie, aby wygenerować: {ICE}.\nGdy na karcie leżą dwa żetony, jest ona zużyta {CONSUMED}."
     },
     "cs-95": {
-        "name": "Kamień Burzy",
+        "name": "Storm Stone",
         "desc": "Podczas twojej tury możesz położyć jeden żeton postaci na tej karcie, aby wygenerować: {WIND}.\nGdy na karcie leżą dwa żetony, jest ona zużyta {CONSUMED}."
     },
     "cs-96": {
-        "name": "Kamień Piekła",
+        "name": "Inferno Stone",
         "desc": "Podczas twojej tury możesz położyć jeden żeton postaci na tej karcie, aby wygenerować: {FIRE}.\nGdy na karcie leżą dwa żetony, jest ona zużyta {CONSUMED}."
     },
     "cs-97": {
-        "name": "Kamień Drżenia",
+        "name": "Tremor Stone",
         "desc": "Podczas twojej tury możesz położyć jeden żeton postaci na tej karcie, aby wygenerować: {EARTH}.\nGdy na karcie leżą dwa żetony, jest ona zużyta {CONSUMED}."
     },
     "cs-98": {
-        "name": "Kamień Blasku",
+        "name": "Brilliant Stone",
         "desc": "Podczas twojej tury możesz położyć jeden żeton postaci na tej karcie, aby wygenerować: {LIGHT}.\nGdy na karcie leżą dwa żetony, jest ona zużyta {CONSUMED}."
     },
     "cs-99": {
-        "name": "Kamień Mroku",
+        "name": "Dark Stone",
         "desc": "Podczas twojej tury możesz położyć jeden żeton postaci na tej karcie, aby wygenerować: {DARK}.\nGdy na karcie leżą dwa żetony, jest ona zużyta {CONSUMED}."
     },
     "cs-100": {
-        "name": "Kamień Cudów",
+        "name": "Wonder Stone",
         "desc": "Podczas twojej tury możesz położyć jeden żeton postaci na tej karcie, aby wygenerować: {ANY}.\nGdy na karcie leżą dwa żetony, jest ona zużyta {CONSUMED}."
     },
     "cs-aa01": {
-        "name": "Bastion Skalnokolcy",
+        "name": "Rockspine Bulwark",
         "desc": "Przy następnych trzech źródłach obrażeń z ataków skierowanych w ciebie lub w sąsiedniego sojusznika zaatakowana figurka zyskuje {SHIELD} 1 na ten atak."
     },
     "cs-aa02": {
-        "name": "Miód Widmowego Połysku",
+        "name": "Ghostshimmer Honey",
         "desc": "Podczas twojej tury wykonaj {HEAL} 3\n{REGENERATE}\nNa siebie i jednego sąsiedniego sojusznika."
     },
     "cs-aa03": {
-        "name": "Przędzalnia Stalowego Jedwabiu",
+        "name": "Steelsilk Spinneret",
         "desc": "Przy następnych dwóch razach, gdy wróg otrzyma obrażenia od ataku na ciebie, ten wróg zyskuje {IMMOBILIZE}."
     },
     "cs-qa01": {
-        "name": "Modulator Mocy",
+        "name": "Power Modulator",
         "desc": "(X wynosi 1, 2, 3)\nPodczas twojej tury zrezygnuj z górnej akcji, aby wykonać {ATTACK} X+1\n{RANGE} 2\n{TARGET} 4-X"
     },
     "cs-qa02": {
-        "name": "Młot z Parowym Tłokiem",
+        "name": "Steam Piston Hammer",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj {MUDDLE} oraz {PUSH} 1 do pojedynczego ataku."
     },
     "cs-qa03": {
-        "name": "Rękawice Pajęczej Wspinaczki",
+        "name": "Spider Climb Gloves",
         "desc": "Twój ruch może wchodzić na pola zawierające przeszkody i na nich się kończyć, tak jakbyś miał {FLYING}."
     },
     "cs-qa04": {
-        "name": "Podkładki Odwracające Grawitację",
+        "name": "Gravity Inversion Pads",
         "desc": "Stwórz jedną pułapkę na pustym polu w odległości {RANGE} 3.\nJeśli ty lub sojusznik uruchomicie tę pułapkę, ta figurka zyskuje {FLYING} do końca rundy. | Każdy wróg, który wejdzie na pole z tą pułapką, uruchamia ją i traci {FLYING} do końca rundy."
     },
     "cs-qa05": {
-        "name": "Delikatny Model",
+        "name": "Delicate Model",
         "desc": "Przywołaj Zbieracza Złomu\nZbierasz łup {LOOT} na każdym polu, na które wejdzie ten przywołaniec.\nTy kontrolujesz akcje tego przywołańca."
     },
     "cs-qa06": {
-        "name": "Auscudec Twórców",
+        "name": "Auscudec of the Makers",
         "desc": "Podczas twojej tury zrezygnuj z górnej akcji, aby zagrać akcję przywołańca z karty w swoim stosie utraconych, ignorując dwa {SCRAP_X}."
     },
     "cs-rm01": {
-        "name": "Ząbkowana Krawędź",
+        "name": "Serrated Edge",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj {RUPTURE} do jednego ataku."
     },
     "cs-rm02": {
-        "name": "Makabryczne Buty",
+        "name": "Grisly Boots",
         "desc": "Po swojej zdolności ruchu wykonaj {PUSH} 1\nCel: jeden sąsiedni wróg\nDodaj +1 do {PUSH}, jeśli w tej rundzie przesunąłeś się o 4 lub więcej pól."
     },
     "cs-rm03": {
-        "name": "Szabla Straszliwej Łuski",
+        "name": "Terrorscale Saber",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj +1 do {ATTACK} oraz {PIERCE} 2 do jednego ataku skierowanego we wroga z {WOUND} lub {RUPTURE}."
     },
     "cs-rm04": {
-        "name": "Skrzyżowane Ostrza Straszliwej Łuski",
+        "name": "Terrorscale Crossblades",
         "desc": "Przy twoich następnych trzech atakach wręcz skierowanych we wrogów z co najmniej jednym negatywnym stanem zyskujesz Korzyść."
     },
     "cs-rm05": {
-        "name": "Rytuał Zguby",
+        "name": "Rite of Ruin",
         "desc": "Podczas twojej zdolności ataku zyskaj {WOUND}, aby dodać +3 do {ATTACK} do jednego ataku. Jeśli zabijesz cel, wykonaj „{HEAL} 3, na siebie”."
     },
     "cs-rm06": {
-        "name": "Dziki Kirys",
+        "name": "Savage Cuirass",
         "desc": "Przy następnych dwóch razach, gdy miałbyś stracić kartę z ręki, aby zignorować otrzymywane obrażenia, odrzuć ją zamiast tego i zyskaj {WOUND}."
     },
     "fh-1": {
@@ -2810,28 +2810,28 @@ export default {
         "desc": "Kiedy odpoczywasz, możesz zachować do trzech kart {TIDE_ICON} w swoim obszarze aktywnym. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
-        "name": "Wstążka Przyjaźni",
+        "name": "Ribbon of Friendship",
         "source": "Nagroda w Solo Scenario - {AN}",
         "desc": "Natychmiast po wykonaniu zdolności Wzmocnienia wykonaj: {POISON.fh} {RANGE.fh} 2. Możesz wykonać tę zdolność tak, jakbyś zajmował to samo pole co jeden z twoich przywołańców."
     },
     "mp-SA": {
-        "name": "Herb Frosthaven",
+        "name": "Crest of Frosthaven",
         "source": "Nagroda w Solo Scenario - {SA}",
         "desc": "Za każdym razem, gdy odpoczywasz długo, zasil Lód i odwróć tę kartę.",
         "backDesc": "Za każdym razem, gdy sojusznik odpoczywa, możesz odwrócić tę kartę, aby dać mu: {HEAL.fh} 2, na siebie"
     },
     "mp-CA A": {
-        "name": "Misa Proroctwa A",
+        "name": "Basin of Prophecy A",
         "source": "Nagroda w Solo Scenario - {CA}",
         "desc": "Dodaj +1 Wróżbiarstwa do wszystkich Wróżb."
     },
     "mp-CA B": {
-        "name": "Misa Proroctwa B",
+        "name": "Basin of Prophecy B",
         "source": "Nagroda w Solo Scenario - {CA}",
         "desc": "Podczas twojej tury wykonaj: {ATTACK.fh} 1, {TARGET.fh} 1 wróg zajmujący pole zawierające {RIFT}, {PIERCE.fh} 2, {DIVINATION} 3"
     },
     "mp-HA": {
-        "name": "Buty Bez Zbędnych Ceregieli",
+        "name": "No Nonsense Boots",
         "source": "Nagroda w Solo Scenario - {HA}",
         "desc": "Na koniec swojej tury, jeśli w tej turze wydałeś 3 lub więcej Determinacji, odwróć tę kartę.",
         "backDesc": "Podczas twojej tury, jeśli masz aktywną Irytację, możesz przenieść tę kartę do swojej puli, aby zagrać inną kartę z puli i wykonać jej akcję Irytacji, a następnie odwróć tę kartę."
@@ -2857,7 +2857,7 @@ export default {
         "desc": "Kiedy jesteś atakowany, przed dobraniem karty modyfikatora ataku, atakujący otrzymuje niekorzyść na ten atak."
     },
     "gh2-5": {
-        "name": "Luneta Zwiadowcy",
+        "name": "Scouting Lens",
         "source": "Dobrobyt 1",
         "desc": "Podczas twojej zdolności ataku dodaj {PIERCE.fh} 1 do jednego ataku."
     },
@@ -2877,12 +2877,12 @@ export default {
         "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zyskujesz {SHIELD.fh} 1 na ten atak."
     },
     "gh2-9": {
-        "name": "Różdżka Skupienia",
+        "name": "Focusing Rod",
         "source": "Dobrobyt 1",
         "desc": "Podczas twojej tury, jeśli wykonałeś akcję z {LOST.fh}, wykonaj: {HEAL.fh} 1, {RANGE.fh} 3"
     },
     "gh2-10": {
-        "name": "Prosty Łuk",
+        "name": "Simple Bow",
         "source": "Dobrobyt 1",
         "desc": "Podczas twojej zdolności ataku dystansowego zyskaj Korzyść na jeden atak."
     },
@@ -3015,7 +3015,7 @@ export default {
         "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zyskujesz {SHIELD.fh} 2 na ten atak."
     },
     "gh2-36": {
-        "name": "Księżycowy Kolczyk",
+        "name": "Moon Earing",
         "source": "Dobrobyt 4\nZdarzenie w mieście 6",
         "desc": "Kiedy odpoczywasz krótko, {RECOVER.fh} do trzech swoich wykorzystanych przedmiotów."
     },
@@ -3035,12 +3035,12 @@ export default {
         "desc": "Przywołaj Szkielet"
     },
     "gh2-40": {
-        "name": "Cienisty Pancerz",
+        "name": "Shadow Amor",
         "source": "Dobrobyt 4",
         "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zignoruj to {DAMAGE.fh} i zasil {DARK}."
     },
     "gh2-41": {
-        "name": "Kinetyczne Bieżniki",
+        "name": "Kinetic Treads",
         "source": "Dobrobyt 5",
         "desc": "Na koniec swojej zdolności ruchu daj jednemu sąsiedniemu sojusznikowi: {MOVE.fh} 2"
     },
@@ -3055,7 +3055,7 @@ export default {
         "desc": "Podczas twojej tury dodaj +1 do {RANGE.fh} do wszystkich swoich ataków dystansowych."
     },
     "gh2-44": {
-        "name": "Łuk Precyzyjny",
+        "name": "Precision Bow",
         "source": "Dobrobyt 5",
         "desc": "Po twojej zdolności ataku dystansowego wykonaj: {ATTACK.fh} 1, {TARGET.fh} 1 cel zdolności ataku w dowolnej odległości {RANGE.fh}, {PIERCE.fh} 1"
     },
@@ -3065,7 +3065,7 @@ export default {
         "desc": "Podczas twojej tury {ANY} {ANY}."
     },
     "gh2-46": {
-        "name": "Lekka Tarcza",
+        "name": "Light Targe",
         "source": "Dobrobyt 5",
         "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zyskujesz {SHIELD.fh} 1 na ten atak. Po ataku, ale przed jakimkolwiek {RETALIATE.fh}, wykonaj: {MOVE.fh} 1"
     },
@@ -3090,7 +3090,7 @@ export default {
         "desc": "Podczas twojej tury wykonaj: {HEAL.fh} 3, jeden sojusznik, {RANGE.fh} 1"
     },
     "gh2-51": {
-        "name": "Ciężka Buława",
+        "name": "Heavy Mace",
         "source": "Dobrobyt 6\nZdarzenie na drodze 8",
         "desc": "Po tym, jak zaatakuje cię sąsiedni wróg, wykonaj: {ATTACK.fh} 1, wróg, który cię zaatakował. Na ten atak nie wpływa {RETALIATE.fh}."
     },
@@ -3171,7 +3171,7 @@ export default {
         "desc": "Podczas twojej tury wykonaj: {INVISIBLE.fh}, na siebie"
     },
     "gh2-67": {
-        "name": "Buty z Kolcami",
+        "name": "Spiked Shoes",
         "source": "Dobrobyt 9",
         "desc": "Kiedy używasz podstawowej dolnej akcji karty zdolności, możesz wykonać {ATTACK.fh} 3 zamiast {MOVE.fh} 2."
     },
@@ -3186,17 +3186,17 @@ export default {
         "desc": "Przy następnych pięciu źródłach {DAMAGE.fh} z ataków skierowanych w ciebie zyskujesz {SHIELD.fh} 1 na te ataki."
     },
     "gh2-70": {
-        "name": "Standardowe Racje Żywnościowe",
+        "name": "Standard Rations",
         "source": "Reputacja Wojskowa 15",
         "desc": "Za każdym razem, gdy leczysz się podczas długiego odpoczynku, dodaj +2 do {HEAL.fh}."
     },
     "gh2-71": {
-        "name": "Kusza Mistrzowskiej Roboty",
+        "name": "Mastercraft Crossbow",
         "source": "Reputacja Wojskowa 17",
         "desc": "Podczas twojej zdolności ataku dystansowego dodaj {WOUND.fh} do jednego ataku. Jeden wróg sąsiadujący z tym celem i znajdujący się dalej od ciebie niż ten cel otrzymuje {DAMAGE.fh} 2."
     },
     "gh2-72": {
-        "name": "Czapka Dowódcy",
+        "name": "Commander's Cap",
         "source": "Reputacja Wojskowa 19",
         "desc": "Sojusznicy zyskują Korzyść przy następnych trzech atakach wykonanych, gdy sąsiadują z tobą. Następnie odwróć tę kartę.",
         "backDesc": "Po następnych trzech zdolnościach ataku, które wykonasz, będąc w odległości {RANGE.fh} 2 od jednego lub więcej sojuszników, odwróć tę kartę."
@@ -3207,18 +3207,18 @@ export default {
         "desc": "Podczas twojej tury daj jednemu ze swoich przywołańców: {SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
-        "name": "Ukryty Sztylet",
+        "name": "Concealed Dagger",
         "source": "Reputacja Gildii Kupieckiej 15",
         "desc": "Podczas twojej tury połóż żeton postaci na jednym sąsiednim wrogu. Na początku każdej tury tego wroga otrzymuje on {DAMAGE.fh} 1. Gdy ten wróg zginie, odwróć tę kartę. {PERSISTENT}",
         "backDesc": "Połóż żeton postaci na polu, na którym zginął wróg. Możesz zebrać ten żeton, aby odwrócić tę kartę."
     },
     "gh2-75": {
-        "name": "Wystawny Kaptur",
+        "name": "Opulent Hood",
         "source": "Reputacja Gildii Kupieckiej 17",
         "desc": "Podczas twojej tury daj jednemu sąsiedniemu sojusznikowi: {ATTACK.fh} 1, {PUSH.fh} 1"
     },
     "gh2-76": {
-        "name": "Insygnia Kupca",
+        "name": "Merchant's Insignia",
         "source": "Reputacja Gildii Kupieckiej 19",
         "desc": "Za każdym razem, gdy ukończysz scenariusz, zyskujesz 10 szt. złota."
     },
@@ -3238,7 +3238,7 @@ export default {
         "desc": "Podczas twojej zdolności ataku dodaj {POISON.fh}, {STUN.fh} oraz {CURSE.fh} do jednego ataku."
     },
     "gh2-80": {
-        "name": "Demoniczna Czaszka",
+        "name": "Demonic Skull",
         "source": "Reputacja Demonów 19",
         "desc": "Podczas twojej tury {ANY} i odwróć tę kartę na koniec swojej tury.",
         "backDesc": "Kiedy zabijesz potwora, odwróć tę kartę na koniec swojej tury."
@@ -3304,7 +3304,7 @@ export default {
         "desc": "Podczas twojej zdolności ataku dodaj {STUN.fh} do jednego ataku."
     },
     "gh2-93": {
-        "name": "Zwój Zaciekłości",
+        "name": "Scroll of Ferocity",
         "source": "Losowy przedmiot",
         "desc": "Podczas twojej tury daj jednemu sojusznikowi w odległości {RANGE.fh} 5: {ATTACK.fh} 2"
     },
@@ -3314,12 +3314,12 @@ export default {
         "desc": "Podczas twojej tury wykonaj: {HEAL.fh} 3, {RANGE.fh} 5"
     },
     "gh2-95": {
-        "name": "Zwój Osłony",
+        "name": "Scroll of Shielding",
         "source": "Losowy przedmiot",
         "desc": "Kiedy jeden sojusznik w odległości {RANGE.fh} 5 otrzymuje {DAMAGE.fh} z ataku, daj mu {SHIELD.fh} 3 na ten atak."
     },
     "gh2-96": {
-        "name": "Zwój Szybkości",
+        "name": "Scroll of Swiftness",
         "source": "Losowy przedmiot",
         "desc": "Podczas zdolności ruchu jednego sojusznika w odległości {RANGE.fh} 5 dodaj +1 do {MOVE.fh} oraz {JUMP.fh}."
     },
@@ -3340,7 +3340,7 @@ export default {
         "desc": "Podczas twojej tury wykonaj: {ATTACK.fh} 2, {RANGE.fh} 3"
     },
     "gh2-100": {
-        "name": "Naładowane Buty",
+        "name": "Charged Boots",
         "source": "{SCENARIO 71} (Skarb #29)",
         "desc": "Po twoich następnych trzech turach, podczas których nie wykonasz zdolności ruchu, odwróć tę kartę.",
         "backDesc": "Podczas twojej zdolności ruchu dodaj +2 do {MOVE.fh} i odwróć tę kartę."
@@ -3356,12 +3356,12 @@ export default {
         "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zyskujesz {SHIELD.fh} 4 na ten atak."
     },
     "gh2-103": {
-        "name": "Kaptur Strażnika",
+        "name": "Ranger's Hood",
         "source": "{SCENARIO 28} (Skarb #65)",
         "desc": "Podczas zdolności ataku jednego z twoich przywołańców, przed dobraniem kart modyfikatora ataku, odsłoń dwie górne karty ze swojej talii modyfikatorów ataku. Możesz położyć dowolną z nich na spód talii."
     },
     "gh2-104": {
-        "name": "Różdżka Ochrony",
+        "name": "Warding Rod",
         "source": "{SCENARIO 4} (Skarb #24)",
         "desc": "Podczas twojej tury wykonaj: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
     },
@@ -3409,29 +3409,29 @@ export default {
         "desc": "Podczas twojej tury połóż żeton postaci na jednym zwykłym lub elitarnym wrogu w odległości {RANGE.fh} 3. Ty i wszyscy sojusznicy dodajecie +1 do {ATTACK.fh} do wszystkich ataków skierowanych w tego wroga. {PERSISTENT}"
     },
     "gh2-114": {
-        "name": "Buty Wichru",
+        "name": "Gust Striders",
         "source": "Zdarzenie w mieście 17\nZdarzenie w mieście 81",
         "desc": "Podczas twojej tury dodaj {JUMP.fh} do swojej następnej zdolności ruchu. Jeśli {WIND} jest silny lub słabnący, dodaj także +2 do {MOVE.fh}."
     },
     "gh2-115": {
-        "name": "Różdżka Przeniesienia",
+        "name": "Rod of Transference",
         "source": "{SCENARIO 11} (Skarb #35)",
         "desc": "Kiedy sojusznik w odległości {RANGE.fh} 3 miałby otrzymać {DAMAGE.fh}, to ty otrzymujesz to {DAMAGE.fh} zamiast niego."
     },
     "gh2-116": {
-        "name": "Przeznaczone Wersy",
+        "name": "Fated Verses",
         "source": "Dobrobyt 1",
         "desc": "Podczas twojej zdolności ataku możesz zyskać Niekorzyść na jeden atak, aby odwrócić tę kartę na koniec swojej tury.",
         "backDesc": "Podczas zdolności ataku sojusznika ten sojusznik zyskuje Korzyść na jeden ze swoich ataków, a ty odwracasz tę kartę.",
         "faq": "Nie możesz użyć awersu, jeśli masz już Niekorzyść na ten atak. Awersu można użyć przy ataku, który daje ci sojusznik, ale karta odwraca się dopiero na koniec twojej następnej tury."
     },
     "gh2-117": {
-        "name": "Ostrze Świtu",
+        "name": "Dawnblade",
         "source": "Nagroda w {SCENARIO 99}",
         "desc": "Podczas twojej tury, jeśli {DARK} jest silny lub słabnący, dodaj +1 do {ATTACK.fh} do swojego następnego ataku wręcz. Jeśli zabrałeś Piętno Zmierzchu, {LIGHT}."
     },
     "gh2-118": {
-        "name": "Piętno Zmierzchu",
+        "name": "Duskbrand",
         "source": "Zdarzenie na drodze 33",
         "desc": "Podczas twojej tury, jeśli {LIGHT} jest silny lub słabnący, dodaj +1 do {ATTACK.fh} do swojego następnego ataku wręcz. Jeśli zabrałeś Ostrze Świtu, {DARK}."
     },
@@ -3451,31 +3451,31 @@ export default {
         "desc": "Podczas twojej tury wykonaj: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3. Jeśli zabrałeś Buty Smoczej Łuski i Zbroję Smoczej Łuski, dodaj +1 do {TARGET.fh}."
     },
     "gh2-122": {
-        "name": "Latarnia Mroźnego Żuka",
+        "name": "Frost Beetle Lantern",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {ICE}"
     },
     "gh2-123": {
-        "name": "Latarnia Burzowego Żuka",
+        "name": "Storm Beetle Lantern",
         "source": "Zdarzenie na drodze 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {WIND}"
     },
     "gh2-124": {
-        "name": "Latarnia Zapalającego Żuka",
+        "name": "Ignition Beetle Lantern",
         "source": "Zdarzenie na drodze 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
-        "name": "Latarnia Drżącego Żuka",
+        "name": "Tremor Beetle Lantern",
         "source": "Zdarzenie na drodze 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
-        "name": "Latarnia Lśniącego Żuka",
+        "name": "Brilliant Beetle Lantern",
         "source": "Zdarzenie na drodze 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
-        "name": "Latarnia Zmierzchowego Żuka",
+        "name": "Twilight Beetle Lantern",
         "source": "Zdarzenie na drodze 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {DARK}"
     },
@@ -3536,17 +3536,17 @@ export default {
         "desc": "Podczas twojej zdolności ataku wręcz otrzymaj {DAMAGE.fh} 2, aby dodać +1 do {ATTACK.fh} do wszystkich ataków."
     },
     "gh2-139": {
-        "name": "Berło z Zaświatów",
+        "name": "Otherworldly Scepter",
         "source": "Nagroda w {SCENARIO 94}\nZdarzenie w mieście 85",
         "desc": "Kiedy wykonujesz akcję przywołania, każdy przywołaniec przywołany tą akcją zyskuje {WARD.fh}, {INVISIBLE.fh} i {STRENGTHEN.fh}."
     },
     "gh2-140": {
-        "name": "Zdalny Pająk Bojowy",
+        "name": "Remote Attack Spider",
         "source": "Zdarzenie w mieście 98",
         "desc": "Podczas twojej tury wykonaj: {POISON.fh}, wszyscy, {RANGE.fh} 1"
     },
     "gh2-141": {
-        "name": "Zdalny Pająk Wsparcia",
+        "name": "Remote Aid Spider",
         "source": "Zdarzenie w mieście 98",
         "desc": "Podczas twojej tury wykonaj: {HEAL.fh} 2, wszyscy, {RANGE.fh} 1"
     },
@@ -3557,41 +3557,41 @@ export default {
         "faq": "Nie otrzymujesz obrażeń od niebezpiecznego terenu, który stworzysz; rani on tylko figurki, które na niego wchodzą."
     },
     "gh2-143": {
-        "name": "Buty Podparcia",
+        "name": "Boots of Bracing",
         "source": "{SCENARIO 81} (Skarb #61)",
         "desc": "Podczas twojej zdolności ataku dystansowego zyskaj {IMMOBILIZE.fh}, aby dodać +1 do {ATTACK.fh} do jednego ataku."
     },
     "gh2-144": {
-        "name": "Macierz Czasowa",
+        "name": "Temporal Matrix",
         "source": "Nagroda w {SCENARIO 92}",
         "desc": "Podczas ustalania kolejności inicjatywy, po odkryciu wszystkich kart zdolności, ustal inicjatywy w tej rundzie od najwyższej do najniższej, zamiast od najniższej do najwyższej."
     },
     "gh2-145": {
-        "name": "Hak Dreszczowca",
+        "name": "Harrow-Hook",
         "desc": "Podczas twojej tury wykonaj: {MOVE.fh} 2, {JUMP.fh}. Ten ruch musi zakończyć się na polu sąsiadującym z przeszkodą lub murem."
     },
     "gh2-146": {
-        "name": "Bursztynowa Pustka",
+        "name": "Amberhollow",
         "source": "Zdarzenie na drodze 15\nZdarzenie na drodze 25\nZdarzenie na drodze 28\nZdarzenie na drodze 30\nZdarzenie na drodze 31",
         "desc": "Ten przedmiot musisz zabrać do scenariusza i wraca on do puli niedostępnych przedmiotów na koniec scenariusza. Podczas twojej tury wykonaj: {STRENGTHEN.fh}, {BLESS.fh}, na siebie"
     },
     "gh2-147": {
-        "name": "Berło Xorna",
+        "name": "Scepter of Xorn",
         "source": "Nagroda w {SCENARIO 57}\nNagroda w {SCENARIO 58}",
         "desc": "Podczas twojej tury, jeśli nie masz {POISON.fh}, zyskaj {POISON.fh}, aby wykonać: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
     },
     "gh2-148": {
-        "name": "Tarcza Sprawiedliwych",
+        "name": "Shield of the Righteous",
         "source": "{SCENARIO 65} (Skarb #59)",
         "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zignoruj to {DAMAGE.fh} i zasil {LIGHT}"
     },
     "gh2-149": {
-        "name": "Luneta Esterów",
+        "name": "Aesther Spyglass",
         "source": "Cel życiowy 04",
         "desc": "Ten przedmiot można użyć tylko wtedy, gdy sąsiadujesz z co najmniej jedną przeszkodą. Podczas twojej tury wykonaj: {BLESS.fh}, na siebie"
     },
     "gh2-150": {
-        "name": "Eksperymentalna Zbroja",
+        "name": "Experimental Armor",
         "source": "Cel życiowy 17",
         "desc": "Tego przedmiotu nie można sprzedać i musisz go zabierać do każdego scenariusza. Kiedy otrzymujesz {DAMAGE.fh} z ataku, możesz otrzymać {DAMAGE.fh} 2, aby wszyscy sąsiedni sojusznicy i wrogowie otrzymali {DAMAGE.fh} 2."
     },
@@ -3600,12 +3600,12 @@ export default {
         "desc": "Podczas twojej zdolności ataku wręcz dodaj {WOUND.fh}, {POISON.fh} do wszystkich ataków."
     },
     "gh2-152": {
-        "name": "Rubinowy Talizman",
+        "name": "Ruby Talisman",
         "source": "Nagroda w {SCENARIO 75}",
         "desc": "Podczas twojej tury, jeśli sojusznik w odległości {RANGE.fh} 3 ma negatywny stan, możesz zyskać {DISARM.fh}, aby usunąć z tego sojusznika jeden negatywny stan i dać mu Zabezpieczenie, {BLESS.fh}."
     },
     "gh2-153": {
-        "name": "Tarcza z Hakiem",
+        "name": "Hooked Shield",
         "source": "Nagroda w Solo Scenario - {BR2}",
         "desc": "Po odepchnięciu wroga wykonaj: {MOVE.fh} 3, {JUMP.fh}. Ten ruch może wchodzić tylko na pola, które odepchnięty wróg opuścił."
     },
@@ -3615,7 +3615,7 @@ export default {
         "desc": "Podczas twojej zdolności leczenia dodaj +1 do {HEAL.fh} oraz {STRENGTHEN.fh} do jednego leczenia skierowanego w sojusznika."
     },
     "gh2-155": {
-        "name": "Eliksir Eteryczny",
+        "name": "Etheric Elixir",
         "source": "Nagroda w Solo Scenario - {SW2}",
         "desc": "Kiedy wykonasz górną akcję {LOST.fh} karty Pobudzający Eter, usuń kartę {NULL_MODIFIER} ze swojej talii modyfikatorów ataku do końca scenariusza."
     },
@@ -3635,7 +3635,7 @@ export default {
         "desc": "Dodaj +1 do {ATTACK.fh} do wszystkich swoich ataków z twoich akcji {AUGMENT}."
     },
     "gh2-159": {
-        "name": "Insygnia Boskości",
+        "name": "Insignia of the Divine",
         "source": "Nagroda w Solo Scenario - {SK2}",
         "desc": "Podczas twojej tury daj sobie lub jednemu sąsiedniemu sojusznikowi: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
     },
@@ -3681,7 +3681,7 @@ export default {
         "desc": "Kiedy sojusznik w odległości {RANGE.fh} 3 otrzymuje {DAMAGE.fh} z ataku, po zdolności ataku wykonaj: {MOVE.fh} 2. Ten ruch musi zakończyć się na polu sąsiadującym z zaatakowanym sojusznikiem."
     },
     "gh2-168": {
-        "name": "Kamizelka Żywiołów",
+        "name": "Elemental Vest",
         "source": "Nagroda w Solo Scenario - {EL2}",
         "desc": "Na koniec swojej tury, za każde dwa żywioły zużyte w tej turze: {ANY}."
     },
@@ -3691,7 +3691,7 @@ export default {
         "desc": "Podczas twojej tury {COMMAND}: {ATTACK.fh} 2"
     },
     "gh2-170": {
-        "name": "Pełzający Pancerz",
+        "name": "Crawling Carapace",
         "source": "Nagroda w Solo Scenario - {BS2}",
         "desc": "Przy pierwszym źródle {DAMAGE.fh} z ataku, które otrzymałbyś ty lub jeden z twoich przywołańców w każdej rundzie, zaatakowana figurka zyskuje {SHIELD.fh} 1 na ten atak."
     }

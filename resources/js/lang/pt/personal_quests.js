@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "Proteger e Servir",
+        "name": "Protect and Serve",
         "progress": [
             "Mata dez Inox.",
             "Conclui o {SCENARIO 33}."
         ]
     },
     "cs-331": {
-        "name": "Especialista em Armas",
+        "name": "Weapons Specialist",
         "progress": [
             "Consome quinze itens de {ONE-HAND} ou {TWO-HANDS}."
         ]
     },
     "cs-332": {
-        "name": "Experimentação",
+        "name": "Experimentation",
         "progress": [
             "Joga 30 cartas pela tua ação de perda {LOST}."
         ]
     },
     "cs-333": {
-        "name": "Caçador de Emoções",
+        "name": "Thrill Seeker",
         "progress": [
             "Revela uma peça de sala ao abrir uma porta vinte vezes."
         ]
     },
     "cs-334": {
-        "name": "Armador de Armadilhas",
+        "name": "Trap Setter",
         "progress": [
             "Desarma uma armadilha, ou faz um inimigo acioná-la, durante o teu turno quinze vezes."
         ]
     },
     "cs-335": {
-        "name": "Exterminador de Bandidos",
+        "name": "Bandit Banisher",
         "progress": [
             "Mata dez Guardas ou Arqueiros.",
             "Conclui o {SCENARIO 35}."
         ]
     },
     "cs-336": {
-        "name": "Criaturas na Luz",
+        "name": "Creatures in the light",
         "progress": [
             "Mata vinte Gosmas, Diabretes da Floresta ou Diabretes Negros."
         ]
     },
     "cs-337": {
-        "name": "Líder Experiente",
+        "name": "Experienced leader",
         "progress": [
             "Conclui doze cenários com pelo menos 12 pontos de experiência."
         ]
     },
     "cs-338": {
-        "name": "Pico de Adrenalina",
+        "name": "Adrenaline Spike",
         "progress": [
             "Mata um inimigo e saqueia a respetiva ficha de moeda na mesma ronda quinze vezes."
         ]
     },
     "cs-339": {
-        "name": "Apoio Mútuo",
+        "name": "Mutual Support",
         "progress": [
             "Mata 30 inimigos adjacentes a qualquer um dos teus aliados."
         ]
     },
     "cs-340": {
-        "name": "Que Sejas Abençoado",
+        "name": "Thy be Blessed",
         "progress": [
             "Saque uma carta de {BLESS} doze vezes durante um ataque."
         ]
     },
     "cs-341": {
-        "name": "Caim Espiritual",
+        "name": "Spiritual Cains",
         "progress": [
             "Gasta 200 moedas de ouro em aprimoramentos."
         ]
     },
     "cs-342": {
-        "name": "O Caminho da Agonia",
+        "name": "The Path of Agony",
         "progress": [
             "Vê um aliado ou inimigo morrer ou ficar exausto durante o teu próprio turno 13 vezes."
         ]
     },
     "cs-343": {
-        "name": "A Morte da Luz",
+        "name": "Cruel Dominion",
         "progress": [
             "Conclui 10 cenários nos quais matas um inimigo que tenha uma condição negativa."
         ]
     },
     "cs-344": {
-        "name": "Seleção Natural",
+        "name": "Natural Selection",
         "progress": [
             "Gera {FIRE} duas vezes.",
             "Gera {ICE} duas vezes.",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "Predador e Presa",
+        "name": "Predator and Prey",
         "progress": [
             "Mata dois ou mais inimigos no mesmo turno quinze vezes."
         ]
     },
     "cs-346": {
-        "name": "Uma Víbora se Divide",
+        "name": "An Adder Divides",
         "progress": [
             "Ocupa terreno difícil em 6 cenários diferentes.",
             "Conclui o {SCENARIO 39}."
         ]
     },
     "cs-347": {
-        "name": "Pesquisa de Campo",
+        "name": "Field Research",
         "progress": [
             "Aplica {POISON} a vinte tipos diferentes de monstros."
         ]
     },
     "cs-348": {
-        "name": "A Mão do Conjurador",
+        "name": "Conjurers Hand",
         "progress": [
             "Mata dez monstros invocados."
         ]
     },
     "cs-349": {
-        "name": "Não Há Descanso para os Ímpios",
+        "name": "No Rest for the Wicked",
         "progress": [
             "Conclui dez cenários sem fazer descanso longo."
         ]
     },
     "cs-350": {
-        "name": "Saúde em Primeiro Lugar",
+        "name": "Health First",
         "progress": [
             "Conclui sete cenários a terminar com a vida cheia."
         ]
     },
     "cs-351": {
-        "name": "Procura Sem Limites",
+        "name": "Limitless Searching",
         "progress": [
             "Saqueia 30 fichas de moeda."
         ]
     },
     "cs-aa-001": {
-        "name": "A Todo Custo",
+        "name": "At All Costs",
         "progress": [
             "Vivencia 8 cenários em que anulas dano ao perderes uma carta como de costume enquanto estás adjacente a um aliado.",
             "Conclui o {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
-        "name": "O Peso do Fracasso",
+        "name": "The Weight of failure",
         "progress": [
             "Conclui 8 cenários sem ficar exausto e com 2 ou menos pontos de vida.",
             "Conclui o {SCENARIO AA2}"
         ]
     },
     "cs-qa-001": {
-        "name": "Inventor Engenhoso",
+        "name": "Ingenious Inventor",
         "progress": [
-            "Obtém imediatamente o “Modulador de Energia” (Item QA-01)",
-            "Mata 12 inimigos com o “Modulador de Energia” (Item QA-01)",
+            "Obtém imediatamente o “Power Modulator” (Item QA-01)",
+            "Mata 12 inimigos com o “Power Modulator” (Item QA-01)",
             "Conclui o {SCENARIO QA1}"
         ]
     },
     "cs-qa-002": {
-        "name": "Mergulhador de Sucata",
+        "name": "Scrap Diver",
         "progress": [
             "Saqueia duas ou mais fichas de moeda com uma única ação oito vezes.",
             "Saqueia duas peças de tesouro.",
@@ -337,15 +337,15 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "Executor Brutal",
+        "name": "Brutal Enforcer",
         "progress": [
-            "Obtém o tipo “Gume Serrilhado” (Item RM-01).",
+            "Obtém o tipo “Serrated Edge” (Item RM-01).",
             "Aplica {WOUND} ou {RUPTURE} a trinta inimigos.",
             "Conclui o {SCENARIO RM1}."
         ]
     },
     "cs-rm-002": {
-        "name": "Predador Alfa",
+        "name": "Apex Predator",
         "progress": [
             "Vivencia vinte rondas em que, durante ou após realizares uma ação com {CONSUMED}, um inimigo morre.",
             "Conclui o {SCENARIO RM3}."
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "Intriga Política",
+        "name": "Political Intrigue",
         "progress": [
             "Adiciona o Evento de Cidade 61 ao baralho de eventos de cidade.",
             "Ganha 30 votos: três votos sempre que ganhar reputação, um voto por item de reputação de facção levado a um cenário concluído.",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Hospitalidade de Estalagem",
+        "name": "Inn to Hospitality",
         "progress": [
             "Saqueia 60 fichas de moeda.",
             "Lê a {SECTION} 125.4."
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "A Queda do Homem",
         "progress": [
-            "Obtém a “Luneta Aesther” (Item 149). Ela não pode ser vendida.",
-            "Usa a “Luneta Aesther” (Item 149) dez vezes.",
+            "Obtém a “Aesther Spyglass” (Item 149). Ela não pode ser vendida.",
+            "Usa a “Aesther Spyglass” (Item 149) dez vezes.",
             "Lê a {SECTION} 115.2.",
             "Segue o {SCENARIO 63} até a conclusão."
         ]
@@ -639,7 +639,7 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "Uma História para Contar",
+        "name": "A Tale to Tell",
         "progress": [
             "Saqueia, ou testemunha o teu grupo a saquear, uma peça de tesouro em dez cenários.",
             "Lê a {SECTION} 12.3."
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "Pai Adotivo",
+        "name": "Adoptive Parent",
         "progress": [
             "Saqueia três fichas de moeda largadas por inimigos em dez cenários.",
             "Lê a {SECTION} 122.5.",
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "A Fugir dos Sin-Ra",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "Adiciona os Eventos de Cidade 69 e 70 ao baralho de eventos de cidade. Obtém a “Carta Negra” (Item 113). Ela não pode ser vendida.",
             "Conclui seis cenários secundários (número do cenário acima de 56).",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "A Viver no Limite",
+        "name": "Living on the Edge",
         "progress": [
-            "Obtém a “Armadura Experimental” (Item 150).",
+            "Obtém a “Experimental Armor” (Item 150).",
             "Usa-a para fazer 20 inimigos sofrerem dano.",
             "Lê a {SECTION} 47.4."
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Estudo Marcial",
+        "name": "Martial Study",
         "progress": [
             "Usa oito itens diferentes de {ONE-HAND} ou {TWO-HANDS} durante os cenários.",
             "Lê a {SECTION} 67.2."
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "Procura pela Proficiência",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "Ganha 120 de experiência com cartas de habilidade.",
             "Lê a {SECTION} 17.2."

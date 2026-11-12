@@ -2416,29 +2416,29 @@ export default {
         ]
     },
     "cs-1": {
-        "name": "Temné jezero"
+        "name": "The Dark Lake"
     },
     "cs-2": {
-        "name": "Podzemní kanály"
+        "name": "Underground Channels"
     },
     "cs-3": {
-        "name": "Zatopená jeskyně",
+        "name": "Flooded Cavern",
         "rewards": [
             "10 zkušeností každý",
             "+1 prosperita"
         ]
     },
     "cs-4": {
-        "name": "Nakažení válečníci",
+        "name": "Infected Warriors",
         "rewards": [
             "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
         ]
     },
     "cs-5": {
-        "name": "Krev Slizů"
+        "name": "Blood of the Oozes"
     },
     "cs-6": {
-        "name": "Otrávená voda",
+        "name": "Poisoned Water",
         "rewards": [
             "+2 reputace",
             "+1 prosperita",
@@ -2446,52 +2446,52 @@ export default {
         ]
     },
     "cs-7": {
-        "name": "Zlatá vejce",
+        "name": "Golden Eggs",
         "rewards": [
             "Získejte společně 30 zlaťáků"
         ]
     },
     "cs-8": {
-        "name": "Rozbitá pevnost",
+        "name": "Shattered Fortress",
         "rewards": [
-            "„Podivný přívěsek“ (předmět 20)"
+            "„Curious Pendant“ (předmět 20)"
         ]
     },
     "cs-9": {
-        "name": "Záchranná mise",
+        "name": "Rescue Mission",
         "rewards": [
             "10 zlaťáků každý",
-            "„Kouřový vypouštěč“ (předmět 62)"
+            "„Smog Emitter“ (předmět 62)"
         ]
     },
     "cs-10": {
-        "name": "Doupě zrůd",
+        "name": "Den of Monstrosity",
         "rewards": [
             "„Menší léčivý lektvar“ (předmět gh-12)",
             "„Menší lektvar many“ (předmět gh-20)"
         ]
     },
     "cs-11": {
-        "name": "Hojná plavba"
+        "name": "Voyage Abound"
     },
     "cs-12": {
-        "name": "Odhalení zdroje"
+        "name": "Uncovering the Source"
     },
     "cs-13": {
-        "name": "Jeskyně mrtvol",
+        "name": "Corpse Cavern",
         "rewards": [
             "+1 prosperita",
             "Každá postava získá jedno z následujícího: „Větší lektvar výdrže“ (předmět gh-34), „Větší lektvar síly“ (předmět gh-41), „Větší lektvar many“ (předmět gh-48)\nPokud nic z toho není v obchodě k dispozici, získá místo toho 20 zlaťáků"
         ]
     },
     "cs-14": {
-        "name": "Kultistická jeskyně",
+        "name": "Cultist Cave",
         "rewards": [
             "15 zkušeností každý"
         ]
     },
     "cs-15": {
-        "name": "Léčka šelem",
+        "name": "Ambush of Beasts",
         "rewards": [
             "15 zlaťáků každý",
             "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
@@ -2505,25 +2505,25 @@ export default {
         ]
     },
     "cs-17": {
-        "name": "Extrakce koulí",
+        "name": "Orb Extraction",
         "rewards": [
             "+2 prosperita"
         ]
     },
     "cs-18": {
-        "name": "Chňapni a uteč",
+        "name": "Grab and Go",
         "rewards": [
             "100 zlaťáků každý. Tyto peníze je nutné okamžitě utratit za vylepšení."
         ]
     },
     "cs-19": {
-        "name": "Elementární pokusy",
+        "name": "Elemental Experiments",
         "rewards": [
             "„Větší lektvar many“ (předmět gh-48)"
         ]
     },
     "cs-20": {
-        "name": "Půlnoční rituál",
+        "name": "Midnight Ritual",
         "rewards": [
             "+1 reputace",
             "+1 prosperita",
@@ -2531,61 +2531,61 @@ export default {
         ]
     },
     "cs-21": {
-        "name": "Ohnivá smrt",
+        "name": "A Fiery Death",
         "rewards": [
             "„Magmové holínky“ (předmět gh-99)"
         ]
     },
     "cs-22": {
-        "name": "Chrám rarachů",
+        "name": "Imp Temple",
         "rewards": [
             "Každá postava získá +2 zlaťáky a 2 zkušenosti za každý vyloupený žeton peněz."
         ]
     },
     "cs-23": {
-        "name": "Komnaty s rampouchy",
+        "name": "Icicle Chambers",
         "rewards": [
             "15 zkušeností každý"
         ]
     },
     "cs-24": {
-        "name": "Děsivá jeskyně",
+        "name": "Eerie Grotto",
         "rewards": [
             "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
         ]
     },
     "cs-25": {
-        "name": "Jasná jiskro, pohleď!",
+        "name": "Brightspark, Behold!",
         "rewards": [
             "+1 reputace",
             "Přidejte událost na cestách 57 do balíčku"
         ]
     },
     "cs-26": {
-        "name": "Vrchol termálního kamene",
+        "name": "Thermal Stone Peak",
         "rewards": [
             "20 zkušeností každý",
             "1 ✓ každý"
         ]
     },
     "cs-27": {
-        "name": "Jeskyně omrzlin",
+        "name": "Frostbite Cavern",
         "rewards": [
             "10 zlaťáků každý",
-            "„Závratná tinktura“ (předmět 58)"
+            "„Dizzying Tincture“ (předmět 58)"
         ]
     },
     "cs-28": {
-        "name": "Fontána kostí",
+        "name": "Fountain of Bones",
         "rewards": [
             "1 ✓ každý"
         ]
     },
     "cs-29": {
-        "name": "Pohřební komora"
+        "name": "Burial Chamber"
     },
     "cs-30": {
-        "name": "Hrůzy nemrtvých",
+        "name": "Undead Terrors",
         "rewards": [
             [
                 "70 zlaťáků společně"
@@ -2596,29 +2596,29 @@ export default {
         ]
     },
     "cs-31": {
-        "name": "Věčné portály",
+        "name": "Eternal Portals",
         "rewards": [
             "1 ✓ každý"
         ]
     },
     "cs-32": {
-        "name": "Konfrontace s minulostí",
+        "name": "Confronting the Past",
         "rewards": [
             "Přečtěte si {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
             "Heslo „Vodní hydra“"
         ]
     },
     "cs-33": {
-        "name": "Obléhací věž",
-        "requirements": "Osobní úkol „Chránit a sloužit“",
+        "name": "Siege Tower",
+        "requirements": "Osobní úkol „Protect and Serve“",
         "rewards": [
-            "„Planoucí boty“ (předmět 90)",
+            "„Blazing Boots“ (předmět 90)",
             "+1 reputace"
         ]
     },
     "cs-34": {
-        "name": "Útěk z Velkého dubu",
-        "requirements": "Osobní úkol „Chránit a sloužit“",
+        "name": "Great Oak Escape",
+        "requirements": "Osobní úkol „Protect and Serve“",
         "rewards": [
             "Odemkněte obálku {BM}",
             "+2 reputace",
@@ -2626,75 +2626,75 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "Vzpoura ve vězení",
-        "requirements": "Osobní úkol „Vyhnanec banditů“"
+        "name": "Prison Riot",
+        "requirements": "Osobní úkol „Bandit Banisher“"
     },
     "cs-36": {
-        "name": "Odměna lovců",
-        "requirements": "Osobní úkol „Vyhnanec banditů“",
+        "name": "Hunters Bounty",
+        "requirements": "Osobní úkol „Bandit Banisher“",
         "rewards": [
             "Odemkněte obálku {CG}",
             "10 zlaťáků každý"
         ]
     },
     "cs-37": {
-        "name": "Hořící kameny",
-        "requirements": "Osobní úkol „Přirozený výběr“",
+        "name": "Burning Stones",
+        "requirements": "Osobní úkol „Natural Selection“",
         "rewards": [
             "Získejte jeden náhodný předmět „Kámen“ (předměty 94-100)"
         ]
     },
     "cs-38": {
-        "name": "Oltáře zmatení",
-        "requirements": "Osobní úkol „Přirozený výběr“",
+        "name": "Alters of Confusion",
+        "requirements": "Osobní úkol „Natural Selection“",
         "rewards": [
             "Odemkněte obálku {LU}"
         ]
     },
     "cs-39": {
-        "name": "Hnijící bažina",
-        "requirements": "Osobní úkol „Zmije se dělí“",
+        "name": "Festering Mire",
+        "requirements": "Osobní úkol „An Adder Divides“",
         "rewards": [
             "10 zkušeností každý",
             "Odeberte horních 5 karet z balíčku městských událostí a zamíchejte do nich městskou událost 57. Zbývající karty městských událostí odložte stranou, dokud nebude městská událost 57 vyřešena. Jakákoli další karta, která by se během této doby měla přidat do balíčku městských událostí, se přidá po vyřešení městské události 57, kdy se zbývající karty spojí s původním balíčkem.",
-            "Úkol „Zmije se dělí“ ještě není splněn"
+            "Úkol „An Adder Divides“ ještě není splněn"
         ]
     },
     "cs-40": {
-        "name": "Pašerácký úkryt",
+        "name": "Smugglers Hideout",
         "rewards": [
             "Získejte společně 50 zlaťáků"
         ]
     },
     "cs-41": {
-        "name": "Kletba Prázdnoty",
+        "name": "Curse of the Void",
         "rewards": [
             "Získejte společně 50 zlaťáků"
         ]
     },
     "cs-42": {
-        "name": "Nepřirození tvorové",
+        "name": "Unnatural Beasts",
         "rewards": [
             "+1 reputace",
             "10 zkušeností každý"
         ]
     },
     "cs-43": {
-        "name": "Labyrint v sídle",
+        "name": "Mansion Maze",
         "rewards": [
             "+1 prosperita",
             "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
         ]
     },
     "cs-44": {
-        "name": "Strašidelné sídlo",
+        "name": "Haunted Manor",
         "rewards": [
             "20 zlaťáků každý",
             "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
         ]
     },
     "cs-45": {
-        "name": "Obrana bažiny",
+        "name": "Defend the Swamp",
         "rewards": [
             "+1 reputace",
             "+1 prosperita",
@@ -2702,69 +2702,69 @@ export default {
         ]
     },
     "cs-46": {
-        "name": "Krysácké zahrady",
+        "name": "Vermling Gardens",
         "rewards": [
             "+2 reputace",
             "15 zkušeností každý"
         ]
     },
     "cs-47": {
-        "name": "Zmijí bažina",
+        "name": "Viper Marsh",
         "rewards": [
-            "„Jed přízračné zmije“ (předmět 55)",
+            "„Ghost Viper Venom“ (předmět 55)",
             "+1 prosperita",
             "10 zlaťáků každý"
         ]
     },
     "cs-48": {
-        "name": "Lesní požár",
+        "name": "Forest Fire",
         "rewards": [
             "10 zkušeností každý",
             "20 zlaťáků každý"
         ]
     },
     "cs-49": {
-        "name": "Invaze Dubu A",
+        "name": "Oak Invasion A",
         "rewards": [
             "Při příští návštěvě Gloomhavenu stojí dary Svatyni 0 zlaťáků"
         ]
     },
     "cs-50": {
-        "name": "Invaze Dubu B",
+        "name": "Oak Invasion B",
         "rewards": [
             "10 zkušeností každý",
             "1 ✓ každý"
         ]
     },
     "cs-51": {
-        "name": "Sklad hlodavců",
+        "name": "Rodent Warehouse",
         "rewards": [
             "+1 reputace",
             "30 zlaťáků každý"
         ]
     },
     "cs-52": {
-        "name": "Studna přání",
+        "name": "Wishing Well",
         "rewards": [
-            "„Štít z dračích šupin“ (předmět 37)"
+            "„Drakescale Shield“ (předmět 37)"
         ]
     },
     "cs-53": {
-        "name": "Jeskyně proudů",
+        "name": "Cave of Currents",
         "rewards": [
-            "„Sféra proudů“ (předmět 83)",
+            "„Sphere of Currents“ (předmět 83)",
             "5 zlaťáků každý"
         ]
     },
     "cs-54": {
-        "name": "Doupě hrůz",
+        "name": "Lair of Horrors",
         "rewards": [
             "+1 reputace",
             "30 zlaťáků každý"
         ]
     },
     "cs-55": {
-        "name": "Plenění katakomb",
+        "name": "Catacomb Plunder",
         "rewards": [
             "+1 prosperita",
             "+1 reputace",
@@ -2772,122 +2772,122 @@ export default {
         ]
     },
     "cs-56": {
-        "name": "Zneškodnění stroje",
+        "name": "Disarm the Machine",
         "rewards": [
-            "„Řetězové dělo“ (předmět 45)"
+            "„Chain Cannon“ (předmět 45)"
         ]
     },
     "cs-57": {
-        "name": "Elementární konvertor",
+        "name": "Elemental Converter",
         "rewards": [
-            "„Zkumavka“ (předmět 48)"
+            "„Test Tube“ (předmět 48)"
         ]
     },
     "cs-58": {
-        "name": "Uzavření věznice",
+        "name": "Penitentiary Lockdown",
         "rewards": [
-            "Jeden z následujících získejte jako předmět a druhý jako nákres předmětu: „Drápová past“ (předmět 34), „Svírací past“ (předmět 56)"
+            "Jeden z následujících získejte jako předmět a druhý jako nákres předmětu: „Claw Trap“ (předmět 34), „Clamp Trap“ (předmět 56)"
         ]
     },
     "cs-59": {
-        "name": "Lesní vetřelci",
+        "name": "Forest Invaders",
         "rewards": [
-            "„Přírodní náramky“ (předmět 47)"
+            "„Nature Armlets“ (předmět 47)"
         ]
     },
     "cs-60": {
-        "name": "Skrz oheň a plameny",
+        "name": "Through the Fire and Flames",
         "rewards": [
-            "„Planoucí zbroj“ (předmět 51)"
+            "„Flaming Armor“ (předmět 51)"
         ]
     },
     "cs-61": {
-        "name": "Archaické uchování",
+        "name": "Archaic Preservation",
         "rewards": [
-            "„Roucho utišení“ (předmět 42)"
+            "„Robe of Soothing“ (předmět 42)"
         ]
     },
     "cs-62": {
-        "name": "Svaté vykoupení",
+        "name": "Hallow Redemption",
         "rewards": [
-            "„Očištěné srdce prázdnoty“ (předmět 57)"
+            "„Cleansed Voidheart“ (předmět 57)"
         ]
     },
     "cs-63": {
-        "name": "Zahnaná zmije",
+        "name": "A Cornered Viper",
         "rewards": [
-            "„Polní minomet“ (předmět 53)"
+            "„Field Mortar“ (předmět 53)"
         ]
     },
     "cs-64": {
-        "name": "Zářící krystaly",
+        "name": "Glowing Crystals",
         "rewards": [
-            "„Zářivý krunýř“ (předmět 50)"
+            "„Luminous Carapace“ (předmět 50)"
         ]
     },
     "cs-65": {
-        "name": "Zářící krystaly",
+        "name": "Glowing Crystals",
         "rewards": [
-            "„Přípitek duchům“ (předmět 41)"
+            "„Spirit Libation“ (předmět 41)"
         ]
     },
     "cs-66": {
-        "name": "Cizinci z jiného světa",
+        "name": "Otherworldly Strangers",
         "rewards": [
-            "„Boty z měsíční kůže“ (předmět 40)"
+            "„Moonleather Boots“ (předmět 40)"
         ]
     },
     "cs-AA1": {
-        "name": "Bohatství Ocelohedvábí",
-        "requirements": "Osobní úkol „Za každou cenu“",
+        "name": "The Riches of the Steelsilk",
+        "requirements": "Osobní úkol „At All Costs“",
         "rewards": [
-            "„Skalní hradba“ (předmět AA01)"
+            "„Rockspine Bulwark“ (předmět AA01)"
         ]
     },
     "cs-AA2": {
-        "name": "Zlovolné ozvěny",
-        "requirements": "Osobní úkol „Tíha selhání“",
+        "name": "Malign Echoes",
+        "requirements": "Osobní úkol „The Weight of failure“",
         "rewards": [
-            "„Přízračně třpytivý med“ (předmět AA02)"
+            "„Ghostshimmer Honey“ (předmět AA02)"
         ]
     },
     "cs-AA3": {
-        "name": "Strážce úlu",
+        "name": "Hive Guardian",
         "rewards": [
-            "„Ocelohedvábná přádelna“ (předmět AA03)"
+            "„Steelsilk Spinneret“ (předmět AA03)"
         ]
     },
     "cs-QA1": {
-        "name": "Zkouška mistrovství",
-        "requirements": "Osobní úkol „Důmyslný vynálezce“ a vybavený předmět „Modulátor výkonu“",
+        "name": "Capstone Test",
+        "requirements": "Osobní úkol „Ingenious Inventor“ a vybavený předmět „Power Modulator“",
         "rewards": [
             [
-                "Úkol „Důmyslný vynálezce“ splněn",
+                "Úkol „Ingenious Inventor“ splněn",
                 "Otevřete obálku {QA}",
-                "Nákres „Parní pístové kladivo“ (předmět QA02)",
-                "Nákres „Pavoučí lezecké rukavice“ (předmět QA03)"
+                "Nákres „Steam Piston Hammer“ (předmět QA02)",
+                "Nákres „Spider Climb Gloves“ (předmět QA03)"
             ],
             [
-                "Úkol „Důmyslný vynálezce“ splněn",
+                "Úkol „Ingenious Inventor“ splněn",
                 "Otevřete obálku {QA}",
-                "Získejte jedno z následujícího: „Parní pístové kladivo“ (předmět QA02) NEBO „Pavoučí lezecké rukavice“ (předmět QA03)",
+                "Získejte jedno z následujícího: „Steam Piston Hammer“ (předmět QA02) NEBO „Spider Climb Gloves“ (předmět QA03)",
                 "Přidejte kopii vybraného předmětu do dostupných zásob města",
                 "Přidejte druhý předmět do balíčku náhodných nákresů předmětů"
             ],
             [
-                "Úkol „Důmyslný vynálezce“ splněn",
+                "Úkol „Ingenious Inventor“ splněn",
                 "Otevřete obálku {QA}",
-                "„Parní pístové kladivo“ (předmět QA02)",
-                "„Pavoučí lezecké rukavice“ (předmět QA03)",
+                "„Steam Piston Hammer“ (předmět QA02)",
+                "„Spider Climb Gloves“ (předmět QA03)",
                 "Přidejte kopie do dostupných zásob města"
             ]
         ]
     },
     "cs-QA2": {
-        "name": "Hlavní žíla",
-        "requirements": "Osobní úkol „Šrotový potápěč“",
+        "name": "Mother Lode",
+        "requirements": "Osobní úkol „Scrap Diver“",
         "rewards": [
-            "Úkol „Šrotový potápěč“ splněn",
+            "Úkol „Scrap Diver“ splněn",
             "Otevřete obálku {QA}",
             "15xA zlaťáků každý (kde A je počet získaného Prastarého šrotu)",
             "Přidejte městskou událost QA-03 do balíčku"
@@ -2896,38 +2896,38 @@ export default {
     "cs-QA3": {
         "name": "Magnum opus",
         "rewards": [
-            "„Auscudec Tvůrců“ (předmět QA06)"
+            "„Auscudec of the Makers“ (předmět QA06)"
         ]
     },
     "cs-RM1": {
-        "name": "Dbejte na slušné chování",
-        "requirements": "Osobní úkol „Brutální vymahač“"
+        "name": "Mind your Manners",
+        "requirements": "Osobní úkol „Brutal Enforcer“"
     },
     "cs-RM2": {
-        "name": "Potápějící se mafián",
-        "requirements": "Osobní úkol „Brutální vymahač“",
+        "name": "Sinking Kingpin",
+        "requirements": "Osobní úkol „Brutal Enforcer“",
         "rewards": [
-            "Úkol „Brutální vymahač“ splněn",
+            "Úkol „Brutal Enforcer“ splněn",
             "Otevřete obálku {RM}",
             "+1 prosperita"
         ]
     },
     "cs-RM3": {
-        "name": "Zničená kolonie",
-        "requirements": "Osobní úkol „Vrcholový predátor“"
+        "name": "Ruined Colony",
+        "requirements": "Osobní úkol „Apex Predator“"
     },
     "cs-RM4": {
-        "name": "Doupě Hrůzošupinců",
-        "requirements": "Osobní úkol „Vrcholový predátor“",
+        "name": "Terrorscale Lair",
+        "requirements": "Osobní úkol „Apex Predator“",
         "rewards": [
-            "Úkol „Vrcholový predátor“ splněn",
+            "Úkol „Apex Predator“ splněn",
             "Otevřete obálku {RM}",
-            "Nákres „Šavle z hrůzných šupin“ (předmět RM03)",
-            "Nákres „Zkřížené čepele z hrůzných šupin“ (předmět RM04)"
+            "Nákres „Terrorscale Saber“ (předmět RM03)",
+            "Nákres „Terrorscale Crossblades“ (předmět RM04)"
         ]
     },
     "cs-RM5": {
-        "name": "Neviditelná zkáza",
+        "name": "Unseen Plight",
         "rewards": [
             [
                 "40 zlaťáků společně",
@@ -2940,54 +2940,54 @@ export default {
         ]
     },
     "cs-RM6": {
-        "name": "Pád Stínového útočiště",
+        "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "Nákres „Rituál zkázy“ (předmět RM05)",
+            "Nákres „Rite of Ruin“ (předmět RM05)",
             "Pokud na konci osmého kola žijí alespoň tři Krysáci: 5 zlaťáků",
             "Pokud na konci osmého kola žije alespoň pět Krysáků: ✓"
         ]
     },
     "cs-RM7": {
-        "name": "Nenasytný",
+        "name": "Insatiable",
         "requirements": "V družině není Troskožrout",
         "rewards": [
             "10 zkušeností každý",
-            "Nákres „Divoký kyrys“ (předmět RM06)"
+            "Nákres „Savage Cuirass“ (předmět RM06)"
         ]
     },
     "mp-AN1": {
-        "name": "Hrozivá dohoda",
+        "name": "A Harrowing Deal",
         "rewards": [
-            "„Stuha přátelství“ (předmět AN)"
+            "„Ribbon of Friendship“ (předmět AN)"
         ]
     },
     "mp-SA1": {
-        "name": "Rohy v noci",
+        "name": "Horns in the Night",
         "rewards": [
-            "„Znak Frosthavenu“ (předmět SA)"
+            "„Crest of Frosthaven“ (předmět SA)"
         ]
     },
     "mp-CA1": {
-        "name": "Útěk ze zkaženosti",
+        "name": "Escape from Corruption",
         "rewards": [
-            "„Mísa proroctví A“ (předmět CA A)",
-            "„Mísa proroctví B“ (předmět CA B)"
+            "„Basin of Prophecy A“ (předmět CA A)",
+            "„Basin of Prophecy B“ (předmět CA B)"
         ]
     },
     "mp-HA1": {
-        "name": "Velká otrava",
+        "name": "Major Annoyance",
         "rewards": [
-            "„Boty bez nesmyslů“ (předmět HA)"
+            "„No Nonsense Boots“ (předmět HA)"
         ]
     },
     "gh2-0": {
-        "name": "Výcvikový kurz",
+        "name": "Training Course",
         "rewards": [
             "2 zlaťáky každý"
         ]
     },
     "gh2-1": {
-        "name": "Banditský tábor",
+        "name": "Bandit Camp",
         "rewards": [
             "10 zlaťáků každý",
             "+1 reputace u Obchodního cechu",
@@ -3056,7 +3056,7 @@ export default {
         "rewards": []
     },
     "gh2-11": {
-        "name": "Rituální komnata",
+        "name": "Ritual Chamber",
         "rewards": [
             "10 zkušeností každý",
             "1 ✔ každý",
@@ -3122,7 +3122,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Vojenská základna",
+        "name": "Military Outpost",
         "rewards": [
             "25 zkušeností každý",
             "+2 reputace u Démonů",
@@ -3138,7 +3138,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "Přízračná pevnost",
+        "name": "The Ghost Fortress",
         "rewards": [
             "15 zlaťáků každý",
             "+2 reputace u Obchodního cechu",
@@ -3146,7 +3146,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "Demolice Dělostřelce zkázy",
+        "name": "Doomcannon Demolition",
         "rewards": [
             "15 zlaťáků každý",
             "-1 reputace u Démonů",
@@ -3292,7 +3292,7 @@ export default {
         ]
     },
     "gh2-40": {
-        "name": "Léčka v mokřadech",
+        "name": "Wetlands Ambush",
         "rewards": []
     },
     "gh2-41": {
@@ -3302,11 +3302,11 @@ export default {
         ]
     },
     "gh2-42": {
-        "name": "Odlehlé údolí",
+        "name": "Secluded Valley",
         "rewards": []
     },
     "gh2-43": {
-        "name": "Hon za tajemstvími",
+        "name": "Chasing Secrets",
         "rewards": [
             [
                 "+1 prosperita",
@@ -3321,7 +3321,7 @@ export default {
         ]
     },
     "gh2-44": {
-        "name": "Chrám elementů",
+        "name": "Temple of the Elements",
         "rewards": [
             "100 zlaťáků každý",
             "+1 prosperita",
@@ -3383,11 +3383,11 @@ export default {
         "rewards": []
     },
     "gh2-55": {
-        "name": "Poslední vzdor",
+        "name": "The Last Stand",
         "rewards": []
     },
     "gh2-56": {
-        "name": "Přítmí",
+        "name": "The Gloom",
         "rewards": [
             "50 zkušeností každý",
             "+5 prosperita"
@@ -3396,7 +3396,7 @@ export default {
     "gh2-57": {
         "name": "Sklep krypty",
         "rewards": [
-            "Získejte „Žezlo Xornu“ (předmět 147)"
+            "Získejte „Scepter of Xorn“ (předmět 147)"
         ]
     },
     "gh2-58": {
@@ -3404,7 +3404,7 @@ export default {
         "rewards": [
             "10 zkušeností každý",
             "1 ✔ každý",
-            "Získejte „Žezlo Xornu“ (předmět 147)",
+            "Získejte „Scepter of Xorn“ (předmět 147)",
             "Přidejte událost na cestách R-39 do balíčku",
             "Přidejte městskou událost C-66 do balíčku"
         ]
@@ -3425,7 +3425,7 @@ export default {
         ]
     },
     "gh2-61": {
-        "name": "Nebezpečný háj",
+        "name": "Dangerous Grove",
         "rewards": []
     },
     "gh2-62": {
@@ -3442,20 +3442,20 @@ export default {
         ]
     },
     "gh2-64": {
-        "name": "Kořeny chaosu",
+        "name": "Roots of Chaos",
         "rewards": [
             "Osobní úkol 10 splněn"
         ]
     },
     "gh2-65": {
-        "name": "Hrdinské mauzoleum",
+        "name": "Hero's Mausoleum",
         "rewards": [
             "10 zkušeností každý",
             "1 ✔ každý"
         ]
     },
     "gh2-66": {
-        "name": "Přítel v nouzi",
+        "name": "A Friend in Need",
         "rewards": [
             "15 zlaťáků každý",
             "Osobní úkol 11 splněn"
@@ -3490,7 +3490,7 @@ export default {
         ]
     },
     "gh2-71": {
-        "name": "Hodinářská továrna",
+        "name": "Clockwork Factory",
         "rewards": [
             "10 zkušeností každý",
             "1 ✔ každý"
@@ -3518,7 +3518,7 @@ export default {
     "gh2-75": {
         "name": "Hřeben sesuvů",
         "rewards": [
-            "Získejte „Rubínový talisman“ (předmět 152)"
+            "Získejte „Ruby Talisman“ (předmět 152)"
         ]
     },
     "gh2-76": {
@@ -3538,7 +3538,7 @@ export default {
         ]
     },
     "gh2-79": {
-        "name": "Útok Číhačů",
+        "name": "Lurker Assault",
         "rewards": [
             "+1 prosperita"
         ]
@@ -3581,7 +3581,7 @@ export default {
         ]
     },
     "gh2-85": {
-        "name": "Křižovatková stanice",
+        "name": "Crossroads Station",
         "rewards": [
             "1 ✔ každý",
             "+1 prosperita"
@@ -3606,7 +3606,7 @@ export default {
         ]
     },
     "gh2-89": {
-        "name": "Veřejně prospěšné práce",
+        "name": "Community Service",
         "rewards": [
             "Získejte 2× „Větší léčivý lektvar“ (předmět 37)"
         ]
@@ -3620,10 +3620,10 @@ export default {
         "rewards": []
     },
     "gh2-92": {
-        "name": "Chronální kotva",
+        "name": "Chronal Anchor",
         "rewards": [
             "10 zkušeností každý",
-            "Získejte „Časová matrice“ (předmět 144)"
+            "Získejte „Temporal Matrix“ (předmět 144)"
         ]
     },
     "gh2-93": {
@@ -3633,14 +3633,14 @@ export default {
         ]
     },
     "gh2-94": {
-        "name": "Vodní záchrana",
+        "name": "A Watery Rescue",
         "rewards": [
             "10 zkušeností každý",
-            "Získejte „Žezlo z jiného světa“ (předmět 139)"
+            "Získejte „Otherworldly Scepter“ (předmět 139)"
         ]
     },
     "gh2-95": {
-        "name": "Nákladní loď",
+        "name": "Cargo Ship",
         "rewards": []
     },
     "gh2-96": {
@@ -3650,35 +3650,35 @@ export default {
         ]
     },
     "gh2-97": {
-        "name": "Krysácký tábor",
+        "name": "Vermling Camp",
         "rewards": [
             "5 zkušeností každý",
             "+1 prosperita"
         ]
     },
     "gh2-98": {
-        "name": "Metamorfní zlom",
+        "name": "Metamorphic Fault",
         "rewards": [
             "10 zkušeností každý",
             "Získejte „Lebka nenávisti“ (předmět 111)"
         ]
     },
     "gh2-99": {
-        "name": "Slinovací kovárna",
+        "name": "Sintering Forge",
         "rewards": [
-            "Získejte „Úsvitová čepel“ (předmět 117)",
+            "Získejte „Dawnblade“ (předmět 117)",
             "Přidejte událost na cestách R-33 do balíčku"
         ]
     },
     "gh2-100": {
-        "name": "Padá ticho",
+        "name": "Silence Falls",
         "rewards": [
             "+1 prosperita",
             "Přidejte městskou událost C-60 do balíčku"
         ]
     },
     "gh2-101": {
-        "name": "Gloomhavenské náměstí A (spojenci Démoni)",
+        "name": "Gloomhaven Square A (Demon Allies)",
         "rewards": [
             "30 zkušeností každý",
             "+2 reputace u Démonů",
@@ -3692,21 +3692,21 @@ export default {
         ]
     },
     "gh2-102": {
-        "name": "Gloomhavenské náměstí A (spojenci Armáda)",
+        "name": "Gloomhaven Square A (Military Allies)",
         "rewards": []
     },
     "gh2-103": {
-        "name": "Gloomhavenské hradby A (spojenci Obchodníci)",
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
         "rewards": []
     },
     "gh2-104": {
-        "name": "Gloomhavenské hradby A (spojenci Armáda)",
+        "name": "Gloomhaven Battlements A (Military Allies)",
         "rewards": []
     },
     "gh2-201": {
-        "name": "Noc ve městě",
+        "name": "A Night Out",
         "rewards": [
-            "Získejte „Hákový štít“ (předmět 153)"
+            "Získejte „Hooked Shield“ (předmět 153)"
         ]
     },
     "gh2-202": {
@@ -3716,13 +3716,13 @@ export default {
         ]
     },
     "gh2-203": {
-        "name": "Zkažená apatyka",
+        "name": "Corrupted Apothecary",
         "rewards": [
-            "Získejte „Éterický elixír“ (předmět 155)"
+            "Získejte „Etheric Elixir“ (předmět 155)"
         ]
     },
     "gh2-204": {
-        "name": "Materiální starosti",
+        "name": "Material Concerns",
         "rewards": [
             "Získejte „Tichý stilet“ (předmět 156)"
         ]
@@ -3734,7 +3734,7 @@ export default {
         ]
     },
     "gh2-206": {
-        "name": "Osvobození Krysáků",
+        "name": "Vermling Liberation",
         "rewards": [
             "Získejte „Psychický nůž“ (předmět 158)"
         ]
@@ -3742,7 +3742,7 @@ export default {
     "gh2-207": {
         "name": "Eskorta karavany",
         "rewards": [
-            "Získejte „Odznak božství“ (předmět 159)"
+            "Získejte „Insignia of the Divine“ (předmět 159)"
         ]
     },
     "gh2-208": {
@@ -3760,7 +3760,7 @@ export default {
     "gh2-210": {
         "name": "Sklizeň noci",
         "rewards": [
-            "Získejte „Noční pohlazení“ (předmět 162)"
+            "Získejte „The Night's Caress“ (předmět 162)"
         ]
     },
     "gh2-211": {
@@ -3796,7 +3796,7 @@ export default {
     "gh2-216": {
         "name": "Elementární tajemství",
         "rewards": [
-            "Získejte „Živlová vesta“ (předmět 168)"
+            "Získejte „Elemental Vest“ (předmět 168)"
         ]
     },
     "gh2-217": {
@@ -3808,7 +3808,7 @@ export default {
     "gh2-218": {
         "name": "Písky času",
         "rewards": [
-            "Získejte „Lezoucí krunýř“ (předmět 170)"
+            "Získejte „Crawling Carapace“ (předmět 170)"
         ]
     }
 }

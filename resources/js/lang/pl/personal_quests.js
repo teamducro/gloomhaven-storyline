@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "Chronić i służyć",
+        "name": "Protect and Serve",
         "progress": [
             "Zabij 10 Inoksów.",
             "Przejdź {SCENARIO 33}."
         ]
     },
     "cs-331": {
-        "name": "Specjalista od broni",
+        "name": "Weapons Specialist",
         "progress": [
             "Zużyj 15 przedmiotów {ONE-HAND} lub {TWO-HANDS}."
         ]
     },
     "cs-332": {
-        "name": "Eksperymenty",
+        "name": "Experimentation",
         "progress": [
             "Zagraj 30 kart dla ich akcji utraty {LOST}."
         ]
     },
     "cs-333": {
-        "name": "Poszukiwacz wrażeń",
+        "name": "Thrill Seeker",
         "progress": [
             "Odkryj kafelek pomieszczenia, otwierając drzwi, 20 razy."
         ]
     },
     "cs-334": {
-        "name": "Zastawiacz pułapek",
+        "name": "Trap Setter",
         "progress": [
             "Rozbrój pułapkę lub zmuś wroga do jej uruchomienia w trakcie swojej tury 15 razy."
         ]
     },
     "cs-335": {
-        "name": "Pogromca bandytów",
+        "name": "Bandit Banisher",
         "progress": [
             "Zabij 10 Strażników lub Łuczników.",
             "Przejdź {SCENARIO 35}."
         ]
     },
     "cs-336": {
-        "name": "Stworzenia w świetle",
+        "name": "Creatures in the light",
         "progress": [
             "Zabij 20 Szlamów, Leśnych Chochlików lub Czarnych Chochlików."
         ]
     },
     "cs-337": {
-        "name": "Doświadczony przywódca",
+        "name": "Experienced leader",
         "progress": [
             "Ukończ 12 scenariuszy, zdobywając w każdym co najmniej 12 pkt. doświadczenia."
         ]
     },
     "cs-338": {
-        "name": "Zastrzyk adrenaliny",
+        "name": "Adrenaline Spike",
         "progress": [
             "Zabij wroga i zabierz jego żeton monet w tej samej rundzie 15 razy."
         ]
     },
     "cs-339": {
-        "name": "Wzajemne wsparcie",
+        "name": "Mutual Support",
         "progress": [
             "Zabij 30 wrogów sąsiadujących z którymkolwiek z twoich sojuszników."
         ]
     },
     "cs-340": {
-        "name": "Błogosławiony bądź",
+        "name": "Thy be Blessed",
         "progress": [
             "Dobierz kartę {BLESS} podczas ataku 12 razy."
         ]
     },
     "cs-341": {
-        "name": "Duchowy Kain",
+        "name": "Spiritual Cains",
         "progress": [
             "Wydaj 200 sztuk złota na ulepszenia."
         ]
     },
     "cs-342": {
-        "name": "Ścieżka cierpienia",
+        "name": "The Path of Agony",
         "progress": [
             "13 razy bądź świadkiem, jak sojusznik lub wróg ginie albo pada z wyczerpania podczas własnej tury."
         ]
     },
     "cs-343": {
-        "name": "Okrutne panowanie",
+        "name": "Cruel Dominion",
         "progress": [
             "Ukończ 10 scenariuszy, w których zabijasz wroga posiadającego negatywny stan."
         ]
     },
     "cs-344": {
-        "name": "Dobór naturalny",
+        "name": "Natural Selection",
         "progress": [
             "Wytwórz {FIRE} dwukrotnie.",
             "Wytwórz {ICE} dwukrotnie.",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "Drapieżnik i ofiara",
+        "name": "Predator and Prey",
         "progress": [
             "Zabij co najmniej dwóch wrogów w tej samej turze 15 razy."
         ]
     },
     "cs-346": {
-        "name": "Żmija się dzieli",
+        "name": "An Adder Divides",
         "progress": [
             "Stań na trudnym terenie w 6 różnych scenariuszach.",
             "Przejdź {SCENARIO 39}."
         ]
     },
     "cs-347": {
-        "name": "Badania terenowe",
+        "name": "Field Research",
         "progress": [
             "Zatruj {POISON} 20 różnych rodzajów potworów."
         ]
     },
     "cs-348": {
-        "name": "Ręka zaklinacza",
+        "name": "Conjurers Hand",
         "progress": [
             "Zabij 10 przywołanych potworów."
         ]
     },
     "cs-349": {
-        "name": "Nie ma spoczynku dla niegodziwych",
+        "name": "No Rest for the Wicked",
         "progress": [
             "Ukończ 10 scenariuszy bez długiego odpoczynku."
         ]
     },
     "cs-350": {
-        "name": "Zdrowie przede wszystkim",
+        "name": "Health First",
         "progress": [
             "Ukończ 7 scenariuszy z pełnym zdrowiem."
         ]
     },
     "cs-351": {
-        "name": "Niestrudzone poszukiwania",
+        "name": "Limitless Searching",
         "progress": [
             "Zbierz 30 żetonów monet."
         ]
     },
     "cs-aa-001": {
-        "name": "Za Wszelką Cenę",
+        "name": "At All Costs",
         "progress": [
             "Przeżyj 8 scenariuszy, w których unieważniasz obrażenia, tracąc kartę w zwykły sposób, gdy sąsiadujesz z sojusznikiem.",
             "Przejdź {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
-        "name": "Ciężar porażki",
+        "name": "The Weight of failure",
         "progress": [
             "Ukończ 8 scenariuszy bez wyczerpania, mając na koniec 2 lub mniej PŻ.",
             "Przejdź {SCENARIO AA2}."
         ]
     },
     "cs-qa-001": {
-        "name": "Genialny wynalazca",
+        "name": "Ingenious Inventor",
         "progress": [
-            "Natychmiast otrzymujesz „Modulator Mocy” (przedmiot QA-01).",
+            "Natychmiast otrzymujesz „Power Modulator” (przedmiot QA-01).",
             "Zabij 12 wrogów za pomocą „Modulatora Mocy” (przedmiot QA-01).",
             "Przejdź {SCENARIO QA1}."
         ]
     },
     "cs-qa-002": {
-        "name": "Nurek po złom",
+        "name": "Scrap Diver",
         "progress": [
             "Zbierz dwa lub więcej żetonów monet jedną akcją 8 razy.",
             "Zbierz dwa kafelki skarbów.",
@@ -337,7 +337,7 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "Brutalny egzekutor",
+        "name": "Brutal Enforcer",
         "progress": [
             "Otrzymujesz projekt „Ząbkowane Ostrze” (przedmiot RM-01).",
             "Nałóż {WOUND} lub {RUPTURE} na 30 wrogów.",
@@ -345,7 +345,7 @@ export default {
         ]
     },
     "cs-rm-002": {
-        "name": "Szczytowy drapieżnik",
+        "name": "Apex Predator",
         "progress": [
             "Przeżyj 20 rund, w których podczas wykonywania akcji z {CONSUMED} lub po niej ginie wróg.",
             "Przejdź {SCENARIO RM3}."
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "Intrygi polityczne",
+        "name": "Political Intrigue",
         "progress": [
             "Dodaj zdarzenie miejskie 61 do talii zdarzeń miejskich.",
             "Zdobądź 30 głosów: trzy głosy za każdym razem, gdy zdobywasz reputację, i jeden głos za każdy przedmiot reputacji frakcji wniesiony do ukończonego scenariusza.",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Gościnna karczma",
+        "name": "Inn to Hospitality",
         "progress": [
             "Zbierz 60 żetonów monet.",
             "Przeczytaj {SECTION} 125.4."
@@ -639,14 +639,14 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "Opowieść do opowiedzenia",
+        "name": "A Tale to Tell",
         "progress": [
             "Zdobądź skarb z kafelka skarbu lub bądź świadkiem, jak robi to twoja drużyna, w 10 scenariuszach.",
             "Przeczytaj {SECTION} 12.3."
         ]
     },
     "gh2-8": {
-        "name": "Odzyskać drzewa",
+        "name": "Take Back the Trees",
         "progress": [
             "Przeżyj 10 zdarzeń na szlaku wraz ze swoją drużyną.",
             "Przeczytaj {SECTION} 64.3.",
@@ -655,7 +655,7 @@ export default {
         ]
     },
     "gh2-9": {
-        "name": "W poszukiwaniu lekarstwa",
+        "name": "Finding the Cure",
         "progress": [
             "Ukończ scenariusze w pięciu z następujących lokacji: Góry Miedzianych Turni, Trupi Las, Las Sztyletów, Gloomhaven, Bezkresne Bagna, Morze Mgieł, Góry Obserwatora.",
             "Przeczytaj {SECTION} 55.3.",
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "Rodzic adopcyjny",
+        "name": "Adoptive Parent",
         "progress": [
             "Zbierz trzy żetony monet upuszczone przez wrogów w 10 scenariuszach.",
             "Przeczytaj {SECTION} 122.5.",
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "Ucieczka przed Sin-Ra",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "Dodaj zdarzenia miejskie 69 i 70 do talii zdarzeń miejskich. Zdobądź „Czarną Kartę” (przedmiot 113). Nie można jej sprzedać.",
             "Ukończ 6 scenariuszy pobocznych (numer scenariusza powyżej 56).",
@@ -715,7 +715,7 @@ export default {
         ]
     },
     "gh2-16": {
-        "name": "Doskonała trucizna",
+        "name": "The Perfect Poison",
         "progress": [
             "Zdobądź „Zatruty Sztylet” (przedmiot 7).",
             "Użyj go, aby nałożyć {POISON} na wroga bez {POISON} 30 razy.",
@@ -723,7 +723,7 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "Życie na krawędzi",
+        "name": "Living on the Edge",
         "progress": [
             "Zdobądź „Eksperymentalną Zbroję” (przedmiot 150).",
             "Użyj jej, aby 20 wrogów otrzymało obrażenia.",
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Nauka sztuk walki",
+        "name": "Martial Study",
         "progress": [
             "Użyj 8 różnych przedmiotów {ONE-HAND} lub {TWO-HANDS} podczas scenariuszy.",
             "Przeczytaj {SECTION} 67.2."
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "W pogoni za biegłością",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "Zdobądź 120 pkt. doświadczenia z kart zdolności.",
             "Przeczytaj {SECTION} 17.2."

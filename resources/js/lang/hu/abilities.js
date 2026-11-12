@@ -2029,1450 +2029,1450 @@ export default {
     },
     "cs": {
         "alate-dispersion": {
-            "name": "szárnyas szétszóródás"
+            "name": "alate dispersion"
         },
         "rockspine-termite": {
-            "name": "sziklagerinc termesz"
+            "name": "rockspine termite"
         },
         "anti-venom": {
-            "name": "ellenméreg"
+            "name": "anti-venom"
         },
         "assimilate-adversaries": {
-            "name": "ellenfelek beolvasztása"
+            "name": "assimilate adversaries"
         },
         "birthing-chambers": {
-            "name": "szülőkamrák"
+            "name": "birthing chambers"
         },
         "ghostshimmer-bee": {
-            "name": "szellemfény méh"
+            "name": "ghostshimmer bee"
         },
         "burning-stingers": {
-            "name": "égő fullánkok"
+            "name": "burning stingers"
         },
         "burrow-under": {
-            "name": "alávájás"
+            "name": "burrow under"
         },
         "clad-in-spikes": {
-            "name": "tüskékbe burkolózva"
+            "name": "clad in spikes"
         },
         "coordinated-infestation": {
-            "name": "összehangolt fertőzés"
+            "name": "coordinated infestation"
         },
         "corrosive-spittle": {
-            "name": "maró nyál"
+            "name": "corrosive spittle"
         },
         "divide-and-conquer": {
-            "name": "oszd meg és uralkodj"
+            "name": "divide and conquer"
         },
         "beta-aegis": {
-            "name": "béta pajzs"
+            "name": "beta aegis"
         },
         "encasing-webs": {
-            "name": "beburkoló hálók"
+            "name": "encasing webs"
         },
         "erupting-mandibles": {
-            "name": "kitörő rágók"
+            "name": "erupting mandibles"
         },
         "ferocious-proliferation": {
-            "name": "vad burjánzás"
+            "name": "ferocious proliferation"
         },
         "firespitter-ant": {
-            "name": "tűzköpő hangya"
+            "name": "firespitter ant"
         },
         "frantic-migration": {
-            "name": "esztelen vándorlás"
+            "name": "frantic migration"
         },
         "horned-carapace": {
-            "name": "szarvas páncél"
+            "name": "horned carapace"
         },
         "lacerating-horde": {
-            "name": "szaggató horda"
+            "name": "lacerating horde"
         },
         "maddening-chatter": {
-            "name": "őrjítő csiripelés"
+            "name": "maddening chatter"
         },
         "march-of-multitudes": {
-            "name": "a sokaság menete"
+            "name": "march of multitudes"
         },
         "nurture-the-weak": {
-            "name": "ápold a gyengéket"
+            "name": "nurture the weak"
         },
         "overwhelming-swarm": {
-            "name": "elsöprő raj"
+            "name": "overwhelming swarm"
         },
         "primal-pheromones": {
-            "name": "ősi feromonok"
+            "name": "primal pheromones"
         },
         "repel-intruders": {
-            "name": "űzd el a betolakodókat"
+            "name": "repel intruders"
         },
         "retribution-of-the-hive": {
-            "name": "a kaptár bosszúja"
+            "name": "retribution of the hive"
         },
         "seek-nourishment": {
-            "name": "táplálék keresése"
+            "name": "seek nourishment"
         },
         "sentry-swarm": {
-            "name": "őrszemraj"
+            "name": "sentry swarm"
         },
         "shelter-the-nest": {
-            "name": "védd a fészket"
+            "name": "shelter the nest"
         },
         "stalk-the-prey": {
-            "name": "lesd a zsákmányt"
+            "name": "stalk the prey"
         },
         "deathshroud-spider": {
-            "name": "halálleplek pók"
+            "name": "deathshroud spider"
         },
         "steelsilk-weaver": {
-            "name": "acélselyem szövő"
+            "name": "steelsilk weaver"
         },
         "supreme-authority": {
-            "name": "legfőbb hatalom"
+            "name": "supreme authority"
         },
         "violent-outlash": {
-            "name": "erőszakos kirohanás"
+            "name": "violent outlash"
         },
         "bk-back": {
             "name": "bk-back"
         },
         "acquire-funding": {
-            "name": "támogatás szerzése"
+            "name": "acquire funding"
         },
         "advanced-research": {
-            "name": "haladó kutatás"
+            "name": "advanced research"
         },
         "antibiotic-boost": {
-            "name": "antibiotikum-löket"
+            "name": "antibiotic boost"
         },
         "astronomical-strike": {
-            "name": "csillagászati csapás"
+            "name": "astronomical strike"
         },
         "black-hole": {
-            "name": "fekete lyuk"
+            "name": "black hole"
         },
         "befuddling-serum": {
-            "name": "elkábító szérum"
+            "name": "befuddling serum"
         },
         "blinding-lightwaves": {
-            "name": "vakító fényhullámok"
+            "name": "blinding lightwaves"
         },
         "cell-regeneration": {
-            "name": "sejtregeneráció"
+            "name": "cell regeneration"
         },
         "contagious-malady": {
-            "name": "fertőző kór"
+            "name": "contagious malady"
         },
         "corrosive-combustion": {
-            "name": "maró égés"
+            "name": "corrosive combustion"
         },
         "critical-hypothesis": {
-            "name": "kritikus hipotézis"
+            "name": "critical hypothesis"
         },
         "critical-observation": {
-            "name": "kritikus megfigyelés"
+            "name": "critical observation"
         },
         "dynamic-balance": {
-            "name": "dinamikus egyensúly"
+            "name": "dynamic balance"
         },
         "electromagnetism": {
-            "name": "elektromágnesesség"
+            "name": "electromagnetism"
         },
         "metal-detector": {
-            "name": "fémdetektor"
+            "name": "metal detector"
         },
         "elevated-chemicals": {
-            "name": "emelt szintű vegyszerek"
+            "name": "elevated chemicals"
         },
         "elevated-intake": {
-            "name": "emelt bevitel"
+            "name": "elevated intake"
         },
         "elixir-of-life": {
-            "name": "az élet elixírje"
+            "name": "elixir of life"
         },
         "enviromental-survey": {
-            "name": "környezeti felmérés"
+            "name": "enviromental survey"
         },
         "exothermic-cocktail": {
-            "name": "exoterm koktél"
+            "name": "exothermic cocktail"
         },
         "frozen-explosion": {
-            "name": "fagyott robbanás"
+            "name": "frozen explosion"
         },
         "leftover-tonic": {
-            "name": "maradék tonik"
+            "name": "leftover tonic"
         },
         "magnetic-field": {
-            "name": "mágneses mező"
+            "name": "magnetic field"
         },
         "molecular-hydroblast": {
-            "name": "molekuláris vízlövés"
+            "name": "molecular hydroblast"
         },
         "nourishing-formula": {
-            "name": "tápláló formula"
+            "name": "nourishing formula"
         },
         "nutrient-overdose": {
-            "name": "tápanyag-túladagolás"
+            "name": "nutrient overdose"
         },
         "preliminary-research": {
-            "name": "előzetes kutatás"
+            "name": "preliminary research"
         },
         "strength-elixir": {
-            "name": "erőelixír"
+            "name": "strength elixir"
         },
         "transformation-libation": {
-            "name": "átalakító nedű"
+            "name": "transformation libation"
         },
         "ultraviolet-rays": {
-            "name": "ultraibolya sugarak"
+            "name": "ultraviolet rays"
         },
         "versatile-concoction": {
-            "name": "sokoldalú főzet"
+            "name": "versatile concoction"
         },
         "weather-forecast": {
-            "name": "időjárás-előrejelzés"
+            "name": "weather forecast"
         },
         "bm-back": {
             "name": "bm-back"
         },
         "airborne-skyrocket": {
-            "name": "légi rakéta"
+            "name": "airborne skyrocket"
         },
         "ballistic-barrage": {
-            "name": "ballisztikus össztűz"
+            "name": "ballistic barrage"
         },
         "barbed-armor": {
-            "name": "szögesdrót páncél"
+            "name": "barbed armor"
         },
         "chain-grapnel": {
-            "name": "láncos horgony"
+            "name": "chain grapnel"
         },
         "consistent-firing": {
-            "name": "állandó tűz"
+            "name": "consistent firing"
         },
         "defense-mechanism": {
-            "name": "védelmi mechanizmus"
+            "name": "defense mechanism"
         },
         "distant-retribution": {
-            "name": "távoli megtorlás"
+            "name": "distant retribution"
         },
         "double-cannons": {
-            "name": "ikerágyúk"
+            "name": "double cannons"
         },
         "exploding-cannonball": {
-            "name": "robbanó ágyúgolyó"
+            "name": "exploding cannonball"
         },
         "forceful-bolt": {
-            "name": "erőteljes nyílvessző"
+            "name": "forceful bolt"
         },
         "grappling-hook": {
-            "name": "csáklya"
+            "name": "grappling hook"
         },
         "hurried-repairs": {
-            "name": "sietős javítások"
+            "name": "hurried repairs"
         },
         "ignited-launch": {
-            "name": "begyújtott kilövés"
+            "name": "ignited launch"
         },
         "man-the-cannon": {
-            "name": "az ágyúhoz!"
+            "name": "man the cannon"
         },
         "meteoric-blast": {
-            "name": "meteoros robbanás"
+            "name": "meteoric blast"
         },
         "pillars-of-smoke": {
-            "name": "füstoszlopok"
+            "name": "pillars of smoke"
         },
         "powerful-buckshot": {
-            "name": "erős sörét"
+            "name": "powerful buckshot"
         },
         "prolific-perforation": {
-            "name": "bőséges átlyukasztás"
+            "name": "prolific perforation"
         },
         "quadruple-cannons": {
-            "name": "négyes ágyúk"
+            "name": "quadruple cannons"
         },
         "rapid-fire": {
-            "name": "gyorstűz"
+            "name": "rapid fire"
         },
         "rolling-into-position": {
-            "name": "beállás gördüléssel"
+            "name": "rolling into position"
         },
         "sharpened-focus": {
-            "name": "kiélesített összpontosítás"
+            "name": "sharpened focus"
         },
         "stationary-enhancements": {
-            "name": "helyhez kötött fejlesztések"
+            "name": "stationary enhancements"
         },
         "supercharged-gunpowder": {
-            "name": "feltöltött lőpor"
+            "name": "supercharged gunpowder"
         },
         "superior-upgrade": {
-            "name": "kiváló fejlesztés"
+            "name": "superior upgrade"
         },
         "twin-blast": {
-            "name": "iker-robbanás"
+            "name": "twin blast"
         },
         "unbreakable-position": {
-            "name": "megingathatatlan állás"
+            "name": "unbreakable position"
         },
         "unexpected-bombshell": {
-            "name": "váratlan bomba"
+            "name": "unexpected bombshell"
         },
         "cg-back": {
             "name": "cg-back"
         },
         "agonizing-clamp": {
-            "name": "gyötrő szorító"
+            "name": "agonizing clamp"
         },
         "champion-of-chains": {
-            "name": "a láncok bajnoka"
+            "name": "champion of chains"
         },
         "chokehold": {
-            "name": "fojtófogás"
+            "name": "chokehold"
         },
         "clamping-snare": {
-            "name": "összeszorító csapda"
+            "name": "clamping snare"
         },
         "dizzying-release": {
-            "name": "szédítő elengedés"
+            "name": "dizzying release"
         },
         "double-ko": {
-            "name": "dupla K.O."
+            "name": "double k.o."
         },
         "drag-through-dirt": {
-            "name": "húzás a sárban"
+            "name": "drag through dirt"
         },
         "follow-the-chains": {
-            "name": "kövesd a láncokat"
+            "name": "follow the chains"
         },
         "ganging-up": {
-            "name": "csoportos támadás"
+            "name": "ganging up"
         },
         "impending-power": {
-            "name": "közelgő hatalom"
+            "name": "impending power"
         },
         "iron-thrust": {
-            "name": "vasszúrás"
+            "name": "iron thrust"
         },
         "latch-and-tow": {
-            "name": "kapaszkodj és vontass"
+            "name": "latch and tow"
         },
         "locking-links": {
-            "name": "záródó láncszemek"
+            "name": "locking links"
         },
         "merciless-beatdown": {
-            "name": "könyörtelen elverés"
+            "name": "merciless beatdown"
         },
         "meteor-hammer": {
-            "name": "meteorkalapács"
+            "name": "meteor hammer"
         },
         "pivot-and-smash": {
-            "name": "fordulj és zúzz"
+            "name": "pivot and smash"
         },
         "roundhouse-swing": {
-            "name": "körös suhintás"
+            "name": "roundhouse swing"
         },
         "rusty-spikes": {
-            "name": "rozsdás tüskék"
+            "name": "rusty spikes"
         },
         "slamming-shove": {
-            "name": "csapódó lökés"
+            "name": "slamming shove"
         },
         "spiked-knuckles": {
-            "name": "tüskés ökölvas"
+            "name": "spiked knuckles"
         },
         "suffering-steel": {
-            "name": "gyötrő acél"
+            "name": "suffering steel"
         },
         "sweeping-collision": {
-            "name": "söprő ütközés"
+            "name": "sweeping collision"
         },
         "syndicated-assault": {
-            "name": "szindikált támadás"
+            "name": "syndicated assault"
         },
         "tighten-the-chains": {
-            "name": "húzd meg a láncokat"
+            "name": "tighten the chains"
         },
         "titanic-chainwhip": {
-            "name": "titáni láncostor"
+            "name": "titanic chainwhip"
         },
         "unending-torment": {
-            "name": "végtelen kín"
+            "name": "unending torment"
         },
         "untouchable-keeper": {
-            "name": "érinthetetlen őrző"
+            "name": "untouchable keeper"
         },
         "vigorous-sway": {
-            "name": "erőteljes lengés"
+            "name": "vigorous sway"
         },
         "wrapped-in-metal": {
-            "name": "fémbe burkolva"
+            "name": "wrapped in metal"
         },
         "ct-back": {
             "name": "ct-back"
         },
         "agile-predator": {
-            "name": "fürge ragadozó"
+            "name": "agile predator"
         },
         "black-panther": {
-            "name": "fekete párduc"
+            "name": "black panther"
         },
         "catastrophic-cattle": {
-            "name": "katasztrofális szarvasmarha"
+            "name": "catastrophic cattle"
         },
         "fighting-bull": {
-            "name": "harci bika"
+            "name": "fighting bull"
         },
         "ceremonial-dance": {
-            "name": "szertartási tánc"
+            "name": "ceremonial dance"
         },
         "chest-thumper": {
-            "name": "mellverdeső"
+            "name": "chest thumper"
         },
         "lowland-gorilla": {
-            "name": "síkvidéki gorilla"
+            "name": "lowland gorilla"
         },
         "hunters-mark": {
-            "name": "vadász jele"
+            "name": "hunter's mark"
         },
         "impervious-armor": {
-            "name": "áthatolhatatlan páncél"
+            "name": "impervious armor"
         },
         "battle-rhinoceros": {
-            "name": "harci orrszarvú"
+            "name": "battle rhinoceros"
         },
         "majestic-mass": {
-            "name": "fenséges tömeg"
+            "name": "majestic mass"
         },
         "war-elephant": {
-            "name": "harci elefánt"
+            "name": "war elephant"
         },
         "master-the-reins": {
-            "name": "uralkodj a gyeplőn"
+            "name": "master the reins"
         },
         "medicine-shield": {
-            "name": "gyógyító pajzs"
+            "name": "medicine shield"
         },
         "mounded-sight": {
-            "name": "halomról kilátás"
+            "name": "mounded sight"
         },
         "cavalry-camel": {
-            "name": "lovassági teve"
+            "name": "cavalry camel"
         },
         "one-with-nature": {
-            "name": "egy a természettel"
+            "name": "one with nature"
         },
         "outrun-the-enemy": {
-            "name": "előzd meg az ellenséget"
+            "name": "outrun the enemy"
         },
         "speedy-ostrich": {
-            "name": "gyors strucc"
+            "name": "speedy ostrich"
         },
         "piercing-darts": {
-            "name": "átszúró nyilak"
+            "name": "piercing darts"
         },
         "pipe-tomahawk": {
-            "name": "pipás tomahawk"
+            "name": "pipe tomahawk"
         },
         "positive-reinforcement": {
-            "name": "pozitív megerősítés"
+            "name": "positive reinforcement"
         },
         "prepared-rations": {
-            "name": "előkészített ellátmány"
+            "name": "prepared rations"
         },
         "pack-mule": {
-            "name": "teherhordó öszvér"
+            "name": "pack mule"
         },
         "regal-beast": {
-            "name": "királyi fenevad"
+            "name": "regal beast"
         },
         "sabretooth-tiger": {
-            "name": "kardfogú tigris"
+            "name": "sabretooth tiger"
         },
         "resurrection": {
-            "name": "feltámadás"
+            "name": "resurrection"
         },
         "skinning-knife": {
-            "name": "nyúzókés"
+            "name": "skinning knife"
         },
         "slow-and-steady": {
-            "name": "lassan és biztosan"
+            "name": "slow and steady"
         },
         "giant-tortoise": {
-            "name": "óriásteknős"
+            "name": "giant tortoise"
         },
         "sniffing-hound": {
-            "name": "szimatoló kutya"
+            "name": "sniffing hound"
         },
         "scout-dog": {
-            "name": "felderítő kutya"
+            "name": "scout dog"
         },
         "soul-whisperer": {
-            "name": "lélekdúdoló"
+            "name": "soul whisperer"
         },
         "spiked-muzzle": {
-            "name": "tüskés szájkosár"
+            "name": "spiked muzzle"
         },
         "strapping-bullwhip": {
-            "name": "erős ostor"
+            "name": "strapping bullwhip"
         },
         "sucker-punch": {
-            "name": "alattomos ütés"
+            "name": "sucker punch"
         },
         "take-the-reins": {
-            "name": "vedd át a gyeplőt"
+            "name": "take the reins"
         },
         "tribal-blessing": {
-            "name": "törzsi áldás"
+            "name": "tribal blessing"
         },
         "venomous-mayhem": {
-            "name": "mérges zűrzavar"
+            "name": "venomous mayhem"
         },
         "cottonmouth-snake": {
-            "name": "vízi mokasszinkígyó"
+            "name": "cottonmouth snake"
         },
         "war-paint": {
-            "name": "harci festés"
+            "name": "war paint"
         },
         "fk-back": {
             "name": "fk-back"
         },
         "backdraft": {
-            "name": "visszatüzelés"
+            "name": "backdraft"
         },
         "cauterize-wound": {
-            "name": "sebkiégetés"
+            "name": "cauterize wound"
         },
         "collective-combat": {
-            "name": "kollektív harc"
+            "name": "collective combat"
         },
         "combat-medic": {
-            "name": "hadiorvos"
+            "name": "combat medic"
         },
         "combined-effort": {
-            "name": "közös erőfeszítés"
+            "name": "combined effort"
         },
         "controlled-aggression": {
-            "name": "kontrollált agresszió"
+            "name": "controlled aggression"
         },
         "coordinated-attack": {
-            "name": "összehangolt támadás"
+            "name": "coordinated attack"
         },
         "crew-integrity": {
-            "name": "a legénység összetartása"
+            "name": "crew integrity"
         },
         "fiery-charisma": {
-            "name": "tüzes karizma"
+            "name": "fiery charisma"
         },
         "fire-whirl": {
-            "name": "tűzörvény"
+            "name": "fire whirl"
         },
         "flaming-axe": {
-            "name": "lángoló fejsze"
+            "name": "flaming axe"
         },
         "flashover": {
-            "name": "átcsapó láng"
+            "name": "flashover"
         },
         "reigniting-drakefiend": {
-            "name": "újra fellángoló gyíkdémon"
+            "name": "reigniting drakefiend"
         },
         "forcible-entry": {
-            "name": "erőszakos behatolás"
+            "name": "forcible entry"
         },
         "heavy-irons": {
-            "name": "nehéz vasak"
+            "name": "heavy irons"
         },
         "hook-and-ladder": {
-            "name": "horog és létra"
+            "name": "hook and ladder"
         },
         "incident-commander": {
-            "name": "műveletirányító"
+            "name": "incident commander"
         },
         "jack-of-all-trades": {
-            "name": "mindenes"
+            "name": "jack of all trades"
         },
         "kindled-tonic": {
-            "name": "felszított tonik"
+            "name": "kindled tonic"
         },
         "ladder-assault": {
-            "name": "létrás roham"
+            "name": "ladder assault"
         },
         "light-irons": {
-            "name": "könnyű vasak"
+            "name": "light irons"
         },
         "loyal-companion": {
-            "name": "hű társ"
+            "name": "loyal companion"
         },
         "spotted-hound": {
-            "name": "foltos kutya"
+            "name": "spotted hound"
         },
         "mutual-aid": {
-            "name": "kölcsönös segítség"
+            "name": "mutual aid"
         },
         "playing-with-fire": {
-            "name": "játék a tűzzel"
+            "name": "playing with fire"
         },
         "practical-tools": {
-            "name": "gyakorlati szerszámok"
+            "name": "practical tools"
         },
         "rapid-response": {
-            "name": "gyors reagálás"
+            "name": "rapid response"
         },
         "rolling-flames": {
-            "name": "gördülő lángok"
+            "name": "rolling flames"
         },
         "search-and-rescue": {
-            "name": "keresés és mentés"
+            "name": "search and rescue"
         },
         "searing-blaze": {
-            "name": "perzselő tűz"
+            "name": "searing blaze"
         },
         "trauma-care": {
-            "name": "traumaellátás"
+            "name": "trauma care"
         },
         "ho-back": {
             "name": "ho-back"
         },
         "borrowed-vitality": {
-            "name": "kölcsönvett életerő"
+            "name": "borrowed vitality"
         },
         "channel-the-void": {
-            "name": "csatornázd az űrt"
+            "name": "channel the void"
         },
         "empowered-assault": {
-            "name": "megerősített támadás"
+            "name": "empowered assault"
         },
         "enduring-darkness": {
-            "name": "tartós sötétség"
+            "name": "enduring darkness"
         },
         "enervating-strike": {
-            "name": "elgyengítő csapás"
+            "name": "enervating strike"
         },
         "entropy-unleashed": {
-            "name": "szabadjára engedett entrópia"
+            "name": "entropy unleashed"
         },
         "find-an-opening": {
-            "name": "keress rést"
+            "name": "find an opening"
         },
         "gateway-to-the-abyss": {
-            "name": "kapu a szakadékhoz"
+            "name": "gateway to the abyss"
         },
         "greed-before-need": {
-            "name": "kapzsiság a szükség előtt"
+            "name": "greed before need"
         },
         "hollow-embrace": {
-            "name": "üres ölelés"
+            "name": "hollow embrace"
         },
         "implosion": {
-            "name": "implózió"
+            "name": "implosion"
         },
         "majestic-malevolence": {
-            "name": "fenséges rosszindulat"
+            "name": "majestic malevolence"
         },
         "nether-binding": {
-            "name": "alvilági kötelék"
+            "name": "nether binding"
         },
         "nether-blades": {
-            "name": "alvilági pengék"
+            "name": "nether blades"
         },
         "no-escape": {
-            "name": "nincs menekvés"
+            "name": "no escape"
         },
         "obliterate": {
-            "name": "megsemmisítés"
+            "name": "obliterate"
         },
         "one-with-nothingness": {
-            "name": "egy a semmivel"
+            "name": "one with nothingness"
         },
         "prescient-voidmastery": {
-            "name": "előrelátó űrmesterség"
+            "name": "prescient voidmastery"
         },
         "reaching-darkness": {
-            "name": "elérő sötétség"
+            "name": "reaching darkness"
         },
         "ruinous-barrage": {
-            "name": "romboló össztűz"
+            "name": "ruinous barrage"
         },
         "sever-reality": {
-            "name": "szakítsd el a valóságot"
+            "name": "sever reality"
         },
         "shrouded-grasp": {
-            "name": "beburkolt szorítás"
+            "name": "shrouded grasp"
         },
         "stalking-quarry": {
-            "name": "zsákmány leselkedése"
+            "name": "stalking quarry"
         },
         "tendrils-of-night": {
-            "name": "az éjszaka indái"
+            "name": "tendrils of night"
         },
         "touch-of-the-void": {
-            "name": "az űr érintése"
+            "name": "touch of the void"
         },
         "untethered-advance": {
-            "name": "szabad előrenyomulás"
+            "name": "untethered advance"
         },
         "void-enhanced-armory": {
-            "name": "űrrel erősített fegyvertár"
+            "name": "void-enhanced armory"
         },
         "void-step": {
-            "name": "űrlépés"
+            "name": "void step"
         },
         "withering-deluge": {
-            "name": "sorvasztó özön"
+            "name": "withering deluge"
         },
         "hp-back": {
             "name": "hp-back"
         },
         "aspiration": {
-            "name": "törekvés"
+            "name": "aspiration"
         },
         "beacon-of-hope": {
-            "name": "a remény jelzőtüze"
+            "name": "beacon of hope"
         },
         "bringer-of-miracles": {
-            "name": "csodák hozója"
+            "name": "bringer of miracles"
         },
         "chains-of-light": {
-            "name": "a fény láncai"
+            "name": "chains of light"
         },
         "devotion": {
-            "name": "odaadás"
+            "name": "devotion"
         },
         "devout-assistance": {
-            "name": "buzgó segítség"
+            "name": "devout assistance"
         },
         "divine-allegiance": {
-            "name": "isteni hűség"
+            "name": "divine allegiance"
         },
         "encouraged-conviction": {
-            "name": "bátorított meggyőződés"
+            "name": "encouraged conviction"
         },
         "expansive-permanence": {
-            "name": "terjedő állandóság"
+            "name": "expansive permanence"
         },
         "faith-calling": {
-            "name": "a hit hívása"
+            "name": "faith calling"
         },
         "grace": {
-            "name": "kegyelem"
+            "name": "grace"
         },
         "harsh-rebuke": {
-            "name": "kemény megrovás"
+            "name": "harsh rebuke"
         },
         "impetuous-inquisition": {
-            "name": "hevenyészett inkvizíció"
+            "name": "impetuous inquisition"
         },
         "inner-reflection": {
-            "name": "belső elmélkedés"
+            "name": "inner reflection"
         },
         "inspired-remedy": {
-            "name": "ihletett orvosság"
+            "name": "inspired remedy"
         },
         "lamentation": {
-            "name": "siratás"
+            "name": "lamentation"
         },
         "meditation": {
-            "name": "meditáció"
+            "name": "meditation"
         },
         "oaks-embrace": {
-            "name": "a tölgy ölelése"
+            "name": "oaks embrace"
         },
         "ordination": {
-            "name": "felszentelés"
+            "name": "ordination"
         },
         "penitence": {
-            "name": "vezeklés"
+            "name": "penitence"
         },
         "prosperous-concord": {
-            "name": "virágzó egyetértés"
+            "name": "prosperous concord"
         },
         "restoring-faith": {
-            "name": "helyreállító hit"
+            "name": "restoring faith"
         },
         "revered-protector": {
-            "name": "tisztelt védelmező"
+            "name": "revered protector"
         },
         "righteous-atonement": {
-            "name": "igaz engesztelés"
+            "name": "righteous atonement"
         },
         "rooted-subjugation": {
-            "name": "gyökerező leigázás"
+            "name": "rooted subjugation"
         },
         "sacred-death": {
-            "name": "szent halál"
+            "name": "sacred death"
         },
         "salvation": {
-            "name": "üdvösség"
+            "name": "salvation"
         },
         "soulful-salvation": {
-            "name": "lelkes megváltás"
+            "name": "soulful salvation"
         },
         "soul-strike": {
-            "name": "lélekcsapás"
+            "name": "soul strike"
         },
         "spiritual-gains": {
-            "name": "szellemi nyereség"
+            "name": "spiritual gains"
         },
         "standing-ground": {
-            "name": "a helyünkön állva"
+            "name": "standing ground"
         },
         "symphony-of-oppression": {
-            "name": "az elnyomás szimfóniája"
+            "name": "symphony of oppression"
         },
         "unruly-repentance": {
-            "name": "engedetlen bűnbánat"
+            "name": "unruly repentance"
         },
         "unstoppable-force": {
-            "name": "megállíthatatlan erő"
+            "name": "unstoppable force"
         },
         "vengeful-veneration": {
-            "name": "bosszúálló tisztelet"
+            "name": "vengeful veneration"
         },
         "vital-bond": {
-            "name": "éltető kötelék"
+            "name": "vital bond"
         },
         "vocal-sermon": {
-            "name": "hangos prédikáció"
+            "name": "vocal sermon"
         },
         "weakened-will": {
-            "name": "megtört akarat"
+            "name": "weakened will"
         },
         "lu-back": {
             "name": "lu-back"
         },
         "blackened-rage": {
-            "name": "megfeketedett düh"
+            "name": "blackened rage"
         },
         "blazing-pincers": {
-            "name": "lángoló ollók"
+            "name": "blazing pincers"
         },
         "burning-sparks": {
-            "name": "égő szikrák"
+            "name": "burning sparks"
         },
         "chilling-wave": {
-            "name": "fagyos hullám"
+            "name": "chilling wave"
         },
         "colorful-wavelengths": {
-            "name": "színes hullámhosszok"
+            "name": "colorful wavelengths"
         },
         "darkened-overcast": {
-            "name": "elsötétült borulat"
+            "name": "darkened overcast"
         },
         "dominating-illumination": {
-            "name": "uralkodó megvilágítás"
+            "name": "dominating illumination"
         },
         "empowering-rays": {
-            "name": "megerősítő sugarak"
+            "name": "empowering rays"
         },
         "encompassing-aura": {
-            "name": "átfogó aura"
+            "name": "encompassing aura"
         },
         "flickering-lights": {
-            "name": "pislákoló fények"
+            "name": "flickering lights"
         },
         "floodlight": {
-            "name": "reflektorfény"
+            "name": "floodlight"
         },
         "frosty-glimmer": {
-            "name": "zúzmarás csillogás"
+            "name": "frosty glimmer"
         },
         "gamma-energy": {
-            "name": "gammaenergia"
+            "name": "gamma energy"
         },
         "heat-waves": {
-            "name": "hőhullámok"
+            "name": "heat waves"
         },
         "imposing-brilliance": {
-            "name": "impozáns ragyogás"
+            "name": "imposing brilliance"
         },
         "light-the-way": {
-            "name": "világítsd meg az utat"
+            "name": "light the way"
         },
         "gleaming-squid": {
-            "name": "fénylő tintahal"
+            "name": "gleaming squid"
         },
         "luminescence": {
-            "name": "lumineszcencia"
+            "name": "luminescence"
         },
         "moonbeam": {
-            "name": "holdsugár"
+            "name": "moonbeam"
         },
         "optical-refraction": {
-            "name": "optikai fénytörés"
+            "name": "optical refraction"
         },
         "photonic-defense": {
-            "name": "fotonikus védelem"
+            "name": "photonic defense"
         },
         "radiant-glare": {
-            "name": "sugárzó vakító fény"
+            "name": "radiant glare"
         },
         "shadow-claws": {
-            "name": "árnykarmok"
+            "name": "shadow claws"
         },
         "shimmering-scuttle": {
-            "name": "csillámló iszkolás"
+            "name": "shimmering scuttle"
         },
         "shining-diversion": {
-            "name": "fényes elterelés"
+            "name": "shining diversion"
         },
         "soft-glow": {
-            "name": "lágy fény"
+            "name": "soft glow"
         },
         "solid-light": {
-            "name": "szilárd fény"
+            "name": "solid light"
         },
         "sparkling-glow": {
-            "name": "szikrázó fény"
+            "name": "sparkling glow"
         },
         "torrid-radiation": {
-            "name": "tüzes sugárzás"
+            "name": "torrid radiation"
         },
         "trickling-sting": {
-            "name": "csörgedező fullánk"
+            "name": "trickling sting"
         },
         "violent-flash": {
-            "name": "heves villanás"
+            "name": "violent flash"
         },
         "mf-back": {
             "name": "mf-back"
         },
         "airborne-spores": {
-            "name": "levegőben terjedő spórák"
+            "name": "airborne spores"
         },
         "anticoagulant": {
-            "name": "véralvadásgátló"
+            "name": "anticoagulant"
         },
         "blood-thinner": {
-            "name": "vérhígító"
+            "name": "blood thinner"
         },
         "bogstep": {
-            "name": "mocsárlépés"
+            "name": "bogstep"
         },
         "complex-toxicology": {
-            "name": "összetett toxikológia"
+            "name": "complex toxicology"
         },
         "compound-toxin": {
-            "name": "összetett méreg"
+            "name": "compound toxin"
         },
         "copperneck-berries": {
-            "name": "rézgalléros bogyók"
+            "name": "copperneck berries"
         },
         "death-sentence": {
-            "name": "halálos ítélet"
+            "name": "death sentence"
         },
         "fireroot-sap": {
-            "name": "tűzgyökér nedve"
+            "name": "fireroot sap"
         },
         "ground-solvent": {
-            "name": "talajoldószer"
+            "name": "ground solvent"
         },
         "hide-and-seek": {
-            "name": "bújócska"
+            "name": "hide and seek"
         },
         "lashing-vines": {
-            "name": "ostorozó indák"
+            "name": "lashing vines"
         },
         "flailing-ivies": {
-            "name": "csapkodó repkények"
+            "name": "flailing ivies"
         },
         "lingering-swamp-moss": {
-            "name": "megmaradó mocsári moha"
+            "name": "lingering swamp moss"
         },
         "mudslide": {
-            "name": "iszapcsuszamlás"
+            "name": "mudslide"
         },
         "neurotoxin": {
-            "name": "idegméreg"
+            "name": "neurotoxin"
         },
         "paralytic-agent": {
-            "name": "bénító szer"
+            "name": "paralytic agent"
         },
         "personal-poison": {
-            "name": "személyes méreg"
+            "name": "personal poison"
         },
         "potent-mixture": {
-            "name": "erős keverék"
+            "name": "potent mixture"
         },
         "radiant-forest-fungi": {
-            "name": "sugárzó erdei gombák"
+            "name": "radiant forest fungi"
         },
         "serpents-kiss": {
-            "name": "a kígyó csókja"
+            "name": "serpent's kiss"
         },
         "sinkhole": {
-            "name": "beomlás"
+            "name": "sinkhole"
         },
         "sludge-bomb": {
-            "name": "iszapbomba"
+            "name": "sludge bomb"
         },
         "still-river-algae": {
-            "name": "állóvízi algák"
+            "name": "still river algae"
         },
         "tainted-waters": {
-            "name": "megmérgezett vizek"
+            "name": "tainted waters"
         },
         "throwing-daggers": {
-            "name": "dobótőrök"
+            "name": "throwing daggers"
         },
         "twist-the-blade": {
-            "name": "forgasd a pengét"
+            "name": "twist the blade"
         },
         "volatile-tonic": {
-            "name": "illékony tonik"
+            "name": "volatile tonic"
         },
         "whitefire-balm": {
-            "name": "fehértűz balzsam"
+            "name": "whitefire balm"
         },
         "wild-stings": {
-            "name": "vad fullánkok"
+            "name": "wild stings"
         },
         "crypt-nettle": {
-            "name": "kripta csalán"
+            "name": "crypt nettle"
         },
         "qa-back": {
             "name": "qa-back"
         },
         "annihilating-contraption": {
-            "name": "megsemmisítő szerkezet"
+            "name": "annihilating contraption"
         },
         "clockwork-ravager": {
-            "name": "óraműves fosztogató"
+            "name": "clockwork ravager"
         },
         "double-barrel-railcaster": {
-            "name": "kétcsövű sínvető"
+            "name": "double-barrel railcaster"
         },
         "elemental-condenser": {
-            "name": "elemi kondenzátor"
+            "name": "elemental condenser"
         },
         "energy-transmission": {
-            "name": "energiaátvitel"
+            "name": "energy transmission"
         },
         "fragmentation-grenade": {
-            "name": "repesztő gránát"
+            "name": "fragmentation grenade"
         },
         "galvanic-coil": {
-            "name": "galvántekercs"
+            "name": "galvanic coil"
         },
         "gravity-inverter-module": {
-            "name": "gravitációs invertermodul"
+            "name": "gravity inverter module"
         },
         "improvised-exosuit": {
-            "name": "rögtönzött exoruha"
+            "name": "improvised exosuit"
         },
         "hollow-carapace": {
-            "name": "üreges páncél"
+            "name": "hollow carapace"
         },
         "improvised-mortar": {
-            "name": "rögtönzött aknavető"
+            "name": "improvised mortar"
         },
         "clockwork-bombard": {
-            "name": "óraműves bombázó"
+            "name": "clockwork bombard"
         },
         "instant-relocation-matrix": {
-            "name": "azonnali áthelyezési mátrix"
+            "name": "instant relocation matrix"
         },
         "jury-rigged-machine": {
-            "name": "összetákolt gép"
+            "name": "jury-rigged machine"
         },
         "clockwork-soldier": {
-            "name": "óraműves katona"
+            "name": "clockwork soldier"
         },
         "launch-skywards": {
-            "name": "kilövés az égbe"
+            "name": "launch skywards"
         },
         "clockwork-drone": {
-            "name": "óraműves drón"
+            "name": "clockwork drone"
         },
         "march-of-machines": {
-            "name": "a gépek menete"
+            "name": "march of machines"
         },
         "oscillating-projector": {
-            "name": "oszcilláló vetítő"
+            "name": "oscillating projector"
         },
         "particle-ray-beam": {
-            "name": "részecske-sugárnyaláb"
+            "name": "particle ray beam"
         },
         "perfected-exosuit": {
-            "name": "tökéletesített exoruha"
+            "name": "perfected exosuit"
         },
         "phase-field-emitter": {
-            "name": "fázismező-kibocsátó"
+            "name": "phase field emitter"
         },
         "power-modulation": {
-            "name": "teljesítménymoduláció"
+            "name": "power modulation"
         },
         "ransack-clutter": {
-            "name": "túrd át a kacatot"
+            "name": "ransack clutter"
         },
         "recycle-parts": {
-            "name": "alkatrészek újrahasznosítása"
+            "name": "recycle parts"
         },
         "reinforce-armor": {
-            "name": "páncél megerősítése"
+            "name": "reinforce armor"
         },
         "remote-control": {
-            "name": "távirányítás"
+            "name": "remote control"
         },
         "repurpose-leftovers": {
-            "name": "maradékok újrahasznosítása"
+            "name": "repurpose leftovers"
         },
         "retrofit-weapons": {
-            "name": "fegyverek átalakítása"
+            "name": "retrofit weapons"
         },
         "salvage-grappler": {
-            "name": "mentő csáklyázó"
+            "name": "salvage grappler"
         },
         "seeker-missiles": {
-            "name": "önirányító rakéták"
+            "name": "seeker missiles"
         },
         "clockwork-rocket": {
-            "name": "óraműves rakéta"
+            "name": "clockwork rocket"
         },
         "trajectory-diverter": {
-            "name": "pályaeltérítő"
+            "name": "trajectory diverter"
         },
         "trudging-bulwark": {
-            "name": "vánszorgó bástya"
+            "name": "trudging bulwark"
         },
         "clockwork-guardian": {
-            "name": "óraműves őrző"
+            "name": "clockwork guardian"
         },
         "rm-back": {
             "name": "rm-back"
         },
         "belly-of-the-beast": {
-            "name": "a fenevad gyomra"
+            "name": "belly of the beast"
         },
         "berserk-barrage": {
-            "name": "tomboló össztűz"
+            "name": "berserk barrage"
         },
         "burning-bile": {
-            "name": "égő epe"
+            "name": "burning bile"
         },
         "caustic-claws": {
-            "name": "maró karmok"
+            "name": "caustic claws"
         },
         "cornered-animal": {
-            "name": "sarokba szorított állat"
+            "name": "cornered animal"
         },
         "corrosive-spew": {
-            "name": "maró hányás"
+            "name": "corrosive spew"
         },
         "devour-whole": {
-            "name": "egészben lenyelés"
+            "name": "devour whole"
         },
         "easy-prey": {
-            "name": "könnyű préda"
+            "name": "easy prey"
         },
         "fatal-frenzy": {
-            "name": "végzetes tombolás"
+            "name": "fatal frenzy"
         },
         "feast-of-flesh": {
-            "name": "húslakoma"
+            "name": "feast of flesh"
         },
         "feral-lunge": {
-            "name": "vad kitörés"
+            "name": "feral lunge"
         },
         "ferocious-fling": {
-            "name": "vad hajítás"
+            "name": "ferocious fling"
         },
         "fight-or-flight": {
-            "name": "harcolj vagy menekülj"
+            "name": "fight or flight"
         },
         "heartripper": {
-            "name": "szívtépő"
+            "name": "heartripper"
         },
         "indomitable-craving": {
-            "name": "megzabolázhatatlan vágy"
+            "name": "indomitable craving"
         },
         "lie-in-wait": {
-            "name": "lesben állás"
+            "name": "lie in wait"
         },
         "nourishing-meal": {
-            "name": "tápláló étkezés"
+            "name": "nourishing meal"
         },
         "pouncing-predator": {
-            "name": "lesújtó ragadozó"
+            "name": "pouncing predator"
         },
         "ravenous-roar": {
-            "name": "falánk üvöltés"
+            "name": "ravenous roar"
         },
         "reckless-attack": {
-            "name": "vakmerő támadás"
+            "name": "reckless attack"
         },
         "rend-and-mutilate": {
-            "name": "tépd szét és csonkítsd meg"
+            "name": "rend and mutilate"
         },
         "rip-and-tear": {
-            "name": "szaggass és tépj"
+            "name": "rip and tear"
         },
         "savage-stalker": {
-            "name": "vad üldöző"
+            "name": "savage stalker"
         },
         "scrape-and-scrounge": {
-            "name": "kaparj és kutass"
+            "name": "scrape and scrounge"
         },
         "seize": {
-            "name": "megragadás"
+            "name": "seize"
         },
         "slake-thirst": {
-            "name": "oltsd a szomjat"
+            "name": "slake thirst"
         },
         "strip-the-flesh": {
-            "name": "tépd le a húst"
+            "name": "strip the flesh"
         },
         "survival-instincts": {
-            "name": "túlélési ösztönök"
+            "name": "survival instincts"
         },
         "terrifying-howl": {
-            "name": "rémisztő üvöltés"
+            "name": "terrifying howl"
         },
         "voracious-hunter": {
-            "name": "nyelős vadász"
+            "name": "voracious hunter"
         },
         "sp-back": {
             "name": "sp-back"
         },
         "burning-pit": {
-            "name": "égő gödör"
+            "name": "burning pit"
         },
         "blazing-fire": {
-            "name": "lobogó tűz"
+            "name": "blazing fire"
         },
         "chilling-slice": {
-            "name": "fagyos szelet"
+            "name": "chilling slice"
         },
         "circle-of-lifeless": {
-            "name": "az élettelenek köre"
+            "name": "circle of lifeless"
         },
         "confidence-ritual": {
-            "name": "magabiztossági rituálé"
+            "name": "confidence ritual"
         },
         "death-is-not-defeat": {
-            "name": "a halál nem vereség"
+            "name": "death is not defeat"
         },
         "decaying-daggers": {
-            "name": "bomló tőrök"
+            "name": "decaying daggers"
         },
         "dimmed-defense": {
-            "name": "elhalványult védelem"
+            "name": "dimmed defense"
         },
         "wall-of-shadows": {
-            "name": "árnyak fala"
+            "name": "wall of shadows"
         },
         "eternal-endurance": {
-            "name": "örök állóképesség"
+            "name": "eternal endurance"
         },
         "wandering-soul": {
-            "name": "bolyongó lélek"
+            "name": "wandering soul"
         },
         "disembodied-goliath": {
-            "name": "testetlen góliát"
+            "name": "disembodied goliath"
         },
         "ethereal-canine": {
-            "name": "éteri kutya"
+            "name": "ethereal canine"
         },
         "phantom-hound": {
-            "name": "fantomkutya"
+            "name": "phantom hound"
         },
         "fear-the-reaper": {
-            "name": "félj a kaszástól"
+            "name": "fear the reaper"
         },
         "deatheater": {
-            "name": "halálfaló"
+            "name": "deatheater"
         },
         "fierce-loyalty": {
-            "name": "vad hűség"
+            "name": "fierce loyalty"
         },
         "mimicking-sprite": {
-            "name": "utánzó tündér"
+            "name": "mimicking sprite"
         },
         "flurry-of-madness": {
-            "name": "az őrület zápora"
+            "name": "flurry of madness"
         },
         "bat-cloud": {
-            "name": "denevérfelhő"
+            "name": "bat cloud"
         },
         "forceful-apparition": {
-            "name": "erőteljes jelenés"
+            "name": "forceful apparition"
         },
         "leeching-phantasm": {
-            "name": "pióca-fantom"
+            "name": "leeching phantasm"
         },
         "horde-of-bones": {
-            "name": "csonthorda"
+            "name": "horde of bones"
         },
         "skeletal-archer": {
-            "name": "csontvázíjász"
+            "name": "skeletal archer"
         },
         "horrific-nightmare": {
-            "name": "iszonyatos rémálom"
+            "name": "horrific nightmare"
         },
         "soul-snatcher": {
-            "name": "lélekrabló"
+            "name": "soul snatcher"
         },
         "incorporeal-transport": {
-            "name": "testetlen szállítás"
+            "name": "incorporeal transport"
         },
         "ghost-carriage": {
-            "name": "szellemhintó"
+            "name": "ghost carriage"
         },
         "midnight-feast": {
-            "name": "éjféli lakoma"
+            "name": "midnight feast"
         },
         "rise-from-ashes": {
-            "name": "támadj fel hamvaidból"
+            "name": "rise from ashes"
         },
         "glowing-egg": {
-            "name": "világító tojás"
+            "name": "glowing egg"
         },
         "spectral-phoenix": {
-            "name": "kísértet-főnix"
+            "name": "spectral phoenix"
         },
         "shamanistic-guard": {
-            "name": "sámáni őrző"
+            "name": "shamanistic guard"
         },
         "vengeful-phantasm": {
-            "name": "bosszúálló fantom"
+            "name": "vengeful phantasm"
         },
         "shrieking-spirit": {
-            "name": "sikító szellem"
+            "name": "shrieking spirit"
         },
         "wailing-banshee": {
-            "name": "jajveszékelő banshee"
+            "name": "wailing banshee"
         },
         "smoky-shroud": {
-            "name": "füstös lepel"
+            "name": "smoky shroud"
         },
         "mantle-of-darkness": {
-            "name": "a sötétség palástja"
+            "name": "mantle of darkness"
         },
         "soul-harvest": {
-            "name": "lélekaratás"
+            "name": "soul harvest"
         },
         "spirit-barrage": {
-            "name": "szellem-össztűz"
+            "name": "spirit barrage"
         },
         "spiritual-energy": {
-            "name": "szellemi energia"
+            "name": "spiritual energy"
         },
         "imbued-monolith": {
-            "name": "megtöltött monolit"
+            "name": "imbued monolith"
         },
         "spread-disease": {
-            "name": "betegség terjesztése"
+            "name": "spread disease"
         },
         "leprous-wraith": {
-            "name": "leprás kísértet"
+            "name": "leprous wraith"
         },
         "toxic-charm": {
-            "name": "mérgező báj"
+            "name": "toxic charm"
         },
         "unholy-sacrifice": {
-            "name": "szentségtelen áldozat"
+            "name": "unholy sacrifice"
         },
         "whistling-winds": {
-            "name": "fütyülő szelek"
+            "name": "whistling winds"
         },
         "white-glow": {
-            "name": "fehér fény"
+            "name": "white glow"
         },
         "orb-of-light": {
-            "name": "fénygömb"
+            "name": "orb of light"
         },
         "shifting-discs": {
-            "name": "eltolódó korongok"
+            "name": "shifting discs"
         },
         "st-back": {
             "name": "st-back"
         },
         "absolute-magnitude": {
-            "name": "abszolút fényesség"
+            "name": "absolute magnitude"
         },
         "absorbing-light": {
-            "name": "elnyelő fény"
+            "name": "absorbing light"
         },
         "aligned-constellations": {
-            "name": "egy vonalba álló csillagképek"
+            "name": "aligned constellations"
         },
         "blue-moon": {
-            "name": "kék hold"
+            "name": "blue moon"
         },
         "celestial-maneuver": {
-            "name": "égi manőver"
+            "name": "celestial maneuver"
         },
         "crashing-flare": {
-            "name": "becsapódó fáklya"
+            "name": "crashing flare"
         },
         "defying-gravity": {
-            "name": "a gravitáció dacolása"
+            "name": "defying gravity"
         },
         "diamond-rings": {
-            "name": "gyémántgyűrűk"
+            "name": "diamond rings"
         },
         "earthshine": {
-            "name": "földfény"
+            "name": "earthshine"
         },
         "eonic-blast": {
-            "name": "eónikus robbanás"
+            "name": "eonic blast"
         },
         "equinox": {
-            "name": "napéjegyenlőség"
+            "name": "equinox"
         },
         "force-field": {
-            "name": "erőtér"
+            "name": "force field"
         },
         "gravitational-flip": {
-            "name": "gravitációs fordulat"
+            "name": "gravitational flip"
         },
         "interplanar-voyager": {
-            "name": "síkok közötti utazó"
+            "name": "interplanar voyager"
         },
         "light-pollution": {
-            "name": "fényszennyezés"
+            "name": "light pollution"
         },
         "lost-in-the-stars": {
-            "name": "elveszve a csillagok között"
+            "name": "lost in the stars"
         },
         "lucky-stars": {
-            "name": "szerencsecsillagok"
+            "name": "lucky stars"
         },
         "luminous-blitz": {
-            "name": "fényes villámroham"
+            "name": "luminous blitz"
         },
         "pierce-the-firmament": {
-            "name": "szúrd át a mennyboltot"
+            "name": "pierce the firmament"
         },
         "plasmatic-power": {
-            "name": "plazmatikus erő"
+            "name": "plasmatic power"
         },
         "proportional-exchange": {
-            "name": "arányos csere"
+            "name": "proportional exchange"
         },
         "shifting-chasma": {
-            "name": "változó szakadék"
+            "name": "shifting chasma"
         },
         "shooting-stars": {
-            "name": "hullócsillagok"
+            "name": "shooting stars"
         },
         "solar-eclipse": {
-            "name": "napfogyatkozás"
+            "name": "solar eclipse"
         },
         "starstruck": {
-            "name": "csillagtól megrészegülve"
+            "name": "starstruck"
         },
         "stone-meteorite": {
-            "name": "kőmeteorit"
+            "name": "stone meteorite"
         },
         "sungaze": {
-            "name": "napbámulás"
+            "name": "sungaze"
         },
         "supernova": {
-            "name": "szupernóva"
+            "name": "supernova"
         },
         "wish-upon-a-star": {
-            "name": "kívánj egy csillagra"
+            "name": "wish upon a star"
         }
     },
     "fh": {
@@ -5111,352 +5111,352 @@ export default {
     },
     "mp": {
         "bug-bodys-bidding": {
-            "name": "Bogártest parancsa"
+            "name": "bug-bodys bidding"
         },
         "phantasmal-flurry": {
-            "name": "fantomzápor"
+            "name": "phantasmal flurry"
         },
         "sharp-teeth": {
-            "name": "éles fogak"
+            "name": "sharp teeth"
         },
         "nocturnal-feeding": {
-            "name": "éjszakai táplálkozás"
+            "name": "nocturnal feeding"
         },
         "vermincall": {
-            "name": "féregidézés"
+            "name": "vermincall"
         },
         "sickening-betrayal": {
-            "name": "undorító árulás"
+            "name": "sickening betrayal"
         },
         "touch-of-atrophy": {
-            "name": "sorvadás érintése"
+            "name": "touch of atrophy"
         },
         "surrounding-shadows": {
-            "name": "körülvevő árnyak"
+            "name": "surrounding shadows"
         },
         "howling-apparition": {
-            "name": "vijjogó jelenés"
+            "name": "howling apparition"
         },
         "endless-biting": {
-            "name": "végtelen harapás"
+            "name": "endless biting"
         },
         "black-claws": {
-            "name": "fekete karmok"
+            "name": "black claws"
         },
         "anguish": {
-            "name": "gyötrelem"
+            "name": "anguish"
         },
         "consume-with-regret": {
-            "name": "bánattal emészd fel"
+            "name": "consume with regret"
         },
         "rat-surprise": {
-            "name": "patkányos meglepetés"
+            "name": "rat surprise"
         },
         "tibers-tenacity": {
-            "name": "Tiber kitartása"
+            "name": "tibers tenacity"
         },
         "hidden-assault": {
-            "name": "rejtett támadás"
+            "name": "hidden assault"
         },
         "musophobia": {
-            "name": "muszofóbia"
+            "name": "musophobia"
         },
         "seeking-strikes": {
-            "name": "kereső csapások"
+            "name": "seeking strikes"
         },
         "doks-ferocity": {
-            "name": "Dok vadsága"
+            "name": "doks ferocity"
         },
         "compulsive-hoarding": {
-            "name": "kényszeres felhalmozás"
+            "name": "compulsive hoarding"
         },
         "my-loyal-friend": {
-            "name": "hű barátom"
+            "name": "my loyal friend"
         },
         "nibbled-to-death": {
-            "name": "halálra rágcsálva"
+            "name": "nibbled to death"
         },
         "diamartias-dominance": {
-            "name": "Diamartia uralma"
+            "name": "diamartia's dominance"
         },
         "revel-in-misery": {
-            "name": "gyönyörködj a nyomorúságban"
+            "name": "revel in misery"
         },
         "twin-frenzy": {
-            "name": "iker-tombolás"
+            "name": "twin frenzy"
         },
         "rat-tide": {
-            "name": "patkányáradat"
+            "name": "rat tide"
         },
         "powders-ingenuity": {
-            "name": "Powder találékonysága"
+            "name": "powders ingenuity"
         },
         "pay-the-piper": {
-            "name": "fizesd ki a fuvarost"
+            "name": "pay the piper"
         },
         "her-highness": {
-            "name": "őfensége"
+            "name": "her highness"
         },
         "treacherous-tactics": {
-            "name": "alattomos taktika"
+            "name": "treacherous tactics"
         },
         "anticipate-intricacies": {
-            "name": "előre látott bonyodalmak"
+            "name": "anticipate intricacies"
         },
         "peer-into-battle": {
-            "name": "pillants bele a csatába"
+            "name": "peer into battle"
         },
         "cursed-ground": {
-            "name": "elátkozott föld"
+            "name": "cursed ground"
         },
         "void-snare": {
-            "name": "űrcsapda"
+            "name": "void snare"
         },
         "approach-of-the-void": {
-            "name": "az űr közeledte"
+            "name": "approach of the void"
         },
         "duality-shards": {
-            "name": "kettősség szilánkjai"
+            "name": "duality shards"
         },
         "envision-the-course": {
-            "name": "képzeld el az utat"
+            "name": "envision the course"
         },
         "otherworldly-journey": {
-            "name": "túlvilági utazás"
+            "name": "otherworldly journey"
         },
         "ray-of-light": {
-            "name": "fénysugár"
+            "name": "ray of light"
         },
         "dimensional-transfer": {
-            "name": "dimenziók közötti átvitel"
+            "name": "dimensional transfer"
         },
         "inspiration-from-beyond": {
-            "name": "inspiráció a túlvilágról"
+            "name": "inspiration from beyond"
         },
         "call-of-the-nether": {
-            "name": "az alvilág hívása"
+            "name": "call of the nether"
         },
         "recurrence": {
-            "name": "ismétlődés"
+            "name": "recurrence"
         },
         "dimensional-divide": {
-            "name": "dimenziók szakadéka"
+            "name": "dimensional divide"
         },
         "cleansing-rite": {
-            "name": "megtisztító szertartás"
+            "name": "cleansing rite"
         },
         "past-and-future": {
-            "name": "múlt és jövő"
+            "name": "past and future"
         },
         "ethereal-vortex": {
-            "name": "éteri örvény"
+            "name": "ethereal vortex"
         },
         "protective-aura": {
-            "name": "védő aura"
+            "name": "protective aura"
         },
         "enfeebling-hex": {
-            "name": "elgyengítő rontás"
+            "name": "enfeebling hex"
         },
         "seal-their-fate": {
-            "name": "pecsételd meg a sorsukat"
+            "name": "seal their fate"
         },
         "constant-flux": {
-            "name": "állandó áramlás"
+            "name": "constant flux"
         },
         "careful-attunement": {
-            "name": "gondos összehangolás"
+            "name": "careful attunement"
         },
         "tether-the-planes": {
-            "name": "kösd össze a síkokat"
+            "name": "tether the planes"
         },
         "tear-reality": {
-            "name": "szakítsd szét a valóságot"
+            "name": "tear reality"
         },
         "time-and-again": {
-            "name": "újra és újra"
+            "name": "time and again"
         },
         "deep-contemplation": {
-            "name": "mély elmélkedés"
+            "name": "deep contemplation"
         },
         "planar-chaos": {
-            "name": "síkok káosza"
+            "name": "planar chaos"
         },
         "convergence": {
-            "name": "konvergencia"
+            "name": "convergence"
         },
         "hand-of-destiny": {
-            "name": "a sors keze"
+            "name": "hand of destiny"
         },
         "cant-be-bothered": {
-            "name": "nem érdekel"
+            "name": "cant be bothered"
         },
         "interesting-speciments": {
-            "name": "érdekes példányok"
+            "name": "interesting speciments"
         },
         "gather-reagents": {
-            "name": "gyűjts reagenseket"
+            "name": "gather reagents"
         },
         "somewhere-to-be": {
-            "name": "valahol lennem kell"
+            "name": "somewhere to be"
         },
         "not-amused": {
-            "name": "nem szórakoztató"
+            "name": "not amused"
         },
         "perpetual-annoyance": {
-            "name": "örökös bosszúság"
+            "name": "perpetual annoyance"
         },
         "minor-inconvenience": {
-            "name": "apró kellemetlenség"
+            "name": "minor inconvenience"
         },
         "fleeting-interest": {
-            "name": "múló érdeklődés"
+            "name": "fleeting interest"
         },
         "bizarre-antics": {
-            "name": "bizarr bohóckodás"
+            "name": "bizarre antics"
         },
         "leave-me-alone": {
-            "name": "hagyj békén"
+            "name": "leave me alone"
         },
         "abundant-nuisance": {
-            "name": "bőséges kellemetlenség"
+            "name": "abundant nuisance"
         },
         "trial-and-success": {
-            "name": "próba és siker"
+            "name": "trial and success"
         },
         "experimental-insights": {
-            "name": "kísérleti belátások"
+            "name": "experimental insights"
         },
         "outsource": {
-            "name": "kiszervezés"
+            "name": "outsource"
         },
         "beneath-me": {
-            "name": "méltatlan hozzám"
+            "name": "beneath me"
         },
         "fading-presence": {
-            "name": "halványuló jelenlét"
+            "name": "fading presence"
         },
         "fools-errand": {
-            "name": "bolondos küldetés"
+            "name": "fools errand"
         },
         "miniaturize": {
-            "name": "miniatürizálás"
+            "name": "miniaturize"
         },
         "dont-be-a-baby": {
-            "name": "ne légy gyerekes"
+            "name": "dont be a baby"
         },
         "trying-to-remember": {
-            "name": "próbálok emlékezni"
+            "name": "trying to remember"
         },
         "withering-stare": {
-            "name": "sorvasztó pillantás"
+            "name": "withering stare"
         },
         "dismissive-comment": {
-            "name": "elutasító megjegyzés"
+            "name": "dismissive comment"
         },
         "tear-a-new-one": {
-            "name": "alaposan helyretesz"
+            "name": "tear a new one"
         },
         "collect-essence": {
-            "name": "gyűjtsd a lényeget"
+            "name": "collect essence"
         },
         "kill-that-one-first": {
-            "name": "azt öld meg először"
+            "name": "kill that one first"
         },
         "closed-for-business": {
-            "name": "zárva"
+            "name": "closed for business"
         },
         "fired-up": {
-            "name": "felhevülve"
+            "name": "fired up"
         },
         "the-power-of-enhancement": {
-            "name": "a fejlesztés ereje"
+            "name": "the power of enhancement"
         },
         "shared-glory": {
-            "name": "megosztott dicsőség"
+            "name": "shared glory"
         },
         "bring-them-down": {
-            "name": "döntsd le őket"
+            "name": "bring them down"
         },
         "blade-of-the-north": {
-            "name": "észak pengéje"
+            "name": "blade of the north"
         },
         "victory-rush": {
-            "name": "győzelmi roham"
+            "name": "victory rush"
         },
         "dazing-sweep": {
-            "name": "kábító söprés"
+            "name": "dazing sweep"
         },
         "lead-the-charge": {
-            "name": "vezesd a rohamot"
+            "name": "lead the charge"
         },
         "spur-their-spirits": {
-            "name": "lelkesítsd őket"
+            "name": "spur their spirits"
         },
         "implacable-advance": {
-            "name": "könyörtelen előrenyomulás"
+            "name": "implacable advance"
         },
         "combined-might": {
-            "name": "egyesített erő"
+            "name": "combined might"
         },
         "get-behind-me": {
-            "name": "mögém"
+            "name": "get behind me"
         },
         "take-command": {
-            "name": "vedd át a parancsnokságot"
+            "name": "take command"
         },
         "wolf-pack-tactics": {
-            "name": "farkasfalka-taktika"
+            "name": "wolf pack tactics"
         },
         "emboldening-call": {
-            "name": "bátorító kiáltás"
+            "name": "emboldening call"
         },
         "outmaneuver": {
-            "name": "túlmanőverezés"
+            "name": "outmaneuver"
         },
         "stand-firm": {
-            "name": "állj szilárdan"
+            "name": "stand firm"
         },
         "a-little-help-here": {
-            "name": "egy kis segítség kéne"
+            "name": "a little help here"
         },
         "raze": {
-            "name": "földdel egyenlő"
+            "name": "raze"
         },
         "strike-now": {
-            "name": "csapj le most"
+            "name": "strike now"
         },
         "northern-valor": {
-            "name": "északi vitézség"
+            "name": "northern valor"
         },
         "unleash-the-archers": {
-            "name": "szabadítsd el az íjászokat"
+            "name": "unleash the archers"
         },
         "armory": {
-            "name": "fegyvertár"
+            "name": "armory"
         },
         "crashing-steel": {
-            "name": "csattanó acél"
+            "name": "crashing steel"
         },
         "defiance": {
-            "name": "dac"
+            "name": "defiance"
         },
         "send-them-reeling": {
-            "name": "tántorítsd meg őket"
+            "name": "send them reeling"
         },
         "for-frosthaven": {
-            "name": "Fagyvárosért"
+            "name": "for frosthaven"
         },
         "lead-from-the-front": {
-            "name": "vezess elöl"
+            "name": "lead from the front"
         },
         "bonded-through-battle": {
-            "name": "a csatában összekovácsolva"
+            "name": "bonded through battle"
         },
         "fight-as-one": {
-            "name": "harcoljatok egyként"
+            "name": "fight as one"
         },
         "stand-against-many": {
-            "name": "szállj szembe a sokasággal"
+            "name": "stand against many"
         }
     },
     "gh2": {
@@ -5494,13 +5494,13 @@ export default {
             "name": "söprő csapás"
         },
         "fearsome-taunt": {
-            "name": "félelmetes gúny"
+            "name": "fearsome taunt"
         },
         "provoking-roar": {
             "name": "kihívó üvöltés"
         },
         "intimidating-growl": {
-            "name": "megfélemlítő morgás"
+            "name": "intimidating growl"
         },
         "juggernaut": {
             "name": "dzsagernaut"
@@ -5515,7 +5515,7 @@ export default {
             "name": "forgószél"
         },
         "push-through": {
-            "name": "átverekedés"
+            "name": "push through"
         },
         "skirmishing-maneuver": {
             "name": "csatározó manőver"
@@ -5524,13 +5524,13 @@ export default {
             "name": "védekező taktika"
         },
         "run-through": {
-            "name": "átszúrás"
+            "name": "run through"
         },
         "immovable-phalanx": {
             "name": "mozdíthatatlan falanx"
         },
         "leg-fly": {
-            "name": "lábrepülés"
+            "name": "leg fly"
         },
         "selfish-retribution": {
             "name": "önző megtorlás"
@@ -5566,7 +5566,7 @@ export default {
             "name": "tartalék lőszer"
         },
         "earthen-bulwark": {
-            "name": "földbástya"
+            "name": "earthen bulwark"
         },
         "unstable-upheaval": {
             "name": "ingatag felfordulás"
@@ -5587,10 +5587,10 @@ export default {
             "name": "megkövesítés"
         },
         "burrow": {
-            "name": "beásás"
+            "name": "burrow"
         },
         "mud-eruption": {
-            "name": "iszapkitörés"
+            "name": "mud eruption"
         },
         "sentient-growth": {
             "name": "érző növekedés"
@@ -5608,7 +5608,7 @@ export default {
             "name": "kinetikus támadás"
         },
         "solidify": {
-            "name": "megszilárdítás"
+            "name": "solidify"
         },
         "stone-pummel": {
             "name": "kőpuffantás"
@@ -5629,19 +5629,19 @@ export default {
             "name": "sziklás vég"
         },
         "entomb": {
-            "name": "befalazás"
+            "name": "entomb"
         },
         "wave-of-destruction": {
-            "name": "a pusztítás hulláma"
+            "name": "wave of destruction"
         },
         "earths-embrace": {
-            "name": "a föld ölelése"
+            "name": "earth's embrace"
         },
         "submissive-affliction": {
             "name": "alázatos gyötrelem"
         },
         "hidden-in-the-shadows": {
-            "name": "elrejtve az árnyékban"
+            "name": "hidden in the shadows"
         },
         "scurry": {
             "name": "iszkolás"
@@ -5665,7 +5665,7 @@ export default {
             "name": "együtt érző támadás"
         },
         "psychic-blade": {
-            "name": "pszichikus penge"
+            "name": "psychic blade"
         },
         "feedback-loop": {
             "name": "visszacsatolás"
@@ -5689,7 +5689,7 @@ export default {
             "name": "koponyatúlterhelés"
         },
         "frozen-shiv": {
-            "name": "fagyott tőr"
+            "name": "frozen shiv"
         },
         "silent-scream": {
             "name": "néma sikoly"
@@ -5698,10 +5698,10 @@ export default {
             "name": "tömeghisztéria"
         },
         "gangling-abomination": {
-            "name": "nyúlánk förtelem"
+            "name": "gangling abomination"
         },
         "telepathic-command": {
-            "name": "telepatikus parancs"
+            "name": "telepathic command"
         },
         "dark-frenzy": {
             "name": "sötét tombolás"
@@ -5746,7 +5746,7 @@ export default {
             "name": "dobókések"
         },
         "practiced-reflexes": {
-            "name": "begyakorolt reflexek"
+            "name": "practiced reflexes"
         },
         "special-mixture": {
             "name": "különleges keverék"
@@ -5779,13 +5779,13 @@ export default {
             "name": "ijesztő előny"
         },
         "duelists-advantage": {
-            "name": "a párbajhős előnye"
+            "name": "duelist's advantage"
         },
         "serrated-arrow": {
-            "name": "fűrészes nyíl"
+            "name": "serrated arrow"
         },
         "dance-of-daggers": {
-            "name": "tőrök tánca"
+            "name": "dance of daggers"
         },
         "cull-the-weak": {
             "name": "gyengék kiirtása"
@@ -5803,7 +5803,7 @@ export default {
             "name": "megnyomorító méreg"
         },
         "hired-help": {
-            "name": "bérelt segítség"
+            "name": "hired help"
         },
         "watch-it-burn": {
             "name": "nézd, ahogy ég"
@@ -5815,7 +5815,7 @@ export default {
             "name": "tűzgömbök"
         },
         "arcane-bolt": {
-            "name": "mágikus nyílvessző"
+            "name": "arcane bolt"
         },
         "flame-strike": {
             "name": "lángcsapás"
@@ -5827,16 +5827,16 @@ export default {
             "name": "segítség az éterből"
         },
         "frost-strike": {
-            "name": "fagycsapás"
+            "name": "frost strike"
         },
         "emberfrost": {
-            "name": "parázsfagy"
+            "name": "emberfrost"
         },
         "flameswell": {
-            "name": "lánghullám"
+            "name": "flameswell"
         },
         "ice-armor": {
-            "name": "jégpáncél"
+            "name": "ice armor"
         },
         "impaling-eruption": {
             "name": "átszúró kitörés"
@@ -5845,46 +5845,46 @@ export default {
             "name": "fagyasztó nóva"
         },
         "etheric-echo": {
-            "name": "éteri visszhang"
+            "name": "etheric echo"
         },
         "heatwave": {
             "name": "hőhullám"
         },
         "arctic-shards": {
-            "name": "sarki szilánkok"
+            "name": "arctic shards"
         },
         "dancing-gales": {
-            "name": "táncoló viharok"
+            "name": "dancing gales"
         },
         "cold-fire": {
             "name": "hideg tűz"
         },
         "warm-up": {
-            "name": "bemelegítés"
+            "name": "warm up"
         },
         "cool-down": {
-            "name": "lehűlés"
+            "name": "cool down"
         },
         "elemental-rays": {
-            "name": "elemi sugarak"
+            "name": "elemental rays"
         },
         "searing-glacier": {
-            "name": "perzselő gleccser"
+            "name": "searing glacier"
         },
         "spell-mastery": {
-            "name": "varázslómesterség"
+            "name": "spell mastery"
         },
         "chromatic-explosion": {
             "name": "színes robbanás"
         },
         "frostflare-orbs": {
-            "name": "fagyfáklya-gömbök"
+            "name": "frostflare orbs"
         },
         "twin-beams": {
-            "name": "ikersugarak"
+            "name": "twin beams"
         },
         "freezing-vortex": {
-            "name": "fagyasztó örvény"
+            "name": "freezing vortex"
         },
         "inferno": {
             "name": "pokoltűz"
@@ -5935,13 +5935,13 @@ export default {
             "name": "horogvető"
         },
         "repulsor-gun": {
-            "name": "taszító fegyver"
+            "name": "repulsor gun"
         },
         "crank-bow": {
             "name": "hajtókaros számszeríj"
         },
         "teleportation-pad": {
-            "name": "teleportálólap"
+            "name": "teleportation pad"
         },
         "stamina-booster": {
             "name": "állóképesség-növelő"
@@ -5959,7 +5959,7 @@ export default {
             "name": "szétbontó sugár"
         },
         "invigorating-aerosol": {
-            "name": "élénkítő aeroszol"
+            "name": "invigorating aerosol"
         },
         "auto-turret": {
             "name": "automata lövegtorony"
@@ -5968,16 +5968,16 @@ export default {
             "name": "gyilkos szerkezet"
         },
         "pernicious-fogger": {
-            "name": "ártalmas ködösítő"
+            "name": "pernicious fogger"
         },
         "cryonic-snare": {
-            "name": "kriogén csapda"
+            "name": "cryonic snare"
         },
         "harsh-stimulants": {
             "name": "durva serkentők"
         },
         "gravity-bomb": {
-            "name": "gravitációs bomba"
+            "name": "gravity bomb"
         },
         "chimeric-formula": {
             "name": "kiméra-képlet"
@@ -6022,19 +6022,19 @@ export default {
             "name": "vakmerő támadás"
         },
         "into-the-fight": {
-            "name": "a küzdelembe"
+            "name": "into the fight"
         },
         "final-fight": {
             "name": "végső csata"
         },
         "tireless-retribution": {
-            "name": "fáradhatatlan megtorlás"
+            "name": "tireless retribution"
         },
         "unstoppable-destruction": {
             "name": "megállíthatatlan pusztítás"
         },
         "inner-fire": {
-            "name": "belső tűz"
+            "name": "inner fire"
         },
         "seeing-red": {
             "name": "vörös köd"
@@ -6052,7 +6052,7 @@ export default {
             "name": "vakmerő roham"
         },
         "fueled-by-pain": {
-            "name": "fájdalomból táplálkozva"
+            "name": "fueled by pain"
         },
         "bone-breaker": {
             "name": "csonttörő"
@@ -6064,7 +6064,7 @@ export default {
             "name": "lángoló gyűlölet"
         },
         "bathe-in-blood": {
-            "name": "fürödj vérben"
+            "name": "bathe in blood"
         },
         "focused-scourge": {
             "name": "összpontosított csapás"
@@ -6109,7 +6109,7 @@ export default {
             "name": "a halhatatlan sírja"
         },
         "pressing-pursuit": {
-            "name": "szorító üldözés"
+            "name": "pressing pursuit"
         },
         "infest": {
             "name": "megfertőzés"
@@ -6163,13 +6163,13 @@ export default {
             "name": "versenyfutás a sírig"
         },
         "gut-shot": {
-            "name": "gyomorlövés"
+            "name": "gut shot"
         },
         "detonation": {
             "name": "detonáció"
         },
         "murderous-stalker": {
-            "name": "gyilkos üldöző"
+            "name": "murderous stalker"
         },
         "a-moments-peace": {
             "name": "egy pillanatnyi nyugalom"
@@ -6184,28 +6184,28 @@ export default {
             "name": "lábcsapda"
         },
         "forward-momentum": {
-            "name": "előre mutató lendület"
+            "name": "forward momentum"
         },
         "hidden-danger": {
-            "name": "rejtett veszély"
+            "name": "hidden danger"
         },
         "give-chase": {
-            "name": "üldözőbe vétel"
+            "name": "give chase"
         },
         "feral-aid": {
-            "name": "vad segítség"
+            "name": "feral aid"
         },
         "fierce-fighter": {
-            "name": "vad harcos"
+            "name": "fierce fighter"
         },
         "relentless-offensive": {
             "name": "könyörtelen offenzíva"
         },
         "dual-shot": {
-            "name": "dupla lövés"
+            "name": "dual shot"
         },
         "walking-bastion": {
-            "name": "járó bástya"
+            "name": "walking bastion"
         },
         "swift-trickery": {
             "name": "gyors trükközés"
@@ -6214,7 +6214,7 @@ export default {
             "name": "álcázás"
         },
         "coated-arrows": {
-            "name": "bevont nyilak"
+            "name": "coated arrows"
         },
         "felling-swoop": {
             "name": "lesújtó zuhanás"
@@ -6229,7 +6229,7 @@ export default {
             "name": "közelgő vég"
         },
         "charging-beast": {
-            "name": "rohamozó fenevad"
+            "name": "charging beast"
         },
         "darkened-skies": {
             "name": "elsötétült égbolt"
@@ -6244,7 +6244,7 @@ export default {
             "name": "ragadozó és préda"
         },
         "heart-of-doom": {
-            "name": "a végzet szíve"
+            "name": "heart of doom"
         },
         "ice-spikes": {
             "name": "jégtüskék"
@@ -6262,7 +6262,7 @@ export default {
             "name": "szítóhavas jégeső"
         },
         "magma-scales": {
-            "name": "magmapikkelyek"
+            "name": "magma scales"
         },
         "infernal-vortex": {
             "name": "pokoli örvény"
@@ -6271,31 +6271,31 @@ export default {
             "name": "dermesztő ár"
         },
         "pulsing-cores": {
-            "name": "lüktető magok"
+            "name": "pulsing cores"
         },
         "dual-nature": {
-            "name": "kettős természet"
+            "name": "dual nature"
         },
         "lingering-essence": {
-            "name": "megmaradó lényeg"
+            "name": "lingering essence"
         },
         "flash-of-brilliance": {
-            "name": "a zsenialitás villanása"
+            "name": "flash of brilliance"
         },
         "encompassing-shadow": {
             "name": "mindent átfogó árnyék"
         },
         "gravel-guard": {
-            "name": "kavicsőr"
+            "name": "gravel guard"
         },
         "wave-of-frost": {
-            "name": "fagyhullám"
+            "name": "wave of frost"
         },
         "arresting-gale": {
-            "name": "megállító szélvihar"
+            "name": "arresting gale"
         },
         "empowering-flame": {
-            "name": "megerősítő láng"
+            "name": "empowering flame"
         },
         "burial": {
             "name": "eltemetés"
@@ -6313,16 +6313,16 @@ export default {
             "name": "gyakorlatias megerősítés"
         },
         "duskstorm": {
-            "name": "alkonyvihar"
+            "name": "duskstorm"
         },
         "elemental-juggernaut": {
-            "name": "elemi dzsagernaut"
+            "name": "elemental juggernaut"
         },
         "confluence-of-elements": {
-            "name": "elemek összefolyása"
+            "name": "confluence of elements"
         },
         "prismatic-barrage": {
-            "name": "prizmás össztűz"
+            "name": "prismatic barrage"
         },
         "eye-of-the-hurricane": {
             "name": "a hurrikán szeme"
@@ -6337,7 +6337,7 @@ export default {
             "name": "az éjszaka szelleme"
         },
         "slice-through": {
-            "name": "átvágás"
+            "name": "slice through"
         },
         "eyes-of-the-night": {
             "name": "az éjszaka szemei"
@@ -6367,13 +6367,13 @@ export default {
             "name": "megerősítő űr"
         },
         "marked-for-death": {
-            "name": "halálra jelölve"
+            "name": "marked for death"
         },
         "unseen-dread": {
             "name": "láthatatlan rettegés"
         },
         "shroud-in-shade": {
-            "name": "burkolózz árnyékba"
+            "name": "shroud in shade"
         },
         "terror-blade": {
             "name": "rémpenge"
@@ -6385,13 +6385,13 @@ export default {
             "name": "leselkedő pusztulás"
         },
         "cursed-blades": {
-            "name": "elátkozott pengék"
+            "name": "cursed blades"
         },
         "into-the-night": {
             "name": "az éjszakába"
         },
         "seeping-tendrils": {
-            "name": "szivárgó indák"
+            "name": "seeping tendrils"
         },
         "claws-of-the-night": {
             "name": "az éjszaka karmai"
@@ -6400,25 +6400,25 @@ export default {
             "name": "sötét felhő"
         },
         "messenger-of-death": {
-            "name": "a halál hírnöke"
+            "name": "messenger of death"
         },
         "concealed-dominance": {
             "name": "rejtett uralom"
         },
         "prey-on-the-weak": {
-            "name": "zsákmányold a gyengét"
+            "name": "prey on the weak"
         },
         "shadowstrike": {
-            "name": "árnycsapás"
+            "name": "shadowstrike"
         },
         "swallowed-by-night": {
-            "name": "elnyel az éjszaka"
+            "name": "swallowed by night"
         },
         "voice-of-the-night": {
             "name": "az éjszaka hangja"
         },
         "comorbid-sting": {
-            "name": "társbetegséges fullánk"
+            "name": "comorbid sting"
         },
         "biting-gnats": {
             "name": "csípő szúnyogok"
@@ -6427,37 +6427,37 @@ export default {
             "name": "virulens törzs"
         },
         "contagious-corpse": {
-            "name": "fertőző hulla"
+            "name": "contagious corpse"
         },
         "path-of-the-pox": {
-            "name": "a himlő ösvénye"
+            "name": "path of the pox"
         },
         "vile-pestilence": {
             "name": "aljas pestis"
         },
         "blistering-buboes": {
-            "name": "hólyagosodó pestisdaganatok"
+            "name": "blistering buboes"
         },
         "festering-sores": {
-            "name": "gennyedő fekélyek"
+            "name": "festering sores"
         },
         "wretched-yield": {
-            "name": "nyomorult termés"
+            "name": "wretched yield"
         },
         "accelerated-end": {
             "name": "felgyorsított vég"
         },
         "deliriums-danse": {
-            "name": "a delírium tánca"
+            "name": "delirium's danse"
         },
         "gift-of-rot": {
-            "name": "a rothadás ajándéka"
+            "name": "gift of rot"
         },
         "spread-the-plague": {
             "name": "terjeszd a pestist"
         },
         "sickening-strength": {
-            "name": "émelyítő erő"
+            "name": "sickening strength"
         },
         "rot-maggots": {
             "name": "rothadó kukacok"
@@ -6466,22 +6466,22 @@ export default {
             "name": "rémálomszerű kór"
         },
         "cloying-miasma": {
-            "name": "émelyítő miazma"
+            "name": "cloying miasma"
         },
         "rabid-bite": {
-            "name": "veszett harapás"
+            "name": "rabid bite"
         },
         "unwilling-sacrifice": {
-            "name": "akaratlan áldozat"
+            "name": "unwilling sacrifice"
         },
         "wilt-and-wither": {
-            "name": "hervadj és száradj"
+            "name": "wilt and wither"
         },
         "compounding-infection": {
-            "name": "súlyosbodó fertőzés"
+            "name": "compounding infection"
         },
         "crippling-malady": {
-            "name": "megnyomorító betegség"
+            "name": "crippling malady"
         },
         "succumb-to-the-gift": {
             "name": "engedj az ajándéknak"
@@ -6490,25 +6490,25 @@ export default {
             "name": "tömeges kihalás"
         },
         "tainted-offering": {
-            "name": "megmérgezett felajánlás"
+            "name": "tainted offering"
         },
         "creeping-lethargy": {
-            "name": "kúszó letargia"
+            "name": "creeping lethargy"
         },
         "convert-the-flock": {
             "name": "térítsd meg a nyájat"
         },
         "disease-vector": {
-            "name": "betegségvektor"
+            "name": "disease vector"
         },
         "xorns-embrace": {
-            "name": "a xorn ölelése"
+            "name": "xorns embrace"
         },
         "booster-pack": {
-            "name": "erősítőcsomag"
+            "name": "booster pack"
         },
         "readied-blade": {
-            "name": "felkészített penge"
+            "name": "readied blade"
         },
         "crushing-hammer": {
             "name": "zúzó kalapács"
@@ -6523,10 +6523,10 @@ export default {
             "name": "átszúró lándzsa"
         },
         "light-javelin": {
-            "name": "könnyű dárda"
+            "name": "light javelin"
         },
         "cleave-and-thrust": {
-            "name": "hasíts és döfj"
+            "name": "cleave and thrust"
         },
         "iron-bulwark": {
             "name": "vasbástya"
@@ -6535,10 +6535,10 @@ export default {
             "name": "jártasság"
         },
         "provisions": {
-            "name": "élelem"
+            "name": "provisions"
         },
         "caustic-bolt": {
-            "name": "maró nyílvessző"
+            "name": "caustic bolt"
         },
         "scroll-of-recall": {
             "name": "visszahívás tekercse"
@@ -6547,28 +6547,28 @@ export default {
             "name": "élezőkészlet"
         },
         "scroll-case": {
-            "name": "tekercstartó"
+            "name": "scroll case"
         },
         "lethal-arsenal": {
-            "name": "halálos arzenál"
+            "name": "lethal arsenal"
         },
         "quiver-of-arrows": {
             "name": "tegez nyilakkal"
         },
         "concussive-snare": {
-            "name": "agyrázkódtató csapda"
+            "name": "concussive snare"
         },
         "hammer-and-anvil": {
-            "name": "kalapács és üllő"
+            "name": "hammer and anvil"
         },
         "giant-club": {
             "name": "óriásbuzogány"
         },
         "scroll-of-judgement": {
-            "name": "ítélet tekercse"
+            "name": "scroll of judgement"
         },
         "set-up-shop": {
-            "name": "nyiss boltot"
+            "name": "set up shop"
         },
         "scroll-of-lightning": {
             "name": "villámlás tekercse"
@@ -6577,16 +6577,16 @@ export default {
             "name": "folyamatos utánpótlás"
         },
         "twin-lances": {
-            "name": "ikerlándzsák"
+            "name": "twin lances"
         },
         "tools-of-war": {
-            "name": "a háború szerszámai"
+            "name": "tools of war"
         },
         "scroll-of-blizzards": {
             "name": "hóviharok tekercse"
         },
         "armed-to-the-teeth": {
-            "name": "foggal-körömmel felfegyverkezve"
+            "name": "armed to the teeth"
         },
         "reinforced-steel": {
             "name": "megerősített acél"
@@ -6619,10 +6619,10 @@ export default {
             "name": "fecskendő"
         },
         "needle-gun": {
-            "name": "tűvető"
+            "name": "needle gun"
         },
         "vital-strikes": {
-            "name": "létfontosságú csapások"
+            "name": "vital strikes"
         },
         "vaccine": {
             "name": "vakcina"
@@ -6646,58 +6646,58 @@ export default {
             "name": "vérátömlesztés"
         },
         "experimental-stimulants": {
-            "name": "kísérleti serkentők"
+            "name": "experimental stimulants"
         },
         "do-no-harm": {
             "name": "ne árts"
         },
         "hack-to-bits": {
-            "name": "vágd cafatokra"
+            "name": "hack to bits"
         },
         "fortifying-injection": {
-            "name": "erősítő injekció"
+            "name": "fortifying injection"
         },
         "amputate": {
             "name": "amputálás"
         },
         "return-the-favor": {
-            "name": "viszonozd a szívességet"
+            "name": "return the favor"
         },
         "surgeons-satchel": {
             "name": "sebész táskája"
         },
         "exacting-anger": {
-            "name": "követelő harag"
+            "name": "exacting anger"
         },
         "take-your-medicine": {
-            "name": "vedd be a gyógyszeredet"
+            "name": "take your medicine"
         },
         "euthanize": {
             "name": "altatás"
         },
         "secret-of-the-oak": {
-            "name": "a tölgy titka"
+            "name": "secret of the oak"
         },
         "grisly-trauma": {
             "name": "borzalmas trauma"
         },
         "medical-pack-1": {
-            "name": "gyógycsomag 1"
+            "name": "medical pack 1"
         },
         "medical-pack-2": {
-            "name": "gyógycsomag 2"
+            "name": "medical pack 2"
         },
         "medical-pack-3": {
-            "name": "gyógycsomag 3"
+            "name": "medical pack 3"
         },
         "medical-pack-4": {
-            "name": "gyógycsomag 4"
+            "name": "medical pack 4"
         },
         "medical-pack-5": {
-            "name": "gyógycsomag 5"
+            "name": "medical pack 5"
         },
         "medical-pack-6": {
-            "name": "gyógycsomag 6"
+            "name": "medical pack 6"
         },
         "hammer-blow": {
             "name": "kalapácsütés"
@@ -6721,7 +6721,7 @@ export default {
             "name": "ragyogó ima"
         },
         "soothing-light": {
-            "name": "megnyugtató fény"
+            "name": "soothing light"
         },
         "purifying-aura": {
             "name": "tisztító aura"
@@ -6736,13 +6736,13 @@ export default {
             "name": "hajnal"
         },
         "sanctify": {
-            "name": "megszentelés"
+            "name": "sanctify"
         },
         "beacon-of-light": {
             "name": "fénygyújtó jelzőtűz"
         },
         "holy-defense": {
-            "name": "szent védelem"
+            "name": "holy defense"
         },
         "mobilizing-axiom": {
             "name": "mozgósító axióma"
@@ -6760,7 +6760,7 @@ export default {
             "name": "óvatos előrenyomulás"
         },
         "arresting-march": {
-            "name": "megállító menet"
+            "name": "arresting march"
         },
         "path-of-glory": {
             "name": "a dicsőség útja"
@@ -6778,37 +6778,37 @@ export default {
             "name": "világítsd meg a célpontot"
         },
         "warding-blow": {
-            "name": "védő csapás"
+            "name": "warding blow"
         },
         "supportive-chant": {
             "name": "támogató ének"
         },
         "divine-ascension": {
-            "name": "isteni felemelkedés"
+            "name": "divine ascension"
         },
         "solar-bastion": {
-            "name": "napbástya"
+            "name": "solar bastion"
         },
         "mobilizing-measure": {
             "name": "mozgósító ütem"
         },
         "bewildering-instrumental": {
-            "name": "zavarba ejtő hangszeres"
+            "name": "bewildering instrumental"
         },
         "wearying-chant": {
-            "name": "fárasztó ének"
+            "name": "wearying chant"
         },
         "power-ballad": {
             "name": "erőballada"
         },
         "dissonant-rhythm": {
-            "name": "disszonáns ritmus"
+            "name": "dissonant rhythm"
         },
         "increase-cadence": {
-            "name": "növeld az ütemet"
+            "name": "increase cadence"
         },
         "intensifying-amplitude": {
-            "name": "fokozódó amplitúdó"
+            "name": "intensifying amplitude"
         },
         "marching-beat": {
             "name": "menetelő ütem"
@@ -6832,28 +6832,28 @@ export default {
             "name": "rémület keltése"
         },
         "onward-to-battle": {
-            "name": "előre a csatába"
+            "name": "onward to battle"
         },
         "soothing-lullaby": {
             "name": "megnyugtató altatódal"
         },
         "symphonic-medley": {
-            "name": "szimfonikus egyveleg"
+            "name": "symphonic medley"
         },
         "ode-to-the-gambler": {
-            "name": "óda a szerencsejátékoshoz"
+            "name": "ode to the gambler"
         },
         "hymn-of-the-oak": {
-            "name": "a tölgy himnusza"
+            "name": "hymn of the oak"
         },
         "alluring-serenade": {
-            "name": "csábító szerenád"
+            "name": "alluring serenade"
         },
         "change-tempo": {
             "name": "tempóváltás"
         },
         "thrilling-solo": {
-            "name": "izgalmas szóló"
+            "name": "thrilling solo"
         },
         "pull-the-strings": {
             "name": "húzd a szálakat"
@@ -6871,16 +6871,16 @@ export default {
             "name": "parancsoló jelenlét"
         },
         "toughening-trill": {
-            "name": "edző trilla"
+            "name": "toughening trill"
         },
         "grand-finale": {
-            "name": "nagy finálé"
+            "name": "grand finale"
         },
         "captivating-performance": {
             "name": "magával ragadó előadás"
         },
         "ethereal-gust": {
-            "name": "éteri széllöket"
+            "name": "ethereal gust"
         },
         "forged-ferocity": {
             "name": "megkovácsolt vadság"
@@ -6892,7 +6892,7 @@ export default {
             "name": "vad megelevenítés"
         },
         "planar-protection": {
-            "name": "síkok védelme"
+            "name": "planar protection"
         },
         "mighty-bond": {
             "name": "hatalmas kötelék"
@@ -6901,22 +6901,22 @@ export default {
             "name": "összekötött hatalom"
         },
         "burning-passion": {
-            "name": "égő szenvedély"
+            "name": "burning passion"
         },
         "unending-dominance": {
             "name": "végtelen uralom"
         },
         "shadow-dart": {
-            "name": "árnynyíl"
+            "name": "shadow dart"
         },
         "burning-tether": {
-            "name": "égő pányva"
+            "name": "burning tether"
         },
         "primal-assault": {
-            "name": "ősi támadás"
+            "name": "primal assault"
         },
         "drifting-stingers": {
-            "name": "sodródó fullánkok"
+            "name": "drifting stingers"
         },
         "biting-wind": {
             "name": "csípős szél"
@@ -6928,13 +6928,13 @@ export default {
             "name": "közbelépő jelenések"
         },
         "void-imbuement": {
-            "name": "űrrel átitatás"
+            "name": "void imbuement"
         },
         "shaping-the-void": {
-            "name": "az űr formálása"
+            "name": "shaping the void"
         },
         "deadly-mischief": {
-            "name": "halálos csíny"
+            "name": "deadly mischief"
         },
         "strength-in-numbers": {
             "name": "a sokaság ereje"
@@ -6946,7 +6946,7 @@ export default {
             "name": "élő hegy"
         },
         "primal-infusion": {
-            "name": "ősi átitatás"
+            "name": "primal infusion"
         },
         "tear-the-fabric": {
             "name": "szakítsd szét a szövetet"
@@ -6967,10 +6967,10 @@ export default {
             "name": "síkok közötti mesterség"
         },
         "imposed-will": {
-            "name": "ráerőltetett akarat"
+            "name": "imposed will"
         },
         "horned-nightmare": {
-            "name": "szarvas rémálom"
+            "name": "horned nightmare"
         },
         "concentrated-rage": {
             "name": "sűrített düh"
@@ -6982,31 +6982,31 @@ export default {
             "name": "vijjogó nyilak"
         },
         "natures-gift": {
-            "name": "a természet ajándéka"
+            "name": "nature's gift"
         },
         "focused-aggression": {
             "name": "összpontosított agresszió"
         },
         "gnaw": {
-            "name": "rágás"
+            "name": "gnaw"
         },
         "disorienting-roar": {
             "name": "zavarba ejtő üvöltés"
         },
         "vitality-siphon": {
-            "name": "életerő-szívó"
+            "name": "vitality siphon"
         },
         "spirit-swap": {
             "name": "szellemcsere"
         },
         "invocation-of-endurance": {
-            "name": "a kitartás megidézése"
+            "name": "invocation of endurance"
         },
         "invocation-of-spirit": {
-            "name": "a szellem megidézése"
+            "name": "invocation of spirit"
         },
         "gust-sigil": {
-            "name": "széllöket-pecsét"
+            "name": "gust sigil"
         },
         "forceful-swipe": {
             "name": "erőteljes csapás"
@@ -7027,13 +7027,13 @@ export default {
             "name": "megállíthatatlan fenevad"
         },
         "forests-blessing": {
-            "name": "az erdő áldása"
+            "name": "forest's blessing"
         },
         "rampage": {
             "name": "tombolás"
         },
         "invocation-of-domination": {
-            "name": "az uralom megidézése"
+            "name": "invocation of domination"
         },
         "blood-hunger": {
             "name": "vérszomj"
@@ -7042,19 +7042,19 @@ export default {
             "name": "ősi védelem"
         },
         "invocation-of-absorption": {
-            "name": "az elnyelés megidézése"
+            "name": "invocation of absorption"
         },
         "unleashed-fury": {
-            "name": "szabadjára engedett düh"
+            "name": "unleashed fury"
         },
         "lash-out": {
             "name": "kirohanás"
         },
         "unbreakable-bond": {
-            "name": "megszakíthatatlan kötelék"
+            "name": "unbreakable bond"
         },
         "spirit-sigil": {
-            "name": "szellempecsét"
+            "name": "spirit sigil"
         },
         "jaws-of-death": {
             "name": "a halál állkapcsa"

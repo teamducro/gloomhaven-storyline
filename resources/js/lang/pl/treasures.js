@@ -339,16 +339,16 @@ export default {
         "name": "„Drake's Blood” (przedmiot 59)"
     },
     "cs-2": {
-        "name": "„Kula Fortuny” (przedmiot 09)"
+        "name": "„Orb of Fortune” (przedmiot 09)"
     },
     "cs-3": {
-        "name": "„Maczuga Łańcuchowa” (przedmiot 14)"
+        "name": "„Chain Mace” (przedmiot 14)"
     },
     "cs-4": {
         "name": "Otrzymujesz 15 szt. złota i odzyskaj jedną utraconą kartę"
     },
     "cs-5": {
-        "name": "„Mina Wstrząsowa” (przedmiot 31)"
+        "name": "„Concussion Mine” (przedmiot 31)"
     },
     "cs-6": {
         "name": "Otrzymujesz 20 szt. złota i rozbrajasz wszystkie sąsiadujące pułapki"
@@ -357,37 +357,37 @@ export default {
         "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-8": {
-        "name": "„Zawrotna Nalewka” (przedmiot 58)"
+        "name": "„Dizzying Tincture” (przedmiot 58)"
     },
     "cs-9": {
-        "name": "„Kula Fortuny” (przedmiot 9)"
+        "name": "„Orb of Fortune” (przedmiot 9)"
     },
     "cs-10": {
         "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-11": {
-        "name": "„Zawrotna Nalewka” (przedmiot 58)"
+        "name": "„Dizzying Tincture” (przedmiot 58)"
     },
     "cs-12": {
-        "name": "„Medykament Many” (przedmiot 60)"
+        "name": "„Mana Medicine” (przedmiot 60)"
     },
     "cs-13": {
-        "name": "„Kula Rozpaczy” (przedmiot 10)"
+        "name": "„Orb of Despair” (przedmiot 10)"
     },
     "cs-14": {
-        "name": "„Stalowy Hełm” (przedmiot 22)"
+        "name": "„Steel Helmet” (przedmiot 22)"
     },
     "cs-15": {
-        "name": "„Zmienny Kompas” (przedmiot 32)"
+        "name": "„Shifting Compass” (przedmiot 32)"
     },
     "cs-16": {
         "name": "Wykonaj „Leczenie 6, na siebie”, otrzymujesz {POISON}"
     },
     "cs-17": {
-        "name": "„Mina Wstrząsowa” (przedmiot 31)"
+        "name": "„Concussion Mine” (przedmiot 31)"
     },
     "cs-18": {
-        "name": "„Szal Okryty Kośćmi” (przedmiot 25)"
+        "name": "„Boneclad Shawl” (przedmiot 25)"
     },
     "cs-19": {
         "name": "Otrzymujesz ✓ i generujesz Wild Element"
@@ -396,10 +396,10 @@ export default {
         "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-21": {
-        "name": "„Stalowy Hełm” (przedmiot 22)"
+        "name": "„Steel Helmet” (przedmiot 22)"
     },
     "cs-22": {
-        "name": "„Buty Nieustępliwości” (przedmiot 19)"
+        "name": "„Boots of Perpetuity” (przedmiot 19)"
     },
     "cs-23": {
         "name": "„Trophy Helmet” (przedmiot 12)"
@@ -408,28 +408,28 @@ export default {
         "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-25": {
-        "name": "„Wysysające Nagolenniki” (przedmiot 15)"
+        "name": "„Draining Greaves” (przedmiot 15)"
     },
     "cs-26": {
-        "name": "„Żelazne Wnyki” (przedmiot 30)"
+        "name": "„Iron Snare” (przedmiot 30)"
     },
     "cs-27": {
-        "name": "„Zbroja Płytowa Plecionka” (przedmiot 23)"
+        "name": "„Woven Plate Armor” (przedmiot 23)"
     },
     "cs-28": {
-        "name": "„Maczuga Łańcuchowa” (przedmiot 14)"
+        "name": "„Chain Mace” (przedmiot 14)"
     },
     "cs-29": {
-        "name": "„Zbroja Płytowa Plecionka” (przedmiot 23)"
+        "name": "„Woven Plate Armor” (przedmiot 23)"
     },
     "cs-30": {
-        "name": "„Szal Okryty Kośćmi” (przedmiot 25)"
+        "name": "„Boneclad Shawl” (przedmiot 25)"
     },
     "cs-31": {
         "name": "„Drake's Blood” (przedmiot 59)"
     },
     "cs-32": {
-        "name": "„Osobliwy Wisiorek” (przedmiot 20)"
+        "name": "„Curious Pendant” (przedmiot 20)"
     },
     "cs-33": {
         "name": "25  szt. złota, otrzymujesz {POISON}"
@@ -438,40 +438,40 @@ export default {
         "name": "Otrzymujesz obrażenia od niebezpiecznego terenu i {INVISIBLE}"
     },
     "cs-35": {
-        "name": "„Ostrze Przeklętej Krwi” (przedmiot 36)"
+        "name": "„Curseblood Blade” (przedmiot 36)"
     },
     "cs-36": {
         "name": "10 pkt. doświadczenia, otrzymujesz {INVSIBLE}"
     },
     "cs-37": {
-        "name": "„Wysysające Nagolenniki” (przedmiot 15)"
+        "name": "„Draining Greaves” (przedmiot 15)"
     },
     "cs-38": {
-        "name": "„Kilof Bojowy” (przedmiot 13)"
+        "name": "„War Pick” (przedmiot 13)"
     },
     "cs-39": {
-        "name": "„Gogle Podczerwieni” (przedmiot 21)"
+        "name": "„Infrared Goggles” (przedmiot 21)"
     },
     "cs-40": {
         "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-41": {
-        "name": "„Rękawice z Popielnej Stali” (przedmiot 61)"
+        "name": "„Ashsteel Gauntlets” (przedmiot 61)"
     },
     "cs-42": {
-        "name": "„Kilof Bojowy” (przedmiot 13)"
+        "name": "„War Pick” (przedmiot 13)"
     },
     "cs-43": {
         "name": "10 pkt. doświadczenia i odśwież wszystkie wykorzystane przedmioty"
     },
     "cs-44": {
-        "name": "„Medykament Many” (przedmiot 60)"
+        "name": "„Mana Medicine” (przedmiot 60)"
     },
     "cs-45": {
         "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
     },
     "cs-46": {
-        "name": "Schemat „Sztylet z Zęba Żmii” (przedmiot 54)"
+        "name": "Schemat „Vipertooth Dagger” (przedmiot 54)"
     },
     "cs-47": {
         "name": "15 szt. złota"
@@ -483,7 +483,7 @@ export default {
         "name": "„Lawoczłapy” (przedmiot gh-99)"
     },
     "cs-50": {
-        "name": "„Księżycowy Blask w Butelce” (przedmiot 18)"
+        "name": "„Bottled Moonlight” (przedmiot 18)"
     },
     "fh-1": {
         "name": "Otrzymujesz cztery karty łupów."
@@ -825,7 +825,7 @@ export default {
         "name": "Otrzymujesz 2 ✔"
     },
     "gh2-29": {
-        "name": "Otrzymujesz „Naładowane Buty” (przedmiot 100)"
+        "name": "Otrzymujesz „Charged Boots” (przedmiot 100)"
     },
     "gh2-30": {
         "name": "Otrzymujesz 20 pkt. doświadczenia"
@@ -843,7 +843,7 @@ export default {
         "name": "Otrzymujesz „Hełm Smoczej Łuski” (przedmiot 121)"
     },
     "gh2-35": {
-        "name": "Otrzymujesz „Różdżka Przeniesienia” (przedmiot 115)"
+        "name": "Otrzymujesz „Rod of Transference” (przedmiot 115)"
     },
     "gh2-36": {
         "name": "Losowy schemat przedmiotu"
@@ -915,7 +915,7 @@ export default {
         "name": "Otrzymujesz 20 szt. złota"
     },
     "gh2-59": {
-        "name": "Otrzymujesz „Tarcza Sprawiedliwych” (przedmiot 148)"
+        "name": "Otrzymujesz „Shield of the Righteous” (przedmiot 148)"
     },
     "gh2-60": {
         "name": "Otrzymujesz 5 obrażeń"

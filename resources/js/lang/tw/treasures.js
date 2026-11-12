@@ -339,7 +339,7 @@ export default {
         "name": "「亞龍之血」（道具 59）"
     },
     "cs-2": {
-        "name": "「幸運寶珠」（道具 09）"
+        "name": "「Orb of Fortune」（道具 09）"
     },
     "cs-3": {
         "name": "「鏈錘」（道具 14）"
@@ -348,7 +348,7 @@ export default {
         "name": "獲得 15 金幣，並取回一張已失去的卡牌"
     },
     "cs-5": {
-        "name": "「震盪地雷」（道具 31）"
+        "name": "「Concussion Mine」（道具 31）"
     },
     "cs-6": {
         "name": "獲得 20 金幣，並解除所有相鄰的陷阱"
@@ -357,37 +357,37 @@ export default {
         "name": "隨機一個「石頭」道具（道具 94-100）"
     },
     "cs-8": {
-        "name": "「眩暈酊劑」（道具 58）"
+        "name": "「Dizzying Tincture」（道具 58）"
     },
     "cs-9": {
-        "name": "「幸運寶珠」（道具 9）"
+        "name": "「Orb of Fortune」（道具 9）"
     },
     "cs-10": {
         "name": "隨機一個「石頭」道具（道具 94-100）"
     },
     "cs-11": {
-        "name": "「眩暈酊劑」（道具 58）"
+        "name": "「Dizzying Tincture」（道具 58）"
     },
     "cs-12": {
-        "name": "「魔力藥劑」（道具 60）"
+        "name": "「Mana Medicine」（道具 60）"
     },
     "cs-13": {
-        "name": "「絕望寶珠」（道具 10）"
+        "name": "「Orb of Despair」（道具 10）"
     },
     "cs-14": {
         "name": "「鋼盔」（道具 22）"
     },
     "cs-15": {
-        "name": "「偏移羅盤」（道具 32）"
+        "name": "「Shifting Compass」（道具 32）"
     },
     "cs-16": {
         "name": "執行「治療 6，自身」，獲得 {POISON}"
     },
     "cs-17": {
-        "name": "「震盪地雷」（道具 31）"
+        "name": "「Concussion Mine」（道具 31）"
     },
     "cs-18": {
-        "name": "「骨飾披肩」（道具 25）"
+        "name": "「Boneclad Shawl」（道具 25）"
     },
     "cs-19": {
         "name": "獲得 ✓ 並產生一個狂野元素"
@@ -399,37 +399,37 @@ export default {
         "name": "「鋼盔」（道具 22）"
     },
     "cs-22": {
-        "name": "「恆久之靴」（道具 19）"
+        "name": "「Boots of Perpetuity」（道具 19）"
     },
     "cs-23": {
-        "name": "「戰利品頭盔」（道具 12）"
+        "name": "「Trophy Helm」（道具 12）"
     },
     "cs-24": {
         "name": "隨機一個「石頭」道具（道具 94-100）"
     },
     "cs-25": {
-        "name": "「汲取護脛」（道具 15）"
+        "name": "「Draining Greaves」（道具 15）"
     },
     "cs-26": {
-        "name": "「鐵製陷阱」（道具 30）"
+        "name": "「Iron Snare」（道具 30）"
     },
     "cs-27": {
-        "name": "「編織板甲」（道具 23）"
+        "name": "「Woven Plate Armor」（道具 23）"
     },
     "cs-28": {
         "name": "「鏈錘」（道具 14）"
     },
     "cs-29": {
-        "name": "「編織板甲」（道具 23）"
+        "name": "「Woven Plate Armor」（道具 23）"
     },
     "cs-30": {
-        "name": "「骨飾披肩」（道具 25）"
+        "name": "「Boneclad Shawl」（道具 25）"
     },
     "cs-31": {
         "name": "「亞龍之血」（道具 59）"
     },
     "cs-32": {
-        "name": "「奇異吊墜」（道具 20）"
+        "name": "「Curious Pendant」（道具 20）"
     },
     "cs-33": {
         "name": "25 金幣，獲得 {POISON}"
@@ -438,25 +438,25 @@ export default {
         "name": "承受危險地形傷害，獲得 {INVISIBLE}"
     },
     "cs-35": {
-        "name": "「咒血之刃」（道具 36）"
+        "name": "「Curseblood Blade」（道具 36）"
     },
     "cs-36": {
         "name": "10 經驗值，獲得 {INVSIBLE}"
     },
     "cs-37": {
-        "name": "「汲取護脛」（道具 15）"
+        "name": "「Draining Greaves」（道具 15）"
     },
     "cs-38": {
         "name": "「戰鎬」（道具 13）"
     },
     "cs-39": {
-        "name": "「紅外線護目鏡」（道具 21）"
+        "name": "「Infrared Goggles」（道具 21）"
     },
     "cs-40": {
         "name": "隨機一個「石頭」道具（道具 94-100）"
     },
     "cs-41": {
-        "name": "「灰鋼護手」（道具 61）"
+        "name": "「Ashsteel Gauntlets」（道具 61）"
     },
     "cs-42": {
         "name": "「戰鎬」（道具 13）"
@@ -465,13 +465,13 @@ export default {
         "name": "10 經驗值，並重整所有已使用的道具"
     },
     "cs-44": {
-        "name": "「魔力藥劑」（道具 60）"
+        "name": "「Mana Medicine」（道具 60）"
     },
     "cs-45": {
         "name": "隨機一個「石頭」道具（道具 94-100）"
     },
     "cs-46": {
-        "name": "「蛇牙匕首」設計圖（道具 54）"
+        "name": "「Vipertooth Dagger」設計圖（道具 54）"
     },
     "cs-47": {
         "name": "15 金幣"
@@ -483,7 +483,7 @@ export default {
         "name": "「熔岩涉靴」（道具 gh-99）"
     },
     "cs-50": {
-        "name": "「瓶裝月光」（道具 18）"
+        "name": "「Bottled Moonlight」（道具 18）"
     },
     "fh-1": {
         "name": "獲得四張拾取卡。"
@@ -810,7 +810,7 @@ export default {
         "name": "獲得 15 金幣"
     },
     "gh2-24": {
-        "name": "獲得「守護之杖」（道具 104）"
+        "name": "獲得「Warding Rod」（道具 104）"
     },
     "gh2-25": {
         "name": "獲得 1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "獲得 2 ✔"
     },
     "gh2-29": {
-        "name": "獲得「充能之靴」（道具 100）"
+        "name": "獲得「Charged Boots」（道具 100）"
     },
     "gh2-30": {
         "name": "獲得 20 經驗值"
@@ -843,7 +843,7 @@ export default {
         "name": "獲得「龍鱗頭盔」（道具 121）"
     },
     "gh2-35": {
-        "name": "獲得「轉移權杖」（道具 115）"
+        "name": "獲得「Rod of Transference」（道具 115）"
     },
     "gh2-36": {
         "name": "隨機道具設計圖"
@@ -915,13 +915,13 @@ export default {
         "name": "獲得 20 金幣"
     },
     "gh2-59": {
-        "name": "獲得「正義者之盾」（道具 148）"
+        "name": "獲得「Shield of the Righteous」（道具 148）"
     },
     "gh2-60": {
         "name": "承受 5 點傷害"
     },
     "gh2-61": {
-        "name": "獲得「穩固之靴」（道具 143）"
+        "name": "獲得「Boots of Bracing」（道具 143）"
     },
     "gh2-62": {
         "name": "獲得 20 金幣"
@@ -933,7 +933,7 @@ export default {
         "name": "隨機道具設計圖"
     },
     "gh2-65": {
-        "name": "獲得「遊俠兜帽」（道具 103）"
+        "name": "獲得「Ranger's Hood」（道具 103）"
     },
     "gh2-66": {
         "name": "獲得 {POISON} 與 {STRENGTHEN}，並取回 2 張已失去的卡牌"

@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "보호와 봉사",
+        "name": "Protect and Serve",
         "progress": [
             "이녹스 10마리 처치.",
             "{SCENARIO 33} 마무리."
         ]
     },
     "cs-331": {
-        "name": "무기 전문가",
+        "name": "Weapons Specialist",
         "progress": [
             "{ONE-HAND} 또는 {TWO-HANDS} 아이템 15개 소모"
         ]
     },
     "cs-332": {
-        "name": "실험",
+        "name": "Experimentation",
         "progress": [
             "카드 30장을 소실 {LOST} 행동으로 사용."
         ]
     },
     "cs-333": {
-        "name": "스릴 추구자",
+        "name": "Thrill Seeker",
         "progress": [
             "문을 열어 방 타일을 공개하는 것을 20번 수행."
         ]
     },
     "cs-334": {
-        "name": "함정 설치자",
+        "name": "Trap Setter",
         "progress": [
             "자신의 차례 중 함정을 해체하거나 적이 함정을 발동하게 하는 것을 15번 수행."
         ]
     },
     "cs-335": {
-        "name": "산적 추방자",
+        "name": "Bandit Banisher",
         "progress": [
             "경비병 또는 궁수 10마리 처치.",
             "{SCENARIO 35} 마무리."
         ]
     },
     "cs-336": {
-        "name": "빛 속의 생물",
+        "name": "Creatures in the light",
         "progress": [
             "점액, 숲 임프, 검은 임프 20마리 처치."
         ]
     },
     "cs-337": {
-        "name": "노련한 지휘관",
+        "name": "Experienced leader",
         "progress": [
             "경험치를 12 이상 획득한 시나리오 12개 완료."
         ]
     },
     "cs-338": {
-        "name": "아드레날린 급등",
+        "name": "Adrenaline Spike",
         "progress": [
             "적을 죽이고 같은 라운드에 그 적의 돈 토큰을 노획하는 것을 15번 수행."
         ]
     },
     "cs-339": {
-        "name": "상호 지원",
+        "name": "Mutual Support",
         "progress": [
             "아군에게 인접한 적 30마리 처치."
         ]
     },
     "cs-340": {
-        "name": "축복받을지어다",
+        "name": "Thy be Blessed",
         "progress": [
             "공격 중 {BLESS} 카드를 12번 뽑음."
         ]
     },
     "cs-341": {
-        "name": "영적 성과",
+        "name": "Spiritual Cains",
         "progress": [
             "향상에 금화 200개 사용."
         ]
     },
     "cs-342": {
-        "name": "고통의 길",
+        "name": "The Path of Agony",
         "progress": [
             "아군 또는 적이 자신의 차례 중에 죽거나 탈진하는 것을 13번 지켜봄."
         ]
     },
     "cs-343": {
-        "name": "잔혹한 지배",
+        "name": "Cruel Dominion",
         "progress": [
             "부정적 상태에 걸린 적을 죽인 시나리오 10개 완료."
         ]
     },
     "cs-344": {
-        "name": "자연 선택",
+        "name": "Natural Selection",
         "progress": [
             "{FIRE} 2번 생성.",
             "{ICE} 2번 생성.",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "포식자와 먹잇감",
+        "name": "Predator and Prey",
         "progress": [
             "같은 차례에 적 2마리 이상을 죽이는 것을 15번 수행."
         ]
     },
     "cs-346": {
-        "name": "독사가 갈라서다",
+        "name": "An Adder Divides",
         "progress": [
             "서로 다른 시나리오 6개에서 험난지형에 위치.",
             "{SCENARIO 39} 마무리."
         ]
     },
     "cs-347": {
-        "name": "현장 조사",
+        "name": "Field Research",
         "progress": [
             "서로 다른 종류의 몬스터 20종에게 중독 {POISON}을 부여."
         ]
     },
     "cs-348": {
-        "name": "소환술사의 손",
+        "name": "Conjurers Hand",
         "progress": [
             "소환된 몬스터 10마리 처치."
         ]
     },
     "cs-349": {
-        "name": "악인에게 휴식은 없다",
+        "name": "No Rest for the Wicked",
         "progress": [
             "긴 휴식 없이 시나리오 10개 완료."
         ]
     },
     "cs-350": {
-        "name": "건강이 최우선",
+        "name": "Health First",
         "progress": [
             "체력이 가득 찬 상태로 끝낸 시나리오 7개 완료."
         ]
     },
     "cs-351": {
-        "name": "끝없는 수색",
+        "name": "Limitless Searching",
         "progress": [
             "돈 토큰 30개 노획."
         ]
     },
     "cs-aa-001": {
-        "name": "어떤 대가를 치르더라도",
+        "name": "At All Costs",
         "progress": [
             "아군에게 인접한 상태에서 평소처럼 카드를 잃어 피해를 무효화한 시나리오 8개를 겪음.",
             "{SCENARIO AA1} 마무리."
         ]
     },
     "cs-aa-002": {
-        "name": "실패의 무게",
+        "name": "The Weight of failure",
         "progress": [
             "탈진하지 않고 체력 2 이하로 끝낸 시나리오 8개 완료.",
             "{SCENARIO AA2} 마무리"
         ]
     },
     "cs-qa-001": {
-        "name": "기발한 발명가",
+        "name": "Ingenious Inventor",
         "progress": [
-            "즉시 “전력 변조기”(아이템 QA-01) 획득",
-            "“전력 변조기”(아이템 QA-01)로 적 12마리 처치",
+            "즉시 “Power Modulator”(아이템 QA-01) 획득",
+            "“Power Modulator”(아이템 QA-01)로 적 12마리 처치",
             "{SCENARIO QA1} 마무리"
         ]
     },
     "cs-qa-002": {
-        "name": "고철 다이버",
+        "name": "Scrap Diver",
         "progress": [
             "한 번의 행동으로 돈 토큰 2개 이상을 노획하는 것을 8번 수행.",
             "보물 타일 2개 노획.",
@@ -337,15 +337,15 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "잔혹한 집행자",
+        "name": "Brutal Enforcer",
         "progress": [
-            "“톱니 칼날” 설계도(아이템 RM-01) 획득.",
+            "“Serrated Edge” 설계도(아이템 RM-01) 획득.",
             "적 30마리에게 {WOUND} 또는 {RUPTURE} 부여.",
             "{SCENARIO RM1} 마무리."
         ]
     },
     "cs-rm-002": {
-        "name": "최상위 포식자",
+        "name": "Apex Predator",
         "progress": [
             "{CONSUMED} 행동을 수행하는 도중 또는 수행한 직후에 적이 죽은 라운드를 20번 겪음.",
             "{SCENARIO RM3} 마무리."
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "정치적 음모",
+        "name": "Political Intrigue",
         "progress": [
             "도시 이벤트 61번을 도시 이벤트 덱에 추가.",
             "표 30개 획득: 명성을 얻을 때마다 3표, 완료한 시나리오에 가져간 파벌 명성 아이템 1개당 1표.",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "환대의 여관",
+        "name": "Inn to Hospitality",
         "progress": [
             "돈 토큰 60개 노획.",
             "{SECTION} 125.4를 읽음."
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "인류의 몰락",
         "progress": [
-            "“에스더 망원경”(아이템 149) 획득. 판매할 수 없음.",
-            "“에스더 망원경”(아이템 149) 10번 사용.",
+            "“Aesther Spyglass”(아이템 149) 획득. 판매할 수 없음.",
+            "“Aesther Spyglass”(아이템 149) 10번 사용.",
             "{SECTION} 115.2를 읽음.",
             "{SCENARIO 63}을 결말까지 진행."
         ]
@@ -639,7 +639,7 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "들려줄 이야기",
+        "name": "A Tale to Tell",
         "progress": [
             "시나리오 10개에서 보물 타일을 직접 노획하거나 파티가 노획하는 것을 지켜봄.",
             "{SECTION} 12.3을 읽음."
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "입양 부모",
+        "name": "Adoptive Parent",
         "progress": [
             "시나리오 10개에서 적이 떨어뜨린 돈 토큰 3개를 노획.",
             "{SECTION} 122.5를 읽음.",
@@ -683,8 +683,8 @@ export default {
         "name": "빛의 집행자",
         "progress": [
             "즉시 {SCENARIO 65} 해제.",
-            "“정의로운 자의 방패”(아이템 148) 발견.",
-            "“정의로운 자의 방패”(아이템 148)로 피해 4 이상의 공격 10번 무효화.",
+            "“Shield of the Righteous”(아이템 148) 발견.",
+            "“Shield of the Righteous”(아이템 148)로 피해 4 이상의 공격 10번 무효화.",
             "{SECTION} 82.1을 읽음."
         ]
     },
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "신-라에서 탈출",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "도시 이벤트 69번과 70번을 도시 이벤트 덱에 추가. “검은 카드”(아이템 113) 획득. 판매할 수 없음.",
             "사이드 시나리오 6개 완료(시나리오 번호 56 초과).",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "아슬아슬한 삶",
+        "name": "Living on the Edge",
         "progress": [
-            "“실험용 갑옷”(아이템 150) 획득.",
+            "“Experimental Armor”(아이템 150) 획득.",
             "그것으로 적 20마리가 피해를 입게 함.",
             "{SECTION} 47.4를 읽음."
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "무술 수련",
+        "name": "Martial Study",
         "progress": [
             "시나리오 중 서로 다른 {ONE-HAND} 또는 {TWO-HANDS} 아이템 8개 사용.",
             "{SECTION} 67.2를 읽음."
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "숙련의 추구",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "능력 카드로 경험치 120 획득.",
             "{SECTION} 17.2를 읽음."

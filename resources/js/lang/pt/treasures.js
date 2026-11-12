@@ -336,19 +336,19 @@ export default {
         "name": "“Anel da Restauração” (Item 32)"
     },
     "cs-1": {
-        "name": "“Sangue de Serpe” (Item 59)"
+        "name": "“Drakes Blood” (Item 59)"
     },
     "cs-2": {
-        "name": "“Orbe da Fortuna” (Item 09)"
+        "name": "“Orb of Fortune” (Item 09)"
     },
     "cs-3": {
-        "name": "“Maça de Correntes” (Item 14)"
+        "name": "“Chain Mace” (Item 14)"
     },
     "cs-4": {
         "name": "Ganha 15 gold and Recover one lost card"
     },
     "cs-5": {
-        "name": "“Mina de Concussão” (Item 31)"
+        "name": "“Concussion Mine” (Item 31)"
     },
     "cs-6": {
         "name": "Ganha 20 gold and disarm all adjacent traps"
@@ -357,37 +357,37 @@ export default {
         "name": "Um item de “Pedra” aleatório (Item 94-100)"
     },
     "cs-8": {
-        "name": "“Tintura Vertiginosa” (Item 58)"
+        "name": "“Dizzying Tincture” (Item 58)"
     },
     "cs-9": {
-        "name": "“Orbe da Fortuna” (Item 9)"
+        "name": "“Orb of Fortune” (Item 9)"
     },
     "cs-10": {
         "name": "Um item de “Pedra” aleatório (Item 94-100)"
     },
     "cs-11": {
-        "name": "“Tintura Vertiginosa” (Item 58)"
+        "name": "“Dizzying Tincture” (Item 58)"
     },
     "cs-12": {
-        "name": "“Remédio de Mana” (Item 60)"
+        "name": "“Mana Medicine” (Item 60)"
     },
     "cs-13": {
-        "name": "“Orbe do Desespero” (Item 10)"
+        "name": "“Orb of Despair” (Item 10)"
     },
     "cs-14": {
-        "name": "“Elmo de Aço” (Item 22)"
+        "name": "“Steel Helmet” (Item 22)"
     },
     "cs-15": {
-        "name": "“Bússola Cambiante” (Item 32)"
+        "name": "“Shifting Compass” (Item 32)"
     },
     "cs-16": {
         "name": "Realiza “Curar 6, a si mesmo” e receba {POISON}"
     },
     "cs-17": {
-        "name": "“Mina de Concussão” (Item 31)"
+        "name": "“Concussion Mine” (Item 31)"
     },
     "cs-18": {
-        "name": "“Xale de Ossos” (Item 25)"
+        "name": "“Boneclad Shawl” (Item 25)"
     },
     "cs-19": {
         "name": "Ganha ✓ and generate a Wild Element"
@@ -396,40 +396,40 @@ export default {
         "name": "Um item de “Pedra” aleatório (Item 94-100)"
     },
     "cs-21": {
-        "name": "“Elmo de Aço” (Item 22)"
+        "name": "“Steel Helmet” (Item 22)"
     },
     "cs-22": {
-        "name": "“Botas da Perpetuidade” (Item 19)"
+        "name": "“Boots of Perpetuity” (Item 19)"
     },
     "cs-23": {
-        "name": "“Elmo Troféu” (Item 12)"
+        "name": "“Trophy Helm” (Item 12)"
     },
     "cs-24": {
         "name": "Um item de “Pedra” aleatório (Item 94-100)"
     },
     "cs-25": {
-        "name": "“Grevas Drenantes” (Item 15)"
+        "name": "“Draining Greaves” (Item 15)"
     },
     "cs-26": {
-        "name": "“Laço de Ferro” (Item 30)"
+        "name": "“Iron Snare” (Item 30)"
     },
     "cs-27": {
-        "name": "“Armadura de Placas Trançadas” (Item 23)"
+        "name": "“Woven Plate Armor” (Item 23)"
     },
     "cs-28": {
-        "name": "“Maça de Correntes” (Item 14)"
+        "name": "“Chain Mace” (Item 14)"
     },
     "cs-29": {
-        "name": "“Armadura de Placas Trançadas” (Item 23)"
+        "name": "“Woven Plate Armor” (Item 23)"
     },
     "cs-30": {
         "name": "“Xale Revestido de Ossos (Item 25)"
     },
     "cs-31": {
-        "name": "“Sangue de Serpe” (Item 59)"
+        "name": "“Drakes Blood” (Item 59)"
     },
     "cs-32": {
-        "name": "“Pingente Curioso” (Item 20)"
+        "name": "“Curious Pendant” (Item 20)"
     },
     "cs-33": {
         "name": "25 moedas de ouro, receba {POISON}"
@@ -438,40 +438,40 @@ export default {
         "name": "Sofre o dano do terreno perigoso, receba {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Lâmina do Sangue Amaldiçoado” (Item 36)"
+        "name": "“Curseblood Blade” (Item 36)"
     },
     "cs-36": {
         "name": "10 de experiência, receba {INVSIBLE}"
     },
     "cs-37": {
-        "name": "“Grevas Drenantes” (Item 15)"
+        "name": "“Draining Greaves” (Item 15)"
     },
     "cs-38": {
-        "name": "“Picareta de Guerra” (Item 13)"
+        "name": "“War Pick” (Item 13)"
     },
     "cs-39": {
-        "name": "“Óculos Infravermelhos” (Item 21)"
+        "name": "“Infrared Goggles” (Item 21)"
     },
     "cs-40": {
         "name": "Um item de “Pedra” aleatório (Item 94-100)"
     },
     "cs-41": {
-        "name": "“Manoplas de Aço-Cinza” (Item 61)"
+        "name": "“Ashsteel Gauntlets” (Item 61)"
     },
     "cs-42": {
-        "name": "“Picareta de Guerra” (Item 13)"
+        "name": "“War Pick” (Item 13)"
     },
     "cs-43": {
         "name": "10 de experiência e Reabasteça todos os itens gastos"
     },
     "cs-44": {
-        "name": "“Remédio de Mana” (Item 60)"
+        "name": "“Mana Medicine” (Item 60)"
     },
     "cs-45": {
         "name": "Um item de “Pedra” aleatório (Item 94-100)"
     },
     "cs-46": {
-        "name": "Tipo “Adaga de Dente de Víbora” (Item 54)"
+        "name": "Tipo “Vipertooth Dagger” (Item 54)"
     },
     "cs-47": {
         "name": "15 moedas de ouro"
@@ -483,7 +483,7 @@ export default {
         "name": "“Waders de Magma” (Item gh-99)"
     },
     "cs-50": {
-        "name": "“Luar Engarrafado” (Item 18)"
+        "name": "“Bottled Moonlight” (Item 18)"
     },
     "fh-1": {
         "name": "Ganha quatro cartas de saque."
@@ -810,7 +810,7 @@ export default {
         "name": "Ganha 15 moedas de ouro"
     },
     "gh2-24": {
-        "name": "Ganha o “Bastão de Proteção” (Item 104)"
+        "name": "Ganha o “Warding Rod” (Item 104)"
     },
     "gh2-25": {
         "name": "Ganha 1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "Ganha 2 ✔"
     },
     "gh2-29": {
-        "name": "Ganha as “Botas Carregadas” (Item 100)"
+        "name": "Ganha as “Charged Boots” (Item 100)"
     },
     "gh2-30": {
         "name": "Ganha 20 de experiência"
@@ -843,7 +843,7 @@ export default {
         "name": "Ganha o “Elmo de Escamas de Dragão” (Item 121)"
     },
     "gh2-35": {
-        "name": "Ganha o “Bastão da Transferência” (Item 115)"
+        "name": "Ganha o “Rod of Transference” (Item 115)"
     },
     "gh2-36": {
         "name": "Tipo de Item Aleatório"
@@ -915,13 +915,13 @@ export default {
         "name": "Ganha 20 moedas de ouro"
     },
     "gh2-59": {
-        "name": "Ganha o “Escudo do Justo” (Item 148)"
+        "name": "Ganha o “Shield of the Righteous” (Item 148)"
     },
     "gh2-60": {
         "name": "Sofre 5 de dano"
     },
     "gh2-61": {
-        "name": "Ganha as “Botas de Sustentação” (Item 143)"
+        "name": "Ganha as “Boots of Bracing” (Item 143)"
     },
     "gh2-62": {
         "name": "Ganha 20 moedas de ouro"
@@ -933,7 +933,7 @@ export default {
         "name": "Tipo de Item Aleatório"
     },
     "gh2-65": {
-        "name": "Ganha o “Capuz do Patrulheiro” (Item 103)"
+        "name": "Ganha o “Ranger's Hood” (Item 103)"
     },
     "gh2-66": {
         "name": "Recebe {POISON} e {STRENGTHEN} e Recupere 2 cartas perdidas"

@@ -258,37 +258,37 @@ export default {
         "name": "ผู้ก่อวินาศกรรม"
     },
     "cs-PCSOD": {
-        "name": "อูซถูกทำลาย"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "ลาวาไหล"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "ตามเงิน"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "นักรบแช่แข็ง"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "พันธมิตรโอ๊ก"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "พันธมิตร อิโน็กซ์"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "รางวัลของกัตเตอร์มอว์"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "คำขอของ เฟอร์กริน"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "ยาหาย"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "เอาเงิน"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "ทหารรับจ้างประสบความสำเร็จ"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "มิตรแห่ง ผู้พูดน้ำแข็ง"
@@ -441,10 +441,10 @@ export default {
         "name": "เสียงเงียบ"
     },
     "gh2-P2R16": {
-        "name": "ชื่อเสียงฝ่าย 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "ชื่อเสียงฝ่าย 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
         "name": "ชื่อเสียงปีศาจ 6"

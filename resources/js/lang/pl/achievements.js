@@ -258,37 +258,37 @@ export default {
         "name": "Sabotażyści"
     },
     "cs-PCSOD": {
-        "name": "Szlam Zniszczony"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "Opadła Lawa"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "Tropem Pieniędzy"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "Zamrożony Wojownik"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "Sojusz Dębu"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "Sojusz Inoksów"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "Łup Paszczy Rynsztokowej"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "Prośba Feigrina"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "Utracona Mikstura"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "Zabrać Pieniądze"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "Doświadczeni Najemnicy"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "Przyjaciel Lodowych Mówców"
@@ -381,25 +381,25 @@ export default {
         "name": "Serce śniegu"
     },
     "gh2-G2ATD": {
-        "name": "Aktywacja Urządzenia"
+        "name": "Activating the Device"
     },
     "gh2-G2AUP": {
-        "name": "Niespokojny Pokój"
+        "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
         "name": "Starożytna Technologia"
     },
     "gh2-G2CRD": {
-        "name": "Władze Miasta: Demony"
+        "name": "City Rule: Demons"
     },
     "gh2-G2CRME": {
-        "name": "Władze Miasta: Kupcy"
+        "name": "City Rule: Merchants"
     },
     "gh2-G2CRMI": {
-        "name": "Władze Miasta: Wojsko"
+        "name": "City Rule: Military"
     },
     "gh2-G2EM": {
-        "name": "Opanowane Żywioły"
+        "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
         "name": "Koniec Spaczenia"
@@ -408,22 +408,22 @@ export default {
         "name": "Koniec Mroku"
     },
     "gh2-G2HW": {
-        "name": "Poświęcone Wody"
+        "name": "Hallowed Waters"
     },
     "gh2-G2ITD": {
-        "name": "W Głębiny"
+        "name": "Into the Depths"
     },
     "gh2-G2PTB": {
-        "name": "Pokój Przez Rozlew Krwi"
+        "name": "Peace Through Bloodshed"
     },
     "gh2-G2TCE": {
-        "name": "Świeca Zgaszona"
+        "name": "The Candle Extinguished"
     },
     "gh2-G2TCK": {
-        "name": "Świeca Zachowana"
+        "name": "The Candle Kept"
     },
     "gh2-G2TDR": {
-        "name": "Ciemność Się Cofa"
+        "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
         "name": "Przysługa dla Drakona"
@@ -441,27 +441,27 @@ export default {
         "name": "Głos Uciszony"
     },
     "gh2-P2R16": {
-        "name": "Reputacja frakcji 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "Reputacja frakcji 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
-        "name": "Reputacja demonów 6"
+        "name": "Demon Reputation 6"
     },
     "gh2-P2RD12": {
-        "name": "Reputacja demonów 12"
+        "name": "Demon Reputation 12"
     },
     "gh2-P2RME6": {
-        "name": "Reputacja kupców 6"
+        "name": "Merchant Reputation 6"
     },
     "gh2-P2RME12": {
-        "name": "Reputacja kupców 12"
+        "name": "Merchant Reputation 12"
     },
     "gh2-P2RMI6": {
-        "name": "Reputacja wojska 6"
+        "name": "Military Reputation 6"
     },
     "gh2-P2RMI12": {
-        "name": "Reputacja wojska 12"
+        "name": "Military Reputation 12"
     }
 }

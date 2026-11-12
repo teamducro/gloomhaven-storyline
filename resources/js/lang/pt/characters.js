@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "Égide de Âmbar",
+        "name": "Amber Aegis",
         "perks": [
             "Substitui uma carta {-2_WHITE} por uma carta {-1_WHITE} “Coloca uma ficha de {COLONY} {COLONY_ICON} à tua escolha em qualquer hexágono vazio a até {RANGE}2”",
             "Remove duas cartas {-1_WHITE}",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artífice",
+        "name": "Artificer",
         "perks": [
             "Substitui uma carta {-2_WHITE} por uma carta {-1_WHITE} {ANY}",
             "Substitui uma carta {-1_WHITE} por uma carta {+1_WHITE} {DISARM}",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Bombardeiro",
+        "name": "Bombard",
         "perks": [
             "Remove duas cartas {-1_WHITE}",
             "Substitui duas cartas {+0_WHITE} por duas cartas {AGAIN} {PIERCE}3",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Centelha Brilhante",
+        "name": "Brightspark",
         "perks": [
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} “{ANY_X} para adicionar +2 {ATTACK}”",
             "Substitui uma carta {-2_WHITE} por uma carta {-2_WHITE} “{RECOVER} uma carta aleatória da tua pilha de descarte”",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Guarda-Correntes",
+        "name": "Chainguard",
         "perks": [
             "Substitui uma carta {-1_WHITE} por uma carta {+1_WHITE} “{SHACKLE} {CG_CIRCLE}”",
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} “{+2_WHITE} se o alvo estiver {SHACKLED} {CG_CIRCLE}”",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Chefe",
+        "name": "Chieftain",
         "perks": [
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} {POISON}",
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} “{HEAL}1, {CT_CIRCLE}”",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Cavaleiro de Fogo",
+        "name": "Fire Knight",
         "perks": [
             "Remove duas cartas {-1_WHITE}",
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} “{STRENGTHEN} (Aliado)”",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hierofante",
+        "name": "Hierophant",
         "perks": [
             "Remove duas cartas {-1_WHITE}",
             "Substitui duas cartas {+0_WHITE} por uma carta {AGAIN} {LIGHT}",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "Pacto Oco",
+        "name": "Hollowpact",
         "perks": [
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} “{HEAL}2, ti próprio”",
             "Substitui duas cartas {+0_WHITE} por uma carta {+0_WHITE} “{VOIDSIGHT} {VOIDSIGHT_ICON}”",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Luminar",
+        "name": "Luminary",
         "perks": [
             "Remove quatro cartas {+0_WHITE}",
             "Substitui uma carta {+0_WHITE} por uma carta {+2_WHITE}",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "Pé-de-Lodo",
+        "name": "Mirefoot",
         "perks": [
             "Substitui uma carta {-2_WHITE} por uma carta {+0_WHITE}",
             "Substitui uma carta {-1_WHITE} por uma carta {+1_WHITE}",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "Bocarra da Ruína",
+        "name": "Ruinmaw",
         "perks": [
             "Substitui uma carta {-2_WHITE} por uma carta {-1_WHITE} {RUPTURE} e {WOUND}",
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} {WOUND}",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "Invocador de Espíritos",
+        "name": "Spirit Caller",
         "perks": [
             "Substitui uma carta {-2_WHITE} por uma carta {-1_WHITE} e uma carta {+1_WHITE}",
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} “{+2_WHITE} se um {SPIRIT} {SP_CIRCLE} realizou o ataque”",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Atirador de Estrelas",
+        "name": "Starslinger",
         "perks": [
             "Substitui duas cartas {+0_WHITE} por uma carta {AGAIN} “{HEAL}1, Ti próprio”",
             "Substitui uma carta {-2_WHITE} por uma carta {-1_WHITE} {DISARM} e uma carta {-1_WHITE} “{INVISIBLE}, Ti próprio”",
@@ -998,7 +998,7 @@ export default {
         ]
     },
     "BR2": {
-        "name": "Brutamontes",
+        "name": "Bruiser",
         "masteries": [
             "Em 3 cenários diferentes, mata um inimigo que Empurraste ou Puxaste nessa ronda",
             "Num único cenário, ao longo de 3 rondas consecutivas, joga 6 cartas de habilidade diferentes e faz os inimigos sofrerem 7 ou mais de dano durante cada uma dessas rondas"
@@ -1057,7 +1057,7 @@ export default {
         ]
     },
     "SC2": {
-        "name": "Faca Silenciosa",
+        "name": "Silent Knife",
         "masteries": [
             "Durante um cenário inteiro, ataca apenas inimigos que estejam adjacentes a um dos teus aliados ou que não estejam adjacentes a nenhum aliado teu, e realiza pelo menos 10 ataques",
             "Termina 3 cenários com 12 ou mais fichas de moeda"
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Elo da Alma",
+        "name": "Soultether",
         "masteries": [
             "Realiza 3 ações de invocação diferentes antes do teu primeiro descanso e mantém essas cartas na tua área ativa durante todo o cenário",
             "Realiza 6 habilidades de invocação diferentes das tuas cartas de habilidade ao longo das primeiras rondas de 6 cenários"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "Fúria Selvagem",
+        "name": "Wildfury",
         "masteries": [
             "Num único cenário, infunde ou consome {WIND} ou {EARTH} durante cada um dos teus turnos",
             "Num único cenário, mata 4 ou mais inimigos com ataques de {COMMAND} de 7 ou mais (após todos os bónus, antes dos modificadores de ataque)"

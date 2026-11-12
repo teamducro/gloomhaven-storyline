@@ -1018,463 +1018,463 @@ export default {
         "desc": "Mozgás akciódkor “+1 {MOVE} és {JUMP}” bónuszt kapsz egy mozgásodra."
     },
     "cs-1": {
-        "name": "Zavarodottság gömbje",
+        "name": "Orb of Confusion",
         "desc": "Támadás képességed során helyezhetsz egy karakter tokent erre a kártyára, hogy {MUDDLE} bónuszt kapj egy támadásodra. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-2": {
-        "name": "Lendület gömbje",
+        "name": "Orb of Momentum",
         "desc": "Mozgás képességed során helyezhetsz egy karakter tokent erre a kártyára, hogy +1 {MOVE} bónuszt kapj. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-3": {
-        "name": "Fürgeség gömbje",
+        "name": "Orb of Agility",
         "desc": "Mozgás képességed során helyezhetsz egy karakter tokent erre a kártyára, hogy {JUMP} bónuszt kapj. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-4": {
-        "name": "Életerő gömbje",
+        "name": "Orb of Vigor",
         "desc": "Támadás képességed során helyezhetsz egy karakter tokent erre a kártyára, hogy +1 {ATTACK} bónuszt kapj egy támadásodra. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-5": {
-        "name": "Megtorlás gömbje",
+        "name": "Orb of Retribution",
         "desc": "Ha egy szomszédos ellenség megtámad, helyezhetsz egy karakter tokent erre a kártyára, hogy {RETALIATE} 1 bónuszt kapj a támadás ellen. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-6": {
-        "name": "Fertőzés gömbje",
+        "name": "Orb of Infection",
         "desc": "Támadás képességed során helyezhetsz egy karakter tokent erre a kártyára, hogy {POISON} bónuszt kapj egy támadásodra. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-7": {
-        "name": "Életenergia gömbje",
+        "name": "Orb of Vitality",
         "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy végrehajts egy “{HEAL} 1, magadra” akciót. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-8": {
-        "name": "Védelem gömbje",
+        "name": "Orb of Protection",
         "desc": "Ha egy támadásból sérülnél, helyezhetsz egy karakter tokent erre a kártyára, hogy {SHIELD} 1 bónuszt kapj a támadás ellen. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-9": {
-        "name": "Szerencse gömbje",
+        "name": "Orb of Fortune",
         "desc": "Támadás képességed során helyezhetsz egy karakter tokent erre a kártyára, hogy Előnyt kapj egy támadásodra. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-10": {
-        "name": "Kétségbeesés gömbje",
+        "name": "Orb of Despair",
         "desc": "Támadás képességed során helyezhetsz egy karakter tokent erre a kártyára, hogy {CURSE} bónuszt kapj egy támadásodra. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-11": {
-        "name": "Himlő ellenméreg",
+        "name": "Pox Antidote",
         "desc": "A saját körödben távolítsd el az {INFECT} hatást magadról vagy egy szomszédos szövetségesről."
     },
     "cs-12": {
-        "name": "Trófea sisak",
+        "name": "Trophy Helm",
         "desc": "A támadásaidra nem hat a {RETALIATE}."
     },
     "cs-13": {
-        "name": "Harci csákány",
+        "name": "War Pick",
         "desc": "Közelharci Támadás képességed során {PIERCE} 4 bónuszt kapsz egy támadásodra."
     },
     "cs-14": {
-        "name": "Láncos buzogány",
+        "name": "Chain Mace",
         "desc": "A saját körödben hajts végre egy “{ATTACK} 3, {RANGE} 2” akciót."
     },
     "cs-15": {
-        "name": "Elszívó lábvért",
+        "name": "Draining Greaves",
         "desc": "A köröd végén, ha a körödben legalább négy mezőt mozogtál, egy szomszédos ellenség egy sebzést szenved."
     },
     "cs-16": {
-        "name": "Fázisváltás cipője",
+        "name": "Shoes of Phasing",
         "desc": "Mozgás képességeid során átmozoghatsz az ellenségeken."
     },
     "cs-17": {
-        "name": "Könnyű csizma",
+        "name": "Lightweight Boots",
         "desc": "Mozgás képességed során +2 {MOVE} és {JUMP} bónuszt kapsz."
     },
     "cs-18": {
-        "name": "Palackozott holdfény",
+        "name": "Bottled Moonlight",
         "desc": "Gyógyítás képességed során minden Gyógyításhoz +2 {HEAL} és {STRENGTHEN} bónuszt kapsz."
     },
     "cs-19": {
-        "name": "Örökkévalóság csizmája",
+        "name": "Boots of Perpetuity",
         "desc": "Immunis vagy a {IMMOBILIZE} hatásra.\nA köröd végén, ha a körödben nem mozogtál, hajts végre egy “{MOVE} 1” akciót."
     },
     "cs-20": {
-        "name": "Különös medál",
+        "name": "Curious Pendant",
         "desc": "A saját körödben szerezd vissza {RECOVER} egy ebben a fordulóban kijátszott elveszett lapodat."
     },
     "cs-21": {
-        "name": "Infravörös szemüveg",
+        "name": "Infrared Goggles",
         "desc": "Előnyt kapsz minden támadásodra, amelyet {INVISIBLE} állapotban hajtasz végre."
     },
     "cs-22": {
-        "name": "Acélsisak",
+        "name": "Steel Helmet",
         "desc": "Ha megtámadnak, ellenfeled {+1_WHITE} módosító lapja {+0_WHITE}-ra módosul."
     },
     "cs-23": {
-        "name": "Fonott lemezpáncél",
+        "name": "Woven Plate Armor",
         "desc": "Ha megtámadnak, a támadó Hátrányból támad, és {SHIELD} 2 bónuszt kapsz a támadás ellen."
     },
     "cs-24": {
-        "name": "Tisztaság palástja",
+        "name": "Mantle of Purity",
         "desc": "Ha egy vagy több negatív hatást szereznél, akadályozd meg a hatásokat."
     },
     "cs-25": {
-        "name": "Csontborítású kendő",
+        "name": "Boneclad Shawl",
         "desc": "A következő két, szomszédos ellenségek által végrehajtott téged célzó támadás ellen {RETALIATE} 2 bónuszt kapsz a támadás ellen."
     },
     "cs-26": {
-        "name": "Sziluett mellvért",
+        "name": "Silhouette Cuirass",
         "desc": "Ha egy téged célzó támadás az életerődet 0-ra csökkentené, ehelyett nem szenvedsz sebzést, és {INVISIBLE} leszel."
     },
     "cs-27": {
-        "name": "Áthelyező szerkezet",
+        "name": "Translocation Device",
         "desc": "A saját körödben cserélj helyet egy {RANGE} 5 távolságon belüli ellenséggel."
     },
     "cs-28": {
-        "name": "Alkímia ital",
+        "name": "Alchemy Potion",
         "desc": "A saját körödben cserélj le egy szomszédos akadály lapkát egy pénz tokenre."
     },
     "cs-29": {
-        "name": "Bódító ital",
+        "name": "Intoxicating Potion",
         "desc": "A saját körödben hajts végre egy “{HEAL} 5, {POISON}, magadra” akciót."
     },
     "cs-30": {
-        "name": "Vascsapda",
+        "name": "Iron Snare",
         "desc": "A saját körödben hozz létre egy {IMMOBILIZE} csapdát egy {RANGE} 3 távolságon belüli üres mezőn."
     },
     "cs-31": {
-        "name": "Agyrázkódás akna",
+        "name": "Concussion Mine",
         "desc": "A saját körödben hozz létre egy {STUN} csapdát egy {RANGE} 3 távolságon belüli üres mezőn."
     },
     "cs-32": {
-        "name": "Változó iránytű",
+        "name": "Shifting Compass",
         "desc": "A saját körödben kényszeríts egy 5 távolságon belüli ellenséget egy “{MOVE} 2, {JUMP}” képesség végrehajtására, amelyet te irányítasz."
     },
     "cs-33": {
-        "name": "Faltörő kos",
+        "name": "Battering Ram",
         "desc": "Közelharci Támadás képességed során {MUDDLE} és {PUSH} 2 bónuszt kapsz minden támadásodra."
     },
     "cs-34": {
-        "name": "Karmos csapda",
+        "name": "Claw Trap",
         "desc": "A köröd végén hozz létre egy 4 sebzést okozó {POISON} csapdát egy szomszédos üres mezőn."
     },
     "cs-35": {
-        "name": "Megtorlás botja",
+        "name": "Staff of Retribution",
         "desc": "Ha megtámadnak, {RETALIATE} 1, {RANGE} 3 bónuszt kapsz a támadás ellen."
     },
     "cs-36": {
-        "name": "Átokvér penge",
+        "name": "Curseblood Blade",
         "desc": "Közelharci Támadás képességed során 1 sebzést szenvedve {CURSE} bónuszt kapsz minden támadásodra."
     },
     "cs-37": {
-        "name": "Gyíkpikkely pajzs",
+        "name": "Drakescale Shield",
         "desc": "Ha egy szomszédos ellenség megtámad, {RETALIATE} 3 bónuszt kapsz a támadás ellen."
     },
     "cs-38": {
-        "name": "Gyíkpikkely tőr",
+        "name": "Drakescale Dagger",
         "desc": "Közelharci Támadás képességed során egy támadásodhoz ne húzz támadás módosító lapot."
     },
     "cs-39": {
-        "name": "Horgonylövedék",
+        "name": "Hook Shot",
         "desc": "A saját körödben hajts végre egy “{ATTACK} 2, {RANGE} 3, {PIERCE} 2” akciót."
     },
     "cs-40": {
-        "name": "Holdbőr csizma",
+        "name": "Moonleather Boots",
         "desc": "Teljes életerőnél minden mozgásodhoz +1 Mozgás bónuszt kapsz."
     },
     "cs-41": {
-        "name": "Lélek italáldozat",
+        "name": "Spirit Libation",
         "desc": "A saját körödben távolíts el egy sebzés tokent egy {SPIRIT} lényről. Ez a {SPIRIT} azonnal végrehajthat egy kört sebzés token kapása nélkül."
     },
     "cs-42": {
-        "name": "Megnyugtatás talárja",
+        "name": "Robe of Soothing",
         "desc": "Valahányszor egy szövetségesnek {PRAYER} képességkártyát adsz, az a szövetséges végrehajthat egy “{HEAL} 2, magára” akciót."
     },
     "cs-43": {
-        "name": "Díszes süveg",
+        "name": "Resplendent Mitre",
         "desc": "Gyógyítás akciód során minden Gyógyításhoz +2 {HEAL} bónuszt kapsz."
     },
     "cs-44": {
-        "name": "Kartácslövedék",
+        "name": "Canister Projectile",
         "desc": "Távolsági Támadás képességed során {PIERCE} 2 bónuszt kapsz egy támadásodra."
     },
     "cs-45": {
-        "name": "Láncágyú",
+        "name": "Chain Cannon",
         "desc": "A saját körödben hajts végre egy “{PULL} 2, magadat egy {RANGE} 3 távolságon belüli ellenség felé” akciót."
     },
     "cs-46": {
-        "name": "Idéző sípja",
+        "name": "Summoner's Whistle",
         "desc": "A saját körödben egy általad idézett szövetséges végrehajtja:\n{MOVE} +0\n{ATTACK} +0\nés te irányítod a képességeket."
     },
     "cs-47": {
-        "name": "Természet karpántja",
+        "name": "Nature Armlets",
         "desc": "Amíg idézett lényen {MOUNTED} vagy, a kis {ITEM} felszerelések hatásait ehelyett az idézett lényre alkalmazhatod."
     },
     "cs-48": {
-        "name": "Kémcső",
+        "name": "Test Tube",
         "desc": "A saját körödben {ANY_X} felhasználásával hajtsd végre az alábbiak egyikét: {MOVE} 2, {JUMP}, {WIND} | {HEAL} 3, magadra, {LIGHT} | {ATTACK} 2, {FIRE}."
     },
     "cs-49": {
-        "name": "Erősítő injekció",
+        "name": "Booster Shot",
         "desc": "A saját körödben hajtsd végre az alábbiak egyikét: {RECOVER} egy eldobott kártya | {HEAL} 3, magadra | +2 {ATTACK} bónusz a következő támadásodra ebben a körben."
     },
     "cs-50": {
-        "name": "Fénylő páncélhéj",
+        "name": "Luminous Carapace",
         "desc": "A saját körödben, amikor felhasználsz egy elemet {ANY_X}, ne told a felhasznált elemet a Tétlen oszlopba."
     },
     "cs-51": {
-        "name": "Lángoló páncél",
+        "name": "Flaming Armor",
         "desc": "Ha megtámadnak, {FIRE_X} felhasználásával {RETALIATE} 3 bónuszt kaphatsz a támadás ellen."
     },
     "cs-52": {
-        "name": "Lángoló bárd",
+        "name": "Flaming Axe",
         "desc": "Közelharci Támadás képességed során +1 {ATTACK} és {WOUND} bónuszt kapsz minden támadásodra. {FIRE}"
     },
     "cs-53": {
-        "name": "Tábori mozsárágyú",
+        "name": "Field Mortar",
         "desc": "Körönként egyszer, a saját körödben eltávolíthatsz egy hatást egy szomszédos figuráról, és ráhelyezheted erre a kártyára, ha még nincs rajta. A saját körödben egy szomszédos figura megkapja az összes ezen a kártyán lévő hatást, majd ez a felszerelés kiürül {CONSUMED}."
     },
     "cs-54": {
-        "name": "Viperafog tőr",
+        "name": "Vipertooth Dagger",
         "desc": "Előnyt kapsz minden közelharci támadásodra, amíg nehéz terepen állsz."
     },
     "cs-55": {
-        "name": "Szellemvipera méreg",
+        "name": "Ghost Viper Venom",
         "desc": "Támadás képességed során {POISON} 2 bónuszt kapsz egy támadásodra."
     },
     "cs-56": {
-        "name": "Szorítócsapda",
+        "name": "Clamp Trap",
         "desc": "A köröd végén hozz létre egy 3 sebzést okozó {IMMOBILIZE} csapdát egy szomszédos üres mezőn."
     },
     "cs-57": {
-        "name": "Megtisztított Semmiföldje-szív",
+        "name": "Cleansed Voidheart",
         "desc": "Immunis vagy a {MUDDLE} hatásra. Minden forduló végén, ha {WOUND} hatás alatt állsz, szerezz {REGENERATE} hatást."
     },
     "cs-58": {
-        "name": "Szédítő tinktúra",
+        "name": "Dizzying Tincture",
         "desc": "Támadás képességed során {DISARM} bónuszt kapsz egy támadásodra."
     },
     "cs-59": {
-        "name": "Gyík vére",
+        "name": "Drakes Blood",
         "desc": "A saját körödben távolítsd el az összes pozitív hatást az összes {RANGE} 2 távolságon belüli ellenségről. Ez {INVISIBLE} ellenségeken is használható."
     },
     "cs-60": {
-        "name": "Mana-orvosság",
+        "name": "Mana Medicine",
         "desc": "A saját körödben hajts végre egy “{HEAL} 5, magadra” akciót. {ANY}"
     },
     "cs-61": {
-        "name": "Hamuacél páncélkesztyű",
+        "name": "Ashsteel Gauntlets",
         "desc": "Immunis vagy a {DISARM} hatásra, még ha a felszerelés használt is. A saját körödben {SHIELD} 1 bónuszt kapsz a fordulóra. {eot}"
     },
     "cs-62": {
-        "name": "Szmogkibocsátó",
+        "name": "Smog Emitter",
         "desc": "A köröd végén minden ellenség a tőled {RANGE} 2 távolságon belüli összes üres mezőt nehéz terepnek tekinti a fordulóra. {eot}"
     },
     "cs-63": {
-        "name": "Szerencsepatkó",
+        "name": "Lucky Horseshoe",
         "desc": "Ha egy téged célzó támadásból sérülnél, ehelyett a sebzés felét (lefelé kerekítve) szenveded."
     },
     "cs-64": {
-        "name": "Enyhe lángoló tonik",
+        "name": "Mild Kindled Tonic",
         "desc": "Ha egy szövetséges Gyógyítás képességgel téged céloz, a Gyógyítás előtt távolíts el egy negatív hatást magadról, és szerezz {STRENGTHEN} hatást."
     },
     "cs-65": {
-        "name": "Mentőbárd",
+        "name": "Rescue Axe",
         "desc": "Közelharci Támadás képességed során +1 {ATTACK} és {MUDDLE} bónuszt kapsz egy olyan támadásodra, amely egy valamelyik szövetségesed mellett álló ellenséget céloz."
     },
     "cs-66": {
-        "name": "Vaskalapács",
+        "name": "Iron Malleus",
         "desc": "Közelharci Támadás képességed során +1 {ATTACK} és {IMMOBILIZE} bónuszt kapsz minden támadásodra."
     },
     "cs-67": {
-        "name": "Csáklya",
+        "name": "Pike Hook",
         "desc": "Egyetlen célpontra mért közelharci Támadás képességed során {PIERCE} 2 és {PULL} 1 bónuszt kapsz a támadásra, és megtámadhatsz egy ellenséget 2 mezőn belül is."
     },
     "cs-68": {
-        "name": "Robbanó tonik",
+        "name": "Explosive Tonic",
         "desc": "A saját körödben hajtsd végre: {WOUND} {RANGE} 3 {AOE.CONE_1_1}"
     },
     "cs-69": {
-        "name": "Erős lángoló tonik",
+        "name": "Spicy Kindled Tonic",
         "desc": "A következő három téged célzó Gyógyítás képesség során vagy előbb eltávolítod magadról az összes negatív hatást, vagy szerzel {STRENGTHEN} hatást."
     },
     "cs-70": {
-        "name": "Kötél",
+        "name": "Utility Rope",
         "desc": "A saját körödben hajts végre egy “{PULL} 2, célpont: egy {RANGE} 3 távolságon belüli szövetséges vagy ellenség” akciót."
     },
     "cs-71": {
-        "name": "Tűzálló sisak",
+        "name": "Fireproof Helm",
         "desc": "Valahányszor {WOUND} miatt sebzést szenvednél, ehelyett hajts végre egy “{HEAL} 1, magadra” akciót."
     },
     "cs-72": {
-        "name": "Fa létra",
+        "name": "Wooden Ladder",
         "desc": "+1 Távolság bónuszt kapsz minden olyan távolsági képességedhez, amelyet akadállyal szomszédosan hajtasz végre. Valahányszor csapdát tartalmazó mezőre lépsz, dönthetsz úgy, hogy nem sütöd el a csapdát."
     },
     "cs-73": {
-        "name": "Orvosi készlet",
+        "name": "Medical Kit",
         "desc": "Valahányszor egy képességkártya alapértelmezett felső akcióját használod, “{ATTACK} 2” képesség helyett végrehajthatsz egy “{HEAL} 2, {RANGE} 1” képességet."
     },
     "cs-74": {
-        "name": "Enyhe erősítő tonik",
+        "name": "Mild Bolstering Tonic",
         "desc": "Legalább egy szövetségest célzó Gyógyítás képességed során minden Gyógyításhoz +1 Gyógyítás és {STRENGTHEN} bónuszt kapsz."
     },
     "cs-75": {
-        "name": "Tölgy medálja",
+        "name": "Medallion of the Oak",
         "desc": "Ha ebben a fordulóban megtámadnak, te és minden szomszédos szövetséged minden felhúzott negatív és {modifier_no_damage} támadás módosítót {+0_WHITE}-ként kezelsz."
     },
     "cs-76": {
-        "name": "Kiégető kés",
+        "name": "Cauterizing Knife",
         "desc": "Gyógyítás képességed során minden Gyógyításhoz +3 {HEAL} és {WOUND} bónuszt kapsz."
     },
     "cs-77": {
-        "name": "Traumakészlet",
+        "name": "Trauma Kit",
         "desc": "Gyógyítás képességed során duplázd meg minden Gyógyítás értékét. Ha ez a Gyógyítás képesség eltávolítja a {WOUND} hatást, ez a felszerelés kiürülés helyett használt lesz."
     },
     "cs-78": {
-        "name": "Karizma tekercse",
+        "name": "Scroll of Charisma",
         "desc": "A saját körödben egy {RANGE} 2 távolságon belüli szövetséges végrehajthatja az alábbiak egyikét: {ATTACK} 2 | {MOVE} 2 | {HEAL} 2, magára."
     },
     "cs-79": {
-        "name": "Mentőpajzs",
+        "name": "Rescue Shield",
         "desc": "Ha egy szomszédos szövetségest őt célzó támadás sebezne, az a szövetséges {SHIELD} 2 bónuszt kap a támadás ellen, és eltávolítja a támadás által okozott összes negatív hatást."
     },
     "cs-80": {
-        "name": "Védelem tekercse",
+        "name": "Scroll of Protection",
         "desc": "Ha egy {RANGE} 5 távolságon belüli szövetségest őt célzó támadás sebezne, ehelyett nem szenved sebzést."
     },
     "cs-81": {
-        "name": "Erős erősítő tonik",
+        "name": "Spicy Bolstering Tonic",
         "desc": "Legalább egy szövetségest célzó Gyógyítás képességed során minden Gyógyításhoz +2 {HEAL}, {STRENGTHEN} és {BLESS} bónuszt kapsz."
     },
     "cs-82": {
-        "name": "Parancs tekercse",
+        "name": "Scroll of Command",
         "desc": "A saját körödben egy {RANGE} 3 távolságon belüli szövetséges végrehajthatja az alábbiak egyikét: {ATTACK} 3 | {MOVE} 3 | {HEAL} 3, magára."
     },
     "cs-83": {
-        "name": "Áramlatok gömbje",
+        "name": "Sphere of Currents",
         "desc": "A saját körödben hozz létre két víz nehéz terep lapkát olyan {RANGE} 3 távolságon belüli mezőkön, amelyeken nincs fedőlapka. {MUDDLE} minden {RANGE} 3 távolságon belüli, vízlapkán álló figurát."
     },
     "cs-84": {
-        "name": "Csiga számszeríj",
+        "name": "Slug Crossbow",
         "desc": "Egyetlen célpontra mért távolsági Támadás képességed az alábbira változik: {AOE.line_1_1}."
     },
     "cs-85": {
-        "name": "Csiszolt csiga számszeríj",
+        "name": "Refined Slug Crossbow",
         "desc": "Egyetlen célpontra mért távolsági Támadás képességed során +1 {ATTACK} bónuszt kapsz, és a támadásod az alábbira változik: {AOE.line_1_1}."
     },
     "cs-86": {
-        "name": "Védőbástya zászló",
+        "name": "Bulwark Banner",
         "desc": "A saját körödben te és minden szövetséges {SHIELD} 1 bónuszt kaptok a fordulóra. {eot}"
     },
     "cs-87": {
-        "name": "Csiszolt védőbástya zászló",
+        "name": "Refined Bulwark Banner",
         "desc": "A saját körödben minden szomszédos szövetséges a fordulóra annyi {SHIELD} bónuszt kap, amennyi a képességeidből származó aktuális Védelem értéked. {eot}"
     },
     "cs-88": {
-        "name": "Távirányítású bogár",
+        "name": "Remote Beetle",
         "desc": "A saját körödben nyiss ki egy {RANGE} 2 távolságon belüli feloldott zárt ajtót."
     },
     "cs-89": {
-        "name": "Csiszolt távirányítású bogár",
+        "name": "Refined Remote Beetle",
         "desc": "A saját körödben nyiss ki egy {RANGE} 2 távolságon belüli feloldott zárt ajtót."
     },
     "cs-90": {
-        "name": "Lángoló csizma",
+        "name": "Blazing Boots",
         "desc": "Mozgás képességed során duplázd meg a mozgás értékét."
     },
     "cs-91": {
-        "name": "Csiszolt lángoló csizma",
+        "name": "Refined Blazing Boots",
         "desc": "Mozgás képességed során {JUMP} bónuszt kapsz, és duplázd meg a mozgás értékét."
     },
     "cs-92": {
-        "name": "Viperás fújócső",
+        "name": "Viper Blowgun",
         "desc": "A saját körödben {EARTH_X} felhasználásával végrehajthatsz egy “{ATTACK} 1, {RANGE} 3, {POISON}” akciót."
     },
     "cs-93": {
-        "name": "Csiszolt viperás fújócső",
+        "name": "Refined Viper Blowgun",
         "desc": "A saját körödben hajts végre egy “{ATTACK} 1, {RANGE} 4, {POISON}” akciót. {EARTH_X} felhasználásával ADD {TARGET} bónuszt kaphatsz."
     },
     "cs-94": {
-        "name": "Fagykő",
+        "name": "Frost Stone",
         "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy létrehozz: {ICE}.\nHa két token van a kártyán, az kiürül {CONSUMED}."
     },
     "cs-95": {
-        "name": "Viharkő",
+        "name": "Storm Stone",
         "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy létrehozz: {WIND}.\nHa két token van a kártyán, az kiürül {CONSUMED}."
     },
     "cs-96": {
-        "name": "Pokolkő",
+        "name": "Inferno Stone",
         "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy létrehozz: {FIRE}.\nHa két token van a kártyán, az kiürül {CONSUMED}."
     },
     "cs-97": {
-        "name": "Remegőkő",
+        "name": "Tremor Stone",
         "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy létrehozz: {EARTH}.\nHa két token van a kártyán, az kiürül {CONSUMED}."
     },
     "cs-98": {
-        "name": "Ragyogó kő",
+        "name": "Brilliant Stone",
         "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy létrehozz: {LIGHT}.\nHa két token van a kártyán, az kiürül {CONSUMED}."
     },
     "cs-99": {
-        "name": "Sötét kő",
+        "name": "Dark Stone",
         "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy létrehozz: {DARK}.\nHa két token van a kártyán, az kiürül {CONSUMED}."
     },
     "cs-100": {
-        "name": "Csodakő",
+        "name": "Wonder Stone",
         "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy létrehozz: {ANY}.\nHa két token van a kártyán, az kiürül {CONSUMED}."
     },
     "cs-aa01": {
-        "name": "Kőgerinc védőbástya",
+        "name": "Rockspine Bulwark",
         "desc": "A következő három téged vagy egy szomszédos szövetségest célzó támadás sebzése ellen a megtámadott figura {SHIELD} 1 bónuszt kap a támadás ellen."
     },
     "cs-aa02": {
-        "name": "Szellemfény méz",
+        "name": "Ghostshimmer Honey",
         "desc": "A saját körödben hajtsd végre: {HEAL} 3\n{REGENERATE}\nMagadra és egy szomszédos szövetségesre hat."
     },
     "cs-aa03": {
-        "name": "Acélselyem fonószerv",
+        "name": "Steelsilk Spinneret",
         "desc": "A következő két alkalommal, amikor egy ellenség sebzést szenved, mert téged támadott, az az ellenség {IMMOBILIZE} hatást kap."
     },
     "cs-qa01": {
-        "name": "Teljesítménymodulátor",
+        "name": "Power Modulator",
         "desc": "(X értéke 1, 2 vagy 3)\nA saját körödben a felső akciód feladásával hajts végre {ATTACK} X+1\n{RANGE} 2\n{TARGET} 4-X"
     },
     "cs-qa02": {
-        "name": "Gőzdugattyús kalapács",
+        "name": "Steam Piston Hammer",
         "desc": "Közelharci Támadás képességed során {MUDDLE} és {PUSH} 1 bónuszt kapsz egy támadásodra."
     },
     "cs-qa03": {
-        "name": "Pókmászó kesztyű",
+        "name": "Spider Climb Gloves",
         "desc": "A mozgásod akadályokat tartalmazó mezőkre is beléphet és ott véget érhet, mintha {FLYING} hatásod lenne."
     },
     "cs-qa04": {
-        "name": "Gravitációfordító talpbetét",
+        "name": "Gravity Inversion Pads",
         "desc": "Hozz létre egy csapdát egy {RANGE} 3 távolságon belüli üres mezőn.\nHa te vagy egy szövetséges aktiválja ezt a csapdát, az a figura {FLYING} hatást kap a fordulóra. | Minden ellenség, amely belép egy ilyen csapdát tartalmazó mezőre, aktiválja azt, és elveszíti a {FLYING} hatást a fordulóra."
     },
     "cs-qa05": {
-        "name": "Finom modell",
+        "name": "Delicate Model",
         "desc": "Idézés: Hulladékgyűjtő\nMinden mezőn, amelyre ez az idézett lény belép, Zsákmányolsz {LOOT}.\nEnnek az idézett lénynek az akcióit te irányítod."
     },
     "cs-qa06": {
-        "name": "Alkotók Auscudecje",
+        "name": "Auscudec of the Makers",
         "desc": "A saját körödben a felső akciód feladásával játssz ki egy idézés akciót az elveszett paklidban lévő egy kártyáról, két {SCRAP_X} figyelmen kívül hagyásával."
     },
     "cs-rm01": {
-        "name": "Fogazott él",
+        "name": "Serrated Edge",
         "desc": "Közelharci támadás képességed során {RUPTURE} bónuszt kapsz egy támadásodra."
     },
     "cs-rm02": {
-        "name": "Rémes csizma",
+        "name": "Grisly Boots",
         "desc": "Mozgás képességed után hajts végre {PUSH} 1 akciót\nCélpont: egy szomszédos ellenség\n+1 {PUSH} bónuszt kapsz, ha ebben a fordulóban legalább 4 mezőt mozogtál."
     },
     "cs-rm03": {
-        "name": "Rettegéspikkely szablya",
+        "name": "Terrorscale Saber",
         "desc": "Közelharci támadás képességed során +1 {ATTACK} és {PIERCE} 2 bónuszt kapsz egy olyan támadásodra, amely {WOUND} vagy {RUPTURE} hatás alatt álló ellenséget céloz."
     },
     "cs-rm04": {
-        "name": "Rettegéspikkely keresztpengék",
+        "name": "Terrorscale Crossblades",
         "desc": "A következő három közelharci támadásodra, amely legalább egy negatív hatás alatt álló ellenséget céloz, Előnyt kapsz."
     },
     "cs-rm05": {
-        "name": "Pusztulás szertartása",
+        "name": "Rite of Ruin",
         "desc": "Támadás képességed során {WOUND} hatást szerezve +3 {ATTACK} bónuszt kapsz egy támadásodra. Ha megölöd a célpontot, hajts végre egy “{HEAL} 3, magadra” akciót."
     },
     "cs-rm06": {
-        "name": "Vad mellvért",
+        "name": "Savage Cuirass",
         "desc": "A következő két alkalommal, amikor egy lapot veszítenél el a kezedből a sebzés elkerülésére, ehelyett dobd el, és szerezz {WOUND} hatást."
     },
     "fh-1": {
@@ -2810,28 +2810,28 @@ export default {
         "desc": "Ha pihensz, legfeljebb három {TIDE_ICON} kártyát tarthatsz az aktív területeden. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
-        "name": "Barátság szalagja",
+        "name": "Ribbon of Friendship",
         "source": "Jutalom az egyéni küldetésből - {AN}",
         "desc": "Közvetlenül azután, hogy Erősítés képességet hajtottál végre, hajtsd végre: {POISON.fh} {RANGE.fh} 2. Ezt a képességet úgy is végrehajthatod, mintha ugyanazon a mezőn állnál, mint az egyik általad idézett lény."
     },
     "mp-SA": {
-        "name": "Fagyrév címere",
+        "name": "Crest of Frosthaven",
         "source": "Jutalom az egyéni küldetésből - {SA}",
         "desc": "Valahányszor hosszú pihenést tartasz, Jég, és fordítsd át ezt a kártyát.",
         "backDesc": "Valahányszor egy szövetséges pihen, átfordíthatod ezt a kártyát, hogy adj neki: {HEAL.fh} 2, magára"
     },
     "mp-CA A": {
-        "name": "Jóslat medencéje A",
+        "name": "Basin of Prophecy A",
         "source": "Jutalom az egyéni küldetésből - {CA}",
         "desc": "Adj +1 Jóslást minden Jóslásra."
     },
     "mp-CA B": {
-        "name": "Jóslat medencéje B",
+        "name": "Basin of Prophecy B",
         "source": "Jutalom az egyéni küldetésből - {CA}",
         "desc": "A saját körödben hajtsd végre: {ATTACK.fh} 1, {TARGET.fh} 1 ellenség, amely {RIFT} tartalmazó mezőn áll, {PIERCE.fh} 2, {DIVINATION} 3"
     },
     "mp-HA": {
-        "name": "Komoly csizma",
+        "name": "No Nonsense Boots",
         "source": "Jutalom az egyéni küldetésből - {HA}",
         "desc": "A köröd végén, ha ebben a körben 3 vagy több Eltökéltséget használtál el, fordítsd át ezt a kártyát.",
         "backDesc": "A saját körödben, ha van aktív Ingerültséged, áthelyezheted azt a kártyát a készletedbe, hogy kijátssz egy másik kártyát a készletedből, és végrehajtsd annak Ingerültség akcióját, majd fordítsd át ezt a kártyát."
@@ -2857,7 +2857,7 @@ export default {
         "desc": "Ha megtámadnak, még a támadás módosító lap húzása előtt a támadó Hátrányból támad."
     },
     "gh2-5": {
-        "name": "Felderítő lencse",
+        "name": "Scouting Lens",
         "source": "Városfejlettség 1",
         "desc": "Támadás képességed során {PIERCE.fh} 1 bónuszt kapsz egy támadásodra."
     },
@@ -2877,12 +2877,12 @@ export default {
         "desc": "Ha egy támadásból {DAMAGE.fh} sebzést szenvedsz, {SHIELD.fh} 1 bónuszt kapsz a támadás ellen."
     },
     "gh2-9": {
-        "name": "Fókuszáló rúd",
+        "name": "Focusing Rod",
         "source": "Városfejlettség 1",
         "desc": "A saját körödben, ha végrehajtottál egy {LOST.fh} akciót, hajtsd végre: {HEAL.fh} 1, {RANGE.fh} 3"
     },
     "gh2-10": {
-        "name": "Egyszerű íj",
+        "name": "Simple Bow",
         "source": "Városfejlettség 1",
         "desc": "Távtámadás képességed során Előnyt kapsz egy támadásodra."
     },
@@ -3015,7 +3015,7 @@ export default {
         "desc": "Ha egy támadásból {DAMAGE.fh} sebzést szenvedsz, {SHIELD.fh} 2 bónuszt kapsz a támadás ellen."
     },
     "gh2-36": {
-        "name": "Hold fülbevaló",
+        "name": "Moon Earing",
         "source": "Városfejlettség 4\nVárosi esemény 6",
         "desc": "Ha rövid pihenést tartasz, {RECOVER.fh} legfeljebb három használt felszerelésedet."
     },
@@ -3035,12 +3035,12 @@ export default {
         "desc": "Idézés: Csontváz"
     },
     "gh2-40": {
-        "name": "Árnyékpáncél",
+        "name": "Shadow Amor",
         "source": "Városfejlettség 4",
         "desc": "Ha egy támadásból {DAMAGE.fh} sebzést szenvedsz, semmisítsd meg a {DAMAGE.fh} sebzést, és tölts fel {DARK}."
     },
     "gh2-41": {
-        "name": "Kinetikus talp",
+        "name": "Kinetic Treads",
         "source": "Városfejlettség 5",
         "desc": "A mozgás képességed végén adj egy szomszédos szövetségesnek: {MOVE.fh} 2"
     },
@@ -3055,7 +3055,7 @@ export default {
         "desc": "A saját körödben +1 {RANGE.fh} bónuszt kapsz minden távtámadásodhoz."
     },
     "gh2-44": {
-        "name": "Precíziós íj",
+        "name": "Precision Bow",
         "source": "Városfejlettség 5",
         "desc": "A távtámadás képességed után hajtsd végre: {ATTACK.fh} 1, {TARGET.fh} 1 a támadás képesség célpontja bármilyen {RANGE.fh} távolságban, {PIERCE.fh} 1"
     },
@@ -3065,7 +3065,7 @@ export default {
         "desc": "A saját körödben {ANY} {ANY}."
     },
     "gh2-46": {
-        "name": "Könnyű pajzs",
+        "name": "Light Targe",
         "source": "Városfejlettség 5",
         "desc": "Ha egy támadásból {DAMAGE.fh} sebzést szenvedsz, {SHIELD.fh} 1 bónuszt kapsz a támadás ellen. A támadás után, de bármilyen {RETALIATE.fh} előtt hajtsd végre: {MOVE.fh} 1"
     },
@@ -3090,7 +3090,7 @@ export default {
         "desc": "A saját körödben hajtsd végre: {HEAL.fh} 3, egy szövetséges, {RANGE.fh} 1"
     },
     "gh2-51": {
-        "name": "Nehéz buzogány",
+        "name": "Heavy Mace",
         "source": "Városfejlettség 6\nÚti esemény 8",
         "desc": "Miután egy szomszédos ellenség megtámadott, hajtsd végre: {ATTACK.fh} 1, a támadó ellenség Erre a támadásra nem hat a {RETALIATE.fh}."
     },
@@ -3171,7 +3171,7 @@ export default {
         "desc": "A saját körödben hajtsd végre: {INVISIBLE.fh}, magadra"
     },
     "gh2-67": {
-        "name": "Tüskés cipő",
+        "name": "Spiked Shoes",
         "source": "Városfejlettség 9",
         "desc": "Ha egy képességkártya alapértelmezett alsó akcióját használod, {MOVE.fh} 2 helyett végrehajthatsz {ATTACK.fh} 3 akciót."
     },
@@ -3186,17 +3186,17 @@ export default {
         "desc": "A következő öt téged célzó támadásból származó {DAMAGE.fh} sebzés ellen {SHIELD.fh} 1 bónuszt kapsz a támadások ellen."
     },
     "gh2-70": {
-        "name": "Szokásos tartalék",
+        "name": "Standard Rations",
         "source": "Katonaság hírnév 15",
         "desc": "Valahányszor hosszú pihenésből gyógyulsz, +2 {HEAL.fh} bónuszt kapsz."
     },
     "gh2-71": {
-        "name": "Mestermű számszeríj",
+        "name": "Mastercraft Crossbow",
         "source": "Katonaság hírnév 17",
         "desc": "Távtámadás képességed során {WOUND.fh} bónuszt kapsz egy támadásodra. Egy, a célponttal szomszédos és tőled a célpontnál távolabb lévő ellenség {DAMAGE.fh} 2 sebzést szenved."
     },
     "gh2-72": {
-        "name": "Parancsnok sapkája",
+        "name": "Commander's Cap",
         "source": "Katonaság hírnév 19",
         "desc": "A szövetségesek Előnyt kapnak a következő három, veled szomszédosan végrehajtott támadásukra. Ezután fordítsd át ezt a kártyát.",
         "backDesc": "A következő három támadás képességed után, amelyet egy vagy több szövetségestől {RANGE.fh} 2 távolságon belül hajtasz végre, fordítsd át ezt a kártyát."
@@ -3207,18 +3207,18 @@ export default {
         "desc": "A saját körödben adj az egyik általad idézett lénynek: {SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
-        "name": "Rejtett tőr",
+        "name": "Concealed Dagger",
         "source": "Kereskedők Céhe hírnév 15",
         "desc": "A saját körödben helyezz egy karakter tokent egy szomszédos ellenségre. Az ellenség minden körének kezdetén {DAMAGE.fh} 1 sebzést szenved. Amikor az az ellenség meghal, fordítsd át ezt a kártyát. {PERSISTENT}",
         "backDesc": "Helyezd a karakter tokent arra a mezőre, ahol az ellenség meghalt. Zsákmányolhatod azt a tokent, hogy átfordítsd ezt a kártyát."
     },
     "gh2-75": {
-        "name": "Pompás csuklya",
+        "name": "Opulent Hood",
         "source": "Kereskedők Céhe hírnév 17",
         "desc": "A saját körödben adj egy szomszédos szövetségesnek: {ATTACK.fh} 1, {PUSH.fh} 1"
     },
     "gh2-76": {
-        "name": "Kereskedő jelvénye",
+        "name": "Merchant's Insignia",
         "source": "Kereskedők Céhe hírnév 19",
         "desc": "Valahányszor teljesítesz egy küldetést, szerezz 10 aranyat."
     },
@@ -3238,7 +3238,7 @@ export default {
         "desc": "Támadás képességed során {POISON.fh}, {STUN.fh} és {CURSE.fh} bónuszt kapsz egy támadásodra."
     },
     "gh2-80": {
-        "name": "Démoni koponya",
+        "name": "Demonic Skull",
         "source": "Démonok hírnév 19",
         "desc": "A saját körödben {ANY}, és a köröd végén fordítsd át ezt a kártyát.",
         "backDesc": "Ha megölsz egy szörnyet, a köröd végén fordítsd át ezt a kártyát."
@@ -3304,7 +3304,7 @@ export default {
         "desc": "Támadás képességed során {STUN.fh} bónuszt kapsz egy támadásodra."
     },
     "gh2-93": {
-        "name": "Vadság tekercse",
+        "name": "Scroll of Ferocity",
         "source": "Véletlenszerű felszerelés",
         "desc": "A saját körödben adj egy {RANGE.fh} 5 távolságon belüli szövetségesnek: {ATTACK.fh} 2"
     },
@@ -3314,12 +3314,12 @@ export default {
         "desc": "A saját körödben hajtsd végre: {HEAL.fh} 3, {RANGE.fh} 5"
     },
     "gh2-95": {
-        "name": "Védelem tekercse",
+        "name": "Scroll of Shielding",
         "source": "Véletlenszerű felszerelés",
         "desc": "Ha egy {RANGE.fh} 5 távolságon belüli szövetséges támadásból {DAMAGE.fh} sebzést szenved, adj neki {SHIELD.fh} 3 bónuszt a támadás ellen."
     },
     "gh2-96": {
-        "name": "Gyorsaság tekercse",
+        "name": "Scroll of Swiftness",
         "source": "Véletlenszerű felszerelés",
         "desc": "Egy {RANGE.fh} 5 távolságon belüli szövetséges mozgás képessége során +1 {MOVE.fh} és {JUMP.fh} bónuszt kap."
     },
@@ -3340,7 +3340,7 @@ export default {
         "desc": "A saját körödben hajtsd végre: {ATTACK.fh} 2, {RANGE.fh} 3"
     },
     "gh2-100": {
-        "name": "Feltöltött csizma",
+        "name": "Charged Boots",
         "source": "{SCENARIO 71} (Kincs #29)",
         "desc": "A következő három körödet követően, amelyekben nem hajtasz végre mozgás képességet, fordítsd át ezt a kártyát.",
         "backDesc": "Mozgás képességed során +2 {MOVE.fh} bónuszt kapsz, és fordítsd át ezt a kártyát."
@@ -3356,12 +3356,12 @@ export default {
         "desc": "Ha egy támadásból {DAMAGE.fh} sebzést szenvedsz, {SHIELD.fh} 4 bónuszt kapsz a támadás ellen."
     },
     "gh2-103": {
-        "name": "Vadőr csuklyája",
+        "name": "Ranger's Hood",
         "source": "{SCENARIO 28} (Kincs #65)",
         "desc": "Az egyik általad idézett lény támadás képessége során, a támadás módosító lapok húzása előtt fordítsd fel a támadás módosító paklid felső két lapját. Bármelyiket a paklid aljára teheted."
     },
     "gh2-104": {
-        "name": "Óvó rúd",
+        "name": "Warding Rod",
         "source": "{SCENARIO 4} (Kincs #24)",
         "desc": "A saját körödben hajtsd végre: {WARD.fh}, {TARGET.fh} 2, {RANGE.fh} 3"
     },
@@ -3409,29 +3409,29 @@ export default {
         "desc": "A saját körödben helyezz egy karakter tokent egy {RANGE.fh} 3 távolságon belüli normál vagy elit ellenségre. Te és minden szövetséges +1 {ATTACK.fh} bónuszt kaptok az erre az ellenségre mért minden támadásra. {PERSISTENT}"
     },
     "gh2-114": {
-        "name": "Széllökés lépői",
+        "name": "Gust Striders",
         "source": "Városi esemény 17\nVárosi esemény 81",
         "desc": "A saját körödben {JUMP.fh} bónuszt kapsz a következő mozgás képességedhez. Ha a {WIND} Erős vagy Gyengülő, +2 {MOVE.fh} bónuszt is kapsz."
     },
     "gh2-115": {
-        "name": "Áthelyezés rúdja",
+        "name": "Rod of Transference",
         "source": "{SCENARIO 11} (Kincs #35)",
         "desc": "Ha egy {RANGE.fh} 3 távolságon belüli szövetséges {DAMAGE.fh} sebzést szenvedne, ehelyett te szenveded a {DAMAGE.fh} sebzést."
     },
     "gh2-116": {
-        "name": "Végzetes versek",
+        "name": "Fated Verses",
         "source": "Városfejlettség 1",
         "desc": "Támadás képességed során Hátrányt vállalhatsz egy támadásodra, hogy a köröd végén átfordítsd ezt a kártyát.",
         "backDesc": "Egy szövetséges támadás képessége során az a szövetséges Előnyt kap az egyik támadására, és te átfordítod ezt a kártyát.",
         "faq": "Az elülső oldal nem használható, ha már Hátrányod van a támadáson. Az elülső oldal használható egy szövetséges által neked adott támadáson, de a kártya csak a következő köröd végén fordul át."
     },
     "gh2-117": {
-        "name": "Hajnalpenge",
+        "name": "Dawnblade",
         "source": "Jutalom: {SCENARIO 99}",
         "desc": "A saját körödben, ha a {DARK} Erős vagy Gyengülő, +1 {ATTACK.fh} bónuszt kapsz a következő közelharci támadásodra. Ha magaddal vitted a Duskbrand felszerelést, {LIGHT}."
     },
     "gh2-118": {
-        "name": "Alkonyatpenge",
+        "name": "Duskbrand",
         "source": "Úti esemény 33",
         "desc": "A saját körödben, ha a {LIGHT} Erős vagy Gyengülő, +1 {ATTACK.fh} bónuszt kapsz a következő közelharci támadásodra. Ha magaddal vitted a Dawnblade felszerelést, {DARK}."
     },
@@ -3451,31 +3451,31 @@ export default {
         "desc": "A saját körödben hajtsd végre: {WOUND.fh}, {MUDDLE.fh}, {RANGE.fh} 3 Ha magaddal vitted a Drakescale Boots és Drakescale Armor felszerelést, +1 {TARGET.fh} bónuszt kapsz."
     },
     "gh2-122": {
-        "name": "Fagybogár lámpás",
+        "name": "Frost Beetle Lantern",
         "desc": "A saját körödben hajtsd végre: {ANY_X}: {ICE}"
     },
     "gh2-123": {
-        "name": "Viharbogár lámpás",
+        "name": "Storm Beetle Lantern",
         "source": "Úti esemény 30",
         "desc": "A saját körödben hajtsd végre: {ANY_X}: {WIND}"
     },
     "gh2-124": {
-        "name": "Gyújtóbogár lámpás",
+        "name": "Ignition Beetle Lantern",
         "source": "Úti esemény 30",
         "desc": "A saját körödben hajtsd végre: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
-        "name": "Remegőbogár lámpás",
+        "name": "Tremor Beetle Lantern",
         "source": "Úti esemény 30",
         "desc": "A saját körödben hajtsd végre: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
-        "name": "Ragyogóbogár lámpás",
+        "name": "Brilliant Beetle Lantern",
         "source": "Úti esemény 30",
         "desc": "A saját körödben hajtsd végre: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
-        "name": "Alkonybogár lámpás",
+        "name": "Twilight Beetle Lantern",
         "source": "Úti esemény 30",
         "desc": "A saját körödben hajtsd végre: {ANY_X}: {DARK}"
     },
@@ -3536,17 +3536,17 @@ export default {
         "desc": "Közelharci támadás képességed során {DAMAGE.fh} 2 sebzést szenvedve +1 {ATTACK.fh} bónuszt kapsz minden támadásra."
     },
     "gh2-139": {
-        "name": "Túlvilági jogar",
+        "name": "Otherworldly Scepter",
         "source": "Jutalom: {SCENARIO 94}\nVárosi esemény 85",
         "desc": "Ha idézés akciót hajtasz végre, az akció által idézett minden lény {WARD.fh}, {INVISIBLE.fh} és {STRENGTHEN.fh} hatást kap."
     },
     "gh2-140": {
-        "name": "Távirányítású támadópók",
+        "name": "Remote Attack Spider",
         "source": "Városi esemény 98",
         "desc": "A saját körödben hajtsd végre: {POISON.fh}, Mind, {RANGE.fh} 1"
     },
     "gh2-141": {
-        "name": "Távirányítású segítőpók",
+        "name": "Remote Aid Spider",
         "source": "Városi esemény 98",
         "desc": "A saját körödben hajtsd végre: {HEAL.fh} 2, Mind, {RANGE.fh} 1"
     },
@@ -3557,41 +3557,41 @@ export default {
         "faq": "Az általad létrehozott veszélyes terep nem sebez téged; csak a rálépő figurákat sebzi."
     },
     "gh2-143": {
-        "name": "Támasz csizmája",
+        "name": "Boots of Bracing",
         "source": "{SCENARIO 81} (Kincs #61)",
         "desc": "Távtámadás képességed során {IMMOBILIZE.fh} hatást szerezve +1 {ATTACK.fh} bónuszt kapsz egy támadásodra."
     },
     "gh2-144": {
-        "name": "Időmátrix",
+        "name": "Temporal Matrix",
         "source": "Jutalom: {SCENARIO 92}",
         "desc": "A kezdeményezés sorrendjének megállapításakor, miután minden képességkártyát felfordítottatok, a forduló kezdeményezéseit a legmagasabbtól a legalacsonyabbig rendezzétek a legalacsonyabbtól a legmagasabbig helyett."
     },
     "gh2-145": {
-        "name": "Ragályhorog",
+        "name": "Harrow-Hook",
         "desc": "A saját körödben hajtsd végre: {MOVE.fh} 2, {JUMP.fh} Ennek a mozgásnak egy akadállyal vagy fallal szomszédos mezőn kell végződnie."
     },
     "gh2-146": {
-        "name": "Borostyánüreg",
+        "name": "Amberhollow",
         "source": "Úti esemény 15\nÚti esemény 25\nÚti esemény 28\nÚti esemény 30\nÚti esemény 31",
         "desc": "Ezt a felszerelést be kell vinni a küldetésbe, és a küldetés végén visszakerül az elérhetetlen felszerelések készletébe. A saját körödben hajtsd végre: {STRENGTHEN.fh}, {BLESS.fh}, magadra"
     },
     "gh2-147": {
-        "name": "Xorn jogara",
+        "name": "Scepter of Xorn",
         "source": "Jutalom: {SCENARIO 57}\nJutalom: {SCENARIO 58}",
         "desc": "A saját körödben, ha nem állsz {POISON.fh} hatás alatt, szerezz {POISON.fh} hatást, hogy végrehajtsd: {POISON.fh}, {CURSE.fh}, {TARGET.fh} 3, {RANGE.fh} 3"
     },
     "gh2-148": {
-        "name": "Igaz pajzsa",
+        "name": "Shield of the Righteous",
         "source": "{SCENARIO 65} (Kincs #59)",
         "desc": "Ha egy támadásból {DAMAGE.fh} sebzést szenvedsz, semmisítsd meg a {DAMAGE.fh} sebzést, és tölts fel {LIGHT}"
     },
     "gh2-149": {
-        "name": "Aesther messzelátó",
+        "name": "Aesther Spyglass",
         "source": "Életcél 04",
         "desc": "Ez a felszerelés csak akkor használható, ha legalább egy akadállyal szomszédos vagy. A saját körödben hajtsd végre: {BLESS.fh}, magadra"
     },
     "gh2-150": {
-        "name": "Kísérleti páncél",
+        "name": "Experimental Armor",
         "source": "Életcél 17",
         "desc": "Ez a felszerelés nem adható el, és minden küldetésre magaddal kell vinni. Ha egy támadásból {DAMAGE.fh} sebzést szenvedsz, szenvedhetsz {DAMAGE.fh} 2 sebzést, hogy minden szomszédos szövetséges és ellenség {DAMAGE.fh} 2 sebzést szenvedjen."
     },
@@ -3600,12 +3600,12 @@ export default {
         "desc": "Közelharci támadás képességed során {WOUND.fh}, {POISON.fh} bónuszt kapsz minden támadásra."
     },
     "gh2-152": {
-        "name": "Rubin talizmán",
+        "name": "Ruby Talisman",
         "source": "Jutalom: {SCENARIO 75}",
         "desc": "A saját körödben, ha egy {RANGE.fh} 3 távolságon belüli szövetséges negatív hatás alatt áll, szerezhetsz {DISARM.fh} hatást, hogy eltávolíts egy negatív hatást arról a szövetségesről, és adj neki Oltalmat, {BLESS.fh}."
     },
     "gh2-153": {
-        "name": "Horgas pajzs",
+        "name": "Hooked Shield",
         "source": "Jutalom az egyéni küldetésből - {BR2}",
         "desc": "Miután eltaszítasz egy ellenséget, hajtsd végre: {MOVE.fh} 3, {JUMP.fh} Ez a mozgás csak olyan mezőkre léphet, amelyekről az eltaszított ellenség lelépett."
     },
@@ -3615,7 +3615,7 @@ export default {
         "desc": "Gyógyítás képességed során +1 {HEAL.fh} és {STRENGTHEN.fh} bónuszt kapsz egy szövetségest célzó gyógyításhoz."
     },
     "gh2-155": {
-        "name": "Éteri elixír",
+        "name": "Etheric Elixir",
         "source": "Jutalom az egyéni küldetésből - {SW2}",
         "desc": "Ha végrehajtod a Reviving Ether felső {LOST.fh} akcióját, távolítsd el a {NULL_MODIFIER} lapot a támadás módosító paklidból a küldetés hátralévő részére."
     },
@@ -3635,7 +3635,7 @@ export default {
         "desc": "+1 {ATTACK.fh} bónuszt kapsz az {AUGMENT} akcióidból származó minden támadásodra."
     },
     "gh2-159": {
-        "name": "Isteni jelvény",
+        "name": "Insignia of the Divine",
         "source": "Jutalom az egyéni küldetésből - {SK2}",
         "desc": "A saját körödben adj magadnak vagy egy szomszédos szövetségesnek: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
     },
@@ -3650,7 +3650,7 @@ export default {
         "desc": "Ha az egyik általad idézett lény támadásból {DAMAGE.fh} sebzést szenved, semmisítsd meg a {DAMAGE.fh} sebzést, és az az idézett lény {INVISIBLE.fh} hatást kap."
     },
     "gh2-162": {
-        "name": "Az éj simogatása",
+        "name": "The Night's Caress",
         "source": "Jutalom az egyéni küldetésből - {NS2}",
         "desc": "Ha elveszíted az {INVISIBLE.fh} hatást, fordítsd át ezt a kártyát, és hajtsd végre: {MUDDLE.fh}, {RANGE.fh} 1",
         "backDesc": "Ha {INVISIBLE.fh} hatást szerzel, fordítsd át ezt a kártyát, és nézd meg a támadás módosító paklid felső lapját. Azt a lapot a paklid aljára teheted."
@@ -3681,7 +3681,7 @@ export default {
         "desc": "Ha egy {RANGE.fh} 3 távolságon belüli szövetséges támadásból {DAMAGE.fh} sebzést szenved, a támadás képesség után hajtsd végre: {MOVE.fh} 2 Ennek a mozgásnak a megtámadott szövetségessel szomszédos mezőn kell végződnie."
     },
     "gh2-168": {
-        "name": "Elemi mellény",
+        "name": "Elemental Vest",
         "source": "Jutalom az egyéni küldetésből - {EL2}",
         "desc": "A köröd végén minden két, abban a körben felhasznált elemért: {ANY}."
     },
@@ -3691,7 +3691,7 @@ export default {
         "desc": "A saját körödben {COMMAND}: {ATTACK.fh} 2"
     },
     "gh2-170": {
-        "name": "Kúszó páncélhéj",
+        "name": "Crawling Carapace",
         "source": "Jutalom az egyéni küldetésből - {BS2}",
         "desc": "Az első támadásból származó {DAMAGE.fh} sebzésnél, amelyet te vagy az egyik általad idézett lény minden fordulóban szenvedne, a megtámadott figura {SHIELD.fh} 1 bónuszt kap a támadás ellen."
     }

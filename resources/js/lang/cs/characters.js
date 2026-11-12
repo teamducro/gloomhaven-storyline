@@ -356,7 +356,7 @@ export default {
         ]
     },
     "AA": {
-        "name": "Jantarový štít",
+        "name": "Amber Aegis",
         "perks": [
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {-1_WHITE} „Umísti jeden žeton {COLONY} {COLONY_ICON} dle vlastního výběru na libovolné prázdné pole v {RANGE}2“",
             "Odstraň dvě karty {-1_WHITE}",
@@ -373,7 +373,7 @@ export default {
         ]
     },
     "QA": {
-        "name": "Artefaktář",
+        "name": "Artificer",
         "perks": [
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {-1_WHITE} {ANY}",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+1_WHITE} {DISARM}",
@@ -388,7 +388,7 @@ export default {
         ]
     },
     "BM": {
-        "name": "Dělostřelec",
+        "name": "Bombard",
         "perks": [
             "Odstraň dvě karty {-1_WHITE}",
             "Nahraď dvě karty {+0_WHITE} dvěma kartami {AGAIN} {PIERCE}3",
@@ -406,7 +406,7 @@ export default {
         ]
     },
     "BK": {
-        "name": "Jasná jiskra",
+        "name": "Brightspark",
         "perks": [
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{ANY_X}, abys přidal/a +2 {ATTACK}“",
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {-2_WHITE} „{RECOVER} jednu náhodnou kartu z odhazovací hromádky“",
@@ -421,7 +421,7 @@ export default {
         ]
     },
     "CG": {
-        "name": "Řetězový strážce",
+        "name": "Chainguard",
         "perks": [
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+1_WHITE} „{SHACKLE} {CG_CIRCLE}“",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{+2_WHITE}, pokud je cíl {SHACKLED} {CG_CIRCLE}“",
@@ -437,7 +437,7 @@ export default {
         ]
     },
     "CT": {
-        "name": "Náčelník",
+        "name": "Chieftain",
         "perks": [
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} {POISON}",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{HEAL}1, {CT_CIRCLE}“",
@@ -453,7 +453,7 @@ export default {
         ]
     },
     "FK": {
-        "name": "Ohnivý rytíř",
+        "name": "Fire Knight",
         "perks": [
             "Odstraň dvě karty {-1_WHITE}",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{STRENGTHEN} (spojenec)“",
@@ -470,7 +470,7 @@ export default {
         ]
     },
     "HP": {
-        "name": "Hierofant",
+        "name": "Hierophant",
         "perks": [
             "Odstraň dvě karty {-1_WHITE}",
             "Nahraď dvě karty {+0_WHITE} jednou kartou {AGAIN} {LIGHT}",
@@ -486,7 +486,7 @@ export default {
         ]
     },
     "HO": {
-        "name": "Prázdný pakt",
+        "name": "Hollowpact",
         "perks": [
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{HEAL}2, sebe“",
             "Nahraď dvě karty {+0_WHITE} jednou kartou {+0_WHITE} „{VOIDSIGHT} {VOIDSIGHT_ICON}“",
@@ -500,7 +500,7 @@ export default {
         ]
     },
     "LU": {
-        "name": "Luminář",
+        "name": "Luminary",
         "perks": [
             "Odstraň čtyři karty {+0_WHITE}",
             "Nahraď jednu kartu {+0_WHITE} jednou kartou {+2_WHITE}",
@@ -517,7 +517,7 @@ export default {
         ]
     },
     "MF": {
-        "name": "Bahňák",
+        "name": "Mirefoot",
         "perks": [
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {+0_WHITE}",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+1_WHITE}",
@@ -533,7 +533,7 @@ export default {
         ]
     },
     "RM": {
-        "name": "Troskožrout",
+        "name": "Ruinmaw",
         "perks": [
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {-1_WHITE} {RUPTURE} a {WOUND}",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} {WOUND}",
@@ -547,7 +547,7 @@ export default {
         ]
     },
     "SP": {
-        "name": "Přivolavač duchů",
+        "name": "Spirit Caller",
         "perks": [
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {-1_WHITE} a jednou kartou {+1_WHITE}",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{+2_WHITE}, pokud útok vykonal {SPIRIT} {SP_CIRCLE}“",
@@ -563,7 +563,7 @@ export default {
         ]
     },
     "ST": {
-        "name": "Hvězdometník",
+        "name": "Starslinger",
         "perks": [
             "Nahraď dvě karty {+0_WHITE} jednou kartou {AGAIN} „{HEAL}1, sebe“",
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {-1_WHITE} {DISARM} a jednou kartou {-1_WHITE} „{INVISIBLE}, sebe“",
@@ -998,7 +998,7 @@ export default {
         ]
     },
     "BR2": {
-        "name": "Rváč",
+        "name": "Bruiser",
         "masteries": [
             "Ve 3 různých scénářích zabij nepřítele, kterého jsi v tomto kole odstrčil/a nebo přitáhl/a.",
             "V jednom scénáři zahraj během 3 po sobě jdoucích kol 6 různých karet schopností a v každém z těchto kol způsob nepřátelům alespoň 7 zranění."
@@ -1057,7 +1057,7 @@ export default {
         ]
     },
     "SC2": {
-        "name": "Tichý nůž",
+        "name": "Silent Knife",
         "masteries": [
             "Během celého scénáře útoč pouze na nepřátele, kteří sousedí s některým z tvých spojenců nebo nesousedí s žádným z jejich spojenců, a vykonej alespoň 10 útoků.",
             "Zakonči 3 scénáře s 12 nebo více žetony peněz."
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Poutač duší",
+        "name": "Soultether",
         "masteries": [
             "Vykonej před svým prvním odpočinkem 3 různé přivolávací akce a udrž tyto karty v aktivní oblasti po celý scénář.",
             "Vykonej 6 různých přivolávacích schopností ze svých karet schopností v průběhu prvních kol 6 scénářů."
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "Divoká zuřivost",
+        "name": "Wildfury",
         "masteries": [
             "V jednom scénáři vyvolej nebo spotřebuj {WIND} nebo {EARTH} během každého ze svých tahů.",
             "V jednom scénáři zabij 4 nebo více nepřátel útoky {COMMAND} s hodnotou 7 nebo vyšší (po všech bonusech, před modifikátory útoku)."

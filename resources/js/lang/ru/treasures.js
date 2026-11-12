@@ -339,16 +339,16 @@ export default {
         "name": "«Drake's Blood» (Предмет 59)"
     },
     "cs-2": {
-        "name": "«Сфера удачи» (Предмет 09)"
+        "name": "«Orb of Fortune» (Предмет 09)"
     },
     "cs-3": {
-        "name": "«Цепная булава» (Предмет 14)"
+        "name": "«Chain Mace» (Предмет 14)"
     },
     "cs-4": {
         "name": "Получите 15 золотых и восстановите 1 потерянную карту"
     },
     "cs-5": {
-        "name": "«Контузионная мина» (Предмет 31)"
+        "name": "«Concussion Mine» (Предмет 31)"
     },
     "cs-6": {
         "name": "Получите 20 gold and disarm all adjacent traps"
@@ -357,37 +357,37 @@ export default {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-8": {
-        "name": "«Головокружительная настойка» (Предмет 58)"
+        "name": "«Dizzying Tincture» (Предмет 58)"
     },
     "cs-9": {
-        "name": "«Сфера удачи» (Предмет 9)"
+        "name": "«Orb of Fortune» (Предмет 9)"
     },
     "cs-10": {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-11": {
-        "name": "«Головокружительная настойка» (Предмет 58)"
+        "name": "«Dizzying Tincture» (Предмет 58)"
     },
     "cs-12": {
-        "name": "«Лекарство маны» (Предмет 60)"
+        "name": "«Mana Medicine» (Предмет 60)"
     },
     "cs-13": {
-        "name": "«Сфера отчаяния» (Предмет 10)"
+        "name": "«Orb of Despair» (Предмет 10)"
     },
     "cs-14": {
-        "name": "«Стальной шлем» (Предмет 22)"
+        "name": "«Steel Helmet» (Предмет 22)"
     },
     "cs-15": {
-        "name": "«Сдвигающий компас» (Предмет 32)"
+        "name": "«Shifting Compass» (Предмет 32)"
     },
     "cs-16": {
         "name": "Perform «Heal 6, Self», Получите {POISON}"
     },
     "cs-17": {
-        "name": "«Контузионная мина» (Предмет 31)"
+        "name": "«Concussion Mine» (Предмет 31)"
     },
     "cs-18": {
-        "name": "«Костяная шаль» (Предмет 25)"
+        "name": "«Boneclad Shawl» (Предмет 25)"
     },
     "cs-19": {
         "name": "Получите ✓ and generate a Wild Element"
@@ -396,10 +396,10 @@ export default {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-21": {
-        "name": "«Стальной шлем» (Предмет 22)"
+        "name": "«Steel Helmet» (Предмет 22)"
     },
     "cs-22": {
-        "name": "«Сапоги постоянства» (Предмет 19)"
+        "name": "«Boots of Perpetuity» (Предмет 19)"
     },
     "cs-23": {
         "name": "«Trophy Helmet» (Предмет 12)"
@@ -408,19 +408,19 @@ export default {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-25": {
-        "name": "«Иссушающие поножи» (Предмет 15)"
+        "name": "«Draining Greaves» (Предмет 15)"
     },
     "cs-26": {
-        "name": "«Железный капкан» (Предмет 30)"
+        "name": "«Iron Snare» (Предмет 30)"
     },
     "cs-27": {
-        "name": "«Плетёные латы» (Предмет 23)"
+        "name": "«Woven Plate Armor» (Предмет 23)"
     },
     "cs-28": {
-        "name": "«Цепная булава» (Предмет 14)"
+        "name": "«Chain Mace» (Предмет 14)"
     },
     "cs-29": {
-        "name": "«Плетёные латы» (Предмет 23)"
+        "name": "«Woven Plate Armor» (Предмет 23)"
     },
     "cs-30": {
         "name": "«Boneclad Shawl (Предмет 25)"
@@ -429,7 +429,7 @@ export default {
         "name": "«Drake's Blood» (Предмет 59)"
     },
     "cs-32": {
-        "name": "«Любопытный кулон» (Предмет 20)"
+        "name": "«Curious Pendant» (Предмет 20)"
     },
     "cs-33": {
         "name": "25  gold, Получите {POISON}"
@@ -438,40 +438,40 @@ export default {
         "name": "Suffer hazardous terrain damage, Получите {INVISIBLE}"
     },
     "cs-35": {
-        "name": "«Клинок проклятой крови» (Предмет 36)"
+        "name": "«Curseblood Blade» (Предмет 36)"
     },
     "cs-36": {
         "name": "10 experience, Получите {INVSIBLE}"
     },
     "cs-37": {
-        "name": "«Иссушающие поножи» (Предмет 15)"
+        "name": "«Draining Greaves» (Предмет 15)"
     },
     "cs-38": {
-        "name": "«Боевой клевец» (Предмет 13)"
+        "name": "«War Pick» (Предмет 13)"
     },
     "cs-39": {
-        "name": "«Инфракрасные очки» (Предмет 21)"
+        "name": "«Infrared Goggles» (Предмет 21)"
     },
     "cs-40": {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-41": {
-        "name": "«Перчатки из пепельной стали» (Предмет 61)"
+        "name": "«Ashsteel Gauntlets» (Предмет 61)"
     },
     "cs-42": {
-        "name": "«Боевой клевец» (Предмет 13)"
+        "name": "«War Pick» (Предмет 13)"
     },
     "cs-43": {
         "name": "10 experience and Refresh all spent Предметs"
     },
     "cs-44": {
-        "name": "«Лекарство маны» (Предмет 60)"
+        "name": "«Mana Medicine» (Предмет 60)"
     },
     "cs-45": {
         "name": "One random «Stone» Предмет (Предмет 94-100)"
     },
     "cs-46": {
-        "name": "«Кинжал из зуба гадюки» design (Предмет 54)"
+        "name": "«Vipertooth Dagger» design (Предмет 54)"
     },
     "cs-47": {
         "name": "Получите 15 золотых"
@@ -810,7 +810,7 @@ export default {
         "name": "Получите 15 золотых"
     },
     "gh2-24": {
-        "name": "Получите «Охранный жезл» (Предмет 104)"
+        "name": "Получите «Warding Rod» (Предмет 104)"
     },
     "gh2-25": {
         "name": "Получите 1 ✔"
@@ -825,7 +825,7 @@ export default {
         "name": "Получите 2 ✔"
     },
     "gh2-29": {
-        "name": "Получите «Заряженные сапоги» (Предмет 100)"
+        "name": "Получите «Charged Boots» (Предмет 100)"
     },
     "gh2-30": {
         "name": "Получите 20 очков опыта"
@@ -843,7 +843,7 @@ export default {
         "name": "Получите «Шлем из чешуи дрейка» (Предмет 121)"
     },
     "gh2-35": {
-        "name": "Получите «Жезл переноса» (Предмет 115)"
+        "name": "Получите «Rod of Transference» (Предмет 115)"
     },
     "gh2-36": {
         "name": "Случайный чертёж предмета"

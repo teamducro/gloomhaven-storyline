@@ -240,7 +240,7 @@ export default {
         "name": "✓ 1 획득, 균열 이벤트 19번을 덱에 추가"
     },
     "fc-81": {
-        "name": "“신속의 두루마리” (아이템 159)와 금화 10개 획득"
+        "name": "“Scroll of Swiftness” (아이템 159)와 금화 10개 획득"
     },
     "fc-82": {
         "name": "“회춘의 정강이갑옷” (아이템 158)"
@@ -273,7 +273,7 @@ export default {
         "name": "금화 30개와 파티 업적 “기회주의자” 획득. 도시 이벤트 84번을 덱에 추가"
     },
     "fc-93": {
-        "name": "“신속의 두루마리” (아이템 159)"
+        "name": "“Scroll of Swiftness” (아이템 159)"
     },
     "fc-94": {
         "name": "✓ 1 획득, 균열 이벤트 20번을 덱에 추가"
@@ -336,19 +336,19 @@ export default {
         "name": "“회복의 반지” (아이템 32)"
     },
     "cs-1": {
-        "name": "“드레이크의 피” (아이템 59)"
+        "name": "“Drakes Blood” (아이템 59)"
     },
     "cs-2": {
-        "name": "“행운의 오브” (아이템 09)"
+        "name": "“Orb of Fortune” (아이템 09)"
     },
     "cs-3": {
-        "name": "“사슬 철퇴” (아이템 14)"
+        "name": "“Chain Mace” (아이템 14)"
     },
     "cs-4": {
         "name": "금화 15개 획득 및 소실된 카드 1장 되찾기"
     },
     "cs-5": {
-        "name": "“진동 지뢰” (아이템 31)"
+        "name": "“Concussion Mine” (아이템 31)"
     },
     "cs-6": {
         "name": "금화 20개 획득 및 인접한 모든 함정 해체"
@@ -357,37 +357,37 @@ export default {
         "name": "무작위 “돌” 아이템 1개 (아이템 94-100)"
     },
     "cs-8": {
-        "name": "“어지러운 팅크제” (아이템 58)"
+        "name": "“Dizzying Tincture” (아이템 58)"
     },
     "cs-9": {
-        "name": "“행운의 오브” (아이템 9)"
+        "name": "“Orb of Fortune” (아이템 9)"
     },
     "cs-10": {
         "name": "무작위 “돌” 아이템 1개 (아이템 94-100)"
     },
     "cs-11": {
-        "name": "“어지러운 팅크제” (아이템 58)"
+        "name": "“Dizzying Tincture” (아이템 58)"
     },
     "cs-12": {
         "name": "“마나 약” (아이템 60)"
     },
     "cs-13": {
-        "name": "“절망의 오브” (아이템 10)"
+        "name": "“Orb of Despair” (아이템 10)"
     },
     "cs-14": {
-        "name": "“강철 헬멧” (아이템 22)"
+        "name": "“Steel Helmet” (아이템 22)"
     },
     "cs-15": {
-        "name": "“이동 나침반” (아이템 32)"
+        "name": "“Shifting Compass” (아이템 32)"
     },
     "cs-16": {
         "name": "“치료 6, 자신”을 수행하고 {POISON} 획득"
     },
     "cs-17": {
-        "name": "“진동 지뢰” (아이템 31)"
+        "name": "“Concussion Mine” (아이템 31)"
     },
     "cs-18": {
-        "name": "“뼈를 덮은 어깨걸이” (아이템 25)"
+        "name": "“Boneclad Shawl” (아이템 25)"
     },
     "cs-19": {
         "name": "✓ 획득 및 아무 원소 1개 생성"
@@ -396,40 +396,40 @@ export default {
         "name": "무작위 “돌” 아이템 1개 (아이템 94-100)"
     },
     "cs-21": {
-        "name": "“강철 헬멧” (아이템 22)"
+        "name": "“Steel Helmet” (아이템 22)"
     },
     "cs-22": {
-        "name": "“영속의 부츠” (아이템 19)"
+        "name": "“Boots of Perpetuity” (아이템 19)"
     },
     "cs-23": {
-        "name": "“전리품 투구” (아이템 12)"
+        "name": "“Trophy Helm” (아이템 12)"
     },
     "cs-24": {
         "name": "무작위 “돌” 아이템 1개 (아이템 94-100)"
     },
     "cs-25": {
-        "name": "“소모시키는 정강이받이” (아이템 15)"
+        "name": "“Draining Greaves” (아이템 15)"
     },
     "cs-26": {
-        "name": "“철제 올가미” (아이템 30)"
+        "name": "“Iron Snare” (아이템 30)"
     },
     "cs-27": {
-        "name": "“누빔 판금 갑옷” (아이템 23)"
+        "name": "“Woven Plate Armor” (아이템 23)"
     },
     "cs-28": {
-        "name": "“사슬 철퇴” (아이템 14)"
+        "name": "“Chain Mace” (아이템 14)"
     },
     "cs-29": {
-        "name": "“누빔 판금 갑옷” (아이템 23)"
+        "name": "“Woven Plate Armor” (아이템 23)"
     },
     "cs-30": {
-        "name": "“뼈를 덮은 어깨걸이” (아이템 25)"
+        "name": "“Boneclad Shawl” (아이템 25)"
     },
     "cs-31": {
-        "name": "“드레이크의 피” (아이템 59)"
+        "name": "“Drakes Blood” (아이템 59)"
     },
     "cs-32": {
-        "name": "“호기심을 끄는 목걸이” (아이템 20)"
+        "name": "“Curious Pendant” (아이템 20)"
     },
     "cs-33": {
         "name": "금화 25개, {POISON} 획득"
@@ -438,28 +438,28 @@ export default {
         "name": "위험지형 피해를 입고 {INVISIBLE} 획득"
     },
     "cs-35": {
-        "name": "“저주받은 피의 칼” (아이템 36)"
+        "name": "“Curseblood Blade” (아이템 36)"
     },
     "cs-36": {
         "name": "경험치 10, {INVSIBLE} 획득"
     },
     "cs-37": {
-        "name": "“소모시키는 정강이받이” (아이템 15)"
+        "name": "“Draining Greaves” (아이템 15)"
     },
     "cs-38": {
-        "name": "“전쟁 곡괭이” (아이템 13)"
+        "name": "“War Pick” (아이템 13)"
     },
     "cs-39": {
-        "name": "“적외선 고글” (아이템 21)"
+        "name": "“Infrared Goggles” (아이템 21)"
     },
     "cs-40": {
         "name": "무작위 “돌” 아이템 1개 (아이템 94-100)"
     },
     "cs-41": {
-        "name": "“잿강철 건틀릿” (아이템 61)"
+        "name": "“Ashsteel Gauntlets” (아이템 61)"
     },
     "cs-42": {
-        "name": "“전쟁 곡괭이” (아이템 13)"
+        "name": "“War Pick” (아이템 13)"
     },
     "cs-43": {
         "name": "경험치 10 및 소모된 모든 아이템 재충전"
@@ -471,7 +471,7 @@ export default {
         "name": "무작위 “돌” 아이템 1개 (아이템 94-100)"
     },
     "cs-46": {
-        "name": "“독사 이빨 단검” 설계도 (아이템 54)"
+        "name": "“Vipertooth Dagger” 설계도 (아이템 54)"
     },
     "cs-47": {
         "name": "금화 15개"
@@ -483,7 +483,7 @@ export default {
         "name": "“마그마 장화” (아이템 gh-99)"
     },
     "cs-50": {
-        "name": "“병에 담긴 불빛” (아이템 18)"
+        "name": "“Bottled Moonlight” (아이템 18)"
     },
     "fh-1": {
         "name": "노획 카드 4장 획득."
@@ -810,7 +810,7 @@ export default {
         "name": "금화 15개 획득"
     },
     "gh2-24": {
-        "name": "“수호의 막대” (아이템 104) 획득"
+        "name": "“Warding Rod” (아이템 104) 획득"
     },
     "gh2-25": {
         "name": "✔ 1 획득"
@@ -825,7 +825,7 @@ export default {
         "name": "✔ 2 획득"
     },
     "gh2-29": {
-        "name": "“충전된 장화” (아이템 100) 획득"
+        "name": "“Charged Boots” (아이템 100) 획득"
     },
     "gh2-30": {
         "name": "경험치 20 획득"
@@ -843,7 +843,7 @@ export default {
         "name": "“드레이크 비늘 투구” (아이템 121) 획득"
     },
     "gh2-35": {
-        "name": "“이송의 막대” (아이템 115) 획득"
+        "name": "“Rod of Transference” (아이템 115) 획득"
     },
     "gh2-36": {
         "name": "무작위 아이템 설계도"
@@ -915,13 +915,13 @@ export default {
         "name": "금화 20개 획득"
     },
     "gh2-59": {
-        "name": "“정의로운 자의 방패” (아이템 148) 획득"
+        "name": "“Shield of the Righteous” (아이템 148) 획득"
     },
     "gh2-60": {
         "name": "피해 5점을 입음"
     },
     "gh2-61": {
-        "name": "“버티기의 장화” (아이템 143) 획득"
+        "name": "“Boots of Bracing” (아이템 143) 획득"
     },
     "gh2-62": {
         "name": "금화 20개 획득"
@@ -933,7 +933,7 @@ export default {
         "name": "무작위 아이템 설계도"
     },
     "gh2-65": {
-        "name": "“레인저의 두건” (아이템 103) 획득"
+        "name": "“Ranger's Hood” (아이템 103) 획득"
     },
     "gh2-66": {
         "name": "{POISON}과 {STRENGTHEN} 획득 및 소실된 카드 2장 되찾기"

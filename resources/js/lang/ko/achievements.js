@@ -258,37 +258,37 @@ export default {
         "name": "파괴 공작원"
     },
     "cs-PCSOD": {
-        "name": "파괴된 점액"
+        "name": "Ooze Destroyed"
     },
     "cs-PCSFL": {
-        "name": "떨어진 용암"
+        "name": "Fallen Lava"
     },
     "cs-PCSFM": {
-        "name": "돈을 쫓아라"
+        "name": "Follow the Money"
     },
     "cs-PCSFW": {
-        "name": "얼어붙은 전사"
+        "name": "Frozen Warrior"
     },
     "cs-PCSOA": {
-        "name": "떡갈나무 동맹"
+        "name": "Oak Alliance"
     },
     "cs-PCSIA": {
-        "name": "이녹스 동맹"
+        "name": "Inox Alliance"
     },
     "cs-PCSGB": {
-        "name": "시궁아귀의 현상금"
+        "name": "Guttermaw's Bounty"
     },
     "cs-PCSFR": {
-        "name": "페이그린의 부탁"
+        "name": "Feirgrin's Request"
     },
     "cs-PCSPL": {
-        "name": "잃어버린 물약"
+        "name": "A Potion Lost"
     },
     "cs-PCSTM": {
-        "name": "돈을 챙겨라"
+        "name": "Take the Money"
     },
     "cs-PCSAM": {
-        "name": "성공한 용병"
+        "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
         "name": "얼음속삭이의 친구"
@@ -381,10 +381,10 @@ export default {
         "name": "눈의 심장"
     },
     "gh2-G2ATD": {
-        "name": "장치 활성화"
+        "name": "Activating the Device"
     },
     "gh2-G2AUP": {
-        "name": "불안한 평화"
+        "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
         "name": "고대 기술"
@@ -399,7 +399,7 @@ export default {
         "name": "도시 통치: 군부"
     },
     "gh2-G2EM": {
-        "name": "원소 숙달"
+        "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
         "name": "부패 종식"
@@ -408,22 +408,22 @@ export default {
         "name": "암영의 최후"
     },
     "gh2-G2HW": {
-        "name": "신성한 물"
+        "name": "Hallowed Waters"
     },
     "gh2-G2ITD": {
-        "name": "심연 속으로"
+        "name": "Into the Depths"
     },
     "gh2-G2PTB": {
-        "name": "유혈을 통한 평화"
+        "name": "Peace Through Bloodshed"
     },
     "gh2-G2TCE": {
-        "name": "꺼진 촛불"
+        "name": "The Candle Extinguished"
     },
     "gh2-G2TCK": {
-        "name": "지킨 촛불"
+        "name": "The Candle Kept"
     },
     "gh2-G2TDR": {
-        "name": "물러나는 어둠"
+        "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
         "name": "드레이크를 돕다"
@@ -441,27 +441,27 @@ export default {
         "name": "목소리를 잠재우다"
     },
     "gh2-P2R16": {
-        "name": "파벌 명성 16"
+        "name": "Faction Reputation 16"
     },
     "gh2-P2R20": {
-        "name": "파벌 명성 20"
+        "name": "Faction Reputation 20"
     },
     "gh2-P2RD6": {
-        "name": "악마 명성 6"
+        "name": "Demon Reputation 6"
     },
     "gh2-P2RD12": {
-        "name": "악마 명성 12"
+        "name": "Demon Reputation 12"
     },
     "gh2-P2RME6": {
-        "name": "상인 명성 6"
+        "name": "Merchant Reputation 6"
     },
     "gh2-P2RME12": {
-        "name": "상인 명성 12"
+        "name": "Merchant Reputation 12"
     },
     "gh2-P2RMI6": {
-        "name": "군부 명성 6"
+        "name": "Military Reputation 6"
     },
     "gh2-P2RMI12": {
-        "name": "군부 명성 12"
+        "name": "Military Reputation 12"
     }
 }

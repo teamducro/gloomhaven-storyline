@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "Védj és szolgálj",
+        "name": "Protect and Serve",
         "progress": [
             "Ölj meg tíz inoxot.",
             "Fejezd be: {SCENARIO 33}."
         ]
     },
     "cs-331": {
-        "name": "Fegyverspecialista",
+        "name": "Weapons Specialist",
         "progress": [
             "Használj el tizenöt {ONE-HAND} vagy {TWO-HANDS} felszerelést"
         ]
     },
     "cs-332": {
-        "name": "Kísérletezés",
+        "name": "Experimentation",
         "progress": [
             "Játssz ki 30 lapot az elvesztett {LOST} akciójukra."
         ]
     },
     "cs-333": {
-        "name": "Izgalomvadász",
+        "name": "Thrill Seeker",
         "progress": [
             "Tárj fel egy helyiség-pályaelemet ajtónyitással húszszor."
         ]
     },
     "cs-334": {
-        "name": "Csapdaállító",
+        "name": "Trap Setter",
         "progress": [
             "Hatástalanítsd a csapdát, vagy kényszerítsd egy ellenséget a csapdára lépésre a saját körödben tizenötször."
         ]
     },
     "cs-335": {
-        "name": "Bandita-irtó",
+        "name": "Bandit Banisher",
         "progress": [
             "Ölj meg tíz őrt vagy íjászt.",
             "Fejezd be: {SCENARIO 35}."
         ]
     },
     "cs-336": {
-        "name": "Lények a fényben",
+        "name": "Creatures in the light",
         "progress": [
             "Ölj meg húsz iszapot, erdei impet vagy fekete impet."
         ]
     },
     "cs-337": {
-        "name": "Tapasztalt vezető",
+        "name": "Experienced leader",
         "progress": [
             "Teljesíts tizenkét küldetést legalább 12 tapasztalati ponttal."
         ]
     },
     "cs-338": {
-        "name": "Adrenaliniktatás",
+        "name": "Adrenaline Spike",
         "progress": [
             "Ölj meg egy ellenséget, és zsákmányold ki a pénzjelölőjét ugyanabban a körben tizenötször."
         ]
     },
     "cs-339": {
-        "name": "Kölcsönös támogatás",
+        "name": "Mutual Support",
         "progress": [
             "Ölj meg 30 ellenséget, amely a szövetségeseid valamelyikével szomszédos."
         ]
     },
     "cs-340": {
-        "name": "Légy áldott",
+        "name": "Thy be Blessed",
         "progress": [
             "Húzz egy {BLESS} lapot egy támadás során tizenkétszer."
         ]
     },
     "cs-341": {
-        "name": "Lelki Kain",
+        "name": "Spiritual Cains",
         "progress": [
             "Költs 200 aranyat fejlesztésekre."
         ]
     },
     "cs-342": {
-        "name": "A gyötrelem útja",
+        "name": "The Path of Agony",
         "progress": [
             "Élj át 13 alkalmat, amikor egy szövetséges vagy ellenség a saját körében meghal vagy kimerül."
         ]
     },
     "cs-343": {
-        "name": "Kegyetlen uralom",
+        "name": "Cruel Dominion",
         "progress": [
             "Teljesíts 10 küldetést, amelyek során megölsz egy negatív állapotú ellenséget."
         ]
     },
     "cs-344": {
-        "name": "Természetes kiválasztódás",
+        "name": "Natural Selection",
         "progress": [
             "Hozz létre {FIRE} elemet kétszer.",
             "Hozz létre {ICE} elemet kétszer.",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "Ragadozó és préda",
+        "name": "Predator and Prey",
         "progress": [
             "Ölj meg két vagy több ellenséget ugyanabban a körben tizenötször."
         ]
     },
     "cs-346": {
-        "name": "A vipera kettéválik",
+        "name": "An Adder Divides",
         "progress": [
             "Foglalj el nehéz terepet 6 különböző küldetésben.",
             "Fejezd be: {SCENARIO 39}."
         ]
     },
     "cs-347": {
-        "name": "Terepkutatás",
+        "name": "Field Research",
         "progress": [
             "Mérgezz meg {POISON} húsz különböző típusú szörnyet."
         ]
     },
     "cs-348": {
-        "name": "A megidéző keze",
+        "name": "Conjurers Hand",
         "progress": [
             "Ölj meg tíz idézett szörnyet."
         ]
     },
     "cs-349": {
-        "name": "Nincs nyugalom a gonosznak",
+        "name": "No Rest for the Wicked",
         "progress": [
             "Teljesíts tíz küldetést hosszú pihenés nélkül."
         ]
     },
     "cs-350": {
-        "name": "Az egészség az első",
+        "name": "Health First",
         "progress": [
             "Teljesíts hét küldetést úgy, hogy teljes életerővel fejezed be."
         ]
     },
     "cs-351": {
-        "name": "Határtalan keresés",
+        "name": "Limitless Searching",
         "progress": [
             "Zsákmányolj ki 30 pénzjelölőt."
         ]
     },
     "cs-aa-001": {
-        "name": "Bármi áron",
+        "name": "At All Costs",
         "progress": [
             "Élj át 8 küldetést, amelyben a sebzést egy lap elvesztésével hárítod el a szokásos módon, miközben egy szövetségesed mellett állsz.",
             "Fejezd be: {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
-        "name": "A kudarc súlya",
+        "name": "The Weight of failure",
         "progress": [
             "Teljesíts 8 küldetést kimerülés nélkül, legfeljebb 2 életerővel.",
             "Fejezd be: {SCENARIO AA2}"
         ]
     },
     "cs-qa-001": {
-        "name": "Találékony feltaláló",
+        "name": "Ingenious Inventor",
         "progress": [
-            "Azonnal szerezd meg: “Teljesítménymodulátor” (Felszerelés QA-01)",
-            "Ölj meg 12 ellenséget a “Teljesítménymodulátor” (Felszerelés QA-01) segítségével",
+            "Azonnal szerezd meg: “Power Modulator” (Felszerelés QA-01)",
+            "Ölj meg 12 ellenséget a “Power Modulator” (Felszerelés QA-01) segítségével",
             "Fejezd be: {SCENARIO QA1}"
         ]
     },
     "cs-qa-002": {
-        "name": "Roncsbúvár",
+        "name": "Scrap Diver",
         "progress": [
             "Zsákmányolj ki két vagy több pénzjelölőt egyetlen akcióval nyolcszor.",
             "Fosszd ki két kincsmezőt.",
@@ -337,15 +337,15 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "Kegyetlen végrehajtó",
+        "name": "Brutal Enforcer",
         "progress": [
-            "Szerezd meg a “Fogazott él” tervrajzot (Felszerelés RM-01).",
+            "Szerezd meg a “Serrated Edge” tervrajzot (Felszerelés RM-01).",
             "Alkalmazz {WOUND} vagy {RUPTURE} állapotot harminc ellenségre.",
             "Fejezd be: {SCENARIO RM1}."
         ]
     },
     "cs-rm-002": {
-        "name": "Csúcsragadozó",
+        "name": "Apex Predator",
         "progress": [
             "Élj át húsz kört, amelyben egy {CONSUMED} jelzésű akció végrehajtása közben vagy után egy ellenség meghal.",
             "Fejezd be: {SCENARIO RM3}."
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "Politikai intrika",
+        "name": "Political Intrigue",
         "progress": [
             "Add a 61-es városi eseményt a városi eseménypaklihoz.",
             "Szerezz 30 szavazatot: három szavazatot, valahányszor hírnevet szerzel, és egy szavazatot minden frakcióhírnév-felszerelésért, amelyet egy teljesített küldetésbe vittél.",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Vendégszeretet a fogadóban",
+        "name": "Inn to Hospitality",
         "progress": [
             "Zsákmányolj ki 60 pénzjelölőt.",
             "Olvasd el: {SECTION} 125.4."
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "Az ember bukása",
         "progress": [
-            "Szerezd meg az “Aesther messzelátó” (Felszerelés 149) felszerelést. Nem adható el.",
-            "Használd az “Aesther messzelátó” (Felszerelés 149) felszerelést tízszer.",
+            "Szerezd meg az “Aesther Spyglass” (Felszerelés 149) felszerelést. Nem adható el.",
+            "Használd az “Aesther Spyglass” (Felszerelés 149) felszerelést tízszer.",
             "Olvasd el: {SECTION} 115.2.",
             "Vidd végkifejletig: {SCENARIO 63}."
         ]
@@ -639,7 +639,7 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "Mesélnivaló",
+        "name": "A Tale to Tell",
         "progress": [
             "Zsákmányolj ki egy kincsmezőt, vagy légy tanúja, hogy a csapatod kifosztja, tíz küldetésben.",
             "Olvasd el: {SECTION} 12.3."
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "Nevelőszülő",
+        "name": "Adoptive Parent",
         "progress": [
             "Zsákmányolj ki három, ellenségek által elejtett pénzjelölőt tíz küldetésben.",
             "Olvasd el: {SECTION} 122.5.",
@@ -683,8 +683,8 @@ export default {
         "name": "A Fény eszköze",
         "progress": [
             "Azonnal old fel: {SCENARIO 65}.",
-            "Találd meg a “Igaz pajzsa” (Felszerelés 148) felszerelést.",
-            "Használd a “Igaz pajzsa” (Felszerelés 148) felszerelést tíz, legalább 4 sebzésű támadás hárítására.",
+            "Találd meg a “Shield of the Righteous” (Felszerelés 148) felszerelést.",
+            "Használd a “Shield of the Righteous” (Felszerelés 148) felszerelést tíz, legalább 4 sebzésű támadás hárítására.",
             "Olvasd el: {SECTION} 82.1."
         ]
     },
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "Menekülés a Sin-Ra elől",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "Add a 69-es és 70-es városi eseményt a városi eseménypaklihoz. Szerezd meg a “Fekete kártya” (Felszerelés 113) felszerelést. Nem adható el.",
             "Teljesíts hat mellékküldetést (56 feletti küldetésszám).",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "Élet a szakadék szélén",
+        "name": "Living on the Edge",
         "progress": [
-            "Szerezd meg az “Kísérleti páncél” (Felszerelés 150) felszerelést.",
+            "Szerezd meg az “Experimental Armor” (Felszerelés 150) felszerelést.",
             "Használd arra, hogy 20 ellenség sebzést szenvedjen.",
             "Olvasd el: {SECTION} 47.4."
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Harcművészeti tanulmány",
+        "name": "Martial Study",
         "progress": [
             "Használj nyolc különböző {ONE-HAND} vagy {TWO-HANDS} felszerelést küldetések során.",
             "Olvasd el: {SECTION} 67.2."
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "A jártasság hajszolása",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "Szerezz 120 tapasztalati pontot képességlapokból.",
             "Olvasd el: {SECTION} 17.2."

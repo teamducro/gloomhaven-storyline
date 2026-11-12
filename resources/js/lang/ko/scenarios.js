@@ -2416,29 +2416,29 @@ export default {
         ]
     },
     "cs-1": {
-        "name": "어둠의 호수"
+        "name": "The Dark Lake"
     },
     "cs-2": {
-        "name": "지하 수로"
+        "name": "Underground Channels"
     },
     "cs-3": {
-        "name": "침수된 동굴",
+        "name": "Flooded Cavern",
         "rewards": [
             "각자 경험치 10",
             "번영도 +1"
         ]
     },
     "cs-4": {
-        "name": "감염된 전사",
+        "name": "Infected Warriors",
         "rewards": [
             "각 캐릭터는 무작위 “보주” 아이템(아이템 1-10) 1개를 획득"
         ]
     },
     "cs-5": {
-        "name": "점액의 피"
+        "name": "Blood of the Oozes"
     },
     "cs-6": {
-        "name": "독이 든 물",
+        "name": "Poisoned Water",
         "rewards": [
             "명성 +2",
             "번영도 +1",
@@ -2446,84 +2446,84 @@ export default {
         ]
     },
     "cs-7": {
-        "name": "황금알",
+        "name": "Golden Eggs",
         "rewards": [
             "공동으로 금화 30개 획득"
         ]
     },
     "cs-8": {
-        "name": "부서진 요새",
+        "name": "Shattered Fortress",
         "rewards": [
-            "“호기심을 끄는 목걸이” (아이템 20)"
+            "“Curious Pendant” (아이템 20)"
         ]
     },
     "cs-9": {
-        "name": "구조 임무",
+        "name": "Rescue Mission",
         "rewards": [
             "각자 금화 10개",
-            "“스모그 방출기” (아이템 62)"
+            "“Smog Emitter” (아이템 62)"
         ]
     },
     "cs-10": {
-        "name": "괴물의 소굴",
+        "name": "Den of Monstrosity",
         "rewards": [
             "“소형 치료 물약” (아이템 gh-12)",
             "“소형 마나 물약” (아이템 gh-20)"
         ]
     },
     "cs-11": {
-        "name": "풍부한 항해"
+        "name": "Voyage Abound"
     },
     "cs-12": {
-        "name": "근원을 밝히다"
+        "name": "Uncovering the Source"
     },
     "cs-13": {
-        "name": "시체 동굴",
+        "name": "Corpse Cavern",
         "rewards": [
             "번영도 +1",
             "각 캐릭터는 다음 중 하나를 획득: “대형 활력 물약” (아이템 gh-34), “대형 힘 물약” (아이템 gh-41), “대형 마나 물약” (아이템 gh-48)\n상점에 이 아이템이 없다면 대신 금화 20개 획득"
         ]
     },
     "cs-14": {
-        "name": "광신도 동굴",
+        "name": "Cultist Cave",
         "rewards": [
             "각자 경험치 15"
         ]
     },
     "cs-15": {
-        "name": "짐승의 매복",
+        "name": "Ambush of Beasts",
         "rewards": [
             "각자 금화 15개",
             "각 캐릭터는 무작위 “보주” 아이템(아이템 1-10) 1개를 획득"
         ]
     },
     "cs-16": {
-        "name": "프리토 크리산타",
+        "name": "Preto Krisanta",
         "rewards": [
             "각자 금화 10개",
             "캐릭터 한 명이 레벨 1 또는 X 카드 중 아무 카드에 {+1_WHITE} 강화를 1개 획득"
         ]
     },
     "cs-17": {
-        "name": "오브 추출",
+        "name": "Orb Extraction",
         "rewards": [
             "번영도 +2"
         ]
     },
     "cs-18": {
-        "name": "잡아채기",
+        "name": "Grab and Go",
         "rewards": [
             "각자 금화 100개. 이 금화는 즉시 강화에 사용해야 합니다"
         ]
     },
     "cs-19": {
-        "name": "원소실험",
+        "name": "Elemental Experiments",
         "rewards": [
             "“대형 마나 물약” (아이템 gh-48)"
         ]
     },
     "cs-20": {
-        "name": "한 밤의 의식",
+        "name": "Midnight Ritual",
         "rewards": [
             "명성 +1",
             "번영도 +1",
@@ -2531,61 +2531,61 @@ export default {
         ]
     },
     "cs-21": {
-        "name": "불타는 죽음",
+        "name": "A Fiery Death",
         "rewards": [
             "“마그마 장화” (아이템 gh-99)"
         ]
     },
     "cs-22": {
-        "name": "임프 사원",
+        "name": "Imp Temple",
         "rewards": [
             "각 캐릭터는 노획한 돈 토큰 1개마다 금화 +2와 경험치 2를 획득"
         ]
     },
     "cs-23": {
-        "name": "고드름 방",
+        "name": "Icicle Chambers",
         "rewards": [
             "각자 경험치 15"
         ]
     },
     "cs-24": {
-        "name": "기분 나쁜 조그만 동굴",
+        "name": "Eerie Grotto",
         "rewards": [
             "각 캐릭터는 무작위 “보주” 아이템(아이템 1-10) 1개를 획득"
         ]
     },
     "cs-25": {
-        "name": "밝은 불꽃을 바라보다!",
+        "name": "Brightspark, Behold!",
         "rewards": [
             "명성 +1",
             "여로 이벤트 57 카드를 덱에 추가"
         ]
     },
     "cs-26": {
-        "name": "기분 나쁜 조그만 동굴",
+        "name": "Thermal Stone Peak",
         "rewards": [
             "각자 경험치 20",
             "각자 ✔ 1"
         ]
     },
     "cs-27": {
-        "name": "동상 동굴",
+        "name": "Frostbite Cavern",
         "rewards": [
             "각자 금화 10개",
-            "“어지러운 팅크제” (아이템 58)"
+            "“Dizzying Tincture” (아이템 58)"
         ]
     },
     "cs-28": {
-        "name": "뼈의 샘",
+        "name": "Fountain of Bones",
         "rewards": [
             "각자 ✔ 1"
         ]
     },
     "cs-29": {
-        "name": "묘실"
+        "name": "Burial Chamber"
     },
     "cs-30": {
-        "name": "언데드 공포",
+        "name": "Undead Terrors",
         "rewards": [
             [
                 "공동으로 금화 70개"
@@ -2596,29 +2596,29 @@ export default {
         ]
     },
     "cs-31": {
-        "name": "영원한 균열",
+        "name": "Eternal Portals",
         "rewards": [
             "각자 ✔ 1"
         ]
     },
     "cs-32": {
-        "name": "과거와의 대면",
+        "name": "Confronting the Past",
         "rewards": [
             "{PAGE} 75를 읽음 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">엔드게임</a>)",
             "비밀번호 “Water Hydra”"
         ]
     },
     "cs-33": {
-        "name": "공성탑",
-        "requirements": "“보호와 봉사” 개인 퀘스트",
+        "name": "Siege Tower",
+        "requirements": "“Protect and Serve” 개인 퀘스트",
         "rewards": [
-            "“타오르는 장화” (아이템 90)",
+            "“Blazing Boots” (아이템 90)",
             "명성 +1"
         ]
     },
     "cs-34": {
-        "name": "오크 구조",
-        "requirements": "“보호와 봉사” 개인 퀘스트",
+        "name": "Great Oak Escape",
+        "requirements": "“Protect and Serve” 개인 퀘스트",
         "rewards": [
             "봉투 {BM} 해금",
             "명성 +2",
@@ -2626,75 +2626,75 @@ export default {
         ]
     },
     "cs-35": {
-        "name": "교도소 폭동",
-        "requirements": "“산적 추방자” 개인 퀘스트"
+        "name": "Prison Riot",
+        "requirements": "“Bandit Banisher” 개인 퀘스트"
     },
     "cs-36": {
-        "name": "사냥꾼 현상금",
-        "requirements": "“산적 추방자” 개인 퀘스트",
+        "name": "Hunters Bounty",
+        "requirements": "“Bandit Banisher” 개인 퀘스트",
         "rewards": [
             "봉투 {CG} 해금",
             "각자 금화 10개"
         ]
     },
     "cs-37": {
-        "name": "불타는 돌",
-        "requirements": "“자연 선택” 개인 퀘스트",
+        "name": "Burning Stones",
+        "requirements": "“Natural Selection” 개인 퀘스트",
         "rewards": [
             "무작위 “돌” 아이템(아이템 94-100) 1개 획득"
         ]
     },
     "cs-38": {
-        "name": "혼란의 제단",
-        "requirements": "“자연 선택” 개인 퀘스트",
+        "name": "Alters of Confusion",
+        "requirements": "“Natural Selection” 개인 퀘스트",
         "rewards": [
             "봉투 {LU} 해금"
         ]
     },
     "cs-39": {
-        "name": "썩어가는 수렁",
-        "requirements": "“독사가 갈라서다” 개인 퀘스트",
+        "name": "Festering Mire",
+        "requirements": "“An Adder Divides” 개인 퀘스트",
         "rewards": [
             "각자 경험치 10",
             "도시 이벤트 덱 맨 위 5장을 떼어 내어 도시 이벤트 57과 함께 섞습니다. 나머지 도시 이벤트 카드는 도시 이벤트 57을 처리할 때까지 따로 둡니다. 이 기간에 도시 이벤트 덱에 추가해야 하는 카드는 도시 이벤트 57을 처리하고 나머지 카드를 원래 덱과 합친 후에 추가합니다.",
-            "“독사가 갈라서다” 퀘스트는 아직 완료되지 않음"
+            "“An Adder Divides” 퀘스트는 아직 완료되지 않음"
         ]
     },
     "cs-40": {
-        "name": "밀수업자 은신처",
+        "name": "Smugglers Hideout",
         "rewards": [
             "공동으로 금화 50개 획득"
         ]
     },
     "cs-41": {
-        "name": "공허의 저주",
+        "name": "Curse of the Void",
         "rewards": [
             "공동으로 금화 50개 획득"
         ]
     },
     "cs-42": {
-        "name": "부자연스러운 짐승",
+        "name": "Unnatural Beasts",
         "rewards": [
             "명성 +1",
             "각자 경험치 10"
         ]
     },
     "cs-43": {
-        "name": "저택 미로",
+        "name": "Mansion Maze",
         "rewards": [
             "번영도 +1",
             "각 캐릭터는 무작위 “보주” 아이템(아이템 1-10) 1개를 획득"
         ]
     },
     "cs-44": {
-        "name": "유령 영지",
+        "name": "Haunted Manor",
         "rewards": [
             "각자 금화 20개",
             "각 캐릭터는 무작위 “보주” 아이템(아이템 1-10) 1개를 획득"
         ]
     },
     "cs-45": {
-        "name": "늪을 지켜라",
+        "name": "Defend the Swamp",
         "rewards": [
             "명성 +1",
             "번영도 +1",
@@ -2702,69 +2702,69 @@ export default {
         ]
     },
     "cs-46": {
-        "name": "버믈링 정원",
+        "name": "Vermling Gardens",
         "rewards": [
             "명성 +2",
             "각자 경험치 15"
         ]
     },
     "cs-47": {
-        "name": "독사 습지",
+        "name": "Viper Marsh",
         "rewards": [
-            "“유령 독사의 독” (아이템 55)",
+            "“Ghost Viper Venom” (아이템 55)",
             "번영도 +1",
             "각자 금화 10개"
         ]
     },
     "cs-48": {
-        "name": "산불",
+        "name": "Forest Fire",
         "rewards": [
             "각자 경험치 10",
             "각자 금화 20개"
         ]
     },
     "cs-49": {
-        "name": "오크 침공 A",
+        "name": "Oak Invasion A",
         "rewards": [
             "다음에 글룸헤이븐을 방문할 때, 성지에 기부하는 데 금화가 들지 않음(금화 0개)"
         ]
     },
     "cs-50": {
-        "name": "오크 침공 B",
+        "name": "Oak Invasion B",
         "rewards": [
             "각자 경험치 10",
             "각자 ✔ 1"
         ]
     },
     "cs-51": {
-        "name": "설치류 창고",
+        "name": "Rodent Warehouse",
         "rewards": [
             "명성 +1",
             "각자 금화 30개"
         ]
     },
     "cs-52": {
-        "name": "소원 우물",
+        "name": "Wishing Well",
         "rewards": [
-            "“드레이크 비늘 방패” (아이템 37)"
+            "“Drakescale Shield” (아이템 37)"
         ]
     },
     "cs-53": {
-        "name": "흐름의 동굴",
+        "name": "Cave of Currents",
         "rewards": [
             "“해류의 구체” (아이템 83)",
             "각자 금화 5개"
         ]
     },
     "cs-54": {
-        "name": "공포의 소굴",
+        "name": "Lair of Horrors",
         "rewards": [
             "명성 +1",
             "각자 금화 30개"
         ]
     },
     "cs-55": {
-        "name": "지하묘지 약탈자",
+        "name": "Catacomb Plunder",
         "rewards": [
             "번영도 +1",
             "명성 +1",
@@ -2772,162 +2772,162 @@ export default {
         ]
     },
     "cs-56": {
-        "name": "기계 해체",
+        "name": "Disarm the Machine",
         "rewards": [
-            "“사슬 대포” (아이템 45)"
+            "“Chain Cannon” (아이템 45)"
         ]
     },
     "cs-57": {
-        "name": "원소 변환기",
+        "name": "Elemental Converter",
         "rewards": [
             "“시험관” (아이템 48)"
         ]
     },
     "cs-58": {
-        "name": "교도소 폐쇄",
+        "name": "Penitentiary Lockdown",
         "rewards": [
-            "다음 중 하나는 아이템으로, 나머지 하나는 아이템 도안으로 획득: “집게발 함정” (아이템 34), “집게 함정” (아이템 56)"
+            "다음 중 하나는 아이템으로, 나머지 하나는 아이템 도안으로 획득: “Claw Trap” (아이템 34), “Clamp Trap” (아이템 56)"
         ]
     },
     "cs-59": {
-        "name": "숲 침략자",
+        "name": "Forest Invaders",
         "rewards": [
-            "“자연의 팔찌” (아이템 47)"
+            "“Nature Armlets” (아이템 47)"
         ]
     },
     "cs-60": {
-        "name": "불과 화염을 뚫고",
+        "name": "Through the Fire and Flames",
         "rewards": [
-            "“화염 갑옷” (아이템 51)"
+            "“Flaming Armor” (아이템 51)"
         ]
     },
     "cs-61": {
-        "name": "고대 보전",
+        "name": "Archaic Preservation",
         "rewards": [
-            "“진정의 로브” (아이템 42)"
+            "“Robe of Soothing” (아이템 42)"
         ]
     },
     "cs-62": {
-        "name": "완전한 이행",
+        "name": "Hallow Redemption",
         "rewards": [
-            "“정화된 공허심장” (아이템 57)"
+            "“Cleansed Voidheart” (아이템 57)"
         ]
     },
     "cs-63": {
-        "name": "궁지에 몰린 독사",
+        "name": "A Cornered Viper",
         "rewards": [
-            "“야전 박격포” (아이템 53)"
+            "“Field Mortar” (아이템 53)"
         ]
     },
     "cs-64": {
-        "name": "빛나는 수정",
+        "name": "Glowing Crystals",
         "rewards": [
-            "“빛나는 갑각” (아이템 50)"
+            "“Luminous Carapace” (아이템 50)"
         ]
     },
     "cs-65": {
-        "name": "빛나는 수정",
+        "name": "Glowing Crystals",
         "rewards": [
-            "“영혼의 술” (아이템 41)"
+            "“Spirit Libation” (아이템 41)"
         ]
     },
     "cs-66": {
-        "name": "다른 세상의 낯선 이들",
+        "name": "Otherworldly Strangers",
         "rewards": [
-            "“달가죽 장화” (아이템 40)"
+            "“Moonleather Boots” (아이템 40)"
         ]
     },
     "cs-AA1": {
-        "name": "강철비단의 보물",
-        "requirements": "“어떤 대가를 치르더라도” 개인 퀘스트",
+        "name": "The Riches of the Steelsilk",
+        "requirements": "“At All Costs” 개인 퀘스트",
         "rewards": [
-            "“바위등뼈 방벽” (아이템 AA01)"
+            "“Rockspine Bulwark” (아이템 AA01)"
         ]
     },
     "cs-AA2": {
-        "name": "사악한 메아리",
-        "requirements": "“실패의 무게” 개인 퀘스트",
+        "name": "Malign Echoes",
+        "requirements": "“The Weight of failure” 개인 퀘스트",
         "rewards": [
-            "“유령잔상 꿀” (아이템 AA02)"
+            "“Ghostshimmer Honey” (아이템 AA02)"
         ]
     },
     "cs-AA3": {
-        "name": "벌집 수호자",
+        "name": "Hive Guardian",
         "rewards": [
-            "“강철비단 방적돌기” (아이템 AA03)"
+            "“Steelsilk Spinneret” (아이템 AA03)"
         ]
     },
     "cs-QA1": {
-        "name": "정점 시험",
-        "requirements": "“기발한 발명가” 개인 퀘스트 및 “전력 변조기” 아이템 장착",
+        "name": "Capstone Test",
+        "requirements": "“Ingenious Inventor” 개인 퀘스트 및 “Power Modulator” 아이템 장착",
         "rewards": [
             [
-                "“기발한 발명가” 퀘스트 완료",
+                "“Ingenious Inventor” 퀘스트 완료",
                 "봉투 {QA} 개봉",
-                "“증기 피스톤 망치” 도안 (아이템 QA02)",
-                "“거미 등반 장갑” 도안 (아이템 QA03)"
+                "“Steam Piston Hammer” 도안 (아이템 QA02)",
+                "“Spider Climb Gloves” 도안 (아이템 QA03)"
             ],
             [
-                "“기발한 발명가” 퀘스트 완료",
+                "“Ingenious Inventor” 퀘스트 완료",
                 "봉투 {QA} 개봉",
-                "다음 중 하나를 획득: “증기 피스톤 망치” (아이템 QA02) 또는 “거미 등반 장갑” (아이템 QA03)",
+                "다음 중 하나를 획득: “Steam Piston Hammer” (아이템 QA02) 또는 “Spider Climb Gloves” (아이템 QA03)",
                 "선택한 아이템의 사본 1개를 도시의 입수 가능한 공급처에 추가",
                 "나머지 아이템을 무작위 아이템 도안 덱에 추가"
             ],
             [
-                "“기발한 발명가” 퀘스트 완료",
+                "“Ingenious Inventor” 퀘스트 완료",
                 "봉투 {QA} 개봉",
-                "“증기 피스톤 망치” (아이템 QA02)",
-                "“거미 등반 장갑” (아이템 QA03)",
+                "“Steam Piston Hammer” (아이템 QA02)",
+                "“Spider Climb Gloves” (아이템 QA03)",
                 "사본을 도시의 입수 가능한 공급처에 추가"
             ]
         ]
     },
     "cs-QA2": {
-        "name": "노다지",
-        "requirements": "“고철 다이버” 개인 퀘스트",
+        "name": "Mother Lode",
+        "requirements": "“Scrap Diver” 개인 퀘스트",
         "rewards": [
-            "“고철 다이버” 퀘스트 완료",
+            "“Scrap Diver” 퀘스트 완료",
             "봉투 {QA} 개봉",
             "각자 금화 15xA개 (여기에서 A는 회수한 고대 고철의 수)",
             "도시 이벤트 QA-03 카드를 덱에 추가"
         ]
     },
     "cs-QA3": {
-        "name": "대표작",
+        "name": "Magnum Opus",
         "rewards": [
-            "“제작자들의 아우스쿠덱” (아이템 QA06)"
+            "“Auscudec of the Makers” (아이템 QA06)"
         ]
     },
     "cs-RM1": {
-        "name": "예의를 지켜라",
-        "requirements": "“잔혹한 집행자” 개인 퀘스트"
+        "name": "Mind your Manners",
+        "requirements": "“Brutal Enforcer” 개인 퀘스트"
     },
     "cs-RM2": {
-        "name": "가라앉는 우두머리",
-        "requirements": "“잔혹한 집행자” 개인 퀘스트",
+        "name": "Sinking Kingpin",
+        "requirements": "“Brutal Enforcer” 개인 퀘스트",
         "rewards": [
-            "“잔혹한 집행자” 퀘스트 완료",
+            "“Brutal Enforcer” 퀘스트 완료",
             "봉투 {RM} 개봉",
             "번영도 +1"
         ]
     },
     "cs-RM3": {
-        "name": "폐허가 된 식민지",
-        "requirements": "“최상위 포식자” 개인 퀘스트"
+        "name": "Ruined Colony",
+        "requirements": "“Apex Predator” 개인 퀘스트"
     },
     "cs-RM4": {
-        "name": "공포비늘 소굴",
-        "requirements": "“최상위 포식자” 개인 퀘스트",
+        "name": "Terrorscale Lair",
+        "requirements": "“Apex Predator” 개인 퀘스트",
         "rewards": [
-            "“최상위 포식자” 퀘스트 완료",
+            "“Apex Predator” 퀘스트 완료",
             "봉투 {RM} 개봉",
-            "“공포비늘 세이버” 도안 (아이템 RM03)",
-            "“공포비늘 크로스블레이드” 도안 (아이템 RM04)"
+            "“Terrorscale Saber” 도안 (아이템 RM03)",
+            "“Terrorscale Crossblades” 도안 (아이템 RM04)"
         ]
     },
     "cs-RM5": {
-        "name": "보이지 않는 고난",
+        "name": "Unseen Plight",
         "rewards": [
             [
                 "공동으로 금화 40개",
@@ -2940,54 +2940,54 @@ export default {
         ]
     },
     "cs-RM6": {
-        "name": "그림자 안식처의 몰락",
+        "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "“파멸의 의식” 도안 (아이템 RM05)",
+            "“Rite of Ruin” 도안 (아이템 RM05)",
             "8라운드 종료 시 버믈링이 3마리 이상 살아 있다면: 금화 5개",
             "8라운드 종료 시 버믈링이 5마리 이상 살아 있다면: ✓"
         ]
     },
     "cs-RM7": {
-        "name": "만족을 모르는 자",
+        "name": "Insatiable",
         "requirements": "파티에 파멸 아귀 없음",
         "rewards": [
             "각자 경험치 10",
-            "“야만적인 흉갑” 도안 (아이템 RM06)"
+            "“Savage Cuirass” 도안 (아이템 RM06)"
         ]
     },
     "mp-AN1": {
-        "name": "가혹한 거래",
+        "name": "A Harrowing Deal",
         "rewards": [
-            "“우정의 리본” (아이템 AN)"
+            "“Ribbon of Friendship” (아이템 AN)"
         ]
     },
     "mp-SA1": {
-        "name": "밤의 뿔피리",
+        "name": "Horns in the Night",
         "rewards": [
-            "“프로스트헤이븐의 문장” (아이템 SA)"
+            "“Crest of Frosthaven” (아이템 SA)"
         ]
     },
     "mp-CA1": {
-        "name": "부패로부터의 탈출",
+        "name": "Escape from Corruption",
         "rewards": [
-            "“예언의 대야 A” (아이템 CA A)",
-            "“예언의 대야 B” (아이템 CA B)"
+            "“Basin of Prophecy A” (아이템 CA A)",
+            "“Basin of Prophecy B” (아이템 CA B)"
         ]
     },
     "mp-HA1": {
-        "name": "엄청난 골칫거리",
+        "name": "Major Annoyance",
         "rewards": [
-            "“군말 없는 장화” (아이템 HA)"
+            "“No Nonsense Boots” (아이템 HA)"
         ]
     },
     "gh2-0": {
-        "name": "훈련 과정",
+        "name": "Training Course",
         "rewards": [
             "각자 금화 2개"
         ]
     },
     "gh2-1": {
-        "name": "산적 야영지",
+        "name": "Bandit Camp",
         "rewards": [
             "각자 금화 10개",
             "상인 길드 명성 +1",
@@ -3056,7 +3056,7 @@ export default {
         "rewards": []
     },
     "gh2-11": {
-        "name": "의식의 방",
+        "name": "Ritual Chamber",
         "rewards": [
             "각자 경험치 10",
             "각자 ✔ 1",
@@ -3122,7 +3122,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "군 전초기지",
+        "name": "Military Outpost",
         "rewards": [
             "각자 경험치 25",
             "악마 명성 +2",
@@ -3146,7 +3146,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "파멸포 해체",
+        "name": "Doomcannon Demolition",
         "rewards": [
             "각자 금화 15개",
             "악마 명성 -1",
@@ -3292,7 +3292,7 @@ export default {
         ]
     },
     "gh2-40": {
-        "name": "습지 매복",
+        "name": "Wetlands Ambush",
         "rewards": []
     },
     "gh2-41": {
@@ -3302,11 +3302,11 @@ export default {
         ]
     },
     "gh2-42": {
-        "name": "외딴 계곡",
+        "name": "Secluded Valley",
         "rewards": []
     },
     "gh2-43": {
-        "name": "비밀을 쫓아서",
+        "name": "Chasing Secrets",
         "rewards": [
             [
                 "번영도 +1",
@@ -3383,7 +3383,7 @@ export default {
         "rewards": []
     },
     "gh2-55": {
-        "name": "마지막 항전",
+        "name": "The Last Stand",
         "rewards": []
     },
     "gh2-56": {
@@ -3396,7 +3396,7 @@ export default {
     "gh2-57": {
         "name": "묘지 지하",
         "rewards": [
-            "“조른의 홀” (아이템 147) 획득"
+            "“Scepter of Xorn” (아이템 147) 획득"
         ]
     },
     "gh2-58": {
@@ -3404,7 +3404,7 @@ export default {
         "rewards": [
             "각자 경험치 10",
             "각자 ✔ 1",
-            "“조른의 홀” (아이템 147) 획득",
+            "“Scepter of Xorn” (아이템 147) 획득",
             "여로 이벤트 R-39 카드를 덱에 추가",
             "도시 이벤트 C-66 카드를 덱에 추가"
         ]
@@ -3425,7 +3425,7 @@ export default {
         ]
     },
     "gh2-61": {
-        "name": "위험한 숲",
+        "name": "Dangerous Grove",
         "rewards": []
     },
     "gh2-62": {
@@ -3442,20 +3442,20 @@ export default {
         ]
     },
     "gh2-64": {
-        "name": "혼돈의 뿌리",
+        "name": "Roots of Chaos",
         "rewards": [
             "개인 퀘스트 10 완료"
         ]
     },
     "gh2-65": {
-        "name": "영웅의 영묘",
+        "name": "Hero's Mausoleum",
         "rewards": [
             "각자 경험치 10",
             "각자 ✔ 1"
         ]
     },
     "gh2-66": {
-        "name": "곤경에 처한 친구",
+        "name": "A Friend in Need",
         "rewards": [
             "각자 금화 15개",
             "개인 퀘스트 11 완료"
@@ -3490,7 +3490,7 @@ export default {
         ]
     },
     "gh2-71": {
-        "name": "태엽 공장",
+        "name": "Clockwork Factory",
         "rewards": [
             "각자 경험치 10",
             "각자 ✔ 1"
@@ -3518,7 +3518,7 @@ export default {
     "gh2-75": {
         "name": "낙석 고개",
         "rewards": [
-            "“루비 부적” (아이템 152) 획득"
+            "“Ruby Talisman” (아이템 152) 획득"
         ]
     },
     "gh2-76": {
@@ -3538,7 +3538,7 @@ export default {
         ]
     },
     "gh2-79": {
-        "name": "잠복자 습격",
+        "name": "Lurker Assault",
         "rewards": [
             "번영도 +1"
         ]
@@ -3581,7 +3581,7 @@ export default {
         ]
     },
     "gh2-85": {
-        "name": "교차로 정거장",
+        "name": "Crossroads Station",
         "rewards": [
             "각자 ✔ 1",
             "번영도 +1"
@@ -3606,7 +3606,7 @@ export default {
         ]
     },
     "gh2-89": {
-        "name": "사회봉사",
+        "name": "Community Service",
         "rewards": [
             "“대형 치료 물약” (아이템 37) 2개 획득"
         ]
@@ -3620,10 +3620,10 @@ export default {
         "rewards": []
     },
     "gh2-92": {
-        "name": "시간 닻",
+        "name": "Chronal Anchor",
         "rewards": [
             "각자 경험치 10",
-            "“시간의 행렬” (아이템 144) 획득"
+            "“Temporal Matrix” (아이템 144) 획득"
         ]
     },
     "gh2-93": {
@@ -3633,14 +3633,14 @@ export default {
         ]
     },
     "gh2-94": {
-        "name": "물속 구조",
+        "name": "A Watery Rescue",
         "rewards": [
             "각자 경험치 10",
-            "“이계의 홀” (아이템 139) 획득"
+            "“Otherworldly Scepter” (아이템 139) 획득"
         ]
     },
     "gh2-95": {
-        "name": "화물선",
+        "name": "Cargo Ship",
         "rewards": []
     },
     "gh2-96": {
@@ -3650,35 +3650,35 @@ export default {
         ]
     },
     "gh2-97": {
-        "name": "버믈링 야영지",
+        "name": "Vermling Camp",
         "rewards": [
             "각자 경험치 5",
             "번영도 +1"
         ]
     },
     "gh2-98": {
-        "name": "변성 단층",
+        "name": "Metamorphic Fault",
         "rewards": [
             "각자 경험치 10",
             "“증오의 머리” (아이템 111) 획득"
         ]
     },
     "gh2-99": {
-        "name": "소결 제련소",
+        "name": "Sintering Forge",
         "rewards": [
-            "“새벽칼날” (아이템 117) 획득",
+            "“Dawnblade” (아이템 117) 획득",
             "여로 이벤트 R-33 카드를 덱에 추가"
         ]
     },
     "gh2-100": {
-        "name": "침묵이 내리다",
+        "name": "Silence Falls",
         "rewards": [
             "번영도 +1",
             "도시 이벤트 C-60 카드를 덱에 추가"
         ]
     },
     "gh2-101": {
-        "name": "글룸헤이븐 광장 A (악마 동맹)",
+        "name": "Gloomhaven Square A (Demon Allies)",
         "rewards": [
             "각자 경험치 30",
             "악마 명성 +2",
@@ -3692,21 +3692,21 @@ export default {
         ]
     },
     "gh2-102": {
-        "name": "글룸헤이븐 광장 A (군부 동맹)",
+        "name": "Gloomhaven Square A (Military Allies)",
         "rewards": []
     },
     "gh2-103": {
-        "name": "글룸헤이븐 성벽 A (상인 동맹)",
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
         "rewards": []
     },
     "gh2-104": {
-        "name": "글룸헤이븐 성벽 A (군부 동맹)",
+        "name": "Gloomhaven Battlements A (Military Allies)",
         "rewards": []
     },
     "gh2-201": {
-        "name": "어느 밤의 외출",
+        "name": "A Night Out",
         "rewards": [
-            "“갈고리 방패” (아이템 153) 획득"
+            "“Hooked Shield” (아이템 153) 획득"
         ]
     },
     "gh2-202": {
@@ -3716,13 +3716,13 @@ export default {
         ]
     },
     "gh2-203": {
-        "name": "타락한 약재상",
+        "name": "Corrupted Apothecary",
         "rewards": [
-            "“에테르 영약” (아이템 155) 획득"
+            "“Etheric Elixir” (아이템 155) 획득"
         ]
     },
     "gh2-204": {
-        "name": "재료 문제",
+        "name": "Material Concerns",
         "rewards": [
             "“침묵의 단검” (아이템 156) 획득"
         ]
@@ -3734,7 +3734,7 @@ export default {
         ]
     },
     "gh2-206": {
-        "name": "버믈링 해방",
+        "name": "Vermling Liberation",
         "rewards": [
             "“심령술 칼” (아이템 158) 획득"
         ]
@@ -3742,7 +3742,7 @@ export default {
     "gh2-207": {
         "name": "상단 호위",
         "rewards": [
-            "“신성의 휘장” (아이템 159) 획득"
+            "“Insignia of the Divine” (아이템 159) 획득"
         ]
     },
     "gh2-208": {
@@ -3760,7 +3760,7 @@ export default {
     "gh2-210": {
         "name": "어둠 수확",
         "rewards": [
-            "“밤의 애무” (아이템 162) 획득"
+            "“The Night's Caress” (아이템 162) 획득"
         ]
     },
     "gh2-211": {
@@ -3796,7 +3796,7 @@ export default {
     "gh2-216": {
         "name": "원소의 비밀",
         "rewards": [
-            "“원소 조끼” (아이템 168) 획득"
+            "“Elemental Vest” (아이템 168) 획득"
         ]
     },
     "gh2-217": {
@@ -3808,7 +3808,7 @@ export default {
     "gh2-218": {
         "name": "시간의 모래",
         "rewards": [
-            "“기어다니는 갑각” (아이템 170) 획득"
+            "“Crawling Carapace” (아이템 170) 획득"
         ]
     }
 }

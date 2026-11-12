@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "Protéger et Servir",
+        "name": "Protect and Serve",
         "progress": [
             "Éliminez dix Inox.",
             "Finissez {SCENARIO 33}."
         ]
     },
     "cs-331": {
-        "name": "Spécialiste des Armes",
+        "name": "Weapons Specialist",
         "progress": [
             "Consommez quinze objets {ONE-HAND} ou {TWO-HANDS}."
         ]
     },
     "cs-332": {
-        "name": "Expérimentation",
+        "name": "Experimentation",
         "progress": [
             "Jouez 30 cartes pour leur action perdue {LOST}."
         ]
     },
     "cs-333": {
-        "name": "Chasseur de Sensations",
+        "name": "Thrill Seeker",
         "progress": [
             "Révélez une tuile de salle en ouvrant une porte vingt fois."
         ]
     },
     "cs-334": {
-        "name": "Poseur de Pièges",
+        "name": "Trap Setter",
         "progress": [
             "Désamorcez un piège ou amenez un ennemi à le déclencher pendant votre tour quinze fois."
         ]
     },
     "cs-335": {
-        "name": "Fléau des Bandits",
+        "name": "Bandit Banisher",
         "progress": [
             "Éliminez dix Gardes ou Archers.",
             "Finissez {SCENARIO 35}."
         ]
     },
     "cs-336": {
-        "name": "Créatures de la Lumière",
+        "name": "Creatures in the light",
         "progress": [
             "Éliminez vingt Mucus, Diablotins des Forêts ou Diablotins Noirs."
         ]
     },
     "cs-337": {
-        "name": "Chef Expérimenté",
+        "name": "Experienced leader",
         "progress": [
             "Accomplissez douze scénarios en gagnant au moins 12 points d'expérience."
         ]
     },
     "cs-338": {
-        "name": "Poussée d'Adrénaline",
+        "name": "Adrenaline Spike",
         "progress": [
             "Éliminez un ennemi et ramassez son jeton d'argent dans le même round quinze fois."
         ]
     },
     "cs-339": {
-        "name": "Soutien Mutuel",
+        "name": "Mutual Support",
         "progress": [
             "Éliminez 30 ennemis adjacents à l'un de vos alliés."
         ]
     },
     "cs-340": {
-        "name": "Soyez Béni",
+        "name": "Thy be Blessed",
         "progress": [
             "Piochez une carte {BLESS} douze fois pendant une attaque."
         ]
     },
     "cs-341": {
-        "name": "Cain Spirituel",
+        "name": "Spiritual Cains",
         "progress": [
             "Dépensez 200 pièces d'or en améliorations."
         ]
     },
     "cs-342": {
-        "name": "La Voie de l'Agonie",
+        "name": "The Path of Agony",
         "progress": [
             "Voyez un allié ou un ennemi mourir ou être épuisé pendant son propre tour 13 fois."
         ]
     },
     "cs-343": {
-        "name": "Domination Cruelle",
+        "name": "Cruel Dominion",
         "progress": [
             "Accomplissez 10 scénarios durant lesquels vous éliminez un ennemi subissant une condition négative."
         ]
     },
     "cs-344": {
-        "name": "Sélection Naturelle",
+        "name": "Natural Selection",
         "progress": [
             "Générez {FIRE} deux fois.",
             "Générez {ICE} deux fois.",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "Prédateur et Proie",
+        "name": "Predator and Prey",
         "progress": [
             "Éliminez deux ennemis ou plus pendant le même tour quinze fois."
         ]
     },
     "cs-346": {
-        "name": "Une Vipère se Divise",
+        "name": "An Adder Divides",
         "progress": [
             "Occupez un terrain difficile dans 6 scénarios différents.",
             "Finissez {SCENARIO 39}."
         ]
     },
     "cs-347": {
-        "name": "Recherche sur le Terrain",
+        "name": "Field Research",
         "progress": [
             "Empoisonnez {POISON} vingt types de monstres différents."
         ]
     },
     "cs-348": {
-        "name": "La Main de l'Invocateur",
+        "name": "Conjurers Hand",
         "progress": [
             "Éliminez dix monstres invoqués."
         ]
     },
     "cs-349": {
-        "name": "Pas de Repos pour les Méchants",
+        "name": "No Rest for the Wicked",
         "progress": [
             "Accomplissez dix scénarios sans faire de repos long."
         ]
     },
     "cs-350": {
-        "name": "La Santé d'Abord",
+        "name": "Health First",
         "progress": [
             "Accomplissez sept scénarios en terminant avec tous vos points de vie."
         ]
     },
     "cs-351": {
-        "name": "Fouille sans Limite",
+        "name": "Limitless Searching",
         "progress": [
             "Ramassez 30 jetons d'argent."
         ]
     },
     "cs-aa-001": {
-        "name": "À Tout Prix",
+        "name": "At All Costs",
         "progress": [
             "Vivez 8 scénarios où vous annulez des dégâts en perdant une carte, comme d'habitude, alors que vous êtes adjacent à un allié.",
             "Finissez {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
-        "name": "Le Poids de l'Échec",
+        "name": "The Weight of failure",
         "progress": [
             "Accomplissez 8 scénarios sans être épuisé et avec 2 PV ou moins.",
             "Finissez {SCENARIO AA2}."
         ]
     },
     "cs-qa-001": {
-        "name": "Inventeur Ingénieux",
+        "name": "Ingenious Inventor",
         "progress": [
-            "Gagnez immédiatement « Modulateur de Puissance » (Objet QA-01).",
-            "Éliminez 12 ennemis avec le « Modulateur de Puissance » (Objet QA-01).",
+            "Gagnez immédiatement «Power Modulator» (Objet QA-01).",
+            "Éliminez 12 ennemis avec le «Power Modulator» (Objet QA-01).",
             "Finissez {SCENARIO QA1}."
         ]
     },
     "cs-qa-002": {
-        "name": "Plongeur de Ferraille",
+        "name": "Scrap Diver",
         "progress": [
             "Ramassez deux jetons d'argent ou plus avec une seule action huit fois.",
             "Pillez deux tuiles trésor.",
@@ -337,7 +337,7 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "Homme de Main Brutal",
+        "name": "Brutal Enforcer",
         "progress": [
             "Gagnez le plan « Lame Dentelée » (Objet RM-01).",
             "Appliquez {WOUND} ou {RUPTURE} à trente ennemis.",
@@ -345,7 +345,7 @@ export default {
         ]
     },
     "cs-rm-002": {
-        "name": "Superprédateur",
+        "name": "Apex Predator",
         "progress": [
             "Vivez vingt rounds où, pendant ou après une action comportant un {CONSUMED}, un ennemi meurt.",
             "Finissez {SCENARIO RM3}."
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "Intrigue Politique",
+        "name": "Political Intrigue",
         "progress": [
             "Ajoutez l'Évènement de Ville 61 au paquet d'évènements de ville.",
             "Gagnez 30 voix : trois voix chaque fois que vous gagnez de la réputation, une voix par objet de réputation de faction apporté dans un scénario accompli.",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Auberge Hospitalière",
+        "name": "Inn to Hospitality",
         "progress": [
             "Ramassez 60 jetons d'argent.",
             "Lisez {SECTION} 125.4."
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "La Chute de l'Homme",
         "progress": [
-            "Gagnez la « Longue-vue Esther » (Objet 149). Elle ne peut pas être vendue.",
-            "Utilisez la « Longue-vue Esther » (Objet 149) dix fois.",
+            "Gagnez la «Aesther Spyglass» (Objet 149). Elle ne peut pas être vendue.",
+            "Utilisez la «Aesther Spyglass» (Objet 149) dix fois.",
             "Lisez {SECTION} 115.2.",
             "Menez {SCENARIO 63} jusqu'à sa conclusion."
         ]
@@ -639,14 +639,14 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "Une Histoire à Raconter",
+        "name": "A Tale to Tell",
         "progress": [
             "Pillez une tuile trésor, ou voyez votre compagnie en piller une, dans dix scénarios.",
             "Lisez {SECTION} 12.3."
         ]
     },
     "gh2-8": {
-        "name": "Reprendre la Forêt",
+        "name": "Take Back the Trees",
         "progress": [
             "Vivez dix évènements de route avec votre compagnie.",
             "Lisez {SECTION} 64.3.",
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "Parent Adoptif",
+        "name": "Adoptive Parent",
         "progress": [
             "Ramassez trois jetons d'argent lâchés par des ennemis dans dix scénarios.",
             "Lisez {SECTION} 122.5.",
@@ -680,11 +680,11 @@ export default {
         ]
     },
     "gh2-12": {
-        "name": "Être de Lumière",
+        "name": "Implement of Light",
         "progress": [
             "Débloquez immédiatement {SCENARIO 65}.",
-            "Trouvez le « Bouclier du Juste » (Objet 148).",
-            "Utilisez le « Bouclier du Juste » (Objet 148) pour annuler dix attaques de 4 dégâts ou plus.",
+            "Trouvez le «Shield of the Righteous» (Objet 148).",
+            "Utilisez le «Shield of the Righteous» (Objet 148) pour annuler dix attaques de 4 dégâts ou plus.",
             "Lisez {SECTION} 82.1."
         ]
     },
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "Échapper aux Sin-Ra",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "Ajoutez les Évènements de Ville 69 et 70 au paquet d'évènements de ville. Gagnez la « Carte Noire » (Objet 113). Elle ne peut pas être vendue.",
             "Accomplissez six scénarios annexes (numéro de scénario supérieur à 56).",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "Vivre sur le Fil du Rasoir",
+        "name": "Living on the Edge",
         "progress": [
-            "Gagnez l'« Armure Expérimentale » (Objet 150).",
+            "Gagnez l'«Experimental Armor» (Objet 150).",
             "Utilisez-la pour infliger des dégâts à 20 ennemis.",
             "Lisez {SECTION} 47.4."
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Étude Martiale",
+        "name": "Martial Study",
         "progress": [
             "Utilisez huit objets {ONE-HAND} ou {TWO-HANDS} différents pendant des scénarios.",
             "Lisez {SECTION} 67.2."
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "La Quête de la Maîtrise",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "Gagnez 120 points d'expérience grâce aux cartes de capacité.",
             "Lisez {SECTION} 17.2."

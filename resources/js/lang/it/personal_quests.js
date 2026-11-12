@@ -168,93 +168,93 @@ export default {
         ]
     },
     "cs-330": {
-        "name": "Proteggere e Servire",
+        "name": "Protect and Serve",
         "progress": [
             "Uccidi dieci Inox.",
             "Concludi {SCENARIO 33}."
         ]
     },
     "cs-331": {
-        "name": "Specialista di Armi",
+        "name": "Weapons Specialist",
         "progress": [
             "Consuma quindici oggetti {ONE-HAND} o {TWO-HANDS}."
         ]
     },
     "cs-332": {
-        "name": "Sperimentazione",
+        "name": "Experimentation",
         "progress": [
             "Gioca 30 carte per la loro azione con perdita {LOST}."
         ]
     },
     "cs-333": {
-        "name": "Cercatore di Brividi",
+        "name": "Thrill Seeker",
         "progress": [
             "Rivela una tessera stanza aprendo una porta venti volte."
         ]
     },
     "cs-334": {
-        "name": "Piazzatore di Trappole",
+        "name": "Trap Setter",
         "progress": [
             "Disinnesca una trappola o fai sì che un nemico la faccia scattare durante il tuo turno quindici volte."
         ]
     },
     "cs-335": {
-        "name": "Flagello dei Banditi",
+        "name": "Bandit Banisher",
         "progress": [
             "Uccidi dieci Guardie o Arcieri.",
             "Concludi {SCENARIO 35}."
         ]
     },
     "cs-336": {
-        "name": "Creature nella Luce",
+        "name": "Creatures in the light",
         "progress": [
             "Uccidi venti Melme, Imp delle Foreste o Imp Neri."
         ]
     },
     "cs-337": {
-        "name": "Capo Esperto",
+        "name": "Experienced leader",
         "progress": [
             "Completa dodici scenari con almeno 12 punti esperienza."
         ]
     },
     "cs-338": {
-        "name": "Picco di Adrenalina",
+        "name": "Adrenaline Spike",
         "progress": [
             "Uccidi un nemico e saccheggia il suo segnalino denaro nello stesso round quindici volte."
         ]
     },
     "cs-339": {
-        "name": "Sostegno Reciproco",
+        "name": "Mutual Support",
         "progress": [
             "Uccidi 30 nemici adiacenti a un tuo alleato qualsiasi."
         ]
     },
     "cs-340": {
-        "name": "Che Tu Sia Benedetto",
+        "name": "Thy be Blessed",
         "progress": [
             "Pesca una carta {BLESS} dodici volte durante un attacco."
         ]
     },
     "cs-341": {
-        "name": "Maledizioni dello Spirito",
+        "name": "Spiritual Cains",
         "progress": [
             "Spendi 200 monete d'oro in potenziamenti."
         ]
     },
     "cs-342": {
-        "name": "Il Sentiero dell'Agonia",
+        "name": "The Path of Agony",
         "progress": [
             "Assisti 13 volte alla morte o all'esaurimento di un alleato o nemico durante il suo stesso turno."
         ]
     },
     "cs-343": {
-        "name": "Dominio Crudele",
+        "name": "Cruel Dominion",
         "progress": [
             "Completa 10 scenari durante i quali uccidi un nemico che ha una condizione negativa."
         ]
     },
     "cs-344": {
-        "name": "Selezione Naturale",
+        "name": "Natural Selection",
         "progress": [
             "Genera {FIRE} due volte.",
             "Genera {ICE} due volte.",
@@ -264,72 +264,72 @@ export default {
         ]
     },
     "cs-345": {
-        "name": "Predatore e Preda",
+        "name": "Predator and Prey",
         "progress": [
             "Uccidi due o più nemici nello stesso turno quindici volte."
         ]
     },
     "cs-346": {
-        "name": "Una Vipera si Divide",
+        "name": "An Adder Divides",
         "progress": [
             "Occupa terreno difficile in 6 scenari diversi.",
             "Concludi {SCENARIO 39}."
         ]
     },
     "cs-347": {
-        "name": "Ricerca sul Campo",
+        "name": "Field Research",
         "progress": [
             "Avvelena {POISON} venti tipi diversi di mostri."
         ]
     },
     "cs-348": {
-        "name": "La Mano dell'Evocatore",
+        "name": "Conjurers Hand",
         "progress": [
             "Uccidi dieci mostri evocati."
         ]
     },
     "cs-349": {
-        "name": "Nessun Riposo per i Malvagi",
+        "name": "No Rest for the Wicked",
         "progress": [
             "Completa dieci scenari senza effettuare riposi lunghi."
         ]
     },
     "cs-350": {
-        "name": "Prima la Salute",
+        "name": "Health First",
         "progress": [
             "Completa sette scenari terminando con i punti ferita al massimo."
         ]
     },
     "cs-351": {
-        "name": "Ricerca Senza Limiti",
+        "name": "Limitless Searching",
         "progress": [
             "Saccheggia 30 segnalini denaro."
         ]
     },
     "cs-aa-001": {
-        "name": "A Ogni Costo",
+        "name": "At All Costs",
         "progress": [
             "Assisti a 8 scenari in cui annulli il danno perdendo una carta come di norma mentre sei adiacente a un alleato.",
             "Concludi {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
-        "name": "Il Peso del Fallimento",
+        "name": "The Weight of failure",
         "progress": [
             "Completa 8 scenari senza esaurirti e con 2 o meno PF.",
             "Concludi {SCENARIO AA2}"
         ]
     },
     "cs-qa-001": {
-        "name": "Inventore Ingegnoso",
+        "name": "Ingenious Inventor",
         "progress": [
-            "Ottieni subito “Modulatore di Potenza” (Oggetto QA-01)",
-            "Uccidi 12 nemici con “Modulatore di Potenza” (Oggetto QA-01)",
+            "Ottieni subito “Power Modulator” (Oggetto QA-01)",
+            "Uccidi 12 nemici con “Power Modulator” (Oggetto QA-01)",
             "Concludi {SCENARIO QA1}"
         ]
     },
     "cs-qa-002": {
-        "name": "Tuffatore tra i Rottami",
+        "name": "Scrap Diver",
         "progress": [
             "Saccheggia due o più segnalini denaro con una singola azione otto volte.",
             "Saccheggia due tessere tesoro.",
@@ -337,15 +337,15 @@ export default {
         ]
     },
     "cs-rm-001": {
-        "name": "Esecutore Brutale",
+        "name": "Brutal Enforcer",
         "progress": [
-            "Ottieni il progetto “Filo Seghettato” (Oggetto RM-01).",
+            "Ottieni il progetto “Serrated Edge” (Oggetto RM-01).",
             "Applica {WOUND} o {RUPTURE} a trenta nemici.",
             "Concludi {SCENARIO RM1}."
         ]
     },
     "cs-rm-002": {
-        "name": "Predatore Supremo",
+        "name": "Apex Predator",
         "progress": [
             "Assisti a venti round in cui, durante o dopo un'azione con un {CONSUMED}, muore un nemico.",
             "Concludi {SCENARIO RM3}."
@@ -592,7 +592,7 @@ export default {
         ]
     },
     "gh2-1": {
-        "name": "Intrighi Politici",
+        "name": "Political Intrigue",
         "progress": [
             "Aggiungi l'Evento Città 61 al mazzo eventi città.",
             "Ottieni 30 voti: tre voti ogni volta che ottieni reputazione, un voto per ogni oggetto di reputazione di fazione portato in uno scenario completato.",
@@ -600,7 +600,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Locanda all'Ospitalità",
+        "name": "Inn to Hospitality",
         "progress": [
             "Saccheggia 60 segnalini denaro.",
             "Leggi il {SECTION} 125.4."
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "La Caduta dell'Uomo",
         "progress": [
-            "Ottieni “Cannocchiale Aesther” (Oggetto 149). Non può essere venduto.",
-            "Usa “Cannocchiale Aesther” (Oggetto 149) dieci volte.",
+            "Ottieni “Aesther Spyglass” (Oggetto 149). Non può essere venduto.",
+            "Usa “Aesther Spyglass” (Oggetto 149) dieci volte.",
             "Leggi il {SECTION} 115.2.",
             "Porta {SCENARIO 63} a conclusione."
         ]
@@ -639,7 +639,7 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "Una Storia da Raccontare",
+        "name": "A Tale to Tell",
         "progress": [
             "Saccheggia, o assisti al saccheggio da parte del tuo gruppo di, una tessera tesoro in dieci scenari.",
             "Leggi il {SECTION} 12.3."
@@ -672,7 +672,7 @@ export default {
         ]
     },
     "gh2-11": {
-        "name": "Genitore Adottivo",
+        "name": "Adoptive Parent",
         "progress": [
             "Saccheggia tre segnalini denaro lasciati dai nemici in dieci scenari.",
             "Leggi il {SECTION} 122.5.",
@@ -683,8 +683,8 @@ export default {
         "name": "Strumento di Luce",
         "progress": [
             "Sblocca subito {SCENARIO 65}.",
-            "Trova “Scudo dei Giusti” (Oggetto 148).",
-            "Usa “Scudo dei Giusti” (Oggetto 148) per annullare dieci attacchi da 4 danni o più.",
+            "Trova “Shield of the Righteous” (Oggetto 148).",
+            "Usa “Shield of the Righteous” (Oggetto 148) per annullare dieci attacchi da 4 danni o più.",
             "Leggi il {SECTION} 82.1."
         ]
     },
@@ -707,7 +707,7 @@ export default {
         ]
     },
     "gh2-15": {
-        "name": "Fuga dai Sin-Ra",
+        "name": "Escaping the Sin-Ra",
         "progress": [
             "Aggiungi gli Eventi Città 69 e 70 al mazzo eventi città. Ottieni “Carta Nera” (Oggetto 113). Non può essere venduto.",
             "Completa sei scenari secondari (numero di scenario superiore a 56).",
@@ -723,9 +723,9 @@ export default {
         ]
     },
     "gh2-17": {
-        "name": "Vivere sul Filo del Rasoio",
+        "name": "Living on the Edge",
         "progress": [
-            "Ottieni “Armatura Sperimentale” (Oggetto 150).",
+            "Ottieni “Experimental Armor” (Oggetto 150).",
             "Usala per far subire danno a 20 nemici.",
             "Leggi il {SECTION} 47.4."
         ]
@@ -738,7 +738,7 @@ export default {
         ]
     },
     "gh2-19": {
-        "name": "Studio Marziale",
+        "name": "Martial Study",
         "progress": [
             "Usa otto diversi oggetti {ONE-HAND} o {TWO-HANDS} durante gli scenari.",
             "Leggi il {SECTION} 67.2."
@@ -752,7 +752,7 @@ export default {
         ]
     },
     "gh2-21": {
-        "name": "Alla Ricerca della Maestria",
+        "name": "Pursuit of Proficiency",
         "progress": [
             "Ottieni 120 esperienza dalle carte abilità.",
             "Leggi il {SECTION} 17.2."
