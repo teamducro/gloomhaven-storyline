@@ -1,7 +1,7 @@
 export default {
     "gh": {
         "blood-pact": {
-            "name": "blood pact"
+            "name": "Pacto de Sangre"
         },
         "bone-breaker": {
             "name": "bone breaker"
@@ -4446,7 +4446,7 @@ export default {
             "name": "recall"
         },
         "reconstructive-aid": {
-            "name": "reconstructive aid"
+            "name": "Ayuda reparadora"
         },
         "repair-drone": {
             "name": "repair drone"
@@ -4467,7 +4467,7 @@ export default {
             "name": "sword propeller"
         },
         "swarming-bulwark": {
-            "name": "swarming bulwark"
+            "name": "Baluarte insectoide"
         },
         "shield-spider": {
             "name": "shield spider"
@@ -4518,7 +4518,7 @@ export default {
             "name": "guide the flow"
         },
         "imbue-with-life": {
-            "name": "imbue with life"
+            "name": "Imbuir de vida"
         },
         "animated-claymore": {
             "name": "animated claymore"
@@ -4569,7 +4569,7 @@ export default {
             "name": "spiritbound falchion"
         },
         "veil-of-protection": {
-            "name": "veil of protection"
+            "name": "Velo de protección"
         },
         "ancient-drill": {
             "name": "Berbiquí antiguo"

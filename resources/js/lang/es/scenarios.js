@@ -135,7 +135,7 @@ export default {
         ],
         "faq": [
             "Errata: bajo “Reglas especiales”, el altar debería estar en “f”, no en “a”. Las apariciones de demonios deberían reordenarse así: viento (a), noche (b), tierra (c), fuego (d), sol (e), hielo (f).",
-            "El altar actúa como un obstáculo normal con puntos de vida (inmune a todas las condiciones negativas), por lo que “e inmunidades” no debería aparecer."
+            "El altar actúa como un obstáculo normal con puntos de vida (inmune a todos los estados negativos), por lo que “e inmunidades” no debería aparecer."
         ]
     },
     "gh-22": {
@@ -389,7 +389,7 @@ export default {
         "name": "Flooded Crypt",
         "rewards": [
             "Añade el Evento de Ciudad SoX3 al mazo",
-            "Elige solo uno de los siguientes: “Hoja Gélida” (Objeto 077), “Varita de Escarcha” (Objeto 083) o “Collar de las Mareas” (Objeto 111)"
+            "Elige solo uno de los siguientes: “Espada Gélida” (Objeto 077), “Varita de Escarcha” (Objeto 083) o “Collar de las Mareas” (Objeto 111)"
         ]
     },
     "gh-SoX3": {
@@ -479,7 +479,7 @@ export default {
     "gh-65": {
         "name": "Mina de Azufre",
         "rewards": [
-            "Diseño “Baerbiquí antiguo” (Objeto 112)"
+            "Diseño “Berbiquí antiguo” (Objeto 112)"
         ]
     },
     "gh-66": {
@@ -672,7 +672,7 @@ export default {
             "“Báculo de invocación” (Objeto 120)"
         ],
         "faq": [
-            "Si todos los acechadores mueren, sigue robando cartas de capacidad de acechador para determinar la dirección del efecto especial del escenario."
+            "Si todos los acechadores mueren, sigue robando cartas de Capacidad de acechador para determinar la dirección del efecto especial del escenario."
         ]
     },
     "gh-89": {
@@ -805,7 +805,7 @@ export default {
     "gh-216": {
         "name": "Secuelas",
         "rewards": [
-            "“Bata de doctor” (Objeto 148)"
+            "“Bata del Doctor” (Objeto 148)"
         ]
     },
     "gh-217": {
@@ -877,11 +877,11 @@ export default {
     "fc-100": {
         "name": "Los engranajes del tiempo",
         "rewards": [
-            "El grupo elije uno de los siguientes objetos: “Gafas telescópicas” (Objeto 059) y “Berbiquí antiguo” (Objeto 112), O BIEN “Engranaje enigmático” (Objeto 125) and “Araña mecánica” (Objeto 126)"
+            "El grupo elige uno de los siguientes conjuntos: “Gafas telescópicas” (Objeto 059) y “Berbiquí antiguo” (Objeto 112), O BIEN “Engranaje enigmático” (Objeto 125) y “Araña mecánica” (Objeto 126)"
         ]
     },
     "fc-101": {
-        "name": "Cripta ensombrencida",
+        "name": "Cripta ensombrecida",
         "rewards": [
             "20 de oro colectivo",
             "+1 de reputación",
@@ -998,7 +998,7 @@ export default {
     "fc-114": {
         "name": "La tinta aún no se ha secado",
         "rewards": [
-            "Ventaja de grupo: Los costes adicionales para mejorar una carta de capacidad basados en el nivel de la carta se reducen ahora en 5 de oro por nivel."
+            "Ventaja de grupo: Los costes adicionales para mejorar una carta de Capacidad basados en el nivel de la carta se reducen ahora en 5 de oro por nivel."
         ]
     },
     "fc-115": {
@@ -1043,7 +1043,7 @@ export default {
     "jotl-4": {
         "name": "Ritual de piedras",
         "rewards": [
-            "“Mana Potion” (Objeto 14)"
+            "“Poción de maná” (Objeto 14)"
         ]
     },
     "jotl-5": {
@@ -1134,7 +1134,7 @@ export default {
     "jotl-19": {
         "name": "Guarida de ladrones",
         "rewards": [
-            "“Ring of Strength” (Objeto 31)"
+            "“Anillo de fuerza” (Objeto 31)"
         ]
     },
     "jotl-20": {
@@ -1158,19 +1158,19 @@ export default {
     "jotl-23": {
         "name": "Lo mejor de lo mejor",
         "rewards": [
-            "“Barbed Axe” (Objeto 34)"
+            "“Hacha dentada” (Objeto 34)"
         ]
     },
     "jotl-24": {
         "name": "Vigilar el Vacío",
         "rewards": [
-            "“Robes of Command” (Objeto 35)"
+            "“Túnica de mando” (Objeto 35)"
         ]
     },
     "jotl-25": {
         "name": "El mejor trabajo del mundo",
         "rewards": [
-            "“Jet Boots” (Objeto 36)"
+            "“Botas a reacción” (Objeto 36)"
         ]
     },
     "fh-0": {
@@ -1289,7 +1289,7 @@ export default {
         "name": "Bajíos escabrosos",
         "rewards": [
             "Elige una: desbloquea la caja de clase {CR} O desbloquea la caja de clase {DT}",
-            "Añade el evento WO-81 al mazo de puesto de invierno"
+            "Añade el evento WO-81 al mazo de puesto fronterizo de invierno"
         ]
     },
     "fh-15": {
@@ -1317,7 +1317,7 @@ export default {
         "name": "Campos de Cristal",
         "rewards": [
             "Obtén 1 de moral",
-            "Obtén un plano de objeto aleatorio",
+            "Obtén un diseño de objeto aleatorio",
             "Añade 122.3 al calendario dentro de cuatro semanas"
         ]
     },
@@ -1325,7 +1325,7 @@ export default {
         "name": "Salón celeste",
         "rewards": [
             "Obtén 1 de moral",
-            "Obtén un plano de objeto aleatorio",
+            "Obtén un diseño de objeto aleatorio",
             "Añade 54.3 al calendario dentro de cuatro semanas"
         ]
     },
@@ -1352,13 +1352,13 @@ export default {
     "fh-23": {
         "name": "Sótano de la torre",
         "rewards": [
-            "Obtén un plano de objeto aleatorio"
+            "Obtén un diseño de objeto aleatorio"
         ]
     },
     "fh-24": {
         "name": "Subiendo la torre",
         "rewards": [
-            "Obtén un plano de objeto aleatorio"
+            "Obtén un diseño de objeto aleatorio"
         ]
     },
     "fh-25": {
@@ -1393,8 +1393,8 @@ export default {
         "name": "La Guerra de la Columna Cristalina A",
         "rewards": [
             "Obtén 3 de moral",
-            "Retira todos los eventos de {ALGOX} de todos los mazos de eventos de puesto",
-            "Añade el evento WO-68 al mazo de puesto de invierno",
+            "Retira todos los eventos de {ALGOX} de todos los mazos de eventos de puesto fronterizo",
+            "Añade el evento WO-68 al mazo de puesto fronterizo de invierno",
             "Añade 46.3 al calendario dentro de cinco semanas"
         ]
     },
@@ -1403,8 +1403,8 @@ export default {
         "rewards": [
             "Obtén 3 de moral",
             "Obtén la pegatina “Destructor de los Voz de Nieve”",
-            "Retira todos los eventos de {ALGOX} de todos los mazos de eventos de puesto",
-            "Añade el evento WO-69 al mazo de puesto de invierno",
+            "Retira todos los eventos de {ALGOX} de todos los mazos de eventos de puesto fronterizo",
+            "Añade el evento WO-69 al mazo de puesto fronterizo de invierno",
             "Añade 34.2 al calendario dentro de cinco semanas"
         ]
     },
@@ -1418,14 +1418,14 @@ export default {
     "fh-32": {
         "name": "El nido de los cuervos",
         "rewards": [
-            "Obtén el plano de “Feathered Cloak” (Objeto 69)"
+            "Obtén el diseño de “Capa emplumada” (Objeto 69)"
         ]
     },
     "fh-33": {
         "name": "Árboles descongelados",
         "rewards": [
             "Obtén 5 XP para cada personaje por cada runa de zahorí sin revelar",
-            "Obtén “Ember Energy Source” (Objeto 244)",
+            "Obtén “Ámbar de energía” (Objeto 244)",
             "Añade 135.1 al calendario dentro de tres semanas"
         ]
     },
@@ -1445,7 +1445,7 @@ export default {
         "rewards": [
             "Añade 3 {LUMBER} a los recursos colectivos",
             "Añade 3 {METAL} a los recursos colectivos",
-            "Obtén el plano de “Converging Lenses” (Objeto 67)"
+            "Obtén el diseño de “Gafas de convergencia” (Objeto 67)"
         ]
     },
     "fh-37": {
@@ -1453,7 +1453,7 @@ export default {
         "rewards": [
             "Añade 3 {LUMBER} a los recursos colectivos",
             "Añade 3 {METAL} a los recursos colectivos",
-            "Obtén el plano de “Converging Lenses” (Objeto 67)"
+            "Obtén el diseño de “Gafas de convergencia” (Objeto 67)"
         ]
     },
     "fh-38": {
@@ -1504,7 +1504,7 @@ export default {
         "name": "Centro neurálgico",
         "rewards": [
             "Obtén 5 de oro para cada personaje",
-            "Obtén el plano de “Energizing Baton” (Objeto 73)"
+            "Obtén el diseño de “Porra energizante” (Objeto 73)"
         ]
     },
     "fh-45": {
@@ -1554,7 +1554,7 @@ export default {
         "name": "Los salones del Huérfano",
         "rewards": [
             "Obtén 10 XP para cada personaje",
-            "Obtén el plano de “Shock Grenades” (Objeto 74)"
+            "Obtén el diseño de “Shock Grenades” (Objeto 74)"
         ]
     },
     "fh-52": {
@@ -1582,8 +1582,8 @@ export default {
             "Obtén 2 de moral",
             "Obtén 2 de prosperidad",
             "Desbloquea la caja de clase que siga bloqueada: {FF} o {SD}",
-            "Retira todos los eventos de {ALGOX} de todos los mazos de eventos de puesto",
-            "Añade los eventos WO-66 y WO-67 al mazo de puesto de invierno",
+            "Retira todos los eventos de {ALGOX} de todos los mazos de eventos de puesto fronterizo",
+            "Añade los eventos WO-66 y WO-67 al mazo de puesto fronterizo de invierno",
             "Añade una carta +50 al mazo de la Guardia de la Ciudad"
         ]
     },
@@ -1593,7 +1593,7 @@ export default {
             "Obtén 1 de moral",
             "Obtén 1 de inspiración",
             "Desbloquea la caja de clase {FF}",
-            "Añade el evento SO-51 al mazo de puesto de verano",
+            "Añade el evento SO-51 al mazo de puesto fronterizo de verano",
             "Añade una carta +50 al mazo de la Guardia de la Ciudad"
         ]
     },
@@ -1603,7 +1603,7 @@ export default {
             "Obtén 1 de moral",
             "Obtén 1 de inspiración",
             "Desbloquea la caja de clase {SD}",
-            "Añade el evento WO-68 al mazo de puesto de invierno",
+            "Añade el evento WO-68 al mazo de puesto fronterizo de invierno",
             "Añade una carta +50 al mazo de la Guardia de la Ciudad"
         ]
     },
@@ -1611,13 +1611,13 @@ export default {
         "name": "El corazón del Huérfano",
         "rewards": [
             "Obtén 1 de moral",
-            "Obtén “Key Card” (Objeto 246)",
+            "Obtén “Tarjeta llave” (Objeto 246)",
             "Añade 3 {LUMBER} a los recursos colectivos",
             "Añade 3 {METAL} a los recursos colectivos",
             "Añade 3 {HIDE} a los recursos colectivos",
             "Desbloquea la caja de clase {HV}",
-            "Retira todos los eventos de {UNFETTERED} de todos los mazos de eventos de puesto",
-            "Añade los eventos WO-64 y WO-65 al mazo de puesto de invierno",
+            "Retira todos los eventos de {UNFETTERED} de todos los mazos de eventos de puesto fronterizo",
+            "Añade los eventos WO-64 y WO-65 al mazo de puesto fronterizo de invierno",
             "Añade una carta +50 al mazo de la Guardia de la Ciudad"
         ]
     },
@@ -1626,10 +1626,10 @@ export default {
         "rewards": [
             "Obtén 2 de moral",
             "Obtén 2 de prosperidad",
-            "Obtén “Key Card” (Objeto 246)",
+            "Obtén “Tarjeta llave” (Objeto 246)",
             "Desbloquea la caja de clase {HV}",
-            "Retira todos los eventos de {UNFETTERED} de todos los mazos de eventos de puesto",
-            "Añade el evento SO-49 al mazo de puesto de verano y el evento WO-63 al mazo de puesto de invierno",
+            "Retira todos los eventos de {UNFETTERED} de todos los mazos de eventos de puesto fronterizo",
+            "Añade el evento SO-49 al mazo de puesto fronterizo de verano y el evento WO-63 al mazo de puesto fronterizo de invierno",
             "Añade una carta +50 al mazo de la Guardia de la Ciudad"
         ]
     },
@@ -1639,10 +1639,10 @@ export default {
             "Obtén 2 de moral",
             "Obtén 1 de prosperidad",
             "Obtén 30 XP para cada personaje",
-            "Obtén “Armor of Empathy” (Objeto 224)",
+            "Obtén “Armadura de Empatía” (Objeto 224)",
             "Desbloquea la caja de clase que siga bloqueada: {CR} o {DT}",
-            "Retira todos los eventos de {LURKERS} de todos los mazos de eventos de puesto",
-            "Añade el evento SO-48 al mazo de puesto de verano y el evento B-17 al mazo de barco",
+            "Retira todos los eventos de {LURKERS} de todos los mazos de eventos de puesto fronterizo",
+            "Añade el evento SO-48 al mazo de puesto fronterizo de verano y el evento B-17 al mazo de barco",
             "Añade una carta +50 al mazo de la Guardia de la Ciudad"
         ]
     },
@@ -1684,7 +1684,7 @@ export default {
     "fh-66": {
         "name": "Núcleos elementales",
         "rewards": [
-            "Obtén “Elemental Stone” (Objeto 212)",
+            "Obtén “Gema elemental” (Objeto 212)",
             "Añade 29.3 al calendario dentro de seis semanas"
         ]
     },
@@ -1742,7 +1742,7 @@ export default {
     "fh-74": {
         "name": "Gaps in the Road",
         "rewards": [
-            "Obtén un plano de objeto aleatorio"
+            "Obtén un diseño de objeto aleatorio"
         ]
     },
     "fh-75": {
@@ -1755,8 +1755,8 @@ export default {
         "name": "Apoteosis",
         "rewards": [
             [
-                "Misión personal “La amenaza de las profundidades” completada",
-                "Obtén “Hoja de oleaje” (Objeto 201)",
+                "Misión personal “Amenaza de las profundidades” completada",
+                "Obtén “Wave Blade” (Objeto 201)",
                 "Añade el evento B-18 al mazo de barco"
             ],
             []
@@ -1765,8 +1765,8 @@ export default {
     "fh-77": {
         "name": "La ascensión del Rey del Mar",
         "rewards": [
-            "Misión personal “La amenaza de las profundidades” completada",
-            "Obtén “Hoja de oleaje” (Objeto 201)",
+            "Misión personal “Amenaza de las profundidades” completada",
+            "Obtén “Wave Blade” (Objeto 201)",
             "Añade el evento B-19 al mazo de barco"
         ]
     },
@@ -1796,7 +1796,7 @@ export default {
         "name": "Laboratorio de investigación en ruinas",
         "rewards": [
             "Obtén 1 de prosperidad",
-            "Obtén el plano de “Túnica etérida” (Objeto 70)"
+            "Obtén el diseño de “Aesther Robe” (Objeto 70)"
         ]
     },
     "fh-82": {
@@ -1815,7 +1815,7 @@ export default {
     "fh-84": {
         "name": "A partir de aquí hay cienos",
         "rewards": [
-            "Obtén “Vial de cieno” (Objeto 234)"
+            "Obtén “ooze vial” (Objeto 234)"
         ]
     },
     "fh-85": {
@@ -1986,19 +1986,19 @@ export default {
         "name": "Mi imperio privado",
         "rewards": [
             [
-                "Obtén 1 recurso de material colectivo cualquiera"
+                "Obtén 1 recurso de materiales colectivo cualquiera"
             ],
             [
-                "Obtén 2 recursos de material colectivos cualesquiera"
+                "Obtén 2 recursos de materiales colectivos cualesquiera"
             ],
             [
-                "Obtén 3 recursos de material colectivos cualesquiera"
+                "Obtén 3 recursos de materiales colectivos cualesquiera"
             ],
             [
-                "Obtén 4 recursos de material colectivos cualesquiera"
+                "Obtén 4 recursos de materiales colectivos cualesquiera"
             ],
             [
-                "Obtén 5 recursos materiales colectivos cualesquiera",
+                "Obtén 5 recursos de materiales colectivos cualesquiera",
                 "Obtén “Cup of Ventillion” (Objeto 214)"
             ]
         ]
@@ -2019,13 +2019,13 @@ export default {
     "fh-110": {
         "name": "El templo del guardián",
         "rewards": [
-            "Obtén el plano de “Rose Gauntlet” (Objeto 75)"
+            "Obtén el diseño de “Guantelete de rosa” (Objeto 75)"
         ]
     },
     "fh-111": {
         "name": "Cueva de hielo",
         "rewards": [
-            "Obtén “Cracked Mirror” (Objeto 236)"
+            "Obtén “Espejo agrietado” (Objeto 236)"
         ]
     },
     "fh-112": {
@@ -2097,7 +2097,7 @@ export default {
                 "Añade 1 {LUMBER} a los recursos colectivos",
                 "Añade 1 {METAL} a los recursos colectivos",
                 "Añade 1 {HIDE} a los recursos colectivos",
-                "Obtén 2 recursos materiales cualesquiera cada uno",
+                "Obtén 2 recursos de materiales cualesquiera cada uno",
                 "Obtén 10 XP para cada personaje"
             ],
             [
@@ -2105,18 +2105,18 @@ export default {
                 "Añade 1 {LUMBER} a los recursos colectivos",
                 "Añade 1 {METAL} a los recursos colectivos",
                 "Añade 1 {HIDE} a los recursos colectivos",
-                "Obtén 2 recursos materiales cualesquiera cada uno",
+                "Obtén 2 recursos de materiales cualesquiera cada uno",
                 "Obtén 10 XP para cada personaje",
-                "Obtén un plano de objeto aleatorio"
+                "Obtén un diseño de objeto aleatorio"
             ],
             [
                 "Obtén 1 de moral",
                 "Añade 1 {LUMBER} a los recursos colectivos",
                 "Añade 1 {METAL} a los recursos colectivos",
                 "Añade 1 {HIDE} a los recursos colectivos",
-                "Obtén 2 recursos materiales cualesquiera cada uno",
+                "Obtén 2 recursos de materiales cualesquiera cada uno",
                 "Obtén 10 XP para cada personaje",
-                "Obtén un plano de objeto aleatorio",
+                "Obtén un diseño de objeto aleatorio",
                 "Obtén 1 de prosperidad",
                 "Obtén 2 de moral"
             ]
@@ -2132,7 +2132,7 @@ export default {
     "fh-118": {
         "name": "Nigromancia acechadora",
         "rewards": [
-            "Obtén el plano de “Amulet of Eternal Life” (Objeto 66)",
+            "Obtén el diseño de “Amulet of Eternal Life” (Objeto 66)",
             "Cambia todas las fichas por cartas de botín"
         ]
     },
@@ -2140,8 +2140,8 @@ export default {
         "name": "Polvo radiante",
         "rewards": [
             "Gasta 7 de polvo restante para obtener “Scepter of Control” (Objeto 203)",
-            "Gasta 1 de polvo restante para obtener 1 recurso de material cualquiera",
-            "Gasta 2 de polvo restante para obtener 1 recurso de hierba cualquiera"
+            "Gasta 1 de polvo restante para obtener 1 recurso de materiales cualquiera",
+            "Gasta 2 de polvo restante para obtener 1 recurso de plantas cualquiera"
         ]
     },
     "fh-120": {
@@ -2159,7 +2159,7 @@ export default {
                 "Añade 184.3 al calendario dentro de seis semanas"
             ],
             [
-                "Obtén “Yelmo ladrón de mentes” (Objeto 193)"
+                "Obtén “Mind Thieving Helmet” (Objeto 193)"
             ],
             [
                 "Obtén 2 de moral"
@@ -2216,12 +2216,12 @@ export default {
             [
                 "Obtén 10 de oro colectivo",
                 "Añade 2 {LUMBER} a los recursos colectivos",
-                "Obtén “Tri-Corner Hat” 195"
+                "Obtén “Tricornio” 195"
             ],
             [
                 "Obtén 10 de oro colectivo",
                 "Añade 2 {LUMBER} a los recursos colectivos",
-                "Obtén “Tri-Corner Hat” 195",
+                "Obtén “Tricornio” 195",
                 "Obtén 1 de prosperidad"
             ]
         ]
@@ -2239,7 +2239,7 @@ export default {
             ],
             [
                 "Obtén 3 de moral",
-                "Obtén “Befuddling Mug” (Objeto 215)",
+                "Obtén “Jarra confundidora” (Objeto 215)",
                 "Añade 100.3 al calendario dentro de tres semanas"
             ]
         ]
@@ -2301,7 +2301,7 @@ export default {
         "name": "Escondite abandonado",
         "rewards": [
             "Obtén 20 de oro para cada personaje",
-            "Obtén “Ancient Coin” (Objeto 245)"
+            "Obtén “Moneda antigua” (Objeto 245)"
         ]
     },
     "fh-137": {
@@ -2316,7 +2316,7 @@ export default {
     "fh-201": {
         "name": "Wonder of Nature",
         "rewards": [
-            "“Garrote del Vagabundo” (Objeto 248)"
+            "“Wanderer's Club” (Objeto 248)"
         ]
     },
     "fh-202": {
@@ -2340,13 +2340,13 @@ export default {
     "fh-205": {
         "name": "Bones in the Dirt",
         "rewards": [
-            "“Códice de Tierra Negra” (Objeto 252)"
+            "“Black Earth Codex” (Objeto 252)"
         ]
     },
     "fh-206": {
         "name": "Divide and Conquer",
         "rewards": [
-            "“Máscara de dualidad” (Objeto 253)"
+            "“Mask of Duality” (Objeto 253)"
         ]
     },
     "fh-207": {
@@ -2376,7 +2376,7 @@ export default {
     "fh-211": {
         "name": "A Collection of Suffering",
         "rewards": [
-            "“Calavera de agonía” (Objeto 258)"
+            "“Skull of Agony” (Objeto 258)"
         ]
     },
     "fh-212": {
@@ -2388,7 +2388,7 @@ export default {
     "fh-213": {
         "name": "Under the Ice",
         "rewards": [
-            "“Orbe gélido” (Objeto 260)"
+            "“Freezing Orb” (Objeto 260)"
         ]
     },
     "fh-214": {
@@ -2406,7 +2406,7 @@ export default {
     "fh-216": {
         "name": "Trabajo sucio",
         "rewards": [
-            "“Calavera del señor de la guerra” (Objeto 263)"
+            "“Warlords Skull” (Objeto 263)"
         ]
     },
     "fh-217": {
@@ -2622,7 +2622,7 @@ export default {
         "rewards": [
             "Desbloquea el sobre {BM}",
             "+2 de reputación",
-            "Todos los personajes añaden una BENDICIÓN {BLESS} a su mazo de modificadores de ataque durante el siguiente escenario"
+            "Todos los personajes añaden una {BLESS} a su mazo de Modificadores de ataque durante el siguiente escenario"
         ]
     },
     "cs-35": {
@@ -2841,14 +2841,14 @@ export default {
         "name": "The Riches of the Steelsilk",
         "requirements": "Misión personal “At All Costs”",
         "rewards": [
-            "“Baluarte lomopétreo” (Objeto AA01)"
+            "“Rockspine Bulwark” (Objeto AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
         "requirements": "Misión personal “The Weight of Failure”",
         "rewards": [
-            "“Miel brillofantasma” (Objeto AA02)"
+            "“Ghostshimmer Honey” (Objeto AA02)"
         ]
     },
     "cs-AA3": {
@@ -2865,12 +2865,12 @@ export default {
                 "Misión “Ingenious Inventor” completada",
                 "Abre el sobre {QA}",
                 "Diseño “Steam Piston Hammer” (Objeto QA02)",
-                "Diseño “Guantes trepaarañas” (Objeto QA03)"
+                "Diseño “Spider Climb Gloves” (Objeto QA03)"
             ],
             [
                 "Misión “Ingenious Inventor” completada",
                 "Abre el sobre {QA}",
-                "Obtén uno de los siguientes: “Steam Piston Hammer” (Objeto QA02) O “Guantes trepaarañas” (Objeto QA03)",
+                "Obtén uno de los siguientes: “Steam Piston Hammer” (Objeto QA02) O “Spider Climb Gloves” (Objeto QA03)",
                 "Añade una copia del objeto elegido a las existencias disponibles de la ciudad",
                 "Añade el otro objeto al mazo de diseños de objeto aleatorio"
             ],
@@ -2878,7 +2878,7 @@ export default {
                 "Misión “Ingenious Inventor” completada",
                 "Abre el sobre {QA}",
                 "“Steam Piston Hammer” (Objeto QA02)",
-                "“Guantes trepaarañas” (Objeto QA03)",
+                "“Spider Climb Gloves” (Objeto QA03)",
                 "Añade copias a las existencias disponibles de la ciudad"
             ]
         ]
@@ -2896,7 +2896,7 @@ export default {
     "cs-QA3": {
         "name": "Magnum Opus",
         "rewards": [
-            "“Auscudee de los Creadores” (Objeto QA06)"
+            "“Auscudee of the Makers” (Objeto QA06)"
         ]
     },
     "cs-RM1": {
@@ -2943,8 +2943,8 @@ export default {
         "name": "The Fall of Shadow's Respite",
         "rewards": [
             "Diseño “Rite of Ruin” (Objeto RM05)",
-            "Si al final de la octava ronda seguían vivos al menos tres vermlings: 5 de oro",
-            "Si al final de la octava ronda seguían vivos al menos cinco vermlings: ✓"
+            "Si al final de la octava ronda seguían vivos al menos tres infestores: 5 de oro",
+            "Si al final de la octava ronda seguían vivos al menos cinco infestores: ✓"
         ]
     },
     "cs-RM7": {
@@ -2958,13 +2958,13 @@ export default {
     "mp-AN1": {
         "name": "A Harrowing Deal",
         "rewards": [
-            "“Lazo de la amistad” (Objeto AN)"
+            "“Ribbon of Friendship” (Objeto AN)"
         ]
     },
     "mp-SA1": {
         "name": "Horns in the Night",
         "rewards": [
-            "“Blasón de Frosthaven” (Objeto SA)"
+            "“Crest of Frosthaven” (Objeto SA)"
         ]
     },
     "mp-CA1": {
@@ -3596,7 +3596,7 @@ export default {
     "gh2-87": {
         "name": "Mina de Azufre",
         "rewards": [
-            "Obtén “Berbiquí Antigüo” (Objeto 109)"
+            "Obtén “Berbiquí Antiguo” (Objeto 109)"
         ]
     },
     "gh2-88": {
@@ -3706,7 +3706,7 @@ export default {
     "gh2-201": {
         "name": "A Night Out",
         "rewards": [
-            "Obtén “Escudo con gancho” (Objeto 153)"
+            "Obtén “Hooked Shield” (Objeto 153)"
         ]
     },
     "gh2-202": {
@@ -3808,7 +3808,7 @@ export default {
     "gh2-218": {
         "name": "Las arenas del tiempo",
         "rewards": [
-            "Obtén “Caparazón reptante” (Objeto 170)"
+            "Obtén “Crawling Carapace” (Objeto 170)"
         ]
     }
 }

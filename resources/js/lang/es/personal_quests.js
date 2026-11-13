@@ -39,7 +39,7 @@ export default {
     "gh-515": {
         "name": "Defensor de la ley",
         "progress": [
-            "Mata a 20 Bandidos o Sectarios. "
+            "Mata a 20 Bandidos o Sectarios."
         ]
     },
     "gh-516": {
@@ -232,7 +232,7 @@ export default {
     "cs-340": {
         "name": "Thy be Blessed",
         "progress": [
-            "Roba una carta de BENDICIÓN {BLESS} doce veces durante un ataque."
+            "Roba una carta de {BLESS} doce veces durante un ataque."
         ]
     },
     "cs-341": {
@@ -250,7 +250,7 @@ export default {
     "cs-343": {
         "name": "Cruel Dominion",
         "progress": [
-            "Completa 10 escenarios en los que mates a un enemigo que tenga una condición negativa."
+            "Completa 10 escenarios en los que mates a un enemigo que tenga un estado negativo."
         ]
     },
     "cs-344": {
@@ -272,7 +272,7 @@ export default {
     "cs-346": {
         "name": "An Adder Divides",
         "progress": [
-            "Ocupa terreno difícil en 6 escenarios distintos.",
+            "Ocupa terreno impracticable en 6 escenarios distintos.",
             "Concluye {SCENARIO 39}."
         ]
     },
@@ -323,8 +323,8 @@ export default {
     "cs-qa-001": {
         "name": "Ingenious Inventor",
         "progress": [
-            "Obtén de inmediato “Modulador de energía” (Objeto QA-01)",
-            "Mata a 12 enemigos con “Modulador de energía” (Objeto QA-01)",
+            "Obtén de inmediato “Power Modulator” (Objeto QA-01)",
+            "Mata a 12 enemigos con “Power Modulator” (Objeto QA-01)",
             "Concluye {SCENARIO QA1}"
         ]
     },
@@ -340,7 +340,7 @@ export default {
         "name": "Brutal Enforcer",
         "progress": [
             "Obtén el diseño “Serrated Edge” (Objeto RM-01).",
-            "Aplica HERIDA {WOUND} o RUPTURA {RUPTURE} a treinta enemigos.",
+            "Aplica {WOUND} o {RUPTURE} a treinta enemigos.",
             "Concluye {SCENARIO RM1}."
         ]
     },
@@ -358,7 +358,7 @@ export default {
             42
         ],
         "progress": [
-            "Reúne personalmente cinco tipos distintos de hierbas mediante fichas de botín."
+            "Reúne personalmente cinco tipos distintos de plantas mediante fichas de botín."
         ]
     },
     "fh-2": {
@@ -413,7 +413,7 @@ export default {
             21
         ],
         "progress": [
-            "Durante ocho fases de puesto distintas, lee el nombre de una persona en un evento o sección."
+            "Durante ocho fases de puesto fronterizo distintas, lee el nombre de una persona en un evento o sección."
         ]
     },
     "fh-7": {
@@ -446,7 +446,7 @@ export default {
             83
         ],
         "progress": [
-            "Gana 150 de experiencia con cartas de capacidad."
+            "Gana 150 de experiencia con cartas de Capacidad."
         ]
     },
     "fh-10": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "Obtén el plano de “Hacha abisal” (Objeto 039) y úsala para matar a diez Cadáveres helados, Espectros de hielo y/o Perdiciones vivientes."
+            "Obtén el diseño de “Hacha abisal” (Objeto 039) y úsala para matar a diez Cadáveres helados, Espectros de hielo y/o Perdiciones vivientes."
         ]
     },
     "fh-20": {
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "la caída del hombre",
         "progress": [
-            "Obtén el “Catalejo etérido” (Objeto 149). No se puede vender.",
-            "Usa el “Catalejo etérido” (Objeto 149) diez veces.",
+            "Obtén el “Aesther Spyglass” (Objeto 149). No se puede vender.",
+            "Usa el “Aesther Spyglass” (Objeto 149) diez veces.",
             "Lee la {SECTION} 115.2.",
             "Sigue {SCENARIO 63} hasta la conclusión."
         ]
@@ -627,7 +627,7 @@ export default {
         "progress": [
             "Sube de nivel para desbloquear {SCENARIO 57}.",
             "Sigue {SCENARIO 57} hasta la conclusión.",
-            "Usa el objeto obtenido en {SCENARIO 57} para obtener VENENO {POISON} siete veces.",
+            "Usa el objeto obtenido en {SCENARIO 57} para obtener {POISON} siete veces.",
             "Sigue {SCENARIO 58} hasta la conclusión."
         ]
     },
@@ -666,7 +666,7 @@ export default {
     "gh2-10": {
         "name": "Cazador de aberraciones",
         "progress": [
-            "Mejora una carta de capacidad (tuya o de un aliado) con un elemento {ANY} (requiere el logro global “El poder de la mejora”).",
+            "Mejora una carta de Capacidad (tuya o de un aliado) con un elemento {ANY} (requiere el logro global “El poder de la mejora”).",
             "Lee la {SECTION} 14.3.",
             "Sigue {SCENARIO 64} hasta la conclusión."
         ]
@@ -718,7 +718,7 @@ export default {
         "name": "El veneno perfecto",
         "progress": [
             "Obtén la “Daga Envenenada” (Objeto 7).",
-            "Úsala para aplicar VENENO {POISON} a un enemigo sin VENENO {POISON} 30 veces.",
+            "Úsala para aplicar {POISON} a un enemigo sin {POISON} 30 veces.",
             "Lee la {SECTION} 8.3."
         ]
     },
@@ -754,7 +754,7 @@ export default {
     "gh2-21": {
         "name": "Pursuit of Proficiency",
         "progress": [
-            "Gana 120 de experiencia con cartas de capacidad.",
+            "Gana 120 de experiencia con cartas de Capacidad.",
             "Lee la {SECTION} 17.2."
         ]
     },
@@ -767,7 +767,7 @@ export default {
     },
     "cq-cq01": {
         "name": "Conquista a tus demonios",
-        "unlock": "Abre un sobre de clase o de edificio de tu elección. Tus futuros personajes añaden PERFORAR {PIERCE} 1 y HERIDA {WOUND} a cualquier ataque dirigido contra demonios.",
+        "unlock": "Abre un sobre de clase o de edificio de tu elección. Tus futuros personajes añaden {PIERCE} 1 y {WOUND} a cualquier ataque dirigido contra demonios.",
         "progress": [
             "Mata a dos Demonios de Tierra generados de este modo.",
             "Mata a dos Demonios de Fuego generados de este modo.",
@@ -779,14 +779,14 @@ export default {
     },
     "cq-cq02": {
         "name": "Tus amigos están preocupados",
-        "unlock": "Abre un sobre de clase o de edificio de tu elección. Puedes perder de forma permanente las marcas de ventaja adicionales obtenidas por retirar personajes de tu linaje. Por cada marca de ventaja perdida, obtén 30 de oro para gastarlo de inmediato en mejoras para tu siguiente personaje.",
+        "unlock": "Abre un sobre de clase o de edificio de tu elección. Puedes perder de forma permanente las marcas de pericia adicionales obtenidas por retirar personajes de tu linaje. Por cada marca de pericia perdida, obtén 30 de oro para gastarlo de inmediato en mejoras para tu siguiente personaje.",
         "progress": [
             "Consigue 30 marcas de verificación de Objetivos de batalla. Roba y conserva un Objetivo de batalla adicional en cada escenario; no consigues ninguna marca a menos que cumplas todos."
         ]
     },
     "cq-cq03": {
         "name": "Consecuencias del combate",
-        "unlock": "Abre un sobre de clase o de edificio de tu elección. Tus futuros personajes obtienen FORTALECIMIENTO {STRENGTHEN} cada vez que roben un {NULL_MODIFIER} durante un escenario.",
+        "unlock": "Abre un sobre de clase o de edificio de tu elección. Tus futuros personajes obtienen {STRENGTHEN} cada vez que roben un {NULL_MODIFIER} durante un escenario.",
         "progress": [
             "Consigue 50 de contención: una vez por escenario, reduce el valor de un ataque antes de robar un modificador; obtén un punto de contención por cada punto reducido."
         ]

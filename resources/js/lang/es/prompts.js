@@ -1,13 +1,13 @@
 export default {
     "dragon": {
-        "1": "Devolvéis el tesoro al Draco. Obtienes el logro global “El Draco Auxiliado”. Agrega el Evento de Ciudad 75 y el Evento de Viaje 66 al mazo",
-        "2": "No ayudásteis al Draco .",
+        "1": "Devolvéis el tesoro al Draco. Obtenéis el logro global “El Draco auxiliado”. Añadid el Evento de Ciudad 75 y el Evento de Camino 66 al mazo",
+        "2": "No ayudáis al Draco.",
         "title": "Amigo o enemigo",
-        "text": "Recuperasteis el tesoro del Draco. ¿Se lo devolvéis al Draco o aceptásis el trabajo de intentar matar al Draco?"
+        "text": "Recuperasteis el tesoro del Draco. ¿Se lo devolvéis al Draco o seguís las órdenes del Capitán de la Guardia e intentáis matar al Draco?"
     },
     "burningMountain": {
         "1": "Conclusión A: Decides terminar tu turno en 'G' y retirar uno de los objetos del juego.",
-        "2": "Conclusión B: Después de saquear el tesoro, todos los personajes regresaron a la entrada antes de agotarse. ",
+        "2": "Conclusión B: Después de saquear el tesoro, todos los personajes regresaron a la entrada antes de agotarse.",
         "title": "Escapar de la montaña ardiente",
         "text": "Saqueasteis el tesoro. ¿Intentáis escapar con todos los artefactos pese a las advertencias?"
     },
@@ -26,7 +26,7 @@ export default {
     },
     "searchPiecesOfAnArtifact": {
         "1": "Todos los enemigos son asesinados.",
-        "2": "Encontrais más piezas del dispositivo de apertura de fisuras.",
+        "2": "Encontráis más piezas del dispositivo de apertura de fisuras.",
         "title": "Buscando piezas del dispositivo de apertura de fisuras",
         "text": "¿Conseguisteis matar a todos los enemigos?"
     },
@@ -47,7 +47,7 @@ export default {
         "2": "B: Ayudasteis a los Humanos",
         "3": "C: Luchasteis contra los 2 bandos",
         "title": "Guerra de los Demonios",
-        "text": "¿Qué bando elegiste?"
+        "text": "¿Qué bando elegisteis?"
     },
     "escapeFromTheHusk": {
         "1": "Todos los personajes escaparon",
@@ -56,8 +56,8 @@ export default {
         "text": "¿Todos los personajes escaparon por una salida?"
     },
     "undeadTerrors": {
-        "1": "Le dáis la poción a Selandre.",
-        "2": "Le decis a Selandre que la poción fue destruida.",
+        "1": "Le dais la poción a Selandre.",
+        "2": "Le decís a Selandre que la poción fue destruida.",
         "title": "¿Podéis confiar en Selandre?",
         "text": "¿Escucháis las últimas palabras de Dominic o escucháis a vuestra codicia?"
     },
@@ -70,7 +70,7 @@ export default {
     },
     "unseenPlight": {
         "1": "Habéis matado a Guttermaw, reclamando su recompensa.",
-        "2": "Salvásteis a los niños, cumpliendo la solicitud de Feigrin",
+        "2": "Salvasteis a los niños, cumpliendo la solicitud de Feigrin",
         "title": "Casas y guaridas rotas",
         "text": "¿Trajisteis la muerte o salvasteis vidas?"
     },
@@ -85,8 +85,8 @@ export default {
         "text": "¿Cuántos Guardias de la Ciudad quedan aún en el mapa?"
     },
     "algoxAltercation": {
-        "1": "Danzanieves a muerto",
-        "2": "Puño de hielo muerto",
+        "1": "Danzanieves ha muerto.",
+        "2": "Puño helado ha muerto.",
         "title": "Altercado de los algox",
         "text": "¿Qué bando elegisteis?"
     },
@@ -100,13 +100,13 @@ export default {
         "1": "Sí",
         "2": "No",
         "title": "Amistad del Rey del Mar",
-        "text": "¿Aceptasteis la propuesta del Rey Pez?"
+        "text": "¿Aceptasteis la propuesta del Rey del Mar?"
     },
     "acceptTheAscension": {
         "1": "Sí",
         "2": "No",
         "title": "Aceptar la ascensión",
-        "text": "¿Aceptasteis la ascensión del Rey Pez?"
+        "text": "¿Aceptasteis la ascensión del Rey del Mar?"
     },
     "brothersSurvival": {
         "1": "Sí",
@@ -121,7 +121,7 @@ export default {
         "text": "¿Le disteis a Rattusca su parte?"
     },
     "peaceNegotiations": {
-        "1": "Apoyar a Scabwit (vermlings)",
+        "1": "Apoyar a Scabwit (infestores)",
         "2": "Apoyar a Yoglang (algox)",
         "title": "Negociaciones de paz",
         "text": "¿A quién apoyasteis en la pelea?"
@@ -156,7 +156,7 @@ export default {
         "text": "¿Cuántos vagones escaparon?"
     },
     "mindtheifsWill": {
-        "1": "Autómata destruido, tecnología entregada a los vermlings",
+        "1": "Autómata destruido, tecnología entregada a los infestores",
         "2": "Autómata destruido, tecnología conservada",
         "3": "Dispositivo de control mental desactivado",
         "title": "La voluntad del Ladrón de mentes",
@@ -165,8 +165,8 @@ export default {
     "hungryMawDead": {
         "1": "Sí",
         "2": "No",
-        "title": "Fauce Hambrienta muerta",
-        "text": "¿Está muerta la Fauce Hambrienta?"
+        "title": "Fauces hambrientas muertas",
+        "text": "¿Están muertas las Fauces hambrientas?"
     },
     "cratesLooted": {
         "1": "1",
@@ -193,7 +193,7 @@ export default {
         "1": "Sección 18.3",
         "2": "Sección 44.3",
         "3": "Sección 51.1",
-        "title": "Ascenso a Icecrag",
+        "title": "Ascenso al Risco de Hielo",
         "text": "¿Qué sección de conclusión leísteis?"
     },
     "gh2-27": {
@@ -222,20 +222,20 @@ export default {
         "4": "Sección 78.6",
         "5": "Sección 78.6 y 81.5",
         "6": "Sección 81.5",
-        "title": "Armería de Savvas",
+        "title": "Armería savvas",
         "text": "¿Qué sección de conclusión leísteis?"
     },
     "gh2-34": {
         "1": "Sección 36.4",
         "2": "Sección 89.2",
-        "title": "Tumba desgastada por el tiempo",
+        "title": "Tumba ancestral",
         "text": "¿Qué sección de conclusión leísteis?"
     },
     "gh2-43": {
         "1": "Sección 80.3",
         "2": "Sección 106.1",
         "3": "Sección 132.4",
-        "title": "En pos de secretos",
+        "title": "Chasing Secrets",
         "text": "¿Qué sección de conclusión leísteis?"
     }
 }
