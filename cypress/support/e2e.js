@@ -16,20 +16,23 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-// Clear any service worker left over from a previous local build so it can't serve stale assets.
+// Clear any service worker left over from a previous local build or an aborted PWA spec, so it can't serve stale
+// assets. The website doesn't register one, unlike the tracker.
+let clearingServiceWorkers = false;
 before(() => {
-    cy.visit('/tracker');
+    cy.then(() => clearingServiceWorkers = true);
+    cy.visit('/');
     cy.window().then((win) => {
-        const unregister = win.navigator.serviceWorker?.getRegistrations().then((registrations) => {
+        const unregister = win.navigator.serviceWorker.getRegistrations().then((registrations) => {
             return Promise.all(registrations.map((registration) => registration.unregister()));
         });
         return Promise.race([unregister, new Promise((resolve) => setTimeout(resolve, 2000))]);
     });
-    cy.reload();
+    cy.then(() => clearingServiceWorkers = false);
 });
 
 // Production builds (CI) open the donations popup on every 5th page load, which covers the page under test.
 Cypress.on('window:before:load', (win) => win.localStorage.setItem('donations', '0'));
 
 // Keep the service worker's cache from leaking between tests; specs that test it opt in with {env: {serviceWorker: true}}.
-Cypress.on('window:before:load', (win) => Cypress.env('serviceWorker') || delete Object.getPrototypeOf(win.navigator).serviceWorker);
+Cypress.on('window:before:load', (win) => Cypress.env('serviceWorker') || clearingServiceWorkers || delete Object.getPrototypeOf(win.navigator).serviceWorker);

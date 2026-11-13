@@ -76,6 +76,7 @@ export default defineConfig(({mode}) => {
 // Port of the old webpack.mix.js post-build steps.
 function postBuild(bundle, mainGame, inProduction) {
     let buildFiles = [];
+    let languageFiles = [];
     let entryFile;
 
     return {
@@ -92,11 +93,11 @@ function postBuild(bundle, mainGame, inProduction) {
         },
         generateBundle(options, output) {
             entryFile = Object.values(output).find(file => file.type === 'chunk' && file.isEntry).fileName;
-            // Lazy language chunks are left out, as before.
-            buildFiles = Object.values(output)
-                .filter(file => file.type === 'chunk' && !file.moduleIds.every(id => id.includes('/resources/js/lang/')))
-                .map(file => '/' + file.fileName)
-                .concat(`/css/${bundle}.css`);
+            // Lazy language chunks aren't precached (all languages would double the download); the worker keeps the used ones.
+            const chunks = Object.values(output).filter(file => file.type === 'chunk');
+            const isLanguage = file => file.moduleIds.every(id => id.includes('/resources/js/lang/'));
+            buildFiles = chunks.filter(file => !isLanguage(file)).map(file => '/' + file.fileName).concat(`/css/${bundle}.css`);
+            languageFiles = chunks.filter(isLanguage).map(file => '/' + file.fileName);
         },
         async closeBundle() {
             if (bundle === 'app') {
@@ -108,6 +109,7 @@ function postBuild(bundle, mainGame, inProduction) {
                 await replace('public/sitemap.xml', /release-date/g, dayjs().format('YYYY-MM-DD'));
                 await fs.promises.copyFile('resources/js/service-worker.js', 'public/service-worker.js');
                 await replace('public/service-worker.js', /'build-files',/, buildFiles.map(file => `'${file}',`).join('\n    '));
+                await replace('public/service-worker.js', /'language-files',/, languageFiles.map(file => `'${file}',`).join('\n    '));
             }
 
             await replaceInHtml(new RegExp(`/js/${bundle}(-[\\w-]+)?\\.js`, 'g'), `/${entryFile}`);
