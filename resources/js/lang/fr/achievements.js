@@ -1,6 +1,6 @@
 export default {
     "gh-PFS": {
-        "name": "Premiers pas"
+        "name": "Premiers Pas"
     },
     "gh-PJP": {
         "name": "Les Plans de Jekserah"
@@ -102,7 +102,7 @@ export default {
         "name": "Par la Tranchée"
     },
     "gh-PRA": {
-        "name": "Au secours de Rougépine"
+        "name": "Au Secours de Rougépine"
     },
     "gh-PATD": {
         "name": "De l'Autre Côté du Précipice"
@@ -111,10 +111,10 @@ export default {
         "name": "La Voix Libérée"
     },
     "gh-GTVS": {
-        "name": "La Voix réduite au Silence"
+        "name": "La Voix Réduite au Silence"
     },
     "gh-GWB": {
-        "name": "Respiration aquatique"
+        "name": "Respiration Aquatique"
     },
     "gh-GEOC": {
         "name": "La Fin de la Corruption"

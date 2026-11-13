@@ -551,7 +551,7 @@ export default {
             },
             {
                 "level": 3,
-                "requires": "Nécessite 3 Pièces Anciennes (Objet 245)",
+                "requires": "Nécessite 3 Pièces Antiques (Objet 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Perdre 1 moral",

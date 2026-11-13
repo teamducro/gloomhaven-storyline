@@ -230,7 +230,7 @@ export default {
     "gh-45": {
         "name": "Pendentif des Pactes Obscurs",
         "source": "Prospérité 6",
-        "desc": "Pendant votre tour, {REFRESH} deux de vos objets {SMALL-ITEM} consommées. Subissez {CURSE}.",
+        "desc": "Pendant votre tour, {REFRESH} deux de vos objets {SMALL-ITEM} consommés. Subissez {CURSE}.",
         "faq": "Le bénéfice qui ignore les effets des objets n'empêche pas d'être maudit."
     },
     "gh-46": {
@@ -553,10 +553,10 @@ export default {
     "gh-109": {
         "name": "Capuche de Voleur",
         "source": "Évènement de Ville 62",
-        "desc": "Lorsque vous effectuez votre capacité de ”{LOOT 1}”, effectuez une capacité de “{LOOT 2}” à la place."
+        "desc": "Lorsque vous effectuez votre capacité de {LOOT 1}, effectuez une capacité de {LOOT 2} à la place."
     },
     "gh-110": {
-        "name": "Haume de la Montagne",
+        "name": "Heaume de la Montagne",
         "source": "{SCENARIO 82} (Trésor #62)",
         "desc": "Lorsque vous êtes attaqué, si {EARTH} est Fort, appliquez {IMMOBILIZE} à l'attaquant."
     },
@@ -571,7 +571,7 @@ export default {
         "desc": "Pendant votre attaque de mêlée, ajoutez +2 {ATTACK} et {PIERCE}2 à la totalité de l'action d'Attaque."
     },
     "gh-113": {
-        "name": "Hache fléau des Crânes",
+        "name": "Hache Fléau des Crânes",
         "source": "Récompense de {SCENARIO 11}\nRécompense de {SCENARIO 12}",
         "desc": "Pendant votre attaque de mêlée ciblant un Cadavre Réanimé, Esprit Réanimé ou Squelette Réanimé, ajoutez +5 Attaque à une seule attaque."
     },
@@ -609,7 +609,7 @@ export default {
     "gh-120": {
         "name": "Bâton d'Invocation",
         "source": "Récompense de {SCENARIO 88}",
-        "desc": "Pendant votre tour, un allié invoqué situé à {RANGE}3 effectue une action de “{MOVE}3”. Vous contrôler cette action."
+        "desc": "Pendant votre tour, un allié invoqué situé à {RANGE}3 effectue une action de “{MOVE}3”. Vous contrôlez cette action."
     },
     "gh-121": {
         "name": "Orbe de l'Aurore",
@@ -645,7 +645,7 @@ export default {
     "gh-127": {
         "name": "Araignée Mécanique Géante",
         "source": "Évènement de Ville 61",
-        "desc": "Pendant votre tour, effectuez une action de “Pillage {LOOT 1}”."
+        "desc": "Pendant votre tour, effectuez une action de {LOOT 1}."
     },
     "gh-128": {
         "name": "Encensoir Noir",
@@ -660,7 +660,7 @@ export default {
     "gh-130": {
         "name": "Anneau Spiralé",
         "source": "{SCENARIO 81} (Trésor #68)",
-        "desc": "Pendant votre tour, {LIGHT_X} {DARK_X} pour effectuez une action de “{HEAL}25, Sur vous-même”."
+        "desc": "Pendant votre tour, {LIGHT_X} {DARK_X} pour effectuer une action de “{HEAL}25, Sur vous-même”."
     },
     "gh-131": {
         "name": "Coeur du Traître",
@@ -909,7 +909,7 @@ export default {
     "jotl-15": {
         "name": "Amulette de Vie",
         "source": "Récompense de {SCENARIO 9}",
-        "desc": "Pendant votre tour, effectuz une action “{HEAL}1, Sur vous-même”."
+        "desc": "Pendant votre tour, effectuez une action “{HEAL}1, Sur vous-même”."
     },
     "jotl-16": {
         "name": "Robes d'Évocation",
@@ -1071,7 +1071,7 @@ export default {
     },
     "cs-14": {
         "name": "Chain Mace",
-        "desc": "During your turn, perform “{ATTACK}3, {RANGE}2”."
+        "desc": "Pendant votre tour, effectuez “{ATTACK}3, {RANGE}2”."
     },
     "cs-15": {
         "name": "Draining Greaves",
@@ -1131,7 +1131,7 @@ export default {
     },
     "cs-29": {
         "name": "Intoxicating Potion",
-        "desc": "During your turn, peform “{HEAL}5, {POISON}, Self”."
+        "desc": "Pendant votre tour, effectuez “{HEAL}5, {POISON}, Sur vous-même”."
     },
     "cs-30": {
         "name": "Iron Snare",
@@ -1171,7 +1171,7 @@ export default {
     },
     "cs-39": {
         "name": "Hook Shot",
-        "desc": "During your turn, peform “{ATTACK}2, {RANGE}3, {PIERCE}2”."
+        "desc": "Pendant votre tour, effectuez “{ATTACK}2, {RANGE}3, {PIERCE}2”."
     },
     "cs-40": {
         "name": "Moonleather Boots",
@@ -1195,7 +1195,7 @@ export default {
     },
     "cs-45": {
         "name": "Chain Cannon",
-        "desc": "During your turn, peform “{PULL}2, Self toward one enemy within {RANGE}3”."
+        "desc": "Pendant votre tour, effectuez “{PULL}2, Sur vous-même, vers un ennemi à {RANGE}3”."
     },
     "cs-46": {
         "name": "Summoner's Whistle",
@@ -1255,7 +1255,7 @@ export default {
     },
     "cs-60": {
         "name": "Mana Medicine",
-        "desc": "During your turn, peform “{HEAL}5, Self”. {ANY}"
+        "desc": "Pendant votre tour, effectuez “{HEAL}5, Sur vous-même”. {ANY}"
     },
     "cs-61": {
         "name": "Ashsteel Gauntlets",
@@ -1287,7 +1287,7 @@ export default {
     },
     "cs-68": {
         "name": "Explosive Tonic",
-        "desc": "During your turn, peform: {WOUND} {RANGE}3 {AOE.CONE_1_1}"
+        "desc": "Pendant votre tour, effectuez : {WOUND} {RANGE}3 {AOE.CONE_1_1}"
     },
     "cs-69": {
         "name": "Spicy Kindled Tonic",
@@ -1295,11 +1295,11 @@ export default {
     },
     "cs-70": {
         "name": "Utility Rope",
-        "desc": "During your turn, peform “{PULL}2, Target one ally or enemy within {RANGE}3.”"
+        "desc": "Pendant votre tour, effectuez “{PULL}2, Ciblez un allié ou un ennemi à {RANGE}3.”"
     },
     "cs-71": {
         "name": "Fireproof Helm",
-        "desc": "Whenever you would suffer damage from {WOUND} instead perform “{HEAL}1, Self”"
+        "desc": "Chaque fois que vous devriez subir des dégâts de {WOUND}, effectuez à la place “{HEAL}1, Sur vous-même”"
     },
     "cs-72": {
         "name": "Wooden Ladder",
@@ -1335,7 +1335,7 @@ export default {
     },
     "cs-80": {
         "name": "Scroll of Protection",
-        "desc": "When an ally within {RANGE}5 would be damaged by an attack targeting them, they suffer no damage instead."
+        "desc": "Lorsqu'un allié à {RANGE}5 devrait subir des dégâts d'une attaque le ciblant, il ne subit aucun dégât à la place."
     },
     "cs-81": {
         "name": "Spicy Bolstering Tonic",
@@ -1347,7 +1347,7 @@ export default {
     },
     "cs-83": {
         "name": "Sphere of Currents",
-        "desc": "During your turn, create two water difficult terrain tiles in hexes within {RANGE}3 that contain no overlay tiles. {MUDDLE} all figures within {RANGE}3 occupying a water tile."
+        "desc": "Pendant votre tour, créez deux tuiles de terrain difficile d'eau sur des hexagones à {RANGE}3 qui ne contiennent aucune tuile décor. {MUDDLE} toutes les figurines à {RANGE}3 qui occupent une tuile d'eau."
     },
     "cs-84": {
         "name": "Slug Crossbow",
@@ -1367,11 +1367,11 @@ export default {
     },
     "cs-88": {
         "name": "Remote Beetle",
-        "desc": "During your turn, open one unlocked closed door within {RANGE}2."
+        "desc": "Pendant votre tour, ouvrez une porte fermée et déverrouillée à {RANGE}2."
     },
     "cs-89": {
         "name": "Refined Remote Beetle",
-        "desc": "During your turn, open one unlocked closed door within {RANGE}2."
+        "desc": "Pendant votre tour, ouvrez une porte fermée et déverrouillée à {RANGE}2."
     },
     "cs-90": {
         "name": "Blazing Boots",
@@ -1459,7 +1459,7 @@ export default {
     },
     "cs-rm02": {
         "name": "Grisly Boots",
-        "desc": "After your move ability, peform {PUSH}1\\nTarget one adjacent enemy\\nAdd +1 {PUSH} if you have move 4 or more hexes this round."
+        "desc": "Après votre capacité de déplacement, effectuez {PUSH}1\nCiblez un ennemi adjacent\nAjoutez +1 {PUSH} si vous vous êtes déplacé de 4 hexagones ou plus ce round."
     },
     "cs-rm03": {
         "name": "Terrorscale Saber",
@@ -1478,286 +1478,286 @@ export default {
         "desc": "Les deux prochaines fois que vous perdriez une carte de votre main pour annuler des dégâts subis, défaussez-la à la place et gagnez {WOUND}."
     },
     "fh-1": {
-        "name": "Spyglass",
+        "name": "Longue-vue",
         "source": "Fabricant 1",
         "desc": "Pendant votre capacité d'attaque, gagnez Avantage pour une attaque."
     },
     "fh-2": {
-        "name": "Crude Helmet",
+        "name": "Casque Rudimentaire",
         "source": "Fabricant 1",
-        "desc": "Lorsque vous êtes attaqué, traitez toute carte de modificateur d'attaque {2X_MODIFIER} piochée par l'ennemi comme une carte {+1_MODIFIER} à la place."
+        "desc": "Lorsque vous êtes attaqué, traitez toute carte de modificateur d'attaque {2X_MODIFIER} piochée par l'adversaire comme une carte {+1_MODIFIER} à la place."
     },
     "fh-3": {
-        "name": "Traveling Cloak",
+        "name": "Cape de Voyage",
         "source": "Fabricant 1",
         "desc": "Au début du scénario, augmentez votre valeur maximale de points de vie de 1."
     },
     "fh-4": {
-        "name": "Crude Hide Armor",
+        "name": "Armure de Peau Rudimentaire",
         "source": "Fabricant 1",
         "desc": "Pour les deux prochaines attaques vous ciblant, l'attaquant gagne Désavantage."
     },
     "fh-5": {
-        "name": "Crude Boots",
+        "name": "Bottes Rudimentaires",
         "source": "Fabricant 1",
         "desc": "Pendant votre capacité de déplacement, ajoutez +1 {MOVE.fh}"
     },
     "fh-6": {
-        "name": "Flexible Slippers",
+        "name": "Pantoufles Souples",
         "source": "Fabricant 1",
         "desc": "Pendant votre pillage de fin de tour, pillez un hexagone adjacent à la place de l'hexagone que vous occupez."
     },
     "fh-7": {
-        "name": "Crude Bow",
+        "name": "Arc Rudimentaire",
         "source": "Fabricant 1",
         "desc": "Pendant votre tour, ajoutez +1 {RANGE.fh} à l'une de vos attaques à distance."
     },
     "fh-8": {
-        "name": "Crude Spear",
+        "name": "Lance Rudimentaire",
         "source": "Fabricant 1",
-        "desc": "Pendant votre tour, une de vos capacités d'attaque de mêlée sur une seule cible peut ciblez un adversaire à 2 hexagones ou moins."
+        "desc": "Pendant votre tour, une de vos capacités d'attaque de mêlée sur une seule cible peut cibler un adversaire à 2 hexagones ou moins."
     },
     "fh-9": {
-        "name": "Protective Scepter",
+        "name": "Sceptre Protecteur",
         "source": "Fabricant 1",
-        "desc": "During you turn, grant one ally within {RANGE.fh}2: {SHIELD.fh}1. {ROUND}"
+        "desc": "Pendant votre tour, octroyez à un allié à {RANGE.fh}2 ou moins : {SHIELD.fh}1. {ROUND}"
     },
     "fh-10": {
-        "name": "Crude Shield",
+        "name": "Bouclier Rudimentaire",
         "source": "Fabricant 1",
         "desc": "Quand un adversaire vous applique un état négatif, bloquez cet état."
     },
     "fh-11": {
-        "name": "Simple Charm",
+        "name": "Charme Simple",
         "source": "Fabricant 2",
         "desc": "Au début du scénario, retirez une carte de modificateur {-1_MODIFIER} de votre paquet de modificateurs d'attaque."
     },
     "fh-12": {
-        "name": "Crude Chain Armor",
+        "name": "Cotte de Mailles Rudimentaire",
         "source": "Fabricant 2",
         "desc": "Lorsque vous subissez {DAMAGE.fh} d'une attaque, gagnez {SHIELD.fh} 2 pour cette attaque."
     },
     "fh-13": {
-        "name": "Dancing Slippers",
+        "name": "Chaussons de Danse",
         "source": "Fabricant 2",
-        "desc": "After you suffer {DAMAGE.fh} from an attack, perform: {MOVE.fh}2"
+        "desc": "Après avoir subi des {DAMAGE.fh} d'une attaque, effectuez : {MOVE.fh}2"
     },
     "fh-14": {
-        "name": "Heavy Sword",
+        "name": "Épée Lourde",
         "source": "Fabricant 2",
         "desc": "Pendant votre capacité d'attaque de mêlée, ajoutez +1 {ATTACK.fh} à une attaque."
     },
     "fh-15": {
-        "name": "Reinforced Shield",
+        "name": "Bouclier Renforcé",
         "source": "Fabricant 2",
         "desc": "Quand un adversaire vous applique un état négatif, bloquez cet état."
     },
     "fh-16": {
-        "name": "Inspiring Helmet",
+        "name": "Heaume Inspirant",
         "source": "Fabricant 3",
-        "desc": "During your turn, grant all adjacent allies: {MOVE.fh}2"
+        "desc": "Pendant votre tour, octroyez à tous vos alliés adjacents : {MOVE.fh}2"
     },
     "fh-17": {
-        "name": "Cured Leather Armor",
+        "name": "Armure de Cuir Durci",
         "source": "Fabricant 3\nTrésor 50",
         "desc": "Pour les deux prochaines attaques vous ciblant, l'attaquant gagne Désavantage."
     },
     "fh-18": {
-        "name": "Rough Boots",
+        "name": "Bottes Frustes",
         "source": "Fabricant 3",
         "desc": "Pendant votre tour, ajoutez +1 {MOVE.fh} à toutes vos capacités de déplacement."
     },
     "fh-19": {
-        "name": "Ringing Hammer",
+        "name": "Marteau de Sonneur",
         "source": "Fabricant 3",
         "desc": "Pendant votre capacité d'attaque, ajoutez {MUDDLE.fh} à toutes vos attaques."
     },
     "fh-20": {
-        "name": "Well Strung Bow",
+        "name": "Arc à Corde Souple",
         "source": "Fabricant 3",
         "desc": "Pendant votre tour, ajoutez +1 {RANGE.fh} à toutes vos attaques à distance."
     },
     "fh-21": {
-        "name": "Chain Hood",
+        "name": "Coiffe de Mailles",
         "source": "Fabricant 4",
-        "desc": "Tant que vous êtes adjacent à au moins trois ennemis, gagnez {SHIELD.fh} 1."
+        "desc": "Tant que vous êtes adjacent à au moins trois adversaires, gagnez {SHIELD.fh} 1."
     },
     "fh-22": {
-        "name": "Heavy Chain Armor",
+        "name": "Cotte de Mailles Lourde",
         "source": "Fabricant 4",
         "desc": "Lorsque vous subissez {DAMAGE.fh} d'une attaque, gagnez {SHIELD.fh} 3 pour cette attaque."
     },
     "fh-23": {
-        "name": "Sturdy Greaves",
+        "name": "Jambières Robustes",
         "source": "Fabricant 4",
         "desc": "Au début de votre tour, ajoutez -2 {MOVE.fh} à toutes vos capacités de déplacement pour gagner {SHIELD.fh} ce round. {ROUND}"
     },
     "fh-24": {
-        "name": "Corrupted Blade",
+        "name": "Lame Corrompue",
         "source": "Fabricant 4\nWR-04",
         "desc": "Pendant votre capacité d'attaque de mêlée, ajoutez {WOUND.fh}, {POISON.fh}, {MUDDLE.fh} à une attaque."
     },
     "fh-25": {
-        "name": "Soothing Scepter",
+        "name": "Sceptre Apaisant",
         "source": "Fabricant 4",
-        "desc": "During your turn, perform {REGENERATE.fh} {TARGET.fh}1 ally, {RANGE.fh}2"
+        "desc": "Pendant votre tour, effectuez {REGENERATE.fh} {TARGET.fh}1 allié, {RANGE.fh}2"
     },
     "fh-26": {
-        "name": "Truesight Lenses",
+        "name": "Lunettes de Vision Vraie",
         "source": "Fabricant 5",
         "desc": "Pendant votre capacité d'attaque, traitez toutes les cartes de modificateur négatives et {NULL_MODIFIER} comme des cartes {+0_MODIFIER} à la place."
     },
     "fh-27": {
-        "name": "Cloak of Warding",
+        "name": "Cape de Protection",
         "source": "Fabricant 5\nSR-17",
-        "desc": "Immediately after an enemy ends its move ability adjacent to you, perform {PUSH.fh}1 {TARGET.fh} the enemy"
+        "desc": "Immédiatement après qu'un adversaire a terminé sa capacité de déplacement sur un hexagone adjacent au vôtre, effectuez {PUSH.fh}1 {TARGET.fh} l'adversaire"
     },
     "fh-28": {
-        "name": "Sturdy Boots",
+        "name": "Bottes Robustes",
         "source": "Fabricant 5",
         "desc": "Pendant votre tour, ajoutez +1 {MOVE.fh} à toutes vos capacités de déplacement et ignorez le terrain difficile."
     },
     "fh-29": {
-        "name": "Cleaving Axe",
+        "name": "Hache Tranchante",
         "source": "Fabricant 5",
-        "desc": "Après votre attaque de mêlée, un ennemi adjacent à la cible subit {DAMAGE.fh} 2."
+        "desc": "Après votre attaque de mêlée, un adversaire adjacent à la cible subit {DAMAGE.fh} 2."
     },
     "fh-30": {
-        "name": "Parrying Gauntlet",
+        "name": "Gantelet de Parade",
         "source": "Fabricant 5",
-        "desc": "Immediately after an enemy ends its move ability adjacent to you, perform {ATTACK.fh}3 {TARGET.fh} the enemy"
+        "desc": "Immédiatement après qu'un adversaire a terminé sa capacité de déplacement sur un hexagone adjacent au vôtre, effectuez {ATTACK.fh}3 {TARGET.fh} l'adversaire"
     },
     "fh-31": {
-        "name": "Deathproof Charm",
+        "name": "Charme Trompe-la-mort",
         "source": "Fabricant 6\nWR-37\nSO-11",
         "desc": "Lorsque vous subissez {DAMAGE.fh} de n'importe quelle source, annulez les {DAMAGE.fh}."
     },
     "fh-32": {
-        "name": "Shell Armor",
+        "name": "Armure Carapace",
         "source": "Fabricant 6",
         "desc": "Pendant votre tour, effectuez {WARD.fh} sur vous-même"
     },
     "fh-33": {
-        "name": "Volatile Boots",
+        "name": "Bottes Versatiles",
         "source": "Fabricant 6",
         "desc": "Une fois par tour au maximum pendant votre capacité de déplacement, ajoutez +1 {MOVE.fh}, puis retournez cette carte à la fin de votre tour.",
         "backDesc": "Au plus une fois par tour pendant votre capacité de déplacement, subissez {DAMAGE.fh} 1, puis retournez cette carte à la fin de votre tour."
     },
     "fh-34": {
-        "name": "Shrapnel Bomb",
+        "name": "Bombe à Fragmentation",
         "source": "Fabricant 6",
-        "desc": "Après votre attaque à distance, tous les ennemis adjacents à la cible subissent {DAMAGE.fh} 2."
+        "desc": "Après votre attaque à distance, tous les adversaires adjacents à la cible subissent {DAMAGE.fh} 2."
     },
     "fh-35": {
-        "name": "Kite Shield",
+        "name": "Bouclier Efficace",
         "source": "Fabricant 6",
         "desc": "Lorsque vous subissez {DAMAGE.fh} d'une attaque, gagnez {SHIELD.fh} 1 pour cette attaque et empêchez tous les états négatifs de l'attaque."
     },
     "fh-36": {
-        "name": "Plumed Helmet",
+        "name": "Heaume à Plumeau",
         "source": "Fabricant 7",
         "desc": "Lorsque vous êtes attaqué par une attaque avec désavantage, traitez toutes les cartes de modificateur d'attaque {+0_MODIFIER} et {+1_MODIFIER} comme des cartes {-1_MODIFIER}."
     },
     "fh-37": {
-        "name": "Ghost Cloak",
+        "name": "Cape Fantôme",
         "source": "Fabricant 7\nSR-36",
-        "desc": "During your turn suffer {DAMAGE.fh}3 to perform {INVISIBLE.fh} self"
+        "desc": "Pendant votre tour, subissez {DAMAGE.fh}3 pour effectuer {INVISIBLE.fh} sur vous-même"
     },
     "fh-38": {
-        "name": "Duelists Shoes",
+        "name": "Poulaines de Duelliste",
         "source": "Fabricant 7",
-        "desc": "Pendant votre tour, effectuez : {MOVE.fh} 2 Ce déplacement doit se terminer adjacent à un ennemi."
+        "desc": "Pendant votre tour, effectuez : {MOVE.fh} 2 Ce déplacement doit se terminer adjacent à un adversaire."
     },
     "fh-39": {
-        "name": "Abyss Axe",
+        "name": "Hache des Abysses",
         "source": "Fabricant 7\nQuête Personnelle 19",
-        "desc": "During your attack ability, add +3 {ATTACK.fh} and {PIERCE.fh}1 to one attack targeting a Frozen Corpse, Ice Wraith, or Living Doom."
+        "desc": "Pendant votre capacité d'attaque, ajoutez +3 {ATTACK.fh} et {PIERCE.fh}1 à une attaque ciblant un Cadavre Gelé, un Spectre des Glaces ou un Fléau Réanimé."
     },
     "fh-40": {
-        "name": "Heartstrike Bow",
+        "name": "Arc Brise-coeur",
         "source": "Fabricant 7",
         "desc": "Pendant votre tour, ajoutez +1 {ATTACK.fh} et +2 {RANGE.fh} à l'une de vos attaques à distance."
     },
     "fh-41": {
-        "name": "Intricate Charm",
+        "name": "Charme Complexe",
         "source": "Fabricant 8",
         "desc": "Au début du scénario, retirez une carte de modificateur {+0_MODIFIER} et une carte de modificateur {-1_MODIFIER} de votre paquet de modificateurs d'attaque."
     },
     "fh-42": {
-        "name": "Ornate Armor",
+        "name": "Armure Décorée",
         "source": "Fabricant 8",
         "desc": "Lors des deux prochaines sources de {DAMAGE.fh} d'attaques vous ciblant, gagnez {SHIELD.fh} 2 pour ces attaques."
     },
     "fh-43": {
-        "name": "Kicking Boots",
+        "name": "Bottes de Frappe",
         "source": "Fabricant 8",
         "desc": "Pendant votre capacité d'attaque de mêlée, ajoutez {PUSH.fh} 2 à une attaque."
     },
     "fh-44": {
-        "name": "Sword of Absolution",
+        "name": "Épée d'Absolution",
         "source": "Fabricant 8",
         "desc": "Lorsque vous gagneriez {POISON.fh} ou {CURSE.fh}, gagnez {BLESS.fh} à la place."
     },
     "fh-45": {
-        "name": "Master Scepter",
+        "name": "Maître Sceptre",
         "source": "Fabricant 8",
-        "desc": "During your turn, perform: {HEAL.fh}1 {TARGET.fh}1 ally, {RANGE.fh}2, {WARD.fh} "
+        "desc": "Pendant votre tour, effectuez : {HEAL.fh}1 {TARGET.fh}1 allié, {RANGE.fh}2, {WARD.fh} "
     },
     "fh-46": {
-        "name": "Double-Lens Goggles",
+        "name": "Jumelles à Double-Foyer",
         "source": "Fabricant 9",
         "desc": "Pendant votre capacité d'attaque, gagnez l'avantage sur toutes les attaques et traitez toutes les cartes de modificateur {+0_MODIFIER} et {-1_MODIFIER} comme des cartes {+1_MODIFIER} à la place."
     },
     "fh-47": {
-        "name": "Robes of Doom",
+        "name": "Robe de Fatalité",
         "source": "Fabricant 9\nWR-34",
         "desc": "Lors des deux prochaines sources de {DAMAGE.fh} d'attaques vous ciblant, subissez {DAMAGE.fh} 3 pour donner {BRITTLE.fh} à l'attaquant."
     },
     "fh-48": {
-        "name": "Living Shoes",
+        "name": "Espadrilles Animées",
         "source": "Fabricant 9",
-        "desc": "After an ally's heal ability targeting you, perform: {MOVE.fh}2"
+        "desc": "Après la capacité de soin d'un allié vous ciblant, effectuez : {MOVE.fh}2"
     },
     "fh-49": {
-        "name": "Cruel Dagger",
+        "name": "Dague Funeste",
         "source": "Fabricant 9",
         "desc": "Pendant votre capacité d'attaque de mêlée, ajoutez +1 {ATTACK.fh} et {WOUND.fh} à une attaque."
     },
     "fh-50": {
-        "name": "Shield of Reciprocity",
+        "name": "Bouclier de Rétorsion",
         "source": "Fabricant 9",
         "desc": "Lorsque vous subissez {DAMAGE.fh} d'une attaque, gagnez {SHIELD.fh} 1 pour cette attaque et retournez cette carte.",
         "backDesc": "Pendant votre capacité d'attaque de mêlée, ajoutez {PIERCE.fh} 1 à une attaque et retournez cette carte."
     },
     "fh-51": {
-        "name": "Spiked Collar",
+        "name": "Collier à Pointes",
         "source": "Plan aléatoire\nSO-48",
         "desc": "Pendant votre tour, effectuez {WOUND.fh} sur vous-même"
     },
     "fh-52": {
-        "name": "Laser Lens",
+        "name": "Lunettes Laser",
         "source": "Plan aléatoire",
-        "desc": "Pendant votre tour, {FIRE_X} pour que jusqu'à deux ennemis à {RANGE.fh} 4 subissent {DAMAGE.fh} 1."
+        "desc": "Pendant votre tour, {FIRE_X} pour que jusqu'à deux adversaires à {RANGE.fh} 4 subissent {DAMAGE.fh} 1."
     },
     "fh-53": {
-        "name": "Hobnail Boots",
+        "name": "Bottes Ferrées",
         "source": "Plan aléatoire",
         "desc": "Après vous être déplacé de 4 hexagones ou plus pendant votre tour, gagnez {RETALIATE.fh} 1 pour le round."
     },
     "fh-54": {
-        "name": "Restful Slippers",
+        "name": "Pantoufles Reposantes",
         "source": "Plan aléatoire",
         "desc": "Pendant votre repos court, au lieu de perdre une carte au hasard de votre défausse, piochez-y trois cartes au hasard et choisissez celle que vous perdez."
     },
     "fh-55": {
-        "name": "Biting Gauntlet",
+        "name": "Gantelet Acéré",
         "source": "Plan aléatoire",
-        "desc": "Lorsque vous êtes attaqué par un ennemi adjacent, gagnez {RETALIATE.fh} 2 pour cette attaque."
+        "desc": "Lorsque vous êtes attaqué par un adversaire adjacent, gagnez {RETALIATE.fh} 2 pour cette attaque."
     },
     "fh-56": {
-        "name": "Scavenger's Magnet",
+        "name": "Aimant du Récupérateur",
         "source": "Plan aléatoire",
-        "desc": "Pendant votre tour, {EARTH_X} pour ramasser un jeton de butin adjacent."
+        "desc": "Pendant votre tour, {EARTH_X} pour ramasser un pion Butin adjacent."
     },
     "fh-57": {
         "name": "Pelle",
@@ -1765,12 +1765,12 @@ export default {
         "desc": "Pendant votre tour, détruisez un obstacle, terrain dangereux, terrain difficile, terrain verglacé ou piège adjacents."
     },
     "fh-58": {
-        "name": "Slippery Sword",
+        "name": "Épée Traitresse",
         "source": "Plan aléatoire",
         "desc": "Pendant votre capacité d'attaque de mêlée, ajoutez +2 {ATTACK.fh} à une attaque. Après la capacité, gagnez {DISARM.fh}."
     },
     "fh-59": {
-        "name": "Charm of Expertise",
+        "name": "Charme d'Expertise",
         "source": "Plan aléatoire",
         "desc": "Au début du scénario et pour le scénario, gagnez un bénéfice à 1 coche de votre fiche d'aventurier que n'avez pas encore gagné."
     },
@@ -1780,121 +1780,121 @@ export default {
         "desc": "Au début du scénario, emportez jusqu'à deux objets {SMALL-ITEM} supplémentaires."
     },
     "fh-61": {
-        "name": "Spiked Shell",
+        "name": "Carapace à Pointes",
         "source": "Plan aléatoire",
-        "desc": "Immédiatement après avoir été attaqué par un ennemi adjacent, cet ennemi subit {DAMAGE.fh} X, où X est votre valeur de {SHIELD.fh} pour l'attaque."
+        "desc": "Immédiatement après avoir été attaqué par un adversaire adjacent, cet adversaire subit {DAMAGE.fh} X, où X est votre valeur de {SHIELD.fh} pour l'attaque."
     },
     "fh-62": {
-        "name": "Everlasting Boots",
+        "name": "Bottes Éternelles",
         "source": "Plan aléatoire",
         "desc": "Pendant votre capacité de déplacement, ajoutez +1 {MOVE.fh} et gagnez {REGENERATE.fh}"
     },
     "fh-63": {
-        "name": "Shadow Stompers",
+        "name": "Sollerets d'Ombre",
         "source": "Plan aléatoire",
         "desc": "Pendant votre capacité de déplacement, {DARK_X} ajoutez +2 {MOVE.fh}"
     },
     "fh-64": {
-        "name": "Detonator",
+        "name": "Détonateur",
         "source": "Plan aléatoire",
-        "desc": "Lorsqu'une de vos invocations est tuée, tous les ennemis adjacents à celle-ci subissent {DAMAGE.fh} 2 et gagnent {WOUND.fh}."
+        "desc": "Lorsqu'une de vos invocations est tuée, tous les adversaires adjacents à celle-ci subissent {DAMAGE.fh} 2 et gagnent {WOUND.fh}."
     },
     "fh-65": {
-        "name": "Rust Powder",
+        "name": "Poudre Corrosive",
         "source": "Plan aléatoire",
-        "desc": "Pendant votre tour, placez un pion personnage sur un ennemi normal ou élite à {RANGE.fh} 3.  Cet ennemi gagne -1 {SHIELD.fh} pour le scénario. {PERSISTENT}"
+        "desc": "Pendant votre tour, placez un pion personnage sur un adversaire normal ou élite à {RANGE.fh} 3.  Cet adversaire gagne -1 {SHIELD.fh} pour le scénario. {PERSISTENT}"
     },
     "fh-66": {
-        "name": "Amulet of Eternal Life",
+        "name": "Amulette de Vie Éternelle",
         "source": "Scénario 188",
         "desc": "Au début de votre repos, effectuez : {HEAL.fh} 1, sur vous-même"
     },
     "fh-67": {
-        "name": "Converging Lenses",
+        "name": "Lentilles Convergentes",
         "source": "Inconnu",
         "desc": "Lorsque vous êtes attaqué, ajoutez +1 {ATTACK.fh} à l'attaque au lieu de piocher une carte de modificateur d'attaque et retournez cette carte.",
         "backDesc": "Pendant votre capacité d'attaque, ajoutez +1 {ATTACK.fh} à une attaque au lieu de piocher une carte de modificateur d'attaque et retournez cette carte."
     },
     "fh-68": {
-        "name": "Scaled Armor",
+        "name": "Armure d'Écailles",
         "source": "Trésor 22",
         "desc": "Pour les trois prochaines sources de 2 {DAMAGE.fh} ou moins que vous subiriez, annulez les {DAMAGE.fh}."
     },
     "fh-69": {
-        "name": "Feathered Cloak",
+        "name": "Cape à Plumes",
         "source": "Scénario 32",
         "desc": "Lorsque vous subissez {DAMAGE.fh} d'une attaque, {WIND_X} pour gagner {SHIELD.fh} 3 pour cette attaque."
     },
     "fh-70": {
-        "name": "Aesther Robe",
+        "name": "Robe Esther",
         "source": "Scénario 81",
         "desc": "Lorsque vous subissez {DAMAGE.fh} de {RETALIATE.fh}, réduisez les {DAMAGE.fh} à 1. S'ils sont déjà de 1, réduisez-les à 0 à la place."
     },
     "fh-71": {
-        "name": "Bone Boots",
+        "name": "Botte d'Os",
         "source": "Trésor 49",
-        "desc": "After your ability where you kill an enemy, perform: {MOVE.fh}4"
+        "desc": "Après votre capacité pendant laquelle vous avez éliminé un adversaire, effectuez : {MOVE.fh}4"
     },
     "fh-72": {
-        "name": "Oak Staff",
+        "name": "Bâton de Chêne",
         "source": "Trésor 82",
-        "desc": "During your turn, {LIGHT_X} to perform: {BLESS.fh} {RANGE.fh}3"
+        "desc": "Pendant votre tour, {LIGHT_X} pour effectuer : {BLESS.fh} {RANGE.fh}3"
     },
     "fh-73": {
-        "name": "Energizing Baton",
+        "name": "Baguette Énergisante",
         "source": "Scénario 44",
         "desc": "Lorsque vous appliquez un état positif à un allié, un autre allié à {RANGE.fh} 3 gagne le même état."
     },
     "fh-74": {
-        "name": "Shock Grenades",
+        "name": "Grenade à Choc",
         "source": "Scénario 51",
-        "desc": "During your turn, perform {MUDDLE.fh} {RANGE.fh}2 {AOE.CONE_1_1}"
+        "desc": "Pendant votre tour, effectuez {MUDDLE.fh} {RANGE.fh}2 {AOE.CONE_1_1}"
     },
     "fh-75": {
-        "name": "Rose Gauntlet",
+        "name": "Gantelet à la Rose",
         "source": "Scénario 110",
         "desc": "Après qu'un allié à {RANGE.fh} 2 subit {DAMAGE.fh} d'une attaque, retirez tous les états négatifs de cet allié, puis effectuez : {HEAL.fh} 3 {TARGET.fh} l'allié, {PULL.fh} 1"
     },
     "fh-76": {
-        "name": "Horn of Command",
+        "name": "Cor de Commandement",
         "source": "Trésor 70",
         "desc": "Pendant le tour de l'une de vos invocations, décidez comment elle effectue ses capacités."
     },
     "fh-77": {
-        "name": "Chaos Cannon",
+        "name": "Canon Chaotique",
         "source": "Trésor 40",
-        "desc": "During you turn, replace one 1-hex obstacle, hazardous terrain, difficult terrain, or icy terrain tile in an unoccupied hex withing {RANGE.fh}2 with a different type of tile listed above."
+        "desc": "Pendant votre tour, remplacez une tuile Obstacle, Terrain dangereux, Terrain difficile ou Terrain verglacé de 1 hexagone sur un hexagone inoccupé à {RANGE.fh}2 ou moins par une autre tuile de cette liste."
     },
     "fh-78": {
-        "name": "Balanced Scales",
+        "name": "Balance Équilibrée",
         "source": "Trésor 31",
         "desc": "Une fois par tour, pendant votre capacité d'attaque, gagnez Avantage pour une attaque, puis retournez cette carte à la fin de votre tour.",
         "backDesc": "Une fois par tour, pendant votre capacité d'attaque, gagnez Désavantage pour une attaque, puis retournez cette carte à la fin de votre tour."
     },
     "fh-79": {
-        "name": "Roasted Fowl",
+        "name": "Volaille Rôtie",
         "source": "Scénario 93",
         "desc": "Pendant votre tour, ajoutez +1 {ATTACK.fh} à toutes vos attaques et effectuez : {HEAL.fh} 2, sur vous-même"
     },
     "fh-80": {
-        "name": "Living Stone",
+        "name": "Pierre Animée",
         "source": "Trésor 72",
         "desc": "Lorsque vous subiriez 4 {DAMAGE.fh} ou moins d'une attaque, annulez les {DAMAGE.fh} et effectuez {HEAL.fh} X sur vous-même, où X est la quantité de dégâts que vous auriez subis."
     },
     "fh-81": {
-        "name": "Pain Simulacrum",
+        "name": "Poupée de Magie Noire",
         "source": "Trésor 59",
-        "desc": "Lorsque vous subissez 5 {DAMAGE.fh} ou moins d'une attaque, un ennemi à {RANGE.fh} 2 subit également la même quantité de {DAMAGE.fh}."
+        "desc": "Lorsque vous subissez 5 {DAMAGE.fh} ou moins d'une attaque, un adversaire à {RANGE.fh} 2 subit également la même quantité de {DAMAGE.fh}."
     },
     "fh-82": {
-        "name": "Mechanical Cube",
+        "name": "Cube Mécanique",
         "source": "Les deux Trésors 62 et 69",
-        "desc": "Pendant votre capacité de déplacement, après être entré dans un hexagone, donnez {IMMOBILIZE.fh} à tous les ennemis adjacents."
+        "desc": "Pendant votre capacité de déplacement, après être entré dans un hexagone, donnez {IMMOBILIZE.fh} à tous les adversaires adjacents."
     },
     "fh-83": {
         "name": "Potion de Soin",
         "source": "Alchimie",
-        "desc": "During your turn, perform {HEAL.fh}3 self"
+        "desc": "Pendant votre tour, effectuez {HEAL.fh}3 sur vous-même"
     },
     "fh-84": {
         "name": "Potion d'Endurance",
@@ -1917,64 +1917,64 @@ export default {
         "desc": "Pendant votre tour, retirez un état négatif que vous avez.  Cet objet peut être utilisé tant que vous avez {IMPAIR.fh} ou {STUN.fh}."
     },
     "fh-88": {
-        "name": "Fireshield Potion",
+        "name": "Potion Bouclier-de-feu",
         "source": "Alchimie",
-        "desc": "During your turn perform {RETALIATE.fh}1 {RANGE.fh}3 {ROUND}"
+        "desc": "Pendant votre tour, effectuez {RETALIATE.fh}1 {RANGE.fh}3 {ROUND}"
     },
     "fh-89": {
-        "name": "Stoneskin Potion",
+        "name": "Potion Peau-de-pierre",
         "source": "Alchimie",
         "desc": "Pendant votre tour, effectuez {WARD.fh} sur vous-même"
     },
     "fh-90": {
-        "name": "Muscle Potion",
+        "name": "Potion Gros-bras",
         "source": "Alchimie",
         "desc": "Pendant votre tour, effectuez {STRENGTHEN.fh} sur vous-même"
     },
     "fh-91": {
-        "name": "Holy Water",
+        "name": "Eau Bénite",
         "source": "Alchimie",
         "desc": "Pendant votre tour, effectuez {BLESS.fh} sur vous-même"
     },
     "fh-92": {
-        "name": "Renewing Potion",
+        "name": "Potion de Renouvellement",
         "source": "Alchimie",
         "desc": "Pendant votre tour, {RECOVER.fh} jusqu'à deux de vos objets dépensés."
     },
     "fh-93": {
-        "name": "Glancing Potion",
+        "name": "Potion de Ricochet",
         "source": "Alchimie",
         "desc": "Lorsque vous révélez une carte de modificateur d'attaque {NULL_MODIFIER} de votre paquet de modificateurs d'attaque, traitez-la comme une carte {+0_MODIFIER} à la place."
     },
     "fh-94": {
-        "name": "Frenzy Potion",
+        "name": "Potion de Frénésie",
         "source": "Alchimie",
-        "desc": "During your turn, perform: {ATTACK.fh}2"
+        "desc": "Pendant votre tour, effectuez : {ATTACK.fh}2"
     },
     "fh-95": {
-        "name": "Poison Vial",
+        "name": "Fiole de Poison",
         "source": "Alchimie\nSR-14",
-        "desc": "During your turn, perform {POISON.fh} {RANGE.fh}1"
+        "desc": "Pendant votre tour, effectuez {POISON.fh} {RANGE.fh}1"
     },
     "fh-96": {
-        "name": "Flame Vial",
+        "name": "Fiole Inflammable",
         "source": "Alchimie",
-        "desc": "During your turn, perform {WOUND.fh} {RANGE.fh}1"
+        "desc": "Pendant votre tour, effectuez {WOUND.fh} {RANGE.fh}1"
     },
     "fh-97": {
-        "name": "Explosive Vial",
+        "name": "Fiole Explosive",
         "source": "Alchimie",
-        "desc": "During your turn, one enemy withing {RANGE.fh}2 suffers {DAMAGE.fh}2."
+        "desc": "Pendant votre tour, un adversaire à {RANGE.fh}2 ou moins subit {DAMAGE.fh}2."
     },
     "fh-98": {
-        "name": "Unhealthy Mixture",
+        "name": "Mélange Malsain",
         "source": "Alchimie\nWO-10",
         "desc": "Pendant votre tour, effectuez {WOUND.fh}, {POISON.fh} sur vous-même"
     },
     "fh-99": {
         "name": "Potion de Soin Majeure",
         "source": "Alchimie",
-        "desc": "During your turn, perform {HEAL.fh}6 self"
+        "desc": "Pendant votre tour, effectuez {HEAL.fh}6 sur vous-même"
     },
     "fh-100": {
         "name": "Potion d'Endurance Majeure",
@@ -1987,7 +1987,7 @@ export default {
         "desc": "Pendant votre tour, ajoutez +2 {ATTACK.fh} à toutes vos attaques."
     },
     "fh-102": {
-        "name": "Major Element Potion",
+        "name": "Potion Élémentaire Majeure",
         "source": "Alchimie",
         "desc": "Pendant votre tour, {ANY} {ANY}"
     },
@@ -1997,89 +1997,89 @@ export default {
         "desc": "Pendant votre tour, retirez tous les états négatifs que vous avez.  Cet objet peut être utilisé tant que vous avez {IMPAIR.fh} ou {STUN.fh}."
     },
     "fh-104": {
-        "name": "Swiftness Potion",
+        "name": "Potion de Rapidité",
         "source": "Alchimie",
         "desc": "Pendant votre capacité de déplacement, ajoutez +3 {MOVE.fh} et {JUMP.fh}."
     },
     "fh-105": {
-        "name": "Major Fireshield Potion",
+        "name": "Potion Bouclier-de-feu Majeure",
         "source": "Alchimie",
-        "desc": "During your turn, perform, {RETALIATE.fh}2 {RANGE.fh}3 {ROUND}"
+        "desc": "Pendant votre tour, effectuez {RETALIATE.fh}2 {RANGE.fh}3 {ROUND}"
     },
     "fh-106": {
-        "name": "Stonewall Potion",
+        "name": "Potion Mur-de-pierre",
         "source": "Alchimie",
-        "desc": "During your turn, perform {WARD.fh} {TARGET.fh}2 adjacent allies and self"
+        "desc": "Pendant votre tour, effectuez {WARD.fh} {TARGET.fh}2 alliés adjacents et vous-même"
     },
     "fh-107": {
         "name": "Potion de Vigueur",
         "source": "Alchimie",
-        "desc": "During your turn, perform {STRENGTHEN.fh} {TARGET.fh}2 adjacent allies and self"
+        "desc": "Pendant votre tour, effectuez {STRENGTHEN.fh} {TARGET.fh}2 alliés adjacents et vous-même"
     },
     "fh-108": {
-        "name": "Holy Rain",
+        "name": "Pluie Bénite",
         "source": "Alchimie",
-        "desc": "During your turn, perform {BLESS.fh} {TARGET.fh}2 adjacent allies and self"
+        "desc": "Pendant votre tour, effectuez {BLESS.fh} {TARGET.fh}2 alliés adjacents et vous-même"
     },
     "fh-109": {
-        "name": "Major Renewing Potion",
+        "name": "Potion de Renouvellement Majeure",
         "source": "Alchimie",
         "desc": "Pendant votre tour, {RECOVER.fh} jusqu'à l'une de vos potions à 2 plantes perdues."
     },
     "fh-110": {
-        "name": "Precision Potion",
+        "name": "Potion de Précision",
         "source": "Alchimie",
         "desc": "Lorsque vous révélez une carte de modificateur d'attaque {NULL_MODIFIER} de votre paquet de modificateurs d'attaque, traitez-la comme une carte {+2_MODIFIER} à la place."
     },
     "fh-111": {
-        "name": "Major Frenzy Potion",
+        "name": "Potion de Frénésie Majeure",
         "source": "Alchimie",
-        "desc": "During your turn, perform: {ATTACK.fh}4"
+        "desc": "Pendant votre tour, effectuez : {ATTACK.fh}4"
     },
     "fh-112": {
-        "name": "Hammer Potion",
+        "name": "Potion Coup-de-marteau",
         "source": "Alchimie",
-        "desc": "During your turn suffer {DAMAGE.fh}10."
+        "desc": "Pendant votre tour, subissez {DAMAGE.fh}10."
     },
     "fh-113": {
-        "name": "Expertise Potion",
+        "name": "Potion d'Expertise",
         "source": "Alchimie",
         "desc": "Au début de votre tour, défaussez l'une de vos cartes jouées pour effectuer à la fois l'action du haut et l'action du bas de votre autre carte jouée. Au plus une action peut déclencher une icône {CONSUMED.fh}."
     },
     "fh-114": {
-        "name": "Foresight Potion",
+        "name": "Potion d'Anticipation",
         "source": "Alchimie",
         "desc": "Pendant votre tour, révélez la carte supérieure d'un paquet Capacité de monstre. Vous pouvez placer cette carte au bas du paquet."
     },
     "fh-115": {
-        "name": "Infusion Potion",
+        "name": "Potion d'Infusion",
         "source": "Alchimie",
         "desc": "Pendant votre tour, ignorez une icône de consommation élémentaire sur une action que vous avez jouée et gagnez ses effets."
     },
     "fh-116": {
-        "name": "Plague Flask",
+        "name": "Flacon Pestilentiel",
         "source": "Alchimie",
-        "desc": "During your turn perform, {POISON.fh} {RANGE.fh}1 {AOE.CONE_1_1}"
+        "desc": "Pendant votre tour, effectuez {POISON.fh} {RANGE.fh}1 {AOE.CONE_1_1}"
     },
     "fh-117": {
-        "name": "Inferno Flask",
+        "name": "Flacon de Fournaise",
         "source": "Alchimie",
-        "desc": "During your turn perform, {WOUND.fh} {RANGE.fh}1 {AOE.CONE_1_1}"
+        "desc": "Pendant votre tour, effectuez {WOUND.fh} {RANGE.fh}1 {AOE.CONE_1_1}"
     },
     "fh-118": {
-        "name": "Fulminant Flask",
+        "name": "Flacon Détonnant",
         "source": "Alchimie",
-        "desc": "During your turn, one enemy within {RANGE.fh}2 suffers {DAMAGE.fh}4."
+        "desc": "Pendant votre tour, un adversaire à {RANGE.fh}2 ou moins subit {DAMAGE.fh}4."
     },
     "fh-119": {
-        "name": "Deadly Mixture",
+        "name": "Mélange Mortel",
         "source": "Alchimie",
         "desc": "Pendant votre tour, effectuez : {WOUND.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh} sur vous-même"
     },
     "fh-120": {
         "name": "Amulette de Vie",
         "source": "Disponible dès le départ",
-        "desc": "During your turn, perform {HEAL.fh}1 self"
+        "desc": "Pendant votre tour, effectuez {HEAL.fh}1 sur vous-même"
     },
     "fh-121": {
         "name": "Bandeau des Éléments",
@@ -2087,7 +2087,7 @@ export default {
         "desc": "Pendant votre tour, effectuez {ANY_X} : {ANY}"
     },
     "fh-122": {
-        "name": "Warden's Robes",
+        "name": "Robe de Gardien",
         "source": "Disponible dès le départ",
         "desc": "Lorsqu'une de vos invocations subit {DAMAGE.fh} d'une attaque, cette invocation gagne {SHIELD.fh} 2 pour cette attaque."
     },
@@ -2124,15 +2124,15 @@ export default {
     "fh-129": {
         "name": "Jumelles Oeil-de-faucon",
         "source": "Comptoir Commercial 2",
-        "desc": "Pendant votre capacité d'attaque, gagnez Avantage pour toute les attaques."
+        "desc": "Pendant votre capacité d'attaque, gagnez Avantage pour toutes les attaques."
     },
     "fh-130": {
-        "name": "Casque de fer",
+        "name": "Casque de Fer",
         "source": "Comptoir Commercial 2",
-        "desc": "Lorsque vous êtes attaqué, traitez toute carte de modificateur d'attaque {2X_MODIFIER} piochée par l'ennemi comme une carte {+0_MODIFIER} à la place."
+        "desc": "Lorsque vous êtes attaqué, traitez toute carte de modificateur d'attaque {2X_MODIFIER} piochée par l'adversaire comme une carte {+0_MODIFIER} à la place."
     },
     "fh-131": {
-        "name": "Cotte de Maille",
+        "name": "Cotte de Mailles",
         "source": "Comptoir Commercial 2",
         "desc": "Lors des trois prochaines sources de {DAMAGE.fh} d'attaques vous ciblant, vous gagnez {SHIELD.fh} 1 pour ces attaques."
     },
@@ -2142,17 +2142,17 @@ export default {
         "desc": "Au début du scénario, emportez un objet {SMALL-ITEM} supplémentaire."
     },
     "fh-133": {
-        "name": "Nimble Legguards",
+        "name": "Cuissardes d'Agilité",
         "source": "Comptoir Commercial 2",
         "desc": "Quand un allié adjacent est ciblé par une attaque, vous êtes ciblé à sa place, sans tenir compte de la portée ni de la ligne de vue."
     },
     "fh-134": {
-        "name": "Comfortable Shoes",
+        "name": "Poulaines Confortables",
         "source": "Comptoir Commercial 2",
         "desc": "Lorsque vous utilisez l'action inférieure de base d'une carte Capacité, effectuez {MOVE.fh} 3 au lieu de {MOVE.fh} 2."
     },
     "fh-135": {
-        "name": "Armorbane Bow",
+        "name": "Arc Perce-armure",
         "source": "Comptoir Commercial 2",
         "desc": "Pendant votre attaque, ajoutez {PIERCE.fh} 3 à toutes vos attaques à distance."
     },
@@ -2169,7 +2169,7 @@ export default {
     "fh-138": {
         "name": "Bassinet Lourd",
         "source": "Comptoir Commercial 3",
-        "desc": "Lorsqu'un ennemi vous donnerait {DISARM.fh}, {STUN.fh} ou {MUDDLE.fh}, empêchez l'état."
+        "desc": "Lorsqu'un adversaire vous donnerait {DISARM.fh}, {STUN.fh} ou {MUDDLE.fh}, empêchez l'état."
     },
     "fh-139": {
         "name": "Casque à Cornes",
@@ -2177,9 +2177,9 @@ export default {
         "desc": "Après vous être déplacé de 4 hexagones ou plus pendant votre tour, ajoutez +1 {ATTACK.fh} à votre prochaine attaque de mêlée ce tour."
     },
     "fh-140": {
-        "name": "Mantle of Summoning",
+        "name": "Mantel d'Invocation",
         "source": "Comptoir Commercial 3",
-        "desc": "Pendant votre tour, accordez à l'une de vos invocations : {SHIELD.fh} 2. {ROUND}"
+        "desc": "Pendant votre tour, octroyez à l'une de vos invocations : {SHIELD.fh} 2. {ROUND}"
     },
     "fh-141": {
         "name": "Cuir Clouté",
@@ -2194,7 +2194,7 @@ export default {
     "fh-143": {
         "name": "Guêtres d’Endurance",
         "source": "Comptoir Commercial 3",
-        "desc": "After you move 4 or more hexes during your turn, after the move ability perform: {HEAL.fh}1 self."
+        "desc": "Après vous être déplacé d'au moins 4 hexagones pendant votre tour, à la fin de la capacité de déplacement, effectuez : {HEAL.fh}1 sur vous-même."
     },
     "fh-144": {
         "name": "Bâton d'Éminence",
@@ -2214,10 +2214,10 @@ export default {
     "fh-147": {
         "name": "Masque de Terreur",
         "source": "Comptoir Commercial 4",
-        "desc": "During your melee attack, add {PUSH.fh}1."
+        "desc": "Pendant votre attaque de mêlée, ajoutez {PUSH.fh}1."
     },
     "fh-148": {
-        "name": "Circlet of Sanctity",
+        "name": "Bandeau d'Inviolabilité",
         "source": "Comptoir Commercial 4",
         "desc": "Après les trois prochaines attaques ciblant un allié à {RANGE.fh} 2, retournez cette carte.",
         "backDesc": "Pendant votre tour, effectuez : {WARD.fh} {RANGE.fh}3 puis retournez cette carte."
@@ -2228,9 +2228,9 @@ export default {
         "desc": "Lors des cinq prochaines sources de {DAMAGE.fh} d'attaques vous ciblant, vous gagnez {SHIELD.fh} 1 pour ces attaques."
     },
     "fh-150": {
-        "name": "Robes of the Oak",
+        "name": "Robe du Chêne",
         "source": "Comptoir Commercial 4",
-        "desc": "During your turn, perform: {HEAL.fh}3 {TARGET.fh}1 ally, {RANGE.fh}1 "
+        "desc": "Pendant votre tour, effectuez : {HEAL.fh}3 {TARGET.fh}1 allié, {RANGE.fh}1 "
     },
     "fh-151": {
         "name": "Spartiates Sereines",
@@ -2268,14 +2268,14 @@ export default {
         "desc": "Lorsque vous subissez {DAMAGE.fh} d'une attaque, gagnez {SHIELD.fh} 4 pour cette attaque."
     },
     "fh-158": {
-        "name": "Deep Earth Brooch",
+        "name": "Broche de la Terre Profonde",
         "source": "Bijoutier 1",
-        "desc": "During your turn, perform {EARTH_OR_DARK_X}: {HEAL.fh}3 self, {WARD.fh}"
+        "desc": "Pendant votre tour, effectuez {EARTH_OR_DARK_X} : {HEAL.fh}3 sur vous-même, {WARD.fh}"
     },
     "fh-159": {
-        "name": "Glorious Bracelet",
+        "name": "Splendide Bracelet",
         "source": "Bijoutier 1",
-        "desc": "After your attack ability during which one enemy suffered at least {DAMAGE.fh}6, perform: {BLESS.fh}, {BLESS.fh} self"
+        "desc": "Après votre capacité d'attaque pendant laquelle un adversaire a subi au moins {DAMAGE.fh}6, effectuez : {BLESS.fh}, {BLESS.fh} sur vous-même"
     },
     "fh-160": {
         "name": "Boucle d'Oreille Solaire",
@@ -2283,19 +2283,19 @@ export default {
         "desc": "Lorsque vous effectuez un repos court, {RECOVER.fh} jusqu'à trois de vos objets dépensés, et effectuez {HEAL.fh} 2, sur vous-même."
     },
     "fh-161": {
-        "name": "Strategists Ring",
+        "name": "Anneau de Stratège",
         "source": "Bijoutier 2",
         "desc": "À la fin de votre tour, jouez une carte de votre lain et effectuez toutes les capacités persistantes et obligatoires de l'action supérieure ou inférieure de la carte."
     },
     "fh-162": {
-        "name": "Howling Ice Brooch",
+        "name": "Broche de Glace Hurlante",
         "source": "Bijoutier 2",
-        "desc": "During your turn, perform {ICE_OR_WIND_X}: {ATTACK.fh}3 {RANGE.fh}3, {IMMOBILIZE.fh}"
+        "desc": "Pendant votre tour, effectuez {ICE_OR_WIND_X} : {ATTACK.fh}3 {RANGE.fh}3, {IMMOBILIZE.fh}"
     },
     "fh-163": {
-        "name": "Stunning Bracelet",
+        "name": "Bracelet Stupéfiant",
         "source": "Bijoutier 2",
-        "desc": "Pendant votre tour, donnez {STUN.fh} à la moitié (arrondie au supérieur) des ennemis adjacents à vous."
+        "desc": "Pendant votre tour, donnez {STUN.fh} à la moitié (arrondie au supérieur) des adversaires adjacents à vous."
     },
     "fh-164": {
         "name": "Boucle d'Oreille Étoilée",
@@ -2308,208 +2308,208 @@ export default {
         "desc": "À la fin de votre tour, jouez une carte de votre main et effectuez son action inférieure."
     },
     "fh-166": {
-        "name": "Blazing Sun Brooch",
+        "name": "Broche du Soleil Ardent",
         "source": "Bijoutier 3",
-        "desc": "During your turn, perform {FIRE_OR_LIGHT_X}: {ATTACK.fh}3 {DISARM.fh}"
+        "desc": "Pendant votre tour, effectuez {FIRE_OR_LIGHT_X} : {ATTACK.fh}3 {DISARM.fh}"
     },
     "fh-167": {
-        "name": "Attractive Bracelet",
+        "name": "Bracelet Magnétique",
         "source": "Bijoutier 3\nWR-10",
-        "desc": "Au début du tour de l'ennemi, avant qu'il détermine son focus, effectuez : {PULL.fh} 4 {TARGET.fh} l'ennemi, {RANGE.fh} 5, {MUDDLE.fh}"
+        "desc": "Au début du tour de l'adversaire, avant qu'il détermine son focus, effectuez : {PULL.fh} 4 {TARGET.fh} l'adversaire, {RANGE.fh} 5, {MUDDLE.fh}"
     },
     "fh-168": {
-        "name": "Circlet of Eyes",
+        "name": "Bandeau de Regard Perçant",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre capacité d'attaque à distance, ajoutez +1 {TARGET.fh}."
     },
     "fh-169": {
-        "name": "Fateful Charm",
+        "name": "Charme Fatidique",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, révélez la carte du dessus de votre paquet Modificateur d'attaque. Vous pouvez placer cette carte au bas du paquet."
     },
     "fh-170": {
-        "name": "Eye of Truth",
+        "name": "Oeil de Vérité",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, révélez la carte du dessus de chaque paquet Capacité de monstre."
     },
     "fh-171": {
-        "name": "Rejuvenating Charm",
+        "name": "Charme Rajeunissant",
         "source": "Paquet Butin aléatoire",
         "desc": "Chaque fois que vous perdez une carte pour annuler des {DAMAGE.fh}, {RECOVER.fh} jusqu'à une carte de votre défausse et gagnez {REGENERATE.fh}."
     },
     "fh-172": {
-        "name": "Cap of Premonition",
+        "name": "Casquette de Prémonition",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, regardez les quatre cartes du dessus de votre paquet Modificateur d'attaque et replacez-les dans l'ordre de votre choix."
     },
     "fh-173": {
-        "name": "Multi Colored Cloak",
+        "name": "Cape Multicolore",
         "source": "Paquet Butin aléatoire",
         "desc": "Lorsque vous êtes attaqué : {ANY}."
     },
     "fh-174": {
-        "name": "Magnetic Cape",
+        "name": "Cape Magnétique",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, effectuez : {TELEPORT.fh} 20 Cette téléportation doit se terminer dans un hexagone adjacent à l'un de vos alliés."
     },
     "fh-175": {
-        "name": "Mirrored Armor",
+        "name": "Armure Miroir",
         "source": "Paquet Butin aléatoire",
         "desc": "Lorsque vous subissez {DAMAGE.fh} d'une attaque, l'attaquant subit une quantité égale de {DAMAGE.fh}."
     },
     "fh-176": {
         "name": "Prestecape",
         "source": "Paquet Butin aléatoire",
-        "desc": "Pendant votre tour, effectuez : {TELEPORT.fh} 4 Cette téléportation doit se terminer dans un hexagone adjacent à l'un de vos ennemis."
+        "desc": "Pendant votre tour, effectuez : {TELEPORT.fh} 4 Cette téléportation doit se terminer dans un hexagone adjacent à l'un de vos adversaires."
     },
     "fh-177": {
-        "name": "Boots of Transference",
+        "name": "Bottes de Passation",
         "source": "Paquet Butin aléatoire",
         "desc": "Lorsque vous déclenchez un piège en entrant dans son hexagone, vous pouvez appliquer ses effets à une figurine à {RANGE.fh} 3 au lieu de vous-même."
     },
     "fh-178": {
-        "name": "Tranquil Shoes",
+        "name": "Poulaines Paisibles",
         "source": "Paquet Butin aléatoire",
         "desc": "Au début de votre tour où votre initiative est de 60 ou plus et où vous n'effectuez pas de repos long, effectuez {HEAL.fh} 1, sur vous-même."
     },
     "fh-179": {
-        "name": "Burst Boots",
+        "name": "Bottes Jaillissantes",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre capacité de déplacement, ajoutez +4 {MOVE.fh}.  Après la capacité de déplacement, gagnez {IMMOBILIZE.fh}."
     },
     "fh-180": {
-        "name": "Boots of Greed",
+        "name": "Brodequins de Cupidité",
         "source": "Paquet Butin aléatoire",
         "desc": "Lorsque vous ramassez deux jetons ou plus à la fois, effectuez : {BLESS.fh} sur vous-même."
     },
     "fh-181": {
-        "name": "Translocation Rod",
+        "name": "Bâton de Translocalisation",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, désignez deux alliés ou deux monstres normaux ou élites. Chaque figurine désignée se {TELEPORT.fh} simultanément dans l'hexagone occupé par l'autre figurine désignée."
     },
     "fh-182": {
-        "name": "Wing Clippers",
+        "name": "Coupe-ailes",
         "source": "Paquet Butin aléatoire",
         "desc": "Après votre attaque de mêlée, placez un pion personnage sur la cible. La cible perd {FLYING.fh}. {PERSISTENT}"
     },
     "fh-183": {
-        "name": "Decanter of Mists",
+        "name": "Carafe des Brumes",
         "source": "Paquet Butin aléatoire\nTrésor 16",
         "desc": "Pendant votre tour, toutes les figurines gagnent le désavantage sur toutes les attaques à distance et ajoutent 1 {RANGE.fh} à celles-ci ce round. {ROUND}"
     },
     "fh-184": {
-        "name": "Flashing Axe",
+        "name": "Hache Flamboyante",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre capacité d'attaque de mêlée multi-cibles, ajoutez +1 {TARGET.fh}."
     },
     "fh-185": {
-        "name": "Mirrored Knife",
+        "name": "Couteau Miroir",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre capacité d'attaque de mêlée, ajoutez à une attaque tous les états négatifs que vous avez, sauf {BRITTLE.fh}, {BANE.fh} et {STUN.fh}."
     },
     "fh-186": {
-        "name": "Wild Growth Seeds",
+        "name": "Graines à Croissance Rapide",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, créez un obstacle de 1 hexagone adjacent vide."
     },
     "fh-187": {
-        "name": "Dangerous Gear",
+        "name": "Dangereux Engrenage",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, créez un piège {DAMAGE.fh} 3 dans un hexagone vide adjacent."
     },
     "fh-188": {
-        "name": "Freezing Crystal",
+        "name": "Cristal de Glace",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, créez un terrain dangereux, un terrain verglacé ou une tuile Eau de 1 hexagone sur un hexagone sans décor adjacent."
     },
     "fh-189": {
-        "name": "Ring of the Night",
+        "name": "Anneau de la Nuit",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, effectuez {DARK_X} {ANY_X} : {INVISIBLE.fh} sur vous-même"
     },
     "fh-190": {
-        "name": "White Card",
+        "name": "Carte Blanche",
         "source": "Paquet Butin aléatoire",
-        "desc": "Pendant votre tour, placez un pion personnage sur un ennemi normal ou élite à {RANGE.fh} 3. Cet ennemi ajoute -1 {ATTACK.fh} à toutes ses attaques. {PERSISTENT}."
+        "desc": "Pendant votre tour, placez un pion personnage sur un adversaire normal ou élite à {RANGE.fh} 3. Cet adversaire ajoute -1 {ATTACK.fh} à toutes ses attaques. {PERSISTENT}."
     },
     "fh-191": {
-        "name": "Corrupted Scroll",
+        "name": "Parchemin Corrompu",
         "source": "Paquet Butin aléatoire",
         "desc": "Pendant votre tour, effectuez {HEAL.fh} 5 {RANGE.fh} 5 {POISON.fh} {TARGET.fh} la cible de la capacité de soin"
     },
     "fh-192": {
-        "name": "Enticing Bell",
+        "name": "Cloche Envoûtante",
         "source": "Paquet Butin aléatoire",
-        "desc": "À la fin de votre tour, désignez un ennemi à {RANGE.fh} 3. Vous êtes son focus principal et il n'évite pas les hexagones négatifs pour déterminer son déplacement ce round. {ROUND}"
+        "desc": "À la fin de votre tour, désignez un adversaire à {RANGE.fh} 3. Vous êtes son focus principal et il n'évite pas les hexagones négatifs pour déterminer son déplacement ce round. {ROUND}"
     },
     "fh-193": {
-        "name": "Mind Thieving Helmet",
+        "name": "Heaume Perce-Esprit",
         "source": "Scénario 121",
-        "desc": "During your turn, control one enemy withing {RANGE.fh}3: {ATTACK.fh}3"
+        "desc": "Pendant votre tour, contrôlez un adversaire à {RANGE.fh}3 ou moins : {ATTACK.fh}3"
     },
     "fh-194": {
-        "name": "Temporal Amulet",
+        "name": "Amulette Temporelle",
         "source": "Scénario 125",
         "desc": "Lors de la détermination de l'ordre d'initiative, après que toutes les cartes Capacité ont été révélées, augmentez ou diminuez l'initiative d'une famille de monstres de 30."
     },
     "fh-195": {
-        "name": "Tri-Corner Hat",
+        "name": "Tricorne",
         "source": "Trésor 83\nScénario 127",
         "desc": "Pendant votre tour, ajoutez +1 {RANGE.fh} et {PIERCE.fh} 1 à l'une de vos attaques à distance."
     },
     "fh-196": {
-        "name": "Choker of Sacrifice",
+        "name": "Collier de Sacrifice",
         "source": "SR-26",
         "desc": "Pendant votre tour, défaussez une carte Butin autre qu'Objet aléatoire pour effectuer : {HEAL.fh} 5 {RANGE.fh} 2, {WARD.fh}"
     },
     "fh-197": {
-        "name": "Aesther Diadem",
+        "name": "Diadème Esther",
         "source": "WO-77",
         "desc": "Après la détermination de l'ordre d'initiative, échangez une carte de votre main contre une carte que vous avez jouée. Votre initiative n'est pas affectée."
     },
     "fh-198": {
-        "name": "Hunter's Necklace",
+        "name": "Collier de Chasseur",
         "source": "WR-36",
-        "desc": "During your turn, perform {PULL.fh}3 {RANGE.fh}4"
+        "desc": "Pendant votre tour, effectuez {PULL.fh}3 {RANGE.fh}4"
     },
     "fh-199": {
-        "name": "Opulent Shoes",
+        "name": "Poulaines Luxueuses",
         "source": "Trésor 6\nTrésor 78",
         "desc": "Au début du scénario, considérez que vous êtes placé avant vos invocations dans l'ordre d'initiative quand vous déterminez la focalisation des monstres, pour le reste du scénario."
     },
     "fh-200": {
-        "name": "Eventide Scepter",
+        "name": "Sceptre du Crépuscule",
         "source": "Trésor 4",
         "desc": "Pendant votre capacité de soin ciblant un allié, {LIGHT_X} pour ajouter {REGENERATE.fh} à un soin et retourner cette carte.",
         "backDesc": "Pendant votre capacité d'attaque, {DARK_X} pour ajouter {CURSE.fh} à une attaque et retourner cette carte."
     },
     "fh-201": {
-        "name": "Wave Blade",
+        "name": "Lame d'Onde",
         "source": "Scénario 76\nScénario 77",
         "desc": "Pendant votre capacité d'attaque effectuée alors que vous occupez ou êtes adjacent à un hexagone contenant une tuile Eau, ajoutez {PUSH.fh} 1 et {IMMOBILIZE.fh} à une attaque."
     },
     "fh-202": {
-        "name": "Giant Piranha Pig Spine",
+        "name": "Arête de Cochon Piranha Géant",
         "source": "Scénario 83",
         "desc": "Pendant votre capacité d'attaque de mêlée, ajoutez {PIERCE.fh} 2 et {WOUND.fh} à une attaque."
     },
     "fh-203": {
-        "name": "Scepter of Control",
+        "name": "Sceptre de Contrôle",
         "source": "Scénario 119",
-        "desc": "After your ability control one target: {MOVE.fh}2"
+        "desc": "Après votre capacité, contrôlez une cible : {MOVE.fh}2"
     },
     "fh-204": {
-        "name": "Severed Claw",
+        "name": "Pince Sectionnée",
         "source": "Trésor 5",
-        "desc": "Pendant votre tour, un ennemi normal ou élite adjacent subit {DAMAGE.fh} égal à sa valeur de {SHIELD.fh}."
+        "desc": "Pendant votre tour, un adversaire normal ou élite adjacent subit {DAMAGE.fh} égal à sa valeur de {SHIELD.fh}."
     },
     "fh-205": {
-        "name": "Harpoon",
+        "name": "Harpon",
         "source": "Trésor 55",
-        "desc": "During your, perform {ATTACK.fh}2 {RANGE.fh}, {PULL.fh}2"
+        "desc": "Pendant votre tour, effectuez {ATTACK.fh}2 {RANGE.fh}, {PULL.fh}2"
     },
     "fh-206": {
-        "name": "Giant Sword",
+        "name": "Épée Gigantesque",
         "source": "Trésor 42\nSO-30",
         "desc": "Pendant votre capacité d'attaque de mêlée, si vous ne vous êtes pas déplacé ce round, ajoutez +2 {ATTACK.fh} à une attaque, et vous ne pouvez effectuer aucune capacité de déplacement ce tour."
     },
@@ -2519,12 +2519,12 @@ export default {
         "desc": "Après votre attaque, si les points de vie actuels de la cible sont de 3 ou moins, donnez {BANE.fh} à la cible"
     },
     "fh-208": {
-        "name": "Titan Nail",
+        "name": "Clou de Titan",
         "source": "Trésor 52",
-        "desc": "During your attack ability add {PIERCE.fh}3 to one attack targeting an enemy whose current hit point value is 4 or less."
+        "desc": "Pendant votre capacité d'attaque, ajoutez {PIERCE.fh}3 à une attaque ciblant un adversaire dont la valeur actuelle de points de vie est de 4 ou moins."
     },
     "fh-209": {
-        "name": "Sword of Mastery",
+        "name": "Épée de Maîtrise",
         "source": "SR-35",
         "desc": "Pendant votre capacité d'attaque de mêlée, donnez l'avantage à une attaque.  Pour chaque maîtrise que vous avez accomplie, ajoutez également l'un des éléments suivants à l'attaque : +1 {ATTACK.fh}, {WOUND.fh} ou {POISON.fh}. "
     },
@@ -2534,190 +2534,190 @@ export default {
         "desc": "Pendant votre tour, ajoutez +3 {ATTACK.fh} à toutes les attaques effectuées par des Fouineurs vous ciblant ce round. {ROUND}"
     },
     "fh-211": {
-        "name": "Boom Barrel",
+        "name": "Tonneau Boum",
         "source": "B-11",
         "desc": "Pendant votre tour, désignez un hexagone adjacent.  À la fin de votre tour, toutes les figurines à {RANGE.fh} 2 de l'hexagone désigné subissent {DAMAGE.fh} 1."
     },
     "fh-212": {
-        "name": "Elemental Stone",
+        "name": "Pierre Élémentaire",
         "source": "Scénario 66",
         "desc": "Après la détermination de l'initiative, choisissez un élément. Cet élément ne peut pas être infusé ni consommé par un monstre ce round. {ROUND}"
     },
     "fh-213": {
-        "name": "Key of Seasons",
+        "name": "Clé des Saisons",
         "source": "Scénario 106",
         "desc": "Pendant votre capacité d'attaque {ICE_X} pour ajouter {IMMOBILIZE.fh} à une attaque, puis retournez cette carte à la fin de votre tour.",
         "backDesc": "Pendant votre capacité d'attaque {FIRE_X} pour ajouter {WOUND.fh} à une attaque, puis retournez cette carte à la fin de votre tour."
     },
     "fh-214": {
-        "name": "Cup of Ventillion",
+        "name": "Coupe de Ventillion",
         "source": "Scénario 107",
         "desc": "Pendant votre capacité de soin, ajoutez à un soin un de vos états positifs."
     },
     "fh-215": {
-        "name": "Befuddling Mug",
+        "name": "Chope Déroutante",
         "source": "Scénario 128",
         "desc": "Pendant votre tour, ajoutez +1 {ATTACK.fh} et {MUDDLE.fh} à toutes vos attaques. À la fin de votre tour, effectuez : {MUDDLE.fh} sur vous-même"
     },
     "fh-216": {
-        "name": "Tome of Elements",
+        "name": "Grimoire des Éléments",
         "source": "Chaîne d\\'évènements SR-48 ou WR-46",
         "desc": "Pendant votre tour, {FIRE} {ICE} {WIND} {EARTH} {LIGHT} {DARK} Les éléments ne passent pas de fort à déclinant à la fin de ce round. {ROUND}"
     },
     "fh-217": {
-        "name": "Tome of Time",
+        "name": "Grimoire du Temps",
         "source": "Chaîne d\\'évènements SR-49 ou WR-47",
         "desc": "Lors de la détermination de l'ordre d'initiative, après que toutes les cartes Capacité ont été révélées, mélangez chaque paquet Capacité de monstre et piochez une nouvelle carte pour chaque famille de monstres sur le plateau."
     },
     "fh-218": {
-        "name": "Tome of Life",
+        "name": "Grimoire de Vie",
         "source": "Chaîne d\\'évènements SR-47 ou WR-45",
-        "desc": "Pendant votre tour, retirez tous les états de toutes les figurines, puis accordez à toutes les figurines : {HEAL.fh} 2, sur vous-même"
+        "desc": "Pendant votre tour, retirez tous les états de toutes les figurines, puis octroyez à toutes les figurines : {HEAL.fh} 2, sur vous-même"
     },
     "fh-219": {
-        "name": "Tome of Conflict",
+        "name": "Grimoire de Bataille",
         "source": "Scénario 134\n",
         "desc": "Pendant votre tour, toutes les figurines gagnent {STRENGTHEN.fh}. Jusqu'à ce qu'un monstre soit tué, la première carte de modificateur d'attaque piochée pour chaque attaque est traitée comme cumulative. {PERSISTENT}"
     },
     "fh-220": {
-        "name": "Belaras Quill",
+        "name": "Plume de Belara",
         "source": "Scénario 135",
         "desc": "Pendant votre tour, {RECOVER.fh} jusqu'à un objet Tome."
     },
     "fh-221": {
-        "name": "Ice Shiv",
+        "name": "Surin de Glace",
         "source": "Trésor 84",
         "desc": "Pendant votre capacité d'attaque de mêlée, {ICE_X} pour ajouter {PIERCE.fh} 3 à une attaque."
     },
     "fh-222": {
-        "name": "Black Box",
+        "name": "Boîte Noire",
         "source": "Trésor 36",
         "desc": "Pendant votre tour, défaussez deux cartes de votre main pour effectuer : {HEAL.fh} 6, sur vous-même"
     },
     "fh-223": {
-        "name": "Lightning Rod",
+        "name": "Paratonnerre",
         "source": "Trésor 26",
         "desc": "Après la détermination de l'initiative, tous les monstres vous considèrent comme premier dans l'ordre d'initiative pour déterminer le focus ce round. {ROUND}"
     },
     "fh-224": {
-        "name": "Armor of Empathy",
+        "name": "Armure d'Empathie",
         "source": "Scénario 60",
         "desc": "Après les trois prochaines attaques vous ciblant, retournez cette carte.",
         "backDesc": "Pendant votre tour, effectuez {HEAL.fh} 3 {TARGET.fh} 1 allié, {RANGE.fh} 3, {BLESS.fh} puis retournez cette carte."
     },
     "fh-225": {
-        "name": "Algox Carving",
+        "name": "Fétiche Algox",
         "source": "Trésor 41",
         "desc": "Pendant votre capacité d'attaque de mêlée, {EARTH_X} pour ajouter +1 {ATTACK.fh} à une attaque et retourner cette carte.",
         "backDesc": "Pendant votre capacité d'attaque de mêlée, {WIND_X} pour ajouter {PUSH.fh} 2 à une attaque et retournez cette carte."
     },
     "fh-226": {
-        "name": "Unfettered Arm",
+        "name": "Bras d'Émancipé",
         "source": "Trésor 81\nWR-22",
         "desc": "Pendant votre capacité d'attaque, doublez la valeur numérique de la prochaine carte de modificateur d'attaque que vous piochez. Les cartes de modificateur {2X_MODIFIER} et {NULL_MODIFIER} ne sont pas affectées."
     },
     "fh-227": {
-        "name": "Data Drive",
+        "name": "Lecteur de Données",
         "source": "Trésor 7",
         "desc": "Lors de votre repos court, placez la moitié (arrondissez à l'inférieur) des cartes de votre défausse sur cet objet, perdez aléatoirement une des cartes restantes comme d'habitude, puis piochez les cartes sur cet objet."
     },
     "fh-228": {
-        "name": "Extendable Pole",
+        "name": "Tige Extensible",
         "source": "Trésor 35",
-        "desc": "During your turn, open one unlocked door while withing {RANGE.fh}2."
+        "desc": "Pendant votre tour, ouvrez une porte déverrouillée à {RANGE.fh}2 ou moins."
     },
     "fh-229": {
-        "name": "Exquisite Map",
+        "name": "Carte Raffinée",
         "source": "SO-42",
-        "desc": "During your turn grant one ally withing {RANGE.fh}3: {MOVE.fh}3"
+        "desc": "Pendant votre tour, octroyez à un allié à {RANGE.fh}3 ou moins : {MOVE.fh}3"
     },
     "fh-230": {
-        "name": "Examination Glass",
+        "name": "Lampe d'Observation",
         "source": "SR-26",
         "desc": "Après avoir pioché une carte Butin, piochez une carte supplémentaire, gardez une des deux et placez l'autre au sommet ou en bas du paquet Butin."
     },
     "fh-231": {
-        "name": "Skinning Knife",
+        "name": "Couteau à Dépecer",
         "source": "WR-16",
-        "desc": "Lorsque vous gagnez un jeton de butin, gagnez 3 `peaux` au lieu de piocher une carte Butin."
+        "desc": "Lorsque vous gagnez un pion Butin, gagnez 3 `peaux` au lieu de piocher une carte Butin."
     },
     "fh-232": {
-        "name": "Orchid Wand",
+        "name": "Bâton Orchid",
         "source": "WR-12",
         "desc": "Pendant votre tour, perdez 1 moral pour effectuer : {BLESS.fh} {TARGET.fh} tous les alliés et vous-même"
     },
     "fh-233": {
-        "name": "Dead Raven",
+        "name": "Corbeau Mort",
         "source": "Scénario 13",
         "desc": "Pendant la capacité d'attaque à distance de votre allié, ajoutez {MUDDLE.fh} et {CURSE.fh} à une attaque."
     },
     "fh-234": {
-        "name": "ooze vial",
+        "name": "Fiole de Mucus",
         "source": "Scénario 84",
         "desc": "Pendant votre tour, créez un piège {POISON.fh}, {IMMOBILIZE.fh} dans un hexagone vide à {RANGE.fh} 2."
     },
     "fh-235": {
-        "name": "Small Rat",
+        "name": "Petit Rat",
         "source": "Scénario 93",
-        "desc": "During your turn, loot one loot token within {RANGE.fh}2."
+        "desc": "Pendant votre tour, pillez un pion Butin à {RANGE.fh}2 ou moins."
     },
     "fh-236": {
-        "name": "Cracked Mirror",
+        "name": "Miroir Brisé",
         "source": "Scénario 111",
         "desc": "Pendant votre tour, perdez une carte de votre main pour {RECOVER.fh} une carte de votre pile de butin de niveau égal ou inférieur."
     },
     "fh-237": {
-        "name": "Mesmerizing Seashell",
+        "name": "Coquillage Hypnotique",
         "source": "Scénario 131",
         "desc": "Pendant votre tour, choisissez l'une des six directions. Vous et toutes les figurines à {RANGE.fh} 2 êtes forcés de vous déplacer simultanément de 2 hexagones dans la direction choisie."
     },
     "fh-238": {
-        "name": "Cracked Idol",
+        "name": "Idole Fissurée",
         "source": "Scénario 133",
         "desc": "Lorsque vous seriez épuisé en subissant {DAMAGE.fh}, ramenez vos points de vie à 1 à la place."
     },
     "fh-239": {
         "name": "Oeil du Cyclone",
         "source": "Trésor 53",
-        "desc": "Pendant votre tour, tous les alliés et ennemis à {RANGE.fh} 2 subissent {DAMAGE.fh} 1."
+        "desc": "Pendant votre tour, tous les alliés et adversaires à {RANGE.fh} 2 subissent {DAMAGE.fh} 1."
     },
     "fh-240": {
-        "name": "Demons Gem",
+        "name": "Gemme du Démon",
         "source": "Chaîne d'évènements SO-53",
         "desc": "Lorsque vous échouez un scénario, gagnez tout de même tous les {CHECK} de votre objectif de bataille s'il a été accompli."
     },
     "fh-241": {
-        "name": "Shimmering Powder",
+        "name": "Poudre Scintillante",
         "source": "SR-26",
         "desc": "Après avoir pioché une carte Butin, piochez une carte Butin supplémentaire."
     },
     "fh-242": {
-        "name": "Lucky Dice",
+        "name": "Dés Porte-bonheur",
         "source": "SO-4",
         "desc": "Pendant votre capacité d'attaque, considérez les trois prochaines cartes Modificateur d'attaque que vous piochez comme Combo."
     },
     "fh-243": {
-        "name": "Cursed Rock",
+        "name": "Pierre Maudite",
         "source": "WR-3",
         "desc": "Cet objet ne peut pas être vendu et doit être emporté et utilisé à chaque scénario. Au début du scénario, effectuez : {CURSE.fh}, {BLESS.fh} sur vous-même"
     },
     "fh-244": {
-        "name": "Ember Energy Source",
+        "name": "Source d'Énergie de Braise",
         "source": "Scénario 33",
         "desc": "Pendant votre tour, augmentez de 1 la valeur numérique imprimée de {ATTACK.fh}, {MOVE.fh}, {TARGET.fh} ou {RANGE.fh} de l'une de vos capacités."
     },
     "fh-245": {
-        "name": "Ancient Coin",
+        "name": "Pièce Antique",
         "source": "Scénario 136\nBâtiment 74\nCartes Butin",
         "desc": ""
     },
     "fh-246": {
-        "name": "Key Card",
+        "name": "Carte à Puce",
         "source": "Scénario 58\nScénario 59",
         "desc": ""
     },
     "fh-247": {
-        "name": "Trainer's Net",
+        "name": "Filet de Dresseur",
         "source": "Écuries",
         "desc": "Pendant votre tour, capturez un adversaire adjacent dont le nombre de points de vie actuel est 1 ou 2."
     },
@@ -2750,7 +2750,7 @@ export default {
         "name": "Mask of Duality",
         "source": "Récompense de Scénario Solo - {GE}",
         "desc": "Pendant votre capacité d'attaque à distance tant que vous êtes en {RANGED_ICON}, gagnez l'avantage sur une attaque, puis retournez cette carte.",
-        "backDesc": "Lorsqu'un ennemi effectue une attaque vous ciblant tant que vous êtes en {MELEE_ICON}, l'attaquant gagne le désavantage, puis retournez cette carte."
+        "backDesc": "Lorsqu'un adversaire effectue une attaque vous ciblant tant que vous êtes en {MELEE_ICON}, l'attaquant gagne le désavantage, puis retournez cette carte."
     },
     "fh-254": {
         "name": "Ancestral Blade",
@@ -2760,7 +2760,7 @@ export default {
     "fh-255": {
         "name": "Mountain's Heart",
         "source": "Récompense de Scénario Solo - {PY}",
-        "desc": "During your turn, you may create either one 1-hex obstacle or hazardous terrain tile in an empty tile within {RANGE.fh}2. {FIRE_OR_EARTH}"
+        "desc": "Pendant votre tour, vous pouvez créer soit une tuile Obstacle de 1 hexagone, soit une tuile Terrain dangereux sur un hexagone vide à {RANGE.fh}2 ou moins. {FIRE_OR_EARTH}"
     },
     "fh-256": {
         "name": "Sonorous Shard",
@@ -2780,7 +2780,7 @@ export default {
     "fh-259": {
         "name": "Storm Carving",
         "source": "Récompense de Scénario Solo - {SD}",
-        "desc": "Pendant une capacité d'attaque que vous accordez à un allié, ajoutez {PUSH.fh} 2 à l'une de ses attaques, puis retournez cette carte.",
+        "desc": "Pendant une capacité d'attaque que vous octroyez à un allié, ajoutez {PUSH.fh} 2 à l'une de ses attaques, puis retournez cette carte.",
         "backDesc": "Pendant votre capacité d'attaque, ajoutez {PULL.fh} 2 à une attaque, puis retournez cette carte."
     },
     "fh-260": {
@@ -2946,7 +2946,7 @@ export default {
     "gh2-22": {
         "name": "Lance ferrée",
         "source": "Prospérité 2",
-        "desc": "Pendant votre tour, une de vos capacités d'attaque de mêlée sur une seule cible peut ciblez un adversaire à 2 hexagones ou moins."
+        "desc": "Pendant votre tour, une de vos capacités d'attaque de mêlée sur une seule cible peut cibler un adversaire à 2 hexagones ou moins."
     },
     "gh2-23": {
         "name": "Épée Dentelée",
@@ -2966,7 +2966,7 @@ export default {
     "gh2-26": {
         "name": "Jumelles Oeil-de-faucon",
         "source": "Prospérité 3",
-        "desc": "Pendant votre capacité d'attaque, gagnez Avantage pour toute les attaques."
+        "desc": "Pendant votre capacité d'attaque, gagnez Avantage pour toutes les attaques."
     },
     "gh2-27": {
         "name": "Casque de fer",
@@ -3428,12 +3428,12 @@ export default {
     "gh2-117": {
         "name": "Dawnblade",
         "source": "Récompense de {SCENARIO 99}",
-        "desc": "Pendant votre tour, si {DARK} est fort ou déclinant, ajoutez +1 {ATTACK.fh} à votre prochaine attaque de mêlée. Si vous avez emporté Fer du Crépuscule, {LIGHT}."
+        "desc": "Pendant votre tour, si {DARK} est fort ou déclinant, ajoutez +1 {ATTACK.fh} à votre prochaine attaque de mêlée. Si vous avez emporté Duskbrand, {LIGHT}."
     },
     "gh2-118": {
         "name": "Duskbrand",
         "source": "Évènement de Route 33",
-        "desc": "Pendant votre tour, si {LIGHT} est fort ou déclinant, ajoutez +1 {ATTACK.fh} à votre prochaine attaque de mêlée. Si vous avez emporté Lame de l'Aurore, {DARK}."
+        "desc": "Pendant votre tour, si {LIGHT} est fort ou déclinant, ajoutez +1 {ATTACK.fh} à votre prochaine attaque de mêlée. Si vous avez emporté Dawnblade, {DARK}."
     },
     "gh2-119": {
         "name": "Bottes d'Écailles de Wyverne",
@@ -3486,7 +3486,7 @@ export default {
         "backDesc": "Lors de vos trois prochains repos, gagnez {CURSE.fh}. Après le troisième repos, retournez cette carte."
     },
     "gh2-129": {
-        "name": "Haume de la Montagne",
+        "name": "Heaume de la Montagne",
         "source": "{SCENARIO 90} (Trésor #22)",
         "desc": "Lorsque vous êtes attaqué, avant de piocher une carte de modificateur d'attaque, si {EARTH} est fort ou déclinant, gagnez {WARD.fh}."
     },
