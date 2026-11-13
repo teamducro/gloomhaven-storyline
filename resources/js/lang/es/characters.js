@@ -120,7 +120,7 @@ export default {
             "Añade 3 cartas {+0_WHITE} {ICE}",
             "Añade 3 cartas {+0_WHITE} {WIND}",
             "Añade 3 cartas {+0_WHITE} {EARTH}",
-            "Sustituye 2 cartas {+0_WHITE} por 1 carta {+0_WHITE} {FIRE} y 1 carta {+0_WHITE} {EARTH} ",
+            "Sustituye 2 cartas {+0_WHITE} por 1 carta {+0_WHITE} {FIRE} y 1 carta {+0_WHITE} {EARTH}",
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {+0_WHITE} {ICE} y 1 carta {+0_WHITE} {WIND}",
             "Añade 2 cartas {+1_WHITE} {PUSH}1",
             "Añade 1 carta {+1_WHITE} {WOUND}",
@@ -342,14 +342,14 @@ export default {
         ]
     },
     "VW": {
-        "name": "Guardián del Vacío",
+        "name": "Centinela del Vacío",
         "perks": [
             "Retira 2 cartas {-1_WHITE}",
             "Retira 1 carta {-2_WHITE}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {DARK}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {ICE}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {HEAL}1 (Ally)",
-            "Añade 1 carta {+1_WHITE} {HEAL}1 (Ally)",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {HEAL}1 (Aliado)",
+            "Añade 1 carta {+1_WHITE} {HEAL}1 (Aliado)",
             "Añade 1 carta {+1_WHITE} {POISON}",
             "Añade 1 carta {+3_WHITE}",
             "Añade 1 carta {+1_WHITE} {CURSE}"
@@ -377,7 +377,7 @@ export default {
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} {ANY}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {DISARM}",
-            "Sustituye 1 carta {-1_WHITE} por 1 cartas {+1_WHITE} {PUSH}1",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {PUSH}1",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE} {PULL}1",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+0_WHITE} {REFRESH} un objeto gastado",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {SHIELD}1, Personal",
@@ -395,14 +395,14 @@ export default {
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “{+3_WHITE} si {PROJECTILE} {BM_CIRCLE}”",
             "Añade 1 carta {+2_WHITE} {IMMOBILIZE}",
             "Sustituye 1 carta {+1_WHITE} por 2 cartas {+1_WHITE} “{RETALIATE}1 {RANGE}3”",
-            "Añade 2 cartas {+1_WHITE} {PULL}3, Personal, toward the target",
+            "Añade 2 cartas {+1_WHITE} “{PULL}3, Personal, hacia el objetivo”",
             "Añade 1 carta {+0_WHITE} {STRENGTHEN}, Personal",
             "Añade 1 carta {+0_WHITE} {STUN}",
             "Añade 1 carta {+1_WHITE} {WOUND}",
             "Añade 2 cartas {AGAIN} {SHIELD}1, Personal",
             "Añade 2 cartas {AGAIN} {HEAL}1, Personal",
             "Ignora los efectos negativos de los escenarios y retira 1 carta {+0_WHITE}",
-            "Ignora los efectos negativos de los objetos y etira 1 carta {+0_WHITE}"
+            "Ignora los efectos negativos de los objetos y retira 1 carta {+0_WHITE}"
         ]
     },
     "BK": {
@@ -413,7 +413,7 @@ export default {
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {+1_WHITE} “{HEAL}1, (Aliado) {RANGE}2”",
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {+1_WHITE} “{SHIELD}1, (Aliado) {RANGE}2”",
             "Sustituye 1 carta {+1_WHITE} por 1 carta {+2_WHITE} {ANY}",
-            "Añade 1 carta {+1_WHITE} {STRENGTHEN} (Ally) {RANGE}2",
+            "Añade 1 carta {+1_WHITE} {STRENGTHEN} (Aliado) {RANGE}2",
             "Añade 1 carta {AGAIN} {PUSH}1 o {PULL}1, {WIND} y 1 carta {AGAIN} {IMMOBILIZE}, {ICE}",
             "Añade 1 carta {AGAIN} {HEAL}1, {RANGE}3, {ICE} y 1 carta {AGAIN} {PIERCE}2, {FIRE}",
             "Añade 3 cartas {AGAIN} “{ANY_X}:{ANY}”",
@@ -441,32 +441,32 @@ export default {
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {POISON}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “{HEAL}1, {CT_CIRCLE}”",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {HEAL}1, all summoned allies owned",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “{HEAL}1, todas tus invocaciones”",
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-2_WHITE} “{BLESS}, Personal”",
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {+0_WHITE} {IMMOBILIZE} y {PUSH}1",
             "Sustituye 1 carta {+0_WHITE} por 1 carta “{+X_WHITE}, donde X es el número de aliados invocados que controlas”",
-            "Sustituye 1 carta {+1_WHITE} por 2 cartas {+1_WHITE} {AGAIN}{+1_WHITE} if summon is attacking",
+            "Sustituye 1 carta {+1_WHITE} por 2 cartas {+1_WHITE} “{AGAIN}{+1_WHITE} si la que ataca es una invocación”",
             "Añade 1 carta {+0_WHITE} {WOUND}, {PIERCE}1",
             "Añade 1 carta {+1_WHITE} {EARTH}",
-            "Añade 2 cartas {AGAIN} {PIERCE}2, ignora carta {RETALIATE}",
-            "Ignora los efectos negativos de los escenarios y Añade 1 carta {+1_WHITE}"
+            "Añade 2 cartas {AGAIN} “{PIERCE}2, ignora {RETALIATE}”",
+            "Ignora los efectos negativos de los escenarios y añade 1 carta {+1_WHITE}"
         ]
     },
     "FK": {
         "name": "Fire Knight",
         "perks": [
             "Retira 2 cartas {-1_WHITE}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {STRENGTHEN} (Ally)",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {STRENGTHEN} (Aliado)",
             "Sustituye 2 cartas {+0_WHITE} por 2 cartas {+0_WHITE} “{+2_WHITE} si estás en una {LADDER} {FK_CIRCLE}”",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {FIRE}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {WOUND}",
             "Sustituye 2 cartas {+1_WHITE} por 1 carta {+2_WHITE} {FIRE}",
             "Sustituye 2 cartas {+1_WHITE} por 1 carta {+2_WHITE} {WOUND}",
-            "Añade 1 carta {+1_WHITE} {STRENGTHEN} (Ally)",
+            "Añade 1 carta {+1_WHITE} {STRENGTHEN} (Aliado)",
             "Añade 2 cartas {AGAIN} {HEAL}1, {RANGE}1",
             "Añade 2 cartas {AGAIN} {WOUND}",
-            "Ignora los efectos negativos de los objetos y Añade 1 carta {AGAIN} {FIRE}",
-            "Ignora los efectos negativos de los escenarios y Añade 1 carta {AGAIN} {FIRE}"
+            "Ignora los efectos negativos de los objetos y añade 1 carta {AGAIN} {FIRE}",
+            "Ignora los efectos negativos de los escenarios y añade 1 carta {AGAIN} {FIRE}"
         ]
     },
     "HP": {
@@ -476,8 +476,8 @@ export default {
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {AGAIN} {LIGHT}",
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {AGAIN} {EARTH}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {CURSE}",
-            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {SHIELD}1 (Ally)",
-            "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} “Entrega a 1 aliado una carta de habilidad de ‘{PRAYER}’” y 1 carta {+0_WHITE}",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {SHIELD}1 (Aliado)",
+            "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} “Entrega a 1 aliado una carta de Capacidad de ‘{PRAYER}’” y 1 carta {+0_WHITE}",
             "Sustituye 1 carta {+1_WHITE} por 1 carta {+3_WHITE}",
             "Añade 2 cartas {AGAIN} {HEAL}1, Personal o Aliado",
             "Añade 1 carta {+1_WHITE} {WOUND} {MUDDLE}",
@@ -496,7 +496,7 @@ export default {
             "Sustituye 1 carta {-1_WHITE} por 1 carta {AGAIN} {+1_WHITE} “{HO_CIRCLE} y 1 carta {AGAIN} {-1_WHITE} {CURSE}”",
             "Sustituye 2 cartas {+1_WHITE} por 1 carta {+3_WHITE} “{REGENERATE}, Personal”",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} “Crea un foso del Vacío en un hexágono vacío a {RANGE}2”",
-            "Ignora los efectos negativos de los escenarios y Añade 1 carta {+0_WHITE} {WARD}, Personal"
+            "Ignora los efectos negativos de los escenarios y añade 1 carta {+0_WHITE} {WARD}, Personal"
         ]
     },
     "LU": {
@@ -508,11 +508,11 @@ export default {
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {FIRE}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {LIGHT}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {DARK}",
-            "Sustituye 1 carta {-2_WHITE} por 1 carta {-2_WHITE} “Realiza 1 habilidad {GLOW} {LU_CIRCLE}”",
+            "Sustituye 1 carta {-2_WHITE} por 1 carta {-2_WHITE} “Realiza 1 capacidad {GLOW} {LU_CIRCLE}”",
             "Añade 1 carta {+0_WHITE} {ANY}",
             "Añade 1 carta {AGAIN} {+1_WHITE} {HEAL}1, Personal",
             "Añade 1 carta {+0_WHITE} “{POISON}, objetivo: todos los enemigos del área representada {AOE.CLEAVE_0_1}”",
-            "Ignora los efectos negativos de los escenarios y retira 1 cartas {+0_WHITE}",
+            "Ignora los efectos negativos de los escenarios y retira 1 carta {+0_WHITE}",
             "Ignora los efectos negativos de los objetos y añade 1 carta {AGAIN} “{ANY_X}:{ANY}”"
         ]
     },
@@ -523,12 +523,12 @@ export default {
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE}",
             "Sustituye 2 cartas {+0_WHITE} por 2 cartas “{+X_WHITE}, donde X es el valor de veneno del objetivo”",
             "Sustituye 2 cartas {+1_WHITE} por 2 cartas {+2_WHITE}",
-            "Sustituye 1 carta {+0_WHITE} por 2 cartas {AGAIN} “Crea terreno difícil en el hexágono ocupado por el objetivo”",
+            "Sustituye 1 carta {+0_WHITE} por 2 cartas {AGAIN} “Crea terreno impracticable en el hexágono ocupado por el objetivo”",
             "Sustituye 1 carta {+1_WHITE} por 1 carta {+0_WHITE} {WOUND_2}",
-            "Añade 4 cartas {AGAIN} {+0_WHITE} “{+1_WHITE} si el objetivo ocupa terreno difícil”",
-            "Añade 2 cartas {AGAIN} “{INVISIBLE}, Personal, si ocupas terreno difícil”",
-            "Obtén “Daga Envenenada” (objeto gh-11). Puedes llevar 1 objeto {ONE-HAND} adicional que tenga “Dagger” en su nombre.",
-            "Ignora daño, efectos negativos y modificadores de los eventos, y retira 1 carta {-1_WHITE}",
+            "Añade 4 cartas {AGAIN} {+0_WHITE} “{+1_WHITE} si el objetivo ocupa terreno impracticable”",
+            "Añade 2 cartas {AGAIN} “{INVISIBLE}, Personal, si ocupas terreno impracticable”",
+            "Obtén “Daga Envenenada” (Objeto gh-11). Puedes llevar 1 objeto {ONE-HAND} adicional que tenga “Dagger” en su nombre.",
+            "Ignora el daño, los estados negativos y los modificadores de los eventos, y retira 1 carta {-1_WHITE}",
             "Ignora los efectos negativos de los escenarios y retira 1 carta {-1_WHITE}"
         ]
     },
@@ -542,7 +542,7 @@ export default {
             "Sustituye 1 carta {+0_WHITE} por 1 carta {AGAIN} “{HEAL}1, Personal, {EMPOWER}”",
             "Una vez por escenario, conviértete en {RM_CIRCLE} tras recoger tu 5.ª ficha de botín",
             "Conviértete en {RM_CIRCLE} cada vez que pierdas una carta para anular el daño que sufres",
-            "Siempre que una de tus habilidades haga que al menos 1 enemigo obtenga {RUPTURE}, inmediatamente después de esa habilidad realiza “{MOVE}1",
+            "Siempre que una de tus capacidades haga que al menos 1 enemigo obtenga {RUPTURE}, inmediatamente después de esa capacidad realiza “{MOVE}1",
             "Ignora los efectos negativos de los escenarios y retira 1 carta {-1_WHITE}"
         ]
     },
@@ -557,7 +557,7 @@ export default {
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {PIERCE}2",
             "Añade 3 cartas {AGAIN} {PIERCE}3",
             "Añade 1 carta {+1_WHITE} {CURSE}",
-            "Añade 1 carta {AGAIN} ADD {TARGET}",
+            "Añade 1 carta {AGAIN} “Añade {TARGET}”",
             "Sustituye 1 carta {+1_WHITE} por 1 carta {+2_WHITE} {PUSH}2",
             "Ignora los efectos negativos de los escenarios y retira 1 carta {+0_WHITE}"
         ]
@@ -582,7 +582,7 @@ export default {
         "name": "Errante",
         "masteries": [
             "Termina un escenario con tus fichas de Personaje en los últimos espacios de 4 capacidades continuas",
-            "No realices nunca una habilidad de movimiento o ataque con un valor inferior a 4, y realiza al menos una habilidad de movimiento o ataque cada ronda"
+            "No realices nunca una capacidad de movimiento o ataque con un valor inferior a 4, y realiza al menos una capacidad de movimiento o ataque cada ronda"
         ],
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE}",
@@ -624,7 +624,7 @@ export default {
         "name": "Estandarte",
         "masteries": [
             "Ataca al menos a 3 enemigos con 3 capacidades distintas de ataque con efecto de zona",
-            "Realiza una habilidad de invocación de {BANNER} en tu primer turno y mantén el estandarte con vida y a {RANGE.fh}3 de ti durante todo el escenario"
+            "Realiza una capacidad de invocación de {BANNER} en tu primer turno y mantén el estandarte con vida y a {RANGE.fh}3 de ti durante todo el escenario"
         ],
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta “{SHIELD.fh}1” {AGAIN}",
@@ -635,7 +635,7 @@ export default {
             "Añade 2 cartas “{HEAL.fh}1, Personal” {AGAIN}",
             "Ignora los efectos {-1} de los objetos y retira 1 carta {-1_WHITE}",
             "Al final de cada uno de tus descansos largos, otorga a 1 aliado a {RANGE.fh}3: {MOVE.fh}2",
-            "Siempre que abras una puerta con una habilidad de movimiento, añade +3{MOVE.fh}",
+            "Siempre que abras una puerta con una capacidad de movimiento, añade +3{MOVE.fh}",
             "Una vez por escenario, durante tu turno, obtén {SHIELD.fh}2 durante la ronda"
         ]
     },
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "IF": {
-        "name": "Infuser",
+        "name": "Inductora",
         "masteries": [
             "Ten 5 bonificaciones {INFUSION_ICON} activas",
             "Mata al menos 4 enemigos, pero no ataques nunca"
@@ -716,11 +716,11 @@ export default {
             "Ignora los efectos de los escenarios",
             "Ignora los efectos {-1} de los objetos. Siempre que quedes agotado, mantén en juego todas tus bonificaciones activas, y tus invocaciones actúan con iniciativa 99 cada ronda",
             "Siempre que hagas un descanso corto, puedes {ANY_X} para {RECOVER.fh} 1 objeto {ONE-HAND} o {TWO-HANDS} gastado",
-            "Una vez por escenario, durante el orden de iniciativa, después de revelar todas las cartas de habilidad, {ANY}"
+            "Una vez por escenario, durante el orden de iniciativa, después de revelar todas las cartas de Capacidad, {ANY}"
         ]
     },
     "PY": {
-        "name": "Pyroclast",
+        "name": "Piroclasto",
         "masteries": [
             "Crea o destruye al menos 1 pieza de obstáculo o terreno peligroso en cada ronda",
             "Mueve enemigos por 6 hexágonos distintos de terreno peligroso que hayas creado en un turno"
@@ -729,7 +729,7 @@ export default {
             "Retira 2 cartas {-1_WHITE}",
             "Retira 1 carta {-2_WHITE}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {WOUND.fh}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “Crea 1 loseta de terreno peligroso de 1 hexágono en un hexágono sin rasgos adyacente al objetivo”",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “Crea 1 pieza de terreno peligroso de 1 hexágono en un hexágono sin accesorios adyacente al objetivo”",
             "Sustituye 2 cartas {+0_WHITE} por 2 cartas {PUSH.fh}2 {AGAIN}",
             "Sustituye 2 cartas {+1_WHITE} por 2 cartas {+2_WHITE}",
             "Añade 2 cartas {+1_WHITE} {FIRE_OR_EARTH}",
@@ -741,14 +741,14 @@ export default {
         ]
     },
     "SH": {
-        "name": "Shattersong",
+        "name": "Quiebrasonata",
         "masteries": [
             "Ten siempre 0 {RESONANCE_ICON} justo antes de obtener {RESONANCE_ICON} al final de cada uno de tus turnos",
-            "Gasta 5 {RESONANCE_ICON} en cada una de 5 habilidades {WAVE} distintas"
+            "Gasta 5 {RESONANCE_ICON} en cada una de 5 capacidades {WAVE} distintas"
         ],
         "perks": [
             "Retira 4 cartas {+0_WHITE}",
-            "Sustituye 2 cartas {-1_WHITE} por 2 cartas {+0_WHITE} “Revela la carta superior del mazo de habilidades de monstruo del objetivo”",
+            "Sustituye 2 cartas {-1_WHITE} por 2 cartas {+0_WHITE} “Revela la carta superior del mazo de capacidades de monstruo del objetivo”",
             "Sustituye 1 carta {-2_WHITE} por 1 carta {-1_WHITE} {STUN.fh}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+0_WHITE} {BRITTLE.fh}",
             "Sustituye 2 cartas {+1_WHITE} por 2 cartas {+2_WHITE} {WIND_OR_LIGHT}",
@@ -761,7 +761,7 @@ export default {
         ]
     },
     "TA": {
-        "name": "Trapper",
+        "name": "Trampero",
         "masteries": [
             "Ten 1 trampa de {HEAL.fh} en el mapa con un valor de al menos 20",
             "Mueve a enemigos por 7 o más trampas con una misma capacidad"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Pain Conduit",
+        "name": "Canalizador de dolor",
         "masteries": [
             "Haz que otras figuras sufran un total de al menos {DAMAGE.fh}40 en una ronda",
             "Empieza un turno con {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} y {MUDDLE.fh}"
@@ -822,7 +822,7 @@ export default {
         "name": "Puño helado",
         "masteries": [
             "{RECOVER.fh} al menos 1 carta de tu pila de descartes cada ronda",
-            "Entra en al menos 10 hexágonos distintos con una habilidad de movimiento y haz que 1 enemigo sufra al menos {DAMAGE.fh}10 con una habilidad de ataque en el mismo turno"
+            "Entra en al menos 10 hexágonos distintos con una capacidad de movimiento y haz que 1 enemigo sufra al menos {DAMAGE.fh}10 con una capacidad de ataque en el mismo turno"
         ],
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} {DISARM.fh}",
@@ -830,10 +830,10 @@ export default {
             "Sustituye 1 carta {-2_WHITE} por 1 carta {+0_WHITE}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} “{SHIELD.fh}1” {AGAIN}",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {ICE_OR_EARTH}",
-            "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} “Crea 1 loseta de terreno helado de 1 hexágono en un hexágono sin rasgos adyacente al objetivo”",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} “Crea 1 pieza de terreno helado de 1 hexágono en un hexágono sin accesorios adyacente al objetivo”",
             "Añade 1 carta {+3_WHITE}",
             "Añade 2 cartas “{HEAL.fh}1, Personal” {AGAIN}",
-            "Ignora los efectos {-1} de los objetos y, siempre que entres en terreno helado con una habilidad de movimiento, puedes ignorar el efecto para añadir +1{MOVE.fh}",
+            "Ignora los efectos {-1} de los objetos y, siempre que entres en terreno helado con una capacidad de movimiento, puedes ignorar el efecto para añadir +1{MOVE.fh}",
             "Siempre que te cures con un descanso largo, puedes {ICE_OR_EARTH_X} para añadir +2{HEAL.fh}",
             "Una vez por escenario, cuando fueras a sufrir {DAMAGE.fh}, puedes anular ese {DAMAGE.fh}"
         ]
@@ -846,8 +846,8 @@ export default {
         ],
         "perks": [
             "Retira 1 carta {-2_WHITE} y 1 carta {+1_WHITE}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “Después de esta habilidad de ataque, otorga a 1 de tus invocaciones: {MOVE.fh}2”",
-            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} “Después de esta habilidad de ataque, {TRANSFER_ICON}”",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “Después de esta capacidad de ataque, otorga a 1 de tus invocaciones: {MOVE.fh}2”",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} “Después de esta capacidad de ataque, {TRANSFER_ICON}”",
             "Añade 1 carta {+1_WHITE} “{HEAL.fh}1, Personal”",
             "Añade 1 carta {+2_WHITE} {MUDDLE.fh}",
             "Añade 2 cartas {POISON.fh} {AGAIN}",
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Metal Mosaic",
+        "name": "Mosaico de Metal",
         "masteries": [
             "No ataques nunca",
             "Durante 4 rondas consecutivas, mueve el indicador de presión hacia arriba o hacia abajo 3 niveles desde donde empezó la ronda ({PRESSURE_LOW_ICON} a {PRESSURE_HIGH_ICON}, o viceversa)"
@@ -877,10 +877,10 @@ export default {
         ]
     },
     "DT": {
-        "name": "Deepwraith",
+        "name": "Espectro abisal",
         "masteries": [
             "Realiza todos tus ataques con Ventaja",
-            "Infunde {DARK} cada ronda"
+            "Imbuye {DARK} cada ronda"
         ],
         "perks": [
             "Retira 2 cartas {-1_WHITE}",
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "Crashing Tide",
+        "name": "Marea restallante",
         "masteries": [
             "No sufras nunca daños por ataques siendo el objetivo de al menos 5 ataques",
             "Al inicio de cada uno de tus descansos, ten más {TIDE_ICON} activos que cartas en tu pila de descartes"
@@ -955,20 +955,20 @@ export default {
             "Ignora los efectos de los escenarios y añade 2 cartas {+1_WHITE}",
             "Siempre que hagas un descanso corto, puedes elegir qué carta pierdes",
             "Las mejoras tuyas y de tus aliados cuestan 5 de oro menos y, siempre que un aliado mejore una carta, obtienes 5 de oro",
-            "Añade 1 carta {+1_WHITE} “{HA} obtiene 1 {RESOLVE_WHITE}” al mazo de modificadores de ataque de monstruos"
+            "Añade 1 carta {+1_WHITE} “{HA} obtiene 1 {RESOLVE_WHITE}” al mazo de Modificadores de ataque de monstruos"
         ]
     },
     "CA": {
         "name": "Cassandra",
         "masteries": [
             "",
-            "Elige como objetivo a 6 figuras con una habilidad que tenga como objetivo a figuras que ocupen hexágonos con {RIFT_WHITE}"
+            "Elige como objetivo a 6 figuras con una capacidad que tenga como objetivo a figuras que ocupen hexágonos con {RIFT_WHITE}"
         ],
         "perks": [
             "Retira 1 carta {-2_WHITE}",
             "Retira 2 cartas {-1_WHITE}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “{BLESS.fh}, Personal o {TARGET.fh}1 aliado”",
-            "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} “Añade +1{ATTACK.fh} si se revela la carta superior del mazo de modificadores de ataque de monstruos”",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} “Añade +1{ATTACK.fh} si se revela la carta superior del mazo de Modificadores de ataque de monstruos”",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {LIGHT_OR_DARK}",
             "Añade 1 carta {+1_WHITE} “Coloca esta carta en tu zona activa. La próxima vez que coloques una {RIFT_WHITE}, descarta esta carta para colocar otra {RIFT_WHITE} a {RANGE.fh}1 de ella” {AGAIN}",
             "Ignora los efectos de los escenarios y añade 2 cartas {+1_WHITE}",
@@ -994,14 +994,14 @@ export default {
             "Ignora los efectos de los escenarios y retira 1 carta {+0_WHITE}",
             "Siempre que hagas un descanso largo, puedes {WIND_OR_DARK}",
             "Una vez por escenario, durante tu turno, todos los enemigos adyacentes a un muro sufren {DAMAGE.fh}1",
-            "Al inicio de la primera ronda de cada escenario, después de revelar todas las cartas de habilidad, controla a 1 enemigo a {RANGE.fh}5: {MOVE.fh}2"
+            "Al inicio de la primera ronda de cada escenario, después de revelar todas las cartas de Capacidad, controla a 1 enemigo a {RANGE.fh}5: {MOVE.fh}2"
         ]
     },
     "BR2": {
         "name": "Bruiser",
         "masteries": [
             "En 3 escenarios distintos, mata a un enemigo al que hayas empujado o atraído esa ronda",
-            "En un solo escenario, a lo largo de 3 rondas consecutivas, juega 6 cartas de habilidad distintas y haz que los enemigos sufran 7 o más de daño durante cada una de esas rondas"
+            "En un solo escenario, a lo largo de 3 rondas consecutivas, juega 6 cartas de Capacidad distintas y haz que los enemigos sufran 7 o más de daño durante cada una de esas rondas"
         ],
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE}",
@@ -1013,21 +1013,21 @@ export default {
             "Añade 1 carta {+3_WHITE}",
             "Añade 1 carta {AGAIN} {DISARM.fh} y 1 carta {AGAIN} {MUDDLE.fh}",
             "Ignora los efectos {-1} de los objetos y añade 2 cartas {+1_WHITE}",
-            "Una vez por escenario, durante tu turno, puedes realizar: {LOOT 1}; si esta habilidad saquea al menos una ficha de dinero, puedes {RECOVER.fh} 1 objeto {BODY}",
-            "Siempre que hagas un descanso largo, añade +1 {MOVE.fh} a tu primera habilidad de movimiento de la ronda siguiente",
+            "Una vez por escenario, durante tu turno, puedes realizar: {LOOT 1}; si esta capacidad saquea al menos una ficha de dinero, puedes {RECOVER.fh} 1 objeto {BODY}",
+            "Siempre que hagas un descanso largo, añade +1 {MOVE.fh} a tu primera capacidad de movimiento de la ronda siguiente",
             "Cada personaje obtiene Ventaja en su primer ataque durante la primera ronda de cada escenario"
         ]
     },
     "CH2": {
         "name": "Corazón Hueco",
         "masteries": [
-            "Durante todo un escenario, crea, destruye o mueve al menos 1 loseta de obstáculo cada ronda",
-            "En un solo escenario, cura 8 o más puntos de vida durante una sola ronda, causa 8 o más de daño con una habilidad de ataque a distancia y causa 8 o más de daño con una habilidad de ataque cuerpo a cuerpo"
+            "Durante todo un escenario, crea, destruye o mueve al menos 1 pieza de obstáculo cada ronda",
+            "En un solo escenario, cura 8 o más puntos de vida durante una sola ronda, causa 8 o más de daño con una capacidad de ataque a distancia y causa 8 o más de daño con una capacidad de ataque cuerpo a cuerpo"
         ],
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {+0_WHITE}",
             "Sustituye 1 carta {-1_WHITE} por 1 carta {+1_WHITE}",
-            "Sustituye 1 carta {+0_WHITE} por 1 carta {AGAIN} {+1_WHITE} “Crea 1 loseta de obstáculo de 1 hexágono en un hexágono vacío adyacente al objetivo”",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {AGAIN} {+1_WHITE} “Crea 1 pieza de obstáculo de 1 hexágono en un hexágono vacío adyacente al objetivo”",
             "Sustituye 1 carta {+0_WHITE} por 2 cartas {+1_WHITE} {PUSH.fh}1",
             "Añade 1 carta {+2_WHITE} {IMMOBILIZE.fh}",
             "Ignora los efectos de los escenarios y añade 1 carta {AGAIN} {MUDDLE.fh}",
@@ -1040,18 +1040,18 @@ export default {
     "MT2": {
         "name": "Ladrona Mental",
         "masteries": [
-            "En un solo escenario, mata a 5 o más enemigos con habilidades de control",
+            "En un solo escenario, mata a 5 o más enemigos con capacidades de control",
             "En un solo escenario, activa el efecto de ataque de 4 Aumentos distintos al menos 3 veces cada uno"
         ],
         "perks": [
-            "Sustituye 2 cartas {-1_WHITE} por 1 carta {+0_WHITE} “Después de la habilidad de ataque, controla al objetivo: {MOVE.fh}1”",
+            "Sustituye 2 cartas {-1_WHITE} por 1 carta {+0_WHITE} “Después de la capacidad de ataque, controla al objetivo: {MOVE.fh}1”",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} “Añade +1 {ATTACK.fh} por cada estado negativo que tenga el objetivo”",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE}",
             "Añade 2 cartas {+1_WHITE} {IMMOBILIZE.fh}",
             "Añade 1 carta {+2_WHITE} {ICE}",
             "Añade 1 carta {AGAIN} “{INVISIBLE.fh}, Personal”",
             "Ignora los efectos de los escenarios y añade 1 carta {AGAIN} {+1_WHITE}",
-            "Siempre que controles el ataque de un enemigo, puedes hacer que el enemigo use tu mazo de modificadores de ataque",
+            "Siempre que controles el ataque de un enemigo, puedes hacer que el enemigo use tu mazo de Modificadores de ataque",
             "Se te considera el último en el orden de iniciativa al determinar el objetivo de los monstruos",
             "Al final de cada uno de tus descansos, puedes {ICE_X}/{DARK_X} para controlar a 1 enemigo a {RANGE.fh}5: {ATTACK.fh}1"
         ]
@@ -1090,7 +1090,7 @@ export default {
             "Añade 1 carta {+2_WHITE} {FIRE}/{ICE}",
             "Ignora los efectos de los escenarios y retira 1 carta {+0_WHITE}",
             "Una vez por escenario, cuando fueras a sufrir {DAMAGE.fh}, puedes obtener {INVISIBLE.fh} y {STUN.fh} para anular ese {DAMAGE.fh}",
-            "Siempre que hagas un descanso corto, si <i>Éter revitalizante</i> está en tu pila de descartes, {RECOVER.fh} primero esa carta",
+            "Siempre que hagas un descanso corto, si <i>Reviving Ether</i> está en tu pila de descartes, {RECOVER.fh} primero esa carta",
             "Al final de cada uno de tus turnos en los que hayas realizado una acción con {LOST.fh}, obtén {BLESS.fh}"
         ]
     },
@@ -1136,7 +1136,7 @@ export default {
     "BS2": {
         "name": "Enjambre de Acero",
         "masteries": [
-            "Realiza 6 habilidades {PERSISTENT}{LOST.fh} distintas, de las cuales no más de 3 sean habilidades de invocación",
+            "Realiza 6 capacidades {PERSISTENT}{LOST.fh} distintas, de las cuales no más de 3 sean capacidades de invocación",
             "Obtén esta maestría cuando consideres que te la mereces"
         ],
         "perks": [
@@ -1156,7 +1156,7 @@ export default {
         "name": "Cazador Silencioso",
         "masteries": [
             "Mata a 20 enemigos que tengan {DOOM}",
-            "En una sola ronda, tú y una de tus invocaciones debéis realizar un total combinado de 6 o más habilidades de ataque"
+            "En una sola ronda, tú y una de tus invocaciones debéis realizar un total combinado de 6 o más capacidades de ataque"
         ],
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {+0_WHITE}",
@@ -1166,7 +1166,7 @@ export default {
             "Añade 1 carta {+3_WHITE}",
             "Añade 1 carta {AGAIN} {STUN.fh}",
             "Ignora los efectos de los escenarios y añade 1 carta {AGAIN} {+1_WHITE}",
-            "Al inicio de cada escenario, revela la carta superior de cada mazo de cartas de habilidad de monstruo del escenario",
+            "Al inicio de cada escenario, revela la carta superior de cada mazo de cartas de Capacidad de monstruo del escenario",
             "Siempre que descanses, después de {RECOVER.fh} tus cartas de tu pila de descartes, puedes jugar 1 carta de tu mano para realizar la acción {DOOM} de esa carta",
             "En el turno de cada una de tus invocaciones, puedes hacer que se salte su turno y en su lugar realice {MOVE.fh}+0 considerándote su objetivo"
         ]
@@ -1195,15 +1195,15 @@ export default {
     "NS2": {
         "name": "Sudario Nocturno",
         "masteries": [
-            "En un solo escenario, infunde o consume {DARK} durante cada uno de tus turnos",
-            "En un solo escenario, realiza una habilidad de ataque durante tu turno 5 rondas consecutivas"
+            "En un solo escenario, imbuye o consume {DARK} durante cada uno de tus turnos",
+            "En un solo escenario, realiza una capacidad de ataque durante tu turno 5 rondas consecutivas"
         ],
         "perks": [
             "Retira 1 carta {-2_WHITE}",
             "Retira 2 cartas {-1_WHITE}",
-            "Sustituye 1 carta {-1_WHITE} por 2 cartas {AGAIN} “Después de la habilidad de ataque, otorga a 1 aliado adyacente o a ti: {TELEPORT.fh}2”",
+            "Sustituye 1 carta {-1_WHITE} por 2 cartas {AGAIN} “Después de la capacidad de ataque, otorga a 1 aliado adyacente o a ti: {TELEPORT.fh}2”",
             "Sustituye 1 carta {NULL_MODIFIER} por 1 carta {-2_WHITE}",
-            "Sustituye 2 cartas {+0_WHITE} por 2 cartas {+1_WHITE} “Si este ataque mata al objetivo, baraja 1 carta {CURSE.fh} en el mazo de modificadores de ataque de monstruos”",
+            "Sustituye 2 cartas {+0_WHITE} por 2 cartas {+1_WHITE} “Si este ataque mata al objetivo, baraja 1 carta {CURSE.fh} en el mazo de Modificadores de ataque de monstruos”",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} {DARK}",
             "Sustituye 1 carta {+1_WHITE} por 1 carta {+0_WHITE} “Coloca 1 desgarro en un hexágono adyacente al objetivo”",
             "Ignora los efectos de los escenarios y añade 2 cartas {+1_WHITE}",
@@ -1230,13 +1230,13 @@ export default {
             "Ignora los efectos de los escenarios y añade 1 carta {+1_WHITE}",
             "Tienes {FLYING.fh}",
             "Siempre que te cures con un descanso largo, puedes retirar {POISON.fh} a 1 aliado para añadir +1 {HEAL.fh}",
-            "Una vez por escenario, cuando un enemigo que tenga peste fuera a morir, primero lo controlas y haces que realice las habilidades de su carta de habilidad, añadiendo peste a todos sus ataques, y después muere"
+            "Una vez por escenario, cuando un enemigo que tenga peste fuera a morir, primero lo controlas y haces que realice las capacidades de su carta de Capacidad, añadiendo peste a todos sus ataques, y después muere"
         ]
     },
     "QM2": {
         "name": "Intendente",
         "masteries": [
-            "En un solo escenario, gasta 50 suministros para refrescar 50 de oro en objetos perdidos 3 veces",
+            "En un solo escenario, gasta 50 suministros para recuperar 50 de oro en objetos perdidos 3 veces",
             "Durante todo un escenario, entrega a ti o a un aliado un objeto del suministro de objetos del Intendente cada ronda, salvo cuando hagas un descanso largo"
         ],
         "perks": [
@@ -1266,15 +1266,15 @@ export default {
             "Sustituye 2 cartas {+0_WHITE} por 1 carta {+1_WHITE} “Puedes obtener {DISARM.fh} para añadir {STUN.fh}”",
             "Añade 2 cartas {+1_WHITE} “Añade +1 {ATTACK.fh} si un aliado tiene una receta activa”",
             "Añade 1 carta {AGAIN} “{HEAL.fh}3, {RANGE.fh}1”",
-            "Añade +1 {HEAL.fh} a todas las curaciones de las cartas de habilidad “Medical Kit”",
+            "Añade +1 {HEAL.fh} a todas las curaciones de las cartas de Capacidad “Medical Pack”",
             "Cada Fase de Ciudad tras completar un escenario, tu donación o la de un aliado al Santuario del Gran Roble es gratuita",
-            "Al final de cada uno de tus descansos, si un aliado tiene una receta activa, obtén 1 carta de habilidad “Medical Kit” y mueve la ficha de la receta activa de un aliado 1 espacio hacia atrás"
+            "Al final de cada uno de tus descansos, si un aliado tiene una receta activa, obtén 1 carta de Capacidad “Medical Pack” y mueve la ficha de la receta activa de un aliado 1 espacio hacia atrás"
         ]
     },
     "SK2": {
         "name": "Guardiana del Sol",
         "masteries": [
-            "En un solo escenario, infunde o consume {LIGHT} durante cada uno de tus turnos",
+            "En un solo escenario, imbuye o consume {LIGHT} durante cada uno de tus turnos",
             "En un solo escenario, causa 8 o más {DAMAGE.fh} con un ataque 3 o más veces"
         ],
         "perks": [
@@ -1314,11 +1314,11 @@ export default {
         "name": "Soultether",
         "masteries": [
             "Realiza 3 acciones de invocación distintas antes de tu primer descanso y mantén esas cartas en tu zona activa durante todo el escenario",
-            "Realiza 6 habilidades de invocación distintas de tus cartas de habilidad durante las primeras rondas de 6 escenarios"
+            "Realiza 6 capacidades de invocación distintas de tus cartas de Capacidad durante las primeras rondas de 6 escenarios"
         ],
         "perks": [
             "Sustituye 1 carta {-2_WHITE} por 1 carta {+0_WHITE}",
-            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “Después de la habilidad de ataque, otorga a 1 de tus invocaciones: {TELEPORT.fh}2”",
+            "Sustituye 1 carta {-1_WHITE} por 1 carta {+0_WHITE} “Después de la capacidad de ataque, otorga a 1 de tus invocaciones: {TELEPORT.fh}2”",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} “{INVISIBLE.fh}, {TARGET.fh}1 de tus invocaciones”",
             "Sustituye 1 carta {+0_WHITE} por 2 cartas {AGAIN} {WOUND.fh}",
             "Sustituye 1 carta {+0_WHITE} por 2 cartas {AGAIN} {POISON.fh}",
@@ -1329,19 +1329,19 @@ export default {
             "Ignora los efectos de los escenarios y añade 2 cartas {+1_WHITE}",
             "Al inicio de cada ronda en la que hagas un descanso largo, todas tus invocaciones obtienen {SHIELD.fh}1 durante la ronda",
             "Una vez por escenario, durante tu turno, {TELEPORT.fh} a una de tus invocaciones a un hexágono vacío adyacente a ti",
-            "Una vez por escenario, durante el orden de iniciativa, después de revelar todas las cartas de habilidad, todas tus invocaciones obtienen {INVISIBLE.fh}"
+            "Una vez por escenario, durante el orden de iniciativa, después de revelar todas las cartas de Capacidad, todas tus invocaciones obtienen {INVISIBLE.fh}"
         ]
     },
     "WF2": {
         "name": "Wildfury",
         "masteries": [
-            "En un solo escenario, infunde o consume {WIND} o {EARTH} durante cada uno de tus turnos",
+            "En un solo escenario, imbuye o consume {WIND} o {EARTH} durante cada uno de tus turnos",
             "En un solo escenario, mata a 4 o más enemigos con ataques de {COMMAND} de 7 o más (tras todas las bonificaciones, antes de los modificadores de ataque)"
         ],
         "perks": [
             "Sustituye 1 carta {-1_WHITE} por 1 carta {AGAIN} “{HEAL.fh}2, {TARGET.fh} Oso”",
             "Sustituye 1 carta {+0_WHITE} por 1 carta {+1_WHITE} {WOUND.fh}",
-            "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} “Añade +1 {ATTACK.fh} si Furia Salvaje y Oso están a {RANGE.fh}4 el uno del otro”",
+            "Sustituye 1 carta {+0_WHITE} por 1 carta {+2_WHITE} “Añade +1 {ATTACK.fh} si el Wildfury y el Oso están a {RANGE.fh}4 el uno del otro”",
             "Sustituye 1 carta {+2_WHITE} por 1 carta {+4_WHITE}",
             "Añade 2 cartas {+1_WHITE} {WIND}/{EARTH}",
             "Añade 1 carta {+2_WHITE} {PUSH.fh}2",

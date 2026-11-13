@@ -14,7 +14,7 @@ export default {
     "gh-3": {
         "name": "Armadura de Piel",
         "source": "Prosperidad nivel 1",
-        "desc": "Para las 2 próximas fuentes de daño de ataque que te tomen como objetivo, obtén  {SHIELD} 1. Añade 2 cartas {-1} a tu mazo de modificadores de ataque.",
+        "desc": "Para las 2 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 2 cartas {-1} a tu mazo de Modificadores de ataque.",
         "faq": "La Armadura de Piel solo otorga el Escudo para el ataque, no hasta el final de la ronda."
     },
     "gh-4": {
@@ -85,7 +85,7 @@ export default {
         "desc": "Puedes llevar 2 objetos {SMALL-ITEM} adicionales."
     },
     "gh-17": {
-        "name": "Talismán Reviltalizador",
+        "name": "Talismán Revitalizador",
         "source": "Prosperidad nivel 2",
         "desc": "Durante tu turno, {REFRESH} 1 de tus objetos {SMALL-ITEM} consumidos."
     },
@@ -112,12 +112,12 @@ export default {
     "gh-22": {
         "name": "Grebas Pesadas",
         "source": "Prosperidad nivel 3",
-        "desc": "Eres inmune a los movimientos forzados por los enemigos o por las mecánicas del escenario. Añade 1 carta {-1} a tu mazo de modificadores de ataque."
+        "desc": "Eres inmune a los movimientos forzados por los enemigos o por las mecánicas del escenario. Añade 1 carta {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-23": {
         "name": "Cota de Malla",
         "source": "Prosperidad nivel 3",
-        "desc": "Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 3 cartas {-1} a tu mazo de modificadores de ataque.",
+        "desc": "Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 3 cartas {-1} a tu mazo de Modificadores de ataque.",
         "faq": "La Cota de Malla solo otorga el Escudo para el ataque, no hasta el final de la ronda."
     },
     "gh-24": {
@@ -180,7 +180,7 @@ export default {
         "name": "Figura de Halcón",
         "source": "Prosperidad nivel 4\nRecompensa de {SCENARIO 98} (Tesoro #79)",
         "desc": "Invocar Halcón de Jade ({FLYING})",
-        "faq": "La carta se trata como una bonificación continua: va al área activa hasta que la invocación muera o se retire la carta (retirando la invocación y consumiendo el objeto). Si la carta se repone y hay una invocación activa de la carta, la invocación activa desaparece."
+        "faq": "La carta se trata como una bonificación continua: va a la zona activa hasta que la invocación muera o se retire la carta (retirando la invocación y consumiendo el objeto). Si la carta se recupera y hay una invocación activa de la carta, la invocación activa desaparece."
     },
     "gh-36": {
         "name": "Botas de Carrera",
@@ -195,7 +195,7 @@ export default {
     "gh-38": {
         "name": "Bacinete Pesado",
         "source": "Prosperidad nivel 5",
-        "desc": "Eres inmune a {STUN} y {MUDDLE}. Añade 2 cartas {-1} a tu mazo de modificadores de ataque."
+        "desc": "Eres inmune a {STUN} y {MUDDLE}. Añade 2 cartas {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-39": {
         "name": "Cadena con Garfio",
@@ -223,9 +223,9 @@ export default {
         "desc": "Al comienzo de una ronda, después de que se hayan revelado todas las cartas de Capacidad, aumenta o disminuye el valor de iniciativa de tu carta principal en 20."
     },
     "gh-44": {
-        "name": "Lóriga de Láminas",
+        "name": "Loriga de Láminas",
         "source": "Prosperidad nivel 6",
-        "desc": "Para las 4 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 4 cartas {-1} a tu mazo de modificadores de ataque."
+        "desc": "Para las 4 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 4 cartas {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-45": {
         "name": "Colgante de Pactos Siniestros",
@@ -256,7 +256,7 @@ export default {
     "gh-50": {
         "name": "Escarpes de Acero",
         "source": "Prosperidad nivel 7",
-        "desc": "Si te mueves 1 hexágono o menos en tu turno, obtén {SHIELD} 1 para el resto de la ronda. Añade 2 cartas {-1} a tu mazo de modificadores de ataque."
+        "desc": "Si te mueves 1 hexágono o menos en tu turno, obtén {SHIELD} 1 para el resto de la ronda. Añade 2 cartas {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-51": {
         "name": "Armadura Sombría",
@@ -331,7 +331,7 @@ export default {
     "gh-65": {
         "name": "Arnés",
         "source": "Prosperidad nivel 9",
-        "desc": "Para las 5 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 5 cartas {-1} a tu mazo de modificadores de ataque."
+        "desc": "Para las 5 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 5 cartas {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-66": {
         "name": "Máscara de Terror",
@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Anillo de Segunda Oportunidad",
-        "source": "Prosperidad nivel 9\nFC Challenge Scenario, Evento Fisura 12 (Tesoro #89)\nSección 103 -> 84 “Gateway to the Firmament” in book",
+        "source": "Prosperidad nivel 9\nEscenario de desafío de Círculos Olvidados, evento de Fisura 12 (Tesoro n.º 89)\nSección 103 -> 84 “Gateway to the Firmament” del libro",
         "desc": "Al final de tu turno, juega 2 cartas de tu mano y realiza un turno adicional durante esta ronda según la iniciativa de tu nueva carta principal (que debe ser posterior a tu iniciativa actual)."
     },
     "gh-71": {
@@ -376,7 +376,7 @@ export default {
     "gh-74": {
         "name": "Armadura Filosa",
         "source": "Objeto aleatorio",
-        "desc": "Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1 y {RETALIATE} 1. Añade 4 cartas {-1} a tu mazo de modificadores de ataque."
+        "desc": "Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1 y {RETALIATE} 1. Añade 4 cartas {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-75": {
         "name": "Diadema de los Elementos",
@@ -386,7 +386,7 @@ export default {
     "gh-76": {
         "name": "Almófar",
         "source": "Objeto aleatorio",
-        "desc": "Mientras estés adyacente a 3 o más monstruos, obtén {SHIELD} 1. Añade 1 carta {-1} a tu mazo de modificadores de ataque."
+        "desc": "Mientras estés adyacente a 3 o más monstruos, obtén {SHIELD} 1. Añade 1 carta {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-77": {
         "name": "Espada Gélida",
@@ -566,7 +566,7 @@ export default {
         "desc": "Cuando te ataquen, si {ICE} está en la columna Fuerte, realiza una acción de “{PUSH} 2” con el atacante como objetivo."
     },
     "gh-112": {
-        "name": "Berbiquí Antigüo",
+        "name": "Berbiquí Antiguo",
         "source": "Recompensa de {SCENARIO 65}\nOpción de {SCENARIO 100}",
         "desc": "Durante tu ataque cuerpo a cuerpo, añade {ATTACK} +2 y {PIERCE} 2 a la acción de ataque entera."
     },
@@ -584,7 +584,7 @@ export default {
         "name": "Martillo de la Montaña",
         "source": "Recompensa de {SCENARIO 82} (Tesoro #62)",
         "desc": "Invocar Espíritu Guerrero",
-        "faq": "La carta se trata como una bonificación continua: va al área activa hasta que la invocación muera o se retire la carta (retirando la invocación y consumiendo el objeto). Si la carta se repone y hay una invocación activa de la carta, la invocación activa desaparece."
+        "faq": "La carta se trata como una bonificación continua: va a la zona activa hasta que la invocación muera o se retire la carta (retirando la invocación y consumiendo el objeto). Si la carta se recupera y hay una invocación activa de la carta, la invocación activa desaparece."
     },
     "gh-116": {
         "name": "Alfanje de Combustión",
@@ -625,7 +625,7 @@ export default {
         "name": "Anillo de Cráneos",
         "source": "Recompensa de {SCENARIO 04} (Tesoro #38)",
         "desc": "Invocar Esqueleto",
-        "faq": "La carta se trata como una bonificación continua: va al área activa hasta que la invocación muera o se retire la carta (retirando la invocación y consumiendo el objeto). Si la carta se repone y hay una invocación activa de la carta, la invocación activa desaparece."
+        "faq": "La carta se trata como una bonificación continua: va a la zona activa hasta que la invocación muera o se retire la carta (retirando la invocación y consumiendo el objeto). Si la carta se recupera y hay una invocación activa de la carta, la invocación activa desaparece."
     },
     "gh-124": {
         "name": "Brújula Maldita",
@@ -648,7 +648,7 @@ export default {
         "desc": "Durante tu turno, realiza una acción de {LOOT 1}."
     },
     "gh-128": {
-        "name": "Incesario Negro",
+        "name": "Incensario Negro",
         "source": "Recompensa de {SCENARIO 90}",
         "desc": "Durante tu turno, inflinge {MUDDLE} a todos los enemigos a {RANGE} 2."
     },
@@ -672,7 +672,7 @@ export default {
         "name": "Núcleo de Energía",
         "source": "Recompensa de {SCENARIO 67}",
         "desc": "Invocar Gólem de acero.",
-        "faq": "La carta se trata como una bonificación continua: va al área activa hasta que la invocación muera o se retire la carta (retirando la invocación y consumiendo el objeto). Si la carta se repone y hay una invocación activa de la carta, la invocación activa desaparece."
+        "faq": "La carta se trata como una bonificación continua: va a la zona activa hasta que la invocación muera o se retire la carta (retirando la invocación y consumiendo el objeto). Si la carta se recupera y hay una invocación activa de la carta, la invocación activa desaparece."
     },
     "gh-133": {
         "name": "Cristal Resonante",
@@ -718,7 +718,7 @@ export default {
         "name": "Cinturón Multiusos",
         "source": "Recompensa de escenario en solitario - {QM}",
         "desc": "Durante tu turno, tú o 1 de tus aliados podéis: {REFRESH} 1 de vuestros objetos gastados o consumidos.",
-        "faq": "Este objeto no puede reponerse."
+        "faq": "Este objeto no puede recuperarse."
     },
     "gh-142": {
         "name": "Ídolo de Fase",
@@ -788,7 +788,7 @@ export default {
     "gh-155": {
         "name": "Armadura antimaldiciones",
         "source": "Recompensa de {SCENARIO 108}",
-        "desc": "Eres inmune a {CURSE}, incluso si has gastado este objeto. Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 3 cartas {-1} a tu mazo de modificadores de ataque."
+        "desc": "Eres inmune a {CURSE}, incluso si has gastado este objeto. Para las 3 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 3 cartas {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-156": {
         "name": "Claymore elemental",
@@ -822,7 +822,7 @@ export default {
     },
     "gh-162": {
         "name": "Dispositivo de apertura de fisuras",
-        "source": "Recompensa de {SCENARIO 112}\nSección 62 “Mechanical Splendor” in book.",
+        "source": "Recompensa de {SCENARIO 112}\nSección 62 “Esplendor mecánico” del libro.",
         "desc": "Durante tu turno, has un movimiento de {TELEPORT} a cualquier hexágono desocupado a 4 hexágonos o menos de ti."
     },
     "gh-163": {
@@ -846,14 +846,14 @@ export default {
         "desc": "Cuando te ataquen, cualquier carta de Modificador de ataque {2X_WHITE} que robe el enemigo se considera {+0_WHITE}."
     },
     "jotl-3": {
-        "name": "Chain Armor",
+        "name": "Armadura de malla",
         "source": "Recompensa de {SCENARIO 2}",
         "desc": "Durante tu turno, obtén {SHIELD} 1 durante el resto de la ronda."
     },
     "jotl-4": {
         "name": "Cuero tachonado",
         "source": "Recompensa de {SCENARIO 2}",
-        "desc": "Cuando te ataquen, el atacante obtiene Desventaja en el ataque and you gain {SHIELD} 1 contra ese ataque."
+        "desc": "Cuando te ataquen, el atacante obtiene Desventaja en el ataque y tú obtienes {SHIELD} 1 contra ese ataque."
     },
     "jotl-5": {
         "name": "Botas gastadas",
@@ -863,7 +863,7 @@ export default {
     "jotl-6": {
         "name": "Zapatos alados",
         "source": "Recompensa de {SCENARIO 2}",
-        "desc": "Durante tu movimiento, add {JUMP} to the entire Move Action.",
+        "desc": "Durante tu movimiento, añade {JUMP} a toda la acción de Movimiento.",
         "faq": "Los Zapatos Alados pueden usarse solo en una única capacidad de Movimiento, no en varias capacidades de Movimiento de una acción (p. ej.: acción con Movimiento, Ataque, Movimiento)."
     },
     "jotl-7": {
@@ -872,7 +872,7 @@ export default {
         "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 1 contra ese ataque."
     },
     "jotl-8": {
-        "name": "Throwing Hammer",
+        "name": "Martillo arrojadizo",
         "source": "Recompensa de {SCENARIO 2}",
         "desc": "Durante tu ataque a distancia, añade {STUN} a un único ataque"
     },
@@ -882,9 +882,9 @@ export default {
         "desc": "Durante tu ataque cuerpo a cuerpo, añade {POISON} a un único ataque."
     },
     "jotl-10": {
-        "name": "Iron Spear",
+        "name": "Lanza de hierro",
         "source": "Recompensa de {SCENARIO 2}",
-        "desc": "Durante un ataque cuerpo a cuerpo que tenga un único objetivo, attack any one enemy wihin 2 hexes"
+        "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo con un único objetivo, ataca a un enemigo cualquiera a 2 hexágonos o menos."
     },
     "jotl-11": {
         "name": "Poción curativa",
@@ -902,9 +902,9 @@ export default {
         "desc": "Durante tu ataque, añade {ATTACK} +1 a tu acción de ataque entera."
     },
     "jotl-14": {
-        "name": "Mana Potion",
+        "name": "Poción de maná",
         "source": "Recompensa de {SCENARIO 4}\n {SCENARIO 4} (Tesoro #16)",
-        "desc": "Durante tu turno, infuse any one element. {ANY}"
+        "desc": "Durante tu turno, imbuye un elemento cualquiera. {ANY}"
     },
     "jotl-15": {
         "name": "Amuleto de vida",
@@ -919,7 +919,7 @@ export default {
     "jotl-17": {
         "name": "Zapatos cómodos",
         "source": "Recompensa de {SCENARIO 9}",
-        "desc": "Cada vez que uses la acción inferior predeterminada de una carta de habilidad, realiza una acción de {MOVE} 3 en lugar de una acción de {MOVE} 2."
+        "desc": "Cada vez que uses la acción inferior predeterminada de una carta de Capacidad, realiza una acción de {MOVE} 3 en lugar de una acción de {MOVE} 2."
     },
     "jotl-18": {
         "name": "Hacha de batalla",
@@ -927,7 +927,7 @@ export default {
         "desc": "Durante tu ataque cuerpo a cuerpo con un solo objetivo, convierte el ataque en: {AOE.CONE_0_1}"
     },
     "jotl-19": {
-        "name": "Black Candle",
+        "name": "Vela negra",
         "source": "Recompensa de {SCENARIO 9}",
         "desc": "Durante tu ataque a distancia, añade {CURSE} a un único ataque."
     },
@@ -942,9 +942,9 @@ export default {
         "desc": "Durante tu ataque a distancia, añade {RANGE} +1 a tu acción de ataque entera."
     },
     "jotl-22": {
-        "name": "Bladed Armor",
+        "name": "Armadura filosa",
         "source": "Recompensa de {SCENARIO 15}",
-        "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 2 contra ese ataque and the attacker suffers 2 damage."
+        "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 2 contra ese ataque y el atacante sufre 2 de daño."
     },
     "jotl-23": {
         "name": "Botas de zancadas",
@@ -957,17 +957,17 @@ export default {
         "desc": "Durante tu ataque a distancia con un solo objetivo, convierte el ataque en: {AOE.CONE_1_1}"
     },
     "jotl-25": {
-        "name": "Barbed Chain",
+        "name": "Cadena espinosa",
         "source": "Recompensa de {SCENARIO 15}",
         "desc": "Durante tu ataque a distancia, añade {PULL} 2 a un único ataque."
     },
     "jotl-26": {
-        "name": "Oak Charm",
+        "name": "Amuleto del Roble",
         "source": "Recompensa de {SCENARIO 15}",
         "desc": "Durante tu turno, realiza una acción de “{BLESS}, {RANGE} 5”."
     },
     "jotl-27": {
-        "name": "Fateful Compass",
+        "name": "Brújula funesta",
         "source": "{SCENARIO 3} (Tesoro #10)",
         "desc": "Durante tu turno, obliga a 1 enemigo dentro de {RANGE} 3 a realizar una acción de “{MOVE} 2”, y tú controlas la acción."
     },
@@ -988,7 +988,7 @@ export default {
         "desc": "Al final de tu turno, juega 1 carta de tu mano y realiza de inmediato la acción inferior de la carta."
     },
     "jotl-31": {
-        "name": "Ring of Strength",
+        "name": "Anillo de fuerza",
         "source": "Recompensa de {SCENARIO 19}\n{SCENARIO 18} (Tesoro #2)",
         "desc": "Durante tu turno, obtén {STRENGTHEN}."
     },
@@ -1003,17 +1003,17 @@ export default {
         "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 4 contra ese ataque."
     },
     "jotl-34": {
-        "name": "Barbed Axe",
+        "name": "Hacha dentada",
         "source": "Recompensa de {SCENARIO 34}",
         "desc": "Durante tu ataque, añade {WOUND} a la acción de ataque entera."
     },
     "jotl-35": {
-        "name": "Robes of Command",
+        "name": "Túnica de mando",
         "source": "Recompensa de {SCENARIO 24}",
-        "desc": "Durante tu turno, one adjacent ally may perform and “{ATTACK} 2” Action."
+        "desc": "Durante tu turno, 1 aliado adyacente puede realizar una acción de “{ATTACK} 2”."
     },
     "jotl-36": {
-        "name": "Jet Boots",
+        "name": "Botas a reacción",
         "source": "Recompensa de {SCENARIO 25}",
         "desc": "Durante tu movimiento, añade “{MOVE} +1 y {JUMP}” a un único movimiento."
     },
@@ -1451,7 +1451,7 @@ export default {
     },
     "cs-qa06": {
         "name": "Auscudec of the Makers",
-        "desc": "Durante tu turno, renuncia a tu acción superior para jugar una acción de invocación de una carta de tu pila de perdidas, ignorando 2 {SCRAP_X}."
+        "desc": "Durante tu turno, renuncia a tu acción superior para jugar una acción de invocación de una carta de tu pila de pérdida, ignorando 2 {SCRAP_X}."
     },
     "cs-rm01": {
         "name": "Serrated Edge",
@@ -1478,92 +1478,92 @@ export default {
         "desc": "Las 2 próximas veces que fueras a perder una carta de tu mano para anular el daño sufrido, descártala en su lugar y obtén {WOUND}."
     },
     "fh-1": {
-        "name": "Spyglass",
+        "name": "Catalejo",
         "source": "Artesano 1",
         "desc": "Durante tu capacidad de Ataque, obtén Ventaja en 1 ataque."
     },
     "fh-2": {
-        "name": "Crude Helmet",
+        "name": "Casco tosco",
         "source": "Artesano 1",
         "desc": "Cuando te ataquen, considera que cualquier carta de Modificador de ataque {2X_MODIFIER} que robe el enemigo es una carta {+1_MODIFIER}."
     },
     "fh-3": {
-        "name": "Traveling Cloak",
+        "name": "Capa de viaje",
         "source": "Artesano 1",
         "desc": "Al inicio del escenario, aumenta tu valor máximo de puntos de vida en 1."
     },
     "fh-4": {
-        "name": "Crude Hide Armor",
+        "name": "Armadura de piel tosca",
         "source": "Artesano 1",
         "desc": "Para los 2 próximos ataques que te tomen como objetivo, el atacante sufre Desventaja."
     },
     "fh-5": {
-        "name": "Crude Boots",
+        "name": "Botas toscas",
         "source": "Artesano 1",
         "desc": "Durante tu capacidad de Movimiento, añade +1 {MOVE.fh}"
     },
     "fh-6": {
-        "name": "Flexible Slippers",
+        "name": "Botines flexibles",
         "source": "Artesano 1",
         "desc": "Durante tu saqueo del final del turno, saquea 1 hexágono adyacente en lugar del hexágono que ocupas."
     },
     "fh-7": {
-        "name": "Crude Bow",
+        "name": "Arco tosco",
         "source": "Artesano 1",
         "desc": "Durante tu turno, añade +1 {RANGE.fh} a 1 de tus ataques a distancia."
     },
     "fh-8": {
-        "name": "Crude Spear",
+        "name": "Lanza tosca",
         "source": "Artesano 1",
         "desc": "Durante tu turno, 1 de tus capacidades de Ataque cuerpo a cuerpo con un solo objetivo puede tener como objetivo a un enemigo situado a 2 hexágonos de distancia."
     },
     "fh-9": {
-        "name": "Protective Scepter",
+        "name": "Cetro protector",
         "source": "Artesano 1",
         "desc": "Durante tu turno, otorga a 1 aliado a {RANGE.fh} 2: {SHIELD.fh} 1. {ROUND}"
     },
     "fh-10": {
-        "name": "Crude Shield",
+        "name": "Escudo tosco",
         "source": "Artesano 1",
         "desc": "Cuando un enemigo vaya a aplicarte un estado negativo, evita sufrir ese estado"
     },
     "fh-11": {
-        "name": "Simple Charm",
+        "name": "Amuleto sencillo",
         "source": "Artesano 2",
-        "desc": "Al inicio del escenario, retira 1 carta de Modificador de ataque {-1_MODIFIER} de tu mazo de modificadores de ataque."
+        "desc": "Al inicio del escenario, retira 1 carta de Modificador de ataque {-1_MODIFIER} de tu mazo de Modificadores de ataque."
     },
     "fh-12": {
-        "name": "Crude Chain Armor",
+        "name": "Cota de malla tosca",
         "source": "Artesano 2",
         "desc": "Cuando sufras {DAMAGE.fh} por un ataque, obtén {SHIELD.fh} 2 contra ese ataque."
     },
     "fh-13": {
-        "name": "Dancing Slippers",
+        "name": "Zapatillas de baile",
         "source": "Artesano 2",
         "desc": "Después de que sufras {DAMAGE.fh} por un ataque, realiza: {MOVE.fh} 2"
     },
     "fh-14": {
-        "name": "Heavy Sword",
+        "name": "Espada pesada",
         "source": "Artesano 2",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade +1 {ATTACK.fh} a 1 ataque."
     },
     "fh-15": {
-        "name": "Reinforced Shield",
+        "name": "Escudo reforzado",
         "source": "Artesano 2",
         "desc": "Cuando un enemigo vaya a aplicarte un estado negativo, evita sufrir ese estado"
     },
     "fh-16": {
-        "name": "Inspiring Helmet",
+        "name": "Casco inspirador",
         "source": "Artesano 3",
         "desc": "Durante tu turno, otorga a todos los aliados adyacentes: {MOVE.fh} 2"
     },
     "fh-17": {
-        "name": "Cured Leather Armor",
+        "name": "Armadura de cuero curtido",
         "source": "Artesano 3\nTesoro 50",
         "desc": "Para los 2 próximos ataques que te tomen como objetivo, el atacante sufre Desventaja."
     },
     "fh-18": {
-        "name": "Rough Boots",
+        "name": "Botas humildes",
         "source": "Artesano 3",
         "desc": "Durante tu turno, añade +1 {MOVE.fh} a todas tus capacidades de Movimiento."
     },
@@ -1573,7 +1573,7 @@ export default {
         "desc": "Durante tu capacidad de Ataque, añade {MUDDLE.fh} a todos tus ataques."
     },
     "fh-20": {
-        "name": "Well Strung Bow",
+        "name": "Arco bien tensado",
         "source": "Artesano 3",
         "desc": "Durante tu turno, añade +1 {RANGE.fh} a todos tus ataques a distancia."
     },
@@ -1583,17 +1583,17 @@ export default {
         "desc": "Mientras estés adyacente a 3 o más enemigos, obtén {SHIELD.fh} 1."
     },
     "fh-22": {
-        "name": "Heavy Chain Armor",
+        "name": "Cota de malla pesada",
         "source": "Artesano 4",
         "desc": "Cuando sufras {DAMAGE.fh} por un ataque, obtén {SHIELD.fh} 3 contra ese ataque."
     },
     "fh-23": {
-        "name": "Sturdy Greaves",
+        "name": "Grebas robustas",
         "source": "Artesano 4",
         "desc": "Al inicio de tu turno, añade -2 {MOVE.fh} a todas tus capacidades de Movimiento para obtener {SHIELD.fh} durante esta ronda. {ROUND}"
     },
     "fh-24": {
-        "name": "Corrupted Blade",
+        "name": "Filo corrupto",
         "source": "Artesano 4\nWR-04",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade {WOUND.fh}, {POISON.fh}, {MUDDLE.fh} a 1 ataque."
     },
@@ -1603,68 +1603,68 @@ export default {
         "desc": "Durante tu turno, realiza {REGENERATE.fh} {TARGET.fh} 1 aliado, {RANGE.fh} 2"
     },
     "fh-26": {
-        "name": "Truesight Lenses",
+        "name": "Anteojos de visión",
         "source": "Artesano 5",
         "desc": "Durante tu capacidad de Ataque, considera todas las cartas de Modificador negativas y {NULL_MODIFIER} como cartas {+0_MODIFIER}."
     },
     "fh-27": {
-        "name": "Cloak of Warding",
+        "name": "Capa de salvaguarda",
         "source": "Artesano 5\nSR-17",
         "desc": "Inmediatamente después de que un enemigo termine su capacidad de Movimiento adyacente a ti, realiza {PUSH.fh} 1 {TARGET.fh} el enemigo"
     },
     "fh-28": {
-        "name": "Sturdy Boots",
+        "name": "Botas robustas",
         "source": "Artesano 5",
         "desc": "Durante tu turno, añade +1 {MOVE.fh} a todas tus capacidades de Movimiento e ignora el terreno impracticable."
     },
     "fh-29": {
-        "name": "Cleaving Axe",
+        "name": "Hacha de verdugo",
         "source": "Artesano 5",
         "desc": "Después de tu ataque cuerpo a cuerpo, 1 enemigo adyacente al objetivo sufre {DAMAGE.fh} 2."
     },
     "fh-30": {
-        "name": "Parrying Gauntlet",
+        "name": "Guantelete de parada",
         "source": "Artesano 5",
         "desc": "Inmediatamente después de que un enemigo termine su capacidad de Movimiento adyacente a ti, realiza {ATTACK.fh} 3 {TARGET.fh} el enemigo"
     },
     "fh-31": {
-        "name": "Deathproof Charm",
+        "name": "Amuleto contra la muerte",
         "source": "Artesano 6\nWR-37\nSO-11",
         "desc": "Cuando sufras {DAMAGE.fh} de cualquier fuente, anula el {DAMAGE.fh}."
     },
     "fh-32": {
-        "name": "Shell Armor",
+        "name": "Armadura de conchas",
         "source": "Artesano 6",
         "desc": "Durante tu turno, realiza {WARD.fh} Personal"
     },
     "fh-33": {
-        "name": "Volatile Boots",
+        "name": "Botas volátiles",
         "source": "Artesano 6",
         "desc": "Una vez por turno como máximo durante tu capacidad de Movimiento, añade +1 {MOVE.fh}; luego da la vuelta a esta carta al final de tu turno.",
         "backDesc": "Una vez por turno como máximo durante tu capacidad de Movimiento, sufre {DAMAGE.fh} 1; luego da la vuelta a esta carta al final de tu turno."
     },
     "fh-34": {
-        "name": "Shrapnel Bomb",
+        "name": "Bomba de metralla",
         "source": "Artesano 6",
         "desc": "Después de tu ataque a distancia, todos los enemigos adyacentes al objetivo sufren {DAMAGE.fh} 2."
     },
     "fh-35": {
-        "name": "Kite Shield",
+        "name": "Escudo de lágrima",
         "source": "Artesano 6",
         "desc": "Cuando sufras {DAMAGE.fh} por un ataque, obtén {SHIELD.fh} 1 contra ese ataque y evita cualquier estado negativo de ese ataque."
     },
     "fh-36": {
-        "name": "Plumed Helmet",
+        "name": "Casco de penacho",
         "source": "Artesano 7",
         "desc": "Cuando te ataquen con un ataque con Desventaja, considera todas las cartas de Modificador de ataque {+0_MODIFIER} y {+1_MODIFIER} como cartas {-1_MODIFIER}."
     },
     "fh-37": {
-        "name": "Ghost Cloak",
+        "name": "Capa fantasmal",
         "source": "Artesano 7\nSR-36",
         "desc": "Durante tu turno, sufre {DAMAGE.fh} 3 para realizar {INVISIBLE.fh} Personal"
     },
     "fh-38": {
-        "name": "Duelists Shoes",
+        "name": "Zapatos de duelista",
         "source": "Artesano 7",
         "desc": "Durante tu turno, realiza: {MOVE.fh} 2 Este movimiento debe terminar adyacente a un enemigo."
     },
@@ -1674,52 +1674,52 @@ export default {
         "desc": "Durante tu capacidad de Ataque, añade +3 {ATTACK.fh} y {PIERCE.fh} 1 a 1 ataque que tenga como objetivo a un Cadáver helado, un Espectro de hielo o una Perdición viviente."
     },
     "fh-40": {
-        "name": "Heartstrike Bow",
+        "name": "Arco clavacorazones",
         "source": "Artesano 7",
         "desc": "Durante tu turno, añade +1 {ATTACK.fh} y +2 {RANGE.fh} a 1 de tus ataques a distancia."
     },
     "fh-41": {
-        "name": "Intricate Charm",
+        "name": "Amuleto intrincado",
         "source": "Artesano 8",
-        "desc": "Al inicio del escenario, retira 1 carta de Modificador {+0_MODIFIER} y 1 carta de Modificador {-1_MODIFIER} de tu mazo de modificadores de ataque."
+        "desc": "Al inicio del escenario, retira 1 carta de Modificador {+0_MODIFIER} y 1 carta de Modificador {-1_MODIFIER} de tu mazo de Modificadores de ataque."
     },
     "fh-42": {
-        "name": "Ornate Armor",
+        "name": "Armadura ornamentada",
         "source": "Artesano 8",
         "desc": "Para las 2 próximas fuentes de {DAMAGE.fh} de ataques que te tomen como objetivo, obtén {SHIELD.fh} 2 contra esos ataques."
     },
     "fh-43": {
-        "name": "Kicking Boots",
+        "name": "Botas de patear",
         "source": "Artesano 8",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade {PUSH.fh} 2 a 1 ataque."
     },
     "fh-44": {
-        "name": "Sword of Absolution",
+        "name": "Espada de absolución",
         "source": "Artesano 8",
         "desc": "Cuando fueras a obtener {POISON.fh} o {CURSE.fh}, obtén {BLESS.fh} en su lugar."
     },
     "fh-45": {
-        "name": "Master Scepter",
+        "name": "Cetro maestro",
         "source": "Artesano 8",
         "desc": "Durante tu turno, realiza: {HEAL.fh} 1 {TARGET.fh} 1 aliado, {RANGE.fh} 2, {WARD.fh}"
     },
     "fh-46": {
-        "name": "Double-Lens Goggles",
+        "name": "Gafas de doble lente",
         "source": "Artesano 9",
         "desc": "Durante tu capacidad de Ataque, obtén Ventaja en todos los ataques y considera todas las cartas de Modificador {+0_MODIFIER} y {-1_MODIFIER} como cartas {+1_MODIFIER}."
     },
     "fh-47": {
-        "name": "Robes of Doom",
+        "name": "Túnica de condena",
         "source": "Artesano 9\nWR-34",
         "desc": "Para las 2 próximas fuentes de {DAMAGE.fh} de ataques que te tomen como objetivo, sufre {DAMAGE.fh} 3 para dar {BRITTLE.fh} al atacante."
     },
     "fh-48": {
-        "name": "Living Shoes",
+        "name": "Zapatos vivientes",
         "source": "Artesano 9",
         "desc": "Después de una capacidad de Curación de un aliado que te tenga como objetivo, realiza: {MOVE.fh} 2"
     },
     "fh-49": {
-        "name": "Cruel Dagger",
+        "name": "Daga cruel",
         "source": "Artesano 9",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade +1 {ATTACK.fh} y {WOUND.fh} a 1 ataque."
     },
@@ -1730,32 +1730,32 @@ export default {
         "backDesc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade {PIERCE.fh} 1 a 1 ataque y da la vuelta a esta carta."
     },
     "fh-51": {
-        "name": "Spiked Collar",
+        "name": "Collar de púas",
         "source": "Diseño aleatorio\nSO-48",
         "desc": "Durante tu turno, realiza {WOUND.fh} Personal"
     },
     "fh-52": {
-        "name": "Laser Lens",
+        "name": "Anteojos láser",
         "source": "Diseño aleatorio",
         "desc": "Durante tu turno, {FIRE_X} para hacer que hasta 2 enemigos a {RANGE.fh} 4 sufran {DAMAGE.fh} 1."
     },
     "fh-53": {
-        "name": "Hobnail Boots",
+        "name": "Botas de clavos",
         "source": "Diseño aleatorio",
         "desc": "Después de que te muevas 4 hexágonos o más durante tu turno, obtén {RETALIATE.fh} 1 durante la ronda."
     },
     "fh-54": {
-        "name": "Restful Slippers",
+        "name": "Zapatillas de descanso",
         "source": "Diseño aleatorio",
         "desc": "Durante tu descanso corto, en lugar de perder al azar 1 carta de tu pila de descartes, roba al azar 3 cartas de tu pila de descartes y elige 1 para perderla."
     },
     "fh-55": {
-        "name": "Biting Gauntlet",
+        "name": "Guantelete mordedor",
         "source": "Diseño aleatorio",
         "desc": "Cuando te ataque un enemigo adyacente, obtén {RETALIATE.fh} 2 contra ese ataque."
     },
     "fh-56": {
-        "name": "Scavenger's Magnet",
+        "name": "Imán de rapiñador",
         "source": "Diseño aleatorio",
         "desc": "Durante tu turno, {EARTH_X} para saquear 1 ficha de botín adyacente."
     },
@@ -1765,32 +1765,32 @@ export default {
         "desc": "Durante tu turno, destruye una pieza adyacente de obstáculo, terreno peligroso, terreno impracticable, terreno helado o trampa."
     },
     "fh-58": {
-        "name": "Slippery Sword",
+        "name": "Espada resbaladiza",
         "source": "Diseño aleatorio",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade +2 {ATTACK.fh} a 1 ataque. Después de la capacidad, obtén {DISARM.fh}."
     },
     "fh-59": {
-        "name": "Charm of Expertise",
+        "name": "Amuleto de soltura",
         "source": "Diseño aleatorio",
         "desc": "Al inicio del escenario, obtén solo durante este escenario 1 pericia de 1 sola marca de tu hoja de personajes que aún no hayas obtenido."
     },
     "fh-60": {
-        "name": "Cloak of Many Pockets",
+        "name": "Capa de muchos bolsillos",
         "source": "Diseño aleatorio",
         "desc": "Al inicio del escenario, lleva hasta 2 objetos {SMALL-ITEM} adicionales."
     },
     "fh-61": {
-        "name": "Spiked Shell",
+        "name": "Coraza de púas",
         "source": "Diseño aleatorio",
         "desc": "Inmediatamente después de que te ataque un enemigo adyacente, ese enemigo sufre {DAMAGE.fh} X, donde X es tu valor de {SHIELD.fh} contra ese ataque."
     },
     "fh-62": {
-        "name": "Everlasting Boots",
+        "name": "Botas eternas",
         "source": "Diseño aleatorio",
         "desc": "Durante tu capacidad de Movimiento, añade +1 {MOVE.fh} y obtén {REGENERATE.fh}"
     },
     "fh-63": {
-        "name": "Shadow Stompers",
+        "name": "Escarpes de sombra",
         "source": "Diseño aleatorio",
         "desc": "Durante tu capacidad de Movimiento, {DARK_X} para añadir +2 {MOVE.fh}"
     },
@@ -1810,7 +1810,7 @@ export default {
         "desc": "Al inicio de tu descanso, realiza: {HEAL.fh} 1 Personal"
     },
     "fh-67": {
-        "name": "Converging Lenses",
+        "name": "Gafas de convergencia",
         "source": "Desconocido",
         "desc": "Cuando te ataquen, añade +1 {ATTACK.fh} al ataque en lugar de robar una carta de Modificador de ataque y da la vuelta a esta carta.",
         "backDesc": "Durante tu capacidad de Ataque, añade +1 {ATTACK.fh} a 1 ataque en lugar de robar una carta de Modificador de ataque y da la vuelta a esta carta."
@@ -1821,7 +1821,7 @@ export default {
         "desc": "Para las 3 próximas fuentes de 2 o menos {DAMAGE.fh} que fueras a sufrir, anula el {DAMAGE.fh}."
     },
     "fh-69": {
-        "name": "Feathered Cloak",
+        "name": "Capa emplumada",
         "source": "Escenario 32",
         "desc": "Cuando sufras {DAMAGE.fh} por un ataque, {WIND_X} para obtener {SHIELD.fh} 3 contra ese ataque."
     },
@@ -1831,17 +1831,17 @@ export default {
         "desc": "Cuando sufras {DAMAGE.fh} por {RETALIATE.fh}, reduce el {DAMAGE.fh} a 1. Si ya es 1, redúcelo a 0 en su lugar."
     },
     "fh-71": {
-        "name": "Bone Boots",
+        "name": "Botas de hueso",
         "source": "Tesoro 49",
         "desc": "Después de tu capacidad en la que mates a un enemigo, realiza: {MOVE.fh} 4"
     },
     "fh-72": {
-        "name": "Oak Staff",
+        "name": "Báculo de roble",
         "source": "Tesoro 82",
         "desc": "Durante tu turno, {LIGHT_X} para realizar: {BLESS.fh} {RANGE.fh} 3"
     },
     "fh-73": {
-        "name": "Energizing Baton",
+        "name": "Porra energizante",
         "source": "Escenario 44",
         "desc": "Cuando apliques un estado positivo a un aliado, otro aliado a {RANGE.fh} 3 obtiene el mismo estado."
     },
@@ -1851,17 +1851,17 @@ export default {
         "desc": "Durante tu turno, realiza {MUDDLE.fh} {RANGE.fh} 2 {AOE.CONE_1_1}"
     },
     "fh-75": {
-        "name": "Rose Gauntlet",
+        "name": "Guantelete de rosa",
         "source": "Escenario 110",
         "desc": "Después de que cualquier aliado a {RANGE.fh} 2 sufra {DAMAGE.fh} por un ataque, elimina todos los estados negativos de ese aliado y luego realiza: {HEAL.fh} 3 {TARGET.fh} el aliado, {PULL.fh} 1"
     },
     "fh-76": {
-        "name": "Horn of Command",
+        "name": "Cuerno de mando",
         "source": "Tesoro 70",
         "desc": "Durante uno de los turnos de tus invocaciones, decide cómo realiza sus capacidades."
     },
     "fh-77": {
-        "name": "Chaos Cannon",
+        "name": "Cañón de caos",
         "source": "Tesoro 40",
         "desc": "Durante tu turno, sustituye 1 pieza de obstáculo, terreno peligroso, terreno impracticable o terreno helado de 1 hexágono en un hexágono desocupado a {RANGE.fh} 2 por otro tipo de pieza de los indicados."
     },
@@ -1882,7 +1882,7 @@ export default {
         "desc": "Cuando fueras a sufrir 4 o menos {DAMAGE.fh} por un ataque, anula el {DAMAGE.fh} y realiza {HEAL.fh} X Personal, donde X es la cantidad de daño que habrías sufrido."
     },
     "fh-81": {
-        "name": "Pain Simulacrum",
+        "name": "Efigie de dolor",
         "source": "Tesoro 59",
         "desc": "Cuando sufras 5 o menos {DAMAGE.fh} por un ataque, 1 enemigo a {RANGE.fh} 2 también sufre la misma cantidad de {DAMAGE.fh}."
     },
@@ -1917,52 +1917,52 @@ export default {
         "desc": "Durante tu turno, elimina 1 estado negativo que tengas. Este objeto puede usarse mientras tengas {IMPAIR.fh} o {STUN.fh}."
     },
     "fh-88": {
-        "name": "Fireshield Potion",
+        "name": "Poción de piroescudo",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {RETALIATE.fh} 1 {RANGE.fh} 3 {ROUND}"
     },
     "fh-89": {
-        "name": "Stoneskin Potion",
+        "name": "Poción de piel pétrea",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {WARD.fh} Personal"
     },
     "fh-90": {
-        "name": "Muscle Potion",
+        "name": "Poción de músculo",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {STRENGTHEN.fh} Personal"
     },
     "fh-91": {
-        "name": "Holy Water",
+        "name": "Agua bendita",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {BLESS.fh} Personal"
     },
     "fh-92": {
-        "name": "Renewing Potion",
+        "name": "Poción revitalizadora",
         "source": "Alquimista",
         "desc": "Durante tu turno, {RECOVER.fh} hasta 2 de tus objetos gastados."
     },
     "fh-93": {
-        "name": "Glancing Potion",
+        "name": "Poción de observación",
         "source": "Alquimista",
-        "desc": "Cuando reveles una carta de Modificador de ataque {NULL_MODIFIER} de tu mazo de modificadores de ataque, considérala una carta {+0_MODIFIER} en su lugar."
+        "desc": "Cuando reveles una carta de Modificador de ataque {NULL_MODIFIER} de tu mazo de Modificadores de ataque, considérala una carta {+0_MODIFIER} en su lugar."
     },
     "fh-94": {
-        "name": "Frenzy Potion",
+        "name": "Poción de frenesí",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza: {ATTACK.fh} 2"
     },
     "fh-95": {
-        "name": "Poison Vial",
+        "name": "Frasco de veneno",
         "source": "Alquimista\nSR-14",
         "desc": "Durante tu turno, realiza {POISON.fh} {RANGE.fh} 1"
     },
     "fh-96": {
-        "name": "Flame Vial",
+        "name": "Frasco de llama",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {WOUND.fh} {RANGE.fh} 1"
     },
     "fh-97": {
-        "name": "Explosive Vial",
+        "name": "Frasco explosivo",
         "source": "Alquimista",
         "desc": "Durante tu turno, 1 enemigo a {RANGE.fh} 2 sufre {DAMAGE.fh} 2."
     },
@@ -1987,7 +1987,7 @@ export default {
         "desc": "Durante tu turno, añade +2 {ATTACK.fh} a todos tus ataques."
     },
     "fh-102": {
-        "name": "Major Element Potion",
+        "name": "Poción elemental mayor",
         "source": "Alquimista",
         "desc": "Durante tu turno, {ANY} {ANY}"
     },
@@ -1997,82 +1997,82 @@ export default {
         "desc": "Durante tu turno, elimina todos los estados negativos que tengas. Este objeto puede usarse mientras tengas {IMPAIR.fh} o {STUN.fh}."
     },
     "fh-104": {
-        "name": "Swiftness Potion",
+        "name": "Poción de agilidad",
         "source": "Alquimista",
         "desc": "Durante tu capacidad de Movimiento, añade +3 {MOVE.fh} y {JUMP.fh}."
     },
     "fh-105": {
-        "name": "Major Fireshield Potion",
+        "name": "Poción de piroescudo mayor",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {RETALIATE.fh} 2 {RANGE.fh} 3 {ROUND}"
     },
     "fh-106": {
-        "name": "Stonewall Potion",
+        "name": "Poción de muro pétreo",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {WARD.fh} {TARGET.fh} 2 aliados adyacentes y a ti"
     },
     "fh-107": {
-        "name": "Vigor Potion",
+        "name": "Poción de vigor",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {STRENGTHEN.fh} {TARGET.fh} 2 aliados adyacentes y a ti"
     },
     "fh-108": {
-        "name": "Holy Rain",
+        "name": "Lluvia bendita",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {BLESS.fh} {TARGET.fh} 2 aliados adyacentes y a ti"
     },
     "fh-109": {
-        "name": "Major Renewing Potion",
+        "name": "Poción revitalizadora mayor",
         "source": "Alquimista",
         "desc": "Durante tu turno, {RECOVER.fh} hasta 1 de tus pociones de 2 plantas perdidas."
     },
     "fh-110": {
-        "name": "Precision Potion",
+        "name": "Poción de precisión",
         "source": "Alquimista",
-        "desc": "Cuando reveles una carta de Modificador de ataque {NULL_MODIFIER} de tu mazo de modificadores de ataque, considérala una carta {+2_MODIFIER} en su lugar."
+        "desc": "Cuando reveles una carta de Modificador de ataque {NULL_MODIFIER} de tu mazo de Modificadores de ataque, considérala una carta {+2_MODIFIER} en su lugar."
     },
     "fh-111": {
-        "name": "Major Frenzy Potion",
+        "name": "Poción de frenesí mayor",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza: {ATTACK.fh} 4"
     },
     "fh-112": {
-        "name": "Hammer Potion",
+        "name": "Poción de martillo",
         "source": "Alquimista",
         "desc": "Durante tu turno, sufre {DAMAGE.fh} 10."
     },
     "fh-113": {
-        "name": "Expertise Potion",
+        "name": "Poción de soltura",
         "source": "Alquimista",
         "desc": "Al inicio de tu turno, descarta 1 de tus cartas jugadas para realizar tanto la acción superior como la inferior de tu otra carta jugada. Como máximo 1 acción puede activar un icono de {CONSUMED.fh}."
     },
     "fh-114": {
-        "name": "Foresight Potion",
+        "name": "Poción de presciencia",
         "source": "Alquimista",
         "desc": "Durante tu turno, revela la primera carta de un mazo de Capacidades de monstruo. Puedes ponerla debajo del mazo."
     },
     "fh-115": {
-        "name": "Infusion Potion",
+        "name": "Poción de inducción",
         "source": "Alquimista",
         "desc": "Durante tu turno, ignora un símbolo de consumo elemental en una acción de hayas jugado y obtén su efecto."
     },
     "fh-116": {
-        "name": "Plague Flask",
+        "name": "Petaca de plaga",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {POISON.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
     },
     "fh-117": {
-        "name": "Inferno Flask",
+        "name": "Petaca de infierno",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza {WOUND.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
     },
     "fh-118": {
-        "name": "Fulminant Flask",
+        "name": "Petaca fulminante",
         "source": "Alquimista",
         "desc": "Durante tu turno, 1 enemigo a {RANGE.fh} 2 sufre {DAMAGE.fh} 4."
     },
     "fh-119": {
-        "name": "Deadly Mixture",
+        "name": "Mejunje letal",
         "source": "Alquimista",
         "desc": "Durante tu turno, realiza: {WOUND.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh} Personal"
     },
@@ -2087,7 +2087,7 @@ export default {
         "desc": "Durante tu turno, realiza {ANY_X}: {ANY}"
     },
     "fh-122": {
-        "name": "Warden's Robes",
+        "name": "Túnica de centinela",
         "source": "Disponible desde el inicio",
         "desc": "Cuando una de tus invocaciones sufra {DAMAGE.fh} por un ataque, esa invocación obtiene {SHIELD.fh} 2 contra ese ataque."
     },
@@ -2142,7 +2142,7 @@ export default {
         "desc": "Al inicio del escenario, lleva 1 objeto {SMALL-ITEM} adicional."
     },
     "fh-133": {
-        "name": "Nimble Legguards",
+        "name": "Perneras de ligereza",
         "source": "Puesto comercial 2",
         "desc": "Cuando un aliado adyacente vaya a ser el objetivo de un ataque, en su lugar te toma como objetivo a ti, independientemente del alcance y de la línea de visión."
     },
@@ -2152,7 +2152,7 @@ export default {
         "desc": "Cuando uses la acción inferior básica de una carta de Capacidad, realiza {MOVE.fh} 3 en lugar de {MOVE.fh} 2."
     },
     "fh-135": {
-        "name": "Armorbane Bow",
+        "name": "Arco rompearmaduras",
         "source": "Puesto comercial 2",
         "desc": "Durante tu ataque, añade {PIERCE.fh} 3 a todos tus ataques a distancia."
     },
@@ -2177,7 +2177,7 @@ export default {
         "desc": "Después de que te muevas 4 hexágonos o más en tu turno, añade +1 {ATTACK.fh} a tu próximo ataque cuerpo a cuerpo de este turno."
     },
     "fh-140": {
-        "name": "Mantle of Summoning",
+        "name": "Manto de invocación",
         "source": "Puesto comercial 3",
         "desc": "Durante tu turno, otorga a 1 de tus invocaciones: {SHIELD.fh} 2. {ROUND}"
     },
@@ -2202,7 +2202,7 @@ export default {
         "desc": "Durante tu turno, {ANY_X} para añadir +1 {ATTACK.fh} a todos tus ataques."
     },
     "fh-145": {
-        "name": "Versatile Dagger",
+        "name": "Daga versátil",
         "source": "Puesto comercial 3",
         "desc": "Cuando uses la acción superior básica de una carta de Capacidad, realiza {ATTACK.fh} 3 en lugar de {ATTACK.fh} 2."
     },
@@ -2217,18 +2217,18 @@ export default {
         "desc": "Durante tu ataque cuerpo a cuerpo, añade {PUSH.fh} 1."
     },
     "fh-148": {
-        "name": "Circlet of Sanctity",
+        "name": "Diadema de santidad",
         "source": "Puesto comercial 4",
         "desc": "Después de los 3 próximos ataques que tengan como objetivo a un aliado a {RANGE.fh} 2, da la vuelta a esta carta.",
         "backDesc": "Durante tu turno, realiza: {WARD.fh} {RANGE.fh}3 y luego da la vuelta a esta carta."
     },
     "fh-149": {
-        "name": "Arnes",
+        "name": "Arnés",
         "source": "Puesto comercial 4",
         "desc": "Para las 5 próximas fuentes de {DAMAGE.fh} de ataques que te tomen como objetivo, obtén {SHIELD.fh} 1 contra esos ataques."
     },
     "fh-150": {
-        "name": "Robes of the Oak",
+        "name": "Túnica del Roble",
         "source": "Puesto comercial 4",
         "desc": "Durante tu turno, realiza: {HEAL.fh} 3 {TARGET.fh} 1 aliado, {RANGE.fh} 1"
     },
@@ -2268,12 +2268,12 @@ export default {
         "desc": "Cuando sufras {DAMAGE.fh} por un ataque, obtén {SHIELD.fh} 4 contra ese ataque."
     },
     "fh-158": {
-        "name": "Deep Earth Brooch",
+        "name": "Broche de las profundidades",
         "source": "Joyería 1",
         "desc": "Durante tu turno, realiza {EARTH_OR_DARK_X}: {HEAL.fh} 3 Personal, {WARD.fh}"
     },
     "fh-159": {
-        "name": "Glorious Bracelet",
+        "name": "Brazalete glorioso",
         "source": "Joyería 1",
         "desc": "Después de tu capacidad de Ataque durante la cual 1 enemigo haya sufrido al menos {DAMAGE.fh} 6, realiza: {BLESS.fh}, {BLESS.fh} Personal"
     },
@@ -2283,7 +2283,7 @@ export default {
         "desc": "Cuando hagas un descanso corto, {RECOVER.fh} hasta 3 de tus objetos gastados y realiza {HEAL.fh} 2 Personal."
     },
     "fh-161": {
-        "name": "Strategists Ring",
+        "name": "Anillo de estratega",
         "source": "Joyería 2",
         "desc": "Al final de tu turno, juega 1 carta de tu mano y realiza todas las capacidades continuas y obligatorias de la acción superior o inferior de la carta."
     },
@@ -2293,7 +2293,7 @@ export default {
         "desc": "Durante tu turno, realiza {ICE_OR_WIND_X}: {ATTACK.fh} 3 {RANGE.fh} 3, {IMMOBILIZE.fh}"
     },
     "fh-163": {
-        "name": "Stunning Bracelet",
+        "name": "Pulsera aturdidora",
         "source": "Joyería 2",
         "desc": "Durante tu turno, da {STUN.fh} a la mitad (redondeando hacia arriba) de los enemigos adyacentes a ti."
     },
@@ -2313,7 +2313,7 @@ export default {
         "desc": "Durante tu turno, realiza {FIRE_OR_LIGHT_X}: {ATTACK.fh} 3 {DISARM.fh}"
     },
     "fh-167": {
-        "name": "Attractive Bracelet",
+        "name": "Brazalete de atracción",
         "source": "Joyería 3\nWR-10",
         "desc": "Al inicio del turno del enemigo, antes de que determine su atención, realiza: {PULL.fh} 4 {TARGET.fh} el enemigo, {RANGE.fh} 5, {MUDDLE.fh}"
     },
@@ -2325,22 +2325,22 @@ export default {
     "fh-169": {
         "name": "Fateful Charm",
         "source": "Objeto aleatorio del mazo de botín",
-        "desc": "Durante tu turno, revela la primera carta de tu mazo de modificadores de ataque. Puedes ponerla debajo del mazo."
+        "desc": "Durante tu turno, revela la primera carta de tu mazo de Modificadores de ataque. Puedes ponerla debajo del mazo."
     },
     "fh-170": {
-        "name": "Eye of Truth",
+        "name": "Ojo de la Verdad",
         "source": "Objeto aleatorio del mazo de botín",
-        "desc": "Durante tu turno, revela la carta superior de cada mazo de habilidades de cada monstruo."
+        "desc": "Durante tu turno, revela la carta superior de cada mazo de capacidades de cada monstruo."
     },
     "fh-171": {
-        "name": "Rejuvenating Charm",
+        "name": "Amuleto rejuvenecedor",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Siempre que pierdas una carta para anular {DAMAGE.fh}, {RECOVER.fh} hasta 1 carta de tu pila de descartes y obtén {REGENERATE.fh}."
     },
     "fh-172": {
         "name": "Cap of Premonition",
         "source": "Objeto aleatorio del mazo de botín",
-        "desc": "Durante tu turno, mira las 4 primeras cartas de tu mazo de modificadores de ataque y devuélvelas en el orden que quieras."
+        "desc": "Durante tu turno, mira las 4 primeras cartas de tu mazo de Modificadores de ataque y devuélvelas en el orden que quieras."
     },
     "fh-173": {
         "name": "Multi Colored Cloak",
@@ -2363,7 +2363,7 @@ export default {
         "desc": "Durante tu turno, realiza: {TELEPORT.fh} 4 Este teletransporte debe terminar en un hexágono adyacente a uno de tus enemigos."
     },
     "fh-177": {
-        "name": "Boots of Transference",
+        "name": "Botas de transferencia",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Cuando actives una trampa al entrar en su hexágono, puedes aplicar sus efectos a una figura a {RANGE.fh} 3 en lugar de a ti."
     },
@@ -2373,12 +2373,12 @@ export default {
         "desc": "Al inicio de tu turno en el que tu iniciativa sea 60 o más y no estés realizando un descanso largo, realiza {HEAL.fh} 1 Personal."
     },
     "fh-179": {
-        "name": "Burst Boots",
+        "name": "Botas de prisa",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Durante tu capacidad de Movimiento, añade +4 {MOVE.fh}. Después de la capacidad de Movimiento, obtén {IMMOBILIZE.fh}."
     },
     "fh-180": {
-        "name": "Boots of Greed",
+        "name": "Botas de avaricia",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Cuando saquees 2 o más fichas a la vez, realiza: {BLESS.fh} Personal."
     },
@@ -2388,12 +2388,12 @@ export default {
         "desc": "Durante tu turno, designa a 2 aliados o a 2 monstruos normales o de élite cualesquiera. Cada figura designada se {TELEPORT.fh} simultáneamente al hexágono ocupado por la otra figura designada."
     },
     "fh-182": {
-        "name": "Wing Clippers",
+        "name": "Cortaalas",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Después de tu ataque cuerpo a cuerpo, coloca una ficha de personaje sobre el objetivo. El objetivo pierde {FLYING.fh}. {PERSISTENT}"
     },
     "fh-183": {
-        "name": "Decanter of Mists",
+        "name": "Jarra de nieblas",
         "source": "Objeto aleatorio del mazo de botín\nTesoro 16",
         "desc": "Durante tu turno, todas las figuras obtienen Desventaja y añaden 1 {RANGE.fh} a todos los ataques a distancia durante esta ronda. {ROUND}"
     },
@@ -2403,12 +2403,12 @@ export default {
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo con varios objetivos, añade +1 {TARGET.fh}."
     },
     "fh-185": {
-        "name": "Mirrored Knife",
+        "name": "Cuchillo espejado",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade todos los estados negativos que tengas, excepto {BRITTLE.fh}, {BANE.fh} y {STUN.fh}, a 1 ataque."
     },
     "fh-186": {
-        "name": "Wild Growth Seeds",
+        "name": "Semillas de brote inusitado",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Durante tu turno, crea 1 obstáculo de 1 hexágono en un hexágono vacío adyacente."
     },
@@ -2423,7 +2423,7 @@ export default {
         "desc": "Durante tu turno, crea 1 pieza de 1 hexágono de terreno peligroso, terreno helado o agua en un hexágono sin accesorios adyacente."
     },
     "fh-189": {
-        "name": "Ring of the Night",
+        "name": "Anillo de la noche",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Durante tu turno, realiza {DARK_X} {ANY_X}: {INVISIBLE.fh} Personal"
     },
@@ -2453,7 +2453,7 @@ export default {
         "desc": "Al determinar la iniciativa, después de que todas las cartas de Capacidad hayan sido reveladas, aumenta o disminuye la iniciativa de un grupo de monstruos en 30."
     },
     "fh-195": {
-        "name": "Tri-Corner Hat",
+        "name": "Tricornio",
         "source": "Tesoro 83\nEscenario 127",
         "desc": "Durante tu turno, añade +1 {RANGE.fh} y {PIERCE.fh} 1 a 1 de tus ataques a distancia."
     },
@@ -2463,17 +2463,17 @@ export default {
         "desc": "Durante tu turno, descarta 1 carta de botín, salvo la de Objeto aleatorio, para realizar: {HEAL.fh} 5 {RANGE.fh} 2, {WARD.fh}"
     },
     "fh-197": {
-        "name": "Aesther Diadem",
+        "name": "Diadema etérida",
         "source": "WO-77",
         "desc": "Después de determinar la iniciativa, cambia 1 carta de tu mano por otra que hayas jugado. Tu iniciativa no se ve afectada."
     },
     "fh-198": {
-        "name": "Hunter's Necklace",
+        "name": "Collar del cazador",
         "source": "WR-36",
         "desc": "Durante tu turno, realiza {PULL.fh} 3 {RANGE.fh} 4"
     },
     "fh-199": {
-        "name": "Opulent Shoes",
+        "name": "Zapatos opulentos",
         "source": "Tesoro 6\nTesoro 78",
         "desc": "Desde el inicio del escenario y para el resto de este, considera que vas antes que tus invocaciones en orden de iniciativa a efectos de atención de los monstruos."
     },
@@ -2499,7 +2499,7 @@ export default {
         "desc": "Después de tu capacidad, controla a 1 objetivo: {MOVE.fh} 2"
     },
     "fh-204": {
-        "name": "Severed Claw",
+        "name": "Pinza amputada",
         "source": "Tesoro 5",
         "desc": "Durante tu turno, 1 enemigo normal o de élite adyacente sufre {DAMAGE.fh} igual a su valor de {SHIELD.fh}."
     },
@@ -2534,14 +2534,14 @@ export default {
         "desc": "Durante tu turno, añade +3 {ATTACK.fh} a todos los ataques realizados por Acechadores que te tengan como objetivo durante esta ronda. {ROUND}"
     },
     "fh-211": {
-        "name": "Boom Barrel",
+        "name": "Barril explosivo",
         "source": "B-11",
         "desc": "Durante tu turno, designa 1 hexágono adyacente. Al final de tu turno, todas las figuras a {RANGE.fh} 2 del hexágono designado sufren {DAMAGE.fh} 1."
     },
     "fh-212": {
-        "name": "Elemental Stone",
+        "name": "Gema elemental",
         "source": "Escenario 66",
-        "desc": "Después de determinar la iniciativa, elige 1 elemento. Ningún monstruo puede infundir ni consumir este elemento durante esta ronda. {ROUND}"
+        "desc": "Después de determinar la iniciativa, elige 1 elemento. Ningún monstruo puede imbuir ni consumir este elemento durante esta ronda. {ROUND}"
     },
     "fh-213": {
         "name": "Key of Seasons",
@@ -2555,7 +2555,7 @@ export default {
         "desc": "Durante tu capacidad de Curación, añade 1 estado positivo que tengas a 1 curación."
     },
     "fh-215": {
-        "name": "Befuddling Mug",
+        "name": "Jarra confundidora",
         "source": "Escenario 128",
         "desc": "Durante tu turno, añade +1 {ATTACK.fh} y {MUDDLE.fh} a todos tus ataques. Al final de tu turno, realiza: {MUDDLE.fh} Personal"
     },
@@ -2570,7 +2570,7 @@ export default {
         "desc": "Al determinar la iniciativa, después de que todas las cartas de Capacidad hayan sido reveladas, baraja todos los mazos de Capacidades de monstruo y roba una carta nueva para cada grupo de monstruos activo."
     },
     "fh-218": {
-        "name": "Tome of Life",
+        "name": "Tomo de vida",
         "source": "Cadena de eventos SR-47 o WR-45",
         "desc": "Durante tu turno, elimina todos los estados de todas las figuras y luego otorga a todas las figuras: {HEAL.fh} 2 Personal"
     },
@@ -2585,7 +2585,7 @@ export default {
         "desc": "Durante tu turno, {RECOVER.fh} hasta 1 objeto Tomo."
     },
     "fh-221": {
-        "name": "Ice Shiv",
+        "name": "Estilete de hielo",
         "source": "Tesoro 84",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, {ICE_X} para añadir {PIERCE.fh} 3 a 1 ataque."
     },
@@ -2600,13 +2600,13 @@ export default {
         "desc": "Después de determinar la iniciativa, todos los monstruos consideran que eres el primero en el orden de iniciativa al determinar su atención durante esta ronda. {ROUND}"
     },
     "fh-224": {
-        "name": "Armor of Empathy",
+        "name": "Armadura de Empatía",
         "source": "Escenario 60",
         "desc": "Después de los siguientes tres ataques dirigidos a ti, da la vuelta a esta carta.",
         "backDesc": "Durante tu turno, realiza {HEAL.fh} 3 {TARGET.fh} 1 aliado, {RANGE.fh} 3, {BLESS.fh} y luego da la vuelta a esta carta."
     },
     "fh-225": {
-        "name": "Algox Carving",
+        "name": "Figura algox",
         "source": "Tesoro 41",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, {EARTH_X} para añadir +1 {ATTACK.fh} a 1 ataque y da la vuelta a esta carta.",
         "backDesc": "Durante tu capacidad de Ataque cuerpo a cuerpo, {WIND_X} para añadir {PUSH.fh} 2 a 1 ataque y da la vuelta a esta carta."
@@ -2617,7 +2617,7 @@ export default {
         "desc": "Durante tu capacidad de Ataque, dobla el valor numérico de la siguiente carta de Modificador de ataque que robes. Las cartas de Modificador {2X_MODIFIER} y {NULL_MODIFIER} no se ven afectadas."
     },
     "fh-227": {
-        "name": "Data Drive",
+        "name": "Unidad de datos",
         "source": "Tesoro 7",
         "desc": "Cuando hagas un descanso corto, pon la mitad (redondeando hacia abajo) de tu pila de descartes encima de este objeto, pierde 1 de las cartas restantes al azar como es habitual, y luego roba las cartas que hay encima de este objeto."
     },
@@ -2637,7 +2637,7 @@ export default {
         "desc": "Después de que robes 1 carta de botín, roba 1 carta adicional, conserva 1 y coloca la otra encima o debajo del mazo de botín."
     },
     "fh-231": {
-        "name": "Skinning Knife",
+        "name": "Cuchillo de desollar",
         "source": "WR-16",
         "desc": "Cuando obtengas una ficha de botín, obtén 3 de Piel en lugar de robar una carta de botín."
     },
@@ -2662,7 +2662,7 @@ export default {
         "desc": "Durante tu turno, saquea 1 ficha de botín a {RANGE.fh} 2."
     },
     "fh-236": {
-        "name": "Cracked Mirror",
+        "name": "Espejo agrietado",
         "source": "Escenario 111",
         "desc": "Durante tu turno, pierde 1 carta de tu mano para {RECOVER.fh} 1 carta de tu pila de botín de nivel igual o inferior."
     },
@@ -2682,7 +2682,7 @@ export default {
         "desc": "Durante tu turno, todos los aliados y enemigos a {RANGE.fh} 2 sufren {DAMAGE.fh} 1."
     },
     "fh-240": {
-        "name": "Demons Gem",
+        "name": "Gema del demonio",
         "source": "Cadena de eventos SO-53",
         "desc": "Cuando fracases en un escenario, obtén igualmente todas las {CHECK} de tu objetivo de batalla si lo completaste."
     },
@@ -2697,22 +2697,22 @@ export default {
         "desc": "Durante tu capacidad de Ataque, considera rodantes las 3 próximas cartas de Modificador de ataque que robes"
     },
     "fh-243": {
-        "name": "Cursed Rock",
+        "name": "Roca Maldita",
         "source": "WR-3",
         "desc": "Este objeto no puede venderse y debe llevarse y usarse en cada escenario. Al inicio del escenario, realiza: {CURSE.fh}, {BLESS.fh} Personal"
     },
     "fh-244": {
-        "name": "Ember Energy Source",
+        "name": "Ámbar de energía",
         "source": "Escenario 33",
         "desc": "Durante tu turno, aumenta en 1 el valor numérico impreso de {ATTACK.fh}, {MOVE.fh}, {TARGET.fh} o {RANGE.fh} en 1 de tus capacidades."
     },
     "fh-245": {
-        "name": "Ancient Coin",
+        "name": "Moneda antigua",
         "source": "Escenario 136\nEdificio 74\nCartas de botín",
         "desc": ""
     },
     "fh-246": {
-        "name": "Key Card",
+        "name": "Tarjeta llave",
         "source": "Escenario 58\nEscenario 59",
         "desc": ""
     },
@@ -2807,7 +2807,7 @@ export default {
     "fh-264": {
         "name": "Spiraled Medallion",
         "source": "Recompensa de escenario en solitario - {CR}",
-        "desc": "Cuando descanses, puedes mantener hasta 3 cartas de {TIDE_ICON} en tu área activa. {LIGHT_OR_DARK}"
+        "desc": "Cuando descanses, puedes mantener hasta 3 cartas de {TIDE_ICON} en tu zona activa. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
         "name": "Ribbon of Friendship",
@@ -2995,14 +2995,14 @@ export default {
         "desc": "Durante tu turno, otorga a 1 de tus invocaciones: {MOVE.fh} +0"
     },
     "gh2-32": {
-        "name": "Incesario Negro",
+        "name": "Incensario Negro",
         "source": "Prosperidad nivel 3",
         "desc": "Durante tu turno, realiza: {MUDDLE.fh}, Todos, {RANGE.fh} 3 Todos los enemigos que tengan {MUDDLE.fh} añaden -1 {ATTACK.fh} a todos sus ataques durante esta ronda."
     },
     "gh2-33": {
         "name": "Segunda Piel",
         "source": "Prosperidad nivel 4",
-        "desc": "Al inicio del escenario, retira 1 carta de Modificador de ataque {-1_MODIFIER} de tu mazo de modificadores de ataque."
+        "desc": "Al inicio del escenario, retira 1 carta de Modificador de ataque {-1_MODIFIER} de tu mazo de Modificadores de ataque."
     },
     "gh2-34": {
         "name": "Hacha de batalla",
@@ -3037,7 +3037,7 @@ export default {
     "gh2-40": {
         "name": "Shadow Amor",
         "source": "Prosperidad nivel 4",
-        "desc": "Cuando sufras {DAMAGE.fh} por un ataque, anula el {DAMAGE.fh} e infunde {DARK}."
+        "desc": "Cuando sufras {DAMAGE.fh} por un ataque, anula el {DAMAGE.fh} e imbuye {DARK}."
     },
     "gh2-41": {
         "name": "Kinetic Treads",
@@ -3156,7 +3156,7 @@ export default {
         "desc": "Cuando hagas un descanso corto, {RECOVER.fh} hasta 3 de tus objetos gastados, elige qué carta perder durante el descanso y realiza: {HEAL.fh} 2, Personal"
     },
     "gh2-64": {
-        "name": "Talismán Reviltalizador",
+        "name": "Talismán Revitalizador",
         "source": "Prosperidad nivel 9",
         "desc": "Durante tu turno, {RECOVER.fh} 1 de tus objetos {SMALL-ITEM} perdidos."
     },
@@ -3358,7 +3358,7 @@ export default {
     "gh2-103": {
         "name": "Ranger's Hood",
         "source": "{SCENARIO 28} (Tesoro #65)",
-        "desc": "Durante una de las capacidades de Ataque de tus invocaciones, antes de robar cartas de Modificador de ataque, revela las 2 primeras cartas de tu mazo de modificadores de ataque. Puedes poner cualquiera de ellas debajo de tu mazo."
+        "desc": "Durante una de las capacidades de Ataque de tus invocaciones, antes de robar cartas de Modificador de ataque, revela las 2 primeras cartas de tu mazo de Modificadores de ataque. Puedes poner cualquiera de ellas debajo de tu mazo."
     },
     "gh2-104": {
         "name": "Warding Rod",
@@ -3385,7 +3385,7 @@ export default {
         "desc": "Durante tu turno, si has matado a un enemigo este turno, realiza: {LOOT 1}"
     },
     "gh2-109": {
-        "name": "Berbiquí Antigüo",
+        "name": "Berbiquí Antiguo",
         "source": "Recompensa de {SCENARIO 87}",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade +2 {ATTACK.fh}, {PIERCE.fh} 2 a todos los ataques."
     },
@@ -3428,12 +3428,12 @@ export default {
     "gh2-117": {
         "name": "Dawnblade",
         "source": "Recompensa de {SCENARIO 99}",
-        "desc": "Durante tu turno, si {DARK} es fuerte o menguante, añade +1 {ATTACK.fh} a tu próximo ataque cuerpo a cuerpo. Si has llevado Hoja del Ocaso, {LIGHT}."
+        "desc": "Durante tu turno, si {DARK} es fuerte o menguante, añade +1 {ATTACK.fh} a tu próximo ataque cuerpo a cuerpo. Si has llevado Duskbrand, {LIGHT}."
     },
     "gh2-118": {
         "name": "Duskbrand",
         "source": "Evento de camino 33",
-        "desc": "Durante tu turno, si {LIGHT} es fuerte o menguante, añade +1 {ATTACK.fh} a tu próximo ataque cuerpo a cuerpo. Si has llevado Hoja del Alba, {DARK}."
+        "desc": "Durante tu turno, si {LIGHT} es fuerte o menguante, añade +1 {ATTACK.fh} a tu próximo ataque cuerpo a cuerpo. Si has llevado Dawnblade, {DARK}."
     },
     "gh2-119": {
         "name": "Botas de Escamas de Draco",
@@ -3583,7 +3583,7 @@ export default {
     "gh2-148": {
         "name": "Shield of the Righteous",
         "source": "{SCENARIO 65} (Tesoro #59)",
-        "desc": "Cuando sufras {DAMAGE.fh} por un ataque, anula el {DAMAGE.fh} e infunde {LIGHT}"
+        "desc": "Cuando sufras {DAMAGE.fh} por un ataque, anula el {DAMAGE.fh} e imbuye {LIGHT}"
     },
     "gh2-149": {
         "name": "Aesther Spyglass",
@@ -3617,7 +3617,7 @@ export default {
     "gh2-155": {
         "name": "Etheric Elixir",
         "source": "Recompensa de escenario en solitario - {SW2}",
-        "desc": "Cuando realices la acción superior {LOST.fh} de Éter reanimador, retira la carta {NULL_MODIFIER} de tu mazo de modificadores de ataque durante el resto del escenario."
+        "desc": "Cuando realices la acción superior {LOST.fh} de Éter reanimador, retira la carta {NULL_MODIFIER} de tu mazo de Modificadores de ataque durante el resto del escenario."
     },
     "gh2-156": {
         "name": "Estilete Silencioso",
@@ -3653,7 +3653,7 @@ export default {
         "name": "The Night's Caress",
         "source": "Recompensa de escenario en solitario - {NS2}",
         "desc": "Cuando pierdas {INVISIBLE.fh}, da la vuelta a esta carta y realiza: {MUDDLE.fh}, {RANGE.fh} 1",
-        "backDesc": "Cuando obtengas {INVISIBLE.fh}, da la vuelta a esta carta y mira la primera carta de tu mazo de modificadores de ataque. Puedes ponerla debajo de tu mazo."
+        "backDesc": "Cuando obtengas {INVISIBLE.fh}, da la vuelta a esta carta y mira la primera carta de tu mazo de Modificadores de ataque. Puedes ponerla debajo de tu mazo."
     },
     "gh2-163": {
         "name": "Colgante de la Plaga",
