@@ -15,7 +15,7 @@ export default {
         "name": "“Cotte de Maille” (Objet 023)"
     },
     "gh-6": {
-        "name": "“Chaine à Crochet” (Objet 039)"
+        "name": "“Chaîne à Crochet” (Objet 039)"
     },
     "gh-7": {
         "name": "Scénario Annexe aléatoire"
@@ -24,7 +24,7 @@ export default {
         "name": "1 ✔"
     },
     "gh-9": {
-        "name": "“Crete des Vagues” (Objet 111)"
+        "name": "“Crête des Vagues” (Objet 111)"
     },
     "gh-10": {
         "name": "10 XP"
@@ -36,7 +36,7 @@ export default {
         "name": "“Cuissardes de Magma” (Objet 099)"
     },
     "gh-13": {
-        "name": "Subissez 5 dégats,{POISON} et {WOUND}"
+        "name": "Subissez 5 dégâts,{POISON} et {WOUND}"
     },
     "gh-14": {
         "name": "10 XP"
@@ -60,7 +60,7 @@ export default {
         "name": "Modèle d'objet aléatoire"
     },
     "gh-21": {
-        "name": "Subissez 5 dégats"
+        "name": "Subissez 5 dégâts"
     },
     "gh-22": {
         "name": "Modèle d'objet aléatoire"
@@ -69,7 +69,7 @@ export default {
         "name": "“Armure d'écailles de Wyverne” (Objet 103)"
     },
     "gh-24": {
-        "name": "Subissez 5 dégats"
+        "name": "Subissez 5 dégâts"
     },
     "gh-25": {
         "name": "25 pièces d'or"
@@ -84,7 +84,7 @@ export default {
         "name": "15 pièces d'or"
     },
     "gh-29": {
-        "name": "“Guetres d'Endurance” (Objet 097)"
+        "name": "“Guêtres d'Endurance” (Objet 097)"
     },
     "gh-30": {
         "name": "1 ✔"
@@ -111,10 +111,10 @@ export default {
         "name": "1 ✔"
     },
     "gh-38": {
-        "name": "Modèle d'objet de l'“Anneau de Cranes” (Objet 123)"
+        "name": "Modèle d'objet de l'“Anneau de Crânes” (Objet 123)"
     },
     "gh-39": {
-        "name": "Subissez 5 dégats"
+        "name": "Subissez 5 dégâts"
     },
     "gh-40": {
         "name": "Modèle d'objet aléatoire"
@@ -126,7 +126,7 @@ export default {
         "name": "Modèle d'objet aléatoire"
     },
     "gh-43": {
-        "name": "Subissez 5 dégats {POISON} et {WOUND}"
+        "name": "Subissez 5 dégâts {POISON} et {WOUND}"
     },
     "gh-44": {
         "name": "Scénario Annexe aléatoire"
@@ -135,7 +135,7 @@ export default {
         "name": "Modèle d'objet aléatoire"
     },
     "gh-46": {
-        "name": "Subissez 3 dégats et {POISON}"
+        "name": "Subissez 3 dégâts et {POISON}"
     },
     "gh-47": {
         "name": "“Armure à Vapeur” (Objet 104)"
@@ -147,13 +147,13 @@ export default {
         "name": "Nouveau scénario: {SCENARIO 17}"
     },
     "gh-50": {
-        "name": "“Deuxieme Peau” (Objet 101)"
+        "name": "“Deuxième Peau” (Objet 101)"
     },
     "gh-51": {
         "name": "Scénario Annexe aléatoire"
     },
     "gh-52": {
-        "name": "“Coeur de Traitre” (Objet 131)"
+        "name": "“Coeur du Traître” (Objet 131)"
     },
     "gh-53": {
         "name": "Modèle d'objet aléatoire"
@@ -177,7 +177,7 @@ export default {
         "name": "Modèle d'objet aléatoire"
     },
     "gh-60": {
-        "name": "“Hache Fléau des Crane” (Objet 113)"
+        "name": "“Hache Fléau des Crânes” (Objet 113)"
     },
     "gh-61": {
         "name": "“Dague Providentielle” (Objet 040)"
@@ -270,7 +270,7 @@ export default {
         "name": "10 pièces d'or chacun, lisez la section 75 à la page 49"
     },
     "fc-91": {
-        "name": "30 pièces d'or et Haut-Fait de groupe : « Opportunistes ». Ajoutez l'Évènement de Ville 84 au paquet"
+        "name": "30 pièces d'or et Haut-Fait de compagnie : « Opportunistes ». Ajoutez l'Évènement de Ville 84 au paquet"
     },
     "fc-93": {
         "name": "« Parchemin de Hâte » (Objet 159)"
@@ -279,7 +279,7 @@ export default {
         "name": "1 ✓ et ajoutez l'Évènement de Faille 20 au paquet"
     },
     "fc-95": {
-        "name": "25 pièces d'or et Haut-Fait de groupe : « Un Coffre-fort ». Ajoutez l'Évènement de Ville 85 au paquet"
+        "name": "25 pièces d'or et Haut-Fait de compagnie : « Un Coffre-fort ». Ajoutez l'Évènement de Ville 85 au paquet"
     },
     "fc-96": {
         "name": "Vous trouvez un vieux grimoire couvert de dessins techniques et de schémas de conception d'une grande variété de machines exotiques. Une curieuse note manuscrite figure à l'intérieur de la couverture : {NOTE_115}"
@@ -354,7 +354,7 @@ export default {
         "name": "20 pièces d'or et désarmez tous les pièges adjacents"
     },
     "cs-7": {
-        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
+        "name": "Un objet « Stone » aléatoire (Objets 94-100)"
     },
     "cs-8": {
         "name": "« Dizzying Tincture » (Objet 58)"
@@ -363,7 +363,7 @@ export default {
         "name": "« Orb of Fortune » (Objet 9)"
     },
     "cs-10": {
-        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
+        "name": "Un objet « Stone » aléatoire (Objets 94-100)"
     },
     "cs-11": {
         "name": "« Dizzying Tincture » (Objet 58)"
@@ -387,13 +387,13 @@ export default {
         "name": "« Concussion Mine » (Objet 31)"
     },
     "cs-18": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "« Boneclad Shawl » (Objet 25)"
     },
     "cs-19": {
         "name": "1 ✓ et générez un Élément sauvage"
     },
     "cs-20": {
-        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
+        "name": "Un objet « Stone » aléatoire (Objets 94-100)"
     },
     "cs-21": {
         "name": "« Steel Helmet » (Objet 22)"
@@ -405,7 +405,7 @@ export default {
         "name": "« Trophy Helm » (Objet 12)"
     },
     "cs-24": {
-        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
+        "name": "Un objet « Stone » aléatoire (Objets 94-100)"
     },
     "cs-25": {
         "name": "« Draining Greaves » (Objet 15)"
@@ -453,7 +453,7 @@ export default {
         "name": "« Infrared Goggles » (Objet 21)"
     },
     "cs-40": {
-        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
+        "name": "Un objet « Stone » aléatoire (Objets 94-100)"
     },
     "cs-41": {
         "name": "« Ashsteel Gauntlets » (Objet 61)"
@@ -468,7 +468,7 @@ export default {
         "name": "« Mana Medicine » (Objet 60)"
     },
     "cs-45": {
-        "name": "Un objet « Pierre » aléatoire (Objets 94-100)"
+        "name": "Un objet « Stone » aléatoire (Objets 94-100)"
     },
     "cs-46": {
         "name": "Modèle de « Vipertooth Dagger » (Objet 54)"
@@ -546,10 +546,10 @@ export default {
         "name": "Gagnez quatre cartes Butin."
     },
     "fh-21": {
-        "name": "Gagnez Détonateur 064."
+        "name": "Gagnez le plan de Détonateur 064."
     },
     "fh-22": {
-        "name": "Gagnez Armure d'Écailles 068."
+        "name": "Gagnez le plan de Armure d'Écailles 068."
     },
     "fh-23": {
         "name": "Débloquez un scénario annexe aléatoire."
@@ -576,7 +576,7 @@ export default {
         "name": "Gagnez quatre cartes Butin."
     },
     "fh-31": {
-        "name": "Gagnez Balance Équilibrée 078."
+        "name": "Gagnez le plan de Balance Équilibrée 078."
     },
     "fh-32": {
         "name": "Gagnez trois cartes Butin."
@@ -603,7 +603,7 @@ export default {
         "name": "Débloquez un scénario annexe aléatoire."
     },
     "fh-40": {
-        "name": "Gagnez Canon Chaotique 077."
+        "name": "Gagnez le plan de Canon Chaotique 077."
     },
     "fh-41": {
         "name": "Gagnez Fétiche Algox 225."
@@ -630,7 +630,7 @@ export default {
         "name": "Gagnez trois cartes Butin."
     },
     "fh-49": {
-        "name": "Gagnez Botte d'Os 071."
+        "name": "Gagnez le plan de Botte d'Os 071."
     },
     "fh-50": {
         "name": "Gagnez Armure de Cuir Durci 017."
@@ -660,7 +660,7 @@ export default {
         "name": "Gagnez un plan d'objet aléatoire."
     },
     "fh-59": {
-        "name": "Gagnez Poupée de Magie Noire 081."
+        "name": "Gagnez le plan de Poupée de Magie Noire 081."
     },
     "fh-60": {
         "name": "Gagnez trois cartes Butin."
@@ -693,13 +693,13 @@ export default {
         "name": "Gagnez le plan de Cube Mécanique 082 quand vous trouvez l'autre moitié de ce plan."
     },
     "fh-70": {
-        "name": "Gagnez Cor de Commandement 076."
+        "name": "Gagnez le plan de Cor de Commandement 076."
     },
     "fh-71": {
         "name": "Gagnez quatre cartes Butin."
     },
     "fh-72": {
-        "name": "Gagnez Pierre Animée 080."
+        "name": "Gagnez le plan de Pierre Animée 080."
     },
     "fh-73": {
         "name": "Gagnez un plan d'objet aléatoire."
@@ -729,7 +729,7 @@ export default {
         "name": "Gagnez Bras d'Émancipé 226."
     },
     "fh-82": {
-        "name": "Gagnez Bâton de Chêne 072."
+        "name": "Gagnez le plan de Bâton de Chêne 072."
     },
     "fh-83": {
         "name": "Gagnez Tricorne 195."

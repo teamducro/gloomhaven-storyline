@@ -12,11 +12,11 @@ export default {
             "Ajouter une carte {AGAIN} {DISARM} et une carte {AGAIN} {MUDDLE}",
             "Ajouter une carte {AGAIN} {TARGET}",
             "Ajouter une carte {+1_WHITE} {SHIELD}1, Sur vous-meme",
-            "Ignorer les effets négatifs des objets et Ajouter une carte {+1_WHITE}"
+            "Ignorer les effets négatifs des objets et ajouter une carte {+1_WHITE}"
         ]
     },
     "CH": {
-        "name": "Coeur de roche",
+        "name": "Cœur de Roche",
         "perks": [
             "Retirer quatre cartes {+0_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
@@ -111,7 +111,7 @@ export default {
         ]
     },
     "EL": {
-        "name": "Elémentaliste",
+        "name": "Élémentaliste",
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
@@ -164,14 +164,14 @@ export default {
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
             "Retirer quatre cartes {+0_WHITE}",
-            "Remplacer une carte {-2_WHITE} carte par une carte {+0_WHITE}",
-            "Remplacer une carte {+0_WHITE} carte par une carte {+2_WHITE}",
+            "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
+            "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE}",
             "Ajouter deux cartes {AGAIN} {+1_WHITE}",
             "Ajouter deux cartes {AGAIN} {HEAL}1",
             "Ajouter deux cartes {AGAIN} {STUN}",
             "Ajouter deux cartes {AGAIN} {LIGHT}",
             "Ajouter deux cartes {AGAIN} {SHIELD}1, Sur vous-meme",
-            "Ignorer les effets négatifs des objets et Ajouter deux cartes {+1_WHITE}",
+            "Ignorer les effets négatifs des objets et ajouter deux cartes {+1_WHITE}",
             "Ignorer les effets négatifs des scénarios"
         ]
     },
@@ -187,7 +187,7 @@ export default {
             "Ajouter deux cartes {AGAIN} {HEAL}1",
             "Ajouter deux cartes {AGAIN} {CURSE}",
             "Ajouter une carte {AGAIN} {TARGET}",
-            "Ignorer les effets négatifs des scénarios et Ajouter deux cartes {+1_WHITE}"
+            "Ignorer les effets négatifs des scénarios et ajouter deux cartes {+1_WHITE}"
         ]
     },
     "SU": {
@@ -202,11 +202,11 @@ export default {
             "Ajouter deux cartes {AGAIN} {HEAL}1",
             "Ajouter une carte {AGAIN} {FIRE} et une carte {AGAIN} {WIND}",
             "Ajouter une carte {AGAIN} {DARK} et une carte {AGAIN} {EARTH}",
-            "Ignorer les effets négatifs des scénarios et Ajouter deux cartes {+1_WHITE}"
+            "Ignorer les effets négatifs des scénarios et ajouter deux cartes {+1_WHITE}"
         ]
     },
     "BE": {
-        "name": "Berseker",
+        "name": "Berserker",
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
             "Retirer quatre cartes {+0_WHITE}",
@@ -232,11 +232,11 @@ export default {
             "Ajouter une carte {AGAIN} {STUN}",
             "Ajouter une carte {AGAIN} {TARGET}",
             "Ajouter une carte {+0_WHITE} {REFRESH} un objet",
-            "Ignorer les effets négatifs des objets et Ajouter deux cartes {+1_WHITE}"
+            "Ignorer les effets négatifs des objets et ajouter deux cartes {+1_WHITE}"
         ]
     },
     "PH": {
-        "name": "Hérault du fléau",
+        "name": "Héraut du Fléau",
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {+0_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
@@ -247,11 +247,11 @@ export default {
             "Ajouter deux cartes {AGAIN} {CURSE}",
             "Ajouter deux cartes {AGAIN} {IMMOBILIZE}",
             "Ajouter une carte {AGAIN} {STUN}",
-            "Ignorer les effets négatifs des scénarios et Ajouter une carte {+1_WHITE}"
+            "Ignorer les effets négatifs des scénarios et ajouter une carte {+1_WHITE}"
         ]
     },
     "BT": {
-        "name": "Maitre des betes",
+        "name": "Maître des Bêtes",
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
             "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE}",
@@ -275,8 +275,8 @@ export default {
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {DARK}",
             "Ajouter une carte {+2_WHITE} {MUDDLE}",
             "Ajouter deux cartes {AGAIN} {HEAL}1",
-            "Ignorer les effets négatifs des objets et Ajouter une carte {+1_WHITE}",
-            "Ignorer les effets négatifs des scénarios et Ajouter une carte {+1_WHITE}"
+            "Ignorer les effets négatifs des objets et ajouter une carte {+1_WHITE}",
+            "Ignorer les effets négatifs des scénarios et ajouter une carte {+1_WHITE}"
         ]
     },
     "DR": {
@@ -285,16 +285,16 @@ export default {
             "Retirer deux cartes {-1_WHITE}",
             "Retirer une carte {-2_WHITE}",
             "Remplacer deux cartes {+1_WHITE} par une carte {+3_WHITE} {SHIELD}1, Sur vous-même",
-            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {SHIELD}1, Affectez tous les alliés",
+            "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {SHIELD}1, Affecte n'importe quel allié",
             "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {DARK}",
             "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {LIGHT}",
             "Remplacer une carte {+0_WHITE} par une carte {+3_WHITE} {MUDDLE}",
             "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {CURSE}",
             "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} {REGENERATE}, Sur vous-même",
-            "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {HEAL}2, Affectez tous les alliés",
+            "Remplacer une carte {-1_WHITE} par une carte {+1_WHITE} {HEAL}2, Affecte n'importe quel allié",
             "Ajouter deux cartes {AGAIN} {HEAL}1, Sur vous-même",
             "Ajouter deux cartes {AGAIN} {CURSE}",
-            "Ignorer les effets négatifs des scénarios et Ajouter deux cartes {+1_WHITE}"
+            "Ignorer les effets négatifs des scénarios et ajouter deux cartes {+1_WHITE}"
         ]
     },
     "RG": {
@@ -323,7 +323,7 @@ export default {
             "Ajouter une carte {+2_WHITE}",
             "Remplacer une carte {+1_WHITE} par une carte {+2_WHITE} {EARTH}",
             "Remplacer une carte {+1_WHITE} par une carte {+2_WHITE} {FIRE}",
-            "Ajouter une carte {+0_WHITE} Tous les ennemis adjacents subissent 1 dégât"
+            "Ajouter une carte {+0_WHITE} Tous les adversaires adjacents subissent 1 dégât"
         ]
     },
     "HT": {
@@ -342,14 +342,14 @@ export default {
         ]
     },
     "VW": {
-        "name": "Gardienne du néant",
+        "name": "Gardienne du Néant",
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
             "Retirer une carte {-2_WHITE}",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {DARK}",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {ICE}",
-            "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {HEAL}1 (Ally)",
-            "Ajouter une carte {+1_WHITE} {HEAL}1 (Ally)",
+            "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {HEAL}1 (Allié)",
+            "Ajouter une carte {+1_WHITE} {HEAL}1 (Allié)",
             "Ajouter une carte {+1_WHITE} {POISON}",
             "Ajouter une carte {+3_WHITE}",
             "Ajouter une carte {+1_WHITE} {CURSE}"
@@ -557,7 +557,7 @@ export default {
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {PIERCE}2",
             "Ajouter trois cartes {AGAIN} {PIERCE}3",
             "Ajouter une carte {+1_WHITE} {CURSE}",
-            "Ajouter une carte {AGAIN} ADD {TARGET}",
+            "Ajouter une carte {AGAIN} Ajouter {TARGET}",
             "Remplacer une carte {+1_WHITE} par une carte {+2_WHITE} {PUSH}2",
             "Ignorer les effets négatifs des scénarios et retirer une carte {+0_WHITE}"
         ]
@@ -581,7 +581,7 @@ export default {
     "DF": {
         "name": "Vagabond",
         "masteries": [
-            "Finir un scénario avec vos pions Aventurier sur les derniers emplacements d'un moins quatre capacités persistantes",
+            "Finir un scénario avec vos pions Aventurier sur les derniers emplacements de quatre capacités persistantes",
             "Ne jamais effectuer de capacité de déplacement ou d'attaque d'une valeur inférieure à 4, et effectuer au moins une capacité de déplacement ou d'attaque à chaque round"
         ],
         "perks": [
@@ -595,7 +595,7 @@ export default {
             "Ajouter deux cartes « {HEAL.fh}1, sur vous-même » {AGAIN}",
             "Ignorer les effets des scénarios et ajouter une carte {+1_WHITE}",
             "Ignorer les effets {-1} des objets et ajouter une carte {+1_WHITE}",
-            "Chaque fois que vous effectuez un repos long, vous pouvez reculer d'une case un de vos pions personnage",
+            "Chaque fois que vous effectuez un repos long, vous pouvez reculer d'un emplacement un de vos pions Aventurier",
             "Vous pouvez emporter un objet {ONE-HAND} supplémentaire dans chaque scénario",
             "À la fin de chaque scénario, vous pouvez défausser jusqu'à deux cartes Butin, sauf Objet Aléatoire, pour piocher autant de nouvelles cartes Butin"
         ]
@@ -634,7 +634,7 @@ export default {
             "Ajouter deux cartes {+1_WHITE} {AGAIN}",
             "Ajouter deux cartes « {HEAL.fh}1, sur vous-même » {AGAIN}",
             "Ignorer les effets {-1} des objets et retirer une carte {-1_WHITE}",
-            "À la fin de chacun de vos repos longs, accorder à un allié à {RANGE.fh}3 : {MOVE.fh}2",
+            "À la fin de chacun de vos repos longs, octroyer à un allié à {RANGE.fh}3 : {MOVE.fh}2",
             "Chaque fois que vous ouvrez une porte avec une capacité de déplacement, ajouter +3{MOVE.fh}",
             "Une fois par scénario, pendant votre tour, gagner {SHIELD.fh}2 pour le round"
         ]
@@ -703,7 +703,7 @@ export default {
         "name": "Infuser",
         "masteries": [
             "Avoir cinq bonus {INFUSION_ICON} actifs",
-            "Tuer au moins quatre ennemis, mais ne jamais attaquer"
+            "Tuer au moins quatre adversaires, mais ne jamais attaquer"
         ],
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {-1_WHITE} et une carte {-1_WHITE} {WIND} {EARTH} {DARK}",
@@ -723,7 +723,7 @@ export default {
         "name": "Pyroclast",
         "masteries": [
             "Créer ou détruire au moins un obstacle ou une tuile de terrain dangereux à chaque round",
-            "Faire traverser six hexagones différents de terrain dangereux que vous avez créé aux ennemis en un seul tour"
+            "Faire traverser six hexagones différents de terrain dangereux que vous avez créé aux adversaires en un seul tour"
         ],
         "perks": [
             "Retirer deux cartes {-1_WHITE}",
@@ -736,7 +736,7 @@ export default {
             "Ajouter deux cartes {+1_WHITE} {MUDDLE.fh} {AGAIN}",
             "Ignorer les effets des scénarios",
             "Chaque fois que vous effectuez un repos long, vous pouvez détruire un obstacle adjacent pour gagner {WARD.fh}",
-            "Chaque fois que vous effectuez un repos court, vous pouvez {FIRE_X} pour effectuer {WOUND.fh}, {TARGET.fh}1 ennemi occupant ou adjacent à un terrain dangereux",
+            "Chaque fois que vous effectuez un repos court, vous pouvez {FIRE_X} pour effectuer {WOUND.fh}, {TARGET.fh}1 adversaire occupant ou adjacent à un terrain dangereux",
             "Vous et tous vos alliés n'êtes pas affectés par le terrain dangereux que vous créez"
         ]
     },
@@ -764,7 +764,7 @@ export default {
         "name": "Trapper",
         "masteries": [
             "Avoir un piège {HEAL.fh} sur la carte avec une valeur d'au moins 20",
-            "Faire traverser sept pièges ou plus aux ennemis avec une seule capacité"
+            "Faire traverser sept pièges ou plus aux adversaires avec une seule capacité"
         ],
         "perks": [
             "Retirer une carte {-2_WHITE}",
@@ -815,14 +815,14 @@ export default {
             "Ajouter une carte {AGAIN} « {HEAL.fh}1, {WARD.fh}, {TARGET.fh}1 allié »",
             "Chaque fois que vous effectuez un repos long, vous pouvez {ICE_OR_WIND}",
             "Chaque fois que vous effectuez un repos court, vous pouvez {ICE_X} pour effectuer {REGENERATE.fh}, {RANGE.fh}3 et {WIND_X} pour effectuer {WARD.fh}, {RANGE.fh}3",
-            "Au début de chaque scénario, tous les ennemis gagnent {MUDDLE.fh}. Chaque fois qu'une nouvelle salle est révélée, tous les ennemis de cette salle gagnent {MUDDLE.fh}"
+            "Au début de chaque scénario, tous les adversaires gagnent {MUDDLE.fh}. Chaque fois qu'une nouvelle salle est révélée, tous les adversaires de cette salle gagnent {MUDDLE.fh}"
         ]
     },
     "FF": {
         "name": "Le Poing-de-Glace",
         "masteries": [
             "{RECOVER.fh} au moins une carte de votre défausse à chaque round",
-            "Entrer dans au moins dix hexagones différents avec une capacité de déplacement, puis faire subir à un ennemi au moins {DAMAGE.fh}10 avec une capacité d'attaque pendant le même tour"
+            "Entrer dans au moins dix hexagones différents avec une capacité de déplacement, puis faire subir à un adversaire au moins {DAMAGE.fh}10 avec une capacité d'attaque pendant le même tour"
         ],
         "perks": [
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {DISARM.fh}",
@@ -846,7 +846,7 @@ export default {
         ],
         "perks": [
             "Retirer une carte {-2_WHITE} et une carte {+1_WHITE}",
-            "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « Après cette capacité d'attaque, accorder à une de vos invocations : {MOVE.fh}2 »",
+            "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « Après cette capacité d'attaque, octroyer à une de vos invocations : {MOVE.fh}2 »",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} « Après cette capacité d'attaque, {TRANSFER_ICON} »",
             "Ajouter une carte {+1_WHITE} « {HEAL.fh}1, sur vous-même »",
             "Ajouter une carte {+2_WHITE} {MUDDLE.fh}",
@@ -866,7 +866,7 @@ export default {
         "perks": [
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} « {PRESSURE_UP_ICON} ou {PRESSURE_DOWN_ICON} »",
             "Remplacer une carte {-1_WHITE} par une carte {AGAIN} « {SHIELD.fh}1 »",
-            "Remplacer une carte {+0_WHITE} par une carte {+0_WHITE} « La cible et tous les ennemis adjacents à celle-ci subissent {DAMAGE.fh}1 »",
+            "Remplacer une carte {+0_WHITE} par une carte {+0_WHITE} « La cible et tous les adversaires adjacents à celle-ci subissent {DAMAGE.fh}1 »",
             "Remplacer deux cartes {+0_WHITE} par une carte {PIERCE.fh}3 {AGAIN} et une carte « {RETALIATE.fh}2 » {AGAIN}",
             "Ajouter une carte {+1_WHITE} « {HEAL.fh}2, sur vous-même »",
             "Ajouter une carte {+3_WHITE}",
@@ -892,7 +892,7 @@ export default {
             "Remplacer trois cartes {+1_WHITE} par trois cartes {+1_WHITE} {CURSE.fh}",
             "Ajouter deux cartes {+1_WHITE} « Gagner 1{TROPHY_ICON} »",
             "Ignorer les effets des scénarios et retirer deux cartes {+0_WHITE}",
-            "Chaque fois que vous effectuez un repos long, vous pouvez {LOOT 1} un hexagone adjacent. Si vous gagnez des jetons de butin, gagnez 1 {TROPHY_ICON}",
+            "Chaque fois que vous effectuez un repos long, vous pouvez {LOOT 1} un hexagone adjacent. Si vous gagnez des pions Butin, gagnez 1 {TROPHY_ICON}",
             "Au début de chaque scénario, gagner 2 {TROPHY_ICON}",
             "Tant que vous avez {INVISIBLE.fh}, gagner l'Avantage sur toutes vos attaques"
         ]
@@ -913,7 +913,7 @@ export default {
             "Ajouter deux cartes « {HEAL.fh}1, sur vous-même » {AGAIN}",
             "Ignorer les effets {-1} des objets et, chaque fois que vous gagneriez {IMPAIR.fh}, empêcher l'état",
             "Chaque fois que vous annoncez un repos long pendant la sélection des cartes, gagner {SHIELD.fh}1 pour le round",
-            "Gagner l'Avantage sur toutes vos attaques effectuées en occupant des hexagones d'eau ou en ciblant des ennemis qui en occupent"
+            "Gagner l'Avantage sur toutes vos attaques effectuées en occupant des hexagones d'eau ou en ciblant des adversaires qui en occupent"
         ]
     },
     "SA": {
@@ -938,7 +938,7 @@ export default {
         ]
     },
     "HA": {
-        "name": "Hail",
+        "name": "Tourmente",
         "masteries": [
             "Pendant un scénario entier, gagner au moins 1 {RESOLVE_WHITE} à chaque round",
             "Dans un seul scénario, pendant trois rounds consécutifs, dépenser au moins 3 {RESOLVE_WHITE} à chaque round"
@@ -1114,7 +1114,7 @@ export default {
         ]
     },
     "BE2": {
-        "name": "Berseker",
+        "name": "Berserker",
         "masteries": [
             "Tuer 20 ennemis avec votre riposte",
             "Dans un seul scénario, terminer tous vos tours avec vos points de vie à la moitié de votre maximum ou moins sans être épuisé"
@@ -1130,11 +1130,11 @@ export default {
             "Ignorer les effets {-1} des objets et ajouter une carte {+1_WHITE}",
             "Chaque fois que vous vous soignez lors d'un repos long, ajouter +1 {HEAL.fh}",
             "Une fois par scénario, lorsque les {DAMAGE.fh} d'une attaque feraient tomber vos points de vie actuels sous 1, les fixer à 1 à la place et effectuer : {ATTACK.fh}2, {TARGET.fh} l'attaquant",
-            "À la fin de chacun de vos tours, vous pouvez contrôler tous les ennemis adjacents : {ATTACK.fh} +0 {TARGET.fh} Berseker"
+            "À la fin de chacun de vos tours, vous pouvez contrôler tous les ennemis adjacents : {ATTACK.fh} +0 {TARGET.fh} Berserker"
         ]
     },
     "BS2": {
-        "name": "Essaim de Lames",
+        "name": "Bladeswarm",
         "masteries": [
             "Effectuer 6 capacités {PERSISTENT}{LOST.fh} différentes, dont au plus 3 sur les 6 sont des capacités d'invocation",
             "Obtenir cette maîtrise lorsque vous estimez la mériter"
@@ -1144,7 +1144,7 @@ export default {
             "Remplacer une carte {-1_WHITE} par une carte {+0_WHITE} {POISON.fh}",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {WIND}/{DARK}",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {EARTH}/{LIGHT}",
-            "Remplacer une carte {+0_WHITE} par une carte {+0_WHITE} « Ajouter +1 {ATTACK.fh} pour chaque carte avec un {LOST.fh} dans la zone active de l'Essaim de Lames »",
+            "Remplacer une carte {+0_WHITE} par une carte {+0_WHITE} « Ajouter +1 {ATTACK.fh} pour chaque carte avec un {LOST.fh} dans la zone active du Bladeswarm »",
             "Ignorer les effets des scénarios et ajouter une carte {+1_WHITE}",
             "Ignorer les effets {-1} des objets et ajouter une carte {+1_WHITE}",
             "Chaque fois que vous effectuez un repos long, vous pouvez vous {TELEPORT.fh} dans un hexagone occupé par l'une de vos invocations et {TELEPORT.fh} simultanément cette invocation dans l'hexagone que vous occupiez",
@@ -1172,7 +1172,7 @@ export default {
         ]
     },
     "EL2": {
-        "name": "Elementalist",
+        "name": "Élémentaliste",
         "masteries": [
             "Dans un seul scénario, consommer 4 éléments ou plus en un seul tour 5 fois",
             "Une fois dans 3 scénarios différents, avoir les 6 éléments forts ou déclinants en même temps"
@@ -1213,7 +1213,7 @@ export default {
         ]
     },
     "PH2": {
-        "name": "Plagueherald",
+        "name": "Héraut du Fléau",
         "masteries": [
             "En un seul tour, tuer 3 ennemis ou plus sans piocher de carte de modificateur d'attaque",
             "Dans un seul scénario, appliquer ou retirer {POISON.fh} à un allié ou un ennemi à chaque round"
@@ -1341,7 +1341,7 @@ export default {
         "perks": [
             "Remplacer une carte {-1_WHITE} par une carte {AGAIN} « {HEAL.fh}2, {TARGET.fh} Ours »",
             "Remplacer une carte {+0_WHITE} par une carte {+1_WHITE} {WOUND.fh}",
-            "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} « Ajouter +1 {ATTACK.fh} si la Fureur Sauvage et l'Ours sont à {RANGE.fh}4 l'un de l'autre »",
+            "Remplacer une carte {+0_WHITE} par une carte {+2_WHITE} « Ajouter +1 {ATTACK.fh} si le Wildfury et l'Ours sont à {RANGE.fh}4 l'un de l'autre »",
             "Remplacer une carte {+2_WHITE} par une carte {+4_WHITE}",
             "Ajouter deux cartes {+1_WHITE} {WIND}/{EARTH}",
             "Ajouter une carte {+2_WHITE} {PUSH.fh}2",
