@@ -12,7 +12,7 @@
                                     <div v-for="(resource, index) in resources">
                                         <inline-svg :src="'resources/'+resource"
                                                     class="absolute w-full left-0 transition-opacity duration-500"
-                                                    :class="[index === anyIndex ? 'opacity-1' : 'opacity-0']"/>
+                                                    :class="[index === anyIndex ? 'opacity-100' : 'opacity-0']"/>
                                     </div>
                                 </div>
                                 <inline-svg  v-else-if="typeof cell === 'string'" :src="'resources/'+cell"/>
@@ -42,7 +42,7 @@
                                         <div v-for="(resource, index) in resources">
                                             <inline-svg :src="'resources/'+resource"
                                                         class="absolute w-full left-0 transition-opacity duration-500"
-                                                        :class="[index === anyIndex ? 'opacity-1' : 'opacity-0']"/>
+                                                        :class="[index === anyIndex ? 'opacity-100' : 'opacity-0']"/>
                                         </div>
                                         <span class="ml-6">x {{ count }}</span>
                                     </div>

@@ -75,9 +75,11 @@ export default {
 
         await this.$nextTick();
         this.checkForScrollbar();
-        this.$bus.$on('windows-resized', () => {
-            this.checkForScrollbar();
-        });
+        this.$bus.$on('windows-resized', this.checkForScrollbar);
+    },
+    unmounted() {
+        this.$bus.$off('windows-resized', this.checkForScrollbar);
+        this.field?.destroy();
     },
     computed: {
         max() {

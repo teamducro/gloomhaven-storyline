@@ -48,6 +48,22 @@ describe('Gloomhaven Secretariat export', () => {
         });
     });
 
+    it('It exports a Seeker of Xorn scenario with the GHS sox edition', () => {
+        // Given Seeker of Xorn is enabled and its first scenario is unlocked
+        utilities.enableGame('sox');
+        cy.visit('/tracker/#/scenarios');
+        cy.window().then((win) => {
+            win.app.scenarioRepository.changeState(win.app.scenarioRepository.find('SoX1'), 'incomplete');
+        });
+
+        // When it is exported
+        cy.get('#scenarios').contains('#SoX1').click();
+        cy.get('#ghs-export-scenario').click();
+
+        // Then GHS gets its own edition and number
+        exportedGame().its('scenario').should('deep.equal', {index: '1', edition: 'sox'});
+    });
+
     it('It hides the export button when the integration is disabled', () => {
         cy.visit('/tracker/#/settings');
         cy.get('#ghs-integration').uncheck();

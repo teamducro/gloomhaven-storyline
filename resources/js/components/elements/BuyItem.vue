@@ -5,6 +5,7 @@
             <template v-if="removedCount">
                 <br>{{ $t('Removed from game') }}: {{ removedCount }}
                 <button type="button" class="restore-item mdc-button ml-1 min-w-0! h-7! px-1! text-sm!" :disabled="appData.read_only" @click="restore">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Restore') }}</span>
                 </button>
             </template>
@@ -53,6 +54,7 @@
                 </button>
                 <button v-if="owns" class="remove-from-game mdc-button mdc-button--raised" :disabled="appData.read_only"
                         @click="removeFromGame">
+                    <span class="mdc-button__ripple"></span>
                     <i class="material-icons mdc-button__icon">delete_forever</i>
                     <span class="mdc-button__label">{{ $t('Sacrifice') }}</span>
                 </button>

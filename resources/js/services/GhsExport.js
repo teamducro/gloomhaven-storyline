@@ -55,14 +55,24 @@ export default class GhsExport {
             edition: GHS_GAME_EDITIONS[game],
             characters: Object.values(sheet.characters).filter(character => CLASSES[character.id])
                 .map(character => this.character(CLASSES[character.id], character)),
-            scenario: {
-                index: String(scenario.displayId),
-                edition: scenario.game === Game.gh2 ? 'gh2e' : scenario.game,
-                // Crimson Scales class scenarios (e.g. AA1) are grouped by class in GHS.
-                group: String(scenario.id).match(/^[A-Z]{2}(?=\d)/)?.[0],
-            },
+            scenario: this.scenario(scenario),
             state: 'draw',
             levelAdjustment: sheet.scenarioLevel || 0,
+        };
+    }
+
+    scenario(scenario) {
+        // GHS has Seeker of Xorn as its own edition, numbered 1-3.
+        const seekerOfXorn = String(scenario.id).match(/^SoX(\d+)$/);
+        if (seekerOfXorn) {
+            return {index: seekerOfXorn[1], edition: 'sox'};
+        }
+
+        return {
+            index: String(scenario.displayId),
+            edition: scenario.game === Game.gh2 ? 'gh2e' : scenario.game,
+            // Crimson Scales class scenarios (e.g. AA1) are grouped by class in GHS.
+            group: String(scenario.id).match(/^[A-Z]{2}(?=\d)/)?.[0],
         };
     }
 

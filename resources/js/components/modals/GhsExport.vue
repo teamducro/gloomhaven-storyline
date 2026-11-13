@@ -8,11 +8,10 @@
                 <li>{{ $t('ghs-export.4') }}</li>
             </ol>
 
-            <a id="ghs-download" :href="downloadUrl" download="gloomhaven-storyline-ghs.json">
-                <button type="button" class="mdc-button mdc-button--raised">
-                    <i class="material-icons mdc-button__icon">launch</i>
-                    <span class="mdc-button__label">{{ $t('Download') }}</span>
-                </button>
+            <a id="ghs-download" class="mdc-button mdc-button--raised" :href="downloadUrl" download="gloomhaven-storyline-ghs.json">
+                <span class="mdc-button__ripple"></span>
+                <i class="material-icons mdc-button__icon">launch</i>
+                <span class="mdc-button__label">{{ $t('Download') }}</span>
             </a>
         </template>
     </modal>

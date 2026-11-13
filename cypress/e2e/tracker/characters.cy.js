@@ -139,6 +139,35 @@ describe('Character', () => {
         });
     });
 
+    it('It lets the class events be removed and added by hand', () => {
+        // Given an unlocked class added its city event 31
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+        cy.get('#character-SK').click();
+        cy.get('#city-events-bedges .bedge').contains(/^\s*31\s*$/).should('be.visible');
+
+        // When it is removed by hand
+        cy.get('#city-events-bedges .bedge').contains(/^\s*31\s*$/).click();
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        cy.wait(700); // removing is ignored while the flip animation runs
+        cy.get('.mdc-dialog__content button img[alt="Remove #31"]').click();
+        cy.get('#city-events-bedges .bedge').contains(/^\s*31\s*$/).should('not.exist');
+
+        // Then unlocking the class again doesn't bring it back
+        cy.get('#character-SK').click();
+        cy.get('#character-SK').click();
+        cy.window().its('app.campaignData.sheet.city').should('not.have.property', '31', true);
+
+        // And it can still be added by hand
+        utilities.scrollTo('40%');
+        cy.get('#city-events').parent().click();
+        cy.get('[name="city-events"]').type('31');
+        cy.get('.mdc-deprecated-list-item__text span').contains('31').click();
+        utilities.closeModel();
+        cy.get('#city-events-bedges .bedge').contains(/^\s*31\s*$/).should('be.visible');
+        cy.window().its('app.campaignData.sheet.city').should('have.property', '31', true);
+    });
+
     it('It adds the class events of a chosen Crimson Scales starting class', () => {
         utilities.enableGame('cs');
         utilities.switchGame('cs');

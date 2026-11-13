@@ -157,6 +157,27 @@ describe('Achievements', () => {
             });
         });
 
+        it('It unlocks main scenario 101 that requires it when it is gained', () => {
+            // Given side scenario 99 and its follow-up 100 are complete, so 101 only waits for Into the Forest
+            cy.visit('/tracker/#/achievements');
+            cy.window().then((win) => {
+                const campaignData = JSON.parse(win.localStorage.getItem('local'));
+                campaignData['scenario-fh-99'] = {state: 'complete'};
+                campaignData['scenario-fh-100'] = {state: 'complete'};
+                win.localStorage.setItem('local', JSON.stringify(campaignData));
+            });
+            cy.reload();
+            utilities.scenarios().then((scenarios) => expect(scenarios.firstWhere('id', 101).state).eq('required'));
+
+            // When it is gained
+            cy.get('button').contains('add').click();
+            cy.get('input[name=achievement-to-add]').type('into the');
+            cy.get('li').contains('Into the Forest').click();
+
+            // Then 101 is unlocked
+            utilities.scenarios().then((scenarios) => expect(scenarios.firstWhere('id', 101).state).eq('incomplete'));
+        });
+
         it('It is not gained or lost when side scenario 69 is unlocked and locked', () => {
             cy.visit('/tracker/#/story');
 

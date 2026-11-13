@@ -22,6 +22,7 @@ import * as Sentry from "@sentry/vue";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
 import migrateVersion2Progress from "./services/app/migrateVersion2Progress";
 import migrateDonationProsperity from "./services/app/migrateDonationProsperity";
+import migrateSheets from "./services/app/migrateSheets";
 import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
@@ -256,9 +257,11 @@ const vueApp = createApp({
                 await this.fetchCampaignData();
             }
 
-            this.campaignData = store.get(this.campaignId) || {};
-            this.campaignData = migrateVersion2Progress(this.campaignData);
+            const stored = store.get(this.campaignId) || {};
+            const loaded = JSON.stringify(stored);
+            this.campaignData = migrateVersion2Progress(stored);
             this.campaignData = migrateDonationProsperity(this.campaignId, this.campaignData);
+            migrateSheets(this.campaignData);
             // Crossover defaults depend on the campaign (MP classes in use)
             this.enabledGames = getEnabledGames();
             this.game = this.storedGame();
@@ -277,6 +280,9 @@ const vueApp = createApp({
                 this.enabledGames = enableGame(gloomhavenGame);
             }
             this.stories = this.storyRepository.getStories();
+            if (JSON.stringify(this.campaignData) !== loaded) {
+                this.storySyncer.absorbMigrations();
+            }
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();
             }
