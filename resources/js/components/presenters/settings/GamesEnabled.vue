@@ -86,14 +86,8 @@ export default {
             const gameData = new GameData;
             this.games = gameData.games();
             this.games.forEach((code) => {
-                // GH is always enabled, it's used as default in some places
-                if (code === 'gh') {
-                    this.enabled[code] = true;
-                    this.disabled[code] = true;
-                } else {
-                    this.enabled[code] = code in enabledGames ? enabledGames[code] : gameData.enabledByDefault(code);
-                    this.disabled[code] = false;
-                }
+                this.enabled[code] = code in enabledGames ? enabledGames[code] : gameData.enabledByDefault(code);
+                this.disabled[code] = false;
             });
             this.checkDisabled();
         },
@@ -150,9 +144,9 @@ export default {
                 Object.keys(this.disabled)
                     .forEach((code) => this.disabled[code] = false);
             }
-            // The current game is always disabled, gh2 is played in the gh slot
+            // The current game is always disabled, gh2 is played in the gh slot and FC uses GH's items
             this.disabled[app.game] = true;
-            if (app.game === Game.gh2) {
+            if ([Game.gh2, Game.fc].includes(app.game)) {
                 this.disabled[Game.gh] = true;
             }
             this.rerender();

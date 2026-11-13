@@ -269,6 +269,9 @@ const vueApp = createApp({
             if (!this.enabledGames.includes(this.game)) {
                 this.enabledGames = enableGame(this.game);
             }
+            if ([Game.gh2, Game.fc].includes(this.game) && !this.enabledGames.includes(Game.gh)) {
+                this.enabledGames = enableGame(Game.gh);
+            }
             // gh2 is played in the gh slot, so it's enabled along with gh
             if (this.enabledGames.includes(Game.gh) && !this.enabledGames.includes(gloomhavenGame)) {
                 this.enabledGames = enableGame(gloomhavenGame);
