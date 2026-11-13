@@ -14,7 +14,7 @@ export default {
     "gh-3": {
         "name": "Juchtowa Zbroja",
         "source": "Dobrobyt 1",
-        "desc": "W dwóch następnych przypadkach otrzymywanie obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 2 {-1} do swojej talli modyfikatorów ataku.",
+        "desc": "W dwóch następnych przypadkach otrzymania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 2 {-1} do swojej talii modyfikatorów ataku.",
         "faq": "Juchtowa Zbroja przyznaje tarczę tylko na ten atak, nie do końca rundy."
     },
     "gh-4": {
@@ -117,7 +117,7 @@ export default {
     "gh-23": {
         "name": "Kolczuga",
         "source": "Dobrobyt 3",
-        "desc": "W trzech następnych przypadkach otrzymanie obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD}. Dodaj 3 {-1} do swojej talii modyfikatorów ataku.",
+        "desc": "W trzech następnych przypadkach otrzymania obrażeń ze skierowanych w ciebie ataków zyskujesz {SHIELD} 1. Dodaj 3 {-1} do swojej talii modyfikatorów ataku.",
         "faq": "Kolczuga przyznaje tarczę tylko na ten atak, nie do końca rundy."
     },
     "gh-24": {
@@ -300,7 +300,7 @@ export default {
     },
     "gh-59": {
         "name": "Monokular Teleskopowy",
-        "source": "Dobrobyt 8\nOption from {SCENARIO 100}",
+        "source": "Dobrobyt 8\nOpcja z {SCENARIO 100}",
         "desc": "Podczas twojego ataku dystansowego, dodaj +2 do {RANGE} dla całej twojej akcji ataku."
     },
     "gh-60": {
@@ -345,7 +345,7 @@ export default {
     },
     "gh-68": {
         "name": "Halabarda",
-        "source": "Dobrobyt 9\n{SCENARIO 111} (Skarb #92)\nSection 132 -> g106 „Strangler's Park” in book",
+        "source": "Dobrobyt 9\n{SCENARIO 111} (Skarb #92)\nSekcja 132 -> g106 „Strangler's Park” w księdze",
         "desc": "Podczas twojej akcji ataku wręcz w pojedynczy cel, możesz zaatakować dowolnego pojedynczego wroga w zasięgu 2 pól."
     },
     "gh-69": {
@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Pierścień Drugiej Szansy",
-        "source": "Dobrobyt 9\nFC Challenge Scenario, Rift Card 12 (Skarb #89)\nSection 103 -> 84 „Gateway to the Firmament” in book",
+        "source": "Dobrobyt 9\nScenariusz-wyzwanie FC, karta szczeliny 12 (Skarb #89)\nSekcja 103 -> 84 „Gateway to the Firmament” w księdze",
         "desc": "Na końcu twojej tury zagraj dwie karty z ręki i wykonaj dodatkową turę w tej rundzie, w oparciu o nową wartość inicjatywy z użytej wiodącej karty (która musi być późniejsza niż obecna wartość początkowa)."
     },
     "gh-71": {
@@ -491,7 +491,7 @@ export default {
     "gh-97": {
         "name": "Onuce Wytrzymałości",
         "source": "{SCENARIO 38} (Skarb #29)",
-        "desc": "Jeśli w twojej turze poruszysz się o cztery lub więcej pola, wykonaj akcję „{HEAL} 1, na siebie”."
+        "desc": "Jeśli w twojej turze poruszysz się o cztery lub więcej pól, wykonaj akcję „{HEAL} 1, na siebie”."
     },
     "gh-98": {
         "name": "Buty Smoczej Łuski",
@@ -515,7 +515,7 @@ export default {
     },
     "gh-102": {
         "name": "Szata Ofiarna",
-        "source": "Zdarzenie w mieście 40",
+        "source": "Zdarzenie miejskie 40",
         "desc": "Podczas twojego ataku dystansowego przyjmij 3 obrażenia, aby dodać +1 do {ATTACK} dla całej akcji ataku."
     },
     "gh-103": {
@@ -530,20 +530,20 @@ export default {
     },
     "gh-105": {
         "name": "Zapchlona Derka",
-        "source": "Zdarzenie w mieście 30",
+        "source": "Zdarzenie miejskie 30",
         "desc": "Gdy wrogowie skupiają się na celu, traktują cię, jakby twoja inicjatywa wynosiła 99.",
         "faq": "Przedmiot nie zmienia inicjatywy postaci, więc nie wpływa na inicjatywę ich przywołańców. Zmienia jedynie to, jak potwory traktują postać podczas oceny skupienia."
     },
     "gh-106": {
         "name": "Zębowy Naszyjnik",
-        "source": "Zdarzenie na drodze 05",
+        "source": "Zdarzenie na szlaku 05",
         "desc": "Za każdym razem gdy zabijesz wroga podczas twojej tury, wykonaj akcję „{HEAL} 1, na siebie”."
     },
     "gh-107": {
         "name": "Rogaty Hełm",
         "source": "{SCENARIO 03} (Skarb #65)",
         "desc": "Po przejściu 4 lub więcej pól dodaj +1 do {ATTACK} dla twojego następnego ataku wręcz w tej turze.",
-        "faq": "Ten bonus musi być wykorzystany w turze, w której został zdobyty. Nie można go zachować. Jeśli wykonujesz umiejętność wielokrotnego ruchu, możesz używać tego przedmiotu tak długo, jak długo poruszasz się łącznie o co najmniej 4 heksy. Przedmiot może być użyty tylko raz podczas twojej tury, nawet jeśli poruszysz się o 4 heksy wiele razy podczas twojej tury."
+        "faq": "Ten bonus musi być wykorzystany w turze, w której został zdobyty. Nie można go zachować. Jeśli wykonujesz zdolność wielokrotnego ruchu, możesz używać tego przedmiotu tak długo, jak długo poruszasz się łącznie o co najmniej 4 heksy. Przedmiot może być użyty tylko raz podczas twojej tury, nawet jeśli poruszysz się o 4 heksy wiele razy podczas twojej tury."
     },
     "gh-108": {
         "name": "Hełm Smoczej Łuski",
@@ -552,7 +552,7 @@ export default {
     },
     "gh-109": {
         "name": "Złodziejski Kaptur",
-        "source": "Zdarzenie w mieście 62",
+        "source": "Zdarzenie miejskie 62",
         "desc": "Wykonując akcję {LOOT 1}, wykonaj zamiast tego {LOOT 2}."
     },
     "gh-110": {
@@ -567,7 +567,7 @@ export default {
     },
     "gh-112": {
         "name": "Pradawne Wiertło",
-        "source": "Nagroda w {SCENARIO 65}\nOption from {SCENARIO 100}",
+        "source": "Nagroda w {SCENARIO 65}\nOpcja z {SCENARIO 100}",
         "desc": "Podczas twojego ataku wręcz dodaj +2 do {ATTACK} oraz {PIERCE} 2 dla całej akcji ataku."
     },
     "gh-113": {
@@ -593,12 +593,12 @@ export default {
     },
     "gh-117": {
         "name": "Krwawy Topór",
-        "source": "Zdarzenie w mieście 53\nZdarzenie na drodze 53",
+        "source": "Zdarzenie miejskie 53\nZdarzenie na szlaku 53",
         "desc": "Podczas twojego ataku wręcz przyjmij 2 obrażenia, aby dodać +1 do {ATTACK} na całą akcję ataku."
     },
     "gh-118": {
         "name": "Kostur Żywiołów",
-        "source": "Zdarzenie w mieście 57",
+        "source": "Zdarzenie miejskie 57",
         "desc": "Podczas twojej tury stwórz dowolny żywioł. {ANY}"
     },
     "gh-119": {
@@ -634,17 +634,17 @@ export default {
     },
     "gh-125": {
         "name": "Osobliwa Zębatka",
-        "source": "Zdarzenie w mieście 03\nOpcja z {SCENARIO 100}",
+        "source": "Zdarzenie miejskie 03\nOpcja z {SCENARIO 100}",
         "desc": "Podczas twojej tury, rozbrój wszystkie pułapki w {RANGE} 2."
     },
     "gh-126": {
         "name": "Mechaniczny Pająk",
-        "source": "Zdarzenie w mieście 43\nOpcja z {SCENARIO 100}",
+        "source": "Zdarzenie miejskie 43\nOpcja z {SCENARIO 100}",
         "desc": "Podczas twojej tury {POISON} wszystkich sąsiadujących wrogów."
     },
     "gh-127": {
         "name": "Wielki Mechaniczny Pająk",
-        "source": "Zdarzenie w mieście 61",
+        "source": "Zdarzenie miejskie 61",
         "desc": "Podczas twojej tury wykonaj akcję {LOOT 1}."
     },
     "gh-128": {
@@ -654,7 +654,7 @@ export default {
     },
     "gh-129": {
         "name": "Czarna Karta",
-        "source": "Zdarzenie na drodze 51",
+        "source": "Zdarzenie na szlaku 51",
         "desc": "Podczas twojej tury umieść żeton postaci na sąsiadującym normalnym bądź elitarnym wrogu. Dodaj +1 do {ATTACK} dla wszystkich twoich ataków, których celem jest ten wróg."
     },
     "gh-130": {
@@ -671,7 +671,7 @@ export default {
     "gh-132": {
         "name": "Rdzeń Mocy",
         "source": "{SCENARIO 67}",
-        "desc": "Przywołaj Stalowy Konstrukt",
+        "desc": "Przywołaj Steel Construct",
         "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-133": {
@@ -681,98 +681,98 @@ export default {
     },
     "gh-134": {
         "name": "Imponujące Ostrze",
-        "source": "Nagroda w Solo Scenario - {BR}",
+        "source": "Nagroda w scenariuszu solo - {BR}",
         "desc": "Za każdym razem gdy zabijesz wroga podczas twojej tury zyskujesz {SHIELD} 1 do końca rundy."
     },
     "gh-135": {
         "name": "Dozownik Mikstur",
-        "source": "Nagroda w Solo Scenario - {TI}",
+        "source": "Nagroda w scenariuszu solo - {TI}",
         "desc": "Podczas twojej akcji Leczenia podwajasz wartość Leczenia."
     },
     "gh-136": {
         "name": "Niestabilny Eliksir",
-        "source": "Nagroda w Solo Scenario - {SW}",
+        "source": "Nagroda w scenariuszu solo - {SW}",
         "desc": "Podczas twojego ataku dystansowego dodaj +2 do {ATTACK} oraz zyskaj Korzyść na całą akcję ataku, ale otrzymujesz 2 obrażenia za każdy wykonany atak."
     },
     "gh-137": {
         "name": "Sztylet Skrytobójcy",
-        "source": "Nagroda w Solo Scenario - {SC}",
+        "source": "Nagroda w scenariuszu solo - {SC}",
         "desc": "Za każdym razem gdy wykonujesz atak wręcz dodaj {PIERCE} 1 dla tego ataku."
     },
     "gh-138": {
         "name": "Kamienna Tiara",
-        "source": "Nagroda w Solo Scenario - {CH}",
+        "source": "Nagroda w scenariuszu solo - {CH}",
         "desc": "Podczas akcji, w której tworzysz przeszkodę, stwórz dodatkową przeszkodę i zastosuj dla niej te same efekty."
     },
     "gh-139": {
         "name": "Mistyczny Nóż",
-        "source": "Nagroda w Solo Scenario - {MT}",
+        "source": "Nagroda w scenariuszu solo - {MT}",
         "desc": "Za każdym razem gdy wykonujesz {AUGMENT}, dodaj +1 do {ATTACK} dla całej akcji."
     },
     "gh-140": {
         "name": "Słoneczna Tarcza",
-        "source": "Nagroda w Solo Scenario - {SK}",
+        "source": "Nagroda w scenariuszu solo - {SK}",
         "desc": "Kiedy otrzymujesz obrażenia, możesz {LIGHT_X}, aby zyskać {SHIELD} 3 na ten atak."
     },
     "gh-141": {
         "name": "Pas Narzędziowy",
-        "source": "Nagroda w Solo Scenario - {QM}",
+        "source": "Nagroda w scenariuszu solo - {QM}",
         "desc": "Podczas twojej tury, ty albo jeden z twoich sojuszników możecie {REFRESH} jeden z swoich wykorzystanych albo zużytych przedmiotów.",
         "faq": "Tego przedmiotu nie można odświeżyć."
     },
     "gh-142": {
         "name": "Fazujący Bożek",
-        "source": "Nagroda w Solo Scenario - {SU}",
+        "source": "Nagroda w scenariuszu solo - {SU}",
         "desc": "Kiedy twój przywołany sojusznik jest atakowany i ma otrzymać obrażenia, zignoruj je."
     },
     "gh-143": {
         "name": "Eliksir Cienia",
-        "source": "Nagroda w Solo Scenario - {NS}",
+        "source": "Nagroda w scenariuszu solo - {NS}",
         "desc": "Podczas twojej tury zyskaj {INVISIBLE} i stwórz ciemność. {DARK}"
     },
     "gh-144": {
         "name": "Medalion Zarazy",
-        "source": "Nagroda w Solo Scenario - {PH}",
+        "source": "Nagroda w scenariuszu solo - {PH}",
         "desc": "Podczas twojej tury {POISON} i rzuć {CURSE} na jednego wroga w {RANGE} 3."
     },
     "gh-145": {
         "name": "Maska Śmierci",
-        "source": "Nagroda w Solo Scenario - {BE}",
+        "source": "Nagroda w scenariuszu solo - {BE}",
         "desc": "Za każdym razem gdy wykonujesz atak wręcz i masz dokładnie 1 punkt życia, dodaj +2 do {ATTACK}."
     },
     "gh-146": {
         "name": "Mistrzowska Lutnia",
-        "source": "Nagroda w Solo Scenario - {SS}",
+        "source": "Nagroda w scenariuszu solo - {SS}",
         "desc": "Po wykonaniu dowolnej {SONG} natychmiast wykonaj akcję {ATTACK} 2 albo {MOVE} 2."
     },
     "gh-147": {
         "name": "Płaszcz Łowcy",
-        "source": "Nagroda w Solo Scenario - {DS}",
+        "source": "Nagroda w scenariuszu solo - {DS}",
         "desc": "Za każdym razem, gdy wykonujesz akcję {DOOM}, {MUDDLE} cel tej akcji {DOOM}."
     },
     "gh-148": {
         "name": "Fartuch Lekarski",
-        "source": "Nagroda w Solo Scenario - {SB}",
+        "source": "Nagroda w scenariuszu solo - {SB}",
         "desc": "Za każdym razem gdy twój sojusznik wykorzysta w grze Zestaw Medyczny bądź Duży Zestaw Medyczny, zyskujesz +1 do {HEAL}."
     },
     "gh-149": {
         "name": "Buty Żywiołów",
-        "source": "Nagroda w Solo Scenario - {EL}",
+        "source": "Nagroda w scenariuszu solo - {EL}",
         "desc": "Jeżeli w czasie twojej tury poruszysz się o 5 lub więcej pól, stwórz dowolny żywioł. {ANY}"
     },
     "gh-150": {
         "name": "Różdżka Posłuszeństwa",
-        "source": "Nagroda w Solo Scenario - {BT}",
+        "source": "Nagroda w scenariuszu solo - {BT}",
         "desc": "Po wydaniu {COMMAND} wykorzystaj w grze jedną kartę z ręki i natychmiast rozpatrz tę samą stronę kart (górną lub dolną) jako akcję {COMMAND}."
     },
     "gh-151": {
         "name": "Sword of the Sands",
-        "source": "Nagroda w Solo Scenario - {BS}",
+        "source": "Nagroda w scenariuszu solo - {BS}",
         "desc": "Podczas twojego ataku wręcz dodaj {POISON} i {WOUND} dla całej akcji ataku."
     },
     "gh-152": {
         "name": "Pierścień Dwoistości",
-        "source": "Nagroda w {SCENARIO 97}\nSection 125 „A locked chest” in book",
+        "source": "Nagroda w {SCENARIO 97}\nSekcja 125 „A locked chest” w księdze",
         "desc": "Po wykonaniu górnej akcji dowolnej karty zdolności możesz natychmiast wykonać dolną akcję z tej samej karty. Przedmiotu tego nie można użyć, jeśli obie akcje spowodowałyby utratę {CONSUMED} karty."
     },
     "gh-153": {
@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Starożytny Łuk",
-        "source": "{SCENARIO 107} (Skarb #78)\nSection 32 „Collapsed Atrium” in book",
+        "source": "{SCENARIO 107} (Skarb #78)\nSekcja 32 „Collapsed Atrium” w księdze",
         "desc": "Podczas twojego ataku dystansowego, dodaj +2 do {ATTACK}, {CURSE} oraz {WOUND} dla pojedynczego ataku."
     },
     "gh-158": {
@@ -822,7 +822,7 @@ export default {
     },
     "gh-162": {
         "name": "Urządzenie Szczelinowe",
-        "source": "Nagroda w {SCENARIO 112}\nSection 62 „Mechanical Splendor” in book.",
+        "source": "Nagroda w {SCENARIO 112}\nSekcja 62 „Mechanical Splendor” w księdze",
         "desc": "Podczas twojej tury możesz się {TELEPORT} na dowolne, niezajęte pole w odległości 4 pól od ciebie."
     },
     "gh-163": {
@@ -832,7 +832,7 @@ export default {
     },
     "gh-164": {
         "name": "Misa Przepowiedni",
-        "source": "Nagroda w Solo Scenario - {DR}",
+        "source": "Nagroda w scenariuszu solo - {DR}",
         "desc": "Kiedy odsłaniasz karty z dowolnej talii, odsłoń jedną dodatkową kartę."
     },
     "jotl-1": {
@@ -904,7 +904,7 @@ export default {
     "jotl-14": {
         "name": "Mana Potion",
         "source": "Nagroda w {SCENARIO 4}\n {SCENARIO 4} (Skarb #16)",
-        "desc": "Podczas twojej tury zasil dowolny jeden żywioł. {ANY}"
+        "desc": "Podczas twojej tury stwórz dowolny jeden żywioł. {ANY}"
     },
     "jotl-15": {
         "name": "Amulet Życia",
@@ -2531,7 +2531,7 @@ export default {
     "fh-210": {
         "name": "Tanjo",
         "source": "SO-39",
-        "desc": "Podczas twojej tury dodaj +3 do {ATTACK.fh} do wszystkich ataków Czychaczy skierowanych w ciebie w tej rundzie. {ROUND}"
+        "desc": "Podczas twojej tury dodaj +3 do {ATTACK.fh} do wszystkich ataków Czyhaczy skierowanych w ciebie w tej rundzie. {ROUND}"
     },
     "fh-211": {
         "name": "Boom Barrel",
@@ -2541,7 +2541,7 @@ export default {
     "fh-212": {
         "name": "Elemental Stone",
         "source": "Scenariusz 66",
-        "desc": "Po ustaleniu kolejności inicjatywy wybierz jeden żywioł. W tej rundzie żaden potwór nie może zasilić ani zużyć tego żywiołu. {ROUND}"
+        "desc": "Po ustaleniu kolejności inicjatywy wybierz jeden żywioł. W tej rundzie żaden potwór nie może nasycić ani zużyć tego żywiołu. {ROUND}"
     },
     "fh-213": {
         "name": "Key of Seasons",
@@ -2723,116 +2723,116 @@ export default {
     },
     "fh-248": {
         "name": "Wanderer's Club",
-        "source": "Nagroda w Solo Scenario - {DF}",
+        "source": "Nagroda w scenariuszu solo - {DF}",
         "desc": "Podczas twojej zdolności ataku przesuń jeden żeton postaci na jednej ze swoich zdolności trwałych o jedno pole do tyłu i dodaj +X do {ATTACK.fh} do jednego ataku, gdzie X to liczba aktywnych zdolności trwałych."
     },
     "fh-249": {
         "name": "Recalibration Trigger",
-        "source": "Nagroda w Solo Scenario - {BB}",
+        "source": "Nagroda w scenariuszu solo - {BB}",
         "desc": "Podczas twojej tury wykonaj jedną z dwóch poniższych zdolności: Utrać jedną kartę z ręki, aby zyskać 3 {TIME_ICON}. -2 {TIME_ICON}: {RECOVER.fh} do dwóch swoich odrzuconych kart"
     },
     "fh-250": {
         "name": "Spear of Justice",
-        "source": "Nagroda w Solo Scenario - {BN}",
+        "source": "Nagroda w scenariuszu solo - {BN}",
         "desc": "Podczas twojej tury wykonaj: {ATTACK.fh} 2 {RANGE.fh} 3. Wszystkie twoje sztandary są traktowane tak, jakby dodatkowo zajmowały pole celu ataku w odniesieniu do swoich bonusów, a to pole jest w tej rundzie traktowane jako zajęte przez sojusznika. {ROUND}"
     },
     "fh-251": {
         "name": "Soul Urn",
-        "source": "Nagroda w Solo Scenario - {DW}",
+        "source": "Nagroda w scenariuszu solo - {DW}",
         "desc": "Połóż jeden {SHADOW_ICON} na sąsiednim polu. {DARK}"
     },
     "fh-252": {
         "name": "Black Earth Codex",
-        "source": "Nagroda w Solo Scenario - {BO}",
+        "source": "Nagroda w scenariuszu solo - {BO}",
         "desc": "Przy następnych trzech śmierciach dowolnych z twoich przywołańców {EARTH_OR_DARK} i wykonaj: {HEAL.fh} 2 na siebie"
     },
     "fh-253": {
         "name": "Maska Dwoistości",
-        "source": "Nagroda w Solo Scenario - {GE}",
+        "source": "Nagroda w scenariuszu solo - {GE}",
         "desc": "Podczas twojej zdolności ataku dystansowego, gdy jesteś w {RANGED_ICON}, zyskaj Korzyść na jeden atak, a następnie odwróć tę kartę.",
         "backDesc": "Kiedy wróg wykonuje atak skierowany w ciebie, gdy jesteś w {MELEE_ICON}, atakujący zyskuje Niekorzyść, a następnie odwróć tę kartę."
     },
     "fh-254": {
         "name": "Ancestral Blade",
-        "source": "Nagroda w Solo Scenario - {IF}",
+        "source": "Nagroda w scenariuszu solo - {IF}",
         "desc": "Podczas twojej tury aktywuj wszystkie swoje {INFUSION_ICON}, tak jakbyś właśnie wykonał akcję {INFUSION_ICON}."
     },
     "fh-255": {
         "name": "Serce Góry",
-        "source": "Nagroda w Solo Scenario - {PY}",
+        "source": "Nagroda w scenariuszu solo - {PY}",
         "desc": "Podczas twojej tury możesz stworzyć jeden kafelek przeszkody o wielkości 1 pola albo niebezpiecznego terenu na pustym polu w odległości {RANGE.fh} 2. {FIRE_OR_EARTH}"
     },
     "fh-256": {
         "name": "Sonorous Shard",
-        "source": "Nagroda w Solo Scenario - {SH}",
+        "source": "Nagroda w scenariuszu solo - {SH}",
         "desc": "Zyskaj 3 {RESONANCE_ICON}. {WIND_OR_EARTH}"
     },
     "fh-257": {
         "name": "Sly Camouflage",
-        "source": "Nagroda w Solo Scenario - {TA}",
+        "source": "Nagroda w scenariuszu solo - {TA}",
         "desc": "Kiedy tworzysz pułapkę, połóż na niej żeton postaci. Potwory nie traktują tej pułapki jako negatywnej. Usuń żeton, gdy {RECOVER.fh} ten przedmiot. {PERSISTENT}"
     },
     "fh-258": {
         "name": "Skull of Agony",
-        "source": "Nagroda w Solo Scenario - {PC}",
+        "source": "Nagroda w scenariuszu solo - {PC}",
         "desc": "Kiedy otrzymujesz obrażenia, jeśli twoje punkty życia spadną poniżej połowy maksimum, wykonaj: {HEAL.fh} 7 na siebie, {CURSE.fh}. To leczenie nie podlega wpływowi negatywnych stanów i nie może ich usunąć."
     },
     "fh-259": {
         "name": "Storm Carving",
-        "source": "Nagroda w Solo Scenario - {SD}",
+        "source": "Nagroda w scenariuszu solo - {SD}",
         "desc": "Podczas zdolności ataku, którą dajesz sojusznikowi, dodaj {PUSH.fh} 2 do jednego z jego ataków, a następnie odwróć tę kartę.",
         "backDesc": "Podczas twojej zdolności ataku dodaj {PULL.fh} 2 do jednego ataku, a następnie odwróć tę kartę."
     },
     "fh-260": {
         "name": "Freezing Orb",
-        "source": "Nagroda w Solo Scenario - {FF}",
+        "source": "Nagroda w scenariuszu solo - {FF}",
         "desc": "Podczas twojej zdolności ataku dodaj {BRITTLE.fh} do jednego ataku i stwórz jeden kafelek oblodzonego terenu o wielkości 1 pola na zwykłym polu zajmowanym przez cel."
     },
     "fh-261": {
         "name": "Energized Module",
-        "source": "Nagroda w Solo Scenario - {HV}",
+        "source": "Nagroda w scenariuszu solo - {HV}",
         "desc": "Usuń wszystkie obrażenia i negatywne stany z jednego ze swoich przywołańców, a następnie {TRANSFER_ICON} na tego przywołańca."
     },
     "fh-262": {
         "name": "Exhaust Boots",
-        "source": "Nagroda w Solo Scenario - {ME}",
+        "source": "Nagroda w scenariuszu solo - {ME}",
         "desc": "Podczas twojej zdolności ruchu, gdy masz {PRESSURE_HIGH_ICON} lub {PRESSURE_OVER_ICON}, dodaj +1 do {MOVE.fh}, a następnie odwróć tę kartę na koniec swojej tury.",
         "backDesc": "Podczas twojej tury, gdy masz {PRESSURE_LOW_ICON}, wykonaj: {MUDDLE.fh} {RANGE.fh} 1, a następnie odwróć tę kartę na koniec swojej tury."
     },
     "fh-263": {
         "name": "Warlords Skull",
-        "source": "Nagroda w Solo Scenario - {DT}",
+        "source": "Nagroda w scenariuszu solo - {DT}",
         "desc": "Za każdym razem, gdy zyskujesz {INVISIBLE.fh} lub wykonujesz zdolność teleportacji, mając {INVISIBLE.fh}, po tej zdolności wykonaj: {MUDDLE.fh} {RANGE.fh} 1"
     },
     "fh-264": {
         "name": "Spiraled Medallion",
-        "source": "Nagroda w Solo Scenario - {CR}",
+        "source": "Nagroda w scenariuszu solo - {CR}",
         "desc": "Kiedy odpoczywasz, możesz zachować do trzech kart {TIDE_ICON} w swoim obszarze aktywnym. {LIGHT_OR_DARK}"
     },
     "mp-AN": {
         "name": "Ribbon of Friendship",
-        "source": "Nagroda w Solo Scenario - {AN}",
-        "desc": "Natychmiast po wykonaniu zdolności Wzmocnienia wykonaj: {POISON.fh} {RANGE.fh} 2. Możesz wykonać tę zdolność tak, jakbyś zajmował to samo pole co jeden z twoich przywołańców."
+        "source": "Nagroda w scenariuszu solo - {AN}",
+        "desc": "Natychmiast po wykonaniu zdolności Wspomagania wykonaj: {POISON.fh} {RANGE.fh} 2. Możesz wykonać tę zdolność tak, jakbyś zajmował to samo pole co jeden z twoich przywołańców."
     },
     "mp-SA": {
         "name": "Crest of Frosthaven",
-        "source": "Nagroda w Solo Scenario - {SA}",
-        "desc": "Za każdym razem, gdy odpoczywasz długo, zasil Lód i odwróć tę kartę.",
+        "source": "Nagroda w scenariuszu solo - {SA}",
+        "desc": "Za każdym razem, gdy odpoczywasz długo, nasyć Lód i odwróć tę kartę.",
         "backDesc": "Za każdym razem, gdy sojusznik odpoczywa, możesz odwrócić tę kartę, aby dać mu: {HEAL.fh} 2, na siebie"
     },
     "mp-CA A": {
         "name": "Basin of Prophecy A",
-        "source": "Nagroda w Solo Scenario - {CA}",
+        "source": "Nagroda w scenariuszu solo - {CA}",
         "desc": "Dodaj +1 Wróżbiarstwa do wszystkich Wróżb."
     },
     "mp-CA B": {
         "name": "Basin of Prophecy B",
-        "source": "Nagroda w Solo Scenario - {CA}",
+        "source": "Nagroda w scenariuszu solo - {CA}",
         "desc": "Podczas twojej tury wykonaj: {ATTACK.fh} 1, {TARGET.fh} 1 wróg zajmujący pole zawierające {RIFT}, {PIERCE.fh} 2, {DIVINATION} 3"
     },
     "mp-HA": {
         "name": "No Nonsense Boots",
-        "source": "Nagroda w Solo Scenario - {HA}",
+        "source": "Nagroda w scenariuszu solo - {HA}",
         "desc": "Na koniec swojej tury, jeśli w tej turze wydałeś 3 lub więcej Determinacji, odwróć tę kartę.",
         "backDesc": "Podczas twojej tury, jeśli masz aktywną Irytację, możesz przenieść tę kartę do swojej puli, aby zagrać inną kartę z puli i wykonać jej akcję Irytacji, a następnie odwróć tę kartę."
     },
@@ -2893,7 +2893,7 @@ export default {
     },
     "gh2-12": {
         "name": "Mikstura Wytrzymałości",
-        "source": "Dobrobyt 1\nZdarzenie w mieście 84",
+        "source": "Dobrobyt 1\nZdarzenie miejskie 84",
         "desc": "Podczas twojej tury {RECOVER.fh} jedną kartę poziomu 1 ze swojego stosu odrzuconych.",
         "faq": "Karty X liczą się jako karty poziomu 1, więc również można je odzyskać."
     },
@@ -2924,7 +2924,7 @@ export default {
     },
     "gh2-18": {
         "name": "Ciężki Basinet",
-        "source": "Dobrobyt 2\nZdarzenie na drodze 61",
+        "source": "Dobrobyt 2\nZdarzenie na szlaku 61",
         "desc": "Za każdym razem, gdy wróg miałby dać ci {DISARM.fh}, {STUN.fh} lub {MUDDLE.fh}, zapobiegasz temu stanowi.",
         "faq": "Zapobiega tylko stanom nałożonym przez wrogów, nie tym, które sam sobie zadałeś."
     },
@@ -3006,7 +3006,7 @@ export default {
     },
     "gh2-34": {
         "name": "Topór Bojowy",
-        "source": "Dobrobyt 4\nZdarzenie na drodze 64",
+        "source": "Dobrobyt 4\nZdarzenie na szlaku 64",
         "desc": "Podczas twojej zdolności ataku wręcz w jeden cel zmień cel tej zdolności na:"
     },
     "gh2-35": {
@@ -3016,7 +3016,7 @@ export default {
     },
     "gh2-36": {
         "name": "Moon Earing",
-        "source": "Dobrobyt 4\nZdarzenie w mieście 6",
+        "source": "Dobrobyt 4\nZdarzenie miejskie 6",
         "desc": "Kiedy odpoczywasz krótko, {RECOVER.fh} do trzech swoich wykorzystanych przedmiotów."
     },
     "gh2-37": {
@@ -3037,7 +3037,7 @@ export default {
     "gh2-40": {
         "name": "Shadow Amor",
         "source": "Dobrobyt 4",
-        "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zignoruj to {DAMAGE.fh} i zasil {DARK}."
+        "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zignoruj to {DAMAGE.fh} i nasyć {DARK}."
     },
     "gh2-41": {
         "name": "Kinetic Treads",
@@ -3061,7 +3061,7 @@ export default {
     },
     "gh2-45": {
         "name": "Mikstura Większych Żywiołów",
-        "source": "Dobrobyt 5\nZdarzenie na drodze 52",
+        "source": "Dobrobyt 5\nZdarzenie na szlaku 52",
         "desc": "Podczas twojej tury {ANY} {ANY}."
     },
     "gh2-46": {
@@ -3091,7 +3091,7 @@ export default {
     },
     "gh2-51": {
         "name": "Heavy Mace",
-        "source": "Dobrobyt 6\nZdarzenie na drodze 8",
+        "source": "Dobrobyt 6\nZdarzenie na szlaku 8",
         "desc": "Po tym, jak zaatakuje cię sąsiedni wróg, wykonaj: {ATTACK.fh} 1, wróg, który cię zaatakował. Na ten atak nie wpływa {RETALIATE.fh}."
     },
     "gh2-52": {
@@ -3410,7 +3410,7 @@ export default {
     },
     "gh2-114": {
         "name": "Gust Striders",
-        "source": "Zdarzenie w mieście 17\nZdarzenie w mieście 81",
+        "source": "Zdarzenie miejskie 17\nZdarzenie miejskie 81",
         "desc": "Podczas twojej tury dodaj {JUMP.fh} do swojej następnej zdolności ruchu. Jeśli {WIND} jest silny lub słabnący, dodaj także +2 do {MOVE.fh}."
     },
     "gh2-115": {
@@ -3428,12 +3428,12 @@ export default {
     "gh2-117": {
         "name": "Dawnblade",
         "source": "Nagroda w {SCENARIO 99}",
-        "desc": "Podczas twojej tury, jeśli {DARK} jest silny lub słabnący, dodaj +1 do {ATTACK.fh} do swojego następnego ataku wręcz. Jeśli zabrałeś Piętno Zmierzchu, {LIGHT}."
+        "desc": "Podczas twojej tury, jeśli {DARK} jest silny lub słabnący, dodaj +1 do {ATTACK.fh} do swojego następnego ataku wręcz. Jeśli zabrałeś Duskbrand, {LIGHT}."
     },
     "gh2-118": {
         "name": "Duskbrand",
-        "source": "Zdarzenie na drodze 33",
-        "desc": "Podczas twojej tury, jeśli {LIGHT} jest silny lub słabnący, dodaj +1 do {ATTACK.fh} do swojego następnego ataku wręcz. Jeśli zabrałeś Ostrze Świtu, {DARK}."
+        "source": "Zdarzenie na szlaku 33",
+        "desc": "Podczas twojej tury, jeśli {LIGHT} jest silny lub słabnący, dodaj +1 do {ATTACK.fh} do swojego następnego ataku wręcz. Jeśli zabrałeś Dawnblade, {DARK}."
     },
     "gh2-119": {
         "name": "Buty Smoczej Łuski",
@@ -3442,7 +3442,7 @@ export default {
     },
     "gh2-120": {
         "name": "Zbroja Smoczej Łuski",
-        "source": "{SCENARIO 29} (Skarb #75)\nZdarzenie na drodze 32",
+        "source": "{SCENARIO 29} (Skarb #75)\nZdarzenie na szlaku 32",
         "desc": "Za każdym razem, gdy odpoczywasz długo, zyskaj {STRENGTHEN.fh}."
     },
     "gh2-121": {
@@ -3456,32 +3456,32 @@ export default {
     },
     "gh2-123": {
         "name": "Storm Beetle Lantern",
-        "source": "Zdarzenie na drodze 30",
+        "source": "Zdarzenie na szlaku 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {WIND}"
     },
     "gh2-124": {
         "name": "Ignition Beetle Lantern",
-        "source": "Zdarzenie na drodze 30",
+        "source": "Zdarzenie na szlaku 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
         "name": "Tremor Beetle Lantern",
-        "source": "Zdarzenie na drodze 30",
+        "source": "Zdarzenie na szlaku 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
         "name": "Brilliant Beetle Lantern",
-        "source": "Zdarzenie na drodze 30",
+        "source": "Zdarzenie na szlaku 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
         "name": "Twilight Beetle Lantern",
-        "source": "Zdarzenie na drodze 30",
+        "source": "Zdarzenie na szlaku 30",
         "desc": "Podczas twojej tury wykonaj: {ANY_X}: {DARK}"
     },
     "gh2-128": {
         "name": "Wisior Mrocznych Paktów",
-        "source": "{SCENARIO 27} (Skarb #05)\nZdarzenie na drodze 36",
+        "source": "{SCENARIO 27} (Skarb #05)\nZdarzenie na szlaku 36",
         "desc": "Podczas twojej tury {RECOVER.fh} jeden ze swoich utraconych przedmiotów {SMALL-ITEM} i odwróć tę kartę.",
         "backDesc": "Przy swoich następnych trzech odpoczynkach zyskujesz {CURSE.fh}. Po trzecim odpoczynku odwróć tę kartę."
     },
@@ -3513,7 +3513,7 @@ export default {
     },
     "gh2-134": {
         "name": "Rdzeń Mocy",
-        "desc": "Przywołaj Stalowego Konstrukta"
+        "desc": "Przywołaj Steel Construct"
     },
     "gh2-135": {
         "name": "Rezonujący Kryształ",
@@ -3526,28 +3526,28 @@ export default {
     },
     "gh2-137": {
         "name": "Zapchlona Derka",
-        "source": "Zdarzenie w mieście 86",
+        "source": "Zdarzenie miejskie 86",
         "desc": "Wszystkie potwory uznają cię za ostatniego w kolejności inicjatywy przy określaniu celu.",
         "faq": "Nie wpływa na twoich przywołańców."
     },
     "gh2-138": {
         "name": "Krwawy Topór",
-        "source": "Zdarzenie na drodze 63",
+        "source": "Zdarzenie na szlaku 63",
         "desc": "Podczas twojej zdolności ataku wręcz otrzymaj {DAMAGE.fh} 2, aby dodać +1 do {ATTACK.fh} do wszystkich ataków."
     },
     "gh2-139": {
         "name": "Otherworldly Scepter",
-        "source": "Nagroda w {SCENARIO 94}\nZdarzenie w mieście 85",
+        "source": "Nagroda w {SCENARIO 94}\nZdarzenie miejskie 85",
         "desc": "Kiedy wykonujesz akcję przywołania, każdy przywołaniec przywołany tą akcją zyskuje {WARD.fh}, {INVISIBLE.fh} i {STRENGTHEN.fh}."
     },
     "gh2-140": {
         "name": "Remote Attack Spider",
-        "source": "Zdarzenie w mieście 98",
+        "source": "Zdarzenie miejskie 98",
         "desc": "Podczas twojej tury wykonaj: {POISON.fh}, wszyscy, {RANGE.fh} 1"
     },
     "gh2-141": {
         "name": "Remote Aid Spider",
-        "source": "Zdarzenie w mieście 98",
+        "source": "Zdarzenie miejskie 98",
         "desc": "Podczas twojej tury wykonaj: {HEAL.fh} 2, wszyscy, {RANGE.fh} 1"
     },
     "gh2-142": {
@@ -3572,7 +3572,7 @@ export default {
     },
     "gh2-146": {
         "name": "Amberhollow",
-        "source": "Zdarzenie na drodze 15\nZdarzenie na drodze 25\nZdarzenie na drodze 28\nZdarzenie na drodze 30\nZdarzenie na drodze 31",
+        "source": "Zdarzenie na szlaku 15\nZdarzenie na szlaku 25\nZdarzenie na szlaku 28\nZdarzenie na szlaku 30\nZdarzenie na szlaku 31",
         "desc": "Ten przedmiot musisz zabrać do scenariusza i wraca on do puli niedostępnych przedmiotów na koniec scenariusza. Podczas twojej tury wykonaj: {STRENGTHEN.fh}, {BLESS.fh}, na siebie"
     },
     "gh2-147": {
@@ -3583,7 +3583,7 @@ export default {
     "gh2-148": {
         "name": "Shield of the Righteous",
         "source": "{SCENARIO 65} (Skarb #59)",
-        "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zignoruj to {DAMAGE.fh} i zasil {LIGHT}"
+        "desc": "Kiedy otrzymujesz {DAMAGE.fh} z ataku, zignoruj to {DAMAGE.fh} i nasyć {LIGHT}"
     },
     "gh2-149": {
         "name": "Aesther Spyglass",
@@ -3606,93 +3606,93 @@ export default {
     },
     "gh2-153": {
         "name": "Hooked Shield",
-        "source": "Nagroda w Solo Scenario - {BR2}",
+        "source": "Nagroda w scenariuszu solo - {BR2}",
         "desc": "Po odepchnięciu wroga wykonaj: {MOVE.fh} 3, {JUMP.fh}. Ten ruch może wchodzić tylko na pola, które odepchnięty wróg opuścił."
     },
     "gh2-154": {
         "name": "Dozownik Mikstur",
-        "source": "Nagroda w Solo Scenario - {TI2}",
+        "source": "Nagroda w scenariuszu solo - {TI2}",
         "desc": "Podczas twojej zdolności leczenia dodaj +1 do {HEAL.fh} oraz {STRENGTHEN.fh} do jednego leczenia skierowanego w sojusznika."
     },
     "gh2-155": {
         "name": "Etheric Elixir",
-        "source": "Nagroda w Solo Scenario - {SW2}",
+        "source": "Nagroda w scenariuszu solo - {SW2}",
         "desc": "Kiedy wykonasz górną akcję {LOST.fh} karty Pobudzający Eter, usuń kartę {NULL_MODIFIER} ze swojej talii modyfikatorów ataku do końca scenariusza."
     },
     "gh2-156": {
         "name": "Sztylet Skrytobójcy",
-        "source": "Nagroda w Solo Scenario - {SC2}",
+        "source": "Nagroda w scenariuszu solo - {SC2}",
         "desc": "Dodaj {PIERCE.fh} 1 do wszystkich swoich ataków."
     },
     "gh2-157": {
         "name": "Kamienna Tiara",
-        "source": "Nagroda w Solo Scenario - {CH2}",
+        "source": "Nagroda w scenariuszu solo - {CH2}",
         "desc": "Podczas twojej tury wykonaj swoją następną zdolność ataku lub leczenia w tej turze tak, jakbyś zajmował to samo pole co dowolna przeszkoda. {EARTH}"
     },
     "gh2-158": {
         "name": "Mistyczny Nóż",
-        "source": "Nagroda w Solo Scenario - {MT2}",
+        "source": "Nagroda w scenariuszu solo - {MT2}",
         "desc": "Dodaj +1 do {ATTACK.fh} do wszystkich swoich ataków z twoich akcji {AUGMENT}."
     },
     "gh2-159": {
         "name": "Insignia of the Divine",
-        "source": "Nagroda w Solo Scenario - {SK2}",
+        "source": "Nagroda w scenariuszu solo - {SK2}",
         "desc": "Podczas twojej tury daj sobie lub jednemu sąsiedniemu sojusznikowi: {MOVE.fh} 4, {JUMP.fh} {LIGHT}"
     },
     "gh2-160": {
         "name": "Pas Narzędziowy",
-        "source": "Nagroda w Solo Scenario - {QM2}",
+        "source": "Nagroda w scenariuszu solo - {QM2}",
         "desc": "Podczas twojej tury zyskaj 10 Zapasów i daj jednemu sąsiedniemu sojusznikowi jeden wybrany przez siebie przedmiot z zapasu przedmiotów {QM2}."
     },
     "gh2-161": {
         "name": "Fazujący Bożek",
-        "source": "Nagroda w Solo Scenario - {ST2}",
+        "source": "Nagroda w scenariuszu solo - {ST2}",
         "desc": "Kiedy jeden z twoich przywołańców otrzymuje {DAMAGE.fh} z ataku, zignoruj to {DAMAGE.fh}, a ten przywołaniec zyskuje {INVISIBLE.fh}."
     },
     "gh2-162": {
         "name": "Pieszczota Nocy",
-        "source": "Nagroda w Solo Scenario - {NS2}",
+        "source": "Nagroda w scenariuszu solo - {NS2}",
         "desc": "Kiedy tracisz {INVISIBLE.fh}, odwróć tę kartę i wykonaj: {MUDDLE.fh}, {RANGE.fh} 1",
         "backDesc": "Kiedy zyskujesz {INVISIBLE.fh}, odwróć tę kartę i spójrz na górną kartę swojej talii modyfikatorów ataku. Możesz położyć tę kartę na spód talii."
     },
     "gh2-163": {
         "name": "Medalion Zarazy",
-        "source": "Nagroda w Solo Scenario - {PH2}",
+        "source": "Nagroda w scenariuszu solo - {PH2}",
         "desc": "Podczas twojej tury wykonaj: {CURSE.fh}, Plaga, {RANGE.fh} 5. Możesz dać jednemu sojusznikowi w odległości {RANGE.fh} 3 (od ciebie) {POISON.fh}, aby dodać +1 do {TARGET.fh}."
     },
     "gh2-164": {
         "name": "Maska Śmierci",
-        "source": "Nagroda w Solo Scenario - {BE2}",
+        "source": "Nagroda w scenariuszu solo - {BE2}",
         "desc": "Kiedy odsłaniasz karty z dowolnej talii, odsłoń jedną dodatkową kartę."
     },
     "gh2-165": {
         "name": "Mistrzowska Lutnia",
-        "source": "Nagroda w Solo Scenario - {SS2}",
+        "source": "Nagroda w scenariuszu solo - {SS2}",
         "desc": "Kiedy wykonujesz akcję {SONG}, zyskaj jedną wybraną Nutę oprócz każdej innej Nuty, którą zyskujesz w tej rundzie."
     },
     "gh2-166": {
         "name": "Płaszcz Łowcy",
-        "source": "Nagroda w Solo Scenario - {DS2}",
+        "source": "Nagroda w scenariuszu solo - {DS2}",
         "desc": "Za każdym razem, gdy wykonujesz akcję {DOOM}, natychmiast potem daj sobie lub jednemu ze swoich przywołańców: {MOVE.fh} 1. Ten ruch musi prowadzić w kierunku wroga, który ma {DOOM}."
     },
     "gh2-167": {
         "name": "Fartuch Lekarski",
-        "source": "Nagroda w Solo Scenario - {SB2}",
+        "source": "Nagroda w scenariuszu solo - {SB2}",
         "desc": "Kiedy sojusznik w odległości {RANGE.fh} 3 otrzymuje {DAMAGE.fh} z ataku, po zdolności ataku wykonaj: {MOVE.fh} 2. Ten ruch musi zakończyć się na polu sąsiadującym z zaatakowanym sojusznikiem."
     },
     "gh2-168": {
         "name": "Elemental Vest",
-        "source": "Nagroda w Solo Scenario - {EL2}",
+        "source": "Nagroda w scenariuszu solo - {EL2}",
         "desc": "Na koniec swojej tury, za każde dwa żywioły zużyte w tej turze: {ANY}."
     },
     "gh2-169": {
         "name": "Różdżka Posłuszeństwa",
-        "source": "Nagroda w Solo Scenario - {WF2}",
+        "source": "Nagroda w scenariuszu solo - {WF2}",
         "desc": "Podczas twojej tury {COMMAND}: {ATTACK.fh} 2"
     },
     "gh2-170": {
         "name": "Crawling Carapace",
-        "source": "Nagroda w Solo Scenario - {BS2}",
+        "source": "Nagroda w scenariuszu solo - {BS2}",
         "desc": "Przy pierwszym źródle {DAMAGE.fh} z ataku, które otrzymałbyś ty lub jeden z twoich przywołańców w każdej rundzie, zaatakowana figurka zyskuje {SHIELD.fh} 1 na ten atak."
     }
 }

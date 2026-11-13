@@ -24,7 +24,7 @@ export default {
     },
     "gh-513": {
         "name": "Szukając lekarstwa",
-        "unlock": "Otwórz pudełko X",
+        "unlock": "Otwórz kopertę X",
         "progress": [
             "Zabij 8 leśnych chochlików.",
             "Przejdź {SCENARIO 59}."
@@ -100,7 +100,7 @@ export default {
     "gh-524": {
         "name": "Nieustraszona postawa",
         "progress": [
-            "Zabij 20 elitarnych przeciwników."
+            "Zabij 20 elitarnych potworów."
         ]
     },
     "gh-525": {
@@ -111,7 +111,7 @@ export default {
     },
     "gh-526": {
         "name": "Pomsta",
-        "unlock": "Otwórz pudełko X",
+        "unlock": "Otwórz kopertę X",
         "progress": [
             "Ukończ 4 scenariusze w Gloomhaven.",
             "Przejdź {SCENARIO 57}."
@@ -146,17 +146,17 @@ export default {
         "name": "Próbki żywiołów",
         "progress": [
             "Ukończ scenariusz w Gloomhaven.",
-            "Ukończ scenariusz w Las Sztyletów.",
-            "Ukończ scenariusz w Bezkresne Bagna.",
-            "Ukończ scenariusz w Góry Obserwowania.",
-            "Ukończ scenariusz w Morze Mgieł.",
+            "Ukończ scenariusz w Lesie Sztyletów.",
+            "Ukończ scenariusz na Bezkresnych Bagnach.",
+            "Ukończ scenariusz w Górach Obserwatora.",
+            "Ukończ scenariusz w Górach Miedzianych Turni.",
             "Ukończ scenariusz na Morzu Mgieł."
         ]
     },
     "gh-532": {
         "name": "Pomocna dłoń",
         "progress": [
-            "Bądź świadkiem osiągnięcia osobistych celów przez dwie inne postacie."
+            "Bądź świadkiem osiągnięcia celów życiowych przez dwie inne postacie."
         ]
     },
     "gh-533": {
@@ -220,7 +220,7 @@ export default {
     "cs-338": {
         "name": "Adrenaline Spike",
         "progress": [
-            "Zabij wroga i zabierz jego żeton monet w tej samej rundzie 15 razy."
+            "Zabij wroga i zabierz jego żeton pieniędzy w tej samej rundzie 15 razy."
         ]
     },
     "cs-339": {
@@ -303,7 +303,7 @@ export default {
     "cs-351": {
         "name": "Limitless Searching",
         "progress": [
-            "Zbierz 30 żetonów monet."
+            "Zbierz 30 żetonów pieniędzy."
         ]
     },
     "cs-aa-001": {
@@ -324,14 +324,14 @@ export default {
         "name": "Ingenious Inventor",
         "progress": [
             "Natychmiast otrzymujesz „Power Modulator” (przedmiot QA-01).",
-            "Zabij 12 wrogów za pomocą „Modulatora Mocy” (przedmiot QA-01).",
+            "Zabij 12 wrogów za pomocą przedmiotu „Power Modulator” (przedmiot QA-01).",
             "Przejdź {SCENARIO QA1}."
         ]
     },
     "cs-qa-002": {
         "name": "Scrap Diver",
         "progress": [
-            "Zbierz dwa lub więcej żetonów monet jedną akcją 8 razy.",
+            "Zbierz dwa lub więcej żetonów pieniędzy jedną akcją 8 razy.",
             "Zbierz dwa kafelki skarbów.",
             "Przejdź {SCENARIO QA2}."
         ]
@@ -339,7 +339,7 @@ export default {
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "Otrzymujesz projekt „Ząbkowane Ostrze” (przedmiot RM-01).",
+            "Otrzymujesz schemat „Serrated Edge” (przedmiot RM-01).",
             "Nałóż {WOUND} lub {RUPTURE} na 30 wrogów.",
             "Przejdź {SCENARIO RM1}."
         ]
@@ -413,7 +413,7 @@ export default {
             21
         ],
         "progress": [
-            "W ośmiu różnych fazach posterunku przeczytaj imię osoby w zdarzeniu lub paragrafie."
+            "W ośmiu różnych fazach posterunku przeczytaj imię osoby w wydarzeniu lub sekcji."
         ]
     },
     "fh-7": {
@@ -602,7 +602,7 @@ export default {
     "gh2-2": {
         "name": "Inn to Hospitality",
         "progress": [
-            "Zbierz 60 żetonów monet.",
+            "Zbierz 60 żetonów pieniędzy.",
             "Przeczytaj {SECTION} 125.4."
         ]
     },
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "Upadek człowieka",
         "progress": [
-            "Zdobądź „Esterską Lunetę” (przedmiot 149). Nie można jej sprzedać.",
-            "Użyj „Esterskiej Lunety” (przedmiot 149) 10 razy.",
+            "Zdobądź „Aesther Spyglass” (przedmiot 149). Nie można tego przedmiotu sprzedać.",
+            "Użyj „Aesther Spyglass” (przedmiot 149) 10 razy.",
             "Przeczytaj {SECTION} 115.2.",
             "Doprowadź {SCENARIO 63} do zakończenia."
         ]
@@ -674,7 +674,7 @@ export default {
     "gh2-11": {
         "name": "Adoptive Parent",
         "progress": [
-            "Zbierz trzy żetony monet upuszczone przez wrogów w 10 scenariuszach.",
+            "Zbierz trzy żetony pieniędzy upuszczone przez wrogów w 10 scenariuszach.",
             "Przeczytaj {SECTION} 122.5.",
             "Doprowadź {SCENARIO 66} do zakończenia."
         ]
@@ -683,8 +683,8 @@ export default {
         "name": "Narzędzie Światłości",
         "progress": [
             "Natychmiast odblokuj {SCENARIO 65}.",
-            "Znajdź „Tarczę Sprawiedliwych” (przedmiot 148).",
-            "Użyj „Tarczy Sprawiedliwych” (przedmiot 148), aby unieważnić 10 ataków zadających 4 lub więcej obrażeń.",
+            "Znajdź „Shield of the Righteous” (przedmiot 148).",
+            "Użyj „Shield of the Righteous” (przedmiot 148), aby unieważnić 10 ataków zadających 4 lub więcej obrażeń.",
             "Przeczytaj {SECTION} 82.1."
         ]
     },
@@ -725,8 +725,8 @@ export default {
     "gh2-17": {
         "name": "Living on the Edge",
         "progress": [
-            "Zdobądź „Eksperymentalną Zbroję” (przedmiot 150).",
-            "Użyj jej, aby 20 wrogów otrzymało obrażenia.",
+            "Zdobądź „Experimental Armor” (przedmiot 150).",
+            "Użyj tego przedmiotu, aby 20 wrogów otrzymało obrażenia.",
             "Przeczytaj {SECTION} 47.4."
         ]
     },

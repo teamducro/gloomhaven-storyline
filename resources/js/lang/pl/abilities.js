@@ -172,7 +172,7 @@ export default {
             "name": "Ochronna Siła"
         },
         "whirlwind": {
-            "name": "Trąba Powierrzna"
+            "name": "Trąba Powietrzna"
         },
         "armed-and-dangerous": {
             "name": "armed and dangerous"
