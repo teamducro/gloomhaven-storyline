@@ -147,7 +147,7 @@ export default {
         "name": "Nowy scenariusz: {SCENARIO 17}."
     },
     "gh-50": {
-        "name": "Otrzymujesz „Druga Skórę” (przedmiot 101)."
+        "name": "Otrzymujesz „Drugą Skórę” (przedmiot 101)."
     },
     "gh-51": {
         "name": "Losowy scenariusz poboczny."
@@ -231,13 +231,13 @@ export default {
         "name": "Otrzymujesz „Większą Miksturę Zdrowia” (przedmiot 090)."
     },
     "fc-78": {
-        "name": "Schemat „Pradawnego Łuku” (przedmiot 157)."
+        "name": "Schemat „Starożytnego Łuku” (przedmiot 157)."
     },
     "fc-79": {
         "name": "Otrzymujesz „Figurkę Sokoła” (przedmiot 035)."
     },
     "fc-80": {
-        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii wydarzenie szczelinowe 19."
+        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii zdarzenie szczeliny 19."
     },
     "fc-81": {
         "name": "Otrzymujesz „Zwój Pośpiechu” (przedmiot 159) oraz 10 szt. złota."
@@ -267,19 +267,19 @@ export default {
         "name": "Otrzymujesz „Pierścień Drugiej Szansy” (przedmiot 070)."
     },
     "fc-90": {
-        "name": "przeczytaj sekcję 75 na stronie 49"
+        "name": "Po 10 szt. złota dla każdego, przeczytaj sekcję 75 na stronie 49"
     },
     "fc-91": {
-        "name": "Otrzymujesz 30 szt. złota oraz osiągnięcie drużyny: „Oportuniści”. Dodajesz do talii wydarzenie miejskie 84."
+        "name": "Otrzymujesz 30 szt. złota oraz osiągnięcie drużynowe: „Oportuniści”. Dodajesz do talii zdarzenie miejskie 84."
     },
     "fc-93": {
         "name": "Otrzymujesz „Zwój Pośpiechu” (przedmiot 159)."
     },
     "fc-94": {
-        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii wydarzenie szczelinowe 20."
+        "name": "Otrzymujesz 1 ✓ oraz dodajesz do talii zdarzenie szczeliny 20."
     },
     "fc-95": {
-        "name": "Otrzymujesz 25 szt. złota oraz osiągnięcie drużynowe: „Skrytka”. Dodajesz do talii wydarzenie miejskie 85."
+        "name": "Otrzymujesz 25 szt. złota oraz osiągnięcie drużynowe: „Skrytka”. Dodajesz do talii zdarzenie miejskie 85."
     },
     "fc-96": {
         "name": "Znajdujesz starą księgę pełną rysunków technicznych oraz schematów rozmaitych egzotycznych maszyn. Na okładce znajduje się dziwna, odręczna notatka: {NOTE_115}."
@@ -306,7 +306,7 @@ export default {
         "name": "Otrzymujesz 5 szt. złota"
     },
     "jotl-8": {
-        "name": "Suffer 3 damage, Otrzymujesz {POISON,"
+        "name": "Otrzymujesz 3 obrażenia i {POISON,"
     },
     "jotl-9": {
         "name": "Otrzymujesz 5 szt. złota"
@@ -324,7 +324,7 @@ export default {
         "name": "Otrzymujesz 5 szt. złota"
     },
     "jotl-14": {
-        "name": "Otrzymujesz 3 money tokens"
+        "name": "Otrzymujesz 3 żetony pieniędzy"
     },
     "jotl-15": {
         "name": "Otrzymujesz 1 ✔"
@@ -390,7 +390,7 @@ export default {
         "name": "„Boneclad Shawl” (przedmiot 25)"
     },
     "cs-19": {
-        "name": "Otrzymujesz ✓ i generujesz Wild Element"
+        "name": "Otrzymujesz ✓ i tworzysz dowolny żywioł"
     },
     "cs-20": {
         "name": "Jeden losowy przedmiot „Stone” (przedmiot 94-100)"
@@ -519,7 +519,7 @@ export default {
         "name": "Losowy schemat przedmiotu."
     },
     "fh-12": {
-        "name": "Znajdujesz szczątki Camilli i jej obrazy przedstawiające majestatyczne rogate stworzenie. Zyskujesz naklejkę kampanii „Brummix” i dodajesz paragraf 99.1 do kalendarza kampanii za trzy tygodnie."
+        "name": "Znajdujesz szczątki Camilli i jej obrazy przedstawiające majestatyczne rogate stworzenie. Zyskujesz naklejkę kampanii „Brummix” i dodajesz sekcję 99.1 do kalendarza kampanii za trzy tygodnie."
     },
     "fh-13": {
         "name": "Otrzymujesz „Rybi Haczyk” (przedmiot 207)."
@@ -570,7 +570,7 @@ export default {
         "name": "Otrzymujesz cztery karty łupów."
     },
     "fh-29": {
-        "name": "Otrzymujecie wspólnie 2 drewna i 2 skór."
+        "name": "Otrzymujecie wspólnie 2 drewna i 2 skóry."
     },
     "fh-30": {
         "name": "Otrzymujesz cztery karty łupów."
@@ -810,7 +810,7 @@ export default {
         "name": "Otrzymujesz 15 szt. złota"
     },
     "gh2-24": {
-        "name": "Otrzymujesz „Różdżka Osłony” (przedmiot 104)"
+        "name": "Otrzymujesz „Warding Rod” (przedmiot 104)"
     },
     "gh2-25": {
         "name": "Otrzymujesz 1 ✔"
@@ -837,7 +837,7 @@ export default {
         "name": "Losowy scenariusz poboczny"
     },
     "gh2-33": {
-        "name": "Otrzymujesz „Cure Potion” (przedmiot 101)"
+        "name": "Otrzymujesz „Mikstura Zdrowia” (przedmiot 101)"
     },
     "gh2-34": {
         "name": "Otrzymujesz „Hełm Smoczej Łuski” (przedmiot 121)"
@@ -921,7 +921,7 @@ export default {
         "name": "Otrzymujesz 5 obrażeń"
     },
     "gh2-61": {
-        "name": "Otrzymujesz „Buty Stabilności” (przedmiot 143)"
+        "name": "Otrzymujesz „Boots of Bracing” (przedmiot 143)"
     },
     "gh2-62": {
         "name": "Otrzymujesz 20 szt. złota"
@@ -933,7 +933,7 @@ export default {
         "name": "Losowy schemat przedmiotu"
     },
     "gh2-65": {
-        "name": "Otrzymujesz „Kaptur Tropiciela” (przedmiot 103)"
+        "name": "Otrzymujesz „Ranger's Hood” (przedmiot 103)"
     },
     "gh2-66": {
         "name": "Otrzymujesz {POISON} i {STRENGTHEN} oraz odzyskujesz 2 utracone karty"

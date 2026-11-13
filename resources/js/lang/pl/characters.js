@@ -10,7 +10,7 @@ export default {
             "Dodaj dwie karty {AGAIN} {PIERCE}3",
             "Dodaj jedną kartę {AGAIN} {STUN}",
             "Dodaj jedną kartę {AGAIN} {DISARM} oraz jedną kartę {AGAIN} {MUDDLE}",
-            "Dodaj jedną kartę {AGAIN} ADD {TARGET}",
+            "Dodaj jedną kartę {AGAIN} DODATKOWY {TARGET}",
             "Dodaj jedną kartę {+1_WHITE} {SHIELD}1, na siebie",
             "Zignoruj negatywne efekty przedmiotu oraz dodaj jedną kartę {+1_WHITE}"
         ]
@@ -120,8 +120,8 @@ export default {
             "Dodaj trzy karty {+0_WHITE} {ICE}",
             "Dodaj trzy karty {+0_WHITE} {WIND}",
             "Dodaj trzy karty {+0_WHITE} {EARTH}",
-            "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} {FIRE} i jedną kartę {+0_WHITE} {EARTH}",
-            "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} {ICE} i jedną kartę {+0_WHITE} {WIND}",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} {FIRE} i jedną kartą {+0_WHITE} {EARTH}",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} {ICE} i jedną kartą {+0_WHITE} {WIND}",
             "Dodaj dwie karty {+1_WHITE} {PUSH}1",
             "Dodaj jedną kartę {+1_WHITE} {WOUND}",
             "Dodaj jedną kartę {+0_WHITE} {STUN}",
@@ -369,7 +369,7 @@ export default {
             "Dodaj jedną kartę {AGAIN} {RETALIATE}1, {RANGE}3",
             "Dodaj jedną kartę {+2_WHITE} {EARTH_FIRE}",
             "Zignoruj negatywne efekty przedmiotu oraz dodaj jedną kartę {+1_WHITE}",
-            "Zignoruj negatywne efekty scenariusza i dodaj jedną kartę “{+X_WHITE}, where X is the number of active {CULTIVATE} {AA_CIRCLE} actions”"
+            "Zignoruj negatywne efekty scenariusza i dodaj jedną kartę “{+X_WHITE}, gdzie X to liczba aktywnych akcji {CULTIVATE} {AA_CIRCLE}”"
         ]
     },
     "QA": {
@@ -379,7 +379,7 @@ export default {
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} {DISARM}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} {PUSH}1",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} {PULL}1",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} {REFRESH} a spent item",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} {REFRESH} zużyty przedmiot",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {SHIELD}1, na siebie",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {PIERCE}2",
             "Zastąp jedną kartę {+2_WHITE} jedną kartą {+3_WHITE} {HEAL}2, na siebie",
@@ -392,10 +392,10 @@ export default {
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
             "Zastąp dwie karty {+0_WHITE} dwiema kartami {AGAIN} {PIERCE}3",
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+3_WHITE} if {PROJECTILE} {BM_CIRCLE}”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+3_WHITE}, jeśli {PROJECTILE} {BM_CIRCLE}”",
             "Dodaj jedną kartę {+2_WHITE} {IMMOBILIZE}",
             "Zastąp jedną kartę {+1_WHITE} dwiema kartami {+1_WHITE} “{RETALIATE}1 {RANGE}3”",
-            "Dodaj dwie karty {+1_WHITE} “{PULL}3, na siebie, toward the target”",
+            "Dodaj dwie karty {+1_WHITE} “{PULL}3, na siebie, w kierunku celu”",
             "Dodaj jedną kartę {+0_WHITE} “{STRENGTHEN}, na siebie”",
             "Dodaj jedną kartę {+0_WHITE} {STUN}",
             "Dodaj jedną kartę {+1_WHITE} {WOUND}",
@@ -408,7 +408,7 @@ export default {
     "BK": {
         "name": "Brightspark",
         "perks": [
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{ANY_X} to add +2 {ATTACK}”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{ANY_X}, aby dodać +2 {ATTACK}”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “{RECOVER} jedną losową kartę z twojego stosu odrzuconych”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “{HEAL}1, (Sojusznik) {RANGE}2”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {+1_WHITE} “{SHIELD}1, (Sojusznik) {RANGE}2”",
@@ -424,13 +424,13 @@ export default {
         "name": "Chainguard",
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} “{SHACKLE} {CG_CIRCLE}”",
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+2_WHITE} if the target is {SHACKLED} {CG_CIRCLE}”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+2_WHITE}, jeśli cel jest {SHACKLED} {CG_CIRCLE}”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {AGAIN} “{SHIELD}1, na siebie”",
             "Dodaj dwie karty {AGAIN} “{RETALIATE}1, na siebie”",
             "Dodaj trzy karty {AGAIN} {SWING}3",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+2_WHITE} {WOUND}",
-            "Dodaj jedną kartę {+1_WHITE} “{DISARM} if the target is {SHACKLED} {CG_CIRCLE}”",
-            "Dodaj jedną kartę {+1_WHITE} “Create a 2 damage trap in an empty hex within {RANGE}2”",
+            "Dodaj jedną kartę {+1_WHITE} “{DISARM}, jeśli cel jest {SHACKLED} {CG_CIRCLE}”",
+            "Dodaj jedną kartę {+1_WHITE} “Stwórz pułapkę zadającą 2 obrażenia na pustym polu w promieniu {RANGE}2”",
             "Dodaj dwie karty {AGAIN} “{HEAL}1, na siebie”",
             "Dodaj jedną kartę {+2_WHITE} “{SHACKLE} {CG_CIRCLE}”",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {+0_WHITE}"
@@ -441,14 +441,14 @@ export default {
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {POISON}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, {CT_CIRCLE}”",
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, all summoned allies owned”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL}1, wszyscy twoi przywołańcy”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “{BLESS}, na siebie”",
-            "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} “{IMMOBILIZE} and {PUSH}1”",
+            "Zastąp dwie karty {+0_WHITE} jedną kartą {+0_WHITE} “{IMMOBILIZE} i {PUSH}1”",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą “{+X_WHITE}, gdzie X to liczba posiadanych przez ciebie przywołanych sojuszników”",
-            "Zastąp jedną kartę {+1_WHITE} dwiema kartami {+1_WHITE} “{AGAIN}{+1_WHITE} if summon is attacking”",
+            "Zastąp jedną kartę {+1_WHITE} dwiema kartami {+1_WHITE} “{AGAIN}{+1_WHITE}, jeśli atakuje przywołaniec”",
             "Dodaj jedną kartę {+0_WHITE} {WOUND}, {PIERCE}1",
             "Dodaj jedną kartę {+1_WHITE} {EARTH}",
-            "Dodaj dwie karty {AGAIN} “{PIERCE}2, ignore {RETALIATE}”",
+            "Dodaj dwie karty {AGAIN} “{PIERCE}2, zignoruj {RETALIATE}”",
             "Zignoruj negatywne efekty scenariusza i dodaj jedną kartę {+1_WHITE}"
         ]
     },
@@ -477,7 +477,7 @@ export default {
             "Zastąp dwie karty {+0_WHITE} jedną kartą {AGAIN} {EARTH}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {CURSE}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “{SHIELD}1 (Sojusznik)”",
-            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} “Give one sojusznik a '{PRAYER}' ability card” i jedną kartę {+0_WHITE}",
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} “Daj jednemu sojusznikowi kartę zdolności '{PRAYER}'” i jedną kartą {+0_WHITE}",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+3_WHITE}",
             "Dodaj dwie karty {AGAIN} “{HEAL}1, na siebie lub sojusznika”",
             "Dodaj jedną kartę {+1_WHITE} {WOUND} {MUDDLE}",
@@ -508,7 +508,7 @@ export default {
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {FIRE}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {LIGHT}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {DARK}",
-            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “Perform one {GLOW} {LU_CIRCLE} ability”",
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-2_WHITE} “Wykonaj jedną zdolność {GLOW} {LU_CIRCLE}”",
             "Dodaj jedną kartę {+0_WHITE} {ANY}",
             "Dodaj jedną kartę {AGAIN} {+1_WHITE} “{HEAL}1, na siebie”",
             "Dodaj jedną kartę {+0_WHITE} “{POISON}, celuje we wszystkich wrogów na przedstawionym obszarze {AOE.CLEAVE_0_1}”",
@@ -523,10 +523,10 @@ export default {
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
             "Zastąp dwie karty {+0_WHITE} dwiema kartami “{+X_WHITE}, gdzie X to wartość trucizny celu”",
             "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE}",
-            "Zastąp jedną kartę {+0_WHITE} dwiema kartami {AGAIN} “Create difficult terrain in the hex occupied by the target”",
+            "Zastąp jedną kartę {+0_WHITE} dwiema kartami {AGAIN} “Stwórz trudny teren na polu zajmowanym przez cel”",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+0_WHITE} {WOUND_2}",
-            "Add four {AGAIN} {+0_WHITE} “{+1_WHITE} if the target occupy difficult terrain”",
-            "Dodaj dwie karty {AGAIN} “{INVISIBLE}, na siebie, if you occupy difficult terrain”",
+            "Dodaj cztery karty {AGAIN} {+0_WHITE} “{+1_WHITE}, jeśli cel zajmuje trudny teren”",
+            "Dodaj dwie karty {AGAIN} “{INVISIBLE}, na siebie, jeśli zajmujesz trudny teren”",
             "Zyskaj “Zatruty Sztylet” (przedmiot gh-11). Możesz nosić jeden dodatkowy przedmiot {ONE-HAND} ze słowem „Sztylet” w nazwie.",
             "Zignoruj obrażenia oraz negatywne stany i modyfikatory ze Zdarzeń i usuń jedną kartę {-1_WHITE}",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {-1_WHITE}"
@@ -535,12 +535,12 @@ export default {
     "RM": {
         "name": "Ruinmaw",
         "perks": [
-            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} {RUPTURE} and {WOUND}",
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} {RUPTURE} i {WOUND}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {WOUND}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {RUPTURE}",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Add {+3_WHITE} instead if the target has {RUPTURE} or {WOUND}”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Zamiast tego dodaj {+3_WHITE}, jeśli cel ma {RUPTURE} lub {WOUND}”",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {AGAIN} “{HEAL}1, na siebie, {EMPOWER}”",
-            "Raz na scenariusz, become {RM_CIRCLE} after collecting your 5th loot token",
+            "Raz na scenariusz stań się {RM_CIRCLE} po zebraniu swojego 5. żetonu łupu",
             "Stań się {RM_CIRCLE} za każdym razem, gdy utracisz kartę, aby zignorować otrzymywane obrażenia",
             "Za każdym razem, gdy jedna z twoich zdolności sprawi, że co najmniej jeden wróg zyska {RUPTURE}, natychmiast po tej zdolności wykonaj “{MOVE}1”",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {-1_WHITE}"
@@ -550,14 +550,14 @@ export default {
         "name": "Spirit Caller",
         "perks": [
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} oraz jedną kartę {+1_WHITE}",
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+2_WHITE} if a {SPIRIT} {SP_CIRCLE} performed the attack”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{+2_WHITE}, jeśli atak wykonał {SPIRIT} {SP_CIRCLE}”",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} oraz jedną kartę {AGAIN} {POISON}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WIND}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {DARK}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {PIERCE}2",
             "Dodaj trzy karty {AGAIN} {PIERCE}3",
             "Dodaj jedną kartę {+1_WHITE} {CURSE}",
-            "Dodaj jedną kartę {AGAIN} ADD {TARGET}",
+            "Dodaj jedną kartę {AGAIN} DODATKOWY {TARGET}",
             "Zastąp jedną kartę {+1_WHITE} jedną kartą {+2_WHITE} {PUSH}2",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {+0_WHITE}"
         ]
@@ -570,10 +570,10 @@ export default {
             "Zastąp dwie karty {-1_WHITE} jedną kartą {+0_WHITE} {DARK}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE} {LIGHT}",
             "Dodaj jedną kartę {AGAIN} “{LOOT 1}”",
-            "Dodaj jedną kartę {+1_WHITE} “{+3_WHITE} if you are at full health”",
+            "Dodaj jedną kartę {+1_WHITE} “{+3_WHITE}, jeśli masz pełnię zdrowia”",
             "Dodaj dwie karty {AGAIN} {IMMOBILIZE}",
             "Dodaj jedną kartę {+1_WHITE} “{HEAL}1 {RANGE}3”",
-            "Dodaj dwie karty {AGAIN} “Force the target to perform `{MOVE}1`”",
+            "Dodaj dwie karty {AGAIN} “Zmuś cel do wykonania `{MOVE}1`”",
             "Dodaj jedną kartę {AGAIN} “{HEAL}1 {RANGE}1”",
             "Zignoruj negatywne efekty scenariusza i usuń jedną kartę {+0_WHITE}"
         ]
@@ -582,7 +582,7 @@ export default {
         "name": "Dryfiarz",
         "masteries": [
             "Zakończ scenariusz z żetonami postaci na ostatnich polach czterech trwałych zdolności.",
-            "Nigdy nie wykonuj zdolności ruchu ani ataku o wartością mniejszej niż 4 i w każdej rundzie wykonaj co najmniej jedną zdolność ruchu lub ataku."
+            "Nigdy nie wykonuj zdolności ruchu ani ataku o wartości mniejszej niż 4 i w każdej rundzie wykonuj co najmniej jedną zdolność ruchu lub ataku."
         ],
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+1_WHITE}",
@@ -603,7 +603,7 @@ export default {
     "BB": {
         "name": "Ostrzobłysk",
         "masteries": [
-            "Bądź {FAST} przez 7 kolejno nastepujących po sobie rund.",
+            "Bądź {FAST} przez 7 kolejno następujących po sobie rund.",
             "Nigdy nie bądź celem ataku."
         ],
         "perks": [
@@ -628,7 +628,7 @@ export default {
         ],
         "perks": [
             "Zastąp jedną kartę {-1_WHITE} jedną kartą “{SHIELD.fh}1” {AGAIN}",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} Dodaj +1{ATTACK.fh} za każdego sojusznika sąsiadującego z celem”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Dodaj +1{ATTACK.fh} za każdego sojusznika sąsiadującego z celem”",
             "Dodaj jedną kartę {+1_WHITE} {DISARM.fh}",
             "Dodaj jedną kartę {+2_WHITE} {PUSH.fh}1",
             "Dodaj dwie karty {+1_WHITE} {AGAIN}",
@@ -669,13 +669,13 @@ export default {
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {CURSE.fh}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {POISON.fh}",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Zabij atakującego przywołąńca, aby zamiast tego dodać {+4_WHITE}”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Zabij atakującego przywołańca, aby zamiast tego dodać {+4_WHITE}”",
             "Dodaj trzy karty “{HEAL.fh}1, {TARGET.fh} {BO}” {AGAIN}",
             "Dodaj jedną kartę {+2_WHITE} {EARTH_OR_DARK}",
             "Zignoruj efekty scenariusza i dodaj dwie karty {+1_WHITE}",
             "Natychmiast przed każdym odpoczynkiem możesz zabić jednego z twoich przywołańców, aby wykonać {BLESS.fh}, na siebie",
             "Raz na scenariusz, gdy jakikolwiek sojusznik ma zostać wyczerpany przez otrzymane {DAMAGE.fh}, możesz otrzymać {DAMAGE.fh}2 aby zamiast tego ustawić jego wartość PŻ na 1.",
-            "Na początku każdego scenariusza możesz zagrać z ręki kartę poziomu 1, aby wykonać znajdująca się na niej akcję przywołania."
+            "Na początku każdego scenariusza możesz zagrać z ręki kartę poziomu 1, aby wykonać znajdującą się na niej akcję przywołania."
         ]
     },
     "GE": {
@@ -700,43 +700,43 @@ export default {
         ]
     },
     "IF": {
-        "name": "Nasycacz",
+        "name": "Infuzorka",
         "masteries": [
-            "Miej pięć aktywnych bonusów {INFUSION_ICON}",
+            "Posiadaj pięć aktywnych premii {INFUSION_ICON}",
             "Zabij co najmniej czterech wrogów, ale nigdy nie atakuj"
         ],
         "perks": [
-            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} i jedną kartę {-1_WHITE} {WIND} {EARTH} {DARK}",
+            "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} i jedną kartą {-1_WHITE} {WIND} {EARTH} {DARK}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {WIND_OR_EARTH}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {WIND_OR_DARK}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {EARTH_OR_DARK}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE}",
-            "Zastąp jedną kartę {+0_WHITE} trzema kartami “Move one waning element to strong” {AGAIN}",
+            "Zastąp jedną kartę {+0_WHITE} trzema kartami “Przesuń jeden słabnący żywioł do silnej kolumny” {AGAIN}",
             "Dodaj dwie karty “+1{ATTACK.fh} za każdą parę aktywnych {INFUSION_ICON}” {AGAIN}",
             "Zignoruj efekty scenariusza",
-            "Zignoruj efekty przedmiotów {-1}. Za każdym razem, gdy zostaniesz wyczerpany, zachowaj wszystkie swoje aktywne bonusy w grze, a twoje przywołania działają z inicjatywą 99 w każdej rundzie",
-            "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz  {ANY_X} to {RECOVER.fh} one spent {ONE-HAND} or {TWO-HANDS} item",
-            "Raz na scenariusz, during ordering of initiative, after all ability cards have been revealed, {ANY}"
+            "Zignoruj efekty przedmiotów {-1}. Za każdym razem, gdy staniesz się wyczerpany, zachowujesz wszystkie aktywne premie w grze, a twoje przywołańce działają w każdej rundzie w inicjatywie 99",
+            "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz {ANY_X}, aby {RECOVER.fh} jeden zużyty przedmiot {ONE-HAND} lub {TWO-HANDS}",
+            "Raz na scenariusz, podczas ustalania inicjatywy, po tym, jak wszystkie karty zdolności zostały ujawnione, {ANY}"
         ]
     },
     "PY": {
         "name": "Piroklasta",
         "masteries": [
             "W każdej rundzie stwórz lub zniszcz co najmniej jedną przeszkodę lub kafelek niebezpiecznego terenu",
-            "Przesuń wrogów przez sześć różnych pól niebezpiecznego terenu, które stworzyłeś w jednej turze"
+            "W jednej turze przemieść wrogów przez sześć różnych pól niebezpiecznego terenu, które stworzyłeś"
         ],
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
             "Usuń jedną kartę {-2_WHITE}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {WOUND.fh}",
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “Stwórz jedną 1-hex hazardous terrain tile in a featureless hex adjacent to the target”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “Stwórz jeden kafelek niebezpiecznego terenu o wielkości 1 pola na pozbawionym cech polu sąsiadującym z celem”",
             "Zastąp dwie karty {+0_WHITE} dwiema kartami {PUSH.fh}2 {AGAIN}",
             "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE}",
             "Dodaj dwie karty {+1_WHITE} {FIRE_OR_EARTH}",
             "Dodaj dwie karty {+1_WHITE} {MUDDLE.fh} {AGAIN}",
             "Zignoruj efekty scenariusza",
-            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz destroy one adjacent obstacle to gain {WARD.fh}",
-            "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz  {FIRE_X} to perform {WOUND.fh}, {TARGET.fh}1 enemy occupying or adjacent to hazardous terrain",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz zniszczyć jedną sąsiadującą przeszkodę, aby zyskać {WARD.fh}",
+            "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz {FIRE_X}, aby wykonać: {WOUND.fh}, {TARGET.fh}1 wróg zajmujący niebezpieczny teren lub sąsiadujący z nim",
             "Ty i wszyscy twoi sojusznicy jesteście niewrażliwi na niebezpieczny teren, który tworzysz"
         ]
     },
@@ -747,7 +747,7 @@ export default {
             "Wydaj 5 {RESONANCE_ICON} na każdej z pięciu różnych zdolności {WAVE}"
         ],
         "perks": [
-            "Remove four {+0_WHITE}",
+            "Usuń cztery karty {+0_WHITE}",
             "Zastąp dwie karty {-1_WHITE} dwiema kartami {+0_WHITE} “Ujawnij wierzchnią kartę z talii zdolności potwora celu”",
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {-1_WHITE} {STUN.fh}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} {BRITTLE.fh}",
@@ -755,7 +755,7 @@ export default {
             "Dodaj jedną kartę “{HEAL.fh}2, {BLESS.fh}, {TARGET.fh}1 sojusznik” {AGAIN}",
             "Dodaj jedną kartę {+1_WHITE} “Zyskaj 1 {RESONANCE_ICON}”",
             "Zignoruj efekty scenariusza",
-            "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz  {WIND_X} to perform {STRENGTHEN.fh}, {RANGE.fh}3 and {LIGHT_X} to perform {BLESS.fh}, {RANGE.fh}3",
+            "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz {WIND_X}, aby wykonać {STRENGTHEN.fh}, {RANGE.fh}3, oraz {LIGHT_X}, aby wykonać {BLESS.fh}, {RANGE.fh}3",
             "Na początku każdego scenariusza możesz zyskać {BRITTLE.fh}, aby zyskać 2 {RESONANCE_ICON}",
             "Za każdym razem, gdy zostanie ujawnione nowe pomieszczenie, możesz ujawnić wierzchnią kartę z talii modyfikatorów ataku potworów i z talii modyfikatorów ataku wszystkich sojuszników"
         ]
@@ -763,7 +763,7 @@ export default {
     "TA": {
         "name": "Traper",
         "masteries": [
-            "Miej na miapie jedną {HEAL.fh} pułapkę o wartości co najmniej 20.",
+            "Miej na mapie jedną {HEAL.fh} pułapkę o wartości co najmniej 20.",
             "Za pomocą jednej zdolności przemieść wrogów przez co najmniej 7 pułapek."
         ],
         "perks": [
@@ -775,8 +775,8 @@ export default {
             "Dodaj dwie karty “Dodaj {PUSH.fh}2 lub {PULL.fh}2” {AGAIN}",
             "Zignoruj efekty scenariusza",
             "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz stworzyć jedną pułapkę {DAMAGE.fh}1 na sąsiednim pustym polu.",
-            "Za każdym razem, gdy wchodzisz na pole z pułapką, możesz zdecydować, że nie odpalasz danej pułapkki.",
-            "Na początku każdego scenariusza możesz stwórzyć jedną pułapkę {DAMAGE.fh}2 na siąsiednim pustym polu."
+            "Za każdym razem, gdy wchodzisz na pole z pułapką, możesz zdecydować, że nie odpalasz danej pułapki.",
+            "Na początku każdego scenariusza możesz stworzyć jedną pułapkę {DAMAGE.fh}2 na sąsiednim pustym polu."
         ]
     },
     "PC": {
@@ -810,7 +810,7 @@ export default {
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{HEAL.fh}1, {TARGET.fh}1 sojusznik”",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} {IMMOBILIZE.fh}",
             "Dodaj dwie karty {+1_WHITE} {ICE_OR_WIND}",
-            "Zastąp dwie karty {+0_WHITE} dwiema kartami “Jeśli ta akcja zmusi cel to poruszenia się, otrzymuje on {DAMAGE.fh}1” {AGAIN}",
+            "Zastąp dwie karty {+0_WHITE} dwiema kartami “Jeśli ta akcja zmusi cel do poruszenia się, otrzymuje on {DAMAGE.fh}1” {AGAIN}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “{STRENGTHEN.fh}, {TARGET.fh}1 sojusznik”",
             "Dodaj jedną kartę “{HEAL.fh}1, {WARD.fh}, {TARGET.fh}1 sojusznik” {AGAIN}",
             "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {ICE_OR_WIND}",
@@ -830,10 +830,10 @@ export default {
             "Zastąp jedną kartę {-2_WHITE} jedną kartą {+0_WHITE}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “{SHIELD.fh}1” {AGAIN}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} {ICE_OR_EARTH}",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE} “Stwórz jeden 1-hex icy terrain tile in a featureless hex adjacent to the target”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE} “Stwórz jeden kafelek oblodzonego terenu o wielkości 1 pola na pozbawionym cech polu przylegającym do celu”",
             "Dodaj jedną kartę {+3_WHITE}",
             "Dodaj dwie karty “{HEAL.fh}1, na siebie” {AGAIN}",
-            "Zignoruj efekty przedmiotów {-1}, a za każdym razem, gdy wejdziesz na lodowy teren zdolnością ruchu, możesz zignorować jego efekt, aby dodać +1{MOVE.fh}",
+            "Zignoruj efekty przedmiotów {-1}, a za każdym razem, gdy wejdziesz na oblodzony teren zdolnością ruchu, możesz zignorować jego efekt, aby dodać +1{MOVE.fh}",
             "Za każdym razem, gdy leczysz się podczas długiego odpoczynku, możesz {ICE_OR_EARTH_X}, aby dodać +2{HEAL.fh}",
             "Raz na scenariusz, gdy miałbyś otrzymać {DAMAGE.fh}, możesz anulować {DAMAGE.fh}"
         ]
@@ -846,13 +846,13 @@ export default {
         ],
         "perks": [
             "Usuń jedną kartę {-2_WHITE} i jedną kartę {+1_WHITE}",
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “Po tej zdolności ataku przyznaj jednemu ze swoich przywołań: {MOVE.fh}2”",
-            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “After this attack ability, {TRANSFER_ICON}”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “Po rozpatrzeniu tej zdolności ataku przyznaj jednemu z twoich przywołańców: {MOVE.fh}2”",
+            "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “Po rozpatrzeniu tej zdolności ataku {TRANSFER_ICON}”",
             "Dodaj jedną kartę {+1_WHITE} “{HEAL.fh}1, na siebie”",
             "Dodaj jedną kartę {+2_WHITE} {MUDDLE.fh}",
             "Dodaj dwie karty {POISON.fh} {AGAIN}",
             "Dodaj dwie karty {WOUND.fh} {AGAIN}",
-            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz to zrobić przy dowolnej wartości inicjatywy, wybierając inicjatywę po ujawnieniu wszystkich kart zdolności, a ty decydujesz, jak twoje przywołania wykonują swoje zdolności w tej rundzie",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz to zrobić przy dowolnej wartości inicjatywy, wybierając inicjatywę po ujawnieniu wszystkich kart zdolności, a ty decydujesz, jak twoje przywołańce wykonują swoje zdolności w tej rundzie",
             "Na koniec każdego ze swoich krótkich odpoczynków możesz {TRANSFER_ICON}",
             "Za każdym razem, gdy miałbyś zyskać {WOUND.fh}, zapobiegnij temu stanowi"
         ]
@@ -860,27 +860,27 @@ export default {
     "ME": {
         "name": "Metalowa Mozaika",
         "masteries": [
-            "Nidy nie wykonaj ataku",
+            "Nigdy nie atakuj",
             "Przez cztery kolejne rundy przesuń wskaźnik ciśnienia w górę lub w dół o trzy poziomy względem poziomu, na którym zaczął rundę ({PRESSURE_LOW_ICON} do {PRESSURE_HIGH_ICON} lub odwrotnie)"
         ],
         "perks": [
-            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{PRESSURE_UP_ICON} or {PRESSURE_DOWN_ICON}”",
+            "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “{PRESSURE_UP_ICON} lub {PRESSURE_DOWN_ICON}”",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą “{SHIELD.fh}1” {AGAIN}",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+0_WHITE} “Cel i wszyscy sąsiadujący z nim wrogowie otrzymują {DAMAGE.fh}1”",
             "Zastąp dwie karty {+0_WHITE} jedną kartą {PIERCE.fh}3 {AGAIN} i jedną kartą “{RETALIATE.fh}2” {AGAIN}",
             "Dodaj jedną kartę {+1_WHITE} “{HEAL.fh}2, na siebie”",
             "Dodaj jedną kartę {+3_WHITE}",
             "Zignoruj efekty przedmiotów {-1} i dodaj dwie karty {+1_WHITE}",
-            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {PRESSURE_UP_ICON} or {PRESSURE_DOWN_ICON}",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {PRESSURE_UP_ICON} lub {PRESSURE_DOWN_ICON}",
             "Za każdym razem, gdy miałbyś zyskać {POISON.fh}, możesz otrzymać {DAMAGE.fh}1, aby zapobiec temu stanowi",
             "Raz na scenariusz, gdy miałbyś zostać wyczerpany, zamiast tego zyskaj {BRITTLE.fh} i {INVISIBLE.fh}, utrać wszystkie swoje karty, {RECOVER.fh} cztery utracone karty, a następnie odrzuć odzyskane karty"
         ]
     },
     "DT": {
-        "name": "Deepwraith",
+        "name": "Zmora Głębin",
         "masteries": [
             "Wykonuj wszystkie swoje ataki z Korzyścią",
-            "Zasil {DARK} w każdej rundzie"
+            "Nasycaj {DARK} w każdej rundzie"
         ],
         "perks": [
             "Usuń dwie karty {-1_WHITE}",
@@ -891,9 +891,9 @@ export default {
             "Zastąp dwie karty {+1_WHITE} dwiema kartami {+2_WHITE}",
             "Zastąp trzy karty {+1_WHITE} trzema kartami {+1_WHITE} {CURSE.fh}",
             "Dodaj dwie karty {+1_WHITE} “Zyskaj 1{TROPHY_ICON}”",
-            "Zignoruj efekty scenariusza and Usuń dwie karty {+0_WHITE}",
+            "Zignoruj efekty scenariusza i usuń dwie karty {+0_WHITE}",
             "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {LOOT 1} jedno sąsiednie pole. Jeśli zyskasz jakiekolwiek żetony łupu, zyskaj 1 {TROPHY_ICON}",
-            "Na początku każdego scenariusza gain 2 {TROPHY_ICON}",
+            "Na początku każdego scenariusza zyskujesz 2 {TROPHY_ICON}",
             "Gdy masz {INVISIBLE.fh}, zyskujesz Korzyść przy wszystkich swoich atakach"
         ]
     },
@@ -907,7 +907,7 @@ export default {
             "Zastąp jedną kartę {-1_WHITE} dwiema kartami {PIERCE.fh}3 {AGAIN}",
             "Zastąp jedną kartę {-1_WHITE} jedną kartą {+0_WHITE} “+1{TARGET.fh}”",
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+1_WHITE} “{SHIELD.fh}1” {AGAIN}",
-            "Dodaj dwie karty {+1_WHITE} “If you performed a {TIDE_ICON} action this round, {+2_WHITE} instead”",
+            "Dodaj dwie karty {+1_WHITE} “Jeśli w tej rundzie wykonałeś akcję {TIDE_ICON}, zamiast tego {+2_WHITE}”",
             "Dodaj jedną kartę {+2_WHITE} {MUDDLE.fh}",
             "Dodaj jedną kartę {+1_WHITE} {DISARM.fh}",
             "Dodaj dwie karty “{HEAL.fh}1, na siebie” {AGAIN}",
@@ -972,7 +972,7 @@ export default {
             "Zastąp jedną kartę {+0_WHITE} jedną kartą {+2_WHITE} {LIGHT_OR_DARK}",
             "Dodaj jedną kartę {+1_WHITE} “Połóż tę kartę w swoim obszarze aktywnym. Gdy następnym razem położysz {RIFT_WHITE}, odrzuć tę kartę, aby położyć kolejny {RIFT_WHITE} w promieniu {RANGE.fh}1 od niego” {AGAIN}",
             "Zignoruj efekty scenariusza i dodaj dwie karty {+1_WHITE}",
-            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz przeczytać jeden nieprzeczytany {SECTION} z „Powiązań paragrafów” bieżącego scenariusza",
+            "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz przeczytać jeden nieprzeczytany {SECTION} z „Powiązań sekcji” bieżącego scenariusza",
             "Za każdym razem, gdy kładziesz {RIFT_WHITE}, możesz wykonać “{PULL.fh}1, {TARGET.fh}1 sojusznik lub wróg, {RANGE.fh}1”, tak jakbyś zajmował pole zawierające {RIFT_WHITE}",
             "Za każdym razem, gdy talia jest tasowana, możesz odłożyć na bok wszystkie odsłonięte karty z tej talii i po przetasowaniu położyć je z powrotem na wierzch"
         ]

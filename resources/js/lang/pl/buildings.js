@@ -19,7 +19,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 49.2"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 49.2"
             },
             {
                 "level": 3,
@@ -51,7 +51,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 172.3"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 172.3"
             },
             {
                 "level": 2,
@@ -131,7 +131,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 151.2"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 151.2"
             },
             {
                 "level": 2,
@@ -163,7 +163,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 78.4"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 78.4"
             },
             {
                 "level": 2,
@@ -171,7 +171,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, +1 plot"
+                "rewards": "+1 do dobrobytu, +1 grządka"
             },
             {
                 "level": 3,
@@ -187,7 +187,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, +1 plot"
+                "rewards": "+1 do dobrobytu, +1 grządka"
             }
         ]
     },
@@ -299,7 +299,7 @@ export default {
                 "downtime": "Warzenie i destylacja mikstur z 2 i 3 ziół",
                 "wrecked": "Postacie nie mogą używać mikstur",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 183.5"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 183.5"
             }
         ]
     },
@@ -315,7 +315,7 @@ export default {
                 "downtime": "Kup do jednego przedmiotu",
                 "wrecked": "Tracicie wspólnie 5 szt. złota",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 25.2"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 25.2"
             },
             {
                 "level": 2,
@@ -323,7 +323,7 @@ export default {
                 "downtime": "Kup do dwóch przedmiotów",
                 "wrecked": "Tracicie wspólnie 10 szt. złota",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 12.4"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 12.4"
             },
             {
                 "level": 3,
@@ -331,7 +331,7 @@ export default {
                 "downtime": "Kup do trzech przedmiotów",
                 "wrecked": "Tracicie wspólnie 15 szt. złota",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 38.3"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 38.3"
             },
             {
                 "level": 4,
@@ -339,7 +339,7 @@ export default {
                 "downtime": "Kup do czterech przedmiotów",
                 "wrecked": "Tracicie wspólnie 20 szt. złota",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 196.2"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 196.2"
             }
         ]
     },
@@ -355,7 +355,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Uszkodź dowolny jeden budynek",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 31.3"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 31.3"
             },
             {
                 "level": 2,
@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Świątynia",
+        "name": "Świątynia Wielkiego Dębu",
         "levels": [
             {
                 "level": 0
@@ -387,7 +387,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Każda postać rozpoczyna następny scenariusz z {CURSE.fh}",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 192.5"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 192.5"
             },
             {
                 "level": 2,
@@ -427,22 +427,22 @@ export default {
                 "downtime": "Kupowanie ulepszeń",
                 "wrecked": "Każda postać rozpoczyna następny scenariusz z {DISARM.fh}",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 193.1"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 193.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "Kupowanie ulepszeń",
                 "wrecked": "Każda postać rozpoczyna następny scenariusz z {DISARM.fh}",
-                "passive": "Zmniejsz wszystkie koszty ulepszeń o 10 złota",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 157.2"
+                "passive": "Zmniejsz wszystkie koszty ulepszeń o 10 szt. złota",
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 157.2"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "Kupowanie ulepszeń",
                 "wrecked": "Każda postać rozpoczyna następny scenariusz z {DISARM.fh}",
-                "passive": "Zmniejsz wszystkie koszty ulepszeń o 10 złota oraz kary za poziom o 10 złota za poziom",
+                "passive": "Zmniejsz wszystkie koszty ulepszeń o 10 szt. złota oraz kary za poziom o 10 szt. złota za poziom",
                 "rewards": "+1 do dobrobytu"
             },
             {
@@ -450,13 +450,13 @@ export default {
                 "operations": "",
                 "downtime": "Kupowanie ulepszeń",
                 "wrecked": "Każda postać rozpoczyna następny scenariusz z {DISARM.fh}",
-                "passive": "Zmniejsz wszystkie koszty ulepszeń o 10 złota, kary za poziom o 10 złota za poziom oraz kary za powtórzenie o 25 złota za ulepszenie",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 56.3"
+                "passive": "Zmniejsz wszystkie koszty ulepszeń o 10 szt. złota, kary za poziom o 10 szt. złota za poziom oraz kary za powtórzenie o 25 szt. złota za ulepszenie",
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 56.3"
             }
         ]
     },
     "fh-65": {
-        "name": "Skład Metalu",
+        "name": "Magazyn Metalu",
         "levels": [
             {
                 "level": 0
@@ -471,7 +471,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {METAL} za 5 szt. złota za sztukę",
+                "operations": "Możecie wspólnie sprzedać do 2 {METAL} za 5 szt. złota za sztukę",
                 "downtime": "",
                 "wrecked": "Tracicie wspólnie 2 {METAL}",
                 "passive": "",
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "Tartak",
+        "name": "Magazyn Drewna",
         "levels": [
             {
                 "level": 0
@@ -491,11 +491,11 @@ export default {
                 "downtime": "",
                 "wrecked": "Tracicie wspólnie 2 {LUMBER}",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 144.3"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 144.3"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {LUMBER} za 5 szt. złota za sztukę",
+                "operations": "Możecie wspólnie sprzedać do 2 {LUMBER} za 5 szt. złota za sztukę",
                 "downtime": "",
                 "wrecked": "Tracicie wspólnie 2 {LUMBER}",
                 "passive": "",
@@ -515,11 +515,11 @@ export default {
                 "downtime": "",
                 "wrecked": "Tracicie wspólnie 2 {HIDE}",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 173.1"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 173.1"
             },
             {
                 "level": 2,
-                "operations": "Collectively sell up to 2 {HIDE} za 5 szt. złota za sztukę",
+                "operations": "Możecie wspólnie sprzedać do 2 {HIDE} za 5 szt. złota za sztukę",
                 "downtime": "",
                 "wrecked": "Tracicie wspólnie 2 {HIDE}",
                 "passive": "",
@@ -539,7 +539,7 @@ export default {
                 "downtime": "",
                 "wrecked": "-1 do morale",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 160.2"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 160.2"
             },
             {
                 "level": 2,
@@ -547,16 +547,16 @@ export default {
                 "downtime": "",
                 "wrecked": "-1 do morale",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 35.3"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 35.3"
             },
             {
                 "level": 3,
-                "requires": "Wymaga 3 Starożytnych Monet (przedmiot 245)",
+                "requires": "Wymaga 3 × „Ancient Coin” (przedmiot 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "-1 do morale",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 113.1"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 113.1"
             }
         ]
     },
@@ -571,8 +571,8 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "-1 do morale",
-                "passive": "Gdy talia prób jest kompletna, przeczytaj paragraf 187.1",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 178.2"
+                "passive": "Gdy talia prób jest kompletna, przeczytaj sekcję 187.1",
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 178.2"
             },
             {
                 "level": 2,
@@ -596,7 +596,7 @@ export default {
                 "downtime": "",
                 "wrecked": "-1 do inspiracji",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 190.3"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 190.3"
             },
             {
                 "level": 2,
@@ -604,7 +604,7 @@ export default {
                 "downtime": "",
                 "wrecked": "-1 do inspiracji",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 116.3"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 116.3"
             },
             {
                 "level": 3,
@@ -612,7 +612,7 @@ export default {
                 "downtime": "",
                 "wrecked": "-1 do inspiracji",
                 "passive": "",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 89.2"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 89.2"
             }
         ]
     },
@@ -644,7 +644,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Utracicie dowolny 1 wspólny surowiec",
                 "passive": "Zmniejsz wszystkie koszty budowy o 1 surowiec materiałowy",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 7.3"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 7.3"
             },
             {
                 "level": 2,
@@ -657,7 +657,7 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "StableStajnies",
+        "name": "Stajnia",
         "levels": [
             {
                 "level": 0
@@ -668,7 +668,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Postacie nie mogą używać zwierząt",
                 "passive": "Zabierz jedno zwierzę do każdego scenariusza. Pojemność: 4",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 3.1"
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 3.1"
             },
             {
                 "level": 2,
@@ -707,15 +707,15 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nie można wykonywać wyzwań",
-                "passive": "Dobierz jedno wyzwanie i zachowaj maksymalnie jedno. Gdy talia wyzwań jest kompletna, przeczytaj paragraf 190.1",
-                "rewards": "+1 do dobrobytu, przeczytaj paragraf 189.1"
+                "passive": "Dobierz jedno wyzwanie i zachowaj maksymalnie jedno. Gdy talia wyzwań jest kompletna, przeczytaj sekcję 190.1",
+                "rewards": "+1 do dobrobytu, przeczytaj sekcję 189.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nie można wykonywać wyzwań",
-                "passive": "Dobierz dwa wyzwania i zachowaj maksymalnie jedno. Gdy talia wyzwań jest kompletna, przeczytaj paragraf 190.1",
+                "passive": "Dobierz dwa wyzwania i zachowaj maksymalnie jedno. Gdy talia wyzwań jest kompletna, przeczytaj sekcję 190.1",
                 "rewards": "+1 do dobrobytu"
             },
             {
@@ -723,13 +723,13 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nie można wykonywać wyzwań",
-                "passive": "Dobierz trzy wyzwania i zachowaj maksymalnie dwa. Gdy talia wyzwań jest kompletna, przeczytaj paragraf 190.1",
+                "passive": "Dobierz trzy wyzwania i zachowaj maksymalnie dwa. Gdy talia wyzwań jest kompletna, przeczytaj sekcję 190.1",
                 "rewards": "+1 do dobrobytu"
             }
         ]
     },
     "fh-98": {
-        "name": "Baraki",
+        "name": "Koszary",
         "levels": [
             {
                 "level": 0
@@ -738,7 +738,7 @@ export default {
                 "level": 1,
                 "operations": "Możecie wspólnie wyszkolić do 1 żołnierza za 3 szt. złota i 1 surowiec materiałowy",
                 "downtime": "",
-                "wrecked": "Niekorzyść przy wszystkich rozstrzygnięciach zdarzeń ataku. Nie można używać żołnierzy.",
+                "wrecked": "Niekorzyść przy wszystkich rozstrzygnięciach wydarzeń ataku. Nie można używać żołnierzy.",
                 "passive": "Pojemność: 4, Efekt: korzyść i -5{ATTACK.fh}",
                 "rewards": "+1 do dobrobytu"
             },
@@ -746,25 +746,25 @@ export default {
                 "level": 2,
                 "operations": "Możecie wspólnie wyszkolić do 1 żołnierza za 3 szt. złota i 1 surowiec materiałowy",
                 "downtime": "",
-                "wrecked": "Niekorzyść przy wszystkich rozstrzygnięciach zdarzeń ataku. Nie można używać żołnierzy.",
+                "wrecked": "Niekorzyść przy wszystkich rozstrzygnięciach wydarzeń ataku. Nie można używać żołnierzy.",
                 "passive": "Pojemność: 6, Efekt: korzyść i -15{ATTACK.fh}",
-                "rewards": "+1 do dobrobytu, +2 soldiers"
+                "rewards": "+1 do dobrobytu, +2 żołnierzy"
             },
             {
                 "level": 3,
                 "operations": "Możecie wspólnie wyszkolić do 2 żołnierzy za 3 szt. złota i 1 surowiec materiałowy za sztukę",
                 "downtime": "",
-                "wrecked": "Niekorzyść przy wszystkich rozstrzygnięciach zdarzeń ataku. Nie można używać żołnierzy.",
+                "wrecked": "Niekorzyść przy wszystkich rozstrzygnięciach wydarzeń ataku. Nie można używać żołnierzy.",
                 "passive": "Pojemność: 8, Efekt: korzyść i -25{ATTACK.fh}",
-                "rewards": "+1 do dobrobytu, +2 soldiers"
+                "rewards": "+1 do dobrobytu, +2 żołnierzy"
             },
             {
                 "level": 4,
                 "operations": "Możecie wspólnie wyszkolić do 2 żołnierzy za 3 szt. złota i 1 surowiec materiałowy za sztukę",
                 "downtime": "",
-                "wrecked": "Niekorzyść przy wszystkich rozstrzygnięciach zdarzeń ataku. Nie można używać żołnierzy.",
+                "wrecked": "Niekorzyść przy wszystkich rozstrzygnięciach wydarzeń ataku. Nie można używać żołnierzy.",
                 "passive": "Pojemność: 10, Efekt: korzyść i -35{ATTACK.fh}",
-                "rewards": "+1 do dobrobytu, +2 soldiers"
+                "rewards": "+1 do dobrobytu, +2 żołnierzy"
             }
         ]
     }

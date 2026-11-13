@@ -40,10 +40,10 @@ export default {
         "1": "Przeżyło dokładnie czterech cywilów.",
         "2": "Przeżyło pięciu lub więcej cywilów.",
         "title": "Ochrona cywilów",
-        "text": "Ilu Valrathów udało się wam ocalić?"
+        "text": "Ilu Valratów udało się wam ocalić?"
     },
     "bloodyWar": {
-        "1": "A: Pomóżcie Valrathom",
+        "1": "A: Pomóżcie Valratom",
         "2": "B: Pomóżcie Ludziom",
         "3": "C: Walczcie z obiema stronami",
         "title": "Krwawa Wojna Demonów",
@@ -65,12 +65,12 @@ export default {
         "1": "Zabito jednego przeciwnika z imienia",
         "2": "Zabito dwóch przeciwników z imienia",
         "3": "Zabito trzech przeciwników z imienia",
-        "title": "Wypróbuj swój Modulator Mocy",
+        "title": "Wypróbuj swój Power Modulator",
         "text": "Ilu przeciwników z imienia udało wam się zabić, zanim opadliście z sił?"
     },
     "unseenPlight": {
-        "1": "Zabito Paszczę Rynsztokową, zdobywając Łup Paszczy Rynsztokowej",
-        "2": "Uratowano dzieci, spełniając Prośbę Feigrina",
+        "1": "Guttermaw zabity, zdobyto „Guttermaw's Bounty”",
+        "2": "Uratowano dzieci, spełniono „Feirgrin's Request”",
         "title": "Złamane Domy i Legowiska",
         "text": "Przynieśliście śmierć czy ocaliliście życie?"
     },
@@ -190,52 +190,52 @@ export default {
         "text": "Czy zwróciliście słoneczne agaty Derrickowi?"
     },
     "gh2-13": {
-        "1": "Paragraf 18.3",
-        "2": "Paragraf 44.3",
-        "3": "Paragraf 51.1",
+        "1": "Sekcja 18.3",
+        "2": "Sekcja 44.3",
+        "3": "Sekcja 51.1",
         "title": "Lodowa grań",
-        "text": "Który paragraf zakończenia przeczytaliście?"
+        "text": "Którą sekcję zakończenia przeczytaliście?"
     },
     "gh2-27": {
-        "1": "Paragraf 10.1",
-        "2": "Paragraf 50.2",
+        "1": "Sekcja 10.1",
+        "2": "Sekcja 50.2",
         "title": "Piekielny Tron",
-        "text": "Który paragraf zakończenia przeczytaliście?"
+        "text": "Którą sekcję zakończenia przeczytaliście?"
     },
     "gh2-28": {
-        "1": "Paragraf 72.3",
-        "2": "Paragraf 75.3",
-        "3": "Paragraf 76.4",
+        "1": "Sekcja 72.3",
+        "2": "Sekcja 75.3",
+        "3": "Sekcja 76.4",
         "title": "Świątynia Proroctw",
-        "text": "Który paragraf zakończenia przeczytaliście?"
+        "text": "Którą sekcję zakończenia przeczytaliście?"
     },
     "gh2-31": {
-        "1": "Paragraf 26.6",
-        "2": "Paragraf 76.1",
+        "1": "Sekcja 26.6",
+        "2": "Sekcja 76.1",
         "title": "Próchniejący Las",
-        "text": "Który paragraf zakończenia przeczytaliście?"
+        "text": "Którą sekcję zakończenia przeczytaliście?"
     },
     "gh2-32": {
-        "1": "Paragraf 16.3",
-        "2": "Paragraf 16.3 i 81.5",
-        "3": "Paragraf 62.5",
-        "4": "Paragraf 78.6",
-        "5": "Paragraf 78.6 i 81.5",
-        "6": "Paragraf 81.5",
+        "1": "Sekcja 16.3",
+        "2": "Sekcja 16.3 i 81.5",
+        "3": "Sekcja 62.5",
+        "4": "Sekcja 78.6",
+        "5": "Sekcja 78.6 i 81.5",
+        "6": "Sekcja 81.5",
         "title": "Zbrojownia Sawasów",
-        "text": "Który paragraf zakończenia przeczytaliście?"
+        "text": "Którą sekcję zakończenia przeczytaliście?"
     },
     "gh2-34": {
-        "1": "Paragraf 36.4",
-        "2": "Paragraf 89.2",
+        "1": "Sekcja 36.4",
+        "2": "Sekcja 89.2",
         "title": "Prastary Grobowiec",
-        "text": "Który paragraf zakończenia przeczytaliście?"
+        "text": "Którą sekcję zakończenia przeczytaliście?"
     },
     "gh2-43": {
-        "1": "Paragraf 80.3",
-        "2": "Paragraf 106.1",
-        "3": "Paragraf 132.4",
-        "title": "Pogoń za Sekretami",
-        "text": "Który paragraf zakończenia przeczytaliście?"
+        "1": "Sekcja 80.3",
+        "2": "Sekcja 106.1",
+        "3": "Sekcja 132.4",
+        "title": "Chasing Secrets",
+        "text": "Którą sekcję zakończenia przeczytaliście?"
     }
 }
