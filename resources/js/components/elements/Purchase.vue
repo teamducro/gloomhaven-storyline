@@ -42,12 +42,12 @@
                 <table>
                     <tr v-for="(game) in gameData.purchasable()" :key="'game-'+game">
                         <td><checkbox group="purchasable-games"
-                                      :id="'game-'+game"
+                                      :id="idPrefix+game"
                                       :checked="games.includes(game)"
                                       :auto-disable="false"
                                       @change="(id, isChecked) => {changedGames(game, isChecked)}"></checkbox>
                         </td>
-                        <td class="pr-2"><label :for="'game-'+game">{{ $t(game) }}</label></td>
+                        <td class="pr-2"><label :for="idPrefix+game">{{ $t(game) }}</label></td>
                         <td><span class="font-title text-md text-white2-87">€4,99</span> / year</td>
                     </tr>
                 </table>
@@ -122,6 +122,8 @@ export default {
     },
     data() {
         return {
+            // Several purchase components share a page, unique ids keep each label on its own checkbox
+            idPrefix: `purchase-${this.$.uid}-`,
             games: [],
             stories: [],
             expand: null,
@@ -203,19 +205,13 @@ export default {
 
             const response = await this.checkout.checkout(this.effectiveStoryId, this.games)
                 .catch(e => {
-                    this.purchasing = false;
-                    this.error(e.response.data.message);
+                    this.error(e.response?.data?.message || e.message);
                 });
 
-            this.purchasing = false;
-
             if (response) {
-                this.$stripe.redirectToCheckout({
-                    sessionId: response.data.session
-                })
-                    .then(function (result) {
-                        this.error(result.error.message);
-                    });
+                location.href = response.data.url;
+            } else {
+                this.purchasing = false;
             }
         },
         local() {

@@ -1,6 +1,5 @@
 import './services/app/globals';
 import {createRouter, createWebHashHistory} from 'vue-router';
-import {loadStripe} from '@stripe/stripe-js/pure';
 import Home from "./pages/Home";
 import Alert from "./components/elements/Alert";
 import EmailMe from "./components/elements/EmailMe";
@@ -50,11 +49,9 @@ const vueApp = createApp({
             webpSupported: true,
         }
     },
-    async mounted() {
+    mounted() {
         this.webpSupported = this.isWebpSupported();
         this.shouldRedirectToApp();
-
-        vueApp.config.globalProperties.$stripe = await loadStripe(import.meta.env.MIX_STRIPE_KEY);
     },
     methods: {
         isWebpSupported() {
