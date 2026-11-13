@@ -307,6 +307,10 @@ class Sheet {
         this.fillCharacterUnlocks();
         this.fillRelations();
         this.fillDefaultCrossGameItems();
+    }
+
+    // Runs on campaign load (migrateSheets), not in read(): a page can build a sheet before the campaign is loaded.
+    migrate() {
         this.migrateClassEventsAdded();
         if (this.game === 'cs') {
             this.migrateCsItemDesigns();

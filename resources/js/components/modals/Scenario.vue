@@ -303,6 +303,7 @@
                                 </a>
                                 <button v-if="!scenario.solo && integrations.ghs !== false" id="ghs-export-scenario"
                                         class="mdc-button mdc-button--raised" @click="openGhsExport">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon">launch</i>
                                     <span class="mdc-button__label">{{ $t('ghs-export.button') }}</span>
                                 </button>

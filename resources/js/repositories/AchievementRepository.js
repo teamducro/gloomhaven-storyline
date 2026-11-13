@@ -2,7 +2,6 @@ import Achievement from "../models/Achievement";
 import ScenarioRepository from "./ScenarioRepository";
 import AchievementGroup from "../models/AchievementGroup";
 import {ScenarioState} from "../models/ScenarioState";
-import StorySyncer from "../services/StorySyncer";
 import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import Helpers from "../services/Helpers";
@@ -80,7 +79,8 @@ export default class AchievementRepository {
             } else if (!unlock && scenario && scenario.isVisible()) {
                 this.scenarioRepository.changeState(scenario, ScenarioState.hidden);
             } else {
-                this.storySyncer.store();
+                // Also unlocks main scenarios that require the achievement, e.g. FH 101 by Into the Forest. Syncs as well.
+                this.scenarioRepository.scenarioValidator.validate();
             }
         }
     }
@@ -189,10 +189,6 @@ export default class AchievementRepository {
 
     get scenarioRepository() {
         return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository());
-    }
-
-    get storySyncer() {
-        return this._storySyncer || (this._storySyncer = new StorySyncer);
     }
 
     get gameData() {

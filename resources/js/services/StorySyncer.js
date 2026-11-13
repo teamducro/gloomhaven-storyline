@@ -32,6 +32,19 @@ export default class StorySyncer {
         }
     }
 
+    // Migrations change the data without a user edit: take them into the hash without making the local campaign newer,
+    // or an offline device would win from the server with stale progress. They're sent along with the next edit.
+    absorbMigrations() {
+        const story = this.storyRepository.current();
+        if (!story || story.read_only) {
+            return;
+        }
+
+        story.data = this.getStoryData();
+        story.hash = story.makeHash();
+        this.apiStoryRepository.storeStory(story);
+    }
+
     getStoryData() {
         // clone data to prevent references
         const data = _.clone(app.campaignData);
