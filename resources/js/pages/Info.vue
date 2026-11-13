@@ -12,7 +12,7 @@
             <h2 id="contribute" class="mt-8 mb-4 text-lg">{{ $t('Contributions') }}</h2>
 
             <p>{{ $t('contribute.text-1') }}</p>
-            <p class="mt-2">{{ $t('contribute.text-2') }} Upcoming features include Frosthaven herb garden.</p>
+            <p class="mt-2">{{ $t('contribute.text-2') }}</p>
 
             <div class="flex flex-col sm:flex-row">
                 <div>
