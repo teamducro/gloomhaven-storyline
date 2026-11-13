@@ -11,7 +11,6 @@ import Helpers from './services/Helpers';
 import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
-import {loadStripe} from '@stripe/stripe-js/pure';
 import EchoService from "./services/app/EchoService";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/app/OfflineChecker";
@@ -155,10 +154,7 @@ const vueApp = createApp({
         this.$bus.$on('campaign-selected', this.switchCampaign);
         this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
-        // Before awaiting Stripe: a blocked or slow Stripe must not keep the saved language from loading.
         setInitialLanguage();
-
-        vueApp.config.globalProperties.$stripe = await loadStripe(import.meta.env.MIX_STRIPE_KEY);
 
         this.$bus.$emit('open-donations');
 

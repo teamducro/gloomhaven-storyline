@@ -63,7 +63,6 @@
         "@material/theme": "^14.0.0",
         "@material/typography": "^14.0.0",
         "@sentry/vue": "^7.120.4",
-        "@stripe/stripe-js": "^1.24.0",
         "animate.css": "^4.1.1",
         "axios": "^1.7.0",
         "cash-dom": "^8.1.1",

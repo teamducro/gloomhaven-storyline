@@ -85,6 +85,23 @@ describe('Campaigns', () => {
         cy.get('.mdc-dialog--open').contains('You are purchasing a new shared campaign license');
     });
 
+    it('It redirects to the checkout url of the purchased games', () => {
+        utilities.startServer();
+        cy.intercept('POST', '**/checkout', {
+            body: {session: 'cs_test', url: '/tracker/?payment_success#/campaigns'}
+        }).as('checkout');
+        cy.visit('/tracker/#/campaigns');
+
+        cy.contains('#campaigns button.mdc-button--raised', 'Buy new shared campaign').click();
+        cy.get('.mdc-dialog--open').within(() => {
+            cy.contains('label', 'Frosthaven').click();
+            cy.contains('button', 'Purchase').click();
+        });
+
+        cy.wait('@checkout').its('request.body').should('deep.equal', {games: ['fh']});
+        cy.contains('Payment Successful!');
+    });
+
     it('It asks to renew an owned campaign or buy a new one', () => {
         cy.visit('/tracker/#/campaigns');
         cy.window().then((win) => {
