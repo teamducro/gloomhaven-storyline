@@ -1,7 +1,7 @@
 export default {
     "gh": {
         "blood-pact": {
-            "name": "blood pact"
+            "name": "Кровавый договор"
         },
         "bone-breaker": {
             "name": "bone breaker"
@@ -16,7 +16,7 @@ export default {
             "name": "burning hatred"
         },
         "careless-charge": {
-            "name": "careless charge"
+            "name": "Безрассудный натиск"
         },
         "cauterize": {
             "name": "cauterize"
@@ -79,7 +79,7 @@ export default {
             "name": "the maw of madness"
         },
         "unbridled-power": {
-            "name": "unbridled power"
+            "name": "Неукротимая мощь"
         },
         "unstoppable-destruction": {
             "name": "unstoppable destruction"
@@ -5201,70 +5201,70 @@ export default {
             "name": "treacherous tactics"
         },
         "anticipate-intricacies": {
-            "name": "anticipate intricacies"
+            "name": "Тягостное предчувствие"
         },
         "peer-into-battle": {
-            "name": "peer into battle"
+            "name": "Око войны"
         },
         "cursed-ground": {
-            "name": "cursed ground"
+            "name": "Проклятая земля"
         },
         "void-snare": {
-            "name": "void snare"
+            "name": "Ловушка пустоты"
         },
         "approach-of-the-void": {
             "name": "approach of the void"
         },
         "duality-shards": {
-            "name": "duality shards"
+            "name": "Осколки дуальности"
         },
         "envision-the-course": {
-            "name": "envision the course"
+            "name": "Намеченный курс"
         },
         "otherworldly-journey": {
-            "name": "otherworldly journey"
+            "name": "Странствие меж мирами"
         },
         "ray-of-light": {
-            "name": "ray of light"
+            "name": "Луч света"
         },
         "dimensional-transfer": {
-            "name": "dimensional transfer"
+            "name": "Пространственный сдвиг"
         },
         "inspiration-from-beyond": {
-            "name": "inspiration from beyond"
+            "name": "Вдохновение свыше"
         },
         "call-of-the-nether": {
-            "name": "call of the nether"
+            "name": "Зов бездны"
         },
         "recurrence": {
             "name": "recurrence"
         },
         "dimensional-divide": {
-            "name": "dimensional divide"
+            "name": "Пространственный разлом"
         },
         "cleansing-rite": {
-            "name": "cleansing rite"
+            "name": "Обряд очищения"
         },
         "past-and-future": {
             "name": "past and future"
         },
         "ethereal-vortex": {
-            "name": "ethereal vortex"
+            "name": "Эфирный вихрь"
         },
         "protective-aura": {
-            "name": "protective aura"
+            "name": "Защитная аура"
         },
         "enfeebling-hex": {
-            "name": "enfeebling hex"
+            "name": "Ослабляющая порча"
         },
         "seal-their-fate": {
-            "name": "seal their fate"
+            "name": "Жребий брошен"
         },
         "constant-flux": {
             "name": "constant flux"
         },
         "careful-attunement": {
-            "name": "careful attunement"
+            "name": "Тонкая настройка"
         },
         "tether-the-planes": {
             "name": "tether the planes"
@@ -5276,7 +5276,7 @@ export default {
             "name": "time and again"
         },
         "deep-contemplation": {
-            "name": "deep contemplation"
+            "name": "Глубокая медитация"
         },
         "planar-chaos": {
             "name": "planar chaos"
@@ -5285,7 +5285,7 @@ export default {
             "name": "convergence"
         },
         "hand-of-destiny": {
-            "name": "hand of destiny"
+            "name": "Рука судьбы"
         },
         "cant-be-bothered": {
             "name": "cant be bothered"
