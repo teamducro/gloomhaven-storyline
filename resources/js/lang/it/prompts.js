@@ -1,13 +1,13 @@
 export default {
     "dragon": {
-        "1": "Restituite il tesoro al Draco. Ottenete l'Achievement Globale “Aiutato il Drago”, aggiungete l'Evento di Città 75 e l'Evento di Strada 66 ai rispettivi mazzi.",
+        "1": "Restituite il tesoro al Draco. Ottenete il Traguardo Globale “Il Draco è Stato Aiutato”, aggiungete l'Evento di Città 75 e l'Evento di Strada 66 ai rispettivi mazzi.",
         "2": "Non aiutate il Draco.",
         "title": "Amici o Nemici",
         "text": "Avete recuperato il tesoro del Draco. Lo restituite al Draco o seguite gli ordini del Capitano delle Guardie e provate ad uccidere il Draco?"
     },
     "burningMountain": {
         "1": "Conclusione A: decidete di terminare il turno in G e di rimuovere dal gioco uno degli oggetti.",
-        "2": "Conclusione B: dopo aver saccheggiato il forziere, tutti i personaggi sono tornati all'ingresso prima di diventare esausti.",
+        "2": "Conclusione B: dopo aver saccheggiato il forziere, tutti i personaggi sono tornati all'ingresso prima di diventare sfiniti.",
         "title": "Fuga dalla Montagna Infuocata",
         "text": "Avete saccheggiato il tesoro. Osate fuggire dal vulcano in eruzione e tenere gli oggetti recuperati?"
     },
@@ -47,10 +47,10 @@ export default {
         "2": "B: Aiutare gli Umani",
         "3": "C: Combattere entrambe le fazioni",
         "title": "La Sanguinosa Guerra dei Demoni",
-        "text": "Which side dit you choose?"
+        "text": "Da quale parte vi siete schierati?"
     },
     "escapeFromTheHusk": {
-        "1": "All characters escaped",
+        "1": "Tutti i personaggi sono fuggiti.",
         "2": "???",
         "title": "Fuga dal Guscio",
         "text": "Tutti i personaggi sono fuggiti attraverso un'uscita?"
@@ -62,15 +62,15 @@ export default {
         "text": "Date ascolto alle ultime parole di Dominic o alla vostra avidità?"
     },
     "capstoneTest": {
-        "1": "Un nemico nominato è stato ucciso",
-        "2": "Due nemici nominati sono stati uccisi",
-        "3": "Tre nemici nominati sono stati uccisi",
-        "title": "Metti alla prova il tuo Modulatore di Potenza",
-        "text": "Quanti Nemici Nominati siete riusciti a uccidere prima di diventare esausti?"
+        "1": "Un nemico con nome è stato ucciso",
+        "2": "Due nemici con nome sono stati uccisi",
+        "3": "Tre nemici con nome sono stati uccisi",
+        "title": "Metti alla prova il tuo Power Modulator",
+        "text": "Quanti Nemici con Nome siete riusciti a uccidere prima di diventare sfiniti?"
     },
     "unseenPlight": {
-        "1": "Avete ucciso il Guttermaw, ottenendo la Taglia di Guttermaw",
-        "2": "Avete salvato i bambini, esaudendo la Richiesta di Feigrin",
+        "1": "Avete ucciso il Guttermaw, ottenendo Guttermaw's Bounty",
+        "2": "Avete salvato i bambini, esaudendo Feirgrin's Request",
         "title": "Case e Tane Distrutte",
         "text": "Avete portato la morte o salvato delle vite?"
     },
@@ -99,7 +99,7 @@ export default {
     "friendOfTheFishKing": {
         "1": "Sì",
         "2": "No",
-        "title": "Amico del Re dei Pesci",
+        "title": "Friend of the Fish King",
         "text": "Avete accettato la proposta del Re dei Pesci?"
     },
     "acceptTheAscension": {
@@ -165,8 +165,8 @@ export default {
     "hungryMawDead": {
         "1": "Sì",
         "2": "No",
-        "title": "Fauce Affamata Morta",
-        "text": "La Fauce Affamata è morta?"
+        "title": "Hungry Maw morta",
+        "text": "La Hungry Maw è morta?"
     },
     "cratesLooted": {
         "1": "1",
@@ -190,52 +190,52 @@ export default {
         "text": "Avete restituito le agate del sole a Derrick?"
     },
     "gh2-13": {
-        "1": "Paragrafo 18.3",
-        "2": "Paragrafo 44.3",
-        "3": "Paragrafo 51.1",
+        "1": "Sezione 18.3",
+        "2": "Sezione 44.3",
+        "3": "Sezione 51.1",
         "title": "Valico di Rupegelida",
-        "text": "Quale paragrafo di conclusione avete letto?"
+        "text": "Quale sezione di conclusione avete letto?"
     },
     "gh2-27": {
-        "1": "Paragrafo 10.1",
-        "2": "Paragrafo 50.2",
+        "1": "Sezione 10.1",
+        "2": "Sezione 50.2",
         "title": "Trono Infernale",
-        "text": "Quale paragrafo di conclusione avete letto?"
+        "text": "Quale sezione di conclusione avete letto?"
     },
     "gh2-28": {
-        "1": "Paragrafo 72.3",
-        "2": "Paragrafo 75.3",
-        "3": "Paragrafo 76.4",
+        "1": "Sezione 72.3",
+        "2": "Sezione 75.3",
+        "3": "Sezione 76.4",
         "title": "Tempio del Veggente",
-        "text": "Quale paragrafo di conclusione avete letto?"
+        "text": "Quale sezione di conclusione avete letto?"
     },
     "gh2-31": {
-        "1": "Paragrafo 26.6",
-        "2": "Paragrafo 76.1",
+        "1": "Sezione 26.6",
+        "2": "Sezione 76.1",
         "title": "Bosco Decrepito",
-        "text": "Quale paragrafo di conclusione avete letto?"
+        "text": "Quale sezione di conclusione avete letto?"
     },
     "gh2-32": {
-        "1": "Paragrafo 16.3",
-        "2": "Paragrafo 16.3 e 81.5",
-        "3": "Paragrafo 62.5",
-        "4": "Paragrafo 78.6",
-        "5": "Paragrafo 78.6 e 81.5",
-        "6": "Paragrafo 81.5",
+        "1": "Sezione 16.3",
+        "2": "Sezione 16.3 e 81.5",
+        "3": "Sezione 62.5",
+        "4": "Sezione 78.6",
+        "5": "Sezione 78.6 e 81.5",
+        "6": "Sezione 81.5",
         "title": "Armeria Savvas",
-        "text": "Quale paragrafo di conclusione avete letto?"
+        "text": "Quale sezione di conclusione avete letto?"
     },
     "gh2-34": {
-        "1": "Paragrafo 36.4",
-        "2": "Paragrafo 89.2",
+        "1": "Sezione 36.4",
+        "2": "Sezione 89.2",
         "title": "Tomba Logorata",
-        "text": "Quale paragrafo di conclusione avete letto?"
+        "text": "Quale sezione di conclusione avete letto?"
     },
     "gh2-43": {
-        "1": "Paragrafo 80.3",
-        "2": "Paragrafo 106.1",
-        "3": "Paragrafo 132.4",
-        "title": "Alla Ricerca di Segreti",
-        "text": "Quale paragrafo di conclusione avete letto?"
+        "1": "Sezione 80.3",
+        "2": "Sezione 106.1",
+        "3": "Sezione 132.4",
+        "title": "Chasing Secrets",
+        "text": "Quale sezione di conclusione avete letto?"
     }
 }

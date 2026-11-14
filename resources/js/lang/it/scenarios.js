@@ -62,7 +62,7 @@ export default {
             "15 monete d'oro ciascuno",
             "-2 reputazione",
             "+2 prosperità",
-            "Progetto “Skullbane Axe” (Oggetto 113)"
+            "Modello di “Ascia Anatema dei Teschi” (Oggetto 113)"
         ],
         "faq": [
             "Errore di stampa: ignorate il testo di “Boss Speciale 1” nel Libro degli Scenari e fate riferimento alla carta statistiche del boss."
@@ -72,7 +72,7 @@ export default {
         "name": "Piazza di Gloomhaven B",
         "rewards": [
             "+4 reputazione",
-            "Progetto “Skullbane Axe” (Oggetto 113)"
+            "Modello di “Ascia Anatema dei Teschi” (Oggetto 113)"
         ],
         "faq": [
             "Errore di stampa: il marcatore porta 1 dovrebbe trovarsi sulla porta a sud e non su quella a nord. Leggete il testo sotto “1” quando viene aperta la porta a sud.",
@@ -104,7 +104,7 @@ export default {
         ]
     },
     "gh-18": {
-        "name": "Fognature Abbandonata"
+        "name": "Fognature Abbandonate"
     },
     "gh-19": {
         "name": "Cripta Dimenticata",
@@ -131,7 +131,7 @@ export default {
         "rewards": [
             "50 monete d'oro ciascuno",
             "+1 prosperità",
-            "Aggiungi l'Evento Città 78 al mazzo"
+            "Aggiungi l'Evento di Città 78 al mazzo"
         ],
         "faq": [
             "Errore di stampa: sotto “Regole Speciali” l'altare dovrebbe trovarsi in “f” e non in “a”. Le posizioni di generazione dei demoni dovrebbero essere riordinate così: vento (a), notte (b), terra (c), fiamma (d), sole (e), gelo (f).",
@@ -225,7 +225,7 @@ export default {
             "30 monete d'oro ciascuno",
             "5 reputazione",
             "-2 prosperità",
-            "Aggiungi l'Evento Città 79 al mazzo"
+            "Aggiungi l'Evento di Città 79 al mazzo"
         ],
         "faq": [
             "Gli ostacoli parete non possono essere distrutti."
@@ -236,7 +236,7 @@ export default {
         "rewards": [
             "10 monete d'oro ciascuno",
             "+4 reputazione",
-            "Aggiungi l'Evento Città 78 al mazzo"
+            "Aggiungi l'Evento di Città 78 al mazzo"
         ]
     },
     "gh-37": {
@@ -346,8 +346,8 @@ export default {
         "rewards": [
             "+5 reputazione",
             "+5 prosperità",
-            "Aggiungi l'Evento Città 81 al mazzo",
-            "Aggiungi l'Evento Strada 69 al mazzo"
+            "Aggiungi l'Evento di Città 81 al mazzo",
+            "Aggiungi l'Evento di Strada 69 al mazzo"
         ]
     },
     "gh-52": {
@@ -362,41 +362,41 @@ export default {
         "name": "Il Seminterrato della Cripta",
         "requirements": "Missione Personale “Seeker of Xorn”",
         "rewards": [
-            "Il Cercatore di Xorn riceve: “Bastone di Xorn” (Oggetto 114). Il Cercatore non può vendere questo oggetto."
+            "Il Seeker of Xorn riceve: “Bastone di Xorn” (Oggetto 114). Il Seeker non può vendere questo oggetto."
         ]
     },
     "gh-54": {
         "name": "Palazzo di Ghiaccio",
         "requirements": "Missione Personale “Seeker of Xorn”, oggetto “Bastone di Xorn” equipaggiato",
         "rewards": [
-            "Ritira subito il Cercatore di Xorn",
-            "Aggiungi gli Eventi Città e Strada 59 ai mazzi, al posto dei normali eventi di ritiro della classe",
+            "Ritira subito il Seeker of Xorn",
+            "Aggiungi gli Eventi di Città e Strada 59 ai mazzi, al posto dei normali eventi di ritiro della classe",
             "Apri la busta {PH}"
         ],
         "conclusion_faq": [
             "Se un giocatore comincia un nuovo personaggio Piovra-Cthulhu direttamente dopo aver completato con successo questo scenario, quel personaggio riceve il Bastone di Xorn. Altrimenti il Bastone di Xorn viene aggiunto al mazzo del negozio.",
-            "Il Cercatore di Xorn non torna in città per vendere oggetti, effettuare potenziamenti, ecc. Come indicato dal Libro degli Scenari, la carta evento di ritiro del personaggio non va nel mazzo."
+            "Il Seeker of Xorn non torna in città per vendere oggetti, effettuare potenziamenti, ecc. Come indicato dal Libro degli Scenari, la carta evento di ritiro del personaggio non va nel mazzo."
         ]
     },
     "gh-SoX1": {
         "name": "Nobles’ Crypt",
         "rewards": [
             "+1 reputazione",
-            "Aggiungi l'Evento Città SoX2 al mazzo"
+            "Aggiungi l'Evento di Città SoX2 al mazzo"
         ]
     },
     "gh-SoX2": {
         "name": "Flooded Crypt",
         "rewards": [
-            "Aggiungi l'Evento Città SoX3 al mazzo",
-            "Scegli solo uno tra i seguenti: “Frigid Blade” (Oggetto 077), “Wand of Frost” (Oggetto 083) o “Wave Crest” (Oggetto 111)"
+            "Aggiungi l'Evento di Città SoX3 al mazzo",
+            "Scegli solo uno tra i seguenti: “Lama del Ghiaccio” (Oggetto 077), “Bacchetta del Gelo” (Oggetto 083) o “Monile dell'Onda” (Oggetto 111)"
         ]
     },
     "gh-SoX3": {
         "name": "Crypt of the Ancients",
         "rewards": [
             "50 monete d'oro collettive",
-            "Aggiungi l'Evento Città SoX3 al mazzo"
+            "Aggiungi l'Evento di Città SoX3 al mazzo"
         ]
     },
     "gh-55": {
@@ -479,7 +479,7 @@ export default {
     "gh-65": {
         "name": "Miniera Sulfurea",
         "rewards": [
-            "Progetto “Ancient Drill” (Oggetto 112)"
+            "Modello di “Trivella Antica” (Oggetto 112)"
         ]
     },
     "gh-66": {
@@ -494,7 +494,7 @@ export default {
     "gh-68": {
         "name": "Brughiera Tossica",
         "rewards": [
-            "2 “Pozioni di Guarigione Maggiore” (Oggetto 027)"
+            "2 “Pozione di Guarigione Maggiore” (Oggetto 027)"
         ]
     },
     "gh-69": {
@@ -518,7 +518,7 @@ export default {
     "gh-71": {
         "name": "Alture Ventose",
         "rewards": [
-            "2 “Pozioni del Potere Maggiore” (Oggetto 041)"
+            "2 “Pozione del Potere Maggiore” (Oggetto 041)"
         ],
         "faq": [
             "Movimento obbligato: se il vento obbliga un personaggio a spostarsi verso destra o verso sinistra e c'è un ostacolo o una parete in uno dei possibili esagoni, il giocatore può scegliere di rimanere bloccato (non si muove) o di spostarsi verso l'esagono libero.",
@@ -606,7 +606,7 @@ export default {
             "10 punti esperienza ciascuno"
         ],
         "faq": [
-            "Errore di stampa: nelle regole speciali del paragrafo 1, “il Traditore” dovrebbe essere “l'Incolore”. Per entrambi gli speciali del boss, consumare gli elementi influenza solo l'evocazione. Le altre parti degli speciali avvengono comunque.",
+            "Errore di stampa: nelle regole speciali della sezione 1, “il Traditore” dovrebbe essere “l'Incolore”. Per entrambi gli speciali del boss, consumare gli elementi influenza solo l'evocazione. Le altre parti degli speciali avvengono comunque.",
             "Il Cristallo dello Zenit e la Sfera di Mezzanotte non sono oggetti reali del gioco e non hanno alcun uso al di fuori di questo scenario. Usate dei segnalini numerati per tenere traccia di chi li possiede. Alla fine dello scenario, vinto o perso, questi due tesori “obiettivo” vengono ripristinati in modo che possano essere saccheggiati di nuovo."
         ]
     },
@@ -631,13 +631,13 @@ export default {
             "40 monete d'oro collettive"
         ],
         "faq": [
-            "Dopo aver letto il paragrafo 2, il primo set di regole speciali termina e viene sostituito dal secondo. L'altare non ha PF e non può essere distrutto."
+            "Dopo aver letto la sezione 2, il primo set di regole speciali termina e viene sostituito dal secondo. L'altare non ha PF e non può essere distrutto."
         ]
     },
     "gh-84": {
         "name": "Caverna Cristallina",
         "rewards": [
-            "“Resonant Crystal” (Oggetto 133)",
+            "“Cristallo Risonante” (Oggetto 133)",
             "+1 prosperità"
         ],
         "faq": [
@@ -647,7 +647,7 @@ export default {
     "gh-85": {
         "name": "Tempio del Sole",
         "rewards": [
-            "“Orb of Dawn” (Oggetto 121)"
+            "“Globo dell'Alba” (Oggetto 121)"
         ],
         "faq": [
             "Errore sul libro: per 4 giocatori, non collocate il Demone della Notte e i Demoni del Sole nella stanza finale che sono collocati come nemici normali solo per 4 giocatori (colorati di nero per 2 e 3 giocatori, in bianco per 4 giocatori)."
@@ -669,10 +669,10 @@ export default {
     "gh-88": {
         "name": "Piano dell'Acqua",
         "rewards": [
-            "“Staff of Summoning” (Oggetto 120)"
+            "“Bastone dell'Evocazione” (Oggetto 120)"
         ],
         "faq": [
-            "Se tutti gli Osservatori vengono uccisi, continuate a pescare le carte abilità dell'Osservatore per determinare la direzione dell'effetto speciale dello scenario."
+            "Se tutti gli Osservatori vengono uccisi, continuate a pescare le carte capacità dell'Osservatore per determinare la direzione dell'effetto speciale dello scenario."
         ]
     },
     "gh-89": {
@@ -715,7 +715,7 @@ export default {
     "gh-95": {
         "name": "Resa dei Conti",
         "rewards": [
-            "“Skull of Hatred” (Oggetto 119)"
+            "“Teschio dell'Odio” (Oggetto 119)"
         ]
     },
     "gh-202": {
@@ -831,14 +831,14 @@ export default {
         "requirements": "Fine dell'Oscurità (Globale) COMPLETATO",
         "rewards": [
             "10 punti esperienza ciascuno",
-            "Aggiungi gli Eventi Città e Strada 82 ai rispettivi mazzi"
+            "Aggiungi gli Eventi di Città e Strada 82 ai rispettivi mazzi"
         ]
     },
     "fc-97": {
         "name": "Lore Untold",
         "rewards": [
             "10 monete d'oro ciascuno",
-            "Aggiungi gli Eventi Città 88, 89 e 90 al mazzo"
+            "Aggiungi gli Eventi di Città 88, 89 e 90 al mazzo"
         ]
     },
     "fc-98": {
@@ -848,7 +848,7 @@ export default {
                 "10 monete d'oro ciascuno",
                 "+1 reputazione",
                 "+1 prosperità",
-                "Aggiungi l'Evento Città 86 al mazzo"
+                "Aggiungi l'Evento di Città 86 al mazzo"
             ],
             [
                 "5 monete d'oro ciascuno",
@@ -877,7 +877,7 @@ export default {
     "fc-100": {
         "name": "Shifting Gears",
         "rewards": [
-            "Scegli di ottenere uno dei seguenti set: “Telescopic Lens” (Oggetto 059) e “Ancient Drill” (Oggetto 112), OPPURE “Curious Gear” (Oggetto 125) e “Ragno Meccanico” (Oggetto 126)"
+            "Scegli di ottenere uno dei seguenti set: “Lenti Telescopiche” (Oggetto 059) e “Trivella Antica” (Oggetto 112), OPPURE “Ingranaggio Curioso” (Oggetto 125) e “Ragno Meccanico” (Oggetto 126)"
         ]
     },
     "fc-101": {
@@ -899,13 +899,13 @@ export default {
         "name": "Where It Is Needed",
         "rewards": [
             "+2 prosperità",
-            "Aggiungi l'Evento Città 87 al mazzo"
+            "Aggiungi l'Evento di Città 87 al mazzo"
         ]
     },
     "fc-104": {
         "name": "A Gaping Wound",
         "rewards": [
-            "“Major Mana Potion” (Oggetto 048)"
+            "“Pozione di Mana Maggiore” (Oggetto 048)"
         ]
     },
     "fc-105": {
@@ -951,7 +951,7 @@ export default {
         "name": "Epilogue of a War",
         "rewards": [
             "10 punti esperienza ciascuno",
-            "“Protective Charm” (Oggetto 052)"
+            "“Amuleto Protettivo” (Oggetto 052)"
         ]
     },
     "fc-110": {
@@ -998,7 +998,7 @@ export default {
     "fc-114": {
         "name": "Ink Not Yet Dry",
         "rewards": [
-            "Beneficio di Gruppo: i costi aggiuntivi per potenziare una carta abilità in base al livello della carta sono ora ridotti di 5 monete d'oro per livello."
+            "Beneficio di Gruppo: i costi aggiuntivi per potenziare una carta capacità in base al livello della carta sono ora ridotti di 5 monete d'oro per livello."
         ]
     },
     "fc-115": {
@@ -1006,8 +1006,8 @@ export default {
         "rewards": [
             "+3 reputazione",
             "+1 prosperità",
-            "Ritira il Divinatore Aesther {DR}",
-            "Aggiungi gli Eventi Città e Strada 83 ai rispettivi mazzi"
+            "Ritira l'Aesther Diviner {DR}",
+            "Aggiungi gli Eventi di Città e Strada 83 ai rispettivi mazzi"
         ]
     },
     "fc-117": {
@@ -1115,7 +1115,7 @@ export default {
         "name": "Risultati Misti",
         "rewards": [
             "15 punti esperienza ciascuno",
-            "“Tower Shield” (Oggetto 29)"
+            "“Scudo Torre” (Oggetto 29)"
         ]
     },
     "jotl-17": {
@@ -1152,7 +1152,7 @@ export default {
     "jotl-22": {
         "name": "Messaggio Poco Amichevole",
         "rewards": [
-            "“Steel Ring” (Oggetto 33)"
+            "“Anello d'Acciaio” (Oggetto 33)"
         ]
     },
     "jotl-23": {
@@ -1393,7 +1393,7 @@ export default {
         "name": "War of the Spire A",
         "rewards": [
             "Ottieni 3 morale",
-            "Rimuovi tutti gli eventi {ALGOX} da tutti i mazzi eventi Avamposto",
+            "Rimuovi tutti gli eventi {ALGOX} da tutti i mazzi eventi di avamposto",
             "Aggiungi l'evento WO-68 al mazzo Avamposto Invernale",
             "Aggiungi 46.3 al calendario tra cinque settimane"
         ]
@@ -1403,7 +1403,7 @@ export default {
         "rewards": [
             "Ottieni 3 morale",
             "Ottieni l'adesivo “Destroyer of the Snowspeakers”",
-            "Rimuovi tutti gli eventi {ALGOX} da tutti i mazzi eventi Avamposto",
+            "Rimuovi tutti gli eventi {ALGOX} da tutti i mazzi eventi di avamposto",
             "Aggiungi l'evento WO-69 al mazzo Avamposto Invernale",
             "Aggiungi 34.2 al calendario tra cinque settimane"
         ]
@@ -1582,9 +1582,9 @@ export default {
             "Ottieni 2 morale",
             "Ottieni 2 prosperità",
             "Sblocca la scatola della classe ancora bloccata: {FF} o {SD}",
-            "Rimuovi tutti gli eventi {ALGOX} da tutti i mazzi eventi Avamposto",
+            "Rimuovi tutti gli eventi {ALGOX} da tutti i mazzi eventi di avamposto",
             "Aggiungi gli eventi WO-66 e WO-67 al mazzo Avamposto Invernale",
-            "Aggiungi una carta +50 al mazzo della Guardia"
+            "Aggiungi una carta +50 al mazzo della Guardia Cittadina"
         ]
     },
     "fh-56": {
@@ -1594,7 +1594,7 @@ export default {
             "Ottieni 1 ispirazione",
             "Sblocca la scatola della classe {FF}",
             "Aggiungi l'evento SO-51 al mazzo Avamposto Estivo",
-            "Aggiungi una carta +50 al mazzo della Guardia"
+            "Aggiungi una carta +50 al mazzo della Guardia Cittadina"
         ]
     },
     "fh-57": {
@@ -1604,7 +1604,7 @@ export default {
             "Ottieni 1 ispirazione",
             "Sblocca la scatola della classe {SD}",
             "Aggiungi l'evento WO-68 al mazzo Avamposto Invernale",
-            "Aggiungi una carta +50 al mazzo della Guardia"
+            "Aggiungi una carta +50 al mazzo della Guardia Cittadina"
         ]
     },
     "fh-58": {
@@ -1616,9 +1616,9 @@ export default {
             "Ottieni 3 {METAL} collettivi",
             "Ottieni 3 {HIDE} collettivi",
             "Sblocca la scatola della classe {HV}",
-            "Rimuovi tutti gli eventi {UNFETTERED} da tutti i mazzi eventi Avamposto",
+            "Rimuovi tutti gli eventi {UNFETTERED} da tutti i mazzi eventi di avamposto",
             "Aggiungi gli eventi WO-64 e WO-65 al mazzo Avamposto Invernale",
-            "Aggiungi una carta +50 al mazzo della Guardia"
+            "Aggiungi una carta +50 al mazzo della Guardia Cittadina"
         ]
     },
     "fh-59": {
@@ -1628,9 +1628,9 @@ export default {
             "Ottieni 2 prosperità",
             "Ottieni “Key Card” (Oggetto 246)",
             "Sblocca la scatola della classe {HV}",
-            "Rimuovi tutti gli eventi {UNFETTERED} da tutti i mazzi eventi Avamposto",
+            "Rimuovi tutti gli eventi {UNFETTERED} da tutti i mazzi eventi di avamposto",
             "Aggiungi l'evento SO-49 al mazzo Avamposto Estivo e l'evento WO-63 al mazzo Avamposto Invernale",
-            "Aggiungi una carta +50 al mazzo della Guardia"
+            "Aggiungi una carta +50 al mazzo della Guardia Cittadina"
         ]
     },
     "fh-60": {
@@ -1641,16 +1641,16 @@ export default {
             "Ottieni 30 punti esperienza ciascuno",
             "Ottieni “Armatura dell'Empatia” (Oggetto 224)",
             "Sblocca la scatola della classe ancora bloccata: {CR} o {DT}",
-            "Rimuovi tutti gli eventi {LURKERS} da tutti i mazzi eventi Avamposto",
+            "Rimuovi tutti gli eventi {LURKERS} da tutti i mazzi eventi di avamposto",
             "Aggiungi l'evento SO-48 al mazzo Avamposto Estivo e l'evento B-17 al mazzo Barca",
-            "Aggiungi una carta +50 al mazzo della Guardia"
+            "Aggiungi una carta +50 al mazzo della Guardia Cittadina"
         ]
     },
     "fh-61": {
         "name": "Life and Death",
         "rewards": [
             "Sblocca la scatola della classe {SH}",
-            "Aggiungi il paragrafo 140.3 al calendario tra una settimana"
+            "Aggiungi la sezione 140.3 al calendario tra una settimana"
         ]
     },
     "fh-62": {
@@ -2431,7 +2431,7 @@ export default {
     "cs-4": {
         "name": "Infected Warriors",
         "rewards": [
-            "Ogni personaggio ottiene un oggetto “Globo” casuale (Oggetto 1-10)"
+            "Ogni personaggio ottiene un oggetto “Orb” casuale (Oggetto 1-10)"
         ]
     },
     "cs-5": {
@@ -2442,7 +2442,7 @@ export default {
         "rewards": [
             "+2 reputazione",
             "+1 prosperità",
-            "Ottieni “Stun Powder” (Oggetto gh-21)"
+            "Ottieni “Polvere Stordente” (Oggetto gh-21)"
         ]
     },
     "cs-7": {
@@ -2468,7 +2468,7 @@ export default {
         "name": "Den of Monstrosity",
         "rewards": [
             "Ottieni “Pozione di Guarigione Minore” (Oggetto gh-12)",
-            "Ottieni “Minor Mana Potion” (Oggetto gh-20)"
+            "Ottieni “Pozione di Mana Minore” (Oggetto gh-20)"
         ]
     },
     "cs-11": {
@@ -2481,7 +2481,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 prosperità",
-            "Ogni personaggio ottiene uno dei seguenti: “Pozione del Vigore Maggiore” (Oggetto gh-34), “Major Power Potion” (Oggetto gh-41), “Major Mana Potion” (Oggetto gh-48)\nSe nessuno di questi è disponibile nel negozio, ottieni invece 20 monete d'oro"
+            "Ogni personaggio ottiene uno dei seguenti: “Pozione del Vigore Maggiore” (Oggetto gh-34), “Pozione del Potere Maggiore” (Oggetto gh-41), “Pozione di Mana Maggiore” (Oggetto gh-48)\nSe nessuno di questi è disponibile nel negozio, ottieni invece 20 monete d'oro"
         ]
     },
     "cs-14": {
@@ -2494,7 +2494,7 @@ export default {
         "name": "Ambush of Beasts",
         "rewards": [
             "15 monete d'oro ciascuno",
-            "Ogni personaggio ottiene un oggetto “Globo” casuale (Oggetto 1-10)"
+            "Ogni personaggio ottiene un oggetto “Orb” casuale (Oggetto 1-10)"
         ]
     },
     "cs-16": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "Ottieni “Major Mana Potion” (Oggetto gh-48)"
+            "Ottieni “Pozione di Mana Maggiore” (Oggetto gh-48)"
         ]
     },
     "cs-20": {
@@ -2527,13 +2527,13 @@ export default {
         "rewards": [
             "+1 reputazione",
             "+1 prosperità",
-            "Ogni personaggio ottiene un oggetto “Globo” casuale (Oggetto 1-10)"
+            "Ogni personaggio ottiene un oggetto “Orb” casuale (Oggetto 1-10)"
         ]
     },
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "Ottieni “Magma Waders” (Oggetto gh-99)"
+            "Ottieni “Stivali di Magma” (Oggetto gh-99)"
         ]
     },
     "cs-22": {
@@ -2551,14 +2551,14 @@ export default {
     "cs-24": {
         "name": "Eerie Grotto",
         "rewards": [
-            "Ogni personaggio ottiene un oggetto “Globo” casuale (Oggetto 1-10)"
+            "Ogni personaggio ottiene un oggetto “Orb” casuale (Oggetto 1-10)"
         ]
     },
     "cs-25": {
         "name": "Brightspark, Behold!",
         "rewards": [
             "+1 reputazione",
-            "Aggiungi l'Evento Strada 57 al mazzo"
+            "Aggiungi l'Evento di Strada 57 al mazzo"
         ]
     },
     "cs-26": {
@@ -2641,7 +2641,7 @@ export default {
         "name": "Burning Stones",
         "requirements": "Missione Personale “Natural Selection”",
         "rewards": [
-            "Ottieni un oggetto “Pietra” casuale (Oggetto 94-100)"
+            "Ottieni un oggetto “Stone” casuale (Oggetto 94-100)"
         ]
     },
     "cs-38": {
@@ -2656,7 +2656,7 @@ export default {
         "requirements": "Missione Personale “An Adder Divides”",
         "rewards": [
             "10 punti esperienza ciascuno",
-            "Rimuovi le prime 5 carte dal mazzo Eventi Città e mescola tra di esse l'Evento Città 57. Metti da parte le carte Evento Città rimanenti finché l'Evento Città 57 non è risolto. Qualsiasi carta aggiuntiva che dovrebbe essere aggiunta al mazzo Eventi Città in questo periodo viene aggiunta dopo la risoluzione dell'Evento Città 57 e dopo aver riunito le carte rimanenti con il mazzo originale.",
+            "Rimuovi le prime 5 carte dal mazzo Eventi di Città e mescola tra di esse l'Evento di Città 57. Metti da parte le carte Evento di Città rimanenti finché l'Evento di Città 57 non è risolto. Qualsiasi carta aggiuntiva che dovrebbe essere aggiunta al mazzo Eventi di Città in questo periodo viene aggiunta dopo la risoluzione dell'Evento di Città 57 e dopo aver riunito le carte rimanenti con il mazzo originale.",
             "Missione “An Adder Divides” non ancora completata"
         ]
     },
@@ -2683,14 +2683,14 @@ export default {
         "name": "Mansion Maze",
         "rewards": [
             "+1 prosperità",
-            "Ogni personaggio ottiene un oggetto “Globo” casuale (Oggetto 1-10)"
+            "Ogni personaggio ottiene un oggetto “Orb” casuale (Oggetto 1-10)"
         ]
     },
     "cs-44": {
         "name": "Haunted Manor",
         "rewards": [
             "20 monete d'oro ciascuno",
-            "Ogni personaggio ottiene un oggetto “Globo” casuale (Oggetto 1-10)"
+            "Ogni personaggio ottiene un oggetto “Orb” casuale (Oggetto 1-10)"
         ]
     },
     "cs-45": {
@@ -2864,15 +2864,15 @@ export default {
             [
                 "Missione “Ingenious Inventor” completata",
                 "Apri la busta {QA}",
-                "Progetto “Steam Piston Hammer” (Oggetto QA02)",
-                "Progetto “Spider Climb Gloves” (Oggetto QA03)"
+                "Modello di “Steam Piston Hammer” (Oggetto QA02)",
+                "Modello di “Spider Climb Gloves” (Oggetto QA03)"
             ],
             [
                 "Missione “Ingenious Inventor” completata",
                 "Apri la busta {QA}",
                 "Ottieni uno dei seguenti: “Steam Piston Hammer” (Oggetto QA02) OPPURE “Spider Climb Gloves” (Oggetto QA03)",
                 "Aggiungi una copia dell'oggetto scelto alla riserva disponibile della città",
-                "Aggiungi l'altro oggetto al mazzo dei progetti di oggetti casuali"
+                "Aggiungi l'altro oggetto al mazzo dei modelli di oggetto casuale"
             ],
             [
                 "Missione “Ingenious Inventor” completata",
@@ -2890,7 +2890,7 @@ export default {
             "Missione “Scrap Diver” completata",
             "Apri la busta {QA}",
             "15xA monete d'oro ciascuno (dove A è il numero di Rottami Antichi recuperati)",
-            "Aggiungi l'Evento Città QA-03 al mazzo"
+            "Aggiungi l'Evento di Città QA-03 al mazzo"
         ]
     },
     "cs-QA3": {
@@ -2922,8 +2922,8 @@ export default {
         "rewards": [
             "Missione “Apex Predator” completata",
             "Apri la busta {RM}",
-            "Progetto “Terrorscale Saber” (Oggetto RM03)",
-            "Progetto “Terrorscale Crossblades” (Oggetto RM04)"
+            "Modello di “Terrorscale Saber” (Oggetto RM03)",
+            "Modello di “Terrorscale Crossblades” (Oggetto RM04)"
         ]
     },
     "cs-RM5": {
@@ -2931,18 +2931,18 @@ export default {
         "rewards": [
             [
                 "40 monete d'oro collettive",
-                "Progetto “Studded Leather” (Oggetto gh-30) OPPURE progetto “Boots of Dashing” (Oggetto gh-36)"
+                "Modello di “Cuoio Borchiato” (Oggetto gh-30) OPPURE modello di “Stivali dello Scatto” (Oggetto gh-36)"
             ],
             [
                 "2 ✓ ciascuno",
-                "Progetto “Lucky Eye” (Oggetto gh-63)"
+                "Modello di “Occhio Fortunato” (Oggetto gh-63)"
             ]
         ]
     },
     "cs-RM6": {
         "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "Progetto “Rite of Ruin” (Oggetto RM05)",
+            "Modello di “Rite of Ruin” (Oggetto RM05)",
             "Se alla fine dell'ottavo round erano vivi almeno tre Vermling: 5 monete d'oro",
             "Se alla fine dell'ottavo round erano vivi almeno cinque Vermling: ✓"
         ]
@@ -2952,7 +2952,7 @@ export default {
         "requirements": "Nessun Ruinmaw nel gruppo",
         "rewards": [
             "10 punti esperienza ciascuno",
-            "Progetto “Savage Cuirass” (Oggetto RM06)"
+            "Modello di “Savage Cuirass” (Oggetto RM06)"
         ]
     },
     "mp-AN1": {
@@ -3029,7 +3029,7 @@ export default {
             "5 monete d'oro ciascuno",
             "10 punti esperienza ciascuno",
             "+1 reputazione Demoni",
-            "Aggiungi l'evento città C-51 al mazzo"
+            "Aggiungi l'evento di città C-51 al mazzo"
         ]
     },
     "gh2-7": {
@@ -3048,7 +3048,7 @@ export default {
         "rewards": [
             "+1 prosperità",
             "+1 reputazione Militari",
-            "Aggiungi l'evento strada R-30 al mazzo"
+            "Aggiungi l'evento di strada R-30 al mazzo"
         ]
     },
     "gh2-10": {
@@ -3079,8 +3079,8 @@ export default {
                 "20 punti esperienza ciascuno",
                 "2 ✔ ciascuno",
                 "-1 reputazione Militari",
-                "Aggiungi l'evento città C-39 al mazzo",
-                "Aggiungi l'evento strada R-32 al mazzo"
+                "Aggiungi l'evento di città C-39 al mazzo",
+                "Aggiungi l'evento di strada R-32 al mazzo"
             ],
             []
         ]
@@ -3169,11 +3169,11 @@ export default {
                 "-10 reputazione Demoni",
                 "+2 reputazione Gilda dei Mercanti",
                 "-10 reputazione Militari",
-                "Aggiungi l'evento città C-36 al mazzo",
-                "Aggiungi l'evento città C-54 al mazzo",
-                "Aggiungi l'evento città C-55 al mazzo",
-                "Aggiungi l'evento strada R-37 al mazzo",
-                "Aggiungi l'evento strada R-38 al mazzo",
+                "Aggiungi l'evento di città C-36 al mazzo",
+                "Aggiungi l'evento di città C-54 al mazzo",
+                "Aggiungi l'evento di città C-55 al mazzo",
+                "Aggiungi l'evento di strada R-37 al mazzo",
+                "Aggiungi l'evento di strada R-38 al mazzo",
                 "Apri la busta “Gilda dei Mercanti”"
             ],
             [
@@ -3181,10 +3181,10 @@ export default {
                 "-10 reputazione Demoni",
                 "-10 reputazione Gilda dei Mercanti",
                 "+2 reputazione Militari",
-                "Aggiungi l'evento città C-36 al mazzo",
-                "Aggiungi l'evento città C-53 al mazzo",
-                "Aggiungi l'evento città C-56 al mazzo",
-                "Aggiungi l'evento strada R-38 al mazzo",
+                "Aggiungi l'evento di città C-36 al mazzo",
+                "Aggiungi l'evento di città C-53 al mazzo",
+                "Aggiungi l'evento di città C-56 al mazzo",
+                "Aggiungi l'evento di strada R-38 al mazzo",
                 "Apri la busta “Militari”"
             ]
         ]
@@ -3235,16 +3235,16 @@ export default {
                 "20 punti esperienza ciascuno",
                 "2 ✔ ciascuno",
                 "-1 reputazione Militari",
-                "Aggiungi l'evento città C-38 al mazzo",
-                "Aggiungi l'evento strada R-32 al mazzo"
+                "Aggiungi l'evento di città C-38 al mazzo",
+                "Aggiungi l'evento di strada R-32 al mazzo"
             ],
             [
                 "45 monete d'oro ciascuno",
                 "20 punti esperienza ciascuno",
                 "2 ✔ ciascuno",
                 "-1 reputazione Militari",
-                "Aggiungi l'evento città C-38 al mazzo",
-                "Aggiungi l'evento strada R-32 al mazzo"
+                "Aggiungi l'evento di città C-38 al mazzo",
+                "Aggiungi l'evento di strada R-32 al mazzo"
             ],
             [
                 "15 monete d'oro ciascuno"
@@ -3405,8 +3405,8 @@ export default {
             "10 punti esperienza ciascuno",
             "1 ✔ ciascuno",
             "Ottieni “Scepter of Xorn” (Oggetto 147)",
-            "Aggiungi l'evento strada R-39 al mazzo",
-            "Aggiungi l'evento città C-66 al mazzo"
+            "Aggiungi l'evento di strada R-39 al mazzo",
+            "Aggiungi l'evento di città C-66 al mazzo"
         ]
     },
     "gh2-59": {
@@ -3466,7 +3466,7 @@ export default {
         "rewards": [
             "15 monete d'oro ciascuno",
             "10 punti esperienza ciascuno",
-            "Ottieni “Helix Ring” (Oggetto 136)"
+            "Ottieni “Anello a Elica” (Oggetto 136)"
         ]
     },
     "gh2-68": {
@@ -3512,7 +3512,7 @@ export default {
         "name": "Alture Ventose",
         "rewards": [
             "+1 prosperità",
-            "Ottieni “Major Power Potion” (Oggetto 53)"
+            "Ottieni “Pozione del Potere Maggiore” (Oggetto 53)"
         ]
     },
     "gh2-75": {
@@ -3563,7 +3563,7 @@ export default {
         "name": "Nascondiglio della Congrega",
         "rewards": [
             "+1 prosperità",
-            "Aggiungi l'evento città C-72 al mazzo"
+            "Aggiungi l'evento di città C-72 al mazzo"
         ]
     },
     "gh2-83": {
@@ -3596,19 +3596,19 @@ export default {
     "gh2-87": {
         "name": "Miniera Sulfurea",
         "rewards": [
-            "Ottieni “Ancient Drill” (Oggetto 109)"
+            "Ottieni “Trivella Antica” (Oggetto 109)"
         ]
     },
     "gh2-88": {
         "name": "Biblioteca Arcana",
         "rewards": [
-            "Aggiungi l'evento città C-37 al mazzo"
+            "Aggiungi l'evento di città C-37 al mazzo"
         ]
     },
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "Ottieni 2× “Major Healing Potion” (Oggetto 37)"
+            "Ottieni 2× “Pozione di Guarigione Maggiore” (Oggetto 37)"
         ]
     },
     "gh2-90": {
@@ -3660,21 +3660,21 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "10 punti esperienza ciascuno",
-            "Ottieni “Skull of Hatred” (Oggetto 111)"
+            "Ottieni “Teschio dell'Odio” (Oggetto 111)"
         ]
     },
     "gh2-99": {
         "name": "Sintering Forge",
         "rewards": [
             "Ottieni “Dawnblade” (Oggetto 117)",
-            "Aggiungi l'evento strada R-33 al mazzo"
+            "Aggiungi l'evento di strada R-33 al mazzo"
         ]
     },
     "gh2-100": {
         "name": "Silence Falls",
         "rewards": [
             "+1 prosperità",
-            "Aggiungi l'evento città C-60 al mazzo"
+            "Aggiungi l'evento di città C-60 al mazzo"
         ]
     },
     "gh2-101": {
@@ -3684,10 +3684,10 @@ export default {
             "+2 reputazione Demoni",
             "-10 reputazione Gilda dei Mercanti",
             "-10 reputazione Militari",
-            "Aggiungi l'evento città C-36 al mazzo",
-            "Aggiungi l'evento città C-55 al mazzo",
-            "Aggiungi l'evento città C-56 al mazzo",
-            "Aggiungi l'evento strada R-36 al mazzo",
+            "Aggiungi l'evento di città C-36 al mazzo",
+            "Aggiungi l'evento di città C-55 al mazzo",
+            "Aggiungi l'evento di città C-56 al mazzo",
+            "Aggiungi l'evento di strada R-36 al mazzo",
             "Apri la busta “Demoni”"
         ]
     },

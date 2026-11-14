@@ -93,7 +93,7 @@ export default {
         "name": "Il Draco è Stato Ucciso"
     },
     "gh-GTDA": {
-        "name": "Il Draco è Stato Salvato"
+        "name": "Il Draco è Stato Aiutato"
     },
     "gh-GCRD": {
         "name": "Governo Cittadino: Demoniaco"
@@ -426,7 +426,7 @@ export default {
         "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
-        "name": "Il Draco è Stato Salvato"
+        "name": "Il Draco è Stato Aiutato"
     },
     "gh2-G2TDS": {
         "name": "Il Draco è Stato Ucciso"

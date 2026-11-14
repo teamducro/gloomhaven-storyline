@@ -3,10 +3,10 @@ export default {
         "name": "Modello di oggetto casuale"
     },
     "gh-2": {
-        "name": "Ottieni “Tower Shield” (Oggetto 032)"
+        "name": "Ottieni “Scudo Torre” (Oggetto 032)"
     },
     "gh-3": {
-        "name": "Ottieni “Splintmail” (Oggetto 044)"
+        "name": "Ottieni “Corazza di Strisce” (Oggetto 044)"
     },
     "gh-4": {
         "name": "Ottieni 15 monete d'oro"
@@ -15,7 +15,7 @@ export default {
         "name": "Ottieni “Cotta di Maglia” (Oggetto 023)"
     },
     "gh-6": {
-        "name": "Ottieni “Hooked Chain” (Oggetto 039)"
+        "name": "Ottieni “Catena Uncinata” (Oggetto 039)"
     },
     "gh-7": {
         "name": "Scenario Secondario Casuale"
@@ -24,7 +24,7 @@ export default {
         "name": "Ottieni 1 ✔"
     },
     "gh-9": {
-        "name": "Ottieni “Wave Crest” (Oggetto 111)"
+        "name": "Ottieni “Monile dell'Onda” (Oggetto 111)"
     },
     "gh-10": {
         "name": "Ottieni 10 punti esperienza"
@@ -33,7 +33,7 @@ export default {
         "name": "Modello di oggetto casuale"
     },
     "gh-12": {
-        "name": "Ottieni “Magma Waders” (Oggetto 099)"
+        "name": "Ottieni “Stivali di Magma” (Oggetto 099)"
     },
     "gh-13": {
         "name": "Subisci 5 danni e ottieni {POISON} e {WOUND}"
@@ -66,7 +66,7 @@ export default {
         "name": "Modello di oggetto casuale"
     },
     "gh-23": {
-        "name": "Ottieni “Drakescale Armor” (Oggetto 103)"
+        "name": "Ottieni “Armatura di Scaglie di Draco” (Oggetto 103)"
     },
     "gh-24": {
         "name": "Subisci 5 danni"
@@ -78,13 +78,13 @@ export default {
         "name": "Ottieni 20 monete d'oro"
     },
     "gh-27": {
-        "name": "Ottieni “Orb of Twilight” (Oggetto 122)"
+        "name": "Ottieni “Globo del Tramonto” (Oggetto 122)"
     },
     "gh-28": {
         "name": "Ottieni 15 monete d'oro"
     },
     "gh-29": {
-        "name": "Ottieni “Endurance Footwraps” (Oggetto 097)"
+        "name": "Ottieni “Calzari della Tenacia” (Oggetto 097)"
     },
     "gh-30": {
         "name": "Ottieni 1 ✔"
@@ -102,10 +102,10 @@ export default {
         "name": "Ottieni “Amuleto della Vita” (Oggetto 024)"
     },
     "gh-35": {
-        "name": "Ottieni “Drakescale Boots” (Oggetto 098)"
+        "name": "Ottieni “Stivali di Scaglie di Draco” (Oggetto 098)"
     },
     "gh-36": {
-        "name": "Modello di “Rocket Boots” (Oggetto 096)"
+        "name": "Modello di “Stivali a Razzo” (Oggetto 096)"
     },
     "gh-37": {
         "name": "Ottieni 1 ✔"
@@ -120,7 +120,7 @@ export default {
         "name": "Modello di oggetto casuale"
     },
     "gh-41": {
-        "name": "Ottieni “Black Knife” (Oggetto 053)"
+        "name": "Ottieni “Coltello Nero” (Oggetto 053)"
     },
     "gh-42": {
         "name": "Modello di oggetto casuale"
@@ -138,7 +138,7 @@ export default {
         "name": "Subisci 3 danni e ottieni {POISON}"
     },
     "gh-47": {
-        "name": "Ottieni “Steam Armor” (Oggetto 104)"
+        "name": "Ottieni “Armatura a Vapore” (Oggetto 104)"
     },
     "gh-48": {
         "name": "Ottieni 30 monete d'oro"
@@ -147,7 +147,7 @@ export default {
         "name": "Nuovo Scenario: {SCENARIO 17}"
     },
     "gh-50": {
-        "name": "Ottieni “Second Skin” (Oggetto 101)"
+        "name": "Ottieni “Seconda Pelle” (Oggetto 101)"
     },
     "gh-51": {
         "name": "Scenario Secondario Casuale"
@@ -159,31 +159,31 @@ export default {
         "name": "Modello di oggetto casuale"
     },
     "gh-54": {
-        "name": "Ottieni “Doomed Compass” (Oggetto 124)"
+        "name": "Ottieni “Bussola del Destino” (Oggetto 124)"
     },
     "gh-55": {
         "name": "Ottieni 1 ✔"
     },
     "gh-56": {
-        "name": "Ottieni “Star Earring” (Oggetto 069)"
+        "name": "Ottieni “Orecchino della Stella” (Oggetto 069)"
     },
     "gh-57": {
         "name": "Ottieni 15 monete d'oro"
     },
     "gh-58": {
-        "name": "Ottieni “Drakescale Helm” (Oggetto 108)"
+        "name": "Ottieni “Elmo di Scaglie di Draco” (Oggetto 108)"
     },
     "gh-59": {
         "name": "Modello di oggetto casuale"
     },
     "gh-60": {
-        "name": "Ottieni “Skullbane Axe” (Oggetto 113)"
+        "name": "Ottieni “Ascia Anatema dei Teschi” (Oggetto 113)"
     },
     "gh-61": {
-        "name": "Ottieni “Versatile Dagger” (Oggetto 040)"
+        "name": "Ottieni “Pugnale Versatile” (Oggetto 040)"
     },
     "gh-62": {
-        "name": "Ottieni “Helm of the Mountain” (Oggetto 110) e “Martello della Montagna” (Oggetto 115)"
+        "name": "Ottieni “Elmo della Montagna” (Oggetto 110) e “Martello della Montagna” (Oggetto 115)"
     },
     "gh-63": {
         "name": "Modello di oggetto casuale"
@@ -195,16 +195,16 @@ export default {
         "name": "Modello di “Elmo Cornuto” (Oggetto 107)"
     },
     "gh-66": {
-        "name": "Ottieni “Volatile Bomb” (Oggetto 033)"
+        "name": "Ottieni “Bomba Esplosiva” (Oggetto 033)"
     },
     "gh-67": {
         "name": "Ottieni 10 monete d'oro"
     },
     "gh-68": {
-        "name": "Ottieni “Helix Ring” (Oggetto 130)"
+        "name": "Ottieni “Anello a Elica” (Oggetto 130)"
     },
     "gh-69": {
-        "name": "Ottieni “Robes of Summoning” (Oggetto 100)"
+        "name": "Ottieni “Vesti dell'Evocazione” (Oggetto 100)"
     },
     "gh-70": {
         "name": "Scenario Secondario Casuale"
@@ -213,7 +213,7 @@ export default {
         "name": "Scenario Secondario Casuale"
     },
     "gh-72": {
-        "name": "Modello di “Fueled Falchion” (Oggetto 116)"
+        "name": "Modello di “Falchion a Combustione” (Oggetto 116)"
     },
     "gh-73": {
         "name": "Modello di oggetto casuale"
@@ -228,7 +228,7 @@ export default {
         "name": "Subisci 3 danni, ottieni {WOUND} e 10 monete d'oro"
     },
     "fc-77": {
-        "name": "Ottieni “Major Cure Potion” (Oggetto 090)"
+        "name": "Ottieni “Pozione di Cura Maggiore” (Oggetto 090)"
     },
     "fc-78": {
         "name": "“Ancient Bow” (Oggetto 157)"
@@ -246,16 +246,16 @@ export default {
         "name": "“Rejuvenation Greaves” (Oggetto 158)"
     },
     "fc-83": {
-        "name": "Ottieni “Major Power Potion” (Oggetto 041)"
+        "name": "Ottieni “Pozione del Potere Maggiore” (Oggetto 041)"
     },
     "fc-84": {
-        "name": "Ottieni “Mask of Terror” (Oggetto 066)"
+        "name": "Ottieni “Maschera del Terrore” (Oggetto 066)"
     },
     "fc-85": {
         "name": "Subisci 3 danni, ottieni {POISON} e 10 monete d'oro"
     },
     "fc-86": {
-        "name": "Sblocca lo Scenario in Solo del Divinatore {DR} “Forecast of the Inevitable” (vedi pagina 25 del libro principale)"
+        "name": "Sblocca lo Scenario in Solitario del Diviner {DR} “Forecast of the Inevitable” (vedi pagina 25 del libro principale)"
     },
     "fc-87": {
         "name": "Subisci 2 danni, ottieni Maledizione e 15 monete d'oro"
@@ -264,13 +264,13 @@ export default {
         "name": "Ottieni 1 ✓"
     },
     "fc-89": {
-        "name": "Ottieni “Second Chance Ring” (Oggetto 070)"
+        "name": "Ottieni “Anello della Seconda Chance” (Oggetto 070)"
     },
     "fc-90": {
         "name": "10 monete d'oro ciascuno, leggi la sezione 75 a pagina 49"
     },
     "fc-91": {
-        "name": "Ottieni 30 monete d'oro e il Traguardo di Gruppo: “Opportuniste”. Aggiungi l'Evento Città 84 al mazzo"
+        "name": "Ottieni 30 monete d'oro e il Traguardo di Gruppo: “Opportuniste”. Aggiungi l'Evento di Città 84 al mazzo"
     },
     "fc-93": {
         "name": "“Scroll of Haste” (Oggetto 159)"
@@ -279,7 +279,7 @@ export default {
         "name": "Ottieni 1 ✓ e aggiungi l'Evento Varco 20 al mazzo"
     },
     "fc-95": {
-        "name": "Ottieni 25 monete d'oro e il Traguardo di Gruppo: “Una Cassaforte”. Aggiungi l'Evento Città 85 al mazzo"
+        "name": "Ottieni 25 monete d'oro e il Traguardo di Gruppo: “Una Cassaforte”. Aggiungi l'Evento di Città 85 al mazzo"
     },
     "fc-96": {
         "name": "Trovate un vecchio tomo pieno di disegni tecnici e schemi progettuali di un’ampia gamma di macchine esotiche. All’interno della copertina c’è una curiosa nota scritta a mano: {NOTE_115}"
@@ -315,7 +315,7 @@ export default {
         "name": "“Fateful Compass” (Oggetto 27)"
     },
     "jotl-11": {
-        "name": "“Ring of Haste” (Oggetto 30)"
+        "name": "“Anello della Velocità” (Oggetto 30)"
     },
     "jotl-12": {
         "name": "Ottieni 5 monete d'oro"
@@ -324,7 +324,7 @@ export default {
         "name": "Ottieni 5 monete d'oro"
     },
     "jotl-14": {
-        "name": "Ottieni 3 segnalini moneta"
+        "name": "Ottieni 3 segnalini denaro"
     },
     "jotl-15": {
         "name": "Ottieni 1 ✔"
@@ -354,7 +354,7 @@ export default {
         "name": "Ottieni 20 monete d'oro e disinnesca tutte le trappole adiacenti"
     },
     "cs-7": {
-        "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
+        "name": "Un oggetto “Stone” casuale (Oggetto 94-100)"
     },
     "cs-8": {
         "name": "“Dizzying Tincture” (Oggetto 58)"
@@ -363,7 +363,7 @@ export default {
         "name": "“Orb of Fortune” (Oggetto 9)"
     },
     "cs-10": {
-        "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
+        "name": "Un oggetto “Stone” casuale (Oggetto 94-100)"
     },
     "cs-11": {
         "name": "“Dizzying Tincture” (Oggetto 58)"
@@ -387,13 +387,13 @@ export default {
         "name": "“Concussion Mine” (Oggetto 31)"
     },
     "cs-18": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "“Boneclad Shawl” (Oggetto 25)"
     },
     "cs-19": {
         "name": "Ottieni ✓ e genera un Elemento Jolly"
     },
     "cs-20": {
-        "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
+        "name": "Un oggetto “Stone” casuale (Oggetto 94-100)"
     },
     "cs-21": {
         "name": "“Steel Helmet” (Oggetto 22)"
@@ -405,7 +405,7 @@ export default {
         "name": "“Trophy Helm” (Oggetto 12)"
     },
     "cs-24": {
-        "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
+        "name": "Un oggetto “Stone” casuale (Oggetto 94-100)"
     },
     "cs-25": {
         "name": "“Draining Greaves” (Oggetto 15)"
@@ -453,7 +453,7 @@ export default {
         "name": "“Infrared Goggles” (Oggetto 21)"
     },
     "cs-40": {
-        "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
+        "name": "Un oggetto “Stone” casuale (Oggetto 94-100)"
     },
     "cs-41": {
         "name": "“Ashsteel Gauntlets” (Oggetto 61)"
@@ -468,7 +468,7 @@ export default {
         "name": "“Mana Medicine” (Oggetto 60)"
     },
     "cs-45": {
-        "name": "Un oggetto “Pietra” casuale (Oggetto 94-100)"
+        "name": "Un oggetto “Stone” casuale (Oggetto 94-100)"
     },
     "cs-46": {
         "name": "Modello di “Vipertooth Dagger” (Oggetto 54)"
@@ -480,7 +480,7 @@ export default {
         "name": "15 monete d'oro"
     },
     "cs-49": {
-        "name": "“Magma Waders” (Oggetto gh-99)"
+        "name": "“Stivali di Magma” (Oggetto gh-99)"
     },
     "cs-50": {
         "name": "“Bottled Moonlight” (Oggetto 18)"
@@ -498,13 +498,13 @@ export default {
         "name": "Ottieni Scettro del Vespro 200."
     },
     "fh-5": {
-        "name": "Ottieni Artiglio Mozzato 204."
+        "name": "Ottieni Severed Claw 204."
     },
     "fh-6": {
         "name": "Ottieni Scarpe Opulente 199."
     },
     "fh-7": {
-        "name": "Ottieni Unità Dati 227."
+        "name": "Ottieni Data Drive 227."
     },
     "fh-8": {
         "name": "Ottieni tre carte bottino."
@@ -531,7 +531,7 @@ export default {
         "name": "Sblocca uno scenario secondario casuale."
     },
     "fh-16": {
-        "name": "Ottieni Caraffa delle Nebbie 183."
+        "name": "Ottieni Decanter of Mists 183."
     },
     "fh-17": {
         "name": "Ottieni 3 Legname."
@@ -555,13 +555,13 @@ export default {
         "name": "Sblocca uno scenario secondario casuale."
     },
     "fh-24": {
-        "name": "Ottieni Rovina."
+        "name": "Ottieni Anatema."
     },
     "fh-25": {
         "name": "Ottieni 1 Cappellocadavere e 1 Fruttofiamma."
     },
     "fh-26": {
-        "name": "Ottieni Parafulmine 223."
+        "name": "Ottieni Lightning Rod 223."
     },
     "fh-27": {
         "name": "Ottieni due carte bottino e {POISON}."
@@ -576,7 +576,7 @@ export default {
         "name": "Ottieni quattro carte bottino."
     },
     "fh-31": {
-        "name": "Ottieni il modello Bilancia Equilibrata 078."
+        "name": "Ottieni il modello Balanced Scales 078."
     },
     "fh-32": {
         "name": "Ottieni tre carte bottino."
@@ -588,7 +588,7 @@ export default {
         "name": "Ottieni 1 ✔."
     },
     "fh-35": {
-        "name": "Ottieni Asta Estensibile 228."
+        "name": "Ottieni Extendable Pole 228."
     },
     "fh-36": {
         "name": "Ottieni Scatola Nera 222."
@@ -630,16 +630,16 @@ export default {
         "name": "Ottieni tre carte bottino."
     },
     "fh-49": {
-        "name": "Ottieni il modello Stivali d'Osso 071"
+        "name": "Ottieni il modello Bone Boots 071"
     },
     "fh-50": {
-        "name": "Ottieni Armatura di Cuoio Conciato 017."
+        "name": "Ottieni Cured Leather Armor 017."
     },
     "fh-51": {
         "name": "Leggi 78.1."
     },
     "fh-52": {
-        "name": "Ottieni Chiodo del Titano 208."
+        "name": "Ottieni Titan Nail 208."
     },
     "fh-53": {
         "name": "Ottieni Occhio della Tempesta 239."
@@ -681,7 +681,7 @@ export default {
         "name": "Ottieni 15 monete."
     },
     "fh-66": {
-        "name": "Subisci 2 danni, poi ottieni Fragile"
+        "name": "Subisci 2 danni, poi ottieni Fragile."
     },
     "fh-67": {
         "name": "Sblocca uno scenario secondario casuale."
@@ -726,7 +726,7 @@ export default {
         "name": "Ottieni 15 punti esperienza."
     },
     "fh-81": {
-        "name": "Ottieni Braccio Libero 226."
+        "name": "Ottieni Unfettered Arm 226."
     },
     "fh-82": {
         "name": "Ottieni il modello Bastone di Quercia 072."
@@ -735,22 +735,22 @@ export default {
         "name": "Ottieni Tricorno 195."
     },
     "fh-84": {
-        "name": "Ottieni Stiletto di Ghiaccio 221."
+        "name": "Ottieni Ice Shiv 221."
     },
     "fh-85": {
         "name": "Ottieni 10 monete."
     },
     "gh2-1": {
-        "name": "Ottieni “Magma Waders” (Oggetto 142)"
+        "name": "Ottieni “Stivali di Magma” (Oggetto 142)"
     },
     "gh2-2": {
         "name": "Subisci 3 danni e ottieni {POISON}"
     },
     "gh2-3": {
-        "name": "Ottieni “Star Earring” (Oggetto 63)"
+        "name": "Ottieni “Orecchino della Stella” (Oggetto 63)"
     },
     "gh2-4": {
-        "name": "Ottieni “Cloak of Phasing” (Oggetto 98)"
+        "name": "Ottieni “Mantello dell'Intangibilità” (Oggetto 98)"
     },
     "gh2-5": {
         "name": "Ottieni “Pendente dei Patti Oscuri” (Oggetto 128)"
@@ -759,7 +759,7 @@ export default {
         "name": "Scenario Secondario Casuale"
     },
     "gh2-7": {
-        "name": "Ottieni “Thief's Hood” (Oggetto 108)"
+        "name": "Ottieni “Cappuccio da Ladro” (Oggetto 108)"
     },
     "gh2-8": {
         "name": "Subisci 3 danni e ottieni {CURSE}"
@@ -792,10 +792,10 @@ export default {
         "name": "Ottieni 15 monete d'oro"
     },
     "gh2-18": {
-        "name": "Ottieni “Unstable Explosives” (Oggetto 99)"
+        "name": "Ottieni “Esplosivi Instabili” (Oggetto 99)"
     },
     "gh2-19": {
-        "name": "Ottieni “Drakescale Boots” (Oggetto 119)"
+        "name": "Ottieni “Stivali di Scaglie di Draco” (Oggetto 119)"
     },
     "gh2-20": {
         "name": "Ottieni 25 monete d'oro"
@@ -804,7 +804,7 @@ export default {
         "name": "Ottieni 2 ✔"
     },
     "gh2-22": {
-        "name": "Ottieni “Helm of the Mountain” (Oggetto 129) e “Martello della Montagna” (Oggetto 130)"
+        "name": "Ottieni “Elmo della Montagna” (Oggetto 129) e “Martello della Montagna” (Oggetto 130)"
     },
     "gh2-23": {
         "name": "Ottieni 15 monete d'oro"
@@ -831,16 +831,16 @@ export default {
         "name": "Ottieni 20 punti esperienza"
     },
     "gh2-31": {
-        "name": "Ottieni “Wave Crest” (Oggetto 131)"
+        "name": "Ottieni “Monile dell'Onda” (Oggetto 131)"
     },
     "gh2-32": {
         "name": "Scenario Secondario Casuale"
     },
     "gh2-33": {
-        "name": "Ottieni “Cure Potion” (Oggetto 101)"
+        "name": "Ottieni “Pozione di Cura” (Oggetto 101)"
     },
     "gh2-34": {
-        "name": "Ottieni “Drakescale Helm” (Oggetto 121)"
+        "name": "Ottieni “Elmo di Scaglie di Draco” (Oggetto 121)"
     },
     "gh2-35": {
         "name": "Ottieni “Rod of Transference” (Oggetto 115)"
@@ -849,7 +849,7 @@ export default {
         "name": "Modello di oggetto casuale"
     },
     "gh2-37": {
-        "name": "Ottieni “Shoes of Happiness” (Oggetto 97)"
+        "name": "Ottieni “Scarpe della Felicità” (Oggetto 97)"
     },
     "gh2-38": {
         "name": "Ottieni 1 ✔"
@@ -858,7 +858,7 @@ export default {
         "name": "Ottieni 20 punti esperienza"
     },
     "gh2-40": {
-        "name": "Ottieni “Fueled Falchion” (Oggetto 110)"
+        "name": "Ottieni “Falchion a Combustione” (Oggetto 110)"
     },
     "gh2-41": {
         "name": "Ottieni 15 monete d'oro"
@@ -888,7 +888,7 @@ export default {
         "name": "Ottieni 15 punti esperienza"
     },
     "gh2-50": {
-        "name": "Ottieni “Steam Armor” (Oggetto 106)"
+        "name": "Ottieni “Armatura a Vapore” (Oggetto 106)"
     },
     "gh2-51": {
         "name": "Ottieni 15 punti esperienza"
@@ -900,7 +900,7 @@ export default {
         "name": "Ottieni 1 ✔"
     },
     "gh2-54": {
-        "name": "Ottieni 15 monete d'oro e “Steel Ring” (Oggetto 102)"
+        "name": "Ottieni 15 monete d'oro e “Anello d'Acciaio” (Oggetto 102)"
     },
     "gh2-55": {
         "name": "Ottieni 20 punti esperienza"
@@ -939,7 +939,7 @@ export default {
         "name": "Ottieni {POISON} e {STRENGTHEN} e recupera 2 carte perse"
     },
     "gh2-67": {
-        "name": "Ottieni “Doomed Compass” (Oggetto 132)"
+        "name": "Ottieni “Bussola del Destino” (Oggetto 132)"
     },
     "gh2-68": {
         "name": "Modello di oggetto casuale"
@@ -957,13 +957,13 @@ export default {
         "name": "Ottieni 25 monete d'oro"
     },
     "gh2-73": {
-        "name": "Ottieni “Necklace of Teeth” (Oggetto 107)"
+        "name": "Ottieni “Collana di Denti” (Oggetto 107)"
     },
     "gh2-74": {
         "name": "Subisci 3 danni e ottieni {IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "Ottieni “Drakescale Armor” (Oggetto 120)"
+        "name": "Ottieni “Armatura di Scaglie di Draco” (Oggetto 120)"
     },
     "gh2-76": {
         "name": "Modello di oggetto casuale"
