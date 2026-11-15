@@ -231,7 +231,7 @@ export default {
         "name": "Erhalte “Großer Arzneitrank” (Gegenstand 090)"
     },
     "fc-78": {
-        "name": "Erhalte “Antiker Bogen” (Gegenstand 157)"
+        "name": "Gegenstandsplan “Antiker Bogen” (Gegenstand 157)"
     },
     "fc-79": {
         "name": "Erhalte “Falkenfigur” (Gegenstand 035)"

@@ -2889,7 +2889,7 @@ export default {
         "rewards": [
             "Quest “Scrap Diver” abgeschlossen",
             "Öffnet Umschlag {QA}",
-            "je 15xA Gold (wobei A die Anzahl der geborgenen Uralten Schrottteile ist)",
+            "je 15xA Gold (wobei A die Anzahl der geborgenen Ancient Scrap ist)",
             "Fügt Stadt-Ereignis QA-03 dem Deck hinzu"
         ]
     },

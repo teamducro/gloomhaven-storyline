@@ -137,7 +137,7 @@ export default {
     "lost-in-seaweed": "Lost in Seaweed",
     "lurker": "Pirscher",
     "lurker-clawcrusher": "Pirscher-Schmetterschere",
-    "lurker-conductor": "Pirscher-Conductor",
+    "lurker-conductor": "Lurker Conductor",
     "lurker-king": "Lurker King",
     "lurker-mindsnipper": "Pirscher-Geistspalter",
     "lurker-soldier": "Pirscher-Soldat",

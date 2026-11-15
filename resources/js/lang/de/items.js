@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Antiker Bogen",
-        "source": "{SCENARIO 107} (Schatz #78)\nSection 32 “Collapsed Atrium” in book",
+        "source": "{SCENARIO 107} (Schatz #78)\nAbschnitt 42 “Eingestürztes Atrium” im Buch",
         "desc": "Füge bei deinem Fernkampfangriff einem einzelnen Angriff +2 {ATTACK}, {CURSE} und {WOUND} hinzu."
     },
     "gh-158": {

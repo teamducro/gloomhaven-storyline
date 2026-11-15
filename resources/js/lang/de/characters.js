@@ -495,7 +495,7 @@ export default {
             "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} {DISARM} Karte und eine {-1_WHITE} {ANY} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {AGAIN} {+1_WHITE} “{HO_CIRCLE} und eine {AGAIN} {-1_WHITE} {CURSE}” Karte",
             "Ersetze zwei {+1_WHITE} Karten durch eine {+3_WHITE} “{REGENERATE}, Selbst” Karte",
-            "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} “Erzeuge eine Leerengrube auf einem leeren Feld in {RANGE}2” Karte",
+            "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} “Erzeuge ein Void-Pit-Hindernis auf einem leeren Feld in {RANGE}2” Karte",
             "Ignoriere negative Szenarioeffekte und füge eine {+0_WHITE} “{WARD}, Selbst” Karten hinzu"
         ]
     },
