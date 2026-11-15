@@ -140,7 +140,7 @@ export default {
     "lurker-conductor": "Lurker Conductor",
     "lurker-king": "Lurker King",
     "lurker-mindsnipper": "Lurker Mindsnipper",
-    "lurker-soldier": "Lurker Soldier",
+    "lurker-soldier": "Číhavecký voják",
     "lurker-wavethrower": "Lurker Wavethrower",
     "manifestation-of-corruption": "Manifestation Of Corruption",
     "merciless-overseer": "Merciless Overseer",
