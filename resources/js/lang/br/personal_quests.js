@@ -69,7 +69,7 @@ export default {
     "gh-520": {
         "name": "Instrumento da Luz",
         "progress": [
-            "Encontre o Machado Quebra Crânios no Santuário do Necromante.",
+            "Encontre o Machado Ruína dos Crânios no Santuário do Necromante.",
             "Use-o para matar sete Ossos Vivos, Cadáveres Vivos ou Espíritos Vivos."
         ]
     },
@@ -232,7 +232,7 @@ export default {
     "cs-340": {
         "name": "Thy be Blessed",
         "progress": [
-            "Saque uma carta de {BLESS} doze vezes durante um ataque."
+            "Compre uma carta de {BLESS} doze vezes durante um ataque."
         ]
     },
     "cs-341": {
@@ -244,7 +244,7 @@ export default {
     "cs-342": {
         "name": "The Path of Agony",
         "progress": [
-            "Veja um aliado ou inimigo morrer ou ficar exausto durante o seu próprio turno 13 vezes."
+            "Veja um aliado ou inimigo morrer ou ficar exausto durante o próprio turno 13 vezes."
         ]
     },
     "cs-343": {
@@ -434,9 +434,9 @@ export default {
             88
         ],
         "progress": [
-            "Mate dois Guardas Algox.",
-            "Mate dois Esmaga-Garras Espreitadores.",
-            "Mate dois Atiradores de Dardos Robóticos."
+            "Mate dois Algox Guards.",
+            "Mate dois Lurker Clawcrushers.",
+            "Mate dois Robotic Boltshooters."
         ]
     },
     "fh-9": {
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "Doe 70 moedas de ouro ao Templo do Grande Carvalho."
+            "Doe 70 moedas de ouro ao Temple of the Great Oak."
         ]
     },
     "fh-16": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "Obtenha o projeto do “Abyss Axe” (Item 039) e use-o para matar dez Cadáveres Congelados, Espectros de Gelo e/ou Perdições Vivas."
+            "Obtenha o projeto do “Abyss Axe” (Item 039) e use-o para matar dez Frozen Corpses, Ice Wraiths e/ou Living Dooms."
         ]
     },
     "fh-20": {
@@ -561,7 +561,7 @@ export default {
             21
         ],
         "progress": [
-            "Mate quinze Máquinas Arruinadas."
+            "Mate quinze Ruined Machines."
         ]
     },
     "fh-21": {
@@ -683,8 +683,8 @@ export default {
         "name": "Instrumento da Luz",
         "progress": [
             "Desbloqueie imediatamente o {SCENARIO 65}.",
-            "Encontre o “Escudo dos Justos” (Item 148).",
-            "Use o “Escudo dos Justos” (Item 148) para anular dez ataques de 4 ou mais de dano.",
+            "Encontre o “Shield of the Righteous” (Item 148).",
+            "Use o “Shield of the Righteous” (Item 148) para anular dez ataques de 4 ou mais de dano.",
             "Leia a {SECTION} 82.1."
         ]
     },
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "Adicione os Eventos de Cidade 69 e 70 ao baralho de eventos de cidade. Obtenha a “Black Card” (Item 113). Ela não pode ser vendida.",
+            "Adicione os Eventos de Cidade 69 e 70 ao baralho de eventos de cidade. Obtenha a “Carta Negra” (Item 113). Ela não pode ser vendida.",
             "Conclua seis cenários secundários (número do cenário acima de 56).",
             "Leia a {SECTION} 128.2."
         ]
@@ -717,7 +717,7 @@ export default {
     "gh2-16": {
         "name": "O Veneno Perfeito",
         "progress": [
-            "Obtenha a “Poison Dagger” (Item 7).",
+            "Obtenha a “Adaga Envenenada” (Item 7).",
             "Use-a para aplicar {POISON} a um inimigo sem {POISON} 30 vezes.",
             "Leia a {SECTION} 8.3."
         ]
@@ -786,9 +786,9 @@ export default {
     },
     "cq-cq03": {
         "name": "Consequências do Combate",
-        "unlock": "Abra um envelope de classe ou de edifício à sua escolha. Seus futuros personagens ganham {STRENGTHEN} cada vez que sacarem um {NULL_MODIFIER} durante um cenário.",
+        "unlock": "Abra um envelope de classe ou de edifício à sua escolha. Seus futuros personagens ganham {STRENGTHEN} cada vez que comprarem um {NULL_MODIFIER} durante um cenário.",
         "progress": [
-            "Ganhe 50 de contenção: uma vez por cenário, reduza o valor de um ataque antes de sacar um modificador; ganhe uma contenção por ponto reduzido."
+            "Ganhe 50 de contenção: uma vez por cenário, reduza o valor de um ataque antes de comprar um modificador; ganhe uma contenção por ponto reduzido."
         ]
     },
     "cq-cq04": {

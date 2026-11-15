@@ -59,18 +59,18 @@ export default {
         "1": "Deem a poção a Selandre.",
         "2": "Digam a Selandre que a poção foi destruída.",
         "title": "Dá para confiar em Selandre?",
-        "text": "Vocês ouvem as últimas palavras de Dominic ou a sua ganância?"
+        "text": "Vocês ouvem as últimas palavras de Dominic ou a ganância de vocês?"
     },
     "capstoneTest": {
         "1": "Um inimigo nomeado foi morto",
         "2": "Dois inimigos nomeados foram mortos",
         "3": "Três inimigos nomeados foram mortos",
-        "title": "Teste seu Modulador de Poder",
+        "title": "Teste seu Power Modulator",
         "text": "Quantos Inimigos Nomeados vocês conseguiram matar antes de ficarem exaustos?"
     },
     "unseenPlight": {
-        "1": "Mataram o Guttermaw, ganhando a Recompensa do Guttermaw",
-        "2": "Salvaram as crianças, cumprindo o Pedido de Feigrin",
+        "1": "Mataram o Guttermaw, ganhando Guttermaw's Bounty",
+        "2": "Salvaram as crianças, cumprindo Feigrin's Request",
         "title": "Lares e Covis Destruídos",
         "text": "Vocês trouxeram a morte ou salvaram vidas?"
     },
@@ -85,8 +85,8 @@ export default {
         "text": "Quantos Guardas da Cidade ainda estão no mapa?"
     },
     "algoxAltercation": {
-        "1": "Dançarina da Neve está morta.",
-        "2": "Punho Congelado está morto.",
+        "1": "Snowdancer está morta.",
+        "2": "Frozen Fist está morto.",
         "title": "Briga dos Algox",
         "text": "Que lado vocês escolheram?"
     },
@@ -99,14 +99,14 @@ export default {
     "friendOfTheFishKing": {
         "1": "Sim",
         "2": "Não",
-        "title": "Amigo do Rei Peixe",
-        "text": "Vocês aceitaram a proposta do Rei Peixe?"
+        "title": "Friend of the Fish King",
+        "text": "Vocês aceitaram a proposta do Fish King?"
     },
     "acceptTheAscension": {
         "1": "Sim",
         "2": "Não",
         "title": "Aceitar a Ascensão",
-        "text": "Vocês aceitaram a ascensão do Rei Peixe?"
+        "text": "Vocês aceitaram a ascensão do Fish King?"
     },
     "brothersSurvival": {
         "1": "Sim",
@@ -165,8 +165,8 @@ export default {
     "hungryMawDead": {
         "1": "Sim",
         "2": "Não",
-        "title": "Boca Faminta Morta",
-        "text": "A Boca Faminta está morta?"
+        "title": "Hungry Maw Morto",
+        "text": "O Hungry Maw está morto?"
     },
     "cratesLooted": {
         "1": "1",
@@ -193,7 +193,7 @@ export default {
         "1": "Seção 18.3",
         "2": "Seção 44.3",
         "3": "Seção 51.1",
-        "title": "Escalada do Penhasco de Gelo",
+        "title": "Escalada do Icecrag",
         "text": "Qual seção de conclusão vocês leram?"
     },
     "gh2-27": {
@@ -222,20 +222,20 @@ export default {
         "4": "Seção 78.6",
         "5": "Seções 78.6 e 81.5",
         "6": "Seção 81.5",
-        "title": "Armaria Savvas",
+        "title": "Arsenal dos Savvas",
         "text": "Qual seção de conclusão vocês leram?"
     },
     "gh2-34": {
         "1": "Seção 36.4",
         "2": "Seção 89.2",
-        "title": "Túmulo Desgastado pelo Tempo",
+        "title": "Tumba Envelhecida",
         "text": "Qual seção de conclusão vocês leram?"
     },
     "gh2-43": {
         "1": "Seção 80.3",
         "2": "Seção 106.1",
         "3": "Seção 132.4",
-        "title": "Em Busca de Segredos",
+        "title": "Chasing Secrets",
         "text": "Qual seção de conclusão vocês leram?"
     }
 }

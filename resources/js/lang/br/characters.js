@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "Doomstalker",
+        "name": "Perseguidor da Ruína",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Substitua duas cartas {+0_WHITE} por duas cartas {+1_WHITE}",
@@ -111,7 +111,7 @@ export default {
         ]
     },
     "EL": {
-        "name": "Elementalist",
+        "name": "Elementalista",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Substitua uma carta {-1_WHITE} por uma carta {+1_WHITE}",
@@ -129,7 +129,7 @@ export default {
         ]
     },
     "SB": {
-        "name": "Sawbones",
+        "name": "Médico Curandeiro",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova quatro cartas {+0_WHITE}",
@@ -143,7 +143,7 @@ export default {
         ]
     },
     "SS": {
-        "name": "Soothsinger",
+        "name": "Cantora do Alívio",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova uma carta {-2_WHITE}",
@@ -160,7 +160,7 @@ export default {
         ]
     },
     "SK": {
-        "name": "Sunkeeper",
+        "name": "Guardiã do Sol",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova quatro cartas {+0_WHITE}",
@@ -176,7 +176,7 @@ export default {
         ]
     },
     "NS": {
-        "name": "Nightshroud",
+        "name": "Manto da Noite",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova quatro cartas {+0_WHITE}",
@@ -221,7 +221,7 @@ export default {
         ]
     },
     "QM": {
-        "name": "Quartermaster",
+        "name": "Intendente",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Remova quatro cartas {+0_WHITE}",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "Plagueherald",
+        "name": "Heraldo da Praga",
         "perks": [
             "Substitua uma carta {-2_WHITE} por uma carta {+0_WHITE}",
             "Substitua uma carta {-1_WHITE} por uma carta {+1_WHITE}",
@@ -251,7 +251,7 @@ export default {
         ]
     },
     "BT": {
-        "name": "Beast Tyrant",
+        "name": "Tirano das Feras",
         "perks": [
             "Remova duas cartas {-1_WHITE}",
             "Substitua uma carta {-1_WHITE} por uma carta {+1_WHITE}",
@@ -527,7 +527,7 @@ export default {
             "Substitua uma carta {+1_WHITE} por uma carta {+0_WHITE} {WOUND_2}",
             "Adicione quatro cartas {AGAIN} {+0_WHITE} “{+1_WHITE} se o alvo ocupar terreno difícil”",
             "Adicione duas cartas {AGAIN} “{INVISIBLE}, Si mesmo, se você ocupar terreno difícil”",
-            "Ganhe “Poison Dagger” (Item gh-11). Você pode carregar um item de {ONE-HAND} adicional com “Adaga” no nome.",
+            "Ganhe “Adaga Envenenada” (Item gh-11). Você pode carregar um item de {ONE-HAND} adicional com “Adaga” no nome.",
             "Ignore dano e condições e modificadores negativos de Eventos, e remova uma carta {-1_WHITE}",
             "Ignore efeitos negativos de cenário e remova uma carta {-1_WHITE}"
         ]
@@ -962,7 +962,7 @@ export default {
         "name": "Cassandra",
         "masteries": [
             "Durante um cenário inteiro, revele pelo menos uma carta de um baralho de modificadores de ataque ou de um baralho de cartas de habilidade de monstro a cada rodada",
-            "Alvo 6 figuras com uma habilidade que tenha como alvo figuras que ocupem hexágonos contendo {RIFT_WHITE}"
+            "Tenha como alvo 6 figuras com uma habilidade que tenha como alvo figuras que ocupem hexágonos contendo {RIFT_WHITE}"
         ],
         "perks": [
             "Remova uma carta {-2_WHITE}",
@@ -1341,7 +1341,7 @@ export default {
         "perks": [
             "Substitua uma carta {-1_WHITE} por uma carta {AGAIN} “{HEAL.fh}2, {TARGET.fh} Urso”",
             "Substitua uma carta {+0_WHITE} por uma carta {+1_WHITE} {WOUND.fh}",
-            "Substitua uma carta {+0_WHITE} por uma carta {+2_WHITE} “Adicione +1 {ATTACK.fh} se a Fúria Selvagem e o Urso estiverem a até {RANGE.fh}4 um do outro”",
+            "Substitua uma carta {+0_WHITE} por uma carta {+2_WHITE} “Adicione +1 {ATTACK.fh} se Wildfury e o Urso estiverem a até {RANGE.fh}4 um do outro”",
             "Substitua uma carta {+2_WHITE} por uma carta {+4_WHITE}",
             "Adicione duas cartas {+1_WHITE} {WIND}/{EARTH}",
             "Adicione uma carta {+2_WHITE} {PUSH.fh}2",

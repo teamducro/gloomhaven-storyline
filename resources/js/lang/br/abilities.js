@@ -637,7 +637,7 @@ export default {
             "name": "Granizo Estimulante"
         },
         "tremulant-cyclone": {
-            "name": "Ciclone Tremulo"
+            "name": "Ciclone Trêmulo"
         },
         "vengeance": {
             "name": "Vingança"
@@ -871,7 +871,7 @@ export default {
             "name": "Mordida Paralisante"
         },
         "rot-maggots": {
-            "name": "Lárvas da Podridão"
+            "name": "Larvas da Podridão"
         },
         "scattered-terror": {
             "name": "Terror Disperso"
@@ -1174,7 +1174,7 @@ export default {
             "name": "Ascensão Angelical"
         },
         "beacon-of-light": {
-            "name": "Faro de Luz"
+            "name": "Farol de Luz"
         },
         "bright-aegis": {
             "name": "Égide Brilhante"
@@ -1192,7 +1192,7 @@ export default {
             "name": "Força Purificadora"
         },
         "daybreak": {
-            "name": "Avorecer"
+            "name": "Alvorecer"
         },
         "dazzling-charge": {
             "name": "Investida Ofuscante"
@@ -1330,7 +1330,7 @@ export default {
             "name": "Projetar a Voz"
         },
         "tranquil-trill": {
-            "name": "Trinado Tranqüilo"
+            "name": "Trinado Tranquilo"
         },
         "tuning-the-outcome": {
             "name": "Ajustando o Resultado"
@@ -1495,7 +1495,7 @@ export default {
             "name": "Éter Revivificante"
         },
         "ride-the-wind": {
-            "name": "Cabalgar o Vento"
+            "name": "Cavalgar o Vento"
         },
         "spirit-of-doom": {
             "name": "Espírito da Perdição"
@@ -6460,7 +6460,7 @@ export default {
             "name": "sickening strength"
         },
         "rot-maggots": {
-            "name": "Lárvas da Podridão"
+            "name": "Larvas da Podridão"
         },
         "nightmarish-affliction": {
             "name": "Aflição Pesadelo"
@@ -6664,7 +6664,7 @@ export default {
             "name": "return the favor"
         },
         "surgeons-satchel": {
-            "name": "surgeons satchel"
+            "name": "Mochila do Cirurgião"
         },
         "exacting-anger": {
             "name": "exacting anger"
@@ -6682,22 +6682,22 @@ export default {
             "name": "Trauma Macabro"
         },
         "medical-pack-1": {
-            "name": "medical pack 1"
+            "name": "Pacote Médico 1"
         },
         "medical-pack-2": {
-            "name": "medical pack 2"
+            "name": "Pacote Médico 2"
         },
         "medical-pack-3": {
-            "name": "medical pack 3"
+            "name": "Pacote Médico 3"
         },
         "medical-pack-4": {
-            "name": "medical pack 4"
+            "name": "Pacote Médico 4"
         },
         "medical-pack-5": {
-            "name": "medical pack 5"
+            "name": "Pacote Médico 5"
         },
         "medical-pack-6": {
-            "name": "medical pack 6"
+            "name": "Pacote Médico 6"
         },
         "hammer-blow": {
             "name": "Golpe de Martelo"
@@ -6733,13 +6733,13 @@ export default {
             "name": "Postura Defensiva"
         },
         "daybreak": {
-            "name": "Avorecer"
+            "name": "Alvorecer"
         },
         "sanctify": {
             "name": "sanctify"
         },
         "beacon-of-light": {
-            "name": "Faro de Luz"
+            "name": "Farol de Luz"
         },
         "holy-defense": {
             "name": "holy defense"
