@@ -48,16 +48,16 @@ export default {
         "name": "고대 기술"
     },
     "gh-GAT2": {
-        "name": "Ancient Technology x2"
+        "name": "고대 기술 x2"
     },
     "gh-GAT3": {
-        "name": "Ancient Technology x3"
+        "name": "고대 기술 x3"
     },
     "gh-GAT4": {
-        "name": "Ancient Technology x4"
+        "name": "고대 기술 x4"
     },
     "gh-GAT5": {
-        "name": "Ancient Technology x5"
+        "name": "고대 기술 x5"
     },
     "gh-PTR": {
         "name": "폐허 통과"
@@ -117,13 +117,13 @@ export default {
         "name": "수중 호흡"
     },
     "gh-GEOC": {
-        "name": "End of Corruption"
+        "name": "오염 종식"
     },
     "gh-GEOC2": {
-        "name": "End of Corruption x2"
+        "name": "오염 종식 x2"
     },
     "gh-GEOC3": {
-        "name": "End of Corruption x3"
+        "name": "오염 종식 x3"
     },
     "gh-GAOO": {
         "name": "조직 섬멸"
@@ -402,7 +402,7 @@ export default {
         "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
-        "name": "부패 종식"
+        "name": "오염 종식"
     },
     "gh2-G2EOG": {
         "name": "암영의 최후"
