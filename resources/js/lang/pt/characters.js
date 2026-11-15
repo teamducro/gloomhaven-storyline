@@ -1134,7 +1134,7 @@ export default {
         ]
     },
     "BS2": {
-        "name": "Enxame de Lâminas",
+        "name": "Bladeswarm",
         "masteries": [
             "Realiza 6 habilidades {PERSISTENT}{LOST.fh} diferentes, sendo no máximo 3 das 6 habilidades de invocação",
             "Obtém esta maestria quando achares que a merece"
@@ -1144,7 +1144,7 @@ export default {
             "Substitui uma carta {-1_WHITE} por uma carta {+0_WHITE} {POISON.fh}",
             "Substitui uma carta {+0_WHITE} por uma carta {+1_WHITE} {WIND}/{DARK}",
             "Substitui uma carta {+0_WHITE} por uma carta {+1_WHITE} {EARTH}/{LIGHT}",
-            "Substitui uma carta {+0_WHITE} por uma carta {+0_WHITE} “Adiciona +1 {ATTACK.fh} para cada carta com {LOST.fh} na área ativa do Enxame de Lâminas”",
+            "Substitui uma carta {+0_WHITE} por uma carta {+0_WHITE} “Adiciona +1 {ATTACK.fh} para cada carta com {LOST.fh} na área ativa do Bladeswarm”",
             "Ignora efeitos de cenário e adiciona uma carta {+1_WHITE}",
             "Ignora efeitos {-1} de itens e adiciona uma carta {+1_WHITE}",
             "Sempre que fizeres um descanso longo, podes {TELEPORT.fh} para um hexágono ocupado por uma das tuas invocações e, simultaneamente, {TELEPORT.fh} essa invocação para o hexágono que ocupavas",
