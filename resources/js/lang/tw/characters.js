@@ -1134,7 +1134,7 @@ export default {
         ]
     },
     "BS2": {
-        "name": "刀鋒領主",
+        "name": "Bladeswarm",
         "masteries": [
             "執行 6 種不同的 {PERSISTENT}{LOST.fh} 能力，其中召喚能力不超過 3 種",
             "當你覺得自己夠格時，直接獲得本巔峰成就"
@@ -1144,7 +1144,7 @@ export default {
             "將一張 {-1_WHITE} 卡牌替換為一張 {+0_WHITE} {POISON.fh} 卡牌",
             "將一張 {+0_WHITE} 卡牌替換為一張 {+1_WHITE} {WIND}/{DARK} 卡牌",
             "將一張 {+0_WHITE} 卡牌替換為一張 {+1_WHITE} {EARTH}/{LIGHT} 卡牌",
-            "將一張 {+0_WHITE} 卡牌替換為一張 {+0_WHITE}「刀鋒領主的啟動區域中每有一張帶有 {LOST.fh} 的卡牌，附加 +1 {ATTACK.fh}」卡牌",
+            "將一張 {+0_WHITE} 卡牌替換為一張 {+0_WHITE}「Bladeswarm的啟動區域中每有一張帶有 {LOST.fh} 的卡牌，附加 +1 {ATTACK.fh}」卡牌",
             "無視劇本效果，並加入一張 {+1_WHITE} 卡牌",
             "無視道具的 {-1} 效果，並加入一張 {+1_WHITE} 卡牌",
             "每當你執行長休時，可以 {TELEPORT.fh} 到你的一個召喚物所在的格子，同時將該召喚物 {TELEPORT.fh} 到你原本所在的格子",

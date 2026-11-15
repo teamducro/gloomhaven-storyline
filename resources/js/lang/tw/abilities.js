@@ -5848,7 +5848,7 @@ export default {
             "name": "etheric echo"
         },
         "heatwave": {
-            "name": "高溫波浪"
+            "name": "heatwave"
         },
         "arctic-shards": {
             "name": "arctic shards"
@@ -5989,7 +5989,7 @@ export default {
             "name": "分神閃光"
         },
         "strength-in-agony": {
-            "name": "苦痛中的力量"
+            "name": "strength in agony"
         },
         "defiance-of-death": {
             "name": "無視死亡"
@@ -6067,46 +6067,46 @@ export default {
             "name": "bathe in blood"
         },
         "focused-scourge": {
-            "name": "專注鞭笞"
+            "name": "focused scourge"
         },
         "deflecting-blades": {
-            "name": "偏斜之刃"
+            "name": "deflecting blades"
         },
         "omniscient-assault": {
-            "name": "全知攻擊"
+            "name": "omniscient assault"
         },
         "hive-mind": {
-            "name": "蜂巢意識"
+            "name": "hive mind"
         },
         "corrupting-parasites": {
-            "name": "腐化寄生蟲"
+            "name": "corrupting parasites"
         },
         "death-march": {
-            "name": "死亡行軍"
+            "name": "death march"
         },
         "engulfing-stingers": {
-            "name": "吞噬毒針"
+            "name": "engulfing stingers"
         },
         "swarming-minions": {
-            "name": "蟲群爪牙"
+            "name": "swarming minions"
         },
         "scattered-defense": {
-            "name": "分散防禦"
+            "name": "scattered defense"
         },
         "call-of-the-grave": {
-            "name": "墓穴呼喚"
+            "name": "call of the grave"
         },
         "the-storms-edge": {
-            "name": "風暴邊緣"
+            "name": "the storms edge"
         },
         "unstoppable-army": {
-            "name": "不可阻擋的大軍"
+            "name": "unstoppable army"
         },
         "grasping-advance": {
-            "name": "抓握推進"
+            "name": "grasping advance"
         },
         "tomb-of-the-immortal": {
-            "name": "不朽者之墓"
+            "name": "tomb of the immortal"
         },
         "pressing-pursuit": {
             "name": "緊追不捨"
@@ -6115,22 +6115,22 @@ export default {
             "name": "侵擾"
         },
         "putrid-grubs": {
-            "name": "腐臭蛆蟲"
+            "name": "putrid grubs"
         },
         "overwhelming-offensive": {
-            "name": "壓倒性攻勢"
+            "name": "overwhelming offensive"
         },
         "vampiric-tempest": {
-            "name": "吸血風暴"
+            "name": "vampiric tempest"
         },
         "incubation": {
             "name": "孵化"
         },
         "bioluminescence": {
-            "name": "生物發光"
+            "name": "bioluminescence"
         },
         "cyclone-of-blades": {
-            "name": "利刃旋風"
+            "name": "cyclone of blades"
         },
         "sunstroke": {
             "name": "中暑"
@@ -6139,16 +6139,16 @@ export default {
             "name": "吸血"
         },
         "fury-of-the-horde": {
-            "name": "蟲群狂怒"
+            "name": "fury of the horde"
         },
         "repulsive-host": {
-            "name": "令人作嘔的宿主"
+            "name": "repulsive host"
         },
         "bone-daggers": {
             "name": "骨匕"
         },
         "endless-biting": {
-            "name": "無盡啃咬"
+            "name": "endless biting"
         },
         "wasteland": {
             "name": "荒原"
@@ -6160,7 +6160,7 @@ export default {
             "name": "箭雨"
         },
         "race-to-the-grave": {
-            "name": "死亡競速"
+            "name": "race to the grave"
         },
         "gut-shot": {
             "name": "gut shot"
@@ -6178,7 +6178,7 @@ export default {
             "name": "狩獵開始"
         },
         "solid-bow": {
-            "name": "穩固射擊"
+            "name": "solid bow"
         },
         "foot-snare": {
             "name": "絆足陷阱"
@@ -6217,7 +6217,7 @@ export default {
             "name": "coated arrows"
         },
         "felling-swoop": {
-            "name": "伐木俯衝"
+            "name": "felling swoop"
         },
         "expose": {
             "name": "揭破"
@@ -6679,7 +6679,7 @@ export default {
             "name": "secret of the oak"
         },
         "grisly-trauma": {
-            "name": "駭人創傷"
+            "name": "grisly trauma"
         },
         "medical-pack-1": {
             "name": "medical pack 1"

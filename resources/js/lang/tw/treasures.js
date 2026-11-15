@@ -741,25 +741,25 @@ export default {
         "name": "獲得 10 金幣"
     },
     "gh2-1": {
-        "name": "獲得「熔岩涉靴」（道具 142）"
+        "name": "獲得「Magma Waders」（道具 142）"
     },
     "gh2-2": {
         "name": "承受 3 點傷害，並獲得 {POISON}"
     },
     "gh2-3": {
-        "name": "獲得「星辰耳環」（道具 63）"
+        "name": "獲得「Star Earring」（道具 63）"
     },
     "gh2-4": {
-        "name": "獲得「相位斗篷」（道具 98）"
+        "name": "獲得「Cloak of Phasing」（道具 98）"
     },
     "gh2-5": {
-        "name": "獲得「黑暗契約吊墜」（道具 128）"
+        "name": "獲得「Pendant of Dark Pacts」（道具 128）"
     },
     "gh2-6": {
         "name": "隨機支線劇本"
     },
     "gh2-7": {
-        "name": "獲得「盜賊兜帽」（道具 108）"
+        "name": "獲得「Thief's Hood」（道具 108）"
     },
     "gh2-8": {
         "name": "承受 3 點傷害，並獲得 {CURSE}"
@@ -792,7 +792,7 @@ export default {
         "name": "獲得 15 金幣"
     },
     "gh2-18": {
-        "name": "獲得「不穩定炸藥」（道具 99）"
+        "name": "獲得「Unstable Explosives」（道具 99）"
     },
     "gh2-19": {
         "name": "獲得「龍鱗靴」（道具 119）"
@@ -804,7 +804,7 @@ export default {
         "name": "獲得 2 ✔"
     },
     "gh2-22": {
-        "name": "獲得「山嶽之盔」（道具 129）與「山嶽之錘」（道具 130）"
+        "name": "獲得「Helm of the Mountain」（道具 129）與「Mountain Hammer」（道具 130）"
     },
     "gh2-23": {
         "name": "獲得 15 金幣"
@@ -831,16 +831,16 @@ export default {
         "name": "獲得 20 經驗值"
     },
     "gh2-31": {
-        "name": "獲得「浪尖之冠」（道具 131）"
+        "name": "獲得「Wave Crest」（道具 131）"
     },
     "gh2-32": {
         "name": "隨機支線劇本"
     },
     "gh2-33": {
-        "name": "獲得「解毒藥水」（道具 101）"
+        "name": "獲得「Cure Potion」（道具 101）"
     },
     "gh2-34": {
-        "name": "獲得「龍鱗頭盔」（道具 121）"
+        "name": "獲得「Drakescale Helm」（道具 121）"
     },
     "gh2-35": {
         "name": "獲得「Rod of Transference」（道具 115）"
@@ -849,7 +849,7 @@ export default {
         "name": "隨機道具設計圖"
     },
     "gh2-37": {
-        "name": "獲得「幸福之鞋」（道具 97）"
+        "name": "獲得「Shoes of Happiness」（道具 97）"
     },
     "gh2-38": {
         "name": "獲得 1 ✔"
@@ -858,7 +858,7 @@ export default {
         "name": "獲得 20 經驗值"
     },
     "gh2-40": {
-        "name": "獲得「烈焰彎刀」（道具 110）"
+        "name": "獲得「Fueled Falchion」（道具 110）"
     },
     "gh2-41": {
         "name": "獲得 15 金幣"
@@ -888,7 +888,7 @@ export default {
         "name": "獲得 15 經驗值"
     },
     "gh2-50": {
-        "name": "獲得「蒸汽護甲」（道具 106）"
+        "name": "獲得「Steam Armor」（道具 106）"
     },
     "gh2-51": {
         "name": "獲得 15 經驗值"
@@ -939,7 +939,7 @@ export default {
         "name": "獲得 {POISON} 與 {STRENGTHEN}，並取回 2 張遺失的卡牌"
     },
     "gh2-67": {
-        "name": "獲得「厄運羅盤」（道具 132）"
+        "name": "獲得「Doomed Compass」（道具 132）"
     },
     "gh2-68": {
         "name": "隨機道具設計圖"
@@ -957,7 +957,7 @@ export default {
         "name": "獲得 25 金幣"
     },
     "gh2-73": {
-        "name": "獲得「獠牙項鍊」（道具 107）"
+        "name": "獲得「Necklace of Teeth」（道具 107）"
     },
     "gh2-74": {
         "name": "承受 3 點傷害，並獲得 {IMMOBILIZE}"

@@ -3466,7 +3466,7 @@ export default {
         "rewards": [
             "每人 15 金幣",
             "每人 10 經驗值",
-            "獲得「螺旋戒指」（道具 136）"
+            "獲得「Helix Ring」（道具 136）"
         ]
     },
     "gh2-68": {
@@ -3512,7 +3512,7 @@ export default {
         "name": "凜風高地",
         "rewards": [
             "+1 繁榮度",
-            "獲得「強效威力藥水」（道具 53）"
+            "獲得「Major Power Potion」（道具 53）"
         ]
     },
     "gh2-75": {
@@ -3548,7 +3548,7 @@ export default {
         "rewards": [
             "每人 100 金幣",
             "+2 繁榮度",
-            "獲得「背叛者之心」（道具 133）",
+            "獲得「Heart of the Betrayer」（道具 133）",
             "這筆金幣必須立即用於附魔"
         ]
     },
@@ -3596,7 +3596,7 @@ export default {
     "gh2-87": {
         "name": "硫磺礦井",
         "rewards": [
-            "獲得「遠古鑽頭」（道具 109）"
+            "獲得「Ancient Drill」（道具 109）"
         ]
     },
     "gh2-88": {
@@ -3660,7 +3660,7 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "每人 10 經驗值",
-            "獲得「憎恨顱骨」（道具 111）"
+            "獲得「Skull of Hatred」（道具 111）"
         ]
     },
     "gh2-99": {
@@ -3710,9 +3710,9 @@ export default {
         ]
     },
     "gh2-202": {
-        "name": "不幸的闖入",
+        "name": "An Unfortunate Intrusion",
         "rewards": [
-            "獲得「聚焦射線」（道具 154）"
+            "獲得「Focusing Ray」（道具 154）"
         ]
     },
     "gh2-203": {
@@ -3724,77 +3724,77 @@ export default {
     "gh2-204": {
         "name": "Material Concerns",
         "rewards": [
-            "獲得「靜默細劍」（道具 156）"
+            "獲得「Silent Stiletto」（道具 156）"
         ]
     },
     "gh2-205": {
-        "name": "岩石防禦",
+        "name": "Stone Defense",
         "rewards": [
-            "獲得「岩石護符」（道具 157）"
+            "獲得「Stone Charm」（道具 157）"
         ]
     },
     "gh2-206": {
         "name": "Vermling Liberation",
         "rewards": [
-            "獲得「心靈之刃」（道具 158）"
+            "獲得「Psychic Knife」（道具 158）"
         ]
     },
     "gh2-207": {
-        "name": "護送商隊",
+        "name": "Caravan Escort",
         "rewards": [
             "獲得「Insignia of the Divine」（道具 159）"
         ]
     },
     "gh2-208": {
-        "name": "倉儲費用",
+        "name": "Storage Fees",
         "rewards": [
-            "獲得「工具腰帶」（道具 160）"
+            "獲得「Utility Belt」（道具 160）"
         ]
     },
     "gh2-209": {
-        "name": "野獸維度",
+        "name": "Plane of Wild Beasts",
         "rewards": [
-            "獲得「相位神像」（道具 161）"
+            "獲得「Phasing Idol」（道具 161）"
         ]
     },
     "gh2-210": {
-        "name": "收割黑夜",
+        "name": "Harvesting the Night",
         "rewards": [
             "獲得「The Night's Caress」（道具 162）"
         ]
     },
     "gh2-211": {
-        "name": "瘟疫地穴",
+        "name": "Plagued Crypt",
         "rewards": [
-            "獲得「瘟疫吊墜」（道具 163）"
+            "獲得「Pendant of the Plague」（道具 163）"
         ]
     },
     "gh2-212": {
-        "name": "非自然的侮辱",
+        "name": "Unnatural Insults",
         "rewards": [
-            "獲得「死亡面具」（道具 164）"
+            "獲得「Mask of Death」（道具 164）"
         ]
     },
     "gh2-213": {
-        "name": "吟遊詩人之戰",
+        "name": "Battle of the Bards",
         "rewards": [
-            "獲得「大師魯特琴」（道具 165）"
+            "獲得「Master's Lute」（道具 165）"
         ]
     },
     "gh2-214": {
-        "name": "腐化狩獵",
+        "name": "Corrupted Hunt",
         "rewards": [
-            "獲得「獵人斗篷」（道具 166）"
+            "獲得「Cloak of the Hunter」（道具 166）"
         ]
     },
     "gh2-215": {
-        "name": "戰後餘波",
+        "name": "Aftermath",
         "rewards": [
-            "獲得「醫師外袍」（道具 167）"
+            "獲得「Doctor's Coat」（道具 167）"
         ]
     },
     "gh2-216": {
-        "name": "元素祕密",
+        "name": "Elemental Secrets",
         "rewards": [
             "獲得「Elemental Vest」（道具 168）"
         ]
@@ -3802,7 +3802,7 @@ export default {
     "gh2-217": {
         "name": "籠中熊",
         "rewards": [
-            "獲得「指揮法杖」（道具 169）"
+            "獲得「Staff of Command」（道具 169）"
         ]
     },
     "gh2-218": {
