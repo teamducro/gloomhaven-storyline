@@ -12,7 +12,7 @@ export default {
         "name": "Lodowy Kolec"
     },
     "fh-E": {
-        "name": "Opuszczana krata"
+        "name": "Kratownica"
     },
     "fh-F": {
         "name": "Posąg"
