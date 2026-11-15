@@ -201,7 +201,7 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-t",
                 "passive": "",
                 "rewards": "Add hozzá a 001–010 felszereléseket a felszerelés-készlethez"
             },
@@ -209,7 +209,7 @@ export default {
                 "level": 2,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 011–015 felszereléseket a felszerelés-készlethez"
             },
@@ -217,7 +217,7 @@ export default {
                 "level": 3,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 016–020 felszereléseket a felszerelés-készlethez"
             },
@@ -225,7 +225,7 @@ export default {
                 "level": 4,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 021–025 felszereléseket a felszerelés-készlethez"
             },
@@ -233,7 +233,7 @@ export default {
                 "level": 5,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 026–030 felszereléseket a felszerelés-készlethez"
             },
@@ -241,7 +241,7 @@ export default {
                 "level": 6,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 031–035 felszereléseket a felszerelés-készlethez"
             },
@@ -249,7 +249,7 @@ export default {
                 "level": 7,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 036–040 felszereléseket a felszerelés-készlethez"
             },
@@ -257,7 +257,7 @@ export default {
                 "level": 8,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 041–045 felszereléseket a felszerelés-készlethez"
             },
@@ -265,7 +265,7 @@ export default {
                 "level": 9,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 046–050 felszereléseket a felszerelés-készlethez"
             }
