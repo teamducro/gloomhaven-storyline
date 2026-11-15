@@ -607,14 +607,14 @@ export default {
         ]
     },
     "gh2-3": {
-        "name": "Kibővített képességek",
+        "name": "Augmented Abilities",
         "progress": [
             "Vásárolj öt fejlesztést (szükséges hozzá „A varázsgömb hatalma” általános eredmény).",
             "Olvasd el: {SECTION} 71.2."
         ]
     },
     "gh2-4": {
-        "name": "Az ember bukása",
+        "name": "The Fall of Man",
         "progress": [
             "Szerezd meg az “Aesther Spyglass” (Felszerelés 149) felszerelést. Nem adható el.",
             "Használd az “Aesther Spyglass” (Felszerelés 149) felszerelést tízszer.",
@@ -623,7 +623,7 @@ export default {
         ]
     },
     "gh2-5": {
-        "name": "Xorn Keresője",
+        "name": "Seeker of Xorn",
         "progress": [
             "Lépj szintet a {SCENARIO 57} feloldásához.",
             "Vidd végkifejletig: {SCENARIO 57}.",
@@ -632,7 +632,7 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "A Véristen fanatikusa",
+        "name": "Zealot of the Blood God",
         "progress": [
             "Fejezz be tíz küldetést úgy, hogy az életerőd a maximum fele vagy az alatt van, és nem merültél ki.",
             "Olvasd el: {SECTION} 122.3."
@@ -646,7 +646,7 @@ export default {
         ]
     },
     "gh2-8": {
-        "name": "Vegyétek vissza a fákat",
+        "name": "Take Back the Trees",
         "progress": [
             "Élj át tíz úti eseményt a csapatoddal.",
             "Olvasd el: {SECTION} 64.3.",
@@ -655,7 +655,7 @@ export default {
         ]
     },
     "gh2-9": {
-        "name": "A gyógymód megtalálása",
+        "name": "Finding the Cure",
         "progress": [
             "Teljesíts küldetéseket ezek közül öt helyszínen: Rézgallér-hegység, Hullaerdő, Tőrerdő, Homályrév, Kísértő mocsár, Ködös-tenger, Őrszem-hegység.",
             "Olvasd el: {SECTION} 55.3.",
@@ -664,7 +664,7 @@ export default {
         ]
     },
     "gh2-10": {
-        "name": "Torz lények gyilkosa",
+        "name": "Aberrant Slayer",
         "progress": [
             "Fejlessz egy képességlapot (a sajátodat vagy egy szövetségesét) {ANY} elemmel (szükséges hozzá „A varázsgömb hatalma” általános eredmény).",
             "Olvasd el: {SECTION} 14.3.",
@@ -680,7 +680,7 @@ export default {
         ]
     },
     "gh2-12": {
-        "name": "A Fény eszköze",
+        "name": "Implement of Light",
         "progress": [
             "Azonnal old fel: {SCENARIO 65}.",
             "Találd meg a “Shield of the Righteous” (Felszerelés 148) felszerelést.",
@@ -689,7 +689,7 @@ export default {
         ]
     },
     "gh2-13": {
-        "name": "Kereskedő osztály",
+        "name": "Merchant Class",
         "progress": [
             "Birtokolj három {HEAD} felszerelést.",
             "Birtokolj három {BODY} felszerelést.",
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "gh2-14": {
-        "name": "Örök vándor",
+        "name": "Eternal Wanderer",
         "progress": [
             "Teljesíts 12 különböző küldetést.",
             "Olvasd el: {SECTION} 52.2."
@@ -715,7 +715,7 @@ export default {
         ]
     },
     "gh2-16": {
-        "name": "A tökéletes méreg",
+        "name": "The Perfect Poison",
         "progress": [
             "Szerezd meg a “Mérgezett tőr” (Felszerelés 7) felszerelést.",
             "Használd arra, hogy {POISON} állapotot alkalmazz egy {POISON} állapot nélküli ellenségre 30-szor.",
@@ -731,7 +731,7 @@ export default {
         ]
     },
     "gh2-18": {
-        "name": "Csatalegenda",
+        "name": "Battle Legend",
         "progress": [
             "Szerezz 12 pipát a teljesített csatacélokból.",
             "Olvasd el: {SECTION} 23.3."
@@ -745,7 +745,7 @@ export default {
         ]
     },
     "gh2-20": {
-        "name": "Jámborság mindenben",
+        "name": "Piety in All Things",
         "progress": [
             "Adományozz 120 aranyat a Temple of the Great Oak épületnek.",
             "Olvasd el: {SECTION} 51.5."
@@ -759,7 +759,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "Trófeavadászat",
+        "name": "Trophy Hunt",
         "progress": [
             "Ölj meg 20 különböző típusú szörnyet.",
             "Olvasd el: {SECTION} 21.1."

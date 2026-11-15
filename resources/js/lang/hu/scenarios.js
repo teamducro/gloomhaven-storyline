@@ -3710,7 +3710,7 @@ export default {
         ]
     },
     "gh2-202": {
-        "name": "Szerencsétlen behatolás",
+        "name": "An Unfortunate Intrusion",
         "rewards": [
             "Szerezd meg: “Focusing Ray” (Felszerelés 154)"
         ]
@@ -3728,7 +3728,7 @@ export default {
         ]
     },
     "gh2-205": {
-        "name": "Kővédelem",
+        "name": "Stone Defense",
         "rewards": [
             "Szerezd meg: “Stone Charm” (Felszerelés 157)"
         ]
@@ -3740,73 +3740,73 @@ export default {
         ]
     },
     "gh2-207": {
-        "name": "Karavánkíséret",
+        "name": "Caravan Escort",
         "rewards": [
             "Szerezd meg: “Insignia of the Divine” (Felszerelés 159)"
         ]
     },
     "gh2-208": {
-        "name": "Raktározási díjak",
+        "name": "Storage Fees",
         "rewards": [
             "Szerezd meg: “Utility Belt” (Felszerelés 160)"
         ]
     },
     "gh2-209": {
-        "name": "A vadállatok síkja",
+        "name": "Plane of Wild Beasts",
         "rewards": [
             "Szerezd meg: “Phasing Idol” (Felszerelés 161)"
         ]
     },
     "gh2-210": {
-        "name": "Az éj learatása",
+        "name": "Harvesting the Night",
         "rewards": [
             "Szerezd meg: “The Night's Caress” (Felszerelés 162)"
         ]
     },
     "gh2-211": {
-        "name": "Pestises kripta",
+        "name": "Plagued Crypt",
         "rewards": [
             "Szerezd meg: “Pendant of the Plague” (Felszerelés 163)"
         ]
     },
     "gh2-212": {
-        "name": "Természetellenes sértések",
+        "name": "Unnatural Insults",
         "rewards": [
             "Szerezd meg: “Mask of Death” (Felszerelés 164)"
         ]
     },
     "gh2-213": {
-        "name": "Bárdok csatája",
+        "name": "Battle of the Bards",
         "rewards": [
             "Szerezd meg: “Master's Lute” (Felszerelés 165)"
         ]
     },
     "gh2-214": {
-        "name": "Megromlott vadászat",
+        "name": "Corrupted Hunt",
         "rewards": [
             "Szerezd meg: “Cloak of the Hunter” (Felszerelés 166)"
         ]
     },
     "gh2-215": {
-        "name": "Utóhatás",
+        "name": "Aftermath",
         "rewards": [
             "Szerezd meg: “Doctor's Coat” (Felszerelés 167)"
         ]
     },
     "gh2-216": {
-        "name": "Elemi titkok",
+        "name": "Elemental Secrets",
         "rewards": [
             "Szerezd meg: “Elemental Vest” (Felszerelés 168)"
         ]
     },
     "gh2-217": {
-        "name": "A ketrecbe zárt medve",
+        "name": "The Caged Bear",
         "rewards": [
             "Szerezd meg: “Staff of Command” (Felszerelés 169)"
         ]
     },
     "gh2-218": {
-        "name": "Az idő homokja",
+        "name": "The Sands of Time",
         "rewards": [
             "Szerezd meg: “Crawling Carapace” (Felszerelés 170)"
         ]

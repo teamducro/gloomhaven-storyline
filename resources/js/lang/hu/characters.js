@@ -1134,7 +1134,7 @@ export default {
         ]
     },
     "BS2": {
-        "name": "Pengeroj",
+        "name": "Bladeswarm",
         "masteries": [
             "Hajts végre 6 különböző {PERSISTENT}{LOST.fh} képességet úgy, hogy a 6-ból legfeljebb 3 idézés képesség legyen",
             "Szerezd meg ezt a mesterséget, amikor úgy érzed, megérdemled"
@@ -1144,7 +1144,7 @@ export default {
             "Cserélj ki egy {-1_WHITE} lapot egy {+0_WHITE} {POISON.fh} lapra",
             "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {WIND}/{DARK} lapra",
             "Cserélj ki egy {+0_WHITE} lapot egy {+1_WHITE} {EARTH}/{LIGHT} lapra",
-            "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} “Adj hozzá +1 {ATTACK.fh}-t a Pengeroj aktív területén lévő minden {LOST.fh}-os lapért” lapra",
+            "Cserélj ki egy {+0_WHITE} lapot egy {+0_WHITE} “Adj hozzá +1 {ATTACK.fh}-t a Bladeswarm aktív területén lévő minden {LOST.fh}-os lapért” lapra",
             "Hagyd figyelmen kívül a küldetések hatásait, és adj hozzá egy {+1_WHITE} lapot",
             "Hagyd figyelmen kívül a felszerelések {-1} hatásait, és adj hozzá egy {+1_WHITE} lapot",
             "Valahányszor hosszú pihenést tartasz, {TELEPORT.fh} egy idézett lényed mezőjére, és egyidejűleg {TELEPORT.fh} azt az idézett lényt arra a mezőre, amelyen te álltál",
@@ -1153,14 +1153,14 @@ export default {
         ]
     },
     "DS2": {
-        "name": "Végzetvadász",
+        "name": "Doomstalker",
         "masteries": [
             "Ölj meg 20 olyan ellenfelet, amelynek {DOOM}-ja van",
             "Egyetlen fordulóban te és egyik idézett lényed együttesen legalább 6 támadás képességet hajtsatok végre"
         ],
         "perks": [
             "Cserélj ki egy {-2_WHITE} lapot egy {+0_WHITE} lapra",
-            "Cserélj ki egy {-1_WHITE} lapot egy {-1_WHITE} “A Végzetvadász végrehajtja: {ATTACK.fh}2, {RANGE.fh}5” lapra",
+            "Cserélj ki egy {-1_WHITE} lapot egy {-1_WHITE} “A Doomstalker végrehajtja: {ATTACK.fh}2, {RANGE.fh}5” lapra",
             "Cserélj ki két {+0_WHITE} lapot két {+1_WHITE} lapra",
             "Adj hozzá egy {+0_WHITE} “Adj a célponttal szomszédos egyik idézett lényednek: {ATTACK.fh}+0” lapot",
             "Adj hozzá egy {+3_WHITE} lapot",
@@ -1172,7 +1172,7 @@ export default {
         ]
     },
     "EL2": {
-        "name": "Elementalista",
+        "name": "Elementalist",
         "masteries": [
             "Egyetlen küldetésben 5 alkalommal használj el 4 vagy több elemi erőt egyetlen körben",
             "3 különböző küldetésben egyszer-egyszer legyen mind a 6 elemi erő egyszerre erős vagy halványuló"
@@ -1193,7 +1193,7 @@ export default {
         ]
     },
     "NS2": {
-        "name": "Éjtakaró",
+        "name": "Nightshroud",
         "masteries": [
             "Egyetlen küldetésben minden körödben hozz létre vagy használj el {DARK}-ot",
             "Egyetlen küldetésben 5 egymást követő fordulóban hajts végre támadás képességet a köröd alatt"
@@ -1213,7 +1213,7 @@ export default {
         ]
     },
     "PH2": {
-        "name": "Járványhírnök",
+        "name": "Plagueherald",
         "masteries": [
             "Egyetlen körben ölj meg 3 vagy több ellenfelet támadás módosító lap húzása nélkül",
             "Egyetlen küldetésben minden fordulóban vagy adj {POISON.fh}-t egy csapattársnak vagy ellenfélnek, vagy vedd le róla"
@@ -1234,10 +1234,10 @@ export default {
         ]
     },
     "QM2": {
-        "name": "Intendáns",
+        "name": "Quartermaster",
         "masteries": [
             "Egyetlen küldetésben 3 alkalommal költs el 50 készletet, hogy 50 arany értékű elveszett felszerelést újítsál fel",
-            "Egy egész küldetés alatt minden fordulóban, kivéve ha hosszú pihenést tartasz, adj magadnak vagy egy csapattársnak egy felszerelést az Intendáns felszerelés-készletéből"
+            "Egy egész küldetés alatt minden fordulóban, kivéve ha hosszú pihenést tartasz, adj magadnak vagy egy csapattársnak egy felszerelést a Quartermaster felszerelés-készletéből"
         ],
         "perks": [
             "Cserélj ki két {-1_WHITE} lapot egy {+0_WHITE} {MUDDLE.fh} lapra",
@@ -1254,7 +1254,7 @@ export default {
         ]
     },
     "SB2": {
-        "name": "Csontkovács",
+        "name": "Sawbones",
         "masteries": [
             "Egyetlen küldetésben minden fordulóban, kivéve ha hosszú pihenést tartasz, adj egy csapattársnak egy gyógycsomagot vagy receptet",
             "Egyetlen küldetésben soha ne támadj sértetlen ellenfelet, amíg sérült szörnyek élnek, és hajts végre legalább 10 támadást"
@@ -1272,7 +1272,7 @@ export default {
         ]
     },
     "SK2": {
-        "name": "Napőr",
+        "name": "Sunkeeper",
         "masteries": [
             "Egyetlen küldetésben minden körödben hozz létre vagy használj el {LIGHT}-ot",
             "Egyetlen küldetésben legalább 3 alkalommal okozz 8 vagy több {DAMAGE.fh}-t egy támadással"
@@ -1292,7 +1292,7 @@ export default {
         ]
     },
     "SS2": {
-        "name": "Jósdalnok",
+        "name": "Soothsinger",
         "masteries": [
             "Egyetlen küldetésben hajts végre 7 különböző {SONG} akciót",
             "Egyetlen küldetésben hozz létre 20 vagy több Hangjegyet, és használd fel mindegyiket egy {SONG}-ban"

@@ -429,7 +429,7 @@ export default {
         "name": "A gyík megsegítése"
     },
     "gh2-G2TDS": {
-        "name": "A gyík halála"
+        "name": "The Drake Slain"
     },
     "gh2-G2TPE": {
         "name": "A varázsgömb hatalma"
