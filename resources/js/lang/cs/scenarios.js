@@ -2995,7 +2995,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Zpustlá krypta",
+        "name": "Ruinous Crypt",
         "rewards": [
             "10 zkušeností každý",
             "+1 reputace u Démonů",
@@ -3003,28 +3003,28 @@ export default {
         ]
     },
     "gh2-3": {
-        "name": "Zmrzlá úžlabina",
+        "name": "Frozen Hollow",
         "rewards": [
             "+1 prosperita",
             "+1 reputace u Armády"
         ]
     },
     "gh2-4": {
-        "name": "Krypta zatracených",
+        "name": "Crypt of the Damned",
         "rewards": [
             "10 zkušeností každý",
             "+1 reputace u Démonů"
         ]
     },
     "gh2-5": {
-        "name": "Zapomenutá krypta",
+        "name": "Forgotten Crypt",
         "rewards": [
             "+1 prosperita",
             "+1 reputace u Armády"
         ]
     },
     "gh2-6": {
-        "name": "Chátrající krypta",
+        "name": "Decaying Crypt",
         "rewards": [
             "5 zlaťáků každý",
             "10 zkušeností každý",
@@ -3033,18 +3033,18 @@ export default {
         ]
     },
     "gh2-7": {
-        "name": "Černá mohyla",
+        "name": "Black Barrow",
         "rewards": []
     },
     "gh2-8": {
-        "name": "Doupě v mohyle",
+        "name": "Barrow Lair",
         "rewards": [
             "15 zlaťáků každý",
             "+2 reputace u Obchodního cechu"
         ]
     },
     "gh2-9": {
-        "name": "Zpustlá trhlina",
+        "name": "Ruinous Rift",
         "rewards": [
             "+1 prosperita",
             "+1 reputace u Armády",
@@ -3052,7 +3052,7 @@ export default {
         ]
     },
     "gh2-10": {
-        "name": "Horský průsmyk",
+        "name": "Mountain Pass",
         "rewards": []
     },
     "gh2-11": {
@@ -3064,14 +3064,14 @@ export default {
         ]
     },
     "gh2-12": {
-        "name": "Inoxský tábor",
+        "name": "Inox Encampment",
         "rewards": [
             "20 zlaťáků každý",
             "+1 reputace u Obchodního cechu"
         ]
     },
     "gh2-13": {
-        "name": "Výstup na Ledový útes",
+        "name": "Icecrag Ascent",
         "rewards": [
             [],
             [
@@ -3086,11 +3086,11 @@ export default {
         ]
     },
     "gh2-14": {
-        "name": "Komnata ozvěn",
+        "name": "Echo Chamber",
         "rewards": []
     },
     "gh2-15": {
-        "name": "Rovina elementární moci",
+        "name": "Plane of Elemental Power",
         "rewards": [
             "20 zkušeností každý",
             "2 ✔ každý",
@@ -3098,14 +3098,14 @@ export default {
         ]
     },
     "gh2-16": {
-        "name": "Diamantový důl",
+        "name": "Diamond Mine",
         "rewards": [
             "20 zlaťáků každý",
             "+1 reputace u Obchodního cechu"
         ]
     },
     "gh2-17": {
-        "name": "Démonická trhlina",
+        "name": "Demonic Rift",
         "rewards": [
             "+1 prosperita",
             "-1 reputace u Démonů",
@@ -3113,7 +3113,7 @@ export default {
         ]
     },
     "gh2-18": {
-        "name": "Vyšetřování",
+        "name": "Investigation",
         "rewards": [
             "15 zlaťáků každý",
             "+1 prosperita",
@@ -3130,7 +3130,7 @@ export default {
         ]
     },
     "gh2-20": {
-        "name": "Gloomhavenský sklad",
+        "name": "Gloomhaven Warehouse",
         "rewards": [
             "25 zkušeností každý",
             "+2 reputace u Démonů",
@@ -3154,15 +3154,15 @@ export default {
         ]
     },
     "gh2-24": {
-        "name": "Gloomhavenské náměstí B",
+        "name": "Gloomhaven Square B",
         "rewards": []
     },
     "gh2-26": {
-        "name": "Gloomhavenské hradby B",
+        "name": "Gloomhaven Battlements B",
         "rewards": []
     },
     "gh2-27": {
-        "name": "Pekelný trůn",
+        "name": "Infernal Throne",
         "rewards": [
             [
                 "25 zlaťáků každý",
@@ -3190,7 +3190,7 @@ export default {
         ]
     },
     "gh2-28": {
-        "name": "Chrám Věštce",
+        "name": "Temple of the Seer",
         "rewards": [
             [],
             [],
@@ -3200,7 +3200,7 @@ export default {
         ]
     },
     "gh2-29": {
-        "name": "Spálený vrchol",
+        "name": "Scorched Summit",
         "rewards": [
             "10 zlaťáků každý",
             "+1 prosperita",
@@ -3208,18 +3208,18 @@ export default {
         ]
     },
     "gh2-30": {
-        "name": "Svatyně hlubin",
+        "name": "Shrine of the Depths",
         "rewards": []
     },
     "gh2-31": {
-        "name": "Zchátralý les",
+        "name": "Decrepit Wood",
         "rewards": [
             [],
             []
         ]
     },
     "gh2-32": {
-        "name": "Savvasova zbrojnice",
+        "name": "Savvas Armory",
         "rewards": [
             [
                 "15 zlaťáků každý"
@@ -3252,11 +3252,11 @@ export default {
         ]
     },
     "gh2-33": {
-        "name": "Prastará obranná síť",
+        "name": "Ancient Defense Network",
         "rewards": []
     },
     "gh2-34": {
-        "name": "Omšelá hrobka",
+        "name": "Timeworn Tomb",
         "rewards": [
             [
                 "30 zlaťáků každý"
@@ -3268,25 +3268,25 @@ export default {
         ]
     },
     "gh2-35": {
-        "name": "Říše Hlasu",
+        "name": "Realm of the Voice",
         "rewards": [
             "30 zkušeností každý"
         ]
     },
     "gh2-36": {
-        "name": "Opuštěné stoky",
+        "name": "Abandoned Sewers",
         "rewards": []
     },
     "gh2-37": {
-        "name": "Hluboké ruiny",
+        "name": "Deep Ruins",
         "rewards": []
     },
     "gh2-38": {
-        "name": "Dračí hnízdo",
+        "name": "Drake Nest",
         "rewards": []
     },
     "gh2-39": {
-        "name": "Zářivá jeskyně",
+        "name": "Vibrant Grotto",
         "rewards": [
             "+1 prosperita"
         ]
@@ -3296,7 +3296,7 @@ export default {
         "rewards": []
     },
     "gh2-41": {
-        "name": "Prastará cisterna",
+        "name": "Ancient Cistern",
         "rewards": [
             "+2 prosperita"
         ]
@@ -3329,57 +3329,57 @@ export default {
         ]
     },
     "gh2-45": {
-        "name": "Rovina noci",
+        "name": "Plane of Night",
         "rewards": [
             "+1 prosperita",
             "Otevřete obálku „Svíčka“"
         ]
     },
     "gh2-46": {
-        "name": "Příkop zkázy",
+        "name": "Doom Trench",
         "rewards": []
     },
     "gh2-47": {
-        "name": "Otrokářské ohrady",
+        "name": "Slave Pens",
         "rewards": []
     },
     "gh2-48": {
-        "name": "Zrádná propast",
+        "name": "Treacherous Divide",
         "rewards": []
     },
     "gh2-49": {
-        "name": "Kmenový útok",
+        "name": "Tribal Assault",
         "rewards": [
             "+1 prosperita"
         ]
     },
     "gh2-50": {
-        "name": "Vrchol nočních můr",
+        "name": "Nightmare Peak",
         "rewards": [
             "+1 prosperita"
         ]
     },
     "gh2-51": {
-        "name": "Doupě Nevidoucího oka",
+        "name": "Lair of the Unseeing Eye",
         "rewards": [
             "+1 prosperita"
         ]
     },
     "gh2-52": {
-        "name": "Stinný hvozd",
+        "name": "Shadow Weald",
         "rewards": [
             "+1 prosperita"
         ]
     },
     "gh2-53": {
-        "name": "Svatyně síly",
+        "name": "Shrine of Strength",
         "rewards": [
             "30 zkušeností každý",
             "2 ✔ každý"
         ]
     },
     "gh2-54": {
-        "name": "Prázdnota",
+        "name": "The Void",
         "rewards": []
     },
     "gh2-55": {
@@ -3394,13 +3394,13 @@ export default {
         ]
     },
     "gh2-57": {
-        "name": "Sklep krypty",
+        "name": "Crypt Basement",
         "rewards": [
             "Získejte „Scepter of Xorn“ (předmět 147)"
         ]
     },
     "gh2-58": {
-        "name": "Ledový palác",
+        "name": "Palace of Ice",
         "rewards": [
             "10 zkušeností každý",
             "1 ✔ každý",
@@ -3410,14 +3410,14 @@ export default {
         ]
     },
     "gh2-59": {
-        "name": "Mlžné houští",
+        "name": "Foggy Thicket",
         "rewards": [
             "10 zlaťáků každý",
             "+1 prosperita"
         ]
     },
     "gh2-60": {
-        "name": "Banditský les",
+        "name": "Bandit's Wood",
         "rewards": [
             "10 zlaťáků každý",
             "+1 prosperita",
@@ -3429,14 +3429,14 @@ export default {
         "rewards": []
     },
     "gh2-62": {
-        "name": "Alchymistická laboratoř",
+        "name": "Alchemy Lab",
         "rewards": [
             "+1 prosperita",
             "Velký úkol 09 splněn"
         ]
     },
     "gh2-63": {
-        "name": "Hasnoucí maják",
+        "name": "Fading Lighthouse",
         "rewards": [
             "Velký úkol 04 splněn"
         ]
@@ -3462,28 +3462,28 @@ export default {
         ]
     },
     "gh2-67": {
-        "name": "Chrám zatmění",
+        "name": "Temple of the Eclipse",
         "rewards": [
             "15 zlaťáků každý",
             "10 zkušeností každý",
-            "Získejte „Šroubovicový prsten“ (předmět 136)"
+            "Získejte „Helix Ring“ (předmět 136)"
         ]
     },
     "gh2-68": {
-        "name": "Potopená loď",
+        "name": "Sunken Vessel",
         "rewards": [
             "10 zlaťáků každý"
         ]
     },
     "gh2-69": {
-        "name": "Zkažená zátoka",
+        "name": "Corrupted Cove",
         "rewards": [
             "15 zkušeností každý",
             "+1 prosperita"
         ]
     },
     "gh2-70": {
-        "name": "Podvodní laguna",
+        "name": "Underwater Lagoon",
         "rewards": [
             "10 zlaťáků každý",
             "10 zkušeností každý"
@@ -3497,42 +3497,42 @@ export default {
         ]
     },
     "gh2-72": {
-        "name": "Studna nešťastníků",
+        "name": "Well of the Unfortunate",
         "rewards": [
             "15 zlaťáků každý"
         ]
     },
     "gh2-73": {
-        "name": "Spoutaný ostrov",
+        "name": "Chained Isle",
         "rewards": [
             "+1 prosperita"
         ]
     },
     "gh2-74": {
-        "name": "Větrem ošlehaná vysočina",
+        "name": "Windswept Highlands",
         "rewards": [
             "+1 prosperita",
-            "Získejte „Větší lektvar síly“ (předmět 53)"
+            "Získejte „Major Power Potion“ (předmět 53)"
         ]
     },
     "gh2-75": {
-        "name": "Hřeben sesuvů",
+        "name": "Rockslide Ridge",
         "rewards": [
             "Získejte „Ruby Talisman“ (předmět 152)"
         ]
     },
     "gh2-76": {
-        "name": "Slizký háj",
+        "name": "Oozing Grove",
         "rewards": [
             "+1 prosperita"
         ]
     },
     "gh2-77": {
-        "name": "Úl Pustošitelů",
+        "name": "Harrower Hive",
         "rewards": []
     },
     "gh2-78": {
-        "name": "Klenba tajemství",
+        "name": "Vault of Secrets",
         "rewards": [
             "+3 prosperita"
         ]
@@ -3544,36 +3544,36 @@ export default {
         ]
     },
     "gh2-80": {
-        "name": "Ztracený chrám",
+        "name": "Lost Temple",
         "rewards": [
             "100 zlaťáků každý",
             "+2 prosperita",
-            "Získejte „Srdce zrádce“ (předmět 133)",
+            "Získejte „Heart of the Betrayer“ (předmět 133)",
             "Tyto peníze je nutné okamžitě utratit za vylepšení"
         ]
     },
     "gh2-81": {
-        "name": "Zarostlý hřbitov",
+        "name": "Overgrown Graveyard",
         "rewards": [
             "10 zlaťáků každý",
             "+1 prosperita"
         ]
     },
     "gh2-82": {
-        "name": "Úkryt Syndikátu",
+        "name": "Syndicate Hideout",
         "rewards": [
             "+1 prosperita",
             "Přidejte městskou událost C-72 do balíčku"
         ]
     },
     "gh2-83": {
-        "name": "Ztracený ostrov",
+        "name": "Lost Island",
         "rewards": [
             "15 zlaťáků každý"
         ]
     },
     "gh2-84": {
-        "name": "Divoká potyčka",
+        "name": "Wild Melee",
         "rewards": [
             "15 zkušeností každý",
             "1 ✔ každý",
@@ -3588,19 +3588,19 @@ export default {
         ]
     },
     "gh2-86": {
-        "name": "Magmatická jáma",
+        "name": "Magma Pit",
         "rewards": [
             "15 zlaťáků každý"
         ]
     },
     "gh2-87": {
-        "name": "Sirný důl",
+        "name": "Sulfur Mine",
         "rewards": [
-            "Získejte „Prastarý vrták“ (předmět 109)"
+            "Získejte „Ancient Drill“ (předmět 109)"
         ]
     },
     "gh2-88": {
-        "name": "Arkánská knihovna",
+        "name": "Arcane Library",
         "rewards": [
             "Přidejte městskou událost C-37 do balíčku"
         ]
@@ -3608,15 +3608,15 @@ export default {
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "Získejte 2× „Větší léčivý lektvar“ (předmět 37)"
+            "Získejte 2× „Major Healing Potion“ (předmět 37)"
         ]
     },
     "gh2-90": {
-        "name": "Hořící hora",
+        "name": "Burning Mountain",
         "rewards": []
     },
     "gh2-91": {
-        "name": "Stíny uvnitř",
+        "name": "Shadows Within",
         "rewards": []
     },
     "gh2-92": {
@@ -3627,7 +3627,7 @@ export default {
         ]
     },
     "gh2-93": {
-        "name": "Sužovaná vesnice",
+        "name": "Harried Village",
         "rewards": [
             "1 ✔ každý"
         ]
@@ -3644,7 +3644,7 @@ export default {
         "rewards": []
     },
     "gh2-96": {
-        "name": "Rvačka v uličce",
+        "name": "Back Alley Brawl",
         "rewards": [
             "10 zlaťáků každý"
         ]
@@ -3660,7 +3660,7 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "10 zkušeností každý",
-            "Získejte „Lebka nenávisti“ (předmět 111)"
+            "Získejte „Skull of Hatred“ (předmět 111)"
         ]
     },
     "gh2-99": {
@@ -3710,9 +3710,9 @@ export default {
         ]
     },
     "gh2-202": {
-        "name": "Nešťastné vniknutí",
+        "name": "An Unfortunate Intrusion",
         "rewards": [
-            "Získejte „Zaostřující paprsek“ (předmět 154)"
+            "Získejte „Focusing Ray“ (předmět 154)"
         ]
     },
     "gh2-203": {
@@ -3724,89 +3724,89 @@ export default {
     "gh2-204": {
         "name": "Material Concerns",
         "rewards": [
-            "Získejte „Tichý stilet“ (předmět 156)"
+            "Získejte „Silent Stiletto“ (předmět 156)"
         ]
     },
     "gh2-205": {
-        "name": "Kamenná obrana",
+        "name": "Stone Defense",
         "rewards": [
-            "Získejte „Kamenný talisman“ (předmět 157)"
+            "Získejte „Stone Charm“ (předmět 157)"
         ]
     },
     "gh2-206": {
         "name": "Vermling Liberation",
         "rewards": [
-            "Získejte „Psychický nůž“ (předmět 158)"
+            "Získejte „Psychic Knife“ (předmět 158)"
         ]
     },
     "gh2-207": {
-        "name": "Eskorta karavany",
+        "name": "Caravan Escort",
         "rewards": [
             "Získejte „Insignia of the Divine“ (předmět 159)"
         ]
     },
     "gh2-208": {
-        "name": "Skladné",
+        "name": "Storage Fees",
         "rewards": [
-            "Získejte „Univerzální opasek“ (předmět 160)"
+            "Získejte „Utility Belt“ (předmět 160)"
         ]
     },
     "gh2-209": {
-        "name": "Rovina divokých šelem",
+        "name": "Plane of Wild Beasts",
         "rewards": [
-            "Získejte „Fázovací modla“ (předmět 161)"
+            "Získejte „Phasing Idol“ (předmět 161)"
         ]
     },
     "gh2-210": {
-        "name": "Sklizeň noci",
+        "name": "Harvesting the Night",
         "rewards": [
             "Získejte „The Night's Caress“ (předmět 162)"
         ]
     },
     "gh2-211": {
-        "name": "Morem sužovaná krypta",
+        "name": "Plagued Crypt",
         "rewards": [
-            "Získejte „Přívěsek moru“ (předmět 163)"
+            "Získejte „Pendant of the Plague“ (předmět 163)"
         ]
     },
     "gh2-212": {
-        "name": "Nepřirozené urážky",
+        "name": "Unnatural Insults",
         "rewards": [
-            "Získejte „Maska smrti“ (předmět 164)"
+            "Získejte „Mask of Death“ (předmět 164)"
         ]
     },
     "gh2-213": {
-        "name": "Bitva bardů",
+        "name": "Battle of the Bards",
         "rewards": [
-            "Získejte „Mistrova loutna“ (předmět 165)"
+            "Získejte „Master's Lute“ (předmět 165)"
         ]
     },
     "gh2-214": {
-        "name": "Zkažený hon",
+        "name": "Corrupted Hunt",
         "rewards": [
-            "Získejte „Plášť lovce“ (předmět 166)"
+            "Získejte „Cloak of the Hunter“ (předmět 166)"
         ]
     },
     "gh2-215": {
         "name": "Následky",
         "rewards": [
-            "Získejte „Doktorský plášť“ (předmět 167)"
+            "Získejte „Doctor's Coat“ (předmět 167)"
         ]
     },
     "gh2-216": {
-        "name": "Elementární tajemství",
+        "name": "Elemental Secrets",
         "rewards": [
             "Získejte „Elemental Vest“ (předmět 168)"
         ]
     },
     "gh2-217": {
-        "name": "Medvěd v kleci",
+        "name": "The Caged Bear",
         "rewards": [
-            "Získejte „Hůl rozkazů“ (předmět 169)"
+            "Získejte „Staff of Command“ (předmět 169)"
         ]
     },
     "gh2-218": {
-        "name": "Písky času",
+        "name": "The Sands of Time",
         "rewards": [
             "Získejte „Crawling Carapace“ (předmět 170)"
         ]

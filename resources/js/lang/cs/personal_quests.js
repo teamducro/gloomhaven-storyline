@@ -607,14 +607,14 @@ export default {
         ]
     },
     "gh2-3": {
-        "name": "Vylepšené schopnosti",
+        "name": "Augmented Abilities",
         "progress": [
-            "Zakupte pět vylepšení (vyžaduje globální úspěch „Síla vylepšení“).",
+            "Zakupte pět vylepšení (vyžaduje globální úspěch „The Power of Enhancement“).",
             "Přečtěte si {SECTION} 71.2."
         ]
     },
     "gh2-4": {
-        "name": "Pád člověka",
+        "name": "The Fall of Man",
         "progress": [
             "Získejte „Aesther Spyglass“ (předmět 149). Nelze jej prodat.",
             "Použijte „Aesther Spyglass“ (předmět 149) desetkrát.",
@@ -623,7 +623,7 @@ export default {
         ]
     },
     "gh2-5": {
-        "name": "Hledač Xornu",
+        "name": "Seeker of Xorn",
         "progress": [
             "Získejte úroveň a odemkněte {SCENARIO 57}.",
             "Dovedte {SCENARIO 57} k závěru.",
@@ -632,7 +632,7 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "Fanatik Krvavého boha",
+        "name": "Zealot of the Blood God",
         "progress": [
             "Dokončete deset scénářů, v nichž skončíte s BZ na polovině maxima nebo níže, aniž byste se vyčerpali.",
             "Přečtěte si {SECTION} 122.3."
@@ -646,7 +646,7 @@ export default {
         ]
     },
     "gh2-8": {
-        "name": "Vezměte stromy zpět",
+        "name": "Take Back the Trees",
         "progress": [
             "Zažijte se svou družinou deset událostí na cestách.",
             "Přečtěte si {SECTION} 64.3.",
@@ -655,7 +655,7 @@ export default {
         ]
     },
     "gh2-9": {
-        "name": "Hledání léku",
+        "name": "Finding the Cure",
         "progress": [
             "Dokončete scénáře v pěti z těchto oblastí: Měděné hory, Mrtvolný les, Dýkový les, Gloomhaven, Přetrvávající bažina, Mlžné moře, Hlídací hory.",
             "Přečtěte si {SECTION} 55.3.",
@@ -664,9 +664,9 @@ export default {
         ]
     },
     "gh2-10": {
-        "name": "Zabiják zrůd",
+        "name": "Aberrant Slayer",
         "progress": [
-            "Vylepšete kartu schopnosti (svou nebo spojencovu) živlem {ANY} (vyžaduje globální úspěch „Síla vylepšení“).",
+            "Vylepšete kartu schopnosti (svou nebo spojencovu) živlem {ANY} (vyžaduje globální úspěch „The Power of Enhancement“).",
             "Přečtěte si {SECTION} 14.3.",
             "Dovedte {SCENARIO 64} k závěru."
         ]
@@ -680,7 +680,7 @@ export default {
         ]
     },
     "gh2-12": {
-        "name": "Nástroj světla",
+        "name": "Implement of Light",
         "progress": [
             "Okamžitě odemkněte {SCENARIO 65}.",
             "Najděte „Shield of the Righteous“ (předmět 148).",
@@ -689,7 +689,7 @@ export default {
         ]
     },
     "gh2-13": {
-        "name": "Obchodnická třída",
+        "name": "Merchant Class",
         "progress": [
             "Vlastněte tři předměty {HEAD}.",
             "Vlastněte tři předměty {BODY}.",
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "gh2-14": {
-        "name": "Věčný poutník",
+        "name": "Eternal Wanderer",
         "progress": [
             "Dokončete 12 různých scénářů.",
             "Přečtěte si {SECTION} 52.2."
@@ -715,7 +715,7 @@ export default {
         ]
     },
     "gh2-16": {
-        "name": "Dokonalý jed",
+        "name": "The Perfect Poison",
         "progress": [
             "Získejte „Otrávenou dýku“ (předmět 7).",
             "Použijte ji k uvalení {POISON} na nepřítele bez {POISON} 30krát.",
@@ -731,7 +731,7 @@ export default {
         ]
     },
     "gh2-18": {
-        "name": "Bitevní legenda",
+        "name": "Battle Legend",
         "progress": [
             "Získejte 12 talentových bodů za splněné malé úkoly.",
             "Přečtěte si {SECTION} 23.3."
@@ -745,7 +745,7 @@ export default {
         ]
     },
     "gh2-20": {
-        "name": "Zbožnost ve všem",
+        "name": "Piety in All Things",
         "progress": [
             "Darujte 120 zlaťáků do Temple of the Great Oak.",
             "Přečtěte si {SECTION} 51.5."
@@ -759,7 +759,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "Lov trofejí",
+        "name": "Trophy Hunt",
         "progress": [
             "Zabijte 20 různých druhů nestvůr.",
             "Přečtěte si {SECTION} 21.1."

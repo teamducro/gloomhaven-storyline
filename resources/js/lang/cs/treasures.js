@@ -741,25 +741,25 @@ export default {
         "name": "Získejte 10 peněz."
     },
     "gh2-1": {
-        "name": "Získejte „Magmové holínky“ (předmět 142)"
+        "name": "Získejte „Magma Waders“ (předmět 142)"
     },
     "gh2-2": {
         "name": "Utrpěte 3 zranění a získejte {POISON}"
     },
     "gh2-3": {
-        "name": "Získejte „Hvězdné náušnice“ (předmět 63)"
+        "name": "Získejte „Star Earring“ (předmět 63)"
     },
     "gh2-4": {
-        "name": "Získejte „Plášť fázování“ (předmět 98)"
+        "name": "Získejte „Cloak of Phasing“ (předmět 98)"
     },
     "gh2-5": {
-        "name": "Získejte „Přívěsek temných paktů“ (předmět 128)"
+        "name": "Získejte „Pendant of Dark Pacts“ (předmět 128)"
     },
     "gh2-6": {
         "name": "Náhodný vedlejší scénář"
     },
     "gh2-7": {
-        "name": "Získejte „Zlodějská kapuce“ (předmět 108)"
+        "name": "Získejte „Thief's Hood“ (předmět 108)"
     },
     "gh2-8": {
         "name": "Utrpěte 3 zranění a získejte {CURSE}"
@@ -792,10 +792,10 @@ export default {
         "name": "Získejte 15 zlaťáků"
     },
     "gh2-18": {
-        "name": "Získejte „Nestabilní výbušniny“ (předmět 99)"
+        "name": "Získejte „Unstable Explosives“ (předmět 99)"
     },
     "gh2-19": {
-        "name": "Získejte „Boty z dračích šupin“ (předmět 119)"
+        "name": "Získejte „Drakescale Boots“ (předmět 119)"
     },
     "gh2-20": {
         "name": "Získejte 25 zlaťáků"
@@ -804,7 +804,7 @@ export default {
         "name": "Získejte 2 ✔"
     },
     "gh2-22": {
-        "name": "Získejte „Přilba hory“ (předmět 129) a „Horské kladivo“ (předmět 130)"
+        "name": "Získejte „Helm of the Mountain“ (předmět 129) a „Mountain Hammer“ (předmět 130)"
     },
     "gh2-23": {
         "name": "Získejte 15 zlaťáků"
@@ -831,7 +831,7 @@ export default {
         "name": "Získejte 20 zkušeností"
     },
     "gh2-31": {
-        "name": "Získejte „Hřeben vlny“ (předmět 131)"
+        "name": "Získejte „Wave Crest“ (předmět 131)"
     },
     "gh2-32": {
         "name": "Náhodný vedlejší scénář"
@@ -840,7 +840,7 @@ export default {
         "name": "Získejte „Cure Potion“ (předmět 101)"
     },
     "gh2-34": {
-        "name": "Získejte „Přilba z dračích šupin“ (předmět 121)"
+        "name": "Získejte „Drakescale Helm“ (předmět 121)"
     },
     "gh2-35": {
         "name": "Získejte „Rod of Transference“ (předmět 115)"
@@ -849,7 +849,7 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh2-37": {
-        "name": "Získejte „Boty štěstí“ (předmět 97)"
+        "name": "Získejte „Shoes of Happiness“ (předmět 97)"
     },
     "gh2-38": {
         "name": "Získejte 1 ✔"
@@ -858,7 +858,7 @@ export default {
         "name": "Získejte 20 zkušeností"
     },
     "gh2-40": {
-        "name": "Získejte „Poháněný falchion“ (předmět 110)"
+        "name": "Získejte „Fueled Falchion“ (předmět 110)"
     },
     "gh2-41": {
         "name": "Získejte 15 zlaťáků"
@@ -888,7 +888,7 @@ export default {
         "name": "Získejte 15 zkušeností"
     },
     "gh2-50": {
-        "name": "Získejte „Parní zbroj“ (předmět 106)"
+        "name": "Získejte „Steam Armor“ (předmět 106)"
     },
     "gh2-51": {
         "name": "Získejte 15 zkušeností"
@@ -900,7 +900,7 @@ export default {
         "name": "Získejte 1 ✔"
     },
     "gh2-54": {
-        "name": "Získejte 15 zlaťáků a „Ocelový prsten“ (předmět 102)"
+        "name": "Získejte 15 zlaťáků a „Steel Ring“ (předmět 102)"
     },
     "gh2-55": {
         "name": "Získejte 20 zkušeností"
@@ -939,7 +939,7 @@ export default {
         "name": "Získejte {POISON} a {STRENGTHEN} a získejte zpět 2 ztracené karty"
     },
     "gh2-67": {
-        "name": "Získejte „Zkázonosný kompas“ (předmět 132)"
+        "name": "Získejte „Doomed Compass“ (předmět 132)"
     },
     "gh2-68": {
         "name": "Náhodný nákres předmětu"
@@ -957,13 +957,13 @@ export default {
         "name": "Získejte 25 zlaťáků"
     },
     "gh2-73": {
-        "name": "Získejte „Náhrdelník ze zubů“ (předmět 107)"
+        "name": "Získejte „Necklace of Teeth“ (předmět 107)"
     },
     "gh2-74": {
         "name": "Utrpěte 3 zranění a získejte {IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "Získejte „Zbroj z dračích šupin“ (předmět 120)"
+        "name": "Získejte „Drakescale Armor“ (předmět 120)"
     },
     "gh2-76": {
         "name": "Náhodný nákres předmětu"

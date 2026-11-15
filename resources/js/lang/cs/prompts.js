@@ -193,26 +193,26 @@ export default {
         "1": "Oddíl 18.3",
         "2": "Oddíl 44.3",
         "3": "Oddíl 51.1",
-        "title": "Výstup na Ledový útes",
+        "title": "Icecrag Ascent",
         "text": "Který oddíl se závěrem jste četli?"
     },
     "gh2-27": {
         "1": "Oddíl 10.1",
         "2": "Oddíl 50.2",
-        "title": "Pekelný trůn",
+        "title": "Infernal Throne",
         "text": "Který oddíl se závěrem jste četli?"
     },
     "gh2-28": {
         "1": "Oddíl 72.3",
         "2": "Oddíl 75.3",
         "3": "Oddíl 76.4",
-        "title": "Chrám Věštce",
+        "title": "Temple of the Seer",
         "text": "Který oddíl se závěrem jste četli?"
     },
     "gh2-31": {
         "1": "Oddíl 26.6",
         "2": "Oddíl 76.1",
-        "title": "Zchátralý les",
+        "title": "Decrepit Wood",
         "text": "Který oddíl se závěrem jste četli?"
     },
     "gh2-32": {
@@ -222,13 +222,13 @@ export default {
         "4": "Oddíl 78.6",
         "5": "Oddíl 78.6 a 81.5",
         "6": "Oddíl 81.5",
-        "title": "Savvasova zbrojnice",
+        "title": "Savvas Armory",
         "text": "Který oddíl se závěrem jste četli?"
     },
     "gh2-34": {
         "1": "Oddíl 36.4",
         "2": "Oddíl 89.2",
-        "title": "Omšelá hrobka",
+        "title": "Timeworn Tomb",
         "text": "Který oddíl se závěrem jste četli?"
     },
     "gh2-43": {
