@@ -280,7 +280,7 @@ export default {
         ]
     },
     "DR": {
-        "name": "Vidente",
+        "name": "Diviner",
         "perks": [
             "Remove duas cartas {-1_WHITE}",
             "Remove uma carta {-2_WHITE}",
@@ -579,7 +579,7 @@ export default {
         ]
     },
     "DF": {
-        "name": "Andarilho",
+        "name": "Drifter",
         "masteries": [
             "Termina um cenário com as tuas fichas de personagem nos últimos espaços de quatro habilidades persistentes",
             "Nunca realizes uma habilidade de movimento ou ataque com valor menor que 4 e realiza pelo menos uma habilidade de movimento ou ataque a cada ronda"

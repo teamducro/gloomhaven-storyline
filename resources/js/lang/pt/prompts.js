@@ -8,7 +8,7 @@ export default {
     "burningMountain": {
         "1": "Conclusão A: Decidem terminar o turno em G e remover um dos itens do jogo.",
         "2": "Conclusão B: Depois de saquear o baú, todos os personagens voltaram à entrada antes de ficarem exaustos.",
-        "title": "Fuga da Montanha Flamejante",
+        "title": "Fuga da Montanha em Chamas",
         "text": "Vocês saquearam o tesouro. Atrevem-se a fugir do vulcão a ribombar e a ficar com os itens recuperados?"
     },
     "merchantsBay": {
@@ -193,7 +193,7 @@ export default {
         "1": "Secção 18.3",
         "2": "Secção 44.3",
         "3": "Secção 51.1",
-        "title": "Escalada do Icecrag",
+        "title": "Escalada do Penhasco de Gelo",
         "text": "Qual secção de conclusão leram?"
     },
     "gh2-27": {
@@ -222,13 +222,13 @@ export default {
         "4": "Secção 78.6",
         "5": "Secções 78.6 e 81.5",
         "6": "Secção 81.5",
-        "title": "Arsenal dos Savvas",
+        "title": "Armaria Savvas",
         "text": "Qual secção de conclusão leram?"
     },
     "gh2-34": {
         "1": "Secção 36.4",
         "2": "Secção 89.2",
-        "title": "Tumba Envelhecida",
+        "title": "Túmulo Desgastado pelo Tempo",
         "text": "Qual secção de conclusão leram?"
     },
     "gh2-43": {

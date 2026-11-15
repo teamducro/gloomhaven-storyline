@@ -234,7 +234,7 @@ export default {
         "name": "“Ancient Bow” (Item 157)"
     },
     "fc-79": {
-        "name": "Ganha “Ancient Bow” (Item 157)"
+        "name": "Ganha “Estatueta de Falcão” (Item 157)"
     },
     "fc-80": {
         "name": "Ganha 1 ✓ e adiciona o Evento de Fenda 19 ao baralho"
@@ -255,7 +255,7 @@ export default {
         "name": "Sofre 3 de dano, recebe {POISON} e 10 moedas de ouro"
     },
     "fc-86": {
-        "name": "Desbloqueia o cenário solo da Vidente {DR}, “Forecast of the Inevitable” (vê a página 25 do livro principal)"
+        "name": "Desbloqueia o cenário solo do Diviner {DR}, “Forecast of the Inevitable” (vê a página 25 do livro principal)"
     },
     "fc-87": {
         "name": "Sofre 2 de dano, recebe MALDIÇÃO e 15 moedas de ouro"
@@ -270,7 +270,7 @@ export default {
         "name": "10 moedas de ouro para cada personagem, lê a secção 75 na página 49"
     },
     "fc-91": {
-        "name": "Ganha 30 moedas de ouro e a conquista do grupo “Opportunists”. Adicionem o Evento de Cidade 84 ao baralho"
+        "name": "Ganha 30 moedas de ouro e a conquista do grupo “Opportunists”. Adiciona o Evento de Cidade 84 ao baralho"
     },
     "fc-93": {
         "name": "“Scroll of Haste” (Item 159)"
@@ -279,7 +279,7 @@ export default {
         "name": "Ganha 1 ✓ e adiciona o Evento de Fenda 20 ao baralho"
     },
     "fc-95": {
-        "name": "Ganha 25 moedas de ouro e a conquista do grupo “A Strongbox”. Adicionem o Evento de Cidade 85 ao baralho"
+        "name": "Ganha 25 moedas de ouro e a conquista do grupo “A Strongbox”. Adiciona o Evento de Cidade 85 ao baralho"
     },
     "fc-96": {
         "name": "Encontras um velho tomo repleto de desenhos técnicos e esquemas de projeto de uma grande variedade de máquinas exóticas. Há uma curiosa nota manuscrita na parte interna da capa: {NOTE_115}"

@@ -24,7 +24,7 @@ export default {
     },
     "gh-513": {
         "name": "Em Busca da Cura",
-        "unlock": "Abram o envelope X",
+        "unlock": "Abre o envelope X",
         "progress": [
             "Mata oito Diabretes da Floresta.",
             "Conclui o {SCENARIO 59}."
@@ -111,7 +111,7 @@ export default {
     },
     "gh-526": {
         "name": "Vingança",
-        "unlock": "Abram o envelope X",
+        "unlock": "Abre o envelope X",
         "progress": [
             "Conclui quatro cenários em Gloomhaven.",
             "Conclui o {SCENARIO 57}."
@@ -500,7 +500,7 @@ export default {
             "Conclui um cenário no Bosque Fogo-Branco.",
             "Conclui um cenário nas Montanhas de Pescoço de Cobre.",
             "Conclui um cenário na Floresta Radiante.",
-            "Conclui um cenário nos Campos de Cristal.",
+            "Conclui um cenário nos Crystal Fields.",
             "Conclui um cenário no Mar Mordaz."
         ]
     },
@@ -747,7 +747,7 @@ export default {
     "gh2-20": {
         "name": "Piedade em Todas as Coisas",
         "progress": [
-            "Doa 120 moedas de ouro ao Templo do Grande Carvalho.",
+            "Doa 120 moedas de ouro ao Temple of the Great Oak.",
             "Lê a {SECTION} 51.5."
         ]
     },

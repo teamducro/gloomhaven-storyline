@@ -345,7 +345,7 @@ export default {
     },
     "gh-68": {
         "name": "Alabarda",
-        "source": "Prosperidade 9\n{SCENARIO 111} (Tesouro #92)\nSecção 132 -> g106 “Parque do Estrangulador” no livro",
+        "source": "Prosperidade 9\n{SCENARIO 111} (Tesouro #92)\nSecção 132 -> g106 “Strangler's Park” no livro",
         "desc": "Durante o teu ataque corpo a corpo de alvo único, podes atacar um único inimigo a até 2 hexágonos."
     },
     "gh-69": {
@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Anel da Segunda Chance",
-        "source": "Prosperidade 9\nCenário Desafio de FC, Carta de Fenda 12 (Tesouro #89)\nSecção 103 -> 84 “Portal para o Firmamento” no livro",
+        "source": "Prosperidade 9\nCenário Desafio de FC, Carta de Fenda 12 (Tesouro #89)\nSecção 103 -> 84 “Gateway to the Firmament” no livro",
         "desc": "No final do teu turno, joga duas cartas da tua mão e realiza um turno adicional nesta ronda com base na tua nova iniciativa principal (que deve ser posterior à tua iniciativa anterior)."
     },
     "gh-71": {
@@ -772,7 +772,7 @@ export default {
     },
     "gh-152": {
         "name": "Ring of Duality",
-        "source": "Recompensa do {SCENARIO 97}\nSecção 125 “Um Baú Trancado” no livro",
+        "source": "Recompensa do {SCENARIO 97}\nSecção 125 “A locked chest” no livro",
         "desc": "Depois de realizar a ação superior de qualquer carta de habilidade, podes realizar imediatamente a ação inferior da mesma carta. Este item não pode ser usado se ambas as ações ativarem um ícone de carta perdida {CONSUMED}."
     },
     "gh-153": {
@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Ancient Bow",
-        "source": "{SCENARIO 107} (Tesouro #78)\nSecção 32 “Átrio Desabado” no livro",
+        "source": "{SCENARIO 107} (Tesouro #78)\nSecção 32 “Collapsed Atrium” no livro",
         "desc": "Durante o teu ataque à distância, adiciona +2 {ATTACK}, {CURSE} e {WOUND} a um único ataque."
     },
     "gh-158": {

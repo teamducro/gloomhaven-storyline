@@ -30,7 +30,7 @@ export default {
         "name": "O Poder do Aprimoramento"
     },
     "gh-PSC": {
-        "name": "O Incensário de Stonebreaker"
+        "name": "Incensário do Quebra-Pedras"
     },
     "gh-GTRN": {
         "name": "A Fenda Neutralizada"
@@ -45,19 +45,19 @@ export default {
         "name": "Artefacto: Perdido"
     },
     "gh-GAT": {
-        "name": "Tecnologia Anciã"
+        "name": "Tecnologia Antiga"
     },
     "gh-GAT2": {
-        "name": "Tecnologia Anciã x2"
+        "name": "Tecnologia Antiga x2"
     },
     "gh-GAT3": {
-        "name": "Tecnologia Anciã x3"
+        "name": "Tecnologia Antiga x3"
     },
     "gh-GAT4": {
-        "name": "Tecnologia Anciã x4"
+        "name": "Tecnologia Antiga x4"
     },
     "gh-GAT5": {
-        "name": "Tecnologia Anciã x5"
+        "name": "Tecnologia Antiga x5"
     },
     "gh-PTR": {
         "name": "Através das Ruínas"
@@ -75,7 +75,7 @@ export default {
         "name": "Um Convite"
     },
     "gh-GTED": {
-        "name": "A Beira das Trevas"
+        "name": "O Limiar da Escuridão"
     },
     "gh-PTSV": {
         "name": "O Cetro e a Voz"
@@ -102,7 +102,7 @@ export default {
         "name": "Através da Trincheira"
     },
     "gh-PRA": {
-        "name": "A Ajuda do Espinho Vermelho"
+        "name": "Ajuda de Espinho Vermelho"
     },
     "gh-PATD": {
         "name": "Através da Divisão"
@@ -114,7 +114,7 @@ export default {
         "name": "A Voz Silenciada"
     },
     "gh-GWB": {
-        "name": "Respiração Subaquática"
+        "name": "Respiração Aquática"
     },
     "gh-GEOC": {
         "name": "Fim da Corrupção"
@@ -387,7 +387,7 @@ export default {
         "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
-        "name": "Tecnologia Anciã"
+        "name": "Tecnologia Antiga"
     },
     "gh2-G2CRD": {
         "name": "City Rule: Demons"
