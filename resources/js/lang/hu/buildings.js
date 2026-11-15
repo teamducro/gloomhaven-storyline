@@ -7,7 +7,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Közösen vásárolhattok legfeljebb 1 {METAL} 2 aranyért",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {METAL}-t 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -15,7 +15,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Közösen vásárolhattok legfeljebb 2 {METAL} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {METAL}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -23,7 +23,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Közösen vásárolhattok legfeljebb 3 {METAL} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {METAL}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -31,7 +31,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Közösen vásárolhattok legfeljebb 4 {METAL} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {METAL}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -47,7 +47,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Közösen vásárolhattok legfeljebb 1 {HIDE} 2 aranyért",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {HIDE}-t 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -55,7 +55,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Közösen vásárolhattok legfeljebb 2 {HIDE} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {HIDE}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -63,7 +63,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Közösen vásárolhattok legfeljebb 3 {HIDE} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {HIDE}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -71,7 +71,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Közösen vásárolhattok legfeljebb 4 {HIDE} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {HIDE}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -87,7 +87,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Közösen vásárolhattok legfeljebb 1 {LUMBER} 2 aranyért",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {LUMBER}-t 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -95,7 +95,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Közösen vásárolhattok legfeljebb 2 {LUMBER} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {LUMBER}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -103,7 +103,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Közösen vásárolhattok legfeljebb 3 {LUMBER} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {LUMBER}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -111,7 +111,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Közösen vásárolhattok legfeljebb 4 {LUMBER} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {LUMBER}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -201,15 +201,15 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-t",
                 "passive": "",
-                "rewards": "add hozzá a 001–010 felszereléseket a felszerelés-készlethez"
+                "rewards": "Add hozzá a 001–010 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 011–015 felszereléseket a felszerelés-készlethez"
             },
@@ -217,7 +217,7 @@ export default {
                 "level": 3,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 1 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 016–020 felszereléseket a felszerelés-készlethez"
             },
@@ -225,7 +225,7 @@ export default {
                 "level": 4,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 021–025 felszereléseket a felszerelés-készlethez"
             },
@@ -233,7 +233,7 @@ export default {
                 "level": 5,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 026–030 felszereléseket a felszerelés-készlethez"
             },
@@ -241,7 +241,7 @@ export default {
                 "level": 6,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 2 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 2 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 031–035 felszereléseket a felszerelés-készlethez"
             },
@@ -249,7 +249,7 @@ export default {
                 "level": 7,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 036–040 felszereléseket a felszerelés-készlethez"
             },
@@ -257,7 +257,7 @@ export default {
                 "level": 8,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 041–045 felszereléseket a felszerelés-készlethez"
             },
@@ -265,7 +265,7 @@ export default {
                 "level": 9,
                 "operations": "",
                 "downtime": "Felszerelések készítése",
-                "wrecked": "Veszíts el közösen 3 {HIDE}-ot",
+                "wrecked": "Veszíts el közösen 3 {HIDE}-t",
                 "passive": "",
                 "rewards": "+1 Városfejlettség, add hozzá a 046–050 felszereléseket a felszerelés-készlethez"
             }
@@ -551,7 +551,7 @@ export default {
             },
             {
                 "level": 3,
-                "requires": "3 Ősi érme szükséges (Felszerelés 245)",
+                "requires": "3 Ancient Coin szükséges (Felszerelés 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Veszíts el 1 morált",
@@ -707,7 +707,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nem teljesíthetők kihívások",
-                "passive": "Húzz egy kihívást, és tarts meg legfeljebb egyet-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "passive": "Húzz egy kihívást, és tarts meg legfeljebb egyet. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
                 "rewards": "+1 Városfejlettség, olvasd el: 189.1. szakasz"
             },
             {
@@ -715,7 +715,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nem teljesíthetők kihívások",
-                "passive": "Húzz kettőt kihívást, és tarts meg legfeljebb egyet-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "passive": "Húzz két kihívást, és tarts meg legfeljebb egyet. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
                 "rewards": "+1 Városfejlettség"
             },
             {
@@ -723,7 +723,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nem teljesíthetők kihívások",
-                "passive": "Húzz hármat kihívást, és tarts meg legfeljebb kettőt-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "passive": "Húzz három kihívást, és tarts meg legfeljebb kettőt. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
                 "rewards": "+1 Városfejlettség"
             }
         ]

@@ -26,7 +26,7 @@ export default {
         "name": "Finding the Cure",
         "unlock": "Nyisd ki az alábbi borítékot: X",
         "progress": [
-            "Ölj meg nyolc erdei impet.",
+            "Ölj meg nyolc Forest Impet.",
             "Fejezd be: {SCENARIO 59}."
         ]
     },
@@ -63,20 +63,20 @@ export default {
     "gh-519": {
         "name": "Battle Legend",
         "progress": [
-            "Szerezz tizenöt ✔-t a teljesített jártasságokból."
+            "Szerezz tizenöt ✔-t a teljesített csatacélokból."
         ]
     },
     "gh-520": {
         "name": "Implement of Light",
         "progress": [
             "Találd meg a Skullbane Axe-t a nekromata szentélyében.",
-            "Használd arra, hogy megölj hét Élő Csontot, Élő Holttestet vagy Élő Szellemet."
+            "Használd arra, hogy megölj hét Living Bones, Living Corpse vagy Living Spirit szörnyet."
         ]
     },
     "gh-521": {
         "name": "Take Back the Trees",
         "progress": [
-            "Teljesíts három küldetést a Tőrerdőben.",
+            "Teljesíts három küldetést a Dagger Forestben.",
             "Fejezd be: {SCENARIO 55}."
         ]
     },
@@ -89,12 +89,12 @@ export default {
     "gh-523": {
         "name": "Aberrant Slayer",
         "progress": [
-            "Ölj meg egy láng démont.",
-            "Ölj meg egy fagy démont.",
-            "Ölj meg egy szél démont.",
-            "Ölj meg egy föld démont.",
-            "Ölj meg egy éj démont.",
-            "Ölj meg egy nap démont."
+            "Ölj meg egy Flame Demont.",
+            "Ölj meg egy Frost Demont.",
+            "Ölj meg egy Wind Demont.",
+            "Ölj meg egy Earth Demont.",
+            "Ölj meg egy Night Demont.",
+            "Ölj meg egy Sun Demont."
         ]
     },
     "gh-524": {
@@ -132,7 +132,7 @@ export default {
     "gh-529": {
         "name": "The Fall of Man",
         "progress": [
-            "Teljesíts 2 küldetést a Kísértő mocsárban.",
+            "Teljesíts 2 küldetést a Lingering Swampban.",
             "Fejezd be: {SCENARIO 61}."
         ]
     },
@@ -146,11 +146,11 @@ export default {
         "name": "Elemental Samples",
         "progress": [
             "Teljesíts egy küldetést Homályrévben.",
-            "Teljesíts egy küldetést a Tőrerdőben.",
-            "Teljesíts egy küldetést a Kísértő mocsárban",
-            "Teljesíts egy küldetést az Őrszem-hegységben",
-            "Teljesíts egy küldetést a Rézgallér-hegységben",
-            "Teljesíts egy küldetést a Ködös-tengeren."
+            "Teljesíts egy küldetést a Dagger Forestben.",
+            "Teljesíts egy küldetést a Lingering Swampban",
+            "Teljesíts egy küldetést a Watcher Mountainsban",
+            "Teljesíts egy küldetést a Copperneck Mountainsban",
+            "Teljesíts egy küldetést a Misty Sea-n."
         ]
     },
     "gh-532": {
@@ -162,9 +162,9 @@ export default {
     "gh-533": {
         "name": "The Perfect Poison",
         "progress": [
-            "Ölj meg három iszapot.",
-            "Ölj meg három lurkert.",
-            "Ölj meg három köpködő gyíkot."
+            "Ölj meg három Ooze-t.",
+            "Ölj meg három Lurkert.",
+            "Ölj meg három Spitting Drake-et."
         ]
     },
     "cs-330": {
@@ -208,7 +208,7 @@ export default {
     "cs-336": {
         "name": "Creatures in the light",
         "progress": [
-            "Ölj meg húsz iszapot, erdei impet vagy fekete impet."
+            "Ölj meg húsz Ooze, Forest Imp vagy Black Imp szörnyet."
         ]
     },
     "cs-337": {
@@ -220,7 +220,7 @@ export default {
     "cs-338": {
         "name": "Adrenaline Spike",
         "progress": [
-            "Ölj meg egy ellenséget, és zsákmányold ki a pénzjelölőjét ugyanabban a körben tizenötször."
+            "Ölj meg egy ellenséget, és zsákmányold a pénzjelölőjét ugyanabban a körben tizenötször."
         ]
     },
     "cs-339": {
@@ -303,7 +303,7 @@ export default {
     "cs-351": {
         "name": "Limitless Searching",
         "progress": [
-            "Zsákmányolj ki 30 pénzjelölőt."
+            "Zsákmányolj 30 pénzjelölőt."
         ]
     },
     "cs-aa-001": {
@@ -323,15 +323,15 @@ export default {
     "cs-qa-001": {
         "name": "Ingenious Inventor",
         "progress": [
-            "Azonnal szerezd meg: “Power Modulator” (Felszerelés QA-01)",
-            "Ölj meg 12 ellenséget a “Power Modulator” (Felszerelés QA-01) segítségével",
+            "Azonnal szerezd meg: „Power Modulator” (Felszerelés QA-01)",
+            "Ölj meg 12 ellenséget a „Power Modulator” (Felszerelés QA-01) segítségével",
             "Fejezd be: {SCENARIO QA1}"
         ]
     },
     "cs-qa-002": {
         "name": "Scrap Diver",
         "progress": [
-            "Zsákmányolj ki két vagy több pénzjelölőt egyetlen akcióval nyolcszor.",
+            "Zsákmányolj két vagy több pénzjelölőt egyetlen akcióval nyolcszor.",
             "Fosszd ki két kincsmezőt.",
             "Fejezd be: {SCENARIO QA2}."
         ]
@@ -339,7 +339,7 @@ export default {
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "Szerezd meg a “Serrated Edge” tervrajzot (Felszerelés RM-01).",
+            "Szerezd meg a „Serrated Edge” tervrajzot (Felszerelés RM-01).",
             "Alkalmazz {WOUND} vagy {RUPTURE} állapotot harminc ellenségre.",
             "Fejezd be: {SCENARIO RM1}."
         ]
@@ -368,7 +368,7 @@ export default {
             42
         ],
         "progress": [
-            "Személyesen zsákmányolj ki összesen nyolc fa zsákmánylapot zsákmányjelölőkkel.",
+            "Személyesen zsákmányolj összesen nyolc fa zsákmánylapot zsákmányjelölőkkel.",
             "Old fel: {SCENARIO 69}, és vidd végkifejletig."
         ]
     },
@@ -434,7 +434,7 @@ export default {
             88
         ],
         "progress": [
-            "Ölj meg két algox őrt.",
+            "Ölj meg két Algox Guardot.",
             "Ölj meg két Lurker Clawcrushert.",
             "Ölj meg két Robotic Boltshootert."
         ]
@@ -497,11 +497,11 @@ export default {
             72
         ],
         "progress": [
-            "Teljesíts egy küldetést a Fehértűz-erdőben.",
-            "Teljesíts egy küldetést a Rézgallér-hegységben.",
-            "Teljesíts egy küldetést a Ragyogó erdőben.",
-            "Teljesíts egy küldetést a Kristálymezőkön.",
-            "Teljesíts egy küldetést a Harapós-tengeren."
+            "Teljesíts egy küldetést a Whitefire Woodsban.",
+            "Teljesíts egy küldetést a Copperneck Mountainsban.",
+            "Teljesíts egy küldetést a Radiant Forestben.",
+            "Teljesíts egy küldetést a Crystal Fieldsen.",
+            "Teljesíts egy küldetést a Biting Sea-n."
         ]
     },
     "fh-15": {
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "Adományozz 70 aranyat a Nagy Tölgy templomának."
+            "Adományozz 70 aranyat a Temple of the Great Oak épületnek."
         ]
     },
     "fh-16": {
@@ -531,7 +531,7 @@ export default {
             67
         ],
         "progress": [
-            "Szerezz 16 {CHECK}-et a teljesített jártasságokból."
+            "Szerezz 16 {CHECK}-et a teljesített csatacélokból."
         ]
     },
     "fh-18": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "Szerezd meg az “Abyss Axe” (Felszerelés 039) tervrajzot, és használd arra, hogy megölj tíz Frozen Corpse-t, Ice Wraitht és/vagy Living Doomot."
+            "Szerezd meg az „Abyss Axe” (Felszerelés 039) tervrajzot, és használd arra, hogy megölj tíz Frozen Corpse-t, Ice Wraitht és/vagy Living Doomot."
         ]
     },
     "fh-20": {
@@ -602,28 +602,28 @@ export default {
     "gh2-2": {
         "name": "Inn to Hospitality",
         "progress": [
-            "Zsákmányolj ki 60 pénzjelölőt.",
+            "Zsákmányolj 60 pénzjelölőt.",
             "Olvasd el: {SECTION} 125.4."
         ]
     },
     "gh2-3": {
-        "name": "Kibővített képességek",
+        "name": "Augmented Abilities",
         "progress": [
             "Vásárolj öt fejlesztést (szükséges hozzá „A varázsgömb hatalma” általános eredmény).",
             "Olvasd el: {SECTION} 71.2."
         ]
     },
     "gh2-4": {
-        "name": "Az ember bukása",
+        "name": "The Fall of Man",
         "progress": [
-            "Szerezd meg az “Aesther Spyglass” (Felszerelés 149) felszerelést. Nem adható el.",
-            "Használd az “Aesther Spyglass” (Felszerelés 149) felszerelést tízszer.",
+            "Szerezd meg az „Aesther Spyglass” (Felszerelés 149) felszerelést. Nem adható el.",
+            "Használd az „Aesther Spyglass” (Felszerelés 149) felszerelést tízszer.",
             "Olvasd el: {SECTION} 115.2.",
             "Vidd végkifejletig: {SCENARIO 63}."
         ]
     },
     "gh2-5": {
-        "name": "Xorn Keresője",
+        "name": "Seeker of Xorn",
         "progress": [
             "Lépj szintet a {SCENARIO 57} feloldásához.",
             "Vidd végkifejletig: {SCENARIO 57}.",
@@ -632,7 +632,7 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "A Véristen fanatikusa",
+        "name": "Zealot of the Blood God",
         "progress": [
             "Fejezz be tíz küldetést úgy, hogy az életerőd a maximum fele vagy az alatt van, és nem merültél ki.",
             "Olvasd el: {SECTION} 122.3."
@@ -641,12 +641,12 @@ export default {
     "gh2-7": {
         "name": "A Tale to Tell",
         "progress": [
-            "Zsákmányolj ki egy kincsmezőt, vagy légy tanúja, hogy a csapatod kifosztja, tíz küldetésben.",
+            "Zsákmányolj egy kincsmezőt, vagy légy tanúja, hogy a csapatod kifosztja, tíz küldetésben.",
             "Olvasd el: {SECTION} 12.3."
         ]
     },
     "gh2-8": {
-        "name": "Vegyétek vissza a fákat",
+        "name": "Take Back the Trees",
         "progress": [
             "Élj át tíz úti eseményt a csapatoddal.",
             "Olvasd el: {SECTION} 64.3.",
@@ -655,16 +655,16 @@ export default {
         ]
     },
     "gh2-9": {
-        "name": "A gyógymód megtalálása",
+        "name": "Finding the Cure",
         "progress": [
-            "Teljesíts küldetéseket ezek közül öt helyszínen: Rézgallér-hegység, Hullaerdő, Tőrerdő, Homályrév, Kísértő mocsár, Ködös-tenger, Őrszem-hegység.",
+            "Teljesíts küldetéseket ezek közül öt helyszínen: Copperneck Mountains, Corpsewood, Dagger Forest, Homályrév, Lingering Swamp, Misty Sea, Watcher Mountains.",
             "Olvasd el: {SECTION} 55.3.",
             "Vidd végkifejletig: {SCENARIO 61}.",
             "Vidd végkifejletig: {SCENARIO 62}."
         ]
     },
     "gh2-10": {
-        "name": "Torz lények gyilkosa",
+        "name": "Aberrant Slayer",
         "progress": [
             "Fejlessz egy képességlapot (a sajátodat vagy egy szövetségesét) {ANY} elemmel (szükséges hozzá „A varázsgömb hatalma” általános eredmény).",
             "Olvasd el: {SECTION} 14.3.",
@@ -674,22 +674,22 @@ export default {
     "gh2-11": {
         "name": "Adoptive Parent",
         "progress": [
-            "Zsákmányolj ki három, ellenségek által elejtett pénzjelölőt tíz küldetésben.",
+            "Zsákmányolj három, ellenségek által elejtett pénzjelölőt tíz küldetésben.",
             "Olvasd el: {SECTION} 122.5.",
             "Vidd végkifejletig: {SCENARIO 66}."
         ]
     },
     "gh2-12": {
-        "name": "A Fény eszköze",
+        "name": "Implement of Light",
         "progress": [
             "Azonnal old fel: {SCENARIO 65}.",
-            "Találd meg a “Shield of the Righteous” (Felszerelés 148) felszerelést.",
-            "Használd a “Shield of the Righteous” (Felszerelés 148) felszerelést tíz, legalább 4 sebzésű támadás hárítására.",
+            "Találd meg a „Shield of the Righteous” (Felszerelés 148) felszerelést.",
+            "Használd a „Shield of the Righteous” (Felszerelés 148) felszerelést tíz, legalább 4 sebzésű támadás hárítására.",
             "Olvasd el: {SECTION} 82.1."
         ]
     },
     "gh2-13": {
-        "name": "Kereskedő osztály",
+        "name": "Merchant Class",
         "progress": [
             "Birtokolj három {HEAD} felszerelést.",
             "Birtokolj három {BODY} felszerelést.",
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "gh2-14": {
-        "name": "Örök vándor",
+        "name": "Eternal Wanderer",
         "progress": [
             "Teljesíts 12 különböző küldetést.",
             "Olvasd el: {SECTION} 52.2."
@@ -709,15 +709,15 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "Add a 69-es és 70-es városi eseményt a városi eseménypaklihoz. Szerezd meg a “Black Card” (Felszerelés 113) felszerelést. Nem adható el.",
+            "Add a 69-es és 70-es városi eseményt a városi eseménypaklihoz. Szerezd meg a „Black Card” (Felszerelés 113) felszerelést. Nem adható el.",
             "Teljesíts hat mellékküldetést (56 feletti küldetésszám).",
             "Olvasd el: {SECTION} 128.2."
         ]
     },
     "gh2-16": {
-        "name": "A tökéletes méreg",
+        "name": "The Perfect Poison",
         "progress": [
-            "Szerezd meg a “Mérgezett tőr” (Felszerelés 7) felszerelést.",
+            "Szerezd meg a „Mérgezett tőr” (Felszerelés 7) felszerelést.",
             "Használd arra, hogy {POISON} állapotot alkalmazz egy {POISON} állapot nélküli ellenségre 30-szor.",
             "Olvasd el: {SECTION} 8.3."
         ]
@@ -725,15 +725,15 @@ export default {
     "gh2-17": {
         "name": "Living on the Edge",
         "progress": [
-            "Szerezd meg az “Experimental Armor” (Felszerelés 150) felszerelést.",
+            "Szerezd meg az „Experimental Armor” (Felszerelés 150) felszerelést.",
             "Használd arra, hogy 20 ellenség sebzést szenvedjen.",
             "Olvasd el: {SECTION} 47.4."
         ]
     },
     "gh2-18": {
-        "name": "Csatalegenda",
+        "name": "Battle Legend",
         "progress": [
-            "Szerezz 12 pipát a teljesített jártasságokból.",
+            "Szerezz 12 pipát a teljesített csatacélokból.",
             "Olvasd el: {SECTION} 23.3."
         ]
     },
@@ -745,9 +745,9 @@ export default {
         ]
     },
     "gh2-20": {
-        "name": "Jámborság mindenben",
+        "name": "Piety in All Things",
         "progress": [
-            "Adományozz 120 aranyat a Nagy Tölgy templomának.",
+            "Adományozz 120 aranyat a Temple of the Great Oak épületnek.",
             "Olvasd el: {SECTION} 51.5."
         ]
     },
@@ -759,7 +759,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "Trófeavadászat",
+        "name": "Trophy Hunt",
         "progress": [
             "Ölj meg 20 különböző típusú szörnyet.",
             "Olvasd el: {SECTION} 21.1."
@@ -767,33 +767,33 @@ export default {
     },
     "cq-cq01": {
         "name": "Győzd le a démonaidat",
-        "unlock": "Nyiss ki egy tetszőleges osztály- vagy épületborítékot. A jövőbeli karaktereid {PIERCE} 1 és {WOUND} bónuszt kapnak a démonokat célzó támadásaikhoz.",
+        "unlock": "Nyiss ki egy tetszőleges kaszt- vagy épületborítékot. A jövőbeli karaktereid {PIERCE} 1 és {WOUND} bónuszt kapnak a démonokat célzó támadásaikhoz.",
         "progress": [
-            "Ölj meg két így megidézett föld démont.",
-            "Ölj meg két így megidézett láng démont.",
-            "Ölj meg két így megidézett fagy démont.",
-            "Ölj meg két így megidézett éj démont.",
-            "Ölj meg két így megidézett nap démont.",
-            "Ölj meg két így megidézett szél démont."
+            "Ölj meg két így megidézett Earth Demont.",
+            "Ölj meg két így megidézett Flame Demont.",
+            "Ölj meg két így megidézett Frost Demont.",
+            "Ölj meg két így megidézett Night Demont.",
+            "Ölj meg két így megidézett Sun Demont.",
+            "Ölj meg két így megidézett Wind Demont."
         ]
     },
     "cq-cq02": {
         "name": "A barátaid aggódnak",
-        "unlock": "Nyiss ki egy tetszőleges osztály- vagy épületborítékot. Véglegesen elveszítheted a családfádban visszavonult karakterektől szerzett bónusz jártasságjelöléseket. Minden elveszített jártasságjelölésért szerezz 30 aranyat, amelyet azonnal a következő karaktered fejlesztéseire kell költeni.",
+        "unlock": "Nyiss ki egy tetszőleges kaszt- vagy épületborítékot. Véglegesen elveszítheted a családfádban visszavonult karakterektől szerzett bónusz jártasságjelöléseket. Minden elveszített jártasságjelölésért szerezz 30 aranyat, amelyet azonnal a következő karaktered fejlesztéseire kell költeni.",
         "progress": [
-            "Szerezz 30 pipát jártasságokból. Minden küldetésben húzz és tarts meg egy további jártasságot; csak akkor szerzel pipát, ha mindegyiket teljesíted."
+            "Szerezz 30 pipát csatacélokból. Minden küldetésben húzz és tarts meg egy további csatacélt; csak akkor szerzel pipát, ha mindegyiket teljesíted."
         ]
     },
     "cq-cq03": {
         "name": "A harc következményei",
-        "unlock": "Nyiss ki egy tetszőleges osztály- vagy épületborítékot. A jövőbeli karaktereid {STRENGTHEN} állapotot kapnak, valahányszor egy küldetés során {NULL_MODIFIER} lapot húznak.",
+        "unlock": "Nyiss ki egy tetszőleges kaszt- vagy épületborítékot. A jövőbeli karaktereid {STRENGTHEN} állapotot kapnak, valahányszor egy küldetés során {NULL_MODIFIER} lapot húznak.",
         "progress": [
             "Szerezz 50 önmérsékletet: küldetésenként egyszer csökkentsd egy támadás értékét a módosító húzása előtt; csökkentett pontonként szerezz egy önmérsékletet."
         ]
     },
     "cq-cq04": {
         "name": "Drámai végkifejlet",
-        "unlock": "Nyiss ki egy tetszőleges osztály- vagy épületborítékot. A jövőbeli karaktereid azonnal végrehajthatják egy hosszú pihenés lépéseit, valahányszor egy szövetséges kimerül.",
+        "unlock": "Nyiss ki egy tetszőleges kaszt- vagy épületborítékot. A jövőbeli karaktereid azonnal végrehajthatják egy hosszú pihenés lépéseit, valahányszor egy szövetséges kimerül.",
         "progress": [
             "Nyerj meg 10 küldetést, amelyekben az utolsó két akciód egy felső elvesző akció és egy alsó elvesző akció."
         ]
