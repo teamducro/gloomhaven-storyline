@@ -5989,7 +5989,7 @@ export default {
             "name": "화려한 기분 전환"
         },
         "strength-in-agony": {
-            "name": "고통 속의 힘"
+            "name": "strength in agony"
         },
         "defiance-of-death": {
             "name": "죽음에 저항"
@@ -6067,46 +6067,46 @@ export default {
             "name": "bathe in blood"
         },
         "focused-scourge": {
-            "name": "집중된 재앙"
+            "name": "focused scourge"
         },
         "deflecting-blades": {
-            "name": "쳐내는 칼날"
+            "name": "deflecting blades"
         },
         "omniscient-assault": {
-            "name": "전지적 맹공"
+            "name": "omniscient assault"
         },
         "hive-mind": {
-            "name": "군체 정신"
+            "name": "hive mind"
         },
         "corrupting-parasites": {
-            "name": "타락시키는 기생충"
+            "name": "corrupting parasites"
         },
         "death-march": {
-            "name": "죽음의 행진"
+            "name": "death march"
         },
         "engulfing-stingers": {
-            "name": "집어삼키는 독침"
+            "name": "engulfing stingers"
         },
         "swarming-minions": {
-            "name": "우글대는 부하들"
+            "name": "swarming minions"
         },
         "scattered-defense": {
-            "name": "흩어진 방어"
+            "name": "scattered defense"
         },
         "call-of-the-grave": {
-            "name": "무덤의 부름"
+            "name": "call of the grave"
         },
         "the-storms-edge": {
-            "name": "폭풍의 끝자락"
+            "name": "the storms edge"
         },
         "unstoppable-army": {
-            "name": "멈출 수 없는 군대"
+            "name": "unstoppable army"
         },
         "grasping-advance": {
-            "name": "움켜쥐며 전진"
+            "name": "grasping advance"
         },
         "tomb-of-the-immortal": {
-            "name": "불멸자의 무덤"
+            "name": "tomb of the immortal"
         },
         "pressing-pursuit": {
             "name": "pressing pursuit"
@@ -6118,49 +6118,49 @@ export default {
             "name": "썩은 구더기"
         },
         "overwhelming-offensive": {
-            "name": "압도적 공세"
+            "name": "overwhelming offensive"
         },
         "vampiric-tempest": {
-            "name": "흡혈의 폭풍"
+            "name": "vampiric tempest"
         },
         "incubation": {
             "name": "부화"
         },
         "bioluminescence": {
-            "name": "생물 발광"
+            "name": "bioluminescence"
         },
         "cyclone-of-blades": {
-            "name": "칼날 회오리"
+            "name": "cyclone of blades"
         },
         "sunstroke": {
             "name": "일사병"
         },
         "blood-drain": {
-            "name": "피 빨아먹기"
+            "name": "blood drain"
         },
         "fury-of-the-horde": {
-            "name": "무리의 분노"
+            "name": "fury of the horde"
         },
         "repulsive-host": {
-            "name": "역겨운 군세"
+            "name": "repulsive host"
         },
         "bone-daggers": {
             "name": "뼈 단검"
         },
         "endless-biting": {
-            "name": "끝없는 물어뜯기"
+            "name": "endless biting"
         },
         "wasteland": {
             "name": "황무지"
         },
         "oasis": {
-            "name": "오아시스"
+            "name": "oasis"
         },
         "rain-of-arrows": {
             "name": "화살 세례"
         },
         "race-to-the-grave": {
-            "name": "무덤을 향한 질주"
+            "name": "race to the grave"
         },
         "gut-shot": {
             "name": "gut shot"
@@ -6178,7 +6178,7 @@ export default {
             "name": "사냥 시작"
         },
         "solid-bow": {
-            "name": "튼튼한 활"
+            "name": "solid bow"
         },
         "foot-snare": {
             "name": "발목 덫"
@@ -6217,7 +6217,7 @@ export default {
             "name": "coated arrows"
         },
         "felling-swoop": {
-            "name": "쓰러뜨리는 급강하"
+            "name": "felling swoop"
         },
         "expose": {
             "name": "적발"
@@ -6307,7 +6307,7 @@ export default {
             "name": "흑요석 파편"
         },
         "winters-edge": {
-            "name": "겨울의 칼날"
+            "name": "winter's edge"
         },
         "pragmatic-reinforcement": {
             "name": "실용적 보강"
@@ -6679,7 +6679,7 @@ export default {
             "name": "secret of the oak"
         },
         "grisly-trauma": {
-            "name": "끔찍한 외상"
+            "name": "grisly trauma"
         },
         "medical-pack-1": {
             "name": "medical pack 1"

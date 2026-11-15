@@ -632,7 +632,7 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "피의 신의 열성분자",
+        "name": "Zealot of the Blood God",
         "progress": [
             "탈진하지 않고 체력이 최대 체력의 절반 이하인 상태로 시나리오 10개 종료.",
             "{SECTION} 122.3을 읽음."

@@ -1134,7 +1134,7 @@ export default {
         ]
     },
     "BS2": {
-        "name": "블레이드스웜",
+        "name": "Bladeswarm",
         "masteries": [
             "{PERSISTENT}{LOST.fh} 능력 6개를 수행하되, 6개 중 소환 능력은 3개 이하",
             "자격이 있다고 느낄 때 이 숙련을 획득"
@@ -1144,7 +1144,7 @@ export default {
             "{-1_WHITE} 카드 1장을 {+0_WHITE} {POISON.fh} 카드 1장으로 교체",
             "{+0_WHITE} 카드 1장을 {+1_WHITE} {WIND}/{DARK} 카드 1장으로 교체",
             "{+0_WHITE} 카드 1장을 {+1_WHITE} {EARTH}/{LIGHT} 카드 1장으로 교체",
-            "{+0_WHITE} 카드 1장을 {+0_WHITE} “블레이드스웜의 활성 구역에 있는 {LOST.fh} 카드 1장당 +1 {ATTACK.fh} 추가” 카드 1장으로 교체",
+            "{+0_WHITE} 카드 1장을 {+0_WHITE} “Bladeswarm의 활성 구역에 있는 {LOST.fh} 카드 1장당 +1 {ATTACK.fh} 추가” 카드 1장으로 교체",
             "시나리오 효과 무시 및 {+1_WHITE} 카드 1장 추가",
             "아이템 {-1} 효과 무시 및 {+1_WHITE} 카드 1장 추가",
             "긴 휴식을 할 때마다 자신의 소환수가 있는 칸으로 {TELEPORT.fh} 하고, 동시에 그 소환수를 자신이 있던 칸으로 {TELEPORT.fh} 할 수 있음",
