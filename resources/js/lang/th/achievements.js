@@ -3,7 +3,7 @@ export default {
         "name": "ก้าวแรก"
     },
     "gh-PJP": {
-        "name": "Jekserah's Plans"
+        "name": "แผนของ Jekserah"
     },
     "gh-PDB": {
         "name": "รางวัลมืด"
@@ -48,16 +48,16 @@ export default {
         "name": "เทคโนโลยีโบราณ"
     },
     "gh-GAT2": {
-        "name": "Ancient Technology x2"
+        "name": "เทคโนโลยีโบราณ x2"
     },
     "gh-GAT3": {
-        "name": "Ancient Technology x3"
+        "name": "เทคโนโลยีโบราณ x3"
     },
     "gh-GAT4": {
-        "name": "Ancient Technology x4"
+        "name": "เทคโนโลยีโบราณ x4"
     },
     "gh-GAT5": {
-        "name": "Ancient Technology x5"
+        "name": "เทคโนโลยีโบราณ x5"
     },
     "gh-PTR": {
         "name": "ผ่านซากปรักหักพัง"
@@ -66,7 +66,7 @@ export default {
         "name": "คำสั่งของเสียง"
     },
     "gh-PTDC": {
-        "name": "The Drake's Command"
+        "name": "คำสั่งของ The Drake"
     },
     "gh-PFC": {
         "name": "ตามเบาะแส"
@@ -87,13 +87,13 @@ export default {
         "name": "ขุมทรัพย์ของเสียง"
     },
     "gh-PTDT": {
-        "name": "The Drakes Treasure"
+        "name": "ขุมทรัพย์ของ The Drake"
     },
     "gh-GTDS": {
-        "name": "The Drake Slain"
+        "name": "Drake ล้ม"
     },
     "gh-GTDA": {
-        "name": "The Drake Aided"
+        "name": "ช่วยเหลือ Drake"
     },
     "gh-GCRD": {
         "name": "กฎเมือง: ปีศาจ"
@@ -102,7 +102,7 @@ export default {
         "name": "ผ่านร่องลึก"
     },
     "gh-PRA": {
-        "name": "Redthorn's Aid"
+        "name": "ความช่วยเหลือของ Redthorn"
     },
     "gh-PATD": {
         "name": "ข้ามความแตกแยก"
@@ -120,16 +120,16 @@ export default {
         "name": "จุดจบแห่งความเสื่อม"
     },
     "gh-GEOC2": {
-        "name": "End of Corruption x2"
+        "name": "จุดจบแห่งความเสื่อม x2"
     },
     "gh-GEOC3": {
-        "name": "End of Corruption x3"
+        "name": "จุดจบแห่งความเสื่อม x3"
     },
     "gh-GAOO": {
         "name": "การทำลายล้างระเบียบ"
     },
     "gh-GEOG": {
-        "name": "End of Gloom"
+        "name": "จุดจบแห่ง Gloom"
     },
     "gh-PTTN": {
         "name": "ผ่านรัง"
@@ -165,7 +165,7 @@ export default {
         "name": "ไม้เท้าน้ำ"
     },
     "gh-PFA": {
-        "name": "Fish's Aid"
+        "name": "ความช่วยเหลือของ Fish"
     },
     "gh-PT": {
         "name": "การสั่น"
@@ -189,13 +189,13 @@ export default {
         "name": "ความรู้คือพลัง"
     },
     "gh-GKIP2": {
-        "name": "Knowledge is Power x2"
+        "name": "ความรู้คือพลัง x2"
     },
     "gh-GKIP3": {
-        "name": "Knowledge is Power x3"
+        "name": "ความรู้คือพลัง x3"
     },
     "gh-GKIP4": {
-        "name": "Knowledge is Power x4"
+        "name": "ความรู้คือพลัง x4"
     },
     "gh-PAD": {
         "name": "ทูตแห่งความตาย"
@@ -210,10 +210,10 @@ export default {
         "name": "ชิ้นส่วนของสิ่งประดิษฐ์"
     },
     "gh-GPOA2": {
-        "name": "Pieces of an Artifact x2"
+        "name": "ชิ้นส่วนของสิ่งประดิษฐ์ x2"
     },
     "gh-GPOA3": {
-        "name": "Pieces of an Artifact x3"
+        "name": "ชิ้นส่วนของสิ่งประดิษฐ์ x3"
     },
     "gh-PGD": {
         "name": "หน่วยรักษาความปลอดภัย"
@@ -237,13 +237,13 @@ export default {
         "name": "ภัยร้ายผ่านพ้น"
     },
     "gh-GPA2": {
-        "name": "A Peril Averted x2"
+        "name": "ภัยร้ายผ่านพ้น x2"
     },
     "gh-GPA3": {
-        "name": "A Peril Averted x3"
+        "name": "ภัยร้ายผ่านพ้น x3"
     },
     "gh-GPA4": {
-        "name": "A Peril Averted x4"
+        "name": "ภัยร้ายผ่านพ้น x4"
     },
     "gh-GMS": {
         "name": "ความงดงามแห่งกลไก"
@@ -405,7 +405,7 @@ export default {
         "name": "จุดจบแห่งความเสื่อม"
     },
     "gh2-G2EOG": {
-        "name": "จุดจบแห่ง เดอะกลูม"
+        "name": "จุดจบแห่ง Gloom"
     },
     "gh2-G2HW": {
         "name": "น้ำศักดิ์สิทธิ์"
@@ -426,10 +426,10 @@ export default {
         "name": "ความมืดล่าถอย"
     },
     "gh2-G2TDA": {
-        "name": "ช่วยเหลือมังกร"
+        "name": "ช่วยเหลือ Drake"
     },
     "gh2-G2TDS": {
-        "name": "มังกรล้ม"
+        "name": "Drake ล้ม"
     },
     "gh2-G2TPE": {
         "name": "อำนาจการเสริมความแข็งแกร่ง"

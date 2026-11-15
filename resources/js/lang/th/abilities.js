@@ -517,7 +517,7 @@ export default {
             "name": "นำสู่การฆ่า"
         },
         "multi-pronged-assault": {
-            "name": "multi-pronged assault"
+            "name": "โจมตีหลายทาง"
         },
         "natures-hunger": {
             "name": "ความหิวของธรรมชาติ"
@@ -3603,7 +3603,7 @@ export default {
             "name": "จุดศูนย์กลางระเบิด"
         },
         "hail-of-spears": {
-            "name": "hail of spears"
+            "name": "ลูกเห็บหอก"
         },
         "head-of-the-hammer": {
             "name": "หัวค้อน"
@@ -4278,7 +4278,7 @@ export default {
             "name": "ความสง่างามไร้รูป"
         },
         "hail-of-thorns": {
-            "name": "hail of thorns"
+            "name": "ลูกเห็บหนาม"
         },
         "harbinger-of-ruin": {
             "name": "ผู้ส่งข่าวแห่งความพินาศ"
@@ -4389,7 +4389,7 @@ export default {
             "name": "ยึดครอง"
         },
         "hunter-killer": {
-            "name": "hunter-killer"
+            "name": "นักล่าฆาตกร"
         },
         "jackal-mech": {
             "name": "jackal mech"
@@ -4614,10 +4614,10 @@ export default {
             "name": "การเปลี่ยนขั้ว"
         },
         "power-core": {
-            "name": "power core"
+            "name": "แกนพลัง"
         },
         "pressure-build-up": {
-            "name": "pressure build-up"
+            "name": "ความดันสะสม"
         },
         "processing": {
             "name": "กำลังประมวลผล"
@@ -4632,7 +4632,7 @@ export default {
             "name": "ปล่อยวาล์ว"
         },
         "rocket-boots": {
-            "name": "rocket boots"
+            "name": "รองเท้าจรวด"
         },
         "scalding-blast": {
             "name": "ระเบิดลวก"
@@ -5201,70 +5201,70 @@ export default {
             "name": "treacherous tactics"
         },
         "anticipate-intricacies": {
-            "name": "anticipate intricacies"
+            "name": "คาดการณ์ความซับซ้อน"
         },
         "peer-into-battle": {
-            "name": "peer into battle"
+            "name": "มองเข้าไปในการต่อสู้"
         },
         "cursed-ground": {
-            "name": "cursed ground"
+            "name": "พื้นดินต้องสาป"
         },
         "void-snare": {
-            "name": "void snare"
+            "name": "กับดักความว่างเปล่า"
         },
         "approach-of-the-void": {
             "name": "approach of the void"
         },
         "duality-shards": {
-            "name": "duality shards"
+            "name": "เศษแห่งความเป็นคู่"
         },
         "envision-the-course": {
-            "name": "envision the course"
+            "name": "มองเห็นเส้นทาง"
         },
         "otherworldly-journey": {
-            "name": "otherworldly journey"
+            "name": "การเดินทางข้ามโลก"
         },
         "ray-of-light": {
-            "name": "ray of light"
+            "name": "ลำแสง"
         },
         "dimensional-transfer": {
-            "name": "dimensional transfer"
+            "name": "การถ่ายโอนมิติ"
         },
         "inspiration-from-beyond": {
-            "name": "inspiration from beyond"
+            "name": "แรงบันดาลใจจากเบื้องบน"
         },
         "call-of-the-nether": {
-            "name": "call of the nether"
+            "name": "เสียงเรียกจากเนเธอร์"
         },
         "recurrence": {
             "name": "recurrence"
         },
         "dimensional-divide": {
-            "name": "dimensional divide"
+            "name": "การแบ่งมิติ"
         },
         "cleansing-rite": {
-            "name": "cleansing rite"
+            "name": "พิธีชำระล้าง"
         },
         "past-and-future": {
             "name": "past and future"
         },
         "ethereal-vortex": {
-            "name": "ethereal vortex"
+            "name": "วังวนแห่งอีเทียเรียล"
         },
         "protective-aura": {
-            "name": "protective aura"
+            "name": "ออร่าคุ้มครอง"
         },
         "enfeebling-hex": {
-            "name": "enfeebling hex"
+            "name": "คำสาปอ่อนแรง"
         },
         "seal-their-fate": {
-            "name": "seal their fate"
+            "name": "ผนึกชะตาของพวกเขา"
         },
         "constant-flux": {
             "name": "constant flux"
         },
         "careful-attunement": {
-            "name": "careful attunement"
+            "name": "การปรับแต่งอย่างระมัดระวัง"
         },
         "tether-the-planes": {
             "name": "tether the planes"
@@ -5276,7 +5276,7 @@ export default {
             "name": "time and again"
         },
         "deep-contemplation": {
-            "name": "deep contemplation"
+            "name": "การใคร่ครวญลึกซึ้ง"
         },
         "planar-chaos": {
             "name": "planar chaos"
@@ -5285,7 +5285,7 @@ export default {
             "name": "convergence"
         },
         "hand-of-destiny": {
-            "name": "hand of destiny"
+            "name": "มือแห่งโชคชะตา"
         },
         "cant-be-bothered": {
             "name": "cant be bothered"

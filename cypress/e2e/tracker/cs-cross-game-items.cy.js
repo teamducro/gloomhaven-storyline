@@ -47,7 +47,7 @@ describe('Crimson Scales cross-game items', () => {
     [
         ['ru', 'Corpse Cavern', 'Большое зелье выносливости', '«» quotes'],
         ['zh', 'Corpse Cavern', 'Major Stamina Potion', 'full-width parentheses'],
-        ['th', 'Corpse Cavern', 'Major Stamina Potion', 'Thai text around the item label'],
+        ['th', 'Corpse Cavern', 'ยาคงทนหลัก', 'Thai text around the item label'],
     ].forEach(([lang, scenario, item, form]) => {
         it(`It links items in ${lang} texts with ${form}`, () => {
             cy.visit('/tracker?states=1_c-2_c-3_c-7_c-8_c-9_c-13_c', {
