@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Anneau de Seconde Chance",
-        "source": "Prospérité 9\nFC Scénario, Carte de Faille 12 (Trésor #89)\nSection 103 -> 84 “La Passerelle vers le Firmament” dans le livre",
+        "source": "Prospérité 9\nFC Scénario, Carte de Faille 12 (Trésor #89)\nSection 103 -> 84 “Gateway to the Firmament” dans le livre",
         "desc": "À la fin de votre tour, jouez deux cartes de votre main et effectuez un tour supplémentaire pendant ce round avec l'initiative de votre nouvelle carte Principale (qui doit être plus élevée que votre initiative actuelle)."
     },
     "gh-71": {
@@ -822,7 +822,7 @@ export default {
     },
     "gh-162": {
         "name": "Créateur de failles",
-        "source": "Récompense de {SCENARIO 112}\nSection 62 “Merveille Mécanique” dans le livre.",
+        "source": "Récompense de {SCENARIO 112}\nSection 62 “Mechanical Splendor” dans le livre.",
         "desc": "Pendant votre tour, {TELEPORT} sur n'importe quel hexagone inoccupé à 4 hexagones de vous ou moins."
     },
     "gh-163": {
@@ -1447,7 +1447,7 @@ export default {
     },
     "cs-qa05": {
         "name": "Delicate Model",
-        "desc": "Invocation : Ramasseur de Ferraille\\nVous Ramassez {LOOT} chaque hexagone dans lequel cette invocation entre.\\nVous contrôlez les actions de cette invocation."
+        "desc": "Invocation : Ramasseur de Ferraille\\nVous pillez {LOOT} chaque hexagone dans lequel cette invocation entre.\\nVous contrôlez les actions de cette invocation."
     },
     "cs-qa06": {
         "name": "Auscudec of the Makers",

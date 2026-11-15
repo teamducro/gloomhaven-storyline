@@ -135,7 +135,7 @@ export default {
         "name": "Derrière le Nid"
     },
     "gh-PAMT": {
-        "name": "La Carte du Trésor"
+        "name": "La Carte au Trésor"
     },
     "gh-PBB": {
         "name": "Mauvaise Affaire"
@@ -375,7 +375,7 @@ export default {
         "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Cœur de Glace"
     },
     "fh-PHOS": {
         "name": "Heart of Snow"

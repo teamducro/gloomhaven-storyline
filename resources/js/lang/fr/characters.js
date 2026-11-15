@@ -703,7 +703,7 @@ export default {
         "name": "Infuser",
         "masteries": [
             "Avoir cinq bonus {INFUSION_ICON} actifs",
-            "Tuer au moins quatre adversaires, mais ne jamais attaquer"
+            "Éliminer au moins quatre adversaires, mais ne jamais attaquer"
         ],
         "perks": [
             "Remplacer une carte {-2_WHITE} par une carte {-1_WHITE} et une carte {-1_WHITE} {WIND} {EARTH} {DARK}",
@@ -980,7 +980,7 @@ export default {
     "AN": {
         "name": "Anaphi",
         "masteries": [
-            "Faire tuer 3 ennemis chacune à 3 invocations différentes",
+            "Faire éliminer 3 ennemis chacune à 3 invocations différentes",
             "Dans chacun de 3 scénarios, effectuer 8 attaques ciblant des ennemis ayant des états négatifs"
         ],
         "perks": [
@@ -1000,7 +1000,7 @@ export default {
     "BR2": {
         "name": "Brute",
         "masteries": [
-            "Dans 3 scénarios différents, tuer un ennemi que vous avez Poussé ou Tiré pendant ce round",
+            "Dans 3 scénarios différents, éliminer un ennemi que vous avez Poussé ou Tiré pendant ce round",
             "Dans un seul scénario, pendant 3 rounds consécutifs, jouer 6 cartes Capacité différentes et faire subir 7 dégâts ou plus aux ennemis pendant chacun de ces rounds"
         ],
         "perks": [
@@ -1013,7 +1013,7 @@ export default {
             "Ajouter une carte {+3_WHITE}",
             "Ajouter une carte {AGAIN} {DISARM.fh} et une carte {AGAIN} {MUDDLE.fh}",
             "Ignorer les effets {-1} des objets et ajouter deux cartes {+1_WHITE}",
-            "Une fois par scénario, pendant votre tour, vous pouvez effectuer : {LOOT 1}, si cette capacité ramasse au moins un jeton d'argent, vous pouvez {RECOVER.fh} un objet {BODY}",
+            "Une fois par scénario, pendant votre tour, vous pouvez effectuer : {LOOT 1}, si cette capacité pille au moins un jeton d'argent, vous pouvez {RECOVER.fh} un objet {BODY}",
             "Chaque fois que vous effectuez un repos long, ajouter +1 {MOVE.fh} à votre première capacité de déplacement du round suivant",
             "Chaque personnage gagne l'Avantage lors de sa première attaque du premier round de chaque scénario"
         ]
@@ -1040,7 +1040,7 @@ export default {
     "MT2": {
         "name": "Perce-Esprit",
         "masteries": [
-            "Dans un seul scénario, tuer 5 ennemis ou plus avec des capacités de contrôle",
+            "Dans un seul scénario, éliminer 5 ennemis ou plus avec des capacités de contrôle",
             "Dans un seul scénario, déclencher l'effet à l'attaque de quatre Augmentations différentes au moins 3 fois chacune"
         ],
         "perks": [
@@ -1116,7 +1116,7 @@ export default {
     "BE2": {
         "name": "Berserker",
         "masteries": [
-            "Tuer 20 ennemis avec votre riposte",
+            "Éliminer 20 ennemis avec votre riposte",
             "Dans un seul scénario, terminer tous vos tours avec vos points de vie à la moitié de votre maximum ou moins sans être épuisé"
         ],
         "perks": [
@@ -1155,7 +1155,7 @@ export default {
     "DS2": {
         "name": "Condamneur",
         "masteries": [
-            "Tuer 20 ennemis qui ont {DOOM}",
+            "Éliminer 20 ennemis qui ont {DOOM}",
             "En un seul round, vous et l'une de vos invocations devez effectuer un total combiné de 6 capacités d'attaque ou plus"
         ],
         "perks": [
@@ -1215,7 +1215,7 @@ export default {
     "PH2": {
         "name": "Héraut du Fléau",
         "masteries": [
-            "En un seul tour, tuer 3 ennemis ou plus sans piocher de carte de modificateur d'attaque",
+            "En un seul tour, éliminer 3 ennemis ou plus sans piocher de carte de modificateur d'attaque",
             "Dans un seul scénario, appliquer ou retirer {POISON.fh} à un allié ou un ennemi à chaque round"
         ],
         "perks": [
@@ -1336,7 +1336,7 @@ export default {
         "name": "Wildfury",
         "masteries": [
             "Dans un seul scénario, infuser ou consommer {WIND} ou {EARTH} pendant chacun de vos tours",
-            "Dans un seul scénario, tuer 4 ennemis ou plus avec des attaques {COMMAND} de 7 ou plus (après tous les bonus, avant les modificateurs d'attaque)"
+            "Dans un seul scénario, éliminer 4 ennemis ou plus avec des attaques {COMMAND} de 7 ou plus (après tous les bonus, avant les modificateurs d'attaque)"
         ],
         "perks": [
             "Remplacer une carte {-1_WHITE} par une carte {AGAIN} « {HEAL.fh}2, {TARGET.fh} Ours »",

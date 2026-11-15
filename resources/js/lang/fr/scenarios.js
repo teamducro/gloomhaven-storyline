@@ -179,7 +179,7 @@ export default {
         "name": "La Chambre du Rituel de l'Outre-Monde"
     },
     "gh-29": {
-        "name": "Le Sanctuaire de l'Ombre",
+        "name": "Le Mausolée de l'Ombre",
         "rewards": [
             "15 XP chacun"
         ],
@@ -188,7 +188,7 @@ export default {
         ]
     },
     "gh-30": {
-        "name": "Le Mausolée des Profondeurs",
+        "name": "Le Sanctuaire des Profondeurs",
         "rewards": [
             "10 pièces d'or chacun"
         ]
@@ -1212,7 +1212,7 @@ export default {
         ]
     },
     "fh-4": {
-        "name": "Heart of Ice",
+        "name": "Cœur de Glace",
         "rewards": [
             [
                 "Débloquez la boîte de classe {FF}",
@@ -2227,7 +2227,7 @@ export default {
         ]
     },
     "fh-128": {
-        "name": "Galégeades de Comptoir",
+        "name": "Galéjades de Comptoir",
         "rewards": [
             [
                 "Gagnez 1 de moral",
@@ -3208,7 +3208,7 @@ export default {
         ]
     },
     "gh2-30": {
-        "name": "Le Mausolée des Profondeurs",
+        "name": "Le Sanctuaire des Profondeurs",
         "rewards": []
     },
     "gh2-31": {

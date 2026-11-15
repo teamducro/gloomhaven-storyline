@@ -33,7 +33,7 @@ export default {
     "gh-514": {
         "name": "Étude Anatomique",
         "progress": [
-            "Voyez les membres de votre compagnie devenir épuisés douze fois."
+            "Voyez les membres de votre compagnie devenir épuisés quinze fois."
         ]
     },
     "gh-515": {
@@ -220,7 +220,7 @@ export default {
     "cs-338": {
         "name": "Adrenaline Spike",
         "progress": [
-            "Éliminez un ennemi et ramassez son jeton d'argent dans le même round quinze fois."
+            "Éliminez un ennemi et pillez son jeton d'argent dans le même round quinze fois."
         ]
     },
     "cs-339": {
@@ -303,7 +303,7 @@ export default {
     "cs-351": {
         "name": "Limitless Searching",
         "progress": [
-            "Ramassez 30 jetons d'argent."
+            "Pillez 30 jetons d'argent."
         ]
     },
     "cs-aa-001": {
@@ -331,7 +331,7 @@ export default {
     "cs-qa-002": {
         "name": "Scrap Diver",
         "progress": [
-            "Ramassez deux jetons d'argent ou plus avec une seule action huit fois.",
+            "Pillez deux jetons d'argent ou plus avec une seule action huit fois.",
             "Pillez deux tuiles trésor.",
             "Finissez {SCENARIO QA2}."
         ]
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "Donnez 70 pièces d'or au Sanctuaire du Grand Chêne."
+            "Donnez 70 pièces d'or au Temple du Grand Chêne."
         ]
     },
     "fh-16": {
@@ -602,7 +602,7 @@ export default {
     "gh2-2": {
         "name": "Inn to Hospitality",
         "progress": [
-            "Ramassez 60 jetons d'argent.",
+            "Pillez 60 jetons d'argent.",
             "Lisez {SECTION} 125.4."
         ]
     },
@@ -674,7 +674,7 @@ export default {
     "gh2-11": {
         "name": "Adoptive Parent",
         "progress": [
-            "Ramassez trois jetons d'argent lâchés par des ennemis dans dix scénarios.",
+            "Pillez trois jetons d'argent lâchés par des ennemis dans dix scénarios.",
             "Lisez {SECTION} 122.5.",
             "Menez {SCENARIO 66} jusqu'à sa conclusion."
         ]

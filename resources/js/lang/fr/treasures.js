@@ -234,7 +234,7 @@ export default {
         "name": "« Arc Antique » (Objet 157)"
     },
     "fc-79": {
-        "name": "« Statuette de faucon » (Objet 157)"
+        "name": "« Statuette de faucon » (Objet 035)"
     },
     "fc-80": {
         "name": "1 ✓ et ajoutez l'Évènement de Faille 19 au paquet"
