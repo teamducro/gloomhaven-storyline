@@ -8,7 +8,7 @@ export default {
     "burningMountain": {
         "1": "Conclusão A: Decidem terminar o turno em G e remover um dos itens do jogo.",
         "2": "Conclusão B: Depois de saquear o baú, todos os personagens voltaram à entrada antes de ficarem exaustos.",
-        "title": "Fuga da Montanha em Chamas",
+        "title": "Fuga da Montanha Flamejante",
         "text": "Vocês saquearam o tesouro. Atrevem-se a fugir do vulcão a ribombar e a ficar com os itens recuperados?"
     },
     "merchantsBay": {
@@ -59,18 +59,18 @@ export default {
         "1": "Entreguem a poção a Selandre.",
         "2": "Digam a Selandre que a poção foi destruída.",
         "title": "Dá para confiar em Selandre?",
-        "text": "Ouvem as últimas palavras de Dominic ou a sua ganância?"
+        "text": "Ouvem as últimas palavras de Dominic ou a vossa ganância?"
     },
     "capstoneTest": {
         "1": "Um inimigo nomeado foi morto",
         "2": "Dois inimigos nomeados foram mortos",
         "3": "Três inimigos nomeados foram mortos",
-        "title": "Testa o teu Modulador de Poder",
+        "title": "Testa o teu Power Modulator",
         "text": "Quantos Inimigos Nomeados conseguiram matar antes de ficarem exaustos?"
     },
     "unseenPlight": {
-        "1": "Mataram o Guttermaw, ganhando a Recompensa do Guttermaw",
-        "2": "Salvaram as crianças, cumprindo o Pedido de Feigrin",
+        "1": "Mataram o Guttermaw, ganhando Guttermaw's Bounty",
+        "2": "Salvaram as crianças, cumprindo Feigrin's Request",
         "title": "Lares e Covis Destruídos",
         "text": "Trouxeram a morte ou salvaram vidas?"
     },
@@ -85,8 +85,8 @@ export default {
         "text": "Quantos Guardas da Cidade ainda estão no mapa?"
     },
     "algoxAltercation": {
-        "1": "Dançarina da Neve está morta.",
-        "2": "Punho Congelado está morto.",
+        "1": "Snowdancer está morta.",
+        "2": "Frozen Fist está morto.",
         "title": "Briga dos Algox",
         "text": "Que lado escolheram?"
     },
@@ -99,14 +99,14 @@ export default {
     "friendOfTheFishKing": {
         "1": "Sim",
         "2": "Não",
-        "title": "Amigo do Rei Peixe",
-        "text": "Aceitaram a proposta do Rei Peixe?"
+        "title": "Friend of the Fish King",
+        "text": "Aceitaram a proposta do Fish King?"
     },
     "acceptTheAscension": {
         "1": "Sim",
         "2": "Não",
         "title": "Aceitar a Ascensão",
-        "text": "Aceitaram a ascensão do Rei Peixe?"
+        "text": "Aceitaram a ascensão do Fish King?"
     },
     "brothersSurvival": {
         "1": "Sim",
@@ -165,8 +165,8 @@ export default {
     "hungryMawDead": {
         "1": "Sim",
         "2": "Não",
-        "title": "Boca Faminta Morta",
-        "text": "A Boca Faminta está morta?"
+        "title": "Hungry Maw Morto",
+        "text": "O Hungry Maw está morto?"
     },
     "cratesLooted": {
         "1": "1",
@@ -193,7 +193,7 @@ export default {
         "1": "Secção 18.3",
         "2": "Secção 44.3",
         "3": "Secção 51.1",
-        "title": "Escalada do Penhasco de Gelo",
+        "title": "Escalada do Icecrag",
         "text": "Qual secção de conclusão leram?"
     },
     "gh2-27": {
@@ -222,20 +222,20 @@ export default {
         "4": "Secção 78.6",
         "5": "Secções 78.6 e 81.5",
         "6": "Secção 81.5",
-        "title": "Armaria Savvas",
+        "title": "Arsenal dos Savvas",
         "text": "Qual secção de conclusão leram?"
     },
     "gh2-34": {
         "1": "Secção 36.4",
         "2": "Secção 89.2",
-        "title": "Túmulo Desgastado pelo Tempo",
+        "title": "Tumba Envelhecida",
         "text": "Qual secção de conclusão leram?"
     },
     "gh2-43": {
         "1": "Secção 80.3",
         "2": "Secção 106.1",
         "3": "Secção 132.4",
-        "title": "Em Procura de Segredos",
+        "title": "Chasing Secrets",
         "text": "Qual secção de conclusão leram?"
     }
 }

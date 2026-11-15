@@ -172,7 +172,7 @@ export default {
             "name": "Ochronna Siła"
         },
         "whirlwind": {
-            "name": "Trąba Powierrzna"
+            "name": "Trąba Powietrzna"
         },
         "armed-and-dangerous": {
             "name": "armed and dangerous"
@@ -6067,46 +6067,46 @@ export default {
             "name": "bathe in blood"
         },
         "focused-scourge": {
-            "name": "Skupiona Plaga"
+            "name": "focused scourge"
         },
         "deflecting-blades": {
-            "name": "Odbijające Ostrza"
+            "name": "deflecting blades"
         },
         "omniscient-assault": {
-            "name": "Wszechwiedzący Szturm"
+            "name": "omniscient assault"
         },
         "hive-mind": {
-            "name": "Umysł Roju"
+            "name": "hive mind"
         },
         "corrupting-parasites": {
-            "name": "Zepsuci Pasożyci"
+            "name": "corrupting parasites"
         },
         "death-march": {
-            "name": "Marsz Śmierci"
+            "name": "death march"
         },
         "engulfing-stingers": {
-            "name": "Pochłaniające Żądła"
+            "name": "engulfing stingers"
         },
         "swarming-minions": {
-            "name": "Rojące Się Pachołki"
+            "name": "swarming minions"
         },
         "scattered-defense": {
-            "name": "Rozproszona Obrona"
+            "name": "scattered defense"
         },
         "call-of-the-grave": {
             "name": "Zew Grobu"
         },
         "the-storms-edge": {
-            "name": "Skraj Burzy"
+            "name": "the storms edge"
         },
         "unstoppable-army": {
-            "name": "Niepowstrzymana Armia"
+            "name": "unstoppable army"
         },
         "grasping-advance": {
-            "name": "Chwytające Natarcie"
+            "name": "grasping advance"
         },
         "tomb-of-the-immortal": {
-            "name": "Grobowiec Nieśmiertelnego"
+            "name": "tomb of the immortal"
         },
         "pressing-pursuit": {
             "name": "pressing pursuit"
@@ -6115,40 +6115,40 @@ export default {
             "name": "Zarażenie"
         },
         "putrid-grubs": {
-            "name": "Cuchnące Larwy"
+            "name": "putrid grubs"
         },
         "overwhelming-offensive": {
-            "name": "Przytłaczająca Ofensywa"
+            "name": "overwhelming offensive"
         },
         "vampiric-tempest": {
-            "name": "Wampiryczna Nawałnica"
+            "name": "vampiric tempest"
         },
         "incubation": {
-            "name": "Inkubacja"
+            "name": "incubation"
         },
         "bioluminescence": {
-            "name": "Bioluminescencja"
+            "name": "bioluminescence"
         },
         "cyclone-of-blades": {
-            "name": "Cyklon Ostrzy"
+            "name": "cyclone of blades"
         },
         "sunstroke": {
-            "name": "Udar Słoneczny"
+            "name": "sunstroke"
         },
         "blood-drain": {
-            "name": "Wyssanie Krwi"
+            "name": "blood drain"
         },
         "fury-of-the-horde": {
-            "name": "Furia Hordy"
+            "name": "fury of the horde"
         },
         "repulsive-host": {
-            "name": "Odrażający Żywiciel"
+            "name": "repulsive host"
         },
         "bone-daggers": {
-            "name": "Kościane Sztylety"
+            "name": "bone daggers"
         },
         "endless-biting": {
-            "name": "Niekończące Się Gryzienie"
+            "name": "endless biting"
         },
         "wasteland": {
             "name": "Pustkowie"

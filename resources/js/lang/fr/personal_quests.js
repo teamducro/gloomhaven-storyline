@@ -10,9 +10,9 @@ export default {
         "name": "Classe Marchande",
         "progress": [
             "Possédez deux objets {BODY}.",
-            "Possédez deux objets{HEAD}.",
-            "Possédez deux objets{LEGS}.",
-            "Possédez trois objets {ONE-HAND} or {TWO-HANDS}.",
+            "Possédez deux objets {HEAD}.",
+            "Possédez deux objets {LEGS}.",
+            "Possédez trois objets {ONE-HAND} ou {TWO-HANDS}.",
             "Possédez quatre objets {SMALL-ITEM}."
         ]
     },
@@ -23,39 +23,39 @@ export default {
         ]
     },
     "gh-513": {
-        "name": "Trouver le Reméde",
+        "name": "Trouver le Remède",
         "unlock": "Ouvrez l'enveloppe X",
         "progress": [
-            "Eliminez huit Diablotins des Forets",
+            "Éliminez huit Diablotins des Forêts.",
             "Finissez {SCENARIO 59}."
         ]
     },
     "gh-514": {
-        "name": "Etude Anatomique",
+        "name": "Étude Anatomique",
         "progress": [
-            "Voyez les membres de votre compagnie devenir épuisés douze fois."
+            "Voyez les membres de votre compagnie devenir épuisés quinze fois."
         ]
     },
     "gh-515": {
         "name": "Soldat de la Loi",
         "progress": [
-            "Eliminez vingt Bandits et/ou Cultistes."
+            "Éliminez vingt Bandits et/ou Cultistes."
         ]
     },
     "gh-516": {
         "name": "Une Livre de Chair",
         "progress": [
-            "Eliminez quinze Vermlings."
+            "Éliminez quinze Vermlings."
         ]
     },
     "gh-517": {
         "name": "Chasseur de Trophées",
         "progress": [
-            "Eliminez vingt types différents de monstres."
+            "Éliminez vingt types différents de monstres."
         ]
     },
     "gh-518": {
-        "name": "Voyageur Eternel",
+        "name": "Voyageur Éternel",
         "progress": [
             "Accomplissez 15 scénarios différents."
         ]
@@ -63,20 +63,20 @@ export default {
     "gh-519": {
         "name": "Guerrier Légendaire",
         "progress": [
-            "Gagnez quinze ✔ grace à des objectifs de bataille réussis."
+            "Gagnez quinze ✔ grâce à des objectifs de combat accomplis."
         ]
     },
     "gh-520": {
-        "name": "Etre de Lumière",
+        "name": "Être de Lumière",
         "progress": [
-            "Trouvez la Hache Fléau des Cranes dans le sanctuaire de la Nécromancienne.",
-            "Utilisez-la pour éliminer sept Réanimés (Squellettes, Cadavres ou Esprits)."
+            "Trouvez la Hache Fléau des Crânes dans le sanctuaire de la Nécromancienne.",
+            "Utilisez-la pour éliminer sept Réanimés (Squelettes, Cadavres ou Esprits)."
         ]
     },
     "gh-521": {
-        "name": "Reprendre la foret",
+        "name": "Reprendre la Forêt",
         "progress": [
-            "Accomplissez trois scénarios dans la foret des Dagues.",
+            "Accomplissez trois scénarios dans la Forêt des Dagues.",
             "Finissez {SCENARIO 55}."
         ]
     },
@@ -89,31 +89,31 @@ export default {
     "gh-523": {
         "name": "Tueur d'aberrations",
         "progress": [
-            "Eliminez un Démon de Flamme.",
-            "Eliminez un Démon de Givre.",
-            "Eliminez un Démon du Vent.",
-            "Eliminez un Démon de Terre.",
-            "Eliminez un Démon de la Nuit.",
-            "Eliminez un Démon du Soleil."
+            "Éliminez un Démon de Flamme.",
+            "Éliminez un Démon de Givre.",
+            "Éliminez un Démon du Vent.",
+            "Éliminez un Démon de Terre.",
+            "Éliminez un Démon de la Nuit.",
+            "Éliminez un Démon du Soleil."
         ]
     },
     "gh-524": {
         "name": "Rempart des Opprimés",
         "progress": [
-            "Eliminez vingt monstres d'élite."
+            "Éliminez vingt monstres d'élite."
         ]
     },
     "gh-525": {
         "name": "La piété en Toutes Choses",
         "progress": [
-            "Donnez 120 Pièces d'or au Sanctuaire du Grand Chene."
+            "Donnez 120 pièces d'or au Sanctuaire du Grand Chêne."
         ]
     },
     "gh-526": {
         "name": "Vengeance",
         "unlock": "Ouvrez l'enveloppe X",
         "progress": [
-            "Accomplissez quatre scénarios dans Havrenuit.",
+            "Accomplissez quatre scénarios à Havrenuit.",
             "Finissez {SCENARIO 57}."
         ]
     },
@@ -156,7 +156,7 @@ export default {
     "gh-532": {
         "name": "Une Main Tendue",
         "progress": [
-            "Soyez témoin de l'accomplissement de la quete personnelle de deux autres personnages."
+            "Soyez témoin de l'accomplissement de la quête personnelle de deux autres personnages."
         ]
     },
     "gh-533": {
@@ -220,7 +220,7 @@ export default {
     "cs-338": {
         "name": "Adrenaline Spike",
         "progress": [
-            "Éliminez un ennemi et ramassez son jeton d'argent dans le même round quinze fois."
+            "Éliminez un ennemi et pillez son jeton d'argent dans le même round quinze fois."
         ]
     },
     "cs-339": {
@@ -250,7 +250,7 @@ export default {
     "cs-343": {
         "name": "Cruel Dominion",
         "progress": [
-            "Accomplissez 10 scénarios durant lesquels vous éliminez un ennemi subissant une condition négative."
+            "Accomplissez 10 scénarios durant lesquels vous éliminez un ennemi ayant un état négatif."
         ]
     },
     "cs-344": {
@@ -303,7 +303,7 @@ export default {
     "cs-351": {
         "name": "Limitless Searching",
         "progress": [
-            "Ramassez 30 jetons d'argent."
+            "Pillez 30 jetons d'argent."
         ]
     },
     "cs-aa-001": {
@@ -331,7 +331,7 @@ export default {
     "cs-qa-002": {
         "name": "Scrap Diver",
         "progress": [
-            "Ramassez deux jetons d'argent ou plus avec une seule action huit fois.",
+            "Pillez deux jetons d'argent ou plus avec une seule action huit fois.",
             "Pillez deux tuiles trésor.",
             "Finissez {SCENARIO QA2}."
         ]
@@ -339,7 +339,7 @@ export default {
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "Gagnez le plan « Lame Dentelée » (Objet RM-01).",
+            "Gagnez le modèle d'objet « Serrated Edge » (Objet RM-01).",
             "Appliquez {WOUND} ou {RUPTURE} à trente ennemis.",
             "Finissez {SCENARIO RM1}."
         ]
@@ -358,7 +358,7 @@ export default {
             42
         ],
         "progress": [
-            "Récoltez personnellement cinq types de plantes différents grâce aux jetons de butin."
+            "Récoltez personnellement cinq types de plantes différents grâce aux pions Butin."
         ]
     },
     "fh-2": {
@@ -368,7 +368,7 @@ export default {
             42
         ],
         "progress": [
-            "Pillez personnellement huit cartes de bois au total grâce aux jetons de butin.",
+            "Pillez personnellement huit cartes de bois au total grâce aux pions Butin.",
             "Débloquez {SCENARIO 69} et menez-le jusqu'à sa conclusion."
         ]
     },
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "Donnez 70 pièces d'or au Sanctuaire du Grand Chêne."
+            "Donnez 70 pièces d'or au Temple du Grand Chêne."
         ]
     },
     "fh-16": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "Gagnez le plan de « Abyss Axe » (Objet 039) et utilisez-la pour éliminer dix Cadavres Gelés, Spectres des Glaces et/ou Fléaux Réanimés."
+            "Gagnez le plan de « Hache des Abysses » (Objet 039) et utilisez-la pour éliminer dix Cadavres Gelés, Spectres des Glaces et/ou Fléaux Réanimés."
         ]
     },
     "fh-20": {
@@ -571,7 +571,7 @@ export default {
             72
         ],
         "progress": [
-            "Capturez 8 ennemis."
+            "Capturez 8 adversaires."
         ]
     },
     "fh-22": {
@@ -602,19 +602,19 @@ export default {
     "gh2-2": {
         "name": "Inn to Hospitality",
         "progress": [
-            "Ramassez 60 jetons d'argent.",
+            "Pillez 60 jetons d'argent.",
             "Lisez {SECTION} 125.4."
         ]
     },
     "gh2-3": {
         "name": "Capacités Amplifiées",
         "progress": [
-            "Achetez cinq améliorations (nécessite le Haut-Fait Général « Le Pouvoir de l'Amélioration »).",
+            "Achetez cinq améliorations (nécessite le Haut-Fait global « Le Pouvoir de l'Amélioration »).",
             "Lisez {SECTION} 71.2."
         ]
     },
     "gh2-4": {
-        "name": "La Chute de l'Homme",
+        "name": "The Fall of Man",
         "progress": [
             "Gagnez la « Aesther Spyglass » (Objet 149). Elle ne peut pas être vendue.",
             "Utilisez la « Aesther Spyglass » (Objet 149) dix fois.",
@@ -666,7 +666,7 @@ export default {
     "gh2-10": {
         "name": "Tueur d'Aberrations",
         "progress": [
-            "Améliorez une carte de capacité (la vôtre ou celle d'un allié) avec un élément {ANY} (nécessite le Haut-Fait Général « Le Pouvoir de l'Amélioration »).",
+            "Améliorez une carte de capacité (la vôtre ou celle d'un allié) avec un élément {ANY} (nécessite le Haut-Fait global « Le Pouvoir de l'Amélioration »).",
             "Lisez {SECTION} 14.3.",
             "Menez {SCENARIO 64} jusqu'à sa conclusion."
         ]
@@ -674,7 +674,7 @@ export default {
     "gh2-11": {
         "name": "Adoptive Parent",
         "progress": [
-            "Ramassez trois jetons d'argent lâchés par des ennemis dans dix scénarios.",
+            "Pillez trois jetons d'argent lâchés par des ennemis dans dix scénarios.",
             "Lisez {SECTION} 122.5.",
             "Menez {SCENARIO 66} jusqu'à sa conclusion."
         ]
@@ -731,7 +731,7 @@ export default {
         ]
     },
     "gh2-18": {
-        "name": "Légende de Bataille",
+        "name": "Battle Legend",
         "progress": [
             "Gagnez 12 coches grâce aux objectifs de combat accomplis.",
             "Lisez {SECTION} 23.3."

@@ -517,7 +517,7 @@ export default {
             "name": "引向死亡"
         },
         "multi-pronged-assault": {
-            "name": "multi-pronged assault"
+            "name": "多重打击"
         },
         "natures-hunger": {
             "name": "自然之渴"
@@ -4572,7 +4572,7 @@ export default {
             "name": "防护帷幔"
         },
         "ancient-drill": {
-            "name": "ancient drill"
+            "name": "远古钻机"
         },
         "beam-axe": {
             "name": "光束战斧"
@@ -4584,7 +4584,7 @@ export default {
             "name": "低温休眠"
         },
         "curious-gear": {
-            "name": "curious gear"
+            "name": "古怪齿轮"
         },
         "curious-machinery": {
             "name": "古怪机械"
@@ -4617,7 +4617,7 @@ export default {
             "name": "动力核心"
         },
         "pressure-build-up": {
-            "name": "pressure build-up"
+            "name": "压力增进"
         },
         "processing": {
             "name": "进程处理"
@@ -5079,7 +5079,7 @@ export default {
             "name": "磁力碎片"
         },
         "mother-of-all-traps": {
-            "name": "mother of all traps"
+            "name": "万罠归宗"
         },
         "path-of-pain": {
             "name": "痛苦路径"
@@ -6070,34 +6070,34 @@ export default {
             "name": "focused scourge"
         },
         "deflecting-blades": {
-            "name": "偏转之刃"
+            "name": "deflecting blades"
         },
         "omniscient-assault": {
-            "name": "全知突袭"
+            "name": "omniscient assault"
         },
         "hive-mind": {
-            "name": "蜂巢意识"
+            "name": "hive mind"
         },
         "corrupting-parasites": {
-            "name": "腐化寄生虫"
+            "name": "corrupting parasites"
         },
         "death-march": {
-            "name": "死亡行军"
+            "name": "death march"
         },
         "engulfing-stingers": {
-            "name": "吞噬毒刺"
+            "name": "engulfing stingers"
         },
         "swarming-minions": {
-            "name": "蜂拥仆从"
+            "name": "swarming minions"
         },
         "scattered-defense": {
-            "name": "分散防御"
+            "name": "scattered defense"
         },
         "call-of-the-grave": {
             "name": "墓穴呼唤"
         },
         "the-storms-edge": {
-            "name": "风暴之缘"
+            "name": "the storms edge"
         },
         "unstoppable-army": {
             "name": "unstoppable army"
@@ -6106,7 +6106,7 @@ export default {
             "name": "grasping advance"
         },
         "tomb-of-the-immortal": {
-            "name": "不朽者之墓"
+            "name": "tomb of the immortal"
         },
         "pressing-pursuit": {
             "name": "pressing pursuit"
@@ -6118,19 +6118,19 @@ export default {
             "name": "putrid grubs"
         },
         "overwhelming-offensive": {
-            "name": "压倒性攻势"
+            "name": "overwhelming offensive"
         },
         "vampiric-tempest": {
-            "name": "吸血风暴"
+            "name": "vampiric tempest"
         },
         "incubation": {
             "name": "孵化"
         },
         "bioluminescence": {
-            "name": "生物荧光"
+            "name": "bioluminescence"
         },
         "cyclone-of-blades": {
-            "name": "刀刃旋风"
+            "name": "cyclone of blades"
         },
         "sunstroke": {
             "name": "中暑"
@@ -6148,7 +6148,7 @@ export default {
             "name": "bone daggers"
         },
         "endless-biting": {
-            "name": "无尽啃咬"
+            "name": "endless biting"
         },
         "wasteland": {
             "name": "wasteland"

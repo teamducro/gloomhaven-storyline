@@ -138,7 +138,7 @@ export default {
     "lurker": "潜伏蟹",
     "lurker-clawcrusher": "潜伏蟹螯爪粉碎者",
     "lurker-conductor": "潜伏蟹指挥家",
-    "lurker-king": "Lurker King",
+    "lurker-king": "帝王伏击者",
     "lurker-mindsnipper": "潜伏蟹心灵裁剪者",
     "lurker-soldier": "潜伏蟹士兵",
     "lurker-wavethrower": "潜伏蟹波浪投掷者",

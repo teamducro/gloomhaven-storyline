@@ -62,17 +62,17 @@ export default {
             "15 moedas de ouro para cada personagem",
             "-2 de reputação",
             "+2 de prosperidade",
-            "Tipo “Skullbane Axe” (Item 113)"
+            "Tipo “Machado Ruína dos Crânios” (Item 113)"
         ],
         "faq": [
-            "Erro de impressão: ignore o texto de \"Especial do Chefe 1\" no livro de cenários e siga a carta de atributos do chefe."
+            "Erro de impressão: ignora o texto de \"Especial do Chefe 1\" no livro de cenários e segue a carta de atributos do chefe."
         ]
     },
     "gh-12": {
         "name": "Praça de Gloomhaven B",
         "rewards": [
             "+4 de reputação",
-            "Tipo “Skullbane Axe” (Item 113)"
+            "Tipo “Machado Ruína dos Crânios” (Item 113)"
         ],
         "faq": [
             "Erro de impressão: o marcador de porta 1 deve ficar na porta sul, não na porta norte. Lê o texto sob o \"1\" quando a porta sul for aberta.",
@@ -131,7 +131,7 @@ export default {
         "rewards": [
             "50 moedas de ouro para cada personagem",
             "+1 de prosperidade",
-            "Adicionem o Evento de Cidade 78 ao baralho"
+            "Adiciona o Evento de Cidade 78 ao baralho"
         ],
         "faq": [
             "Erro de impressão: em \"Regras Especiais\", o altar deve ficar em \"f\", não em \"a\". Os pontos de surgimento dos demónios devem ser reordenados para vento (a), noite (b), terra (c), chama (d), sol (e), gelo (f).",
@@ -172,7 +172,7 @@ export default {
         ],
         "conclusion_faq": [
             "Podes somar o teu dinheiro atual à recompensa, mas não podes vender itens na cidade, pois a recompensa ocorre imediatamente após o fim do cenário, antes de regressares à cidade.",
-            "Erro de impressão: se o espaço para o adesivo da conquista global \"A Fenda Neutralizada\" já estiver preenchido, não o cubras. Salta o adesivo ou coloque-o ao lado do mapa."
+            "Erro de impressão: se o espaço para o autocolante da conquista global \"A Fenda Neutralizada\" já estiver preenchido, não o cubras. Salta o autocolante ou coloca-o ao lado do mapa."
         ]
     },
     "gh-28": {
@@ -197,7 +197,7 @@ export default {
         "name": "Plano da Noite"
     },
     "gh-32": {
-        "name": "Cabana Decrépita"
+        "name": "Bosque Decrépito"
     },
     "gh-33": {
         "name": "Arsenal dos Savvas",
@@ -225,7 +225,7 @@ export default {
             "30 moedas de ouro para cada personagem",
             "5 de reputação",
             "-2 de prosperidade",
-            "Adicionem o Evento de Cidade 79 ao baralho"
+            "Adiciona o Evento de Cidade 79 ao baralho"
         ],
         "faq": [
             "Os obstáculos de parede não podem ser destruídos."
@@ -236,7 +236,7 @@ export default {
         "rewards": [
             "10 moedas de ouro para cada personagem",
             "+4 de reputação",
-            "Adicionem o Evento de Cidade 78 ao baralho"
+            "Adiciona o Evento de Cidade 78 ao baralho"
         ]
     },
     "gh-37": {
@@ -290,7 +290,7 @@ export default {
     "gh-44": {
         "name": "Ataque Tribal",
         "rewards": [
-            "Abram o envelope {DS}",
+            "Abre o envelope {DS}",
             "+2 de reputação"
         ]
     },
@@ -301,7 +301,7 @@ export default {
             "-2 de reputação"
         ],
         "faq": [
-            "Os totens são considerados obstáculos, portanto não podem ser destruídos por habilidades, mas podem ser afetados por outras habilidades que não causam dano (como as habilidades de manipulação de obstáculos do Cragheart)."
+            "Os totens são considerados obstáculos, portanto não podem ser destruídos por habilidades, mas podem ser afetados por outras habilidades que não causam dano (como as habilidades de manipulação de obstáculos do Coração de Pedra)."
         ]
     },
     "gh-46": {
@@ -346,57 +346,57 @@ export default {
         "rewards": [
             "+5 de reputação",
             "+5 de prosperidade",
-            "Adicionem o Evento de Cidade 81 ao baralho",
-            "Adicionem o Evento de Estrada 69 ao baralho"
+            "Adiciona o Evento de Cidade 81 ao baralho",
+            "Adiciona o Evento de Estrada 69 ao baralho"
         ]
     },
     "gh-52": {
         "name": "Porão Nocivo",
-        "requirements": "Missão pessoal “Pesquisador de Xorn”",
+        "requirements": "Missão pessoal “Buscador de Xorn”",
         "faq": [
             "Regra especial: neste cenário, podes usar a ação inferior de qualquer carta para saquear uma peça de tesouro a alcance 1.",
-            "Ao usar o material de Forgotten Circles, os obstáculos no meio da sala inicial podem ser tratados como peças de sobreposição de parede, conforme especificado nas regras de Forgotten Circles. Além disso, um personagem não pode se teletransportar para a secção do mapa de outro personagem."
+            "Ao usar o material de Forgotten Circles, os obstáculos no meio da sala inicial podem ser tratados como peças de sobreposição de parede, conforme especificado nas regras de Forgotten Circles. Além disso, um personagem não se pode teletransportar para a secção do mapa de outro personagem."
         ]
     },
     "gh-53": {
         "name": "Porão na Cripta",
-        "requirements": "Missão pessoal “Pesquisador de Xorn”",
+        "requirements": "Missão pessoal “Buscador de Xorn”",
         "rewards": [
-            "O Pesquisador de Xorn recebe: “Staff of Xorn“ (Item 114) O pesquisador não pode vender este item."
+            "O Buscador de Xorn recebe: “Cajado de Xorn” (Item 114) O Buscador não pode vender este item."
         ]
     },
     "gh-54": {
         "name": "Palácio de Gelo",
-        "requirements": "Missão pessoal “Pesquisador de Xorn”, item “Staff of Xorn” equipado",
+        "requirements": "Missão pessoal “Buscador de Xorn”, item “Cajado de Xorn” equipado",
         "rewards": [
-            "Reforma imediatamente o Pesquisador de Xorn",
-            "Adicionem os Eventos de Cidade e Estrada 59 ao baralhos em vez dos eventos de reforma normais da classe",
-            "Abram o envelope {PH}"
+            "Reforma imediatamente o Buscador de Xorn",
+            "Adiciona os Eventos de Cidade e Estrada 59 aos baralhos em vez dos eventos de reforma normais da classe",
+            "Abre o envelope {PH}"
         ],
         "conclusion_faq": [
             "Se começares um novo personagem Cthulhu-Squid logo após concluir este cenário com sucesso, esse personagem recebe o Cajado de Xorn. Caso contrário, o Cajado de Xorn é adicionado ao baralho da loja.",
-            "O Pesquisador de Xorn não volta à cidade para vender itens, fazer aprimoramentos, etc. Como diz o livro de cenários, a carta de evento de reforma do personagem não vai para o baralho."
+            "O Buscador de Xorn não volta à cidade para vender itens, fazer aprimoramentos, etc. Como diz o livro de cenários, a carta de evento de reforma do personagem não vai para o baralho."
         ]
     },
     "gh-SoX1": {
         "name": "Nobles’ Crypt",
         "rewards": [
             "+1 de reputação",
-            "Adicionem o Evento de Cidade SoX2 ao baralho"
+            "Adiciona o Evento de Cidade SoX2 ao baralho"
         ]
     },
     "gh-SoX2": {
         "name": "Flooded Crypt",
         "rewards": [
-            "Adicionem o Evento de Cidade SoX3 ao baralho",
-            "Escolhe apenas um dos seguintes: “Frigid Blade” (Item 077), “Wand of Frost” (Item 083) ou “Wave Crest” (Item 111)"
+            "Adiciona o Evento de Cidade SoX3 ao baralho",
+            "Escolhe apenas um dos seguintes: “Lâmina Gélida” (Item 077), “Varinha de Gelo” (Item 083) ou “Crista da Onda” (Item 111)"
         ]
     },
     "gh-SoX3": {
         "name": "Crypt of the Ancients",
         "rewards": [
             "50 moedas de ouro coletivas",
-            "Adicionem o Evento de Cidade SoX3 ao baralho"
+            "Adiciona o Evento de Cidade SoX3 ao baralho"
         ]
     },
     "gh-55": {
@@ -411,7 +411,7 @@ export default {
         "requirements": "Missão pessoal “Retomar as Árvores”",
         "rewards": [
             "Missão “Retomar as Árvores” concluída",
-            "Abram o envelope {DS}",
+            "Abre o envelope {DS}",
             "10 moedas de ouro para cada personagem",
             "+2 de reputação"
         ]
@@ -428,7 +428,7 @@ export default {
         "requirements": "Missão pessoal “Vingança”",
         "rewards": [
             "Missão “Vingança” concluída",
-            "Abram o envelope X",
+            "Abre o envelope X",
             "+2 de reputação"
         ],
         "faq": [
@@ -437,14 +437,14 @@ export default {
     },
     "gh-59": {
         "name": "Bosque Esquecido",
-        "requirements": "Missão pessoal “À Procura da Cura”"
+        "requirements": "Missão pessoal “Em Busca da Cura”"
     },
     "gh-60": {
         "name": "Laboratório de Alquimia",
-        "requirements": "Missão pessoal “À Procura da Cura”",
+        "requirements": "Missão pessoal “Em Busca da Cura”",
         "rewards": [
-            "Missão “À Procura da Cura” concluída",
-            "Abram o envelope X",
+            "Missão “Em Busca da Cura” concluída",
+            "Abre o envelope X",
             "+1 de prosperidade"
         ],
         "faq": [
@@ -460,7 +460,7 @@ export default {
         "requirements": "Missão pessoal “A Queda do Homem”",
         "rewards": [
             "Missão “A Queda do Homem” concluída",
-            "Abram o envelope {NS}",
+            "Abre o envelope {NS}",
             "10 pontos de experiência para cada personagem"
         ]
     },
@@ -479,7 +479,7 @@ export default {
     "gh-65": {
         "name": "Mina de Enxofre",
         "rewards": [
-            "Tipo “Ancient Drill” (Item 112)"
+            "Tipo “Broca Ancestral” (Item 112)"
         ]
     },
     "gh-66": {
@@ -488,13 +488,13 @@ export default {
     "gh-67": {
         "name": "Biblioteca Arcana",
         "rewards": [
-            "“Power Core” (Item 132)"
+            "“Núcleo de Poder” (Item 132)"
         ]
     },
     "gh-68": {
         "name": "Brejo Tóxico",
         "rewards": [
-            "2 “Major Healing Potion” (Item 027)"
+            "2 “Poção de Cura Maior” (Item 027)"
         ]
     },
     "gh-69": {
@@ -507,7 +507,7 @@ export default {
         ]
     },
     "gh-70": {
-        "name": "Ilha Amaldiçoada",
+        "name": "Ilha Acorrentada",
         "rewards": [
             "+2 de prosperidade"
         ],
@@ -518,10 +518,10 @@ export default {
     "gh-71": {
         "name": "Planaltos Ventosos",
         "rewards": [
-            "2 “Major Power Potion” (Item 041)"
+            "2 “Poção de Força Maior” (Item 041)"
         ],
         "faq": [
-            "Movimento forçado: se o vento mover um personagem para a direita ou para a esquerda e houver um obstáculo ou parede num dos hexágonos possíveis, o jogador pode escolher ser bloqueado (não se mover) ou se mover para o hexágono livre.",
+            "Movimento forçado: se o vento mover um personagem para a direita ou para a esquerda e houver um obstáculo ou parede num dos hexágonos possíveis, o jogador pode escolher ser bloqueado (não se mover) ou mover-se para o hexágono livre.",
             "Fuga: concluis o cenário quando todos os personagens estiverem num hexágono de saída ou tiverem ficado exaustos enquanto estavam num hexágono de saída."
         ]
     },
@@ -532,7 +532,7 @@ export default {
             "+1 de prosperidade"
         ],
         "faq": [
-            "Erro de impressão: use a peça de mapa L1b em vez de L2b."
+            "Erro de impressão: usa a peça de mapa L1b em vez de L2b."
         ]
     },
     "gh-73": {
@@ -541,7 +541,7 @@ export default {
             "+1 de reputação"
         ],
         "faq": [
-            "As rochas causam dano a figuras voadoras e as movem à força."
+            "As rochas causam dano a figuras voadoras e movem-nas à força."
         ]
     },
     "gh-74": {
@@ -577,7 +577,7 @@ export default {
         ]
     },
     "gh-78": {
-        "name": "Refúgio do Sacrifício",
+        "name": "Poço do Sacrifício",
         "rewards": [
             "+3 de reputação"
         ],
@@ -637,7 +637,7 @@ export default {
     "gh-84": {
         "name": "Caverna Cristalina",
         "rewards": [
-            "“Resonant Crystal” (Item 133)",
+            "“Cristal Ressonante” (Item 133)",
             "+1 de prosperidade"
         ],
         "faq": [
@@ -647,10 +647,10 @@ export default {
     "gh-85": {
         "name": "Templo do Sol",
         "rewards": [
-            "“Orb of Dawn” (Item 121)"
+            "“Orbe da Alvorada” (Item 121)"
         ],
         "faq": [
-            "Erro no livro: com 4 jogadores, não coloque o demónio da noite e os demónios do sol na sala final que são colocados apenas como inimigos normais para 4 jogadores (em preto para 2 e 3 jogadores, em branco para 4 jogadores)."
+            "Erro no livro: com 4 jogadores, não coloques o demónio da noite e os demónios do sol na sala final que são colocados apenas como inimigos normais para 4 jogadores (em preto para 2 e 3 jogadores, em branco para 4 jogadores)."
         ]
     },
     "gh-86": {
@@ -669,7 +669,7 @@ export default {
     "gh-88": {
         "name": "Plano da Água",
         "rewards": [
-            "“Staff of Summoning” (Item 120)"
+            "“Cajado de Invocação” (Item 120)"
         ],
         "faq": [
             "Se todos os espreitadores forem mortos, continua a comprar cartas de habilidade de espreitador para determinar a direção do efeito especial do cenário."
@@ -684,7 +684,7 @@ export default {
     "gh-90": {
         "name": "Fenda Demoníaca",
         "rewards": [
-            "“Black Censer” (Item 128)"
+            "“Incensário Negro” (Item 128)"
         ]
     },
     "gh-91": {
@@ -715,130 +715,130 @@ export default {
     "gh-95": {
         "name": "Hora do Pagamento",
         "rewards": [
-            "“Skull of Hatred” (Item 119)"
+            "“Crânio do Ódio” (Item 119)"
         ]
     },
     "gh-202": {
-        "name": "Return to the Black Barrow",
+        "name": "Retorno ao Túmulo Negro",
         "rewards": [
-            "“Imposing Blade” (Item 134)"
+            "“Lâmina Imponente” (Item 134)"
         ]
     },
     "gh-203": {
         "name": "Uma Intrusão Infortunada",
         "rewards": [
-            "“Focusing Ray” (Item 135)"
+            "“Raio Focalizador” (Item 135)"
         ]
     },
     "gh-204": {
         "name": "Laboratório Corrompido",
         "rewards": [
-            "“Volatile Elixir” (Item 136)"
+            "“Elixir Volátil” (Item 136)"
         ]
     },
     "gh-205": {
         "name": "Assalto à Armaria",
         "rewards": [
-            "“Silent Stiletto” (Item 137)"
+            "“Estilete Silencioso” (Item 137)"
         ]
     },
     "gh-206": {
         "name": "Defesa de Pedra",
         "rewards": [
-            "“Stone Charm” (Item 138)"
+            "“Amuleto de Pedra” (Item 138)"
         ]
     },
     "gh-207": {
         "name": "Libertação dos Roedores",
         "rewards": [
-            "“Psychic Knife” (Item 139)"
+            "“Faca Psíquica” (Item 139)"
         ]
     },
     "gh-208": {
         "name": "Escolta de Caravanas",
         "rewards": [
-            "“Sun Shield” (Item 140)"
+            "“Escudo do Sol” (Item 140)"
         ]
     },
     "gh-209": {
         "name": "Insultos Antinaturais",
         "rewards": [
-            "“Mask of Death” (Item 145)"
+            "“Máscara da Morte” (Item 145)"
         ]
     },
     "gh-210": {
         "name": "Taxas de Armazenamento",
         "rewards": [
-            "“Utility Belt” (Item 141)"
+            "“Cinto Utilitário” (Item 141)"
         ]
     },
     "gh-211": {
         "name": "Plano das Feras Selvagens",
         "rewards": [
-            "“Phasing Idol” (Item 142)"
+            "“Ídolo de Fases” (Item 142)"
         ]
     },
     "gh-212": {
-        "name": "Harvesting the Night",
+        "name": "A Colher a Noite",
         "rewards": [
-            "“Smoke Elixir” (Item 143)"
+            "“Elixir de Fumaça” (Item 143)"
         ]
     },
     "gh-213": {
         "name": "Cripta Infestada",
         "rewards": [
-            "“Pendant of the Plague” (Item 144)"
+            "“Pingente da Praga” (Item 144)"
         ]
     },
     "gh-214": {
         "name": "Batalha dos Bardos",
         "rewards": [
-            "“Master's Lute” (Item 146)"
+            "“Alaúde do Mestre” (Item 146)"
         ]
     },
     "gh-215": {
         "name": "Caçada Corrompida",
         "rewards": [
-            "“Cloak of the Hunter” (Item 147)"
+            "“Manto do Caçador” (Item 147)"
         ]
     },
     "gh-216": {
         "name": "Consequências",
         "rewards": [
-            "“Jaleco de Médico” (Item 148)"
+            "“Bata de Médico” (Item 148)"
         ]
     },
     "gh-217": {
         "name": "Segredos Elementais",
         "rewards": [
-            "“Elemental Boots” (Item 149)"
+            "“Botas Elementais” (Item 149)"
         ]
     },
     "gh-218": {
         "name": "O Urso Enjaulado",
         "rewards": [
-            "“Staff of Command” (Item 150)"
+            "“Cajado de Comando” (Item 150)"
         ]
     },
     "gh-219": {
         "name": "As Areias do Tempo",
         "rewards": [
-            "“Sword of the Sands” (Item 151)"
+            "“Espada das Areias” (Item 151)"
         ]
     },
     "fc-96": {
         "name": "Unexpected Visitors",
-        "requirements": "End of Gloom (Global) CONCLUÍDO",
+        "requirements": "Fim do Combalimento (Global) CONCLUÍDO",
         "rewards": [
             "10 pontos de experiência para cada personagem",
-            "Adicionem os Eventos de Cidade e Estrada 82 to their respective decks"
+            "Adiciona os Eventos de Cidade e de Estrada 82 aos respetivos baralhos"
         ]
     },
     "fc-97": {
         "name": "Lore Untold",
         "rewards": [
             "10 moedas de ouro para cada personagem",
-            "Adicionem o Evento de Cidades 88, 89 and 90 ao baralho"
+            "Adiciona os Eventos de Cidade 88, 89 e 90 ao baralho"
         ]
     },
     "fc-98": {
@@ -848,7 +848,7 @@ export default {
                 "10 moedas de ouro para cada personagem",
                 "+1 de reputação",
                 "+1 de prosperidade",
-                "Adicionem o Evento de Cidade 86 ao baralho"
+                "Adiciona o Evento de Cidade 86 ao baralho"
             ],
             [
                 "5 moedas de ouro para cada personagem",
@@ -877,7 +877,7 @@ export default {
     "fc-100": {
         "name": "Shifting Gears",
         "rewards": [
-            "Escolhe ganhar um dos seguintes conjuntos: “Telescopic Lens” (Item 059) e “Ancient Drill” (Item 112), OU “Curious Gear” (Item 125) e “Remote Spider” (Item 126)"
+            "Escolhe ganhar um dos seguintes conjuntos: “Lente Telescópica” (Item 059) e “Broca Ancestral” (Item 112), OU “Engrenagem Curiosa” (Item 125) e “Aranha Remota” (Item 126)"
         ]
     },
     "fc-101": {
@@ -892,20 +892,20 @@ export default {
         "name": "Bazaar of Knowledge",
         "rewards": [
             "15 pontos de experiência para cada personagem",
-            "If no more than 2+C inhabitants were intimidated: +2 de reputação Otherwise: -2 de reputação"
+            "Se no máximo 2+C habitantes tiverem sido intimidados: +2 de reputação. Caso contrário: -2 de reputação"
         ]
     },
     "fc-103": {
         "name": "Where It Is Needed",
         "rewards": [
             "+2 de prosperidade",
-            "Adicionem o Evento de Cidade 87 ao baralho"
+            "Adiciona o Evento de Cidade 87 ao baralho"
         ]
     },
     "fc-104": {
         "name": "A Gaping Wound",
         "rewards": [
-            "“Major Mana Potion” (Item 048)"
+            "“Poção de Mana Maior” (Item 048)"
         ]
     },
     "fc-105": {
@@ -918,10 +918,10 @@ export default {
         "name": "Intricate Work",
         "rewards": [
             [
-                "175 moedas de ouro para cada personagem, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements"
+                "175 moedas de ouro para cada personagem. Esse dinheiro deve ser gasto imediatamente em aprimoramentos de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT} ou {DARK}"
             ],
             [
-                "175 moedas de ouro para cada personagem, This money must immediately be spent on any {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, or {DARK} enhancements",
+                "175 moedas de ouro para cada personagem. Esse dinheiro deve ser gasto imediatamente em aprimoramentos de {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT} ou {DARK}",
                 "+ 1 de prosperidade"
             ]
         ]
@@ -951,7 +951,7 @@ export default {
         "name": "Epilogue of a War",
         "rewards": [
             "10 pontos de experiência para cada personagem",
-            "“Protective Charm” (Item 052)"
+            "“Amuleto Protetor” (Item 052)"
         ]
     },
     "fc-110": {
@@ -965,7 +965,7 @@ export default {
         "rewards": [
             [
                 "5 pontos de experiência para cada personagem",
-                "Add Rift Event 16 ao baralho. Instead of shuffling this event into the whole deck, shuffle it into the top 3 cards"
+                "Adiciona o Evento de Fenda 16 ao baralho. Em vez de baralharem este evento no baralho inteiro, baralha-no nas 3 cartas do topo"
             ],
             [
                 "12 pontos de experiência para cada personagem",
@@ -1006,8 +1006,8 @@ export default {
         "rewards": [
             "+3 de reputação",
             "+1 de prosperidade",
-            "Reformem o Vidente Aesther {DR}",
-            "Adicionem os Eventos de Cidade e Estrada 83 to their respective decks"
+            "Reforma o Aesther Diviner {DR}",
+            "Adiciona os Eventos de Cidade e de Estrada 83 aos respetivos baralhos"
         ]
     },
     "fc-117": {
@@ -1015,7 +1015,7 @@ export default {
         "rewards": [
             "15 moedas de ouro para cada personagem",
             "1 ✓ para cada personagem",
-            "Todos os personagens podem adicionar uma nova carta de sua classe ao seu conjunto de cartas ativas. A carta escolhida deve ter nível igual ou inferior ao nível do personagem menos 2."
+            "Todos os personagens podem adicionar uma nova carta da sua classe ao seu conjunto de cartas ativas. A carta escolhida deve ter nível igual ou inferior ao nível do personagem menos 2."
         ]
     },
     "fc-116": {
@@ -1031,7 +1031,7 @@ export default {
         "name": "A Hole in the Wall",
         "rewards": [
             "25 moedas de ouro para cada personagem",
-            "Adicionem os itens 1-13 à loja"
+            "Adiciona os itens 1-13 à loja"
         ]
     },
     "jotl-3": {
@@ -1071,7 +1071,7 @@ export default {
         "name": "Explosive Evolution",
         "rewards": [
             "20 pontos de experiência para cada personagem",
-            "Adicionem os itens 15-20 à loja"
+            "Adiciona os itens 15-20 à loja"
         ]
     },
     "jotl-10": {
@@ -1083,13 +1083,13 @@ export default {
     "jotl-11": {
         "name": "Defiled Sewers",
         "rewards": [
-            "“Flea-Bitten Shawl” (Item 28)"
+            "“Xale Roído por Pulgas” (Item 28)"
         ]
     },
     "jotl-12": {
         "name": "Beguiling Sewers",
         "rewards": [
-            "“Flea-Bitten Shawl” (Item 28)"
+            "“Xale Roído por Pulgas” (Item 28)"
         ]
     },
     "jotl-13": {
@@ -1108,14 +1108,14 @@ export default {
         "name": "Tainted Blood",
         "rewards": [
             "10 moedas de ouro para cada personagem",
-            "Adicionem os itens 21-26 à loja"
+            "Adiciona os itens 21-26 à loja"
         ]
     },
     "jotl-16": {
         "name": "Mixed Results",
         "rewards": [
             "15 pontos de experiência para cada personagem",
-            "“Tower Shield” (Item 29)"
+            "“Escudo Torre” (Item 29)"
         ]
     },
     "jotl-17": {
@@ -1152,7 +1152,7 @@ export default {
     "jotl-22": {
         "name": "Unfriendly Message",
         "rewards": [
-            "“Steel Ring” (Item 33)"
+            "“Anel de Aço” (Item 33)"
         ]
     },
     "jotl-23": {
@@ -1215,16 +1215,16 @@ export default {
         "name": "Heart of Ice",
         "rewards": [
             [
-                "Desbloqueiem a caixa de classe {FF}",
+                "Desbloqueia a caixa de classe {FF}",
                 "Ganha 1 de moral",
                 "Ganha 1 de prosperidade",
-                "Adicionem 156.1 ao calendário em quatro semanas"
+                "Adiciona 156.1 ao calendário em quatro semanas"
             ],
             [
-                "Desbloqueiem a caixa de classe {SD}",
+                "Desbloqueia a caixa de classe {SD}",
                 "Ganha 1 de moral",
                 "Ganha 1 de prosperidade",
-                "Adicionem 156.1 ao calendário em quatro semanas"
+                "Adiciona 156.1 ao calendário em quatro semanas"
             ]
         ]
     },
@@ -1249,7 +1249,7 @@ export default {
     "fh-8": {
         "name": "Crystal Trench",
         "rewards": [
-            "Ganha 1 {LUMBER} coletivos",
+            "Ganha 1 {LUMBER} coletiva",
             "Ganha 2 {HIDE} coletivos"
         ]
     },
@@ -1288,16 +1288,16 @@ export default {
     "fh-14": {
         "name": "Jagged Shoals",
         "rewards": [
-            "Escolham um: desbloqueiem a caixa de classe {CR} OU a caixa de classe {DT}",
-            "Adicionem o evento WO-81 ao baralho do posto avançado de inverno"
+            "Escolhe um: desbloqueia a caixa de classe {CR} OU a caixa de classe {DT}",
+            "Adiciona o evento WO-81 ao baralho do posto avançado de inverno"
         ]
     },
     "fh-15": {
         "name": "Ancient Spire",
         "rewards": [
             "Ganha 1 {LUMBER} coletivos",
-            "Ganha 1 {METAL} coletivos",
-            "Ganha 1 {HIDE} coletivos"
+            "Ganha 1 {METAL} coletivo",
+            "Ganha 1 {HIDE} coletivo"
         ]
     },
     "fh-16": {
@@ -1318,7 +1318,7 @@ export default {
         "rewards": [
             "Ganha 1 de moral",
             "Ganha um projeto de item aleatório",
-            "Adicionem 122.3 ao calendário em quatro semanas"
+            "Adiciona 122.3 ao calendário em quatro semanas"
         ]
     },
     "fh-19": {
@@ -1326,7 +1326,7 @@ export default {
         "rewards": [
             "Ganha 1 de moral",
             "Ganha um projeto de item aleatório",
-            "Adicionem 54.3 ao calendário em quatro semanas"
+            "Adiciona 54.3 ao calendário em quatro semanas"
         ]
     },
     "fh-20": {
@@ -1346,7 +1346,7 @@ export default {
         "rewards": [
             "Perde 1 {LUMBER} coletivo para cada conjunto de cinco hexágonos com peças de água na peça 7-G",
             "Ganha 15 pontos de experiência para cada personagem",
-            "Adicionem 62.2 ao calendário em duas semanas"
+            "Adiciona 62.2 ao calendário em duas semanas"
         ]
     },
     "fh-23": {
@@ -1366,7 +1366,7 @@ export default {
         "rewards": [
             "Ganha 2 {LUMBER} coletivos",
             "Ganha 2 {METAL} coletivos",
-            "Adicionem 128.2 ao calendário em quatro semanas"
+            "Adiciona 128.2 ao calendário em quatro semanas"
         ]
     },
     "fh-26": {
@@ -1393,19 +1393,19 @@ export default {
         "name": "War of the Spire A",
         "rewards": [
             "Ganha 3 de moral",
-            "Removam todos os eventos {ALGOX} de todos os baralhos de eventos do posto avançado",
-            "Adicionem o evento WO-68 ao baralho do posto avançado de inverno",
-            "Adicionem 46.3 ao calendário em cinco semanas"
+            "Remove todos os eventos {ALGOX} de todos os baralhos de eventos do posto avançado",
+            "Adiciona o evento WO-68 ao baralho do posto avançado de inverno",
+            "Adiciona 46.3 ao calendário em cinco semanas"
         ]
     },
     "fh-30": {
         "name": "War of the Spire B",
         "rewards": [
             "Ganha 3 de moral",
-            "Ganha o adesivo “Destruidor dos Voz-da-Neve”",
-            "Removam todos os eventos {ALGOX} de todos os baralhos de eventos do posto avançado",
-            "Adicionem o evento WO-69 ao baralho do posto avançado de inverno",
-            "Adicionem 34.2 ao calendário em cinco semanas"
+            "Ganha o autocolante “Destroyer of the Snowspeakers”",
+            "Remove todos os eventos {ALGOX} de todos os baralhos de eventos do posto avançado",
+            "Adiciona o evento WO-69 ao baralho do posto avançado de inverno",
+            "Adiciona 34.2 ao calendário em cinco semanas"
         ]
     },
     "fh-31": {
@@ -1426,7 +1426,7 @@ export default {
         "rewards": [
             "Ganha 5 pontos de experiência para cada personagem por cada runa de radiestesia ainda oculta",
             "Ganha “Ember Energy Source” (Item 244)",
-            "Adicionem 135.1 ao calendário em três semanas"
+            "Adiciona 135.1 ao calendário em três semanas"
         ]
     },
     "fh-34": {
@@ -1490,8 +1490,8 @@ export default {
         "name": "Sunless Trench",
         "rewards": [
             "Ganha 2 ✔ para cada personagem",
-            "Adicionem o evento B-16 ao baralho do barco",
-            "Adicionem 114.2 ao calendário em três semanas"
+            "Adiciona o evento B-16 ao baralho do barco",
+            "Adiciona 114.2 ao calendário em três semanas"
         ]
     },
     "fh-43": {
@@ -1581,10 +1581,10 @@ export default {
         "rewards": [
             "Ganha 2 de moral",
             "Ganha 2 de prosperidade",
-            "Desbloqueiem a caixa de classe que ainda estiver bloqueada: {FF} ou {SD}",
-            "Removam todos os eventos {ALGOX} de todos os baralhos de eventos do posto avançado",
-            "Adicionem os eventos WO-66 e WO-67 ao baralho do posto avançado de inverno",
-            "Adicionem uma carta +50 ao baralho da guarda da cidade"
+            "Desbloqueia a caixa de classe que ainda estiver bloqueada: {FF} ou {SD}",
+            "Remove todos os eventos {ALGOX} de todos os baralhos de eventos do posto avançado",
+            "Adiciona os eventos WO-66 e WO-67 ao baralho do posto avançado de inverno",
+            "Adiciona uma carta +50 ao baralho da guarda da cidade"
         ]
     },
     "fh-56": {
@@ -1592,9 +1592,9 @@ export default {
         "rewards": [
             "Ganha 1 de moral",
             "Ganha 1 de inspiração",
-            "Desbloqueiem a caixa de classe {FF}",
-            "Adicionem o evento SO-51 ao baralho do posto avançado de verão",
-            "Adicionem uma carta +50 ao baralho da guarda da cidade"
+            "Desbloqueia a caixa de classe {FF}",
+            "Adiciona o evento SO-51 ao baralho do posto avançado de verão",
+            "Adiciona uma carta +50 ao baralho da guarda da cidade"
         ]
     },
     "fh-57": {
@@ -1602,9 +1602,9 @@ export default {
         "rewards": [
             "Ganha 1 de moral",
             "Ganha 1 de inspiração",
-            "Desbloqueiem a caixa de classe {SD}",
-            "Adicionem o evento WO-68 ao baralho do posto avançado de inverno",
-            "Adicionem uma carta +50 ao baralho da guarda da cidade"
+            "Desbloqueia a caixa de classe {SD}",
+            "Adiciona o evento WO-68 ao baralho do posto avançado de inverno",
+            "Adiciona uma carta +50 ao baralho da guarda da cidade"
         ]
     },
     "fh-58": {
@@ -1615,10 +1615,10 @@ export default {
             "Ganha 3 {LUMBER} coletivos",
             "Ganha 3 {METAL} coletivos",
             "Ganha 3 {HIDE} coletivos",
-            "Desbloqueiem a caixa de classe {HV}",
-            "Removam todos os eventos {UNFETTERED} de todos os baralhos de eventos do posto avançado",
-            "Adicionem os eventos WO-64 e WO-65 ao baralho do posto avançado de inverno",
-            "Adicionem uma carta +50 ao baralho da guarda da cidade"
+            "Desbloqueia a caixa de classe {HV}",
+            "Remove todos os eventos {UNFETTERED} de todos os baralhos de eventos do posto avançado",
+            "Adiciona os eventos WO-64 e WO-65 ao baralho do posto avançado de inverno",
+            "Adiciona uma carta +50 ao baralho da guarda da cidade"
         ]
     },
     "fh-59": {
@@ -1627,10 +1627,10 @@ export default {
             "Ganha 2 de moral",
             "Ganha 2 de prosperidade",
             "Ganha “Key Card” (Item 246)",
-            "Desbloqueiem a caixa de classe {HV}",
-            "Removam todos os eventos {UNFETTERED} de todos os baralhos de eventos do posto avançado",
-            "Adicionem o evento SO-49 ao baralho do posto avançado de verão e o evento WO-63 ao baralho do posto avançado de inverno",
-            "Adicionem uma carta +50 ao baralho da guarda da cidade"
+            "Desbloqueia a caixa de classe {HV}",
+            "Remove todos os eventos {UNFETTERED} de todos os baralhos de eventos do posto avançado",
+            "Adiciona o evento SO-49 ao baralho do posto avançado de verão e o evento WO-63 ao baralho do posto avançado de inverno",
+            "Adiciona uma carta +50 ao baralho da guarda da cidade"
         ]
     },
     "fh-60": {
@@ -1640,17 +1640,17 @@ export default {
             "Ganha 1 de prosperidade",
             "Ganha 30 pontos de experiência para cada personagem",
             "Ganha “Armor of Empathy” (Item 224)",
-            "Desbloqueiem a caixa de classe que ainda estiver bloqueada: {CR} ou {DT}",
-            "Removam todos os eventos {LURKERS} de todos os baralhos de eventos do posto avançado",
-            "Adicionem o evento SO-48 ao baralho do posto avançado de verão e o evento B-17 ao baralho do barco",
-            "Adicionem uma carta +50 ao baralho da guarda da cidade"
+            "Desbloqueia a caixa de classe que ainda estiver bloqueada: {CR} ou {DT}",
+            "Remove todos os eventos {LURKERS} de todos os baralhos de eventos do posto avançado",
+            "Adiciona o evento SO-48 ao baralho do posto avançado de verão e o evento B-17 ao baralho do barco",
+            "Adiciona uma carta +50 ao baralho da guarda da cidade"
         ]
     },
     "fh-61": {
         "name": "Life and Death",
         "rewards": [
-            "Desbloqueiem a caixa de classe {SH}",
-            "Adicionem a secção 140.3 ao calendário numa semana"
+            "Desbloqueia a caixa de classe {SH}",
+            "Adiciona a secção 140.3 ao calendário numa semana"
         ]
     },
     "fh-62": {
@@ -1678,14 +1678,14 @@ export default {
         "rewards": [
             "Ganha 2 {LUMBER} coletivos",
             "Ganha 2 {METAL} coletivos",
-            "Adicionem 95.4 ao calendário em seis semanas"
+            "Adiciona 95.4 ao calendário em seis semanas"
         ]
     },
     "fh-66": {
         "name": "Elemental Cores",
         "rewards": [
             "Ganha “Elemental Stone” (Item 212)",
-            "Adicionem 29.3 ao calendário em seis semanas"
+            "Adiciona 29.3 ao calendário em seis semanas"
         ]
     },
     "fh-67": {
@@ -1699,7 +1699,7 @@ export default {
         "name": "The Face of Torment",
         "rewards": [
             "Missão pessoal “Aesther Outpost” concluída",
-            "Adicionem 133.1 ao calendário em duas semanas"
+            "Adiciona 133.1 ao calendário em duas semanas"
         ]
     },
     "fh-69": {
@@ -1708,7 +1708,7 @@ export default {
             "Ganha 1 {ARROWVINE}",
             "Ganha 1 {AXENUT}",
             "Ganha 1 {FLAMEFRUIT}",
-            "Adicionem 15.4 ao calendário em três semanas"
+            "Adiciona 15.4 ao calendário em três semanas"
         ]
     },
     "fh-70": {
@@ -1721,9 +1721,9 @@ export default {
     "fh-71": {
         "name": "Invasion of the Dock",
         "rewards": [
-            "Danifiquem qualquer edifício de número par entre 71 e 89",
+            "Danifica qualquer edifício de número par entre 71 e 89",
             "Ganha 10 pontos de experiência para cada personagem",
-            "Adicionem 149.5 ao calendário em cinco semanas"
+            "Adiciona 149.5 ao calendário em cinco semanas"
         ]
     },
     "fh-72": {
@@ -1736,7 +1736,7 @@ export default {
         "name": "Flotsam",
         "rewards": [
             "Ganha 3 {LUMBER} coletivos",
-            "Adicionem 146.1 ao calendário em cinco semanas"
+            "Adiciona 146.1 ao calendário em cinco semanas"
         ]
     },
     "fh-74": {
@@ -1757,7 +1757,7 @@ export default {
             [
                 "Missão pessoal “Threat from the Deep” concluída",
                 "Ganha “Wave Blade” (Item 201)",
-                "Adicionem o evento B-18 ao baralho do barco"
+                "Adiciona o evento B-18 ao baralho do barco"
             ],
             []
         ]
@@ -1767,7 +1767,7 @@ export default {
         "rewards": [
             "Missão pessoal “Threat from the Deep” concluída",
             "Ganha “Wave Blade” (Item 201)",
-            "Adicionem o evento B-19 ao baralho do barco"
+            "Adiciona o evento B-19 ao baralho do barco"
         ]
     },
     "fh-78": {
@@ -1780,7 +1780,7 @@ export default {
         "name": "Relic",
         "rewards": [
             "Ganha 3 de moral",
-            "Adicionem 45.2 ao calendário em três semanas"
+            "Adiciona 45.2 ao calendário em três semanas"
         ]
     },
     "fh-80": {
@@ -1803,7 +1803,7 @@ export default {
         "name": "Expedition North",
         "rewards": [
             "Ganha 2 de prosperidade",
-            "Adicionem os seguintes itens de Forgotten Circles ao suprimento de Frosthaven: 153, 159 e 161"
+            "Adiciona os seguintes itens de Forgotten Circles ao suprimento de Frosthaven: 153, 159 e 161"
         ]
     },
     "fh-83": {
@@ -1881,8 +1881,8 @@ export default {
     "fh-92": {
         "name": "Sinking Ship",
         "rewards": [
-            "Percam coletivamente 5xC/2 fichas de saque. As fichas de saque são então trocadas por cartas de saque",
-            "Adicionem 181.2 ao calendário numa semana"
+            "Perde coletivamente 5xC/2 fichas de saque. As fichas de saque são então trocadas por cartas de saque",
+            "Adiciona 181.2 ao calendário numa semana"
         ]
     },
     "fh-93": {
@@ -1966,14 +1966,14 @@ export default {
         "name": "Ruins of the Solstice",
         "rewards": [
             "Ganha 2 {SNOWTHISTLE} coletivos",
-            "Adicionem o evento WR-49 ao baralho de estrada de inverno"
+            "Adiciona o evento WR-49 ao baralho de estrada de inverno"
         ]
     },
     "fh-105": {
         "name": "Ruins of the Equinox",
         "rewards": [
             "Ganha 2 {FLAMEFRUIT} coletivos",
-            "Adicionem 159.4 ao calendário em quatro semanas"
+            "Adiciona 159.4 ao calendário em quatro semanas"
         ]
     },
     "fh-106": {
@@ -2044,7 +2044,7 @@ export default {
         "name": "Work Freeze",
         "rewards": [
             "Ganha 5 {HIDE} coletivos",
-            "Adicionem 86.1 ao calendário em quatro semanas"
+            "Adiciona 86.1 ao calendário em quatro semanas"
         ]
     },
     "fh-115": {
@@ -2052,31 +2052,31 @@ export default {
         "rewards": [
             [
                 "Ganha 15 pontos de experiência para cada personagem",
-                "Adicionem 66.2 ao calendário numa semana"
+                "Adiciona 66.2 ao calendário numa semana"
             ],
             [
                 "Ganha 15 pontos de experiência para cada personagem",
-                "Adicionem 66.2 ao calendário em duas semanas"
+                "Adiciona 66.2 ao calendário em duas semanas"
             ],
             [
                 "Ganha 15 pontos de experiência para cada personagem",
-                "Adicionem 66.2 ao calendário em três semanas"
+                "Adiciona 66.2 ao calendário em três semanas"
             ],
             [
                 "Ganha 15 pontos de experiência para cada personagem",
-                "Adicionem 66.2 ao calendário em quatro semanas"
+                "Adiciona 66.2 ao calendário em quatro semanas"
             ],
             [
                 "Ganha 15 pontos de experiência para cada personagem",
-                "Adicionem 66.2 ao calendário em cinco semanas"
+                "Adiciona 66.2 ao calendário em cinco semanas"
             ],
             [
                 "Ganha 15 pontos de experiência para cada personagem",
-                "Adicionem 66.2 ao calendário em seis semanas"
+                "Adiciona 66.2 ao calendário em seis semanas"
             ],
             [
                 "Ganha 15 pontos de experiência para cada personagem",
-                "Adicionem 66.2 ao calendário em sete semanas"
+                "Adiciona 66.2 ao calendário em sete semanas"
             ]
         ]
     },
@@ -2133,7 +2133,7 @@ export default {
         "name": "Lurker Necromancy",
         "rewards": [
             "Ganha o projeto de “Amulet of Eternal Life” (Item 66)",
-            "Troquem todas as fichas por cartas de saque"
+            "Troca todas as fichas por cartas de saque"
         ]
     },
     "fh-119": {
@@ -2149,14 +2149,14 @@ export default {
         "rewards": [
             "Ganha 1 de moral",
             "Ganha 2 {LUMBER} coletivos",
-            "Adicionem 76.3 ao calendário em dez semanas"
+            "Adiciona 76.3 ao calendário em dez semanas"
         ]
     },
     "fh-121": {
         "name": "Black Memories",
         "rewards": [
             [
-                "Adicionem 184.3 ao calendário em seis semanas"
+                "Adiciona 184.3 ao calendário em seis semanas"
             ],
             [
                 "Ganha “Mind Thieving Helmet” (Item 193)"
@@ -2231,16 +2231,16 @@ export default {
         "rewards": [
             [
                 "Ganha 1 de moral",
-                "Adicionem 100.3 ao calendário em três semanas"
+                "Adiciona 100.3 ao calendário em três semanas"
             ],
             [
                 "Ganha 2 de moral",
-                "Adicionem 100.3 ao calendário em três semanas"
+                "Adiciona 100.3 ao calendário em três semanas"
             ],
             [
                 "Ganha 3 de moral",
                 "Ganha “Befuddling Mug” (Item 215)",
-                "Adicionem 100.3 ao calendário em três semanas"
+                "Adiciona 100.3 ao calendário em três semanas"
             ]
         ]
     },
@@ -2310,7 +2310,7 @@ export default {
             "Ganha 2 de prosperidade",
             "Ganha 3 de moral",
             "Ganha 30 moedas de ouro para cada personagem",
-            "Adicionem um adesivo +1 a uma carta de saque de dinheiro"
+            "Adiciona um autocolante +1 a uma carta de saque de dinheiro"
         ]
     },
     "fh-201": {
@@ -2431,7 +2431,7 @@ export default {
     "cs-4": {
         "name": "Infected Warriors",
         "rewards": [
-            "Cada personagem ganha um item “Orbe” aleatório (Item 1-10)"
+            "Cada personagem ganha um item “Orb” aleatório (Item 1-10)"
         ]
     },
     "cs-5": {
@@ -2442,13 +2442,13 @@ export default {
         "rewards": [
             "+2 de reputação",
             "+1 de prosperidade",
-            "“Stun Powder” (Item gh-21)"
+            "“Pó de Atordoamento” (Item gh-21)"
         ]
     },
     "cs-7": {
         "name": "Golden Eggs",
         "rewards": [
-            "Gain 30 moedas de ouro coletivas"
+            "Ganha 30 moedas de ouro coletivas"
         ]
     },
     "cs-8": {
@@ -2467,8 +2467,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "“Minor Healing Potion” (Item gh-12)",
-            "“Minor Mana Potion” (Item gh-20)"
+            "“Poção de Cura Menor” (Item gh-12)",
+            "“Poção de Mana Menor” (Item gh-20)"
         ]
     },
     "cs-11": {
@@ -2481,7 +2481,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 de prosperidade",
-            "Cada personagem ganha um dos seguintes: “Major Stamina Potion” (Item gh-34), “Major Power Potion” (Item gh-41), “Major Mana Potion” (Item gh-48)\nSe nenhum deles estiver disponível na loja, ganha 20 moedas de ouro no lugar"
+            "Cada personagem ganha um dos seguintes: “Poção de Vigor Maior” (Item gh-34), “Poção de Força Maior” (Item gh-41), “Poção de Mana Maior” (Item gh-48)\nSe nenhum deles estiver disponível na loja, ganha 20 moedas de ouro no lugar"
         ]
     },
     "cs-14": {
@@ -2494,7 +2494,7 @@ export default {
         "name": "Ambush of Beasts",
         "rewards": [
             "15 moedas de ouro para cada personagem",
-            "Cada personagem ganha um item “Orbe” aleatório (Item 1-10)"
+            "Cada personagem ganha um item “Orb” aleatório (Item 1-10)"
         ]
     },
     "cs-16": {
@@ -2519,7 +2519,7 @@ export default {
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "“Major Mana Potion” (Item gh-48)"
+            "“Poção de Mana Maior” (Item gh-48)"
         ]
     },
     "cs-20": {
@@ -2527,13 +2527,13 @@ export default {
         "rewards": [
             "+1 de reputação",
             "+1 de prosperidade",
-            "Cada personagem ganha um item “Orbe” aleatório (Item 1-10)"
+            "Cada personagem ganha um item “Orb” aleatório (Item 1-10)"
         ]
     },
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "“Magma Waders” (Item gh-99)"
+            "“Waders de Magma” (Item gh-99)"
         ]
     },
     "cs-22": {
@@ -2551,14 +2551,14 @@ export default {
     "cs-24": {
         "name": "Eerie Grotto",
         "rewards": [
-            "Cada personagem ganha um item “Orbe” aleatório (Item 1-10)"
+            "Cada personagem ganha um item “Orb” aleatório (Item 1-10)"
         ]
     },
     "cs-25": {
         "name": "Brightspark, Behold!",
         "rewards": [
             "+1 de reputação",
-            "Adicionem o Evento de Estrada 57 ao baralho"
+            "Adiciona o Evento de Estrada 57 ao baralho"
         ]
     },
     "cs-26": {
@@ -2604,8 +2604,8 @@ export default {
     "cs-32": {
         "name": "Confronting the Past",
         "rewards": [
-            "Leiam {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
-            "Senha “Hidra da Água”"
+            "Lê {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
+            "Palavra-passe “Water Hydra”"
         ]
     },
     "cs-33": {
@@ -2620,7 +2620,7 @@ export default {
         "name": "Great Oak Escape",
         "requirements": "Missão pessoal “Protect and Serve”",
         "rewards": [
-            "Desbloqueiem o envelope {BM}",
+            "Desbloqueia o envelope {BM}",
             "+2 de reputação",
             "Todos os personagens adicionam uma carta {BLESS} ao seu baralho de modificadores de ataque para o próximo cenário"
         ]
@@ -2633,7 +2633,7 @@ export default {
         "name": "Hunters Bounty",
         "requirements": "Missão pessoal “Bandit Banisher”",
         "rewards": [
-            "Desbloqueiem o envelope {CG}",
+            "Desbloqueia o envelope {CG}",
             "10 moedas de ouro para cada personagem"
         ]
     },
@@ -2641,14 +2641,14 @@ export default {
         "name": "Burning Stones",
         "requirements": "Missão pessoal “Natural Selection”",
         "rewards": [
-            "Ganha um item “Pedra” aleatório (Item 94-100)"
+            "Ganha um item “Stone” aleatório (Item 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
         "requirements": "Missão pessoal “Natural Selection”",
         "rewards": [
-            "Desbloqueiem o envelope {LU}"
+            "Desbloqueia o envelope {LU}"
         ]
     },
     "cs-39": {
@@ -2656,14 +2656,14 @@ export default {
         "requirements": "Missão pessoal “An Adder Divides”",
         "rewards": [
             "10 pontos de experiência para cada personagem",
-            "Removam as 5 cartas do topo do baralho de Eventos de Cidade e embaralhem o Evento de Cidade 57 entre elas. Separem as demais cartas de Evento de Cidade até que o Evento de Cidade 57 seja resolvido. Qualquer carta adicional que seria adicionada ao baralho de Eventos de Cidade durante esse período é adicionada depois que o Evento de Cidade 57 for resolvido e as cartas restantes forem combinadas com o baralho original.",
+            "Remove as 5 cartas do topo do baralho de Eventos de Cidade e baralha o Evento de Cidade 57 entre elas. Separa as demais cartas de Evento de Cidade até que o Evento de Cidade 57 seja resolvido. Qualquer carta adicional que seria adicionada ao baralho de Eventos de Cidade durante esse período é adicionada depois que o Evento de Cidade 57 for resolvido e as cartas restantes forem combinadas com o baralho original.",
             "A missão “An Adder Divides” ainda não foi concluída"
         ]
     },
     "cs-40": {
         "name": "Smugglers Hideout",
         "rewards": [
-            "Gain 50 moedas de ouro coletivas"
+            "Ganha 50 moedas de ouro coletivas"
         ]
     },
     "cs-41": {
@@ -2683,14 +2683,14 @@ export default {
         "name": "Mansion Maze",
         "rewards": [
             "+1 de prosperidade",
-            "Cada personagem ganha um item “Orbe” aleatório (Item 1-10)"
+            "Cada personagem ganha um item “Orb” aleatório (Item 1-10)"
         ]
     },
     "cs-44": {
         "name": "Haunted Manor",
         "rewards": [
             "20 moedas de ouro para cada personagem",
-            "Cada personagem ganha um item “Orbe” aleatório (Item 1-10)"
+            "Cada personagem ganha um item “Orb” aleatório (Item 1-10)"
         ]
     },
     "cs-45": {
@@ -2863,23 +2863,23 @@ export default {
         "rewards": [
             [
                 "Missão “Ingenious Inventor” concluída",
-                "Abram o envelope {QA}",
+                "Abre o envelope {QA}",
                 "Tipo “Steam Piston Hammer” (Item QA02)",
                 "Tipo “Spider Climb Gloves” (Item QA03)"
             ],
             [
                 "Missão “Ingenious Inventor” concluída",
-                "Abram o envelope {QA}",
+                "Abre o envelope {QA}",
                 "Ganha um dos seguintes: “Steam Piston Hammer” (Item QA02) OU “Spider Climb Gloves” (Item QA03)",
-                "Adicionem uma cópia do item escolhido ao suprimento disponível da cidade",
-                "Adicionem o outro item ao baralho de tipos de item aleatórios"
+                "Adiciona uma cópia do item escolhido ao suprimento disponível da cidade",
+                "Adiciona o outro item ao baralho de tipos de item aleatórios"
             ],
             [
                 "Missão “Ingenious Inventor” concluída",
-                "Abram o envelope {QA}",
+                "Abre o envelope {QA}",
                 "“Steam Piston Hammer” (Item QA02)",
                 "“Spider Climb Gloves” (Item QA03)",
-                "Adicionem cópias ao suprimento disponível da cidade"
+                "Adiciona cópias ao suprimento disponível da cidade"
             ]
         ]
     },
@@ -2888,9 +2888,9 @@ export default {
         "requirements": "Missão pessoal “Scrap Diver”",
         "rewards": [
             "Missão “Scrap Diver” concluída",
-            "Abram o envelope {QA}",
-            "15xA moedas de ouro para cada personagem (where A is the number of Ancient Scrap recovered",
-            "Adicionem o Evento de Cidade QA-03 ao baralho"
+            "Abre o envelope {QA}",
+            "15xA moedas de ouro para cada personagem (em que A é o número de Ancient Scrap recuperados)",
+            "Adiciona o Evento de Cidade QA-03 ao baralho"
         ]
     },
     "cs-QA3": {
@@ -2908,7 +2908,7 @@ export default {
         "requirements": "Missão pessoal “Brutal Enforcer”",
         "rewards": [
             "Missão “Brutal Enforcer” concluída",
-            "Abram o envelope {RM}",
+            "Abre o envelope {RM}",
             "+1 de prosperidade"
         ]
     },
@@ -2921,7 +2921,7 @@ export default {
         "requirements": "Missão pessoal “Apex Predator”",
         "rewards": [
             "Missão “Apex Predator” concluída",
-            "Abram o envelope {RM}",
+            "Abre o envelope {RM}",
             "Tipo “Terrorscale Saber” (Item RM03)",
             "Tipo “Terrorscale Crossblades” (Item RM04)"
         ]
@@ -2931,11 +2931,11 @@ export default {
         "rewards": [
             [
                 "40 moedas de ouro coletivas",
-                "Tipo “Studded Leather” (Item gh-30) OU tipo “Boots of Dashing” (Item gh-36)"
+                "Tipo “Couro Batido” (Item gh-30) OU tipo “Botas da Arrancada” (Item gh-36)"
             ],
             [
                 "2 ✓ para cada personagem",
-                "Tipo “Lucky Eye” (Item gh-63)"
+                "Tipo “Olho Sortudo” (Item gh-63)"
             ]
         ]
     },
@@ -2977,7 +2977,7 @@ export default {
     "mp-HA1": {
         "name": "Major Annoyance",
         "rewards": [
-            "“Botas Sem Frescura” (Item HA)"
+            "“No Nonsense Boots” (Item HA)"
         ]
     },
     "gh2-0": {
@@ -3029,7 +3029,7 @@ export default {
             "5 moedas de ouro para cada personagem",
             "10 pontos de experiência para cada personagem",
             "+1 de reputação com os Demónios",
-            "Adicionem o Evento de Cidade C-51 ao baralho"
+            "Adiciona o Evento de Cidade C-51 ao baralho"
         ]
     },
     "gh2-7": {
@@ -3048,7 +3048,7 @@ export default {
         "rewards": [
             "+1 de prosperidade",
             "+1 de reputação com os Militares",
-            "Adicionem o Evento de Estrada R-30 ao baralho"
+            "Adiciona o Evento de Estrada R-30 ao baralho"
         ]
     },
     "gh2-10": {
@@ -3079,8 +3079,8 @@ export default {
                 "20 pontos de experiência para cada personagem",
                 "2 ✔ para cada personagem",
                 "-1 de reputação com os Militares",
-                "Adicionem o Evento de Cidade C-39 ao baralho",
-                "Adicionem o Evento de Estrada R-32 ao baralho"
+                "Adiciona o Evento de Cidade C-39 ao baralho",
+                "Adiciona o Evento de Estrada R-32 ao baralho"
             ],
             []
         ]
@@ -3169,23 +3169,23 @@ export default {
                 "-10 de reputação com os Demónios",
                 "+2 de reputação com a Guilda Mercantil",
                 "-10 de reputação com os Militares",
-                "Adicionem o Evento de Cidade C-36 ao baralho",
-                "Adicionem o Evento de Cidade C-54 ao baralho",
-                "Adicionem o Evento de Cidade C-55 ao baralho",
-                "Adicionem o Evento de Estrada R-37 ao baralho",
-                "Adicionem o Evento de Estrada R-38 ao baralho",
-                "Abram o envelope “Guilda Mercantil”"
+                "Adiciona o Evento de Cidade C-36 ao baralho",
+                "Adiciona o Evento de Cidade C-54 ao baralho",
+                "Adiciona o Evento de Cidade C-55 ao baralho",
+                "Adiciona o Evento de Estrada R-37 ao baralho",
+                "Adiciona o Evento de Estrada R-38 ao baralho",
+                "Abre o envelope “Guilda Mercantil”"
             ],
             [
                 "+1 de prosperidade",
                 "-10 de reputação com os Demónios",
                 "-10 de reputação com a Guilda Mercantil",
                 "+2 de reputação com os Militares",
-                "Adicionem o Evento de Cidade C-36 ao baralho",
-                "Adicionem o Evento de Cidade C-53 ao baralho",
-                "Adicionem o Evento de Cidade C-56 ao baralho",
-                "Adicionem o Evento de Estrada R-38 ao baralho",
-                "Abram o envelope “Militares”"
+                "Adiciona o Evento de Cidade C-36 ao baralho",
+                "Adiciona o Evento de Cidade C-53 ao baralho",
+                "Adiciona o Evento de Cidade C-56 ao baralho",
+                "Adiciona o Evento de Estrada R-38 ao baralho",
+                "Abre o envelope “Militar”"
             ]
         ]
     },
@@ -3195,7 +3195,7 @@ export default {
             [],
             [],
             [
-                "Desbloqueiem um cenário secundário aleatório"
+                "Desbloqueia um cenário secundário aleatório"
             ]
         ]
     },
@@ -3212,7 +3212,7 @@ export default {
         "rewards": []
     },
     "gh2-31": {
-        "name": "Cabana Decrépita",
+        "name": "Bosque Decrépito",
         "rewards": [
             [],
             []
@@ -3235,16 +3235,16 @@ export default {
                 "20 pontos de experiência para cada personagem",
                 "2 ✔ para cada personagem",
                 "-1 de reputação com os Militares",
-                "Adicionem o Evento de Cidade C-38 ao baralho",
-                "Adicionem o Evento de Estrada R-32 ao baralho"
+                "Adiciona o Evento de Cidade C-38 ao baralho",
+                "Adiciona o Evento de Estrada R-32 ao baralho"
             ],
             [
                 "45 moedas de ouro para cada personagem",
                 "20 pontos de experiência para cada personagem",
                 "2 ✔ para cada personagem",
                 "-1 de reputação com os Militares",
-                "Adicionem o Evento de Cidade C-38 ao baralho",
-                "Adicionem o Evento de Estrada R-32 ao baralho"
+                "Adiciona o Evento de Cidade C-38 ao baralho",
+                "Adiciona o Evento de Estrada R-32 ao baralho"
             ],
             [
                 "15 moedas de ouro para cada personagem"
@@ -3310,7 +3310,7 @@ export default {
         "rewards": [
             [
                 "+1 de prosperidade",
-                "Desbloqueiem um cenário secundário aleatório"
+                "Desbloqueia um cenário secundário aleatório"
             ],
             [
                 "+1 de prosperidade"
@@ -3332,7 +3332,7 @@ export default {
         "name": "Plano da Noite",
         "rewards": [
             "+1 de prosperidade",
-            "Abram o envelope “Vela”"
+            "Abre o envelope “Vela”"
         ]
     },
     "gh2-46": {
@@ -3405,8 +3405,8 @@ export default {
             "10 pontos de experiência para cada personagem",
             "1 ✔ para cada personagem",
             "Ganha “Scepter of Xorn” (Item 147)",
-            "Adicionem o Evento de Estrada R-39 ao baralho",
-            "Adicionem o Evento de Cidade C-66 ao baralho"
+            "Adiciona o Evento de Estrada R-39 ao baralho",
+            "Adiciona o Evento de Cidade C-66 ao baralho"
         ]
     },
     "gh2-59": {
@@ -3466,7 +3466,7 @@ export default {
         "rewards": [
             "15 moedas de ouro para cada personagem",
             "10 pontos de experiência para cada personagem",
-            "Ganha “Helix Ring” (Item 136)"
+            "Ganha “Anel da Hélice” (Item 136)"
         ]
     },
     "gh2-68": {
@@ -3503,7 +3503,7 @@ export default {
         ]
     },
     "gh2-73": {
-        "name": "Ilha Amaldiçoada",
+        "name": "Ilha Acorrentada",
         "rewards": [
             "+1 de prosperidade"
         ]
@@ -3512,7 +3512,7 @@ export default {
         "name": "Planaltos Ventosos",
         "rewards": [
             "+1 de prosperidade",
-            "Ganha “Major Power Potion” (Item 53)"
+            "Ganha “Poção de Força Maior” (Item 53)"
         ]
     },
     "gh2-75": {
@@ -3548,7 +3548,7 @@ export default {
         "rewards": [
             "100 moedas de ouro para cada personagem",
             "+2 de prosperidade",
-            "Ganha “Heart of the Betrayer” (Item 133)",
+            "Ganha “Coração do Traidor” (Item 133)",
             "Esse dinheiro deve ser gasto imediatamente em aprimoramentos"
         ]
     },
@@ -3563,7 +3563,7 @@ export default {
         "name": "Esconderijo do Sindicato",
         "rewards": [
             "+1 de prosperidade",
-            "Adicionem o Evento de Cidade C-72 ao baralho"
+            "Adiciona o Evento de Cidade C-72 ao baralho"
         ]
     },
     "gh2-83": {
@@ -3596,19 +3596,19 @@ export default {
     "gh2-87": {
         "name": "Mina de Enxofre",
         "rewards": [
-            "Ganha “Ancient Drill” (Item 109)"
+            "Ganha “Broca Ancestral” (Item 109)"
         ]
     },
     "gh2-88": {
         "name": "Biblioteca Arcana",
         "rewards": [
-            "Adicionem o Evento de Cidade C-37 ao baralho"
+            "Adiciona o Evento de Cidade C-37 ao baralho"
         ]
     },
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "Ganha 2× “Major Healing Potion” (Item 37)"
+            "Ganha 2× “Poção de Cura Maior” (Item 37)"
         ]
     },
     "gh2-90": {
@@ -3660,21 +3660,21 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "10 pontos de experiência para cada personagem",
-            "Ganha “Skull of Hatred” (Item 111)"
+            "Ganha “Crânio do Ódio” (Item 111)"
         ]
     },
     "gh2-99": {
         "name": "Sintering Forge",
         "rewards": [
             "Ganha “Dawnblade” (Item 117)",
-            "Adicionem o Evento de Estrada R-33 ao baralho"
+            "Adiciona o Evento de Estrada R-33 ao baralho"
         ]
     },
     "gh2-100": {
         "name": "Silence Falls",
         "rewards": [
             "+1 de prosperidade",
-            "Adicionem o Evento de Cidade C-60 ao baralho"
+            "Adiciona o Evento de Cidade C-60 ao baralho"
         ]
     },
     "gh2-101": {
@@ -3684,11 +3684,11 @@ export default {
             "+2 de reputação com os Demónios",
             "-10 de reputação com a Guilda Mercantil",
             "-10 de reputação com os Militares",
-            "Adicionem o Evento de Cidade C-36 ao baralho",
-            "Adicionem o Evento de Cidade C-55 ao baralho",
-            "Adicionem o Evento de Cidade C-56 ao baralho",
-            "Adicionem o Evento de Estrada R-36 ao baralho",
-            "Abram o envelope “Demónios”"
+            "Adiciona o Evento de Cidade C-36 ao baralho",
+            "Adiciona o Evento de Cidade C-55 ao baralho",
+            "Adiciona o Evento de Cidade C-56 ao baralho",
+            "Adiciona o Evento de Estrada R-36 ao baralho",
+            "Abre o envelope “Demónios”"
         ]
     },
     "gh2-102": {
@@ -3712,7 +3712,7 @@ export default {
     "gh2-202": {
         "name": "Uma Intrusão Infortunada",
         "rewards": [
-            "Ganha “Focusing Ray” (Item 154)"
+            "Ganha “Raio Focalizador” (Item 154)"
         ]
     },
     "gh2-203": {
@@ -3724,19 +3724,19 @@ export default {
     "gh2-204": {
         "name": "Material Concerns",
         "rewards": [
-            "Ganha “Silent Stiletto” (Item 156)"
+            "Ganha “Estilete Silencioso” (Item 156)"
         ]
     },
     "gh2-205": {
         "name": "Defesa de Pedra",
         "rewards": [
-            "Ganha “Stone Charm” (Item 157)"
+            "Ganha “Amuleto de Pedra” (Item 157)"
         ]
     },
     "gh2-206": {
         "name": "Vermling Liberation",
         "rewards": [
-            "Ganha “Psychic Knife” (Item 158)"
+            "Ganha “Faca Psíquica” (Item 158)"
         ]
     },
     "gh2-207": {
@@ -3748,13 +3748,13 @@ export default {
     "gh2-208": {
         "name": "Taxas de Armazenamento",
         "rewards": [
-            "Ganha “Utility Belt” (Item 160)"
+            "Ganha “Cinto Utilitário” (Item 160)"
         ]
     },
     "gh2-209": {
         "name": "Plano das Feras Selvagens",
         "rewards": [
-            "Ganha “Phasing Idol” (Item 161)"
+            "Ganha “Ídolo de Fases” (Item 161)"
         ]
     },
     "gh2-210": {
@@ -3766,31 +3766,31 @@ export default {
     "gh2-211": {
         "name": "Cripta Infestada",
         "rewards": [
-            "Ganha “Pendant of the Plague” (Item 163)"
+            "Ganha “Pingente da Praga” (Item 163)"
         ]
     },
     "gh2-212": {
         "name": "Insultos Antinaturais",
         "rewards": [
-            "Ganha “Mask of Death” (Item 164)"
+            "Ganha “Máscara da Morte” (Item 164)"
         ]
     },
     "gh2-213": {
         "name": "Batalha dos Bardos",
         "rewards": [
-            "Ganha “Master's Lute” (Item 165)"
+            "Ganha “Alaúde do Mestre” (Item 165)"
         ]
     },
     "gh2-214": {
         "name": "Caçada Corrompida",
         "rewards": [
-            "Ganha “Cloak of the Hunter” (Item 166)"
+            "Ganha “Manto do Caçador” (Item 166)"
         ]
     },
     "gh2-215": {
         "name": "Consequências",
         "rewards": [
-            "Ganha “Jaleco de Médico” (Item 167)"
+            "Ganha “Bata de Médico” (Item 167)"
         ]
     },
     "gh2-216": {
@@ -3802,7 +3802,7 @@ export default {
     "gh2-217": {
         "name": "O Urso Enjaulado",
         "rewards": [
-            "Ganha “Staff of Command” (Item 169)"
+            "Ganha “Cajado de Comando” (Item 169)"
         ]
     },
     "gh2-218": {

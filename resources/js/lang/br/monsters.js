@@ -186,7 +186,7 @@ export default {
     "spitting-drake": "Serpe Cuspidor",
     "spymaster-argeise": "Spymaster Argeise",
     "steel-automaton": "Steel Automaton",
-    "steel-construct": "Steel Construct",
+    "steel-construct": "Constructo de Aço",
     "stone-construct": "Stone Construct",
     "stone-golem": "Golem de Pedra",
     "sun-demon": "Demônio do Sol",

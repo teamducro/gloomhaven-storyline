@@ -45,7 +45,7 @@ export default {
     "gh-516": {
         "name": "血海深仇",
         "progress": [
-            "殺死 15 名腐靈族。"
+            "殺死 15 名腐鼠族。"
         ]
     },
     "gh-517": {
@@ -69,7 +69,7 @@ export default {
     "gh-520": {
         "name": "行使光明",
         "progress": [
-            "在死靈法師聖所中找到碎顱斧。",
+            "在死靈法師的聖所中找到 Skullbane Axe。",
             "用它殺死 7 隻骷髏、活化屍體或活化靈體。"
         ]
     },
@@ -113,12 +113,12 @@ export default {
         "name": "復仇",
         "unlock": "開啟信封 X",
         "progress": [
-            "在幽港迷城完成 4 場劇本。",
+            "在幽暗港完成 4 場劇本。",
             "完成{SCENARIO 57}的結局。"
         ]
     },
     "gh-527": {
-        "name": "Zealot of the Blood God",
+        "name": "嗜血之神的狂信者",
         "progress": [
             "筋疲力盡 12 次。"
         ]
@@ -145,7 +145,7 @@ export default {
     "gh-531": {
         "name": "元素樣本",
         "progress": [
-            "在幽港迷城完成 1 場劇本。",
+            "在幽暗港完成 1 場劇本。",
             "在匕首森林完成 1 場劇本。",
             "在徘徊沼澤完成 1 場劇本。",
             "在守望山脈完成 1 場劇本。",
@@ -339,7 +339,7 @@ export default {
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "獲得「鋸齒刃」設計圖（道具 RM-01）。",
+            "獲得「Serrated Edge」設計圖（道具 RM-01）。",
             "對 30 名敵人施加{WOUND}或{RUPTURE}。",
             "完成{SCENARIO RM1}的結局。"
         ]
@@ -413,7 +413,7 @@ export default {
             21
         ],
         "progress": [
-            "在 8 個不同的據點階段中，讀到事件或章節中出現的人名。"
+            "在 8 個不同的據點階段中，讀到事件或段落中出現的人名。"
         ]
     },
     "fh-7": {
@@ -434,9 +434,9 @@ export default {
             88
         ],
         "progress": [
-            "殺死 2 名阿爾戈克族衛兵。",
-            "殺死 2 隻伏擊者碎爪者。",
-            "殺死 2 隻機械弩手。"
+            "殺死 2 名 Algox Guard。",
+            "殺死 2 隻 Lurker Clawcrusher。",
+            "殺死 2 隻 Robotic Boltshooter。"
         ]
     },
     "fh-9": {
@@ -497,10 +497,10 @@ export default {
             72
         ],
         "progress": [
-            "在白火林地完成 1 場劇本。",
+            "在白火樹林完成 1 場劇本。",
             "在銅頸山脈完成 1 場劇本。",
             "在光輝森林完成 1 場劇本。",
-            "在水晶原野完成 1 場劇本。",
+            "在 Crystal Fields 完成 1 場劇本。",
             "在刺骨之海完成 1 場劇本。"
         ]
     },
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "向大橡樹神殿捐獻 70 金幣。"
+            "向 Temple of the Great Oak 捐獻 70 金幣。"
         ]
     },
     "fh-16": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "獲得「Abyss Axe」（道具 039）設計圖，並用它殺死 10 隻冰凍屍體、冰魂和/或活體末日。"
+            "獲得「Abyss Axe」（道具 039）設計圖，並用它殺死 10 隻 Frozen Corpse、Ice Wraith 和/或 Living Doom。"
         ]
     },
     "fh-20": {
@@ -561,7 +561,7 @@ export default {
             21
         ],
         "progress": [
-            "殺死 15 台毀壞的機器。"
+            "殺死 15 台 Ruined Machine。"
         ]
     },
     "fh-21": {
@@ -632,7 +632,7 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "血神的狂信徒",
+        "name": "嗜血之神的狂信者",
         "progress": [
             "結束 10 場劇本時，你的生命值等於或低於最大值的一半，且未筋疲力盡。",
             "閱讀{SECTION} 122.3。"
@@ -657,7 +657,7 @@ export default {
     "gh2-9": {
         "name": "找尋解藥",
         "progress": [
-            "在以下地區中的 5 處完成劇本：銅頸山脈、腐化林地、匕首森林、幽港迷城、徘徊沼澤、迷霧海、守望山脈。",
+            "在以下地區中的 5 處完成劇本：銅頸山脈、腐化林地、匕首森林、幽暗港、徘徊沼澤、迷霧海、守望山脈。",
             "閱讀{SECTION} 55.3。",
             "完成{SCENARIO 61}的結局。",
             "完成{SCENARIO 62}的結局。"
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "將城市事件 69 與 70 加入城市事件牌堆。獲得「黑卡」（道具 113）。它無法被出售。",
+            "將城市事件 69 與 70 加入城市事件牌堆。獲得「Black Card」（道具 113）。它無法被出售。",
             "完成 6 場支線劇本（劇本編號大於 56）。",
             "閱讀{SECTION} 128.2。"
         ]
@@ -717,7 +717,7 @@ export default {
     "gh2-16": {
         "name": "完美的毒藥",
         "progress": [
-            "獲得「Poison Dagger」（道具 7）。",
+            "獲得「劇毒匕首」（道具 7）。",
             "使用它對沒有{POISON}的敵人施加{POISON}，共 30 次。",
             "閱讀{SECTION} 8.3。"
         ]
@@ -766,7 +766,7 @@ export default {
         ]
     },
     "cq-cq01": {
-        "name": "征服你的心魔",
+        "name": "Conquer Your Demons",
         "unlock": "開啟任一職業或建築信封。你之後的角色對以惡魔為目標的任何攻擊加上{PIERCE} 1 和{WOUND}。",
         "progress": [
             "殺死 2 隻以此方式生成的大地惡魔。",
@@ -778,21 +778,21 @@ export default {
         ]
     },
     "cq-cq02": {
-        "name": "你的朋友很擔心",
-        "unlock": "開啟任一職業或建築信封。你可以永久失去因血脈中角色退休而獲得的額外特長標記。每失去一個特長標記，即獲得 30 金幣，可立即用於為你下一名角色購買附魔。",
+        "name": "Your Friends Are Concerned",
+        "unlock": "開啟任一職業或建築信封。你可以永久失去因血脈中角色退休而獲得的額外專長標記。每失去一個專長標記，即獲得 30 金幣，可立即用於為你下一名角色購買附魔。",
         "progress": [
             "從戰鬥目標獲得 30 個勾選記號。每場劇本多抽並保留一張戰鬥目標；除非全部達成，否則不會獲得任何勾選記號。"
         ]
     },
     "cq-cq03": {
-        "name": "戰鬥的後果",
+        "name": "Consequences of Combat",
         "unlock": "開啟任一職業或建築信封。你之後的角色每次在劇本中抽到{NULL_MODIFIER}時，獲得{STRENGTHEN}。",
         "progress": [
             "獲得 50 點克制：每場劇本一次，在抽取修正牌前降低攻擊的數值；每降低 1 點即獲得 1 點克制。"
         ]
     },
     "cq-cq04": {
-        "name": "戲劇性的結局",
+        "name": "A Dramatic Conclusion",
         "unlock": "開啟任一職業或建築信封。你之後的角色在任一盟友筋疲力盡時，可立即執行長休的步驟。",
         "progress": [
             "贏得 10 場劇本，且你最後兩次行動是一個上方遺失動作和一個下方遺失動作。"

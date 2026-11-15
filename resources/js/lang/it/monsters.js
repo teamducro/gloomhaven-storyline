@@ -76,7 +76,7 @@ export default {
     "elder-ooze": "Melma Antica",
     "energized-corpse": "Energized Corpse",
     "eternal-demon": "Eternal Demon",
-    "first-of-the-order": "Primo dell'Ordine",
+    "first-of-the-order": "First of the Order",
     "first-shield-harmon": "First Shield Harmon",
     "fish-king": "Re dei Pesci",
     "flame-demon": "Demone della Fiamma",

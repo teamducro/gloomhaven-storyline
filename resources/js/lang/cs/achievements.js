@@ -318,7 +318,7 @@ export default {
         "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
-        "name": "Do lesa"
+        "name": "Vzhůru do hvozdu"
     },
     "fh-CFP": {
         "name": "Firepepper"
@@ -387,7 +387,7 @@ export default {
         "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
-        "name": "Prastará technologie"
+        "name": "Ancient Technology"
     },
     "gh2-G2CRD": {
         "name": "City Rule: Demons"
@@ -402,10 +402,10 @@ export default {
         "name": "Elements Mastered"
     },
     "gh2-G2EOC": {
-        "name": "Konec zkázy"
+        "name": "End of Corruption"
     },
     "gh2-G2EOG": {
-        "name": "Konec Přítmí"
+        "name": "End of Gloom"
     },
     "gh2-G2HW": {
         "name": "Hallowed Waters"
@@ -426,19 +426,19 @@ export default {
         "name": "The Darkness Retreats"
     },
     "gh2-G2TDA": {
-        "name": "Drak pomohl"
+        "name": "The Drake Aided"
     },
     "gh2-G2TDS": {
-        "name": "Drak zabit"
+        "name": "The Drake Slain"
     },
     "gh2-G2TPE": {
-        "name": "Síla vylepšení"
+        "name": "The Power of Enhancement"
     },
     "gh2-G2TVF": {
-        "name": "Hlas osvobozen"
+        "name": "The Voice Freed"
     },
     "gh2-G2TVS": {
-        "name": "Hlas umlčen"
+        "name": "The Voice Silenced"
     },
     "gh2-P2R16": {
         "name": "Faction Reputation 16"

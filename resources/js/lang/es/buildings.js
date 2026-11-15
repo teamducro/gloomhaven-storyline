@@ -127,7 +127,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Compra de forma colectiva 1 recurso de material por 2 de oro",
+                "operations": "Compra de forma colectiva 1 recurso de materiales por 2 de oro",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -135,7 +135,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Compra de forma colectiva hasta 2 recursos de material distintos por 2 de oro cada uno",
+                "operations": "Compra de forma colectiva hasta 2 recursos de materiales distintos por 2 de oro cada uno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -143,7 +143,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Compra de forma colectiva hasta 3 recursos de material distintos por 2 de oro cada uno",
+                "operations": "Compra de forma colectiva hasta 3 recursos de materiales distintos por 2 de oro cada uno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -200,7 +200,7 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 1 {HIDE} colectiva",
                 "passive": "",
                 "rewards": "Añade los objetos 001 a 010 al suministro de objetos"
@@ -208,7 +208,7 @@ export default {
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 1 {HIDE} colectiva",
                 "passive": "",
                 "rewards": "+1 de prosperidad, añade los objetos 011 a 015 al suministro de objetos"
@@ -216,7 +216,7 @@ export default {
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 1 {HIDE} colectiva",
                 "passive": "",
                 "rewards": "+1 de prosperidad, añade los objetos 016 a 020 al suministro de objetos"
@@ -224,7 +224,7 @@ export default {
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 2 {HIDE} colectivas",
                 "passive": "",
                 "rewards": "+1 de prosperidad, añade los objetos 021 a 025 al suministro de objetos"
@@ -232,7 +232,7 @@ export default {
             {
                 "level": 5,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 2 {HIDE} colectivas",
                 "passive": "",
                 "rewards": "+1 de prosperidad, añade los objetos 026 a 030 al suministro de objetos"
@@ -240,7 +240,7 @@ export default {
             {
                 "level": 6,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 2 {HIDE} colectivas",
                 "passive": "",
                 "rewards": "+1 de prosperidad, añade los objetos 031 a 035 al suministro de objetos"
@@ -248,7 +248,7 @@ export default {
             {
                 "level": 7,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 3 {HIDE} colectivas",
                 "passive": "",
                 "rewards": "+1 de prosperidad, añade los objetos 036 a 040 al suministro de objetos"
@@ -256,7 +256,7 @@ export default {
             {
                 "level": 8,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 3 {HIDE} colectivas",
                 "passive": "",
                 "rewards": "+1 de prosperidad, añade los objetos 041 a 045 al suministro de objetos"
@@ -264,7 +264,7 @@ export default {
             {
                 "level": 9,
                 "operations": "",
-                "downtime": "Objetos de artesanía",
+                "downtime": "Fabricar objetos",
                 "wrecked": "Pierde 3 {HIDE} colectivas",
                 "passive": "",
                 "rewards": "+1 de prosperidad, añade los objetos 046 a 050 al suministro de objetos"
@@ -642,7 +642,7 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Perder 1 recurso colectivo cualquiera",
+                "wrecked": "Pierde 1 recurso colectivo cualquiera",
                 "passive": "Reduce todos los costes de construcción en 1 recurso de materiales",
                 "rewards": "+1 de prosperidad, lee la sección 7.3"
             },
@@ -650,7 +650,7 @@ export default {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Perder 1 recurso colectivo cualquiera",
+                "wrecked": "Pierde 1 recurso colectivo cualquiera",
                 "passive": "Reduce todos los costes de construcción en 1 recurso de materiales y el coste adicional de construcción en 1 de moral",
                 "rewards": "+1 de prosperidad"
             }
@@ -736,7 +736,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Adiestra de forma colectiva hasta 1 soldado por 3 de oro y 1 recurso de material",
+                "operations": "Adiestra de forma colectiva hasta 1 soldado por 3 de oro y 1 recurso de materiales",
                 "downtime": "",
                 "wrecked": "Desventaja en todas las resoluciones de eventos de ataque. No se pueden usar soldados.",
                 "passive": "Capacidad: 4, Efecto: Ventaja y -5{ATTACK.fh}",
@@ -744,7 +744,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Adiestra de forma colectiva hasta 1 soldado por 3 de oro y 1 recurso de material",
+                "operations": "Adiestra de forma colectiva hasta 1 soldado por 3 de oro y 1 recurso de materiales",
                 "downtime": "",
                 "wrecked": "Desventaja en todas las resoluciones de eventos de ataque. No se pueden usar soldados.",
                 "passive": "Capacidad: 6, Efecto: Ventaja y -15{ATTACK.fh}",
@@ -752,7 +752,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Adiestra de forma colectiva hasta 2 soldados por 3 de oro y 1 recurso de material cada uno",
+                "operations": "Adiestra de forma colectiva hasta 2 soldados por 3 de oro y 1 recurso de materiales cada uno",
                 "downtime": "",
                 "wrecked": "Desventaja en todas las resoluciones de eventos de ataque. No se pueden usar soldados.",
                 "passive": "Capacidad: 8, Efecto: Ventaja y -25{ATTACK.fh}",
@@ -760,7 +760,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Adiestra de forma colectiva hasta 2 soldados por 3 de oro y 1 recurso de material cada uno",
+                "operations": "Adiestra de forma colectiva hasta 2 soldados por 3 de oro y 1 recurso de materiales cada uno",
                 "downtime": "",
                 "wrecked": "Desventaja en todas las resoluciones de eventos de ataque. No se pueden usar soldados.",
                 "passive": "Capacidad: 10, Efecto: Ventaja y -35{ATTACK.fh}",

@@ -6,8 +6,8 @@ export default {
             "Sostituisci una carta {-1_WHITE} con una carta {+1_WHITE}",
             "Aggiungi due carte {+1_WHITE}",
             "Aggiungi una carta {+3_WHITE}",
-            "Aggiungi tre carte {AGAIN} {PUSH}",
-            "Aggiungi due carte {AGAIN} {PIERCE}",
+            "Aggiungi tre carte {AGAIN} {PUSH}1",
+            "Aggiungi due carte {AGAIN} {PIERCE}3",
             "Aggiungi una carta {AGAIN} {STUN}",
             "Aggiungi una carta {AGAIN} {DISARM} e una carta {AGAIN} {MUDDLE}",
             "Aggiungi una carta {AGAIN} AGGIUNGERE {TARGET}",
@@ -23,7 +23,7 @@ export default {
             "Aggiungi una carta {-2_WHITE} e due carte {+2_WHITE}",
             "Aggiungi una carta {+1_WHITE} {IMMOBILIZE}",
             "Aggiungi una carta {+2_WHITE} {MUDDLE}",
-            "Aggiungi due carte {AGAIN} {PUSH}",
+            "Aggiungi due carte {AGAIN} {PUSH}2",
             "Aggiungi due carte {AGAIN} {EARTH}",
             "Aggiungi due carte {AGAIN} {WIND}",
             "Ignora gli effetti negativi degli oggetti",
@@ -674,7 +674,7 @@ export default {
             "Aggiungi una carta {+2_WHITE} {EARTH_OR_DARK}",
             "Ignora gli effetti dello scenario e aggiungi due carte {+1_WHITE}",
             "Subito prima di ogni tuo riposo, puoi uccidere una delle tue evocazioni per eseguire {BLESS.fh}, se stesso",
-            "Una volta per scenario, quando un personaggio alleato sta per diventare esausto subendo {DAMAGE.fh}, puoi subire {DAMAGE.fh}2 per ridurre invece i suoi punti ferita a 1",
+            "Una volta per scenario, quando un personaggio alleato sta per diventare sfinito subendo {DAMAGE.fh}, puoi subire {DAMAGE.fh}2 per ridurre invece i suoi punti ferita a 1",
             "All'inizio di ogni scenario, puoi giocare una carta di livello 1 dalla tua mano per eseguire l'azione di evocazione della carta"
         ]
     },
@@ -714,7 +714,7 @@ export default {
             "Sostituisci una carta {+0_WHITE} con tre carte “Porta un elemento debole a forte” {AGAIN}",
             "Aggiungi due carte “+1{ATTACK.fh} per ogni coppia di {INFUSION_ICON} attivi” {AGAIN}",
             "Ignora gli effetti dello scenario",
-            "Ignora gli effetti {-1} degli oggetti. Ogni volta che diventi esausto, mantieni in gioco tutti i tuoi bonus attivi, con le tue evocazioni che agiscono con iniziativa 99 in ogni round",
+            "Ignora gli effetti {-1} degli oggetti. Ogni volta che diventi sfinito, mantieni in gioco tutti i tuoi bonus attivi, con le tue evocazioni che agiscono con iniziativa 99 in ogni round",
             "Ogni volta che effettui un riposo breve, puoi {ANY_X} per {RECOVER.fh} un oggetto speso {ONE-HAND} o {TWO-HANDS}",
             "Una volta per scenario, durante la definizione dell'ordine di iniziativa, dopo che tutte le carte capacità sono state rivelate, {ANY}"
         ]
@@ -782,8 +782,8 @@ export default {
     "PC": {
         "name": "Pain Conduit",
         "masteries": [
-            "Fai subire ad altre figure un totale di almeno {DAMAGE.fh}40 in un solo round",
-            "Start a turn con {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} e {MUDDLE.fh}"
+            "Fai subire ad altre miniature un totale di almeno {DAMAGE.fh}40 in un solo round",
+            "Inizia un turno con {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} e {MUDDLE.fh}"
         ],
         "perks": [
             "Rimuovi due carte {-1_WHITE}",
@@ -796,7 +796,7 @@ export default {
             "Aggiungi una carta {+0_WHITE} “Aggiungi +1{ATTACK.fh} per ogni condizione negativa che hai”",
             "Ignora gli effetti dello scenario e aggiungi due carte {+1_WHITE}",
             "In ogni round in cui effettui un riposo lungo, puoi ignorare tutte le condizioni negative che hai. In tal caso, non possono essere rimosse in quel round",
-            "Ogni volta che diventi esausto, esegui prima {CURSE.fh}, {TARGET} tutti, {RANGE.fh}3",
+            "Ogni volta che diventi sfinito, esegui prima {CURSE.fh}, {TARGET} tutti, {RANGE.fh}3",
             "Aumenta di 5 i tuoi punti ferita massimi"
         ]
     },
@@ -873,7 +873,7 @@ export default {
             "Ignora gli effetti {-1} degli oggetti e aggiungi due carte {+1_WHITE}",
             "Ogni volta che effettui un riposo lungo, puoi {PRESSURE_UP_ICON} o {PRESSURE_DOWN_ICON}",
             "Ogni volta che stai per ottenere {POISON.fh}, puoi subire {DAMAGE.fh}1 per prevenire la condizione",
-            "Una volta per scenario, quando stai per diventare esausto, ottieni invece {BRITTLE.fh} e {INVISIBLE.fh}, perdi tutte le tue carte, {RECOVER.fh} quattro carte perse e poi scarta le carte recuperate"
+            "Una volta per scenario, quando stai per diventare sfinito, ottieni invece {BRITTLE.fh} e {INVISIBLE.fh}, perdi tutte le tue carte, {RECOVER.fh} quattro carte perse e poi scarta le carte recuperate"
         ]
     },
     "DT": {
@@ -934,7 +934,7 @@ export default {
             "Ignora gli effetti {-1} degli oggetti e, ogni volta che stai per ottenere {STUN.fh}, previeni la condizione",
             "Ogni volta che effettui un riposo lungo, esegui: {STRENGTHEN.fh}, {TARGET.fh}1 alleato, {RANGE.fh}3",
             "Tutti i valori di iniziativa possono essere discussi liberamente e con precisione",
-            "La prima volta per scenario che tu o un alleato diventate esausti, esegui: {HEAL.fh}3, {TARGET.fh}tutti, {WARD.fh}, {STRENGTHEN.fh}"
+            "La prima volta per scenario che tu o un alleato diventate sfiniti, esegui: {HEAL.fh}3, {TARGET.fh}tutti, {WARD.fh}, {STRENGTHEN.fh}"
         ]
     },
     "HA": {
@@ -962,7 +962,7 @@ export default {
         "name": "Cassandra",
         "masteries": [
             "Per un intero scenario, rivela almeno una carta da un mazzo dei modificatori di attacco o da un mazzo capacità dei mostri in ogni round",
-            "Bersaglia 6 figure con una capacità che bersaglia figure che occupano esagoni contenenti un {RIFT_WHITE}"
+            "Bersaglia 6 miniature con una capacità che bersaglia miniature che occupano esagoni contenenti un {RIFT_WHITE}"
         ],
         "perks": [
             "Rimuovi una carta {-2_WHITE}",
@@ -972,7 +972,7 @@ export default {
             "Sostituisci una carta {+0_WHITE} con una carta {+2_WHITE} {LIGHT_OR_DARK}",
             "Aggiungi una carta {+1_WHITE} “Colloca questa carta nella tua area attiva. Quando collochi il prossimo {RIFT_WHITE}, scarta questa carta per collocare un altro {RIFT_WHITE} entro {RANGE.fh}1 da esso” {AGAIN}",
             "Ignora gli effetti dello scenario e aggiungi due carte {+1_WHITE}",
-            "Ogni volta che effettui un riposo lungo, puoi leggere un {SECTION} non letto dai “Collegamenti ai Paragrafi” dello scenario attuale",
+            "Ogni volta che effettui un riposo lungo, puoi leggere una {SECTION} non letta dai “Collegamenti alle Sezioni” dello scenario attuale",
             "Ogni volta che collochi un {RIFT_WHITE}, puoi eseguire “{PULL.fh}1, {TARGET.fh}1 alleato o nemico, {RANGE.fh}1” come se occupassi un esagono contenente un {RIFT_WHITE}",
             "Ogni volta che un mazzo viene mescolato, puoi mettere da parte tutte le carte rivelate di quel mazzo e rimetterle in cima dopo averlo mescolato"
         ]
@@ -1060,7 +1060,7 @@ export default {
         "name": "Silent Knife",
         "masteries": [
             "Per un intero scenario, attacca solo nemici adiacenti a uno dei tuoi alleati oppure non adiacenti ad alcun loro alleato, ed esegui almeno 10 attacchi",
-            "End 3 scenarios con 12 or more money tokens"
+            "Termina 3 scenari con 12 o più segnalini denaro"
         ],
         "perks": [
             "Rimuovi una carta {-2_WHITE}",
@@ -1071,7 +1071,7 @@ export default {
             "Sostituisci una carta {+1_WHITE} con una carta {AGAIN} {+1_WHITE} “{INVISIBLE.fh}, se stesso”",
             "Aggiungi una carta {+1_WHITE} {DISARM.fh}",
             "Alla fine di ogni tuo riposo, puoi collocare uno dei tuoi segnalini denaro nell'esagono occupato da un nemico entro {RANGE.fh}3 per eseguire: {ATTACK.fh}1, {TARGET.fh} quel nemico, {RANGE.fh}3",
-            "Ogni volta che completi un evento cittadino, pesca una carta modificatore di attacco come se stessi eseguendo un {ATTACK.fh}4. Ottieni una quantità di oro pari ai {DAMAGE.fh} che l'attacco avrebbe inflitto",
+            "Ogni volta che completi un evento di città, pesca una carta modificatore di attacco come se stessi eseguendo un {ATTACK.fh}4. Ottieni una quantità di oro pari ai {DAMAGE.fh} che l'attacco avrebbe inflitto",
             "Una volta per scenario, durante il tuo turno, puoi eseguire: {INVISIBLE.fh}, se stesso"
         ]
     },
@@ -1090,7 +1090,7 @@ export default {
             "Aggiungi una carta {+2_WHITE} {FIRE}/{ICE}",
             "Ignora gli effetti dello scenario e rimuovi una carta {+0_WHITE}",
             "Una volta per scenario, quando stai per subire {DAMAGE.fh}, puoi ottenere {INVISIBLE.fh} e {STUN.fh} per annullare i {DAMAGE.fh}",
-            "Ogni volta che effettui un riposo breve, se <i>Etere Rivitalizzante</i> è nella tua pila degli scarti, prima esegui {RECOVER.fh} su di essa",
+            "Ogni volta che effettui un riposo breve, se <i>Reviving Ether</i> è nella tua pila degli scarti, prima esegui {RECOVER.fh} su di essa",
             "Alla fine di ciascuno dei tuoi turni in cui hai eseguito un'azione con {LOST.fh}, ottieni {BLESS.fh}"
         ]
     },
@@ -1117,7 +1117,7 @@ export default {
         "name": "Berserker",
         "masteries": [
             "Uccidi 20 nemici con la tua ritorsione",
-            "In un singolo scenario, termina tutti i tuoi turni con i punti ferita pari o inferiori alla metà del massimo senza diventare esausto"
+            "In un singolo scenario, termina tutti i tuoi turni con i punti ferita pari o inferiori alla metà del massimo senza diventare sfinito"
         ],
         "perks": [
             "Rimuovi una carta {-2_WHITE}",
@@ -1134,7 +1134,7 @@ export default {
         ]
     },
     "BS2": {
-        "name": "Sciame di Lame",
+        "name": "Bladeswarm",
         "masteries": [
             "Esegui 6 diverse capacità {PERSISTENT}{LOST.fh}, di cui al massimo 3 siano capacità di evocazione",
             "Ottieni questa maestria quando ritieni di meritarla"
@@ -1266,9 +1266,9 @@ export default {
             "Sostituisci due carte {+0_WHITE} con una carta {+1_WHITE} “Puoi ottenere {DISARM.fh} per aggiungere {STUN.fh}”",
             "Aggiungi due carte {+1_WHITE} “Aggiungi +1 {ATTACK.fh} se un alleato ha una prescrizione attiva”",
             "Aggiungi una carta {AGAIN} “{HEAL.fh}3, {RANGE.fh}1”",
-            "Aggiungi +1 {HEAL.fh} a tutte le capacità di cura sulle carte capacità “Medical Kit”",
+            "Aggiungi +1 {HEAL.fh} a tutte le capacità di cura sulle carte capacità “Medical Pack”",
             "In ogni Fase Città dopo aver completato uno scenario, la donazione al Santuario della Grande Quercia tua o di un alleato è gratuita",
-            "Alla fine di ogni tuo riposo, se un alleato ha una prescrizione attiva, ottieni una carta capacità “Medical Kit” e sposta indietro di una casella il segnalino sulla prescrizione attiva di un alleato"
+            "Alla fine di ogni tuo riposo, se un alleato ha una prescrizione attiva, ottieni una carta capacità “Medical Pack” e sposta indietro di una casella il segnalino sulla prescrizione attiva di un alleato"
         ]
     },
     "SK2": {
@@ -1305,7 +1305,7 @@ export default {
             "Sostituisci una carta {+0_WHITE} e una carta {+1_WHITE} con due carte {+2_WHITE}",
             "Aggiungi una carta {AGAIN} “Concedi a un alleato: {MOVE.fh}2 o {ATTACK.fh}2”",
             "Aggiungi tre carte {AGAIN} {CURSE.fh}",
-            "Alla fine di ogni scenario, ogni personaggio presente in quello scenario ottiene 8 PE se hai completato il tuo obiettivo di battaglia",
+            "Alla fine di ogni scenario, ogni personaggio presente in quello scenario ottiene 8 PE se hai completato il tuo obiettivo della battaglia",
             "Ogni volta che esegui una {SONG}, se hai delle Note non utilizzate, ottieni una Nota a tua scelta oltre a qualsiasi altra Nota ottenuta in quel round",
             "Durante la definizione dell'ordine di iniziativa nei round in cui dichiari un riposo lungo, ottieni una Nota a tua scelta e ciascuno dei tuoi alleati può ridurre la propria iniziativa di 10"
         ]

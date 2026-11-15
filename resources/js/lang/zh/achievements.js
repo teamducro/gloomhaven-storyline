@@ -48,16 +48,16 @@ export default {
         "name": "远古科技"
     },
     "gh-GAT2": {
-        "name": "Ancient Technology x2"
+        "name": "远古科技 x2"
     },
     "gh-GAT3": {
-        "name": "Ancient Technology x3"
+        "name": "远古科技 x3"
     },
     "gh-GAT4": {
-        "name": "Ancient Technology x4"
+        "name": "远古科技 x4"
     },
     "gh-GAT5": {
-        "name": "Ancient Technology x5"
+        "name": "远古科技 x5"
     },
     "gh-PTR": {
         "name": "穿过废墟"
@@ -120,10 +120,10 @@ export default {
         "name": "终结腐化之源"
     },
     "gh-GEOC2": {
-        "name": "End of Corruption x2"
+        "name": "终结腐化之源 x2"
     },
     "gh-GEOC3": {
-        "name": "End of Corruption x3"
+        "name": "终结腐化之源 x3"
     },
     "gh-GAOO": {
         "name": "秩序覆灭"
