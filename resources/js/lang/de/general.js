@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "Tempel der Großen Eiche",
     "Gloomhaven Prosperity": "Gloomhaven-Wohlstand",
+    "Frosthaven Prosperity": "Frosthaven-Wohlstand",
+    "{game} Items": "Gegenstände aus {game}",
+    "Global Achievements": "Globale Erfolge",
+    "Party Achievements": "Gruppenerfolge",
+    "Campaign Stickers": "Kampagnenaufkleber",
+    "No achievements in {game}": "Keine Erfolge in {game}",
     "Prosperity Items": "Wohlstands-Gegenstände",
     "Modify the cost of items when buying by this amount.": "Beim Kauf von Gegenständen wird der Preis um diese Höhe verändert.",
     "The cost of items displayed is modified by this amount.": "Die Kosten der angezeigten Gegenstände wird um diese Höhe verändert.",

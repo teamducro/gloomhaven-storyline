@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "สถานที่ศักดิ์สิทธิ์แห่งโอ๊กใหญ่",
     "Gloomhaven Prosperity": "ความมั่งคั่งของกลูมฮาเวน",
+    "Frosthaven Prosperity": "ความมั่งคั่งของฟรอสต์ฮาเวน",
+    "{game} Items": "ไอเท็มของ {game}",
+    "Global Achievements": "ความสำเร็จส่วนรวม",
+    "Party Achievements": "ความสำเร็จของกลุ่ม",
+    "Campaign Stickers": "สติกเกอร์แคมเปญ",
+    "No achievements in {game}": "ไม่มีความสำเร็จใน {game}",
     "Prosperity Items": "ไอเท็มตามความมั่งคั่ง",
     "Modify the cost of items when buying by this amount.": "ปรับราคาไอเท็มเมื่อซื้อตามจำนวนนี้",
     "The cost of items displayed is modified by this amount.": "ราคาไอเท็มที่แสดงจะถูกปรับตามจำนวนนี้",

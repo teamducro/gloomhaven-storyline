@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "Vén tölgy szentélye",
     "Gloomhaven Prosperity": "Homályrév fejlettsége",
+    "Frosthaven Prosperity": "Frosthaven fejlettsége",
+    "{game} Items": "{game} felszerelések",
+    "Global Achievements": "Általános eredmények",
+    "Party Achievements": "Csapateredmények",
+    "Campaign Stickers": "Kampánymatricák",
+    "No achievements in {game}": "Nincsenek eredmények: {game}",
     "Prosperity Items": "Felszerelések",
     "Modify the cost of items when buying by this amount.": "Ennyivel módosítsd a felszerelések árát vásárláskor",
     "The cost of items displayed is modified by this amount.": "A felszerelés ára ennyivel módosul",

@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "Sanctuaire du Grand Chêne",
     "Gloomhaven Prosperity": "Prospérité de Havrenuit",
+    "Frosthaven Prosperity": "Prospérité de Havreblanc",
+    "{game} Items": "Objets de {game}",
+    "Global Achievements": "Hauts-Faits globaux",
+    "Party Achievements": "Hauts-Faits de compagnie",
+    "Campaign Stickers": "Autocollants de campagne",
+    "No achievements in {game}": "Aucun Haut-Fait dans {game}",
     "Prosperity Items": "Objets de prospérité",
     "Modify the cost of items when buying by this amount.": "Modifie le coût des objets de ce montant.",
     "The cost of items displayed is modified by this amount.": "Le coût des objets affichés est modifié de ce montant.",

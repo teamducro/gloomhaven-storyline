@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "Datek na Sanktuarium Wielkiego Dębu",
     "Gloomhaven Prosperity": "Dobrobyt Gloomhaven",
+    "Frosthaven Prosperity": "Dobrobyt Frosthaven",
+    "{game} Items": "Przedmioty z gry {game}",
+    "Global Achievements": "Osiągnięcia globalne",
+    "Party Achievements": "Osiągnięcia drużynowe",
+    "Campaign Stickers": "Naklejki kampanii",
+    "No achievements in {game}": "Brak osiągnięć w grze {game}",
     "Prosperity Items": "Przedmioty według dobrobytu",
     "Modify the cost of items when buying by this amount.": "Przy zakupie modyfikuj koszt przedmiotów o tę kwotę.",
     "The cost of items displayed is modified by this amount.": "Koszt wyświetlanych przedmiotów jest modyfikowany o tę kwotę.",

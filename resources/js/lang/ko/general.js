@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "위대한 떡갈나무의 성지",
     "Gloomhaven Prosperity": "글룸헤이븐 번영도",
+    "Frosthaven Prosperity": "프로스트헤이븐 번영도",
+    "{game} Items": "{game} 아이템",
+    "Global Achievements": "전역 달성 과제",
+    "Party Achievements": "파티 달성 과제",
+    "Campaign Stickers": "캠페인 스티커",
+    "No achievements in {game}": "{game}에는 달성 과제가 없습니다",
     "Prosperity Items": "번영도 아이템",
     "Modify the cost of items when buying by this amount.": "아이템을 구입할 때 비용이 이 수치만큼 변경됩니다.",
     "The cost of items displayed is modified by this amount.": "표시되는 아이템 비용이 이 수치만큼 변경됩니다.",

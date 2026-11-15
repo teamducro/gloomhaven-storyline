@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "Santuário do Grande Carvalho",
     "Gloomhaven Prosperity": "Prosperidade de Gloomhaven",
+    "Frosthaven Prosperity": "Prosperidade de Frosthaven",
+    "{game} Items": "Itens de {game}",
+    "Global Achievements": "Conquistas globais",
+    "Party Achievements": "Conquistas do grupo",
+    "Campaign Stickers": "Autocolantes de campanha",
+    "No achievements in {game}": "Não há conquistas em {game}",
     "Prosperity Items": "Itens de Prosperidade",
     "Modify the cost of items when buying by this amount.": "Modifica o custo dos itens na compra por este valor.",
     "The cost of items displayed is modified by this amount.": "O custo dos itens apresentados é modificado por este valor.",

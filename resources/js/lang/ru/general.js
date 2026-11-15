@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "Святилище Великого дуба",
     "Gloomhaven Prosperity": "Процветание Мрачной гавани",
+    "Frosthaven Prosperity": "Процветание Frosthaven",
+    "{game} Items": "Предметы из {game}",
+    "Global Achievements": "Общие достижения",
+    "Party Achievements": "Достижения отряда",
+    "Campaign Stickers": "Наклейки кампании",
+    "No achievements in {game}": "В {game} нет достижений",
     "Prosperity Items": "Предметы за процветание",
     "Modify the cost of items when buying by this amount.": "Измените стоимость покупки предметов на эту сумму.",
     "The cost of items displayed is modified by this amount.": "Стоимость отображаемых предметов изменяется на эту сумму.",

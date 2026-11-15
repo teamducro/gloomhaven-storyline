@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "Svatyně Velkého dubu",
     "Gloomhaven Prosperity": "Blahobyt Gloomhavenu",
+    "Frosthaven Prosperity": "Blahobyt Frosthavenu",
+    "{game} Items": "Předměty ze hry {game}",
+    "Global Achievements": "Globální úspěchy",
+    "Party Achievements": "Úspěchy družiny",
+    "Campaign Stickers": "Samolepky kampaně",
+    "No achievements in {game}": "Ve hře {game} nejsou žádné úspěchy",
     "Prosperity Items": "Předměty za blahobyt",
     "Modify the cost of items when buying by this amount.": "Při nákupu předmětů upravte jejich cenu o tuto hodnotu.",
     "The cost of items displayed is modified by this amount.": "Zobrazená cena předmětů je upravena o tuto hodnotu.",

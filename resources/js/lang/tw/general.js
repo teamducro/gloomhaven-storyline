@@ -1,6 +1,12 @@
 export default {
     "Sanctuary of the Great Oak": "大橡樹庇護所",
     "Gloomhaven Prosperity": "幽暗港繁榮度",
+    "Frosthaven Prosperity": "霜港迷城繁榮度",
+    "{game} Items": "{game}道具",
+    "Global Achievements": "全域成就",
+    "Party Achievements": "隊伍成就",
+    "Campaign Stickers": "戰役貼紙",
+    "No achievements in {game}": "{game}中沒有成就",
     "Prosperity Items": "繁榮度道具",
     "Modify the cost of items when buying by this amount.": "購買道具時，費用依此數值調整。",
     "The cost of items displayed is modified by this amount.": "顯示的道具費用已依此數值調整。",

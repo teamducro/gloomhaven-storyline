@@ -28,7 +28,7 @@
                     </template>
 
                     <div class="w-full">
-                        <h2>{{ $t(sheet.game) + ' ' + $t('Items') }}</h2>
+                        <h2>{{ $t('{game} Items', {game: $t(sheet.game)}) }}</h2>
                         <ul class="flex flex-row flex-wrap -mx-2">
                             <li v-for="(checked, item) in sheet.itemDesigns"
                                 class="flex items-center">
@@ -61,7 +61,7 @@
                                 <template v-else>
                                     <template v-for="gameId in Object.keys(sheet.crossGameItems)">
                                         <template v-if="Object.keys(sheet.crossGameItems[gameId]).length !== 0">
-                                            <h2 class="ml-2">{{ $t(gameId) + ' ' + $t('Items') }}</h2>
+                                            <h2 class="ml-2">{{ $t('{game} Items', {game: $t(gameId)}) }}</h2>
                                             <ul class="flex flex-row flex-wrap">
                                                 <li v-for="code in Object.keys(sheet.crossGameItems[gameId])"
                                                     class="flex items-center">
