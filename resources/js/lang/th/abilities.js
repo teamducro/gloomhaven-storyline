@@ -5737,7 +5737,7 @@ export default {
             "name": "มือเร็ว"
         },
         "sinister-opportunity": {
-            "name": "โอกาสชั่วร้าย"
+            "name": "sinister opportunity"
         },
         "venom-shiv": {
             "name": "มีดพิษ"
@@ -5758,7 +5758,7 @@ export default {
             "name": "ระเบิดควัน"
         },
         "tricksters-reversal": {
-            "name": "การพลิกของนักหลอกลวง"
+            "name": "trickster's reversal"
         },
         "open-wound": {
             "name": "แผลเปิด"
@@ -5989,7 +5989,7 @@ export default {
             "name": "สิ่งรบกวนแวววาว"
         },
         "strength-in-agony": {
-            "name": "พลังในความทรมาน"
+            "name": "strength in agony"
         },
         "defiance-of-death": {
             "name": "ท้าทายความตาย"
@@ -6067,100 +6067,100 @@ export default {
             "name": "bathe in blood"
         },
         "focused-scourge": {
-            "name": "ภัยพิบัติมุ่งเป้า"
+            "name": "focused scourge"
         },
         "deflecting-blades": {
-            "name": "ใบมีดสะท้อน"
+            "name": "deflecting blades"
         },
         "omniscient-assault": {
-            "name": "การโจมตีผู้รู้แจ้ง"
+            "name": "omniscient assault"
         },
         "hive-mind": {
-            "name": "จิตรวมฝูง"
+            "name": "hive mind"
         },
         "corrupting-parasites": {
-            "name": "ปรสิตเสื่อมทราม"
+            "name": "corrupting parasites"
         },
         "death-march": {
-            "name": "การเดินทัพมรณะ"
+            "name": "death march"
         },
         "engulfing-stingers": {
-            "name": "เหล็กในกลืนกิน"
+            "name": "engulfing stingers"
         },
         "swarming-minions": {
-            "name": "สมุนห้อมล้อม"
+            "name": "swarming minions"
         },
         "scattered-defense": {
-            "name": "การป้องกันกระจาย"
+            "name": "scattered defense"
         },
         "call-of-the-grave": {
-            "name": "เสียงเรียกจากหลุมศพ"
+            "name": "call of the grave"
         },
         "the-storms-edge": {
-            "name": "ขอบพายุ"
+            "name": "the storms edge"
         },
         "unstoppable-army": {
-            "name": "กองทัพไม่อาจหยุด"
+            "name": "unstoppable army"
         },
         "grasping-advance": {
             "name": "รุกคว้า"
         },
         "tomb-of-the-immortal": {
-            "name": "สุสานแห่งอมตะ"
+            "name": "tomb of the immortal"
         },
         "pressing-pursuit": {
             "name": "pressing pursuit"
         },
         "infest": {
-            "name": "รุมเข้าครอบครอง"
+            "name": "infest"
         },
         "putrid-grubs": {
             "name": "หนอนเน่า"
         },
         "overwhelming-offensive": {
-            "name": "การบุกท่วมท้น"
+            "name": "overwhelming offensive"
         },
         "vampiric-tempest": {
-            "name": "พายุแวมไพร์"
+            "name": "vampiric tempest"
         },
         "incubation": {
-            "name": "การฟักตัว"
+            "name": "incubation"
         },
         "bioluminescence": {
-            "name": "แสงชีวภาพ"
+            "name": "bioluminescence"
         },
         "cyclone-of-blades": {
-            "name": "พายุหมุนใบมีด"
+            "name": "cyclone of blades"
         },
         "sunstroke": {
-            "name": "โรคลมแดด"
+            "name": "sunstroke"
         },
         "blood-drain": {
-            "name": "ดูดเลือด"
+            "name": "blood drain"
         },
         "fury-of-the-horde": {
-            "name": "ความเกรี้ยวกราดของฝูง"
+            "name": "fury of the horde"
         },
         "repulsive-host": {
-            "name": "ฝูงน่าขยะแขยง"
+            "name": "repulsive host"
         },
         "bone-daggers": {
-            "name": "กริชกระดูก"
+            "name": "bone daggers"
         },
         "endless-biting": {
-            "name": "กัดไม่รู้จบ"
+            "name": "endless biting"
         },
         "wasteland": {
-            "name": "ดินแดนรกร้าง"
+            "name": "wasteland"
         },
         "oasis": {
-            "name": "โอเอซิส"
+            "name": "oasis"
         },
         "rain-of-arrows": {
             "name": "ฝนธนู"
         },
         "race-to-the-grave": {
-            "name": "แข่งไปสู่หลุมศพ"
+            "name": "race to the grave"
         },
         "gut-shot": {
             "name": "gut shot"
@@ -6178,7 +6178,7 @@ export default {
             "name": "การล่าเริ่มต้น"
         },
         "solid-bow": {
-            "name": "คันธนูแข็งแรง"
+            "name": "solid bow"
         },
         "foot-snare": {
             "name": "กับดักเท้า"
@@ -6217,7 +6217,7 @@ export default {
             "name": "coated arrows"
         },
         "felling-swoop": {
-            "name": "โฉบโค่น"
+            "name": "felling swoop"
         },
         "expose": {
             "name": "เปิดโปง"
@@ -6640,7 +6640,7 @@ export default {
             "name": "ระมัดระวัง"
         },
         "regenerative-tissue": {
-            "name": "เนื้อเยื่อฟื้นฟู"
+            "name": "regenerative tissue"
         },
         "blood-transfusion": {
             "name": "การถ่ายเลือด"
