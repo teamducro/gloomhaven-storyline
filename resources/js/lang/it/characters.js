@@ -972,7 +972,7 @@ export default {
             "Sostituisci una carta {+0_WHITE} con una carta {+2_WHITE} {LIGHT_OR_DARK}",
             "Aggiungi una carta {+1_WHITE} “Colloca questa carta nella tua area attiva. Quando collochi il prossimo {RIFT_WHITE}, scarta questa carta per collocare un altro {RIFT_WHITE} entro {RANGE.fh}1 da esso” {AGAIN}",
             "Ignora gli effetti dello scenario e aggiungi due carte {+1_WHITE}",
-            "Ogni volta che effettui un riposo lungo, puoi leggere un {SECTION} non letto dai “Collegamenti alle Sezioni” dello scenario attuale",
+            "Ogni volta che effettui un riposo lungo, puoi leggere una {SECTION} non letta dai “Collegamenti alle Sezioni” dello scenario attuale",
             "Ogni volta che collochi un {RIFT_WHITE}, puoi eseguire “{PULL.fh}1, {TARGET.fh}1 alleato o nemico, {RANGE.fh}1” come se occupassi un esagono contenente un {RIFT_WHITE}",
             "Ogni volta che un mazzo viene mescolato, puoi mettere da parte tutte le carte rivelate di quel mazzo e rimetterle in cima dopo averlo mescolato"
         ]
@@ -1266,9 +1266,9 @@ export default {
             "Sostituisci due carte {+0_WHITE} con una carta {+1_WHITE} “Puoi ottenere {DISARM.fh} per aggiungere {STUN.fh}”",
             "Aggiungi due carte {+1_WHITE} “Aggiungi +1 {ATTACK.fh} se un alleato ha una prescrizione attiva”",
             "Aggiungi una carta {AGAIN} “{HEAL.fh}3, {RANGE.fh}1”",
-            "Aggiungi +1 {HEAL.fh} a tutte le capacità di cura sulle carte capacità “Medical Kit”",
+            "Aggiungi +1 {HEAL.fh} a tutte le capacità di cura sulle carte capacità “Medical Pack”",
             "In ogni Fase Città dopo aver completato uno scenario, la donazione al Santuario della Grande Quercia tua o di un alleato è gratuita",
-            "Alla fine di ogni tuo riposo, se un alleato ha una prescrizione attiva, ottieni una carta capacità “Medical Kit” e sposta indietro di una casella il segnalino sulla prescrizione attiva di un alleato"
+            "Alla fine di ogni tuo riposo, se un alleato ha una prescrizione attiva, ottieni una carta capacità “Medical Pack” e sposta indietro di una casella il segnalino sulla prescrizione attiva di un alleato"
         ]
     },
     "SK2": {

@@ -159,7 +159,7 @@ export default {
         "1": "Automa distrutto, tecnologia consegnata ai Vermling",
         "2": "Automa distrutto, tecnologia conservata",
         "3": "Dispositivo di controllo mentale disattivato",
-        "title": "La Volontà di Mindtheif",
+        "title": "La Volontà del Ladro Mentale",
         "text": "Cosa avete fatto del dispositivo di controllo mentale?"
     },
     "hungryMawDead": {

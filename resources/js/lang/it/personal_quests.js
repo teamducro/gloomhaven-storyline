@@ -747,7 +747,7 @@ export default {
     "gh2-20": {
         "name": "Piety in All Things",
         "progress": [
-            "Dona 120 monete d'oro al Tempio della Grande Quercia.",
+            "Dona 120 monete d'oro al Temple of the Great Oak.",
             "Leggi {SECTION} 51.5."
         ]
     },

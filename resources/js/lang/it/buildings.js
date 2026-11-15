@@ -120,7 +120,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Locanda",
+        "name": "Inn",
         "levels": [
             {
                 "level": 0
@@ -152,7 +152,7 @@ export default {
         ]
     },
     "fh-24": {
-        "name": "Giardino",
+        "name": "Garden",
         "levels": [
             {
                 "level": 0
@@ -304,7 +304,7 @@ export default {
         ]
     },
     "fh-37": {
-        "name": "Emporio",
+        "name": "Trading Post",
         "levels": [
             {
                 "level": 0
@@ -528,7 +528,7 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "Taverna",
+        "name": "Tavern",
         "levels": [
             {
                 "level": 0
@@ -627,7 +627,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Perdi collettivamente 1 {LUMBER}",
-                "passive": "I seguenti potenziamenti (Barca, Slitta, Attrezzatura da Scalatore) possono essere costruiti in qualsiasi ordine.",
+                "passive": "Ciascuna delle seguenti migliorie (Barca, Slitta, Attrezzatura da Scalatore) può essere costruita in qualsiasi ordine.",
                 "rewards": "+1 prosperità"
             }
         ]

@@ -2123,138 +2123,138 @@ export default {
     },
     "fh-129": {
         "name": "Occhiali dell'Aquila",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "Durante la tua capacità di attacco, ottieni vantaggio a tutti gli attacchi."
     },
     "fh-130": {
         "name": "Elmo di Ferro",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "Quando sei attaccato, considera qualsiasi carta modificatore di attacco {2X_MODIFIER} pescata dal nemico come una {+0_MODIFIER}."
     },
     "fh-131": {
         "name": "Cotta di Maglia",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "Alle prossime tre fonti di {DAMAGE.fh} da attacchi che ti bersagliano, ottieni {SHIELD.fh} 1 per gli attacchi."
     },
     "fh-132": {
         "name": "Mantello delle Tasche",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "All'inizio dello scenario, porta un oggetto {SMALL-ITEM} aggiuntivo."
     },
     "fh-133": {
         "name": "Nimble Legguards",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "Quando un alleato adiacente starebbe per essere bersagliato da un attacco, vieni bersagliato tu al suo posto, indipendentemente da gittata e linea di vista."
     },
     "fh-134": {
         "name": "Scarpe Comode",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "Quando usi l'azione base inferiore di una carta capacità, esegui {MOVE.fh} 3 invece di {MOVE.fh} 2."
     },
     "fh-135": {
         "name": "Armorbane Bow",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "Durante il tuo attacco, aggiungi {PIERCE.fh} 3 a tutti i tuoi attacchi a distanza."
     },
     "fh-136": {
         "name": "Battle Axe",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "Durante la tua capacità di attacco in mischia a bersaglio singolo, cambia il bersaglio della capacità in: *cone_0_1*"
     },
     "fh-137": {
         "name": "Scudo Torre",
-        "source": "Emporio 2",
+        "source": "Trading Post 2",
         "desc": "Quando subisci {DAMAGE.fh} da un attacco, ottieni {SHIELD.fh} 2 per l'attacco."
     },
     "fh-138": {
         "name": "Gran Bacinetto",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Quando un nemico ti infliggerebbe {DISARM.fh}, {STUN.fh} o {MUDDLE.fh}, impedisci la condizione."
     },
     "fh-139": {
         "name": "Elmo Cornuto",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Dopo che ti muovi di 4 o più esagoni durante il tuo turno, aggiungi +1 {ATTACK.fh} al tuo prossimo attacco in mischia di questo turno."
     },
     "fh-140": {
         "name": "Mantle of Summoning",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Durante il tuo turno, concedi a una delle tue evocazioni: {SHIELD.fh} 2. {ROUND}"
     },
     "fh-141": {
         "name": "Cuoio Borchiato",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Quando sei attaccato, prima di pescare una carta modificatore di attacco, l'attaccante ottiene svantaggio all'attacco e tu ottieni {SHIELD.fh} 1 per l'attacco."
     },
     "fh-142": {
         "name": "Stivali della Rapidità",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Durante la determinazione dell'iniziativa, dopo che tutte le carte capacità sono state rivelate, aumenta o riduci la tua iniziativa di 20."
     },
     "fh-143": {
         "name": "Calzari della Tenacia",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Dopo che ti muovi di 4 o più esagoni durante il tuo turno, dopo la capacità di movimento esegui: {HEAL.fh} 1 te stesso."
     },
     "fh-144": {
         "name": "Bastone dell'Eminenza",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Durante il tuo turno, {ANY_X} per aggiungere +1 {ATTACK.fh} a tutti i tuoi attacchi."
     },
     "fh-145": {
         "name": "Pugnale Versatile",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Quando usi l'azione base superiore di una carta capacità, esegui {ATTACK.fh} 3 invece di {ATTACK.fh} 2."
     },
     "fh-146": {
         "name": "Catena Uncinata",
-        "source": "Emporio 3",
+        "source": "Trading Post 3",
         "desc": "Durante il tuo attacco, aggiungi {PULL.fh} 2 a tutti i tuoi attacchi a distanza."
     },
     "fh-147": {
         "name": "Maschera del Terrore",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Durante il tuo attacco in mischia, aggiungi {PUSH.fh} 1."
     },
     "fh-148": {
         "name": "Circlet of Sanctity",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Dopo i prossimi tre attacchi che bersagliano un alleato entro {RANGE.fh} 2, gira questa carta.",
         "backDesc": "Durante il tuo turno, esegui: {WARD.fh} {RANGE.fh}3 poi gira questa carta."
     },
     "fh-149": {
         "name": "Corazza di Piastre",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Alle prossime cinque fonti di {DAMAGE.fh} da attacchi che ti bersagliano, ottieni {SHIELD.fh} 1 per gli attacchi."
     },
     "fh-150": {
         "name": "Robes of the Oak",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Durante il tuo turno, esegui: {HEAL.fh} 3 {TARGET.fh} 1 alleato, {RANGE.fh} 1 "
     },
     "fh-151": {
         "name": "Sandali Semplici",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Quando usi l'azione base inferiore di una carta capacità, esegui {MOVE.fh} 4 invece di {MOVE.fh} 2."
     },
     "fh-152": {
         "name": "Scarpa d'Arme",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Alla fine del tuo turno, se ti sei mosso di 1 o meno esagoni durante il tuo turno, ottieni {SHIELD.fh} 1 per il round."
     },
     "fh-153": {
         "name": "Lancia Lunga",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Durante la tua capacità di attacco in mischia a bersaglio singolo, cambia il bersaglio della capacità in: *line_0_1_1*"
     },
     "fh-154": {
         "name": "Bomba Esplosiva",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Durante la tua capacità di attacco a distanza a bersaglio singolo, cambia il bersaglio della capacità in: {AOE.CONE_1_1}"
     },
     "fh-155": {
         "name": "Scudo a Muro",
-        "source": "Emporio 4",
+        "source": "Trading Post 4",
         "desc": "Quando subisci {DAMAGE.fh} da un attacco, ottieni {SHIELD.fh} 4 per l'attacco."
     },
     "fh-156": {

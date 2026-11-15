@@ -355,27 +355,27 @@ export default {
         "requirements": "Missione Personale “Seeker of Xorn”",
         "faq": [
             "Regola speciale: in questo scenario puoi usare l'azione inferiore di una qualsiasi carta per saccheggiare una tessera tesoro entro gittata 1.",
-            "Quando si usa il materiale di Cerchi Dimenticati, gli ostacoli al centro della stanza iniziale possono essere trattati come tessere sovrapposte parete, come specificato nelle regole di Cerchi Dimenticati. Inoltre, un personaggio non può teletrasportarsi nella sezione di mappa di un altro personaggio."
+            "Quando si usa il materiale di Forgotten Circles, gli ostacoli al centro della stanza iniziale possono essere trattati come tessere sovrapposte parete, come specificato nelle regole di Forgotten Circles. Inoltre, un personaggio non può teletrasportarsi nella sezione di mappa di un altro personaggio."
         ]
     },
     "gh-53": {
         "name": "Il Seminterrato della Cripta",
         "requirements": "Missione Personale “Seeker of Xorn”",
         "rewards": [
-            "Il Seeker of Xorn riceve: “Bastone di Xorn” (Oggetto 114). Il Seeker non può vendere questo oggetto."
+            "Il personaggio con la missione personale “Seeker of Xorn” riceve: “Bastone di Xorn” (Oggetto 114). Il personaggio non può vendere questo oggetto."
         ]
     },
     "gh-54": {
         "name": "Palazzo di Ghiaccio",
         "requirements": "Missione Personale “Seeker of Xorn”, oggetto “Bastone di Xorn” equipaggiato",
         "rewards": [
-            "Ritira subito il Seeker of Xorn",
+            "Ritira subito il personaggio con la missione personale “Seeker of Xorn”",
             "Aggiungi gli Eventi di Città e Strada 59 ai mazzi, al posto dei normali eventi di ritiro della classe",
             "Apri la busta {PH}"
         ],
         "conclusion_faq": [
             "Se un giocatore comincia un nuovo personaggio Piovra-Cthulhu direttamente dopo aver completato con successo questo scenario, quel personaggio riceve il Bastone di Xorn. Altrimenti il Bastone di Xorn viene aggiunto al mazzo del negozio.",
-            "Il Seeker of Xorn non torna in città per vendere oggetti, effettuare potenziamenti, ecc. Come indicato dal Libro degli Scenari, la carta evento di ritiro del personaggio non va nel mazzo."
+            "Il personaggio con la missione personale “Seeker of Xorn” non torna in città per vendere oggetti, effettuare potenziamenti, ecc. Come indicato dal Libro degli Scenari, la carta evento di ritiro del personaggio non va nel mazzo."
         ]
     },
     "gh-SoX1": {
@@ -1803,7 +1803,7 @@ export default {
         "name": "Expedition North",
         "rewards": [
             "Ottieni 2 prosperità",
-            "Aggiungi i seguenti oggetti di Cerchi Dimenticati alla riserva di Frosthaven: 153, 159 e 161"
+            "Aggiungi i seguenti oggetti di Forgotten Circles alla riserva di Frosthaven: 153, 159 e 161"
         ]
     },
     "fh-83": {

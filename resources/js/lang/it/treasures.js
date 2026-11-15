@@ -678,7 +678,7 @@ export default {
         "name": "Ottieni 3 Legname."
     },
     "fh-65": {
-        "name": "Ottieni 15 monete."
+        "name": "Ottieni 15 monete d'oro."
     },
     "fh-66": {
         "name": "Subisci 2 danni, poi ottieni Fragile."
