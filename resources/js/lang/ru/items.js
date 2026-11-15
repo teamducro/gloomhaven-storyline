@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Древний лук",
-        "source": "{SCENARIO 107} (Сокровище #78)\nРаздел 32 «Collapsed Atrium» в книге",
+        "source": "{SCENARIO 107} (Сокровище #78)\nРаздел 42 «Collapsed Atrium» в книге",
         "desc": "Во время вашей дальней атаки добавьте +2 {ATTACK} и эффекты «{CURSE}» и «{WOUND}» к одной атаке."
     },
     "gh-158": {

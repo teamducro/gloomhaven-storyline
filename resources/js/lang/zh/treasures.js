@@ -234,7 +234,7 @@ export default {
         "name": "“Ancient Bow”（道具 157）"
     },
     "fc-79": {
-        "name": "获得“Falcon Figurine”（道具 157）"
+        "name": "获得“Falcon Figurine”（道具 035）"
     },
     "fc-80": {
         "name": "获得1 ✓，并将裂隙事件19加入牌库"

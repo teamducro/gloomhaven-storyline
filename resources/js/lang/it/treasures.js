@@ -234,7 +234,7 @@ export default {
         "name": "“Ancient Bow” (Oggetto 157)"
     },
     "fc-79": {
-        "name": "Ottieni “Statuetta del Falco” (Oggetto 157)"
+        "name": "Ottieni “Statuetta del Falco” (Oggetto 035)"
     },
     "fc-80": {
         "name": "Ottieni 1 ✓ e aggiungi l'Evento Varco 19 al mazzo"

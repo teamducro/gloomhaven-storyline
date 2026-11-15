@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Arc Antique",
-        "source": "{SCENARIO 107} (Trésor #78)\nSection 32 “L’Atrium Effondré” dans le livre",
+        "source": "{SCENARIO 107} (Trésor #78)\nSection 42 “L’Atrium Effondré” dans le livre",
         "desc": "Pendant votre attaque à distance ajoutez +2 {ATTACK}, {CURSE}, et {WOUND} à une seule attaque."
     },
     "gh-158": {

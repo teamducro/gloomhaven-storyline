@@ -234,7 +234,7 @@ export default {
         "name": "「遠古弓」（道具 157）"
     },
     "fc-79": {
-        "name": "獲得「Falcon Figurine」（道具 157）"
+        "name": "獲得「Falcon Figurine」（道具 035）"
     },
     "fc-80": {
         "name": "獲得 1 ✓，並將裂隙事件 19 加入牌堆"

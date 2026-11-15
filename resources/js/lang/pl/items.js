@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Starożytny Łuk",
-        "source": "{SCENARIO 107} (Skarb #78)\nSekcja 32 „Collapsed Atrium” w księdze",
+        "source": "{SCENARIO 107} (Skarb #78)\nSekcja 42 „Collapsed Atrium” w księdze",
         "desc": "Podczas twojego ataku dystansowego, dodaj +2 do {ATTACK}, {CURSE} oraz {WOUND} dla pojedynczego ataku."
     },
     "gh-158": {

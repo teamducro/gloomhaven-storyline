@@ -234,7 +234,7 @@ export default {
         "name": "“Ancient Bow” (아이템 157)"
     },
     "fc-79": {
-        "name": "“Falcon Figurine” (아이템 157) 획득"
+        "name": "“매 조각상” (아이템 035) 획득"
     },
     "fc-80": {
         "name": "✓ 1 획득, 균열 이벤트 19번을 덱에 추가"

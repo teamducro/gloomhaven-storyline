@@ -234,7 +234,7 @@ export default {
         "name": "Diseño “Arco antiguo” (Objeto 157)."
     },
     "fc-79": {
-        "name": "Obtén “Figura de halcón” (Objeto 157)."
+        "name": "Obtén “Figura de halcón” (Objeto 035)."
     },
     "fc-80": {
         "name": "Obtén 1 ✓ y añade el evento de Fisura 19 al mazo."

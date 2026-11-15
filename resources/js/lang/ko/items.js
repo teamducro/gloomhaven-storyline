@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Ancient Bow",
-        "source": "{SCENARIO 107} (보물 #78)\n섹션 32 “무너진 중앙홀” (북 참조)",
+        "source": "{SCENARIO 107} (보물 #78)\n섹션 42 “무너진 중앙홀” (북 참조)",
         "desc": "장거리 공격 중, 한 번의 공격에 +2 {ATTACK}, {CURSE}, {WOUND} 추가."
     },
     "gh-158": {

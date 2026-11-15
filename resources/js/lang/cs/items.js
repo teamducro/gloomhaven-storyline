@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Ancient Bow",
-        "source": "{SCENARIO 107} (Poklad #78)\nOddíl 32 „Zřícené átrium“ v knize",
+        "source": "{SCENARIO 107} (Poklad #78)\nOddíl 42 „Zřícené átrium“ v knize",
         "desc": "Během svého útoku na dálku přidej +2 {ATTACK}, {CURSE} a {WOUND} k jednomu útoku."
     },
     "gh-158": {

@@ -234,7 +234,7 @@ export default {
         "name": "„Ancient Bow” (Felszerelés 157)"
     },
     "fc-79": {
-        "name": "Szerezd meg: „Falcon Figurine” (Felszerelés 157)"
+        "name": "Szerezd meg: „Falcon Figurine” (Felszerelés 035)"
     },
     "fc-80": {
         "name": "Szerezz 1 ✓-t, és add a 19-es síkkapu eseményt a pakliba"
@@ -633,7 +633,7 @@ export default {
         "name": "Szerezd meg: Bone Boots tervrajz 071"
     },
     "fh-50": {
-        "name": "Szerezd meg: Cured Hide Armor 017"
+        "name": "Szerezd meg: Cured Leather Armor 017"
     },
     "fh-51": {
         "name": "Olvasd el: 78.1."

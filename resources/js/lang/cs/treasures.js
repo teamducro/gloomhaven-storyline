@@ -234,7 +234,7 @@ export default {
         "name": "„Ancient Bow“ (předmět 157)"
     },
     "fc-79": {
-        "name": "Získáváš „Falcon Figurine“ (předmět 157)."
+        "name": "Získáváš „Falcon Figurine“ (předmět 035)."
     },
     "fc-80": {
         "name": "Získáváš 1 ✓ a přidej do balíčku událost v trhlině 19."

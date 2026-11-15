@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Ancient Bow",
-        "source": "{SCENARIO 107} (Tesoro #78)\nSection 32 “Collapsed Atrium” in book",
+        "source": "{SCENARIO 107} (Tesoro #78)\nSection 42 “Collapsed Atrium” in book",
         "desc": "Durante il tuo attacco a distanza, aggiungi +2 {ATTACK}, {CURSE} e {WOUND} a un singolo attacco."
     },
     "gh-158": {
