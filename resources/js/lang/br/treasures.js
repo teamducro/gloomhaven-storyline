@@ -234,7 +234,7 @@ export default {
         "name": "“Ancient Bow” (Item 157)"
     },
     "fc-79": {
-        "name": "Ganhe “Estatueta de Falcão” (Item 157)"
+        "name": "Ganhe “Falcon Figurine” (Item 157)"
     },
     "fc-80": {
         "name": "Ganhe 1 ✓ e adicione o Evento de Fenda 19 ao baralho"
@@ -315,7 +315,7 @@ export default {
         "name": "“Fateful Compass” (Item 27)"
     },
     "jotl-11": {
-        "name": "“Anel da Pressa” (Item 30)"
+        "name": "“Anel do Apressamento” (Item 30)"
     },
     "jotl-12": {
         "name": "Ganhe 5 moedas de ouro"
@@ -522,7 +522,7 @@ export default {
         "name": "Você encontra os restos mortais de Camilla e suas pinturas de uma majestosa criatura com chifres. Ganhe o adesivo de campanha “Brummix” e adicione a seção 99.1 ao calendário da campanha em três semanas."
     },
     "fh-13": {
-        "name": "Ganhe o Anzol 207."
+        "name": "Ganhe Fishhook 207."
     },
     "fh-14": {
         "name": "Ganhe um projeto de item aleatório."
@@ -837,7 +837,7 @@ export default {
         "name": "Cenário Secundário Aleatório"
     },
     "gh2-33": {
-        "name": "Ganhe a “Poção de Cura de Condição” (Item 101)"
+        "name": "Ganhe “Cure Potion” (Item 101)"
     },
     "gh2-34": {
         "name": "Ganhe o “Elmo de Escamas de Dragão” (Item 121)"

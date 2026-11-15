@@ -609,7 +609,7 @@ export default {
     "gh2-3": {
         "name": "Habilidades Aprimoradas",
         "progress": [
-            "Compre cinco aprimoramentos (requer a conquista global “O Poder do Aprimoramento”).",
+            "Compre cinco aprimoramentos (requer a conquista global “O Poder da Melhoria”).",
             "Leia a {SECTION} 71.2."
         ]
     },
@@ -666,7 +666,7 @@ export default {
     "gh2-10": {
         "name": "Matador de Aberrações",
         "progress": [
-            "Aprimore uma carta de habilidade (sua ou de um aliado) com um elemento {ANY} (requer a conquista global “O Poder do Aprimoramento”).",
+            "Aprimore uma carta de habilidade (sua ou de um aliado) com um elemento {ANY} (requer a conquista global “O Poder da Melhoria”).",
             "Leia a {SECTION} 14.3.",
             "Siga o {SCENARIO 64} até a conclusão."
         ]

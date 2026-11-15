@@ -213,7 +213,7 @@ export default {
         "desc": "Durante o seu ataque, adicione +2 {ATTACK} a toda a ação de Ataque."
     },
     "gh-42": {
-        "name": "Anel da Pressa",
+        "name": "Anel do Apressamento",
         "source": "Prosperidade 5",
         "desc": "No final do seu turno, jogue uma carta da sua mão e realize imediatamente a ação inferior da carta."
     },
@@ -856,7 +856,7 @@ export default {
         "desc": "Quando atacado, o atacante ganha Desvantagem no ataque e você ganha {SHIELD} 1 para o ataque."
     },
     "jotl-5": {
-        "name": "Botas Gastas",
+        "name": "Weathered Boots",
         "source": "Recompensa do {SCENARIO 2}",
         "desc": "Durante o seu movimento, adicione +1 {MOVE} a um único movimento."
     },
@@ -887,17 +887,17 @@ export default {
         "desc": "Durante a sua habilidade de Ataque corpo a corpo de alvo único, ataque qualquer inimigo a até 2 hexágonos"
     },
     "jotl-11": {
-        "name": "Poção de Cura",
+        "name": "Healing Potion",
         "source": "Recompensa do {SCENARIO 2}",
         "desc": "Durante o seu turno, realize uma ação “{HEAL} 3, Si mesmo”."
     },
     "jotl-12": {
-        "name": "Poção de Vigor",
+        "name": "Stamina Potion",
         "source": "Recompensa do {SCENARIO 2}",
         "desc": "Durante o seu turno, devolva uma das suas cartas descartadas à sua mão."
     },
     "jotl-13": {
-        "name": "Poção de Força",
+        "name": "Power Potion",
         "source": "Recompensa do {SCENARIO 2}",
         "desc": "Durante o seu ataque, adicione +1 {ATTACK} a toda a ação de Ataque."
     },
@@ -983,7 +983,7 @@ export default {
         "desc": "Quando sofrer dano de um ataque, ganhe {SHIELD} 2 para o ataque."
     },
     "jotl-30": {
-        "name": "Anel da Pressa",
+        "name": "Anel do Apressamento",
         "source": "{SCENARIO 21} (Tesouro #11)",
         "desc": "Ao final do seu turno, jogue uma carta da sua mão e realize imediatamente a ação inferior dessa carta."
     },
@@ -1618,7 +1618,7 @@ export default {
         "desc": "Durante o seu turno, adicione +1 {MOVE.fh} a todas as suas habilidades de movimento e ignore terreno difícil."
     },
     "fh-29": {
-        "name": "Machado Clivador",
+        "name": "Cleaving Axe",
         "source": "Craftsman 5",
         "desc": "Depois do seu ataque corpo a corpo, um inimigo adjacente ao alvo sofre {DAMAGE.fh} 2."
     },
@@ -1760,7 +1760,7 @@ export default {
         "desc": "Durante o seu turno, {EARTH_X} para saquear uma ficha de saque adjacente."
     },
     "fh-57": {
-        "name": "Pá",
+        "name": "Shovel",
         "source": "Projeto Aleatório",
         "desc": "Durante o seu turno, destrua uma peça adjacente de obstáculo, terreno perigoso, terreno difícil, terreno gelado ou armadilha."
     },
@@ -1892,27 +1892,27 @@ export default {
         "desc": "Durante a sua habilidade de movimento, depois de entrar em qualquer hexágono, dê {IMMOBILIZE.fh} a todos os inimigos adjacentes."
     },
     "fh-83": {
-        "name": "Poção de Cura",
+        "name": "Healing Potion",
         "source": "Alquimia",
         "desc": "Durante o seu turno, realize {HEAL.fh} 3 si mesmo"
     },
     "fh-84": {
-        "name": "Poção de Vigor",
+        "name": "Stamina Potion",
         "source": "Alquimia",
         "desc": "Durante o seu turno, {RECOVER.fh} uma carta de nível 1 da sua pilha de descarte."
     },
     "fh-85": {
-        "name": "Poção de Força",
+        "name": "Power Potion",
         "source": "Alquimia",
         "desc": "Durante o seu turno, adicione +1 {ATTACK.fh} a todos os seus ataques."
     },
     "fh-86": {
-        "name": "Poção Elementar",
+        "name": "Element Potion",
         "source": "Alquimia",
         "desc": "Durante o seu turno, {ANY}"
     },
     "fh-87": {
-        "name": "Poção de Cura de Condição",
+        "name": "Cure Potion",
         "source": "Alquimia",
         "desc": "Durante o seu turno, remova uma condição negativa que você tenha.  Este item pode ser usado enquanto você tiver {IMPAIR.fh} ou {STUN.fh}."
     },
@@ -2303,7 +2303,7 @@ export default {
         "desc": "Quando fizer um descanso curto, {RECOVER.fh} até três dos seus itens gastos, escolha qual carta perder durante o descanso e realize {HEAL.fh} 2 si mesmo."
     },
     "fh-165": {
-        "name": "Anel da Pressa",
+        "name": "Anel do Apressamento",
         "source": "Jeweler 3",
         "desc": "Ao final do seu turno, jogue uma carta da sua mão e realize a ação inferior da carta."
     },
@@ -2514,7 +2514,7 @@ export default {
         "desc": "Durante a sua habilidade de ataque corpo a corpo, se você não se moveu nesta rodada, adicione +2 {ATTACK.fh} a um ataque e você não pode realizar habilidades de movimento neste turno."
     },
     "fh-207": {
-        "name": "Anzol",
+        "name": "Fishhook",
         "source": "Tesouro 13",
         "desc": "Depois do seu ataque, se os pontos de vida atuais do alvo forem 3 ou menos, dê {BANE.fh} ao alvo"
     },
@@ -2732,7 +2732,7 @@ export default {
         "desc": "Durante o seu turno, realize uma das duas habilidades a seguir: perca uma carta da sua mão para ganhar 3 {TIME_ICON}. -2 {TIME_ICON} : {RECOVER.fh} até duas das suas cartas descartadas"
     },
     "fh-250": {
-        "name": "Lança da Justiça",
+        "name": "Spear of Justice",
         "source": "Recompensa do Cenário Solo - {BN}",
         "desc": "Durante o seu turno, realize: {ATTACK.fh} 2 {RANGE.fh} 3. Todos os seus estandartes são tratados como se ocupassem também o hexágono do alvo do ataque para os seus bônus, e esse hexágono é tratado como ocupado por um aliado nesta rodada. {ROUND}"
     },
@@ -2837,7 +2837,7 @@ export default {
         "backDesc": "Durante o seu turno, se você tiver uma Irritação ativa, você pode movê-la para a sua reserva para jogar uma carta diferente da sua reserva e realizar a ação de Irritação dela e, em seguida, vire esta carta."
     },
     "gh2-1": {
-        "name": "Botas Gastas",
+        "name": "Weathered Boots",
         "source": "Prosperidade 1",
         "desc": "Durante a sua habilidade de movimento, adicione +1 {MOVE.fh}."
     },
@@ -2887,18 +2887,18 @@ export default {
         "desc": "Durante a sua habilidade de ataque à distância, ganhe vantagem em um ataque."
     },
     "gh2-11": {
-        "name": "Poção de Cura",
+        "name": "Healing Potion",
         "source": "Prosperidade 1",
         "desc": "Durante o seu turno, realize: {HEAL.fh} 3, Si mesmo"
     },
     "gh2-12": {
-        "name": "Poção de Vigor",
+        "name": "Stamina Potion",
         "source": "Prosperidade 1\nEvento de Cidade 84",
         "desc": "Durante o seu turno, {RECOVER.fh} uma carta de nível 1 da sua pilha de descarte.",
         "faq": "As cartas X contam como cartas de nível 1, portanto também podem ser recuperadas."
     },
     "gh2-13": {
-        "name": "Poção Elementar",
+        "name": "Element Potion",
         "source": "Prosperidade 1",
         "desc": "Durante o seu turno, {ANY}."
     },
@@ -2939,7 +2939,7 @@ export default {
         "desc": "Durante o seu turno, adicione {PULL.fh} 2 a todos os seus ataques à distância."
     },
     "gh2-21": {
-        "name": "Poção de Força",
+        "name": "Power Potion",
         "source": "Prosperidade 2",
         "desc": "Durante o seu turno, adicione +1 {ATTACK.fh} a todos os seus ataques."
     },
@@ -3176,7 +3176,7 @@ export default {
         "desc": "Quando usar a ação inferior básica de uma carta de habilidade, você pode realizar {ATTACK.fh} 3 em vez de {MOVE.fh} 2."
     },
     "gh2-68": {
-        "name": "Anel da Pressa",
+        "name": "Anel do Apressamento",
         "source": "Prosperidade 9",
         "desc": "Ao final do seu turno, jogue uma carta da sua mão e realize a ação inferior da carta."
     },
@@ -3346,7 +3346,7 @@ export default {
         "backDesc": "Durante a sua habilidade de movimento, adicione +2 {MOVE.fh} e vire esta carta."
     },
     "gh2-101": {
-        "name": "Poção de Cura de Condição",
+        "name": "Cure Potion",
         "source": "{SCENARIO 89} (Tesouro #33)",
         "desc": "Durante o seu turno, remova uma condição negativa que você tenha. Este item pode ser usado enquanto você tiver {STUN.fh}."
     },

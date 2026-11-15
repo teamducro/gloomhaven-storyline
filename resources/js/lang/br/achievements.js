@@ -387,7 +387,7 @@ export default {
         "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
-        "name": "Tecnologia Antiga"
+        "name": "Tecnologia Anciã"
     },
     "gh2-G2CRD": {
         "name": "City Rule: Demons"
@@ -432,7 +432,7 @@ export default {
         "name": "O Serpe Morto"
     },
     "gh2-G2TPE": {
-        "name": "O Poder do Aprimoramento"
+        "name": "O Poder da Melhoria"
     },
     "gh2-G2TVF": {
         "name": "A Voz Libertada"
