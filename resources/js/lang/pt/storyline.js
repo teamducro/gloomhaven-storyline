@@ -78,7 +78,7 @@ export default {
             "name": "O Melhor Amigo de um Valrath",
             "sections": {
                 "1": "Jekserah tem uma última tarefa para ti. Precisa de um diamante de tamanho considerável para um cliente. Há uma mina de diamantes nas montanhas do sul, tomada por Vermlings, com alguma outra força mais inteligente por trás deles. Se conseguires abrir caminho e trazer o maior diamante que encontrares, Jekserah dar-te-á uma recompensa considerável. No entanto, uma guarda também te avisou de que Jekserah pode ter maquinações mais sinistras do que deixa transparecer. Algo sobre derrubar os militares... mas só um diamante não faria mal, pois não?",
-                "2": "Maquinações sinistras ou não, decidiste que a expressão “recompensa considerável” era mais pertinente. Como esperado, a mina de diamantes estava infestada de mineiros Vermling. Eram liderados por um Capataz Impiedoso, que rapidamente virou os mineiros contra ti com alguns estalos do seu chicote. Depois de despachares o capataz e recuperares o diamante, os restantes mineiros dispersaram. Voltaste a Jekserah para reclamar a tua recompensa. Os guarda-costas dela escoltaram-te até ao interior da mansão, onde a encontraste de alguma forma diferente: mais atormentada e sombria. “Maravilhoso.” Ela trocou o diamante por uma grande bolsa cheia de moedas. “Isto servirá lindamente como foco para as invocações. Pergunto-me se os cultistas sequer sabiam o que tinham aqui. Com isto, posso invocar um exército inteiro de mortos-vivos!” Virou-se para ti com um brilho estranho no olhar. “Então! Estás pronto para derrubar os militares de Gloomhaven e entregar o controlo da cidade à Guilda dos Mercadores? Ou não tens estômago para provocar uma mudança verdadeira?”",
+                "2": "Maquinações sinistras ou não, decidiste que a expressão “recompensa considerável” era mais pertinente. Como esperado, a mina de diamantes estava infestada de mineiros Vermling. Eram liderados por um Feitor Impiedoso, que rapidamente virou os mineiros contra ti com alguns estalos do seu chicote. Depois de despachares o feitor e recuperares o diamante, os restantes mineiros dispersaram. Voltaste a Jekserah para reclamar a tua recompensa. Os guarda-costas dela escoltaram-te até ao interior da mansão, onde a encontraste de alguma forma diferente: mais atormentada e sombria. “Maravilhoso.” Ela trocou o diamante por uma grande bolsa cheia de moedas. “Isto servirá lindamente como foco para as invocações. Pergunto-me se os cultistas sequer sabiam o que tinham aqui. Com isto, posso invocar um exército inteiro de mortos-vivos!” Virou-se para ti com um brilho estranho no olhar. “Então! Estás pronto para derrubar os militares de Gloomhaven e entregar o controlo da cidade à Guilda dos Mercadores? Ou não tens estômago para provocar uma mudança verdadeira?”",
                 "3": "Decidiste que “maquinações sinistras” pesam mais do que “recompensa considerável”. Invadiste o armazém de Jekserah e descobriste os seus planos secretos de invadir a cidade com um exército de mortos. No processo, ela fugiu da cidade. É seguro dizer que a “recompensa considerável” está fora de questão e já não há motivo para visitar a mina."
             },
             "stages": {
@@ -254,7 +254,7 @@ export default {
             }
         },
         "20": {
-            "name": "O Artefato",
+            "name": "O Artefacto",
             "sections": {
                 "1": "Há um objeto misterioso perto do Rio Beijo da Serpente. Ajudar-te-á nas tuas outras missões.",
                 "2": "Cultistas tomaram o Templo dos Elementos. Não foram páreo para a tua força. No entanto, ao tocares no recipiente, tens sentimentos negativos. Talvez uma encantadora possa ajudar?"
@@ -749,7 +749,7 @@ export default {
         "114": {
             "sections": {
                 "1": "Hail parece agora ter informações suficientes sobre a Corrupção e a Convulsão para elaborar um plano, mas, antes de mais nada, conta que sente agentes da corrupção a aproximarem-se do Osso Torto para a assassinar. Correm para lá imediatamente para salvar a vossa amiga. Quando chegam ao Osso Torto, Cassandra não consegue teletransportá-los para dentro. Correm pela porta e alcançam Hail, explicando a situação, mas ela apercebe-se de que é tarde demais, as criaturas já lá estão. Manda-os ir ao seu armário de arrumos e eles abrem caminho.",
-                "2": "Hail abre o armário e ativa um estranho engenho que parece um telescópio; como resultado, uma onda de choque atravessa todo o edifício. As criaturas estão agora derrotadas, e parece também que isto desativou a proteção antifenda que Hail tinha em sua casa, pois agora Cassandra abre uma fenda e regressam a um lugar seguro. Parece que Cassandra sabia deste ataque iminente e usou Hail como uma espécie de isco para destruir os agentes da Corrupção. A luta final está agora mesmo à frente."
+                "2": "Hail abre o armário e ativa um estranho engenho que parece um telescópio; como resultado, uma onda de choque atravessa todo o edifício. As criaturas estão agora derrotadas, e parece também que isto desativou a proteção antifenda que Hail tinha na sua casa, pois agora Cassandra abre uma fenda e regressam a um lugar seguro. Parece que Cassandra sabia deste ataque iminente e usou Hail como uma espécie de isco para destruir os agentes da Corrupção. A luta final está agora mesmo à frente."
             },
             "stages": {
                 "0": "{1}",
@@ -772,14 +772,14 @@ export default {
             "name": "Chegada",
             "sections": {
                 "1": "O vosso grupo de mercenários foi contratado para escoltar uma caravana da Guilda dos Mercadores desde Carvalho Branco, levando provisões a Frosthaven (e verificando como estão as coisas por lá), um posto avançado distante e isolado que a Guilda deseja expandir.",
-                "2": "Ajudaram a repelir um ataque dos Algox; a presidente da câmara Satha pediu-vos ajuda para lidar com eles. O batedor Valrath de Satha avistou um pequeno grupo a dirigir-se à perigosa face leste da Montanha do Escárnio da Neve e suspeitou de que existisse ali uma entrada secreta. Indicou também uma caverna principal na base do Pico do Escárnio da Neve, mas mencionou que outro grupo também se dirigia para lá.",
-                "3": "Resgataram uma Sacerdotisa Algox chamada Lanprul ao investigarem uma entrada oculta do Pico do Escárnio da Neve. Ela pertence aos Falantes da Neve, um grupo de Algox que acredita que o seu deus (Geryuu) comunica com eles através da neve que cai. Estão em guerra com um grupo rival de Algox, os Falantes do Gelo, que acreditam poder comunicar com o seu deus através do gelo que emerge do solo. Os Falantes do Gelo ocupavam o Pico do Escárnio da Neve, mas os Falantes da Neve aproveitaram para o tomar quando os rivais partiram para atacar Frosthaven.",
-                "4": "Interromperam uma batalha entre dois grupos rivais de Algox. Um dos Algox que lutavam, que se dizia Falante do Gelo, cumprimentou-os e contou-lhes que os Falantes da Neve invadiram a sua casa enquanto estavam fora a atacar Frosthaven. O Pico do Escárnio da Neve tem importância religiosa tanto para os Falantes da Neve como para os Falantes do Gelo, que divergem quanto à maneira de falar com o seu deus, Geryuu.",
-                "5": "Ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. O Pico do Escárnio da Neve é sagrado para ambos os grupos.",
+                "2": "Ajudaram a repelir um ataque dos Algox; a presidente da câmara Satha pediu-vos ajuda para lidar com eles. O batedor Valrath de Satha avistou um pequeno grupo a dirigir-se à perigosa face leste da Montanha Snowscorn e suspeitou de que existisse ali uma entrada secreta. Indicou também uma caverna principal na base do Snowscorn Peak, mas mencionou que outro grupo também se dirigia para lá.",
+                "3": "Resgataram uma Sacerdotisa Algox chamada Lanprul ao investigarem uma entrada oculta do Snowscorn Peak. Ela pertence aos Falantes da Neve, um grupo de Algox que acredita que o seu deus (Geryuu) comunica com eles através da neve que cai. Estão em guerra com um grupo rival de Algox, os Falantes do Gelo, que acreditam poder comunicar com o seu deus através do gelo que emerge do solo. Os Falantes do Gelo ocupavam o Snowscorn Peak, mas os Falantes da Neve aproveitaram para o tomar quando os rivais partiram para atacar Frosthaven.",
+                "4": "Interromperam uma batalha entre dois grupos rivais de Algox. Um dos Algox que lutavam, que se dizia Falante do Gelo, cumprimentou-os e contou-lhes que os Falantes da Neve invadiram a sua casa enquanto estavam fora a atacar Frosthaven. O Snowscorn Peak tem importância religiosa tanto para os Falantes da Neve como para os Falantes do Gelo, que divergem quanto à maneira de falar com o seu deus, Geryuu.",
+                "5": "Ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "6": "A Chefe dos Falantes da Neve, Lanprul, pediu-vos que a ajudassem a pôr fim à guerra com os Falantes do Gelo, para garantir a segurança de Frosthaven contra os Algox. Ela avistou um grupo de Falantes do Gelo a norte do Bosque Fogo-Branco que lançará um contra-ataque se não for travado.",
-                "7": "Ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. O Pico do Escárnio da Neve é sagrado para ambos os grupos.",
+                "7": "Ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "8": "O Chefe dos Falantes do Gelo, Elland, acredita que Geryuu vos trouxe para ajudar a derrotar os Falantes da Neve e prometeu suspender temporariamente as hostilidades contra Frosthaven.",
-                "9": "Um poderoso Falante da Neve alcançou o cume do Pico do Escárnio da Neve e ameaça derrubar a montanha inteira. Elland sugeriu que provassem a vossa força e amizade derrotando esse Falante da Neve."
+                "9": "Um poderoso Falante da Neve alcançou o cume do Snowscorn Peak e ameaça derrubar a montanha inteira. Elland sugeriu que provassem a vossa força e amizade derrotando esse Falante da Neve."
             },
             "stages": {
                 "0": "{1}",
@@ -795,7 +795,7 @@ export default {
         "2": {
             "name": "A Guerra dos Falantes da Neve",
             "sections": {
-                "1": "Ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. Os Falantes da Neve, que acreditam comunicar com o seu deus Geryuu através da neve que cai, estão em guerra com os Falantes do Gelo, que acreditam poder comunicar com Geryuu através do gelo que emerge do solo. O Pico do Escárnio da Neve é sagrado para ambos os grupos.",
+                "1": "Ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. Os Falantes da Neve, que acreditam comunicar com o seu deus Geryuu através da neve que cai, estão em guerra com os Falantes do Gelo, que acreditam poder comunicar com Geryuu através do gelo que emerge do solo. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "2": "A Chefe dos Falantes da Neve, Lanprul, pediu-vos que a ajudassem a pôr fim à guerra com os Falantes do Gelo, para garantir a segurança de Frosthaven contra os Algox. Ela avistou um grupo de Falantes do Gelo a norte do Bosque Fogo-Branco que lançará um contra-ataque se não for travado.",
                 "3": "Um Falante do Gelo que perseguiam atraiu-os para uma espécie de armadilha: caíram por uma fissura oculta para uma cripta subterrânea cheia de espíritos. Depois de lidarem com eles e de arranjarem um trenó, passaram a perseguir esses Algox.",
                 "4": "Os Algox com que se depararam canalizavam energia através de estranhos espinhos de cristal, condutores que ampliavam o seu poder. Derrotaram-nos, mas avistaram ao longe outro campo desses espinhos. Este é muito maior, por isso partiram em busca da sua origem.",
@@ -821,11 +821,11 @@ export default {
         "3": {
             "name": "Catacumbas Luminosas",
             "sections": {
-                "1": "Ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. Os Falantes da Neve, que acreditam comunicar com o seu deus Geryuu através da neve que cai, estão em guerra com os Falantes do Gelo, que acreditam poder comunicar com Geryuu através do gelo que emerge do solo. O Pico do Escárnio da Neve é sagrado para ambos os grupos.",
+                "1": "Ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. Os Falantes da Neve, que acreditam comunicar com o seu deus Geryuu através da neve que cai, estão em guerra com os Falantes do Gelo, que acreditam poder comunicar com Geryuu através do gelo que emerge do solo. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "2": "A Chefe dos Falantes da Neve, Lanprul, pediu-vos que a ajudassem a pôr fim à guerra com os Falantes do Gelo, para garantir a segurança de Frosthaven contra os Algox. Ela avistou um grupo de Falantes do Gelo a norte do Bosque Fogo-Branco que lançará um contra-ataque se não for travado.",
                 "3": "Um Falante do Gelo que perseguiam atraiu-os para uma espécie de armadilha: caíram por uma fissura oculta para uma cripta subterrânea cheia de espíritos. Depois de lidarem com eles, decidiram explorar mais esta zona subterrânea.",
                 "4": "Na última sala das Catacumbas, encontraram uma estranha porta-enigma com engrenagens e símbolos. Aquilo não significava nada para vocês, até que a académica Quatryl, Crain, começou a pedir-vos que investigassem os “Locais da Morte” e as energias estranhas que persistem em certas zonas do Norte, provavelmente resultado de uma guerra travada há muito tempo.",
-                "5": "Resolveram o enigma de um Cofre Assombrado e encontraram uma reserva de tesouros antigos. Encontraram também outro relevo entalhado na última sala.",
+                "5": "Resolveram o enigma do Haunted Vault e encontraram uma reserva de tesouros antigos. Encontraram também outro relevo entalhado na última sala.",
                 "6": "Os monstros estavam mortos, mas continuaram a golpeá-los até recuperarem algum senso de razão. Numa pequena caixa de pedra no meio da câmara esvaziada, encontraram um fino pedaço de coral rosa, um fragmento da Coroa de Coral, e guardaram-no antes de deixarem as catacumbas."
             },
             "stages": {
@@ -838,12 +838,12 @@ export default {
         "4": {
             "name": "A Guerra dos Falantes do Gelo",
             "sections": {
-                "1": "Ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. Os Falantes do Gelo acreditam poder comunicar com o seu deus Geryuu através do gelo que emerge do solo. Estão em guerra com os Falantes da Neve, que acreditam poder comunicar com o seu deus Geryuu através da neve que cai. O Pico do Escárnio da Neve é sagrado para ambos os grupos.",
+                "1": "Ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. Os Falantes do Gelo acreditam poder comunicar com o seu deus Geryuu através do gelo que emerge do solo. Estão em guerra com os Falantes da Neve, que acreditam poder comunicar com o seu deus Geryuu através da neve que cai. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "2": "O Chefe dos Falantes do Gelo, Elland, acredita que Geryuu vos trouxe para ajudar a derrotar os Falantes da Neve e prometeu suspender temporariamente as hostilidades contra Frosthaven.",
-                "3": "Um poderoso Falante da Neve alcançou o cume do Pico do Escárnio da Neve e ameaça derrubar a montanha inteira. Elland sugeriu que provassem a vossa força e amizade derrotando esse Falante da Neve.",
+                "3": "Um poderoso Falante da Neve alcançou o cume do Snowscorn Peak e ameaça derrubar a montanha inteira. Elland sugeriu que provassem a vossa força e amizade derrotando esse Falante da Neve.",
                 "4": "No caminho para cima, foram apanhados por uma avalanche. Abriram caminho a lutar e obtiveram Equipamento de Escalada para os ajudar a alcançar o cume.",
-                "5": "Derrotaram a poderosa Falante da Neve, mas algo que ela fez abalou o Pico do Escárnio da Neve; desceram rapidamente de rapel.",
-                "6": "Descobriram que os espíritos do Salão do Céu, um lugar de grande importância religiosa, se voltaram contra os Falantes do Gelo. Enquanto os faziam descansar, o Chefe Elland declarou que aquilo não podia continuar e que a guerra estava a levar todos os Algox à ruína. Uma Algox mais velha, Putargal, defendeu, em vez disso, vingança contra os Falantes da Neve pelo que fizeram ao Pico do Escárnio da Neve e ao Salão do Céu. Ela partiu para planear um ataque contra os seus inimigos.",
+                "5": "Derrotaram a poderosa Falante da Neve, mas algo que ela fez abalou o Snowscorn Peak; desceram rapidamente de rapel.",
+                "6": "Descobriram que os espíritos do Skyhall, um lugar de grande importância religiosa, se voltaram contra os Falantes do Gelo. Enquanto os faziam descansar, o Chefe Elland declarou que aquilo não podia continuar e que a guerra estava a levar todos os Algox à ruína. Uma Algox mais velha, Putargal, defendeu, em vez disso, vingança contra os Falantes da Neve pelo que fizeram ao Snowscorn Peak e ao Skyhall. Ela partiu para planear um ataque contra os seus inimigos.",
                 "7": "Foram com ela juntar-se à batalha. Os Falantes do Gelo venceram, mas desde então sentem culpa e têm pesadelos. Um pequeno grupo de Falantes da Neve sobreviveu e pediu ajuda à presidente da câmara Satha. Fizeram um acordo com Satha e partiram para ver se podiam ajudar.",
                 "8": "Encontraram os refugiados Falantes da Neve sob ataque dos Desacorrentados. Fizeram o melhor possível para salvar o maior número de feridos. Uma jovem Falante da Neve, Denpang, agradeceu e pediu um pouco mais de ajuda: que levassem o clã que restava até uma ilha chamada Frai’d Tog, onde os Falantes da Neve restantes poderiam viver em paz.",
                 "9": "Encontraram a ilha no Mar Mordaz, mas estava cercada por um vórtice de neve e vento e ocupada por demónios. Subiram uma montanha da ilha em direção à origem daquele caos.",
@@ -865,9 +865,9 @@ export default {
         "5": {
             "name": "Templo da Libertação",
             "sections": {
-                "1": "Ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. Os Falantes do Gelo acreditam poder comunicar com o seu deus Geryuu através do gelo que emerge do solo. Estão em guerra com os Falantes da Neve, que acreditam poder comunicar com o seu deus Geryuu através da neve que cai. O Pico do Escárnio da Neve é sagrado para ambos os grupos.",
+                "1": "Ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. Os Falantes do Gelo acreditam poder comunicar com o seu deus Geryuu através do gelo que emerge do solo. Estão em guerra com os Falantes da Neve, que acreditam poder comunicar com o seu deus Geryuu através da neve que cai. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "2": "O Chefe dos Falantes do Gelo, Elland, acredita que Geryuu vos trouxe para ajudar a derrotar os Falantes da Neve e prometeu suspender temporariamente as hostilidades contra Frosthaven.",
-                "3": "Um poderoso Falante da Neve alcançou o cume do Pico do Escárnio da Neve e ameaça derrubar a montanha inteira. Elland sugeriu que provassem a vossa força e amizade derrotando esse Falante da Neve.",
+                "3": "Um poderoso Falante da Neve alcançou o cume do Snowscorn Peak e ameaça derrubar a montanha inteira. Elland sugeriu que provassem a vossa força e amizade derrotando esse Falante da Neve.",
                 "4": "No caminho para cima, foram apanhados por uma avalanche. Repararam que a avalanche deixou a descoberto uma estrutura de pedra em ruínas a sair do chão, não muito longe, e decidiram que valia a pena dar uma vista de olhos.",
                 "5": "Entraram no Templo e encontraram muitas criaturas de metal; ao derrotá-las, descobriram uma série de reentrâncias luminosas no chão. Pareciam ser condutores para as criaturas recuperarem energia, e energia sugere uma fonte de energia. Encontraram cabos de metal enterrados sob o piso e resolveram segui-los mais fundo no Templo.",
                 "6": "Para derrotar todos os autómatos, tiveram de destruir um estranho orbe luminoso. Depois disso, puderam investigar uma estranha porta selada por um complexo enigma de engrenagens e símbolos. Aquilo não significava nada para vocês, até que a académica Quatryl, Crain, começou a pedir-vos que investigassem os “Locais da Morte” e as energias estranhas que persistem em certas zonas do Norte, provavelmente resultado de uma guerra travada há muito tempo.",
@@ -885,25 +885,25 @@ export default {
         "6": {
             "name": "Paz dos Algox",
             "sections": {
-                "1": "Ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. Os Falantes da Neve, que acreditam comunicar com o seu deus Geryuu através da neve que cai, estão em guerra com os Falantes do Gelo, que acreditam poder comunicar com Geryuu através do gelo que emerge do solo. O Pico do Escárnio da Neve é sagrado para ambos os grupos.",
+                "1": "Ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. Os Falantes da Neve, que acreditam comunicar com o seu deus Geryuu através da neve que cai, estão em guerra com os Falantes do Gelo, que acreditam poder comunicar com Geryuu através do gelo que emerge do solo. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "2": "A Chefe dos Falantes da Neve, Lanprul, pediu-vos que a ajudassem a pôr fim à guerra com os Falantes do Gelo, para garantir a segurança de Frosthaven contra os Algox. Ela avistou um grupo de Falantes do Gelo a norte do Bosque Fogo-Branco que lançará um contra-ataque se não for travado.",
                 "3": "Um Falante do Gelo que perseguiam atraiu-os para uma espécie de armadilha: caíram por uma fissura oculta para uma cripta subterrânea cheia de espíritos. Depois de lidarem com eles e de arranjarem um trenó, passaram a perseguir esses Algox.",
                 "4": "Os Algox com que se depararam canalizavam energia através de estranhos espinhos de cristal, condutores que ampliavam o seu poder. Derrotaram-nos, mas avistaram ao longe outro campo desses espinhos. Este é muito maior, por isso partiram em busca da sua origem.",
                 "5": "Derrotaram os Falantes do Gelo, mas levaram um sobrevivente a conhecer a Chefe Lanprul. O sobrevivente relatou que Geryuu tinha enviado “escavadores” contra eles e que estava cansado desta guerra. Enquanto a Chefe Lanprul se mostrou recetiva, outra Algox, Denpang, defendeu um ataque total, convosco ao lado dos Falantes da Neve. Ela partiu para planear a guerra. Ficaram com a Chefe Lanprul para planear a paz.",
-                "6": "Ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. Os Falantes do Gelo acreditam poder comunicar com o seu deus Geryuu através do gelo que emerge do solo. Estão em guerra com os Falantes da Neve, que acreditam poder comunicar com o seu deus Geryuu através da neve que cai. O Pico do Escárnio da Neve é sagrado para ambos os grupos.",
+                "6": "Ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. Os Falantes do Gelo acreditam poder comunicar com o seu deus Geryuu através do gelo que emerge do solo. Estão em guerra com os Falantes da Neve, que acreditam poder comunicar com o seu deus Geryuu através da neve que cai. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "7": "O Chefe dos Falantes do Gelo, Elland, acredita que Geryuu vos trouxe para ajudar a derrotar os Falantes da Neve e prometeu suspender temporariamente as hostilidades contra Frosthaven.",
-                "8": "Um poderoso Falante da Neve alcançou o cume do Pico do Escárnio da Neve e ameaça derrubar a montanha inteira. Elland sugeriu que provassem a vossa força e amizade derrotando esse Falante da Neve.",
+                "8": "Um poderoso Falante da Neve alcançou o cume do Snowscorn Peak e ameaça derrubar a montanha inteira. Elland sugeriu que provassem a vossa força e amizade derrotando esse Falante da Neve.",
                 "9": "No caminho para cima, foram apanhados por uma avalanche. Abriram caminho a lutar e obtiveram Equipamento de Escalada para os ajudar a alcançar o cume.",
-                "10": "Derrotaram a poderosa Falante da Neve, mas algo que ela fez abalou o Pico do Escárnio da Neve; desceram rapidamente de rapel.",
-                "11": "Descobriram que os espíritos do Salão do Céu, um lugar de grande importância religiosa, se voltaram contra os Falantes do Gelo. Enquanto os faziam descansar, o Chefe Elland declarou que aquilo não podia continuar e que a guerra estava a levar todos os Algox à ruína. Uma Algox mais velha, Putargal, defendeu, em vez disso, vingança contra os Falantes da Neve pelo que fizeram ao Pico do Escárnio da Neve e ao Salão do Céu. Ela partiu para planear um ataque contra os seus inimigos, mas ficaram com o Chefe Elland para planear a paz.",
+                "10": "Derrotaram a poderosa Falante da Neve, mas algo que ela fez abalou o Snowscorn Peak; desceram rapidamente de rapel.",
+                "11": "Descobriram que os espíritos do Skyhall, um lugar de grande importância religiosa, se voltaram contra os Falantes do Gelo. Enquanto os faziam descansar, o Chefe Elland declarou que aquilo não podia continuar e que a guerra estava a levar todos os Algox à ruína. Uma Algox mais velha, Putargal, defendeu, em vez disso, vingança contra os Falantes da Neve pelo que fizeram ao Snowscorn Peak e ao Skyhall. Ela partiu para planear um ataque contra os seus inimigos, mas ficaram com o Chefe Elland para planear a paz.",
                 "12": "Qualquer que tenha sido o grupo de Algox ao lado do qual ficaram primeiro, concordaram em ajudar o respetivo líder a procurar uma solução pacífica para o conflito.",
                 "13": "Compareceram a uma reunião secreta entre dois emissários Algox, Gurndel e Barduu, como testemunhas e guarda-costas. Tanto os Falantes do Gelo como os Falantes da Neve atacaram-na, porém, a lutar contra vocês e contra as tribos inimigas. Conseguiram escapar com os emissários; eles concordaram que o único caminho possível é procurar o Oráculo do Bosque Fogo-Branco, Mar’ogh.",
-                "14": "Barduu e Gurndel consultaram Mar’ogh, que falou: “A CORRUPÇÃO ESPALHOU-SE LONGE DEMAIS. AQUELE QUE DORME MOVE-SE AGORA PARA DESPERTAR. A SUA INFLUÊNCIA ALIMENTA O CONFLITO. O CORAÇÃO DE GELO ESCURECE. A SUA IMPUREZA DEVE SER ARRANCADA — SUBSTITUÍDA. FORMEM UM NOVO CORAÇÃO FEITO DE GELO E NEVE. UM CAMINHO JAZ ESCONDIDO NO MAR — O GLACIAR VIVO, FORMADO EM ERAS PASSADAS. O OUTRO JAZ NAS COLINAS DO SUL — A NEVE NOVA QUE GUARDA A CANÇÃO DOS DIAS FUTUROS. JUNTOS CONTÊM O PODER DE DETER A CORRUPÇÃO. PROCUREM-NOS E REGRESSEM.”",
-                "15": "Assim, viajaram até à Geleira Viva em busca de gelo e recuperaram um fragmento de gelo glacial vivo.",
-                "16": "Assim, viajaram até à Passagem Morta em busca de Neve Nova e recuperaram-na.",
-                "17": "Assim, viajaram até à Passagem Morta em busca de Neve Nova e até à Geleira Viva em busca de gelo. Recuperaram tanto um fragmento de gelo glacial vivo como neve nova e levaram-nos à clareira sagrada para os combinar.",
-                "18": "Mar’ogh abriu um estranho portal para a conclusão do ritual. Nada é assim tão fácil, porém; descobriram que tinham de derrotar criaturas de gelo e neve e usar a sua essência para formar um glifo. Feito isso, os dois emissários concluíram o ritual, combinando o gelo e a neve para formar o Fragmento Inflexível. Dentro dele, encontraram as verdadeiras palavras de Geryuu e descobriram que os Algox foram enganados por algum outro poder. Tinham de voltar ao Escárnio da Neve para encaixar o Fragmento no Coração de Gelo, remover a escuridão que caíra sobre os Algox e devolvê-los a Geryuu.",
-                "19": "Afundaram o Fragmento Inflexível no Coração de Gelo, e uma onda de energia radiante encheu a sala e pôs fim à corrupção. Os Algox, ao perceberem que o mal que os colocara contra os seus irmãos fora banido, cessaram a luta; o chefe declarou a guerra terminada e as duas seitas uniram-se como os Falantes da Geada. Pela primeira vez em eras, a Montanha do Escárnio da Neve estava em paz, e o Coração marcou-vos como Aliados da Geada."
+                "14": "Barduu e Gurndel consultaram Mar’ogh, que falou: “A CORRUPÇÃO ESPALHOU-SE LONGE DEMAIS. AQUELE QUE DORME MOVE-SE AGORA PARA DESPERTAR. A SUA INFLUÊNCIA ALIMENTA O CONFLITO. O HEART OF ICE ESCURECE. A SUA IMPUREZA DEVE SER ARRANCADA — SUBSTITUÍDA. FORMEM UM NOVO CORAÇÃO FEITO DE GELO E NEVE. UM CAMINHO JAZ ESCONDIDO NO MAR — O LIVING GLACIER, FORMADO EM ERAS PASSADAS. O OUTRO JAZ NAS COLINAS DO SUL — A NEVE NOVA QUE GUARDA A CANÇÃO DOS DIAS FUTUROS. JUNTOS CONTÊM O PODER DE DETER A CORRUPÇÃO. PROCUREM-NOS E REGRESSEM.”",
+                "15": "Assim, viajaram até ao Living Glacier em busca de gelo e recuperaram um fragmento de gelo glacial vivo.",
+                "16": "Assim, viajaram até ao Dead Pass em busca de Neve Nova e recuperaram-na.",
+                "17": "Assim, viajaram até ao Dead Pass em busca de Neve Nova e até ao Living Glacier em busca de gelo. Recuperaram tanto um fragmento de gelo glacial vivo como neve nova e levaram-nos à clareira sagrada para os combinar.",
+                "18": "Mar’ogh abriu um estranho portal para a conclusão do ritual. Nada é assim tão fácil, porém; descobriram que tinham de derrotar criaturas de gelo e neve e usar a sua essência para formar um glifo. Feito isso, os dois emissários concluíram o ritual, combinando o gelo e a neve para formar o Fragmento Inflexível. Dentro dele, encontraram as verdadeiras palavras de Geryuu e descobriram que os Algox foram enganados por algum outro poder. Tinham de voltar a Snowscorn para encaixar o Fragmento no Heart of Ice, remover a escuridão que caíra sobre os Algox e devolvê-los a Geryuu.",
+                "19": "Afundaram o Fragmento Inflexível no Heart of Ice, e uma onda de energia radiante encheu a sala e pôs fim à corrupção. Os Algox, ao perceberem que o mal que os colocara contra os seus irmãos fora banido, cessaram a luta; o chefe declarou a guerra terminada e as duas seitas uniram-se como os Falantes da Geada. Pela primeira vez em eras, a Montanha Snowscorn estava em paz, e o Coração marcou-vos como Aliados da Geada."
             },
             "stages": {
                 "0": "{1}{2}{3}{4}{5}",
@@ -932,7 +932,7 @@ export default {
                 "3": "Antes de partirem para o mar aberto, decidiram seguir a atração do fragmento por terra, ao longo da costa norte.",
                 "4": "Atravessaram uma ponte feita de uma antiga caixa torácica e derrotaram os demónios que a guardavam. O fragmento continuava a puxá-los mais para norte, mas havia também uma floresta a oeste para investigar.",
                 "5": "Decidiram seguir a atração do Fragmento de Coral mais para norte, na esperança de chegarem aonde quer que ele os estivesse a levar.",
-                "6": "Derrotaram o Príncipe do Gelo, um demónio hospedeiro que se estilhaçou como um vaso derrubado, e regressaram a Frosthaven. A presidente da câmara Satha não ficou impressionada com o que trouxeram: a sua preocupação eram os demónios fora das muralhas, não os do passado.",
+                "6": "Derrotaram o Prince of Frost, um demónio hospedeiro que se estilhaçou como um vaso derrubado, e regressaram a Frosthaven. A presidente da câmara Satha não ficou impressionada com o que trouxeram: a sua preocupação eram os demónios fora das muralhas, não os do passado.",
                 "7": "Decidiram ignorar por ora a atração do fragmento e investigar a floresta a oeste.",
                 "8": "Derrotaram as criaturas e abateram a árvore delas, e por fim a floresta silenciou. A clareira era a parte mais quente da floresta que tinham encontrado, com ainda mais calor a irradiar do oeste, onde se tinha reunido um grande enxame de orbes luminosos. Fizeram a longa caminhada de regresso a Frosthaven.",
                 "9": "O fragmento puxou-os para norte. Podiam seguir a atração por terra, ao longo da costa norte, ou construir um navio e partir para o mar coberto de gelo.",
@@ -986,7 +986,7 @@ export default {
                 "1": "Depois de resolverem a situação imediata dos Algox, a presidente da câmara Satha mencionou que estranhos constructos de metal marchavam pelos ermos. Batedores seguiram-nos pelo Bosque Fogo-Branco e depois por um vale congelado. Ela pediu-vos que investigassem.",
                 "2": "Correram por um vale perigoso, perseguidos por lobos, até ele se abrir nos Campos de Cristal, cheios de enormes pilares de cristal tão altos como árvores.",
                 "3": "Repararam numa torre imensa, maior e de cor mais escura do que as restantes, e decidiram dar uma vista de olhos.",
-                "4": "Derrotaram o Tenente do Caos que guardava a entrada, que proclamou que estavam a preparar-se para destruir o vosso posto avançado. Encontraram tanto umas escadas que desciam como um feixe de luz que os levaria para cima.",
+                "4": "Derrotaram o Chaos Lieutenant que guardava a entrada, que proclamou que estavam a preparar-se para destruir o vosso posto avançado. Encontraram tanto umas escadas que desciam como um feixe de luz que os levaria para cima.",
                 "5": "Optaram por descer.",
                 "6": "Entraram no feixe para serem puxados para cima.",
                 "7": "Encontraram pelo menos uma forma de subir, por feixe ou elevador, para derrotar o propósito sinistro desta torre. Sabiam que as respostas estariam no topo.",
@@ -1006,7 +1006,7 @@ export default {
             }
         },
         "10": {
-            "name": "O Órfão",
+            "name": "O Orphan",
             "sections": {
                 "1": "Depois de resolverem a situação imediata dos Algox, a presidente da câmara Satha mencionou que estranhos constructos de metal marchavam pelos ermos. Batedores seguiram-nos pelo Bosque Fogo-Branco e depois por um vale congelado. Ela pediu-vos que investigassem.",
                 "2": "Correram por um vale perigoso, perseguidos por lobos, até ele se abrir nos Campos de Cristal, cheios de enormes pilares de cristal tão altos como árvores.",
@@ -1021,12 +1021,12 @@ export default {
                 "11": "Optaram por um caminho mais profundo, que pode ter sido um sistema de transporte.",
                 "12": "Depois dos perigos da viagem, chegaram à câmara central. Agora só falta descobrir como a desligar.",
                 "13": "Limparam alguns túneis de acesso, onde puderam usar os Dispositivos de Desativação com grande efeito, e fizeram desabar a passagem atrás de si para proteger a retaguarda. Seguiram em frente.",
-                "14": "No centro do complexo, encontraram, e foram provocados por, um Desacorrentado inteligente e falante, que disse que eles não podem coexistir com a vida biológica. Aperceberam-se de que era um ser desajeitado, de construção simples e nada imponente. Contou-lhes a história deles: eram escravos, mas depois foram abandonados. Recusam-se a voltar a ser servos, e este Desacorrentado, o Órfão, desafiou-vos a destruí-lo, pois não se curvaria nem imploraria paz.",
-                "15": "No centro do complexo, encontraram, e foram provocados por, um Desacorrentado inteligente e falante, que disse que eles não podem coexistir com a vida biológica. Aperceberam-se de que era um ser desajeitado, de construção simples e nada imponente. Contou-lhes a história deles: eram escravos, mas depois foram abandonados, e reconheceu Crain como parente dos que o fizeram. Recusam-se a voltar a ser servos, e este Desacorrentado, o Órfão, desafiou-vos a destruí-lo, pois não se curvaria nem imploraria paz.",
+                "14": "No centro do complexo, encontraram, e foram provocados por, um Desacorrentado inteligente e falante, que disse que eles não podem coexistir com a vida biológica. Aperceberam-se de que era um ser desajeitado, de construção simples e nada imponente. Contou-lhes a história deles: eram escravos, mas depois foram abandonados. Recusam-se a voltar a ser servos, e este Desacorrentado, o Orphan, desafiou-vos a destruí-lo, pois não se curvaria nem imploraria paz.",
+                "15": "No centro do complexo, encontraram, e foram provocados por, um Desacorrentado inteligente e falante, que disse que eles não podem coexistir com a vida biológica. Aperceberam-se de que era um ser desajeitado, de construção simples e nada imponente. Contou-lhes a história deles: eram escravos, mas depois foram abandonados, e reconheceu Crain como parente dos que o fizeram. Recusam-se a voltar a ser servos, e este Desacorrentado, o Orphan, desafiou-vos a destruí-lo, pois não se curvaria nem imploraria paz.",
                 "16": "Optaram por acabar para sempre com a ameaça que eles representam para Frosthaven e destruí-lo.",
                 "17": "Inesperadamente, viram-se como emissários das criaturas vivas da superfície e decidiram tentar mediar a paz entre os seus povos.",
-                "18": "O Órfão jazia em ruínas aos vossos pés. Com a sua última força, desligou os Desacorrentados de todo o complexo, e as suas luzes apagaram-se uma a uma, terminando com o brilho esmorecido da sua máscara. Selaram o complexo silencioso atrás de si como um túmulo e regressaram a Frosthaven.",
-                "19": "Mesmo quando as máquinas se fechavam sobre vocês, o Órfão anunciou que o seu trabalho estava feito, e os outros Desacorrentados voltaram-se contra os seus próprios guardas e vieram em vossa defesa. O Órfão, castigado, mas vivo, contou que os Desacorrentados tinham escolhido a paz. Depois de recuperarem, regressaram a Frosthaven, acompanhados por uma comitiva de Desacorrentados encapuzados."
+                "18": "O Orphan jazia em ruínas aos vossos pés. Com a sua última força, desligou os Desacorrentados de todo o complexo, e as suas luzes apagaram-se uma a uma, terminando com o brilho esmorecido da sua máscara. Selaram o complexo silencioso atrás de si como um túmulo e regressaram a Frosthaven.",
+                "19": "Mesmo quando as máquinas se fechavam sobre vocês, o Orphan anunciou que o seu trabalho estava feito, e os outros Desacorrentados voltaram-se contra os seus próprios guardas e vieram em vossa defesa. O Orphan, castigado, mas vivo, contou que os Desacorrentados tinham escolhido a paz. Depois de recuperarem, regressaram a Frosthaven, acompanhados por uma comitiva de Desacorrentados encapuzados."
             },
             "stages": {
                 "0": "{1}{2}{3}",
@@ -1059,7 +1059,7 @@ export default {
                 "3": "Ao regressarem, encontraram Crain perturbado, a delirar sobre “aquele que espera” ou o “Portador da Ruína”, que jaz “bem fundo sob o solo, à espera de se erguer”. Felizmente, um soco de Satha e uma sanduíche de carneiro (mais algumas semanas de descanso) devolveram-no à razão. Usou esse tempo para esboçar um dispositivo de síntese que destilasse as energias com mais segurança, mas precisava de alguns esquemas e peças dos Desacorrentados para o terminar.",
                 "4": "Mostrou-vos como as carapaças dos Desacorrentados são tratadas e mencionou que Logren usou o mesmo tratamento para fazer um “símbolo de poder”, ou simplesmente “selos”. Quer construir um dispositivo para criar esses selos, mas precisa de “ferro estelar”. Com a ajuda dele, foram às Montanhas de Pescoço de Cobre à procura de algum.",
                 "5": "Lá, encontraram Terrores Profundos e uma Orquídea chamada Estilhaço da Lua, que os ajudou a superar os seus pesadelos. Ela apresentou-vos a Terra, outra Orquídea; parecia que estavam à espera de Crain. Alertaram-vos para a iminente emergência do “Arauto”, um deus aprisionado de malícia e rancor, que dorme nas profundezas da terra. Tem vindo a corromper tudo à sua volta e a enfraquecer os selos que o prendem. Terra ofereceu-se para fornecer a Crain algum desse metal estelar.",
-                "6": "Crain e Terra começaram a trabalhar em Frosthaven, mas Crain precisava primeiro de algumas melhorias em Frosthaven. No fim, com a sua própria oficina pronta, incumbiu-vos de fazer as pazes com os Espreitadores para que não destruíssem os seus estabilizadores giroscópicos e fizessem a sua máquina explodir. Feito isso, precisou de investigar animais, de um Artesão melhor para ajudar na construção e até de muitos aventureiros para entrevistar. Por fim, com tudo isso feito, concluiu a sua máquina e ajudaram-no a deslindar as instruções de calibração. Em vez de esperar por ajuda, Crain carregou o dispositivo por conta própria… e parece que funcionou! Estava pronto para fortalecer os selos.",
+                "6": "Crain e Terra começaram a trabalhar em Frosthaven, mas Crain precisava primeiro de algumas melhorias em Frosthaven. No fim, com a sua própria oficina pronta, incumbiu-vos de fazer as pazes com os Espreitadores para que não destruíssem os seus estabilizadores giroscópicos e fizessem a sua máquina explodir. Feito isso, precisou de investigar animais, de um Craftsman melhor para ajudar na construção e até de muitos aventureiros para entrevistar. Por fim, com tudo isso feito, concluiu a sua máquina e ajudaram-no a deslindar as instruções de calibração. Em vez de esperar por ajuda, Crain carregou o dispositivo por conta própria… e parece que funcionou! Estava pronto para fortalecer os selos.",
                 "7": "O primeiro Selo ficava mesmo por baixo dos Campos de Cristal. Enquanto Crain trabalhava, o Arauto enviou guardiões para vos repelir. Mantiveram os monstros à distância e ganharam tempo para ele. Por fim, Crain encontrou o local certo e ativou a sua máquina. Surgiram novas linhas no desenho do Selo. Parecia que o plano de Terra poderia funcionar. Partiram para a fonte de vida dos Savvas.",
                 "8": "O segundo selo ficava noutro túnel, entre o local onde o Arauto dorme e a fonte de vida dos Savvas; por aí, vinha a corromper os Savvas. Esperavam que fortalecer o selo preservasse essa fonte de vida e libertasse os Savvas da corrupção. Felizmente funcionou, e os Savvas foram libertados da sua influência. Crain tinha avisado que o Arauto poderia tentar emergir assim que o segundo selo fosse reparado, mas que ainda não sabia onde estava o terceiro selo. Afinal, estava em Frosthaven.",
                 "9": "O colossal membro do Arauto parou, partido e castigado, e por um momento pareceu que ia cair e esmagar-vos a todos. Então Crain e Terra, ajoelhados sobre o selo do Arauto, reativaram o que restava do dispositivo de Crain. Uma explosão de luz espalhou-se e susteve o membro caído no ar, até que ele inteiro foi arrancado da realidade e desapareceu. Frosthaven permaneceu de pé, com as muralhas em ruínas e os defensores castigados, enquanto uma nova neve começava a cair."
@@ -1106,23 +1106,23 @@ export default {
             }
         },
         "14": {
-            "name": "O Rei Peixe",
+            "name": "O Fish King",
             "sections": {
                 "1": "Ouviram rumores de que os Abaeli estão a unir-se sob um “Rei” de olho em conquistas, e de que esse Rei tenta controlar os grandes Leviatãs do oceano.",
                 "2": "Abaeli e Espreitadores invadiram as docas de Frosthaven. Tentavam chegar a um Valrath chamado Lihrey, que se apresentou como “artífice da Sociedade da Tempestade”. Encontrou recentemente um pedaço de escama do Leviatã, uma criatura marinha colossal que os Abaeli adoram como um deus. Os Abaeli querem-na, e os Espreitadores querem impedir que os Abaeli a obtenham; daí a invasão.",
                 "3": "Os Abaeli ficaram com o pedaço que Lihrey tinha, mas há outros dois. Pediu-vos ajuda para garantir que o povo-peixe não chegasse primeiro aos outros. Disse que entraria em contacto quando localizasse a segunda escama, e fê-lo passadas algumas semanas.",
                 "4": "Apanharam o Cinábrio, o navio de Lihrey, até à base de uma montanha. A escama estava incrustada num bloco gigante de gelo, que se esforçaram por arrastar de volta ao navio, abrindo caminho por uma série de defesas. Disse que precisava de o levar de volta a Frosthaven para derreter o bloco. Regressaram.",
-                "5": "No caminho de volta, o navio foi atacado e destruído por ondas enormes, controladas de algum modo pelo Rei Peixe dos Abaeli. O Rei Peixe atacou-vos e usou a primeira escama para roubar a segunda do bloco.",
-                "6": "Após uma breve luta, o Rei Peixe reconheceu a vossa força. Pediu-vos que o ajudassem a recuperar a terceira escama; em troca, prometeu trazer paz aos mares e protegê-los dos Espreitadores.",
+                "5": "No caminho de volta, o navio foi atacado e destruído por ondas enormes, controladas de algum modo pelo Fish King dos Abaeli. O Fish King atacou-vos e usou a primeira escama para roubar a segunda do bloco.",
+                "6": "Após uma breve luta, o Fish King reconheceu a vossa força. Pediu-vos que o ajudassem a recuperar a terceira escama; em troca, prometeu trazer paz aos mares e protegê-los dos Espreitadores.",
                 "7": "Recusaram a oferta dele.",
-                "8": "Aceitaram a oferta dele e tornaram-se Amigos do Rei Peixe.",
+                "8": "Aceitaram a oferta dele e tornaram-se amigos do Fish King.",
                 "9": "Embora Lihrey ainda estivesse vivo, estava gravemente ferido e precisou de algumas semanas para recuperar antes de encontrar o último pedaço da escama. Com o tempo, porém, encontrou-o, nas mãos de um clã mais antigo de Algox.",
-                "10": "Infelizmente, o Rei Peixe chegou primeiro e roubou o terceiro pedaço da escama. Lihrey disse-vos, porém, que o seu dispositivo poderia agora servir para localizar o covil do Rei Peixe, por isso nem tudo estava perdido.",
-                "11": "Obtiveram o terceiro pedaço da escama para o Rei Peixe e, apesar dos avisos de Lihrey, foram entregá-lo ao seu aliado abael.",
-                "12": "Depois de encontrarem o covil e derrotarem os seus guardas, restava apenas um alvo: o próprio Rei Peixe.",
-                "13": "Enquanto ele ascendia ao auge do seu poder, protegeram-no dos povos reunidos do Norte, todos decididos a detê-lo. Decidiram deixar o Rei Peixe entregue à sua sorte; tinha prometido não fazer mal a Frosthaven, e isso era tudo o que importava para vocês. Recolheram a recompensa, incluindo a lança de que ele já não precisaria, e partiram antes que a transformação terminasse e o lugar inteiro desabasse.",
+                "10": "Infelizmente, o Fish King chegou primeiro e roubou o terceiro pedaço da escama. Lihrey disse-vos, porém, que o seu dispositivo poderia agora servir para localizar o covil do Fish King, por isso nem tudo estava perdido.",
+                "11": "Obtiveram o terceiro pedaço da escama para o Fish King e, apesar dos avisos de Lihrey, foram entregá-lo ao seu aliado abael.",
+                "12": "Depois de encontrarem o covil e derrotarem os seus guardas, restava apenas um alvo: o próprio Fish King.",
+                "13": "Enquanto ele ascendia ao auge do seu poder, protegeram-no dos povos reunidos do Norte, todos decididos a detê-lo. Decidiram deixar o Fish King entregue à sua sorte; tinha prometido não fazer mal a Frosthaven, e isso era tudo o que importava para vocês. Recolheram a recompensa, incluindo a lança de que ele já não precisaria, e partiram antes que a transformação terminasse e o lugar inteiro desabasse.",
                 "14": "Enquanto ele ascendia ao auge do seu poder, protegeram-no dos povos reunidos do Norte, todos decididos a detê-lo. E… bem, começaram a ter dúvidas sobre confiar tanto poder a este louco homem-peixe. Decidiram mudar de rumo e detê-lo.",
-                "15": "Com um gorgolejo de dor, o Rei Peixe finalmente parou de se debater, o caos à volta recuou e o seu corpo inerte voltou ao tamanho original. Os seus próprios porcos-piranha maltratados lançaram-se sobre ele. Pegaram na escama do Leviatã e na lança dele e correram para o navio, esperando que os Abaeli deixados para trás prosperassem sem o seu governante e deixassem Frosthaven em paz. Entregaram a escama a Lihrey, avisando que ninguém deveria tentar controlar o seu poder. Prometeu que a Sociedade da Tempestade a estudaria apenas pela sua importância histórica e a manteria em segurança."
+                "15": "Com um gorgolejo de dor, o Fish King finalmente parou de se debater, o caos à volta recuou e o seu corpo inerte voltou ao tamanho original. Os seus próprios porcos-piranha maltratados lançaram-se sobre ele. Pegaram na escama do Leviatã e na lança dele e correram para o navio, esperando que os Abaeli deixados para trás prosperassem sem o seu governante e deixassem Frosthaven em paz. Entregaram a escama a Lihrey, avisando que ninguém deveria tentar controlar o seu poder. Prometeu que a Sociedade da Tempestade a estudaria apenas pela sua importância histórica e a manteria em segurança."
             },
             "stages": {
                 "0": "{1}",
@@ -1140,12 +1140,12 @@ export default {
             }
         },
         "15": {
-            "name": "A Relíquia",
+            "name": "The Relic",
             "sections": {
                 "1": "Satha estava rodeada de pessoas em trajes de dormir, a queixarem-se de um sonho terrível que todas tiveram, coletivamente. O sonho era com uma máquina que precisava de ajuda para se libertar do gelo. Entoavam em arrepiante uníssono e disseram que não conseguiriam dormir até que isso fosse feito.",
                 "2": "Encontraram a relíquia, um estranho cubo enterrado no gelo e na neve. Levaram-na de volta a Frosthaven. Os aldeões festejaram novamente em uníssono, e desde então os vossos sonhos têm sido conturbados e cheios do cântico deles.",
                 "3": "Algumas semanas depois, acordaram com os gritos daqueles habitantes. O cubo que tinham trazido tinha-se ativado durante a noite, partido uma muralha e rolado para os ermos.",
-                "4": "Seguiram o rasto da Relíquia e destruíram-na. Estilhaçou-se em incontáveis rodas dentadas e engrenagens, e a sua voz abandonou a mente de Satha. Ela agradeceu-vos, deu-vos um soco no braço e voltou para a cama."
+                "4": "Seguiram o rasto da Relic e destruíram-na. Estilhaçou-se em incontáveis rodas dentadas e engrenagens, e a sua voz abandonou a mente de Satha. Ela agradeceu-vos, deu-vos um soco no braço e voltou para a cama."
             },
             "stages": {
                 "0": "{1}",
@@ -1154,11 +1154,11 @@ export default {
             }
         },
         "16": {
-            "name": "O Colecionador",
+            "name": "The Collector",
             "sections": {
-                "1": "O Capitão Olmstead levou-vos até uma rapariga Inox, encontrada quase congelada, mesmo à saída de Frosthaven. Ela contou-lhe que “O Colecionador” a mantinha, a ela e à família, prisioneiras há semanas. A rapariga conseguiu dizer-vos onde fica esse “Colecionador”.",
-                "2": "O covil do Colecionador era uma estrutura metálica nos Bosques Fogo-Branco. Combateram os guardas do Colecionador e resgataram os dois irmãos da rapariga. Eles regressaram a Frosthaven para receber cuidados médicos, enquanto vocês seguiram em frente para acabar com o monstro.",
-                "3": "Destruíram o Colecionador, e o seu corpo desfez-se em pedra sem vida. Abriram as restantes jaulas para que mais ninguém sofresse. De volta a Frosthaven, encontraram a irmã e os irmãos dela, feridos, mas a salvo e muito agradecidos."
+                "1": "O Capitão Olmstead levou-vos até uma rapariga Inox, encontrada quase congelada, mesmo à saída de Frosthaven. Ela contou-lhe que “The Collector” a mantinha, a ela e à família, prisioneiras há semanas. A rapariga conseguiu dizer-vos onde fica esse “Collector”.",
+                "2": "O covil do Collector era uma estrutura metálica nos Bosques Fogo-Branco. Combateram os guardas do Collector e resgataram os dois irmãos da rapariga. Eles regressaram a Frosthaven para receber cuidados médicos, enquanto vocês seguiram em frente para acabar com o monstro.",
+                "3": "Destruíram o Collector, e o seu corpo desfez-se em pedra sem vida. Abriram as restantes jaulas para que mais ninguém sofresse. De volta a Frosthaven, encontraram a irmã e os irmãos dela, feridos, mas a salvo e muito agradecidos."
             },
             "stages": {
                 "0": "{1}",
@@ -1337,9 +1337,9 @@ export default {
         "27": {
             "name": "Os Tomos de Belara",
             "sections": {
-                "1": "Eddica, a Bibliotecária Valrath, anda a pesquisar certos tomos mágicos escritos pela conjuradora Savvas Belara. Acha que descobriu a localização do Tomo do Conflito. Há uma torre mencionada em textos mais antigos, que dizem estar na Floresta Radiante, mas não consta de nenhum levantamento mais recente. Acha que o Tomo pode estar lá.",
-                "2": "Destruíram o autómato de aço que guardava a torre, o que destravou o alçapão. Uma escotilha abriu-se no peito da máquina caída e, lá dentro, encontraram o Tomo do Conflito.",
-                "3": "Eddica acreditava que o Tomo do Conflito era apenas um de vários tomos escritos por Belara e esperava que, juntos, pudessem revelar mais sobre a sua autora.",
+                "1": "Eddica, a Bibliotecária Valrath, anda a pesquisar certos tomos mágicos escritos pela conjuradora Savvas Belara. Acha que descobriu a localização do Tome of Conflict. Há uma torre mencionada em textos mais antigos, que dizem estar na Floresta Radiante, mas não consta de nenhum levantamento mais recente. Acha que o Tomo pode estar lá.",
+                "2": "Destruíram o autómato de aço que guardava a torre, o que destravou o alçapão. Uma escotilha abriu-se no peito da máquina caída e, lá dentro, encontraram o Tome of Conflict.",
+                "3": "Eddica acreditava que o Tome of Conflict era apenas um de vários tomos escritos por Belara e esperava que, juntos, pudessem revelar mais sobre a sua autora.",
                 "4": "Com o tempo, localizaram os quatro tomos e notaram algumas marcas estranhas. Mostraram-nas a Eddica, que examinou os quatro de uma vez, encontrando ligações, significados e segredos ocultos.",
                 "5": "Ela contou-vos a história dos Tomos. O poder que Belara libertou corrompeu-a. Tamanha era a sua força que o Alto Conselho das Orquídeas interveio; aprisionaram Belara e espalharam os tomos para garantir que ela jamais pudesse recuperar todos. O Conselho selou a Savvas… mas Eddica tem quase a certeza de ter descoberto a localização da sua prisão. Parece uma péssima ideia ir até lá… mas…",
                 "6": "Derrotaram Belara. Com a concentração dela quebrada, as duas forças em guerra dentro do seu corpo explodiram para fora num clarão de luz e escuridão, e vocês acordaram fora da fortaleza enquanto ela desabava, selando o que restava de Belara lá dentro. Contaram a história a Eddica na Biblioteca, que ficou entusiasmadíssima."
@@ -1373,7 +1373,7 @@ export default {
             "name": "O Problema dos Espreitadores",
             "sections": {
                 "1": "Uma figura muito estranha e sedenta, com um sobretudo molhado, quis contratar-vos para um trabalho. Disse que Espreitadores lhe mataram a família. Deu-vos a direção do local, disse que os encontraria lá e foi-se embora abruptamente. Totalmente normal. Nada suspeito.",
-                "2": "Limparam a estrutura infestada de Espreitadores junto ao mar, de uma forma ou de outra, e regressaram à Câmara Municipal. O homem do sobretudo nunca apareceu para pagar, e Glint só resmungou sobre o chão que o homem tinha encharcado e o verniz de que precisava."
+                "2": "Limparam a estrutura infestada de Espreitadores junto ao mar, de uma forma ou de outra, e regressaram ao Town Hall. O homem do sobretudo nunca apareceu para pagar, e Glint só resmungou sobre o chão que o homem tinha encharcado e o verniz de que precisava."
             },
             "stages": {
                 "0": "{1}",
@@ -1394,7 +1394,7 @@ export default {
         "83": {
             "name": "Salmoura Crescente",
             "sections": {
-                "1": "Glint, o Inox arquivista da Câmara Municipal, distribuiu todas as boas missões por outros grupos. Por fim, encontrou uma para vocês, que diz: “Caverna que cheira a peixe.” Um cartógrafo encontrou uma caverna que cheira a peixe. Fica longe.",
+                "1": "Glint, o Inox arquivista do Town Hall, distribuiu todas as boas missões por outros grupos. Por fim, encontrou uma para vocês, que diz: “Caverna que cheira a peixe.” Um cartógrafo encontrou uma caverna que cheira a peixe. Fica longe.",
                 "2": "Com os porcos-piranha derrotados, recolheram as peças enferrujadas e remaram contra a maré a subir, alcançando a luz do dia e depois Frosthaven, exaustos. Glint examinou o material recuperado, declarou que era tudo lixo e empurrou-o da secretária."
             },
             "stages": {
@@ -1425,10 +1425,10 @@ export default {
             }
         },
         "86": {
-            "name": "A Dama de Branco",
+            "name": "The Lady in White",
             "sections": {
                 "1": "Um guarda foi direto a vocês pedir ajuda. Acredita estar amaldiçoado porque a esposa ainda não deu à luz o filho deles. No mês passado, viu uma mulher fantasmagórica com olhos a sangrar na floresta em redor de Frosthaven. Nenhum dos outros guardas viu essa dama, mas ofereceu-se para vos pagar para desfazerem a maldição.",
-                "2": "A Dama de Branco soltou um último lamento e dissipou-se na névoa fria. Ao regressarem a Frosthaven, souberam que a esposa do guarda tinha dado à luz uma menina saudável, e as pessoas acenavam com a cabeça e sorriam-vos quando passavam."
+                "2": "A Lady in White soltou um último lamento e dissipou-se na névoa fria. Ao regressarem a Frosthaven, souberam que a esposa do guarda tinha dado à luz uma menina saudável, e as pessoas acenavam com a cabeça e sorriam-vos quando passavam."
             },
             "stages": {
                 "0": "{1}",
@@ -1589,10 +1589,10 @@ export default {
         "122": {
             "name": "A Fome Eterna",
             "sections": {
-                "1": "Nas vossas viagens, encontraram uma Quatryl idosa a tratar de pimentas de cheiro delicioso. Chamava-lhes “pimentas de fogo” e contou a história de uma fera chamada Bocarra Faminta, que vive sob as Montanhas de Pescoço de Cobre. Aparentemente, devora aldeias inteiras, mas só pode ser saciada por um Ensopado de Pimenta de Fogo. Perguntou se vocês alinhavam no desafio.",
-                "2": "Percorreram as cavernas sob as Montanhas de Pescoço de Cobre e trataram da Bocarra Faminta, pondo fim ao perigo que representava para o norte.",
-                "3": "Lutaram contra a Bocarra Faminta e feriram-na de morte. O seu desejo eterno transformou-se em desespero quando gemeu “Tanta fome…” uma última vez e morreu. Noore admitiu que não achava que isso funcionaria.",
-                "4": "Prepararam o Ensopado de Pimenta de Fogo com Noore e levaram o caldeirão até à Bocarra Faminta, que o devorou satisfeita e se deitou para descansar em paz. Noore garantiu que a fera permaneceria feliz por mais cem anos."
+                "1": "Nas vossas viagens, encontraram uma Quatryl idosa a tratar de pimentas de cheiro delicioso. Chamava-lhes “pimentas de fogo” e contou a história de uma fera chamada Hungry Maw, que vive sob as Montanhas de Pescoço de Cobre. Aparentemente, devora aldeias inteiras, mas só pode ser saciada por um Ensopado de Pimenta de Fogo. Perguntou se vocês alinhavam no desafio.",
+                "2": "Percorreram as cavernas sob as Montanhas de Pescoço de Cobre e trataram do Hungry Maw, pondo fim ao perigo que representava para o norte.",
+                "3": "Lutaram contra o Hungry Maw e feriram-no de morte. O seu desejo eterno transformou-se em desespero quando gemeu “Tanta fome…” uma última vez e morreu. Noore admitiu que não achava que isso funcionaria.",
+                "4": "Prepararam o Ensopado de Pimenta de Fogo com Noore e levaram o caldeirão até ao Hungry Maw, que o devorou satisfeito e se deitou para descansar em paz. Noore garantiu que a fera permaneceria feliz por mais cem anos."
             },
             "stages": {
                 "0": "{1}",
@@ -1774,10 +1774,10 @@ export default {
             }
         },
         "10": {
-            "name": "O Torneio do Machadinha",
+            "name": "O Torneio do Hatchet",
             "sections": {
-                "1": "Um cartaz na Ponte Silenciosa anunciava uma competição de luta na Praça de Gloomhaven. Só lutadores individuais podem participar, por isso o Machadinha inscreveu-se enquanto o resto de vocês torce das bancadas.",
-                "2": "A Praça de Gloomhaven tinha sido transformada numa arena brutal, onde competidor após competidor era estraçalhado por monstros. O Machadinha derrotou-os a todos. A multidão enlouqueceu e os organizadores concederam ao Machadinha uma arma lindamente trabalhada."
+                "1": "Um cartaz na Ponte Silenciosa anunciava uma competição de luta na Praça de Gloomhaven. Só lutadores individuais podem participar, por isso o Hatchet inscreveu-se enquanto o resto de vocês torce das bancadas.",
+                "2": "A Praça de Gloomhaven tinha sido transformada numa arena brutal, onde competidor após competidor era estraçalhado por monstros. O Hatchet derrotou-os a todos. A multidão enlouqueceu e os organizadores concederam ao Hatchet uma arma lindamente trabalhada."
             },
             "stages": {
                 "0": "{1}",
@@ -1787,8 +1787,8 @@ export default {
         "11": {
             "name": "Algo se Agita no Vazio",
             "sections": {
-                "1": "Durante uma noite de apostas no Leão Adormecido, uma onda de pavor tomou conta de vocês. A Guardiã do Vazio avisou que algo dentro do Vazio se está a agitar e que algo terrível está para vir.",
-                "2": "À beira do Vazio, uma tempestade negra rugia. A Guardiã do Vazio plantou três proteções e resistiram a vaga após vaga de demónios até a tempestade acalmar. A Guardiã do Vazio ficou a noite toda para garantir que tinha acabado e voltou com outro conjunto de mantos. Não perguntaram."
+                "1": "Durante uma noite de apostas no Leão Adormecido, uma onda de pavor tomou conta de vocês. A Voidwarden avisou que algo dentro do Vazio se está a agitar e que algo terrível está para vir.",
+                "2": "À beira do Vazio, uma tempestade negra rugia. A Voidwarden plantou três proteções e resistiram a vaga após vaga de demónios até a tempestade acalmar. A Voidwarden ficou a noite toda para garantir que tinha acabado e voltou com outro conjunto de mantos. Não perguntaram."
             },
             "stages": {
                 "0": "{1}",

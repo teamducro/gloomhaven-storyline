@@ -106,7 +106,7 @@ export default {
             "name": "Olho por Olho"
         },
         "face-your-end": {
-            "name": "face your end"
+            "name": "Enfrenta o Teu Fim"
         },
         "fatal-advance": {
             "name": "Avanço Fatal"
@@ -637,7 +637,7 @@ export default {
             "name": "Granizo Estimulante"
         },
         "tremulant-cyclone": {
-            "name": "tremulant cyclone"
+            "name": "Ciclone Trémulo"
         },
         "vengeance": {
             "name": "Vingança"
@@ -871,7 +871,7 @@ export default {
             "name": "Mordida Paralisante"
         },
         "rot-maggots": {
-            "name": "rot maggots"
+            "name": "Larvas da Podridão"
         },
         "scattered-terror": {
             "name": "Terror Disperso"
@@ -1075,7 +1075,7 @@ export default {
             "name": "Seringa"
         },
         "teamwork": {
-            "name": "teamwork"
+            "name": "Trabalho em Equipa"
         },
         "triage": {
             "name": "Triagem"
@@ -1192,7 +1192,7 @@ export default {
             "name": "Força Purificadora"
         },
         "daybreak": {
-            "name": "daybreak"
+            "name": "Alvorecer"
         },
         "dazzling-charge": {
             "name": "Investida Ofuscante"
@@ -1330,7 +1330,7 @@ export default {
             "name": "Projetar a Voz"
         },
         "tranquil-trill": {
-            "name": "tranquil trill"
+            "name": "Trinado Tranquilo"
         },
         "tuning-the-outcome": {
             "name": "Ajustando o Resultado"
@@ -1531,7 +1531,7 @@ export default {
             "name": "Flash Desorientador"
         },
         "energizing-tonic": {
-            "name": "energizing tonic"
+            "name": "Tónico Energizante"
         },
         "enhancement-field": {
             "name": "Campo de Aprimoramento"
@@ -6733,7 +6733,7 @@ export default {
             "name": "Postura Defensiva"
         },
         "daybreak": {
-            "name": "Favorecer"
+            "name": "Alvorecer"
         },
         "sanctify": {
             "name": "sanctify"
