@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "Doomstalker",
+        "name": "末日使者",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将两张{+0_WHITE}卡牌替换为两张{+1_WHITE}卡牌",
@@ -111,7 +111,7 @@ export default {
         ]
     },
     "EL": {
-        "name": "Elementalist",
+        "name": "元素大师",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE}卡牌",
@@ -129,7 +129,7 @@ export default {
         ]
     },
     "SB": {
-        "name": "Sawbones",
+        "name": "锯骨医者",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "移除四张{+0_WHITE}卡牌",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "Plagueherald",
+        "name": "瘟疫使者",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{+0_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE}卡牌",
@@ -251,7 +251,7 @@ export default {
         ]
     },
     "BT": {
-        "name": "Beast Tyrant",
+        "name": "暴兽领主",
         "perks": [
             "移除两张{-1_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE}卡牌",
@@ -264,7 +264,7 @@ export default {
         ]
     },
     "BS": {
-        "name": "Bladeswarm",
+        "name": "刀锋领主",
         "perks": [
             "将一张{-2_WHITE}卡牌替换为一张{+0_WHITE}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+0_WHITE} {WOUND}卡牌",
@@ -379,7 +379,7 @@ export default {
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE} {DISARM}卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE} {PUSH}1卡牌",
             "将一张{-1_WHITE}卡牌替换为一张{+1_WHITE} {PULL}1卡牌",
-            "将一张{+0_WHITE}卡牌替换为一张{+0_WHITE} {REFRESH}一个已消耗物品的卡牌",
+            "将一张{+0_WHITE}卡牌替换为一张{+0_WHITE} {REFRESH}一个已横置物品的卡牌",
             "将一张{+0_WHITE}卡牌替换为一张{+1_WHITE} {SHIELD}1，自身卡牌",
             "将一张{+0_WHITE}卡牌替换为一张{+1_WHITE} {PIERCE}2卡牌",
             "将一张{+2_WHITE}卡牌替换为一张{+3_WHITE} {HEAL}2，自身卡牌",
@@ -527,7 +527,7 @@ export default {
             "将一张{+1_WHITE}卡牌替换为一张{+0_WHITE} {WOUND_2}卡牌",
             "添加四张{AGAIN} {+0_WHITE}“如果目标位于困难地形，则{+1_WHITE}”卡牌",
             "添加两张{AGAIN}“如果你位于困难地形，则{INVISIBLE}，自身”卡牌",
-            "获得“Poison Dagger”（物品 gh-11）。你可以额外携带一件名称中含有“匕首”的{ONE-HAND}物品。",
+            "获得“剧毒匕首”（物品 gh-11）。你可以额外携带一件名称中含有“匕首”的{ONE-HAND}物品。",
             "忽略事件造成的伤害、负面状态和修正，并移除一张{-1_WHITE}卡牌",
             "忽略负面剧本效果，并移除一张{-1_WHITE}卡牌"
         ]
@@ -615,7 +615,7 @@ export default {
             "将两张{+1_WHITE}卡牌替换为两张{+2_WHITE}卡牌",
             "添加一张{-1_WHITE}“获得1{TIME_ICON}”卡牌",
             "添加一张{+2_WHITE}“{REGENERATE.fh}，自身”{AGAIN}卡牌",
-            "每当你短休时，你可以消耗一件未消耗的{SPENT.fh}物品且不产生效果，以{RECOVER.fh}另一件已消耗的物品",
+            "每当你短暂休息时，你可以花费一件未横置的{SPENT.fh}物品且不产生效果，以{RECOVER.fh}另一件已横置的物品",
             "每个剧本中，在你的第一个回合开始时，你可以执行{MOVE.fh}3",
             "每当你将获得{IMMOBILIZE.fh}时，阻止该状态"
         ]
@@ -655,7 +655,7 @@ export default {
             "添加两张“{HEAL.fh}1，{TARGET.fh}1名盟友”{AGAIN}卡牌",
             "忽略剧本效果",
             "每当你充分休息时，你可以将一个{SHADOW_ICON}移动最多三格",
-            "每当你短休时，你可以{DARK_X}，以执行{MUDDLE.fh}、{CURSE.fh}、{RANGE.fh}2，如同你位于有{SHADOW_ICON}的六角格中",
+            "每当你短暂休息时，你可以{DARK_X}，以执行{MUDDLE.fh}、{CURSE.fh}、{RANGE.fh}2，如同你位于有{SHADOW_ICON}的六角格中",
             "当你位于有{SHADOW_ICON}的六角格中时，所有以你为目标的攻击都具有劣势"
         ]
     },
@@ -694,7 +694,7 @@ export default {
             "添加一张{2X_WHITE}“{BRITTLE.fh}，自身”卡牌",
             "添加一张{+1_WHITE}“{REGENERATE.fh}，自身”{AGAIN}卡牌",
             "忽略剧本效果",
-            "每当你短休时，你可以移除{RANGE.fh}3以内一名盟友的一个负面状态",
+            "每当你短暂休息时，你可以移除{RANGE.fh}3以内一名盟友的一个负面状态",
             "每个剧本一次，当你将要给予自己负面状态时，防止该状态",
             "每当你执行带有遗失图标的行动时，你可以弃掉一张卡牌，以{RECOVER.fh}你弃牌堆中一张等级相同或更低的卡牌"
         ]
@@ -715,7 +715,7 @@ export default {
             "添加两张“每有一对已激活的{INFUSION_ICON}，+1{ATTACK.fh}”{AGAIN}卡牌",
             "忽略剧本效果",
             "忽略物品的{-1}效果。每当你筋疲力尽时，保留你所有已激活的加成，你的召唤物每轮在先攻99行动",
-            "每当你短休时，你可以{ANY_X}以{RECOVER.fh}一件已消耗的{ONE-HAND}或{TWO-HANDS}物品",
+            "每当你短暂休息时，你可以{ANY_X}以{RECOVER.fh}一件已横置的{ONE-HAND}或{TWO-HANDS}物品",
             "每个剧本一次，在确定先攻顺序期间，所有技能卡都揭示后，{ANY}"
         ]
     },
@@ -736,12 +736,12 @@ export default {
             "添加两张{+1_WHITE} {MUDDLE.fh} {AGAIN}卡牌",
             "忽略剧本效果",
             "每当你充分休息时，你可以摧毁一个相邻的障碍物以获得{WARD.fh}",
-            "每当你短休时，你可以{FIRE_X}，以对1个位于有害地形或与其相邻的敌人执行{WOUND.fh}、{TARGET.fh}1",
+            "每当你短暂休息时，你可以{FIRE_X}，以对1个位于有害地形或与其相邻的敌人执行{WOUND.fh}、{TARGET.fh}1",
             "你和所有盟友不受你创造的有害地形的影响"
         ]
     },
     "SH": {
-        "name": "Shattersong",
+        "name": "碎裂歌手",
         "masteries": [
             "在你每个回合结束时获得{RESONANCE_ICON}之前，始终刚好拥有0个{RESONANCE_ICON}",
             "在五个不同的{WAVE}能力上各消耗5个{RESONANCE_ICON}"
@@ -755,7 +755,7 @@ export default {
             "添加一张“{HEAL.fh}2、{BLESS.fh}、{TARGET.fh}1名盟友”{AGAIN}卡牌",
             "添加一张{+1_WHITE}“获得1 {RESONANCE_ICON}”卡牌",
             "忽略剧本效果",
-            "每当你短休时，你可以{WIND_X}以执行{STRENGTHEN.fh}、{RANGE.fh}3，并{LIGHT_X}以执行{BLESS.fh}、{RANGE.fh}3",
+            "每当你短暂休息时，你可以{WIND_X}以执行{STRENGTHEN.fh}、{RANGE.fh}3，并{LIGHT_X}以执行{BLESS.fh}、{RANGE.fh}3",
             "每个剧本开始时，你可以获得{BRITTLE.fh}以获得2 {RESONANCE_ICON}",
             "每当揭示新房间时，你可以翻开怪物攻击修正牌库和所有盟友的攻击修正牌库顶的1张卡牌"
         ]
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Pain Conduit",
+        "name": "痛苦通导者",
         "masteries": [
             "在一轮中使其他个体共承受至少{DAMAGE.fh}40",
             "在回合开始时同时带有{WOUND.fh}、{BRITTLE.fh}、{BANE.fh}、{POISON.fh}、{IMMOBILIZE.fh}、{DISARM.fh}、{STUN.fh}和{MUDDLE.fh}"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Metal Mosaic",
+        "name": "金属拼杂体",
         "masteries": [
             "从不攻击",
             "连续四轮，使压力计从本轮开始时的位置上升或下降三格（从{PRESSURE_LOW_ICON}到{PRESSURE_HIGH_ICON}，或反之）"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Deepwraith",
+        "name": "深海缚灵",
         "masteries": [
             "你执行的所有攻击均具有优势",
             "每轮灌注{DARK}"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "Crashing Tide",
+        "name": "崩潮卫士",
         "masteries": [
             "从未承受攻击伤害，且成为至少5次攻击的目标",
             "在你每次休息开始时，使激活中的{TIDE_ICON}多于你弃牌堆中的卡牌"
@@ -917,7 +917,7 @@ export default {
         ]
     },
     "SA": {
-        "name": "Satha",
+        "name": "萨沙",
         "masteries": [
             "在整个剧本中，除了执行充分休息时，使至少一个盟友在你的每个回合中都执行一个移动或攻击能力",
             "在整个剧本中，从不让盟友成为攻击的目标"
@@ -938,7 +938,7 @@ export default {
         ]
     },
     "HA": {
-        "name": "Hail",
+        "name": "黑尔",
         "masteries": [
             "在整个剧本中，每轮至少获得1个{RESOLVE_WHITE}",
             "在单一剧本中，连续三轮，每轮至少消耗3个{RESOLVE_WHITE}"
@@ -972,7 +972,7 @@ export default {
             "将一张{+0_WHITE}卡牌替换为一张{+2_WHITE}{LIGHT_OR_DARK}卡牌",
             "添加一张{+1_WHITE}“将本卡牌放入你的激活区域。当你下次放置{RIFT_WHITE}时，弃掉本卡牌，在其{RANGE.fh}1内再放置一个{RIFT_WHITE}”{AGAIN}卡牌",
             "无视剧本效果并添加两张{+1_WHITE}卡牌",
-            "每当你充分休息时，你可以阅读当前剧本“章节链接”中一个未读的{SECTION}",
+            "每当你充分休息时，你可以阅读当前剧本“段落链接”中一个未读的{SECTION}",
             "每当你放置{RIFT_WHITE}时，你可以执行“{PULL.fh}1，{TARGET.fh}1个盟友或敌人，{RANGE.fh}1”，如同你占据着含有{RIFT_WHITE}的格子",
             "每当一个牌库被洗牌时，你可以将该牌库中所有已翻开的卡牌放到一旁，并在洗牌后将它们放回牌库顶"
         ]
@@ -1243,9 +1243,9 @@ export default {
             "将两张{-1_WHITE}卡牌替换为一张{+0_WHITE}{MUDDLE.fh}卡牌",
             "将一张{+0_WHITE}卡牌替换为一张{+0_WHITE}“获得10补给”卡牌",
             "将两张{+0_WHITE}卡牌替换为两张{AGAIN}{PIERCE.fh}3卡牌",
-            "将一张{+1_WHITE}卡牌替换为两张{+0_WHITE}“获得<i>倒刺带</i>或<i>铁板</i>道具”卡牌",
+            "将一张{+1_WHITE}卡牌替换为两张{+0_WHITE}“获得<i>倒刺腕甲</i>或<i>铁护腕</i>道具”卡牌",
             "将两张{+1_WHITE}卡牌替换为两张{+2_WHITE}卡牌",
-            "添加一张{AGAIN}“获得<i>迁移卷轴</i>或<i>磨利匕首</i>道具”卡牌",
+            "添加一张{AGAIN}“获得<i>位移卷轴</i>或<i>锋利匕首</i>道具”卡牌",
             "添加一张{AGAIN}{STUN.fh}卡牌",
             "无视道具{-1}效果并移除一张{+0_WHITE}卡牌",
             "你每个剧本可以额外携带一件{SMALL-ITEM}道具",
@@ -1311,7 +1311,7 @@ export default {
         ]
     },
     "ST2": {
-        "name": "Soultether",
+        "name": "召唤师",
         "masteries": [
             "在你首次休息之前，执行3个不同的召唤能力，并保持对应的卡牌在激活区域直至剧本结束",
             "在6个剧本的首轮中，执行6个不同的召唤能力"
@@ -1333,7 +1333,7 @@ export default {
         ]
     },
     "WF2": {
-        "name": "Wildfury",
+        "name": "兽王",
         "masteries": [
             "在单一剧本中，在你的每个回合灌注或消耗{WIND}或{EARTH}",
             "在单一剧本中，用攻击值为7或更高（计算所有加成之后，攻击修正之前）的{COMMAND}攻击消灭4个或更多敌人"

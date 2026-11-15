@@ -19,7 +19,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 49.2"
+                "rewards": "+1 繁荣度，阅读段落 49.2"
             },
             {
                 "level": 3,
@@ -51,7 +51,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 172.3"
+                "rewards": "+1 繁荣度，阅读段落 172.3"
             },
             {
                 "level": 2,
@@ -131,7 +131,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 151.2"
+                "rewards": "+1 繁荣度，阅读段落 151.2"
             },
             {
                 "level": 2,
@@ -163,7 +163,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 78.4"
+                "rewards": "+1 繁荣度，阅读段落 78.4"
             },
             {
                 "level": 2,
@@ -299,7 +299,7 @@ export default {
                 "downtime": "酿造和蒸馏2-3草药的药水",
                 "wrecked": "角色无法使用药水",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 183.5"
+                "rewards": "+1 繁荣度，阅读段落 183.5"
             }
         ]
     },
@@ -313,33 +313,33 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "购买最多1件物品",
-                "wrecked": "集体失去 5 金钱",
+                "wrecked": "共同失去5金币",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 25.2"
+                "rewards": "+1 繁荣度，阅读段落 25.2"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "购买最多2件物品",
-                "wrecked": "集体失去 10 金钱",
+                "wrecked": "共同失去10金币",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 12.4"
+                "rewards": "+1 繁荣度，阅读段落 12.4"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "购买最多3件物品",
-                "wrecked": "集体失去 15 金钱",
+                "wrecked": "共同失去15金币",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 38.3"
+                "rewards": "+1 繁荣度，阅读段落 38.3"
             },
             {
                 "level": 4,
                 "operations": "",
                 "downtime": "购买最多4件物品",
-                "wrecked": "集体失去 20 金钱",
+                "wrecked": "共同失去20金币",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 196.2"
+                "rewards": "+1 繁荣度，阅读段落 196.2"
             }
         ]
     },
@@ -355,7 +355,7 @@ export default {
                 "downtime": "",
                 "wrecked": "损坏任意 1 个建筑物",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 31.3"
+                "rewards": "+1 繁荣度，阅读段落 31.3"
             },
             {
                 "level": 2,
@@ -387,7 +387,7 @@ export default {
                 "downtime": "",
                 "wrecked": "每名角色在下一个剧本开始时获得{CURSE.fh}",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 192.5"
+                "rewards": "+1 繁荣度，阅读段落 192.5"
             },
             {
                 "level": 2,
@@ -427,7 +427,7 @@ export default {
                 "downtime": "购买强化",
                 "wrecked": "每名角色在下一个剧本开始时获得{DISARM.fh}",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 193.1"
+                "rewards": "+1 繁荣度，阅读段落 193.1"
             },
             {
                 "level": 2,
@@ -435,7 +435,7 @@ export default {
                 "downtime": "购买强化",
                 "wrecked": "每名角色在下一个剧本开始时获得{DISARM.fh}",
                 "passive": "所有强化费用减少10金币",
-                "rewards": "+1 繁荣度，阅读章节 157.2"
+                "rewards": "+1 繁荣度，阅读段落 157.2"
             },
             {
                 "level": 3,
@@ -451,7 +451,7 @@ export default {
                 "downtime": "购买强化",
                 "wrecked": "每名角色在下一个剧本开始时获得{DISARM.fh}",
                 "passive": "所有强化费用减少10金币，每个等级的等级惩罚减少10金币，每个重复强化的惩罚减少25金币",
-                "rewards": "+1 繁荣度，阅读章节 56.3"
+                "rewards": "+1 繁荣度，阅读段落 56.3"
             }
         ]
     },
@@ -491,7 +491,7 @@ export default {
                 "downtime": "",
                 "wrecked": "共同失去2个{LUMBER}",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 144.3"
+                "rewards": "+1 繁荣度，阅读段落 144.3"
             },
             {
                 "level": 2,
@@ -515,7 +515,7 @@ export default {
                 "downtime": "",
                 "wrecked": "共同失去2个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 173.1"
+                "rewards": "+1 繁荣度，阅读段落 173.1"
             },
             {
                 "level": 2,
@@ -539,7 +539,7 @@ export default {
                 "downtime": "",
                 "wrecked": "失去 1 士气值",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 160.2"
+                "rewards": "+1 繁荣度，阅读段落 160.2"
             },
             {
                 "level": 2,
@@ -547,7 +547,7 @@ export default {
                 "downtime": "",
                 "wrecked": "失去 1 士气值",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 35.3"
+                "rewards": "+1 繁荣度，阅读段落 35.3"
             },
             {
                 "level": 3,
@@ -556,7 +556,7 @@ export default {
                 "downtime": "",
                 "wrecked": "失去 1 士气值",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 113.1"
+                "rewards": "+1 繁荣度，阅读段落 113.1"
             }
         ]
     },
@@ -571,8 +571,8 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "失去 1 士气值",
-                "passive": "当试炼牌库全部完成时，阅读章节 187.1",
-                "rewards": "+1 繁荣度，阅读章节 178.2"
+                "passive": "当试炼牌库全部完成时，阅读段落 187.1",
+                "rewards": "+1 繁荣度，阅读段落 178.2"
             },
             {
                 "level": 2,
@@ -596,7 +596,7 @@ export default {
                 "downtime": "",
                 "wrecked": "失去 1 激励值",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 190.3"
+                "rewards": "+1 繁荣度，阅读段落 190.3"
             },
             {
                 "level": 2,
@@ -604,7 +604,7 @@ export default {
                 "downtime": "",
                 "wrecked": "失去 1 激励值",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 116.3"
+                "rewards": "+1 繁荣度，阅读段落 116.3"
             },
             {
                 "level": 3,
@@ -612,7 +612,7 @@ export default {
                 "downtime": "",
                 "wrecked": "失去 1 激励值",
                 "passive": "",
-                "rewards": "+1 繁荣度，阅读章节 89.2"
+                "rewards": "+1 繁荣度，阅读段落 89.2"
             }
         ]
     },
@@ -644,7 +644,7 @@ export default {
                 "downtime": "",
                 "wrecked": "共同失去任意1个资源",
                 "passive": "所有建设费用减少1个材料资源",
-                "rewards": "+1 繁荣度，阅读章节 7.3"
+                "rewards": "+1 繁荣度，阅读段落 7.3"
             },
             {
                 "level": 2,
@@ -668,7 +668,7 @@ export default {
                 "downtime": "",
                 "wrecked": "角色无法使用宠物",
                 "passive": "携带1个宠物进入每个剧本。容量：4",
-                "rewards": "+1 繁荣度，阅读章节 3.1"
+                "rewards": "+1 繁荣度，阅读段落 3.1"
             },
             {
                 "level": 2,
@@ -707,15 +707,15 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "无法完成挑战",
-                "passive": "抽取1张挑战牌并保留至多1张。当挑战牌库全部完成时，阅读章节 190.1",
-                "rewards": "+1 繁荣度，阅读章节 189.1"
+                "passive": "抽取1张挑战牌并保留至多1张。当挑战牌库全部完成时，阅读段落 190.1",
+                "rewards": "+1 繁荣度，阅读段落 189.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
                 "wrecked": "无法完成挑战",
-                "passive": "抽取2张挑战牌并保留至多1张。当挑战牌库全部完成时，阅读章节 190.1",
+                "passive": "抽取2张挑战牌并保留至多1张。当挑战牌库全部完成时，阅读段落 190.1",
                 "rewards": "+1 繁荣度"
             },
             {
@@ -723,7 +723,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "无法完成挑战",
-                "passive": "抽取3张挑战牌并保留至多2张。当挑战牌库全部完成时，阅读章节 190.1",
+                "passive": "抽取3张挑战牌并保留至多2张。当挑战牌库全部完成时，阅读段落 190.1",
                 "rewards": "+1 繁荣度"
             }
         ]

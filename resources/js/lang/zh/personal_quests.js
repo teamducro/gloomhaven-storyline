@@ -272,7 +272,7 @@ export default {
     "cs-346": {
         "name": "An Adder Divides",
         "progress": [
-            "在6个不同的场景中占据艰难地带。",
+            "在6个不同的场景中占据困难地形。",
             "完成{SCENARIO 39}。"
         ]
     },
@@ -339,7 +339,7 @@ export default {
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "获得“锯齿刃”设计图（道具 RM-01）。",
+            "获得“Serrated Edge”设计图（道具 RM-01）。",
             "对三十个敌人施加{WOUND}或{RUPTURE}。",
             "完成{SCENARIO RM1}。"
         ]
@@ -497,7 +497,7 @@ export default {
             72
         ],
         "progress": [
-            "在白火林地完成一个剧本。",
+            "在白焰树林完成一个剧本。",
             "在铜颈山脉完成一个剧本。",
             "在光辉森林完成一个剧本。",
             "在水晶原野完成一个剧本。",
@@ -581,7 +581,7 @@ export default {
             83
         ],
         "progress": [
-            "完成十个挑战。"
+            "完成十二个挑战。"
         ]
     },
     "fh-23": {
@@ -616,8 +616,8 @@ export default {
     "gh2-4": {
         "name": "先人陨落",
         "progress": [
-            "获得“Aesther Spyglass”（道具 149），它不能被出售。",
-            "使用“Aesther Spyglass”（道具 149）十次。",
+            "获得“以太灵望远镜”（道具 149），它不能被出售。",
+            "使用“以太灵望远镜”（道具 149）十次。",
             "阅读{SECTION} 115.2。",
             "完成{SCENARIO 63}。"
         ]
@@ -683,8 +683,8 @@ export default {
         "name": "践行圣光",
         "progress": [
             "立刻解锁{SCENARIO 65}。",
-            "找到“Shield of the Righteous”（道具 148）。",
-            "使用“Shield of the Righteous”（道具 148）抵消十次4点或更多伤害的攻击。",
+            "找到“正义之盾”（道具 148）。",
+            "使用“正义之盾”（道具 148）抵消十次4点或更多伤害的攻击。",
             "阅读{SECTION} 82.1。"
         ]
     },
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "逃离辛-拉",
         "progress": [
-            "将城市事件69和70加入城市事件牌库。获得“Black Card”（道具 113），它不能被出售。",
+            "将城市事件69和70加入城市事件牌库。获得“黑暗卡牌”（道具 113），它不能被出售。",
             "完成六个支线场景（场景编号大于56）。",
             "阅读{SECTION} 128.2。"
         ]
@@ -717,7 +717,7 @@ export default {
     "gh2-16": {
         "name": "完美毒药",
         "progress": [
-            "获得“Poison Dagger”（道具 7）。",
+            "获得“剧毒匕首”（道具 7）。",
             "使用它对没有{POISON}的敌人施加{POISON}30次。",
             "阅读{SECTION} 8.3。"
         ]
@@ -725,7 +725,7 @@ export default {
     "gh2-17": {
         "name": "刀尖舔血",
         "progress": [
-            "获得“Experimental Armor”（道具 150）。",
+            "获得“实验装甲”（道具 150）。",
             "使用它令20个敌人承受伤害。",
             "阅读{SECTION} 47.4。"
         ]

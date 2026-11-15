@@ -517,7 +517,7 @@ export default {
             "name": "引向死亡"
         },
         "multi-pronged-assault": {
-            "name": "multi-pronged assault"
+            "name": "多重打击"
         },
         "natures-hunger": {
             "name": "自然之渴"
@@ -4572,7 +4572,7 @@ export default {
             "name": "防护帷幔"
         },
         "ancient-drill": {
-            "name": "ancient drill"
+            "name": "远古钻机"
         },
         "beam-axe": {
             "name": "光束战斧"
@@ -4584,7 +4584,7 @@ export default {
             "name": "低温休眠"
         },
         "curious-gear": {
-            "name": "curious gear"
+            "name": "古怪齿轮"
         },
         "curious-machinery": {
             "name": "古怪机械"
@@ -4617,7 +4617,7 @@ export default {
             "name": "动力核心"
         },
         "pressure-build-up": {
-            "name": "pressure build-up"
+            "name": "压力增进"
         },
         "processing": {
             "name": "进程处理"
@@ -5079,7 +5079,7 @@ export default {
             "name": "磁力碎片"
         },
         "mother-of-all-traps": {
-            "name": "mother of all traps"
+            "name": "万罠归宗"
         },
         "path-of-pain": {
             "name": "痛苦路径"

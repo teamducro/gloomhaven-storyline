@@ -18,23 +18,23 @@ export default {
         "faq": "兽皮甲只为该次攻击提供护盾，而不是持续到回合结束。"
     },
     "gh-4": {
-        "name": "Leather Armor",
+        "name": "软皮甲",
         "source": "繁荣 1",
         "desc": "当你被攻击时，攻击者这次的攻击处于劣势。",
-        "faq": "皮革护甲必须在敌人抽取攻击修正牌之前使用。"
+        "faq": "软皮甲必须在敌人抽取攻击修正牌之前使用。"
     },
     "gh-5": {
-        "name": "Cloak of Invisibility",
+        "name": "隐形斗篷",
         "source": "繁荣 1",
         "desc": "在你的回合期间，获得 {INVISIBLE}。"
     },
     "gh-6": {
-        "name": "Eagle-Eye Goggles",
+        "name": "鹰眼护目镜",
         "source": "繁荣 1",
         "desc": "在你攻击时，使你整个攻击行动获得优势。"
     },
     "gh-7": {
-        "name": "Iron Helmet",
+        "name": "铁制头盔",
         "source": "繁荣 1",
         "desc": "当你被攻击时，将敌人抽到的任何 {2X_WHITE} 攻击修正牌视为 {+0_WHITE}。"
     },
@@ -54,7 +54,7 @@ export default {
         "desc": "在你的近战攻击期间，使整个攻击行动增加 {STUN}。"
     },
     "gh-11": {
-        "name": "Poison Dagger",
+        "name": "剧毒匕首",
         "source": "繁荣 1",
         "desc": "在你的近战攻击期间，使1次攻击增加 {POISON}。"
     },
@@ -80,12 +80,12 @@ export default {
         "desc": "在回合开始时，所有能力卡牌翻开之后，使你的主导先攻值增加或减少10点。"
     },
     "gh-16": {
-        "name": "Cloak of Pockets",
+        "name": "配袋披风",
         "source": "繁荣 2",
         "desc": "你可以额外携带2个 {SMALL-ITEM} 物品。"
     },
     "gh-17": {
-        "name": "Empowering Talisman",
+        "name": "强能护身符",
         "source": "繁荣 2",
         "desc": "在你的回合期间，{REFRESH} 你的1个已消耗的 {SMALL-ITEM} 物品。"
     },
@@ -110,7 +110,7 @@ export default {
         "desc": "在你的攻击期间，使1次攻击增加 {STUN}。"
     },
     "gh-22": {
-        "name": "Heavy Greaves",
+        "name": "重型胫甲",
         "source": "繁荣 3",
         "desc": "你免疫由敌人或剧本效果造成的所有强制移动。在你的攻击修正牌库中加入 1 张 {-1}。"
     },
@@ -121,7 +121,7 @@ export default {
         "faq": "锁子甲只为该次攻击提供护盾，而不是持续到回合结束。"
     },
     "gh-24": {
-        "name": "Amulet of Life",
+        "name": "生命项链",
         "source": "繁荣 3",
         "desc": "在你的回合期间，{HEAL} 1 点伤害。"
     },
@@ -136,12 +136,12 @@ export default {
         "desc": "将单目标近战攻击变为：{AOE.LINE_0_1_1}"
     },
     "gh-27": {
-        "name": "Major Healing Potion",
+        "name": "强效治疗药水",
         "source": "繁荣 3",
         "desc": "在你的回合期间，执行一个“{HEAL} 5，自身”行动。"
     },
     "gh-28": {
-        "name": "Moon Earring",
+        "name": "月亮耳环",
         "source": "繁荣 3",
         "desc": "在你的回合期间，{REFRESH} 你所有已使用的物品。"
     },
@@ -151,12 +151,12 @@ export default {
         "desc": "每当你使用能力卡牌的默认下半部分时，改为执行 {MOVE} 3 行动，而不是 {MOVE} 2 行动。"
     },
     "gh-30": {
-        "name": "Studded Leather",
+        "name": "嵌钉皮甲",
         "source": "繁荣 4",
         "desc": "当你被攻击时，攻击者在该次攻击中获得劣势，且你在该次攻击中获得 {SHIELD} 1。"
     },
     "gh-31": {
-        "name": "Hawk Helm",
+        "name": "雄鹰头盔",
         "source": "繁荣 4",
         "desc": "在你的远程攻击期间，使你的整个攻击行动增加 +1 {RANGE}。"
     },
@@ -166,12 +166,12 @@ export default {
         "desc": "当你受到攻击伤害时，在该次攻击中获得 {SHIELD} 2。"
     },
     "gh-33": {
-        "name": "Volatile Bomb",
+        "name": "烈性炸弹",
         "source": "繁荣 4",
         "desc": "在你的单目标远程攻击行动期间，将该攻击变为：{AOE.CONE_1_1}"
     },
     "gh-34": {
-        "name": "Major Stamina Potion",
+        "name": "强效耐力药水",
         "source": "繁荣 4",
         "desc": "在你的回合期间，{RECOVER} 最多3张你的弃牌堆中的卡牌。",
         "faq": "[勘误] 该物品应只允许你取回2张弃牌堆中的卡牌。此改动将出现在即将推出的扩展中，但基础游戏中也可以按此使用。"
@@ -188,32 +188,32 @@ export default {
         "desc": "在你移动期间，使该次移动增加 +3 {MOVE}。"
     },
     "gh-37": {
-        "name": "Robes of Evocation",
+        "name": "唤醒长袍",
         "source": "繁荣 5",
         "desc": "在你的攻击期间，{ANY_X} 使你的整个攻击行动增加 +1 {ATTACK}。"
     },
     "gh-38": {
-        "name": "Heavy Basinet",
+        "name": "重型面盔",
         "source": "繁荣 5",
         "desc": "你免疫 {STUN} 和 {MUDDLE}。在你的攻击修正牌库中加入 2 张 {-1}。"
     },
     "gh-39": {
-        "name": "Hooked Chain",
+        "name": "带钩锁链",
         "source": "繁荣 5",
         "desc": "在你的远程攻击期间，使整个攻击行动增加 {PULL} 2。"
     },
     "gh-40": {
-        "name": "Versatile Dagger",
+        "name": "万用匕首",
         "source": "繁荣 5",
         "desc": "每当你使用能力卡牌的默认上半部分时，改为执行 {ATTACK} 3 行动，而不是 {ATTACK} 2 行动。"
     },
     "gh-41": {
-        "name": "Major Power Potion",
+        "name": "强效威力药水",
         "source": "繁荣 5\n{SCENARIO 105}（宝藏 #83）",
         "desc": "在你的攻击期间，使你的整个攻击行动增加 +2 {ATTACK}。"
     },
     "gh-42": {
-        "name": "Ring of Haste",
+        "name": "疾速戒指",
         "source": "繁荣 5",
         "desc": "在你回合结束时，从手牌中打出1张卡牌，并立即执行该卡牌的下半部分行动。"
     },
@@ -228,7 +228,7 @@ export default {
         "desc": "在接下来4次来自攻击的对你的伤害中，获得 {SHIELD} 1。在你的攻击修正牌库中加入 4 张 {-1}。"
     },
     "gh-45": {
-        "name": "Pendant of Dark Pacts",
+        "name": "黑暗誓约垂饰",
         "source": "繁荣 6",
         "desc": "在你的回合期间，{REFRESH} 你的2个已消耗的 {SMALL-ITEM} 物品。获得 {CURSE}。",
         "faq": "忽略物品效果的专长并不能阻止你被诅咒。"
@@ -239,7 +239,7 @@ export default {
         "desc": "当你受到攻击伤害时，在该次攻击中获得 {SHIELD} 1 和 {RETALIATE} 2。"
     },
     "gh-47": {
-        "name": "Reaping Scythe",
+        "name": "收割巨镰",
         "source": "繁荣 6",
         "desc": "在你的单目标近战攻击行动期间，将该攻击变为：{AOE.CLEAVE_0_1}"
     },
@@ -249,12 +249,12 @@ export default {
         "desc": "在你的回合期间，创造任意2种元素。{ANY} {ANY}"
     },
     "gh-49": {
-        "name": "Sun Earring",
+        "name": "太阳耳环",
         "source": "繁荣 6",
         "desc": "在你的回合期间，{REFRESH} 你所有已使用的物品并 {HEAL} 3 点伤害。"
     },
     "gh-50": {
-        "name": "Steel Sabatons",
+        "name": "钢质铠靴",
         "source": "繁荣 7",
         "desc": "如果你在回合中移动了1格或更少，则在本回合获得 {SHIELD} 1。在你的攻击修正牌库中加入 2 张 {-1}。"
     },
@@ -269,12 +269,12 @@ export default {
         "desc": "你免疫 {POISON} 和 {WOUND}。"
     },
     "gh-53": {
-        "name": "Black Knife",
+        "name": "黑暗匕首",
         "source": "繁荣 7",
         "desc": "在你的近战攻击期间，使1次攻击增加 {CURSE}。"
     },
     "gh-54": {
-        "name": "Staff of Eminence",
+        "name": "显赫法杖",
         "source": "繁荣 7",
         "desc": "在你的远程攻击期间，{ANY_X} 使你的整个攻击行动增加 +1 {ATTACK}。"
     },
@@ -289,12 +289,12 @@ export default {
         "desc": "在你回合结束时，从手牌中打出1张卡牌，并立即执行该卡牌的上半部分行动。"
     },
     "gh-57": {
-        "name": "Serene Sandals",
+        "name": "宁和凉鞋",
         "source": "繁荣 8",
         "desc": "每当你使用能力卡牌的默认下半部分时，改为执行 {MOVE} 4 行动，而不是 {MOVE} 2 行动。"
     },
     "gh-58": {
-        "name": "Cloak of Phasing",
+        "name": "相位斗篷",
         "source": "繁荣 8",
         "desc": "获得 {FLYING}。当你占据障碍物格时，你视为 {INVISIBLE} 且无法攻击"
     },
@@ -304,7 +304,7 @@ export default {
         "desc": "在你的远程攻击期间，使你的整个攻击行动增加 +2 {RANGE}"
     },
     "gh-60": {
-        "name": "Unstable Explosives",
+        "name": "易爆炸药",
         "source": "繁荣 8",
         "desc": "将单目标远程攻击变为：{AOE.CUBE_2_2}。攻击区域内的所有盟友受到3点伤害。"
     },
@@ -319,7 +319,7 @@ export default {
         "desc": "在你的攻击期间，使1次攻击增加 {STUN}、{POISON} 和 {CURSE}。"
     },
     "gh-63": {
-        "name": "Lucky Eye",
+        "name": "幸运之眼",
         "source": "繁荣 8",
         "desc": "在你的回合期间，对你自己和所有相邻盟友施加 {STRENGTHEN}。"
     },
@@ -334,7 +334,7 @@ export default {
         "desc": "在接下来5次来自攻击的对你的伤害中，获得 {SHIELD} 1。在你的攻击修正牌库中加入 5 张 {-1}。"
     },
     "gh-66": {
-        "name": "Mask of Terror",
+        "name": "恐怖面具",
         "source": "繁荣 9\n{SCENARIO 110}（宝藏 #84）",
         "desc": "在你的近战攻击期间，增加 {PUSH} 1。"
     },
@@ -349,7 +349,7 @@ export default {
         "desc": "在你的单目标近战攻击期间，你可以攻击2格范围内的任意1个敌人。"
     },
     "gh-69": {
-        "name": "Star Earring",
+        "name": "星辰耳环",
         "source": "繁荣 9",
         "desc": "在你的回合期间，{REFRESH} 你所有已使用的物品，{HEAL} 3 点伤害，并 {RECOVER} 最多2张你的弃牌堆中的卡牌。"
     },
@@ -364,57 +364,57 @@ export default {
         "desc": "获得 {FLYING}"
     },
     "gh-72": {
-        "name": "Shoes of Happiness",
+        "name": "欢快之靴",
         "source": "随机道具",
         "desc": "如果你在回合中移动了6格或更多，获得 {exp1}。"
     },
     "gh-73": {
-        "name": "Blinking Cape",
+        "name": "闪烁披肩",
         "source": "随机道具",
         "desc": "在你的回合期间，执行一个“{MOVE} 4，{JUMP}”行动"
     },
     "gh-74": {
-        "name": "Swordedge Armor",
+        "name": "剑刃护甲",
         "source": "随机道具",
         "desc": "在接下来3次来自以你为目标的攻击的伤害中，获得 {SHIELD} 1，{RETALIATE} 1。在你的攻击修正牌库中加入 4 张 {-1}。"
     },
     "gh-75": {
-        "name": "Circlet of Elements",
+        "name": "元素头环",
         "source": "随机道具",
         "desc": "在你的回合期间，{ANY_X} 创造任意1种元素。{ANY}"
     },
     "gh-76": {
-        "name": "Chain Hood",
+        "name": "链甲兜帽",
         "source": "随机道具",
         "desc": "当你与3个或更多怪物相邻时，获得 {SHIELD} 1。在你的攻击修正牌库中加入 1 张 {-1}。"
     },
     "gh-77": {
-        "name": "Frigid Blade",
+        "name": "寒冰之刃",
         "source": "随机道具",
         "desc": "在你的近战攻击期间，{ICE_X} 使1次攻击增加 +2 {ATTACK}。"
     },
     "gh-78": {
-        "name": "Storm Blade",
+        "name": "风暴之刃",
         "source": "随机道具",
         "desc": "在你的近战攻击期间，{WIND_X} 使1次攻击增加 +2 {ATTACK}。"
     },
     "gh-79": {
-        "name": "Inferno Blade",
+        "name": "地狱之刃",
         "source": "随机道具",
         "desc": "在你的近战攻击期间，{FIRE_X} 使1次攻击增加 +2 {ATTACK}。"
     },
     "gh-80": {
-        "name": "Tremor Blade",
+        "name": "颤地之刃",
         "source": "随机道具",
         "desc": "在你的近战攻击期间，{EARTH_X} 使1次攻击增加 +2 {ATTACK}。"
     },
     "gh-81": {
-        "name": "Brilliant Blade",
+        "name": "光辉之刃",
         "source": "随机道具",
         "desc": "在你的近战攻击期间，{LIGHT_X} 使1次攻击增加 +2 {ATTACK}。"
     },
     "gh-82": {
-        "name": "Night Blade",
+        "name": "暗夜之刃",
         "source": "随机道具",
         "desc": "在你的近战攻击期间，{DARK_X} 使1次攻击增加 +2 {ATTACK}。"
     },
@@ -454,12 +454,12 @@ export default {
         "desc": "在你的回合期间，移除你身上的1个负面状态。你可以在身处 {STUN} 时使用。"
     },
     "gh-90": {
-        "name": "Major Cure Potion",
+        "name": "强效治愈药水",
         "source": "随机道具\n{SCENARIO 102}（宝藏 #77）",
         "desc": "在你的回合期间，移除你身上的所有负面状态。你可以在身处 {STUN} 时使用。"
     },
     "gh-91": {
-        "name": "Steel Ring",
+        "name": "钢质戒指",
         "source": "随机道具",
         "desc": "当你受到以你为目标的攻击的伤害时，在该次攻击中获得 {SHIELD} 4。"
     },
@@ -474,7 +474,7 @@ export default {
         "desc": "在盟友的攻击期间，使其整个攻击行动增加 +1 {ATTACK}"
     },
     "gh-94": {
-        "name": "Scroll of Healing",
+        "name": "治疗卷轴",
         "source": "随机道具",
         "desc": "在你的回合期间，执行一个“{HEAL} 3，{RANGE} 5”行动"
     },
@@ -489,37 +489,37 @@ export default {
         "desc": "在你移动期间，使1次移动增加 +3 {MOVE} 和 {JUMP}"
     },
     "gh-97": {
-        "name": "Endurance Footwraps",
+        "name": "耐性裹足",
         "source": "{SCENARIO 38}（宝藏 #29）",
         "desc": "如果你在回合中移动了4格或更多，执行一个“{HEAL} 1，自身”行动。"
     },
     "gh-98": {
-        "name": "Drakescale Boots",
+        "name": "亚龙鳞靴子",
         "source": "{SCENARIO 43}（宝藏 #35）",
         "desc": "你不受困难地形和有害地形的影响。"
     },
     "gh-99": {
-        "name": "Magma Waders",
+        "name": "熔岩行者",
         "source": "{SCENARIO 63}（宝藏 #12）",
         "desc": "忽略有害地形的伤害效果，并在你进入有害地形格的任何回合中执行一个“{HEAL} 2，自身”行动。"
     },
     "gh-100": {
-        "name": "Robes of Summoning",
+        "name": "召唤长袍",
         "source": "{SCENARIO 31}（宝藏 #69）",
         "desc": "在你的回合期间，执行一个“{HEAL} 2，目标为任意1个召唤盟友”行动。"
     },
     "gh-101": {
-        "name": "软皮甲",
+        "name": "第二肌肤",
         "source": "{SCENARIO 06}（宝藏 #50）",
         "desc": "从你的攻击修正牌库中移除 2 张 {-1}。"
     },
     "gh-102": {
-        "name": "Sacrificial Robes",
+        "name": "献祭长袍",
         "source": "城市事件 40",
         "desc": "在你的远程攻击期间，承受3点伤害，使你的整个攻击行动增加 +1 {ATTACK}。"
     },
     "gh-103": {
-        "name": "Drakescale Armor",
+        "name": "亚龙鳞护甲",
         "source": "{SCENARIO 34}（宝藏 #23）",
         "desc": "你免疫 {POISON} 和 {WOUND}。"
     },
@@ -529,44 +529,44 @@ export default {
         "desc": "在接下来5次来自以你为目标的攻击的伤害中，获得 {SHIELD} 1。"
     },
     "gh-105": {
-        "name": "Flea-Bitten Shawl",
+        "name": "跳蚤披肩",
         "source": "城市事件 30",
         "desc": "就敌人选定目标而言，你视为先攻值为99。",
         "faq": "该物品并不会实际改变角色的先攻值，因此不影响其召唤物的先攻值，只会改变怪物在选定目标时对该角色的判定。"
     },
     "gh-106": {
-        "name": "Necklace of Teeth",
+        "name": "尖牙项圈",
         "source": "道路事件 05",
         "desc": "每当你在你的回合期间杀死一个敌人时，执行一个“{HEAL} 1，自身”行动。"
     },
     "gh-107": {
-        "name": "Horned Helm",
+        "name": "角饰头盔",
         "source": "{SCENARIO 03}（宝藏 #65）",
         "desc": "在你的回合中移动4格或更多之后，使你本回合的下一次近战攻击增加 +1 {ATTACK}。",
         "faq": "该加成必须在获得它的回合使用，不能保留。如果你执行了多个移动能力，只要你总共移动了至少4格，就可以使用该物品。即使你在回合中多次移动4格，该物品在你的回合中也只能使用一次。"
     },
     "gh-108": {
-        "name": "Drakescale Helm",
+        "name": "亚龙鳞头盔",
         "source": "{SCENARIO 25}（宝藏 #58）",
         "desc": "每当你获得 {MUDDLE} 时，改为获得 {STRENGTHEN}。"
     },
     "gh-109": {
-        "name": "Thief's Hood",
+        "name": "盗贼兜帽",
         "source": "城市事件 62",
         "desc": "在你的 {LOOT 1} 能力期间，改为执行 {LOOT 2} 能力。"
     },
     "gh-110": {
-        "name": "Helm of the Mountain",
+        "name": "山岭头盔",
         "source": "{SCENARIO 82}（宝藏 #62）",
         "desc": "当你被攻击时，如果 {EARTH} 处于强壮状态，对攻击者施加 {IMMOBILIZE}。"
     },
     "gh-111": {
-        "name": "Wave Crest",
+        "name": "波峰项链",
         "source": "{SCENARIO 64}（宝藏 #09）",
         "desc": "当你被攻击时，如果 {ICE} 处于强壮状态，执行一个以攻击者为目标的“{PUSH} 2”行动。"
     },
     "gh-112": {
-        "name": "Ancient Drill",
+        "name": "远古钻头",
         "source": "来自 {SCENARIO 65} 的奖励\n来自 {SCENARIO 100} 的选项",
         "desc": "在你的近战攻击期间，使你的整个攻击行动增加 +2 {ATTACK} 和 {PIERCE} 2"
     },
@@ -581,33 +581,33 @@ export default {
         "desc": "在你的远程攻击期间，使整个攻击行动增加 {POISON} 和 {MUDDLE}"
     },
     "gh-115": {
-        "name": "Mountain Hammer",
+        "name": "山岭战锤",
         "source": "{SCENARIO 82}（宝藏 #62）",
         "desc": "召唤勇士之魂",
         "faq": "该卡牌视为持续加成，放在激活区，直到召唤物被杀死或该卡牌被移除（移除召唤物并消耗该物品）。如果该卡牌被刷新，而此时有来自该卡牌的活跃召唤物，该活跃召唤物消失。"
     },
     "gh-116": {
-        "name": "Fueled Falchion",
+        "name": "燃能弯刀",
         "source": "{SCENARIO 23}（宝藏 #72）",
         "desc": "在你的单目标近战攻击期间，目标及与目标相邻的所有敌人受到1点伤害"
     },
     "gh-117": {
-        "name": "Bloody Axe",
+        "name": "嗜血巨斧",
         "source": "城市事件 53\n道路事件 53",
         "desc": "在你的近战攻击期间，承受2点伤害，使你的整个攻击行动增加 +1 {ATTACK}。"
     },
     "gh-118": {
-        "name": "Staff of Elements",
+        "name": "元素法杖",
         "source": "城市事件 57",
         "desc": "在你的回合期间，创造任意1种元素。{ANY}"
     },
     "gh-119": {
-        "name": "Skull of Hatred",
+        "name": "憎恨头颅",
         "source": "来自 {SCENARIO 95} 的奖励",
         "desc": "在你的回合期间，对所有相邻敌人施加 {CURSE}。"
     },
     "gh-120": {
-        "name": "Staff of Summoning",
+        "name": "召唤法杖",
         "source": "来自 {SCENARIO 88} 的奖励",
         "desc": "在你的回合期间，{RANGE} 3 内的1个召唤盟友执行一个“{MOVE} 3”行动，由你控制该行动。"
     },
@@ -622,18 +622,18 @@ export default {
         "desc": "在你的回合期间，{LIGHT_X} 创造暗。{DARK}"
     },
     "gh-123": {
-        "name": "Ring of Skulls",
+        "name": "颅骨指环",
         "source": "{SCENARIO 04}（宝藏 #38）",
         "desc": "召唤骷髅",
         "faq": "该卡牌视为持续加成，放在激活区，直到召唤物被杀死或该卡牌被移除（移除召唤物并消耗该物品）。如果该卡牌被刷新，而此时有来自该卡牌的活跃召唤物，该活跃召唤物消失。"
     },
     "gh-124": {
-        "name": "Doomed Compass",
+        "name": "厄运罗盘",
         "source": "{SCENARIO 93}（宝藏 #54）",
         "desc": "在你的回合期间，强制 {RANGE} 5 内的1个敌人执行一个“{MOVE} 2”行动，由你控制该行动。"
     },
     "gh-125": {
-        "name": "Curious Gear",
+        "name": "怪异齿轮",
         "source": "城市事件 03\n来自 {SCENARIO 100} 的选项",
         "desc": "在你的回合期间，解除 {RANGE} 2 内的所有陷阱。"
     },
@@ -648,22 +648,22 @@ export default {
         "desc": "在你的回合期间，执行一个 {LOOT 1} 行动。"
     },
     "gh-128": {
-        "name": "Black Censer",
+        "name": "黑暗能炉",
         "source": "来自 {SCENARIO 90} 的奖励",
         "desc": "在你的回合期间，对 {RANGE} 2 内的所有敌人施加 {MUDDLE}。"
     },
     "gh-129": {
-        "name": "Black Card",
+        "name": "黑暗卡牌",
         "source": "道路事件 51",
         "desc": "在你的回合期间，在1个相邻的普通或精英敌人身上放置1个角色标记。你以该敌人为目标的所有攻击增加 +1 {ATTACK}。"
     },
     "gh-130": {
-        "name": "Helix Ring",
+        "name": "双生环戒",
         "source": "{SCENARIO 81}（宝藏 #68）",
         "desc": "在你的回合期间，{LIGHT_X} {DARK_X} 执行一个“{HEAL} 25，自身”行动"
     },
     "gh-131": {
-        "name": "Heart of the Betrayer",
+        "name": "背叛者之心",
         "source": "{SCENARIO 79}（宝藏 #52）",
         "desc": "当你被相邻的普通敌人攻击时，强制该敌人改为攻击其射程内的1个盟友。",
         "faq": "如果射程内没有其他可攻击的敌人，则无法使用该物品。"
@@ -671,11 +671,11 @@ export default {
     "gh-132": {
         "name": "动力核心",
         "source": "{SCENARIO 67}",
-        "desc": "召唤钢制魔像。",
+        "desc": "召唤 Steel Construct。",
         "faq": "该卡牌视为持续加成，放在激活区，直到召唤物被杀死或该卡牌被移除（移除召唤物并消耗该物品）。如果该卡牌被刷新，而此时有来自该卡牌的活跃召唤物，该活跃召唤物消失。"
     },
     "gh-133": {
-        "name": "Resonant Crystal",
+        "name": "共振水晶",
         "source": "{SCENARIO 84}",
         "desc": "在你的回合期间，摧毁1个相邻的障碍物。"
     },
@@ -695,17 +695,17 @@ export default {
         "desc": "在你的远程攻击期间，使你的整个攻击行动增加 +2 {ATTACK} 并获得优势，但每进行1次攻击承受2点伤害。"
     },
     "gh-137": {
-        "name": "Silent Stiletto",
+        "name": "沉默利刃",
         "source": "单人剧本奖励 - {SC}",
         "desc": "每当你执行近战攻击时，使该攻击增加 {PIERCE} 1。"
     },
     "gh-138": {
-        "name": "Stone Charm",
+        "name": "石心坠饰",
         "source": "单人剧本奖励 - {CH}",
         "desc": "在你创造障碍物的行动期间，额外创造1个障碍物，并对其应用该行动的所有效果。"
     },
     "gh-139": {
-        "name": "Psychic Knife",
+        "name": "灵能小刀",
         "source": "单人剧本奖励 - {MT}",
         "desc": "每当你执行 {AUGMENT} 行动时，使整个行动增加 +1 {ATTACK}。"
     },
@@ -715,13 +715,13 @@ export default {
         "desc": "当你受到攻击伤害时，你可以 {LIGHT_X} 在该次攻击中获得 {SHIELD} 3。"
     },
     "gh-141": {
-        "name": "Utility Belt",
+        "name": "万能腰带",
         "source": "单人剧本奖励 - {QM}",
         "desc": "在你的回合期间，你或任意1名盟友可以 {REFRESH} 你的1个已使用或已消耗的物品。",
         "faq": "该物品无法被刷新。"
     },
     "gh-142": {
-        "name": "Phasing Idol",
+        "name": "相位雕像",
         "source": "单人剧本奖励 - {SU}",
         "desc": "当你拥有的召唤物受到攻击伤害时，改为不受到任何伤害。"
     },
@@ -731,27 +731,27 @@ export default {
         "desc": "在你的回合期间，获得 {INVISIBLE} 并创造暗。{DARK}"
     },
     "gh-144": {
-        "name": "Pendant of the Plague",
+        "name": "瘟疫挂饰",
         "source": "单人剧本奖励 - {PH}",
         "desc": "在你的回合期间，对 {RANGE} 3 内的1个敌人施加 {POISON} 和 {CURSE}。"
     },
     "gh-145": {
-        "name": "Mask of Death",
+        "name": "死神面具",
         "source": "单人剧本奖励 - {BE}",
         "desc": "每当你执行近战攻击且你恰好剩余1点生命值时，使该攻击增加 +2 {ATTACK}。"
     },
     "gh-146": {
-        "name": "Master's Lute",
+        "name": "大师鲁特琴",
         "source": "单人剧本奖励 - {SS}",
         "desc": "在执行任何 {SONG} 行动之后，立即执行 {ATTACK} 2 或 {MOVE} 2 行动。"
     },
     "gh-147": {
-        "name": "Cloak of the Hunter",
+        "name": "猎人斗篷",
         "source": "单人剧本奖励 - {DS}",
         "desc": "每当你执行 {DOOM} 行动时，对该 {DOOM} 的目标施加 {MUDDLE}。"
     },
     "gh-148": {
-        "name": "Doctor's Coat",
+        "name": "手术大衣",
         "source": "单人剧本奖励 - {SB}",
         "desc": "每当盟友执行医疗包或大型医疗包行动时，其治疗增加 +1 {HEAL}。"
     },
@@ -761,12 +761,12 @@ export default {
         "desc": "如果你在回合中移动了5格或更多，创造任意1种元素。{ANY}"
     },
     "gh-150": {
-        "name": "Staff of Command",
+        "name": "指挥权杖",
         "source": "单人剧本奖励 - {BT}",
         "desc": "在执行 {COMMAND} 行动之后，从手牌中打出1张卡牌，并立即执行该卡牌与 {COMMAND} 行动相同的一侧（上半部分或下半部分）。"
     },
     "gh-151": {
-        "name": "Sword of the Sands",
+        "name": "黄沙之刃",
         "source": "单人剧本奖励 - {BS}",
         "desc": "在你的近战攻击期间，使整个攻击行动增加 {POISON} 和 {WOUND}。"
     },
@@ -828,7 +828,7 @@ export default {
     "gh-163": {
         "name": "Crystal Tiara",
         "source": "来自 {SCENARIO 110} 的奖励",
-        "desc": "当你执行充分休息或短休时，获得 {STRENGTHEN}。"
+        "desc": "当你执行充分休息或短暂休息时，获得 {STRENGTHEN}。"
     },
     "gh-164": {
         "name": "Basin of Prophecy",
@@ -836,12 +836,12 @@ export default {
         "desc": "当你从任意牌组中翻开卡牌时，额外翻开1张卡牌。"
     },
     "jotl-1": {
-        "name": "Eagle-Eye Goggles",
+        "name": "鹰眼护目镜",
         "source": "来自 {SCENARIO 2} 的奖励",
         "desc": "在你攻击时，使你整个攻击行动获得优势。"
     },
     "jotl-2": {
-        "name": "Iron Helmet",
+        "name": "铁质头盔",
         "source": "来自 {SCENARIO 2} 的奖励",
         "desc": "当你被攻击时，将敌人抽到的任何 {2X_WHITE} 攻击修正牌视为 {+0_WHITE}。"
     },
@@ -851,7 +851,7 @@ export default {
         "desc": "在你的回合期间，在本回合剩余时间内获得 {SHIELD} 1"
     },
     "jotl-4": {
-        "name": "Studded Leather",
+        "name": "嵌钉皮甲",
         "source": "来自 {SCENARIO 2} 的奖励",
         "desc": "当你被攻击时，攻击者在该次攻击中获得劣势，且你在该次攻击中获得 {SHIELD} 1。"
     },
@@ -877,7 +877,7 @@ export default {
         "desc": "在你的远程攻击期间，使1次攻击增加 {STUN}"
     },
     "jotl-9": {
-        "name": "Poison Dagger",
+        "name": "剧毒匕首",
         "source": "来自 {SCENARIO 2} 的奖励",
         "desc": "在你的近战攻击期间，使1次攻击增加 {POISON}。"
     },
@@ -887,17 +887,17 @@ export default {
         "desc": "在你的单目标近战攻击能力期间，攻击2格范围内的任意1个敌人"
     },
     "jotl-11": {
-        "name": "Healing Potion",
+        "name": "治疗药水",
         "source": "来自 {SCENARIO 2} 的奖励",
         "desc": "在你的回合期间，执行一个“{HEAL} 3，自身”行动。"
     },
     "jotl-12": {
-        "name": "Stamina Potion",
+        "name": "耐力药水",
         "source": "来自 {SCENARIO 2} 的奖励",
         "desc": "在你的回合期间，将你的1张弃牌堆中的卡牌放回手牌。"
     },
     "jotl-13": {
-        "name": "Power Potion",
+        "name": "威力药水",
         "source": "来自 {SCENARIO 2} 的奖励",
         "desc": "在你的攻击期间，使你的整个攻击行动增加 +1 {ATTACK}。"
     },
@@ -907,12 +907,12 @@ export default {
         "desc": "在你的回合期间，灌注任意1种元素。{ANY}"
     },
     "jotl-15": {
-        "name": "Amulet of Life",
+        "name": "生命项链",
         "source": "来自 {SCENARIO 9} 的奖励",
         "desc": "在你的回合期间，执行“{HEAL} 1，自身”行动。"
     },
     "jotl-16": {
-        "name": "Robes of Evocation",
+        "name": "唤醒长袍",
         "source": "来自 {SCENARIO 9} 的奖励",
         "desc": "在你的攻击期间，{ANY_X} 使你的整个攻击行动增加 +1 {ATTACK}。"
     },
@@ -937,7 +937,7 @@ export default {
         "desc": "在你的攻击期间，使1次攻击增加 {STUN}。"
     },
     "jotl-21": {
-        "name": "Hawk Helm",
+        "name": "雄鹰头盔",
         "source": "来自 {SCENARIO 15} 的奖励",
         "desc": "在你的远程攻击期间，使你的整个攻击行动增加 +1 {RANGE}。"
     },
@@ -952,7 +952,7 @@ export default {
         "desc": "在你移动期间，使1次移动增加 +2 {MOVE}。"
     },
     "jotl-24": {
-        "name": "Volatile Bomb",
+        "name": "烈性炸弹",
         "source": "来自 {SCENARIO 15} 的奖励",
         "desc": "在你的单目标远程攻击行动期间，将该攻击变为：{AOE.CONE_1_1}"
     },
@@ -972,7 +972,7 @@ export default {
         "desc": "在你的回合期间，强制 {RANGE} 3 内的1个敌人执行一个“{MOVE} 2”行动，由你控制该行动。"
     },
     "jotl-28": {
-        "name": "Flea-Bitten Shawl",
+        "name": "跳蚤披肩",
         "source": "来自 {SCENARIO 8} 的奖励\n来自 {SCENARIO 12} 的奖励",
         "desc": "就敌人选定目标而言，你视为先攻值为99。",
         "faq": "该物品并不会实际改变角色的先攻值，因此不影响其召唤物的先攻值，只会改变怪物在选定目标时对该角色的判定。"
@@ -983,7 +983,7 @@ export default {
         "desc": "当你受到攻击伤害时，在该次攻击中获得 {SHIELD} 2。"
     },
     "jotl-30": {
-        "name": "Ring of Haste",
+        "name": "疾速戒指",
         "source": "{SCENARIO 21}（宝藏 #11）",
         "desc": "在你回合结束时，从手牌中打出1张卡牌，并立即执行该卡牌的下半部分行动。"
     },
@@ -998,7 +998,7 @@ export default {
         "desc": "在你的回合期间，执行一个“{HEAL} 3，{RANGE} 5”行动。"
     },
     "jotl-33": {
-        "name": "Steel Ring",
+        "name": "钢质戒指",
         "source": "来自 {SCENARIO 22} 的奖励",
         "desc": "当你受到攻击伤害时，在该次攻击中获得 {SHIELD} 4。"
     },
@@ -1478,22 +1478,22 @@ export default {
         "desc": "在接下来2次你将要从手牌中失去1张卡牌以抵消所受伤害时，改为弃掉该卡牌并获得{WOUND}。"
     },
     "fh-1": {
-        "name": "Spyglass",
+        "name": "单筒望远镜",
         "source": "工匠铺 1",
         "desc": "在你攻击能力期间，1次攻击获得优势。"
     },
     "fh-2": {
-        "name": "Crude Helmet",
+        "name": "简陋头盔",
         "source": "工匠铺 1",
         "desc": "当你被攻击时，将敌人抽到的任何{2X_MODIFIER}攻击修正牌视为{+1_MODIFIER}。"
     },
     "fh-3": {
-        "name": "Traveling Cloak",
+        "name": "旅行披风",
         "source": "工匠铺 1",
         "desc": "在剧本开始时，你的生命值上限提升1点。"
     },
     "fh-4": {
-        "name": "Crude Hide Armor",
+        "name": "简陋毛皮护甲",
         "source": "工匠铺 1",
         "desc": "之后2次以你为目标的攻击中,攻击者获得劣势."
     },
@@ -1503,7 +1503,7 @@ export default {
         "desc": "在你移动能力期间，+1 {MOVE.fh}"
     },
     "fh-6": {
-        "name": "Flexible Slippers",
+        "name": "柔韧便鞋",
         "source": "工匠铺 1",
         "desc": "在你回合结束的拾取期间，不拾取你占据格，改为拾取1个你的相邻格。"
     },
@@ -1518,7 +1518,7 @@ export default {
         "desc": "在你回合期间，你的1次单目标近战攻击能力的目标可以是1个2格远的敌人。"
     },
     "fh-9": {
-        "name": "Protective Scepter",
+        "name": "防护权杖",
         "source": "工匠铺 1",
         "desc": "在你回合期间，使{RANGE.fh} 2内的1个盟友获得：{SHIELD.fh} 1。{ROUND}"
     },
@@ -1528,12 +1528,12 @@ export default {
         "desc": "当有敌人将要对你施加负面状态时，防止该状态"
     },
     "fh-11": {
-        "name": "Simple Charm",
+        "name": "简易咒符",
         "source": "工匠铺 2",
         "desc": "在剧本开始时，从你的攻击修正牌库中移除1张{-1_MODIFIER}修正牌。"
     },
     "fh-12": {
-        "name": "Crude Chain Armor",
+        "name": "简陋链甲",
         "source": "工匠铺 2",
         "desc": "当你因攻击而受到{DAMAGE.fh}时，本次攻击你获得{SHIELD.fh} 2。"
     },
@@ -1553,12 +1553,12 @@ export default {
         "desc": "当有敌人将要对你施加负面状态时，防止该状态"
     },
     "fh-16": {
-        "name": "Inspiring Helmet",
+        "name": "激励头盔",
         "source": "工匠铺 3",
         "desc": "在你回合期间，使所有相邻盟友获得：{MOVE.fh} 2"
     },
     "fh-17": {
-        "name": "Cured Leather Armor",
+        "name": "熟化皮革护甲",
         "source": "工匠铺 3\n财宝 50",
         "desc": "之后2次以你为目标的攻击中,攻击者获得劣势."
     },
@@ -1578,37 +1578,37 @@ export default {
         "desc": "在你回合期间，你所有远程攻击+1 {RANGE.fh}。"
     },
     "fh-21": {
-        "name": "Chain Hood",
+        "name": "链甲兜帽",
         "source": "工匠铺 4",
         "desc": "当你相邻于3个或更多敌人时，获得{SHIELD.fh} 1。"
     },
     "fh-22": {
-        "name": "Heavy Chain Armor",
+        "name": "重型链甲",
         "source": "工匠铺 4",
         "desc": "当你因攻击而受到{DAMAGE.fh}时，本次攻击你获得{SHIELD.fh} 3。"
     },
     "fh-23": {
-        "name": "Sturdy Greaves",
+        "name": "坚固胫甲",
         "source": "工匠铺 4",
         "desc": "在你回合开始时，你所有移动能力-2 {MOVE.fh}，以在本轮获得{SHIELD.fh}。{ROUND}"
     },
     "fh-24": {
-        "name": "Corrupted Blade",
+        "name": "腐化之刃",
         "source": "工匠铺 4\nWR-04",
         "desc": "在你近战攻击能力期间，对1次攻击添加{WOUND.fh}、{POISON.fh}、{MUDDLE.fh}。"
     },
     "fh-25": {
-        "name": "Soothing Scepter",
+        "name": "抚伤权杖",
         "source": "工匠铺 4",
         "desc": "在你回合期间，执行{REGENERATE.fh} {TARGET.fh} 1个盟友，{RANGE.fh} 2"
     },
     "fh-26": {
-        "name": "Truesight Lenses",
+        "name": "真视镜片",
         "source": "工匠铺 5",
         "desc": "在你攻击能力期间，将所有负面及{NULL_MODIFIER}修正牌视为{+0_MODIFIER}。"
     },
     "fh-27": {
-        "name": "Cloak of Warding",
+        "name": "界护披风",
         "source": "工匠铺 5\nSR-17",
         "desc": "在敌人的移动能力结束于你相邻位置之后，立即执行{PUSH.fh} 1 {TARGET.fh} 该敌人"
     },
@@ -1623,17 +1623,17 @@ export default {
         "desc": "在你近战攻击之后，与目标相邻的1个敌人受到{DAMAGE.fh} 2。"
     },
     "fh-30": {
-        "name": "Parrying Gauntlet",
+        "name": "招架护手",
         "source": "工匠铺 5",
         "desc": "在敌人的移动能力结束于你相邻位置之后，立即执行{ATTACK.fh} 3 {TARGET.fh} 该敌人"
     },
     "fh-31": {
-        "name": "Deathproof Charm",
+        "name": "防死咒符",
         "source": "工匠铺 6\nWR-37\nSO-11",
         "desc": "当你因任何来源受到{DAMAGE.fh}时，抵消该{DAMAGE.fh}。"
     },
     "fh-32": {
-        "name": "Shell Armor",
+        "name": "硬壳护甲",
         "source": "工匠铺 6",
         "desc": "在你回合期间，执行{WARD.fh} 自身"
     },
@@ -1644,7 +1644,7 @@ export default {
         "backDesc": "每个回合至多1次，在你移动能力期间，受到{DAMAGE.fh} 1，随后在你回合结束时将本卡牌翻面。"
     },
     "fh-34": {
-        "name": "Shrapnel Bomb",
+        "name": "破片炸弹",
         "source": "工匠铺 6",
         "desc": "在你远程攻击之后，与目标相邻的所有敌人受到{DAMAGE.fh} 2。"
     },
@@ -1654,17 +1654,17 @@ export default {
         "desc": "当你因攻击而受到{DAMAGE.fh}时，本次攻击你获得{SHIELD.fh} 1，并防止该攻击带来的任何负面状态。"
     },
     "fh-36": {
-        "name": "Plumed Helmet",
+        "name": "羽饰头盔",
         "source": "工匠铺 7",
         "desc": "当你被带有劣势的攻击攻击时，将所有{+0_MODIFIER}和{+1_MODIFIER}攻击修正牌视为{-1_MODIFIER}。"
     },
     "fh-37": {
-        "name": "Ghost Cloak",
+        "name": "幽灵披风",
         "source": "工匠铺 7\nSR-36",
         "desc": "在你回合期间，受到{DAMAGE.fh} 3以执行{INVISIBLE.fh} 自身"
     },
     "fh-38": {
-        "name": "Duelists Shoes",
+        "name": "决斗家之鞋",
         "source": "工匠铺 7",
         "desc": "在你回合期间，执行：{MOVE.fh} 2 该移动必须结束于相邻1个敌人的位置。"
     },
@@ -1679,12 +1679,12 @@ export default {
         "desc": "在你回合期间，对你的1次远程攻击+1 {ATTACK.fh}和+2 {RANGE.fh}。"
     },
     "fh-41": {
-        "name": "Intricate Charm",
+        "name": "精致咒符",
         "source": "工匠铺 8",
         "desc": "在剧本开始时，从你的攻击修正牌库中移除1张{+0_MODIFIER}和1张{-1_MODIFIER}修正牌。"
     },
     "fh-42": {
-        "name": "Ornate Armor",
+        "name": "华丽护甲",
         "source": "工匠铺 8",
         "desc": "在接下来2次来自以你为目标的攻击的{DAMAGE.fh}来源中，本次攻击你获得{SHIELD.fh} 2。"
     },
@@ -1699,17 +1699,17 @@ export default {
         "desc": "当你将要获得{POISON.fh}或{CURSE.fh}时，改为获得{BLESS.fh}。"
     },
     "fh-45": {
-        "name": "Master Scepter",
+        "name": "大师权杖",
         "source": "工匠铺 8",
         "desc": "在你回合期间，执行：{HEAL.fh} 1 {TARGET.fh} 1个盟友，{RANGE.fh} 2，{WARD.fh} "
     },
     "fh-46": {
-        "name": "Double-Lens Goggles",
+        "name": "双筒目镜",
         "source": "工匠铺 9",
         "desc": "在你攻击能力期间，所有攻击获得优势，并将所有{+0_MODIFIER}和{-1_MODIFIER}修正牌视为{+1_MODIFIER}。"
     },
     "fh-47": {
-        "name": "Robes of Doom",
+        "name": "末日长袍",
         "source": "工匠铺 9\nWR-34",
         "desc": "在接下来2次来自以你为目标的攻击的{DAMAGE.fh}来源中，受到{DAMAGE.fh} 3以使攻击者获得{BRITTLE.fh}。"
     },
@@ -1719,7 +1719,7 @@ export default {
         "desc": "在盟友以治疗能力指定你为目标之后，执行：{MOVE.fh} 2"
     },
     "fh-49": {
-        "name": "Cruel Dagger",
+        "name": "残酷匕首",
         "source": "工匠铺 9",
         "desc": "在你近战攻击能力期间，对1次攻击+1 {ATTACK.fh}并添加{WOUND.fh}。"
     },
@@ -1730,32 +1730,32 @@ export default {
         "backDesc": "在你近战攻击能力期间，对1次攻击添加{PIERCE.fh} 1并将本卡牌翻面。"
     },
     "fh-51": {
-        "name": "Spiked Collar",
+        "name": "尖刺项圈",
         "source": "随机蓝图\nSO-48",
         "desc": "在你回合期间，执行{WOUND.fh} 自身"
     },
     "fh-52": {
-        "name": "Laser Lens",
+        "name": "激光透镜",
         "source": "随机蓝图",
         "desc": "在你回合期间，{FIRE_X}以使{RANGE.fh} 4内至多2个敌人受到{DAMAGE.fh} 1。"
     },
     "fh-53": {
-        "name": "Hobnail Boots",
+        "name": "平头钉靴",
         "source": "随机蓝图",
         "desc": "在你回合期间移动4格或更多之后，本轮获得{RETALIATE.fh} 1。"
     },
     "fh-54": {
-        "name": "Restful Slippers",
+        "name": "休憩便鞋",
         "source": "随机蓝图",
         "desc": "在你短暂休息期间，不随机遗失你弃牌堆中的1张卡牌，改为从你的弃牌堆抽取3张卡牌并选择遗失其中一张。"
     },
     "fh-55": {
-        "name": "Biting Gauntlet",
+        "name": "撕咬护手",
         "source": "随机蓝图",
         "desc": "当你被相邻敌人攻击时，本次攻击你获得{RETALIATE.fh} 2。"
     },
     "fh-56": {
-        "name": "Scavenger's Magnet",
+        "name": "拾荒者磁铁",
         "source": "随机蓝图",
         "desc": "在你回合期间，{EARTH_X}以拾取1个相邻的拾取标记。"
     },
@@ -1770,17 +1770,17 @@ export default {
         "desc": "在你近战攻击能力期间，对1次攻击+2 {ATTACK.fh}。在该能力之后，获得{DISARM.fh}。"
     },
     "fh-59": {
-        "name": "Charm of Expertise",
+        "name": "专精咒符",
         "source": "随机蓝图",
         "desc": "在剧本开始时，获得1个你角色卡上尚未获得的1记号的专长，仅限本次剧本。"
     },
     "fh-60": {
-        "name": "Cloak of Many Pockets",
+        "name": "多袋披风",
         "source": "随机蓝图",
         "desc": "在剧本开始时，额外携带至多2个{SMALL-ITEM}物品。"
     },
     "fh-61": {
-        "name": "Spiked Shell",
+        "name": "尖刺壳甲",
         "source": "随机蓝图",
         "desc": "在你被相邻敌人攻击之后，立即使该敌人受到{DAMAGE.fh} X，其中X为你本次攻击的{SHIELD.fh}值。"
     },
@@ -1790,7 +1790,7 @@ export default {
         "desc": "在你移动能力期间，+1 {MOVE.fh}并获得{REGENERATE.fh}"
     },
     "fh-63": {
-        "name": "Shadow Stompers",
+        "name": "暗影重踏靴",
         "source": "随机蓝图",
         "desc": "在你移动能力期间，{DARK_X}以+2 {MOVE.fh}"
     },
@@ -1805,12 +1805,12 @@ export default {
         "desc": "在你回合期间，在{RANGE.fh} 3内的1个普通或精英敌人身上放置1个角色标记。该敌人在本剧本中获得-1 {SHIELD.fh}。{PERSISTENT}"
     },
     "fh-66": {
-        "name": "Amulet of Eternal Life",
+        "name": "永恒生命项链",
         "source": "剧本 188",
         "desc": "在你休息开始时，执行：{HEAL.fh} 1 自身"
     },
     "fh-67": {
-        "name": "Converging Lenses",
+        "name": "会聚透镜",
         "source": "未知",
         "desc": "当你被攻击时，改为对攻击+1 {ATTACK.fh}而不抽取攻击修正牌，并将本卡牌翻面。",
         "backDesc": "在你攻击能力期间，改为对1次攻击+1 {ATTACK.fh}而不抽取攻击修正牌，并将本卡牌翻面。"
@@ -1821,12 +1821,12 @@ export default {
         "desc": "在接下来3次你将受到2点或更少{DAMAGE.fh}的来源中，抵消该{DAMAGE.fh}。"
     },
     "fh-69": {
-        "name": "Feathered Cloak",
+        "name": "轻羽披风",
         "source": "剧本 32",
         "desc": "当你因攻击而受到{DAMAGE.fh}时，{WIND_X}以在本次攻击中获得{SHIELD.fh} 3。"
     },
     "fh-70": {
-        "name": "Aesther Robe",
+        "name": "以太灵长袍",
         "source": "剧本 81",
         "desc": "当你因{RETALIATE.fh}而受到{DAMAGE.fh}时，将该{DAMAGE.fh}降为1。如果已经是1，则改为降为0。"
     },
@@ -1836,32 +1836,32 @@ export default {
         "desc": "在你消灭1个敌人的能力之后，执行：{MOVE.fh} 4"
     },
     "fh-72": {
-        "name": "Oak Staff",
+        "name": "橡树法杖",
         "source": "财宝 82",
         "desc": "在你回合期间，{LIGHT_X}以执行：{BLESS.fh} {RANGE.fh} 3"
     },
     "fh-73": {
-        "name": "Energizing Baton",
+        "name": "供能指挥棒",
         "source": "剧本 44",
         "desc": "当你对1个盟友施加正面状态时，{RANGE.fh} 3内另一个不同的盟友获得相同的状态。"
     },
     "fh-74": {
-        "name": "Shock Grenades",
+        "name": "电击手雷",
         "source": "剧本 51",
         "desc": "在你回合期间，执行{MUDDLE.fh} {RANGE.fh} 2 {AOE.CONE_1_1}"
     },
     "fh-75": {
-        "name": "Rose Gauntlet",
+        "name": "玫瑰护手",
         "source": "剧本 110",
         "desc": "在{RANGE.fh} 2内的任何盟友因攻击而受到{DAMAGE.fh}之后，移除该盟友的所有负面状态，然后执行：{HEAL.fh} 3 {TARGET.fh} 该盟友，{PULL.fh} 1"
     },
     "fh-76": {
-        "name": "Horn of Command",
+        "name": "律令号角",
         "source": "财宝 70",
         "desc": "在你的1个召唤物的回合期间，由你决定它如何执行其能力。"
     },
     "fh-77": {
-        "name": "Chaos Cannon",
+        "name": "混乱手炮",
         "source": "财宝 40",
         "desc": "在你回合期间，将{RANGE.fh} 2内未被占据的格中的1个1格障碍物、有害地形、困难地形或冰冻地形板块，替换为上述列表中的另一种板块。"
     },
@@ -1872,7 +1872,7 @@ export default {
         "backDesc": "每个回合一次，在你攻击能力期间，1次攻击获得劣势，随后在你回合结束时，将本卡牌翻面。"
     },
     "fh-79": {
-        "name": "Roasted Fowl",
+        "name": "炙烤禽肉",
         "source": "剧本 93",
         "desc": "在你回合期间，你所有攻击+1 {ATTACK.fh}并执行：{HEAL.fh} 2 自身"
     },
@@ -1882,27 +1882,27 @@ export default {
         "desc": "当你将要因攻击受到4点或更少{DAMAGE.fh}时，抵消该{DAMAGE.fh}并执行{HEAL.fh} X 自身，其中X为你本应受到的伤害数值。"
     },
     "fh-81": {
-        "name": "Pain Simulacrum",
+        "name": "痛苦假偶",
         "source": "财宝 59",
         "desc": "当你因攻击受到5点或更少{DAMAGE.fh}时，{RANGE.fh} 2内的1个敌人也受到相同数值的{DAMAGE.fh}。"
     },
     "fh-82": {
-        "name": "Mechanical Cube",
+        "name": "机械立方体",
         "source": "财宝 62 和 69 均需",
         "desc": "在你移动能力期间，在你进入任意1个格之后，使所有相邻敌人获得{IMMOBILIZE.fh}。"
     },
     "fh-83": {
-        "name": "Healing Potion",
+        "name": "治疗药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{HEAL.fh} 3 自身"
     },
     "fh-84": {
-        "name": "Stamina Potion",
+        "name": "耐力药水",
         "source": "炼金坊",
         "desc": "在你回合期间，从你的弃牌堆中{RECOVER.fh} 1张1级卡牌。"
     },
     "fh-85": {
-        "name": "Power Potion",
+        "name": "威力药水",
         "source": "炼金坊",
         "desc": "在你回合期间，你所有攻击+1 {ATTACK.fh}。"
     },
@@ -1912,22 +1912,22 @@ export default {
         "desc": "在你回合期间，{ANY}"
     },
     "fh-87": {
-        "name": "Cure Potion",
+        "name": "治愈药水",
         "source": "炼金坊",
         "desc": "在你回合期间，移除你的1个负面状态。当你有{IMPAIR.fh}或{STUN.fh}时也可以使用本物品。"
     },
     "fh-88": {
-        "name": "Fireshield Potion",
+        "name": "火盾药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{RETALIATE.fh} 1 {RANGE.fh} 3 {ROUND}"
     },
     "fh-89": {
-        "name": "Stoneskin Potion",
+        "name": "石肤药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{WARD.fh} 自身"
     },
     "fh-90": {
-        "name": "Muscle Potion",
+        "name": "肌肉药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{STRENGTHEN.fh} 自身"
     },
@@ -1937,82 +1937,82 @@ export default {
         "desc": "在你回合期间，执行{BLESS.fh} 自身"
     },
     "fh-92": {
-        "name": "Renewing Potion",
+        "name": "复元药水",
         "source": "炼金坊",
         "desc": "在你回合期间，{RECOVER.fh}至多2个你已横置的物品。"
     },
     "fh-93": {
-        "name": "Glancing Potion",
+        "name": "斜击药水",
         "source": "炼金坊",
         "desc": "当你从你的攻击修正牌库中翻开{NULL_MODIFIER}攻击修正牌时，将其视为{+0_MODIFIER}。"
     },
     "fh-94": {
-        "name": "Frenzy Potion",
+        "name": "狂乱药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行：{ATTACK.fh} 2"
     },
     "fh-95": {
-        "name": "Poison Vial",
+        "name": "毒素药瓶",
         "source": "炼金坊\nSR-14",
         "desc": "在你回合期间，执行{POISON.fh} {RANGE.fh} 1"
     },
     "fh-96": {
-        "name": "Flame Vial",
+        "name": "烈焰药瓶",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{WOUND.fh} {RANGE.fh} 1"
     },
     "fh-97": {
-        "name": "Explosive Vial",
+        "name": "爆裂药瓶",
         "source": "炼金坊",
         "desc": "在你回合期间，{RANGE.fh} 2内的1个敌人受到{DAMAGE.fh} 2。"
     },
     "fh-98": {
-        "name": "Unhealthy Mixture",
+        "name": "致病混合物",
         "source": "炼金坊\nWO-10",
         "desc": "在你回合期间，执行{WOUND.fh}、{POISON.fh} 自身"
     },
     "fh-99": {
-        "name": "Major Healing Potion",
+        "name": "强效治疗药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{HEAL.fh} 6 自身"
     },
     "fh-100": {
-        "name": "Major Stamina Potion",
+        "name": "强效耐力药水",
         "source": "炼金坊",
         "desc": "在你回合期间，从你的弃牌堆中{RECOVER.fh} 1张卡牌。"
     },
     "fh-101": {
-        "name": "Major Power Potion",
+        "name": "强效威力药水",
         "source": "炼金坊",
         "desc": "在你回合期间，你所有攻击+2 {ATTACK.fh}。"
     },
     "fh-102": {
-        "name": "Major Element Potion",
+        "name": "强效元素药水",
         "source": "炼金坊",
         "desc": "在你回合期间，{ANY} {ANY}"
     },
     "fh-103": {
-        "name": "Major Cure Potion",
+        "name": "强效治愈药水",
         "source": "炼金坊",
         "desc": "在你回合期间，移除你的所有负面状态。当你有{IMPAIR.fh}或{STUN.fh}时也可以使用本物品。"
     },
     "fh-104": {
-        "name": "Swiftness Potion",
+        "name": "迅捷药水",
         "source": "炼金坊",
         "desc": "在你移动能力期间，+3 {MOVE.fh}并添加{JUMP.fh}。"
     },
     "fh-105": {
-        "name": "Major Fireshield Potion",
+        "name": "强效火盾药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{RETALIATE.fh} 2 {RANGE.fh} 3 {ROUND}"
     },
     "fh-106": {
-        "name": "Stonewall Potion",
+        "name": "石壁药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{WARD.fh} {TARGET.fh} 2个相邻盟友和自身"
     },
     "fh-107": {
-        "name": "Vigor Potion",
+        "name": "活力药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{STRENGTHEN.fh} {TARGET.fh} 2个相邻盟友和自身"
     },
@@ -2022,77 +2022,77 @@ export default {
         "desc": "在你回合期间，执行{BLESS.fh} {TARGET.fh} 2个相邻盟友和自身"
     },
     "fh-109": {
-        "name": "Major Renewing Potion",
+        "name": "强效复元药水",
         "source": "炼金坊",
         "desc": "在你回合期间，{RECOVER.fh}至多1个你已遗失的2草药药水。"
     },
     "fh-110": {
-        "name": "Precision Potion",
+        "name": "精准药水",
         "source": "炼金坊",
         "desc": "当你从你的攻击修正牌库中翻开{NULL_MODIFIER}攻击修正牌时，将其视为{+2_MODIFIER}。"
     },
     "fh-111": {
-        "name": "Major Frenzy Potion",
+        "name": "强效狂乱药水",
         "source": "炼金坊",
         "desc": "在你回合期间，执行：{ATTACK.fh} 4"
     },
     "fh-112": {
-        "name": "Hammer Potion",
+        "name": "锤子药水",
         "source": "炼金坊",
         "desc": "在你回合期间，受到{DAMAGE.fh} 10。"
     },
     "fh-113": {
-        "name": "Expertise Potion",
+        "name": "专精药水",
         "source": "炼金坊",
         "desc": "在你回合开始时，弃掉你1张已打出的卡牌，以执行你另1张已打出卡牌的上半部分和下半部分行动。至多1个行动可以触发{CONSUMED.fh}图标。"
     },
     "fh-114": {
-        "name": "Foresight Potion",
+        "name": "先见药水",
         "source": "炼金坊",
         "desc": "在你回合期间,翻开1套怪物能力牌库顶的1张卡牌.你可以将该卡牌放到该牌库底."
     },
     "fh-115": {
-        "name": "Infusion Potion",
+        "name": "灌注药水",
         "source": "炼金坊",
         "desc": "在你回合期间,忽略你打出的1个行动上的1个元素消耗符号,并获得其效果."
     },
     "fh-116": {
-        "name": "Plague Flask",
+        "name": "瘟疫烧瓶",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{POISON.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
     },
     "fh-117": {
-        "name": "Inferno Flask",
+        "name": "狱火烧瓶",
         "source": "炼金坊",
         "desc": "在你回合期间，执行{WOUND.fh} {RANGE.fh} 1 {AOE.CONE_1_1}"
     },
     "fh-118": {
-        "name": "Fulminant Flask",
+        "name": "爆闪烧瓶",
         "source": "炼金坊",
         "desc": "在你回合期间，{RANGE.fh} 2内的1个敌人受到{DAMAGE.fh} 4。"
     },
     "fh-119": {
-        "name": "Deadly Mixture",
+        "name": "致死混合物",
         "source": "炼金坊",
         "desc": "在你回合期间，执行：{WOUND.fh}、{POISON.fh}、{IMMOBILIZE.fh}、{DISARM.fh} 自身"
     },
     "fh-120": {
-        "name": "Amulet of Life",
+        "name": "生命项链",
         "source": "初始可用",
         "desc": "在你回合期间，执行{HEAL.fh} 1 自身"
     },
     "fh-121": {
-        "name": "Circlet of Elements",
+        "name": "元素头环",
         "source": "初始可用",
         "desc": "在你回合期间，执行{ANY_X}：{ANY}"
     },
     "fh-122": {
-        "name": "Warden's Robes",
+        "name": "守望者长袍",
         "source": "初始可用",
         "desc": "当你的1个召唤物因攻击而受到{DAMAGE.fh}时，该召唤物在本次攻击中获得{SHIELD.fh} 2。"
     },
     "fh-123": {
-        "name": "Leather Armor",
+        "name": "皮革护甲",
         "source": "初始可用",
         "desc": "当你被攻击时，在抽取攻击修正牌之前，攻击者在该攻击中获得劣势。"
     },
@@ -2112,7 +2112,7 @@ export default {
         "desc": "在你远程攻击能力期间，对1次攻击添加{IMMOBILIZE.fh}。"
     },
     "fh-127": {
-        "name": "Poison Dagger",
+        "name": "剧毒匕首",
         "source": "初始可用",
         "desc": "在你近战攻击能力期间，对1次攻击添加{POISON.fh}。"
     },
@@ -2122,12 +2122,12 @@ export default {
         "desc": "当你因攻击而受到{DAMAGE.fh}时，本次攻击你获得{SHIELD.fh} 1。"
     },
     "fh-129": {
-        "name": "Eagle-Eye Goggles",
+        "name": "鹰眼目镜",
         "source": "交易所 2",
         "desc": "在你攻击能力期间,所有攻击获得优势."
     },
     "fh-130": {
-        "name": "Iron Helmet",
+        "name": "铁质头盔",
         "source": "交易所 2",
         "desc": "当你被攻击时，将敌人抽到的任何{2X_MODIFIER}攻击修正牌视为{+0_MODIFIER}。"
     },
@@ -2137,12 +2137,12 @@ export default {
         "desc": "在接下来3次来自以你为目标的攻击的{DAMAGE.fh}来源中，这些攻击你获得{SHIELD.fh} 1。"
     },
     "fh-132": {
-        "name": "Cloak of Pockets",
+        "name": "配袋披风",
         "source": "交易所 2",
         "desc": "在剧本开始时，额外携带1个{SMALL-ITEM}物品。"
     },
     "fh-133": {
-        "name": "Nimble Legguards",
+        "name": "轻捷腿铠",
         "source": "交易所 2",
         "desc": "当1个相邻的盟友将要成为攻击目标时，目标改为你，无视射程和视线。"
     },
@@ -2167,22 +2167,22 @@ export default {
         "desc": "当你因攻击而受到{DAMAGE.fh}时，本次攻击你获得{SHIELD.fh} 2。"
     },
     "fh-138": {
-        "name": "Heavy Basinet",
+        "name": "重型面盔",
         "source": "交易所 3",
         "desc": "当敌人将要给予你{DISARM.fh}、{STUN.fh}或{MUDDLE.fh}时，防止该状态。"
     },
     "fh-139": {
-        "name": "Horned Helm",
+        "name": "角饰头盔",
         "source": "交易所 3",
         "desc": "在你的回合中移动4格或更多之后，对你本回合的下一次近战攻击+1 {ATTACK.fh}。"
     },
     "fh-140": {
-        "name": "Mantle of Summoning",
+        "name": "召唤斗篷",
         "source": "交易所 3",
         "desc": "在你回合期间，使你的1个召唤物获得：{SHIELD.fh} 2。{ROUND}"
     },
     "fh-141": {
-        "name": "Studded Leather",
+        "name": "嵌钉皮甲",
         "source": "交易所 3",
         "desc": "当你被攻击时，在抽取攻击修正牌之前，攻击者在该攻击中获得劣势，且本次攻击你获得{SHIELD.fh} 1。"
     },
@@ -2192,32 +2192,32 @@ export default {
         "desc": "在决定先攻顺序期间,所有能力卡牌翻开之后,你的先攻提升或降低20点."
     },
     "fh-143": {
-        "name": "Endurance Footwraps",
+        "name": "耐性裹足",
         "source": "交易所 3",
         "desc": "在你回合期间移动4格或更多之后，在该移动能力之后执行：{HEAL.fh} 1 自身。"
     },
     "fh-144": {
-        "name": "Staff of Eminence",
+        "name": "显赫法杖",
         "source": "交易所 3",
         "desc": "在你回合期间，{ANY_X}以使你所有攻击+1 {ATTACK.fh}。"
     },
     "fh-145": {
-        "name": "Versatile Dagger",
+        "name": "万用匕首",
         "source": "交易所 3",
         "desc": "当你使用能力卡牌的基础上半部分行动时，改为执行{ATTACK.fh} 3而非{ATTACK.fh} 2。"
     },
     "fh-146": {
-        "name": "Hooked Chain",
+        "name": "带钩锁链",
         "source": "交易所 3",
         "desc": "在你攻击期间，对你所有远程攻击添加{PULL.fh} 2。"
     },
     "fh-147": {
-        "name": "Mask of Terror",
+        "name": "恐怖面具",
         "source": "交易所 4",
         "desc": "在你近战攻击期间，添加{PUSH.fh} 1。"
     },
     "fh-148": {
-        "name": "Circlet of Sanctity",
+        "name": "圣洁头环",
         "source": "交易所 4",
         "desc": "在接下来3次以{RANGE.fh} 2内的1个盟友为目标的攻击之后，将本卡牌翻面。",
         "backDesc": "在你回合期间，执行：{WARD.fh} {RANGE.fh}3，然后将本卡牌翻面。"
@@ -2228,17 +2228,17 @@ export default {
         "desc": "在接下来5次来自以你为目标的攻击的{DAMAGE.fh}来源中，这些攻击你获得{SHIELD.fh} 1。"
     },
     "fh-150": {
-        "name": "Robes of the Oak",
+        "name": "橡树长袍",
         "source": "交易所 4",
         "desc": "在你回合期间，执行：{HEAL.fh} 3 {TARGET.fh} 1个盟友，{RANGE.fh} 1 "
     },
     "fh-151": {
-        "name": "Serene Sandals",
+        "name": "宁和凉鞋",
         "source": "交易所 4",
         "desc": "当你使用能力卡牌的基础下半部分行动时，改为执行{MOVE.fh} 4而非{MOVE.fh} 2。"
     },
     "fh-152": {
-        "name": "Steel Sabatons",
+        "name": "钢质铠靴",
         "source": "交易所 4",
         "desc": "在你回合结束时，如果你在本回合中移动了1格或更少，本轮获得{SHIELD.fh} 1。"
     },
@@ -2248,7 +2248,7 @@ export default {
         "desc": "在你单目标近战攻击能力期间，将该能力的目标选择改为：*line_0_1_1*"
     },
     "fh-154": {
-        "name": "Volatile Bomb",
+        "name": "烈性炸弹",
         "source": "交易所 4",
         "desc": "在你单目标远程攻击能力期间，将该能力的目标选择改为：{AOE.CONE_1_1}"
     },
@@ -2258,107 +2258,107 @@ export default {
         "desc": "当你因攻击而受到{DAMAGE.fh}时，本次攻击你获得{SHIELD.fh} 4。"
     },
     "fh-156": {
-        "name": "Moon Earring",
+        "name": "月亮耳环",
         "source": "珠宝店 1",
         "desc": "当你短暂休息时，{RECOVER.fh}至多3个你已横置的物品。"
     },
     "fh-157": {
-        "name": "Steel Ring",
+        "name": "钢质戒指",
         "source": "珠宝店 1",
         "desc": "当你因攻击而受到{DAMAGE.fh}时，本次攻击你获得{SHIELD.fh} 4。"
     },
     "fh-158": {
-        "name": "Deep Earth Brooch",
+        "name": "深邃大地胸针",
         "source": "珠宝店 1",
         "desc": "在你回合期间，执行{EARTH_OR_DARK_X}：{HEAL.fh} 3 自身，{WARD.fh}"
     },
     "fh-159": {
-        "name": "Glorious Bracelet",
+        "name": "光荣手镯",
         "source": "珠宝店 1",
         "desc": "在你的攻击能力期间有1个敌人至少受到{DAMAGE.fh} 6之后，执行：{BLESS.fh}、{BLESS.fh} 自身"
     },
     "fh-160": {
-        "name": "Sun Earring",
+        "name": "太阳耳环",
         "source": "珠宝店 2",
         "desc": "当你短暂休息时，{RECOVER.fh}至多3个你已横置的物品，并执行{HEAL.fh} 2 自身。"
     },
     "fh-161": {
-        "name": "Strategists Ring",
+        "name": "战略家戒指",
         "source": "珠宝店 2",
         "desc": "在你回合结束时,打出1张手牌并执行该卡牌上半部分或下半部分行动中的所有持续型和强制型能力."
     },
     "fh-162": {
-        "name": "Howling Ice Brooch",
+        "name": "嚎叫寒冰胸针",
         "source": "珠宝店 2",
         "desc": "在你回合期间，执行{ICE_OR_WIND_X}：{ATTACK.fh} 3 {RANGE.fh} 3，{IMMOBILIZE.fh}"
     },
     "fh-163": {
-        "name": "Stunning Bracelet",
+        "name": "晕眩手镯",
         "source": "珠宝店 2",
         "desc": "在你回合期间，使与你相邻的一半（向上取整）敌人获得{STUN.fh}。"
     },
     "fh-164": {
-        "name": "Star Earring",
+        "name": "星辰耳环",
         "source": "珠宝店 3",
         "desc": "当你短暂休息时，{RECOVER.fh}至多3个你已横置的物品，选择在休息期间遗失哪张卡牌，并执行{HEAL.fh} 2 自身。"
     },
     "fh-165": {
-        "name": "Ring of Haste",
+        "name": "疾速戒指",
         "source": "珠宝店 3",
         "desc": "在你回合结束时,打出1张手牌并执行该卡牌下半部分的行动."
     },
     "fh-166": {
-        "name": "Blazing Sun Brooch",
+        "name": "炽热太阳胸针",
         "source": "珠宝店 3",
         "desc": "在你回合期间，执行{FIRE_OR_LIGHT_X}：{ATTACK.fh} 3 {DISARM.fh}"
     },
     "fh-167": {
-        "name": "Attractive Bracelet",
+        "name": "引力手镯",
         "source": "珠宝店 3\nWR-10",
         "desc": "在敌人的回合开始时，在其决定焦点之前，执行：{PULL.fh} 4 {TARGET.fh} 该敌人，{RANGE.fh} 5，{MUDDLE.fh}"
     },
     "fh-168": {
-        "name": "Circlet of Eyes",
+        "name": "众眼头环",
         "source": "随机战利品牌库",
         "desc": "在你远程攻击能力期间，+1 {TARGET.fh}。"
     },
     "fh-169": {
-        "name": "Fateful Charm",
+        "name": "宿命咒符",
         "source": "随机战利品牌库",
         "desc": "在你回合期间,翻开你攻击修正牌库顶的1张卡牌,你可以将该卡牌放到该牌库底."
     },
     "fh-170": {
-        "name": "Eye of Truth",
+        "name": "真理之眼",
         "source": "随机战利品牌库",
         "desc": "在你回合期间,翻开每套怪物能力牌库顶的1张卡牌."
     },
     "fh-171": {
-        "name": "Rejuvenating Charm",
+        "name": "回春咒符",
         "source": "随机战利品牌库",
         "desc": "每当你失去1张卡牌以抵消{DAMAGE.fh}时，从你的弃牌堆中{RECOVER.fh}至多1张卡牌并获得{REGENERATE.fh}。"
     },
     "fh-172": {
-        "name": "Cap of Premonition",
+        "name": "预感盖帽",
         "source": "随机战利品牌库",
         "desc": "在你回合期间,查看你攻击修正牌库顶的4张卡牌,并按任意顺序放回."
     },
     "fh-173": {
-        "name": "Multi Colored Cloak",
+        "name": "多色披风",
         "source": "随机战利品牌库",
         "desc": "被攻击时：{ANY}。"
     },
     "fh-174": {
-        "name": "Magnetic Cape",
+        "name": "磁力披肩",
         "source": "随机战利品牌库",
         "desc": "在你回合期间，执行：{TELEPORT.fh} 20 该传送必须结束于相邻你某个盟友的格。"
     },
     "fh-175": {
-        "name": "Mirrored Armor",
+        "name": "镜面护甲",
         "source": "随机战利品牌库",
         "desc": "当你因攻击而受到{DAMAGE.fh}时，攻击者受到等量的{DAMAGE.fh}。"
     },
     "fh-176": {
-        "name": "Blinking Cape",
+        "name": "闪烁披肩",
         "source": "随机战利品牌库",
         "desc": "在你回合期间，执行：{TELEPORT.fh} 4 该传送必须结束于相邻你某个敌人的格。"
     },
@@ -2383,7 +2383,7 @@ export default {
         "desc": "当你一次拾取2个或更多标记时，执行：{BLESS.fh} 自身。"
     },
     "fh-181": {
-        "name": "Translocation Rod",
+        "name": "易位短杖",
         "source": "随机战利品牌库",
         "desc": "在你回合期间，指定2个盟友或任意2个普通或精英怪物。每个被指定的角色同时{TELEPORT.fh}到另一个被指定角色所占据的格。"
     },
@@ -2393,7 +2393,7 @@ export default {
         "desc": "在你近战攻击之后，在目标身上放置1个角色标记。该目标失去{FLYING.fh}。{PERSISTENT}"
     },
     "fh-183": {
-        "name": "Decanter of Mists",
+        "name": "迷雾醒酒瓶",
         "source": "随机战利品牌库\n财宝 16",
         "desc": "在你回合期间，所有角色的所有远程攻击获得劣势并+1 {RANGE.fh}，持续本轮。{ROUND}"
     },
@@ -2403,27 +2403,27 @@ export default {
         "desc": "在你多目标近战攻击能力期间，+1 {TARGET.fh}。"
     },
     "fh-185": {
-        "name": "Mirrored Knife",
+        "name": "镜面小刀",
         "source": "随机战利品牌库",
         "desc": "在你近战攻击能力期间，对1次攻击添加你拥有的除{BRITTLE.fh}、{BANE.fh}和{STUN.fh}之外的所有负面状态。"
     },
     "fh-186": {
-        "name": "Wild Growth Seeds",
+        "name": "野生种子",
         "source": "随机战利品牌库",
         "desc": "在你回合期间,在相邻的空格中创造1个1格的障碍物."
     },
     "fh-187": {
-        "name": "Dangerous Gear",
+        "name": "危险齿轮",
         "source": "随机战利品牌库",
         "desc": "在你回合期间，在相邻的空格中创造1个{DAMAGE.fh} 3陷阱。"
     },
     "fh-188": {
-        "name": "Freezing Crystal",
+        "name": "冻结水晶",
         "source": "随机战利品牌库",
         "desc": "在你回合期间,在没有特征的相邻格中创造1块1格的有害地形,冰冻地形或水域板块."
     },
     "fh-189": {
-        "name": "Ring of the Night",
+        "name": "黑夜戒指",
         "source": "随机战利品牌库",
         "desc": "在你回合期间，执行{DARK_X} {ANY_X}：{INVISIBLE.fh} 自身"
     },
@@ -2433,22 +2433,22 @@ export default {
         "desc": "在你回合期间，在{RANGE.fh} 3内的1个普通或精英敌人身上放置1个角色标记。该敌人所有攻击-1 {ATTACK.fh}。{PERSISTENT}。"
     },
     "fh-191": {
-        "name": "Corrupted Scroll",
+        "name": "腐化卷轴",
         "source": "随机战利品牌库",
         "desc": "在你回合期间，执行{HEAL.fh} 5 {RANGE.fh} 5 {POISON.fh} {TARGET.fh} 该治疗能力的目标"
     },
     "fh-192": {
-        "name": "Enticing Bell",
+        "name": "诱人铃铛",
         "source": "随机战利品牌库",
         "desc": "在你回合结束时，指定{RANGE.fh} 3内的1个敌人。你是它的首要焦点，且本轮它在决定移动时不会避开负面格。{ROUND}"
     },
     "fh-193": {
-        "name": "Mind Thieving Helmet",
+        "name": "心灵窃取头盔",
         "source": "剧本 121",
         "desc": "在你回合期间，控制{RANGE.fh} 3内的1个敌人：{ATTACK.fh} 3"
     },
     "fh-194": {
-        "name": "Temporal Amulet",
+        "name": "时光项链",
         "source": "剧本 125",
         "desc": "在决定先攻顺序期间,所有能力卡牌翻开之后,一种怪物组别的先攻提升或降低30点."
     },
@@ -2458,17 +2458,17 @@ export default {
         "desc": "在你回合期间，对你的1次远程攻击+1 {RANGE.fh}并添加{PIERCE.fh} 1。"
     },
     "fh-196": {
-        "name": "Choker of Sacrifice",
+        "name": "牺牲颈环",
         "source": "SR-26",
         "desc": "在你回合期间，弃置1张拾取卡牌（随机道具除外）以执行：{HEAL.fh} 5 {RANGE.fh} 2，{WARD.fh}"
     },
     "fh-197": {
-        "name": "Aesther Diadem",
+        "name": "以太灵冠冕",
         "source": "WO-77",
         "desc": "在决定先攻顺序之后,将你1张手牌与1张你打出的卡牌交换.你的先攻顺序不受影响."
     },
     "fh-198": {
-        "name": "Hunter's Necklace",
+        "name": "猎手吊链",
         "source": "WR-36",
         "desc": "在你回合期间，执行：{PULL.fh} 3 {RANGE.fh} 4"
     },
@@ -2478,18 +2478,18 @@ export default {
         "desc": "在剧本开始时起效,当决定怪物焦点时,你自己视为在先攻顺序上早于你的召唤物,持续至整场剧本结束."
     },
     "fh-200": {
-        "name": "Eventide Scepter",
+        "name": "日暮权杖",
         "source": "宝藏 4",
         "desc": "在你对盟友执行治疗能力期间，消耗{LIGHT_X}，为1次治疗附加{REGENERATE.fh}，并将本卡牌翻面。",
         "backDesc": "在你攻击能力期间，消耗{DARK_X}，为1次攻击附加{CURSE.fh}，并将本卡牌翻面。"
     },
     "fh-201": {
-        "name": "Wave Blade",
+        "name": "波浪之刃",
         "source": "剧本 76\n剧本 77",
         "desc": "在你占据或相邻于带有水域板块的格子时执行攻击能力期间，为1次攻击附加{PUSH.fh} 1和{IMMOBILIZE.fh}。"
     },
     "fh-202": {
-        "name": "Giant Piranha Pig Spine",
+        "name": "巨型食人鱼豚脊椎",
         "source": "剧本 83",
         "desc": "在你近战攻击能力期间，为1次攻击附加{PIERCE.fh} 2和{WOUND.fh}。"
     },
@@ -2524,7 +2524,7 @@ export default {
         "desc": "在你攻击能力期间，为1次以当前生命值为4或更低的敌人为目标的攻击附加{PIERCE.fh} 3。"
     },
     "fh-209": {
-        "name": "Sword of Mastery",
+        "name": "战绩之剑",
         "source": "SR-35",
         "desc": "在你近战攻击能力期间，使1次攻击获得优势。你每完成1个精通，还可为该攻击附加下列效果之一：+1 {ATTACK.fh}、{WOUND.fh}或{POISON.fh}。"
     },
@@ -2544,48 +2544,48 @@ export default {
         "desc": "在决定先攻顺序之后，选择1种元素。本轮任何怪物都不能灌注或消耗该元素。{ROUND}"
     },
     "fh-213": {
-        "name": "Key of Seasons",
+        "name": "季节钥匙",
         "source": "剧本 106",
         "desc": "在你攻击能力期间，消耗{ICE_X}，为1次攻击附加{IMMOBILIZE.fh}，然后在你回合结束时将本卡牌翻面。",
         "backDesc": "在你攻击能力期间，消耗{FIRE_X}，为1次攻击附加{WOUND.fh}，然后在你回合结束时将本卡牌翻面。"
     },
     "fh-214": {
-        "name": "Cup of Ventillion",
+        "name": "梵帝灵之杯",
         "source": "剧本 107",
         "desc": "在你治疗能力期间,在1次治疗中增加1个你拥有的正面状态."
     },
     "fh-215": {
-        "name": "Befuddling Mug",
+        "name": "烂醉酒杯",
         "source": "剧本 128",
         "desc": "在你回合期间，为你的所有攻击附加+1 {ATTACK.fh}和{MUDDLE.fh}。在你回合结束时，执行：{MUDDLE.fh} 自身"
     },
     "fh-216": {
-        "name": "Tome of Elements",
+        "name": "元素宝典",
         "source": "SR-48 或 WR-46 事件链",
         "desc": "在你回合期间，{FIRE}{ICE}{WIND}{EARTH}{LIGHT}{DARK}在本轮结束时，元素不会从强盛变为衰弱。{ROUND}"
     },
     "fh-217": {
-        "name": "Tome of Time",
+        "name": "时间宝典",
         "source": "SR-49 或 WR-47 事件链",
         "desc": "在决定先攻顺序期间,所有能力卡牌翻开之后,混洗怪物能力牌库并为每一种激活的怪物组别抽取一张新的卡牌."
     },
     "fh-218": {
-        "name": "Tome of Life",
+        "name": "生命宝典",
         "source": "SR-47 或 WR-45 事件链",
         "desc": "在你回合期间，移除所有单位的所有状态，然后使所有单位获得：{HEAL.fh} 2 自身"
     },
     "fh-219": {
-        "name": "Tome of Conflict",
+        "name": "冲突宝典",
         "source": "剧本 134\n",
         "desc": "在你回合期间，所有单位获得{STRENGTHEN.fh}。在任意怪物被击杀之前，每次攻击抽取的第一张攻击修正牌视为滚动牌。{PERSISTENT}"
     },
     "fh-220": {
-        "name": "Belaras Quill",
+        "name": "贝拉热的鹅毛笔",
         "source": "剧本 135",
         "desc": "在你回合期间，{RECOVER.fh}至多1件宝典道具。"
     },
     "fh-221": {
-        "name": "Ice Shiv",
+        "name": "寒冰刺刃",
         "source": "宝藏 84",
         "desc": "在你近战攻击能力期间，消耗{ICE_X}，为1次攻击附加{PIERCE.fh} 3。"
     },
@@ -2595,29 +2595,29 @@ export default {
         "desc": "在你回合期间，弃置2张手牌以执行：{HEAL.fh} 6 自身"
     },
     "fh-223": {
-        "name": "Lightning Rod",
+        "name": "闪电短杖",
         "source": "宝藏 26",
         "desc": "在决定先攻顺序之后，本轮所有怪物在确定焦点时，都视你为先攻顺序第一。{ROUND}"
     },
     "fh-224": {
-        "name": "Armor of Empathy",
+        "name": "共情护甲",
         "source": "剧本 60",
         "desc": "在之后3次以你为目标的攻击之后,将本卡牌翻面.",
         "backDesc": "在你回合期间，执行：{HEAL.fh} 3 {TARGET.fh} 1个盟友，{RANGE.fh} 3，{BLESS.fh}，然后将本卡牌翻面。"
     },
     "fh-225": {
-        "name": "Algox Carving",
+        "name": "冰角雕刻品",
         "source": "宝藏 41",
         "desc": "在你近战攻击能力期间，消耗{EARTH_X}，为1次攻击附加+1 {ATTACK.fh}，并将本卡牌翻面。",
         "backDesc": "在你近战攻击能力期间，消耗{WIND_X}，为1次攻击附加{PUSH.fh} 2，并将本卡牌翻面。"
     },
     "fh-226": {
-        "name": "Unfettered Arm",
+        "name": "自由机手臂",
         "source": "宝藏 81\nWR-22",
         "desc": "在你攻击能力期间，将你抽取的下一张攻击修正牌的数值翻倍。{2X_MODIFIER}和{NULL_MODIFIER}修正牌不受影响。"
     },
     "fh-227": {
-        "name": "Data Drive",
+        "name": "数据驱动器",
         "source": "宝藏 7",
         "desc": "当你短暂休息时,将你弃牌堆中一半(向下取整)卡牌放在本物品上,照正常规则遗失剩余卡牌中的随机1张,随后抽取本物品上所有的卡牌."
     },
@@ -2627,7 +2627,7 @@ export default {
         "desc": "在你回合期间，在{RANGE.fh} 2范围内打开1扇未上锁的门。"
     },
     "fh-229": {
-        "name": "Exquisite Map",
+        "name": "精细地图",
         "source": "SO-42",
         "desc": "在你回合期间，使{RANGE.fh} 3范围内的1个盟友获得：{MOVE.fh} 3"
     },
@@ -2637,12 +2637,12 @@ export default {
         "desc": "在你抽取了一张拾取卡牌之后,抽取额外1张拾取卡牌,保留其中一张,并将另一张放到拾取牌库顶部或底部."
     },
     "fh-231": {
-        "name": "Skinning Knife",
+        "name": "剥皮小刀",
         "source": "WR-16",
         "desc": "当你获得拾取标记时，改为获得3张毛皮，而不是抽取拾取卡牌。"
     },
     "fh-232": {
-        "name": "Orchid Wand",
+        "name": "兰晶魔杖",
         "source": "WR-12",
         "desc": "在你回合期间，失去1点士气以执行：{BLESS.fh} {TARGET.fh} 所有盟友和自身"
     },
@@ -2652,7 +2652,7 @@ export default {
         "desc": "在你的盟友远程攻击能力期间，为1次攻击附加{MUDDLE.fh}和{CURSE.fh}。"
     },
     "fh-234": {
-        "name": "ooze vial",
+        "name": "软泥药瓶",
         "source": "剧本 84",
         "desc": "在你回合期间，在{RANGE.fh} 2范围内的1个空格中创造1个{POISON.fh}、{IMMOBILIZE.fh}陷阱。"
     },
@@ -2667,12 +2667,12 @@ export default {
         "desc": "在你回合期间，从手牌中遗失1张卡牌，以{RECOVER.fh}你拾取牌堆中1张等级相同或更低的卡牌。"
     },
     "fh-237": {
-        "name": "Mesmerizing Seashell",
+        "name": "迷惑海贝",
         "source": "剧本 131",
         "desc": "在你回合期间，选择六个方向之一。你和{RANGE.fh} 2范围内的所有单位被强制同时向所选方向移动2格。"
     },
     "fh-238": {
-        "name": "Cracked Idol",
+        "name": "开裂神像",
         "source": "剧本 133",
         "desc": "当你将因遭受{DAMAGE.fh}而筋疲力尽时，改为将你的生命值设为1。"
     },
@@ -2682,32 +2682,32 @@ export default {
         "desc": "在你回合期间，{RANGE.fh} 2范围内的所有盟友和敌人遭受{DAMAGE.fh} 1。"
     },
     "fh-240": {
-        "name": "Demons Gem",
+        "name": "恶魔宝石",
         "source": "SO-53 事件链",
         "desc": "当你剧本失败时，如果你完成了战斗目标，仍可获得其所有{CHECK}。"
     },
     "fh-241": {
-        "name": "Shimmering Powder",
+        "name": "微光粉末",
         "source": "SR-26",
         "desc": "在你抽取了一张拾取卡牌之后,抽取额外一张拾取卡牌."
     },
     "fh-242": {
-        "name": "Lucky Dice",
+        "name": "幸运骰子",
         "source": "SO-4",
         "desc": "在你攻击能力期间,将你之后抽出的3张攻击修正卡牌视为连翻"
     },
     "fh-243": {
-        "name": "Cursed Rock",
+        "name": "受咒岩石",
         "source": "WR-3",
         "desc": "本道具不能出售，且必须带入并在每个剧本中使用。在剧本开始时执行：{CURSE.fh}，{BLESS.fh} 自身"
     },
     "fh-244": {
-        "name": "Ember Energy Source",
+        "name": "余烬能量源",
         "source": "剧本 33",
         "desc": "在你回合期间，将你1个能力上印刷的{ATTACK.fh}、{MOVE.fh}、{TARGET.fh}或{RANGE.fh}数值提高1。"
     },
     "fh-245": {
-        "name": "Ancient Coin",
+        "name": "远古硬币",
         "source": "剧本 136\n建筑 74\n战利品卡牌",
         "desc": ""
     },
@@ -2717,22 +2717,22 @@ export default {
         "desc": ""
     },
     "fh-247": {
-        "name": "Trainer's Net",
+        "name": "训练者之网",
         "source": "兽栏",
         "desc": "在你回合期间,捕获1个生命值为1或2的相邻敌人."
     },
     "fh-248": {
-        "name": "Wanderer's Club",
+        "name": "漫游骨杖",
         "source": "单人剧本奖励 - {DF}",
         "desc": "在你攻击能力期间，将你1个持续型能力上的1个角色标记向后移动1格，并为1次攻击附加+X {ATTACK.fh}，X为生效的持续型能力数量。"
     },
     "fh-249": {
-        "name": "Recalibration Trigger",
+        "name": "校准扳机",
         "source": "单人剧本奖励 - {BB}",
         "desc": "在你回合期间，执行以下两个能力之一：从手牌中遗失1张卡牌以获得3个{TIME_ICON}。-2个{TIME_ICON}：{RECOVER.fh}至多2张你的弃牌"
     },
     "fh-250": {
-        "name": "Spear of Justice",
+        "name": "审判之矛",
         "source": "单人剧本奖励 - {BN}",
         "desc": "在你回合期间，执行：{ATTACK.fh} 2 {RANGE.fh} 3。你的所有旗帜的加成视为额外作用于攻击目标所在的格子，且该格本轮视为被盟友占据。{ROUND}"
     },
@@ -2742,18 +2742,18 @@ export default {
         "desc": "在相邻格放置1个{SHADOW_ICON}。{DARK}"
     },
     "fh-252": {
-        "name": "Black Earth Codex",
+        "name": "黑壤法典",
         "source": "单人剧本奖励 - {BO}",
         "desc": "在你的任意召唤物接下来3次死亡时，{EARTH_OR_DARK}并执行：{HEAL.fh} 2 自身"
     },
     "fh-253": {
-        "name": "Mask of Duality",
+        "name": "双生假面",
         "source": "单人剧本奖励 - {GE}",
         "desc": "在你处于{RANGED_ICON}时执行远程攻击能力期间，使1次攻击获得优势，然后将本卡牌翻面。",
         "backDesc": "当敌人对你执行攻击而你处于{MELEE_ICON}时，攻击者获得劣势，然后将本卡牌翻面。"
     },
     "fh-254": {
-        "name": "Ancestral Blade",
+        "name": "先祖魂刃",
         "source": "单人剧本奖励 - {IF}",
         "desc": "在你回合期间，激活你所有的{INFUSION_ICON}，如同你刚刚执行了{INFUSION_ICON}行动。"
     },
@@ -2763,49 +2763,49 @@ export default {
         "desc": "在你回合期间，你可以在{RANGE.fh} 2范围内的1个空格中创造1个1格障碍物或有害地形板块。{FIRE_OR_EARTH}"
     },
     "fh-256": {
-        "name": "Sonorous Shard",
+        "name": "共鸣晶簇",
         "source": "单人剧本奖励 - {SH}",
         "desc": "获得3个{RESONANCE_ICON}。{WIND_OR_EARTH}"
     },
     "fh-257": {
-        "name": "Sly Camouflage",
+        "name": "狡影迷彩",
         "source": "单人剧本奖励 - {TA}",
         "desc": "当你创造陷阱时，在其上放置1个角色标记。怪物不将该陷阱视为负面。当你{RECOVER.fh}本道具时，移除该标记。{PERSISTENT}"
     },
     "fh-258": {
-        "name": "Skull of Agony",
+        "name": "痛楚颅器",
         "source": "单人剧本奖励 - {PC}",
         "desc": "当你遭受伤害时，如果你的生命值降至最大值的一半以下，执行：{HEAL.fh} 7 自身，{CURSE.fh}。该治疗不受负面状态影响，也不能移除负面状态。"
     },
     "fh-259": {
-        "name": "Storm Carving",
+        "name": "风暴铭纹",
         "source": "单人剧本奖励 - {SD}",
         "desc": "在你为盟友授予的攻击能力期间，为其1次攻击附加{PUSH.fh} 2，然后将本卡牌翻面。",
         "backDesc": "在你的攻击能力期间，为1次攻击附加{PULL.fh} 2，然后将本卡牌翻面。"
     },
     "fh-260": {
-        "name": "Freezing Orb",
+        "name": "霜凝法球",
         "source": "单人剧本奖励 - {FF}",
         "desc": "在你攻击能力期间，为1次攻击附加{BRITTLE.fh}，并在目标所占据的无特征格中创造1块1格冰冻地形板块。"
     },
     "fh-261": {
-        "name": "Energized Module",
+        "name": "聚能模组",
         "source": "单人剧本奖励 - {HV}",
         "desc": "移除你1个召唤物上的所有伤害和负面状态，然后向该召唤物{TRANSFER_ICON}。"
     },
     "fh-262": {
-        "name": "Exhaust Boots",
+        "name": "过载战靴",
         "source": "单人剧本奖励 - {ME}",
         "desc": "在你移动能力期间，当你处于{PRESSURE_HIGH_ICON}或{PRESSURE_OVER_ICON}时，附加+1 {MOVE.fh}，然后在你回合结束时将本卡牌翻面。",
         "backDesc": "在你回合期间，当你处于{PRESSURE_LOW_ICON}时，执行：{MUDDLE.fh} {RANGE.fh} 1，然后在你回合结束时将本卡牌翻面。"
     },
     "fh-263": {
-        "name": "Warlords Skull",
+        "name": "督军之颅",
         "source": "单人剧本奖励 - {DT}",
         "desc": "每当你获得{INVISIBLE.fh}，或在你拥有{INVISIBLE.fh}时执行传送能力后，在该能力之后执行：{MUDDLE.fh} {RANGE.fh} 1"
     },
     "fh-264": {
-        "name": "Spiraled Medallion",
+        "name": "螺旋护符",
         "source": "单人剧本奖励 - {CR}",
         "desc": "当你休息时，可以在你的生效区域中保留至多3张{TIDE_ICON}卡牌。{LIGHT_OR_DARK}"
     },
@@ -2857,7 +2857,7 @@ export default {
         "desc": "当你受到攻击时，在抽取攻击修正卡牌之前使用，攻击者该次攻击获得劣势。"
     },
     "gh2-5": {
-        "name": "Scouting Lens",
+        "name": "侦察目镜",
         "source": "繁荣 1",
         "desc": "在你攻击能力期间，为1次攻击附加{PIERCE.fh} 1。"
     },
@@ -2877,12 +2877,12 @@ export default {
         "desc": "当你因攻击遭受{DAMAGE.fh}时，为该攻击获得{SHIELD.fh} 1。"
     },
     "gh2-9": {
-        "name": "Focusing Rod",
+        "name": "聚焦短棒",
         "source": "繁荣 1",
         "desc": "在你回合期间，如果你执行过带有{LOST.fh}的行动，执行：{HEAL.fh} 1，{RANGE.fh} 3"
     },
     "gh2-10": {
-        "name": "Simple Bow",
+        "name": "简易弓",
         "source": "繁荣 1",
         "desc": "在你远程攻击能力期间，1次攻击获得优势。"
     },
@@ -3015,9 +3015,9 @@ export default {
         "desc": "当你因攻击遭受{DAMAGE.fh}时，为该攻击获得{SHIELD.fh} 2。"
     },
     "gh2-36": {
-        "name": "Moon Earing",
+        "name": "月之耳坠",
         "source": "繁荣 4\n城市事件 6",
-        "desc": "当你短休时，{RECOVER.fh}至多3件你已消耗的道具。"
+        "desc": "当你短暂休息时，{RECOVER.fh}至多3件你已横置的道具。"
     },
     "gh2-37": {
         "name": "强效治疗药水",
@@ -3035,12 +3035,12 @@ export default {
         "desc": "召唤骷髅"
     },
     "gh2-40": {
-        "name": "Shadow Amor",
+        "name": "暗影盔甲",
         "source": "繁荣 4",
         "desc": "当你因攻击遭受{DAMAGE.fh}时，抵消该{DAMAGE.fh}并灌注{DARK}。"
     },
     "gh2-41": {
-        "name": "Kinetic Treads",
+        "name": "动能踏靴",
         "source": "繁荣 5",
         "desc": "在你移动能力结束时，使1个相邻的盟友获得：{MOVE.fh} 2"
     },
@@ -3055,7 +3055,7 @@ export default {
         "desc": "在你回合期间，为你所有的远程攻击附加+1 {RANGE.fh}。"
     },
     "gh2-44": {
-        "name": "Precision Bow",
+        "name": "精密弓",
         "source": "繁荣 5",
         "desc": "在你远程攻击能力之后，执行：{ATTACK.fh} 1，{TARGET.fh} 1个该攻击能力的目标，不限{RANGE.fh}，{PIERCE.fh} 1"
     },
@@ -3065,7 +3065,7 @@ export default {
         "desc": "在你回合期间，{ANY}{ANY}。"
     },
     "gh2-46": {
-        "name": "Light Targe",
+        "name": "小圆盾",
         "source": "繁荣 5",
         "desc": "当你因攻击遭受{DAMAGE.fh}时，为该攻击获得{SHIELD.fh} 1。在该攻击之后、任何{RETALIATE.fh}之前，执行：{MOVE.fh} 1"
     },
@@ -3090,14 +3090,14 @@ export default {
         "desc": "在你回合期间，执行：{HEAL.fh} 3，1个盟友，{RANGE.fh} 1"
     },
     "gh2-51": {
-        "name": "Heavy Mace",
+        "name": "重型锏",
         "source": "繁荣 6\n道路事件 8",
         "desc": "在你被相邻敌人攻击后，执行：{ATTACK.fh} 1，被攻击的敌人。该攻击不受{RETALIATE.fh}影响。"
     },
     "gh2-52": {
         "name": "太阳耳环",
         "source": "繁荣 6",
-        "desc": "当你短休时，{RECOVER.fh}至多3件你已消耗的道具，并执行：{HEAL.fh} 2，自身"
+        "desc": "当你短暂休息时，{RECOVER.fh}至多3件你已横置的道具，并执行：{HEAL.fh} 2，自身"
     },
     "gh2-53": {
         "name": "强效威力药水",
@@ -3153,7 +3153,7 @@ export default {
     "gh2-63": {
         "name": "星辰耳环",
         "source": "繁荣 8\n{SCENARIO 54}（宝藏 #03）",
-        "desc": "当你短休时，{RECOVER.fh}至多3件你已消耗的道具，选择休息期间遗失哪张卡牌，并执行：{HEAL.fh} 2，自身"
+        "desc": "当你短暂休息时，{RECOVER.fh}至多3件你已横置的道具，选择休息期间遗失哪张卡牌，并执行：{HEAL.fh} 2，自身"
     },
     "gh2-64": {
         "name": "强能护身符",
@@ -3171,7 +3171,7 @@ export default {
         "desc": "在你回合期间，执行：{INVISIBLE.fh}，自身"
     },
     "gh2-67": {
-        "name": "Spiked Shoes",
+        "name": "尖刃鞋",
         "source": "繁荣 9",
         "desc": "当你使用能力卡牌的基础下半部分行动时，你可以改为执行{ATTACK.fh} 3，而不是{MOVE.fh} 2。"
     },
@@ -3186,17 +3186,17 @@ export default {
         "desc": "在接下来5次以你为目标的攻击造成的{DAMAGE.fh}来源中，为这些攻击获得{SHIELD.fh} 1。"
     },
     "gh2-70": {
-        "name": "Standard Rations",
+        "name": "定制军粮",
         "source": "军方声望 15",
         "desc": "每当你从充分休息中治疗时，附加+2 {HEAL.fh}。"
     },
     "gh2-71": {
-        "name": "Mastercraft Crossbow",
+        "name": "大师弩",
         "source": "军方声望 17",
         "desc": "在你远程攻击能力期间，为1次攻击附加{WOUND.fh}。与该目标相邻、且比该目标离你更远的1个敌人遭受{DAMAGE.fh} 2。"
     },
     "gh2-72": {
-        "name": "Commander's Cap",
+        "name": "指挥官帽",
         "source": "军方声望 19",
         "desc": "与你相邻的盟友执行的下三次攻击获得优势。然后将本卡牌翻面。",
         "backDesc": "在你于{RANGE.fh} 2范围内有1个或更多盟友时执行的接下来3次攻击能力之后，将本卡牌翻面。"
@@ -3207,18 +3207,18 @@ export default {
         "desc": "在你回合期间，使你的1个召唤物获得：{SHIELD.fh} 2 {ROUND}"
     },
     "gh2-74": {
-        "name": "Concealed Dagger",
+        "name": "隐匿匕首",
         "source": "商人公会声望 15",
         "desc": "在你回合期间，在1个相邻的敌人身上放置1个角色标记。在该敌人每个回合开始时，其遭受{DAMAGE.fh} 1。当该敌人死亡时，将本卡牌翻面。{PERSISTENT}",
         "backDesc": "将角色标记放置到该敌人死亡时占据的格子中。你可以拾取该角色标记来将本卡牌翻面。"
     },
     "gh2-75": {
-        "name": "Opulent Hood",
+        "name": "华丽兜帽",
         "source": "商人公会声望 17",
         "desc": "在你回合期间，使1个相邻的盟友获得：{ATTACK.fh} 1，{PUSH.fh} 1"
     },
     "gh2-76": {
-        "name": "Merchant's Insignia",
+        "name": "商人徽章",
         "source": "商人公会声望 19",
         "desc": "每完成一个剧本，获得10金币。"
     },
@@ -3238,7 +3238,7 @@ export default {
         "desc": "在你攻击能力期间，为1次攻击附加{POISON.fh}、{STUN.fh}和{CURSE.fh}。"
     },
     "gh2-80": {
-        "name": "Demonic Skull",
+        "name": "恶魔颅骨",
         "source": "恶魔声望 19",
         "desc": "在你回合期间，{ANY}并在你回合结束时将本卡牌翻面。",
         "backDesc": "当你消灭一个怪物，在你的回合结束时将本卡牌翻面。"
@@ -3249,7 +3249,7 @@ export default {
         "desc": "在你近战攻击能力期间，消耗{ICE_X}，为1次攻击附加+2 {ATTACK.fh}。"
     },
     "gh2-82": {
-        "name": "风暴之人",
+        "name": "风暴之刃",
         "source": "随机道具",
         "desc": "在你近战攻击能力期间，消耗{WIND_X}，为1次攻击附加+2 {ATTACK.fh}。"
     },
@@ -3304,7 +3304,7 @@ export default {
         "desc": "在你攻击能力期间，为1次攻击附加{STUN.fh}。"
     },
     "gh2-93": {
-        "name": "Scroll of Ferocity",
+        "name": "力量卷轴",
         "source": "随机道具",
         "desc": "在你回合期间，使{RANGE.fh} 5范围内的1个盟友获得：{ATTACK.fh} 2"
     },
@@ -3314,12 +3314,12 @@ export default {
         "desc": "在你回合期间，执行：{HEAL.fh} 3，{RANGE.fh} 5"
     },
     "gh2-95": {
-        "name": "Scroll of Shielding",
+        "name": "防护卷轴",
         "source": "随机道具",
         "desc": "当{RANGE.fh} 5范围内的1个盟友因攻击遭受{DAMAGE.fh}时，使其为该攻击获得{SHIELD.fh} 3。"
     },
     "gh2-96": {
-        "name": "Scroll of Swiftness",
+        "name": "迅捷卷轴",
         "source": "随机道具",
         "desc": "在{RANGE.fh} 5范围内的1个盟友的移动能力期间，附加+1 {MOVE.fh}和{JUMP.fh}。"
     },
@@ -3340,7 +3340,7 @@ export default {
         "desc": "在你回合期间，执行：{ATTACK.fh} 2，{RANGE.fh} 3"
     },
     "gh2-100": {
-        "name": "Charged Boots",
+        "name": "充能靴",
         "source": "{SCENARIO 71}（宝藏 #29）",
         "desc": "在你下3次未执行移动能力的回合后，将本卡牌翻面。",
         "backDesc": "在你移动能力期间，附加+2 {MOVE.fh}并将本卡牌翻面。"
@@ -3356,12 +3356,12 @@ export default {
         "desc": "当你因攻击遭受{DAMAGE.fh}时，为该攻击获得{SHIELD.fh} 4。"
     },
     "gh2-103": {
-        "name": "Ranger's Hood",
+        "name": "游骑兵兜帽",
         "source": "{SCENARIO 28}（宝藏 #65）",
-        "desc": "在你的一个召唤物攻击能力期间，在抽取攻击修正卡牌之前，揭示你攻击修正牌堆中最上方的两张卡牌。你可以将这两张卡牌中的任意张放置到牌库低。"
+        "desc": "在你的一个召唤物攻击能力期间，在抽取攻击修正卡牌之前，揭示你攻击修正牌库中最上方的两张卡牌。你可以将这两张卡牌中的任意张放置到牌库低。"
     },
     "gh2-104": {
-        "name": "Warding Rod",
+        "name": "界护短杖",
         "source": "{SCENARIO 4}（宝藏 #24）",
         "desc": "在你回合期间，执行：{WARD.fh}，{TARGET.fh} 2，{RANGE.fh} 3"
     },
@@ -3409,29 +3409,29 @@ export default {
         "desc": "在你回合期间，在{RANGE.fh} 3范围内的1个普通或精英敌人身上放置1个角色标记。你和所有盟友对以该敌人为目标的所有攻击附加+1 {ATTACK.fh}。{PERSISTENT}"
     },
     "gh2-114": {
-        "name": "Gust Striders",
+        "name": "风行者",
         "source": "城市事件 17\n城市事件 81",
         "desc": "在你回合期间，为你的下一个移动能力附加{JUMP.fh}。如果{WIND}处于强盛或衰弱，还附加+2 {MOVE.fh}。"
     },
     "gh2-115": {
-        "name": "Rod of Transference",
+        "name": "转伤短杖",
         "source": "{SCENARIO 11}（宝藏 #35）",
         "desc": "当{RANGE.fh} 3范围内的1个盟友将要遭受{DAMAGE.fh}时，改为由你遭受该{DAMAGE.fh}。"
     },
     "gh2-116": {
-        "name": "Fated Verses",
+        "name": "命定诗集",
         "source": "繁荣 1",
         "desc": "在你攻击能力期间，你可以在一次攻击中获得劣势，以在你的回合结束时将本卡牌翻面。",
         "backDesc": "在一个盟友的攻击能力期间，该盟友在一次攻击中获得优势，然后你将本卡牌翻面。",
         "faq": "如果你的攻击已经处于劣势，你就不能使用正面。正面可以用于盟友授予你的攻击，但卡牌只会在你的下个回合结束时翻面。"
     },
     "gh2-117": {
-        "name": "Dawnblade",
+        "name": "黎明之刃",
         "source": "{SCENARIO 99}奖励",
         "desc": "在你回合期间，如果{DARK}处于强盛或衰弱，为你的下一次近战攻击附加+1 {ATTACK.fh}。如果你带入了黄昏之刃，{LIGHT}。"
     },
     "gh2-118": {
-        "name": "Duskbrand",
+        "name": "黄昏之刃",
         "source": "道路事件 33",
         "desc": "在你回合期间，如果{LIGHT}处于强盛或衰弱，为你的下一次近战攻击附加+1 {ATTACK.fh}。如果你带入了黎明之刃，{DARK}。"
     },
@@ -3451,31 +3451,31 @@ export default {
         "desc": "在你回合期间，执行：{WOUND.fh}，{MUDDLE.fh}，{RANGE.fh} 3。如果你带入了亚龙鳞靴子和亚龙鳞护甲，附加+1 {TARGET.fh}。"
     },
     "gh2-122": {
-        "name": "Frost Beetle Lantern",
+        "name": "寒冰虫灯",
         "desc": "在你回合期间，执行：{ANY_X}：{ICE}"
     },
     "gh2-123": {
-        "name": "Storm Beetle Lantern",
+        "name": "风暴虫灯",
         "source": "道路事件 30",
         "desc": "在你回合期间，执行：{ANY_X}：{WIND}"
     },
     "gh2-124": {
-        "name": "Ignition Beetle Lantern",
+        "name": "燃火虫灯",
         "source": "道路事件 30",
         "desc": "在你回合期间，执行：{ANY_X}：{FIRE}"
     },
     "gh2-125": {
-        "name": "Tremor Beetle Lantern",
+        "name": "颤地虫灯",
         "source": "道路事件 30",
         "desc": "在你回合期间，执行：{ANY_X}：{EARTH}"
     },
     "gh2-126": {
-        "name": "Brilliant Beetle Lantern",
+        "name": "光辉虫灯",
         "source": "道路事件 30",
         "desc": "在你回合期间，执行：{ANY_X}：{LIGHT}"
     },
     "gh2-127": {
-        "name": "Twilight Beetle Lantern",
+        "name": "暮光虫灯",
         "source": "道路事件 30",
         "desc": "在你回合期间，执行：{ANY_X}：{DARK}"
     },
@@ -3513,7 +3513,7 @@ export default {
     },
     "gh2-134": {
         "name": "动力核心",
-        "desc": "召唤钢制魔像"
+        "desc": "召唤 Steel Construct"
     },
     "gh2-135": {
         "name": "共振水晶",
@@ -3536,17 +3536,17 @@ export default {
         "desc": "在你近战攻击能力期间，遭受{DAMAGE.fh} 2，为所有攻击附加+1 {ATTACK.fh}。"
     },
     "gh2-139": {
-        "name": "Otherworldly Scepter",
+        "name": "异界权杖",
         "source": "{SCENARIO 94}奖励\n城市事件 85",
         "desc": "当你执行召唤行动时，该行动召唤的每个召唤物都获得{WARD.fh}、{INVISIBLE.fh}和{STRENGTHEN.fh}。"
     },
     "gh2-140": {
-        "name": "Remote Attack Spider",
+        "name": "遥控攻击蜘蛛",
         "source": "城市事件 98",
         "desc": "在你回合期间，执行：{POISON.fh}，所有，{RANGE.fh} 1"
     },
     "gh2-141": {
-        "name": "Remote Aid Spider",
+        "name": "遥控支援蜘蛛",
         "source": "城市事件 98",
         "desc": "在你回合期间，执行：{HEAL.fh} 2，所有，{RANGE.fh} 1"
     },
@@ -3557,41 +3557,41 @@ export default {
         "faq": "你不会受到自己创造的有害地形的伤害；它只会伤害进入其中的单位。"
     },
     "gh2-143": {
-        "name": "Boots of Bracing",
+        "name": "射手靴",
         "source": "{SCENARIO 81}（宝藏 #61）",
         "desc": "在你远程攻击能力期间，获得{IMMOBILIZE.fh}以为1次攻击附加+1 {ATTACK.fh}。"
     },
     "gh2-144": {
-        "name": "Temporal Matrix",
+        "name": "逆时矩阵",
         "source": "{SCENARIO 92}奖励",
         "desc": "在决定先攻顺序时，所有能力卡牌揭示后，本轮的先攻顺序改为从高到底（而非正常的从低到高）进行。"
     },
     "gh2-145": {
-        "name": "Harrow-Hook",
+        "name": "飞翔爪",
         "desc": "在你回合期间，执行：{MOVE.fh} 2，{JUMP.fh}。该移动必须结束在与障碍物或墙壁相邻的格子。"
     },
     "gh2-146": {
-        "name": "Amberhollow",
+        "name": "空心珀果",
         "source": "道路事件 15\n道路事件 25\n道路事件 28\n道路事件 30\n道路事件 31",
         "desc": "本道具必须带入剧本，并在剧本结束时放回不可用道具库。在你回合期间，执行：{STRENGTHEN.fh}，{BLESS.fh}，自身"
     },
     "gh2-147": {
-        "name": "Scepter of Xorn",
+        "name": "索恩的法杖",
         "source": "{SCENARIO 57}奖励\n{SCENARIO 58}奖励",
         "desc": "在你回合期间，如果你没有{POISON.fh}，获得{POISON.fh}以执行：{POISON.fh}，{CURSE.fh}，{TARGET.fh} 3，{RANGE.fh} 3"
     },
     "gh2-148": {
-        "name": "Shield of the Righteous",
+        "name": "正义之盾",
         "source": "{SCENARIO 65}（宝藏 #59）",
         "desc": "当你因攻击遭受{DAMAGE.fh}时，抵消该{DAMAGE.fh}并灌注{LIGHT}"
     },
     "gh2-149": {
-        "name": "Aesther Spyglass",
+        "name": "以太灵望远镜",
         "source": "个人任务 04",
         "desc": "只有在你与至少1个障碍物相邻时才能使用本道具。在你回合期间，执行：{BLESS.fh}，自身"
     },
     "gh2-150": {
-        "name": "Experimental Armor",
+        "name": "实验装甲",
         "source": "个人任务 17",
         "desc": "本道具不能出售，且必须带入每个剧本。当你因攻击遭受{DAMAGE.fh}时，你可以遭受{DAMAGE.fh} 2，使所有相邻的盟友和敌人遭受{DAMAGE.fh} 2。"
     },
@@ -3600,12 +3600,12 @@ export default {
         "desc": "在你近战攻击能力期间，为所有攻击附加{WOUND.fh}，{POISON.fh}。"
     },
     "gh2-152": {
-        "name": "Ruby Talisman",
+        "name": "红宝石护身符",
         "source": "{SCENARIO 75}奖励",
         "desc": "在你回合期间，如果{RANGE.fh} 3范围内的1个盟友有负面状态，你可以获得{DISARM.fh}，以移除该盟友的1个负面状态并赋予其庇护，{BLESS.fh}。"
     },
     "gh2-153": {
-        "name": "Hooked Shield",
+        "name": "锁链盾",
         "source": "单人剧本奖励 - {BR2}",
         "desc": "在你推斥1个敌人后，执行：{MOVE.fh} 3，{JUMP.fh}。该移动只能进入被推斥的敌人离开过的格子。"
     },
@@ -3615,7 +3615,7 @@ export default {
         "desc": "在你治疗能力期间，附加+1 {HEAL.fh}，并为1次以盟友为目标的治疗附加{STRENGTHEN.fh}。"
     },
     "gh2-155": {
-        "name": "Etheric Elixir",
+        "name": "以太灵药",
         "source": "单人剧本奖励 - {SW2}",
         "desc": "当你执行灵能重构上半部分的{LOST.fh}行动时，在本剧本剩余时间内，从你的攻击修正牌库中移除{NULL_MODIFIER}卡牌。"
     },
@@ -3635,7 +3635,7 @@ export default {
         "desc": "为你所有{AUGMENT}行动的攻击附加+1 {ATTACK.fh}。"
     },
     "gh2-159": {
-        "name": "Insignia of the Divine",
+        "name": "神圣徽记",
         "source": "单人剧本奖励 - {SK2}",
         "desc": "在你回合期间，使自身或1个相邻的盟友获得：{MOVE.fh} 4，{JUMP.fh} {LIGHT}"
     },
@@ -3650,7 +3650,7 @@ export default {
         "desc": "当你的某个召唤物因攻击遭受{DAMAGE.fh}时，抵消该{DAMAGE.fh}，且该召唤物获得{INVISIBLE.fh}。"
     },
     "gh2-162": {
-        "name": "The Night's Caress",
+        "name": "夜魇轻纱",
         "source": "单人剧本奖励 - {NS2}",
         "desc": "当你失去{INVISIBLE.fh}时，将本卡牌翻面并执行：{MUDDLE.fh}，{RANGE.fh} 1",
         "backDesc": "当你获得{INVISIBLE.fh}时，将本卡牌翻面并查看你攻击修正牌库顶部的1张卡牌。你可以将该卡牌放到牌组底部。"
@@ -3681,7 +3681,7 @@ export default {
         "desc": "当{RANGE.fh} 3范围内的1个盟友因攻击遭受{DAMAGE.fh}时，在该攻击能力之后执行：{MOVE.fh} 2。该移动必须结束在与被攻击的盟友相邻的格子。"
     },
     "gh2-168": {
-        "name": "Elemental Vest",
+        "name": "元素背心",
         "source": "单人剧本奖励 - {EL2}",
         "desc": "在你回合结束时，本回合你每消耗2种元素：{ANY}。"
     },
@@ -3691,7 +3691,7 @@ export default {
         "desc": "在你回合期间，{COMMAND}：{ATTACK.fh} 2"
     },
     "gh2-170": {
-        "name": "Crawling Carapace",
+        "name": "虫群壳甲",
         "source": "单人剧本奖励 - {BS2}",
         "desc": "每轮你或你的某个召唤物将要遭受的第一个攻击造成的{DAMAGE.fh}来源中，被攻击的单位为该攻击获得{SHIELD.fh} 1。"
     }
