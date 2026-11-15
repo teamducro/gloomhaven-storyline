@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Świątynia Wielkiego Dębu",
+        "name": "Świątynia",
         "levels": [
             {
                 "level": 0
@@ -456,7 +456,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Magazyn Metalu",
+        "name": "Skład Metalu",
         "levels": [
             {
                 "level": 0
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "Magazyn Drewna",
+        "name": "Tartak",
         "levels": [
             {
                 "level": 0
@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Sala Uczt",
+        "name": "Sala Biesiadna",
         "levels": [
             {
                 "level": 0

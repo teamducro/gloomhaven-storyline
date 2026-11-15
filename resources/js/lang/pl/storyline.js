@@ -1414,7 +1414,7 @@ export default {
             }
         },
         "85": {
-            "name": "Zabójcze rozrywki",
+            "name": "Zabójcze rozgrywki",
             "sections": {
                 "1": "Do Glinta przyszła kobieta po natychmiastową pomoc; jej mąż powiedział jej, że jeśli nie wróci do popołudnia, ma szukać pomocy. Wręczyła wam mapę miejsca, „gdzie poszedł na speleologię”.",
                 "2": "Skrajnie wyczerpani wyszliście wreszcie z jaskini na światło dzienne i znaleźliście męża siedzącego szczęśliwie przy ognisku i pieczącego ptaka. Uznał jaskinię za zbyt niebezpieczną i poszedł eksplorować gdzie indziej. Prawie go zabiliście, ale zamiast tego padliście przy jego ognisku i ucięliście sobie drzemkę."

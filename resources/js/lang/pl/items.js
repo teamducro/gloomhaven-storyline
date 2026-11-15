@@ -583,7 +583,7 @@ export default {
     "gh-115": {
         "name": "Górski Młot",
         "source": "{SCENARIO 82} (Skarb #62)",
-        "desc": "Przywołaj Warrior Spirit",
+        "desc": "Przywołaj Ducha Wojownika",
         "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-116": {
@@ -624,7 +624,7 @@ export default {
     "gh-123": {
         "name": "Pierścień Czaszek",
         "source": "{SCENARIO 04} (Skarb #38)",
-        "desc": "Przywołaj Skeleton",
+        "desc": "Przywołaj Szkielet",
         "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-124": {
@@ -3032,7 +3032,7 @@ export default {
     "gh2-39": {
         "name": "Pierścień Czaszek",
         "source": "Dobrobyt 4",
-        "desc": "Przywołaj Skeleton"
+        "desc": "Przywołaj Szkielet"
     },
     "gh2-40": {
         "name": "Shadow Amor",
@@ -3493,7 +3493,7 @@ export default {
     "gh2-130": {
         "name": "Górski Młot",
         "source": "{SCENARIO 90} (Skarb #22)",
-        "desc": "Przywołaj Warrior Spirit"
+        "desc": "Przywołaj Ducha Wojownika"
     },
     "gh2-131": {
         "name": "Kolia Fal",

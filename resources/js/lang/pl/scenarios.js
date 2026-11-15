@@ -1241,7 +1241,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "Kraniec świata",
+        "name": "Krawędź świata",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego"
         ]
@@ -1430,7 +1430,7 @@ export default {
         ]
     },
     "fh-34": {
-        "name": "Szczyt iglicy"
+        "name": "Szczyt Iglicy"
     },
     "fh-35": {
         "name": "Złomowisko",
@@ -1819,7 +1819,7 @@ export default {
         ]
     },
     "fh-85": {
-        "name": "Zabójcze rozrywki",
+        "name": "Zabójcze rozgrywki",
         "rewards": [
             "Po 15 pkt. doświadczenia dla każdego",
             "Po 1 ✔ dla każdego"
