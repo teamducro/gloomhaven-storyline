@@ -120,7 +120,7 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "旅店",
+        "name": "Inn",
         "levels": [
             {
                 "level": 0
@@ -152,7 +152,7 @@ export default {
         ]
     },
     "fh-24": {
-        "name": "花園",
+        "name": "Garden",
         "levels": [
             {
                 "level": 0
@@ -192,7 +192,7 @@ export default {
         ]
     },
     "fh-34": {
-        "name": "工匠",
+        "name": "Craftsman",
         "levels": [
             {
                 "level": 0
@@ -304,7 +304,7 @@ export default {
         ]
     },
     "fh-37": {
-        "name": "貿易站",
+        "name": "Trading Post",
         "levels": [
             {
                 "level": 0
@@ -344,7 +344,7 @@ export default {
         ]
     },
     "fh-39": {
-        "name": "珠寶匠",
+        "name": "Jeweler",
         "levels": [
             {
                 "level": 0
@@ -383,40 +383,40 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "每名角色可失去 5 金幣，以在下個場景開始時獲得 {BLESS.fh}x2",
+                "operations": "每名角色可失去 5 金幣，以在下個劇本開始時獲得 {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "每名角色在下個場景開始時獲得 {CURSE.fh}",
+                "wrecked": "每名角色在下個劇本開始時獲得 {CURSE.fh}",
                 "passive": "",
                 "rewards": "+1 繁榮度，閱讀段落 192.5"
             },
             {
                 "level": 2,
-                "operations": "每名角色可失去 5 金幣，以在下個場景開始時獲得 {BLESS.fh}x2",
+                "operations": "每名角色可失去 5 金幣，以在下個劇本開始時獲得 {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "每名角色在下個場景開始時獲得 {CURSE.fh}",
+                "wrecked": "每名角色在下個劇本開始時獲得 {CURSE.fh}",
                 "passive": "",
                 "rewards": "+3 繁榮度"
             },
             {
                 "level": 3,
-                "operations": "每名角色可失去 5 金幣，以在下個場景開始時獲得 {BLESS.fh}x2",
+                "operations": "每名角色可失去 5 金幣，以在下個劇本開始時獲得 {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "每名角色在下個場景開始時獲得 {CURSE.fh}",
+                "wrecked": "每名角色在下個劇本開始時獲得 {CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 繁榮度"
             },
             {
                 "level": 4,
-                "operations": "每名角色可失去 5 金幣，以在下個場景開始時獲得 {BLESS.fh}x2",
+                "operations": "每名角色可失去 5 金幣，以在下個劇本開始時獲得 {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "每名角色在下個場景開始時獲得 {CURSE.fh}",
+                "wrecked": "每名角色在下個劇本開始時獲得 {CURSE.fh}",
                 "passive": "",
                 "rewards": ""
             }
         ]
     },
     "fh-44": {
-        "name": "附魔師",
+        "name": "Enhancer",
         "levels": [
             {
                 "level": 0
@@ -425,7 +425,7 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "購買附魔",
-                "wrecked": "每名角色在下個場景開始時獲得 {DISARM.fh}",
+                "wrecked": "每名角色在下個劇本開始時獲得 {DISARM.fh}",
                 "passive": "",
                 "rewards": "+1 繁榮度，閱讀段落 193.1"
             },
@@ -433,7 +433,7 @@ export default {
                 "level": 2,
                 "operations": "",
                 "downtime": "購買附魔",
-                "wrecked": "每名角色在下個場景開始時獲得 {DISARM.fh}",
+                "wrecked": "每名角色在下個劇本開始時獲得 {DISARM.fh}",
                 "passive": "所有附魔費用減少 10 金幣",
                 "rewards": "+1 繁榮度，閱讀段落 157.2"
             },
@@ -441,7 +441,7 @@ export default {
                 "level": 3,
                 "operations": "",
                 "downtime": "購買附魔",
-                "wrecked": "每名角色在下個場景開始時獲得 {DISARM.fh}",
+                "wrecked": "每名角色在下個劇本開始時獲得 {DISARM.fh}",
                 "passive": "所有附魔費用減少 10 金幣，等級懲罰每級減少 10 金幣",
                 "rewards": "+1 繁榮度"
             },
@@ -449,7 +449,7 @@ export default {
                 "level": 4,
                 "operations": "",
                 "downtime": "購買附魔",
-                "wrecked": "每名角色在下個場景開始時獲得 {DISARM.fh}",
+                "wrecked": "每名角色在下個劇本開始時獲得 {DISARM.fh}",
                 "passive": "所有附魔費用減少 10 金幣，等級懲罰每級減少 10 金幣，重複懲罰每個附魔減少 25 金幣",
                 "rewards": "+1 繁榮度，閱讀段落 56.3"
             }
@@ -528,7 +528,7 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "酒館",
+        "name": "Tavern",
         "levels": [
             {
                 "level": 0
@@ -551,7 +551,7 @@ export default {
             },
             {
                 "level": 3,
-                "requires": "需要 3 枚古幣（道具 245）",
+                "requires": "需要 3 枚 Ancient Coin（道具 245）",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "失去 1 士氣",
@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "狂歡廳",
+        "name": "Hall of Revelry",
         "levels": [
             {
                 "level": 0
@@ -571,7 +571,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "失去 1 士氣",
-                "passive": "當試煉牌組完成時，閱讀段落 187.1",
+                "passive": "當試煉牌堆完成時，閱讀段落 187.1",
                 "rewards": "+1 繁榮度，閱讀段落 178.2"
             },
             {
@@ -585,7 +585,7 @@ export default {
         ]
     },
     "fh-83": {
-        "name": "圖書館",
+        "name": "Library",
         "levels": [
             {
                 "level": 0
@@ -617,7 +617,7 @@ export default {
         ]
     },
     "fh-84": {
-        "name": "工坊",
+        "name": "Workshop",
         "levels": [
             {
                 "level": 0
@@ -633,7 +633,7 @@ export default {
         ]
     },
     "fh-85": {
-        "name": "木匠",
+        "name": "Carpenter",
         "levels": [
             {
                 "level": 0
@@ -657,7 +657,7 @@ export default {
         ]
     },
     "fh-88": {
-        "name": "馬廄",
+        "name": "Stables",
         "levels": [
             {
                 "level": 0
@@ -667,7 +667,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "角色無法使用寵物",
-                "passive": "每個場景可攜帶一隻寵物。容量：4",
+                "passive": "每個劇本可攜帶一隻寵物。容量：4",
                 "rewards": "+1 繁榮度，閱讀段落 3.1"
             },
             {
@@ -675,7 +675,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "角色無法使用寵物",
-                "passive": "每個場景可攜帶一隻寵物。容量：8",
+                "passive": "每個劇本可攜帶一隻寵物。容量：8",
                 "rewards": "+1 繁榮度"
             },
             {
@@ -683,7 +683,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "角色無法使用寵物",
-                "passive": "每個場景可攜帶兩隻寵物。容量：8",
+                "passive": "每個劇本可攜帶兩隻寵物。容量：8",
                 "rewards": "+1 繁榮度"
             },
             {
@@ -691,13 +691,13 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "角色無法使用寵物",
-                "passive": "每個場景可攜帶兩隻寵物。容量：12",
+                "passive": "每個劇本可攜帶兩隻寵物。容量：12",
                 "rewards": "+1 繁榮度"
             }
         ]
     },
     "fh-90": {
-        "name": "市政廳",
+        "name": "Town Hall",
         "levels": [
             {
                 "level": 0
@@ -707,7 +707,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "無法完成挑戰",
-                "passive": "抽取一個挑戰並最多保留一個。當挑戰牌組完成時，閱讀段落 190.1",
+                "passive": "抽取一個挑戰並最多保留一個。當挑戰牌堆完成時，閱讀段落 190.1",
                 "rewards": "+1 繁榮度，閱讀段落 189.1"
             },
             {
@@ -715,7 +715,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "無法完成挑戰",
-                "passive": "抽取兩個挑戰並最多保留一個。當挑戰牌組完成時，閱讀段落 190.1",
+                "passive": "抽取兩個挑戰並最多保留一個。當挑戰牌堆完成時，閱讀段落 190.1",
                 "rewards": "+1 繁榮度"
             },
             {
@@ -723,13 +723,13 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "無法完成挑戰",
-                "passive": "抽取三個挑戰並最多保留兩個。當挑戰牌組完成時，閱讀段落 190.1",
+                "passive": "抽取三個挑戰並最多保留兩個。當挑戰牌堆完成時，閱讀段落 190.1",
                 "rewards": "+1 繁榮度"
             }
         ]
     },
     "fh-98": {
-        "name": "兵營",
+        "name": "Barracks",
         "levels": [
             {
                 "level": 0

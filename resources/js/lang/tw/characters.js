@@ -96,7 +96,7 @@ export default {
         ]
     },
     "DS": {
-        "name": "Doomstalker",
+        "name": "末日使者",
         "perks": [
             "移除兩張 {-1_WHITE} 卡牌",
             "將兩張 {+0_WHITE} 卡牌替換為兩張 {+1_WHITE} 卡牌",
@@ -129,7 +129,7 @@ export default {
         ]
     },
     "SB": {
-        "name": "Sawbones",
+        "name": "鋸骨醫生",
         "perks": [
             "移除兩張 {-1_WHITE} 卡牌",
             "移除四張 {+0_WHITE} 卡牌",
@@ -236,7 +236,7 @@ export default {
         ]
     },
     "PH": {
-        "name": "Plagueherald",
+        "name": "瘟疫使者",
         "perks": [
             "將一張 {-2_WHITE} 卡牌替換為一張 {+0_WHITE} 卡牌",
             "將一張 {-1_WHITE} 卡牌替換為一張 {+1_WHITE} 卡牌",
@@ -495,7 +495,7 @@ export default {
             "將一張 {-2_WHITE} 卡牌替換為一張 {+0_WHITE} {DISARM} 卡牌和一張 {-1_WHITE} {ANY} 卡牌",
             "將一張 {-1_WHITE} 卡牌替換為一張 {AGAIN} {+1_WHITE}「{HO_CIRCLE} 和一張 {AGAIN} {-1_WHITE} {CURSE}」卡牌",
             "將兩張 {+1_WHITE} 卡牌替換為一張 {+3_WHITE} 「{REGENERATE}，自身」卡牌",
-            "將一張 {+0_WHITE} 卡牌替換為一張 {+1_WHITE}「在 {RANGE}2 範圍內的空格中創造一個虛空坑洞」卡牌",
+            "將一張 {+0_WHITE} 卡牌替換為一張 {+1_WHITE}「在 {RANGE}2 範圍內的空格中創造一個Void 坑洞」卡牌",
             "無視負面劇本效果，並加入一張 {+0_WHITE} 「{WARD}，自身」卡牌"
         ]
     },
@@ -527,7 +527,7 @@ export default {
             "將一張 {+1_WHITE} 卡牌替換為一張 {+0_WHITE} {WOUND_2} 卡牌",
             "加入四張 {AGAIN} {+0_WHITE}「若目標位於困難地形則 {+1_WHITE}」卡牌",
             "加入兩張 {AGAIN}「若你位於困難地形，{INVISIBLE}，自身」卡牌",
-            "獲得「Poison Dagger」（道具 gh-11）。你可以額外攜帶一件名稱中含有「匕首」的 {ONE-HAND} 道具。",
+            "獲得「劇毒匕首」（道具 gh-11）。你可以額外攜帶一件名稱中含有「匕首」的 {ONE-HAND} 道具。",
             "無視事件造成的傷害、負面狀態與修正，並移除一張 {-1_WHITE} 卡牌",
             "無視負面劇本效果，並移除一張 {-1_WHITE} 卡牌"
         ]
@@ -720,7 +720,7 @@ export default {
         ]
     },
     "PY": {
-        "name": "Pyroclast",
+        "name": "炎爆碎石者",
         "masteries": [
             "每輪至少創造或摧毀一塊障礙物或危險地形板塊",
             "在一個回合中，使敵人穿越你創造的六個不同的危險地形格"
@@ -741,14 +741,14 @@ export default {
         ]
     },
     "SH": {
-        "name": "Shattersong",
+        "name": "破碎歌者",
         "masteries": [
             "每回合結束時，在你獲得 {RESONANCE_ICON} 之前，始終保持 0 個 {RESONANCE_ICON}",
             "在五個不同的 {WAVE} 能力上各花費 5 個 {RESONANCE_ICON}"
         ],
         "perks": [
             "移除四張 {+0_WHITE} 卡牌",
-            "將兩張 {-1_WHITE} 卡牌替換為兩張 {+0_WHITE}「翻開目標的怪物能力牌庫頂的一張卡牌」卡牌",
+            "將兩張 {-1_WHITE} 卡牌替換為兩張 {+0_WHITE}「翻開目標的怪物能力牌堆頂的一張卡牌」卡牌",
             "將一張 {-2_WHITE} 卡牌替換為一張 {-1_WHITE} {STUN.fh} 卡牌",
             "將一張 {+0_WHITE} 卡牌替換為一張 {+0_WHITE} {BRITTLE.fh} 卡牌",
             "將兩張 {+1_WHITE} 卡牌替換為兩張 {+2_WHITE} {WIND_OR_LIGHT} 卡牌",
@@ -757,7 +757,7 @@ export default {
             "無視劇本效果",
             "每當你執行短休時，可以 {WIND_X} 以執行 {STRENGTHEN.fh}、{RANGE.fh}3，並 {LIGHT_X} 以執行 {BLESS.fh}、{RANGE.fh}3",
             "每個劇本開始時，你可以獲得 {BRITTLE.fh} 以獲得 2 個 {RESONANCE_ICON}",
-            "每當揭示新房間時，你可以翻開怪物攻擊修正牌庫和所有盟友攻擊修正牌庫頂的卡牌"
+            "每當揭示新房間時，你可以翻開怪物攻擊修正牌堆和所有盟友攻擊修正牌堆頂的卡牌"
         ]
     },
     "TA": {
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Pain Conduit",
+        "name": "苦痛通導者",
         "masteries": [
             "在一輪中使其他單位共計承受至少 {DAMAGE.fh}40",
             "在回合開始時同時擁有 {WOUND.fh}、{BRITTLE.fh}、{BANE.fh}、{POISON.fh}、{IMMOBILIZE.fh}、{DISARM.fh}、{STUN.fh} 和 {MUDDLE.fh}"
@@ -801,7 +801,7 @@ export default {
         ]
     },
     "SD": {
-        "name": "Snowdancer",
+        "name": "風雪舞者",
         "masteries": [
             "每輪至少使一名盟友或敵人移動",
             "確保每輪第一個承受 {DAMAGE.fh} 的盟友，在承受 {DAMAGE.fh} 之前，至少有一個你施加的狀態"
@@ -839,7 +839,7 @@ export default {
         ]
     },
     "HV": {
-        "name": "HIVE",
+        "name": "蜂巢主腦",
         "masteries": [
             "每輪 {TRANSFER_ICON}",
             "在一輪中 {TRANSFER_ICON} 進入四個不同的召喚物"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Metal Mosaic",
+        "name": "拼裝構造體",
         "masteries": [
             "從不攻擊",
             "連續四輪，將壓力計從該輪開始時的位置上升或下降三個等級（{PRESSURE_LOW_ICON} 到 {PRESSURE_HIGH_ICON}，或反之）"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Deepwraith",
+        "name": "深海亡靈",
         "masteries": [
             "你執行的所有攻擊均具有優勢",
             "每輪灌注 {DARK}"
@@ -938,7 +938,7 @@ export default {
         ]
     },
     "HA": {
-        "name": "Hail",
+        "name": "黑爾",
         "masteries": [
             "在整個劇本中，每輪至少獲得 1 個 {RESOLVE_WHITE}",
             "在單一劇本中，連續三輪，每輪至少花費 3 個 {RESOLVE_WHITE}"
@@ -955,26 +955,26 @@ export default {
             "無視劇本效果，並加入兩張 {+1_WHITE} 卡牌",
             "每當你執行短休時，可以選擇要遺失哪張卡牌",
             "你和你的盟友的強化費用少 5 金幣，且每當盟友強化一張卡牌時，你獲得 5 金幣",
-            "將一張 {+1_WHITE}「{HA} 獲得 1 {RESOLVE_WHITE}」卡牌加入怪物攻擊修正牌庫"
+            "將一張 {+1_WHITE}「{HA} 獲得 1 {RESOLVE_WHITE}」卡牌加入怪物攻擊修正牌堆"
         ]
     },
     "CA": {
         "name": "Cassandra",
         "masteries": [
-            "在整個劇本中，每輪至少翻開攻擊修正牌庫或怪物能力牌庫中的一張卡牌",
+            "在整個劇本中，每輪至少翻開攻擊修正牌堆或怪物能力牌堆中的一張卡牌",
             "以一次能力以 6 個位於含有 {RIFT_WHITE} 格子的單位為目標"
         ],
         "perks": [
             "移除一張 {-2_WHITE} 卡牌",
             "移除兩張 {-1_WHITE} 卡牌",
             "將一張 {-1_WHITE} 卡牌替換為一張 {+0_WHITE}「{BLESS.fh}，自身或 {TARGET.fh}1 名盟友」卡牌",
-            "將一張 {+0_WHITE} 卡牌替換為一張 {+2_WHITE}「若翻開的是怪物攻擊修正牌庫頂的卡牌，附加 +1{ATTACK.fh}」卡牌",
+            "將一張 {+0_WHITE} 卡牌替換為一張 {+2_WHITE}「若翻開的是怪物攻擊修正牌堆頂的卡牌，附加 +1{ATTACK.fh}」卡牌",
             "將一張 {+0_WHITE} 卡牌替換為一張 {+2_WHITE} {LIGHT_OR_DARK} 卡牌",
             "加入一張 {+1_WHITE}「將此卡牌放入你的啟動區域。當你下次放置 {RIFT_WHITE} 時，棄置此卡牌，並在其 {RANGE.fh}1 範圍內再放置一個 {RIFT_WHITE}」{AGAIN} 卡牌",
             "無視劇本效果，並加入兩張 {+1_WHITE} 卡牌",
             "每當你執行長休時，可以閱讀目前劇本「段落連結」中一個尚未閱讀的 {SECTION}",
             "每當你放置一個 {RIFT_WHITE} 時，可以如同你位於含有 {RIFT_WHITE} 的格子一般，執行「{PULL.fh}1、{TARGET.fh}1 名盟友或敵人、{RANGE.fh}1」",
-            "每當一個牌庫被洗混時，你可以將該牌庫所有已翻開的卡牌放在一旁，並在洗牌後放回牌庫頂"
+            "每當一個牌堆被洗混時，你可以將該牌堆所有已翻開的卡牌放在一旁，並在洗牌後放回牌堆頂"
         ]
     },
     "AN": {
@@ -1041,7 +1041,7 @@ export default {
         "name": "亂心賊",
         "masteries": [
             "在單一劇本中，以控制能力殺死至少 5 名敵人",
-            "在單一劇本中，觸發 4 種不同增幅的攻擊時效果，每種至少 3 次"
+            "在單一劇本中，觸發 4 種不同增強的攻擊時效果，每種至少 3 次"
         ],
         "perks": [
             "將兩張 {-1_WHITE} 卡牌替換為一張 {+0_WHITE}「攻擊能力之後，控制目標：{MOVE.fh}1」卡牌",
@@ -1051,7 +1051,7 @@ export default {
             "加入一張 {+2_WHITE} {ICE} 卡牌",
             "加入一張 {AGAIN} 「{INVISIBLE.fh}，自身」卡牌",
             "無視劇本效果，並加入一張 {AGAIN} {+1_WHITE} 卡牌",
-            "每當你控制敵人的攻擊時，可以讓該敵人使用你的攻擊修正牌庫",
+            "每當你控制敵人的攻擊時，可以讓該敵人使用你的攻擊修正牌堆",
             "在判定怪物焦點時，你視為時序值最後",
             "每次你的休息結束時，可以 {ICE_X}/{DARK_X} 以控制 {RANGE.fh}5 範圍內的一名敵人：{ATTACK.fh}1"
         ]
@@ -1134,7 +1134,7 @@ export default {
         ]
     },
     "BS2": {
-        "name": "刀鋒領主",
+        "name": "Bladeswarm",
         "masteries": [
             "執行 6 種不同的 {PERSISTENT}{LOST.fh} 能力，其中召喚能力不超過 3 種",
             "當你覺得自己夠格時，直接獲得本巔峰成就"
@@ -1144,7 +1144,7 @@ export default {
             "將一張 {-1_WHITE} 卡牌替換為一張 {+0_WHITE} {POISON.fh} 卡牌",
             "將一張 {+0_WHITE} 卡牌替換為一張 {+1_WHITE} {WIND}/{DARK} 卡牌",
             "將一張 {+0_WHITE} 卡牌替換為一張 {+1_WHITE} {EARTH}/{LIGHT} 卡牌",
-            "將一張 {+0_WHITE} 卡牌替換為一張 {+0_WHITE}「刀鋒領主的啟動區域中每有一張帶有 {LOST.fh} 的卡牌，附加 +1 {ATTACK.fh}」卡牌",
+            "將一張 {+0_WHITE} 卡牌替換為一張 {+0_WHITE}「Bladeswarm的啟動區域中每有一張帶有 {LOST.fh} 的卡牌，附加 +1 {ATTACK.fh}」卡牌",
             "無視劇本效果，並加入一張 {+1_WHITE} 卡牌",
             "無視道具的 {-1} 效果，並加入一張 {+1_WHITE} 卡牌",
             "每當你執行長休時，可以 {TELEPORT.fh} 到你的一個召喚物所在的格子，同時將該召喚物 {TELEPORT.fh} 到你原本所在的格子",
@@ -1166,7 +1166,7 @@ export default {
             "加入一張 {+3_WHITE} 卡牌",
             "加入一張 {AGAIN} {STUN.fh} 卡牌",
             "無視劇本效果，並加入一張 {AGAIN} {+1_WHITE} 卡牌",
-            "每個劇本開始時，翻開劇本中每種怪物能力牌庫頂的卡牌",
+            "每個劇本開始時，翻開劇本中每種怪物能力牌堆頂的卡牌",
             "每當你休息時，在從棄牌堆 {RECOVER.fh} 卡牌之後，你可以從手牌打出一張卡牌，以執行該卡牌的 {DOOM} 行動",
             "在你的每個召喚物的回合，你可以讓其跳過回合，改為以你為焦點執行 {MOVE.fh}+0"
         ]
@@ -1203,7 +1203,7 @@ export default {
             "移除兩張 {-1_WHITE} 卡牌",
             "將一張 {-1_WHITE} 卡牌替換為兩張 {AGAIN}「攻擊能力之後，賦予一名相鄰盟友或自身：{TELEPORT.fh}2」卡牌",
             "將一張 {NULL_MODIFIER} 卡牌替換為一張 {-2_WHITE} 卡牌",
-            "將兩張 {+0_WHITE} 卡牌替換為兩張 {+1_WHITE}「若此攻擊殺死目標，將一張 {CURSE.fh} 卡牌洗入怪物攻擊修正牌庫」卡牌",
+            "將兩張 {+0_WHITE} 卡牌替換為兩張 {+1_WHITE}「若此攻擊殺死目標，將一張 {CURSE.fh} 卡牌洗入怪物攻擊修正牌堆」卡牌",
             "將一張 {+0_WHITE} 卡牌替換為一張 {+2_WHITE} {DARK} 卡牌",
             "將一張 {+1_WHITE} 卡牌替換為一張 {+0_WHITE}「在與目標相鄰的格子放置一個裂縫」卡牌",
             "無視劇本效果，並加入兩張 {+1_WHITE} 卡牌",
@@ -1341,7 +1341,7 @@ export default {
         "perks": [
             "將一張 {-1_WHITE} 卡牌替換為一張 {AGAIN}「{HEAL.fh}2，{TARGET.fh} 戰熊」卡牌",
             "將一張 {+0_WHITE} 卡牌替換為一張 {+1_WHITE} {WOUND.fh} 卡牌",
-            "將一張 {+0_WHITE} 卡牌替換為一張 {+2_WHITE}「若獸王與戰熊彼此相距 {RANGE.fh}4 以內，附加 +1 {ATTACK.fh}」卡牌",
+            "將一張 {+0_WHITE} 卡牌替換為一張 {+2_WHITE}「若 Wildfury 與戰熊彼此相距 {RANGE.fh}4 以內，附加 +1 {ATTACK.fh}」卡牌",
             "將一張 {+2_WHITE} 卡牌替換為一張 {+4_WHITE} 卡牌",
             "加入兩張 {+1_WHITE} {WIND}/{EARTH} 卡牌",
             "加入一張 {+2_WHITE} {PUSH.fh}2 卡牌",
