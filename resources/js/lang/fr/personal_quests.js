@@ -614,7 +614,7 @@ export default {
         ]
     },
     "gh2-4": {
-        "name": "La Chute de l'Homme",
+        "name": "The Fall of Man",
         "progress": [
             "Gagnez la « Aesther Spyglass » (Objet 149). Elle ne peut pas être vendue.",
             "Utilisez la « Aesther Spyglass » (Objet 149) dix fois.",
@@ -731,7 +731,7 @@ export default {
         ]
     },
     "gh2-18": {
-        "name": "Légende de Bataille",
+        "name": "Battle Legend",
         "progress": [
             "Gagnez 12 coches grâce aux objectifs de combat accomplis.",
             "Lisez {SECTION} 23.3."
