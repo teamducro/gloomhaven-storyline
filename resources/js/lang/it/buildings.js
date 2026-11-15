@@ -7,7 +7,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Acquista collettivamente fino a 1 {METAL} per 2 oro",
+                "operations": "Acquista collettivamente fino a 1 {METAL} per 2 monete d'oro",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -15,15 +15,15 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Acquista collettivamente fino a 2 {METAL} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 2 {METAL} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 49.2"
+                "rewards": "+1 prosperità, leggi la sezione 49.2"
             },
             {
                 "level": 3,
-                "operations": "Acquista collettivamente fino a 3 {METAL} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 3 {METAL} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -31,7 +31,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Acquista collettivamente fino a 4 {METAL} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 4 {METAL} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -47,15 +47,15 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Acquista collettivamente fino a 1 {HIDE} per 2 oro",
+                "operations": "Acquista collettivamente fino a 1 {HIDE} per 2 monete d'oro",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 172.3"
+                "rewards": "+1 prosperità, leggi la sezione 172.3"
             },
             {
                 "level": 2,
-                "operations": "Acquista collettivamente fino a 2 {HIDE} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 2 {HIDE} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -63,7 +63,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Acquista collettivamente fino a 3 {HIDE} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 3 {HIDE} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -71,7 +71,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Acquista collettivamente fino a 4 {HIDE} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 4 {HIDE} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -87,7 +87,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Acquista collettivamente fino a 1 {LUMBER} per 2 oro",
+                "operations": "Acquista collettivamente fino a 1 {LUMBER} per 2 monete d'oro",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -95,7 +95,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Acquista collettivamente fino a 2 {LUMBER} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 2 {LUMBER} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -103,7 +103,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Acquista collettivamente fino a 3 {LUMBER} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 3 {LUMBER} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -111,7 +111,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Acquista collettivamente fino a 4 {LUMBER} per 2 oro ciascuno",
+                "operations": "Acquista collettivamente fino a 4 {LUMBER} per 2 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -120,22 +120,22 @@ export default {
         ]
     },
     "fh-21": {
-        "name": "Locanda",
+        "name": "Inn",
         "levels": [
             {
                 "level": 0
             },
             {
                 "level": 1,
-                "operations": "Acquista collettivamente 1 risorsa materiale per 2 oro",
+                "operations": "Acquista collettivamente 1 risorsa materiale per 2 monete d'oro",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 151.2"
+                "rewards": "+1 prosperità, leggi la sezione 151.2"
             },
             {
                 "level": 2,
-                "operations": "Acquista collettivamente fino a 2 risorse materiali diverse per 2 oro ciascuna",
+                "operations": "Acquista collettivamente fino a 2 risorse materiali diverse per 2 monete d'oro ciascuna",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -143,7 +143,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Acquista collettivamente fino a 3 risorse materiali diverse per 2 oro ciascuna",
+                "operations": "Acquista collettivamente fino a 3 risorse materiali diverse per 2 monete d'oro ciascuna",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -152,7 +152,7 @@ export default {
         ]
     },
     "fh-24": {
-        "name": "Giardino",
+        "name": "Garden",
         "levels": [
             {
                 "level": 0
@@ -163,7 +163,7 @@ export default {
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 78.4"
+                "rewards": "+1 prosperità, leggi la sezione 78.4"
             },
             {
                 "level": 2,
@@ -299,12 +299,12 @@ export default {
                 "downtime": "Prepara e distilla pozioni da 2 e 3 vegetali",
                 "wrecked": "I personaggi non possono usare pozioni",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 183.5"
+                "rewards": "+1 prosperità, leggi la sezione 183.5"
             }
         ]
     },
     "fh-37": {
-        "name": "Emporio",
+        "name": "Trading Post",
         "levels": [
             {
                 "level": 0
@@ -313,33 +313,33 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "Acquista fino a un oggetto",
-                "wrecked": "Perdi collettivamente 5 oro",
+                "wrecked": "Perdi collettivamente 5 monete d'oro",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 25.2"
+                "rewards": "+1 prosperità, leggi la sezione 25.2"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "Acquista fino a due oggetti",
-                "wrecked": "Perdi collettivamente 10 oro",
+                "wrecked": "Perdi collettivamente 10 monete d'oro",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 12.4"
+                "rewards": "+1 prosperità, leggi la sezione 12.4"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "Acquista fino a tre oggetti",
-                "wrecked": "Perdi collettivamente 15 oro",
+                "wrecked": "Perdi collettivamente 15 monete d'oro",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 38.3"
+                "rewards": "+1 prosperità, leggi la sezione 38.3"
             },
             {
                 "level": 4,
                 "operations": "",
                 "downtime": "Acquista fino a quattro oggetti",
-                "wrecked": "Perdi collettivamente 20 oro",
+                "wrecked": "Perdi collettivamente 20 monete d'oro",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 196.2"
+                "rewards": "+1 prosperità, leggi la sezione 196.2"
             }
         ]
     },
@@ -355,7 +355,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Danneggia un edificio a scelta",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 31.3"
+                "rewards": "+1 prosperità, leggi la sezione 31.3"
             },
             {
                 "level": 2,
@@ -383,15 +383,15 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Ogni personaggio può perdere 5 oro per iniziare lo scenario successivo con {BLESS.fh}x2",
+                "operations": "Ogni personaggio può perdere 5 monete d'oro per iniziare lo scenario successivo con {BLESS.fh}x2",
                 "downtime": "",
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {CURSE.fh}",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 192.5"
+                "rewards": "+1 prosperità, leggi la sezione 192.5"
             },
             {
                 "level": 2,
-                "operations": "Ogni personaggio può perdere 5 oro per iniziare lo scenario successivo con {BLESS.fh}x2",
+                "operations": "Ogni personaggio può perdere 5 monete d'oro per iniziare lo scenario successivo con {BLESS.fh}x2",
                 "downtime": "",
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {CURSE.fh}",
                 "passive": "",
@@ -399,7 +399,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Ogni personaggio può perdere 5 oro per iniziare lo scenario successivo con {BLESS.fh}x2",
+                "operations": "Ogni personaggio può perdere 5 monete d'oro per iniziare lo scenario successivo con {BLESS.fh}x2",
                 "downtime": "",
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {CURSE.fh}",
                 "passive": "",
@@ -407,7 +407,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Ogni personaggio può perdere 5 oro per iniziare lo scenario successivo con {BLESS.fh}x2",
+                "operations": "Ogni personaggio può perdere 5 monete d'oro per iniziare lo scenario successivo con {BLESS.fh}x2",
                 "downtime": "",
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {CURSE.fh}",
                 "passive": "",
@@ -427,22 +427,22 @@ export default {
                 "downtime": "Acquista potenziamenti",
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {DISARM.fh}",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 193.1"
+                "rewards": "+1 prosperità, leggi la sezione 193.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "Acquista potenziamenti",
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {DISARM.fh}",
-                "passive": "Riduci di 10 oro tutti i costi di potenziamento",
-                "rewards": "+1 prosperità, leggi il paragrafo 157.2"
+                "passive": "Riduci di 10 monete d'oro tutti i costi di potenziamento",
+                "rewards": "+1 prosperità, leggi la sezione 157.2"
             },
             {
                 "level": 3,
                 "operations": "",
                 "downtime": "Acquista potenziamenti",
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {DISARM.fh}",
-                "passive": "Riduci di 10 oro tutti i costi di potenziamento e le penalità di livello di 10 oro per livello",
+                "passive": "Riduci di 10 monete d'oro tutti i costi di potenziamento e le penalità di livello di 10 monete d'oro per livello",
                 "rewards": "+1 prosperità"
             },
             {
@@ -450,8 +450,8 @@ export default {
                 "operations": "",
                 "downtime": "Acquista potenziamenti",
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {DISARM.fh}",
-                "passive": "Riduci di 10 oro tutti i costi di potenziamento, le penalità di livello di 10 oro per livello e le penalità di ripetizione di 25 oro per potenziamento",
-                "rewards": "+1 prosperità, leggi il paragrafo 56.3"
+                "passive": "Riduci di 10 monete d'oro tutti i costi di potenziamento, le penalità di livello di 10 monete d'oro per livello e le penalità di ripetizione di 25 monete d'oro per potenziamento",
+                "rewards": "+1 prosperità, leggi la sezione 56.3"
             }
         ]
     },
@@ -463,7 +463,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Vendi collettivamente fino a 1 {METAL} per 5 oro",
+                "operations": "Vendi collettivamente fino a 1 {METAL} per 5 monete d'oro",
                 "downtime": "Perdi collettivamente 2 {METAL}",
                 "wrecked": "",
                 "passive": "",
@@ -471,7 +471,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Vendi collettivamente fino a 2 {METAL} per 5 oro ciascuno",
+                "operations": "Vendi collettivamente fino a 2 {METAL} per 5 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "Perdi collettivamente 2 {METAL}",
                 "passive": "",
@@ -487,15 +487,15 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Vendi collettivamente fino a 1 {LUMBER} per 5 oro",
+                "operations": "Vendi collettivamente fino a 1 {LUMBER} per 5 monete d'oro",
                 "downtime": "",
                 "wrecked": "Perdi collettivamente 2 {LUMBER}",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 144.3"
+                "rewards": "+1 prosperità, leggi la sezione 144.3"
             },
             {
                 "level": 2,
-                "operations": "Vendi collettivamente fino a 2 {LUMBER} per 5 oro ciascuno",
+                "operations": "Vendi collettivamente fino a 2 {LUMBER} per 5 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "Perdi collettivamente 2 {LUMBER}",
                 "passive": "",
@@ -511,15 +511,15 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Vendi collettivamente fino a 1 {HIDE} per 5 oro",
+                "operations": "Vendi collettivamente fino a 1 {HIDE} per 5 monete d'oro",
                 "downtime": "",
                 "wrecked": "Perdi collettivamente 2 {HIDE}",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 173.1"
+                "rewards": "+1 prosperità, leggi la sezione 173.1"
             },
             {
                 "level": 2,
-                "operations": "Vendi collettivamente fino a 2 {HIDE} per 5 oro ciascuno",
+                "operations": "Vendi collettivamente fino a 2 {HIDE} per 5 monete d'oro ciascuno",
                 "downtime": "",
                 "wrecked": "Perdi collettivamente 2 {HIDE}",
                 "passive": "",
@@ -528,7 +528,7 @@ export default {
         ]
     },
     "fh-74": {
-        "name": "Taverna",
+        "name": "Tavern",
         "levels": [
             {
                 "level": 0
@@ -539,7 +539,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Perdi 1 morale",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 160.2"
+                "rewards": "+1 prosperità, leggi la sezione 160.2"
             },
             {
                 "level": 2,
@@ -547,16 +547,16 @@ export default {
                 "downtime": "",
                 "wrecked": "Perdi 1 morale",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 35.3"
+                "rewards": "+1 prosperità, leggi la sezione 35.3"
             },
             {
                 "level": 3,
-                "requires": "Richiede 3 Monete Antiche (Oggetto 245)",
+                "requires": "Richiede 3 Ancient Coin (Oggetto 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Perdi 1 morale",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 113.1"
+                "rewards": "+1 prosperità, leggi la sezione 113.1"
             }
         ]
     },
@@ -571,8 +571,8 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Perdi 1 morale",
-                "passive": "Quando il mazzo delle prove è completo, leggi il paragrafo 187.1",
-                "rewards": "+1 prosperità, leggi il paragrafo 178.2"
+                "passive": "Quando il mazzo delle prove è completo, leggi la sezione 187.1",
+                "rewards": "+1 prosperità, leggi la sezione 178.2"
             },
             {
                 "level": 2,
@@ -596,7 +596,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Perdi 1 ispirazione",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 190.3"
+                "rewards": "+1 prosperità, leggi la sezione 190.3"
             },
             {
                 "level": 2,
@@ -604,7 +604,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Perdi 1 ispirazione",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 116.3"
+                "rewards": "+1 prosperità, leggi la sezione 116.3"
             },
             {
                 "level": 3,
@@ -612,7 +612,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Perdi 1 ispirazione",
                 "passive": "",
-                "rewards": "+1 prosperità, leggi il paragrafo 89.2"
+                "rewards": "+1 prosperità, leggi la sezione 89.2"
             }
         ]
     },
@@ -627,7 +627,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Perdi collettivamente 1 {LUMBER}",
-                "passive": "I seguenti potenziamenti (Barca, Slitta, Attrezzatura da Scalata) possono essere costruiti in qualsiasi ordine.",
+                "passive": "Ciascuna delle seguenti migliorie (Barca, Slitta, Attrezzatura da Scalatore) può essere costruita in qualsiasi ordine.",
                 "rewards": "+1 prosperità"
             }
         ]
@@ -644,7 +644,7 @@ export default {
                 "downtime": "",
                 "wrecked": "Perdi collettivamente 1 risorsa a scelta",
                 "passive": "Riduci di 1 risorsa materiale tutti i costi di costruzione",
-                "rewards": "+1 prosperità, leggi il paragrafo 7.3"
+                "rewards": "+1 prosperità, leggi la sezione 7.3"
             },
             {
                 "level": 2,
@@ -668,7 +668,7 @@ export default {
                 "downtime": "",
                 "wrecked": "I personaggi non possono usare compagni creatura",
                 "passive": "Porta un compagno creatura in ogni scenario. Capacità: 4",
-                "rewards": "+1 prosperità, leggi il paragrafo 3.1"
+                "rewards": "+1 prosperità, leggi la sezione 3.1"
             },
             {
                 "level": 2,
@@ -707,15 +707,15 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Non puoi completare sfide",
-                "passive": "Pesca una sfida e tienine al massimo una. Quando il mazzo delle sfide è completo, leggi il paragrafo 190.1",
-                "rewards": "+1 prosperità, leggi il paragrafo 189.1"
+                "passive": "Pesca una sfida e tienine al massimo una. Quando il mazzo delle sfide è completo, leggi la sezione 190.1",
+                "rewards": "+1 prosperità, leggi la sezione 189.1"
             },
             {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Non puoi completare sfide",
-                "passive": "Pesca due sfide e tienine al massimo una. Quando il mazzo delle sfide è completo, leggi il paragrafo 190.1",
+                "passive": "Pesca due sfide e tienine al massimo una. Quando il mazzo delle sfide è completo, leggi la sezione 190.1",
                 "rewards": "+1 prosperità"
             },
             {
@@ -723,7 +723,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Non puoi completare sfide",
-                "passive": "Pesca tre sfide e tienine al massimo due. Quando il mazzo delle sfide è completo, leggi il paragrafo 190.1",
+                "passive": "Pesca tre sfide e tienine al massimo due. Quando il mazzo delle sfide è completo, leggi la sezione 190.1",
                 "rewards": "+1 prosperità"
             }
         ]
@@ -736,7 +736,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Addestra collettivamente fino a 1 soldato per 3 oro e 1 risorsa materiale",
+                "operations": "Addestra collettivamente fino a 1 soldato per 3 monete d'oro e 1 risorsa materiale",
                 "downtime": "",
                 "wrecked": "Svantaggio a tutte le risoluzioni di eventi di attacco. Non puoi usare soldati.",
                 "passive": "Capacità: 4, Effetto: vantaggio e -5{ATTACK.fh}",
@@ -744,7 +744,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Addestra collettivamente fino a 1 soldato per 3 oro e 1 risorsa materiale",
+                "operations": "Addestra collettivamente fino a 1 soldato per 3 monete d'oro e 1 risorsa materiale",
                 "downtime": "",
                 "wrecked": "Svantaggio a tutte le risoluzioni di eventi di attacco. Non puoi usare soldati.",
                 "passive": "Capacità: 6, Effetto: vantaggio e -15{ATTACK.fh}",
@@ -752,7 +752,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Addestra collettivamente fino a 2 soldati per 3 oro e 1 risorsa materiale ciascuno",
+                "operations": "Addestra collettivamente fino a 2 soldati per 3 monete d'oro e 1 risorsa materiale ciascuno",
                 "downtime": "",
                 "wrecked": "Svantaggio a tutte le risoluzioni di eventi di attacco. Non puoi usare soldati.",
                 "passive": "Capacità: 8, Effetto: vantaggio e -25{ATTACK.fh}",
@@ -760,7 +760,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Addestra collettivamente fino a 2 soldati per 3 oro e 1 risorsa materiale ciascuno",
+                "operations": "Addestra collettivamente fino a 2 soldati per 3 monete d'oro e 1 risorsa materiale ciascuno",
                 "downtime": "",
                 "wrecked": "Svantaggio a tutte le risoluzioni di eventi di attacco. Non puoi usare soldati.",
                 "passive": "Capacità: 10, Effetto: vantaggio e -35{ATTACK.fh}",

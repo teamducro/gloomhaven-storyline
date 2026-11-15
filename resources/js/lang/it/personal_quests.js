@@ -33,7 +33,7 @@ export default {
     "gh-514": {
         "name": "A Study of Anatomy",
         "progress": [
-            "Assisti all'esaurimento dei membri del tuo gruppo quindici volte."
+            "Assisti allo sfinimento dei membri del tuo gruppo quindici volte."
         ]
     },
     "gh-515": {
@@ -63,7 +63,7 @@ export default {
     "gh-519": {
         "name": "Battle Legend",
         "progress": [
-            "Ottieni quindici ✔ dagli obiettivi di battaglia completati."
+            "Ottieni quindici ✔ dagli obiettivi della battaglia completati."
         ]
     },
     "gh-520": {
@@ -120,7 +120,7 @@ export default {
     "gh-527": {
         "name": "Zealot of the Blood God",
         "progress": [
-            "Diventa esausto dodici volte."
+            "Diventa sfinito dodici volte."
         ]
     },
     "gh-528": {
@@ -164,7 +164,7 @@ export default {
         "progress": [
             "Uccidi tre Melme.",
             "Uccidi tre Osservatori.",
-            "Uccidi tre Draconi Sputanti."
+            "Uccidi tre Drachi Sputanti."
         ]
     },
     "cs-330": {
@@ -244,7 +244,7 @@ export default {
     "cs-342": {
         "name": "The Path of Agony",
         "progress": [
-            "Assisti 13 volte alla morte o all'esaurimento di un alleato o nemico durante il suo stesso turno."
+            "Assisti 13 volte alla morte o allo sfinimento di un alleato o nemico durante il suo stesso turno."
         ]
     },
     "cs-343": {
@@ -316,7 +316,7 @@ export default {
     "cs-aa-002": {
         "name": "The Weight of failure",
         "progress": [
-            "Completa 8 scenari senza esaurirti e con 2 o meno PF.",
+            "Completa 8 scenari senza diventare sfinito e con 2 o meno PF.",
             "Concludi {SCENARIO AA2}"
         ]
     },
@@ -339,7 +339,7 @@ export default {
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "Ottieni il progetto “Serrated Edge” (Oggetto RM-01).",
+            "Ottieni il modello “Serrated Edge” (Oggetto RM-01).",
             "Applica {WOUND} o {RUPTURE} a trenta nemici.",
             "Concludi {SCENARIO RM1}."
         ]
@@ -358,7 +358,7 @@ export default {
             42
         ],
         "progress": [
-            "Raccogli personalmente cinque tipi diversi di erbe tramite segnalini bottino."
+            "Raccogli personalmente cinque tipi diversi di risorse vegetali tramite i segnalini bottino."
         ]
     },
     "fh-2": {
@@ -413,7 +413,7 @@ export default {
             21
         ],
         "progress": [
-            "Durante otto diverse fasi dell'Avamposto, leggi il nome di una persona in un evento o paragrafo."
+            "Durante otto diverse fasi dell'Avamposto, leggi il nome di una persona in un evento o sezione."
         ]
     },
     "fh-7": {
@@ -446,7 +446,7 @@ export default {
             83
         ],
         "progress": [
-            "Ottieni 150 esperienza dalle carte abilità."
+            "Ottieni 150 esperienza dalle carte capacità."
         ]
     },
     "fh-10": {
@@ -500,7 +500,7 @@ export default {
             "Completa uno scenario nel Bosco del Fuoco Bianco.",
             "Completa uno scenario nelle Montagne Coldirame.",
             "Completa uno scenario nella Foresta Radiosa.",
-            "Completa uno scenario nei Campi di Cristallo.",
+            "Completa uno scenario in Crystal Fields.",
             "Completa uno scenario nel Mare Gelido."
         ]
     },
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "Dona 70 monete d'oro al Tempio della Grande Quercia."
+            "Dona 70 monete d'oro al Temple of the Great Oak."
         ]
     },
     "fh-16": {
@@ -531,7 +531,7 @@ export default {
             67
         ],
         "progress": [
-            "Ottieni 16 {CHECK} dagli obiettivi di battaglia completati."
+            "Ottieni 16 {CHECK} dagli obiettivi della battaglia completati."
         ]
     },
     "fh-18": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "Ottieni il progetto “Abyss Axe” (Oggetto 039) e usalo per uccidere dieci tra Cadaveri Ghiacciati, Spettri del Ghiaccio e/o Condanne Viventi."
+            "Ottieni il modello “Abyss Axe” (Oggetto 039) e usalo per uccidere dieci tra Cadaveri Ghiacciati, Spettri del Ghiaccio e/o Condanne Viventi."
         ]
     },
     "fh-20": {
@@ -588,42 +588,42 @@ export default {
         "name": "The Chosen One",
         "unlock": "Apri la busta A",
         "progress": [
-            "Assisti all'esaurimento di 10 alleati durante scenari che altrimenti completi."
+            "Assisti allo sfinimento di 10 alleati durante scenari che altrimenti completi."
         ]
     },
     "gh2-1": {
         "name": "Political Intrigue",
         "progress": [
-            "Aggiungi l'Evento Città 61 al mazzo eventi città.",
+            "Aggiungi l'Evento di Città 61 al mazzo degli eventi di città.",
             "Ottieni 30 voti: tre voti ogni volta che ottieni reputazione, un voto per ogni oggetto di reputazione di fazione portato in uno scenario completato.",
-            "Leggi il {SECTION} 136.1 durante la fase città (il successo non è garantito)."
+            "Leggi {SECTION} 136.1 durante la fase città (il successo non è garantito)."
         ]
     },
     "gh2-2": {
         "name": "Inn to Hospitality",
         "progress": [
             "Saccheggia 60 segnalini denaro.",
-            "Leggi il {SECTION} 125.4."
+            "Leggi {SECTION} 125.4."
         ]
     },
     "gh2-3": {
-        "name": "Abilità Potenziate",
+        "name": "Augmented Abilities",
         "progress": [
             "Acquista cinque potenziamenti (richiede il traguardo globale “La Forza del Potenziamento”).",
-            "Leggi il {SECTION} 71.2."
+            "Leggi {SECTION} 71.2."
         ]
     },
     "gh2-4": {
-        "name": "La Caduta dell'Uomo",
+        "name": "The Fall of Man",
         "progress": [
             "Ottieni “Aesther Spyglass” (Oggetto 149). Non può essere venduto.",
             "Usa “Aesther Spyglass” (Oggetto 149) dieci volte.",
-            "Leggi il {SECTION} 115.2.",
+            "Leggi {SECTION} 115.2.",
             "Porta {SCENARIO 63} a conclusione."
         ]
     },
     "gh2-5": {
-        "name": "Cercatore di Xorn",
+        "name": "Seeker of Xorn",
         "progress": [
             "Sali di livello per sbloccare {SCENARIO 57}.",
             "Porta {SCENARIO 57} a conclusione.",
@@ -632,42 +632,42 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "Fanatico del Dio del Sangue",
+        "name": "Zealot of the Blood God",
         "progress": [
-            "Termina dieci scenari con i punti ferita pari o inferiori alla metà del massimo senza esaurirti.",
-            "Leggi il {SECTION} 122.3."
+            "Termina dieci scenari con i punti ferita pari o inferiori alla metà del massimo senza diventare sfinito.",
+            "Leggi {SECTION} 122.3."
         ]
     },
     "gh2-7": {
         "name": "A Tale to Tell",
         "progress": [
             "Saccheggia, o assisti al saccheggio da parte del tuo gruppo di, una tessera tesoro in dieci scenari.",
-            "Leggi il {SECTION} 12.3."
+            "Leggi {SECTION} 12.3."
         ]
     },
     "gh2-8": {
-        "name": "Riconquistare gli Alberi",
+        "name": "Take Back the Trees",
         "progress": [
-            "Vivi dieci eventi strada con il tuo gruppo.",
-            "Leggi il {SECTION} 64.3.",
+            "Vivi dieci eventi di strada con il tuo gruppo.",
+            "Leggi {SECTION} 64.3.",
             "Porta {SCENARIO 59} a conclusione.",
             "Porta {SCENARIO 60} a conclusione."
         ]
     },
     "gh2-9": {
-        "name": "Alla Ricerca della Cura",
+        "name": "Finding the Cure",
         "progress": [
             "Completa scenari in cinque tra: Montagne Coldirame, Bosco dei Cadaveri, Foresta dei Pugnali, Gloomhaven, Palude Persistente, Mare Nebbioso, Montagne dell'Osservatore.",
-            "Leggi il {SECTION} 55.3.",
+            "Leggi {SECTION} 55.3.",
             "Porta {SCENARIO 61} a conclusione.",
             "Porta {SCENARIO 62} a conclusione."
         ]
     },
     "gh2-10": {
-        "name": "Sterminatore di Aberrazioni",
+        "name": "Aberrant Slayer",
         "progress": [
-            "Potenzia una carta abilità (tua o di un alleato) con un elemento {ANY} (richiede il traguardo globale “La Forza del Potenziamento”).",
-            "Leggi il {SECTION} 14.3.",
+            "Potenzia una carta capacità (tua o di un alleato) con un elemento {ANY} (richiede il traguardo globale “La Forza del Potenziamento”).",
+            "Leggi {SECTION} 14.3.",
             "Porta {SCENARIO 64} a conclusione."
         ]
     },
@@ -675,51 +675,51 @@ export default {
         "name": "Adoptive Parent",
         "progress": [
             "Saccheggia tre segnalini denaro lasciati dai nemici in dieci scenari.",
-            "Leggi il {SECTION} 122.5.",
+            "Leggi {SECTION} 122.5.",
             "Porta {SCENARIO 66} a conclusione."
         ]
     },
     "gh2-12": {
-        "name": "Strumento di Luce",
+        "name": "Implement of Light",
         "progress": [
             "Sblocca subito {SCENARIO 65}.",
             "Trova “Shield of the Righteous” (Oggetto 148).",
             "Usa “Shield of the Righteous” (Oggetto 148) per annullare dieci attacchi da 4 danni o più.",
-            "Leggi il {SECTION} 82.1."
+            "Leggi {SECTION} 82.1."
         ]
     },
     "gh2-13": {
-        "name": "Classe Mercante",
+        "name": "Merchant Class",
         "progress": [
             "Possiedi tre oggetti {HEAD}.",
             "Possiedi tre oggetti {BODY}.",
             "Possiedi tre oggetti {LEGS}.",
             "Possiedi cinque oggetti {ONE-HAND} o {TWO-HANDS}.",
             "Possiedi cinque oggetti {SMALL-ITEM}.",
-            "Leggi il {SECTION} 129.1."
+            "Leggi {SECTION} 129.1."
         ]
     },
     "gh2-14": {
-        "name": "Viandante Eterno",
+        "name": "Eternal Wanderer",
         "progress": [
             "Completa 12 scenari diversi.",
-            "Leggi il {SECTION} 52.2."
+            "Leggi {SECTION} 52.2."
         ]
     },
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "Aggiungi gli Eventi Città 69 e 70 al mazzo eventi città. Ottieni “Black Card” (Oggetto 113). Non può essere venduto.",
+            "Aggiungi gli Eventi di Città 69 e 70 al mazzo degli eventi di città. Ottieni “Carta Nera” (Oggetto 113). Non può essere venduto.",
             "Completa sei scenari secondari (numero di scenario superiore a 56).",
-            "Leggi il {SECTION} 128.2."
+            "Leggi {SECTION} 128.2."
         ]
     },
     "gh2-16": {
-        "name": "Il Veleno Perfetto",
+        "name": "The Perfect Poison",
         "progress": [
             "Ottieni “Pugnale Avvelenato” (Oggetto 7).",
             "Usalo per applicare {POISON} a un nemico senza {POISON} 30 volte.",
-            "Leggi il {SECTION} 8.3."
+            "Leggi {SECTION} 8.3."
         ]
     },
     "gh2-17": {
@@ -727,46 +727,46 @@ export default {
         "progress": [
             "Ottieni “Experimental Armor” (Oggetto 150).",
             "Usala per far subire danno a 20 nemici.",
-            "Leggi il {SECTION} 47.4."
+            "Leggi {SECTION} 47.4."
         ]
     },
     "gh2-18": {
-        "name": "Leggenda di Battaglia",
+        "name": "Battle Legend",
         "progress": [
-            "Ottieni 12 segni di spunta dagli obiettivi di battaglia completati.",
-            "Leggi il {SECTION} 23.3."
+            "Ottieni 12 segni di spunta dagli obiettivi della battaglia completati.",
+            "Leggi {SECTION} 23.3."
         ]
     },
     "gh2-19": {
         "name": "Martial Study",
         "progress": [
             "Usa otto diversi oggetti {ONE-HAND} o {TWO-HANDS} durante gli scenari.",
-            "Leggi il {SECTION} 67.2."
+            "Leggi {SECTION} 67.2."
         ]
     },
     "gh2-20": {
-        "name": "Devozione in Ogni Cosa",
+        "name": "Piety in All Things",
         "progress": [
-            "Dona 120 monete d'oro al Tempio della Grande Quercia.",
-            "Leggi il {SECTION} 51.5."
+            "Dona 120 monete d'oro al Temple of the Great Oak.",
+            "Leggi {SECTION} 51.5."
         ]
     },
     "gh2-21": {
         "name": "Pursuit of Proficiency",
         "progress": [
-            "Ottieni 120 esperienza dalle carte abilità.",
-            "Leggi il {SECTION} 17.2."
+            "Ottieni 120 esperienza dalle carte capacità.",
+            "Leggi {SECTION} 17.2."
         ]
     },
     "gh2-22": {
-        "name": "Caccia ai Trofei",
+        "name": "Trophy Hunt",
         "progress": [
             "Uccidi 20 tipi diversi di mostri.",
-            "Leggi il {SECTION} 21.1."
+            "Leggi {SECTION} 21.1."
         ]
     },
     "cq-cq01": {
-        "name": "Conquista i Tuoi Demoni",
+        "name": "Conquer Your Demons",
         "unlock": "Apri una busta classe o edificio a tua scelta. I tuoi futuri personaggi aggiungono {PIERCE} 1 e {WOUND} a tutti gli attacchi che hanno come bersaglio demoni.",
         "progress": [
             "Uccidi due Demoni della Terra generati in questo modo.",
@@ -778,22 +778,22 @@ export default {
         ]
     },
     "cq-cq02": {
-        "name": "I Tuoi Amici Sono Preoccupati",
+        "name": "Your Friends Are Concerned",
         "unlock": "Apri una busta classe o edificio a tua scelta. Puoi perdere permanentemente i segni talento bonus guadagnati dal ritiro dei personaggi della tua stirpe. Per ogni segno talento perso, ottieni 30 monete d'oro da spendere subito in potenziamenti per il tuo prossimo personaggio.",
         "progress": [
-            "Ottieni 30 segni di spunta dagli Obiettivi di Battaglia. Pesca e tieni un Obiettivo di Battaglia aggiuntivo a ogni scenario; non ottieni alcun segno di spunta a meno che tu non li porti a termine tutti."
+            "Ottieni 30 segni di spunta dagli Obiettivi della Battaglia. Pesca e tieni un Obiettivo della Battaglia aggiuntivo a ogni scenario; non ottieni alcun segno di spunta a meno che tu non li porti a termine tutti."
         ]
     },
     "cq-cq03": {
-        "name": "Conseguenze del Combattimento",
+        "name": "Consequences of Combat",
         "unlock": "Apri una busta classe o edificio a tua scelta. I tuoi futuri personaggi ottengono {STRENGTHEN} ogni volta che pescano un {NULL_MODIFIER} durante uno scenario.",
         "progress": [
             "Ottieni 50 moderazione: una volta per scenario, riduci il valore di un attacco prima di pescare un modificatore; ottieni un punto moderazione per ogni punto ridotto."
         ]
     },
     "cq-cq04": {
-        "name": "Una Conclusione Drammatica",
-        "unlock": "Apri una busta classe o edificio a tua scelta. I tuoi futuri personaggi possono eseguire subito i passaggi di un riposo lungo ogni volta che un alleato si esaurisce.",
+        "name": "A Dramatic Conclusion",
+        "unlock": "Apri una busta classe o edificio a tua scelta. I tuoi futuri personaggi possono eseguire subito i passaggi di un riposo lungo ogni volta che un alleato diventa sfinito.",
         "progress": [
             "Vinci 10 scenari in cui le tue ultime due azioni sono un'azione superiore con perdita e un'azione inferiore con perdita."
         ]
