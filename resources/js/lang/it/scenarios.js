@@ -974,7 +974,7 @@ export default {
         ]
     },
     "fc-112": {
-        "name": "In Fondo alla Questione",
+        "name": "The Bottom of It",
         "rewards": [
             [
                 "10 monete d'oro ciascuno",
@@ -1025,35 +1025,35 @@ export default {
         ]
     },
     "jotl-1": {
-        "name": "Imboscata sul Ciglio della Strada"
+        "name": "Roadside Ambush"
     },
     "jotl-2": {
-        "name": "Un Buco nel Muro",
+        "name": "A Hole in the Wall",
         "rewards": [
             "25 monete d'oro ciascuno",
             "Aggiungi gli oggetti 1-13 al negozio"
         ]
     },
     "jotl-3": {
-        "name": "La Black Ship",
+        "name": "The Black Ship",
         "rewards": [
             "1 ✔ ciascuno"
         ]
     },
     "jotl-4": {
-        "name": "Le Pietre Rituali",
+        "name": "A Ritual in Stone",
         "rewards": [
             "“Mana Potion” (Oggetto 14)"
         ]
     },
     "jotl-5": {
-        "name": "Una Comprensione più Profonda",
+        "name": "A Deeper Understanding",
         "rewards": [
             "25 punti esperienza ciascuno"
         ]
     },
     "jotl-6": {
-        "name": "Ricerca Corrotta",
+        "name": "Corrupted Research",
         "rewards": [
             "1 ✔ ciascuno"
         ]
@@ -1068,58 +1068,58 @@ export default {
         "name": "Hidden Tumor"
     },
     "jotl-9": {
-        "name": "Evoluzione Esplosiva",
+        "name": "Explosive Evolution",
         "rewards": [
             "20 punti esperienza ciascuno",
             "Aggiungi gli oggetti 15-20 al negozio"
         ]
     },
     "jotl-10": {
-        "name": "Il Gauntlet",
+        "name": "The Gauntlet",
         "rewards": [
             "15 punti esperienza ciascuno"
         ]
     },
     "jotl-11": {
-        "name": "Fogne Profanate",
+        "name": "Defiled Sewers",
         "rewards": [
             "“Scialle Pulcioso” (Oggetto 28)"
         ]
     },
     "jotl-12": {
-        "name": "Fogne Seducenti",
+        "name": "Beguiling Sewers",
         "rewards": [
             "“Scialle Pulcioso” (Oggetto 28)"
         ]
     },
     "jotl-13": {
-        "name": "Vile Raccolto",
+        "name": "Vile Harvest",
         "rewards": [
             "1 ✔ ciascuno"
         ]
     },
     "jotl-14": {
-        "name": "Raccolto Tossico",
+        "name": "Toxic Harvest",
         "rewards": [
             "1 ✔ ciascuno"
         ]
     },
     "jotl-15": {
-        "name": "Sangue Contaminato",
+        "name": "Tainted Blood",
         "rewards": [
             "10 monete d'oro ciascuno",
             "Aggiungi gli oggetti 21-26 al negozio"
         ]
     },
     "jotl-16": {
-        "name": "Risultati Misti",
+        "name": "Mixed Results",
         "rewards": [
             "15 punti esperienza ciascuno",
             "“Scudo Torre” (Oggetto 29)"
         ]
     },
     "jotl-17": {
-        "name": "Crepuscolo Rosso",
+        "name": "Red Twilight",
         "rewards": [
             "25 punti esperienza ciascuno",
             "30 monete d'oro ciascuno"
@@ -1132,31 +1132,31 @@ export default {
         ]
     },
     "jotl-19": {
-        "name": "La Tana dei Ladri",
+        "name": "Den of Thieves",
         "rewards": [
             "“Ring of Strength” (Oggetto 31)"
         ]
     },
     "jotl-20": {
-        "name": "Merci Fuori Posto",
+        "name": "Misplaced Goods",
         "rewards": [
             "10 monete d'oro ciascuno"
         ]
     },
     "jotl-21": {
-        "name": "Agenti del Caos",
+        "name": "Agents of Chaos",
         "rewards": [
             "15 monete d'oro ciascuno"
         ]
     },
     "jotl-22": {
-        "name": "Messaggio Poco Amichevole",
+        "name": "Unfriendly Message",
         "rewards": [
             "“Anello d'Acciaio” (Oggetto 33)"
         ]
     },
     "jotl-23": {
-        "name": "Il Meglio del Meglio",
+        "name": "Best of the Best",
         "rewards": [
             "“Barbed Axe” (Oggetto 34)"
         ]
@@ -1168,7 +1168,7 @@ export default {
         ]
     },
     "jotl-25": {
-        "name": "Il Più Bel Lavoro del Mondo",
+        "name": "The Greatest Job in the World",
         "rewards": [
             "“Jet Boots” (Oggetto 36)"
         ]
@@ -1777,7 +1777,7 @@ export default {
         ]
     },
     "fh-79": {
-        "name": "Reliquia",
+        "name": "Relic",
         "rewards": [
             "Ottieni 3 morale",
             "Aggiungi 45.2 al calendario tra tre settimane"
@@ -2081,7 +2081,7 @@ export default {
         ]
     },
     "fh-116": {
-        "name": "Guardie della Carovana",
+        "name": "Caravan Guards",
         "rewards": [
             [
                 "Ottieni 1 morale"
@@ -2392,7 +2392,7 @@ export default {
         ]
     },
     "fh-214": {
-        "name": "Ricarica",
+        "name": "Recharge",
         "rewards": [
             "“Energized Module” (Oggetto 261)"
         ]

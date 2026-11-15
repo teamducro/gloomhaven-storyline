@@ -435,7 +435,7 @@ export default {
     "Sealed": "Sigillati",
     "Road Events": "Eventi di Strada",
     "City Events": "Eventi di Città",
-    "Diviner": "Diviner",
+    "Diviner": "Divinatore",
     "Orchid society": "Società dell'Orchidea",
     "Citizens of Gloomhaven": "Cittadini di Gloomhaven",
     "The rift device": "Il dispositivo del Varco",

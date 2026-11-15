@@ -766,7 +766,7 @@ export default {
         ]
     },
     "cq-cq01": {
-        "name": "Conquista i Tuoi Demoni",
+        "name": "Conquer Your Demons",
         "unlock": "Apri una busta classe o edificio a tua scelta. I tuoi futuri personaggi aggiungono {PIERCE} 1 e {WOUND} a tutti gli attacchi che hanno come bersaglio demoni.",
         "progress": [
             "Uccidi due Demoni della Terra generati in questo modo.",
@@ -778,21 +778,21 @@ export default {
         ]
     },
     "cq-cq02": {
-        "name": "I Tuoi Amici Sono Preoccupati",
+        "name": "Your Friends Are Concerned",
         "unlock": "Apri una busta classe o edificio a tua scelta. Puoi perdere permanentemente i segni talento bonus guadagnati dal ritiro dei personaggi della tua stirpe. Per ogni segno talento perso, ottieni 30 monete d'oro da spendere subito in potenziamenti per il tuo prossimo personaggio.",
         "progress": [
             "Ottieni 30 segni di spunta dagli Obiettivi della Battaglia. Pesca e tieni un Obiettivo della Battaglia aggiuntivo a ogni scenario; non ottieni alcun segno di spunta a meno che tu non li porti a termine tutti."
         ]
     },
     "cq-cq03": {
-        "name": "Conseguenze del Combattimento",
+        "name": "Consequences of Combat",
         "unlock": "Apri una busta classe o edificio a tua scelta. I tuoi futuri personaggi ottengono {STRENGTHEN} ogni volta che pescano un {NULL_MODIFIER} durante uno scenario.",
         "progress": [
             "Ottieni 50 moderazione: una volta per scenario, riduci il valore di un attacco prima di pescare un modificatore; ottieni un punto moderazione per ogni punto ridotto."
         ]
     },
     "cq-cq04": {
-        "name": "Una Conclusione Drammatica",
+        "name": "A Dramatic Conclusion",
         "unlock": "Apri una busta classe o edificio a tua scelta. I tuoi futuri personaggi possono eseguire subito i passaggi di un riposo lungo ogni volta che un alleato diventa sfinito.",
         "progress": [
             "Vinci 10 scenari in cui le tue ultime due azioni sono un'azione superiore con perdita e un'azione inferiore con perdita."

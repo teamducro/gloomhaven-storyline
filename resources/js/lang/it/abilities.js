@@ -103,7 +103,7 @@ export default {
             "name": "devastating hack"
         },
         "eye-for-an-eye": {
-            "name": "Occhio per Occhio"
+            "name": "eye for an eye"
         },
         "face-your-end": {
             "name": "face your end"
@@ -124,7 +124,7 @@ export default {
             "name": "immovable phalanx"
         },
         "juggernaut": {
-            "name": "Colosso"
+            "name": "juggernaut"
         },
         "king-of-the-hill": {
             "name": "king of the hill"
@@ -148,7 +148,7 @@ export default {
             "name": "shield bash"
         },
         "skewer": {
-            "name": "Infilzare"
+            "name": "skewer"
         },
         "skirmishing-maneuver": {
             "name": "skirmishing maneuver"
@@ -685,7 +685,7 @@ export default {
             "name": "hostile takeover"
         },
         "into-the-night": {
-            "name": "Nella Notte"
+            "name": "into the night"
         },
         "many-as-one": {
             "name": "many as one"
@@ -799,7 +799,7 @@ export default {
             "name": "smoke step"
         },
         "soulfire": {
-            "name": "Fuoco dell'Anima"
+            "name": "soulfire"
         },
         "spirit-of-the-night": {
             "name": "spirit of the night"
@@ -970,7 +970,7 @@ export default {
             "name": "reserved energy"
         },
         "restock": {
-            "name": "Rifornire"
+            "name": "restock"
         },
         "scroll-of-annihilation": {
             "name": "scroll of annihilation"
@@ -1045,7 +1045,7 @@ export default {
             "name": "master physician"
         },
         "medical-pack": {
-            "name": "Kit Medico"
+            "name": "medical pack"
         },
         "mobile-response": {
             "name": "mobile response"
@@ -1345,7 +1345,7 @@ export default {
             "name": "wistful wounding"
         },
         "biting-wind": {
-            "name": "Vento Pungente"
+            "name": "biting wind"
         },
         "black-fire": {
             "name": "black fire"
@@ -1420,7 +1420,7 @@ export default {
             "name": "unending dominance"
         },
         "unwavering-hand": {
-            "name": "Mano Salda"
+            "name": "unwavering hand"
         },
         "volatile-flame": {
             "name": "volatile flame"
@@ -1611,7 +1611,7 @@ export default {
             "name": "anticipate intricacies"
         },
         "bad-omen": {
-            "name": "Cattivo Presagio"
+            "name": "bad omen"
         },
         "call-of-the-nether": {
             "name": "call of the nether"
@@ -1677,7 +1677,7 @@ export default {
             "name": "protective aura"
         },
         "ray-of-light": {
-            "name": "Raggio di Luce"
+            "name": "ray of light"
         },
         "revitalizing-fount": {
             "name": "revitalizing fount"
@@ -1706,7 +1706,7 @@ export default {
             "name": "dust cloud"
         },
         "explode": {
-            "name": "Esplodere"
+            "name": "explode"
         },
         "explosive-blitz": {
             "name": "explosive blitz"
@@ -1895,7 +1895,7 @@ export default {
             "name": "horns of the beast"
         },
         "no-fear": {
-            "name": "Senza Paura"
+            "name": "no fear"
         },
         "precision-strike": {
             "name": "precision strike"
@@ -3648,7 +3648,7 @@ export default {
             "name": "banner of strength"
         },
         "regroup": {
-            "name": "Riorganizzarsi"
+            "name": "regroup"
         },
         "resolved-courage": {
             "name": "Coraggio Risoluto"
@@ -3894,7 +3894,7 @@ export default {
             "name": "bloodletting"
         },
         "break-through": {
-            "name": "Sfondare"
+            "name": "break through"
         },
         "chunk-of-flesh": {
             "name": "chunk of flesh"
@@ -3954,10 +3954,10 @@ export default {
             "name": "relentless"
         },
         "shockwave": {
-            "name": "Onda d'Urto"
+            "name": "shockwave"
         },
         "survivalist": {
-            "name": "Sopravvissuto"
+            "name": "survivalist"
         },
         "sustained-momentum": {
             "name": "sustained momentum"
@@ -4824,13 +4824,13 @@ export default {
             "name": "stone armor"
         },
         "swelter": {
-            "name": "Afa"
+            "name": "swelter"
         },
         "under-pressure": {
             "name": "under pressure"
         },
         "wildfire": {
-            "name": "Incendio Boschivo"
+            "name": "wildfire"
         },
         "birds-in-a-tempest": {
             "name": "birds in a tempest"
@@ -5464,10 +5464,10 @@ export default {
             "name": "trample"
         },
         "eye-for-an-eye": {
-            "name": "Occhio per Occhio"
+            "name": "eye for an eye"
         },
         "skewer": {
-            "name": "Infilzare"
+            "name": "skewer"
         },
         "overwhelming-assault": {
             "name": "overwhelming assault"
@@ -5503,7 +5503,7 @@ export default {
             "name": "intimidating growl"
         },
         "juggernaut": {
-            "name": "Colosso"
+            "name": "juggernaut"
         },
         "hook-and-chain": {
             "name": "hook and chain"
@@ -6388,7 +6388,7 @@ export default {
             "name": "cursed blades"
         },
         "into-the-night": {
-            "name": "Nella Notte"
+            "name": "into the night"
         },
         "seeping-tendrils": {
             "name": "seeping tendrils"
@@ -6919,10 +6919,10 @@ export default {
             "name": "drifting stingers"
         },
         "biting-wind": {
-            "name": "Vento Pungente"
+            "name": "biting wind"
         },
         "unwavering-hand": {
-            "name": "Mano Salda"
+            "name": "unwavering hand"
         },
         "intervening-apparitions": {
             "name": "intervening apparitions"

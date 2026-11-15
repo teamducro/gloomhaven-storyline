@@ -90,7 +90,7 @@ export default {
         "name": "Il Tesoro del Draco"
     },
     "gh-GTDS": {
-        "name": "Il Draco Ucciso"
+        "name": "Il Draco è Stato Ucciso"
     },
     "gh-GTDA": {
         "name": "Il Draco è Stato Aiutato"
@@ -252,7 +252,7 @@ export default {
         "name": "Severed Ties"
     },
     "gh-PA": {
-        "name": "Complici"
+        "name": "Accomplices"
     },
     "gh-PS": {
         "name": "Saboteurs"
@@ -429,7 +429,7 @@ export default {
         "name": "Il Draco è Stato Aiutato"
     },
     "gh2-G2TDS": {
-        "name": "Il Draco Ucciso"
+        "name": "Il Draco è Stato Ucciso"
     },
     "gh2-G2TPE": {
         "name": "La Forza del Potenziamento"
