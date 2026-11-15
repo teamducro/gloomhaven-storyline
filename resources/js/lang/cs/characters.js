@@ -303,13 +303,13 @@ export default {
             "Odstraň čtyři karty {+0_WHITE}",
             "Odstraň dvě karty {-1_WHITE}",
             "Odstraň jednu kartu {-2_WHITE} a jednu kartu {+1_WHITE}",
-            "Nahraď jednu kartu {-1_WHITE} jednou kartou {+1_WHITE}",
-            "Nahraď jednu kartu {+1_WHITE} jednou kartou {+2_WHITE} {FIRE}",
-            "Nahraď jednu kartu {+1_WHITE} jednou kartou {+2_WHITE} {LIGHT}",
+            "Vyměň jednu kartu {-1_WHITE} za jednu kartu {+1_WHITE}",
+            "Vyměň jednu kartu {+1_WHITE} za jednu kartu {+2_WHITE} {FIRE}",
+            "Vyměň jednu kartu {+1_WHITE} za jednu kartu {+2_WHITE} {LIGHT}",
             "Přidej jednu kartu {+1_WHITE} {FIRE_LIGHT}",
             "Přidej jednu kartu {+1_WHITE} {SHIELD} 1",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {IMMOBILIZE}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {WOUND}"
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+1_WHITE} {IMMOBILIZE}",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+1_WHITE} {WOUND}"
         ]
     },
     "DM": {
@@ -318,27 +318,27 @@ export default {
             "Odstraň čtyři karty {+0_WHITE}",
             "Odstraň dvě karty {-1_WHITE}",
             "Odstraň jednu kartu {-2_WHITE} a jednu kartu {+1_WHITE}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+2_WHITE} {MUDDLE}",
-            "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} {POISON}",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+2_WHITE} {MUDDLE}",
+            "Vyměň jednu kartu {-1_WHITE} za jednu kartu {+0_WHITE} {POISON}",
             "Přidej jednu kartu {+2_WHITE}",
-            "Nahraď jednu kartu {+1_WHITE} jednou kartou {+2_WHITE} {EARTH}",
-            "Nahraď jednu kartu {+1_WHITE} jednou kartou {+2_WHITE} {FIRE}",
-            "Přidej jednu kartu {+0_WHITE} všichni sousedící nepřátelé utrpí zranění 1"
+            "Vyměň jednu kartu {+1_WHITE} za jednu kartu {+2_WHITE} {EARTH}",
+            "Vyměň jednu kartu {+1_WHITE} za jednu kartu {+2_WHITE} {FIRE}",
+            "Přidej jednu kartu {+0_WHITE}: Všichni nepřátelé na sousedících polích utrpí 1 zranění."
         ]
     },
     "HT": {
         "name": "Sekerník",
         "perks": [
             "Odstraň dvě karty {-1_WHITE}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+2_WHITE} {MUDDLE}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {POISON}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {WOUND}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {IMMOBILIZE}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {PUSH}2",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+0_WHITE} {STUN}",
-            "Nahraď jednu kartu {+1_WHITE} jednou kartou {+1_WHITE} {STUN}",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+2_WHITE} {MUDDLE}",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+1_WHITE} {POISON}",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+1_WHITE} {WOUND}",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+1_WHITE} {IMMOBILIZE}",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+1_WHITE} {PUSH}2",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+0_WHITE} {STUN}",
+            "Vyměň jednu kartu {+1_WHITE} za jednu kartu {+1_WHITE} {STUN}",
             "Přidej jednu kartu {+2_WHITE} {WIND}",
-            "Nahraď jednu kartu {+1_WHITE} jednou kartou {+3_WHITE}"
+            "Vyměň jednu kartu {+1_WHITE} za jednu kartu {+3_WHITE}"
         ]
     },
     "VW": {
@@ -346,10 +346,10 @@ export default {
         "perks": [
             "Odstraň dvě karty {-1_WHITE}",
             "Odstraň jednu kartu {-2_WHITE}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {DARK}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {ICE}",
-            "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} {HEAL}1 (spojenec)",
-            "Přidej jednu kartu {+1_WHITE} {HEAL}1 (spojenec)",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+1_WHITE} {DARK}",
+            "Vyměň jednu kartu {+0_WHITE} za jednu kartu {+1_WHITE} {ICE}",
+            "Vyměň jednu kartu {-1_WHITE} za jednu kartu {+0_WHITE} {HEAL}1 (spojence)",
+            "Přidej jednu kartu {+1_WHITE} {HEAL}1 (spojence)",
             "Přidej jednu kartu {+1_WHITE} {POISON}",
             "Přidej jednu kartu {+3_WHITE}",
             "Přidej jednu kartu {+1_WHITE} {CURSE}"
@@ -495,7 +495,7 @@ export default {
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {+0_WHITE} {DISARM} a jednou kartou {-1_WHITE} {ANY}",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {AGAIN} {+1_WHITE} „{HO_CIRCLE} a jedna {AGAIN} {-1_WHITE} {CURSE}“",
             "Nahraď dvě karty {+1_WHITE} jednou kartou {+3_WHITE} „{REGENERATE}, sebe“",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} „Vytvoř jámu Prázdnoty na prázdném poli v {RANGE}2“",
+            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} „Vytvoř jámu Void na prázdném poli v {RANGE}2“",
             "Ignoruj negativní efekty scénáře a přidej jednu kartu {+0_WHITE} „{WARD}, sebe“"
         ]
     },
@@ -722,7 +722,7 @@ export default {
     "PY": {
         "name": "Žhavran",
         "masteries": [
-            "V každém kole vytvoř nebo zničíš alespoň jednu překážku či dlaždici nebezpečného terénu.",
+            "V každém kole scénáře vytvoř nebo znič alespoň jednu překážku nebo dílek nebezpečného terénu.",
             "Přesuň během jednoho tahu nepřátele přes šest různých polí nebezpečného terénu, který jsi vytvořil/a."
         ],
         "perks": [
@@ -1015,13 +1015,13 @@ export default {
             "Ignoruj efekty předmětů {-1} a přidej dvě karty {+1_WHITE}",
             "Jednou během každého scénáře během svého tahu můžeš vykonat: {LOOT 1}, a pokud tato schopnost sebere alespoň jeden žeton peněz, můžeš {RECOVER.fh} jeden předmět {BODY}",
             "Kdykoli provádíš dlouhý odpočinek, přidej +1 {MOVE.fh} ke své první pohybové schopnosti v následujícím kole",
-            "Každá postava získá výhodu na svůj první útok během prvního kola každého scénáře"
+            "Každý hrdina získá výhodu na svůj první útok během prvního kola každého scénáře"
         ]
     },
     "CH2": {
         "name": "Prasklivec",
         "masteries": [
-            "Během celého scénáře vytvoř, zničíš nebo přesuň v každém kole alespoň jednu dlaždici překážky.",
+            "Během celého scénáře vytvoř, znič nebo přesuň v každém kole alespoň jeden dílek překážky.",
             "V jednom scénáři vyleč během jednoho kola 8 nebo více bodů zdraví, způsob 8 nebo více zranění útočnou schopností na dálku a způsob 8 nebo více zranění útočnou schopností na blízko."
         ],
         "perks": [
@@ -1041,7 +1041,7 @@ export default {
         "name": "Zlodějka mysli",
         "masteries": [
             "V jednom scénáři zabij 5 nebo více nepřátel schopnostmi ovládání.",
-            "V jednom scénáři spusť efekt při útoku čtyř různých Vylepšení alespoň třikrát každého."
+            "V jednom scénáři spusť efekt při útoku čtyř různých Rozšíření alespoň třikrát každého."
         ],
         "perks": [
             "Nahraď dvě karty {-1_WHITE} jednou kartou {+0_WHITE} „Po útočné schopnosti ovládni cíl: {MOVE.fh}1“",
@@ -1097,7 +1097,7 @@ export default {
     "TI2": {
         "name": "Kutil",
         "masteries": [
-            "Během celého scénáře při každém svém tahu uštědři nepříteli negativní stav, uštědři spojenci pozitivní stav, vyleč spojence nebo udělí spojenci Obranu.",
+            "Během celého scénáře při každém svém tahu uštědři nepříteli negativní stav, uštědři spojenci pozitivní stav, vyleč spojence nebo uděl spojenci obranu.",
             "Vykonej 11 různých akcí {LOST.fh}."
         ],
         "perks": [
@@ -1243,13 +1243,13 @@ export default {
             "Nahraď dvě karty {-1_WHITE} jednou kartou {+0_WHITE} {MUDDLE.fh}",
             "Nahraď jednu kartu {+0_WHITE} jednou kartou {+0_WHITE} „Získej 10 zásob“",
             "Nahraď dvě karty {+0_WHITE} dvěma kartami {AGAIN} {PIERCE.fh}3",
-            "Nahraď jednu kartu {+1_WHITE} dvěma kartami {+0_WHITE} „Získej předmět <i>Ostnatý pás</i> nebo <i>Železná deska</i>“",
+            "Nahraď jednu kartu {+1_WHITE} dvěma kartami {+0_WHITE} „Získej předmět <i>Barbed Strip</i> nebo <i>Iron Plate</i>“",
             "Nahraď dvě karty {+1_WHITE} dvěma kartami {+2_WHITE}",
-            "Přidej jednu kartu {AGAIN} „Získej předmět <i>Svitek přemístění</i> nebo <i>Nabroušený dirk</i>“",
+            "Přidej jednu kartu {AGAIN} „Získej předmět <i>Scroll of Relocation</i> nebo <i>Sharpened Dirk</i>“",
             "Přidej jednu kartu {AGAIN} {STUN.fh}",
             "Ignoruj efekty předmětů {-1} a odstraň jednu kartu {+0_WHITE}",
             "Do každého scénáře si můžeš přinést jeden další předmět {SMALL-ITEM}",
-            "Tvá družina může nakupovat předměty od každé frakce, jako by jejich cena byla o pět zlaťáků nižší a vaše reputace u této frakce o dva vyšší",
+            "Tvá družina může nakupovat předměty od každé frakce, jako by jejich cena byla o pět zlaťáků nižší a její reputace u této frakce o dva vyšší",
             "Kdykoli provádíš dlouhý odpočinek, získej 10 zásob"
         ]
     },
@@ -1257,7 +1257,7 @@ export default {
         "name": "Kostiřez",
         "masteries": [
             "V jednom scénáři dej spojenci v každém kole lékárničku nebo recept, kromě kol, v nichž provádíš dlouhý odpočinek.",
-            "V jednom scénáři nikdy nezaútoč na nepoškozeného nepřítele, dokud jsou naživu nějaké poškozené nestvůry, a vykonej alespoň 10 útoků."
+            "V jednom scénáři nikdy nezaútoč na nezraněného nepřítele, dokud jsou naživu nějaké zraněné nestvůry, a vykonej alespoň 10 útoků."
         ],
         "perks": [
             "Odstraň dvě karty {-1_WHITE}",
@@ -1266,9 +1266,9 @@ export default {
             "Nahraď dvě karty {+0_WHITE} jednou kartou {+1_WHITE} „Můžeš získat {DISARM.fh}, abys přidal/a {STUN.fh}“",
             "Přidej dvě karty {+1_WHITE} „Přidej +1 {ATTACK.fh}, pokud má některý spojenec aktivní recept“",
             "Přidej jednu kartu {AGAIN} „{HEAL.fh}3, {RANGE.fh}1“",
-            "Přidej +1 {HEAL.fh} ke všem léčivým schopnostem na kartách schopností „Lékárnička“",
+            "Přidej +1 {HEAL.fh} ke všem léčivým schopnostem na kartách schopností „Medical Pack“",
             "V každé fázi města po dokončení scénáře je tvůj dar nebo dar jednoho spojence Svatyni Velkého dubu zdarma",
-            "Na konci každého ze svých odpočinků, pokud má některý spojenec aktivní recept, získej jednu kartu schopností „Lékárnička“ a posuň žeton na aktivním receptu jednoho spojence o jedno pole zpět"
+            "Na konci každého ze svých odpočinků, pokud má některý spojenec aktivní recept, získej jednu kartu schopností „Medical Pack“ a posuň žeton na aktivním receptu jednoho spojence o jedno pole zpět"
         ]
     },
     "SK2": {
@@ -1305,7 +1305,7 @@ export default {
             "Nahraď jednu kartu {+0_WHITE} a jednu kartu {+1_WHITE} dvěma kartami {+2_WHITE}",
             "Přidej jednu kartu {AGAIN} „Daruj jednomu spojenci: {MOVE.fh}2 nebo {ATTACK.fh}2“",
             "Přidej tři karty {AGAIN} {CURSE.fh}",
-            "Na konci každého scénáře získá každá postava v tomto scénáři 8 zkušeností, pokud jsi splnil/a svůj bojový cíl",
+            "Na konci každého scénáře získá každý hrdina v tomto scénáři 8 zkušeností, pokud jsi splnil/a svůj malý úkol",
             "Kdykoli vykonáš {SONG} a máš nějaké nepoužité noty, získej jednu notu dle vlastního výběru navíc ke každé jiné notě získané v tomto kole",
             "Při určování pořadí iniciativy v kolech, v nichž oznámíš dlouhý odpočinek, získej jednu notu dle vlastního výběru a každý z tvých spojenců může snížit svou iniciativu o 10"
         ]
@@ -1341,7 +1341,7 @@ export default {
         "perks": [
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {AGAIN} „{HEAL.fh}2, {TARGET.fh} Medvěd“",
             "Nahraď jednu kartu {+0_WHITE} jednou kartou {+1_WHITE} {WOUND.fh}",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+2_WHITE} „Přidej +1 {ATTACK.fh}, pokud jsou Divoká zuřivost a Medvěd do {RANGE.fh}4 od sebe“",
+            "Nahraď jednu kartu {+0_WHITE} jednou kartou {+2_WHITE} „Přidej +1 {ATTACK.fh}, pokud jsou Wildfury a Medvěd do {RANGE.fh}4 od sebe“",
             "Nahraď jednu kartu {+2_WHITE} jednou kartou {+4_WHITE}",
             "Přidej dvě karty {+1_WHITE} {WIND}/{EARTH}",
             "Přidej jednu kartu {+2_WHITE} {PUSH.fh}2",

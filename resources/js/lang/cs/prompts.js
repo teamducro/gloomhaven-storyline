@@ -1,15 +1,15 @@
 export default {
     "dragon": {
-        "1": "Vraťte poklad Drakovi. Získejte globální úspěch „The Drake Aided“. Přidejte do balíčku událost ve městě 75 a událost na cestách 66.",
+        "1": "Vraťte poklad Drakovi. Získejte globální úspěch „The Drake Aided“. Přidejte do balíčku městskou událost 75 a událost na cestách 66.",
         "2": "Drakovi nepomáhejte.",
         "title": "Přítel, nebo nepřítel",
-        "text": "Získali jste Drakův poklad. Vrátíte ho Drakovi, nebo se řídíte rozkazy velitele stráží a pokusíte se Draka zabít?"
+        "text": "Získali jste Drakův poklad. Vrátíte ho Drakovi, nebo se budete řídit rozkazy velitele stráží a pokusíte se Draka zabít?"
     },
     "burningMountain": {
         "1": "Závěr A: Rozhodnete se ukončit svůj tah na G a odstranit jeden z předmětů ze hry.",
-        "2": "Závěr B: Po vyloupení truhly se všechny postavy vrátily ke vchodu dříve, než se vyčerpaly.",
+        "2": "Závěr B: Po vyloupení truhly se všichni hrdinové vrátili ke vchodu dříve, než se vyčerpali.",
         "title": "Útěk z hořící hory",
-        "text": "Ukořistili jste poklad. Odvážíte se uprchnout z duřící sopky a ponechat si získané předměty?"
+        "text": "Ukořistili jste poklad. Odvážíte se uprchnout z dunící sopky a ponechat si získané předměty?"
     },
     "merchantsBay": {
         "1": "Zachránili jste oba svitky.",
@@ -50,10 +50,10 @@ export default {
         "text": "Pro kterou stranu jste se rozhodli?"
     },
     "escapeFromTheHusk": {
-        "1": "Všechny postavy unikly.",
+        "1": "Všichni hrdinové unikli.",
         "2": "???",
         "title": "Útěk ze Slupky",
-        "text": "Unikly všechny postavy východem?"
+        "text": "Unikli všichni hrdinové východem?"
     },
     "undeadTerrors": {
         "1": "Dejte lektvar Selandre.",
@@ -65,11 +65,11 @@ export default {
         "1": "Jeden jmenovaný nepřítel je zabit.",
         "2": "Dva jmenovaní nepřátelé jsou zabiti.",
         "3": "Tři jmenovaní nepřátelé jsou zabiti.",
-        "title": "Zkouška Modulátoru výkonu",
+        "title": "Otestujte svůj Power Modulator",
         "text": "Kolik jmenovaných nepřátel jste dokázali zabít, než jste se vyčerpali?"
     },
     "unseenPlight": {
-        "1": "Zabili jste Žlabožrouta a získali Žlabožroutovu odměnu.",
+        "1": "Zabili jste Guttermaw a získali „Guttermaw’s Bounty“.",
         "2": "Zachránili jste děti a splnili Feigrinovu prosbu.",
         "title": "Zničené domovy a doupata",
         "text": "Přinesli jste smrt, nebo zachránili životy?"
@@ -99,7 +99,7 @@ export default {
     "friendOfTheFishKing": {
         "1": "Ano",
         "2": "Ne",
-        "title": "Přítel Rybího krále",
+        "title": "Friend of the Fish King",
         "text": "Přijali jste nabídku Rybího krále?"
     },
     "acceptTheAscension": {
@@ -165,8 +165,8 @@ export default {
     "hungryMawDead": {
         "1": "Ano",
         "2": "Ne",
-        "title": "Hladová Tlama je mrtvá",
-        "text": "Je Hladová Tlama mrtvá?"
+        "title": "Hungry Maw je po smrti",
+        "text": "Je Hungry Maw po smrti?"
     },
     "cratesLooted": {
         "1": "1",
@@ -235,7 +235,7 @@ export default {
         "1": "Oddíl 80.3",
         "2": "Oddíl 106.1",
         "3": "Oddíl 132.4",
-        "title": "Hon za tajemstvími",
+        "title": "Chasing Secrets",
         "text": "Který oddíl se závěrem jste četli?"
     }
 }

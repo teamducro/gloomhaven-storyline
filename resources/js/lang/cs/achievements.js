@@ -318,7 +318,7 @@ export default {
         "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
-        "name": "Do lesa"
+        "name": "Vzhůru do hvozdu"
     },
     "fh-CFP": {
         "name": "Firepepper"

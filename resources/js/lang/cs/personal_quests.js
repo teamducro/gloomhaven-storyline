@@ -26,7 +26,7 @@ export default {
         "name": "Finding the Cure",
         "unlock": "Otevřete obálku X.",
         "progress": [
-            "Zabijte osm Lesních rarachů.",
+            "Zabijte osm nestvůr typu Forest Imp.",
             "Dokončete {SCENARIO 59}."
         ]
     },
@@ -63,14 +63,14 @@ export default {
     "gh-519": {
         "name": "Battle Legend",
         "progress": [
-            "Získejte patnáct ✔ za splněné bitevní cíle."
+            "Získejte patnáct ✔ za splněné malé úkoly."
         ]
     },
     "gh-520": {
         "name": "Implement of Light",
         "progress": [
-            "Najděte Sekeru lebkolamu v Nekromancerově svatyni.",
-            "Zabijte s ní sedm Živých Kostí, Živých Mrtvol nebo Živých Duchů."
+            "Najděte předmět Skullbane Axe ve scénáři Necromancers Sanctum.",
+            "Zabijte s tímto předmětem sedm nestvůr typu Living Bones, Living Corpse nebo Living Spirit."
         ]
     },
     "gh-521": {
@@ -90,11 +90,11 @@ export default {
         "name": "Aberrant Slayer",
         "progress": [
             "Zabijte jednoho Démona Ohně.",
-            "Zabijte jednoho Démona Mrazu.",
-            "Zabijte jednoho Démona Větru.",
+            "Zabijte jednu nestvůru typu Frost Demon.",
+            "Zabijte jednu nestvůru typu Wind Demon.",
             "Zabijte jednoho Démona Země.",
             "Zabijte jednoho Démona Noci.",
-            "Zabijte jednoho slunečního démona."
+            "Zabijte jednu nestvůru typu Sun Demon."
         ]
     },
     "gh-524": {
@@ -156,15 +156,15 @@ export default {
     "gh-532": {
         "name": "A Helping Hand",
         "progress": [
-            "Zažijte, jak dvě další postavy splní své osobní úkoly."
+            "Zažijte, jak dva další hrdinové splní své velké úkoly."
         ]
     },
     "gh-533": {
         "name": "The Perfect Poison",
         "progress": [
             "Zabijte tři Slizy.",
-            "Zabijte tři Číhače.",
-            "Zabijte tři Plivající draky."
+            "Zabijte tři nestvůry typu Lurker.",
+            "Zabijte tři nestvůry typu Spitting Drake."
         ]
     },
     "cs-330": {
@@ -183,13 +183,13 @@ export default {
     "cs-332": {
         "name": "Experimentation",
         "progress": [
-            "Zahrajte 30 karet pro jejich ztrátovou akci {LOST}."
+            "Zahrajte 30 karet kvůli jejich akci se symbolem zničení {LOST}."
         ]
     },
     "cs-333": {
         "name": "Thrill Seeker",
         "progress": [
-            "Odhalte dlaždici místnosti otevřením dveří dvacetkrát."
+            "Odhalte místnost otevřením dveří dvacetkrát."
         ]
     },
     "cs-334": {
@@ -208,7 +208,7 @@ export default {
     "cs-336": {
         "name": "Creatures in the light",
         "progress": [
-            "Zabijte dvacet Slizů, Lesních rarachů nebo Černých rarachů."
+            "Zabijte dvacet nestvůr typu Sliz, Forest Imp nebo Černý Rarach."
         ]
     },
     "cs-337": {
@@ -256,10 +256,10 @@ export default {
     "cs-344": {
         "name": "Natural Selection",
         "progress": [
-            "Vytvořte {FIRE} dvakrát.",
-            "Vytvořte {ICE} dvakrát.",
-            "Vytvořte {LIGHT} dvakrát.",
-            "Vytvořte {DARK} dvakrát.",
+            "Vyvolejte {FIRE} dvakrát.",
+            "Vyvolejte {ICE} dvakrát.",
+            "Vyvolejte {LIGHT} dvakrát.",
+            "Vyvolejte {DARK} dvakrát.",
             "Dokončete {SCENARIO 37}."
         ]
     },
@@ -309,14 +309,14 @@ export default {
     "cs-aa-001": {
         "name": "At All Costs",
         "progress": [
-            "Zažijte 8 scénářů, v nichž zrušíte poškození ztrátou karty jako obvykle, zatímco sousedíte se spojencem.",
+            "Zažijte 8 scénářů, v nichž jako obvykle vyrušíte zranění zničením karty, zatímco sousedíte se spojencem.",
             "Dokončete {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
         "name": "The Weight of failure",
         "progress": [
-            "Dokončete 8 scénářů bez vyčerpání a s 2 nebo méně zdraví.",
+            "Dokončete 8 scénářů bez vyčerpání a s 2 nebo méně BZ.",
             "Dokončete {SCENARIO AA2}."
         ]
     },
@@ -324,7 +324,7 @@ export default {
         "name": "Ingenious Inventor",
         "progress": [
             "Okamžitě získejte „Power Modulator“ (předmět QA-01).",
-            "Zabijte 12 nepřátel pomocí „Modulátoru výkonu“ (předmět QA-01).",
+            "Zabijte 12 nepřátel pomocí předmětu „Power Modulator“ (předmět QA-01).",
             "Dokončete {SCENARIO QA1}."
         ]
     },
@@ -332,14 +332,14 @@ export default {
         "name": "Scrap Diver",
         "progress": [
             "Seberte dva nebo více žetonů peněz jedinou akcí osmkrát.",
-            "Vyloupte dvě dlaždice pokladů.",
+            "Ukořistěte dva poklady.",
             "Dokončete {SCENARIO QA2}."
         ]
     },
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "Získejte návrh „Serrated Edge“ (předmět RM-01).",
+            "Získejte nákres „Serrated Edge“ (předmět RM-01).",
             "Uvalte {WOUND} nebo {RUPTURE} na třicet nepřátel.",
             "Dokončete {SCENARIO RM1}."
         ]
@@ -362,7 +362,7 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "Hledání Dubu",
+        "name": "Hledání dubu",
         "building_unlocks": [
             24,
             42
@@ -393,11 +393,11 @@ export default {
             74
         ],
         "progress": [
-            "Mějte u sebe 80+20xL zlaťáků, kde L je úroveň prosperity."
+            "Mějte u sebe 80+20xL zlaťáků, kde L je úroveň blahobytu."
         ]
     },
     "fh-5": {
-        "name": "Build, not Destroy",
+        "name": "Buduj stavby, posílíš mír",
         "building_unlocks": [
             85,
             21
@@ -407,7 +407,7 @@ export default {
         ]
     },
     "fh-6": {
-        "name": "Team Building",
+        "name": "Stmelovačka",
         "building_unlocks": [
             85,
             21
@@ -417,7 +417,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "Aesther Outpost",
+        "name": "Tábor aestherů",
         "building_unlocks": [
             44,
             88
@@ -435,8 +435,8 @@ export default {
         ],
         "progress": [
             "Zabijte dva Algoxské Strážce.",
-            "Zabijte dva Číhače Drtiče spárů.",
-            "Zabijte dva Robotické Střelce šipek."
+            "Zabijte dvě nestvůry typu Lurker Clawcrusher.",
+            "Zabijte dvě nestvůry typu Robotic Boltshooter."
         ]
     },
     "fh-9": {
@@ -450,7 +450,7 @@ export default {
         ]
     },
     "fh-10": {
-        "name": "Explore the Reaches",
+        "name": "Prozkoumej dálavy",
         "building_unlocks": [
             90,
             83
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "Darujte 70 zlaťáků Chrámu Velkého dubu."
+            "Darujte 70 zlaťáků do Temple of the Great Oak."
         ]
     },
     "fh-16": {
@@ -531,7 +531,7 @@ export default {
             67
         ],
         "progress": [
-            "Získejte 16 {CHECK} za splněné bitevní cíle."
+            "Získejte 16 {CHECK} za splněné malé úkoly."
         ]
     },
     "fh-18": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "Získejte plán „Sekery propasti“ (předmět 039) a zabijte s ní deset Zmrzlých Mrtvol, Ledových Přízraků a/nebo Živoucích Zkáz."
+            "Získejte nákres předmětu „Sekera propasti“ (předmět 039) a zabijte s ní deset nestvůr typu Frozen Corpse, Ledový Přízrak a/nebo Living Doom."
         ]
     },
     "fh-20": {
@@ -561,7 +561,7 @@ export default {
             21
         ],
         "progress": [
-            "Zabijte patnáct Zničených Strojů."
+            "Zabijte patnáct nestvůr typu Ruined Machine."
         ]
     },
     "fh-21": {
@@ -609,7 +609,7 @@ export default {
     "gh2-3": {
         "name": "Vylepšené schopnosti",
         "progress": [
-            "Zakupte pět vylepšení (vyžaduje globální úspěch „The Power of Enhancement“).",
+            "Zakupte pět vylepšení (vyžaduje globální úspěch „Síla vylepšení“).",
             "Přečtěte si {SECTION} 71.2."
         ]
     },
@@ -634,14 +634,14 @@ export default {
     "gh2-6": {
         "name": "Fanatik Krvavého boha",
         "progress": [
-            "Dokončete deset scénářů, v nichž skončíte s životy na polovině maxima nebo níže, aniž byste se vyčerpali.",
+            "Dokončete deset scénářů, v nichž skončíte s BZ na polovině maxima nebo níže, aniž byste se vyčerpali.",
             "Přečtěte si {SECTION} 122.3."
         ]
     },
     "gh2-7": {
         "name": "A Tale to Tell",
         "progress": [
-            "Vyloupte nebo buďte svědky toho, jak vaše družina vyloupí dlaždici pokladu, v deseti scénářích.",
+            "Ukořistěte poklad nebo buďte svědky toho, jak ho ukořistí vaše družina, v deseti scénářích.",
             "Přečtěte si {SECTION} 12.3."
         ]
     },
@@ -666,7 +666,7 @@ export default {
     "gh2-10": {
         "name": "Zabiják zrůd",
         "progress": [
-            "Vylepšete kartu schopnosti (svou nebo spojencovu) elementem {ANY} (vyžaduje globální úspěch „The Power of Enhancement“).",
+            "Vylepšete kartu schopnosti (svou nebo spojencovu) živlem {ANY} (vyžaduje globální úspěch „Síla vylepšení“).",
             "Přečtěte si {SECTION} 14.3.",
             "Dovedte {SCENARIO 64} k závěru."
         ]
@@ -726,14 +726,14 @@ export default {
         "name": "Living on the Edge",
         "progress": [
             "Získejte „Experimental Armor“ (předmět 150).",
-            "Použijte ji k tomu, aby 20 nepřátel utrpělo zranění.",
+            "Použijte tento předmět k tomu, aby 20 nepřátel utrpělo zranění.",
             "Přečtěte si {SECTION} 47.4."
         ]
     },
     "gh2-18": {
         "name": "Bitevní legenda",
         "progress": [
-            "Získejte 12 zaškrtnutí za splněné bitevní cíle.",
+            "Získejte 12 talentových bodů za splněné malé úkoly.",
             "Přečtěte si {SECTION} 23.3."
         ]
     },
@@ -747,7 +747,7 @@ export default {
     "gh2-20": {
         "name": "Zbožnost ve všem",
         "progress": [
-            "Darujte 120 zlaťáků Chrámu Velkého dubu.",
+            "Darujte 120 zlaťáků do Temple of the Great Oak.",
             "Přečtěte si {SECTION} 51.5."
         ]
     },
@@ -767,35 +767,35 @@ export default {
     },
     "cq-cq01": {
         "name": "Přemozte své démony",
-        "unlock": "Otevřete obálku třídy nebo budovy dle vlastního výběru. Vaše budoucí postavy přidají {PIERCE} 1 a {WOUND} ke všem útokům zaměřeným na démony.",
+        "unlock": "Otevřete obálku třídy nebo budovy dle vlastního výběru. Vaši budoucí hrdinové přidají {PIERCE} 1 a {WOUND} ke všem útokům zaměřeným na démony.",
         "progress": [
-            "Zabijte dva takto přivolané Démony Země.",
-            "Zabijte dva takto přivolané Démony Ohně.",
-            "Zabijte dva takto přivolané Démony Mrazu.",
-            "Zabijte dva takto přivolané Démony Noci.",
-            "Zabijte dva takto přivolané Démony Slunce.",
-            "Zabijte dva takto přivolané Démony Větru."
+            "Zabijte dva takto zjevené Démony Země.",
+            "Zabijte dva takto zjevené Démony Ohně.",
+            "Zabijte dvě takto zjevené nestvůry typu Frost Demon.",
+            "Zabijte dva takto zjevené Démony Noci.",
+            "Zabijte dvě takto zjevené nestvůry typu Sun Demon.",
+            "Zabijte dvě takto zjevené nestvůry typu Wind Demon."
         ]
     },
     "cq-cq02": {
         "name": "Vaši přátelé mají obavy",
-        "unlock": "Otevřete obálku třídy nebo budovy dle vlastního výběru. Můžete trvale přijít o bonusové body výhod získané z odchodu postav do výslužby ve vaší linii. Za každý takto ztracený bod výhody získejte 30 zlaťáků, které můžete okamžitě utratit za vylepšení své další postavy.",
+        "unlock": "Otevřete obálku třídy nebo budovy dle vlastního výběru. Můžete trvale přijít o bonusové talentové body získané za odchod hrdinů na odpočinek ve vaší linii. Za každý takto ztracený talentový bod získejte 30 zlaťáků, které můžete okamžitě utratit za vylepšení svého dalšího hrdiny.",
         "progress": [
-            "Získejte 30 zaškrtnutí za bitevní cíle. V každém scénáři si vezměte a ponechte navíc jeden bitevní cíl; nezískáte žádná zaškrtnutí, pokud nesplníte všechny."
+            "Získejte 30 talentových bodů za malé úkoly. V každém scénáři si táhněte a ponechte navíc jeden malý úkol; nezískáte žádné talentové body, pokud nesplníte všechny."
         ]
     },
     "cq-cq03": {
         "name": "Důsledky boje",
-        "unlock": "Otevřete obálku třídy nebo budovy dle vlastního výběru. Vaše budoucí postavy získají {STRENGTHEN} pokaždé, když během scénáře vytáhnou {NULL_MODIFIER}.",
+        "unlock": "Otevřete obálku třídy nebo budovy dle vlastního výběru. Vaši budoucí hrdinové získají {STRENGTHEN} pokaždé, když během scénáře vytáhnou {NULL_MODIFIER}.",
         "progress": [
             "Získejte 50 uvážlivosti: jednou za scénář snižte hodnotu útoku před tažením modifikátoru; za každý snížený bod získejte jednu uvážlivost."
         ]
     },
     "cq-cq04": {
         "name": "Dramatický závěr",
-        "unlock": "Otevřete obálku třídy nebo budovy dle vlastního výběru. Vaše budoucí postavy mohou okamžitě provést kroky dlouhého odpočinku, kdykoli se spojenec vyčerpá.",
+        "unlock": "Otevřete obálku třídy nebo budovy dle vlastního výběru. Vaši budoucí hrdinové mohou okamžitě provést kroky dlouhého odpočinku, kdykoli se spojenec vyčerpá.",
         "progress": [
-            "Vyhrajte 10 scénářů, v nichž jsou vaše poslední dvě akce horní ztrátová akce a dolní ztrátová akce."
+            "Vyhrajte 10 scénářů, v nichž jsou vaše poslední dvě akce horní akce se symbolem zničení a dolní akce se symbolem zničení."
         ]
     }
 }

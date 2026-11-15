@@ -76,7 +76,7 @@ export default {
         ],
         "faq": [
             "Překlep: značka dveří 1 má být u jižních dveří, nikoli u severních. Text pod „1“ si přečtěte po otevření jižních dveří.",
-            "Překlep: „Zvláštní akce bosse 1“ není uvedena. Je zcela shodná se „Zvláštní akcí bosse 2“, až na to, že se místo Živých Mrtvol přivolávají Živé Kosti."
+            "Překlep: „Zvláštní akce bosse 1“ není uvedena. Je zcela shodná se „Zvláštní akcí bosse 2“, až na to, že se místo nestvůr Living Corpse přivolávají nestvůry Living Bones."
         ]
     },
     "gh-13": {
@@ -123,7 +123,7 @@ export default {
             "+1 prosperita"
         ],
         "faq": [
-            "Překlep: „Zvláštní akce bosse 1“ není uvedena. Kromě schopností na kartě statistik má stejnou přivolávací schopnost jako „Zvláštní akce bosse 2“, až na to, že se místo Živých Mrtvol přivolávají Živé Kosti."
+            "Překlep: „Zvláštní akce bosse 1“ není uvedena. Kromě schopností na kartě statistik má stejnou přivolávací schopnost jako „Zvláštní akce bosse 2“, až na to, že se místo nestvůr Living Corpse přivolávají nestvůry Living Bones."
         ]
     },
     "gh-21": {
@@ -135,7 +135,7 @@ export default {
         ],
         "faq": [
             "Překlep: v části „Zvláštní pravidla“ má být oltář na „f“, nikoli na „a“. Zrození démonů mají být přeřazena na vítr (a), noc (b), zemi (c), oheň (d), slunce (e), mráz (f).",
-            "Oltář se chová jako běžná překážka s životy (imunní vůči všem negativním stavům), takže „a imunity“ tam být nemá."
+            "Oltář se chová jako běžná překážka s body zdraví (imunní vůči všem negativním stavům), takže „a imunity“ tam být nemá."
         ]
     },
     "gh-22": {
@@ -150,7 +150,7 @@ export default {
     "gh-25": {
         "name": "Icecrag Ascent",
         "faq": [
-            "Útěk: scénář dokončíte, jakmile všechny postavy stojí na výstupním poli nebo se vyčerpaly, když stály na výstupním poli."
+            "Útěk: scénář dokončíte, jakmile všichni hrdinové stojí na výstupním poli nebo se vyčerpali, když stáli na výstupním poli."
         ]
     },
     "gh-26": {
@@ -172,7 +172,7 @@ export default {
         ],
         "conclusion_faq": [
             "K odměně můžete přičíst své aktuální peníze, ale ve městě nemůžete prodávat předměty, protože odměna se udělí okamžitě po skončení scénáře, ještě před návratem do města.",
-            "Překlep: pokud je místo pro samolepku globálního úspěchu „Trhlina uzavřena“ již zaplněno, nepřekrývejte ho. Buď samolepku vynechte, nebo ji umístěte vedle mapy."
+            "Překlep: pokud je místo pro samolepku globálního úspěchu „The Rift Closed“ již zaplněno, nepřekrývejte ho. Buď samolepku vynechte, nebo ji umístěte vedle mapy."
         ]
     },
     "gh-28": {
@@ -184,7 +184,7 @@ export default {
             "15 zkušeností každý"
         ],
         "faq": [
-            "Dveře se životy se z hlediska zacílení považují za překážku se životy: přivolaní na ně mohou zaměřit pozornost, mají iniciativu 99 atd."
+            "Dveře s body zdraví se z hlediska zacílení považují za překážku s body zdraví: přivolaní na ně mohou zaměřit pozornost, mají iniciativu 99 atd."
         ]
     },
     "gh-30": {
@@ -202,8 +202,8 @@ export default {
     "gh-33": {
         "name": "Savvas Armory",
         "faq": [
-            "Dveře se životy se z hlediska zacílení považují za překážku se životy: přivolaní na ně mohou zaměřit pozornost, mají iniciativu 99 atd.",
-            "Útěk: scénář dokončíte, jakmile všechny postavy stojí na výstupním poli nebo se vyčerpaly, když stály na výstupním poli."
+            "Dveře s body zdraví se z hlediska zacílení považují za překážku s body zdraví: přivolaní na ně mohou zaměřit pozornost, mají iniciativu 99 atd.",
+            "Útěk: scénář dokončíte, jakmile všichni hrdinové stojí na výstupním poli nebo se vyčerpali, když stáli na výstupním poli."
         ]
     },
     "gh-34": {
@@ -214,7 +214,7 @@ export default {
             "+1 prosperita"
         ],
         "faq": [
-            "Další zvláštní pravidlo: boss je imunní vůči každé schopnosti či efektu, který by ovlivnil jeho polohu na mapě (odhození, přitažení, nucený pohyb atd.).",
+            "Další zvláštní pravidlo: boss je imunní vůči každé schopnosti či efektu, který by ovlivnil jeho polohu na mapě (odstrčení, přitažení, nucený pohyb atd.).",
             "Na Zefýry nemůže působit žádná schopnost a přivolaní se na ně nezaměřují.",
             "Errata: u Zvláštní akce bosse 2 je správné pořadí schopností nejprve přivolání, poté pohyb. Kniha scénářů je správná, karta statistik nikoli."
         ]
@@ -242,7 +242,7 @@ export default {
     "gh-37": {
         "name": "Doom Trench",
         "faq": [
-            "Útěk: scénář dokončíte, jakmile všechny postavy stojí na výstupním poli nebo se vyčerpaly, když stály na výstupním poli."
+            "Útěk: scénář dokončíte, jakmile všichni hrdinové stojí na výstupním poli nebo se vyčerpali, když stáli na výstupním poli."
         ]
     },
     "gh-38": {
@@ -278,7 +278,7 @@ export default {
             "{NOTE_42}"
         ],
         "faq": [
-            "Hlasivky se z hlediska zacílení považují za překážky se životy: přivolaní na ně mohou zaměřit pozornost, mají iniciativu 99 atd."
+            "Hlasivky se z hlediska zacílení považují za překážky s body zdraví: přivolaní na ně mohou zaměřit pozornost, mají iniciativu 99 atd."
         ]
     },
     "gh-43": {
@@ -314,7 +314,7 @@ export default {
     "gh-47": {
         "name": "Lair of the Unseeing Eye",
         "faq": [
-            "Další zvláštní pravidlo: boss je imunní vůči každé schopnosti či efektu, který by ovlivnil jeho polohu na mapě (odhození, přitažení, nucený pohyb atd.)."
+            "Další zvláštní pravidlo: boss je imunní vůči každé schopnosti či efektu, který by ovlivnil jeho polohu na mapě (odstrčení, přitažení, nucený pohyb atd.)."
         ]
     },
     "gh-48": {
@@ -330,8 +330,8 @@ export default {
             "-3 reputace"
         ],
         "faq": [
-            "Další zvláštní pravidlo: na Prastaré dělostřelectvo nepůsobí nucený pohyb (odhození, přitažení, výměna pozic atd.).",
-            "Zranění všem postavám ze zvláštního pravidla je přímé zranění a nepovažuje se za útok."
+            "Další zvláštní pravidlo: na Prastaré dělostřelectvo nepůsobí nucený pohyb (odstrčení, přitažení, výměna pozic atd.).",
+            "Zranění všem hrdinům ze zvláštního pravidla je přímé zranění a nepovažuje se za útok."
         ]
     },
     "gh-50": {
@@ -352,30 +352,30 @@ export default {
     },
     "gh-52": {
         "name": "Noxious Cellar",
-        "requirements": "Osobní úkol „Seeker of Xorn“",
+        "requirements": "Velký úkol „Seeker of Xorn“",
         "faq": [
             "Zvláštní pravidlo: v tomto scénáři můžete použít dolní akci libovolné karty k vyloupení dlaždice pokladu v dosahu 1.",
-            "Při použití materiálu Forgotten Circles lze překážky uprostřed výchozí místnosti považovat za překryvné dlaždice zdí, jak stanoví pravidla Forgotten Circles. Postava se také nemůže teleportovat do části mapy jiné postavy."
+            "Při použití materiálu Forgotten Circles lze překážky uprostřed výchozí místnosti považovat za překryvné dílky zdí, jak stanoví pravidla Forgotten Circles. Hrdina se také nemůže teleportovat do části mapy jiného hrdiny."
         ]
     },
     "gh-53": {
         "name": "Crypt Basement",
-        "requirements": "Osobní úkol „Seeker of Xorn“",
+        "requirements": "Velký úkol „Seeker of Xorn“",
         "rewards": [
-            "Hledač Xornu získává: „Staff of Xorn“ (předmět 114). Hledač tento předmět nemůže prodat."
+            "Hrdina s velkým úkolem „Seeker of Xorn“ získává: „Staff of Xorn“ (předmět 114). Tento předmět nemůže prodat."
         ]
     },
     "gh-54": {
         "name": "Palace of Ice",
-        "requirements": "Osobní úkol „Seeker of Xorn“, vybavený předmět „Staff of Xorn“",
+        "requirements": "Velký úkol „Seeker of Xorn“, vybavený předmět „Staff of Xorn“",
         "rewards": [
-            "Okamžitě pošlete Hledače Xornu do výslužby",
-            "Přidejte městské události a události na cestách 59 do balíčků místo běžných událostí výslužby dané třídy",
+            "Hrdinu s velkým úkolem „Seeker of Xorn“ okamžitě pošlete na odpočinek",
+            "Přidejte městské události a události na cestách 59 do balíčků místo běžných událostí odchodu na odpočinek dané třídy",
             "Otevřete obálku {PH}"
         ],
         "conclusion_faq": [
-            "Pokud hned po úspěšném dokončení tohoto scénáře začnete hrát za novou postavu Cthulhu-Oliheň, tato postava obdrží „Staff of Xorn“. Jinak se „Staff of Xorn“ přidá do balíčku obchodu.",
-            "Hledač Xornu se nevrací do města prodávat předměty, provádět vylepšení atd. Jak uvádí kniha scénářů, karta události výslužby této postavy se nedává do balíčku."
+            "Pokud hned po úspěšném dokončení tohoto scénáře začnete hrát za nového hrdinu třídy Moronoš (Cthulhu-Oliheň), tento hrdina obdrží „Staff of Xorn“. Jinak se „Staff of Xorn“ přidá do balíčku obchodu.",
+            "Hrdina s velkým úkolem „Seeker of Xorn“ se nevrací do města prodávat předměty, provádět vylepšení atd. Jak uvádí kniha příběhů, karta události odchodu na odpočinek tohoto hrdiny se do balíčku nepřidává."
         ]
     },
     "gh-SoX1": {
@@ -401,14 +401,14 @@ export default {
     },
     "gh-55": {
         "name": "Foggy Thicket",
-        "requirements": "Osobní úkol „Take Back the Trees“",
+        "requirements": "Velký úkol „Take Back the Trees“",
         "rewards": [
             "10 zlaťáků společně"
         ]
     },
     "gh-56": {
         "name": "Bandits Wood",
-        "requirements": "Osobní úkol „Take Back the Trees“",
+        "requirements": "Velký úkol „Take Back the Trees“",
         "rewards": [
             "Úkol „Take Back the Trees“ splněn",
             "Otevřete obálku {DS}",
@@ -418,14 +418,14 @@ export default {
     },
     "gh-57": {
         "name": "Investigation",
-        "requirements": "Osobní úkol „Vengeance“",
+        "requirements": "Velký úkol „Vengeance“",
         "rewards": [
             "+1 reputace"
         ]
     },
     "gh-58": {
         "name": "Bloody Shack",
-        "requirements": "Osobní úkol „Vengeance“",
+        "requirements": "Velký úkol „Vengeance“",
         "rewards": [
             "Úkol „Vengeance“ splněn",
             "Otevřete obálku X",
@@ -437,27 +437,27 @@ export default {
     },
     "gh-59": {
         "name": "Forgotten Grove",
-        "requirements": "Osobní úkol „Finding the Cure“"
+        "requirements": "Velký úkol „Finding the Cure“"
     },
     "gh-60": {
         "name": "Alchemy Lab",
-        "requirements": "Osobní úkol „Finding the Cure“",
+        "requirements": "Velký úkol „Finding the Cure“",
         "rewards": [
             "Úkol „Finding the Cure“ splněn",
             "Otevřete obálku X",
             "+1 prosperita"
         ],
         "faq": [
-            "Útěk: scénář dokončíte, jakmile všechny postavy stojí na výstupním poli nebo se vyčerpaly, když stály na výstupním poli."
+            "Útěk: scénář dokončíte, jakmile všichni hrdinové stojí na výstupním poli nebo se vyčerpali, když stáli na výstupním poli."
         ]
     },
     "gh-61": {
         "name": "Fading Lighthouse",
-        "requirements": "Osobní úkol „The Fall of Man“"
+        "requirements": "Velký úkol „The Fall of Man“"
     },
     "gh-62": {
         "name": "Pit of Souls",
-        "requirements": "Osobní úkol „The Fall of Man“",
+        "requirements": "Velký úkol „The Fall of Man“",
         "rewards": [
             "Úkol „The Fall of Man“ splněn",
             "Otevřete obálku {NS}",
@@ -512,7 +512,7 @@ export default {
             "+2 prosperita"
         ],
         "faq": [
-            "Na živé duchy nepůsobí schopnosti okamžitého zabití."
+            "Na nestvůry Living Spirit nepůsobí schopnosti okamžitého zabití."
         ]
     },
     "gh-71": {
@@ -521,8 +521,8 @@ export default {
             "2× „Major Power Potion“ (předmět 041)"
         ],
         "faq": [
-            "Nucený pohyb: pokud vítr posune postavu doprava nebo doleva a na jednom z možných polí je překážka nebo zeď, může hráč zvolit, že zůstane zablokován (nepohne se), nebo se přesune na volné pole.",
-            "Útěk: scénář dokončíte, jakmile všechny postavy stojí na výstupním poli nebo se vyčerpaly, když stály na výstupním poli."
+            "Nucený pohyb: pokud vítr posune hrdinu doprava nebo doleva a na jednom z možných polí je překážka nebo zeď, může hráč zvolit, že zůstane zablokován (nepohne se), nebo se přesune na volné pole.",
+            "Útěk: scénář dokončíte, jakmile všichni hrdinové stojí na výstupním poli nebo se vyčerpali, když stáli na výstupním poli."
         ]
     },
     "gh-72": {
@@ -532,7 +532,7 @@ export default {
             "+1 prosperita"
         ],
         "faq": [
-            "Překlep: použijte dlaždici mapy L1b místo L2b."
+            "Překlep: použijte díl herního plánu L1b místo L2b."
         ]
     },
     "gh-73": {
@@ -551,7 +551,7 @@ export default {
             "+2 prosperita"
         ],
         "faq": [
-            "Jak stanoví zvláštní pravidla, vodu mohou sbírat pouze postavy (nikoli přivolaní). Pokud je v dosahu akce kořisti více polí s vodou, musíte ke sebrání zvolit pouze jedno."
+            "Jak stanoví zvláštní pravidla, vodu mohou sbírat pouze hrdinové (nikoli přivolaní). Pokud je v dosahu akce kořisti více polí s vodou, musíte ke sebrání zvolit pouze jedno."
         ]
     },
     "gh-75": {
@@ -573,7 +573,7 @@ export default {
             "5 zkušeností každý"
         ],
         "faq": [
-            "Postavy, které mohou vytvářet překážky, nemohou zablokovat všechny tlakové desky současně."
+            "Hrdinové, kteří mohou vytvářet překážky, nemohou zablokovat všechny tlakové desky současně."
         ]
     },
     "gh-78": {
@@ -582,7 +582,7 @@ export default {
             "+3 reputace"
         ],
         "faq": [
-            "Oběti se považují za bytosti spojené s nikým, a proto omezují pohyb nestvůr i postav."
+            "Oběti se považují za bytosti spojené s nikým, a proto omezují pohyb nestvůr i hrdinů."
         ]
     },
     "gh-79": {
@@ -591,7 +591,7 @@ export default {
             "15 zlaťáků každý"
         ],
         "faq": [
-            "Dvě schopnosti bosse mohou působit na neviditelné postavy. Také vyžadují přímou viditelnost. Ovládání mysli bosse lze použít pouze na postavy, které v daném kole ještě nejednaly."
+            "Dvě schopnosti bosse mohou působit na neviditelné hrdiny. Také vyžadují přímou viditelnost. Ovládání mysli bosse lze použít pouze na hrdiny, kteří v daném kole ještě nejednali."
         ]
     },
     "gh-80": {
@@ -606,7 +606,7 @@ export default {
             "10 zkušeností každý"
         ],
         "faq": [
-            "Překlep: ve zvláštních pravidlech oddílu 1 má být „Zrádce“ nahrazen výrazem „Bezbarvý“. U obou zvláštních akcí bosse spotřeba elementů ovlivňuje pouze přivolání. Ostatní části zvláštních akcí proběhnou bez ohledu na to.",
+            "Překlep: ve zvláštních pravidlech oddílu 1 má být „The Betrayer“ nahrazen výrazem „The Colorless“. U obou zvláštních akcí bosse spotřebování živlů ovlivňuje pouze přivolání. Ostatní části zvláštních akcí proběhnou bez ohledu na to.",
             "Krystal zenitu a Koule půlnoci nejsou skutečné předměty a mimo tento scénář nemají žádné využití. Pro sledování, kdo je má, použijte číslované žetony. Na konci scénáře, ať už vyhrajete, nebo prohrajete, se tyto dva „cílové“ poklady resetují, takže je lze znovu vyloupit."
         ]
     },
@@ -631,7 +631,7 @@ export default {
             "40 zlaťáků společně"
         ],
         "faq": [
-            "Po přečtení oddílu 2 první sada zvláštních pravidel končí a nahrazuje ji druhá sada. Oltář nemá žádné životy a nelze jej zničit."
+            "Po přečtení oddílu 2 první sada zvláštních pravidel končí a nahrazuje ji druhá sada. Oltář nemá žádné body zdraví a nelze jej zničit."
         ]
     },
     "gh-84": {
@@ -641,7 +641,7 @@ export default {
             "+1 prosperita"
         ],
         "faq": [
-            "Krystal se nepovažuje za nepřítele a přivolaní postav jej nezacilují."
+            "Krystal se nepovažuje za nepřítele a přivolaní hrdinů jej nezacilují."
         ]
     },
     "gh-85": {
@@ -650,7 +650,7 @@ export default {
             "„Orb of Dawn“ (předmět 121)"
         ],
         "faq": [
-            "Chyba v knize: při 4 hráčích neumisťujte Démona Noci a Démony Slunce v závěrečné místnosti, které se jako běžní nepřátelé umisťují pouze při 4 hráčích (barevně černé pro 2 a 3 hráče, bílé pro 4 hráče)."
+            "Chyba v knize: při 4 hráčích neumisťujte Démona Noci a nestvůry Sun Demon v závěrečné místnosti, které se jako běžní nepřátelé umisťují pouze při 4 hráčích (barevně černé pro 2 a 3 hráče, bílé pro 4 hráče)."
         ]
     },
     "gh-86": {
@@ -672,7 +672,7 @@ export default {
             "„Staff of Summoning“ (předmět 120)"
         ],
         "faq": [
-            "Pokud jsou všichni číhači zabiti, pokračujte v tažení karet schopností číhačů, abyste určili směr zvláštního efektu scénáře."
+            "Pokud jsou všechny nestvůry Lurker zabity, pokračujte v tažení karet schopností nestvůr Lurker, abyste určili směr zvláštního efektu scénáře."
         ]
     },
     "gh-89": {
@@ -828,7 +828,7 @@ export default {
     },
     "fc-96": {
         "name": "Unexpected Visitors",
-        "requirements": "Konec Přítmí (globální) DOKONČENO",
+        "requirements": "End of Gloom (globální) DOKONČENO",
         "rewards": [
             "10 zkušeností každý",
             "Přidejte městské události a události na cestách 82 do příslušných balíčků"
@@ -1006,7 +1006,7 @@ export default {
         "rewards": [
             "+3 reputace",
             "+1 prosperita",
-            "Pošlete Aestherskou věštkyni {DR} do výslužby",
+            "Pošlete aestherskou Věštkyni {DR} na odpočinek",
             "Přidejte městské události a události na cestách 83 do příslušných balíčků"
         ]
     },
@@ -1015,7 +1015,7 @@ export default {
         "rewards": [
             "15 zlaťáků každý",
             "1 ✓ každý",
-            "Všechny postavy mohou přidat jednu novou kartu své třídy do aktivního souboru karet. Vybraná karta musí mít úroveň rovnou nebo nižší než úroveň postavy minus 2."
+            "Všichni hrdinové mohou přidat jednu novou kartu své třídy do aktivního souboru karet. Vybraná karta musí mít úroveň rovnou nebo nižší než úroveň hrdiny minus 2."
         ]
     },
     "fc-116": {
@@ -1217,13 +1217,13 @@ export default {
             [
                 "Odemkněte krabičku třídy {FF}",
                 "Získejte 1 morálku",
-                "Získejte 1 prosperitu",
+                "+1 blahobyt",
                 "Přidejte 156.1 do kalendáře za čtyři týdny"
             ],
             [
                 "Odemkněte krabičku třídy {SD}",
                 "Získejte 1 morálku",
-                "Získejte 1 prosperitu",
+                "+1 blahobyt",
                 "Přidejte 156.1 do kalendáře za čtyři týdny"
             ]
         ]
@@ -1263,14 +1263,14 @@ export default {
         "name": "Crystal Enclosure",
         "rewards": [
             "Získejte 1 morálku",
-            "Získejte 1 inspiraci"
+            "Získejte 1 povzbuzení"
         ]
     },
     "fh-11": {
         "name": "Snowscorn Peak",
         "rewards": [
             "Získejte 1 morálku",
-            "Získejte 1 inspiraci"
+            "Získejte 1 povzbuzení"
         ]
     },
     "fh-12": {
@@ -1304,7 +1304,7 @@ export default {
         "name": "Derelict Elevator",
         "rewards": [
             "Každý získá 5 zkušeností",
-            "Získejte 1 inspiraci"
+            "Získejte 1 povzbuzení"
         ]
     },
     "fh-17": {
@@ -1338,13 +1338,13 @@ export default {
     "fh-21": {
         "name": "Realm of Endless Frost",
         "rewards": [
-            "Získejte 2 prosperity"
+            "+2 blahobyt"
         ]
     },
     "fh-22": {
         "name": "Ice Floes",
         "rewards": [
-            "Ztraťte společně 1 {LUMBER} za každou pětici polí s vodními dlaždicemi na dlaždici 7-G",
+            "Ztraťte společně 1 {LUMBER} za každou pětici polí s vodními dílky na dílu herního plánu 7-G",
             "Každý získá 15 zkušeností",
             "Přidejte 62.2 do kalendáře za dva týdny"
         ]
@@ -1380,7 +1380,7 @@ export default {
         "rewards": [
             "Každý získá 10 zkušeností",
             "Každý získá 1 ✔",
-            "Prastará technologie"
+            "Ancient Technology"
         ]
     },
     "fh-28": {
@@ -1461,20 +1461,20 @@ export default {
         "rewards": [
             "Každý získá 10 zkušeností",
             "Každý získá 1 ✔",
-            "Získejte 1 inspiraci"
+            "Získejte 1 povzbuzení"
         ]
     },
     "fh-39": {
         "name": "Corrupted Camp",
         "rewards": [
-            "Ztraťte 1 inspiraci",
+            "Ztraťte 1 povzbuzení",
             "Každý získá 2 další karty kořisti"
         ]
     },
     "fh-40": {
         "name": "Relief Effort",
         "rewards": [
-            "Ztraťte 1 inspiraci",
+            "Ztraťte 1 povzbuzení",
             "Každý získá 2 další karty kořisti"
         ]
     },
@@ -1483,7 +1483,7 @@ export default {
         "rewards": [
             "Každý získá 15 zlaťáků",
             "Získejte společně 2 {AXENUT}",
-            "Prastará technologie"
+            "Ancient Technology"
         ]
     },
     "fh-42": {
@@ -1539,13 +1539,13 @@ export default {
         "name": "Beneath Sea and Stone",
         "rewards": [
             "Každý získá 5 zkušeností",
-            "Získejte 1 inspiraci"
+            "Získejte 1 povzbuzení"
         ]
     },
     "fh-50": {
         "name": "Explosive Descent",
         "rewards": [
-            "Ztraťte 2 inspirace",
+            "Ztraťte 2 povzbuzení",
             "Získejte společně 4 {LUMBER}",
             "Získejte společně 4 {METAL}"
         ]
@@ -1561,7 +1561,7 @@ export default {
         "name": "Fleeting Permanence",
         "rewards": [
             "Získejte 1 morálku",
-            "Získejte 1 inspiraci"
+            "Získejte 1 povzbuzení"
         ]
     },
     "fh-53": {
@@ -1580,7 +1580,7 @@ export default {
         "name": "Change of Heart",
         "rewards": [
             "Získejte 2 morálky",
-            "Získejte 2 prosperity",
+            "+2 blahobyt",
             "Odemkněte krabičku třídy, která je stále zamčená: {FF} nebo {SD}",
             "Odeberte všechny události {ALGOX} ze všech balíčků událostí osady",
             "Přidejte události WO-66 a WO-67 do zimního balíčku událostí osady",
@@ -1591,7 +1591,7 @@ export default {
         "name": "Call of the Harbinger",
         "rewards": [
             "Získejte 1 morálku",
-            "Získejte 1 inspiraci",
+            "Získejte 1 povzbuzení",
             "Odemkněte krabičku třídy {FF}",
             "Přidejte událost SO-51 do letního balíčku událostí osady",
             "Přidejte jednu kartu +50 do balíčku městské stráže"
@@ -1601,7 +1601,7 @@ export default {
         "name": "Sanctuary of Snow",
         "rewards": [
             "Získejte 1 morálku",
-            "Získejte 1 inspiraci",
+            "Získejte 1 povzbuzení",
             "Odemkněte krabičku třídy {SD}",
             "Přidejte událost WO-68 do zimního balíčku událostí osady",
             "Přidejte jednu kartu +50 do balíčku městské stráže"
@@ -1625,7 +1625,7 @@ export default {
         "name": "Automation Uprising",
         "rewards": [
             "Získejte 2 morálky",
-            "Získejte 2 prosperity",
+            "+2 blahobyt",
             "Získejte „Vstupní karta“ (předmět 246)",
             "Odemkněte krabičku třídy {HV}",
             "Odeberte všechny události {UNFETTERED} ze všech balíčků událostí osady",
@@ -1637,7 +1637,7 @@ export default {
         "name": "Uniting the Crown",
         "rewards": [
             "Získejte 2 morálky",
-            "Získejte 1 prosperitu",
+            "+1 blahobyt",
             "Každý získá 30 zkušeností",
             "Získejte „Zbroj empatie“ (předmět 224)",
             "Odemkněte krabičku třídy, která je stále zamčená: {CR} nebo {DT}",
@@ -1656,20 +1656,20 @@ export default {
     "fh-62": {
         "name": "The Unfettered Seal",
         "rewards": [
-            "Získejte 1 prosperitu"
+            "+1 blahobyt"
         ]
     },
     "fh-63": {
         "name": "The Savvas Seal",
         "rewards": [
-            "Získejte 2 prosperity"
+            "+2 blahobyt"
         ]
     },
     "fh-64": {
         "name": "The Frosthaven Seal",
         "rewards": [
             "Získejte 3 morálky",
-            "Získejte 3 prosperity",
+            "+3 blahobyt",
             "Každý získá 3 ✔"
         ]
     },
@@ -1692,13 +1692,13 @@ export default {
         "name": "Core Attunement",
         "rewards": [
             "Získejte 1 morálku",
-            "Získejte 1 prosperitu"
+            "+1 blahobyt"
         ]
     },
     "fh-68": {
         "name": "The Face of Torment",
         "rewards": [
-            "Osobní úkol „Aesther Outpost“ splněn",
+            "Velký úkol „Tábor aestherů“ splněn",
             "Přidejte 133.1 do kalendáře za dva týdny"
         ]
     },
@@ -1714,8 +1714,8 @@ export default {
     "fh-70": {
         "name": "The True Oak",
         "rewards": [
-            "Osobní úkol „The True Oak“ splněn",
-            "Získejte 1 prosperitu"
+            "Velký úkol „The True Oak“ splněn",
+            "+1 blahobyt"
         ]
     },
     "fh-71": {
@@ -1755,7 +1755,7 @@ export default {
         "name": "Apotheosis",
         "rewards": [
             [
-                "Osobní úkol „Threat from the Deep“ splněn",
+                "Velký úkol „Threat from the Deep“ splněn",
                 "Získejte „Wave Blade“ (předmět 201)",
                 "Přidejte událost B-18 do balíčku lodi"
             ],
@@ -1765,7 +1765,7 @@ export default {
     "fh-77": {
         "name": "Fish King's Ascension",
         "rewards": [
-            "Osobní úkol „Threat from the Deep“ splněn",
+            "Velký úkol „Threat from the Deep“ splněn",
             "Získejte „Wave Blade“ (předmět 201)",
             "Přidejte událost B-19 do balíčku lodi"
         ]
@@ -1795,15 +1795,15 @@ export default {
     "fh-81": {
         "name": "Ruinous Research Lab",
         "rewards": [
-            "Získejte 1 prosperitu",
+            "+1 blahobyt",
             "Získejte nákres „Aesther Robe“ (předmět 70)"
         ]
     },
     "fh-82": {
         "name": "Expedition North",
         "rewards": [
-            "Získejte 2 prosperity",
-            "Přidejte do zásob Frosthavenu tyto předměty z Forgotten Circles: 153, 159 a 161"
+            "+2 blahobyt",
+            "Přidejte do zásoby Frosthavenu tyto předměty z Forgotten Circles: 153, 159 a 161"
         ]
     },
     "fh-83": {
@@ -1835,10 +1835,10 @@ export default {
         "name": "The Collection",
         "rewards": [
             [
-                "Získejte 2 inspirace"
+                "Získejte 2 povzbuzení"
             ],
             [
-                "Získejte 1 inspiraci"
+                "Získejte 1 povzbuzení"
             ]
         ]
     },
@@ -1860,14 +1860,14 @@ export default {
         "rewards": [
             [
                 "Každý získá 1 ✔",
-                "Každá postava získá 10 zlaťáků za každý číslovaný žeton, který vyloupila",
+                "Každý hrdina získá 10 zlaťáků za každý číslovaný žeton, který ukořistil",
                 "Ztraťte společně 10 zlaťáků"
             ],
             [
                 "Každý získá 1 ✔",
-                "Každá postava získá 10 zlaťáků za každý číslovaný žeton, který vyloupila",
+                "Každý hrdina získá 10 zlaťáků za každý číslovaný žeton, který ukořistil",
                 "Ztraťte společně 5 zlaťáků",
-                "Všechny postavy začínají další scénář se stavy {MUDDLE.fh} a {CURSE.fh}"
+                "Všichni hrdinové začínají další scénář se stavy {MUDDLE.fh} a {CURSE.fh}"
             ]
         ]
     },
@@ -1925,7 +1925,7 @@ export default {
     "fh-98": {
         "name": "Collapsing Vent",
         "rewards": [
-            "Získejte 1 prosperitu"
+            "+1 blahobyt"
         ]
     },
     "fh-99": {
@@ -1955,7 +1955,7 @@ export default {
         ]
     },
     "fh-103": {
-        "name": "The Lead Door",
+        "name": "Olověná dvířka",
         "rewards": [
             "Každý získá 1 ✔",
             "Každý získá 30 zkušeností",
@@ -1986,19 +1986,19 @@ export default {
         "name": "My Private Empire",
         "rewards": [
             [
-                "Získejte společně 1 libovolný materiální zdroj"
+                "Získejte společně 1 libovolný zdroj materiálu"
             ],
             [
-                "Získejte společně 2 libovolné materiální zdroje"
+                "Získejte společně 2 libovolné zdroje materiálů"
             ],
             [
-                "Získejte společně 3 libovolné materiální zdroje"
+                "Získejte společně 3 libovolné zdroje materiálů"
             ],
             [
-                "Získejte společně 4 libovolné materiální zdroje"
+                "Získejte společně 4 libovolné zdroje materiálů"
             ],
             [
-                "Získejte společně 5 libovolných materiálních zdrojů",
+                "Získejte společně 5 libovolných zdrojů materiálů",
                 "Získejte „Cup of Ventillion“ (předmět 214)"
             ]
         ]
@@ -2007,7 +2007,7 @@ export default {
         "name": "Lustrous Pit",
         "rewards": [
             "Získejte 2 morálky",
-            "Získejte 2 inspirace"
+            "Získejte 2 povzbuzení"
         ]
     },
     "fh-109": {
@@ -2037,7 +2037,7 @@ export default {
     "fh-113": {
         "name": "Lush Grotto",
         "rewards": [
-            "Získejte společně 4 libovolné bylinné zdroje"
+            "Získejte společně 4 libovolné zdroje bylin"
         ]
     },
     "fh-114": {
@@ -2097,7 +2097,7 @@ export default {
                 "Získejte společně 1 {LUMBER}",
                 "Získejte společně 1 {METAL}",
                 "Získejte společně 1 {HIDE}",
-                "Každý získá 2 libovolné materiální zdroje",
+                "Každý získá 2 libovolné zdroje materiálů",
                 "Každý získá 10 zkušeností"
             ],
             [
@@ -2105,7 +2105,7 @@ export default {
                 "Získejte společně 1 {LUMBER}",
                 "Získejte společně 1 {METAL}",
                 "Získejte společně 1 {HIDE}",
-                "Každý získá 2 libovolné materiální zdroje",
+                "Každý získá 2 libovolné zdroje materiálů",
                 "Každý získá 10 zkušeností",
                 "Získejte jeden náhodný nákres předmětu"
             ],
@@ -2114,10 +2114,10 @@ export default {
                 "Získejte společně 1 {LUMBER}",
                 "Získejte společně 1 {METAL}",
                 "Získejte společně 1 {HIDE}",
-                "Každý získá 2 libovolné materiální zdroje",
+                "Každý získá 2 libovolné zdroje materiálů",
                 "Každý získá 10 zkušeností",
                 "Získejte jeden náhodný nákres předmětu",
-                "Získejte 1 prosperitu",
+                "+1 blahobyt",
                 "Získejte 2 morálky"
             ]
         ]
@@ -2140,8 +2140,8 @@ export default {
         "name": "Radiant Dust",
         "rewards": [
             "Utraťte 7 zbývajících prachu a získejte „Scepter of Control“ (předmět 203)",
-            "Utraťte 1 zbývající prach a získejte 1 libovolný materiální zdroj",
-            "Utraťte 2 zbývající prachu a získejte 1 libovolný bylinný zdroj"
+            "Utraťte 1 zbývající prach a získejte 1 libovolný zdroj materiálu",
+            "Utraťte 2 zbývající prachu a získejte 1 libovolný zdroj bylin"
         ]
     },
     "fh-120": {
@@ -2182,7 +2182,7 @@ export default {
         "name": "Titán",
         "rewards": [
             "Získejte 1 morálku",
-            "Získejte 1 inspiraci"
+            "Získejte 1 povzbuzení"
         ]
     },
     "fh-124": {
@@ -2216,13 +2216,13 @@ export default {
             [
                 "Získejte společně 10 zlaťáků",
                 "Získejte společně 2 {LUMBER}",
-                "Získejte „Tri-Corner Hat“ 195"
+                "Získejte „Třírohý klobouk“ 195"
             ],
             [
                 "Získejte společně 10 zlaťáků",
                 "Získejte společně 2 {LUMBER}",
-                "Získejte „Tri-Corner Hat“ 195",
-                "Získejte 1 prosperitu"
+                "Získejte „Třírohý klobouk“ 195",
+                "+1 blahobyt"
             ]
         ]
     },
@@ -2255,7 +2255,7 @@ export default {
         "rewards": [
             [
                 "Ztraťte 3 morálky",
-                "Získejte 1 prosperitu",
+                "+1 blahobyt",
                 "Získejte společně 10 zlaťáků za každý nesený žeton"
             ],
             [
@@ -2273,7 +2273,7 @@ export default {
     "fh-132": {
         "name": "Temple of Feline Power",
         "rewards": [
-            "Získejte 1 inspiraci"
+            "Získejte 1 povzbuzení"
         ]
     },
     "fh-133": {
@@ -2292,8 +2292,8 @@ export default {
         "name": "Belara's Keep",
         "rewards": [
             "Získejte 2 morálky",
-            "Získejte 2 prosperity",
-            "Získejte 1 inspiraci",
+            "+2 blahobyt",
+            "Získejte 1 povzbuzení",
             "Získejte „Belaras Quill“ (předmět 220)"
         ]
     },
@@ -2307,7 +2307,7 @@ export default {
     "fh-137": {
         "name": "Pirate Queen's Haul",
         "rewards": [
-            "Získejte 2 prosperity",
+            "+2 blahobyt",
             "Získejte 3 morálky",
             "Každý získá 30 zlaťáků",
             "Přidejte jednu samolepku +1 na kartu kořisti s penězi"
@@ -2431,7 +2431,7 @@ export default {
     "cs-4": {
         "name": "Infected Warriors",
         "rewards": [
-            "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
+            "Každý hrdina získá jeden náhodný předmět „Orb“ (předměty 1-10)"
         ]
     },
     "cs-5": {
@@ -2481,7 +2481,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 prosperita",
-            "Každá postava získá jedno z následujícího: „Major Stamina Potion“ (předmět gh-34), „Major Power Potion“ (předmět gh-41), „Major Mana Potion“ (předmět gh-48)\nPokud nic z toho není v obchodě k dispozici, získá místo toho 20 zlaťáků"
+            "Každý hrdina získá jedno z následujícího: „Major Stamina Potion“ (předmět gh-34), „Major Power Potion“ (předmět gh-41), „Major Mana Potion“ (předmět gh-48)\nPokud nic z toho není v obchodě k dispozici, získá místo toho 20 zlaťáků"
         ]
     },
     "cs-14": {
@@ -2494,14 +2494,14 @@ export default {
         "name": "Ambush of Beasts",
         "rewards": [
             "15 zlaťáků každý",
-            "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
+            "Každý hrdina získá jeden náhodný předmět „Orb“ (předměty 1-10)"
         ]
     },
     "cs-16": {
         "name": "Preto Krisanta",
         "rewards": [
             "10 zlaťáků každý",
-            "Jedna postava získá jedno vylepšení {+1_WHITE} na libovolnou kartu úrovně 1 nebo X"
+            "Jeden hrdina získá jedno vylepšení {+1_WHITE} na libovolnou kartu úrovně 1 nebo X"
         ]
     },
     "cs-17": {
@@ -2527,7 +2527,7 @@ export default {
         "rewards": [
             "+1 reputace",
             "+1 prosperita",
-            "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
+            "Každý hrdina získá jeden náhodný předmět „Orb“ (předměty 1-10)"
         ]
     },
     "cs-21": {
@@ -2539,7 +2539,7 @@ export default {
     "cs-22": {
         "name": "Imp Temple",
         "rewards": [
-            "Každá postava získá +2 zlaťáky a 2 zkušenosti za každý vyloupený žeton peněz."
+            "Každý hrdina získá +2 zlaťáky a 2 zkušenosti za každý ukořistěný žeton peněz."
         ]
     },
     "cs-23": {
@@ -2551,7 +2551,7 @@ export default {
     "cs-24": {
         "name": "Eerie Grotto",
         "rewards": [
-            "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
+            "Každý hrdina získá jeden náhodný předmět „Orb“ (předměty 1-10)"
         ]
     },
     "cs-25": {
@@ -2605,12 +2605,12 @@ export default {
         "name": "Confronting the Past",
         "rewards": [
             "Přečtěte si {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
-            "Heslo „Vodní hydra“"
+            "Heslo „Water Hydra“"
         ]
     },
     "cs-33": {
         "name": "Siege Tower",
-        "requirements": "Osobní úkol „Protect and Serve“",
+        "requirements": "Velký úkol „Protect and Serve“",
         "rewards": [
             "„Blazing Boots“ (předmět 90)",
             "+1 reputace"
@@ -2618,20 +2618,20 @@ export default {
     },
     "cs-34": {
         "name": "Great Oak Escape",
-        "requirements": "Osobní úkol „Protect and Serve“",
+        "requirements": "Velký úkol „Protect and Serve“",
         "rewards": [
             "Odemkněte obálku {BM}",
             "+2 reputace",
-            "Všechny postavy přidají jednu kartu {BLESS} do svého balíčku modifikátorů útoku pro další scénář"
+            "Všichni hrdinové přidají jednu kartu {BLESS} do svého balíčku modifikátorů útoku pro další scénář"
         ]
     },
     "cs-35": {
         "name": "Prison Riot",
-        "requirements": "Osobní úkol „Bandit Banisher“"
+        "requirements": "Velký úkol „Bandit Banisher“"
     },
     "cs-36": {
         "name": "Hunters Bounty",
-        "requirements": "Osobní úkol „Bandit Banisher“",
+        "requirements": "Velký úkol „Bandit Banisher“",
         "rewards": [
             "Odemkněte obálku {CG}",
             "10 zlaťáků každý"
@@ -2639,21 +2639,21 @@ export default {
     },
     "cs-37": {
         "name": "Burning Stones",
-        "requirements": "Osobní úkol „Natural Selection“",
+        "requirements": "Velký úkol „Natural Selection“",
         "rewards": [
-            "Získejte jeden náhodný předmět „Kámen“ (předměty 94-100)"
+            "Získejte jeden náhodný předmět „Stone“ (předměty 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
-        "requirements": "Osobní úkol „Natural Selection“",
+        "requirements": "Velký úkol „Natural Selection“",
         "rewards": [
             "Odemkněte obálku {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
-        "requirements": "Osobní úkol „An Adder Divides“",
+        "requirements": "Velký úkol „An Adder Divides“",
         "rewards": [
             "10 zkušeností každý",
             "Odeberte horních 5 karet z balíčku městských událostí a zamíchejte do nich městskou událost 57. Zbývající karty městských událostí odložte stranou, dokud nebude městská událost 57 vyřešena. Jakákoli další karta, která by se během této doby měla přidat do balíčku městských událostí, se přidá po vyřešení městské události 57, kdy se zbývající karty spojí s původním balíčkem.",
@@ -2683,14 +2683,14 @@ export default {
         "name": "Mansion Maze",
         "rewards": [
             "+1 prosperita",
-            "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
+            "Každý hrdina získá jeden náhodný předmět „Orb“ (předměty 1-10)"
         ]
     },
     "cs-44": {
         "name": "Haunted Manor",
         "rewards": [
             "20 zlaťáků každý",
-            "Každá postava získá jeden náhodný předmět „Koule“ (předměty 1-10)"
+            "Každý hrdina získá jeden náhodný předmět „Orb“ (předměty 1-10)"
         ]
     },
     "cs-45": {
@@ -2839,14 +2839,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
-        "requirements": "Osobní úkol „At All Costs“",
+        "requirements": "Velký úkol „At All Costs“",
         "rewards": [
             "„Rockspine Bulwark“ (předmět AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
-        "requirements": "Osobní úkol „The Weight of failure“",
+        "requirements": "Velký úkol „The Weight of failure“",
         "rewards": [
             "„Ghostshimmer Honey“ (předmět AA02)"
         ]
@@ -2859,7 +2859,7 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
-        "requirements": "Osobní úkol „Ingenious Inventor“ a vybavený předmět „Power Modulator“",
+        "requirements": "Velký úkol „Ingenious Inventor“ a vybavený předmět „Power Modulator“",
         "rewards": [
             [
                 "Úkol „Ingenious Inventor“ splněn",
@@ -2885,7 +2885,7 @@ export default {
     },
     "cs-QA2": {
         "name": "Mother Lode",
-        "requirements": "Osobní úkol „Scrap Diver“",
+        "requirements": "Velký úkol „Scrap Diver“",
         "rewards": [
             "Úkol „Scrap Diver“ splněn",
             "Otevřete obálku {QA}",
@@ -2901,11 +2901,11 @@ export default {
     },
     "cs-RM1": {
         "name": "Mind your Manners",
-        "requirements": "Osobní úkol „Brutal Enforcer“"
+        "requirements": "Velký úkol „Brutal Enforcer“"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
-        "requirements": "Osobní úkol „Brutal Enforcer“",
+        "requirements": "Velký úkol „Brutal Enforcer“",
         "rewards": [
             "Úkol „Brutal Enforcer“ splněn",
             "Otevřete obálku {RM}",
@@ -2914,11 +2914,11 @@ export default {
     },
     "cs-RM3": {
         "name": "Ruined Colony",
-        "requirements": "Osobní úkol „Apex Predator“"
+        "requirements": "Velký úkol „Apex Predator“"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
-        "requirements": "Osobní úkol „Apex Predator“",
+        "requirements": "Velký úkol „Apex Predator“",
         "rewards": [
             "Úkol „Apex Predator“ splněn",
             "Otevřete obálku {RM}",
@@ -2949,7 +2949,7 @@ export default {
     },
     "cs-RM7": {
         "name": "Insatiable",
-        "requirements": "V družině není Troskožrout",
+        "requirements": "V družině není Ruinmaw",
         "rewards": [
             "10 zkušeností každý",
             "Nákres „Savage Cuirass“ (předmět RM06)"
@@ -3421,7 +3421,7 @@ export default {
         "rewards": [
             "10 zlaťáků každý",
             "+1 prosperita",
-            "Osobní úkol 08 splněn"
+            "Velký úkol 08 splněn"
         ]
     },
     "gh2-61": {
@@ -3432,19 +3432,19 @@ export default {
         "name": "Alchymistická laboratoř",
         "rewards": [
             "+1 prosperita",
-            "Osobní úkol 09 splněn"
+            "Velký úkol 09 splněn"
         ]
     },
     "gh2-63": {
         "name": "Hasnoucí maják",
         "rewards": [
-            "Osobní úkol 04 splněn"
+            "Velký úkol 04 splněn"
         ]
     },
     "gh2-64": {
         "name": "Roots of Chaos",
         "rewards": [
-            "Osobní úkol 10 splněn"
+            "Velký úkol 10 splněn"
         ]
     },
     "gh2-65": {
@@ -3458,7 +3458,7 @@ export default {
         "name": "A Friend in Need",
         "rewards": [
             "15 zlaťáků každý",
-            "Osobní úkol 11 splněn"
+            "Velký úkol 11 splněn"
         ]
     },
     "gh2-67": {
@@ -3466,7 +3466,7 @@ export default {
         "rewards": [
             "15 zlaťáků každý",
             "10 zkušeností každý",
-            "Získejte „Helix Ring“ (předmět 136)"
+            "Získejte „Šroubovicový prsten“ (předmět 136)"
         ]
     },
     "gh2-68": {
@@ -3512,7 +3512,7 @@ export default {
         "name": "Větrem ošlehaná vysočina",
         "rewards": [
             "+1 prosperita",
-            "Získejte „Major Power Potion“ (předmět 53)"
+            "Získejte „Větší lektvar síly“ (předmět 53)"
         ]
     },
     "gh2-75": {
@@ -3548,7 +3548,7 @@ export default {
         "rewards": [
             "100 zlaťáků každý",
             "+2 prosperita",
-            "Získejte „Heart of the Betrayer“ (předmět 133)",
+            "Získejte „Srdce zrádce“ (předmět 133)",
             "Tyto peníze je nutné okamžitě utratit za vylepšení"
         ]
     },
@@ -3596,7 +3596,7 @@ export default {
     "gh2-87": {
         "name": "Sirný důl",
         "rewards": [
-            "Získejte „Ancient Drill“ (předmět 109)"
+            "Získejte „Prastarý vrták“ (předmět 109)"
         ]
     },
     "gh2-88": {
@@ -3608,7 +3608,7 @@ export default {
     "gh2-89": {
         "name": "Community Service",
         "rewards": [
-            "Získejte 2× „Major Healing Potion“ (předmět 37)"
+            "Získejte 2× „Větší léčivý lektvar“ (předmět 37)"
         ]
     },
     "gh2-90": {
@@ -3660,7 +3660,7 @@ export default {
         "name": "Metamorphic Fault",
         "rewards": [
             "10 zkušeností každý",
-            "Získejte „Skull of Hatred“ (předmět 111)"
+            "Získejte „Lebka nenávisti“ (předmět 111)"
         ]
     },
     "gh2-99": {
@@ -3712,7 +3712,7 @@ export default {
     "gh2-202": {
         "name": "Nešťastné vniknutí",
         "rewards": [
-            "Získejte „Focusing Ray“ (předmět 154)"
+            "Získejte „Zaostřující paprsek“ (předmět 154)"
         ]
     },
     "gh2-203": {
@@ -3724,19 +3724,19 @@ export default {
     "gh2-204": {
         "name": "Material Concerns",
         "rewards": [
-            "Získejte „Silent Stiletto“ (předmět 156)"
+            "Získejte „Tichý stilet“ (předmět 156)"
         ]
     },
     "gh2-205": {
         "name": "Kamenná obrana",
         "rewards": [
-            "Získejte „Stone Charm“ (předmět 157)"
+            "Získejte „Kamenný talisman“ (předmět 157)"
         ]
     },
     "gh2-206": {
         "name": "Vermling Liberation",
         "rewards": [
-            "Získejte „Psychic Knife“ (předmět 158)"
+            "Získejte „Psychický nůž“ (předmět 158)"
         ]
     },
     "gh2-207": {
@@ -3748,13 +3748,13 @@ export default {
     "gh2-208": {
         "name": "Skladné",
         "rewards": [
-            "Získejte „Utility Belt“ (předmět 160)"
+            "Získejte „Univerzální opasek“ (předmět 160)"
         ]
     },
     "gh2-209": {
         "name": "Rovina divokých šelem",
         "rewards": [
-            "Získejte „Phasing Idol“ (předmět 161)"
+            "Získejte „Fázovací modla“ (předmět 161)"
         ]
     },
     "gh2-210": {
@@ -3766,31 +3766,31 @@ export default {
     "gh2-211": {
         "name": "Morem sužovaná krypta",
         "rewards": [
-            "Získejte „Pendant of the Plague“ (předmět 163)"
+            "Získejte „Přívěsek moru“ (předmět 163)"
         ]
     },
     "gh2-212": {
         "name": "Nepřirozené urážky",
         "rewards": [
-            "Získejte „Mask of Death“ (předmět 164)"
+            "Získejte „Maska smrti“ (předmět 164)"
         ]
     },
     "gh2-213": {
         "name": "Bitva bardů",
         "rewards": [
-            "Získejte „Master's Lute“ (předmět 165)"
+            "Získejte „Mistrova loutna“ (předmět 165)"
         ]
     },
     "gh2-214": {
         "name": "Zkažený hon",
         "rewards": [
-            "Získejte „Cloak of the Hunter“ (předmět 166)"
+            "Získejte „Plášť lovce“ (předmět 166)"
         ]
     },
     "gh2-215": {
         "name": "Následky",
         "rewards": [
-            "Získejte „Doctor's Coat“ (předmět 167)"
+            "Získejte „Doktorský plášť“ (předmět 167)"
         ]
     },
     "gh2-216": {
@@ -3802,7 +3802,7 @@ export default {
     "gh2-217": {
         "name": "Medvěd v kleci",
         "rewards": [
-            "Získejte „Staff of Command“ (předmět 169)"
+            "Získejte „Hůl rozkazů“ (předmět 169)"
         ]
     },
     "gh2-218": {

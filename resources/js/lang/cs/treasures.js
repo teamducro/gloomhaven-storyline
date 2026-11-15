@@ -222,7 +222,7 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh-75": {
-        "name": "Nalezen kryptogram (viz kniha scénářů, strana 121)"
+        "name": "Nalezen kryptogram (viz kniha příběhů, strana 121)"
     },
     "fc-76": {
         "name": "Utrpěte 3 zranění, získejte {WOUND} a 10 zlaťáků"
@@ -270,7 +270,7 @@ export default {
         "name": "10 zlaťáků každý, přečtěte si oddíl 75 na straně 49"
     },
     "fc-91": {
-        "name": "Získejte 30 zlaťáků a úspěch družiny „Opportunists“. Přidejte do balíčku událost ve městě 84"
+        "name": "Získejte 30 zlaťáků a úspěch družiny „Opportunists“. Přidejte do balíčku městskou událost 84"
     },
     "fc-93": {
         "name": "„Scroll of Haste“ (předmět 159)"
@@ -279,55 +279,55 @@ export default {
         "name": "Získejte 1 ✓ a přidejte do balíčku událost v trhlině 20"
     },
     "fc-95": {
-        "name": "Získejte 25 zlaťáků a úspěch družiny „Železná pokladnice“. Přidejte do balíčku událost ve městě 85"
+        "name": "Získejte 25 zlaťáků a úspěch družiny „A Strongbox“. Přidejte do balíčku městskou událost 85"
     },
     "fc-96": {
         "name": "Najdete starý svazek plný technických výkresů a konstrukčních schémat široké škály exotických strojů. Uvnitř předního přebalu je zvláštní ručně psaná poznámka: {NOTE_115}"
     },
     "jotl-1": {
-        "name": "Získejte 10 zkušeností"
+        "name": "Získáváš 10 zkušeností."
     },
     "jotl-2": {
         "name": "„Prsten síly“ (předmět 31)"
     },
     "jotl-3": {
-        "name": "Získejte 15 zkušeností"
+        "name": "Získáváš 15 zkušeností."
     },
     "jotl-4": {
-        "name": "Získejte 5 zlaťáků"
+        "name": "Získáváš 5 zlaťáků."
     },
     "jotl-5": {
-        "name": "Získejte 1 ✔"
+        "name": "Získáváš 1 ✔."
     },
     "jotl-6": {
-        "name": "Získejte 10 zlaťáků"
+        "name": "Získáváš 10 zlaťáků."
     },
     "jotl-7": {
-        "name": "Získejte 5 zlaťáků"
+        "name": "Získáváš 5 zlaťáků."
     },
     "jotl-8": {
         "name": "Utrpěte 3 zranění, získejte {POISON,"
     },
     "jotl-9": {
-        "name": "Získejte 5 zlaťáků"
+        "name": "Získáváš 5 zlaťáků."
     },
     "jotl-10": {
-        "name": "„Fateful Compass“ (předmět 27)"
+        "name": "„Kompas osudu“ (předmět 27)"
     },
     "jotl-11": {
         "name": "„Prsten spěchu“ (předmět 30)"
     },
     "jotl-12": {
-        "name": "Získejte 5 zlaťáků"
+        "name": "Získáváš 5 zlaťáků."
     },
     "jotl-13": {
-        "name": "Získejte 5 zlaťáků"
+        "name": "Získáváš 5 zlaťáků."
     },
     "jotl-14": {
-        "name": "Získejte 3 žetony peněz"
+        "name": "Získáváš 3 žetony mincí."
     },
     "jotl-15": {
-        "name": "Získejte 1 ✔"
+        "name": "Získáváš 1 ✔."
     },
     "jotl-16": {
         "name": "„Lektvar many“ (předmět 14)"
@@ -345,7 +345,7 @@ export default {
         "name": "„Chain Mace“ (předmět 14)"
     },
     "cs-4": {
-        "name": "Získejte 15 zlaťáků a získejte zpět jednu ztracenou kartu"
+        "name": "Získejte 15 zlaťáků a obnovte jednu zničenou kartu"
     },
     "cs-5": {
         "name": "„Concussion Mine“ (předmět 31)"
@@ -354,7 +354,7 @@ export default {
         "name": "Získejte 20 zlaťáků a zneškodněte všechny sousední pasti"
     },
     "cs-7": {
-        "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
+        "name": "Jeden náhodný předmět „Stone“ (předměty 94–100)"
     },
     "cs-8": {
         "name": "„Dizzying Tincture“ (předmět 58)"
@@ -363,7 +363,7 @@ export default {
         "name": "„Orb of Fortune“ (předmět 9)"
     },
     "cs-10": {
-        "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
+        "name": "Jeden náhodný předmět „Stone“ (předměty 94–100)"
     },
     "cs-11": {
         "name": "„Dizzying Tincture“ (předmět 58)"
@@ -390,10 +390,10 @@ export default {
         "name": "„Boneclad Shawl“ (předmět 25)"
     },
     "cs-19": {
-        "name": "Získejte ✓ a vygenerujte libovolný živel"
+        "name": "Získejte ✓ a vyvolejte libovolný živel"
     },
     "cs-20": {
-        "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
+        "name": "Jeden náhodný předmět „Stone“ (předměty 94–100)"
     },
     "cs-21": {
         "name": "„Steel Helmet“ (předmět 22)"
@@ -405,7 +405,7 @@ export default {
         "name": "„Trophy Helm“ (předmět 12)"
     },
     "cs-24": {
-        "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
+        "name": "Jeden náhodný předmět „Stone“ (předměty 94–100)"
     },
     "cs-25": {
         "name": "„Draining Greaves“ (předmět 15)"
@@ -423,7 +423,7 @@ export default {
         "name": "„Woven Plate Armor“ (předmět 23)"
     },
     "cs-30": {
-        "name": "„Šál s kostěným krytím (předmět 25)"
+        "name": "„Boneclad Shawl (předmět 25)"
     },
     "cs-31": {
         "name": "„Drakes Blood“ (předmět 59)"
@@ -453,7 +453,7 @@ export default {
         "name": "„Infrared Goggles“ (předmět 21)"
     },
     "cs-40": {
-        "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
+        "name": "Jeden náhodný předmět „Stone“ (předměty 94–100)"
     },
     "cs-41": {
         "name": "„Ashsteel Gauntlets“ (předmět 61)"
@@ -462,13 +462,13 @@ export default {
         "name": "„War Pick“ (předmět 13)"
     },
     "cs-43": {
-        "name": "10 zkušeností a obnovte všechny použité předměty"
+        "name": "10 zkušeností a obnovte všechny opotřebené předměty"
     },
     "cs-44": {
         "name": "„Mana Medicine“ (předmět 60)"
     },
     "cs-45": {
-        "name": "Jeden náhodný „kamenný“ předmět (předměty 94–100)"
+        "name": "Jeden náhodný předmět „Stone“ (předměty 94–100)"
     },
     "cs-46": {
         "name": "Nákres „Vipertooth Dagger“ (předmět 54)"
@@ -486,280 +486,280 @@ export default {
         "name": "„Bottled Moonlight“ (předmět 18)"
     },
     "fh-1": {
-        "name": "Získejte čtyři karty kořisti."
+        "name": "Získáváš čtyři karty kořisti."
     },
     "fh-2": {
-        "name": "Utrpěte 3 zranění, poté získejte {MUDDLE}"
+        "name": "Utržíš 3 zranění a dále utržíš {MUDDLE}"
     },
     "fh-3": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-4": {
-        "name": "Získejte Večerní žezlo 200."
+        "name": "Získáváš Soumračné žezlo 200."
     },
     "fh-5": {
-        "name": "Získejte Utržený dráp 204."
+        "name": "Získáváš Useknuté klepeto 204."
     },
     "fh-6": {
-        "name": "Získejte Přepychové střevíce 199."
+        "name": "Získáváš Výstřední boty 199."
     },
     "fh-7": {
-        "name": "Získejte Datovou jednotku 227."
+        "name": "Získáváš Datové úložiště 227."
     },
     "fh-8": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-9": {
-        "name": "Odemkněte náhodný vedlejší scénář."
+        "name": "Zpřístupni náhodný vedlejší scénář."
     },
     "fh-10": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-11": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-12": {
-        "name": "Najdete ostatky Camilly a její obrazy majestátního rohatého tvora. Získejte samolepku kampaně „Brummix“ a za tři týdny přidejte do kalendáře kampaně oddíl 99.1."
+        "name": "Najdeš Kaméliiny pozůstatky spolu s malbami majestátní rohaté stvůry. Získáte samolepku kampaně „Brummix“ a přidejte oddíl 99.1 do kalendáře za tři týdny."
     },
     "fh-13": {
-        "name": "Získejte Rybářský háček 207."
+        "name": "Získáváš Rybářský háček 207."
     },
     "fh-14": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-15": {
-        "name": "Odemkněte náhodný vedlejší scénář."
+        "name": "Zpřístupni náhodný vedlejší scénář."
     },
     "fh-16": {
-        "name": "Získejte Karafu mlh 183."
+        "name": "Získáváš Mlžnou karafu 183."
     },
     "fh-17": {
-        "name": "Získejte 3 dřevo."
+        "name": "Získáváš 3 dřeva."
     },
     "fh-18": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-19": {
-        "name": "Získejte 1 sekyrový ořech, 1 mrtvolnou houbu a 1 ohnivý plod."
+        "name": "Získáváš 1 sekořech, 1 smrtničku a 1 ohňovoce."
     },
     "fh-20": {
-        "name": "Získejte čtyři karty kořisti."
+        "name": "Získáváš čtyři karty kořisti."
     },
     "fh-21": {
-        "name": "Získejte nákres předmětu Rozbuška 064."
+        "name": "Získáváš nákres Detonátoru 064."
     },
     "fh-22": {
-        "name": "Získejte nákres předmětu Šupinová zbroj 068."
+        "name": "Získáváš nákres Šupinové zbroje 068."
     },
     "fh-23": {
-        "name": "Odemkněte náhodný vedlejší scénář."
+        "name": "Zpřístupni náhodný vedlejší scénář."
     },
     "fh-24": {
-        "name": "Získejte Zhoubu."
+        "name": "Utržíš zhoubu."
     },
     "fh-25": {
-        "name": "Získejte 1 mrtvolnou houbu a 1 ohnivý plod."
+        "name": "Získáváš 1 smrtničku a 1 ohňovoce."
     },
     "fh-26": {
-        "name": "Získejte Hromosvod 223."
+        "name": "Získáváš Bleskové žezlo 223."
     },
     "fh-27": {
-        "name": "Získejte dvě karty kořisti a {POISON}."
+        "name": "Získáváš dvě karty kořisti a utržíš {POISON}."
     },
     "fh-28": {
-        "name": "Získejte čtyři karty kořisti."
+        "name": "Získáváš čtyři karty kořisti."
     },
     "fh-29": {
-        "name": "Získejte 2 dřevo 2 kůže."
+        "name": "Získáváš 2 dřeva a 2 kožešiny."
     },
     "fh-30": {
-        "name": "Získejte čtyři karty kořisti."
+        "name": "Získáváš čtyři karty kořisti."
     },
     "fh-31": {
-        "name": "Získejte nákres předmětu Vyvážené váhy 078."
+        "name": "Získáváš nákres Vyvážených vah 078."
     },
     "fh-32": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-33": {
-        "name": "Získejte 3 dřevo."
+        "name": "Získáváš 3 dřeva."
     },
     "fh-34": {
-        "name": "Získejte 1 ✔."
+        "name": "Získáváš 1 ✔."
     },
     "fh-35": {
-        "name": "Získejte Výsuvnou tyč 228."
+        "name": "Získáváš Teleskopickou hůl 228."
     },
     "fh-36": {
-        "name": "Získejte Černou skříňku 222."
+        "name": "Získáváš Černou skříňku 222."
     },
     "fh-37": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-38": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-39": {
-        "name": "Odemkněte náhodný vedlejší scénář."
+        "name": "Zpřístupni náhodný vedlejší scénář."
     },
     "fh-40": {
-        "name": "Získejte nákres předmětu Ručnice chaosu 077."
+        "name": "Získáváš nákres Ručnice chaosu 077."
     },
     "fh-41": {
-        "name": "Získejte Algoxskou řezbu 225."
+        "name": "Získáváš Algoxskou řezbu 225."
     },
     "fh-42": {
-        "name": "Získejte Obří meč 206."
+        "name": "Získáváš Obří meč 206."
     },
     "fh-43": {
-        "name": "Získejte čtyři karty kořisti."
+        "name": "Získáváš čtyři karty kořisti."
     },
     "fh-44": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-45": {
-        "name": "Získejte 2 dřevo 2 kov."
+        "name": "Získáváš 2 dřeva a 2 kovy."
     },
     "fh-46": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-47": {
-        "name": "Získejte 5 zkušeností."
+        "name": "Získáváš 5 zkušeností."
     },
     "fh-48": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-49": {
-        "name": "Získejte nákres předmětu Kostěné boty 071"
+        "name": "Získáváš nákres Kostěných bot 071"
     },
     "fh-50": {
-        "name": "Získejte Hrubou koženou zbroj 017."
+        "name": "Získáváš Tvrzenou koženou zbroj 017."
     },
     "fh-51": {
-        "name": "Přečtěte si 78.1."
+        "name": "Přečti oddíl 78.1."
     },
     "fh-52": {
-        "name": "Získejte Titánský hřeb 208."
+        "name": "Získáváš Titánský hřeb 208."
     },
     "fh-53": {
-        "name": "Získejte Oko bouře 239."
+        "name": "Získáváš Oko bouře 239."
     },
     "fh-54": {
-        "name": "Truhla s pokladem? Žádná truhla s pokladem tam nebyla. Možná byste měli s pitím polevit."
+        "name": "Poklad? Žádný poklad nevidíš. Možná je na čase omezit pití."
     },
     "fh-55": {
-        "name": "Získejte Harpunu 205."
+        "name": "Získáváš Harpunu 205."
     },
     "fh-56": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-57": {
-        "name": "Co je tohle? Prázdná truhla s olověnými padacími dvířky na dně. Poznamenáte si polohu, abyste se mohli později vrátit s pomocí Gem. Odemkněte Olověné dveře 103."
+        "name": "Co je tohle? Prázdná truhlice, na jejímž dně se ukrývají olověná padací dvířka. Poznamenáš si její umístění, abyste se sem mohli později vrátit s Drahokamou. Zpřístupni scénář Olověná dvířka 103."
     },
     "fh-58": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-59": {
-        "name": "Získejte nákres předmětu Simulakrum bolesti 081."
+        "name": "Získáváš nákres Přenesené bolesti 081."
     },
     "fh-60": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-61": {
-        "name": "Odemkněte náhodný vedlejší scénář."
+        "name": "Zpřístupni náhodný vedlejší scénář."
     },
     "fh-62": {
-        "name": "Získejte nákres předmětu Mechanická kostka 082, až najdete druhou polovinu tohoto nákresu."
+        "name": "Až získáš druhou část tohoto nákresu, získáš nákres Mechanické kostky 082."
     },
     "fh-63": {
-        "name": "Získejte pět karet kořisti."
+        "name": "Získáváš pět karet kořisti."
     },
     "fh-64": {
-        "name": "Získejte 3 dřevo."
+        "name": "Získáváš 3 dřeva."
     },
     "fh-65": {
-        "name": "Získejte 15 peněz."
+        "name": "Získáváš 15 peněz."
     },
     "fh-66": {
-        "name": "Utrpěte 2 zranění, poté získejte Křehkost."
+        "name": "Utrpíš 2 zranění a poté získáš křehkost."
     },
     "fh-67": {
-        "name": "Odemkněte náhodný vedlejší scénář."
+        "name": "Zpřístupni náhodný vedlejší scénář."
     },
     "fh-68": {
-        "name": "Získejte 4 kov."
+        "name": "Získáváš 4 kovy."
     },
     "fh-69": {
-        "name": "Získejte nákres předmětu Mechanická kostka 082, až najdete druhou polovinu tohoto nákresu."
+        "name": "Až získáš druhou část tohoto nákresu, získáš nákres Mechanické kostky 082."
     },
     "fh-70": {
-        "name": "Získejte nákres předmětu Roh příkazů 076."
+        "name": "Získáváš nákres Rohu příkazů 076."
     },
     "fh-71": {
-        "name": "Získejte čtyři karty kořisti."
+        "name": "Získáváš čtyři karty kořisti."
     },
     "fh-72": {
-        "name": "Získejte nákres předmětu Živý kámen 080."
+        "name": "Získáváš nákres Živoucího kamene 080."
     },
     "fh-73": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-74": {
-        "name": "Získejte náhodný nákres předmětu."
+        "name": "Získáváš náhodný nákres předmětu."
     },
     "fh-75": {
-        "name": "Získejte 1 ✔."
+        "name": "Získáváš 1 ✔."
     },
     "fh-76": {
-        "name": "Odemkněte náhodný vedlejší scénář."
+        "name": "Zpřístupni náhodný vedlejší scénář."
     },
     "fh-77": {
-        "name": "Získejte tři karty kořisti."
+        "name": "Získáváš tři karty kořisti."
     },
     "fh-78": {
-        "name": "Získejte Přepychové střevíce 199."
+        "name": "Získáváš Výstřední boty 199."
     },
     "fh-79": {
-        "name": "Získejte 10 zkušeností."
+        "name": "Získáváš 10 zkušeností."
     },
     "fh-80": {
-        "name": "Získejte 15 zkušeností."
+        "name": "Získáváš 15 zkušeností."
     },
     "fh-81": {
-        "name": "Získejte Paži Nespoutaného 226."
+        "name": "Získáváš Paži Nespoutaného 226."
     },
     "fh-82": {
-        "name": "Získejte nákres předmětu Dubová hůl 072."
+        "name": "Získáváš nákres Dubové hole 072."
     },
     "fh-83": {
-        "name": "Získejte Trojrohý klobouk 195."
+        "name": "Získáváš Třírohý klobouk 195."
     },
     "fh-84": {
-        "name": "Získejte Ledový nůž 221."
+        "name": "Získáváš Ledový kord 221."
     },
     "fh-85": {
         "name": "Získejte 10 peněz."
     },
     "gh2-1": {
-        "name": "Získejte „Magma Waders“ (předmět 142)"
+        "name": "Získejte „Magmové holínky“ (předmět 142)"
     },
     "gh2-2": {
         "name": "Utrpěte 3 zranění a získejte {POISON}"
     },
     "gh2-3": {
-        "name": "Získejte „Star Earring“ (předmět 63)"
+        "name": "Získejte „Hvězdné náušnice“ (předmět 63)"
     },
     "gh2-4": {
-        "name": "Získejte „Cloak of Phasing“ (předmět 98)"
+        "name": "Získejte „Plášť fázování“ (předmět 98)"
     },
     "gh2-5": {
-        "name": "Získejte „Pendant of Dark Pacts“ (předmět 128)"
+        "name": "Získejte „Přívěsek temných paktů“ (předmět 128)"
     },
     "gh2-6": {
         "name": "Náhodný vedlejší scénář"
     },
     "gh2-7": {
-        "name": "Získejte „Thief's Hood“ (předmět 108)"
+        "name": "Získejte „Zlodějská kapuce“ (předmět 108)"
     },
     "gh2-8": {
         "name": "Utrpěte 3 zranění a získejte {CURSE}"
@@ -792,10 +792,10 @@ export default {
         "name": "Získejte 15 zlaťáků"
     },
     "gh2-18": {
-        "name": "Získejte „Unstable Explosives“ (předmět 99)"
+        "name": "Získejte „Nestabilní výbušniny“ (předmět 99)"
     },
     "gh2-19": {
-        "name": "Získejte „Drakescale Boots“ (předmět 119)"
+        "name": "Získejte „Boty z dračích šupin“ (předmět 119)"
     },
     "gh2-20": {
         "name": "Získejte 25 zlaťáků"
@@ -804,7 +804,7 @@ export default {
         "name": "Získejte 2 ✔"
     },
     "gh2-22": {
-        "name": "Získejte „Helm of the Mountain“ (předmět 129) a „Mountain Hammer“ (předmět 130)"
+        "name": "Získejte „Přilba hory“ (předmět 129) a „Horské kladivo“ (předmět 130)"
     },
     "gh2-23": {
         "name": "Získejte 15 zlaťáků"
@@ -831,7 +831,7 @@ export default {
         "name": "Získejte 20 zkušeností"
     },
     "gh2-31": {
-        "name": "Získejte „Wave Crest“ (předmět 131)"
+        "name": "Získejte „Hřeben vlny“ (předmět 131)"
     },
     "gh2-32": {
         "name": "Náhodný vedlejší scénář"
@@ -840,7 +840,7 @@ export default {
         "name": "Získejte „Cure Potion“ (předmět 101)"
     },
     "gh2-34": {
-        "name": "Získejte „Drakescale Helm“ (předmět 121)"
+        "name": "Získejte „Přilba z dračích šupin“ (předmět 121)"
     },
     "gh2-35": {
         "name": "Získejte „Rod of Transference“ (předmět 115)"
@@ -849,7 +849,7 @@ export default {
         "name": "Náhodný nákres předmětu"
     },
     "gh2-37": {
-        "name": "Získejte „Shoes of Happiness“ (předmět 97)"
+        "name": "Získejte „Boty štěstí“ (předmět 97)"
     },
     "gh2-38": {
         "name": "Získejte 1 ✔"
@@ -858,7 +858,7 @@ export default {
         "name": "Získejte 20 zkušeností"
     },
     "gh2-40": {
-        "name": "Získejte „Fueled Falchion“ (předmět 110)"
+        "name": "Získejte „Poháněný falchion“ (předmět 110)"
     },
     "gh2-41": {
         "name": "Získejte 15 zlaťáků"
@@ -888,7 +888,7 @@ export default {
         "name": "Získejte 15 zkušeností"
     },
     "gh2-50": {
-        "name": "Získejte „Steam Armor“ (předmět 106)"
+        "name": "Získejte „Parní zbroj“ (předmět 106)"
     },
     "gh2-51": {
         "name": "Získejte 15 zkušeností"
@@ -900,7 +900,7 @@ export default {
         "name": "Získejte 1 ✔"
     },
     "gh2-54": {
-        "name": "Získejte 15 gold a „Steel Ring“ (předmět 102)"
+        "name": "Získejte 15 zlaťáků a „Ocelový prsten“ (předmět 102)"
     },
     "gh2-55": {
         "name": "Získejte 20 zkušeností"
@@ -939,7 +939,7 @@ export default {
         "name": "Získejte {POISON} a {STRENGTHEN} a získejte zpět 2 ztracené karty"
     },
     "gh2-67": {
-        "name": "Získejte „Doomed Compass“ (předmět 132)"
+        "name": "Získejte „Zkázonosný kompas“ (předmět 132)"
     },
     "gh2-68": {
         "name": "Náhodný nákres předmětu"
@@ -957,13 +957,13 @@ export default {
         "name": "Získejte 25 zlaťáků"
     },
     "gh2-73": {
-        "name": "Získejte „Necklace of Teeth“ (předmět 107)"
+        "name": "Získejte „Náhrdelník ze zubů“ (předmět 107)"
     },
     "gh2-74": {
         "name": "Utrpěte 3 zranění a získejte {IMMOBILIZE}"
     },
     "gh2-75": {
-        "name": "Získejte „Drakescale Armor“ (předmět 120)"
+        "name": "Získejte „Zbroj z dračích šupin“ (předmět 120)"
     },
     "gh2-76": {
         "name": "Náhodný nákres předmětu"

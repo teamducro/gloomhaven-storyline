@@ -7,7 +7,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Kolektivně nakupte až 1 {METAL} za 2 zlaťáky",
+                "operations": "Společně nakupte až 1 {METAL} za cenu 2 zlaťáků",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -15,7 +15,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Kolektivně nakupte až 2 {METAL} za 2 zlaťáky každý",
+                "operations": "Společně nakupte až 2 {METAL} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -23,7 +23,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Kolektivně nakupte až 3 {METAL} za 2 zlaťáky každý",
+                "operations": "Společně nakupte až 3 {METAL} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -31,7 +31,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Kolektivně nakupte až 4 {METAL} za 2 zlaťáky každý",
+                "operations": "Společně nakupte až 4 {METAL} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -47,7 +47,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Kolektivně nakupte až 1 {HIDE} za 2 zlaťáky",
+                "operations": "Společně nakupte až 1 {HIDE} za cenu 2 zlaťáků",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -55,7 +55,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Kolektivně nakupte až 2 {HIDE} za 2 zlaťáky každé",
+                "operations": "Společně nakupte až 2 {HIDE} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -63,7 +63,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Kolektivně nakupte až 3 {HIDE} za 2 zlaťáky každé",
+                "operations": "Společně nakupte až 3 {HIDE} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -71,7 +71,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Kolektivně nakupte až 4 {HIDE} za 2 zlaťáky každé",
+                "operations": "Společně nakupte až 4 {HIDE} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -87,7 +87,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Kolektivně nakupte až 1 {LUMBER} za 2 zlaťáky",
+                "operations": "Společně nakupte až 1 {LUMBER} za cenu 2 zlaťáků",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -95,7 +95,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Kolektivně nakupte až 2 {LUMBER} za 2 zlaťáky každé",
+                "operations": "Společně nakupte až 2 {LUMBER} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -103,7 +103,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Kolektivně nakupte až 3 {LUMBER} za 2 zlaťáky každé",
+                "operations": "Společně nakupte až 3 {LUMBER} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -111,7 +111,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Kolektivně nakupte až 4 {LUMBER} za 2 zlaťáky každé",
+                "operations": "Společně nakupte až 4 {LUMBER} za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -127,7 +127,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Kolektivně nakupte 1 zdroj materiálu za 2 zlaťáky",
+                "operations": "Společně nakupte 1 zdroj materiálu za cenu 2 zlaťáků",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -135,7 +135,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Kolektivně nakupte až 2 různé zdroje materiálu za 2 zlaťáky každý",
+                "operations": "Společně nakupte až 2 různé zdroje materiálů za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -143,7 +143,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Kolektivně nakupte až 3 různé zdroje materiálu za 2 zlaťáky každý",
+                "operations": "Společně nakupte až 3 různé zdroje materiálů za cenu 2 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -280,24 +280,24 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Vařte lektvary ze 2 bylin",
-                "wrecked": "Postavy nemohou používat lektvary",
+                "downtime": "Míchejte lektvary ze 2 bylin",
+                "wrecked": "Hrdinové nemohou používat lektvary",
                 "passive": "",
                 "rewards": ""
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Vařte a destilujte lektvary ze 2 bylin",
-                "wrecked": "Postavy nemohou používat lektvary",
+                "downtime": "Míchejte a destilujte lektvary ze 2 bylin",
+                "wrecked": "Hrdinové nemohou používat lektvary",
                 "passive": "",
                 "rewards": "+1 blahobyt"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Vařte a destilujte lektvary ze 2 a 3 bylin",
-                "wrecked": "Postavy nemohou používat lektvary",
+                "downtime": "Míchejte a destilujte lektvary ze 2 a 3 bylin",
+                "wrecked": "Hrdinové nemohou používat lektvary",
                 "passive": "",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 183.5"
             }
@@ -383,33 +383,33 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Každá postava může ztratit 5 zlaťáků, aby zahájila další scénář s {BLESS.fh}x2",
+                "operations": "Každý hrdina může ztratit 5 zlaťáků, aby zahájil další scénář s {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Každá postava zahájí další scénář s {CURSE.fh}",
+                "wrecked": "Každý hrdina zahájí další scénář s {CURSE.fh}",
                 "passive": "",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 192.5"
             },
             {
                 "level": 2,
-                "operations": "Každá postava může ztratit 5 zlaťáků, aby zahájila další scénář s {BLESS.fh}x2",
+                "operations": "Každý hrdina může ztratit 5 zlaťáků, aby zahájil další scénář s {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Každá postava zahájí další scénář s {CURSE.fh}",
+                "wrecked": "Každý hrdina zahájí další scénář s {CURSE.fh}",
                 "passive": "",
                 "rewards": "+3 blahobyt"
             },
             {
                 "level": 3,
-                "operations": "Každá postava může ztratit 5 zlaťáků, aby zahájila další scénář s {BLESS.fh}x2",
+                "operations": "Každý hrdina může ztratit 5 zlaťáků, aby zahájil další scénář s {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Každá postava zahájí další scénář s {CURSE.fh}",
+                "wrecked": "Každý hrdina zahájí další scénář s {CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 blahobyt"
             },
             {
                 "level": 4,
-                "operations": "Každá postava může ztratit 5 zlaťáků, aby zahájila další scénář s {BLESS.fh}x2",
+                "operations": "Každý hrdina může ztratit 5 zlaťáků, aby zahájil další scénář s {BLESS.fh}x2",
                 "downtime": "",
-                "wrecked": "Každá postava zahájí další scénář s {CURSE.fh}",
+                "wrecked": "Každý hrdina zahájí další scénář s {CURSE.fh}",
                 "passive": "",
                 "rewards": ""
             }
@@ -425,7 +425,7 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "Kupujte vylepšení",
-                "wrecked": "Každá postava zahájí další scénář s {DISARM.fh}",
+                "wrecked": "Každý hrdina zahájí další scénář s {DISARM.fh}",
                 "passive": "",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 193.1"
             },
@@ -433,7 +433,7 @@ export default {
                 "level": 2,
                 "operations": "",
                 "downtime": "Kupujte vylepšení",
-                "wrecked": "Každá postava zahájí další scénář s {DISARM.fh}",
+                "wrecked": "Každý hrdina zahájí další scénář s {DISARM.fh}",
                 "passive": "Snižte všechny náklady na vylepšení o 10 zlaťáků",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 157.2"
             },
@@ -441,7 +441,7 @@ export default {
                 "level": 3,
                 "operations": "",
                 "downtime": "Kupujte vylepšení",
-                "wrecked": "Každá postava zahájí další scénář s {DISARM.fh}",
+                "wrecked": "Každý hrdina zahájí další scénář s {DISARM.fh}",
                 "passive": "Snižte všechny náklady na vylepšení o 10 zlaťáků a penalizace za úroveň o 10 zlaťáků za úroveň",
                 "rewards": "+1 blahobyt"
             },
@@ -449,7 +449,7 @@ export default {
                 "level": 4,
                 "operations": "",
                 "downtime": "Kupujte vylepšení",
-                "wrecked": "Každá postava zahájí další scénář s {DISARM.fh}",
+                "wrecked": "Každý hrdina zahájí další scénář s {DISARM.fh}",
                 "passive": "Snižte všechny náklady na vylepšení o 10 zlaťáků, penalizace za úroveň o 10 zlaťáků za úroveň a penalizace za opakování o 25 zlaťáků za vylepšení",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 56.3"
             }
@@ -463,7 +463,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Kolektivně prodejte až 1 {METAL} za 5 zlaťáků",
+                "operations": "Společně prodejte až 1 {METAL} za cenu 5 zlaťáků",
                 "downtime": "Ztraťte 2 kolektivní {METAL}",
                 "wrecked": "",
                 "passive": "",
@@ -471,7 +471,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Kolektivně prodejte až 2 {METAL} za 5 zlaťáků každý",
+                "operations": "Společně prodejte až 2 {METAL} za cenu 5 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "Ztraťte 2 kolektivní {METAL}",
                 "passive": "",
@@ -487,7 +487,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Kolektivně prodejte až 1 {LUMBER} za 5 zlaťáků",
+                "operations": "Společně prodejte až 1 {LUMBER} za cenu 5 zlaťáků",
                 "downtime": "",
                 "wrecked": "Ztraťte 2 kolektivní {LUMBER}",
                 "passive": "",
@@ -495,7 +495,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Kolektivně prodejte až 2 {LUMBER} za 5 zlaťáků každé",
+                "operations": "Společně prodejte až 2 {LUMBER} za cenu 5 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "Ztraťte 2 kolektivní {LUMBER}",
                 "passive": "",
@@ -511,7 +511,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Kolektivně prodejte až 1 {HIDE} za 5 zlaťáků",
+                "operations": "Společně prodejte až 1 {HIDE} za cenu 5 zlaťáků",
                 "downtime": "",
                 "wrecked": "Ztraťte 2 kolektivní {HIDE}",
                 "passive": "",
@@ -519,7 +519,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Kolektivně prodejte až 2 {HIDE} za 5 zlaťáků každé",
+                "operations": "Společně prodejte až 2 {HIDE} za cenu 5 zlaťáků za kus",
                 "downtime": "",
                 "wrecked": "Ztraťte 2 kolektivní {HIDE}",
                 "passive": "",
@@ -594,7 +594,7 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Ztraťte 1 inspiraci",
+                "wrecked": "Ztraťte 1 povzbuzení",
                 "passive": "",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 190.3"
             },
@@ -602,7 +602,7 @@ export default {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Ztraťte 1 inspiraci",
+                "wrecked": "Ztraťte 1 povzbuzení",
                 "passive": "",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 116.3"
             },
@@ -610,14 +610,14 @@ export default {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Ztraťte 1 inspiraci",
+                "wrecked": "Ztraťte 1 povzbuzení",
                 "passive": "",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 89.2"
             }
         ]
     },
     "fh-84": {
-        "name": "Workshop",
+        "name": "Dílna",
         "levels": [
             {
                 "level": 0
@@ -642,7 +642,7 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Ztraťte libovolný 1 kolektivní zdroj",
+                "wrecked": "Ztraťte 1 libovolný kolektivní zdroj",
                 "passive": "Snižte všechny stavební náklady o 1 zdroj materiálu",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 7.3"
             },
@@ -650,7 +650,7 @@ export default {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Ztraťte libovolný 1 kolektivní zdroj",
+                "wrecked": "Ztraťte 1 libovolný kolektivní zdroj",
                 "passive": "Snižte všechny stavební náklady o 1 zdroj materiálu a dodatečné stavební náklady o 1 morálku",
                 "rewards": "+1 blahobyt"
             }
@@ -666,7 +666,7 @@ export default {
                 "level": 1,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Postavy nemohou používat mazlíčky",
+                "wrecked": "Hrdinové nemohou používat mazlíčky",
                 "passive": "Vezměte do každého scénáře jednoho mazlíčka. Kapacita: 4",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 3.1"
             },
@@ -674,7 +674,7 @@ export default {
                 "level": 2,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Postavy nemohou používat mazlíčky",
+                "wrecked": "Hrdinové nemohou používat mazlíčky",
                 "passive": "Vezměte do každého scénáře jednoho mazlíčka. Kapacita: 8",
                 "rewards": "+1 blahobyt"
             },
@@ -682,7 +682,7 @@ export default {
                 "level": 3,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Postavy nemohou používat mazlíčky",
+                "wrecked": "Hrdinové nemohou používat mazlíčky",
                 "passive": "Vezměte do každého scénáře dva mazlíčky. Kapacita: 8",
                 "rewards": "+1 blahobyt"
             },
@@ -690,7 +690,7 @@ export default {
                 "level": 4,
                 "operations": "",
                 "downtime": "",
-                "wrecked": "Postavy nemohou používat mazlíčky",
+                "wrecked": "Hrdinové nemohou používat mazlíčky",
                 "passive": "Vezměte do každého scénáře dva mazlíčky. Kapacita: 12",
                 "rewards": "+1 blahobyt"
             }
@@ -707,7 +707,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nelze plnit výzvy",
-                "passive": "Lízněte jednu výzvu a ponechte si až jednu. Jakmile je balíček výzev kompletní, přečtěte si oddíl 190.1",
+                "passive": "Táhněte jednu výzvu a ponechte si až jednu. Jakmile je balíček výzev kompletní, přečtěte si oddíl 190.1",
                 "rewards": "+1 blahobyt, přečtěte si oddíl 189.1"
             },
             {
@@ -715,7 +715,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nelze plnit výzvy",
-                "passive": "Lízněte dvě výzvy a ponechte si až jednu. Jakmile je balíček výzev kompletní, přečtěte si oddíl 190.1",
+                "passive": "Táhněte dvě výzvy a ponechte si až jednu. Jakmile je balíček výzev kompletní, přečtěte si oddíl 190.1",
                 "rewards": "+1 blahobyt"
             },
             {
@@ -723,7 +723,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nelze plnit výzvy",
-                "passive": "Lízněte tři výzvy a ponechte si až dvě. Jakmile je balíček výzev kompletní, přečtěte si oddíl 190.1",
+                "passive": "Táhněte tři výzvy a ponechte si až dvě. Jakmile je balíček výzev kompletní, přečtěte si oddíl 190.1",
                 "rewards": "+1 blahobyt"
             }
         ]
@@ -736,33 +736,33 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Kolektivně vycvičte až 1 vojáka za 3 zlaťáky a 1 zdroj materiálu",
+                "operations": "Společně vycvičte až 1 vojáka za cenu 3 zlaťáků a 1 zdroje materiálu",
                 "downtime": "",
-                "wrecked": "Nevýhoda při všech vyhodnoceních událostí útoku. Nelze používat vojáky.",
+                "wrecked": "Nevýhoda při vyhodnocování všech útočných událostí. Nelze používat vojáky.",
                 "passive": "Kapacita: 4, efekt: výhoda a -5{ATTACK.fh}",
                 "rewards": "+1 blahobyt"
             },
             {
                 "level": 2,
-                "operations": "Kolektivně vycvičte až 1 vojáka za 3 zlaťáky a 1 zdroj materiálu",
+                "operations": "Společně vycvičte až 1 vojáka za cenu 3 zlaťáků a 1 zdroje materiálu",
                 "downtime": "",
-                "wrecked": "Nevýhoda při všech vyhodnoceních událostí útoku. Nelze používat vojáky.",
+                "wrecked": "Nevýhoda při vyhodnocování všech útočných událostí. Nelze používat vojáky.",
                 "passive": "Kapacita: 6, efekt: výhoda a -15{ATTACK.fh}",
                 "rewards": "+1 blahobyt, +2 vojáci"
             },
             {
                 "level": 3,
-                "operations": "Kolektivně vycvičte až 2 vojáky za 3 zlaťáky a 1 zdroj materiálu každého",
+                "operations": "Společně vycvičte až 2 vojáky za cenu 3 zlaťáků a 1 zdroje materiálu za každého",
                 "downtime": "",
-                "wrecked": "Nevýhoda při všech vyhodnoceních událostí útoku. Nelze používat vojáky.",
+                "wrecked": "Nevýhoda při vyhodnocování všech útočných událostí. Nelze používat vojáky.",
                 "passive": "Kapacita: 8, efekt: výhoda a -25{ATTACK.fh}",
                 "rewards": "+1 blahobyt, +2 vojáci"
             },
             {
                 "level": 4,
-                "operations": "Kolektivně vycvičte až 2 vojáky za 3 zlaťáky a 1 zdroj materiálu každého",
+                "operations": "Společně vycvičte až 2 vojáky za cenu 3 zlaťáků a 1 zdroje materiálu za každého",
                 "downtime": "",
-                "wrecked": "Nevýhoda při všech vyhodnoceních událostí útoku. Nelze používat vojáky.",
+                "wrecked": "Nevýhoda při vyhodnocování všech útočných událostí. Nelze používat vojáky.",
                 "passive": "Kapacita: 10, efekt: výhoda a -35{ATTACK.fh}",
                 "rewards": "+1 blahobyt, +2 vojáci"
             }
