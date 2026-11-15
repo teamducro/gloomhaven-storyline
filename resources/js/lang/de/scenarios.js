@@ -1282,7 +1282,7 @@ export default {
     "fh-13": {
         "name": "Eisiger Fjord",
         "rewards": [
-            "Erhaltet “Dead Raven” (Gegenstand 233)"
+            "Erhaltet “Toter Rabe” (Gegenstand 233)"
         ]
     },
     "fh-14": {
@@ -1418,14 +1418,14 @@ export default {
     "fh-32": {
         "name": "Rabenhorst",
         "rewards": [
-            "Erhaltet den Gegenstandsplan “Feathered Cloak” (Gegenstand 69)"
+            "Erhaltet den Gegenstandsplan “Federmantel” (Gegenstand 69)"
         ]
     },
     "fh-33": {
         "name": "Getauter Wald",
         "rewards": [
             "Erhaltet je 5 Erfahrung für jede nicht aufgedeckte Wünschelruten-Rune",
-            "Erhaltet “Ember Energy Source” (Gegenstand 244)",
+            "Erhaltet “Glühende Energiequelle” (Gegenstand 244)",
             "Fügt 135.1 in drei Wochen zum Kalender hinzu"
         ]
     },
@@ -1445,7 +1445,7 @@ export default {
         "rewards": [
             "Erhaltet insgesamt 3 {LUMBER}",
             "Erhaltet insgesamt 3 {METAL}",
-            "Erhaltet den Gegenstandsplan “Converging Lenses” (Gegenstand 67)"
+            "Erhaltet den Gegenstandsplan “Sammellinsen” (Gegenstand 67)"
         ]
     },
     "fh-37": {
@@ -1453,7 +1453,7 @@ export default {
         "rewards": [
             "Erhaltet insgesamt 3 {LUMBER}",
             "Erhaltet insgesamt 3 {METAL}",
-            "Erhaltet den Gegenstandsplan “Converging Lenses” (Gegenstand 67)"
+            "Erhaltet den Gegenstandsplan “Sammellinsen” (Gegenstand 67)"
         ]
     },
     "fh-38": {
@@ -1504,7 +1504,7 @@ export default {
         "name": "Nervenzentrum",
         "rewards": [
             "Erhaltet je 5 Gold",
-            "Erhaltet den Gegenstandsplan “Energizing Baton” (Gegenstand 73)"
+            "Erhaltet den Gegenstandsplan “Energieknüppel” (Gegenstand 73)"
         ]
     },
     "fh-45": {
@@ -1554,7 +1554,7 @@ export default {
         "name": "Halle der Waise",
         "rewards": [
             "Erhaltet je 10 Erfahrung",
-            "Erhaltet den Gegenstandsplan “Shock Grenades” (Gegenstand 74)"
+            "Erhaltet den Gegenstandsplan “Schockgranate” (Gegenstand 74)"
         ]
     },
     "fh-52": {
@@ -1611,7 +1611,7 @@ export default {
         "name": "Kern der Waise",
         "rewards": [
             "Erhaltet 1 Moral",
-            "Erhaltet “Key Card” (Gegenstand 246)",
+            "Erhaltet “Schlüsselkarte” (Gegenstand 246)",
             "Erhaltet insgesamt 3 {LUMBER}",
             "Erhaltet insgesamt 3 {METAL}",
             "Erhaltet insgesamt 3 {HIDE}",
@@ -1626,7 +1626,7 @@ export default {
         "rewards": [
             "Erhaltet 2 Moral",
             "Erhaltet 2 Wohlstand",
-            "Erhaltet “Key Card” (Gegenstand 246)",
+            "Erhaltet “Schlüsselkarte” (Gegenstand 246)",
             "Schaltet die Klassenbox {HV} frei",
             "Entfernt alle {UNFETTERED}-Ereignisse aus allen Außenposten-Ereignis-Decks",
             "Fügt Ereignis SO-49 dem Sommer-Außenposten-Deck und Ereignis WO-63 dem Winter-Außenposten-Deck hinzu",
@@ -1639,7 +1639,7 @@ export default {
             "Erhaltet 2 Moral",
             "Erhaltet 1 Wohlstand",
             "Erhaltet je 30 Erfahrung",
-            "Erhaltet “Armor of Empathy” (Gegenstand 224)",
+            "Erhaltet “Empathierüstung” (Gegenstand 224)",
             "Schaltet die Klassenbox frei, die noch gesperrt ist: {CR} oder {DT}",
             "Entfernt alle {LURKERS}-Ereignisse aus allen Außenposten-Ereignis-Decks",
             "Fügt Ereignis SO-48 dem Sommer-Außenposten-Deck und Ereignis B-17 dem Schiff-Deck hinzu",
@@ -1756,7 +1756,7 @@ export default {
         "rewards": [
             [
                 "Persönliche Quest “Bedrohung aus der Tiefe” abgeschlossen",
-                "Erhaltet “Wave Blade” (Gegenstand 201)",
+                "Erhaltet “Wellenklinge” (Gegenstand 201)",
                 "Fügt Ereignis B-18 dem Schiff-Deck hinzu"
             ],
             []
@@ -1766,7 +1766,7 @@ export default {
         "name": "Aufstieg des Fischkönigs",
         "rewards": [
             "Persönliche Quest “Bedrohung aus der Tiefe” abgeschlossen",
-            "Erhaltet “Wave Blade” (Gegenstand 201)",
+            "Erhaltet “Wellenklinge” (Gegenstand 201)",
             "Fügt Ereignis B-19 dem Schiff-Deck hinzu"
         ]
     },
@@ -1809,13 +1809,13 @@ export default {
     "fh-83": {
         "name": "Steigende Salzflut",
         "rewards": [
-            "Erhaltet “Giant Piranha Pig Spine” (Gegenstand 202)"
+            "Erhaltet “Piranhaschwein-Rückgrat” (Gegenstand 202)"
         ]
     },
     "fh-84": {
         "name": "Schleimerei",
         "rewards": [
-            "Erhaltet “ooze vial” (Gegenstand 234)"
+            "Erhaltet “Schleimfläschchen” (Gegenstand 234)"
         ]
     },
     "fh-85": {
@@ -1889,10 +1889,10 @@ export default {
         "name": "Mittwinter-Schlägerei",
         "rewards": [
             [
-                "Erhaltet “Small Rat” (Gegenstand 235)"
+                "Erhaltet “Kleine Ratte” (Gegenstand 235)"
             ],
             [
-                "Erhaltet “Roasted Fowl” (Gegenstand 79)"
+                "Erhaltet “Brathähnchen” (Gegenstand 79)"
             ]
         ]
     },
@@ -1979,7 +1979,7 @@ export default {
     "fh-106": {
         "name": "Die Temporalschmieden",
         "rewards": [
-            "Erhaltet “Key of Seasons” (Gegenstand 213)"
+            "Erhaltet “Jahresschlüssel” (Gegenstand 213)"
         ]
     },
     "fh-107": {
@@ -1999,7 +1999,7 @@ export default {
             ],
             [
                 "Erhaltet insgesamt 5 beliebige Materialressourcen",
-                "Erhaltet “Cup of Ventillion” (Gegenstand 214)"
+                "Erhaltet “Ventillions Kelch” (Gegenstand 214)"
             ]
         ]
     },
@@ -2019,13 +2019,13 @@ export default {
     "fh-110": {
         "name": "Wächtertempel",
         "rewards": [
-            "Erhaltet den Gegenstandsplan “Rose Gauntlet” (Gegenstand 75)"
+            "Erhaltet den Gegenstandsplan “Rosenstulpe” (Gegenstand 75)"
         ]
     },
     "fh-111": {
         "name": "Eishöhle",
         "rewards": [
-            "Erhaltet “Cracked Mirror” (Gegenstand 236)"
+            "Erhaltet “Gesprungener Spiegel” (Gegenstand 236)"
         ]
     },
     "fh-112": {
@@ -2132,14 +2132,14 @@ export default {
     "fh-118": {
         "name": "Pirscher-Nekromantie",
         "rewards": [
-            "Erhaltet den Gegenstandsplan “Amulet of Eternal Life” (Gegenstand 66)",
+            "Erhaltet den Gegenstandsplan “Amulett des ewigen Lebens” (Gegenstand 66)",
             "Tauscht alle Marker gegen Beutekarten ein"
         ]
     },
     "fh-119": {
         "name": "Strahlender Staub",
         "rewards": [
-            "Gebt 7 verbleibenden Staub aus, um “Scepter of Control” (Gegenstand 203) zu erhalten",
+            "Gebt 7 verbleibenden Staub aus, um “Zepter der Kontrolle” (Gegenstand 203) zu erhalten",
             "Gebt 1 verbleibenden Staub aus, um 1 beliebige Materialressource zu erhalten",
             "Gebt 2 verbleibenden Staub aus, um 1 beliebige Kräuterressource zu erhalten"
         ]
@@ -2159,7 +2159,7 @@ export default {
                 "Fügt 184.3 in sechs Wochen zum Kalender hinzu"
             ],
             [
-                "Erhaltet “Mind Thieving Helmet” (Gegenstand 193)"
+                "Erhaltet “Gedankendieb-Helm” (Gegenstand 193)"
             ],
             [
                 "Erhaltet 2 Moral"
@@ -2194,7 +2194,7 @@ export default {
     "fh-125": {
         "name": "Der längste Augenblick",
         "rewards": [
-            "Erhaltet “Temporal Amulet” (Gegenstand 194)"
+            "Erhaltet “Zeitamulett” (Gegenstand 194)"
         ]
     },
     "fh-126": {
@@ -2239,7 +2239,7 @@ export default {
             ],
             [
                 "Erhaltet 3 Moral",
-                "Erhaltet “Befuddling Mug” (Gegenstand 215)",
+                "Erhaltet “Berauschender Krug” (Gegenstand 215)",
                 "Fügt 100.3 in drei Wochen zum Kalender hinzu"
             ]
         ]
@@ -2267,7 +2267,7 @@ export default {
         "name": "Der tanzende Eisberg",
         "rewards": [
             "Erhaltet je 10 Erfahrung",
-            "Erhaltet “Mesmerizing Seashell” (Gegenstand 237)"
+            "Erhaltet “Hypnotische Muschel” (Gegenstand 237)"
         ]
     },
     "fh-132": {
@@ -2279,13 +2279,13 @@ export default {
     "fh-133": {
         "name": "Blitz",
         "rewards": [
-            "Erhaltet “Cracked Idol” (Gegenstand 238)"
+            "Erhaltet “Gesprungene Figur” (Gegenstand 238)"
         ]
     },
     "fh-134": {
         "name": "Turm des Wissens",
         "rewards": [
-            "Erhaltet “Tome of Conflict” (Gegenstand 219)"
+            "Erhaltet “Foliant des Konflikts” (Gegenstand 219)"
         ]
     },
     "fh-135": {
@@ -2294,7 +2294,7 @@ export default {
             "Erhaltet 2 Moral",
             "Erhaltet 2 Wohlstand",
             "Erhaltet 1 Inspiration",
-            "Erhaltet “Belaras Quill” (Gegenstand 220)"
+            "Erhaltet “Belaras Federkiel” (Gegenstand 220)"
         ]
     },
     "fh-136": {

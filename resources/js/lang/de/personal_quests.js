@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "Erhalte den Gegenstandsplan “Abyss Axe” (Gegenstand 039) und töte damit zehn Gefrorene Leichen, Eisspuke und/oder Wandelnde Schicksale."
+            "Erhalte den Gegenstandsplan “Abgrundaxt” (Gegenstand 039) und töte damit zehn Gefrorene Leichen, Eisspuke und/oder Wandelnde Schicksale."
         ]
     },
     "fh-20": {
