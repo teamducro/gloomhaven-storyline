@@ -23,10 +23,10 @@ export default {
         "name": "Cripta dos Condenados"
     },
     "gh-5": {
-        "name": "Cripta Ruim"
+        "name": "Cripta Arruinada"
     },
     "gh-6": {
-        "name": "Cripta em Decomposição",
+        "name": "Cripta Pútrida",
         "rewards": [
             "5 moedas de ouro para cada personagem"
         ]
@@ -83,7 +83,7 @@ export default {
         "name": "Templo da Vidente"
     },
     "gh-14": {
-        "name": "Vazio Congelado",
+        "name": "Caverna Congelada",
         "conclusion_faq": [
             "Os números dos locais no texto da história são apenas lembretes. Eles próprios não desbloqueiam nada."
         ]
@@ -148,13 +148,13 @@ export default {
         "name": "Câmara do Eco"
     },
     "gh-25": {
-        "name": "Escalada do Penhasco de Gelo",
+        "name": "Escalada do Icecrag",
         "faq": [
             "Fuga: concluis o cenário quando todos os personagens estiverem num hexágono de saída ou tiverem ficado exaustos enquanto estavam num hexágono de saída."
         ]
     },
     "gh-26": {
-        "name": "Cisternas Antigas",
+        "name": "Cisterna Antiga",
         "rewards": [
             "10 moedas de ouro para cada personagem",
             "+1 de reputação",
@@ -162,7 +162,7 @@ export default {
         ]
     },
     "gh-27": {
-        "name": "Fenda Ruim",
+        "name": "Fenda nas Ruínas",
         "rewards": [
             "+1 de prosperidade",
             "100 moedas de ouro para cada personagem Esse dinheiro deve ser gasto imediatamente em aprimoramentos"
@@ -176,10 +176,10 @@ export default {
         ]
     },
     "gh-28": {
-        "name": "Câmara do Ritual Exterior"
+        "name": "Câmara Externa do Ritual"
     },
     "gh-29": {
-        "name": "Santuário do Combalimento",
+        "name": "Santuário da Escuridão",
         "rewards": [
             "15 pontos de experiência para cada personagem"
         ],
@@ -200,7 +200,7 @@ export default {
         "name": "Bosque Decrépito"
     },
     "gh-33": {
-        "name": "Armaria Savvas",
+        "name": "Arsenal dos Savvas",
         "faq": [
             "A porta com pontos de vida é tratada como um obstáculo com pontos de vida no que diz respeito a ser alvo: invocações podem focá-la, ela é considerada como tendo iniciativa 99, etc.",
             "Fuga: concluis o cenário quando todos os personagens estiverem num hexágono de saída ou tiverem ficado exaustos enquanto estavam num hexágono de saída."
@@ -220,7 +220,7 @@ export default {
         ]
     },
     "gh-35": {
-        "name": "Muralhas de Gloomhaven A",
+        "name": "Ameias de Gloomhaven A",
         "rewards": [
             "30 moedas de ouro para cada personagem",
             "5 de reputação",
@@ -232,7 +232,7 @@ export default {
         ]
     },
     "gh-36": {
-        "name": "Muralhas de Gloomhaven B",
+        "name": "Ameias de Gloomhaven B",
         "rewards": [
             "10 moedas de ouro para cada personagem",
             "+4 de reputação",
@@ -240,13 +240,13 @@ export default {
         ]
     },
     "gh-37": {
-        "name": "Trincheira do Destino",
+        "name": "Fosso da Perdição",
         "faq": [
             "Fuga: concluis o cenário quando todos os personagens estiverem num hexágono de saída ou tiverem ficado exaustos enquanto estavam num hexágono de saída."
         ]
     },
     "gh-38": {
-        "name": "Cercado de Escravos",
+        "name": "Acampamento Escravo",
         "rewards": [
             "+1 de reputação"
         ],
@@ -255,7 +255,7 @@ export default {
         ]
     },
     "gh-39": {
-        "name": "Divisa Traiçoeira",
+        "name": "Travessia Traiçoeira",
         "rewards": [
             "10 pontos de experiência para cada personagem"
         ]
@@ -264,7 +264,7 @@ export default {
         "name": "Rede de Defesa Antiga"
     },
     "gh-41": {
-        "name": "Túmulo Desgastado pelo Tempo",
+        "name": "Tumba Envelhecida",
         "rewards": [
             "50 moedas de ouro para cada personagem",
             "25 pontos de experiência para cada personagem",
@@ -312,13 +312,13 @@ export default {
         ]
     },
     "gh-47": {
-        "name": "Guarida do Olho Cego",
+        "name": "Toca do Olho Cego",
         "faq": [
             "Regra especial adicional: o chefe é imune a qualquer habilidade ou efeito que afete a sua posição no mapa (empurrar, puxar, movimento forçado, etc.)."
         ]
     },
     "gh-48": {
-        "name": "Mata Sombria",
+        "name": "Matagal Sombrio",
         "faq": [
             "Após o ataque corpo a corpo do chefe, ele é afetado por efeitos posteriores ao ataque (retaliação, ao morrer, etc.) antes de ser removido do mapa."
         ]
@@ -359,7 +359,7 @@ export default {
         ]
     },
     "gh-53": {
-        "name": "Subsolo da Cripta",
+        "name": "Porão na Cripta",
         "requirements": "Missão pessoal “Buscador de Xorn”",
         "rewards": [
             "O Buscador de Xorn recebe: “Cajado de Xorn” (Item 114) O Buscador não pode vender este item."
@@ -400,7 +400,7 @@ export default {
         ]
     },
     "gh-55": {
-        "name": "Mata Nebulosa",
+        "name": "Matagal Nebuloso",
         "requirements": "Missão pessoal “Retomar as Árvores”",
         "rewards": [
             "10 moedas de ouro coletivas"
@@ -452,7 +452,7 @@ export default {
         ]
     },
     "gh-61": {
-        "name": "Farol Decadente",
+        "name": "Farol Desvanecente",
         "requirements": "Missão pessoal “A Queda do Homem”"
     },
     "gh-62": {
@@ -492,13 +492,13 @@ export default {
         ]
     },
     "gh-68": {
-        "name": "Pântano Tóxico",
+        "name": "Brejo Tóxico",
         "rewards": [
             "2 “Poção de Cura Maior” (Item 027)"
         ]
     },
     "gh-69": {
-        "name": "Poço dos Desventurados",
+        "name": "Poço dos Desafortunados",
         "rewards": [
             "15 moedas de ouro para cada personagem"
         ],
@@ -516,7 +516,7 @@ export default {
         ]
     },
     "gh-71": {
-        "name": "Planalto dos Ventos",
+        "name": "Planaltos Ventosos",
         "rewards": [
             "2 “Poção de Força Maior” (Item 041)"
         ],
@@ -526,7 +526,7 @@ export default {
         ]
     },
     "gh-72": {
-        "name": "Bosque Borbulhante",
+        "name": "Bosque Viscoso",
         "rewards": [
             "+1 de reputação",
             "+1 de prosperidade"
@@ -536,7 +536,7 @@ export default {
         ]
     },
     "gh-73": {
-        "name": "Crista do Deslizamento de Pedras",
+        "name": "Cordilheira da Avalanche",
         "rewards": [
             "+1 de reputação"
         ],
@@ -555,7 +555,7 @@ export default {
         ]
     },
     "gh-75": {
-        "name": "Cemitério Abandonado",
+        "name": "Cemitério Coberto de Mato",
         "rewards": [
             "60 moedas de ouro para cada personagem"
         ],
@@ -568,7 +568,7 @@ export default {
         "requirements": "Bravura"
     },
     "gh-77": {
-        "name": "Cópia de Segredos",
+        "name": "Cofre dos Segredos",
         "rewards": [
             "5 pontos de experiência para cada personagem"
         ],
@@ -611,7 +611,7 @@ export default {
         ]
     },
     "gh-82": {
-        "name": "Montanha em Chamas",
+        "name": "Montanha Flamejante",
         "rewards": [
             [
                 "+1 de reputação"
@@ -626,7 +626,7 @@ export default {
         ]
     },
     "gh-83": {
-        "name": "Sombras Interiores",
+        "name": "Sombras Internas",
         "rewards": [
             "40 moedas de ouro coletivas"
         ],
@@ -654,7 +654,7 @@ export default {
         ]
     },
     "gh-86": {
-        "name": "Aldeia Atormentada",
+        "name": "Vila Atormentada",
         "rewards": [
             "+2 de reputação"
         ]
@@ -688,20 +688,20 @@ export default {
         ]
     },
     "gh-91": {
-        "name": "Melê Selvagem",
+        "name": "Briga Selvagem",
         "rewards": [
             "2 ✔ para cada personagem"
         ]
     },
     "gh-92": {
-        "name": "Briga no Beco",
+        "name": "Briga de Beco",
         "rewards": [
             "10 moedas de ouro para cada personagem",
             "-3 de reputação"
         ]
     },
     "gh-93": {
-        "name": "Embarcação Naufragada",
+        "name": "Navio Naufragado",
         "rewards": [
             "10 pontos de experiência para cada personagem"
         ],
@@ -713,7 +713,7 @@ export default {
         "name": "Ninho Vermling"
     },
     "gh-95": {
-        "name": "Pagamento Devido",
+        "name": "Hora do Pagamento",
         "rewards": [
             "“Crânio do Ódio” (Item 119)"
         ]
@@ -2995,7 +2995,7 @@ export default {
         ]
     },
     "gh2-2": {
-        "name": "Cripta Ruim",
+        "name": "Cripta Arruinada",
         "rewards": [
             "10 pontos de experiência para cada personagem",
             "+1 de reputação com os Demónios",
@@ -3003,7 +3003,7 @@ export default {
         ]
     },
     "gh2-3": {
-        "name": "Vazio Congelado",
+        "name": "Caverna Congelada",
         "rewards": [
             "+1 de prosperidade",
             "+1 de reputação com os Militares"
@@ -3024,7 +3024,7 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "Cripta em Decomposição",
+        "name": "Cripta Pútrida",
         "rewards": [
             "5 moedas de ouro para cada personagem",
             "10 pontos de experiência para cada personagem",
@@ -3044,7 +3044,7 @@ export default {
         ]
     },
     "gh2-9": {
-        "name": "Fenda Ruim",
+        "name": "Fenda nas Ruínas",
         "rewards": [
             "+1 de prosperidade",
             "+1 de reputação com os Militares",
@@ -3071,7 +3071,7 @@ export default {
         ]
     },
     "gh2-13": {
-        "name": "Escalada do Penhasco de Gelo",
+        "name": "Escalada do Icecrag",
         "rewards": [
             [],
             [
@@ -3158,7 +3158,7 @@ export default {
         "rewards": []
     },
     "gh2-26": {
-        "name": "Muralhas de Gloomhaven B",
+        "name": "Ameias de Gloomhaven B",
         "rewards": []
     },
     "gh2-27": {
@@ -3219,7 +3219,7 @@ export default {
         ]
     },
     "gh2-32": {
-        "name": "Armaria Savvas",
+        "name": "Arsenal dos Savvas",
         "rewards": [
             [
                 "15 moedas de ouro para cada personagem"
@@ -3256,7 +3256,7 @@ export default {
         "rewards": []
     },
     "gh2-34": {
-        "name": "Túmulo Desgastado pelo Tempo",
+        "name": "Tumba Envelhecida",
         "rewards": [
             [
                 "30 moedas de ouro para cada personagem"
@@ -3296,7 +3296,7 @@ export default {
         "rewards": []
     },
     "gh2-41": {
-        "name": "Cisternas Antigas",
+        "name": "Cisterna Antiga",
         "rewards": [
             "+2 de prosperidade"
         ]
@@ -3336,15 +3336,15 @@ export default {
         ]
     },
     "gh2-46": {
-        "name": "Trincheira do Destino",
+        "name": "Fosso da Perdição",
         "rewards": []
     },
     "gh2-47": {
-        "name": "Cercado de Escravos",
+        "name": "Acampamento Escravo",
         "rewards": []
     },
     "gh2-48": {
-        "name": "Divisa Traiçoeira",
+        "name": "Travessia Traiçoeira",
         "rewards": []
     },
     "gh2-49": {
@@ -3360,13 +3360,13 @@ export default {
         ]
     },
     "gh2-51": {
-        "name": "Guarida do Olho Cego",
+        "name": "Toca do Olho Cego",
         "rewards": [
             "+1 de prosperidade"
         ]
     },
     "gh2-52": {
-        "name": "Mata Sombria",
+        "name": "Matagal Sombrio",
         "rewards": [
             "+1 de prosperidade"
         ]
@@ -3394,7 +3394,7 @@ export default {
         ]
     },
     "gh2-57": {
-        "name": "Subsolo da Cripta",
+        "name": "Porão na Cripta",
         "rewards": [
             "Ganha “Scepter of Xorn” (Item 147)"
         ]
@@ -3410,7 +3410,7 @@ export default {
         ]
     },
     "gh2-59": {
-        "name": "Mata Nebulosa",
+        "name": "Matagal Nebuloso",
         "rewards": [
             "10 moedas de ouro para cada personagem",
             "+1 de prosperidade"
@@ -3436,7 +3436,7 @@ export default {
         ]
     },
     "gh2-63": {
-        "name": "Farol Decadente",
+        "name": "Farol Desvanecente",
         "rewards": [
             "Missão pessoal 04 concluída"
         ]
@@ -3470,7 +3470,7 @@ export default {
         ]
     },
     "gh2-68": {
-        "name": "Embarcação Naufragada",
+        "name": "Navio Naufragado",
         "rewards": [
             "10 moedas de ouro para cada personagem"
         ]
@@ -3497,7 +3497,7 @@ export default {
         ]
     },
     "gh2-72": {
-        "name": "Poço dos Desventurados",
+        "name": "Poço dos Desafortunados",
         "rewards": [
             "15 moedas de ouro para cada personagem"
         ]
@@ -3509,20 +3509,20 @@ export default {
         ]
     },
     "gh2-74": {
-        "name": "Planalto dos Ventos",
+        "name": "Planaltos Ventosos",
         "rewards": [
             "+1 de prosperidade",
             "Ganha “Poção de Força Maior” (Item 53)"
         ]
     },
     "gh2-75": {
-        "name": "Crista do Deslizamento de Pedras",
+        "name": "Cordilheira da Avalanche",
         "rewards": [
             "Ganha “Ruby Talisman” (Item 152)"
         ]
     },
     "gh2-76": {
-        "name": "Bosque Borbulhante",
+        "name": "Bosque Viscoso",
         "rewards": [
             "+1 de prosperidade"
         ]
@@ -3532,7 +3532,7 @@ export default {
         "rewards": []
     },
     "gh2-78": {
-        "name": "Cópia de Segredos",
+        "name": "Cofre dos Segredos",
         "rewards": [
             "+3 de prosperidade"
         ]
@@ -3553,7 +3553,7 @@ export default {
         ]
     },
     "gh2-81": {
-        "name": "Cemitério Abandonado",
+        "name": "Cemitério Coberto de Mato",
         "rewards": [
             "10 moedas de ouro para cada personagem",
             "+1 de prosperidade"
@@ -3573,7 +3573,7 @@ export default {
         ]
     },
     "gh2-84": {
-        "name": "Melê Selvagem",
+        "name": "Briga Selvagem",
         "rewards": [
             "15 pontos de experiência para cada personagem",
             "1 ✔ para cada personagem",
@@ -3612,11 +3612,11 @@ export default {
         ]
     },
     "gh2-90": {
-        "name": "Montanha em Chamas",
+        "name": "Montanha Flamejante",
         "rewards": []
     },
     "gh2-91": {
-        "name": "Sombras Interiores",
+        "name": "Sombras Internas",
         "rewards": []
     },
     "gh2-92": {
@@ -3627,7 +3627,7 @@ export default {
         ]
     },
     "gh2-93": {
-        "name": "Aldeia Atormentada",
+        "name": "Vila Atormentada",
         "rewards": [
             "1 ✔ para cada personagem"
         ]
@@ -3644,7 +3644,7 @@ export default {
         "rewards": []
     },
     "gh2-96": {
-        "name": "Briga no Beco",
+        "name": "Briga de Beco",
         "rewards": [
             "10 moedas de ouro para cada personagem"
         ]

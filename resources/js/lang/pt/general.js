@@ -17,7 +17,7 @@ export default {
     "completed scenarios": "cenários concluídos",
     "Show winter events": "Mostrar eventos de inverno",
     "Show summer events": "Mostrar eventos de verão",
-    "5 Ancient Technology Global Achievements": "5 conquistas globais “Tecnologia Antiga”",
+    "5 Ancient Technology Global Achievements": "5 conquistas globais “Tecnologia Anciã”",
     "Add City Event 75 & Road Event 66": "Adiciona o Evento de Cidade 75 e o Evento de Estrada 66",
     "Add City Event 76 & Road Event 67": "Adiciona o Evento de Cidade 76 e o Evento de Estrada 67",
     "Add City Event 77 & Road Event 68": "Adiciona o Evento de Cidade 77 e o Evento de Estrada 68",

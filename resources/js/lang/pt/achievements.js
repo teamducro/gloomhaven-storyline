@@ -9,28 +9,28 @@ export default {
         "name": "Recompensa Sombria"
     },
     "gh-GTMF": {
-        "name": "O Mercador Foge"
+        "name": "A Mercadora Foge"
     },
     "gh-GTDI": {
         "name": "Os Mortos Invadem"
     },
     "gh-PADE": {
-        "name": "A Tarefa de um Demónio"
+        "name": "A Incumbência do Demónio"
     },
     "gh-GCRE": {
-        "name": "Governo da Cidade: Económico"
+        "name": "Governo: Económico"
     },
     "gh-GCRM": {
-        "name": "Governo da Cidade: Militar"
+        "name": "Governo: Militar"
     },
     "gh-GEOI": {
         "name": "Fim da Invasão"
     },
     "gh-GTPE": {
-        "name": "O Poder do Aprimoramento"
+        "name": "O Poder da Melhoria"
     },
     "gh-PSC": {
-        "name": "Incensário do Quebra-Pedras"
+        "name": "O Incensário de Stonebreaker"
     },
     "gh-GTRN": {
         "name": "A Fenda Neutralizada"
@@ -45,19 +45,19 @@ export default {
         "name": "Artefacto: Perdido"
     },
     "gh-GAT": {
-        "name": "Tecnologia Antiga"
+        "name": "Tecnologia Anciã"
     },
     "gh-GAT2": {
-        "name": "Tecnologia Antiga x2"
+        "name": "Tecnologia Anciã x2"
     },
     "gh-GAT3": {
-        "name": "Tecnologia Antiga x3"
+        "name": "Tecnologia Anciã x3"
     },
     "gh-GAT4": {
-        "name": "Tecnologia Antiga x4"
+        "name": "Tecnologia Anciã x4"
     },
     "gh-GAT5": {
-        "name": "Tecnologia Antiga x5"
+        "name": "Tecnologia Anciã x5"
     },
     "gh-PTR": {
         "name": "Através das Ruínas"
@@ -75,7 +75,7 @@ export default {
         "name": "Um Convite"
     },
     "gh-GTED": {
-        "name": "O Limiar da Escuridão"
+        "name": "A Beira das Trevas"
     },
     "gh-PTSV": {
         "name": "O Cetro e a Voz"
@@ -96,13 +96,13 @@ export default {
         "name": "O Serpe Ajudado"
     },
     "gh-GCRD": {
-        "name": "Governo da Cidade: Demoníaco"
+        "name": "Governo: Demoníaco"
     },
     "gh-PTTT": {
         "name": "Através da Trincheira"
     },
     "gh-PRA": {
-        "name": "Ajuda de Espinho Vermelho"
+        "name": "A Ajuda do Espinho Vermelho"
     },
     "gh-PATD": {
         "name": "Através da Divisão"
@@ -114,7 +114,7 @@ export default {
         "name": "A Voz Silenciada"
     },
     "gh-GWB": {
-        "name": "Respiração Aquática"
+        "name": "Respiração Subaquática"
     },
     "gh-GEOC": {
         "name": "Fim da Corrupção"
@@ -387,7 +387,7 @@ export default {
         "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
-        "name": "Tecnologia Antiga"
+        "name": "Tecnologia Anciã"
     },
     "gh2-G2CRD": {
         "name": "City Rule: Demons"
@@ -432,7 +432,7 @@ export default {
         "name": "O Serpe Morto"
     },
     "gh2-G2TPE": {
-        "name": "O Poder do Aprimoramento"
+        "name": "O Poder da Melhoria"
     },
     "gh2-G2TVF": {
         "name": "A Voz Libertada"
