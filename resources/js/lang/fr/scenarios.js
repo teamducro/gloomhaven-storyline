@@ -179,7 +179,7 @@ export default {
         "name": "La Chambre du Rituel de l'Outre-Monde"
     },
     "gh-29": {
-        "name": "Le Mausolée de l'Ombre",
+        "name": "Le Sanctuaire de l'Ombre",
         "rewards": [
             "15 XP chacun"
         ],
@@ -188,7 +188,7 @@ export default {
         ]
     },
     "gh-30": {
-        "name": "Le Sanctuaire des Profondeurs",
+        "name": "Le Mausolée des Profondeurs",
         "rewards": [
             "10 pièces d'or chacun"
         ]
@@ -3208,7 +3208,7 @@ export default {
         ]
     },
     "gh2-30": {
-        "name": "Le Sanctuaire des Profondeurs",
+        "name": "Le Mausolée des Profondeurs",
         "rewards": []
     },
     "gh2-31": {

@@ -135,7 +135,7 @@ export default {
         "name": "Derrière le Nid"
     },
     "gh-PAMT": {
-        "name": "La Carte au Trésor"
+        "name": "La Carte du Trésor"
     },
     "gh-PBB": {
         "name": "Mauvaise Affaire"
