@@ -1134,7 +1134,7 @@ export default {
         ]
     },
     "BS2": {
-        "name": "Rój Ostrzy",
+        "name": "Bladeswarm",
         "masteries": [
             "Wykonaj 6 różnych zdolności {PERSISTENT}{LOST.fh}, z czego nie więcej niż 3 z 6 to zdolności przywołania",
             "Zyskaj to mistrzostwo, gdy uznasz, że na nie zasługujesz"

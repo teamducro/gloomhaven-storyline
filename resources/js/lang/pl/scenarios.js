@@ -3806,7 +3806,7 @@ export default {
         ]
     },
     "gh2-218": {
-        "name": "Piaski Czasu",
+        "name": "The Sands of Time",
         "rewards": [
             "Otrzymujesz „Crawling Carapace” (przedmiot 170)"
         ]

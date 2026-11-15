@@ -2944,7 +2944,7 @@ export default {
         "desc": "Podczas twojej tury dodaj +1 do {ATTACK.fh} do wszystkich swoich ataków."
     },
     "gh2-22": {
-        "name": "Żelazna Włócznia",
+        "name": "Iron Spear",
         "source": "Dobrobyt 2",
         "desc": "Podczas twojej tury jedna z twoich zdolności ataku wręcz w jeden cel może zostać skierowana we wroga oddalonego o dwa pola."
     },
@@ -3596,7 +3596,7 @@ export default {
         "desc": "Tego przedmiotu nie można sprzedać i musisz go zabierać do każdego scenariusza. Kiedy otrzymujesz {DAMAGE.fh} z ataku, możesz otrzymać {DAMAGE.fh} 2, aby wszyscy sąsiedni sojusznicy i wrogowie otrzymali {DAMAGE.fh} 2."
     },
     "gh2-151": {
-        "name": "Miecz Piasków",
+        "name": "Sword of the Sands",
         "desc": "Podczas twojej zdolności ataku wręcz dodaj {WOUND.fh}, {POISON.fh} do wszystkich ataków."
     },
     "gh2-152": {
