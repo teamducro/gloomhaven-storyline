@@ -3,22 +3,22 @@ export default {
         "name": "Primeiros Passos"
     },
     "gh-PJP": {
-        "name": "Os planos de Jekserah"
+        "name": "Os Planos de Jekserah"
     },
     "gh-PDB": {
         "name": "Recompensa Sombria"
     },
     "gh-GTMF": {
-        "name": "The Merchant Flees"
+        "name": "A Mercadora Foge"
     },
     "gh-GTDI": {
         "name": "Os Mortos Invadem"
     },
     "gh-PADE": {
-        "name": "A Demon's Errand"
+        "name": "A Incumbência do Demónio"
     },
     "gh-GCRE": {
-        "name": "City Rule: Economic"
+        "name": "Governo: Económico"
     },
     "gh-GCRM": {
         "name": "Governo: Militar"
@@ -36,13 +36,13 @@ export default {
         "name": "A Fenda Neutralizada"
     },
     "gh-GAR": {
-        "name": "Artefato: Recuperado"
+        "name": "Artefacto: Recuperado"
     },
     "gh-GAR2": {
-        "name": "Artefato: Recuperado (perdido anteriormente)"
+        "name": "Artefacto: Recuperado (perdido anteriormente)"
     },
     "gh-GAL": {
-        "name": "Artefato: Perdido"
+        "name": "Artefacto: Perdido"
     },
     "gh-GAT": {
         "name": "Tecnologia Anciã"
@@ -69,7 +69,7 @@ export default {
         "name": "O Comando do Serpe"
     },
     "gh-PFC": {
-        "name": "Following Clues"
+        "name": "Seguindo Pistas"
     },
     "gh-PAI": {
         "name": "Um Convite"
@@ -81,7 +81,7 @@ export default {
         "name": "O Cetro e a Voz"
     },
     "gh-GAC": {
-        "name": "Artefato: Purificado"
+        "name": "Artefacto: Purificado"
     },
     "gh-PTVT": {
         "name": "O Tesouro da Voz"

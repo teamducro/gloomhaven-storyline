@@ -106,7 +106,7 @@ export default {
             "name": "Olho por Olho"
         },
         "face-your-end": {
-            "name": "face your end"
+            "name": "Enfrenta o Teu Fim"
         },
         "fatal-advance": {
             "name": "Avanço Fatal"
@@ -637,7 +637,7 @@ export default {
             "name": "Granizo Estimulante"
         },
         "tremulant-cyclone": {
-            "name": "tremulant cyclone"
+            "name": "Ciclone Trémulo"
         },
         "vengeance": {
             "name": "Vingança"
@@ -871,7 +871,7 @@ export default {
             "name": "Mordida Paralisante"
         },
         "rot-maggots": {
-            "name": "rot maggots"
+            "name": "Larvas da Podridão"
         },
         "scattered-terror": {
             "name": "Terror Disperso"
@@ -1075,7 +1075,7 @@ export default {
             "name": "Seringa"
         },
         "teamwork": {
-            "name": "teamwork"
+            "name": "Trabalho em Equipa"
         },
         "triage": {
             "name": "Triagem"
@@ -1192,7 +1192,7 @@ export default {
             "name": "Força Purificadora"
         },
         "daybreak": {
-            "name": "daybreak"
+            "name": "Alvorecer"
         },
         "dazzling-charge": {
             "name": "Investida Ofuscante"
@@ -1330,7 +1330,7 @@ export default {
             "name": "Projetar a Voz"
         },
         "tranquil-trill": {
-            "name": "tranquil trill"
+            "name": "Trinado Tranquilo"
         },
         "tuning-the-outcome": {
             "name": "Ajustando o Resultado"
@@ -1531,7 +1531,7 @@ export default {
             "name": "Flash Desorientador"
         },
         "energizing-tonic": {
-            "name": "energizing tonic"
+            "name": "Tónico Energizante"
         },
         "enhancement-field": {
             "name": "Campo de Aprimoramento"
@@ -5848,7 +5848,7 @@ export default {
             "name": "etheric echo"
         },
         "heatwave": {
-            "name": "Onda de Calor"
+            "name": "heatwave"
         },
         "arctic-shards": {
             "name": "arctic shards"
@@ -5989,7 +5989,7 @@ export default {
             "name": "Distração Brilhante"
         },
         "strength-in-agony": {
-            "name": "Força na Agonia"
+            "name": "strength in agony"
         },
         "defiance-of-death": {
             "name": "Desafio à Morte"
@@ -6067,100 +6067,100 @@ export default {
             "name": "bathe in blood"
         },
         "focused-scourge": {
-            "name": "Flagelo Concentrado"
+            "name": "focused scourge"
         },
         "deflecting-blades": {
-            "name": "Lâminas Defletoras"
+            "name": "deflecting blades"
         },
         "omniscient-assault": {
-            "name": "Ataque Onisciente"
+            "name": "omniscient assault"
         },
         "hive-mind": {
-            "name": "Mente Coletiva"
+            "name": "hive mind"
         },
         "corrupting-parasites": {
-            "name": "Parasitas Corruptores"
+            "name": "corrupting parasites"
         },
         "death-march": {
-            "name": "Marcha da Morte"
+            "name": "death march"
         },
         "engulfing-stingers": {
-            "name": "Ferrões Envolventes"
+            "name": "engulfing stingers"
         },
         "swarming-minions": {
-            "name": "Lacaios Enxameantes"
+            "name": "swarming minions"
         },
         "scattered-defense": {
-            "name": "Defesa Dispersa"
+            "name": "scattered defense"
         },
         "call-of-the-grave": {
-            "name": "Chamado do Túmulo"
+            "name": "call of the grave"
         },
         "the-storms-edge": {
-            "name": "O Gume da Tempestade"
+            "name": "the storms edge"
         },
         "unstoppable-army": {
-            "name": "Exército Imparável"
+            "name": "unstoppable army"
         },
         "grasping-advance": {
-            "name": "Avanço Agarrador"
+            "name": "grasping advance"
         },
         "tomb-of-the-immortal": {
-            "name": "Túmulo do Imortal"
+            "name": "tomb of the immortal"
         },
         "pressing-pursuit": {
             "name": "pressing pursuit"
         },
         "infest": {
-            "name": "Infestar"
+            "name": "infest"
         },
         "putrid-grubs": {
-            "name": "Larvas Pútridas"
+            "name": "putrid grubs"
         },
         "overwhelming-offensive": {
-            "name": "Ofensiva Esmagadora"
+            "name": "overwhelming offensive"
         },
         "vampiric-tempest": {
-            "name": "Tempestade Vampírica"
+            "name": "vampiric tempest"
         },
         "incubation": {
-            "name": "Incubação"
+            "name": "incubation"
         },
         "bioluminescence": {
-            "name": "Bioluminescência"
+            "name": "bioluminescence"
         },
         "cyclone-of-blades": {
-            "name": "Ciclone de Lâminas"
+            "name": "cyclone of blades"
         },
         "sunstroke": {
-            "name": "Insolação"
+            "name": "sunstroke"
         },
         "blood-drain": {
-            "name": "Dreno de Sangue"
+            "name": "blood drain"
         },
         "fury-of-the-horde": {
-            "name": "Fúria da Horda"
+            "name": "fury of the horde"
         },
         "repulsive-host": {
-            "name": "Hospedeiro Repulsivo"
+            "name": "repulsive host"
         },
         "bone-daggers": {
-            "name": "Adagas de Osso"
+            "name": "bone daggers"
         },
         "endless-biting": {
-            "name": "Mordidas Infinitas"
+            "name": "endless biting"
         },
         "wasteland": {
-            "name": "Terra Devastada"
+            "name": "wasteland"
         },
         "oasis": {
-            "name": "Oásis"
+            "name": "oasis"
         },
         "rain-of-arrows": {
             "name": "Chuva de Flechas"
         },
         "race-to-the-grave": {
-            "name": "Corrida para o Túmulo"
+            "name": "race to the grave"
         },
         "gut-shot": {
             "name": "gut shot"
@@ -6178,7 +6178,7 @@ export default {
             "name": "A Caça Começa"
         },
         "solid-bow": {
-            "name": "Arco Sólido"
+            "name": "solid bow"
         },
         "foot-snare": {
             "name": "Armadilha de Pé"
@@ -6217,7 +6217,7 @@ export default {
             "name": "coated arrows"
         },
         "felling-swoop": {
-            "name": "Mergulho Derrubador"
+            "name": "felling swoop"
         },
         "expose": {
             "name": "Expor"
@@ -6370,7 +6370,7 @@ export default {
             "name": "marked for death"
         },
         "unseen-dread": {
-            "name": "Pavor Invisível"
+            "name": "unseen dread"
         },
         "shroud-in-shade": {
             "name": "shroud in shade"
@@ -6679,7 +6679,7 @@ export default {
             "name": "secret of the oak"
         },
         "grisly-trauma": {
-            "name": "Trauma Macabro"
+            "name": "grisly trauma"
         },
         "medical-pack-1": {
             "name": "medical pack 1"
@@ -6733,7 +6733,7 @@ export default {
             "name": "Postura Defensiva"
         },
         "daybreak": {
-            "name": "Favorecer"
+            "name": "Alvorecer"
         },
         "sanctify": {
             "name": "sanctify"

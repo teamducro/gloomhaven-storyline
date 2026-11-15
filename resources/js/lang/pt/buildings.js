@@ -551,7 +551,7 @@ export default {
             },
             {
                 "level": 3,
-                "requires": "Requer 3 Moedas Antigas (Item 245)",
+                "requires": "Requer 3 Ancient Coins (Item 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Perde 1 de moral",

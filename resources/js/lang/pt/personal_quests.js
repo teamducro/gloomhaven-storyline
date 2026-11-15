@@ -23,8 +23,8 @@ export default {
         ]
     },
     "gh-513": {
-        "name": "Finding the Cure",
-        "unlock": "Abram o envelope X",
+        "name": "Em Busca da Cura",
+        "unlock": "Abre o envelope X",
         "progress": [
             "Mata oito Diabretes da Floresta.",
             "Conclui o {SCENARIO 59}."
@@ -69,7 +69,7 @@ export default {
     "gh-520": {
         "name": "Instrumento da Luz",
         "progress": [
-            "Encontra o Machado Quebra Crânios no Santuário do Necromante.",
+            "Encontra o Machado Ruína dos Crânios no Mausoléu da Necromante.",
             "Usa-o para matar sete Ossos Vivos, Cadáveres Vivos ou Espíritos Vivos."
         ]
     },
@@ -81,7 +81,7 @@ export default {
         ]
     },
     "gh-522": {
-        "name": "The Thin Places",
+        "name": "Os Lugares Ténues",
         "progress": [
             "Conclui seis cenários secundários."
         ]
@@ -111,7 +111,7 @@ export default {
     },
     "gh-526": {
         "name": "Vingança",
-        "unlock": "Abram o envelope X",
+        "unlock": "Abre o envelope X",
         "progress": [
             "Conclui quatro cenários em Gloomhaven.",
             "Conclui o {SCENARIO 57}."
@@ -183,7 +183,7 @@ export default {
     "cs-332": {
         "name": "Experimentation",
         "progress": [
-            "Joga 30 cartas pela tua ação de perda {LOST}."
+            "Joga 30 cartas pela respetiva ação de perda {LOST}."
         ]
     },
     "cs-333": {
@@ -232,7 +232,7 @@ export default {
     "cs-340": {
         "name": "Thy be Blessed",
         "progress": [
-            "Saque uma carta de {BLESS} doze vezes durante um ataque."
+            "Compra uma carta de {BLESS} doze vezes durante um ataque."
         ]
     },
     "cs-341": {
@@ -244,7 +244,7 @@ export default {
     "cs-342": {
         "name": "The Path of Agony",
         "progress": [
-            "Vê um aliado ou inimigo morrer ou ficar exausto durante o teu próprio turno 13 vezes."
+            "Vê um aliado ou inimigo morrer ou ficar exausto durante o seu próprio turno 13 vezes."
         ]
     },
     "cs-343": {
@@ -358,7 +358,7 @@ export default {
             42
         ],
         "progress": [
-            "Coleta pessoalmente cinco tipos diferentes de ervas por meio de fichas de saque."
+            "Recolhe pessoalmente cinco tipos diferentes de ervas por meio de fichas de saque."
         ]
     },
     "fh-2": {
@@ -369,7 +369,7 @@ export default {
         ],
         "progress": [
             "Saqueia pessoalmente um total de oito cartas de madeira por meio de fichas de saque.",
-            "Desbloqueia o {SCENARIO 69} e siga-o até a conclusão."
+            "Desbloqueia o {SCENARIO 69} e segue-o até à conclusão."
         ]
     },
     "fh-3": {
@@ -413,7 +413,7 @@ export default {
             21
         ],
         "progress": [
-            "Em oito fases de posto avançado diferentes, leia o nome de uma pessoa num evento ou secção."
+            "Em oito fases de posto avançado diferentes, lê o nome de uma pessoa num evento ou secção."
         ]
     },
     "fh-7": {
@@ -434,9 +434,9 @@ export default {
             88
         ],
         "progress": [
-            "Mata dois Guardas Algox.",
-            "Mata dois Esmaga-Garras Espreitadores.",
-            "Mata dois Atiradores de Dardos Robóticos."
+            "Mata dois Algox Guards.",
+            "Mata dois Lurker Clawcrushers.",
+            "Mata dois Robotic Boltshooters."
         ]
     },
     "fh-9": {
@@ -500,7 +500,7 @@ export default {
             "Conclui um cenário no Bosque Fogo-Branco.",
             "Conclui um cenário nas Montanhas de Pescoço de Cobre.",
             "Conclui um cenário na Floresta Radiante.",
-            "Conclui um cenário nos Campos de Cristal.",
+            "Conclui um cenário nos Crystal Fields.",
             "Conclui um cenário no Mar Mordaz."
         ]
     },
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "Doa 70 moedas de ouro ao Templo do Grande Carvalho."
+            "Doa 70 moedas de ouro ao Temple of the Great Oak."
         ]
     },
     "fh-16": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "Obtém o projeto do “Abyss Axe” (Item 039) e use-o para matar dez Cadáveres Congelados, Espectros de Gelo e/ou Perdições Vivas."
+            "Obtém o projeto do “Abyss Axe” (Item 039) e usa-o para matar dez Frozen Corpses, Ice Wraiths e/ou Living Dooms."
         ]
     },
     "fh-20": {
@@ -561,7 +561,7 @@ export default {
             21
         ],
         "progress": [
-            "Mata quinze Máquinas Arruinadas."
+            "Mata quinze Ruined Machines."
         ]
     },
     "fh-21": {
@@ -595,7 +595,7 @@ export default {
         "name": "Political Intrigue",
         "progress": [
             "Adiciona o Evento de Cidade 61 ao baralho de eventos de cidade.",
-            "Ganha 30 votos: três votos sempre que ganhar reputação, um voto por item de reputação de facção levado a um cenário concluído.",
+            "Ganha 30 votos: três votos sempre que ganhares reputação, um voto por item de reputação de facção levado a um cenário concluído.",
             "Lê a {SECTION} 136.1 durante a fase da cidade (o sucesso não é garantido)."
         ]
     },
@@ -609,7 +609,7 @@ export default {
     "gh2-3": {
         "name": "Habilidades Aprimoradas",
         "progress": [
-            "Compra cinco aprimoramentos (requer a conquista global “O Poder do Aprimoramento”).",
+            "Compra cinco aprimoramentos (requer a conquista global “O Poder da Melhoria”).",
             "Lê a {SECTION} 71.2."
         ]
     },
@@ -655,7 +655,7 @@ export default {
         ]
     },
     "gh2-9": {
-        "name": "Em Procura da Cura",
+        "name": "Em Busca da Cura",
         "progress": [
             "Conclui cenários em cinco entre: Montanhas de Pescoço de Cobre, Bosque dos Cadáveres, Floresta da Adaga, Gloomhaven, Pântano Persistente, Mar Nebuloso, Montanhas da Vigia.",
             "Lê a {SECTION} 55.3.",
@@ -666,7 +666,7 @@ export default {
     "gh2-10": {
         "name": "Matador de Aberrações",
         "progress": [
-            "Aprimora uma carta de habilidade (tua ou de um aliado) com um elemento {ANY} (requer a conquista global “O Poder do Aprimoramento”).",
+            "Aprimora uma carta de habilidade (tua ou de um aliado) com um elemento {ANY} (requer a conquista global “O Poder da Melhoria”).",
             "Lê a {SECTION} 14.3.",
             "Segue o {SCENARIO 64} até a conclusão."
         ]
@@ -683,8 +683,8 @@ export default {
         "name": "Instrumento da Luz",
         "progress": [
             "Desbloqueia imediatamente o {SCENARIO 65}.",
-            "Encontra o “Escudo dos Justos” (Item 148).",
-            "Usa o “Escudo dos Justos” (Item 148) para anular dez ataques de 4 ou mais de dano.",
+            "Encontra o “Shield of the Righteous” (Item 148).",
+            "Usa o “Shield of the Righteous” (Item 148) para anular dez ataques de 4 ou mais de dano.",
             "Lê a {SECTION} 82.1."
         ]
     },
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "Adiciona os Eventos de Cidade 69 e 70 ao baralho de eventos de cidade. Obtém a “Black Card” (Item 113). Ela não pode ser vendida.",
+            "Adiciona os Eventos de Cidade 69 e 70 ao baralho de eventos de cidade. Obtém a “Carta Negra” (Item 113). Ela não pode ser vendida.",
             "Conclui seis cenários secundários (número do cenário acima de 56).",
             "Lê a {SECTION} 128.2."
         ]
@@ -717,7 +717,7 @@ export default {
     "gh2-16": {
         "name": "O Veneno Perfeito",
         "progress": [
-            "Obtém a “Poison Dagger” (Item 7).",
+            "Obtém a “Adaga Envenenada” (Item 7).",
             "Usa-a para aplicar {POISON} a um inimigo sem {POISON} 30 vezes.",
             "Lê a {SECTION} 8.3."
         ]
@@ -747,7 +747,7 @@ export default {
     "gh2-20": {
         "name": "Piedade em Todas as Coisas",
         "progress": [
-            "Doa 120 moedas de ouro ao Templo do Grande Carvalho.",
+            "Doa 120 moedas de ouro ao Temple of the Great Oak.",
             "Lê a {SECTION} 51.5."
         ]
     },
@@ -781,14 +781,14 @@ export default {
         "name": "Os Teus Amigos Estão Preocupados",
         "unlock": "Abre um envelope de classe ou de edifício à tua escolha. Podes perder permanentemente as marcas de vantagem bónus obtidas com personagens reformados da tua linhagem. Por cada marca de vantagem perdida, ganha 30 moedas de ouro para gastar imediatamente em aprimoramentos do seu próximo personagem.",
         "progress": [
-            "Ganha 30 marcas de verificação de Objetivos de Batalha. Compra e mantenha um Objetivo de Batalha adicional em cada cenário; não ganhe nenhuma marca a menos que cumpra todos eles."
+            "Ganha 30 marcas de verificação de Objetivos de Batalha. Compra e mantém um Objetivo de Batalha adicional em cada cenário; não ganhas nenhuma marca a menos que cumpras todos eles."
         ]
     },
     "cq-cq03": {
         "name": "Consequências do Combate",
-        "unlock": "Abre um envelope de classe ou de edifício à tua escolha. Os teus futuros personagens ganham {STRENGTHEN} cada vez que sacarem um {NULL_MODIFIER} durante um cenário.",
+        "unlock": "Abre um envelope de classe ou de edifício à tua escolha. Os teus futuros personagens ganham {STRENGTHEN} cada vez que comprarem um {NULL_MODIFIER} durante um cenário.",
         "progress": [
-            "Ganha 50 de contenção: uma vez por cenário, reduza o valor de um ataque antes de sacar um modificador; ganhe uma contenção por ponto reduzido."
+            "Ganha 50 de contenção: uma vez por cenário, reduz o valor de um ataque antes de comprares um modificador; ganha uma contenção por ponto reduzido."
         ]
     },
     "cq-cq04": {
