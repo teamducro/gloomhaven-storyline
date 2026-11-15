@@ -376,7 +376,7 @@ export default {
         ]
     },
     "fh-42": {
-        "name": "Temple of the Great Oak",
+        "name": "Temple du Grand Chêne",
         "levels": [
             {
                 "level": 0
@@ -416,7 +416,7 @@ export default {
         ]
     },
     "fh-44": {
-        "name": "Enhancer",
+        "name": "Yourte Sacrée",
         "levels": [
             {
                 "level": 0
@@ -456,7 +456,7 @@ export default {
         ]
     },
     "fh-65": {
-        "name": "Metal Depot",
+        "name": "Comptoir des Métaux",
         "levels": [
             {
                 "level": 0
@@ -480,7 +480,7 @@ export default {
         ]
     },
     "fh-67": {
-        "name": "Lumber Depot",
+        "name": "Comptoir du Bois",
         "levels": [
             {
                 "level": 0
@@ -504,7 +504,7 @@ export default {
         ]
     },
     "fh-72": {
-        "name": "Hide Depot",
+        "name": "Comptoir des Peaux",
         "levels": [
             {
                 "level": 0
@@ -551,7 +551,7 @@ export default {
             },
             {
                 "level": 3,
-                "requires": "Nécessite 3 Pièces Anciennes (Objet 245)",
+                "requires": "Nécessite 3 Pièces Antiques (Objet 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Perdre 1 moral",
@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Hall of Revelry",
+        "name": "Salle des Réjouissances",
         "levels": [
             {
                 "level": 0
@@ -633,7 +633,7 @@ export default {
         ]
     },
     "fh-85": {
-        "name": "Carpenter",
+        "name": "Charpentier",
         "levels": [
             {
                 "level": 0
@@ -697,7 +697,7 @@ export default {
         ]
     },
     "fh-90": {
-        "name": "Town Hall",
+        "name": "Mairie",
         "levels": [
             {
                 "level": 0
@@ -738,7 +738,7 @@ export default {
                 "level": 1,
                 "operations": "Entraîner collectivement jusqu'à 1 soldat pour 3 pièces d'or et 1 ressource matérielle",
                 "downtime": "",
-                "wrecked": "Désavantage sur toutes les résolutions d'événements d'attaque. Impossible d'utiliser des soldats.",
+                "wrecked": "Désavantage sur toutes les résolutions d'événements d'assaut. Impossible d'utiliser des soldats.",
                 "passive": "Capacité : 4, Effet : avantage et -5{ATTACK.fh}",
                 "rewards": "+1 prospérité"
             },
@@ -746,7 +746,7 @@ export default {
                 "level": 2,
                 "operations": "Entraîner collectivement jusqu'à 1 soldat pour 3 pièces d'or et 1 ressource matérielle",
                 "downtime": "",
-                "wrecked": "Désavantage sur toutes les résolutions d'événements d'attaque. Impossible d'utiliser des soldats.",
+                "wrecked": "Désavantage sur toutes les résolutions d'événements d'assaut. Impossible d'utiliser des soldats.",
                 "passive": "Capacité : 6, Effet : avantage et -15{ATTACK.fh}",
                 "rewards": "+1 prospérité, +2 soldats"
             },
@@ -754,7 +754,7 @@ export default {
                 "level": 3,
                 "operations": "Entraîner collectivement jusqu'à 2 soldats pour 3 pièces d'or et 1 ressource matérielle chacun",
                 "downtime": "",
-                "wrecked": "Désavantage sur toutes les résolutions d'événements d'attaque. Impossible d'utiliser des soldats.",
+                "wrecked": "Désavantage sur toutes les résolutions d'événements d'assaut. Impossible d'utiliser des soldats.",
                 "passive": "Capacité : 8, Effet : avantage et -25{ATTACK.fh}",
                 "rewards": "+1 prospérité, +2 soldats"
             },
@@ -762,7 +762,7 @@ export default {
                 "level": 4,
                 "operations": "Entraîner collectivement jusqu'à 2 soldats pour 3 pièces d'or et 1 ressource matérielle chacun",
                 "downtime": "",
-                "wrecked": "Désavantage sur toutes les résolutions d'événements d'attaque. Impossible d'utiliser des soldats.",
+                "wrecked": "Désavantage sur toutes les résolutions d'événements d'assaut. Impossible d'utiliser des soldats.",
                 "passive": "Capacité : 10, Effet : avantage et -35{ATTACK.fh}",
                 "rewards": "+1 prospérité, +2 soldats"
             }

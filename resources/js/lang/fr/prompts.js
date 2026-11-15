@@ -1,9 +1,9 @@
 export default {
     "dragon": {
-        "1": "Rendre le trésor à la Wyverne. Gagnez le Haut-Fait Général “Au service de la Wyverne”. Ajoutez l'évènement de ville 75 et l'évènement de route 66 aux paquets.",
+        "1": "Rendre le trésor à la Wyverne. Gagnez le Haut-Fait global « Au Service de la Wyverne ». Ajoutez l'évènement de ville 75 et l'évènement de route 66 aux paquets.",
         "2": "Ne pas aider la Wyverne.",
         "title": "Ami ou Ennemi",
-        "text": "Vous avez récupéré le trésor de la Wyverne. Le retournez vous à la Wyverne ou suivez-vous l'ordre du capitaine de la garde et attaquez la Wyverne ?"
+        "text": "Vous avez récupéré le trésor de la Wyverne. Le rendez-vous à la Wyverne ou suivez-vous l'ordre du capitaine de la garde et tentez-vous de tuer la Wyverne ?"
     },
     "burningMountain": {
         "1": "Conclusion A : Vous décidez de terminer votre tour en G et de retirer l'un des objets de la partie.",
@@ -47,10 +47,10 @@ export default {
         "2": "B : Aider les Humains",
         "3": "C : Combattre les deux camps",
         "title": "La Sanglante Guerre des Démons",
-        "text": "Which side dit you choose?"
+        "text": "Quel camp avez-vous choisi ?"
     },
     "escapeFromTheHusk": {
-        "1": "All characters escaped",
+        "1": "Tous les personnages se sont échappés.",
         "2": "???",
         "title": "S'échapper du Karkass",
         "text": "Tous les personnages se sont-ils échappés par une sortie ?"
@@ -65,7 +65,7 @@ export default {
         "1": "Un ennemi nommé est éliminé",
         "2": "Deux ennemis nommés sont éliminés",
         "3": "Trois ennemis nommés sont éliminés",
-        "title": "Testez votre Modulateur de Puissance",
+        "title": "Testez votre Power Modulator",
         "text": "Combien d'ennemis nommés avez-vous pu éliminer avant d'être épuisés ?"
     },
     "unseenPlight": {
@@ -85,8 +85,8 @@ export default {
         "text": "Combien de Gardes de la Cité restent-ils sur la carte ?"
     },
     "algoxAltercation": {
-        "1": "Danseuse des Neiges est morte",
-        "2": "Le Poing-de-Glace est mort",
+        "1": "Danseuse des Neiges est morte.",
+        "2": "Le Poing-de-Glace est mort.",
         "title": "Altercation Algox",
         "text": "Quel camp avez-vous choisi ?"
     },
@@ -99,7 +99,7 @@ export default {
     "friendOfTheFishKing": {
         "1": "Oui",
         "2": "Non",
-        "title": "Ami du Roi des Poissons",
+        "title": "Friend of the Fish King",
         "text": "Avez-vous accepté la proposition du Roi des Poissons ?"
     },
     "acceptTheAscension": {
@@ -159,7 +159,7 @@ export default {
         "1": "Automate détruit, technologie donnée aux vermlings",
         "2": "Automate détruit, technologie conservée",
         "3": "Dispositif de contrôle mental désactivé",
-        "title": "La Volonté du Voleur d'Esprit",
+        "title": "La Volonté du Perce-Esprit",
         "text": "Qu'avez-vous fait du dispositif de contrôle mental ?"
     },
     "hungryMawDead": {
@@ -235,7 +235,7 @@ export default {
         "1": "Section 80.3",
         "2": "Section 106.1",
         "3": "Section 132.4",
-        "title": "À la Poursuite des Secrets",
+        "title": "Chasing Secrets",
         "text": "Quelle section de conclusion avez-vous lue ?"
     }
 }

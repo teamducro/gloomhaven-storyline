@@ -122,7 +122,7 @@ export default {
     "inox-shaman": "Chaman Inox",
     "jekserah": "Jekserah",
     "king-cobra": "King Cobra",
-    "lady-in-white": "Lady in White",
+    "lady-in-white": "Dame Blanche",
     "land-leviathan": "Land Leviathan",
     "large-vermling-scout": "Large Vermling Scout",
     "laser-spires": "Laser Spires",
@@ -199,9 +199,9 @@ export default {
     "the-colorless": "Le Sans-Couleur",
     "the-convergence": "The Convergence",
     "the-cultist": "Le Cultiste",
-    "the-dark-rider": "The Dark Rider",
+    "the-dark-rider": "Le Cavalier Sombre",
     "the-echo": "L'Écho",
-    "the-elder-drake": "The Elder Drake",
+    "the-elder-drake": "La Vénérable Wyverne",
     "the-gilded-one": "Le Doré",
     "the-gloom": "L'Ombre",
     "the-harvester": "The Harvester",
@@ -233,5 +233,5 @@ export default {
     "winged-horror": "Horreur Ailée",
     "yoglang": "Yoglang",
     "your-shadow": "Your Shadow",
-    "zealot": "Fanatique"
+    "zealot": "Zélote"
 }
