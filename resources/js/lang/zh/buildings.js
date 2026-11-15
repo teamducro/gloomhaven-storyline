@@ -200,74 +200,74 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去1个{HIDE}",
                 "passive": "",
-                "rewards": "将物品001至010加入物品供应堆"
+                "rewards": "将道具001至010加入道具供应堆"
             },
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去1个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品011至015加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具011至015加入道具供应堆"
             },
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去1个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品016至020加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具016至020加入道具供应堆"
             },
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去2个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品021至025加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具021至025加入道具供应堆"
             },
             {
                 "level": 5,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去2个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品026至030加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具026至030加入道具供应堆"
             },
             {
                 "level": 6,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去2个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品031至035加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具031至035加入道具供应堆"
             },
             {
                 "level": 7,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去3个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品036至040加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具036至040加入道具供应堆"
             },
             {
                 "level": 8,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去3个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品041至045加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具041至045加入道具供应堆"
             },
             {
                 "level": 9,
                 "operations": "",
-                "downtime": "制作物品",
+                "downtime": "制作道具",
                 "wrecked": "共同失去3个{HIDE}",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品046至050加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具046至050加入道具供应堆"
             }
         ]
     },
@@ -312,7 +312,7 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "购买最多1件物品",
+                "downtime": "购买最多1件道具",
                 "wrecked": "共同失去5金币",
                 "passive": "",
                 "rewards": "+1 繁荣度，阅读段落 25.2"
@@ -320,7 +320,7 @@ export default {
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "购买最多2件物品",
+                "downtime": "购买最多2件道具",
                 "wrecked": "共同失去10金币",
                 "passive": "",
                 "rewards": "+1 繁荣度，阅读段落 12.4"
@@ -328,7 +328,7 @@ export default {
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "购买最多3件物品",
+                "downtime": "购买最多3件道具",
                 "wrecked": "共同失去15金币",
                 "passive": "",
                 "rewards": "+1 繁荣度，阅读段落 38.3"
@@ -336,7 +336,7 @@ export default {
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "购买最多4件物品",
+                "downtime": "购买最多4件道具",
                 "wrecked": "共同失去20金币",
                 "passive": "",
                 "rewards": "+1 繁荣度，阅读段落 196.2"
@@ -363,7 +363,7 @@ export default {
                 "downtime": "",
                 "wrecked": "损坏任意 1 个建筑物",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品160至163加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具160至163加入道具供应堆"
             },
             {
                 "level": 3,
@@ -371,7 +371,7 @@ export default {
                 "downtime": "",
                 "wrecked": "损坏任意 1 个建筑物",
                 "passive": "",
-                "rewards": "+1 繁荣度，将物品164至167加入物品供应堆"
+                "rewards": "+1 繁荣度，将道具164至167加入道具供应堆"
             }
         ]
     },
@@ -551,7 +551,7 @@ export default {
             },
             {
                 "level": 3,
-                "requires": "需要3枚远古硬币（物品245）",
+                "requires": "需要3枚远古硬币（道具245）",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "失去 1 士气值",
