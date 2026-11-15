@@ -594,7 +594,7 @@ export default {
     "gh2-1": {
         "name": "Political Intrigue",
         "progress": [
-            "Añade el Evento de Ciudad 61 al mazo de eventos de ciudad.",
+            "Añade el evento de Ciudad 61 al mazo de eventos de Ciudad.",
             "Consigue 30 votos: tres votos cada vez que ganes reputación y un voto por cada objeto de reputación de facción llevado a un escenario completado.",
             "Lee la {SECTION} 136.1 durante la fase de ciudad (el éxito no está garantizado)."
         ]
@@ -648,7 +648,7 @@ export default {
     "gh2-8": {
         "name": "Recupera los árboles",
         "progress": [
-            "Vive diez eventos de camino con tu grupo.",
+            "Vive diez eventos de Camino con tu grupo.",
             "Lee la {SECTION} 64.3.",
             "Sigue {SCENARIO 59} hasta la conclusión.",
             "Sigue {SCENARIO 60} hasta la conclusión."
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "Añade los Eventos de Ciudad 69 y 70 al mazo de eventos de ciudad. Obtén la “Carta Negra” (Objeto 113). No se puede vender.",
+            "Añade los eventos de Ciudad 69 y 70 al mazo de eventos de Ciudad. Obtén la “Carta Negra” (Objeto 113). No se puede vender.",
             "Completa seis escenarios secundarios (número de escenario superior a 56).",
             "Lee la {SECTION} 128.2."
         ]

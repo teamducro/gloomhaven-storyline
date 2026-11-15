@@ -1071,7 +1071,7 @@ export default {
             "Sustituye 1 carta {+1_WHITE} por 1 carta {AGAIN} {+1_WHITE} “{INVISIBLE.fh}, Personal”",
             "Añade 1 carta {+1_WHITE} {DISARM.fh}",
             "Al final de cada uno de tus descansos, puedes colocar 1 de tus fichas de dinero en el hexágono ocupado por un enemigo a {RANGE.fh}3 para realizar: {ATTACK.fh}1, {TARGET.fh} ese enemigo, {RANGE.fh}3",
-            "Siempre que completes un evento de ciudad, roba una carta de modificador de ataque como si realizaras un {ATTACK.fh}4. Obtén una cantidad de oro igual al {DAMAGE.fh} que habría causado el ataque",
+            "Siempre que completes un evento de Ciudad, roba una carta de modificador de ataque como si realizaras un {ATTACK.fh}4. Obtén una cantidad de oro igual al {DAMAGE.fh} que habría causado el ataque",
             "Una vez por escenario, durante tu turno, puedes realizar: {INVISIBLE.fh}, Personal"
         ]
     },

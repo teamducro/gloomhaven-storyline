@@ -6,10 +6,10 @@ export default {
         "faq": "Las Botas de Zancadas solo suman al valor numérico de una única capacidad de Movimiento existente. No te dan una acción de Movimiento gratuita."
     },
     "gh-2": {
-        "name": "Zapatos Alados",
+        "name": "Zapatos alados",
         "source": "Prosperidad nivel 1",
         "desc": "Durante tu movimiento, añade {JUMP} al movimiento.",
-        "faq": "Los Zapatos Alados pueden usarse solo en una única capacidad de Movimiento, no en varias capacidades de Movimiento de una acción (p. ej.: acción con Movimiento, Ataque, Movimiento)."
+        "faq": "Los Zapatos alados pueden usarse solo en una única capacidad de Movimiento, no en varias capacidades de Movimiento de una acción (p. ej.: acción con Movimiento, Ataque, Movimiento)."
     },
     "gh-3": {
         "name": "Armadura de Piel",
@@ -39,7 +39,7 @@ export default {
         "desc": "Cuando te ataquen, cualquier carta de Modificador de ataque {2X_WHITE} que robe el enemigo se considera {+0_WHITE}."
     },
     "gh-8": {
-        "name": "Escudo Triangular",
+        "name": "Escudo triangular",
         "source": "Prosperidad nivel 1",
         "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 1 contra ese ataque."
     },
@@ -75,7 +75,7 @@ export default {
         "desc": "Durante tu ataque, añade {ATTACK} +1 a tu acción de ataque entera."
     },
     "gh-15": {
-        "name": "Botas de Velocidad",
+        "name": "Botas de velocidad",
         "source": "Prosperidad nivel 2",
         "desc": "Al comienzo de una ronda, después de que hayan revelado todas las cartas de Capacidad, aumenta o disminuye el valor de iniciativa de tu carta principal en 10."
     },
@@ -334,7 +334,7 @@ export default {
         "desc": "Para las 5 próximas fuentes de daño de ataque que te tomen como objetivo, obtén {SHIELD} 1. Añade 5 cartas {-1} a tu mazo de Modificadores de ataque."
     },
     "gh-66": {
-        "name": "Máscara de Terror",
+        "name": "Máscara del terror",
         "source": "Prosperidad nivel 9\nRecompensa de {SCENARIO 110} (Tesoro #84)",
         "desc": "Durante tu ataque cuerpo a cuerpo, añade {PUSH} 1."
     },
@@ -515,7 +515,7 @@ export default {
     },
     "gh-102": {
         "name": "Túnica de Sacrificio",
-        "source": "Evento de ciudad 40",
+        "source": "Evento de Ciudad 40",
         "desc": "Durante tu ataque a distancia, sufre 3 de daño para añadir {ATTACK} +1 a la acción de ataque entera."
     },
     "gh-103": {
@@ -530,13 +530,13 @@ export default {
     },
     "gh-105": {
         "name": "Mantón Pulgoso",
-        "source": "Evento de ciudad 30",
+        "source": "Evento de Ciudad 30",
         "desc": "Se considera que tienes Iniciativa 99 a efectos de atención de los enemigos.",
         "faq": "En realidad, el objeto no cambia la iniciativa de un personaje, por lo que no afecta a la iniciativa de sus invocaciones. Solo cambia cómo tratan los monstruos al personaje al determinar su atención."
     },
     "gh-106": {
         "name": "Collar de Dientes",
-        "source": "Evento de camino 05",
+        "source": "Evento de Camino 05",
         "desc": "Siempre que mates a un enemigo durante tu turno, realiza una acción de “{HEAL} 1, Personal”."
     },
     "gh-107": {
@@ -552,7 +552,7 @@ export default {
     },
     "gh-109": {
         "name": "Capucha de Ladrón",
-        "source": "Evento de ciudad 62",
+        "source": "Evento de Ciudad 62",
         "desc": "Al realizar una capacidad de {LOOT 1}, realiza un {LOOT 2} en su lugar."
     },
     "gh-110": {
@@ -593,12 +593,12 @@ export default {
     },
     "gh-117": {
         "name": "Hacha Sanguinaria",
-        "source": "Evento de ciudad 53\nEvento de camino 53",
+        "source": "Evento de Ciudad 53\nEvento de Camino 53",
         "desc": "Durante tu ataque cuerpo a cuerpo, sufre 2 de daño para añadir {ATTACK} +1 a tu acción de ataque entera."
     },
     "gh-118": {
         "name": "Báculo de los Elementos",
-        "source": "Evento de ciudad 57",
+        "source": "Evento de Ciudad 57",
         "desc": "Durante tu turno, crea cualquier elemento. {ANY}"
     },
     "gh-119": {
@@ -634,17 +634,17 @@ export default {
     },
     "gh-125": {
         "name": "Engranaje Enigmático",
-        "source": "Evento de ciudad 03\nOpción de {SCENARIO 100}",
+        "source": "Evento de Ciudad 03\nOpción de {SCENARIO 100}",
         "desc": "Durante tu turno, desactiva todas las trampas a {RANGE} 2."
     },
     "gh-126": {
         "name": "Araña Mecánica",
-        "source": "Evento de ciudad 43\nOpción de {SCENARIO 100}",
+        "source": "Evento de Ciudad 43\nOpción de {SCENARIO 100}",
         "desc": "Durante tu turno, inflinge {POISON} a todos los enemigos adyacentes."
     },
     "gh-127": {
         "name": "Araña Mecánica Gigante",
-        "source": "Evento de ciudad 61",
+        "source": "Evento de Ciudad 61",
         "desc": "Durante tu turno, realiza una acción de {LOOT 1}."
     },
     "gh-128": {
@@ -654,7 +654,7 @@ export default {
     },
     "gh-129": {
         "name": "Carta Negra",
-        "source": "Evento de camino 51",
+        "source": "Evento de Camino 51",
         "desc": "Durante tu turno, coloca una ficha de Personaje sobre un enemigo normal o de élite adyacente. Añade {ATTACK} +1 a todos tus ataques que tengan como objetivo este enemigo."
     },
     "gh-130": {
@@ -861,10 +861,10 @@ export default {
         "desc": "Durante tu movimiento, añade {MOVE} +1 a un único movimiento."
     },
     "jotl-6": {
-        "name": "Zapatos alados",
+        "name": "Botas aladas",
         "source": "Recompensa de {SCENARIO 2}",
         "desc": "Durante tu movimiento, añade {JUMP} a toda la acción de Movimiento.",
-        "faq": "Los Zapatos Alados pueden usarse solo en una única capacidad de Movimiento, no en varias capacidades de Movimiento de una acción (p. ej.: acción con Movimiento, Ataque, Movimiento)."
+        "faq": "Las Botas aladas pueden usarse solo en una única capacidad de Movimiento, no en varias capacidades de Movimiento de una acción (p. ej.: acción con Movimiento, Ataque, Movimiento)."
     },
     "jotl-7": {
         "name": "Escudo triangular",
@@ -937,7 +937,7 @@ export default {
         "desc": "Durante tu ataque, añade {STUN} a un único ataque."
     },
     "jotl-21": {
-        "name": "Hawk Helm",
+        "name": "Yelmo de halcón",
         "source": "Recompensa de {SCENARIO 15}",
         "desc": "Durante tu ataque a distancia, añade {RANGE} +1 a tu acción de ataque entera."
     },
@@ -1568,7 +1568,7 @@ export default {
         "desc": "Durante tu turno, añade +1 {MOVE.fh} a todas tus capacidades de Movimiento."
     },
     "fh-19": {
-        "name": "Ringing Hammer",
+        "name": "Martillo tintineante",
         "source": "Artesano 3",
         "desc": "Durante tu capacidad de Ataque, añade {MUDDLE.fh} a todos tus ataques."
     },
@@ -1598,7 +1598,7 @@ export default {
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade {WOUND.fh}, {POISON.fh}, {MUDDLE.fh} a 1 ataque."
     },
     "fh-25": {
-        "name": "Soothing Scepter",
+        "name": "Cetro sosegante",
         "source": "Artesano 4",
         "desc": "Durante tu turno, realiza {REGENERATE.fh} {TARGET.fh} 1 aliado, {RANGE.fh} 2"
     },
@@ -1724,7 +1724,7 @@ export default {
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade +1 {ATTACK.fh} y {WOUND.fh} a 1 ataque."
     },
     "fh-50": {
-        "name": "Shield of Reciprocity",
+        "name": "Escudo de reciprocidad",
         "source": "Artesano 9",
         "desc": "Cuando sufras {DAMAGE.fh} por un ataque, obtén {SHIELD.fh} 1 contra ese ataque y da la vuelta a esta carta.",
         "backDesc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade {PIERCE.fh} 1 a 1 ataque y da la vuelta a esta carta."
@@ -2102,7 +2102,7 @@ export default {
         "desc": "Durante tu turno, añade {JUMP.fh} a todas tus capacidades de Movimiento."
     },
     "fh-125": {
-        "name": "Botas de velocidad",
+        "name": "Zapatos de velocidad",
         "source": "Disponible desde el inicio",
         "desc": "Al determinar la iniciativa, después de que todas las cartas de Capacidad hayan sido reveladas, aumenta o disminuye tu iniciativa en 10."
     },
@@ -2117,7 +2117,7 @@ export default {
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade {POISON.fh} a 1 ataque."
     },
     "fh-128": {
-        "name": "Escudo triangular",
+        "name": "Escudo gótico",
         "source": "Disponible desde el inicio",
         "desc": "Cuando sufras {DAMAGE.fh} por un ataque, obtén {SHIELD.fh} 1 contra ese ataque."
     },
@@ -2288,7 +2288,7 @@ export default {
         "desc": "Al final de tu turno, juega 1 carta de tu mano y realiza todas las capacidades continuas y obligatorias de la acción superior o inferior de la carta."
     },
     "fh-162": {
-        "name": "Howling Ice Brooch",
+        "name": "Broche de hielo aullante",
         "source": "Joyería 2",
         "desc": "Durante tu turno, realiza {ICE_OR_WIND_X}: {ATTACK.fh} 3 {RANGE.fh} 3, {IMMOBILIZE.fh}"
     },
@@ -2418,7 +2418,7 @@ export default {
         "desc": "Durante tu turno, crea 1 trampa de {DAMAGE.fh} 3 en un hexágono vacío adyacente."
     },
     "fh-188": {
-        "name": "Freezing Crystal",
+        "name": "Cristal congelante",
         "source": "Objeto aleatorio del mazo de botín",
         "desc": "Durante tu turno, crea 1 pieza de 1 hexágono de terreno peligroso, terreno helado o agua en un hexágono sin accesorios adyacente."
     },
@@ -2595,7 +2595,7 @@ export default {
         "desc": "Durante tu turno, descarta 2 cartas de tu mano para realizar: {HEAL.fh} 6 Personal"
     },
     "fh-223": {
-        "name": "Lightning Rod",
+        "name": "Pararrayos",
         "source": "Tesoro 26",
         "desc": "Después de determinar la iniciativa, todos los monstruos consideran que eres el primero en el orden de iniciativa al determinar su atención durante esta ronda. {ROUND}"
     },
@@ -2893,7 +2893,7 @@ export default {
     },
     "gh2-12": {
         "name": "Poción de resistencia",
-        "source": "Prosperidad nivel 1\nEvento de ciudad 84",
+        "source": "Prosperidad nivel 1\nEvento de Ciudad 84",
         "desc": "Durante tu turno, {RECOVER.fh} 1 carta de nivel 1 de tu pila de descartes.",
         "faq": "Las cartas X cuentan como cartas de nivel 1, por lo que también pueden recuperarse."
     },
@@ -2924,7 +2924,7 @@ export default {
     },
     "gh2-18": {
         "name": "Bacinete Pesado",
-        "source": "Prosperidad nivel 2\nEvento de camino 61",
+        "source": "Prosperidad nivel 2\nEvento de Camino 61",
         "desc": "Siempre que un enemigo fuera a aplicarte {DISARM.fh}, {STUN.fh} o {MUDDLE.fh}, evita sufrir ese estado.",
         "faq": "Solo evita los estados aplicados por enemigos, no los que te infliges tú mismo."
     },
@@ -3006,7 +3006,7 @@ export default {
     },
     "gh2-34": {
         "name": "Hacha de batalla",
-        "source": "Prosperidad nivel 4\nEvento de camino 64",
+        "source": "Prosperidad nivel 4\nEvento de Camino 64",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo con un solo objetivo, cambia el objetivo de la capacidad a:"
     },
     "gh2-35": {
@@ -3016,7 +3016,7 @@ export default {
     },
     "gh2-36": {
         "name": "Moon Earing",
-        "source": "Prosperidad nivel 4\nEvento de ciudad 6",
+        "source": "Prosperidad nivel 4\nEvento de Ciudad 6",
         "desc": "Cuando hagas un descanso corto, {RECOVER.fh} hasta 3 de tus objetos gastados."
     },
     "gh2-37": {
@@ -3061,7 +3061,7 @@ export default {
     },
     "gh2-45": {
         "name": "Poción elemental mayor",
-        "source": "Prosperidad nivel 5\nEvento de camino 52",
+        "source": "Prosperidad nivel 5\nEvento de Camino 52",
         "desc": "Durante tu turno, {ANY} {ANY}."
     },
     "gh2-46": {
@@ -3091,7 +3091,7 @@ export default {
     },
     "gh2-51": {
         "name": "Heavy Mace",
-        "source": "Prosperidad nivel 6\nEvento de camino 8",
+        "source": "Prosperidad nivel 6\nEvento de Camino 8",
         "desc": "Después de que te ataque un enemigo adyacente, realiza: {ATTACK.fh} 1, enemyAttacked Este ataque no se ve afectado por {RETALIATE.fh}."
     },
     "gh2-52": {
@@ -3410,7 +3410,7 @@ export default {
     },
     "gh2-114": {
         "name": "Gust Striders",
-        "source": "Evento de ciudad 17\nEvento de ciudad 81",
+        "source": "Evento de Ciudad 17\nEvento de Ciudad 81",
         "desc": "Durante tu turno, añade {JUMP.fh} a tu próxima capacidad de Movimiento. Si {WIND} es fuerte o menguante, añade también +2 {MOVE.fh}."
     },
     "gh2-115": {
@@ -3432,7 +3432,7 @@ export default {
     },
     "gh2-118": {
         "name": "Duskbrand",
-        "source": "Evento de camino 33",
+        "source": "Evento de Camino 33",
         "desc": "Durante tu turno, si {LIGHT} es fuerte o menguante, añade +1 {ATTACK.fh} a tu próximo ataque cuerpo a cuerpo. Si has llevado Dawnblade, {DARK}."
     },
     "gh2-119": {
@@ -3442,7 +3442,7 @@ export default {
     },
     "gh2-120": {
         "name": "Armadura de Escamas de Draco",
-        "source": "{SCENARIO 29} (Tesoro #75)\nEvento de camino 32",
+        "source": "{SCENARIO 29} (Tesoro #75)\nEvento de Camino 32",
         "desc": "Siempre que hagas un descanso largo, obtén {STRENGTHEN.fh}."
     },
     "gh2-121": {
@@ -3456,32 +3456,32 @@ export default {
     },
     "gh2-123": {
         "name": "Storm Beetle Lantern",
-        "source": "Evento de camino 30",
+        "source": "Evento de Camino 30",
         "desc": "Durante tu turno, realiza: {ANY_X}: {WIND}"
     },
     "gh2-124": {
         "name": "Ignition Beetle Lantern",
-        "source": "Evento de camino 30",
+        "source": "Evento de Camino 30",
         "desc": "Durante tu turno, realiza: {ANY_X}: {FIRE}"
     },
     "gh2-125": {
         "name": "Tremor Beetle Lantern",
-        "source": "Evento de camino 30",
+        "source": "Evento de Camino 30",
         "desc": "Durante tu turno, realiza: {ANY_X}: {EARTH}"
     },
     "gh2-126": {
         "name": "Brilliant Beetle Lantern",
-        "source": "Evento de camino 30",
+        "source": "Evento de Camino 30",
         "desc": "Durante tu turno, realiza: {ANY_X}: {LIGHT}"
     },
     "gh2-127": {
         "name": "Twilight Beetle Lantern",
-        "source": "Evento de camino 30",
+        "source": "Evento de Camino 30",
         "desc": "Durante tu turno, realiza: {ANY_X}: {DARK}"
     },
     "gh2-128": {
         "name": "Colgante de Pactos Siniestros",
-        "source": "{SCENARIO 27} (Tesoro #05)\nEvento de camino 36",
+        "source": "{SCENARIO 27} (Tesoro #05)\nEvento de Camino 36",
         "desc": "Durante tu turno, {RECOVER.fh} 1 de tus objetos {SMALL-ITEM} perdidos y da la vuelta a esta carta.",
         "backDesc": "En tus 3 próximos descansos, obtén {CURSE.fh}. Después del tercer descanso, da la vuelta a esta carta."
     },
@@ -3526,28 +3526,28 @@ export default {
     },
     "gh2-137": {
         "name": "Mantón Pulgoso",
-        "source": "Evento de ciudad 86",
+        "source": "Evento de Ciudad 86",
         "desc": "Todos los monstruos consideran que eres el último en el orden de iniciativa al determinar su atención.",
         "faq": "No afecta a tus invocaciones."
     },
     "gh2-138": {
         "name": "Hacha Sanguinaria",
-        "source": "Evento de camino 63",
+        "source": "Evento de Camino 63",
         "desc": "Durante tu capacidad de Ataque cuerpo a cuerpo, sufre {DAMAGE.fh} 2 para añadir +1 {ATTACK.fh} a todos los ataques."
     },
     "gh2-139": {
         "name": "Otherworldly Scepter",
-        "source": "Recompensa de {SCENARIO 94}\nEvento de ciudad 85",
+        "source": "Recompensa de {SCENARIO 94}\nEvento de Ciudad 85",
         "desc": "Cuando realices una acción de invocación, cada invocación creada por esa acción obtiene {WARD.fh}, {INVISIBLE.fh} y {STRENGTHEN.fh}."
     },
     "gh2-140": {
         "name": "Remote Attack Spider",
-        "source": "Evento de ciudad 98",
+        "source": "Evento de Ciudad 98",
         "desc": "Durante tu turno, realiza: {POISON.fh}, Todos, {RANGE.fh} 1"
     },
     "gh2-141": {
         "name": "Remote Aid Spider",
-        "source": "Evento de ciudad 98",
+        "source": "Evento de Ciudad 98",
         "desc": "Durante tu turno, realiza: {HEAL.fh} 2, Todos, {RANGE.fh} 1"
     },
     "gh2-142": {
@@ -3572,7 +3572,7 @@ export default {
     },
     "gh2-146": {
         "name": "Amberhollow",
-        "source": "Evento de camino 15\nEvento de camino 25\nEvento de camino 28\nEvento de camino 30\nEvento de camino 31",
+        "source": "Evento de Camino 15\nEvento de Camino 25\nEvento de Camino 28\nEvento de Camino 30\nEvento de Camino 31",
         "desc": "Este objeto debe llevarse al escenario y se devuelve a la reserva de objetos no disponibles al final del escenario. Durante tu turno, realiza: {STRENGTHEN.fh}, {BLESS.fh}, Personal"
     },
     "gh2-147": {

@@ -131,7 +131,7 @@ export default {
         "rewards": [
             "50 de oro para cada personaje",
             "+1 de prosperidad",
-            "Añade el Evento de ciudad 78 al mazo"
+            "Añade el evento de Ciudad 78 al mazo"
         ],
         "faq": [
             "Errata: bajo “Reglas especiales”, el altar debería estar en “f”, no en “a”. Las apariciones de demonios deberían reordenarse así: viento (a), noche (b), tierra (c), fuego (d), sol (e), hielo (f).",
@@ -172,7 +172,7 @@ export default {
         ],
         "conclusion_faq": [
             "Puedes sumar tu dinero actual a la recompensa, pero no puedes vender objetos en la ciudad, porque la recompensa se obtiene justo al terminar el escenario, antes de volver a la ciudad.",
-            "Errata: si el espacio para la pegatina del logro global “La Grieta Cerrada” ya está ocupado, no lo tapes. Omite la pegatina o colócala a un lado del mapa."
+            "Errata: si el espacio para la pegatina del logro global “La fisura cerrada” ya está ocupado, no lo tapes. Omite la pegatina o colócala a un lado del mapa."
         ]
     },
     "gh-28": {
@@ -225,7 +225,7 @@ export default {
             "30 de oro para cada personaje",
             "5 de reputación",
             "-2 de prosperidad",
-            "Añade el Evento de ciudad 79 al mazo"
+            "Añade el evento de Ciudad 79 al mazo"
         ],
         "faq": [
             "Los obstáculos de muro no se pueden destruir."
@@ -236,7 +236,7 @@ export default {
         "rewards": [
             "10 de oro para cada personaje",
             "+4 de reputación",
-            "Añade el Evento de ciudad 78 al mazo"
+            "Añade el evento de Ciudad 78 al mazo"
         ]
     },
     "gh-37": {
@@ -346,8 +346,8 @@ export default {
         "rewards": [
             "+5 de reputación",
             "+5 de prosperidad",
-            "Añade el Evento de ciudad 81 al mazo",
-            "Añade el Evento de camino 69 al mazo"
+            "Añade el evento de Ciudad 81 al mazo",
+            "Añade el evento de Camino 69 al mazo"
         ]
     },
     "gh-52": {
@@ -370,7 +370,7 @@ export default {
         "requirements": "Misión personal “Buscador de Xorn”, objeto “Báculo de Xorn” equipado",
         "rewards": [
             "Retira de inmediato al Buscador de Xorn",
-            "Añade los Eventos de ciudad y camino 59 a sus mazos, en lugar de los eventos que se añadirían normalmente al retirar la clase del personaje a la que pertenece el Buscador de Xorn",
+            "Añade los eventos de Ciudad y Camino 59 a sus mazos, en lugar de los eventos que se añadirían normalmente al retirar la clase del personaje a la que pertenece el Buscador de Xorn",
             "Abre el sobre {PH}"
         ],
         "conclusion_faq": [
@@ -382,13 +382,13 @@ export default {
         "name": "Nobles’ Crypt",
         "rewards": [
             "+1 de reputación",
-            "Añade el Evento de Ciudad SoX2 al mazo"
+            "Añade el evento de Ciudad SoX2 al mazo"
         ]
     },
     "gh-SoX2": {
         "name": "Flooded Crypt",
         "rewards": [
-            "Añade el Evento de Ciudad SoX3 al mazo",
+            "Añade el evento de Ciudad SoX3 al mazo",
             "Elige solo uno de los siguientes: “Espada Gélida” (Objeto 077), “Varita de Escarcha” (Objeto 083) o “Collar de las Mareas” (Objeto 111)"
         ]
     },
@@ -396,7 +396,7 @@ export default {
         "name": "Crypt of the Ancients",
         "rewards": [
             "50 de oro colectivo",
-            "Añade el Evento de Ciudad SoX3 al mazo"
+            "Añade el evento de Ciudad SoX3 al mazo"
         ]
     },
     "gh-55": {
@@ -831,14 +831,14 @@ export default {
         "requirements": "El fin de la Penumbra (Global) COMPLETADO",
         "rewards": [
             "10 XP para cada personaje",
-            "Añade los Eventos de ciudad y camino 82 a sus mazos"
+            "Añade los eventos de Ciudad y Camino 82 a sus mazos"
         ]
     },
     "fc-97": {
         "name": "Saber ignoto",
         "rewards": [
             "10 de oro para cada personaje",
-            "Añade los Eventos de ciudad 88,89 y 90 a su mazo"
+            "Añade los eventos de Ciudad 88,89 y 90 a su mazo"
         ]
     },
     "fc-98": {
@@ -848,7 +848,7 @@ export default {
                 "10 de oro para cada personaje",
                 "+1 de reputación",
                 "+1 de prosperidad",
-                "Añade el Evento de ciudad 86 a su mazo"
+                "Añade el evento de Ciudad 86 a su mazo"
             ],
             [
                 "5 de oro para cada personaje",
@@ -899,7 +899,7 @@ export default {
         "name": "En el lugar oportuno",
         "rewards": [
             "+2 de prosperidad",
-            "Añade el Evento de ciudad 87 a su mazo"
+            "Añade el evento de Ciudad 87 a su mazo"
         ]
     },
     "fc-104": {
@@ -1007,7 +1007,7 @@ export default {
             "+3 de reputación",
             "+1 de prosperidad",
             "Retira la Adivina etérida {DR}",
-            "Añade los Eventos de ciudad y camino 83 a sus mazos"
+            "Añade los eventos de Ciudad y Camino 83 a sus mazos"
         ]
     },
     "fc-117": {
@@ -2431,7 +2431,7 @@ export default {
     "cs-4": {
         "name": "Infected Warriors",
         "rewards": [
-            "Cada personaje obtiene un objeto “Orbe” aleatorio (Objeto 1-10)"
+            "Cada personaje obtiene un objeto “Orb” aleatorio (Objeto 1-10)"
         ]
     },
     "cs-5": {
@@ -2494,7 +2494,7 @@ export default {
         "name": "Ambush of Beasts",
         "rewards": [
             "15 de oro para cada personaje",
-            "Cada personaje obtiene un objeto “Orbe” aleatorio (Objeto 1-10)"
+            "Cada personaje obtiene un objeto “Orb” aleatorio (Objeto 1-10)"
         ]
     },
     "cs-16": {
@@ -2527,7 +2527,7 @@ export default {
         "rewards": [
             "+1 de reputación",
             "+1 de prosperidad",
-            "Cada personaje obtiene un objeto “Orbe” aleatorio (Objeto 1-10)"
+            "Cada personaje obtiene un objeto “Orb” aleatorio (Objeto 1-10)"
         ]
     },
     "cs-21": {
@@ -2551,14 +2551,14 @@ export default {
     "cs-24": {
         "name": "Eerie Grotto",
         "rewards": [
-            "Cada personaje obtiene un objeto “Orbe” aleatorio (Objeto 1-10)"
+            "Cada personaje obtiene un objeto “Orb” aleatorio (Objeto 1-10)"
         ]
     },
     "cs-25": {
         "name": "Brightspark, Behold!",
         "rewards": [
             "+1 de reputación",
-            "Añade el Evento de Camino 57 al mazo"
+            "Añade el evento de Camino 57 al mazo"
         ]
     },
     "cs-26": {
@@ -2656,7 +2656,7 @@ export default {
         "requirements": "Misión personal “An Adder Divides”",
         "rewards": [
             "10 XP para cada personaje",
-            "Retira las 5 primeras cartas del mazo de Eventos de Ciudad y baraja el Evento de Ciudad 57 entre ellas. Aparta las cartas de Evento de Ciudad restantes hasta que se resuelva el Evento de Ciudad 57. Cualquier carta adicional que se fuera a añadir al mazo de Eventos de Ciudad durante este tiempo se añade una vez resuelto el Evento de Ciudad 57 y combinadas las cartas restantes con el mazo original.",
+            "Retira las 5 primeras cartas del mazo de eventos de Ciudad y baraja el evento de Ciudad 57 entre ellas. Aparta las cartas de evento de Ciudad restantes hasta que se resuelva el evento de Ciudad 57. Cualquier carta adicional que se fuera a añadir al mazo de eventos de Ciudad durante este tiempo se añade una vez resuelto el evento de Ciudad 57 y combinadas las cartas restantes con el mazo original.",
             "La misión “An Adder Divides” todavía no está completada"
         ]
     },
@@ -2683,14 +2683,14 @@ export default {
         "name": "Mansion Maze",
         "rewards": [
             "+1 de prosperidad",
-            "Cada personaje obtiene un objeto “Orbe” aleatorio (Objeto 1-10)"
+            "Cada personaje obtiene un objeto “Orb” aleatorio (Objeto 1-10)"
         ]
     },
     "cs-44": {
         "name": "Haunted Manor",
         "rewards": [
             "20 de oro para cada personaje",
-            "Cada personaje obtiene un objeto “Orbe” aleatorio (Objeto 1-10)"
+            "Cada personaje obtiene un objeto “Orb” aleatorio (Objeto 1-10)"
         ]
     },
     "cs-45": {
@@ -2890,7 +2890,7 @@ export default {
             "Misión “Scrap Diver” completada",
             "Abre el sobre {QA}",
             "15xA de oro para cada personaje (donde A es el número de Chatarra Antigua recuperada)",
-            "Añade el Evento de Ciudad QA-03 al mazo"
+            "Añade el evento de Ciudad QA-03 al mazo"
         ]
     },
     "cs-QA3": {
@@ -3029,7 +3029,7 @@ export default {
             "5 de oro para cada personaje",
             "10 XP para cada personaje",
             "+1 de reputación de los Demonios",
-            "Añade el Evento de Ciudad C-51 al mazo"
+            "Añade el evento de Ciudad C-51 al mazo"
         ]
     },
     "gh2-7": {
@@ -3048,7 +3048,7 @@ export default {
         "rewards": [
             "+1 de prosperidad",
             "+1 de reputación de los Militares",
-            "Añade el Evento de Camino R-30 al mazo"
+            "Añade el evento de Camino R-30 al mazo"
         ]
     },
     "gh2-10": {
@@ -3079,8 +3079,8 @@ export default {
                 "20 XP para cada personaje",
                 "2 ✔ para cada personaje",
                 "-1 de reputación de los Militares",
-                "Añade el Evento de Ciudad C-39 al mazo",
-                "Añade el Evento de Camino R-32 al mazo"
+                "Añade el evento de Ciudad C-39 al mazo",
+                "Añade el evento de Camino R-32 al mazo"
             ],
             []
         ]
@@ -3169,11 +3169,11 @@ export default {
                 "-10 de reputación de los Demonios",
                 "+2 de reputación del Gremio de Mercaderes",
                 "-10 de reputación de los Militares",
-                "Añade el Evento de Ciudad C-36 al mazo",
-                "Añade el Evento de Ciudad C-54 al mazo",
-                "Añade el Evento de Ciudad C-55 al mazo",
-                "Añade el Evento de Camino R-37 al mazo",
-                "Añade el Evento de Camino R-38 al mazo",
+                "Añade el evento de Ciudad C-36 al mazo",
+                "Añade el evento de Ciudad C-54 al mazo",
+                "Añade el evento de Ciudad C-55 al mazo",
+                "Añade el evento de Camino R-37 al mazo",
+                "Añade el evento de Camino R-38 al mazo",
                 "Abre el sobre “Gremio de Mercaderes”"
             ],
             [
@@ -3181,10 +3181,10 @@ export default {
                 "-10 de reputación de los Demonios",
                 "-10 de reputación del Gremio de Mercaderes",
                 "+2 de reputación de los Militares",
-                "Añade el Evento de Ciudad C-36 al mazo",
-                "Añade el Evento de Ciudad C-53 al mazo",
-                "Añade el Evento de Ciudad C-56 al mazo",
-                "Añade el Evento de Camino R-38 al mazo",
+                "Añade el evento de Ciudad C-36 al mazo",
+                "Añade el evento de Ciudad C-53 al mazo",
+                "Añade el evento de Ciudad C-56 al mazo",
+                "Añade el evento de Camino R-38 al mazo",
                 "Abre el sobre “Militares”"
             ]
         ]
@@ -3235,16 +3235,16 @@ export default {
                 "20 XP para cada personaje",
                 "2 ✔ para cada personaje",
                 "-1 de reputación de los Militares",
-                "Añade el Evento de Ciudad C-38 al mazo",
-                "Añade el Evento de Camino R-32 al mazo"
+                "Añade el evento de Ciudad C-38 al mazo",
+                "Añade el evento de Camino R-32 al mazo"
             ],
             [
                 "45 de oro para cada personaje",
                 "20 XP para cada personaje",
                 "2 ✔ para cada personaje",
                 "-1 de reputación de los Militares",
-                "Añade el Evento de Ciudad C-38 al mazo",
-                "Añade el Evento de Camino R-32 al mazo"
+                "Añade el evento de Ciudad C-38 al mazo",
+                "Añade el evento de Camino R-32 al mazo"
             ],
             [
                 "15 de oro para cada personaje"
@@ -3405,8 +3405,8 @@ export default {
             "10 XP para cada personaje",
             "1 ✔ para cada personaje",
             "Obtén “Scepter of Xorn” (Objeto 147)",
-            "Añade el Evento de Camino R-39 al mazo",
-            "Añade el Evento de Ciudad C-66 al mazo"
+            "Añade el evento de Camino R-39 al mazo",
+            "Añade el evento de Ciudad C-66 al mazo"
         ]
     },
     "gh2-59": {
@@ -3563,7 +3563,7 @@ export default {
         "name": "Guarida del Gremio",
         "rewards": [
             "+1 de prosperidad",
-            "Añade el Evento de Ciudad C-72 al mazo"
+            "Añade el evento de Ciudad C-72 al mazo"
         ]
     },
     "gh2-83": {
@@ -3602,7 +3602,7 @@ export default {
     "gh2-88": {
         "name": "Biblioteca arcana",
         "rewards": [
-            "Añade el Evento de Ciudad C-37 al mazo"
+            "Añade el evento de Ciudad C-37 al mazo"
         ]
     },
     "gh2-89": {
@@ -3667,14 +3667,14 @@ export default {
         "name": "Sintering Forge",
         "rewards": [
             "Obtén “Dawnblade” (Objeto 117)",
-            "Añade el Evento de Camino R-33 al mazo"
+            "Añade el evento de Camino R-33 al mazo"
         ]
     },
     "gh2-100": {
         "name": "Silence Falls",
         "rewards": [
             "+1 de prosperidad",
-            "Añade el Evento de Ciudad C-60 al mazo"
+            "Añade el evento de Ciudad C-60 al mazo"
         ]
     },
     "gh2-101": {
@@ -3684,10 +3684,10 @@ export default {
             "+2 de reputación de los Demonios",
             "-10 de reputación del Gremio de Mercaderes",
             "-10 de reputación de los Militares",
-            "Añade el Evento de Ciudad C-36 al mazo",
-            "Añade el Evento de Ciudad C-55 al mazo",
-            "Añade el Evento de Ciudad C-56 al mazo",
-            "Añade el Evento de Camino R-36 al mazo",
+            "Añade el evento de Ciudad C-36 al mazo",
+            "Añade el evento de Ciudad C-55 al mazo",
+            "Añade el evento de Ciudad C-56 al mazo",
+            "Añade el evento de Camino R-36 al mazo",
             "Abre el sobre “Demonios”"
         ]
     },

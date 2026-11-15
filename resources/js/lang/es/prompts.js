@@ -1,6 +1,6 @@
 export default {
     "dragon": {
-        "1": "Devolvéis el tesoro al Draco. Obtenéis el logro global “El Draco auxiliado”. Añadid el Evento de Ciudad 75 y el Evento de Camino 66 al mazo",
+        "1": "Devolvéis el tesoro al Draco. Obtenéis el logro global “El Draco auxiliado”. Añadid el evento de Ciudad 75 y el evento de Camino 66 al mazo",
         "2": "No ayudáis al Draco.",
         "title": "Amigo o enemigo",
         "text": "Recuperasteis el tesoro del Draco. ¿Se lo devolvéis al Draco o seguís las órdenes del Capitán de la Guardia e intentáis matar al Draco?"
@@ -159,14 +159,14 @@ export default {
         "1": "Autómata destruido, tecnología entregada a los infestores",
         "2": "Autómata destruido, tecnología conservada",
         "3": "Dispositivo de control mental desactivado",
-        "title": "La voluntad del Ladrón de mentes",
+        "title": "La voluntad del Ladrón mental",
         "text": "¿Qué hicisteis con el dispositivo de control mental?"
     },
     "hungryMawDead": {
         "1": "Sí",
         "2": "No",
-        "title": "Fauces hambrientas muertas",
-        "text": "¿Están muertas las Fauces hambrientas?"
+        "title": "Hambre Eterna muerta",
+        "text": "¿Ha muerto Hambre Eterna?"
     },
     "cratesLooted": {
         "1": "1",
