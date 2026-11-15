@@ -6,16 +6,16 @@ export default {
         "name": "獲得「塔盾」（道具 032）"
     },
     "gh-3": {
-        "name": "獲得「碎片甲」（道具 044）"
+        "name": "獲得「Splintmail」（道具 044）"
     },
     "gh-4": {
         "name": "獲得 15 金幣"
     },
     "gh-5": {
-        "name": "獲得「鎖子甲」（道具 023）"
+        "name": "獲得「Chainmail」（道具 023）"
     },
     "gh-6": {
-        "name": "獲得「鉤鏈」（道具 039）"
+        "name": "獲得「Hooked Chain」（道具 039）"
     },
     "gh-7": {
         "name": "隨機支線劇本"
@@ -96,16 +96,16 @@ export default {
         "name": "隨機道具設計圖"
     },
     "gh-33": {
-        "name": "獲得「重力網」（道具 019）"
+        "name": "獲得「Weighted Net」（道具 019）"
     },
     "gh-34": {
         "name": "獲得「生命項鏈」（道具 024）"
     },
     "gh-35": {
-        "name": "獲得「龍鱗靴」（道具 098）"
+        "name": "獲得「Drakescale Boots」（道具 098）"
     },
     "gh-36": {
-        "name": "「火箭靴」設計圖（道具 096）"
+        "name": "「Rocket Boots」設計圖（道具 096）"
     },
     "gh-37": {
         "name": "獲得 1 ✔"
@@ -120,7 +120,7 @@ export default {
         "name": "隨機道具設計圖"
     },
     "gh-41": {
-        "name": "獲得「黑刀」（道具 053）"
+        "name": "獲得「Black Knife」（道具 053）"
     },
     "gh-42": {
         "name": "隨機道具設計圖"
@@ -177,7 +177,7 @@ export default {
         "name": "隨機道具設計圖"
     },
     "gh-60": {
-        "name": "獲得「碎顱斧」（道具 113）"
+        "name": "獲得「Skullbane Axe」（道具 113）"
     },
     "gh-61": {
         "name": "獲得「Versatile Dagger」（道具 040）"
@@ -192,7 +192,7 @@ export default {
         "name": "獲得 30 金幣"
     },
     "gh-65": {
-        "name": "「角盔」設計圖（道具 107）"
+        "name": "「Horned Helm」設計圖（道具 107）"
     },
     "gh-66": {
         "name": "獲得「烈性炸彈」（道具 033）"
@@ -267,10 +267,10 @@ export default {
         "name": "獲得「Second Chance Ring」（道具 070）"
     },
     "fc-90": {
-        "name": "每人 10 金幣，閱讀第 49 頁的章節 75"
+        "name": "每人 10 金幣，閱讀第 49 頁的段落 75"
     },
     "fc-91": {
-        "name": "獲得 30 金幣與隊伍成就：「投機者」將城市事件 84 加入牌堆"
+        "name": "獲得 30 金幣與隊伍成就：「Opportunists」將城市事件 84 加入牌堆"
     },
     "fc-93": {
         "name": "「加速卷軸」（道具 159）"
@@ -390,7 +390,7 @@ export default {
         "name": "「Boneclad Shawl」（道具 25）"
     },
     "cs-19": {
-        "name": "獲得 ✓ 並產生一個狂野元素"
+        "name": "獲得 ✓ 並產生一個百搭元素"
     },
     "cs-20": {
         "name": "隨機一個「Stone」道具（道具 94-100）"
@@ -498,13 +498,13 @@ export default {
         "name": "獲得 Eventide Scepter 200。"
     },
     "fh-5": {
-        "name": "獲得斷爪 204。"
+        "name": "獲得 Severed Claw 204。"
     },
     "fh-6": {
         "name": "獲得 Opulent Shoes 199。"
     },
     "fh-7": {
-        "name": "獲得資料碟 227。"
+        "name": "獲得 Data Drive 227。"
     },
     "fh-8": {
         "name": "獲得三張拾取卡。"
@@ -522,7 +522,7 @@ export default {
         "name": "你發現了卡蜜拉的遺骸，以及她描繪一頭威嚴有角生物的畫作。獲得「布魯米克斯」戰役貼紙，並於三週後將 s 99.1 加入戰役日曆。"
     },
     "fh-13": {
-        "name": "獲得魚鉤 207。"
+        "name": "獲得 Fishhook 207。"
     },
     "fh-14": {
         "name": "獲得一個隨機道具設計圖。"
@@ -546,7 +546,7 @@ export default {
         "name": "獲得四張拾取卡。"
     },
     "fh-21": {
-        "name": "獲得引爆器設計圖 064。"
+        "name": "獲得 Detonator 設計圖 064。"
     },
     "fh-22": {
         "name": "獲得鱗甲設計圖 068。"
@@ -561,7 +561,7 @@ export default {
         "name": "獲得 1 屍蕈與 1 火焰果。"
     },
     "fh-26": {
-        "name": "獲得避雷針 223。"
+        "name": "獲得 Lightning Rod 223。"
     },
     "fh-27": {
         "name": "獲得兩張拾取卡與 {POISON}。"
@@ -588,10 +588,10 @@ export default {
         "name": "獲得 1 ✔"
     },
     "fh-35": {
-        "name": "獲得伸縮桿 228。"
+        "name": "獲得 Extendable Pole 228。"
     },
     "fh-36": {
-        "name": "獲得黑盒 222。"
+        "name": "獲得 Black Box 222。"
     },
     "fh-37": {
         "name": "獲得三張拾取卡。"
@@ -609,7 +609,7 @@ export default {
         "name": "獲得 Algox Carving 225。"
     },
     "fh-42": {
-        "name": "獲得巨劍 206。"
+        "name": "獲得 Giant Sword 206。"
     },
     "fh-43": {
         "name": "獲得四張拾取卡。"
@@ -630,7 +630,7 @@ export default {
         "name": "獲得三張拾取卡。"
     },
     "fh-49": {
-        "name": "獲得骨靴設計圖 071"
+        "name": "獲得 Bone Boots 設計圖 071"
     },
     "fh-50": {
         "name": "獲得 Cured Leather Armor 017。"
@@ -639,7 +639,7 @@ export default {
         "name": "閱讀 78.1。"
     },
     "fh-52": {
-        "name": "獲得泰坦釘 208。"
+        "name": "獲得 Titan Nail 208。"
     },
     "fh-53": {
         "name": "獲得 Eye of the Storm 239。"
@@ -648,13 +648,13 @@ export default {
         "name": "寶箱？那裡根本沒有寶箱。也許你該少喝一點了。"
     },
     "fh-55": {
-        "name": "獲得魚叉 205。"
+        "name": "獲得 Harpoon 205。"
     },
     "fh-56": {
         "name": "獲得一個隨機道具設計圖。"
     },
     "fh-57": {
-        "name": "這是什麼？一個空箱子，底部有一道鉛製活板門。你記下這個位置，以便之後帶著寶石的協助回來。解鎖鉛門 103。"
+        "name": "這是什麼？一個空箱子，底部有一道鉛製活板門。你記下這個位置，以便之後帶著寶石的協助回來。解鎖 The Lead Door 103。"
     },
     "fh-58": {
         "name": "獲得一個隨機道具設計圖。"
@@ -699,7 +699,7 @@ export default {
         "name": "獲得四張拾取卡。"
     },
     "fh-72": {
-        "name": "獲得活石設計圖 080。"
+        "name": "獲得 Living Stone 設計圖 080。"
     },
     "fh-73": {
         "name": "獲得一個隨機道具設計圖。"
@@ -732,10 +732,10 @@ export default {
         "name": "獲得 Oak Staff 設計圖 072。"
     },
     "fh-83": {
-        "name": "獲得三角帽 195。"
+        "name": "獲得 Tri-Corner Hat 195。"
     },
     "fh-84": {
-        "name": "獲得冰刺 221。"
+        "name": "獲得 Ice Shiv 221。"
     },
     "fh-85": {
         "name": "獲得 10 金幣"
@@ -795,7 +795,7 @@ export default {
         "name": "獲得「Unstable Explosives」（道具 99）"
     },
     "gh2-19": {
-        "name": "獲得「龍鱗靴」（道具 119）"
+        "name": "獲得「Drakescale Boots」（道具 119）"
     },
     "gh2-20": {
         "name": "獲得 25 金幣"

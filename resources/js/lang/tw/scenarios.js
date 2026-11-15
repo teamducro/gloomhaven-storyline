@@ -62,7 +62,7 @@ export default {
             "每人 15 金幣",
             "-2 聲望",
             "+2 繁榮度",
-            "「碎顱斧」設計圖（道具 113）"
+            "「Skullbane Axe」設計圖（道具 113）"
         ],
         "faq": [
             "勘誤：忽略劇本書中「頭目特殊 1」的文字，以頭目的屬性卡為準。"
@@ -72,7 +72,7 @@ export default {
         "name": "幽暗港廣場B",
         "rewards": [
             "+4 聲望",
-            "「碎顱斧」設計圖（道具 113）"
+            "「Skullbane Axe」設計圖（道具 113）"
         ],
         "faq": [
             "勘誤：門標記 1 應位於南側的門，而非北側的門。當南側的門被打開時，閱讀「1」下的文字。",
@@ -168,7 +168,7 @@ export default {
             "每人 100 金幣。這筆金幣必須立即用於附魔"
         ],
         "faq": [
-            "黑爾在先攻值 99 時進行回合，若處於創傷狀態則承受傷害。"
+            "黑爾在時序值 99 時進行回合，若處於創傷狀態則承受傷害。"
         ],
         "conclusion_faq": [
             "你可以將目前持有的金幣加入獎勵，但無法在城鎮中販售道具，因為獎勵在劇本結束後立即發生，早於你返回城鎮。",
@@ -184,7 +184,7 @@ export default {
             "每人 15 經驗值"
         ],
         "faq": [
-            "有生命值的門在可成為目標這方面，視同有生命值的障礙物：召喚物可以以它為焦點，它被視為擁有先攻值 99，等等。"
+            "有生命值的門在可成為目標這方面，視同有生命值的障礙物：召喚物可以以它為焦點，它被視為擁有時序值 99，等等。"
         ]
     },
     "gh-30": {
@@ -202,7 +202,7 @@ export default {
     "gh-33": {
         "name": "原生族軍械庫",
         "faq": [
-            "有生命值的門在可成為目標這方面，視同有生命值的障礙物：召喚物可以以它為焦點，它被視為擁有先攻值 99，等等。",
+            "有生命值的門在可成為目標這方面，視同有生命值的障礙物：召喚物可以以它為焦點，它被視為擁有時序值 99，等等。",
             "逃脫：當所有角色都站在出口格上，或在站於出口格時筋疲力盡時，你即完成該劇本。"
         ]
     },
@@ -278,7 +278,7 @@ export default {
             "{NOTE_42}"
         ],
         "faq": [
-            "和弦在可成為目標這方面，視同有生命值的障礙物：召喚物可以以它們為焦點，它們被視為擁有先攻值 99，等等。"
+            "和弦在可成為目標這方面，視同有生命值的障礙物：召喚物可以以它們為焦點，它們被視為擁有時序值 99，等等。"
         ]
     },
     "gh-43": {
@@ -606,7 +606,7 @@ export default {
             "每人 10 經驗值"
         ],
         "faq": [
-            "勘誤：在章節 1 的特殊規則中，「背叛者」應為「蒼白者」。對於頭目的兩個特殊能力，消耗元素只會影響召喚，特殊能力的其他部分無論如何都會發生。",
+            "勘誤：在段落 1 的特殊規則中，「背叛者」應為「蒼白者」。對於頭目的兩個特殊能力，消耗元素只會影響召喚，特殊能力的其他部分無論如何都會發生。",
             "天頂水晶與午夜之球不是真正的道具，在此劇本之外沒有任何用途。請使用編號指示物來記錄由誰持有。劇本結束時，無論勝敗，這兩個「目標」寶藏都會重置，以便再次拾取。"
         ]
     },
@@ -631,7 +631,7 @@ export default {
             "全隊 40 金幣"
         ],
         "faq": [
-            "閱讀章節 2 之後，第一組特殊規則結束，並由第二組取代。祭壇沒有生命值，無法被摧毀。"
+            "閱讀段落 2 之後，第一組特殊規則結束，並由第二組取代。祭壇沒有生命值，無法被摧毀。"
         ]
     },
     "gh-84": {
@@ -757,7 +757,7 @@ export default {
     "gh-208": {
         "name": "Caravan Escort",
         "rewards": [
-            "「太陽盾」（道具 140）"
+            "「Sun Shield」（道具 140）"
         ]
     },
     "gh-209": {
@@ -811,24 +811,24 @@ export default {
     "gh-217": {
         "name": "Elemental Secrets",
         "rewards": [
-            "「元素靴」（道具 149）"
+            "「Elemental Boots」（道具 149）"
         ]
     },
     "gh-218": {
-        "name": "籠中熊",
+        "name": "The Caged Bear",
         "rewards": [
             "「Staff of Command」（道具 150）"
         ]
     },
     "gh-219": {
-        "name": "時之砂",
+        "name": "The Sands of Time",
         "rewards": [
             "「Sword of the Sands」（道具 151）"
         ]
     },
     "fc-96": {
         "name": "Unexpected Visitors",
-        "requirements": "「黯」之終結（全域）完成",
+        "requirements": "\"黯\"之終結（全域）完成",
         "rewards": [
             "每人 10 經驗值",
             "將城市與道路事件 82 分別加入各自的牌堆"
@@ -861,7 +861,7 @@ export default {
         ]
     },
     "fc-99": {
-        "name": "餘震",
+        "name": "Aftershocks",
         "rewards": [
             [
                 "每人 5 金幣",
@@ -951,7 +951,7 @@ export default {
         "name": "Epilogue of a War",
         "rewards": [
             "每人 10 經驗值",
-            "「守護符」（道具 052）"
+            "「Protective Charm」（道具 052）"
         ]
     },
     "fc-110": {
@@ -1212,7 +1212,7 @@ export default {
         ]
     },
     "fh-4": {
-        "name": "冰之心",
+        "name": "Heart of Ice",
         "rewards": [
             [
                 "解鎖 {FF} 職業盒",
@@ -1267,7 +1267,7 @@ export default {
         ]
     },
     "fh-11": {
-        "name": "雪蔑峰",
+        "name": "Snowscorn Peak",
         "rewards": [
             "獲得 1 士氣",
             "獲得 1 靈感"
@@ -1342,7 +1342,7 @@ export default {
         ]
     },
     "fh-22": {
-        "name": "浮冰",
+        "name": "Ice Floes",
         "rewards": [
             "板塊 7-G 上每有一組五格水域板塊，全隊失去 1 {LUMBER}",
             "每人獲得 15 經驗值",
@@ -1433,7 +1433,7 @@ export default {
         "name": "Top of the Spire"
     },
     "fh-35": {
-        "name": "廢料坑",
+        "name": "Scrap Pit",
         "rewards": [
             "全隊獲得 2 {LUMBER}",
             "全隊獲得 2 {METAL}",
@@ -1508,7 +1508,7 @@ export default {
         ]
     },
     "fh-45": {
-        "name": "活冰川",
+        "name": "Living Glacier",
         "rewards": [
             "獲得 1 士氣",
             "每人獲得 1 ✔"
@@ -1529,7 +1529,7 @@ export default {
         ]
     },
     "fh-48": {
-        "name": "暴雪島",
+        "name": "Blizzard island",
         "rewards": [
             "每人獲得 10 金幣",
             "全隊獲得 2 {METAL}"
@@ -1611,7 +1611,7 @@ export default {
         "name": "Orphan's Core",
         "rewards": [
             "獲得 1 士氣",
-            "獲得「鑰匙卡」（道具 246）",
+            "獲得「Key Card」（道具 246）",
             "全隊獲得 3 {LUMBER}",
             "全隊獲得 3 {METAL}",
             "全隊獲得 3 {HIDE}",
@@ -1626,7 +1626,7 @@ export default {
         "rewards": [
             "獲得 2 士氣",
             "獲得 2 繁榮度",
-            "獲得「鑰匙卡」（道具 246）",
+            "獲得「Key Card」（道具 246）",
             "解鎖 {HV} 職業盒",
             "從所有前哨事件牌堆中移除所有 {UNFETTERED} 事件",
             "將事件 SO-49 加入夏季前哨牌堆，並將事件 WO-63 加入冬季前哨牌堆",
@@ -1647,10 +1647,10 @@ export default {
         ]
     },
     "fh-61": {
-        "name": "生與死",
+        "name": "Life and Death",
         "rewards": [
             "解鎖 {SH} 職業盒",
-            "於一週後將章節 140.3 加入日曆"
+            "於一週後將段落 140.3 加入日曆"
         ]
     },
     "fh-62": {
@@ -1733,7 +1733,7 @@ export default {
         ]
     },
     "fh-73": {
-        "name": "漂流物",
+        "name": "Flotsam",
         "rewards": [
             "全隊獲得 3 {LUMBER}",
             "於五週後將 146.1 加入日曆"
@@ -1752,11 +1752,11 @@ export default {
         ]
     },
     "fh-76": {
-        "name": "神化",
+        "name": "Apotheosis",
         "rewards": [
             [
                 "「Threat from the Deep」個人任務完成",
-                "獲得「浪刃」（道具 201）",
+                "獲得「Wave Blade」（道具 201）",
                 "將事件 B-18 加入船隻牌堆"
             ],
             []
@@ -1766,7 +1766,7 @@ export default {
         "name": "Fish King's Ascension",
         "rewards": [
             "「Threat from the Deep」個人任務完成",
-            "獲得「浪刃」（道具 201）",
+            "獲得「Wave Blade」（道具 201）",
             "將事件 B-19 加入船隻牌堆"
         ]
     },
@@ -1777,7 +1777,7 @@ export default {
         ]
     },
     "fh-79": {
-        "name": "聖物",
+        "name": "Relic",
         "rewards": [
             "獲得 3 士氣",
             "於三週後將 45.2 加入日曆"
@@ -1803,7 +1803,7 @@ export default {
         "name": "Expedition North",
         "rewards": [
             "獲得 2 繁榮度",
-            "將下列遺忘之環道具加入霜之哈芬的庫存：153、159 與 161"
+            "將下列遺忘之環道具加入寒霜港的庫存：153、159 與 161"
         ]
     },
     "fh-83": {
@@ -1832,7 +1832,7 @@ export default {
         ]
     },
     "fh-87": {
-        "name": "收藏品",
+        "name": "The Collection",
         "rewards": [
             [
                 "獲得 2 靈感"
@@ -1889,10 +1889,10 @@ export default {
         "name": "Midwinter Brawl",
         "rewards": [
             [
-                "獲得「小老鼠」（道具 235）"
+                "獲得「Small Rat」（道具 235）"
             ],
             [
-                "獲得「烤禽肉」（道具 79）"
+                "獲得「Roasted Fowl」（道具 79）"
             ]
         ]
     },
@@ -1929,7 +1929,7 @@ export default {
         ]
     },
     "fh-99": {
-        "name": "越獄",
+        "name": "Prison Break",
         "rewards": [
             "每人獲得 10 金幣"
         ]
@@ -1955,7 +1955,7 @@ export default {
         ]
     },
     "fh-103": {
-        "name": "鉛門",
+        "name": "The Lead Door",
         "rewards": [
             "每人獲得 1 ✔",
             "每人獲得 30 經驗值",
@@ -2023,7 +2023,7 @@ export default {
         ]
     },
     "fh-111": {
-        "name": "冰洞",
+        "name": "Ice Cave",
         "rewards": [
             "獲得「Cracked Mirror」（道具 236）"
         ]
@@ -2179,7 +2179,7 @@ export default {
         ]
     },
     "fh-123": {
-        "name": "泰坦",
+        "name": "The Titan",
         "rewards": [
             "獲得 1 士氣",
             "獲得 1 靈感"
@@ -2216,12 +2216,12 @@ export default {
             [
                 "全隊獲得 10 金幣",
                 "全隊獲得 2 {LUMBER}",
-                "獲得「三角帽」 195"
+                "獲得「Tri-Corner Hat」 195"
             ],
             [
                 "全隊獲得 10 金幣",
                 "全隊獲得 2 {LUMBER}",
-                "獲得「三角帽」 195",
+                "獲得「Tri-Corner Hat」 195",
                 "獲得 1 繁榮度"
             ]
         ]
@@ -2277,7 +2277,7 @@ export default {
         ]
     },
     "fh-133": {
-        "name": "閃電",
+        "name": "Bolt",
         "rewards": [
             "獲得「Cracked Idol」（道具 238）"
         ]
@@ -2301,7 +2301,7 @@ export default {
         "name": "Abandoned Hideout",
         "rewards": [
             "每人獲得 20 金幣",
-            "獲得「古幣」（道具 245）"
+            "獲得「Ancient Coin」（道具 245）"
         ]
     },
     "fh-137": {
@@ -2358,7 +2358,7 @@ export default {
     "fh-208": {
         "name": "Crumbling Descent",
         "rewards": [
-            "「山之心」（道具 255）"
+            "「Mountain's Heart」（道具 255）"
         ]
     },
     "fh-209": {
@@ -2398,13 +2398,13 @@ export default {
         ]
     },
     "fh-215": {
-        "name": "鍋爐室",
+        "name": "Boiler Room",
         "rewards": [
-            "「排氣靴」（道具 262）"
+            "「Exhaust Boots」（道具 262）"
         ]
     },
     "fh-216": {
-        "name": "濕活",
+        "name": "Wet Work",
         "rewards": [
             "「Warlords Skull」（道具 263）"
         ]
@@ -2605,7 +2605,7 @@ export default {
         "name": "Confronting the Past",
         "rewards": [
             "閱讀 {PAGE} 75（<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">終局</a>）",
-            "密語「Water Hydra」"
+            "密碼「Water Hydra」"
         ]
     },
     "cs-33": {
@@ -2931,7 +2931,7 @@ export default {
         "rewards": [
             [
                 "全隊 40 金幣",
-                "「嵌釘皮甲」設計圖（道具 gh-30）或「衝刺靴」設計圖（道具 gh-36）"
+                "「嵌釘皮甲」設計圖（道具 gh-30）或「Boots of Dashing」設計圖（道具 gh-36）"
             ],
             [
                 "每人 2 ✓",
@@ -2943,8 +2943,8 @@ export default {
         "name": "The Fall of Shadow's Respite",
         "rewards": [
             "「Rite of Ruin」設計圖（道具 RM05）",
-            "若在第八輪結束時至少有三隻腐靈族存活：5 金幣",
-            "若在第八輪結束時至少有五隻腐靈族存活：✓"
+            "若在第八輪結束時至少有三隻腐鼠族存活：5 金幣",
+            "若在第八輪結束時至少有五隻腐鼠族存活：✓"
         ]
     },
     "cs-RM7": {
@@ -3800,13 +3800,13 @@ export default {
         ]
     },
     "gh2-217": {
-        "name": "籠中熊",
+        "name": "The Caged Bear",
         "rewards": [
             "獲得「Staff of Command」（道具 169）"
         ]
     },
     "gh2-218": {
-        "name": "時之砂",
+        "name": "The Sands of Time",
         "rewards": [
             "獲得「Crawling Carapace」（道具 170）"
         ]

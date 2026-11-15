@@ -45,7 +45,7 @@ export default {
     "gh-516": {
         "name": "血海深仇",
         "progress": [
-            "殺死 15 名腐靈族。"
+            "殺死 15 名腐鼠族。"
         ]
     },
     "gh-517": {
@@ -69,7 +69,7 @@ export default {
     "gh-520": {
         "name": "行使光明",
         "progress": [
-            "在死靈法師的聖所中找到碎顱斧。",
+            "在死靈法師的聖所中找到 Skullbane Axe。",
             "用它殺死 7 隻骷髏、活化屍體或活化靈體。"
         ]
     },
@@ -413,7 +413,7 @@ export default {
             21
         ],
         "progress": [
-            "在 8 個不同的據點階段中，讀到事件或章節中出現的人名。"
+            "在 8 個不同的據點階段中，讀到事件或段落中出現的人名。"
         ]
     },
     "fh-7": {
@@ -551,7 +551,7 @@ export default {
             67
         ],
         "progress": [
-            "獲得「Abyss Axe」（道具 039）設計圖，並用它殺死 10 隻 Frozen Corpse、冰魂和/或 Living Doom。"
+            "獲得「Abyss Axe」（道具 039）設計圖，並用它殺死 10 隻 Frozen Corpse、Ice Wraith 和/或 Living Doom。"
         ]
     },
     "fh-20": {
@@ -709,7 +709,7 @@ export default {
     "gh2-15": {
         "name": "Escaping the Sin-Ra",
         "progress": [
-            "將城市事件 69 與 70 加入城市事件牌堆。獲得「黑卡」（道具 113）。它無法被出售。",
+            "將城市事件 69 與 70 加入城市事件牌堆。獲得「Black Card」（道具 113）。它無法被出售。",
             "完成 6 場支線劇本（劇本編號大於 56）。",
             "閱讀{SECTION} 128.2。"
         ]
@@ -766,7 +766,7 @@ export default {
         ]
     },
     "cq-cq01": {
-        "name": "征服你的心魔",
+        "name": "Conquer Your Demons",
         "unlock": "開啟任一職業或建築信封。你之後的角色對以惡魔為目標的任何攻擊加上{PIERCE} 1 和{WOUND}。",
         "progress": [
             "殺死 2 隻以此方式生成的大地惡魔。",
@@ -778,21 +778,21 @@ export default {
         ]
     },
     "cq-cq02": {
-        "name": "你的朋友很擔心",
-        "unlock": "開啟任一職業或建築信封。你可以永久失去因血脈中角色退休而獲得的額外特長標記。每失去一個特長標記，即獲得 30 金幣，可立即用於為你下一名角色購買附魔。",
+        "name": "Your Friends Are Concerned",
+        "unlock": "開啟任一職業或建築信封。你可以永久失去因血脈中角色退休而獲得的額外專長標記。每失去一個專長標記，即獲得 30 金幣，可立即用於為你下一名角色購買附魔。",
         "progress": [
             "從戰鬥目標獲得 30 個勾選記號。每場劇本多抽並保留一張戰鬥目標；除非全部達成，否則不會獲得任何勾選記號。"
         ]
     },
     "cq-cq03": {
-        "name": "戰鬥的後果",
+        "name": "Consequences of Combat",
         "unlock": "開啟任一職業或建築信封。你之後的角色每次在劇本中抽到{NULL_MODIFIER}時，獲得{STRENGTHEN}。",
         "progress": [
             "獲得 50 點克制：每場劇本一次，在抽取修正牌前降低攻擊的數值；每降低 1 點即獲得 1 點克制。"
         ]
     },
     "cq-cq04": {
-        "name": "戲劇性的結局",
+        "name": "A Dramatic Conclusion",
         "unlock": "開啟任一職業或建築信封。你之後的角色在任一盟友筋疲力盡時，可立即執行長休的步驟。",
         "progress": [
             "贏得 10 場劇本，且你最後兩次行動是一個上方遺失動作和一個下方遺失動作。"

@@ -183,7 +183,7 @@ export default {
         "name": "Through the Portal"
     },
     "gh-PO": {
-        "name": "投機者"
+        "name": "Opportunists"
     },
     "gh-GKIP": {
         "name": "Knowledge is Power"
@@ -252,10 +252,10 @@ export default {
         "name": "Severed Ties"
     },
     "gh-PA": {
-        "name": "共犯"
+        "name": "Accomplices"
     },
     "gh-PS": {
-        "name": "破壞者"
+        "name": "Saboteurs"
     },
     "cs-PCSOD": {
         "name": "Ooze Destroyed"
@@ -321,16 +321,16 @@ export default {
         "name": "Into the Forest"
     },
     "fh-CFP": {
-        "name": "火椒"
+        "name": "Firepepper"
     },
     "fh-CSS": {
         "name": "Shard Seeker"
     },
     "fh-CEJ": {
-        "name": "空罐"
+        "name": "Empty Jar"
     },
     "fh-CBJ": {
-        "name": "罐中蟲"
+        "name": "Bug in a Jar"
     },
     "fh-CUC": {
         "name": "Uncharged Core"
@@ -375,10 +375,10 @@ export default {
         "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "冰之心"
+        "name": "Heart of Ice"
     },
     "fh-PHOS": {
-        "name": "雪之心"
+        "name": "Heart of Snow"
     },
     "gh2-G2ATD": {
         "name": "Activating the Device"
