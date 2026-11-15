@@ -181,7 +181,7 @@ export default {
     "siege-cannon": "攻城炮",
     "sly-wolf": "Sly Wolf",
     "snow-imp": "Snow Imp",
-    "snowdancer": "Snowdancer",
+    "snowdancer": "風雪舞者",
     "song-of-the-deep": "Song of the Deep",
     "spitting-drake": "噴吐亞龍",
     "spymaster-argeise": "Spymaster Argeise",

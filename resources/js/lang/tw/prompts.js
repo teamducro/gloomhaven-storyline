@@ -21,7 +21,7 @@ export default {
     "shiftingGears": {
         "1": "所有敵人都已被殺死。",
         "2": "???",
-        "title": "巴斯蒂安的工坊",
+        "title": "巴斯提安的工坊",
         "text": "你們是否成功殺死了所有敵人？"
     },
     "searchPiecesOfAnArtifact": {
@@ -59,17 +59,17 @@ export default {
         "1": "將藥水交給瑟蘭德。",
         "2": "告訴瑟蘭德藥水已被毀掉。",
         "title": "你能信任瑟蘭德嗎？",
-        "text": "你要聽從多明尼克的遺言，還是屈服於自己的貪婪？"
+        "text": "你要聽從多米尼克的遺言，還是屈服於自己的貪婪？"
     },
     "capstoneTest": {
         "1": "殺死了一名具名敵人",
         "2": "殺死了兩名具名敵人",
         "3": "殺死了三名具名敵人",
-        "title": "測試你的功率調節器",
+        "title": "測試你的 Power Modulator",
         "text": "你在筋疲力盡之前成功殺死了多少名具名敵人？"
     },
     "unseenPlight": {
-        "1": "殺死了溝渠巨口，獲得「Guttermaw's Bounty」",
+        "1": "殺死了 Guttermaw，獲得「Guttermaw's Bounty」",
         "2": "救下了孩子們，完成「Feirgrin's Request」",
         "title": "殘破的家園與巢穴",
         "text": "你們帶來了死亡，還是拯救了生命？"
@@ -99,7 +99,7 @@ export default {
     "friendOfTheFishKing": {
         "1": "是",
         "2": "否",
-        "title": "魚王之友",
+        "title": "Friend of the Fish King",
         "text": "你們是否接受了魚王的提議？"
     },
     "acceptTheAscension": {
@@ -121,7 +121,7 @@ export default {
         "text": "你們是否給了拉圖絲卡她的分成？"
     },
     "peaceNegotiations": {
-        "1": "支持斯卡布威特（腐靈族）",
+        "1": "支持 Scabwit（腐靈族）",
         "2": "支持尤格朗（阿爾戈克族）",
         "title": "和平談判",
         "text": "你們在這場混戰中支持了誰？"
@@ -235,7 +235,7 @@ export default {
         "1": "章節 80.3",
         "2": "章節 106.1",
         "3": "章節 132.4",
-        "title": "追尋祕密",
+        "title": "Chasing Secrets",
         "text": "你讀的是哪一個結局章節？"
     }
 }

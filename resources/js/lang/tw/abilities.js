@@ -517,7 +517,7 @@ export default {
             "name": "引向死亡"
         },
         "multi-pronged-assault": {
-            "name": "multi-pronged assault"
+            "name": "多重打擊"
         },
         "natures-hunger": {
             "name": "自然之渴"
@@ -646,7 +646,7 @@ export default {
             "name": "波動耗能"
         },
         "winters-edge": {
-            "name": "winter's edge"
+            "name": "凜冬將至"
         },
         "brain-leech": {
             "name": "榨取腦隨"
@@ -1955,7 +1955,7 @@ export default {
             "name": "寒冷粉碎"
         },
         "empowered-link": {
-            "name": "empowered link"
+            "name": "賦能鏈接"
         },
         "eye-of-the-void": {
             "name": "虛空之眼"
@@ -6307,7 +6307,7 @@ export default {
             "name": "黑曜碎片"
         },
         "winters-edge": {
-            "name": "寒冬之鋒"
+            "name": "凜冬將至"
         },
         "pragmatic-reinforcement": {
             "name": "實效增援"
@@ -6664,7 +6664,7 @@ export default {
             "name": "return the favor"
         },
         "surgeons-satchel": {
-            "name": "surgeons satchel"
+            "name": "醫師行囊"
         },
         "exacting-anger": {
             "name": "exacting anger"

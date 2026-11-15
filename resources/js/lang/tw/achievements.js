@@ -36,7 +36,7 @@ export default {
         "name": "中和空間裂縫"
     },
     "gh-GAR": {
-        "name": "The Artifact: Recovered"
+        "name": "神器：找回"
     },
     "gh-GAR2": {
         "name": "The Artifact: Recovered (previously Lost)"
@@ -48,16 +48,16 @@ export default {
         "name": "遠古科技"
     },
     "gh-GAT2": {
-        "name": "Ancient Technology x2"
+        "name": "遠古科技 x2"
     },
     "gh-GAT3": {
-        "name": "Ancient Technology x3"
+        "name": "遠古科技 x3"
     },
     "gh-GAT4": {
-        "name": "Ancient Technology x4"
+        "name": "遠古科技 x4"
     },
     "gh-GAT5": {
-        "name": "Ancient Technology x5"
+        "name": "遠古科技 x5"
     },
     "gh-PTR": {
         "name": "穿越廢墟"
@@ -120,10 +120,10 @@ export default {
         "name": "終結腐化之源"
     },
     "gh-GEOC2": {
-        "name": "End of Corruption x2"
+        "name": "終結腐化之源 x2"
     },
     "gh-GEOC3": {
-        "name": "End of Corruption x3"
+        "name": "終結腐化之源 x3"
     },
     "gh-GAOO": {
         "name": "秩序覆滅"
@@ -132,7 +132,7 @@ export default {
         "name": "\"黯\"之終結"
     },
     "gh-PTTN": {
-        "name": "Through the Nest"
+        "name": "穿越腐鼠族巢穴"
     },
     "gh-PAMT": {
         "name": "獲得寶藏圖"

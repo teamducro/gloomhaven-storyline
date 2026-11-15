@@ -29,12 +29,12 @@ export default {
         "desc": "在你的回合中，獲得 {INVISIBLE}。"
     },
     "gh-6": {
-        "name": "Eagle-Eye Goggles",
+        "name": "鷹眼護目鏡",
         "source": "繁榮度 1",
         "desc": "在你的攻擊行動中，整個攻擊動作獲得優勢。"
     },
     "gh-7": {
-        "name": "Iron Helmet",
+        "name": "鐵質頭盔",
         "source": "繁榮度 1",
         "desc": "當你被攻擊時，敵人抽到的任何 {2X_WHITE} 攻擊修正牌都視為 {+0_WHITE}。"
     },
@@ -54,23 +54,23 @@ export default {
         "desc": "在你的近戰攻擊中，整個攻擊行動附加 {STUN}。"
     },
     "gh-11": {
-        "name": "Poison Dagger",
+        "name": "劇毒匕首",
         "source": "繁榮度 1",
         "desc": "在你的近戰攻擊中，單次攻擊附加 {POISON}。"
     },
     "gh-12": {
-        "name": "Minor Healing Potion",
+        "name": "次級治療藥水",
         "source": "繁榮度 1",
         "desc": "在你的回合中，執行一個「{HEAL} 3，自身」行動。"
     },
     "gh-13": {
-        "name": "Minor Stamina Potion",
+        "name": "次級活力藥水",
         "source": "繁榮度 1",
         "desc": "在你的回合中，{RECOVER} 至多兩張你的棄牌。",
         "faq": "[勘誤] 此道具應只能回收一張棄牌。此項更動將收錄於未來的擴充，但可套用於基礎遊戲。"
     },
     "gh-14": {
-        "name": "Minor Power Potion",
+        "name": "次級威力藥水",
         "source": "繁榮度 1",
         "desc": "在你的攻擊中，整個攻擊行動增加 +1 {ATTACK}。"
     },
@@ -100,12 +100,12 @@ export default {
         "desc": "在你的遠程攻擊中，單次攻擊附加 {IMMOBILIZE}。"
     },
     "gh-20": {
-        "name": "Minor Mana Potion",
+        "name": "次級魔力藥水",
         "source": "繁榮度 2",
         "desc": "在你的回合中，創造任意一個元素。{ANY}"
     },
     "gh-21": {
-        "name": "Stun Powder",
+        "name": "暈眩火藥",
         "source": "繁榮度 2",
         "desc": "在你的攻擊中，單次攻擊附加 {STUN}。"
     },
@@ -121,7 +121,7 @@ export default {
         "faq": "鎖子甲只為該次攻擊提供護盾，不會持續到本輪結束。"
     },
     "gh-24": {
-        "name": "Amulet of Life",
+        "name": "生命項鏈",
         "source": "繁榮度 3",
         "desc": "在你的回合中，{HEAL} 1 點傷害。"
     },
@@ -136,7 +136,7 @@ export default {
         "desc": "將單一目標近戰攻擊改為：{AOE.LINE_0_1_1}"
     },
     "gh-27": {
-        "name": "Major Healing Potion",
+        "name": "強效治療藥水",
         "source": "繁榮度 3",
         "desc": "在你的回合中，執行一個「{HEAL} 5，自身」行動。"
     },
@@ -151,12 +151,12 @@ export default {
         "desc": "每當你使用能力卡的預設下方行動時，改為執行 {MOVE} 3 行動，而非 {MOVE} 2 行動。"
     },
     "gh-30": {
-        "name": "Studded Leather",
+        "name": "嵌釘皮甲",
         "source": "繁榮度 4",
         "desc": "當你被攻擊時，攻擊者在該次攻擊中獲得劣勢，且你在該次攻擊中獲得 {SHIELD} 1。"
     },
     "gh-31": {
-        "name": "Hawk Helm",
+        "name": "獵鷹頭盔",
         "source": "繁榮度 4",
         "desc": "在你的遠程攻擊中，整個攻擊行動增加 +1 {RANGE}。"
     },
@@ -166,12 +166,12 @@ export default {
         "desc": "當你受到攻擊傷害時，該次攻擊獲得 {SHIELD} 2。"
     },
     "gh-33": {
-        "name": "Volatile Bomb",
+        "name": "烈性炸彈",
         "source": "繁榮度 4",
         "desc": "在你的單一目標遠程攻擊行動中，將該次攻擊改為：{AOE.CONE_1_1}"
     },
     "gh-34": {
-        "name": "Major Stamina Potion",
+        "name": "強效耐力藥水",
         "source": "繁榮度 4",
         "desc": "在你的回合中，{RECOVER} 至多三張你的棄牌。",
         "faq": "[勘誤] 此道具應只能回收兩張棄牌。此項更動將收錄於未來的擴充，但可套用於基礎遊戲。"
@@ -188,7 +188,7 @@ export default {
         "desc": "在你的移動行動中，該次移動增加 +3 {MOVE}。"
     },
     "gh-37": {
-        "name": "Robes of Evocation",
+        "name": "聖能長袍",
         "source": "繁榮度 5",
         "desc": "在你的攻擊中，{ANY_X} 使整個攻擊行動增加 +1 {ATTACK}。"
     },
@@ -213,7 +213,7 @@ export default {
         "desc": "在你的攻擊中，整個攻擊行動增加 +2 {ATTACK}。"
     },
     "gh-42": {
-        "name": "Ring of Haste",
+        "name": "疾速戒指",
         "source": "繁榮度 5",
         "desc": "在你的回合結束時，從手牌中打出一張牌，並立即執行該牌的下方行動。"
     },
@@ -231,7 +231,7 @@ export default {
         "name": "Pendant of Dark Pacts",
         "source": "繁榮度 6",
         "desc": "在你的回合中，{REFRESH} 兩件你已消耗的 {SMALL-ITEM} 道具。獲得 {CURSE}。",
-        "faq": "忽略道具效果的天賦無法使你免於被詛咒。"
+        "faq": "忽略道具效果的特長無法使你免於被詛咒。"
     },
     "gh-46": {
         "name": "尖刺盾",
@@ -459,7 +459,7 @@ export default {
         "desc": "在你的回合中，移除你身上的所有負面狀態。即使你處於 {STUN} 狀態也可使用。"
     },
     "gh-91": {
-        "name": "Steel Ring",
+        "name": "鋼質戒指",
         "source": "隨機道具",
         "desc": "當你受到以你為目標的攻擊傷害時，該次攻擊獲得 {SHIELD} 4。"
     },
@@ -504,7 +504,7 @@ export default {
         "desc": "無視危險地形的傷害效果，且在你進入過危險地形格的任何回合中，執行一個「{HEAL} 2，自身」行動。"
     },
     "gh-100": {
-        "name": "Robes of Summoning",
+        "name": "召喚長袍",
         "source": "{SCENARIO 31}（寶藏 #69）",
         "desc": "在你的回合中，執行一個「{HEAL} 2，目標為任意一名已召喚的盟友」行動。"
     },
@@ -514,12 +514,12 @@ export default {
         "desc": "從你的攻擊修正牌組中移除 2 張 {-1}。"
     },
     "gh-102": {
-        "name": "Sacrificial Robes",
+        "name": "祭祀法袍",
         "source": "城市事件 40",
         "desc": "在你的遠程攻擊中，承受 3 點傷害，使整個攻擊行動增加 +1 {ATTACK}。"
     },
     "gh-103": {
-        "name": "Drakescale Armor",
+        "name": "龍鱗鎧甲",
         "source": "{SCENARIO 34}（寶藏 #23）",
         "desc": "你免疫 {POISON} 和 {WOUND}。"
     },
@@ -529,7 +529,7 @@ export default {
         "desc": "在你接下來受到的五次以你為目標的攻擊傷害中，每次獲得 {SHIELD} 1。"
     },
     "gh-105": {
-        "name": "Flea-Bitten Shawl",
+        "name": "跳蚤斗篷",
         "source": "城市事件 30",
         "desc": "當敵人以你為目標，你被視為擁有 99 的時序值。",
         "faq": "此道具並不會真正改變角色的先攻值，因此不影響其召喚物的先攻值。它只會改變怪物在評估目標時對待該角色的方式。"
@@ -671,7 +671,7 @@ export default {
     "gh-132": {
         "name": "Power Core",
         "source": "{SCENARIO 67}",
-        "desc": "召喚鋼鐵構造體。",
+        "desc": "召喚 Steel Construct。",
         "faq": "此卡視為持續效果，置於啟動區域，直到召喚物被殺死或此卡被移除（移除召喚物並消耗道具）。如果此卡被重新整備，且該卡有啟動中的召喚物，則該召喚物消失。"
     },
     "gh-133": {
@@ -771,27 +771,27 @@ export default {
         "desc": "在你的近戰攻擊中，整個攻擊行動附加 {POISON} 和 {WOUND}。"
     },
     "gh-152": {
-        "name": "Ring of Duality",
+        "name": "二元戒指",
         "source": "{SCENARIO 97} 的獎勵\n段落 125「上鎖的箱子」（書中）",
         "desc": "在執行任一能力卡的上方行動後，你可以立即執行同一張卡的下方行動。如果兩個行動都會觸發遺失卡圖示 {CONSUMED}，則無法使用此道具。"
     },
     "gh-153": {
-        "name": "Minor Antidote",
+        "name": "次級解毒藥劑",
         "source": "{SCENARIO 99} 的獎勵",
         "desc": "接下來三次你將獲得 {POISON} 時，防止該狀態。"
     },
     "gh-154": {
-        "name": "Major Antidote",
+        "name": "高級解毒藥劑",
         "source": "{SCENARIO 105} 的獎勵",
         "desc": "接下來五次你將獲得 {POISON} 時，防止該狀態。"
     },
     "gh-155": {
-        "name": "Curseward Armor",
+        "name": "防護詛咒鎧甲",
         "source": "{SCENARIO 108} 的獎勵",
         "desc": "即使此道具已使用，你仍免疫 {CURSE}。在你接下來受到的三次以你為目標的攻擊傷害中，每次獲得 {SHIELD} 1。在你的攻擊修正牌組中加入 3 張 {-1}。"
     },
     "gh-156": {
-        "name": "Elemental Claymore",
+        "name": "元素闊劍",
         "source": "未知",
         "desc": "在你的近戰攻擊中，{ANY_X} 使單次攻擊增加 +2 {ATTACK}。"
     },
@@ -801,17 +801,17 @@ export default {
         "desc": "在你的遠程攻擊中，單次攻擊增加 +2 {ATTACK}，並附加 {CURSE} 和 {WOUND}。"
     },
     "gh-158": {
-        "name": "Rejuvenation Greaves",
+        "name": "回春護脛",
         "source": "{SCENARIO 111}（寶藏 #82）",
         "desc": "在你的移動行動中，該次移動增加 +2 {MOVE} 並獲得 {REGENERATE}。"
     },
     "gh-159": {
-        "name": "Scroll of Haste",
+        "name": "加速卷軸",
         "source": "{SCENARIO 103}（寶藏 #81）",
         "desc": "在任一名盟友的移動行動中，該次移動增加 +2 {MOVE}。"
     },
     "gh-160": {
-        "name": "Cutpurse Dagger",
+        "name": "扒手短匕",
         "source": "未知",
         "desc": "在自己的行動輪中殺死1個怪物時，獲得1個金幣標記。"
     },
@@ -821,27 +821,27 @@ export default {
         "desc": "在你的單一目標近戰攻擊行動中，該次攻擊增加 {RANGE} 3。"
     },
     "gh-162": {
-        "name": "Rift Device",
+        "name": "裂隙裝置",
         "source": "{SCENARIO 112} 的獎勵\n段落 62「機械華美」（書中）。",
         "desc": "在你的回合中，{TELEPORT} 至你周圍 4 格內任一未被占據的格子。"
     },
     "gh-163": {
-        "name": "Crystal Tiara",
+        "name": "水晶花冠",
         "source": "{SCENARIO 110} 的獎勵",
         "desc": "當你進行長休或短休時，獲得 {STRENGTHEN}。"
     },
     "gh-164": {
-        "name": "Basin of Prophecy",
+        "name": "預言之盆",
         "source": "單人劇本獎勵 - {DR}",
         "desc": "當你從任何牌組中揭示牌時，額外揭示一張牌。"
     },
     "jotl-1": {
-        "name": "Eagle-Eye Goggles",
+        "name": "鷹眼護目鏡",
         "source": "{SCENARIO 2} 的獎勵",
         "desc": "在你的攻擊行動中，整個攻擊動作獲得優勢。"
     },
     "jotl-2": {
-        "name": "Iron Helmet",
+        "name": "鐵質頭盔",
         "source": "{SCENARIO 2} 的獎勵",
         "desc": "當你被攻擊時，敵人抽到的任何 {2X_WHITE} 攻擊修正牌都視為 {+0_WHITE}。"
     },
@@ -851,7 +851,7 @@ export default {
         "desc": "在你的回合中，本輪剩餘時間獲得 {SHIELD} 1。"
     },
     "jotl-4": {
-        "name": "Studded Leather",
+        "name": "嵌釘皮甲",
         "source": "{SCENARIO 2} 的獎勵",
         "desc": "當你被攻擊時，攻擊者在該次攻擊中獲得劣勢，且你在該次攻擊中獲得 {SHIELD} 1。"
     },
@@ -877,7 +877,7 @@ export default {
         "desc": "在你的遠程攻擊中，單次攻擊附加 {STUN}。"
     },
     "jotl-9": {
-        "name": "Poison Dagger",
+        "name": "劇毒匕首",
         "source": "{SCENARIO 2} 的獎勵",
         "desc": "在你的近戰攻擊中，單次攻擊附加 {POISON}。"
     },
@@ -887,32 +887,32 @@ export default {
         "desc": "在你的單一目標近戰攻擊能力中，攻擊 2 格內的任意一名敵人。"
     },
     "jotl-11": {
-        "name": "Healing Potion",
+        "name": "治療藥水",
         "source": "{SCENARIO 2} 的獎勵",
         "desc": "在你的回合中，執行一個「{HEAL} 3，自身」行動。"
     },
     "jotl-12": {
-        "name": "Stamina Potion",
+        "name": "耐力藥水",
         "source": "{SCENARIO 2} 的獎勵",
         "desc": "在你的回合中，將你棄牌堆中的一張卡牌返回手牌。"
     },
     "jotl-13": {
-        "name": "Power Potion",
+        "name": "威力藥水",
         "source": "{SCENARIO 2} 的獎勵",
         "desc": "在你的攻擊中，整個攻擊行動增加 +1 {ATTACK}。"
     },
     "jotl-14": {
-        "name": "Mana Potion",
+        "name": "魔力藥水",
         "source": "{SCENARIO 4} 的獎勵\n{SCENARIO 4}（寶藏 #16）",
         "desc": "在你的回合中，注入任意一個元素。{ANY}"
     },
     "jotl-15": {
-        "name": "Amulet of Life",
+        "name": "生命項鏈",
         "source": "{SCENARIO 9} 的獎勵",
         "desc": "在你的回合中，執行一個「{HEAL} 1，自身」行動。"
     },
     "jotl-16": {
-        "name": "Robes of Evocation",
+        "name": "聖能長袍",
         "source": "{SCENARIO 9} 的獎勵",
         "desc": "在你的攻擊中，{ANY_X} 使整個攻擊行動增加 +1 {ATTACK}。"
     },
@@ -927,22 +927,22 @@ export default {
         "desc": "在你的單一目標近戰攻擊行動中，將該次攻擊改為：{AOE.CONE_0_1}"
     },
     "jotl-19": {
-        "name": "Black Candle",
+        "name": "黑色蠟燭",
         "source": "{SCENARIO 9} 的獎勵",
         "desc": "在你的遠程攻擊中，單次攻擊附加 {CURSE}。"
     },
     "jotl-20": {
-        "name": "Stun Powder",
+        "name": "暈眩火藥",
         "source": "{SCENARIO 9} 的獎勵",
         "desc": "在你的攻擊中，單次攻擊附加 {STUN}。"
     },
     "jotl-21": {
-        "name": "Hawk Helm",
+        "name": "獵鷹頭盔",
         "source": "{SCENARIO 15} 的獎勵",
         "desc": "在你的遠程攻擊中，整個攻擊行動增加 +1 {RANGE}。"
     },
     "jotl-22": {
-        "name": "Bladed Armor",
+        "name": "鋒刃護甲",
         "source": "{SCENARIO 15} 的獎勵",
         "desc": "當你受到攻擊傷害時，該次攻擊獲得 {SHIELD} 2，且攻擊者受到 2 點傷害。"
     },
@@ -952,27 +952,27 @@ export default {
         "desc": "在你的移動行動中，單次移動增加 +2 {MOVE}。"
     },
     "jotl-24": {
-        "name": "Volatile Bomb",
+        "name": "烈性炸彈",
         "source": "{SCENARIO 15} 的獎勵",
         "desc": "在你的單一目標遠程攻擊行動中，將該次攻擊改為：{AOE.CONE_1_1}"
     },
     "jotl-25": {
-        "name": "Barbed Chain",
+        "name": "倒刺鎖鏈",
         "source": "{SCENARIO 15} 的獎勵",
         "desc": "在你的遠程攻擊中，單次攻擊附加 {PULL} 2。"
     },
     "jotl-26": {
-        "name": "Oak Charm",
+        "name": "橡樹符咒",
         "source": "{SCENARIO 15} 的獎勵",
         "desc": "在你的回合中，執行一個「{BLESS}，{RANGE} 5」行動。"
     },
     "jotl-27": {
-        "name": "Fateful Compass",
+        "name": "宿命羅盤",
         "source": "{SCENARIO 3}（寶藏 #10）",
         "desc": "在你的回合中，強制 {RANGE} 3 內的一名敵人在由你操控的情況下執行一個「{MOVE} 2」行動。"
     },
     "jotl-28": {
-        "name": "Flea-Bitten Shawl",
+        "name": "跳蚤斗篷",
         "source": "{SCENARIO 8} 的獎勵\n{SCENARIO 12} 的獎勵",
         "desc": "當敵人以你為目標，你被視為擁有 99 的時序值。",
         "faq": "此道具並不會真正改變角色的先攻值，因此不影響其召喚物的先攻值。它只會改變怪物在評估目標時對待該角色的方式。"
@@ -983,22 +983,22 @@ export default {
         "desc": "當你受到攻擊傷害時，該次攻擊獲得 {SHIELD} 2。"
     },
     "jotl-30": {
-        "name": "Ring of Haste",
+        "name": "疾速戒指",
         "source": "{SCENARIO 21}（寶藏 #11）",
         "desc": "在你的回合結束時，從手牌中打出一張卡牌，並立即執行該卡的下方動作。"
     },
     "jotl-31": {
-        "name": "Ring of Strength",
+        "name": "力量戒指",
         "source": "{SCENARIO 19} 的獎勵\n{SCENARIO 18}（寶藏 #2）",
         "desc": "在你的回合中，獲得 {STRENGTHEN}。"
     },
     "jotl-32": {
-        "name": "Ring of Restoration",
+        "name": "恢復戒指",
         "source": "失落貨物 #F，來自 {SCENARIO 20}",
         "desc": "在你的回合中，執行一個「{HEAL} 3，{RANGE} 5」行動。"
     },
     "jotl-33": {
-        "name": "Steel Ring",
+        "name": "鋼質戒指",
         "source": "{SCENARIO 22} 的獎勵",
         "desc": "當你受到攻擊傷害時，該次攻擊獲得 {SHIELD} 4。"
     },
@@ -1008,7 +1008,7 @@ export default {
         "desc": "在你的攻擊中，整個攻擊行動附加 {WOUND}。"
     },
     "jotl-35": {
-        "name": "Robes of Command",
+        "name": "律令長袍",
         "source": "{SCENARIO 24} 的獎勵",
         "desc": "在你的回合中，一名相鄰盟友可以執行一個「{ATTACK} 2」行動。"
     },
@@ -1671,7 +1671,7 @@ export default {
     "fh-39": {
         "name": "Abyss Axe",
         "source": "工匠 7\n個人任務 19",
-        "desc": "在你的攻擊能力中，針對冰凍屍體、冰魂或活體末日，一次攻擊增加 +3 {ATTACK.fh} 和 {PIERCE.fh} 1。"
+        "desc": "在你的攻擊能力中，針對 Frozen Corpse、冰魂或 Living Doom，一次攻擊增加 +3 {ATTACK.fh} 和 {PIERCE.fh} 1。"
     },
     "fh-40": {
         "name": "穿心弓",
@@ -1772,7 +1772,7 @@ export default {
     "fh-59": {
         "name": "Charm of Expertise",
         "source": "隨機藍圖",
-        "desc": "在場景開始時，於本場景中，獲得一個你尚未獲得的、角色表上 1 勾選的天賦。"
+        "desc": "在場景開始時，於本場景中，獲得一個你尚未獲得的、角色表上 1 勾選的特長。"
     },
     "fh-60": {
         "name": "Cloak of Many Pockets",
@@ -1892,17 +1892,17 @@ export default {
         "desc": "在你的移動能力中，進入任一格子後，賦予所有相鄰敵人 {IMMOBILIZE.fh}。"
     },
     "fh-83": {
-        "name": "Healing Potion",
+        "name": "治療藥水",
         "source": "煉金",
         "desc": "在你的回合中，執行 {HEAL.fh} 3 自身"
     },
     "fh-84": {
-        "name": "Stamina Potion",
+        "name": "耐力藥水",
         "source": "煉金",
         "desc": "在你的回合中，從你的棄牌堆中 {RECOVER.fh} 一張 1 級卡。"
     },
     "fh-85": {
-        "name": "Power Potion",
+        "name": "威力藥水",
         "source": "煉金",
         "desc": "在你的回合中，你所有的攻擊增加 +1 {ATTACK.fh}。"
     },
@@ -1972,12 +1972,12 @@ export default {
         "desc": "在你的回合中，對自身執行 {WOUND.fh}、{POISON.fh}"
     },
     "fh-99": {
-        "name": "Major Healing Potion",
+        "name": "強效治療藥水",
         "source": "煉金",
         "desc": "在你的回合中，執行 {HEAL.fh} 6 自身"
     },
     "fh-100": {
-        "name": "Major Stamina Potion",
+        "name": "強效耐力藥水",
         "source": "煉金",
         "desc": "在你的回合中，從你的棄牌堆中 {RECOVER.fh} 一張牌。"
     },
@@ -2077,7 +2077,7 @@ export default {
         "desc": "在你的回合中，對自身執行：{WOUND.fh}、{POISON.fh}、{IMMOBILIZE.fh}、{DISARM.fh}"
     },
     "fh-120": {
-        "name": "Amulet of Life",
+        "name": "生命項鏈",
         "source": "初始可用",
         "desc": "在你的回合中，執行 {HEAL.fh} 1 自身"
     },
@@ -2112,7 +2112,7 @@ export default {
         "desc": "在你的遠程攻擊能力中，一次攻擊附加 {IMMOBILIZE.fh}。"
     },
     "fh-127": {
-        "name": "Poison Dagger",
+        "name": "劇毒匕首",
         "source": "初始可用",
         "desc": "在你的近戰攻擊能力中，一次攻擊附加 {POISON.fh}。"
     },
@@ -2122,12 +2122,12 @@ export default {
         "desc": "當你因攻擊而承受 {DAMAGE.fh} 時，該次攻擊獲得 {SHIELD.fh} 1。"
     },
     "fh-129": {
-        "name": "Eagle-Eye Goggles",
+        "name": "鷹眼護目鏡",
         "source": "貿易站 2",
         "desc": "在你的攻擊能力中，所有攻擊獲得優勢。"
     },
     "fh-130": {
-        "name": "Iron Helmet",
+        "name": "鐵質頭盔",
         "source": "貿易站 2",
         "desc": "當你被攻擊時，將敵人抽到的任何 {2X_MODIFIER} 攻擊修正牌視為 {+0_MODIFIER}。"
     },
@@ -2182,7 +2182,7 @@ export default {
         "desc": "在你的回合中，賦予你的一名召喚物：{SHIELD.fh} 2。{ROUND}"
     },
     "fh-141": {
-        "name": "Studded Leather",
+        "name": "嵌釘皮甲",
         "source": "貿易站 3",
         "desc": "當你被攻擊時，在抽取攻擊修正牌之前，攻擊者在該次攻擊中獲得劣勢，且你在該次攻擊中獲得 {SHIELD.fh} 1。"
     },
@@ -2248,7 +2248,7 @@ export default {
         "desc": "在你的單一目標近戰攻擊能力中，將該能力的目標改為：*line_0_1_1*"
     },
     "fh-154": {
-        "name": "Volatile Bomb",
+        "name": "烈性炸彈",
         "source": "貿易站 4",
         "desc": "在你的單一目標遠程攻擊能力中，將該能力的目標改為：{AOE.CONE_1_1}"
     },
@@ -2263,7 +2263,7 @@ export default {
         "desc": "當你短休時，{RECOVER.fh} 至多三件你已使用的道具。"
     },
     "fh-157": {
-        "name": "Steel Ring",
+        "name": "鋼質戒指",
         "source": "珠寶匠 1",
         "desc": "當你因攻擊而承受 {DAMAGE.fh} 時，該次攻擊獲得 {SHIELD.fh} 4。"
     },
@@ -2303,7 +2303,7 @@ export default {
         "desc": "當你短休時，{RECOVER.fh} 至多三件你已使用的道具，選擇休息期間要失去哪張牌，並對自身執行 {HEAL.fh} 2。"
     },
     "fh-165": {
-        "name": "Ring of Haste",
+        "name": "疾速戒指",
         "source": "珠寶匠 3",
         "desc": "在你的回合結束時，從手牌中打出一張牌，並執行該牌的下方行動。"
     },
@@ -3428,12 +3428,12 @@ export default {
     "gh2-117": {
         "name": "Dawnblade",
         "source": "{SCENARIO 99} 的獎勵",
-        "desc": "在你的回合中，如果 {DARK} 為強盛或衰弱，你的下一次近戰攻擊增加 +1 {ATTACK.fh}。如果你攜帶了暮光烙刃，{LIGHT}。"
+        "desc": "在你的回合中，如果 {DARK} 為強盛或衰弱，你的下一次近戰攻擊增加 +1 {ATTACK.fh}。如果你攜帶了 Duskbrand，{LIGHT}。"
     },
     "gh2-118": {
         "name": "Duskbrand",
         "source": "道路事件 33",
-        "desc": "在你的回合中，如果 {LIGHT} 為強盛或衰弱，你的下一次近戰攻擊增加 +1 {ATTACK.fh}。如果你攜帶了黎明之刃，{DARK}。"
+        "desc": "在你的回合中，如果 {LIGHT} 為強盛或衰弱，你的下一次近戰攻擊增加 +1 {ATTACK.fh}。如果你攜帶了 Dawnblade，{DARK}。"
     },
     "gh2-119": {
         "name": "龍鱗靴",
@@ -3513,7 +3513,7 @@ export default {
     },
     "gh2-134": {
         "name": "動力核心",
-        "desc": "召喚鋼鐵構造體"
+        "desc": "召喚 Steel Construct"
     },
     "gh2-135": {
         "name": "共鳴水晶",
