@@ -193,7 +193,7 @@ export default {
         "1": "Seção 18.3",
         "2": "Seção 44.3",
         "3": "Seção 51.1",
-        "title": "Escalada do Icecrag",
+        "title": "Icecrag Ascent",
         "text": "Qual seção de conclusão vocês leram?"
     },
     "gh2-27": {
@@ -222,13 +222,13 @@ export default {
         "4": "Seção 78.6",
         "5": "Seções 78.6 e 81.5",
         "6": "Seção 81.5",
-        "title": "Arsenal dos Savvas",
+        "title": "Savvas Armory",
         "text": "Qual seção de conclusão vocês leram?"
     },
     "gh2-34": {
         "1": "Seção 36.4",
         "2": "Seção 89.2",
-        "title": "Tumba Envelhecida",
+        "title": "Timeworn Tomb",
         "text": "Qual seção de conclusão vocês leram?"
     },
     "gh2-43": {

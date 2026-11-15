@@ -2929,7 +2929,7 @@ export default {
         "faq": "Impede apenas condições aplicadas por inimigos, não as autoinfligidas."
     },
     "gh2-19": {
-        "name": "Mantos do Guardião",
+        "name": "Warden's Robes",
         "source": "Prosperidade 2",
         "desc": "Quando uma de suas invocações sofrer {DAMAGE.fh} de um ataque, essa invocação ganha {SHIELD.fh} 2 para o ataque."
     },
@@ -2944,7 +2944,7 @@ export default {
         "desc": "Durante o seu turno, adicione +1 {ATTACK.fh} a todos os seus ataques."
     },
     "gh2-22": {
-        "name": "Lança de Ferro",
+        "name": "Iron Spear",
         "source": "Prosperidade 2",
         "desc": "Durante o seu turno, uma das suas habilidades de ataque corpo a corpo de alvo único pode ter como alvo um inimigo a dois hexágonos de distância."
     },
@@ -2979,13 +2979,13 @@ export default {
         "desc": "Nas próximas três fontes de {DAMAGE.fh} de ataques contra você, ganhe {SHIELD.fh} 1 para os ataques."
     },
     "gh2-29": {
-        "name": "Caneleiras Ágeis",
+        "name": "Nimble Legguards",
         "source": "Prosperidade 3",
         "desc": "Quando um aliado adjacente fosse ser alvo de um ataque, você é o alvo em vez dele, independentemente do alcance e da linha de visão.",
         "faq": "Se você estiver invisível e não puder ser alvo, não pode redirecionar o ataque para si mesmo."
     },
     "gh2-30": {
-        "name": "Arco Quebra-Armadura",
+        "name": "Armorbane Bow",
         "source": "Prosperidade 3",
         "desc": "Durante o seu turno, adicione {PIERCE.fh} 3 a todos os seus ataques à distância."
     },
@@ -3060,7 +3060,7 @@ export default {
         "desc": "Depois da sua habilidade de ataque à distância, realize: {ATTACK.fh} 1, {TARGET.fh} 1 alvo da habilidade de ataque em qualquer {RANGE.fh}, {PIERCE.fh} 1"
     },
     "gh2-45": {
-        "name": "Poção Elementar Maior",
+        "name": "Major Element Potion",
         "source": "Prosperidade 5\nEvento de Estrada 52",
         "desc": "Durante o seu turno, {ANY} {ANY}."
     },
@@ -3085,7 +3085,7 @@ export default {
         "desc": "Depois de se mover 4 ou mais hexágonos no seu turno, adicione +1 {ATTACK.fh} ao seu próximo ataque corpo a corpo neste turno."
     },
     "gh2-50": {
-        "name": "Mantos do Carvalho",
+        "name": "Robes of the Oak",
         "source": "Prosperidade 6",
         "desc": "Durante o seu turno, realize: {HEAL.fh} 3, Um aliado, {RANGE.fh} 1"
     },
@@ -3105,7 +3105,7 @@ export default {
         "desc": "Durante o seu turno, adicione +2 {ATTACK.fh} a todos os seus ataques."
     },
     "gh2-54": {
-        "name": "Diadema da Santidade",
+        "name": "Circlet of Sanctity",
         "source": "Prosperidade 7",
         "desc": "Depois dos próximos três ataques contra um aliado a até {RANGE.fh} 2, vire esta carta.",
         "backDesc": "Durante o seu turno, realize: {WARD.fh}, {RANGE.fh} 3 e, em seguida, vire esta carta."
@@ -3121,7 +3121,7 @@ export default {
         "desc": "Ao final do turno, se você tiver se movido 1 ou menos hexágonos durante o seu turno, ganhe {SHIELD.fh} 1 durante a rodada."
     },
     "gh2-57": {
-        "name": "Anel do Estrategista",
+        "name": "Strategist's Ring",
         "source": "Prosperidade 7",
         "desc": "Ao final do turno, jogue uma carta da sua mão e realize todas as habilidades persistentes e obrigatórias da ação superior ou inferior da carta."
     },
@@ -3202,7 +3202,7 @@ export default {
         "backDesc": "Depois das próximas três habilidades de ataque que você realizar a até {RANGE.fh} 2 de um ou mais aliados, vire esta carta."
     },
     "gh2-73": {
-        "name": "Manto da Invocação",
+        "name": "Mantle of Summoning",
         "source": "Reputação da Guilda Mercantil 13",
         "desc": "Durante o seu turno, conceda a uma de suas invocações: {SHIELD.fh} 2 {ROUND}"
     },
