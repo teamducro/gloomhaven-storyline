@@ -3,34 +3,34 @@ export default {
         "name": "Primeiros Passos"
     },
     "gh-PJP": {
-        "name": "Jekserah's Plans"
+        "name": "Planos de Jekserah"
     },
     "gh-PDB": {
         "name": "Recompensa Sombria"
     },
     "gh-GTMF": {
-        "name": "The Merchant Flees"
+        "name": "O Mercador Foge"
     },
     "gh-GTDI": {
         "name": "Os Mortos Invadem"
     },
     "gh-PADE": {
-        "name": "A Demon's Errand"
+        "name": "A Tarefa de um Demônio"
     },
     "gh-GCRE": {
-        "name": "City Rule: Economic"
+        "name": "Governo da Cidade: Econômico"
     },
     "gh-GCRM": {
-        "name": "City Rule: Militaristic"
+        "name": "Governo da Cidade: Militar"
     },
     "gh-GEOI": {
         "name": "Fim da Invasão"
     },
     "gh-GTPE": {
-        "name": "The Power of Enhancement"
+        "name": "O Poder do Aprimoramento"
     },
     "gh-PSC": {
-        "name": "Stonebreaker's Censer"
+        "name": "Incensário do Quebra-Pedras"
     },
     "gh-GTRN": {
         "name": "A Fenda Neutralizada"
@@ -39,25 +39,25 @@ export default {
         "name": "Artefato: Recuperado"
     },
     "gh-GAR2": {
-        "name": "The Artifact: Recovered (previously Lost)"
+        "name": "Artefato: Recuperado (perdido anteriormente)"
     },
     "gh-GAL": {
         "name": "Artefato: Perdido"
     },
     "gh-GAT": {
-        "name": "Ancient Technology"
+        "name": "Tecnologia Antiga"
     },
     "gh-GAT2": {
-        "name": "Ancient Technology x2"
+        "name": "Tecnologia Antiga x2"
     },
     "gh-GAT3": {
-        "name": "Ancient Technology x3"
+        "name": "Tecnologia Antiga x3"
     },
     "gh-GAT4": {
-        "name": "Ancient Technology x4"
+        "name": "Tecnologia Antiga x4"
     },
     "gh-GAT5": {
-        "name": "Ancient Technology x5"
+        "name": "Tecnologia Antiga x5"
     },
     "gh-PTR": {
         "name": "Através das Ruínas"
@@ -75,7 +75,7 @@ export default {
         "name": "Um Convite"
     },
     "gh-GTED": {
-        "name": "The Edge of Darkness"
+        "name": "O Limiar da Escuridão"
     },
     "gh-PTSV": {
         "name": "O Cetro e a Voz"
@@ -96,13 +96,13 @@ export default {
         "name": "O Serpe Ajudado"
     },
     "gh-GCRD": {
-        "name": "City Rule: Demonic"
+        "name": "Governo da Cidade: Demoníaco"
     },
     "gh-PTTT": {
         "name": "Através da Trincheira"
     },
     "gh-PRA": {
-        "name": "Redthorn's Aid"
+        "name": "Ajuda de Espinho Vermelho"
     },
     "gh-PATD": {
         "name": "Através da Divisão"
@@ -114,16 +114,16 @@ export default {
         "name": "A Voz Silenciada"
     },
     "gh-GWB": {
-        "name": "Water-Breathing"
+        "name": "Respiração Aquática"
     },
     "gh-GEOC": {
         "name": "Fim da Corrupção"
     },
     "gh-GEOC2": {
-        "name": "End of Corruption x2"
+        "name": "Fim da Corrupção x2"
     },
     "gh-GEOC3": {
-        "name": "End of Corruption x3"
+        "name": "Fim da Corrupção x3"
     },
     "gh-GAOO": {
         "name": "Aniquilação da Ordem"

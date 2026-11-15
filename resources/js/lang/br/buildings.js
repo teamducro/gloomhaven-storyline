@@ -200,7 +200,7 @@ export default {
             {
                 "level": 1,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 1 {HIDE} coletivo",
                 "passive": "",
                 "rewards": "Adicione os itens 001 a 010 ao estoque de itens"
@@ -208,7 +208,7 @@ export default {
             {
                 "level": 2,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 1 {HIDE} coletivo",
                 "passive": "",
                 "rewards": "+1 de prosperidade, adicione os itens 011 a 015 ao estoque de itens"
@@ -216,7 +216,7 @@ export default {
             {
                 "level": 3,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 1 {HIDE} coletivo",
                 "passive": "",
                 "rewards": "+1 de prosperidade, adicione os itens 016 a 020 ao estoque de itens"
@@ -224,7 +224,7 @@ export default {
             {
                 "level": 4,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 2 {HIDE} coletivos",
                 "passive": "",
                 "rewards": "+1 de prosperidade, adicione os itens 021 a 025 ao estoque de itens"
@@ -232,7 +232,7 @@ export default {
             {
                 "level": 5,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 2 {HIDE} coletivos",
                 "passive": "",
                 "rewards": "+1 de prosperidade, adicione os itens 026 a 030 ao estoque de itens"
@@ -240,7 +240,7 @@ export default {
             {
                 "level": 6,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 2 {HIDE} coletivos",
                 "passive": "",
                 "rewards": "+1 de prosperidade, adicione os itens 031 a 035 ao estoque de itens"
@@ -248,7 +248,7 @@ export default {
             {
                 "level": 7,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 3 {HIDE} coletivos",
                 "passive": "",
                 "rewards": "+1 de prosperidade, adicione os itens 036 a 040 ao estoque de itens"
@@ -256,7 +256,7 @@ export default {
             {
                 "level": 8,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 3 {HIDE} coletivos",
                 "passive": "",
                 "rewards": "+1 de prosperidade, adicione os itens 041 a 045 ao estoque de itens"
@@ -264,7 +264,7 @@ export default {
             {
                 "level": 9,
                 "operations": "",
-                "downtime": "Fabricar itens",
+                "downtime": "Fabrique itens",
                 "wrecked": "Perca 3 {HIDE} coletivos",
                 "passive": "",
                 "rewards": "+1 de prosperidade, adicione os itens 046 a 050 ao estoque de itens"
@@ -551,7 +551,7 @@ export default {
             },
             {
                 "level": 3,
-                "requires": "Requer 3 Moedas Antigas (Item 245)",
+                "requires": "Requer 3 Ancient Coins (Item 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Perca 1 de moral",
