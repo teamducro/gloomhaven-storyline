@@ -579,7 +579,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Потеряйте 1 боевой дух",
-                "passive": "Доступ к милостям Толоса",
+                "passive": "Доступ к милостям Tholos",
                 "rewards": "+1 к процветанию"
             }
         ]
