@@ -255,10 +255,10 @@ export default {
         "name": "Szenvedj el 3 sebzést, kapd meg a {POISON} állapotot, és szerezz 10 aranyat"
     },
     "fc-86": {
-        "name": "Old fel a Jós {DR} szóló küldetést: “Forecast of the Inevitable” (lásd a fő könyv 25. oldalát)"
+        "name": "Old fel a Látnok {DR} szóló küldetést: “Forecast of the Inevitable” (lásd a fő könyv 25. oldalát)"
     },
     "fc-87": {
-        "name": "Szenvedj el 2 sebzést, kapd meg a CURSE állapotot, és szerezz 15 aranyat"
+        "name": "Szenvedj el 2 sebzést, kapd meg az ÁTOK állapotot, és szerezz 15 aranyat"
     },
     "fc-88": {
         "name": "Szerezz 1 ✓"
@@ -381,7 +381,7 @@ export default {
         "name": "“Shifting Compass” (Felszerelés 32)"
     },
     "cs-16": {
-        "name": "Hajtsd végre a “Heal 6, Self” akciót, és kapd meg a {POISON} állapotot"
+        "name": "Hajtsd végre a “Gyógyítás 6, Magadra” akciót, és kapd meg a {POISON} állapotot"
     },
     "cs-17": {
         "name": "“Concussion Mine” (Felszerelés 31)"
@@ -462,7 +462,7 @@ export default {
         "name": "“War Pick” (Felszerelés 13)"
     },
     "cs-43": {
-        "name": "10 tapasztalati pont, és frissítsd fel az összes elhasznált felszerelést"
+        "name": "10 tapasztalati pont, és forgasd vissza az összes elhasznált felszerelést"
     },
     "cs-44": {
         "name": "“Mana Medicine” (Felszerelés 60)"

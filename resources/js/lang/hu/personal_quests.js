@@ -26,7 +26,7 @@ export default {
         "name": "Finding the Cure",
         "unlock": "Nyisd ki az alábbi borítékot: X",
         "progress": [
-            "Ölj meg nyolc erdei impet.",
+            "Ölj meg nyolc Forest Impet.",
             "Fejezd be: {SCENARIO 59}."
         ]
     },
@@ -63,14 +63,14 @@ export default {
     "gh-519": {
         "name": "Battle Legend",
         "progress": [
-            "Szerezz tizenöt ✔-t a teljesített jártasságokból."
+            "Szerezz tizenöt ✔-t a teljesített csatacélokból."
         ]
     },
     "gh-520": {
         "name": "Implement of Light",
         "progress": [
             "Találd meg a Skullbane Axe-t a nekromata szentélyében.",
-            "Használd arra, hogy megölj hét Élő Csontot, Élő Holttestet vagy Élő Szellemet."
+            "Használd arra, hogy megölj hét Living Bones, Living Corpse vagy Living Spirit szörnyet."
         ]
     },
     "gh-521": {
@@ -89,12 +89,12 @@ export default {
     "gh-523": {
         "name": "Aberrant Slayer",
         "progress": [
-            "Ölj meg egy láng démont.",
-            "Ölj meg egy fagy démont.",
-            "Ölj meg egy szél démont.",
-            "Ölj meg egy föld démont.",
-            "Ölj meg egy éj démont.",
-            "Ölj meg egy nap démont."
+            "Ölj meg egy Flame Demont.",
+            "Ölj meg egy Frost Demont.",
+            "Ölj meg egy Wind Demont.",
+            "Ölj meg egy Earth Demont.",
+            "Ölj meg egy Night Demont.",
+            "Ölj meg egy Sun Demont."
         ]
     },
     "gh-524": {
@@ -162,9 +162,9 @@ export default {
     "gh-533": {
         "name": "The Perfect Poison",
         "progress": [
-            "Ölj meg három iszapot.",
-            "Ölj meg három lurkert.",
-            "Ölj meg három köpködő gyíkot."
+            "Ölj meg három Ooze-t.",
+            "Ölj meg három Lurkert.",
+            "Ölj meg három Spitting Drake-et."
         ]
     },
     "cs-330": {
@@ -208,7 +208,7 @@ export default {
     "cs-336": {
         "name": "Creatures in the light",
         "progress": [
-            "Ölj meg húsz iszapot, erdei impet vagy fekete impet."
+            "Ölj meg húsz Ooze, Forest Imp vagy Black Imp szörnyet."
         ]
     },
     "cs-337": {
@@ -434,7 +434,7 @@ export default {
             88
         ],
         "progress": [
-            "Ölj meg két algox őrt.",
+            "Ölj meg két Algox Guardot.",
             "Ölj meg két Lurker Clawcrushert.",
             "Ölj meg két Robotic Boltshootert."
         ]
@@ -511,7 +511,7 @@ export default {
             85
         ],
         "progress": [
-            "Adományozz 70 aranyat a Nagy Tölgy templomának."
+            "Adományozz 70 aranyat a Temple of the Great Oak épületnek."
         ]
     },
     "fh-16": {
@@ -531,7 +531,7 @@ export default {
             67
         ],
         "progress": [
-            "Szerezz 16 {CHECK}-et a teljesített jártasságokból."
+            "Szerezz 16 {CHECK}-et a teljesített csatacélokból."
         ]
     },
     "fh-18": {
@@ -733,7 +733,7 @@ export default {
     "gh2-18": {
         "name": "Csatalegenda",
         "progress": [
-            "Szerezz 12 pipát a teljesített jártasságokból.",
+            "Szerezz 12 pipát a teljesített csatacélokból.",
             "Olvasd el: {SECTION} 23.3."
         ]
     },
@@ -747,7 +747,7 @@ export default {
     "gh2-20": {
         "name": "Jámborság mindenben",
         "progress": [
-            "Adományozz 120 aranyat a Nagy Tölgy templomának.",
+            "Adományozz 120 aranyat a Temple of the Great Oak épületnek.",
             "Olvasd el: {SECTION} 51.5."
         ]
     },
@@ -769,19 +769,19 @@ export default {
         "name": "Győzd le a démonaidat",
         "unlock": "Nyiss ki egy tetszőleges osztály- vagy épületborítékot. A jövőbeli karaktereid {PIERCE} 1 és {WOUND} bónuszt kapnak a démonokat célzó támadásaikhoz.",
         "progress": [
-            "Ölj meg két így megidézett föld démont.",
-            "Ölj meg két így megidézett láng démont.",
-            "Ölj meg két így megidézett fagy démont.",
-            "Ölj meg két így megidézett éj démont.",
-            "Ölj meg két így megidézett nap démont.",
-            "Ölj meg két így megidézett szél démont."
+            "Ölj meg két így megidézett Earth Demont.",
+            "Ölj meg két így megidézett Flame Demont.",
+            "Ölj meg két így megidézett Frost Demont.",
+            "Ölj meg két így megidézett Night Demont.",
+            "Ölj meg két így megidézett Sun Demont.",
+            "Ölj meg két így megidézett Wind Demont."
         ]
     },
     "cq-cq02": {
         "name": "A barátaid aggódnak",
         "unlock": "Nyiss ki egy tetszőleges osztály- vagy épületborítékot. Véglegesen elveszítheted a családfádban visszavonult karakterektől szerzett bónusz jártasságjelöléseket. Minden elveszített jártasságjelölésért szerezz 30 aranyat, amelyet azonnal a következő karaktered fejlesztéseire kell költeni.",
         "progress": [
-            "Szerezz 30 pipát jártasságokból. Minden küldetésben húzz és tarts meg egy további jártasságot; csak akkor szerzel pipát, ha mindegyiket teljesíted."
+            "Szerezz 30 pipát csatacélokból. Minden küldetésben húzz és tarts meg egy további csatacélt; csak akkor szerzel pipát, ha mindegyiket teljesíted."
         ]
     },
     "cq-cq03": {

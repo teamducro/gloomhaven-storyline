@@ -203,7 +203,7 @@ export default {
                 "downtime": "Felszerelések készítése",
                 "wrecked": "Veszíts el közösen 1 {HIDE}-ot",
                 "passive": "",
-                "rewards": "add hozzá a 001–010 felszereléseket a felszerelés-készlethez"
+                "rewards": "Add hozzá a 001–010 felszereléseket a felszerelés-készlethez"
             },
             {
                 "level": 2,
@@ -551,7 +551,7 @@ export default {
             },
             {
                 "level": 3,
-                "requires": "3 Ősi érme szükséges (Felszerelés 245)",
+                "requires": "3 Ancient Coin szükséges (Felszerelés 245)",
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Veszíts el 1 morált",
@@ -707,7 +707,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nem teljesíthetők kihívások",
-                "passive": "Húzz egy kihívást, és tarts meg legfeljebb egyet-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "passive": "Húzz egy kihívást, és tarts meg legfeljebb egyet. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
                 "rewards": "+1 Városfejlettség, olvasd el: 189.1. szakasz"
             },
             {
@@ -715,7 +715,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nem teljesíthetők kihívások",
-                "passive": "Húzz kettőt kihívást, és tarts meg legfeljebb egyet-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "passive": "Húzz két kihívást, és tarts meg legfeljebb egyet. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
                 "rewards": "+1 Városfejlettség"
             },
             {
@@ -723,7 +723,7 @@ export default {
                 "operations": "",
                 "downtime": "",
                 "wrecked": "Nem teljesíthetők kihívások",
-                "passive": "Húzz hármat kihívást, és tarts meg legfeljebb kettőt-t. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
+                "passive": "Húzz három kihívást, és tarts meg legfeljebb kettőt. Amikor a kihívások paklija kész, olvasd el: 190.1. szakasz",
                 "rewards": "+1 Városfejlettség"
             }
         ]

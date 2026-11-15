@@ -65,11 +65,11 @@ export default {
         "1": "Egy nevesített ellenséget megöltetek",
         "2": "Két nevesített ellenséget megöltetek",
         "3": "Három nevesített ellenséget megöltetek",
-        "title": "Tesztelitek az Erőmodulátort",
+        "title": "Teszteljétek a Power Modulatort",
         "text": "Hány nevesített ellenséget sikerült megölni a kimerülésetek előtt?"
     },
     "unseenPlight": {
-        "1": "Megöltétek a Guttermaw-t, és megszereztétek a Guttermaw jutalmát",
+        "1": "Megöltétek a Guttermaw-t, és megszereztétek a Guttermaw's Bounty eredményt",
         "2": "Megmentettétek a gyerekeket, teljesítve Feigrin kérését",
         "title": "Romba dőlt otthonok és odúk",
         "text": "Halált hoztatok, vagy életeket mentettetek?"
@@ -99,14 +99,14 @@ export default {
     "friendOfTheFishKing": {
         "1": "Igen",
         "2": "Nem",
-        "title": "A Halkirály barátja",
-        "text": "Elfogadtátok a Halkirály ajánlatát?"
+        "title": "Friend of the Fish King",
+        "text": "Elfogadtátok a Fish King ajánlatát?"
     },
     "acceptTheAscension": {
         "1": "Igen",
         "2": "Nem",
         "title": "A felemelkedés elfogadása",
-        "text": "Elfogadtátok a Halkirály felemelkedését?"
+        "text": "Elfogadtátok a Fish King felemelkedését?"
     },
     "brothersSurvival": {
         "1": "Igen",
@@ -165,8 +165,8 @@ export default {
     "hungryMawDead": {
         "1": "Igen",
         "2": "Nem",
-        "title": "Az Éhes Száj halott",
-        "text": "Halott az Éhes Száj?"
+        "title": "A Hungry Maw halott",
+        "text": "Halott a Hungry Maw?"
     },
     "cratesLooted": {
         "1": "1",
@@ -235,7 +235,7 @@ export default {
         "1": "80.3. szakasz",
         "2": "106.1. szakasz",
         "3": "132.4. szakasz",
-        "title": "Titkok nyomában",
+        "title": "Chasing Secrets",
         "text": "Melyik végkifejlet szakaszt olvastátok?"
     }
 }
