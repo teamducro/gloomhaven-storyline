@@ -819,7 +819,7 @@ export default {
             }
         },
         "3": {
-            "name": "Catacumbas Luminosas",
+            "name": "Glowing Catacombs",
             "sections": {
                 "1": "Vocês ficaram ao lado dos Falantes da Neve na batalha contra os Falantes do Gelo, matando o líder dos Falantes do Gelo. Os Falantes da Neve, que acreditam se comunicar com seu deus Geryuu por meio da neve que cai, estão em guerra com os Falantes do Gelo, que acreditam poder se comunicar com Geryuu por meio do gelo que emerge do solo. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "2": "A Chefe dos Falantes da Neve, Lanprul, pediu que vocês a ajudassem a pôr fim à guerra com os Falantes do Gelo, para garantir a segurança de Frosthaven contra os Algox. Ela avistou um grupo de Falantes do Gelo ao norte do Bosque Fogo-Branco que lançará um contra-ataque se não for detido.",
@@ -863,7 +863,7 @@ export default {
             }
         },
         "5": {
-            "name": "Templo da Libertação",
+            "name": "Temple of Liberation",
             "sections": {
                 "1": "Vocês ficaram ao lado dos Falantes do Gelo na batalha contra os Falantes da Neve, matando o líder dos Falantes da Neve. Os Falantes do Gelo acreditam poder se comunicar com seu deus Geryuu por meio do gelo que emerge do solo. Eles estão em guerra com os Falantes da Neve, que acreditam poder se comunicar com seu deus Geryuu por meio da neve que cai. O Snowscorn Peak é sagrado para ambos os grupos.",
                 "2": "O Chefe dos Falantes do Gelo, Elland, acredita que Geryuu trouxe vocês para ajudar a derrotar os Falantes da Neve e prometeu suspender temporariamente as hostilidades contra Frosthaven.",
@@ -984,7 +984,7 @@ export default {
             "name": "A Torre de Cristal",
             "sections": {
                 "1": "Depois de resolver a situação imediata dos Algox, a prefeita Satha mencionou que estranhos constructos de metal marchavam pelos ermos. Batedores os seguiram pelo Bosque Fogo-Branco e depois por um vale congelado. Ela pediu que vocês investigassem.",
-                "2": "Vocês correram por um vale perigoso, perseguidos por lobos, até que ele se abriu nos Campos de Cristal, cheios de enormes pilares de cristal tão altos quanto árvores.",
+                "2": "Vocês correram por um vale perigoso, perseguidos por lobos, até que ele se abriu nos Crystal Fields, cheios de enormes pilares de cristal tão altos quanto árvores.",
                 "3": "Vocês notaram uma torre imensa, maior e de cor mais escura que as demais, e decidiram dar uma olhada.",
                 "4": "Vocês derrotaram o Chaos Lieutenant que guardava a entrada, que proclamou que eles estavam se preparando para destruir seu posto avançado. Vocês encontraram tanto uma escada que descia quanto um feixe de luz que os levaria para cima.",
                 "5": "Vocês optaram por descer.",
@@ -1009,7 +1009,7 @@ export default {
             "name": "O Orphan",
             "sections": {
                 "1": "Depois de resolver a situação imediata dos Algox, a prefeita Satha mencionou que estranhos constructos de metal marchavam pelos ermos. Batedores os seguiram pelo Bosque Fogo-Branco e depois por um vale congelado. Ela pediu que vocês investigassem.",
-                "2": "Vocês correram por um vale perigoso, perseguidos por lobos, até que ele se abriu nos Campos de Cristal, cheios de enormes pilares de cristal tão altos quanto árvores.",
+                "2": "Vocês correram por um vale perigoso, perseguidos por lobos, até que ele se abriu nos Crystal Fields, cheios de enormes pilares de cristal tão altos quanto árvores.",
                 "3": "Vocês notaram um espinho distante que parecia um pouco curioso, mais curto e mais largo que os demais, e decidiram dar uma olhada.",
                 "4": "Era uma construção antiga de algum tipo. Vocês a arrombaram e encontraram máquinas quebradas, vidro e entulho. Encontraram um elevador antigo e conseguiram ligá-lo, descendo muito fundo. No fundo havia uma passarela em duas direções.",
                 "5": "Vocês foram direto para um alerta de segurança, para enfrentá-lo de frente.",
@@ -1060,7 +1060,7 @@ export default {
                 "4": "Ele mostrou a vocês como as carapaças dos Desacorrentados são tratadas e mencionou que Logren usou o mesmo tratamento para fazer um “símbolo de poder”, ou simplesmente “selos”. Ele quer construir um dispositivo para criar esses selos, mas precisa de “ferro estelar”. Com a ajuda dele, vocês foram às Montanhas de Pescoço de Cobre procurar um pouco.",
                 "5": "Lá, vocês encontraram Terrores Profundos e uma Orquídea chamada Estilhaço da Lua, que os ajudou a superar seus pesadelos. Ela os apresentou a Terra, outra Orquídea; parecia que elas esperavam por Crain. Elas alertaram vocês sobre a iminente emergência do “Arauto”, um deus aprisionado de malícia e rancor, que dorme nas profundezas da terra. Ele vem corrompendo tudo ao redor e enfraquecendo os selos que o prendem. Terra se ofereceu para fornecer a Crain um pouco desse metal estelar.",
                 "6": "Crain e Terra começaram a trabalhar em Frosthaven, mas Crain primeiro precisava de algumas melhorias em Frosthaven. No fim, com sua própria oficina pronta, ele encarregou vocês de fazer as pazes com os Espreitadores para que eles não destruíssem seus estabilizadores giroscópicos e fizessem sua máquina explodir. Feito isso, ele precisou pesquisar animais, de um Craftsman melhor para ajudar na construção e até de muitos aventureiros para entrevistar. Por fim, com tudo isso feito, ele concluiu sua máquina e vocês o ajudaram a desembaraçar as instruções de calibração. Em vez de esperar por ajuda, Crain carregou o dispositivo por conta própria… e parece que funcionou! Ele estava pronto para fortalecer os selos.",
-                "7": "O primeiro Selo ficava bem abaixo dos Campos de Cristal. Enquanto Crain trabalhava, o Arauto enviou guardiões para repelir vocês. Vocês mantiveram os monstros à distância e ganharam tempo para ele. Por fim, Crain encontrou o local certo e ativou sua máquina. Novas linhas surgiram no desenho do Selo. Parecia que o plano de Terra poderia funcionar. Vocês partiram para a fonte de vida dos Savvas.",
+                "7": "O primeiro Selo ficava bem abaixo dos Crystal Fields. Enquanto Crain trabalhava, o Arauto enviou guardiões para repelir vocês. Vocês mantiveram os monstros à distância e ganharam tempo para ele. Por fim, Crain encontrou o local certo e ativou sua máquina. Novas linhas surgiram no desenho do Selo. Parecia que o plano de Terra poderia funcionar. Vocês partiram para a fonte de vida dos Savvas.",
                 "8": "O segundo selo ficava em outro túnel, entre onde o Arauto dorme e a fonte de vida dos Savvas; por ali, ele vinha corrompendo os Savvas. Vocês esperavam que fortalecer o selo preservasse essa fonte de vida e libertasse os Savvas da corrupção. Felizmente funcionou, e os Savvas foram libertados de sua influência. Crain havia avisado que o Arauto poderia tentar emergir assim que o segundo selo fosse reparado, mas que ainda não sabia onde estava o terceiro selo. Acontece que ele estava em Frosthaven.",
                 "9": "O colossal membro do Arauto parou, quebrado e castigado, e por um momento parecia que cairia e esmagaria todos vocês. Então Crain e Terra, ajoelhados sobre o selo do Arauto, reativaram o que restava do dispositivo de Crain. Uma explosão de luz se espalhou e susteve o membro caído no ar, até que ele inteiro foi arrancado da realidade e desapareceu. Frosthaven permaneceu de pé, com as muralhas arruinadas e os defensores castigados, enquanto uma nova neve começava a cair."
             },
@@ -1092,7 +1092,7 @@ export default {
             }
         },
         "13": {
-            "name": "O Carvalho Verdadeiro",
+            "name": "The True Oak",
             "sections": {
                 "1": "Vocês ouviram rumores de um Carvalho Verdadeiro em algum lugar do Norte, plantado por um profeta a partir de uma bolota do Grande Carvalho da capital. Vocês têm coletado amostras de madeira.",
                 "2": "Um botânico Savvas local, Listerius, estudou essas amostras de madeira. Ele enviou vocês à Floresta Radiante para coletar também amostras de solo. Com elas, ele estava confiante de que poderia triangular a localização. Depois que vocês as levaram de volta, Listerius começou a analisá-las.",
@@ -1115,7 +1115,7 @@ export default {
                 "5": "No caminho de volta, o navio foi atacado e destruído por ondas enormes, controladas de algum modo pelo Fish King dos Abaeli. O Fish King atacou vocês e usou a primeira escama para roubar a segunda do bloco.",
                 "6": "Após uma breve luta, o Fish King reconheceu a força de vocês. Ele pediu que o ajudassem a recuperar a terceira escama; em troca, prometeu trazer paz aos mares e protegê-los dos Espreitadores.",
                 "7": "Vocês recusaram a oferta dele.",
-                "8": "Vocês aceitaram a oferta dele e se tornaram amigos do Fish King.",
+                "8": "Vocês aceitaram a oferta dele e se tornaram Friend of the Fish King.",
                 "9": "Embora Lihrey ainda estivesse vivo, estava gravemente ferido e precisou de algumas semanas para se recuperar antes de encontrar o último pedaço da escama. Com o tempo, porém, ele o encontrou, nas mãos de um clã mais antigo de Algox.",
                 "10": "Infelizmente, o Fish King chegou primeiro e roubou o terceiro pedaço da escama. Lihrey disse a vocês, porém, que seu dispositivo agora poderia servir para rastrear o covil do Fish King, então nem tudo estava perdido.",
                 "11": "Vocês obtiveram o terceiro pedaço da escama para o Fish King e, apesar dos avisos de Lihrey, foram entregá-lo a seu aliado abael.",
@@ -1370,7 +1370,7 @@ export default {
             }
         },
         "78": {
-            "name": "O Problema dos Espreitadores",
+            "name": "The Lurker Problem",
             "sections": {
                 "1": "Uma figura muito estranha e sedenta, com um sobretudo molhado, quis contratar vocês para um trabalho. Disse que Espreitadores mataram sua família. Deu a vocês a direção do local, disse que os encontraria lá e foi embora abruptamente. Totalmente normal. Nada suspeito.",
                 "2": "Vocês limparam a estrutura infestada de Espreitadores junto ao mar, de uma forma ou de outra, e voltaram à prefeitura. O homem do sobretudo nunca apareceu para pagar, e Glint só resmungou sobre o chão que o homem havia encharcado e o verniz de que ele precisava."
@@ -1381,7 +1381,7 @@ export default {
             }
         },
         "82": {
-            "name": "Expedição ao Norte",
+            "name": "Expedition North",
             "sections": {
                 "1": "Uma Aesther desconhecida visitou seus sonhos e pediu que vocês encontrassem seus amigos em algum lugar das Montanhas Imperiais, a oeste da Passagem Congelada. Eles vinham ver vocês, mas ficaram presos em uma nevasca enorme.",
                 "2": "Vocês chegaram à beira da tempestade nada natural e resgataram os mercenários presos nela, aquecendo-os em uma fogueira em uma caverna no caminho de volta pela passagem. Quando mencionaram a Aesther, eles a reconheceram como Cassandra, uma antiga integrante de seu grupo de aventureiros. Vocês os levaram de volta a Frosthaven para se recuperarem."
@@ -1392,7 +1392,7 @@ export default {
             }
         },
         "83": {
-            "name": "Salmoura Crescente",
+            "name": "Rising Brine",
             "sections": {
                 "1": "Glint, o Inox arquivista do Town Hall, distribuiu todas as boas missões para outros grupos. Por fim, encontrou uma para vocês, que diz: “Caverna que cheira a peixe.” Um cartógrafo encontrou uma caverna que cheira a peixe. Fica longe.",
                 "2": "Com os porcos-piranha derrotados, vocês recolheram as peças enferrujadas e remaram contra a maré crescente, alcançando a luz do dia e depois Frosthaven, exaustos. Glint examinou o material recuperado, declarou que era tudo lixo e o empurrou da mesa."
@@ -1403,7 +1403,7 @@ export default {
             }
         },
         "84": {
-            "name": "Aqui Há Gosmas",
+            "name": "Here There Be Oozes",
             "sections": {
                 "1": "Glint, o Inox arquivista, deu a vocês uma recompensa. Houve três relatos de gosmas, e elas aparentemente comeram um rebanho de ovelhas. Glint acha que não há nada nisso, mas vocês sabem melhor.",
                 "2": "Vocês destruíram a gosma, acabando cobertos de gosma da cabeça aos pés, e coletaram uma amostra da substância em um frasco. Também notaram o estranho esqueleto semelhante ao de um cervo que ela deixou para trás, e depois se lavaram em um riacho no caminho de volta a Frosthaven."
@@ -1414,7 +1414,7 @@ export default {
             }
         },
         "85": {
-            "name": "Passatempos Mortais",
+            "name": "Deadly Pastimes",
             "sections": {
                 "1": "Uma mulher procurou Glint em busca de ajuda imediata; o marido dissera que, se ele não voltasse até a tarde, ela deveria buscar ajuda. Ela entregou a vocês um mapa de “onde ele foi explorar cavernas”.",
                 "2": "Totalmente exaustos, vocês enfim saíram da caverna para a luz do dia e encontraram o marido sentado, feliz, junto a uma fogueira, assando uma ave. Ele havia decidido que a caverna era perigosa demais e fora explorar em outro lugar. Vocês quase o mataram, mas, em vez disso, desabaram ao lado da fogueira dele e tiraram uma soneca."
@@ -1436,7 +1436,7 @@ export default {
             }
         },
         "89": {
-            "name": "Um Fogo Contido",
+            "name": "A Contained Fire",
             "sections": {
                 "1": "Três Algox maltrapilhos chegaram a Frosthaven e pediram ajuda à cidade. Contaram que seu clã vem sendo maltratado por uma tribo vizinha. O chefe dessa tribo, Vanjal, vem cobrando impostos excessivos deles para alimentar a própria vaidade.",
                 "2": "Vocês derrotaram Vanjal, e seu exército se dispersou em terror. Os clãs Algox vizinhos voltaram à fortaleza para recuperar os suprimentos roubados e agradeceram a vocês profusamente."
@@ -1447,7 +1447,7 @@ export default {
             }
         },
         "92": {
-            "name": "Navio Naufragando",
+            "name": "Sinking Ship",
             "sections": {
                 "1": "O Capitão Doghogger soube que há um navio abandonado cheio de suprimentos no mar. Uma equipe de pesca o avistou, e ele procura um grupo para aliviá-lo de alguns suprimentos e/ou tesouros.",
                 "2": "Vocês jogaram o último do butim para Doghogger justo quando o convés virou, e viram o navio afundar sob as ondas, com Espreitadores presos circulando o casco. Voltaram para casa com um novo tripulante, muito barulhento: o autômato HE-RO-IC-S."
@@ -1458,7 +1458,7 @@ export default {
             }
         },
         "93": {
-            "name": "Briga de Meio de Inverno",
+            "name": "Midwinter Brawl",
             "sections": {
                 "1": "Scabwit, um Vermling, contou a vocês que seu povo está negociando com uma tribo Algox um pedaço de terra para chamar de seu. Ele procura músculos para “serem assustadores por ele” nos Bosques Fogo-Branco, para ajudar nessas negociações.",
                 "2": "Vocês ajudaram a encerrar a briga nos Bosques Fogo-Branco, e o lado que haviam apoiado agradeceu a ajuda.",
@@ -1473,7 +1473,7 @@ export default {
             }
         },
         "107": {
-            "name": "Meu Império Particular",
+            "name": "My Private Empire",
             "sections": {
                 "1": "Em um baú, vocês encontraram uma carta lacrada com cera, primorosamente escrita e decorada. A carta, assinada por um “Imperador Ventillion”, convidava vocês a se juntarem a ele em um Baile de Meio de Inverno. Incluía um mapa para sua propriedade (no meio do nada) e certamente será uma festa de verdade, com vinho e dança, e nada de mais sinistro.",
                 "2": "Vocês sobreviveram à estranha festa do Imperador Ventillion e saíram de sua propriedade escondida, e ele os despediu com um presente em agradecimento por comparecerem.",
@@ -1488,7 +1488,7 @@ export default {
             }
         },
         "108": {
-            "name": "Fosso Reluzente",
+            "name": "Lustrous Pit",
             "sections": {
                 "1": "Em um baú, vocês encontraram uma tábua de pedra pintada. A imagem retrata uma paisagem estranhamente familiar, e vocês sentiram que poderiam encontrar o lugar se procurassem com afinco.",
                 "2": "Vocês recolheram as últimas lajes das paredes e voltaram a Frosthaven. Satha não se impressionou com os murais de demônios, mas vocês tinham certeza de que eles guardavam um significado cultural mais profundo."
@@ -1499,7 +1499,7 @@ export default {
             }
         },
         "109": {
-            "name": "Fábrica Furiosa",
+            "name": "Furious Factory",
             "sections": {
                 "1": "Vocês encontraram uma delicada peça de maquinário curioso em um baú. Ao retirá-la, ela se animou e projetou um mapa acima de si. Vocês descobriram como manipular esse mapa projetado e encontraram a localização do que parece ser uma fábrica de algum tipo.",
                 "2": "Vocês estilhaçaram o cristal central e o constructo de metal desabou no chão, deixando toda a instalação tão silenciosa quanto um túmulo. Vocês despojaram o lugar de todo o metal que conseguiram carregar e voltaram a Frosthaven."
@@ -1521,7 +1521,7 @@ export default {
             }
         },
         "111": {
-            "name": "Caverna de Gelo",
+            "name": "Ice Cave",
             "sections": {
                 "1": "Vocês encontraram um espelho de prata em um baú. Ao contrário da maioria dos espelhos, este não refletia vocês: mostrava uma imagem de seu grupo caminhando pelos ermos até uma caverna cheia de tesouros.",
                 "2": "Vocês saíram da caverna e ficaram cara a cara com uma cópia de vocês mesmos emergindo de outra caverna. Concentraram o poder minguante do espelho para convencer a realidade de que eram apenas uma pessoa, voltaram a ser uma só e partiram de volta a Frosthaven com o espelho em mãos."
@@ -1532,7 +1532,7 @@ export default {
             }
         },
         "112": {
-            "name": "Criado por Lobos",
+            "name": "Raised by Wolves",
             "sections": {
                 "1": "Dentro de um baú de tesouro, nas profundezas de uma masmorra aterradora cheia de monstros perigosos, vocês encontraram um filhote de lobo adorável, dormindo em paz. E vivo, de alguma forma. Trancado em um baú. Vocês o levaram de volta a Frosthaven.",
                 "2": "Vocês varreram a caverna para garantir que não restassem mais demônios, e os lobos uivaram em vitória por seu herói. Vocês se despediram de Lobinho e voltaram a Frosthaven com uma única lágrima no olho."
@@ -1543,7 +1543,7 @@ export default {
             }
         },
         "113": {
-            "name": "Gruta Exuberante",
+            "name": "Lush Grotto",
             "sections": {
                 "1": "Durante uma viagem, vocês se viram envoltos em uma névoa espessa. Quando ela se dissipou, vocês estavam em uma floresta exuberante, onde não era inverno de forma alguma, cheia de animais da floresta e pólen. Parecia que ela tentava manter vocês longe de algo. É difícil enganar vocês, porém, então forçaram a passagem pelas ilusões e encontraram uma gruta exuberante. Decidiram investigar (talvez logo, ou talvez tenham decidido voltar mais tarde).",
                 "2": "Vocês mataram os demônios elementais e encheram as mochilas de estranhas e maravilhosas descobertas botânicas. Refizeram o caminho para fora da gruta e voltaram depressa a Frosthaven pela neve cortante, para não murchar suas descobertas."
@@ -1554,7 +1554,7 @@ export default {
             }
         },
         "117": {
-            "name": "Um Jogo de Espera",
+            "name": "A Waiting Game",
             "sections": {
                 "1": "Depois de algum tempo longe de Frosthaven, seu amigável caçador Vermling voltou. Ele se estabeleceu nos Bosques Fogo-Branco, mas os ursos-polares vêm afugentando todos os animais menores. Outros Vermlings locais estavam caçando os ursos em excesso, expulsando-os de seu habitat normal. Seu velho amigo pediu que vocês ajudassem a realocar os ursos para um lugar melhor.",
                 "2": "Vocês capturaram os ursos e eliminaram o grupo de caça, o que o Trapper lamentou, mas aceitou como o preço de restaurar o curso natural das coisas. Depois de tranquilizar os ursos, vocês ajudaram a movê-los em trenós para seu lar nos ermos, e o Trapper murmurou um agradecimento."
@@ -1565,7 +1565,7 @@ export default {
             }
         },
         "118": {
-            "name": "Necromancia dos Espreitadores",
+            "name": "Lurker Necromancy",
             "sections": {
                 "1": "O Boneshaper voltou e surpreendeu vocês um dia. Ele vinha buscando energia de novos planos de existência e encontrou uma estranha energia muito mais perto de casa, emanando de algum lugar próximo a Frosthaven.",
                 "2": "Com os Espreitadores e os mortos-vivos derrotados, vocês ajudaram o Boneshaper a recolher os estranhos amuletos que causavam o problema. O Boneshaper os tirou de suas mãos, agradeceu e desapareceu para outro plano."
@@ -1576,7 +1576,7 @@ export default {
             }
         },
         "119": {
-            "name": "Pó Radiante",
+            "name": "Radiant Dust",
             "sections": {
                 "1": "Seu velho amigo descobriu, em seus estudos, um modo de talvez aumentar o poder de suas infusões. Parece estar relacionado a estranhas plantas que crescem na Floresta Radiante. Ele levou vocês consigo para uma aventura em busca desses materiais.",
                 "2": "Com o caminho enfim livre, vocês chegaram a um pinheiro imenso no coração da mata, de cujos galhos o pó radiante cai como luz do sol. Seu amigo percebeu que o pó é uma espécie de pólen e, absorto em estudá-lo, agradeceu a ajuda de vocês na coleta com um presente."
@@ -1587,7 +1587,7 @@ export default {
             }
         },
         "122": {
-            "name": "A Fome Eterna",
+            "name": "The Eternal Crave",
             "sections": {
                 "1": "Em suas viagens, vocês encontraram uma Quatryl idosa cuidando de pimentas de cheiro delicioso. Ela as chamava de “pimentas de fogo” e contou a história de uma fera chamada Hungry Maw, que vive sob as Montanhas de Pescoço de Cobre. Aparentemente, ela devora vilarejos inteiros, mas só pode ser saciada por um Ensopado de Pimenta de Fogo. Ela perguntou se vocês topavam o desafio.",
                 "2": "Vocês percorreram as cavernas sob as Montanhas de Pescoço de Cobre e lidaram com o Hungry Maw, pondo fim ao perigo que ele representava para o norte.",
@@ -1602,7 +1602,7 @@ export default {
             }
         },
         "123": {
-            "name": "O Titã",
+            "name": "The Titan",
             "sections": {
                 "1": "Vocês encontraram seu antigo companheiro na estrada, entalhando runas no ar. Ele disse que havia uma “criatura enorme, tão cheia de dor e sofrimento” se aproximando do portal deles. O condutor usou algumas magias para trazer essa fera até eles, para que pudessem se banquetear com ela. Vocês não estavam muito a fim, mas eles não deram muita escolha. Quando terminaram de criar um portal, uma fera inacreditavelmente titânica avançou sobre vocês. O ser, porém, não era a fonte da dor; era o mundo de onde viera, e agora estava no de vocês. Hora de detê-lo.",
                 "2": "O núcleo de energia do titã explodiu em uma violenta explosão azul enquanto vocês corriam para fora pelo crânio dele. O titã tombou para trás e desabou no chão a poucos passos de Frosthaven, encharcando uma criança que pescava por perto."
@@ -1613,7 +1613,7 @@ export default {
             }
         },
         "126": {
-            "name": "José, o Leão",
+            "name": "Joseph the Lion",
             "sections": {
                 "1": "Um mercador chamado José cumprimentou vocês e disse que todos os seus assistentes morreram e que toda a sua mercadoria estava parada nos ermos gelados. Pediu ajuda para recuperá-la. Algumas semanas depois de vocês o fazerem, ele abriu uma barraca de “sorvete” em Frosthaven; vocês decidiram dar uma olhada.",
                 "2": "José deu pouca atenção aos muitos ferimentos e à armadura rasgada de vocês; estava apenas feliz por ter o sorvete de volta. Logo desapareceu de vista, tagarelando sobre seu mais recente plano maluco."
@@ -1624,7 +1624,7 @@ export default {
             }
         },
         "127": {
-            "name": "Cargueiro Abandonado",
+            "name": "Derelict Freighter",
             "sections": {
                 "1": "Um navio abandonado chegou, aparentemente sozinho, ao porto de Frosthaven. Estava totalmente desocupado, mas a última página do Diário de Bordo do Capitão continha apenas duas palavras: “QUEIMEM-NO.” A tripulação pode ter tentado fazer isso antes de desaparecer, pois os conveses estão cobertos de óleo de lamparina. O manifesto mostrava oito caixotes de carga desconhecida, com destino a Carvalho Branco, mas vocês encontraram apenas um, aparafusado ao convés e selado com piche. Algumas semanas depois, o resto dos caixotes chegou a Frosthaven, desta vez em um navio tripulado por espectros de gelo.",
                 "2": "Vocês arrastaram o último caixote até o cais, onde um Valrath com um manto cor de cinza e uma única manopla de bronze os esperava. Ele agradeceu por recuperarem sua carga, mandou carregá-la em trenós, pagou a vocês e aconselhou que queimassem o navio, a única forma de detê-lo, antes de sumir na noite sem responder às perguntas de vocês."
@@ -1635,7 +1635,7 @@ export default {
             }
         },
         "131": {
-            "name": "O Iceberg Dançante",
+            "name": "The Dancing Iceberg",
             "sections": {
                 "1": "Vocês encontraram um jovem Espreitador dançante, olhando para o oceano. Ele encheu suas mentes de visões de uma península gelada. Vocês podem ou não ter feito contato, mas encontraram o local que o Espreitador projetava para vocês.",
                 "2": "Vocês empurraram o cadáver do Condutor gigante para fora do iceberg, o que exigiu trabalho em equipe, e equilibraram a plataforma para que ela não tombasse mais. Os Espreitadores restantes pareceram despertar de um torpor e voltaram correndo para o mar. Vocês então encontraram a concha presa em uma rachadura no gelo e deixaram o iceberg voltar à deriva para costas mais seguras enquanto sua canção enchia o ar."
@@ -1663,7 +1663,7 @@ export default {
             }
         },
         "2": {
-            "name": "Os Tumores de Sangue",
+            "name": "Os Blood Tumors",
             "sections": {
                 "1": "Ao procurar um ferreiro desaparecido, vocês descobriram um culto de Fanáticos de mantos vermelhos que compram cadáveres frescos de Vermlings para um homem chamado Roland. No navio deles nas Docas Velhas, vocês encontraram o colar do ferreiro entre os restos no altar e um mapa do Distrito das Caldeiras com um prédio claramente marcado.",
                 "2": "O prédio marcado, um antigo matadouro, havia sido incendiado, mas o porão de pedra estava intacto. Lá embaixo, Fanáticos realizavam um ritual que sacudia a terra e ameaçava enterrar todos vivos. Vocês interromperam o ritual e enfrentaram os cultistas que saíram correndo dos túneis mais profundos. Quaisquer respostas que vocês procurem estão mais abaixo.",

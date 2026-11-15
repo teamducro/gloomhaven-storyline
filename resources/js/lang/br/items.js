@@ -345,7 +345,7 @@ export default {
     },
     "gh-68": {
         "name": "Alabarda",
-        "source": "Prosperidade 9\n{SCENARIO 111} (Tesouro #92)\nSeção 132 -> g106 “Parque do Estrangulador” no livro",
+        "source": "Prosperidade 9\n{SCENARIO 111} (Tesouro #92)\nSeção 132 -> g106 “Strangler's Park” no livro",
         "desc": "Durante o seu ataque corpo a corpo de alvo único, você pode atacar um único inimigo a até 2 hexágonos."
     },
     "gh-69": {
@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Anel da Segunda Chance",
-        "source": "Prosperidade 9\nCenário Desafio de FC, Carta de Fenda 12 (Tesouro #89)\nSeção 103 -> 84 “Portal para o Firmamento” no livro",
+        "source": "Prosperidade 9\nCenário Desafio de FC, Carta de Fenda 12 (Tesouro #89)\nSeção 103 -> 84 “Gateway to the Firmament” no livro",
         "desc": "No final do seu turno, jogue duas cartas da sua mão e realize um turno adicional nesta rodada com base na sua nova iniciativa principal (que deve ser posterior à sua iniciativa anterior)."
     },
     "gh-71": {
@@ -772,7 +772,7 @@ export default {
     },
     "gh-152": {
         "name": "Ring of Duality",
-        "source": "Recompensa do {SCENARIO 97}\nSeção 125 “Um Baú Trancado” no livro",
+        "source": "Recompensa do {SCENARIO 97}\nSeção 125 “A locked chest” no livro",
         "desc": "Depois de realizar a ação superior de qualquer carta de habilidade, você pode realizar imediatamente a ação inferior da mesma carta. Este item não pode ser usado se ambas as ações ativarem um ícone de carta perdida {CONSUMED}."
     },
     "gh-153": {
@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Ancient Bow",
-        "source": "{SCENARIO 107} (Tesouro #78)\nSeção 32 “Átrio Desabado” no livro",
+        "source": "{SCENARIO 107} (Tesouro #78)\nSeção 32 “Collapsed Atrium” no livro",
         "desc": "Durante o seu ataque à distância, adicione +2 {ATTACK}, {CURSE} e {WOUND} a um único ataque."
     },
     "gh-158": {
@@ -1912,7 +1912,7 @@ export default {
         "desc": "Durante o seu turno, {ANY}"
     },
     "fh-87": {
-        "name": "Poção de Cura",
+        "name": "Poção de Cura de Condição",
         "source": "Alquimia",
         "desc": "Durante o seu turno, remova uma condição negativa que você tenha.  Este item pode ser usado enquanto você tiver {IMPAIR.fh} ou {STUN.fh}."
     },
@@ -3346,7 +3346,7 @@ export default {
         "backDesc": "Durante a sua habilidade de movimento, adicione +2 {MOVE.fh} e vire esta carta."
     },
     "gh2-101": {
-        "name": "Poção de Cura",
+        "name": "Poção de Cura de Condição",
         "source": "{SCENARIO 89} (Tesouro #33)",
         "desc": "Durante o seu turno, remova uma condição negativa que você tenha. Este item pode ser usado enquanto você tiver {STUN.fh}."
     },

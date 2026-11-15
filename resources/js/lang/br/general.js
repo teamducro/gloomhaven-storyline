@@ -387,7 +387,7 @@ export default {
     "Jaws of the Lion": "Jaws of the Lion",
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
-    "mp": "Pacote Mercenário",
+    "mp": "Mercenary Pack",
     "cq": "ConQuests 2025",
     "sox": "Conteúdo bônus de “Buscador de Xorn”",
     "gh2": "Gloomhaven 2ª Edição",

@@ -500,7 +500,7 @@ export default {
             "Conclua um cenário no Bosque Fogo-Branco.",
             "Conclua um cenário nas Montanhas de Pescoço de Cobre.",
             "Conclua um cenário na Floresta Radiante.",
-            "Conclua um cenário nos Campos de Cristal.",
+            "Conclua um cenário nos Crystal Fields.",
             "Conclua um cenário no Mar Mordaz."
         ]
     },
@@ -747,7 +747,7 @@ export default {
     "gh2-20": {
         "name": "Piedade em Todas as Coisas",
         "progress": [
-            "Doe 120 moedas de ouro ao Templo do Grande Carvalho.",
+            "Doe 120 moedas de ouro ao Temple of the Great Oak.",
             "Leia a {SECTION} 51.5."
         ]
     },

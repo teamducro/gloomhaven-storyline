@@ -568,7 +568,7 @@ export default {
         "requirements": "Bravura"
     },
     "gh-77": {
-        "name": "Vault of Secrets",
+        "name": "Cópia de Segredos",
         "rewards": [
             "5 pontos de experiência para cada personagem"
         ],
@@ -1006,7 +1006,7 @@ export default {
         "rewards": [
             "+3 de reputação",
             "+1 de prosperidade",
-            "Aposentem o Vidente Aesther {DR}",
+            "Aposentem a Vidente Aesther {DR}",
             "Adicionem os Eventos de Cidade e Estrada 83 aos respectivos baralhos"
         ]
     },
