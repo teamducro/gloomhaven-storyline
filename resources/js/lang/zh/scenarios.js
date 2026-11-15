@@ -3528,7 +3528,7 @@ export default {
         ]
     },
     "gh2-77": {
-        "name": "骇虫巢穴",
+        "name": "Harrower Hive",
         "rewards": []
     },
     "gh2-78": {
