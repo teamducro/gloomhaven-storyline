@@ -26,8 +26,8 @@ export default {
     },
     "searchPiecesOfAnArtifact": {
         "1": "Všichni nepřátelé jsou zabiti.",
-        "2": "Našli jste další části trhlinového zařízení.",
-        "title": "Hledání částí trhlinového zařízení",
+        "2": "Našli jste další části zařízení pro trhliny.",
+        "title": "Hledání částí zařízení pro trhliny",
         "text": "Podařilo se vám zabít všechny nepřátele?"
     },
     "directingBeams": {

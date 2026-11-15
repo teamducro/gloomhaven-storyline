@@ -441,10 +441,10 @@ export default {
         "perks": [
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} {POISON}",
             "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{HEAL}1, {CT_CIRCLE}“",
-            "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{HEAL}1, všichni tvoji přivolaní spojenci“",
+            "Nahraď jednu kartu {-1_WHITE} jednou kartou {+0_WHITE} „{HEAL}1, všichni tvoji pomocníci“",
             "Nahraď jednu kartu {-2_WHITE} jednou kartou {-2_WHITE} „{BLESS}, sebe“",
             "Nahraď dvě karty {+0_WHITE} jednou kartou {+0_WHITE} „{IMMOBILIZE} a {PUSH}1“",
-            "Nahraď jednu kartu {+0_WHITE} jednou kartou „{+X_WHITE}, kde X je počet tvých přivolaných spojenců“",
+            "Nahraď jednu kartu {+0_WHITE} jednou kartou „{+X_WHITE}, kde X je počet tvých pomocníků“",
             "Nahraď jednu kartu {+1_WHITE} dvěma kartami {+1_WHITE} „{AGAIN}{+1_WHITE}, pokud útočí pomocník“",
             "Přidej jednu kartu {+0_WHITE} {WOUND}, {PIERCE}1",
             "Přidej jednu kartu {+1_WHITE} {EARTH}",
