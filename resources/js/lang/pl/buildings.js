@@ -561,7 +561,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Sala Biesiadna",
+        "name": "Sala Uczt",
         "levels": [
             {
                 "level": 0

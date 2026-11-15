@@ -177,7 +177,7 @@ export default {
         "name": "Losowy schemat przedmiotu."
     },
     "gh-60": {
-        "name": "Schemat „Topora Czaszkozguby” (przedmiot 113)."
+        "name": "Otrzymujesz „Topór Czaszkozguby” (przedmiot 113)."
     },
     "gh-61": {
         "name": "Otrzymujesz „Uniwersalny Sztylet” (przedmiot 040)."
@@ -255,7 +255,7 @@ export default {
         "name": "Otrzymujesz 3 punkty obrażenia, {POISON} oraz 10 szt. złota."
     },
     "fc-86": {
-        "name": "Znajdujesz dziwną i intrygującą książkę o medytacji Orchidów. Odblokuj {DR} solowy scenariusz „Zapowiedź nieuniknionego” (patrz strona 25)."
+        "name": "Odblokuj {DR} solowy scenariusz „Zapowiedź nieuniknionego” (patrz strona 25 głównej instrukcji)."
     },
     "fc-87": {
         "name": "Otrzymujesz 2 punkty obrażeń, KLĄTWĘ oraz 15 szt. złota."

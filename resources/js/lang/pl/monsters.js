@@ -129,7 +129,7 @@ export default {
     "lavalite": "Lavalite",
     "lightning-eel": "Węgorz Elektryczny",
     "living-bones": "Ożywione Kości",
-    "living-corpse": "Living Corpse",
+    "living-corpse": "Ożywione Zwłoki",
     "living-doom": "Ożywiona Zagłada",
     "living-spirit": "Ożywiony Duch",
     "living-wall": "Living Wall",

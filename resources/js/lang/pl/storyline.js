@@ -75,7 +75,7 @@ export default {
             }
         },
         "7": {
-            "name": "Najlepszy Przyjaciel Valratha",
+            "name": "Najlepszy Przyjaciel Valrata",
             "sections": {
                 "1": "Jekserah ma dla was ostatnie zadanie. Potrzebuje diamentu sporych rozmiarów dla pewnego klienta. W południowych górach znajduje się kopalnia diamentów opanowana przez Szczuroki, za którymi stoi jakaś inna, bardziej inteligentna siła. Jeśli przebijecie się do środka i zdobędziecie największy diament, jaki znajdziecie, Jekserah da wam znaczną nagrodę. Ostrzegła was jednak strażniczka, że Jekserah może mieć bardziej złowrogie zamiary, niż pokazuje. Coś o obaleniu wojska... ale jeden diament nie zaszkodzi, prawda?",
                 "2": "Złowrogie knowania czy nie, uznaliście, że sformułowanie „znaczna nagroda” jest bardziej istotne. Zgodnie z oczekiwaniami kopalnia diamentów była zaatakowana przez szczuroczych górników. Dowodził nimi Bezlitosny Nadzorca, który kilkoma trzaśnięciami bata szybko obrócił górników przeciwko wam. Gdy nadzorca został załatwiony, a diament odzyskany, pozostali górnicy się rozpierzchli. Wróciliście do Jeksery po nagrodę. Jej ochroniarze wprowadzili was do rezydencji, gdzie zastaliście ją jakoś odmienioną - bardziej znękaną i ponurą. „Wspaniale”. Wymieniła diament na wielką sakiewkę pełną monet. „Posłuży doskonale jako ognisko dla inkantacji. Ciekawe, czy kultyści w ogóle wiedzieli, co tu mają. Dzięki temu mogę przywołać całą armię nieumarłych!” Zwróciła się do was z dziwnym błyskiem w oku. „No więc! Czy jesteście gotowi obalić wojsko Gloomhaven i oddać kontrolę nad miastem w ręce Gildii Kupieckiej? Czy też brak wam odwagi, by dokonać prawdziwej zmiany?”",
@@ -522,7 +522,7 @@ export default {
             }
         },
         "73": {
-            "name": "Odnaleźć Historię Aesther",
+            "name": "Odnaleźć Historię Esterów",
             "sections": {
                 "1": "Dominic odkrył, że istnieje spisana relacja o historii Esterów. Znajduje się w Kodeksie Dyrektyw. Kopię księgi dostarczono do Gloomhaven. Najwyraźniej karawana została zaatakowana przez grupę Inoksów w pobliżu południowego krańca Lasu Sztyletów. Dominic dowiedział się o położeniu obozu Inoksów od uciekiniera ze straży, księga może wciąż tam być.",
                 "2": "Po zabiciu Inoksów wśród ich dobytku faktycznie znajdujecie wielki tom, choć jest w kiepskim stanie. Dominic jest niezwykle wdzięczny, gdy wracacie z Kodeksem. Natychmiast zabiera się za jego studiowanie."
@@ -928,7 +928,7 @@ export default {
             "name": "Koralowy Odłamek",
             "sections": {
                 "1": "Po uporaniu się z bezpośrednim problemem Algoksów zagrażającym Frosthaven burmistrzyni Satha wspomniała, że na obrzeżach terytorium Frosthaven dostrzeżono Czyhacze. Poproszono was, byście to sprawdzili.",
-                "2": "Ścigaliście je aż na skraj Kąsającego Morza, gdzie natknęliście się na Czyhacze w jaskini wykutej w klifie. W czaszce potwora Living Corpse znaleźliście dziwny koralowy odłamek; przekazał wam, że chce, byście zabrali go na północ, daleko na morze, z dala od klifów. Uznaliście, że właśnie tego chciały Czyhacze.",
+                "2": "Ścigaliście je aż na skraj Kąsającego Morza, gdzie natknęliście się na Czyhacze w jaskini wykutej w klifie. W czaszce Ożywionych Zwłok znaleźliście dziwny koralowy odłamek; przekazał wam, że chce, byście zabrali go na północ, daleko na morze, z dala od klifów. Uznaliście, że właśnie tego chciały Czyhacze.",
                 "3": "Zanim wyruszyliście na otwarte morze, postanowiliście podążyć za przyciąganiem odłamka lądem wzdłuż północnego wybrzeża.",
                 "4": "Przeszliście przez most zrobiony z prastarej klatki piersiowej i pokonaliście demony go strzegące. Odłamek wciąż ciągnął was dalej na północ, ale na zachodzie był też las, który warto było zbadać.",
                 "5": "Postanowiliście podążać za przyciąganiem Koralowego Odłamka dalej na północ, mając nadzieję dotrzeć tam, dokąd was prowadził.",
@@ -951,7 +951,7 @@ export default {
             "name": "Koralowa Korona",
             "sections": {
                 "1": "Po uporaniu się z bezpośrednim problemem Algoksów zagrażającym Frosthaven burmistrzyni Satha wspomniała, że na obrzeżach terytorium Frosthaven dostrzeżono Czyhacze. Poproszono was, byście to sprawdzili.",
-                "2": "Ścigaliście je aż na skraj Kąsającego Morza, gdzie natknęliście się na Czyhacze w jaskini wykutej w klifie. W czaszce potwora Living Corpse znaleźliście dziwny koralowy odłamek; przekazał wam, że chce, byście zabrali go na północ, daleko na morze, z dala od klifów. Uznaliście, że właśnie tego chciały Czyhacze.",
+                "2": "Ścigaliście je aż na skraj Kąsającego Morza, gdzie natknęliście się na Czyhacze w jaskini wykutej w klifie. W czaszce Ożywionych Zwłok znaleźliście dziwny koralowy odłamek; przekazał wam, że chce, byście zabrali go na północ, daleko na morze, z dala od klifów. Uznaliście, że właśnie tego chciały Czyhacze.",
                 "3": "Po zbudowaniu statku postanowiliście wypłynąć na zalodzone morze i zobaczyć, dokąd Odłamek chce was zabrać.",
                 "4": "Po stawieniu czoła koszmarowi abaeli, węgorzy i piraniowych świń wyłamaliście z kamienia drugi Koralowy Odłamek. Z wody wyłonił się półkole Czyhaczy, wśród nich jeden o imieniu Słońce w Płyciznach. Opowiedzieli wam o Koralowej Koronie, która rozpadła się na kawałki - a wraz z nią rozpadło się wielkie Królestwo Czyhaczy. Większość Czyhaczy popadła potem w ślepy szał; zgodziliście się pomóc połączyć koronę na nowo w nadziei, że odbuduje to cywilizację Czyhaczy. Psychiczne przyciąganie Koralowych Odłamków pociągnęło was dalej na wschód i głębiej w morze.",
                 "5": "Tam zaatakowały was Czyhacze przyciągnięte przez Odłamki, które niesiecie. Rozbiły wasz statek, więc postanowiliście poszukać innego środka transportu. Druciarz Frosthaven, Pinter Droman, zaprojektował batysferę - pojazd do bezpiecznego podróżowania pod wodą - ale potrzebował źródła zasilania. Zasugerował, że możecie je znaleźć w sercu Promiennego Lasu.",

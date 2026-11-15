@@ -76,7 +76,7 @@ export default {
         ],
         "faq": [
             "Literówka: znacznik drzwi 1 powinien znajdować się przy południowych drzwiach, a nie przy północnych. Przeczytajcie tekst pod „1” po otwarciu południowych drzwi.",
-            "Literówka: „Specjalna Bossa 1” nie została wymieniona. Jest dokładnie taka sama jak „Specjalna Bossa 2”, z tą różnicą, że przywoływane są Ożywione Kości zamiast Ożywionych Trupów."
+            "Literówka: „Specjalna Bossa 1” nie została wymieniona. Jest dokładnie taka sama jak „Specjalna Bossa 2”, z tą różnicą, że przywoływane są Ożywione Kości zamiast Ożywionych Zwłok."
         ]
     },
     "gh-13": {
@@ -123,7 +123,7 @@ export default {
             "+1 do dobrobytu"
         ],
         "faq": [
-            "Literówka: „Specjalna Bossa 1” nie została wymieniona. Oprócz zdolności z karty statystyk boss ma tę samą zdolność przywoływania co „Specjalna Bossa 2”, z tą różnicą, że przywoływane są Ożywione Kości zamiast Ożywionych Trupów."
+            "Literówka: „Specjalna Bossa 1” nie została wymieniona. Oprócz zdolności z karty statystyk boss ma tę samą zdolność przywoływania co „Specjalna Bossa 2”, z tą różnicą, że przywoływane są Ożywione Kości zamiast Ożywionych Zwłok."
         ]
     },
     "gh-21": {
@@ -998,7 +998,7 @@ export default {
     "fc-114": {
         "name": "Atrament wciąż schnie",
         "rewards": [
-            "Profit dla drużyny: Dodatkowy koszt ulepszenia karty zdolności zależny od jej poziomu jest od teraz zmniejszony o 5 sztuk złota na poziom"
+            "Dar dla drużyny: Dodatkowy koszt ulepszenia karty zdolności zależny od jej poziomu jest od teraz zmniejszony o 5 sztuk złota na poziom"
         ]
     },
     "fc-115": {
@@ -1241,7 +1241,7 @@ export default {
         ]
     },
     "fh-7": {
-        "name": "Krawędź świata",
+        "name": "Kraniec świata",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego"
         ]
@@ -1430,7 +1430,7 @@ export default {
         ]
     },
     "fh-34": {
-        "name": "Szczyt Iglicy"
+        "name": "Szczyt iglicy"
     },
     "fh-35": {
         "name": "Złomowisko",
@@ -1721,7 +1721,7 @@ export default {
     "fh-71": {
         "name": "Inwazja na doki",
         "rewards": [
-            "Zadaj obrażenia dowolnemu parzystemu budynkowi z przedziału 71–89",
+            "Uszkodź dowolny parzysty budynek z przedziału 71–89",
             "Po 10 pkt. doświadczenia dla każdego",
             "Dodaj sekcję 149.5 do kalendarza za pięć tygodni"
         ]
@@ -1881,7 +1881,7 @@ export default {
     "fh-92": {
         "name": "Tonący statek",
         "rewards": [
-            "Wspólnie tracicie 5xC/2 żetonów łupów. Żetony łupów są następnie wymieniane na karty łupów",
+            "Wspólnie tracicie 5xP/2 żetonów łupów. Żetony łupów są następnie wymieniane na karty łupów",
             "Dodaj sekcję 181.2 do kalendarza za tydzień"
         ]
     },
@@ -2889,7 +2889,7 @@ export default {
         "rewards": [
             "Zadanie „Scrap Diver” wykonane",
             "Otwórzcie kopertę {QA}",
-            "Po 15xA szt. złota dla każdego (gdzie A to liczba odzyskanych Starożytnych Złomów)",
+            "Po 15xA szt. złota dla każdego (gdzie A to liczba odzyskanych żetonów Ancient Scrap)",
             "Do talii należy dodać zdarzenie miejskie QA-03"
         ]
     },

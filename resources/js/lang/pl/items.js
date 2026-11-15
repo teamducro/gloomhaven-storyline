@@ -31,7 +31,7 @@ export default {
     "gh-6": {
         "name": "Gogle Sokolego Wzroku",
         "source": "Dobrobyt 1",
-        "desc": "Podczas twojego ataku zyskujesz Korzyść na całą twoją akcję ataku."
+        "desc": "Podczas twojego ataku zyskujesz korzyść na całą twoją akcję ataku."
     },
     "gh-7": {
         "name": "Stalowy Hełm",
@@ -179,7 +179,7 @@ export default {
     "gh-35": {
         "name": "Figurka Sokoła",
         "source": "Dobrobyt 4\n{SCENARIO 98} (Skarb #79)",
-        "desc": "Przywołaj ({FLYING})",
+        "desc": "Przywołaj Jade Falcon ({FLYING})",
         "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-36": {
@@ -583,7 +583,7 @@ export default {
     "gh-115": {
         "name": "Górski Młot",
         "source": "{SCENARIO 82} (Skarb #62)",
-        "desc": "Przywołaj Ducha Wojownika",
+        "desc": "Przywołaj Warrior Spirit",
         "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-116": {
@@ -624,7 +624,7 @@ export default {
     "gh-123": {
         "name": "Pierścień Czaszek",
         "source": "{SCENARIO 04} (Skarb #38)",
-        "desc": "Przywołaj Szkielet",
+        "desc": "Przywołaj Skeleton",
         "faq": "Karta jest traktowana jak trwały bonus, idzie w aktywny obszar, dopóki przywołaniec nie zostanie zabity lub karta nie zostanie usunięta (usuwając przywołańca i zużywając przedmiot). Jeśli karta zostanie odświeżona i istnieje aktywny przywołaniec z karty, aktywny przywołaniec znika."
     },
     "gh-124": {
@@ -692,7 +692,7 @@ export default {
     "gh-136": {
         "name": "Niestabilny Eliksir",
         "source": "Nagroda w scenariuszu solo - {SW}",
-        "desc": "Podczas twojego ataku dystansowego dodaj +2 do {ATTACK} oraz zyskaj Korzyść na całą akcję ataku, ale otrzymujesz 2 obrażenia za każdy wykonany atak."
+        "desc": "Podczas twojego ataku dystansowego dodaj +2 do {ATTACK} oraz zyskaj korzyść na całą akcję ataku, ale otrzymujesz 2 obrażenia za każdy wykonany atak."
     },
     "gh-137": {
         "name": "Sztylet Skrytobójcy",
@@ -838,7 +838,7 @@ export default {
     "jotl-1": {
         "name": "Gogle Sokolego Wzroku",
         "source": "Nagroda w {SCENARIO 2}",
-        "desc": "Podczas twojego ataku zyskujesz Korzyść na całą twoją akcję ataku."
+        "desc": "Podczas twojego ataku zyskujesz korzyść na całą twoją akcję ataku."
     },
     "jotl-2": {
         "name": "Iron Helmet",
@@ -1051,7 +1051,7 @@ export default {
     },
     "cs-9": {
         "name": "Orb of Fortune",
-        "desc": "Podczas twojej zdolności ataku możesz położyć jeden żeton postaci na tej karcie, aby zyskać Korzyść na jeden atak. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
+        "desc": "Podczas twojej zdolności ataku możesz położyć jeden żeton postaci na tej karcie, aby zyskać korzyść na jeden atak. Gdy na karcie leżą trzy żetony, jest ona {CONSUMED}."
     },
     "cs-10": {
         "name": "Orb of Despair",
@@ -1099,7 +1099,7 @@ export default {
     },
     "cs-21": {
         "name": "Infrared Goggles",
-        "desc": "Zyskujesz Korzyść przy wszystkich atakach wykonywanych, gdy jesteś {INVISIBLE}."
+        "desc": "Zyskujesz korzyść przy wszystkich atakach wykonywanych, gdy jesteś {INVISIBLE}."
     },
     "cs-22": {
         "name": "Steel Helmet",
@@ -1231,7 +1231,7 @@ export default {
     },
     "cs-54": {
         "name": "Vipertooth Dagger",
-        "desc": "Zyskujesz Korzyść przy wszystkich swoich atakach wręcz, gdy zajmujesz trudny teren."
+        "desc": "Zyskujesz korzyść przy wszystkich swoich atakach wręcz, gdy zajmujesz trudny teren."
     },
     "cs-55": {
         "name": "Ghost Viper Venom",
@@ -1447,7 +1447,7 @@ export default {
     },
     "cs-qa05": {
         "name": "Delicate Model",
-        "desc": "Przywołaj Zbieracza Złomu\nZbierasz łup {LOOT} na każdym polu, na które wejdzie ten przywołaniec.\nTy kontrolujesz akcje tego przywołańca."
+        "desc": "Przywołaj Scrap Collector\nZbierasz łup {LOOT} na każdym polu, na które wejdzie ten przywołaniec.\nTy kontrolujesz akcje tego przywołańca."
     },
     "cs-qa06": {
         "name": "Auscudec of the Makers",
@@ -1467,7 +1467,7 @@ export default {
     },
     "cs-rm04": {
         "name": "Terrorscale Crossblades",
-        "desc": "Przy twoich następnych trzech atakach wręcz skierowanych we wrogów z co najmniej jednym negatywnym stanem zyskujesz Korzyść."
+        "desc": "Przy twoich następnych trzech atakach wręcz skierowanych we wrogów z co najmniej jednym negatywnym stanem zyskujesz korzyść."
     },
     "cs-rm05": {
         "name": "Rite of Ruin",
@@ -1706,7 +1706,7 @@ export default {
     "fh-46": {
         "name": "Double-Lens Goggles",
         "source": "Rzemieślnik 9",
-        "desc": "Podczas twojej zdolności ataku zyskujesz Korzyść przy wszystkich atakach i rozpatrujesz wszystkie karty modyfikatora {+0_MODIFIER} i {-1_MODIFIER} jako {+1_MODIFIER}."
+        "desc": "Podczas twojej zdolności ataku zyskujesz korzyść przy wszystkich atakach i rozpatrujesz wszystkie karty modyfikatora {+0_MODIFIER} i {-1_MODIFIER} jako {+1_MODIFIER}."
     },
     "fh-47": {
         "name": "Robes of Doom",
@@ -2526,7 +2526,7 @@ export default {
     "fh-209": {
         "name": "Sword of Mastery",
         "source": "SR-35",
-        "desc": "Podczas twojej zdolności ataku wręcz daj Korzyść do jednego ataku. Za każde ukończone mistrzostwo dodaj do tego ataku także jedno z poniższych: +1 do {ATTACK.fh}, {WOUND.fh} lub {POISON.fh}."
+        "desc": "Podczas twojej zdolności ataku wręcz daj korzyść do jednego ataku. Za każde ukończone mistrzostwo dodaj do tego ataku także jedno z poniższych: +1 do {ATTACK.fh}, {WOUND.fh} lub {POISON.fh}."
     },
     "fh-210": {
         "name": "Tanjo",
@@ -2749,7 +2749,7 @@ export default {
     "fh-253": {
         "name": "Maska Dwoistości",
         "source": "Nagroda w scenariuszu solo - {GE}",
-        "desc": "Podczas twojej zdolności ataku dystansowego, gdy jesteś w {RANGED_ICON}, zyskaj Korzyść na jeden atak, a następnie odwróć tę kartę.",
+        "desc": "Podczas twojej zdolności ataku dystansowego, gdy jesteś w {RANGED_ICON}, zyskaj korzyść na jeden atak, a następnie odwróć tę kartę.",
         "backDesc": "Kiedy wróg wykonuje atak skierowany w ciebie, gdy jesteś w {MELEE_ICON}, atakujący zyskuje Niekorzyść, a następnie odwróć tę kartę."
     },
     "fh-254": {
@@ -2884,7 +2884,7 @@ export default {
     "gh2-10": {
         "name": "Simple Bow",
         "source": "Dobrobyt 1",
-        "desc": "Podczas twojej zdolności ataku dystansowego zyskaj Korzyść na jeden atak."
+        "desc": "Podczas twojej zdolności ataku dystansowego zyskaj korzyść na jeden atak."
     },
     "gh2-11": {
         "name": "Mikstura Leczenia",
@@ -3032,7 +3032,7 @@ export default {
     "gh2-39": {
         "name": "Pierścień Czaszek",
         "source": "Dobrobyt 4",
-        "desc": "Przywołaj Szkielet"
+        "desc": "Przywołaj Skeleton"
     },
     "gh2-40": {
         "name": "Shadow Amor",
@@ -3198,7 +3198,7 @@ export default {
     "gh2-72": {
         "name": "Commander's Cap",
         "source": "Reputacja Wojskowa 19",
-        "desc": "Sojusznicy zyskują Korzyść przy następnych trzech atakach wykonanych, gdy sąsiadują z tobą. Następnie odwróć tę kartę.",
+        "desc": "Sojusznicy zyskują korzyść przy następnych trzech atakach wykonanych, gdy sąsiadują z tobą. Następnie odwróć tę kartę.",
         "backDesc": "Po następnych trzech zdolnościach ataku, które wykonasz, będąc w odległości {RANGE.fh} 2 od jednego lub więcej sojuszników, odwróć tę kartę."
     },
     "gh2-73": {
@@ -3230,7 +3230,7 @@ export default {
     "gh2-78": {
         "name": "Kosa Bojowa",
         "source": "Reputacja Demonów 15",
-        "desc": "Podczas twojej zdolności ataku wręcz dodaj +1 do {ATTACK.fh} i zyskaj Korzyść na jeden atak. Jeśli ten atak zabije cel, po ataku wykonaj: {HEAL.fh} 2, na siebie"
+        "desc": "Podczas twojej zdolności ataku wręcz dodaj +1 do {ATTACK.fh} i zyskaj korzyść na jeden atak. Jeśli ten atak zabije cel, po ataku wykonaj: {HEAL.fh} 2, na siebie"
     },
     "gh2-79": {
         "name": "Proch Zguby",
@@ -3422,7 +3422,7 @@ export default {
         "name": "Fated Verses",
         "source": "Dobrobyt 1",
         "desc": "Podczas twojej zdolności ataku możesz zyskać Niekorzyść na jeden atak, aby odwrócić tę kartę na koniec swojej tury.",
-        "backDesc": "Podczas zdolności ataku sojusznika ten sojusznik zyskuje Korzyść na jeden ze swoich ataków, a ty odwracasz tę kartę.",
+        "backDesc": "Podczas zdolności ataku sojusznika ten sojusznik zyskuje korzyść na jeden ze swoich ataków, a ty odwracasz tę kartę.",
         "faq": "Nie możesz użyć awersu, jeśli masz już Niekorzyść na ten atak. Awersu można użyć przy ataku, który daje ci sojusznik, ale karta odwraca się dopiero na koniec twojej następnej tury."
     },
     "gh2-117": {
@@ -3493,7 +3493,7 @@ export default {
     "gh2-130": {
         "name": "Górski Młot",
         "source": "{SCENARIO 90} (Skarb #22)",
-        "desc": "Przywołaj Ducha Wojownika"
+        "desc": "Przywołaj Warrior Spirit"
     },
     "gh2-131": {
         "name": "Kolia Fal",

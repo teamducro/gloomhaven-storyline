@@ -70,7 +70,7 @@ export default {
         "name": "Narzędzie Światłości",
         "progress": [
             "Znajdź Topór Czaszkozguby w Pracowni Nekromantki.",
-            "Zabij nim 7 Ożywionych Kości, Ożywionych Trupów lub Ożywionych Duchów."
+            "Zabij nim 7 Ożywionych Kości, Ożywionych Zwłok lub Ożywionych Duchów."
         ]
     },
     "gh-521": {

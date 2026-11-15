@@ -879,7 +879,7 @@ export default {
     "DT": {
         "name": "Zmora Głębin",
         "masteries": [
-            "Wykonuj wszystkie swoje ataki z Korzyścią",
+            "Wykonuj wszystkie swoje ataki z korzyścią",
             "Nasycaj {DARK} w każdej rundzie"
         ],
         "perks": [
@@ -894,7 +894,7 @@ export default {
             "Zignoruj efekty scenariusza i usuń dwie karty {+0_WHITE}",
             "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz {LOOT 1} jedno sąsiednie pole. Jeśli zyskasz jakiekolwiek żetony łupu, zyskaj 1 {TROPHY_ICON}",
             "Na początku każdego scenariusza zyskujesz 2 {TROPHY_ICON}",
-            "Gdy masz {INVISIBLE.fh}, zyskujesz Korzyść przy wszystkich swoich atakach"
+            "Gdy masz {INVISIBLE.fh}, zyskujesz korzyść przy wszystkich swoich atakach"
         ]
     },
     "CR": {
@@ -1015,7 +1015,7 @@ export default {
             "Zignoruj efekty przedmiotów {-1} i dodaj dwie karty {+1_WHITE}",
             "Raz na scenariusz, podczas twojej tury, możesz wykonać: {LOOT 1}, jeśli ta zdolność zbierze co najmniej jeden żeton pieniędzy, możesz {RECOVER.fh} jeden przedmiot {BODY}",
             "Za każdym razem, gdy wykonujesz długi odpoczynek, dodaj +1 {MOVE.fh} do swojej pierwszej zdolności ruchu w następnej rundzie",
-            "Każda postać zyskuje Korzyść przy swoim pierwszym ataku w pierwszej rundzie każdego scenariusza"
+            "Każda postać zyskuje korzyść przy swoim pierwszym ataku w pierwszej rundzie każdego scenariusza"
         ]
     },
     "CH2": {
