@@ -47,7 +47,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Közösen vásárolhattok legfeljebb 1 {HIDE} 2 aranyért",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {HIDE}-t 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -55,7 +55,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Közösen vásárolhattok legfeljebb 2 {HIDE} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {HIDE}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -63,7 +63,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Közösen vásárolhattok legfeljebb 3 {HIDE} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {HIDE}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -71,7 +71,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Közösen vásárolhattok legfeljebb 4 {HIDE} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {HIDE}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -87,7 +87,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Közösen vásárolhattok legfeljebb 1 {LUMBER} 2 aranyért",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {LUMBER}-t 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -95,7 +95,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Közösen vásárolhattok legfeljebb 2 {LUMBER} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {LUMBER}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -103,7 +103,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Közösen vásárolhattok legfeljebb 3 {LUMBER} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {LUMBER}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -111,7 +111,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Közösen vásárolhattok legfeljebb 4 {LUMBER} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {LUMBER}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
