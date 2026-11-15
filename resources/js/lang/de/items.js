@@ -2979,13 +2979,13 @@ export default {
         "desc": "Erhalte bei den nächsten drei Quellen von {DAMAGE.fh} durch Angriffe, die dich anvisieren, für die Angriffe {SHIELD.fh} 1."
     },
     "gh2-29": {
-        "name": "Flinke Beinschienen",
+        "name": "Nimble Legguards",
         "source": "Wohlstand 3",
         "desc": "Wenn ein angrenzender Verbündeter von einem Angriff anvisiert würde, wirst stattdessen du anvisiert, unabhängig von Reichweite und Sichtlinie.",
         "faq": "Bist du unsichtbar und kannst nicht anvisiert werden, kannst du den Angriff nicht auf dich umlenken."
     },
     "gh2-30": {
-        "name": "Panzerbrecher-Bogen",
+        "name": "Armorbane Bow",
         "source": "Wohlstand 3",
         "desc": "Füge während deines Zugs allen deinen Fernkampfangriffen {PIERCE.fh} 3 hinzu."
     },
@@ -3085,7 +3085,7 @@ export default {
         "desc": "Füge, nachdem du dich in deinem Zug 4 oder mehr Felder bewegt hast, deinem nächsten Nahkampfangriff in diesem Zug +1 {ATTACK.fh} hinzu."
     },
     "gh2-50": {
-        "name": "Roben der Eiche",
+        "name": "Robes of the Oak",
         "source": "Wohlstand 6",
         "desc": "Führe während deines Zugs aus: {HEAL.fh} 3, Ein Verbündeter, {RANGE.fh} 1"
     },
@@ -3105,7 +3105,7 @@ export default {
         "desc": "Füge während deines Zugs allen deinen Angriffen +2 {ATTACK.fh} hinzu."
     },
     "gh2-54": {
-        "name": "Reif der Heiligkeit",
+        "name": "Circlet of Sanctity",
         "source": "Wohlstand 7",
         "desc": "Drehe diese Karte nach den nächsten drei Angriffen, die einen Verbündeten in Reichweite {RANGE.fh} 2 anvisieren, um.",
         "backDesc": "Führe während deines Zugs aus: {WARD.fh}, {RANGE.fh} 3 und drehe diese Karte dann um."
@@ -3121,7 +3121,7 @@ export default {
         "desc": "Erhalte am Ende des Zugs für die Runde {SHIELD.fh} 1, wenn du dich während deines Zugs 1 oder weniger Felder bewegt hast."
     },
     "gh2-57": {
-        "name": "Ring des Strategen",
+        "name": "Strategist's Ring",
         "source": "Wohlstand 7",
         "desc": "Spiele am Ende des Zugs eine Karte von deiner Hand und führe alle andauernden und verpflichtenden Fertigkeiten entweder der oberen oder der unteren Aktion der Karte aus."
     },
@@ -3202,7 +3202,7 @@ export default {
         "backDesc": "Drehe diese Karte nach den nächsten drei Angriffsfertigkeiten um, die du ausführst, während du dich in Reichweite {RANGE.fh} 2 eines oder mehrerer Verbündeter befindest."
     },
     "gh2-73": {
-        "name": "Mantel der Beschwörung",
+        "name": "Mantle of Summoning",
         "source": "Kaufmannsgilde-Ansehen 13",
         "desc": "Gewähre während deines Zugs einem deiner Beschworenen: {SHIELD.fh} 2 {ROUND}"
     },
@@ -3596,7 +3596,7 @@ export default {
         "desc": "Dieser Gegenstand kann nicht verkauft werden und muss in jedes Szenario mitgenommen werden. Wenn du durch einen Angriff {DAMAGE.fh} erleidest, darfst du {DAMAGE.fh} 2 erleiden, damit alle angrenzenden Verbündeten und Gegner {DAMAGE.fh} 2 erleiden."
     },
     "gh2-151": {
-        "name": "Schwert der Sande",
+        "name": "Sword of the Sands",
         "desc": "Füge bei deiner Nahkampf-Angriffsfertigkeit allen Angriffen {WOUND.fh}, {POISON.fh} hinzu."
     },
     "gh2-152": {
@@ -3617,7 +3617,7 @@ export default {
     "gh2-155": {
         "name": "Etheric Elixir",
         "source": "Belohnung von Solo-Szenario - {SW2}",
-        "desc": "Entferne, wenn du die obere {LOST.fh}-Aktion von Belebender Äther ausführst, die {NULL_MODIFIER}-Karte für den Rest des Szenarios aus deinem Angriffsmodifikator-Deck."
+        "desc": "Entferne, wenn du die obere {LOST.fh}-Aktion von Reviving Ether ausführst, die {NULL_MODIFIER}-Karte für den Rest des Szenarios aus deinem Angriffsmodifikator-Deck."
     },
     "gh2-156": {
         "name": "Flüsterklinge",

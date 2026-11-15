@@ -3710,7 +3710,7 @@ export default {
         ]
     },
     "gh2-202": {
-        "name": "Ein unglücklicher Einbruch",
+        "name": "An Unfortunate Intrusion",
         "rewards": [
             "Erhaltet “Fokusstrahl” (Gegenstand 154)"
         ]
@@ -3728,7 +3728,7 @@ export default {
         ]
     },
     "gh2-205": {
-        "name": "Steinverteidigung",
+        "name": "Stone Defense",
         "rewards": [
             "Erhaltet “Steinamulett” (Gegenstand 157)"
         ]
@@ -3740,73 +3740,73 @@ export default {
         ]
     },
     "gh2-207": {
-        "name": "Karawanengeleit",
+        "name": "Caravan Escort",
         "rewards": [
             "Erhaltet “Insignia of the Divine” (Gegenstand 159)"
         ]
     },
     "gh2-208": {
-        "name": "Lagergebühren",
+        "name": "Storage Fees",
         "rewards": [
             "Erhaltet “Werkzeuggürtel” (Gegenstand 160)"
         ]
     },
     "gh2-209": {
-        "name": "Ebene der wilden Bestien",
+        "name": "Plane of Wild Beasts",
         "rewards": [
             "Erhaltet “Phasenfigur” (Gegenstand 161)"
         ]
     },
     "gh2-210": {
-        "name": "Die Nacht ernten",
+        "name": "Harvesting the Night",
         "rewards": [
             "Erhaltet “The Night's Caress” (Gegenstand 162)"
         ]
     },
     "gh2-211": {
-        "name": "Verseuchte Krypta",
+        "name": "Plagued Crypt",
         "rewards": [
             "Erhaltet “Seuchenbrosche” (Gegenstand 163)"
         ]
     },
     "gh2-212": {
-        "name": "Unnatürliche Beleidigungen",
+        "name": "Unnatural Insults",
         "rewards": [
             "Erhaltet “Todesmaske” (Gegenstand 164)"
         ]
     },
     "gh2-213": {
-        "name": "Schlacht der Barden",
+        "name": "Battle of the Bards",
         "rewards": [
             "Erhaltet “Virtuosenlaute” (Gegenstand 165)"
         ]
     },
     "gh2-214": {
-        "name": "Verdorbene Jagd",
+        "name": "Corrupted Hunt",
         "rewards": [
             "Erhaltet “Mantel des Jägers” (Gegenstand 166)"
         ]
     },
     "gh2-215": {
-        "name": "Nachwirkungen",
+        "name": "Aftermath",
         "rewards": [
             "Erhaltet “Arztkittel” (Gegenstand 167)"
         ]
     },
     "gh2-216": {
-        "name": "Elementare Geheimnisse",
+        "name": "Elemental Secrets",
         "rewards": [
             "Erhaltet “Elemental Vest” (Gegenstand 168)"
         ]
     },
     "gh2-217": {
-        "name": "Der gefangene Bär",
+        "name": "The Caged Bear",
         "rewards": [
             "Erhaltet “Befehlsstab” (Gegenstand 169)"
         ]
     },
     "gh2-218": {
-        "name": "Der Sand der Zeit",
+        "name": "The Sands of Time",
         "rewards": [
             "Erhaltet “Crawling Carapace” (Gegenstand 170)"
         ]

@@ -1090,7 +1090,7 @@ export default {
             "Füge eine {+2_WHITE} {FIRE}/{ICE} Karte hinzu",
             "Ignoriere Szenarioeffekte und entferne eine {+0_WHITE} Karte",
             "Wenn du einmal pro Szenario {DAMAGE.fh} erleiden würdest, kannst du {INVISIBLE.fh} und {STUN.fh} erhalten, um den {DAMAGE.fh} aufzuheben",
-            "Wenn sich <i>Belebender Äther</i> bei deiner kurzen Rast in deinem Abwurfstapel befindet, {RECOVER.fh} ihn zuerst",
+            "Wenn sich <i>Reviving Ether</i> bei deiner kurzen Rast in deinem Abwurfstapel befindet, {RECOVER.fh} ihn zuerst",
             "Erhalte am Ende jedes deiner Züge, in dem du eine Aktion mit {LOST.fh} ausgeführt hast, {BLESS.fh}"
         ]
     },
