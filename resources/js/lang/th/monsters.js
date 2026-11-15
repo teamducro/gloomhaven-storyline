@@ -119,7 +119,7 @@ export default {
     "inox-guard": "อิโน็กซ์ยาม",
     "inox-necromancer": "Inox Necromancer",
     "inox-priest": "อิโน็กซ์นักบวช",
-    "inox-shaman": "Inox หมอผี",
+    "inox-shaman": "Inox Shaman",
     "jekserah": "เจคเซราห์",
     "king-cobra": "งูจงอาง",
     "lady-in-white": "Lady in White",
