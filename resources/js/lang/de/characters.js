@@ -495,7 +495,7 @@ export default {
             "Ersetze eine {-2_WHITE} Karte durch eine {+0_WHITE} {DISARM} Karte und eine {-1_WHITE} {ANY} Karte",
             "Ersetze eine {-1_WHITE} Karte durch eine {AGAIN} {+1_WHITE} “{HO_CIRCLE} und eine {AGAIN} {-1_WHITE} {CURSE}” Karte",
             "Ersetze zwei {+1_WHITE} Karten durch eine {+3_WHITE} “{REGENERATE}, Selbst” Karte",
-            "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} “Erzeuge eine Leerengrube auf einem leeren Feld in {RANGE}2” Karte",
+            "Ersetze eine {+0_WHITE} Karte durch eine {+1_WHITE} “Erzeuge ein Void-Pit-Hindernis auf einem leeren Feld in {RANGE}2” Karte",
             "Ignoriere negative Szenarioeffekte und füge eine {+0_WHITE} “{WARD}, Selbst” Karten hinzu"
         ]
     },
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "IF": {
-        "name": "Infuser",
+        "name": "Initiatorin",
         "masteries": [
             "Habe fünf aktive {INFUSION_ICON} Boni",
             "Töte mindestens vier Gegner, ohne jemals anzugreifen"
@@ -741,7 +741,7 @@ export default {
         ]
     },
     "SH": {
-        "name": "Shattersong",
+        "name": "Splitterklang",
         "masteries": [
             "Habe immer 0 {RESONANCE_ICON}, direkt bevor du am Ende jedes deiner Züge {RESONANCE_ICON} erhältst",
             "Gib bei fünf verschiedenen {WAVE} Fertigkeiten jeweils 5 {RESONANCE_ICON} aus"
@@ -761,7 +761,7 @@ export default {
         ]
     },
     "TA": {
-        "name": "Trapper",
+        "name": "Fallensteller",
         "masteries": [
             "Habe eine {HEAL.fh}-Falle mit einem Wert von mindestens 20 auf dem Spielplan",
             "Bewege Gegner mit einer Fertigkeit über sieben oder mehr Fallen"
@@ -780,7 +780,7 @@ export default {
         ]
     },
     "PC": {
-        "name": "Pain Conduit",
+        "name": "Schmerzvektor",
         "masteries": [
             "Bringe andere Figuren dazu, in einer Runde insgesamt mindestens {DAMAGE.fh}40 zu erleiden",
             "Beginne einen Zug mit {WOUND.fh}, {BRITTLE.fh}, {BANE.fh}, {POISON.fh}, {IMMOBILIZE.fh}, {DISARM.fh}, {STUN.fh} und {MUDDLE.fh}"
@@ -839,7 +839,7 @@ export default {
         ]
     },
     "HV": {
-        "name": "HIVE",
+        "name": "DROHN",
         "masteries": [
             "{TRANSFER_ICON} in jeder Runde",
             "{TRANSFER_ICON} in einer Runde in vier verschiedene Beschworene"
@@ -858,7 +858,7 @@ export default {
         ]
     },
     "ME": {
-        "name": "Metal Mosaic",
+        "name": "Metallmosaik",
         "masteries": [
             "Greife nie an",
             "Bewege die Druckanzeige in vier aufeinanderfolgenden Runden um drei Stufen nach oben oder unten von dem Wert, bei dem sie die Runde begonnen hat ({PRESSURE_LOW_ICON} auf {PRESSURE_HIGH_ICON} oder umgekehrt)"
@@ -877,7 +877,7 @@ export default {
         ]
     },
     "DT": {
-        "name": "Deepwraith",
+        "name": "Tiefenspuk",
         "masteries": [
             "Führe alle deine Angriffe mit Vorteil aus",
             "Reichere in jeder Runde {DARK} an"
@@ -898,7 +898,7 @@ export default {
         ]
     },
     "CR": {
-        "name": "Crashing Tide",
+        "name": "Gezeitenbruch",
         "masteries": [
             "Erleide nie Schaden durch Angriffe und werde von mindestens fünf Angriffen anvisiert",
             "Habe zu Beginn jeder deiner Rasten mehr aktive {TIDE_ICON} als Karten in deinem Abwurfstapel"
