@@ -6,10 +6,10 @@ export default {
         "faq": "Las Botas de Zancadas solo suman al valor numérico de una única capacidad de Movimiento existente. No te dan una acción de Movimiento gratuita."
     },
     "gh-2": {
-        "name": "Zapatos alados",
+        "name": "Zapatos Alados",
         "source": "Prosperidad nivel 1",
         "desc": "Durante tu movimiento, añade {JUMP} al movimiento.",
-        "faq": "Los Zapatos alados pueden usarse solo en una única capacidad de Movimiento, no en varias capacidades de Movimiento de una acción (p. ej.: acción con Movimiento, Ataque, Movimiento)."
+        "faq": "Los Zapatos Alados pueden usarse solo en una única capacidad de Movimiento, no en varias capacidades de Movimiento de una acción (p. ej.: acción con Movimiento, Ataque, Movimiento)."
     },
     "gh-3": {
         "name": "Armadura de Piel",
@@ -39,7 +39,7 @@ export default {
         "desc": "Cuando te ataquen, cualquier carta de Modificador de ataque {2X_WHITE} que robe el enemigo se considera {+0_WHITE}."
     },
     "gh-8": {
-        "name": "Escudo triangular",
+        "name": "Escudo Triangular",
         "source": "Prosperidad nivel 1",
         "desc": "Cuando sufras daño por un ataque, obtén {SHIELD} 1 contra ese ataque."
     },
@@ -75,7 +75,7 @@ export default {
         "desc": "Durante tu ataque, añade {ATTACK} +1 a tu acción de ataque entera."
     },
     "gh-15": {
-        "name": "Botas de velocidad",
+        "name": "Botas de Velocidad",
         "source": "Prosperidad nivel 2",
         "desc": "Al comienzo de una ronda, después de que hayan revelado todas las cartas de Capacidad, aumenta o disminuye el valor de iniciativa de tu carta principal en 10."
     },

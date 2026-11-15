@@ -33,7 +33,7 @@ export default {
         "name": "Incensario de Romperrocas"
     },
     "gh-GTRN": {
-        "name": "Fisura neutralizada"
+        "name": "La grieta neutralizada"
     },
     "gh-GAR": {
         "name": "Artefacto recuperado"
