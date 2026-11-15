@@ -7,7 +7,7 @@ export default {
             },
             {
                 "level": 1,
-                "operations": "Közösen vásárolhattok legfeljebb 1 {METAL} 2 aranyért",
+                "operations": "Közösen vásárolhattok legfeljebb 1 {METAL}-t 2 aranyért",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -15,7 +15,7 @@ export default {
             },
             {
                 "level": 2,
-                "operations": "Közösen vásárolhattok legfeljebb 2 {METAL} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 2 {METAL}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -23,7 +23,7 @@ export default {
             },
             {
                 "level": 3,
-                "operations": "Közösen vásárolhattok legfeljebb 3 {METAL} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 3 {METAL}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",
@@ -31,7 +31,7 @@ export default {
             },
             {
                 "level": 4,
-                "operations": "Közösen vásárolhattok legfeljebb 4 {METAL} 2 aranyért darabonként",
+                "operations": "Közösen vásárolhattok legfeljebb 4 {METAL}-t 2 aranyért darabonként",
                 "downtime": "",
                 "wrecked": "",
                 "passive": "",

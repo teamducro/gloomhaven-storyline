@@ -233,5 +233,5 @@ export default {
     "winged-horror": "Winged Horror",
     "yoglang": "Yoglang",
     "your-shadow": "Your Shadow",
-    "zealot": "Fanatikus"
+    "zealot": "Zealot"
 }

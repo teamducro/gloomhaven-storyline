@@ -13,9 +13,9 @@ export default {
     },
     "merchantsBay": {
         "1": "Mindkét tekercset megmentettétek.",
-        "2": "Nem sikerült megmenteni az Utazás krónikáját.",
-        "3": "Nem sikerült megmenteni a Számadáskönyvet.",
-        "title": "A Kereskedők öble",
+        "2": "Nem sikerült megmenteni a Record of the Journeyt.",
+        "3": "Nem sikerült megmenteni a Record of Accountsot.",
+        "title": "Merchant’s Bay",
         "text": "Eloltottátok a lángokat, és elűztétek a betolakodókat. Hány feljegyzést sikerült megmenteni?"
     },
     "shiftingGears": {

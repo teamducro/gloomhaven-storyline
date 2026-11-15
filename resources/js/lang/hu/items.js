@@ -61,7 +61,7 @@ export default {
     "gh-12": {
         "name": "Kis gyógyital",
         "source": "Városfejlettség 1",
-        "desc": "A saját körödben: “{HEAL} 3, magadra”"
+        "desc": "A saját körödben: „{HEAL} 3, magadra”"
     },
     "gh-13": {
         "name": "Kis serkető ital",
@@ -138,7 +138,7 @@ export default {
     "gh-27": {
         "name": "Major Healing Potion",
         "source": "Városfejlettség 3",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 5, magadra” akciót."
+        "desc": "A saját körödben hajts végre egy „{HEAL} 5, magadra” akciót."
     },
     "gh-28": {
         "name": "Moon Earring",
@@ -281,7 +281,7 @@ export default {
     "gh-55": {
         "name": "Super Healing Potion",
         "source": "Városfejlettség 7",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 7, magadra” akciót."
+        "desc": "A saját körödben hajts végre egy „{HEAL} 7, magadra” akciót."
     },
     "gh-56": {
         "name": "Ring of Brutality",
@@ -345,7 +345,7 @@ export default {
     },
     "gh-68": {
         "name": "Halberd",
-        "source": "Városfejlettség 9\n{SCENARIO 111} (Kincs #92)\n132. szakasz -> g106 “Strangler's Park” a füzetben",
+        "source": "Városfejlettség 9\n{SCENARIO 111} (Kincs #92)\n132. szakasz -> g106 „Strangler's Park” a füzetben",
         "desc": "Egyetlen célpontra mért közelharci támadásod során megtámadhatsz egy ellenséget 2 mezőn belül is."
     },
     "gh-69": {
@@ -355,7 +355,7 @@ export default {
     },
     "gh-70": {
         "name": "Second Chance Ring",
-        "source": "Városfejlettség 9\nElfeledett körök kihívás küldetés, 12. síkkapu kártya (Kincs #89)\n103. szakasz -> 84 “Gateway to the Firmament” a füzetben",
+        "source": "Városfejlettség 9\nForgotten Circles kihívás küldetés, 12. síkkapu kártya (Kincs #89)\n103. szakasz -> 84 „Gateway to the Firmament” a füzetben",
         "desc": "A köröd végén játssz ki két lapot a kezedből, és hajts végre egy további kört ebben a fordulóban az új kezdeményezési értéked szerint (amelynek későbbinek kell lennie az előzőnél)."
     },
     "gh-71": {
@@ -371,7 +371,7 @@ export default {
     "gh-73": {
         "name": "Blinking Cape",
         "source": "Véletlenszerű felszerelés",
-        "desc": "A saját körödben hajts végre egy “{MOVE} 4, {JUMP}” akciót."
+        "desc": "A saját körödben hajts végre egy „{MOVE} 4, {JUMP}” akciót."
     },
     "gh-74": {
         "name": "Swordedge Armor",
@@ -476,7 +476,7 @@ export default {
     "gh-94": {
         "name": "Scroll of Healing",
         "source": "Véletlenszerű felszerelés",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 3, {RANGE} 5” akciót."
+        "desc": "A saját körödben hajts végre egy „{HEAL} 3, {RANGE} 5” akciót."
     },
     "gh-95": {
         "name": "Scroll of Stamina",
@@ -491,7 +491,7 @@ export default {
     "gh-97": {
         "name": "Endurance Footwraps",
         "source": "{SCENARIO 38} (Kincs #29)",
-        "desc": "Ha a körödben legalább 4 mezőt mozogsz, hajts végre egy “{HEAL} 1, magadra” akciót."
+        "desc": "Ha a körödben legalább 4 mezőt mozogsz, hajts végre egy „{HEAL} 1, magadra” akciót."
     },
     "gh-98": {
         "name": "Drakescale Boots",
@@ -501,12 +501,12 @@ export default {
     "gh-99": {
         "name": "Magma Waders",
         "source": "{SCENARIO 63} (Kincs #12)",
-        "desc": "Hagyd figyelmen kívül a veszélyes terep sebző hatását, és hajts végre egy “{HEAL} 2, magadra” akciót minden olyan körödben, amelyben veszélyes terep mezőre léptél."
+        "desc": "Hagyd figyelmen kívül a veszélyes terep sebző hatását, és hajts végre egy „{HEAL} 2, magadra” akciót minden olyan körödben, amelyben veszélyes terep mezőre léptél."
     },
     "gh-100": {
         "name": "Robes of Summoning",
         "source": "{SCENARIO 31} (Kincs #69)",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 2, egy általad idézett szövetséges” akciót."
+        "desc": "A saját körödben hajts végre egy „{HEAL} 2, egy általad idézett szövetséges” akciót."
     },
     "gh-101": {
         "name": "Second Skin",
@@ -537,7 +537,7 @@ export default {
     "gh-106": {
         "name": "Necklace of Teeth",
         "source": "Úti esemény 05",
-        "desc": "Valahányszor a körödben megölsz egy ellenséget, hajts végre egy “{HEAL} 1, magadra” akciót."
+        "desc": "Valahányszor a körödben megölsz egy ellenséget, hajts végre egy „{HEAL} 1, magadra” akciót."
     },
     "gh-107": {
         "name": "Szarvas sisak",
@@ -563,7 +563,7 @@ export default {
     "gh-111": {
         "name": "Wave Crest",
         "source": "{SCENARIO 64} (Kincs #09)",
-        "desc": "Ha megtámadnak, és a {ICE} Erős, hajts végre egy “{PUSH} 2” akciót a támadón."
+        "desc": "Ha megtámadnak, és a {ICE} Erős, hajts végre egy „{PUSH} 2” akciót a támadón."
     },
     "gh-112": {
         "name": "Ancient Drill",
@@ -609,7 +609,7 @@ export default {
     "gh-120": {
         "name": "Staff of Summoning",
         "source": "Jutalom: {SCENARIO 88}",
-        "desc": "A saját körödben egy {RANGE} 3 távolságon belüli általad idézett szövetséges végrehajt egy “{MOVE} 3” akciót, amelyet te irányítasz."
+        "desc": "A saját körödben egy {RANGE} 3 távolságon belüli általad idézett szövetséges végrehajt egy „{MOVE} 3” akciót, amelyet te irányítasz."
     },
     "gh-121": {
         "name": "Orb of Dawn",
@@ -630,7 +630,7 @@ export default {
     "gh-124": {
         "name": "Doomed Compass",
         "source": "{SCENARIO 93} (Kincs #54)",
-        "desc": "A saját körödben kényszeríts egy {RANGE} 5 távolságon belüli ellenséget egy “{MOVE} 2” akció végrehajtására, amelyet te irányítasz."
+        "desc": "A saját körödben kényszeríts egy {RANGE} 5 távolságon belüli ellenséget egy „{MOVE} 2” akció végrehajtására, amelyet te irányítasz."
     },
     "gh-125": {
         "name": "Curious Gear",
@@ -660,7 +660,7 @@ export default {
     "gh-130": {
         "name": "Helix Ring",
         "source": "{SCENARIO 81} (Kincs #68)",
-        "desc": "A saját körödben {LIGHT_X} {DARK_X} felhasználásával hajts végre egy “{HEAL} 25, magadra” akciót."
+        "desc": "A saját körödben {LIGHT_X} {DARK_X} felhasználásával hajts végre egy „{HEAL} 25, magadra” akciót."
     },
     "gh-131": {
         "name": "Heart of the Betrayer",
@@ -671,7 +671,7 @@ export default {
     "gh-132": {
         "name": "Power Core",
         "source": "{SCENARIO 67}",
-        "desc": "Idézés: Acél szerkezet.",
+        "desc": "Idézés: Steel Construct.",
         "faq": "A kártyát tartós bónuszként kell kezelni: az aktív területre kerül, amíg az idézett lény meg nem hal, vagy a kártyát el nem távolítják (az idézett lény eltávolításával és a felszerelés kiürülésével). Ha a kártyát visszaforgatják, és van aktív idézett lény a kártyától, az aktív idézett lény eltűnik."
     },
     "gh-133": {
@@ -772,7 +772,7 @@ export default {
     },
     "gh-152": {
         "name": "Ring of Duality",
-        "source": "Jutalom: {SCENARIO 97}\n125. szakasz “A locked chest” a füzetben",
+        "source": "Jutalom: {SCENARIO 97}\n125. szakasz „A locked chest” a füzetben",
         "desc": "Bármely képességkártya felső akciójának végrehajtása után azonnal végrehajthatod ugyanazon kártya alsó akcióját is. Ez a felszerelés nem használható, ha mindkét akció elvesztés ikont {CONSUMED} vált ki."
     },
     "gh-153": {
@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Ancient Bow",
-        "source": "{SCENARIO 107} (Kincs #78)\n32. szakasz “Collapsed Atrium” a füzetben",
+        "source": "{SCENARIO 107} (Kincs #78)\n32. szakasz „Collapsed Atrium” a füzetben",
         "desc": "Távtámadásod során +2 {ATTACK}, {CURSE} és {WOUND} bónuszt kapsz egy támadásodra."
     },
     "gh-158": {
@@ -822,7 +822,7 @@ export default {
     },
     "gh-162": {
         "name": "Rift Device",
-        "source": "Jutalom: {SCENARIO 112}\n62. szakasz “Mechanical Splendor” a füzetben",
+        "source": "Jutalom: {SCENARIO 112}\n62. szakasz „Mechanical Splendor” a füzetben",
         "desc": "A saját körödben {TELEPORT} egy tőled legfeljebb 4 mezőre lévő szabad mezőre."
     },
     "gh-163": {
@@ -889,7 +889,7 @@ export default {
     "jotl-11": {
         "name": "Gyógyital",
         "source": "Jutalom: {SCENARIO 2}",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 3, magadra” akciót."
+        "desc": "A saját körödben hajts végre egy „{HEAL} 3, magadra” akciót."
     },
     "jotl-12": {
         "name": "Stamina Potion",
@@ -909,7 +909,7 @@ export default {
     "jotl-15": {
         "name": "Amulet of Life",
         "source": "Jutalom: {SCENARIO 9}",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 1, magadra” akciót."
+        "desc": "A saját körödben hajts végre egy „{HEAL} 1, magadra” akciót."
     },
     "jotl-16": {
         "name": "Robes of Evocation",
@@ -964,12 +964,12 @@ export default {
     "jotl-26": {
         "name": "Oak Charm",
         "source": "Jutalom: {SCENARIO 15}",
-        "desc": "A saját körödben hajts végre egy “{BLESS}, {RANGE} 5” akciót."
+        "desc": "A saját körödben hajts végre egy „{BLESS}, {RANGE} 5” akciót."
     },
     "jotl-27": {
         "name": "Fateful Compass",
         "source": "{SCENARIO 3} (Kincs #10)",
-        "desc": "A saját körödben kényszeríts egy {RANGE} 3 távolságon belüli ellenséget egy “{MOVE} 2” akció végrehajtására, amelyet te irányítasz."
+        "desc": "A saját körödben kényszeríts egy {RANGE} 3 távolságon belüli ellenséget egy „{MOVE} 2” akció végrehajtására, amelyet te irányítasz."
     },
     "jotl-28": {
         "name": "Flea-Bitten Shawl",
@@ -995,7 +995,7 @@ export default {
     "jotl-32": {
         "name": "Ring of Restoration",
         "source": "Elveszett áru #F: {SCENARIO 20}",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 3, {RANGE} 5” akciót."
+        "desc": "A saját körödben hajts végre egy „{HEAL} 3, {RANGE} 5” akciót."
     },
     "jotl-33": {
         "name": "Steel Ring",
@@ -1010,12 +1010,12 @@ export default {
     "jotl-35": {
         "name": "Robes of Command",
         "source": "Jutalom: {SCENARIO 24}",
-        "desc": "A saját körödben egy szomszédos szövetséges végrehajthat egy “{ATTACK} 2” akciót."
+        "desc": "A saját körödben egy szomszédos szövetséges végrehajthat egy „{ATTACK} 2” akciót."
     },
     "jotl-36": {
         "name": "Jet Boots",
         "source": "Jutalom: {SCENARIO 25}",
-        "desc": "Mozgás akciódkor “+1 {MOVE} és {JUMP}” bónuszt kapsz egy mozgásodra."
+        "desc": "Mozgás akciódkor „+1 {MOVE} és {JUMP}” bónuszt kapsz egy mozgásodra."
     },
     "cs-1": {
         "name": "Orb of Confusion",
@@ -1043,7 +1043,7 @@ export default {
     },
     "cs-7": {
         "name": "Orb of Vitality",
-        "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy végrehajts egy “{HEAL} 1, magadra” akciót. Ha három token van a kártyán, az {CONSUMED}."
+        "desc": "A saját körödben helyezhetsz egy karakter tokent erre a kártyára, hogy végrehajts egy „{HEAL} 1, magadra” akciót. Ha három token van a kártyán, az {CONSUMED}."
     },
     "cs-8": {
         "name": "Orb of Protection",
@@ -1071,7 +1071,7 @@ export default {
     },
     "cs-14": {
         "name": "Chain Mace",
-        "desc": "A saját körödben hajts végre egy “{ATTACK} 3, {RANGE} 2” akciót."
+        "desc": "A saját körödben hajts végre egy „{ATTACK} 3, {RANGE} 2” akciót."
     },
     "cs-15": {
         "name": "Draining Greaves",
@@ -1091,7 +1091,7 @@ export default {
     },
     "cs-19": {
         "name": "Boots of Perpetuity",
-        "desc": "Immunis vagy a {IMMOBILIZE} hatásra.\nA köröd végén, ha a körödben nem mozogtál, hajts végre egy “{MOVE} 1” akciót."
+        "desc": "Immunis vagy a {IMMOBILIZE} hatásra.\nA köröd végén, ha a körödben nem mozogtál, hajts végre egy „{MOVE} 1” akciót."
     },
     "cs-20": {
         "name": "Curious Pendant",
@@ -1131,7 +1131,7 @@ export default {
     },
     "cs-29": {
         "name": "Intoxicating Potion",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 5, {POISON}, magadra” akciót."
+        "desc": "A saját körödben hajts végre egy „{HEAL} 5, {POISON}, magadra” akciót."
     },
     "cs-30": {
         "name": "Iron Snare",
@@ -1143,7 +1143,7 @@ export default {
     },
     "cs-32": {
         "name": "Shifting Compass",
-        "desc": "A saját körödben kényszeríts egy 5 távolságon belüli ellenséget egy “{MOVE} 2, {JUMP}” képesség végrehajtására, amelyet te irányítasz."
+        "desc": "A saját körödben kényszeríts egy 5 távolságon belüli ellenséget egy „{MOVE} 2, {JUMP}” képesség végrehajtására, amelyet te irányítasz."
     },
     "cs-33": {
         "name": "Battering Ram",
@@ -1171,7 +1171,7 @@ export default {
     },
     "cs-39": {
         "name": "Hook Shot",
-        "desc": "A saját körödben hajts végre egy “{ATTACK} 2, {RANGE} 3, {PIERCE} 2” akciót."
+        "desc": "A saját körödben hajts végre egy „{ATTACK} 2, {RANGE} 3, {PIERCE} 2” akciót."
     },
     "cs-40": {
         "name": "Moonleather Boots",
@@ -1183,7 +1183,7 @@ export default {
     },
     "cs-42": {
         "name": "Robe of Soothing",
-        "desc": "Valahányszor egy szövetségesnek {PRAYER} képességkártyát adsz, az a szövetséges végrehajthat egy “{HEAL} 2, magára” akciót."
+        "desc": "Valahányszor egy szövetségesnek {PRAYER} képességkártyát adsz, az a szövetséges végrehajthat egy „{HEAL} 2, magára” akciót."
     },
     "cs-43": {
         "name": "Resplendent Mitre",
@@ -1195,7 +1195,7 @@ export default {
     },
     "cs-45": {
         "name": "Chain Cannon",
-        "desc": "A saját körödben hajts végre egy “{PULL} 2, magadat egy {RANGE} 3 távolságon belüli ellenség felé” akciót."
+        "desc": "A saját körödben hajts végre egy „{PULL} 2, magadat egy {RANGE} 3 távolságon belüli ellenség felé” akciót."
     },
     "cs-46": {
         "name": "Summoner's Whistle",
@@ -1255,7 +1255,7 @@ export default {
     },
     "cs-60": {
         "name": "Mana Medicine",
-        "desc": "A saját körödben hajts végre egy “{HEAL} 5, magadra” akciót. {ANY}"
+        "desc": "A saját körödben hajts végre egy „{HEAL} 5, magadra” akciót. {ANY}"
     },
     "cs-61": {
         "name": "Ashsteel Gauntlets",
@@ -1295,11 +1295,11 @@ export default {
     },
     "cs-70": {
         "name": "Utility Rope",
-        "desc": "A saját körödben hajts végre egy “{PULL} 2, célpont: egy {RANGE} 3 távolságon belüli szövetséges vagy ellenség” akciót."
+        "desc": "A saját körödben hajts végre egy „{PULL} 2, célpont: egy {RANGE} 3 távolságon belüli szövetséges vagy ellenség” akciót."
     },
     "cs-71": {
         "name": "Fireproof Helm",
-        "desc": "Valahányszor {WOUND} miatt sebzést szenvednél, ehelyett hajts végre egy “{HEAL} 1, magadra” akciót."
+        "desc": "Valahányszor {WOUND} miatt sebzést szenvednél, ehelyett hajts végre egy „{HEAL} 1, magadra” akciót."
     },
     "cs-72": {
         "name": "Wooden Ladder",
@@ -1307,7 +1307,7 @@ export default {
     },
     "cs-73": {
         "name": "Medical Kit",
-        "desc": "Valahányszor egy képességkártya alapértelmezett felső akcióját használod, “{ATTACK} 2” képesség helyett végrehajthatsz egy “{HEAL} 2, {RANGE} 1” képességet."
+        "desc": "Valahányszor egy képességkártya alapértelmezett felső akcióját használod, „{ATTACK} 2” képesség helyett végrehajthatsz egy „{HEAL} 2, {RANGE} 1” képességet."
     },
     "cs-74": {
         "name": "Mild Bolstering Tonic",
@@ -1383,11 +1383,11 @@ export default {
     },
     "cs-92": {
         "name": "Viper Blowgun",
-        "desc": "A saját körödben {EARTH_X} felhasználásával végrehajthatsz egy “{ATTACK} 1, {RANGE} 3, {POISON}” akciót."
+        "desc": "A saját körödben {EARTH_X} felhasználásával végrehajthatsz egy „{ATTACK} 1, {RANGE} 3, {POISON}” akciót."
     },
     "cs-93": {
         "name": "Refined Viper Blowgun",
-        "desc": "A saját körödben hajts végre egy “{ATTACK} 1, {RANGE} 4, {POISON}” akciót. {EARTH_X} felhasználásával PLUSZ {TARGET} bónuszt kaphatsz."
+        "desc": "A saját körödben hajts végre egy „{ATTACK} 1, {RANGE} 4, {POISON}” akciót. {EARTH_X} felhasználásával PLUSZ {TARGET} bónuszt kaphatsz."
     },
     "cs-94": {
         "name": "Frost Stone",
@@ -1471,7 +1471,7 @@ export default {
     },
     "cs-rm05": {
         "name": "Rite of Ruin",
-        "desc": "Támadás képességed során {WOUND} hatást szerezve +3 {ATTACK} bónuszt kapsz egy támadásodra. Ha megölöd a célpontot, hajts végre egy “{HEAL} 3, magadra” akciót."
+        "desc": "Támadás képességed során {WOUND} hatást szerezve +3 {ATTACK} bónuszt kapsz egy támadásodra. Ha megölöd a célpontot, hajts végre egy „{HEAL} 3, magadra” akciót."
     },
     "cs-rm06": {
         "name": "Savage Cuirass",
@@ -3513,7 +3513,7 @@ export default {
     },
     "gh2-134": {
         "name": "Power Core",
-        "desc": "Idézés: Acél szerkezet"
+        "desc": "Idézés: Steel Construct"
     },
     "gh2-135": {
         "name": "Resonant Crystal",
