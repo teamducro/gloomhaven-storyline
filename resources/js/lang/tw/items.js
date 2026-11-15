@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "遠古弓",
-        "source": "{SCENARIO 107}（寶藏 #78）\n段落 32「崩塌的中庭」（書中）",
+        "source": "{SCENARIO 107}（寶藏 #78）\n段落 42「崩塌的中庭」（書中）",
         "desc": "在你的遠程攻擊中，單次攻擊增加 +2 {ATTACK}，並附加 {CURSE} 和 {WOUND}。"
     },
     "gh-158": {

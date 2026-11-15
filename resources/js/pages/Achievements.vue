@@ -42,7 +42,7 @@
             </div>
 
             <div v-if="appData.game !== 'fh'" class="w-full flex justify-center">
-                <h1>{{ $t('Global') }} {{ $t('Achievements') }}</h1>
+                <h1>{{ $t('Global Achievements') }}</h1>
             </div>
             <div v-if="appData.game !== 'fh'" class="w-full flex justify-center">
                 <ul v-if="achievements" id="global-achievements" class="mdc-deprecated-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
@@ -62,7 +62,7 @@
         </div>
         <div v-if="appData.game !== 'fh'" class="pt-4 pb-4 px-4 flex flex-wrap">
             <div class="w-full flex justify-center">
-                <h1>{{ $t('Party') }} {{ $t('Achievements') }}</h1>
+                <h1>{{ $t('Party Achievements') }}</h1>
             </div>
             <div class="w-full flex justify-center">
                 <ul v-if="achievements" id="party-achievements" class="mdc-deprecated-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
@@ -82,7 +82,7 @@
         </div>
         <div v-else class="pt-4 pb-4 px-4 flex flex-wrap">
             <div class="w-full flex justify-center">
-                <h1>{{ $t('Campaign') }} {{ $t('Stickers') }}</h1>
+                <h1>{{ $t('Campaign Stickers') }}</h1>
             </div>
             <div class="w-full flex justify-center">
                 <ul v-if="achievements" id="campaign-achievements" class="mdc-deprecated-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
@@ -102,7 +102,7 @@
         </div>
     </div>
     <div v-else>
-        <h1 class="pt-16 text-center">{{ $t('No achievements in ') }} {{ $t(game) }}</h1>
+        <h1 class="pt-16 text-center">{{ $t('No achievements in {game}', {game: $t(game)}) }}</h1>
     </div>
 </template>
 

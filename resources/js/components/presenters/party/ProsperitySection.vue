@@ -2,7 +2,7 @@
     <div class="w-full mt-8">
         <div class="mb-2 flex items-center">
             <slot name="title">
-                <h2>{{ $t(sheet.game == 'fh' ? 'Frosthaven' : 'Gloomhaven') + ' ' + $t('Prosperity') }}</h2>
+                <h2>{{ $t(sheet.game == 'fh' ? 'Frosthaven Prosperity' : 'Gloomhaven Prosperity') }}</h2>
             </slot>
             <rollback :loading="loading" ref="rollback"
                       v-model:value="sheet.prosperityIndex"/>

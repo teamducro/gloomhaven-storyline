@@ -234,7 +234,7 @@ export default {
         "name": "“Ancient Bow” (Item 157)",
     },
     "fc-79": {
-        "name": "Gain “Falcon Figurine” (Item 157)",
+        "name": "Gain “Falcon Figurine” (Item 035)",
     },
     "fc-80": {
         "name": "Gain 1 ✓ and add Rift Event 19 to the deck",
@@ -636,7 +636,7 @@ export default {
         "name": "Gain Bone Boots blueprint 071"
     },
     "fh-50": {
-        "name": "Gain Cured Hide Armor 017."
+        "name": "Gain Cured Leather Armor 017."
     },
     "fh-51": {
         "name": "Read 78.1."

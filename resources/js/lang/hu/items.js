@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Ancient Bow",
-        "source": "{SCENARIO 107} (Kincs #78)\n32. szakasz „Collapsed Atrium” a füzetben",
+        "source": "{SCENARIO 107} (Kincs #78)\n42. szakasz „Collapsed Atrium” a füzetben",
         "desc": "Távtámadásod során +2 {ATTACK}, {CURSE} és {WOUND} bónuszt kapsz egy támadásodra."
     },
     "gh-158": {

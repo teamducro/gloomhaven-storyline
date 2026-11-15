@@ -9200,7 +9200,7 @@
             "count": 2,
             "cost": 40,
             "slot": "Two Hands",
-            "source": "{SCENARIO 107} (Treasure #78)\nSection 32 “Collapsed Atrium” in book",
+            "source": "{SCENARIO 107} (Treasure #78)\nSection 42 “Collapsed Atrium” in book",
             "desc": "During your ranged attack, add +2 {ATTACK}, {CURSE}, and {WOUND} to a single attack.",
             "consumed": true
         },

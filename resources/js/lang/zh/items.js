@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Ancient Bow",
-        "source": "{SCENARIO 107}（宝藏 #78）\n书中段落 32 “坍塌中庭”",
+        "source": "{SCENARIO 107}（宝藏 #78）\n书中段落 42 “坍塌中庭”",
         "desc": "在你的远程攻击期间，使1次攻击增加 +2 {ATTACK}、{CURSE} 和 {WOUND}。"
     },
     "gh-158": {

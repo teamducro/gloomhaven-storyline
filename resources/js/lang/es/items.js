@@ -797,7 +797,7 @@ export default {
     },
     "gh-157": {
         "name": "Arco antiguo",
-        "source": "Recompensa de {SCENARIO 107} (Tesoro #78)\nSección 32 “Collapsed Atrium” in book",
+        "source": "Recompensa de {SCENARIO 107} (Tesoro #78)\nSección 42 “Collapsed Atrium” in book",
         "desc": "Durante tu ataque a distancia, añade {ATTACK} +2, {CURSE}, y {WOUND} a un único ataque."
     },
     "gh-158": {

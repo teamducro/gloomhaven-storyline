@@ -234,7 +234,7 @@ export default {
         "name": "“Ancient Bow” (Item 157)"
     },
     "fc-79": {
-        "name": "Ganhe “Falcon Figurine” (Item 157)"
+        "name": "Ganhe “Estatueta de Falcão” (Item 035)"
     },
     "fc-80": {
         "name": "Ganhe 1 ✓ e adicione o Evento de Fenda 19 ao baralho"
