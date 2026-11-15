@@ -837,7 +837,7 @@ export default {
         "name": "Scenario Secondario Casuale"
     },
     "gh2-33": {
-        "name": "Ottieni “Pozione di Cura” (Oggetto 101)"
+        "name": "Ottieni “Cure Potion” (Oggetto 101)"
     },
     "gh2-34": {
         "name": "Ottieni “Elmo di Scaglie di Draco” (Oggetto 121)"

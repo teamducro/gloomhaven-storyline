@@ -607,14 +607,14 @@ export default {
         ]
     },
     "gh2-3": {
-        "name": "Abilità Potenziate",
+        "name": "Augmented Abilities",
         "progress": [
             "Acquista cinque potenziamenti (richiede il traguardo globale “La Forza del Potenziamento”).",
             "Leggi {SECTION} 71.2."
         ]
     },
     "gh2-4": {
-        "name": "La Caduta dell'Uomo",
+        "name": "The Fall of Man",
         "progress": [
             "Ottieni “Aesther Spyglass” (Oggetto 149). Non può essere venduto.",
             "Usa “Aesther Spyglass” (Oggetto 149) dieci volte.",
@@ -623,7 +623,7 @@ export default {
         ]
     },
     "gh2-5": {
-        "name": "Cercatore di Xorn",
+        "name": "Seeker of Xorn",
         "progress": [
             "Sali di livello per sbloccare {SCENARIO 57}.",
             "Porta {SCENARIO 57} a conclusione.",
@@ -632,7 +632,7 @@ export default {
         ]
     },
     "gh2-6": {
-        "name": "Fanatico del Dio del Sangue",
+        "name": "Zealot of the Blood God",
         "progress": [
             "Termina dieci scenari con i punti ferita pari o inferiori alla metà del massimo senza diventare sfinito.",
             "Leggi {SECTION} 122.3."
@@ -646,7 +646,7 @@ export default {
         ]
     },
     "gh2-8": {
-        "name": "Riconquistare gli Alberi",
+        "name": "Take Back the Trees",
         "progress": [
             "Vivi dieci eventi di strada con il tuo gruppo.",
             "Leggi {SECTION} 64.3.",
@@ -655,7 +655,7 @@ export default {
         ]
     },
     "gh2-9": {
-        "name": "Alla Ricerca della Cura",
+        "name": "Finding the Cure",
         "progress": [
             "Completa scenari in cinque tra: Montagne Coldirame, Bosco dei Cadaveri, Foresta dei Pugnali, Gloomhaven, Palude Persistente, Mare Nebbioso, Montagne dell'Osservatore.",
             "Leggi {SECTION} 55.3.",
@@ -664,7 +664,7 @@ export default {
         ]
     },
     "gh2-10": {
-        "name": "Sterminatore di Aberrazioni",
+        "name": "Aberrant Slayer",
         "progress": [
             "Potenzia una carta capacità (tua o di un alleato) con un elemento {ANY} (richiede il traguardo globale “La Forza del Potenziamento”).",
             "Leggi {SECTION} 14.3.",
@@ -680,7 +680,7 @@ export default {
         ]
     },
     "gh2-12": {
-        "name": "Strumento di Luce",
+        "name": "Implement of Light",
         "progress": [
             "Sblocca subito {SCENARIO 65}.",
             "Trova “Shield of the Righteous” (Oggetto 148).",
@@ -689,7 +689,7 @@ export default {
         ]
     },
     "gh2-13": {
-        "name": "Classe Mercante",
+        "name": "Merchant Class",
         "progress": [
             "Possiedi tre oggetti {HEAD}.",
             "Possiedi tre oggetti {BODY}.",
@@ -700,7 +700,7 @@ export default {
         ]
     },
     "gh2-14": {
-        "name": "Viandante Eterno",
+        "name": "Eternal Wanderer",
         "progress": [
             "Completa 12 scenari diversi.",
             "Leggi {SECTION} 52.2."
@@ -715,7 +715,7 @@ export default {
         ]
     },
     "gh2-16": {
-        "name": "Il Veleno Perfetto",
+        "name": "The Perfect Poison",
         "progress": [
             "Ottieni “Pugnale Avvelenato” (Oggetto 7).",
             "Usalo per applicare {POISON} a un nemico senza {POISON} 30 volte.",
@@ -731,7 +731,7 @@ export default {
         ]
     },
     "gh2-18": {
-        "name": "Leggenda di Battaglia",
+        "name": "Battle Legend",
         "progress": [
             "Ottieni 12 segni di spunta dagli obiettivi della battaglia completati.",
             "Leggi {SECTION} 23.3."
@@ -745,7 +745,7 @@ export default {
         ]
     },
     "gh2-20": {
-        "name": "Devozione in Ogni Cosa",
+        "name": "Piety in All Things",
         "progress": [
             "Dona 120 monete d'oro al Tempio della Grande Quercia.",
             "Leggi {SECTION} 51.5."
@@ -759,7 +759,7 @@ export default {
         ]
     },
     "gh2-22": {
-        "name": "Caccia ai Trofei",
+        "name": "Trophy Hunt",
         "progress": [
             "Uccidi 20 tipi diversi di mostri.",
             "Leggi {SECTION} 21.1."

@@ -2898,7 +2898,7 @@ export default {
         "faq": "Le carte X contano come carte di livello 1, quindi possono essere recuperate anch'esse."
     },
     "gh2-13": {
-        "name": "Pozione Elementale",
+        "name": "Element Potion",
         "source": "Prosperità 1",
         "desc": "Durante il tuo turno, {ANY}."
     },
@@ -2944,7 +2944,7 @@ export default {
         "desc": "Durante il tuo turno, aggiungi +1 {ATTACK.fh} a tutti i tuoi attacchi."
     },
     "gh2-22": {
-        "name": "Lancia di Ferro",
+        "name": "Iron Spear",
         "source": "Prosperità 2",
         "desc": "Durante il tuo turno, una delle tue capacità di attacco in mischia a bersaglio singolo può bersagliare un nemico a due esagoni di distanza."
     },
@@ -2979,13 +2979,13 @@ export default {
         "desc": "Alle prossime tre fonti di {DAMAGE.fh} da attacchi che ti bersagliano, ottieni {SHIELD.fh} 1 per gli attacchi."
     },
     "gh2-29": {
-        "name": "Gambali Agili",
+        "name": "Nimble Legguards",
         "source": "Prosperità 3",
         "desc": "Quando un alleato adiacente starebbe per essere bersagliato da un attacco, vieni bersagliato tu al suo posto, indipendentemente da gittata e linea di vista.",
         "faq": "Se sei invisibile e non puoi essere bersagliato, non puoi reindirizzare l'attacco su di te."
     },
     "gh2-30": {
-        "name": "Arco Spezzacorazze",
+        "name": "Armorbane Bow",
         "source": "Prosperità 3",
         "desc": "Durante il tuo turno, aggiungi {PIERCE.fh} 3 a tutti i tuoi attacchi a distanza."
     },
@@ -3060,7 +3060,7 @@ export default {
         "desc": "Dopo la tua capacità di attacco a distanza, esegui: {ATTACK.fh} 1, {TARGET.fh} 1 bersaglio della capacità di attacco a qualsiasi {RANGE.fh}, {PIERCE.fh} 1"
     },
     "gh2-45": {
-        "name": "Pozione Elementale Maggiore",
+        "name": "Major Element Potion",
         "source": "Prosperità 5\nEvento di Strada 52",
         "desc": "Durante il tuo turno, {ANY} {ANY}."
     },
@@ -3085,7 +3085,7 @@ export default {
         "desc": "Dopo che ti sei mosso di 4 o più esagoni durante il tuo turno, aggiungi +1 {ATTACK.fh} al tuo prossimo attacco in mischia di questo turno."
     },
     "gh2-50": {
-        "name": "Vesti della Quercia",
+        "name": "Robes of the Oak",
         "source": "Prosperità 6",
         "desc": "Durante il tuo turno, esegui: {HEAL.fh} 3, Un alleato, {RANGE.fh} 1"
     },
@@ -3105,7 +3105,7 @@ export default {
         "desc": "Durante il tuo turno, aggiungi +2 {ATTACK.fh} a tutti i tuoi attacchi."
     },
     "gh2-54": {
-        "name": "Diadema della Santità",
+        "name": "Circlet of Sanctity",
         "source": "Prosperità 7",
         "desc": "Dopo i prossimi tre attacchi che bersagliano un alleato entro {RANGE.fh} 2, gira questa carta.",
         "backDesc": "Durante il tuo turno, esegui: {WARD.fh}, {RANGE.fh} 3 poi gira questa carta."
@@ -3121,7 +3121,7 @@ export default {
         "desc": "Alla fine del turno, se ti sei mosso di 1 o meno esagoni durante il tuo turno, ottieni {SHIELD.fh} 1 per il round."
     },
     "gh2-57": {
-        "name": "Anello dello Stratega",
+        "name": "Strategist's Ring",
         "source": "Prosperità 7",
         "desc": "Alla fine del turno, gioca una carta dalla tua mano ed esegui tutte le capacità persistenti e obbligatorie dell'azione superiore o inferiore della carta."
     },
@@ -3202,7 +3202,7 @@ export default {
         "backDesc": "Dopo le prossime tre capacità di attacco che effettui mentre ti trovi entro {RANGE.fh} 2 da uno o più alleati, gira questa carta."
     },
     "gh2-73": {
-        "name": "Mantello dell'Evocazione",
+        "name": "Mantle of Summoning",
         "source": "Reputazione Gilda dei Mercanti 13",
         "desc": "Durante il tuo turno, concedi a una delle tue evocazioni: {SHIELD.fh} 2 {ROUND}"
     },
@@ -3346,7 +3346,7 @@ export default {
         "backDesc": "Durante la tua capacità di movimento, aggiungi +2 {MOVE.fh} e gira questa carta."
     },
     "gh2-101": {
-        "name": "Pozione di Cura",
+        "name": "Cure Potion",
         "source": "{SCENARIO 89} (Tesoro #33)",
         "desc": "Durante il tuo turno, rimuovi una condizione negativa che hai. Questo oggetto può essere usato anche mentre hai {STUN.fh}."
     },
@@ -3596,7 +3596,7 @@ export default {
         "desc": "Questo oggetto non può essere venduto e deve essere portato in ogni scenario. Quando subisci {DAMAGE.fh} da un attacco, puoi subire {DAMAGE.fh} 2 per far subire {DAMAGE.fh} 2 a tutti gli alleati e i nemici adiacenti."
     },
     "gh2-151": {
-        "name": "Spada delle Sabbie",
+        "name": "Sword of the Sands",
         "desc": "Durante la tua capacità di attacco in mischia, aggiungi {WOUND.fh}, {POISON.fh} a tutti gli attacchi."
     },
     "gh2-152": {

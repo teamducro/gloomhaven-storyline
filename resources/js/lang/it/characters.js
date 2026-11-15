@@ -1134,7 +1134,7 @@ export default {
         ]
     },
     "BS2": {
-        "name": "Sciame di Lame",
+        "name": "Bladeswarm",
         "masteries": [
             "Esegui 6 diverse capacità {PERSISTENT}{LOST.fh}, di cui al massimo 3 siano capacità di evocazione",
             "Ottieni questa maestria quando ritieni di meritarla"
