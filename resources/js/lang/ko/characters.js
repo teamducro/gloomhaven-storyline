@@ -1,6 +1,6 @@
 export default {
     "BR": {
-        "name": "야만인",
+        "name": "브루트",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{-1_WHITE} 카드 1장을 {+1_WHITE} 카드 1장으로 교체",
@@ -16,7 +16,7 @@ export default {
         ]
     },
     "CH": {
-        "name": "바위심장",
+        "name": "크레이그하트",
         "perks": [
             "{+0_WHITE} 카드 4장 제거",
             "{-1_WHITE} 카드 1장을 {+1_WHITE} 카드 1장으로 교체",
@@ -31,7 +31,7 @@ export default {
         ]
     },
     "SW": {
-        "name": "주문직인",
+        "name": "스펠위버",
         "perks": [
             "{+0_WHITE} 카드 4장 제거",
             "{-1_WHITE} 카드 1장을 {+1_WHITE} 카드 1장으로 교체",
@@ -47,7 +47,7 @@ export default {
         ]
     },
     "TI": {
-        "name": "땜장이",
+        "name": "팅커러",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{-2_WHITE} 카드 1장을 {+0_WHITE} 카드 1장으로 교체",
@@ -63,7 +63,7 @@ export default {
         ]
     },
     "SC": {
-        "name": "무법자",
+        "name": "스컨드럴",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{+0_WHITE} 카드 4장 제거",
@@ -79,7 +79,7 @@ export default {
         ]
     },
     "MT": {
-        "name": "정신도둑",
+        "name": "마인드씨프",
         "perks": [
             "{-1_WHITE} 카드 2장 제거",
             "{+0_WHITE} 카드 4장 제거",

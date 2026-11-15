@@ -73,7 +73,7 @@ export default {
             "name": "가시 갑옷"
         },
         "strength-in-agony": {
-            "name": "strength in agony"
+            "name": "고통의 힘"
         },
         "the-maw-of-madness": {
             "name": "광기의 나락"
@@ -250,7 +250,7 @@ export default {
             "name": "overwhelming offensive"
         },
         "putrid-grubs": {
-            "name": "썩은 구더기"
+            "name": "putrid grubs"
         },
         "bloat-maggots": {
             "name": "bloat maggots"
@@ -5369,7 +5369,7 @@ export default {
             "name": "fired up"
         },
         "the-power-of-enhancement": {
-            "name": "향상의 위력"
+            "name": "강화의 위력"
         },
         "shared-glory": {
             "name": "shared glory"
@@ -5524,7 +5524,7 @@ export default {
             "name": "방어 전술"
         },
         "run-through": {
-            "name": "꿰뚫기"
+            "name": "run through"
         },
         "immovable-phalanx": {
             "name": "부동의 밀집대형"
@@ -5629,7 +5629,7 @@ export default {
             "name": "험난한 끝"
         },
         "entomb": {
-            "name": "매장"
+            "name": "entomb"
         },
         "wave-of-destruction": {
             "name": "wave of destruction"
@@ -5848,7 +5848,7 @@ export default {
             "name": "etheric echo"
         },
         "heatwave": {
-            "name": "heatwave"
+            "name": "열기의 파동"
         },
         "arctic-shards": {
             "name": "arctic shards"
@@ -5989,7 +5989,7 @@ export default {
             "name": "화려한 기분 전환"
         },
         "strength-in-agony": {
-            "name": "strength in agony"
+            "name": "고통의 힘"
         },
         "defiance-of-death": {
             "name": "죽음에 저항"
@@ -6115,7 +6115,7 @@ export default {
             "name": "들끓기"
         },
         "putrid-grubs": {
-            "name": "썩은 구더기"
+            "name": "putrid grubs"
         },
         "overwhelming-offensive": {
             "name": "overwhelming offensive"

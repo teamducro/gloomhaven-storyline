@@ -144,7 +144,7 @@ export default {
     "lurker-wavethrower": "잠복자 파도투척자",
     "manifestation-of-corruption": "Manifestation Of Corruption",
     "merciless-overseer": "무자비한 감독관",
-    "merciless-taskmaster": "무자비한 감독관",
+    "merciless-taskmaster": "Merciless Taskmaster",
     "morphling": "모플링",
     "mountains-heart": "산의 심장",
     "naaret": "나아렛",

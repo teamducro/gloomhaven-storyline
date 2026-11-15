@@ -21,13 +21,13 @@ export default {
         "name": "도시 통치: 상인"
     },
     "gh-GCRM": {
-        "name": "도시 통치: 군부"
+        "name": "도시 규칙: 군사력 중심"
     },
     "gh-GEOI": {
         "name": "침입의 결말"
     },
     "gh-GTPE": {
-        "name": "향상의 위력"
+        "name": "강화의 위력"
     },
     "gh-PSC": {
         "name": "스톤브레이커의 향로"
@@ -45,19 +45,19 @@ export default {
         "name": "The Artifact: Lost"
     },
     "gh-GAT": {
-        "name": "고대 기술"
+        "name": "고대의 기술"
     },
     "gh-GAT2": {
-        "name": "고대 기술 x2"
+        "name": "고대의 기술 x2"
     },
     "gh-GAT3": {
-        "name": "고대 기술 x3"
+        "name": "고대의 기술 x3"
     },
     "gh-GAT4": {
-        "name": "고대 기술 x4"
+        "name": "고대의 기술 x4"
     },
     "gh-GAT5": {
-        "name": "고대 기술 x5"
+        "name": "고대의 기술 x5"
     },
     "gh-PTR": {
         "name": "폐허 통과"
@@ -66,7 +66,7 @@ export default {
         "name": "목소리의 지시"
     },
     "gh-PTDC": {
-        "name": "드레이크의 지시"
+        "name": "용의 부탁"
     },
     "gh-PFC": {
         "name": "단서 추적"
@@ -87,7 +87,7 @@ export default {
         "name": "목소리의 보물"
     },
     "gh-PTDT": {
-        "name": "드레이크의 보물"
+        "name": "용의 보물"
     },
     "gh-GTDS": {
         "name": "드레이크를 죽이다"
@@ -387,7 +387,7 @@ export default {
         "name": "An Uneasy Peace"
     },
     "gh2-G2AT": {
-        "name": "고대 기술"
+        "name": "고대의 기술"
     },
     "gh2-G2CRD": {
         "name": "도시 통치: 악마"
@@ -396,7 +396,7 @@ export default {
         "name": "도시 통치: 상인"
     },
     "gh2-G2CRMI": {
-        "name": "도시 통치: 군부"
+        "name": "도시 규칙: 군사력 중심"
     },
     "gh2-G2EM": {
         "name": "Elements Mastered"
@@ -432,7 +432,7 @@ export default {
         "name": "드레이크를 죽이다"
     },
     "gh2-G2TPE": {
-        "name": "향상의 위력"
+        "name": "강화의 위력"
     },
     "gh2-G2TVF": {
         "name": "목소리를 풀어주다"
