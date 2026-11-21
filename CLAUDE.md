@@ -11,7 +11,7 @@ Vocabulary: `GLOSSARY.md` (rulebook terms; use them in prose, plans and UI text)
 ```bash
 npm run dev | watch | prod | prod-fh   # build into public/ (watch = vite build --watch, no dev server)
 npm test                               # Cypress runner against https://gloomhaven-storyline.test/ (valet link)
-npm run test:arch                      # architecture + game data rules (`tests/arch.test.js`), no build needed
+npm run test:arch                      # architecture + game data rules (`cypress/arch.test.js`), no build needed
 ```
 `.env`: set `MIX_WEB_URL`, `MIX_APP_URL`.
 
