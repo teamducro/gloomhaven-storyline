@@ -1,6 +1,6 @@
 # Gloomhaven 2nd Edition (gh2)
 
-Background, sources and decisions: `docs/GH 2nd/README.md` and `docs/GH 2nd/plans/`.
+Background, sources and decisions: `docs/gh2e/notes/README.md` and `docs/gh2e/notes/plans/`.
 
 ## Wiring
 
