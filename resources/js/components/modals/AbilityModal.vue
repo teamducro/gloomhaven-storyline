@@ -132,10 +132,9 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-ability-card', (payload) => {
+        this.$listen('open-ability-card', (payload) => {
             this.open(payload);
         });
-        this.$bus.$on('close-ability-card', this.close);
     },
     computed: {
         canEnhance() {

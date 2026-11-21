@@ -94,10 +94,7 @@ export default {
     },
     mounted() {
         this.setStories();
-        this.$bus.$on('campaigns-changed', this.setStories);
-    },
-    unmounted() {
-        this.$bus.$off('campaigns-changed', this.setStories);
+        this.$listen('campaigns-changed', this.setStories);
     },
     methods: {
         async setStories() {

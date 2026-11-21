@@ -33,28 +33,13 @@ import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
 import Helpers from "../../services/Helpers";
 import UserRepository from "../../apiRepositories/UserRepository";
+import {getInitialLanguage, languages} from "../../services/app/setInitialLanguage";
 
 export default {
     data() {
         return {
             current: null,
-            languages: {
-                'en': 'English',
-                'fr': 'Français',
-                'it': 'Italiano',
-                'de': 'Deutsch',
-                'es': 'Español',
-                'pl': 'Polski',
-                'ru': 'Pусский',
-                'hu': 'Magyar',
-                'pt': 'Português',
-                'br': 'Português (Brasil)',
-                'cs': 'Čeština',
-                'ko': '한국어',
-                'th': 'ไทย',
-                'zh': '简体中文',
-                'tw': '繁體中文',
-            },
+            languages,
             flags: {
                 'en': '🇺🇸',
                 'fr': '🇫🇷',
@@ -102,42 +87,8 @@ export default {
             store.set('lang', this.current);
             this.updateUserLanguage();
         },
-        getInitialLanguage() {
-            let lang = store.get('lang');
-
-            // 'pt' used to be Brazilian Portuguese, before European Portuguese was added.
-            if (!store.get('ptSplit')) {
-                store.set('ptSplit', true);
-                if (lang === 'pt') {
-                    lang = 'br';
-                    store.set('lang', lang);
-                }
-            }
-
-            if (!lang) {
-                const locale = this.browserLanguage(navigator.language);
-                if (this.validLanguage(locale)) {
-                    lang = locale;
-                    store.set('lang', lang);
-                }
-            }
-
-            return lang;
-        },
         setInitialLanguage() {
-            this.current = this.getInitialLanguage() || window.i18n.locale;
-        },
-        browserLanguage(locale) {
-            if (locale === 'pt-BR') {
-                return 'br';
-            }
-            if (/^zh-(TW|HK|MO|Hant)/.test(locale)) {
-                return 'tw';
-            }
-            return locale.substring(0, 2);
-        },
-        validLanguage(lang) {
-            return this.languages.hasOwnProperty(lang);
+            this.current = getInitialLanguage() || window.i18n.locale;
         },
         updateUserLanguage(wait = true) {
             if (Helpers.loggedIn() && typeof app.user?.lang === 'undefined' && wait === true) {

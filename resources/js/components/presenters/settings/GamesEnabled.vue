@@ -50,6 +50,7 @@ import store from "store/dist/store.modern";
 
 import md5 from 'js-md5';
 import {Game} from "../../../models/Game";
+import {announceEnabledGames, enabledGamesMap} from "../../../services/app/getEnabledGames";
 import Sheet from "../../../models/Sheet";
 import SheetRepository from "../../../repositories/SheetRepository";
 
@@ -75,31 +76,14 @@ export default {
     },
     mounted() {
         this.setEdition();
-        this.$bus.$on('campaigns-changed', this.setEdition);
-    },
-    unmounted() {
-        this.$bus.$off('campaigns-changed', this.setEdition);
+        this.$listen('campaigns-changed', this.setEdition);
     },
     methods: {
         init() {
-            const enabledGames = this.readEnabled();
-            const gameData = new GameData;
-            this.games = gameData.games();
-            this.games.forEach((code) => {
-                this.enabled[code] = code in enabledGames ? enabledGames[code] : gameData.enabledByDefault(code);
-                this.disabled[code] = false;
-            });
+            this.games = new GameData().games();
+            Object.assign(this.enabled, enabledGamesMap());
+            this.games.forEach(code => this.disabled[code] = false);
             this.checkDisabled();
-        },
-        getEnabled() {
-            this.init();
-            return this.emit();
-        },
-        enableGame(game) {
-            this.init();
-            this.enabled[game] = true;
-            this.store();
-            return this.emit();
         },
         toggle(code) {
             this.store();
@@ -110,14 +94,8 @@ export default {
         },
         store() {
             store.set('gamesEnabled', this.enabled);
-            this.emit();
+            announceEnabledGames(this.enabled);
             this.checkDisabled();
-        },
-        emit() {
-            const games = this.enabledAsArray();
-            this.$bus.$emit('enabled-games-changed', games);
-
-            return games;
         },
         // gh and gh2 are separate games, the campaign picks which one is played as Gloomhaven
         selectEdition(game) {
@@ -151,14 +129,8 @@ export default {
             }
             this.rerender();
         },
-        readEnabled() {
-            return store.get('gamesEnabled', {});
-        },
         rerender() {
             this.listKey = md5(JSON.stringify(this.disabled) + this.currentEdition);
-        },
-        enabledAsArray() {
-            return collect(this.enabled).filter(v => v).keys().toArray();
         }
     }
 }

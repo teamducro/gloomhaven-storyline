@@ -61,8 +61,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-donations', this.open);
-        this.$bus.$on('close-donations', this.close);
+        this.$listen('open-donations', this.open);
     },
     methods: {
         async open() {

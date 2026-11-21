@@ -264,14 +264,11 @@ export default {
     mounted() {
         Helpers.removeQueryString();
         this.setUser();
-        this.$bus.$on('campaigns-changed', this.setUser);
+        this.$listen('campaigns-changed', this.setUser);
 
         if (this.receivedACampaignCode) {
             this.scrollToForm();
         }
-    },
-    unmounted() {
-        this.$bus.$off('campaigns-changed', this.setUser);
     },
     computed: {
         showPurchaseButton() {

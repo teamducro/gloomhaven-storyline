@@ -26,7 +26,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-monster', ({game, monster}) => {
+        this.$listen('open-monster', ({game, monster}) => {
             this.game = game;
             this.monster = monster;
             this.$refs['modal'].open();

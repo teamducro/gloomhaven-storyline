@@ -114,10 +114,7 @@ export default {
         this.applyData();
     },
     mounted() {
-        this.$bus.$on('campaigns-changed', this.applyData);
-    },
-    unmounted() {
-        this.$bus.$off('campaigns-changed', this.applyData);
+        this.$listen('campaigns-changed', this.applyData);
     },
     computed: {
         showPurchaseButton() {

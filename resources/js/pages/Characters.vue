@@ -341,12 +341,8 @@ export default {
     mounted() {
         this.render();
 
-        this.$bus.$on('campaigns-changed', this.render);
-        this.$bus.$on('select-character', this.select);
-    },
-    unmounted() {
-        this.$bus.$off('campaigns-changed', this.render);
-        this.$bus.$off('select-character', this.select);
+        this.$listen('campaigns-changed', this.render);
+        this.$listen('select-character', this.select);
     },
     computed: {
         Game() {

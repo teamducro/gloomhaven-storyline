@@ -42,11 +42,11 @@
 
 import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
+import {applyFont, readFontSettings} from "../../services/app/getFont";
 
 export default {
     data() {
         return {
-            defaultFont: 'Nyala',
             settings: {
                 current: 'Nyala',
                 headers: false,
@@ -89,57 +89,15 @@ export default {
             store.set('font', this.settings);
             this.rerender();
         },
-        getFont() {
-            this.init();
-            return this.settings;
-        },
-        getInitialFont() {
-            let fontSettings = store.get('font');
-
-            // Apply font settings from local storage
-            if (typeof fontSettings === 'object') {
-                this.settings = fontSettings;
-            }
-            // Otherwise use default font settings
-            else {
-                this.settings.current = this.defaultFont;
-                store.set('font', this.settings);
-            }
-
-            return this.settings.current;
-        },
         init() {
-            const initialFont = this.getInitialFont();
-            if (this.settings.current != initialFont) {
-                this.settings.current = initialFont;
-            }
+            this.settings = readFontSettings();
             this.rerender();
         },
         validateFont(font) {
             return this.fonts.hasOwnProperty(font);
         },
         rerender() {
-            const stylesheet = [...document.styleSheets].find(sheet => sheet.href?.includes('/css/app.css'));
-            const titleFont = 'Pirata One';
-
-            const cssSelectors = ['html, body', '.font-title', '.font-default', 'div[class*="mdc-"]', 'h1, h2, h3', '#storyline text'];
-            const cssSelectorsWithFonts = Object.fromEntries(cssSelectors.map(selector => [selector, this.settings.current]));
-
-            if (!this.settings.headers) {
-                cssSelectorsWithFonts['h1, h2, h3'] = titleFont;
-                cssSelectorsWithFonts['.font-title'] = titleFont;
-            }
-
-            if (!this.settings.storyline) {
-                cssSelectorsWithFonts['#storyline text'] = titleFont;
-            }
-
-            for (let [selector, font] of Object.entries(cssSelectorsWithFonts)) {
-                const cssRule = [...stylesheet.cssRules].find((r) => r.selectorText === selector)
-                if (cssRule) {
-                    cssRule.style.setProperty('font-family', font, 'important');
-                }
-            };
+            applyFont(this.settings);
         },
     }
 }

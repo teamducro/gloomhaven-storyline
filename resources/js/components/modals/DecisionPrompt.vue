@@ -56,7 +56,7 @@ export default {
     mounted() {
         if (!this.config.promptAfter) {
             this.togglePrompt(this.config.show);
-            this.$bus.$on('open-scenario', (data) => {
+            this.$listen('open-scenario', (data) => {
                 this.togglePrompt(this.config.show);
             });
         }

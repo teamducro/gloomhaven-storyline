@@ -31,10 +31,9 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-modifier-deck', (args) => {
+        this.$listen('open-modifier-deck', (args) => {
             this.open(args);
         });
-        this.$bus.$on('close-modifier-deck', this.close);
     },
     methods: {
         async open(args) {

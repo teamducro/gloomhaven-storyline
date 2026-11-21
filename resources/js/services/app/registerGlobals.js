@@ -1,3 +1,7 @@
+import bus from "../EventBus";
+
+const listeners = new WeakMap;
+
 // Replaces vue-clipboard2 (v-clipboard:copy) and vue-scrollto ($scrollTo), and keeps Vue 2 behaviour.
 export default function registerGlobals(app) {
     // Vue 2 logged component errors; Vue 3's dev build rethrows them (e.g. offline API calls in async hooks).
@@ -21,4 +25,15 @@ export default function registerGlobals(app) {
     app.config.globalProperties.$scrollTo = selector => {
         document.querySelector(selector)?.scrollIntoView({behavior: 'smooth'});
     };
+
+    // Bus subscription that ends with the component, so no $off is needed.
+    app.config.globalProperties.$listen = function (event, callback) {
+        bus.$on(event, callback);
+        listeners.set(this, [...(listeners.get(this) || []), [event, callback]]);
+    };
+    app.mixin({
+        beforeUnmount() {
+            listeners.get(this)?.forEach(([event, callback]) => bus.$off(event, callback));
+        },
+    });
 }

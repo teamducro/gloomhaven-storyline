@@ -42,7 +42,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-edit-campaign-modal', this.open);
+        this.$listen('open-edit-campaign-modal', this.open);
     },
     methods: {
         changeName: _.debounce(function () {

@@ -106,10 +106,7 @@ export default {
 
         this.render();
 
-        this.$bus.$on('campaigns-changed', this.render);
-    },
-    unmounted() {
-        this.$bus.$off('campaigns-changed', this.render);
+        this.$listen('campaigns-changed', this.render);
     },
     watch: {
 

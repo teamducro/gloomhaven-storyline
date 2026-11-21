@@ -25,10 +25,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('toast', this.open)
-    },
-    unmounted() {
-        this.$bus.$off('toast', this.open)
+        this.$listen('toast', this.open)
     },
     methods: {
         open(message, isSuccess = true) {

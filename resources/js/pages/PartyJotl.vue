@@ -80,12 +80,8 @@ export default {
     mounted() {
         this.render();
 
-        this.$bus.$on('campaigns-changed', this.render);
-        this.$bus.$on('remove-card', this.removeCard);
-    },
-    unmounted() {
-        this.$bus.$off('campaigns-changed', this.render);
-        this.$bus.$off('remove-card', this.removeCard);
+        this.$listen('campaigns-changed', this.render);
+        this.$listen('remove-card', this.removeCard);
     },
     methods: {
         async render() {

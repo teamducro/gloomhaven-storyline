@@ -29,10 +29,7 @@ export default {
             this.setArcs();
         }
 
-        this.$bus.$on('scenarios-updated', this.setArcs);
-    },
-    unmounted() {
-        this.$bus.$off('scenarios-updated', this.setArcs);
+        this.$listen('scenarios-updated', this.setArcs);
     },
     methods: {
         // Arcs in data order (the story order); an arc starts once one of its scenarios is complete.

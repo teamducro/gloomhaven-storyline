@@ -77,10 +77,10 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-achievement', (data) => {
+        this.$listen('open-achievement', (data) => {
             this.open(data.id);
         });
-        this.$bus.$on('game-selected', () => {
+        this.$listen('game-selected', () => {
             this.unsetAchievement();
         });
     },

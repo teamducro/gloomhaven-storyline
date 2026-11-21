@@ -46,12 +46,8 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('event-chosen', this.chosen);
-        this.$bus.$on('remove-card', this.removed);
-    },
-    unmounted() {
-        this.$bus.$off('event-chosen', this.chosen);
-        this.$bus.$off('remove-card', this.removed);
+        this.$listen('event-chosen', this.chosen);
+        this.$listen('remove-card', this.removed);
     },
     methods: {
         open(entry) {

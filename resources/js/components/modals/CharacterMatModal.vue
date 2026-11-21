@@ -44,7 +44,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-character-mat', this.open);
+        this.$listen('open-character-mat', this.open);
     },
     methods: {
         open(character) {
