@@ -78,11 +78,8 @@ export default {
         this.campaignId = app.campaignId;
     },
     mounted() {
-        this.$bus.$on('campaigns-changed', this.setStory);
+        this.$listen('campaigns-changed', this.setStory);
         this.setStory();
-    },
-    unmounted() {
-        this.$bus.$off('campaigns-changed', this.setStory);
     },
     methods: {
         async setStory() {

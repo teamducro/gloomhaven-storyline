@@ -29,7 +29,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-confirm', this.open);
+        this.$listen('open-confirm', this.open);
     },
     methods: {
         open(data) {

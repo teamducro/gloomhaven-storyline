@@ -59,9 +59,8 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-calendar-week', this.open);
-        this.$bus.$on('close-item', this.close);
-        this.$bus.$on('game-selected', this.close);
+        this.$listen('open-calendar-week', this.open);
+        this.$listen('game-selected', this.close);
     },
     computed: {
         title() {

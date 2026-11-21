@@ -137,7 +137,7 @@ export default {
             this.setAchievements();
         }
 
-        this.$bus.$on('achievements-updated', this.setAchievements);
+        this.$listen('achievements-updated', this.setAchievements);
     },
     unmounted() {
         if (this.globalList) {
@@ -149,7 +149,6 @@ export default {
         if (this.campaignList) {
             this.campaignList.destroy();
         }
-        this.$bus.$off('achievements-updated', this.setAchievements);
     },
     methods: {
         async setAchievements() {

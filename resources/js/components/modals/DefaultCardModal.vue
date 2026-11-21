@@ -41,10 +41,9 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-default-card', (card) => {
+        this.$listen('open-default-card', (card) => {
             this.open(card);
         });
-        this.$bus.$on('close-default-card', this.close);
     },
     methods: {
         async open(card) {

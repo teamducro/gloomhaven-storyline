@@ -51,7 +51,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-share-campaign-code-modal', this.open);
+        this.$listen('open-share-campaign-code-modal', this.open);
     },
     unmounted() {
         this.clearTimer();

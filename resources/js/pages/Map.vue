@@ -128,14 +128,14 @@ export default {
             this.setScenarios();
         }
 
-        this.$bus.$on('scenarios-updated', this.setScenarios);
-        this.$bus.$on('windows-resized', this.setScenarios);
+        this.$listen('scenarios-updated', this.setScenarios);
+        this.$listen('windows-resized', this.setScenarios);
 
         if (app.achievements) {
             this.setAchievements();
         }
-        this.$bus.$on('achievements-updated', this.setAchievements);
-        this.$bus.$on('game-selected', this.loadMap);
+        this.$listen('achievements-updated', this.setAchievements);
+        this.$listen('game-selected', this.loadMap);
         
         if (app.overlays) {
             this.setOverlays();
@@ -143,17 +143,11 @@ export default {
         if (app.buildings) {
             this.setBuildings();
         }
-        this.$bus.$on('buildings-updated', this.setBuildings);
-        this.$bus.$on('overlays-updated', this.setOverlays);
+        this.$listen('buildings-updated', this.setBuildings);
+        this.$listen('overlays-updated', this.setOverlays);
     },
     unmounted() {
         this.map?.dispose();
-        this.$bus.$off('scenarios-updated', this.setScenarios);
-        this.$bus.$off('windows-resized', this.setScenarios);
-        this.$bus.$off('achievements-updated', this.setAchievements);
-        this.$bus.$off('game-selected', this.loadMap);
-        this.$bus.$off('buildings-updated', this.setBuildings);
-        this.$bus.$off('overlays-updated', this.setOverlays);
         if (this.mapTouch) {
             this.mapTouch.destroy();
         }

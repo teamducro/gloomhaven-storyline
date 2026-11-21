@@ -41,10 +41,7 @@ export default {
     },
     mounted() {
         this.hash = md5(JSON.stringify(this.currentCalendar));
-        this.$bus.$on('calendar-updated', this.setCalendar);
-    },
-    unmounted() {
-        this.$bus.$off('calendar-updated', this.setCalendar);
+        this.$listen('calendar-updated', this.setCalendar);
     },
     watch: {
         calendar: {

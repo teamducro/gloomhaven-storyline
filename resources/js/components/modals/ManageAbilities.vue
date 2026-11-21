@@ -68,10 +68,9 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-manage-abilities', (character) => {
+        this.$listen('open-manage-abilities', (character) => {
             this.open(character);
         });
-        this.$bus.$on('close-manage-abilities', this.close);
     },
     computed: {
         characterEnhancements() {

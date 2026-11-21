@@ -104,10 +104,9 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-event-card', (card) => {
+        this.$listen('open-event-card', (card) => {
             this.open(card);
         });
-        this.$bus.$on('close-event-card', this.close);
     },
     methods: {
         open(card) {

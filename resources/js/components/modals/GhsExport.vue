@@ -30,10 +30,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-ghs-export-modal', this.open);
-    },
-    unmounted() {
-        this.$bus.$off('open-ghs-export-modal', this.open);
+        this.$listen('open-ghs-export-modal', this.open);
     },
     methods: {
         open(scenarioId) {

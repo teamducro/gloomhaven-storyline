@@ -69,7 +69,7 @@ Data: `scenarios` in `games/{game}.json` (GH+FC: `gh.json`). `ScenarioValidator`
 - `prosperity`: thresholds, last item per level. `shop`: FH/JotL shop items, GH items in FH.
 - `rules`: reputation prices, donations (GH2 Great Oak), FH morale → defense and calendar sections, difficulty tables, default city rule, enhancement-unlocking achievements.
 - `enhancements`: base costs. `classEvents`. `sections` (gh2): GH2 sheet events, reputation achievements, sections.
-Add new rules to the game's file. Games without own values copy GH's (jotl, cs prosperity/enhancements/rules); fc and mp fall back to GH in `GameData`. Every file has the same keys (`cypress/e2e/tracker/game-data.cy.js`).
+Add new rules to the game's file. Games without own values copy GH's (jotl, cs prosperity/enhancements/rules); fc and mp fall back to GH in `GameData`. Every file has the same keys and scenario references resolve (`tests/arch.test.js`).
 
 ## Characters, items, enhancements
 

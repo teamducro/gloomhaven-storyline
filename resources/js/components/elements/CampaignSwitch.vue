@@ -62,7 +62,7 @@ export default {
         this.select = new MDCSelect(this.$refs['campaign-switch']);
         this.select.listen('MDCSelect:change', this.selected);
 
-        this.$bus.$on('campaigns-changed', this.applyData);
+        this.$listen('campaigns-changed', this.applyData);
     },
     updated() {
         // MDC caches option values and owns the selected text, so resync after Vue re-renders the options
@@ -71,8 +71,6 @@ export default {
     },
     unmounted() {
         this.select?.destroy();
-
-        this.$bus.$off('campaigns-changed', this.applyData);
     },
     methods: {
         open() {

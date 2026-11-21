@@ -241,7 +241,7 @@ export default {
     },
     mounted() {
         this.drawer = MDCDrawer.attachTo(this.$refs['menu']);
-        this.$bus.$on('campaigns-changed', this.setUser);
+        this.$listen('campaigns-changed', this.setUser);
     },
     methods: {
         toggle() {

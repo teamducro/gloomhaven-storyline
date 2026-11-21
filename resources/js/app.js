@@ -202,7 +202,6 @@ const vueApp = createApp({
             })
             this.items = collect(items);
             await this.$nextTick();
-            this.$bus.$emit('items-updated');
 
             return true;
         },

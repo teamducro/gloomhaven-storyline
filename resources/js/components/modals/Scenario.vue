@@ -390,13 +390,13 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-scenario', (data) => {
+        this.$listen('open-scenario', (data) => {
             this.open(data.id);
         });
-        this.$bus.$on('close-scenario', () => {
+        this.$listen('close-scenario', () => {
             this.close();
         });
-        this.$bus.$on('game-selected', () => {
+        this.$listen('game-selected', () => {
             this.unsetScenario();
         });
     },

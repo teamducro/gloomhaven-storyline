@@ -51,10 +51,10 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-building-card', (building) => {
+        this.$listen('open-building-card', (building) => {
             this.open(building);
         });
-        this.$bus.$on('close-building-card', this.close);
+        this.$listen('close-building-card', this.close);
     },
     methods: {
         async open(building) {

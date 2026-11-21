@@ -59,9 +59,9 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('campaigns-changed', this.setCurrent)
-        this.$bus.$on('game-selected', this.setSelected)
-        this.$bus.$on('enabled-games-changed', this.setGames)
+        this.$listen('campaigns-changed', this.setCurrent)
+        this.$listen('game-selected', this.setSelected)
+        this.$listen('enabled-games-changed', this.setGames)
 
         this.select = new MDCSelect(this.$refs['game-switch'])
         this.select.listen('MDCSelect:change', this.selected)
@@ -73,10 +73,6 @@ export default {
     },
     unmounted() {
         this.select?.destroy()
-
-        this.$bus.$off('campaigns-changed', this.setCurrent)
-        this.$bus.$off('game-selected', this.setSelected)
-        this.$bus.$off('enabled-games-changed', this.setGames)
     },
     methods: {
         open() {

@@ -11,6 +11,7 @@ Vocabulary: `GLOSSARY.md` (rulebook terms; use them in prose, plans and UI text)
 ```bash
 npm run dev | watch | prod | prod-fh   # build into public/ (watch = vite build --watch, no dev server)
 npm test                               # Cypress runner against https://gloomhaven-storyline.test/ (valet link)
+npm run test:arch                      # architecture + game data rules (`tests/arch.test.js`), no build needed
 ```
 `.env`: set `MIX_WEB_URL`, `MIX_APP_URL`.
 
@@ -28,7 +29,7 @@ PRs target `develop`.
 
 ## Architecture
 
-- No Vuex: global state on root instance `window.app`; event bus `$bus` (`services/EventBus.js` on `globalProperties`); `provide/inject` for `appData.game`, `appData.story`.
+- No Vuex: global state on root instance `window.app`; event bus `$bus` (`services/EventBus.js` on `globalProperties`; components subscribe with `this.$listen(event, callback)`, which unsubscribes on unmount); `provide/inject` for `appData.game`, `appData.story`.
 - Static game data: one `resources/js/games/{game}.json` per game, read via `services/GameData.js`. `gh.json` holds the FC scenarios, items and achievements; `fc.json` only FC's own data.
 - Campaign state: one localStorage blob per campaign (`app.campaignData`, key `app.campaignId`) holding every game; each `Storable` model writes its `fieldsToStore` under its `key()`, and `delete()` writes `null` (a tombstone the server needs). Key layout: `gloomhaven-domain` skill.
 - Sync: `Versionable` models carry `version` + md5 `hash`; `StorySyncer` bumps the version of each changed model and PUTs the blob when its hash changes; the server reports per-key conflicts. Realtime via Echo/Pusher.

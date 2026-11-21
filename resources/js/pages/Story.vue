@@ -52,18 +52,15 @@ export default {
         }
 
         c('#storyline-container').on('click', '.scenario', this.scenarioClicked);
-        this.$bus.$on('scenarios-updated', this.render);
-        this.$bus.$on('orientation-changed', this.orientationChanged);
-        this.$bus.$on('campaigns-changed', this.setCampaignName);
+        this.$listen('scenarios-updated', this.render);
+        this.$listen('orientation-changed', this.orientationChanged);
+        this.$listen('campaigns-changed', this.setCampaignName);
 
         this.setCampaignName();
     },
     unmounted() {
         this.removeZoom();
         c('#storyline-container').off('click', '.scenario', this.scenarioClicked);
-        this.$bus.$off('scenarios-updated', this.render);
-        this.$bus.$off('orientation-changed', this.orientationChanged);
-        this.$bus.$off('campaigns-changed', this.setCampaignName);
     },
     methods: {
         render() {

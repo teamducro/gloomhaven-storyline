@@ -32,7 +32,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-transfer-modal', this.open);
+        this.$listen('open-transfer-modal', this.open);
     },
     methods: {
         open(value) {

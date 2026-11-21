@@ -182,10 +182,7 @@ export default {
             this.setScenarios();
         }
 
-        this.$bus.$on('scenarios-updated', this.setScenarios);
-    },
-    unmounted() {
-        this.$bus.$off('scenarios-updated', this.setScenarios);
+        this.$listen('scenarios-updated', this.setScenarios);
     },
     computed: {
         monsters() {
