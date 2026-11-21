@@ -7,15 +7,13 @@
              @touchend="hoverEnd"
              @touchcancel="hoverEnd">
             <alert :type="success ? 'success' : 'error'">
-                <component v-bind:is="render()"></component>
+                <span v-html="message"></span>
             </alert>
         </div>
     </transition>
 </template>
 
 <script>
-import Helpers from "../../services/Helpers";
-
 export default {
     data() {
         return {
@@ -27,17 +25,9 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('toast', this.open)
-    },
-    destroyed() {
-        this.$bus.$off('toast', this.open)
+        this.$listen('toast', this.open)
     },
     methods: {
-        render() {
-            return {
-                template: `<span>${this.message}</span>`
-            };
-        },
         open(message, isSuccess = true) {
             this.message = message;
             this.success = isSuccess;

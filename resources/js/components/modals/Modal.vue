@@ -1,7 +1,7 @@
 <template>
     <div class="mdc-dialog" ref="modal" aria-modal="true">
         <div class="mdc-dialog__container z-10">
-            <div class="mdc-dialog__surface relative" :class="{'full-screen': fullScreen}"
+            <div class="mdc-dialog__surface relative outline-none" ref="surface" tabindex="-1" :class="{'full-screen': fullScreen}"
                  :style="{'max-width': fullScreen ? '100vw' : maxWidth}">
                 <slot name="body">
                     <h2 class="mdc-dialog__title" :class="{
@@ -12,6 +12,7 @@
                         <span class="absolute right-0 top-0">
                         <button v-if="closeButton" type="button" data-mdc-dialog-action="close"
                                 class="mdc-button mt-4">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons">close</i>
                         </button>
                         </span>
@@ -33,6 +34,7 @@
 import {MDCDialog} from '@material/dialog';
 
 export default {
+    emits: ['closed', 'closing', 'opened', 'opening'],
     props: {
         title: {
             type: String
@@ -72,6 +74,8 @@ export default {
             this.$emit('opening');
         });
         this.modal.listen('MDCDialog:opened', () => {
+            // MDC only trap-focuses tabbable elements, so it would pick the close button
+            this.$refs['surface'].focus();
             this.$emit('opened');
         });
         this.modal.listen('MDCDialog:closing', (action) => {

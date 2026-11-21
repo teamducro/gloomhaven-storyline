@@ -1,40 +1,34 @@
+import './services/app/globals';
+import components from './services/app/components';
 import ScenarioRepository from "./repositories/ScenarioRepository";
 import ScenarioValidator from "./validators/ScenarioValidator";
-import SocialSharing from 'vue-social-sharing';
-import VueClipboard from 'vue-clipboard2';
 import ShareState from "./services/ShareState";
 import QuestRepository from "./repositories/QuestRepository";
 import AchievementRepository from "./repositories/AchievementRepository";
-import VueRouter from 'vue-router';
-import VueI18n from 'vue-i18n';
-import VueAnalytics from 'vue-analytics';
+import {createRouter, createWebHashHistory} from 'vue-router';
 import i18nEn from "./lang/en/en";
 import Helpers from './services/Helpers';
 import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
-import {loadStripe} from '@stripe/stripe-js/pure';
 import EchoService from "./services/app/EchoService";
-import VueScrollTo from "vue-scrollto";
 import StorySyncer from "./services/StorySyncer";
 import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
 import BuildingRepository from "./repositories/BuildingRepository";
 import OverlayRepository from "./repositories/OverlayRepository";
 import * as Sentry from "@sentry/vue";
-import {Integrations} from "@sentry/tracing";
 import migrateVersion1Progress from "./services/app/migrateVersion1Progress";
 import migrateVersion2Progress from "./services/app/migrateVersion2Progress";
+import migrateDonationProsperity from "./services/app/migrateDonationProsperity";
+import migrateSheets from "./services/app/migrateSheets";
 import isWebpSupported from "./services/app/isWebpSupported";
 import listenToCrtlS from "./services/app/listenToCrtlS";
 import checkHasMouse from "./services/app/checkHasMouse";
 import checkOrientation from "./services/app/checkOrientation";
 import polyfills from "./services/app/polyfills";
-import dayjs from "dayjs";
-import localizedFormat from 'dayjs/plugin/localizedFormat';
-import relativeTime from 'dayjs/plugin/relativeTime';
 import TreasureValidator from "./validators/TreasureValidator";
-import Vue from 'vue';
+import {createApp, markRaw} from 'vue';
 import setInitialLanguage from "./services/app/setInitialLanguage";
 import {gsap} from "gsap";
 import {Flip} from "gsap/Flip.js";
@@ -42,75 +36,45 @@ import getEnabledGames from "./services/app/getEnabledGames";
 import getFont from "./services/app/getFont";
 import BaseUrl from "./mixins/BaseUrl";
 import {Game} from "./models/Game";
+import GameData from "./services/GameData";
+import SheetRepository from "./repositories/SheetRepository";
 import enableGame from "./services/app/enableGame";
 import registerServiceWorker from "./services/app/RegisterServiceWorker";
-
-window._ = require('lodash');
-window.c = require('cash-dom');
-window.Vue = Vue;
-window.collect = require('collect.js');
-window.axios = require('axios').default.create({
-    baseURL: process.env.MIX_API_URL,
-    withCredentials: true,
-    withXSRFToken: true
-});
-
-dayjs.extend(localizedFormat);
-dayjs.extend(relativeTime);
-
-Vue.use(SocialSharing);
-VueClipboard.config.autoSetContainer = true;
-Vue.use(VueClipboard);
-Vue.use(VueScrollTo);
+import reloadForNewBuild from "./services/app/reloadForNewBuild";
+import routes from './routes';
+import bus from './services/EventBus';
+import createLegacyI18n from './services/createLegacyI18n';
+import registerGlobals from './services/app/registerGlobals';
+import '../sass/theme.scss';
+import '../sass/app.scss';
 
 gsap.registerPlugin(Flip);
 
-// Vue components
-const components = require.context('./components', true, /\.vue$/i);
-components.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], components(key).default));
+const router = createRouter({history: createWebHashHistory(), routes});
 
-// Router
-const routes = require('./routes').default;
-const router = new VueRouter({routes});
-Vue.use(VueRouter);
-
-// Analytics
-if (Helpers.inProduction() && process.env.MIX_GA_ID) {
-    Vue.use(VueAnalytics, {
-        id: process.env.MIX_GA_ID,
-        router
-    });
-}
-
-if (Helpers.inProduction() && process.env.MIX_SENTRY_DSN) {
-    Sentry.init({
-        Vue: window.Vue,
-        dsn: process.env.MIX_SENTRY_DSN,
-        integrations: [new Integrations.BrowserTracing()],
-        tracesSampleRate: 0,
-        logErrors: false
-    });
-}
-
-// Multi Language
-Vue.use(VueI18n);
-window.i18n = new VueI18n({
-    locale: 'en',
-    fallbackLocale: 'en',
-    messages: {
-        en: i18nEn
-    },
-    silentTranslationWarn: true
+window.addEventListener('vite:preloadError', (event) => reloadForNewBuild() && event.preventDefault());
+// Chrome, Firefox and Safari messages for a lazy route chunk that failed to load.
+router.onError((error) => {
+    if (/dynamically imported module|Importing a module script failed/.test(error?.message)) {
+        reloadForNewBuild();
+    }
+    console.error(error);
 });
 
-// event bus
-Vue.prototype.$bus = new Vue;
+// Router 4 ignores URL changes until its first navigation is done, then overwrites them; follow one made while booting.
+const bootHash = location.hash;
+const removeBootGuard = router.beforeResolve(() => {
+    removeBootGuard();
+    if (location.hash !== bootHash) {
+        return location.hash.slice(1) || '/';
+    }
+});
 
-window.app = new Vue({
+const i18n = createLegacyI18n({en: i18nEn});
+window.i18n = i18n.global;
+
+const vueApp = createApp({
     mixins: [BaseUrl],
-    i18n,
-    router,
-    el: '#app',
     provide() {
         const appData = {}
 
@@ -142,7 +106,7 @@ window.app = new Vue({
     data() {
         return {
             game: null,
-            mainGame: process.env.MIX_MAIN_GAME || Game.gh,
+            mainGame: import.meta.env.MIX_MAIN_GAME || Game.gh,
             story: null,
             enabledGames: {},
             scenarios: null,
@@ -160,19 +124,20 @@ window.app = new Vue({
             campaignData: {},
             font: null,
 
-            scenarioRepository: new ScenarioRepository,
-            questRepository: new QuestRepository,
-            achievementRepository: new AchievementRepository,
-            itemRepository: new ItemRepository,
-            buildingRepository: new BuildingRepository,
-            overlayRepository: new OverlayRepository,
-            userRepository: new UserRepository,
-            storyRepository: new StoryRepository,
-            echo: new EchoService,
-            scenarioValidator: new ScenarioValidator,
-            treasureValidator: new TreasureValidator,
-            storySyncer: new StorySyncer,
-            offlineChecker: new OfflineChecker(this.$bus)
+            // Stateless for the UI: raw, so their reads aren't proxied and tracked
+            scenarioRepository: markRaw(new ScenarioRepository),
+            questRepository: markRaw(new QuestRepository),
+            achievementRepository: markRaw(new AchievementRepository),
+            itemRepository: markRaw(new ItemRepository),
+            buildingRepository: markRaw(new BuildingRepository),
+            overlayRepository: markRaw(new OverlayRepository),
+            userRepository: markRaw(new UserRepository),
+            storyRepository: markRaw(new StoryRepository),
+            echo: markRaw(new EchoService),
+            scenarioValidator: markRaw(new ScenarioValidator),
+            treasureValidator: markRaw(new TreasureValidator),
+            storySyncer: markRaw(new StorySyncer),
+            offlineChecker: markRaw(new OfflineChecker(this.$bus))
         }
     },
     async mounted() {
@@ -189,12 +154,11 @@ window.app = new Vue({
         this.$bus.$on('campaign-selected', this.switchCampaign);
         this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
-        Vue.prototype.$stripe = await loadStripe(process.env.MIX_STRIPE_KEY);
+        setInitialLanguage();
 
         this.$bus.$emit('open-donations');
 
         listenToCrtlS();
-        setInitialLanguage();
     },
     methods: {
         async campaignsChanged(shouldSync = true) {
@@ -238,7 +202,6 @@ window.app = new Vue({
             })
             this.items = collect(items);
             await this.$nextTick();
-            this.$bus.$emit('items-updated');
 
             return true;
         },
@@ -261,6 +224,16 @@ window.app = new Vue({
             store.set('campaignId', this.campaignId);
             this.story = null
         },
+        storedGame() {
+            const game = store.get('game');
+            // A game from another branch/release may not exist in this build
+            if (game && !new GameData().validate(game)) {
+                store.set('game', this.mainGame);
+                return this.mainGame;
+            }
+
+            return game || this.mainGame;
+        },
         async switchGame(game) {
             this.game = game;
             store.set('game', game);
@@ -279,13 +252,32 @@ window.app = new Vue({
                 await this.fetchCampaignData();
             }
 
-            this.campaignData = store.get(this.campaignId) || {};
-            this.campaignData = migrateVersion2Progress(this.campaignData);
-            this.game = store.get('game') || this.mainGame;
+            const stored = store.get(this.campaignId) || {};
+            const loaded = JSON.stringify(stored);
+            this.campaignData = migrateVersion2Progress(stored);
+            this.campaignData = migrateDonationProsperity(this.campaignId, this.campaignData);
+            migrateSheets(this.campaignData);
+            // Crossover defaults depend on the campaign (MP classes in use)
+            this.enabledGames = getEnabledGames();
+            this.game = this.storedGame();
+            const gloomhavenGame = (new SheetRepository).gloomhavenGame();
+            if ([Game.gh, Game.gh2].includes(this.game)) {
+                this.game = gloomhavenGame;
+            }
             if (!this.enabledGames.includes(this.game)) {
                 this.enabledGames = enableGame(this.game);
             }
+            if ([Game.gh2, Game.fc].includes(this.game) && !this.enabledGames.includes(Game.gh)) {
+                this.enabledGames = enableGame(Game.gh);
+            }
+            // gh2 is played in the gh slot, so it's enabled along with gh
+            if (this.enabledGames.includes(Game.gh) && !this.enabledGames.includes(gloomhavenGame)) {
+                this.enabledGames = enableGame(gloomhavenGame);
+            }
             this.stories = this.storyRepository.getStories();
+            if (JSON.stringify(this.campaignData) !== loaded) {
+                this.storySyncer.absorbMigrations();
+            }
             if (Helpers.loggedIn()) {
                 this.user = this.userRepository.getUser();
             }
@@ -325,9 +317,30 @@ window.app = new Vue({
             this.webpSupported = isWebpSupported();
             checkHasMouse(this.$bus);
             migrateVersion1Progress();
-            this.game = store.get('game') || this.mainGame;
+            this.game = this.storedGame();
             getFont();
             registerServiceWorker();
         }
     }
 });
+
+// Vue components
+Object.entries(components)
+    .forEach(([path, component]) => vueApp.component(path.split('/').pop().split('.')[0], component.default));
+
+// Before Sentry, which wraps the errorHandler set here.
+registerGlobals(vueApp);
+
+if (Helpers.inProduction() && import.meta.env.MIX_SENTRY_DSN) {
+    Sentry.init({
+        app: vueApp,
+        dsn: import.meta.env.MIX_SENTRY_DSN,
+        logErrors: false
+    });
+}
+
+bus.errorHandler = error => vueApp.config.errorHandler(error, null, 'event bus');
+vueApp.config.globalProperties.$bus = bus;
+vueApp.use(router);
+vueApp.use(i18n);
+window.app = vueApp.mount('#app');

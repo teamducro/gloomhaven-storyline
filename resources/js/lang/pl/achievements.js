@@ -140,6 +140,15 @@ export default {
     "gh-PBB": {
         "name": "Kiepska Sprawa"
     },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
+    },
     "gh-PTPS": {
         "name": "Źródło Skażenia"
     },
@@ -282,52 +291,52 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        "name": "Przyjaciel Lodowych Mówców"
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        "name": "Przyjaciel Śnieżnych Mówców"
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        "name": "Przyjaciel Mroźnych Mówców"
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        "name": "Pogromca Lodowych Mówców"
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        "name": "Pogromca Śnieżnych Mówców"
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        "name": "Przyjaciel Króla Ryb"
     },
     "fh-CCU": {
-        "name": "Crown United"
+        "name": "Zjednoczona Korona"
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        "name": "Sojusznicy Nieposkromionych"
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        "name": "Nieposkromieni - Dezaktywowani"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "W Głąb Lasu"
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        "name": "Ognista Papryczka"
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        "name": "Poszukiwacz Odłamków"
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        "name": "Puste Słoik"
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        "name": "Robal w Słoiku"
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        "name": "Rozładowany Rdzeń"
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        "name": "Naładowany Rdzeń"
     },
     "fh-CHF": {
         "name": "Harvest Festival"
@@ -366,9 +375,93 @@ export default {
         "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Serce lodu"
     },
     "fh-PHOS": {
         "name": "Heart of Snow"
+    },
+    "gh2-G2ATD": {
+        "name": "Activating the Device"
+    },
+    "gh2-G2AUP": {
+        "name": "An Uneasy Peace"
+    },
+    "gh2-G2AT": {
+        "name": "Starożytna Technologia"
+    },
+    "gh2-G2CRD": {
+        "name": "City Rule: Demons"
+    },
+    "gh2-G2CRME": {
+        "name": "City Rule: Merchants"
+    },
+    "gh2-G2CRMI": {
+        "name": "City Rule: Military"
+    },
+    "gh2-G2EM": {
+        "name": "Elements Mastered"
+    },
+    "gh2-G2EOC": {
+        "name": "Koniec Spaczenia"
+    },
+    "gh2-G2EOG": {
+        "name": "Koniec Mroku"
+    },
+    "gh2-G2HW": {
+        "name": "Hallowed Waters"
+    },
+    "gh2-G2ITD": {
+        "name": "Into the Depths"
+    },
+    "gh2-G2PTB": {
+        "name": "Peace Through Bloodshed"
+    },
+    "gh2-G2TCE": {
+        "name": "The Candle Extinguished"
+    },
+    "gh2-G2TCK": {
+        "name": "The Candle Kept"
+    },
+    "gh2-G2TDR": {
+        "name": "The Darkness Retreats"
+    },
+    "gh2-G2TDA": {
+        "name": "Przysługa dla Drakona"
+    },
+    "gh2-G2TDS": {
+        "name": "Drakon Zabity"
+    },
+    "gh2-G2TPE": {
+        "name": "Potęga Wzmocnienia"
+    },
+    "gh2-G2TVF": {
+        "name": "Głos Uwolniony"
+    },
+    "gh2-G2TVS": {
+        "name": "Głos Uciszony"
+    },
+    "gh2-P2R16": {
+        "name": "Faction Reputation 16"
+    },
+    "gh2-P2R20": {
+        "name": "Faction Reputation 20"
+    },
+    "gh2-P2RD6": {
+        "name": "Demon Reputation 6"
+    },
+    "gh2-P2RD12": {
+        "name": "Demon Reputation 12"
+    },
+    "gh2-P2RME6": {
+        "name": "Merchant Reputation 6"
+    },
+    "gh2-P2RME12": {
+        "name": "Merchant Reputation 12"
+    },
+    "gh2-P2RMI6": {
+        "name": "Military Reputation 6"
+    },
+    "gh2-P2RMI12": {
+        "name": "Military Reputation 12"
     }
 }

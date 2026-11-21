@@ -9,8 +9,8 @@ export default {
     "gh-511": {
         "name": "Kupcy rządzą",
         "progress": [
-            "Posiadaj 2 przedmioty {HEAD}.",
             "Posiadaj 2 przedmioty {BODY}.",
+            "Posiadaj 2 przedmioty {HEAD}.",
             "Posiadaj 2 przedmioty {LEGS}.",
             "Posiadaj 3 przedmioty {ONE-HAND} albo {TWO-HANDS}.",
             "Posiadaj 4 przedmioty {SMALL-ITEM}."
@@ -24,7 +24,7 @@ export default {
     },
     "gh-513": {
         "name": "Szukając lekarstwa",
-        "unlock": "Otwórz pudełko X",
+        "unlock": "Otwórz kopertę X",
         "progress": [
             "Zabij 8 leśnych chochlików.",
             "Przejdź {SCENARIO 59}."
@@ -69,8 +69,8 @@ export default {
     "gh-520": {
         "name": "Narzędzie Światłości",
         "progress": [
-            "Znajdź Topór Czaszkozguby w {SCENARIO 20}.",
-            "Zabij nim 7 Ożywionych Kości, Ożywionych Trupów lub Ożywionych Duchów."
+            "Znajdź Topór Czaszkozguby w Pracowni Nekromantki.",
+            "Zabij nim 7 Ożywionych Kości, Ożywionych Zwłok lub Ożywionych Duchów."
         ]
     },
     "gh-521": {
@@ -100,7 +100,7 @@ export default {
     "gh-524": {
         "name": "Nieustraszona postawa",
         "progress": [
-            "Zabij 20 elitarnych przeciwników."
+            "Zabij 20 elitarnych potworów."
         ]
     },
     "gh-525": {
@@ -111,7 +111,7 @@ export default {
     },
     "gh-526": {
         "name": "Pomsta",
-        "unlock": "Otwórz pudełko X",
+        "unlock": "Otwórz kopertę X",
         "progress": [
             "Ukończ 4 scenariusze w Gloomhaven.",
             "Przejdź {SCENARIO 57}."
@@ -146,16 +146,17 @@ export default {
         "name": "Próbki żywiołów",
         "progress": [
             "Ukończ scenariusz w Gloomhaven.",
-            "Ukończ scenariusz w Las Sztyletów.",
-            "Ukończ scenariusz w Bezkresne Bagna.",
-            "Ukończ scenariusz w Góry Obserwowania.",
-            "Ukończ scenariusz w Morze Mgieł."
+            "Ukończ scenariusz w Lesie Sztyletów.",
+            "Ukończ scenariusz na Bezkresnych Bagnach.",
+            "Ukończ scenariusz w Górach Obserwatora.",
+            "Ukończ scenariusz w Górach Miedzianych Turni.",
+            "Ukończ scenariusz na Morzu Mgieł."
         ]
     },
     "gh-532": {
         "name": "Pomocna dłoń",
         "progress": [
-            "Bądź świadkiem osiągnięcia osobistych celów przez dwie inne postacie."
+            "Bądź świadkiem osiągnięcia celów życiowych przez dwie inne postacie."
         ]
     },
     "gh-533": {
@@ -169,338 +170,338 @@ export default {
     "cs-330": {
         "name": "Protect and Serve",
         "progress": [
-            "Kill ten Inox.",
-            "Conclude {SCENARIO 33}."
+            "Zabij 10 Inoksów.",
+            "Przejdź {SCENARIO 33}."
         ]
     },
     "cs-331": {
         "name": "Weapons Specialist",
         "progress": [
-            "Consume fifteen {ONE-HAND} or {TWO-HANDS} items"
+            "Zużyj 15 przedmiotów {ONE-HAND} lub {TWO-HANDS}."
         ]
     },
     "cs-332": {
         "name": "Experimentation",
         "progress": [
-            "Play 30 cards for their lost {LOST} action."
+            "Zagraj 30 kart dla ich akcji utraty {LOST}."
         ]
     },
     "cs-333": {
         "name": "Thrill Seeker",
         "progress": [
-            "Reveal a room tile by opening a door twenty times."
+            "Odkryj kafelek pomieszczenia, otwierając drzwi, 20 razy."
         ]
     },
     "cs-334": {
         "name": "Trap Setter",
         "progress": [
-            "Disarm or cause an enemy to sprint a trap during your turn fifteen times."
+            "Rozbrój pułapkę lub zmuś wroga do jej uruchomienia w trakcie swojej tury 15 razy."
         ]
     },
     "cs-335": {
         "name": "Bandit Banisher",
         "progress": [
-            "Kill ten Guards or Archers.",
-            "Conclude {SCENARIO 35}."
+            "Zabij 10 Strażników lub Łuczników.",
+            "Przejdź {SCENARIO 35}."
         ]
     },
     "cs-336": {
         "name": "Creatures in the light",
         "progress": [
-            "Kill twenty Oozes, Forest Imps, or Black Imps."
+            "Zabij 20 Szlamów, Leśnych Chochlików lub Czarnych Chochlików."
         ]
     },
     "cs-337": {
         "name": "Experienced leader",
         "progress": [
-            "Complete twelve scenarios with at least 12 experience points."
+            "Ukończ 12 scenariuszy, zdobywając w każdym co najmniej 12 pkt. doświadczenia."
         ]
     },
     "cs-338": {
         "name": "Adrenaline Spike",
         "progress": [
-            "Kill an enemy and loots its money token in the same round fifteen times."
+            "Zabij wroga i zabierz jego żeton pieniędzy w tej samej rundzie 15 razy."
         ]
     },
     "cs-339": {
         "name": "Mutual Support",
         "progress": [
-            "Kill 30 enemies adjacent to any of your allies."
+            "Zabij 30 wrogów sąsiadujących z którymkolwiek z twoich sojuszników."
         ]
     },
     "cs-340": {
         "name": "Thy be Blessed",
         "progress": [
-            "Draw a {BLESS} card twelve times during an attack."
+            "Dobierz kartę {BLESS} podczas ataku 12 razy."
         ]
     },
     "cs-341": {
         "name": "Spiritual Cains",
         "progress": [
-            "Spend 200 gold on enhancements."
+            "Wydaj 200 sztuk złota na ulepszenia."
         ]
     },
     "cs-342": {
         "name": "The Path of Agony",
         "progress": [
-            "Experience an ally or enemy dying or becoming exhausted during its own turn 13 times."
+            "13 razy bądź świadkiem, jak sojusznik lub wróg ginie albo pada z wyczerpania podczas własnej tury."
         ]
     },
     "cs-343": {
         "name": "Cruel Dominion",
         "progress": [
-            "Complete 10 scenarios during which you kill an enemy who has a negative condition."
+            "Ukończ 10 scenariuszy, w których zabijasz wroga posiadającego negatywny stan."
         ]
     },
     "cs-344": {
         "name": "Natural Selection",
         "progress": [
-            "Generate {FIRE} twice.",
-            "Generate {ICE} twice.",
-            "Generate {LIGHT} twice.",
-            "Generate {DARK} twice.",
-            "Conclude {SCENARIO 37}."
+            "Wytwórz {FIRE} dwukrotnie.",
+            "Wytwórz {ICE} dwukrotnie.",
+            "Wytwórz {LIGHT} dwukrotnie.",
+            "Wytwórz {DARK} dwukrotnie.",
+            "Przejdź {SCENARIO 37}."
         ]
     },
     "cs-345": {
         "name": "Predator and Prey",
         "progress": [
-            "Kill two or more enemies in the same turn fifteen times."
+            "Zabij co najmniej dwóch wrogów w tej samej turze 15 razy."
         ]
     },
     "cs-346": {
         "name": "An Adder Divides",
         "progress": [
-            "Occupy difficult terrain in 6 different scenarios.",
-            "Conclude {SCENARIO 39}."
+            "Stań na trudnym terenie w 6 różnych scenariuszach.",
+            "Przejdź {SCENARIO 39}."
         ]
     },
     "cs-347": {
         "name": "Field Research",
         "progress": [
-            "Poison {POISON} twenty different types of monsters."
+            "Zatruj {POISON} 20 różnych rodzajów potworów."
         ]
     },
     "cs-348": {
         "name": "Conjurers Hand",
         "progress": [
-            "Kill ten summoned monsters."
+            "Zabij 10 przywołanych potworów."
         ]
     },
     "cs-349": {
         "name": "No Rest for the Wicked",
         "progress": [
-            "Complete ten scenarios without long resting."
+            "Ukończ 10 scenariuszy bez długiego odpoczynku."
         ]
     },
     "cs-350": {
         "name": "Health First",
         "progress": [
-            "Complete seven scenarios ending at full health."
+            "Ukończ 7 scenariuszy z pełnym zdrowiem."
         ]
     },
     "cs-351": {
         "name": "Limitless Searching",
         "progress": [
-            "Loot 30 money tokens."
+            "Zbierz 30 żetonów pieniędzy."
         ]
     },
     "cs-aa-001": {
         "name": "At All Costs",
         "progress": [
-            "Experience 8 scenarios where you negate damage by losing a card as normal while adjacent to an ally.",
-            "Conclude {SCENARIO AA1}."
+            "Przeżyj 8 scenariuszy, w których unieważniasz obrażenia, tracąc kartę w zwykły sposób, gdy sąsiadujesz z sojusznikiem.",
+            "Przejdź {SCENARIO AA1}."
         ]
     },
     "cs-aa-002": {
         "name": "The Weight of failure",
         "progress": [
-            "Complete 8 scenarios without exhausting and with 2 or less HP.",
-            "Conclude {SCENARIO AA2}"
+            "Ukończ 8 scenariuszy bez wyczerpania, mając na koniec 2 lub mniej PŻ.",
+            "Przejdź {SCENARIO AA2}."
         ]
     },
     "cs-qa-001": {
         "name": "Ingenious Inventor",
         "progress": [
-            "Immediately gain “Power Modulator” (Item QA-01)",
-            "Kill 12 enemies with “Power Modulator” (Item QA-01)",
-            "Conclude {SCENARIO QA1}"
+            "Natychmiast otrzymujesz „Power Modulator” (przedmiot QA-01).",
+            "Zabij 12 wrogów za pomocą przedmiotu „Power Modulator” (przedmiot QA-01).",
+            "Przejdź {SCENARIO QA1}."
         ]
     },
     "cs-qa-002": {
         "name": "Scrap Diver",
         "progress": [
-            "Loot two or more money tokens with a single action eight times.",
-            "Loot two treasure tiles.",
-            "Conclude {SCENARIO QA2}."
+            "Zbierz dwa lub więcej żetonów pieniędzy jedną akcją 8 razy.",
+            "Zbierz dwa kafelki skarbów.",
+            "Przejdź {SCENARIO QA2}."
         ]
     },
     "cs-rm-001": {
         "name": "Brutal Enforcer",
         "progress": [
-            "Gain “Serrated Edge” design (Item RM-01).",
-            "Apply {WOUND} or {RUPTURE} to thirty enemies.",
-            "Conclude {SCENARIO RM1}."
+            "Otrzymujesz schemat „Serrated Edge” (przedmiot RM-01).",
+            "Nałóż {WOUND} lub {RUPTURE} na 30 wrogów.",
+            "Przejdź {SCENARIO RM1}."
         ]
     },
     "cs-rm-002": {
         "name": "Apex Predator",
         "progress": [
-            "Experience twenty rounds where, during or after your perform an action with a {CONSUMED}, an enemy dies.",
-            "Conclude {SCENARIO RM3}."
+            "Przeżyj 20 rund, w których podczas wykonywania akcji z {CONSUMED} lub po niej ginie wróg.",
+            "Przejdź {SCENARIO RM3}."
         ]
     },
     "fh-1": {
-        "name": "The Study of Plants",
+        "name": "Studium roślin",
         "building_unlocks": [
             24,
             42
         ],
         "progress": [
-            "Personally collect five different types of herbs through loot tokens."
+            "Samodzielnie zbierz pięć różnych rodzajów ziół za pomocą żetonów łupów."
         ]
     },
     "fh-2": {
-        "name": "Searching for the Oak",
+        "name": "Poszukiwanie Dębu",
         "building_unlocks": [
             24,
             42
         ],
         "progress": [
-            "Personally loot eight total lumber cards through loot tokens.",
-            "Unlock {SCENARIO 69} and follow it to a conclusion."
+            "Samodzielnie zbierz w sumie osiem kart drewna za pomocą żetonów łupów.",
+            "Odblokuj {SCENARIO 69} i doprowadź go do zakończenia."
         ]
     },
     "fh-3": {
-        "name": "Merchant Class",
+        "name": "Kupcy rządzą",
         "building_unlocks": [
             37,
             74
         ],
         "progress": [
-            "Own 3 {HEAD} items.",
-            "Own 3 {BODY} items.",
-            "Own 3 {LEGS} items.",
-            "Own 3 {ONE-HAND} and/or {TWO-HANDS} items.",
-            "Own 4 {SMALL-ITEM} items."
+            "Posiadaj 3 przedmioty {HEAD}.",
+            "Posiadaj 3 przedmioty {BODY}.",
+            "Posiadaj 3 przedmioty {LEGS}.",
+            "Posiadaj 3 przedmioty {ONE-HAND} i/lub {TWO-HANDS}.",
+            "Posiadaj 4 przedmioty {SMALL-ITEM}."
         ]
     },
     "fh-4": {
-        "name": "Greed is Good",
+        "name": "Chciwość Jest Dobra",
         "building_unlocks": [
             37,
             74
         ],
         "progress": [
-            "Have 80+20xL gold in your possession, where L is the prosperity level."
+            "Posiadaj 80+20xP sztuk złota, gdzie P to poziom dobrobytu."
         ]
     },
     "fh-5": {
-        "name": "Build, not Destroy",
+        "name": "Buduj, nie niszcz",
         "building_unlocks": [
             85,
             21
         ],
         "progress": [
-            "Experience the construction of twelve different buildings or building upgrades."
+            "Bądź świadkiem budowy lub ulepszenia dwunastu różnych budynków."
         ]
     },
     "fh-6": {
-        "name": "Team Building",
+        "name": "Budowanie zespołu",
         "building_unlocks": [
             85,
             21
         ],
         "progress": [
-            "During eight different outpost phases, read a person's name in an event or section."
+            "W ośmiu różnych fazach posterunku przeczytaj imię osoby w wydarzeniu lub sekcji."
         ]
     },
     "fh-7": {
-        "name": "Aesther Outpost",
+        "name": "Posterunek Esterów",
         "building_unlocks": [
             44,
             88
         ],
         "progress": [
-            "Immediately unlock {SCENARIO 65}.",
-            "Follow {SCENARIO 65} to a conclusion."
+            "Natychmiast odblokuj {SCENARIO 65}.",
+            "Doprowadź {SCENARIO 65} do zakończenia."
         ]
     },
     "fh-8": {
-        "name": "Dangerous Game",
+        "name": "Niebezpieczna gra",
         "building_unlocks": [
             44,
             88
         ],
         "progress": [
-            "Kill two Algox Guards.",
-            "Kill two Lurker Clawcrushers.",
-            "Kill two Robotic Boltshooters."
+            "Zabij 2 Algoksów Strażników.",
+            "Zabij 2 Czyhaczy Rozgniataczy.",
+            "Zabij 2 Robotycznych Autstrzelców."
         ]
     },
     "fh-9": {
-        "name": "Life Lessons",
+        "name": "Lekcje życia",
         "building_unlocks": [
             90,
             83
         ],
         "progress": [
-            "Gain 150 experience from ability cards."
+            "Zdobądź 150 pkt. doświadczenia z kart zdolności."
         ]
     },
     "fh-10": {
-        "name": "Explore the Reaches",
+        "name": "Badanie rubieży",
         "building_unlocks": [
             90,
             83
         ],
         "progress": [
-            "Comlete five different scenarios that require {BOAT}, {CLIMBING_GEAR}, or {SLED}."
+            "Ukończ pięć różnych scenariuszy wymagających {BOAT}, {CLIMBING_GEAR} lub {SLED}."
         ]
     },
     "fh-11": {
-        "name": "Refined Tastes",
+        "name": "Wyrafinowany gust",
         "building_unlocks": [
             39,
             72
         ],
         "progress": [
-            "Own items whose crafting costs include a total of at least fifteen items."
+            "Posiadaj przedmioty, których koszt wytworzenia obejmuje łącznie co najmniej piętnaście przedmiotów."
         ]
     },
     "fh-12": {
-        "name": "Threat from the Deep",
+        "name": "Groza z głębin",
         "building_unlocks": [
             90,
             42
         ],
         "progress": [
-            "Immediately unlock {SCENARIO 71}.",
-            "Follow {SCENARIO 71} to a conclusion."
+            "Natychmiast odblokuj {SCENARIO 71}.",
+            "Doprowadź {SCENARIO 71} do zakończenia."
         ]
     },
     "fh-13": {
-        "name": "End the Trickery",
+        "name": "koniec oszustw",
         "building_unlocks": [
             44,
             74
         ],
         "progress": [
-            "Kill fifteem Imps."
+            "Zabij 15 Chochlików."
         ]
     },
     "fh-14": {
-        "name": "Eternal Wanderer",
+        "name": "Wieczny wędrowiec",
         "building_unlocks": [
             37,
             72
         ],
         "progress": [
-            "Complete a scenario in the Whitefire Wood.",
-            "Complete a scenario in the Copperneck Mountains.",
-            "Complete a scenario in the Radiant Forest.",
-            "Complete a scenario in the Crystal Fields.",
-            "Complete a scenario in the Biting Sea."
+            "Ukończ scenariusz w Lesie Białego Ognia.",
+            "Ukończ scenariusz w Górach Miedzianych Turni.",
+            "Ukończ scenariusz w Promiennym Lesie.",
+            "Ukończ scenariusz na Kryształowych Polach.",
+            "Ukończ scenariusz w Kąsającym Morzu."
         ]
     },
     "fh-15": {
@@ -510,27 +511,27 @@ export default {
             85
         ],
         "progress": [
-            "Donate 70 gold to the Temple of the Great Oak."
+            "Przekaż 70 sztuk złota na Świątynię Wielkiego Dębu."
         ]
     },
     "fh-16": {
-        "name": "Prepared for the Worst",
+        "name": "Gotowy na najgorsze",
         "building_unlocks": [
             85,
             88
         ],
         "progress": [
-            "Purchase five enhancements."
+            "Kup 5 ulepszeń."
         ]
     },
     "fh-17": {
-        "name": "Battle Legend",
+        "name": "Legenda bitwy",
         "building_unlocks": [
             81,
             67
         ],
         "progress": [
-            "Earn 16 {CHECK} from completed battle goals."
+            "Zdobądź 16 {CHECK} za wykonanie celów bitewnych."
         ]
     },
     "fh-18": {
@@ -540,7 +541,7 @@ export default {
             67
         ],
         "progress": [
-            "Complete eight side scenarios (numbered 65 or higher)."
+            "Ukończ osiem scenariuszy pobocznych (o numerze 65 lub wyższym)."
         ]
     },
     "fh-19": {
@@ -550,44 +551,251 @@ export default {
             67
         ],
         "progress": [
-            "Gain “Abyss Axe” (Item 039) blueprint and use it to kill ten Frozen Corpses, Ice Wraiths, and/or Living Dooms."
+            "Zdobądź schemat „Topór Otchłani” (przedmiot 039) i zabij nim 10 Zamarzniętych Zwłok, Lodowych Upiorów i/lub Ożywionych Zagład."
         ]
     },
     "fh-20": {
-        "name": "Return to Simplicity",
+        "name": "Powrót do prostoty",
         "building_unlocks": [
             24,
             21
         ],
         "progress": [
-            "Kill fifteen Ruined Machines."
+            "Zabij 15 Zrujnowanych Maszyn."
         ]
     },
     "fh-21": {
-        "name": "The Study of Life",
+        "name": "Studium Życia",
         "building_unlocks": [
             39,
             72
         ],
         "progress": [
-            "Capture 8 enemies."
+            "Pojmaj 8 wrogów."
         ]
     },
     "fh-22": {
-        "name": "The Greatest Challenge",
+        "name": "Największe wyzwanie",
         "building_unlocks": [
             37,
             83
         ],
         "progress": [
-            "Complete twelve challenges."
+            "Ukończ 12 wyzwań."
         ]
     },
     "fh-23": {
-        "name": "The Chosen One",
-        "unlock": "Open envelope A",
+        "name": "Wybraniec",
+        "unlock": "Otwórz kopertę A",
         "progress": [
-            "Experience 10 allies exhaust during scenarios you otherwise complete."
+            "10 razy bądź świadkiem, jak sojusznik pada z wyczerpania w scenariuszach, które mimo to ukończysz."
+        ]
+    },
+    "gh2-1": {
+        "name": "Political Intrigue",
+        "progress": [
+            "Dodaj zdarzenie miejskie 61 do talii zdarzeń miejskich.",
+            "Zdobądź 30 głosów: trzy głosy za każdym razem, gdy zdobywasz reputację, i jeden głos za każdy przedmiot reputacji frakcji wniesiony do ukończonego scenariusza.",
+            "Przeczytaj {SECTION} 136.1 podczas fazy miasta (sukces nie jest gwarantowany)."
+        ]
+    },
+    "gh2-2": {
+        "name": "Inn to Hospitality",
+        "progress": [
+            "Zbierz 60 żetonów pieniędzy.",
+            "Przeczytaj {SECTION} 125.4."
+        ]
+    },
+    "gh2-3": {
+        "name": "Wzmocnione zdolności",
+        "progress": [
+            "Kup 5 ulepszeń (wymaga osiągnięcia globalnego „Potęga Wzmocnienia”).",
+            "Przeczytaj {SECTION} 71.2."
+        ]
+    },
+    "gh2-4": {
+        "name": "Upadek człowieka",
+        "progress": [
+            "Zdobądź „Aesther Spyglass” (przedmiot 149). Nie można tego przedmiotu sprzedać.",
+            "Użyj „Aesther Spyglass” (przedmiot 149) 10 razy.",
+            "Przeczytaj {SECTION} 115.2.",
+            "Doprowadź {SCENARIO 63} do zakończenia."
+        ]
+    },
+    "gh2-5": {
+        "name": "Poszukiwacz Xorna",
+        "progress": [
+            "Zdobądź poziom, aby odblokować {SCENARIO 57}.",
+            "Doprowadź {SCENARIO 57} do zakończenia.",
+            "Użyj przedmiotu zdobytego w {SCENARIO 57}, aby otrzymać {POISON} 7 razy.",
+            "Doprowadź {SCENARIO 58} do zakończenia."
+        ]
+    },
+    "gh2-6": {
+        "name": "Fanatyk Boga Krwi",
+        "progress": [
+            "Zakończ 10 scenariuszy z punktami życia równymi połowie maksimum lub niższymi, nie padając z wyczerpania.",
+            "Przeczytaj {SECTION} 122.3."
+        ]
+    },
+    "gh2-7": {
+        "name": "A Tale to Tell",
+        "progress": [
+            "Zdobądź skarb z kafelka skarbu lub bądź świadkiem, jak robi to twoja drużyna, w 10 scenariuszach.",
+            "Przeczytaj {SECTION} 12.3."
+        ]
+    },
+    "gh2-8": {
+        "name": "Take Back the Trees",
+        "progress": [
+            "Przeżyj 10 zdarzeń na szlaku wraz ze swoją drużyną.",
+            "Przeczytaj {SECTION} 64.3.",
+            "Doprowadź {SCENARIO 59} do zakończenia.",
+            "Doprowadź {SCENARIO 60} do zakończenia."
+        ]
+    },
+    "gh2-9": {
+        "name": "Finding the Cure",
+        "progress": [
+            "Ukończ scenariusze w pięciu z następujących lokacji: Góry Miedzianych Turni, Trupi Las, Las Sztyletów, Gloomhaven, Bezkresne Bagna, Morze Mgieł, Góry Obserwatora.",
+            "Przeczytaj {SECTION} 55.3.",
+            "Doprowadź {SCENARIO 61} do zakończenia.",
+            "Doprowadź {SCENARIO 62} do zakończenia."
+        ]
+    },
+    "gh2-10": {
+        "name": "Tępiciel aberracji",
+        "progress": [
+            "Ulepsz kartę zdolności (swoją lub sojusznika) żywiołem {ANY} (wymaga osiągnięcia globalnego „Potęga Wzmocnienia”).",
+            "Przeczytaj {SECTION} 14.3.",
+            "Doprowadź {SCENARIO 64} do zakończenia."
+        ]
+    },
+    "gh2-11": {
+        "name": "Adoptive Parent",
+        "progress": [
+            "Zbierz trzy żetony pieniędzy upuszczone przez wrogów w 10 scenariuszach.",
+            "Przeczytaj {SECTION} 122.5.",
+            "Doprowadź {SCENARIO 66} do zakończenia."
+        ]
+    },
+    "gh2-12": {
+        "name": "Narzędzie Światłości",
+        "progress": [
+            "Natychmiast odblokuj {SCENARIO 65}.",
+            "Znajdź „Shield of the Righteous” (przedmiot 148).",
+            "Użyj „Shield of the Righteous” (przedmiot 148), aby unieważnić 10 ataków zadających 4 lub więcej obrażeń.",
+            "Przeczytaj {SECTION} 82.1."
+        ]
+    },
+    "gh2-13": {
+        "name": "Kupcy rządzą",
+        "progress": [
+            "Posiadaj 3 przedmioty {HEAD}.",
+            "Posiadaj 3 przedmioty {BODY}.",
+            "Posiadaj 3 przedmioty {LEGS}.",
+            "Posiadaj 5 przedmiotów {ONE-HAND} lub {TWO-HANDS}.",
+            "Posiadaj 5 przedmiotów {SMALL-ITEM}.",
+            "Przeczytaj {SECTION} 129.1."
+        ]
+    },
+    "gh2-14": {
+        "name": "Wieczny wędrowiec",
+        "progress": [
+            "Ukończ 12 różnych scenariuszy.",
+            "Przeczytaj {SECTION} 52.2."
+        ]
+    },
+    "gh2-15": {
+        "name": "Escaping the Sin-Ra",
+        "progress": [
+            "Dodaj zdarzenia miejskie 69 i 70 do talii zdarzeń miejskich. Zdobądź „Czarną Kartę” (przedmiot 113). Nie można jej sprzedać.",
+            "Ukończ 6 scenariuszy pobocznych (numer scenariusza powyżej 56).",
+            "Przeczytaj {SECTION} 128.2."
+        ]
+    },
+    "gh2-16": {
+        "name": "The Perfect Poison",
+        "progress": [
+            "Zdobądź „Zatruty Sztylet” (przedmiot 7).",
+            "Użyj go, aby nałożyć {POISON} na wroga bez {POISON} 30 razy.",
+            "Przeczytaj {SECTION} 8.3."
+        ]
+    },
+    "gh2-17": {
+        "name": "Living on the Edge",
+        "progress": [
+            "Zdobądź „Experimental Armor” (przedmiot 150).",
+            "Użyj tego przedmiotu, aby 20 wrogów otrzymało obrażenia.",
+            "Przeczytaj {SECTION} 47.4."
+        ]
+    },
+    "gh2-18": {
+        "name": "Legenda bitwy",
+        "progress": [
+            "Zdobądź 12 znaczników ✔ za wykonanie celów bitewnych.",
+            "Przeczytaj {SECTION} 23.3."
+        ]
+    },
+    "gh2-19": {
+        "name": "Martial Study",
+        "progress": [
+            "Użyj 8 różnych przedmiotów {ONE-HAND} lub {TWO-HANDS} podczas scenariuszy.",
+            "Przeczytaj {SECTION} 67.2."
+        ]
+    },
+    "gh2-20": {
+        "name": "Pobożność we wszystkim",
+        "progress": [
+            "Przekaż 120 sztuk złota na Świątynię Wielkiego Dębu.",
+            "Przeczytaj {SECTION} 51.5."
+        ]
+    },
+    "gh2-21": {
+        "name": "Pursuit of Proficiency",
+        "progress": [
+            "Zdobądź 120 pkt. doświadczenia z kart zdolności.",
+            "Przeczytaj {SECTION} 17.2."
+        ]
+    },
+    "gh2-22": {
+        "name": "Polowanie na trofea",
+        "progress": [
+            "Zabij 20 różnych rodzajów potworów.",
+            "Przeczytaj {SECTION} 21.1."
+        ]
+    },
+    "cq-cq01": {
+        "name": "Pokonaj swoje demony",
+        "unlock": "Otwórz kopertę z klasą lub budynkiem według własnego wyboru. Twoje przyszłe postacie dodają {PIERCE} 1 i {WOUND} do wszystkich ataków wymierzonych w demony.",
+        "progress": [
+            "Zabij dwa Demony Ziemi przywołane w ten sposób.",
+            "Zabij dwa Demony Płomieni przywołane w ten sposób.",
+            "Zabij dwa Demony Mrozu przywołane w ten sposób.",
+            "Zabij dwa Demony Nocy przywołane w ten sposób.",
+            "Zabij dwa Demony Słońca przywołane w ten sposób.",
+            "Zabij dwa Demony Wiatru przywołane w ten sposób."
+        ]
+    },
+    "cq-cq02": {
+        "name": "Twoi przyjaciele się martwią",
+        "unlock": "Otwórz kopertę z klasą lub budynkiem według własnego wyboru. Możesz na stałe utracić bonusowe znaczniki ulepszeń zdobyte dzięki postaciom, które przeszły w stan spoczynku w twojej linii. Za każdy utracony znacznik ulepszenia zdobądź 30 sztuk złota, które możesz od razu wydać na ulepszenia dla swojej następnej postaci.",
+        "progress": [
+            "Zdobądź 30 znaczników za cele bitewne. W każdym scenariuszu dobierz i zachowaj dodatkowy cel bitewny; nie zdobywasz znaczników, jeśli nie zrealizujesz wszystkich."
+        ]
+    },
+    "cq-cq03": {
+        "name": "Konsekwencje walki",
+        "unlock": "Otwórz kopertę z klasą lub budynkiem według własnego wyboru. Twoje przyszłe postacie otrzymują {STRENGTHEN} za każdym razem, gdy dobiorą {NULL_MODIFIER} podczas scenariusza.",
+        "progress": [
+            "Zdobądź 50 punktów powściągliwości: raz na scenariusz zmniejsz wartość ataku przed dobraniem modyfikatora; za każdy punkt zmniejszenia zdobywasz jeden punkt powściągliwości."
+        ]
+    },
+    "cq-cq04": {
+        "name": "Dramatyczny finał",
+        "unlock": "Otwórz kopertę z klasą lub budynkiem według własnego wyboru. Twoje przyszłe postacie mogą natychmiast wykonać kroki długiego odpoczynku, gdy sojusznik pada z wyczerpania.",
+        "progress": [
+            "Wygraj 10 scenariuszy, w których twoimi ostatnimi akcjami są górna akcja z utratą i dolna akcja z utratą."
         ]
     }
 }

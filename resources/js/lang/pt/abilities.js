@@ -1,178 +1,178 @@
 export default {
     "gh": {
         "blood-pact": {
-            "name": "blood pact"
+            "name": "Pacto de Sangue"
         },
         "bone-breaker": {
-            "name": "bone breaker"
+            "name": "Quebrador de Ossos"
         },
         "bounce-back": {
-            "name": "bounce back"
+            "name": "Recuperação"
         },
         "break-the-chains": {
-            "name": "break the chains"
+            "name": "Quebrar as Correntes"
         },
         "burning-hatred": {
-            "name": "burning hatred"
+            "name": "Ódio Ardente"
         },
         "careless-charge": {
-            "name": "careless charge"
+            "name": "Investida Descuidada"
         },
         "cauterize": {
-            "name": "cauterize"
+            "name": "Cauterizar"
         },
         "dazing-wound": {
-            "name": "dazing wound"
+            "name": "Ferimento Atordoante"
         },
         "defiance-of-death": {
-            "name": "defiance of death"
+            "name": "Desafio à Morte"
         },
         "devil-horns": {
-            "name": "devil horns"
+            "name": "Chifres do Diabo"
         },
         "fatal-fury": {
-            "name": "fatal fury"
+            "name": "Fúria Fatal"
         },
         "final-fight": {
-            "name": "final fight"
+            "name": "Luta Final"
         },
         "flurry-of-axes": {
-            "name": "flurry of axes"
+            "name": "Chuva de Machados"
         },
         "from-the-brink": {
-            "name": "from the brink"
+            "name": "À Beira do Abismo"
         },
         "furious-aid": {
-            "name": "furious aid"
+            "name": "Ajuda Furiosa"
         },
         "glass-hammer": {
-            "name": "glass hammer"
+            "name": "Martelo de Vidro"
         },
         "growing-rage": {
-            "name": "growing rage"
+            "name": "Ira Crescente"
         },
         "immortality": {
-            "name": "immortality"
+            "name": "Imortalidade"
         },
         "numb-the-pain": {
-            "name": "numb the pain"
+            "name": "Adormecer a Dor"
         },
         "reckless-offensive": {
-            "name": "reckless offensive"
+            "name": "Ofensiva Imprudente"
         },
         "resolute-stand": {
-            "name": "resolute stand"
+            "name": "Posição Resoluta"
         },
         "seeing-red": {
-            "name": "seeing red"
+            "name": "Vendo Vermelho"
         },
         "shiny-distraction": {
-            "name": "shiny distraction"
+            "name": "Distração Brilhante"
         },
         "spiked-armor": {
-            "name": "spiked armor"
+            "name": "Armadura com Espinhos"
         },
         "strength-in-agony": {
             "name": "strength in agony"
         },
         "the-maw-of-madness": {
-            "name": "the maw of madness"
+            "name": "As Mandíbulas da Loucura"
         },
         "unbridled-power": {
-            "name": "unbridled power"
+            "name": "Poder Desenfreado"
         },
         "unstoppable-destruction": {
-            "name": "unstoppable destruction"
+            "name": "Destruição Imparável"
         },
         "vengeful-barrage": {
-            "name": "vengeful barrage"
+            "name": "Barragem Vingativa"
         },
         "balanced-measure": {
-            "name": "balanced measure"
+            "name": "Medida Equilibrada"
         },
         "brute-force": {
-            "name": "brute force"
+            "name": "Força Bruta"
         },
         "crippling-offensive": {
-            "name": "crippling offensive"
+            "name": "Ofensiva Incapacitante"
         },
         "defensive-tactics": {
-            "name": "defensive tactics"
+            "name": "Táticas Defensivas"
         },
         "devastating-hack": {
-            "name": "devastating hack"
+            "name": "Golpe Devastador"
         },
         "eye-for-an-eye": {
-            "name": "eye for an eye"
+            "name": "Olho por Olho"
         },
         "face-your-end": {
-            "name": "face your end"
+            "name": "Enfrenta o Teu Fim"
         },
         "fatal-advance": {
-            "name": "fatal advance"
+            "name": "Avanço Fatal"
         },
         "frenzied-onslaught": {
-            "name": "frenzied onslaught"
+            "name": "Ataque Frenético"
         },
         "grab-and-go": {
-            "name": "grab and go"
+            "name": "Pegar e Correr"
         },
         "hook-and-chain": {
-            "name": "hook and chain"
+            "name": "Gancho e Corrente"
         },
         "immovable-phalanx": {
-            "name": "immovable phalanx"
+            "name": "Falange Inamovível"
         },
         "juggernaut": {
-            "name": "juggernaut"
+            "name": "Juggernaut"
         },
         "king-of-the-hill": {
-            "name": "king of the hill"
+            "name": "Rei da Colina"
         },
         "leaping-cleave": {
-            "name": "leaping cleave"
+            "name": "Corte Saltante"
         },
         "overwhelming-assault": {
-            "name": "overwhelming assault"
+            "name": "Ataque Esmagador"
         },
         "provoking-roar": {
-            "name": "provoking roar"
+            "name": "Rugido Provocador"
         },
         "quietus": {
-            "name": "quietus"
+            "name": "Quietus"
         },
         "selfish-retribution": {
-            "name": "selfish retribution"
+            "name": "Retribuição Egoísta"
         },
         "shield-bash": {
-            "name": "shield bash"
+            "name": "Golpe com Escudo"
         },
         "skewer": {
-            "name": "skewer"
+            "name": "Espetar"
         },
         "skirmishing-maneuver": {
-            "name": "skirmishing maneuver"
+            "name": "Manobra de Escaramuça"
         },
         "spare-dagger": {
-            "name": "spare dagger"
+            "name": "Adaga de Reserva"
         },
         "sweeping-blow": {
-            "name": "sweeping blow"
+            "name": "Golpe Amplo"
         },
         "trample": {
-            "name": "trample"
+            "name": "Atropelar"
         },
         "unstoppable-charge": {
-            "name": "unstoppable charge"
+            "name": "Investida Imparável"
         },
         "wall-of-doom": {
-            "name": "wall of doom"
+            "name": "Muralha do Destino"
         },
         "warding-strength": {
-            "name": "warding strength"
+            "name": "Força Protetora"
         },
         "whirlwind": {
-            "name": "whirlwind"
+            "name": "Torvelinho"
         },
         "armed-and-dangerous": {
             "name": "armed and dangerous"
@@ -289,739 +289,739 @@ export default {
             "name": "rust vermin"
         },
         "ancient-ward": {
-            "name": "ancient ward"
+            "name": "Proteção Ancestral"
         },
         "Bear-reference": {
             "name": "Bear reference"
         },
         "blood-hunger": {
-            "name": "blood hunger"
+            "name": "Fome de Sangue"
         },
         "borrowed-essence": {
-            "name": "borrowed essence"
+            "name": "Essência Emprestada"
         },
         "concentrated-rage": {
-            "name": "concentrated rage"
+            "name": "Ira Concentrada"
         },
         "disappearing-wounds": {
-            "name": "disappearing wounds"
+            "name": "Ferimentos Desaparecendo"
         },
         "disorienting-roar": {
-            "name": "disorienting roar"
+            "name": "Rugido Desorientador"
         },
         "earthen-spikes": {
-            "name": "earthen spikes"
+            "name": "Espinhos de Terra"
         },
         "energizing-strike": {
-            "name": "energizing strike"
+            "name": "Golpe Energizante"
         },
         "focused-aggression": {
-            "name": "focused aggression"
+            "name": "Agressão Focada"
         },
         "forceful-swipe": {
-            "name": "forceful swipe"
+            "name": "Golpe Vigoroso"
         },
         "howling-bolts": {
-            "name": "howling bolts"
+            "name": "Raios Uivantes"
         },
         "jaws-of-death": {
-            "name": "jaws of death"
+            "name": "Mandíbulas da Morte"
         },
         "lash-out": {
-            "name": "lash out"
+            "name": "Golpear com Força"
         },
         "maul": {
-            "name": "maul"
+            "name": "Esmagar"
         },
         "natural-remedy": {
-            "name": "natural remedy"
+            "name": "Remédio Natural"
         },
         "patch-fur": {
-            "name": "patch fur"
+            "name": "Remendar Pelagem"
         },
         "primal-blessing": {
-            "name": "primal blessing"
+            "name": "Bênção Primal"
         },
         "punch-through": {
-            "name": "punch through"
+            "name": "Perfurar"
         },
         "rampage": {
-            "name": "rampage"
+            "name": "Fúria"
         },
         "relentless-ally": {
-            "name": "relentless ally"
+            "name": "Aliado Implacável"
         },
         "soaring-ally": {
-            "name": "soaring ally"
+            "name": "Aliado Voador"
         },
         "spirit-swap": {
-            "name": "spirit swap"
+            "name": "Troca de Espírito"
         },
         "stone-sigil": {
-            "name": "stone sigil"
+            "name": "Selo de Pedra"
         },
         "storm-sigil": {
-            "name": "storm sigil"
+            "name": "Selo da Tempestade"
         },
         "tribal-sigil": {
-            "name": "tribal sigil"
+            "name": "Selo Tribal"
         },
         "tyrannical-force": {
-            "name": "tyrannical force"
+            "name": "Força Tirânica"
         },
         "unstoppable-beast": {
-            "name": "unstoppable beast"
+            "name": "Besta Imparável"
         },
         "venomous-ally": {
-            "name": "venomous ally"
+            "name": "Aliado Venenoso"
         },
         "vicious-ally": {
             "name": "vicious ally"
         },
         "avalanche": {
-            "name": "avalanche"
+            "name": "Avalanche"
         },
         "backup-ammunition": {
-            "name": "backup ammunition"
+            "name": "Munição de Reserva"
         },
         "blind-destruction": {
-            "name": "blind destruction"
+            "name": "Destruição Cega"
         },
         "blunt-force": {
-            "name": "blunt force"
+            "name": "Força Bruta"
         },
         "brutal-momentum": {
-            "name": "brutal momentum"
+            "name": "Impulso Brutal"
         },
         "cataclysm": {
-            "name": "cataclysm"
+            "name": "Cataclisma"
         },
         "clear-the-way": {
-            "name": "clear the way"
+            "name": "Abrir Caminho"
         },
         "crater": {
-            "name": "crater"
+            "name": "Cratera"
         },
         "crushing-grasp": {
-            "name": "crushing grasp"
+            "name": "Agarrão Esmagador"
         },
         "dig-pit": {
-            "name": "dig pit"
+            "name": "Cavar Buraco"
         },
         "dirt-tornado": {
-            "name": "dirt tornado"
+            "name": "Tornado de Poeira"
         },
         "earthen-clod": {
-            "name": "earthen clod"
+            "name": "Terrão de Terra"
         },
         "explosive-punch": {
-            "name": "explosive punch"
+            "name": "Soco Explosivo"
         },
         "forceful-storm": {
-            "name": "forceful storm"
+            "name": "Tempestade Vigorosa"
         },
         "heaving-swing": {
-            "name": "heaving swing"
+            "name": "Golpe Pesado"
         },
         "kinetic-assault": {
-            "name": "kinetic assault"
+            "name": "Ataque Cinético"
         },
         "lumbering-bash": {
-            "name": "lumbering bash"
+            "name": "Pancada Pesada"
         },
         "massive-boulder": {
-            "name": "massive boulder"
+            "name": "Pedra Maciça"
         },
         "meteor": {
-            "name": "meteor"
+            "name": "Meteoro"
         },
         "natures-lift": {
-            "name": "nature's lift"
+            "name": "Elevação da Natureza"
         },
         "opposing-strike": {
-            "name": "opposing strike"
+            "name": "Golpe Oposto"
         },
         "petrify": {
-            "name": "petrify"
+            "name": "Petrificar"
         },
         "pulverize": {
-            "name": "pulverize"
+            "name": "Pulverizar"
         },
         "rock-slide": {
-            "name": "rock slide"
+            "name": "Deslizamento de Rochas"
         },
         "rock-tunnel": {
-            "name": "rock tunnel"
+            "name": "Túnel de Rochas"
         },
         "rocky-end": {
-            "name": "rocky end"
+            "name": "Fim Rochoso"
         },
         "rumbling-advance": {
-            "name": "rumbling advance"
+            "name": "Avanço Estrondoso"
         },
         "sentient-growth": {
-            "name": "sentient growth"
+            "name": "Crescimento Consciente"
         },
         "stone-pummel": {
-            "name": "stone pummel"
+            "name": "Golpe de Pedra"
         },
         "unstable-upheaval": {
-            "name": "unstable upheaval"
+            "name": "Convulsão Instável"
         },
         "a-moments-peace": {
-            "name": "a moment's peace"
+            "name": "Um Momento de Paz"
         },
         "camouflage": {
-            "name": "camouflage"
+            "name": "Camuflagem"
         },
         "crashing-wave": {
             "name": "crashing wave"
         },
         "crippling-noose": {
-            "name": "crippling noose"
+            "name": "Laço Incapacitante"
         },
         "darkened-skies": {
-            "name": "darkened skies"
+            "name": "Céus Escurecidos"
         },
         "detonation": {
-            "name": "detonation"
+            "name": "Detonação"
         },
         "expose": {
-            "name": "expose"
+            "name": "Expor"
         },
         "felling-swoop": {
             "name": "felling swoop"
         },
         "feral-instincts": {
-            "name": "feral instincts"
+            "name": "Instintos Ferais"
         },
         "flight-of-flame": {
-            "name": "flight of flame"
+            "name": "Voo de Chama"
         },
         "foot-snare": {
-            "name": "foot snare"
+            "name": "Armadilha de Pé"
         },
         "fresh-kill": {
-            "name": "fresh kill"
+            "name": "Abate Recente"
         },
         "frightening-curse": {
-            "name": "frightening curse"
+            "name": "Maldição Assustadora"
         },
         "impending-end": {
-            "name": "impending end"
+            "name": "Fim Iminente"
         },
         "inescapable-fate": {
-            "name": "inescapable fate"
+            "name": "Destino Inescapável"
         },
         "lead-to-slaughter": {
-            "name": "lead to slaughter"
+            "name": "Lavar ao Abate"
         },
         "multi-pronged-assault": {
-            "name": "multi-pronged assault"
+            "name": "Ataque de Múltiplos Pontos"
         },
         "natures-hunger": {
-            "name": "nature's hunger"
+            "name": "Fome da Natureza"
         },
         "predator-and-prey": {
-            "name": "predator and prey"
+            "name": "Predador e Presa"
         },
         "press-the-attack": {
-            "name": "press the attack"
+            "name": "Pressionar o Ataque"
         },
         "race-to-the-grave": {
             "name": "race to the grave"
         },
         "rain-of-arrows": {
-            "name": "rain of arrows"
+            "name": "Chuva de Flechas"
         },
         "relentless-offensive": {
-            "name": "relentless offensive"
+            "name": "Ofensiva Implacável"
         },
         "rising-momentum": {
-            "name": "rising momentum"
+            "name": "Impulso Crescente"
         },
         "sap-life": {
-            "name": "sap life"
+            "name": "Drenar Vida"
         },
         "singular-focus": {
-            "name": "singular focus"
+            "name": "Foco Singular"
         },
         "solid-bow": {
             "name": "solid bow"
         },
         "swift-trickery": {
-            "name": "swift trickery"
+            "name": "Astúcia Rápida"
         },
         "the-hunt-begins": {
-            "name": "the hunt begins"
+            "name": "A Caça Começa"
         },
         "vital-charge": {
-            "name": "vital charge"
+            "name": "Carga Vital"
         },
         "wild-command": {
-            "name": "wild command"
+            "name": "Comando Selvagem"
         },
         "boiling-arc": {
-            "name": "boiling arc"
+            "name": "Arco Embulhado"
         },
         "brilliant-flash": {
-            "name": "brilliant flash"
+            "name": "Flash Brilhante"
         },
         "burial": {
-            "name": "burial"
+            "name": "Enterro"
         },
         "chain-lightning": {
-            "name": "chain lightning"
+            "name": "Relâmpago em Cadeia"
         },
         "crystallizing-blast": {
-            "name": "crystallizing blast"
+            "name": "Explosão Cristalizante"
         },
         "elemental-aegis": {
-            "name": "elemental aegis"
+            "name": "Égide Elemental"
         },
         "encompassing-shadow": {
-            "name": "encompassing shadow"
+            "name": "Sombra Envolvente"
         },
         "eternal-equilibrium": {
-            "name": "eternal equilibrium"
+            "name": "Equilíbrio Eterno"
         },
         "ethereal-manifestation": {
-            "name": "ethereal manifestation"
+            "name": "Manifestação Etérea"
         },
         "eye-of-the-hurricane": {
-            "name": "eye of the hurricane"
+            "name": "Olho do Furacão"
         },
         "formless-power": {
-            "name": "formless power"
+            "name": "Poder Sem Forma"
         },
         "frigid-torrent": {
-            "name": "frigid torrent"
+            "name": "Torrente Gélida"
         },
         "gravel-vortex": {
-            "name": "gravel vortex"
+            "name": "Vórtice de Cascalho"
         },
         "ice-spikes": {
-            "name": "ice spikes"
+            "name": "Espinhos de Gelo"
         },
         "infernal-vortex": {
-            "name": "infernal vortex"
+            "name": "Vórtice Infernal"
         },
         "lava-eruption": {
-            "name": "lava eruption"
+            "name": "Erupção de Lava"
         },
         "malleable-evocation": {
-            "name": "malleable evocation"
+            "name": "Evocação Maleável"
         },
         "obsidian-shards": {
-            "name": "obsidian shards"
+            "name": "Fragmentos de Obsidiana"
         },
         "pragmatic-reinforcement": {
-            "name": "pragmatic reinforcement"
+            "name": "Reforço Pragmático"
         },
         "primal-duality": {
-            "name": "primal duality"
+            "name": "Dualidade Primal"
         },
         "pure-augmentation": {
-            "name": "pure augmentation"
+            "name": "Aumento Puro"
         },
         "raw-enhancement": {
-            "name": "raw enhancement"
+            "name": "Aprimoramento Bruto"
         },
         "shaping-the-ether": {
-            "name": "shaping the ether"
+            "name": "Moldando o Éter"
         },
         "simulacrum": {
-            "name": "simulacrum"
+            "name": "Simulacro"
         },
         "stoking-hail": {
-            "name": "stoking hail"
+            "name": "Granizo Estimulante"
         },
         "tremulant-cyclone": {
-            "name": "tremulant cyclone"
+            "name": "Ciclone Trémulo"
         },
         "vengeance": {
-            "name": "vengeance"
+            "name": "Vingança"
         },
         "volatile-consumption": {
-            "name": "volatile consumption"
+            "name": "Consumo Volátil"
         },
         "winters-edge": {
-            "name": "winter's edge"
+            "name": "Gume do Inverno"
         },
         "brain-leech": {
-            "name": "brain leech"
+            "name": "Sanguessuga do Cérebro"
         },
         "corrupting-embrace": {
-            "name": "corrupting embrace"
+            "name": "Abraço Corruptor"
         },
         "cranium-overload": {
-            "name": "cranium overload"
+            "name": "Sobrecarga Craniana"
         },
         "dark-frenzy": {
-            "name": "dark frenzy"
+            "name": "Frenesi Sombrio"
         },
         "domination": {
-            "name": "domination"
+            "name": "Dominação"
         },
         "empathetic-assault": {
-            "name": "empathetic assault"
+            "name": "Ataque Empático"
         },
         "fearsome-blade": {
-            "name": "fearsome blade"
+            "name": "Lâmina Temível"
         },
         "feedback-loop": {
-            "name": "feedback loop"
+            "name": "Loop de Retroalimentação"
         },
         "frigid-apparition": {
-            "name": "frigid apparition"
+            "name": "Aparição Gélida"
         },
         "frozen-mind": {
-            "name": "frozen mind"
+            "name": "Mente Congelada"
         },
         "gnawing-horde": {
-            "name": "gnawing horde"
+            "name": "Horda Roedora"
         },
         "hostile-takeover": {
-            "name": "hostile takeover"
+            "name": "Dominação Hostil"
         },
         "into-the-night": {
-            "name": "into the night"
+            "name": "Pela Noite"
         },
         "many-as-one": {
-            "name": "many as one"
+            "name": "Muitos como Um"
         },
         "mass-hysteria": {
-            "name": "mass hysteria"
+            "name": "Histeria em Massa"
         },
         "parasitic-influence": {
-            "name": "parasitic influence"
+            "name": "Influência Parasitária"
         },
         "perverse-edge": {
-            "name": "perverse edge"
+            "name": "Lâmina Perversa"
         },
         "phantasmal-killer": {
-            "name": "phantasmal killer"
+            "name": "Assassino Fantasmagórico"
         },
         "pilfer": {
-            "name": "pilfer"
+            "name": "Maneio"
         },
         "possession": {
-            "name": "possession"
+            "name": "Posse"
         },
         "psychic-projection": {
-            "name": "psychic projection"
+            "name": "Projeção Psíquica"
         },
         "scurry": {
-            "name": "scurry"
+            "name": "Escapar"
         },
         "shared-nightmare": {
-            "name": "shared nightmare"
+            "name": "Pesadelo Compartilhado"
         },
         "silent-scream": {
-            "name": "silent scream"
+            "name": "Grito Silencioso"
         },
         "submissive-affliction": {
-            "name": "submissive affliction"
+            "name": "Aflição Submissa"
         },
         "the-minds-weakness": {
-            "name": "the mind's weakness"
+            "name": "A Fraqueza da Mente"
         },
         "vicious-blood": {
-            "name": "vicious blood"
+            "name": "Sangue Vicioso"
         },
         "withering-claw": {
-            "name": "withering claw"
+            "name": "Garra Definhante"
         },
         "wretched-creature": {
-            "name": "wretched creature"
+            "name": "Criatura Miserável"
         },
         "angel-of-death": {
-            "name": "angel of death"
+            "name": "Anjo da Morte"
         },
         "armor-of-the-night": {
-            "name": "armor of the night"
+            "name": "Armadura da Noite"
         },
         "black-arrow": {
-            "name": "black arrow"
+            "name": "Flecha Negra"
         },
         "black-knives": {
-            "name": "black knives"
+            "name": "Adagas Negras"
         },
         "claws-of-the-night": {
-            "name": "claws of the night"
+            "name": "Garras da Noite"
         },
         "cloak-of-shade": {
-            "name": "cloak of shade"
+            "name": "Manto da Sombra"
         },
         "concealed-dominance": {
-            "name": "concealed dominance"
+            "name": "Dominância Oculta"
         },
         "dancing-shadows": {
-            "name": "dancing shadows"
+            "name": "Sombras Dançantes"
         },
         "dark-cloud": {
-            "name": "dark cloud"
+            "name": "Nuvem Negra"
         },
         "doomed-breeze": {
-            "name": "doomed breeze"
+            "name": "Brisa Condenada"
         },
         "empowering-void": {
-            "name": "empowering void"
+            "name": "Vazio Capacitador"
         },
         "enervating-wound": {
-            "name": "enervating wound"
+            "name": "Ferimento Enervante"
         },
         "eyes-of-the-night": {
-            "name": "eyes of the night"
+            "name": "Olhos da Noite"
         },
         "gloom-darts": {
-            "name": "gloom darts"
+            "name": "Dardos Sombrios"
         },
         "grim-sustenance": {
-            "name": "grim sustenance"
+            "name": "Sustento Sombrio"
         },
         "lurking-ruin": {
-            "name": "lurking ruin"
+            "name": "Ruína Espreitadora"
         },
         "nightfall": {
-            "name": "nightfall"
+            "name": "Cair da Noite"
         },
         "prepare-for-the-kill": {
-            "name": "prepare for the kill"
+            "name": "Preparar para o Abate"
         },
         "quiet-frenzy": {
-            "name": "quiet frenzy"
+            "name": "Frenesi Silencioso"
         },
         "silent-force": {
-            "name": "silent force"
+            "name": "Força Silenciosa"
         },
         "smoke-step": {
             "name": "smoke step"
         },
         "soulfire": {
-            "name": "soulfire"
+            "name": "Fogo da Alma"
         },
         "spirit-of-the-night": {
-            "name": "spirit of the night"
+            "name": "Espírito da Noite"
         },
         "swallowed-by-fear": {
-            "name": "swallowed by fear"
+            "name": "Engolido pelo Medo"
         },
         "terror-blade": {
-            "name": "terror blade"
+            "name": "Lâmina do Terror"
         },
         "unseen-dread": {
             "name": "unseen dread"
         },
         "voice-of-the-night": {
-            "name": "voice of the night"
+            "name": "Voz da Noite"
         },
         "wings-of-the-night": {
-            "name": "wings of the night"
+            "name": "Asas da Noite"
         },
         "accelerated-end": {
-            "name": "accelerated end"
+            "name": "Fim Acelerado"
         },
         "airborne-toxin": {
-            "name": "airborne toxin"
+            "name": "Toxina do Ar"
         },
         "baneful-hex": {
-            "name": "baneful hex"
+            "name": "Praga Maléfica"
         },
         "biting-gnats": {
-            "name": "biting gnats"
+            "name": "Moscas Mordedoras"
         },
         "black-tides": {
-            "name": "black tides"
+            "name": "Marés Negras"
         },
         "blistering-vortex": {
-            "name": "blistering vortex"
+            "name": "Vórtice Escaldante"
         },
         "convert-the-flock": {
-            "name": "convert the flock"
+            "name": "Converter o Rebanho"
         },
         "creeping-curse": {
-            "name": "creeping curse"
+            "name": "Maldição Rastejante"
         },
         "epidemic": {
-            "name": "epidemic"
+            "name": "Epidemia"
         },
         "fetid-flurry": {
-            "name": "fetid flurry"
+            "name": "Raios Fétidos"
         },
         "foul-wind": {
-            "name": "foul wind"
+            "name": "Vento Fétido"
         },
         "gathering-doom": {
-            "name": "gathering doom"
+            "name": "Destino Reunido"
         },
         "grasping-vermin": {
-            "name": "grasping vermin"
+            "name": "Praga Agarradora"
         },
         "grim-bargain": {
-            "name": "grim bargain"
+            "name": "Barganha Sombria"
         },
         "mass-extinction": {
-            "name": "mass extinction"
+            "name": "Extinção em Massa"
         },
         "nightmarish-affliction": {
-            "name": "nightmarish affliction"
+            "name": "Aflição Pesadelo"
         },
         "paralyzing-bite": {
-            "name": "paralyzing bite"
+            "name": "Mordida Paralisante"
         },
         "rot-maggots": {
-            "name": "rot maggots"
+            "name": "Larvas da Podridão"
         },
         "scattered-terror": {
-            "name": "scattered terror"
+            "name": "Terror Disperso"
         },
         "spreading-scourge": {
-            "name": "spreading scourge"
+            "name": "Flagelo Disseminado"
         },
         "spread-the-plague": {
-            "name": "spread the plague"
+            "name": "Espalhar a Praga"
         },
         "stinging-cloud": {
-            "name": "stinging cloud"
+            "name": "Nuvem Picante"
         },
         "storm-of-wings": {
-            "name": "storm of wings"
+            "name": "Tempestade de Asas"
         },
         "succumb-to-the-gift": {
-            "name": "succumb to the gift"
+            "name": "Sucumbir ao Dom"
         },
         "under-the-skin": {
-            "name": "under the skin"
+            "name": "Sob a Pele"
         },
         "vile-pestilence": {
-            "name": "vile pestilence"
+            "name": "Pestilência Vil"
         },
         "virulent-strain": {
-            "name": "virulent strain"
+            "name": "Linhagem Virulenta"
         },
         "willing-sacrifice": {
-            "name": "willing sacrifice"
+            "name": "Sacrifício Voluntário"
         },
         "winged-congregation": {
-            "name": "winged congregation"
+            "name": "Congregação Alada"
         },
         "wretched-swarm": {
-            "name": "wretched swarm"
+            "name": "Enxame Miserável"
         },
         "bag-of-holding": {
-            "name": "bag of holding"
+            "name": "Bolsa Dimensional"
         },
         "bladed-boomerang": {
-            "name": "bladed boomerang"
+            "name": "Bumerangue Lâmina"
         },
         "catastrophic-bomb": {
-            "name": "catastrophic bomb"
+            "name": "Bomba Catastrófica"
         },
         "cleaving-axe": {
-            "name": "cleaving axe"
+            "name": "Machado Clivador"
         },
         "continual-supply": {
-            "name": "continual supply"
+            "name": "Suprimento Contínuo"
         },
         "crippling-bow": {
-            "name": "crippling bow"
+            "name": "Arco Incapacitante"
         },
         "crushing-hammer": {
-            "name": "crushing hammer"
+            "name": "Martelo Esmagador"
         },
         "fortified-position": {
-            "name": "fortified position"
+            "name": "Posição Fortificada"
         },
         "giant-club": {
-            "name": "giant club"
+            "name": "Clava Gigante"
         },
         "hastened-step": {
-            "name": "hastened step"
+            "name": "Passo Apressado"
         },
         "impaling-spear": {
-            "name": "impaling spear"
+            "name": "Lança Empaladora"
         },
         "iron-bulwark": {
-            "name": "iron bulwark"
+            "name": "Bastião de Ferro"
         },
         "oversized-pack": {
-            "name": "oversized pack"
+            "name": "Mochila Sobredimensionada"
         },
         "portable-ballista": {
-            "name": "portable ballista"
+            "name": "Balista Portátil"
         },
         "proficiency": {
-            "name": "proficiency"
+            "name": "Proficiência"
         },
         "quiver-of-arrows": {
-            "name": "quiver of arrows"
+            "name": "Aljava de Flechas"
         },
         "refreshment": {
-            "name": "refreshment"
+            "name": "Refresco"
         },
         "reforge": {
-            "name": "reforge"
+            "name": "Reforjar"
         },
         "reinforced-steel": {
-            "name": "reinforced steel"
+            "name": "Aço Reforçado"
         },
         "reserved-energy": {
-            "name": "reserved energy"
+            "name": "Energia Reservada"
         },
         "restock": {
-            "name": "restock"
+            "name": "Reabastecer"
         },
         "scroll-of-annihilation": {
-            "name": "scroll of annihilation"
+            "name": "Pergaminho da Aniquilação"
         },
         "scroll-of-blizzards": {
-            "name": "scroll of blizzards"
+            "name": "Pergaminho das Nevascas"
         },
         "scroll-of-judgment": {
-            "name": "scroll of judgment"
+            "name": "Pergaminho do Julgamento"
         },
         "scroll-of-lightning": {
-            "name": "scroll of lightning"
+            "name": "Pergaminho dos Relâmpagos"
         },
         "scroll-of-recall": {
-            "name": "scroll of recall"
+            "name": "Pergaminho de Invocação"
         },
         "sharpening-kit": {
-            "name": "sharpening kit"
+            "name": "Kit de Afiação"
         },
         "side-pouch": {
-            "name": "side pouch"
+            "name": "Bolsa Lateral"
         },
         "amputate": {
-            "name": "amputate"
+            "name": "Amputar"
         },
         "battlefield-medicine": {
-            "name": "battlefield medicine"
+            "name": "Medicina de Campo de Batalha"
         },
         "bedside-manner": {
-            "name": "bedside manner"
+            "name": "Postura Médica"
         },
         "blood-transfusion": {
-            "name": "blood transfusion"
+            "name": "Transfusão de Sangue"
         },
         "bloody-saw": {
-            "name": "bloody saw"
+            "name": "Serra Sangrenta"
         },
         "booster-shot": {
-            "name": "booster shot"
+            "name": "Injeção de Reforço"
         },
         "curative-mixture": {
-            "name": "curative mixture"
+            "name": "Mistura Curativa"
         },
         "do-no-harm": {
-            "name": "do no harm"
+            "name": "Não Cause Mal"
         },
         "euthanize": {
-            "name": "euthanize"
+            "name": "Eutanasiar"
         },
         "first-aid": {
-            "name": "first aid"
+            "name": "Primeiros Socorros"
         },
         "gentlemans-anger": {
             "name": "gentleman's anger"
@@ -1030,577 +1030,577 @@ export default {
             "name": "grisly trauma"
         },
         "hamstring": {
-            "name": "hamstring"
+            "name": "Corta-Tendão"
         },
         "hand-of-the-surgeon": {
-            "name": "hand of the surgeon"
+            "name": "Mão do Cirurgião"
         },
         "hold-back-the-pain": {
-            "name": "hold back the pain"
+            "name": "Segurar a Dor"
         },
         "large-medical-pack": {
-            "name": "large medical pack"
+            "name": "Pacote Médico Grande"
         },
         "master-physician": {
-            "name": "master physician"
+            "name": "Mestre Médico"
         },
         "medical-pack": {
-            "name": "medical pack"
+            "name": "Pacote Médico"
         },
         "mobile-response": {
-            "name": "mobile response"
+            "name": "Resposta Móvel"
         },
         "precaution": {
-            "name": "precaution"
+            "name": "Precaução"
         },
         "prep-for-surgery": {
-            "name": "prep for surgery"
+            "name": "Preparar para Cirurgia"
         },
         "prescription": {
-            "name": "prescription"
+            "name": "Prescrição"
         },
         "prevention-is-key": {
-            "name": "prevention is key"
+            "name": "Prevenção é Chave"
         },
         "regenerative-tissue": {
-            "name": "regenerative tissue"
+            "name": "Tecido Regenerativo"
         },
         "research-the-cure": {
-            "name": "research the cure"
+            "name": "Pesquisar a Cura"
         },
         "surgeons-satchel": {
-            "name": "surgeon's satchel"
+            "name": "Mochila do Cirurgião"
         },
         "syringe": {
-            "name": "syringe"
+            "name": "Seringa"
         },
         "teamwork": {
-            "name": "teamwork"
+            "name": "Trabalho em Equipa"
         },
         "triage": {
-            "name": "triage"
+            "name": "Triagem"
         },
         "vaccine": {
-            "name": "vaccine"
+            "name": "Vacina"
         },
         "vital-strike": {
-            "name": "vital strike"
+            "name": "Golpe Vital"
         },
         "backstab": {
-            "name": "backstab"
+            "name": "Apunhalada pelas Costas"
         },
         "burning-oil": {
-            "name": "burning oil"
+            "name": "Óleo Ardente"
         },
         "crippling-poison": {
-            "name": "crippling poison"
+            "name": "Veneno Incapacitante"
         },
         "cull-the-weak": {
-            "name": "cull the weak"
+            "name": "Abater os Fracos"
         },
         "duelists-advance": {
-            "name": "duelist's advance"
+            "name": "Avanço do Duelista"
         },
         "flanking-strike": {
-            "name": "flanking strike"
+            "name": "Golpe Flanqueado"
         },
         "flintlock": {
-            "name": "flintlock"
+            "name": "Mosquete"
         },
         "flurry-of-blades": {
-            "name": "flurry of blades"
+            "name": "Chuva de Lâminas"
         },
         "gruesome-advantage": {
-            "name": "gruesome advantage"
+            "name": "Vantagem Macabra"
         },
         "hidden-daggers": {
-            "name": "hidden daggers"
+            "name": "Adagas Ocultas"
         },
         "long-con": {
-            "name": "long con"
+            "name": "Golpe Longo"
         },
         "open-wound": {
-            "name": "open wound"
+            "name": "Ferida Aberta"
         },
         "pains-end": {
-            "name": "pain's end"
+            "name": "Fim da Dor"
         },
         "quick-hands": {
-            "name": "quick hands"
+            "name": "Mãos Rápidas"
         },
         "single-out": {
-            "name": "single out"
+            "name": "Isolar"
         },
         "sinister-opportunity": {
-            "name": "sinister opportunity"
+            "name": "Oportunidade Sinistra"
         },
         "smoke-bomb": {
-            "name": "smoke bomb"
+            "name": "Bomba de Fumaça"
         },
         "special-mixture": {
-            "name": "special mixture"
+            "name": "Mistura Especial"
         },
         "spring-the-trap": {
-            "name": "spring the trap"
+            "name": "Acionar a Armadilha"
         },
         "stick-to-the-shadows": {
-            "name": "stick to the shadows"
+            "name": "Manter-se nas Sombras"
         },
         "stiletto-storm": {
-            "name": "stiletto storm"
+            "name": "Tempestade de Estiletes"
         },
         "swift-bow": {
-            "name": "swift bow"
+            "name": "Arco Rápido"
         },
         "thiefs-knack": {
-            "name": "thief's knack"
+            "name": "Aptidão do Ladrão"
         },
         "throwing-knives": {
-            "name": "throwing knives"
+            "name": "Facas de Arremesso"
         },
         "tricksters-reversal": {
-            "name": "trickster's reversal"
+            "name": "Inversão do Trapaceiro"
         },
         "venom-shiv": {
-            "name": "venom shiv"
+            "name": "Adaga Venenosa"
         },
         "visage-of-the-inevitable": {
-            "name": "visage of the inevitable"
+            "name": "Semblante do Inevitável"
         },
         "watch-it-burn": {
-            "name": "watch it burn"
+            "name": "Ver Queimar"
         },
         "angelic-ascension": {
-            "name": "angelic ascension"
+            "name": "Ascensão Angelical"
         },
         "beacon-of-light": {
-            "name": "beacon of light"
+            "name": "Faro de Luz"
         },
         "bright-aegis": {
-            "name": "bright aegis"
+            "name": "Égide Brilhante"
         },
         "brilliant-prayer": {
-            "name": "brilliant prayer"
+            "name": "Oração Brilhante"
         },
         "burning-flash": {
-            "name": "burning flash"
+            "name": "Flash Ardente"
         },
         "cautious-advance": {
-            "name": "cautious advance"
+            "name": "Avanço Cauteloso"
         },
         "cleansing-force": {
-            "name": "cleansing force"
+            "name": "Força Purificadora"
         },
         "daybreak": {
-            "name": "daybreak"
+            "name": "Alvorecer"
         },
         "dazzling-charge": {
-            "name": "dazzling charge"
+            "name": "Investida Ofuscante"
         },
         "defensive-stance": {
-            "name": "defensive stance"
+            "name": "Postura Defensiva"
         },
         "divine-intervention": {
-            "name": "divine intervention"
+            "name": "Intervenção Divina"
         },
         "empowering-command": {
-            "name": "empowering command"
+            "name": "Comando Capacitador"
         },
         "engulfing-radiance": {
-            "name": "engulfing radiance"
+            "name": "Resplendor Envolvente"
         },
         "glorious-bolt": {
-            "name": "glorious bolt"
+            "name": "Raio Glorioso"
         },
         "hammer-blow": {
-            "name": "hammer blow"
+            "name": "Golpe de Martelo"
         },
         "holy-strike": {
-            "name": "holy strike"
+            "name": "Golpe Sagrado"
         },
         "illuminate-the-target": {
-            "name": "illuminate the target"
+            "name": "Iluminar o Alvo"
         },
         "inspiring-sanctity": {
-            "name": "inspiring sanctity"
+            "name": "Santidade Inspiradora"
         },
         "lay-on-hands": {
-            "name": "lay on hands"
+            "name": "Imposição de Mãos"
         },
         "mobilizing-axiom": {
-            "name": "mobilizing axiom"
+            "name": "Axioma Mobilizador"
         },
         "path-of-glory": {
-            "name": "path of glory"
+            "name": "Caminho da Glória"
         },
         "practical-plans": {
-            "name": "practical plans"
+            "name": "Planos Práticos"
         },
         "protective-blessing": {
-            "name": "protective blessing"
+            "name": "Bênção Protetora"
         },
         "purifying-aura": {
-            "name": "purifying aura"
+            "name": "Aura Purificadora"
         },
         "righteous-strength": {
-            "name": "righteous strength"
+            "name": "Força Justa"
         },
         "scales-of-justice": {
-            "name": "scales of justice"
+            "name": "Balança da Justiça"
         },
         "supportive-chant": {
-            "name": "supportive chant"
+            "name": "Cântico de Apoio"
         },
         "tactical-order": {
-            "name": "tactical order"
+            "name": "Ordem Tática"
         },
         "unwavering-mandate": {
-            "name": "unwavering mandate"
+            "name": "Mandato Inabalável"
         },
         "weapon-of-purity": {
-            "name": "weapon of purity"
+            "name": "Arma da Pureza"
         },
         "booming-proclamation": {
-            "name": "booming proclamation"
+            "name": "Proclamação Estrondosa"
         },
         "call-to-action": {
-            "name": "call to action"
+            "name": "Chamado à Ação"
         },
         "captivating-performance": {
-            "name": "captivating performance"
+            "name": "Apresentação Cativante"
         },
         "change-tempo": {
-            "name": "change tempo"
+            "name": "Mudar o Ritmo"
         },
         "commanding-presence": {
-            "name": "commanding presence"
+            "name": "Presença Imponente"
         },
         "crippling-chorus": {
-            "name": "crippling chorus"
+            "name": "Coro Incapacitante"
         },
         "defensive-ditty": {
-            "name": "defensive ditty"
+            "name": "Canção Defensiva"
         },
         "disorienting-dirge": {
-            "name": "disorienting dirge"
+            "name": "Cântico Desorientador"
         },
         "echoing-aria": {
-            "name": "echoing aria"
+            "name": "Ária Ecoante"
         },
         "inspiring-anthem": {
-            "name": "inspiring anthem"
+            "name": "Hino Inspirador"
         },
         "marching-beat": {
-            "name": "marching beat"
+            "name": "Ritmo de Marcha"
         },
         "melody-and-harmony": {
-            "name": "melody and harmony"
+            "name": "Melodia e Harmonia"
         },
         "mobilizing-measure": {
-            "name": "mobilizing measure"
+            "name": "Medida Mobilizadora"
         },
         "nightmare-serenade": {
-            "name": "nightmare serenade"
+            "name": "Serenata do Pesadelo"
         },
         "nimble-knife": {
-            "name": "nimble knife"
+            "name": "Faca Ágil"
         },
         "power-ballad": {
-            "name": "power ballad"
+            "name": "Balada do Poder"
         },
         "provoke-terror": {
-            "name": "provoke terror"
+            "name": "Provocar Terror"
         },
         "pull-the-strings": {
-            "name": "pull the strings"
+            "name": "Puxar as Cordas"
         },
         "shadow-puppets": {
-            "name": "shadow puppets"
+            "name": "Títeres de Sombra"
         },
         "singing-arrow": {
-            "name": "singing arrow"
+            "name": "Flecha Cantante"
         },
         "song-of-speed": {
-            "name": "song of speed"
+            "name": "Canção da Velocidade"
         },
         "soothing-lullaby": {
-            "name": "soothing lullaby"
+            "name": "Nana Suave"
         },
         "throw-voice": {
-            "name": "throw voice"
+            "name": "Projetar a Voz"
         },
         "tranquil-trill": {
-            "name": "tranquil trill"
+            "name": "Trinado Tranquilo"
         },
         "tuning-the-outcome": {
-            "name": "tuning the outcome"
+            "name": "Ajustando o Resultado"
         },
         "unending-chant": {
-            "name": "unending chant"
+            "name": "Cântico Sem Fim"
         },
         "warding-dagger": {
-            "name": "warding dagger"
+            "name": "Adaga Protetora"
         },
         "wistful-wounding": {
-            "name": "wistful wounding"
+            "name": "Ferimento Melancólico"
         },
         "biting-wind": {
-            "name": "biting wind"
+            "name": "Vento Cortante"
         },
         "black-fire": {
-            "name": "black fire"
+            "name": "Fogo Negro"
         },
         "bonded-might": {
-            "name": "bonded might"
+            "name": "Poder Vinculado"
         },
         "conjured-aid": {
             "name": "conjured aid"
         },
         "divided-mind": {
-            "name": "divided mind"
+            "name": "Mente Dividida"
         },
         "earthen-steed": {
-            "name": "earthen steed"
+            "name": "Corcel de Terra"
         },
         "endless-spikes": {
-            "name": "endless spikes"
+            "name": "Espinhos Infinitos"
         },
         "ethereal-vines": {
-            "name": "ethereal vines"
+            "name": "Vinhas Etéreas"
         },
         "forged-ferocity": {
-            "name": "forged ferocity"
+            "name": "Ferocidade Forjada"
         },
         "grasping-the-void": {
-            "name": "grasping the void"
+            "name": "Agarrando o Vazio"
         },
         "horned-majesty": {
-            "name": "horned majesty"
+            "name": "Majestade Chifrada"
         },
         "inexorable-momentum": {
-            "name": "inexorable momentum"
+            "name": "Impulso Inexorável"
         },
         "interplanar-mastery": {
-            "name": "interplanar mastery"
+            "name": "Domínio Interplanar"
         },
         "intervening-apparitions": {
-            "name": "intervening apparitions"
+            "name": "Aparições Intervenientes"
         },
         "leathery-wings": {
             "name": "leathery wings"
         },
         "living-mountain": {
-            "name": "living mountain"
+            "name": "Montanha Viva"
         },
         "living-night": {
-            "name": "living night"
+            "name": "Noite Viva"
         },
         "mighty-bond": {
-            "name": "mighty bond"
+            "name": "Vínculo Poderoso"
         },
         "negative-energy": {
-            "name": "negative energy"
+            "name": "Energia Negativa"
         },
         "oozing-manifestation": {
-            "name": "oozing manifestation"
+            "name": "Manifestação Viscosa"
         },
         "otherworldly-rage": {
-            "name": "otherworldly rage"
+            "name": "Ira de Outro Mundo"
         },
         "staff-of-visions": {
-            "name": "staff of visions"
+            "name": "Cajado das Visões"
         },
         "strength-in-numbers": {
-            "name": "strength in numbers"
+            "name": "Força nos Números"
         },
         "tear-the-fabric": {
-            "name": "tear the fabric"
+            "name": "Rasgar o Tecido"
         },
         "unending-dominance": {
-            "name": "unending dominance"
+            "name": "Dominância Sem Fim"
         },
         "unwavering-hand": {
-            "name": "unwavering hand"
+            "name": "Mão Inabalável"
         },
         "volatile-flame": {
-            "name": "volatile flame"
+            "name": "Chama Volátil"
         },
         "wild-animation": {
-            "name": "wild animation"
+            "name": "Animação Selvagem"
         },
         "aid-from-the-ether": {
-            "name": "aid from the ether"
+            "name": "Ajuda do Éter"
         },
         "black-hole": {
-            "name": "black hole"
+            "name": "Buraco Negro"
         },
         "chromatic-explosion": {
-            "name": "chromatic explosion"
+            "name": "Explosão Cromática"
         },
         "cold-fire": {
-            "name": "cold fire"
+            "name": "Fogo Frio"
         },
         "cold-front": {
-            "name": "cold front"
+            "name": "Frente Fria"
         },
         "crackling-air": {
-            "name": "crackling air"
+            "name": "Ar Estalando"
         },
         "elemental-aid": {
-            "name": "elemental aid"
+            "name": "Ajuda Elemental"
         },
         "engulfed-in-flames": {
-            "name": "engulfed in flames"
+            "name": "Envolto em Chamas"
         },
         "fire-orbs": {
-            "name": "fire orbs"
+            "name": "Orbes de Fogo"
         },
         "flame-strike": {
-            "name": "flame strike"
+            "name": "Golpe de Chama"
         },
         "flashing-burst": {
-            "name": "flashing burst"
+            "name": "Explosão Ofuscante"
         },
         "forked-beam": {
-            "name": "forked beam"
+            "name": "Feixe Bifurcado"
         },
         "freezing-nova": {
-            "name": "freezing nova"
+            "name": "Nova Congelante"
         },
         "frost-armor": {
-            "name": "frost armor"
+            "name": "Armadura de Gelo"
         },
         "frozen-night": {
-            "name": "frozen night"
+            "name": "Noite Congelada"
         },
         "hardened-spikes": {
-            "name": "hardened spikes"
+            "name": "Espinhos Endurecidos"
         },
         "icy-blast": {
-            "name": "icy blast"
+            "name": "Explosão Gelada"
         },
         "impaling-eruption": {
-            "name": "impaling eruption"
+            "name": "Explosão Empaladora"
         },
         "inferno": {
-            "name": "inferno"
+            "name": "Inferno"
         },
         "living-torch": {
-            "name": "living torch"
+            "name": "Tocha Viva"
         },
         "mana-bolt": {
-            "name": "mana bolt"
+            "name": "Raio de Mana"
         },
         "reviving-ether": {
-            "name": "reviving ether"
+            "name": "Éter Revivificante"
         },
         "ride-the-wind": {
-            "name": "ride the wind"
+            "name": "Cabalgar o Vento"
         },
         "spirit-of-doom": {
-            "name": "spirit of doom"
+            "name": "Espírito da Perdição"
         },
         "stone-fists": {
-            "name": "stone fists"
+            "name": "Punhos de Pedra"
         },
         "twin-restoration": {
-            "name": "twin restoration"
+            "name": "Restauração Dupla"
         },
         "zephyr-wings": {
-            "name": "zephyr wings"
+            "name": "Asas do Zéfiro"
         },
         "auto-turret": {
-            "name": "auto turret"
+            "name": "Torre Automática"
         },
         "chimeric-formula": {
-            "name": "chimeric formula"
+            "name": "Fórmula Quimérica"
         },
         "crank-bow": {
-            "name": "crank bow"
+            "name": "Arbaleste de Manivela"
         },
         "curative-aerosol": {
-            "name": "curative aerosol"
+            "name": "Aerossol Curativo"
         },
         "dangerous-contraption": {
-            "name": "dangerous contraption"
+            "name": "Engenhoca Perigosa"
         },
         "disintegration-beam": {
-            "name": "disintegration beam"
+            "name": "Feixe de Desintegração"
         },
         "disorienting-flash": {
-            "name": "disorienting flash"
+            "name": "Flash Desorientador"
         },
         "energizing-tonic": {
-            "name": "energizing tonic"
+            "name": "Tónico Energizante"
         },
         "enhancement-field": {
-            "name": "enhancement field"
+            "name": "Campo de Aprimoramento"
         },
         "flamethrower": {
-            "name": "flamethrower"
+            "name": "Lança-Chamas"
         },
         "gas-canister": {
-            "name": "gas canister"
+            "name": "Recipiente de Gás"
         },
         "harmless-contraption": {
-            "name": "harmless contraption"
+            "name": "Engenhoca Inofensiva"
         },
         "harsh-stimulants": {
-            "name": "harsh stimulants"
+            "name": "Estimulantes Fortes"
         },
         "hook-gun": {
-            "name": "hook gun"
+            "name": "Gancho de Disparo"
         },
         "ink-bomb": {
-            "name": "ink bomb"
+            "name": "Bomba de Tinta"
         },
         "jet-propulsion": {
-            "name": "jet propulsion"
+            "name": "Propulsão a Jato"
         },
         "lethal-injection": {
-            "name": "lethal injection"
+            "name": "Injeção Letal"
         },
         "micro-bots": {
-            "name": "micro bots"
+            "name": "Micro Robôs"
         },
         "murderous-contraption": {
-            "name": "murderous contraption"
+            "name": "Engenhoca Assassina"
         },
         "net-shooter": {
-            "name": "net shooter"
+            "name": "Lançador de Redes"
         },
         "noxious-vials": {
-            "name": "noxious vials"
+            "name": "Frascos Nocivos"
         },
         "potent-potables": {
-            "name": "potent potables"
+            "name": "Bebidas Potentes"
         },
         "proximity-mine": {
-            "name": "proximity mine"
+            "name": "Mina de Proximidade"
         },
         "reinvigorating-elixir": {
-            "name": "reinvigorating elixir"
+            "name": "Elixir Reinvigorante"
         },
         "restorative-mist": {
-            "name": "restorative mist"
+            "name": "Névoa Restauradora"
         },
         "reviving-shock": {
-            "name": "reviving shock"
+            "name": "Choque Revivificante"
         },
         "stamina-booster": {
-            "name": "stamina booster"
+            "name": "Reforço de Vigor"
         },
         "stun-shot": {
-            "name": "stun shot"
+            "name": "Tiro Atordoante"
         },
         "tinkerers-tools": {
-            "name": "tinkerer's tools"
+            "name": "Ferramentas do Engenhoqueiro"
         },
         "toxic-bolt": {
-            "name": "toxic bolt"
+            "name": "Raio Tóxico"
         },
         "volatile-concoction": {
-            "name": "volatile concoction"
+            "name": "Mistura Volátil"
         }
     },
     "fc": {
@@ -1829,7 +1829,7 @@ export default {
             "name": "repeat shot"
         },
         "retrieval": {
-            "name": "retrieval"
+            "name": "Recuperação"
         },
         "ricochet": {
             "name": "ricochet"
@@ -1949,7 +1949,7 @@ export default {
             "name": "cold embrace"
         },
         "commanding-presence": {
-            "name": "commanding presence"
+            "name": "Presença Imponente"
         },
         "crushing-cold": {
             "name": "crushing cold"
@@ -3469,7 +3469,7 @@ export default {
             "name": "sungaze"
         },
         "supernova": {
-            "name": "supernova"
+            "name": "Supernova"
         },
         "wish-upon-a-star": {
             "name": "wish upon a star"
@@ -3516,7 +3516,7 @@ export default {
             "name": "make it count"
         },
         "overdrive": {
-            "name": "overdrive"
+            "name": "Sobrecarga"
         },
         "phasing-blades": {
             "name": "phasing blades"
@@ -3573,7 +3573,7 @@ export default {
             "name": "at all costs"
         },
         "reinforcement": {
-            "name": "reinforcement"
+            "name": "Reforço"
         },
         "barricade": {
             "name": "barricade"
@@ -3618,7 +3618,7 @@ export default {
             "name": "torch bearer"
         },
         "javelin": {
-            "name": "javelin"
+            "name": "Dardo"
         },
         "lead-from-afar": {
             "name": "lead from afar"
@@ -3894,7 +3894,7 @@ export default {
             "name": "bloodletting"
         },
         "break-through": {
-            "name": "break through"
+            "name": "Abrir Caminho"
         },
         "chunk-of-flesh": {
             "name": "chunk of flesh"
@@ -3930,7 +3930,7 @@ export default {
             "name": "fierce barrage"
         },
         "fortitude": {
-            "name": "fortitude"
+            "name": "Fortitude"
         },
         "gift-of-the-prey": {
             "name": "gift of the prey"
@@ -3951,7 +3951,7 @@ export default {
             "name": "prudent preparation"
         },
         "relentless": {
-            "name": "relentless"
+            "name": "Implacável"
         },
         "shockwave": {
             "name": "shockwave"
@@ -4092,7 +4092,7 @@ export default {
             "name": "dominate"
         },
         "eclipse": {
-            "name": "eclipse"
+            "name": "Eclipse"
         },
         "fleeting-dusk": {
             "name": "fleeting dusk"
@@ -4542,7 +4542,7 @@ export default {
             "name": "remote impact"
         },
         "rising-momentum": {
-            "name": "rising momentum"
+            "name": "Impulso Crescente"
         },
         "sky-splitting-strike": {
             "name": "sky-splitting strike"
@@ -4764,7 +4764,7 @@ export default {
             "name": "erupting rage"
         },
         "eruption": {
-            "name": "eruption"
+            "name": "Erupção"
         },
         "feed-the-beast": {
             "name": "feed the beast"
@@ -4845,7 +4845,7 @@ export default {
             "name": "blinding vortex"
         },
         "blizzard": {
-            "name": "blizzard"
+            "name": "Nevasca"
         },
         "chilling-impact": {
             "name": "chilling impact"
@@ -4914,7 +4914,7 @@ export default {
             "name": "the spirit's call"
         },
         "tornado": {
-            "name": "tornado"
+            "name": "Tornado"
         },
         "whipping-gale": {
             "name": "whipping gale"
@@ -4962,7 +4962,7 @@ export default {
             "name": "empowering pulse"
         },
         "feedback": {
-            "name": "feedback"
+            "name": "Retroalimentação"
         },
         "forceful-vibrations": {
             "name": "forceful vibrations"
@@ -5457,6 +5457,1607 @@ export default {
         },
         "stand-against-many": {
             "name": "stand against many"
+        }
+    },
+    "gh2": {
+        "trample": {
+            "name": "Atropelar"
+        },
+        "eye-for-an-eye": {
+            "name": "Olho por Olho"
+        },
+        "skewer": {
+            "name": "Espetar"
+        },
+        "overwhelming-assault": {
+            "name": "Ataque Esmagador"
+        },
+        "balanced-measure": {
+            "name": "Medida Equilibrada"
+        },
+        "grab-and-go": {
+            "name": "Pegar e Correr"
+        },
+        "warding-strength": {
+            "name": "Força Protetora"
+        },
+        "shield-bash": {
+            "name": "Golpe com Escudo"
+        },
+        "leaping-cleave": {
+            "name": "Corte Saltante"
+        },
+        "spare-dagger": {
+            "name": "Adaga de Reserva"
+        },
+        "sweeping-blow": {
+            "name": "Golpe Amplo"
+        },
+        "fearsome-taunt": {
+            "name": "fearsome taunt"
+        },
+        "provoking-roar": {
+            "name": "Rugido Provocador"
+        },
+        "intimidating-growl": {
+            "name": "intimidating growl"
+        },
+        "juggernaut": {
+            "name": "Juggernaut"
+        },
+        "hook-and-chain": {
+            "name": "Gancho e Corrente"
+        },
+        "unstoppable-charge": {
+            "name": "Investida Imparável"
+        },
+        "whirlwind": {
+            "name": "Torvelinho"
+        },
+        "push-through": {
+            "name": "push through"
+        },
+        "skirmishing-maneuver": {
+            "name": "Manobra de Escaramuça"
+        },
+        "defensive-tactics": {
+            "name": "Táticas Defensivas"
+        },
+        "run-through": {
+            "name": "run through"
+        },
+        "immovable-phalanx": {
+            "name": "Falange Inamovível"
+        },
+        "leg-fly": {
+            "name": "leg fly"
+        },
+        "selfish-retribution": {
+            "name": "Retribuição Egoísta"
+        },
+        "frenzied-onslaught": {
+            "name": "Ataque Frenético"
+        },
+        "crippling-offensive": {
+            "name": "Ofensiva Incapacitante"
+        },
+        "brute-force": {
+            "name": "Força Bruta"
+        },
+        "face-your-end": {
+            "name": "Enfrenta o Teu Fim"
+        },
+        "opposing-strike": {
+            "name": "Golpe Oposto"
+        },
+        "crushing-grasp": {
+            "name": "Agarrão Esmagador"
+        },
+        "avalanche": {
+            "name": "Avalanche"
+        },
+        "rumbling-advance": {
+            "name": "Avanço Estrondoso"
+        },
+        "massive-boulder": {
+            "name": "Pedra Maciça"
+        },
+        "backup-ammunition": {
+            "name": "Munição de Reserva"
+        },
+        "earthen-bulwark": {
+            "name": "earthen bulwark"
+        },
+        "unstable-upheaval": {
+            "name": "Convulsão Instável"
+        },
+        "crater": {
+            "name": "Cratera"
+        },
+        "dirt-tornado": {
+            "name": "Tornado de Poeira"
+        },
+        "earthen-clod": {
+            "name": "Terrão de Terra"
+        },
+        "heaving-swing": {
+            "name": "Golpe Pesado"
+        },
+        "petrify": {
+            "name": "Petrificar"
+        },
+        "burrow": {
+            "name": "burrow"
+        },
+        "mud-eruption": {
+            "name": "mud eruption"
+        },
+        "sentient-growth": {
+            "name": "Crescimento Consciente"
+        },
+        "clear-the-way": {
+            "name": "Abrir Caminho"
+        },
+        "blunt-force": {
+            "name": "Força Bruta"
+        },
+        "rock-slide": {
+            "name": "Deslizamento de Rochas"
+        },
+        "kinetic-assault": {
+            "name": "Ataque Cinético"
+        },
+        "solidify": {
+            "name": "solidify"
+        },
+        "stone-pummel": {
+            "name": "Golpe de Pedra"
+        },
+        "dig-pit": {
+            "name": "Cavar Buraco"
+        },
+        "cataclysm": {
+            "name": "Cataclisma"
+        },
+        "meteor": {
+            "name": "Meteoro"
+        },
+        "brutal-momentum": {
+            "name": "Impulso Brutal"
+        },
+        "rocky-end": {
+            "name": "Fim Rochoso"
+        },
+        "entomb": {
+            "name": "entomb"
+        },
+        "wave-of-destruction": {
+            "name": "wave of destruction"
+        },
+        "earths-embrace": {
+            "name": "earth's embrace"
+        },
+        "submissive-affliction": {
+            "name": "Aflição Submissa"
+        },
+        "hidden-in-the-shadows": {
+            "name": "hidden in the shadows"
+        },
+        "scurry": {
+            "name": "Escapar"
+        },
+        "withering-claw": {
+            "name": "Garra Definhante"
+        },
+        "frigid-apparition": {
+            "name": "Aparição Gélida"
+        },
+        "the-minds-weakness": {
+            "name": "A Fraqueza da Mente"
+        },
+        "pilfer": {
+            "name": "Maneio"
+        },
+        "perverse-edge": {
+            "name": "Lâmina Perversa"
+        },
+        "empathetic-assault": {
+            "name": "Ataque Empático"
+        },
+        "psychic-blade": {
+            "name": "psychic blade"
+        },
+        "feedback-loop": {
+            "name": "Loop de Retroalimentação"
+        },
+        "possession": {
+            "name": "Posse"
+        },
+        "gnawing-horde": {
+            "name": "Horda Roedora"
+        },
+        "fearsome-blade": {
+            "name": "Lâmina Temível"
+        },
+        "hostile-takeover": {
+            "name": "Dominação Hostil"
+        },
+        "brain-leech": {
+            "name": "Sanguessuga do Cérebro"
+        },
+        "cranium-overload": {
+            "name": "Sobrecarga Craniana"
+        },
+        "frozen-shiv": {
+            "name": "frozen shiv"
+        },
+        "silent-scream": {
+            "name": "Grito Silencioso"
+        },
+        "mass-hysteria": {
+            "name": "Histeria em Massa"
+        },
+        "gangling-abomination": {
+            "name": "gangling abomination"
+        },
+        "telepathic-command": {
+            "name": "telepathic command"
+        },
+        "dark-frenzy": {
+            "name": "Frenesi Sombrio"
+        },
+        "domination": {
+            "name": "Dominação"
+        },
+        "psychic-projection": {
+            "name": "Projeção Psíquica"
+        },
+        "shared-nightmare": {
+            "name": "Pesadelo Compartilhado"
+        },
+        "corrupting-embrace": {
+            "name": "Abraço Corruptor"
+        },
+        "many-as-one": {
+            "name": "Muitos como Um"
+        },
+        "phantasmal-killer": {
+            "name": "Assassino Fantasmagórico"
+        },
+        "single-out": {
+            "name": "Isolar"
+        },
+        "flanking-strike": {
+            "name": "Golpe Flanqueado"
+        },
+        "swift-bow": {
+            "name": "Arco Rápido"
+        },
+        "quick-hands": {
+            "name": "Mãos Rápidas"
+        },
+        "sinister-opportunity": {
+            "name": "Oportunidade Sinistra"
+        },
+        "venom-shiv": {
+            "name": "Adaga Venenosa"
+        },
+        "throwing-knives": {
+            "name": "Facas de Arremesso"
+        },
+        "practiced-reflexes": {
+            "name": "practiced reflexes"
+        },
+        "special-mixture": {
+            "name": "Mistura Especial"
+        },
+        "backstab": {
+            "name": "Apunhalada pelas Costas"
+        },
+        "smoke-bomb": {
+            "name": "Bomba de Fumaça"
+        },
+        "tricksters-reversal": {
+            "name": "Inversão do Trapaceiro"
+        },
+        "open-wound": {
+            "name": "Ferida Aberta"
+        },
+        "stick-to-the-shadows": {
+            "name": "Manter-se nas Sombras"
+        },
+        "hidden-daggers": {
+            "name": "Adagas Ocultas"
+        },
+        "flintlock": {
+            "name": "Mosquete"
+        },
+        "flurry-of-blades": {
+            "name": "Chuva de Lâminas"
+        },
+        "gruesome-advantage": {
+            "name": "Vantagem Macabra"
+        },
+        "duelists-advantage": {
+            "name": "duelist's advantage"
+        },
+        "serrated-arrow": {
+            "name": "serrated arrow"
+        },
+        "dance-of-daggers": {
+            "name": "dance of daggers"
+        },
+        "cull-the-weak": {
+            "name": "Abater os Fracos"
+        },
+        "stiletto-storm": {
+            "name": "Tempestade de Estiletes"
+        },
+        "spring-the-trap": {
+            "name": "Acionar a Armadilha"
+        },
+        "visage-of-the-inevitable": {
+            "name": "Semblante do Inevitável"
+        },
+        "crippling-poison": {
+            "name": "Veneno Incapacitante"
+        },
+        "hired-help": {
+            "name": "hired help"
+        },
+        "watch-it-burn": {
+            "name": "Ver Queimar"
+        },
+        "reviving-ether": {
+            "name": "Éter Revivificante"
+        },
+        "fire-orbs": {
+            "name": "Orbes de Fogo"
+        },
+        "arcane-bolt": {
+            "name": "arcane bolt"
+        },
+        "flame-strike": {
+            "name": "Golpe de Chama"
+        },
+        "icy-blast": {
+            "name": "Explosão Gelada"
+        },
+        "aid-from-the-ether": {
+            "name": "Ajuda do Éter"
+        },
+        "frost-strike": {
+            "name": "frost strike"
+        },
+        "emberfrost": {
+            "name": "emberfrost"
+        },
+        "flameswell": {
+            "name": "flameswell"
+        },
+        "ice-armor": {
+            "name": "Armadura de Gelo"
+        },
+        "impaling-eruption": {
+            "name": "Explosão Empaladora"
+        },
+        "freezing-nova": {
+            "name": "Nova Congelante"
+        },
+        "etheric-echo": {
+            "name": "etheric echo"
+        },
+        "heatwave": {
+            "name": "heatwave"
+        },
+        "arctic-shards": {
+            "name": "arctic shards"
+        },
+        "dancing-gales": {
+            "name": "dancing gales"
+        },
+        "cold-fire": {
+            "name": "Fogo Frio"
+        },
+        "warm-up": {
+            "name": "warm up"
+        },
+        "cool-down": {
+            "name": "cool down"
+        },
+        "elemental-rays": {
+            "name": "elemental rays"
+        },
+        "searing-glacier": {
+            "name": "searing glacier"
+        },
+        "spell-mastery": {
+            "name": "spell mastery"
+        },
+        "chromatic-explosion": {
+            "name": "Explosão Cromática"
+        },
+        "frostflare-orbs": {
+            "name": "frostflare orbs"
+        },
+        "twin-beams": {
+            "name": "twin beams"
+        },
+        "freezing-vortex": {
+            "name": "freezing vortex"
+        },
+        "inferno": {
+            "name": "Inferno"
+        },
+        "potent-potables": {
+            "name": "Bebidas Potentes"
+        },
+        "harmless-contraption": {
+            "name": "Engenhoca Inofensiva"
+        },
+        "flamethrower": {
+            "name": "Lança-Chamas"
+        },
+        "disorienting-flash": {
+            "name": "Flash Desorientador"
+        },
+        "ink-bomb": {
+            "name": "Bomba de Tinta"
+        },
+        "net-shooter": {
+            "name": "Lançador de Redes"
+        },
+        "stun-shot": {
+            "name": "Tiro Atordoante"
+        },
+        "reinvigorating-elixir": {
+            "name": "Elixir Reinvigorante"
+        },
+        "restorative-mist": {
+            "name": "Névoa Restauradora"
+        },
+        "jet-propulsion": {
+            "name": "Propulsão a Jato"
+        },
+        "enhancement-field": {
+            "name": "Campo de Aprimoramento"
+        },
+        "toxic-bolt": {
+            "name": "Raio Tóxico"
+        },
+        "gas-canister": {
+            "name": "Recipiente de Gás"
+        },
+        "volatile-concoction": {
+            "name": "Mistura Volátil"
+        },
+        "hook-gun": {
+            "name": "Gancho de Disparo"
+        },
+        "repulsor-gun": {
+            "name": "repulsor gun"
+        },
+        "crank-bow": {
+            "name": "Arbaleste de Manivela"
+        },
+        "teleportation-pad": {
+            "name": "teleportation pad"
+        },
+        "stamina-booster": {
+            "name": "Reforço de Vigor"
+        },
+        "dangerous-contraption": {
+            "name": "Engenhoca Perigosa"
+        },
+        "proximity-mine": {
+            "name": "Mina de Proximidade"
+        },
+        "noxious-vials": {
+            "name": "Frascos Nocivos"
+        },
+        "disintegration-beam": {
+            "name": "Feixe de Desintegração"
+        },
+        "invigorating-aerosol": {
+            "name": "invigorating aerosol"
+        },
+        "auto-turret": {
+            "name": "Torre Automática"
+        },
+        "murderous-contraption": {
+            "name": "Engenhoca Assassina"
+        },
+        "pernicious-fogger": {
+            "name": "pernicious fogger"
+        },
+        "cryonic-snare": {
+            "name": "cryonic snare"
+        },
+        "harsh-stimulants": {
+            "name": "Estimulantes Fortes"
+        },
+        "gravity-bomb": {
+            "name": "gravity bomb"
+        },
+        "chimeric-formula": {
+            "name": "Fórmula Quimérica"
+        },
+        "numb-the-pain": {
+            "name": "Adormecer a Dor"
+        },
+        "shiny-distraction": {
+            "name": "Distração Brilhante"
+        },
+        "strength-in-agony": {
+            "name": "strength in agony"
+        },
+        "defiance-of-death": {
+            "name": "Desafio à Morte"
+        },
+        "resolute-stand": {
+            "name": "Posição Resoluta"
+        },
+        "blood-pact": {
+            "name": "Pacto de Sangue"
+        },
+        "cauterize": {
+            "name": "Cauterizar"
+        },
+        "dazing-wound": {
+            "name": "Ferimento Atordoante"
+        },
+        "unbridled-power": {
+            "name": "Poder Desenfreado"
+        },
+        "from-the-brink": {
+            "name": "À Beira do Abismo"
+        },
+        "glass-hammer": {
+            "name": "Martelo de Vidro"
+        },
+        "growing-rage": {
+            "name": "Ira Crescente"
+        },
+        "reckless-offensive": {
+            "name": "Ofensiva Imprudente"
+        },
+        "into-the-fight": {
+            "name": "into the fight"
+        },
+        "final-fight": {
+            "name": "Luta Final"
+        },
+        "tireless-retribution": {
+            "name": "tireless retribution"
+        },
+        "unstoppable-destruction": {
+            "name": "Destruição Imparável"
+        },
+        "inner-fire": {
+            "name": "inner fire"
+        },
+        "seeing-red": {
+            "name": "Vendo Vermelho"
+        },
+        "vengeful-barrage": {
+            "name": "Barragem Vingativa"
+        },
+        "flurry-of-axes": {
+            "name": "Chuva de Machados"
+        },
+        "devil-horns": {
+            "name": "Chifres do Diabo"
+        },
+        "careless-charge": {
+            "name": "Investida Descuidada"
+        },
+        "fueled-by-pain": {
+            "name": "fueled by pain"
+        },
+        "bone-breaker": {
+            "name": "Quebrador de Ossos"
+        },
+        "spiked-armor": {
+            "name": "Armadura com Espinhos"
+        },
+        "burning-hatred": {
+            "name": "Ódio Ardente"
+        },
+        "bathe-in-blood": {
+            "name": "bathe in blood"
+        },
+        "focused-scourge": {
+            "name": "focused scourge"
+        },
+        "deflecting-blades": {
+            "name": "deflecting blades"
+        },
+        "omniscient-assault": {
+            "name": "omniscient assault"
+        },
+        "hive-mind": {
+            "name": "hive mind"
+        },
+        "corrupting-parasites": {
+            "name": "corrupting parasites"
+        },
+        "death-march": {
+            "name": "death march"
+        },
+        "engulfing-stingers": {
+            "name": "engulfing stingers"
+        },
+        "swarming-minions": {
+            "name": "swarming minions"
+        },
+        "scattered-defense": {
+            "name": "scattered defense"
+        },
+        "call-of-the-grave": {
+            "name": "call of the grave"
+        },
+        "the-storms-edge": {
+            "name": "the storms edge"
+        },
+        "unstoppable-army": {
+            "name": "unstoppable army"
+        },
+        "grasping-advance": {
+            "name": "grasping advance"
+        },
+        "tomb-of-the-immortal": {
+            "name": "tomb of the immortal"
+        },
+        "pressing-pursuit": {
+            "name": "pressing pursuit"
+        },
+        "infest": {
+            "name": "infest"
+        },
+        "putrid-grubs": {
+            "name": "putrid grubs"
+        },
+        "overwhelming-offensive": {
+            "name": "overwhelming offensive"
+        },
+        "vampiric-tempest": {
+            "name": "vampiric tempest"
+        },
+        "incubation": {
+            "name": "incubation"
+        },
+        "bioluminescence": {
+            "name": "bioluminescence"
+        },
+        "cyclone-of-blades": {
+            "name": "cyclone of blades"
+        },
+        "sunstroke": {
+            "name": "sunstroke"
+        },
+        "blood-drain": {
+            "name": "blood drain"
+        },
+        "fury-of-the-horde": {
+            "name": "fury of the horde"
+        },
+        "repulsive-host": {
+            "name": "repulsive host"
+        },
+        "bone-daggers": {
+            "name": "bone daggers"
+        },
+        "endless-biting": {
+            "name": "endless biting"
+        },
+        "wasteland": {
+            "name": "wasteland"
+        },
+        "oasis": {
+            "name": "oasis"
+        },
+        "rain-of-arrows": {
+            "name": "Chuva de Flechas"
+        },
+        "race-to-the-grave": {
+            "name": "race to the grave"
+        },
+        "gut-shot": {
+            "name": "gut shot"
+        },
+        "detonation": {
+            "name": "Detonação"
+        },
+        "murderous-stalker": {
+            "name": "murderous stalker"
+        },
+        "a-moments-peace": {
+            "name": "Um Momento de Paz"
+        },
+        "the-hunt-begins": {
+            "name": "A Caça Começa"
+        },
+        "solid-bow": {
+            "name": "solid bow"
+        },
+        "foot-snare": {
+            "name": "Armadilha de Pé"
+        },
+        "forward-momentum": {
+            "name": "forward momentum"
+        },
+        "hidden-danger": {
+            "name": "hidden danger"
+        },
+        "give-chase": {
+            "name": "give chase"
+        },
+        "feral-aid": {
+            "name": "feral aid"
+        },
+        "fierce-fighter": {
+            "name": "fierce fighter"
+        },
+        "relentless-offensive": {
+            "name": "Ofensiva Implacável"
+        },
+        "dual-shot": {
+            "name": "dual shot"
+        },
+        "walking-bastion": {
+            "name": "walking bastion"
+        },
+        "swift-trickery": {
+            "name": "Astúcia Rápida"
+        },
+        "camouflage": {
+            "name": "Camuflagem"
+        },
+        "coated-arrows": {
+            "name": "coated arrows"
+        },
+        "felling-swoop": {
+            "name": "felling swoop"
+        },
+        "expose": {
+            "name": "Expor"
+        },
+        "wild-command": {
+            "name": "Comando Selvagem"
+        },
+        "impending-end": {
+            "name": "Fim Iminente"
+        },
+        "charging-beast": {
+            "name": "charging beast"
+        },
+        "darkened-skies": {
+            "name": "Céus Escurecidos"
+        },
+        "feral-instincts": {
+            "name": "Instintos Ferais"
+        },
+        "press-the-attack": {
+            "name": "Pressionar o Ataque"
+        },
+        "predator-and-prey": {
+            "name": "Predador e Presa"
+        },
+        "heart-of-doom": {
+            "name": "heart of doom"
+        },
+        "ice-spikes": {
+            "name": "Espinhos de Gelo"
+        },
+        "malleable-evocation": {
+            "name": "Evocação Maleável"
+        },
+        "formless-power": {
+            "name": "Poder Sem Forma"
+        },
+        "shaping-the-ether": {
+            "name": "Moldando o Éter"
+        },
+        "stoking-hail": {
+            "name": "Granizo Estimulante"
+        },
+        "magma-scales": {
+            "name": "magma scales"
+        },
+        "infernal-vortex": {
+            "name": "Vórtice Infernal"
+        },
+        "frigid-torrent": {
+            "name": "Torrente Gélida"
+        },
+        "pulsing-cores": {
+            "name": "pulsing cores"
+        },
+        "dual-nature": {
+            "name": "dual nature"
+        },
+        "lingering-essence": {
+            "name": "lingering essence"
+        },
+        "flash-of-brilliance": {
+            "name": "flash of brilliance"
+        },
+        "encompassing-shadow": {
+            "name": "Sombra Envolvente"
+        },
+        "gravel-guard": {
+            "name": "gravel guard"
+        },
+        "wave-of-frost": {
+            "name": "wave of frost"
+        },
+        "arresting-gale": {
+            "name": "arresting gale"
+        },
+        "empowering-flame": {
+            "name": "empowering flame"
+        },
+        "burial": {
+            "name": "Enterro"
+        },
+        "chain-lightning": {
+            "name": "Relâmpago em Cadeia"
+        },
+        "obsidian-shards": {
+            "name": "Fragmentos de Obsidiana"
+        },
+        "winters-edge": {
+            "name": "Gume do Inverno"
+        },
+        "pragmatic-reinforcement": {
+            "name": "Reforço Pragmático"
+        },
+        "duskstorm": {
+            "name": "duskstorm"
+        },
+        "elemental-juggernaut": {
+            "name": "elemental juggernaut"
+        },
+        "confluence-of-elements": {
+            "name": "confluence of elements"
+        },
+        "prismatic-barrage": {
+            "name": "prismatic barrage"
+        },
+        "eye-of-the-hurricane": {
+            "name": "Olho do Furacão"
+        },
+        "ethereal-manifestation": {
+            "name": "Manifestação Etérea"
+        },
+        "primal-duality": {
+            "name": "Dualidade Primal"
+        },
+        "spirit-of-the-night": {
+            "name": "Espírito da Noite"
+        },
+        "slice-through": {
+            "name": "slice through"
+        },
+        "eyes-of-the-night": {
+            "name": "Olhos da Noite"
+        },
+        "armor-of-the-night": {
+            "name": "Armadura da Noite"
+        },
+        "swallowed-by-fear": {
+            "name": "Engolido pelo Medo"
+        },
+        "dancing-shadows": {
+            "name": "Sombras Dançantes"
+        },
+        "silent-force": {
+            "name": "Força Silenciosa"
+        },
+        "black-knives": {
+            "name": "Adagas Negras"
+        },
+        "enervating-wound": {
+            "name": "Ferimento Enervante"
+        },
+        "nightfall": {
+            "name": "Cair da Noite"
+        },
+        "empowering-void": {
+            "name": "Vazio Capacitador"
+        },
+        "marked-for-death": {
+            "name": "marked for death"
+        },
+        "unseen-dread": {
+            "name": "unseen dread"
+        },
+        "shroud-in-shade": {
+            "name": "shroud in shade"
+        },
+        "terror-blade": {
+            "name": "Lâmina do Terror"
+        },
+        "prepare-for-the-kill": {
+            "name": "Preparar para o Abate"
+        },
+        "lurking-ruin": {
+            "name": "Ruína Espreitadora"
+        },
+        "cursed-blades": {
+            "name": "cursed blades"
+        },
+        "into-the-night": {
+            "name": "Pela Noite"
+        },
+        "seeping-tendrils": {
+            "name": "seeping tendrils"
+        },
+        "claws-of-the-night": {
+            "name": "Garras da Noite"
+        },
+        "dark-cloud": {
+            "name": "Nuvem Negra"
+        },
+        "messenger-of-death": {
+            "name": "messenger of death"
+        },
+        "concealed-dominance": {
+            "name": "Dominância Oculta"
+        },
+        "prey-on-the-weak": {
+            "name": "prey on the weak"
+        },
+        "shadowstrike": {
+            "name": "shadowstrike"
+        },
+        "swallowed-by-night": {
+            "name": "swallowed by night"
+        },
+        "voice-of-the-night": {
+            "name": "Voz da Noite"
+        },
+        "comorbid-sting": {
+            "name": "comorbid sting"
+        },
+        "biting-gnats": {
+            "name": "Moscas Mordedoras"
+        },
+        "virulent-strain": {
+            "name": "Linhagem Virulenta"
+        },
+        "contagious-corpse": {
+            "name": "contagious corpse"
+        },
+        "path-of-the-pox": {
+            "name": "path of the pox"
+        },
+        "vile-pestilence": {
+            "name": "Pestilência Vil"
+        },
+        "blistering-buboes": {
+            "name": "blistering buboes"
+        },
+        "festering-sores": {
+            "name": "festering sores"
+        },
+        "wretched-yield": {
+            "name": "wretched yield"
+        },
+        "accelerated-end": {
+            "name": "Fim Acelerado"
+        },
+        "deliriums-danse": {
+            "name": "delirium's danse"
+        },
+        "gift-of-rot": {
+            "name": "gift of rot"
+        },
+        "spread-the-plague": {
+            "name": "Espalhar a Praga"
+        },
+        "sickening-strength": {
+            "name": "sickening strength"
+        },
+        "rot-maggots": {
+            "name": "Larvas da Podridão"
+        },
+        "nightmarish-affliction": {
+            "name": "Aflição Pesadelo"
+        },
+        "cloying-miasma": {
+            "name": "cloying miasma"
+        },
+        "rabid-bite": {
+            "name": "rabid bite"
+        },
+        "unwilling-sacrifice": {
+            "name": "unwilling sacrifice"
+        },
+        "wilt-and-wither": {
+            "name": "wilt and wither"
+        },
+        "compounding-infection": {
+            "name": "compounding infection"
+        },
+        "crippling-malady": {
+            "name": "crippling malady"
+        },
+        "succumb-to-the-gift": {
+            "name": "Sucumbir ao Dom"
+        },
+        "mass-extinction": {
+            "name": "Extinção em Massa"
+        },
+        "tainted-offering": {
+            "name": "tainted offering"
+        },
+        "creeping-lethargy": {
+            "name": "creeping lethargy"
+        },
+        "convert-the-flock": {
+            "name": "Converter o Rebanho"
+        },
+        "disease-vector": {
+            "name": "disease vector"
+        },
+        "xorns-embrace": {
+            "name": "xorns embrace"
+        },
+        "booster-pack": {
+            "name": "booster pack"
+        },
+        "readied-blade": {
+            "name": "readied blade"
+        },
+        "crushing-hammer": {
+            "name": "Martelo Esmagador"
+        },
+        "hastened-step": {
+            "name": "Passo Apressado"
+        },
+        "bladed-boomerang": {
+            "name": "Bumerangue Lâmina"
+        },
+        "impaling-spear": {
+            "name": "Lança Empaladora"
+        },
+        "light-javelin": {
+            "name": "light javelin"
+        },
+        "cleave-and-thrust": {
+            "name": "cleave and thrust"
+        },
+        "iron-bulwark": {
+            "name": "Bastião de Ferro"
+        },
+        "proficiency": {
+            "name": "Proficiência"
+        },
+        "provisions": {
+            "name": "provisions"
+        },
+        "caustic-bolt": {
+            "name": "caustic bolt"
+        },
+        "scroll-of-recall": {
+            "name": "Pergaminho de Invocação"
+        },
+        "sharpening-kit": {
+            "name": "Kit de Afiação"
+        },
+        "scroll-case": {
+            "name": "scroll case"
+        },
+        "lethal-arsenal": {
+            "name": "lethal arsenal"
+        },
+        "quiver-of-arrows": {
+            "name": "Aljava de Flechas"
+        },
+        "concussive-snare": {
+            "name": "concussive snare"
+        },
+        "hammer-and-anvil": {
+            "name": "hammer and anvil"
+        },
+        "giant-club": {
+            "name": "Clava Gigante"
+        },
+        "scroll-of-judgement": {
+            "name": "Pergaminho do Julgamento"
+        },
+        "set-up-shop": {
+            "name": "set up shop"
+        },
+        "scroll-of-lightning": {
+            "name": "Pergaminho dos Relâmpagos"
+        },
+        "continual-supply": {
+            "name": "Suprimento Contínuo"
+        },
+        "twin-lances": {
+            "name": "twin lances"
+        },
+        "tools-of-war": {
+            "name": "tools of war"
+        },
+        "scroll-of-blizzards": {
+            "name": "Pergaminho das Nevascas"
+        },
+        "armed-to-the-teeth": {
+            "name": "armed to the teeth"
+        },
+        "reinforced-steel": {
+            "name": "Aço Reforçado"
+        },
+        "bag-of-holding": {
+            "name": "Bolsa Dimensional"
+        },
+        "battlefield-medicine": {
+            "name": "Medicina de Campo de Batalha"
+        },
+        "first-aid": {
+            "name": "Primeiros Socorros"
+        },
+        "curative-mixture": {
+            "name": "Mistura Curativa"
+        },
+        "bloody-saw": {
+            "name": "Serra Sangrenta"
+        },
+        "prevention-is-key": {
+            "name": "Prevenção é Chave"
+        },
+        "hand-of-the-surgeon": {
+            "name": "Mão do Cirurgião"
+        },
+        "booster-shot": {
+            "name": "Injeção de Reforço"
+        },
+        "syringe": {
+            "name": "Seringa"
+        },
+        "needle-gun": {
+            "name": "needle gun"
+        },
+        "vital-strikes": {
+            "name": "vital strikes"
+        },
+        "vaccine": {
+            "name": "Vacina"
+        },
+        "teamwork": {
+            "name": "Trabalho em Equipa"
+        },
+        "prep-for-surgery": {
+            "name": "Preparar para Cirurgia"
+        },
+        "hamstring": {
+            "name": "Corta-Tendão"
+        },
+        "precaution": {
+            "name": "Precaução"
+        },
+        "regenerative-tissue": {
+            "name": "Tecido Regenerativo"
+        },
+        "blood-transfusion": {
+            "name": "Transfusão de Sangue"
+        },
+        "experimental-stimulants": {
+            "name": "experimental stimulants"
+        },
+        "do-no-harm": {
+            "name": "Não Cause Mal"
+        },
+        "hack-to-bits": {
+            "name": "hack to bits"
+        },
+        "fortifying-injection": {
+            "name": "fortifying injection"
+        },
+        "amputate": {
+            "name": "Amputar"
+        },
+        "return-the-favor": {
+            "name": "return the favor"
+        },
+        "surgeons-satchel": {
+            "name": "surgeons satchel"
+        },
+        "exacting-anger": {
+            "name": "exacting anger"
+        },
+        "take-your-medicine": {
+            "name": "take your medicine"
+        },
+        "euthanize": {
+            "name": "Eutanasiar"
+        },
+        "secret-of-the-oak": {
+            "name": "secret of the oak"
+        },
+        "grisly-trauma": {
+            "name": "grisly trauma"
+        },
+        "medical-pack-1": {
+            "name": "medical pack 1"
+        },
+        "medical-pack-2": {
+            "name": "medical pack 2"
+        },
+        "medical-pack-3": {
+            "name": "medical pack 3"
+        },
+        "medical-pack-4": {
+            "name": "medical pack 4"
+        },
+        "medical-pack-5": {
+            "name": "medical pack 5"
+        },
+        "medical-pack-6": {
+            "name": "medical pack 6"
+        },
+        "hammer-blow": {
+            "name": "Golpe de Martelo"
+        },
+        "holy-strike": {
+            "name": "Golpe Sagrado"
+        },
+        "empowering-command": {
+            "name": "Comando Capacitador"
+        },
+        "dazzling-charge": {
+            "name": "Investida Ofuscante"
+        },
+        "lay-on-hands": {
+            "name": "Imposição de Mãos"
+        },
+        "tactical-order": {
+            "name": "Ordem Tática"
+        },
+        "brilliant-prayer": {
+            "name": "Oração Brilhante"
+        },
+        "soothing-light": {
+            "name": "soothing light"
+        },
+        "purifying-aura": {
+            "name": "Aura Purificadora"
+        },
+        "protective-blessing": {
+            "name": "Bênção Protetora"
+        },
+        "defensive-stance": {
+            "name": "Postura Defensiva"
+        },
+        "daybreak": {
+            "name": "Alvorecer"
+        },
+        "sanctify": {
+            "name": "sanctify"
+        },
+        "beacon-of-light": {
+            "name": "Faro de Luz"
+        },
+        "holy-defense": {
+            "name": "holy defense"
+        },
+        "mobilizing-axiom": {
+            "name": "Axioma Mobilizador"
+        },
+        "engulfing-radiance": {
+            "name": "Resplendor Envolvente"
+        },
+        "burning-flash": {
+            "name": "Flash Ardente"
+        },
+        "righteous-strength": {
+            "name": "Força Justa"
+        },
+        "cautious-advance": {
+            "name": "Avanço Cauteloso"
+        },
+        "arresting-march": {
+            "name": "arresting march"
+        },
+        "path-of-glory": {
+            "name": "Caminho da Glória"
+        },
+        "divine-intervention": {
+            "name": "Intervenção Divina"
+        },
+        "scales-of-justice": {
+            "name": "Balança da Justiça"
+        },
+        "bright-aegis": {
+            "name": "Égide Brilhante"
+        },
+        "illuminate-the-target": {
+            "name": "Iluminar o Alvo"
+        },
+        "warding-blow": {
+            "name": "warding blow"
+        },
+        "supportive-chant": {
+            "name": "Cântico de Apoio"
+        },
+        "divine-ascension": {
+            "name": "divine ascension"
+        },
+        "solar-bastion": {
+            "name": "solar bastion"
+        },
+        "mobilizing-measure": {
+            "name": "Medida Mobilizadora"
+        },
+        "bewildering-instrumental": {
+            "name": "bewildering instrumental"
+        },
+        "wearying-chant": {
+            "name": "wearying chant"
+        },
+        "power-ballad": {
+            "name": "Balada do Poder"
+        },
+        "dissonant-rhythm": {
+            "name": "dissonant rhythm"
+        },
+        "increase-cadence": {
+            "name": "increase cadence"
+        },
+        "intensifying-amplitude": {
+            "name": "intensifying amplitude"
+        },
+        "marching-beat": {
+            "name": "Ritmo de Marcha"
+        },
+        "tuning-the-outcome": {
+            "name": "Ajustando o Resultado"
+        },
+        "call-to-action": {
+            "name": "Chamado à Ação"
+        },
+        "singing-arrow": {
+            "name": "Flecha Cantante"
+        },
+        "defensive-ditty": {
+            "name": "Canção Defensiva"
+        },
+        "echoing-aria": {
+            "name": "Ária Ecoante"
+        },
+        "provoke-terror": {
+            "name": "Provocar Terror"
+        },
+        "onward-to-battle": {
+            "name": "onward to battle"
+        },
+        "soothing-lullaby": {
+            "name": "Nana Suave"
+        },
+        "symphonic-medley": {
+            "name": "symphonic medley"
+        },
+        "ode-to-the-gambler": {
+            "name": "ode to the gambler"
+        },
+        "hymn-of-the-oak": {
+            "name": "hymn of the oak"
+        },
+        "alluring-serenade": {
+            "name": "alluring serenade"
+        },
+        "change-tempo": {
+            "name": "Mudar o Ritmo"
+        },
+        "thrilling-solo": {
+            "name": "thrilling solo"
+        },
+        "pull-the-strings": {
+            "name": "Puxar as Cordas"
+        },
+        "disorienting-dirge": {
+            "name": "Cântico Desorientador"
+        },
+        "inspiring-anthem": {
+            "name": "Hino Inspirador"
+        },
+        "wistful-wounding": {
+            "name": "Ferimento Melancólico"
+        },
+        "commanding-presence": {
+            "name": "Presença Imponente"
+        },
+        "toughening-trill": {
+            "name": "toughening trill"
+        },
+        "grand-finale": {
+            "name": "grand finale"
+        },
+        "captivating-performance": {
+            "name": "Apresentação Cativante"
+        },
+        "ethereal-gust": {
+            "name": "ethereal gust"
+        },
+        "forged-ferocity": {
+            "name": "Ferocidade Forjada"
+        },
+        "living-night": {
+            "name": "Noite Viva"
+        },
+        "wild-animation": {
+            "name": "Animação Selvagem"
+        },
+        "planar-protection": {
+            "name": "planar protection"
+        },
+        "mighty-bond": {
+            "name": "Vínculo Poderoso"
+        },
+        "bonded-might": {
+            "name": "Poder Vinculado"
+        },
+        "burning-passion": {
+            "name": "burning passion"
+        },
+        "unending-dominance": {
+            "name": "Dominância Sem Fim"
+        },
+        "shadow-dart": {
+            "name": "shadow dart"
+        },
+        "burning-tether": {
+            "name": "burning tether"
+        },
+        "primal-assault": {
+            "name": "primal assault"
+        },
+        "drifting-stingers": {
+            "name": "drifting stingers"
+        },
+        "biting-wind": {
+            "name": "Vento Cortante"
+        },
+        "unwavering-hand": {
+            "name": "Mão Inabalável"
+        },
+        "intervening-apparitions": {
+            "name": "Aparições Intervenientes"
+        },
+        "void-imbuement": {
+            "name": "void imbuement"
+        },
+        "shaping-the-void": {
+            "name": "shaping the void"
+        },
+        "deadly-mischief": {
+            "name": "deadly mischief"
+        },
+        "strength-in-numbers": {
+            "name": "Força nos Números"
+        },
+        "volatile-flame": {
+            "name": "Chama Volátil"
+        },
+        "living-mountain": {
+            "name": "Montanha Viva"
+        },
+        "primal-infusion": {
+            "name": "primal infusion"
+        },
+        "tear-the-fabric": {
+            "name": "Rasgar o Tecido"
+        },
+        "oozing-manifestation": {
+            "name": "Manifestação Viscosa"
+        },
+        "divided-mind": {
+            "name": "Mente Dividida"
+        },
+        "negative-energy": {
+            "name": "Energia Negativa"
+        },
+        "otherworldly-rage": {
+            "name": "Ira de Outro Mundo"
+        },
+        "interplanar-mastery": {
+            "name": "Domínio Interplanar"
+        },
+        "imposed-will": {
+            "name": "imposed will"
+        },
+        "horned-nightmare": {
+            "name": "horned nightmare"
+        },
+        "concentrated-rage": {
+            "name": "Ira Concentrada"
+        },
+        "maul": {
+            "name": "Esmagar"
+        },
+        "howling-bolts": {
+            "name": "Raios Uivantes"
+        },
+        "natures-gift": {
+            "name": "nature's gift"
+        },
+        "focused-aggression": {
+            "name": "Agressão Focada"
+        },
+        "gnaw": {
+            "name": "gnaw"
+        },
+        "disorienting-roar": {
+            "name": "Rugido Desorientador"
+        },
+        "vitality-siphon": {
+            "name": "vitality siphon"
+        },
+        "spirit-swap": {
+            "name": "Troca de Espírito"
+        },
+        "invocation-of-endurance": {
+            "name": "invocation of endurance"
+        },
+        "invocation-of-spirit": {
+            "name": "invocation of spirit"
+        },
+        "gust-sigil": {
+            "name": "gust sigil"
+        },
+        "forceful-swipe": {
+            "name": "Golpe Vigoroso"
+        },
+        "energizing-strike": {
+            "name": "Golpe Energizante"
+        },
+        "earthen-spikes": {
+            "name": "Espinhos de Terra"
+        },
+        "punch-through": {
+            "name": "Perfurar"
+        },
+        "stone-sigil": {
+            "name": "Selo de Pedra"
+        },
+        "unstoppable-beast": {
+            "name": "Besta Imparável"
+        },
+        "forests-blessing": {
+            "name": "forest's blessing"
+        },
+        "rampage": {
+            "name": "Fúria"
+        },
+        "invocation-of-domination": {
+            "name": "invocation of domination"
+        },
+        "blood-hunger": {
+            "name": "Fome de Sangue"
+        },
+        "ancient-ward": {
+            "name": "Proteção Ancestral"
+        },
+        "invocation-of-absorption": {
+            "name": "invocation of absorption"
+        },
+        "unleashed-fury": {
+            "name": "unleashed fury"
+        },
+        "lash-out": {
+            "name": "Golpear com Força"
+        },
+        "unbreakable-bond": {
+            "name": "unbreakable bond"
+        },
+        "spirit-sigil": {
+            "name": "spirit sigil"
+        },
+        "jaws-of-death": {
+            "name": "Mandíbulas da Morte"
         }
     }
 }

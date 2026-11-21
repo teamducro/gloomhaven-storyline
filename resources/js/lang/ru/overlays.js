@@ -1,44 +1,44 @@
 export default {
     "fh-A": {
-        "name": "Boat"
+        "name": "Лодка"
     },
     "fh-B": {
-        "name": "Sled"
+        "name": "Сани"
     },
     "fh-C": {
-        "name": "Climbing Gear"
+        "name": "Альпинистское снаряжение"
     },
     "fh-D": {
-        "name": "Ice Spike"
+        "name": "Ледяной шип"
     },
     "fh-E": {
-        "name": "Portcullis"
+        "name": "Опускная решётка"
     },
     "fh-F": {
-        "name": "Statue"
+        "name": "Статуя"
     },
     "fh-G_red": {
-        "name": "Red Well"
+        "name": "Красный колодец"
     },
     "fh-G_blue": {
-        "name": "Blue Well"
+        "name": "Синий колодец"
     },
     "fh-H": {
-        "name": "Stage"
+        "name": "Сцена"
     },
     "fh-J": {
-        "name": "Wall"
+        "name": "Стена"
     },
     "fh-K": {
-        "name": "Wall"
+        "name": "Стена"
     },
     "fh-L": {
-        "name": "Wall"
+        "name": "Стена"
     },
     "fh-M": {
-        "name": "Wall"
+        "name": "Стена"
     },
     "fh-N": {
-        "name": "Wall"
+        "name": "Стена"
     }
 }

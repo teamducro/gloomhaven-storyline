@@ -5,10 +5,7 @@
             <select id="mobile-character-menu" @change="mobileSelect"
                     class="block w-full absolute opacity-0 font-title text-md -ml-1">
                 <option value="party">
-                    {{ sheet.game === Game.fh
-                        ? $t('Campaign sheet')
-                        : $t('Party sheet')
-                    }}
+                    {{ $t(sheetLabel) }}
                 </option>
                 <optgroup :label="$t('Characters')">
                     <template v-for="character in orderedCharacters">
@@ -46,7 +43,7 @@
                 </option>
             </select>
             <label v-if="selectedCharacter" for="mobile-character-menu" class="flex items-center">
-                <character-icon class="flex-shrink-0 w-5 mr-2"
+                <character-icon class="shrink-0 w-5 mr-2"
                                 :key="'selected-character-icon-'+selectedCharacter.id"
                                 :character="selectedCharacter.id"/>
                 <span class="font-title">{{
@@ -58,34 +55,36 @@
 
         <!-- Desktop menu -->
         <div id="desktop-character-menu" class="hidden sm:block">
-            <draggable tag="ul" class="space-y-6 mb-4" v-model="orderedCharacters" group="characters" @end="updateCharacterOrder" :disabled="!appData.hasMouse || appData.read_only">
-                <li class="space-y-6" v-for="character in orderedCharacters" :key="'character-'+character.uuid">
-                    <span class="flow-root">
-                        <a @click.stop.prevent="select(character.uuid)" href="#"
-                           class="-m-3 p-2 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
-                           :class="[selected === character.uuid && !abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
-                            <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
-                            <span class="overflow-hidden">{{
-                                    character.name === character.characterName
-                                        ? $t(character.characterName)
-                                        : character.name
-                                }}</span>
-                        </a>
-                    </span>
-                    <span v-if="selected === character.uuid && character.hasAbilities" class="flow-root"
-                        :key="'character-abilities-'+character.uuid">
-                        <a @click.stop.prevent="select(character.uuid, true)" href="#"
-                           class="-m-3 p-2 pl-9 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
-                           :class="[selected === character.uuid && abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
-                            <span class="overflow-hidden">{{ $t('Abilities') }}</span>
-                        </a>
-                    </span>
-                </li>
+            <draggable tag="ul" class="space-y-6 mb-4" v-model="orderedCharacters" item-key="uuid" group="characters" @end="updateCharacterOrder" :disabled="!appData.hasMouse || appData.read_only">
+                <template #item="{element: character}">
+                    <li class="space-y-6">
+                        <span class="flow-root">
+                            <a @click.stop.prevent="select(character.uuid)" href="#"
+                               class="-m-3 p-2 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
+                               :class="[selected === character.uuid && !abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
+                                <character-icon class="shrink-0 w-5 mr-2" :character="character.id"/>
+                                <span class="overflow-hidden">{{
+                                        character.name === character.characterName
+                                            ? $t(character.characterName)
+                                            : character.name
+                                    }}</span>
+                            </a>
+                        </span>
+                        <span v-if="selected === character.uuid && character.hasAbilities" class="flow-root"
+                            :key="'character-abilities-'+character.uuid">
+                            <a @click.stop.prevent="select(character.uuid, true)" href="#"
+                               class="-m-3 p-2 pl-9 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
+                               :class="[selected === character.uuid && abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
+                                <span class="overflow-hidden">{{ $t('Abilities') }}</span>
+                            </a>
+                        </span>
+                    </li>
+                </template>
             </draggable>
 
             <template v-if="!isLocalCampaign && Object.keys(sheet.archivedCharacters).length">
                 <collapse :initialOpen="selected in sheet.archivedCharacters">
-                    <template slot="trigger">
+                    <template #trigger>
                         <div class="my-3 font-title">{{ $t('Retired') }}</div>
                     </template>
 
@@ -95,7 +94,7 @@
                             <a @click.stop.prevent="select(character.uuid)" href="#"
                                class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                                :class="[selected === character.uuid ? 'text-white bg-black2-25' : 'text-white2-75']">
-                                <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
+                                <character-icon class="shrink-0 w-5 mr-2" :character="character.id"/>
                                 <span>{{
                                         character.name === character.characterName
                                             ? $t(character.characterName)
@@ -113,8 +112,10 @@
 <script>
 import draggable from 'vuedraggable'
 import {Game} from "../../../models/Game";
+import GameData from "../../../services/GameData";
 
 export default {
+    emits: ['select', 'store'],
     components: {
         draggable,
     },
@@ -139,6 +140,9 @@ export default {
     computed: {
         Game() {
             return Game
+        },
+        sheetLabel() {
+            return new GameData().sheetLabel(this.sheet.game);
         },
         selectedCharacter() {
             if (!this.selected) {

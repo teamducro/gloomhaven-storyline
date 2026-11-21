@@ -1,11 +1,18 @@
 export default {
     "Sanctuary of the Great Oak": "Sanctuary of the Great Oak",
     "Gloomhaven Prosperity": "Gloomhaven Prosperity",
+    "Frosthaven Prosperity": "Frosthaven Prosperity",
+    "{game} Items": "{game} Items",
+    "Global Achievements": "Global Achievements",
+    "Party Achievements": "Party Achievements",
+    "Campaign Stickers": "Campaign Stickers",
+    "No achievements in {game}": "No achievements in {game}",
     "Prosperity Items": "Prosperity Items",
     "Modify the cost of items when buying by this amount.": "Modify the cost of items when buying by this amount.",
     "The cost of items displayed is modified by this amount.": "The cost of items displayed is modified by this amount.",
     "When 100 gold is donated, open envelope": "When 100 gold is donated, open envelope",
     "gained prosperity checkbox by donations.": "gained prosperity checkbox by donations.",
+    "Gained from donations": "Gained from donations",
     "City Event Decks": "City Event Decks",
     "Add city events": "Add city events",
     "Road Event Decks": "Road Event Decks",
@@ -30,6 +37,7 @@ export default {
     "Have a party reputation of 10 or higher": "Have a party reputation of 10 or higher",
     "Have a party reputation of 20": "Have a party reputation of 20",
     "Retire a character": "Retire a character",
+    "When the first character retires": "When the first character retires",
 
     // Storyline App
     "Abilities": "Abilities",
@@ -43,6 +51,7 @@ export default {
     "Battle Goals": "Battle Goals",
     "blocked": "blocked",
     "Blocked": "Blocked",
+    "Blocks": "Blocks",
     "Buy me a Beer": "Buy me a Beer!",
     "Cancel": "Cancel",
     "character-limit-message": "Due to sharing limitations of free campaigns there is a character limit on notes, Pro users don’t have this limit",
@@ -69,6 +78,10 @@ export default {
     "Conclusion": "Conclusion",
     "Deck": "Deck",
     "Draw": "Draw",
+    "Event history": "Event history",
+    "Removed from deck": "Removed from deck",
+    "Returned to deck": "Returned to deck",
+    "Remove from history": "Remove from history",
     "Envelope X solution": "Envelope X solution",
     "Envelope": "Envelope",
     "Gained from": "Gained from",
@@ -106,6 +119,7 @@ export default {
     "Required": "Required",
     "Requirements": "Requirements",
     "Retire": "Retire",
+    "Abandon": "Abandon",
     "Retired": "Retired",
     "Retirement counter": "Retirement counter",
     "Reward": "Reward | Rewards",
@@ -113,10 +127,13 @@ export default {
     "Search": "Search",
     "Set this counter to the amount of characters you have retired": "Set this counter to the amount of characters you have retired.",
     "Show all": "Show all",
+    "Milestone achieved": "Milestone achieved",
     "Manage": "Manage",
     "Show treasures": "Show treasures",
     "solved": "solved",
     "Summary": "Summary",
+    "Story summaries": "Story summaries",
+    "Complete a scenario to start your story": "Complete a scenario to start your story.",
     "Toggle": "Toggle",
     "Treasure": "Treasure | Treasures",
     "Treasures": "Treasures",
@@ -133,7 +150,11 @@ export default {
     },
     "retire-character": {
         "text": "Are you sure you want to retire this character? It's not removed permanently.",
-        "upgrade": "Are you sure you want to permanently remove this character? Pro users may retire a character without removing it permanently."
+        "upgrade": "Retiring or abandoning permanently removes this character. Pro users can retire a character and keep an archived copy.",
+        "choice": "Retiring adds its class's retirement events."
+    },
+    "abandon-character": {
+        "text": "Are you sure you want to abandon this character? It's archived, so you can restore or remove it later."
     },
     "remove-character": {
         "text": "Are you sure you want to permanently remove this character?"
@@ -149,10 +170,12 @@ export default {
         "expand_title": {
             "gh": "Unlock Gloomhaven for a New Adventure",
             "fh": "Unlock Frosthaven for a New Adventure",
+            "gh2": "Unlock Gloomhaven 2nd Edition for a New Adventure",
         },
         "expand_text": {
             "gh": "You've selected Gloomhaven but you don't have access to it yet.",
             "fh": "You've selected Frosthaven but you don't have access to it yet.",
+            "gh2": "You've selected Gloomhaven 2nd Edition, it's included with Gloomhaven but you don't have access to it yet.",
             "general": "Ready for a new adventure? Add it to your existing shared campaign license."
         },
         "local": "Or use the free local version instead.",
@@ -165,6 +188,15 @@ export default {
         "3": "or share it on one of the following platforms.",
         "title": "Share Gloomhaven Storyline Tracker"
     },
+    "ghs-export": {
+        "button": "Gloomhaven Secretariat",
+        "title": "Export to Gloomhaven Secretariat",
+        "1": "Preload your party in the combat helper Gloomhaven Secretariat:",
+        "2": "Download the file below.",
+        "3": "Open Gloomhaven Secretariat and choose Menu > Data Management > Import File.",
+        "4": "Select the file. Your characters (class, level and name) and the scenario are loaded. This replaces the current game in Gloomhaven Secretariat. To add the monsters, open the scenario at the bottom of Gloomhaven Secretariat and choose Restart Scenario."
+    },
+    "Download": "Download",
     "share-campaign-code": {
         "not-allowed": "You are not the owner of this campaign, you can't share it with others.",
         "1": "Share the following campaign code with your party members to enable progress sync across all your devices!",
@@ -272,6 +304,12 @@ export default {
     "Buy new campaign": "Buy new campaign",
     "Edit": "Edit",
     "Unlink": "Unlink",
+    "Delete permanently": "Delete permanently",
+    "delete-campaign-confirm": "Permanently delete \"{name}\" for you and everyone it is shared with?",
+    "delete-campaign-note": "All progress and snapshots are removed from the server and this cannot be undone.",
+    "delete-campaign-failed": "Failed to delete the campaign, try again later.",
+    "campaign-deleted": "\"{name}\" was deleted by its owner and has been removed from this device.",
+    "campaign-deleted-keep": "Keep a copy as the local campaign on this device? This replaces the current local campaign.",
     "Restore Purchase": "Restore Purchase",
     "Change name": "Change name",
     "Fill in your email, you'll receive a link to sync your campaign.": "Fill in your email, you'll receive a link to sync your campaign.",
@@ -293,6 +331,10 @@ export default {
     "Settings": "Settings",
     "Clear filter": "Clear filter",
     "Missed Treasures": "Missed Treasures",
+    "Monster": "Monster",
+    "Monsters": "Monsters",
+    "Monster data": "Monster data",
+    "Monster art": "Monster art",
     "transfer": {
         "title": "Transfer campaign data",
         "text": "Copy campaign data between campaigns can be done easily.",
@@ -301,9 +343,15 @@ export default {
             "read-only": "Transfer campaign data is not available in read only mode."
         }
     },
+    "integrations": {
+        "title": "Integrations",
+        "text": "Show buttons for these third-party apps in the scenario window.",
+        "virtual-board": "Virtual Board (Gloomhaven and Forgotten Circles only)"
+    },
     "games-enabled": {
         "title": "Enabled Games",
-        "text": "To hide games and it's characters enable only ones you own."
+        "text": "To hide games and its characters enable only ones you own. Progress is kept when switching.",
+        "packs": "Smaller expansions"
     },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",
@@ -352,8 +400,14 @@ export default {
     "cs": "Crimson Scales",
     "Crimson Scales": "Crimson Scales",
     "mp": "Mercenary Pack",
+    "cq": "ConQuests 2025",
+    "sox": "Seeker of Xorn bonus content",
+    "gh2": "Gloomhaven 2nd Edition",
 
     "Availability": "Availability",
+    "Sacrifice": "Sacrifice",
+    "Removed from game": "Removed from game",
+    "Restore": "Restore",
     "Sticker": "Sticker",
     "State": "State",
     "Name": "Name",
@@ -383,6 +437,8 @@ export default {
     "Dragons": "Dragons",
     "Voice": "Voice",
     "Solo": "Solo",
+    "Flip": "Flip",
+    "Character mat": "Character mat",
     "Solo Scenarios": "Solo Scenarios",
     "Personal Quests": "Personal Quests",
     "Personal Quest": "Personal Quest",
@@ -414,7 +470,6 @@ export default {
     "or": "or",
     "Hidden Scenario": "Hidden Scenario",
     "Add achievements gained by events other than completing scenarios manually": "Add achievements gained by events other than completing scenarios manually",
-    "The location numbers in the story text are just reminders. They themselves don't unlock anything.": "The location numbers in the story text are just reminders. They themselves don't unlock anything.",
     "Level up when youre back in town": "Level up when you're back in town!",
     "Add {x} {-1} to your attack modifier deck.": "Add {x} {-1} to your attack modifier deck.",
     "Attack Modifier Deck": "Attack Modifier Deck",
@@ -472,15 +527,20 @@ export default {
 
     "Recover": "Recover",
     "Refresh": "Refresh",
+    "Spent": "Spent",
+    "Consumed": "Consumed",
+    "PAGE": "PAGE",
 
     // Conditions
     "BANE": "BANE",
     "BLESS": "BLESS",
+    "BRITTLE": "BRITTLE",
     "CHILL": "CHILL",
     "CURSE": "CURSE",
     "DISARM": "DISARM",
     "EMPOWER": "EMPOWER",
     "IMMOBILIZE": "IMMOBILIZE",
+    "IMPAIR": "IMPAIR",
     "INFECT": "INFECT",
     "INVISIBLE": "INVISIBLE",
     "LOOT": "LOOT",
@@ -501,11 +561,13 @@ export default {
 
     // Class-colored Text
     "Augment": "Augment",
+    "Banner": "Banner",
     "Colony": "Colony",
     "Command": "Command",
     "Cultivate": "Cultivate",
     "Deathshroud": "Deathshroud Spider",
     "Doom": "Doom",
+    "Fast": "Fast",
     "Firespitter": "Firespitter Ant",
     "Ghostshimmer": "Ghostshimmer Bee",
     "Glow": "Glow",
@@ -522,10 +584,37 @@ export default {
     "Scrap": "Scrap",
     "Shackle": "Shackle",
     "Shackled": "Shackled",
+    "Slow": "Slow",
     "Song": "Song",
     "Spirit": "Spirit",
     "Spirits": "Spirits",
     "Timed": "Timed",
     "Void": "Void Energy",
-    "Voidsight": "Voidsight"
+    "Voidsight": "Voidsight",
+    "Wave": "Wave",
+
+    "Inspiration": "Inspiration",
+    "Demons": "Demons",
+    "Military": "Military",
+    "Imbuement": "Imbuement",
+    "Read section": "Read section",
+    "Scenario": "Scenario",
+    "13 reputation with any faction": "13 reputation with any faction",
+    "Add City Event 57": "Add City Event 57",
+    "Reputation above 12 unlocked": "Reputation above 12 unlocked",
+    "gained prosperity checkboxes by imbuement.": "gained prosperity checkboxes by imbuement.",
+    "Classes unlocked": "Classes unlocked",
+    "Unlocking a class adds its events to the event decks.": "Unlocking a class adds its events to the event decks.",
+    "The Sect": "The Sect",
+    "Merchant's Guild": "Merchant's Guild",
+    "The Shields": "The Shields",
+    "Hail": "Hail",
+    "The Voice and the Drake": "The Voice and the Drake",
+    "The Sewers": "The Sewers",
+    "The Gloom": "The Gloom",
+    "Finale": "Finale",
+    "Random Side Scenarios": "Random Side Scenarios",
+    "Puzzle Book": "Puzzle Book",
+    "Events": "Events",
+    "Fan-made bonus content by {author}": "Fan-made bonus content by {author}"
 }

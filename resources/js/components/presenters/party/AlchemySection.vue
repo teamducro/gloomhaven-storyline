@@ -1,31 +1,33 @@
 <template>
     <div v-if="alchemist">
-        <div v-for="chart in charts" v-if="alchemist.level >= chart.level" class="flex flex-wrap">
-            <div>
-                <h2 class="my-4">{{ $t(chart.title) }}</h2>
-                <div class="grid gap-4" :class="'grid-cols-'+chart.chart[0].length">
-                    <template v-for="row in chart.chart">
-                        <template v-for="cell in row">
-                            <span v-if="cell === ''"/>
-                            <div v-else-if="cell === 'any'" class="relative">
-                                <div v-for="(resource, index) in resources">
-                                    <inline-svg :src="'resources/'+resource"
-                                                class="absolute w-full left-0 transition-opacity duration-500"
-                                                :class="[index === anyIndex ? 'opacity-1' : 'opacity-0']"/>
+        <template v-for="chart in charts">
+            <div v-if="alchemist.level >= chart.level" class="flex flex-wrap">
+                <div>
+                    <h2 class="my-4">{{ $t(chart.title) }}</h2>
+                    <div class="grid gap-4" :style="{gridTemplateColumns: 'repeat('+chart.chart[0].length+', minmax(0, 1fr))'}">
+                        <template v-for="row in chart.chart">
+                            <template v-for="cell in row">
+                                <span v-if="cell === ''"/>
+                                <div v-else-if="cell === 'any'" class="relative">
+                                    <div v-for="(resource, index) in resources">
+                                        <inline-svg :src="'resources/'+resource"
+                                                    class="absolute w-full left-0 transition-opacity duration-500"
+                                                    :class="[index === anyIndex ? 'opacity-100' : 'opacity-0']"/>
+                                    </div>
                                 </div>
-                            </div>
-                            <inline-svg  v-else-if="typeof cell === 'string'" :src="'resources/'+cell"/>
-                            <a v-else-if="isUnlocked(cell)" @click.prevent="openItem(cell.item)" class="relative rounded overflow-hidden cursor-pointer" href="#">
-                                <webp :src="cell.item.image" width="45" class="top-0 absolute max-w-none rounded item-thumbnail"
-                                      :alt="$t(cell.item.name)" :animate="true"/>
-                            </a>
-                            <a v-else @click.prevent="brew(cell)" class="cursor-pointer outline-gray rounded"
-                               :class="{'outline-green-700': canAfford(cell.item.cost)}" href="#"/>
+                                <inline-svg  v-else-if="typeof cell === 'string'" :src="'resources/'+cell"/>
+                                <a v-else-if="isUnlocked(cell)" @click.prevent="openItem(cell.item)" class="relative rounded-sm overflow-hidden cursor-pointer" href="#">
+                                    <webp :src="cell.item.image" width="45" class="top-0 absolute max-w-none rounded-sm item-thumbnail"
+                                          :alt="$t(cell.item.name)" :animate="true"/>
+                                </a>
+                                <a v-else @click.prevent="brew(cell)" class="cursor-pointer outline-gray rounded-sm"
+                                   :class="{'outline-green-700': canAfford(cell.item.cost)}" href="#"/>
+                            </template>
                         </template>
-                    </template>
+                    </div>
                 </div>
             </div>
-        </div>
+        </template>
 
         <Teleport to="body">
             <modal ref="brew-potion-modal" :title="$t('Brew a new potion!')">
@@ -33,26 +35,30 @@
                     <p class="flex">{{ $t('Are you sure you want to brew a potion using') + ': ' }}
                         <span v-if="brewingCell" class="inline-flex">
                             <add-links-and-icons v-if="brewingCell.ingredients" :text="brewingCell.ingredients" class="inline-flex"/>
-                            <template v-if="!brewingCell.ingredients" v-for="(count, resource) in brewingCell.item.cost">
-                                <inline-svg  v-if="resource !== 'any'" :src="'resources/'+resource"/>
-                                <div v-if="resource === 'any'" class="relative">
-                                    <div v-for="(resource, index) in resources">
-                                        <inline-svg :src="'resources/'+resource"
-                                                    class="absolute w-full left-0 transition-opacity duration-500"
-                                                    :class="[index === anyIndex ? 'opacity-1' : 'opacity-0']"/>
+                            <template v-if="!brewingCell.ingredients">
+                                <template v-for="(count, resource) in brewingCell.item.cost">
+                                    <inline-svg  v-if="resource !== 'any'" :src="'resources/'+resource"/>
+                                    <div v-if="resource === 'any'" class="relative">
+                                        <div v-for="(resource, index) in resources">
+                                            <inline-svg :src="'resources/'+resource"
+                                                        class="absolute w-full left-0 transition-opacity duration-500"
+                                                        :class="[index === anyIndex ? 'opacity-100' : 'opacity-0']"/>
+                                        </div>
+                                        <span class="ml-6">x {{ count }}</span>
                                     </div>
-                                    <span class="ml-6">x {{ count }}</span>
-                                </div>
+                                </template>
                             </template>
                         </span>
                     </p>
                 </template>
                 <template v-slot:buttons>
                     <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                        <span class="mdc-button__ripple"></span>
                         <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                     </button>
                     <button type="button" class="mdc-button mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="yes"
                             :disabled="appData.read_only" @click="unlock">
+                        <span class="mdc-button__ripple"></span>
                         <span class="mdc-button__label">{{ $t('Confirm') }}</span>
                     </button>
                 </template>
@@ -68,11 +74,11 @@ import BuildingRepository from "../../../repositories/BuildingRepository";
 import ItemRepository from "../../../repositories/ItemRepository";
 import AddLinksAndIcons from "../../elements/AddLinksAndIcons.vue";
 import {shuffle} from "lodash";
-import Teleport from "vue2-teleport";
 
 export default {
+    emits: ['change'],
     inject: ['appData'],
-    components: {AddLinksAndIcons, Teleport},
+    components: {AddLinksAndIcons},
     props: {
         sheet: {
             type: Object,
@@ -100,10 +106,7 @@ export default {
 
         this.render();
 
-        this.$bus.$on('campaigns-changed', this.render);
-    },
-    destroyed() {
-        this.$bus.$off('campaigns-changed', this.render);
+        this.$listen('campaigns-changed', this.render);
     },
     watch: {
 
@@ -186,9 +189,9 @@ export default {
         unlock() {
             if (this.brewingCell) {
                 if (this.brewingCell.recipe) {
-                    Vue.set(this.sheet.recipes, this.brewingCell.recipe, true);
+                    this.sheet.recipes[this.brewingCell.recipe] = true;
                 }
-                Vue.set(this.sheet.itemDesigns, this.brewingCell.item._id, true);
+                this.sheet.itemDesigns[this.brewingCell.item._id] = true;
                 this.$emit('change');
             }
         },

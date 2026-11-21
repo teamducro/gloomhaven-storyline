@@ -8,7 +8,7 @@
         </router-link>
         <webp v-if="scenario.has_boss" src="/img/icons/general/boss.png" width="16" class="ml-2 boss"/>
         <router-link v-for="requirement in Requirement.requirements()" :key="'requirement-link-' + requirement"
-                     :to="Requirement.page(requirement)" class="outline-none flex items-center" data-mdc-dialog-action="close">
+                     :to="Requirement.page(requirement)" class="outline-hidden flex items-center" data-mdc-dialog-action="close">
             <span v-if="scenario.isRequiredBy(requirement)" class="relative">
                 <span v-if="isRequired(requirement)" class="absolute text-xs font-bold text-required ml-1 -mt-1">!</span>
                 <inline-svg :src="'icons/'+requirement" class="ml-2"/>

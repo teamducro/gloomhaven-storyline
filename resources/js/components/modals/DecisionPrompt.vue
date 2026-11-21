@@ -1,6 +1,6 @@
 <template>
     <div>
-        <modal ref="modal" :title="$t(config.title)">
+        <modal ref="modal" :title="$t(config.title)" @closing="event => $emit('closing', event.detail.action || 'chosen')">
             <template v-slot:content>
                 <div class="flex flex-col mb-4">
                     {{ $t(config.text) }}
@@ -17,12 +17,14 @@
             </template>
             <template v-slot:buttons>
                 <button class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Cancel') }}</span>
                 </button>
                 <button :disabled="selected === undefined"
                         class="mdc-button mdc-dialog__button mdc-button--raised"
                         data-mdc-dialog-action="chosen"
                         @click="onChoose(selected)">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Choose') }}</span>
                 </button>
             </template>
@@ -37,6 +39,7 @@ import ChoiceService from "../../services/ChoiceService";
 import ScenarioRepository from "../../repositories/ScenarioRepository";
 
 export default {
+    emits: ['closing'],
     props: {
         config: {
             type: PromptConfig,
@@ -53,14 +56,10 @@ export default {
     mounted() {
         if (!this.config.promptAfter) {
             this.togglePrompt(this.config.show);
-            this.$bus.$on('open-scenario', (data) => {
+            this.$listen('open-scenario', (data) => {
                 this.togglePrompt(this.config.show);
             });
         }
-
-        this.$refs['modal'].$on('closing', (event) => {
-            this.$emit('closing', event.detail.action || "chosen");
-        });
     },
     watch: {
         config: function (newVal, oldVal) {

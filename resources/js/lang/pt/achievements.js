@@ -3,22 +3,22 @@ export default {
         "name": "Primeiros Passos"
     },
     "gh-PJP": {
-        "name": "Os planos de Jekserah"
+        "name": "Os Planos de Jekserah"
     },
     "gh-PDB": {
         "name": "Recompensa Sombria"
     },
     "gh-GTMF": {
-        "name": "A mercadora Foge"
+        "name": "A Mercadora Foge"
     },
     "gh-GTDI": {
         "name": "Os Mortos Invadem"
     },
     "gh-PADE": {
-        "name": "A Incumbência do Demônio"
+        "name": "A Incumbência do Demónio"
     },
     "gh-GCRE": {
-        "name": "Governo: Econômico"
+        "name": "Governo: Económico"
     },
     "gh-GCRM": {
         "name": "Governo: Militar"
@@ -36,13 +36,13 @@ export default {
         "name": "A Fenda Neutralizada"
     },
     "gh-GAR": {
-        "name": "Artefato: Recuperado"
+        "name": "Artefacto: Recuperado"
     },
     "gh-GAR2": {
-        "name": "Artefato: Recuperado (perdido anteriormente)"
+        "name": "Artefacto: Recuperado (perdido anteriormente)"
     },
     "gh-GAL": {
-        "name": "Artefato: Perdido"
+        "name": "Artefacto: Perdido"
     },
     "gh-GAT": {
         "name": "Tecnologia Anciã"
@@ -66,7 +66,7 @@ export default {
         "name": "O Comando da Voz"
     },
     "gh-PTDC": {
-        "name": "O Comando do Dragão"
+        "name": "O Comando do Serpe"
     },
     "gh-PFC": {
         "name": "Seguindo Pistas"
@@ -81,31 +81,31 @@ export default {
         "name": "O Cetro e a Voz"
     },
     "gh-GAC": {
-        "name": "Artefato: Purificado"
+        "name": "Artefacto: Purificado"
     },
     "gh-PTVT": {
         "name": "O Tesouro da Voz"
     },
     "gh-PTDT": {
-        "name": "O Tesouro do Dragão"
+        "name": "O Tesouro do Serpe"
     },
     "gh-GTDS": {
-        "name": "Assassino do Dragão"
+        "name": "O Serpe Morto"
     },
     "gh-GTDA": {
-        "name": "The Drake Aided"
+        "name": "O Serpe Ajudado"
     },
     "gh-GCRD": {
         "name": "Governo: Demoníaco"
     },
     "gh-PTTT": {
-        "name": "Through the Trench"
+        "name": "Através da Trincheira"
     },
     "gh-PRA": {
         "name": "A Ajuda do Espinho Vermelho"
     },
     "gh-PATD": {
-        "name": "Across the Divide"
+        "name": "Através da Divisão"
     },
     "gh-GTVF": {
         "name": "A Voz Libertada"
@@ -126,46 +126,55 @@ export default {
         "name": "Fim da Corrupção x3"
     },
     "gh-GAOO": {
-        "name": "Annihilation of Order"
+        "name": "Aniquilação da Ordem"
     },
     "gh-GEOG": {
-        "name": "End of Gloom"
+        "name": "Fim do Combalimento"
     },
     "gh-PTTN": {
         "name": "Através do Ninho"
     },
     "gh-PAMT": {
-        "name": "A Map to Treasure"
+        "name": "Um Mapa para o Tesouro"
     },
     "gh-PBB": {
-        "name": "Bad Business"
+        "name": "Maus Negócios"
+    },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "A Fonte do Veneno"
     },
     "gh-PSB": {
-        "name": "Sun-Blessed"
+        "name": "Abençoado pelo Sol"
     },
     "gh-PSR": {
         "name": "Sin-Ra"
     },
     "gh-PDC": {
-        "name": "Debt Collection"
+        "name": "Cobrança de Dívida"
     },
     "gh-PWS": {
-        "name": "Water Staff"
+        "name": "Cajado da Água"
     },
     "gh-PFA": {
-        "name": "Fish's Aid"
+        "name": "Ajuda de Peixe"
     },
     "gh-PT": {
-        "name": "Tremors"
+        "name": "Tremores"
     },
     "gh-PHSE": {
-        "name": "High Sea Escort"
+        "name": "Escolta em Alto-Mar"
     },
     "gh-PGJ": {
-        "name": "Grave Job"
+        "name": "Trabalho Macabro"
     },
     "gh-PNE": {
         "name": "Northern Expedition"
@@ -370,5 +379,89 @@ export default {
     },
     "fh-PHOS": {
         "name": "Heart of Snow"
+    },
+    "gh2-G2ATD": {
+        "name": "Activating the Device"
+    },
+    "gh2-G2AUP": {
+        "name": "An Uneasy Peace"
+    },
+    "gh2-G2AT": {
+        "name": "Tecnologia Anciã"
+    },
+    "gh2-G2CRD": {
+        "name": "City Rule: Demons"
+    },
+    "gh2-G2CRME": {
+        "name": "City Rule: Merchants"
+    },
+    "gh2-G2CRMI": {
+        "name": "City Rule: Military"
+    },
+    "gh2-G2EM": {
+        "name": "Elements Mastered"
+    },
+    "gh2-G2EOC": {
+        "name": "Fim da Corrupção"
+    },
+    "gh2-G2EOG": {
+        "name": "Fim do Combalimento"
+    },
+    "gh2-G2HW": {
+        "name": "Hallowed Waters"
+    },
+    "gh2-G2ITD": {
+        "name": "Into the Depths"
+    },
+    "gh2-G2PTB": {
+        "name": "Peace Through Bloodshed"
+    },
+    "gh2-G2TCE": {
+        "name": "The Candle Extinguished"
+    },
+    "gh2-G2TCK": {
+        "name": "The Candle Kept"
+    },
+    "gh2-G2TDR": {
+        "name": "The Darkness Retreats"
+    },
+    "gh2-G2TDA": {
+        "name": "O Serpe Ajudado"
+    },
+    "gh2-G2TDS": {
+        "name": "O Serpe Morto"
+    },
+    "gh2-G2TPE": {
+        "name": "O Poder da Melhoria"
+    },
+    "gh2-G2TVF": {
+        "name": "A Voz Libertada"
+    },
+    "gh2-G2TVS": {
+        "name": "A Voz Silenciada"
+    },
+    "gh2-P2R16": {
+        "name": "Faction Reputation 16"
+    },
+    "gh2-P2R20": {
+        "name": "Faction Reputation 20"
+    },
+    "gh2-P2RD6": {
+        "name": "Demon Reputation 6"
+    },
+    "gh2-P2RD12": {
+        "name": "Demon Reputation 12"
+    },
+    "gh2-P2RME6": {
+        "name": "Merchant Reputation 6"
+    },
+    "gh2-P2RME12": {
+        "name": "Merchant Reputation 12"
+    },
+    "gh2-P2RMI6": {
+        "name": "Military Reputation 6"
+    },
+    "gh2-P2RMI12": {
+        "name": "Military Reputation 12"
     }
 }

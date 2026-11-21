@@ -6,9 +6,9 @@
                     <h2>{{ $t('Morale') }}</h2>
                 </slot>
                 <rollback :loading="loading" ref="rollback"
-                          :value.sync="sheet.morale"/>
+                          v-model:value="sheet.morale"/>
             </div>
-            <number-field :value.sync="sheet.morale" :min="min" :max="max" id="morale"
+            <number-field v-model:value="sheet.morale" :min="min" :max="max" id="morale"
                           @change="$emit('change')"/>
         </div>
         <div>
@@ -27,10 +27,11 @@ import SheetCalculations from "../../../services/SheetCalculations";
 import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
+    emits: ['change'],
     mixins: [SheetCalculations],
     props: {
         sheet: {
-            type: Sheet|CampaignSheet,
+            type: [Sheet, CampaignSheet],
             required: true
         },
         loading: {

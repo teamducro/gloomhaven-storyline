@@ -31,6 +31,182 @@ describe('Character', () => {
         cy.get('li.add-character').contains('Cragheart').contains('Cragheart').parent().should('have.class', 'grayscale');
     });
 
+    it('It can choose a retired character\'s class again', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+
+        // A cloud campaign archives retired characters instead of removing them.
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+
+        utilities.openCharacter();
+        cy.get('button').contains('Retire').click();
+        cy.get('.mdc-dialog.mdc-dialog--open button').contains('Retire').click();
+
+        cy.get('.items-to-add-dropdown').click();
+        cy.get('li.add-character').contains('Cragheart').parent().should('not.have.class', 'grayscale');
+        cy.get('li.add-character').contains('Cragheart').click();
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData.sheet;
+            expect(Object.values(sheet.characters)).to.deep.eq(['CH']);
+            expect(Object.values(sheet.archivedCharacters)).to.deep.eq(['CH']);
+            // The first Cragheart retirement adds City and Road event 46, once
+            expect(sheet.city).to.have.property('46', true);
+            expect(sheet.road).to.have.property('46', true);
+            expect(sheet.classEventsAdded).to.deep.eq({CH: ['retire']});
+        });
+    });
+
+    it('It does not add the retirement events again for a class retired before they were added automatically', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+        utilities.openCharacter();
+        cy.get('button').contains('Retire').click();
+        cy.get('.mdc-dialog.mdc-dialog--open button').contains('Retire').click();
+
+        // Given an older campaign: a retired Cragheart, its events removed by hand, nothing tracked in classEventsAdded
+        cy.window().then((win) => {
+            const campaignData = JSON.parse(win.localStorage.getItem('_1'));
+            delete campaignData.sheet.classEventsAdded;
+            delete campaignData['migrated-class-events-sheet'];
+            campaignData.sheet.city = {};
+            campaignData.sheet.road = {};
+            win.localStorage.setItem('_1', JSON.stringify(campaignData));
+        });
+        cy.reload();
+
+        // When retiring a new Cragheart
+        cy.get('.items-to-add-dropdown').click();
+        cy.get('li.add-character').contains('Cragheart').click();
+        cy.get('button').contains('Retire').click();
+        cy.get('.mdc-dialog.mdc-dialog--open button').contains('Retire').click();
+
+        // Then City and Road event 46 aren't added again
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData.sheet;
+            expect(Object.values(sheet.archivedCharacters)).to.deep.eq(['CH', 'CH']);
+            expect(sheet.city).not.to.have.property('46');
+            expect(sheet.road).not.to.have.property('46');
+            expect(sheet.classEventsAdded).to.deep.eq({CH: ['unlock', 'retire']});
+        });
+    });
+
+    it('It archives an abandoned character in a cloud campaign', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+
+        utilities.openCharacter();
+        cy.get('button').contains('Abandon').click();
+        cy.get('.mdc-dialog--open').contains('It\'s archived, so you can restore or remove it later.');
+        cy.get('#abandon-character').click();
+
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData.sheet;
+            expect(sheet.characters).to.deep.eq({});
+            expect(Object.values(sheet.archivedCharacters)).to.deep.eq(['CH']);
+            // Abandoning adds no class events
+            expect(sheet).not.to.have.property('classEventsAdded');
+            expect(sheet.city['46']).not.to.eq(true);
+        });
+        cy.get('button').contains('Restore').should('exist');
+    });
+
+    it('It adds the class events when a class is unlocked', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+        cy.get('#character-SK').click();
+
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData.sheet;
+            expect(sheet.city).to.have.property('31', true);
+            expect(sheet.road).to.have.property('31', true);
+        });
+    });
+
+    it('It lets the class events be removed and added by hand', () => {
+        // Given an unlocked class added its city event 31
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+        cy.get('#character-SK').click();
+        cy.get('#city-events-bedges .bedge').contains(/^\s*31\s*$/).should('be.visible');
+
+        // When it is removed by hand
+        cy.get('#city-events-bedges .bedge').contains(/^\s*31\s*$/).click();
+        cy.get('.mdc-dialog__content button').contains('A').click();
+        cy.wait(700); // removing is ignored while the flip animation runs
+        cy.get('.mdc-dialog__content button img[alt="Remove #31"]').click();
+        cy.get('#city-events-bedges .bedge').contains(/^\s*31\s*$/).should('not.exist');
+
+        // Then unlocking the class again doesn't bring it back
+        cy.get('#character-SK').click();
+        cy.get('#character-SK').click();
+        cy.window().its('app.campaignData.sheet.city').should('not.have.property', '31', true);
+
+        // And it can still be added by hand
+        utilities.scrollTo('40%');
+        cy.get('#city-events').parent().click();
+        cy.get('[name="city-events"]').type('31');
+        cy.get('.mdc-deprecated-list-item__text span').contains('31').click();
+        utilities.closeModel();
+        cy.get('#city-events-bedges .bedge').contains(/^\s*31\s*$/).should('be.visible');
+        cy.window().its('app.campaignData.sheet.city').should('have.property', '31', true);
+    });
+
+    it('It adds the class events of a chosen Crimson Scales starting class', () => {
+        utilities.enableGame('cs');
+        utilities.switchGame('cs');
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Bombard');
+
+        cy.window().then((win) => {
+            const sheet = win.app.campaignData['sheet-cs'];
+            expect(sheet.city).to.have.property('39', true);
+            expect(sheet.road).to.have.property('39', true);
+        });
+    });
+
+    it('It opens the character mat and flips it', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        cy.get('#character-art').click();
+        cy.get('#character-mat img[src*="character-mats/gh/CH-front"]').should('exist');
+        cy.get('#character-mat .inner').should('not.have.class', 'flipped');
+
+        cy.get('#flip-character-mat').click();
+        cy.get('#character-mat .inner').should('have.class', 'flipped');
+    });
+
+    it('It hides the character mat for characters without one', () => {
+        utilities.enableGame('mp');
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+        cy.get('#character-SA').click();
+
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Satha');
+
+        cy.get('input[name="name"]').should('have.value', 'Satha');
+        cy.get('#character-art').should('not.exist');
+    });
+
     it('It can change the character name', () => {
         cy.visit('/tracker/#/characters');
 
@@ -114,7 +290,7 @@ describe('Character', () => {
 
     it('It can\'t add more items then there is stock', () => {
         // Campaign with Brute and Cragheart #001 Boots of Striding
-        cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpwBmAxjAJwBsyqGO+YUwCAhgE5FSYBuApgCYDCUVkyJpuLMFTwJ2w0eICqAOwA2AeyIBrSSgQAhAErIQcXAn4AJY6YQBlAOrWzAFQCSTu-w8BZZ9bwgsowALADMABxE4XCkwTAEoXBxwXBw4TAARrxw5DAA7OThAAykBMFE5EwZecj6RmahRTHBTOR5MERMebwwwQBMRNwwTKVwMMXlTMHcGX3cYbWWCNJEmGgAnlQIiEgmZn0eoR7BHgCsHpS7NjVXZuEepB5wRU87e9sHt9tHX0lP579Lu84Ddgfdfo8vn0XlC3jY+p93n0fkiTlCAUigfDQfDwUjIe9Gv58JheMAAgAHTA2FhqJi8LZw-aHY5nC4eHF3B5PGHApkfJ4omx-X4Y4VYswgp544UE+G8+H8hEeZEqtFIsX7CUIPqcnUy-ZyhoKgIAV3JKyELBEYhYvQiUWa8USyVS6SyOXyhRKZQqVRujHY3C0OnJZggahUDKQRTMpNqhgQcbEAFtQ9tiQgVNweCpkDYlEwU9wEyxTWIkwgKeJtFsYQBtEBFAC6kuQjZbzKQHfwnYQPw7rYQaJ7TaHAMHZkuo77N0nCHBM6HkPnz3bY+kptN8aQw4d0VizqSvTdmWyuQKxVK5Uq1UrAA8Kcgipa5LaYI1mq12p1ur0BkMIwEGMEydNMszzD8gZQMGtYoNIEZRs+cbRuYVjJtwaaMpm2a5vmZiFsWizWtA3CsGglbViwcGMA2Y5tt2Ta9r2Q6fPOA5MfRw7rrGXETlx06cbOPFDouXErhuZhbju-ZNLE34dF0PT9IMwyjOMRSTOBcwLGYj7Ptg2BAA/characters');
+        utilities.visitShared('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpwBmAxjAJwBsyqGO+YUwCAhgE5FSYBuApgCYDCUVkyJpuLMFTwJ2w0eICqAOwA2AeyIBrSSgQAhAErIQcXAn4AJY6YQBlAOrWzAFQCSTu-w8BZZ9bwgsowALADMABxE4XCkwTAEoXBxwXBw4TAARrxw5DAA7OThAAykBMFE5EwZecj6RmahRTHBTOR5MERMebwwwQBMRNwwTKVwMMXlTMHcGX3cYbWWCNJEmGgAnlQIiEgmZn0eoR7BHgCsHpS7NjVXZuEepB5wRU87e9sHt9tHX0lP579Lu84Ddgfdfo8vn0XlC3jY+p93n0fkiTlCAUigfDQfDwUjIe9Gv58JheMAAgAHTA2FhqJi8LZw-aHY5nC4eHF3B5PGHApkfJ4omx-X4Y4VYswgp544UE+G8+H8hEeZEqtFIsX7CUIPqcnUy-ZyhoKgIAV3JKyELBEYhYvQiUWa8USyVS6SyOXyhRKZQqVRujHY3C0OnJZggahUDKQRTMpNqhgQcbEAFtQ9tiQgVNweCpkDYlEwU9wEyxTWIkwgKeJtFsYQBtEBFAC6kuQjZbzKQHfwnYQPw7rYQaJ7TaHAMHZkuo77N0nCHBM6HkPnz3bY+kptN8aQw4d0VizqSvTdmWyuQKxVK5Uq1UrAA8Kcgipa5LaYI1mq12p1ur0BkMIwEGMEydNMszzD8gZQMGtYoNIEZRs+cbRuYVjJtwaaMpm2a5vmZiFsWizWtA3CsGglbViwcGMA2Y5tt2Ta9r2Q6fPOA5MfRw7rrGXETlx06cbOPFDouXErhuZhbju-ZNLE34dF0PT9IMwyjOMRSTOBcwLGYj7Ptg2BAA/characters');
 
         utilities.openCharacter('Spellweaver');
 
@@ -172,6 +348,37 @@ describe('Character', () => {
         cy.get('#pq-0-0').should('be.checked');
         cy.get('#pq-0-1').should('not.be.checked');
         cy.get('#pq-0-2').should('not.be.checked');
+    });
+
+    it('It skips stored characters of an unknown class', () => {
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter();
+
+        // Simulate a class this version doesn't know, e.g. stored by a newer version
+        let characterKey;
+        cy.window().then((window) => {
+            const campaignData = JSON.parse(window.localStorage.getItem(window.app.campaignId));
+            characterKey = Object.keys(campaignData).find(key => key.startsWith('character-'));
+            campaignData[characterKey].id = 'XX2';
+            window.localStorage.setItem(window.app.campaignId, JSON.stringify(campaignData));
+        });
+        cy.reload();
+
+        cy.get('input[name="name"]').should('have.value', 'Brute');
+        cy.get('#desktop-character-menu').should('not.contain', 'Cragheart');
+
+        // Storing the sheet keeps the unknown character for the version that knows it
+        utilities.openCharacter('Spellweaver');
+        cy.get('#desktop-character-menu').should('contain', 'Spellweaver');
+        cy.window().then((window) => {
+            const campaignData = JSON.parse(window.localStorage.getItem(window.app.campaignId));
+            const uuid = characterKey.replace('character-', '');
+            const sheet = Object.values(campaignData).find(value => value?.characters?.[uuid]);
+
+            expect(sheet, 'sheet still lists the unknown character').to.exist;
+            expect(campaignData[characterKey].id).to.equal('XX2');
+        });
     });
 
     it('It can open solo scenario', () => {
@@ -296,7 +503,7 @@ describe('Character', () => {
         // Reordering is only offered with a mouse.
         cy.window().then((win) => win.app.hasMouse = true);
         const sortableDisabled = (disabled) => cy.get('#desktop-character-menu ul.space-y-6')
-            .should(($list) => expect(!!$list[0].__vue__._sortable.option('disabled')).to.eq(disabled));
+            .should(($list) => expect(!!$list[0].__draggable_component__._sortable.option('disabled')).to.eq(disabled));
 
         sortableDisabled(false);
         utilities.setReadOnly().then(() => sortableDisabled(true));
@@ -337,4 +544,43 @@ describe('Character', () => {
         });
     });
 
+    it('It keeps a personal quest scenario unlocked when its goal is unchecked, and FH 65 locked until scenario 1', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/characters');
+
+        utilities.openCharacter('Blinkblade');
+        utilities.scrollTo('60%');
+        cy.get(`input[name="personal-quests"]`).type('Aesther');
+        cy.get('li').contains('Aesther Outpost').click();
+
+        cy.get('#pq-0-0').click();
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 65).state).eq('required');
+        });
+
+        cy.get('#pq-0-0').click();
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 65).state).eq('required');
+        });
+    });
+
+    it('It grants an additional perk after completing JotL scenario 3', () => {
+        cy.visit('/tracker');
+        utilities.switchGame('jotl');
+        utilities.completeScenario(1);
+        utilities.completeScenario(2);
+
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Red Guard');
+        cy.contains('You may select an additional perk!').should('not.exist');
+
+        cy.visit('/tracker');
+        utilities.completeScenario(3);
+
+        cy.visit('/tracker/#/characters');
+        cy.contains('You may select an additional perk!');
+        cy.get('#perk-0-0').click();
+        cy.contains('You may select an additional perk!').should('not.exist');
+    });
 });

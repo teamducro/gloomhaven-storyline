@@ -4,6 +4,7 @@
         <webp v-else-if="game === 'fc'" src="/img/logos/fc.png" alt="Forgotten Circles" width="250" height="51"></webp>
         <webp v-else-if="game === 'jotl'" src="/img/logos/jotl.png" alt="Jaws of the Lion" width="250" height="20"></webp>
         <webp v-else-if="game === 'cs'" src="/img/logos/cs.png" alt="Crimson Scales" width="250" height="35"></webp>
+        <webp v-else-if="game === 'gh2'" src="/img/logos/gh2.png" alt="Gloomhaven 2nd Edition" width="250" height="51"></webp>
         <webp v-else src="/img/logos/gh.png" alt="Gloomhaven" width="250" height="37"></webp>
         <ribbon v-if="user">Pro</ribbon>
     </div>

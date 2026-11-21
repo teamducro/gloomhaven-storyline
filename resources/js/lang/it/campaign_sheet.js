@@ -1,15 +1,15 @@
 export default {
     "fh": {
         "town_guard_perks": [
-            "Replace one {-10_WHITE} card with one {+30_WHITE} card and one {-20_WHITE} “Gain any one material resource” card.",
-            "Replace two {+10_WHITE} cards with two {+30_WHITE} cards and one {-20_WHITE} “Gain any two material resources” card.",
-            "Replace one {-10_WHITE} card with one {+10_WHITE} card.",
-            "Replace two {+0_WHITE} cards with one {+10_WHITE} card.",
-            "Replace two {+10_WHITE} cards with two {AGAIN}{+10_WHITE} “Gain Advantage on this target” cards.",
-            "Add one {+30_WHITE} card.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Hide” cards.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Lumber” cards.",
-            "Add two {AGAIN}{+0_WHITE} “Gain one Metal” cards."
+            "Sostituisci una carta {-10_WHITE} con una carta {+30_WHITE} e una carta {-20_WHITE} “Ottieni una risorsa materiale a scelta”.",
+            "Sostituisci due carte {+10_WHITE} con due carte {+30_WHITE} e una carta {-20_WHITE} “Ottieni due risorse materiali a scelta”.",
+            "Sostituisci una carta {-10_WHITE} con una carta {+10_WHITE}.",
+            "Sostituisci due carte {+0_WHITE} con una carta {+10_WHITE}.",
+            "Sostituisci due carte {+10_WHITE} con due carte {AGAIN}{+10_WHITE} “Ottieni Vantaggio su questo bersaglio”.",
+            "Aggiungi una carta {+30_WHITE}.",
+            "Aggiungi due carte {AGAIN}{+0_WHITE} “Ottieni una Pelle”.",
+            "Aggiungi due carte {AGAIN}{+0_WHITE} “Ottieni un Legname”.",
+            "Aggiungi due carte {AGAIN}{+0_WHITE} “Ottieni un Metallo”."
         ]
     }
 }

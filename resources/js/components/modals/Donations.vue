@@ -30,10 +30,10 @@
                     </div>
                 </div>
                 <div class="mt-5 sm:mt-6">
-                      <span class="flex flex-col w-full rounded-md shadow-sm">
+                      <span class="flex flex-col w-full rounded-md shadow-xs">
                           <router-link to="/campaigns">
                               <button type="submit" @click="close"
-                                      class="w-full rounded-md border border-transparent p-2 bg-blue-600 font-medium text-white shadow-sm hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
+                                      class="w-full rounded-md border border-transparent p-2 bg-blue-600 font-medium text-white shadow-xs hover:bg-blue-500 focus:outline-hidden focus:border-blue-700 focus:shadow-outline-blue transition ease-in-out duration-150">
                               {{ $t('Read more') }}
                               </button>
                           </router-link>
@@ -61,8 +61,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-donations', this.open);
-        this.$bus.$on('close-donations', this.close);
+        this.$listen('open-donations', this.open);
     },
     methods: {
         async open() {
@@ -77,7 +76,7 @@ export default {
         },
         shouldOpen() {
             // Only show the Donations modal in production and hasn't purchased a license
-            if (process.env.NODE_ENV !== 'production' || this.loggedIn) {
+            if (import.meta.env.MODE !== 'production' || this.loggedIn) {
                 return false;
             }
 

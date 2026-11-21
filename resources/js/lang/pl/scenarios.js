@@ -7,6 +7,9 @@ export default {
         "rewards": [
             "Po 10 szt. złota dla każdego",
             "+1 do dobrobytu"
+        ],
+        "faq": [
+            "Specjalna Bossa 1: jeśli boss przemieszcza się do drzwi, które są już otwarte, a pole drzwi jest zajęte, przemieszcza się zamiast tego na najbliższe wolne pole (w razie remisu decydują gracze)."
         ]
     },
     "gh-3": {
@@ -42,10 +45,16 @@ export default {
         "rewards": [
             "Po 20 szt. złota dla każdego",
             "+1 do dobrobytu"
+        ],
+        "faq": [
+            "Literówka: zdolności bossa zostały w Księdze Scenariuszy zamienione miejscami. „Specjalna Bossa 1” powinna brzmieć „Specjalna Bossa 2” i odwrotnie."
         ]
     },
     "gh-10": {
-        "name": "Sfera Mocy Żywiołów"
+        "name": "Sfera Mocy Żywiołów",
+        "faq": [
+            "Literówka: kafelek skarbu powinien być oznaczony numerem 11, a nie 55."
+        ]
     },
     "gh-11": {
         "name": "Rynek Gloomhaven A",
@@ -54,6 +63,9 @@ export default {
             "-2 do reputacji",
             "+2 do dobrobytu",
             "Schemat „Topora Czaszkozguby” (przedmiot 113)"
+        ],
+        "faq": [
+            "Literówka: zignorujcie w Księdze Scenariuszy tekst opisujący „Specjalną Bossa 1” i kierujcie się kartą statystyk bossa."
         ]
     },
     "gh-12": {
@@ -61,13 +73,20 @@ export default {
         "rewards": [
             "+4 do reputacji",
             "Schemat „Topora Czaszkozguby” (przedmiot 113)"
+        ],
+        "faq": [
+            "Literówka: znacznik drzwi 1 powinien znajdować się przy południowych drzwiach, a nie przy północnych. Przeczytajcie tekst pod „1” po otwarciu południowych drzwi.",
+            "Literówka: „Specjalna Bossa 1” nie została wymieniona. Jest dokładnie taka sama jak „Specjalna Bossa 2”, z tą różnicą, że przywoływane są Ożywione Kości zamiast Ożywionych Zwłok."
         ]
     },
     "gh-13": {
         "name": "Świątynia Proroctw"
     },
     "gh-14": {
-        "name": "Lodowa Pieczara"
+        "name": "Lodowa Pieczara",
+        "conclusion_faq": [
+            "Numery lokalizacji w tekście historii to tylko przypomnienia. Same w sobie niczego nie odblokowują."
+        ]
     },
     "gh-15": {
         "name": "Kaplica Siły",
@@ -91,6 +110,9 @@ export default {
         "name": "Zapomniana krypta",
         "rewards": [
             "+1 do dobrobytu"
+        ],
+        "faq": [
+            "Na ołtarz (b) mogą wpływać zdolności oddziałujące na przeszkody, jednak jego zniszczenie nie jest zalecane, ponieważ uniemożliwia ukończenie scenariusza. Przy określaniu ruchu NPC traktuje ołtarz jako cel skupienia."
         ]
     },
     "gh-20": {
@@ -99,6 +121,9 @@ export default {
             "Po 20 szt. złota dla każdego",
             "+2 do reputacji",
             "+1 do dobrobytu"
+        ],
+        "faq": [
+            "Literówka: „Specjalna Bossa 1” nie została wymieniona. Oprócz zdolności z karty statystyk boss ma tę samą zdolność przywoływania co „Specjalna Bossa 2”, z tą różnicą, że przywoływane są Ożywione Kości zamiast Ożywionych Zwłok."
         ]
     },
     "gh-21": {
@@ -106,7 +131,11 @@ export default {
         "rewards": [
             "Po 50 szt. złota dla każdego",
             "+1 do dobrobytu",
-            "Do talii należy dodać wydarzenie miejskie 78"
+            "Do talii należy dodać zdarzenie miejskie 78"
+        ],
+        "faq": [
+            "Literówka: w części „Zasady Specjalne” ołtarz powinien znajdować się na polu „f”, a nie „a”. Pola pojawiania się demonów należy uporządkować następująco: wiatr (a), noc (b), ziemia (c), płomień (d), słońce (e), mróz (f).",
+            "Ołtarz działa jak zwykła przeszkoda z punktami życia (odporna na wszystkie negatywne stany), więc słowa „i odporności” nie powinny się tam znajdować."
         ]
     },
     "gh-22": {
@@ -119,7 +148,10 @@ export default {
         "name": "Komnata Echa"
     },
     "gh-25": {
-        "name": "Lodowa grań"
+        "name": "Lodowa grań",
+        "faq": [
+            "Ucieczka: ukończycie scenariusz, gdy wszystkie postacie stoją na polu wyjścia lub zostały wyczerpane, stojąc na polu wyjścia."
+        ]
     },
     "gh-26": {
         "name": "Starożytny zbiornik",
@@ -133,7 +165,14 @@ export default {
         "name": "Niebezpieczna szczelina",
         "rewards": [
             "+1 do dobrobytu",
-            "Po 100 szt. złota dla każdego Pieniądze te należy natychmiast wydać na wzmocnienia."
+            "Po 100 szt. złota dla każdego Pieniądze te należy natychmiast wydać na ulepszenia."
+        ],
+        "faq": [
+            "Hail wykonuje turę przy inicjatywie 99 i otrzymuje obrażenia, jeśli ma stan rany."
+        ],
+        "conclusion_faq": [
+            "Do nagrody możecie dodać swoje bieżące pieniądze, ale w mieście nie możecie sprzedawać przedmiotów, ponieważ nagroda jest przyznawana natychmiast po zakończeniu scenariusza, jeszcze przed powrotem do miasta.",
+            "Literówka: jeśli miejsce na naklejkę osiągnięcia globalnego „Szczelina Zamknięta” jest już zajęte, nie zaklejajcie go. Pomińcie naklejkę albo umieśćcie ją obok mapy."
         ]
     },
     "gh-28": {
@@ -143,6 +182,9 @@ export default {
         "name": "Sanktuarium Mroku",
         "rewards": [
             "Po 15 pkt. doświadczenia dla każdego"
+        ],
+        "faq": [
+            "Drzwi z PŻ są traktowane jak przeszkoda z PŻ pod względem możliwości wybrania ich na cel: przywołańcy mogą się na nich skupić, uznaje się, że mają inicjatywę 99 itd."
         ]
     },
     "gh-30": {
@@ -158,7 +200,11 @@ export default {
         "name": "Próchniejący Las"
     },
     "gh-33": {
-        "name": "Zbrojownia Sawasów"
+        "name": "Zbrojownia Sawasów",
+        "faq": [
+            "Drzwi z PŻ są traktowane jak przeszkoda z PŻ pod względem możliwości wybrania ich na cel: przywołańcy mogą się na nich skupić, uznaje się, że mają inicjatywę 99 itd.",
+            "Ucieczka: ukończycie scenariusz, gdy wszystkie postacie stoją na polu wyjścia lub zostały wyczerpane, stojąc na polu wyjścia."
+        ]
     },
     "gh-34": {
         "name": "Spalony Szczyt",
@@ -166,6 +212,11 @@ export default {
             "Po 20 szt. złota dla każdego",
             "+2 do reputacji",
             "+1 do dobrobytu"
+        ],
+        "faq": [
+            "Dodatkowa zasada specjalna: boss jest odporny na wszelkie zdolności lub efekty, które wpływałyby na jego położenie na mapie (odepchnięcie, przyciągnięcie, wymuszony ruch itd.).",
+            "Na Zefiry nie może wpływać żadna zdolność, a przywołańcy nie skupiają się na nich.",
+            "Errata: dla Specjalnej Bossa 2 poprawna kolejność zdolności to najpierw przywołanie, potem ruch. Księga Scenariuszy jest poprawna, karta statystyk nie."
         ]
     },
     "gh-35": {
@@ -174,7 +225,10 @@ export default {
             "Po 30 szt. złota dla każdego",
             "-5 do reputacji",
             "-2 do dobrobytu",
-            "Do talii należy dodać wydarzenie miejskie 79."
+            "Do talii należy dodać zdarzenie miejskie 79."
+        ],
+        "faq": [
+            "Przeszkód-murów nie można zniszczyć."
         ]
     },
     "gh-36": {
@@ -182,16 +236,22 @@ export default {
         "rewards": [
             "Po 10 szt. złota dla każdego",
             "+4 do reputacji",
-            "Do talii należy dodać wydarzenie miejskie 78."
+            "Do talii należy dodać zdarzenie miejskie 78."
         ]
     },
     "gh-37": {
-        "name": "Rów Zagłady"
+        "name": "Rów Zagłady",
+        "faq": [
+            "Ucieczka: ukończycie scenariusz, gdy wszystkie postacie stoją na polu wyjścia lub zostały wyczerpane, stojąc na polu wyjścia."
+        ]
     },
     "gh-38": {
         "name": "Obóz Niewolników",
         "rewards": [
             "+1 do reputacji"
+        ],
+        "faq": [
+            "Orchid przestaje się poruszać, jeśli szaman zginie. Jeśli Orchid nie może znaleźć dostępnej drogi do szamana, nie porusza się. Zgodnie z tekstem scenariusza może przechodzić przez zamknięte drzwi, otwierając je w trakcie ruchu."
         ]
     },
     "gh-39": {
@@ -216,10 +276,16 @@ export default {
         "name": "Kraina Głosu",
         "rewards": [
             "{NOTE_42}"
+        ],
+        "faq": [
+            "Struny głosowe są traktowane jak przeszkody z PŻ pod względem możliwości wybrania ich na cel: przywołańcy mogą się na nich skupić, uznaje się, że mają inicjatywę 99 itd."
         ]
     },
     "gh-43": {
-        "name": "Gniazdo Drakona"
+        "name": "Gniazdo Drakona",
+        "conclusion_faq": [
+            "Numery lokalizacji w tekście historii to tylko przypomnienia. Same w sobie niczego nie odblokowują."
+        ]
     },
     "gh-44": {
         "name": "Plemienne Natarcie",
@@ -233,22 +299,39 @@ export default {
         "rewards": [
             "Po 20 szt. złota dla każdego",
             "-2 do reputacji"
+        ],
+        "faq": [
+            "Totemy są uznawane za przeszkody, więc nie można ich zniszczyć za pomocą zdolności, ale mogą na nie wpływać inne zdolności niezadające obrażeń (np. zdolności Skałoserca manipulujące przeszkodami)."
         ]
     },
     "gh-46": {
-        "name": "Koszmarny Wierch"
+        "name": "Koszmarny Wierch",
+        "faq": [
+            "Literówka: Specjalna Bossa 2 na karcie statystyk brzmi „Przywołaj jaja P”. Powinno być „Przywołaj jaja C”.",
+            "Errata: kolejność zdolności Specjalnej 2 powinna być następująca: Ruch, jeden Atak, a następnie Przywołanie."
+        ]
     },
     "gh-47": {
-        "name": "Legowisko Niewidzącego Oka"
+        "name": "Legowisko Niewidzącego Oka",
+        "faq": [
+            "Dodatkowa zasada specjalna: boss jest odporny na wszelkie zdolności lub efekty, które wpływałyby na jego położenie na mapie (odepchnięcie, przyciągnięcie, wymuszony ruch itd.)."
+        ]
     },
     "gh-48": {
-        "name": "Głusza Cieni"
+        "name": "Głusza Cieni",
+        "faq": [
+            "Po ataku bossa w zwarciu podlega on efektom po ataku (odwet, po śmierci itd.), zanim zostanie zdjęty z planszy."
+        ]
     },
     "gh-49": {
         "name": "Bastion Rebeliantów",
         "rewards": [
             "Po 50 szt. złota dla każdego",
             "-3 do reputacji"
+        ],
+        "faq": [
+            "Dodatkowa zasada specjalna: Starożytna Artyleria nie podlega wymuszonemu ruchowi (odepchnięcie, przyciągnięcie, zamiana pozycji itd.).",
+            "Obrażenia zadawane wszystkim postaciom na mocy zasady specjalnej są obrażeniami bezpośrednimi i nie są uznawane za Atak."
         ]
     },
     "gh-50": {
@@ -263,35 +346,69 @@ export default {
         "rewards": [
             "+5 do reputacji",
             "+5 do dobrobytu",
-            "Do talii należy dodać wydarzenie miejskie 81",
-            "Do talii należy dodać wydarzenie na szlaku 69"
+            "Do talii należy dodać zdarzenie miejskie 81",
+            "Do talii należy dodać zdarzenie na szlaku 69"
         ]
     },
     "gh-52": {
-        "name": "Trująca piwnica"
+        "name": "Trująca piwnica",
+        "requirements": "Cel życiowy „Poszukiwacz Xorna”",
+        "faq": [
+            "Zasada specjalna: w tym scenariuszu możecie użyć dolnej akcji dowolnej karty, aby zdobyć kafelek skarbu w zasięgu 1.",
+            "Przy korzystaniu z materiałów Forgotten Circles przeszkody na środku pomieszczenia startowego można traktować jak kafelki nakładek ścian, zgodnie z zasadami Forgotten Circles. Postać nie może także teleportować się do części mapy innej postaci."
+        ]
     },
     "gh-53": {
         "name": "Podziemia Krypty",
+        "requirements": "Cel życiowy „Poszukiwacz Xorna”",
         "rewards": [
             "Poszukiwacz Xorna otrzymuje: „Kostur Xorna” (przedmiot 114) Poszukiwacz nie może sprzedać tego przedmiotu."
         ]
     },
     "gh-54": {
         "name": "Lodowy Pałac",
+        "requirements": "Cel życiowy „Poszukiwacz Xorna”, przedmiot „Kostur Xorna” założony",
         "rewards": [
-            "Poszukiwacz Xorna kończy przygodę.",
-            "Zamiast zwykłych wydarzeń zakończenia przygody danej klasy do talii należy dodać wydarzenie na szlaku oraz miejskie 59.",
+            "Poszukiwacz Xorna natychmiast przechodzi w stan spoczynku.",
+            "Zamiast zwykłych zdarzeń przejścia w stan spoczynku danej klasy do talii należy dodać zdarzenie na szlaku oraz miejskie 59.",
             "Otwórzcie kopertę {PH}"
+        ],
+        "conclusion_faq": [
+            "Jeśli rozpoczniecie nową postać Kałamarnicy Cthulhu bezpośrednio po pomyślnym ukończeniu tego scenariusza, otrzymuje ona Kostur Xorna. W przeciwnym razie Kostur Xorna zostaje dodany do talii sklepu.",
+            "Poszukiwacz Xorna nie wraca do miasta, aby sprzedawać przedmioty, wykonywać ulepszenia itd. Zgodnie z Księgą Scenariuszy karta zdarzenia przejścia postaci w stan spoczynku nie trafia do talii."
+        ]
+    },
+    "gh-SoX1": {
+        "name": "Nobles’ Crypt",
+        "rewards": [
+            "+1 do reputacji",
+            "Dodaj zdarzenie miejskie SoX2 do talii"
+        ]
+    },
+    "gh-SoX2": {
+        "name": "Flooded Crypt",
+        "rewards": [
+            "Dodaj zdarzenie miejskie SoX3 do talii",
+            "Wybierz tylko jeden z następujących przedmiotów: „Ostrze Chłodu” (przedmiot 077), „Różdżka Chłodu” (przedmiot 083) lub „Kolia Fal” (przedmiot 111)"
+        ]
+    },
+    "gh-SoX3": {
+        "name": "Crypt of the Ancients",
+        "rewards": [
+            "50 szt. złota wspólnie",
+            "Dodaj zdarzenie miejskie SoX3 do talii"
         ]
     },
     "gh-55": {
         "name": "Zamglony gąszcz",
+        "requirements": "Cel życiowy „Bratnia pomoc”",
         "rewards": [
             "10 szt. złota do podziału"
         ]
     },
     "gh-56": {
         "name": "Las Bandytów",
+        "requirements": "Cel życiowy „Bratnia pomoc”",
         "rewards": [
             "Zadanie „Bratnia pomoc” wykonane",
             "Otwórzcie kopertę {DS}",
@@ -301,34 +418,46 @@ export default {
     },
     "gh-57": {
         "name": "Dochodzenie",
+        "requirements": "Cel życiowy „Pomsta”",
         "rewards": [
             "+1 do reputacji"
         ]
     },
     "gh-58": {
         "name": "Krwawa Chata",
+        "requirements": "Cel życiowy „Pomsta”",
         "rewards": [
             "Zadanie „Pomsta” wykonane",
             "Otwórzcie kopertę X",
             "+2 do reputacji"
+        ],
+        "faq": [
+            "Każdy stos kości jest uznawany za osobno wykonaną zdolność leczenia i nadal leczy potwora z imienia, nawet jeśli jest on ogłuszony."
         ]
     },
     "gh-59": {
-        "name": "Zapomniany gaj"
+        "name": "Zapomniany gaj",
+        "requirements": "Cel życiowy „Szukając lekarstwa”"
     },
     "gh-60": {
         "name": "Laboratorium alchemiczne",
+        "requirements": "Cel życiowy „Szukając lekarstwa”",
         "rewards": [
             "Zadanie „Szukając lekarstwa” wykonane",
             "Otwórzcie kopertę X",
             "+1 do dobrobytu"
+        ],
+        "faq": [
+            "Ucieczka: ukończycie scenariusz, gdy wszystkie postacie stoją na polu wyjścia lub zostały wyczerpane, stojąc na polu wyjścia."
         ]
     },
     "gh-61": {
-        "name": "Znikająca latarnia"
+        "name": "Znikająca latarnia",
+        "requirements": "Cel życiowy „Upadek człowieka”"
     },
     "gh-62": {
         "name": "Czeluść Dusz",
+        "requirements": "Cel życiowy „Upadek człowieka”",
         "rewards": [
             "Zadanie „Upadek człowieka” wykonane",
             "Otwórzcie kopertę {NS}",
@@ -372,18 +501,28 @@ export default {
         "name": "Studnia Nieszczęśników",
         "rewards": [
             "Po 15 szt. złota dla każdego"
+        ],
+        "faq": [
+            "Nie musicie kończyć ruchu na polu sąsiadującym ze studnią, wystarczy, że wejdziecie na pole z nią sąsiadujące."
         ]
     },
     "gh-70": {
         "name": "Wyspa Łańcuchów",
         "rewards": [
             "+2 do dobrobytu"
+        ],
+        "faq": [
+            "Ożywione duchy nie podlegają zdolnościom natychmiastowego zabicia."
         ]
     },
     "gh-71": {
         "name": "Wichrowe Wyżyny",
         "rewards": [
             "2 „Większe Mikstury Mocy” (przedmiot 041)"
+        ],
+        "faq": [
+            "Wymuszony ruch: jeśli wiatr przesuwa postać w prawo lub w lewo, a na jednym z możliwych pól znajduje się przeszkoda lub ściana, gracz może wybrać, czy zostanie zablokowany (nie poruszy się), czy przesunie się na wolne pole.",
+            "Ucieczka: ukończycie scenariusz, gdy wszystkie postacie stoją na polu wyjścia lub zostały wyczerpane, stojąc na polu wyjścia."
         ]
     },
     "gh-72": {
@@ -391,12 +530,18 @@ export default {
         "rewards": [
             "+1 do reputacji",
             "+1 do dobrobytu"
+        ],
+        "faq": [
+            "Literówka: użyjcie kafelka mapy L1b zamiast L2b."
         ]
     },
     "gh-73": {
         "name": "Góra Lawin",
         "rewards": [
             "+1 do reputacji"
+        ],
+        "faq": [
+            "Głazy zadają obrażenia latającym figurkom i poddają je wymuszonemu ruchowi."
         ]
     },
     "gh-74": {
@@ -404,33 +549,49 @@ export default {
         "rewards": [
             "Po 10 szt. złota dla każdego",
             "+2 do dobrobytu"
+        ],
+        "faq": [
+            "Zgodnie z zasadami specjalnymi wodę mogą podnosić tylko postacie (nie przywołańcy). Jeśli w zasięgu akcji grabieży znajduje się kilka pól wody, musicie wybrać tylko jedno do podniesienia."
         ]
     },
     "gh-75": {
         "name": "Zarośnięty cmentarz",
         "rewards": [
             "Po 60 szt. złota dla każdego"
+        ],
+        "faq": [
+            "Przygotowanie wymaga 5 nakładek pni, ale w grze są tylko 4. Użyjcie innej nakładki jako zamiennika."
         ]
     },
     "gh-76": {
-        "name": "Gniazdo Dreszczowców"
+        "name": "Gniazdo Dreszczowców",
+        "requirements": "Odwaga"
     },
     "gh-77": {
         "name": "Krypta Tajemnic",
         "rewards": [
             "Po 5 pkt. doświadczenia dla każdego"
+        ],
+        "faq": [
+            "Postacie, które mogą tworzyć przeszkody, nie mogą zablokować wszystkich płyt naciskowych jednocześnie."
         ]
     },
     "gh-78": {
         "name": "Jama ofiarna",
         "rewards": [
             "+3 do reputacji"
+        ],
+        "faq": [
+            "Ofiary są uznawane za figurki niebędące sojusznikami niczyimi, dlatego ograniczają ruch potworów i postaci."
         ]
     },
     "gh-79": {
         "name": "Zaginiona Świątynia",
         "rewards": [
             "Po 15 szt. złota dla każdego"
+        ],
+        "faq": [
+            "Obie zdolności bossa mogą wpływać na niewidzialne postacie. Wymagają także linii wzroku. Kontrola umysłu bossa może zostać użyta tylko na postaciach, które nie wykonały jeszcze akcji w danej rundzie."
         ]
     },
     "gh-80": {
@@ -443,6 +604,10 @@ export default {
         "name": "Świątynia Zaćmienia",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego"
+        ],
+        "faq": [
+            "Literówka: w zasadach specjalnych sekcji 1 „The Betrayer” powinien brzmieć „The Colorless”. W przypadku obu zdolności specjalnych bossa zużycie żywiołów wpływa tylko na przywołanie. Pozostałe części zdolności specjalnych następują niezależnie od tego.",
+            "Kryształ Zenitu i Sfera Północy nie są prawdziwymi przedmiotami i nie mają zastosowania poza tym scenariuszem. Używajcie ponumerowanych żetonów, aby śledzić, kto je posiada. Na koniec scenariusza, niezależnie od wyniku, te dwa „celowe” skarby są resetowane, aby można je było zdobyć ponownie."
         ]
     },
     "gh-82": {
@@ -455,12 +620,18 @@ export default {
                 "-1 do reputacji",
                 "-2 do dobrobytu"
             ]
+        ],
+        "faq": [
+            "Jeśli gracz posiadający przedmioty padnie z wyczerpania, scenariusz kończy się porażką. Po porażce przedmioty wracają na kafelek skarbu, a przy następnej próbie możecie je zdobyć ponownie."
         ]
     },
     "gh-83": {
         "name": "Wewnętrzne Cienie",
         "rewards": [
             "40 szt. złota do podziału"
+        ],
+        "faq": [
+            "Po przeczytaniu sekcji 2 pierwszy zestaw zasad specjalnych przestaje obowiązywać i zostaje zastąpiony drugim. Ołtarz nie ma PŻ i nie można go zniszczyć."
         ]
     },
     "gh-84": {
@@ -468,12 +639,18 @@ export default {
         "rewards": [
             "„Rezonujący Kryształ” (przedmiot 133)",
             "+1 do dobrobytu"
+        ],
+        "faq": [
+            "Kryształ nie jest uznawany za wroga i nie jest wybierany na cel przez przywołańców postaci."
         ]
     },
     "gh-85": {
         "name": "Świątynia Słońca",
         "rewards": [
             "„Kula Brzasku” (przedmiot 121)"
+        ],
+        "faq": [
+            "Błąd w księdze: dla 4 graczy nie umieszczajcie w ostatnim pomieszczeniu Demona Nocy i Demonów Słońca, które są umieszczane jako zwykli przeciwnicy tylko dla 4 graczy (kolor czarny dla 2 i 3 graczy, biały dla 4 graczy)."
         ]
     },
     "gh-86": {
@@ -493,6 +670,9 @@ export default {
         "name": "Sfera Wody",
         "rewards": [
             "„Kostur Przywołania” (przedmiot 120)"
+        ],
+        "faq": [
+            "Jeśli wszystkie Czyhacze zostaną zabite, nadal dobierajcie karty zdolności Czyhaczy, aby określić kierunek efektu specjalnego scenariusza."
         ]
     },
     "gh-89": {
@@ -524,6 +704,9 @@ export default {
         "name": "Zatopiony statek",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego"
+        ],
+        "faq": [
+            "Cały rząd pól startowych składa się z pól wody."
         ]
     },
     "gh-94": {
@@ -645,16 +828,17 @@ export default {
     },
     "fc-96": {
         "name": "Nieoczekiwani goście",
+        "requirements": "Koniec Mroku (Globalne) ZDOBYTE",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
-            "Dodaj do odpowiednich talii wydarzenie miejskie 82 oraz na szlaku 82"
+            "Dodaj do odpowiednich talii zdarzenie miejskie 82 oraz na szlaku 82"
         ]
     },
     "fc-97": {
         "name": "Wiedza nieopisana",
         "rewards": [
             "Po 10 szt. złota dla każdego",
-            "Do talii należy dodać wydarzenie miejskie 88, 89 oraz 90"
+            "Do talii należy dodać zdarzenie miejskie 88, 89 oraz 90"
         ]
     },
     "fc-98": {
@@ -664,7 +848,7 @@ export default {
                 "Po 10 szt. złota dla każdego",
                 "+1 do reputacji",
                 "+1 do dobrobytu",
-                "Do talii należy dodać wydarzenie miejskie 86"
+                "Do talii należy dodać zdarzenie miejskie 86"
             ],
             [
                 "Po 5 szt. złota dla każdego",
@@ -693,7 +877,7 @@ export default {
     "fc-100": {
         "name": "Ruchome tryby",
         "rewards": [
-            "Wybierz jedno z poniższych: „Monokular Teleskopowy” (przedmiot 059), „Pradawne Wiertło” (przedmiot 112), „Osobliwa Zębatka” (przedmiot 125) ALBO „Mechaniczny Pająk” (przedmiot 126)"
+            "Wybierz jeden z poniższych zestawów: „Monokular Teleskopowy” (przedmiot 059) i „Pradawne Wiertło” (przedmiot 112) ALBO „Osobliwa Zębatka” (przedmiot 125) i „Mechaniczny Pająk” (przedmiot 126)"
         ]
     },
     "fc-101": {
@@ -708,14 +892,14 @@ export default {
         "name": "Bazar Wiedzy",
         "rewards": [
             "Po 15 pkt. doświadczenia dla każdego",
-            "Jeżeli zastraszonych zostało mniej niż 2+P mieszkańców: +2 do reputacji. W innym przypadku: -2 do reputacji"
+            "Jeżeli zastraszonych zostało nie więcej niż 2+P mieszkańców: +2 do reputacji. W innym przypadku: -2 do reputacji"
         ]
     },
     "fc-103": {
         "name": "Tam, gdzie jest potrzebna",
         "rewards": [
             "+2 do dobrobytu",
-            "Do talii należy dodać wydarzenie miejskie 87"
+            "Do talii należy dodać zdarzenie miejskie 87"
         ]
     },
     "fc-104": {
@@ -734,10 +918,10 @@ export default {
         "name": "Misterne dzieło",
         "rewards": [
             [
-                "Po 175 szt. złota dla każdego, Pieniądze te trzeba natychmiast wydać na dowolne wzmocnienie {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, albo {DARK}"
+                "Po 175 szt. złota dla każdego, Pieniądze te trzeba natychmiast wydać na dowolne ulepszenie {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, albo {DARK}"
             ],
             [
-                "Po 175 szt. złota dla każdego, Pieniądze te trzeba natychmiast wydać na dowolne wzmocnienie {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, albo {DARK}",
+                "Po 175 szt. złota dla każdego, Pieniądze te trzeba natychmiast wydać na dowolne ulepszenie {WIND}, {ICE}, {FIRE}, {EARTH}, {LIGHT}, albo {DARK}",
                 "+ 1 do dobrobytu"
             ]
         ]
@@ -781,7 +965,7 @@ export default {
         "rewards": [
             [
                 "Po 5 pkt. doświadczenia dla każdego",
-                "Dodaj do talii wydarzenie szczelinowe 16. Zamiast wtasować je do całej talii, wtasuj je między 3 górne kary"
+                "Dodaj do talii zdarzenie szczeliny 16. Zamiast wtasować je do całej talii, wtasuj je między 3 górne karty"
             ],
             [
                 "Po 12 pkt. doświadczenia dla każdego",
@@ -807,14 +991,14 @@ export default {
         "name": "Zagubiona nić",
         "rewards": [
             "Po 135 szt. złota dla każdego",
-            "Pieniądze te trzeba natychmiast wydać na dowolne wzmocnienia Ruchu {MOVE}, Zasięgu {RANGE} albo Skoku {JUMP}",
+            "Pieniądze te trzeba natychmiast wydać na dowolne ulepszenia Ruchu {MOVE}, Zasięgu {RANGE} albo Skoku {JUMP}",
             "+1 do dobrobytu"
         ]
     },
     "fc-114": {
         "name": "Atrament wciąż schnie",
         "rewards": [
-            "Profit dla drużyny: Dodatkowy kosz wzmocnienia karty zdolności zależny od jej poziomu jest od teraz zmniejszony o 5 sztuk złota na poziom"
+            "Dar dla drużyny: Dodatkowy koszt ulepszenia karty zdolności zależny od jej poziomu jest od teraz zmniejszony o 5 sztuk złota na poziom"
         ]
     },
     "fc-115": {
@@ -823,7 +1007,7 @@ export default {
             "+3 do reputacji",
             "+1 do dobrobytu",
             "Postać Esterii Wieszczki {DR} przechodzi w stan spoczynku",
-            "Dodaj do odpowiednich talii wydarzenie miejskie 83 oraz na szlaku 83"
+            "Dodaj do odpowiednich talii zdarzenie miejskie 83 oraz na szlaku 83"
         ]
     },
     "fc-117": {
@@ -841,13 +1025,13 @@ export default {
         ]
     },
     "jotl-1": {
-        "name": "Roadside Ambush"
+        "name": "Zasadzka przy Drodze"
     },
     "jotl-2": {
-        "name": "A Hole in the Wall",
+        "name": "Dziura w Murze",
         "rewards": [
             "Po 25 szt. złota dla każdego",
-            "Add items 1-13 to the shop"
+            "Dodaj przedmioty 1-13 do sklepu"
         ]
     },
     "jotl-3": {
@@ -887,7 +1071,7 @@ export default {
         "name": "Explosive Evolution",
         "rewards": [
             "Po 20 pkt. doświadczenia dla każdego",
-            "Add items 15-20 to the shop"
+            "Dodaj przedmioty 15-20 do sklepu"
         ]
     },
     "jotl-10": {
@@ -899,13 +1083,13 @@ export default {
     "jotl-11": {
         "name": "Defiled Sewers",
         "rewards": [
-            "„Flea-Bitten Shawl” (przedmiot 28)"
+            "„Zapchlona Derka” (przedmiot 28)"
         ]
     },
     "jotl-12": {
         "name": "Beguiling Sewers",
         "rewards": [
-            "„Flea-Bitten Shawl” (przedmiot 28)"
+            "„Zapchlona Derka” (przedmiot 28)"
         ]
     },
     "jotl-13": {
@@ -924,7 +1108,7 @@ export default {
         "name": "Tainted Blood",
         "rewards": [
             "Po 10 szt. złota dla każdego",
-            "Add items 21-26 to the shop"
+            "Dodaj przedmioty 21-26 do sklepu"
         ]
     },
     "jotl-16": {
@@ -942,7 +1126,7 @@ export default {
         ]
     },
     "jotl-18": {
-        "name": "The Heist",
+        "name": "Skok",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego"
         ]
@@ -968,7 +1152,7 @@ export default {
     "jotl-22": {
         "name": "Unfriendly Message",
         "rewards": [
-            "„Steel Ring” (przedmiot 33)"
+            "„Stalowy Pierścień” (przedmiot 33)"
         ]
     },
     "jotl-23": {
@@ -1016,7 +1200,7 @@ export default {
         ]
     },
     "fh-2": {
-        "name": "Podchody z Algoxami",
+        "name": "Podchody z Algoksami",
         "rewards": [
             "Po 1 ✔ dla każdego"
         ]
@@ -1063,7 +1247,7 @@ export default {
         ]
     },
     "fh-8": {
-        "name": "Krzyształowy rów",
+        "name": "Kryształowy rów",
         "rewards": [
             "Otrzymujecie wspólnie 1 {LUMBER}",
             "Otrzymujecie wspólnie 2 {HIDE}"
@@ -1146,7 +1330,7 @@ export default {
         ]
     },
     "fh-20": {
-        "name": "Światynia Wyzwolenia",
+        "name": "Świątynia Wyzwolenia",
         "rewards": [
             "Po 15 szt. złota dla każdego"
         ]
@@ -1160,7 +1344,7 @@ export default {
     "fh-22": {
         "name": "Lodowa Kra",
         "rewards": [
-            "Lose 1 collective {LUMBER} for each set of five hexes with water tiles on tile 7-G",
+            "Tracicie wspólnie 1 {LUMBER} za każdy zestaw pięciu pól z kafelkami wody na kafelku 7-G",
             "Po 15 pkt. doświadczenia dla każdego",
             "Dodaj sekcję 62.2 do kalendarza za dwa tygodnie"
         ]
@@ -1172,7 +1356,7 @@ export default {
         ]
     },
     "fh-24": {
-        "name": "Fórna iglica",
+        "name": "Górna iglica",
         "rewards": [
             "Losowy schemat przedmiotu"
         ]
@@ -1218,7 +1402,7 @@ export default {
         "name": "Wojna o iglicę B",
         "rewards": [
             "+3 do morale",
-            "Zyskaj nakleję “Destroyer of the Snowspeakers”",
+            "Zyskaj naklejkę „Pogromca Śnieżnych Mówców”",
             "Usuń wszystkie wydarzenia {ALGOX} z wszystkich talii wydarzeń na posterunku",
             "Dodaj wydarzenie WO-69 do zimowej talii wydarzeń na posterunku",
             "Dodaj sekcję 34.2 do kalendarza za pięć tygodni"
@@ -1260,14 +1444,16 @@ export default {
         "name": "Zakopane kanały",
         "rewards": [
             "Otrzymujecie wspólnie 3 {LUMBER}",
-            "Otrzymujecie wspólnie 3 {METAL}"
+            "Otrzymujecie wspólnie 3 {METAL}",
+            "Schemat „Converging Lenses” (przedmiot 67)"
         ]
     },
     "fh-37": {
         "name": "Martwa mila",
         "rewards": [
             "Otrzymujecie wspólnie 3 {LUMBER}",
-            "Otrzymujecie wspólnie 3 {METAL}"
+            "Otrzymujecie wspólnie 3 {METAL}",
+            "Schemat „Converging Lenses” (przedmiot 67)"
         ]
     },
     "fh-38": {
@@ -1282,7 +1468,7 @@ export default {
         "name": "Spaczony obóz",
         "rewards": [
             "-1 do inspiracji",
-            "Każdy otrzymuje 2 dodatkowe karty łupu"
+            "Każdy otrzymuje 2 dodatkowe karty łupów"
         ]
     },
     "fh-40": {
@@ -1395,7 +1581,7 @@ export default {
         "rewards": [
             "+2 do morale",
             "+2 do dobrobytu",
-            "Unlock whichever class box is still locked: {FF} or {SD}",
+            "Odblokuj pudełko postaci, które jest jeszcze zablokowane: {FF} lub {SD}",
             "Usuńcie wszystkie wydarzenia {ALGOX} z wszystkich talii wydarzeń posterunków",
             "Dodajcie wydarzenia WO-66 i WO-67 do zimowej talii posterunku",
             "Dodaj jedną kartę +50 do talii straży miejskiej"
@@ -1453,6 +1639,7 @@ export default {
             "+2 do morale",
             "+1 do dobrobytu",
             "Po 30 pkt. doświadczenia dla każdego",
+            "Otrzymujesz „Armor of Empathy” (przedmiot 224)",
             "Odblokuj pudełko postaci: {CR} lub {DT}",
             "Usuńcie wszystkie wydarzenia {LURKERS} z wszystkich talii wydarzeń posterunków",
             "Dodajcie wydarzenie SO-48 do letniej talii posterunku i wydarzenie B-17 do talii łodzi",
@@ -1511,7 +1698,7 @@ export default {
     "fh-68": {
         "name": "Oblicze udręki",
         "rewards": [
-            "Cel życiowy: “Aesther Outpost” ukończony",
+            "Cel życiowy: „Posterunek Esterów” ukończony",
             "Dodaj sekcję 133.1 do kalendarza za dwa tygodnie"
         ]
     },
@@ -1527,14 +1714,14 @@ export default {
     "fh-70": {
         "name": "Prawdziwy Dąb",
         "rewards": [
-            "Cel życiowy: “The True Oak” ukończony",
+            "Cel życiowy: „Prawdziwy Dąb” ukończony",
             "+1 do dobrobytu"
         ]
     },
     "fh-71": {
         "name": "Inwazja na doki",
         "rewards": [
-            "Damage any one even building between 71 and 89",
+            "Uszkodź dowolny parzysty budynek z przedziału 71–89",
             "Po 10 pkt. doświadczenia dla każdego",
             "Dodaj sekcję 149.5 do kalendarza za pięć tygodni"
         ]
@@ -1568,9 +1755,9 @@ export default {
         "name": "Apoteoza",
         "rewards": [
             [
-                "Cel życiowy: “Threat from the Deep” ukończony",
+                "Cel życiowy: „Groza z głębin” ukończony",
                 "“Wave Blade” (przedmiot 201)",
-                "Add event B-18 to the boat deck"
+                "Dodaj wydarzenie B-18 do talii łodzi"
             ],
             []
         ]
@@ -1578,13 +1765,13 @@ export default {
     "fh-77": {
         "name": "Wywyższenie Rybiego Króla",
         "rewards": [
-            "Cel życiowy: “Threat from the Deep” ukończony",
+            "Cel życiowy: „Groza z głębin” ukończony",
             "“Wave Blade” (przedmiot 201)",
             "Dodaj wydarzenie B-19 do talii łodzi"
         ]
     },
     "fh-78": {
-        "name": "Problem z Czychaczami",
+        "name": "Problem z Czyhaczami",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego"
         ]
@@ -1606,7 +1793,7 @@ export default {
         ]
     },
     "fh-81": {
-        "name": "Zrójnowane laboratorium badawcze",
+        "name": "Zrujnowane laboratorium badawcze",
         "rewards": [
             "+1 do dobrobytu",
             "Schemat “Aesther Robe” (przedmiot 70)"
@@ -1628,7 +1815,7 @@ export default {
     "fh-84": {
         "name": "Tamże są Szlamy",
         "rewards": [
-            "“Ooze Vial” (przedmiot 234)"
+            "“ooze vial” (przedmiot 234)"
         ]
     },
     "fh-85": {
@@ -1673,14 +1860,14 @@ export default {
         "rewards": [
             [
                 "Po 1 ✔ dla każdego",
-                "Each character gains 10 gold for each numbered token they looted",
-                "Lose 10 collective gold"
+                "Każda postać zyskuje 10 sztuk złota za każdy numerowany żeton, który zebrała",
+                "Tracicie wspólnie 10 szt. złota"
             ],
             [
                 "Po 1 ✔ dla każdego",
-                "Each character gains 10 gold for each numbered token they looted",
-                "Lose 5 collective gold",
-                "All characters start the next scenario with {MUDDLE.fh} and {CURSE.fh}"
+                "Każda postać zyskuje 10 sztuk złota za każdy numerowany żeton, który zebrała",
+                "Utracicie 5 wspólnego złota",
+                "Wszystkie postacie zaczynają następny scenariusz z {MUDDLE.fh} i {CURSE.fh}"
             ]
         ]
     },
@@ -1694,7 +1881,7 @@ export default {
     "fh-92": {
         "name": "Tonący statek",
         "rewards": [
-            "Collectively lose 5xC/2 loot tokens. Loot tokens are then traded in for loot cards",
+            "Wspólnie tracicie 5xP/2 żetonów łupów. Żetony łupów są następnie wymieniane na karty łupów",
             "Dodaj sekcję 181.2 do kalendarza za tydzień"
         ]
     },
@@ -1779,7 +1966,7 @@ export default {
         "name": "Ruiny Przesilenia",
         "rewards": [
             "Otrzymujecie wspólnie 2 {SNOWTHISTLE}",
-            "Add event WR-49 to the winter road deck"
+            "Dodaj wydarzenie WR-49 do zimowej talii szlaku"
         ]
     },
     "fh-105": {
@@ -1830,7 +2017,7 @@ export default {
         ]
     },
     "fh-110": {
-        "name": "Światynia strażnika",
+        "name": "Świątynia strażnika",
         "rewards": [
             "Schemat “Rose Guantlet” (przedmiot 75)"
         ]
@@ -1946,15 +2133,15 @@ export default {
         "name": "Czychająca nekromancja",
         "rewards": [
             "Schemat “Amulet of Eternal Life” (przedmiot 66)",
-            "Trade all tokens in for loot cards"
+            "Wymień wszystkie żetony na karty łupów"
         ]
     },
     "fh-119": {
         "name": "Promienny pył",
         "rewards": [
-            "Spend 7 remaining dust to gain “Scepter of Control” (przedmiot 203)",
-            "Spend 1 remaining dust to gain any 1 material resource",
-            "Spend 2 remaining dust to gain any 1 herb resource"
+            "Wydaj 7 pozostałych pyłów, aby zdobyć „Scepter of Control” (przedmiot 203)",
+            "Wydaj 1 pozostały pył, aby zdobyć dowolny 1 surowiec materiałowy",
+            "Wydaj 2 pozostałe pyły, aby zdobyć dowolne 1 zioło"
         ]
     },
     "fh-120": {
@@ -2029,12 +2216,12 @@ export default {
             [
                 "Otrzymujecie wspólnie 10 szt. złota",
                 "Otrzymujecie wspólnie 2 {LUMBER}",
-                "“Tri-Corner Hat” 195"
+                "“Trójgraniasty Kapelusz” 195"
             ],
             [
                 "Otrzymujecie wspólnie 10 szt. złota",
                 "Otrzymujecie wspólnie 2 {LUMBER}",
-                "“Tri-Corner Hat” 195",
+                "“Trójgraniasty Kapelusz” 195",
                 "+1 do dobrobytu"
             ]
         ]
@@ -2069,10 +2256,10 @@ export default {
             [
                 "-3 do morale",
                 "+1 do dobrobytu",
-                "Otrzymujecie wspólnie 10 szt. złota for each token carried"
+                "Otrzymujecie wspólnie 10 szt. złota za każdy niesiony żeton"
             ],
             [
-                "Otrzymujecie wspólnie 5 szt. złota for each token carried"
+                "Otrzymujecie wspólnie 5 szt. złota za każdy niesiony żeton"
             ]
         ]
     },
@@ -2123,7 +2310,7 @@ export default {
             "+2 do dobrobytu",
             "+3 do morale",
             "Po 30 szt. złota dla każdego",
-            "Add one +1 sticker to a money loot card"
+            "Dodaj jedną naklejkę +1 do karty łupów z monetami"
         ]
     },
     "fh-201": {
@@ -2159,7 +2346,7 @@ export default {
     "fh-206": {
         "name": "Divide and Conquer",
         "rewards": [
-            "“Mask of Duality” (przedmiot 253)"
+            "“Maska Dwoistości” (przedmiot 253)"
         ]
     },
     "fh-207": {
@@ -2171,7 +2358,7 @@ export default {
     "fh-208": {
         "name": "Crumbling Descent",
         "rewards": [
-            "“Mountain's Heart” (przedmiot 255)"
+            "“Serce Góry” (przedmiot 255)"
         ]
     },
     "fh-209": {
@@ -2205,7 +2392,7 @@ export default {
         ]
     },
     "fh-214": {
-        "name": "Recharge",
+        "name": "Ładowanie",
         "rewards": [
             "“Energized Module” (przedmiot 261)"
         ]
@@ -2244,7 +2431,7 @@ export default {
     "cs-4": {
         "name": "Infected Warriors",
         "rewards": [
-            "Each character gains one random „Orb” item (przedmiot 1-10)"
+            "Każda postać zyskuje jeden losowy przedmiot „Orb” (przedmiot 1-10)"
         ]
     },
     "cs-5": {
@@ -2255,7 +2442,7 @@ export default {
         "rewards": [
             "+2 do reputacji",
             "+1 do dobrobytu",
-            "„Stun Powder” (przedmiot 21)"
+            "„Proch Ogłuszenia” (przedmiot gh-21)"
         ]
     },
     "cs-7": {
@@ -2280,8 +2467,8 @@ export default {
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "„Minor Mana Potion” (przedmiot 12)",
-            "„Minor Healing Potion” (przedmiot 20)"
+            "„Mniejsza Mikstura Leczenia” (przedmiot gh-12)",
+            "„Mniejsza Mikstura Many” (przedmiot gh-20)"
         ]
     },
     "cs-11": {
@@ -2294,7 +2481,7 @@ export default {
         "name": "Corpse Cavern",
         "rewards": [
             "+1 do dobrobytu",
-            "Each character gains one of the following: „Major Stamina Potion” (przedmiot 34), „Major Power Potion” (przedmiot 41), „Major Mana Potion” (przedmiot 48)\nIf there are none of these available in the shop, gain 20 gold instead"
+            "Każda postać zyskuje jeden z poniższych przedmiotów: „Większa Mikstura Wytrzymałości” (przedmiot gh-34), „Większa Mikstura Mocy” (przedmiot gh-41), „Większa Mikstura Many” (przedmiot gh-48)\nJeśli żaden z nich nie jest dostępny w sklepie, zyskaj zamiast tego 20 szt. złota"
         ]
     },
     "cs-14": {
@@ -2307,14 +2494,14 @@ export default {
         "name": "Ambush of Beasts",
         "rewards": [
             "Po 15 szt. złota dla każdego",
-            "Each character gains one random „Orb” item (przedmiot 1-10)"
+            "Każda postać zyskuje jeden losowy przedmiot „Orb” (przedmiot 1-10)"
         ]
     },
     "cs-16": {
         "name": "Preto Krisanta",
         "rewards": [
             "Po 10 szt. złota dla każdego",
-            "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
+            "Jedna postać otrzymuje jedno ulepszenie {+1_WHITE} do dowolnej karty poziomu 1 lub X"
         ]
     },
     "cs-17": {
@@ -2326,13 +2513,13 @@ export default {
     "cs-18": {
         "name": "Grab and Go",
         "rewards": [
-            "Po 100 szt. złota dla każdego. Pieniądze te należy natychmiast wydać na wzmocnienia."
+            "Po 100 szt. złota dla każdego. Pieniądze te należy natychmiast wydać na ulepszenia."
         ]
     },
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "„Major Mana Potion” (przedmiot 48)"
+            "„Większa Mikstura Many” (przedmiot gh-48)"
         ]
     },
     "cs-20": {
@@ -2340,19 +2527,19 @@ export default {
         "rewards": [
             "+1 do reputacji",
             "+1 do dobrobytu",
-            "Each character gains one random „Orb” item (przedmiot 1-10)"
+            "Każda postać zyskuje jeden losowy przedmiot „Orb” (przedmiot 1-10)"
         ]
     },
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "„Magma Waders” (przedmiot 99)"
+            "„Lawoczłapy” (przedmiot gh-99)"
         ]
     },
     "cs-22": {
         "name": "Imp Temple",
         "rewards": [
-            "Each character gains +2 gold and 2 experience for each money token looted."
+            "Każda postać otrzymuje +2 szt. złota i 2 pkt. doświadczenia za każdy zebrany żeton pieniędzy."
         ]
     },
     "cs-23": {
@@ -2364,14 +2551,14 @@ export default {
     "cs-24": {
         "name": "Eerie Grotto",
         "rewards": [
-            "Each character gains one random „Orb” item (przedmiot 1-10)"
+            "Każda postać zyskuje jeden losowy przedmiot „Orb” (przedmiot 1-10)"
         ]
     },
     "cs-25": {
         "name": "Brightspark, Behold!",
         "rewards": [
             "+1 do reputacji",
-            "Do talii należy dodać wydarzenie na szlaku 57"
+            "Do talii należy dodać zdarzenie na szlaku 57"
         ]
     },
     "cs-26": {
@@ -2417,53 +2604,60 @@ export default {
     "cs-32": {
         "name": "Confronting the Past",
         "rewards": [
-            "Read {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
-            "Password „Water Hydra”"
+            "Przeczytaj {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Zakończenie</a>)",
+            "Hasło „Water Hydra”"
         ]
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Cel życiowy „Protect and Serve”",
         "rewards": [
-            "„Blazing Boots” (przedmiot 87)",
+            "„Blazing Boots” (przedmiot 90)",
             "+1 do reputacji"
         ]
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Cel życiowy „Protect and Serve”",
         "rewards": [
-            "Unlock Envelope {BM}",
+            "Otwórz kopertę {BM}",
             "+2 do reputacji",
-            "All characters add one {BLESS} to their attack modifer deck for the next scenario"
+            "Wszystkie postacie dodają jedno {BLESS} do swojej talii modyfikatorów ataku na następny scenariusz"
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Cel życiowy „Bandit Banisher”"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Cel życiowy „Bandit Banisher”",
         "rewards": [
-            "Unlock Envelope {CG}",
+            "Otwórz kopertę {CG}",
             "Po 10 szt. złota dla każdego"
         ]
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Cel życiowy „Natural Selection”",
         "rewards": [
-            "Gain one random „Stone” item (przedmiot 94-100)"
+            "Zyskaj jeden losowy przedmiot „Stone” (przedmiot 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Cel życiowy „Natural Selection”",
         "rewards": [
-            "Unlock Envelope {LU}"
+            "Otwórz kopertę {LU}"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Cel życiowy „An Adder Divides”",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
-            "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
-            "„An Adder Divides” quest is not yet complete"
+            "Zdejmij 5 wierzchnich kart z talii zdarzeń miejskich i przetasuj z nimi zdarzenie miejskie 57. Pozostałe karty zdarzeń miejskich odłóż na bok do czasu rozpatrzenia zdarzenia miejskiego 57. Każda dodatkowa karta, która miałaby w tym czasie zostać dodana do talii zdarzeń miejskich, zostaje dodana po rozpatrzeniu zdarzenia miejskiego 57, gdy pozostałe karty zostaną połączone z oryginalną talią.",
+            "Zadanie „An Adder Divides” nie zostało jeszcze wykonane"
         ]
     },
     "cs-40": {
@@ -2489,14 +2683,14 @@ export default {
         "name": "Mansion Maze",
         "rewards": [
             "+1 do dobrobytu",
-            "Each character gains one random „Orb” item (przedmiot 1-10)"
+            "Każda postać zyskuje jeden losowy przedmiot „Orb” (przedmiot 1-10)"
         ]
     },
     "cs-44": {
         "name": "Haunted Manor",
         "rewards": [
             "Po 20 szt. złota dla każdego",
-            "Each character gains one random „Orb” item (przedmiot 1-10)"
+            "Każda postać zyskuje jeden losowy przedmiot „Orb” (przedmiot 1-10)"
         ]
     },
     "cs-45": {
@@ -2532,7 +2726,7 @@ export default {
     "cs-49": {
         "name": "Oak Invasion A",
         "rewards": [
-            "During the next visit to Gloomhaven, donations to the Sanctuary cost 0 gold"
+            "Podczas następnej wizyty w Gloomhaven datki na Sanktuarium kosztują 0 sztuk złota"
         ]
     },
     "cs-50": {
@@ -2592,7 +2786,7 @@ export default {
     "cs-58": {
         "name": "Penitentiary Lockdown",
         "rewards": [
-            "Gain one of the following as an item and the other as an item design: „Claw Trap” (przedmiot 34), „Clamp Trap” (przedmiot 56)"
+            "Zdobądź jeden z poniższych jako przedmiot, a drugi jako schemat przedmiotu: „Claw Trap” (przedmiot 34), „Clamp Trap” (przedmiot 56)"
         ]
     },
     "cs-59": {
@@ -2645,12 +2839,14 @@ export default {
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Cel życiowy „At All Costs”",
         "rewards": [
             "„Rockspine Bulwark” (przedmiot AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Cel życiowy „The Weight of Failure”",
         "rewards": [
             "„Ghostshimmer Honey” (przedmiot AA02)"
         ]
@@ -2663,36 +2859,38 @@ export default {
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Cel życiowy „Ingenious Inventor” i przedmiot „Power Modulator” założony",
         "rewards": [
             [
-                "„Ingenious Inventor” quest complete",
+                "Zadanie „Ingenious Inventor” wykonane",
                 "Otwórzcie kopertę {QA}",
-                "„Steam Piston Hammer” design (przedmiot QA02)",
-                "„Spider Climb Gloves” design (przedmiot QA03)"
+                "Schemat „Steam Piston Hammer” (przedmiot QA02)",
+                "Schemat „Spider Climb Gloves” (przedmiot QA03)"
             ],
             [
-                "„Ingenious Inventor” quest complete",
+                "Zadanie „Ingenious Inventor” wykonane",
                 "Otwórzcie kopertę {QA}",
-                "Gain one of the following: „Steam Piston Hammer” (przedmiot QA02) OR „Spider Climb Gloves” (przedmiot QA03)",
-                "Add a copy of the chosen item to the city's available supply",
-                "Add the other item to the random item design deck"
+                "Zdobądź jeden z poniższych: „Steam Piston Hammer” (przedmiot QA02) LUB „Spider Climb Gloves” (przedmiot QA03)",
+                "Dodaj kopię wybranego przedmiotu do dostępnych zasobów miasta",
+                "Dodaj drugi przedmiot do talii losowych schematów przedmiotów"
             ],
             [
-                "„Ingenious Inventor” quest complete",
+                "Zadanie „Ingenious Inventor” wykonane",
                 "Otwórzcie kopertę {QA}",
                 "„Steam Piston Hammer” (przedmiot QA02)",
                 "„Spider Climb Gloves” (przedmiot QA03)",
-                "Add copies to the city's available supply"
+                "Dodaj kopie do dostępnych zasobów miasta"
             ]
         ]
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Cel życiowy „Scrap Diver”",
         "rewards": [
-            "„Scrap Diver” quest complete",
+            "Zadanie „Scrap Diver” wykonane",
             "Otwórzcie kopertę {QA}",
-            "15xA gold each (where A is the number of Ancient Scrap recovered",
-            "Do talii należy dodać wydarzenie miejskie QA-03"
+            "Po 15xA szt. złota dla każdego (gdzie A to liczba odzyskanych żetonów Ancient Scrap)",
+            "Do talii należy dodać zdarzenie miejskie QA-03"
         ]
     },
     "cs-QA3": {
@@ -2702,26 +2900,30 @@ export default {
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Cel życiowy „Brutal Enforcer”"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Cel życiowy „Brutal Enforcer”",
         "rewards": [
-            "„Brutal Enforcer” quest complete",
+            "Zadanie „Brutal Enforcer” wykonane",
             "Otwórzcie kopertę {RM}",
             "+1 do dobrobytu"
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Cel życiowy „Apex Predator”"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Cel życiowy „Apex Predator”",
         "rewards": [
-            "„Apex Predator” quest complete",
+            "Zadanie „Apex Predator” wykonane",
             "Otwórzcie kopertę {RM}",
-            "„Terrorscale Saber” design (przedmiot RM03)",
-            "„Terrorscale Crossblades” design (przedmiot RM04)"
+            "Schemat „Terrorscale Saber” (przedmiot RM03)",
+            "Schemat „Terrorscale Crossblades” (przedmiot RM04)"
         ]
     },
     "cs-RM5": {
@@ -2729,52 +2931,884 @@ export default {
         "rewards": [
             [
                 "40 szt. złota do podziału",
-                "„Studded Leather” design (przedmiot 030) OR „Boots of Dashing” design (przedmiot 036)"
+                "Schemat „Ćwiekowana Zbroja” (przedmiot gh-30) LUB schemat „Buty Żwawości” (przedmiot gh-36)"
             ],
             [
                 "Po 2 ✔ dla każdego",
-                "„Lucky Eye” design (przedmiot 063)"
+                "Schemat „Szczęśliwe Oko” (przedmiot gh-63)"
             ]
         ]
     },
     "cs-RM6": {
         "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "„Rite of Ruin” design (przedmiot RM05)",
-            "If at least three Vermlings were alive at the end of the eighth round: 5 gold",
-            "If at least five Vermlings were alive at the end of the eighth round: ✓"
+            "Schemat „Rite of Ruin” (przedmiot RM05)",
+            "Jeśli na koniec ósmej rundy żyją co najmniej trzy Szczuroki: 5 szt. złota",
+            "Jeśli na koniec ósmej rundy żyje co najmniej pięć Szczuroków: ✓"
         ]
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Brak postaci Ruinmaw w drużynie",
         "rewards": [
             "Po 10 pkt. doświadczenia dla każdego",
-            "„Savage Cuirass” design (przedmiot RM06)"
+            "Schemat „Savage Cuirass” (przedmiot RM06)"
         ]
     },
     "mp-AN1": {
         "name": "A Harrowing Deal",
         "rewards": [
-            "“Ribbon of Friendship” (Item AN)"
+            "„Ribbon of Friendship” (przedmiot AN)"
         ]
     },
     "mp-SA1": {
         "name": "Horns in the Night",
         "rewards": [
-            "“Crest of Frosthaven” (Item SA)"
+            "„Crest of Frosthaven” (przedmiot SA)"
         ]
     },
     "mp-CA1": {
         "name": "Escape from Corruption",
         "rewards": [
-            "“Basin of Prophecy A” (Item CA A)",
-            "“Basin of Prophecy B” (Item CA B)"
+            "„Basin of Prophecy A” (przedmiot CA A)",
+            "„Basin of Prophecy B” (przedmiot CA B)"
         ]
     },
     "mp-HA1": {
         "name": "Major Annoyance",
         "rewards": [
-            "“No Nonsense Boots” (Item HA)"
+            "„No Nonsense Boots” (przedmiot HA)"
+        ]
+    },
+    "gh2-0": {
+        "name": "Training Course",
+        "rewards": [
+            "Po 2 szt. złota dla każdego"
+        ]
+    },
+    "gh2-1": {
+        "name": "Bandit Camp",
+        "rewards": [
+            "Po 10 szt. złota dla każdego",
+            "+1 do reputacji Gildii Kupieckiej",
+            "+1 do reputacji Wojska"
+        ]
+    },
+    "gh2-2": {
+        "name": "Zrujnowana krypta",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "+1 do reputacji Demonów",
+            "+1 do reputacji Wojska"
+        ]
+    },
+    "gh2-3": {
+        "name": "Lodowa Pieczara",
+        "rewards": [
+            "+1 do dobrobytu",
+            "+1 do reputacji Wojska"
+        ]
+    },
+    "gh2-4": {
+        "name": "Krypta Potępionych",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "+1 do reputacji Demonów"
+        ]
+    },
+    "gh2-5": {
+        "name": "Zapomniana krypta",
+        "rewards": [
+            "+1 do dobrobytu",
+            "+1 do reputacji Wojska"
+        ]
+    },
+    "gh2-6": {
+        "name": "Murszejąca krypta",
+        "rewards": [
+            "Po 5 szt. złota dla każdego",
+            "Po 10 pkt. doświadczenia dla każdego",
+            "+1 do reputacji Demonów",
+            "Dodaj zdarzenie miejskie C-51 do talii"
+        ]
+    },
+    "gh2-7": {
+        "name": "Czarny Kurhan",
+        "rewards": []
+    },
+    "gh2-8": {
+        "name": "Kryjówka w Kurhanie",
+        "rewards": [
+            "Po 15 szt. złota dla każdego",
+            "+2 do reputacji Gildii Kupieckiej"
+        ]
+    },
+    "gh2-9": {
+        "name": "Niebezpieczna szczelina",
+        "rewards": [
+            "+1 do dobrobytu",
+            "+1 do reputacji Wojska",
+            "Dodaj zdarzenie na szlaku R-30 do talii"
+        ]
+    },
+    "gh2-10": {
+        "name": "Górska przełęcz",
+        "rewards": []
+    },
+    "gh2-11": {
+        "name": "Ritual Chamber",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego",
+            "+1 do reputacji Demonów"
+        ]
+    },
+    "gh2-12": {
+        "name": "Obozowisko Inoksów",
+        "rewards": [
+            "Po 20 szt. złota dla każdego",
+            "+1 do reputacji Gildii Kupieckiej"
+        ]
+    },
+    "gh2-13": {
+        "name": "Lodowa grań",
+        "rewards": [
+            [],
+            [
+                "Po 30 szt. złota dla każdego",
+                "Po 20 pkt. doświadczenia dla każdego",
+                "Po 2 ✔ dla każdego",
+                "-1 do reputacji Wojska",
+                "Dodaj zdarzenie miejskie C-39 do talii",
+                "Dodaj zdarzenie na szlaku R-32 do talii"
+            ],
+            []
+        ]
+    },
+    "gh2-14": {
+        "name": "Komnata Echa",
+        "rewards": []
+    },
+    "gh2-15": {
+        "name": "Sfera Mocy Żywiołów",
+        "rewards": [
+            "Po 20 pkt. doświadczenia dla każdego",
+            "Po 2 ✔ dla każdego",
+            "+1 do reputacji Demonów"
+        ]
+    },
+    "gh2-16": {
+        "name": "Kopalnia Diamentów",
+        "rewards": [
+            "Po 20 szt. złota dla każdego",
+            "+1 do reputacji Gildii Kupieckiej"
+        ]
+    },
+    "gh2-17": {
+        "name": "Szczelina Demonów",
+        "rewards": [
+            "+1 do dobrobytu",
+            "-1 do reputacji Demonów",
+            "+2 do reputacji Wojska"
+        ]
+    },
+    "gh2-18": {
+        "name": "Dochodzenie",
+        "rewards": [
+            "Po 15 szt. złota dla każdego",
+            "+1 do dobrobytu",
+            "-1 do reputacji Gildii Kupieckiej",
+            "+2 do reputacji Wojska"
+        ]
+    },
+    "gh2-19": {
+        "name": "Military Outpost",
+        "rewards": [
+            "Po 25 pkt. doświadczenia dla każdego",
+            "+2 do reputacji Demonów",
+            "-1 do reputacji Wojska"
+        ]
+    },
+    "gh2-20": {
+        "name": "Magazyn w Gloomhaven",
+        "rewards": [
+            "Po 25 pkt. doświadczenia dla każdego",
+            "+2 do reputacji Demonów",
+            "-1 do reputacji Gildii Kupieckiej"
+        ]
+    },
+    "gh2-21": {
+        "name": "The Ghost Fortress",
+        "rewards": [
+            "Po 15 szt. złota dla każdego",
+            "+2 do reputacji Gildii Kupieckiej",
+            "-1 do reputacji Wojska"
+        ]
+    },
+    "gh2-22": {
+        "name": "Doomcannon Demolition",
+        "rewards": [
+            "Po 15 szt. złota dla każdego",
+            "-1 do reputacji Demonów",
+            "+2 do reputacji Gildii Kupieckiej"
+        ]
+    },
+    "gh2-24": {
+        "name": "Rynek Gloomhaven B",
+        "rewards": []
+    },
+    "gh2-26": {
+        "name": "Blanki Gloomhaven B",
+        "rewards": []
+    },
+    "gh2-27": {
+        "name": "Piekielny Tron",
+        "rewards": [
+            [
+                "Po 25 szt. złota dla każdego",
+                "-10 do reputacji Demonów",
+                "+2 do reputacji Gildii Kupieckiej",
+                "-10 do reputacji Wojska",
+                "Dodaj zdarzenie miejskie C-36 do talii",
+                "Dodaj zdarzenie miejskie C-54 do talii",
+                "Dodaj zdarzenie miejskie C-55 do talii",
+                "Dodaj zdarzenie na szlaku R-37 do talii",
+                "Dodaj zdarzenie na szlaku R-38 do talii",
+                "Otwórz kopertę „Gildia Kupiecka”"
+            ],
+            [
+                "+1 do dobrobytu",
+                "-10 do reputacji Demonów",
+                "-10 do reputacji Gildii Kupieckiej",
+                "+2 do reputacji Wojska",
+                "Dodaj zdarzenie miejskie C-36 do talii",
+                "Dodaj zdarzenie miejskie C-53 do talii",
+                "Dodaj zdarzenie miejskie C-56 do talii",
+                "Dodaj zdarzenie na szlaku R-38 do talii",
+                "Otwórz kopertę „Wojsko”"
+            ]
+        ]
+    },
+    "gh2-28": {
+        "name": "Świątynia Proroctw",
+        "rewards": [
+            [],
+            [],
+            [
+                "Odblokuj losowy scenariusz poboczny"
+            ]
+        ]
+    },
+    "gh2-29": {
+        "name": "Spalony Szczyt",
+        "rewards": [
+            "Po 10 szt. złota dla każdego",
+            "+1 do dobrobytu",
+            "+1 do reputacji Wojska"
+        ]
+    },
+    "gh2-30": {
+        "name": "Kaplica Głębin",
+        "rewards": []
+    },
+    "gh2-31": {
+        "name": "Próchniejący Las",
+        "rewards": [
+            [],
+            []
+        ]
+    },
+    "gh2-32": {
+        "name": "Zbrojownia Sawasów",
+        "rewards": [
+            [
+                "Po 15 szt. złota dla każdego"
+            ],
+            [
+                "Po 15 szt. złota dla każdego"
+            ],
+            [
+                "Po 15 szt. złota dla każdego"
+            ],
+            [
+                "Po 45 szt. złota dla każdego",
+                "Po 20 pkt. doświadczenia dla każdego",
+                "Po 2 ✔ dla każdego",
+                "-1 do reputacji Wojska",
+                "Dodaj zdarzenie miejskie C-38 do talii",
+                "Dodaj zdarzenie na szlaku R-32 do talii"
+            ],
+            [
+                "Po 45 szt. złota dla każdego",
+                "Po 20 pkt. doświadczenia dla każdego",
+                "Po 2 ✔ dla każdego",
+                "-1 do reputacji Wojska",
+                "Dodaj zdarzenie miejskie C-38 do talii",
+                "Dodaj zdarzenie na szlaku R-32 do talii"
+            ],
+            [
+                "Po 15 szt. złota dla każdego"
+            ]
+        ]
+    },
+    "gh2-33": {
+        "name": "Starożytny System Obronny",
+        "rewards": []
+    },
+    "gh2-34": {
+        "name": "Prastary Grobowiec",
+        "rewards": [
+            [
+                "Po 30 szt. złota dla każdego"
+            ],
+            [
+                "Po 30 pkt. doświadczenia dla każdego",
+                "Po 2 ✔ dla każdego"
+            ]
+        ]
+    },
+    "gh2-35": {
+        "name": "Kraina Głosu",
+        "rewards": [
+            "Po 30 pkt. doświadczenia dla każdego"
+        ]
+    },
+    "gh2-36": {
+        "name": "Opuszczone kanały",
+        "rewards": []
+    },
+    "gh2-37": {
+        "name": "Podziemne ruiny",
+        "rewards": []
+    },
+    "gh2-38": {
+        "name": "Gniazdo Drakona",
+        "rewards": []
+    },
+    "gh2-39": {
+        "name": "Zarośnięta grota",
+        "rewards": [
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-40": {
+        "name": "Wetlands Ambush",
+        "rewards": []
+    },
+    "gh2-41": {
+        "name": "Starożytny zbiornik",
+        "rewards": [
+            "+2 do dobrobytu"
+        ]
+    },
+    "gh2-42": {
+        "name": "Secluded Valley",
+        "rewards": []
+    },
+    "gh2-43": {
+        "name": "Chasing Secrets",
+        "rewards": [
+            [
+                "+1 do dobrobytu",
+                "Odblokuj losowy scenariusz poboczny"
+            ],
+            [
+                "+1 do dobrobytu"
+            ],
+            [
+                "+1 do dobrobytu"
+            ]
+        ]
+    },
+    "gh2-44": {
+        "name": "Temple of the Elements",
+        "rewards": [
+            "Po 100 szt. złota dla każdego",
+            "+1 do dobrobytu",
+            "Te pieniądze należy natychmiast wydać na ulepszenia"
+        ]
+    },
+    "gh2-45": {
+        "name": "Sfera Nocy",
+        "rewards": [
+            "+1 do dobrobytu",
+            "Otwórz kopertę „Świeca”"
+        ]
+    },
+    "gh2-46": {
+        "name": "Rów Zagłady",
+        "rewards": []
+    },
+    "gh2-47": {
+        "name": "Obóz Niewolników",
+        "rewards": []
+    },
+    "gh2-48": {
+        "name": "Zdradliwa Przepaść",
+        "rewards": []
+    },
+    "gh2-49": {
+        "name": "Plemienne Natarcie",
+        "rewards": [
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-50": {
+        "name": "Koszmarny Wierch",
+        "rewards": [
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-51": {
+        "name": "Legowisko Niewidzącego Oka",
+        "rewards": [
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-52": {
+        "name": "Głusza Cieni",
+        "rewards": [
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-53": {
+        "name": "Kaplica Siły",
+        "rewards": [
+            "Po 30 pkt. doświadczenia dla każdego",
+            "Po 2 ✔ dla każdego"
+        ]
+    },
+    "gh2-54": {
+        "name": "Pustka",
+        "rewards": []
+    },
+    "gh2-55": {
+        "name": "The Last Stand",
+        "rewards": []
+    },
+    "gh2-56": {
+        "name": "The Gloom",
+        "rewards": [
+            "Po 50 pkt. doświadczenia dla każdego",
+            "+5 do dobrobytu"
+        ]
+    },
+    "gh2-57": {
+        "name": "Podziemia Krypty",
+        "rewards": [
+            "Otrzymujesz „Scepter of Xorn” (przedmiot 147)"
+        ]
+    },
+    "gh2-58": {
+        "name": "Lodowy Pałac",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego",
+            "Otrzymujesz „Scepter of Xorn” (przedmiot 147)",
+            "Dodaj zdarzenie na szlaku R-39 do talii",
+            "Dodaj zdarzenie miejskie C-66 do talii"
+        ]
+    },
+    "gh2-59": {
+        "name": "Zamglony gąszcz",
+        "rewards": [
+            "Po 10 szt. złota dla każdego",
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-60": {
+        "name": "Las Bandytów",
+        "rewards": [
+            "Po 10 szt. złota dla każdego",
+            "+1 do dobrobytu",
+            "Cel życiowy 08 ukończony"
+        ]
+    },
+    "gh2-61": {
+        "name": "Dangerous Grove",
+        "rewards": []
+    },
+    "gh2-62": {
+        "name": "Laboratorium alchemiczne",
+        "rewards": [
+            "+1 do dobrobytu",
+            "Cel życiowy 09 ukończony"
+        ]
+    },
+    "gh2-63": {
+        "name": "Znikająca latarnia",
+        "rewards": [
+            "Cel życiowy 04 ukończony"
+        ]
+    },
+    "gh2-64": {
+        "name": "Roots of Chaos",
+        "rewards": [
+            "Cel życiowy 10 ukończony"
+        ]
+    },
+    "gh2-65": {
+        "name": "Hero's Mausoleum",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego"
+        ]
+    },
+    "gh2-66": {
+        "name": "A Friend in Need",
+        "rewards": [
+            "Po 15 szt. złota dla każdego",
+            "Cel życiowy 11 ukończony"
+        ]
+    },
+    "gh2-67": {
+        "name": "Świątynia Zaćmienia",
+        "rewards": [
+            "Po 15 szt. złota dla każdego",
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Otrzymujesz „Pierścień Spirali” (przedmiot 136)"
+        ]
+    },
+    "gh2-68": {
+        "name": "Zatopiony statek",
+        "rewards": [
+            "Po 10 szt. złota dla każdego"
+        ]
+    },
+    "gh2-69": {
+        "name": "Skażona Zatoczka",
+        "rewards": [
+            "Po 15 pkt. doświadczenia dla każdego",
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-70": {
+        "name": "Podwodna Laguna",
+        "rewards": [
+            "Po 10 szt. złota dla każdego",
+            "Po 10 pkt. doświadczenia dla każdego"
+        ]
+    },
+    "gh2-71": {
+        "name": "Clockwork Factory",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego"
+        ]
+    },
+    "gh2-72": {
+        "name": "Studnia Nieszczęśników",
+        "rewards": [
+            "Po 15 szt. złota dla każdego"
+        ]
+    },
+    "gh2-73": {
+        "name": "Wyspa Łańcuchów",
+        "rewards": [
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-74": {
+        "name": "Wichrowe Wyżyny",
+        "rewards": [
+            "+1 do dobrobytu",
+            "Otrzymujesz „Większa Mikstura Mocy” (przedmiot 53)"
+        ]
+    },
+    "gh2-75": {
+        "name": "Góra Lawin",
+        "rewards": [
+            "Otrzymujesz „Ruby Talisman” (przedmiot 152)"
+        ]
+    },
+    "gh2-76": {
+        "name": "Zaszlamiony sad",
+        "rewards": [
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-77": {
+        "name": "Gniazdo Dreszczowców",
+        "rewards": []
+    },
+    "gh2-78": {
+        "name": "Krypta Tajemnic",
+        "rewards": [
+            "+3 do dobrobytu"
+        ]
+    },
+    "gh2-79": {
+        "name": "Lurker Assault",
+        "rewards": [
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-80": {
+        "name": "Zaginiona Świątynia",
+        "rewards": [
+            "Po 100 szt. złota dla każdego",
+            "+2 do dobrobytu",
+            "Otrzymujesz „Serce Zdrajcy” (przedmiot 133)",
+            "Te pieniądze należy natychmiast wydać na ulepszenia"
+        ]
+    },
+    "gh2-81": {
+        "name": "Zarośnięty cmentarz",
+        "rewards": [
+            "Po 10 szt. złota dla każdego",
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-82": {
+        "name": "Kryjówka Syndykatu",
+        "rewards": [
+            "+1 do dobrobytu",
+            "Dodaj zdarzenie miejskie C-72 do talii"
+        ]
+    },
+    "gh2-83": {
+        "name": "Zaginiona wyspa",
+        "rewards": [
+            "Po 15 szt. złota dla każdego"
+        ]
+    },
+    "gh2-84": {
+        "name": "Dzika Bijatyka",
+        "rewards": [
+            "Po 15 pkt. doświadczenia dla każdego",
+            "Po 1 ✔ dla każdego",
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-85": {
+        "name": "Crossroads Station",
+        "rewards": [
+            "Po 1 ✔ dla każdego",
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-86": {
+        "name": "Czeluść magmy",
+        "rewards": [
+            "Po 15 szt. złota dla każdego"
+        ]
+    },
+    "gh2-87": {
+        "name": "Kopalnia Siarki",
+        "rewards": [
+            "Otrzymujesz „Pradawne Wiertło” (przedmiot 109)"
+        ]
+    },
+    "gh2-88": {
+        "name": "Tajemna Biblioteka",
+        "rewards": [
+            "Dodaj zdarzenie miejskie C-37 do talii"
+        ]
+    },
+    "gh2-89": {
+        "name": "Community Service",
+        "rewards": [
+            "Otrzymujesz 2× „Większa Mikstura Leczenia” (przedmiot 37)"
+        ]
+    },
+    "gh2-90": {
+        "name": "Płonąca Góra",
+        "rewards": []
+    },
+    "gh2-91": {
+        "name": "Wewnętrzne Cienie",
+        "rewards": []
+    },
+    "gh2-92": {
+        "name": "Chronal Anchor",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Otrzymujesz „Temporal Matrix” (przedmiot 144)"
+        ]
+    },
+    "gh2-93": {
+        "name": "Spustoszona Wioska",
+        "rewards": [
+            "Po 1 ✔ dla każdego"
+        ]
+    },
+    "gh2-94": {
+        "name": "A Watery Rescue",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Otrzymujesz „Otherworldly Scepter” (przedmiot 139)"
+        ]
+    },
+    "gh2-95": {
+        "name": "Cargo Ship",
+        "rewards": []
+    },
+    "gh2-96": {
+        "name": "Bójka w Zaułku",
+        "rewards": [
+            "Po 10 szt. złota dla każdego"
+        ]
+    },
+    "gh2-97": {
+        "name": "Vermling Camp",
+        "rewards": [
+            "Po 5 pkt. doświadczenia dla każdego",
+            "+1 do dobrobytu"
+        ]
+    },
+    "gh2-98": {
+        "name": "Metamorphic Fault",
+        "rewards": [
+            "Po 10 pkt. doświadczenia dla każdego",
+            "Otrzymujesz „Czaszka Nienawiści” (przedmiot 111)"
+        ]
+    },
+    "gh2-99": {
+        "name": "Sintering Forge",
+        "rewards": [
+            "Otrzymujesz „Dawnblade” (przedmiot 117)",
+            "Dodaj zdarzenie na szlaku R-33 do talii"
+        ]
+    },
+    "gh2-100": {
+        "name": "Silence Falls",
+        "rewards": [
+            "+1 do dobrobytu",
+            "Dodaj zdarzenie miejskie C-60 do talii"
+        ]
+    },
+    "gh2-101": {
+        "name": "Gloomhaven Square A (Demon Allies)",
+        "rewards": [
+            "Po 30 pkt. doświadczenia dla każdego",
+            "+2 do reputacji Demonów",
+            "-10 do reputacji Gildii Kupieckiej",
+            "-10 do reputacji Wojska",
+            "Dodaj zdarzenie miejskie C-36 do talii",
+            "Dodaj zdarzenie miejskie C-55 do talii",
+            "Dodaj zdarzenie miejskie C-56 do talii",
+            "Dodaj zdarzenie na szlaku R-36 do talii",
+            "Otwórz kopertę „Demony”"
+        ]
+    },
+    "gh2-102": {
+        "name": "Gloomhaven Square A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-103": {
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
+        "rewards": []
+    },
+    "gh2-104": {
+        "name": "Gloomhaven Battlements A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-201": {
+        "name": "A Night Out",
+        "rewards": [
+            "Otrzymujesz „Hooked Shield” (przedmiot 153)"
+        ]
+    },
+    "gh2-202": {
+        "name": "Pechowy najazd",
+        "rewards": [
+            "Otrzymujesz „Dozownik Mikstur” (przedmiot 154)"
+        ]
+    },
+    "gh2-203": {
+        "name": "Corrupted Apothecary",
+        "rewards": [
+            "Otrzymujesz „Etheric Elixir” (przedmiot 155)"
+        ]
+    },
+    "gh2-204": {
+        "name": "Material Concerns",
+        "rewards": [
+            "Otrzymujesz „Sztylet Skrytobójcy” (przedmiot 156)"
+        ]
+    },
+    "gh2-205": {
+        "name": "Kamienna obrona",
+        "rewards": [
+            "Otrzymujesz „Kamienna Tiara” (przedmiot 157)"
+        ]
+    },
+    "gh2-206": {
+        "name": "Vermling Liberation",
+        "rewards": [
+            "Otrzymujesz „Mistyczny Nóż” (przedmiot 158)"
+        ]
+    },
+    "gh2-207": {
+        "name": "Ochrona karawany",
+        "rewards": [
+            "Otrzymujesz „Insignia of the Divine” (przedmiot 159)"
+        ]
+    },
+    "gh2-208": {
+        "name": "Opłata magazynowa",
+        "rewards": [
+            "Otrzymujesz „Pas Narzędziowy” (przedmiot 160)"
+        ]
+    },
+    "gh2-209": {
+        "name": "Strefa dzikich bestii",
+        "rewards": [
+            "Otrzymujesz „Fazujący Bożek” (przedmiot 161)"
+        ]
+    },
+    "gh2-210": {
+        "name": "Żniwa nocy",
+        "rewards": [
+            "Otrzymujesz „Pieszczota Nocy” (przedmiot 162)"
+        ]
+    },
+    "gh2-211": {
+        "name": "Krypta zarazy",
+        "rewards": [
+            "Otrzymujesz „Medalion Zarazy” (przedmiot 163)"
+        ]
+    },
+    "gh2-212": {
+        "name": "Nienaturalna zniewaga",
+        "rewards": [
+            "Otrzymujesz „Maska Śmierci” (przedmiot 164)"
+        ]
+    },
+    "gh2-213": {
+        "name": "Bitwa bardów",
+        "rewards": [
+            "Otrzymujesz „Mistrzowska Lutnia” (przedmiot 165)"
+        ]
+    },
+    "gh2-214": {
+        "name": "Spaczone łowy",
+        "rewards": [
+            "Otrzymujesz „Płaszcz Łowcy” (przedmiot 166)"
+        ]
+    },
+    "gh2-215": {
+        "name": "Pokłosie",
+        "rewards": [
+            "Otrzymujesz „Fartuch Lekarski” (przedmiot 167)"
+        ]
+    },
+    "gh2-216": {
+        "name": "Tajemnice żywiołów",
+        "rewards": [
+            "Otrzymujesz „Elemental Vest” (przedmiot 168)"
+        ]
+    },
+    "gh2-217": {
+        "name": "Niedźwiedź w klatce",
+        "rewards": [
+            "Otrzymujesz „Różdżka Posłuszeństwa” (przedmiot 169)"
+        ]
+    },
+    "gh2-218": {
+        "name": "The Sands of Time",
+        "rewards": [
+            "Otrzymujesz „Crawling Carapace” (przedmiot 170)"
         ]
     }
 }

@@ -3,55 +3,55 @@
         <counter-section
             ref="lumber"
             :title="'{LUMBER}' + $t('Lumber')"
-            :value.sync="currentResources.lumber"
+            v-model:value="currentResources.lumber"
             :loading="loading"/>
 
         <counter-section
             ref="metal"
             :title="'{METAL}' + $t('Metal')"
-            :value.sync="currentResources.metal"
+            v-model:value="currentResources.metal"
             :loading="loading"/>
 
         <counter-section
             ref="hide"
             :title="'{HIDE}' + $t('Hide')"
-            :value.sync="currentResources.hide"
+            v-model:value="currentResources.hide"
             :loading="loading"/>
 
         <counter-section
             ref="arrowvine"
             :title="'{ARROWVINE}' + $t('Arrowvine')"
-            :value.sync="currentResources.arrowvine"
+            v-model:value="currentResources.arrowvine"
             :loading="loading"/>
 
         <counter-section
             ref="axenut"
             :title="'{AXENUT}' + $t('Axenut')"
-            :value.sync="currentResources.axenut"
+            v-model:value="currentResources.axenut"
             :loading="loading"/>
 
         <counter-section
             ref="corpsecap"
             :title="'{CORPSECAP}' + $t('Corpsecap')"
-            :value.sync="currentResources.corpsecap"
+            v-model:value="currentResources.corpsecap"
             :loading="loading"/>
 
         <counter-section
             ref="flamefruit"
             :title="'{FLAMEFRUIT}' + $t('Flamefruit')"
-            :value.sync="currentResources.flamefruit"
+            v-model:value="currentResources.flamefruit"
             :loading="loading"/>
 
         <counter-section
             ref="rockroot"
             :title="'{ROCKROOT}' + $t('Rockroot')"
-            :value.sync="currentResources.rockroot"
+            v-model:value="currentResources.rockroot"
             :loading="loading"/>
 
         <counter-section
             ref="snowthistle"
             :title="'{SNOWTHISTLE}' + $t('Snowthistle')"
-            :value.sync="currentResources.snowthistle"
+            v-model:value="currentResources.snowthistle"
             :loading="loading"/>
     </div>
 </template>
@@ -59,6 +59,7 @@
 <script>
 
 export default {
+    emits: ['change', 'update:resources'],
     props: {
         resources: {
             type: Object,

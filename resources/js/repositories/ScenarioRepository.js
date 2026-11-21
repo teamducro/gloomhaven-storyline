@@ -8,6 +8,7 @@ import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import SheetRepository from "./SheetRepository";
 import OverlayRepository from "./OverlayRepository";
 import {Requirement} from "../models/Requirement";
+import idIndex from "../services/idIndex";
 
 export default class ScenarioRepository {
     fetch(game) {
@@ -151,7 +152,9 @@ export default class ScenarioRepository {
     }
 
     isScenarioUnlockedByTreasure(scenario) {
-        return this.unlockedFromTreasureScenarios(scenario).count() > 0;
+        // Keep a completed scenario when its treasure is unchecked or was never checked.
+        return (scenario.treasures_from.isNotEmpty() && scenario.isComplete())
+            || this.unlockedFromTreasureScenarios(scenario).count() > 0;
     }
 
     processAchievements(scenario) {
@@ -217,6 +220,9 @@ export default class ScenarioRepository {
     }
 
     processItems(items, checked) {
+        // Game-prefixed ids ("gh-34") are items of another game, not designs of the current game.
+        items = items.filter(item => !isNaN(item) || !/^[a-z]+-/.test(item));
+
         if (!items.isEmpty()) {
             let sheet = this.sheetRepository.make(app.game);
             items.each(item => {
@@ -261,7 +267,7 @@ export default class ScenarioRepository {
     }
 
     find(id) {
-        return this.get().firstWhere('id', this.parseInt(id));
+        return idIndex(this.get().items).get(this.parseInt(id));
     }
 
     findMany(list) {
@@ -311,7 +317,7 @@ export default class ScenarioRepository {
             .where('state', ScenarioState.complete);
     }
 
-    requiredBy(achievement) {
+    requiredBy(achievement, types = ['complete', 'incomplete']) {
         if (typeof achievement === 'string') {
             achievement = this.achievementRepository.find(achievement);
         }
@@ -322,15 +328,17 @@ export default class ScenarioRepository {
             }
 
             return scenario.required_by.contains((condition) => {
-                let complete = condition.complete || [];
-                let incomplete = condition.incomplete || [];
-                return complete.some((a) => a === achievement.id) || incomplete.some((a) => a === achievement.id);
+                return types.some((type) => (condition[type] || []).includes(achievement.id));
             });
         })
             .where('state', '!=', ScenarioState.hidden);
     }
 
     getSideScenarioByManualAchievement(achievement) {
+        if (!achievement.unlocks_side_scenario) {
+            return undefined;
+        }
+
         return this.where((scenario) => {
             return scenario.is_side
                 && !scenario.required_by.isEmpty()

@@ -10,7 +10,8 @@ class ItemAvailability {
     }
 
     getItemAvailability() {
-        this.itemCountUses = {};
+        // Removed items are out of stock for good.
+        this.itemCountUses = {...this.sheet.removedItems};
 
         if (this.sheet.characters) {
             collect(this.sheet.characters).each(character => {

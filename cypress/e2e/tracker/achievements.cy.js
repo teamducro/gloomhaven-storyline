@@ -106,6 +106,21 @@ describe('Achievements', () => {
         });
     });
 
+    it('It lists scenarios requiring an achievement apart from those requiring it to be incomplete', () => {
+        // Given The Merchant Flees is gained from scenario 8
+        cy.visit('/tracker/?groups=CR_GCRM&states=1_c-2_c-3_c-4_i-7_c-8_c-9_b-13_i-14_c-16_c-18_i-20_c-24_c-25_i-28_r-30_c-32_c-33_i-40_r');
+        cy.visit('/tracker/#/achievements');
+
+        // When opening the achievement
+        cy.get('#global-achievements li').contains('The Merchant Flees').click();
+
+        // Then scenarios 7 and 20 require it, while 3 and 9 require it to be incomplete
+        cy.contains('h2', 'Required by:').should('contain', '7').and('contain', '20')
+            .and('not.contain', '3').and('not.contain', '9');
+        cy.contains('h2', 'Blocks:').should('contain', '3').and('contain', '9')
+            .and('not.contain', '7').and('not.contain', '20');
+    });
+
     it('It can search for manual achievements', () => {
         cy.visit('/tracker/#/achievements');
 
@@ -117,6 +132,79 @@ describe('Achievements', () => {
         // And it unlocks the required scenario
         cy.visit('/tracker/#/story');
         utilities.isNodeIncomplete(74);
+    });
+
+    describe('Into the Forest (Frosthaven)', () => {
+        beforeEach(() => {
+            utilities.enableGame('fh');
+            utilities.switchGame('fh');
+        });
+
+        it('It does not unlock the side scenarios that require it when it is gained', () => {
+            cy.visit('/tracker/#/achievements');
+
+            cy.get('button').contains('add').click();
+            cy.get('input[name=achievement-to-add]').type('into the');
+            cy.get('li').contains('Into the Forest').click();
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).true;
+            });
+            utilities.scenarios().then((scenarios) => {
+                [69, 119, 134].forEach((id) => {
+                    expect(scenarios.firstWhere('id', id).state).eq('hidden');
+                });
+            });
+        });
+
+        it('It unlocks main scenario 101 that requires it when it is gained', () => {
+            // Given side scenario 99 and its follow-up 100 are complete, so 101 only waits for Into the Forest
+            cy.visit('/tracker/#/achievements');
+            cy.window().then((win) => {
+                const campaignData = JSON.parse(win.localStorage.getItem('local'));
+                campaignData['scenario-fh-99'] = {state: 'complete'};
+                campaignData['scenario-fh-100'] = {state: 'complete'};
+                win.localStorage.setItem('local', JSON.stringify(campaignData));
+            });
+            cy.reload();
+            utilities.scenarios().then((scenarios) => expect(scenarios.firstWhere('id', 101).state).eq('required'));
+
+            // When it is gained
+            cy.get('button').contains('add').click();
+            cy.get('input[name=achievement-to-add]').type('into the');
+            cy.get('li').contains('Into the Forest').click();
+
+            // Then 101 is unlocked
+            utilities.scenarios().then((scenarios) => expect(scenarios.firstWhere('id', 101).state).eq('incomplete'));
+        });
+
+        it('It is not gained or lost when side scenario 69 is unlocked and locked', () => {
+            cy.visit('/tracker/#/story');
+
+            utilities.incompleteScenario(69);
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).false;
+            });
+
+            // Reload to run the validators that regain missing manual achievements
+            cy.reload();
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).false;
+            });
+
+            cy.visit('/tracker/#/achievements');
+            cy.get('button').contains('add').click();
+            cy.get('input[name=achievement-to-add]').type('into the');
+            cy.get('li').contains('Into the Forest').click();
+
+            cy.visit('/tracker/#/story');
+            utilities.lockSideScenario(69);
+
+            utilities.achievements().then((achievements) => {
+                expect(achievements.firstWhere('id', 'CITF').awarded).true;
+            });
+        });
     });
 
     it('It can add the party achievements from Rift Event 14', () => {
@@ -179,7 +267,7 @@ describe('Achievements', () => {
     });
 
     it('It can gain an achievement multiple times', () => {
-        cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxAYwL4BpwBmmMAnAGzKoYCWe4UwCAhgE6ZTUBuApgCYDCUVk0xpuLMJTwJ2w0eICqAOwA2Ae0wBrSSgQAhAErIQcXAn4AJY6YQBlAOrWzAFQCSTu-w8BZZ9bqywNKY1GgAnpQIiEgmZgBMHgDMHgAsHgCsHhQxNgDsHgAcHiQecAAMpdGxUQk5ZnDJdVFpTXCZrdnVcPmtRa0lTXEVg1U2cbXVcY2TLZPtk51jPZN9kwPVicMmdNS8QfgADtQ2LGpMvJGj8UmpGVkeyzarNus25ZWlE2-Tb7Nv829FvVHvVnvVXvEtmMrghxh4pvC-vEAfEgbCQbCwbCIQhNv58ABXIJ0JgABQAYrZKCAmAB3WJYNSmEAqEBlOiQWC1KhYEkQfhGFA0sAAbQQAHEBd4EABdEmSgzSoV0hmYJn4Vns-CcmCNHkAIw50BgLR5OG1xvaPNoFtg2TNJNJAClSdSVcy1czNY6ACJ6N30j3qllso2wPoO-BMcXObzkgOq4Pe20wHqR8DGhrU9AgG0Z2BwU3gDDmmkx0kAUQTQa9oZTQ2zJbD8GGPKgzbgAzbjtsXmV9LK+DVg5DWvzMDiaeLIHbUZjBgAcgmR8ONXXx3B7dO8zq4BHp6WdXF9zmd8a4kWc7Px3ErSADphmVfmwihTnD+et+-myk9Qf5QAgn4-aJrWI4ALZMOuZLOIKoDukOSbQRSfbwYGiFgS+3L-lGEAAQYwHwaKEr4QgZjigBXhynOpEgSuagjqycDNok0TpjqiR3ugCAsNwACOBLULxFwsV+aA8fxgnCQggGoTS6GMphKaJFO37KSeTbKV2OFlvY-ogTWa5jjBPpySq9GMeuHF-g+T4YNeHGXvZjrOAAaoR8lsohlnGaSzg+h55neUZ8r+QB1YYSFUZ+c4gUKZ6UXjikqmaWWFYAPJmfFaiJIlOrpGx26OgY4UGZFo4-k5uY-hpvLRUBPoRYpeWZlxNA-mJdVpZl2EIc1FVzhl-B-n1CUVdgQA/achievements');
+        utilities.visitShared('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxAYwL4BpwBmmMAnAGzKoYCWe4UwCAhgE6ZTUBuApgCYDCUVk0xpuLMJTwJ2w0eICqAOwA2Ae0wBrSSgQAhAErIQcXAn4AJY6YQBlAOrWzAFQCSTu-w8BZZ9bqywNKY1GgAnpQIiEgmZgBMHgDMHgAsHgCsHhQxNgDsHgAcHiQecAAMpdGxUQk5ZnDJdVFpTXCZrdnVcPmtRa0lTXEVg1U2cbXVcY2TLZPtk51jPZN9kwPVicMmdNS8QfgADtQ2LGpMvJGj8UmpGVkeyzarNus25ZWlE2-Tb7Nv829FvVHvVnvVXvEtmMrghxh4pvC-vEAfEgbCQbCwbCIQhNv58ABXIJ0JgABQAYrZKCAmAB3WJYNSmEAqEBlOiQWC1KhYEkQfhGFA0sAAbQQAHEBd4EABdEmSgzSoV0hmYJn4Vns-CcmCNHkAIw50BgLR5OG1xvaPNoFtg2TNJNJAClSdSVcy1czNY6ACJ6N30j3qllso2wPoO-BMcXObzkgOq4Pe20wHqR8DGhrU9AgG0Z2BwU3gDDmmkx0kAUQTQa9oZTQ2zJbD8GGPKgzbgAzbjtsXmV9LK+DVg5DWvzMDiaeLIHbUZjBgAcgmR8ONXXx3B7dO8zq4BHp6WdXF9zmd8a4kWc7Px3ErSADphmVfmwihTnD+et+-myk9Qf5QAgn4-aJrWI4ALZMOuZLOIKoDukOSbQRSfbwYGiFgS+3L-lGEAAQYwHwaKEr4QgZjigBXhynOpEgSuagjqycDNok0TpjqiR3ugCAsNwACOBLULxFwsV+aA8fxgnCQggGoTS6GMphKaJFO37KSeTbKV2OFlvY-ogTWa5jjBPpySq9GMeuHF-g+T4YNeHGXvZjrOAAaoR8lsohlnGaSzg+h55neUZ8r+QB1YYSFUZ+c4gUKZ6UXjikqmaWWFYAPJmfFaiJIlOrpGx26OgY4UGZFo4-k5uY-hpvLRUBPoRYpeWZlxNA-mJdVpZl2EIc1FVzhl-B-n1CUVdgQA/achievements');
         cy.get('#global-achievements li').contains('End of Corruption (3)').click();
 
         cy.get('.mdc-dialog__title').contains('End of Corruption (3)');

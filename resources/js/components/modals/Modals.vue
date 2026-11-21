@@ -3,6 +3,7 @@
         <scenario/>
         <achievement/>
         <share/>
+        <ghs-export/>
         <share-campaign-code/>
         <reset/>
         <donations/>
@@ -12,6 +13,8 @@
         <item-modal/>
         <event-card/>
         <default-card-modal/>
+        <monster-modal/>
+        <character-mat-modal/>
         <edit-campaign/>
         <ability-modal/>
         <modifier-deck-modal/>

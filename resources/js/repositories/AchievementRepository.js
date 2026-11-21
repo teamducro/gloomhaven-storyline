@@ -2,11 +2,11 @@ import Achievement from "../models/Achievement";
 import ScenarioRepository from "./ScenarioRepository";
 import AchievementGroup from "../models/AchievementGroup";
 import {ScenarioState} from "../models/ScenarioState";
-import StorySyncer from "../services/StorySyncer";
 import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import Helpers from "../services/Helpers";
 import SheetRepository from "./SheetRepository";
+import idIndex from "../services/idIndex";
 
 export default class AchievementRepository {
 
@@ -59,7 +59,7 @@ export default class AchievementRepository {
 
         // "The Power of Enhancement" unlocks enhancements in Gloomhaven: turn them on once it's first
         // awarded. The user can still turn them off (or on without it) on the Abilities page.
-        if (!wasAwarded && achievement.id === 'GTPE') {
+        if (!wasAwarded && new GameData().campaignRule(app.game, 'enhancementAchievements').includes(achievement.id)) {
             const sheet = new SheetRepository().make(app.game);
             if (!sheet.enhancementsEnabled) {
                 sheet.enhancementsEnabled = true;
@@ -79,7 +79,8 @@ export default class AchievementRepository {
             } else if (!unlock && scenario && scenario.isVisible()) {
                 this.scenarioRepository.changeState(scenario, ScenarioState.hidden);
             } else {
-                this.storySyncer.store();
+                // Also unlocks main scenarios that require the achievement, e.g. FH 101 by Into the Forest. Syncs as well.
+                this.scenarioRepository.scenarioValidator.validate();
             }
         }
     }
@@ -122,7 +123,7 @@ export default class AchievementRepository {
     }
 
     find(id) {
-        const achievement = app.achievements.firstWhere('id', id);
+        const achievement = idIndex(app.achievements.items).get(id);
 
         if (!achievement) {
             let message = 'Something went wrong, please refresh and try again.';
@@ -144,9 +145,11 @@ export default class AchievementRepository {
 
     searchManual(query) {
         query = Helpers.sanitize(query);
+        const sheet = new SheetRepository().make(app.game);
         return this.where((achievement) => {
             return achievement.is_manual
                 && !achievement.manual_awarded
+                && (!achievement.requires_event || sheet.hasEvent(achievement.requires_event))
                 && Helpers.sanitize(achievement._name).startsWith(query);
         });
     }
@@ -172,7 +175,7 @@ export default class AchievementRepository {
         scenario.required_by.each((condition) => {
             let complete = condition.complete || [];
             this.findMany(complete)
-                .filter(achievement => achievement.is_manual && achievement.manual_awarded === isAwarded)
+                .filter(achievement => achievement.is_manual && achievement.unlocks_side_scenario && achievement.manual_awarded === isAwarded)
                 .each(achievement => achievements.push(achievement));
         });
 
@@ -186,10 +189,6 @@ export default class AchievementRepository {
 
     get scenarioRepository() {
         return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository());
-    }
-
-    get storySyncer() {
-        return this._storySyncer || (this._storySyncer = new StorySyncer);
     }
 
     get gameData() {

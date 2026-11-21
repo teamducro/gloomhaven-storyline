@@ -1,0 +1,156 @@
+import {defineConfig, loadEnv} from 'vite';
+import vue from '@vitejs/plugin-vue';
+import tailwindcss from '@tailwindcss/postcss';
+import autoprefixer from 'autoprefixer';
+import crypto from 'crypto';
+import fs from 'fs';
+import dayjs from 'dayjs';
+
+// Two separate builds (BUNDLE=app|website) so each gets exactly one css file and no shared chunks.
+export default defineConfig(({mode}) => {
+    const env = {...loadEnv(mode, process.cwd(), 'MIX_'), ...process.env};
+    const mainGame = env.MIX_MAIN_GAME || 'gh';
+    const bundle = process.env.BUNDLE || 'app';
+    const inProduction = mode === 'production';
+
+    return {
+        base: '/',
+        envPrefix: 'MIX_',
+        publicDir: false,
+        plugins: [
+            vue({
+                template: {
+                    transformAssetUrls: {includeAbsolute: false},
+                    // Vue 2 kept the whitespace between inline elements; Vue 3 condenses it by default.
+                    compilerOptions: {whitespace: 'preserve'},
+                },
+            }),
+            postBuild(bundle, mainGame, inProduction),
+        ],
+        resolve: {
+            extensions: ['.mjs', '.js', '.json', '.vue'],
+            alias: [
+                // In-DOM root templates in index.html need the runtime compiler.
+                {find: /^vue$/, replacement: 'vue/dist/vue.esm-bundler.js'},
+                {find: /^~(.*)$/, replacement: '$1'},
+            ],
+        },
+        css: {
+            postcss: {plugins: [tailwindcss(), autoprefixer({remove: false})]},
+            preprocessorOptions: {
+                scss: {
+                    loadPaths: ['node_modules'],
+                    silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'slash-div'],
+                    quietDeps: true,
+                },
+            },
+        },
+        define: {
+            __VUE_OPTIONS_API__: true,
+            __VUE_PROD_DEVTOOLS__: false,
+            __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
+        },
+        build: {
+            outDir: 'public',
+            emptyOutDir: false,
+            cssCodeSplit: false,
+            minify: inProduction,
+            sourcemap: !inProduction,
+            chunkSizeWarningLimit: 5000,
+            rollupOptions: {
+                input: {[bundle]: `resources/js/${bundle}.js`},
+                output: {
+                    // Hashed in production instead of ?v=: lazy chunks import the entry by file name, and a
+                    // query string would make the browser load (and mount) the app twice.
+                    entryFileNames: inProduction ? 'js/[name]-[hash].js' : 'js/[name].js',
+                    chunkFileNames: 'js/[name]-[hash].js',
+                    assetFileNames: asset => asset.names?.[0]?.endsWith('.css')
+                        ? `css/${bundle}.css`
+                        : 'assets/[name]-[hash][extname]',
+                },
+            },
+        },
+    };
+});
+
+// Port of the old webpack.mix.js post-build steps.
+function postBuild(bundle, mainGame, inProduction) {
+    let buildFiles = [];
+    let languageFiles = [];
+    let entryFile;
+
+    return {
+        name: 'post-build',
+        apply: 'build',
+        async buildStart() {
+            // Hashed chunks would pile up otherwise; the app build runs first, so it cleans for both. Production keeps
+            // them: open tabs and clients on the previous service worker still load the previous build's chunks.
+            if (bundle === 'app' && !this.meta.watchMode && !inProduction) {
+                for (const dir of ['public/js', 'public/css', 'public/assets']) {
+                    await fs.promises.rm(dir, {recursive: true, force: true});
+                }
+            }
+        },
+        generateBundle(options, output) {
+            entryFile = Object.values(output).find(file => file.type === 'chunk' && file.isEntry).fileName;
+            // Lazy language chunks aren't precached (all languages would double the download); the worker keeps the used ones.
+            const chunks = Object.values(output).filter(file => file.type === 'chunk');
+            const isLanguage = file => file.moduleIds.every(id => id.includes('/resources/js/lang/'));
+            buildFiles = chunks.filter(file => !isLanguage(file)).map(file => '/' + file.fileName).concat(`/css/${bundle}.css`);
+            languageFiles = chunks.filter(isLanguage).map(file => '/' + file.fileName);
+        },
+        async closeBundle() {
+            if (bundle === 'app') {
+                for (const dir of [`resources/public-${mainGame}`, 'resources/img', 'resources/svg', 'resources/fonts']) {
+                    await fs.promises.cp(dir, dir.startsWith('resources/public-') ? 'public' : dir.replace('resources', 'public'),
+                        {recursive: true, preserveTimestamps: true, filter: isChanged});
+                }
+
+                await replace('public/sitemap.xml', /release-date/g, dayjs().format('YYYY-MM-DD'));
+                await fs.promises.copyFile('resources/js/service-worker.js', 'public/service-worker.js');
+                await replace('public/service-worker.js', /'build-files',/, buildFiles.map(file => `'${file}',`).join('\n    '));
+                await replace('public/service-worker.js', /'language-files',/, languageFiles.map(file => `'${file}',`).join('\n    '));
+            }
+
+            await replaceInHtml(new RegExp(`/js/${bundle}(-[\\w-]+)?\\.js`, 'g'), `/${entryFile}`);
+            await versionFile(`public/css/${bundle}.css`, inProduction);
+            // Both pages reference their hashed entry and versioned css, so any change to either build renews the cache.
+            // The website build runs last; the app build sets it too for watch mode.
+            await replace('public/service-worker.js', /cache-v-[^']*/, 'cache-v-' + md5(...htmlFiles));
+        },
+    };
+}
+
+async function versionFile(path, applyVersion) {
+    const file = path.split('/').pop();
+    const pattern = new RegExp(file.replace('.', '\\.') + '(\\?v=[a-f0-9]{32})?', 'g');
+    const to = applyVersion ? file + '?v=' + md5(path) : file;
+
+    await replaceInHtml(pattern, to);
+}
+
+const htmlFiles = ['public/index.html', 'public/tracker/index.html'];
+
+async function replaceInHtml(from, to) {
+    for (const html of htmlFiles) {
+        await replace(html, from, to);
+    }
+}
+
+// resources/img is ~800MB: only copy files that are new or differ from the previous build's copy.
+async function isChanged(src, dest) {
+    const [from, to] = await Promise.all([fs.promises.stat(src), fs.promises.stat(dest).catch(() => null)]);
+
+    return from.isDirectory() || !to || from.size !== to.size || from.mtimeMs !== to.mtimeMs;
+}
+
+function md5(...paths) {
+    const hash = crypto.createHash('md5');
+    paths.forEach(path => hash.update(fs.readFileSync(path)));
+    return hash.digest('hex');
+}
+
+async function replace(file, from, to) {
+    const content = await fs.promises.readFile(file, 'utf8');
+    await fs.promises.writeFile(file, content.replace(from, to));
+}

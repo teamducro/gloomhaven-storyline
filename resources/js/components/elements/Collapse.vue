@@ -24,6 +24,7 @@
 
 <script>
     export default {
+        emits: ['closed', 'opened'],
         props: {
             initialOpen: {
                 type: Boolean,

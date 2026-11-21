@@ -9,6 +9,7 @@ class ModifierCard {
         this.rolling = data.rolling || false;
         this.count = data.count || 0;
         this.path = data.path.toLowerCase(); // p1 / br / etc
+        this.label = data.label || null; // Text for perk cards without an image (gh2)
     }
 
     get code() {

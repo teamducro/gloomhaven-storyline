@@ -181,6 +181,7 @@ describe('Enhancements', () => {
     });
 
     it('It offers lost/persistent pricing for Mercenary Pack characters, whose cards use the Frosthaven design', () => {
+        utilities.enableGame('mp');
         // Unlock Satha so she can be added to the (Gloomhaven) party.
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);
@@ -572,11 +573,53 @@ describe('Enhancements', () => {
         abilityModalButton('Enhance').click();
         expectSync(() => abilityModalButton('Add').click());
 
-        // Dragging needs real pointer capture, so fire the sticker's drag and drop events directly.
-        expectSync(() => cy.get('.ability-modal .enhancement-sticker').then(($sticker) => {
-            const sticker = $sticker[0].__vue__;
-            sticker.$emit('drag', sticker.id, 20, 30);
-            sticker.$emit('reposition', sticker.id);
-        }));
+        // Synthetic pointers can't be captured, so stub the capture and drag with pointer events.
+        expectSync(() => cy.get('.ability-modal .enhancement-sticker')
+            .then(($sticker) => {
+                $sticker[0].setPointerCapture = () => {};
+            })
+            .trigger('pointerdown', {pointerId: 1})
+            .trigger('pointerup', {pointerId: 1, clientX: 20, clientY: 30}));
+    });
+
+    it('It prices Regenerate at 50 gold, doubling for multi-target', () => {
+        enableAndOpenAbility('available-avalanche');
+        abilityModalButton('Enhance').click();
+
+        cy.get('#enhancement-type').select('regenerate');
+        cy.get('.ability-modal').contains('p', 'Cost: 50 Gold');
+
+        cy.get('#enhancement-multi-target').check();
+        cy.get('.ability-modal').contains('p', 'Cost: 100 Gold');
+    });
+
+    it('It does not double summon enhancements for multi-target', () => {
+        enableAndOpenAbility('available-avalanche');
+        abilityModalButton('Enhance').click();
+
+        ['summon_move', 'summon_attack', 'summon_range', 'summon_hp'].forEach((type) => {
+            cy.get('#enhancement-type').select(type);
+            cy.get('#enhancement-multi-target').should('not.exist');
+        });
+    });
+
+    it('It has no enhanced card limit in Frosthaven', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+
+        cy.visit('/tracker/#/characters');
+        utilities.openAbilities('Blinkblade');
+        cy.get('#desktop-enable-enhancements').check();
+        cy.get('#desktop-show-all-abilities').check();
+
+        openAbilityByImage('blurry-jab');
+        abilityModalButton('Enhance').click();
+        abilityModalButton('Add').click();
+        utilities.closeModel();
+
+        // Prosperity 1 would cap Gloomhaven at one enhanced card
+        openAbilityByImage('double-time');
+        abilityModalButton('Enhance').click();
+        cy.get('.ability-modal').contains('Enhanced card limit reached').should('not.exist');
     });
 });

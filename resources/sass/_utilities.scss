@@ -28,9 +28,7 @@
 }
 
 div.hover\:shadow-white:hover {
-    --tw-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2);
-    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2);
 }
 
 @include characters() using($character, $color) {
@@ -40,23 +38,5 @@ div.hover\:shadow-white:hover {
 
     .text-character-#{$character} {
         color: $color;
-    }
-}
-
-@for $i from 1 through 10 {
-    .grid-cols-#{$i} {
-        grid-template-columns: repeat($i, minmax(0, 1fr));
-    }
-}
-
-@for $i from 1 through 10 {
-    .grid-rows-#{$i} {
-        grid-template-rows: repeat($i, minmax(0, 1fr));
-    }
-}
-
-@for $i from 1 through 6 {
-    .col-span-#{$i} {
-        grid-column: span $i;
     }
 }

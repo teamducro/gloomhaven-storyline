@@ -1,6 +1,6 @@
 domains:
   - gloomhaven-storyline
-node_version: "16"
+node_version: "22"
 secured: true
 container:
   port: 3000

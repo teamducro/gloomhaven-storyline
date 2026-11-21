@@ -1,44 +1,44 @@
 export default {
     "fh-A": {
-        "name": "Boat"
+        "name": "Schiff"
     },
     "fh-B": {
-        "name": "Sled"
+        "name": "Schlitten"
     },
     "fh-C": {
-        "name": "Climbing Gear"
+        "name": "Kletterausrüstung"
     },
     "fh-D": {
-        "name": "Ice Spike"
+        "name": "Eisstachel"
     },
     "fh-E": {
-        "name": "Portcullis"
+        "name": "Fallgatter"
     },
     "fh-F": {
         "name": "Statue"
     },
     "fh-G_red": {
-        "name": "Red Well"
+        "name": "Roter Brunnen"
     },
     "fh-G_blue": {
-        "name": "Blue Well"
+        "name": "Blauer Brunnen"
     },
     "fh-H": {
-        "name": "Stage"
+        "name": "Bühne"
     },
     "fh-J": {
-        "name": "Wall"
+        "name": "Mauer"
     },
     "fh-K": {
-        "name": "Wall"
+        "name": "Mauer"
     },
     "fh-L": {
-        "name": "Wall"
+        "name": "Mauer"
     },
     "fh-M": {
-        "name": "Wall"
+        "name": "Mauer"
     },
     "fh-N": {
-        "name": "Wall"
+        "name": "Mauer"
     }
 }

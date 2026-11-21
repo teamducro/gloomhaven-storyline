@@ -7,6 +7,9 @@ export default {
         "rewards": [
             "je 10 Gold",
             "+1 Wohlstand"
+        ],
+        "faq": [
+            "Boss-Spezialaktion 1: Bewegt sich der Boss zu einer bereits geöffneten Tür und ist das Türfeld besetzt, bewegt er sich stattdessen zum nächstgelegenen unbesetzten Feld (bei Gleichstand entscheiden die Spieler)."
         ]
     },
     "gh-3": {
@@ -42,10 +45,16 @@ export default {
         "rewards": [
             "je 20 Gold",
             "+1 Wohlstand"
+        ],
+        "faq": [
+            "Druckfehler: Die Boss-Fertigkeiten sind im Szenariobuch vertauscht. „Boss-Spezialaktion 1“ muss „Boss-Spezialaktion 2“ heißen und umgekehrt."
         ]
     },
     "gh-10": {
-        "name": "Ebene der Elementarmächte"
+        "name": "Ebene der Elementarmächte",
+        "faq": [
+            "Druckfehler: Der Schatzaufleger muss mit 11 beschriftet sein, nicht mit 55."
+        ]
     },
     "gh-11": {
         "name": "Gloomhaven-Platz A",
@@ -54,6 +63,9 @@ export default {
             "-2 Ansehen",
             "+2 Wohlstand",
             "“Schädelfluch”-Plan(Gegenstand 113)"
+        ],
+        "faq": [
+            "Druckfehler: Ignoriert den Text von „Boss-Spezialaktion 1“ im Szenariobuch und richtet euch nach der Wertekarte des Bosses."
         ]
     },
     "gh-12": {
@@ -61,13 +73,20 @@ export default {
         "rewards": [
             "+4 Ansehen",
             "“Schädelfluch”-Plan (Gegenstand 113)"
+        ],
+        "faq": [
+            "Druckfehler: Türmarker 1 muss an der südlichen Tür liegen, nicht an der nördlichen. Lest den Text unter „1“, wenn die südliche Tür geöffnet wird.",
+            "Druckfehler: „Boss-Spezialaktion 1“ ist nicht aufgeführt. Sie ist exakt dieselbe wie „Boss-Spezialaktion 2“, nur dass Wandelnde Skelette statt Wandelnder Leichen beschworen werden."
         ]
     },
     "gh-13": {
         "name": "Tempel des Sehers"
     },
     "gh-14": {
-        "name": "Frostsenke"
+        "name": "Frostsenke",
+        "conclusion_faq": [
+            "Die Szenariozahlen im Text sind nur zur Erinnerung, sie werden nicht freigeschaltet."
+        ]
     },
     "gh-15": {
         "name": "Schrein der Stärke",
@@ -91,6 +110,9 @@ export default {
         "name": "Vergessene Krypta",
         "rewards": [
             "+1 Wohlstand"
+        ],
+        "faq": [
+            "Der Altar (b) kann von Fertigkeiten betroffen sein, die Hindernisse beeinflussen. Ihn zu zerstören ist jedoch nicht empfehlenswert, da das Szenario dadurch unmöglich zu gewinnen wird. Der NPC behandelt den Altar bei der Bestimmung seiner Bewegung als Fokus."
         ]
     },
     "gh-20": {
@@ -99,6 +121,9 @@ export default {
             "je 20 Gold",
             "+2 Ansehen",
             "+1 Wohlstand"
+        ],
+        "faq": [
+            "Druckfehler: „Boss-Spezialaktion 1“ ist nicht aufgeführt. Zusätzlich zu den Fertigkeiten auf der Wertekarte besitzt der Boss dieselbe Beschwörungsfertigkeit wie „Boss-Spezialaktion 2“, nur dass Wandelnde Skelette statt Wandelnder Leichen beschworen werden."
         ]
     },
     "gh-21": {
@@ -107,6 +132,10 @@ export default {
             "je 50 Gold",
             "+1 Wohlstand",
             "Fügt Stadt-Ereignis 78 dem Stadt-Ereignis-Deck hinzu"
+        ],
+        "faq": [
+            "Druckfehler: Unter „Sonderregeln“ muss der Altar bei „f“ stehen, nicht bei „a“. Die Dämonen-Startfelder sollten in folgender Reihenfolge angeordnet werden: Wind (a), Nacht (b), Erde (c), Flamme (d), Sonne (e), Frost (f).",
+            "Der Altar verhält sich wie ein normales Hindernis mit Trefferpunkten (immun gegen alle negativen Zustände), daher sollte „und Immunitäten“ dort nicht stehen."
         ]
     },
     "gh-22": {
@@ -119,7 +148,10 @@ export default {
         "name": "Echokammer"
     },
     "gh-25": {
-        "name": "Aufstieg zur Eisklippe"
+        "name": "Aufstieg zur Eisklippe",
+        "faq": [
+            "Flucht: Ihr schließt das Szenario ab, wenn alle Charaktere entweder auf einem Ausgangsfeld stehen oder erschöpft wurden, während sie auf einem Ausgangsfeld standen."
+        ]
     },
     "gh-26": {
         "name": "Die alte Zisterne",
@@ -134,6 +166,13 @@ export default {
         "rewards": [
             "+1 Wohlstand",
             "je 100 Gold. Das Gold muss sofort in Karten-Verbesserungen investiert werden."
+        ],
+        "faq": [
+            "Hail ist mit Initiative 99 am Zug und erleidet Schaden, falls sie verwundet ist."
+        ],
+        "conclusion_faq": [
+            "Ihr könnt euer aktuelles Geld zur Belohnung hinzurechnen, aber ihr könnt in der Stadt keine Gegenstände verkaufen, da die Belohnung unmittelbar nach dem Ende des Szenarios erfolgt, bevor ihr in die Stadt zurückkehrt.",
+            "Druckfehler: Ist das Feld für den Aufkleber des globalen Erfolgs „Der Riss geschlossen“ bereits belegt, überklebt es nicht. Verzichtet entweder auf den Aufkleber oder platziert ihn neben der Karte."
         ]
     },
     "gh-28": {
@@ -143,6 +182,9 @@ export default {
         "name": "Heiligtum des Grauens",
         "rewards": [
             "je 15 Erfahrung"
+        ],
+        "faq": [
+            "Die Tür mit TP wird in Bezug auf ihre Zielbarkeit als Hindernis mit TP behandelt: Beschworene können sie fokussieren, sie gilt als Figur mit Initiative 99 usw."
         ]
     },
     "gh-30": {
@@ -158,7 +200,11 @@ export default {
         "name": "Moderwald"
     },
     "gh-33": {
-        "name": "Savvas-Waffenkammer"
+        "name": "Savvas-Waffenkammer",
+        "faq": [
+            "Die Tür mit TP wird in Bezug auf ihre Zielbarkeit als Hindernis mit TP behandelt: Beschworene können sie fokussieren, sie gilt als Figur mit Initiative 99 usw.",
+            "Flucht: Ihr schließt das Szenario ab, wenn alle Charaktere entweder auf einem Ausgangsfeld stehen oder erschöpft wurden, während sie auf einem Ausgangsfeld standen."
+        ]
     },
     "gh-34": {
         "name": "Versengter Gipfel",
@@ -166,6 +212,11 @@ export default {
             "je 20 Gold",
             "+2 Ansehen",
             "+1 Wohlstand"
+        ],
+        "faq": [
+            "Zusätzliche Sonderregel: Der Boss ist immun gegen jede Fertigkeit und jeden Effekt, die seine Position auf der Karte verändern würden (Schieben, Ziehen, erzwungene Bewegung usw.).",
+            "Die Zephyre können von keiner Fertigkeit betroffen werden und Beschworene fokussieren sie nicht.",
+            "Erratum: Bei Boss-Spezialaktion 2 lautet die korrekte Reihenfolge der Fertigkeiten zuerst Beschwören, dann Bewegen. Das Szenariobuch ist korrekt, die Wertekarte nicht."
         ]
     },
     "gh-35": {
@@ -175,6 +226,9 @@ export default {
             "-5 Ansehen",
             "-2 Wohlstand",
             "Fügt Stadt-Ereignis 79 dem Stadt-Ereignis-Deck hinzu"
+        ],
+        "faq": [
+            "Die Wandhindernisse können nicht zerstört werden."
         ]
     },
     "gh-36": {
@@ -186,12 +240,18 @@ export default {
         ]
     },
     "gh-37": {
-        "name": "Schicksalsgraben"
+        "name": "Schicksalsgraben",
+        "faq": [
+            "Flucht: Ihr schließt das Szenario ab, wenn alle Charaktere entweder auf einem Ausgangsfeld stehen oder erschöpft wurden, während sie auf einem Ausgangsfeld standen."
+        ]
     },
     "gh-38": {
         "name": "Sklavenpferche",
         "rewards": [
             "+1 Ansehen"
+        ],
+        "faq": [
+            "Der Antride hört auf, sich zu bewegen, wenn der Schamane stirbt. Findet der Antride keinen gangbaren Weg zum Schamanen, bewegt er sich nicht. Gemäß dem Szenariotext kann er sich durch geschlossene Türen bewegen und öffnet sie dabei."
         ]
     },
     "gh-39": {
@@ -207,7 +267,7 @@ export default {
         "name": "Verfallenes Grab",
         "rewards": [
             "je 50 Gold",
-            "je 25 Erfahrung each",
+            "je 25 Erfahrung",
             "je 2 ✔",
             "+2 Wohlstand"
         ]
@@ -216,10 +276,16 @@ export default {
         "name": "Reich der Stimme",
         "rewards": [
             "{NOTE_42}"
+        ],
+        "faq": [
+            "Die Stimmbänder werden in Bezug auf ihre Zielbarkeit als Hindernisse mit TP behandelt: Beschworene können sie fokussieren, sie gelten als Figuren mit Initiative 99 usw."
         ]
     },
     "gh-43": {
-        "name": "Drakennest"
+        "name": "Drakennest",
+        "conclusion_faq": [
+            "Die Szenariozahlen im Text sind nur zur Erinnerung, sie werden nicht freigeschaltet."
+        ]
     },
     "gh-44": {
         "name": "Stammesangriff",
@@ -233,22 +299,39 @@ export default {
         "rewards": [
             "je 20 Gold",
             "-2 Ansehen"
+        ],
+        "faq": [
+            "Die Totems gelten als Hindernisse und können daher nicht mit Fertigkeiten zerstört werden, sie können aber von anderen Fertigkeiten ohne Schaden beeinflusst werden (wie den Hindernis-Fertigkeiten des Felsenherzens)."
         ]
     },
     "gh-46": {
-        "name": "Alptraumspitze"
+        "name": "Alptraumspitze",
+        "faq": [
+            "Druckfehler: Boss-Spezialaktion 2 auf der Wertekarte lautet „Beschwöre P-Eier“. Es muss „Beschwöre C-Eier“ heißen.",
+            "Erratum: Die Reihenfolge der Fertigkeiten von Spezialaktion 2 muss Bewegung, ein Angriff, dann Beschwören lauten."
+        ]
     },
     "gh-47": {
-        "name": "Hort des Blicklosen"
+        "name": "Hort des Blicklosen",
+        "faq": [
+            "Zusätzliche Sonderregel: Der Boss ist immun gegen jede Fertigkeit und jeden Effekt, die seine Position auf der Karte verändern würden (Schieben, Ziehen, erzwungene Bewegung usw.)."
+        ]
     },
     "gh-48": {
-        "name": "Schattenwald"
+        "name": "Schattenwald",
+        "faq": [
+            "Nach dem Nahkampfangriff des Bosses unterliegt er Effekten nach dem Angriff (Vergeltung, bei Tod usw.), bevor er vom Spielplan entfernt wird."
+        ]
     },
     "gh-49": {
         "name": "Letzter Widerstand",
         "rewards": [
             "je 50 Gold",
             "-3 Ansehen"
+        ],
+        "faq": [
+            "Zusätzliche Sonderregel: Die Uralte Artillerie ist von erzwungener Bewegung nicht betroffen (Schieben, Ziehen, Positionstausch usw.).",
+            "Der Sonderregel-Schaden an alle Charaktere ist direkter Schaden und gilt nicht als Angriff."
         ]
     },
     "gh-50": {
@@ -268,32 +351,66 @@ export default {
         ]
     },
     "gh-52": {
-        "name": "Verseuchter Keller"
+        "name": "Verseuchter Keller",
+        "requirements": "Persönliche Quest „Suche nach Xorn“",
+        "faq": [
+            "Sonderregel: In diesem Szenario könnt ihr die untere Aktion einer beliebigen Karte verwenden, um einen Schatzaufleger in Reichweite 1 zu plündern.",
+            "Bei Verwendung des Materials von Forgotten Circles können die Hindernisse in der Mitte des Startraums wie Wand-Aufleger behandelt werden, wie in den Regeln von Forgotten Circles festgelegt. Ein Charakter kann sich außerdem nicht in den Kartenabschnitt eines anderen Charakters teleportieren."
+        ]
     },
     "gh-53": {
         "name": "Unter der Krypta",
+        "requirements": "Persönliche Quest „Suche nach Xorn“",
         "rewards": [
-            "Der Sucher Xorn's erhält: “Xorn's Stab” (Gegenstand 114) Der Sucher kann diesen Gegenstand nicht verkaufen."
+            "Der Sucher des Xorn erhält: “Xorn's Stab” (Gegenstand 114) Der Sucher kann diesen Gegenstand nicht verkaufen."
         ]
     },
     "gh-54": {
         "name": "Eispalast",
+        "requirements": "Persönliche Quest „Suche nach Xorn“, Gegenstand „Stab des Xorn“ ausgerüstet",
         "rewards": [
-            "Der Sucher Xorn's geht sofort in den Ruhestand",
+            "Der Sucher des Xorn geht sofort in den Ruhestand",
             "Fügt anstelle der normalen Ruhestands-Ereignisse des Charakters das Stadt- sowie Wegereignis 59 den entsprechenden Decks hinzu",
             "Öffnet Umschlag {PH}"
+        ],
+        "conclusion_faq": [
+            "Beginnt ihr direkt nach dem erfolgreichen Abschluss dieses Szenarios einen neuen Tintenfisch-Charakter, erhält dieser den Stab des Xorn. Andernfalls wird der Stab des Xorn dem Ladendeck hinzugefügt.",
+            "Der Sucher des Xorn darf nicht in die Stadt zurückkehren, um Gegenstände zu verkaufen, Verbesserungen vorzunehmen usw. Wie im Szenariobuch steht, kommt die Ruhestands-Ereigniskarte des Charakters nicht ins Deck."
+        ]
+    },
+    "gh-SoX1": {
+        "name": "Nobles’ Crypt",
+        "rewards": [
+            "+1 Ansehen",
+            "Fügt Stadt-Ereignis SoX2 dem Deck hinzu"
+        ]
+    },
+    "gh-SoX2": {
+        "name": "Flooded Crypt",
+        "rewards": [
+            "Fügt Stadt-Ereignis SoX3 dem Deck hinzu",
+            "Wählt nur einen der folgenden: “Frostklinge” (Gegenstand 077), “Stab der Kälte” (Gegenstand 083) oder “Gischtkrone” (Gegenstand 111)"
+        ]
+    },
+    "gh-SoX3": {
+        "name": "Crypt of the Ancients",
+        "rewards": [
+            "50 gemeinsames Gold",
+            "Fügt Stadt-Ereignis SoX3 dem Deck hinzu"
         ]
     },
     "gh-55": {
         "name": "Nebeldickicht",
+        "requirements": "Persönliche Quest „Rückeroberung des Waldes“",
         "rewards": [
             "10 gemeinsames Gold"
         ]
     },
     "gh-56": {
         "name": "Banditenwald",
+        "requirements": "Persönliche Quest „Rückeroberung des Waldes“",
         "rewards": [
-            "“Take Back the Trees”-Quest abgeschlossen",
+            "“Rückeroberung des Waldes”-Quest abgeschlossen",
             "Öffnet Umschlag {DS}",
             "je 10 Gold",
             "+2 Ansehen"
@@ -301,36 +418,48 @@ export default {
     },
     "gh-57": {
         "name": "Ermittlungen",
+        "requirements": "Persönliche Quest „Rachefeldzug“",
         "rewards": [
             "+1 Ansehen"
         ]
     },
     "gh-58": {
         "name": "Blutige Hütte",
+        "requirements": "Persönliche Quest „Rachefeldzug“",
         "rewards": [
-            "Rache”-Quest abgeschlossen",
+            "“Rachefeldzug”-Quest abgeschlossen",
             "Öffnet Umschlag X",
             "+2 Ansehen"
+        ],
+        "faq": [
+            "Jeder Knochenhaufen gilt als separat ausgeführte Heilungsfertigkeit und heilt das benannte Monster auch dann, wenn es betäubt ist."
         ]
     },
     "gh-59": {
-        "name": "Vergessener Hain"
+        "name": "Vergessener Hain",
+        "requirements": "Persönliche Quest „Suche nach Heilung“"
     },
     "gh-60": {
         "name": "Alchemielabor",
+        "requirements": "Persönliche Quest „Suche nach Heilung“",
         "rewards": [
-            "“Finding the Cure”-Quest abgeschlossen",
+            "“Suche nach Heilung”-Quest abgeschlossen",
             "Öffnet Umschlag X",
             "+1 Wohlstand"
+        ],
+        "faq": [
+            "Flucht: Ihr schließt das Szenario ab, wenn alle Charaktere entweder auf einem Ausgangsfeld stehen oder erschöpft wurden, während sie auf einem Ausgangsfeld standen."
         ]
     },
     "gh-61": {
-        "name": "Schwindender Leuchtturm"
+        "name": "Schwindender Leuchtturm",
+        "requirements": "Persönliche Quest „Vergangene Zivilisation“"
     },
     "gh-62": {
         "name": "Grube der Seelen",
+        "requirements": "Persönliche Quest „Vergangene Zivilisation“",
         "rewards": [
-            "“The Fall of Man”-Quest abgeschlossen",
+            "“Vergangene Zivilisation”-Quest abgeschlossen",
             "Öffnet Umschlag {NS}",
             "je 10 Erfahrung"
         ]
@@ -372,18 +501,28 @@ export default {
         "name": "Brunnen der Glücklosen",
         "rewards": [
             "je 15 Gold"
+        ],
+        "faq": [
+            "Ihr müsst eure Bewegung nicht auf einem an den Brunnen angrenzenden Feld beenden, sondern nur ein daran angrenzendes Feld betreten."
         ]
     },
     "gh-70": {
         "name": "Ketteninsel",
         "rewards": [
             "+2 Wohlstand"
+        ],
+        "faq": [
+            "Die Wandelnden Seelen sind von Fertigkeiten, die sofort töten, nicht betroffen."
         ]
     },
     "gh-71": {
         "name": "Windumtostes Hochland",
         "rewards": [
             "2 “Großer Krafttrank” (Gegenstand 041)"
+        ],
+        "faq": [
+            "Erzwungene Bewegung: Bewegt der Wind einen Charakter nach rechts oder links und befindet sich auf einem der möglichen Felder ein Hindernis oder eine Wand, darf der Spieler wählen, ob er blockiert wird (sich nicht bewegt) oder auf das freie Feld zieht.",
+            "Flucht: Ihr schließt das Szenario ab, wenn alle Charaktere entweder auf einem Ausgangsfeld stehen oder erschöpft wurden, während sie auf einem Ausgangsfeld standen."
         ]
     },
     "gh-72": {
@@ -391,12 +530,18 @@ export default {
         "rewards": [
             "+1 Ansehen",
             "+1 Wohlstand"
+        ],
+        "faq": [
+            "Druckfehler: Verwendet das Kartenteil L1b statt L2b."
         ]
     },
     "gh-73": {
         "name": "Felssturzklamm",
         "rewards": [
             "+1 Ansehen"
+        ],
+        "faq": [
+            "Die Felsbrocken fügen fliegenden Figuren Schaden zu und bewegen sie zwangsweise."
         ]
     },
     "gh-74": {
@@ -404,33 +549,49 @@ export default {
         "rewards": [
             "je 10 Gold",
             "+2 Wohlstand"
+        ],
+        "faq": [
+            "Wie in den Sonderregeln festgelegt, können nur Charaktere (nicht Beschworene) Wasser aufnehmen. Liegen mehrere Wasserfelder in Reichweite einer Beute-Fertigkeit, müsst ihr genau eines davon zum Aufnehmen wählen."
         ]
     },
     "gh-75": {
         "name": "Überwucherter Friedhof",
         "rewards": [
             "je 60 Gold"
+        ],
+        "faq": [
+            "Der Aufbau verlangt 5 Baumstumpf-Aufleger, aber im Spiel gibt es nur 4. Verwendet stattdessen einen anderen Aufleger als Ersatz."
         ]
     },
     "gh-76": {
-        "name": "Schwarmling-Nest"
+        "name": "Schwarmling-Nest",
+        "requirements": "Tapferkeit"
     },
     "gh-77": {
         "name": "Kammer der Geheimnisse",
         "rewards": [
             "je 5 Erfahrung"
+        ],
+        "faq": [
+            "Charaktere, die Hindernisse erschaffen können, können nicht alle Druckplatten gleichzeitig blockieren."
         ]
     },
     "gh-78": {
         "name": "Opfergrube",
         "rewards": [
             "+3 Ansehen"
+        ],
+        "faq": [
+            "Die Opfer gelten als Figuren, die mit niemandem verbündet sind, und schränken daher die Bewegung von Monstern und Charakteren ein."
         ]
     },
     "gh-79": {
         "name": "Verschollener Tempel",
         "rewards": [
             "je 15 Gold"
+        ],
+        "faq": [
+            "Die beiden Fertigkeiten des Bosses können unsichtbare Charaktere beeinflussen. Sie erfordern außerdem Sichtlinie. Die Gedankenkontrolle des Bosses kann nur auf Charaktere angewendet werden, die in der Runde noch nicht am Zug waren."
         ]
     },
     "gh-80": {
@@ -443,6 +604,10 @@ export default {
         "name": "Tempel des Zwielichts",
         "rewards": [
             "je 10 Erfahrung"
+        ],
+        "faq": [
+            "Druckfehler: In den Sonderregeln von Abschnitt 1 muss „der Abtrünnige“ durch „der Fahle“ ersetzt werden. Bei beiden Spezialaktionen des Bosses wirkt sich das Verbrauchen von Elementen nur auf das Beschwören aus. Die übrigen Teile der Spezialaktionen finden unabhängig davon statt.",
+            "Der Kristall des Zenits und die Sphäre der Mitternacht sind keine echten Gegenstände und haben außerhalb dieses Szenarios keinen Nutzen. Verwendet nummerierte Marker, um festzuhalten, wer sie besitzt. Am Ende des Szenarios, ob gewonnen oder verloren, werden diese beiden „Ziel“-Schätze zurückgesetzt, sodass sie erneut geplündert werden können."
         ]
     },
     "gh-82": {
@@ -455,12 +620,18 @@ export default {
                 "-1 Ansehen",
                 "-2 Wohlstand"
             ]
+        ],
+        "faq": [
+            "Wird der Spieler, der die Gegenstände trägt, erschöpft, ist das Szenario gescheitert. Ist das Szenario gescheitert, werden die Gegenstände auf den Schatzaufleger zurückgelegt und ihr könnt ihn bei eurem nächsten Versuch erneut plündern."
         ]
     },
     "gh-83": {
         "name": "Schatten im Innern",
         "rewards": [
             "40 gemeinsames Gold"
+        ],
+        "faq": [
+            "Nach dem Lesen von Abschnitt 2 endet der erste Satz Sonderregeln und wird durch den zweiten Satz ersetzt. Der Altar hat keine TP und kann nicht zerstört werden."
         ]
     },
     "gh-84": {
@@ -468,12 +639,18 @@ export default {
         "rewards": [
             "“Resonanzkristall” (Gegenstand 133)",
             "+1 Wohlstand"
+        ],
+        "faq": [
+            "Der Kristall gilt nicht als Gegner und wird nicht von Beschworenen der Charaktere angegriffen."
         ]
     },
     "gh-85": {
         "name": "Sonnentempel",
         "rewards": [
             "“Kugel des Morgens” (Gegenstand 121)"
+        ],
+        "faq": [
+            "Fehler im Buch: Bei 4 Spielern sind der Nachtdämon und die Sonnendämonen im letzten Raum nicht aufzustellen, die nur bei 4 Spielern als normale Gegner aufgestellt werden (bei 2 und 3 Spielern schwarz, bei 4 Spielern weiß dargestellt)."
         ]
     },
     "gh-86": {
@@ -493,6 +670,9 @@ export default {
         "name": "Ebene des Wassers",
         "rewards": [
             "“Beschwörungsstab” (Gegenstand 120)"
+        ],
+        "faq": [
+            "Sind alle Pirscher getötet, zieht weiter Pirscher-Fertigkeitskarten, um die Richtung des Spezialeffekts des Szenarios zu bestimmen."
         ]
     },
     "gh-89": {
@@ -524,6 +704,9 @@ export default {
         "name": "Versunkenes Schiff",
         "rewards": [
             "je 10 Erfahrung"
+        ],
+        "faq": [
+            "Die gesamte Reihe der Startfelder besteht aus Wasserfeldern."
         ]
     },
     "gh-94": {
@@ -538,113 +721,114 @@ export default {
     "gh-202": {
         "name": "Return to the Black Barrow",
         "rewards": [
-            "“Imposing Blade” (Item 134)"
+            "“Imposante Klinge” (Gegenstand 134)"
         ]
     },
     "gh-203": {
         "name": "An Unfortunate Intrusion",
         "rewards": [
-            "“Focusing Ray” (Item 135)"
+            "“Fokusstrahl” (Gegenstand 135)"
         ]
     },
     "gh-204": {
         "name": "Corrupted Laboratory",
         "rewards": [
-            "“Volatile Elixir” (Item 136)"
+            "“Instabiles Elixier” (Gegenstand 136)"
         ]
     },
     "gh-205": {
         "name": "Armory Heist",
         "rewards": [
-            "“Silent Stiletto” (Item 137)"
+            "“Flüsterklinge” (Gegenstand 137)"
         ]
     },
     "gh-206": {
         "name": "Stone Defense",
         "rewards": [
-            "“Stone Charm” (Item 138)"
+            "“Steinamulett” (Gegenstand 138)"
         ]
     },
     "gh-207": {
         "name": "Rodent Liberation",
         "rewards": [
-            "“Psychic Knife” (Item 139)"
+            "“Astralmesser” (Gegenstand 139)"
         ]
     },
     "gh-208": {
         "name": "Caravan Escort",
         "rewards": [
-            "“Sun Shield” (Item 140)"
+            "“Sonnenschild” (Gegenstand 140)"
         ]
     },
     "gh-209": {
         "name": "Unnatural Insults",
         "rewards": [
-            "“Mask of Death” (Item 145)"
+            "“Todesmaske” (Gegenstand 145)"
         ]
     },
     "gh-210": {
         "name": "Storage Fees",
         "rewards": [
-            "“Utility Belt” (Item 141)"
+            "“Werkzeuggürtel” (Gegenstand 141)"
         ]
     },
     "gh-211": {
         "name": "Plane of Wild Beasts",
         "rewards": [
-            "“Phasing Idol” (Item 142)"
+            "“Phasenfigur” (Gegenstand 142)"
         ]
     },
     "gh-212": {
         "name": "Harvesting the Night",
         "rewards": [
-            "“Smoke Elixir” (Item 143)"
+            "“Rauchelixier” (Gegenstand 143)"
         ]
     },
     "gh-213": {
         "name": "Plagued Crypt",
         "rewards": [
-            "“Pendant of the Plague” (Item 144)"
+            "“Seuchenbrosche” (Gegenstand 144)"
         ]
     },
     "gh-214": {
         "name": "Battle of the Bards",
         "rewards": [
-            "“Master’s Lute” (Item 146)"
+            "“Virtuosenlaute” (Gegenstand 146)"
         ]
     },
     "gh-215": {
         "name": "Corrupted Hunt",
         "rewards": [
-            "“Cloak of the Hunter” (Item 147)"
+            "“Mantel des Jägers” (Gegenstand 147)"
         ]
     },
     "gh-216": {
         "name": "Aftermath",
         "rewards": [
-            "“Doctor’s Coat” (Item 148)"
+            "“Arztkittel” (Gegenstand 148)"
         ]
     },
     "gh-217": {
         "name": "Elemental Secrets",
         "rewards": [
-            "“Elemental Boots” (Item 149)"
+            "“Elementarstiefel” (Gegenstand 149)"
         ]
     },
     "gh-218": {
         "name": "The Caged Bear",
         "rewards": [
-            "“Staff of Command” (Item 150)"
+            "“Befehlsstab” (Gegenstand 150)"
         ]
     },
     "gh-219": {
         "name": "The Sands of Time",
         "rewards": [
-            "“Sword of the Sands” (Item 151)"
+            "“Sword of the Sands” (Gegenstand 151)"
         ]
     },
     "fc-96": {
         "name": "Unerwartete Besucher",
+        "requirements": "Ende des Grauens (Global) ABGESCHLOSSEN",
         "rewards": [
             "je 10 Erfahrung",
             "Fügt Stadt- sowie Weg-Ereignis 82 den enstsprechenden Decks hinzu"
@@ -781,7 +965,7 @@ export default {
         "rewards": [
             [
                 "je 5 Erfahrung",
-                "Füge Spalt-Ereignis 16 dem Deck hinzu. Mische das Ereignis in die obersten drei Karten des Decks."
+                "Fügt dem Deck Riss-Ereignis 16 hinzu. Mischt dieses Ereignis nicht in das gesamte Deck, sondern in die obersten 3 Karten."
             ],
             [
                 "je 12 Erfahrung",
@@ -814,7 +998,7 @@ export default {
     "fc-114": {
         "name": "In der Schwebe",
         "rewards": [
-            "Gruppen-Segen: Zusätzliche Kosten für die Verbesserung einer Fähigkeitskarte, die auf der Stufe der Karte basieren, werden nun um 5 Gold pro Stufe reduziert."
+            "Gruppen-Segen: Zusätzliche Kosten für die Verbesserung einer Fertigkeitskarte, die auf der Stufe der Karte basieren, werden nun um 5 Gold pro Stufe reduziert."
         ]
     },
     "fc-115": {
@@ -881,10 +1065,7 @@ export default {
         ]
     },
     "jotl-8": {
-        "name": "Verstecktes Geschwür",
-        "rewards": [
-            "Je 20 Erfahrung"
-        ]
+        "name": "Verstecktes Geschwür"
     },
     "jotl-9": {
         "name": "Explosive Evolution",
@@ -993,1242 +1174,1245 @@ export default {
         ]
     },
     "fh-0": {
-        "name": "Howling in the Snow"
+        "name": "Heulen im Schnee"
     },
     "fh-1": {
-        "name": "A Town in Flames",
+        "name": "Stadt in Flammen",
         "rewards": [
             [
-                "Gain 2 morale"
+                "Erhaltet 2 Moral"
             ],
             [
-                "Gain 3 morale"
+                "Erhaltet 3 Moral"
             ],
             [
-                "Gain 4 morale"
+                "Erhaltet 4 Moral"
             ],
             [
-                "Gain 5 morale"
+                "Erhaltet 5 Moral"
             ],
             [
-                "Gain 6 morale"
+                "Erhaltet 6 Moral"
             ],
             [
-                "Gain 7 morale"
+                "Erhaltet 7 Moral"
             ]
         ]
     },
     "fh-2": {
-        "name": "Algox Scouting",
+        "name": "Algox-Erkundung",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Erhaltet je 1 ✔"
         ]
     },
     "fh-3": {
-        "name": "Algox Offensive",
+        "name": "Algox-Angriff",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Erhaltet je 1 ✔"
         ]
     },
     "fh-4": {
-        "name": "Heart of Ice",
+        "name": "Herz des Eises",
         "rewards": [
             [
-                "Unlock {FF} class box",
-                "Gain 1 morale",
-                "Gain 1 prosperity",
-                "Add 156.1 to the calendar in four weeks"
+                "Schaltet die Klassenbox {FF} frei",
+                "Erhaltet 1 Moral",
+                "Erhaltet 1 Wohlstand",
+                "Fügt 156.1 in vier Wochen zum Kalender hinzu"
             ],
             [
-                "Unlock {SD} class box",
-                "Gain 1 morale",
-                "Gain 1 prosperity",
-                "Add 156.1 to the calendar in four weeks"
+                "Schaltet die Klassenbox {SD} frei",
+                "Erhaltet 1 Moral",
+                "Erhaltet 1 Wohlstand",
+                "Fügt 156.1 in vier Wochen zum Kalender hinzu"
             ]
         ]
     },
     "fh-5": {
-        "name": "Frozen Crypt",
+        "name": "Gefrorene Krypta",
         "rewards": [
-            "Gain 2 collective {LUMBER}"
+            "Erhaltet insgesamt 2 {LUMBER}"
         ]
     },
     "fh-6": {
-        "name": "Avalanche",
+        "name": "Lawine",
         "rewards": [
-            "Gain 2 collective {METAL}"
+            "Erhaltet insgesamt 2 {METAL}"
         ]
     },
     "fh-7": {
-        "name": "Edge of the World",
+        "name": "Am Rand der Welt",
         "rewards": [
-            "10 experience each"
+            "je 10 Erfahrung"
         ]
     },
     "fh-8": {
-        "name": "Crystal Trench",
+        "name": "Kristallgraben",
         "rewards": [
-            "Gain 1 collective {LUMBER}",
-            "Gain 2 collective {HIDE}"
+            "Erhaltet insgesamt 1 {LUMBER}",
+            "Erhaltet insgesamt 2 {HIDE}"
         ]
     },
     "fh-9": {
-        "name": "Glowing Catacombs",
+        "name": "Schimmernde Katakomben",
         "rewards": [
-            "Gain 2 collective {CORPSECAP}"
+            "Erhaltet insgesamt 2 {CORPSECAP}"
         ]
     },
     "fh-10": {
-        "name": "Crystal Enclosure",
+        "name": "Kristallpferch",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration"
+            "Erhaltet 1 Moral",
+            "Erhaltet 1 Inspiration"
         ]
     },
     "fh-11": {
-        "name": "Snowscorn Peak",
+        "name": "Schneehohn-Gipfel",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration"
+            "Erhaltet 1 Moral",
+            "Erhaltet 1 Inspiration"
         ]
     },
     "fh-12": {
-        "name": "Temple Entrance",
+        "name": "Tempeleingang",
         "rewards": [
-            "Gain 15 experience each"
+            "Erhaltet je 15 Erfahrung"
         ]
     },
     "fh-13": {
-        "name": "Frozen Fjord",
+        "name": "Eisiger Fjord",
         "rewards": [
-            "Gain “Dead Raven” (Item 233)"
+            "Erhaltet “Toter Rabe” (Gegenstand 233)"
         ]
     },
     "fh-14": {
-        "name": "Jagged Shoals",
+        "name": "Zerklüftete Untiefen",
         "rewards": [
-            "Choose one: Unlock {CR} class box OR unlock {DT} class box",
-            "Add event WO-81 to the winter outpost deck"
+            "Wählt eine: Schaltet die Klassenbox {CR} ODER die Klassenbox {DT} frei",
+            "Fügt Ereignis WO-81 dem Winter-Außenposten-Deck hinzu"
         ]
     },
     "fh-15": {
-        "name": "Ancient Spire",
+        "name": "Alter Turm",
         "rewards": [
-            "Gain 1 collective {LUMBER}",
-            "Gain 1 collective {METAL}",
-            "Gain 1 collective {HIDE}"
+            "Erhaltet insgesamt 1 {LUMBER}",
+            "Erhaltet insgesamt 1 {METAL}",
+            "Erhaltet insgesamt 1 {HIDE}"
         ]
     },
     "fh-16": {
-        "name": "Derelict Elevator",
+        "name": "Verfallener Fahrstuhl",
         "rewards": [
-            "Gain 5 experience each",
-            "Gain 1 inspiration"
+            "Erhaltet je 5 Erfahrung",
+            "Erhaltet 1 Inspiration"
         ]
     },
     "fh-17": {
-        "name": "Haunted Vault",
+        "name": "Spukkammer",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Erhaltet je 1 ✔"
         ]
     },
     "fh-18": {
-        "name": "Crystal Fields",
+        "name": "Kristallfelder",
         "rewards": [
-            "Gain 1 morale",
-            "Gain one random item blueprint",
-            "Add 122.3 to the calendar in four weeks"
+            "Erhaltet 1 Moral",
+            "Erhaltet einen zufälligen Gegenstandsplan",
+            "Fügt 122.3 in vier Wochen zum Kalender hinzu"
         ]
     },
     "fh-19": {
-        "name": "Skyhall",
+        "name": "Himmelssaal",
         "rewards": [
-            "Gain 1 morale",
-            "Gain one random item blueprint",
-            "Add 54.3 to the calendar in four weeks"
+            "Erhaltet 1 Moral",
+            "Erhaltet einen zufälligen Gegenstandsplan",
+            "Fügt 54.3 in vier Wochen zum Kalender hinzu"
         ]
     },
     "fh-20": {
-        "name": "Temple of Liberation",
+        "name": "Tempel der Befreiung",
         "rewards": [
-            "Gain 15 gold each"
+            "Erhaltet je 15 Gold"
         ]
     },
     "fh-21": {
-        "name": "Realm of Endless Frost",
+        "name": "Reich des endlosen Frosts",
         "rewards": [
-            "Gain 2 prosperity"
+            "Erhaltet 2 Wohlstand"
         ]
     },
     "fh-22": {
-        "name": "Ice Floes",
+        "name": "Eisschollen",
         "rewards": [
-            "Lose 1 collective {LUMBER} for each set of five hexes with water tiles on tile 7-G",
-            "Gain 15 experience each",
-            "Add 62.2 to the calendar in two weeks"
+            "Verliert für je fünf Felder mit Wasser-Aufleger auf Kartenteil 7-G insgesamt 1 {LUMBER}",
+            "Erhaltet je 15 Erfahrung",
+            "Fügt 62.2 in zwei Wochen zum Kalender hinzu"
         ]
     },
     "fh-23": {
-        "name": "Spire Basement",
+        "name": "Turmkeller",
         "rewards": [
-            "Gain one random item blueprint"
+            "Erhaltet einen zufälligen Gegenstandsplan"
         ]
     },
     "fh-24": {
-        "name": "Upper Spire",
+        "name": "Oberer Turm",
         "rewards": [
-            "Gain one random item blueprint"
+            "Erhaltet einen zufälligen Gegenstandsplan"
         ]
     },
     "fh-25": {
-        "name": "Rusted Tunnels",
+        "name": "Rostige Tunnel",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 2 collective {METAL}",
-            "Add 128.2 to the calendar in four weeks"
+            "Erhaltet insgesamt 2 {LUMBER}",
+            "Erhaltet insgesamt 2 {METAL}",
+            "Fügt 128.2 in vier Wochen zum Kalender hinzu"
         ]
     },
     "fh-26": {
-        "name": "Quatryl Library",
+        "name": "Quatryl-Bibliothek",
         "rewards": [
-            "Gain 10 experience each"
+            "Erhaltet je 10 Erfahrung"
         ]
     },
     "fh-27": {
-        "name": "Depths of Delirium",
+        "name": "Tiefen des Wahns",
         "rewards": [
-            "Gain 10 experience each",
-            "Gain 1 ✔ each",
-            "Ancient Technology"
+            "Erhaltet je 10 Erfahrung",
+            "Erhaltet je 1 ✔",
+            "Antike Technologie"
         ]
     },
     "fh-28": {
-        "name": "Summit Meeting",
+        "name": "Gipfeltreffen",
         "rewards": [
-            "Lose 1 morale"
+            "Verliert 1 Moral"
         ]
     },
     "fh-29": {
-        "name": "War of the Spire A",
+        "name": "Kampf um den Turm A",
         "rewards": [
-            "Gain 3 morale",
-            "Remove all {ALGOX} events from all outpost event decks",
-            "Add event WO-68 to the winter outpost deck",
-            "Add 46.3 to the calendar in five weeks"
+            "Erhaltet 3 Moral",
+            "Entfernt alle {ALGOX}-Ereignisse aus allen Außenposten-Ereignis-Decks",
+            "Fügt Ereignis WO-68 dem Winter-Außenposten-Deck hinzu",
+            "Fügt 46.3 in fünf Wochen zum Kalender hinzu"
         ]
     },
     "fh-30": {
-        "name": "War of the Spire B",
+        "name": "Kampf um den Turm B",
         "rewards": [
-            "Gain 3 morale",
-            "Gain “Destroyer of the Snowspeakers” sticker",
-            "Remove all {ALGOX} events from all outpost event decks",
-            "Add event WO-69 to the winter outpost deck",
-            "Add 34.2 to the calendar in five weeks"
+            "Erhaltet 3 Moral",
+            "Erhaltet den Aufkleber “Vernichter der Schneesprecher”",
+            "Entfernt alle {ALGOX}-Ereignisse aus allen Außenposten-Ereignis-Decks",
+            "Fügt Ereignis WO-69 dem Winter-Außenposten-Deck hinzu",
+            "Fügt 34.2 in fünf Wochen zum Kalender hinzu"
         ]
     },
     "fh-31": {
-        "name": "Crackling Tunnel",
+        "name": "Knisternder Tunnel",
         "rewards": [
-            "Gain 5 experience each",
-            "Gain 10 gold each"
+            "Erhaltet je 5 Erfahrung",
+            "Erhaltet je 10 Gold"
         ]
     },
     "fh-32": {
-        "name": "Ravens' Roost",
+        "name": "Rabenhorst",
         "rewards": [
-            "Gain “Feathered Cloak” (Item 69) blueprint"
+            "Erhaltet den Gegenstandsplan “Federmantel” (Gegenstand 69)"
         ]
     },
     "fh-33": {
-        "name": "Thawed Wood",
+        "name": "Getauter Wald",
         "rewards": [
-            "Gain 5 experience each for each unrevealed dowsing rune",
-            "Gain “Ember Energy Source” (Item 244)",
-            "Add 135.1 to the calendar in three weeks"
+            "Erhaltet je 5 Erfahrung für jede nicht aufgedeckte Wünschelruten-Rune",
+            "Erhaltet “Glühende Energiequelle” (Gegenstand 244)",
+            "Fügt 135.1 in drei Wochen zum Kalender hinzu"
         ]
     },
     "fh-34": {
-        "name": "Top of the Spire"
+        "name": "Turmspitze"
     },
     "fh-35": {
-        "name": "Scrap Pit",
+        "name": "Schrottgrube",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 2 collective {METAL}",
-            "Gain 2 collective {HIDE}"
+            "Erhaltet insgesamt 2 {LUMBER}",
+            "Erhaltet insgesamt 2 {METAL}",
+            "Erhaltet insgesamt 2 {HIDE}"
         ]
     },
     "fh-36": {
-        "name": "Buried Ducts",
+        "name": "Vergrabene Rohre",
         "rewards": [
-            "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}"
+            "Erhaltet insgesamt 3 {LUMBER}",
+            "Erhaltet insgesamt 3 {METAL}",
+            "Erhaltet den Gegenstandsplan “Sammellinsen” (Gegenstand 67)"
         ]
     },
     "fh-37": {
-        "name": "The Dead Mile",
+        "name": "Die Todesmeile",
         "rewards": [
-            "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}"
+            "Erhaltet insgesamt 3 {LUMBER}",
+            "Erhaltet insgesamt 3 {METAL}",
+            "Erhaltet den Gegenstandsplan “Sammellinsen” (Gegenstand 67)"
         ]
     },
     "fh-38": {
-        "name": "The Way Forward",
+        "name": "Der Weg nach vorn",
         "rewards": [
-            "Gain 10 experience each",
-            "Gain 1 ✔ each",
-            "Gain 1 inspiration"
+            "Erhaltet je 10 Erfahrung",
+            "Erhaltet je 1 ✔",
+            "Erhaltet 1 Inspiration"
         ]
     },
     "fh-39": {
-        "name": "Corrupted Camp",
+        "name": "Verdorbenes Lager",
         "rewards": [
-            "Lose 1 inspiration",
-            "Gain 2 additional loot cards each"
+            "Verliert 1 Inspiration",
+            "Erhaltet je 2 zusätzliche Beutekarten"
         ]
     },
     "fh-40": {
-        "name": "Relief Effort",
+        "name": "Hilfsmaßnahmen",
         "rewards": [
-            "Lose 1 inspiration",
-            "Gain 2 additional loot cards each"
+            "Verliert 1 Inspiration",
+            "Erhaltet je 2 zusätzliche Beutekarten"
         ]
     },
     "fh-41": {
-        "name": "Unfettered Shard",
+        "name": "Entfesselten-Splitter",
         "rewards": [
-            "Gain 15 gold each",
-            "Gain 2 collective {AXENUT}",
-            "Ancient Technology"
+            "Erhaltet je 15 Gold",
+            "Erhaltet insgesamt 2 {AXENUT}",
+            "Antike Technologie"
         ]
     },
     "fh-42": {
-        "name": "Sunless Trench",
+        "name": "Sonnenloser Graben",
         "rewards": [
-            "Gain 2 ✔ each",
-            "Add event B-16 to the boat deck",
-            "Add 114.2 to the calendar in three weeks"
+            "Erhaltet je 2 ✔",
+            "Fügt Ereignis B-16 dem Schiff-Deck hinzu",
+            "Fügt 114.2 in drei Wochen zum Kalender hinzu"
         ]
     },
     "fh-43": {
-        "name": "Overrun Barricade",
+        "name": "Überrante Barrikade",
         "rewards": [
-            "Gain 10 experience each"
+            "Erhaltet je 10 Erfahrung"
         ]
     },
     "fh-44": {
-        "name": "Nerve Center",
+        "name": "Nervenzentrum",
         "rewards": [
-            "Gain 5 gold each",
-            "Gain “Energizing Baton” (Item 73) blueprint"
+            "Erhaltet je 5 Gold",
+            "Erhaltet den Gegenstandsplan “Energieknüppel” (Gegenstand 73)"
         ]
     },
     "fh-45": {
-        "name": "Living Glacier",
+        "name": "Lebender Gletscher",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 ✔ each"
+            "Erhaltet 1 Moral",
+            "Erhaltet je 1 ✔"
         ]
     },
     "fh-46": {
-        "name": "Dead Pass",
+        "name": "Toter Pass",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 10 experience each"
+            "Erhaltet 1 Moral",
+            "Erhaltet je 10 Erfahrung"
         ]
     },
     "fh-47": {
-        "name": "Carrion Ridge",
+        "name": "Aasgebirge",
         "rewards": [
-            "Gain 10 gold each",
-            "Gain 2 collective {LUMBER}"
+            "Erhaltet je 10 Gold",
+            "Erhaltet insgesamt 2 {LUMBER}"
         ]
     },
     "fh-48": {
-        "name": "Blizzard island",
+        "name": "Schneesturminsel",
         "rewards": [
-            "Gain 10 gold each",
-            "Gain 2 collective {METAL}"
+            "Erhaltet je 10 Gold",
+            "Erhaltet insgesamt 2 {METAL}"
         ]
     },
     "fh-49": {
-        "name": "Beneath Sea and Stone",
+        "name": "Unter See und Stein",
         "rewards": [
-            "Gain 5 experience each",
-            "Gain 1 inspiration"
+            "Erhaltet je 5 Erfahrung",
+            "Erhaltet 1 Inspiration"
         ]
     },
     "fh-50": {
-        "name": "Explosive Descent",
+        "name": "Explosiver Tauchgang",
         "rewards": [
-            "Lose 2 inspiration",
-            "Gain 4 collective {LUMBER}",
-            "Gain 4 collective {METAL}"
+            "Verliert 2 Inspiration",
+            "Erhaltet insgesamt 4 {LUMBER}",
+            "Erhaltet insgesamt 4 {METAL}"
         ]
     },
     "fh-51": {
-        "name": "Orphan's Halls",
+        "name": "Halle der Waise",
         "rewards": [
-            "Gain 10 experience each",
-            "Gain “Shock Grenades” (Item 74) blueprint"
+            "Erhaltet je 10 Erfahrung",
+            "Erhaltet den Gegenstandsplan “Schockgranate” (Gegenstand 74)"
         ]
     },
     "fh-52": {
-        "name": "Fleeting Permanence",
+        "name": "Vergängliche Beständigkeit",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration"
+            "Erhaltet 1 Moral",
+            "Erhaltet 1 Inspiration"
         ]
     },
     "fh-53": {
-        "name": "Underwater Throne",
+        "name": "Unterwasserthron",
         "rewards": [
-            "Gain 2 ✔ each"
+            "Erhaltet je 2 ✔"
         ]
     },
     "fh-54": {
-        "name": "Among the Wreckage",
+        "name": "Unter Trümmern",
         "rewards": [
-            "Gain 2 ✔ each"
+            "Erhaltet je 2 ✔"
         ]
     },
     "fh-55": {
-        "name": "Change of Heart",
+        "name": "Gesinnungswandel",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 2 prosperity",
-            "Unlock whichever class box is still locked: {FF} or {SD}",
-            "Remove all {ALGOX} events from all outpost event decks",
-            "Add events WO-66 and WO-67 to the winter outpost deck",
-            "Add one +50 card to town guard deck"
+            "Erhaltet 2 Moral",
+            "Erhaltet 2 Wohlstand",
+            "Schaltet die Klassenbox frei, die noch gesperrt ist: {FF} oder {SD}",
+            "Entfernt alle {ALGOX}-Ereignisse aus allen Außenposten-Ereignis-Decks",
+            "Fügt die Ereignisse WO-66 und WO-67 dem Winter-Außenposten-Deck hinzu",
+            "Fügt dem Stadtwachendeck eine +50-Karte hinzu"
         ]
     },
     "fh-56": {
-        "name": "Call of the Harbinger",
+        "name": "Ruf des Vorboten",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration",
-            "Unlock {FF} class box",
-            "Add event SO-51 to the summer outpost deck",
-            "Add one +50 card to town guard deck"
+            "Erhaltet 1 Moral",
+            "Erhaltet 1 Inspiration",
+            "Schaltet die Klassenbox {FF} frei",
+            "Fügt Ereignis SO-51 dem Sommer-Außenposten-Deck hinzu",
+            "Fügt dem Stadtwachendeck eine +50-Karte hinzu"
         ]
     },
     "fh-57": {
-        "name": "Sanctuary of Snow",
+        "name": "Die Schneestätte",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration",
-            "Unlock {SD} class box",
-            "Add event WO-68 to the winter outpost deck",
-            "Add one +50 card to town guard deck"
+            "Erhaltet 1 Moral",
+            "Erhaltet 1 Inspiration",
+            "Schaltet die Klassenbox {SD} frei",
+            "Fügt Ereignis WO-68 dem Winter-Außenposten-Deck hinzu",
+            "Fügt dem Stadtwachendeck eine +50-Karte hinzu"
         ]
     },
     "fh-58": {
-        "name": "Orphan's Core",
+        "name": "Kern der Waise",
         "rewards": [
-            "Gain 1 morale",
-            "Gain “Key Card” (Item 246)",
-            "Gain 3 collective {LUMBER}",
-            "Gain 3 collective {METAL}",
-            "Gain 3 collective {HIDE}",
-            "Unlock {HV} class box",
-            "Remove all {UNFETTERED} events from all outpost event decks",
-            "Add events WO-64 and WO-65 to the winter outpost deck",
-            "Add one +50 card to town guard deck"
+            "Erhaltet 1 Moral",
+            "Erhaltet “Schlüsselkarte” (Gegenstand 246)",
+            "Erhaltet insgesamt 3 {LUMBER}",
+            "Erhaltet insgesamt 3 {METAL}",
+            "Erhaltet insgesamt 3 {HIDE}",
+            "Schaltet die Klassenbox {HV} frei",
+            "Entfernt alle {UNFETTERED}-Ereignisse aus allen Außenposten-Ereignis-Decks",
+            "Fügt die Ereignisse WO-64 und WO-65 dem Winter-Außenposten-Deck hinzu",
+            "Fügt dem Stadtwachendeck eine +50-Karte hinzu"
         ]
     },
     "fh-59": {
-        "name": "Automation Uprising",
+        "name": "Aufstand der Apparate",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 2 prosperity",
-            "Gain “Key Card” (Item 246)",
-            "Unlock {HV} class box",
-            "Remove all {UNFETTERED} events from all outpost event decks",
-            "Add event SO-49 to the summer outpost deck and event WO-63 to the winter outpost deck",
-            "Add one +50 card to town guard deck"
+            "Erhaltet 2 Moral",
+            "Erhaltet 2 Wohlstand",
+            "Erhaltet “Schlüsselkarte” (Gegenstand 246)",
+            "Schaltet die Klassenbox {HV} frei",
+            "Entfernt alle {UNFETTERED}-Ereignisse aus allen Außenposten-Ereignis-Decks",
+            "Fügt Ereignis SO-49 dem Sommer-Außenposten-Deck und Ereignis WO-63 dem Winter-Außenposten-Deck hinzu",
+            "Fügt dem Stadtwachendeck eine +50-Karte hinzu"
         ]
     },
     "fh-60": {
-        "name": "Uniting the Crown",
+        "name": "Die Krone vereinen",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 1 prosperity",
-            "Gain 30 experience each",
-            "Unlock whichever class box is still locked: {CR} or {DT}",
-            "Remove all {LURKERS} events from all outpost event decks",
-            "Add event SO-48 to the summer outpost deck and event B-17 to the boat deck",
-            "Add one +50 card to town guard deck"
+            "Erhaltet 2 Moral",
+            "Erhaltet 1 Wohlstand",
+            "Erhaltet je 30 Erfahrung",
+            "Erhaltet “Empathierüstung” (Gegenstand 224)",
+            "Schaltet die Klassenbox frei, die noch gesperrt ist: {CR} oder {DT}",
+            "Entfernt alle {LURKERS}-Ereignisse aus allen Außenposten-Ereignis-Decks",
+            "Fügt Ereignis SO-48 dem Sommer-Außenposten-Deck und Ereignis B-17 dem Schiff-Deck hinzu",
+            "Fügt dem Stadtwachendeck eine +50-Karte hinzu"
         ]
     },
     "fh-61": {
-        "name": "Life and Death",
+        "name": "Leben und Tod",
         "rewards": [
-            "Unlock {SH} class box",
-            "Add section 140.3 to the calendar in one week"
+            "Schaltet die Klassenbox {SH} frei",
+            "Fügt Abschnitt 140.3 in einer Woche zum Kalender hinzu"
         ]
     },
     "fh-62": {
-        "name": "The Unfettered Seal",
+        "name": "Entfesselten-Siegel",
         "rewards": [
-            "Gain 1 prosperity"
+            "Erhaltet 1 Wohlstand"
         ]
     },
     "fh-63": {
-        "name": "The Savvas Seal",
+        "name": "Savvas-Siegel",
         "rewards": [
-            "Gain 2 prosperity"
+            "Erhaltet 2 Wohlstand"
         ]
     },
     "fh-64": {
-        "name": "The Frosthaven Seal",
+        "name": "Frosthaven-Siegel",
         "rewards": [
-            "Gain 3 morale",
-            "Gain 3 prosperity",
-            "Gain 3 ✔ each"
+            "Erhaltet 3 Moral",
+            "Erhaltet 3 Wohlstand",
+            "Erhaltet je 3 ✔"
         ]
     },
     "fh-65": {
-        "name": "A Strong Foundation",
+        "name": "Solide Grundlage",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 2 collective {METAL}",
-            "Add 95.4 to the calendar in six weeks"
+            "Erhaltet insgesamt 2 {LUMBER}",
+            "Erhaltet insgesamt 2 {METAL}",
+            "Fügt 95.4 in sechs Wochen zum Kalender hinzu"
         ]
     },
     "fh-66": {
-        "name": "Elemental Cores",
+        "name": "Elementarkerne",
         "rewards": [
-            "Gain “Elemental Stone” (Item 212)",
-            "Add 29.3 to the calendar in six weeks"
+            "Erhaltet “Elementarstein” (Gegenstand 212)",
+            "Fügt 29.3 in sechs Wochen zum Kalender hinzu"
         ]
     },
     "fh-67": {
-        "name": "Core Attunement",
+        "name": "Kerneinstimmung",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 prosperity"
+            "Erhaltet 1 Moral",
+            "Erhaltet 1 Wohlstand"
         ]
     },
     "fh-68": {
-        "name": "The Face of Torment",
+        "name": "Antlitz der Pein",
         "rewards": [
-            "“Aesther Outpost” personal quest complete",
-            "Add 133.1 to the calendar in two weeks"
+            "Persönliche Quest “Aesther-Außenposten” abgeschlossen",
+            "Fügt 133.1 in zwei Wochen zum Kalender hinzu"
         ]
     },
     "fh-69": {
-        "name": "Sacred Soil",
+        "name": "Heiliger Boden",
         "rewards": [
-            "Gain 1 {ARROWVINE}",
-            "Gain 1 {AXENUT}",
-            "Gain 1 {FLAMEFRUIT}",
-            "Add 15.4 to the calendar in three weeks"
+            "Erhaltet 1 {ARROWVINE}",
+            "Erhaltet 1 {AXENUT}",
+            "Erhaltet 1 {FLAMEFRUIT}",
+            "Fügt 15.4 in drei Wochen zum Kalender hinzu"
         ]
     },
     "fh-70": {
-        "name": "The True Oak",
+        "name": "Die Wahre Eiche",
         "rewards": [
-            "“The True Oak” personal quest complete",
-            "Gain 1 Prosperity"
+            "Persönliche Quest “Suche nach der Eiche” abgeschlossen",
+            "Erhaltet 1 Wohlstand"
         ]
     },
     "fh-71": {
-        "name": "Invasion of the Dock",
+        "name": "Invasion der Kais",
         "rewards": [
-            "Damage any one even building between 71 and 89",
-            "Gain 10 experience each",
-            "Add 149.5 to the calendar in five weeks"
+            "Beschädigt ein beliebiges Gebäude mit gerader Nummer zwischen 71 und 89",
+            "Erhaltet je 10 Erfahrung",
+            "Fügt 149.5 in fünf Wochen zum Kalender hinzu"
         ]
     },
     "fh-72": {
-        "name": "A Giant Block of Ice",
+        "name": "Ein riesiger Eisblock",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Erhaltet je 1 ✔"
         ]
     },
     "fh-73": {
-        "name": "Flotsam",
+        "name": "Treibgut",
         "rewards": [
-            "Gain 3 collective {LUMBER}",
-            "Add 146.1 to the calendar in five weeks"
+            "Erhaltet insgesamt 3 {LUMBER}",
+            "Fügt 146.1 in fünf Wochen zum Kalender hinzu"
         ]
     },
     "fh-74": {
-        "name": "Gaps in the Road",
+        "name": "Straßengräben",
         "rewards": [
-            "Gain one random item blueprint"
+            "Erhaltet einen zufälligen Gegenstandsplan"
         ]
     },
     "fh-75": {
-        "name": "Infiltraiting the Lair",
+        "name": "Vorstoß ins Innere",
         "rewards": [
-            "Gain 10 gold each"
+            "Erhaltet je 10 Gold"
         ]
     },
     "fh-76": {
-        "name": "Apotheosis",
+        "name": "Geburt eines Gottes",
         "rewards": [
             [
-                "“Threat from the Deep” personal quest complete",
-                "Gain “Wave Blade” (Item 201)",
-                "Add event B-18 to the boat deck"
+                "Persönliche Quest “Bedrohung aus der Tiefe” abgeschlossen",
+                "Erhaltet “Wellenklinge” (Gegenstand 201)",
+                "Fügt Ereignis B-18 dem Schiff-Deck hinzu"
             ],
             []
         ]
     },
     "fh-77": {
-        "name": "Fish King's Ascension",
+        "name": "Aufstieg des Fischkönigs",
         "rewards": [
-            "“Threat from the Deep” personal quest complete",
-            "Gain “Wave Blade” (Item 201)",
-            "Add event B-19 to the boat deck"
+            "Persönliche Quest “Bedrohung aus der Tiefe” abgeschlossen",
+            "Erhaltet “Wellenklinge” (Gegenstand 201)",
+            "Fügt Ereignis B-19 dem Schiff-Deck hinzu"
         ]
     },
     "fh-78": {
-        "name": "The Lurker Problem",
+        "name": "Das Pirscherproblem",
         "rewards": [
-            "Gain 10 experience each"
+            "Erhaltet je 10 Erfahrung"
         ]
     },
     "fh-79": {
-        "name": "Relic",
+        "name": "Das Relikt",
         "rewards": [
-            "Gain 3 morale",
-            "Add 45.2 to the calendar in three weeks"
+            "Erhaltet 3 Moral",
+            "Fügt 45.2 in drei Wochen zum Kalender hinzu"
         ]
     },
     "fh-80": {
-        "name": "Relic Renewed",
+        "name": "Erneuertes Relikt",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 2 collective {METAL}",
-            "Gain 2 collective {HIDE}",
-            "Gain 2 morale"
+            "Erhaltet insgesamt 2 {LUMBER}",
+            "Erhaltet insgesamt 2 {METAL}",
+            "Erhaltet insgesamt 2 {HIDE}",
+            "Erhaltet 2 Moral"
         ]
     },
     "fh-81": {
-        "name": "Ruinous Research Lab",
+        "name": "Ruinöses Forschungslabor",
         "rewards": [
-            "Gain 1 prosperity",
-            "Gain “Aesther Robe” (Item 70) blueprint"
+            "Erhaltet 1 Wohlstand",
+            "Erhaltet den Gegenstandsplan “Aesther-Robe” (Gegenstand 70)"
         ]
     },
     "fh-82": {
-        "name": "Expedition North",
+        "name": "Expedition nordwärts",
         "rewards": [
-            "Gain 2 prosperity",
-            "Add the following Forgotten Circles items to the Frosthaven supply: 153, 159, and 161"
+            "Erhaltet 2 Wohlstand",
+            "Fügt dem Frosthaven-Vorrat die folgenden Gegenstände von Forgotten Circles hinzu: 153, 159 und 161"
         ]
     },
     "fh-83": {
-        "name": "Rising Brine",
+        "name": "Steigende Salzflut",
         "rewards": [
-            "Gain “Giant Piranha Pig Spine” (Item 202)"
+            "Erhaltet “Piranhaschwein-Rückgrat” (Gegenstand 202)"
         ]
     },
     "fh-84": {
-        "name": "Here There Be Oozes",
+        "name": "Schleimerei",
         "rewards": [
-            "Gain “Ooze Vial” (Item 234)"
+            "Erhaltet “Schleimfläschchen” (Gegenstand 234)"
         ]
     },
     "fh-85": {
-        "name": "Deadly Pastimes",
+        "name": "Tödliches Hobby",
         "rewards": [
-            "Gain 15 experience each",
-            "Gain 1 ✔ each"
+            "Erhaltet je 15 Erfahrung",
+            "Erhaltet je 1 ✔"
         ]
     },
     "fh-86": {
-        "name": "The Lady in White",
+        "name": "Die Weiße Dame",
         "rewards": [
-            "Gain 2 morale"
+            "Erhaltet 2 Moral"
         ]
     },
     "fh-87": {
-        "name": "The Collection",
+        "name": "Die Sammlung",
         "rewards": [
             [
-                "Gain 2 inspiration"
+                "Erhaltet 2 Inspiration"
             ],
             [
-                "Gain 1 inspiration"
+                "Erhaltet 1 Inspiration"
             ]
         ]
     },
     "fh-88": {
-        "name": "Collection's Capstone",
+        "name": "Krönender Abschluss",
         "rewards": [
-            "Gain 2 morale"
+            "Erhaltet 2 Moral"
         ]
     },
     "fh-89": {
-        "name": "A Contained Fire",
+        "name": "Gezügeltes Feuer",
         "rewards": [
-            "Gain 2 collective {ROCKROOT}",
-            "Gain 2 collective {LUMBER}"
+            "Erhaltet insgesamt 2 {ROCKROOT}",
+            "Erhaltet insgesamt 2 {LUMBER}"
         ]
     },
     "fh-90": {
-        "name": "Frozen Treasure",
+        "name": "Gefrorene Schätze",
         "rewards": [
             [
-                "Gain 1 ✔ each",
-                "Each character gains 10 gold for each numbered token they looted",
-                "Lose 10 collective gold"
+                "Erhaltet je 1 ✔",
+                "Jeder Charakter erhält 10 Gold für jeden nummerierten Marker, den er geplündert hat",
+                "Verliert insgesamt 10 Gold"
             ],
             [
-                "Gain 1 ✔ each",
-                "Each character gains 10 gold for each numbered token they looted",
-                "Lose 5 collective gold",
-                "All characters start the next scenario with {MUDDLE.fh} and {CURSE.fh}"
+                "Erhaltet je 1 ✔",
+                "Jeder Charakter erhält 10 Gold für jeden nummerierten Marker, den er geplündert hat",
+                "Verliert insgesamt 5 Gold",
+                "Alle Charaktere beginnen das nächste Szenario mit {MUDDLE.fh} und {CURSE.fh}"
             ]
         ]
     },
     "fh-91": {
-        "name": "Shoreline Scramble",
+        "name": "Küstenklettern",
         "rewards": [
-            "Gain 2 collective {LUMBER}",
-            "Gain 1 morale"
+            "Erhaltet insgesamt 2 {LUMBER}",
+            "Erhaltet 1 Moral"
         ]
     },
     "fh-92": {
-        "name": "Sinking Ship",
+        "name": "Sinkendes Schiff",
         "rewards": [
-            "Collectively lose 5xC/2 loot tokens. Loot tokens are then traded in for loot cards",
-            "Add 181.2 to the calendar in one week"
+            "Verliert gemeinsam 5xC/2 Beutemarker. Die Beutemarker werden anschließend gegen Beutekarten eingetauscht",
+            "Fügt 181.2 in einer Woche zum Kalender hinzu"
         ]
     },
     "fh-93": {
-        "name": "Midwinter Brawl",
+        "name": "Mittwinter-Schlägerei",
         "rewards": [
             [
-                "Gain “Small Rat” (Item 235)"
+                "Erhaltet “Kleine Ratte” (Gegenstand 235)"
             ],
             [
-                "Gain “Roasted Fowl” (Item 79)"
+                "Erhaltet “Brathähnchen” (Gegenstand 79)"
             ]
         ]
     },
     "fh-94": {
-        "name": "A Grand View",
+        "name": "Grandiose Aussicht",
         "rewards": [
-            "Gain 10 experience each"
+            "Erhaltet je 10 Erfahrung"
         ]
     },
     "fh-95": {
-        "name": "To Bury the Dead",
+        "name": "Totenruhe",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 10 gold each"
+            "Erhaltet 1 Moral",
+            "Erhaltet je 10 Gold"
         ]
     },
     "fh-96": {
-        "name": "Underground Station",
+        "name": "Bahntunnel",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 5 experience each"
+            "Erhaltet 1 Moral",
+            "Erhaltet je 5 Erfahrung"
         ]
     },
     "fh-97": {
-        "name": "Program Control Nexus",
+        "name": "Steuerzentrale",
         "rewards": [
-            "Gain 5 collective {METAL}"
+            "Erhaltet insgesamt 5 {METAL}"
         ]
     },
     "fh-98": {
-        "name": "Collapsing Vent",
+        "name": "Instabiler Schacht",
         "rewards": [
-            "Gain 1 prosperity"
+            "Erhaltet 1 Wohlstand"
         ]
     },
     "fh-99": {
-        "name": "Prison Break",
+        "name": "Gefängnisausbruch",
         "rewards": [
-            "Gain 10 gold each"
+            "Erhaltet je 10 Gold"
         ]
     },
     "fh-100": {
-        "name": "Inside the Swarm",
+        "name": "Herz des Schwarms",
         "rewards": [
-            "Gain 5 gold each",
-            "Gain 10 experience each"
+            "Erhaltet je 5 Gold",
+            "Erhaltet je 10 Erfahrung"
         ]
     },
     "fh-101": {
-        "name": "Harrower Library",
+        "name": "Schwarmling-Bibliothek",
         "rewards": [
-            "Gain 1 ✔ each",
-            "Gain 10 experience each"
+            "Erhaltet je 1 ✔",
+            "Erhaltet je 10 Erfahrung"
         ]
     },
     "fh-102": {
-        "name": "Into the Black",
+        "name": "Tiefste Schwärze",
         "rewards": [
-            "Gain 20 experience each"
+            "Erhaltet je 20 Erfahrung"
         ]
     },
     "fh-103": {
-        "name": "The Lead Door",
+        "name": "Die Bleitür",
         "rewards": [
-            "Gain 1 ✔ each",
-            "Gain 30 experience each",
-            "Gain 10 gold each"
+            "Erhaltet je 1 ✔",
+            "Erhaltet je 30 Erfahrung",
+            "Erhaltet je 10 Gold"
         ]
     },
     "fh-104": {
-        "name": "Ruins of the Solstice",
+        "name": "Sonnenwende",
         "rewards": [
-            "Gain 2 collective {SNOWTHISTLE}",
-            "Add event WR-49 to the winter road deck"
+            "Erhaltet insgesamt 2 {SNOWTHISTLE}",
+            "Fügt Ereignis WR-49 dem Winter-Weg-Deck hinzu"
         ]
     },
     "fh-105": {
-        "name": "Ruins of the Equinox",
+        "name": "Tagundnachtgleiche",
         "rewards": [
-            "Gain 2 collective {FLAMEFRUIT}",
-            "Add 159.4 to the calendar in four weeks"
+            "Erhaltet insgesamt 2 {FLAMEFRUIT}",
+            "Fügt 159.4 in vier Wochen zum Kalender hinzu"
         ]
     },
     "fh-106": {
-        "name": "The Tempus Forge",
+        "name": "Die Temporalschmieden",
         "rewards": [
-            "Gain “Key of Seasons” (Item 213)"
+            "Erhaltet “Jahresschlüssel” (Gegenstand 213)"
         ]
     },
     "fh-107": {
-        "name": "My Private Empire",
+        "name": "Mein eigenes Reich",
         "rewards": [
             [
-                "Gain any 1 collective material resource"
+                "Erhaltet insgesamt 1 beliebige Materialressource"
             ],
             [
-                "Gain any 2 collective material resources"
+                "Erhaltet insgesamt 2 beliebige Materialressourcen"
             ],
             [
-                "Gain any 3 collective material resources"
+                "Erhaltet insgesamt 3 beliebige Materialressourcen"
             ],
             [
-                "Gain any 4 collective material resources"
+                "Erhaltet insgesamt 4 beliebige Materialressourcen"
             ],
             [
-                "Gain any 5 collective material resources",
-                "Gain “Cup of Ventillion” (Item 214)"
+                "Erhaltet insgesamt 5 beliebige Materialressourcen",
+                "Erhaltet “Ventillions Kelch” (Gegenstand 214)"
             ]
         ]
     },
     "fh-108": {
-        "name": "Lustrous Pit",
+        "name": "Schimmernde Grube",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 2 inspiration"
+            "Erhaltet 2 Moral",
+            "Erhaltet 2 Inspiration"
         ]
     },
     "fh-109": {
-        "name": "Furious Factory",
+        "name": "Feindliche Fabrik",
         "rewards": [
-            "Gain 5 collective {METAL}"
+            "Erhaltet insgesamt 5 {METAL}"
         ]
     },
     "fh-110": {
-        "name": "Guardian's Temple",
+        "name": "Wächtertempel",
         "rewards": [
-            "Gain “Rose Guantlet” (Item 75) blueprint"
+            "Erhaltet den Gegenstandsplan “Rosenstulpe” (Gegenstand 75)"
         ]
     },
     "fh-111": {
-        "name": "Ice Cave",
+        "name": "Eishöhle",
         "rewards": [
-            "Gain “Cracked Mirror” (Item 236)"
+            "Erhaltet “Gesprungener Spiegel” (Gegenstand 236)"
         ]
     },
     "fh-112": {
-        "name": "Raised by Wolves",
+        "name": "Unter Wölfen",
         "rewards": [
-            "Gain 15 experience each"
+            "Erhaltet je 15 Erfahrung"
         ]
     },
     "fh-113": {
-        "name": "Lush Grotto",
+        "name": "Pflanzengrotte",
         "rewards": [
-            "Gain any 4 collective herb resources"
+            "Erhaltet insgesamt 4 beliebige Kräuterressourcen"
         ]
     },
     "fh-114": {
-        "name": "Work Freeze",
+        "name": "Arbeitsstörung",
         "rewards": [
-            "Gain 5 collective {HIDE}",
-            "Add 86.1 to the calendar in four weeks"
+            "Erhaltet insgesamt 5 {HIDE}",
+            "Fügt 86.1 in vier Wochen zum Kalender hinzu"
         ]
     },
     "fh-115": {
-        "name": "Pylon Problems",
+        "name": "Verstrebungsschutz",
         "rewards": [
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in one week"
+                "Erhaltet je 15 Erfahrung",
+                "Fügt 66.2 in einer Woche zum Kalender hinzu"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in two weeks"
+                "Erhaltet je 15 Erfahrung",
+                "Fügt 66.2 in zwei Wochen zum Kalender hinzu"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in three weeks"
+                "Erhaltet je 15 Erfahrung",
+                "Fügt 66.2 in drei Wochen zum Kalender hinzu"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in four weeks"
+                "Erhaltet je 15 Erfahrung",
+                "Fügt 66.2 in vier Wochen zum Kalender hinzu"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in five weeks"
+                "Erhaltet je 15 Erfahrung",
+                "Fügt 66.2 in fünf Wochen zum Kalender hinzu"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in six weeks"
+                "Erhaltet je 15 Erfahrung",
+                "Fügt 66.2 in sechs Wochen zum Kalender hinzu"
             ],
             [
-                "Gain 15 experience each",
-                "Add 66.2 to the calendar in seven weeks"
+                "Erhaltet je 15 Erfahrung",
+                "Fügt 66.2 in sieben Wochen zum Kalender hinzu"
             ]
         ]
     },
     "fh-116": {
-        "name": "Caravan Guards",
+        "name": "Geleitschutz",
         "rewards": [
             [
-                "Gain 1 morale"
+                "Erhaltet 1 Moral"
             ],
             [
-                "Gain 1 morale",
-                "Gain 1 collective {LUMBER}",
-                "Gain 1 collective {METAL}",
-                "Gain 1 collective {HIDE}"
+                "Erhaltet 1 Moral",
+                "Erhaltet insgesamt 1 {LUMBER}",
+                "Erhaltet insgesamt 1 {METAL}",
+                "Erhaltet insgesamt 1 {HIDE}"
             ],
             [
-                "Gain 1 morale",
-                "Gain 1 collective {LUMBER}",
-                "Gain 1 collective {METAL}",
-                "Gain 1 collective {HIDE}",
-                "Gain any 2 material resources each",
-                "Gain 10 experience each"
+                "Erhaltet 1 Moral",
+                "Erhaltet insgesamt 1 {LUMBER}",
+                "Erhaltet insgesamt 1 {METAL}",
+                "Erhaltet insgesamt 1 {HIDE}",
+                "Erhaltet je 2 beliebige Materialressourcen",
+                "Erhaltet je 10 Erfahrung"
             ],
             [
-                "Gain 1 morale",
-                "Gain 1 collective {LUMBER}",
-                "Gain 1 collective {METAL}",
-                "Gain 1 collective {HIDE}",
-                "Gain any 2 material resources each",
-                "Gain 10 experience each",
-                "Gain one random item blueprint"
+                "Erhaltet 1 Moral",
+                "Erhaltet insgesamt 1 {LUMBER}",
+                "Erhaltet insgesamt 1 {METAL}",
+                "Erhaltet insgesamt 1 {HIDE}",
+                "Erhaltet je 2 beliebige Materialressourcen",
+                "Erhaltet je 10 Erfahrung",
+                "Erhaltet einen zufälligen Gegenstandsplan"
             ],
             [
-                "Gain 1 morale",
-                "Gain 1 collective {LUMBER}",
-                "Gain 1 collective {METAL}",
-                "Gain 1 collective {HIDE}",
-                "Gain any 2 material resources each",
-                "Gain 10 experience each",
-                "Gain one random item blueprint",
-                "Gain 1 prosperity",
-                "Gain 2 morale"
+                "Erhaltet 1 Moral",
+                "Erhaltet insgesamt 1 {LUMBER}",
+                "Erhaltet insgesamt 1 {METAL}",
+                "Erhaltet insgesamt 1 {HIDE}",
+                "Erhaltet je 2 beliebige Materialressourcen",
+                "Erhaltet je 10 Erfahrung",
+                "Erhaltet einen zufälligen Gegenstandsplan",
+                "Erhaltet 1 Wohlstand",
+                "Erhaltet 2 Moral"
             ]
         ]
     },
     "fh-117": {
-        "name": "A Waiting Game",
+        "name": "Geduldsprobe",
         "rewards": [
-            "Gain 4 collective {HIDE}",
-            "Gain 10 gold each"
+            "Erhaltet insgesamt 4 {HIDE}",
+            "Erhaltet je 10 Gold"
         ]
     },
     "fh-118": {
-        "name": "Lurker Necromancy",
+        "name": "Pirscher-Nekromantie",
         "rewards": [
-            "Gain “Amulet of Eternal Life” (Item 66) blueprint",
-            "Trade all tokens in for loot cards"
+            "Erhaltet den Gegenstandsplan “Amulett des ewigen Lebens” (Gegenstand 66)",
+            "Tauscht alle Marker gegen Beutekarten ein"
         ]
     },
     "fh-119": {
-        "name": "Radiant Dust",
+        "name": "Strahlender Staub",
         "rewards": [
-            "Spend 7 remaining dust to gain “Scepter of Control” (Item 203)",
-            "Spend 1 remaining dust to gain any 1 material resource",
-            "Spend 2 remaining dust to gain any 1 herb resource"
+            "Gebt 7 verbleibenden Staub aus, um “Zepter der Kontrolle” (Gegenstand 203) zu erhalten",
+            "Gebt 1 verbleibenden Staub aus, um 1 beliebige Materialressource zu erhalten",
+            "Gebt 2 verbleibenden Staub aus, um 1 beliebige Kräuterressource zu erhalten"
         ]
     },
     "fh-120": {
-        "name": "Under the Influence",
+        "name": "Einflussnahme",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 2 collective {LUMBER}",
-            "Add 76.3 to the calendar in ten weeks"
+            "Erhaltet 1 Moral",
+            "Erhaltet insgesamt 2 {LUMBER}",
+            "Fügt 76.3 in zehn Wochen zum Kalender hinzu"
         ]
     },
     "fh-121": {
-        "name": "Black Memories",
+        "name": "Schwarze Erinnerungen",
         "rewards": [
             [
-                "Add 184.3 to the calendar in six weeks"
+                "Fügt 184.3 in sechs Wochen zum Kalender hinzu"
             ],
             [
-                "Gain “Mind-Thieving Helmet” (Item 193)"
+                "Erhaltet “Gedankendieb-Helm” (Gegenstand 193)"
             ],
             [
-                "Gain 2 morale"
+                "Erhaltet 2 Moral"
             ]
         ]
     },
     "fh-122": {
-        "name": "The Eternal Crave",
+        "name": "Endloses Verlangen",
         "rewards": [
             [
-                "Gain 10 gold each"
+                "Erhaltet je 10 Gold"
             ],
             [
-                "Gain 15 experience each",
-                "Gain 1 ✔ each"
+                "Erhaltet je 15 Erfahrung",
+                "Erhaltet je 1 ✔"
             ]
         ]
     },
     "fh-123": {
-        "name": "The Titan",
+        "name": "Der Titan",
         "rewards": [
-            "Gain 1 morale",
-            "Gain 1 inspiration"
+            "Erhaltet 1 Moral",
+            "Erhaltet 1 Inspiration"
         ]
     },
     "fh-124": {
-        "name": "A Growing Problem",
+        "name": "Wachsende Probleme",
         "rewards": [
-            "Gain 15 experience each"
+            "Erhaltet je 15 Erfahrung"
         ]
     },
     "fh-125": {
-        "name": "The Longest Second",
+        "name": "Der längste Augenblick",
         "rewards": [
-            "Gain “Temporal Amulet” (Item 194)"
+            "Erhaltet “Zeitamulett” (Gegenstand 194)"
         ]
     },
     "fh-126": {
-        "name": "Joseph the Lion",
+        "name": "Joseph der Löwe",
         "rewards": [
-            "Gain 10 gold each"
+            "Erhaltet je 10 Gold"
         ]
     },
     "fh-127": {
-        "name": "Derelict Freighter",
+        "name": "Verfallener Frachter",
         "rewards": [
             [
-                "Gain 10 collective gold"
+                "Erhaltet 10 gemeinsames Gold"
             ],
             [
-                "Gain 10 collective gold",
-                "Gain 2 collective {LUMBER}"
+                "Erhaltet 10 gemeinsames Gold",
+                "Erhaltet insgesamt 2 {LUMBER}"
             ],
             [
-                "Gain 10 collective gold",
-                "Gain 2 collective {LUMBER}",
-                "Gain “Tri-Corner Hat” 195"
+                "Erhaltet 10 gemeinsames Gold",
+                "Erhaltet insgesamt 2 {LUMBER}",
+                "Erhaltet “Dreispitz” (Gegenstand 195)"
             ],
             [
-                "Gain 10 collective gold",
-                "Gain 2 collective {LUMBER}",
-                "Gain “Tri-Corner Hat” 195",
-                "Gain 1 prosperity"
+                "Erhaltet 10 gemeinsames Gold",
+                "Erhaltet insgesamt 2 {LUMBER}",
+                "Erhaltet “Dreispitz” (Gegenstand 195)",
+                "Erhaltet 1 Wohlstand"
             ]
         ]
     },
     "fh-128": {
-        "name": "A Tall Drunken Tale",
+        "name": "Fabulöse Fakten",
         "rewards": [
             [
-                "Gain 1 morale",
-                "Add 100.3 to the calendar in three weeks"
+                "Erhaltet 1 Moral",
+                "Fügt 100.3 in drei Wochen zum Kalender hinzu"
             ],
             [
-                "Gain 2 morale",
-                "Add 100.3 to the calendar in three weeks"
+                "Erhaltet 2 Moral",
+                "Fügt 100.3 in drei Wochen zum Kalender hinzu"
             ],
             [
-                "Gain 3 morale",
-                "Gain “Befuddling Mug” (Item 215)",
-                "Add 100.3 to the calendar in three weeks"
+                "Erhaltet 3 Moral",
+                "Erhaltet “Berauschender Krug” (Gegenstand 215)",
+                "Fügt 100.3 in drei Wochen zum Kalender hinzu"
             ]
         ]
     },
     "fh-129": {
-        "name": "How to Lay an Ambush",
+        "name": "Strategischer Hinterhalt",
         "rewards": [
-            "Gain 1 ✔ each"
+            "Erhaltet je 1 ✔"
         ]
     },
     "fh-130": {
-        "name": "And Then, a Stream",
+        "name": "Am knirschenden Bach",
         "rewards": [
             [
-                "Lose 3 morale",
-                "Gain 1 prosperity",
-                "Gain 10 collective gold for each token carried"
+                "Verliert 3 Moral",
+                "Erhaltet 1 Wohlstand",
+                "Erhaltet für jeden getragenen Marker 10 gemeinsames Gold"
             ],
             [
-                "Gain 5 collective gold for each token carried"
+                "Erhaltet für jeden getragenen Marker 5 gemeinsames Gold"
             ]
         ]
     },
     "fh-131": {
-        "name": "The Dancing Iceberg",
+        "name": "Der tanzende Eisberg",
         "rewards": [
-            "Gain 10 experience each",
-            "Gain “Mesmerizing Seashell” (Item 237)"
+            "Erhaltet je 10 Erfahrung",
+            "Erhaltet “Hypnotische Muschel” (Gegenstand 237)"
         ]
     },
     "fh-132": {
-        "name": "Temple of Feline Power",
+        "name": "Der Katzentempel",
         "rewards": [
-            "Gain 1 inspiration"
+            "Erhaltet 1 Inspiration"
         ]
     },
     "fh-133": {
-        "name": "Bolt",
+        "name": "Blitz",
         "rewards": [
-            "Gain “Cracked Idol” (Item 238)"
+            "Erhaltet “Gesprungene Figur” (Gegenstand 238)"
         ]
     },
     "fh-134": {
-        "name": "Tower of Knowledge",
+        "name": "Turm des Wissens",
         "rewards": [
-            "Gain “Tome of Conflict” (Item 219)"
+            "Erhaltet “Foliant des Konflikts” (Gegenstand 219)"
         ]
     },
     "fh-135": {
-        "name": "Belara's Keep",
+        "name": "Belaras Festung",
         "rewards": [
-            "Gain 2 morale",
-            "Gain 2 prosperity",
-            "Gain 1 inspiration",
-            "Gain “Belara's quill” (Item 220)"
+            "Erhaltet 2 Moral",
+            "Erhaltet 2 Wohlstand",
+            "Erhaltet 1 Inspiration",
+            "Erhaltet “Belaras Federkiel” (Gegenstand 220)"
         ]
     },
     "fh-136": {
-        "name": "Abandoned Hideout",
+        "name": "Verlassenes Versteck",
         "rewards": [
-            "Gain 20 gold each",
-            "Gain “Ancient Coin” (Item 245)"
+            "Erhaltet je 20 Gold",
+            "Erhaltet “Alte Münze” (Gegenstand 245)"
         ]
     },
     "fh-137": {
-        "name": "Pirate Queen's Haul",
+        "name": "Die Piratenkönigin",
         "rewards": [
-            "Gain 2 prosperity",
-            "Gain 3 morale",
-            "Gain 30 gold each",
-            "Add one +1 sticker to a money loot card"
+            "Erhaltet 2 Wohlstand",
+            "Erhaltet 3 Moral",
+            "Erhaltet je 30 Gold",
+            "Fügt einer Gold-Beutekarte einen +1-Aufkleber hinzu"
         ]
     },
     "fh-201": {
-        "name": "Wonder of Nature",
+        "name": "Wunder der Natur",
         "rewards": [
-            "“Wanderer's Club” (Item 248)"
+            "“Wanderer's Club” (Gegenstand 248)"
         ]
     },
     "fh-202": {
-        "name": "Race Against the Clock",
+        "name": "Rennen gegen die Uhr",
         "rewards": [
-            "“Recalibration Trigger” (Item 249)"
+            "“Recalibration Trigger” (Gegenstand 249)"
         ]
     },
     "fh-203": {
         "name": "Scouting Ambush",
         "rewards": [
-            "“Spear of Justice” (Item 250)"
+            "“Spear of Justice” (Gegenstand 250)"
         ]
     },
     "fh-204": {
         "name": "The Dead of Night",
         "rewards": [
-            "“Soul Urn” (Item 251)"
+            "“Soul Urn” (Gegenstand 251)"
         ]
     },
     "fh-205": {
-        "name": "Bones in the Dirt",
+        "name": "Knochen im Staub",
         "rewards": [
-            "“Black Earth Codex” (Item 252)"
+            "“Black Earth Codex” (Gegenstand 252)"
         ]
     },
     "fh-206": {
-        "name": "Divide and Conquer",
+        "name": "Teilen und Herrschen",
         "rewards": [
-            "“Mask of Duality” (Item 253)"
+            "“Mask of Duality” (Gegenstand 253)"
         ]
     },
     "fh-207": {
         "name": "Path of Ancestry",
         "rewards": [
-            "“Ancestral Blade” (Item 254)"
+            "“Ancestral Blade” (Gegenstand 254)"
         ]
     },
     "fh-208": {
-        "name": "Crumbling Descent",
+        "name": "Bröckelnder Abstieg",
         "rewards": [
-            "“Mountain's Heart” (Item 255)"
+            "“Mountain's Heart” (Gegenstand 255)"
         ]
     },
     "fh-209": {
-        "name": "Tuning the Resonance",
+        "name": "Anpassung der Resonanz",
         "rewards": [
-            "“Sonorous Shard” (Item 256)"
+            "“Sonorous Shard” (Gegenstand 256)"
         ]
     },
     "fh-210": {
         "name": "A Magnificent Trap",
         "rewards": [
-            "“Sly Camouflage” (Item 257)"
+            "“Sly Camouflage” (Gegenstand 257)"
         ]
     },
     "fh-211": {
         "name": "A Collection of Suffering",
         "rewards": [
-            "“Skull of Agony” (Item 258)"
+            "“Skull of Agony” (Gegenstand 258)"
         ]
     },
     "fh-212": {
         "name": "Fighting Snow with Snow",
         "rewards": [
-            "“Storm Carving” (Item 259)"
+            "“Storm Carving” (Gegenstand 259)"
         ]
     },
     "fh-213": {
-        "name": "Under the Ice",
+        "name": "Unter dem Eis",
         "rewards": [
-            "“Freezing Orb” (Item 260)"
+            "“Freezing Orb” (Gegenstand 260)"
         ]
     },
     "fh-214": {
-        "name": "Recharge",
+        "name": "Aufladen",
         "rewards": [
-            "“Energized Module” (Item 261)"
+            "“Energized Module” (Gegenstand 261)"
         ]
     },
     "fh-215": {
-        "name": "Boiler Room",
+        "name": "Kesselraum",
         "rewards": [
-            "“Exhaust Boots” (Item 262)"
+            "“Exhaust Boots” (Gegenstand 262)"
         ]
     },
     "fh-216": {
-        "name": "Wet Work",
+        "name": "Nasse Arbeit",
         "rewards": [
-            "“Warlord's Skull” (Item 263)"
+            "“Warlords Skull” (Gegenstand 263)"
         ]
     },
     "fh-217": {
-        "name": "Crash Against the Waves",
+        "name": "Sturm gegen die Wellen",
         "rewards": [
-            "“Spiraled Medallion” (Item 264)"
+            "“Spiraled Medallion” (Gegenstand 264)"
         ]
     },
     "cs-1": {
@@ -2240,60 +2424,51 @@ export default {
     "cs-3": {
         "name": "Flooded Cavern",
         "rewards": [
-            "10 experience each",
-            "+1 prosperity"
+            "je 10 Erfahrung",
+            "+1 Wohlstand"
         ]
     },
     "cs-4": {
         "name": "Infected Warriors",
         "rewards": [
-            "Gain “Slug Crossbow” (Item 84)",
-            "Each character gains one random “Orb” item (Item 1-10)",
-            "TODO:: gain slug cross bow... what is party goal?"
+            "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-5": {
-        "name": "Blood of the Oozes",
-        "rewards": [
-            "Gain “Slug Crossbow” (Item 84)",
-            "Each character gains one random “Orb” item (Item 1-10)",
-            "TODO:: gain slug cross bow... what is party goal?"
-        ]
+        "name": "Blood of the Oozes"
     },
     "cs-6": {
         "name": "Poisoned Water",
         "rewards": [
-            "+2 reputation",
-            "+1 prosperity",
-            "Gain “Stun Powder” (Item 21)"
+            "+2 Ansehen",
+            "+1 Wohlstand",
+            "“Betäubungspulver” (Gegenstand gh-21)"
         ]
     },
     "cs-7": {
         "name": "Golden Eggs",
         "rewards": [
-            "Gain 30 collective gold",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "Erhaltet 30 gemeinsames Gold"
         ]
     },
     "cs-8": {
         "name": "Shattered Fortress",
         "rewards": [
-            "Gain “Curious Pendant” (Item 20)",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "“Curious Pendant” (Gegenstand 20)"
         ]
     },
     "cs-9": {
         "name": "Rescue Mission",
         "rewards": [
-            "10 gold each",
-            "Gain “Smog Emitter” (Item 62)"
+            "je 10 Gold",
+            "“Smog Emitter” (Gegenstand 62)"
         ]
     },
     "cs-10": {
         "name": "Den of Monstrosity",
         "rewards": [
-            "Gain “Minor Mana Potion” (Item 12)",
-            "Gain “Minor Healing Potion” (Item 20)"
+            "“Kleiner Heiltrank” (Gegenstand gh-12)",
+            "“Kleiner Manatrank” (Gegenstand gh-20)"
         ]
     },
     "cs-11": {
@@ -2305,103 +2480,105 @@ export default {
     "cs-13": {
         "name": "Corpse Cavern",
         "rewards": [
-            "Gain “Bulkwark Banner” (Item 85)",
-            "+1 prosperity",
-            "Each character gains one of the following: “Major Stamina Potion” (Item 34), “Major Power Potion” (Item 41), “Major Mana Potion” (Item 48)\\nIf there are non of these available in the shop, gain 20 gold instead"
+            "+1 Wohlstand",
+            "Jeder Charakter erhält einen der folgenden Gegenstände: “Großer Ausdauertrank” (Gegenstand gh-34), “Großer Krafttrank” (Gegenstand gh-41), “Großer Manatrank” (Gegenstand gh-48)\nIst keiner davon im Laden verfügbar, erhält er stattdessen 20 Gold"
         ]
     },
     "cs-14": {
         "name": "Cultist Cave",
         "rewards": [
-            "Gain “Remote Beetle” (Item 86)",
-            "15 experience each"
+            "je 15 Erfahrung"
         ]
     },
     "cs-15": {
-        "name": "Ambush of Beasts"
+        "name": "Ambush of Beasts",
+        "rewards": [
+            "je 15 Gold",
+            "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
+        ]
     },
     "cs-16": {
         "name": "Preto Krisanta",
         "rewards": [
-            "10 gold each",
-            "One character gains one {+1_WHITE} enhancement to any Level 1 or X card"
+            "je 10 Gold",
+            "Ein Charakter erhält eine {+1_WHITE}-Verbesserung auf einer beliebigen Karte der Stufe 1 oder X"
         ]
     },
     "cs-17": {
         "name": "Orb Extraction",
         "rewards": [
-            "+2 prosperity"
+            "+2 Wohlstand"
         ]
     },
     "cs-18": {
         "name": "Grab and Go",
         "rewards": [
-            "100 gold each This money must immediately be spent on enhancements"
+            "je 100 Gold. Dieses Geld muss sofort für Verbesserungen ausgegeben werden"
         ]
     },
     "cs-19": {
         "name": "Elemental Experiments",
         "rewards": [
-            "Gain “Major Mana Potion” (Item 48)"
+            "“Großer Manatrank” (Gegenstand gh-48)"
         ]
     },
     "cs-20": {
         "name": "Midnight Ritual",
         "rewards": [
-            "+1 reputation",
-            "+1 prosperity",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "+1 Ansehen",
+            "+1 Wohlstand",
+            "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-21": {
         "name": "A Fiery Death",
         "rewards": [
-            "Gain “Magma Waders” (Item 99)"
+            "“Lavalatschen” (Gegenstand gh-99)"
         ]
     },
     "cs-22": {
         "name": "Imp Temple",
         "rewards": [
-            "Each character gains +2 gold and 2 experience for each money token looted."
+            "Jeder Charakter erhält +2 Gold und 2 Erfahrung für jeden geplünderten Münzmarker."
         ]
     },
     "cs-23": {
         "name": "Icicle Chambers",
         "rewards": [
-            "15 experience each"
+            "je 15 Erfahrung"
         ]
     },
     "cs-24": {
         "name": "Eerie Grotto",
         "rewards": [
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-25": {
         "name": "Brightspark, Behold!",
         "rewards": [
-            "+1 reputation",
-            "Add Road Event 57 to the deck"
+            "+1 Ansehen",
+            "Fügt Weg-Ereignis 57 dem Deck hinzu"
         ]
     },
     "cs-26": {
         "name": "Thermal Stone Peak",
         "rewards": [
-            "20 experience each",
-            "1 ✓ each"
+            "je 20 Erfahrung",
+            "je 1 ✓"
         ]
     },
     "cs-27": {
         "name": "Frostbite Cavern",
         "rewards": [
-            "10 gold each",
-            "Gain “Dizzying Tincture” (Item 58)"
+            "je 10 Gold",
+            "“Dizzying Tincture” (Gegenstand 58)"
         ]
     },
     "cs-28": {
         "name": "Fountain of Bones",
         "rewards": [
-            "1 ✓ each"
+            "je 1 ✓"
         ]
     },
     "cs-29": {
@@ -2411,382 +2588,1227 @@ export default {
         "name": "Undead Terrors",
         "rewards": [
             [
-                "70 collective gold"
+                "70 gemeinsames Gold"
             ],
             [
-                "10 experience each"
+                "je 10 Erfahrung"
             ]
         ]
     },
     "cs-31": {
         "name": "Eternal Portals",
         "rewards": [
-            "1 ✓ each"
+            "je 1 ✓"
         ]
     },
     "cs-32": {
         "name": "Confronting the Past",
         "rewards": [
-            "Read {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
-            "Password “Water Hydra”"
+            "Lest {PAGE} 75 (<a class=\"desc-link\" target=\"_blank\" href=\"https://www.thecrimsonscales.com/endgame\">Endgame</a>)",
+            "Passwort “Water Hydra”"
         ]
     },
     "cs-33": {
         "name": "Siege Tower",
+        "requirements": "Persönliche Quest „Protect and Serve“",
         "rewards": [
-            "Gain “Blazing Boots” (Item 87)",
-            "+1 reputation"
+            "“Blazing Boots” (Gegenstand 90)",
+            "+1 Ansehen"
         ]
     },
     "cs-34": {
         "name": "Great Oak Escape",
+        "requirements": "Persönliche Quest „Protect and Serve“",
         "rewards": [
-            "Unlock Envelope {BM}",
-            "+2 reputation",
-            "All characters add one {BLESS} to their attack modifer deck for the next scenario"
+            "Schaltet Umschlag {BM} frei",
+            "+2 Ansehen",
+            "Alle Charaktere fügen ihrem Angriffsmodifikator-Deck für das nächste Szenario eine {BLESS} hinzu"
         ]
     },
     "cs-35": {
-        "name": "Prison Riot"
+        "name": "Prison Riot",
+        "requirements": "Persönliche Quest „Bandit Banisher“"
     },
     "cs-36": {
         "name": "Hunters Bounty",
+        "requirements": "Persönliche Quest „Bandit Banisher“",
         "rewards": [
-            "Unlock Envelope {CG}",
-            "10 gold each"
+            "Schaltet Umschlag {CG} frei",
+            "je 10 Gold"
         ]
     },
     "cs-37": {
         "name": "Burning Stones",
+        "requirements": "Persönliche Quest „Natural Selection“",
         "rewards": [
-            "Gain one random “Stone” item (Item 94-100)"
+            "Erhaltet einen zufälligen “Stone”-Gegenstand (Gegenstand 94-100)"
         ]
     },
     "cs-38": {
         "name": "Alters of Confusion",
+        "requirements": "Persönliche Quest „Natural Selection“",
         "rewards": [
-            "Unlock Envelope {LU}"
+            "Schaltet Umschlag {LU} frei"
         ]
     },
     "cs-39": {
         "name": "Festering Mire",
+        "requirements": "Persönliche Quest „An Adder Divides“",
         "rewards": [
-            "10 experience each",
-            "Remove the top 5 cards from the City Event deck and shuffle City Event 57 into them. Place the remaining City Event cards aside until City Event 57 is resolved. Any additional card that would be added to the City Event deck during this time is added after City Event 57 is resolved and the remaining cards are combined with the original deck.",
-            "“An Adder Divides” quest is not yet complete"
+            "je 10 Erfahrung",
+            "Entfernt die obersten 5 Karten vom Stadt-Ereignis-Deck und mischt Stadt-Ereignis 57 unter sie. Legt die übrigen Stadt-Ereigniskarten beiseite, bis Stadt-Ereignis 57 abgehandelt ist. Jede zusätzliche Karte, die in dieser Zeit dem Stadt-Ereignis-Deck hinzugefügt würde, wird erst hinzugefügt, nachdem Stadt-Ereignis 57 abgehandelt wurde und die übrigen Karten wieder mit dem ursprünglichen Deck vereint wurden.",
+            "Die Quest “An Adder Divides” ist noch nicht abgeschlossen"
         ]
     },
     "cs-40": {
         "name": "Smugglers Hideout",
         "rewards": [
-            "Gain 50 collective gold"
+            "Erhaltet 50 gemeinsames Gold"
         ]
     },
     "cs-41": {
         "name": "Curse of the Void",
         "rewards": [
-            "Gain 50 collective gold"
+            "Erhaltet 50 gemeinsames Gold"
         ]
     },
     "cs-42": {
         "name": "Unnatural Beasts",
         "rewards": [
-            "+1 reputation",
-            "10 experience each"
+            "+1 Ansehen",
+            "je 10 Erfahrung"
         ]
     },
     "cs-43": {
         "name": "Mansion Maze",
         "rewards": [
-            "+1 prosperity",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "+1 Wohlstand",
+            "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-44": {
         "name": "Haunted Manor",
         "rewards": [
-            "20 gold each",
-            "Each character gains one random “Orb” item (Item 1-10)"
+            "je 20 Gold",
+            "Jeder Charakter erhält einen zufälligen “Orb”-Gegenstand (Gegenstand 1-10)"
         ]
     },
     "cs-45": {
         "name": "Defend the Swamp",
         "rewards": [
-            "+1 reputation",
-            "+1 prosperity",
-            "1 ✓ each"
+            "+1 Ansehen",
+            "+1 Wohlstand",
+            "je 1 ✓"
         ]
     },
     "cs-46": {
         "name": "Vermling Gardens",
         "rewards": [
-            "+2 reputation",
-            "15 experience each"
+            "+2 Ansehen",
+            "je 15 Erfahrung"
         ]
     },
     "cs-47": {
         "name": "Viper Marsh",
         "rewards": [
-            "Gain “Ghost Viper Venom” (Item 55)",
-            "+1 prosperity",
-            "10 gold each"
+            "“Ghost Viper Venom” (Gegenstand 55)",
+            "+1 Wohlstand",
+            "je 10 Gold"
         ]
     },
     "cs-48": {
         "name": "Forest Fire",
         "rewards": [
-            "10 experience each",
-            "20 gold each"
+            "je 10 Erfahrung",
+            "je 20 Gold"
         ]
     },
     "cs-49": {
         "name": "Oak Invasion A",
         "rewards": [
-            "During the next visit to Gloomhaven, donations to the Sanctuary  cost 0 gold"
+            "Beim nächsten Besuch in Gloomhaven kosten Spenden an den Tempel der Großen Eiche 0 Gold"
         ]
     },
     "cs-50": {
         "name": "Oak Invasion B",
         "rewards": [
-            "10 experience each",
-            "1 ✓ each"
+            "je 10 Erfahrung",
+            "je 1 ✓"
         ]
     },
     "cs-51": {
         "name": "Rodent Warehouse",
         "rewards": [
-            "+1 reputation",
-            "30 gold each"
+            "+1 Ansehen",
+            "je 30 Gold"
         ]
     },
     "cs-52": {
         "name": "Wishing Well",
         "rewards": [
-            "Gain “Drakescale Shield” (Item 37)"
+            "“Drakescale Shield” (Gegenstand 37)"
         ]
     },
     "cs-53": {
         "name": "Cave of Currents",
         "rewards": [
-            "Gain “Sphere of Currents” (Item 83)",
-            "5 gold each"
+            "“Sphere of Currents” (Gegenstand 83)",
+            "je 5 Gold"
         ]
     },
     "cs-54": {
         "name": "Lair of Horrors",
         "rewards": [
-            "+1 reputation",
-            "30 gold each"
+            "+1 Ansehen",
+            "je 30 Gold"
         ]
     },
     "cs-55": {
         "name": "Catacomb Plunder",
         "rewards": [
-            "+1 prosperity",
-            "+1 reputation",
-            "10 experience each"
+            "+1 Wohlstand",
+            "+1 Ansehen",
+            "je 10 Erfahrung"
         ]
     },
     "cs-56": {
         "name": "Disarm the Machine",
         "rewards": [
-            "Gain “Chain Cannon” (Item 45)"
+            "“Chain Cannon” (Gegenstand 45)"
         ]
     },
     "cs-57": {
         "name": "Elemental Converter",
         "rewards": [
-            "Gain “Test Tube” (Item 48)"
+            "“Test Tube” (Gegenstand 48)"
         ]
     },
     "cs-58": {
         "name": "Penitentiary Lockdown",
         "rewards": [
-            "Gain one of the following as an item and the other as an item design:",
-            "“Claw Trap” (Item 34)",
-            "“Clamp Trap” (Item 56)"
+            "Erhaltet eines der folgenden als Gegenstand und das andere als Gegenstandsentwurf: „Claw Trap“ (Gegenstand 34), „Clamp Trap“ (Gegenstand 56)"
         ]
     },
     "cs-59": {
         "name": "Forest Invaders",
         "rewards": [
-            "Gain “Nature Armlets” (Item 47)"
+            "“Nature Armlets” (Gegenstand 47)"
         ]
     },
     "cs-60": {
         "name": "Through the Fire and Flames",
         "rewards": [
-            "Gain “Flaming Armor” (Item 51)"
+            "“Flaming Armor” (Gegenstand 51)"
         ]
     },
     "cs-61": {
         "name": "Archaic Preservation",
         "rewards": [
-            "Gain “Robe of Soothing” (Item 42)"
+            "“Robe of Soothing” (Gegenstand 42)"
         ]
     },
     "cs-62": {
         "name": "Hallow Redemption",
         "rewards": [
-            "Gain “Cleansed Voidheart” (Item 57)"
+            "“Cleansed Voidheart” (Gegenstand 57)"
         ]
     },
     "cs-63": {
         "name": "A Cornered Viper",
         "rewards": [
-            "Gain “Field Mortar” (Item 53)"
+            "“Field Mortar” (Gegenstand 53)"
         ]
     },
     "cs-64": {
         "name": "Glowing Crystals",
         "rewards": [
-            "Gain “Luminous Carapace” (Item 50)"
+            "“Luminous Carapace” (Gegenstand 50)"
         ]
     },
     "cs-65": {
         "name": "Glowing Crystals",
         "rewards": [
-            "Gain “Spirit Libation” (Item 41)"
+            "“Spirit Libation” (Gegenstand 41)"
         ]
     },
     "cs-66": {
         "name": "Otherworldly Strangers",
         "rewards": [
-            "Gain “Moonleather Boots” (Item 40)"
+            "“Moonleather Boots” (Gegenstand 40)"
         ]
     },
     "cs-AA1": {
         "name": "The Riches of the Steelsilk",
+        "requirements": "Persönliche Quest „At All Costs“",
         "rewards": [
-            "“Rockspine Bulwark” (Item AA01)"
+            "“Rockspine Bulwark” (Gegenstand AA01)"
         ]
     },
     "cs-AA2": {
         "name": "Malign Echoes",
+        "requirements": "Persönliche Quest „The Weight of Failure“",
         "rewards": [
-            "“Ghostshimmer Honey” (Item AA02)"
+            "“Ghostshimmer Honey” (Gegenstand AA02)"
         ]
     },
     "cs-AA3": {
         "name": "Hive Guardian",
         "rewards": [
-            "“Steelsilk Spinneret” (Item AA03)"
+            "“Steelsilk Spinneret” (Gegenstand AA03)"
         ]
     },
     "cs-QA1": {
         "name": "Capstone Test",
+        "requirements": "Persönliche Quest „Ingenious Inventor“ und Gegenstand „Power Modulator“ ausgerüstet",
         "rewards": [
             [
-                "“Ingenious Inventor” quest complete",
-                "Open envelope {QA}",
-                "“Steam Piston Hammer” design (Item QA02)",
-                "“Spider Climb Gloves” design (Item QA03)"
+                "Quest “Ingenious Inventor” abgeschlossen",
+                "Öffnet Umschlag {QA}",
+                "“Steam Piston Hammer”-Plan (Gegenstand QA02)",
+                "“Spider Climb Gloves”-Plan (Gegenstand QA03)"
             ],
             [
-                "“Ingenious Inventor” quest complete",
-                "Open envelope {QA}",
-                "Gain one of the following: “Steam Piston Hammer” (Item QA02) OR “Spider Climb Gloves” (Item QA03)",
-                "Add a copy of the chosen item to the city's available supply",
-                "Add the other item to the random item design deck"
+                "Quest “Ingenious Inventor” abgeschlossen",
+                "Öffnet Umschlag {QA}",
+                "Erhaltet einen der folgenden: “Steam Piston Hammer” (Gegenstand QA02) ODER “Spider Climb Gloves” (Gegenstand QA03)",
+                "Fügt dem verfügbaren Vorrat der Stadt eine Kopie des gewählten Gegenstands hinzu",
+                "Fügt den anderen Gegenstand dem Deck der zufälligen Gegenstandspläne hinzu"
             ],
             [
-                "“Ingenious Inventor” quest complete",
-                "Open envelope {QA}",
-                "“Steam Piston Hammer” (Item QA02)",
-                "“Spider Climb Gloves” (Item QA03)",
-                "Add copies to the city's available supply"
+                "Quest “Ingenious Inventor” abgeschlossen",
+                "Öffnet Umschlag {QA}",
+                "“Steam Piston Hammer” (Gegenstand QA02)",
+                "“Spider Climb Gloves” (Gegenstand QA03)",
+                "Fügt dem verfügbaren Vorrat der Stadt Kopien hinzu"
             ]
         ]
     },
     "cs-QA2": {
         "name": "Mother Lode",
+        "requirements": "Persönliche Quest „Scrap Diver“",
         "rewards": [
-            "“Scrap Diver” quest complete",
-            "Open envelope {QA}",
-            "15xA gold each (where A is the number of Ancient Scrap recovered",
-            "Add City Event QA-03 to the deck"
+            "Quest “Scrap Diver” abgeschlossen",
+            "Öffnet Umschlag {QA}",
+            "je 15xA Gold (wobei A die Anzahl der geborgenen Ancient Scrap ist)",
+            "Fügt Stadt-Ereignis QA-03 dem Deck hinzu"
         ]
     },
     "cs-QA3": {
         "name": "Magnum Opus",
         "rewards": [
-            "“Auscudee of the Makers” (Item QA06)"
+            "“Auscudee of the Makers” (Gegenstand QA06)"
         ]
     },
     "cs-RM1": {
-        "name": "Mind your Manners"
+        "name": "Mind your Manners",
+        "requirements": "Persönliche Quest „Brutal Enforcer“"
     },
     "cs-RM2": {
         "name": "Sinking Kingpin",
+        "requirements": "Persönliche Quest „Brutal Enforcer“",
         "rewards": [
-            "“Brutal Enforcer” quest complete",
-            "Open Envelope {RM}",
-            "+1 prosperity"
+            "Quest “Brutal Enforcer” abgeschlossen",
+            "Öffnet Umschlag {RM}",
+            "+1 Wohlstand"
         ]
     },
     "cs-RM3": {
-        "name": "Ruined Colony"
+        "name": "Ruined Colony",
+        "requirements": "Persönliche Quest „Apex Predator“"
     },
     "cs-RM4": {
         "name": "Terrorscale Lair",
+        "requirements": "Persönliche Quest „Apex Predator“",
         "rewards": [
-            "“Apex Predator” quest complete",
-            "Open Envelope {RM}",
-            "“Terrorscale Saber” design (Item RM03)",
-            "“Terrorscale Crossblades” design (Item RM04)"
+            "Quest “Apex Predator” abgeschlossen",
+            "Öffnet Umschlag {RM}",
+            "“Terrorscale Saber”-Plan (Gegenstand RM03)",
+            "“Terrorscale Crossblades”-Plan (Gegenstand RM04)"
         ]
     },
     "cs-RM5": {
         "name": "Unseen Plight",
         "rewards": [
             [
-                "40 collective gold",
-                "“Studded Leather” design (Item 030) OR “Boots of Dashing” design (Item 036)"
+                "40 gemeinsames Gold",
+                "“Nietenrüstung”-Plan (Gegenstand gh-30) ODER “Laufstiefel”-Plan (Gegenstand gh-36)"
             ],
             [
-                "2 ✓ each",
-                "“Lucky Eye” design (Item 063)"
+                "je 2 ✓",
+                "“Glücksauge”-Plan (Gegenstand gh-63)"
             ]
         ]
     },
     "cs-RM6": {
         "name": "The Fall of Shadow's Respite",
         "rewards": [
-            "“Rite of Ruin” design (Item RM05)",
-            "If at least three Vermlings were alive at the end of the eighth round: 5 gold",
-            "If at least five Vermlings were alive at the end of the eighth round: ✓"
+            "“Rite of Ruin”-Plan (Gegenstand RM05)",
+            "Falls am Ende der achten Runde mindestens drei Ratzen am Leben waren: 5 Gold",
+            "Falls am Ende der achten Runde mindestens fünf Ratzen am Leben waren: ✓"
         ]
     },
     "cs-RM7": {
         "name": "Insatiable",
+        "requirements": "Kein Ruinmaw in der Gruppe",
         "rewards": [
-            "10 experience each",
-            "“Savage Cuirass” design (Item RM06)"
+            "je 10 Erfahrung",
+            "“Savage Cuirass”-Plan (Gegenstand RM06)"
         ]
     },
     "mp-AN1": {
         "name": "A Harrowing Deal",
         "rewards": [
-            "“Ribbon of Friendship” (Item AN)"
+            "“Ribbon of Friendship” (Gegenstand AN)"
         ]
     },
     "mp-SA1": {
         "name": "Horns in the Night",
         "rewards": [
-            "“Crest of Frosthaven” (Item SA)"
+            "“Crest of Frosthaven” (Gegenstand SA)"
         ]
     },
     "mp-CA1": {
         "name": "Escape from Corruption",
         "rewards": [
-            "“Basin of Prophecy A” (Item CA A)",
-            "“Basin of Prophecy B” (Item CA B)"
+            "“Basin of Prophecy A” (Gegenstand CA A)",
+            "“Basin of Prophecy B” (Gegenstand CA B)"
         ]
     },
     "mp-HA1": {
         "name": "Major Annoyance",
         "rewards": [
-            "“No Nonsense Boots” (Item HA)"
+            "“No Nonsense Boots” (Gegenstand HA)"
+        ]
+    },
+    "gh2-0": {
+        "name": "Training Course",
+        "rewards": [
+            "je 2 Gold"
+        ]
+    },
+    "gh2-1": {
+        "name": "Bandit Camp",
+        "rewards": [
+            "je 10 Gold",
+            "+1 Kaufmannsgilden-Ansehen",
+            "+1 Militär-Ansehen"
+        ]
+    },
+    "gh2-2": {
+        "name": "Unheilvolle Krypta",
+        "rewards": [
+            "je 10 Erfahrung",
+            "+1 Dämonen-Ansehen",
+            "+1 Militär-Ansehen"
+        ]
+    },
+    "gh2-3": {
+        "name": "Frostsenke",
+        "rewards": [
+            "+1 Wohlstand",
+            "+1 Militär-Ansehen"
+        ]
+    },
+    "gh2-4": {
+        "name": "Krypta der Verdammten",
+        "rewards": [
+            "je 10 Erfahrung",
+            "+1 Dämonen-Ansehen"
+        ]
+    },
+    "gh2-5": {
+        "name": "Vergessene Krypta",
+        "rewards": [
+            "+1 Wohlstand",
+            "+1 Militär-Ansehen"
+        ]
+    },
+    "gh2-6": {
+        "name": "Faulige Krypta",
+        "rewards": [
+            "je 5 Gold",
+            "je 10 Erfahrung",
+            "+1 Dämonen-Ansehen",
+            "Fügt Stadt-Ereignis C-51 dem Deck hinzu"
+        ]
+    },
+    "gh2-7": {
+        "name": "Schwarzgrab",
+        "rewards": []
+    },
+    "gh2-8": {
+        "name": "Grabhöhle",
+        "rewards": [
+            "je 15 Gold",
+            "+2 Kaufmannsgilden-Ansehen"
+        ]
+    },
+    "gh2-9": {
+        "name": "Unheilvoller Riss",
+        "rewards": [
+            "+1 Wohlstand",
+            "+1 Militär-Ansehen",
+            "Fügt Weg-Ereignis R-30 dem Deck hinzu"
+        ]
+    },
+    "gh2-10": {
+        "name": "Gebirgspass",
+        "rewards": []
+    },
+    "gh2-11": {
+        "name": "Ritual Chamber",
+        "rewards": [
+            "je 10 Erfahrung",
+            "je 1 ✔",
+            "+1 Dämonen-Ansehen"
+        ]
+    },
+    "gh2-12": {
+        "name": "Inox-Lager",
+        "rewards": [
+            "je 20 Gold",
+            "+1 Kaufmannsgilden-Ansehen"
+        ]
+    },
+    "gh2-13": {
+        "name": "Aufstieg zur Eisklippe",
+        "rewards": [
+            [],
+            [
+                "je 30 Gold",
+                "je 20 Erfahrung",
+                "je 2 ✔",
+                "-1 Militär-Ansehen",
+                "Fügt Stadt-Ereignis C-39 dem Deck hinzu",
+                "Fügt Weg-Ereignis R-32 dem Deck hinzu"
+            ],
+            []
+        ]
+    },
+    "gh2-14": {
+        "name": "Echokammer",
+        "rewards": []
+    },
+    "gh2-15": {
+        "name": "Ebene der Elementarmächte",
+        "rewards": [
+            "je 20 Erfahrung",
+            "je 2 ✔",
+            "+1 Dämonen-Ansehen"
+        ]
+    },
+    "gh2-16": {
+        "name": "Diamantenmine",
+        "rewards": [
+            "je 20 Gold",
+            "+1 Kaufmannsgilden-Ansehen"
+        ]
+    },
+    "gh2-17": {
+        "name": "Dämonischer Riss",
+        "rewards": [
+            "+1 Wohlstand",
+            "-1 Dämonen-Ansehen",
+            "+2 Militär-Ansehen"
+        ]
+    },
+    "gh2-18": {
+        "name": "Ermittlungen",
+        "rewards": [
+            "je 15 Gold",
+            "+1 Wohlstand",
+            "-1 Kaufmannsgilden-Ansehen",
+            "+2 Militär-Ansehen"
+        ]
+    },
+    "gh2-19": {
+        "name": "Military Outpost",
+        "rewards": [
+            "je 25 Erfahrung",
+            "+2 Dämonen-Ansehen",
+            "-1 Militär-Ansehen"
+        ]
+    },
+    "gh2-20": {
+        "name": "Lagerhaus von Gloomhaven",
+        "rewards": [
+            "je 25 Erfahrung",
+            "+2 Dämonen-Ansehen",
+            "-1 Kaufmannsgilden-Ansehen"
+        ]
+    },
+    "gh2-21": {
+        "name": "The Ghost Fortress",
+        "rewards": [
+            "je 15 Gold",
+            "+2 Kaufmannsgilden-Ansehen",
+            "-1 Militär-Ansehen"
+        ]
+    },
+    "gh2-22": {
+        "name": "Doomcannon Demolition",
+        "rewards": [
+            "je 15 Gold",
+            "-1 Dämonen-Ansehen",
+            "+2 Kaufmannsgilden-Ansehen"
+        ]
+    },
+    "gh2-24": {
+        "name": "Gloomhaven-Platz B",
+        "rewards": []
+    },
+    "gh2-26": {
+        "name": "Zinnen von Gloomhaven B",
+        "rewards": []
+    },
+    "gh2-27": {
+        "name": "Höllenthron",
+        "rewards": [
+            [
+                "je 25 Gold",
+                "-10 Dämonen-Ansehen",
+                "+2 Kaufmannsgilden-Ansehen",
+                "-10 Militär-Ansehen",
+                "Fügt Stadt-Ereignis C-36 dem Deck hinzu",
+                "Fügt Stadt-Ereignis C-54 dem Deck hinzu",
+                "Fügt Stadt-Ereignis C-55 dem Deck hinzu",
+                "Fügt Weg-Ereignis R-37 dem Deck hinzu",
+                "Fügt Weg-Ereignis R-38 dem Deck hinzu",
+                "Öffnet Umschlag “Kaufmannsgilde”"
+            ],
+            [
+                "+1 Wohlstand",
+                "-10 Dämonen-Ansehen",
+                "-10 Kaufmannsgilden-Ansehen",
+                "+2 Militär-Ansehen",
+                "Fügt Stadt-Ereignis C-36 dem Deck hinzu",
+                "Fügt Stadt-Ereignis C-53 dem Deck hinzu",
+                "Fügt Stadt-Ereignis C-56 dem Deck hinzu",
+                "Fügt Weg-Ereignis R-38 dem Deck hinzu",
+                "Öffnet Umschlag “Militär”"
+            ]
+        ]
+    },
+    "gh2-28": {
+        "name": "Tempel des Sehers",
+        "rewards": [
+            [],
+            [],
+            [
+                "Schaltet ein zufälliges Nebenszenario frei"
+            ]
+        ]
+    },
+    "gh2-29": {
+        "name": "Versengter Gipfel",
+        "rewards": [
+            "je 10 Gold",
+            "+1 Wohlstand",
+            "+1 Militär-Ansehen"
+        ]
+    },
+    "gh2-30": {
+        "name": "Schrein der Tiefe",
+        "rewards": []
+    },
+    "gh2-31": {
+        "name": "Moderwald",
+        "rewards": [
+            [],
+            []
+        ]
+    },
+    "gh2-32": {
+        "name": "Savvas-Waffenkammer",
+        "rewards": [
+            [
+                "je 15 Gold"
+            ],
+            [
+                "je 15 Gold"
+            ],
+            [
+                "je 15 Gold"
+            ],
+            [
+                "je 45 Gold",
+                "je 20 Erfahrung",
+                "je 2 ✔",
+                "-1 Militär-Ansehen",
+                "Fügt Stadt-Ereignis C-38 dem Deck hinzu",
+                "Fügt Weg-Ereignis R-32 dem Deck hinzu"
+            ],
+            [
+                "je 45 Gold",
+                "je 20 Erfahrung",
+                "je 2 ✔",
+                "-1 Militär-Ansehen",
+                "Fügt Stadt-Ereignis C-38 dem Deck hinzu",
+                "Fügt Weg-Ereignis R-32 dem Deck hinzu"
+            ],
+            [
+                "je 15 Gold"
+            ]
+        ]
+    },
+    "gh2-33": {
+        "name": "Altes Verteidigungsnetzwerk",
+        "rewards": []
+    },
+    "gh2-34": {
+        "name": "Verfallenes Grab",
+        "rewards": [
+            [
+                "je 30 Gold"
+            ],
+            [
+                "je 30 Erfahrung",
+                "je 2 ✔"
+            ]
+        ]
+    },
+    "gh2-35": {
+        "name": "Reich der Stimme",
+        "rewards": [
+            "je 30 Erfahrung"
+        ]
+    },
+    "gh2-36": {
+        "name": "Verlassene Kanalisation",
+        "rewards": []
+    },
+    "gh2-37": {
+        "name": "Tiefe Ruinen",
+        "rewards": []
+    },
+    "gh2-38": {
+        "name": "Drakennest",
+        "rewards": []
+    },
+    "gh2-39": {
+        "name": "Üppige Grotte",
+        "rewards": [
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-40": {
+        "name": "Wetlands Ambush",
+        "rewards": []
+    },
+    "gh2-41": {
+        "name": "Die alte Zisterne",
+        "rewards": [
+            "+2 Wohlstand"
+        ]
+    },
+    "gh2-42": {
+        "name": "Secluded Valley",
+        "rewards": []
+    },
+    "gh2-43": {
+        "name": "Chasing Secrets",
+        "rewards": [
+            [
+                "+1 Wohlstand",
+                "Schaltet ein zufälliges Nebenszenario frei"
+            ],
+            [
+                "+1 Wohlstand"
+            ],
+            [
+                "+1 Wohlstand"
+            ]
+        ]
+    },
+    "gh2-44": {
+        "name": "Tempel der Elemente",
+        "rewards": [
+            "je 100 Gold",
+            "+1 Wohlstand",
+            "Dieses Geld muss sofort für Verbesserungen ausgegeben werden"
+        ]
+    },
+    "gh2-45": {
+        "name": "Ebene der Nacht",
+        "rewards": [
+            "+1 Wohlstand",
+            "Öffnet Umschlag “Kerze”"
+        ]
+    },
+    "gh2-46": {
+        "name": "Schicksalsgraben",
+        "rewards": []
+    },
+    "gh2-47": {
+        "name": "Sklavenpferche",
+        "rewards": []
+    },
+    "gh2-48": {
+        "name": "Tückische Kluft",
+        "rewards": []
+    },
+    "gh2-49": {
+        "name": "Stammesangriff",
+        "rewards": [
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-50": {
+        "name": "Alptraumspitze",
+        "rewards": [
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-51": {
+        "name": "Hort des Blicklosen",
+        "rewards": [
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-52": {
+        "name": "Schattenwald",
+        "rewards": [
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-53": {
+        "name": "Schrein der Stärke",
+        "rewards": [
+            "je 30 Erfahrung",
+            "je 2 ✔"
+        ]
+    },
+    "gh2-54": {
+        "name": "Die Leere",
+        "rewards": []
+    },
+    "gh2-55": {
+        "name": "The Last Stand",
+        "rewards": []
+    },
+    "gh2-56": {
+        "name": "Das Grauen",
+        "rewards": [
+            "je 50 Erfahrung",
+            "+5 Wohlstand"
+        ]
+    },
+    "gh2-57": {
+        "name": "Unter der Krypta",
+        "rewards": [
+            "Erhaltet “Scepter of Xorn” (Gegenstand 147)"
+        ]
+    },
+    "gh2-58": {
+        "name": "Eispalast",
+        "rewards": [
+            "je 10 Erfahrung",
+            "je 1 ✔",
+            "Erhaltet “Scepter of Xorn” (Gegenstand 147)",
+            "Fügt Weg-Ereignis R-39 dem Deck hinzu",
+            "Fügt Stadt-Ereignis C-66 dem Deck hinzu"
+        ]
+    },
+    "gh2-59": {
+        "name": "Nebeldickicht",
+        "rewards": [
+            "je 10 Gold",
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-60": {
+        "name": "Banditenwald",
+        "rewards": [
+            "je 10 Gold",
+            "+1 Wohlstand",
+            "Persönliche Quest 08 abgeschlossen"
+        ]
+    },
+    "gh2-61": {
+        "name": "Dangerous Grove",
+        "rewards": []
+    },
+    "gh2-62": {
+        "name": "Alchemielabor",
+        "rewards": [
+            "+1 Wohlstand",
+            "Persönliche Quest 09 abgeschlossen"
+        ]
+    },
+    "gh2-63": {
+        "name": "Schwindender Leuchtturm",
+        "rewards": [
+            "Persönliche Quest 04 abgeschlossen"
+        ]
+    },
+    "gh2-64": {
+        "name": "Roots of Chaos",
+        "rewards": [
+            "Persönliche Quest 10 abgeschlossen"
+        ]
+    },
+    "gh2-65": {
+        "name": "Hero's Mausoleum",
+        "rewards": [
+            "je 10 Erfahrung",
+            "je 1 ✔"
+        ]
+    },
+    "gh2-66": {
+        "name": "A Friend in Need",
+        "rewards": [
+            "je 15 Gold",
+            "Persönliche Quest 11 abgeschlossen"
+        ]
+    },
+    "gh2-67": {
+        "name": "Tempel des Zwielichts",
+        "rewards": [
+            "je 15 Gold",
+            "je 10 Erfahrung",
+            "Erhaltet “Spiralring” (Gegenstand 136)"
+        ]
+    },
+    "gh2-68": {
+        "name": "Versunkenes Schiff",
+        "rewards": [
+            "je 10 Gold"
+        ]
+    },
+    "gh2-69": {
+        "name": "Bucht der Fäulnis",
+        "rewards": [
+            "je 15 Erfahrung",
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-70": {
+        "name": "Unterwasserlagune",
+        "rewards": [
+            "je 10 Gold",
+            "je 10 Erfahrung"
+        ]
+    },
+    "gh2-71": {
+        "name": "Clockwork Factory",
+        "rewards": [
+            "je 10 Erfahrung",
+            "je 1 ✔"
+        ]
+    },
+    "gh2-72": {
+        "name": "Brunnen der Glücklosen",
+        "rewards": [
+            "je 15 Gold"
+        ]
+    },
+    "gh2-73": {
+        "name": "Ketteninsel",
+        "rewards": [
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-74": {
+        "name": "Windumtostes Hochland",
+        "rewards": [
+            "+1 Wohlstand",
+            "Erhaltet “Großer Krafttrank” (Gegenstand 53)"
+        ]
+    },
+    "gh2-75": {
+        "name": "Felssturzklamm",
+        "rewards": [
+            "Erhaltet “Ruby Talisman” (Gegenstand 152)"
+        ]
+    },
+    "gh2-76": {
+        "name": "Triefender Hain",
+        "rewards": [
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-77": {
+        "name": "Schwarmling-Nest",
+        "rewards": []
+    },
+    "gh2-78": {
+        "name": "Kammer der Geheimnisse",
+        "rewards": [
+            "+3 Wohlstand"
+        ]
+    },
+    "gh2-79": {
+        "name": "Lurker Assault",
+        "rewards": [
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-80": {
+        "name": "Verschollener Tempel",
+        "rewards": [
+            "je 100 Gold",
+            "+2 Wohlstand",
+            "Erhaltet “Herz des Abtrünnigen” (Gegenstand 133)",
+            "Dieses Geld muss sofort für Verbesserungen ausgegeben werden"
+        ]
+    },
+    "gh2-81": {
+        "name": "Überwucherter Friedhof",
+        "rewards": [
+            "je 10 Gold",
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-82": {
+        "name": "Syndikatsversteck",
+        "rewards": [
+            "+1 Wohlstand",
+            "Fügt Stadt-Ereignis C-72 dem Deck hinzu"
+        ]
+    },
+    "gh2-83": {
+        "name": "Verschollene Insel",
+        "rewards": [
+            "je 15 Gold"
+        ]
+    },
+    "gh2-84": {
+        "name": "Wilde Schlacht",
+        "rewards": [
+            "je 15 Erfahrung",
+            "je 1 ✔",
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-85": {
+        "name": "Crossroads Station",
+        "rewards": [
+            "je 1 ✔",
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-86": {
+        "name": "Lavagrube",
+        "rewards": [
+            "je 15 Gold"
+        ]
+    },
+    "gh2-87": {
+        "name": "Schwefelmine",
+        "rewards": [
+            "Erhaltet “Alter Bohrer” (Gegenstand 109)"
+        ]
+    },
+    "gh2-88": {
+        "name": "Arkane Bibliothek",
+        "rewards": [
+            "Fügt Stadt-Ereignis C-37 dem Deck hinzu"
+        ]
+    },
+    "gh2-89": {
+        "name": "Community Service",
+        "rewards": [
+            "Erhaltet 2× “Großer Heiltrank” (Gegenstand 37)"
+        ]
+    },
+    "gh2-90": {
+        "name": "Brandberg",
+        "rewards": []
+    },
+    "gh2-91": {
+        "name": "Schatten im Innern",
+        "rewards": []
+    },
+    "gh2-92": {
+        "name": "Chronal Anchor",
+        "rewards": [
+            "je 10 Erfahrung",
+            "Erhaltet “Temporal Matrix” (Gegenstand 144)"
+        ]
+    },
+    "gh2-93": {
+        "name": "Verwüstetes Dorf",
+        "rewards": [
+            "je 1 ✔"
+        ]
+    },
+    "gh2-94": {
+        "name": "A Watery Rescue",
+        "rewards": [
+            "je 10 Erfahrung",
+            "Erhaltet “Otherworldly Scepter” (Gegenstand 139)"
+        ]
+    },
+    "gh2-95": {
+        "name": "Cargo Ship",
+        "rewards": []
+    },
+    "gh2-96": {
+        "name": "Gassenschlägerei",
+        "rewards": [
+            "je 10 Gold"
+        ]
+    },
+    "gh2-97": {
+        "name": "Vermling Camp",
+        "rewards": [
+            "je 5 Erfahrung",
+            "+1 Wohlstand"
+        ]
+    },
+    "gh2-98": {
+        "name": "Metamorphic Fault",
+        "rewards": [
+            "je 10 Erfahrung",
+            "Erhaltet “Schädel des Hasses” (Gegenstand 111)"
+        ]
+    },
+    "gh2-99": {
+        "name": "Sintering Forge",
+        "rewards": [
+            "Erhaltet “Dawnblade” (Gegenstand 117)",
+            "Fügt Weg-Ereignis R-33 dem Deck hinzu"
+        ]
+    },
+    "gh2-100": {
+        "name": "Silence Falls",
+        "rewards": [
+            "+1 Wohlstand",
+            "Fügt Stadt-Ereignis C-60 dem Deck hinzu"
+        ]
+    },
+    "gh2-101": {
+        "name": "Gloomhaven Square A (Demon Allies)",
+        "rewards": [
+            "je 30 Erfahrung",
+            "+2 Dämonen-Ansehen",
+            "-10 Kaufmannsgilden-Ansehen",
+            "-10 Militär-Ansehen",
+            "Fügt Stadt-Ereignis C-36 dem Deck hinzu",
+            "Fügt Stadt-Ereignis C-55 dem Deck hinzu",
+            "Fügt Stadt-Ereignis C-56 dem Deck hinzu",
+            "Fügt Weg-Ereignis R-36 dem Deck hinzu",
+            "Öffnet Umschlag “Dämonen”"
+        ]
+    },
+    "gh2-102": {
+        "name": "Gloomhaven Square A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-103": {
+        "name": "Gloomhaven Battlements A (Merchant Allies)",
+        "rewards": []
+    },
+    "gh2-104": {
+        "name": "Gloomhaven Battlements A (Military Allies)",
+        "rewards": []
+    },
+    "gh2-201": {
+        "name": "A Night Out",
+        "rewards": [
+            "Erhaltet “Hooked Shield” (Gegenstand 153)"
+        ]
+    },
+    "gh2-202": {
+        "name": "An Unfortunate Intrusion",
+        "rewards": [
+            "Erhaltet “Fokusstrahl” (Gegenstand 154)"
+        ]
+    },
+    "gh2-203": {
+        "name": "Corrupted Apothecary",
+        "rewards": [
+            "Erhaltet “Etheric Elixir” (Gegenstand 155)"
+        ]
+    },
+    "gh2-204": {
+        "name": "Material Concerns",
+        "rewards": [
+            "Erhaltet “Flüsterklinge” (Gegenstand 156)"
+        ]
+    },
+    "gh2-205": {
+        "name": "Stone Defense",
+        "rewards": [
+            "Erhaltet “Steinamulett” (Gegenstand 157)"
+        ]
+    },
+    "gh2-206": {
+        "name": "Vermling Liberation",
+        "rewards": [
+            "Erhaltet “Astralmesser” (Gegenstand 158)"
+        ]
+    },
+    "gh2-207": {
+        "name": "Caravan Escort",
+        "rewards": [
+            "Erhaltet “Insignia of the Divine” (Gegenstand 159)"
+        ]
+    },
+    "gh2-208": {
+        "name": "Storage Fees",
+        "rewards": [
+            "Erhaltet “Werkzeuggürtel” (Gegenstand 160)"
+        ]
+    },
+    "gh2-209": {
+        "name": "Plane of Wild Beasts",
+        "rewards": [
+            "Erhaltet “Phasenfigur” (Gegenstand 161)"
+        ]
+    },
+    "gh2-210": {
+        "name": "Harvesting the Night",
+        "rewards": [
+            "Erhaltet “The Night's Caress” (Gegenstand 162)"
+        ]
+    },
+    "gh2-211": {
+        "name": "Plagued Crypt",
+        "rewards": [
+            "Erhaltet “Seuchenbrosche” (Gegenstand 163)"
+        ]
+    },
+    "gh2-212": {
+        "name": "Unnatural Insults",
+        "rewards": [
+            "Erhaltet “Todesmaske” (Gegenstand 164)"
+        ]
+    },
+    "gh2-213": {
+        "name": "Battle of the Bards",
+        "rewards": [
+            "Erhaltet “Virtuosenlaute” (Gegenstand 165)"
+        ]
+    },
+    "gh2-214": {
+        "name": "Corrupted Hunt",
+        "rewards": [
+            "Erhaltet “Mantel des Jägers” (Gegenstand 166)"
+        ]
+    },
+    "gh2-215": {
+        "name": "Aftermath",
+        "rewards": [
+            "Erhaltet “Arztkittel” (Gegenstand 167)"
+        ]
+    },
+    "gh2-216": {
+        "name": "Elemental Secrets",
+        "rewards": [
+            "Erhaltet “Elemental Vest” (Gegenstand 168)"
+        ]
+    },
+    "gh2-217": {
+        "name": "The Caged Bear",
+        "rewards": [
+            "Erhaltet “Befehlsstab” (Gegenstand 169)"
+        ]
+    },
+    "gh2-218": {
+        "name": "The Sands of Time",
+        "rewards": [
+            "Erhaltet “Crawling Carapace” (Gegenstand 170)"
         ]
     }
 }

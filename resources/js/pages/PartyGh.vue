@@ -23,7 +23,7 @@
                 ref="prosperity"
                 :sheet="sheet"
                 :loading="loading"
-                :prosperity.sync="prosperity"
+                v-model:prosperity="prosperity"
                 @change="store"/>
 
             <div class="w-full mt-8">
@@ -41,6 +41,7 @@
 
             <router-link to="/items">
                 <button class="mdc-button origin-left transform scale-90 mdc-button--raised pr-1">
+                    <span class="mdc-button__ripple"></span>
                     <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                     <span class="mdc-button__label">{{ $t('Items') }} 〉</span>
                 </button>
@@ -51,14 +52,15 @@
                     id="city-events"
                     :title="$t('City Event Decks')"
                     :label="$t('Add city events')"
-                    :items.sync="sheet.city"
+                    v-model:items="sheet.city"
                     @change="store"
                     @view="(item) => openCard(item, 'C')"
                     ref="city-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
+                    <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'C')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -68,14 +70,15 @@
                     id="road-events"
                     :title="$t('Road Event Decks')"
                     :label="$t('Add road events')"
-                    :items.sync="sheet.road"
+                    v-model:items="sheet.road"
                     @change="store"
                     @view="(item) => openCard(item, 'R')"
                     ref="road-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
+                    <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'R')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -86,14 +89,15 @@
                     id="rift-events"
                     :title="$t('Rift Event Decks')"
                     :label="$t('Add rift events')"
-                    :items.sync="sheet.rift"
+                    v-model:items="sheet.rift"
                     @change="store"
                     @view="(item) => openCard(item, 'RIFT')"
                     ref="rift-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
+                    <template #after-field="{checkedItems}">
                         <button @click="draw(checkedItems, 'RIFT')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -101,16 +105,18 @@
                 </selectable-list>
             </div>
 
+            <event-history :sheet="sheet" @change="store"/>
+
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Scenario level') }}</h2>
-                <scenario-level :value.sync="sheet.scenarioLevel" id="scenario-level"
+                <scenario-level v-model:value="sheet.scenarioLevel" id="scenario-level"
                                 @change="store" :characters="sheet.characters"
                 ></scenario-level>
             </div>
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
+                <notes v-model:value="sheet.notes" id="notes" :label="$t('Notes')"
                        @change="store" :is-local-campaign="isLocalCampaign"
                 ></notes>
             </div>
@@ -118,48 +124,52 @@
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Unlocks') }}</h2>
                 <table class="w-full mb-4">
-                    <tr v-for="(unlock, index) in unlocks" v-if="index < 8" :key="'unlock'+index"
-                        class="flex items-center border-b border-gray-600">
-                        <td class="-ml-2">
-                            <checkbox group="unlocks"
-                                      :id="'unlock'+index"
-                                      :checked="sheet.unlocks[index]"
-                                      @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
-                        </td>
-                        <td class="w-full flex items-center flex-wrap">
-                            <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
-                                {{ unlock.goal }}
-                            </label>
-                            <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
-                                <span class="material-icons mr-1">remove</span>
-                                <component v-bind:is="renderHtml(unlock.reward)"></component>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr class="flex items-center border-b border-gray-600">
-                        <td class="-ml-2">
-                            <checkbox group="unlocks" id="unlock8"
-                                      :checked="sheet.unlocks[8]"
-                                      @change="(id, isChecked) => {sheet.unlocks[8] = isChecked; store(); rerenderX();}"></checkbox>
-                        </td>
-                        <td class="w-full flex flex-wrap items-center">
-                            <span class="whitespace-normal md:whitespace-nowrap">
-                                {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('opened') }}
-                            </span>
-                        </td>
-                    </tr>
-                    <tr v-show="sheet.unlocks[8]" :key="'a'+renderX"
-                        class="flex items-center border-b border-gray-600">
-                        <td class="-ml-2">
-                            <checkbox disabled="disabled" readonly="readonly"
-                                      :checked="'BS' in sheet.characterUnlocks"></checkbox>
-                        </td>
-                        <td class="w-full flex flex-wrap">
-                            <text-field class="my-2" id="x-result" :label="$t('Envelope X solution')"
-                                        :value="sheet.xResult || ''" :max="10"
-                                        @change="xResultChanged"></text-field>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <template v-for="(unlock, index) in unlocks" :key="'unlock'+index">
+                            <tr v-if="index < 8"
+                                class="flex items-center border-b border-gray-600">
+                                <td class="-ml-2">
+                                    <checkbox group="unlocks"
+                                              :id="'unlock'+index"
+                                              :checked="sheet.unlocks[index]"
+                                              @change="(id, isChecked) => {sheet.unlocks[index] = isChecked; store()}"></checkbox>
+                                </td>
+                                <td class="w-full flex items-center flex-wrap">
+                                    <label :for="'unlock'+index" class="whitespace-normal md:whitespace-nowrap cursor-pointer">
+                                        {{ unlock.goal }}
+                                    </label>
+                                    <span class="whitespace-normal md:whitespace-nowrap ml-auto flex items-center text-right">
+                                        <span class="material-icons mr-1">remove</span>
+                                        <component :is="rewardComponents[index]"></component>
+                                    </span>
+                                </td>
+                            </tr>
+                        </template>
+                        <tr class="flex items-center border-b border-gray-600">
+                            <td class="-ml-2">
+                                <checkbox group="unlocks" id="unlock8"
+                                          :checked="sheet.unlocks[8]"
+                                          @change="(id, isChecked) => {sheet.unlocks[8] = isChecked; store(); rerenderX();}"></checkbox>
+                            </td>
+                            <td class="w-full flex flex-wrap items-center">
+                                <span class="whitespace-normal md:whitespace-nowrap">
+                                    {{ $t('Envelope') }} <span class="font-title">x</span> {{ $t('opened') }}
+                                </span>
+                            </td>
+                        </tr>
+                        <tr v-show="sheet.unlocks[8]" :key="'a'+renderX"
+                            class="flex items-center border-b border-gray-600">
+                            <td class="-ml-2">
+                                <checkbox disabled="disabled" readonly="readonly"
+                                          :checked="'BS' in sheet.characterUnlocks"></checkbox>
+                            </td>
+                            <td class="w-full flex flex-wrap">
+                                <text-field class="my-2" id="x-result" :label="$t('Envelope X solution')"
+                                            :value="sheet.xResult || ''" :max="10"
+                                            @change="xResultChanged"></text-field>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <unlock-characters :sheet="sheet" @change="store" :key="'b'+renderX"/>
@@ -173,27 +183,18 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
+import DrawsEventCards from "../mixins/DrawsEventCards";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
+import GameData from "../services/GameData";
 
 export default {
-    mixins: [GetCampaignName, SheetCalculations],
+    mixins: [GetCampaignName, SheetCalculations, DrawsEventCards],
     inject: ['appData'],
     data() {
         return {
             sheet: null,
             prosperity: 1,
-            prosperityItems: [
-                '001–014',
-                '015–021',
-                '022–028',
-                '029–035',
-                '036–042',
-                '043–049',
-                '050–056',
-                '057–063',
-                '064–070'
-            ],
             unlocks: [
                 {
                     goal: this.$t('5 Ancient Technology Global Achievements'),
@@ -240,12 +241,20 @@ export default {
     mounted() {
         this.render();
 
-        this.$bus.$on('campaigns-changed', this.render);
-        this.$bus.$on('remove-card', this.removeCard);
+        this.$listen('campaigns-changed', this.render);
+        this.$listen('remove-card', this.removeCard);
     },
-    destroyed() {
-        this.$bus.$off('campaigns-changed', this.render);
-        this.$bus.$off('remove-card', this.removeCard);
+    computed: {
+        // Cached so the rewards (HTML with components) don't remount on every render.
+        rewardComponents() {
+            return this.unlocks.map(unlock => ({template: `<span>${unlock.reward}</span>`}));
+        },
+        // '001–014' per prosperity level.
+        prosperityItems() {
+            const pad = number => String(number).padStart(3, '0');
+            const {lastItems} = new GameData().prosperity(this.sheet.game);
+            return lastItems.map((last, level) => pad((lastItems[level - 1] ?? 0) + 1) + '–' + pad(last));
+        }
     },
     methods: {
         async render() {
@@ -258,12 +267,7 @@ export default {
 
             await this.$nextTick();
 
-            this.$refs['reputation']?.reset();
-            this.$refs['donations']?.reset();
-            this.$refs['prosperity']?.reset();
-            this.$refs['city-events']?.reset();
-            this.$refs['road-events']?.reset();
-            this.$refs['rift-events']?.reset();
+            Object.values(this.$refs).forEach(ref => ref?.reset?.());
 
             this.loading = false;
         },
@@ -275,13 +279,6 @@ export default {
             this.sheet.store();
             this.storySyncer.store();
         },
-        draw(checkedItems, type) {
-            let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
-            if (id) {
-                const card = type + '-' + id;
-                this.$bus.$emit('open-event-card', {id: card, game: this.appData.game, viaDraw: true});
-            }
-        },
         openCard(id, type) {
             const card = type + '-' + id;
             this.$bus.$emit('open-event-card', {id: card, game: this.appData.game});
@@ -289,11 +286,6 @@ export default {
         removeCard(card) {
             this.sheet[card.folder][card.id] = false;
             this.store();
-        },
-        renderHtml(html) {
-            return {
-                template: `<span>${html}</span>`
-            };
         },
         async xResultChanged(xResult) {
             this.sheet.xResult = xResult;

@@ -5,7 +5,7 @@
                :titleDivider="true">
             <template v-slot:content>
                 <div class="flex flex-row justify-between" v-if="achievement">
-                    <div class="!my-4">
+                    <div class="my-4!">
                         <!-- TODO: Maybe add flavor text/story for the Achievements -->
                         <h2 v-if="!awardedFrom.isEmpty()" class="text-white">{{ $t('Gained from') }}:
                             <scenario-number class="ml-2"
@@ -26,11 +26,20 @@
                                              data-mdc-dialog-action="close"
                                              :scenario="scenario" :key="scenario.id"/>
                         </h2>
+
+                        <h2 v-if="!requiredIncompleteBy.isEmpty()"
+                            class="text-white mt-2">{{ $t('Blocks') }}:
+                            <scenario-number class="ml-2"
+                                             v-for="scenario in requiredIncompleteBy"
+                                             data-mdc-dialog-action="close"
+                                             :scenario="scenario" :key="scenario.id"/>
+                        </h2>
                     </div>
                     <div>
                         <button v-if="achievement.is_manual && achievement.manual_awarded"
                                 class="mdc-button mdc-button--raised origin-right transform scale-75 my-4"
                                 :disabled="appData.read_only" @click="removeManualAchievement(achievement)">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">delete</i>
                             <span class="mdc-button__label">{{ $t('Remove') }}</span>
                         </button>
@@ -68,10 +77,10 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-achievement', (data) => {
+        this.$listen('open-achievement', (data) => {
             this.open(data.id);
         });
-        this.$bus.$on('game-selected', () => {
+        this.$listen('game-selected', () => {
             this.unsetAchievement();
         });
     },
@@ -80,7 +89,10 @@ export default {
             return this.scenarioRepository.awardedFrom(this.achievement);
         },
         requiredBy() {
-            return this.scenarioRepository.requiredBy(this.achievement);
+            return this.scenarioRepository.requiredBy(this.achievement, ['complete']);
+        },
+        requiredIncompleteBy() {
+            return this.scenarioRepository.requiredBy(this.achievement, ['incomplete']);
         },
     },
     methods: {

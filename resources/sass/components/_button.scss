@@ -1,6 +1,19 @@
 .mdc-button {
+    // MDC sizes icons in rem; our root font is 18px, so pin them to MDC's intended 18px
+    --mdc-text-button-with-icon-icon-size: 18px;
+    --mdc-protected-button-with-icon-icon-size: 18px;
+
     &.gray {
         @apply bg-gray-600;
+    }
+
+    // A mouse click leaves focus on the button; only show the focus highlight for keyboard focus
+    &:not(:focus-visible) {
+        --mdc-text-button-focus-state-layer-opacity: 0;
+
+        &:hover {
+            --mdc-text-button-focus-state-layer-opacity: var(--mdc-text-button-hover-state-layer-opacity, 0.04);
+        }
     }
 
     @apply whitespace-nowrap;
@@ -11,4 +24,14 @@
             margin: 0 !important;
         }
     }
+}
+
+// Icon buttons only borrow --raised for its elevation, not its fixed button height
+.mdc-icon-button.mdc-button--raised {
+    height: auto;
+}
+
+// v4 drew the ripple as a pseudo-element; keep clicks on content placed directly in the button
+.mdc-button__ripple {
+    pointer-events: none;
 }

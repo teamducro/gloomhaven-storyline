@@ -1,3 +1,7 @@
+import GameData from "../services/GameData";
+
+const gameData = new GameData();
+
 class Card {
 
     constructor(str, game) {
@@ -16,6 +20,12 @@ class Card {
         // FC uses GH cards
         const gameFolder = this.game === 'fc' ? 'gh' : this.game;
 
+        if (this.game === 'gh2' && this.type === 'Q') {
+            // No GH2e personal quest card back exists, show the front on both sides.
+            const front = `/img/cards/gh2/quest/${this.id}.jpg`;
+            return [front, front];
+        }
+
         if (["R", "C", "RIFT", "SR", "SO", "WR", "WO", "B"].includes(this.type)) {
             return [`/img/cards/${gameFolder}/${this.folder}/${this.id}-f.jpg`, `/img/cards/${gameFolder}/${this.folder}/${this.id}-b.jpg`];
         } else if (this.type === "Q") {
@@ -23,6 +33,20 @@ class Card {
         }
 
         return [];
+    }
+
+    get outcomes() {
+        return this.hasOutcomeSections ? Object.keys(this.sections) : ['A', 'B'];
+    }
+
+    // GH2e backs hold 1–4 outcomes at positions listed in `events`; other games split the back in two halves.
+    get hasOutcomeSections() {
+        return Object.keys(gameData.events(this.game)).length > 0;
+    }
+
+    // GH2e: where each outcome starts on the back, in % of its height
+    get sections() {
+        return gameData.events(this.game)[`${this.type}-${this.id}`] || {A: 0};
     }
 
     get folder() {

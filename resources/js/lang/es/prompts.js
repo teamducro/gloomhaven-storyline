@@ -1,13 +1,13 @@
 export default {
     "dragon": {
-        "1": "Devolvéis el tesoro al Draco. Obtienes el logro global “El Draco Auxiliado”. Agrega el Evento de Ciudad 75 y el Evento de Viaje 66 al mazo",
-        "2": "No ayudásteis al Draco .",
+        "1": "Devolvéis el tesoro al Draco. Obtenéis el logro global “El Draco auxiliado”. Añadid el evento de Ciudad 75 y el evento de Camino 66 al mazo",
+        "2": "No ayudáis al Draco.",
         "title": "Amigo o enemigo",
-        "text": "Recuperasteis el tesoro del Draco. ¿Se lo devolvéis al Draco o aceptásis el trabajo de intentar matar al Draco?"
+        "text": "Recuperasteis el tesoro del Draco. ¿Se lo devolvéis al Draco o seguís las órdenes del Capitán de la Guardia e intentáis matar al Draco?"
     },
     "burningMountain": {
         "1": "Conclusión A: Decides terminar tu turno en 'G' y retirar uno de los objetos del juego.",
-        "2": "Conclusión B: Después de saquear el tesoro, todos los personajes regresaron a la entrada antes de agotarse. ",
+        "2": "Conclusión B: Después de saquear el tesoro, todos los personajes regresaron a la entrada antes de agotarse.",
         "title": "Escapar de la montaña ardiente",
         "text": "Saqueasteis el tesoro. ¿Intentáis escapar con todos los artefactos pese a las advertencias?"
     },
@@ -26,7 +26,7 @@ export default {
     },
     "searchPiecesOfAnArtifact": {
         "1": "Todos los enemigos son asesinados.",
-        "2": "Encontrais más piezas del dispositivo de apertura de fisuras.",
+        "2": "Encontráis más piezas del dispositivo de apertura de fisuras.",
         "title": "Buscando piezas del dispositivo de apertura de fisuras",
         "text": "¿Conseguisteis matar a todos los enemigos?"
     },
@@ -47,7 +47,7 @@ export default {
         "2": "B: Ayudasteis a los Humanos",
         "3": "C: Luchasteis contra los 2 bandos",
         "title": "Guerra de los Demonios",
-        "text": "¿Qué bando elegiste?"
+        "text": "¿Qué bando elegisteis?"
     },
     "escapeFromTheHusk": {
         "1": "Todos los personajes escaparon",
@@ -56,8 +56,8 @@ export default {
         "text": "¿Todos los personajes escaparon por una salida?"
     },
     "undeadTerrors": {
-        "1": "Le dáis la poción a Selandre.",
-        "2": "Le decis a Selandre que la poción fue destruida.",
+        "1": "Le dais la poción a Selandre.",
+        "2": "Le decís a Selandre que la poción fue destruida.",
         "title": "¿Podéis confiar en Selandre?",
         "text": "¿Escucháis las últimas palabras de Dominic o escucháis a vuestra codicia?"
     },
@@ -70,7 +70,7 @@ export default {
     },
     "unseenPlight": {
         "1": "Habéis matado a Guttermaw, reclamando su recompensa.",
-        "2": "Salvásteis a los niños, cumpliendo la solicitud de Feigrin",
+        "2": "Salvasteis a los niños, cumpliendo la solicitud de Feigrin",
         "title": "Casas y guaridas rotas",
         "text": "¿Trajisteis la muerte o salvasteis vidas?"
     },
@@ -81,50 +81,50 @@ export default {
         "4": "3",
         "5": "4",
         "6": "5",
-        "title": "Starting Morale",
-        "text": "How many City Guards are still on the map?"
+        "title": "Moral inicial",
+        "text": "¿Cuántos Guardias de la Ciudad quedan aún en el mapa?"
     },
     "algoxAltercation": {
-        "1": "Snowdancer is dead.",
-        "2": "Frozen Fist is dead.",
-        "title": "Algox altercation",
-        "text": "Which side did you choose?"
+        "1": "Danzanieves ha muerto.",
+        "2": "Puño helado ha muerto.",
+        "title": "Altercado de los algox",
+        "text": "¿Qué bando elegisteis?"
     },
     "finalNegotiation": {
-        "1": "Try to broker peace with the automatons",
-        "2": "Destroy them",
-        "title": "Final Negotiation",
-        "text": "Which path will you choose?"
+        "1": "Intentar negociar la paz con los autómatas",
+        "2": "Destruirlos",
+        "title": "Negociación final",
+        "text": "¿Qué camino elegiréis?"
     },
     "friendOfTheFishKing": {
-        "1": "Yes",
+        "1": "Sí",
         "2": "No",
-        "title": "Friend of the Fish King",
-        "text": "Did you agree to the Fish King's proposition?"
+        "title": "Amistad del Rey del Mar",
+        "text": "¿Aceptasteis la propuesta del Rey del Mar?"
     },
     "acceptTheAscension": {
-        "1": "Yes",
+        "1": "Sí",
         "2": "No",
-        "title": "Accept the Ascension",
-        "text": "Did you accept the Fish King's ascension?"
+        "title": "Aceptar la ascensión",
+        "text": "¿Aceptasteis la ascensión del Rey del Mar?"
     },
     "brothersSurvival": {
-        "1": "Yes",
+        "1": "Sí",
         "2": "No",
-        "title": "Brother' Survival",
-        "text": "Did both brothers survive?"
+        "title": "Supervivencia de los hermanos",
+        "text": "¿Sobrevivieron ambos hermanos?"
     },
     "rattuscasShare": {
-        "1": "Yes",
+        "1": "Sí",
         "2": "No",
-        "title": "Rattusca's Share",
-        "text": "Did you give Rattusca her share?"
+        "title": "La parte de Rattusca",
+        "text": "¿Le disteis a Rattusca su parte?"
     },
     "peaceNegotiations": {
-        "1": "Support Scabwit (Vermlings)",
-        "2": "Support Yoglang (Algox)",
-        "title": "Peace Negotiations",
-        "text": "Who did you support in the brawl?"
+        "1": "Apoyar a Scabwit (infestores)",
+        "2": "Apoyar a Yoglang (algox)",
+        "title": "Negociaciones de paz",
+        "text": "¿A quién apoyasteis en la pelea?"
     },
     "episodesOvercome": {
         "1": "1",
@@ -132,8 +132,8 @@ export default {
         "3": "3",
         "4": "4",
         "5": "5",
-        "title": "Episodes Overcome",
-        "text": "How many episodes did you overcome?"
+        "title": "Episodios superados",
+        "text": "¿Cuántos episodios superasteis?"
     },
     "pylonsDestroyed": {
         "1": "0",
@@ -143,8 +143,8 @@ export default {
         "5": "4",
         "6": "5",
         "7": "6",
-        "title": "Pylons Destroyed",
-        "text": "How many pylons were destroyed?"
+        "title": "Pilones destruidos",
+        "text": "¿Cuántos pilones fueron destruidos?"
     },
     "wagonsEscaped": {
         "1": "1",
@@ -152,41 +152,90 @@ export default {
         "3": "3",
         "4": "4",
         "5": "5",
-        "title": "Wagons Escaped",
-        "text": "How many wagons escaped?"
+        "title": "Vagones escapados",
+        "text": "¿Cuántos vagones escaparon?"
     },
     "mindtheifsWill": {
-        "1": "Automaton destroyed, technology given to vermlings",
-        "2": "Automaton destroyed, technology kept",
-        "3": "Mind control device disabled",
-        "title": "Mindtheif's Will",
-        "text": "What did you do with the mind control device?"
+        "1": "Autómata destruido, tecnología entregada a los infestores",
+        "2": "Autómata destruido, tecnología conservada",
+        "3": "Dispositivo de control mental desactivado",
+        "title": "La voluntad del Ladrón mental",
+        "text": "¿Qué hicisteis con el dispositivo de control mental?"
     },
     "hungryMawDead": {
-        "1": "Yes",
+        "1": "Sí",
         "2": "No",
-        "title": "Hungry Maw Dead",
-        "text": "Is the Hungry Maw dead?"
+        "title": "Hambre Eterna muerta",
+        "text": "¿Ha muerto Hambre Eterna?"
     },
     "cratesLooted": {
         "1": "1",
         "2": "2",
         "3": "3",
         "4": "4",
-        "title": "Crates Looted",
-        "text": "How many crates did you loot?"
+        "title": "Cajas saqueadas",
+        "text": "¿Cuántas cajas saqueasteis?"
     },
     "embellismentsCompleted": {
-        "1": "Seven or fewer",
-        "2": "Eight to fifteen",
-        "3": "Sixteen or more",
-        "title": "Embellisments Completed",
-        "text": "How many embellisments did you complete?"
+        "1": "Siete o menos",
+        "2": "De ocho a quince",
+        "3": "Dieciséis o más",
+        "title": "Adornos completados",
+        "text": "¿Cuántos adornos completasteis?"
     },
     "sunAgatesReturned": {
-        "1": "Yes",
+        "1": "Sí",
         "2": "No",
-        "title": "Sun Agates Returned",
-        "text": "Did you return the sun agates to Derrick?"
+        "title": "Ágatas solares devueltas",
+        "text": "¿Devolvisteis las ágatas solares a Derrick?"
+    },
+    "gh2-13": {
+        "1": "Sección 18.3",
+        "2": "Sección 44.3",
+        "3": "Sección 51.1",
+        "title": "Ascenso al Risco de Hielo",
+        "text": "¿Qué sección de conclusión leísteis?"
+    },
+    "gh2-27": {
+        "1": "Sección 10.1",
+        "2": "Sección 50.2",
+        "title": "Trono infernal",
+        "text": "¿Qué sección de conclusión leísteis?"
+    },
+    "gh2-28": {
+        "1": "Sección 72.3",
+        "2": "Sección 75.3",
+        "3": "Sección 76.4",
+        "title": "Templo del Vidente",
+        "text": "¿Qué sección de conclusión leísteis?"
+    },
+    "gh2-31": {
+        "1": "Sección 26.6",
+        "2": "Sección 76.1",
+        "title": "Bosque decrépito",
+        "text": "¿Qué sección de conclusión leísteis?"
+    },
+    "gh2-32": {
+        "1": "Sección 16.3",
+        "2": "Sección 16.3 y 81.5",
+        "3": "Sección 62.5",
+        "4": "Sección 78.6",
+        "5": "Sección 78.6 y 81.5",
+        "6": "Sección 81.5",
+        "title": "Armería savvas",
+        "text": "¿Qué sección de conclusión leísteis?"
+    },
+    "gh2-34": {
+        "1": "Sección 36.4",
+        "2": "Sección 89.2",
+        "title": "Tumba ancestral",
+        "text": "¿Qué sección de conclusión leísteis?"
+    },
+    "gh2-43": {
+        "1": "Sección 80.3",
+        "2": "Sección 106.1",
+        "3": "Sección 132.4",
+        "title": "Chasing Secrets",
+        "text": "¿Qué sección de conclusión leísteis?"
     }
 }

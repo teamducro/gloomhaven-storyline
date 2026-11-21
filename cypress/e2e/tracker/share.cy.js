@@ -3,7 +3,8 @@ import utilities from "../utilities";
 describe('Share', () => {
 
     it('It can share with new link format', () => {
-        cy.visit('#/shared/1/local/N4RozgjARAXKYBcQGMC+AaEBDA5gYQCVZQswBtKAcUIFkoBdDbaguubAdxAk2QHseIADYgADEywAFAGIBlYp268BmEeMxgATAsQomYAMw6kAS30AWYyDOogA');
+        // Straight to the tracker: the website redirect is covered by the next test, and slows a cold start past the timeout.
+        utilities.visitShared('/tracker/#/shared/1/local/N4RozgjARAXKYBcQGMC+AaEBDA5gYQCVZQswBtKAcUIFkoBdDbaguubAdxAk2QHseIADYgADEywAFAGIBlYp268BmEeMxgATAsQomYAMw6kAS30AWYyDOogA');
 
         utilities.isNodeVisible(1);
         utilities.isNodeVisible(2);
@@ -19,7 +20,7 @@ describe('Share', () => {
     });
 
     it('It shares the party sheet', () => {
-        cy.visit('/tracker/#/shared/1/local/N4RozgjARAXKDGALAdgVwDboDQmVKOADvGpjmAC4gCWOFA2gLoC+OAhgOYDCASrKGzD0oAcV4BZKC3ZiekuCDYB3EBBzwA9mpDoQABlbhECRG3qqc2q5Zv6ce+47vOHLp672McAEwh7-ONTewFAA7NAwdmEATLBRoQDMcQ5hACzJWGEArBlhAGy5oaGFAByFAJy5JXpVEVElsZEpJUlNmSXpbVAlOV0lBX3FfWV9lV3lNeN1KeWNUeWt853zvfqGeABiGhoABABCbABOBCCE1HlZOIfRrqjmHu6PLizMQA/party');
+        utilities.visitShared('/tracker/#/shared/1/local/N4RozgjARAXKDGALAdgVwDboDQmVKOADvGpjmAC4gCWOFA2gLoC+OAhgOYDCASrKGzD0oAcV4BZKC3ZiekuCDYB3EBBzwA9mpDoQABlbhECRG3qqc2q5Zv6ce+47vOHLp672McAEwh7-ONTewFAA7NAwdmEATLBRoQDMcQ5hACzJWGEArBlhAGy5oaGFAByFAJy5JXpVEVElsZEpJUlNmSXpbVAlOV0lBX3FfWV9lV3lNeN1KeWNUeWt853zvfqGeABiGhoABABCbABOBCCE1HlZOIfRrqjmHu6PLizMQA/party');
 
         cy.get('input[aria-labelledby="reputation"]').should('have.value', '20');
         cy.get('input[aria-labelledby="donations"]').should('have.value', '1000');

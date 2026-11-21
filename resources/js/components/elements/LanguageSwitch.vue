@@ -1,22 +1,26 @@
 <template>
-    <div class="language-switch mdc-select w-full">
-        <div class="mdc-select__anchor w-full">
-            <i class="mdc-select__dropdown-icon"></i>
-            <div class="mdc-select__selected-text">
-                {{ languages[current] }} {{ flags[current] }}
-            </div>
+    <div class="language-switch mdc-select mdc-select--filled w-full">
+        <div class="mdc-select__anchor w-full" role="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="mdc-select__ripple"></span>
+            <span class="mdc-select__selected-text-container">
+                <span class="mdc-select__selected-text">
+                    {{ languages[current] }} {{ flags[current] }}
+                </span>
+            </span>
+            <select-dropdown-icon></select-dropdown-icon>
             <span class="mdc-floating-label mdc-floating-label--float-above">{{ $t('Language') }}</span>
             <div class="mdc-line-ripple"></div>
         </div>
 
         <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
-            <ul class="mdc-list">
-                <li v-for="(name, lang) in languages"
+            <ul class="mdc-deprecated-list" role="listbox">
+                <li role="option" v-for="(name, lang) in languages"
                     :key="lang" :data-value="lang"
-                    class="mdc-list-item cursor-pointer"
+                    class="mdc-deprecated-list-item cursor-pointer"
                     :aria-selected="lang === current"
-                    :class="{'mdc-list-item--selected': lang === current}">
-                    <span class="mr-6">{{ flags[lang] }}</span> {{ name }}
+                    :class="{'mdc-deprecated-list-item--selected': lang === current}">
+                    <span class="mdc-deprecated-list-item__ripple"></span>
+                    <span class="mdc-deprecated-list-item__text"><span class="mr-6">{{ flags[lang] }}</span> {{ name }}</span>
                 </li>
             </ul>
         </div>
@@ -29,22 +33,13 @@ import store from "store/dist/store.modern";
 import {MDCSelect} from "@material/select/component";
 import Helpers from "../../services/Helpers";
 import UserRepository from "../../apiRepositories/UserRepository";
+import {getInitialLanguage, languages} from "../../services/app/setInitialLanguage";
 
 export default {
     data() {
         return {
             current: null,
-            languages: {
-                'en': 'English',
-                'fr': 'Français',
-                'it': 'Italiano',
-                'de': 'Deutsch',
-                'es': 'Español',
-                'pl': 'Polski',
-                'ru': 'Pусский',
-                'hu': 'Magyar',
-                'pt': 'Português (Brasil)', // pt-br
-            },
+            languages,
             flags: {
                 'en': '🇺🇸',
                 'fr': '🇫🇷',
@@ -54,7 +49,13 @@ export default {
                 'pl': '🇵🇱',
                 'ru': '🇷🇺',
                 'hu': '🇭🇺',
-                'pt': '🇧🇷', // pt-br
+                'pt': '🇵🇹',
+                'br': '🇧🇷',
+                'cs': '🇨🇿',
+                'ko': '🇰🇷',
+                'th': '🇹🇭',
+                'zh': '🇨🇳',
+                'tw': '🇹🇼',
             },
             userRepository: new UserRepository,
         }
@@ -73,12 +74,12 @@ export default {
             this.select.listen('MDCSelect:change', this.changeLanguage);
         }
     },
-    destroyed() {
+    unmounted() {
         this.select?.destroy()
     },
     methods: {
         open() {
-            document.querySelector('.language-switch .mdc-select__selected-text').click();
+            document.querySelector('.language-switch .mdc-select__anchor').click();
         },
         changeLanguage() {
             this.current = this.select.value;
@@ -86,24 +87,8 @@ export default {
             store.set('lang', this.current);
             this.updateUserLanguage();
         },
-        getInitialLanguage() {
-            let lang = store.get('lang');
-
-            if (!lang) {
-                const locale = navigator.language.substring(0, 2);
-                if (this.validLanguage(locale)) {
-                    lang = locale;
-                    store.set('lang', lang);
-                }
-            }
-
-            return lang;
-        },
         setInitialLanguage() {
-            this.current = this.getInitialLanguage() || window.i18n.locale;
-        },
-        validLanguage(lang) {
-            return this.languages.hasOwnProperty(lang);
+            this.current = getInitialLanguage() || window.i18n.locale;
         },
         updateUserLanguage(wait = true) {
             if (Helpers.loggedIn() && typeof app.user?.lang === 'undefined' && wait === true) {

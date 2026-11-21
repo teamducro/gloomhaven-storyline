@@ -35,6 +35,7 @@
 
 <script>
 export default {
+    emits: ['select'],
     props: {
         id: {
             type: String,

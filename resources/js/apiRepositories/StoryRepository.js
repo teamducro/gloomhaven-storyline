@@ -55,7 +55,7 @@ export default class StoryRepository extends ApiRepository {
                 }
                 this.storeStory(storyResponse);
 
-                // Toast has a single slot, so report all conflicts at once. Escape: Toast compiles the message as a template.
+                // Toast has a single slot, so report all conflicts at once. Escape: Toast renders the message as HTML.
                 const conflicts = [...new Set((storyResponse.conflicted_keys || []).map(key => _.escape(this.describeConflictedKey(key))))];
                 if (conflicts.length) {
                     window.app.$bus.$emit('toast', window.app.$t('sync-conflict', {resources: conflicts.join(', ')}), false);
@@ -64,6 +64,11 @@ export default class StoryRepository extends ApiRepository {
                 return new Story(storyResponse);
             })
             .catch(e => {
+                if (this.isDeleted(e)) {
+                    this.removeDeleted(story);
+                    return;
+                }
+
                 let message = 'Failed to save progress, try again later.';
 
                 if (e.response && e.response.status === 403 && e.response.data.message.includes('expired')) {
@@ -85,8 +90,18 @@ export default class StoryRepository extends ApiRepository {
         await Promise.all(promises);
     }
 
+    // Resolves null when the story was deleted on the server, it's then removed locally.
     async find(story, updateStoryIfNeeded = true) {
-        const response = await this.api.withToken(story.token).get('stories/' + story.id);
+        let response;
+        try {
+            response = await this.api.withToken(story.token).get('stories/' + story.id);
+        } catch (e) {
+            if (this.isDeleted(e)) {
+                this.removeDeleted(story);
+                return null;
+            }
+            throw e;
+        }
 
         if (updateStoryIfNeeded) {
             return await this.updateStoryIfNeeded(response.data, story.token);
@@ -109,6 +124,9 @@ export default class StoryRepository extends ApiRepository {
             && localStory.read_only === false
             && localStory.updated_at.isAfter(remoteStory.updated_at)) {
             remoteStory = await this.update(localStory);
+            if (!remoteStory) {
+                return;
+            }
         } else {
             this.storeStory(response, token);
         }
@@ -142,6 +160,42 @@ export default class StoryRepository extends ApiRepository {
             .toArray();
         const storiesToStore = stories.merge(otherStories);
         store.set('stories', storiesToStore);
+    }
+
+    // Permanently deletes the campaign for all devices (patrons only), then removes it locally.
+    async destroy(story) {
+        await this.api.delete('stories/' + story.id);
+        this.remove(story);
+    }
+
+    // Only a missing story counts (route model binding on stories/{story}), a 404 from a misrouted request or an outage page must not wipe local progress.
+    isDeleted(e) {
+        return e.response?.status === 404 && /^No query results for model \[App\\Models\\Story\]/.test(e.response.data?.message);
+    }
+
+    // The campaign was deleted by its owner on another device. Its data may hold unsynced progress, so offer to keep it as the local campaign.
+    async removeDeleted(story) {
+        const data = store.get(story.campaignId);
+        this.remove(story);
+        const campaignId = window.app.campaignId === story.campaignId ? 'local' : window.app.campaignId;
+        await window.app.switchCampaign(campaignId);
+        // A shared campaign that was never played here is stored as {}, keeping it would wipe the local campaign.
+        if (_.isEmpty(data)) {
+            // Switching toasts as well, so toast afterwards to keep this message visible.
+            window.app.$bus.$emit('toast', window.app.$t('campaign-deleted', {name: _.escape(story.name)}), false);
+            return;
+        }
+        window.app.$bus.$emit('open-confirm', {
+            title: story.name,
+            message: window.app.$t('campaign-deleted', {name: story.name}),
+            note: window.app.$t('campaign-deleted-keep'),
+            callback: () => {
+                store.set('local', data);
+                if (window.app.campaignId === 'local') {
+                    window.app.switchCampaign('local');
+                }
+            },
+        });
     }
 
     remove(story) {

@@ -10,13 +10,13 @@
                           @closed="achievementToAddClosed">
                     <template v-slot:trigger>
                         <button type="button"
-                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full transform transition-transform"
+                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 bg-black2-50! rounded-full transform transition-transform"
                                 :class="{'rotate-45': dropDownClose}">
                             add
                         </button>
                     </template>
 
-                    <div class="mdc-list w-40">
+                    <div class="mdc-deprecated-list w-40">
                         <p class="text-white text-sm">
                             {{ $t('Add achievements gained by events other than completing scenarios manually') }}.
                         </p>
@@ -29,11 +29,12 @@
                             <span class="mdc-line-ripple"></span>
                         </label>
 
-                        <ul v-if="!achievementsToAdd.isEmpty()" class="mdc-list" aria-hidden="true"
+                        <ul v-if="!achievementsToAdd.isEmpty()" class="mdc-deprecated-list" aria-hidden="true"
                             aria-orientation="vertical" tabindex="-1">
                             <li v-for="achievement in achievementsToAdd"
-                                class="mdc-list-item cursor-pointer" @click="addAchievement(achievement)">
-                                <span class="mdc-list-item__text">{{ $t(achievement.name) }}</span>
+                                class="mdc-deprecated-list-item cursor-pointer" @click="addAchievement(achievement)">
+                                <span class="mdc-deprecated-list-item__ripple"></span>
+                                <span class="mdc-deprecated-list-item__text">{{ $t(achievement.name) }}</span>
                             </li>
                         </ul>
                     </div>
@@ -41,75 +42,73 @@
             </div>
 
             <div v-if="appData.game !== 'fh'" class="w-full flex justify-center">
-                <h1>{{ $t('Global') }} {{ $t('Achievements') }}</h1>
+                <h1>{{ $t('Global Achievements') }}</h1>
             </div>
             <div v-if="appData.game !== 'fh'" class="w-full flex justify-center">
-                <ul v-if="achievements" id="global-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
+                <ul v-if="achievements" id="global-achievements" class="mdc-deprecated-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="global-list">
-                    <li v-for="achievement in achievements.items"
-                        v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
-                        :key="achievement.id"
-                        class="mdc-list-item h-auto cursor-pointer"
-                        :tabindex="achievement.id">
-                        <template>
-                    <span class="mdc-list-item__text opacity-75">
-                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
-                    </span>
-                        </template>
-                    </li>
+                    <template v-for="achievement in achievements.items" :key="achievement.id">
+                        <li v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
+                            class="mdc-deprecated-list-item h-auto cursor-pointer"
+                            :tabindex="achievement.id">
+                            <span class="mdc-deprecated-list-item__ripple"></span>
+                            <span class="mdc-deprecated-list-item__text opacity-75">
+                                {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
+                            </span>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </div>
         <div v-if="appData.game !== 'fh'" class="pt-4 pb-4 px-4 flex flex-wrap">
             <div class="w-full flex justify-center">
-                <h1>{{ $t('Party') }} {{ $t('Achievements') }}</h1>
+                <h1>{{ $t('Party Achievements') }}</h1>
             </div>
             <div class="w-full flex justify-center">
-                <ul v-if="achievements" id="party-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
+                <ul v-if="achievements" id="party-achievements" class="mdc-deprecated-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="party-list">
-                    <li v-for="achievement in achievements.items"
-                        v-if="achievement.isParty() && achievement.awarded"
-                        :key="achievement.id"
-                        class="mdc-list-item h-auto cursor-pointer"
-                        :tabindex="achievement.id">
-                        <template>
-                    <span class="mdc-list-item__text opacity-75">
-                        {{ $t(achievement.name) }}
-                    </span>
-                        </template>
-                    </li>
+                    <template v-for="achievement in achievements.items" :key="achievement.id">
+                        <li v-if="achievement.isParty() && achievement.awarded"
+                            class="mdc-deprecated-list-item h-auto cursor-pointer"
+                            :tabindex="achievement.id">
+                            <span class="mdc-deprecated-list-item__ripple"></span>
+                            <span class="mdc-deprecated-list-item__text opacity-75">
+                                {{ $t(achievement.name) }}
+                            </span>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </div>
         <div v-else class="pt-4 pb-4 px-4 flex flex-wrap">
             <div class="w-full flex justify-center">
-                <h1>{{ $t('Campaign') }} {{ $t('Stickers') }}</h1>
+                <h1>{{ $t('Campaign Stickers') }}</h1>
             </div>
             <div class="w-full flex justify-center">
-                <ul v-if="achievements" id="campaign-achievements" class="mdc-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
+                <ul v-if="achievements" id="campaign-achievements" class="mdc-deprecated-list bg-dark-gray2-75 p-2 rounded-lg mt-4"
                     ref="campaign-list">
-                    <li v-for="achievement in achievements.items"
-                        v-if="achievement.isCampaign() && achievement.awarded && !achievement.hidden"
-                        :key="achievement.id"
-                        class="mdc-list-item h-auto cursor-pointer"
-                        :tabindex="achievement.id">
-                        <template>
-                    <span class="mdc-list-item__text opacity-75">
-                        {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
-                    </span>
-                        </template>
-                    </li>
+                    <template v-for="achievement in achievements.items" :key="achievement.id">
+                        <li v-if="achievement.isCampaign() && achievement.awarded && !achievement.hidden"
+                            class="mdc-deprecated-list-item h-auto cursor-pointer"
+                            :tabindex="achievement.id">
+                            <span class="mdc-deprecated-list-item__ripple"></span>
+                            <span class="mdc-deprecated-list-item__text opacity-75">
+                                {{ $t(achievement.name) }} {{ (achievement.count > 1 ? `(${achievement.count})` : '') }}
+                            </span>
+                        </li>
+                    </template>
                 </ul>
             </div>
         </div>
     </div>
     <div v-else>
-        <h1 class="pt-16 text-center">{{ $t('No achievements in ') }} {{ $t(game) }}</h1>
+        <h1 class="pt-16 text-center">{{ $t('No achievements in {game}', {game: $t(game)}) }}</h1>
     </div>
 </template>
 
 <script>
 import AchievementRepository from "../repositories/AchievementRepository";
+import SheetRepository from "../repositories/SheetRepository";
 import {MDCList} from "@material/list/component";
 import {MDCTextField} from "@material/textfield/component";
 
@@ -138,9 +137,9 @@ export default {
             this.setAchievements();
         }
 
-        this.$bus.$on('achievements-updated', this.setAchievements);
+        this.$listen('achievements-updated', this.setAchievements);
     },
-    destroyed() {
+    unmounted() {
         if (this.globalList) {
             this.globalList.destroy();
         }
@@ -150,13 +149,16 @@ export default {
         if (this.campaignList) {
             this.campaignList.destroy();
         }
-        this.$bus.$off('achievements-updated', this.setAchievements);
     },
     methods: {
         async setAchievements() {
             this.game = this.appData.game;
             this.enabled = this.game !== 'jotl';
-            this.achievements = app.achievements.sortBy('name');
+            // Bonus content achievements stay listed only while their pack is enabled.
+            const sheet = new SheetRepository().make(app.game);
+            this.achievements = app.achievements
+                .filter(achievement => !achievement.requires_event || sheet.hasEvent(achievement.requires_event))
+                .sortBy('name');
 
             await this.$nextTick();
 

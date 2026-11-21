@@ -1,6 +1,6 @@
 <template>
     <div class="relative inline-block">
-        <div class="trigger"
+        <div class="trigger" ref="trigger"
              aria-haspopup="true"
              :aria-expanded="isOpen"
              @click.prevent="open"
@@ -9,7 +9,7 @@
         </div>
 
         <transition name="dropdown">
-            <div class="dropdown absolute z-10 p-2 rounded-lg bg-surface" v-if="isOpen"
+            <div class="dropdown absolute z-10 p-2 rounded-lg bg-surface" v-if="isOpen" ref="panel"
                  :class="align === 'left' ? 'left-0' : 'right-0'"
                  :style="width"
             >
@@ -21,6 +21,7 @@
 
 <script>
 export default {
+    emits: ['close', 'closed', 'open', 'opened'],
     inject: ['appData'],
     props: {
         width: {
@@ -57,10 +58,19 @@ export default {
             }
         }
     },
+    beforeUnmount() {
+        document.removeEventListener('click', this.closeIfClickedOutside);
+    },
     methods: {
         closeIfClickedOutside(event) {
-            if (!event.target.closest('.dropdown')) {
-                if (this.shouldToggle || (!this.shouldToggle && !event.target.closest('.trigger'))) {
+            // A clicked item that removed itself (e.g. a deselected filter) is no longer inside the dropdown
+            if (!event.target.isConnected) {
+                return;
+            }
+
+            // Only this dropdown's own panel and trigger: a click elsewhere in a parent dropdown closes a nested one
+            if (!this.$refs['panel']?.contains(event.target)) {
+                if (this.shouldToggle || !this.$refs['trigger']?.contains(event.target)) {
                     this.close();
                 }
             }

@@ -16,9 +16,11 @@
 
 <script>
 
-const md5 = require('js-md5');
+import md5 from 'js-md5';
+import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
+    emits: ['change', 'update:calendar'],
     inject: ['appData'],
     props: {
         calendar: {
@@ -39,10 +41,7 @@ export default {
     },
     mounted() {
         this.hash = md5(JSON.stringify(this.currentCalendar));
-        this.$bus.$on('calendar-updated', this.setCalendar);
-    },
-    destroyed() {
-        this.$bus.$off('calendar-updated', this.setCalendar);
+        this.$listen('calendar-updated', this.setCalendar);
     },
     watch: {
         calendar: {
@@ -81,8 +80,7 @@ export default {
             this.$emit('change', calendar);
         },
         isSummer(week) {
-            const remainder = week % 20;
-            return (remainder % 20 > 0 && remainder % 20 <= 10);
+            return CampaignSheet.isSummerWeek(week);
         },
         isWinter(week) {
             return !this.isSummer(week);

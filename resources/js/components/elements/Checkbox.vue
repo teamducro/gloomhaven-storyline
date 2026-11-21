@@ -23,6 +23,7 @@
 
 <script>
 export default {
+    emits: ['change', 'update:checked'],
     inject: ['appData'],
     props: {
         id: {

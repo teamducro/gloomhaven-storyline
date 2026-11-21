@@ -144,6 +144,14 @@ class Building {
         return null;
     }
 
+    // Translation key of a non-resource prerequisite for the next level, if any
+    get nextUpgradeRequirement() {
+        if (this.completed || !this.levels[this.level + 1].has_requirement) {
+            return null;
+        }
+        return this.$tPrefix(`levels.${this.level + 1}.requires`);
+    }
+
     checkUpgradeCost(resources) {
         return this.checkResources(resources, this.nextUpgradeCost, BuildingUpgradeCost);
     }

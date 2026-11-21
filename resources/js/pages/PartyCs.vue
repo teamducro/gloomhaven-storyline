@@ -26,7 +26,7 @@
                 ref="prosperity"
                 :sheet="sheet"
                 :loading="loading"
-                :prosperity.sync="prosperity"
+                v-model:prosperity="prosperity"
                 @change="store"/>
 
             <div class="lg:flex">
@@ -34,14 +34,15 @@
                     id="city-events"
                     :title="$t('City Event Decks')"
                     :label="$t('Add city events')"
-                    :items.sync="sheet.city"
+                    v-model:items="sheet.city"
                     @change="store"
                     @view="(item) => openCard(item, true)"
                     ref="city-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, true)" :disabled="appData.read_only || !checkedItems.length"
+                    <template #after-field="{checkedItems}">
+                        <button @click="draw(checkedItems, 'C')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -51,14 +52,15 @@
                     id="road-events"
                     :title="$t('Road Event Decks')"
                     :label="$t('Add road events')"
-                    :items.sync="sheet.road"
+                    v-model:items="sheet.road"
                     @change="store"
                     @view="(item) => openCard(item, false)"
                     ref="road-events"
                 >
-                    <template slot="after-field" slot-scope="{checkedItems}">
-                        <button @click="draw(checkedItems, false)" :disabled="appData.read_only || !checkedItems.length"
+                    <template #after-field="{checkedItems}">
+                        <button @click="draw(checkedItems, 'R')" :disabled="appData.read_only || !checkedItems.length"
                                 class="ml-4 mdc-button origin-left transform scale-90 mdc-button--raised">
+                            <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon">launch</i>
                             <span class="mdc-button__label">{{ $t('Draw') }}</span>
                         </button>
@@ -66,16 +68,18 @@
                 </selectable-list>
             </div>
 
+            <event-history :sheet="sheet" @change="store"/>
+
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Scenario level') }}</h2>
-                <scenario-level :value.sync="sheet.scenarioLevel" id="scenario-level"
+                <scenario-level v-model:value="sheet.scenarioLevel" id="scenario-level"
                                 @change="store" :characters="sheet.characters"
                 ></scenario-level>
             </div>
 
             <div class="w-full mt-8">
                 <h2 class="mb-2">{{ $t('Additional notes') }}</h2>
-                <notes :value.sync="sheet.notes" id="notes" :label="$t('Notes')"
+                <notes v-model:value="sheet.notes" id="notes" :label="$t('Notes')"
                        @change="store" :is-local-campaign="isLocalCampaign"
                 ></notes>
             </div>
@@ -103,7 +107,7 @@
                         </div>
                         <div class="w-full flex items-center flex-wrap">
                             <label :for="'unlock'+index" class="cursor-pointer">
-                                <component v-bind:is="renderHtml(unlock.reward)"></component>
+                                {{ unlock.reward }}
                             </label>
                             <scenario-number class="ml-2" v-if="unlock.scenario"
                                              :id="unlock.scenario"
@@ -123,6 +127,7 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetCalculations from "../services/SheetCalculations";
+import DrawsEventCards from "../mixins/DrawsEventCards";
 import SheetRepository from "../repositories/SheetRepository";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import ScenarioNumber from "../components/elements/ScenarioNumber";
@@ -130,7 +135,7 @@ import {ScenarioState} from "../models/ScenarioState";
 
 export default {
     components: {ScenarioNumber},
-    mixins: [GetCampaignName, SheetCalculations],
+    mixins: [GetCampaignName, SheetCalculations, DrawsEventCards],
     inject: ['appData'],
     data() {
         return {
@@ -197,8 +202,8 @@ export default {
     mounted() {
         this.render();
 
-        this.$bus.$on('campaigns-changed', this.render);
-        this.$bus.$on('remove-card', this.removeCard);
+        this.$listen('campaigns-changed', this.render);
+        this.$listen('remove-card', this.removeCard);
     },
     computed: {
         completedCount() {
@@ -207,10 +212,6 @@ export default {
         unlockCount() {
             return parseInt(this.completedCount / 5)
         }
-    },
-    destroyed() {
-        this.$bus.$off('campaigns-changed', this.render);
-        this.$bus.$off('remove-card', this.removeCard);
     },
     methods: {
         async render() {
@@ -246,13 +247,6 @@ export default {
             this.sheet.store();
             this.storySyncer.store();
         },
-        draw(checkedItems, isCity = true) {
-            let id = checkedItems[Math.floor(Math.random() * checkedItems.length)];
-            if (id) {
-                const card = (isCity ? 'C' : 'R') + '-' + id;
-                this.$bus.$emit('open-event-card', {id: card, game: this.game, viaDraw: true});
-            }
-        },
         openCard(id, isCity = true) {
             const card = (isCity ? 'C' : 'R') + '-' + id;
             this.$bus.$emit('open-event-card', {id: card, game: this.game});
@@ -261,11 +255,6 @@ export default {
             this.sheet[card.folder][card.id] = false;
             this.store();
         },
-        renderHtml(html) {
-            return {
-                template: `<span>${html}</span>`
-            };
-        }
     }
 }
 </script>

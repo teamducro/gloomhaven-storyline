@@ -8,15 +8,25 @@ class PersonalQuest {
         this.number = '#' + String(data.id).padStart(3, '0');
         this._name = data.name;
         this.character_unlock = data.character_unlock;
+        this.events_on_choose = data.events_on_choose || [];
+        this.starting = data.starting || false;
         this.building_unlocks = data.building_unlocks;
         this._unlock = data.unlock;
         this.requiredBuildingLevel = data.required_building_level;
-        this.progress = [...data.progress];
+        this.requiredProsperity = data.required_prosperity;
+        // Deep copy: progress is mutated in place and the imported JSON is shared by every instance
+        this.progress = _.cloneDeep(data.progress);
         this.card = new Card('Q-' + this.id, game);
         // Store already unlocked building so that subsequent validations don't unlock the alt. building
         this.unlockedBuilding = data.unlockedBuilding;
         this._game = game;
         this.translationKey = `personal_quests.${this.game}-${this.id}`;
+
+        // Printed card number, e.g. "ConQuests 01"
+        if (game === 'cq') {
+            this.number = 'ConQuests ' + data.id.slice(2);
+            this.card.label = this.number;
+        }
     }
 
     get name() {

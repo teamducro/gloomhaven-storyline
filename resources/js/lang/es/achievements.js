@@ -140,6 +140,15 @@ export default {
     "gh-PBB": {
         "name": "Mal negocio"
     },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
+    },
     "gh-PTPS": {
         "name": "El origen del veneno"
     },
@@ -282,52 +291,52 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        "name": "Amistad de los Voz de Hielo"
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        "name": "Amistad de los Voz de Nieve"
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        "name": "Amistad de los Voz de Escarcha"
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        "name": "Destructor de los Voz de Hielo"
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        "name": "Destructor de los Voz de Nieve"
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        "name": "Amistad del Rey del Mar"
     },
     "fh-CCU": {
-        "name": "Crown United"
+        "name": "La corona reunida"
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        "name": "Aliados desencadenados"
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        "name": "Desencadenados desactivados"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "Adentrándose en el bosque"
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        "name": "Pimiento de fuego"
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        "name": "Buscadores de la esquirla"
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        "name": "Frasco vacío"
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        "name": "Frasco con bicho"
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        "name": "Núcleo descargado"
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        "name": "Núcleo cargado"
     },
     "fh-CHF": {
         "name": "Harvest Festival"
@@ -366,9 +375,93 @@ export default {
         "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Corazón de hielo"
     },
     "fh-PHOS": {
         "name": "Heart of Snow"
+    },
+    "gh2-G2ATD": {
+        "name": "Activating the Device"
+    },
+    "gh2-G2AUP": {
+        "name": "An Uneasy Peace"
+    },
+    "gh2-G2AT": {
+        "name": "Tecnología antigua"
+    },
+    "gh2-G2CRD": {
+        "name": "City Rule: Demons"
+    },
+    "gh2-G2CRME": {
+        "name": "City Rule: Merchants"
+    },
+    "gh2-G2CRMI": {
+        "name": "City Rule: Military"
+    },
+    "gh2-G2EM": {
+        "name": "Elements Mastered"
+    },
+    "gh2-G2EOC": {
+        "name": "El fin de la corrupción"
+    },
+    "gh2-G2EOG": {
+        "name": "El fin de la Penumbra"
+    },
+    "gh2-G2HW": {
+        "name": "Hallowed Waters"
+    },
+    "gh2-G2ITD": {
+        "name": "Into the Depths"
+    },
+    "gh2-G2PTB": {
+        "name": "Peace Through Bloodshed"
+    },
+    "gh2-G2TCE": {
+        "name": "The Candle Extinguished"
+    },
+    "gh2-G2TCK": {
+        "name": "The Candle Kept"
+    },
+    "gh2-G2TDR": {
+        "name": "The Darkness Retreats"
+    },
+    "gh2-G2TDA": {
+        "name": "El Draco auxiliado"
+    },
+    "gh2-G2TDS": {
+        "name": "El Draco ejecutado"
+    },
+    "gh2-G2TPE": {
+        "name": "El poder de la mejora"
+    },
+    "gh2-G2TVF": {
+        "name": "La Voz liberada"
+    },
+    "gh2-G2TVS": {
+        "name": "La Voz silenciada"
+    },
+    "gh2-P2R16": {
+        "name": "Faction Reputation 16"
+    },
+    "gh2-P2R20": {
+        "name": "Faction Reputation 20"
+    },
+    "gh2-P2RD6": {
+        "name": "Demon Reputation 6"
+    },
+    "gh2-P2RD12": {
+        "name": "Demon Reputation 12"
+    },
+    "gh2-P2RME6": {
+        "name": "Merchant Reputation 6"
+    },
+    "gh2-P2RME12": {
+        "name": "Merchant Reputation 12"
+    },
+    "gh2-P2RMI6": {
+        "name": "Military Reputation 6"
+    },
+    "gh2-P2RMI12": {
+        "name": "Military Reputation 12"
     }
 }

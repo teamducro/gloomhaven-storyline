@@ -9,6 +9,7 @@
 
 <script>
 export default {
+    emits: ['change', 'update:value'],
     props: {
         value: {
             default: 0

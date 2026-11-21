@@ -4,13 +4,13 @@
         <div class="mb-4">
             <div class="flex" v-for="(perkDescription, perkIndex) in character.perkDescriptions">
                 <div :key="'perk-'+perkIndex"
-                     :class="{'checkbox-groups': perkDescription.linked}">
-                    <checkbox v-for="(perk, index) in perks[perkIndex]"
-                              v-if="index < perkDescription.count"
-                          :key="index" group="perks"
-                          :id="'perk-'+perkIndex+'-'+index"
-                          :checked="perks[perkIndex][index]"
-                          @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
+                     class="perk-checkboxes" :class="{'checkbox-groups': perkDescription.linked}">
+                    <template v-for="(perk, index) in perks[perkIndex]" :key="index">
+                        <checkbox v-if="index < perkDescription.count" group="perks"
+                              :id="'perk-'+perkIndex+'-'+index"
+                              :checked="perks[perkIndex][index]"
+                              @change="(id, isChecked) => {changedPerks(perkIndex, index, isChecked)}"></checkbox>
+                    </template>
                 </div>
                 <p class="ml-2 mt-1 mb-1">
                     <add-links-and-icons :text="$t(perkDescription.desc)"/>
@@ -29,8 +29,8 @@
                 </div>
             </template>
         </div>
-        <h2 v-if="masteries" class="mt-4 mb-2">{{ $t('Masteries') }}</h2>
-        <div v-if="masteries" class="mb-4">
+        <h2 v-if="character.masteryDescriptions?.length" class="mt-4 mb-2">{{ $t('Masteries') }}</h2>
+        <div v-if="character.masteryDescriptions?.length" class="mb-4">
             <div v-for="(masteryDescription, masteryIndex) in character.masteryDescriptions"
                 :key="'mastery-'+masteryIndex"
                 class="flex items-center">
@@ -54,11 +54,13 @@
 import Character from "../../../models/Character";
 
 export default {
+    emits: ['change', 'update:checks', 'update:masteries', 'update:perks'],
     props: {
         character: Character,
         perks: Object,
         checks: Object,
-        masteries: Object
+        masteries: Object,
+        scenarioPerks: {type: Number, default: 0}
     },
     data() {
         return {}
@@ -73,6 +75,7 @@ export default {
         minimalPerks() {
             return (this.character.retirements || 0)
                 + (this.character.level - 1)
+                + this.scenarioPerks
                 + collect(this.masteries).filter().count()
                 + Math.floor(collect(this.checks).filter().count() / 3);
         }
@@ -101,21 +104,30 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// At most two checkboxes per row; more wrap below.
+.perk-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-shrink: 0;
+    max-width: 80px;
+}
+
 .checkbox-groups {
     display: flex;
     padding: 12px;
     .mdc-checkbox {
         padding: 0;
-        ::v-deep .mdc-checkbox__background, ::v-deep .mdc-checkbox__native-control {
+        :deep(.mdc-checkbox__background), :deep(.mdc-checkbox__native-control) {
             top: 0;
             left: 0;
             width: 20px;
             height: 20px;
         }
-        &:not(:first-child) ::v-deep .mdc-checkbox__background {
+        &:not(:first-child) :deep(.mdc-checkbox__background) {
             border-left-style: dotted;
         }
-        &:not(:last-child) ::v-deep .mdc-checkbox__background {
+        &:not(:last-child) :deep(.mdc-checkbox__background) {
             border-right-style: dotted;
         }
     }

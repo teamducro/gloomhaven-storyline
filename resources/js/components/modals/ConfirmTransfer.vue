@@ -5,10 +5,12 @@
         </template>
         <template v-slot:buttons>
             <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                <span class="mdc-button__ripple"></span>
                 <span class="mdc-button__label">{{ $t('Cancel') }}</span>
             </button>
             <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                     @click="transfer">
+                <span class="mdc-button__ripple"></span>
                 <span class="mdc-button__label text-red-700">{{ $t('Transfer') }}</span>
             </button>
         </template>
@@ -30,7 +32,7 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-transfer-modal', this.open);
+        this.$listen('open-transfer-modal', this.open);
     },
     methods: {
         open(value) {

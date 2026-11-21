@@ -14,12 +14,13 @@ import GameData from "../../services/GameData";
 import Character from "../../models/Character";
 
 export default {
+    emits: ['click'],
     props: {
         character: {
-            type: Character | String
+            type: [Character, String]
         },
         player: {
-            type: Object | String,
+            type: [Object, String],
             default: null
         },
         showName: {
@@ -53,7 +54,7 @@ export default {
                 e.preventDefault();
 
                 // Only navigate to characters page if not already there
-                if (!this.$router.currentRoute.path.includes('/characters')) {
+                if (!this.$route.path.includes('/characters')) {
                     await this.$router.push('/characters');
                 }
                 // Open the correct character sheet

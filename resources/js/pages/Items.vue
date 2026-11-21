@@ -21,14 +21,14 @@
                           @close="dropDownClose = false">
                     <template v-slot:trigger>
                         <button type="button"
-                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full transform transition-transform"
+                                class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 bg-black2-50! rounded-full transform transition-transform"
                                 :class="{'rotate-45': dropDownClose}">
                             add
                         </button>
                     </template>
 
                     <div class="w-full">
-                        <h2>{{ $t(sheet.game) + ' ' + $t('Items') }}</h2>
+                        <h2>{{ $t('{game} Items', {game: $t(sheet.game)}) }}</h2>
                         <ul class="flex flex-row flex-wrap -mx-2">
                             <li v-for="(checked, item) in sheet.itemDesigns"
                                 class="flex items-center">
@@ -44,31 +44,35 @@
                             <checkbox-with-label id="cross-game-items-enabled-checkbox"
                                              class="my-2"
                                              :label="$t('Enable items from other games')"
-                                             :checked.sync="sheet.crossGameItemsEnabled"
+                                             v-model:checked="sheet.crossGameItemsEnabled"
                                              @change="refreshItems();store()"/>
 
                             <template v-if="sheet.crossGameItemsEnabled">
                                 <ul v-if="currentGame !== 'fh'">
-                                    <li v-for="code in Object.keys(sheet.crossGameItems)" v-if="code !== currentGame">
-                                        <checkbox-with-label :id="code+'-items'"
-                                                            :label="$t(code)"
-                                                            :checked.sync="sheet.crossGameItems[code]"
-                                                            @change="refreshItems();store()"/>
-                                    </li>
+                                    <template v-for="code in Object.keys(sheet.crossGameItems)">
+                                        <li v-if="code !== currentGame">
+                                            <checkbox-with-label :id="code+'-items'"
+                                                                :label="$t(code)"
+                                                                v-model:checked="sheet.crossGameItems[code]"
+                                                                @change="refreshItems();store()"/>
+                                        </li>
+                                    </template>
                                 </ul>
                                 <template v-else>
-                                    <template v-for="gameId in Object.keys(sheet.crossGameItems)" v-if="Object.keys(sheet.crossGameItems[gameId]).length !== 0">
-                                        <h2 class="ml-2">{{ $t(gameId) + ' ' + $t('Items') }}</h2>
-                                        <ul class="flex flex-row flex-wrap">
-                                            <li v-for="code in Object.keys(sheet.crossGameItems[gameId])"
-                                                class="flex items-center">
-                                                <checkbox group="items"
-                                                          :checked.sync="sheet.crossGameItems[gameId][code]"
-                                                          :id="gameId+code"
-                                                          @change="refreshItems();store()"/>
-                                                <span class="w-8 font-title">{{ code }}</span>
-                                            </li>
-                                        </ul>
+                                    <template v-for="gameId in Object.keys(sheet.crossGameItems)">
+                                        <template v-if="Object.keys(sheet.crossGameItems[gameId]).length !== 0">
+                                            <h2 class="ml-2">{{ $t('{game} Items', {game: $t(gameId)}) }}</h2>
+                                            <ul class="flex flex-row flex-wrap">
+                                                <li v-for="code in Object.keys(sheet.crossGameItems[gameId])"
+                                                    class="flex items-center">
+                                                    <checkbox group="items"
+                                                              v-model:checked="sheet.crossGameItems[gameId][code]"
+                                                              :id="gameId+code"
+                                                              @change="refreshItems();store()"/>
+                                                    <span class="w-8 font-title">{{ code }}</span>
+                                                </li>
+                                            </ul>
+                                        </template>
                                     </template>
                                 </template>
                             </template>
@@ -121,38 +125,44 @@
                         :translatable="['name', 'desc']"
                         :noResults="$t('No items available')"
             >
-                <template slot="image" slot-scope="{value, row}">
+                <template #image="{value, row}">
                     <div class="overflow-hidden h-full -m-1 md:-m-3 top-0 left-0 cursor-pointer">
                         <webp :src="value" width="80" class="-mt-2 top-0 absolute max-w-none"
                               :alt="$t(row.name)" :animate="true"/>
                     </div>
                     <div class="w-16 md:w-12 h-2"></div>
                 </template>
-                <span slot="number" slot-scope="{value, row}">
-                    {{ value }}<br>
-                    <span class="lg:hidden">
-                        <webp :src="row.slot" class="inline-block mr-2" width="20"/>
-                    </span>
-                </span>
-                <span slot="name" class="xs:whitespace-nowrap" slot-scope="{value, row}">
-                    {{ $t(value) }}<br>
-                    <span class="lg:hidden">
-                        <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
-                        <span class="inline-block mr-2">
-                            {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
+                <template #number="{value, row}">
+                    <span>
+                        {{ value }}<br>
+                        <span class="lg:hidden">
+                            <webp :src="row.slot" class="inline-block mr-2" width="20"/>
                         </span>
-                        <add-links-and-icons v-if="row.cost && isNaN(row.cost)" :text="getResourceCost(row.cost).replaceAll('<br>', ' ')" class="resources inline-block md:hidden"/>
-                        <span v-else class="inline-block md:hidden">{{ isNaN(row.cost) ? '-' : (row.cost + costModifier) }}</span>
                     </span>
-                </span>
-                <span slot="cost" slot-scope="{value}">
-                    <add-links-and-icons v-if="value && isNaN(value)" :text="getResourceCost(value)" class="resources"/>
-                    <template v-else>{{ isNaN(value) ? '-' : (value + costModifier) }}</template>
-                </span>
-                <template slot="availability" slot-scope="{value, row}">
+                </template>
+                <template #name="{value, row}">
+                    <span class="xs:whitespace-nowrap">
+                        {{ $t(value) }}<br>
+                        <span class="lg:hidden">
+                            <webp :src="row.use" class="hidden sm:inline-block mr-2" width="20"/>
+                            <span class="inline-block mr-2">
+                                {{ row.count - itemAvailability.uses(row.id) }}/{{ row.count }}
+                            </span>
+                            <add-links-and-icons v-if="row.cost && isNaN(row.cost)" :text="getResourceCost(row.cost).replaceAll('<br>', ' ')" class="resources inline-block md:hidden"/>
+                            <span v-else class="inline-block md:hidden">{{ isNaN(row.cost) ? '-' : (row.cost + costModifier) }}</span>
+                        </span>
+                    </span>
+                </template>
+                <template #cost="{value}">
+                    <span>
+                        <add-links-and-icons v-if="value && isNaN(value)" :text="getResourceCost(value)" class="resources"/>
+                        <template v-else>{{ isNaN(value) ? '-' : (value + costModifier) }}</template>
+                    </span>
+                </template>
+                <template #availability="{value, row}">
                     {{ row.count - itemAvailability.uses(row.id) }} / {{ row.count }}
                 </template>
-                <template slot="desc" slot-scope="{value, row}">
+                <template #desc="{value, row}">
                     <p v-if="row.backDesc">{{ $t('Front') }}:</p>
                     <add-links-and-icons :text="$t(value)"/>
                     <p v-if="row.backDesc">{{ $t('Back') }}:</p>
@@ -212,10 +222,7 @@ export default {
     mounted() {
         this.render();
 
-        this.$bus.$on('campaigns-changed', this.render);
-    },
-    destroyed() {
-        this.$bus.$off('campaigns-changed', this.render);
+        this.$listen('campaigns-changed', this.render);
     },
     computed: {
         Game() {
@@ -250,7 +257,7 @@ export default {
             this.loading = true;
 
             this.sheet = this.sheetRepository.make(this.appData.game);
-            this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0);
+            this.costModifier = this.calculateCostModifier(this.sheet.reputation || 0, this.sheet.game);
             this.campaignName = this.getCampaignName();
             this.itemAvailability = new ItemAvailability(this.sheet);
 
@@ -261,61 +268,13 @@ export default {
             this.field = new MDCTextField(this.$refs['search-field']);
         },
         refreshItems() {
-            let sheetItems;
-
-            // Get all manual unlocked items from the sheet, prefixed with the current game.
-            const unlockedItems = this.unlockedItems(this.sheet.itemDesigns, this.currentGame);
-
-            // Add auto unlocked items, based on prosperity level or completed scenarios.
-            if (this.currentGame === 'jotl') {
-                sheetItems = this.calculateItemsJotl(unlockedItems, this.scenarioRepository);
-            }
-            else if (this.currentGame === 'fh') {
-                sheetItems = this.calculateItemsFh(unlockedItems, this.buildingRepository);
-            }
-            else {
-                sheetItems = this.calculateItemsGh(unlockedItems, this.sheet.prosperityIndex);
-            }
-
-            // Find items from base game.
-            let items = this.itemRepository.findMany(sheetItems);
-
-            // Add items from other games, if enabled.
-            if (this.sheet.crossGameItemsEnabled) {
-                const otherGames = collect(this.sheet.crossGameItems).filter().keys().all();
-                let otherGameHandler;
-
-                if (this.currentGame === Game.fh) {
-                    otherGameHandler = (game => {
-                        const otherGameItems = collect(this.sheet.crossGameItems[game]).filter().keys().all();
-                        const otherItems = this.prependGame(game, otherGameItems);
-                        items = collect({...items.all(), ...this.itemRepository.findMany(otherItems).all()})
-                    });
-                }
-                else {
-                    otherGameHandler = (game => {
-                        if (game !== this.currentGame) {
-                            if (game === 'gh' && this.currentGame !== 'jotl') {
-                                const ghItems = this.calculateItemsGh([], this.sheet.prosperityIndex);
-                                items = collect({...items.all(), ...this.itemRepository.findMany(ghItems).all()});
-                            } else {
-                                // Add all items for games without prosperity.
-                                items = collect({...items.all(), ...this.itemRepository.fromGame(game).all()});
-                            }
-                        }
-                    });
-                }
-
-                otherGames.forEach(otherGameHandler);
-            }
-
-            this.items = items
+            this.items = this.shopItems(this.sheet);
         },
         changeItem(id, isChecked) {
             const key = id.replace('item-', '');
             const item = isNaN(key) ? key : parseInt(key);
-            Vue.set(this.sheet.itemDesigns, item, isChecked);
-            this.refreshItems();
+            // The deep itemDesigns watcher refreshes the items
+            this.sheet.itemDesigns[item] = isChecked;
             this.store();
         },
         store() {
@@ -327,20 +286,20 @@ export default {
             this.storySyncer.store();
         },
         applySearch() {
-            Vue.delete(this.search, 'number');
-            Vue.delete(this.search, 'name,desc');
+            delete this.search['number'];
+            delete this.search['name,desc'];
 
             if (this.query) {
-                Vue.set(this.search, isNaN(this.query) ? 'name,desc' : 'number', this.query);
+                this.search[isNaN(this.query) ? 'name,desc' : 'number'] = this.query;
             }
         },
         applyFilter(filter) {
             if (this.selectedFilter === filter) {
                 this.selectedFilter = null;
-                Vue.delete(this.search, 'slot');
+                delete this.search['slot'];
             } else {
                 this.selectedFilter = filter;
-                Vue.set(this.search, 'slot', filter);
+                this.search['slot'] = filter;
             }
         },
         async openItemModel(item) {
@@ -372,11 +331,12 @@ export default {
 }
 </script>
 <style lang="scss">
+@reference "../../sass/tailwind.css";
 .items-to-add-dropdown .dropdown {
     width: calc(100vw - 4.8rem);
 }
 
-@screen md {
+@media (min-width: 768px) {
     .items-to-add-dropdown .dropdown {
         width: calc(100vw - 6.8rem);
         max-width: 1006px;

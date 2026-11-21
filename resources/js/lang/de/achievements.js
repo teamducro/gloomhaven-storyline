@@ -75,7 +75,7 @@ export default {
         "name": "Eine Einladung"
     },
     "gh-GTED": {
-        "name": "Der Rand der Finsternis"
+        "name": "Am Rand der Finsternis"
     },
     "gh-PTSV": {
         "name": "Zepter und Stimme"
@@ -135,37 +135,46 @@ export default {
         "name": "Durch den Bau"
     },
     "gh-PAMT": {
-        "name": "Schatzkarte"
+        "name": "Eine Karte zum Schatz"
     },
     "gh-PBB": {
-        "name": "Schlechtes Geschäft"
+        "name": "Üble Machenschaften"
+    },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "Quelle des Gifts"
     },
     "gh-PSB": {
-        "name": "Sonnenverwöhnt"
+        "name": "Sonnengesegnet"
     },
     "gh-PSR": {
         "name": "Sin-Ra"
     },
     "gh-PDC": {
-        "name": "Schuldeintreibung"
+        "name": "Schuldenfrei"
     },
     "gh-PWS": {
-        "name": "Stab des Wassers"
+        "name": "Wasserstab"
     },
     "gh-PFA": {
-        "name": "DIe Hilfe des Fischers"
+        "name": "Fischs Hilfe"
     },
     "gh-PT": {
-        "name": "Erdbeben"
+        "name": "Beben"
     },
     "gh-PHSE": {
         "name": "Hochsee-Eskorte"
     },
     "gh-PGJ": {
-        "name": "Grab-Job"
+        "name": "Grabraub"
     },
     "gh-PNE": {
         "name": "Nördliche Expedition"
@@ -210,7 +219,7 @@ export default {
         "name": "Wachdienst"
     },
     "gh-PDE": {
-        "name": "Dimensionalesgleichgewicht"
+        "name": "Dimensionsgleichgewicht"
     },
     "gh-PHH": {
         "name": "Jagd auf die Jägerin"
@@ -240,10 +249,10 @@ export default {
         "name": "Mechanische Pracht"
     },
     "gh-GST": {
-        "name": "Gekappte Verbindungen"
+        "name": "Gekappte Verbindung"
     },
     "gh-PA": {
-        "name": "Accomplices"
+        "name": "Komplizen"
     },
     "gh-PS": {
         "name": "Saboteurs"
@@ -282,58 +291,58 @@ export default {
         "name": "Accomplished Mercenaries"
     },
     "fh-CFIS": {
-        "name": "Friend of the Icespeakers"
+        "name": "Freunde der Eissprecher"
     },
     "fh-CFSS": {
-        "name": "Friend of the Snowspeakers"
+        "name": "Freunde der Schneesprecher"
     },
     "fh-CFFS": {
-        "name": "Friend of the Frostspeakers"
+        "name": "Freunde der Frostsprecher"
     },
     "fh-CDIS": {
-        "name": "Destroyer of the Icespeakers"
+        "name": "Vernichter der Eissprecher"
     },
     "fh-CDSS": {
-        "name": "Destroyer of the Snowspeakers"
+        "name": "Vernichter der Schneesprecher"
     },
     "fh-CFFK": {
-        "name": "Friend of the Fish King"
+        "name": "Freunde des Fischkönigs"
     },
     "fh-CCU": {
-        "name": "Crown United"
+        "name": "Vereinte Krone"
     },
     "fh-CUA": {
-        "name": "Unfettered Allies"
+        "name": "Entfesselten-Verbündete"
     },
     "fh-CUD": {
-        "name": "Unfettered Deactivated"
+        "name": "Entfesselte deaktiviert"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "In den Wald"
     },
     "fh-CFP": {
-        "name": "Firepepper"
+        "name": "Feuerpfeffer"
     },
     "fh-CSS": {
-        "name": "Shard Seeker"
+        "name": "Splintersuche"
     },
     "fh-CEJ": {
-        "name": "Empty Jar"
+        "name": "Leeres Glas"
     },
     "fh-CBJ": {
-        "name": "Bug in a Jar"
+        "name": "Käfer im Glas"
     },
     "fh-CUC": {
-        "name": "Uncharged Core"
+        "name": "Ungeladener Kern"
     },
     "fh-CCC": {
-        "name": "Charged Core"
+        "name": "Geladener Kern"
     },
     "fh-CHF": {
         "name": "Harvest Festival"
     },
     "fh-CBT": {
-        "name": "Brummix Tracks"
+        "name": "Brummix-Spuren"
     },
     "fh-CBT2": {
         "name": "Brummix Tracks x2"
@@ -366,9 +375,93 @@ export default {
         "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Herz des Eises"
     },
     "fh-PHOS": {
         "name": "Heart of Snow"
+    },
+    "gh2-G2ATD": {
+        "name": "Activating the Device"
+    },
+    "gh2-G2AUP": {
+        "name": "An Uneasy Peace"
+    },
+    "gh2-G2AT": {
+        "name": "Antike Technologie"
+    },
+    "gh2-G2CRD": {
+        "name": "Stadtherrschaft: dämonisch"
+    },
+    "gh2-G2CRME": {
+        "name": "Stadtherrschaft: kaufmännisch"
+    },
+    "gh2-G2CRMI": {
+        "name": "Stadtherrschaft: militärisch"
+    },
+    "gh2-G2EM": {
+        "name": "Elements Mastered"
+    },
+    "gh2-G2EOC": {
+        "name": "Ende der Verderbtheit"
+    },
+    "gh2-G2EOG": {
+        "name": "Ende des Grauens"
+    },
+    "gh2-G2HW": {
+        "name": "Hallowed Waters"
+    },
+    "gh2-G2ITD": {
+        "name": "Into the Depths"
+    },
+    "gh2-G2PTB": {
+        "name": "Peace Through Bloodshed"
+    },
+    "gh2-G2TCE": {
+        "name": "The Candle Extinguished"
+    },
+    "gh2-G2TCK": {
+        "name": "The Candle Kept"
+    },
+    "gh2-G2TDR": {
+        "name": "The Darkness Retreats"
+    },
+    "gh2-G2TDA": {
+        "name": "Hilfe für den Draken"
+    },
+    "gh2-G2TDS": {
+        "name": "Erlegter Draken"
+    },
+    "gh2-G2TPE": {
+        "name": "Macht der Verbesserung"
+    },
+    "gh2-G2TVF": {
+        "name": "Befreite Stimme"
+    },
+    "gh2-G2TVS": {
+        "name": "Verstummte Stimme"
+    },
+    "gh2-P2R16": {
+        "name": "Faction Reputation 16"
+    },
+    "gh2-P2R20": {
+        "name": "Faction Reputation 20"
+    },
+    "gh2-P2RD6": {
+        "name": "Demon Reputation 6"
+    },
+    "gh2-P2RD12": {
+        "name": "Demon Reputation 12"
+    },
+    "gh2-P2RME6": {
+        "name": "Merchant Reputation 6"
+    },
+    "gh2-P2RME12": {
+        "name": "Merchant Reputation 12"
+    },
+    "gh2-P2RMI6": {
+        "name": "Military Reputation 6"
+    },
+    "gh2-P2RMI12": {
+        "name": "Military Reputation 12"
     }
 }

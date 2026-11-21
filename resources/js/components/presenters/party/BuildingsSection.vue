@@ -36,8 +36,8 @@
                     <slot name="label" :item="overlay.id">
                         <span>{{ overlayDisplayName(overlay, false) }}</span>
                     </slot>
-                    <span class="material-icons">
-                        {{ overlay.present ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                    <span class="material-icons outlined">
+                        {{ overlay.present ? 'check_circle' : 'radio_button_unchecked' }}
                     </span>
                 </div>
             </template>
@@ -67,8 +67,8 @@
                     <slot name="label" :item="building.id">
                         <span>{{ building.id }}</span>
                     </slot>
-                    <span class="material-icons">
-                        {{ building.isUnlocked() ? 'check_circle_outline' : 'radio_button_unchecked' }}
+                    <span class="material-icons outlined">
+                        {{ building.isUnlocked() ? 'check_circle' : 'radio_button_unchecked' }}
                     </span>
                 </div>
             </template>
@@ -100,6 +100,7 @@
                 </div>
                 <div class="outline-gray row-span-2 flex flex-col items-center justify-center p-2">
                     <button v-if="!building.completed" :disabled="appData.read_only || building.isWrecked()" @click="upgrade(building)" class="mdc-button mdc-button--raised" :class="{ 'h-auto p-1': !building.lockedUpgrade, 'gray': !building.isWrecked() && !building.checkUpgradeCost(combinedResources) }">
+                        <span class="mdc-button__ripple"></span>
                         <add-links-and-icons text="{UPGRADE}"/>
                         <div v-if="!building.lockedUpgrade" class="bg-dark-background inline-grid grid-cols-4 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -118,6 +119,7 @@
                     <div v-else-if="building.game === 'fh' && building.id === 84" class="flex flex-col gap-2">
                         <button v-for="overlay in overlays.filter(overlay => !overlay.present && overlay.icon)"
                             @click="toggleOverlay(overlay)" :disabled="appData.read_only || building.isWrecked()" :key="overlay.id" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources) }">
+                            <span class="mdc-button__ripple"></span>
                             <add-links-and-icons :text="overlay.icon"/>
                             <div class="bg-dark-background inline-grid grid-cols-4 gap-px ml-1">
                                 <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -130,7 +132,9 @@
                             </div>
                         </button>
                     </div>
+                    <add-links-and-icons v-if="building.nextUpgradeRequirement" class="inline-icons text-center mt-1" :text="$t(building.nextUpgradeRequirement)"/>
                     <button v-if="building.upgraded" class="mdc-button -mb-2" :disabled="appData.read_only" @click="downgrade(building)">
+                        <span class="mdc-button__ripple"></span>
                         <span class="material-icons mr-1">replay</span> {{ $t('Downgrade') }}
                     </button>
                 </div>
@@ -141,10 +145,12 @@
                         <add-links-and-icons class="materials flex ml-1" text="{LUMBER} {METAL} {HIDE}"/>
                     </div>
                     <button v-if="!building.isWrecked()" :disabled="appData.read_only" @click="wreck(building)" class="mdc-button mdc-button--raised">
+                        <span class="mdc-button__ripple"></span>
                         <add-links-and-icons text="{WRECKED}"/>
                         {{ $t('Wreck') }}
                     </button>
                     <button v-else :disabled="appData.read_only" @click="repair(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkWreckedCost(combinedResources) }">
+                        <span class="mdc-button__ripple"></span>
                         <add-links-and-icons text="{REPAIR}"/>
                         <div class="bg-dark-background inline-grid grid-cols-3 gap-px ml-1">
                             <add-links-and-icons text="{LUMBER}" class="outline-gray p-1"/>
@@ -164,6 +170,7 @@
                 </div>
                 <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
                     <button :disabled="appData.read_only" @click="upgrade(building)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !building.checkUpgradeCost(combinedResources)}">
+                        <span class="mdc-button__ripple"></span>
                         <add-links-and-icons text="{BUILD}"/>
                         <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -186,6 +193,7 @@
                 </div>
                 <div class="xs:col-span-2 outline-gray flex items-center justify-center p-2 bg-dark-gray2-60">
                     <button :disabled="appData.read_only" @click="toggleOverlay(overlay)" class="mdc-button mdc-button--raised h-auto p-1" :class="{'gray': !overlay.checkBuildCost(combinedResources)}">
+                        <span class="mdc-button__ripple"></span>
                         <add-links-and-icons text="{BUILD}"/>
                         <div class="bg-dark-background inline-grid grid-cols-5 gap-px ml-1">
                             <add-links-and-icons text="{PROSPERITY}" class="outline-gray p-1"/>
@@ -204,10 +212,11 @@
         <modal ref="boat-modal" :title="$t('Name your Boat')">
             <template v-slot:content>
                 <p class="mb-3">“{{ $t('Now, whaddya call this beauty? G’head, pick a name. Bad luck to set forth on an unnamed vessel!') }}”</p>
-                <text-field id="boat-name" :label="$t('Boat Name')" :value.sync="boatName" @keyup.enter="saveBoatName" />
+                <text-field id="boat-name" :label="$t('Boat Name')" v-model:value="boatName" @keyup.enter="saveBoatName" />
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button mdc-button--raised" data-mdc-dialog-action="yes" @click="saveBoatName">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label">{{ $t('Confirm') }}</span>
                 </button>
             </template>
@@ -226,6 +235,7 @@ import SheetCalculations from "../../../services/SheetCalculations";
 import Confirm from "../../../mixins/Confirm";
 
 export default {
+    emits: ['change', 'enhancer-built'],
     inject: ['appData'],
     mixins: [Slugify, SheetCalculations, Confirm],
     props: {
@@ -261,10 +271,7 @@ export default {
     mounted() {
         this.render();
 
-        this.$bus.$on('campaigns-changed', this.render);
-    },
-    destroyed() {
-        this.$bus.$off('campaigns-changed', this.render);
+        this.$listen('campaigns-changed', this.render);
     },
     methods: {
         render() {
@@ -385,7 +392,7 @@ export default {
 
             // Add resources from sheet
             let combinedResources = {
-                prosperity: this.calculateProsperity(sheet.prosperityIndex, sheet.game),
+                prosperity: this.calculateProsperity(sheet.effectiveProsperityIndex, sheet.game),
                 lumber: sheet.resources.lumber || 0,
                 metal: sheet.resources.metal || 0,
                 hide: sheet.resources.hide || 0,
@@ -413,10 +420,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.inline-icons ::v-deep div, .inline-icons ::v-deep svg {
+@reference "../../../../sass/tailwind.css";
+.inline-icons :deep(div), .inline-icons :deep(svg) {
     @apply inline;
 }
-.materials ::v-deep svg {
+.materials :deep(svg) {
     @apply h-3 w-3;
 }
 </style>

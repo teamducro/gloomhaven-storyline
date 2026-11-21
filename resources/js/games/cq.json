@@ -1,0 +1,131 @@
+{
+    "scenarios": [],
+    "chapters": [],
+    "regions": [],
+    "overlays": [],
+    "buildings": [],
+    "achievements": [],
+    "quests": [],
+    "personalQuests": [
+        {
+            "id": "cq01",
+            "name": "Conquer Your Demons",
+            "required_prosperity": 5,
+            "progress": [
+                {
+                    "type": "checkbox",
+                    "name": "Kill two Earth Demons spawned this way.",
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "name": "Kill two Flame Demons spawned this way.",
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "name": "Kill two Frost Demons spawned this way.",
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "name": "Kill two Night Demons spawned this way.",
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "name": "Kill two Sun Demons spawned this way.",
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "name": "Kill two Wind Demons spawned this way.",
+                    "value": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cq02",
+            "name": "Your Friends Are Concerned",
+            "required_prosperity": 5,
+            "progress": [
+                {
+                    "type": "number",
+                    "name": "Earn 30 checkmarks from Battle Goals. Draw and keep an additional Battle Goal each scenario; earn no checkmarks unless you succeed on all of them.",
+                    "value": 0,
+                    "target": 30
+                }
+            ]
+        },
+        {
+            "id": "cq03",
+            "name": "Consequences of Combat",
+            "required_prosperity": 5,
+            "progress": [
+                {
+                    "type": "number",
+                    "name": "Gain 50 restraint: once per scenario, reduce an attack's value before drawing a modifier; gain one restraint per point reduced.",
+                    "value": 0,
+                    "target": 50
+                }
+            ]
+        },
+        {
+            "id": "cq04",
+            "name": "A Dramatic Conclusion",
+            "required_prosperity": 5,
+            "progress": [
+                {
+                    "type": "checkbox",
+                    "name": "Win 10 scenarios where your last two actions are a top loss action and a bottom loss action.",
+                    "value": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            ]
+        }
+    ],
+    "items": [],
+    "abilities": [],
+    "characters": {},
+    "characterOrder": [],
+    "attackModifierDecks": {},
+    "events": {},
+    "townGuard": {},
+    "alchemy": [],
+    "classEvents": {},
+    "decks": {},
+    "prosperity": {},
+    "shop": {},
+    "rules": {},
+    "enhancements": {},
+    "sections": {},
+    "map": {}
+}

@@ -132,7 +132,7 @@ export default {
         "name": "Zufälliges Nebenszenario"
     },
     "gh-45": {
-        "name": "Zufälliger Gegenstandsplanv"
+        "name": "Zufälliger Gegenstandsplan"
     },
     "gh-46": {
         "name": "Erleide 3 Schaden und erhalte {POISON}"
@@ -183,7 +183,7 @@ export default {
         "name": "Erhalte “Mehrzweckdolch” (Gegenstand 040)"
     },
     "gh-62": {
-        "name": "Erhalte “Helm der Berge” (Gegenstand 110) and “Gebirgshammer” (Gegenstand 115)"
+        "name": "Erhalte “Helm der Berge” (Gegenstand 110) und “Gebirgshammer” (Gegenstand 115)"
     },
     "gh-63": {
         "name": "Zufälliger Gegenstandsplan"
@@ -231,7 +231,7 @@ export default {
         "name": "Erhalte “Großer Arzneitrank” (Gegenstand 090)"
     },
     "fc-78": {
-        "name": "Erhalte “Alter Bohrer” (Gegenstand 157)"
+        "name": "Gegenstandsplan “Antiker Bogen” (Gegenstand 157)"
     },
     "fc-79": {
         "name": "Erhalte “Falkenfigur” (Gegenstand 035)"
@@ -258,7 +258,7 @@ export default {
         "name": "Schalte {DR} Solo-Szenario “Ausblick auf das Unausweichliche” frei (s.Seite 25)"
     },
     "fc-87": {
-        "name": "Erleide 2 Schaden, erhalte {CURSE} und 15 Gold"
+        "name": "Erleide 2 Schaden, erhalte FLUCH und 15 Gold"
     },
     "fc-88": {
         "name": "Erhalte 1 ✓"
@@ -267,10 +267,10 @@ export default {
         "name": "Erhalte “Ring der Chancen” (Gegenstand 070)"
     },
     "fc-90": {
-        "name": "Lies Abschnitt 75 auf Seite 49"
+        "name": "Je 10 Gold, lest Abschnitt 75 auf Seite 49"
     },
     "fc-91": {
-        "name": "Erhalte 30 und den Gruppenerfolg “Opportunisten” Füge dem Deck Stadt-Ereignis 84 hinzu"
+        "name": "Erhalte 30 Gold und den Gruppenerfolg “Opportunisten”. Füge dem Deck Stadt-Ereignis 84 hinzu"
     },
     "fc-93": {
         "name": "Erhalte “Schrift der Eile” (Gegenstand 159)"
@@ -279,465 +279,702 @@ export default {
         "name": "Erhalte 1 ✓ und füge dem Deck Riss-Ereignis 20 hinzu"
     },
     "fc-95": {
-        "name": "Erhalte 25 Gold und den Gruppenerfolg “Geldschatulle“. Füge dem Deck Stadt-Ereignis 58 hinzu"
+        "name": "Erhalte 25 Gold und den Gruppenerfolg “Geldschatulle“. Füge dem Deck Stadt-Ereignis 85 hinzu"
     },
     "fc-96": {
-        "name": "Du findest einen alten Folianten mit technischen Zeichnungen und Entwürfen für eine Vielzahl von exotischen Maschinen. Eim Einband findest du eine eigentümliche handschriftliche Notiz: {NOTE_115}"
+        "name": "Du findest einen alten Folianten mit technischen Zeichnungen und Entwürfen für eine Vielzahl von exotischen Maschinen. Im Einband findest du eine eigentümliche handschriftliche Notiz: {NOTE_115}"
     },
     "jotl-1": {
         "name": "Erhalte 10 experience"
     },
     "jotl-2": {
-        "name": "“Ring of Strength” (Item 31)"
+        "name": "“Ring der Stärke” (Gegenstand 31)"
     },
     "jotl-3": {
         "name": "Erhalte 15 experience"
     },
     "jotl-4": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-5": {
         "name": "Erhalte 1 ✔"
     },
     "jotl-6": {
-        "name": "Erhalte 10 gold"
+        "name": "Erhalte 10 Gold"
     },
     "jotl-7": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-8": {
-        "name": "Suffer 3 damage, Erhalte {POISON,"
+        "name": "Erleide 3 Schaden, erhalte {POISON,"
     },
     "jotl-9": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-10": {
-        "name": "“Fateful Compass” (Item 27)"
+        "name": "“Schicksalskompass” (Gegenstand 27)"
     },
     "jotl-11": {
-        "name": "“Ring of Haste” (Item 30)"
+        "name": "“Ring der Eile” (Gegenstand 30)"
     },
     "jotl-12": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-13": {
-        "name": "Erhalte 5 gold"
+        "name": "Erhalte 5 Gold"
     },
     "jotl-14": {
-        "name": "Erhalte 3 money tokens"
+        "name": "Erhalte 3 Münzmarker"
     },
     "jotl-15": {
         "name": "Erhalte 1 ✔"
     },
     "jotl-16": {
-        "name": "“Mana Potion” (Item 14)"
+        "name": "“Manatrank” (Gegenstand 14)"
     },
     "jotl-X": {
-        "name": "“Ring of Restoration” (Item 32)"
+        "name": "“Ring der Erholung” (Gegenstand 32)"
     },
     "cs-1": {
-        "name": "“Drake's Blood” (Item 14)"
+        "name": "“Drake's Blood” (Gegenstand 59)"
     },
     "cs-2": {
-        "name": "“Orb of Fortune” (Item 09)"
+        "name": "“Orb of Fortune” (Gegenstand 09)"
     },
     "cs-3": {
-        "name": "“Chain Mace” (Item 14)"
+        "name": "“Chain Mace” (Gegenstand 14)"
     },
     "cs-4": {
-        "name": "Gain 15 gold and Recover one lost card"
+        "name": "Erhalte 15 Gold und erhalte eine verlorene Karte zurück"
     },
     "cs-5": {
-        "name": "“Concussion Mine” (Item 31)"
+        "name": "“Concussion Mine” (Gegenstand 31)"
     },
     "cs-6": {
-        "name": "Gain 20 gold and disarm all adjacent traps"
+        "name": "Erhalte 20 Gold und entschärfe alle angrenzenden Fallen"
     },
     "cs-7": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-8": {
-        "name": "“Dizzying Tincture” (Item 58)"
+        "name": "“Dizzying Tincture” (Gegenstand 58)"
     },
     "cs-9": {
-        "name": "“Orb of Fortune” (Item 9)"
+        "name": "“Orb of Fortune” (Gegenstand 9)"
     },
     "cs-10": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-11": {
-        "name": "“Dizzying Tincture” (Item 58)"
+        "name": "“Dizzying Tincture” (Gegenstand 58)"
     },
     "cs-12": {
-        "name": "“Mana Medicine” (Item 60)"
+        "name": "“Mana Medicine” (Gegenstand 60)"
     },
     "cs-13": {
-        "name": "“Orb of Despair” (Item 10)"
+        "name": "“Orb of Despair” (Gegenstand 10)"
     },
     "cs-14": {
-        "name": "“Steel Helmet” (Item 22)"
+        "name": "“Steel Helmet” (Gegenstand 22)"
     },
     "cs-15": {
-        "name": "“Shifting Compass” (Item 32)"
+        "name": "“Shifting Compass” (Gegenstand 32)"
     },
     "cs-16": {
-        "name": "Perform “Heal 6, Self”, gain {POISON}"
+        "name": "Führe “Heilung 6, selbst” aus und erhalte {POISON}"
     },
     "cs-17": {
-        "name": "“Concussion Mine” (Item 31)"
+        "name": "“Concussion Mine” (Gegenstand 31)"
     },
     "cs-18": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "“Boneclad Shawl” (Gegenstand 25)"
     },
     "cs-19": {
-        "name": "Gain ✓ and generate a Wild Element"
+        "name": "Erhalte ✓ und erzeuge ein beliebiges Element"
     },
     "cs-20": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-21": {
-        "name": "“Steel Helmet” (Item 22)"
+        "name": "“Steel Helmet” (Gegenstand 22)"
     },
     "cs-22": {
-        "name": "“Boots of Perpetuity” (Item 19)"
+        "name": "“Boots of Perpetuity” (Gegenstand 19)"
     },
     "cs-23": {
-        "name": "“Trophy Helmet” (Item 12)"
+        "name": "“Trophy Helmet” (Gegenstand 12)"
     },
     "cs-24": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-25": {
-        "name": "“Draining Greaves” (Item 15)"
+        "name": "“Draining Greaves” (Gegenstand 15)"
     },
     "cs-26": {
-        "name": "“Iron Snare” (Item 30)"
+        "name": "“Iron Snare” (Gegenstand 30)"
     },
     "cs-27": {
-        "name": "“Woven Plate Armor” (Item 23)"
+        "name": "“Woven Plate Armor” (Gegenstand 23)"
     },
     "cs-28": {
-        "name": "“Chain Mace” (Item 14)"
+        "name": "“Chain Mace” (Gegenstand 14)"
     },
     "cs-29": {
-        "name": "“Woven Plate Armor” (Item 23)"
+        "name": "“Woven Plate Armor” (Gegenstand 23)"
     },
     "cs-30": {
-        "name": "“Boneclad Shawl (Item 25)"
+        "name": "“Boneclad Shawl” (Gegenstand 25)"
     },
     "cs-31": {
-        "name": "“Drake's Blood” (Item 14)"
+        "name": "“Drake's Blood” (Gegenstand 59)"
     },
     "cs-32": {
-        "name": "“Curious Pendant” (Item 20)"
+        "name": "“Curious Pendant” (Gegenstand 20)"
     },
     "cs-33": {
-        "name": "25  gold, gain {POISON}"
+        "name": "25 Gold, erhalte {POISON}"
     },
     "cs-34": {
-        "name": "Suffer hazardous terrain damage, gain {INVISIBLE}"
+        "name": "Erleide Schaden durch gefährliches Gelände, erhalte {INVISIBLE}"
     },
     "cs-35": {
-        "name": "“Curseblood Blade” (Item 36)"
+        "name": "“Curseblood Blade” (Gegenstand 36)"
     },
     "cs-36": {
-        "name": "10 experience, gain {INVSIBLE}"
+        "name": "10 Erfahrung, erhalte {INVSIBLE}"
     },
     "cs-37": {
-        "name": "“Draining Greaves” (Item 15)"
+        "name": "“Draining Greaves” (Gegenstand 15)"
     },
     "cs-38": {
-        "name": "“War Pick” (Item 13)"
+        "name": "“War Pick” (Gegenstand 13)"
     },
     "cs-39": {
-        "name": "“Infrared Goggles” (Item 21)"
+        "name": "“Infrared Goggles” (Gegenstand 21)"
     },
     "cs-40": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-41": {
-        "name": "“Ashsteel Gauntlets” (Item 61)"
+        "name": "“Ashsteel Gauntlets” (Gegenstand 61)"
     },
     "cs-42": {
-        "name": "“War Pick” (Item 13)"
+        "name": "“War Pick” (Gegenstand 13)"
     },
     "cs-43": {
-        "name": "10 experience and Refresh all spent items"
+        "name": "10 Erfahrung und erneuere alle verbrauchten Gegenstände"
     },
     "cs-44": {
-        "name": "“Mana Medicine” (Item 60)"
+        "name": "“Mana Medicine” (Gegenstand 60)"
     },
     "cs-45": {
-        "name": "One random “Stone” item (Item 94-100)"
+        "name": "Ein zufälliger “Stone”-Gegenstand (Gegenstand 94-100)"
     },
     "cs-46": {
-        "name": "“Vipertooth Dagger” design (Item 54)"
+        "name": "“Vipertooth Dagger”-Plan (Gegenstand 54)"
     },
     "cs-47": {
-        "name": "15 gold"
+        "name": "15 Gold"
     },
     "cs-48": {
-        "name": "15 gold"
+        "name": "15 Gold"
     },
     "cs-49": {
-        "name": "“Magma Waders” (Item 99)"
+        "name": "“Lavalatschen” (Gegenstand gh-99)"
     },
     "cs-50": {
-        "name": "“Bottled Moonlight” (Item 18)"
+        "name": "“Bottled Moonlight” (Gegenstand 18)"
     },
     "fh-1": {
-        "name": "Gain four loot cards."
+        "name": "Erhalte vier Beutekarten."
     },
     "fh-2": {
-        "name": "Suffer 3 damage, then gain {MUDDLE}"
+        "name": "Erleide 3 Schaden und erhalte {MUDDLE}."
     },
     "fh-3": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-4": {
-        "name": "Gain Eventide Scepter 200."
+        "name": "Erhalte “Zepter des Abends” 200."
     },
     "fh-5": {
-        "name": "Gain Severed Claw 204."
+        "name": "Erhalte “Abgetrennte Schere” 204."
     },
     "fh-6": {
-        "name": "Gain Opulent Shoes 199."
+        "name": "Erhalte “Prächtige Schuhe” 199."
     },
     "fh-7": {
-        "name": "Gain Data Drive 227."
+        "name": "Erhalte “Datenspeicher” 227."
     },
     "fh-8": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-9": {
-        "name": "Unlock a random side scenario."
+        "name": "Schaltet ein zufälliges Nebenszenario frei."
     },
     "fh-10": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-11": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-12": {
-        "name": "You find the remains of Camilla and her paintings of a majestic horned creature. Gain “Brummix” campaign sticker and add s 99.1 to the campaign calendar in three weeks."
+        "name": "Ihr findet die Überreste von Camilla und ihre Gemälde eines majestätischen, gehörnten Wesens. Erhaltet den Kampagnenaufkleber “Brummix” und fügt s 99.1 in drei Wochen zum Kampagnenkalender hinzu."
     },
     "fh-13": {
-        "name": "Gain Fishhook 207."
+        "name": "Erhalte “Angelhaken” 207."
     },
     "fh-14": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-15": {
-        "name": "Unlock a random side scenario."
+        "name": "Schaltet ein zufälliges Nebenszenario frei."
     },
     "fh-16": {
-        "name": "Gain Decanter of Mists 183."
+        "name": "Erhalte “Nebeldekanter” 183."
     },
     "fh-17": {
-        "name": "Gain 3 Lumber."
+        "name": "Erhalte 3 Holz."
     },
     "fh-18": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-19": {
-        "name": "Gain 1 Axenut, 1 Corpsecap, and 1 Flamefruit."
+        "name": "Erhalte 1 Beilnuss, 1 Leichling und 1 Flammfrucht."
     },
     "fh-20": {
-        "name": "Gain four loot cards."
+        "name": "Erhalte vier Beutekarten."
     },
     "fh-21": {
-        "name": "Gain Detonator blueprint 064."
+        "name": "Erhaltet den Gegenstandsplan “Zünder” 064."
     },
     "fh-22": {
-        "name": "Gain Scaled Armor blueprint 068."
+        "name": "Erhaltet den Gegenstandsplan “Schuppenrüstung” 068."
     },
     "fh-23": {
-        "name": "Unlock a random side scenario."
+        "name": "Schaltet ein zufälliges Nebenszenario frei."
     },
     "fh-24": {
-        "name": "Gain Bane."
+        "name": "Erhalte Ruin."
     },
     "fh-25": {
-        "name": "Gain 1 Corpsecap and 1 Flamefruit."
+        "name": "Erhalte 1 Leichling und 1 Flammfrucht."
     },
     "fh-26": {
-        "name": "Gain Lightning Rod 223."
+        "name": "Erhalte “Blitzableiter” 223."
     },
     "fh-27": {
-        "name": "Gain two loot cards and {POISON}."
+        "name": "Erhalte zwei Beutekarten und {POISON}."
     },
     "fh-28": {
-        "name": "Gain four loot cards."
+        "name": "Erhalte vier Beutekarten."
     },
     "fh-29": {
-        "name": "Gain 2 Lumber 2 Hide."
+        "name": "Erhalte 2 Holz und 2 Leder."
     },
     "fh-30": {
-        "name": "Gain four loot cards."
+        "name": "Erhalte vier Beutekarten."
     },
     "fh-31": {
-        "name": "Gain Balanced Scales blueprint 078."
+        "name": "Erhaltet den Gegenstandsplan “Geeichte Waage” 078."
     },
     "fh-32": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-33": {
-        "name": "Gain 3 Lumber."
+        "name": "Erhalte 3 Holz."
     },
     "fh-34": {
-        "name": "Gain 1 ✔."
+        "name": "Erhalte 1 ✔."
     },
     "fh-35": {
-        "name": "Gain Extendable Pole 228."
+        "name": "Erhalte “Teleskopstab” 228."
     },
     "fh-36": {
-        "name": "Gain Black Box 222."
+        "name": "Erhalte “Schwarze Kiste” 222."
     },
     "fh-37": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-38": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-39": {
-        "name": "Unlock a random side scenario."
+        "name": "Schaltet ein zufälliges Nebenszenario frei."
     },
     "fh-40": {
-        "name": "Gain Chaos Cannon blueprint 077."
+        "name": "Erhaltet den Gegenstandsplan “Chaoskanone” 077."
     },
     "fh-41": {
-        "name": "Gain Algox Carving 225."
+        "name": "Erhalte “Algox-Schnitzerei” 225."
     },
     "fh-42": {
-        "name": "Gain Giant Sword 206."
+        "name": "Erhalte “Riesenschwert” 206."
     },
     "fh-43": {
-        "name": "Gain four loot cards."
+        "name": "Erhalte vier Beutekarten."
     },
     "fh-44": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-45": {
-        "name": "Gain 2 Lumber 2 Metal."
+        "name": "Erhalte 2 Holz und 2 Metall."
     },
     "fh-46": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-47": {
-        "name": "Gain 5 Experience."
+        "name": "Erhalte 5 Erfahrung."
     },
     "fh-48": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-49": {
-        "name": "Gain Bone Boots blueprint 071"
+        "name": "Erhaltet den Gegenstandsplan “Knochenstiefel” 071"
     },
     "fh-50": {
-        "name": "Gain Cured Hide Armor 017."
+        "name": "Erhalte “Hartlederrüstung” 017."
     },
     "fh-51": {
-        "name": "Read 78.1."
+        "name": "Lest s 78.1."
     },
     "fh-52": {
-        "name": "Gain Titan Nail 208."
+        "name": "Erhalte “Titandorn” 208."
     },
     "fh-53": {
-        "name": "Gain Eye of the Storm 239."
+        "name": "Erhalte “Sturmvortex” 239."
     },
     "fh-54": {
-        "name": "Treasure chest? There was no treasure chest there. Maybe you should slow down on the drink."
+        "name": "Schatztruhe? Dort war gar keine Schatztruhe. Vielleicht solltest du etwas langsamer trinken."
     },
     "fh-55": {
-        "name": "Gain Harpoon 205."
+        "name": "Erhalte “Harpune” 205."
     },
     "fh-56": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-57": {
-        "name": "What’s this? An empty chest with a lead trapdoor at the bottom . You make note of the location so you can return with Gem’s help later. Unlock The Lead Door 103."
+        "name": "Was ist das? Eine leere Truhe mit einer Bleiluke am Boden. Ihr merkt euch den Ort, um später mit Gems Hilfe zurückzukehren. Schaltet “Die Bleitür” 103 frei."
     },
     "fh-58": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-59": {
-        "name": "Gain Pain Simulacrum blueprint 081."
+        "name": "Erhaltet den Gegenstandsplan “Schmerzpuppe” 081."
     },
     "fh-60": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-61": {
-        "name": "Unlock a random side scenario."
+        "name": "Schaltet ein zufälliges Nebenszenario frei."
     },
     "fh-62": {
-        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+        "name": "Erhaltet den Gegenstandsplan “Mechanikwürfel” 082, sobald ihr die andere Hälfte dieses Plans findet."
     },
     "fh-63": {
-        "name": "Gain five loot cards."
+        "name": "Erhalte fünf Beutekarten."
     },
     "fh-64": {
-        "name": "Gain 3 Lumber."
+        "name": "Erhalte 3 Holz."
     },
     "fh-65": {
-        "name": "Gain 15 Money."
+        "name": "Erhalte 15 Gold."
     },
     "fh-66": {
-        "name": "Suffer 2 damage, then gain Brittle."
+        "name": "Erleide 2 Schaden und erhalte Spröde."
     },
     "fh-67": {
-        "name": "Unlock a random side scenario."
+        "name": "Schaltet ein zufälliges Nebenszenario frei."
     },
     "fh-68": {
-        "name": "Gain 4 Metal."
+        "name": "Erhalte 4 Metall."
     },
     "fh-69": {
-        "name": "Gain Mechanical Cube blueprint 082 when you find the other half of this blueprint."
+        "name": "Erhaltet den Gegenstandsplan “Mechanikwürfel” 082, sobald ihr die andere Hälfte dieses Plans findet."
     },
     "fh-70": {
-        "name": "Gain Horn of Command blueprint 076."
+        "name": "Erhaltet den Gegenstandsplan “Befehlshorn” 076."
     },
     "fh-71": {
-        "name": "Gain four loot cards."
+        "name": "Erhalte vier Beutekarten."
     },
     "fh-72": {
-        "name": "Gain Living Stone blueprint 080."
+        "name": "Erhaltet den Gegenstandsplan “Lebender Stein” 080."
     },
     "fh-73": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-74": {
-        "name": "Gain a random item blueprint."
+        "name": "Erhaltet einen zufälligen Gegenstandsplan."
     },
     "fh-75": {
-        "name": "Gain 1 ✔."
+        "name": "Erhalte 1 ✔."
     },
     "fh-76": {
-        "name": "Unlock a random side scenario."
+        "name": "Schaltet ein zufälliges Nebenszenario frei."
     },
     "fh-77": {
-        "name": "Gain three loot cards."
+        "name": "Erhalte drei Beutekarten."
     },
     "fh-78": {
-        "name": "Gain Opulent Shoes 199."
+        "name": "Erhalte “Prächtige Schuhe” 199."
     },
     "fh-79": {
-        "name": "Gain 10 Experience."
+        "name": "Erhalte 10 Erfahrung."
     },
     "fh-80": {
-        "name": "Gain 15 Experience."
+        "name": "Erhalte 15 Erfahrung."
     },
     "fh-81": {
-        "name": "Gain Unfettered Arm 226."
+        "name": "Erhalte “Entfesselten-Arm” 226."
     },
     "fh-82": {
-        "name": "Gain Oak Staff blueprint 072."
+        "name": "Erhaltet den Gegenstandsplan “Eichenstab” 072."
     },
     "fh-83": {
-        "name": "Gain Tri-Corner Hat 195."
+        "name": "Erhalte “Dreispitz” 195."
     },
     "fh-84": {
-        "name": "Gain Ice Shiv 221."
+        "name": "Erhalte “Eisklinge” 221."
     },
     "fh-85": {
-        "name": "Gain 10 money."
+        "name": "Erhalte 10 Gold."
+    },
+    "gh2-1": {
+        "name": "Erhalte “Lavalatschen” (Gegenstand 142)"
+    },
+    "gh2-2": {
+        "name": "Erleide 3 Schaden und erhalte {POISON}"
+    },
+    "gh2-3": {
+        "name": "Erhalte “Stern-Ohrring” (Gegenstand 63)"
+    },
+    "gh2-4": {
+        "name": "Erhalte “Phasenmantel” (Gegenstand 98)"
+    },
+    "gh2-5": {
+        "name": "Erhalte “Kette des Dunkelpaktes” (Gegenstand 128)"
+    },
+    "gh2-6": {
+        "name": "Zufälliges Nebenszenario"
+    },
+    "gh2-7": {
+        "name": "Erhalte “Diebesgugel” (Gegenstand 108)"
+    },
+    "gh2-8": {
+        "name": "Erleide 3 Schaden und erhalte {CURSE}"
+    },
+    "gh2-9": {
+        "name": "Erhalte 20 Erfahrung"
+    },
+    "gh2-10": {
+        "name": "Erhalte 30 Gold"
+    },
+    "gh2-11": {
+        "name": "Zufälliges Nebenszenario"
+    },
+    "gh2-12": {
+        "name": "Erhalte 1 ✔"
+    },
+    "gh2-13": {
+        "name": "Erhalte 1 ✔"
+    },
+    "gh2-14": {
+        "name": "Erhalte 40 Gold"
+    },
+    "gh2-15": {
+        "name": "Erhalte 20 Gold"
+    },
+    "gh2-16": {
+        "name": "Erleide 3 Schaden und erhalte {WOUND}"
+    },
+    "gh2-17": {
+        "name": "Erhalte 15 Gold"
+    },
+    "gh2-18": {
+        "name": "Erhalte “Instabiler Sprengsatz” (Gegenstand 99)"
+    },
+    "gh2-19": {
+        "name": "Erhalte “Drakenstiefel” (Gegenstand 119)"
+    },
+    "gh2-20": {
+        "name": "Erhalte 25 Gold"
+    },
+    "gh2-21": {
+        "name": "Erhalte 2 ✔"
+    },
+    "gh2-22": {
+        "name": "Erhalte “Helm der Berge” (Gegenstand 129) und “Gebirgshammer” (Gegenstand 130)"
+    },
+    "gh2-23": {
+        "name": "Erhalte 15 Gold"
+    },
+    "gh2-24": {
+        "name": "Erhalte “Warding Rod” (Gegenstand 104)"
+    },
+    "gh2-25": {
+        "name": "Erhalte 1 ✔"
+    },
+    "gh2-26": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-27": {
+        "name": "Erleide 3 Schaden und erhalte {MUDDLE}"
+    },
+    "gh2-28": {
+        "name": "Erhalte 2 ✔"
+    },
+    "gh2-29": {
+        "name": "Erhalte “Charged Boots” (Gegenstand 100)"
+    },
+    "gh2-30": {
+        "name": "Erhalte 20 Erfahrung"
+    },
+    "gh2-31": {
+        "name": "Erhalte “Gischtkrone” (Gegenstand 131)"
+    },
+    "gh2-32": {
+        "name": "Zufälliges Nebenszenario"
+    },
+    "gh2-33": {
+        "name": "Erhalte “Arzneitrank” (Gegenstand 101)"
+    },
+    "gh2-34": {
+        "name": "Erhalte “Drakenhelm” (Gegenstand 121)"
+    },
+    "gh2-35": {
+        "name": "Erhalte “Rod of Transference” (Gegenstand 115)"
+    },
+    "gh2-36": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-37": {
+        "name": "Erhalte “Schuhe der Heiterkeit” (Gegenstand 97)"
+    },
+    "gh2-38": {
+        "name": "Erhalte 1 ✔"
+    },
+    "gh2-39": {
+        "name": "Erhalte 20 Erfahrung"
+    },
+    "gh2-40": {
+        "name": "Erhalte “Flammenfalchion” (Gegenstand 110)"
+    },
+    "gh2-41": {
+        "name": "Erhalte 15 Gold"
+    },
+    "gh2-42": {
+        "name": "Erleide 5 Schaden"
+    },
+    "gh2-43": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-44": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-45": {
+        "name": "Erhalte 2 ✔"
+    },
+    "gh2-46": {
+        "name": "Erhalte 15 Gold"
+    },
+    "gh2-47": {
+        "name": "Erleide 3 Schaden und erhalte {POISON}"
+    },
+    "gh2-48": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-49": {
+        "name": "Erhalte 15 Erfahrung"
+    },
+    "gh2-50": {
+        "name": "Erhalte “Dampfrüstung” (Gegenstand 106)"
+    },
+    "gh2-51": {
+        "name": "Erhalte 15 Erfahrung"
+    },
+    "gh2-52": {
+        "name": "Zufälliges Nebenszenario"
+    },
+    "gh2-53": {
+        "name": "Erhalte 1 ✔"
+    },
+    "gh2-54": {
+        "name": "Erhalte 15 Gold und “Stahlring” (Gegenstand 102)"
+    },
+    "gh2-55": {
+        "name": "Erhalte 20 Erfahrung"
+    },
+    "gh2-56": {
+        "name": "Erhalte 15 Gold"
+    },
+    "gh2-57": {
+        "name": "Zufälliges Nebenszenario"
+    },
+    "gh2-58": {
+        "name": "Erhalte 20 Gold"
+    },
+    "gh2-59": {
+        "name": "Erhalte “Shield of the Righteous” (Gegenstand 148)"
+    },
+    "gh2-60": {
+        "name": "Erleide 5 Schaden"
+    },
+    "gh2-61": {
+        "name": "Erhalte “Boots of Bracing” (Gegenstand 143)"
+    },
+    "gh2-62": {
+        "name": "Erhalte 20 Gold"
+    },
+    "gh2-63": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-64": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-65": {
+        "name": "Erhalte “Ranger's Hood” (Gegenstand 103)"
+    },
+    "gh2-66": {
+        "name": "Erhalte {POISON} und {STRENGTHEN} und erhalte 2 verlorene Karten zurück"
+    },
+    "gh2-67": {
+        "name": "Erhalte “Schicksalskompass” (Gegenstand 132)"
+    },
+    "gh2-68": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-69": {
+        "name": "Erhalte 25 Gold"
+    },
+    "gh2-70": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-71": {
+        "name": "Erhalte 2 ✔"
+    },
+    "gh2-72": {
+        "name": "Erhalte 25 Gold"
+    },
+    "gh2-73": {
+        "name": "Erhalte “Zahnkette” (Gegenstand 107)"
+    },
+    "gh2-74": {
+        "name": "Erleide 3 Schaden und erhalte {IMMOBILIZE}"
+    },
+    "gh2-75": {
+        "name": "Erhalte “Drakenrüstung” (Gegenstand 120)"
+    },
+    "gh2-76": {
+        "name": "Zufälliger Gegenstandsplan"
+    },
+    "gh2-77": {
+        "name": "Erhalte 30 Gold"
+    },
+    "gh2-78": {
+        "name": "Erhalte 20 Gold"
+    },
+    "gh2-79": {
+        "name": "Zufälliges Nebenszenario"
     }
 }

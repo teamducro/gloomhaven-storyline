@@ -16,11 +16,13 @@
         </div>
 
         <table class="border-separate border-spacing-2 sm:ml-8 sm:-mt-2">
-            <tr><td>{{ $t('Difficulty') }}</td><td>{{ difficulty }}</td></tr>
-            <tr v-for="row in calculateDifficultyTable(level, appData.game)">
-                <td>{{ row.label }}</td>
-                <td>{{ row.value }}</td>
-            </tr>
+            <tbody>
+                <tr><td>{{ $t('Difficulty') }}</td><td>{{ difficulty }}</td></tr>
+                <tr v-for="row in calculateDifficultyTable(level, appData.game)">
+                    <td>{{ row.label }}</td>
+                    <td>{{ row.value }}</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </template>
@@ -30,6 +32,7 @@
 import SheetCalculations from "../../services/SheetCalculations";
 
 export default {
+    emits: ['change', 'update:value'],
     mixins: [SheetCalculations],
     inject: ['appData'],
     props: {
@@ -37,7 +40,7 @@ export default {
             type: String
         },
         value: {
-            type: Number|null,
+            type: [Number, null],
             default: null
         },
         characters: {

@@ -12,6 +12,12 @@ describe('Scenario list', () => {
         utilities.assertTableCount('scenarios', 113);
     });
 
+    it('It shows the 2x sticker in the list', () => {
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('#scenarios img[src$="/img/scenarios/gh/1@2x.webp"]').should('exist');
+    });
+
     it('It opens a scenario', () => {
         cy.visit('/tracker/#/scenarios');
 
@@ -75,6 +81,82 @@ describe('Scenario list', () => {
         cy.get('#scenarios').within(() => {
             cy.contains('#4').should('be.visible');
         });
+    });
+
+    it('It filters on monsters', () => {
+        cy.visit('/tracker?states=1_c-2_c');
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('button').contains('filter_list').click();
+        cy.get('input[name="monster-filter"]').type('bandit gu');
+        cy.get('li').contains('Bandit Guard').find('img.monster-icon')
+            .should('have.attr', 'src').and('contain', '/img/monsters/gh/thumbs/bandit-guard.');
+        cy.get('li').contains('Bandit Guard').click();
+
+        // The results stay open to pick another monster
+        cy.get('.dropdown .dropdown li').should('contain', 'Bandit Guard');
+
+        // Clicking a chosen monster again removes it from the filter
+        cy.get('.dropdown .dropdown li').contains('Bandit Guard').click();
+        utilities.assertTableCount('scenarios', 113);
+        cy.get('.dropdown .dropdown li').contains('Bandit Guard').click();
+        utilities.assertTableCount('scenarios', 2);
+
+        // Clicking elsewhere in the filter menu closes the results, not the menu
+        cy.get('.dropdown li[role="separator"]').first().click();
+        cy.get('.dropdown .dropdown').should('not.exist');
+        cy.get('input[name="monster-filter"]').should('be.visible');
+
+        // Starting class solo scenarios are visible too
+        utilities.assertTableCount('scenarios', 2);
+        cy.get('#scenarios').contains('#1 Black Barrow').should('be.visible');
+        cy.get('#scenarios').contains('Return to the Black Barrow').should('be.visible');
+
+        cy.get('input[name="monster-filter"]').clear().type('inox gu');
+        cy.get('li').contains('Inox Guard').click();
+
+        utilities.assertTableCount('scenarios', 3);
+        cy.get('#scenarios').contains('#3 Inox Encampment').should('be.visible');
+        cy.get('#scenarios').contains('#2 ').should('not.exist');
+
+        cy.get('span').contains('Clear filter').click();
+
+        utilities.assertTableCount('scenarios', 113);
+    });
+
+    it('It shows the monsters of a scenario', () => {
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('td').contains('#1 Black Barrow').click({ scrollBehavior: 'center' });
+        cy.get('#scenario-monsters').should('contain', 'Monsters (3)');
+        cy.get('#scenario-monsters li').should('not.exist');
+
+        cy.get('#scenario-monsters button').contains('Monsters').click();
+        cy.get('#scenario-monsters li').should('have.length', 3)
+            .and('contain', 'Bandit Archer').and('contain', 'Bandit Guard').and('contain', 'Living Bones');
+        cy.get('#scenario-monsters img.monster-icon').should('have.length', 3).each(img => {
+            expect(img.attr('src')).to.contain('/img/monsters/gh/thumbs/');
+            expect(img[0].naturalWidth).to.be.greaterThan(0);
+        });
+
+        cy.get('#scenario-monsters button').contains('Bandit Guard').click();
+        cy.get('#monster-image img').should('be.visible')
+            .and('have.attr', 'alt', 'Bandit Guard')
+            .and('have.attr', 'src').and('contain', '/img/monsters/gh/bandit-guard.');
+        cy.get('#monster-image img').should(img => expect(img[0].naturalWidth).to.be.greaterThan(0));
+    });
+
+    it('It shows the base monster image for Jaws of the Lion variants', () => {
+        cy.visit('/tracker/#/scenarios');
+        utilities.switchGame('jotl');
+        cy.visit('/tracker/#/scenarios');
+
+        cy.get('td').contains('#1 Roadside Ambush').click({ scrollBehavior: 'center' });
+        cy.get('#scenario-monsters button').contains('Monsters').click();
+
+        cy.get('#scenario-monsters li').should('have.length', 1).and('contain', 'Common Vermling Raider');
+        cy.get('#scenario-monsters li img.monster-icon')
+            .should('have.attr', 'src').and('contain', '/img/monsters/jotl/thumbs/vermling-raider.');
     });
 
     it('Only show scenarios from selected game', () => {

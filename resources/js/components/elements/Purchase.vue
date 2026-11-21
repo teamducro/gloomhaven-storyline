@@ -17,6 +17,7 @@
                         </td>
                         <td class="py-2 text-right">
                             <button type="button" class="mdc-button" @click.prevent="renewExisting(story)">
+                                <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label text-primary">{{ story.has_expired ? $t('Renew') : $t('Extend') }}</span>
                             </button>
                         </td>
@@ -25,10 +26,12 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white2-75">{{ $t('Cancel') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="purchaseNew">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-primary">{{ $t('Buy new campaign') }}</span>
                 </button>
             </template>
@@ -39,12 +42,12 @@
                 <table>
                     <tr v-for="(game) in gameData.purchasable()" :key="'game-'+game">
                         <td><checkbox group="purchasable-games"
-                                      :id="'game-'+game"
+                                      :id="idPrefix+game"
                                       :checked="games.includes(game)"
                                       :auto-disable="false"
                                       @change="(id, isChecked) => {changedGames(game, isChecked)}"></checkbox>
                         </td>
-                        <td class="pr-2"><label :for="'game-'+game">{{ $t(game) }}</label></td>
+                        <td class="pr-2"><label :for="idPrefix+game">{{ $t(game) }}</label></td>
                         <td><span class="font-title text-md text-white2-87">€4,99</span> / year</td>
                     </tr>
                 </table>
@@ -53,10 +56,12 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white2-75">{{ $t('Cancel') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="purchase" :disabled="!games.length">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-primary" :class="!games.length ? 'opacity-50' : ''">{{ $t('Purchase') }}</span>
                 </button>
             </template>
@@ -68,15 +73,18 @@
             </template>
             <template v-slot:buttons>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white2-75">{{ $t('Cancel') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="local">
+                    <span class="mdc-button__ripple"></span>
                     <span class="mdc-button__label text-white2-75">{{ $t('purchase.Go to local') }}</span>
                 </button>
                 <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="yes"
                         @click="purchaseExpand">
-                    <span class="mdc-button__label text-primary">{{ $t('Purchase') +' '+ $t(expand) }}</span>
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__label text-primary">{{ $t('Purchase') +' '+ $t(gameData.accessGame(expand)) }}</span>
                 </button>
             </template>
         </modal>
@@ -88,6 +96,7 @@ import Helpers from "../../services/Helpers";
 import CheckoutRepository from "../../apiRepositories/CheckoutRepository";
 import GameData from "../../services/GameData";
 import StoryRepository from "../../repositories/StoryRepository";
+import ApiStoryRepository from "../../apiRepositories/StoryRepository";
 
 export default {
     props: {
@@ -113,6 +122,8 @@ export default {
     },
     data() {
         return {
+            // Several purchase components share a page, unique ids keep each label on its own checkbox
+            idPrefix: `purchase-${this.$.uid}-`,
             games: [],
             stories: [],
             expand: null,
@@ -129,7 +140,8 @@ export default {
             this.selectedStoryId = null
 
             if (!this.storyId) {
-                this.stories = (app.stories.items || []).filter(s => !s.is_shared && s.expires_at)
+                // Read from storage: the website has no app.stories.
+                this.stories = (new ApiStoryRepository).getStories().filter(s => !s.is_shared && s.expires_at).all()
                 if (this.stories.length > 0) {
                     this.$refs['choose-modal'].open()
                     return
@@ -182,7 +194,7 @@ export default {
             }
         },
         async purchaseExpand() {
-            this.games = [this.expand]
+            this.games = [this.gameData.accessGame(this.expand)]
             await this.purchase()
         },
         async purchase() {
@@ -193,19 +205,13 @@ export default {
 
             const response = await this.checkout.checkout(this.effectiveStoryId, this.games)
                 .catch(e => {
-                    this.purchasing = false;
-                    this.error(e.response.data.message);
+                    this.error(e.response?.data?.message || e.message);
                 });
 
-            this.purchasing = false;
-
             if (response) {
-                this.$stripe.redirectToCheckout({
-                    sessionId: response.data.session
-                })
-                    .then(function (result) {
-                        this.error(result.error.message);
-                    });
+                location.href = response.data.url;
+            } else {
+                this.purchasing = false;
             }
         },
         local() {

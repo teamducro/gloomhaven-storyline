@@ -11,14 +11,16 @@ const Items = () => import("./pages/Items");
 const Buildings = () => import("./pages/Buildings");
 const Shared = () => import("./pages/Shared");
 const Settings = () => import("./pages/Settings");
+const Summaries = () => import("./pages/Summaries");
 
 export default [
     {path: '/', redirect: '/story'},
     {path: '/story/:id?', component: Story},
     {path: '/scenarios', component: Scenarios},
+    {path: '/summaries', component: Summaries},
     {path: '/map', component: Map},
     {path: '/achievements', component: Achievements},
-    {path: '/info', name: 'info', component: Info, props: true},
+    {path: '/info', name: 'info', component: Info, props: route => ({contribute: !!route.query.contribute})},
     {path: '/campaigns', component: Campaigns},
     {path: '/party', component: Party},
     {path: '/characters', component: Characters},
@@ -27,5 +29,5 @@ export default [
     {path: '/login/:id/:token', component: Login},
     {path: '/settings', component: Settings},
     {path: '/shared/:version/:id/:storage/:path?/:game?', component: Shared},
-    {path: '*', redirect: '/story'},
+    {path: '/:pathMatch(.*)*', redirect: '/story'},
 ];

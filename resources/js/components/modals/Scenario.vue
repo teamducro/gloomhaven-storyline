@@ -14,6 +14,7 @@
                             <indicators class="items-center hidden xs:flex" :scenario="scenario" :key="'indicators-desktop-' + stateKey"/>
                             <button type="button" data-mdc-dialog-action="close"
                                     class="mdc-button">
+                                <span class="mdc-button__ripple"></span>
                                 <i class="material-icons">close</i>
                             </button>
                         </span>
@@ -75,6 +76,7 @@
                                  class="hidden ml-auto"
                                  :class="[scenario.is_side ? 'sm:block' : 'xs:block', scenario.solo ? 'w-12' : 'w-20']">
                                 <webp v-if="!scenario.solo" :src="scenario.image()"
+                                      :retina-webp="scenario.hasRetinaSticker()"
                                       :animate="true"
                                       :alt="$t(scenario.name)"/>
                                 <character-icon v-if="scenario.solo" class="inline-block"
@@ -90,16 +92,23 @@
                             <div class="flex flex-wrap" style="margin-left: -2px;">
                                 <div class="w-full flex items-center">
                                     <i v-if="scenario.isRequired() || scenario.isBlocked()"
-                                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                                       class="material-icons outlined text-incomplete text-2xl mr-2">cancel</i>
                                     <i v-else
-                                       class="material-icons text-complete text-2xl mr-2">check_circle_outline</i>
+                                       class="material-icons outlined text-complete text-2xl mr-2">check_circle</i>
                                     <span>{{ $t('Requirements') }}:</span>
                                 </div>
                                 <div class="ml-8">
                                     <requirements :conditions="scenario.required_by"
                                                  v-if="scenario.required_by.isNotEmpty()"
                                                  :scenarioState="scenario.state"></requirements>
-                                    <component v-else v-bind:is="renderHtml(scenario.requirements)"></component>
+                                    <template v-else-if="$te(scenario.$tPrefix('requirements'))">
+                                        {{ $t(scenario.$tPrefix('requirements')) }}
+                                    </template>
+                                    <div v-else-if="scenario.solo" class="flex items-center">
+                                        <character-icon class="inline-block w-5 mr-2" :character="scenario.solo" :show-name="true"/>
+                                        {{ $t('Level') }} 5
+                                    </div>
+                                    <template v-else>{{ scenario.requirements }}</template>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +117,8 @@
                              v-if="scenario.isVisible() && !scenario.isComplete() && !treasuresVisible">
                             <button class="mdc-button origin-left transform scale-75 mdc-button--raised"
                                     @click="treasuresVisible = true">
-                                <i class="material-icons mdc-button__icon">attach_money</i>
+                                <span class="mdc-button__ripple"></span>
+                                <add-links-and-icons class="mr-2" :text="'{COINS}'"/>
                                 <span class="mdc-button__label">{{ $t('Show treasures') }}</span>
                             </button>
                         </div>
@@ -116,18 +126,19 @@
                         <div class="my-2"
                              v-if="(scenario.isComplete() || treasuresVisible) && scenario.treasures.length">
                             <h2 class="text-white">{{ $t('Treasures') }}</h2>
-                            <div v-if="scenario.treasures.length"
-                                 v-for="id in scenario.treasures" :key="'treasure-'+id"
-                                 class="flex items-center -ml-2">
-                                <checkbox-with-label
-                                    :id="'treasure-'+id"
-                                    :label="isNaN(id) ? id.toUpperCase() : '#' + id"
-                                    :checked="scenario.isTreasureUnlocked(id)"
-                                    @change="treasureChanged"></checkbox-with-label>
-                                <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
-                                    <add-links-and-icons :text="$t(`treasures.${scenario.game}-${id}.name`)"/>
-                                </span>
-                            </div>
+                            <template v-if="scenario.treasures.length">
+                                <div v-for="id in scenario.treasures" :key="'treasure-'+id"
+                                     class="flex items-center -ml-2">
+                                    <checkbox-with-label
+                                        :id="'treasure-'+id"
+                                        :label="isNaN(id) ? id.toUpperCase() : '#' + id"
+                                        :checked="scenario.isTreasureUnlocked(id)"
+                                        @change="treasureChanged"></checkbox-with-label>
+                                    <span v-if="scenario.isTreasureUnlocked(id)" class="ml-4">
+                                        <add-links-and-icons :text="$t(`treasures.${scenario.game}-${id}.name`)"/>
+                                    </span>
+                                </div>
+                            </template>
                         </div>
                         <p class="mb-2"
                            v-if="!scenario.isComplete() && !scenario.treasures.length && treasuresVisible">
@@ -137,20 +148,22 @@
                         <div class="my-2" v-if="scenario.loot && Object.keys(scenario.loot).length > 0">
                             <h2 class="text-white">{{ $t('Loot') }}</h2>
                             <ul class="mt-2">
-                                <li class="flex items-center" v-if="value > 0" v-for="(value, type) in scenario.loot" :key="type">
-                                    <inline-svg :src="'resources/'+type" class="mr-2 text-white"/>
-                                    <span>{{ $t(type) }}</span>
-                                    <template v-if="type !== 'random-item-treasure'">
-                                        <span>&nbsp;x&nbsp;{{ value }}</span>
-                                    </template>
-                                    <template v-else>
-                                        <checkbox
-                                            :id="'random-item-treasure-'+scenario.id"
-                                            :checked="scenario.random_item_treasure"
-                                            @change="randomItemTreasureChanged"
-                                        />
-                                    </template>
-                                </li>
+                                <template v-for="(value, type) in scenario.loot" :key="type">
+                                    <li class="flex items-center" v-if="value > 0">
+                                        <inline-svg :src="'resources/'+type" class="mr-2 text-white"/>
+                                        <span>{{ $t(type) }}</span>
+                                        <template v-if="type !== 'random-item-treasure'">
+                                            <span>&nbsp;x&nbsp;{{ value }}</span>
+                                        </template>
+                                        <template v-else>
+                                            <checkbox
+                                                :id="'random-item-treasure-'+scenario.id"
+                                                :checked="scenario.random_item_treasure"
+                                                @change="randomItemTreasureChanged"
+                                            />
+                                        </template>
+                                    </li>
+                                </template>
                             </ul>
                         </div>
 
@@ -161,13 +174,14 @@
                                     <h2 class="text-white">
                                         {{ is_awarded ? '' : $t('Lost') }}
                                         {{ scenario.game === 'fh' ? '' : (is_global ? $t('Global') : $t('Party')) }}
-                                        {{ $tc('Achievement', y.count()) }}
+                                        {{ $t('Achievement', y.count()) }}
                                     </h2>
                                     <div v-for="achievement in y"
                                          class="flex items-center">
                                         <button type="button"
                                                 class="mdc-button normal-case -ml-2"
                                                 @click="openAchievement(achievement.id)">
+                                            <span class="mdc-button__ripple"></span>
                                             <span class="mdc-button__label">{{ $t(achievement.name) }}</span>
                                         </button>
                                         <scenario-number class="ml-2"
@@ -184,6 +198,7 @@
                             <template v-for="(quest, index) in quests">
                                 <button class="mdc-button normal-case -ml-2"
                                         @click="toggleQuest(index)">
+                                    <span class="mdc-button__ripple"></span>
                                     <span class="mdc-button__label font-title text-white">
                                         <template v-if="questExpand[index] && !$t(quest.name).startsWith('quest')">
                                             {{ $t(quest.name) }}
@@ -199,13 +214,7 @@
                                 </button>
                                 <transition-expand>
                                     <div v-if="questExpand[index]">
-                                        <i18n :path="quest.description" tag="div">
-                                            <template v-for="n in 20" v-slot:[n]>
-                                                <p class="mb-4">
-                                                    {{ $t(quest.translationKey() + '.sections.' + n) }}
-                                                </p>
-                                            </template>
-                                        </i18n>
+                                        <quest-summary :quest="quest"/>
                                     </div>
                                 </transition-expand>
                             </template>
@@ -213,9 +222,42 @@
                             <cards v-if="scenario.hasCard()" :cards="scenario.cards"></cards>
                         </div>
 
+                        <div v-if="scenario.monsters.length" id="scenario-monsters" class="mb-3">
+                            <button class="mdc-button normal-case -ml-2" :aria-expanded="monstersVisible"
+                                    @click="monstersVisible = !monstersVisible">
+                                <span class="mdc-button__ripple"></span>
+                                <span class="mdc-button__label font-title text-white">
+                                    {{ $t('Monsters') }} ({{ scenario.monsters.length }})
+                                </span>
+                                <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
+                                   :class="{'rotate-0': monstersVisible, 'rotate-180': !monstersVisible}">
+                                    keyboard_arrow_up
+                                </i>
+                            </button>
+                            <transition-expand>
+                                <ul v-if="monstersVisible" class="flex flex-wrap gap-x-4 gap-y-2">
+                                    <li v-for="monster in scenario.monsters" :key="monster">
+                                        <button v-if="hasMonsterImage(monster)" type="button"
+                                                class="flex items-center gap-2 text-left hover:underline"
+                                                @click="openMonster(monster)">
+                                            <monster-icon :game="scenario.game" :monster="monster"/>
+                                            {{ $t('monsters.' + monster) }}
+                                        </button>
+                                        <span v-else class="flex items-center gap-2">
+                                            <monster-icon :game="scenario.game" :monster="monster"/>
+                                            {{ $t('monsters.' + monster) }}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </transition-expand>
+                        </div>
+
+                        <scenario-faq :scenario="scenario"></scenario-faq>
+
                         <div class="mb-3" v-if="showNotes">
                             <button class="mdc-button normal-case -ml-2"
                                     @click="notesIsOpen = !notesIsOpen">
+                                <span class="mdc-button__ripple"></span>
                                 <span class="mdc-button__label font-title text-white">{{ $t('Notes') }}</span>
                                 <i class="material-icons mdc-button__icon transform transition-transform duration-500 text-white"
                                    :class="{'rotate-0': notesIsOpen, 'rotate-180': !notesIsOpen}">
@@ -224,13 +266,15 @@
                             </button>
 
                             <transition-expand
-                                :duration="{ enter: 500, leave: 800 }"
+                                 :duration="{ enter: 500, leave: 800 }"
                                 @after-enter="notesEntered"
                                 @leave="notesLeft">
                                 <div v-if="notesIsOpen" ref="notes"
-                                     class="mdc-text-field mdc-text-field--textarea w-full">
-                                    <textarea id="notes" @change="noteChanged" v-model="scenario.notes" :disabled="appData.read_only"
-                                              class="mdc-text-field__input" rows="4" cols="40"></textarea>
+                                     class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea w-full">
+                                    <span class="mdc-text-field__resizer">
+                                        <textarea id="notes" @change="noteChanged" v-model="scenario.notes" :disabled="appData.read_only"
+                                                  class="mdc-text-field__input" rows="4" cols="40"></textarea>
+                                    </span>
                                     <div class="mdc-notched-outline">
                                         <div class="mdc-notched-outline__leading"></div>
                                         <div class="mdc-notched-outline__notch">
@@ -242,33 +286,33 @@
                             </transition-expand>
                         </div>
 
-                        <div class="relative h-8 mb-6">
-                            <div class="flex absolute left-0 top-0 origin-left transform scale-75">
-                                <button v-if="scenario.pages.length" class="mdc-button mdc-button--raised mr-2"
+                        <div class="mb-6">
+                            <div class="flex flex-wrap gap-2 origin-top-left transform scale-75" style="width: 133.34%">
+                                <button v-if="scenario.pages.length" class="mdc-button mdc-button--raised"
                                         @click="openPages()">
+                                    <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon">menu_book</i>
                                     <span class="mdc-button__label">{{ $t('Pages') }}</span>
                                 </button>
-                                <a v-if="virtualBoardUrl && !scenario.solo" :href="virtualBoardUrl" target="_blank">
+                                <a v-if="virtualBoardUrl && !scenario.solo && integrations['virtual-board'] !== false" :href="virtualBoardUrl" target="_blank">
                                     <button class="mdc-button mdc-button--raised">
+                                        <span class="mdc-button__ripple"></span>
                                         <i class="material-icons mdc-button__icon transform rotate-180">style</i>
                                         <span class="mdc-button__label">{{ $t('Virtual Board') }}</span>
                                     </button>
                                 </a>
+                                <button v-if="!scenario.solo && integrations.ghs !== false" id="ghs-export-scenario"
+                                        class="mdc-button mdc-button--raised" @click="openGhsExport">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon">launch</i>
+                                    <span class="mdc-button__label">{{ $t('ghs-export.button') }}</span>
+                                </button>
                             </div>
                         </div>
                     </template>
-                    <blockquote
-                        v-if="scenario.game === 'gh' && (scenario.id === 14 || scenario.id === 43) && scenario.isComplete()"
-                        class="relative py-2 px-4 text-base italic border-l-4 quote">
-                        <a class="absolute w-full h-full top-0 left-0" target="_blank"
-                           href="https://boardgamegeek.com/thread/1722032/scenario-14-conclusion-spoilers"></a>
-                        <p class="mb-4 max-w-sm">
-                            {{
-                                $t('The location numbers in the story text are just reminders. They themselves don\'t unlock anything.')
-                            }}</p>
-                        <p class="flex items-center"><span class="material-icons">remove</span> Isaac Childres</p>
-                    </blockquote>
+                    <a v-if="String(scenario.id).startsWith('SoX')" class="block mt-2 text-sm link" target="_blank" rel="noreferrer"
+                       href="https://boardgamegeek.com/thread/2220121/seeker-xorn-bonus-content">
+                        {{ $t('Fan-made bonus content by {author}', {author: 'Morthai'}) }}</a>
                 </div>
                 <footer class="mdc-dialog__actions flex justify-between px-5">
                     <div class="space-x-2">
@@ -277,6 +321,7 @@
                     <div class="mx-auto w-20"
                          :class="{'sm:hidden': scenario.is_side, 'xs:hidden': !scenario.is_side}">
                         <webp :src="scenario.image()"
+                              :retina-webp="scenario.hasRetinaSticker()"
                               :animate="true"
                               :alt="$t(scenario.name)"/>
                     </div>
@@ -312,11 +357,13 @@ import ChoiceService from "../../services/ChoiceService";
 import {MDCTextField} from "@material/textfield/component";
 import {ScenarioState} from "../../models/ScenarioState";
 import PreloadImage from "../../services/PreloadImage";
+import MonsterImages from "../../services/MonsterImages";
 import StoryRepository from "../../repositories/StoryRepository";
 import Cards from "../presenters/cards/Cards";
 import StorySyncer from "../../services/StorySyncer";
 
-const md5 = require('js-md5');
+import md5 from 'js-md5';
+import store from "store/dist/store.modern";
 
 export default {
     inject: ['appData'],
@@ -327,8 +374,10 @@ export default {
             stateKey: 1,
             questExpand: [],
             treasuresVisible: false,
+            monstersVisible: false,
             rollback: null,
             virtualBoardUrl: null,
+            integrations: {},
             notes: null,
             showNotes: false,
             notesIsOpen: false,
@@ -341,13 +390,13 @@ export default {
         }
     },
     mounted() {
-        this.$bus.$on('open-scenario', (data) => {
+        this.$listen('open-scenario', (data) => {
             this.open(data.id);
         });
-        this.$bus.$on('close-scenario', () => {
+        this.$listen('close-scenario', () => {
             this.close();
         });
-        this.$bus.$on('game-selected', () => {
+        this.$listen('game-selected', () => {
             this.unsetScenario();
         });
     },
@@ -463,13 +512,19 @@ export default {
             this.rollback = null;
         },
         toggleQuest(index) {
-            this.$set(this.questExpand, index, !this.questExpand[index]);
+            this.questExpand[index] = !this.questExpand[index];
         },
         openPages() {
             this.$refs['pages'].open();
         },
         rerenderStateSelection() {
             this.stateKey++;
+        },
+        hasMonsterImage(monster) {
+            return MonsterImages.portrait(this.scenario.game, monster) !== null;
+        },
+        openMonster(monster) {
+            this.$bus.$emit('open-monster', {game: this.scenario.game, monster});
         },
         requiredBy(achievement) {
             return this.scenarioRepository.requiredBy(achievement);
@@ -485,7 +540,9 @@ export default {
 
             this.scenario = scenario;
             this.setVirtualBoardUrl();
+            this.integrations = store.get('integrations', {});
             this.treasuresVisible = this.scenario.lootedAllTreasures;
+            this.monstersVisible = false;
             this.rollback = null;
             this.notesEntered();
 
@@ -497,10 +554,6 @@ export default {
                         this.preloadImage.handle(image);
                     });
                 });
-            }
-
-            if (this.scenario.solo) {
-                this.scenario.requirements = `<div class="flex items-center"><character-icon class="inline-block w-5 mr-2" :character="'${this.scenario.solo}'" :show-name="true"/> level 5</div>`
             }
 
             this.rerenderStateSelection();
@@ -521,6 +574,11 @@ export default {
         },
         unsetScenario() {
             this.scenario = null;
+        },
+        openGhsExport() {
+            const id = this.scenario.id;
+            this.close();
+            this.$bus.$emit('open-ghs-export-modal', id);
         },
         openAchievement(id) {
             this.close();
@@ -548,7 +606,7 @@ export default {
                 query.seed = parseInt(md5(current.campaignId + this.scenario.id).substr(0, 7), 16);
             }
 
-            this.virtualBoardUrl = process.env.MIX_VIRTUAL_BOARD_URL + '?' + new URLSearchParams(query);
+            this.virtualBoardUrl = import.meta.env.MIX_VIRTUAL_BOARD_URL + '?' + new URLSearchParams(query);
         },
         makeSureScenariosAreLoaded() {
             return new Promise((resolve) => {
@@ -561,11 +619,6 @@ export default {
                 }
                 waitForScenarios();
             });
-        },
-        renderHtml(html) {
-            return {
-                template: `${html}`
-            };
         }
     }
 }

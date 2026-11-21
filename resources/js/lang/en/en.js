@@ -4,6 +4,7 @@ import scenarios from "./scenarios"
 import achievements from "./achievements"
 import items from "./items"
 import treasures from "./treasures"
+import monsters from "./monsters"
 import personal_quests from "./personal_quests"
 import characters from "./characters"
 import prompts from "./prompts"
@@ -26,6 +27,9 @@ export default {
     },
     "treasures": {
         ...treasures
+    },
+    "monsters": {
+        ...monsters
     },
     "personal_quests": {
         ...personal_quests

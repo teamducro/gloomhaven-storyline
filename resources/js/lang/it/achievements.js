@@ -93,7 +93,7 @@ export default {
         "name": "Il Draco è Stato Ucciso"
     },
     "gh-GTDA": {
-        "name": "Il Draco è Stato Salvato"
+        "name": "Il Draco è Stato Aiutato"
     },
     "gh-GCRD": {
         "name": "Governo Cittadino: Demoniaco"
@@ -139,6 +139,15 @@ export default {
     },
     "gh-PBB": {
         "name": "A Map to Treasure"
+    },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "Bad Business"
@@ -192,7 +201,7 @@ export default {
         "name": "Angels of Death"
     },
     "gh-PC": {
-        "name": "Custodians"
+        "name": "Custodi"
     },
     "gh-PHP": {
         "name": "Hunted Prey"
@@ -309,7 +318,7 @@ export default {
         "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "Nella Foresta"
     },
     "fh-CFP": {
         "name": "Firepepper"
@@ -370,5 +379,89 @@ export default {
     },
     "fh-PHOS": {
         "name": "Heart of Snow"
+    },
+    "gh2-G2ATD": {
+        "name": "Activating the Device"
+    },
+    "gh2-G2AUP": {
+        "name": "An Uneasy Peace"
+    },
+    "gh2-G2AT": {
+        "name": "Antica Tecnologia"
+    },
+    "gh2-G2CRD": {
+        "name": "City Rule: Demons"
+    },
+    "gh2-G2CRME": {
+        "name": "City Rule: Merchants"
+    },
+    "gh2-G2CRMI": {
+        "name": "City Rule: Military"
+    },
+    "gh2-G2EM": {
+        "name": "Elements Mastered"
+    },
+    "gh2-G2EOC": {
+        "name": "Fine della Corruzione"
+    },
+    "gh2-G2EOG": {
+        "name": "Fine dell'Oscurità"
+    },
+    "gh2-G2HW": {
+        "name": "Hallowed Waters"
+    },
+    "gh2-G2ITD": {
+        "name": "Into the Depths"
+    },
+    "gh2-G2PTB": {
+        "name": "Peace Through Bloodshed"
+    },
+    "gh2-G2TCE": {
+        "name": "The Candle Extinguished"
+    },
+    "gh2-G2TCK": {
+        "name": "The Candle Kept"
+    },
+    "gh2-G2TDR": {
+        "name": "The Darkness Retreats"
+    },
+    "gh2-G2TDA": {
+        "name": "Il Draco è Stato Aiutato"
+    },
+    "gh2-G2TDS": {
+        "name": "Il Draco è Stato Ucciso"
+    },
+    "gh2-G2TPE": {
+        "name": "La Forza del Potenziamento"
+    },
+    "gh2-G2TVF": {
+        "name": "La Voce è Stata Liberata"
+    },
+    "gh2-G2TVS": {
+        "name": "La Voce è Stata Messa a Tacere"
+    },
+    "gh2-P2R16": {
+        "name": "Faction Reputation 16"
+    },
+    "gh2-P2R20": {
+        "name": "Faction Reputation 20"
+    },
+    "gh2-P2RD6": {
+        "name": "Demon Reputation 6"
+    },
+    "gh2-P2RD12": {
+        "name": "Demon Reputation 12"
+    },
+    "gh2-P2RME6": {
+        "name": "Merchant Reputation 6"
+    },
+    "gh2-P2RME12": {
+        "name": "Merchant Reputation 12"
+    },
+    "gh2-P2RMI6": {
+        "name": "Military Reputation 6"
+    },
+    "gh2-P2RMI12": {
+        "name": "Military Reputation 12"
     }
 }

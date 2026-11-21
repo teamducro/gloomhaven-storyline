@@ -69,6 +69,142 @@ describe('Storage', () => {
             expect(sheet).not.to.have.property('enhancementsEnabled');
             expect(sheet).not.to.have.property('enhancements');
             expect(sheet).not.to.have.property('hidePersonalQuests');
+            expect(sheet).not.to.have.property('removedItems');
+            expect(sheet).not.to.have.property('eventHistory');
+        });
+    });
+
+    describe('Donation prosperity migration', () => {
+        const visitWith = (campaignData) => {
+            // Seed from the website page, a still running tracker would overwrite the data
+            cy.visit('/');
+            cy.window().then((win) => win.localStorage.setItem('local', JSON.stringify(campaignData)));
+            cy.visit('/tracker');
+        };
+        const sheet = () => cy.window().its('localStorage').then((storage) => JSON.parse(storage.getItem('local')));
+
+        it('It moves hand-ticked donation checks out of prosperity once', () => {
+            // 150 gold donated = 2 donation checks, ticked by hand before they were automatic.
+            visitWith({sheet: {donations: 150, prosperityIndex: 6}});
+            sheet().should((data) => {
+                expect(data.sheet.prosperityIndex).eq(4);
+                expect(data['migrated-donations-sheet']).eq(true);
+            });
+
+            // An older client rewrites the sheet with only the fields it knows, but keeps the marker key.
+            sheet().then((data) => visitWith({...data, sheet: {donations: 150, prosperityIndex: 4}}));
+            sheet().its('sheet.prosperityIndex').should('eq', 4);
+        });
+
+        it('It migrates and marks the sheets of games that are not opened on load', () => {
+            // Migrated on load, so a sync never sends a migrated sheet without its marker.
+            visitWith({'sheet-cs': {donations: 150, prosperityIndex: 6}});
+            sheet().should((data) => {
+                expect(data['sheet-cs'].prosperityIndex).eq(4);
+                expect(data['migrated-donations-sheet-cs']).eq(true);
+            });
+        });
+
+        it('It does not migrate a sheet marked by the previous in-sheet flag', () => {
+            visitWith({sheet: {donations: 150, prosperityIndex: 4, autoDonationProsperity: true}});
+            sheet().should((data) => {
+                expect(data['migrated-donations-sheet']).eq(true);
+                expect(data.sheet.prosperityIndex).eq(4);
+            });
+        });
+    });
+
+    describe('Sheet migrations', () => {
+        const story = {id: 9, name: 'Synced', data: {}, games: ['gh'], expires_at: '2099-01-01', hash: 'x', updated_at: '2020-01-01T00:00:00Z'};
+        const storage = (key) => cy.window().its('localStorage').then((localStorage) => JSON.parse(localStorage.getItem(key)));
+
+        // Logged in, with the sync requests failing like when offline
+        function visitWith({campaignId = 'local', campaignData, page = 'story', stories = [], delay = 1500}) {
+            utilities.startServer();
+            cy.intercept('GET', '**/user', {statusCode: 500});
+            cy.intercept('GET', '**/stories', {statusCode: 500, delay}).as('stories');
+            cy.intercept('PUT', '**/stories/9', {statusCode: 500}).as('put');
+            // Seed from the website page, a still running tracker would overwrite the data
+            cy.visit('/');
+            cy.window().then((win) => {
+                win.localStorage.setItem('token', JSON.stringify('secret'));
+                win.localStorage.setItem('user', JSON.stringify({id: 1, name: 'Test', email: 'a@b.c'}));
+                win.localStorage.setItem('stories', JSON.stringify(stories));
+                win.localStorage.setItem('campaignId', JSON.stringify(campaignId));
+                win.localStorage.setItem(campaignId, JSON.stringify(campaignData));
+            });
+            cy.visit('/tracker/#/' + page);
+            cy.wait('@stories');
+            cy.get('#app').should('exist');
+            cy.window().its('app.scenarios').should('exist');
+        }
+
+        it('It keeps the campaign when a page builds a sheet while the campaign is still loading', () => {
+            // Given a campaign with progress, opened on the party page while the stories are fetched
+            visitWith({
+                campaignData: {sheet: {reputation: 5}, 'scenario-gh-1': {state: 'complete'}},
+                page: 'party',
+            });
+
+            // Then the stored campaign still holds its progress
+            storage('local').should((data) => {
+                expect(data.sheet.reputation).eq(5);
+                expect(data['scenario-gh-1'].state).eq('complete');
+            });
+        });
+
+        it('It sends the migration markers with the first sync', () => {
+            // Given a synced campaign from before the class events migration
+            visitWith({
+                campaignId: '_9',
+                campaignData: {sheet: {reputation: 5, characterUnlocks: {DS: true}}},
+                stories: [story],
+                delay: 0,
+            });
+
+            // When it syncs
+            cy.document().then((doc) => doc.dispatchEvent(new KeyboardEvent('keydown', {code: 'KeyS', ctrlKey: true, metaKey: true})));
+
+            // Then the first sync holds the migrated sheet and its marker
+            cy.wait('@put').then((interception) => {
+                const data = JSON.parse(interception.request.body.data);
+                expect(data['migrated-class-events-sheet']).eq(true);
+                expect(data.sheet.reputation).eq(5);
+                expect(data.sheet.classEventsAdded).to.deep.equal({DS: ['unlock']});
+            });
+        });
+
+        it('It does not count a migration as a newer local campaign', () => {
+            // Given a synced campaign that was loaded before
+            visitWith({campaignId: '_9', campaignData: {sheet: {reputation: 5, characterUnlocks: {DS: true}}}, stories: [story]});
+
+            // And that still needs the class events migration, synced long ago
+            storage('_9').then((data) => {
+                delete data.sheet.classEventsAdded;
+                delete data['migrated-class-events-sheet'];
+                storage('stories').then((stories) => visitWith({
+                    campaignId: '_9',
+                    campaignData: data,
+                    stories: [{...stories[0], updated_at: story.updated_at}],
+                }));
+            });
+
+            // Then the migration doesn't make the local campaign newer than the server's
+            storage('_9').its('sheet.classEventsAdded').should('deep.equal', {DS: ['unlock']});
+            storage('stories').should((stories) => {
+                expect(new Date(stories[0].updated_at).getTime()).eq(new Date(story.updated_at).getTime());
+            });
+        });
+
+        it('It restores the GH2e edition when an older client dropped it', () => {
+            // Given a GH2e campaign whose Gloomhaven sheet an older client rewrote without the edition
+            visitWith({
+                campaignData: {sheet: {reputation: 1}, 'sheet-gh2': {reputation: 2}},
+            });
+
+            // Then the campaign is played as GH2e again
+            storage('local').its('sheet.edition').should('eq', 2);
+            cy.window().its('app.game').should('eq', 'gh2');
         });
     });
 
@@ -88,6 +224,8 @@ describe('Storage', () => {
             expect(campaign).not.to.have.property('enhancementsEnabled');
             expect(campaign).not.to.have.property('enhancements');
             expect(campaign).not.to.have.property('hidePersonalQuests');
+            expect(campaign).not.to.have.property('removedItems');
+            expect(campaign).not.to.have.property('eventHistory');
         });
     });
 
@@ -107,4 +245,15 @@ describe('Storage', () => {
         }
     });
 
+    it('It falls back to the main game when the stored game is not supported', () => {
+        cy.visit('/tracker');
+        cy.window().then((win) => win.localStorage.setItem('game', JSON.stringify('unknown')));
+        cy.reload();
+
+        utilities.completeScenario(1);
+        cy.window().then((win) => {
+            expect(win.app.game).eq('gh');
+            expect(JSON.parse(win.localStorage.getItem('game'))).eq('gh');
+        });
+    });
 });

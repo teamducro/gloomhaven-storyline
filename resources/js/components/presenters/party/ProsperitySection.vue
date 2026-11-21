@@ -2,10 +2,10 @@
     <div class="w-full mt-8">
         <div class="mb-2 flex items-center">
             <slot name="title">
-                <h2>{{ $t(sheet.game == 'fh' ? 'Frosthaven' : 'Gloomhaven') + ' ' + $t('Prosperity') }}</h2>
+                <h2>{{ $t(sheet.game == 'fh' ? 'Frosthaven Prosperity' : 'Gloomhaven Prosperity') }}</h2>
             </slot>
             <rollback :loading="loading" ref="rollback"
-                      :value.sync="sheet.prosperityIndex"/>
+                      v-model:value="sheet.prosperityIndex"/>
         </div>
         <div class="flex flex-wrap">
             <div class="flex flex-col items-center justify-end"
@@ -13,7 +13,8 @@
                 <span class="font-title -mb-1" v-if="breaks.get(p)">{{ breaks.get(p) }}</span>
                 <checkbox :style="!breaks.get(p) ? 'transform: scale(0.7)' : ''"
                           class="-m-1" :id="'p-'+p" group="prosperity"
-                          :disabled="p===1"
+                          :disabled="p <= 1 + donationChecks"
+                          :title="p > 1 && p <= 1 + donationChecks ? $t('Gained from donations') : undefined"
                           :checked="checked[p]"
                           @change="changed"/>
             </div>
@@ -27,10 +28,11 @@ import SheetCalculations from "../../../services/SheetCalculations";
 import CampaignSheet from "../../../models/CampaignSheet";
 
 export default {
+    emits: ['change', 'update:prosperity'],
     mixins: [SheetCalculations],
     props: {
         sheet: {
-            type: Sheet|CampaignSheet,
+            type: [Sheet, CampaignSheet],
             required: true
         },
         loading: {
@@ -54,12 +56,16 @@ export default {
         this.updateProsperity();
     },
     computed: {
+        // The first boxes after the pre-checked one, locked because donations tick them.
+        donationChecks() {
+            return this.sheet.effectiveProsperityIndex - this.sheet.prosperityIndex;
+        },
         max() {
             return parseInt(this.breaks.keys().last());
         }
     },
     watch: {
-        "sheet.prosperityIndex": function () {
+        "sheet.effectiveProsperityIndex": function () {
             this.updateChecked();
             this.updateProsperity();
         }
@@ -70,7 +76,7 @@ export default {
         },
         updateChecked() {
             this.checked = {};
-            for (let p = 1; p <= this.sheet.prosperityIndex; p++) {
+            for (let p = 1; p <= this.sheet.effectiveProsperityIndex; p++) {
                 this.checked[p] = true;
             }
         },
@@ -79,12 +85,12 @@ export default {
             if (!isChecked) {
                 p = p - 1;
             }
-            this.sheet.prosperityIndex = p;
+            this.sheet.prosperityIndex = p - this.donationChecks;
             this.$emit('change');
             this.updateProsperity();
         },
         updateProsperity() {
-            this.$emit('update:prosperity', this.calculateProsperity(this.sheet.prosperityIndex, this.sheet.game));
+            this.$emit('update:prosperity', this.calculateProsperity(this.sheet.effectiveProsperityIndex, this.sheet.game));
         }
     }
 }

@@ -73,6 +73,39 @@ describe('Items', () => {
         cy.get('.mdc-dialog').contains('Prosperity 1');
     });
 
+    it('It removes an item from the game and restores it', () => {
+        // Given a character owning Boots of Striding (2 in stock)
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+        cy.get('input[name="items"]').click();
+        cy.get('li').contains('Boots of Striding').click();
+        utilities.closeModel();
+
+        // When it is removed from the game
+        cy.visit('/tracker/#/items');
+        cy.get('#items tbody tr:first').click({scrollBehavior: 'center'});
+        cy.get('.mdc-dialog button.remove-from-game').click();
+
+        // Then one copy is gone for good
+        cy.get('.mdc-dialog').contains('Availability: 1 / 2');
+        cy.get('.mdc-dialog').contains('Removed from game: 1');
+        cy.get('.mdc-dialog button.remove-from-game').should('not.exist');
+        utilities.closeModel();
+        cy.get('#items tbody tr:first').contains('1 / 2');
+
+        // And it stays removed after a reload
+        cy.reload(true);
+        cy.get('#items tbody tr:first').contains('1 / 2');
+
+        // When it is restored
+        cy.get('#items tbody tr:first').click({scrollBehavior: 'center'});
+        cy.get('.mdc-dialog button.restore-item').click();
+
+        // Then both copies are in stock again
+        cy.get('.mdc-dialog').contains('Availability: 2 / 2');
+        cy.get('.mdc-dialog').contains('Removed from game').should('not.exist');
+    });
+
     it('It unlocks items from treasures', () => {
         cy.visit('/tracker?states=1_c-2_c-4_c');
 
@@ -142,7 +175,7 @@ describe('Items', () => {
 
     it('It shows item availability', () => {
         // Campaign with Brute #001 Boots of Striding
-        cy.visit('/tracker/#/shared/1/local/N4RozgjARAXKYBcQEsC+AacBOAbLeSamYAFsFAIYBOAxicgG4CmAJgMInUU0JNVj4MUOlx58AqgDsANgHsaAawFwoAIQBKsEBHRQ2ACS06oAZQDqR3QBUAkpdNt7AWStGMIEeQAsAIywsaLAAOLABaAHZAgCZQrywAMx9QnwAGAFYvUJYcJi8vRKjwih8fWDVNIRpkBABPfChoGG1dKPsAZnsvezT7PCbjcPsg+yx7CBSxxuaG1v7dCA65hq6liB7VvumIQdXh1dGlqInDqeMo2emoxcuVy-XLzbOdy73Lg+m24+13FhTMZBYwHcAAdkDoQFQ-lAqLIKCx6qcWu1Ot1evZnsZXsZ3sZxpMxhdcddcbdcfdcY95hj5lj5jiWl8zoioOd7Fc2aSWuSWpSWdSWbSWfSoJ83JgAK5A3QADzY0nFTGU5CmUIuUOuUNuUPuUM2UOeUNeUPeKVQlU4VG4vCosT8AWCYUiWBicUSyXSmWyuXyPkKxVKKjoTEUSqEAHNZNJ4TAoQCyhooLpqkwALZKhpiqDSJjMaSwYySCgppjxqji3iJqDAvhKerHADaIBSAF15rBGy2kTAO5hOyL203W1AVj3B7p1h2h31R32dpPdHsZ0ODvOGg3B0JxeK4zBh3bAiEItFYgkkqkMlkcnkCkUSpXpcDYKbUEA/items');
+        utilities.visitShared('/tracker/#/shared/1/local/N4RozgjARAXKYBcQEsC+AacBOAbLeSamYAFsFAIYBOAxicgG4CmAJgMInUU0JNVj4MUOlx58AqgDsANgHsaAawFwoAIQBKsEBHRQ2ACS06oAZQDqR3QBUAkpdNt7AWStGMIEeQAsAIywsaLAAOLABaAHZAgCZQrywAMx9QnwAGAFYvUJYcJi8vRKjwih8fWDVNIRpkBABPfChoGG1dKPsAZnsvezT7PCbjcPsg+yx7CBSxxuaG1v7dCA65hq6liB7VvumIQdXh1dGlqInDqeMo2emoxcuVy-XLzbOdy73Lg+m24+13FhTMZBYwHcAAdkDoQFQ-lAqLIKCx6qcWu1Ot1evZnsZXsZ3sZxpMxhdcddcbdcfdcY95hj5lj5jiWl8zoioOd7Fc2aSWuSWpSWdSWbSWfSoJ83JgAK5A3QADzY0nFTGU5CmUIuUOuUNuUPuUM2UOeUNeUPeKVQlU4VG4vCosT8AWCYUiWBicUSyXSmWyuXyPkKxVKKjoTEUSqEAHNZNJ4TAoQCyhooLpqkwALZKhpiqDSJjMaSwYySCgppjxqji3iJqDAvhKerHADaIBSAF15rBGy2kTAO5hOyL203W1AVj3B7p1h2h31R32dpPdHsZ0ODvOGg3B0JxeK4zBh3bAiEItFYgkkqkMlkcnkCkUSpXpcDYKbUEA/items');
 
         cy.get('#items').contains('1 / 2');
         cy.get('#items tbody tr:first').click({ scrollBehavior: 'center' });
@@ -207,7 +240,7 @@ describe('Items', () => {
 
     it('It can add items to characters', () => {
         // Campaign with Brute without items
-        cy.visit('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpzQwBMADEcqhjvpLKQMwXhV4F0kAsT6WrtxJAKzcWNQqQBsI3mPYB2adXAAzAMYwAnFJTMZIAIYQAwgCUm+sAG0EAcVMBZBAF1W+uycc79AdxBx8qgD2-iAANiAkfFDACPoATqpQmABuAKYAJkZQ8fqqaKlxYBR4CIk5eQUAqgB2oYGqANZFKAgAQmZIfrgIRgASyF0IAMoA6gP+CAAqAJLj3UNGcwj2k+OsZTGpGoJycNscMOkSWjAcqhKpMAAcEnBEmnKCJCQS+kTHqVxIbWYlqphoACeFAQiE6E3I4O6jChCC+g2EsO0gwUsKuSw0SzgJCxYMGdyxMPx8ImcER+ORpNR+PRsL2S1IDLxEMhgyIRIhJO6RHJEMp3OpENpbMxsPoOPBfzigTAYBs+gAtqlpvkFc0YtABiRugArQJoUJa7qqZoRKUyuWK5WqsAAUWq+gARqEMkaQOltVh0sBWAAHTAhOLahDS-TpEHM7lLDndLkIXndfkIQXdYUTUX4iX4yOg1mkmOguNkrFJuAp0Fp7r02GMms5oh57kFohxnkMpNEctESsIIgZibitb4ACuPr+2TiuXycRgWx2e0EByOJzOF2ut3uGkez1e7w0nxBTswoQBmFS6pKR5PQIACgUADKpNKGlqQ6rD0KhaHId+f2M-j8v3jAC-wQbRfyA1EINTECgNFCDx1SRoL26CBAlCcMkGDTBMJ+BBugBVI1WKboXWfZAJgdJVkDaOJh3yfCEF9AomhIhAAEdh3PNA2LiVI0EwPilWqNBmmDYdhxwmi512fZDmOCRTnOS4bjuB4nheN4Pi4boAA9fWQSJsCAA/items');
+        utilities.visitShared('/tracker/#/shared/1/local/N4Rozg5gFgtAjAIgFyjAFxASwL4BpzQwBMADEcqhjvpLKQMwXhV4F0kAsT6WrtxJAKzcWNQqQBsI3mPYB2adXAAzAMYwAnFJTMZIAIYQAwgCUm+sAG0EAcVMBZBAF1W+uycc79AdxBx8qgD2-iAANiAkfFDACPoATqpQmABuAKYAJkZQ8fqqaKlxYBR4CIk5eQUAqgB2oYGqANZFKAgAQmZIfrgIRgASyF0IAMoA6gP+CAAqAJLj3UNGcwj2k+OsZTGpGoJycNscMOkSWjAcqhKpMAAcEnBEmnKCJCQS+kTHqVxIbWYlqphoACeFAQiE6E3I4O6jChCC+g2EsO0gwUsKuSw0SzgJCxYMGdyxMPx8ImcER+ORpNR+PRsL2S1IDLxEMhgyIRIhJO6RHJEMp3OpENpbMxsPoOPBfzigTAYBs+gAtqlpvkFc0YtABiRugArQJoUJa7qqZoRKUyuWK5WqsAAUWq+gARqEMkaQOltVh0sBWAAHTAhOLahDS-TpEHM7lLDndLkIXndfkIQXdYUTUX4iX4yOg1mkmOguNkrFJuAp0Fp7r02GMms5oh57kFohxnkMpNEctESsIIgZibitb4ACuPr+2TiuXycRgWx2e0EByOJzOF2ut3uGkez1e7w0nxBTswoQBmFS6pKR5PQIACgUADKpNKGlqQ6rD0KhaHId+f2M-j8v3jAC-wQbRfyA1EINTECgNFCDx1SRoL26CBAlCcMkGDTBMJ+BBugBVI1WKboXWfZAJgdJVkDaOJh3yfCEF9AomhIhAAEdh3PNA2LiVI0EwPilWqNBmmDYdhxwmi512fZDmOCRTnOS4bjuB4nheN4Pi4boAA9fWQSJsCAA/items');
 
         cy.get('#items tbody tr:first').click({ scrollBehavior: 'center' });
         cy.get('.mdc-button').contains('add').click();
@@ -220,7 +253,7 @@ describe('Items', () => {
 
     it('It can remove items to characters', () => {
         // Campaign with Brute #001 Boots of Striding
-        cy.visit('/tracker/#/shared/1/local/N4RozgjARAXKYBcQEsC+AacBOAbLeSamYAFsFAIYBOAxicgG4CmAJgMInUU0JNVj4MUOlx58AqgDsANgHsaAawFwoAIQBKsEBHRQ2ACS06oAZQDqR3QBUAkpdNt7AWStGMIEeQAsAIywsaLAAOLABaAHZAgCZQrywAMx9QnwAGAFYvUJYcJi8vRKjwih8fWDVNIRpkBABPfChoGG1dKPsAZnsvezT7PCbjcPsg+yx7CBSxxuaG1v7dCA65hq6liB7VvumIQdXh1dGlqInDqeMo2emoxcuVy-XLzbOdy73Lg+m24+13FhTMZBYwHcAAdkDoQFQ-lAqLIKCx6qcWu1Ot1evZnsZXsZ3sZxpMxhdcddcbdcfdcY95hj5lj5jiWl8zoioOd7Fc2aSWuSWpSWdSWbSWfSoJ83JgAK5A3QADzY0nFTGU5CmUIuUOuUNuUPuUM2UOeUNeUPeKVQlU4VG4vCosT8AWCYUiWBicUSyXSmWyuXyPkKxVKKjoTEUSqEAHNZNJ4TAoQCyhooLpqkwALZKhpiqDSJjMaSwYySCgppjxqji3iJqDAvhKerHADaIBSAF15rBGy2kTAO5hOyL203W1AVj3B7p1h2h31R32dpPdHsZ0ODvOGg3B0JxeK4zBh3bAiEItFYgkkqkMlkcnkCkUSpXpcDYKbUEA/items');
+        utilities.visitShared('/tracker/#/shared/1/local/N4RozgjARAXKYBcQEsC+AacBOAbLeSamYAFsFAIYBOAxicgG4CmAJgMInUU0JNVj4MUOlx58AqgDsANgHsaAawFwoAIQBKsEBHRQ2ACS06oAZQDqR3QBUAkpdNt7AWStGMIEeQAsAIywsaLAAOLABaAHZAgCZQrywAMx9QnwAGAFYvUJYcJi8vRKjwih8fWDVNIRpkBABPfChoGG1dKPsAZnsvezT7PCbjcPsg+yx7CBSxxuaG1v7dCA65hq6liB7VvumIQdXh1dGlqInDqeMo2emoxcuVy-XLzbOdy73Lg+m24+13FhTMZBYwHcAAdkDoQFQ-lAqLIKCx6qcWu1Ot1evZnsZXsZ3sZxpMxhdcddcbdcfdcY95hj5lj5jiWl8zoioOd7Fc2aSWuSWpSWdSWbSWfSoJ83JgAK5A3QADzY0nFTGU5CmUIuUOuUNuUPuUM2UOeUNeUPeKVQlU4VG4vCosT8AWCYUiWBicUSyXSmWyuXyPkKxVKKjoTEUSqEAHNZNJ4TAoQCyhooLpqkwALZKhpiqDSJjMaSwYySCgppjxqji3iJqDAvhKerHADaIBSAF15rBGy2kTAO5hOyL203W1AVj3B7p1h2h31R32dpPdHsZ0ODvOGg3B0JxeK4zBh3bAiEItFYgkkqkMlkcnkCkUSpXpcDYKbUEA/items');
 
         cy.get('#items tbody tr:first').click({ scrollBehavior: 'center' });
         cy.get('.mdc-button').contains('remove').click();
@@ -233,7 +266,11 @@ describe('Items', () => {
 
     it('cant add items in read only mode', () => {
         // Campaign with Brute #001 Boots of Striding
-        cy.visit('/tracker/#/shared/1/local/N4RozgjARAXKYBcQEsC+AacBOAbLeSamYAFsFAIYBOAxicgG4CmAJgMInUU0JNVj4MUOlx58AqgDsANgHsaAawFwoAIQBKsEBHRQ2ACS06oAZQDqR3QBUAkpdNt7AWStGMIEeQAsAIywsaLAAOLABaAHZAgCZQrywAMx9QnwAGAFYvUJYcJi8vRKjwih8fWDVNIRpkBABPfChoGG1dKPsAZnsvezT7PCbjcPsg+yx7CBSxxuaG1v7dCA65hq6liB7VvumIQdXh1dGlqInDqeMo2emoxcuVy-XLzbOdy73Lg+m24+13FhTMZBYwHcAAdkDoQFQ-lAqLIKCx6qcWu1Ot1evZnsZXsZ3sZxpMxhdcddcbdcfdcY95hj5lj5jiWl8zoioOd7Fc2aSWuSWpSWdSWbSWfSoJ83JgAK5A3QADzY0nFTGU5CmUIuUOuUNuUPuUM2UOeUNeUPeKVQlU4VG4vCosT8AWCYUiWBicUSyXSmWyuXyPkKxVKKjoTEUSqEAHNZNJ4TAoQCyhooLpqkwALZKhpiqDSJjMaSwYySCgppjxqji3iJqDAvhKerHADaIBSAF15rBGy2kTAO5hOyL203W1AVj3B7p1h2h31R32dpPdHsZ0ODvOGg3B0JxeK4zBh3bAiEItFYgkkqkMlkcnkCkUSpXpcDYKbUEA/items');
+        utilities.visitShared('/tracker/#/shared/1/local/N4RozgjARAXKYBcQEsC+AacBOAbLeSamYAFsFAIYBOAxicgG4CmAJgMInUU0JNVj4MUOlx58AqgDsANgHsaAawFwoAIQBKsEBHRQ2ACS06oAZQDqR3QBUAkpdNt7AWStGMIEeQAsAIywsaLAAOLABaAHZAgCZQrywAMx9QnwAGAFYvUJYcJi8vRKjwih8fWDVNIRpkBABPfChoGG1dKPsAZnsvezT7PCbjcPsg+yx7CBSxxuaG1v7dCA65hq6liB7VvumIQdXh1dGlqInDqeMo2emoxcuVy-XLzbOdy73Lg+m24+13FhTMZBYwHcAAdkDoQFQ-lAqLIKCx6qcWu1Ot1evZnsZXsZ3sZxpMxhdcddcbdcfdcY95hj5lj5jiWl8zoioOd7Fc2aSWuSWpSWdSWbSWfSoJ83JgAK5A3QADzY0nFTGU5CmUIuUOuUNuUPuUM2UOeUNeUPeKVQlU4VG4vCosT8AWCYUiWBicUSyXSmWyuXyPkKxVKKjoTEUSqEAHNZNJ4TAoQCyhooLpqkwALZKhpiqDSJjMaSwYySCgppjxqji3iJqDAvhKerHADaIBSAF15rBGy2kTAO5hOyL203W1AVj3B7p1h2h31R32dpPdHsZ0ODvOGg3B0JxeK4zBh3bAiEItFYgkkqkMlkcnkCkUSpXpcDYKbUEA/items');
+
+        // Wait until the shared campaign is imported, otherwise the import resets the read only story.
+        cy.location('hash').should('eq', '#/items');
+        cy.get('#items tbody tr:first').should('contain', '1 / 2');
 
         utilities.setReadOnly().then(() => {
             cy.get('.items-to-add-dropdown').should('not.exist');
@@ -244,4 +281,38 @@ describe('Items', () => {
 
     // TODO: it can buy items
     // TODO: it can sell items
+
+    it('It has the corrected Frosthaven item data', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/items');
+
+        cy.window().then((win) => {
+            const item = (id) => win.app.items.firstWhere('id', 'fh-' + id);
+            expect(item(225)._slot).eq('One Hand');
+            expect(item(224)._source).eq('Scenario 60');
+            expect(item(39)._source).contains('Personal Quest 19');
+        });
+    });
+
+    it('It rewards Armor of Empathy for FH scenario 60', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/story');
+
+        utilities.scenarios().then((scenarios) => {
+            expect(scenarios.firstWhere('id', 60).rewardItems().values().all().map(Number)).to.include(224);
+        });
+    });
+
+    it('It can mark the Abyss Axe design in Frosthaven', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/items');
+
+        cy.get('.items-to-add-dropdown button').click();
+        cy.get('#item-39').click();
+        utilities.closeModel();
+        cy.get('#items').contains('Abyss Axe');
+    });
 });

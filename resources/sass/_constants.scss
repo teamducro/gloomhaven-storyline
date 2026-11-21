@@ -1,13 +1,13 @@
-// See Tailwind config for color definitions
-$primary: theme('colors.primary');
-$secondary: theme('colors.secondary');
-$background: theme('colors.background');
-$surface: theme('colors.surface');
-$complete: theme('colors.complete');
-$incomplete: theme('colors.incomplete');
-$required: theme('colors.required');
+// See tailwind.css for color definitions
+$primary: var(--color-primary);
+$secondary: var(--color-secondary);
+$background: var(--color-background);
+$surface: var(--color-surface);
+$complete: var(--color-complete);
+$incomplete: var(--color-incomplete);
+$required: var(--color-required);
 
-// See Tailwind config for screen definitions
+// See tailwind.css for screen definitions
 $xs: 'only screen and (min-width: 430px)';
 $sm: 'only screen and (min-width: 640px)';
 $md: 'only screen and (min-width: 768px)';
@@ -31,7 +31,7 @@ $screens: (
     }
 }
 
-// See Tailwind config for character color definitions
+// See tailwind.css for character color definitions
 $characters: (
     "be": #C5665E,
     "br": #5E7EBD,

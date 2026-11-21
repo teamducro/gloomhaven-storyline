@@ -1,6 +1,6 @@
 <template>
     <div class="pt-12 pb-4 px-2 sm:px-4">
-        <div id="info" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-screen-sm">
+        <div id="info" class="bg-dark-gray2-75 p-4 rounded-lg m-auto mt-4 max-w-(--breakpoint-sm)">
             <h1 class="mb-4 text-xl">{{ $t('about us.title') }}</h1>
 
             <p>{{ $t('about us.text') }}</p>
@@ -12,7 +12,7 @@
             <h2 id="contribute" class="mt-8 mb-4 text-lg">{{ $t('Contributions') }}</h2>
 
             <p>{{ $t('contribute.text-1') }}</p>
-            <p class="mt-2">{{ $t('contribute.text-2') }} Upcoming features include Frosthaven herb garden.</p>
+            <p class="mt-2">{{ $t('contribute.text-2') }}</p>
 
             <div class="flex flex-col sm:flex-row">
                 <div>
@@ -30,6 +30,7 @@
             <h2 class="mt-8 mb-4 text-lg">{{ $t('Open source') }}</h2>
             <a href="https://github.com/teamducro/gloomhaven-storyline">
                 <button class="mdc-button mdc-button--raised">
+                    <span class="mdc-button__ripple"></span>
                     <inline-svg src="icons/github.svg" class="mdc-button__icon" :classes="['w-full','h-full']"/>
                     <span class="mdc-button__label">GitHub</span>
                 </button>
@@ -95,6 +96,24 @@
                     <a class="link" target="_blank" rel="noreferrer"
                        href="https://heisch.github.io/gloomhaven-item-db/">
                         {{ $t('Gloomhaven Item DB') }}</a>
+                </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Monster data') }}:</span>
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://github.com/Lurkars/gloomhavensecretariat">
+                        Gloomhaven Secretariat</a>
+                </li>
+                <li class="py-1">
+                    <span class="mr-1 block sm:inline">{{ $t('Monster art') }}:</span>
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://github.com/any2cards/worldhaven">
+                        Worldhaven</a>,
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://github.com/VerbalGnat48/The-Hole">
+                        The Hole</a>,
+                    <a class="link" target="_blank" rel="noreferrer"
+                       href="https://github.com/Lurkars/gloomhavensecretariat">
+                        Gloomhaven Secretariat</a>
                 </li>
                 <li class="py-1">
                     Summaries for Forgotten Circles by O.T.Nad
@@ -169,7 +188,7 @@ export default {
     },
     data() {
         return {
-            mainGame: process.env.MIX_MAIN_GAME,
+            mainGame: import.meta.env.MIX_MAIN_GAME,
         }
     },
     mounted() {

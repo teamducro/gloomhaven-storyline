@@ -19,10 +19,7 @@
         mounted() {
             this.render();
 
-            this.$bus.$on('campaigns-changed', this.render);
-        },
-        destroyed() {
-            this.$bus.$off('campaigns-changed', this.render);
+            this.$listen('campaigns-changed', this.render);
         },
         methods: {
             async render() {
@@ -33,6 +30,7 @@
 </script>
 
 <style scoped lang="scss">
+@reference "../../../sass/tailwind.css";
     .ribbon {
         @apply absolute top-0 -mt-10;
         right: -2.5rem;

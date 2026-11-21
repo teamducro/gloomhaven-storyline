@@ -4,7 +4,7 @@
             <div class="w-full" v-for="(requirement, requirementIndex) in condition.requirements">
                 <span class="flex items-center">
                     <i v-if="(conditionsFiltered.length > 1 || condition.requirements.length > 1) && requirementNotMet(requirement)"
-                       class="material-icons text-incomplete text-lg mr-1">error_outline</i>
+                       class="material-icons outlined text-incomplete text-lg mr-1">error</i>
                     <template v-if="requirement.achievement">
                         {{ $t(requirement.achievement.name) }} ({{ $t(requirement.achievement.type) }})
                         {{ $t(requirement.state).toUpperCase() }}
@@ -63,10 +63,10 @@ export default {
                 return !this.achievementRepository
                     .findMany(condition.hidden_when)
                     .contains((achievement) => achievement.awarded);
-            }).map((condition) => {
-                condition.requirements = this.requiredAchievements(condition);
-                return condition;
-            }).all();
+            }).map((condition) => ({
+                ...condition,
+                requirements: this.requiredAchievements(condition)
+            })).all();
         }
     },
     methods: {
@@ -131,15 +131,6 @@ export default {
                 id: id
             });
         },
-    },
-    filters: {
-        capitalize: function (value) {
-            if (!value) {
-                return "";
-            }
-            value = value.toString();
-            return value.charAt(0).toLocaleUpperCase() + value.slice(1);
-        }
     }
 
 }

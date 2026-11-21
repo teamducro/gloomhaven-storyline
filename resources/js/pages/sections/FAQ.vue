@@ -5,7 +5,7 @@
                 Frequently asked questions
             </h1>
             <div class="w-full mb-4">
-                <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
+                <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded-sm shadow-sm"></div>
             </div>
 
             <p class="w-full mt-8 text-center text-gray-500">Can’t find the answer you’re looking for?
@@ -34,8 +34,8 @@
 export default {
     data() {
         return {
-            appUrl: process.env.MIX_APP_URL,
-            game: process.env.MIX_MAIN_GAME,
+            appUrl: import.meta.env.MIX_APP_URL,
+            game: import.meta.env.MIX_MAIN_GAME,
             faq: []
         }
     },

@@ -6,7 +6,7 @@
             <li v-for="character in characters" :key="character.uuid">
                 <a href="#" @click.prevent="enhance(character)"
                    class="enhancer-character flex items-center rounded-md p-2 hover:bg-black2-50">
-                    <character-icon class="flex-shrink-0 w-5 mr-2" :character="character.id"/>
+                    <character-icon class="shrink-0 w-5 mr-2" :character="character.id"/>
                     {{ character.name === character.characterName ? $t(character.characterName) : character.name }}
                 </a>
             </li>

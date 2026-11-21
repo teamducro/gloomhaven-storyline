@@ -1,6 +1,8 @@
 export const Game = Object.freeze({
     // Gloomhaven
     "gh": "gh",
+    // Gloomhaven 2nd Edition
+    "gh2": "gh2",
     // Frosthaven
     "fh": "fh",
     // Forgotten Circles
@@ -11,4 +13,8 @@ export const Game = Object.freeze({
     "cs": "cs",
     // Mercenary Pack
     "mp": "mp",
+    // ConQuests 2025 promo pack
+    "cq": "cq",
+    // Seeker of Xorn fan-made bonus content, its data lives in gh.json
+    "sox": "sox",
 });

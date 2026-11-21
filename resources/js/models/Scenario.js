@@ -6,6 +6,8 @@ import ItemTextParser from "../services/ItemTextParser";
 import UsesTranslations from "./UsesTranslations";
 import {Requirement} from "./Requirement";
 import Versionable from "./Versionable";
+import {Game} from "./Game";
+import {markRaw} from "vue";
 
 class Scenario {
 
@@ -13,13 +15,16 @@ class Scenario {
         this.id = data.id;
         this.version = data.version;
         this.hash = data.hash;
-        this.number = `#${this.id}`;
+        // gh2 variants (e.g. 23A) use an integer id but keep their printed number.
+        this.displayId = data.number || this.id;
+        this.number = `#${this.displayId}`;
         this.root = data.root || false;
         this._name = data.name;
-        this._coordinates = data.coordinates || {};
+        this._coordinates = markRaw(data.coordinates || {});
         this.is_side = data.is_side || false;
         this.complexity = data.complexity || 0;
         this.solo = data.solo || null;
+        this.requires_event = data.requires_event || null;
         this.pages = data.pages || [];
         this.requirements = data.requirements || "";
         this.quests = data.quests || [];
@@ -33,25 +38,29 @@ class Scenario {
         this.hasChoices = typeof data.choices !== 'undefined';
         this._state = ScenarioState.hidden;
         this.notes = "";
-        this.faq = [];
-        this.links_to = collect(data.links_to);
-        this.linked_from = collect(data.linked_from);
+        this._faq = markRaw(collect(data.faq));
+        this._conclusionFaq = markRaw(collect(data.conclusion_faq));
+        this.links_to = markRaw(collect(data.links_to));
+        this.linked_from = markRaw(collect(data.linked_from));
         this.coupled = data.coupled;
         this.unlocked = data.unlocked || [];
-        this.required_by = collect(data.required_by);
-        this.blocks_on = collect(data.blocks_on);
+        this.required_by = markRaw(collect(data.required_by));
+        this.blocks_on = markRaw(collect(data.blocks_on));
         this.treasures = data.treasures || [];
-        this.treasures_from = collect(data.treasures_from);
-        this.treasures_to = collect(data.treasures_to);
-        this.loot = data.loot || {};
+        this.monsters = data.monsters || [];
+        this.treasures_from = markRaw(collect(data.treasures_from));
+        this.treasures_to = markRaw(collect(data.treasures_to));
+        this.loot = markRaw(data.loot || {});
         this.random_item_treasure = false;
         this.unlockedTreasures = [];
-        this.achievements_from_treasures = collect(data.achievements_from_treasures);
-        this._rewards = collect(data.rewards);
-        this._achievements_awarded = collect(data.achievements_awarded);
-        this.achievements_awarded_by_choice = collect(data.achievements_awarded_by_choice);
-        this.achievements_lost = collect(data.achievements_lost);
+        this.achievements_from_treasures = markRaw(collect(data.achievements_from_treasures));
+        this._rewards = markRaw(collect(data.rewards));
+        this.perk_reward = data.perk_reward || 0;
+        this._achievements_awarded = markRaw(collect(data.achievements_awarded));
+        this.achievements_awarded_by_choice = markRaw(collect(data.achievements_awarded_by_choice));
+        this.achievements_lost = markRaw(collect(data.achievements_lost));
         this.prompt = data.prompt;
+        this.prompt_unlocks = data.prompt_unlocks;
         this._promptChoice = null;
         this.hasPrompt = typeof data.prompt !== 'undefined';
         this.has_boss = data.has_boss || false;
@@ -211,6 +220,11 @@ class Scenario {
         });
     }
 
+    // Games whose stickers also ship as {name}@2x.webp
+    hasRetinaSticker() {
+        return [Game.gh, Game.fh].includes(this.game);
+    }
+
     image() {
         let sticker = '/img/scenarios/' + this.game + '/' + this.id + (this.isComplete() ? '_c' : '') + '.png'
 
@@ -254,6 +268,14 @@ class Scenario {
         return '';
     }
 
+    get translatedFaq() {
+        return this._faq.isNotEmpty() ? this.$tPrefix('faq') : '';
+    }
+
+    get translatedConclusionFaq() {
+        return this._conclusionFaq.isNotEmpty() ? this.$tPrefix('conclusion_faq') : '';
+    }
+
     get achievements_awarded() {
         let achievements = this._achievements_awarded;
 
@@ -275,7 +297,8 @@ class Scenario {
     }
 
     compatibleWithVirtualBoard() {
-        return ["gh", "fc"].includes(this.game);
+        // The board only has GH 1-95 and FC 96-115
+        return ["gh", "fc"].includes(this.game) && this.id <= 115;
     }
 
     get scenarioRepository() {

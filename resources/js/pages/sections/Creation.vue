@@ -5,7 +5,7 @@
                 The creation
             </h1>
             <div class="w-full mb-4">
-                <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded shadow"></div>
+                <div class="h-2px mx-auto gradient w-32 sm:w-64 opacity-75 my-0 py-0 rounded-sm shadow-sm"></div>
             </div>
 
             <div class="flex flex-wrap">
@@ -94,6 +94,12 @@
                             Summaries for Forgotten Circles by O.T.Nad
                         </li>
                         <li class="py-1">
+                                <span class="mr-1 block sm:inline">Seeker of Xorn bonus events and scenarios by Morthai:</span>
+                            <a class="link" target="_blank" rel="noreferrer"
+                               href="https://boardgamegeek.com/thread/2220121/seeker-xorn-bonus-content">
+                                Seeker of Xorn bonus content</a>
+                        </li>
+                        <li class="py-1">
                                 <span class="mr-1 block sm:inline">Frosthaven scenario summaries by
                                     <a class="link" target="_blank" rel="noreferrer"
                                        href="https://www.reddit.com/user/dwarf74/">
@@ -121,7 +127,7 @@
 export default {
     data() {
         return {
-            game: process.env.MIX_MAIN_GAME,
+            game: import.meta.env.MIX_MAIN_GAME,
         }
     },
     mounted() {

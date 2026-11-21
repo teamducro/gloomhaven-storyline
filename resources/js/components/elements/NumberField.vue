@@ -30,6 +30,7 @@ import {MDCTextField} from "@material/textfield/component";
 import Helpers from "../../services/Helpers";
 
 export default {
+    emits: ['change', 'update:value'],
     inject: ['appData'],
     props: {
         id: {
@@ -151,6 +152,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@reference "../../../sass/tailwind.css";
 .number-field-container {
     @apply relative;
 

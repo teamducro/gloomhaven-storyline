@@ -1,12 +1,9 @@
-@tailwind base;
-
-@tailwind components;
+@import "./tailwind.css";
 
 @import "constants";
-@tailwind utilities;
 @import "utilities";
 
-@import '~tippy.js/dist/tippy.css';
+@import 'tippy.js/dist/tippy.css';
 
 @import "fonts";
 

@@ -1,7 +1,7 @@
 export default class PreloadImage {
     handle(url, success) {
         let image = new Image();
-        const baseUrl = process.env.MIX_CDN_URL || '';
+        const baseUrl = import.meta.env.MIX_CDN_URL || '';
         image.src = baseUrl + this.webp(url);
         image.onerror = () => {
             image.src = baseUrl + url;

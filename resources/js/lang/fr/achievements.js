@@ -1,30 +1,30 @@
 export default {
     "gh-PFS": {
-        "name": "Premiers pas"
+        "name": "Premiers Pas"
     },
     "gh-PJP": {
         "name": "Les Plans de Jekserah"
     },
     "gh-PDB": {
-        "name": "Dark Bounty"
+        "name": "La Prime de l'Ombre"
     },
     "gh-GTMF": {
         "name": "La Fuite de la Négociante"
     },
     "gh-GTDI": {
-        "name": "The Dead Invade"
+        "name": "L'Invasion des Morts"
     },
     "gh-PADE": {
-        "name": "A Demon's Errand"
+        "name": "À la Botte du Démon"
     },
     "gh-GCRE": {
-        "name": "City Rule: Economic"
+        "name": "Régime de la Cité : Commercial"
     },
     "gh-GCRM": {
-        "name": "City Rule: Militaristic"
+        "name": "Régime de la Cité : Militariste"
     },
     "gh-GEOI": {
-        "name": "End of the Invasion"
+        "name": "La fin de l'Invasion"
     },
     "gh-GTPE": {
         "name": "Le Pouvoir de l'Amélioration"
@@ -60,10 +60,10 @@ export default {
         "name": "Technologie Ancienne x5"
     },
     "gh-PTR": {
-        "name": "Through the Ruins"
+        "name": "À Travers les Ruines"
     },
     "gh-PTVC": {
-        "name": "The Voice's Command"
+        "name": "L'Injonction de la Voix"
     },
     "gh-PTDC": {
         "name": "L'Injonction de la Wyverne"
@@ -72,10 +72,10 @@ export default {
         "name": "Suivre les Indices"
     },
     "gh-PAI": {
-        "name": "An Invitation"
+        "name": "Une Invitation"
     },
     "gh-GTED": {
-        "name": "The Edge of Darkness"
+        "name": "La Lisière des Ténèbres"
     },
     "gh-PTSV": {
         "name": "Le Sceptre et la Voix"
@@ -84,37 +84,37 @@ export default {
         "name": "Relique : Purifiée"
     },
     "gh-PTVT": {
-        "name": "The Voices Treasure"
+        "name": "Le Trésor de la Voix"
     },
     "gh-PTDT": {
-        "name": "The Drakes Treasure"
+        "name": "Le Trésor de la Wyverne"
     },
     "gh-GTDS": {
-        "name": "The Drake Slain"
+        "name": "La Wyverne Abattue"
     },
     "gh-GTDA": {
-        "name": "The Drake Aided"
+        "name": "Au Service de la Wyverne"
     },
     "gh-GCRD": {
-        "name": "City Rule: Demonic"
+        "name": "Régime de la Cité : Démoniaque"
     },
     "gh-PTTT": {
         "name": "Par la Tranchée"
     },
     "gh-PRA": {
-        "name": "Au secours de Rougépine"
+        "name": "Au Secours de Rougépine"
     },
     "gh-PATD": {
-        "name": "Across the Divide"
+        "name": "De l'Autre Côté du Précipice"
     },
     "gh-GTVF": {
-        "name": "The Voice Freed"
+        "name": "La Voix Libérée"
     },
     "gh-GTVS": {
-        "name": "La Voix réduite au Silence"
+        "name": "La Voix Réduite au Silence"
     },
     "gh-GWB": {
-        "name": "Respiration aquatique"
+        "name": "Respiration Aquatique"
     },
     "gh-GEOC": {
         "name": "La Fin de la Corruption"
@@ -126,13 +126,13 @@ export default {
         "name": "La Fin de la Corruption x3"
     },
     "gh-GAOO": {
-        "name": "Annihilation of Order"
+        "name": "L'Annihilation de l'Ordre"
     },
     "gh-GEOG": {
-        "name": "End of Gloom"
+        "name": "La fin de l'Ombre"
     },
     "gh-PTTN": {
-        "name": "Through the Nest"
+        "name": "Derrière le Nid"
     },
     "gh-PAMT": {
         "name": "La Carte du Trésor"
@@ -140,32 +140,41 @@ export default {
     "gh-PBB": {
         "name": "Mauvaise Affaire"
     },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
+    },
     "gh-PTPS": {
-        "name": "The Poison's Source"
+        "name": "La Source du Poison"
     },
     "gh-PSB": {
-        "name": "Sun-Blessed"
+        "name": "Bénis par le Soleil"
     },
     "gh-PSR": {
         "name": "Sin-Ra"
     },
     "gh-PDC": {
-        "name": "Debt Collection"
+        "name": "La Collecte des dettes"
     },
     "gh-PWS": {
-        "name": "Water Staff"
+        "name": "Bâton d'Eau"
     },
     "gh-PFA": {
-        "name": "Fish's Aid"
+        "name": "L'Aide de Fretin"
     },
     "gh-PT": {
-        "name": "Tremors"
+        "name": "Séismes"
     },
     "gh-PHSE": {
         "name": "Escorte en Haute Mer"
     },
     "gh-PGJ": {
-        "name": "Grave Job"
+        "name": "Fossoyeur"
     },
     "gh-PNE": {
         "name": "Northern Expedition"
@@ -309,7 +318,7 @@ export default {
         "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "Dans la Forêt"
     },
     "fh-CFP": {
         "name": "Firepepper"
@@ -366,9 +375,93 @@ export default {
         "name": "Coral Crown Shard x6"
     },
     "fh-PHOI": {
-        "name": "Heart of Ice"
+        "name": "Cœur de Glace"
     },
     "fh-PHOS": {
         "name": "Heart of Snow"
+    },
+    "gh2-G2ATD": {
+        "name": "Activating the Device"
+    },
+    "gh2-G2AUP": {
+        "name": "An Uneasy Peace"
+    },
+    "gh2-G2AT": {
+        "name": "Technologie Ancienne"
+    },
+    "gh2-G2CRD": {
+        "name": "City Rule: Demons"
+    },
+    "gh2-G2CRME": {
+        "name": "City Rule: Merchants"
+    },
+    "gh2-G2CRMI": {
+        "name": "City Rule: Military"
+    },
+    "gh2-G2EM": {
+        "name": "Elements Mastered"
+    },
+    "gh2-G2EOC": {
+        "name": "La Fin de la Corruption"
+    },
+    "gh2-G2EOG": {
+        "name": "La fin de l'Ombre"
+    },
+    "gh2-G2HW": {
+        "name": "Hallowed Waters"
+    },
+    "gh2-G2ITD": {
+        "name": "Into the Depths"
+    },
+    "gh2-G2PTB": {
+        "name": "Peace Through Bloodshed"
+    },
+    "gh2-G2TCE": {
+        "name": "The Candle Extinguished"
+    },
+    "gh2-G2TCK": {
+        "name": "The Candle Kept"
+    },
+    "gh2-G2TDR": {
+        "name": "The Darkness Retreats"
+    },
+    "gh2-G2TDA": {
+        "name": "Au Service de la Wyverne"
+    },
+    "gh2-G2TDS": {
+        "name": "La Wyverne Abattue"
+    },
+    "gh2-G2TPE": {
+        "name": "Le Pouvoir de l'Amélioration"
+    },
+    "gh2-G2TVF": {
+        "name": "La Voix Libérée"
+    },
+    "gh2-G2TVS": {
+        "name": "La Voix réduite au Silence"
+    },
+    "gh2-P2R16": {
+        "name": "Faction Reputation 16"
+    },
+    "gh2-P2R20": {
+        "name": "Faction Reputation 20"
+    },
+    "gh2-P2RD6": {
+        "name": "Demon Reputation 6"
+    },
+    "gh2-P2RD12": {
+        "name": "Demon Reputation 12"
+    },
+    "gh2-P2RME6": {
+        "name": "Merchant Reputation 6"
+    },
+    "gh2-P2RME12": {
+        "name": "Merchant Reputation 12"
+    },
+    "gh2-P2RMI6": {
+        "name": "Military Reputation 6"
+    },
+    "gh2-P2RMI12": {
+        "name": "Military Reputation 12"
     }
 }

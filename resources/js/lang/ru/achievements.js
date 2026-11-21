@@ -138,13 +138,22 @@ export default {
         "name": "Карта сокровищ"
     },
     "gh-PBB": {
-        "name": "Bad Business"
+        "name": "Дурное знамение"
+    },
+    "gh-PSOX1": {
+        "name": "Nobles’ Crypt"
+    },
+    "gh-PSOX2": {
+        "name": "Flooded Crypt"
+    },
+    "gh-PSOX3": {
+        "name": "Crypt of the Ancients"
     },
     "gh-PTPS": {
         "name": "Источник отравы"
     },
     "gh-PSB": {
-        "name": "Благословение Солнца"
+        "name": "Благословение солнца"
     },
     "gh-PSR": {
         "name": "Син-Ра"
@@ -162,22 +171,22 @@ export default {
         "name": "Дрожь земли"
     },
     "gh-PHSE": {
-        "name": "High Sea Escort"
+        "name": "Морской конвой"
     },
     "gh-PGJ": {
-        "name": "Grave Job"
+        "name": "Гробокопатели"
     },
     "gh-PNE": {
         "name": "Northern Expedition"
     },
     "gh-GTTP": {
-        "name": "Through the Portal"
+        "name": "Путь через портал"
     },
     "gh-PO": {
-        "name": "Opportunists"
+        "name": "Авантюристы"
     },
     "gh-GKIP": {
-        "name": "Knowledge is Power"
+        "name": "Знание - сила"
     },
     "gh-GKIP2": {
         "name": "Knowledge is Power x2"
@@ -189,16 +198,16 @@ export default {
         "name": "Knowledge is Power x4"
     },
     "gh-PAD": {
-        "name": "Angels of Death"
+        "name": "Ангелы смерти"
     },
     "gh-PC": {
-        "name": "Custodians"
+        "name": "Хранители"
     },
     "gh-PHP": {
-        "name": "Hunted Prey"
+        "name": "Преследуемая жертва"
     },
     "gh-GPOA": {
-        "name": "Pieces of an Artifact"
+        "name": "Части артефакта"
     },
     "gh-GPOA2": {
         "name": "Pieces of an Artifact x2"
@@ -207,25 +216,25 @@ export default {
         "name": "Pieces of an Artifact x3"
     },
     "gh-PGD": {
-        "name": "Guard Detail"
+        "name": "Охрана"
     },
     "gh-PDE": {
-        "name": "Dimensional Equilibrium"
+        "name": "Межпространственное равновесие"
     },
     "gh-PHH": {
-        "name": "Hunting the Hunter"
+        "name": "Охота на охотника"
     },
     "gh-PXA": {
-        "name": "Xangroth's Aid"
+        "name": "Помощь Зангроту"
     },
     "gh-PDA": {
-        "name": "Diamara's Aid"
+        "name": "Помощь Диамаре"
     },
     "gh-PBF": {
-        "name": "Beauty in Freedom"
+        "name": "Красота - это свобода"
     },
     "gh-GPA": {
-        "name": "A Peril Averted"
+        "name": "Устранение угрозы"
     },
     "gh-GPA2": {
         "name": "A Peril Averted x2"
@@ -237,13 +246,13 @@ export default {
         "name": "A Peril Averted x4"
     },
     "gh-GMS": {
-        "name": "Mechanical Splendor"
+        "name": "Торжество технологий"
     },
     "gh-GST": {
-        "name": "Severed Ties"
+        "name": "Разорванные узы"
     },
     "gh-PA": {
-        "name": "Accomplices"
+        "name": "Сообщники"
     },
     "gh-PS": {
         "name": "Saboteurs"
@@ -309,7 +318,7 @@ export default {
         "name": "Unfettered Deactivated"
     },
     "fh-CITF": {
-        "name": "Into the Forest"
+        "name": "В лес"
     },
     "fh-CFP": {
         "name": "Firepepper"
@@ -370,5 +379,89 @@ export default {
     },
     "fh-PHOS": {
         "name": "Heart of Snow"
+    },
+    "gh2-G2ATD": {
+        "name": "Activating the Device"
+    },
+    "gh2-G2AUP": {
+        "name": "An Uneasy Peace"
+    },
+    "gh2-G2AT": {
+        "name": "Древняя технология"
+    },
+    "gh2-G2CRD": {
+        "name": "Городское правление: демоны"
+    },
+    "gh2-G2CRME": {
+        "name": "Городское правление: торговцы"
+    },
+    "gh2-G2CRMI": {
+        "name": "Городское правление: военные"
+    },
+    "gh2-G2EM": {
+        "name": "Elements Mastered"
+    },
+    "gh2-G2EOC": {
+        "name": "Конец упадка"
+    },
+    "gh2-G2EOG": {
+        "name": "Конец эпохи Мрака"
+    },
+    "gh2-G2HW": {
+        "name": "Hallowed Waters"
+    },
+    "gh2-G2ITD": {
+        "name": "Into the Depths"
+    },
+    "gh2-G2PTB": {
+        "name": "Peace Through Bloodshed"
+    },
+    "gh2-G2TCE": {
+        "name": "The Candle Extinguished"
+    },
+    "gh2-G2TCK": {
+        "name": "The Candle Kept"
+    },
+    "gh2-G2TDR": {
+        "name": "The Darkness Retreats"
+    },
+    "gh2-G2TDA": {
+        "name": "Помощь дрейку"
+    },
+    "gh2-G2TDS": {
+        "name": "Убийство дрейка"
+    },
+    "gh2-G2TPE": {
+        "name": "Возможность улучшений"
+    },
+    "gh2-G2TVF": {
+        "name": "Голос освобождён"
+    },
+    "gh2-G2TVS": {
+        "name": "Голос умолк"
+    },
+    "gh2-P2R16": {
+        "name": "Faction Reputation 16"
+    },
+    "gh2-P2R20": {
+        "name": "Faction Reputation 20"
+    },
+    "gh2-P2RD6": {
+        "name": "Demon Reputation 6"
+    },
+    "gh2-P2RD12": {
+        "name": "Demon Reputation 12"
+    },
+    "gh2-P2RME6": {
+        "name": "Merchant Reputation 6"
+    },
+    "gh2-P2RME12": {
+        "name": "Merchant Reputation 12"
+    },
+    "gh2-P2RMI6": {
+        "name": "Military Reputation 6"
+    },
+    "gh2-P2RMI12": {
+        "name": "Military Reputation 12"
     }
 }

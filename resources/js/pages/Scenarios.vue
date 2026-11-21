@@ -5,46 +5,86 @@
             <dropdown ref="filter-dropdown" align="right">
                 <template v-slot:trigger>
                     <button type="button"
-                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 !bg-black2-50 rounded-full"
+                            class="mdc-icon-button mdc-button--raised material-icons p-2 mr-2 mt-2 bg-black2-50! rounded-full"
                             :class="{'text-primary': filterEnabled}">
                         filter_list
                     </button>
                 </template>
 
-                <ul class="mdc-list overflow-y-auto" style="max-height: calc(100vh - 100px)"
+                <ul class="mdc-deprecated-list overflow-y-auto min-w-80" style="max-height: calc(100vh - 100px)"
                     ref="filter" aria-hidden="true" aria-orientation="vertical" tabindex="-1">
-                    <li class="mdc-list-item cursor-pointer" @click="resetFilter(true)">
-                        <span class="mdc-list-item__text">{{ $t('Clear filter') }}</span>
+                    <li class="mdc-deprecated-list-item cursor-pointer" @click="resetFilter(true)">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text">{{ $t('Clear filter') }}</span>
                     </li>
 
-                    <li role="separator" class="mdc-list-divider !my-2"></li>
+                    <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
                     <li v-for="state in states"
-                        class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': stateFilter === state}"
+                        class="mdc-deprecated-list-item cursor-pointer"
+                        :class="{'mdc-deprecated-list-item--activated': stateFilter === state}"
                         @click="setStateFilter(state)">
-                        <span class="mdc-list-item__text capitalize">{{ $t(state) }}</span>
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text capitalize">{{ $t(state) }}</span>
                     </li>
-                    <li class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': otherFilters.missedTreasures}"
+                    <li class="mdc-deprecated-list-item cursor-pointer"
+                        :class="{'mdc-deprecated-list-item--activated': otherFilters.missedTreasures}"
                         @click="setOtherFilter('missedTreasures')">
-                        <span class="mdc-list-item__text">{{ $t('Missed Treasures') }}</span>
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text">{{ $t('Missed Treasures') }}</span>
                     </li>
-                    <li class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': otherFilters.solo}"
+                    <li class="mdc-deprecated-list-item cursor-pointer"
+                        :class="{'mdc-deprecated-list-item--activated': otherFilters.solo}"
                         @click="setOtherFilter('solo')">
-                        <span class="mdc-list-item__text">{{ $t('Solo') }}</span>
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <span class="mdc-deprecated-list-item__text">{{ $t('Solo') }}</span>
                     </li>
 
-                    <li v-if="regions.length" role="separator" class="mdc-list-divider !my-2"></li>
+                    <li v-if="regions.length" role="separator" class="mdc-deprecated-list-divider my-2!"></li>
 
-                    <li v-if="scenarios && regions.length"
-                        v-for="region in regions"
-                        class="mdc-list-item cursor-pointer"
-                        :class="{'mdc-list-item--activated': regionFilter.includes(region.id)}"
-                        @click="toggleRegionFilter(region.id)">
-                        <span class="mdc-list-item__text">{{ $t(region.name) }}</span>
-                    </li>
+                    <template v-if="scenarios && regions.length">
+                        <li v-for="region in regions"
+                            class="mdc-deprecated-list-item cursor-pointer"
+                            :class="{'mdc-deprecated-list-item--activated': regionFilter.includes(region.id)}"
+                            @click="toggleRegionFilter(region.id)">
+                            <span class="mdc-deprecated-list-item__ripple"></span>
+                            <span class="mdc-deprecated-list-item__text">{{ $t(region.name) }}</span>
+                        </li>
+                    </template>
+
+                    <template v-if="monsters.length">
+                        <li role="separator" class="mdc-deprecated-list-divider my-2!"></li>
+
+                        <li class="px-4 not-last:mb-2 [&_.dropdown]:static [&_.dropdown]:mt-2">
+                            <autocomplete :label="$t('Monster')"
+                                          width="w-full"
+                                          id="monster-filter"
+                                          :list="monsters"
+                                          :disabled="monsterFilter"
+                                          :auto-disable="false"
+                                          :filter-closure="monsterFilterClosure"
+                                          :deselectable="true"
+                                          @change="addMonsterFilter"
+                                          @remove="removeMonsterFilter">
+                                <template v-for="monster in monsters" v-slot:[monster]>
+                                    <span class="flex items-center gap-3">
+                                        <monster-icon :game="appData.game" :monster="monster"/>
+                                        {{ $t('monsters.' + monster) }}
+                                    </span>
+                                </template>
+                            </autocomplete>
+                        </li>
+
+                        <li v-for="monster in monsterFilter"
+                            class="mdc-deprecated-list-item mdc-deprecated-list-item--activated cursor-pointer"
+                            @click="removeMonsterFilter(monster)">
+                            <span class="mdc-deprecated-list-item__ripple"></span>
+                            <span class="mdc-deprecated-list-item__text flex items-center gap-3">
+                                <monster-icon :game="appData.game" :monster="monster"/>
+                                {{ $t('monsters.' + monster) }}
+                            </span>
+                        </li>
+                    </template>
                 </ul>
             </dropdown>
         </div>
@@ -58,35 +98,36 @@
                         :translatable="translatable"
                         @rowClick="open"
             >
-                <template slot="row" slot-scope="{row}">
+                <template #row="{row}">
                     <template v-if="row.isHidden()">
                         <td @click="open(row)" :colspan="row.solo ? 20 : (hasImages ? 2 : 1)"></td>
                         <td @click="open(row)" v-if="!row.solo"
                             colspan="20" class="relative px-1 py-2 md:p-3 overflow-hidden"
-                            :class="{'opacity-50': !row.is_side}">#{{ row.id }}
+                            :class="{'opacity-50': !row.is_side}">{{ row.number }}
                         </td>
                     </template>
                 </template>
-                <template slot="name" slot-scope="{value, row}">
+                <template #name="{value, row}">
                     <span v-if="!row.solo">{{ row.number }}</span> {{ $t(value) }}
                 </template>
-                <template slot="image" slot-scope="{value, row}">
+                <template #image="{value, row}">
                     <webp v-if="!row.solo" :src="row.image()"
+                          :retina-webp="row.hasRetinaSticker()"
                           class="w-16 mr-4 my-1"
                           :alt="row.name"/>
                     <character-icon class="w-12 inline-block" :character="row.solo" v-if="row.solo"/>
                 </template>
-                <template slot="state" slot-scope="{value, row}">
+                <template #state="{value, row}">
                     <i v-if="row.isRequired()"
-                       class="material-icons text-required text-2xl mr-2">error_outline</i>
+                       class="material-icons outlined text-required text-2xl mr-2">error</i>
                     <i v-else-if="row.isBlocked()"
-                       class="material-icons text-incomplete text-2xl mr-2">highlight_off</i>
+                       class="material-icons outlined text-incomplete text-2xl mr-2">cancel</i>
                     <i v-else-if="row.isComplete()"
-                       class="material-icons text-2xl mr-2">check_circle_outline</i>
+                       class="material-icons outlined text-2xl mr-2">check_circle</i>
                     <i v-else-if="row.isIncomplete()"
                        class="material-icons text-complete text-2xl mr-2">radio_button_unchecked</i>
                 </template>
-                <template slot="regions" slot-scope="{value, row}">
+                <template #regions="{value, row}">
                     <span v-if="value">{{ value.pluck('name').map(name => $t(name)).join(', ') }}</span>
                 </template>
             </data-table>
@@ -101,6 +142,7 @@ import {ScenarioState} from "../models/ScenarioState";
 import When from "../services/When";
 import CharacterIcon from "../components/elements/CharacterIcon";
 import GameData from "../services/GameData";
+import Helpers from "../services/Helpers";
 
 export default {
     inject: ['appData'],
@@ -110,12 +152,14 @@ export default {
             list: null,
             scenarios: null,
             regionFilter: [],
+            monsterFilter: [],
             otherFilters: {
                 missedTreasures: false,
                 solo: false
             },
             stateFilter: null,
             partyCharacterIds: [],
+            enabledCrossovers: [],
             regions: [],
             columns: [],
             sortFunctions: {
@@ -138,14 +182,22 @@ export default {
             this.setScenarios();
         }
 
-        this.$bus.$on('scenarios-updated', this.setScenarios);
-    },
-    destroyed() {
-        this.$bus.$off('scenarios-updated', this.setScenarios);
+        this.$listen('scenarios-updated', this.setScenarios);
     },
     computed: {
+        monsters() {
+            if (!this.scenarios) {
+                return [];
+            }
+
+            const monsters = this.scenarios
+                .filter(scenario => scenario.isVisible() && this.isScenarioOfCurrentGame(scenario))
+                .pluck('monsters').flatten().unique().toArray();
+
+            return monsters.sort((a, b) => new Intl.Collator().compare(this.$t('monsters.' + a), this.$t('monsters.' + b)));
+        },
         filterEnabled() {
-            return this.regionFilter.length || this.missedTreasuresFilter || this.stateFilter;
+            return this.regionFilter.length || this.monsterFilter.length || Object.values(this.otherFilters).some(enabled => enabled) || this.stateFilter;
         }
     },
     methods: {
@@ -156,6 +208,8 @@ export default {
 
             const sheet = this.sheetRepository.make(this.appData.game);
             this.partyCharacterIds = collect(sheet.characters).pluck('id').toArray();
+            this.enabledCrossovers = this.gameData.enabledCrossovers();
+            this.sheet = sheet;
 
             this.columns = (new When).filter([
                 new When(this.hasImages, {id: 'image', name: 'Sticker'}),
@@ -174,8 +228,12 @@ export default {
                 });
             }
         },
+        isScenarioOfCurrentGame(scenario) {
+            return !scenario.game || !this.appData.game || scenario.game === this.appData.game
+                || this.crossoverScenarioVisible(scenario);
+        },
         crossoverScenarioVisible(scenario) {
-            if (!this.gameData.enabledCrossovers().includes(scenario.game)) {
+            if (!this.enabledCrossovers.includes(scenario.game)) {
                 return false;
             }
 
@@ -185,14 +243,18 @@ export default {
             // Only show scenarios from selected game (GH/FC), except crossover pack
             // scenarios (e.g. Mercenary Pack solo scenarios), which show only when
             // their pack is enabled and their character has been added to the party.
-            if (scenario.game && this.appData.game && scenario.game !== this.appData.game) {
-                if (!this.crossoverScenarioVisible(scenario)) {
-                    return false;
-                }
+            if (!this.isScenarioOfCurrentGame(scenario)) {
+                return false;
+            }
+
+            // Bonus content stays out of campaigns that don't play it.
+            if (scenario.requires_event && !this.sheet.hasEvent(scenario.requires_event)) {
+                return false;
             }
 
             // Filter is not applied
             if (!this.regionFilter.length
+                && !this.monsterFilter.length
                 && !Object.values(this.otherFilters).filter(s => s).length
                 && !this.stateFilter) {
                 return true;
@@ -209,6 +271,12 @@ export default {
                 if (!inRegion) {
                     return false;
                 }
+            }
+
+            // Apply monsters, only on visible scenarios so the filter doesn't reveal locked content
+            if (this.monsterFilter.length
+                && (scenario.isHidden() || !this.monsterFilter.some(monster => scenario.monsters.includes(monster)))) {
+                return false;
             }
 
             // Apply other filters
@@ -249,6 +317,15 @@ export default {
                 ? this.regionFilter.splice(this.regionFilter.indexOf(id), 1)
                 : this.regionFilter.push(id);
         },
+        addMonsterFilter(monster) {
+            this.monsterFilter.push(monster);
+        },
+        removeMonsterFilter(monster) {
+            this.monsterFilter.splice(this.monsterFilter.indexOf(monster), 1);
+        },
+        monsterFilterClosure(query) {
+            return (monster) => Helpers.sanitize(this.$t('monsters.' + monster)).includes(query);
+        },
         setOtherFilter(filter) {
             if (!this.otherFilters[filter]) {
                 this.resetFilter();
@@ -271,6 +348,7 @@ export default {
             if (clearRegions) {
                 this.$refs['filter-dropdown'].close();
                 this.regionFilter = [];
+                this.monsterFilter = [];
             }
         }
     }

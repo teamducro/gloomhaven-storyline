@@ -1,0 +1,55 @@
+import general from "./general"
+import storyline from "./storyline"
+import scenarios from "./scenarios"
+import achievements from "./achievements"
+import items from "./items"
+import treasures from "./treasures"
+import monsters from "./monsters"
+import personal_quests from "./personal_quests"
+import characters from "./characters"
+import prompts from "./prompts"
+import abilities from "./abilities"
+import buildings from "./buildings"
+import overlays from "./overlays"
+import campaign_sheet from "./campaign_sheet"
+
+export default {
+    ...general,
+    ...storyline,
+    "scenarios": {
+        ...scenarios
+    },
+    "achievements": {
+        ...achievements
+    },
+    "items": {
+        ...items
+    },
+    "treasures": {
+        ...treasures
+    },
+    "monsters": {
+        ...monsters
+    },
+    "personal_quests": {
+        ...personal_quests
+    },
+    "characters": {
+        ...characters
+    },
+    "prompts": {
+        ...prompts
+    },
+    "abilities": {
+        ...abilities
+    },
+    "buildings": {
+        ...buildings
+    },
+    "overlays": {
+        ...overlays
+    },
+    "campaign_sheet": {
+        ...campaign_sheet
+    }
+}

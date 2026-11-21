@@ -14,6 +14,7 @@
 </script>
 
 <style scoped lang="scss">
+@reference "../../../sass/tailwind.css";
     .loader {
         &.float {
             @apply absolute;
@@ -23,8 +24,8 @@
 
         @apply rounded-full w-6 h-6;
         border: 6px solid transparent;
-        border-top-color: theme('colors.primary');
-        border-bottom-color: theme('colors.primary');
+        border-top-color: var(--color-primary);
+        border-bottom-color: var(--color-primary);
         animation: spin-loader 1s ease-in-out infinite;
     }
 </style>

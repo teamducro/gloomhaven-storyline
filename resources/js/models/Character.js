@@ -5,11 +5,32 @@ import PersonalQuest from "./PersonalQuest";
 import UsesTranslations from "./UsesTranslations";
 import Versionable from "./Versionable";
 import ModifierCard from "./ModifierCard";
+import {Game} from "./Game";
 
 class Character {
 
     static make(uuid, sheet_game, id) {
         return new Character({uuid, sheet_game, id});
+    }
+
+    // Turns a sheet's stored {uuid: id} map into Characters. Removed characters are dropped; unknown classes are
+    // moved to `unknown` so the sheet can store them again without showing them.
+    static makeForSheet(characters, sheet_game, unknown) {
+        for (const uuid in characters) {
+            if (characters[uuid] instanceof Character) {
+                continue;
+            }
+
+            const character = Character.make(uuid, sheet_game);
+            if (character.isUnknownClass) {
+                unknown[uuid] = character.id;
+            }
+            if (character.id && !character.isUnknownClass) {
+                characters[uuid] = character;
+            } else {
+                delete characters[uuid];
+            }
+        }
     }
 
     constructor(data = {}) {
@@ -43,6 +64,7 @@ class Character {
         this.quest = {...data.quest};
         this.abilities = {...data.abilities};
         this.abilityPerLevel = {...data.abilityPerLevel};
+        this.milestone = data.milestone || false;
         this.abilityCount = 0; // from characters.json
         this.sheet_game = data.sheet_game;
         this.game = null; // from characters.json
@@ -70,6 +92,7 @@ class Character {
             quest: {'quest': {}},
             abilities: {'abilities': {}},
             abilityPerLevel: {'abilityPerLevel': {}},
+            milestone: {'milestone': false},
             sortOrder: 'sortOrder',
         };
 
@@ -152,6 +175,13 @@ class Character {
 
     read() {
         this.parentRead();
+
+        // A class unknown to this version (e.g. stored by a newer one) can't be shown, but must survive a store.
+        this.isUnknownClass = !!this.id && !this.gameData.characters(this.game)[this.id];
+        if (this.isUnknownClass) {
+            return;
+        }
+
         this.sortOrder = this.sortOrder || 0;
         this.translationKey = 'characters.' + this.id;
         this.readGameData();
@@ -167,11 +197,32 @@ class Character {
         values.perks = collect({...this.perks}).map(perks => (perks || []).filter(v => v)).filter(v => v.length).all();
         values.items = collect({...this.items}).filter(v => v).all();
         values.quest = this.quest instanceof PersonalQuest ? this.quest.valuesToStore() : {};
+        // Left out while unset, so adding it doesn't change existing characters' sync hash.
+        if (!values.milestone) {
+            delete values.milestone;
+        }
         return values;
     }
 
     get hasAbilities() {
         return this.abilityCount > 0;
+    }
+
+    // No mat scans available yet for these Mercenary Pack characters.
+    get hasMat() {
+        return !['SA', 'CA', 'AN'].includes(this.id);
+    }
+
+    get matImages() {
+        return ['front', 'back'].map(side => `/img/character-mats/${this.game}/${this.id}-${side}.jpg`);
+    }
+
+    get artImage() {
+        return `/img/character-mats/${this.game}/${this.id}-art.jpg`;
+    }
+
+    get hasPortraitMat() {
+        return this.game === Game.jotl;
     }
 
     key() {

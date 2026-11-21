@@ -4,7 +4,7 @@ import CompletionConfig from "../models/CompletionConfig";
 
 class ScenarioCompletedService {
     constructor() {
-        this.scenarios = app.game === 'fh' ? {} : {
+        this.scenarios = ['fh', 'gh2'].includes(app.game) ? {} : {
             106: 'unlock_112',
             107: 'unlock_112',
 

@@ -2,9 +2,11 @@ import Storable from './Storable'
 import Character from "./Character";
 import GameData from "../services/GameData";
 import Helpers from "../services/Helpers";
+import DeckFiller from "../services/DeckFiller";
 import CharacterRepository from "../repositories/CharacterRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
 import Versionable from "./Versionable";
+import DrawsEvents from "./DrawsEvents";
 import SheetCalculations from "../services/SheetCalculations";
 import ModifierCard from "./ModifierCard";
 import UsesTranslations from "./UsesTranslations";
@@ -19,24 +21,14 @@ class CampaignSheet {
         this.hash = data.hash;
 
         // Sheet fields
-        this.calendar = data.calendar || {
-            week: 0,
-            sections: {
-                5: [32.3],
-                10: [183.3, 21.4],
-                20: [129.3],
-                25: [183.3],
-                30: [183.3],
-                40: [184.1],
-                60: [137.2],
-            }
-        };
+        // New campaigns start with the printed calendar sections (fh.json rules), players can add and remove them.
+        this.calendar = data.calendar || {week: 0, sections: _.cloneDeep(new GameData().campaignRule('fh', 'calendarSections'))};
         this.checks = {...data.checks};
         this.perks = {...data.perks};
         this.perkDescriptions = [];
         this.morale = data.morale || 0;
         this.resources = data.resources || {};
-        this.soldiers = data.soldiers || 0;
+        this.soldiers = data.soldiers ?? 4;
         this.inspiration = data.inspiration || 0;
         this.totalDefense = data.totalDefense || 0;
         this.prosperityIndex = data.prosperityIndex || 1;
@@ -46,13 +38,20 @@ class CampaignSheet {
         this.winterOutpost = {...data.winterOutpost};
         this.boat = {...data.boat};
         this.notes = data.notes || '';
+        // Event deck card ids top to bottom, per card type.
+        this.deckOrder = {...data.deckOrder};
         this.unlocks = {...data.unlocks};
         this.scenarioLevel = data.scenarioLevel || 0;
+
+        // Drawn event cards: [{card: 'SO-12', choice: 'A', removed: false, date: ISO string}]
+        this.eventHistory = [...(data.eventHistory || [])];
 
         // Items
         this.itemDesigns = {...data.itemDesigns};
         this.crossGameItemsEnabled = data.crossGameItemsEnabled || false;
         this.crossGameItems = {...data.crossGameItems};
+        // Item id => count removed from the game, e.g. sacrificed in a scenario.
+        this.removedItems = {...data.removedItems};
         this.recipes = {...data.recipes};
 
         // Characters
@@ -76,18 +75,7 @@ class CampaignSheet {
             hash: 'hash',
 
             // Sheet fields
-            calendar: {'calendar': {
-                    week: 0,
-                    sections: {
-                        5: [32.3],
-                        10: [183.3, 21.4],
-                        20: [129.3],
-                        25: [183.3],
-                        30: [183.3],
-                        40: [184.1],
-                        60: [137.2],
-                    }
-                }},
+            calendar: {'calendar': {week: 0, sections: _.cloneDeep(new GameData().campaignRule('fh', 'calendarSections'))}},
             checks: {'checks': {}},
             perks: {'perks': {}},
             morale: 'morale',
@@ -102,13 +90,16 @@ class CampaignSheet {
             winterOutpost: {'winterOutpost': {}},
             boat: {'boat': {}},
             notes: {'notes': ''},
+            deckOrder: {'deckOrder': {}},
             unlocks: {'unlocks': {}},
             scenarioLevel: 'scenarioLevel',
+            eventHistory: {'eventHistory': []},
 
             // Items
             itemDesigns: {'itemDesigns': {}},
             crossGameItemsEnabled: 'crossGameItemsEnabled',
             crossGameItems: {'crossGameItems': {}},
+            removedItems: {'removedItems': {}},
             recipes: {'recipes': {}},
 
             // Characters
@@ -126,6 +117,10 @@ class CampaignSheet {
         if (typeof app.campaignData[this.key()] === 'undefined') {
             this.new();
         }
+    }
+
+    get effectiveProsperityIndex() {
+        return this.prosperityIndex;
     }
 
     new() {
@@ -157,65 +152,13 @@ class CampaignSheet {
             this.checks[i] = this.checks[i] || false;
         }
 
-        if (!Object.keys(this.summerRoad).length) {
-            for (let i = 1; i <= 20; i++) {
-                this.summerRoad[i] = true;
-            }
-        }
-        for (let i = 1; i <= 52; i++) {
-            this.summerRoad[i] = this.summerRoad[i] || false;
-        }
+        const decks = this.gameData.decks(this.game);
 
-        if (!Object.keys(this.summerOutpost).length) {
-            for (let i = 1; i <= 20; i++) {
-                this.summerOutpost[i] = true;
-            }
-        }
-        for (let i = 1; i <= 65; i++) {
-            this.summerOutpost[i] = this.summerOutpost[i] || false;
-        }
+        ['summerRoad', 'summerOutpost', 'winterRoad', 'winterOutpost', 'boat'].forEach((deck) => {
+            this[deck] = DeckFiller.fill(this[deck], decks[deck]);
+        });
 
-        if (!Object.keys(this.winterRoad).length) {
-            for (let i = 1; i <= 20; i++) {
-                this.winterRoad[i] = true;
-            }
-        }
-        for (let i = 1; i <= 49; i++) {
-            this.winterRoad[i] = this.winterRoad[i] || false;
-        }
-
-        if (!Object.keys(this.winterOutpost).length) {
-            for (let i = 1; i <= 20; i++) {
-                this.winterOutpost[i] = true;
-            }
-        }
-        for (let i = 1; i <= 81; i++) {
-            this.winterOutpost[i] = this.winterOutpost[i] || false;
-        }
-
-        if (!Object.keys(this.boat).length) {
-            for (let i = 1; i <= 13; i++) {
-                this.boat[i] = true;
-            }
-        }
-        for (let i = 1; i <= 19; i++) {
-            this.boat[i] = this.boat[i] || false;
-        }
-
-        [24,27,31,37,47].forEach((id) => {
-            this.itemDesigns[id] = this.itemDesigns[id] || false;
-        })
-        for (let i = 51; i <= 119; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
-        }
-        for (let i = 167; i <= 246; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
-        }
-        for (let i = 248; i <= 264; i++) {
-            this.itemDesigns[i] = this.itemDesigns[i] || false;
-        }
-
-        this.itemDesigns = this.removeInvalid(this.itemDesigns, 264);
+        this.itemDesigns = DeckFiller.fill(this.itemDesigns, decks.itemDesigns);
 
         this.perkDescriptions.forEach((perk, index) => {
             perk.desc = this.$tPrefix('town_guard_perks.' + index);
@@ -224,6 +167,10 @@ class CampaignSheet {
                 this.perks[index][i] = this.perks[index][i] || false;
             }
         })
+    }
+
+    // Frosthaven classes add no events when unlocked or retired.
+    addClassEvents() {
     }
 
     fillCharacterUnlocks() {
@@ -240,35 +187,24 @@ class CampaignSheet {
             }
         }
 
-        // Remove old character unlocks from party sheet, keys are ids now
-        // Remove hidden characters
+        // Remove old character unlocks from party sheet, keys are ids now.
+        // Hidden classes are kept, so switching games or editions doesn't lose their unlocks.
+        const allCharacters = this.characterRepository.gameData.characters();
         this.characterUnlocks = _.each(this.characterUnlocks, (characterUnlock, id) => {
-            if (!characterOrder.includes(id)) {
+            if (!(id in allCharacters)) {
                 delete this.characterUnlocks[id];
             }
         });
     }
 
     fillRelations() {
-        for (const uuid in this.characters) {
-            if (!(this.characters[uuid] instanceof Character)) {
-                this.characters[uuid] = Character.make(uuid, this.game);
-                // Character was removed, remove it from sheet
-                if (!this.characters[uuid].id) {
-                    delete this.characters[uuid];
-                }
-            }
-        }
-
-        for (const uuid in this.archivedCharacters) {
-            if (!(this.archivedCharacters[uuid] instanceof Character)) {
-                this.archivedCharacters[uuid] = Character.make(uuid, this.game);
-                // Character was removed, remove it from sheet
-                if (!this.archivedCharacters[uuid].id) {
-                    delete this.archivedCharacters[uuid];
-                }
-            }
-        }
+        // Copies: read() shares these objects with app.campaignData, which must keep the unknown characters.
+        this.characters = {...this.characters};
+        this.archivedCharacters = {...this.archivedCharacters};
+        this.unknownCharacters = {};
+        this.unknownArchivedCharacters = {};
+        Character.makeForSheet(this.characters, this.game, this.unknownCharacters);
+        Character.makeForSheet(this.archivedCharacters, this.game, this.unknownArchivedCharacters);
     }
 
     resetCrossGameItems() {
@@ -306,12 +242,6 @@ class CampaignSheet {
             });
     }
 
-    removeInvalid(list, maxId) {
-        // Crossover packs (e.g. Mercenary Pack) use non-numeric ids like "AN1",
-        // which the numeric range check below doesn't apply to; keep them as-is.
-        return collect(list).filter((value, key) => isNaN(key) || (key >= 0 && key <= maxId)).all();
-    }
-
     read() {
         this.parentRead();
 
@@ -335,8 +265,14 @@ class CampaignSheet {
         values.recipes = collect({...this.recipes}).filter(v => v).all();
         values.unlocks = collect({...this.unlocks}).filter(v => v).all();
         values.characterUnlocks = collect({...this.characterUnlocks}).filter(v => v).all();
-        values.characters = collect({...this.characters}).mapWithKeys(character => [character.uuid, character.id]).all();
-        values.archivedCharacters = collect({...this.archivedCharacters}).mapWithKeys(character => [character.uuid, character.id]).all();
+        values.characters = {
+            ...collect({...this.characters}).mapWithKeys(character => [character.uuid, character.id]).all(),
+            ...this.unknownCharacters,
+        };
+        values.archivedCharacters = {
+            ...collect({...this.archivedCharacters}).mapWithKeys(character => [character.uuid, character.id]).all(),
+            ...this.unknownArchivedCharacters,
+        };
         values.enhancements = collect({...this.enhancements}).map(perAbility =>
             collect(perAbility).filter(list => list.length).all()
         ).filter(perAbility => Object.keys(perAbility).length).all();
@@ -348,6 +284,12 @@ class CampaignSheet {
         if (!values.enhancementsEnabled) {
             delete values.enhancementsEnabled;
         }
+        if (!Object.keys(values.deckOrder || {}).length) {
+            delete values.deckOrder;
+        }
+        if (!Object.keys(values.removedItems || {}).length) {
+            delete values.removedItems;
+        }
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;
         }
@@ -355,10 +297,7 @@ class CampaignSheet {
     }
 
     get starterCharacters() {
-        switch (this.game) {
-            default:
-                return ["DF", "BB", "BN", "DW", "BO", "GE"];
-        }
+        return this.gameData.startingClasses(this.game);
     }
 
     get characterOrder() {
@@ -373,9 +312,15 @@ class CampaignSheet {
         return this._characterOrder;
     }
 
+    // Weeks 1-10 are summer, 11-20 winter
+    static isSummerWeek(week) {
+        const remainder = week % 20;
+        return remainder > 0 && remainder <= 10;
+    }
+
+    // calendar.week is the number of crossed off weeks, so the current week is the next one
     isSummer() {
-        const remainder = this.calendar.week % 20;
-        return (remainder % 20 >= 0 && remainder % 20 <= 9);
+        return CampaignSheet.isSummerWeek(this.calendar.week + 1);
     }
 
     // The key used in local storage
@@ -392,5 +337,6 @@ Object.assign(CampaignSheet.prototype, {
 
 Object.assign(CampaignSheet.prototype, UsesTranslations);
 Object.assign(CampaignSheet.prototype, Versionable);
+Object.assign(CampaignSheet.prototype, DrawsEvents);
 
 export default CampaignSheet;

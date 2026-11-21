@@ -15,20 +15,20 @@
                       'top': '-'+settings.yOffset+'px'
                   }"/>
             <ul v-if="achievements && achievements.count()">
-                <li v-for="achievement in achievements.items"
-                    v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
-                    :key="game+'-'+achievement.id"
-                    class="absolute"
-                    :style="{
-                        'top': '-174px',
-                        'left': achievement.x + '%'
-                    }">
-                    <webp :src="achievement.image"
-                          :animate="true" :retina="true"
-                          class="cursor-pointer"
-                          :id="'a' + achievement.id"
-                          :alt="$t(achievement.name)"/>
-                </li>
+                <template v-for="achievement in achievements.items" :key="game+'-'+achievement.id">
+                    <li v-if="achievement.isGlobal() && achievement.awarded && !achievement.hidden"
+                        class="absolute"
+                        :style="{
+                            'top': (achievement.y ?? -174) + 'px',
+                            'left': achievement.x + '%'
+                        }">
+                        <webp :src="achievement.image"
+                              :animate="true" :retina="true"
+                              class="cursor-pointer"
+                              :id="'a' + achievement.id"
+                              :alt="$t(achievement.name)"/>
+                    </li>
+                </template>
             </ul>
 
             <webp v-for="overlay in overlays"
@@ -41,7 +41,7 @@
                   :style="{
                       'left': overlay.coordinates.x + '%',
                       'top': overlay.coordinates.y + '%',
-                      'transform': 'scale('+scenarioScale+')'
+                      'transform': 'scale('+buildingScale+')'
                   }"/>
 
             <template v-if="scenarios && scenarios.isNotEmpty()">
@@ -50,6 +50,7 @@
                       :key="game+'-'+scenario.id"
                       :id="'s' + scenario.id"
                       :animate="true"
+                      :retina-webp="scenario.hasRetinaSticker()"
                       :alt="$t(scenario.name)"
                       class="absolute scenario"
                       :style="{
@@ -71,7 +72,7 @@
                       :style="{
                           'left': building.coordinates.x + '%',
                           'top': building.coordinates.y + '%',
-                          'transform': 'scale('+scenarioScale+')'
+                          'transform': 'scale('+buildingScale+')'
                       }"/>
             </template>
 
@@ -85,6 +86,7 @@
 <script>
 import panzoom from "panzoom";
 import Hammer from 'hammerjs';
+import {markRaw} from "vue";
 import tippy from "tippy.js";
 import GameData from "../services/GameData";
 import {Game} from "../models/Game";
@@ -100,10 +102,11 @@ export default {
         return {
             game: 'gh',
             map: null,
-            $map: null,
+            mapElement: null,
             mapImages: null,
             settings: {
                 stickerScale: 1,
+                buildingScale: 1,
                 yOffset: 0,
                 width: 0,
                 height: 0
@@ -114,6 +117,7 @@ export default {
             overlays: null,
             buildings: null,
             scenarioScale: 1,
+            buildingScale: 1,
             gameData: new GameData
         }
     },
@@ -124,14 +128,14 @@ export default {
             this.setScenarios();
         }
 
-        this.$bus.$on('scenarios-updated', this.setScenarios);
-        this.$bus.$on('windows-resized', this.setScenarios);
+        this.$listen('scenarios-updated', this.setScenarios);
+        this.$listen('windows-resized', this.setScenarios);
 
         if (app.achievements) {
             this.setAchievements();
         }
-        this.$bus.$on('achievements-updated', this.setAchievements);
-        this.$bus.$on('game-selected', this.loadMap);
+        this.$listen('achievements-updated', this.setAchievements);
+        this.$listen('game-selected', this.loadMap);
         
         if (app.overlays) {
             this.setOverlays();
@@ -139,17 +143,11 @@ export default {
         if (app.buildings) {
             this.setBuildings();
         }
-        this.$bus.$on('buildings-updated', this.setBuildings);
-        this.$bus.$on('overlays-updated', this.setOverlays);
+        this.$listen('buildings-updated', this.setBuildings);
+        this.$listen('overlays-updated', this.setOverlays);
     },
-    destroyed() {
+    unmounted() {
         this.map?.dispose();
-        this.$bus.$off('scenarios-updated', this.setScenarios);
-        this.$bus.$off('windows-resized', this.setScenarios);
-        this.$bus.$off('achievements-updated', this.setAchievements);
-        this.$bus.$off('game-selected', this.loadMap);
-        this.$bus.$off('buildings-updated', this.setBuildings);
-        this.$bus.$off('overlays-updated', this.setOverlays);
         if (this.mapTouch) {
             this.mapTouch.destroy();
         }
@@ -162,20 +160,20 @@ export default {
 
             await this.$nextTick();
 
-            this.$map = document.getElementById('map');
+            this.mapElement = document.getElementById('map');
             this.map?.dispose();
-            this.map = panzoom(this.$map, {
+            this.map = markRaw(panzoom(this.mapElement, {
                 minZoom: this.scale(),
                 maxZoom: 4,
                 bounds: true
-            });
+            }));
             this.centerMap();
 
             // Register touch events
             if (this.mapTouch) {
                 this.mapTouch.destroy();
             }
-            this.mapTouch = new Hammer(this.$map);
+            this.mapTouch = markRaw(new Hammer(this.mapElement));
             this.mapTouch.on('tap', (e) => {
                 if (e.target.id.startsWith('s')) {
                     this.scenarioClicked(e);
@@ -249,11 +247,11 @@ export default {
             const yOffset = this.settings.yOffset * scale;
 
             if (this.isLandscape()) {
-                const mapWidth = this.$map.offsetWidth * scale;
+                const mapWidth = this.mapElement.offsetWidth * scale;
                 let x = (window.innerWidth - mapWidth) / 2;
                 this.map.moveTo(x, yOffset + (20 / scale));
             } else {
-                const mapHeight = this.$map.offsetHeight * scale;
+                const mapHeight = this.mapElement.offsetHeight * scale;
                 let y = (window.innerHeight - mapHeight) / 2;
                 this.map.moveTo(0, y + yOffset);
             }
@@ -263,10 +261,11 @@ export default {
         },
         scale() {
             this.scenarioScale = this.settings.stickerScale;
+            this.buildingScale = this.settings.buildingScale ?? this.settings.stickerScale;
 
             return this.isLandscape()
                 ? window.innerHeight / this.settings.width
-                : window.innerWidth / this.$map.offsetWidth;
+                : window.innerWidth / this.mapElement.offsetWidth;
         },
         filteredScenarios(scenario) {
             return scenario.isVisible()

@@ -22,6 +22,7 @@
             <div class="mx-4">{{ $t('or') }}</div>
 
             <button @click="random" :disabled="appData.read_only" class="mdc-button origin-left transform scale-90 mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
                 <i class="material-icons mdc-button__icon">launch</i>
                 <span class="mdc-button__label">{{ $t('Draw') }}</span>
             </button>
@@ -58,21 +59,21 @@
                     <p v-else-if="quest.building_unlocks">
                         {{ $t('Unlocked: One random scenario and one random item blueprint') }}
                     </p>
-                    <p v-else-if="quest.unlock">
-                        {{ $t(quest.unlock) }}
-                    </p>
+                    <add-links-and-icons v-else-if="quest.unlock" class="children-inline"
+                                         :text="$t(quest.unlock)"/>
                 </div>
 
                 <div>
                     <button @click.prevent="remove" type="button" :disabled="appData.read_only"
                             class="my-4 mdc-button mdc-button--raised">
+                        <span class="mdc-button__ripple"></span>
                         <i class="material-icons mdc-button__icon" aria-hidden="true">delete_forever</i>
                         <span class="mdc-button__label">{{ $t('Remove') + ' ' + quest.number }}</span>
                     </button>
                 </div>
             </div>
 
-            <div @click="openCard" class="cursor-pointer w-12">
+            <div @click="openCard" class="cursor-pointer w-20 flex-shrink-0 pl-2">
                 <webp :src="quest.card.images[1]" :alt="$t(quest.name)"/>
             </div>
         </div>
@@ -80,6 +81,7 @@
         <div v-if="quest.id && sheet.hidePersonalQuests && hidden" class="flex">
             <button @click.prevent="hidden = !hidden" type="button"
                     class="mdc-button origin-left transform scale-75 mdc-button--raised">
+                <span class="mdc-button__ripple"></span>
                 <i class="material-icons mdc-button__icon" aria-hidden="true">bolt</i>
                 <span class="mdc-button__label">{{ $t('Show personal quest') }}</span>
             </button>
@@ -88,7 +90,7 @@
         <checkbox-with-label id="hide-personal-quests"
                              class="my-2"
                              :label="$t('Hide personal quests from others')"
-                             :checked.sync="sheet.hidePersonalQuests"
+                             v-model:checked="sheet.hidePersonalQuests"
                              @change="store"/>
 
     </div>
@@ -102,6 +104,7 @@ import Helpers from "../../../services/Helpers";
 import StorySyncer from "../../../services/StorySyncer";
 
 export default {
+    emits: ['change', 'update:quest'],
     inject: ['appData'],
     props: {
         quest: Object,
@@ -124,7 +127,7 @@ export default {
     },
     computed: {
         quests() {
-            return this.personalQuestRepository.unlockedQuests(this.sheet.game).keyBy('id').items;
+            return this.personalQuestRepository.unlockedQuests(this.sheet.game, this.sheet).keyBy('id').items;
         },
         unavailableQuests() {
             let unavailable = [];
@@ -139,19 +142,34 @@ export default {
     },
     methods: {
         random() {
+            // Ids are numbers (510) or strings ("330", "cq01")
+            const unavailable = this.unavailableQuests.map(String);
             const id = [...Object.keys(this.quests)]
-                .filter(id => !this.unavailableQuests.includes(parseInt(id)))
+                .filter(id => !unavailable.includes(id))
+                // GH2e starts with the `starting` quests; the rest join the deck later (FAQ 2.0), so pick those manually.
+                // ConQuests cards are shuffled in like in GH.
+                .filter(id => this.sheet.game !== 'gh2' || this.quests[id].starting || this.quests[id].game === 'cq')
                 .sort((a, b) => 0.5 - Math.random())[0];
             const quest = this.quests[id];
             this.hidden = false;
             this.update(quest);
+            this.addEventsOnChoose(quest);
             this.goalMet = false;
         },
         select(questId) {
             const quest = this.quests[questId];
             this.hidden = false;
             this.update(quest);
+            this.addEventsOnChoose(quest);
             this.goalMet = false;
+        },
+        // Seeker of Xorn shuffles its bonus event into the deck when taken, if that pack is enabled.
+        addEventsOnChoose(quest) {
+            const events = quest.events_on_choose.filter(event => this.sheet.hasEvent(event));
+            if (events.length) {
+                this.sheet.addEvents(events);
+                this.store();
+            }
         },
         remove() {
             this.quest.resetProgress();
@@ -174,6 +192,8 @@ export default {
             this.validate();
         },
         validate() {
+            // Store first, unlocking a scenario re-validates the story, which reloads the character from storage
+            this.update(this.quest);
             this.goalMet = this.personalQuestValidator.validate(this.quest, this.sheet);
             this.update(this.quest);
         },
@@ -184,7 +204,8 @@ export default {
             // This allows to find personal quests based on id or their name.
             return (id) => {
                 return id.toLowerCase().startsWith(query)
-                    || Helpers.sanitize(this.quests[id]._name).startsWith(query);
+                    || Helpers.sanitize(this.quests[id]._name).startsWith(query)
+                    || Helpers.sanitize(this.quests[id].number).startsWith(query);
             }
         },
         unlockedBuildingName() {
@@ -203,6 +224,7 @@ export default {
 </script>
 
 <style lang="scss">
+@reference "../../../../sass/tailwind.css";
 .children-inline > img, .children-inline div, .children-inline svg {
     @apply inline;
 }

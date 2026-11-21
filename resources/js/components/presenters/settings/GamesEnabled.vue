@@ -11,13 +11,33 @@
         </p>
 
         <ul :key="listKey">
-            <li v-for="code in games">
+            <li v-for="code in games.filter(code => code !== Game.gh2 && !packs.includes(code))">
                 <checkbox-with-label :id="code+'-enabled'"
                                      :label="$t(code)"
-                                     :checked.sync="enabled[code]"
+                                     v-model:checked="enabled[code]"
                                      :disabled="disabled[code]"
                                      :auto-disable="false"
-                                     @change="store"/>
+                                     @change="toggle(code)"/>
+                <div v-if="code === Game.gh && enabled[Game.gh]" id="gloomhaven-edition" class="ml-10 mb-2">
+                    <radio v-for="edition in [Game.gh, Game.gh2]"
+                           :key="edition"
+                           :id="edition + '-edition'"
+                           group="gloomhaven-edition"
+                           :label="$t(edition)"
+                           :checked="currentEdition === edition"
+                           @changed="selectEdition(edition)"/>
+                </div>
+            </li>
+        </ul>
+
+        <h2 class="text-xl mt-4 mb-2">{{ $t('games-enabled.packs') }}</h2>
+        <ul :key="listKey + '-packs'" id="packs-enabled">
+            <li v-for="code in packs">
+                <checkbox-with-label :id="code+'-enabled'"
+                                     :label="$t(code)"
+                                     v-model:checked="enabled[code]"
+                                     :auto-disable="false"
+                                     @change="toggle(code)"/>
             </li>
         </ul>
     </div>
@@ -28,86 +48,89 @@
 import GameData from "../../../services/GameData";
 import store from "store/dist/store.modern";
 
-const md5 = require('js-md5');
+import md5 from 'js-md5';
+import {Game} from "../../../models/Game";
+import {announceEnabledGames, enabledGamesMap} from "../../../services/app/getEnabledGames";
+import Sheet from "../../../models/Sheet";
+import SheetRepository from "../../../repositories/SheetRepository";
 
 export default {
     data() {
         return {
             games: [],
+            packs: new GameData().crossover(),
             enabled: {},
             disabled: {},
             listKey: '',
-            beta: [],
+            currentEdition: null,
+            sheetRepository: new SheetRepository,
+        }
+    },
+    computed: {
+        Game() {
+            return Game
         }
     },
     beforeMount() {
         this.init();
     },
     mounted() {
-        this.$bus.$on('campaigns-changed', this.checkDisabled);
-    },
-    destroyed() {
-        this.$bus.$off('campaigns-changed', this.checkDisabled);
+        this.setEdition();
+        this.$listen('campaigns-changed', this.setEdition);
     },
     methods: {
         init() {
-            const enabledGames = this.readEnabled();
-            const gameData = new GameData;
-            const beta = gameData.beta();
-            this.games = gameData.games();
-            this.games.forEach((code) => {
-                // GH is always enabled, it's used as default in some places
-                if (code === 'gh') {
-                    this.enabled[code] = true;
-                    this.disabled[code] = true;
-                } else {
-                    this.enabled[code] = code in enabledGames ? enabledGames[code] : !beta.includes(code);
-                    this.disabled[code] = false;
-                }
-            });
+            this.games = new GameData().games();
+            Object.assign(this.enabled, enabledGamesMap());
+            this.games.forEach(code => this.disabled[code] = false);
             this.checkDisabled();
         },
-        getEnabled() {
-            this.init();
-            return this.emit();
-        },
-        enableGame(game) {
-            this.init();
-            this.enabled[game] = true;
+        toggle(code) {
             this.store();
-            return this.emit();
+            // Crossover content is merged in when campaign data is fetched
+            if (new GameData().crossover().includes(code)) {
+                app.campaignsChanged();
+            }
         },
         store() {
             store.set('gamesEnabled', this.enabled);
-            this.emit();
+            announceEnabledGames(this.enabled);
             this.checkDisabled();
         },
-        emit() {
-            const games = this.enabledAsArray();
-            this.$bus.$emit('enabled-games-changed', games);
+        // gh and gh2 are separate games, the campaign picks which one is played as Gloomhaven
+        selectEdition(game) {
+            const sheet = new Sheet({game: Game.gh});
+            sheet.edition = game === Game.gh2 ? 2 : 1;
+            sheet.store();
 
-            return games;
+            if ([Game.gh, Game.gh2].includes(app.game)) {
+                this.$bus.$emit('game-selected', game);
+            } else {
+                this.$bus.$emit('campaign-selected', app.campaignId);
+            }
+        },
+        setEdition() {
+            this.currentEdition = this.sheetRepository.gloomhavenGame();
+            // Loading a campaign may enable gh2, re-read so store() doesn't overwrite it
+            this.init();
         },
         checkDisabled() {
             const enabled = collect(this.enabled).filter(v => v);
             if (enabled.count() === 1) {
-                Vue.set(this.disabled, enabled.keys().first(), true);
+                this.disabled[enabled.keys().first()] = true;
             } else {
                 Object.keys(this.disabled)
-                    .forEach((code) => Vue.set(this.disabled, code, false));
+                    .forEach((code) => this.disabled[code] = false);
             }
-            // The current game is always disabled
+            // The current game is always disabled, gh2 is played in the gh slot and FC uses GH's items
             this.disabled[app.game] = true;
+            if ([Game.gh2, Game.fc].includes(app.game)) {
+                this.disabled[Game.gh] = true;
+            }
             this.rerender();
         },
-        readEnabled() {
-            return store.get('gamesEnabled', {});
-        },
         rerender() {
-            this.listKey = md5(JSON.stringify(this.disabled));
-        },
-        enabledAsArray() {
-            return collect(this.enabled).filter(v => v).keys().toArray();
+            this.listKey = md5(JSON.stringify(this.disabled) + this.currentEdition);
         }
     }
 }
