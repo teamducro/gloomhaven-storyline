@@ -151,6 +151,11 @@ export default {
                 {version: '3.23', description: 'Mercenary Pack support', date: dayjs('2026-09-25')},
                 {version: '3.24', description: 'Ability card enhancement tracking', date: dayjs('2026-09-26')},
                 {version: '3.25', description: 'Summaries for Frosthaven and JotL', date: dayjs('2026-11-01')},
+                {
+                    version: '4.0',
+                    description: 'Gloomhaven 2nd Edition, export to Gloomhaven Secretariat, monsters and official FAQ per scenario and improvements to event decks',
+                    date: dayjs('2026-11-21')
+                },
             ].reverse()
         }
     },
