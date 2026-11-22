@@ -360,6 +360,18 @@ export default {
         "only-owner": "이 캠페인의 소유자만 스냅샷을 관리할 수 있습니다",
         "no-snapshots": "아직 스냅샷이 없습니다"
     },
+    "local-backup": {
+        "title": "Local campaign backup",
+        "text": "This campaign is only stored in this browser. Private windows, clearing your browsing data or the browser itself may remove it.",
+        "backup": "Backup",
+        "backup-text": "Copy this link and keep it somewhere safe, for example in your notes or an e-mail to yourself. The link holds the campaign as it is now, so copy a new one after each session.",
+        "copy": "Copy link",
+        "restore": "Restore",
+        "restore-text": "Paste a backup link to restore the campaign.",
+        "paste": "Paste a backup link",
+        "confirm": "This replaces your current local campaign with the campaign from the backup link.",
+        "invalid": "This is not a valid backup link."
+    },
     "Characters": "캐릭터",
     "Character sheet": "캐릭터 기록지",
     "Party sheet": "파티 기록지",

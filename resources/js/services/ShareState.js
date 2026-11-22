@@ -94,6 +94,11 @@ export default class ShareState {
         return `${this.url()}#/shared/${this.version}/${id}/${this.encode()}/${path}/${game}`;
     }
 
+    // Route of a pasted share link, e.g. '/shared/1/local/<data>/story/gh'
+    sharedPath(link) {
+        return link?.trim().match(/#(\/shared\/\d+\/[^/]+\/[^/]+.*)$/)?.[1] || null;
+    }
+
     encodeMap() {
         return {
             '"state":': '±st',

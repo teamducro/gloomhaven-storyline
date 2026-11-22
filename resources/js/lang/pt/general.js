@@ -360,6 +360,18 @@ export default {
         "only-owner": "Apenas os proprietários desta campanha podem gerir instantâneos",
         "no-snapshots": "Ainda não há instantâneos"
     },
+    "local-backup": {
+        "title": "Local campaign backup",
+        "text": "This campaign is only stored in this browser. Private windows, clearing your browsing data or the browser itself may remove it.",
+        "backup": "Backup",
+        "backup-text": "Copy this link and keep it somewhere safe, for example in your notes or an e-mail to yourself. The link holds the campaign as it is now, so copy a new one after each session.",
+        "copy": "Copy link",
+        "restore": "Restore",
+        "restore-text": "Paste a backup link to restore the campaign.",
+        "paste": "Paste a backup link",
+        "confirm": "This replaces your current local campaign with the campaign from the backup link.",
+        "invalid": "This is not a valid backup link."
+    },
     "Characters": "Personagens",
     "Character sheet": "Ficha do personagem",
     "Party sheet": "Ficha do grupo",
