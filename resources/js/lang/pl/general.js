@@ -360,6 +360,20 @@ export default {
         "only-owner": "Tylko właściciele tej kampanii mogą zarządzać zrzutami danych.",
         "no-snapshots": "Nie ma jeszcze żadnych zrzutów danych"
     },
+    "local-backup": {
+        "title": "Kopia zapasowa kampanii lokalnej",
+        "text": "Ta kampania jest zapisana tylko w tej przeglądarce. Okna prywatne lub wyczyszczenie danych przeglądania mogą ją usunąć.",
+        "backup": "Kopia zapasowa",
+        "backup-text": "Skopiuj ten link i zachowaj go w bezpiecznym miejscu. Link zawiera kampanię w jej obecnym stanie, więc po każdej sesji skopiuj nowy.",
+        "copy": "Kopiuj link",
+        "restore": "Przywróć",
+        "restore-text": "Wklej link kopii zapasowej, aby przywrócić kampanię.",
+        "paste": "Wklej link kopii zapasowej",
+        "replace-title": "Zastąpić kampanię lokalną?",
+        "replace": "Zastąp",
+        "confirm": "Spowoduje to zastąpienie obecnej kampanii lokalnej kampanią z tego linku.",
+        "invalid": "To nie jest prawidłowy link kopii zapasowej."
+    },
     "Characters": "Postaci",
     "Character sheet": "Arkusz postaci",
     "Party sheet": "Dziennik drużyny",

@@ -360,6 +360,20 @@ export default {
         "only-owner": "Snímky mohou spravovat pouze vlastníci této kampaně",
         "no-snapshots": "Zatím nejsou žádné snímky"
     },
+    "local-backup": {
+        "title": "Záloha lokální kampaně",
+        "text": "Tato kampaň je uložena pouze v tomto prohlížeči. Anonymní okna nebo vymazání dat prohlížeče ji mohou odstranit.",
+        "backup": "Záloha",
+        "backup-text": "Zkopírujte tento odkaz a uložte si ho na bezpečné místo. Odkaz obsahuje kampaň v jejím současném stavu, proto si po každém hraní zkopírujte nový.",
+        "copy": "Kopírovat odkaz",
+        "restore": "Obnovit",
+        "restore-text": "Vložte záložní odkaz pro obnovení kampaně.",
+        "paste": "Vložte záložní odkaz",
+        "replace-title": "Nahradit lokální kampaň?",
+        "replace": "Nahradit",
+        "confirm": "Tímto nahradíte svou současnou lokální kampaň kampaní z tohoto odkazu.",
+        "invalid": "Toto není platný záložní odkaz."
+    },
     "Characters": "Hrdinové",
     "Character sheet": "Deník hrdiny",
     "Party sheet": "Deník družiny",

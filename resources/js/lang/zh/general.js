@@ -360,6 +360,20 @@ export default {
         "only-owner": "只有该战役的所有者可以管理快照",
         "no-snapshots": "目前还没有快照"
     },
+    "local-backup": {
+        "title": "本地战役备份",
+        "text": "此战役仅存储在这个浏览器中。使用无痕窗口或清除浏览数据可能会将其删除。",
+        "backup": "备份",
+        "backup-text": "复制此链接并妥善保存。链接保存的是战役当前的状态，因此每次游戏结束后请重新复制一个新链接。",
+        "copy": "复制链接",
+        "restore": "恢复",
+        "restore-text": "粘贴备份链接以恢复战役。",
+        "paste": "粘贴备份链接",
+        "replace-title": "要替换本地战役吗？",
+        "replace": "替换",
+        "confirm": "这会用此链接中的战役替换你当前的本地战役。",
+        "invalid": "这不是有效的备份链接。"
+    },
     "Characters": "角色",
     "Character sheet": "角色面板",
     "Party sheet": "队伍面板",

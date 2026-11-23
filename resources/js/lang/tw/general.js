@@ -360,6 +360,20 @@ export default {
         "only-owner": "只有此戰役的擁有者可以管理快照",
         "no-snapshots": "尚無快照"
     },
+    "local-backup": {
+        "title": "本機戰役備份",
+        "text": "此戰役僅儲存在這個瀏覽器中。使用無痕視窗或清除瀏覽資料可能會將其移除。",
+        "backup": "備份",
+        "backup-text": "複製此連結並妥善保存。連結保存的是戰役目前的狀態，因此每次遊戲結束後請重新複製一個新連結。",
+        "copy": "複製連結",
+        "restore": "還原",
+        "restore-text": "貼上備份連結以還原戰役。",
+        "paste": "貼上備份連結",
+        "replace-title": "要取代本機戰役嗎？",
+        "replace": "取代",
+        "confirm": "這會以此連結中的戰役取代你目前的本機戰役。",
+        "invalid": "這不是有效的備份連結。"
+    },
     "Characters": "角色",
     "Character sheet": "角色表",
     "Party sheet": "隊伍表",

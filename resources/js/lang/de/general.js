@@ -360,6 +360,20 @@ export default {
         "only-owner": "Nur der Besitzer dieser Kampagne kann die Snapshots verwalten.",
         "no-snapshots": "Es gibt noch keine Snapshots."
     },
+    "local-backup": {
+        "title": "Backup der lokalen Kampagne",
+        "text": "Diese Kampagne ist nur in diesem Browser gespeichert. Private Fenster oder das Löschen deiner Browserdaten können sie entfernen.",
+        "backup": "Backup",
+        "backup-text": "Kopiere diesen Link und bewahre ihn an einem sicheren Ort auf. Der Link enthält die Kampagne in ihrem jetzigen Zustand, kopiere also nach jeder Spielrunde einen neuen.",
+        "copy": "Link kopieren",
+        "restore": "Wiederherstellen",
+        "restore-text": "Füge einen Backup-Link ein, um die Kampagne wiederherzustellen.",
+        "paste": "Backup-Link einfügen",
+        "replace-title": "Lokale Kampagne ersetzen?",
+        "replace": "Ersetzen",
+        "confirm": "Dies ersetzt deine aktuelle lokale Kampagne durch die Kampagne aus diesem Link.",
+        "invalid": "Dies ist kein gültiger Backup-Link."
+    },
     "Characters": "Charaktere",
     "Character sheet": "Charakterbogen",
     "Party sheet": "Gruppenbogen",

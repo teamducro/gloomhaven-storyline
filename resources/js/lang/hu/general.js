@@ -360,6 +360,20 @@ export default {
         "only-owner": "Csak a kampány tulajdonosai kezelhetik a pillanatképeket",
         "no-snapshots": "Még nincsenek pillanatképek"
     },
+    "local-backup": {
+        "title": "Helyi kampány biztonsági mentése",
+        "text": "Ez a kampány csak ebben a böngészőben van tárolva. A privát ablakok vagy a böngészési adatok törlése eltávolíthatják.",
+        "backup": "Biztonsági mentés",
+        "backup-text": "Másold ki ezt a linket, és őrizd meg biztonságos helyen. A link a kampány jelenlegi állapotát tartalmazza, ezért minden játékalkalom után másolj ki egy újat.",
+        "copy": "Link másolása",
+        "restore": "Visszaállítás",
+        "restore-text": "Illessz be egy mentési linket a kampány visszaállításához.",
+        "paste": "Illessz be egy mentési linket",
+        "replace-title": "Lecseréled a helyi kampányt?",
+        "replace": "Csere",
+        "confirm": "Ez lecseréli a jelenlegi helyi kampányodat a linkben található kampányra.",
+        "invalid": "Ez nem érvényes mentési link."
+    },
     "Characters": "Karakterek",
     "Character sheet": "Karakter jegyzet",
     "Party sheet": "Csapat jegyzet",

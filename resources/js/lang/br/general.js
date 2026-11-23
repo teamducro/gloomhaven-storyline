@@ -360,6 +360,20 @@ export default {
         "only-owner": "Apenas os donos desta campanha podem gerenciar snapshots",
         "no-snapshots": "Ainda não há snapshots"
     },
+    "local-backup": {
+        "title": "Backup da campanha local",
+        "text": "Esta campanha está armazenada apenas neste navegador. Janelas anônimas ou a limpeza dos dados de navegação podem removê-la.",
+        "backup": "Backup",
+        "backup-text": "Copie este link e guarde-o em um lugar seguro. O link contém a campanha como ela está agora, então copie um novo após cada sessão.",
+        "copy": "Copiar link",
+        "restore": "Restaurar",
+        "restore-text": "Cole um link de backup para restaurar a campanha.",
+        "paste": "Cole um link de backup",
+        "replace-title": "Substituir a campanha local?",
+        "replace": "Substituir",
+        "confirm": "Isso substitui sua campanha local atual pela campanha deste link.",
+        "invalid": "Este não é um link de backup válido."
+    },
     "Characters": "Personagens",
     "Character sheet": "Ficha do personagem",
     "Party sheet": "Ficha do grupo",

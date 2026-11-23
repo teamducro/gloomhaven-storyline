@@ -360,6 +360,20 @@ export default {
         "only-owner": "Seuls les propriétaires de cette campagne peuvent gérer les instantanés",
         "no-snapshots": "Il n'y a pas encore d'instantanés"
     },
+    "local-backup": {
+        "title": "Sauvegarde de la campagne locale",
+        "text": "Cette campagne est uniquement stockée dans ce navigateur. La navigation privée ou la suppression de vos données de navigation peuvent la supprimer.",
+        "backup": "Sauvegarde",
+        "backup-text": "Copiez ce lien et conservez-le en lieu sûr. Le lien contient la campagne dans son état actuel, copiez-en donc un nouveau après chaque session.",
+        "copy": "Copier le lien",
+        "restore": "Restaurer",
+        "restore-text": "Collez un lien de sauvegarde pour restaurer la campagne.",
+        "paste": "Collez un lien de sauvegarde",
+        "replace-title": "Remplacer la campagne locale ?",
+        "replace": "Remplacer",
+        "confirm": "Ceci remplace votre campagne locale actuelle par la campagne de ce lien.",
+        "invalid": "Ce lien de sauvegarde n'est pas valide."
+    },
     "Characters": "Personnages",
     "Character sheet": "Fiche de personnage",
     "Party sheet": "Fiche de Compagnie",

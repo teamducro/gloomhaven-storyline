@@ -17,28 +17,24 @@ export default class ShareState {
         ];
     }
 
-    loadNewLink(version, id, compressed) {
-        // version incompatible
-        if (this.version < version) {
+    // The campaign of a shared link, or false when the link is incompatible
+    decodeLink(version, id, compressed) {
+        if (this.version < version || this.compatibleIds.includes(id) === false) {
             return false;
         }
 
-        // local storage id incompatible
-        if (this.compatibleIds.includes(id) === false) {
-            return false;
-        }
+        return this.decodeNewLink(compressed);
+    }
 
+    importLink(id, decoded) {
         app.switchLocal(id);
-        const decoded = this.decodeNewLink(compressed);
-
-        // decoding failed
-        if (!decoded) {
-            return false;
-        }
-
         store.set(id, decoded);
+    }
 
-        return true;
+    // A fresh boot stores default scenarios and achievements, those aren't progress worth asking about
+    hasProgress(id) {
+        return Object.entries(store.get(id) || {}).some(([key, value]) => value !== null
+            && (/^(sheet|campaign-|character-|building-)/.test(key) || value.state === 'complete'));
     }
 
     loadOldLink() {
@@ -92,6 +88,11 @@ export default class ShareState {
 
     link(id = 'local', path = 'story', game = 'gh') {
         return `${this.url()}#/shared/${this.version}/${id}/${this.encode()}/${path}/${game}`;
+    }
+
+    // Route of a pasted share link, e.g. '/shared/1/local/<data>/story/gh'
+    sharedPath(link) {
+        return link?.trim().match(/#(\/shared\/\d+\/[^/]+\/[^/]+.*)$/)?.[1] || null;
     }
 
     encodeMap() {

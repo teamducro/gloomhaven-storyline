@@ -360,6 +360,20 @@ export default {
         "only-owner": "Solo los propietarios de esta campaña pueden administrar instantáneas",
         "no-snapshots": "Aún no hay instantáneas"
     },
+    "local-backup": {
+        "title": "Copia de seguridad de la campaña local",
+        "text": "Esta campaña solo está guardada en este navegador. Las ventanas privadas o borrar los datos de navegación pueden eliminarla.",
+        "backup": "Copia de seguridad",
+        "backup-text": "Copia este enlace y guárdalo en un lugar seguro. El enlace contiene la campaña tal como está ahora, así que copia uno nuevo después de cada sesión.",
+        "copy": "Copiar enlace",
+        "restore": "Restaurar",
+        "restore-text": "Pega un enlace de copia de seguridad para restaurar la campaña.",
+        "paste": "Pega un enlace de copia de seguridad",
+        "replace-title": "¿Reemplazar la campaña local?",
+        "replace": "Reemplazar",
+        "confirm": "Esto reemplaza tu campaña local actual por la campaña de este enlace.",
+        "invalid": "Este no es un enlace de copia de seguridad válido."
+    },
     "Characters": "Personajes",
     "Character sheet": "Hoja de Personaje",
     "Party sheet": "Hoja de Grupo",

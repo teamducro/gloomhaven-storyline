@@ -364,6 +364,20 @@ export default {
         "only-owner": "Only owners of this campaign can manage snapshots",
         "no-snapshots": "There are no snapshots yet"
     },
+    "local-backup": {
+        "title": "Local campaign backup",
+        "text": "This campaign is only stored in this browser. Private windows or clearing your browsing data may remove it.",
+        "backup": "Backup",
+        "backup-text": "Copy this link and keep it somewhere safe. The link holds the campaign as it is now, so copy a new one after each session.",
+        "copy": "Copy link",
+        "restore": "Restore",
+        "restore-text": "Paste a backup link to restore the campaign.",
+        "paste": "Paste a backup link",
+        "replace-title": "Replace local campaign?",
+        "replace": "Replace",
+        "confirm": "This replaces your current local campaign with the campaign from this link.",
+        "invalid": "This is not a valid backup link."
+    },
     "Characters": "Characters",
     "Character sheet": "Character sheet",
     "Party sheet": "Party sheet",
