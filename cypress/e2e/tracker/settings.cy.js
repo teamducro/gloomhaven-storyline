@@ -39,7 +39,7 @@ describe('Settings', () => {
         cy.visit('/tracker/#/settings');
         cy.get('@link').then(link => cy.get('[data-test="restore-link"]').type(link, {delay: 0}));
         cy.get('[data-test="restore-backup"]').click();
-        cy.get('.mdc-dialog--open').contains('Confirm').click();
+        cy.get('[data-test="shared-replace"]').click();
 
         // Then the backed up campaign is back
         cy.url().should('include', '#/story');

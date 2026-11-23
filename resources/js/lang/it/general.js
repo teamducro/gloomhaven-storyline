@@ -369,7 +369,9 @@ export default {
         "restore": "Restore",
         "restore-text": "Paste a backup link to restore the campaign.",
         "paste": "Paste a backup link",
-        "confirm": "This replaces your current local campaign with the campaign from the backup link.",
+        "replace-title": "Replace local campaign?",
+        "replace": "Replace",
+        "confirm": "This replaces your current local campaign with the campaign from this link.",
         "invalid": "This is not a valid backup link."
     },
     "Characters": "Personaggi",

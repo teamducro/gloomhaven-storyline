@@ -69,12 +69,8 @@ export default {
                 return;
             }
 
-            this.$bus.$emit('open-confirm', {
-                title: this.$t('local-backup.restore'),
-                message: this.$t('local-backup.confirm'),
-                // Shared.vue imports the link, the same as opening it
-                callback: () => this.$router.push(path),
-            });
+            // Shared.vue asks before it replaces a campaign with progress
+            this.$router.push(path);
         },
     }
 }
