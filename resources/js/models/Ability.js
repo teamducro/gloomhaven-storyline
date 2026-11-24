@@ -31,10 +31,6 @@ class Item {
     get variation_images() {
         return this.variations.map(variation => `/img/abilities/${this.game}/${this.character_id}/${variation}-${this.code}.jpg`);
     }
-
-    get back() {
-        return `/img/abilities/${this.game}/${this.character_id}/${this.character_id}-back.png`;
-    }
 }
 
 Object.assign(Item.prototype, UsesTranslations);

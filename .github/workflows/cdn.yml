@@ -1,0 +1,35 @@
+name: Sync images to the CDN
+
+on:
+  push:
+    branches: [master]
+    paths: ['resources/img/**']
+  workflow_dispatch:
+
+concurrency: cdn
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install s3cmd
+        run: pipx install s3cmd
+
+      # `npm run cdn` reads ~/.s3cfg, like a local sync.
+      - name: Configure DigitalOcean Spaces
+        env:
+          ACCESS_KEY: ${{ secrets.SPACES_ACCESS_KEY }}
+          SECRET_KEY: ${{ secrets.SPACES_SECRET_KEY }}
+        run: |
+          cat > ~/.s3cfg <<EOF
+          [default]
+          access_key = $ACCESS_KEY
+          secret_key = $SECRET_KEY
+          host_base = ams3.digitaloceanspaces.com
+          host_bucket = %(bucket)s.ams3.digitaloceanspaces.com
+          EOF
+
+      - name: Sync resources/img
+        run: npm run cdn

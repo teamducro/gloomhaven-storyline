@@ -5,10 +5,11 @@ const gameData = new GameData();
 class Card {
 
     constructor(str, game) {
-        const parts = str.split('-');
-        this.id = parts[1];
-        this.type = parts[0].toUpperCase(); // R, C, Q, RIFT, SR, SO, WR, WO, B
-        this._title = parts.length > 2 ? parts[2] : null;
+        // TYPE-ID[-Title]: ids can hold a dash (CS class quests "aa-001"), titles start with a letter.
+        const [, type, id, title] = str.match(/^([^-]+)-(.+?)(?:-(\D.*))?$/);
+        this.id = id;
+        this.type = type.toUpperCase(); // R, C, Q, RIFT, SR, SO, WR, WO, B
+        this._title = title ?? null;
         this.game = game;
     }
 
