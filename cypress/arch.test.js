@@ -166,11 +166,13 @@ test('every image the game data points to exists', () => {
     const monsters = Object.values(require('../resources/js/monster-images.json')).flatMap(Object.values)
         .flatMap(image => [image, image.replace('/', '/thumbs/')]).map(image => `/img/monsters/${image}`);
 
-    // Only the originals: the webp component falls back to them when a .webp is missing.
+    // The webp component loads the .webp where the browser supports it, the original otherwise.
     const missing = [...new Set([...images, ...monsters])]
-        .filter(image => !knownMissing.includes(image) && !fs.existsSync(img + image));
+        .filter(image => !knownMissing.includes(image))
+        .flatMap(image => [image, image.replace(/\.\w+$/, '.webp')])
+        .filter(image => !fs.existsSync(img + image));
 
-    assert.deepEqual(missing, []);
+    assert.deepEqual(missing, [], 'a missing .webp: `cwebp -q 75 <image> -o <image>.webp`');
 });
 
 test('the persisted campaign format is unchanged', () => {

@@ -12,4 +12,4 @@ paths:
 - Avoid `cy.wait(ms)`; where an animation forces one, say why in a comment.
 - Checks that need no browser (data, source rules) go in `cypress/arch.test.js`, run by `npm run test:arch`.
 - Specs listed in `.github/workflows/smoke-prod.yml` also run against production (daily, and after a deploy) with `readOnly`: every unstubbed write fails, as in CI. Keep them host-agnostic: match `Cypress.config('baseUrl')`, never `localhost`.
-- Images: `arch.test.js` checks every image the game data points to exists in `resources/img` (it mirrors the models' path logic; update both together). `cypress/cdn.test.js` (`npm run test:cdn`, needs `CDN_URL`) checks every file in `resources/img` is on the CDN, in the prod smoke workflow; `cdn.yml` syncs it on a merge to master.
+- Images: `arch.test.js` checks every image the game data points to exists in `resources/img`, with a `.webp` (`cwebp -q 75`, the default the others use) (it mirrors the models' path logic; update both together). `cypress/cdn.test.js` (`npm run test:cdn`, needs `CDN_URL`) checks every file in `resources/img` is on the CDN, in the prod smoke workflow; `cdn.yml` syncs it on a merge to master.
