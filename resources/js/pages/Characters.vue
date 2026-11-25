@@ -162,7 +162,7 @@
                                                       :character="character"
                                                       :playerIndex="playerIndex"/>
 
-                                <card-stack v-if="character.hasAbilities" @click="selectAbilities(character.uuid, true)" :src="abilityBackImage()"
+                                <card-stack v-if="character.hasAbilities" @click="selectAbilities(character.uuid, true)" :src="abilityBack"
                                             :width="20" class="cursor-pointer"/>
                             </div>
 
@@ -301,7 +301,7 @@ import Character from "../models/Character";
 import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
-import AbilityRepository from "../repositories/AbilityRepository";
+import Ability from "../models/Ability";
 import store from "store/dist/store.modern";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
@@ -346,6 +346,9 @@ export default {
         this.$listen('select-character', this.select);
     },
     computed: {
+        abilityBack() {
+            return Ability.back(this.character);
+        },
         Game() {
             return Game
         },
@@ -562,9 +565,6 @@ export default {
         rerender() {
             this.refreshInputFields();
             this.sheetHash = this.sheet.makeHash();
-        },
-        abilityBackImage() {
-            return new AbilityRepository().abilities(this.character).first().back;
         },
         openCharacterMat() {
             this.$bus.$emit('open-character-mat', this.character);

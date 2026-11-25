@@ -32,8 +32,9 @@ class Item {
         return this.variations.map(variation => `/img/abilities/${this.game}/${this.character_id}/${variation}-${this.code}.jpg`);
     }
 
-    get back() {
-        return `/img/abilities/${this.game}/${this.character_id}/back.jpg`;
+    // Static: the character sheet shows it without loading the character's abilities.
+    static back(character) {
+        return `/img/abilities/${character.game}/${character.id}/back.jpg`;
     }
 }
 
