@@ -301,6 +301,7 @@ import Character from "../models/Character";
 import CharacterRepository from "../repositories/CharacterRepository";
 import {MDCTextField} from "@material/textfield/component";
 import ItemRepository from "../repositories/ItemRepository";
+import AbilityRepository from "../repositories/AbilityRepository";
 import store from "store/dist/store.modern";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
@@ -563,7 +564,7 @@ export default {
             this.sheetHash = this.sheet.makeHash();
         },
         abilityBackImage() {
-            return `/img/abilities/${this.character.game}/${this.character.id}/back.jpg`;
+            return new AbilityRepository().abilities(this.character).first().back;
         },
         openCharacterMat() {
             this.$bus.$emit('open-character-mat', this.character);
