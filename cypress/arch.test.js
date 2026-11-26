@@ -153,3 +153,70 @@ test('every bus event has an emitter and a listener', () => {
     assert.deepEqual([...emitted].filter(event => !listened.has(event)), [], 'emitted, never listened to');
     assert.deepEqual([...listened].filter(event => !emitted.has(event)), [], 'listened to, never emitted');
 });
+
+test('component file names are unique', () => {
+    const names = sources.filter(file => file.startsWith('components/') && file.endsWith('.vue')).map(file => path.basename(file));
+
+    assert.deepEqual(names.filter((name, index) => names.indexOf(name) !== index), [], 'components register globally by file name');
+});
+
+test('components and pages use global components without importing them', () => {
+    // Picked dynamically with `<component :is>`, so they need the import.
+    const allowed = ['components/modals/BuildingModal.vue'];
+    const offenders = sources
+        .filter(file => /^(components|pages)\//.test(file) && !allowed.includes(file))
+        .filter(file => /from\s+['"][^'"]*components\/[^'"]+\.vue['"]/.test(read(file)));
+
+    assert.deepEqual(offenders, []);
+});
+
+test('every material icon is in the font subset', () => {
+    const fonts = fs.readFileSync(path.join(__dirname, '../resources/sass/_fonts.scss'), 'utf8');
+    const subset = fonts.match(/icon_names=([\w,]+)/)[1].split(',');
+    const used = new Set(sources.flatMap(file => [...read(file).matchAll(/material-icons[^>]*>\s*(\w+)\s*</g)].map(match => match[1])));
+
+    assert.deepEqual([...used].filter(icon => !subset.includes(icon)), [], 'add it to icon_names in _fonts.scss (see the comment there)');
+});
+
+// Topic files are plain object literals; `{locale}.js` spreads general and storyline at the top and nests the rest.
+const lang = path.join(root, 'lang');
+const messages = locale => Object.fromEntries(fs.readdirSync(path.join(lang, locale))
+    .filter(file => file !== `${locale}.js`)
+    .map(file => [path.basename(file, '.js'),
+        new Function(`return ${fs.readFileSync(path.join(lang, locale, file), 'utf8').replace('export default', '')}`)()]));
+const flatten = (object, prefix = '') => Object.entries(object).flatMap(([key, value]) => value && typeof value === 'object'
+    ? flatten(value, `${prefix}${key}.`)
+    : [[`${prefix}${key}`, value]]);
+
+test('every locale has the keys, tokens and plural forms of English', () => {
+    const english = Object.fromEntries(flatten(messages('en')));
+    const tokens = text => (String(text).match(/\{\w+\}/g) || []).sort().join();
+    const broken = [];
+
+    fs.readdirSync(lang).filter(locale => locale !== 'en').forEach(locale => {
+        const translated = Object.fromEntries(flatten(messages(locale)));
+        const keys = new Set([...Object.keys(english), ...Object.keys(translated)]);
+
+        keys.forEach(key => {
+            if (!(key in english) || !(key in translated)) {
+                broken.push(`${locale} ${key}: ${key in english ? 'missing' : 'not in English'}`);
+            } else if (tokens(english[key]) !== tokens(translated[key])) {
+                broken.push(`${locale} ${key}: tokens differ`);
+            } else if (String(english[key]).split('|').length !== String(translated[key]).split('|').length) {
+                broken.push(`${locale} ${key}: plural forms differ`);
+            }
+        });
+    });
+
+    assert.deepEqual(broken, []);
+});
+
+test('every translation key used in the source exists in English', () => {
+    const {general, storyline, ...namespaces} = messages('en');
+    const english = {...general, ...storyline, ...namespaces};
+    // vue-i18n tries the key as a path first, then as a literal.
+    const exists = key => key in english || key.split('.').reduce((value, part) => value?.[part], english) !== undefined;
+    const used = new Set(sources.flatMap(file => [...read(file).matchAll(/\$t\(\s*'([^'{]+)'\s*[,)]/g)].map(match => match[1])));
+
+    assert.deepEqual([...used].filter(key => !exists(key)), [], 'add the key to lang/en and, in English, to every other locale');
+});

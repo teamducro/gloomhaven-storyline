@@ -306,11 +306,9 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
 import ItemAvailability from "../services/ItemAvailability";
 import Helpers from "../services/Helpers";
-import TextField from "../components/elements/TextField.vue";
 import {Game} from "../models/Game";
 
 export default {
-    components: {TextField},
     inject: ['appData'],
     mixins: [GetCampaignName, SheetCalculations],
     data() {
