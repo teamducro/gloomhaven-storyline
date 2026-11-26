@@ -283,6 +283,7 @@ export default {
     "Add Campaign": "Dodaj kampanię",
     "Your campaign has been synced!": "Twoja kampania została zsynchronizowana!",
     "sync-conflict": "Ktoś inny zaktualizował to w tej samej chwili, jego zmiana została zachowana: {resources}",
+    "update-required": "This version of the app is outdated and can no longer save to the shared campaign. Close all tabs of the app and open it again to update.",
     "the Party Sheet": "dziennik drużyny",
     "the Campaign Sheet": "arkusz kampanii",
     "a character": "postać",

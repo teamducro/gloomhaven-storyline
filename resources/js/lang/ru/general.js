@@ -283,6 +283,7 @@ export default {
     "Add Campaign": "Добавить кампанию",
     "Your campaign has been synced!": "Ваша кампания синхронизирована!",
     "sync-conflict": "Кто-то другой обновил это в тот же момент, сохранено его изменение: {resources}",
+    "update-required": "This version of the app is outdated and can no longer save to the shared campaign. Close all tabs of the app and open it again to update.",
     "the Party Sheet": "бланк отряда",
     "the Campaign Sheet": "бланк кампании",
     "a character": "персонаж",

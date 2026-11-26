@@ -261,4 +261,66 @@ describe('Campaigns', () => {
         });
     });
 
+    describe('Syncing campaigns', () => {
+        const remote = {id: 8, name: 'Synced', data: {}, games: ['gh'], expires_at: '2099-01-01', updated_at: '2026-01-01T00:00:00Z'};
+
+        // A shared campaign edited on this device after the server copy: loading it PUTs the local progress.
+        function visitWithNewerLocalProgress() {
+            utilities.startServer();
+            cy.intercept('GET', '**/user', {statusCode: 500});
+            cy.intercept('GET', '**/stories', {statusCode: 500});
+            cy.intercept('GET', '**/stories/8', {body: remote});
+            cy.visit('/');
+            cy.window().then((win) => {
+                win.localStorage.setItem('token', JSON.stringify('secret'));
+                win.localStorage.setItem('user', JSON.stringify({id: 1, name: 'Test', email: 'a@b.c', is_patron: false}));
+                win.localStorage.setItem('stories', JSON.stringify([{
+                    ...remote, is_shared: true, read_only: false, token: 'shared-token', hash: 'x',
+                    updated_at: '2026-06-01T00:00:00Z', data: {sheet: {notes: 'Unsynced notes'}}
+                }]));
+                win.localStorage.setItem('campaignId', JSON.stringify('_8'));
+                win.localStorage.setItem('_8', JSON.stringify({sheet: {notes: 'Unsynced notes'}}));
+            });
+            cy.visit('/tracker/#/campaigns');
+        }
+
+        it('It sends the client version with API requests', () => {
+            // Given the API accepts the update
+            cy.intercept('PUT', '**/stories/8', {body: {...remote, updated_at: '2026-06-01T00:00:00Z'}}).as('updateStory');
+
+            // When the local progress is synced
+            visitWithNewerLocalProgress();
+
+            // Then the request carries the package.json version
+            cy.readFile('package.json').then((pkg) => {
+                cy.wait('@updateStory').its('request.headers').then((headers) => {
+                    expect(headers['x-client-version']).to.equal(pkg.version);
+                    cy.log(`PUT stories/8 X-Client-Version: ${headers['x-client-version']}`);
+                });
+            });
+            cy.screenshot('x-client-version-header', {capture: 'runner'});
+        });
+
+        it('It reloads once and then asks to update when the API refuses the outdated version', () => {
+            // Given the API refuses this version
+            cy.intercept('PUT', '**/stories/8', {statusCode: 426, body: {message: 'Upgrade Required'}}).as('updateStory');
+            let loads = 0;
+            cy.on('window:load', (win) => win.location.pathname.startsWith('/tracker') && loads++);
+
+            // When the local progress is synced
+            visitWithNewerLocalProgress();
+
+            // Then the app reloads for the new build, is refused again and asks to update, keeping the local progress
+            cy.wait('@updateStory');
+            cy.wait('@updateStory');
+            cy.contains('.toast', 'This version of the app is outdated');
+            cy.window().then((win) => {
+                expect(loads).to.equal(2);
+                expect(JSON.parse(win.localStorage.getItem('_8')).sheet.notes).to.equal('Unsynced notes');
+                expect(JSON.parse(win.localStorage.getItem('stories'))[0].data.sheet.notes).to.equal('Unsynced notes');
+            });
+            cy.screenshot('426-reload-then-update-toast', {capture: 'runner'});
+        });
+    });
+
 });

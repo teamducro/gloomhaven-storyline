@@ -283,6 +283,7 @@ export default {
     "Add Campaign": "新增戰役",
     "Your campaign has been synced!": "你的戰役已同步！",
     "sync-conflict": "同一時間被其他人更新，已保留對方的變更：{resources}",
+    "update-required": "This version of the app is outdated and can no longer save to the shared campaign. Close all tabs of the app and open it again to update.",
     "the Party Sheet": "隊伍表",
     "the Campaign Sheet": "戰役表",
     "a character": "一名角色",

@@ -283,6 +283,7 @@ export default {
     "Add Campaign": "เพิ่มแคมเปญ",
     "Your campaign has been synced!": "แคมเปญของคุณซิงค์แล้ว!",
     "sync-conflict": "มีผู้อื่นอัปเดตในเวลาเดียวกัน การเปลี่ยนแปลงของเขาถูกเก็บไว้: {resources}",
+    "update-required": "This version of the app is outdated and can no longer save to the shared campaign. Close all tabs of the app and open it again to update.",
     "the Party Sheet": "แผ่นกลุ่ม",
     "the Campaign Sheet": "แผ่นแคมเปญ",
     "a character": "ตัวละคร",

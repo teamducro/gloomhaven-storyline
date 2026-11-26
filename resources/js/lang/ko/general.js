@@ -283,6 +283,7 @@ export default {
     "Add Campaign": "캠페인 추가",
     "Your campaign has been synced!": "캠페인이 동기화되었습니다!",
     "sync-conflict": "동시에 다른 사람이 수정했으며, 그 사람의 변경이 유지되었습니다: {resources}",
+    "update-required": "This version of the app is outdated and can no longer save to the shared campaign. Close all tabs of the app and open it again to update.",
     "the Party Sheet": "파티 기록지",
     "the Campaign Sheet": "캠페인 기록지",
     "a character": "캐릭터",

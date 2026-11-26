@@ -283,6 +283,7 @@ export default {
     "Add Campaign": "Kampány hozzáadása",
     "Your campaign has been synced!": "Kampányod szinkronizálva",
     "sync-conflict": "Valaki más ugyanabban a pillanatban frissítette, az ő módosítása maradt meg: {resources}",
+    "update-required": "This version of the app is outdated and can no longer save to the shared campaign. Close all tabs of the app and open it again to update.",
     "the Party Sheet": "a Csapat jegyzet",
     "the Campaign Sheet": "a Kampány jegyzet",
     "a character": "egy karakter",

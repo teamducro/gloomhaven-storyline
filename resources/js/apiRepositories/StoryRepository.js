@@ -1,6 +1,7 @@
 import store from "store/dist/store.modern";
 import ApiRepository from "./ApiRepository";
 import Story from "../apiModels/Story";
+import reloadForNewBuild from "../services/app/reloadForNewBuild";
 
 export default class StoryRepository extends ApiRepository {
     async stories(token = null) {
@@ -66,6 +67,14 @@ export default class StoryRepository extends ApiRepository {
             .catch(e => {
                 if (this.isDeleted(e)) {
                     this.removeDeleted(story);
+                    return;
+                }
+
+                // The API refuses writes from outdated builds; the local progress stays and is sent by the new build.
+                if (e.response?.status === 426) {
+                    if (!reloadForNewBuild()) {
+                        window.app.$bus.$emit('toast', window.app.$t('update-required'), false);
+                    }
                     return;
                 }
 

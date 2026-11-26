@@ -283,6 +283,7 @@ export default {
     "Add Campaign": "Adicionar Campanha",
     "Your campaign has been synced!": "Sua campanha foi sincronizada!",
     "sync-conflict": "Atualizado por outra pessoa no mesmo momento. A alteração dela foi mantida: {resources}",
+    "update-required": "This version of the app is outdated and can no longer save to the shared campaign. Close all tabs of the app and open it again to update.",
     "the Party Sheet": "a Ficha do Grupo",
     "the Campaign Sheet": "a Ficha da Campanha",
     "a character": "um personagem",
