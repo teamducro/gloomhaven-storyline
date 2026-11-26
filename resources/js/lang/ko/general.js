@@ -270,6 +270,7 @@ export default {
     "Transfer": "이전",
     "Transfer to": "이전 대상",
     "Copied": "복사됨",
+    "Could not copy": "Could not copy",
     "Create snapshot": "스냅샷 만들기",
     "Reset campaign": "캠페인 초기화",
     "Change log": "변경 내역",

@@ -315,4 +315,30 @@ describe('Items', () => {
         utilities.closeModel();
         cy.get('#items').contains('Abyss Axe');
     });
+
+    it('It shows a treasure text whose item reference doesn\'t exist', () => {
+        // Given Forgotten Circles scenario 102 is unlocked, which needs "Knowledge is Power" twice
+        cy.visit('/tracker');
+        utilities.switchGame('fc');
+        cy.window().then((win) => {
+            const campaignData = JSON.parse(win.localStorage.getItem(win.app.campaignId));
+            [96, 97].forEach(id => campaignData['scenario-fc-' + id] = {state: 'complete'});
+            campaignData['scenario-fc-98'] = {state: 'complete', choice: '102,103', promptChoice: 1};
+            campaignData['scenario-fc-102'] = {state: 'incomplete'};
+            campaignData['achievement-GKIP'] = {awarded: true, count: 2, lost: false};
+            campaignData['achievement-GKIP2'] = {awarded: true, count: 1, lost: false};
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(campaignData));
+        });
+        cy.reload();
+
+        // When treasure 86 is looted, whose text reads "(see page 25 of the main book)" like an item id
+        utilities.openScenario(102);
+        cy.get('.mdc-dialog--open').contains('Bazaar of Knowledge');
+        cy.get('.mdc-dialog--open button').contains('Show treasures').click();
+        cy.get('#treasure-86').parent().click();
+
+        // Then its text shows and no item design is stored for it
+        cy.get('#scenario-content').contains('Forecast of the Inevitable');
+        cy.window().its('app.campaignData.sheet.itemDesigns').should('not.have.property', 'page 25 of the main book');
+    });
 });

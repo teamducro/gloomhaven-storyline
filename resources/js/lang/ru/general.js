@@ -270,6 +270,7 @@ export default {
     "Transfer": "Перенести",
     "Transfer to": "Перенести на",
     "Copied": "Скопировано",
+    "Could not copy": "Could not copy",
     "Create snapshot": "Создать снимок",
     "Reset campaign": "Обнулить кампанию",
     "Change log": "История изменений",

@@ -270,6 +270,7 @@ export default {
     "Transfer": "Küldés",
     "Transfer to": "Küldés ide:",
     "Copied": "Másolva",
+    "Could not copy": "Could not copy",
     "Create snapshot": "Pillanatkép készítése",
     "Reset campaign": "Kampány újraindítása",
     "Change log": "Változásnapló",

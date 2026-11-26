@@ -274,6 +274,7 @@ export default {
     "Transfer": "Transfer",
     "Transfer to": "Transfer to",
     "Copied": "Copied",
+    "Could not copy": "Could not copy",
     "Create snapshot": "Create snapshot",
     "Reset campaign": "Reset campaign",
     "Change log": "Change log",

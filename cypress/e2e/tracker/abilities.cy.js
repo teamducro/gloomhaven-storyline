@@ -191,4 +191,24 @@ describe('Abilities', () => {
         cy.get('#available-sentient-growth').should('not.exist');
     });
 
+    it('It shows the Bear reference card in the stacked deck', () => {
+        // Given a Beast Tyrant
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            const campaignData = JSON.parse(win.localStorage.getItem(win.app.campaignId));
+            campaignData.sheet = {...campaignData.sheet, characterUnlocks: {...campaignData.sheet?.characterUnlocks, BT: true}};
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(campaignData));
+        });
+        cy.reload();
+        utilities.openAbilities('Beast Tyrant');
+        cy.window().then((win) => cy.spy(win.console, 'error').as('consoleError'));
+
+        // When the Bear reference card, which has no initiative, is added to the deck
+        cy.get('#available-bear-reference').click();
+
+        // Then the stacked deck shows it
+        cy.get('#deck-bear-reference').should('exist');
+        cy.get('[id^="deck-"]').should('have.length', 1);
+        cy.get('@consoleError').should('not.have.been.called');
+    });
 });

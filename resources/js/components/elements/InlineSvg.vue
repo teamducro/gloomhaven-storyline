@@ -21,8 +21,12 @@ export default {
         path: {
             immediate: true,
             async handler(path) {
-                if (!(path in svgs) && lazySvgs[path]) {
-                    svgs[path] = await lazySvgs[path]();
+                if (!svgs[path] && lazySvgs[path]) {
+                    // Undefined when a failed chunk load was suppressed (offline or reloading); retry on the next mount.
+                    const svg = await lazySvgs[path]();
+                    if (svg) {
+                        svgs[path] = svg;
+                    }
                 }
             }
         }

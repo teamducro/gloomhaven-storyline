@@ -99,7 +99,7 @@ export default {
             const itemRewards = gameData.shop('jotl').scenarios;
 
             for (const scenarioId in itemRewards) {
-                if (scenarioRepository.find(scenarioId).isComplete()) {
+                if (scenarioRepository.find(scenarioId)?.isComplete()) {
                     shopItems.push(...expandItems(itemRewards[scenarioId]));
                 }
             }

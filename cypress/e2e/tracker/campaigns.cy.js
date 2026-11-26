@@ -321,4 +321,98 @@ describe('Campaigns', () => {
         });
     });
 
+    describe('Syncing', () => {
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+
+        // A cloud campaign on the party page; broadcasts go to win.storyUpdated instead of Pusher.
+        function visitCloudCampaign(get = {statusCode: 200, body: story}) {
+            cy.intercept('GET', '**/stories/1', get).as('get');
+            cy.visit('/tracker/#/party', {
+                onBeforeLoad: (win) => {
+                    win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+                    win.localStorage.setItem('stories', JSON.stringify([story]));
+                    win.Echo = {private: () => ({listen: (event, callback) => win.storyUpdated = callback})};
+                }
+            });
+            cy.window().should('have.property', 'storyUpdated');
+        }
+
+        const notesOf = (request) => JSON.parse(request.body.data).sheet.notes;
+
+        it('It sends one PUT for several quick edits', () => {
+            // Given a cloud campaign
+            cy.intercept('PUT', '**/stories/1', {statusCode: 200, body: story}).as('put');
+            visitCloudCampaign();
+
+            // When the notes are edited three times in a row
+            cy.get('#notes').type('a').blur().type('b').blur().type('c').blur();
+
+            // Then one PUT holds the last state
+            cy.wait('@put').then(({request}) => expect(notesOf(request)).to.eq('abc'));
+            cy.get('.toast').contains('Progress saved!');
+            cy.get('@put.all').should('have.length', 1);
+        });
+
+        [423, 429, 500].forEach((status) => {
+            it(`It retries a save that failed with ${status}`, () => {
+                // Given the server fails the first save
+                let puts = 0;
+                cy.intercept('PUT', '**/stories/1', (req) => req.reply(puts++ ? {statusCode: 200, body: story} : {statusCode: status, body: {message: 'Busy'}})).as('put');
+                visitCloudCampaign();
+
+                // When the notes are edited
+                cy.get('#notes').type('Retried').blur();
+
+                // Then the save is sent again and succeeds
+                cy.wait('@put').its('response.statusCode').should('eq', status);
+                cy.wait('@put').then(({request}) => expect(notesOf(request)).to.eq('Retried'));
+                cy.get('.toast').contains('Progress saved!');
+            });
+        });
+
+        it('It does not retry a forbidden save', () => {
+            // Given the server refuses the save
+            cy.intercept('PUT', '**/stories/1', {statusCode: 403, body: {message: 'This action is unauthorized.'}}).as('put');
+            visitCloudCampaign();
+
+            // When the notes are edited
+            cy.get('#notes').type('Refused').blur();
+
+            // Then it is sent once
+            cy.wait('@put');
+            cy.get('.toast').contains('Failed to save progress');
+            cy.wait(3000); // longer than the first retry delay (2 s), to show none follows
+            cy.get('@put.all').should('have.length', 1);
+        });
+
+        it('It keeps an unsynced edit when another device saves', () => {
+            // Given an edit the server failed to save
+            cy.intercept('PUT', '**/stories/1', {statusCode: 500, body: {message: 'Error'}}).as('put');
+            visitCloudCampaign();
+            cy.get('#notes').type('Unsynced').blur();
+            cy.wait('@put');
+
+            // When another device saves
+            cy.window().then((win) => win.storyUpdated({story: {...story, data: {sheet: {notes: 'Remote'}}}}));
+
+            // Then the edit is pushed again and not overwritten
+            cy.wait('@put');
+            cy.window().its('app.campaignData.sheet.notes').should('eq', 'Unsynced');
+            cy.get('@get.all').should('have.length', 0);
+        });
+
+        it('It refetches once for a burst of updates, and once more after a rate limit', () => {
+            // Given a cloud campaign whose first refetch is rate limited
+            let gets = 0;
+            visitCloudCampaign((req) => req.reply(gets++ ? {statusCode: 200, body: story} : {statusCode: 429, body: {}}));
+
+            // When five updates arrive at once
+            cy.window().then((win) => [1, 2, 3, 4, 5].forEach(() => win.storyUpdated({})));
+
+            // Then one GET is sent, and after the rate limit one more
+            cy.wait('@get').its('response.statusCode').should('eq', 429);
+            cy.get('@get.all').should('have.length', 1);
+            cy.wait('@get', {timeout: 15000}).its('response.statusCode').should('eq', 200);
+        });
+    });
 });

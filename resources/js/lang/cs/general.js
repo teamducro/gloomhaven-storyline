@@ -270,6 +270,7 @@ export default {
     "Transfer": "Přenést",
     "Transfer to": "Přenést do",
     "Copied": "Zkopírováno",
+    "Could not copy": "Could not copy",
     "Create snapshot": "Vytvořit snímek",
     "Reset campaign": "Resetovat kampaň",
     "Change log": "Seznam změn",

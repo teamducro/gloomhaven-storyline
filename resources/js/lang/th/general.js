@@ -270,6 +270,7 @@ export default {
     "Transfer": "ย้าย",
     "Transfer to": "ย้ายไปที่",
     "Copied": "คัดลอกแล้ว",
+    "Could not copy": "Could not copy",
     "Create snapshot": "สร้างสแนปช็อต",
     "Reset campaign": "รีเซ็ตแคมเปญ",
     "Change log": "บันทึกการเปลี่ยนแปลง",

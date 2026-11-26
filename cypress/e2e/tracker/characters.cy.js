@@ -127,6 +127,69 @@ describe('Character', () => {
         cy.get('button').contains('Restore').should('exist');
     });
 
+    it('It can edit and remove an archived character', () => {
+        // Given a cloud campaign with an abandoned Cragheart
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+        utilities.openCharacter();
+        cy.get('button').contains('Abandon').click();
+        cy.get('#abandon-character').click();
+
+        cy.window().then((win) => {
+            const uuid = Object.keys(win.app.campaignData.sheet.archivedCharacters)[0];
+
+            // When it is selected again from the menu and its gold is changed
+            win.app.$bus.$emit('select-character', uuid);
+            cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('20{enter}');
+
+            // Then the change is stored
+            cy.window().its(`app.campaignData.character-${uuid}.gold`).should('eq', 20);
+
+            // When it is removed
+            cy.get('button').contains('Remove').click();
+            cy.get('.mdc-dialog.mdc-dialog--open button').contains('Remove').click();
+
+            // Then its key is a tombstone and the sheet no longer holds it
+            cy.window().its('app.campaignData').should((campaignData) => {
+                expect(campaignData[`character-${uuid}`]).to.eq(null);
+                expect(campaignData.sheet.archivedCharacters).to.deep.eq({});
+            });
+        });
+    });
+
+    it('It can edit a restored character', () => {
+        // Given a cloud campaign with an abandoned and restored Cragheart
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+        utilities.openCharacter();
+        cy.get('button').contains('Abandon').click();
+        cy.get('#abandon-character').click();
+        cy.get('button').contains('Restore').click();
+
+        cy.window().then((win) => {
+            const uuid = Object.keys(win.app.campaignData.sheet.characters)[0];
+
+            // When it is selected again from the menu and its gold is changed
+            win.app.$bus.$emit('select-character', uuid);
+            cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('30{enter}');
+
+            // Then the change is stored
+            cy.window().its(`app.campaignData.character-${uuid}.gold`).should('eq', 30);
+        });
+    });
+
     it('It adds the class events when a class is unlocked', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);
@@ -582,5 +645,25 @@ describe('Character', () => {
         cy.contains('You may select an additional perk!');
         cy.get('#perk-0-0').click();
         cy.contains('You may select an additional perk!').should('not.exist');
+    });
+
+    it('It reloads once for a class icon of a removed build', () => {
+        // Given a Cragheart, whose icon chunk is gone like after a deploy
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+        cy.intercept('**/js/CH-*.js', {forceNetworkError: true});
+        cy.window().then((win) => win.sessionStorage.removeItem('reloadedForNewBuild'));
+        let loads = 0;
+        cy.on('window:load', () => loads++);
+        // Still missing after the reload: that error is reported instead of reloading again.
+        cy.on('uncaught:exception', (error) => !/dynamically imported module|Importing a module script failed/.test(error.message));
+
+        // When the page loads and shows the icon
+        cy.reload();
+
+        // Then it reloads once more for the new build, and then stays
+        cy.wrap(null).should(() => expect(loads).to.eq(2));
+        cy.wait(2000); // a third load would follow the failed chunk within this time
+        cy.wrap(null).should(() => expect(loads).to.eq(2));
     });
 });

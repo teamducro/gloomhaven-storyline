@@ -270,6 +270,7 @@ export default {
     "Transfer": "轉移",
     "Transfer to": "轉移至",
     "Copied": "已複製",
+    "Could not copy": "Could not copy",
     "Create snapshot": "建立快照",
     "Reset campaign": "重設戰役",
     "Change log": "更新日誌",

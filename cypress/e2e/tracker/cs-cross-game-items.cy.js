@@ -101,4 +101,20 @@ describe('Crimson Scales cross-game items', () => {
             expect(win.app.campaignData['migrated-cs-designs-sheet-cs']).to.be.true;
         });
     });
+
+    it('It shows a Gloomhaven item reward when Gloomhaven is turned off', () => {
+        // Given Gloomhaven is turned off and scenario 6 is complete
+        cy.visit('/tracker?states=1_c-2_c-3_c-4_c-5_c-6_c', {
+            onBeforeLoad: (win) => {
+                const enabled = JSON.parse(win.localStorage.getItem('gamesEnabled') || '{}');
+                win.localStorage.setItem('gamesEnabled', JSON.stringify({...enabled, gh: false}));
+            }
+        });
+
+        // When its scenario modal opens
+        openScenario('Poisoned Water');
+
+        // Then the reward names the item
+        cy.get('#scenario-content').contains('Stun Powder');
+    });
 });
