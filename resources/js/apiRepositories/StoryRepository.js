@@ -135,6 +135,13 @@ export default class StoryRepository extends ApiRepository {
         return remoteStory;
     }
 
+    // Replaces the local copy with the server's, without pushing a newer local copy first.
+    async reload(story) {
+        const response = await this.api.withToken(story.token).get('stories/' + story.id);
+
+        return this.replaceStory(response.data);
+    }
+
     replaceStory(story) {
         const oldStory = this.getStory(story.id);
         story.token = oldStory.token;

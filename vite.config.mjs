@@ -113,7 +113,11 @@ function postBuild(bundle, mainGame, inProduction) {
             }
 
             await replaceInHtml(new RegExp(`/js/${bundle}(-[\\w-]+)?\\.js`, 'g'), `/${entryFile}`);
-            await versionFile(`public/css/${bundle}.css`, inProduction);
+            const css = await versionFile(`public/css/${bundle}.css`, inProduction);
+            if (bundle === 'app') {
+                // Precache the url the page requests: the worker matches the query too.
+                await replace('public/service-worker.js', `'/css/${bundle}.css'`, `'/css/${css}'`);
+            }
             // Both pages reference their hashed entry and versioned css, so any change to either build renews the cache.
             // The website build runs last; the app build sets it too for watch mode.
             await replace('public/service-worker.js', /cache-v-[^']*/, 'cache-v-' + md5(...htmlFiles));
@@ -127,6 +131,8 @@ async function versionFile(path, applyVersion) {
     const to = applyVersion ? file + '?v=' + md5(path) : file;
 
     await replaceInHtml(pattern, to);
+
+    return to;
 }
 
 const htmlFiles = ['public/index.html', 'public/tracker/index.html'];

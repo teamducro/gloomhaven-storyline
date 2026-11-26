@@ -51,6 +51,13 @@
                     <span class="mdc-button__label">{{ $t('Reset campaign') }}</span>
                 </button>
 
+                <button v-if="appData.story" @click="confirmReload" type="button" data-test="reload-campaign"
+                        class="mdc-button mdc-button--raised">
+                    <span class="mdc-button__ripple"></span>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">refresh</i>
+                    <span class="mdc-button__label">{{ $t('Reload from server') }}</span>
+                </button>
+
                 <button v-if="canDelete" @click="confirmDelete" type="button" data-test="delete-campaign"
                         class="mdc-button mdc-button--raised">
                     <span class="mdc-button__ripple"></span>
@@ -80,6 +87,23 @@ export default {
         }
     },
     methods: {
+        confirmReload() {
+            const story = this.appData.story;
+            this.confirm(
+                this.$t('Reload from server'),
+                this.$t('reload-campaign-confirm', {name: story.name}),
+                () => this.reload(story)
+            );
+        },
+        async reload(story) {
+            try {
+                await this.apiStoryRepository.reload(story);
+            } catch (e) {
+                this.$bus.$emit('toast', this.$t('reload-campaign-failed'), false);
+                return;
+            }
+            this.$bus.$emit('campaign-selected', app.campaignId);
+        },
         confirmDelete() {
             const story = this.appData.story;
             this.confirm(

@@ -14,27 +14,14 @@ export function readFontSettings() {
     return defaults;
 }
 
+// Sets the font variables the stylesheet uses; its rules can't be read (not loaded yet, or cross-origin).
 export function applyFont(settings) {
-    const stylesheet = [...document.styleSheets].find(sheet => sheet.href?.includes('/css/app.css'));
-
-    const cssSelectors = ['html, body', '.font-title', '.font-default', 'div[class*="mdc-"]', 'h1, h2, h3', '#storyline text'];
-    const cssSelectorsWithFonts = Object.fromEntries(cssSelectors.map(selector => [selector, settings.current]));
-
-    if (!settings.headers) {
-        cssSelectorsWithFonts['h1, h2, h3'] = titleFont;
-        cssSelectorsWithFonts['.font-title'] = titleFont;
-    }
-
-    if (!settings.storyline) {
-        cssSelectorsWithFonts['#storyline text'] = titleFont;
-    }
-
-    for (let [selector, font] of Object.entries(cssSelectorsWithFonts)) {
-        const cssRule = [...stylesheet.cssRules].find((r) => r.selectorText === selector)
-        if (cssRule) {
-            cssRule.style.setProperty('font-family', font, 'important');
-        }
-    }
+    // Unquoted, so the generic 'sans-serif' option stays generic.
+    const font = settings.current;
+    const style = document.documentElement.style;
+    style.setProperty('--font-default', `${font}, sans-serif`);
+    style.setProperty('--font-title', settings.headers ? `${font}, sans-serif` : `'${titleFont}', Nyala, sans-serif`);
+    style.setProperty('--font-storyline', settings.storyline ? font : `'${titleFont}'`);
 }
 
 export default function getFont() {
