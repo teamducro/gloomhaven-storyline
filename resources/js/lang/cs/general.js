@@ -353,7 +353,10 @@ export default {
     "games-enabled": {
         "title": "Povolené hry",
         "text": "Chcete-li skrýt hry a jejich hrdiny, povolte pouze ty, které vlastníte. Postup se při přepínání zachová.",
-        "packs": "Menší rozšíření"
+        "packs": "Menší rozšíření",
+        "both-editions": "Allow classes of both Gloomhaven editions",
+        "edition-note": "Applies to this campaign ({name}) only. Each edition has its own storyline, sheet and party; switching keeps both.",
+        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings."
     },
     "Please consider purchasing a license": "Zvažte prosím zakoupení licence",
     "Danger zone!": "Nebezpečná zóna!",

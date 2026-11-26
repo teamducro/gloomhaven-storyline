@@ -73,7 +73,7 @@ Add new rules to the game's file. Games without own values copy GH's (jotl, cs p
 
 ## Characters, items, enhancements
 
-- `characters` (own classes per file; `characterOrder`; `GameData.characters()` merges all): `perks[].cards` → attack modifier deck; `masteries`. Starters derive from `starting_group` (`GameData.startingClasses`: groups other than `_locked`/`_addon`; FC adds the GH starters); GH2 personal quests flag `starting` for the opening deck. `character.game` = class origin, `sheet_game` = campaign game.
+- `characters` (own classes per file; `characterOrder`; `GameData.characters()` merges all): `perks[].cards` → attack modifier deck; `masteries`. Starters derive from `starting_group` (`GameData.startingClasses`: groups other than `_locked`/`_addon`; FC adds the starters of the campaign's Gloomhaven edition); GH2 personal quests flag `starting` for the opening deck. `character.game` = class origin, `sheet_game` = campaign game.
 - `sheet.characterUnlocks`: Party page, personal quest (`PersonalQuestValidator`), Envelope X (`xResult`).
 - A ticked personal quest goal unlocks its scenario; unticking never hides it again. Only abandoning does (`PersonalQuestValidator.lockScenarios`), and completed scenarios stay.
 - Class events: `Sheet.addClassEvents(id, 'unlock'|'retire')` on unlock (Party checkbox, personal quest, adding a locked class, CS starting class) and retirement (`CharacterRepository.applyRetirement`); each once per class (`sheet.classEventsAdded`). Lists per class in `classEvents` (GH/FC/CS: unlock/retire, City + Road; GH2: unlock only; FH none).

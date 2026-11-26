@@ -59,7 +59,8 @@ const storage = {
     Sheet: {
         keys: ['sheet', 'sheet-'],
         fields: ['version', 'hash', 'reputation', 'donations', 'prosperityIndex', 'city', 'road', 'rift', 'notes', 'deckOrder',
-            'unlocks', 'scenarioLevel', 'eventHistory', 'factionReputation', 'inspiration', 'imbuement', 'edition', 'itemDesigns',
+            'unlocks', 'scenarioLevel', 'eventHistory', 'factionReputation', 'inspiration', 'imbuement', 'edition', 'bothEditions',
+            'itemDesigns',
             'crossGameItemsEnabled', 'crossGameItems', 'removedItems', 'xResult', 'characterUnlocks', 'characters',
             'archivedCharacters', 'hidePersonalQuests', 'enhancementsEnabled', 'enhancements', 'classEventsAdded'],
     },

@@ -26,6 +26,14 @@
                            :label="$t(edition)"
                            :checked="currentEdition === edition"
                            @changed="selectEdition(edition)"/>
+                    <checkbox-with-label id="both-editions"
+                                         :label="$t('games-enabled.both-editions')"
+                                         v-model:checked="bothEditions"
+                                         :auto-disable="false"
+                                         @change="toggleBothEditions"/>
+                    <p class="text-sm text-gray-400">
+                        {{ $t('games-enabled.edition-note', {name: campaignName}) }}
+                    </p>
                 </div>
             </li>
         </ul>
@@ -53,8 +61,10 @@ import {Game} from "../../../models/Game";
 import {announceEnabledGames, enabledGamesMap} from "../../../services/app/getEnabledGames";
 import Sheet from "../../../models/Sheet";
 import SheetRepository from "../../../repositories/SheetRepository";
+import GetCampaignName from "../../../services/GetCampaignName";
 
 export default {
+    mixins: [GetCampaignName],
     data() {
         return {
             games: [],
@@ -63,6 +73,8 @@ export default {
             disabled: {},
             listKey: '',
             currentEdition: null,
+            bothEditions: false,
+            campaignName: '',
             sheetRepository: new SheetRepository,
         }
     },
@@ -109,8 +121,16 @@ export default {
                 this.$bus.$emit('campaign-selected', app.campaignId);
             }
         },
+        toggleBothEditions() {
+            const sheet = new Sheet({game: Game.gh});
+            sheet.bothEditions = this.bothEditions;
+            sheet.store();
+            this.$bus.$emit('campaign-selected', app.campaignId);
+        },
         setEdition() {
             this.currentEdition = this.sheetRepository.gloomhavenGame();
+            this.bothEditions = !!this.sheetRepository.data(Game.gh)?.bothEditions;
+            this.campaignName = this.getCampaignName();
             // Loading a campaign may enable gh2, re-read so store() doesn't overwrite it
             this.init();
         },

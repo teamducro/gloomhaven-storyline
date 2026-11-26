@@ -116,7 +116,7 @@
                     </div>
                 </div>
 
-                <unlock-characters :sheet="sheet" @change="store"/>
+                <unlock-characters :sheet="sheet"/>
             </div>
 
         </div>

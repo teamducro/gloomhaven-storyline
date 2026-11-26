@@ -353,7 +353,10 @@ export default {
     "games-enabled": {
         "title": "เกมที่เปิดใช้",
         "text": "หากต้องการซ่อนเกมและตัวละครของเกมนั้น ให้เปิดเฉพาะเกมที่คุณมี ความคืบหน้าจะถูกเก็บไว้เมื่อสลับ",
-        "packs": "ภาคเสริมขนาดเล็ก"
+        "packs": "ภาคเสริมขนาดเล็ก",
+        "both-editions": "Allow classes of both Gloomhaven editions",
+        "edition-note": "Applies to this campaign ({name}) only. Each edition has its own storyline, sheet and party; switching keeps both.",
+        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings."
     },
     "Please consider purchasing a license": "โปรดพิจารณาซื้อใบอนุญาต",
     "Danger zone!": "โซนอันตราย!",

@@ -353,7 +353,10 @@ export default {
     "games-enabled": {
         "title": "Jogos Ativados",
         "text": "Para ocultar jogos e seus personagens, ative apenas os que você possui. O progresso é mantido ao alternar.",
-        "packs": "Expansões menores"
+        "packs": "Expansões menores",
+        "both-editions": "Allow classes of both Gloomhaven editions",
+        "edition-note": "Applies to this campaign ({name}) only. Each edition has its own storyline, sheet and party; switching keeps both.",
+        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings."
     },
     "Please consider purchasing a license": "Considere adquirir uma licença",
     "Danger zone!": "Zona de perigo!",

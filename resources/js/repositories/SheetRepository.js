@@ -18,6 +18,11 @@ export default class SheetRepository {
         return this.data(Game.gh)?.edition === 2 ? Game.gh2 : Game.gh;
     }
 
+    // The Gloomhaven editions whose classes the campaign offers
+    gloomhavenClassGames() {
+        return this.data(Game.gh)?.bothEditions ? [Game.gh, Game.gh2] : [this.gloomhavenGame()];
+    }
+
     key(game) {
         switch (game) {
             case Game.gh:
