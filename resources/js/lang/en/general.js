@@ -287,6 +287,7 @@ export default {
     "Add Campaign": "Add Campaign",
     "Your campaign has been synced!": "Your campaign has been synced!",
     "sync-conflict": "Updated by someone else at the same moment, their change was kept: {resources}",
+    "update-required": "This version of the app is outdated and can no longer save to the shared campaign. Close all tabs of the app and open it again to update.",
     "the Party Sheet": "the Party Sheet",
     "the Campaign Sheet": "the Campaign Sheet",
     "a character": "a character",

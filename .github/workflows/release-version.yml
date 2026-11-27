@@ -1,0 +1,30 @@
+name: Release version
+
+# A release tag writes its version to package.json on master and develop; the build sends it as X-Client-Version and
+# tags Sentry with it. The push to master triggers the deploy with the new version.
+on:
+  push:
+    tags: ['[0-9]+.[0-9]+.[0-9]+']
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        branch: [master, develop]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ matrix.branch }}
+          # Pushes to master and develop are restricted to the owner, so GITHUB_TOKEN can't push.
+          token: ${{ secrets.RELEASE_TOKEN }}
+
+      - name: Commit the version
+        run: |
+          npm version "$GITHUB_REF_NAME" --no-git-tag-version --allow-same-version
+          git diff --quiet && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -am "Version $GITHUB_REF_NAME"
+          git push

@@ -13,7 +13,9 @@ window.collect = collect;
 window.axios = axios.create({
     baseURL: import.meta.env.MIX_API_URL,
     withCredentials: true,
-    withXSRFToken: true
+    withXSRFToken: true,
+    // Lets the API refuse writes from builds too old to keep fields they don't know.
+    headers: {'X-Client-Version': __APP_VERSION__}
 });
 
 dayjs.extend(localizedFormat);

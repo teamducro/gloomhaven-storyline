@@ -134,6 +134,10 @@ End-to-end tests use [Cypress](https://www.cypress.io).
   `npx cypress run --config baseUrl=http://localhost:8080 --spec cypress/e2e/tracker/storyline.cy.js`.
 - If Cypress complains that its binary is missing, run `npx cypress install`.
 
+*Releasing*
+
+- Push an `x.y.z` tag: the `Release version` workflow commits it as `version` to `package.json` on master and develop (needs the `RELEASE_TOKEN` secret, a token that may push to both). The tracker sends that version to the API as `X-Client-Version` and tags Sentry events with it.
+
 After changes are made, open a Pull Request into the develop branch for review. 
 
 All content remains under creative commons license BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)

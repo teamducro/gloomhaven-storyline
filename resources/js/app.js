@@ -349,7 +349,11 @@ if (Helpers.inProduction() && import.meta.env.MIX_SENTRY_DSN) {
     Sentry.init({
         app: vueApp,
         dsn: import.meta.env.MIX_SENTRY_DSN,
-        logErrors: false
+        release: 'gloomhaven-storyline@' + __APP_VERSION__,
+        logErrors: false,
+        // Noise from in-app browsers, extensions and the browser's own service worker updates, not from our code.
+        ignoreErrors: ['Java object is gone', 'runtime.sendMessage', 'Failed to update the ServiceWorker'],
+        denyUrls: [/^iabjs:\/\//, /^(chrome|moz|safari|safari-web)-extension:\/\//]
     });
 }
 
