@@ -54,6 +54,17 @@ export default class CharacterRepository {
             .all();
     }
 
+    // The listed id (campaign's edition) of a class, for either edition's id
+    campaignEditionId(id) {
+        return _.findKey(this.editionPairs(), other => other === id) || id;
+    }
+
+    // One class per party, whichever edition
+    partyHasClass(sheet, id) {
+        const listed = this.campaignEditionId(id);
+        return [listed, this.editionPairs()[listed]].some(classId => classId && this.partyHasCharacter(sheet, classId));
+    }
+
     partyHasCharacter(sheet, id) {
         for (const uuid in sheet.characters) {
             if (sheet.characters[uuid].id === id) {
@@ -126,7 +137,7 @@ export default class CharacterRepository {
     }
 
     applyRetirement(sheet, character) {
-        sheet.addClassEvents(character.id, 'retire');
+        sheet.addClassEvents(this.campaignEditionId(character.id), 'retire');
         // GH2e campaign sheet unlock: the first retirement reads section 68.4.
         if (sheet.game === Game.gh2) {
             sheet.unlocks[this.gameData.sectionsGh2().firstRetirementUnlock] = true;

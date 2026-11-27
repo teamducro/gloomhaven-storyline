@@ -208,7 +208,7 @@
                                 </button>
                                 <button v-if="isArchived" type="button"
                                         @click="restore"
-                                        :disabled="appData.read_only || characterRepository.partyHasCharacter(sheet, character.id)"
+                                        :disabled="appData.read_only || characterRepository.partyHasClass(sheet, character.id)"
                                         class="ml-4 mdc-button mdc-button--raised">
                                     <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
@@ -489,7 +489,7 @@ export default {
         },
         create(id) {
             const otherEdition = this.characterRepository.editionPairs()[id];
-            if (otherEdition && !this.partyHasClass([id, otherEdition])) {
+            if (otherEdition && !this.characterRepository.partyHasClass(this.sheet, id)) {
                 this.$refs['choose-edition'].open([id, otherEdition]);
             } else {
                 this.addCharacter(id);
@@ -498,14 +498,14 @@ export default {
         // id: as listed (campaign's edition); chosen: the edition to play. A class in both editions unlocks in both,
         // its events follow the campaign's edition.
         addCharacter(id, chosen = id) {
-            const ids = [id, this.characterRepository.editionPairs()[id]].filter(Boolean);
-            if (this.partyHasClass(ids)) {
+            if (this.characterRepository.partyHasClass(this.sheet, id)) {
                 return;
             }
 
-            const wasLocked = ids.every(classId => !this.sheet.characterUnlocks[classId]);
+            const ids = [id, this.characterRepository.editionPairs()[id]].filter(Boolean);
+            const wasLocked = ids.some(classId => !this.sheet.characterUnlocks[classId]);
             // Unlocking a class, or choosing a Crimson Scales starting class, adds its events.
-            if (wasLocked || this.sheet.game === Game.cs) {
+            if (!this.sheet.characterUnlocks[id] || this.sheet.game === Game.cs) {
                 this.sheet.addClassEvents(id, 'unlock');
             }
             if (wasLocked) {
@@ -518,9 +518,6 @@ export default {
             const character = this.characterRepository.createCharacter(this.sheet, chosen);
             this.select(character.uuid);
             this.store();
-        },
-        partyHasClass(ids) {
-            return ids.some(classId => this.characterRepository.partyHasCharacter(this.sheet, classId));
         },
         openItemModel(id) {
             this.$bus.$emit('open-item', {id: id});

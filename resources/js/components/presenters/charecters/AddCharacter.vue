@@ -89,7 +89,7 @@ export default {
             return !!(this.sheet.characterUnlocks[id] || this.sheet.characterUnlocks[this.editionPairs[id]]);
         },
         inParty(id) {
-            return [id, this.editionPairs[id]].some(classId => classId && this.characterRepository.partyHasCharacter(this.sheet, classId));
+            return this.characterRepository.partyHasClass(this.sheet, id);
         },
         open() {
             this.$refs['add-character'].open()
