@@ -136,6 +136,8 @@ describe('Settings', () => {
         cy.get('#storyline text').first().should((text) => expect(getComputedStyle(text[0]).fontFamily).to.match(/^Arial/));
         cy.visit('/tracker/#/settings');
         assertFonts();
+    });
+
     it('It copies through the fallback when the Clipboard API is blocked', () => {
         // Given the Clipboard API is blocked by a permissions policy
         cy.visit('/tracker/#/settings');
