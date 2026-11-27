@@ -142,17 +142,22 @@ const vueApp = createApp({
     },
     async mounted() {
         this.beforeBoot();
-        await this.loadCampaignData(true);
-        await this.$nextTick();
+        // Before any boot work, so a failed boot can still switch game or campaign.
+        this.$bus.$on('game-selected', this.switchGame);
+        this.$bus.$on('campaign-selected', this.switchCampaign);
+        this.$bus.$on('load-campaign-data', this.loadCampaignData);
+
+        try {
+            await this.loadCampaignData(true);
+            await this.$nextTick();
+        } catch (error) {
+            this.reportBootError(error);
+        }
         await this.campaignsChanged();
 
         (new ShareState).loadOldLink();
 
         document.getElementById('bg').style['background-image'] = `url('${this.baseUrl}/img/background-highres.jpg'), url('${this.baseUrl}/img/background-lowres.jpg')`;
-
-        this.$bus.$on('game-selected', this.switchGame);
-        this.$bus.$on('campaign-selected', this.switchCampaign);
-        this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
         setInitialLanguage();
 
@@ -162,13 +167,15 @@ const vueApp = createApp({
     },
     methods: {
         async campaignsChanged(shouldSync = true) {
-            await Promise.all([
+            const results = await Promise.allSettled([
                 this.fetchAchievements(),
                 this.fetchScenarios(shouldSync),
                 this.fetchItems(),
                 this.fetchBuildings(),
                 this.fetchOverlays(),
             ]);
+            results.filter(result => result.status === 'rejected')
+                .forEach(result => this.reportBootError(result.reason));
 
             this.story = this.stories.firstWhere('campaignId', this.campaignId);
             this.$bus.$emit('campaigns-changed');
@@ -186,9 +193,12 @@ const vueApp = createApp({
             this.scenarioRepository.setQuests(this.scenarios, this.quests);
 
             await this.$nextTick();
-            this.scenarioValidator.validate(shouldSync);
-            this.treasureValidator.validate();
-            this.$bus.$emit('scenarios-updated');
+            try {
+                this.scenarioValidator.validate(shouldSync);
+                this.treasureValidator.validate();
+            } finally {
+                this.$bus.$emit('scenarios-updated');
+            }
 
             return true;
         },
@@ -305,6 +315,10 @@ const vueApp = createApp({
             } catch (e) {
                 // offline
             }
+        },
+        reportBootError(error) {
+            this.$bus.errorHandler(error);
+            this.$bus.$emit('toast', this.$t('boot-error'), false);
         },
         beforeBoot() {
             polyfills();

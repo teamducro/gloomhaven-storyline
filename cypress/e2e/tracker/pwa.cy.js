@@ -83,4 +83,14 @@ describe('PWA', {env: {serviceWorker: true}}, () => {
             }
         });
     });
+
+    it('It precaches the stylesheet url the page requests', () => {
+        // Given
+        cy.request('/tracker/').then(({body: html}) => {
+            const href = html.match(/href="([^"]*\/css\/app\.css[^"]*)"/)[1];
+
+            // Then
+            cy.request('/service-worker.js').its('body').should('include', `'${href}'`);
+        });
+    });
 });

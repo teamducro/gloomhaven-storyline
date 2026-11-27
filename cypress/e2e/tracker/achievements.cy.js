@@ -290,4 +290,55 @@ describe('Achievements', () => {
             cy.get('button').contains('add').should('not.exist');
         });
     });
+
+    describe('Manual achievement awarded without the manual flag', () => {
+        // Campaigns that completed scenario 86 before manual_awarded existed
+        function visitWith(campaignData) {
+            // Seed from the website page, a still running tracker would overwrite the data
+            cy.visit('/');
+            cy.window().then((win) => win.localStorage.setItem('local', JSON.stringify(campaignData)));
+            cy.visit('/tracker/#/story', {onBeforeLoad: (win) => cy.spy(win.console, 'error').as('consoleError')});
+            cy.window().its('app.scenarios').should('exist');
+        }
+
+        function assertNoRangeError() {
+            cy.get('@consoleError').should((spy) => {
+                const rangeErrors = spy.getCalls().filter(call => call.args.some(arg => arg?.name === 'RangeError'));
+                expect(rangeErrors).to.have.length(0);
+            });
+        }
+
+        it('It loads the campaign and heals the flag', () => {
+            // Given
+            visitWith({'achievement-PTPS': {awarded: true, count: 1}, 'scenario-gh-87': {state: 'incomplete'}});
+
+            // Then
+            assertNoRangeError();
+            cy.get('#chapter1').should('exist');
+            utilities.scenarios().then((scenarios) => expect(scenarios.firstWhere('id', 87).state).eq('incomplete'));
+            cy.window().its('app.campaignData.achievement-PTPS.manual_awarded').should('eq', true);
+
+            // When reloaded, Then nothing new is stored
+            cy.window().then((win) => {
+                const stored = win.localStorage.getItem('local');
+                cy.reload();
+                cy.window().its('app.scenarios').should('exist');
+                cy.window().then((win) => expect(win.localStorage.getItem('local')).eq(stored));
+            });
+        });
+
+        it('It loads the campaign when the dragon prompt runs too', () => {
+            // Given scenario 25 is incomplete
+            visitWith({
+                'achievement-PTPS': {awarded: true, count: 1},
+                'scenario-gh-87': {state: 'incomplete'},
+                'scenario-gh-25': {state: 'incomplete'},
+            });
+
+            // Then
+            assertNoRangeError();
+            utilities.scenarios().then((scenarios) => expect(scenarios.firstWhere('id', 87).state).eq('incomplete'));
+            cy.window().its('app.campaignData.achievement-PTPS.manual_awarded').should('eq', true);
+        });
+    });
 });
