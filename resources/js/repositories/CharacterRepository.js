@@ -39,6 +39,21 @@ export default class CharacterRepository {
         return characters.keyBy('id');
     }
 
+    // With both Gloomhaven editions allowed, a class in both pairs by id (BR ↔ BR2): campaign edition's id → other edition's id.
+    // Pairs come from the visible classes, so a class whose twin is hidden (Bladeswarm) stays on its own.
+    editionPairs() {
+        if (!this.sheetRepository.data(Game.gh)?.bothEditions) {
+            return {};
+        }
+
+        const characters = this.get();
+        const isGh2 = this.sheetRepository.gloomhavenGame() === Game.gh2;
+        return characters
+            .filter(character => character.game === Game.gh && characters.get(character.id + '2')?.game === Game.gh2)
+            .mapWithKeys(character => isGh2 ? [character.id + '2', character.id] : [character.id, character.id + '2'])
+            .all();
+    }
+
     partyHasCharacter(sheet, id) {
         for (const uuid in sheet.characters) {
             if (sheet.characters[uuid].id === id) {

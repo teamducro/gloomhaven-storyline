@@ -360,7 +360,10 @@ export default {
         "packs": "Smaller expansions",
         "both-editions": "Allow classes of both Gloomhaven editions",
         "edition-note": "Applies to this campaign ({name}) only. Each edition has its own storyline, sheet and party; switching keeps both.",
-        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings."
+        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings.",
+        "which-edition": "Which edition?",
+        "badge-gh": "1e",
+        "badge-gh2": "2e"
     },
     "Please consider purchasing a license": "Please consider purchasing a license",
     "Danger zone!": "Danger zone!",

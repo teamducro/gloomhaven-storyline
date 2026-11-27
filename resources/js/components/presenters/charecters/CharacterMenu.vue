@@ -45,7 +45,7 @@
             <label v-if="selectedCharacter" for="mobile-character-menu" class="flex items-center">
                 <character-icon class="shrink-0 w-5 mr-2"
                                 :key="'selected-character-icon-'+selectedCharacter.id"
-                                :character="selectedCharacter.id"/>
+                                :character="selectedCharacter"/>
                 <span class="font-title">{{
                         selectedCharacter.name === selectedCharacter.characterName ? $t(selectedCharacter.characterName) : selectedCharacter.name
                     }} {{ abilities ? $t('Abilities') : '' }}</span>
@@ -62,7 +62,7 @@
                             <a @click.stop.prevent="select(character.uuid)" href="#"
                                class="-m-3 p-2 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                                :class="[selected === character.uuid && !abilities ? 'text-white bg-black2-25' : 'text-white2-75']">
-                                <character-icon class="shrink-0 w-5 mr-2" :character="character.id"/>
+                                <character-icon class="shrink-0 w-5 mr-2" :character="character"/>
                                 <span class="overflow-hidden">{{
                                         character.name === character.characterName
                                             ? $t(character.characterName)
@@ -94,7 +94,7 @@
                             <a @click.stop.prevent="select(character.uuid)" href="#"
                                class="-m-3 p-3 flex items-center rounded-md text-base font-medium hover:bg-black2-50 transition ease-in-out duration-150"
                                :class="[selected === character.uuid ? 'text-white bg-black2-25' : 'text-white2-75']">
-                                <character-icon class="shrink-0 w-5 mr-2" :character="character.id"/>
+                                <character-icon class="shrink-0 w-5 mr-2" :character="character"/>
                                 <span>{{
                                         character.name === character.characterName
                                             ? $t(character.characterName)

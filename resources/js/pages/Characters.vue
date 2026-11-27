@@ -38,6 +38,7 @@
             </h1>
 
             <add-character v-if="!appData.read_only" ref="add-character" :sheet="sheet" @create="create"/>
+            <choose-edition ref="choose-edition" @chosen="(chosen, id) => addCharacter(id, chosen)"/>
 
             <div class="sm:mt-4 sm:flex">
                 <character-menu :selected="selected" :abilities="abilities" :sheet="sheet" @select="select"
@@ -487,25 +488,39 @@ export default {
             this.rerender();
         },
         create(id) {
-            if (this.characterRepository.partyHasCharacter(this.sheet, id)) {
+            const otherEdition = this.characterRepository.editionPairs()[id];
+            if (otherEdition && !this.partyHasClass([id, otherEdition])) {
+                this.$refs['choose-edition'].open([id, otherEdition]);
+            } else {
+                this.addCharacter(id);
+            }
+        },
+        // id: as listed (campaign's edition); chosen: the edition to play. A class in both editions unlocks in both,
+        // its events follow the campaign's edition.
+        addCharacter(id, chosen = id) {
+            const ids = [id, this.characterRepository.editionPairs()[id]].filter(Boolean);
+            if (this.partyHasClass(ids)) {
                 return;
             }
 
-            const wasLocked = !this.sheet.characterUnlocks[id];
+            const wasLocked = ids.every(classId => !this.sheet.characterUnlocks[classId]);
             // Unlocking a class, or choosing a Crimson Scales starting class, adds its events.
             if (wasLocked || this.sheet.game === Game.cs) {
                 this.sheet.addClassEvents(id, 'unlock');
             }
             if (wasLocked) {
-                this.sheet.characterUnlocks[id] = true;
+                ids.forEach(classId => this.sheet.characterUnlocks[classId] = true);
                 this.sheet.store();
                 this.scenarioRepository.scenarioValidator.validate();
             } else if (this.sheet.game === Game.cs) {
                 this.sheet.store();
             }
-            const character = this.characterRepository.createCharacter(this.sheet, id);
+            const character = this.characterRepository.createCharacter(this.sheet, chosen);
             this.select(character.uuid);
             this.store();
+        },
+        partyHasClass(ids) {
+            return ids.some(classId => this.characterRepository.partyHasCharacter(this.sheet, classId));
         },
         openItemModel(id) {
             this.$bus.$emit('open-item', {id: id});
