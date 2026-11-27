@@ -58,6 +58,22 @@ describe('Gloomhaven edition', () => {
         });
     });
 
+    it('It keeps the 1st edition when an older client drops the edition from the sheet', () => {
+        utilities.chooseEdition('gh2');
+        cy.visit('/tracker/#/party');
+        cy.get('#character-BR2').uncheck({force: true});
+        cy.window().should((win) => expect(win.app.campaignData['sheet-gh2']).to.exist);
+        utilities.chooseEdition('gh');
+        cy.window().then((win) => {
+            const blob = JSON.parse(win.localStorage.getItem(win.app.campaignId));
+            delete blob.sheet.edition;
+            win.localStorage.setItem(win.app.campaignId, JSON.stringify(blob));
+        });
+
+        cy.reload();
+        cy.window().its('app.game').should('eq', 'gh');
+    });
+
     it('It keeps the edition when the campaign is reset', () => {
         utilities.chooseEdition('gh2');
         cy.get('#both-editions').check({force: true});

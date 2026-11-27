@@ -114,6 +114,12 @@ export default {
             const sheet = new Sheet({game: Game.gh});
             sheet.edition = game === Game.gh2 ? 2 : 1;
             sheet.store();
+            // Older clients drop `edition` from the gh sheet but never write the gh2 sheet, so migrateSheets restores it from this copy
+            if (app.campaignData['sheet-gh2']) {
+                const gh2Sheet = new Sheet({game: Game.gh2});
+                gh2Sheet.edition = sheet.edition;
+                gh2Sheet.store();
+            }
 
             if ([Game.gh, Game.gh2].includes(app.game)) {
                 this.$bus.$emit('game-selected', game);
