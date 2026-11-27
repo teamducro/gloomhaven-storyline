@@ -136,7 +136,7 @@ End-to-end tests use [Cypress](https://www.cypress.io).
 
 *Releasing*
 
-- The build takes its version from the git release tag (`x.y.z`): the tracker sends it to the API as `X-Client-Version` and tags Sentry events with it. Push master together with its tag (`git push --atomic origin master develop --tags`). Netlify's production deploy fetches the tags first (`git fetch --force origin "refs/tags/*:refs/tags/*"`) and fails when the deployed commit has no release tag.
+- Push an `x.y.z` tag: the `Release version` workflow commits it as `version` to `package.json` on master and develop (needs the `RELEASE_TOKEN` secret, a token that may push to both). The tracker sends that version to the API as `X-Client-Version` and tags Sentry events with it.
 
 After changes are made, open a Pull Request into the develop branch for review. 
 
