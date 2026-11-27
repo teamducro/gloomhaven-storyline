@@ -76,6 +76,18 @@ describe('Party FH', () => {
         });
     });
 
+    it('It syncs once per class unlock', () => {
+        utilities.enableGame('fh');
+        utilities.switchGame('fh');
+        cy.visit('/tracker/#/party');
+        cy.window().then((win) => cy.spy(win.app.storySyncer.constructor.prototype, 'store').as('sync'));
+
+        cy.get('#character-IF').check({force: true});
+
+        cy.get('@sync').should('have.been.calledOnce');
+        cy.window().its('app.campaignData.campaign-fh.characterUnlocks.IF').should('eq', true);
+    });
+
     it('It starts new campaigns with four soldiers', () => {
         utilities.enableGame('fh');
         utilities.switchGame('fh');

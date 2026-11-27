@@ -3,10 +3,11 @@ import {Game} from "../../models/Game";
 
 // Runs on load, after app.campaignData is set: building a sheet before then would migrate, and store, an empty campaign.
 export default function migrateSheets(campaignData) {
-    // Only GH2e campaigns have a GH2e sheet, so an older client rewrote the Gloomhaven sheet without the edition it doesn't know.
+    // An older client rewrote the Gloomhaven sheet without the edition it doesn't know. The GH2e sheet keeps a copy once the
+    // edition was switched back to 1st; without one, the GH2e sheet means a GH2e campaign.
     if (campaignData.sheet && !campaignData.sheet.edition && campaignData['sheet-gh2']) {
         const sheet = new Sheet({game: Game.gh});
-        sheet.edition = 2;
+        sheet.edition = campaignData['sheet-gh2'].edition || 2;
         sheet.store();
     }
 

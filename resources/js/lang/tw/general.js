@@ -353,7 +353,10 @@ export default {
     "games-enabled": {
         "title": "已啟用的遊戲",
         "text": "若要隱藏遊戲及其角色，請只啟用你擁有的遊戲。切換時會保留進度。",
-        "packs": "小型擴充"
+        "packs": "小型擴充",
+        "both-editions": "Allow classes of both Gloomhaven editions",
+        "edition-note": "Applies to this campaign ({name}) only. Each edition has its own storyline, sheet and party; switching keeps both.",
+        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings."
     },
     "Please consider purchasing a license": "請考慮購買授權",
     "Danger zone!": "危險區域！",

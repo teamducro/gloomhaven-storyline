@@ -215,7 +215,7 @@
             </div>
 
             <div class="w-full mt-8">
-                <unlock-characters :sheet="sheet" @change="store" :key="'b'+renderX"/>
+                <unlock-characters :sheet="sheet" :key="'b'+renderX"/>
             </div>
 
         </div>

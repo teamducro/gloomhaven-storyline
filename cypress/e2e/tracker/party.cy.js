@@ -391,6 +391,17 @@ describe('Party', () => {
         cy.get('#scenarios').contains('Caravan Escort').should('be.visible');
     });
 
+    it('It syncs once per class unlock', () => {
+        cy.visit('/tracker/#/party');
+        utilities.scrollTo('100%', true);
+        cy.window().then((win) => cy.spy(win.app.storySyncer.constructor.prototype, 'store').as('sync'));
+
+        cy.get('#character-SK').click();
+
+        cy.get('@sync').should('have.been.calledOnce');
+        cy.window().its('app.campaignData.sheet.characterUnlocks.SK').should('eq', true);
+    });
+
     it('It shows lock tooltip on locked party characters and updates after unlock', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);

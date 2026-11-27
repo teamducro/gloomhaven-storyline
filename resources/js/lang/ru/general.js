@@ -353,7 +353,10 @@ export default {
     "games-enabled": {
         "title": "Включённые игры",
         "text": "Чтобы скрыть игры и их персонажей, оставьте включёнными только те, которыми вы владеете. При переключении прогресс сохраняется.",
-        "packs": "Небольшие дополнения"
+        "packs": "Небольшие дополнения",
+        "both-editions": "Allow classes of both Gloomhaven editions",
+        "edition-note": "Applies to this campaign ({name}) only. Each edition has its own storyline, sheet and party; switching keeps both.",
+        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings."
     },
     "Please consider purchasing a license": "Пожалуйста, подумайте о покупке лицензии",
     "Danger zone!": "Опасная зона!",

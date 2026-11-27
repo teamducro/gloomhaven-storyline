@@ -353,7 +353,10 @@ export default {
     "games-enabled": {
         "title": "활성화된 게임",
         "text": "게임과 해당 캐릭터를 숨기려면 보유한 게임만 활성화하세요. 전환해도 진행 상황은 유지됩니다.",
-        "packs": "소규모 확장"
+        "packs": "소규모 확장",
+        "both-editions": "Allow classes of both Gloomhaven editions",
+        "edition-note": "Applies to this campaign ({name}) only. Each edition has its own storyline, sheet and party; switching keeps both.",
+        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings."
     },
     "Please consider purchasing a license": "라이선스 구입을 고려해 주세요",
     "Danger zone!": "위험 구역!",

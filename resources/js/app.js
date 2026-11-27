@@ -245,7 +245,7 @@ const vueApp = createApp({
             return game || this.mainGame;
         },
         async switchGame(game) {
-            this.game = game;
+            // loadCampaignData sets this.game, comparing it with the previous game
             store.set('game', game);
             await this.switchCampaign(this.campaignId);
         },
@@ -263,6 +263,8 @@ const vueApp = createApp({
                 await this.fetchCampaignData();
             }
 
+            // Before the first load the game is only the device setting, not yet a campaign's edition
+            const previousGame = Object.keys(this.campaignData).length ? this.game : null;
             const stored = store.get(this.campaignId) || {};
             const loaded = JSON.stringify(stored);
             this.campaignData = migrateVersion2Progress(stored);
@@ -274,6 +276,10 @@ const vueApp = createApp({
             const gloomhavenGame = (new SheetRepository).gloomhavenGame();
             if ([Game.gh, Game.gh2].includes(this.game)) {
                 this.game = gloomhavenGame;
+            }
+            // The edition is per campaign: a settings change, campaign switch, restore or sync can swap gh and gh2
+            if (previousGame && previousGame !== this.game && [previousGame, this.game].every(game => [Game.gh, Game.gh2].includes(game))) {
+                this.$bus.$emit('toast', this.$t('games-enabled.edition-switched', {game: this.$t(this.game)}));
             }
             if (!this.enabledGames.includes(this.game)) {
                 this.enabledGames = enableGame(this.game);

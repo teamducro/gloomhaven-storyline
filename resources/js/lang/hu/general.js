@@ -353,7 +353,10 @@ export default {
     "games-enabled": {
         "title": "Elérhető Játékok",
         "text": "A játékok és a hozzájuk tartozó karakterek elrejtéséhez csak azokat engedélyezd, amelyek a tulajdonodban vannak. Váltáskor az előrehaladás megmarad.",
-        "packs": "Kisebb kiegészítők"
+        "packs": "Kisebb kiegészítők",
+        "both-editions": "Allow classes of both Gloomhaven editions",
+        "edition-note": "Applies to this campaign ({name}) only. Each edition has its own storyline, sheet and party; switching keeps both.",
+        "edition-switched": "Now showing {game}. Progress of the other edition is kept; switch back in Settings."
     },
     "Please consider purchasing a license": "Kérlek, fontold meg egy licenc vásárlását",
     "Danger zone!": "Veszélyzóna!",
