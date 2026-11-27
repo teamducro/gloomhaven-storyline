@@ -1,6 +1,6 @@
 {
     "name": "gloomhaven-storyline",
-    "version": "4.0.1",
+    "version": "1.0.0",
     "description": "Gloomhaven storyline",
     "main": "index.js",
     "scripts": {

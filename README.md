@@ -136,7 +136,7 @@ End-to-end tests use [Cypress](https://www.cypress.io).
 
 *Releasing*
 
-- Bump `version` in `package.json` to the release tag (`npm version <x.y.z> --no-git-tag-version`): the tracker sends it to the API as `X-Client-Version` and tags Sentry events with it.
+- The build takes its version from the git release tag (`x.y.z`): the tracker sends it to the API as `X-Client-Version` and tags Sentry events with it. Push master together with its tag (`git push --atomic origin master develop --tags`). Netlify's production deploy fetches the tags first (`git fetch --force origin "refs/tags/*:refs/tags/*"`) and fails when the deployed commit has no release tag.
 
 After changes are made, open a Pull Request into the develop branch for review. 
 

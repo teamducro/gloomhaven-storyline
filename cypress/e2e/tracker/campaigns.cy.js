@@ -291,12 +291,10 @@ describe('Campaigns', () => {
             // When the local progress is synced
             visitWithNewerLocalProgress();
 
-            // Then the request carries the package.json version
-            cy.readFile('package.json').then((pkg) => {
-                cy.wait('@updateStory').its('request.headers').then((headers) => {
-                    expect(headers['x-client-version']).to.equal(pkg.version);
-                    cy.log(`PUT stories/8 X-Client-Version: ${headers['x-client-version']}`);
-                });
+            // Then the request carries the release version
+            cy.wait('@updateStory').its('request.headers').then((headers) => {
+                expect(headers['x-client-version']).to.match(/^\d+\.\d+\.\d+$/);
+                cy.log(`PUT stories/8 X-Client-Version: ${headers['x-client-version']}`);
             });
             cy.screenshot('x-client-version-header', {capture: 'runner'});
         });

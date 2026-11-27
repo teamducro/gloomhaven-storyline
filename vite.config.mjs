@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/postcss';
 import autoprefixer from 'autoprefixer';
 import crypto from 'crypto';
 import fs from 'fs';
+import {execSync} from 'child_process';
 import dayjs from 'dayjs';
 
 // Two separate builds (BUNDLE=app|website) so each gets exactly one css file and no shared chunks.
@@ -12,6 +13,7 @@ export default defineConfig(({mode}) => {
     const mainGame = env.MIX_MAIN_GAME || 'gh';
     const bundle = process.env.BUNDLE || 'app';
     const inProduction = mode === 'production';
+    const appVersion = releaseVersion();
 
     return {
         base: '/',
@@ -49,7 +51,7 @@ export default defineConfig(({mode}) => {
             __VUE_OPTIONS_API__: true,
             __VUE_PROD_DEVTOOLS__: false,
             __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
-            __APP_VERSION__: JSON.stringify(JSON.parse(fs.readFileSync('package.json', 'utf8')).version),
+            __APP_VERSION__: JSON.stringify(appVersion),
         },
         build: {
             outDir: 'public',
@@ -160,4 +162,18 @@ function md5(...paths) {
 async function replace(file, from, to) {
     const content = await fs.promises.readFile(file, 'utf8');
     await fs.promises.writeFile(file, content.replace(from, to));
+}
+
+// Netlify's production deploy (master) must be the exact release tag, never a stale one from its cached clone: the API
+// refuses writes below its minimum version. Other builds take the latest reachable tag.
+function releaseVersion() {
+    const isReleaseDeploy = process.env.CONTEXT === 'production';
+    try {
+        return execSync(`git describe --tags --match '[0-9]*' ${isReleaseDeploy ? '--exact-match' : '--abbrev=0'}`, {stdio: ['ignore', 'pipe', 'ignore']}).toString().trim();
+    } catch (e) {
+        if (isReleaseDeploy) {
+            throw new Error('The deployed commit has no x.y.z release tag; fetch the tags first: git fetch --force origin "refs/tags/*:refs/tags/*"');
+        }
+        return '0.0.0';
+    }
 }
