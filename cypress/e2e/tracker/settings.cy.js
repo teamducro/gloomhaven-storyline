@@ -137,4 +137,35 @@ describe('Settings', () => {
         cy.visit('/tracker/#/settings');
         assertFonts();
     });
+
+    it('It copies through the fallback when the Clipboard API is blocked', () => {
+        // Given the Clipboard API is blocked by a permissions policy
+        cy.visit('/tracker/#/settings');
+        cy.window().then((win) => {
+            cy.stub(win.navigator.clipboard, 'writeText').rejects(new win.DOMException('Blocked', 'NotAllowedError'));
+            cy.stub(win.document, 'execCommand').returns(true).as('execCommand');
+        });
+
+        // When the backup link is copied
+        cy.get('[data-test="copy-backup"]').click();
+
+        // Then it is copied through the fallback
+        cy.get('@execCommand').should('have.been.calledOnceWith', 'copy');
+        cy.get('.toast').contains('Copied');
+    });
+
+    it('It says when copying failed', () => {
+        // Given the Clipboard API is missing and the fallback fails
+        cy.visit('/tracker/#/settings');
+        cy.window().then((win) => {
+            cy.stub(win.navigator.clipboard, 'writeText').rejects(new win.DOMException('Blocked', 'NotAllowedError'));
+            cy.stub(win.document, 'execCommand').returns(false);
+        });
+
+        // When the backup link is copied
+        cy.get('[data-test="copy-backup"]').click();
+
+        // Then the user is told it failed
+        cy.get('.toast').contains('Could not copy');
+    });
 });

@@ -15,7 +15,8 @@ export default function registerGlobals(app) {
     app.directive('clipboard', {
         mounted(el, binding) {
             el._clipboardValue = binding.value;
-            el.addEventListener('click', () => navigator.clipboard?.writeText(el._clipboardValue));
+            el.addEventListener('click', () => copy(el._clipboardValue)
+                .catch(() => bus.$emit('toast', binding.instance.$t('Could not copy'), false)));
         },
         updated(el, binding) {
             el._clipboardValue = binding.value;
@@ -36,4 +37,21 @@ export default function registerGlobals(app) {
             listeners.get(this)?.forEach(([event, callback]) => bus.$off(event, callback));
         },
     });
+}
+
+// The Clipboard API is missing in insecure contexts and can be blocked by a permissions policy.
+async function copy(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+    } catch {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        const copied = document.execCommand('copy');
+        textarea.remove();
+        if (!copied) {
+            throw new Error('Could not copy');
+        }
+    }
 }

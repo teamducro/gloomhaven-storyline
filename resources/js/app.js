@@ -12,7 +12,7 @@ import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
 import EchoService from "./services/app/EchoService";
-import StorySyncer from "./services/StorySyncer";
+import StorySyncer, {flushSync} from "./services/StorySyncer";
 import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
 import BuildingRepository from "./repositories/BuildingRepository";
@@ -250,6 +250,7 @@ const vueApp = createApp({
             await this.switchCampaign(this.campaignId);
         },
         async switchCampaign(campaignId, shouldFetch = false) {
+            await flushSync();
             this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
             await this.loadCampaignData(shouldFetch);
@@ -349,7 +350,11 @@ if (Helpers.inProduction() && import.meta.env.MIX_SENTRY_DSN) {
     Sentry.init({
         app: vueApp,
         dsn: import.meta.env.MIX_SENTRY_DSN,
-        logErrors: false
+        release: 'gloomhaven-storyline@' + __APP_VERSION__,
+        logErrors: false,
+        // Noise from in-app browsers, extensions and the browser's own service worker updates, not from our code.
+        ignoreErrors: ['Java object is gone', 'runtime.sendMessage', 'Failed to update the ServiceWorker'],
+        denyUrls: [/^iabjs:\/\//, /^(chrome|moz|safari|safari-web)-extension:\/\//]
     });
 }
 

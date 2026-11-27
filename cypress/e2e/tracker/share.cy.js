@@ -57,6 +57,23 @@ describe('Share', () => {
         cy.get('.toast').contains('incompatible').should('exist');
     });
 
+    it('It shows an error message for a truncated or corrupt link', () => {
+        const party = 'N4RozgjARAXKDGALAdgVwDboDQmVKOADvGpjmAC4gCWOFA2gLoC+OAhgOYDCASrKGzD0oAcV4BZKC3ZiekuCDYB3EBBzwA9mpDoQABlbhECRG3qqc2q5Zv6ce+47vOHLp672McAEwh7-ONTewFAA7NAwdmEATLBRoQDMcQ5hACzJWGEArBlhAGy5oaGFAByFAJy5JXpVEVElsZEpJUlNmSXpbVAlOV0lBX3FfWV9lV3lNeN1KeWNUeWt853zvfqGeABiGhoABABCbABOBCCE1HlZOIfRrqjmHu6PLizMQA';
+        [party.slice(0, party.length / 2), 'invalid', 'garbage', 'zzzz'].forEach((data) => {
+            // Given a local campaign with progress
+            cy.visit('/tracker/#/story');
+            cy.window().then(win => win.localStorage.setItem('local', JSON.stringify({sheet: {notes: 'My campaign'}})));
+
+            // When a cut-off or corrupt link is opened
+            cy.visit(`/tracker/#/shared/1/local/${data}`);
+
+            // Then it says the link is incompatible, goes to the story and keeps the campaign
+            cy.get('.toast').contains('incompatible');
+            cy.location('hash').should('eq', '#/story');
+            cy.window().then(win => expect(JSON.parse(win.localStorage.getItem('local'))).to.deep.eq({sheet: {notes: 'My campaign'}}));
+        });
+    });
+
     describe('With progress in the local campaign', () => {
         beforeEach(() => {
             cy.visit('/tracker/#/story');

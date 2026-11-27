@@ -230,7 +230,7 @@ class Scenario {
 
         // Multiple scenarios on the same sticker
         if (this.coupled && this.isBlocked()) {
-            if (this.scenarioRepository.find(this.coupled).isComplete()) {
+            if (this.scenarioRepository.find(this.coupled)?.isComplete()) {
                 sticker = '/img/scenarios/' + this.game + '/' + this.coupled + (this.isComplete() ? '_c' : '') + '.png'
             }
         }

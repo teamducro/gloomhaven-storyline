@@ -65,7 +65,7 @@ export default class CharacterRepository {
     // Pro campaigns archive a retired or abandoned character, it can be restored or removed later.
     archiveCharacter(sheet, character) {
         if (character.uuid in sheet.characters && !(character.uuid in sheet.archivedCharacters)) {
-            sheet.archivedCharacters[character.uuid] = {...character}
+            sheet.archivedCharacters[character.uuid] = character;
             delete sheet.characters[character.uuid];
             sheet.store();
         }
@@ -73,7 +73,7 @@ export default class CharacterRepository {
 
     restoreCharacter(sheet, character) {
         if (character.uuid in sheet.archivedCharacters && !(character.uuid in sheet.characters)) {
-            sheet.characters[character.uuid] = {...character}
+            sheet.characters[character.uuid] = character;
             delete sheet.archivedCharacters[character.uuid];
             sheet.store();
         }

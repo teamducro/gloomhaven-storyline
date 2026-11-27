@@ -1,6 +1,12 @@
 import store from "store/dist/store.modern";
 import ApiRepository from "./ApiRepository";
 import Story from "../apiModels/Story";
+import reloadForNewBuild from "../services/app/reloadForNewBuild";
+
+// Ids of stories with a local edit the server doesn't have yet; a remote update mustn't overwrite those.
+export const unsynced = new Set();
+const retries = new Map();
+let retryDelay = 2000;
 
 export default class StoryRepository extends ApiRepository {
     async stories(token = null) {
@@ -48,6 +54,9 @@ export default class StoryRepository extends ApiRepository {
             .put('stories/' + story.id, data)
             .then(response => {
                 window.app.$bus.$emit('toast', 'Progress saved!');
+                unsynced.delete(story.id);
+                clearTimeout(retries.get(story.id));
+                retryDelay = 2000;
 
                 let storyResponse = response.data;
                 if (story.token) {
@@ -67,6 +76,23 @@ export default class StoryRepository extends ApiRepository {
                 if (this.isDeleted(e)) {
                     this.removeDeleted(story);
                     return;
+                }
+
+                // The API refuses writes from outdated builds; the local progress stays and is sent by the new build.
+                if (e.response?.status === 426) {
+                    unsynced.add(story.id);
+                    if (!reloadForNewBuild()) {
+                        window.app.$bus.$emit('toast', window.app.$t('update-required'), false);
+                    }
+                    return;
+                }
+
+                if (this.isTransient(e)) {
+                    // Also when an earlier save of this story succeeded meanwhile.
+                    unsynced.add(story.id);
+                    this.retry(story);
+                } else {
+                    unsynced.delete(story.id);
                 }
 
                 let message = 'Failed to save progress, try again later.';
@@ -176,12 +202,32 @@ export default class StoryRepository extends ApiRepository {
     }
 
     // Only a missing story counts (route model binding on stories/{story}), a 404 from a misrouted request or an outage page must not wipe local progress.
+    // Rate limited, locked, server error or offline: worth sending again.
+    isTransient(e) {
+        const status = e.response?.status;
+        return e.isAxiosError === true && (!status || [423, 429].includes(status) || status >= 500);
+    }
+
+    // Sends the latest local copy of the story again, waiting longer after each failure (2 s, doubling, max 60 s).
+    retry(story) {
+        clearTimeout(retries.get(story.id));
+        retries.set(story.id, setTimeout(() => {
+            retries.delete(story.id);
+            const latest = this.getStory(story.id);
+            if (latest) {
+                this.update(latest);
+            }
+        }, retryDelay));
+        retryDelay = Math.min(retryDelay * 2, 60000);
+    }
+
     isDeleted(e) {
         return e.response?.status === 404 && /^No query results for model \[App\\Models\\Story\]/.test(e.response.data?.message);
     }
 
     // The campaign was deleted by its owner on another device. Its data may hold unsynced progress, so offer to keep it as the local campaign.
     async removeDeleted(story) {
+        unsynced.delete(story.id);
         const data = store.get(story.campaignId);
         this.remove(story);
         const campaignId = window.app.campaignId === story.campaignId ? 'local' : window.app.campaignId;

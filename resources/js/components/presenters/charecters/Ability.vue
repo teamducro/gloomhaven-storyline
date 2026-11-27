@@ -17,7 +17,7 @@
         </transition>
         <transition name="fadein">
             <div v-if="!animating && stacked"
-                 class="absolute bg-dark-gray2-75 right-0 h-full flex items-center px-2" :class="ability.initiative.toString().includes('/') ? 'w-10' : 'w-7'">
+                 class="absolute bg-dark-gray2-75 right-0 h-full flex items-center px-2" :class="String(ability.initiative).includes('/') ? 'w-10' : 'w-7'">
                 <strong class="font-title">{{ ability.initiative }}</strong>
             </div>
         </transition>

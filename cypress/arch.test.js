@@ -220,3 +220,18 @@ test('every translation key used in the source exists in English', () => {
 
     assert.deepEqual([...used].filter(key => !exists(key)), [], 'add the key to lang/en and, in English, to every other locale');
 });
+
+// The scenario modal joins the translated rewards; flat, or one array per conclusion decision.
+test('every scenario reward has an English translation of the same shape', () => {
+    const scenarios = messages('en').scenarios;
+    const shape = rewards => Array.isArray(rewards[0]) ? rewards.length : 'flat';
+    const broken = Object.values(games).flatMap(data => data.scenarios)
+        .filter(scenario => scenario.rewards?.length)
+        .filter(scenario => {
+            const translated = scenarios[`${scenario.game}-${scenario.id}`]?.rewards;
+            return !Array.isArray(translated) || JSON.stringify(shape(translated)) !== JSON.stringify(shape(scenario.rewards));
+        })
+        .map(scenario => `${scenario.game}-${scenario.id}`);
+
+    assert.deepEqual(broken, [], 'add the rewards to lang/en/scenarios.js, or remove them from the game JSON');
+});
