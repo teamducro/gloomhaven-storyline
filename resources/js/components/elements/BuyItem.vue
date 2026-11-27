@@ -21,7 +21,7 @@
                 </select>
                 <label for="character-select" class="flex items-center">
                     <character-icon :key="character.uuid" class="w-6 mr-2 inline-block"
-                                    :character="character.id"/>
+                                    :character="character"/>
                     <span>{{ character.name }}</span>
                     <span class="ml-auto material-icons">keyboard_arrow_down</span>
                 </label>

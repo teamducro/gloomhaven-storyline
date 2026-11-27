@@ -39,6 +39,32 @@ export default class CharacterRepository {
         return characters.keyBy('id');
     }
 
+    // With both Gloomhaven editions allowed, a class in both pairs by id (BR ↔ BR2): campaign edition's id → other edition's id.
+    // Pairs come from the visible classes, so a class whose twin is hidden (Bladeswarm) stays on its own.
+    editionPairs() {
+        if (!this.sheetRepository.data(Game.gh)?.bothEditions) {
+            return {};
+        }
+
+        const characters = this.get();
+        const isGh2 = this.sheetRepository.gloomhavenGame() === Game.gh2;
+        return characters
+            .filter(character => character.game === Game.gh && characters.get(character.id + '2')?.game === Game.gh2)
+            .mapWithKeys(character => isGh2 ? [character.id + '2', character.id] : [character.id, character.id + '2'])
+            .all();
+    }
+
+    // The listed id (campaign's edition) of a class, for either edition's id
+    campaignEditionId(id) {
+        return _.findKey(this.editionPairs(), other => other === id) || id;
+    }
+
+    // One class per party, whichever edition
+    partyHasClass(sheet, id) {
+        const listed = this.campaignEditionId(id);
+        return [listed, this.editionPairs()[listed]].some(classId => classId && this.partyHasCharacter(sheet, classId));
+    }
+
     partyHasCharacter(sheet, id) {
         for (const uuid in sheet.characters) {
             if (sheet.characters[uuid].id === id) {
@@ -111,7 +137,7 @@ export default class CharacterRepository {
     }
 
     applyRetirement(sheet, character) {
-        sheet.addClassEvents(character.id, 'retire');
+        sheet.addClassEvents(this.campaignEditionId(character.id), 'retire');
         // GH2e campaign sheet unlock: the first retirement reads section 68.4.
         if (sheet.game === Game.gh2) {
             sheet.unlocks[this.gameData.sectionsGh2().firstRetirementUnlock] = true;
