@@ -1,5 +1,6 @@
 import ScenarioRepository from "../repositories/ScenarioRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
+import CharacterRepository from "../repositories/CharacterRepository";
 import {ScenarioState} from "../models/ScenarioState";
 import ScenarioValidator from "./ScenarioValidator";
 
@@ -25,14 +26,18 @@ export default class PersonalQuestValidator {
 
         // When all goals are met, preform an action
         if (allGoalsMet) {
-            // Unlock a character
-            if (quest.character_unlock && sheet.characterUnlocks.hasOwnProperty(quest.character_unlock)) {
-                if (!sheet.characterUnlocks[quest.character_unlock]) {
-                    sheet.characterUnlocks[quest.character_unlock] = true;
-                    sheet.addClassEvents(quest.character_unlock, 'unlock');
-                    // The caller only stores the character, not the sheet.
-                    sheet.store();
-                }
+            // Unlock a character, in both editions when the campaign allows both
+            const unlocks = quest.character_unlock
+                ? [quest.character_unlock, this.characterRepository.otherEditionId(quest.character_unlock)]
+                    .filter(id => id && sheet.characterUnlocks.hasOwnProperty(id) && !sheet.characterUnlocks[id])
+                : [];
+            if (unlocks.length) {
+                unlocks.forEach(id => {
+                    sheet.characterUnlocks[id] = true;
+                    sheet.addClassEvents(id, 'unlock');
+                });
+                // The caller only stores the character, not the sheet.
+                sheet.store();
             }
             // Unlock a building
             if (quest.building_unlocks && !quest.unlockedBuilding) {
@@ -83,6 +88,9 @@ export default class PersonalQuestValidator {
 
     get scenarioRepository() {
         return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository);
+    }
+    get characterRepository() {
+        return this._characterRepository || (this._characterRepository = new CharacterRepository);
     }
     get buildingRepository() {
         return this._buildingRepository || (this._buildingRepository = new BuildingRepository);
