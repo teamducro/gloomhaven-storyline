@@ -60,11 +60,10 @@ class Achievement {
     }
 
     gain() {
-        if (!this.awarded) {
-            this._awarded = true;
-            if (this.upgrades.length === 0) {
-                this._manual_awarded = true;
-            }
+        this._awarded = true;
+        // Also heals achievements awarded before manual_awarded existed.
+        if (this.upgrades.length === 0) {
+            this._manual_awarded = true;
         }
 
         if (this.count < this.upgrades.length + 1) {

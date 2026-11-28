@@ -38,6 +38,7 @@
             </h1>
 
             <add-character v-if="!appData.read_only" ref="add-character" :sheet="sheet" @create="create"/>
+            <choose-edition ref="choose-edition" @chosen="(chosen, id) => addCharacter(id, chosen)"/>
 
             <div class="sm:mt-4 sm:flex">
                 <character-menu :selected="selected" :abilities="abilities" :sheet="sheet" @select="select"
@@ -207,7 +208,7 @@
                                 </button>
                                 <button v-if="isArchived" type="button"
                                         @click="restore"
-                                        :disabled="appData.read_only || characterRepository.partyHasCharacter(sheet, character.id)"
+                                        :disabled="appData.read_only || characterRepository.partyHasClass(sheet, character.id)"
                                         class="ml-4 mdc-button mdc-button--raised">
                                     <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon" aria-hidden="true">replay</i>
@@ -307,11 +308,9 @@ import ScenarioRepository from "../repositories/ScenarioRepository";
 import BuildingRepository from "../repositories/BuildingRepository";
 import ItemAvailability from "../services/ItemAvailability";
 import Helpers from "../services/Helpers";
-import TextField from "../components/elements/TextField.vue";
 import {Game} from "../models/Game";
 
 export default {
-    components: {TextField},
     inject: ['appData'],
     mixins: [GetCampaignName, SheetCalculations],
     data() {
@@ -493,23 +492,34 @@ export default {
             this.rerender();
         },
         create(id) {
-            if (this.characterRepository.partyHasCharacter(this.sheet, id)) {
+            const otherEdition = this.characterRepository.editionPairs()[id];
+            if (otherEdition && !this.characterRepository.partyHasClass(this.sheet, id)) {
+                this.$refs['choose-edition'].open([id, otherEdition]);
+            } else {
+                this.addCharacter(id);
+            }
+        },
+        // id: as listed (campaign's edition); chosen: the edition to play. A class in both editions unlocks in both,
+        // its events follow the campaign's edition.
+        addCharacter(id, chosen = id) {
+            if (this.characterRepository.partyHasClass(this.sheet, id)) {
                 return;
             }
 
-            const wasLocked = !this.sheet.characterUnlocks[id];
+            const ids = [id, this.characterRepository.editionPairs()[id]].filter(Boolean);
+            const wasLocked = ids.some(classId => !this.sheet.characterUnlocks[classId]);
             // Unlocking a class, or choosing a Crimson Scales starting class, adds its events.
-            if (wasLocked || this.sheet.game === Game.cs) {
+            if (!this.sheet.characterUnlocks[id] || this.sheet.game === Game.cs) {
                 this.sheet.addClassEvents(id, 'unlock');
             }
             if (wasLocked) {
-                this.sheet.characterUnlocks[id] = true;
+                ids.forEach(classId => this.sheet.characterUnlocks[classId] = true);
                 this.sheet.store();
                 this.scenarioRepository.scenarioValidator.validate();
             } else if (this.sheet.game === Game.cs) {
                 this.sheet.store();
             }
-            const character = this.characterRepository.createCharacter(this.sheet, id);
+            const character = this.characterRepository.createCharacter(this.sheet, chosen);
             this.select(character.uuid);
             this.store();
         },

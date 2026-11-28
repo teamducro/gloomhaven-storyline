@@ -26,6 +26,14 @@
                            :label="$t(edition)"
                            :checked="currentEdition === edition"
                            @changed="selectEdition(edition)"/>
+                    <checkbox-with-label id="both-editions"
+                                         :label="$t('games-enabled.both-editions')"
+                                         v-model:checked="bothEditions"
+                                         :auto-disable="false"
+                                         @change="toggleBothEditions"/>
+                    <p class="text-sm text-gray-400">
+                        {{ $t('games-enabled.edition-note', {name: campaignName}) }}
+                    </p>
                 </div>
             </li>
         </ul>
@@ -53,8 +61,10 @@ import {Game} from "../../../models/Game";
 import {announceEnabledGames, enabledGamesMap} from "../../../services/app/getEnabledGames";
 import Sheet from "../../../models/Sheet";
 import SheetRepository from "../../../repositories/SheetRepository";
+import GetCampaignName from "../../../services/GetCampaignName";
 
 export default {
+    mixins: [GetCampaignName],
     data() {
         return {
             games: [],
@@ -63,6 +73,8 @@ export default {
             disabled: {},
             listKey: '',
             currentEdition: null,
+            bothEditions: false,
+            campaignName: '',
             sheetRepository: new SheetRepository,
         }
     },
@@ -102,6 +114,12 @@ export default {
             const sheet = new Sheet({game: Game.gh});
             sheet.edition = game === Game.gh2 ? 2 : 1;
             sheet.store();
+            // Older clients drop `edition` from the gh sheet but never write the gh2 sheet, so migrateSheets restores it from this copy
+            if (app.campaignData['sheet-gh2']) {
+                const gh2Sheet = new Sheet({game: Game.gh2});
+                gh2Sheet.edition = sheet.edition;
+                gh2Sheet.store();
+            }
 
             if ([Game.gh, Game.gh2].includes(app.game)) {
                 this.$bus.$emit('game-selected', game);
@@ -109,8 +127,16 @@ export default {
                 this.$bus.$emit('campaign-selected', app.campaignId);
             }
         },
+        toggleBothEditions() {
+            const sheet = new Sheet({game: Game.gh});
+            sheet.bothEditions = this.bothEditions;
+            sheet.store();
+            this.$bus.$emit('campaign-selected', app.campaignId);
+        },
         setEdition() {
             this.currentEdition = this.sheetRepository.gloomhavenGame();
+            this.bothEditions = !!this.sheetRepository.data(Game.gh)?.bothEditions;
+            this.campaignName = this.getCampaignName();
             // Loading a campaign may enable gh2, re-read so store() doesn't overwrite it
             this.init();
         },

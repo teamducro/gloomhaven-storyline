@@ -23,11 +23,9 @@
 import StorySyncer from "../services/StorySyncer";
 import GetCampaignName from "../services/GetCampaignName";
 import SheetRepository from "../repositories/SheetRepository";
-import BuildingsSection from "../components/presenters/party/BuildingsSection.vue";
 import GameData from "../services/GameData";
 
 export default {
-    components: {BuildingsSection},
     mixins: [GetCampaignName],
     inject: ['appData'],
     data() {

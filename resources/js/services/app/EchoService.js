@@ -1,7 +1,8 @@
 import AuthRepository from "../../apiRepositories/AuthRepository";
 import Echo from "laravel-echo";
 import Pusher from "pusher-js";
-import StoryRepository from "../../apiRepositories/StoryRepository";
+import StoryRepository, {unsynced} from "../../apiRepositories/StoryRepository";
+import {flushSync} from "../StorySyncer";
 
 export default class EchoService {
 
@@ -43,19 +44,37 @@ export default class EchoService {
         }
 
         if (!this.listens.includes(story.id)) {
-            window.Echo.private(`story.${story.id}`)
-                .listen('StoryUpdated', async (event) => {
-                    if (event.story) {
-                        callback(event.story);
-                    } else {
-                        const newStory = await this.storyRepository.findWithoutUpdates(story);
-                        if (newStory) {
-                            callback(newStory);
-                        }
-                    }
-                });
+            // A burst of updates (several devices saving) causes one refetch.
+            const handle = _.debounce(async (event) => {
+                // Push a local edit first, so the server copy holds it; keep a failed one instead of overwriting it.
+                const hadEdit = unsynced.has(story.id);
+                await flushSync();
+                if (unsynced.has(story.id)) {
+                    return;
+                }
+
+                // The event's story predates an edit just pushed.
+                const newStory = (!hadEdit && event.story) || await this.refetch(story);
+                if (newStory) {
+                    callback(newStory);
+                }
+            }, 1000);
+            window.Echo.private(`story.${story.id}`).listen('StoryUpdated', handle);
 
             this.listens.push(story.id);
+        }
+    }
+
+    // The next load refetches anyway; only a rate limit is worth one more try.
+    async refetch(story, retry = true) {
+        try {
+            return await this.storyRepository.findWithoutUpdates(story);
+        } catch (e) {
+            if (retry && e.response?.status === 429) {
+                await new Promise(resolve => setTimeout(resolve, 10000));
+                return this.refetch(story, false);
+            }
+            return null;
         }
     }
 

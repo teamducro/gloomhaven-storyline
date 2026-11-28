@@ -1,5 +1,5 @@
 import StoryRepository from "../repositories/StoryRepository";
-import ApiStoryRepository from "../apiRepositories/StoryRepository";
+import ApiStoryRepository, {unsynced} from "../apiRepositories/StoryRepository";
 import dayjs from "dayjs";
 import store from "store/dist/store.modern";
 import Sheet from "../models/Sheet";
@@ -10,6 +10,19 @@ import Achievement from "../models/Achievement";
 import Building from "../models/Building";
 import Overlay from "../models/Overlay";
 import {Game} from "../models/Game";
+
+// Edits in quick succession send one PUT with the last state; shared by every StorySyncer.
+const pending = new Map();
+const push = _.debounce(() => {
+    const api = new ApiStoryRepository();
+    // Skip stories deleted since the edit.
+    const stories = [...pending.values()].filter(story => api.getStory(story.id));
+    pending.clear();
+    return Promise.all(stories.map(story => api.update(story)));
+}, 1000, {maxWait: 5000});
+
+// Send a pending edit now; resolves once it's saved (or failed).
+export const flushSync = () => push.flush();
 
 export default class StorySyncer {
     store(force = false) {
@@ -27,8 +40,10 @@ export default class StorySyncer {
             this.apiStoryRepository.storeStory(story);
         }
 
-        if (hasChanged || force) {
-            this.apiStoryRepository.update(story);
+        if ((hasChanged || force) && !story.read_only) {
+            unsynced.add(story.id);
+            pending.set(story.id, story);
+            push();
         }
     }
 

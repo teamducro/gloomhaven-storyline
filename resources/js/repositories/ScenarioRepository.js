@@ -6,6 +6,7 @@ import ItemTextParser from "../services/ItemTextParser";
 import GameData from "../services/GameData";
 import ScenarioCompletedService from "../services/ScenarioCompletedService";
 import SheetRepository from "./SheetRepository";
+import ItemRepository from "./ItemRepository";
 import OverlayRepository from "./OverlayRepository";
 import {Requirement} from "../models/Requirement";
 import idIndex from "../services/idIndex";
@@ -225,8 +226,12 @@ export default class ScenarioRepository {
 
         if (!items.isEmpty()) {
             let sheet = this.sheetRepository.make(app.game);
-            items.each(item => {
-                sheet.itemDesigns[item] = checked;
+            items.each(id => {
+                // Store under the data id; skip parser false positives that match no item.
+                const item = this.itemRepository.find(id);
+                if (item) {
+                    sheet.itemDesigns[item._id] = checked;
+                }
             });
             sheet.store();
         }
@@ -396,6 +401,10 @@ export default class ScenarioRepository {
 
     get achievementRepository() {
         return this._achievementRepository || (this._achievementRepository = new AchievementRepository());
+    }
+
+    get itemRepository() {
+        return this._itemRepository || (this._itemRepository = new ItemRepository());
     }
 
     get sheetRepository() {

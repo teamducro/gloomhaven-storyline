@@ -256,4 +256,101 @@ describe('Storage', () => {
             expect(JSON.parse(win.localStorage.getItem('game'))).eq('gh');
         });
     });
+
+    describe('Boot errors', () => {
+        const story = {id: 9, name: 'Synced', data: {}, games: ['gh'], expires_at: '2099-01-01', hash: 'x', updated_at: '2020-01-01T00:00:00Z'};
+
+        // Scenario validation throws once during start-up
+        function visitWithFailingValidation(seed = () => {}) {
+            utilities.startServer();
+            cy.intercept('GET', '**/user', {statusCode: 500});
+            cy.intercept('GET', '**/stories', {statusCode: 500});
+            cy.intercept('GET', '**/stories/9', {statusCode: 500});
+            cy.visit('/');
+            cy.window().then(seed);
+            cy.visit('/tracker/#/story', {
+                onBeforeLoad(win) {
+                    cy.spy(win.console, 'error').as('consoleError');
+                    Object.defineProperty(win, 'app', {
+                        configurable: true,
+                        // Until mounted, `app` resolves to the #app element
+                        get: () => win.document.getElementById('app'),
+                        set(app) {
+                            const validator = app.scenarioValidator;
+                            const validate = validator.validate;
+                            validator.validate = function () {
+                                validator.validate = validate;
+                                throw new Error('Boot failure');
+                            };
+                            Object.defineProperty(win, 'app', {value: app, writable: true, configurable: true});
+                        },
+                    });
+                },
+            });
+            cy.get('@consoleError').should('be.calledWithMatch', Cypress.sinon.match.has('message', 'Boot failure'));
+        }
+
+        it('It reports the start-up error and tells the user', () => {
+            // Given / When, Then the error is logged (asserted in the visit)
+            visitWithFailingValidation();
+
+            // And the user is told
+            cy.get('.toast').contains('This campaign could not be loaded completely. See Settings to restore it.');
+        });
+
+        it('It still switches game after a failed start-up', () => {
+            // Given
+            visitWithFailingValidation((win) => win.localStorage.setItem('gamesEnabled', JSON.stringify({fh: true})));
+
+            // When
+            cy.get('button').contains('menu').click();
+            cy.get('.game-switch .mdc-select__anchor').click();
+            cy.get('.fh').click();
+
+            // Then
+            cy.window().its('app.game').should('eq', 'fh');
+            cy.window().then((win) => expect(JSON.parse(win.localStorage.getItem('game'))).eq('fh'));
+        });
+
+        it('It still lists and switches campaigns after a failed start-up', () => {
+            // Given
+            visitWithFailingValidation((win) => {
+                win.localStorage.setItem('token', JSON.stringify('secret'));
+                win.localStorage.setItem('user', JSON.stringify({id: 1, name: 'Test', email: 'a@b.c'}));
+                win.localStorage.setItem('stories', JSON.stringify([story]));
+                win.localStorage.setItem('campaignId', JSON.stringify('local'));
+            });
+
+            // When
+            cy.get('button').contains('menu').click();
+            cy.get('.campaign-switch .mdc-select__anchor').click();
+            cy.contains('.campaign-switch li', 'Synced').click();
+
+            // Then
+            cy.window().its('app.campaignId').should('eq', '_9');
+        });
+
+        it('It restores a snapshot after a failed start-up', () => {
+            // Given an owned campaign with a snapshot
+            cy.intercept('POST', '**/stories/9/restore-snapshot/1', {
+                statusCode: 200,
+                body: {...story, data: {sheet: {reputation: 7}}, snapshots: []},
+            }).as('restore');
+            visitWithFailingValidation((win) => {
+                win.localStorage.setItem('token', JSON.stringify('secret'));
+                win.localStorage.setItem('user', JSON.stringify({id: 1, name: 'Test', email: 'a@b.c'}));
+                win.localStorage.setItem('stories', JSON.stringify([{...story, snapshots: [{id: 1, name: 'Before', created_at: '2020-01-01T00:00:00Z'}]}]));
+                win.localStorage.setItem('campaignId', JSON.stringify('_9'));
+                win.localStorage.setItem('_9', JSON.stringify({sheet: {reputation: 3}}));
+            });
+
+            // When
+            cy.visit('/tracker/#/settings');
+            cy.contains('#snapshots li', 'Before').find('button').click();
+
+            // Then
+            cy.wait('@restore');
+            cy.window().its('app.campaignData.sheet.reputation').should('eq', 7);
+        });
+    });
 });

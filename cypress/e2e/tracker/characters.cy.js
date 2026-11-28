@@ -127,6 +127,69 @@ describe('Character', () => {
         cy.get('button').contains('Restore').should('exist');
     });
 
+    it('It can edit and remove an archived character', () => {
+        // Given a cloud campaign with an abandoned Cragheart
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+        utilities.openCharacter();
+        cy.get('button').contains('Abandon').click();
+        cy.get('#abandon-character').click();
+
+        cy.window().then((win) => {
+            const uuid = Object.keys(win.app.campaignData.sheet.archivedCharacters)[0];
+
+            // When it is selected again from the menu and its gold is changed
+            win.app.$bus.$emit('select-character', uuid);
+            cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('20{enter}');
+
+            // Then the change is stored
+            cy.window().its(`app.campaignData.character-${uuid}.gold`).should('eq', 20);
+
+            // When it is removed
+            cy.get('button').contains('Remove').click();
+            cy.get('.mdc-dialog.mdc-dialog--open button').contains('Remove').click();
+
+            // Then its key is a tombstone and the sheet no longer holds it
+            cy.window().its('app.campaignData').should((campaignData) => {
+                expect(campaignData[`character-${uuid}`]).to.eq(null);
+                expect(campaignData.sheet.archivedCharacters).to.deep.eq({});
+            });
+        });
+    });
+
+    it('It can edit a restored character', () => {
+        // Given a cloud campaign with an abandoned and restored Cragheart
+        const story = {id: 1, name: 'Synced', data: {}, expires_at: '2099-01-01'};
+        cy.intercept('PUT', '**/stories/1', (req) => req.reply(story));
+        cy.visit('/tracker/#/characters');
+        cy.window().then((win) => {
+            win.localStorage.setItem('campaignId', JSON.stringify('_1'));
+            win.localStorage.setItem('stories', JSON.stringify([story]));
+        });
+        cy.reload();
+        utilities.openCharacter();
+        cy.get('button').contains('Abandon').click();
+        cy.get('#abandon-character').click();
+        cy.get('button').contains('Restore').click();
+
+        cy.window().then((win) => {
+            const uuid = Object.keys(win.app.campaignData.sheet.characters)[0];
+
+            // When it is selected again from the menu and its gold is changed
+            win.app.$bus.$emit('select-character', uuid);
+            cy.get('input[aria-labelledby="gold"]').clear({force: true}).type('30{enter}');
+
+            // Then the change is stored
+            cy.window().its(`app.campaignData.character-${uuid}.gold`).should('eq', 30);
+        });
+    });
+
     it('It adds the class events when a class is unlocked', () => {
         cy.visit('/tracker/#/party');
         utilities.scrollTo('100%', true);
@@ -583,4 +646,78 @@ describe('Character', () => {
         cy.get('#perk-0-0').click();
         cy.contains('You may select an additional perk!').should('not.exist');
     });
+
+    it('It reloads once for a class icon of a removed build', () => {
+        // Given a Cragheart, whose icon chunk is gone like after a deploy
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+        cy.intercept('**/js/CH-*.js', {forceNetworkError: true});
+        cy.window().then((win) => win.sessionStorage.removeItem('reloadedForNewBuild'));
+        let loads = 0;
+        cy.on('window:load', () => loads++);
+        // Still missing after the reload: that error is reported instead of reloading again.
+        cy.on('uncaught:exception', (error) => !/dynamically imported module|Importing a module script failed/.test(error.message));
+
+        // When the page loads and shows the icon
+        cy.reload();
+
+        // Then it reloads once more for the new build, and then stays
+        cy.wrap(null).should(() => expect(loads).to.eq(2));
+        cy.wait(2000); // a third load would follow the failed chunk within this time
+        cy.wrap(null).should(() => expect(loads).to.eq(2));
+    });
+
+    it('It reloads once when several class icons fail at the same moment', () => {
+        // Given a Brute and a Cragheart, whose icon chunks fail on this page load only
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter('Brute');
+        utilities.openCharacter('Cragheart');
+        cy.window().then((win) => win.sessionStorage.removeItem('reloadedForNewBuild'));
+        let documents = 0;
+        cy.on('window:before:load', () => documents++);
+        cy.intercept('**/js/{BR,CH}-*.js', (req) => documents < 2 ? req.destroy() : req.continue());
+
+        // When the page loads and shows both icons
+        cy.reload();
+
+        // Then it reloads once, without an uncaught error (Cypress fails the test on one)
+        cy.wrap(null).should(() => expect(documents).to.eq(2));
+        cy.wait(2000);
+        cy.wrap(null).should(() => expect(documents).to.eq(2));
+    });
+
+    it('It neither reloads nor reports a class icon that fails offline, and reloads once back online', () => {
+        // Given the tracker without a service worker (it would serve the chunk from its cache) went offline,
+        // with the Brute icon chunk unreachable
+        cy.on('window:before:load', (win) => delete Object.getPrototypeOf(win.navigator).serviceWorker);
+        // Earlier tests leave the chunk in the HTTP cache, which the intercept doesn't see
+        cy.wrap(Cypress.automation('remote:debugger:protocol', {command: 'Network.clearBrowserCache'}));
+        cy.visit('/tracker/#/characters');
+        let offline = true;
+        cy.intercept('**/js/BR-*.js', (req) => offline ? req.destroy() : req.continue());
+        cy.window().then((win) => {
+            win.sessionStorage.removeItem('reloadedForNewBuild');
+            win.notReloaded = true;
+            Object.defineProperty(win.navigator, 'onLine', {get: () => !offline});
+        });
+
+        // When the Brute icon is shown
+        cy.get('.items-to-add-dropdown').click();
+        cy.contains('li.add-character', 'Brute').find('svg').should('not.exist');
+
+        // Then the page stays, without an uncaught error
+        cy.wait(1000);
+        cy.window().its('notReloaded').should('eq', true);
+
+        // And once back online it reloads once and shows the icon
+        cy.then(() => offline = false);
+        cy.window().then((win) => win.dispatchEvent(new win.Event('online')));
+        cy.window().its('notReloaded').should('be.undefined');
+        cy.window().then((win) => win.notReloaded = true);
+        cy.get('.items-to-add-dropdown').click();
+        cy.contains('li.add-character', 'Brute').find('svg').should('exist');
+        cy.wait(1000);
+        cy.window().its('notReloaded').should('eq', true);
+    });
+
 });

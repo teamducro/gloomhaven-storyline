@@ -28,16 +28,47 @@ export default class CharacterRepository {
             characters.forget("BS");
         }
 
-        // Hide characters from inactive games. Only classes of the campaign's Gloomhaven edition are playable, in every game.
-        // Turning off gh hides both editions.
-        const gloomhavenGame = this.sheetRepository.gloomhavenGame();
+        // Hide characters from inactive games. Only classes of the campaign's Gloomhaven edition are playable, in every game,
+        // unless the campaign allows both editions. Turning off gh hides both editions.
         const games = [app.game, ...app.enabledGames].filter(game => game !== Game.gh && game !== Game.gh2);
         if ([Game.gh, Game.gh2].includes(app.game) || app.enabledGames.includes(Game.gh)) {
-            games.push(gloomhavenGame);
+            games.push(...this.sheetRepository.gloomhavenClassGames());
         }
         characters = characters.values().whereIn('game', games);
 
         return characters.keyBy('id');
+    }
+
+    // With both Gloomhaven editions allowed, a class in both pairs by id (BR ↔ BR2): campaign edition's id → other edition's id.
+    // Pairs come from the visible classes, so a class whose twin is hidden (Bladeswarm) stays on its own.
+    editionPairs() {
+        if (!this.sheetRepository.data(Game.gh)?.bothEditions) {
+            return {};
+        }
+
+        const characters = this.get();
+        const isGh2 = this.sheetRepository.gloomhavenGame() === Game.gh2;
+        return characters
+            .filter(character => character.game === Game.gh && characters.get(character.id + '2')?.game === Game.gh2)
+            .mapWithKeys(character => isGh2 ? [character.id + '2', character.id] : [character.id, character.id + '2'])
+            .all();
+    }
+
+    // The listed id (campaign's edition) of a class, for either edition's id
+    campaignEditionId(id) {
+        return _.findKey(this.editionPairs(), other => other === id) || id;
+    }
+
+    // The other edition's id of a class in both editions, for either edition's id
+    otherEditionId(id) {
+        const pairs = this.editionPairs();
+        return pairs[id] || _.findKey(pairs, other => other === id);
+    }
+
+    // One class per party, whichever edition
+    partyHasClass(sheet, id) {
+        const listed = this.campaignEditionId(id);
+        return [listed, this.editionPairs()[listed]].some(classId => classId && this.partyHasCharacter(sheet, classId));
     }
 
     partyHasCharacter(sheet, id) {
@@ -65,7 +96,7 @@ export default class CharacterRepository {
     // Pro campaigns archive a retired or abandoned character, it can be restored or removed later.
     archiveCharacter(sheet, character) {
         if (character.uuid in sheet.characters && !(character.uuid in sheet.archivedCharacters)) {
-            sheet.archivedCharacters[character.uuid] = {...character}
+            sheet.archivedCharacters[character.uuid] = character;
             delete sheet.characters[character.uuid];
             sheet.store();
         }
@@ -73,7 +104,7 @@ export default class CharacterRepository {
 
     restoreCharacter(sheet, character) {
         if (character.uuid in sheet.archivedCharacters && !(character.uuid in sheet.characters)) {
-            sheet.characters[character.uuid] = {...character}
+            sheet.characters[character.uuid] = character;
             delete sheet.archivedCharacters[character.uuid];
             sheet.store();
         }
@@ -112,7 +143,7 @@ export default class CharacterRepository {
     }
 
     applyRetirement(sheet, character) {
-        sheet.addClassEvents(character.id, 'retire');
+        sheet.addClassEvents(this.campaignEditionId(character.id), 'retire');
         // GH2e campaign sheet unlock: the first retirement reads section 68.4.
         if (sheet.game === Game.gh2) {
             sheet.unlocks[this.gameData.sectionsGh2().firstRetirementUnlock] = true;

@@ -172,7 +172,7 @@
                     </tbody>
                 </table>
 
-                <unlock-characters :sheet="sheet" @change="store" :key="'b'+renderX"/>
+                <unlock-characters :sheet="sheet" :key="'b'+renderX"/>
             </div>
 
         </div>

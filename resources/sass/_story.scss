@@ -1,6 +1,6 @@
 #storyline {
     text {
-        font-family: 'Pirata One', 'Nyala', sans-serif;
+        font-family: var(--font-storyline, 'Pirata One'), 'Nyala', sans-serif;
         fill: white;
     }
 

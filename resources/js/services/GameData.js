@@ -181,8 +181,8 @@ export default class GameData {
         return files[game]?.classEvents || {}
     }
 
-    // Starters are the classes in a group other than `<game>_locked` / `<game>_addon`; FC adds the GH starters.
-    startingClasses(game) {
+    // Starters are the classes in a group other than `<game>_locked` / `<game>_addon`; FC adds the starters of the campaign's Gloomhaven edition.
+    startingClasses(game, gloomhavenGame = Game.gh) {
         const startersOf = (origin) => Object.values(this.characters())
             .filter(character => character.game === origin
                 && (character.starting_group || []).some(group => !/_(locked|addon)$/.test(group)))
@@ -191,7 +191,7 @@ export default class GameData {
         const own = this.crossover().includes(game) ? [] : startersOf(game)
 
         if (game === Game.fc) {
-            return [...own, ...startersOf(Game.gh)]
+            return [...own, ...startersOf(gloomhavenGame)]
         }
 
         return own.length ? own : startersOf(Game.gh)

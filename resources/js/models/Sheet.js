@@ -43,6 +43,8 @@ class Sheet {
 
         // Gloomhaven edition played in this campaign (gh sheet only), 2 = GH2e
         this.edition = data.edition;
+        // Offer the classes of both Gloomhaven editions (gh sheet only)
+        this.bothEditions = data.bothEditions || false;
 
         // Items
         this.itemDesigns = {...data.itemDesigns};
@@ -89,6 +91,7 @@ class Sheet {
             inspiration: {'inspiration': 0},
             imbuement: {'imbuement': 0},
             edition: 'edition',
+            bothEditions: 'bothEditions',
 
             // Items
             itemDesigns: {'itemDesigns': {}},
@@ -431,6 +434,9 @@ class Sheet {
         if (!values.hidePersonalQuests) {
             delete values.hidePersonalQuests;
         }
+        if (!values.bothEditions) {
+            delete values.bothEditions;
+        }
         if (!Object.values(values.factionReputation || {}).some(v => v)) {
             delete values.factionReputation;
         }
@@ -450,7 +456,7 @@ class Sheet {
     }
 
     get starterCharacters() {
-        return this.gameData.startingClasses(this.game);
+        return this.gameData.startingClasses(this.game, this.characterRepository.sheetRepository.gloomhavenGame());
     }
 
     get characterOrder() {

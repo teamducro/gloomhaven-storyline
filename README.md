@@ -1,63 +1,67 @@
 # Gloomhaven storyline
 
-The spoiler free storyline tracker for Gloomhaven.\
-Keep track of your progress of completed and unlocked scenarios!\
+The spoiler-free campaign tracker for the Gloomhaven family of games.\
+Keep track of your completed and unlocked scenarios, your party, characters, items and more!\
 https://gloomhaven-storyline.com
+
+## Supported games
+
+- **Gloomhaven** with the **Forgotten Circles** expansion
+- **Gloomhaven 2nd Edition**
+- **Frosthaven**
+- **Jaws of the Lion**
+- **Crimson Scales**
+- Crossover content, played inside any of the games above: the **Mercenary Pack**, **ConQuests 2025** personal
+  quests and the **Seeker of Xorn** bonus content
+
+Items can be used across games, so characters can bring their gear along.
 
 ## Features
 
-- **Summaries**\
-  View a summary of the storyline for each state of a scenario.
-
-  To prevent spoilers we only include a summary up-to the current scenario. The conclusion of a scenario is added after
-  it has been completed.
-- **Clear and organized**\
-  Use the neat Flowchart overview of your completed and unlocked scenarios to keep track of your progress. The scenarios
-  are color coded to quickly find available ones.
-
-  Furthermore, it keeps your story organized!
-  Blocked scenarios are displayed, along with their requirements. This way, you won't need to read up the requirements
-  in the book and risk seeing spoilers.
-
-  When you complete scenarios, you will be granted Party and Global achievements. The app features an achievements
-  overview, where all your accomplishments are displayed.
-- **Share with party**\
-  Share your progress with your party members! Easy with Gloomhaven Storyline!
-
-  You can share your progress manually, or have the app sync it automagically between you and your party members by
-  purchasing a license. Only one person in your party needs to purchase a license, and your whole party can benefit!
-- **Party Sheet**\
-  Gloomhaven storyline tracker features a Party Sheet!
-
-  With it, you can track party-related info like reputation, donations, prosperity and more, all in one place!
-- **Character Sheet**\
-  Character stats like, perks, xp, gold, equipped items and even ability cards are easily managed in Gloomhaven storyline tracker. 
+- **Spoiler-free storyline**\
+  An interactive flowchart of your campaign. Scenarios are color coded so available ones are easy to find, and blocked
+  scenarios show their requirements, so you never need to read ahead in the book.
+- **Story summaries**\
+  Read a recap of the story so far. Summaries only go up to your current progress; a scenario's conclusion is added once
+  you complete it.
+- **Scenario details**\
+  Per scenario: the monsters you'll face, the official FAQ, scenario level and difficulty, treasures, Boat/Sled/Rope
+  requirements and the rewards it grants. Party and Global achievements are awarded automatically on completion.
 - **Map view**\
-  See all of the scenarios you've played and achievements you've gained, displayed on the original Gloomhaven map!
-
-  All Global achievements and scenarios displayed on the map are clickable and the full functionality of the Flowchart
-  view is also available in this Map view.
+  Your progress on the game's world map, with scenario stickers, achievements and, for Frosthaven, buildings. Everything
+  is clickable.
+- **Party and campaign sheets**\
+  Reputation, prosperity, donations, morale, Town Guard perks, the Frosthaven calendar, buildings, alchemy chart and
+  more, all in one place.
+- **Character sheets**\
+  Level, XP, gold, perks, personal quests, equipped items, attack modifier decks and ability cards, including
+  enhancement tracking.
+- **Item database**\
+  Browse the items available to your party and buy and sell them from a character sheet.
+- **Event decks**\
+  Draw city, road and rift events, or Frosthaven's summer/winter road, outpost and boat events, straight from the
+  tracker.
 - **Filters**\
-  Gloomhaven Storyline includes the option to track looted chests and a filter feature to find completed scenarios with
-  chests you missed.
-
-  Using the filter feature, you can find just the scenario you need to complete your personal quest.
-- **Expansions**\
-  The tracker supports Gloomhaven with Forgotten Circles, Gloomhaven 2nd Edition, Frosthaven, Jaws of the
-  Lion, Crimson Scales and the Mercenary Pack.
-- **Support for all modern devices**\
-  Gloomhaven Storyline supports all modern devices and browsers. Easy to use on your smartphone.
-- **Multi language**\
-  Gloomhaven Storyline is available in English, French, Italian, German, Spanish, Polish, Russian, Hungarian and
-  Portuguese!
-
-  Please contact me if you like to contribute with translations.
+  Track looted chests and find completed scenarios with treasure you missed, or the scenario you need for your personal
+  quest.
+- **Share with your party**\
+  Share your campaign with a link, including a read-only option. With a license your party stays synced in real time;
+  only one party member needs to buy one. Snapshots let you roll back changes.
+- **Backup and restore**\
+  Campaigns without an account live in your browser; save a backup link and paste it to restore the campaign later,
+  on any device.
+- **Gloomhaven Secretariat export**\
+  Export your campaign to Gloomhaven Secretariat to continue at the table.
 - **Virtual Gloomhaven Board**\
-  Virtual Gloomhaven Board by Purple Kingdom Games development is designed to help people play Gloomhaven remotely,
-  without the need for a physical board. Gloomhaven Storyline features integration with this great tool, allowing you to
-  open the virtual board directly from the scenario view.
+  Open a scenario in Purple Kingdom Games' Virtual Gloomhaven Board directly from the scenario view. Registered users
+  join the same room as their party members automatically.
+- **Installable and offline**\
+  The tracker is a Progressive Web App: install it on your phone or desktop and use it without a connection.
+- **Multi language**\
+  Available in English, French, Italian, German, Spanish, Polish, Russian, Hungarian, Portuguese, Brazilian Portuguese,
+  Czech, Korean, Thai, Simplified Chinese and Traditional Chinese.
 
-  Registered users will join the same room as party members automatically!
+  Please contact me if you would like to contribute translations.
 
 ## Change log
 
@@ -102,8 +106,7 @@ If everything is working correctly you can visit the tracker locally on: `https:
 *Setup with Lerd*
 
 `.lerd.yaml` serves `public/` through nginx (`Containerfile.lerd`). `nginx.lerd.conf` has the project path hardcoded
-(`root /Users/daniel/Documents/Projects/gloomhaven-storyline/public;`); change it to your own checkout. `.lerd.yaml`
-also still pins `node_version: "16"`, which is too old for Vite.
+(`root /Users/daniel/Documents/Projects/gloomhaven-storyline/public;`); change it to your own checkout.
 
 *Development*
 
@@ -130,6 +133,10 @@ End-to-end tests use [Cypress](https://www.cypress.io).
 - Headless against localhost, like CI: with `http-server` running on port 8080 (see quick start), run
   `npx cypress run --config baseUrl=http://localhost:8080 --spec cypress/e2e/tracker/storyline.cy.js`.
 - If Cypress complains that its binary is missing, run `npx cypress install`.
+
+*Releasing*
+
+- Push an `x.y.z` tag: the `Release version` workflow commits it as `version` to `package.json` on master and develop (needs the `RELEASE_TOKEN` secret, a token that may push to both). The tracker sends that version to the API as `X-Client-Version` and tags Sentry events with it.
 
 After changes are made, open a Pull Request into the develop branch for review. 
 

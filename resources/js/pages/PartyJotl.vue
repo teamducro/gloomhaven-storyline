@@ -47,7 +47,7 @@
             </div>
 
             <div class="w-full mt-8">
-                <unlock-characters :sheet="sheet" @change="store"></unlock-characters>
+                <unlock-characters :sheet="sheet"></unlock-characters>
             </div>
 
         </div>

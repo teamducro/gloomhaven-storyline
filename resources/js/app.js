@@ -12,7 +12,7 @@ import store from "store/dist/store.modern";
 import UserRepository from "./apiRepositories/UserRepository";
 import StoryRepository from "./apiRepositories/StoryRepository";
 import EchoService from "./services/app/EchoService";
-import StorySyncer from "./services/StorySyncer";
+import StorySyncer, {flushSync} from "./services/StorySyncer";
 import OfflineChecker from "./services/app/OfflineChecker";
 import ItemRepository from "./repositories/ItemRepository";
 import BuildingRepository from "./repositories/BuildingRepository";
@@ -142,17 +142,22 @@ const vueApp = createApp({
     },
     async mounted() {
         this.beforeBoot();
-        await this.loadCampaignData(true);
-        await this.$nextTick();
+        // Before any boot work, so a failed boot can still switch game or campaign.
+        this.$bus.$on('game-selected', this.switchGame);
+        this.$bus.$on('campaign-selected', this.switchCampaign);
+        this.$bus.$on('load-campaign-data', this.loadCampaignData);
+
+        try {
+            await this.loadCampaignData(true);
+            await this.$nextTick();
+        } catch (error) {
+            this.reportBootError(error);
+        }
         await this.campaignsChanged();
 
         (new ShareState).loadOldLink();
 
         document.getElementById('bg').style['background-image'] = `url('${this.baseUrl}/img/background-highres.jpg'), url('${this.baseUrl}/img/background-lowres.jpg')`;
-
-        this.$bus.$on('game-selected', this.switchGame);
-        this.$bus.$on('campaign-selected', this.switchCampaign);
-        this.$bus.$on('load-campaign-data', this.loadCampaignData);
 
         setInitialLanguage();
 
@@ -162,13 +167,15 @@ const vueApp = createApp({
     },
     methods: {
         async campaignsChanged(shouldSync = true) {
-            await Promise.all([
+            const results = await Promise.allSettled([
                 this.fetchAchievements(),
                 this.fetchScenarios(shouldSync),
                 this.fetchItems(),
                 this.fetchBuildings(),
                 this.fetchOverlays(),
             ]);
+            results.filter(result => result.status === 'rejected')
+                .forEach(result => this.reportBootError(result.reason));
 
             this.story = this.stories.firstWhere('campaignId', this.campaignId);
             this.$bus.$emit('campaigns-changed');
@@ -186,9 +193,12 @@ const vueApp = createApp({
             this.scenarioRepository.setQuests(this.scenarios, this.quests);
 
             await this.$nextTick();
-            this.scenarioValidator.validate(shouldSync);
-            this.treasureValidator.validate();
-            this.$bus.$emit('scenarios-updated');
+            try {
+                this.scenarioValidator.validate(shouldSync);
+                this.treasureValidator.validate();
+            } finally {
+                this.$bus.$emit('scenarios-updated');
+            }
 
             return true;
         },
@@ -235,11 +245,12 @@ const vueApp = createApp({
             return game || this.mainGame;
         },
         async switchGame(game) {
-            this.game = game;
+            // loadCampaignData sets this.game, comparing it with the previous game
             store.set('game', game);
             await this.switchCampaign(this.campaignId);
         },
         async switchCampaign(campaignId, shouldFetch = false) {
+            await flushSync();
             this.campaignId = campaignId;
             store.set('campaignId', this.campaignId);
             await this.loadCampaignData(shouldFetch);
@@ -252,6 +263,8 @@ const vueApp = createApp({
                 await this.fetchCampaignData();
             }
 
+            // Before the first load the game is only the device setting, not yet a campaign's edition
+            const previousGame = Object.keys(this.campaignData).length ? this.game : null;
             const stored = store.get(this.campaignId) || {};
             const loaded = JSON.stringify(stored);
             this.campaignData = migrateVersion2Progress(stored);
@@ -263,6 +276,10 @@ const vueApp = createApp({
             const gloomhavenGame = (new SheetRepository).gloomhavenGame();
             if ([Game.gh, Game.gh2].includes(this.game)) {
                 this.game = gloomhavenGame;
+            }
+            // The edition is per campaign: a settings change, campaign switch, restore or sync can swap gh and gh2
+            if (previousGame && previousGame !== this.game && [previousGame, this.game].every(game => [Game.gh, Game.gh2].includes(game))) {
+                this.$bus.$emit('toast', this.$t('games-enabled.edition-switched', {game: this.$t(this.game)}));
             }
             if (!this.enabledGames.includes(this.game)) {
                 this.enabledGames = enableGame(this.game);
@@ -306,6 +323,10 @@ const vueApp = createApp({
                 // offline
             }
         },
+        reportBootError(error) {
+            this.$bus.errorHandler(error);
+            this.$bus.$emit('toast', this.$t('boot-error'), false);
+        },
         beforeBoot() {
             polyfills();
             this.enabledGames = getEnabledGames();
@@ -335,7 +356,11 @@ if (Helpers.inProduction() && import.meta.env.MIX_SENTRY_DSN) {
     Sentry.init({
         app: vueApp,
         dsn: import.meta.env.MIX_SENTRY_DSN,
-        logErrors: false
+        release: 'gloomhaven-storyline@' + __APP_VERSION__,
+        logErrors: false,
+        // Noise from in-app browsers, extensions and the browser's own service worker updates, not from our code.
+        ignoreErrors: ['Java object is gone', 'runtime.sendMessage', 'Failed to update the ServiceWorker'],
+        denyUrls: [/^iabjs:\/\//, /^(chrome|moz|safari|safari-web)-extension:\/\//]
     });
 }
 

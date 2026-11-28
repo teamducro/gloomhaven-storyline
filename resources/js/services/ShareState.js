@@ -138,18 +138,24 @@ export default class ShareState {
         return compressed;
     }
 
+    // False for a truncated or corrupt link.
     decodeNewLink(compressed) {
-        let decompressed = LZString.decompressFromEncodedURIComponent(compressed)
-        collect(this.encodeMap()).each((search, replace) => {
-            const regEx = new RegExp(search, 'g');
-            decompressed = decompressed.replace(regEx, replace);
-        });
+        try {
+            let decompressed = LZString.decompressFromEncodedURIComponent(compressed);
+            if (!decompressed) {
+                return false;
+            }
 
-        if (decompressed) {
-            return JSON.parse(decompressed);
+            collect(this.encodeMap()).each((search, replace) => {
+                const regEx = new RegExp(search, 'g');
+                decompressed = decompressed.replace(regEx, replace);
+            });
+
+            const decoded = JSON.parse(decompressed);
+            return decoded && typeof decoded === 'object' && !Array.isArray(decoded) ? decoded : false;
+        } catch {
+            return false;
         }
-
-        return false;
     }
 
     decodeOldLink() {

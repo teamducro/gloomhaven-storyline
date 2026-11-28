@@ -12,8 +12,11 @@ export default class ItemRepository {
     }
 
     find(id) {
-        id = this.prefixGame(id);
-        return app.items ? app.items.get(id) : null;
+        if (!app.items) {
+            return null;
+        }
+        // Crimson Scales add-on texts say "AA01", the data id is "aa01".
+        return app.items.get(this.prefixGame(id)) ?? app.items.get(this.prefixGame(String(id).toLowerCase())) ?? null;
     }
 
     findMany(list) {

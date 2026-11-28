@@ -52,7 +52,10 @@ export default {
         },
         addItemLinks(text) {
             this.itemTextParser.parse(text).each((itemText, id) => {
-                let item = this.itemRepository.find(id);
+                const item = this.itemRepository.find(id);
+                if (!item) {
+                    return;
+                }
                 const linkContent = itemText.replace(`“${item._name}”`, `“${this.$t(item.name)}”`);
                 text = text.replace(itemText, `<a class="link" href="#" @click.prevent="$bus.$emit('open-item', {id:'${id}'})">${linkContent}</a>`);
             });

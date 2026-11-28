@@ -3,6 +3,9 @@ import AchievementGroup from "../models/AchievementGroup";
 import GameData from "../services/GameData";
 import ScenarioRepository from "../repositories/ScenarioRepository";
 
+// Every nested validation builds its own validator, so an instance flag can't stop re-entry.
+let running = false;
+
 class AchievementValidator {
 
     constructor() {
@@ -10,7 +13,12 @@ class AchievementValidator {
     }
 
     validate() {
-        if (this.validateOneTime) {
+        if (!this.validateOneTime || running) {
+            return;
+        }
+
+        running = true;
+        try {
             const rule = new GameData().campaignRule(app.game, 'defaultCityRule');
             if (rule?.replaceable) {
                 this.checkStartingRule(rule);
@@ -19,9 +27,10 @@ class AchievementValidator {
             }
             this.fixAchievementGroups();
             this.checkMissingManualAchievements();
+        } finally {
+            running = false;
+            this.validateOneTime = false;
         }
-
-        this.validateOneTime = false;
     }
 
     checkCityRule(rule) {

@@ -25,16 +25,24 @@ self.addEventListener('install', event => {
     // Activate right away: pages are fetched from the network first, so open tabs don't depend on the previous cache.
     self.skipWaiting();
     event.waitUntil(
-        caches.open(CACHE_NAME)
+        caches.open(CACHE_NAME).then(cache => {
             // Bypass the HTTP cache, so a new worker doesn't precache the previous build's pages.
-            .then(cache => cache.addAll(URLS_TO_CACHE.map(url => new Request(url, {cache: 'reload'}))))
+            const request = url => new Request(url, {cache: 'reload'});
+            const pages = ['/', '/tracker/'];
+            // One failed file on a flaky connection must not keep the previous build; the fetch handler caches it on first use.
+            return Promise.all([
+                cache.addAll(pages.map(request)),
+                Promise.allSettled(URLS_TO_CACHE.filter(url => !pages.includes(url)).map(url => cache.add(request(url)))),
+            ]);
+        })
     );
 });
 
 self.addEventListener('activate', event => {
     event.waitUntil((async () => {
         const cache = await caches.open(CACHE_NAME);
-        for (const cacheName of (await caches.keys()).filter(cacheName => cacheName !== CACHE_NAME)) {
+        const oldCacheNames = (await caches.keys()).filter(cacheName => cacheName !== CACHE_NAME);
+        for (const cacheName of oldCacheNames) {
             // Keep the cached languages this build still uses, otherwise they'd fall back to English when offline.
             const oldCache = await caches.open(cacheName);
             for (const url of LANGUAGE_FILES) {
@@ -46,6 +54,17 @@ self.addEventListener('activate', event => {
             await caches.delete(cacheName);
         }
         await self.clients.claim();
+
+        // Replacing a previous worker (a deploy): reload open tabs, they'd keep running and syncing the old build.
+        // Not on a first install. Runs once per activation, so it can't loop.
+        if (oldCacheNames.length) {
+            for (const client of await self.clients.matchAll({type: 'window'})) {
+                // Not the Cypress runner and spec frames (/__/, /__cypress/), which host the tested page.
+                if (!new URL(client.url).pathname.startsWith('/__')) {
+                    client.navigate(client.url).catch(() => {});
+                }
+            }
+        }
     })());
 });
 
