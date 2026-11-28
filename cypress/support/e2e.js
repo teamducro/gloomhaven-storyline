@@ -36,3 +36,8 @@ Cypress.on('window:before:load', (win) => win.localStorage.setItem('donations', 
 
 // Keep the service worker's cache from leaking between tests; specs that test it opt in with {env: {serviceWorker: true}}.
 Cypress.on('window:before:load', (win) => Cypress.env('serviceWorker') || clearingServiceWorkers || delete Object.getPrototypeOf(win.navigator).serviceWorker);
+
+// Prod smoke runs (smoke-prod.yml) must never change server data: fail every write like CI's dead API. Spec stubs registered later win.
+if (Cypress.env('readOnly')) {
+    beforeEach(() => cy.intercept({method: /^(?!GET$|HEAD$|OPTIONS$)/}, {forceNetworkError: true}));
+}

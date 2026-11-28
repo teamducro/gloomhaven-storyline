@@ -1,0 +1,43 @@
+name: Smoke test production
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '0 5 * * *' # 06:00 CET, 07:00 CEST
+  workflow_dispatch:
+
+concurrency:
+  group: smoke-prod
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for the Netlify deploy
+        if: github.event_name == 'push'
+        run: sleep 900
+
+      # The released specs, so unreleased features on develop don't fail against prod.
+      - uses: actions/checkout@v7
+        with:
+          ref: master
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      # Whole specs, so new tests in them run here too; picked for what can differ from CI: env URLs, routing,
+      # service worker, lazy game data and languages. readOnly fails every write to the server (support/e2e.js).
+      - uses: cypress-io/github-action@v7
+        with:
+          config: baseUrl=https://gloomhaven-storyline.com
+          env: readOnly=true
+          spec: cypress/e2e/website/home.cy.js,cypress/e2e/tracker/share.cy.js,cypress/e2e/tracker/pwa.cy.js,cypress/e2e/tracker/settings.cy.js,cypress/e2e/tracker/storyline.cy.js,cypress/e2e/tracker/map.cy.js,cypress/e2e/tracker/gh2-storyline.cy.js,cypress/e2e/tracker/fh-scenarios.cy.js,cypress/e2e/tracker/cs-scenarios.cy.js
+
+      - name: Every image is on the CDN
+        if: ${{ !cancelled() }}
+        run: npm run test:cdn
+        env:
+          CDN_URL: https://gh-storyline.ams3.cdn.digitaloceanspaces.com

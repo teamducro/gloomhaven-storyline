@@ -112,6 +112,70 @@ test('scenario references resolve', () => {
     assert.deepEqual(broken, []);
 });
 
+test('every image the game data points to exists', () => {
+    const img = path.join(__dirname, '../resources');
+    // ponytail: mirrors slugify(), matches it on every current name; import slugify if a new name differs.
+    const slug = name => name.normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^\w\s$*_+~.()'"!:@-]/g, '')
+        .trim().replace(/\s+/g, '-').toLowerCase();
+    const cardFolders = {R: 'road', C: 'city', Q: 'quest', RIFT: 'rift', SR: 'summerRoad', SO: 'summerOutpost',
+        WR: 'winterRoad', WO: 'winterOutpost', B: 'boat'};
+    const deckTypes = Object.fromEntries(Object.entries(cardFolders).map(([type, folder]) => [folder, type]));
+    // The path logic of models/Card.js
+    const cardImages = (card, game) => {
+        const [, type, id] = card.match(/^([^-]+)-(.+?)(?:-(\D.*))?$/);
+        const folder = `/img/cards/${game === 'fc' ? 'gh' : game}/${cardFolders[type.toUpperCase()]}`;
+        if (game === 'gh2' && type === 'Q') return [`${folder}/${id}.jpg`];
+        return type === 'Q' ? [`${folder}/${id}.jpg`, `${folder}/back.jpg`] : [`${folder}/${id}-f.jpg`, `${folder}/${id}-b.jpg`];
+    };
+    // No scans of these yet.
+    const knownMissing = [
+        ...[59, 60, 63, 64, 65, 66, 67, 68, 69, 82].flatMap(id => cardImages(`R-${id}`, 'gh')),
+        '/img/buildings/fh/42-level-4-front.png', '/img/buildings/fh/42-level-4-back.png',
+    ];
+
+    const images = Object.entries(games).flatMap(([file, data]) => [
+        ...(data.items || []).flatMap(item => {
+            const image = `/img/items/${item.game || file}/${slug(item.name.replaceAll("'", ''))}`;
+            return [`${image}.jpg`, ...(item.backDesc ? [`${image}-back.jpg`] : [])];
+        }),
+        ...Object.values(data.abilities || {}).flatMap(ability => {
+            const folder = `/img/abilities/${ability.game}/${ability.character_id}`;
+            const code = slug(ability.name.replaceAll("'", '').replaceAll('.', ''));
+            return [`${folder}/${code}.jpg`, ...(ability.variations || []).map(variation => `${folder}/${variation}-${code}.jpg`)];
+        }),
+        ...Object.values(data.characters || {}).flatMap(character => [
+            `/img/abilities/${character.game}/${character.id}/back.jpg`,
+            // Character.hasMat
+            ...(['SA', 'CA', 'AN'].includes(character.id) ? [] : ['front', 'back', 'art']
+                .map(side => `/img/character-mats/${character.game}/${character.id}-${side}.jpg`)),
+        ]),
+        ...(data.scenarios || []).filter(scenario => scenario.coordinates?.x !== undefined).flatMap(scenario =>
+            ['', '_c'].map(state => `/img/scenarios/${scenario.game || file}/${scenario.id}${state}.png`)),
+        ...(data.scenarios || []).flatMap(scenario => (scenario.cards || []).flatMap(card => cardImages(card, scenario.game || file))),
+        ...(data.achievements || []).flatMap(achievement => (achievement.cards || []).flatMap(card => cardImages(card, achievement.game || file))),
+        ...(data.personalQuests || []).flatMap(quest => cardImages(`Q-${quest.id}`, quest.game || file)),
+        ...Object.entries(data.decks || {}).filter(([folder]) => deckTypes[folder]).flatMap(([folder, deck]) => {
+            const ids = [...Array(deck.last).keys()].map(index => index + 1)
+                .concat(deck.extra || [], ...Object.values(deck.bonus || {}));
+            return ids.flatMap(id => cardImages(`${deckTypes[folder]}-${id}`, file));
+        }),
+        // Level 0 is unbuilt and has no sticker.
+        ...(data.buildings || []).flatMap(building => building.levels.filter(level => level.level > 0).flatMap(level =>
+            ['', '-front', '-back'].map(side => `/img/buildings/${building.game}/${building.id}-level-${level.level}${side}.png`))),
+        ...(data.overlays || []).map(overlay => `/img/overlays/${overlay.game || file}/${overlay.id}.png`),
+    ]);
+    const monsters = Object.values(require('../resources/js/monster-images.json')).flatMap(Object.values)
+        .flatMap(image => [image, image.replace('/', '/thumbs/')]).map(image => `/img/monsters/${image}`);
+
+    // The webp component loads the .webp where the browser supports it, the original otherwise.
+    const missing = [...new Set([...images, ...monsters])]
+        .filter(image => !knownMissing.includes(image))
+        .flatMap(image => [image, image.replace(/\.\w+$/, '.webp')])
+        .filter(image => !fs.existsSync(img + image));
+
+    assert.deepEqual(missing, [], 'a missing .webp: `cwebp -q 75 <image> -o <image>.webp`');
+});
+
 test('the persisted campaign format is unchanged', () => {
     const current = Object.fromEntries(Object.keys(storage).map(model => {
         const source = read(`models/${model}.js`);

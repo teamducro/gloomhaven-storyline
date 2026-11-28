@@ -49,7 +49,7 @@ describe('PWA', {env: {serviceWorker: true}}, () => {
 
         // The browser's HTTP cache would otherwise serve files the service worker didn't cache.
         cy.wrap(Cypress.automation('remote:debugger:protocol', {command: 'Network.clearBrowserCache'}));
-        cy.intercept({url: /localhost/}, {forceNetworkError: true});
+        cy.intercept({hostname: new URL(Cypress.config('baseUrl')).hostname}, {forceNetworkError: true});
         cy.reload();
 
         cy.get('#chapter1').should('be.visible');
@@ -79,7 +79,8 @@ describe('PWA', {env: {serviceWorker: true}}, () => {
         cy.contains('Abgeschlossen');
 
         // Like a deploy: the language is only in the previous worker's cache, and a new worker takes over.
-        cy.window().then(async (win) => {
+        // Installing the new worker downloads every precached file, slow over a real network (prod smoke run).
+        cy.window().then({timeout: 30000}, async (win) => {
             const languageFiles = (await (await win.fetch('/service-worker.js')).text())
                 .match(/LANGUAGE_FILES = \[([^\]]*)]/)[1];
             const [cacheName] = await win.caches.keys();

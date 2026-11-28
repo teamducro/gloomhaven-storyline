@@ -2,6 +2,20 @@ import utilities from "../utilities";
 
 describe('Abilities', () => {
 
+    it('It shows the ability card back on the character sheet', () => {
+        // Given
+        cy.visit('/tracker/#/characters');
+
+        // When
+        utilities.openCharacter('Cragheart');
+
+        // Then
+        cy.get('img[src*="/img/abilities/gh/CH/back."]').first()
+            .should('have.attr', 'src').and('match', /\/img\/abilities\/gh\/CH\/back\.webp$/);
+        cy.get('img[src*="/img/abilities/gh/CH/back."]').first()
+            .should($img => expect($img[0].naturalWidth).to.be.greaterThan(0));
+    });
+
     it('It loads a characters abilities', () => {
         cy.visit('/tracker/#/characters');
 

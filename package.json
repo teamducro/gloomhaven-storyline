@@ -11,6 +11,7 @@
         "prod-fh": "cross-env MIX_MAIN_GAME=fh npm run production",
         "test": "cypress open",
         "test:arch": "node --test cypress/arch.test.js",
+        "test:cdn": "node --test cypress/cdn.test.js",
         "test:ci": "cypress run ${npm_config_spec:+--spec \"cypress/e2e/**/*$npm_config_spec*.cy.js\"}",
         "cdn": "s3cmd sync --acl-public --delete-removed --add-header=\"Cache-Control:max-age=2592000\" ./resources/img s3://gh-storyline"
     },
