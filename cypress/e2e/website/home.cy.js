@@ -1,12 +1,18 @@
 import utilities from "../utilities";
 
+// The Frosthaven site is the same build with MIX_MAIN_GAME=fh; its smoke run passes `mainGame=fh`.
+const site = {
+    gh: {name: 'Gloomhaven', firstScenario: 'Black Barrow', achievements: ['Global Achievements', 'Party Achievements'], partySheet: 'Party sheet'},
+    fh: {name: 'Frosthaven', firstScenario: 'A Town in Flames', achievements: ['Campaign Stickers'], partySheet: 'Campaign sheet'},
+}[Cypress.env('mainGame') || 'gh'];
+
 describe('Home', () => {
 
     it('It loads the home page', () => {
         cy.visit('/');
 
         cy.get('#app').within(() => {
-            cy.contains('Gloomhaven Storyline Tracker');
+            cy.contains(`${site.name} Storyline Tracker`);
             cy.contains('The all in one campaign tracker');
             cy.contains('Contribute');
         });
@@ -30,7 +36,7 @@ describe('Home', () => {
     it('It redirects to scenarios', () => {
         cy.visit('/#/scenarios');
         utilities.isTracker();
-        cy.contains('Black Barrow');
+        cy.contains(site.firstScenario);
     });
 
     it('It redirects to map', () => {
@@ -44,8 +50,7 @@ describe('Home', () => {
     it('It redirects to achievements', () => {
         cy.visit('/#/achievements');
         utilities.isTracker();
-        cy.contains('Global Achievements');
-        cy.contains('Party Achievements');
+        site.achievements.forEach(heading => cy.contains(heading));
     });
 
     it('It redirects to info', () => {
@@ -65,7 +70,7 @@ describe('Home', () => {
     it('It redirects to party', () => {
         cy.visit('/#/party');
         utilities.isTracker();
-        cy.contains('Party sheet');
+        cy.contains(site.partySheet);
     });
 
     it('It redirects to login', () => {
