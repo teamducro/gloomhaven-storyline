@@ -404,14 +404,6 @@ export default {
                 "wrecked": "Jeder Charakter beginnt das nächste Szenario mit {CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 Wohlstand"
-            },
-            {
-                "level": 4,
-                "operations": "Jeder Charakter darf 5 Gold bezahlen, um das nächste Szenario mit {BLESS.fh}x2 zu beginnen",
-                "downtime": "",
-                "wrecked": "Jeder Charakter beginnt das nächste Szenario mit {CURSE.fh}",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },

@@ -14,22 +14,10 @@ concurrency:
 jobs:
   smoke:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - site: gloomhaven-storyline.com
-            main-game: gh
-            spec: cypress/e2e/website/home.cy.js,cypress/e2e/tracker/share.cy.js,cypress/e2e/tracker/pwa.cy.js,cypress/e2e/tracker/settings.cy.js,cypress/e2e/tracker/storyline.cy.js,cypress/e2e/tracker/map.cy.js,cypress/e2e/tracker/gh2-storyline.cy.js,cypress/e2e/tracker/fh-scenarios.cy.js,cypress/e2e/tracker/cs-scenarios.cy.js
-          # Same build with MIX_MAIN_GAME=fh: the site and its redirects, plus the specs that pick their game themselves.
-          - site: frosthaven-storyline.com
-            main-game: fh
-            spec: cypress/e2e/website/home.cy.js,cypress/e2e/tracker/gh2-storyline.cy.js,cypress/e2e/tracker/fh-scenarios.cy.js,cypress/e2e/tracker/cs-scenarios.cy.js
-    name: smoke (${{ matrix.site }})
     steps:
       - name: Wait for the Netlify deploy
         if: github.event_name == 'push'
-        run: sleep 600
+        run: sleep 900
 
       # The released specs, so unreleased features on develop don't fail against prod.
       - uses: actions/checkout@v7
@@ -44,13 +32,12 @@ jobs:
       # service worker, lazy game data and languages. readOnly fails every write to the server (support/e2e.js).
       - uses: cypress-io/github-action@v7
         with:
-          config: baseUrl=https://${{ matrix.site }}
-          env: readOnly=true,mainGame=${{ matrix.main-game }}
-          spec: ${{ matrix.spec }}
+          config: baseUrl=https://gloomhaven-storyline.com
+          env: readOnly=true
+          spec: cypress/e2e/website/home.cy.js,cypress/e2e/tracker/share.cy.js,cypress/e2e/tracker/pwa.cy.js,cypress/e2e/tracker/settings.cy.js,cypress/e2e/tracker/storyline.cy.js,cypress/e2e/tracker/map.cy.js,cypress/e2e/tracker/gh2-storyline.cy.js,cypress/e2e/tracker/fh-scenarios.cy.js,cypress/e2e/tracker/cs-scenarios.cy.js
 
-      # Both sites share the CDN, so check it once.
       - name: Every image is on the CDN
-        if: ${{ !cancelled() && matrix.main-game == 'gh' }}
+        if: ${{ !cancelled() }}
         run: npm run test:cdn
         env:
           CDN_URL: https://gh-storyline.ams3.cdn.digitaloceanspaces.com

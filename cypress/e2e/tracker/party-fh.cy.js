@@ -118,6 +118,89 @@ describe('Party FH', () => {
         cy.contains('Requires 3 Ancient Coins (Item 245)');
     });
 
+    describe('Temple of the Great Oak', () => {
+        const temple = () => cy.get('img[src^="/img/buildings/fh/42-level-"]');
+        const storeCampaign = (changes) => {
+            cy.visit('/tracker/#/party');
+            cy.window().then((win) => {
+                const campaignData = JSON.parse(win.localStorage.getItem('local'));
+                win.localStorage.setItem('local', JSON.stringify({...campaignData, ...changes}));
+            });
+            cy.reload();
+        };
+
+        beforeEach(() => {
+            utilities.enableGame('fh');
+            utilities.switchGame('fh');
+        });
+
+        it('It switches to its alternate level 3 sticker while The Frosthaven Seal is completed', () => {
+            const markFrosthavenSeal = (label) => {
+                cy.visit('/tracker/#/scenarios');
+                cy.get('td').contains('#64 The Frosthaven Seal').click({scrollBehavior: 'center'});
+                cy.get('#scenario-content label').contains(label).click();
+                utilities.closeModel();
+                cy.visit('/tracker/#/buildings');
+            };
+
+            // Given
+            cy.visit('/tracker?states=61_c-62_c-63_c');
+            storeCampaign({'building-fh-42': {state: 'built', level: 3}});
+
+            // When
+            markFrosthavenSeal('Complete');
+
+            // Then
+            temple().should('have.attr', 'src', '/img/buildings/fh/42-level-3-alternate.png');
+            temple().parents('.grid').first().find('button .grid-cols-4').should('not.exist');
+
+            // When
+            markFrosthavenSeal('Incomplete');
+
+            // Then
+            temple().should('have.attr', 'src', '/img/buildings/fh/42-level-3.png');
+        });
+
+        [
+            {stored: 4, sealCompleted: true, level: 3, sticker: '42-level-3-alternate'},
+            {stored: 4, sealCompleted: false, level: 3, sticker: '42-level-3'},
+            {stored: 3, sealCompleted: true, level: 3, sticker: '42-level-3-alternate'},
+            {stored: 2, sealCompleted: true, level: 2, sticker: '42-level-2'},
+            {stored: 1, sealCompleted: true, level: 1, sticker: '42-level-1'},
+        ].forEach(({stored, sealCompleted, level, sticker}) => {
+            it(`It shows a stored level ${stored} Temple ${sealCompleted ? 'after' : 'before'} The Frosthaven Seal as level ${level} with sticker ${sticker}`, () => {
+                // Given
+                const sealChain = sealCompleted ? [61, 62, 63, 64] : [61, 62, 63];
+                storeCampaign({
+                    ...Object.fromEntries(sealChain.map(id => [`scenario-fh-${id}`, {state: 'complete'}])),
+                    'building-fh-42': {state: 'built', level: stored},
+                });
+
+                // When
+                cy.visit('/tracker/#/buildings');
+
+                // Then
+                temple().should('have.attr', 'src', `/img/buildings/fh/${sticker}.png`);
+                temple().parent().contains(`42 Temple of the Great Oak Lvl. ${level}`);
+                // The Upgrade button holds its resource costs
+                temple().parents('.grid').first().find('button .grid-cols-4').should(level === 3 ? 'not.exist' : 'exist');
+                temple().click();
+                cy.get(`.mdc-dialog--open img[src*="/img/buildings/fh/42-level-${level}-front."]`);
+
+                // When
+                cy.visit('/tracker/#/map');
+
+                // Then: an open Frosthaven Seal covers the Temple
+                if (sealCompleted) {
+                    cy.get(`#b42[src*="/img/buildings/fh/${sticker}."]`);
+                } else {
+                    cy.get('#s64');
+                    cy.get('#b42').should('not.exist');
+                }
+            });
+        });
+    });
+
     it('It uses the same season for a calendar week in the grid and in the week modal', () => {
         utilities.enableGame('fh');
         utilities.switchGame('fh');

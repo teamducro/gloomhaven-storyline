@@ -107,6 +107,8 @@ test('scenario references resolve', () => {
                     : isAchievement(value) || requirementTokens.includes(value));
             }));
         });
+        (data.buildings || []).forEach(building => building.levels.forEach(level =>
+            check({id: `building ${building.id}`}, 'alternate_sticker.linked_from', level.alternate_sticker?.linked_from, isScenario)));
     });
 
     assert.deepEqual(broken, []);
@@ -130,7 +132,6 @@ test('every image the game data points to exists', () => {
     // No scans of these yet.
     const knownMissing = [
         ...[59, 60, 63, 64, 65, 66, 67, 68, 69, 82].flatMap(id => cardImages(`R-${id}`, 'gh')),
-        '/img/buildings/fh/42-level-4-front.png', '/img/buildings/fh/42-level-4-back.png',
     ];
 
     const images = Object.entries(games).flatMap(([file, data]) => [
@@ -161,7 +162,7 @@ test('every image the game data points to exists', () => {
         }),
         // Level 0 is unbuilt and has no sticker.
         ...(data.buildings || []).flatMap(building => building.levels.filter(level => level.level > 0).flatMap(level =>
-            ['', '-front', '-back'].map(side => `/img/buildings/${building.game}/${building.id}-level-${level.level}${side}.png`))),
+            ['', '-front', '-back', ...(level.alternate_sticker ? ['-alternate'] : [])].map(side => `/img/buildings/${building.game}/${building.id}-level-${level.level}${side}.png`))),
         ...(data.overlays || []).map(overlay => `/img/overlays/${overlay.game || file}/${overlay.id}.png`),
     ]);
     const monsters = Object.values(require('../resources/js/monster-images.json')).flatMap(Object.values)

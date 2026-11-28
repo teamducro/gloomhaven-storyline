@@ -404,14 +404,6 @@ export default {
                 "wrecked": "Každý hrdina zahájí další scénář s {CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 blahobyt"
-            },
-            {
-                "level": 4,
-                "operations": "Každý hrdina může ztratit 5 zlaťáků, aby zahájil další scénář s {BLESS.fh}x2",
-                "downtime": "",
-                "wrecked": "Každý hrdina zahájí další scénář s {CURSE.fh}",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },
