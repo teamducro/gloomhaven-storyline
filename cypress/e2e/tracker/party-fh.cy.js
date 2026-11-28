@@ -152,7 +152,7 @@ describe('Party FH', () => {
 
             // Then
             temple().should('have.attr', 'src', '/img/buildings/fh/42-level-3-alternate.png');
-            temple().parents('.grid').first().contains('Upgrade').should('not.exist');
+            temple().parents('.grid').first().find('button .grid-cols-4').should('not.exist');
 
             // When
             markFrosthavenSeal('Incomplete');
@@ -161,20 +161,43 @@ describe('Party FH', () => {
             temple().should('have.attr', 'src', '/img/buildings/fh/42-level-3.png');
         });
 
-        it('It shows the level 3 card for a Temple stored at the former level 4', () => {
-            // Given
-            storeCampaign({
-                ...Object.fromEntries([61, 62, 63, 64].map(id => [`scenario-fh-${id}`, {state: 'complete'}])),
-                'building-fh-42': {state: 'built', level: 4},
+        [
+            {stored: 4, sealCompleted: true, level: 3, sticker: '42-level-3-alternate'},
+            {stored: 4, sealCompleted: false, level: 3, sticker: '42-level-3'},
+            {stored: 3, sealCompleted: true, level: 3, sticker: '42-level-3-alternate'},
+            {stored: 2, sealCompleted: true, level: 2, sticker: '42-level-2'},
+            {stored: 1, sealCompleted: true, level: 1, sticker: '42-level-1'},
+        ].forEach(({stored, sealCompleted, level, sticker}) => {
+            it(`It shows a stored level ${stored} Temple ${sealCompleted ? 'after' : 'before'} The Frosthaven Seal as level ${level} with sticker ${sticker}`, () => {
+                // Given
+                const sealChain = sealCompleted ? [61, 62, 63, 64] : [61, 62, 63];
+                storeCampaign({
+                    ...Object.fromEntries(sealChain.map(id => [`scenario-fh-${id}`, {state: 'complete'}])),
+                    'building-fh-42': {state: 'built', level: stored},
+                });
+
+                // When
+                cy.visit('/tracker/#/buildings');
+
+                // Then
+                temple().should('have.attr', 'src', `/img/buildings/fh/${sticker}.png`);
+                temple().parent().contains(`42 Temple of the Great Oak Lvl. ${level}`);
+                // The Upgrade button holds its resource costs
+                temple().parents('.grid').first().find('button .grid-cols-4').should(level === 3 ? 'not.exist' : 'exist');
+                temple().click();
+                cy.get(`.mdc-dialog--open img[src*="/img/buildings/fh/42-level-${level}-front."]`);
+
+                // When
+                cy.visit('/tracker/#/map');
+
+                // Then: an open Frosthaven Seal covers the Temple
+                if (sealCompleted) {
+                    cy.get(`#b42[src*="/img/buildings/fh/${sticker}."]`);
+                } else {
+                    cy.get('#s64');
+                    cy.get('#b42').should('not.exist');
+                }
             });
-
-            // When
-            cy.visit('/tracker/#/buildings');
-
-            // Then
-            temple().should('have.attr', 'src', '/img/buildings/fh/42-level-3-alternate.png');
-            temple().click();
-            cy.get('.mdc-dialog--open img[src*="/img/buildings/fh/42-level-3-front."]');
         });
     });
 
