@@ -118,6 +118,66 @@ describe('Party FH', () => {
         cy.contains('Requires 3 Ancient Coins (Item 245)');
     });
 
+    describe('Temple of the Great Oak', () => {
+        const temple = () => cy.get('img[src^="/img/buildings/fh/42-level-"]');
+        const storeCampaign = (changes) => {
+            cy.visit('/tracker/#/party');
+            cy.window().then((win) => {
+                const campaignData = JSON.parse(win.localStorage.getItem('local'));
+                win.localStorage.setItem('local', JSON.stringify({...campaignData, ...changes}));
+            });
+            cy.reload();
+        };
+
+        beforeEach(() => {
+            utilities.enableGame('fh');
+            utilities.switchGame('fh');
+        });
+
+        it('It switches to its alternate level 3 sticker while The Frosthaven Seal is completed', () => {
+            const markFrosthavenSeal = (label) => {
+                cy.visit('/tracker/#/scenarios');
+                cy.get('td').contains('#64 The Frosthaven Seal').click({scrollBehavior: 'center'});
+                cy.get('#scenario-content label').contains(label).click();
+                utilities.closeModel();
+                cy.visit('/tracker/#/buildings');
+            };
+
+            // Given
+            cy.visit('/tracker?states=61_c-62_c-63_c');
+            storeCampaign({'building-fh-42': {state: 'built', level: 3}});
+
+            // When
+            markFrosthavenSeal('Complete');
+
+            // Then
+            temple().should('have.attr', 'src', '/img/buildings/fh/42-level-3-alternate.png');
+            temple().parents('.grid').first().contains('Upgrade').should('not.exist');
+
+            // When
+            markFrosthavenSeal('Incomplete');
+
+            // Then
+            temple().should('have.attr', 'src', '/img/buildings/fh/42-level-3.png');
+        });
+
+        it('It shows the level 3 card for a Temple stored at the former level 4', () => {
+            // Given
+            storeCampaign({
+                ...Object.fromEntries([61, 62, 63, 64].map(id => [`scenario-fh-${id}`, {state: 'complete'}])),
+                'building-fh-42': {state: 'built', level: 4},
+            });
+
+            // When
+            cy.visit('/tracker/#/buildings');
+
+            // Then
+            temple().should('have.attr', 'src', '/img/buildings/fh/42-level-3-alternate.png');
+            temple().click();
+            cy.get('.mdc-dialog--open img[src*="/img/buildings/fh/42-level-3-front."]');
+        });
+    });
+
     it('It uses the same season for a calendar week in the grid and in the week modal', () => {
         utilities.enableGame('fh');
         utilities.switchGame('fh');

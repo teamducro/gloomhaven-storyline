@@ -8095,32 +8095,15 @@
                     "coordinates": {
                         "x": 33.06,
                         "y": 73.14
-                    }
-                },
-                {
-                    "level": 4,
-                    "operations": "Each character may lose 5 gold to start the next scenario with {BLESS.fh}x2",
-                    "downtime": "",
-                    "wrecked": "Each character starts the next scenario with {CURSE.fh}",
-                    "passive": "",
-                    "rewards": "",
-                    "upgrade_cost": [
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                    ],
-                    "damage_cost": 4,
-                    "wrecked_cost": [
-                        3,
-                        2,
-                        1
-                    ],
-                    "coordinates": {
-                        "x": 32.48,
-                        "y": 72.49
+                    },
+                    "alternate_sticker": {
+                        "linked_from": [
+                            64
+                        ],
+                        "coordinates": {
+                            "x": 32.48,
+                            "y": 72.49
+                        }
                     }
                 }
             ]

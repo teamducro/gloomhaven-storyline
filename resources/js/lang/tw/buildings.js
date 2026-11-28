@@ -404,14 +404,6 @@ export default {
                 "wrecked": "每名角色在下個劇本開始時獲得 {CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 繁榮度"
-            },
-            {
-                "level": 4,
-                "operations": "每名角色可失去 5 金幣，以在下個劇本開始時獲得 {BLESS.fh}x2",
-                "downtime": "",
-                "wrecked": "每名角色在下個劇本開始時獲得 {CURSE.fh}",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },

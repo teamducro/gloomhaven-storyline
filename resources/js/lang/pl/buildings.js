@@ -404,14 +404,6 @@ export default {
                 "wrecked": "Każda postać rozpoczyna następny scenariusz z {CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 do dobrobytu"
-            },
-            {
-                "level": 4,
-                "operations": "Każda postać może stracić 5 szt. złota, aby rozpocząć następny scenariusz z {BLESS.fh}x2",
-                "downtime": "",
-                "wrecked": "Każda postać rozpoczyna następny scenariusz z {CURSE.fh}",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },

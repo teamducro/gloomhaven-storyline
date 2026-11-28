@@ -404,14 +404,6 @@ export default {
                 "wrecked": "Ogni personaggio inizia lo scenario successivo con {CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 prosperità"
-            },
-            {
-                "level": 4,
-                "operations": "Ogni personaggio può perdere 5 monete d'oro per iniziare lo scenario successivo con {BLESS.fh}x2",
-                "downtime": "",
-                "wrecked": "Ogni personaggio inizia lo scenario successivo con {CURSE.fh}",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },

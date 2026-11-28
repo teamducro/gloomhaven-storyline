@@ -404,14 +404,6 @@ export default {
                 "wrecked": "각 캐릭터는 다음 시나리오를 {CURSE.fh}로 시작",
                 "passive": "",
                 "rewards": "+5 번영도"
-            },
-            {
-                "level": 4,
-                "operations": "각 캐릭터는 금화 5개를 잃고 다음 시나리오를 {BLESS.fh}x2로 시작할 수 있음",
-                "downtime": "",
-                "wrecked": "각 캐릭터는 다음 시나리오를 {CURSE.fh}로 시작",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },

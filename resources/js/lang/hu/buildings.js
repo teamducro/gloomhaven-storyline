@@ -404,14 +404,6 @@ export default {
                 "wrecked": "Minden karakter {CURSE.fh}-gyel kezdi a következő küldetést",
                 "passive": "",
                 "rewards": "+5 Városfejlettség"
-            },
-            {
-                "level": 4,
-                "operations": "Minden karakter elkölthet 5 aranyat, hogy a következő küldetést {BLESS.fh}x2-vel kezdje",
-                "downtime": "",
-                "wrecked": "Minden karakter {CURSE.fh}-gyel kezdi a következő küldetést",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },

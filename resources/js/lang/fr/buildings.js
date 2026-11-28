@@ -404,14 +404,6 @@ export default {
                 "wrecked": "Chaque aventurier commence le prochain scénario avec {CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 prospérité"
-            },
-            {
-                "level": 4,
-                "operations": "Chaque aventurier peut perdre 5 pièces d'or pour commencer le prochain scénario avec {BLESS.fh}x2",
-                "downtime": "",
-                "wrecked": "Chaque aventurier commence le prochain scénario avec {CURSE.fh}",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },

@@ -4,6 +4,7 @@ import UsesTranslations from "./UsesTranslations";
 import {BuildingUpgradeCost} from "./BuildingUpgradeCost";
 import {BuildingWreckedCost} from "./BuildingWreckedCost";
 import Versionable from "./Versionable";
+import ScenarioRepository from "../repositories/ScenarioRepository";
 
 class Building {
 
@@ -27,6 +28,11 @@ class Building {
         };
 
         this.read();
+
+        // The Temple's alternate sticker used to be an extra level; older clients can still sync that level back
+        if (this._level >= this.levels.length && this.levels.length) {
+            this._level = this.levels.length - 1;
+        }
     }
 
     isActive() {
@@ -81,6 +87,12 @@ class Building {
         return this._level || 0;
     }
 
+    // The story covers this level's sticker once a linked scenario is completed
+    get showsAlternateSticker() {
+        const sticker = this.levels[this.level].alternate_sticker;
+        return !!sticker && this.scenarioRepository.findMany(sticker.linked_from).contains(scenario => scenario.isComplete());
+    }
+
     get completed() {
         return this.level >= this.levels.length - 1;
     }
@@ -95,6 +107,9 @@ class Building {
     }
 
     get coordinates() {
+        if (this.showsAlternateSticker) {
+            return this.levels[this.level].alternate_sticker.coordinates;
+        }
         return this.levels[this.level].coordinates;
     }
 
@@ -191,7 +206,7 @@ class Building {
     }
 
     image() {
-        return '/img/buildings/' + this.game + '/' + this.id + '-level-' + this.level + '.png';
+        return '/img/buildings/' + this.game + '/' + this.id + '-level-' + this.level + (this.showsAlternateSticker ? '-alternate' : '') + '.png';
     }
 
     card() {
@@ -200,6 +215,10 @@ class Building {
 
     key() {
         return 'building-' + this.game + '-' + this.id;
+    }
+
+    get scenarioRepository() {
+        return this._scenarioRepository || (this._scenarioRepository = new ScenarioRepository());
     }
 }
 

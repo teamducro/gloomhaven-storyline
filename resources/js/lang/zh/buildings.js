@@ -404,14 +404,6 @@ export default {
                 "wrecked": "每名角色在下一个剧本开始时获得{CURSE.fh}",
                 "passive": "",
                 "rewards": "+5 繁荣度"
-            },
-            {
-                "level": 4,
-                "operations": "每名角色可以失去5金币，在下一个剧本开始时获得{BLESS.fh}x2",
-                "downtime": "",
-                "wrecked": "每名角色在下一个剧本开始时获得{CURSE.fh}",
-                "passive": "",
-                "rewards": ""
             }
         ]
     },
