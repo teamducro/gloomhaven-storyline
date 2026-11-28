@@ -187,6 +187,28 @@ describe('Gloomhaven edition', () => {
         });
     });
 
+    it('It unlocks a class in both editions when a personal quest is completed', () => {
+        // Given
+        cy.visit('/tracker/#/settings');
+        cy.get('#both-editions').check({force: true});
+        cy.visit('/tracker/#/characters');
+        utilities.openCharacter();
+        cy.get('#choose-edition-CH').click();
+        utilities.scrollTo('60%');
+        cy.get(`input[name="personal-quests"]`).type("510");
+        cy.get('li').contains('#510 Seeker of Xorn').click();
+
+        // When
+        cy.get('#pq-0-0').click();
+        cy.get('#pq-0-1').click();
+        cy.get('#pq-0-2').click();
+        cy.get('#pq-1-0').click();
+
+        // Then
+        cy.get('p').contains('Unlocked');
+        cy.window().its('app.campaignData.sheet.characterUnlocks').should('deep.include', {PH: true, PH2: true});
+    });
+
     it('It shows a class checked when only the other edition is unlocked', () => {
         // Given
         cy.visit('/tracker/#/settings');

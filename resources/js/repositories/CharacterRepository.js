@@ -59,6 +59,12 @@ export default class CharacterRepository {
         return _.findKey(this.editionPairs(), other => other === id) || id;
     }
 
+    // The other edition's id of a class in both editions, for either edition's id
+    otherEditionId(id) {
+        const pairs = this.editionPairs();
+        return pairs[id] || _.findKey(pairs, other => other === id);
+    }
+
     // One class per party, whichever edition
     partyHasClass(sheet, id) {
         const listed = this.campaignEditionId(id);
